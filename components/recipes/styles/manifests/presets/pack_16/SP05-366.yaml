@@ -3,10 +3,10 @@ id: SP05-366
 packId: pack_16
 name: Traditional Ensemble Resonance Style
 styleAnchors:
-  - 'Traditional Ensemble Resonance Style'
-displayName: 'Traditional Ensemble Resonance'
+  - Traditional Ensemble Resonance Style
+displayName: Traditional Ensemble Resonance
 category: 5. Sports, Competition & Performance
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,81 +15,23 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: >-
-    Traditional Ensemble Resonance Style acts as a transferable anime-prestige router: a traditional
-    anime direction shaped by era-aware line economy and genre tone, alongside a ensemble anime
-    direction shaped by era-aware line economy and genre tone; fuse it with sports and performance
-    anime direction with kinetic timing, competitive psychology, body mechanics, rhythm, and impact
-    clarity; it routes era, genre, line economy, cel or digital finish, and performance tone without
-    locking prompt content to the source title or sample image.
-  subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through contours paced by
-    traditional tension, readable pose energy, and silhouette discipline, alongside contours paced
-    by ensemble tension, readable pose energy, and silhouette discipline; identity should remain
-    readable through anime contour, expression economy, pose energy, shape simplification, and
-    effect hierarchy instead of a required canon character or title scene.
-  color_and_tone: >-
-    Map color through a traditional accent system held inside disciplined cel values, alongside a
-    ensemble accent system held inside disciplined cel values; anchor it in team color blocks,
-    gym-light neutrals, night-race blues, stage glow, brass warmth, sweat highlights, and impact
-    accents; keep value separation clean, cel flats intentional, accents purposeful, and palette
-    behavior attached to the requested content.
-  lighting_and_shadow: >-
-    Use vibration-like glow and tonal highlight pulses, alongside a traditional light logic using
-    cel rim, glow behavior, and blocked shadow; combine it with arena-like cel light, spotlight
-    cuts, reflective sweat, motion streaks, instrument gleam, and high-pressure rim highlights;
-    shadows should read as anime light design, rims should clarify form, and glow or effects should
-    support the prompt rather than replacing it.
-  texture_and_material: >-
-    Render traditional cloth, paper, wood, and acoustic instrument surfaces, alongside cel paint and
-    ink grain tuned to ensemble material contrast; anchor surfaces in jersey fabric, skin highlight,
-    rubber, polished floor, instrument brass, stage dust, road grit, and speed-line overlays; cel
-    edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay
-    coherent across people, objects, environments, action, and abstractions.
-  camera_and_composition: >-
-    Frame around ceremonial ensemble spacing and formal rhythm, alongside multi-person rhythm
-    translated into grouped visual beats, then extend it with vertical rallies, diagonal breakaways,
-    spin arcs, duel spacing, ensemble grouping, and precise impact timing; the style should support
-    portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable
-    anime staging grammar instead of one fixed card layout.
-  atmosphere_and_mood: >-
-    Carry mood through collective focus and interlocking performance energy, alongside emotional
-    vibration and music-led connection; braid it with rivalry, obsession, comeback grit, vulnerable
-    performance, team trust, training method, and euphoric release; the preset can become funny,
-    sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving
-    the chosen anime lineage.
-  rendering_and_quality: >-
-    Finish with clean anime finishing that keeps traditional identity readable without noisy
-    denoise, alongside clean anime finishing that keeps ensemble identity readable without noisy
-    denoise; enforce high-energy anime finish with clear motion, believable anatomy, denoised
-    effects, and no sports-photo realism; prioritize clean denoise, stable anatomy or object
-    structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no
-    photoreal or 3D-render drift.
-  key_features: >-
-    a traditional anime direction shaped by era-aware line economy and genre tone, alongside a
-    ensemble anime direction shaped by era-aware line economy and genre tone; contours paced by
-    traditional tension, readable pose energy, and silhouette discipline, alongside contours paced
-    by ensemble tension, readable pose energy, and silhouette discipline; traditional cloth, paper,
-    wood, and acoustic instrument surfaces, alongside cel paint and ink grain tuned to ensemble
-    material contrast; vibration-like glow and tonal highlight pulses, alongside a traditional light
-    logic using cel rim, glow behavior, and blocked shadow; ceremonial ensemble spacing and formal
-    rhythm, alongside multi-person rhythm translated into grouped visual beats
-  creative_brief: >-
-    Apply Traditional Ensemble Resonance Style after prompt X as a transferable anime-prestige
-    layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset
-    supplies a traditional anime direction shaped by era-aware line economy and genre tone,
-    alongside a ensemble anime direction shaped by era-aware line economy and genre tone, alongside
-    contours paced by traditional tension, readable pose energy, and silhouette discipline,
-    alongside contours paced by ensemble tension, readable pose energy, and silhouette discipline; a
-    traditional accent system held inside disciplined cel values, alongside a ensemble accent system
-    held inside disciplined cel values; vibration-like glow and tonal highlight pulses, alongside a
-    traditional light logic using cel rim, glow behavior, and blocked shadow; traditional cloth,
-    paper, wood, and acoustic instrument surfaces, alongside cel paint and ink grain tuned to
-    ensemble material contrast and ceremonial ensemble spacing and formal rhythm, alongside
-    multi-person rhythm translated into grouped visual beats, finish discipline, and negative
-    controls without requiring a fixed canon cast, title scene, prop bundle, location, sport,
-    instrument, weapon, or card composition.
+  aesthetic: 'Traditional ensemble anime of resonance: drums, strings and flutes played together, sound shown as ripples and trembling air.'
+  subject_treatment: Keep the prompt's subject and action; place it within an ensemble where sound is visible as ripples, vibration and synchronized motion.
+  color_and_tone: Lacquer red, natural wood and indigo costumes with warm stage gold.
+  lighting_and_shadow: Warm stage light from above and side, drum skins glowing under the spotlight.
+  texture_and_material: Taut drum skins, silk strings, bamboo flutes and cotton costumes in fine line.
+  camera_and_composition: Wide ensemble shots and tight shots on striking hands and vibrating strings.
+  atmosphere_and_mood: Powerful and communal, many players breathing and striking as one body.
+  rendering_and_quality: Rich performance anime with visible sound ripples and precise playing technique.
+  key_features: sound ripples; drum strikes; ensemble unison; warm stage light
+  creative_brief: "Traditional ensemble anime of resonance: drums, strings and flutes played together, sound shown as ripples and trembling air. Carry it through sound ripples, drum strikes, ensemble unison, warm stage light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - real band or brand logo
   - realistic
   - 3d render
   - photo
@@ -111,15 +53,16 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-366.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy
-    exaggeration, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise, readable text
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

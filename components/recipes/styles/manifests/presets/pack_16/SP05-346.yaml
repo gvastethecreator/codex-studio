@@ -3,10 +3,10 @@ id: SP05-346
 packId: pack_16
 name: Phantom Teamplay Speed Style
 styleAnchors:
-  - 'Phantom Teamplay Speed Style'
-displayName: 'Phantom Teamplay Speed'
+  - Phantom Teamplay Speed Style
+displayName: Phantom Teamplay Speed
 category: 5. Sports, Competition & Performance
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,82 +15,23 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: >-
-    Phantom Teamplay Speed Style acts as a transferable anime-prestige router: a phantom anime
-    direction shaped by era-aware line economy and genre tone, alongside a teamplay anime direction
-    shaped by era-aware line economy and genre tone; fuse it with sports and performance anime
-    direction with kinetic timing, competitive psychology, body mechanics, rhythm, and impact
-    clarity; it routes era, genre, line economy, cel or digital finish, and performance tone without
-    locking prompt content to the source title or sample image.
-  subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through speed-line
-    deformation and motion-readable silhouette, alongside contours paced by phantom tension,
-    readable pose energy, and silhouette discipline; identity should remain readable through anime
-    contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of
-    a required canon character or title scene.
-  color_and_tone: >-
-    Map color through a phantom accent system held inside disciplined cel values, alongside a
-    teamplay accent system held inside disciplined cel values; anchor it in team color blocks,
-    gym-light neutrals, night-race blues, stage glow, brass warmth, sweat highlights, and impact
-    accents; keep value separation clean, cel flats intentional, accents purposeful, and palette
-    behavior attached to the requested content.
-  lighting_and_shadow: >-
-    Use faint afterimages and spectral speed trails, alongside a teamplay light logic using cel rim,
-    glow behavior, and blocked shadow; combine it with arena-like cel light, spotlight cuts,
-    reflective sweat, motion streaks, instrument gleam, and high-pressure rim highlights; shadows
-    should read as anime light design, rims should clarify form, and glow or effects should support
-    the prompt rather than replacing it.
-  texture_and_material: >-
-    Render cel paint and ink grain tuned to phantom material contrast, alongside cel paint and ink
-    grain tuned to teamplay material contrast; anchor surfaces in jersey fabric, skin highlight,
-    rubber, polished floor, instrument brass, stage dust, road grit, and speed-line overlays; cel
-    edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay
-    coherent across people, objects, environments, action, and abstractions.
-  camera_and_composition: >-
-    Frame around misdirection lanes and ghosted teamplay spacing, alongside handoff vectors,
-    misdirection lanes, and group-read clarity and fast diagonals, trailing smears, and compressed
-    pursuit lanes, then extend it with vertical rallies, diagonal breakaways, spin arcs, duel
-    spacing, ensemble grouping, and precise impact timing; the style should support portraits,
-    props, machines, performances, landscapes, symbols, and full scenes through reusable anime
-    staging grammar instead of one fixed card layout.
-  atmosphere_and_mood: >-
-    Carry mood through quiet cooperation and tactical generosity, alongside phantom emotional
-    pressure and genre-specific tone; braid it with rivalry, obsession, comeback grit, vulnerable
-    performance, team trust, training method, and euphoric release; the preset can become funny,
-    sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving
-    the chosen anime lineage.
-  rendering_and_quality: >-
-    Finish with clean anime finishing that keeps phantom identity readable without noisy denoise,
-    alongside clean anime finishing that keeps teamplay identity readable without noisy denoise;
-    enforce high-energy anime finish with clear motion, believable anatomy, denoised effects, and no
-    sports-photo realism; prioritize clean denoise, stable anatomy or object structure, readable
-    effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or
-    3D-render drift.
-  key_features: >-
-    a phantom anime direction shaped by era-aware line economy and genre tone, alongside a teamplay
-    anime direction shaped by era-aware line economy and genre tone; speed-line deformation and
-    motion-readable silhouette, alongside contours paced by phantom tension, readable pose energy,
-    and silhouette discipline; cel paint and ink grain tuned to phantom material contrast, alongside
-    cel paint and ink grain tuned to teamplay material contrast; faint afterimages and spectral
-    speed trails, alongside a teamplay light logic using cel rim, glow behavior, and blocked shadow;
-    misdirection lanes and ghosted teamplay spacing, alongside handoff vectors, misdirection lanes,
-    and group-read clarity and fast diagonals, trailing smears, and compressed pursuit lanes
-  creative_brief: >-
-    Apply Phantom Teamplay Speed Style after prompt X as a transferable anime-prestige layer: prompt
-    X supplies subject, action, setting, tone, and intensity, while this preset supplies a phantom
-    anime direction shaped by era-aware line economy and genre tone, alongside a teamplay anime
-    direction shaped by era-aware line economy and genre tone, alongside speed-line deformation and
-    motion-readable silhouette, alongside contours paced by phantom tension, readable pose energy,
-    and silhouette discipline; a phantom accent system held inside disciplined cel values, alongside
-    a teamplay accent system held inside disciplined cel values; faint afterimages and spectral
-    speed trails, alongside a teamplay light logic using cel rim, glow behavior, and blocked shadow;
-    cel paint and ink grain tuned to phantom material contrast, alongside cel paint and ink grain
-    tuned to teamplay material contrast and misdirection lanes and ghosted teamplay spacing,
-    alongside handoff vectors, misdirection lanes, and group-read clarity and fast diagonals,
-    trailing smears, and compressed pursuit lanes, finish discipline, and negative controls without
-    requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or
-    card composition.
+  aesthetic: 'Basketball anime of misdirection and speed: invisible passes, afterimages and players who seem to vanish into the flow.'
+  subject_treatment: Keep the prompt's subject and action; make it move with deceptive speed, afterimages and misdirected attention.
+  color_and_tone: Cool arena blues and whites with a pale ghostly accent for the fast player.
+  lighting_and_shadow: Bright arena light from above, with semi-transparent afterimages glowing softly behind the moving player.
+  texture_and_material: Smooth cel with translucent motion trails and crisp ball highlights.
+  camera_and_composition: Wide play frames with multiple afterimages and defenders looking the wrong way.
+  atmosphere_and_mood: Slippery and clever, the thrill of something happening where nobody was looking.
+  rendering_and_quality: Clean sports anime with translucent effects and precise choreography.
+  key_features: afterimages; misdirection; translucent trails; wrong-way defenders
+  creative_brief: "Basketball anime of misdirection and speed: invisible passes, afterimages and players who seem to vanish into the flow. Carry it through afterimages, misdirection, translucent trails, wrong-way defenders. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - real team or league logo
   - realistic
   - 3d render
   - photo
@@ -112,15 +53,16 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-346.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy
-    exaggeration, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise, readable text
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

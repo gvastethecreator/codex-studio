@@ -3,10 +3,10 @@ id: SP05-343
 packId: pack_16
 name: Vertical Team Rally Energy Style
 styleAnchors:
-  - 'Vertical Team Rally Energy Style'
-displayName: 'Vertical Team Rally Energy'
+  - Vertical Team Rally Energy Style
+displayName: Vertical Team Rally Energy
 category: 5. Sports, Competition & Performance
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,83 +15,23 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: >-
-    Vertical Team Rally Energy Style acts as a transferable anime-prestige router: a vertical anime
-    direction shaped by era-aware line economy and genre tone, alongside a team anime direction
-    shaped by era-aware line economy and genre tone; fuse it with sports and performance anime
-    direction with kinetic timing, competitive psychology, body mechanics, rhythm, and impact
-    clarity; it routes era, genre, line economy, cel or digital finish, and performance tone without
-    locking prompt content to the source title or sample image.
-  subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through long upward pose
-    rhythm and readable body extension, alongside contours paced by team tension, readable pose
-    energy, and silhouette discipline; identity should remain readable through anime contour,
-    expression economy, pose energy, shape simplification, and effect hierarchy instead of a
-    required canon character or title scene.
-  color_and_tone: >-
-    Map color through a vertical accent system held inside disciplined cel values, alongside a team
-    accent system held inside disciplined cel values; anchor it in team color blocks, gym-light
-    neutrals, night-race blues, stage glow, brass warmth, sweat highlights, and impact accents; keep
-    value separation clean, cel flats intentional, accents purposeful, and palette behavior attached
-    to the requested content.
-  lighting_and_shadow: >-
-    Use a vertical light logic using cel rim, glow behavior, and blocked shadow, alongside a team
-    light logic using cel rim, glow behavior, and blocked shadow; combine it with arena-like cel
-    light, spotlight cuts, reflective sweat, motion streaks, instrument gleam, and high-pressure rim
-    highlights; shadows should read as anime light design, rims should clarify form, and glow or
-    effects should support the prompt rather than replacing it.
-  texture_and_material: >-
-    Render cel paint and ink grain tuned to vertical material contrast, alongside cel paint and ink
-    grain tuned to team material contrast; anchor surfaces in jersey fabric, skin highlight, rubber,
-    polished floor, instrument brass, stage dust, road grit, and speed-line overlays; cel edges,
-    painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent
-    across people, objects, environments, action, and abstractions.
-  camera_and_composition: >-
-    Frame around vertical lift, stacked silhouettes, and upward pressure, alongside group formation,
-    call-and-response spacing, and shared motion and vertical lift, team clustering, and
-    call-and-response energy, then extend it with vertical rallies, diagonal breakaways, spin arcs,
-    duel spacing, ensemble grouping, and precise impact timing; the style should support portraits,
-    props, machines, performances, landscapes, symbols, and full scenes through reusable anime
-    staging grammar instead of one fixed card layout.
-  atmosphere_and_mood: >-
-    Carry mood through team trust and collective effort, alongside collective push and loud
-    competitive hope; braid it with rivalry, obsession, comeback grit, vulnerable performance, team
-    trust, training method, and euphoric release; the preset can become funny, sensual, violent,
-    quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime
-    lineage.
-  rendering_and_quality: >-
-    Finish with clean anime finishing that keeps vertical identity readable without noisy denoise,
-    alongside clean anime finishing that keeps team identity readable without noisy denoise; enforce
-    high-energy anime finish with clear motion, believable anatomy, denoised effects, and no
-    sports-photo realism; prioritize clean denoise, stable anatomy or object structure, readable
-    effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or
-    3D-render drift.
-  key_features: >-
-    a vertical anime direction shaped by era-aware line economy and genre tone, alongside a team
-    anime direction shaped by era-aware line economy and genre tone; long upward pose rhythm and
-    readable body extension, alongside contours paced by team tension, readable pose energy, and
-    silhouette discipline; cel paint and ink grain tuned to vertical material contrast, alongside
-    cel paint and ink grain tuned to team material contrast; a vertical light logic using cel rim,
-    glow behavior, and blocked shadow, alongside a team light logic using cel rim, glow behavior,
-    and blocked shadow; vertical lift, stacked silhouettes, and upward pressure, alongside group
-    formation, call-and-response spacing, and shared motion and vertical lift, team clustering, and
-    call-and-response energy
-  creative_brief: >-
-    Apply Vertical Team Rally Energy Style after prompt X as a transferable anime-prestige layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a
-    vertical anime direction shaped by era-aware line economy and genre tone, alongside a team anime
-    direction shaped by era-aware line economy and genre tone, alongside long upward pose rhythm and
-    readable body extension, alongside contours paced by team tension, readable pose energy, and
-    silhouette discipline; a vertical accent system held inside disciplined cel values, alongside a
-    team accent system held inside disciplined cel values; a vertical light logic using cel rim,
-    glow behavior, and blocked shadow, alongside a team light logic using cel rim, glow behavior,
-    and blocked shadow; cel paint and ink grain tuned to vertical material contrast, alongside cel
-    paint and ink grain tuned to team material contrast and vertical lift, stacked silhouettes, and
-    upward pressure, alongside group formation, call-and-response spacing, and shared motion and
-    vertical lift, team clustering, and call-and-response energy, finish discipline, and negative
-    controls without requiring a fixed canon cast, title scene, prop bundle, location, sport,
-    instrument, weapon, or card composition.
+  aesthetic: 'Volleyball anime of vertical explosions: jumps held at their peak, arms cocked, the ball a white streak against gym ceilings.'
+  subject_treatment: Keep the prompt's subject and action; push it upward into a peak moment of a jump, reach or leap, held for one breathless frame.
+  color_and_tone: Gym-floor orange, jersey colors and bright ceiling white with deep sweat-lit shadows.
+  lighting_and_shadow: Overhead gym lights from above, strong rim on shoulders and hair at the top of the jump.
+  texture_and_material: Polished wood floor, mesh net and damp jersey fabric drawn with clean cel.
+  camera_and_composition: Extreme low angles looking up at airborne figures, the net slicing the frame.
+  atmosphere_and_mood: Explosive and collective, a whole team lifting one player higher than possible.
+  rendering_and_quality: Dynamic sports anime with speed lines, sweat drops and sharp anatomy at the peak.
+  key_features: jump peak; low angle; net line; gym light rim
+  creative_brief: "Volleyball anime of vertical explosions: jumps held at their peak, arms cocked, the ball a white streak against gym ceilings. Carry it through jump peak, low angle, net line, gym light rim. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - real team or league logo
   - realistic
   - 3d render
   - photo
@@ -113,15 +53,16 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-343.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy
-    exaggeration, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise, readable text
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

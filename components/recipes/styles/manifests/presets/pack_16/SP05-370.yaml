@@ -3,10 +3,10 @@ id: SP05-370
 packId: pack_16
 name: Intimate Indie Confession Style
 styleAnchors:
-  - 'Intimate Indie Confession Style'
-displayName: 'Intimate Indie Confession'
+  - Intimate Indie Confession Style
+displayName: Intimate Indie Confession
 category: 5. Sports, Competition & Performance
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,80 +15,23 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: >-
-    Intimate Indie Confession Style acts as a transferable anime-prestige router: a intimate anime
-    direction shaped by era-aware line economy and genre tone, alongside a indie anime direction
-    shaped by era-aware line economy and genre tone; fuse it with sports and performance anime
-    direction with kinetic timing, competitive psychology, body mechanics, rhythm, and impact
-    clarity; it routes era, genre, line economy, cel or digital finish, and performance tone without
-    locking prompt content to the source title or sample image.
-  subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through close acting
-    detail and vulnerable posture, alongside contours paced by indie tension, readable pose energy,
-    and silhouette discipline; identity should remain readable through anime contour, expression
-    economy, pose energy, shape simplification, and effect hierarchy instead of a required canon
-    character or title scene.
-  color_and_tone: >-
-    Map color through muted indie palette, warm lamps, and intimate low saturation, alongside a
-    intimate accent system held inside disciplined cel values; anchor it in team color blocks,
-    gym-light neutrals, night-race blues, stage glow, brass warmth, sweat highlights, and impact
-    accents; keep value separation clean, cel flats intentional, accents purposeful, and palette
-    behavior attached to the requested content.
-  lighting_and_shadow: >-
-    Use a intimate light logic using cel rim, glow behavior, and blocked shadow, alongside a indie
-    light logic using cel rim, glow behavior, and blocked shadow; combine it with arena-like cel
-    light, spotlight cuts, reflective sweat, motion streaks, instrument gleam, and high-pressure rim
-    highlights; shadows should read as anime light design, rims should clarify form, and glow or
-    effects should support the prompt rather than replacing it.
-  texture_and_material: >-
-    Render cel paint and ink grain tuned to intimate material contrast, alongside cel paint and ink
-    grain tuned to indie material contrast; anchor surfaces in jersey fabric, skin highlight,
-    rubber, polished floor, instrument brass, stage dust, road grit, and speed-line overlays; cel
-    edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay
-    coherent across people, objects, environments, action, and abstractions.
-  camera_and_composition: >-
-    Frame around tight emotional distance and soft negative space, alongside indie converted into
-    reusable framing rhythm and anime timing, then extend it with vertical rallies, diagonal
-    breakaways, spin arcs, duel spacing, ensemble grouping, and precise impact timing; the style
-    should support portraits, props, machines, performances, landscapes, symbols, and full scenes
-    through reusable anime staging grammar instead of one fixed card layout.
-  atmosphere_and_mood: >-
-    Carry mood through confession, tenderness, and exposed quiet, alongside private confession and
-    unguarded performance; braid it with rivalry, obsession, comeback grit, vulnerable performance,
-    team trust, training method, and euphoric release; the preset can become funny, sensual,
-    violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the
-    chosen anime lineage.
-  rendering_and_quality: >-
-    Finish with clean anime finishing that keeps intimate identity readable without noisy denoise,
-    alongside clean anime finishing that keeps indie identity readable without noisy denoise;
-    enforce high-energy anime finish with clear motion, believable anatomy, denoised effects, and no
-    sports-photo realism; prioritize clean denoise, stable anatomy or object structure, readable
-    effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or
-    3D-render drift.
-  key_features: >-
-    a intimate anime direction shaped by era-aware line economy and genre tone, alongside a indie
-    anime direction shaped by era-aware line economy and genre tone; close acting detail and
-    vulnerable posture, alongside contours paced by indie tension, readable pose energy, and
-    silhouette discipline; cel paint and ink grain tuned to intimate material contrast, alongside
-    cel paint and ink grain tuned to indie material contrast; a intimate light logic using cel rim,
-    glow behavior, and blocked shadow, alongside a indie light logic using cel rim, glow behavior,
-    and blocked shadow; tight emotional distance and soft negative space, alongside indie converted
-    into reusable framing rhythm and anime timing
-  creative_brief: >-
-    Apply Intimate Indie Confession Style after prompt X as a transferable anime-prestige layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a
-    intimate anime direction shaped by era-aware line economy and genre tone, alongside a indie
-    anime direction shaped by era-aware line economy and genre tone, alongside close acting detail
-    and vulnerable posture, alongside contours paced by indie tension, readable pose energy, and
-    silhouette discipline; muted indie palette, warm lamps, and intimate low saturation, alongside a
-    intimate accent system held inside disciplined cel values; a intimate light logic using cel rim,
-    glow behavior, and blocked shadow, alongside a indie light logic using cel rim, glow behavior,
-    and blocked shadow; cel paint and ink grain tuned to intimate material contrast, alongside cel
-    paint and ink grain tuned to indie material contrast and tight emotional distance and soft
-    negative space, alongside indie converted into reusable framing rhythm and anime timing, finish
-    discipline, and negative controls without requiring a fixed canon cast, title scene, prop
-    bundle, location, sport, instrument, weapon, or card composition.
+  aesthetic: 'Indie acoustic anime of intimate confession: small rooms, guitars, soft lamps and songs sung to one person.'
+  subject_treatment: Keep the prompt's subject and action; make it quiet and close, as if performed for a single listener.
+  color_and_tone: Warm lamp amber, soft greys and muted pastel clothing.
+  lighting_and_shadow: One small lamp or window light, gentle shadows and soft glow on faces.
+  texture_and_material: Wooden guitar grain, knitted sweaters and cluttered small rooms.
+  camera_and_composition: Close, intimate framings at eye level with shallow depth.
+  atmosphere_and_mood: Tender and vulnerable, a song that says what words could not.
+  rendering_and_quality: Soft intimate anime with warm light and gentle detail.
+  key_features: lamp glow; acoustic guitar; close framing; single listener
+  creative_brief: "Indie acoustic anime of intimate confession: small rooms, guitars, soft lamps and songs sung to one person. Carry it through lamp glow, acoustic guitar, close framing, single listener. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - real band or brand logo
   - realistic
   - 3d render
   - photo
@@ -110,15 +53,16 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-370.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy
-    exaggeration, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise, readable text
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

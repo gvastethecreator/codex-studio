@@ -3,10 +3,10 @@ id: SP05-344
 packId: pack_16
 name: Ego Pressure Breakout Style
 styleAnchors:
-  - 'Ego Pressure Breakout Style'
-displayName: 'Ego Pressure Breakout'
+  - Ego Pressure Breakout Style
+displayName: Ego Pressure Breakout
 category: 5. Sports, Competition & Performance
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,80 +15,23 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: >-
-    Ego Pressure Breakout Style acts as a transferable anime-prestige router: a ego anime direction
-    shaped by era-aware line economy and genre tone, alongside a pressure anime direction shaped by
-    era-aware line economy and genre tone; fuse it with sports and performance anime direction with
-    kinetic timing, competitive psychology, body mechanics, rhythm, and impact clarity; it routes
-    era, genre, line economy, cel or digital finish, and performance tone without locking prompt
-    content to the source title or sample image.
-  subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through self-assertive
-    silhouette and predatory focus, alongside contours paced by pressure tension, readable pose
-    energy, and silhouette discipline; identity should remain readable through anime contour,
-    expression economy, pose energy, shape simplification, and effect hierarchy instead of a
-    required canon character or title scene.
-  color_and_tone: >-
-    Map color through a ego accent system held inside disciplined cel values, alongside a pressure
-    accent system held inside disciplined cel values; anchor it in team color blocks, gym-light
-    neutrals, night-race blues, stage glow, brass warmth, sweat highlights, and impact accents; keep
-    value separation clean, cel flats intentional, accents purposeful, and palette behavior attached
-    to the requested content.
-  lighting_and_shadow: >-
-    Use a ego light logic using cel rim, glow behavior, and blocked shadow, alongside a pressure
-    light logic using cel rim, glow behavior, and blocked shadow; combine it with arena-like cel
-    light, spotlight cuts, reflective sweat, motion streaks, instrument gleam, and high-pressure rim
-    highlights; shadows should read as anime light design, rims should clarify form, and glow or
-    effects should support the prompt rather than replacing it.
-  texture_and_material: >-
-    Render cel paint and ink grain tuned to ego material contrast, alongside cel paint and ink grain
-    tuned to pressure material contrast; anchor surfaces in jersey fabric, skin highlight, rubber,
-    polished floor, instrument brass, stage dust, road grit, and speed-line overlays; cel edges,
-    painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent
-    across people, objects, environments, action, and abstractions.
-  camera_and_composition: >-
-    Frame around explosive escape diagonals and frame-breaking pressure, alongside ego converted
-    into reusable framing rhythm and anime timing, then extend it with vertical rallies, diagonal
-    breakaways, spin arcs, duel spacing, ensemble grouping, and precise impact timing; the style
-    should support portraits, props, machines, performances, landscapes, symbols, and full scenes
-    through reusable anime staging grammar instead of one fixed card layout.
-  atmosphere_and_mood: >-
-    Carry mood through competitive ego pressure and breakout arrogance, alongside ego release and
-    competitive self-invention; braid it with rivalry, obsession, comeback grit, vulnerable
-    performance, team trust, training method, and euphoric release; the preset can become funny,
-    sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving
-    the chosen anime lineage.
-  rendering_and_quality: >-
-    Finish with clean anime finishing that keeps ego identity readable without noisy denoise,
-    alongside clean anime finishing that keeps pressure identity readable without noisy denoise;
-    enforce high-energy anime finish with clear motion, believable anatomy, denoised effects, and no
-    sports-photo realism; prioritize clean denoise, stable anatomy or object structure, readable
-    effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or
-    3D-render drift.
-  key_features: >-
-    a ego anime direction shaped by era-aware line economy and genre tone, alongside a pressure
-    anime direction shaped by era-aware line economy and genre tone; self-assertive silhouette and
-    predatory focus, alongside contours paced by pressure tension, readable pose energy, and
-    silhouette discipline; cel paint and ink grain tuned to ego material contrast, alongside cel
-    paint and ink grain tuned to pressure material contrast; a ego light logic using cel rim, glow
-    behavior, and blocked shadow, alongside a pressure light logic using cel rim, glow behavior, and
-    blocked shadow; explosive escape diagonals and frame-breaking pressure, alongside ego converted
-    into reusable framing rhythm and anime timing
-  creative_brief: >-
-    Apply Ego Pressure Breakout Style after prompt X as a transferable anime-prestige layer: prompt
-    X supplies subject, action, setting, tone, and intensity, while this preset supplies a ego anime
-    direction shaped by era-aware line economy and genre tone, alongside a pressure anime direction
-    shaped by era-aware line economy and genre tone, alongside self-assertive silhouette and
-    predatory focus, alongside contours paced by pressure tension, readable pose energy, and
-    silhouette discipline; a ego accent system held inside disciplined cel values, alongside a
-    pressure accent system held inside disciplined cel values; a ego light logic using cel rim, glow
-    behavior, and blocked shadow, alongside a pressure light logic using cel rim, glow behavior, and
-    blocked shadow; cel paint and ink grain tuned to ego material contrast, alongside cel paint and
-    ink grain tuned to pressure material contrast and explosive escape diagonals and frame-breaking
-    pressure, alongside ego converted into reusable framing rhythm and anime timing, finish
-    discipline, and negative controls without requiring a fixed canon cast, title scene, prop
-    bundle, location, sport, instrument, weapon, or card composition.
+  aesthetic: 'Soccer anime of ego and hunger: strikers drawn with predatory eyes, distorted perspective and visions of the goal as a target.'
+  subject_treatment: Keep the prompt's subject and action; exaggerate focus and hunger, distorting perspective toward the goal or target.
+  color_and_tone: Night stadium blues and field green with electric cyan eye highlights.
+  lighting_and_shadow: Floodlights from high angles, hard shadows under the eyes and glowing irises.
+  texture_and_material: Grass blades, sweat and jersey fabric with graphic line overlays.
+  camera_and_composition: Fisheye distortion toward the ball, extreme close-ups on eyes with the goal behind.
+  atmosphere_and_mood: Predatory and obsessive, a player who wants the goal more than anything else.
+  rendering_and_quality: Stylized sports anime with bold distortion, glowing eyes and sharp lines.
+  key_features: predatory eyes; fisheye distortion; goal as target; floodlights
+  creative_brief: "Soccer anime of ego and hunger: strikers drawn with predatory eyes, distorted perspective and visions of the goal as a target. Carry it through predatory eyes, fisheye distortion, goal as target, floodlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - real team or league logo
   - realistic
   - 3d render
   - photo
@@ -110,15 +53,16 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-344.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy
-    exaggeration, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise, readable text
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

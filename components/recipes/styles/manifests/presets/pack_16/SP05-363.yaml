@@ -3,10 +3,10 @@ id: SP05-363
 packId: pack_16
 name: Synchronized Aerial Team Style
 styleAnchors:
-  - 'Synchronized Aerial Team Style'
-displayName: 'Synchronized Aerial Team'
+  - Synchronized Aerial Team Style
+displayName: Synchronized Aerial Team
 category: 5. Sports, Competition & Performance
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,83 +15,23 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: >-
-    Synchronized Aerial Team Style acts as a transferable anime-prestige router: a synchronized
-    anime direction shaped by era-aware line economy and genre tone, alongside a aerial anime
-    direction shaped by era-aware line economy and genre tone; fuse it with sports and performance
-    anime direction with kinetic timing, competitive psychology, body mechanics, rhythm, and impact
-    clarity; it routes era, genre, line economy, cel or digital finish, and performance tone without
-    locking prompt content to the source title or sample image.
-  subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through lifted
-    silhouettes and airborne balance, alongside contours paced by synchronized tension, readable
-    pose energy, and silhouette discipline; identity should remain readable through anime contour,
-    expression economy, pose energy, shape simplification, and effect hierarchy instead of a
-    required canon character or title scene.
-  color_and_tone: >-
-    Map color through a synchronized accent system held inside disciplined cel values, alongside a
-    aerial accent system held inside disciplined cel values; anchor it in team color blocks,
-    gym-light neutrals, night-race blues, stage glow, brass warmth, sweat highlights, and impact
-    accents; keep value separation clean, cel flats intentional, accents purposeful, and palette
-    behavior attached to the requested content.
-  lighting_and_shadow: >-
-    Use sky rim light and high-altitude glow, alongside a synchronized light logic using cel rim,
-    glow behavior, and blocked shadow; combine it with arena-like cel light, spotlight cuts,
-    reflective sweat, motion streaks, instrument gleam, and high-pressure rim highlights; shadows
-    should read as anime light design, rims should clarify form, and glow or effects should support
-    the prompt rather than replacing it.
-  texture_and_material: >-
-    Render cel paint and ink grain tuned to synchronized material contrast, alongside cel paint and
-    ink grain tuned to aerial material contrast; anchor surfaces in jersey fabric, skin highlight,
-    rubber, polished floor, instrument brass, stage dust, road grit, and speed-line overlays; cel
-    edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay
-    coherent across people, objects, environments, action, and abstractions.
-  camera_and_composition: >-
-    Frame around matched arcs, group timing, and ensemble symmetry, alongside vertical swoops,
-    open-sky spacing, and flight arcs and group formation, call-and-response spacing, and shared
-    motion, then extend it with vertical rallies, diagonal breakaways, spin arcs, duel spacing,
-    ensemble grouping, and precise impact timing; the style should support portraits, props,
-    machines, performances, landscapes, symbols, and full scenes through reusable anime staging
-    grammar instead of one fixed card layout.
-  atmosphere_and_mood: >-
-    Carry mood through trust, practiced precision, and shared air, alongside team trust and
-    collective effort; braid it with rivalry, obsession, comeback grit, vulnerable performance, team
-    trust, training method, and euphoric release; the preset can become funny, sensual, violent,
-    quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime
-    lineage.
-  rendering_and_quality: >-
-    Finish with clean anime finishing that keeps synchronized identity readable without noisy
-    denoise, alongside clean anime finishing that keeps aerial identity readable without noisy
-    denoise; enforce high-energy anime finish with clear motion, believable anatomy, denoised
-    effects, and no sports-photo realism; prioritize clean denoise, stable anatomy or object
-    structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no
-    photoreal or 3D-render drift.
-  key_features: >-
-    a synchronized anime direction shaped by era-aware line economy and genre tone, alongside a
-    aerial anime direction shaped by era-aware line economy and genre tone; lifted silhouettes and
-    airborne balance, alongside contours paced by synchronized tension, readable pose energy, and
-    silhouette discipline; cel paint and ink grain tuned to synchronized material contrast,
-    alongside cel paint and ink grain tuned to aerial material contrast; sky rim light and
-    high-altitude glow, alongside a synchronized light logic using cel rim, glow behavior, and
-    blocked shadow; matched arcs, group timing, and ensemble symmetry, alongside vertical swoops,
-    open-sky spacing, and flight arcs and group formation, call-and-response spacing, and shared
-    motion
-  creative_brief: >-
-    Apply Synchronized Aerial Team Style after prompt X as a transferable anime-prestige layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a
-    synchronized anime direction shaped by era-aware line economy and genre tone, alongside a aerial
-    anime direction shaped by era-aware line economy and genre tone, alongside lifted silhouettes
-    and airborne balance, alongside contours paced by synchronized tension, readable pose energy,
-    and silhouette discipline; a synchronized accent system held inside disciplined cel values,
-    alongside a aerial accent system held inside disciplined cel values; sky rim light and
-    high-altitude glow, alongside a synchronized light logic using cel rim, glow behavior, and
-    blocked shadow; cel paint and ink grain tuned to synchronized material contrast, alongside cel
-    paint and ink grain tuned to aerial material contrast and matched arcs, group timing, and
-    ensemble symmetry, alongside vertical swoops, open-sky spacing, and flight arcs and group
-    formation, call-and-response spacing, and shared motion, finish discipline, and negative
-    controls without requiring a fixed canon cast, title scene, prop bundle, location, sport,
-    instrument, weapon, or card composition.
+  aesthetic: 'Synchronized team anime of aerial precision: cheer pyramids, divers in unison and bodies moving as one pattern.'
+  subject_treatment: Keep the prompt's subject and action; repeat and mirror it across a team moving in perfect unison.
+  color_and_tone: Bright team colors against clear sky or pool blue with white highlights.
+  lighting_and_shadow: Bright daylight or arena light with clean shadows under airborne bodies.
+  texture_and_material: Uniforms, pom-poms, water spray and mats drawn in crisp cel.
+  camera_and_composition: Symmetrical framings, overhead views of formation patterns and poses mirrored across the team.
+  atmosphere_and_mood: Joyful and exact, trust between teammates made visible in the air.
+  rendering_and_quality: Precise sports anime with repeated figures and clean symmetry.
+  key_features: unison; mirrored poses; aerial pyramid; symmetry
+  creative_brief: "Synchronized team anime of aerial precision: cheer pyramids, divers in unison and bodies moving as one pattern. Carry it through unison, mirrored poses, aerial pyramid, symmetry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - real team or league logo
   - realistic
   - 3d render
   - photo
@@ -113,15 +53,16 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-363.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy
-    exaggeration, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise, readable text
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

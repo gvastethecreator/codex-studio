@@ -3,10 +3,10 @@ id: SP05-355
 packId: pack_16
 name: Festive Sprint Idol Energy Style
 styleAnchors:
-  - 'Festive Sprint Idol Energy Style'
-displayName: 'Festive Sprint Idol Energy'
+  - Festive Sprint Idol Energy Style
+displayName: Festive Sprint Idol Energy
 category: 5. Sports, Competition & Performance
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,82 +15,24 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: >-
-    Festive Sprint Idol Energy Style acts as a transferable anime-prestige router: a festive anime
-    direction shaped by era-aware line economy and genre tone, alongside a sprint anime direction
-    shaped by era-aware line economy and genre tone; fuse it with sports and performance anime
-    direction with kinetic timing, competitive psychology, body mechanics, rhythm, and impact
-    clarity; it routes era, genre, line economy, cel or digital finish, and performance tone without
-    locking prompt content to the source title or sample image.
-  subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through contours paced by
-    festive tension, readable pose energy, and silhouette discipline, alongside contours paced by
-    sprint tension, readable pose energy, and silhouette discipline; identity should remain readable
-    through anime contour, expression economy, pose energy, shape simplification, and effect
-    hierarchy instead of a required canon character or title scene.
-  color_and_tone: >-
-    Map color through festival brights, stage accents, and warm crowd glow, alongside a sprint
-    accent system held inside disciplined cel values; anchor it in team color blocks, gym-light
-    neutrals, night-race blues, stage glow, brass warmth, sweat highlights, and impact accents; keep
-    value separation clean, cel flats intentional, accents purposeful, and palette behavior attached
-    to the requested content.
-  lighting_and_shadow: >-
-    Use a festive light logic using cel rim, glow behavior, and blocked shadow, alongside a sprint
-    light logic using cel rim, glow behavior, and blocked shadow; combine it with arena-like cel
-    light, spotlight cuts, reflective sweat, motion streaks, instrument gleam, and high-pressure rim
-    highlights; shadows should read as anime light design, rims should clarify form, and glow or
-    effects should support the prompt rather than replacing it.
-  texture_and_material: >-
-    Render cel paint and ink grain tuned to festive material contrast, alongside cel paint and ink
-    grain tuned to sprint material contrast; anchor surfaces in jersey fabric, skin highlight,
-    rubber, polished floor, instrument brass, stage dust, road grit, and speed-line overlays; cel
-    edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay
-    coherent across people, objects, environments, action, and abstractions.
-  camera_and_composition: >-
-    Frame around festive converted into reusable framing rhythm and anime timing, alongside sprint
-    converted into reusable framing rhythm and anime timing, then extend it with vertical rallies,
-    diagonal breakaways, spin arcs, duel spacing, ensemble grouping, and precise impact timing; the
-    style should support portraits, props, machines, performances, landscapes, symbols, and full
-    scenes through reusable anime staging grammar instead of one fixed card layout.
-  atmosphere_and_mood: >-
-    Carry mood through idol energy and public sprint euphoria, alongside sprint emotional pressure
-    and genre-specific tone; braid it with rivalry, obsession, comeback grit, vulnerable
-    performance, team trust, training method, and euphoric release; the preset can become funny,
-    sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving
-    the chosen anime lineage.
-  rendering_and_quality: >-
-    Finish with clean anime finishing that keeps festive identity readable without noisy denoise,
-    alongside clean anime finishing that keeps sprint identity readable without noisy denoise;
-    enforce high-energy anime finish with clear motion, believable anatomy, denoised effects, and no
-    sports-photo realism; prioritize clean denoise, stable anatomy or object structure, readable
-    effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or
-    3D-render drift.
-  key_features: >-
-    a festive anime direction shaped by era-aware line economy and genre tone, alongside a sprint
-    anime direction shaped by era-aware line economy and genre tone; contours paced by festive
-    tension, readable pose energy, and silhouette discipline, alongside contours paced by sprint
-    tension, readable pose energy, and silhouette discipline; cel paint and ink grain tuned to
-    festive material contrast, alongside cel paint and ink grain tuned to sprint material contrast;
-    a festive light logic using cel rim, glow behavior, and blocked shadow, alongside a sprint light
-    logic using cel rim, glow behavior, and blocked shadow; festive converted into reusable framing
-    rhythm and anime timing, alongside sprint converted into reusable framing rhythm and anime
-    timing
-  creative_brief: >-
-    Apply Festive Sprint Idol Energy Style after prompt X as a transferable anime-prestige layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a
-    festive anime direction shaped by era-aware line economy and genre tone, alongside a sprint
-    anime direction shaped by era-aware line economy and genre tone, alongside contours paced by
-    festive tension, readable pose energy, and silhouette discipline, alongside contours paced by
-    sprint tension, readable pose energy, and silhouette discipline; festival brights, stage
-    accents, and warm crowd glow, alongside a sprint accent system held inside disciplined cel
-    values; a festive light logic using cel rim, glow behavior, and blocked shadow, alongside a
-    sprint light logic using cel rim, glow behavior, and blocked shadow; cel paint and ink grain
-    tuned to festive material contrast, alongside cel paint and ink grain tuned to sprint material
-    contrast and festive converted into reusable framing rhythm and anime timing, alongside sprint
-    converted into reusable framing rhythm and anime timing, finish discipline, and negative
-    controls without requiring a fixed canon cast, title scene, prop bundle, location, sport,
-    instrument, weapon, or card composition.
+  aesthetic: 'Idol sports festival anime: cheering, confetti-bright colors, sprinting performers and stadium stages that mix competition with show.'
+  subject_treatment: Keep the prompt's subject and action; add festival energy with bright stage colors, cheering crowds and sparkle.
+  color_and_tone: Candy pinks, sky blues and lemon yellow with glittering white highlights.
+  lighting_and_shadow: Bright stadium daylight with sparkle highlights and colorful bounced light.
+  texture_and_material: Satin costumes, sneakers, ribbons and confetti in glossy cel.
+  camera_and_composition: Dynamic sprinting shots with cheering stands and stage elements behind.
+  atmosphere_and_mood: Cheerful and energetic, a sports day that feels like a concert.
+  rendering_and_quality: Glossy idol anime with sparkle effects and bouncy animation.
+  key_features: confetti colors; sprinting idols; cheering stands; sparkle
+  creative_brief: "Idol sports festival anime: cheering, confetti-bright colors, sprinting performers and stadium stages that mix competition with show. Carry it through confetti colors, sprinting idols, cheering stands, sparkle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - real team or league logo
+  - real car brand
   - realistic
   - 3d render
   - photo
@@ -112,15 +54,16 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-355.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy
-    exaggeration, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise, readable text
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

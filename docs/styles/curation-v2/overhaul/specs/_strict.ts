@@ -26,7 +26,12 @@ export function dna(fields: Dna): Dna {
     }
   }
   if (problems.length) {
-    throw new Error(`DNA for "${fields.aesthetic.slice(0, 40)}":\n  ${problems.join('\n  ')}`);
+    const message = `DNA for "${fields.aesthetic.slice(0, 40)}":\n  ${problems.join('\n  ')}`;
+    // STRICT_COLLECT=1 lists every problem in a spec instead of stopping at the first preset.
+    if (process.env.STRICT_COLLECT === '1') {
+      (globalThis as { __dnaProblems?: string[] }).__dnaProblems ??= [];
+      (globalThis as { __dnaProblems?: string[] }).__dnaProblems!.push(message);
+    } else throw new Error(message);
   }
   return fields;
 }

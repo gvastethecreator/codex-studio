@@ -3,10 +3,10 @@ id: SP05-348
 packId: pack_16
 name: Summer Precision Duel Style
 styleAnchors:
-  - 'Summer Precision Duel Style'
-displayName: 'Summer Precision Duel'
+  - Summer Precision Duel Style
+displayName: Summer Precision Duel
 category: 5. Sports, Competition & Performance
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,79 +15,23 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: >-
-    Summer Precision Duel Style acts as a transferable anime-prestige router: a summer anime
-    direction shaped by era-aware line economy and genre tone, alongside a precision anime direction
-    shaped by era-aware line economy and genre tone; fuse it with sports and performance anime
-    direction with kinetic timing, competitive psychology, body mechanics, rhythm, and impact
-    clarity; it routes era, genre, line economy, cel or digital finish, and performance tone without
-    locking prompt content to the source title or sample image.
-  subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through precise anatomy,
-    controlled deformation, and crisp effect edges, alongside contours paced by summer tension,
-    readable pose energy, and silhouette discipline; identity should remain readable through anime
-    contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of
-    a required canon character or title scene.
-  color_and_tone: >-
-    Map color through a summer accent system held inside disciplined cel values, alongside a
-    precision accent system held inside disciplined cel values; anchor it in team color blocks,
-    gym-light neutrals, night-race blues, stage glow, brass warmth, sweat highlights, and impact
-    accents; keep value separation clean, cel flats intentional, accents purposeful, and palette
-    behavior attached to the requested content.
-  lighting_and_shadow: >-
-    Use a summer light logic using cel rim, glow behavior, and blocked shadow, alongside a precision
-    light logic using cel rim, glow behavior, and blocked shadow; combine it with arena-like cel
-    light, spotlight cuts, reflective sweat, motion streaks, instrument gleam, and high-pressure rim
-    highlights; shadows should read as anime light design, rims should clarify form, and glow or
-    effects should support the prompt rather than replacing it.
-  texture_and_material: >-
-    Render cel paint and ink grain tuned to summer material contrast, alongside cel paint and ink
-    grain tuned to precision material contrast; anchor surfaces in jersey fabric, skin highlight,
-    rubber, polished floor, instrument brass, stage dust, road grit, and speed-line overlays; cel
-    edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay
-    coherent across people, objects, environments, action, and abstractions.
-  camera_and_composition: >-
-    Frame around clean timing windows and exact visual hierarchy, alongside summer converted into
-    reusable framing rhythm and anime timing, then extend it with vertical rallies, diagonal
-    breakaways, spin arcs, duel spacing, ensemble grouping, and precise impact timing; the style
-    should support portraits, props, machines, performances, landscapes, symbols, and full scenes
-    through reusable anime staging grammar instead of one fixed card layout.
-  atmosphere_and_mood: >-
-    Carry mood through summer emotional pressure and genre-specific tone, alongside precision
-    emotional pressure and genre-specific tone; braid it with rivalry, obsession, comeback grit,
-    vulnerable performance, team trust, training method, and euphoric release; the preset can become
-    funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while
-    preserving the chosen anime lineage.
-  rendering_and_quality: >-
-    Finish with sharp cel clarity with no smeared effects, alongside clean anime finishing that
-    keeps summer identity readable without noisy denoise; enforce high-energy anime finish with
-    clear motion, believable anatomy, denoised effects, and no sports-photo realism; prioritize
-    clean denoise, stable anatomy or object structure, readable effects, controlled grain, no
-    watermark, no fake text, no signature, and no photoreal or 3D-render drift.
-  key_features: >-
-    a summer anime direction shaped by era-aware line economy and genre tone, alongside a precision
-    anime direction shaped by era-aware line economy and genre tone; precise anatomy, controlled
-    deformation, and crisp effect edges, alongside contours paced by summer tension, readable pose
-    energy, and silhouette discipline; cel paint and ink grain tuned to summer material contrast,
-    alongside cel paint and ink grain tuned to precision material contrast; a summer light logic
-    using cel rim, glow behavior, and blocked shadow, alongside a precision light logic using cel
-    rim, glow behavior, and blocked shadow; clean timing windows and exact visual hierarchy,
-    alongside summer converted into reusable framing rhythm and anime timing
-  creative_brief: >-
-    Apply Summer Precision Duel Style after prompt X as a transferable anime-prestige layer: prompt
-    X supplies subject, action, setting, tone, and intensity, while this preset supplies a summer
-    anime direction shaped by era-aware line economy and genre tone, alongside a precision anime
-    direction shaped by era-aware line economy and genre tone, alongside precise anatomy, controlled
-    deformation, and crisp effect edges, alongside contours paced by summer tension, readable pose
-    energy, and silhouette discipline; a summer accent system held inside disciplined cel values,
-    alongside a precision accent system held inside disciplined cel values; a summer light logic
-    using cel rim, glow behavior, and blocked shadow, alongside a precision light logic using cel
-    rim, glow behavior, and blocked shadow; cel paint and ink grain tuned to summer material
-    contrast, alongside cel paint and ink grain tuned to precision material contrast and clean
-    timing windows and exact visual hierarchy, alongside summer converted into reusable framing
-    rhythm and anime timing, finish discipline, and negative controls without requiring a fixed
-    canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.
+  aesthetic: 'Summer baseball anime of the pitcher and batter duel: cicada heat, dusty diamonds, sweat and one pitch that decides everything.'
+  subject_treatment: Keep the prompt's subject and action; frame it as a one-on-one duel in summer heat, every detail pointing at a single decisive moment.
+  color_and_tone: Dusty infield tan, bright outfield green, cloudless summer blue and white uniforms.
+  lighting_and_shadow: High summer sun with short black shadows, heat shimmer and bright cap brims.
+  texture_and_material: Dust clouds, stitched leather ball, sweat-darkened uniforms in crisp cel.
+  camera_and_composition: Framing down the pitcher-to-batter line, close-ups on grips and eyes.
+  atmosphere_and_mood: Hot and breathless, a whole summer riding on one pitch in the ninth inning.
+  rendering_and_quality: Crisp sports anime with precise mechanics and heat haze effects.
+  key_features: pitcher-batter line; summer heat; dust; grip close-ups
+  creative_brief: "Summer baseball anime of the pitcher and batter duel: cicada heat, dusty diamonds, sweat and one pitch that decides everything. Carry it through pitcher-batter line, summer heat, dust, grip close-ups. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - real team or league logo
   - realistic
   - 3d render
   - photo
@@ -109,15 +53,16 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-348.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy
-    exaggeration, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise, readable text
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

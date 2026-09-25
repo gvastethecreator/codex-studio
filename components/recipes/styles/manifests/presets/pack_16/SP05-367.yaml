@@ -3,10 +3,10 @@ id: SP05-367
 packId: pack_16
 name: Brass Section Tender Precision Style
 styleAnchors:
-  - 'Brass Section Tender Precision Style'
-displayName: 'Brass Section Tender Precision'
+  - Brass Section Tender Precision Style
+displayName: Brass Section Tender Precision
 category: 5. Sports, Competition & Performance
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,78 +15,23 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: >-
-    Brass Section Tender Precision Style acts as a transferable anime-prestige router: a brass anime
-    direction shaped by era-aware line economy and genre tone, alongside a section anime direction
-    shaped by era-aware line economy and genre tone; fuse it with sports and performance anime
-    direction with kinetic timing, competitive psychology, body mechanics, rhythm, and impact
-    clarity; it routes era, genre, line economy, cel or digital finish, and performance tone without
-    locking prompt content to the source title or sample image.
-  subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through precise anatomy,
-    controlled deformation, and crisp effect edges, alongside contours paced by brass tension,
-    readable pose energy, and silhouette discipline; identity should remain readable through anime
-    contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of
-    a required canon character or title scene.
-  color_and_tone: >-
-    Map color through brass gold, warm stage light, and deep rehearsal-interior-system pressure
-    browns, alongside a section accent system held inside disciplined cel values; anchor it in team
-    color blocks, gym-light neutrals, night-race blues, stage glow, brass warmth, sweat highlights,
-    and impact accents; keep value separation clean, cel flats intentional, accents purposeful, and
-    palette behavior attached to the requested content.
-  lighting_and_shadow: >-
-    Use instrument gleam and performance spotlight, alongside soft warm highlights and small
-    reflective glints; combine it with arena-like cel light, spotlight cuts, reflective sweat,
-    motion streaks, instrument gleam, and high-pressure rim highlights; shadows should read as anime
-    light design, rims should clarify form, and glow or effects should support the prompt rather
-    than replacing it.
-  texture_and_material: >-
-    Render polished brass, breath haze, and worn lacquer, alongside cel paint and ink grain tuned to
-    section material contrast; anchor surfaces in jersey fabric, skin highlight, rubber, polished
-    floor, instrument brass, stage dust, road grit, and speed-line overlays; cel edges, painted
-    surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across
-    people, objects, environments, action, and abstractions.
-  camera_and_composition: >-
-    Frame around clean timing windows and exact visual hierarchy, alongside brass converted into
-    reusable framing rhythm and anime timing, then extend it with vertical rallies, diagonal
-    breakaways, spin arcs, duel spacing, ensemble grouping, and precise impact timing; the style
-    should support portraits, props, machines, performances, landscapes, symbols, and full scenes
-    through reusable anime staging grammar instead of one fixed card layout.
-  atmosphere_and_mood: >-
-    Carry mood through tender restraint and careful emotional timing, alongside brass emotional
-    pressure and genre-specific tone; braid it with rivalry, obsession, comeback grit, vulnerable
-    performance, team trust, training method, and euphoric release; the preset can become funny,
-    sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving
-    the chosen anime lineage.
-  rendering_and_quality: >-
-    Finish with sharp cel clarity with no smeared effects, alongside clean anime finishing that
-    keeps brass identity readable without noisy denoise; enforce high-energy anime finish with clear
-    motion, believable anatomy, denoised effects, and no sports-photo realism; prioritize clean
-    denoise, stable anatomy or object structure, readable effects, controlled grain, no watermark,
-    no fake text, no signature, and no photoreal or 3D-render drift.
-  key_features: >-
-    a brass anime direction shaped by era-aware line economy and genre tone, alongside a section
-    anime direction shaped by era-aware line economy and genre tone; precise anatomy, controlled
-    deformation, and crisp effect edges, alongside contours paced by brass tension, readable pose
-    energy, and silhouette discipline; polished brass, breath haze, and worn lacquer, alongside cel
-    paint and ink grain tuned to section material contrast; instrument gleam and performance
-    spotlight, alongside soft warm highlights and small reflective glints; clean timing windows and
-    exact visual hierarchy, alongside brass converted into reusable framing rhythm and anime timing
-  creative_brief: >-
-    Apply Brass Section Tender Precision Style after prompt X as a transferable anime-prestige
-    layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset
-    supplies a brass anime direction shaped by era-aware line economy and genre tone, alongside a
-    section anime direction shaped by era-aware line economy and genre tone, alongside precise
-    anatomy, controlled deformation, and crisp effect edges, alongside contours paced by brass
-    tension, readable pose energy, and silhouette discipline; brass gold, warm stage light, and deep
-    rehearsal-interior-system pressure browns, alongside a section accent system held inside
-    disciplined cel values; instrument gleam and performance spotlight, alongside soft warm
-    highlights and small reflective glints; polished brass, breath haze, and worn lacquer, alongside
-    cel paint and ink grain tuned to section material contrast and clean timing windows and exact
-    visual hierarchy, alongside brass converted into reusable framing rhythm and anime timing,
-    finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop
-    bundle, location, sport, instrument, weapon, or card composition.
+  aesthetic: 'Brass band anime of tender precision: polished instruments, bare music stands, summer practice rooms and breathing together.'
+  subject_treatment: Keep the prompt's subject and action; place it among brass instruments, rehearsal rooms and the discipline of playing together.
+  color_and_tone: Warm brass gold, summer afternoon light and school-uniform navy.
+  lighting_and_shadow: Afternoon sun through windows, bright reflections on brass bells and valves.
+  texture_and_material: Polished brass, valve oil gleam, music stands and wooden floors.
+  camera_and_composition: Reflections in instrument bells and rows of players framed in sections.
+  atmosphere_and_mood: Tender and earnest, a summer spent chasing one perfect note together.
+  rendering_and_quality: Luminous performance anime with meticulous instrument detail and glowing summer light.
+  key_features: brass reflections; practice room; sections; summer light
+  creative_brief: "Brass band anime of tender precision: polished instruments, bare music stands, summer practice rooms and breathing together. Carry it through brass reflections, practice room, sections, summer light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - real band or brand logo
   - realistic
   - 3d render
   - photo
@@ -108,15 +53,16 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-367.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy
-    exaggeration, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise, readable text
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

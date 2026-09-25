@@ -196,7 +196,7 @@ const spec: Spec = {
       [
         "Found-footage anime frame through green night-vision in a forest cabin, a hiker's shaking camera catching two glowing eyes at the edge of the beam beyond the window, heavy grain and a dark vignette. No readable text or logo.",
         'Found-footage anime frame through night-vision of a tent wall being pressed from outside by a hand. No readable text or logo.',
-        "Found-footage anime frame through green night-vision of a cramped attic crawlspace, the camera light catching dust and insulation while something pale shifts between the far beams. No readable text or logo.",
+        'Found-footage anime frame through green night-vision of a cramped attic crawlspace, the camera light catching dust and insulation while something pale shifts between the far beams. No readable text or logo.',
       ],
     ),
     create(
