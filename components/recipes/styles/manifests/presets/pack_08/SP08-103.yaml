@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Elegant full figure with the S-bend silhouette visible, keeping the full outfit silhouette and fit readable at card size.
   atmosphere_and_mood: Elegant, leisurely, romantic and refined, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Soft, luminous, vintage finish, with believable fabric weight, seams and fit detail.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Belle Époque as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Belle Époque fashion: S-bend corseted silhouettes, lace high collars, trumpet skirts, enormous plumed hats and parasols; men in frock coats and top hats. Carry it through S-bend silhouette, lace high collar, enormous plumed hat, parasol, hazy summer light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: S-bend silhouette; lace high collar; enormous plumed hat; parasol; hazy summer light
 avoidRules:
   - brand logo

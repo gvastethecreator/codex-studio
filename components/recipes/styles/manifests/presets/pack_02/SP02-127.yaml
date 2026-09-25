@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Dreamy and romantic, a slow song made visible.
   rendering_and_quality: Analog video glow; distinct from fisheye glam and grunge distress.
   key_features: blown colored gels; soft-focus bloom; interlace motion echo; haze silhouettes; slow circling camera
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Interlaced Music Video Glow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Interlaced music-video glow: 90s cable performance video with blown colored gels, soft-focus bloom and dreamy interlaced motion. Carry it through blown colored gels, soft-focus bloom, interlace motion echo, haze silhouettes, slow circling camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable fake text
   - readable ticker

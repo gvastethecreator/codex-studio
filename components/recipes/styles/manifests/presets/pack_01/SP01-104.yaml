@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Composition built around the shadow shapes; subject placed exactly in a slice of light, often with their own long shadow.
   atmosphere_and_mood: Graphic and tense, a lone figure balanced on a thin edge between light and void.
   rendering_and_quality: Clean deep blacks and protected highlights; no fill light lifting the shadows.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hard-Shadow Street Geometry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hard-shadow street geometry: exposure set for the sunlit patches so everything else falls into solid black shapes, and the subject steps into the light. Carry it through subject in a slice of light, solid black shadow shapes, hard sun, long cast shadows, underexposed surroundings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: subject in a slice of light; solid black shadow shapes; hard sun; long cast shadows; underexposed surroundings
 avoidRules:
   - illustration

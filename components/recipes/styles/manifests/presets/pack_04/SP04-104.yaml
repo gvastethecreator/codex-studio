@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Soaring diagonal compositions, figures balanced on impossible points, long swirling trails of cloth and energy.
   atmosphere_and_mood: Grand heroic wuxia drama, elegant and explosive at once.
   rendering_and_quality: Crisp ink contour under smooth airbrush color and metallic sheen; no flat print color, no screentone.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Airbrush Manhua Action as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Painted martial-arts manhua: sharp ink figures fully colored with airbrush gradients, glowing energy auras and metallic gold highlights. Carry it through airbrush gradient color, energy auras, metallic gold highlights, flowing silk trails, soaring diagonal composition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: airbrush gradient color; energy auras; metallic gold highlights; flowing silk trails; soaring diagonal composition
 avoidRules:
   - added panels or gutters

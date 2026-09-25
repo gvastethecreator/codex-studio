@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Camera close to the glass, subject inside framed by reflected shapes from outside (or the reverse); no single clear depth plane.
   atmosphere_and_mood: Dreamlike and ambiguous, two moments folded into one surface of glass.
   rendering_and_quality: In-camera optical overlap, not a digital double exposure or blend-mode composite.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Reflection-Layered Street as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Reflection-layered street photography: shooting through window glass so the room behind and the street reflected on it overlap in one ambiguous frame. Carry it through through-glass layering, reflected street over interior, semi-transparent overlap, glass flaws, ambiguous depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: through-glass layering; reflected street over interior; semi-transparent overlap; glass flaws; ambiguous depth
 avoidRules:
   - illustration

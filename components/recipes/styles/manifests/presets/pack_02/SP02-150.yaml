@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Circular scope centered, subject translated into echo blips and land shapes.
   atmosphere_and_mood: Tense and watchful, something approaching in the sweep.
   rendering_and_quality: Analog radar display look; no readable numbers or bearings.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Radar PPI Scope as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Radar plan-position scope: a round phosphor display where a rotating sweep paints echoes of ships, land and weather that slowly fade. Carry it through rotating sweep line, fading phosphor echoes, round scope, range rings, green glow on black. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: rotating sweep line; fading phosphor echoes; round scope; range rings; green glow on black
 avoidRules:
   - readable readouts

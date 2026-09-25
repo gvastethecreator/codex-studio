@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; each surface gets its own pattern of marks, such as dashes for fields and curls for foliage.
   atmosphere_and_mood: Sun-baked and vigorous, a lively scene made from rhythm.
   rendering_and_quality: Blunt varied marks with dry edges, no fine hatching, no wash, no hairline nib strokes.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Reed Pen Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Reed pen drawing: a cut reed dipped in brown ink making blunt, slightly splitting strokes, with the landscape built from rhythmic dashes, dots and short curls. Carry it through blunt split reed strokes, rhythmic dashes, dots and curls, brown ink on cream laid paper, dry-edged marks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: blunt split reed strokes; rhythmic dashes, dots and curls; brown ink on cream laid paper; dry-edged marks; pattern per surface
 avoidRules:
   - photo

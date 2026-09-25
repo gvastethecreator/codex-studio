@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; the pose shows muscles in contraction and stretch.
   atmosphere_and_mood: Studious and powerful, the machinery of movement laid bare without horror.
   rendering_and_quality: Clean museum-model finish with no blood, gore, wounds or exposed organs.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Écorché Muscle Study as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Écorché muscle study: the subject shown as a flayed anatomical sculpture, each muscle a distinct striated form wrapping the bone like a classical art-school figure. Carry it through flayed muscle groups, fiber striations, ivory tendons, single high sculpture key, clean museum finish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: flayed muscle groups; fiber striations; ivory tendons; single high sculpture key; clean museum finish
 avoidRules:
   - forced T-pose

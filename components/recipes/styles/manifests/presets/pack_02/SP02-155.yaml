@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Isometric cube view, the subject on the top face.
   atmosphere_and_mood: Analytical and beautiful, a scene opened up into its light.
   rendering_and_quality: Clean scientific visualization without any axes, numbers, legends or captions.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hyperspectral Data Cube as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hyperspectral data cube: an image shown as the top face of a 3D block whose sides display hundreds of spectral bands as rainbow streaks. Carry it through isometric data cube, subject on the top face, rainbow spectral sides, band striations, dark background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: isometric data cube; subject on the top face; rainbow spectral sides; band striations; dark background
 avoidRules:
   - readable readouts

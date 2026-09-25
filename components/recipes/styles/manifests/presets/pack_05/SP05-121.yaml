@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Ceremonial grace and restrained resolve, motion flowing like a performed rite rather than a brawl.
   rendering_and_quality: Clear contrast between soft digital shading on figures and flat printed trails; garment patterns kept small.
   key_features: woodblock-print effect trails; bokashi-graded waves and flames; clean digital cel figures; winter blue and amber; nested trail arcs
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Printed-Wave Effect Trail Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Polished digital cel anime whose motion and energy trails are drawn as woodblock-print elements: curling wave crests, stylized flame tongues and wind bands in flat graded color. Carry it through woodblock-print effect trails, bokashi-graded waves and flames, clean digital cel figures, winter blue and amber, nested trail arcs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

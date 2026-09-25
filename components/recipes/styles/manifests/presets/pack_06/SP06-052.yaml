@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Playful, cozy and crafted, a tiny buildable world.
   rendering_and_quality: Consistent cube size everywhere, stepped silhouettes, soft occlusion; no smooth meshes and no branded block-game look.
   key_features: equal-sized cubes on a 3D grid; stepped silhouettes; one color per cube with variation; ambient occlusion between cubes; diorama base
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Voxel Cube Build as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Voxel construction: every subject and surface built from equal-sized cubes on a 3D grid, like a hand-placed digital diorama. Carry it through equal-sized cubes on a 3D grid, stepped silhouettes, one color per cube with variation, ambient occlusion between cubes, diorama base. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - concept board layout

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; the drawing stays sketchy at the edges with dry lines trailing off.
   atmosphere_and_mood: Fresh and light, an outdoor sketchbook page in progress.
   rendering_and_quality: A deliberate mix of crisp dry pencil strokes and melted wash zones, hatching ghosts under water; no opaque paint.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Watercolor Pencil Dissolve as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Watercolor pencil drawing: colored lines hatched with water-soluble pencils, then partly brushed with clean water so some strokes melt into washes while others stay crisp. Carry it through dry pencil hatching beside dissolved washes, ghost strokes under water, soft bleed edges, paper white gaps, sketchy trailing edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: dry pencil hatching beside dissolved washes; ghost strokes under water; soft bleed edges; paper white gaps; sketchy trailing edges
 avoidRules:
   - photo

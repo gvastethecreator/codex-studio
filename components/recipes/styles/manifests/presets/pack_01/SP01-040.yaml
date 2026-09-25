@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Reverent and awed, silent space cut by slow diagonal shafts of light.
   rendering_and_quality: Clean beam edges and smooth haze without banding.
   key_features: visible light shafts; haze; occluder pattern; dust motes; subject crossed by beams
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies God Rays (Volumetric) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Volumetric god rays: hard beams of light made visible by haze, dust or fog, crossing the scene in defined shafts. Carry it through visible light shafts, haze, occluder pattern, dust motes, subject crossed by beams. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - generic stock-photo face
   - celebrity likeness

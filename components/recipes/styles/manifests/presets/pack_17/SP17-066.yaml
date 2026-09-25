@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Isometric vertical crop, playable floor hierarchy, one focal subject, environmental scale, and no interface.
   atmosphere_and_mood: Cold, tactical, cursed, subterranean, and austere.
   rendering_and_quality: Stylized isometric game art that can lean pixel/2.5D but stays crisp, readable, and non-photoreal.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Obsidian 2.5D Catacombs as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Monochrome 2.5D catacomb game aesthetic with obsidian tiles, bone highlights, severe isometric depth, and sparse pixel-like value discipline. Carry it through obsidian isometric floor, bone highlights, monochrome dungeon game, sparse corpse-light, no HUD. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: obsidian isometric floor; bone highlights; monochrome dungeon game; sparse corpse-light; no HUD; 2.5D tactical depth
 avoidRules:
   - bright fantasy UI

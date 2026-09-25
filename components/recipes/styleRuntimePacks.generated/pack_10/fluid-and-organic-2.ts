@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Wet translucent finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'alcohol ink cells; dark edge rings; metallic veins',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Alcohol Ink as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Alcohol ink: vivid translucent inks spreading and pushing each other into cells with dark edge rings. Carry it through alcohol ink cells, dark edge rings, metallic veins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -56,7 +56,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp high-contrast finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'smoke filaments tracing form; black ground',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Smoke Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Smoke photography style: the subject drawn as thin wisps of backlit smoke on black. Carry it through smoke filaments tracing form, black ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -82,7 +82,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality: 'Glossy finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'iridescent thin-film swirls; dark ground',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oil Slick as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Oil slick: iridescent thin-film color swirls forming the subject. Carry it through iridescent thin-film swirls, dark ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -110,7 +110,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp macro finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'giant bubble surface; iridescent swirls; spherical framing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Macro Bubble as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Macro bubble: the subject seen inside or reflected on a giant soap-bubble surface. Carry it through giant bubble surface, iridescent swirls, spherical framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -138,7 +138,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Fine detailed finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'branching hyphae; glowing nodes; network',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mycelium Network as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Mycelium network: the subject built from branching white fungal threads and nodes. Carry it through branching hyphae, glowing nodes, network. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -165,7 +165,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Glossy macro finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'ferrofluid spikes; glossy black',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ferrofluid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ferrofluid: black magnetic liquid spiking into sharp cones. Carry it through ferrofluid spikes, glossy black. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -191,7 +191,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality: 'Glossy finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'acrylic cells; lacing; glossy pour',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Acrylic Pour as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Acrylic pour: cells and lacing from poured acrylic layers forming the subject. Carry it through acrylic cells, lacing, glossy pour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -216,7 +216,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality: 'Crisp finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'Turing patterns; maze stripes; spots',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Reaction Diffusion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Reaction-diffusion: labyrinthine Turing patterns of spots and stripes forming the subject. Carry it through Turing patterns, maze stripes, spots. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -243,7 +243,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality: 'Crisp finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'cymatic nodal pattern; radial symmetry',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cymatics (Sound) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cymatics: sand or liquid patterns formed by sound vibration — concentric nodal geometry. Carry it through cymatic nodal pattern, radial symmetry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -271,7 +271,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Deep-space finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'glowing nebula gas; dust lanes; stars',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Nebula Cloud as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Nebula cloud: the subject formed of glowing interstellar gas, dust lanes and stars. Carry it through glowing nebula gas, dust lanes, stars. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -301,7 +301,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp printed finish, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paper Marbling as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Paper marbling: combed and swirled floating paints transferred to paper in feathered and peacock patterns. Carry it through combed marbling, feathered swirls, antique paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'combed marbling; feathered swirls; antique paper',
     },
     ui: {
@@ -333,7 +333,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Luxurious, glossy, mineral and vivid, driven by the construction, color and rhythm.',
       rendering_and_quality: 'Glossy finish, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Resin Geode Pour as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Resin geode: poured resin rings with crystal centers and gold edges. Carry it through resin rings, crystal centers, gold veins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'resin rings; crystal centers; gold veins',
     },
     ui: {
@@ -366,7 +366,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Soft glowing finish, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lava Lamp Blobs as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Lava lamp: soft rising wax blobs merging and splitting in glowing liquid. Carry it through glowing wax blobs, merging, retro glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'glowing wax blobs; merging; retro glow',
     },
     ui: {
@@ -398,7 +398,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Organic, fractal, delicate and eerie, driven by the construction, color and rhythm.',
       rendering_and_quality: 'Fine finish, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dendritic Ink Growth as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dendritic growth: branching fern-like ink or mineral dendrites forming the subject. Carry it through dendritic branching, fern-like growth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'dendritic branching; fern-like growth',
     },
     ui: {
@@ -431,7 +431,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Wet paper finish, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Salt-Bloom Watercolor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Salt-bloom watercolor: wet washes with salt crystals creating starry blooms. Carry it through salt starbursts, wet washes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'salt starbursts; wet washes',
     },
     ui: {
@@ -462,7 +462,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Warm, nostalgic, humble and intimate, driven by the construction, color and rhythm.',
       rendering_and_quality: 'Paper finish, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Coffee Stain Bloom as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Coffee stain painting: brown coffee washes with dark tide rings and blooms. Carry it through coffee washes, tide rings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'coffee washes; tide rings',
     },
     ui: {
@@ -492,7 +492,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Playful, vivid, crafty and bold, driven by the construction, color and rhythm.',
       rendering_and_quality: 'Glossy finish, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hydro-Dip Swirl as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hydro-dip: the subject coated by dipping through swirled paint film. Carry it through hydro-dip swirls, coated surfaces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'hydro-dip swirls; coated surfaces',
     },
     ui: {
@@ -522,7 +522,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific, invisible-made-visible and precise, driven by the construction, color and rhythm.',
       rendering_and_quality: 'Crisp finish, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Magnetic Iron Filings as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Iron filings: field lines of iron filings tracing the subject. Carry it through aligned iron filings, field lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'aligned iron filings; field lines',
     },
     ui: {
@@ -552,7 +552,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Cold, delicate, magical and quiet, driven by the construction, color and rhythm.',
       rendering_and_quality: 'Crisp finish, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Frost Fern Crystals as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Frost ferns: window-frost crystal feathers growing into the subject. Carry it through frost fern crystals, window glass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'frost fern crystals; window glass',
     },
     ui: {
@@ -586,7 +586,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Projected finish, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Liquid Light Show as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Liquid light show: overhead-projected oil and dye blobs pulsing in saturated color. Carry it through projected oil blobs, saturated dye. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'projected oil blobs; saturated dye',
     },
     ui: {

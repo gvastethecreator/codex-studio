@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Otherworldly and frozen, familiar landscapes turned pale as ghost light.
   rendering_and_quality: Monochrome infrared negative look; not the pink-and-cyan color infrared owned by Photography Eras.
   key_features: white glowing foliage; near-black sky; halation bloom; milky skin; pronounced grain
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Black-and-White Infrared Film as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Black-and-white infrared film behind a deep red filter: living foliage glows white, clear skies turn nearly black, and highlights bloom with soft halation. Carry it through white glowing foliage, near-black sky, halation bloom, milky skin, pronounced grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - clean digital sensor look
   - generic stock-photo face

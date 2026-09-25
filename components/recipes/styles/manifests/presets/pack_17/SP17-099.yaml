@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Bold centered or diagonal composition with big flat color shapes, strong silhouette, and poster-like breathing room, without typography.
   atmosphere_and_mood: Loud, playful, nocturnal, and a little dangerous.
   rendering_and_quality: Crisp two-color riso reproduction with clean dot structure and pure spot-color fields.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fluoro Pink Federal Blue Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Classic fluorescent pink and deep federal-blue risograph pairing, overlapping into electric purple, with bold graphic contour, coarse halftone gradients, and poster-like flatness. Carry it through fluorescent pink plus federal blue, violet overprint, coarse halftone gradients, bold flat poster shapes, glow as pink dots. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: fluorescent pink plus federal blue; violet overprint; coarse halftone gradients; bold flat poster shapes; glow as pink dots
 avoidRules:
   - full-color painting

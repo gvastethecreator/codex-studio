@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Composed central image with plenty of indigo space and elegant decorative restraint.
   atmosphere_and_mood: Precious, serene, nocturnal, and devotional.
   rendering_and_quality: 'Refined luxury finish: crisp metallic lines, no muddy overlaps, no digital glow.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gold Ink Indigo Paper Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Luxurious ink drawing on indigo-dyed paper using gold and silver ink line and fine metallic hatching, with the dark paper as the ground. Carry it through gold and silver ink on indigo, metallic fine hatching, paper as shadow, precious nocturne. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: gold and silver ink on indigo; metallic fine hatching; paper as shadow; precious nocturne
 avoidRules:
   - white paper

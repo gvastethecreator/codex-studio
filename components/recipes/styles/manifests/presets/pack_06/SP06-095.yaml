@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Crunchy and energetic, with an edge of attitude.
   rendering_and_quality: Crisp 320 by 224 pixels with deliberate dither everywhere translucency appears; no alpha blending.
   key_features: vertical-stripe dither; checkerboard fake transparency; steppy 9-bit palette; parallax layers; no alpha blending
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dither-Heavy 16-Bit Console as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "16-bit console pixel art with about sixty on-screen colors, using heavy vertical-stripe and checkerboard dither to fake transparency and gradients. Carry it through vertical-stripe dither, checkerboard fake transparency, steppy 9-bit palette, parallax layers, no alpha blending. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - console or handheld hardware shown in frame

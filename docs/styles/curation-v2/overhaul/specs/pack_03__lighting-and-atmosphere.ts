@@ -91,7 +91,7 @@ const spec: Spec = {
       briefs: [
         'CGI render of a clockwork owl lit with a classic three-point rig: soft key from the left, dim fill from the right, a bright back light outlining its brass feathers against a dark backdrop. No text or logo.',
         "CGI three-point lit render of a leather-bound adventurer's satchel with buckles, clean separation from the background. No text or logo.",
-        'CGI three-point lit render of a carved wooden chess rook, back light tracing its crenellations. No text or logo.',
+        'CGI three-point lit render of a carved wooden chess rook on a dark table, a soft key from the left, gentle fill from the right and a bright back light tracing every crenellation against the black backdrop. No text or logo.',
       ],
     },
     'SP03-035': {
@@ -140,8 +140,8 @@ const spec: Spec = {
       avoid: [...AVOID, 'directional shadows', 'color'],
       briefs: [
         'Ambient occlusion pass render of a tangled heap of chains, gears and a padlock, everything near white with soft charcoal darkness where the links touch. No text or logo.',
-        'Ambient occlusion pass of a gothic stone tracery window, darkness pooling in every carved recess. No text or logo.',
-        'Ambient occlusion pass of a bowl of stacked seashells, occlusion gathering inside each spiral. No text or logo.',
+        'Ambient occlusion pass of a gothic stone tracery window seen straight on, everything near white while soft charcoal darkness pools in every carved recess, trefoil and mullion joint. No text or logo.',
+        'Ambient occlusion pass of a bowl of stacked seashells on a plain table, soft grey occlusion gathering inside each spiral opening and where the shells rest on each other, all else near white. No text or logo.',
       ],
     },
     'SP03-038': {
@@ -193,7 +193,7 @@ const spec: Spec = {
       briefs: [
         'CGI render of a stone obelisk in a dim temple hall, crisp beams radiating from a high round opening behind it, dust particles sparkling in the shafts. No text or logo.',
         'CGI render of a treasure vault seen through a cracked door, a blade of light crossing piles of coins. No text or logo.',
-        'CGI render of a sunken ship interior underwater, beams through broken hull planks. No text or logo.',
+        'CGI render of a sunken ship interior deep underwater, crisp beams of sea light falling through broken hull planks, floating particles glittering inside the shafts and a skeleton captain at the wheel in silhouette. No text or logo.',
       ],
     },
     'SP03-042': {
@@ -244,7 +244,7 @@ const spec: Spec = {
       briefs: [
         'CGI render of a stone crypt lit only by violet and cyan emissive runes carved into the walls, colored reflections on the wet floor, soft shadows around a sarcophagus. No readable runes or logo.',
         'CGI render of a sleek motorcycle in a dark garage lit only by a ring of orange emissive tubes. No text or logo.',
-        'CGI render of a crystal forest cave lit only by glowing pink crystals. No text or logo.',
+        'CGI render of a crystal cave lit only by glowing pink and violet crystals growing from the walls, their colored light pooling on a still underground lake, no other light source anywhere. No text or logo.',
       ],
     },
     {
@@ -270,7 +270,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'CGI render of a long castle gallery with a row of downlights casting identical scalloped light patterns on the stone wall between tapestries without figures, dark gaps between each pool. No text or logo.',
-        'CGI render of a modern crypt corridor with uplights grazing rough stone columns. No text or logo.',
+        'CGI render of a crypt corridor with uplights set into the floor grazing rough stone columns, each fixture throwing the same scalloped cone of warm light upward and dark gaps between. No text or logo.',
         'CGI render of a wine cellar vault with warm cone pools falling on the barrel ends. No text or logo.',
       ],
     },
@@ -353,7 +353,7 @@ const spec: Spec = {
       briefs: [
         'CGI render of a sleeping dragon on a stone floor with a spotlight through a gothic window cookie projecting pointed-arch light shapes across its scales. No text or logo.',
         'CGI render of an armchair and side table with leaf-pattern light falling over them from an unseen tree. No text or logo.',
-        'CGI render of a bronze bust with prison-bar stripes of light across its face. No text or logo.',
+        'CGI render of a bronze bust in a dim gallery with stripes of light from a barred-window cookie falling across its face and shoulders, hard edges on the light bars and deep shadow between. No text or logo.',
       ],
     },
     {
@@ -378,7 +378,7 @@ const spec: Spec = {
       briefs: [
         'CGI render of a white porcelain chess set lit by red, green and blue point lights, each piece casting a fan of cyan, magenta and yellow shadows across the white board. No text or logo.',
         'CGI render of a white ballerina figurine on a stage floor with three colored shadows spreading behind her. No text or logo.',
-        'CGI render of a white paper crane with rainbow-colored shadows overlapping on a wall. No text or logo.',
+        'CGI render of a white paper crane on a white table lit by red, green and blue lights, three overlapping colored shadows fanning across the wall in cyan, magenta and yellow. No text or logo.',
       ],
     },
     {
@@ -401,7 +401,7 @@ const spec: Spec = {
       briefs: [
         "CGI render of a knight's helmet lit through a two-tone ramp, light and shadow snapping into clean bands with a thin red terminator line between them. No text or logo.",
         'CGI render of a stack of books and an apple with banded light and a warm orange terminator. No readable titles or logo.',
-        'CGI render of a sleeping fox with three flat light bands across its fur. No text or logo.',
+        'CGI render of a sleeping fox curled on a cushion lit through a stepped ramp, three flat light bands across its fur and a thin warm orange terminator line where light meets shadow. No text or logo.',
       ],
     },
     {
@@ -425,7 +425,7 @@ const spec: Spec = {
       briefs: [
         'CGI render of a rain-darkened stone bridge over a canal under overcast dome lighting, no shadows, soft darkening under the arches, a bright featureless sky mirrored in the water. No text or logo.',
         'CGI render of a wooden fishing boat pulled up on a pebble beach under a flat grey sky. No text or logo.',
-        'CGI render of a moss-covered statue in a quiet garden, evenly lit with no sun. No text or logo.',
+        'CGI render of a moss-covered statue of a weeping woman in a quiet walled garden under overcast dome lighting, no sun or cast shadows, soft darkening only under the chin and folds. No text or logo.',
       ],
     },
     {

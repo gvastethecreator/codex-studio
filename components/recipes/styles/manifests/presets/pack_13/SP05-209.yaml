@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: 'Retain the requested feeling; delicate rendering does not assign an emotional tone.'
   rendering_and_quality: 'Use crisp microdetail, clean contours, and small highlight accents without overdecorating the frame.'
   key_features: 'Delicate contour; tiny highlights; fine material detail; gentle tonal steps; compact precision without scale change.'
-  creative_brief: 'Make fine surface marks and small highlights carry the detail without miniaturizing forms. Preserve subject, action, count, camera, and mood.'
+  creative_brief: "Make fine surface marks and small highlights carry the detail without miniaturizing forms. Preserve subject, action, count, camera, and mood. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

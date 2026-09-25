@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low angles with most of the frame sky, arranged so the subject still reads at card size.
   atmosphere_and_mood: Free, restless, open and youthful, driven by the construction, color and rhythm.
   rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rooftop Wind Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Rooftop wind anime: sky-dominated frames with strong wind, flapping clothes and hair, and sweeping clouds. Carry it through windblown cloth, big sky, streaking clouds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: windblown cloth; big sky; streaking clouds
 avoidRules:
   - existing anime character likeness

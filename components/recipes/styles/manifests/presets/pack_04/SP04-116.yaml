@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: 'Three or four figures on one sheet: perspective view, side view, section and exploded detail, leader lines ending at blank points.'
   atmosphere_and_mood: Ingenious and formal, an invention laid open for examination.
   rendering_and_quality: Crisp reproduction-ready line art with no reference numerals, captions or signatures.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Patent Figure Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Patent drawing plate: the subject in precise black ink line on white, shown as several figures with surface-shading lines and leader lines. Carry it through black line on white, thick shade lines, parallel surface shading, several figures on one sheet, blank leader lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: black line on white; thick shade lines; parallel surface shading; several figures on one sheet; blank leader lines
 avoidRules:
   - placeholder gibberish text

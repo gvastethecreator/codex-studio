@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep requested framing; include the pool or edge of the spot.
   atmosphere_and_mood: Lonely and theatrical, a single figure held in a circle of attention.
   rendering_and_quality: Crisp circular beam edge, deep clean blacks outside it, and controlled highlights inside.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Theatrical Spotlight as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Theatrical follow spot: a hard circular beam from above isolating the subject on a dark stage, with a visible pool of light at their feet. Carry it through circular follow spot, light pool on floor, dark stage, visible beam in haze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: circular follow spot; light pool on floor; dark stage; visible beam in haze
 avoidRules:
   - generic stock-photo face

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Flat frontal view filling the frame with the plate surface, the engraving composed as a single image.
   atmosphere_and_mood: Precious, archaeological, mysterious, and tactile.
   rendering_and_quality: Crisp material realism for metal and ink while the engraved drawing remains readable.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Inked Copper Matrix Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "The image shown as the engraved copper printing plate itself: ink-filled grooves on polished reddish copper, burnished highlights, verdigris spots, and slight mirror reversal feel. Carry it through engraved copper surface, ink-filled grooves, verdigris patina, raking metallic sheen, image as object. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: engraved copper surface; ink-filled grooves; verdigris patina; raking metallic sheen; image as object
 avoidRules:
   - paper print

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Charming and terrifying at once, handmade catastrophe on a tabletop.
   rendering_and_quality: Practical-effects film look; original creatures only, no famous monster designs.
   key_features: rubber-suit performer; detailed miniatures; low camera forced perspective; smoke and model fire; faded film stock
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kaiju Movie (Suitmation) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Kaiju suitmation cinema: a performer in a rubber creature suit stomping through detailed miniature sets, shot low to fake enormous scale. Carry it through rubber-suit performer, detailed miniatures, low camera forced perspective, smoke and model fire, faded film stock. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - readable fake text

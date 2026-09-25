@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; moving light to show the flashes.
   atmosphere_and_mood: Dreamlike and precious, a galaxy trapped in stone.
   rendering_and_quality: Diffraction play-of-color inside the stone, never a painted rainbow texture.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Precious Opal Material as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Precious opal: the target made of milky or black opal with flashes of spectral color that shift as the light moves. Carry it through play-of-color flashes, milky or black opal body, polished cabochon surface, harlequin patches, glossy highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: play-of-color flashes; milky or black opal body; polished cabochon surface; harlequin patches; glossy highlights
 avoidRules:
   - changing the surroundings

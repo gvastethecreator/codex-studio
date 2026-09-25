@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Soft, atmospheric and intimate, like a drawing breathing on stone.
   rendering_and_quality: Grainy crayon tone with drawing looseness; no engraved lines and no halftone dots.
   key_features: greasy crayon on stone grain; reticulated tusche washes; scraped highlights; vignetted edges; one or two tint stones
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lithograph as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Stone lithograph: drawn with greasy crayon and tusche on grained limestone, printed so every mark keeps the fine tooth of the stone. Carry it through greasy crayon on stone grain, reticulated tusche washes, scraped highlights, vignetted edges, one or two tint stones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - brand logo

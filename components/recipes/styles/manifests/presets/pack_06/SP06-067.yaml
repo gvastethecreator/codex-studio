@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Expressive and raw, energy built up layer on layer.
   rendering_and_quality: Physical relief visible across the canvas; the subject readable despite heavy texture.
   key_features: modeling paste relief; palette-knife scrapes; embedded tissue; sand grit; drips and graphite
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mixed Media Canvas as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Mixed-media canvas: heavy-body acrylic over gesso with modeling paste, sand, embedded tissue and graphite marks building a thick, scraped surface. Carry it through modeling paste relief, palette-knife scrapes, embedded tissue, sand grit, drips and graphite. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - uniform beige torn-paper wash over every image
   - red tape strips added by default

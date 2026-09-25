@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Soft and huggable, warmth you can almost feel.
   rendering_and_quality: Individual strand rendering with depth; not a painted fur texture.
   key_features: simulated strands with clumping; glowing rim through tips; flyaways; self-shadowing; wind direction
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fur & Hair as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Groomed fur and hair: the target covered in simulated strands with clumping, flyaways and soft light passing through the tips. Carry it through simulated strands with clumping, glowing rim through tips, flyaways, self-shadowing, wind direction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the surroundings
   - changing the camera

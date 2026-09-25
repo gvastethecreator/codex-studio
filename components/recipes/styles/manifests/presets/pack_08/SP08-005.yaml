@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Energetic, fresh, capable and modern, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Sharp commercial finish with believable stretch and fabric sheen.
   key_features: tonal performance sets; bonded seams and mesh panels; reflective accent; mid-stride energy; clean daylight
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Athleisure Sport as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Athleisure sport styling: performance fabrics worn as everyday fashion, with sculpted seams, compression panels and sleek technical layering. Carry it through tonal performance sets, bonded seams and mesh panels, reflective accent, mid-stride energy, clean daylight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - readable label text

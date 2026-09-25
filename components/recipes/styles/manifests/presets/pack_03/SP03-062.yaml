@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Alive and tactile, a creature that seems to breathe under the light.
   rendering_and_quality: Polypainted sculpt with real subsurface and form flow, distinct from a bare matcap sculpt and from a finished film-textured asset.
   key_features: flowing muscle and growth planes; polypaint color; cavity tint; subsurface in thin parts; round turntable plinth
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Organic Modeling as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Organic digital sculpture presentation: the subject sculpted as flowing soft volumes whose planes follow muscle, growth and gravity, polypainted and shown on a turntable plinth. Carry it through flowing muscle and growth planes, polypaint color, cavity tint, subsurface in thin parts, round turntable plinth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - forced T-pose
   - object turned into an avatar

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Relentlessly positive and bland, optimism that is a little too perfect to believe.
   rendering_and_quality: Glossy generic stock finish; no screens with readable UI and no real brands.
   key_features: bright blue-white high key; group around one object; broad smiles; glass office blur; sanitized sameness
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Corporate Stock Photo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Corporate stock photography: bright, safe, generic imagery with smiling people collaborating in clean spaces — the look, deliberately, of the stock library. Carry it through bright blue-white high key, group around one object, broad smiles, glass office blur, sanitized sameness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - fake brand logo
   - readable labels

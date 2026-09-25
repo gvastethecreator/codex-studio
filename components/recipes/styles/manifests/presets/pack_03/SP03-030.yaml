@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Unstable and eerie, reality breaking at the seams.
   rendering_and_quality: Deliberate 3D data corruption, not a 2D glitch filter.
   key_features: spiked stretched vertices; sliced offset chunks; RGB channel split; flipped normals; z-fighting
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glitch 3D as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Glitch 3D: the subject as a corrupted mesh — stretched vertices, sliced and offset chunks and wrong RGB shader channels. Carry it through spiked stretched vertices, sliced offset chunks, RGB channel split, flipped normals, z-fighting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - franchise likeness

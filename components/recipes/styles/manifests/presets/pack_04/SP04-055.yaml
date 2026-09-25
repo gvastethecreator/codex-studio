@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Charged and decisive, the instant before everything changes.
   rendering_and_quality: Near-final painting quality at the focal point, softened background, film-like depth and grade.
   key_features: widescreen letterbox frame; one turning-point moment; motivated dramatic light; foreground occluders; graded color story
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Keyframe Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Narrative keyframe: a polished cinematic painting of one turning-point moment, composed and lit like a single film frame. Carry it through widescreen letterbox frame, one turning-point moment, motivated dramatic light, foreground occluders, graded color story. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable annotations
   - readable text

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Calm and quietly dizzying, a structure that makes sense until it does not.
   rendering_and_quality: Architectural photograph realism, not lithograph linework or tessellated print, which belongs to Escher Style.
   key_features: closed circulation loops; endlessly ascending stairs; built concrete and limestone; consistent midday sun; elevated near-isometric view
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Impossible Circulation Optical Paradox as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Impossible circulation: stairs, ramps and walkways that connect into closed loops, climbing forever yet returning to their start, built as solid architecture. Carry it through closed circulation loops, endlessly ascending stairs, built concrete and limestone, consistent midday sun, elevated near-isometric view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - black and gold sci-fi palette by default
   - franchise ship or station likeness

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Poised and glamorous, symmetrical calm with the face held in clean light.
   rendering_and_quality: Polished beauty rendering that keeps real skin texture and clean symmetrical shadow edges.
   key_features: high centered key; butterfly nose shadow; sculpted cheekbones; chin shadow; glamorous polish
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Butterfly Lighting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Butterfly lighting: a high frontal key centered above the lens that casts a small symmetrical shadow under the nose and sculpts cheekbones. Carry it through high centered key, butterfly nose shadow, sculpted cheekbones, chin shadow, glamorous polish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - generic stock-photo face
   - celebrity likeness

@@ -27,7 +27,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
       key_features: 'motion-vector smear; macroblock drag; bleeding keyframe',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Datamosh as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Datamosh: compressed video motion vectors dragging pixels of one frame into the next. Carry it through motion-vector smear, macroblock drag, bleeding keyframe. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -53,7 +53,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
       key_features: 'brightness-sorted streaks; threshold edges',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pixel Sorting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pixel sorting: rows or columns of pixels sorted by brightness into long streaks. Carry it through brightness-sorted streaks, threshold edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -80,7 +80,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
       key_features: 'tracking bands; chroma bleed; head-switching noise',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies VHS Glitch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "VHS tape glitch: tracking errors, chroma bleed, tape noise bands and wobbling horizontal lines. Carry it through tracking bands, chroma bleed, head-switching noise. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -106,7 +106,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
       key_features: 'CRT scanlines; phosphor glow; curved glass',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies CRT Monitor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "CRT monitor: phosphor scanlines, curved glass, glow and RGB subpixel mask. Carry it through CRT scanlines, phosphor glow, curved glass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -132,7 +132,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
       key_features: 'glyph density grid; monospaced; no words',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies ASCII Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "ASCII art: the image built entirely from monospaced characters used as density values, unreadable as words. Carry it through glyph density grid, monospaced, no words. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -160,7 +160,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
       key_features: '8x8 blocks; edge ringing; color banding',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies JPEG Artifacts as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "JPEG artifacts: heavy 8×8 block compression, ringing around edges and color blocking. Carry it through 8x8 blocks, edge ringing, color banding. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -185,7 +185,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
       key_features: 'RGB channel split; colored fringes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chromatic Aberration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Chromatic aberration: RGB channels offset at edges, producing colored fringes. Carry it through RGB channel split, colored fringes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -213,7 +213,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
       key_features: 'flatbed contact sharpness; black falloff; scan stretch',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scanography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Scanography: objects placed on a flatbed scanner — crushed-depth focus, stretched motion and black background. Carry it through flatbed contact sharpness, black falloff, scan stretch. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -238,7 +238,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
       key_features: 'regular halftone dot screen; fixed angle',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Halftone Pattern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Halftone: the image built from dots of varying size in a regular screen. Carry it through regular halftone dot screen, fixed angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -264,7 +264,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
       key_features: '1-bit pixels; dither patterns',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dithering (1-bit) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "1-bit dithering: pure black and white pixels arranged in ordered or error-diffusion dither patterns. Carry it through 1-bit pixels, dither patterns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -292,7 +292,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bit-Crush Posterize as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bit-crush posterize: color depth reduced to a few flat bands with hard contour steps. Carry it through reduced bit depth, flat color bands. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'reduced bit depth; flat color bands',
     },
     ui: {
@@ -324,7 +324,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Slit-Scan Stretch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Slit-scan: each column captured at a different moment, stretching and warping moving subjects. Carry it through slit-scan stretch, time-warped columns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'slit-scan stretch; time-warped columns',
     },
     ui: {
@@ -357,7 +357,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Interlace Comb Tear as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Interlace combing: alternate horizontal lines from two fields offset on moving edges. Carry it through interlace comb teeth, motion edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'interlace comb teeth; motion edges',
     },
     ui: {
@@ -388,7 +388,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Teletext Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Teletext mosaic: coarse 2×3 block graphics in eight bright colors on black. Carry it through teletext block cells, eight colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'teletext block cells; eight colors',
     },
     ui: {
@@ -425,7 +425,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oscilloscope Vector Trace as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Oscilloscope vector art: the image drawn as glowing green phosphor lines on a dark scope screen. Carry it through phosphor vector lines, scope grid. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'phosphor vector lines; scope grid',
     },
     ui: {
@@ -457,7 +457,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies E-Ink Ghosting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "E-ink ghosting: grey e-paper display with faint remnants of previous images. Carry it through e-paper greys, ghost remnants. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'e-paper greys; ghost remnants',
     },
     ui: {
@@ -490,7 +490,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Macroblock Freeze as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Macroblock freeze: stream corruption where some blocks freeze wrong colors or stale content. Carry it through frozen macroblocks, corruption patches. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'frozen macroblocks; corruption patches',
     },
     ui: {
@@ -523,7 +523,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Texture Repeat Bug as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Texture repeat bug: surfaces showing obvious tiled repetition and stretched UVs like a broken game render. Carry it through visible texture tiling, stretched UVs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'visible texture tiling; stretched UVs',
     },
     ui: {
@@ -554,7 +554,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies LED Matrix Display as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "LED matrix: the image rebuilt as glowing round LEDs on a dark panel grid. Carry it through round LED dots, coarse grid glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'round LED dots; coarse grid glow',
     },
     ui: {
@@ -587,7 +587,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thermal Printer Output as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Thermal printer: the image printed on curling receipt paper in faded dithered black. Carry it through thermal receipt print, dither, fading. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'thermal receipt print; dither; fading',
     },
     ui: {

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Abundant, informal and homely, a garden that grew itself.
   rendering_and_quality: Natural-light photograph with individual plant species legible, no plastic flowers or show-garden gloss.
   key_features: tiered self-seeding flowers; foxglove and hollyhock spires; plants spilling over mossy brick paths; roses on old walls; lavender edging
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cottage Bloom Layering as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cottage bloom layering: a small garden crammed with self-seeding flowers, herbs and vegetables in tiers of height, spilling over narrow brick or stone paths and low walls. Carry it through tiered self-seeding flowers, foxglove and hollyhock spires, plants spilling over mossy brick paths, roses on old walls, lavender edging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - golden-hour garden postcard formula
   - corten steel edging as default

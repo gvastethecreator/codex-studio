@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Solemn ritual cadence, the stillness before a judgment.
   rendering_and_quality: Stepped radial value bands, crisp ink boundaries and a controlled bloom that never washes out form.
   key_features: concentric stepped value rings; amber, cream and charcoal; warm bloom from existing light; evenly spaced brush marks; ritual cadence
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lantern Retribution Ritual Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Ceremonial anime ink with measured concentric rings of warm-to-dark value falloff spreading from the brightest area, and evenly spaced brush marks like ritual steps. Carry it through concentric stepped value rings, amber, cream and charcoal, warm bloom from existing light, evenly spaced brush marks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

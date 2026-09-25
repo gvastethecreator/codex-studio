@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Looking down into the chamber, tracks radiating or crossing the frame.
   atmosphere_and_mood: Awe-struck and quiet, invisible rain made visible.
   rendering_and_quality: Real cloud-chamber photograph look; not a digital particle effect.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cloud Chamber Particle Tracks as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cloud chamber: supersaturated vapor inside a dark chamber where passing particles leave thin white condensation trails. Carry it through white vapor trails on black, raking side light, straight and curling tracks, fat alpha streaks, top-down chamber view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: white vapor trails on black; raking side light; straight and curling tracks; fat alpha streaks; top-down chamber view
 avoidRules:
   - readable readouts

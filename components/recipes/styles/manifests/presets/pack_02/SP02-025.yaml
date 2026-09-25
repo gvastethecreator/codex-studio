@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Absurd and persuasive, frustration flipped into miracle.
   rendering_and_quality: Late-night video comparison look; no readable price or phone number.
   key_features: hard vertical split; gray before versus bright after; same subject twice; exaggerated struggle; overlit result
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Infomercial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Infomercial before-and-after: a split screen contrasting a gray, clumsy \"before\" struggle with a bright, triumphant \"after\". Carry it through hard vertical split, gray before versus bright after, same subject twice, exaggerated struggle, overlit result. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable fake text
   - readable ticker

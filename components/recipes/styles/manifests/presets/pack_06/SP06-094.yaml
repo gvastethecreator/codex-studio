@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Abstract and naive, imagination filling in almost everything.
   rendering_and_quality: Extremely low horizontal resolution with crisp blocks; no detail beyond what the limit allows.
   key_features: four-pixel-wide blocks; one color per scanline; horizontal stripe coloring; mirrored playfield; tiny sprites
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scanline Stripe Block Minimalism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Extreme early-console limitation: chunky blocks four pixels wide, one color per object per scanline, and mirrored playfield blocks. Carry it through four-pixel-wide blocks, one color per scanline, horizontal stripe coloring, mirrored playfield, tiny sprites. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - console or handheld hardware shown in frame

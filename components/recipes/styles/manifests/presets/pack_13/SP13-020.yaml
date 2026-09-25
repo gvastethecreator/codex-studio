@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Tender, bittersweet, grateful and final, driven by the construction, color and rhythm.
   rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
   key_features: golden hour; tears; farewell framing
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Final Episode Closure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Final episode anime: the soft, emotional look of a series finale, golden light, tears and wide quiet farewells. Carry it through golden hour, tears, farewell framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo

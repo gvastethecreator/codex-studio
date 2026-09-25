@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Vertical icon-card crop, centered or slightly top-heavy, with a single sacrilegious focal silhouette and no readable devotional text.
   atmosphere_and_mood: Blasphemous, mournful, devotional, low-rent, and threatening.
   rendering_and_quality: Cleanly reproduced scratchboard/ink-card finish with controlled ugliness and strong silhouette hierarchy.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gutter Saint Scratchcards as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Devotional gutter-horror cards with black voids, damaged saint geometry, white scratch halos, ragged banners without writing, and cheap holy-object tension. Carry it through black devotional card, white scratch halo, damaged icon geometry, gutter holy-object mood, chalk and scrape marks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: black devotional card; white scratch halo; damaged icon geometry; gutter holy-object mood; chalk and scrape marks; no text
 avoidRules:
   - clean church illustration

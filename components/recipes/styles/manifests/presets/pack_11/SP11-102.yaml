@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Shelf framing with rows of jars, arranged so the subject still reads at card size.
   atmosphere_and_mood: Homely, patient, abundant and mysterious, driven by the construction, color and rhythm.
   rendering_and_quality: Photoreal still life photography, with clean, deliberate marks and no accidental noise.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Preserving Pantry Jars as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Preserving pantry: shelves of backlit jars with pickles, jams and ferments glowing like stained glass. Carry it through glowing jars, brine, wax seals, shelves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: glowing jars; brine; wax seals; shelves
 avoidRules:
   - readable text

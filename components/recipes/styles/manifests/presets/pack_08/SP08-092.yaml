@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close three-quarter framing, often from a high angle, keeping the full outfit silhouette and fit readable at card size.
   atmosphere_and_mood: Emotional, dramatic, self-conscious and nostalgic, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Slightly grainy, flash-lit finish, with believable fabric weight, seams and fit detail.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Emo Scene as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "2000s emo and scene style: skinny black jeans, band-free graphic tees, studded belts, checkered accessories and side-swept dyed fringe. Carry it through skinny black jeans, studded belt, checkered accessories, side-swept dyed fringe, heavy eyeliner. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: skinny black jeans; studded belt; checkered accessories; side-swept dyed fringe; heavy eyeliner
 avoidRules:
   - brand logo

@@ -32,10 +32,7 @@ visualDna:
   key_features: >-
     Structured contour, ruffle rhythm, black-ivory-red values, contrast without wardrobe
     change
-  creative_brief: >-
-    Apply a visual treatment centered on structured contour, ruffle rhythm, black-ivory-red
-    values, contrast without wardrobe change. Preserve the exact subject, action, count,
-    age, costume, setting, camera, and mood. Add nothing outside the prompt.
+  creative_brief: "Apply a visual treatment centered on structured contour, ruffle rhythm, black-ivory-red values, contrast without wardrobe change. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

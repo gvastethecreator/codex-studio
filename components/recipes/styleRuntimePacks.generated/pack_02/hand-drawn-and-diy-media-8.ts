@@ -26,7 +26,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'dry-erase marker streaks; half-erased ghost drawings; fluorescent glare; arrows and circles; four-color markers',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Office Whiteboard Doodle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Office whiteboard doodle: dry-erase markers on a glossy whiteboard, drawn fast during a meeting, with the ghosts of earlier half-erased drawings underneath. Carry it through dry-erase marker streaks, half-erased ghost drawings, fluorescent glare, arrows and circles, four-color markers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -54,7 +54,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'crease network through the drawing; raking side light; skipped ink over folds; yellowed paper; coffee stain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crumpled-Paper Scribble as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Crumpled-paper scribble: a pencil and ink drawing on paper that was crushed into a ball and flattened again, the creases cutting through the art. Carry it through crease network through the drawing, raking side light, skipped ink over folds, yellowed paper, coffee stain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -80,7 +80,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'ochre and charcoal pigment; spray-blown hand stencils; rock relief as volume; torchlight; overlapping figures',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Prehistoric Cave Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Prehistoric cave painting: ochre, charcoal and red iron pigment blown and smeared onto a bumpy limestone wall by firelight. Carry it through ochre and charcoal pigment, spray-blown hand stencils, rock relief as volume, torchlight, overlapping figures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -107,7 +107,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'flat spot-color screenprint; dripping slime; thick keylines; tall emblem composition; misregistration',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Skateboard Deck Graphic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Skateboard deck graphic: 80s punk screenprint artwork with dripping slime, bold iconography and thick black keylines, printed flat in loud spot colors. Carry it through flat spot-color screenprint, dripping slime, thick keylines, tall emblem composition, misregistration. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -134,7 +134,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'ballpoint feathering on tissue; embossed napkin border; ring stains; exploded-view arrows; bar light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Napkin Scribble Blueprint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Napkin scribble blueprint: a late-night idea sketched in ballpoint on a soft paper cocktail napkin, lines feathering into the tissue. Carry it through ballpoint feathering on tissue, embossed napkin border, ring stains, exploded-view arrows, bar light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -159,7 +159,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'photocopy toner grit; scissored collage; tape strips; fluorescent spot color; crushed blacks',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Punk Zine Cut-and-Paste as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Punk zine cut-and-paste: photocopied collage of cut-out images and shapes, taped and glued, then copied again until the blacks crush and the greys break into grit. Carry it through photocopy toner grit, scissored collage, tape strips, fluorescent spot color, crushed blacks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -190,7 +190,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Real ballpoint on lined paper; handwriting reduced to unreadable squiggles.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Notebook Margin Ballpoint Doodle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Notebook margin doodle: a blue ballpoint drawing grown obsessively in the margin of a lined school notebook, with dense hatching and pressed-in grooves. Carry it through blue ballpoint hatching, lined notebook paper, red margin line, ink blobs and grooves, spilling doodle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'blue ballpoint hatching; lined notebook paper; red margin line; ink blobs and grooves; spilling doodle',
     },
@@ -219,7 +219,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Playful and collaborative, office supplies turned into art.',
       rendering_and_quality: 'Real paper notes with curl and shadow; blank notes with no writing.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sticky-Note Wall Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sticky-note wall mosaic: a large image built from dozens of square colored sticky notes on a wall, each note one pixel. Carry it through square sticky-note pixels, limited note colors, curled corners, grid gaps, straight-on wall view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'square sticky-note pixels; limited note colors; curled corners; grid gaps; straight-on wall view',
     },
@@ -252,7 +252,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Patient and nostalgic, a toy mastered with stubborn care.',
       rendering_and_quality: 'Real single-line knob drawing; no brand name on the frame.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Continuous-Line Toy Screen Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Continuous-line toy screen drawing: a picture drawn with two knobs on a silver-grey toy screen, one unbroken dark line of stair-stepped diagonals. Carry it through one continuous line, stair-stepped diagonals, silver-grey screen, red toy frame, zig-zag fills. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'one continuous line; stair-stepped diagonals; silver-grey screen; red toy frame; zig-zag fills',
     },
@@ -285,7 +285,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Fleeting and intimate, a picture that will vanish in a minute.',
       rendering_and_quality: 'Real condensation and drips; no readable words written in the fog.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fogged Mirror Finger Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fogged mirror finger drawing: a picture traced with a fingertip in the steam on a bathroom mirror or window, clear lines cut through white fog. Carry it through fingertip lines in fog, drips running down, milky white glass, clear view through the lines, ephemeral. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'fingertip lines in fog; drips running down; milky white glass; clear view through the lines; ephemeral',
     },
@@ -318,7 +318,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Real grooves in wet sand; not sand sculpture and not colored sand art.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Beach Sand Stick Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Beach sand stick drawing: a large picture scratched into smooth wet sand with a stick, grooves filling with water, waiting for the tide. Carry it through stick grooves in wet sand, raking low sun, water filling lines, wave edge nearby, high angle view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'stick grooves in wet sand; raking low sun; water filling lines; wave edge nearby; high angle view',
     },
@@ -350,7 +350,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Rebellious and nostalgic, years of boredom cut into wood.',
       rendering_and_quality: 'Real carved grooves with depth; no readable initials or words.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carved Desk Graffiti as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Carved desk graffiti: a picture gouged into an old varnished wooden school desk with a compass point, pen ink rubbed into the grooves. Carry it through gouged grooves in varnished wood, ink-filled cuts, older carvings underneath, splintered edges, window light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'gouged grooves in varnished wood; ink-filled cuts; older carvings underneath; splintered edges; window light',
     },
@@ -379,7 +379,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Scrappy and charming, a proud drawing made during a lunch break.',
       rendering_and_quality: 'Real marker on kraft; no printed store logo on the bag.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kraft Paper Bag Marker Sketch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Kraft paper bag sketch: black marker and white paint pen drawn on a flattened brown paper bag, with its folds and gusset creases. Carry it through brown kraft ground, black marker and white highlights, bag folds, marker bleed, one red accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'brown kraft ground; black marker and white highlights; bag folds; marker bleed; one red accent',
     },
@@ -410,7 +410,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Methodical and cheerful, patience rewarded square by square.',
       rendering_and_quality: 'Real pen on graph paper; not digital pixel art.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Graph-Paper Pixel Doodle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Graph-paper pixel doodle: a picture made by filling graph-paper squares one by one with colored pens, like hand-made pixel art. Carry it through filled graph-paper squares, streaky felt pen, pale blue grid, limited colors, hand-made pixels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'filled graph-paper squares; streaky felt pen; pale blue grid; limited colors; hand-made pixels',
     },
@@ -438,7 +438,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Cheeky and surprising, art found on a neglected surface.',
       rendering_and_quality: 'Real finger drawing in grime; no written joke words.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dusty Car Window Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dusty car window drawing: a picture drawn with fingertips and palms in the thick grime on a car rear window, the clean glass showing darker through the lines. Carry it through finger lines in grime, dark clean glass through strokes, smudged palm tones, drip streaks, straight-on window. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'finger lines in grime; dark clean glass through strokes; smudged palm tones; drip streaks; straight-on window',
     },
@@ -471,7 +471,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Real wax rubbing with directional strokes; not a digital texture fill.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crayon Rubbing Frottage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Crayon rubbing frottage: thin paper laid over leaves, coins, wood and grates and rubbed with the side of a crayon, the textures composed into a picture. Carry it through rubbed textures composing the subject, waxy directional strokes, leaf and wood grain patterns, thin paper, crayon color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'rubbed textures composing the subject; waxy directional strokes; leaf and wood grain patterns; thin paper; crayon color',
     },
@@ -499,7 +499,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Playful and personal, a small drawing carried around all day.',
       rendering_and_quality: 'Real pen on skin, not a tattoo; no written words.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ballpoint Skin Doodle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ballpoint skin doodle: a playful blue pen drawing on the back of an adult hand or forearm, the ink catching in skin creases. Carry it through pen lines on skin, ink skipping creases, faded rubbed patches, close hand view, not a tattoo. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'pen lines on skin; ink skipping creases; faded rubbed patches; close hand view; not a tattoo',
     },
@@ -527,7 +527,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Warm and nostalgic, a bedroom glowing in the dark.',
       rendering_and_quality: 'Real glowing peg-toy look with its plastic board, and no brand name.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glowing Peg-Board Picture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Glowing peg-board picture: translucent colored pegs pushed into a black backlit board, each peg a glowing dot of light. Carry it through glowing translucent pegs, black backlit board, staggered dot grid, glow halos, limited peg colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'glowing translucent pegs; black backlit board; staggered dot grid; glow halos; limited peg colors',
     },
@@ -557,7 +557,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Hypnotic and precise, patterns blooming from a spinning wheel.',
       rendering_and_quality: 'Real pen-on-paper spirals with slight ink skips, and no brand name.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gear-Ring Spiral Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Gear-ring spiral drawing: looping hypotrochoid patterns drawn with a pen through toothed plastic wheels, layered in several colors to form the subject. Carry it through looping hypotrochoid rosettes, gel-pen colors, overlapping loop density, slipped-wheel wobble, white paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'looping hypotrochoid rosettes; gel-pen colors; overlapping loop density; slipped-wheel wobble; white paper',
     },
@@ -586,7 +586,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Proud and homemade, a big announcement made with what was at hand.',
       rendering_and_quality: 'Real paint on fabric; images only, no painted slogans.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bedsheet Banner Paint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bedsheet banner paint: a big image painted with leftover house paint and a wide brush on an old bedsheet, hung by its corners. Carry it through house paint on bedsheet, bleeding into weave, wrinkles and drips, backlit thin fabric, hung by the corners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'house paint on bedsheet; bleeding into weave; wrinkles and drips; backlit thin fabric; hung by the corners',
     },

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; walls or columns receiving the light patterns.
   atmosphere_and_mood: Elegant and calm, rhythm made of light.
   rendering_and_quality: Accurate photometric light distributions, with no readable labels on any fixture.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies IES Profile Wall Wash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "IES profile wall wash: photometric light fixtures casting their characteristic scalloped and cone patterns onto walls, as in architectural visualization. Carry it through scalloped light pools, repeating fixture rhythm, warm color temperature, grazing wall texture, crisp pool edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: scalloped light pools; repeating fixture rhythm; warm color temperature; grazing wall texture; crisp pool edges
 avoidRules:
   - changing the geometry

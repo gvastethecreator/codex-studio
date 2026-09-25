@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Surprising and delightful, a world unfolding as the page opens.
   rendering_and_quality: Believable paper engineering with real depth; never a flat printed page.
   key_features: die-cut cardstock layers; v-fold hinges and pull tabs; open book gutter; real paper shadows; three-quarter view
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pop-Up Book as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Pop-up book photograph: the subject engineered in folded, die-cut cardstock that rises out of the gutter of an open book. Carry it through die-cut cardstock layers, v-fold hinges and pull tabs, open book gutter, real paper shadows, three-quarter view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - frightening gore
   - known picture-book characters

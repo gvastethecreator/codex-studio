@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Analytical and tactile, searching for the right skin.
   rendering_and_quality: Swatches physically rendered, the subject sketch semi-finished with materials applied in zones.
   key_features: swatch grid; material spheres; central semi-finished subject study; identical swatch lighting; circular zoom callouts
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Material Texture Exploration Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Material exploration board: a design sketch of the subject beside a grid of candidate swatches and material spheres, each testing a different surface. Carry it through swatch grid, material spheres, central semi-finished subject study, identical swatch lighting, circular zoom callouts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable annotations
   - readable text

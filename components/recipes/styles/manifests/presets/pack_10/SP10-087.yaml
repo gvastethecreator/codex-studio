@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Five-fold radial tiling, arranged so the subject still reads at card size.
   atmosphere_and_mood: Mathematical, mysterious, ordered and unusual, driven by the construction, color and rhythm.
   rendering_and_quality: Crisp precise finish, with clean, deliberate marks and no accidental noise.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Penrose Aperiodic Tiling as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Penrose tiling: aperiodic kite-and-dart or rhombus tiling with five-fold symmetry. Carry it through aperiodic rhombus tiling, five-fold symmetry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: aperiodic rhombus tiling; five-fold symmetry
 avoidRules:
   - readable text

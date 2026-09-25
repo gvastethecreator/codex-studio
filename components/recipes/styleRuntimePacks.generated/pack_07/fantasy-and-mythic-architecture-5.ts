@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'trunks trained into lancet arches; branch-fork window tracery; pale limestone with silver inlay; filtered green canopy light; moss and lichen at the footings',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Verdant Elven Sanctuary as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Grown sanctuary architecture: living beech and ash trunks trained into tall lancet arches, pale limestone shells grafted between them, and branch forks forming the window tracery. Carry it through trunks trained into lancet arches, branch-fork window tracery, pale limestone with silver inlay, filtered green canopy light, moss and lichen at the footings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -58,7 +58,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'single-block granite megaliths; stepped angular relief without readable runes; hammered gold edging; glowing heat channels in grooves; squat trabeated proportions',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dwarven Megalithic Forge as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Megalithic mountain-hall architecture: walls cut from single granite blocks with hairline joints, stepped angular relief bands, hammered gold edging and molten heat running in floor and wall grooves. Carry it through single-block granite megaliths, stepped angular relief without readable runes, hammered gold edging, glowing heat channels in grooves, squat trabeated proportions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -86,7 +86,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'inverted rock islands; root-hung strata undersides; chain bridges over void; aerial haze depth; hard high-sun rims',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Suspended Fortress Sublime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Suspended architecture: buildings sit on inverted rock islands torn from the ground, root-hung strata dangling underneath, linked by thin chain bridges across an open void. Carry it through inverted rock islands, root-hung strata undersides, chain bridges over void, aerial haze depth, hard high-sun rims. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -115,7 +115,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'stacked cantilevered concrete modules; conduits and cable stays across facades; rust-black panels; telephoto compression; tiny utility lights at dusk',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Techno-Brutalist Compression as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Techno-brutalist megablock: board-marked concrete modules stacked and cantilevered into a mountain-like mass, service conduits and cable stays strung across the facades, rust-black steel panels. Carry it through stacked cantilevered concrete modules, conduits and cable stays across facades, rust-black panels, telephoto compression, tiny utility lights at dusk. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -144,7 +144,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'sugar-glass windows; marshmallow domes; candy-striped columns; piped-icing cornices; building-scale candy materials',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Confectionery Surrealism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Full-scale confectionery architecture: sugar-glass windows, marshmallow domes, candy-striped load-bearing columns and piped-icing cornices built at real building size. Carry it through sugar-glass windows, marshmallow domes, candy-striped columns, piped-icing cornices, building-scale candy materials. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -173,7 +173,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'stepped deco setbacks; domed pressure-glass portholes; riveted brass and verdigris; coral and barnacle crust; blue murk falloff',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Abyssal Deco Pressure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Deep-sea deco architecture: stepped Art Deco setbacks built for crushing depth, domed pressure-glass windows in riveted brass frames, coral and barnacles colonizing every ledge. Carry it through stepped deco setbacks, domed pressure-glass portholes, riveted brass and verdigris, coral and barnacle crust, blue murk falloff. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -202,7 +202,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'riveted copper boiler plate; exterior pipe runs; dial clusters without numbers; venting steam; amber gaslight in smog',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neo-Victorian Steamwork as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Victorian steamwork architecture: brick and cast-iron buildings wrapped in riveted copper boiler plate, exterior pipe runs, dial clusters and venting steam as working building services. Carry it through riveted copper boiler plate, exterior pipe runs, dial clusters without numbers, venting steam, amber gaslight in smog. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -231,7 +231,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'hexagonal quartz and amethyst prisms; internal light transmission; caustics and rainbow dispersion; frosted fracture bases; spiky asymmetric silhouettes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Prismatic Mineral Megastructure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Crystal-grown architecture: walls and towers built from clustered hexagonal quartz and amethyst prisms, cleavage planes serving as floors, light travelling inside the stone. Carry it through hexagonal quartz and amethyst prisms, internal light transmission, caustics and rainbow dispersion, frosted fracture bases, spiky asymmetric silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -259,7 +259,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'turf-mound roofs; round doors and windows; lime-plastered faces; adzed oak frames; low warm afternoon sun',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bermed Round-Door Pastoral as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Earth-sheltered pastoral architecture: dwellings dug into turf mounds with round doors and round windows, lime-plastered faces and hand-hewn oak frames. Carry it through turf-mound roofs, round doors and windows, lime-plastered faces, adzed oak frames, low warm afternoon sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -288,7 +288,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'crooked rubbery silhouettes; thick ink outlines; flat two-tone cel shading; violet and toxic-lime palette; moon backlight rim',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Haunted Toon Deformation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cartoon haunted architecture: rubbery crooked buildings that lean, bulge and twist, drawn with thick ink outlines and flat cel shading. Carry it through crooked rubbery silhouettes, thick ink outlines, flat two-tone cel shading, violet and toxic-lime palette, moon backlight rim. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -316,7 +316,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'faceted ice buttresses; blue subsurface transmission; trapped bubble streams; low polar sun; mint aurora rim',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cryomorphic Palace Geometry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Glacial ice architecture: faceted ice buttresses, frozen column rhythms and vaults carved from clear and blue glacier ice with trapped air bubbles. Carry it through faceted ice buttresses, blue subsurface transmission, trapped bubble streams, low polar sun, mint aurora rim. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -344,7 +344,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'catenary rope lashings; radial platforms around trunks; woven palm panels; rope bridges; dappled canopy light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Canopy Rope Vernacular as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Canopy rope vernacular: platforms and huts lashed to giant tree trunks with catenary ropes, woven palm panels, radial floor joists and swaying rope bridges, no nails anywhere. Carry it through catenary rope lashings, radial platforms around trunks, woven palm panels, rope bridges, dappled canopy light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -372,7 +372,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'black basalt colonnades; bone-marble inlay grids; oxidized bronze doors; endless repeated pilasters; cold raking overcast light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sepulchral Civic Monumentalism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sepulchral civic monumentalism: public buildings designed as necropolis architecture, black basalt colonnades, bone-marble inlay grids and oxidized bronze doors at inhuman height. Carry it through black basalt colonnades, bone-marble inlay grids, oxidized bronze doors, endless repeated pilasters, cold raking overcast light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -406,7 +406,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Sharp daylight realism with legible tool marks; the facade and cliff read as one continuous stone.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rock-Hewn Colossus Facade as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Rock-cut architecture: the whole building carved in one piece into a cliff face, columns, pediments and giant relief figures cut in place, rooms as dark hollow voids behind. Carry it through carved in one piece from the cliff, banded sandstone strata through the carving, giant relief figures, black doorway voids, hard raking sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'carved in one piece from the cliff; banded sandstone strata through the carving; giant relief figures; black doorway voids; hard raking sun',
     },
@@ -441,7 +441,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp timber detail with visible carving depth; interlace stays ornamental and never forms readable runes.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tarred Stave-Hall Interlace as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Northern stave architecture: vertical timber staves, steep stacked roofs clad in tarred scale shingles, carved beast-head gable finials and interlace-carved portals. Carry it through tarred scale-shingle roofs, stacked tiered roof silhouette, carved beast-head finials, interlace portals, low grazing winter sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'tarred scale-shingle roofs; stacked tiered roof silhouette; carved beast-head finials; interlace portals; low grazing winter sun',
     },
@@ -476,7 +476,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Refined painterly realism with precise eave curves and bracket detail; no hanging signboards or calligraphy.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cloud-Tier Lacquer Pagoda as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Celestial tiered-eave architecture: stacked upswept roofs carried on interlocking bracket sets, vermilion lacquered columns, gold leaf and glazed jade tiles rising through cloud layers. Carry it through stacked upswept eaves, interlocking bracket sets, vermilion lacquer and gold leaf, glazed jade tiles, mist bands between tiers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'stacked upswept eaves; interlocking bracket sets; vermilion lacquer and gold leaf; glazed jade tiles; mist bands between tiers',
     },
@@ -511,7 +511,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Naturalistic painting with tactile weave detail; no ropes, platforms or tree-lashing construction.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Woven Willow Roundhouse as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Woven wattle architecture: circular buildings of living willow withies and hazel wattle, clay daub infill and tall conical thatch roofs. Carry it through woven willow and hazel wattle, conical reed thatch, clay daub infill, circular plans, smoke through thatch in mist. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'woven willow and hazel wattle; conical reed thatch; clay daub infill; circular plans; smoke through thatch in mist',
     },
@@ -547,7 +547,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise specular rendering of iridescent surfaces; architecture only, with no insects or creatures.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chitin Carapace Architecture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Carapace architecture: roofs and walls of overlapping iridescent shell plates on segmented ribs, jointed buttresses and amber resin membranes as windows. Carry it through overlapping iridescent shell plates, segmented rib structure, jointed buttresses, amber resin membrane windows, oil-slick sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'overlapping iridescent shell plates; segmented rib structure; jointed buttresses; amber resin membrane windows; oil-slick sheen',
     },
@@ -582,7 +582,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Sharp-edged light patterns with crisp geometry; ornament stays geometric and never forms calligraphy or text.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Star-Lattice Desert Palace as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Star-lattice desert architecture: whitewashed and rose-stone halls wrapped in carved screens of interlocking geometric star patterns, horseshoe arches and shaded courtyards. Carry it through carved geometric star lattices, star-shaped light patterns projected by hard sun, horseshoe arches, cobalt tile, courtyard shade. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'carved geometric star lattices; star-shaped light patterns projected by hard sun; horseshoe arches; cobalt tile; courtyard shade',
     },
@@ -617,7 +617,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Smooth organic rendering with accurate nacre iridescence and clean spiral geometry, no rough masonry.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Nautilus Chamber Architecture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Spiral shell architecture: buildings grown as logarithmic spirals with chambered interiors divided by curved septa, porcelain-white exteriors and nacre-lined rooms. Carry it through logarithmic spiral plan, chambered interiors with curved septa, tiger-striped porcelain exterior, nacre-lined rooms, soft wrapping daylight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'logarithmic spiral plan; chambered interiors with curved septa; tiger-striped porcelain exterior; nacre-lined rooms; soft wrapping daylight',
     },

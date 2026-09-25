@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; macro-like depth of field even at full-figure scale.
   atmosphere_and_mood: Alien and armored, beautiful and faintly repellent.
   rendering_and_quality: Structural color and plate hinges rendered precisely, not metal armor painted to look like a bug.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chitin Exoskeleton Plating as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Chitin exoskeleton: the subject's outer shell rebuilt from overlapping lacquer-hard insect plates, joined by flexible membranes and edged with fine bristles. Carry it through overlapping chitin plates, structural iridescence, flexible amber membranes, setae bristles, macro depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: overlapping chitin plates; structural iridescence; flexible amber membranes; setae bristles; macro depth
 avoidRules:
   - forced T-pose

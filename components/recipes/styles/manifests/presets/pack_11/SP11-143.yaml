@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Top-down plan with north arrow, laid out as a real sheet of this drawing type.
   atmosphere_and_mood: Calm, verdant, ordered and inviting, from careful, purposeful drafting.
   rendering_and_quality: Precise technical drafting with consistent line weights and believable conventions.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Garden Contour Plan as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Landscape plan: garden design seen from above with contour lines, tree canopies as circles, paths and planting beds. Carry it through contours, canopy circles, hedges, paths. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: contours; canopy circles; hedges; paths
 avoidRules:
   - readable text

@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'slatted hard key; black-and-white low key; tilted low angles; smoke in the beam; subject half in shadow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Film Noir as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Film noir: 1940s black-and-white crime cinema built from one hard key light, slatted shadows and oppressive darkness. Carry it through slatted hard key, black-and-white low key, tilted low angles, smoke in the beam, subject half in shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -55,7 +55,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'extreme close-up versus extreme wide; noon sun; sun-bleached ochre; dust and sweat; widescreen tension',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Spaghetti Western as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Spaghetti western: 1960s widescreen frontier cinema that alternates extreme wide landscapes with extreme close-ups of eyes, under merciless sun. Carry it through extreme close-up versus extreme wide, noon sun, sun-bleached ochre, dust and sweat, widescreen tension. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -83,7 +83,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'backlit smoke; anamorphic blue flares; neon and sodium practicals; spinning fan shafts; grimy industrial sets',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 80s Sci-Fi as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "80s practical sci-fi cinema: smoke-filled sets, backlit haze and glowing practical lights, shot on 35 mm anamorphic with streaking lens flares. Carry it through backlit smoke, anamorphic blue flares, neon and sodium practicals, spinning fan shafts, grimy industrial sets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -111,7 +111,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'three-strip saturation; painted backdrops; high-key studio light; crane-shot formations; satin and sequins',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Technicolor Musical as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Technicolor musical: golden-age three-strip dye-transfer color on theatrical studio sets with painted backdrops and staged spectacle. Carry it through three-strip saturation, painted backdrops, high-key studio light, crane-shot formations, satin and sequins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -138,7 +138,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'handheld black and white; available light; glances into the lens; off-balance framing; overexposed windows',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies French New Wave as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "French New Wave: early-1960s handheld cinema on fast black-and-white film, real locations, available light and jump-cut spontaneity. Carry it through handheld black and white, available light, glances into the lens, off-balance framing, overexposed windows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -166,7 +166,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'print scratches and cue marks; magenta color shift; heavy grain; cheap gel lighting; lurid props',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grindhouse/Exploitation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Grindhouse exploitation cinema: a battered 1970s release print of a lurid B-movie, full of scratches, cue marks and splice damage. Carry it through print scratches and cue marks, magenta color shift, heavy grain, cheap gel lighting, lurid props. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -193,7 +193,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'iris vignette; sepia or blue tint; flicker and scratches; heavy stage makeup; theatrical framing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Silent Film as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Silent film: 1920s orthochromatic cinema with heavy stage makeup, an iris vignette and hand-cranked flicker, often tinted sepia or blue. Carry it through iris vignette, sepia or blue tint, flicker and scratches, heavy stage makeup, theatrical framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -222,7 +222,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'flashlight cone; night-mode green; shaky handheld; video noise and smear; half-seen threat in the dark',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Found Footage Horror as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Found-footage horror: a frame from a consumer camcorder or phone carried by a panicking person in the dark. Carry it through flashlight cone, night-mode green, shaky handheld, video noise and smear, half-seen threat in the dark. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -250,7 +250,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'rubber-suit performer; detailed miniatures; low camera forced perspective; smoke and model fire; faded film stock',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kaiju Movie (Suitmation) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Kaiju suitmation cinema: a performer in a rubber creature suit stomping through detailed miniature sets, shot low to fake enormous scale. Carry it through rubber-suit performer, detailed miniatures, low camera forced perspective, smoke and model fire, faded film stock. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -279,7 +279,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'painted studio sets; crash zooms; wire acrobatics; saturated primaries; full-body choreography',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 70s Kung Fu Studio Epic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "70s kung fu studio epic: martial-arts cinema shot on lavish studio sets with painted skies, crash zooms and acrobatic wire-assisted choreography. Carry it through painted studio sets, crash zooms, wire acrobatics, saturated primaries, full-body choreography. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -307,7 +307,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'cel animation with painted backgrounds; green CRT cast; two-tone cel shadows; dense cables; film grain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyberpunk Anime (90s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "90s cyberpunk anime film: dense cel animation over hand-painted backgrounds, with a sickly green CRT cast and techno-organic clutter. Carry it through cel animation with painted backgrounds, green CRT cast, two-tone cel shadows, dense cables, film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -335,7 +335,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'dead-center symmetry; pastel dollhouse palette; frontal deadpan subject; flat soft light; one-point perspective',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Symmetrical Storybook Cinema as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Symmetrical storybook cinema: meticulously centered compositions, pastel dollhouse sets and deadpan performers, as if every frame were a page of a picture book. Carry it through dead-center symmetry, pastel dollhouse palette, frontal deadpan subject, flat soft light, one-point perspective. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -361,7 +361,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'teal and orange grade; heroic low angle; sparks and embers; anamorphic flares; rim-lit silhouette',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blockbuster Teal & Orange as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Blockbuster teal-and-orange: modern action cinema graded to push skin and fire toward orange and shadows and skies toward teal, with flares and spark bloom. Carry it through teal and orange grade, heroic low angle, sparks and embers, anamorphic flares, rim-lit silhouette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -388,7 +388,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'red, blue and green gels; baroque interiors; eye and hand close-ups; deep corridors; implied threat',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Giallo Horror as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Giallo: 1970s Italian thriller cinema of baroque interiors flooded with saturated colored gels and tense, stylized close-ups. Carry it through red, blue and green gels, baroque interiors, eye and hand close-ups, deep corridors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -414,7 +414,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'available light apartments; consumer video softness; handheld accidental framing; lived-in clutter; awkward intimacy',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mumblecore as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Mumblecore: low-budget indie cinema shot on consumer video in real apartments with available light and improvised, awkward conversation. Carry it through available light apartments, consumer video softness, handheld accidental framing, lived-in clutter, awkward intimacy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -442,7 +442,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'kitbashed model ships; used-future weathering; optical composite glow; backlit hangar smoke; film grain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Space Opera (70s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "70s space opera: practical-effects science fiction with kitbashed model starships, optical composites and a worn, lived-in future. Carry it through kitbashed model ships, used-future weathering, optical composite glow, backlit hangar smoke, film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -475,7 +475,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Silent-era print with deliberate artifice; not realistic architecture.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies German Expressionist Cinema as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "German Expressionist cinema: 1920s films with painted, crooked sets, shadows drawn on the walls and performers moving like marionettes. Carry it through painted crooked sets, elongated looming shadows, zig-zag perspective, theatrical makeup, stark monochrome. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'painted crooked sets; elongated looming shadows; zig-zag perspective; theatrical makeup; stark monochrome',
     },
@@ -510,7 +510,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         '35 mm grain and practical-effects charm; not a painted pulp illustration.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 80s Sword-and-Sorcery Film as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "80s sword-and-sorcery cinema: practical fantasy films with backlit fog, torch-lit sets, rubber creatures and sweaty, rim-lit warriors on 35 mm. Carry it through blue backlit fog, orange torch key, rim-lit warriors, practical rubber creatures, smoky altars. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'blue backlit fog; orange torch key; rim-lit warriors; practical rubber creatures; smoky altars',
     },
@@ -537,7 +537,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Humane and aching, ordinary struggle filmed with compassion.',
       rendering_and_quality: 'Grainy postwar film stock; no stylization and no heroic posing.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Italian Neorealism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Italian neorealism: postwar black-and-white cinema shot in real streets and courtyards with non-actors, available light and plain, honest framing. Carry it through real locations, non-actor faces, available daylight, eye-level framing, soft grey black and white. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'real locations; non-actor faces; available daylight; eye-level framing; soft grey black and white',
     },
@@ -568,7 +568,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Vintage widescreen color print where the props and painted skies read openly as props.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Peplum Sword-and-Sandal Epic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Peplum sword-and-sandal epic: late-1950s widescreen color films of mythic strongmen, painted skies and plaster temples. Carry it through painted skies, plaster temples, oiled strongmen, Eastmancolor gold and purple, widescreen tableaux. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'painted skies; plaster temples; oiled strongmen; Eastmancolor gold and purple; widescreen tableaux',
     },

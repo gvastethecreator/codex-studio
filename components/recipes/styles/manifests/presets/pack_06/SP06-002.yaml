@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Gentle and airy, a scene breathing through damp light.
   rendering_and_quality: Soft bled edges beside a few crisp dry-brush accents; no white paint, no opaque cover, no digital gradient.
   key_features: wet-in-wet bleeding washes; reserved paper whites; granulation and blooms; hard tide lines; vignette into bare paper
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Watercolor (Soft) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Soft transparent watercolor: diluted pigment flooded wet-in-wet onto damp cold-press paper, with the white of the paper serving as the only white. Carry it through wet-in-wet bleeding washes, reserved paper whites, granulation and blooms, hard tide lines, vignette into bare paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - changing the requested framing

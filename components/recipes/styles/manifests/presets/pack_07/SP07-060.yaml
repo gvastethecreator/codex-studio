@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Spooky-comic and mischievous, frightening only in the way a cartoon is.
   rendering_and_quality: Clean animation background finish with crisp ink and flat color; no realistic horror, gore or monsters.
   key_features: crooked rubbery silhouettes; thick ink outlines; flat two-tone cel shading; violet and toxic-lime palette; moon backlight rim
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Haunted Toon Deformation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cartoon haunted architecture: rubbery crooked buildings that lean, bulge and twist, drawn with thick ink outlines and flat cel shading. Carry it through crooked rubbery silhouettes, thick ink outlines, flat two-tone cel shading, violet and toxic-lime palette, moon backlight rim. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - licensed fantasy location
   - copy of a known film or game building

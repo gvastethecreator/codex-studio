@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Sleazy and gleeful, cheap thrills projected too many times.
   rendering_and_quality: Worn release-print damage in the image itself; no title cards or readable text.
   key_features: print scratches and cue marks; magenta color shift; heavy grain; cheap gel lighting; lurid props
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grindhouse/Exploitation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Grindhouse exploitation cinema: a battered 1970s release print of a lurid B-movie, full of scratches, cue marks and splice damage. Carry it through print scratches and cue marks, magenta color shift, heavy grain, cheap gel lighting, lurid props. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - readable fake text

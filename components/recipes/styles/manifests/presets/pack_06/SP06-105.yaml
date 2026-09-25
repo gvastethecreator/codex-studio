@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Competitive and loud, the charge before the first round.
   rendering_and_quality: Consistent portrait crop and pixel density; blank name plates, no numbers or timers.
   key_features: portrait tile grid; diagonal versus split; painterly pixel portraits; gradient backgrounds; selection glow
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Retro Fighting Game Select Screen as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "90s arcade fighter select screen: a grid of bold hand-painted pixel portraits of original fighters with diagonal energy slashes and a versus split. Carry it through portrait tile grid, diagonal versus split, painterly pixel portraits, gradient backgrounds, selection glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - known game HUD layout

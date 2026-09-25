@@ -39,13 +39,13 @@ const spec: Spec = {
       briefs: [
         'Anime frame of two duelists in white and black coats facing each other on a checkerboard courtyard, sharply divided light and dark planes, broad black contours and a single falling rose between them. No readable text or logo.',
         'Anime frame of a duel on a castle roof under a split red and black sky, opposed forms and bold contours. No readable text or logo.',
-        'Anime frame of a prince-like swordswoman kneeling before a giant symbolic door split into light and shadow halves. No readable text or logo.',
+        'Theatrical duel anime frame of a princely swordswoman kneeling before a giant symbolic door split into light and shadow halves, broad black contours and sharply divided planes. No readable text or logo.',
       ],
     },
     'SP05-043': {
       briefs: [
         'Soft healing anime frame of a group of travelers resting in a sunlit herb garden, a small wounded griffin being bandaged by a gentle healer, round contours, low-contrast cel and matte edges. No readable text or logo.',
-        'Anime frame of an old dragon sleeping in a flower meadow while children lean on it reading. No readable text or logo.',
+        'Soft healing anime frame of an old dragon sleeping in a flower meadow while children lean on its side reading picture books, round contours, low-contrast cel and matte edges. No readable text or logo.',
         'Soft healing anime frame of a quiet mountain bathhouse run by round, sleepy spirits, steam curling over the water, a tired young traveler being handed a warm towel, low-contrast cel and matte edges on everything. No readable text or logo.',
       ],
     },
@@ -67,13 +67,13 @@ const spec: Spec = {
       briefs: [
         'Anime frame of a young woman reading a letter at a window as the wax seal cracks, fine ink contour over translucent watercolor washes of dusk blue and rose, delicate strokes in her hair and the curtain. No readable text or logo.',
         'Anime frame of a courier on a cliff road handing over a letter in rain, fine ink over watercolor. No readable text or logo.',
-        'Anime frame of an old knight writing a final letter by candlelight, watercolor wash of warm gold. No readable text or logo.',
+        'Anime frame of an old knight writing a final letter by candlelight in a stone room, fine ink contours over a warm gold watercolor wash, delicate strokes in his beard. No readable text or logo.',
       ],
     },
     'SP05-047': {
       briefs: [
         'Airy first-love anime frame of two teenagers on opposite ends of a garden bench under a blossoming tree, light tapered strokes, open shapes and soft focus transitions in the petals and sky. No readable text or logo.',
-        'Anime frame of a boy offering a girl his jacket at a windy bus stop, light open linework. No readable text or logo.',
+        'Airy first-love anime frame of a boy offering a girl his jacket at a windy bus stop, light tapered strokes, open shapes and soft transitions in the swirling leaves. No readable text or logo.',
         'Airy first-love anime close-up of two hands almost touching over the same old book on a library shelf, light tapered strokes, open shapes and a soft blur melting the shelves behind. No readable text or logo.',
       ],
     },
@@ -102,14 +102,14 @@ const spec: Spec = {
       briefs: [
         'Classic anime magical-warrior frame of an original moon-guardian heroine leaping over a rooftop at night, fluid arcs in her long twin ribbons of hair, crisp cel panels on her armored skirt, jewel-bright accents on a crescent tiara. No readable text or logo.',
         'Anime frame of an original team of five celestial guardians in jewel colors standing on a moonlit bridge facing a shadow queen. No readable text or logo.',
-        'Anime frame of an original heroine kneeling to comfort a crying spirit cat under a huge moon. No readable text or logo.',
+        'Anime frame of an original moon-guardian heroine kneeling on a rooftop to comfort a crying spirit cat under a huge full moon, fluid arcs in her hair, jewel-bright accents on her tiara. No readable text or logo.',
       ],
     },
     'SP05-168': {
       briefs: [
         'High-contrast anime frame of a young pilot sitting motionless in a flooded command room lit only by red emergency lamps, sharp black silhouettes, sparse technical accents, a giant helmet visible through the glass. No readable text or logo.',
-        'Anime frame of a giant pale war machine silhouetted on a red sky over a ruined city. No readable text or logo.',
-        'Anime frame of a girl standing in an empty train with red light slicing across her face. No readable text or logo.',
+        'High-contrast anime frame of a giant pale war machine standing silhouetted against a blood-red sky over a ruined city, sharp black shapes and sparse technical accents on its armor. No readable text or logo.',
+        'High-contrast anime frame of a girl standing alone in an empty train carriage, a hard slice of red light cutting across her face, everything else in cold black shapes. No readable text or logo.',
       ],
     },
     'SP05-171': {

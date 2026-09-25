@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Infinite, mesmerizing, mathematical and cosmic, driven by the construction, color and rhythm.
   rendering_and_quality: Crisp high-detail digital finish, with clean, deliberate marks and no accidental noise.
   key_features: self-similar recursion; infinite branching; glowing gradients
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fractal Geometry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Fractal geometry: self-similar recursive forms repeating at every scale. Carry it through self-similar recursion, infinite branching, glowing gradients. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

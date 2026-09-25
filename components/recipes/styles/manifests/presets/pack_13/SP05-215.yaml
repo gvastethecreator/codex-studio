@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: "Retain the prompt's emotional tone; a recurring visual motif does not prescribe a mood."
   rendering_and_quality: 'Balance repeated accents with clear breaks so subjects stay distinct; maintain legible details and stable forms.'
   key_features: 'Recurring line motifs; repeated highlight shapes; limited color rotation; smooth matte fills; clear rhythm with visual breaks.'
-  creative_brief: 'Echo line and color motifs across existing forms without repeating depicted content. Preserve subject, action, count, camera, and mood.'
+  creative_brief: "Echo line and color motifs across existing forms without repeating depicted content. Preserve subject, action, count, camera, and mood. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

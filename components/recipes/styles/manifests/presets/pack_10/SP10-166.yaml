@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at card size.
   atmosphere_and_mood: Psychedelic, nocturnal, eerie and vivid, coming from the light.
   rendering_and_quality: Clean glow with controlled bloom, no blown-out haze over the whole frame.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies UV Blacklight Glow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "UV blacklight: fluorescent paint on the subject glowing under ultraviolet light. Carry it through UV fluorescent glow, emissive modifier. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: UV fluorescent glow; emissive modifier
 avoidRules:
   - readable text

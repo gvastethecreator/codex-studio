@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view and always show the unquarried rock surrounding the carved facade on every side.
   atmosphere_and_mood: Ancient, immovable and monumental, a building that was released from the mountain.
   rendering_and_quality: Sharp daylight realism with legible tool marks; the facade and cliff read as one continuous stone.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rock-Hewn Colossus Facade as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Rock-cut architecture: the whole building carved in one piece into a cliff face, columns, pediments and giant relief figures cut in place, rooms as dark hollow voids behind. Carry it through carved in one piece from the cliff, banded sandstone strata through the carving, giant relief figures, black doorway voids, hard raking sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: carved in one piece from the cliff; banded sandstone strata through the carving; giant relief figures; black doorway voids; hard raking sun
 avoidRules:
   - licensed fantasy location

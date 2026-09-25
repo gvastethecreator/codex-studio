@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Enchanted and alien, a living night that shines.
   rendering_and_quality: Clean stylized glow with deep blacks; original designs, no franchise worlds.
   key_features: glowing flora and fungi as sources; cyan and violet; floating spores; faces lit from below; navy darkness
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bioluminescent Fantasy Glow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Bioluminescent fantasy glow: cinematic night scenes lit by glowing plants, fungi and creatures, stylized brighter and more saturated than nature. Carry it through glowing flora and fungi as sources, cyan and violet, floating spores, faces lit from below, navy darkness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested location
   - franchise likeness

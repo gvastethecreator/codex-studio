@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; low and close so the slab ridges run diagonally across the frame, plants in the gaps as jewels.
   atmosphere_and_mood: Rugged, precise and delicate, mountains in miniature.
   rendering_and_quality: Sharp photograph with slab edges and tiny flowers in focus, no lawn or soft beds.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crevice Rock Garden as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Crevice rock garden: thin slabs of stone set on edge in parallel rows like tilted strata, with alpine cushion plants rooted deep in the narrow gaps and gravel mulch over all. Carry it through parallel stone slabs set on edge, alpine cushions in narrow crevices, gravel mulch, tiny saturated flowers, hard crevice shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: parallel stone slabs set on edge; alpine cushions in narrow crevices; gravel mulch; tiny saturated flowers; hard crevice shadows
 avoidRules:
   - golden-hour garden postcard formula

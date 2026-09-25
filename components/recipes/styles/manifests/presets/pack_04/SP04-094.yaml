@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Scholarly and exact, the body opened for study.
   rendering_and_quality: Accurate layered anatomy with consistent proportion across layers; no gore beyond the dissection.
   key_features: surface, muscle and skeleton layers; madder red muscle; sepia engraving line; sectional insets; blank leader lines
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Anatomy Reference Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Anatomy reference plate: the subject shown as layered écorché studies, surface, muscle and skeleton, like a hand-colored medical engraving. Carry it through surface, muscle and skeleton layers, madder red muscle, sepia engraving line, sectional insets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - placeholder gibberish text
   - invented numbers presented as data

@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'carved stone skin and clothing; lichen and weathering; chisel marks; still pose',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stone Statue as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Stone statue transformation: the figure turned into carved stone with weathering, moss and chisel marks. Carry it through carved stone skin and clothing, lichen and weathering, chisel marks, still pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -55,7 +55,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'mixed denim washes; contrast topstitching; copper rivets; whiskered fading',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Denim on Denim as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Denim on denim: head-to-toe denim in mixed washes, with visible selvedge, contrast topstitching and fading. Carry it through mixed denim washes, contrast topstitching, copper rivets, whiskered fading. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -81,7 +81,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'mirror-gloss latex or PVC; long specular streaks; tight reflections; liquid highlights',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies High-Gloss Polymer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "High-gloss polymer couture: garments of mirror-glossy latex or PVC with liquid highlights and tight reflections. Carry it through mirror-gloss latex or PVC, long specular streaks, tight reflections, liquid highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -106,7 +106,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'voluminous long-pile faux fur; backlit halo; dense fibers; winter opulence',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fur Coat as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Faux fur couture: voluminous long-pile coats and trims with dense, touchable fibers. Carry it through voluminous long-pile faux fur, backlit halo, dense fibers, winter opulence. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -132,7 +132,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'liquid bias-cut satin; sliding highlights; pouring folds; luminous sheen',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Liquid Satin Drape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Liquid satin drape: silk-satin garments that pour like liquid, with bias-cut flow and mirror-soft highlights. Carry it through liquid bias-cut satin, sliding highlights, pouring folds, luminous sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -159,7 +159,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'clear PVC garments; welded seams; edge highlights; visible layers beneath',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Transparent Plastic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Transparent plastic fashion: clothes of clear or tinted PVC and vinyl that show layers and catch reflections. Carry it through clear PVC garments, welded seams, edge highlights, visible layers beneath. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -186,7 +186,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: "trompe-l'oeil body paint; painted clothing illusion; brush edges",
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Body Paint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Body paint: trompe-l'oeil paint on the figure that imitates clothing, patterns or landscapes. Carry it through trompe-l'oeil body paint, painted clothing illusion, brush edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -214,7 +214,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'flecked wool tweed; herringbone and check; heritage tailoring; overcast light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tweed Suit as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tweed tailoring: suits and coats of rough woven wool tweed with flecked color and heritage structure. Carry it through flecked wool tweed, herringbone and check, heritage tailoring, overcast light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -241,7 +241,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'anatomy-following tattoo work; black ink with color; ornamental mapping',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tattoo Skin as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tattoo skin mapping: the figure's visible skin covered in graphic tattoo work that follows anatomy, ornamental and ceremonial. Carry it through anatomy-following tattoo work, black ink with color, ornamental mapping. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -267,7 +267,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'molded leather plates; tooled patterns; rivets and buckles; worn patina',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Leather Armor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Leather armor garments: hardened, molded and tooled leather plates, straps and buckles made as wearable protection. Carry it through molded leather plates, tooled patterns, rivets and buckles, worn patina. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -295,7 +295,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'wound linen strips; frayed ends; aged stains; layered wraps',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bandage/Mummy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bandage and mummy wraps: garments made of aged linen strips wound around the body, frayed and layered. Carry it through wound linen strips, frayed ends, aged stains, layered wraps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -322,7 +322,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'coarse burlap; torn patched rags; rope ties; frayed edges',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Burlap/Rags as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Burlap and rags: garments of coarse sackcloth and torn patched rags, tied and knotted together. Carry it through coarse burlap, torn patched rags, rope ties, frayed edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -348,7 +348,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'openwork lace; floral motifs; scalloped edges; backlit pattern',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lace as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Lace garments: openwork lace with floral motifs that reveals layers and skin through delicate patterns. Carry it through openwork lace, floral motifs, scalloped edges, backlit pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -376,7 +376,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'interlocking metal rings; heavy drape; ring-by-ring sparkle; steel and bronze',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chainmail as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Chainmail garments: clothing built from interlocking metal rings that drape heavy and shimmer. Carry it through interlocking metal rings, heavy drape, ring-by-ring sparkle, steel and bronze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -403,7 +403,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'chunky cables and bobbles; visible stitches; wool fuzz; cozy volume',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Knitted Wool as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Chunky knitted wool: garments of thick hand knits — cables, bobbles and ribbing — with cozy volume. Carry it through chunky cables and bobbles, visible stitches, wool fuzz, cozy volume. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -429,7 +429,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'plush directional pile; dark-to-sheen folds; jewel tones; raking light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Velvet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Velvet garments: plush pile fabric that turns dark in shadow and glows where light grazes it. Carry it through plush directional pile, dark-to-sheen folds, jewel tones, raking light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -454,7 +454,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'folded paper facets; sharp creases; pleated panels; washi fibers',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Origami Paper as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Origami paper couture: garments folded from crisp paper — pleats, facets and cranes — with sharp creases. Carry it through folded paper facets, sharp creases, pleated panels, washi fibers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -480,7 +480,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'hems dissolving into smoke; defined bodice; curling wisps; backlit volumes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Smoke Dress as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Smoke dress: garments whose lower parts dissolve into drifting smoke while the bodice stays defined. Carry it through hems dissolving into smoke, defined bodice, curling wisps, backlit volumes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -507,7 +507,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'glazed porcelain skin; painted features; hairline cracks; ball-joint seams',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Porcelain Doll as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Porcelain doll transformation: the figure rendered as glazed bisque porcelain with painted features, fine cracks and ball-joint seams. Carry it through glazed porcelain skin, painted features, hairline cracks, ball-joint seams. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -534,7 +534,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'translucent gel garments; drips and strands; trapped bubbles; backlit glow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Viscous Gel Couture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Viscous gel couture: garments of thick glossy gel that drips, stretches and holds bubbles. Carry it through translucent gel garments, drips and strands, trapped bubbles, backlit glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -561,7 +561,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'overlapping sequins; scattered sparkle; spotlight glitter; shifting color',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sequins as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sequin couture: garments covered in overlapping sequins or paillettes that scatter points of light. Carry it through overlapping sequins, scattered sparkle, spotlight glitter, shifting color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -588,7 +588,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'layered feather plumage; soft moving edges; iridescent sheen; backlit barbs',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Feathers as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Feather couture: garments built from layered feathers — ostrich, peacock, crow or swan — with soft, moving edges. Carry it through layered feather plumage, soft moving edges, iridescent sheen, backlit barbs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -614,7 +614,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'bubble wrap cells; glinting highlights; taped seams; puffy volume',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bubble Wrap as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bubble wrap fashion: garments made of clear bubble wrap, with rows of air cells catching light. Carry it through bubble wrap cells, glinting highlights, taped seams, puffy volume. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -642,7 +642,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'flame-made garment; glowing core; falling embers; self-illumination',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fire Dress as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fire dress: garments formed of controlled flame and embers, with a glowing core and flickering edges. Carry it through flame-made garment, glowing core, falling embers, self-illumination. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -669,7 +669,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'gold leaf edges; crackle; burnished sheen; warm raking light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gold Leaf as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Gold leaf gilding: the figure or its garments covered in applied gold leaf with crackle and burnish. Carry it through gold leaf edges, crackle, burnished sheen, warm raking light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -697,7 +697,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features: 'flowing water garment; splash edges; droplets; refraction caustics',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Water Dress as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Water dress: garments formed of flowing clear water with splashes, droplets and caustic light. Carry it through flowing water garment, splash edges, droplets, refraction caustics. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

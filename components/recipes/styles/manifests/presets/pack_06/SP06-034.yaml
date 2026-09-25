@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Soft, atmospheric and immediate, a drawing multiplied by stone.
   rendering_and_quality: Grainy crayon tones and liquid washes with no plate mark and no embossing; sits flat on the paper.
   key_features: limestone grain in every tone; greasy crayon drag; reticulated tusche washes; scraped highlights; no plate mark
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lithography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Crayon lithography: the image drawn with greasy crayon and wash on a grained limestone, then printed so every grain of the stone appears in the tone. Carry it through limestone grain in every tone, greasy crayon drag, reticulated tusche washes, scraped highlights, no plate mark. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - readable printed text

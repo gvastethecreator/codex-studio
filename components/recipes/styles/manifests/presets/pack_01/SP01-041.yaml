@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Eerie and magical, cold living sparks floating in a vast quiet darkness.
   rendering_and_quality: Clean long-exposure darkness without noise, the glowing specks crisp and individually visible.
   key_features: living light sources; cyan-green glow; dark surroundings; speckled illumination; wet reflections
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bioluminescence as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Bioluminescent light: living organisms glowing cyan, green or blue as the scene's only illumination in darkness. Carry it through living light sources, cyan-green glow, dark surroundings, speckled illumination, wet reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - generic stock-photo face
   - celebrity likeness

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; the logarithmic spiral and its chamber sequence organize the whole composition.
   atmosphere_and_mood: Calm, mathematical and oceanic, growth made into architecture.
   rendering_and_quality: Smooth organic rendering with accurate nacre iridescence and clean spiral geometry, no rough masonry.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Nautilus Chamber Architecture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Spiral shell architecture: buildings grown as logarithmic spirals with chambered interiors divided by curved septa, porcelain-white exteriors and nacre-lined rooms. Carry it through logarithmic spiral plan, chambered interiors with curved septa, tiger-striped porcelain exterior, nacre-lined rooms, soft wrapping daylight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: logarithmic spiral plan; chambered interiors with curved septa; tiger-striped porcelain exterior; nacre-lined rooms; soft wrapping daylight
 avoidRules:
   - licensed fantasy location

@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'refraction bending the background; rainbow edge dispersion; caustic shadow pools; internal reflections; flawless clarity',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glass & Crystal as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Glass and crystal material: flawless transparent solids that bend the background through refraction and split bright light into thin rainbow edges. Carry it through refraction bending the background, rainbow edge dispersion, caustic shadow pools, internal reflections, flawless clarity. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -55,7 +55,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'fluid-formed silhouette; crown splashes; droplets tearing off; surface tension; backlit glow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Liquid Simulation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Liquid simulation material: the target formed from moving fluid — splashing, sheeting and breaking into droplets while keeping its silhouette. Carry it through fluid-formed silhouette, crown splashes, droplets tearing off, surface tension, backlit glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -82,7 +82,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'light glowing through thin areas; soft terminator; waxy inner clouds; backlit translucency; warm transmission',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Subsurface Scattering (SSS) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Subsurface scattering material: light enters the surface, travels inside and glows back out, so thin areas shine warm like wax, jade or backlit skin. Carry it through light glowing through thin areas, soft terminator, waxy inner clouds, backlit translucency, warm transmission. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -109,7 +109,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'mirror reflections of surroundings; anisotropic streaks; gold or copper tints; black reflected darks; precise highlights',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chrome & Metal as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Chrome and polished metal: mirror-grade reflective surfaces showing the whole environment, with sharp or anisotropic streaked highlights. Carry it through mirror reflections of surroundings, anisotropic streaks, gold or copper tints, black reflected darks, precise highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -135,7 +135,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'simulated strands with clumping; glowing rim through tips; flyaways; self-shadowing; wind direction',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fur & Hair as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Groomed fur and hair: the target covered in simulated strands with clumping, flyaways and soft light passing through the tips. Carry it through simulated strands with clumping, glowing rim through tips, flyaways, self-shadowing, wind direction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -161,7 +161,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'sagging viscous form; stretched sticky strings; trapped bubbles; glossy wet highlights; pooling drips',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Slime & Goo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Slime and goo: the target made of thick glossy viscous fluid that sags, drips and stretches into sticky strings. Carry it through sagging viscous form, stretched sticky strings, trapped bubbles, glossy wet highlights, pooling drips. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -188,7 +188,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'twill weave pattern; anisotropic shimmer; deep glossy clear coat; strip highlights; weave following curves',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carbon Fiber as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Carbon fiber composite: a woven twill of black fibers under a deep glossy clear coat, the weave shimmering as the angle changes. Carry it through twill weave pattern, anisotropic shimmer, deep glossy clear coat, strip highlights, weave following curves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -216,7 +216,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'translucent projected light; scanlines; flicker glitch offsets; bright fresnel edges; no cast shadow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hologram as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hologram material: the target rebuilt from projected light — translucent, scanlined and flickering — standing on its projector beam. Carry it through translucent projected light, scanlines, flicker glitch offsets, bright fresnel edges, no cast shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -241,7 +241,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'glassy white glaze; translucent thin rims; fine crackle; cobalt painted accents; pooled glaze',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Porcelain as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Glazed porcelain: fine white ceramic with a glassy glaze, milky translucency at thin edges and tiny crackle lines. Carry it through glassy white glaze, translucent thin rims, fine crackle, cobalt painted accents, pooled glaze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -268,7 +268,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'caustic light networks; focused hot spots; rippling bands on nearby surfaces; spectral fringes; refracting target',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Caustics as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Caustic light material response: a clear or liquid target that focuses light into bright dancing networks and bands on the surfaces around it. Carry it through caustic light networks, focused hot spots, rippling bands on nearby surfaces, spectral fringes, refracting target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -295,7 +295,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'clear block ice; frosted chisel marks; trapped bubbles; melting drips; backlit cyan glow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ice Sculpture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Carved ice: the target sculpted from clear block ice, with frosted chisel marks, trapped bubbles and edges beginning to melt. Carry it through clear block ice, frosted chisel marks, trapped bubbles, melting drips, backlit cyan glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -322,7 +322,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'cast bronze sheen; verdigris in crevices; polished wear spots; raking light; casting texture',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bronze Statue as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cast bronze: the target as a bronze casting with polished high points, dark recesses and green-blue verdigris patina in the crevices. Carry it through cast bronze sheen, verdigris in crevices, polished wear spots, raking light, casting texture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -347,7 +347,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'white marble with flowing veins; polished and rasped areas; soft translucency; crisp carved edges',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Marble Statue as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Carved marble: the target as polished white or grey marble with flowing veins, soft translucency and crisp chisel-sharp edges. Carry it through white marble with flowing veins, polished and rasped areas, soft translucency, crisp carved edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -377,7 +377,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Magical and shimmering, color that refuses to stay still.',
       rendering_and_quality: 'Physically based thin-film interference; not a rainbow texture.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thin-Film Iridescent Coating as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Thin-film iridescent coating: a microscopically thin layer over the target that shifts hue with viewing angle, like oil on water or a beetle shell. Carry it through angle-dependent hue shift, oil-slick rainbow bands, dark base, glossy coat, grazing-angle color flop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'angle-dependent hue shift; oil-slick rainbow bands; dark base; glossy coat; grazing-angle color flop',
     },
@@ -406,7 +406,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Dangerous and primal, form pulled straight out of the forge.',
       rendering_and_quality: 'Emissive blackbody material with heat distortion; not orange paint.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Molten Glowing Metal as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Molten glowing metal: the target made of incandescent liquid metal, glowing by its own heat from deep red to white-yellow, with a darker cooling skin. Carry it through blackbody glow gradient, cracked cooling crust, heat haze, drips and sparks, light cast on surroundings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'blackbody glow gradient; cracked cooling crust; heat haze; drips and sparks; light cast on surroundings',
     },
@@ -436,7 +436,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Diffraction play-of-color inside the stone, never a painted rainbow texture.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Precious Opal Material as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Precious opal: the target made of milky or black opal with flashes of spectral color that shift as the light moves. Carry it through play-of-color flashes, milky or black opal body, polished cabochon surface, harlequin patches, glossy highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'play-of-color flashes; milky or black opal body; polished cabochon surface; harlequin patches; glossy highlights',
     },
@@ -465,7 +465,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Soft translucent gelatin with light scattering inside, never hard glass.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gummy Candy Material as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Gummy candy: the target made of soft translucent gelatin candy, slightly sugar-dusted, glowing with saturated color when backlit. Carry it through translucent gelatin, sugar dusting, saturated candy colors, colored shadows, soft squishy edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'translucent gelatin; sugar dusting; saturated candy colors; colored shadows; soft squishy edges',
     },
@@ -500,7 +500,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Layered base, flake and clear-coat shading, never flat glossy plastic.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pearlescent Flake Paint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pearlescent flake paint: the target finished in custom automotive paint with metallic flakes under a deep clear coat and a color flop at the edges. Carry it through candy color flop, metallic flake sparkle, deep clear coat reflections, glittering under point lights, custom finish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'candy color flop; metallic flake sparkle; deep clear coat reflections; glittering under point lights; custom finish',
     },
@@ -529,7 +529,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Ghostly and scientific, a solid barely there.',
       rendering_and_quality: 'Volumetric Rayleigh scattering solid; not glass and not smoke.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Aerogel Material as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Aerogel: the target made of ultra-light silica aerogel, a nearly weightless solid that looks like frozen blue smoke. Carry it through frozen blue-smoke solid, blurred edges, Rayleigh scattering blue, faint amber transmission, no gloss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'frozen blue-smoke solid; blurred edges; Rayleigh scattering blue; faint amber transmission; no gloss',
     },
@@ -558,7 +558,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Ancient and treasured, a moment preserved forever.',
       rendering_and_quality: 'Translucent resin with depth and inclusions; not orange glass.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Amber Resin Inclusion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Amber resin inclusion: the target made of golden fossil amber or clear resin, with small objects, bubbles and debris suspended inside. Carry it through golden amber glow, suspended inclusions, flow lines, tiny bubbles, backlit warm transmission. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'golden amber glow; suspended inclusions; flow lines; tiny bubbles; backlit warm transmission',
     },

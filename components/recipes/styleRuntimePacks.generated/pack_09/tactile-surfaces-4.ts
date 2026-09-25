@@ -26,7 +26,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'directional velvet pile; brushed dark trails; crush marks',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Velvet Fabric as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Velvet: short dense pile that darkens and brightens as it bends, showing finger-brushed trails. Carry it through directional velvet pile, brushed dark trails, crush marks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -54,7 +54,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'feathery hoarfrost needles; rime crust; cold sparkle',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Frozen/Frosted as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Frosted: a crust of feathery hoarfrost crystals growing over the target's surfaces. Carry it through feathery hoarfrost needles, rime crust, cold sparkle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -81,7 +81,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'needle-felted wool; fuzzy halo; rounded edges',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Felt Fabric as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Felt: dense matted wool with fuzzy surface and soft rounded edges, like needle-felted craft. Carry it through needle-felted wool, fuzzy halo, rounded edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -108,7 +108,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'long glossy faux fur; shaggy volume; dyed color',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fur (Synthetic) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Synthetic fur: long glossy faux-fur pile, uniformly colored and shaggy. Carry it through long glossy faux fur, shaggy volume, dyed color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -135,7 +135,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'powdery matte chalk; smudges; dust fall',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chalk (Dry) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dry chalk: powdery matte chalk surfaces that smudge and leave dust. Carry it through powdery matte chalk, smudges, dust fall. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -163,7 +163,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'fluffy fiberglass batts; loose fibers; pink or yellow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fiberglass Insulation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fiberglass insulation: pink or yellow fluffy glass-fiber batts with an itchy loose texture. Carry it through fluffy fiberglass batts, loose fibers, pink or yellow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -190,7 +190,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'long shag pile; retro colors; deep strands',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carpet (Shag) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Shag carpet: long looped or cut shag pile covering the target like a rug. Carry it through long shag pile, retro colors, deep strands. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -217,7 +217,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'plastic turf blades; rubber crumb; uniform green',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Astroturf as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Artificial turf: synthetic grass blades in dense uniform rows over the target. Carry it through plastic turf blades, rubber crumb, uniform green. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -246,7 +246,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Terrycloth Loops as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Terrycloth: soft uncut cotton loops like a bath towel, absorbent and plush. Carry it through uncut terry loops, plush cotton, towel texture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'uncut terry loops; plush cotton; towel texture',
     },
     ui: {
@@ -279,7 +279,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Brushed Suede as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Brushed suede: velvety leather nap that shows light and dark finger marks. Carry it through brushed suede nap, finger marks, matte softness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'brushed suede nap; finger marks; matte softness',
     },
     ui: {
@@ -312,7 +312,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Quilted Padding as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Quilted padding: puffy stitched quilting in diamond or channel patterns. Carry it through puffy quilted pockets, stitched diamonds, soft shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'puffy quilted pockets; stitched diamonds; soft shadows',
     },
     ui: {
@@ -345,7 +345,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Corduroy Ridges as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Corduroy: parallel velvet wales with soft ridged texture. Carry it through parallel corduroy wales, ridged pile, warm colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'parallel corduroy wales; ridged pile; warm colors',
     },
     ui: {
@@ -378,7 +378,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Memory Foam Imprint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Memory foam: slow-rebound foam holding fresh imprints of hands and objects. Carry it through memory foam, handprint imprints, slow rebound. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'memory foam; handprint imprints; slow rebound',
     },
     ui: {
@@ -411,7 +411,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Shearling Fleece as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Shearling: curly sheepskin fleece with dense crimped wool. Carry it through curly shearling fleece, crimped wool, cream tones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'curly shearling fleece; crimped wool; cream tones',
     },
     ui: {
@@ -445,7 +445,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soft-Touch Silicone as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Soft-touch silicone: matte squishy silicone that looks rubbery and slightly translucent. Carry it through soft matte silicone, translucent edges, squishy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'soft matte silicone; translucent edges; squishy',
     },
     ui: {
@@ -478,7 +478,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neoprene as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Neoprene: thick spongy wetsuit rubber with jersey facing and glued seams. Carry it through neoprene, jersey face, glued seams. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'neoprene; jersey face; glued seams',
     },
     ui: {
@@ -511,7 +511,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pumice Stone as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pumice: light frothy volcanic stone full of tiny pores, rough to the touch. Carry it through pale porous pumice, frothy vesicles, rough. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'pale porous pumice; frothy vesicles; rough',
     },
     ui: {
@@ -545,7 +545,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Flocked Coating as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Flocking: short fibers sprayed onto a surface, giving a uniform velvety matte coat. Carry it through flocked matte coat, uniform short fibers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'flocked matte coat; uniform short fibers',
     },
     ui: {
@@ -578,7 +578,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kneaded Putty as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Kneaded putty: soft malleable putty with fingerprints, folds and pulled strands. Carry it through kneaded putty, fingerprints, pulled strands. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'kneaded putty; fingerprints; pulled strands',
     },
     ui: {
@@ -611,7 +611,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pebbled Leather Grain as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pebbled leather: full-grain leather with raised pebble texture and soft sheen. Carry it through pebble-grain leather, stitched seams, soft sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'pebble-grain leather; stitched seams; soft sheen',
     },
     ui: {

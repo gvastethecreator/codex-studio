@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'cornerless white polymer shells; seamless molded joints; rounded oval thresholds; cyan seam glow; shadowless cove light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Futuristic Pod as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pod architecture: rooms and shells molded as cornerless white polymer capsules with seamless joints, rounded thresholds and soft cyan light embedded in the seams. Carry it through cornerless white polymer shells, seamless molded joints, rounded oval thresholds, cyan seam glow, shadowless cove light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'beige equipment racks; circular hatches; blue hook-and-loop patches and straps; floating tethered objects; flat fluorescent strip light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Orbital Utility Habitat as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Working space-station interior: beige equipment racks, circular hatches, blue hook-and-loop patches and retention straps, cables bungeed to every wall and no up or down. Carry it through beige equipment racks, circular hatches, blue hook-and-loop patches and straps, floating tethered objects, flat fluorescent strip light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -85,7 +85,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'pearl-ivory streamline forms; gas envelopes and ring platforms; champagne metal seams; cloud sea below; airbrushed sunset gradients',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Aerostatic Cloud Retrofuture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Buoyant retrofuture architecture: pearl-ivory streamline superstructures held aloft on gas envelopes and ring platforms above a sea of clouds, champagne metal seams and perimeter beacons. Carry it through pearl-ivory streamline forms, gas envelopes and ring platforms, champagne metal seams, cloud sea below, airbrushed sunset gradients. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -114,7 +114,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'closed circulation loops; endlessly ascending stairs; built concrete and limestone; consistent midday sun; elevated near-isometric view',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Impossible Circulation Optical Paradox as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Impossible circulation: stairs, ramps and walkways that connect into closed loops, climbing forever yet returning to their start, built as solid architecture. Carry it through closed circulation loops, endlessly ascending stairs, built concrete and limestone, consistent midday sun, elevated near-isometric view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -142,7 +142,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'near-black hexagonal shell panels; graphite heat fins; solar gold leaking through gaps; corona rim light; planet-scale curvature',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stellar Shell Megastructure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Stellar shell megastructure: a star enclosed by a shell or swarm of near-black hexagonal panels and graphite heat fins, solar gold light leaking through every gap. Carry it through near-black hexagonal shell panels, graphite heat fins, solar gold leaking through gaps, corona rim light, planet-scale curvature. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -170,7 +170,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'horizon curving upward; landscape band overhead; charcoal containment walls; ocean-cyan strips; aerial haze along the arc',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Orbital Ribbon Habitat as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Orbital ribbon habitat: a landscape laid on the inside of a vast ring, the ground rising into the sky on both sides, held in by charcoal containment walls. Carry it through horizon curving upward, landscape band overhead, charcoal containment walls, ocean-cyan strips, aerial haze along the arc. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -199,7 +199,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'recursive cube-cell alcoves; conduit bundles on service frames; graphite panels; phosphor-green cell glow; deep one-point repetition',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cybernetic Hive Infrastructure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cybernetic hive infrastructure: recursive grids of cube-shell alcoves stacked on service frames, dense conduit bundles and graphite panels, each cell lit phosphor green. Carry it through recursive cube-cell alcoves, conduit bundles on service frames, graphite panels, phosphor-green cell glow, deep one-point repetition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -227,7 +227,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'matte light-absorbing black volume; hairline silver edge light; vast empty ground; one tiny scale cue; crisp pale shadow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Absolute Black Monolith as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Absolute black monolith: architecture reduced to matte light-absorbing black volumes with no ornament, readable only by a faint silver edge light and its shadow. Carry it through matte light-absorbing black volume, hairline silver edge light, vast empty ground, one tiny scale cue, crisp pale shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -256,7 +256,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'copper-brass hexagonal nodes; organic coral-like ribs; glowing glass tubes; braided cable runs; amber and teal glow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dimensional Retrotech Surfaces as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Analog space-age retrotech: interiors clad in copper and brass hexagonal nodes, organic coral-like ribs, glowing glass tubes and braided cable runs. Carry it through copper-brass hexagonal nodes, organic coral-like ribs, glowing glass tubes, braided cable runs, amber and teal glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -289,7 +289,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Seamless recursion with no visible seam or collage frame; the copies are continuous space.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Droste Recursive Room as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Droste recursion: the space contains a smaller exact copy of itself through a window, doorway or frame, which contains another, receding without end. Carry it through space containing its own copy, endless inward repetition, centered or spiral recursion, cooler dimmer levels, seamless continuity. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'space containing its own copy; endless inward repetition; centered or spiral recursion; cooler dimmer levels; seamless continuity',
     },
@@ -327,7 +327,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photographic realism along a clean hinge, not a smooth ring curve or a mirror reflection.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Folded-Horizon City as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Folded horizon: the ground plane hinges upward along a sharp crease and folds over itself, streets and buildings continuing upside down overhead. Carry it through ground hinging along a sharp crease, setting continuing upside down overhead, one consistent sun, fold line instead of horizon, hazier upper half. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'ground hinging along a sharp crease; setting continuing upside down overhead; one consistent sun; fold line instead of horizon; hazier upper half',
     },
@@ -365,7 +365,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photographic realism with exact alignment; no flat overlay or composited graphic.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Anamorphic Viewpoint Alignment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anamorphic alignment: fragments scattered through deep space line up into one perfect shape only from the camera position and are broken from anywhere else. Carry it through fragments at different depths, one perfect shape from one viewpoint, flat strong color, shadows revealing depth, edge clues to the trick. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'fragments at different depths; one perfect shape from one viewpoint; flat strong color; shadows revealing depth; edge clues to the trick',
     },
@@ -404,7 +404,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise architectural rendering with continuous surface details that never jump.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mobius Loop Architecture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Mobius architecture: a road, deck or building band twisted once and joined to itself, so its top surface flows onto its underside without an edge crossing. Carry it through band twisted once and joined, top flowing onto underside, continuous paving across the twist, whole-loop view, light-to-shadow gradient. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'band twisted once and joined; top flowing onto underside; continuous paving across the twist; whole-loop view; light-to-shadow gradient',
     },
@@ -442,7 +442,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photographic landscape realism with correct haze and scale cues; never a tabletop miniature.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Colossal Scale Displacement as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Colossal scale displacement: an ordinary object enlarged to the size of a hill or canyon and treated as terrain, with roads, trees and weather at its true scale. Carry it through ordinary object at landscape scale, aerial haze on the object, tiny scale cues, cloud shadows, weathering and growth on its surface. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'ordinary object at landscape scale; aerial haze on the object; tiny scale cues; cloud shadows; weathering and growth on its surface',
     },
@@ -479,7 +479,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Playful and unsettling, several worlds sharing one block.',
       rendering_and_quality: 'Photographic realism, not lithograph linework or a staircase loop.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Multi-Gravity Block Cluster as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Multi-gravity cluster: blocks of a place floating together, each face with its own down, so trees, water and furniture obey the gravity of their own surface. Carry it through faces with their own gravity, trees and water obeying local down, floating block cluster, one consistent sun, three or more readable faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'faces with their own gravity; trees and water obeying local down; floating block cluster; one consistent sun; three or more readable faces',
     },
@@ -517,7 +517,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Detailed architectural visualization with legible terrace repetition; not a sterile line style.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Terraced Arcology Pyramid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Terraced arcology: an entire city built as one stepped pyramid, every slope lined with homes, farms and gardens, the hollow core a sunlit atrium. Carry it through stepped pyramid city, terraced farms and homes, hollow sunlit atrium, irrigation channels, raking morning sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'stepped pyramid city; terraced farms and homes; hollow sunlit atrium; irrigation channels; raking morning sun',
     },
@@ -555,7 +555,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photographic realism with correct atmospheric fade along the tether; no fantasy beanstalk.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Orbital Tether Anchor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Space elevator: a single ribbon tether rising from an ocean anchor platform straight up through the atmosphere, climber cars crawling along it toward orbit. Carry it through ribbon tether rising to orbit, ocean anchor platform, climber cars, dawn light on the upper tether, vertical vanishing line. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'ribbon tether rising to orbit; ocean anchor platform; climber cars; dawn light on the upper tether; vertical vanishing line',
     },
@@ -592,7 +592,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Precarious and lively, a town that refuses to look down.',
       rendering_and_quality: 'Detailed painterly realism with strong depth falloff into the chasm.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Abyss-Span Bridge City as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bridge city: an entire town built on a colossal bridge spanning a bottomless chasm, houses stacked on the deck and hanging beneath the arches. Carry it through town built on a colossal bridge, houses hanging under arches, bottomless chasm below, masonry piers, misty depth falloff. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'town built on a colossal bridge; houses hanging under arches; bottomless chasm below; masonry piers; misty depth falloff',
     },
@@ -630,7 +630,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Painterly realism with a smooth light gradient from opening to depth.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vertical Shaft Sinkhole City as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Shaft city: a city lining the inner walls of a colossal cylindrical sinkhole, ring terraces spiraling down, the only sky a disc of light far above. Carry it through city lining a cylindrical sinkhole, spiral ring terraces, bright sky disc overhead, light fading with depth, cantilevered platforms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'city lining a cylindrical sinkhole; spiral ring terraces; bright sky disc overhead; light fading with depth; cantilevered platforms',
     },
@@ -668,7 +668,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photographic realism with correct haze at the top of the wall; no disaster breach unless asked.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ocean-Barrier Megadam as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ocean megadam: a curved concrete wall kilometres high holding back a raised sea, spillway gates and buttresses dwarfing the land in its lee. Carry it through kilometre-high curved sea wall, ocean at the brim, buttresses and spillway gates, vast shadow over the lowland, spray at the crest. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'kilometre-high curved sea wall; ocean at the brim; buttresses and spillway gates; vast shadow over the lowland; spray at the crest',
     },

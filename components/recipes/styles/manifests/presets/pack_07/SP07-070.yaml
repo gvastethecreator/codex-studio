@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Warm, handmade and a little mischievous, baking as construction.
   rendering_and_quality: Food macro of a real baked build; the model scale is obvious, unlike full-size candy architecture.
   key_features: baked cookie panels; piped royal icing seams; candy inlays; sugar-glass panes; tabletop macro scale
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Confectionery Structural Ornament as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Tabletop gingerbread construction: baked cookie panels cut to shape and glued with piped royal icing, candy inlays and sugar-glass windows at model scale. Carry it through baked cookie panels, piped royal icing seams, candy inlays, sugar-glass panes, tabletop macro scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo on parts
   - readable text

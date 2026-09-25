@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Wistful and quiet, a place waiting for its scene.
   rendering_and_quality: Polished, uncluttered backdrop with blank signs; no people, dialogue boxes or words.
   key_features: empty anime backdrop; neon magenta and cyan wash; bloom; open central stage; blank signs
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Visual Novel Neon Backdrop Wash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Visual-novel backdrop: a clean anime-painted location with no characters, graded in neon night color and staged for a character to stand in later. Carry it through empty anime backdrop, neon magenta and cyan wash, bloom, open central stage, blank signs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - known game HUD layout

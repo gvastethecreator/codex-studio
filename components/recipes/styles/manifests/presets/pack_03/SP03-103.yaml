@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; shadows falling on a floor or wall.
   atmosphere_and_mood: Playful and scientific, color born from light itself.
   rendering_and_quality: Accurate additive color mixing; not colored gels on a dark scene.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies RGB Colored Shadows as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "RGB colored shadows: three lights in red, green and blue from different directions, so white surfaces glow neutral while each shadow turns a vivid color. Carry it through red, green and blue lights, cyan-magenta-yellow shadows, white neutral lit areas, fanned shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: red, green and blue lights; cyan-magenta-yellow shadows; white neutral lit areas; fanned shadows; additive mixing
 avoidRules:
   - changing the geometry

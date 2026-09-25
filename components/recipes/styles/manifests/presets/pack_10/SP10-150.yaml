@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.
   atmosphere_and_mood: Precious, delicate, refined and patient, coming from the handcrafted construction.
   rendering_and_quality: Crisp, consistent units and joints across the whole image, with no smeared or random fill.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Micro-Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Micro-mosaic: tiny glass rods cut into minute tesserae, painterly and fine. Carry it through minute smalti, painterly fine. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: minute smalti; painterly fine
 avoidRules:
   - readable text

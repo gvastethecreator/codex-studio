@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Warm and inviting, the plate just set down and still steaming.
   rendering_and_quality: Cookbook polish with real texture; no plastic-looking food or oversaturated grade.
   key_features: soft side window with bounce; 45-degree or overhead angle; steam and glaze highlights; linen and stoneware props; shallow focus
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Food Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Bright food photography: food styled for appetite and lit from one soft window side, shot at 45 degrees or straight down, as in a cookbook. Carry it through soft side window with bounce, 45-degree or overhead angle, steam and glaze highlights, linen and stoneware props, shallow focus. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - fake brand logo
   - readable labels

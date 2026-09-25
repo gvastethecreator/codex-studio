@@ -30,7 +30,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'double-wide pixels; fixed 16 muted colors; 4x8 cell color limit; horizontal dither; bedroom-computer glow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fat-Pixel 16-Color Home Computer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "8-bit home computer multicolor bitmap: double-wide pixels at 160 by 200 from a fixed palette of sixteen muted colors. Carry it through double-wide pixels, fixed 16 muted colors, 4x8 cell color limit, horizontal dither, bedroom-computer glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -59,7 +59,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'four-pixel-wide blocks; one color per scanline; horizontal stripe coloring; mirrored playfield; tiny sprites',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scanline Stripe Block Minimalism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Extreme early-console limitation: chunky blocks four pixels wide, one color per object per scanline, and mirrored playfield blocks. Carry it through four-pixel-wide blocks, one color per scanline, horizontal stripe coloring, mirrored playfield, tiny sprites. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -89,7 +89,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'vertical-stripe dither; checkerboard fake transparency; steppy 9-bit palette; parallax layers; no alpha blending',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dither-Heavy 16-Bit Console as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "16-bit console pixel art with about sixty on-screen colors, using heavy vertical-stripe and checkerboard dither to fake transparency and gradients. Carry it through vertical-stripe dither, checkerboard fake transparency, steppy 9-bit palette, parallax layers, no alpha blending. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -118,7 +118,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'affine-scaled floor plane; stretched near pixels; horizon shimmer; flat parallax backdrop; scaled sprites',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mode 7 Floor-Plane Vista as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "16-bit pseudo-3D: one flat tiled ground layer rotated and scaled line by line toward a horizon, with flat sprites riding on top. Carry it through affine-scaled floor plane, stretched near pixels, horizon shimmer, flat parallax backdrop, scaled sprites. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -148,7 +148,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'square pixels; two colors per 8x1 segment; horizontal clash fringes; candy primaries; black field',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bright Line-Clash Home Micro as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Japanese-market 8-bit micro graphics: square pixels in bright candy primaries, with only two colors allowed in each 8 by 1 pixel line segment. Carry it through square pixels, two colors per 8x1 segment, horizontal clash fringes, candy primaries, black field. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -177,7 +177,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'square tile grid; chibi sprites; auto-tiled edges; shadow tiles; three-quarter overhead view',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chibi Top-Down Tileworld as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hobbyist top-down RPG map: 16 or 32 pixel square tiles in three-quarter overhead view with two-heads-tall chibi characters. Carry it through square tile grid, chibi sprites, auto-tiled edges, shadow tiles, three-quarter overhead view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -207,7 +207,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'four olive-green shades; 8x8 tiles; checkerboard dither; pixel-gap grid; LCD ghosting',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Four-Shade Pea-Green LCD as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Unlit reflective handheld LCD at about 160 by 144 pixels, drawn with exactly four shades of olive green on 8 by 8 tiles. Carry it through four olive-green shades, 8x8 tiles, checkerboard dither, pixel-gap grid, LCD ghosting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -237,7 +237,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'affine texture warping; vertex snapping jitter; nearest-neighbor textures; ordered dither; close fog',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 32-Bit Vertex Wobble as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Early 32-bit console 3D: low-poly models with unfiltered low-resolution textures that warp and jitter because of affine mapping and vertex snapping. Carry it through affine texture warping, vertex snapping jitter, nearest-neighbor textures, ordered dither, close fog. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -267,7 +267,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'square battle grid; bright unlit-screen palette; outlined unit sprites; movement-range squares; terrain tiles',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Handheld Tactics Grid Pixel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Handheld strategy map: bright 15-bit pixel art on a square battle grid, with chunky outlined unit sprites standing on clean terrain tiles. Carry it through square battle grid, bright unlit-screen palette, outlined unit sprites, movement-range squares, terrain tiles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -297,7 +297,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'hold-and-modify color fringing; per-scanline gradient bars; painterly pixels; digitized shading; wide horizons',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies HAM Copper-Gradient Paint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Late-80s paint-program pixel art: thousands of colors through hold-and-modify mode, with sky gradients made from per-scanline palette changes. Carry it through hold-and-modify color fringing, per-scanline gradient bars, painterly pixels, digitized shading, wide horizons. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -325,7 +325,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'waist-up cel sprite; blurred painted backdrop; empty translucent text box; rim light; static frontal screen',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Visual Novel Screen as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Visual novel screen: a waist-up cel-shaded character sprite standing over a softly blurred painted background, with an empty translucent dialogue box. Carry it through waist-up cel sprite, blurred painted backdrop, empty translucent text box, rim light, static frontal screen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -355,7 +355,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'huge hand-pixeled sprites; dense clusters; rivets and debris; pixel smoke; selective outlines',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dense Arcade Mega-Sprite as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Late arcade pixel art: very large hand-pixeled sprites with dense painterly clusters, dozens of palettes and exhaustive mechanical detail. Carry it through huge hand-pixeled sprites, dense clusters, rivets and debris, pixel smoke, selective outlines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -385,7 +385,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         '128x112 four-grey photo; Bayer dither; edge-enhancement halos; thermal paper dot rows; faded print',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pocket Camera Thermal Dot Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Toy pocket-camera photo at 128 by 112 pixels in four greys, edge-enhanced and printed on a narrow strip of thermal paper. Carry it through 128x112 four-grey photo, Bayer dither, edge-enhancement halos, thermal paper dot rows, faded print. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -415,7 +415,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'round compact sprites; thick near-black outlines; candy-bright palette; two-step shading; pastel backgrounds',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Candy-Bright Compact Sprite as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Compact 16-bit pixel art: small round-bodied sprites with thick near-black outlines on large flat pastel backgrounds. Carry it through round compact sprites, thick near-black outlines, candy-bright palette, two-step shading, pastel backgrounds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -443,7 +443,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         '80x25 character grid; box-drawing walls; shade-block terrain; 16 ANSI colors; lit radius',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Text-Mode Roguelike ANSI as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Text-mode roguelike map: a world drawn in an 80 by 25 character grid using box-drawing lines, shade blocks, dots and symbols in 16 ANSI colors. Carry it through 80x25 character grid, box-drawing walls, shade-block terrain, 16 ANSI colors, lit radius. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -473,7 +473,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'jaggy black stylus lines; one red or blue accent; onion-skin ghost frame; stamp-pattern fills; 256x192 page',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stylus Memo Flipbook Doodle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Handheld stylus memo animation: jaggy black pen lines at 256 by 192 on a white memo page, with a faint onion-skin of the previous frame. Carry it through jaggy black stylus lines, one red or blue accent, onion-skin ghost frame, stamp-pattern fills, 256x192 page. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -501,7 +501,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'ray-traced model shrunk to sprite; Phong highlights; ordered dither; jagged matte halo; small palette',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies FMV Pre-Rendered Sprites as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pre-rendered sprite: the subject modeled and ray-traced on a 90s workstation, then shrunk and color-reduced into a low-resolution game sprite. Carry it through ray-traced model shrunk to sprite, Phong highlights, ordered dither, jagged matte halo, small palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -529,7 +529,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'coarse voxel model; flat color per cube; corner occlusion; orthographic three-quarter view; plain ground tile',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Voxel Block Sprites as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Voxel sprite model: the subject built as a small toy-like model of flat-colored cubes, like a pixel sprite pushed into three dimensions. Carry it through coarse voxel model, flat color per cube, corner occlusion, orthographic three-quarter view, plain ground tile. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -559,7 +559,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'white beam lines; translucent color overlay bands; hot line ends; curved-glass reflection; black screen',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies White Beam Vector with Color Overlay as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Monochrome vector display: bright white beam lines on black, tinted in zones by a translucent printed color overlay sheet laid over the screen. Carry it through white beam lines, translucent color overlay bands, hot line ends, curved-glass reflection, black screen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -587,7 +587,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'glowing beam lines; transparent wireframe; vertex hot spots; phosphor bloom; black void',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vector Arcade Wireframe as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Color vector CRT: the subject drawn only as glowing beam lines on pure black, with no pixels and no filled surfaces. Carry it through glowing beam lines, transparent wireframe, vertex hot spots, phosphor bloom, black void. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

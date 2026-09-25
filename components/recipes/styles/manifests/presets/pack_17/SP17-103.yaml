@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Tall vertical composition that uses the full gradient height, with a strong silhouette crossing several color bands.
   atmosphere_and_mood: Dreamy, melancholic, warm, and cinematic.
   rendering_and_quality: Clean riso reproduction with a true printed blend rather than a digital gradient, sharp indigo drawing, and no muddy overlaps.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Split Fountain Dusk Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Split-fountain risograph where one drum carries a smooth ink blend from magenta to orange to yellow, printed under a deep indigo line and shadow layer. Carry it through split fountain magenta-orange-yellow blend, indigo drawing layer, vertical color bands, printed not digital gradient. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: split fountain magenta-orange-yellow blend; indigo drawing layer; vertical color bands; printed not digital gradient
 avoidRules:
   - digital airbrush gradient

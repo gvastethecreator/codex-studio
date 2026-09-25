@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested subject and setting; handheld 4:3-feeling framing, slight tilt, subject caught mid-movement.
   atmosphere_and_mood: Tender and far away, flickering joy caught between two blurred frames.
   rendering_and_quality: Projected home-movie look without sprocket holes, gate edges, frame counters or scratches drawn as overlay.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Super 8 Home-Movie Film as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Super 8 home movie: a single frame pulled from a tiny-gauge reversal film shot at 18 frames per second on a handheld family camera. Carry it through coarse home-movie grain, 18 fps motion smear, warm reversal color, exposure flicker, handheld softness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: coarse home-movie grain; 18 fps motion smear; warm reversal color; exposure flicker; handheld softness
 avoidRules:
   - illustration

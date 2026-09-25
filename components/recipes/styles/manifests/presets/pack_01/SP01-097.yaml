@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; handheld 35 mm closeness.
   atmosphere_and_mood: Raw and urgent, grit and blackness crowding every scrap of light.
   rendering_and_quality: 'Push-processed darkroom print: high contrast and grit, not a clean box-speed tonal scale.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kodak Tri-X Pushed as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Kodak Tri-X pushed to 1600–3200: black-and-white film underexposed in low light and overdeveloped, giving hard contrast and gritty, clumped grain. Carry it through push-processed grit, clumped coarse grain, blocked black shadows, chalky highlights, low available light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: push-processed grit; clumped coarse grain; blocked black shadows; chalky highlights; low available light
 avoidRules:
   - illustration

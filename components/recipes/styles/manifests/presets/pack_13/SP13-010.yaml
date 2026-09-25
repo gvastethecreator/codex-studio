@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Adventurous, cozy, curious and bright, driven by the construction, color and rhythm.
   rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
   key_features: caravan; lush painted backgrounds; clean cel; odd beasts
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Isekai Forest Caravan as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Isekai caravan anime: bright fantasy-adventure frames of travelers, carts, odd beasts and lush landscapes. Carry it through caravan, lush painted backgrounds, clean cel, odd beasts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo

@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'soft side window with bounce; 45-degree or overhead angle; steam and glaze highlights; linen and stoneware props; shallow focus',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Food Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bright food photography: food styled for appetite and lit from one soft window side, shot at 45 degrees or straight down, as in a cookbook. Carry it through soft side window with bounce, 45-degree or overhead angle, steam and glaze highlights, linen and stoneware props, shallow focus. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -56,7 +56,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'grey sweep isolation; overhead softbox and strip-light edges; soft contact shadow; three-quarter angle; truthful finish',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Product Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Studio product photography: one object isolated on a light grey sweep, lit with large softboxes to show its form, material and edges precisely. Carry it through grey sweep isolation, overhead softbox and strip-light edges, soft contact shadow, three-quarter angle, truthful finish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -84,7 +84,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'corrected verticals; hard sun on concrete planes; glass reflections; symmetrical geometry; tiny human scale',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Architecture (Modern) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Modern architectural photography: buildings of concrete, glass and steel photographed with corrected verticals and hard sun sculpting planes. Carry it through corrected verticals, hard sun on concrete planes, glass reflections, symmetrical geometry, tiny human scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -111,7 +111,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'styled editorial room; window plus lamp balance; tactile materials; straight verticals; foreground depth object',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Interior Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Interior design editorial: a room styled and photographed for a design magazine, balanced window and lamp light, every material chosen and placed. Carry it through styled editorial room, window plus lamp balance, tactile materials, straight verticals, foreground depth object. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -139,7 +139,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'bright blue-white high key; group around one object; broad smiles; glass office blur; sanitized sameness',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Corporate Stock Photo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Corporate stock photography: bright, safe, generic imagery with smiling people collaborating in clean spaces — the look, deliberately, of the stock library. Carry it through bright blue-white high key, group around one object, broad smiles, glass office blur, sanitized sameness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -168,7 +168,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'ultra-wide corner view; shadowless HDR blend; bright windows with blue sky; saturated even color; over-sharpened',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Real Estate (HDR) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Real estate HDR listing photography: an ultra-wide room shot with bracketed exposures blended until every corner and the view outside are equally bright. Carry it through ultra-wide corner view, shadowless HDR blend, bright windows with blue sky, saturated even color, over-sharpened. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -195,7 +195,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'strip reflections along bodywork; low three-quarter angle; rolling shot with blurred wheels; mirror paint; rim-lit silhouette',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Automotive Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Automotive advertising photography: a vehicle sculpted by long strip reflections along its bodywork, or shown in a rolling shot with blurred wheels and background. Carry it through strip reflections along bodywork, low three-quarter angle, rolling shot with blurred wheels, mirror paint, rim-lit silhouette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -221,7 +221,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'exact 90-degree overhead; measured spacing; coordinated palette; soft consistent shadows; negative space',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Flat Lay as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Flat lay: objects arranged on a surface and photographed straight down at exactly 90 degrees with measured spacing. Carry it through exact 90-degree overhead, measured spacing, coordinated palette, soft consistent shadows, negative space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -247,7 +247,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'infinity cove background; shadowless softbox sweep; faint contact shadow; centered object; corrected perspective',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Seamless Packshot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Seamless catalog packshot: the object alone on a pure white or light grey infinity cove, lit for truth rather than drama. Carry it through infinity cove background, shadowless softbox sweep, faint contact shadow, centered object, corrected perspective. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -275,7 +275,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'black ground; razor strip-light edge lines; macro facet focus; jewel fire; controlled sparkle',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Luxury Macro Gleam as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Luxury macro gleam: extreme close-up jewelry-campaign photography where razor strip lights draw bright lines along polished edges against black. Carry it through black ground, razor strip-light edge lines, macro facet focus, jewel fire, controlled sparkle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -302,7 +302,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'ribbon gloss highlights; product swirls and drops; pearl and blush palette; creamy gradients; soft reflection',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cosmetic Gloss Still Life as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cosmetic gloss still life: beauty-product advertising built on liquid highlights, creamy textures and translucent color. Carry it through ribbon gloss highlights, product swirls and drops, pearl and blush palette, creamy gradients, soft reflection. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -328,7 +328,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'dark graphite sweep; precise rim-light outline; machined surfaces; long-lens compression; deep negative space',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tech Hardware Hero as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tech hardware hero: a launch-keynote product image with a dark graphite sweep and precise rim lights tracing the object's outline. Carry it through dark graphite sweep, precise rim-light outline, machined surfaces, long-lens compression, deep negative space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -355,7 +355,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'condensation beads; frost bloom; backlit cold glow; rim-lit droplets; heroic low angle',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cold Condensation Commercial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cold condensation commercial: refreshment advertising where frost, beads of water and backlit cold haze make a vessel look ice-cold. Carry it through condensation beads, frost bloom, backlit cold glow, rim-lit droplets, heroic low angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -381,7 +381,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'pure white background; even light box; small soft contact shadow; object fills frame; straight listing view',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies E-Commerce White Sweep as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "E-commerce white sweep: a marketplace listing photo with the object on pure white, evenly lit, readable from edge to edge. Carry it through pure white background, even light box, small soft contact shadow, object fills frame, straight listing view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -410,7 +410,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Low-key exposure with clean blacks and detailed highlights; not a bright cookbook look.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dark Chiaroscuro Food as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dark chiaroscuro food photography: food on dark wood and pewter lit by one small window, falling off into deep shadow like an old-master still life. Carry it through single side window, black falloff, pewter and dark oak, old-master still-life mood, jewel accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'single side window; black falloff; pewter and dark oak; old-master still-life mood; jewel accents',
     },
@@ -442,7 +442,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Inviting and serene, warmth glowing inside against the cooling dusk.',
       rendering_and_quality: 'Clean long exposure with no noise; not an HDR listing look.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Architectural Twilight Exterior as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Twilight architectural exterior: a building photographed at blue hour with every window lit, balancing warm interiors against a deep blue sky. Carry it through blue-hour sky, every window lit amber, tripod long exposure, corrected verticals, smooth water reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'blue-hour sky; every window lit amber; tripod long exposure; corrected verticals; smooth water reflections',
     },
@@ -476,7 +476,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Quiet and luminous, light itself becoming the ornament.',
       rendering_and_quality: 'Real photographic caustics; not a CGI material render.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hard-Light Glass Still Life as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hard-light glass still life: a small hard spotlight shining through glass or liquid so the object throws bright caustic patterns and colored shadows onto a pale surface. Carry it through hard spot through glass, caustic light pool, colored cast shadow, pale ground, low angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'hard spot through glass; caustic light pool; colored cast shadow; pale ground; low angle',
     },
@@ -510,7 +510,7 @@ export const GENERATED_STYLE_PRESETS = [
         "Authentic and tactile, the object already part of someone's ordinary day.",
       rendering_and_quality: 'Natural lifestyle realism; product sharp, no studio sweep.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lifestyle In-Hand Product as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Lifestyle in-hand product photography: the object shown in use, held by adult hands in a real environment under natural light. Carry it through adult hands using the product, real environment, soft daylight, shallow background, tactile contact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'adult hands using the product; real environment; soft daylight; shallow background; tactile contact',
     },
@@ -545,7 +545,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Playful and graphic, a small object turned into a bold sculpture by color and shadow.',
       rendering_and_quality: 'Clean set photography; not CGI, no gradient backdrops.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Color-Block Set Still Life as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Color-block set still life: an object placed on a built set of flat colored paper planes and blocks, lit with hard light for crisp graphic shadows. Carry it through flat colored paper planes, hard steep light, long clean shadows, geometric plinths, bold contrast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'flat colored paper planes; hard steep light; long clean shadows; geometric plinths; bold contrast',
     },
@@ -578,7 +578,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Clean and informative, the garment seen exactly as it would be worn.',
       rendering_and_quality: 'Seamless composite look with no mannequin, hanger or body visible.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ghost Mannequin Apparel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ghost mannequin apparel photography: a garment shown as if worn by an invisible body, keeping its three-dimensional shape with the interior of the collar visible. Carry it through invisible body volume, hollow collar interior, straight-on symmetry, even soft light, neutral background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'invisible body volume; hollow collar interior; straight-on symmetry; even soft light; neutral background',
     },

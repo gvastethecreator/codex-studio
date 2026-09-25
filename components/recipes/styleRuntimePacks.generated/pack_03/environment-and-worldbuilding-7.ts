@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'emissive sign panels as key lights; stacked haze layers; stretched neon reflections; no sun; glyph shapes without letters',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon City (Cyberpunk) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Neon megacity environment render: towering stacked blocks lit by hundreds of emissive sign panels, sky bridges and haze layers receding into a lit night fog. Carry it through emissive sign panels as key lights, stacked haze layers, stretched neon reflections, no sun, glyph shapes without letters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -56,7 +56,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'plants as the only light; cyan glow veins; spore halos; translucent fungal caps; ground mist pockets',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bioluminescent Forest as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bioluminescent forest environment render: a night forest lit only by its own glowing fungi, moss veins and drifting spores, with emissive networks tracing roots and branches. Carry it through plants as the only light, cyan glow veins, spore halos, translucent fungal caps, ground mist pockets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -84,7 +84,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'standing eye height; wide field of view; baked lightmaps; props within arm reach; no depth of field',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Virtual Reality Environment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Room-scale VR environment render: the scene built as an optimized real-time level seen from standing eye height, with baked lighting and everything sharp for stereo viewing. Carry it through standing eye height, wide field of view, baked lightmaps, props within arm reach, no depth of field. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -112,7 +112,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'streamline tubes; translucent isosurfaces; cone arrow glyphs; single perceptual colormap; grey matte context geometry',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scientific Visualization as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Scientific simulation visualization: the scene shown as grey context geometry with a measured field drawn over it as streamlines, isosurfaces and arrow glyphs. Carry it through streamline tubes, translucent isosurfaces, cone arrow glyphs, single perceptual colormap, grey matte context geometry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -141,7 +141,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'three depth planes; landmark with brightest value; guiding path; atmospheric blue falloff; storytelling set dressing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Environment Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Environment concept render: the location staged as a designed game or film space with foreground, middle and background planes, a landmark and a readable path through it. Carry it through three depth planes, landmark with brightest value, guiding path, atmospheric blue falloff, storytelling set dressing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -169,7 +169,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'tabletop terrain block; stepped contour terraces; hypsometric tints; low sun relief shadows; cut strata edges',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 3D Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Isometric 3D relief map: the location sculpted as a tabletop terrain block with stepped contour terraces, a flat water plane and miniature landmarks. Carry it through tabletop terrain block, stepped contour terraces, hypsometric tints, low sun relief shadows, cut strata edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -197,7 +197,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'sweeping glossy ribbons; two-hue gradients; long area-light highlights; diagonal depth layers; calm subject space',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Abstract Background as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Procedural abstract environment: sweeping glossy ribbons, extruded curves and soft volumes arranged in deep space, with no recognizable objects of their own. Carry it through sweeping glossy ribbons, two-hue gradients, long area-light highlights, diagonal depth layers, calm subject space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -225,7 +225,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'photo-projected texture; stretched texels in occlusion; ragged mesh border; blobby thin parts; baked capture light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 3D Scan (Photogrammetry) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Photogrammetry scan render: the scene rebuilt from hundreds of photographs as a dense triangulated mesh with photo-projected texture and the flaws of a real capture. Carry it through photo-projected texture, stretched texels in occlusion, ragged mesh border, blobby thin parts, baked capture light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -253,7 +253,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'pyroclastic billows; blackbody color ramp; self-lit smoke; advected embers; clear rise direction',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies VFX Simulation (Fire/Smoke) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pyro volume simulation: fire and smoke rendered as a physically simulated volume, with rolling pyroclastic billows, turbulent vortices and incandescent cores. Carry it through pyroclastic billows, blackbody color ramp, self-lit smoke, advected embers, clear rise direction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -286,7 +286,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Dense displaced terrain with mask-driven materials and light haze; no tiling rock texture repeats.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hydraulic Erosion Heightfield as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Procedural terrain render: land built from a heightfield run through hydraulic and thermal erosion, with branching gullies, talus slopes and sediment fans. Carry it through dendritic erosion gullies, sediment fans, slope-masked colors, raking relief light, strata ridges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'dendritic erosion gullies; sediment fans; slope-masked colors; raking relief light; strata ridges',
     },
@@ -321,7 +321,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Game-engine level art with baked GI, light dust in torch beams and visible but tasteful module repetition.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Modular Dungeon Kit Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Modular dungeon environment render: corridors and halls assembled from repeating stone wall, arch, pillar and floor kit pieces on a snap grid. Carry it through snap-grid stone kit pieces, repeating arches, torch pools with hard falloff, trim-sheet bevels, moss in seams. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'snap-grid stone kit pieces; repeating arches; torch pools with hard falloff; trim-sheet bevels; moss in seams',
     },
@@ -356,7 +356,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Simulation-accurate chunk sizes grading from large to small, with slight motion blur on the fastest pieces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rigid-Body Destruction Simulation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Rigid-body destruction simulation: the named structure fracturing into Voronoi chunks mid-collapse, with debris arcs, dust bursts and secondary splinters frozen in one frame. Carry it through Voronoi fracture chunks, fresh interior fracture faces, debris arc, dust volume bursts, large-to-small chunk grading. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'Voronoi fracture chunks; fresh interior fracture faces; debris arc; dust volume bursts; large-to-small chunk grading',
     },
@@ -391,7 +391,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Physically based water with correct fresnel reflection, crest translucency and particle spray; no glassy flat water.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Simulated Open Ocean Swell as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Simulated open ocean render: a spectral wave surface with long swells, choppy secondary waves, whitecap foam masks and wind-blown spray. Carry it through long swells with choppy detail, wind-aligned foam streaks, translucent turquoise crests, spray mist, fresnel reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'long swells with choppy detail; wind-aligned foam streaks; translucent turquoise crests; spray mist; fresnel reflections',
     },
@@ -426,7 +426,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Volumetric cloud sea with aerial perspective between islands; clear scale cues from bridges and trees.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Floating Sky Island Archipelago as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sky island environment render: inverted-cone rock islands hanging above a cloud sea, root-bound undersides, waterfalls pouring off their edges into mist. Carry it through inverted rock islands, dangling roots, waterfalls falling into mist, cloud sea below, stacked depth scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'inverted rock islands; dangling roots; waterfalls falling into mist; cloud sea below; stacked depth scale',
     },
@@ -461,7 +461,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Dense instanced vegetation with individual leaves resolved; no flat green texture paint-over.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Instanced Foliage Overgrowth as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Instanced foliage overgrowth: moss, ivy, grass and saplings scattered across the scene by slope, occlusion and age masks, as if decades of growth had been simulated. Carry it through mask-driven scatter by slope and occlusion, ivy along edges, moss on upward faces, leaf instances, roots lifting joints. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'mask-driven scatter by slope and occlusion; ivy along edges; moss on upward faces; leaf instances; roots lifting joints',
     },
@@ -496,7 +496,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Path-traced refraction and caustics with light volumetric dust; crystals refract light, never self-glow.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Geode Cavern Environment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Geode cavern environment render: a huge underground chamber lined with giant faceted crystal columns, lit by a few small sources and their refracted light. Carry it through giant faceted crystal columns, refracted caustic flecks, small warm sources only, still reflecting water, huge scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'giant faceted crystal columns; refracted caustic flecks; small warm sources only; still reflecting water; huge scale',
     },
@@ -531,7 +531,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Layered particle volume with depth-based density and motion blur; no painted snow overlay.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Particle Blizzard Simulation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Particle blizzard simulation: millions of wind-driven snow particles streaming across the scene in layered sheets, with gust eddies and drifts building against obstacles. Carry it through wind-driven particle sheets, motion-blurred near streaks, drifts on windward faces, haloed point lights, steep visibility falloff. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'wind-driven particle sheets; motion-blurred near streaks; drifts on windward faces; haloed point lights; steep visibility falloff',
     },
@@ -566,7 +566,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Physically based atmospheric scattering with haze layers and crisp near-field regolith detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Exoplanet Surface Environment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Exoplanet surface environment render: alien terrain under a strange sky, a giant ringed planet or twin suns hanging above, thin atmosphere scattering odd colors. Carry it through giant sky planet or twin suns, double colored shadows, non-Earth palette, regolith dust, atmospheric haze layers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'giant sky planet or twin suns; double colored shadows; non-Earth palette; regolith dust; atmospheric haze layers',
     },
@@ -597,7 +597,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Editor-viewport render with crisp edges, no fog, no post effects and no textures besides the grid.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Level Blockout Greybox as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Level blockout greybox: the location rebuilt from untextured boxes, ramps and cylinders with prototype grid materials, the stage before any art pass. Carry it through grey primitive volumes, orange prototype grid floors, one-meter measure tiles, default directional light, no detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'grey primitive volumes; orange prototype grid floors; one-meter measure tiles; default directional light; no detail',
     },
@@ -632,7 +632,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Low specular, no photographic texture and no physically based sheen; strokes stay readable at distance.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hand-Painted Texture Environment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hand-painted texture environment: chunky stylized 3D geometry wrapped in painted diffuse textures where light, shadow and wear are painted into the color itself. Carry it through painted diffuse textures, brush strokes in stone and wood, painted edge highlights, chunky leaning silhouettes, low specular. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'painted diffuse textures; brush strokes in stone and wood; painted edge highlights; chunky leaning silhouettes; low specular',
     },

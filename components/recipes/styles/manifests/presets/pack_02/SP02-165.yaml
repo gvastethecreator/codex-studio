@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Screen seen straight on, the drawing as one continuous connected line.
   atmosphere_and_mood: Patient and nostalgic, a toy mastered with stubborn care.
   rendering_and_quality: Real single-line knob drawing; no brand name on the frame.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Continuous-Line Toy Screen Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Continuous-line toy screen drawing: a picture drawn with two knobs on a silver-grey toy screen, one unbroken dark line of stair-stepped diagonals. Carry it through one continuous line, stair-stepped diagonals, silver-grey screen, red toy frame, zig-zag fills. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: one continuous line; stair-stepped diagonals; silver-grey screen; red toy frame; zig-zag fills
 avoidRules:
   - photorealistic rendering

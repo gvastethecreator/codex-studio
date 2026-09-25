@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; forms made from broad brushed gestures.
   atmosphere_and_mood: Heavy, dramatic and physical, darkness you can feel.
   rendering_and_quality: Brushy granular tone with deep embossed velvet darks; no fine line, no smooth wash.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carborundum Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Carborundum print: silicon carbide grit mixed with glue and brushed onto a plate like paint, so the grit holds ink and prints deep, velvety, brushy darks. Carry it through brushed grit plate, deep velvet embossed darks, brush marks in granular tone, soft furry edges, bold painterly masses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: brushed grit plate; deep velvet embossed darks; brush marks in granular tone; soft furry edges; bold painterly masses
 avoidRules:
   - photo

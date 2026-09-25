@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Rewarding and aspirational, progress readable at a glance.
   rendering_and_quality: Game-asset paint finish with a consistent proportion baseline, so each upgrade reads as evolution.
   key_features: four or five tiers; crude to masterwork progression; tier-coded materials; shared baseline; one glowing final accent
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Weapon Tier Progression as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Upgrade progression sheet: the same weapon or item shown in four or five tiers side by side, growing from crude utility to ornate masterwork. Carry it through four or five tiers, crude to masterwork progression, tier-coded materials, shared baseline, one glowing final accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable annotations
   - readable text

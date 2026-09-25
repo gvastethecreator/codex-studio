@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Crude and cheeky, homemade simplicity with comic timing.
   rendering_and_quality: Tactile paper-cutout finish; original figure designs, not any existing show's characters.
   key_features: flat construction-paper pieces; scissor edges; small drop shadows; frontal staging; paper fibers
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Construction Paper Cutout Cartoon as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Construction-paper cutout cartoon: flat pieces of colored paper cut with scissors and moved frame by frame, casting small drop shadows. Carry it through flat construction-paper pieces, scissor edges, small drop shadows, frontal staging, paper fibers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - exact studio character copy
   - franchise likeness

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Languid, sunlit and luxurious, time slowed at the water edge.
   rendering_and_quality: Clean photograph with glassy water, crisp leaf shadows, no brand resort staging or pool party.
   key_features: vanishing-edge pool meeting the horizon; warm honed stone coping; teak decking; tropical leaf shadows; turquoise water
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Water-Horizon Hospitality as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Water-horizon hospitality landscape: warm stone terraces and pools whose edges vanish into a view, with tropical planting framing still turquoise water. Carry it through vanishing-edge pool meeting the horizon, warm honed stone coping, teak decking, tropical leaf shadows, turquoise water. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - golden-hour garden postcard formula
   - corten steel edging as default

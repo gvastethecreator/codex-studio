@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Epic and game-like, a moment made for a trailer.
   rendering_and_quality: Real-time game look with post effects; no HUD, no trams or city clichés.
   key_features: heavy bloom and lens flares; screen-space reflections; particle effects; PBR materials; graded filmic tonemap
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Unity HDRP High-End Game Pipeline as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "High-end game pipeline render: a real-time engine frame with heavy post-processing — bloom, lens flares, color grading and screen-space effects. Carry it through heavy bloom and lens flares, screen-space reflections, particle effects, PBR materials, graded filmic tonemap. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - 2d illustration
   - hand-drawn

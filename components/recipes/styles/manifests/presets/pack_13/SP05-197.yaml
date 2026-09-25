@@ -32,10 +32,7 @@ visualDna:
   key_features: >-
     Bold mineral ink, vermilion-pine palette, restrained paper grain, symbols only when
     prompted
-  creative_brief: >-
-    Apply a visual treatment centered on bold mineral ink, vermilion-pine palette,
-    restrained paper grain, symbols only when prompted. Preserve the exact subject, action,
-    count, age, costume, setting, camera, and mood. Add nothing outside the prompt.
+  creative_brief: "Apply a visual treatment centered on bold mineral ink, vermilion-pine palette, restrained paper grain, symbols only when prompted. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

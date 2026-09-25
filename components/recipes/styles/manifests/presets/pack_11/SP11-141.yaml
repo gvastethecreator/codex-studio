@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Side profile filling the sheet, laid out as a real sheet of this drawing type.
   atmosphere_and_mood: Maritime, intricate, elegant and patient, from careful, purposeful drafting.
   rendering_and_quality: Precise technical drafting with consistent line weights and believable conventions.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ship Rigging Diagram as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Rigging diagram: a sailing ship profile with every mast, yard, stay and line drawn as a fine web. Carry it through masts, yards, stays, running rigging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: masts; yards; stays; running rigging
 avoidRules:
   - readable text

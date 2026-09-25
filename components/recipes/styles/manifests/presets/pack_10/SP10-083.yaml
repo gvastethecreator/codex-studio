@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Large simple shapes filling the frame, arranged so the subject still reads at card size.
   atmosphere_and_mood: Bold, calm, confident and modern, driven by the construction, color and rhythm.
   rendering_and_quality: Clean flat finish, with clean, deliberate marks and no accidental noise.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hard-Edge Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hard-edge painting: large flat color areas meeting at razor-sharp edges. Carry it through razor-sharp edges, flat color areas, bold simplicity. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: razor-sharp edges; flat color areas; bold simplicity
 avoidRules:
   - readable text

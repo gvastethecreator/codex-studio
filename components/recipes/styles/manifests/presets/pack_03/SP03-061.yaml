@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Tactical and exact, every plate designed to move, fasten or protect.
   rendering_and_quality: Bevel highlights consistent in width, with no pinching or smoothing artifacts on the flat faces.
   key_features: chamfered bevel highlight lines; boolean-cut ports; panel seams and recessed bolts; two-tone paint; stacked plates
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hard Surface Modeling as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hard-surface modeling: the subject rebuilt as engineered panels with chamfered edges, boolean cuts and support-looped bevels that each catch a thin line of light. Carry it through chamfered bevel highlight lines, boolean-cut ports, panel seams and recessed bolts, two-tone paint, stacked plates. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - multi-view asset sheet
   - fake labels

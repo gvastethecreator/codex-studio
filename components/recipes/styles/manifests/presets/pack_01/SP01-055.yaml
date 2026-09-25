@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Silent and weightless, slow drifting calm in blue space.
   rendering_and_quality: Real underwater optics with distance haze; no dry studio light.
   key_features: sun rays from the surface; caustic ripples; blue distance falloff; weightless subject; dome wide angle
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Underwater as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Underwater photography: a wide-angle lens in a dome housing in clear water, with sun rays, caustics and blue-green depth shaping everything. Carry it through sun rays from the surface, caustic ripples, blue distance falloff, weightless subject, dome wide angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - zoo snapshot
   - oversaturated postcard

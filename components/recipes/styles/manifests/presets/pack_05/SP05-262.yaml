@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: 'Doubt and scrutiny: calm on the surface, with watchful unease living in the hesitant lines.'
   rendering_and_quality: Realistic proportions, restrained anime simplification of faces, crisp focal edges and softer peripheral hatching; drawn, never photographic.
   key_features: unsteady observational ink contours; short plane-following hatches; slate, tobacco and paper palette; slight focal misregistration; realistic proportions
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Moral Suspicion Realism Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Grounded seinen realism in slightly unsteady hand-inked contours and short observational hatching, like a court sketch artist's anime; edges misregister a hair around the focal face or object. Carry it through unsteady observational ink contours, short plane-following hatches, slate, tobacco and paper palette, slight focal misregistration. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

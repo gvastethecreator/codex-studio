@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Relaxed open composition with plenty of air, one clear subject, and a few secondary shapes.
   atmosphere_and_mood: Nostalgic, sleepy, sunny, and wistful.
   rendering_and_quality: 'Clean reproduction of an aged print: faded but not dirty, readable shapes, no grime or digital haze.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sun Faded Newsprint Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Old risograph zine found on a windowsill: sun-bleached aqua and butter yellow inks, soft low contrast, yellowed newsprint, and gentle fading toward the exposed edge. Carry it through sun-bleached aqua and butter yellow, low contrast, yellowed newsprint, gentle edge fade, relaxed halftone. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: sun-bleached aqua and butter yellow; low contrast; yellowed newsprint; gentle edge fade; relaxed halftone
 avoidRules:
   - deep black

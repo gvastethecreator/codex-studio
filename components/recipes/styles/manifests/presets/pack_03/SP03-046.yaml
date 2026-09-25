@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Functional and proud, a finished piece ready to drop into a level.
   rendering_and_quality: Real-time shading look with sharp texel-level detail, no path-traced caustics, no motion blur and no scene clutter.
   key_features: polygon-budget silhouette; baked normal-map bevels; metal-roughness PBR; trim-sheet strips; neutral viewer lighting
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Game Asset (PBR) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Real-time game asset presentation: a single prop built to a polygon budget, its fine detail baked into normal maps and textured with metal-roughness PBR maps. Carry it through polygon-budget silhouette, baked normal-map bevels, metal-roughness PBR, trim-sheet strips, neutral viewer lighting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - multi-view asset sheet
   - fake labels

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Confident and collectible, a character assembled from swappable traits.
   rendering_and_quality: Clean toy-like render with no background detail, no rarity text, no numbers and no brand marks.
   key_features: centered chest-up bust; flat color field; swappable trait accessories; glossy vinyl and gold; bright rim light
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies NFT Collectible Avatar Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Collectible avatar render: a stylized bust centered on a flat color field, built from a few chunky trait pieces such as headwear, eyewear, clothing and one accessory in glossy toy materials. Carry it through centered chest-up bust, flat color field, swappable trait accessories, glossy vinyl and gold, bright rim light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - forced T-pose
   - object turned into an avatar

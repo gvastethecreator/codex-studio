@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Half or three-quarter figure, centered with painterly balance, slight low angle.
   atmosphere_and_mood: Timeless, noble, and quietly theatrical.
   rendering_and_quality: Large-format photographic depth and tonality, rich midtones, no digital effects.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Painted Muslin Backdrop Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Fine-art studio portrait in front of a hand-painted muslin backdrop, with directional window-like light that echoes old-master painting while staying fully photographic. Carry it through hand-painted mottled muslin, glowing backdrop patch, Rembrandt-leaning soft key, painterly pose, rich midtones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: hand-painted mottled muslin; glowing backdrop patch; Rembrandt-leaning soft key; painterly pose; rich midtones
 avoidRules:
   - generic stock-photo face

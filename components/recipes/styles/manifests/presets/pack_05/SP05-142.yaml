@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Weathered tension and dry resolve in the heat.
   rendering_and_quality: Gritty edge texture, grounded values and an uncluttered focal path.
   key_features: sweat-sheen highlights; humid haze; pressure-heavy contour; rust and faded teal; harsh overhead sun
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Humid Tropic Grit Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Tropical crime anime: weighty pressure-heavy contours, sweat-sheened skin, harsh sun, dense humid haze and scuffed ink on sun-bleached surfaces. Carry it through sweat-sheen highlights, humid haze, pressure-heavy contour, rust and faded teal, harsh overhead sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

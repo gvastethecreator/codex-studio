@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Bleak urgency and helpless awe, tiny figures dwarfed by something far too large.
   rendering_and_quality: Crosshatched shadows and clear silhouettes, dread through scale rather than gore.
   key_features: coarse dense crosshatching; extreme scale contrast; hatched dust plumes; olive and stone palette; grimacing faces
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crosshatched Giant-Scale Panic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Horror-scale action translated to color anime: coarse dense crosshatching, grimacing faces, and enormous forms looming over tiny figures, with dust and steam drawn as layered hatch masses. Carry it through coarse dense crosshatching, extreme scale contrast, hatched dust plumes, olive and stone palette, grimacing faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

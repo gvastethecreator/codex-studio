@@ -32,10 +32,7 @@ visualDna:
     Hard contour, selective accents, stable details, no visual spectacle.
   key_features: >-
     Sharp silhouette, ink-violet values, selective glints, radiance only when requested
-  creative_brief: >-
-    Apply a visual treatment centered on sharp silhouette, ink-violet values, selective
-    glints, radiance only when requested. Preserve the exact subject, action, count, age,
-    costume, setting, camera, and mood. Add nothing outside the prompt.
+  creative_brief: "Apply a visual treatment centered on sharp silhouette, ink-violet values, selective glints, radiance only when requested. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

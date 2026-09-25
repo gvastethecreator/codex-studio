@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Dazzling, timeless and slightly suffocating, a trap for attention.
   rendering_and_quality: Saturated interior photograph with crisp reflections and glints, no readable signs or screens.
   key_features: windowless low mirrored ceiling; busy patterned carpet; hundreds of pot lights; red gold and neon; endless reflections
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Casino Sensory Grid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Casino sensory grid: a windowless, clockless interior designed to hold attention, with low mirrored and gilded ceilings, busy patterned carpet, chandeliers and endless reflections. Carry it through windowless low mirrored ceiling, busy patterned carpet, hundreds of pot lights, red gold and neon, endless reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - one-point corridor perspective as default
   - wet mirror-gloss floor as default

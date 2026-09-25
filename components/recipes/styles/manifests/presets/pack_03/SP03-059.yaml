@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Futuristic and weightless, couture freed from the sewing room.
   rendering_and_quality: Physically plausible cloth with correct collision against the body, with no stiff shells or intersecting geometry.
   key_features: cloth simulation drape; impossible fabrics; fluttering hems; specular sheen on folds; correct body collision
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Digital Fashion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Digital fashion: garments that exist only as cloth simulation, impossible fabrics draping, floating and folding with real weight on a body or on nothing at all. Carry it through cloth simulation drape, impossible fabrics, fluttering hems, specular sheen on folds, correct body collision. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - forced T-pose
   - object turned into an avatar

@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Cinematic, earnest and epic in the old analog way.
   rendering_and_quality: Crisp ink contour, broad controlled shading, restrained grain and the slight softness of cels shot on film.
   key_features: airbrushed highlight bands; hand-painted cel blocks; gouache background boards; film grain and cel dust; long-limbed period anatomy
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Classic OVA Quest Tapestry Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Late-1980s to early-1990s OVA hand-painted cel: confident color blocks, airbrushed highlights on hair and armor, glossy eye highlights and painted background boards. Carry it through airbrushed highlight bands, hand-painted cel blocks, gouache background boards, film grain and cel dust, long-limbed period anatomy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway

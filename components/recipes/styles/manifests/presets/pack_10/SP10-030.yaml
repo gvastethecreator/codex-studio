@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Retro, crisp, lo-fi and graphic, coming from the medium itself.
   rendering_and_quality: Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.
   key_features: 1-bit pixels; dither patterns
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dithering (1-bit) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "1-bit dithering: pure black and white pixels arranged in ordered or error-diffusion dither patterns. Carry it through 1-bit pixels, dither patterns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

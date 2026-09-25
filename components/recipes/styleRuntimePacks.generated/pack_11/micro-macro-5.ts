@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'greyscale SEM; edge glow; deep focus; microstructure',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Electron Microscope as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Scanning electron micrograph: grey, razor-sharp microscopic landscape with deep focus and edge glow. Carry it through greyscale SEM, edge glow, deep focus, microstructure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -55,7 +55,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'hexagonal ommatidia; curved dome; iridescent facets',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Insect Eye as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Insect compound eye macro: a curved dome of hexagonal ommatidia, iridescent and glassy. Carry it through hexagonal ommatidia, curved dome, iridescent facets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -82,7 +82,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'membranes; nuclei; histology stain; microscope field',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cellular Life as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cellular life: stained microscope-slide cells with membranes, nuclei and organelles in vivid histology color. Carry it through membranes, nuclei, histology stain, microscope field. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -110,7 +110,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'six-fold symmetry; dendrites; ice sparkle; dark wool',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Snowflake as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Snowflake macro: a single six-sided ice crystal with fractal dendrites on dark wool. Carry it through six-fold symmetry, dendrites, ice sparkle, dark wool. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -137,7 +137,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'die patterns; copper traces; solder; city scale',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Circuit Board as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Circuit macro: chip die and circuit board seen close like a glittering city of traces and components. Carry it through die patterns, copper traces, solder, city scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -164,7 +164,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'droplet lens; inverted world; meniscus; sparkle',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Water Drop Reflection as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Water drop macro: a clear droplet acting as a lens, holding an upside-down miniature world. Carry it through droplet lens, inverted world, meniscus, sparkle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -192,7 +192,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'thread twist; weave crossings; fuzz',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fiber/Fabric Macro as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fiber macro: fabric seen so close that threads become cables and weave becomes architecture. Carry it through thread twist, weave crossings, fuzz. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -220,7 +220,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'rust bloom; flaking paint; pitting',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rust/Decay Macro as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Rust macro: corroded metal with flaking paint, blisters and orange oxide landscapes. Carry it through rust bloom, flaking paint, pitting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -248,7 +248,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'radial iris fibers; pupil; corneal reflection',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Iris/Eye Macro as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Iris macro: a human eye so close that the iris becomes a radial landscape of fibers and color. Carry it through radial iris fibers, pupil, corneal reflection. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -275,7 +275,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'thin-film interference; swirling rainbow; spheres',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soap Bubble as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Soap bubble macro: swirling thin-film interference colors on a floating sphere. Carry it through thin-film interference, swirling rainbow, spheres. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -301,7 +301,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'barbs; barbules; iridescence',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Feather Macro as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Feather macro: barbs and barbules in precise rows with iridescent sheen. Carry it through barbs, barbules, iridescence. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -328,7 +328,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'backlit veins; cell pattern; chlorophyll glow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Leaf Veins as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Leaf vein macro: backlit leaf showing a glowing network of veins and cells. Carry it through backlit veins, cell pattern, chlorophyll glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -353,7 +353,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'pores; fine lines; hairs; skin terrain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Skin Pores as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Skin macro: human skin as a terrain of pores, fine lines and tiny hairs. Carry it through pores, fine lines, hairs, skin terrain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -380,7 +380,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'ink clouds; vortex rings; tendrils',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ink in Water as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ink in water: dye clouds blooming and curling through clear water. Carry it through ink clouds, vortex rings, tendrils. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -406,7 +406,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'fuzzy colonies; hyphae; spore heads; agar',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fungi/Mold as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Mold and fungi macro: fuzzy colonies, hyphae and spore heads in a petri dish. Carry it through fuzzy colonies, hyphae, spore heads, agar. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -434,7 +434,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'crystal clusters; needles; chemical garden',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crystal Growth as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Crystal growth macro: chemical garden crystals growing into sharp geometric forms. Carry it through crystal clusters, needles, chemical garden. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -460,7 +460,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'wavy grooves; stylus; dust',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vinyl Record Grooves as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Vinyl groove macro: record grooves as wavy canyons of sound. Carry it through wavy grooves, stylus, dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -487,7 +487,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'hooks; loops; fibers',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hook-and-Loop Macro as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hook-and-loop macro: plastic hooks and fiber loops like a strange forest. Carry it through hooks, loops, fibers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -511,7 +511,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'open cells; holes; walls',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sponge as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sponge macro: open cells, holes and bubbles like a cave system. Carry it through open cells, holes, walls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -536,7 +536,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'tiny leaves; spore capsules; dew',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Moss as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Moss macro: a tiny forest of leaves and spore capsules. Carry it through tiny leaves, spore capsules, dew. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -561,7 +561,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'angular grains; glue; grit',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sandpaper as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sandpaper macro: sharp grains like a rocky mountain landscape. Carry it through angular grains, glue, grit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -586,7 +586,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'honeycomb cells; pores',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cork as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cork macro: honeycomb cells of cork bark. Carry it through honeycomb cells, pores. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -614,7 +614,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'twill weave; tows; resin gloss',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carbon Fiber Weave Macro as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Carbon fiber weave macro: twill weave of black fibers with glossy resin. Carry it through twill weave, tows, resin gloss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -639,7 +639,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Scientific-grade macro or micrograph realism with crisp structure and believable optics.',
       key_features: 'pappus; fine hairs; seeds',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dandelion Seed as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dandelion seed macro: fine pappus hairs and seeds. Carry it through pappus, fine hairs, seeds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

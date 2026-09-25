@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: The prompt subject repeated radially around a central point, filling a circle or the full square.
   atmosphere_and_mood: Hypnotic, ornate and meditative, a spinning jewel.
   rendering_and_quality: Perfect mirror seams and radial repetition with the subject still recognizable in each wedge; no random asymmetry.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mirror-Tool Kaleidoscope as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Kaleidoscope symmetry art: the subject drawn once in one wedge and mirrored six or eight times around a center, forming a radial mandala. Carry it through radial mirror symmetry, six or eight repeating wedges, jewel color rhythm, central glow, recognizable repeated subject. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: radial mirror symmetry; six or eight repeating wedges; jewel color rhythm; central glow; recognizable repeated subject
 avoidRules:
   - photo

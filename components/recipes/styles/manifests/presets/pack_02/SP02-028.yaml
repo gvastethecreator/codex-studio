@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Angry and raw, loud feeling with no interest in looking pretty.
   rendering_and_quality: Distressed mixed-media music-video look; no clean studio polish or channel logo.
   key_features: distressed film and video; jump-cut stutter; single bulb light; video feedback; tilted handheld
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 90s Grunge Music Video as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "90s grunge music video: distressed film and video mixed with jump cuts, video feedback and anti-polish aggression. Carry it through distressed film and video, jump-cut stutter, single bulb light, video feedback, tilted handheld. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable fake text
   - readable ticker

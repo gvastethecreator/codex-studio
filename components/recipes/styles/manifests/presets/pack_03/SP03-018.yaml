@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Technical and fast, the feeling of engineered, weightless strength.
   rendering_and_quality: Anisotropic weave with a clear coat; not a flat printed pattern.
   key_features: twill weave pattern; anisotropic shimmer; deep glossy clear coat; strip highlights; weave following curves
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carbon Fiber as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Carbon fiber composite: a woven twill of black fibers under a deep glossy clear coat, the weave shimmering as the angle changes. Carry it through twill weave pattern, anisotropic shimmer, deep glossy clear coat, strip highlights, weave following curves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the surroundings
   - changing the camera

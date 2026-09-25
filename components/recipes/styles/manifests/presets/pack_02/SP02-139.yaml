@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; broad simple masses rather than fine detail.
   atmosphere_and_mood: Soft and painterly, an early photograph still halfway to a drawing.
   rendering_and_quality: Matte salted-paper print; not glossy albumen and not a metal plate.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Salt Print Calotype as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Salt print from a calotype: an 1840s paper negative printed on salted paper, soft and fibrous, with warm matte tones sunk into the paper. Carry it through paper-negative fiber texture, warm brown-lavender tones, matte salted paper, soft broad masses, low contrast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: paper-negative fiber texture; warm brown-lavender tones; matte salted paper; soft broad masses; low contrast
 avoidRules:
   - illustration

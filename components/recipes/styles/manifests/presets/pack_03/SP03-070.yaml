@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Lonely and puzzling, a place waiting for someone to click.
   rendering_and_quality: Pre-rendered 640x480-era look; distinct from the 90s scanline and raytracer renderer presets.
   key_features: pre-rendered surreal emptiness; dithered color; flat fog haze; stretched low-res textures; mysterious lone structure
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Retro CGI (90s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "90s pre-rendered CD-ROM scene: lonely surreal places rendered offline for early multimedia games, with soft fog, dithered color and eerie stillness. Carry it through pre-rendered surreal emptiness, dithered color, flat fog haze, stretched low-res textures, mysterious lone structure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - franchise likeness

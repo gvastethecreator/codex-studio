@@ -216,7 +216,7 @@ const spec: Spec = {
       briefs: [
         'Patent figure plate of a clockwork bird-scarer with flapping iron arms, perspective view, side view and section on one white sheet, thick shade lines on the lower edges, leader lines ending at blank points. No readable numerals, text or logo.',
         "Patent figure plate of a folding traveller's writing desk shown closed, opened and in exploded detail, stippled section faces. No readable numerals, text or logo.",
-        "Patent figure plate of a clockwork music box with a rotating pinned cylinder and a tuned steel comb, shown in exploded view with dashed hidden lines, leader lines and parallel shading on the cylinders. No readable numerals, text or logo.",
+        'Patent figure plate of a clockwork music box with a rotating pinned cylinder and a tuned steel comb, shown in exploded view with dashed hidden lines, leader lines and parallel shading on the cylinders. No readable numerals, text or logo.',
       ],
     },
     {
@@ -489,7 +489,7 @@ const spec: Spec = {
       avoid: [...AVOID, 'photographic night sky', 'degree numbers'],
       briefs: [
         'Celestial atlas plate of a kraken constellation spreading its arms across a curved coordinate grid, pale gold magnitude-sized stars on midnight blue, the figure in thin engraved cream line. No readable text or logo.',
-        'Celestial atlas plate of a sleeping giant constellation lying along the stippled Milky Way band. No readable text or logo.',
+        'Celestial atlas plate of a sleeping giant constellation lying along the stippled band of the Milky Way, hand-colored engraved figure in pale ochre, graded gold stars and a curved coordinate grid. No readable text or logo.',
         'Celestial atlas plate of a ship with torn sails, its mast marked by three bright stars inside a circular chart. No readable text or logo.',
       ],
     },
@@ -550,7 +550,7 @@ const spec: Spec = {
       avoid: [...AVOID, 'finished rendering without construction', 'painted background'],
       briefs: [
         'Perspective construction drawing of a gothic reliquary chest with a pitched lid, blue construction boxes and ellipses under black final line, three vanishing points marked and a projected cast shadow in grey marker. No readable text or logo.',
-        'Perspective construction drawing of a jousting saddle, cross-contour lines wrapping the high cantle and pommel. No readable text or logo.',
+        'Perspective construction drawing of a jousting saddle on a stand, cross-contour lines wrapping the high cantle and pommel, blue construction boxes under black final line and a grey projected shadow. No readable text or logo.',
         'Perspective construction drawing of a spiral staircase tower seen from below, stacked ellipses and a vertical axis line. No readable text or logo.',
       ],
     },

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Cramped, electric and lonely under a city that never sleeps.
   rendering_and_quality: 'Cinematic low-light photograph: coloured light kept clean, grime specific, no readable screens or signs.'
   key_features: surface-run cable bundles; salvaged metal panels; magenta and cyan neon spill; amber small practicals; cramped wide-angle frame
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyberpunk Apartment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cyberpunk apartment: a cramped high-rise unit retrofitted by its tenant, with salvaged panels, surface-run cable bundles, stacked hardware and colored light from signs outside. Carry it through surface-run cable bundles, salvaged metal panels, magenta and cyan neon spill, amber small practicals, cramped wide-angle frame. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - furniture catalog staging
   - olive branch in a vase as default decor

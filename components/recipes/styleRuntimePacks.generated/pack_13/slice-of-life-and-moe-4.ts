@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Fine tapered contours; minute facial marks; compact soft cel shadows; gentle warm and cool separation; sparse surface detail.',
       creative_brief:
-        'Build expression from tiny facial shifts and tapered linework over soft cel planes. Preserve the subject, action, count, camera, and mood from the request; add no scene props.',
+        'Build expression from tiny facial shifts and tapered linework over soft cel planes. Preserve the subject, action, count, camera, and mood from the request; add no scene props. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -58,7 +58,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Rounded ink joins; modular color blocks; layered print edges; alternating warm and cool accents; light surface grain.',
       creative_brief:
-        'Use overlapping color shapes and rounded contour joins to create a gentle graphic rhythm. Keep the requested subject, action, count, camera, and mood.',
+        'Use overlapping color shapes and rounded contour joins to create a gentle graphic rhythm. Keep the requested subject, action, count, camera, and mood. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -87,7 +87,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Slightly wavering ink; irregular fill edges; overlapping pigment passes; broad simple shadows; clear assembled silhouettes.',
       creative_brief:
-        'Use controlled line wobble and uneven pigment at the surface while keeping forms structurally sound. Keep subject, action, count, camera, and mood from the request.',
+        'Use controlled line wobble and uneven pigment at the surface while keeping forms structurally sound. Keep subject, action, count, camera, and mood from the request. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -116,7 +116,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Cool ambient planes against warm accents; rounded contour joins; soft value transitions; clear layered separation; matte finish.',
       creative_brief:
-        'Build separation with cool ambient color and measured warm accents while following the supplied light. Keep subject, action, count, camera, and mood unchanged.',
+        'Build separation with cool ambient color and measured warm accents while following the supplied light. Keep subject, action, count, camera, and mood unchanged. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -145,7 +145,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Alternating dense and open mark fields; ordered thin strokes; restrained bright accents; coherent shadows; crisp boundaries.',
       creative_brief:
-        'Vary detail density across existing forms to create a deliberate working rhythm. Preserve content and camera; add no new content or frame marks.',
+        'Vary detail density across existing forms to create a deliberate working rhythm. Preserve content and camera; add no new content or frame marks. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -174,7 +174,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Structural contours; broad quiet fills; few clear shadow groups; limited surface noise; precise material accents.',
       creative_brief:
-        'Reduce surface noise and organize values around the structure of existing forms. Preserve subject, action, count, camera, and mood without adding props.',
+        'Reduce surface noise and organize values around the structure of existing forms. Preserve subject, action, count, camera, and mood without adding props. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -203,7 +203,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Recurring line motifs; repeated highlight shapes; limited color rotation; smooth matte fills; clear rhythm with visual breaks.',
       creative_brief:
-        'Echo line and color motifs across existing forms without repeating depicted content. Preserve subject, action, count, camera, and mood.',
+        'Echo line and color motifs across existing forms without repeating depicted content. Preserve subject, action, count, camera, and mood. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -232,7 +232,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Soft substantial outline; fine interior marks; cool and warm separation; localized textile strokes; clear depth boundaries.',
       creative_brief:
-        'Contrast a rounded outer line with finer internal strokes and measured color temperature. Keep subject, action, count, camera, and mood user-defined.',
+        'Contrast a rounded outer line with finer internal strokes and measured color temperature. Keep subject, action, count, camera, and mood user-defined. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -261,7 +261,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Visible construction lines; contour replays on the same forms; sparse gesture ticks tied to requested motion; restrained flat color; unfinished edges.',
       creative_brief:
-        'Keep concept-stage linework visible around the same clear drawing; guide strokes trace prompted forms and motion only. Preserve subject, action, count, main camera, and mood; add no scene or words.',
+        'Keep concept-stage linework visible around the same clear drawing; guide strokes trace prompted forms and motion only. Preserve subject, action, count, main camera, and mood; add no scene or words. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -290,7 +290,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Steady resting line against sharp gesture marks; localized elastic arcs; short action accents; flat shadows with abrupt value contrast.',
       creative_brief:
-        'Use still contours and quick elastic marks to distinguish existing action peaks. Preserve subject, action, count, camera, and mood; add no punchline prop, duplicate, or forced expression.',
+        'Use still contours and quick elastic marks to distinguish existing action peaks. Preserve subject, action, count, camera, and mood; add no punchline prop, duplicate, or forced expression. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -319,7 +319,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Uniform fine contours; low-contrast color blocks; shallow shadow shapes; restrained feature marks; relaxed detail density.',
       creative_brief:
-        'Render with quiet line weight and narrow value steps, letting small feature changes carry expression. Preserve the prompted subject, action, count, camera, and mood.',
+        'Render with quiet line weight and narrow value steps, letting small feature changes carry expression. Preserve the prompted subject, action, count, camera, and mood. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -348,7 +348,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Precise contour; flat color planes; selective edge luminosity; localized value pivot; restrained effects.',
       creative_brief:
-        'Contrast stable inked shapes with a small, justified luminous accent. Preserve subject, action, count, camera, and mood; add no narrative event.',
+        'Contrast stable inked shapes with a small, justified luminous accent. Preserve subject, action, count, camera, and mood; add no narrative event. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -377,7 +377,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Fine contour; broad light washes; low detail density; diffuse shadow edges; selective focal texture.',
       creative_brief:
-        "Let pale washes and spare surface marks provide breathing room within the user's composition. Preserve the requested subject, action, count, camera, and mood.",
+        "Let pale washes and spare surface marks provide breathing room within the user's composition. Preserve the requested subject, action, count, camera, and mood. Use it as a reusable look on any subject.",
     },
   },
   {
@@ -406,7 +406,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Translucent tonal veils; faded but prompt-led color; selective crisp contours; soft shadow transitions; faint pencil grain.',
       creative_brief:
-        "Use translucent color and softened edges around a few decisive lines. Preserve the user's subject, action, count, camera, and emotional tone without adding a narrative filter.",
+        "Use translucent color and softened edges around a few decisive lines. Preserve the user's subject, action, count, camera, and emotional tone without adding a narrative filter. Use it as a reusable look on any subject.",
     },
   },
   {
@@ -435,7 +435,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Precise fine contours; selectively sharp microdetail; quiet supporting color fields; compact highlights; material-specific mark scale.',
       creative_brief:
-        'Give existing focal details crisp line priority against calmer surrounding marks. Preserve subject, camera, and mood; add no extra graphic motif.',
+        'Give existing focal details crisp line priority against calmer surrounding marks. Preserve subject, camera, and mood; add no extra graphic motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -464,7 +464,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Translucent glazing; soft value echoes; fine wash grain; selective decisive contours; single readable silhouettes.',
       creative_brief:
-        'Layer soft tonal echoes around clear forms using transparency, without duplicating shapes. Keep the prompted subject, action, count, camera, and mood.',
+        'Layer soft tonal echoes around clear forms using transparency, without duplicating shapes. Keep the prompted subject, action, count, camera, and mood. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -493,7 +493,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Loose directional brushwork; geometric underpainting; visible paper gaps; broken shadow edges; selective pencil grain.',
       creative_brief:
-        'Combine confident brush edges with simple color geometry and visible gaps. Keep the original subject, action, count, camera, and mood unchanged.',
+        'Combine confident brush edges with simple color geometry and visible gaps. Keep the original subject, action, count, camera, and mood unchanged. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -522,7 +522,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Fine contact-point contours; precise overlap shadows; smooth broad forms; restrained warm accents; material-specific tactile marks.',
       creative_brief:
-        'Focus line detail at contact points already present in the image, keeping all relations user-defined. Preserve subject, action, count, camera, and mood.',
+        'Focus line detail at contact points already present in the image, keeping all relations user-defined. Preserve subject, action, count, camera, and mood. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -551,7 +551,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Delicate contour; tiny highlights; fine material detail; gentle tonal steps; compact precision without scale change.',
       creative_brief:
-        'Make fine surface marks and small highlights carry the detail without miniaturizing forms. Preserve subject, action, count, camera, and mood.',
+        'Make fine surface marks and small highlights carry the detail without miniaturizing forms. Preserve subject, action, count, camera, and mood. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -580,7 +580,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Even contour weight; immaculate color planes; crisp compact shadows; localized alignment shift; limited accent color.',
       creative_brief:
-        'Set precise, clean drawing against a single restrained edge irregularity. Keep subject, action, count, camera, and mood; add no new motif.',
+        'Set precise, clean drawing against a single restrained edge irregularity. Keep subject, action, count, camera, and mood; add no new motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -609,7 +609,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Directional action contours; rounded joins; clear overlap planes; moderate color separation; sparse material marks.',
       creative_brief:
-        'Clarify movement and overlaps already present with directional linework and readable color planes. Preserve scene, count, camera, and mood; add no new interaction.',
+        'Clarify movement and overlaps already present with directional linework and readable color planes. Preserve scene, count, camera, and mood; add no new interaction. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -638,7 +638,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Long fluid contours; neighboring color shifts; broad soft transitions; sparse edge trails; stable form boundaries.',
       creative_brief:
-        'Apply gentle contour flow and tonal drift without changing pose or motion. Keep subject, action, count, camera, and mood as requested.',
+        'Apply gentle contour flow and tonal drift without changing pose or motion. Keep subject, action, count, camera, and mood as requested. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -667,7 +667,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Geometric color planes; progressive value steps; crisp lit edges; controlled gradients; clear focal hierarchy.',
       creative_brief:
-        'Use a measured light-to-shadow progression along existing shapes to build hierarchy. Preserve subject, action, count, camera, and mood without shifting composition.',
+        'Use a measured light-to-shadow progression along existing shapes to build hierarchy. Preserve subject, action, count, camera, and mood without shifting composition. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -696,7 +696,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Thin even contour; plain color planes; blunt shadow shapes; low surface grain; restrained flat clarity.',
       creative_brief:
-        'Separate forms with plain color planes and deliberate shadows. Keep subject, action, count, camera, and mood as requested; add no new motif.',
+        'Separate forms with plain color planes and deliberate shadows. Keep subject, action, count, camera, and mood as requested; add no new motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -725,7 +725,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Transparent washes; pigment blooms; paper-tooth granulation; selective ink edges; diluted layered color.',
       creative_brief:
-        'Use visible watercolor texture and transparent overlapping washes while retaining crisp focal contours. Preserve subject, action, count, camera, and mood; add no new content or light source.',
+        'Use visible watercolor texture and transparent overlapping washes while retaining crisp focal contours. Preserve subject, action, count, camera, and mood; add no new content or light source. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -754,7 +754,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Bold simplified silhouette; tiny internal line detail; restrained bright accent; clean layers; scale contrast through mark density.',
       creative_brief:
-        'Juxtapose broad clean shapes with fine marks to create visual scale tension. Do not enlarge or add anything; preserve subject, action, count, camera, and mood.',
+        'Juxtapose broad clean shapes with fine marks to create visual scale tension. Do not enlarge or add anything; preserve subject, action, count, camera, and mood. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -783,7 +783,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Loose pencil contour; soft geometric underpainting; short scribble marks; paper-like tonal base; stable readable silhouettes.',
       creative_brief:
-        'Place loose pencil marks over gentle geometric color fields, tying both to forms already present. Preserve subject, action, count, camera, and mood.',
+        'Place loose pencil marks over gentle geometric color fields, tying both to forms already present. Preserve subject, action, count, camera, and mood. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -812,7 +812,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Broken contour segments; slight color registration offsets; sparse pixel-like marks; saturated patches against stable base values.',
       creative_brief:
-        'Layer controlled misregistration over a legible drawing, keeping each offset attached to an existing form. Preserve subject, action, count, camera, and mood; add no text or props.',
+        'Layer controlled misregistration over a legible drawing, keeping each offset attached to an existing form. Preserve subject, action, count, camera, and mood; add no text or props. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -841,7 +841,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Calm continuous silhouettes; slight contour drift; soft shadow edges; localized boundary irregularity; stable interior forms.',
       creative_brief:
-        'Introduce restrained contour drift while leaving shapes intact and readable. Keep subject, action, count, camera, and mood from the prompt; add no surreal object or duplicate.',
+        'Introduce restrained contour drift while leaving shapes intact and readable. Keep subject, action, count, camera, and mood from the prompt; add no surreal object or duplicate. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -870,7 +870,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Tapered directional contours; broad clean gradients; crisp edge accents; bright value openings; motion aligned to existing forms.',
       creative_brief:
-        'Let directional linework and clear gradients follow movement already in the prompt. Preserve subject, action, count, camera, and mood; add no new motion or narrative beat.',
+        'Let directional linework and clear gradients follow movement already in the prompt. Preserve subject, action, count, camera, and mood; add no new motion or narrative beat. Use it as a reusable look on any subject.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

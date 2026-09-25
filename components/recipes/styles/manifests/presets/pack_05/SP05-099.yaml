@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Steadfast and hard-won, a quiet refusal to fall.
   rendering_and_quality: Firm outer contours, textured midtones and exactly one controlled specular highlight on each focal form.
   key_features: nested concentric contour echoes; heavy dark-brown lineart; bronze edge rims; three-tone cel shadow; scuffed dry-brush wear
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Worn Bronze Concentric-Line Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Gritty TV-anime cel with heavy dark-brown lineart and nested contour echoes: two or three parallel strokes trace each major outline like growth rings. Carry it through nested concentric contour echoes, heavy dark-brown lineart, bronze edge rims, three-tone cel shadow, scuffed dry-brush wear. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway

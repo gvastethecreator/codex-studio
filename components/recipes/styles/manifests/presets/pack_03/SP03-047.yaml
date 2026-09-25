@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Optimistic and persuasive, a building shown the way its designers hope it will feel.
   rendering_and_quality: Clean exterior visualization with ghosted, motion-blurred adult entourage and light haze; no site plans, arrows or labels.
   key_features: eye-level two-point exterior; corrected verticals; planted soft foreground; ghosted entourage; graded sky with raking sun
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Architectural Visualization as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Design-competition exterior render: a building shown in its landscape at human eye height, clean CGI architecture blended with planted foreground and a graded sky. Carry it through eye-level two-point exterior, corrected verticals, planted soft foreground, ghosted entourage, graded sky with raking sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - multi-view asset sheet
   - fake labels

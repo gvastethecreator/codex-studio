@@ -286,7 +286,7 @@ const spec: Spec = {
       briefs: [
         'Atomic force microscope topography of a nanoscale surface where molecules form a castle on a hill, gold-brown height ramp, oblique 3D view, scan lines. No readable text.',
         'Atomic force microscope topography of a DNA strand coiling across a surface like a serpent, gold-brown height ramp, oblique 3D view, faint scan-line streaks. No readable text.',
-        'AFM height map of a crystal surface with stepped terraces like a ruined amphitheater, gold-brown ramp and scan artifacts. No readable text.',
+        'Atomic force microscope height map of a crystal surface with stepped terraces like a ruined amphitheater, gold-brown height ramp, oblique 3D view and faint horizontal scan artifacts. No readable text.',
       ],
     },
     {
@@ -307,7 +307,7 @@ const spec: Spec = {
       briefs: [
         'Fluoroscopy frame of an armored hand gripping a sword hilt, bones dark inside the faint metal gauntlet, grainy circular field with motion blur. No readable text.',
         'Fluoroscopy frame of a cat mid-leap, spine and legs dark and crisp, fur a faint haze, grainy circular field with motion blur. No readable text.',
-        'Fluoroscopy frame of a swallowed iron key inside a stomach outline, dark key sharp, organs faint, grainy circular field. No readable text.',
+        'Fluoroscopy frame of a swallowed iron key inside a faint stomach outline, the key dark and sharp, ribs and spine soft grey, grainy circular field with slight motion blur. No readable text.',
       ],
     },
     {
@@ -369,7 +369,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Streak camera image of a lightning strike hitting a castle tower, the strike smeared into a glowing green time streak on black. No readable text.',
-        'Streak camera image of an explosion in a castle powder room smeared into fanning green time streaks on black. No readable text.',
+        'Streak camera image of an explosion in a castle powder room, a single slit of the blast smeared into fanning green time streaks on black, bright at the start and fading. No readable text.',
         'Streak camera image of a laser pulse passing through a crystal, a thin bright streak splitting into colored lines on black. No readable text.',
       ],
     },
@@ -412,7 +412,7 @@ const spec: Spec = {
       briefs: [
         'Radio telescope map of a galaxy whose radio lobes form the wings of a dragon, false-color emission and contour lines on black. No readable text.',
         'Radio telescope map of a pulsar and its wind nebula shaped like a lighthouse beam, false-color emission and contour lines on black. No readable text.',
-        'Radio telescope map of a nebula whose false-color emission blobs form a hooded figure, soft contour lines. No readable text.',
+        'Radio telescope map of a nebula whose false-color emission blobs form a hooded figure bowing its head, soft contour lines, a bright point like a lantern in its hands. No readable text.',
       ],
     },
     {

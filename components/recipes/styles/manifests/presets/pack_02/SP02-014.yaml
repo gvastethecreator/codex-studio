@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Stylish and paranoid, beauty and menace sharing the same colored light.
   rendering_and_quality: Saturated 35 mm film look with grain; implied threat, never gore.
   key_features: red, blue and green gels; baroque interiors; eye and hand close-ups; deep corridors; implied threat
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Giallo Horror as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Giallo: 1970s Italian thriller cinema of baroque interiors flooded with saturated colored gels and tense, stylized close-ups. Carry it through red, blue and green gels, baroque interiors, eye and hand close-ups, deep corridors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - readable fake text

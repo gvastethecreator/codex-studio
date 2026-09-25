@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Flat paper, the subject assembled from different rubbed textures.
   atmosphere_and_mood: Curious and tactile, the world collected by touch.
   rendering_and_quality: Real wax rubbing with directional strokes; not a digital texture fill.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crayon Rubbing Frottage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Crayon rubbing frottage: thin paper laid over leaves, coins, wood and grates and rubbed with the side of a crayon, the textures composed into a picture. Carry it through rubbed textures composing the subject, waxy directional strokes, leaf and wood grain patterns, thin paper, crayon color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: rubbed textures composing the subject; waxy directional strokes; leaf and wood grain patterns; thin paper; crayon color
 avoidRules:
   - photorealistic rendering

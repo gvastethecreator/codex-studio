@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Loud, joyful and tactile, a crude bold energy.
   rendering_and_quality: Thick unblended strokes, sgraffito line detail, waxy semi-gloss surface; no fine lines and no smooth gradients.
   key_features: thick greasy unblended strokes; sgraffito scratches through layers; waxy crumbs and smears; bold saturated color; chunky simplified shapes
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oil Pastel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Oil pastel drawing: chunky greasy sticks pressed on thick and unblended, layered color over color and scratched back through with a blade to reveal what lies under. Carry it through thick greasy unblended strokes, sgraffito scratches through layers, waxy crumbs and smears, bold saturated color, chunky simplified shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - mixing in a second drawing tool

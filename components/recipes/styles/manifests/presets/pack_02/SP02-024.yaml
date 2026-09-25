@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Awkward and sincere, homemade passion on a zero budget.
   rendering_and_quality: Low-grade analog signal; any graphics blocky and textless.
   key_features: tiny community studio; blue curtain backdrop; badly placed lights; UHF noise; awkward static framing
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Public Access TV as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Public access TV studio: a sincere amateur show taped in a tiny community studio with cheap sets and uneven lighting. Carry it through tiny community studio, blue curtain backdrop, badly placed lights, UHF noise, awkward static framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable fake text
   - readable ticker

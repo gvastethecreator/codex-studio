@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Restless and abstracted, reality partly overruled by a gesture.
   rendering_and_quality: Clear boundary between photograph and physical paint; no digital brush imitation.
   key_features: photographic print base; opaque acrylic swipes; drips; palette-knife smears; one dominant paint color
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paint over Photo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Paint over photo: a photographic print partly covered by opaque acrylic swipes, drips and gestural strokes that hide, extend or redraw the image. Carry it through photographic print base, opaque acrylic swipes, drips, palette-knife smears, one dominant paint color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - uniform beige torn-paper wash over every image
   - red tape strips added by default

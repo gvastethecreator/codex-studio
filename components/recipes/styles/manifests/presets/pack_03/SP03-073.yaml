@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Handmade and gentle, a world cut from paper.
   rendering_and_quality: Tactile papercraft render with cuts and glue, distinct from folded-only origami.
   key_features: layered cardstock; visible paper thickness; cut edges; fold shadows; paper grain
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Papercraft 3D as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Papercraft 3D: the subject built from cut and layered cardstock, with visible paper thickness, folds and glue tabs. Carry it through layered cardstock, visible paper thickness, cut edges, fold shadows, paper grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - franchise likeness

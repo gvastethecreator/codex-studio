@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Quick, confident and professional, a design studio sketch.
   rendering_and_quality: Streaky but controlled marker passes, thin ink outlines, gel pen highlights; no paint texture and no pencil smudging.
   key_features: chisel-tip parallel streaks; cool grey marker shadows; fineliner outline; white gel highlights; marker background swatch
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Alcohol Marker Rendering as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Alcohol marker rendering: broad chisel-tip markers laid in fast parallel streaks and blended while wet, finished with a fineliner outline and white gel highlights. Carry it through chisel-tip parallel streaks, cool grey marker shadows, fineliner outline, white gel highlights, marker background swatch. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - mixing in a second drawing tool

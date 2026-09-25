@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'plasticine with fingerprints; miniature set; small hard lamps; macro depth; handmade imperfection',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Claymation (Stop Motion) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Claymation stop-motion: the subject sculpted in plasticine and posed on a miniature set, with fingerprints, tool marks and slight frame-to-frame boil. Carry it through plasticine with fingerprints, miniature set, small hard lamps, macro depth, handmade imperfection. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -52,7 +52,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'visible triangular facets; flat per-facet shading; no textures; vivid palette; readable silhouettes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Low Poly as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Low-poly 3D: forms reduced to a few hundred flat triangular facets, each facet a single shaded tone. Carry it through visible triangular facets, flat per-facet shading, no textures, vivid palette, readable silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -77,7 +77,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'uniform cube voxels; strict grid; stepped palette shading; soft ambient occlusion; no curves',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Voxel Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Voxel art: the subject built from small uniform cubes on a strict grid, like 3D pixels, with soft global illumination. Carry it through uniform cube voxels, strict grid, stepped palette shading, soft ambient occlusion, no curves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -102,7 +102,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'isometric orthographic camera; cutaway square block; no perspective; soft top-left key; tidy detail',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Isometric 3D as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Isometric 3D: the scene seen through a parallel orthographic camera at the classic isometric angle, usually as a neat cutaway block. Carry it through isometric orthographic camera, cutaway square block, no perspective, soft top-left key, tidy detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -125,7 +125,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'mesh edges only; neon lines on black; visible edge loops; no surface shading; subtle glow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wireframe Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Wireframe render: only the mesh edges drawn as glowing lines, revealing the topology of the subject against a dark field. Carry it through mesh edges only, neon lines on black, visible edge loops, no surface shading, subtle glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -148,7 +148,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'disassembled parts; right-angle grid; top-down view; grouped by size; even spacing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Knolling (Flat Lay) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Knolling: every part of the subject disassembled and laid out flat at right angles in a tidy grid, seen from straight above. Carry it through disassembled parts, right-angle grid, top-down view, grouped by size, even spacing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -173,7 +173,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'merging blob spheres; seamless joints; glossy smooth surface; soft studio light; liquid forms',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Metaballs as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Metaballs: the subject built from implicit blobby spheres that merge smoothly where they touch, like liquid clay. Carry it through merging blob spheres, seamless joints, glossy smooth surface, soft studio light, liquid forms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -199,7 +199,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'mathematically smooth surfaces; zebra reflection stripes; continuous curvature; crisp creases; glossy finish',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Nurbs Surface as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "NURBS class-A surfacing: the subject modeled from perfectly smooth mathematical curves, with continuous reflections revealing flawless curvature. Carry it through mathematically smooth surfaces, zebra reflection stripes, continuous curvature, crisp creases, glossy finish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -223,7 +223,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'self-similar recursion; nested detail at every scale; deep occlusion; iridescent gradients; ray-marched surfaces',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fractal 3D as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fractal 3D: the subject grown from self-similar mathematical recursion, every part repeating smaller versions of itself into infinity. Carry it through self-similar recursion, nested detail at every scale, deep occlusion, iridescent gradients, ray-marched surfaces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -249,7 +249,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'spiked stretched vertices; sliced offset chunks; RGB channel split; flipped normals; z-fighting',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glitch 3D as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Glitch 3D: the subject as a corrupted mesh — stretched vertices, sliced and offset chunks and wrong RGB shader channels. Carry it through spiked stretched vertices, sliced offset chunks, RGB channel split, flipped normals, z-fighting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -273,7 +273,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'flat cel shadow bands; inked outlines; hard shading steps; saturated fills; 3D form',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Toon Shader (Cel Shaded) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Toon shader: 3D forms rendered with flat cel bands and inked outlines so they read like hand-drawn animation. Carry it through flat cel shadow bands, inked outlines, hard shading steps, saturated fills, 3D form. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -296,7 +296,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'grey shaded model; mesh edges overlaid; clean edge loops; ambient occlusion; presentation framing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wireframe on Shaded as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Wireframe on shaded: a grey-shaded 3D model with its mesh edges drawn over the surface, as in a modeling viewport presentation. Carry it through grey shaded model, mesh edges overlaid, clean edge loops, ambient occlusion, presentation framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -320,7 +320,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'procedural shapes in rhythm; bright gradients; satin and frosted materials; orbits and flows; clean composition',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Motion Graphics as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Motion graphics 3D: clean procedural shapes arranged in rhythmic, keyframe-like compositions with bright gradients and satisfying motion implied. Carry it through procedural shapes in rhythm, bright gradients, satin and frosted materials, orbits and flows, clean composition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -345,7 +345,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'sculpted glyph object; material-built letterform; studio depth lighting; centered sculpture; invented ornamental shape',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 3D Typography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "3D typography: sculptural letter-like glyphs built from real materials and objects, lit as physical objects. Carry it through sculpted glyph object, material-built letterform, studio depth lighting, centered sculpture, invented ornamental shape. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -369,7 +369,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'squircle tile; simplified glossy subject; soft top light; vibrant gradient; small drop shadow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 3D Icon as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "3D app icon: the subject simplified into a glossy rounded object inside a soft squircle tile, readable at tiny size. Carry it through squircle tile, simplified glossy subject, soft top light, vibrant gradient, small drop shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -396,7 +396,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'pre-rendered surreal emptiness; dithered color; flat fog haze; stretched low-res textures; mysterious lone structure',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Retro CGI (90s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "90s pre-rendered CD-ROM scene: lonely surreal places rendered offline for early multimedia games, with soft fog, dithered color and eerie stillness. Carry it through pre-rendered surreal emptiness, dithered color, flat fog haze, stretched low-res textures, mysterious lone structure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -420,7 +420,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'extruded matte clay UI; pastel palette; pill buttons and knobs; soft contact shadows; textless controls',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Clay UI as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Clay UI: interface elements rendered as soft extruded matte clay — rounded panels, pill buttons and knobs — with friendly depth. Carry it through extruded matte clay UI, pastel palette, pill buttons and knobs, soft contact shadows, textless controls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -444,7 +444,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'layered cardstock; visible paper thickness; cut edges; fold shadows; paper grain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Papercraft 3D as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Papercraft 3D: the subject built from cut and layered cardstock, with visible paper thickness, folds and glue tabs. Carry it through layered cardstock, visible paper thickness, cut edges, fold shadows, paper grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -471,7 +471,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'interlocking studded bricks; primary plastic colors; glossy ABS; brick seams; stud shadows',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Toy Brick-Built 3D as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Toy brick-built 3D: the subject constructed from interlocking plastic building bricks with studs on top, in bright primary colors. Carry it through interlocking studded bricks, primary plastic colors, glossy ABS, brick seams, stud shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -494,7 +494,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Pure fold geometry, no cuts or glue; distinct from layered papercraft.',
       key_features: 'single-sheet folds; crisp creases; geometric planes; paper grain; no cuts',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Origami 3D as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Origami 3D: the subject folded from single uncut sheets of paper, with crisp creases and geometric planes. Carry it through single-sheet folds, crisp creases, geometric planes, paper grain, no cuts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

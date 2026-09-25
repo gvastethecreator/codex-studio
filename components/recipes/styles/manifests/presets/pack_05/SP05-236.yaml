@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Grim, practical and stubborn, machines as disposable tools of a long campaign.
   rendering_and_quality: Uniform-weight ink line, flat paint with black shadow fills, sponge grime and soft film grain; no gloss or bloom.
   key_features: uniform thick ink line; solid black shadow fills; sponge-dabbed mud and rust; olive and iron palette; 16 mm film grain
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Compact Attrition Hardware as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Early-1980s real-robot TV cel: thick uniform ink line, flat military paint colors, one hard black shadow fill, and dirt dabbed onto the cel with a sponge. Carry it through uniform thick ink line, solid black shadow fills, sponge-dabbed mud and rust, olive and iron palette, 16 mm film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

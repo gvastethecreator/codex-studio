@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Scholarly, precise and old, like a plate from a forgotten book.
   rendering_and_quality: Fine intaglio line detail with plate tone, never smooth tonal shading or carved relief shapes.
   key_features: needled and acid-bitten lines; layered crosshatch; embossed platemark; plate tone; sepia or warm black ink
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Etching (Engraving) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hard-ground line etching: lines needled through wax on a copper plate and bitten in acid, printed in black intaglio ink with fine crosshatching. Carry it through needled and acid-bitten lines, layered crosshatch, embossed platemark, plate tone, sepia or warm black ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - brand logo

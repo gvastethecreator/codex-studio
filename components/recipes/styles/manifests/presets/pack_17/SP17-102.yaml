@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Aggressive frontal or worm-eye crop with a massive silhouette pushing the edges and minimal background.
   atmosphere_and_mood: Furious, political, raw, underground, and defiant.
   rendering_and_quality: High-quality reproduction of a deliberately crude carving; readable at thumbnail size with deep solid blacks and no muddy gray.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crust Linocut Copier Rag as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Crust-punk rag aesthetic: violently gouged linocut blocks photocopied and re-photocopied, black chunky carving, white gouge scars, stencil spray fringes, and dirty generational copy loss. Carry it through gouged linocut blocks, generational copy loss, white gouge scars, stencil spray fringe, massive crude silhouette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: gouged linocut blocks; generational copy loss; white gouge scars; stencil spray fringe; massive crude silhouette
 avoidRules:
   - refined engraving

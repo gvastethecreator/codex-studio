@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Square-ish cover framing with a lonely distant subject, arranged so the subject still reads at card size.
   atmosphere_and_mood: Melancholic, mysterious, lonely and ancient, driven by the construction, color and rhythm.
   rendering_and_quality: Lo-fi reproduced painting, with clean, deliberate marks and no accidental noise.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dungeon Synth Cassette Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Dungeon synth cover art: murky lo-fi fantasy painting reproduced like a photocopied cassette insert, with small lonely figures, heavy mist and faded ink. Carry it through misty castle, lone wanderer, murky paint, copier grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: misty castle; lone wanderer; murky paint; copier grain
 avoidRules:
   - readable text

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Graphic, centered full figure with clean background, keeping the full outfit silhouette and fit readable at card size.
   atmosphere_and_mood: Sharp, cool, youthful and optimistic, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Crisp, graphic finish, with believable fabric weight, seams and fit detail.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sixties Mod as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "1960s mod style: sharp slim tailoring and graphic geometric dresses — two-button suits, fishtail parkas, shift dresses, go-go boots and bold op-art patterns. Carry it through slim two-button suit, geometric shift dress, go-go boots, op-art patterns, bob haircut. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: slim two-button suit; geometric shift dress; go-go boots; op-art patterns; bob haircut
 avoidRules:
   - brand logo

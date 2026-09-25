@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; tiers stack vertically with bands of cloud or mist separating them.
   atmosphere_and_mood: Serene, ceremonial and elevated, a building halfway into the sky.
   rendering_and_quality: Refined painterly realism with precise eave curves and bracket detail; no hanging signboards or calligraphy.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cloud-Tier Lacquer Pagoda as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Celestial tiered-eave architecture: stacked upswept roofs carried on interlocking bracket sets, vermilion lacquered columns, gold leaf and glazed jade tiles rising through cloud layers. Carry it through stacked upswept eaves, interlocking bracket sets, vermilion lacquer and gold leaf, glazed jade tiles, mist bands between tiers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: stacked upswept eaves; interlocking bracket sets; vermilion lacquer and gold leaf; glazed jade tiles; mist bands between tiers
 avoidRules:
   - licensed fantasy location

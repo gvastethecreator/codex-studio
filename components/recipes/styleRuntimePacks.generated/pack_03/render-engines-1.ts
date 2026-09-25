@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'spectral dispersion rainbows; caustics under glass; glare and bloom; glossy clearcoat; round bokeh',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Octane Spectral GPU Path Tracer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Spectral GPU path tracing: an unbiased GPU render with spectral light, so glass and gems split light into rainbow caustics, finished with glare and bloom. Carry it through spectral dispersion rainbows, caustics under glass, glare and bloom, glossy clearcoat, round bokeh. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -55,7 +55,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'real-time bounce GI; micro-detail scanned geometry; volumetric fog shafts; filmic tonemap; TAA softness',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Unreal Engine 5 Next-Gen Real-Time Engine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Unreal Engine 5 real-time render: dynamic global illumination, film-quality micro-detail geometry and volumetric fog running at game frame rates. Carry it through real-time bounce GI, micro-detail scanned geometry, volumetric fog shafts, filmic tonemap, TAA softness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -82,7 +82,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'clean motion-graphics lighting; crisp specular strips; gradient backgrounds; floating objects; satin plastics',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Redshift Biased GPU Renderer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Biased GPU production render: fast, clean motion-graphics lighting with crisp speculars, smooth gradients and controlled global illumination. Carry it through clean motion-graphics lighting, crisp specular strips, gradient backgrounds, floating objects, satin plastics. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -109,7 +109,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'photoreal subsurface skin; volumetric multiple scattering; micro-displacement; filmic color management; plate-matched realism',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Arnold Feature Film Path Tracer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Feature-film VFX path tracing: an unbiased CPU render tuned for photoreal creatures, skin, volumes and plate-matched lighting in a color-managed pipeline. Carry it through photoreal subsurface skin, volumetric multiple scattering, micro-displacement, filmic color management, plate-matched realism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -136,7 +136,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'principled materials; procedural textures; filmic view transform; denoised soft shadows; cozy diorama framing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blender Cycles Open Path Tracer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Open path tracer look: a node-shaded, physically based render with principled materials, a filmic view transform and clean denoised output. Carry it through principled materials, procedural textures, filmic view transform, denoised soft shadows, cozy diorama framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -163,7 +163,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'sun and sky through big windows; straight verticals; warm neutral exposure; polished stone reflections; clean glass',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies V-Ray ArchViz Raytracer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Architectural visualization raytrace: interiors and buildings rendered with sun-and-sky daylight, clean glass and a warm neutral exposure for presentations. Carry it through sun and sky through big windows, straight verticals, warm neutral exposure, polished stone reflections, clean glass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -190,7 +190,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'studio HDRI softbox reflections; gradient backdrop; accurate material swatches; ground shadow; centered product',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies KeyShot Product Studio Renderer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Product studio render: a single object rendered with studio HDRI reflections on a gradient backdrop, showing exact material swatches and finishes. Carry it through studio HDRI softbox reflections, gradient backdrop, accurate material swatches, ground shadow, centered product. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -218,7 +218,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'stylized rounded forms; rich subsurface skin; colorful luminous shadows; warm bounce; cinematic depth of field',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Feature Animation Path Tracer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Feature-animation path tracing: stylized characters and sets rendered with rich subsurface skin, luminous bounce light and storybook saturation. Carry it through stylized rounded forms, rich subsurface skin, colorful luminous shadows, warm bounce, cinematic depth of field. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -243,7 +243,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'matcap red wax or grey clay; visible brush strokes; no cast shadows; dark viewport background; centered bust',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies ZBrush Digital Clay Sculpt as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Digital clay sculpt: a raw viewport render of a sculpted model under a matcap material, with brush strokes and clay texture still visible. Carry it through matcap red wax or grey clay, visible brush strokes, no cast shadows, dark viewport background, centered bust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -271,7 +271,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'heavy bloom and lens flares; screen-space reflections; particle effects; PBR materials; graded filmic tonemap',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Unity HDRP High-End Game Pipeline as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "High-end game pipeline render: a real-time engine frame with heavy post-processing — bloom, lens flares, color grading and screen-space effects. Carry it through heavy bloom and lens flares, screen-space reflections, particle effects, PBR materials, graded filmic tonemap. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -298,7 +298,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Nostalgic and naive, the first steps of digital worlds.',
       rendering_and_quality: 'Early CG look with visible polygon facets; no modern path tracing.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 90s Scanline Phong Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "90s scanline render: early computer graphics with Phong and Gouraud shading, hard plastic highlights, no global illumination and few or no shadows. Carry it through Phong plastic highlights, no global illumination, faceted polygons, checkerboard floor, low-res textures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'Phong plastic highlights; no global illumination; faceted polygons; checkerboard floor; low-res textures',
     },
@@ -330,7 +330,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Crystalline and uncanny, a perfect world with no dust.',
       rendering_and_quality: 'Aliased-free but unmistakably early raytraced look; no noise, no GI.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Classic Raytracer Mirror Demo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Classic recursive raytracing: perfect mirrors and clear glass reflecting and refracting each other endlessly over an infinite floor, with razor-hard shadows. Carry it through perfect mirrors and glass, hard point-light shadows, infinite checkerboard, recursive reflections, no bounce light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'perfect mirrors and glass; hard point-light shadows; infinite checkerboard; recursive reflections; no bounce light',
     },
@@ -364,7 +364,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Diffuse-only early global illumination look with no glossy reflections anywhere.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Radiosity Color Bleed as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Radiosity render: early global illumination where colored surfaces tint their neighbors with soft, slightly blotchy bounced light. Carry it through strong color bleeding, diffuse bounce only, matte surfaces, soft darkened corners, blotchy light maps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'strong color bleeding; diffuse bounce only; matte surfaces; soft darkened corners; blotchy light maps',
     },
@@ -396,7 +396,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Calm and sculptural, the scene stripped back to pure form.',
       rendering_and_quality: 'Clean GI clay render; distinct from a sculpting-app matcap viewport.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grey Clay Lighting Test as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Grey clay lighting test: a whole scene rendered with every material set to matte grey so only form, light and shadow remain. Carry it through all-grey matte materials, full global illumination, ambient occlusion in crevices, no textures, final shot framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'all-grey matte materials; full global illumination; ambient occlusion in crevices; no textures; final shot framing',
     },
@@ -429,7 +429,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Unconverged path-trace grain; not film grain and not a denoised image.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Progressive Preview Noise Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Progressive preview render: a path-traced image stopped early, still full of grain and bright fireflies before it converges. Carry it through heavy sample noise, bright fireflies, grainy shadows, unconverged glossy reflections, correct underlying light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'heavy sample noise; bright fireflies; grainy shadows; unconverged glossy reflections; correct underlying light',
     },
@@ -458,7 +458,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Dreamlike and uncanny, reality dissolving into colored mist.',
       rendering_and_quality: 'Real-time splat look with floaters; not a mesh and not a photograph.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gaussian Splat Capture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Gaussian splat capture: a real place reconstructed from photos as millions of soft colored ellipsoids, photoreal from the capture angle and fuzzy at the edges. Carry it through soft ellipsoid splats, floaters in the air, photoreal core, fuzzy silhouettes, baked captured lighting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'soft ellipsoid splats; floaters in the air; photoreal core; fuzzy silhouettes; baked captured lighting',
     },
@@ -490,7 +490,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Cozy and toy-like, a pocket world that runs anywhere.',
       rendering_and_quality: 'Mobile game render look; no real-time GI and no HUD.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Baked Lightmap Mobile Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Baked lightmap mobile render: a low-poly game scene whose light and shadow are painted into textures in advance, with vertex colors and unlit fake glows. Carry it through baked soft shadows, low-poly shapes, vertex color warmth, glow cards, lightmap seams. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'baked soft shadows; low-poly shapes; vertex color warmth; glow cards; lightmap seams',
     },
@@ -524,7 +524,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Technical and precise, an asset under careful review.',
       rendering_and_quality: 'VFX lookdev presentation; the color chart has no readable labels.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lookdev Reference Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Lookdev reference plate: a CG asset presented beside a chrome ball, a grey ball and a color chart, lit by a studio HDRI for material approval. Carry it through chrome ball and grey ball, color chart, neutral studio HDRI, centered asset, material approval framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'chrome ball and grey ball; color chart; neutral studio HDRI; centered asset; material approval framing',
     },
@@ -558,7 +558,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Believable and startling, the impossible standing in a real place.',
       rendering_and_quality: 'Seamless VFX composite; no floating, unshadowed cutout look.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Live-Action Plate Integration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Live-action plate integration: a CG element composited into real photographed footage, matched in light direction, grain, lens blur and color. Carry it through CG in a real photographed plate, matched grain and lens, contact shadows on real ground, plate HDRI lighting, interaction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'CG in a real photographed plate; matched grain and lens; contact shadows on real ground; plate HDRI lighting; interaction',
     },
@@ -591,7 +591,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Nostalgic and cinematic, digital worlds dressed as old celluloid.',
       rendering_and_quality: 'CG with film emulation baked in; no clean digital sharpness.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Film-Emulated CG Beauty Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Film-emulated CG: a fully computer-generated shot graded to look photographed on 35 mm film, with grain, halation, gate weave and lens imperfections. Carry it through CG graded as 35 mm film, organic grain, highlight halation, gate weave, lens vignette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'CG graded as 35 mm film; organic grain; highlight halation; gate weave; lens vignette',
     },

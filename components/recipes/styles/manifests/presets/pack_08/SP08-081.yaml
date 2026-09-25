@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Relaxed, elegant framing with restrained composition, keeping the full outfit silhouette and fit readable at card size.
   atmosphere_and_mood: Assured, discreet and effortless, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Refined, soft-contrast finish, with believable fabric weight, seams and fit detail.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Quiet Luxury Cashmere as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Quiet luxury: impeccably cut, unbranded clothes in the finest materials, where wealth is legible only to those who know. Carry it through unbranded cashmere, tonal neutrals, perfect tailoring, discreet wealth, soft warm light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: unbranded cashmere; tonal neutrals; perfect tailoring; discreet wealth; soft warm light
 avoidRules:
   - brand logo

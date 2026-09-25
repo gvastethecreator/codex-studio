@@ -28,7 +28,7 @@ visualDna:
   camera_and_composition: Lens at ankle height, horizon in the lower third, subject approaching head-on or at a slight angle.
   atmosphere_and_mood: Low, fast and immersive, as if running alongside.
   rendering_and_quality: Controlled ground streaking only in the near band and a crisp, stable subject.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ground-Skim Low Tracking Shot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Anime ground-skim staging: the camera races just above the ground ahead of the subject, so the near ground rushes in stretched detail at the bottom of the frame and the subject looms toward the lens from a low angle. Carry it through ankle-height camera ahead of subject, near ground stretched into streaks, horizon in lower third, shadow toward camera, looming low angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: ankle-height camera ahead of subject; near ground stretched into streaks; horizon in lower third; shadow toward camera; looming low angle
 avoidRules:
   - added opponent

@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
       key_features: 'pure color dots; optical mixing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pointillism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pointillism: the image built from small dots of pure color that mix optically. Carry it through pure color dots, optical mixing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -56,7 +56,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
       key_features: 'cut tesserae; flowing rows; grout',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mosaic (Tile) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Stone tile mosaic: cut stone and ceramic tesserae laid in flowing rows. Carry it through cut tesserae, flowing rows, grout. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -84,7 +84,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
       key_features: 'colored glass; lead came; transmitted glow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stained Glass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Stained glass: colored glass pieces joined by dark lead came, glowing with transmitted light. Carry it through colored glass, lead came, transmitted glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -113,7 +113,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Divisionist Color Dots as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Divisionism: short directional dashes and dots of separated color. Carry it through directional color dashes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'directional color dashes',
     },
     ui: {
@@ -146,7 +146,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Byzantine Gold Tessera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Byzantine mosaic: glass and gold-leaf tesserae set at angles to shimmer. Carry it through gold-leaf tesserae, angled shimmer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'gold-leaf tesserae; angled shimmer',
     },
     ui: {
@@ -179,7 +179,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Roman Floor Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Roman floor mosaic: small limestone tesserae in earthy tones with guilloche borders. Carry it through limestone tesserae, guilloche border. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'limestone tesserae; guilloche border',
     },
     ui: {
@@ -211,7 +211,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Micro-Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Micro-mosaic: tiny glass rods cut into minute tesserae, painterly and fine. Carry it through minute smalti, painterly fine. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'minute smalti; painterly fine',
     },
     ui: {
@@ -243,7 +243,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pique-Assiette Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pique-assiette: broken china plates and cups reassembled into mosaic. Carry it through broken china shards, patterned pieces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'broken china shards; patterned pieces',
     },
     ui: {
@@ -275,7 +275,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pebble Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pebble mosaic: smooth river pebbles set on edge in patterns. Carry it through pebbles on edge, flowing patterns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'pebbles on edge; flowing patterns',
     },
     ui: {
@@ -307,7 +307,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sea Glass Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sea glass: frosted rounded glass fragments assembled against light. Carry it through frosted sea glass, backlit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'frosted sea glass; backlit',
     },
     ui: {
@@ -339,7 +339,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Button Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Button mosaic: hundreds of sewing buttons forming the image. Carry it through assorted buttons, visible holes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'assorted buttons; visible holes',
     },
     ui: {
@@ -371,7 +371,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fuse Bead Pixel Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fuse beads: melted plastic tube beads on a pegboard grid. Carry it through fused tube beads, center holes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'fused tube beads; center holes',
     },
     ui: {
@@ -403,7 +403,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rhinestone Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Rhinestone mosaic: faceted crystals set edge to edge. Carry it through faceted rhinestones, sparkle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'faceted rhinestones; sparkle',
     },
     ui: {
@@ -435,7 +435,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Opus Sectile Inlay as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Opus sectile: large cut stone shapes fitted into a picture. Carry it through cut stone shapes, hairline joints. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'cut stone shapes; hairline joints',
     },
     ui: {
@@ -467,7 +467,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pietra Dura as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pietra dura: polished hardstones inlaid seamlessly into black marble. Carry it through hardstone inlay on black marble. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'hardstone inlay on black marble',
     },
     ui: {
@@ -499,7 +499,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Marquetry Wood Inlay as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Marquetry: veneers of different woods cut and fitted into pictures. Carry it through wood veneers, fitted seams. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'wood veneers; fitted seams',
     },
     ui: {
@@ -532,7 +532,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tiffany Lampshade Glass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tiffany-style lamp glass: opalescent glass pieces with copper-foil seams glowing warmly. Carry it through opalescent glass, copper-foil seams, warm glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'opalescent glass; copper-foil seams; warm glow',
     },
     ui: {
@@ -565,7 +565,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grisaille Leaded Glass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Grisaille glass: clear and grey painted glass with fine lead lines and delicate shading. Carry it through grey painted glass, thin lead. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'grey painted glass; thin lead',
     },
     ui: {
@@ -598,7 +598,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fused Glass Slab as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fused glass: glass pieces kiln-fused into one slab with rounded edges and bubbles. Carry it through kiln-fused glass, rounded seams, bubbles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'kiln-fused glass; rounded seams; bubbles',
     },
     ui: {
@@ -630,7 +630,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paper Quilling Coils as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Quilling: rolled paper strip coils shaped and glued edge-on. Carry it through rolled paper coils, edge-on. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'rolled paper coils; edge-on',
     },
     ui: {

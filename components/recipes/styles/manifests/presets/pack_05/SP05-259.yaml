@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Tender and quietly brave, earnest as a bedtime story.
   rendering_and_quality: Simple silhouettes, uneven hand-drawn line weight and deliberate gaps in the coloring, never polished digital gloss.
   key_features: wobbly colored-pencil line; waxy crayon fills; dot eyes and rounded bodies; flat picture-book staging; paper tooth showing
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Picture-Book Crayon Line Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Fable-like anime drawn as a picture book: wobbly colored-pencil lineart, flat crayon-textured fills and simplified rounded shapes with small dot eyes. Carry it through wobbly colored-pencil line, waxy crayon fills, dot eyes and rounded bodies, flat picture-book staging, paper tooth showing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway

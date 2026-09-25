@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Spontaneous and reckless, bright center energy squeezed by dark corners.
   rendering_and_quality: Heavy optical vignette and saturated negative color; no light leaks, sprocket holes or cross-processing (other presets own those).
   key_features: tunnel vignette; saturated center; wide 32 mm closeness; tilted hip-shot horizon; soft corners
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lomo LC-A as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Lomo LC-A snapshot: a compact zone-focus camera with a wide 32 mm lens, shot fast from the hip on saturated color negative, known for its tunnel vignette. Carry it through tunnel vignette, saturated center, wide 32 mm closeness, tilted hip-shot horizon, soft corners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - clean digital sensor look
   - generic stock-photo face

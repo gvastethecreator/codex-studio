@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Three linked views aligned on one long sheet, laid out as a real sheet of this drawing type.
   atmosphere_and_mood: Elegant, precise, maritime and classic, from careful, purposeful drafting.
   rendering_and_quality: Precise technical drafting with consistent line weights and believable conventions.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Naval Lines Plan as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Naval lines plan: a ship's hull drawn as profile, half-breadth and body plan, with flowing waterlines and station curves. Carry it through profile, half-breadth, body plan, waterlines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: profile; half-breadth; body plan; waterlines
 avoidRules:
   - readable text

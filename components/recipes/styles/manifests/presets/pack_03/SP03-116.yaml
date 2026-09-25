@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; the angle shows both a toolpath-textured curve and a crisp pocket.
   atmosphere_and_mood: Precise and luxurious, weight and accuracy you can almost feel.
   rendering_and_quality: Machining evidence on every surface, never smooth cast metal or molded plastic.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies CNC Billet-Machined Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "CNC billet machining: the subject carved from a solid block of aluminum, with scalloped toolpath marks, pocketed recesses and crisp chamfers left by the mill. Carry it through solid billet aluminum, toolpath scallops, pocketed recesses, deburred chamfers, anodized accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: solid billet aluminum; toolpath scallops; pocketed recesses; deburred chamfers; anodized accents
 avoidRules:
   - multi-view asset sheet

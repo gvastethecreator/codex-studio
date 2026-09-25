@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; the glowing materials become the focal points.
   atmosphere_and_mood: Secret and eerie, hidden layers glowing out of the dark.
   rendering_and_quality: Real fluorescence with violet cast in shadows; not neon signs or painted glow.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies UV Fluorescence Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "UV fluorescence photography: the scene lit only by ultraviolet lamps so certain materials glow in their own vivid colors while everything else stays dark. Carry it through UV-only lighting, materials glowing in their own colors, black-violet shadows, hidden patterns revealed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: UV-only lighting; materials glowing in their own colors; black-violet shadows; hidden patterns revealed
 avoidRules:
   - illustration

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Stoic, fearsome, disciplined and ceremonial, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Rich, detailed lacquer finish, with believable fabric weight, seams and fit detail.
   key_features: lacquered lamellar plates; silk lacing; crested kabuto; menpō mask; stoic presence
-  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Samurai Armor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
+  creative_brief: "Ceremonial samurai armor: lacquered lamellar plates laced with silk cords, flared shoulder guards, a crested kabuto helmet and a menpō face mask. Carry it through lacquered lamellar plates, silk lacing, crested kabuto, menpō mask, stoic presence. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - readable label text

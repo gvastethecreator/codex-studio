@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Scrappy, determined and kinetic, a thing held together by will.
   rendering_and_quality: Keyframe rough energy with blue under-pencil, confident black line, smear distortion and spark dots; not a polished final cel.
   key_features: blue construction pencil under black line; smear-frame distortion; amber spark dots; iron and rust cel fills; scribbled hatching
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scrap Velocity Resilience as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Rough-key action animation drawing: blue construction pencil left under black cleanup line, smear-frame distortions, and painted spark dots on impact. Carry it through blue construction pencil under black line, smear-frame distortion, amber spark dots, iron and rust cel fills, scribbled hatching. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

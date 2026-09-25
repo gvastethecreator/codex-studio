@@ -143,7 +143,7 @@ const spec: Spec = {
       avoid: [...AVOID],
       briefs: [
         'Sagittal MRI slice of an adult human head showing the folds of the brain, the spinal cord and sinuses in smooth greyscale on black. No labels or text.',
-        'MRI slice through a pomegranate, hundreds of seed chambers bright against the dark rind structure. No labels or text.',
+        'Axial MRI slice through a pomegranate, hundreds of seed chambers glowing bright against the darker rind and membranes, smooth greyscale tones on black and a faint scan noise. No labels or text.',
         'Axial MRI slice through an adult knee, cartilage and ligaments in soft grey tones, bone dark. No labels or text.',
       ],
     },
@@ -250,8 +250,8 @@ const spec: Spec = {
       avoid: [...AVOID, 'map labels'],
       briefs: [
         'Multispectral satellite false-color image of a river delta fanning into the sea, the wetlands blazing red, channels black-blue, a small town cyan-grey. No labels or text.',
-        'Multispectral false-color image of a volcanic island with dark lava flows cutting through red forest. No labels or text.',
-        'Multispectral false-color image of circular irrigated fields in a desert, red discs on tan ground. No labels or text.',
+        'Multispectral satellite false-color image of a volcanic island, dark lava flows cutting through blazing red forest, black-blue sea around it and a cyan-grey port town on the coast. No labels or text.',
+        'Multispectral satellite false-color image of circular irrigated fields in a desert, bright red discs on tan ground, a black-blue reservoir and a cyan-grey road grid between them. No labels or text.',
       ],
     },
     {
@@ -330,7 +330,7 @@ const spec: Spec = {
       briefs: [
         'Nuclear scintigraphy whole-body bone scan of an adult skeleton, front and back views side by side, joints glowing as dark hot spots in inverted greyscale, coarse counting noise. No labels or text.',
         'Scintigraphy image of a pair of hands showing tracer glowing in the knuckles, blurry low-resolution outline. No labels or text.',
-        'Scintigraphy heart image as a glowing red-yellow ring on black, grainy and soft. No labels or text.',
+        'Nuclear scintigraphy heart image showing the heart wall as a glowing red-yellow ring on black, grainy low-resolution counting noise and soft blurred edges, a faint second ring from a later view. No labels or text.',
       ],
     },
     {
@@ -356,7 +356,7 @@ const spec: Spec = {
       briefs: [
         'Hyperspectral data cube of a forest canopy seen from above, the canopy image on the top face and rainbow spectral band streaks running down the cube sides, isometric view. No axes or text.',
         'Hyperspectral data cube of a coral reef, the reef on the top face and the sides glowing in band gradients. No axes or text.',
-        'Hyperspectral data cube of a hillside vineyard in rows, spectral striations along the edges. No axes or text.',
+        'Hyperspectral data cube of a hillside vineyard in parallel rows, the image on the top face and rainbow spectral striations running down the cube sides, isometric view on white. No axes or text.',
       ],
     },
     {
@@ -409,7 +409,7 @@ const spec: Spec = {
       briefs: [
         'Ground-penetrating radar profile over a buried stone road, a row of bright hyperbola arcs marking its paving stones beneath grey banding. No scales or text.',
         'Ground-penetrating radar profile across a church floor revealing a hidden crypt as a dark void with bright ringing arcs. No scales or text.',
-        'Ground-penetrating radar profile over a buried chest, one strong hyperbola among faint arcs of stones. No scales or text.',
+        'Ground-penetrating radar profile over a buried treasure chest, one strong bright hyperbola among faint arcs from scattered stones, grey horizontal soil bands above and below. No scales or text.',
       ],
     },
     {
@@ -464,7 +464,7 @@ const spec: Spec = {
       briefs: [
         'Bubble chamber photograph of a particle collision, beam tracks entering from the left and bursting into curving and spiraling dotted lines, fiducial crosses on the grey liquid. No numbers or text.',
         'Bubble chamber photograph of a V-shaped decay appearing out of nowhere beside a tight spiral, cyan-tinted archival film. No numbers or text.',
-        'Bubble chamber photograph of a spray of tracks fanning out from a high-energy event. No numbers or text.',
+        'Bubble chamber photograph of a spray of particle tracks fanning out from a single high-energy event, dotted bubble lines curving in opposite directions, fiducial crosses on grey liquid. No numbers or text.',
       ],
     },
     {
@@ -491,7 +491,7 @@ const spec: Spec = {
       avoid: [...AVOID],
       briefs: [
         'Retinal fundus photograph of an adult eye, the orange-red retina glowing inside a black circle, dark red vessels branching from a pale yellow optic disc. No labels or text.',
-        'Retinal fundus photograph centered on the optic disc, vessels radiating like rivers, soft reflex sheen. No labels or text.',
+        'Retinal fundus photograph centered on the bright yellow optic disc, dark red vessels radiating outward like rivers across the orange retina, a soft reflex sheen and the black circle of the pupil edge. No labels or text.',
         "Retinal fundus photograph of a cat's eye, its reflective layer shimmering green-gold above the red lower retina. No labels or text.",
       ],
     },
@@ -542,7 +542,7 @@ const spec: Spec = {
       avoid: [...AVOID, 'map borders'],
       briefs: [
         'Satellite night-lights image of a coastline from orbit, cities glowing as gold clusters linked by threads of road, the sea black, blue airglow along the planet edge. No labels or text.',
-        'Satellite night-lights image of a winding river valley traced by a chain of glowing towns. No labels or text.',
+        'Satellite night-lights image of a winding river valley traced by a chain of glowing gold towns, black forests and mountains on both sides, a thin blue airglow along the horizon. No labels or text.',
         "Satellite night-lights image of a mountain-ringed kingdom's cities glowing along a single trade road, dark peaks all around. No labels or text.",
       ],
     },

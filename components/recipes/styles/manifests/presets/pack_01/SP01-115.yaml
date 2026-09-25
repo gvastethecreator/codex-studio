@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low angle so the object and its cast caustic shadow share the frame, generous empty surface.
   atmosphere_and_mood: Quiet and luminous, light itself becoming the ornament.
   rendering_and_quality: Real photographic caustics; not a CGI material render.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hard-Light Glass Still Life as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hard-light glass still life: a small hard spotlight shining through glass or liquid so the object throws bright caustic patterns and colored shadows onto a pale surface. Carry it through hard spot through glass, caustic light pool, colored cast shadow, pale ground, low angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: hard spot through glass; caustic light pool; colored cast shadow; pale ground; low angle
 avoidRules:
   - illustration

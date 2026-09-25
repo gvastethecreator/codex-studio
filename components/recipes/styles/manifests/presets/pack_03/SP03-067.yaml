@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Quietly uncanny, the body upgraded with calm surgical precision.
   rendering_and_quality: Photoreal skin and metal rendered together, the join clean and believable rather than gory or bolted on.
   key_features: flush implant modules; skin-to-metal seam; chrome and white ceramic; small status light; subsurface skin with hard metal rim
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Flush-Seam Cyber Implant as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cyber implant integration: machined chrome and white ceramic modules set flush into skin, with the seam between flesh and metal as the focal detail. Carry it through flush implant modules, skin-to-metal seam, chrome and white ceramic, small status light, subsurface skin with hard metal rim. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - multi-view asset sheet
   - fake labels

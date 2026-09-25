@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Immersive and breathless, the viewer strapped into the motion with no safe distance.
   rendering_and_quality: 'Consumer action-cam realism: crisp center, stretched corners, no cinematic depth of field or smooth grading.'
   key_features: 150-degree fisheye; curved horizon; wearer or gear in frame; droplets on the dome; deep focus
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies GoPro Wide as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Action-camera point of view: a tiny ultra-wide camera strapped to a helmet, chest, handlebar or pole, seeing about 150 degrees with a bulging fisheye curve. Carry it through 150-degree fisheye, curved horizon, wearer or gear in frame, droplets on the dome, deep focus. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - staged advertisement
   - stock-photo gloss

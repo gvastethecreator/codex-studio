@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Silent, buried and ancient, cool air far below ground.
   rendering_and_quality: Low-light photograph with carved tool marks and mineral crust detail, niches empty, no human remains or horror display.
   key_features: carved chalk and tuff chambers; low compressed barrel vaults; walls of empty stacked niches; calcite crust; lantern-only light
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ossuary Subterranean as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Ossuary subterranean architecture: chambers carved into chalk, tuff or limestone, with low compressed barrel vaults and walls of empty stacked niches, crusted with calcite. Carry it through carved chalk and tuff chambers, low compressed barrel vaults, walls of empty stacked niches, calcite crust, lantern-only light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - one-point corridor perspective as default
   - wet mirror-gloss floor as default

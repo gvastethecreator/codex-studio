@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Rugged, casual, confident and Americana, carried by how the material moves and catches light.
   rendering_and_quality: Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.
   key_features: mixed denim washes; contrast topstitching; copper rivets; whiskered fading
-  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Denim on Denim as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
+  creative_brief: "Denim on denim: head-to-toe denim in mixed washes, with visible selvedge, contrast topstitching and fading. Carry it through mixed denim washes, contrast topstitching, copper rivets, whiskered fading. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - readable label text

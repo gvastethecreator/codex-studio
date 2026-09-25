@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Watchful and uneasy, something appearing in one feed and not in the others.
   rendering_and_quality: Multi-feed monitor presentation; distinct from the single-camera CCTV profile in pack_01; no readable labels.
   key_features: two-by-two feed grid; CRT curvature and scanlines; high-corner views; grainy monochrome; one anomaly
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies CCTV/Security Cam as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Security monitor wall: several CCTV feeds shown together in a quad split on a CRT monitor, so the scene is seen from four fixed cameras at once. Carry it through two-by-two feed grid, CRT curvature and scanlines, high-corner views, grainy monochrome, one anomaly. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable fake text
   - readable ticker

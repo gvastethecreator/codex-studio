@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Romantic and fleeting, the last few minutes of good light on set.
   rendering_and_quality: Filmic highlight rolloff and flare veiling; the still-photo golden hour lives in pack_01.
   key_features: sun directly behind subject; bounce-filled faces; rim and flare; warm film grade; 3:1 ratio
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Magic Hour Backlight as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Magic-hour backlight cinematography: the low sun placed directly behind the subject, with a bounce board filling faces and a warm film grade. Carry it through sun directly behind subject, bounce-filled faces, rim and flare, warm film grade, 3:1 ratio. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested location
   - franchise likeness

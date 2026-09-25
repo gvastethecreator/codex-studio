@@ -22,7 +22,7 @@ visualDna:
   atmosphere_and_mood: Sacred, precious, opulent and still, carried by the material itself rather than by added props.
   rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
   key_features: gold leaf seams; crackle over red bole; burnished highlights
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gold Leaf as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Gold leaf: thin beaten gold applied over the target with visible leaf seams, crackle and burnish. Carry it through gold leaf seams, crackle over red bole, burnished highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - material applied to the background instead of the target
   - unrequested sample object or habitat

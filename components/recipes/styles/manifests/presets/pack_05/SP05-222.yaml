@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Procedural, dry and quietly funny, workday calm where a machine is just another piece of equipment.
   rendering_and_quality: Hand-painted cel finish with slight registration shift, faint film grain and precise mechanical line; no digital glow or bloom.
   key_features: pencil-precise 1980s OVA line; two-tone cel shading; poster-color daylight backgrounds; teal and amber utility palette; faint film grain
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Municipal Machine Procedure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Late-1980s police-procedural OVA cel: precise pencil-traced line, two-tone hand-painted cel shading, and poster-color painted backgrounds of ordinary city daylight. Carry it through pencil-precise 1980s OVA line, two-tone cel shading, poster-color daylight backgrounds, teal and amber utility palette, faint film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

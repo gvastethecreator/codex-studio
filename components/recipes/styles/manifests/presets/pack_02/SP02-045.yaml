@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Nostalgic and playful, a game world alive in few pixels.
   rendering_and_quality: Clean pixel grid with no anti-aliasing or blur.
   key_features: indexed palette; pixel grid; stepped shading ramps; dithering; sprite animation frames
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pixel Art Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Pixel-art animation: 16-bit sprites and tiles with a limited indexed palette, animated in a few hand-placed frames. Carry it through indexed palette, pixel grid, stepped shading ramps, dithering, sprite animation frames. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - exact studio character copy
   - franchise likeness

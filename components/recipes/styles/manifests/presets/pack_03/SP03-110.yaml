@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Three-quarter view looking into the section plane, the cut face turned about forty-five degrees toward the camera.
   atmosphere_and_mood: Analytical and revealing, the inside of a thing shown plainly.
   rendering_and_quality: Precise boolean section with crisp cap edges and no hatching, dimension lines or labels.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Half-Section Engineering Cutaway as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Engineering half-section: the subject sliced exactly in half on one clean plane, the cut faces capped in flat color so walls, cavities and mechanisms read at once. Carry it through single section plane, flat colored cut caps, exposed wall thickness, cavities with occlusion, untouched exterior half. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: single section plane; flat colored cut caps; exposed wall thickness; cavities with occlusion; untouched exterior half
 avoidRules:
   - multi-view asset sheet

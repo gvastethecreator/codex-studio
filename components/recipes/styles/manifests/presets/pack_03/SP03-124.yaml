@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; the growth direction of the vines leads the eye upward across the subject.
   atmosphere_and_mood: Patient and reclaiming, nature quietly taking something back.
   rendering_and_quality: Branching with correct taper and attachment, with no floating leaves or random green noise.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Space-Colonization Vine Overgrowth as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Procedural vine overgrowth: branching stems grown by a space-colonization algorithm, climbing and wrapping every surface of the subject toward the light. Carry it through algorithmic branching vines, taper from root to tip, tendrils gripping edges, dappled leaf shadows, growth toward light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: algorithmic branching vines; taper from root to tip; tendrils gripping edges; dappled leaf shadows; growth toward light
 avoidRules:
   - forced T-pose

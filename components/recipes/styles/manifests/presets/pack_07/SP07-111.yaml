@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; show a trained tree flat against the wall as a pattern, beds in a grid leading to it.
   atmosphere_and_mood: Orderly, bountiful and patient, a garden that feeds a house.
   rendering_and_quality: Natural-light photograph with branch-training pattern crisp on the brick, no plastic tunnels.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Walled Espalier Potager as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Walled espalier potager: a brick-walled kitchen garden where fruit trees are trained flat against the warm walls in fans and tiers, and vegetables grow in box-edged geometric beds. Carry it through fan-trained fruit trees flat on brick walls, box-edged vegetable beds, terracotta forcing pots, glass cold frames, gravel grid paths. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: fan-trained fruit trees flat on brick walls; box-edged vegetable beds; terracotta forcing pots; glass cold frames; gravel grid paths
 avoidRules:
   - golden-hour garden postcard formula

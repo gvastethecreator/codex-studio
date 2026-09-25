@@ -28,7 +28,7 @@ visualDna:
   camera_and_composition: Static eye-level camera; the passing subject fills one side of the frame, cut by two frame edges, while the background occupies the rest.
   atmosphere_and_mood: A sudden whoosh, the viewer almost brushed by the movement.
   rendering_and_quality: Controlled focus split between the soft near mass and the sharp background, with the subject still identifiable.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Near-Lens Pass-By Frame as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Anime pass-by staging: the moving subject sweeps past extremely close to the lens, a large part of it cropped and softly blurred in the near foreground, while the setting behind stays sharp. Carry it through subject sweeping past the lens, cropped by two frame edges, soft near-lens defocus, sharp background, bright edge on passing mass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: subject sweeping past the lens; cropped by two frame edges; soft near-lens defocus; sharp background; bright edge on passing mass
 avoidRules:
   - added opponent

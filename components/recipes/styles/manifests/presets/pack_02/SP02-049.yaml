@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Sunny and nostalgic, a family slide show on a summer evening.
   rendering_and_quality: Projected-transparency glow; the stock response itself belongs to Kodachrome 64 in pack_01.
   key_features: projected slide glow; red and blue dye richness; center hot spot; dust specks on the slide; warm projector cast
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kodachrome (50s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Projected 1950s Kodachrome slide: mid-century reversal color seen as a lit transparency, with projector glow, slight vignetting and dust on the slide. Carry it through projected slide glow, red and blue dye richness, center hot spot, dust specks on the slide, warm projector cast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - illustration
   - painting

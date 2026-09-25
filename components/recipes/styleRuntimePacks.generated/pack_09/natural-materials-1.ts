@@ -26,7 +26,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'raw open oak grain; ray flecks; tool marks; matte dry fibers',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oak Wood (Raw) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Raw oak wood: unfinished quarter-sawn oak with open grain, ray flecks and dry, matte fibers. Carry it through raw open oak grain, ray flecks, tool marks, matte dry fibers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -54,7 +54,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'polished mahogany gloss; ribbon figure; amber highlights; deep red-brown',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mahogany (Polished) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Polished mahogany: deep red-brown hardwood with a mirror-like French polish and flowing figure. Carry it through polished mahogany gloss, ribbon figure, amber highlights, deep red-brown. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -80,7 +80,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'papery white bark; dark lenticels; curling peels; peach inner layer',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Birch Bark as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Birch bark: papery white bark with dark horizontal lenticels, curling peels and chalky texture. Carry it through papery white bark, dark lenticels, curling peels, peach inner layer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -107,7 +107,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'polished speckled granite; mica sparkle; hard reflections; crystalline grain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Granite (Polished) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Polished granite: speckled crystalline stone polished to a hard reflective surface. Carry it through polished speckled granite, mica sparkle, hard reflections, crystalline grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -134,7 +134,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'rough granular sandstone; bedding bands; wind erosion; warm ochre',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sandstone (Rough) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Rough sandstone: layered sedimentary stone with granular surface and warm bands. Carry it through rough granular sandstone, bedding bands, wind erosion, warm ochre. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -161,7 +161,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'white Carrara marble; grey veining; translucent glow; carved detail',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Marble (Carrara) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Carrara marble: white marble with soft grey veining, polished or finely carved. Carry it through white Carrara marble, grey veining, translucent glow, carved detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -188,7 +188,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'split slate sheets; stepped cleavage; riven faces; blue-grey',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Slate (Split) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Split slate: dark layered stone that cleaves into thin sheets with sharp, stepped edges. Carry it through split slate sheets, stepped cleavage, riven faces, blue-grey. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -215,7 +215,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'moss cushions; lichen patches; damp weathered stone; forest green',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mossy Rock as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Mossy rock: weathered stone covered in cushions of green moss and lichen. Carry it through moss cushions, lichen patches, damp weathered stone, forest green. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -242,7 +242,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'fitted rounded pebbles; water-polished; wet gloss; mosaic packing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies River Stones as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "River stones: smooth, rounded pebbles fitted together like a mosaic. Carry it through fitted rounded pebbles, water-polished, wet gloss, mosaic packing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -270,7 +270,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'black volcanic glass; conchoidal fractures; razor edges; rainbow sheen',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Obsidian as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Obsidian: black volcanic glass with conchoidal fractures, razor edges and glassy sheen. Carry it through black volcanic glass, conchoidal fractures, razor edges, rainbow sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -298,7 +298,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'dense grey fur; guard hairs; directional flow; backlit halo',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wolf Fur as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Wolf fur: dense grey-brown guard hairs over a soft underfur, with directional flow. Carry it through dense grey fur, guard hairs, directional flow, backlit halo. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -326,7 +326,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'overlapping snake scales; patterned bands; iridescent sheen; scale edges',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Snake Scales as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Snake scales: overlapping keeled or smooth scales with iridescent sheen and patterned bands. Carry it through overlapping snake scales, patterned bands, iridescent sheen, scale edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -354,7 +354,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'overlapping feathers; barbs and shafts; plumage rows; iridescent sheen',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bird Feathers as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bird feathers: overlapping contour feathers with barbs, shafts and iridescent sheen. Carry it through overlapping feathers, barbs and shafts, plumage rows, iridescent sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -382,7 +382,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'branching and brain coral; polyps; porous calcareous texture; caustic light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Coral Reef as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Coral reef: branching and brain corals growing over the target in bright calcareous forms. Carry it through branching and brain coral, polyps, porous calcareous texture, caustic light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -410,7 +410,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'hexagonal wax cells; honey drips; glowing amber; waxy sheen',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Honeycomb Wax as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Honeycomb wax: hexagonal beeswax comb with golden translucent cells and honey drips. Carry it through hexagonal wax cells, honey drips, glowing amber, waxy sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -438,7 +438,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'deep blue glacier ice; trapped bubbles; fracture planes; translucent depth',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glacier Ice as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Glacier ice: dense blue ice with trapped bubbles, fracture planes and melt-smoothed surfaces. Carry it through deep blue glacier ice, trapped bubbles, fracture planes, translucent depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -465,7 +465,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'porous sea sponge; irregular holes; soft tan fibers',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sponge (Sea) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sea sponge: porous organic sponge with irregular holes and soft tan fibers. Carry it through porous sea sponge, irregular holes, soft tan fibers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -493,7 +493,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'faceted gem crystal; internal refraction; inclusions; spectral fire',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crystal/Gemstone as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Crystal and gemstone: faceted translucent crystal with internal refractions and color zones. Carry it through faceted gem crystal, internal refraction, inclusions, spectral fire. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -520,7 +520,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'dusty cobweb layers; backlit strands; sagging sheets',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cobweb as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cobweb: dense dusty spider silk draped in layers over the target. Carry it through dusty cobweb layers, backlit strands, sagging sheets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -547,7 +547,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'packed sand sculpture; crumbling edges; fine grains; wet and dry tones',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sand (Beach) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Beach sand: fine packed sand sculpted into the target, with grain texture and crumbling edges. Carry it through packed sand sculpture, crumbling edges, fine grains, wet and dry tones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -575,7 +575,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'porous lava rock; vesicles; ropy flow; charcoal and rust',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lava Rock (Cooled) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cooled lava rock: porous black-red basalt scoria with vesicles and ropy flow texture. Carry it through porous lava rock, vesicles, ropy flow, charcoal and rust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -603,7 +603,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'iridescent nacre; color-shifting sheen; inlay seams',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mother of Pearl as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Mother of pearl: iridescent nacre with shimmering color shifts and layered sheen. Carry it through iridescent nacre, color-shifting sheen, inlay seams. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -630,7 +630,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'large overlapping dragon scales; ridges; metallic sheen; battle scratches',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dragon Scale as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dragon scale: large armored overlapping scales with ridges, metallic sheen and battle scratches. Carry it through large overlapping dragon scales, ridges, metallic sheen, battle scratches. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

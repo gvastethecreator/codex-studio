@@ -20,7 +20,7 @@ visualDna:
   camera_and_composition: Wide 24–26 mm equivalent from arm length, face large and off-center, background context partially cut, occasional tilt.
   atmosphere_and_mood: Spontaneous, personal, and shareable.
   rendering_and_quality: Convincing phone image, not a professional portrait; no studio polish.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Selfie Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Front-camera smartphone selfie: arm-length wide lens, casual social framing, computational processing, and the charm of an unplanned moment. Carry it through arm-length wide lens, phone HDR, computational smoothing, tilted casual framing, visible arm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: arm-length wide lens; phone HDR; computational smoothing; tilted casual framing; visible arm
 avoidRules:
   - generic stock-photo face

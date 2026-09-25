@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Silent and tense, patience measured in footsteps.
   rendering_and_quality: Clean value design where shadow and light zones read at a glance.
   key_features: lit and unlit zones; hard-edged light pools; cool blue shadows; warm lantern light; visible hiding path
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stealth Game Shadow Readability as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Stealth art direction: the world divided into readable lit and unlit zones, cool blue shadow where you hide and warm pools where you are seen. Carry it through lit and unlit zones, hard-edged light pools, cool blue shadows, warm lantern light, visible hiding path. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - known game HUD layout

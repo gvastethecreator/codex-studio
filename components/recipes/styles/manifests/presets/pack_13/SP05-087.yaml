@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: 'Keep the requested mood; stillness comes from sparse marks and gentle contrast, not an imposed setting or emotion.'
   rendering_and_quality: 'Use clean edge control, softened distance only where present, and enough local detail to keep all prompted elements distinct.'
   key_features: 'Fine contour; broad light washes; low detail density; diffuse shadow edges; selective focal texture.'
-  creative_brief: "Let pale washes and spare surface marks provide breathing room within the user's composition. Preserve the requested subject, action, count, camera, and mood."
+  creative_brief: "Let pale washes and spare surface marks provide breathing room within the user's composition. Preserve the requested subject, action, count, camera, and mood. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

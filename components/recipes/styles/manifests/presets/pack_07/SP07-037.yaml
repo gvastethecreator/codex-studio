@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Hypnotic, cool and dreamlike, as if breathing underwater.
   rendering_and_quality: Photograph with correct depth colour loss, clean caustics and particle depth, no fish mascots.
   key_features: blue depth attenuation; rippling caustic nets; thick curved acrylic distortion; suspended particles; dark silhouettes against glowing water
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Immersive Aquarium Optics as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Immersive aquarium optics: a room seen through or beside thick acrylic water walls, where blue attenuation, refraction and caustics shape everything. Carry it through blue depth attenuation, rippling caustic nets, thick curved acrylic distortion, suspended particles, dark silhouettes against glowing water. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - one-point corridor perspective as default
   - wet mirror-gloss floor as default

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Grave and intimate, a hush before a decision.
   rendering_and_quality: Low-key film exposure with detail kept in the midtones.
   key_features: single high side key; negative fill; 8:1 contrast ratio; lit cheek triangle; umber grade
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cinematic Chiaroscuro Key as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cinematic chiaroscuro key: one large soft source high to the side with heavy negative fill, producing deep contrast ratios and sculpted faces. Carry it through single high side key, negative fill, 8:1 contrast ratio, lit cheek triangle, umber grade. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested location
   - franchise likeness

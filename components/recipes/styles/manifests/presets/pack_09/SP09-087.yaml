@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.
   atmosphere_and_mood: Silent, eerie, suspended and bleak, carried by the material itself rather than by added props.
   rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ash Fall Coating as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Ash fall coating: fine grey volcanic ash settled over the target, softening edges. Carry it through grey ash drifts, softened edges, monochrome, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: grey ash drifts; softened edges; monochrome; surface-level damage; structure intact
 avoidRules:
   - material applied to the background instead of the target

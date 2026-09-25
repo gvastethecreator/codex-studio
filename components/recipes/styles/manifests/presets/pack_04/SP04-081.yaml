@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Quick and searching, hunting for the one pose that reads.
   rendering_and_quality: Rough ink thumbnails only, no internal detail, no rendering, no finished figure.
   key_features: scattered pose silhouettes; black brush-pen fills; toned sketchbook paper; grey ground-shadow ellipses; gesture readability test
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thumbnail Silhouette Exploration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Pose silhouette thumbnails: the subject drawn as a scatter of small solid brush-pen silhouettes in different poses and actions, testing gesture readability. Carry it through scattered pose silhouettes, black brush-pen fills, toned sketchbook paper, grey ground-shadow ellipses, gesture readability test. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable annotations
   - readable text

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Asset centered, chrome and grey balls and a small color chart placed to one side.
   atmosphere_and_mood: Technical and precise, an asset under careful review.
   rendering_and_quality: VFX lookdev presentation; the color chart has no readable labels.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lookdev Reference Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Lookdev reference plate: a CG asset presented beside a chrome ball, a grey ball and a color chart, lit by a studio HDRI for material approval. Carry it through chrome ball and grey ball, color chart, neutral studio HDRI, centered asset, material approval framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: chrome ball and grey ball; color chart; neutral studio HDRI; centered asset; material approval framing
 avoidRules:
   - 2d illustration

@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Composed, theatrical command held with cold, upright dignity.
   rendering_and_quality: Hard-edged blocks, hairline edge ornament and no gradients at all.
   key_features: flat crimson and black blocks; tapered hairline edge ornament; ivory highlights; three-value hierarchy; hard shadow edges
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crimson Gothic Authority Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Gothic seinen poster ink with hard black and crimson color blocks edged by fine tapered hairlines that decorate only existing contours; flat and heraldic. Carry it through flat crimson and black blocks, tapered hairline edge ornament, ivory highlights, three-value hierarchy, hard shadow edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

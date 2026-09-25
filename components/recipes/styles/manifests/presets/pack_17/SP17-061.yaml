@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Crooked portrait monster-card crop with one odd body or creature filling the panel, flat cobalt/orange color separation, and sparse dungeon support marks.
   atmosphere_and_mood: Cold, moldy, rude, subterranean, and handmade.
   rendering_and_quality: Limited-palette risograph with heavy black contour, dry hatch fields, riso bloom, rough cream gaps, and intentionally crude but legible anatomy.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cobalt Rot Risograph as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Cobalt and rot-orange dungeon zine print where fungal knights, swollen trolls, lumpy helmets, shields, boots, and rude hand-inked anatomy carry the style. Carry it through cobalt rot palette, fungal knight-monsters, lumpy OSR bodies, rough black hatching, flat riso panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: cobalt rot palette; fungal knight-monsters; lumpy OSR bodies; rough black hatching; flat riso panels; rude handmade dungeon print
 avoidRules:
   - shrine-object hero

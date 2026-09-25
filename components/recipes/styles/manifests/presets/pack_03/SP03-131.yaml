@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; a slightly low angle makes the dish look heroic and huge.
   atmosphere_and_mood: Cozy and mouthwatering, comfort food in a storybook kitchen.
   rendering_and_quality: Stylized feature-animation finish, distinct from hyperreal food advertising and from clay or toy food.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Animated-Film Food Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Animated-film food: dishes simplified into plump rounded shapes with exaggerated glossy sauces, jewel-bright colors and soft painterly subsurface, as cooked in a feature cartoon. Carry it through plump simplified food shapes, exaggerated glossy sauce, jewel-bright colors, colored shadows, backlit steam wisp. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: plump simplified food shapes; exaggerated glossy sauce; jewel-bright colors; colored shadows; backlit steam wisp
 avoidRules:
   - forced T-pose

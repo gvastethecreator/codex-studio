@@ -32,10 +32,7 @@ visualDna:
     Clear focal contour, quiet layers, no global bloom or sepia.
   key_features: >-
     Translucent overlap, warm-cool wash, soft edge intervals, clear focal contour
-  creative_brief: >-
-    Apply a visual treatment centered on translucent overlap, warm-cool wash, soft edge
-    intervals, clear focal contour. Preserve the exact subject, action, count, age, costume,
-    setting, camera, and mood. Add nothing outside the prompt.
+  creative_brief: "Apply a visual treatment centered on translucent overlap, warm-cool wash, soft edge intervals, clear focal contour. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Object close-up following the curve of a tooth or tusk.
   atmosphere_and_mood: Nautical, lonely, patient and old, driven by the construction, color and rhythm.
   rendering_and_quality: Fine engraved line work on bone, with clean, deliberate marks and no accidental noise.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scrimshaw Engraving as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Scrimshaw: fine lines scratched into polished ivory-colored bone and rubbed with black ink. Carry it through scratched lines, black ink fill, curved bone, age cracks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: scratched lines; black ink fill; curved bone; age cracks
 avoidRules:
   - readable text

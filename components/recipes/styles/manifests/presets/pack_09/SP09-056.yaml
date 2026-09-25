@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Powerful, magical, futuristic and intense, coming from the effect rather than added scenery.
   rendering_and_quality: Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.
   key_features: plasma aura; glowing filaments; local glow; contained around the target
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Plasma/Energy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Plasma energy: contained glowing energy — orbs, beams or auras — emanating from the target. Carry it through plasma aura, glowing filaments, local glow, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - material applied to the background instead of the target
   - unrequested sample object or habitat

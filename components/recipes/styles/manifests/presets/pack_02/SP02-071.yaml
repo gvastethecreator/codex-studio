@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Uneasy and stylized, a night that feels too bright.
   rendering_and_quality: Classic film trick look; not a real low-light exposure.
   key_features: daylight underexposed; blue night grade; hard sun shadows; darkened sky; silver glints
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Day for Night as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Day for night: a scene shot in daylight and underexposed, graded blue so it reads as moonlit night, with telltale hard sun shadows. Carry it through daylight underexposed, blue night grade, hard sun shadows, darkened sky, silver glints. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested location
   - franchise likeness

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Sacred, luminous, solemn and grand, driven by the construction, color and rhythm.
   rendering_and_quality: Clear stained-glass construction where every piece reads, with clean, deliberate marks and no accidental noise.
   key_features: colored glass pieces; lead came; backlight; window shape
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stained Glass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Stained glass window: the subject built from colored glass pieces joined by dark lead lines and lit from behind. Carry it through colored glass pieces, lead came, backlight, window shape. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

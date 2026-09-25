@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Airy, calm and green, a garden lifted off the ground.
   rendering_and_quality: Natural-light photograph with real planting variety, no recognisable real skyline or landmark.
   key_features: modular deep planters; horizontal timber decks; layered grasses and multi-stem trees; integrated low lighting; height at the balustrade
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Elevated Biophilic Terrace as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Elevated biophilic terrace: planted terraces and balconies on a building, with modular deep planters, horizontal timber decks and layered grasses and small trees in the air. Carry it through modular deep planters, horizontal timber decks, layered grasses and multi-stem trees, integrated low lighting, height at the balustrade. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - golden-hour garden postcard formula
   - corten steel edging as default

@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'two-heads-tall proportions; oversized round head; thick clean outline; blush ovals; oversized props',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chibi Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Chibi super-deformed drawing: every character redrawn about two heads tall with a huge round head, tiny limbs and stubby mitten hands. Carry it through two-heads-tall proportions, oversized round head, thick clean outline, blush ovals, oversized props. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -56,7 +56,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'pencil underdrawing; transparent watercolor washes; vignette on white paper; naturalist animal detail; botanical pastels',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Watercolor Storybook as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Classic watercolor storybook: light pencil underdrawing tinted with transparent washes, small animals and cottages observed with naturalist care. Carry it through pencil underdrawing, transparent watercolor washes, vignette on white paper, naturalist animal detail, botanical pastels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -84,7 +84,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'hand-painted tissue papers; scissor-cut shapes; mottled brush texture inside shapes; white ground; overlapping layers',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paper Cutout (Collage) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Painted tissue collage: sheets of paper first painted with brushy textures, then cut and torn into shapes and layered into bold animals and landscapes. Carry it through hand-painted tissue papers, scissor-cut shapes, mottled brush texture inside shapes, white ground, overlapping layers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -112,7 +112,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'waxy pressure strokes; directional scribble fill; paper tooth; sky strip and grass baseline; corner sun',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crayon Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Wax crayon drawing made the way a child draws: pressure-variable waxy strokes, directional scribble fill and happy disregard for staying inside lines. Carry it through waxy pressure strokes, directional scribble fill, paper tooth, sky strip and grass baseline, corner sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -142,7 +142,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'rounded geometric primitives; no outlines; color-coded flat hues on navy; cutaway diagram view; long flat shadows',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rounded Vector Explainer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Flat educational vector illustration: subjects built from rounded geometric primitives with no outlines, arranged to explain how something works. Carry it through rounded geometric primitives, no outlines, color-coded flat hues on navy, cutaway diagram view, long flat shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -170,7 +170,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'opaque matte gouache; flat geometric shapes; mustard-teal-tomato palette; dry-brush edges; patterned foliage',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gouache Illustration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Mid-century gouache picture book: opaque matte paint in flat geometric shapes, stylized foliage and animals reduced to playful modernist forms. Carry it through opaque matte gouache, flat geometric shapes, mustard-teal-tomato palette, dry-brush edges, patterned foliage. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -200,7 +200,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'layered wax pencil; paper tooth speckle; directional hatching; honey and moss palette; cozy close framing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Storybook Colored Pencil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Storybook colored pencil: soft layered wax pencil built up in directional strokes on toothy paper, cozy interiors and animals drawn with warmth. Carry it through layered wax pencil, paper tooth speckle, directional hatching, honey and moss palette, cozy close framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -228,7 +228,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'chunky plasticine characters; felt and cardboard set; fingerprints and tool dents; bright even lamps; shallow tabletop depth',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Claymation Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Preschool stop-motion clay: chunky plasticine characters on a small tabletop set of felt, cardboard and wooden blocks, filmed under bright lamps. Carry it through chunky plasticine characters, felt and cardboard set, fingerprints and tool dents, bright even lamps, shallow tabletop depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -255,7 +255,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'streaky marker fills; overlap darkening; bleed halos; black marker outlines; saturated hot palette',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Felt Tip Marker as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Felt-tip marker drawing: broad water-based marker strokes that streak, overlap into darker mixes and bleed slightly into cheap paper. Carry it through streaky marker fills, overlap darkening, bleed halos, black marker outlines, saturated hot palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -283,7 +283,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'die-cut cardstock layers; v-fold hinges and pull tabs; open book gutter; real paper shadows; three-quarter view',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pop-Up Book as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pop-up book photograph: the subject engineered in folded, die-cut cardstock that rises out of the gutter of an open book. Carry it through die-cut cardstock layers, v-fold hinges and pull tabs, open book gutter, real paper shadows, three-quarter view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -311,7 +311,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'scratchy dip-pen line; ink flicks and splatter; loose watercolor splashes; broken contours; white paper',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Whimsical Ink as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Whimsical scratchy ink: fast dip-pen lines that skip and splutter, loosely washed with a few watercolor splashes. Carry it through scratchy dip-pen line, ink flicks and splatter, loose watercolor splashes, broken contours, white paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -339,7 +339,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'powdery chalk pastel; finger-smudged glows; colored paper showing through; soft edges; muted warm-cool palette',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chalk Pastel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Soft chalk pastel: powdery pigment rubbed and smudged into toothy colored paper, forms dissolving into velvety glow. Carry it through powdery chalk pastel, finger-smudged glows, colored paper showing through, soft edges, muted warm-cool palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -369,7 +369,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'thick white die-cut border; flat saturated vector; laminate highlight streak; lifted corner; isolated silhouette',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glossy Die-Cut Sticker as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Glossy die-cut sticker: the subject drawn as a bold simplified vinyl sticker with a thick white cut border and a laminate shine. Carry it through thick white die-cut border, flat saturated vector, laminate highlight streak, lifted corner, isolated silhouette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -397,7 +397,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'fine ink contour; muted watercolor tints; dissected insets; cream archival paper; unlabeled leader lines',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scientific Botanical as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Vintage scientific botanical plate: a specimen drawn in fine ink contour and tinted with muted watercolor, with dissected parts arranged around it. Carry it through fine ink contour, muted watercolor tints, dissected insets, cream archival paper, unlabeled leader lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -429,7 +429,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Maximal contrast and minimal detail; no gradients, no small parts and no busy background.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies High-Contrast Baby Board Book as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Infant board book graphics: huge simple shapes in black, white and one red, with bold stripes, dots and spirals a baby can see. Carry it through black white and red only, huge flat shapes, stripe dot and spiral patterns, centered head-on subject, rounded board corners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'black white and red only; huge flat shapes; stripe dot and spiral patterns; centered head-on subject; rounded board corners',
     },
@@ -464,7 +464,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Real fingerprint texture with minimal pen additions; no painted fills and no outlines around prints.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thumbprint Ink Critters as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Thumbprint critters: oval fingerprints pressed from colored ink pads, turned into animals and bugs with a few fine pen lines. Carry it through fingerprint ridges in ink blobs, stamp-pad colors, fine black pen details, white paper, tiny characters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'fingerprint ridges in ink blobs; stamp-pad colors; fine black pen details; white paper; tiny characters',
     },
@@ -499,7 +499,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Shallow physical relief with real clay texture; not a stop-motion set and not a 3D render.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Plasticine Relief Picture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Plasticine relief picture: soft modeling clay pressed and smeared flat onto board as a shallow picture, photographed like a painting. Carry it through clay smeared flat on board, rolled clay outlines, pressed dots and scored lines, raking side light, frontal flat view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'clay smeared flat on board; rolled clay outlines; pressed dots and scored lines; raking side light; frontal flat view',
     },
@@ -534,7 +534,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Soft textured digital finish with no outlines and no glossy rendering.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grainy Digital Picture Book as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Contemporary digital picture book: soft flat shapes painted with grainy texture brushes, limited palette and quiet storytelling spaces. Carry it through grainy texture brushes, limited muted palette, no outlines, wide empty spreads, small characters in large space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'grainy texture brushes; limited muted palette; no outlines; wide empty spreads; small characters in large space',
     },
@@ -569,7 +569,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise hatched pen detail with restrained tinting; no flat digital color and no outlines-only drawing.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Victorian Hatched Storybook Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Victorian fairy-tale book plate: detailed pen drawing built from fine parallel hatching and crosshatching, lightly hand-tinted with a few watercolors. Carry it through fine parallel hatching, crosshatch shadows, sparing hand tints, cream foxed paper, theatrical tableau. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'fine parallel hatching; crosshatch shadows; sparing hand tints; cream foxed paper; theatrical tableau',
     },
@@ -604,7 +604,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Consistent small figure scale, every figure readable as a silhouette, no clutter blur.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Seek-and-Find Busy Panorama as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Seek-and-find busy panorama: a whole place drawn from high above and packed with dozens of tiny characters each doing something funny. Carry it through high oblique bird-eye view, dozens of tiny figures, mini stories everywhere, even daylight, edge-to-edge detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'high oblique bird-eye view; dozens of tiny figures; mini stories everywhere; even daylight; edge-to-edge detail',
     },

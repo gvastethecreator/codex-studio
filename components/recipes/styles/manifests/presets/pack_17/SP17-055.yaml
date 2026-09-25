@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Vertical horror card with one warped focal subject, awkward empty margins, off-center pressure, and primitive border fragments with no letters.
   atmosphere_and_mood: Grotesque, adult, nasty, desperate, and uncanny; funny only in a sick handmade way.
   rendering_and_quality: High-quality reproduction of deliberately crude white-ink drawing, readable at thumbnail size, denoised black fields.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crooked White Ink Horror Cards as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Creepy badly drawn horror-card language that still feels art-directed: lopsided white ink, warped anatomy, blunt shapes, black ground, and grotesque amateur pressure. Carry it through bad-good drawing, crooked white ink, grotesque anatomy, black empty margins, crude horror card pressure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: bad-good drawing; crooked white ink; grotesque anatomy; black empty margins; crude horror card pressure; controlled messy finish
 avoidRules:
   - cute doodle

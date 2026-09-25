@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; from the arcade looking into the square garth, beds in a grid around the well.
   atmosphere_and_mood: Peaceful, useful and contemplative, healing grown in order.
   rendering_and_quality: Soft daylight photograph with individual herbs legible, no readable plant labels.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cloister Herb Garth as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cloister herb garth: a medieval monastic garden enclosed by an arcaded walk, laid out in quartered raised beds edged with woven wattle or timber boards around a central well. Carry it through square garth inside an arcaded walk, quartered raised beds, woven wattle edging, central stone well, medicinal herbs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: square garth inside an arcaded walk; quartered raised beds; woven wattle edging; central stone well; medicinal herbs
 avoidRules:
   - golden-hour garden postcard formula

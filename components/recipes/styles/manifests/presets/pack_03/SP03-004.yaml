@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Grounded and believable, the impossible rendered as real.
   rendering_and_quality: Photoreal VFX finish with film grain matching; no plastic CG sheen.
   key_features: photoreal subsurface skin; volumetric multiple scattering; micro-displacement; filmic color management; plate-matched realism
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Arnold Feature Film Path Tracer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Feature-film VFX path tracing: an unbiased CPU render tuned for photoreal creatures, skin, volumes and plate-matched lighting in a color-managed pipeline. Carry it through photoreal subsurface skin, volumetric multiple scattering, micro-displacement, filmic color management, plate-matched realism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - 2d illustration
   - hand-drawn

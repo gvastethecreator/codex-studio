@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Rough, warm and self-reliant, a shelter far from everything.
   rendering_and_quality: Low-light photograph with visible timber grain and stone joints, soft firelit falloff, no synthetic finish or taxidermy props.
   key_features: saddle-notched chinked logs; adze-marked beams; fieldstone hearth; forged iron hardware; firelight against cool window light
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rustic Cabin as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Rustic cabin interior: saddle-notched round logs or hand-hewn beams with adze marks, a fieldstone hearth, and plank furniture made on site. Carry it through saddle-notched chinked logs, adze-marked beams, fieldstone hearth, forged iron hardware, firelight against cool window light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - furniture catalog staging
   - olive branch in a vase as default decor

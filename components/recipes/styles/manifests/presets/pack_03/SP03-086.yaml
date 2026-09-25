@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Slightly off the original camera path, so edges and backgrounds reveal splat artifacts.
   atmosphere_and_mood: Dreamlike and uncanny, reality dissolving into colored mist.
   rendering_and_quality: Real-time splat look with floaters; not a mesh and not a photograph.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gaussian Splat Capture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Gaussian splat capture: a real place reconstructed from photos as millions of soft colored ellipsoids, photoreal from the capture angle and fuzzy at the edges. Carry it through soft ellipsoid splats, floaters in the air, photoreal core, fuzzy silhouettes, baked captured lighting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: soft ellipsoid splats; floaters in the air; photoreal core; fuzzy silhouettes; baked captured lighting
 avoidRules:
   - 2d illustration

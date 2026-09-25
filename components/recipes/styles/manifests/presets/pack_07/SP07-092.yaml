@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; look down from the top tier into the funnel of rings, or up from the centre at the stacked balustrades.
   atmosphere_and_mood: Intense, scholarly and theatrical, every eye pressed toward one point.
   rendering_and_quality: Low-light photograph with crisp baluster rhythm and central light pool, no gore; any body stays covered.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Anatomical Theatre Tiers as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Anatomical theatre: steep concentric oval tiers of carved timber balustrades rising around a small central table, lit from a lantern skylight, built so every spectator looks down. Carry it through steep concentric oval timber tiers, turned baluster rails, lantern skylight onto the centre, central demonstration table, spectators looking down. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: steep concentric oval timber tiers; turned baluster rails; lantern skylight onto the centre; central demonstration table; spectators looking down
 avoidRules:
   - one-point corridor perspective as default

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Systematic and inventive, choices laid out for a decision.
   rendering_and_quality: Medium finish with every variant at equal detail, numbered only by simple dots instead of labels.
   key_features: five to seven variants in a row; shared base proportion; identical scale and light; faction accent hue; swapped modular parts
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Prop Variant Design Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Prop variant sheet: one prop type redesigned five to seven times side by side, each version changing function, culture or material on a shared base proportion. Carry it through five to seven variants in a row, shared base proportion, identical scale and light, faction accent hue, swapped modular parts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable annotations
   - readable text

@@ -44,14 +44,14 @@ const spec: Spec = {
     'SP05-106': {
       briefs: [
         'Deco-geometric anime frame of a sorceress in a tall gown in a grand station hall, fan-like geometry in her collar, ruler-straight lines and faceted color cells shaping her cloak, the pose kept naturally asymmetric. No readable text or logo.',
-        'Deco anime frame of an airship captain on a gold-trimmed deck, fan geometry and faceted color cells. No readable text or logo.',
+        'Deco-geometric anime frame of an airship captain on a gold-trimmed deck, fan-like geometry in her coat, ruler-straight rails and faceted color cells in the sky. No readable text or logo.',
         'Deco-geometric anime frame of a dancer mid-turn on a black marble floor, her skirt opening into fan-like geometry, ruler-straight lines in the columns behind and faceted color cells in gold and teal, the pose natural and off-balance. No readable text or logo.',
       ],
     },
     'SP05-107': {
       briefs: [
         'Visceral horror anime frame of a pale plague doctor standing in a candlelit crypt, dense organic cross-contour on robes and mask, anatomical-looking patterning in the stone, carmine, bone and black contrast with no wounds or gore. No readable text or logo.',
-        'Horror anime frame of a thorn-covered tree shaped like a ribcage in fog, carmine and bone contrast. No readable text or logo.',
+        'Visceral horror anime frame of a thorn-covered tree grown in the shape of a ribcage in fog, dense organic cross-contour, carmine, bone and black contrast. No readable text or logo.',
         'Visceral horror anime frame of a masked cultist lit by a single red lamp in a stone cellar, dense organic cross-contour on robes and walls, carmine, bone and black contrast, nothing wounded or gory shown. No readable text or logo.',
       ],
     },
@@ -79,7 +79,7 @@ const spec: Spec = {
     'SP05-111': {
       briefs: [
         'Ukiyo-e woodblock anime frame of a mecha pilot and her machine standing on a cliff at dusk, carved contours, flat decorative color planes, bokashi gradient bands in the sky and parallel line rhythm in the grass. No readable text or logo.',
-        'Woodblock anime frame of a city street at night with lanterns and a cat, carved contours and bokashi. No readable text or logo.',
+        'Ukiyo-e woodblock anime frame of a city street at night with paper lanterns and a black cat, carved contours, flat color planes and a bokashi band in the sky. No readable text or logo.',
         'Ukiyo-e woodblock anime frame of a dragon coiling over snowy mountains, carved contours, flat decorative color planes and a bokashi band of pale blue fading into the sky, parallel line rhythm in the snow. No readable text or logo.',
       ],
     },

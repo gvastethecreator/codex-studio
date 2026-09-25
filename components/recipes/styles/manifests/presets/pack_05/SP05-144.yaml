@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Unhurried swagger and an easy, syncopated rhythm.
   rendering_and_quality: Warm dusty color, scratch texture and stutter outlines only on moving parts.
   key_features: doubled offset stutter outlines; vinyl scratch texture; flattened woodblock landscape; dusty gold and brown; offbeat balance
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Record-Scratch Stutter Swagger as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hip-hop period anime: flattened woodblock-style landscapes under loose ink-brush figures, with record-scratch stutter frames of doubled offset outlines and rewind jitter. Carry it through doubled offset stutter outlines, vinyl scratch texture, flattened woodblock landscape, dusty gold and brown, offbeat balance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

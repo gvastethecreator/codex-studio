@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Joyful, sweet and abundant, festive without needing a party.
   rendering_and_quality: Colored lineart instead of black, clean color separation and a controlled bloom that never washes out form.
   key_features: candy pastel palette; colored lineart; lavender-tinted shadows; satin gloss bands; soft bloom halo
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Candy Pastel Bloom Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Polished mobile-game splash-art cel in candy pastels: crisp soft colored lineart, glossy two-tone shading and a luminous bloom pass over highlights. Carry it through candy pastel palette, colored lineart, lavender-tinted shadows, satin gloss bands, soft bloom halo. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway

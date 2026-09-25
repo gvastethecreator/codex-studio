@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'subtractive white lines on black; knife and fiberglass scratch marks; contour-following hatching; untouched black shadows; chalky clay white',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scratchboard as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Scratchboard: white lines scraped with a knife and fiberglass brush out of a black ink layer on white clay board, light built entirely by removal. Carry it through subtractive white lines on black, knife and fiberglass scratch marks, contour-following hatching, untouched black shadows, chalky clay white. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -56,7 +56,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'V and U gouge strokes; flat solid ink areas; speckled ink roll; one or two colors; directional carving rhythm',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Linocut Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Linocut relief print: the image carved into linoleum with V and U gouges, uncarved areas printed as flat solid ink and carved areas left paper white. Carry it through V and U gouge strokes, flat solid ink areas, speckled ink roll, one or two colors, directional carving rhythm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -84,7 +84,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'needled and acid-bitten lines; layered crosshatch; embossed platemark; plate tone; sepia or warm black ink',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Etching (Engraving) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hard-ground line etching: lines needled through wax on a copper plate and bitten in acid, printed in black intaglio ink with fine crosshatching. Carry it through needled and acid-bitten lines, layered crosshatch, embossed platemark, plate tone, sepia or warm black ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -114,7 +114,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'sumi key-block outline; flat block colors; bokashi gradients; visible wood grain; Prussian blue and indigo',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Floating World Woodblock as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Japanese ukiyo-e color woodblock print: key-block outlines in sumi ink, flat colors from separate blocks and bokashi gradients wiped onto the block. Carry it through sumi key-block outline, flat block colors, bokashi gradients, visible wood grain, Prussian blue and indigo. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -142,7 +142,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'dots only; density gradients for tone; no contour line; open-paper highlights; scientific plate clarity',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stipple (Dotwork) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Stipple dotwork: tone built only from thousands of technical-pen dots, dense clusters for shadow and sparse scatter for light. Carry it through dots only, density gradients for tone, no contour line, open-paper highlights, scientific plate clarity. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -170,7 +170,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'greasy crayon on stone grain; reticulated tusche washes; scraped highlights; vignetted edges; one or two tint stones',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lithograph as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Stone lithograph: drawn with greasy crayon and tusche on grained limestone, printed so every mark keeps the fine tooth of the stone. Carry it through greasy crayon on stone grain, reticulated tusche washes, scraped highlights, vignetted edges, one or two tint stones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -198,7 +198,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'flat spot-color layers; misregistration gaps; overprint mixing; coarse halftone; squeegee streaks',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Screenprint (Serigraph) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Screen print: flat opaque ink layers pushed through stencils, with slight misregistration, hard shape edges and occasional coarse halftone. Carry it through flat spot-color layers, misregistration gaps, overprint mixing, coarse halftone, squeegee streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -228,7 +228,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'fuzzy stylus-traced lines; hand-pressure ghost smudges; thin Japanese paper; faint plate edge; one-off impression',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Trace Monotype as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Trace monotype: lines drawn with a stylus on paper laid over an inked glass plate, printing soft fuzzy dark lines with ghost smudges from the resting hand. Carry it through fuzzy stylus-traced lines, hand-pressure ghost smudges, thin Japanese paper, faint plate edge, one-off impression. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -256,7 +256,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'white lines on Prussian blue; photogram silhouettes; brushed chemistry edges; reversed values; paper tooth',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyanotype (Blueprint) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cyanotype sun print from a hand-inked acetate negative: white drawn lines and soft photogram shadows on deep Prussian blue. Carry it through white lines on Prussian blue, photogram silhouettes, brushed chemistry edges, reversed values, paper tooth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -286,7 +286,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'repeated stamped units; speckled ink-pad transfer; faint block edges; kraft paper; one to three pad colors',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carved Eraser Stamp as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hand-carved rubber stamp impressions: the subject cut into soft eraser blocks and stamped by hand from ink pads, built from repeated units. Carry it through repeated stamped units, speckled ink-pad transfer, faint block edges, kraft paper, one to three pad colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -315,7 +315,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'velvet black rocker ground; burnished highlights; single low light; no lines; ivory on black',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rocked-Plate Mezzotint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Mezzotint: a copper plate roughened all over with a rocker, then burnished smooth where light should be, giving velvety blacks and soft emerging highlights. Carry it through velvet black rocker ground, burnished highlights, single low light, no lines, ivory on black. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -344,7 +344,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'rosin grain tone; spit-bite pools; stepped bite values; few etched accents; sepia or blue-grey ink',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Spit-Bite Aquatint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Aquatint: rosin grain fused to a plate and bitten in stages, printing granular tonal washes, with brushed spit-bite acid giving soft pooled tones. Carry it through rosin grain tone, spit-bite pools, stepped bite values, few etched accents, sepia or blue-grey ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -372,7 +372,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'blue ballpoint only; layered crosshatch; pressure-led values; ink blobs; ruled notebook paper',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ballpoint Pen as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ballpoint drawing: a cheap blue ballpoint pen building tone through obsessive layered crosshatching and pressure changes on notebook paper. Carry it through blue ballpoint only, layered crosshatch, pressure-led values, ink blobs, ruled notebook paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -400,7 +400,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'flex-nib swelling line; iron-gall ink browning; finger washes; spatters; laid paper',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fountain Pen as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fountain pen drawing: a flexible steel nib swelling and thinning with pressure, iron-gall ink browning as it dries, loose washes pulled with a wet finger. Carry it through flex-nib swelling line, iron-gall ink browning, finger washes, spatters, laid paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -428,7 +428,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'fixed-width felt-tip line; solid black fills; bleed halos; one grey marker; streaky passes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sharpie Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Permanent-marker drawing: bold felt-tip lines of near-fixed width, solid black fills and ink bleeding into the paper fibers at stroke ends. Carry it through fixed-width felt-tip line, solid black fills, bleed halos, one grey marker, streaky passes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -456,7 +456,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'bold black outline; red yellow green black palette; whip shading; emblem silhouette; empty banners',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tattoo Flash (Traditional) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Traditional tattoo flash: bold black outlines that will hold, flat opaque fills and emblem-like motifs painted on a flash sheet. Carry it through bold black outline, red yellow green black palette, whip shading, emblem silhouette, empty banners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -484,7 +484,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'one continuous spray line; overspray halos; gravity drips; even cap width; wall surface visible',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Graffiti (Tag) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Aerosol tag handstyle: the subject drawn in fast continuous spray-can strokes on a wall, with overspray halos, gravity drips and a consistent cap width. Carry it through one continuous spray line, overspray halos, gravity drips, even cap width, wall surface visible. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -512,7 +512,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'interlocking arrows and bevels; 3D drop block; nested outlines; complementary fades; white shine strokes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Graffiti (Piece) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Wildstyle graffiti piece: a full-color spray mural where the subject is built from interlocking arrows, bevels, 3D block drop shadows and nested outlines. Carry it through interlocking arrows and bevels, 3D drop block, nested outlines, complementary fades, white shine strokes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -540,7 +540,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'broad-nib textura strokes; diamond terminals; hairline flourishes; gold leaf; vellum grain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Calligraphy (Blackletter) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Blackletter calligraphy: the subject drawn with a broad-edged nib in textura strokes, vertical columns, broken curves and diamond terminals, like a gothic illuminated initial. Carry it through broad-nib textura strokes, diamond terminals, hairline flourishes, gold leaf, vellum grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -568,7 +568,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'thick-to-thin brush strokes; dry-brush fractures; grey water washes; open negative space; one-breath gestures',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Brush Pen Ink as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Brush pen ink drawing: a flexible synthetic brush tip laying thick-to-thin single strokes, dry-brush breaks at speed and grey water-brush washes. Carry it through thick-to-thin brush strokes, dry-brush fractures, grey water washes, open negative space, one-breath gestures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

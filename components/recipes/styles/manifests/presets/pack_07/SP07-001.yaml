@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Quiet, restrained and exact, where emptiness feels deliberate and calm.
   rendering_and_quality: 'Architectural photograph clarity: straight verticals, crisp shadow gaps, even plaster tone without banding, no staged clutter.'
   key_features: flush handle-less joinery; shadow-gap skirting; warm mineral white limewash; seamless microcement floor; single pale oak accent
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Modern Minimalist as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Modern minimalist interior built from flush planes: handle-less push-latch joinery, shadow-gap skirting, recessed doors and one pale oak element against microcement and limewash. Carry it through flush handle-less joinery, shadow-gap skirting, warm mineral white limewash, seamless microcement floor, single pale oak accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - furniture catalog staging
   - olive branch in a vase as default decor

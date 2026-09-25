@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep requested framing; the light must visibly come from below.
   atmosphere_and_mood: Uncanny and menacing, familiar features turned wrong by light from below.
   rendering_and_quality: Clean darkness above the source and crisp, brightly lit planes on every underside.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Horror Underlight as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Horror underlighting: a single source from below the face or subject, inverting natural shadows so features look wrong and menacing. Carry it through light from below, inverted shadows, dark eye sockets, cold or fire tint, menacing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: light from below; inverted shadows; dark eye sockets; cold or fire tint; menacing
 avoidRules:
   - generic stock-photo face

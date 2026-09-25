@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Camera at chest height, centered subject, full body with a little ground and plain local background, symmetrical frame.
   atmosphere_and_mood: Dignified and matter-of-fact, a person simply presented as who they are.
   rendering_and_quality: Medium-format precision and restraint; no dramatic grading, wide-angle distortion or candid blur.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Documentary Typology Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Documentary typology portrait: a medium-format frontal full-length portrait of a person as their trade, one of an imagined series, with no drama in light or pose. Carry it through frontal full-length stance, direct gaze, defining tool in hand, even overcast light, centered symmetrical frame. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: frontal full-length stance; direct gaze; defining tool in hand; even overcast light; centered symmetrical frame
 avoidRules:
   - illustration

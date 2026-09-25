@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Vertical plate composition with one large focal subject, broad dark margins, small decorative non-text marks, and disciplined negative space.
   atmosphere_and_mood: Somber, antique, occult, scholastic, and grim without becoming black sludge.
   rendering_and_quality: Denoised inverted manuscript illustration with clean contours, broad value groups, and restrained plate ornament.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dark Medieval Ink Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "A dark inversion of medieval ink fantasy plates: blackened vellum, bone linework, oxidized washes, carved silhouettes, and manuscript discipline without readable script. Carry it through blackened vellum, bone ink, dark medieval plate, inverted manuscript logic, oxidized accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: blackened vellum; bone ink; dark medieval plate; inverted manuscript logic; oxidized accents; textless scholastic horror
 avoidRules:
   - bright parchment plate

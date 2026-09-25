@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; long view across water to an eye-catcher, tree clumps framing the sides like stage wings.
   atmosphere_and_mood: Serene, idyllic and composed, a painting made of land.
   rendering_and_quality: Painterly landscape photograph with hazy recession, no flower beds or formal hedges.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Picturesque Landscape Park as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Picturesque landscape park: an idealised pastoral scene built at estate scale, with a serpentine lake, rolling grazed grass, clumps of trees and an eye-catcher temple or ruin, fenced by a hidden ha-ha. Carry it through serpentine lake, grazed turf to the water, tree clumps as stage wings, eye-catcher temple or ruin, hidden ha-ha. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: serpentine lake; grazed turf to the water; tree clumps as stage wings; eye-catcher temple or ruin; hidden ha-ha
 avoidRules:
   - golden-hour garden postcard formula

@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
       key_features: 'dripping slime strands; glossy pools; contained around the target',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Slime/Goo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Slime and goo: thick translucent slime dripping, stretching and pooling on the target. Carry it through dripping slime strands, glossy pools, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'glowing magma cracks; licking flames; black crust; contained around the target',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fire & Magma as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fire and magma: flame and molten rock contained on the target — glowing cracks, dripping magma and licking flames. Carry it through glowing magma cracks, licking flames, black crust, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -86,7 +86,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'branching lightning arcs; sparks; blue-white glow; contained around the target',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Electricity/Lightning as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Electricity: branching arcs and crackling bolts crawling over and around the target. Carry it through branching lightning arcs, sparks, blue-white glow, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -113,7 +113,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
       key_features: 'curling smoke wisps; soft volumes; contained around the target',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Smoke/Fog as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Smoke and fog: curling smoke rising from or wrapping the target in soft volumes. Carry it through curling smoke wisps, soft volumes, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -140,7 +140,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
       key_features: 'frozen water splash; droplets; strobe crispness; contained around the target',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Water Splash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Water splash: a frozen crown or burst of water striking the target. Carry it through frozen water splash, droplets, strobe crispness, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -168,7 +168,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
       key_features: 'plasma aura; glowing filaments; local glow; contained around the target',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Plasma/Energy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Plasma energy: contained glowing energy — orbs, beams or auras — emanating from the target. Carry it through plasma aura, glowing filaments, local glow, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -195,7 +195,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
       key_features: 'iridescent oil swirls; thin-film color; contained around the target',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oil on Water as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Oil on water: iridescent oil film swirling over water around the target. Carry it through iridescent oil swirls, thin-film color, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -222,7 +222,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
       key_features: 'spark spray streaks; white-hot centers; contained around the target',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sparks as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sparks: hot sparks spraying from the target in bright streaks. Carry it through spark spray streaks, white-hot centers, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -249,7 +249,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
       key_features: 'iridescent soap bubbles; thin-film swirls; contained around the target',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soap Bubbles as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Soap bubbles: iridescent bubbles floating around or clinging to the target. Carry it through iridescent soap bubbles, thin-film swirls, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -276,7 +276,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
       key_features: 'pouring dry-ice fog; rolling tendrils; contained around the target',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dry Ice Fog as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dry ice fog: low, heavy white fog pouring and spilling over the target's edges. Carry it through pouring dry-ice fog, rolling tendrils, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -303,7 +303,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
       key_features: 'confetti burst; colorful paper pieces; contained around the target',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Confetti as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Confetti: colorful paper confetti bursting or falling around the target. Carry it through confetti burst, colorful paper pieces, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -330,7 +330,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
       key_features: 'powder snow dusting; drifting flakes; contained around the target',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Snow (Powder) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Powder snow: fine snow dusting the target and drifting around it. Carry it through powder snow dusting, drifting flakes, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -359,7 +359,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ember Drift as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ember drift: glowing embers rising and drifting slowly from the target. Carry it through rising embers, warm trails, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'rising embers; warm trails; contained around the target',
     },
     ui: {
@@ -393,7 +393,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ink Cloud in Water as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ink in water: dark ink blooming into billowing clouds from the target underwater. Carry it through billowing ink plumes, clear water, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'billowing ink plumes; clear water; contained around the target',
     },
     ui: {
@@ -426,7 +426,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Aurora Ribbons as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Aurora ribbons: shimmering green and violet light ribbons wrapping the target. Carry it through aurora light ribbons, translucent glow, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'aurora light ribbons; translucent glow; contained around the target',
     },
     ui: {
@@ -460,7 +460,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ice Shard Burst as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ice shard burst: sharp ice crystals exploding outward from a point on the target. Carry it through ice shard burst, frost dust, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'ice shard burst; frost dust; contained around the target',
     },
     ui: {
@@ -494,7 +494,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pollen and Spores as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pollen and spores: clouds of fine glowing pollen or spores puffing from the target. Carry it through glowing pollen clouds, drifting spores, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'glowing pollen clouds; drifting spores; contained around the target',
     },
     ui: {
@@ -527,7 +527,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Shadow Tendrils as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Shadow tendrils: black smoky tendrils reaching out from the target. Carry it through black shadow tendrils, violet edges, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'black shadow tendrils; violet edges; contained around the target',
     },
     ui: {
@@ -560,7 +560,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sandstorm Veil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sandstorm veil: a tight swirl of sand spiraling around the target. Carry it through spiraling sand veil, blowing grains, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'spiraling sand veil; blowing grains; contained around the target',
     },
     ui: {
@@ -593,7 +593,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Petal Storm as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Petal storm: a swirl of flower petals spiraling around the target. Carry it through swirling petals, spiral motion, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'swirling petals; spiral motion; contained around the target',
     },
     ui: {

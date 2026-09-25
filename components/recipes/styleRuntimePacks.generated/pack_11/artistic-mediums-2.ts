@@ -27,7 +27,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Chalk illustration with confident strokes and visible erasures, with clean, deliberate marks and no accidental noise.',
       key_features: 'colored chalk on slate; drop shadows; ornamental flourishes; eraser ghosts',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chalkboard Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Chalkboard art: colored-chalk illustration on a black slate board, like a hand-drawn tavern or café board, with bold outlines and drop shadows. Carry it through colored chalk on slate, drop shadows, ornamental flourishes, eraser ghosts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -53,7 +53,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean hand-painted flash with steady linework, with clean, deliberate marks and no accidental noise.',
       key_features: 'heavy black outlines; flat watercolor fills; flash-sheet layout; aged paper',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tattoo Flash (Old School) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Old-school tattoo flash sheet: several bold traditional designs painted on paper, arranged as a sheet a tattooer would hang on the wall. Carry it through heavy black outlines, flat watercolor fills, flash-sheet layout, aged paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -79,7 +79,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clear stained-glass construction where every piece reads, with clean, deliberate marks and no accidental noise.',
       key_features: 'colored glass pieces; lead came; backlight; window shape',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stained Glass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Stained glass window: the subject built from colored glass pieces joined by dark lead lines and lit from behind. Carry it through colored glass pieces, lead came, backlight, window shape. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -107,7 +107,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photographic puppet-show still with real fabric texture, with clean, deliberate marks and no accidental noise.',
       key_features: 'fleece puppets; ping-pong eyes; hinged mouths; arm rods; TV set',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Felt Puppet Broadcast as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Felt puppet broadcast: the subject as a fuzzy hand puppet made of felt and fleece, performing on a small TV set. Carry it through fleece puppets, ping-pong eyes, hinged mouths, arm rods, TV set. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -135,7 +135,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Skilled freehand spray mural, with clean, deliberate marks and no accidental noise.',
       key_features: 'spray fades; cap lines; drips; overspray; wall texture',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Freehand Aerosol Layering as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Freehand aerosol painting: the subject built up in layers of spray paint, with soft overspray, crisp fade edges and drips. Carry it through spray fades, cap lines, drips, overspray, wall texture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -163,7 +163,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal glowing tube sign, with clean, deliberate marks and no accidental noise.',
       key_features: 'bent glass tubes; halo glow; clips and wires; dark wall',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gas-Tube Halo Contours as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Gas-tube glow: the subject drawn only in bent glowing glass tubes on a dark wall, with color halos around each tube. Carry it through bent glass tubes, halo glow, clips and wires, dark wall. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -189,7 +189,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean silkscreen print with deliberate misregistration, with clean, deliberate marks and no accidental noise.',
       key_features: 'flat color blocks; black photo shadows; off-register; repeat grid',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Silkscreen Icon Impact as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pop silkscreen: the subject as a flat screen print in loud commodity colors, sometimes repeated in a grid with off-register color. Carry it through flat color blocks, black photo shadows, off-register, repeat grid. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -218,7 +218,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Fine pyrography with controlled burn tones, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pyrography Woodburning as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pyrography: the subject burned into pale wood with a hot pen, tones from light tan to charred black. Carry it through burned lines, scorched blacks, wood grain, bark edge. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'burned lines; scorched blacks; wood grain; bark edge',
     },
     ui: {
@@ -250,7 +250,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Fine engraved line work on bone, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scrimshaw Engraving as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Scrimshaw: fine lines scratched into polished ivory-colored bone and rubbed with black ink. Carry it through scratched lines, black ink fill, curved bone, age cracks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'scratched lines; black ink fill; curved bone; age cracks',
     },
     ui: {
@@ -283,7 +283,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Authentic impression print with natural irregularity, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gyotaku Ink Rubbing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Gyotaku: the subject printed by inking a real creature or object and pressing thin paper onto it. Carry it through direct ink impression, scale texture, painted eye, thin paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'direct ink impression; scale texture; painted eye; thin paper',
     },
     ui: {
@@ -315,7 +315,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise paper cutting with all pieces connected, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Folded Papercut Lace as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Folded papercut: a single sheet folded and cut into symmetrical lace, with the subject as a silhouette inside ornamental cutwork. Carry it through mirror symmetry, lace cutwork, one sheet, connected pieces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'mirror symmetry; lace cutwork; one sheet; connected pieces',
     },
     ui: {
@@ -347,7 +347,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Confident folk brushwork, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rosemaling Folk Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Rosemaling: Scandinavian-style decorative folk painting with C- and S-stroke scrolls and flowers on wooden objects. Carry it through C and S strokes, scroll flowers, painted wood object. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'C and S strokes; scroll flowers; painted wood object',
     },
     ui: {
@@ -384,7 +384,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Extremely fine miniature painting, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Black Lacquer Miniature as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Black lacquer miniature: a tiny, jewel-bright fairy-tale painting on a glossy black lacquer box with fine gold detail. Carry it through black lacquer ground, tiny figures, gold detail, ornate border. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'black lacquer ground; tiny figures; gold detail; ornate border',
     },
     ui: {
@@ -417,7 +417,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Authentic blot with clean symmetry, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rorschach Ink Blot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Rorschach ink blot: ink pressed between a folded sheet so the subject appears as a symmetrical blot with organic edges. Carry it through mirror symmetry, pooled ink, feathered edges, fold line. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'mirror symmetry; pooled ink; feathered edges; fold line',
     },
     ui: {
@@ -450,7 +450,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Careful botanical collage, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pressed Flower Collage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pressed flower collage: the subject composed from flattened dried petals, leaves and ferns glued on paper. Carry it through pressed petals, leaf veins, dried stems, paper page. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'pressed petals; leaf veins; dried stems; paper page',
     },
     ui: {
@@ -482,7 +482,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Handmade textile with visible loops, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hooked Rug as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hooked rug: the subject made from loops of wool strips pulled through burlap. Carry it through wool loops, burlap, flat colors, rug border. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'wool loops; burlap; flat colors; rug border',
     },
     ui: {
@@ -515,7 +515,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Fine precise engraving, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Diamond-Point Glass Engraving as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Diamond-point glass engraving: the subject scratched and stippled as frosty white marks into clear glass. Carry it through frosted marks, stipple, clear glass, dark backdrop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'frosted marks; stipple; clear glass; dark backdrop',
     },
     ui: {
@@ -548,7 +548,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crafted pierced metal, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Punched Tin Lantern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Punched tin: the subject drawn as patterns of punched holes in a tin lantern or panel, glowing from a candle inside. Carry it through punched holes, candle light dots, tin, rust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'punched holes; candle light dots; tin; rust',
     },
     ui: {
@@ -582,7 +582,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Refined gilded craft, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pastiglia Gilded Gesso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pastiglia: raised gesso relief patterns gilded with gold leaf, framing painted figures on a panel. Carry it through raised gesso, gold leaf, punched patterns, craquelure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'raised gesso; gold leaf; punched patterns; craquelure',
     },
     ui: {
@@ -615,7 +615,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Glassy fine oil painting, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oil on Copper Panel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Oil on copper: a small, glassy, extremely smooth oil painting on a copper plate, with jewel-like color. Carry it through copper support, smooth glazes, jewel color, small scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'copper support; smooth glazes; jewel color; small scale',
     },
     ui: {

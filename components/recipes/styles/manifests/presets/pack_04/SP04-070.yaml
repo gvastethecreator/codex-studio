@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Hushed, rich and mysterious, a candle in a closed room.
   rendering_and_quality: Continuous velvety tone with no hatching, no stipple and no line work.
   key_features: velvet black rocker ground; burnished highlights; single low light; no lines; ivory on black
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rocked-Plate Mezzotint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Mezzotint: a copper plate roughened all over with a rocker, then burnished smooth where light should be, giving velvety blacks and soft emerging highlights. Carry it through velvet black rocker ground, burnished highlights, single low light, no lines, ivory on black. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - brand logo

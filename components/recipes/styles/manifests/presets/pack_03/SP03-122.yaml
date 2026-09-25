@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; the full skeleton reads as a silhouette of ribs and limb bones.
   atmosphere_and_mood: Solemn and scholarly, a life reconstructed from what remains.
   rendering_and_quality: Plausible bone count and joints for the species or invented creature, with no flesh and no gore.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Articulated Skeleton Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Natural-history skeleton mount: the subject reduced to its articulated bones, wired together in a lifelike pose on slender iron rods like a museum display. Carry it through articulated bones, iron armature rods, ivory to tea-brown bone, rib shadows from gallery spots, brass joint pins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: articulated bones; iron armature rods; ivory to tea-brown bone; rib shadows from gallery spots; brass joint pins
 avoidRules:
   - forced T-pose

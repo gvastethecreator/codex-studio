@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Technical and proud, craft shown in its structure.
   rendering_and_quality: Clean topology presentation render with no viewport UI or gizmos.
   key_features: grey shaded model; mesh edges overlaid; clean edge loops; ambient occlusion; presentation framing
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wireframe on Shaded as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Wireframe on shaded: a grey-shaded 3D model with its mesh edges drawn over the surface, as in a modeling viewport presentation. Carry it through grey shaded model, mesh edges overlaid, clean edge loops, ambient occlusion, presentation framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - franchise likeness

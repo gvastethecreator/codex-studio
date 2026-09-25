@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Patient, precise and quietly delightful, a world made with a craft knife.
   rendering_and_quality: Tabletop macro photograph of a real paper model; flat printed faces, no gloss and no CG smoothness.
   key_features: scored and folded cardstock; visible glue tabs; layered pop-up planes; tracing-paper windows; tabletop macro depth of field
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Papercraft Diorama Construction as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Papercraft construction: the subject scored, folded and glued from cardstock, with visible glue tabs, layered pop-up planes and tracing-paper windows at tabletop scale. Carry it through scored and folded cardstock, visible glue tabs, layered pop-up planes, tracing-paper windows, tabletop macro depth of field. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo on parts
   - readable text

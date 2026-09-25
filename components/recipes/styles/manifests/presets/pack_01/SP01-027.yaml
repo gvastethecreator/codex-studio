@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Sudden and matter-of-fact, the unexpected appearing ahead without warning.
   rendering_and_quality: Consumer dashcam realism; no readable speed or time overlay.
   key_features: behind-windshield view; hood or dash at bottom; headlight pools; glass reflections; wide bowed horizon
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dashcam as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Dashcam capture: a small wide-angle camera behind a vehicle windshield recording the road ahead, bright and utilitarian. Carry it through behind-windshield view, hood or dash at bottom, headlight pools, glass reflections, wide bowed horizon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - fake UI text
   - readable timestamp

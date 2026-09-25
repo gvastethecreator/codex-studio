@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested camera; crystal columns cross the frame at angles and dwarf anything human-sized.
   atmosphere_and_mood: Silent and awestruck, a cathedral nobody built.
   rendering_and_quality: Path-traced refraction and caustics with light volumetric dust; crystals refract light, never self-glow.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Geode Cavern Environment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Geode cavern environment render: a huge underground chamber lined with giant faceted crystal columns, lit by a few small sources and their refracted light. Carry it through giant faceted crystal columns, refracted caustic flecks, small warm sources only, still reflecting water, huge scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: giant faceted crystal columns; refracted caustic flecks; small warm sources only; still reflecting water; huge scale
 avoidRules:
   - franchise likeness

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Poised, cool and seductive noir elegance, stillness with a knife edge.
   rendering_and_quality: Masked-airbrush smoothness, crisp hard-edged reflection bands and starburst glints; no plastic 3D CG look.
   key_features: airbrushed chrome banding; reflected horizon line; velvet black background; pinpoint starburst glints; tiny magenta and cyan reflections
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Armored Chrome Noir Elegance as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Airbrushed chrome noir illustration: mirror surfaces rendered as hard black-and-white bands with a reflected horizon line, deep black masses, and pinpoint star glints. Carry it through airbrushed chrome banding, reflected horizon line, velvet black background, pinpoint starburst glints, tiny magenta and cyan reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

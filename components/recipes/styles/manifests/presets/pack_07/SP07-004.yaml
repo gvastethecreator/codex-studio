@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Snug, gentle and sheltered against the cold outside.
   rendering_and_quality: 'Soft natural-light photograph: tactile fibres readable, warm highlights gentle, no glossy surfaces or hard metal dominating.'
   key_features: scrubbed pale pine; layered wool and sheepskin; many small warm light points; cool blue window dusk; rounded low furniture
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scandinavian Hygge as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Scandinavian hygge interior: pale scrubbed pine and birch, rounded low furniture, layered wool and linen, and many small warm light sources against long northern dusk. Carry it through scrubbed pale pine, layered wool and sheepskin, many small warm light points, cool blue window dusk, rounded low furniture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - furniture catalog staging
   - olive branch in a vase as default decor

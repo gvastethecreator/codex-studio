@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested geometry; a strong vertical line of the tether vanishing to a point above.
   atmosphere_and_mood: Aspirational and vertiginous, a road that goes straight up.
   rendering_and_quality: Photographic realism with correct atmospheric fade along the tether; no fantasy beanstalk.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Orbital Tether Anchor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Space elevator: a single ribbon tether rising from an ocean anchor platform straight up through the atmosphere, climber cars crawling along it toward orbit. Carry it through ribbon tether rising to orbit, ocean anchor platform, climber cars, dawn light on the upper tether, vertical vanishing line. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: ribbon tether rising to orbit; ocean anchor platform; climber cars; dawn light on the upper tether; vertical vanishing line
 avoidRules:
   - black and gold sci-fi palette by default

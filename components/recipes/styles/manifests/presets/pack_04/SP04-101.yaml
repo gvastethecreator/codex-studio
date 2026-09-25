@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: 'Film-like framing: long-lens close-ups, low angles and silent wide shots with small figures.'
   atmosphere_and_mood: Bleak, adult and unsentimental, hardship shown without heroics.
   rendering_and_quality: Realistic faces and anatomy, rough brush energy, no big sparkling eyes and no chibi proportions.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gekiga Drybrush Realism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Gekiga dramatic manga: realistic adult proportions drawn with a split, dry-loaded brush, gritty screentone and cinematic framing instead of cute stylization. Carry it through split dry-brush strokes, realistic adult proportions, coarse screentone grit, deep shadow pools, cinematic long-lens framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: split dry-brush strokes; realistic adult proportions; coarse screentone grit; deep shadow pools; cinematic long-lens framing
 avoidRules:
   - added panels or gutters

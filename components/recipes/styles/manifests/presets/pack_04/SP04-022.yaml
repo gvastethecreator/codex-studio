@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Quiet, reflective and warm, a bedtime-story hush.
   rendering_and_quality: Intimate hand-pressure nuance with visible strokes; no ink line and no paint.
   key_features: layered wax pencil; paper tooth speckle; directional hatching; honey and moss palette; cozy close framing
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Storybook Colored Pencil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Storybook colored pencil: soft layered wax pencil built up in directional strokes on toothy paper, cozy interiors and animals drawn with warmth. Carry it through layered wax pencil, paper tooth speckle, directional hatching, honey and moss palette, cozy close framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - frightening gore
   - known picture-book characters

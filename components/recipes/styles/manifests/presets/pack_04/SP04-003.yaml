@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Intense blockbuster seriousness, every moment framed as a cinematic climax.
   rendering_and_quality: Crisp digital line art with glossy full rendering and controlled bloom; original costume designs only, never a known hero.
   key_features: glossy digital color; dual rim light; volumetric rays and flares; specular armor; widescreen low angle
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Modern Superhero (Digital) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Contemporary digital superhero comic: clean variable-weight digital inks under glossy rendered color with gradients, specular hits and composited FX glows. Carry it through glossy digital color, dual rim light, volumetric rays and flares, specular armor, widescreen low angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - added panels or gutters
   - speech balloons

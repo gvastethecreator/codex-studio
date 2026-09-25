@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Poses in two or three rows at one scale and one camera height, each on its own floor-grid square.
   atmosphere_and_mood: Practical and neutral, movement catalogued for animators.
   rendering_and_quality: Consistent proportions and scale across poses; no action effects and no background.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pose Library Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Pose library sheet: the same figure repeated in eight to twelve poses, rendered in neutral grey tone like a clay study. Carry it through eight to twelve poses, neutral grey clay tone, identical lighting, floor grid squares, one camera height. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: eight to twelve poses; neutral grey clay tone; identical lighting; floor grid squares; one camera height
 avoidRules:
   - placeholder gibberish text

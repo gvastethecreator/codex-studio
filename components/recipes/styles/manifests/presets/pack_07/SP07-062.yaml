@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Airy, resourceful and alive, a structure that sways with the forest.
   rendering_and_quality: Naturalistic illustration with detailed knots and weaving; no galvanized hardware or polished metal.
   key_features: catenary rope lashings; radial platforms around trunks; woven palm panels; rope bridges; dappled canopy light
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Canopy Rope Vernacular as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Canopy rope vernacular: platforms and huts lashed to giant tree trunks with catenary ropes, woven palm panels, radial floor joists and swaying rope bridges, no nails anywhere. Carry it through catenary rope lashings, radial platforms around trunks, woven palm panels, rope bridges, dappled canopy light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - licensed fantasy location
   - copy of a known film or game building

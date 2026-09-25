@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Still, luminous and devotional, precise craft over drama.
   rendering_and_quality: Every form modeled in visible fine hatching, crisp contours, matte eggshell sheen; no loose brushwork, no oil glazing.
   key_features: fine cross-hatched modeling; burnished and punched gold leaf; green-earth underpainting in flesh; frontal stacked space; matte eggshell sheen
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tempera (Egg) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Egg tempera on a gessoed panel: pure pigment bound in yolk, built from thousands of tiny parallel and cross-hatched brush strokes, often set against burnished gold leaf. Carry it through fine cross-hatched modeling, burnished and punched gold leaf, green-earth underpainting in flesh, frontal stacked space, matte eggshell sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - changing the requested framing

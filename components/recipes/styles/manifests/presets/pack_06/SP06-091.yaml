@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Lonely and luminous, cold space with a hand-painted tint.
   rendering_and_quality: Clean continuous white lines, flat overlay tint; no raster pixels and no multicolor lines.
   key_features: white beam lines; translucent color overlay bands; hot line ends; curved-glass reflection; black screen
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies White Beam Vector with Color Overlay as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Monochrome vector display: bright white beam lines on black, tinted in zones by a translucent printed color overlay sheet laid over the screen. Carry it through white beam lines, translucent color overlay bands, hot line ends, curved-glass reflection, black screen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - console or handheld hardware shown in frame

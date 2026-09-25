@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Glamorous, euphoric, sensual and flashy, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Glossy, sparkling finish, with believable fabric weight, seams and fit detail.
   key_features: halter jumpsuit and flares; sequins and lamé; wide lapels; platforms; mirror-ball sparkle
-  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Disco (70s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
+  creative_brief: "1970s disco fashion: slinky jersey wrap dresses, halter jumpsuits, sequined tops, wide-lapel shirts and flared trousers made to catch the mirror ball. Carry it through halter jumpsuit and flares, sequins and lamé, wide lapels, platforms, mirror-ball sparkle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - readable label text

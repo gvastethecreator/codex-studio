@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Cool, weightless and analytical, an object seen as nested outlines.
   rendering_and_quality: Clean additive shader render with perfectly sharp rims and no film grain, scatter haze or radiograph plate look.
   key_features: facing-ratio fresnel rims; additive stacking toward white; modeled interior shown as nested contours; perspective 3D depth; no lights
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies X-Ray Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Fresnel x-ray shader: every surface drawn as additive glowing shells whose brightness follows the facing ratio, bright at grazing silhouettes and nearly clear where faces look at the camera. Carry it through facing-ratio fresnel rims, additive stacking toward white, modeled interior shown as nested contours, perspective 3D depth, no lights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - sensor noise
   - camera lens optics

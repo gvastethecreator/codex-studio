@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Straight-on or slight elevation, geometric steps, arches or cylinders as plinths, strong negative space.
   atmosphere_and_mood: Playful and graphic, a small object turned into a bold sculpture by color and shadow.
   rendering_and_quality: Clean set photography; not CGI, no gradient backdrops.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Color-Block Set Still Life as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Color-block set still life: an object placed on a built set of flat colored paper planes and blocks, lit with hard light for crisp graphic shadows. Carry it through flat colored paper planes, hard steep light, long clean shadows, geometric plinths, bold contrast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: flat colored paper planes; hard steep light; long clean shadows; geometric plinths; bold contrast
 avoidRules:
   - illustration

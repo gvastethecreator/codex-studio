@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Cool, grieving restraint in which mourning shows as stillness.
   rendering_and_quality: Clean ink forms with crisp, regular reflection bars; no machinery or gadgets are added.
   key_features: broken reflection bars; thin interference lines; steel blue and silver; oil-slick edge tint; enamel sheen against graphite matte
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Machine Mourning Noir Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cool noir anime ink where every reflective surface is drawn as short broken reflection bars and thin interference lines, like light sliding over wet steel. Carry it through broken reflection bars, thin interference lines, steel blue and silver, oil-slick edge tint, enamel sheen against graphite matte. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

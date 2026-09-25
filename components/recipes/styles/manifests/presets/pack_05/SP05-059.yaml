@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Calm analytical focus, a mind reading the world in layers.
   rendering_and_quality: Crisp teal line, clean translucent fills, refraction ripples and sparse abstract hexagon marks; no legible text.
   key_features: stacked translucent cel planes; refraction ripples at overlaps; optical-camouflage shimmer; teal and glass-green palette; offset depth echoes
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tactical Network Cognition as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Layered-transparency cyber anime: semi-transparent cel planes stacked in screen blend, refraction ripples where layers overlap, and thin teal line contours. Carry it through stacked translucent cel planes, refraction ripples at overlaps, optical-camouflage shimmer, teal and glass-green palette, offset depth echoes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

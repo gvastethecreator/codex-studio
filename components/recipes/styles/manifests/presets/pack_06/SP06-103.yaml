@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Lonely and curious, a vast place explored one room at a time.
   rendering_and_quality: Clear value separation between planes so the foreground path always reads.
   key_features: strict side view; stacked parallax layers; near-black foreground; fog-washed background; rim-lit silhouettes
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Side-Scroll Parallax Gloom as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Side-scrolling exploration art: a dark near-black gameplay plane in front of four to six parallax layers that fade into colored fog. Carry it through strict side view, stacked parallax layers, near-black foreground, fog-washed background, rim-lit silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - known game HUD layout

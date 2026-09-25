@@ -28,7 +28,7 @@ visualDna:
   camera_and_composition: Ultra-wide lens under half a meter from the hand, barrel curvature on straight lines, the face small but readable behind the hand.
   atmosphere_and_mood: Direct, confrontational energy aimed at the viewer without hostility.
   rendering_and_quality: Controlled barrel distortion and believable anatomy through the extreme foreshortening.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fisheye Foreshortened Reach as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Anime fisheye staging: the subject reaches or throws straight toward an ultra-wide lens, the hand swelling to the size of the head while the body shrinks behind it and the edges of the scene curve. Carry it through hand reaching into an ultra-wide lens, hand as large as the head, barrel-curved edges, bright near hand, small readable face behind. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: hand reaching into an ultra-wide lens; hand as large as the head; barrel-curved edges; bright near hand; small readable face behind
 avoidRules:
   - added opponent

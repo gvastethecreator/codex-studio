@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Isometric views in a grid of six panels, the same angle throughout, the finished object in the last panel.
   atmosphere_and_mood: Friendly and clear, building without reading a single word.
   rendering_and_quality: Diagrammatic clarity, no step numbers, words or part codes.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wordless Assembly Steps as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Wordless assembly instructions: clean isometric line drawings in six step panels, parts sliding into place along arrows. Carry it through six step panels, isometric line drawings, dashed motion arrows, accent color on the new part, blank step circles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: six step panels; isometric line drawings; dashed motion arrows; accent color on the new part; blank step circles
 avoidRules:
   - placeholder gibberish text

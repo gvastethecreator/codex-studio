@@ -27,7 +27,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Precise technical drafting with consistent line weights and believable conventions.',
       key_features: 'faded diazo sheet; creases; stains; pencil markups; workbench',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Faded Workshop Blueprint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Faded workshop blueprint: a real, used blueprint sheet photographed on a workbench, sun-faded, creased and marked up. Carry it through faded diazo sheet, creases, stains, pencil markups, workbench. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -56,7 +56,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise technical drafting with consistent line weights and believable conventions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hachure Relief Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hachure relief map: terrain drawn with thousands of short strokes that follow the slopes, dense on steep ground. Carry it through hachure strokes, slopes, rivers, compass rose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'hachure strokes; slopes; rivers; compass rose',
     },
     ui: {
@@ -90,7 +90,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise technical drafting with consistent line weights and believable conventions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Naval Lines Plan as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Naval lines plan: a ship's hull drawn as profile, half-breadth and body plan, with flowing waterlines and station curves. Carry it through profile, half-breadth, body plan, waterlines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'profile; half-breadth; body plan; waterlines',
     },
     ui: {
@@ -122,7 +122,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise technical drafting with consistent line weights and believable conventions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Isometric Piping Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Piping isometric: single-line pipe runs drawn on a 30-degree grid with valves, flanges and elbows as symbols. Carry it through isometric grid, single-line pipes, valve symbols. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'isometric grid; single-line pipes; valve symbols',
     },
     ui: {
@@ -155,7 +155,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise technical drafting with consistent line weights and believable conventions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Star-Fort Fortification Plan as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Star-fort plan: angular bastion fortifications seen from above, with moats, ravelins and lines of fire. Carry it through bastions, ravelins, moat, lines of fire. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'bastions; ravelins; moat; lines of fire',
     },
     ui: {
@@ -189,7 +189,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise technical drafting with consistent line weights and believable conventions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Clockwork Escapement Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Horological drawing: precise views of escapements, wheels and springs with fine ink and brass wash. Carry it through escapement, wheel train, detail circles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'escapement; wheel train; detail circles',
     },
     ui: {
@@ -223,7 +223,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise technical drafting with consistent line weights and believable conventions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Renaissance Invention Notebook as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Renaissance invention notebook: sepia pen sketches of machines and studies scattered across a page with dense mirror-script marks. Carry it through sepia sketches, script marks, red chalk, aged page. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'sepia sketches; script marks; red chalk; aged page',
     },
     ui: {
@@ -261,7 +261,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise technical drafting with consistent line weights and believable conventions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Axonometric Architectural Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Axonometric drawing: a building shown in a parallel projection from above with crisp lines and flat color. Carry it through axonometric projection, flat fills, cut-away. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'axonometric projection; flat fills; cut-away',
     },
     ui: {
@@ -291,7 +291,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise technical drafting with consistent line weights and believable conventions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Urban Figure-Ground Plan as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Figure-ground plan: buildings as solid black shapes, streets and open space as white. Carry it through black buildings, white streets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'black buildings; white streets',
     },
     ui: {
@@ -323,7 +323,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise technical drafting with consistent line weights and believable conventions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stage Lighting Plot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Lighting plot: a theatre stage plan with instrument symbols on pipes and beam zones. Carry it through instrument symbols, battens, beam zones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'instrument symbols; battens; beam zones',
     },
     ui: {
@@ -355,7 +355,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise technical drafting with consistent line weights and believable conventions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Origami Crease Pattern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Crease pattern: a square sheet covered in mountain and valley fold lines that fold into the subject. Carry it through mountain and valley lines, square. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'mountain and valley lines; square',
     },
     ui: {
@@ -385,7 +385,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise technical drafting with consistent line weights and believable conventions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Knot Tying Diagram as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Knot tying diagram: a clear step-by-step sequence of rope drawings with arrows showing each pass, tuck and pull. Carry it through step panels, rope twist, direction arrows, tightening sequence. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'step panels; rope twist; direction arrows; tightening sequence',
     },
     ui: {
@@ -417,7 +417,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise technical drafting with consistent line weights and believable conventions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dance Step Diagram as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dance step diagram: old instruction-book footprints on a floor plan, with curved arrows and dotted paths showing the steps. Carry it through footprints, turning arrows, dotted paths, partner markers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'footprints; turning arrows; dotted paths; partner markers',
     },
     ui: {
@@ -450,7 +450,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise technical drafting with consistent line weights and believable conventions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Weaving Draft Grid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Weaving draft: a weaver's grid with threading, tie-up and treadling blocks around a drawdown that reveals the woven pattern. Carry it through threading, tie-up, treadling, drawdown pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'threading; tie-up; treadling; drawdown pattern',
     },
     ui: {
@@ -483,7 +483,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise technical drafting with consistent line weights and believable conventions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Survey Plat Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Survey plat: a legal land map of lots, boundaries, bearings and monuments drawn with ruler-straight lines. Carry it through lot lines, corner monuments, north arrow, easements. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'lot lines; corner monuments; north arrow; easements',
     },
     ui: {
@@ -516,7 +516,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise technical drafting with consistent line weights and believable conventions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gear Train Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Gear train drawing: interlocking gears drawn as pitch circles and tooth outlines, with shafts and rotation arrows. Carry it through pitch circles, tooth profiles, shafts, rotation arrows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'pitch circles; tooth profiles; shafts; rotation arrows',
     },
     ui: {
@@ -550,7 +550,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise technical drafting with consistent line weights and believable conventions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ship Rigging Diagram as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Rigging diagram: a sailing ship profile with every mast, yard, stay and line drawn as a fine web. Carry it through masts, yards, stays, running rigging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'masts; yards; stays; running rigging',
     },
     ui: {
@@ -583,7 +583,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise technical drafting with consistent line weights and believable conventions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Architectural Elevation Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Architectural elevation: a flat frontal facade drawing with precise lines, cast-shadow washes and entourage figures. Carry it through frontal facade, wash shadows, scale figures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'frontal facade; wash shadows; scale figures',
     },
     ui: {
@@ -617,7 +617,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise technical drafting with consistent line weights and believable conventions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Garden Contour Plan as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Landscape plan: garden design seen from above with contour lines, tree canopies as circles, paths and planting beds. Carry it through contours, canopy circles, hedges, paths. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'contours; canopy circles; hedges; paths',
     },
     ui: {
@@ -651,7 +651,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise technical drafting with consistent line weights and believable conventions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Masonry Stereotomy Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Stereotomy: the geometry of cutting stones for arches and vaults, drawn with projections, voussoirs and construction lines. Carry it through voussoirs, projections, construction lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'voussoirs; projections; construction lines',
     },
     ui: {

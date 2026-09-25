@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Branching outward from centers, arranged so the subject still reads at card size.
   atmosphere_and_mood: Organic, fractal, delicate and eerie, driven by the construction, color and rhythm.
   rendering_and_quality: Fine finish, with clean, deliberate marks and no accidental noise.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dendritic Ink Growth as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Dendritic growth: branching fern-like ink or mineral dendrites forming the subject. Carry it through dendritic branching, fern-like growth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: dendritic branching; fern-like growth
 avoidRules:
   - readable text

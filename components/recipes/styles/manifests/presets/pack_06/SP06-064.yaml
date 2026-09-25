@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Mysterious and collected, memories given a second life as a creature or place.
   rendering_and_quality: Physical depth, crisp object edges and believable glue joins; no painted or digital surface.
   key_features: salvaged objects in relief; raking side light; real cast shadows; rust and brass; board or shallow box
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Assemblage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Found-object assemblage: the subject built in low relief from real salvaged objects glued and wired onto a wooden board or inside a shallow box. Carry it through salvaged objects in relief, raking side light, real cast shadows, rust and brass, board or shallow box. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - uniform beige torn-paper wash over every image
   - red tape strips added by default

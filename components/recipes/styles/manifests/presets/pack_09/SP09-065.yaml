@@ -22,7 +22,7 @@ visualDna:
   atmosphere_and_mood: Heavy, sticky, ominous and industrial, carried by the material itself rather than by added props.
   rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
   key_features: glossy black tar; drips and strands; viscous coating; surface-level damage; structure intact
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tar as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Tar coating: thick black tar coating the target, glossy, dripping and sticky. Carry it through glossy black tar, drips and strands, viscous coating, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - material applied to the background instead of the target
   - unrequested sample object or habitat

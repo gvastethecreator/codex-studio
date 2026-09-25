@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Acrobatic and heroic, choreographed rhythm with theatrical bravado.
   rendering_and_quality: Studio-film grain and saturation; no modern gritty action grade.
   key_features: painted studio sets; crash zooms; wire acrobatics; saturated primaries; full-body choreography
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 70s Kung Fu Studio Epic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "70s kung fu studio epic: martial-arts cinema shot on lavish studio sets with painted skies, crash zooms and acrobatic wire-assisted choreography. Carry it through painted studio sets, crash zooms, wire acrobatics, saturated primaries, full-body choreography. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - readable fake text

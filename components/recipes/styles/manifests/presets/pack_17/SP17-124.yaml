@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Dramatic close or looming composition with large dark mass and a single luminous shape.
   atmosphere_and_mood: Haunted, violent, feverish, and dark.
   rendering_and_quality: Painterly print quality with purposeful marks; dark but not muddy; subject readable.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blood Rust Monotype Ghost as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Dark painterly monotype: ink painted on a plate and printed once, with wiped-out lights, finger and rag marks, oxide red and black, and faded ghost second-pull areas. Carry it through single-pull monotype, wiped-out lights, rag and finger marks, oxide red and black, ghost second-pull haze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: single-pull monotype; wiped-out lights; rag and finger marks; oxide red and black; ghost second-pull haze
 avoidRules:
   - clean line art

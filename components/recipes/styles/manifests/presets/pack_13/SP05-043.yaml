@@ -32,10 +32,7 @@ visualDna:
     Few readable value tiers, soft stable edges, sparse detail, no obscuring haze.
   key_features: >-
     Rounded contours, low-contrast cel values, sage-ochre palette, generous breathing room
-  creative_brief: >-
-    Apply a visual treatment centered on rounded contours, low-contrast cel values,
-    sage-ochre palette, generous breathing room. Preserve the exact subject, action, count,
-    age, costume, setting, camera, and mood. Add nothing outside the prompt.
+  creative_brief: "Apply a visual treatment centered on rounded contours, low-contrast cel values, sage-ochre palette, generous breathing room. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Nostalgic and playful, a comic splash drawn on an old console.
   rendering_and_quality: Crisp nearest-neighbor pixels, no anti-aliasing, no smooth gradients and no blur.
   key_features: one-pixel black outlines; ordered-dither shading; indexed 32-color palette; visible pixel grid; chunky silhouettes
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pixel Art Comic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Pixel comic art: comic inking translated into pixels, one-pixel black outlines, ordered-dither halftone shading and a strict indexed palette on a visible grid. Carry it through one-pixel black outlines, ordered-dither shading, indexed 32-color palette, visible pixel grid, chunky silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - added panels or gutters
   - speech balloons

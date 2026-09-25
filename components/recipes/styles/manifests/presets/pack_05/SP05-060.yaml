@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Cold strategic tension, poised and elegant, like a move not yet played.
   rendering_and_quality: Sharp polygon specular shards, fine seams, clean facet color blocks and thin arcs, with restrained glow.
   key_features: polygon-shard specular highlights; blue-violet and glacial white palette; opposing orbital arcs; fine seam lines; single gold counterweight glint
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Orbital Rivalry Symmetry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Crystalline facet-highlight anime: specular highlights cut as sharp polygon shards, fine seam lines, and long thin orbital arc strokes balancing the frame. Carry it through polygon-shard specular highlights, blue-violet and glacial white palette, opposing orbital arcs, fine seam lines, single gold counterweight glint. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

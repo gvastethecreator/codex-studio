@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Guarded, guilty quiet, a breath held in the cold.
   rendering_and_quality: Brittle but controlled pen hatching, with clean white paper in the highlights.
   key_features: brittle short hatches at contour turns; slate and cold blue-gray; one warm pivot color; crystalline micrograin; uneven hatch density
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Winter Guilt Suspicion Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cold seinen pen drawing of brittle short hatches and tiny edge grains that cluster where contours turn, like frost forming only at the corners of things, as a drawing texture rather than snow. Carry it through brittle short hatches at contour turns, slate and cold blue-gray, one warm pivot color, crystalline micrograin, uneven hatch density. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

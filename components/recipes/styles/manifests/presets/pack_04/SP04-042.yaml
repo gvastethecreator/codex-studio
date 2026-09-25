@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Mysterious, contemplative and hypnotic, a dream held perfectly still.
   rendering_and_quality: Seamless believable surrealism with one strong metaphor; no band names or track lists.
   key_features: square format; one central impossible image; muted dusk palette; analog grain; wide empty space
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Album Cover (Surreal) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Surreal album cover: one impossible central image in a square frame, photographic calm and dream logic combined. Carry it through square format, one central impossible image, muted dusk palette, analog grain, wide empty space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - invented slogans
   - fake lettering

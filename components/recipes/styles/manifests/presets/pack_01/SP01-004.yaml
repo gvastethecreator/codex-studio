@@ -20,7 +20,7 @@ visualDna:
   camera_and_composition: 85–135 mm, slightly low or eye-level, waist-up or three-quarter crop with space for the pose.
   atmosphere_and_mood: Seductive confidence, opulence, and star power.
   rendering_and_quality: High-gloss magazine finish with specular sparkle and controlled retouching.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glamour Shot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Old-Hollywood-meets-magazine glamour: sculpted beauty light, luxurious styling, and a posed, idealized presence built for a cover. Carry it through beauty-dish butterfly light, glowing rim, jewel-tone styling, sculpted pose, specular sparkle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: beauty-dish butterfly light; glowing rim; jewel-tone styling; sculpted pose; specular sparkle
 avoidRules:
   - generic stock-photo face

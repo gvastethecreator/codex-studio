@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Delicate, romantic, heirloom and intricate, carried by how the material moves and catches light.
   rendering_and_quality: Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.
   key_features: openwork lace; floral motifs; scalloped edges; backlit pattern
-  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lace as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
+  creative_brief: "Lace garments: openwork lace with floral motifs that reveals layers and skin through delicate patterns. Carry it through openwork lace, floral motifs, scalloped edges, backlit pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - readable label text

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Wall seen straight on, the subject readable as a coarse square grid image.
   atmosphere_and_mood: Playful and collaborative, office supplies turned into art.
   rendering_and_quality: Real paper notes with curl and shadow; blank notes with no writing.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sticky-Note Wall Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Sticky-note wall mosaic: a large image built from dozens of square colored sticky notes on a wall, each note one pixel. Carry it through square sticky-note pixels, limited note colors, curled corners, grid gaps, straight-on wall view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: square sticky-note pixels; limited note colors; curled corners; grid gaps; straight-on wall view
 avoidRules:
   - photorealistic rendering

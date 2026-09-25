@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested camera; dense transparent effects in the frame produce the hot zones.
   atmosphere_and_mood: Eerie and revealing, the hidden cost of a scene made visible.
   rendering_and_quality: Additive accumulation buffer with no shading, clean edges and smooth count gradients.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Overdraw Accumulation View as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Overdraw debug view: every rendered layer adds a little brightness, so transparent and stacked surfaces glow in proportion to how many times each pixel was drawn. Carry it through additive layer counting, navy to orange to white ramp, hidden back faces visible, hot particle stacks, no lighting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: additive layer counting; navy to orange to white ramp; hidden back faces visible; hot particle stacks; no lighting
 avoidRules:
   - sensor noise

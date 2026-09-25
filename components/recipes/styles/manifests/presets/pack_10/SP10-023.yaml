@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Nostalgic, degraded, eerie and analog, coming from the medium itself.
   rendering_and_quality: Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.
   key_features: tracking bands; chroma bleed; head-switching noise
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies VHS Glitch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "VHS tape glitch: tracking errors, chroma bleed, tape noise bands and wobbling horizontal lines. Carry it through tracking bands, chroma bleed, head-switching noise. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

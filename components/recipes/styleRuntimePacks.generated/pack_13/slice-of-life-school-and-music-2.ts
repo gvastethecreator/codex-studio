@@ -26,7 +26,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       key_features: 'fine lines; sparkling eyes; drifting petals; pastel bloom',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soft Shojo Spring as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Soft shojo spring anime: airy pastel frames with fine elegant lines, sparkling eyes and drifting petals. Carry it through fine lines, sparkling eyes, drifting petals, pastel bloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -54,7 +54,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       key_features: 'rain on glass; muted palette; small gestures; warm interiors',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rainy Slice of Life as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Rainy slice of life anime: quiet everyday frames with rain on glass, muted color and small gestures. Carry it through rain on glass, muted palette, small gestures, warm interiors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -84,7 +84,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       key_features: 'mirror bulbs; stage light strip; nervous hands',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Backstage Nerves Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Backstage nerves anime: the look of the minutes before a performance, dim wings, mirror bulbs and a slice of stage light. Carry it through mirror bulbs, stage light strip, nervous hands. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -112,7 +112,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       key_features: 'glossy desserts; reaction faces; warm light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dessert Cafe Comedy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dessert cafe comedy anime: warm, sugary comedic frames with glossy desserts and big reaction faces. Carry it through glossy desserts, reaction faces, warm light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -140,7 +140,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       key_features: 'lantern rows; fireworks; warm faces; summer night',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Festival Lantern Summer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Festival lantern summer anime: warm summer-night frames with rows of lanterns, yukata-like robes and firefly glow. Carry it through lantern rows, fireworks, warm faces, summer night. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -168,7 +168,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Concert Spotlight Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Concert spotlight anime: live-performance frames with blazing spotlights, lens flares, sweat and silhouetted crowds. Carry it through spotlights, lens flares, sweat, crowd silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'spotlights; lens flares; sweat; crowd silhouettes',
     },
     ui: {
@@ -202,7 +202,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Afterschool Golden Hour Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Afterschool golden hour anime: long orange light through windows, dust motes and long shadows at the end of the day. Carry it through orange shafts, long shadows, dust motes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'orange shafts; long shadows; dust motes',
     },
     ui: {
@@ -236,7 +236,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Winter Breath Quiet Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Winter breath anime: hushed snowy frames with visible breath, red noses, scarves and pale blue light. Carry it through visible breath, scarves, falling snow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'visible breath; scarves; falling snow',
     },
     ui: {
@@ -270,7 +270,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Night Study Lamp Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Night study lamp anime: small pools of warm desk light in dark rooms, tired eyes and late-night focus. Carry it through lamp pool, darkness, tired focus. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'lamp pool; darkness; tired focus',
     },
     ui: {
@@ -304,7 +304,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Nineties School Cel Nostalgia as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "90s cel anime: hand-painted cel look with muted palette, slightly soft film grain and classic character proportions. Carry it through film grain, muted cel, 90s proportions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'film grain; muted cel; 90s proportions',
     },
     ui: {
@@ -338,7 +338,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Garage Band Grit Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Garage band anime: raw, energetic frames with rough lines, amp glow, sweat and cramped rehearsal spaces. Carry it through rough lines, amp glow, sweat. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'rough lines; amp glow; sweat',
     },
     ui: {
@@ -371,7 +371,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Classical Recital Hush Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Classical recital anime: hushed concert-hall frames, polished instruments, soft spotlight and suspended breath. Carry it through polished instruments, spotlight, hush. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'polished instruments; spotlight; hush',
     },
     ui: {
@@ -403,7 +403,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Seaside Summer Haze Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Seaside summer haze anime: saturated blue skies, towering cumulus clouds, heat shimmer and bright white light. Carry it through cumulus towers, heat haze, cobalt sky, sea wind. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'cumulus towers; heat haze; cobalt sky; sea wind',
     },
     ui: {
@@ -436,7 +436,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dawn Practice Mist Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dawn practice anime: cold blue early mornings, mist on fields, breath and determined solitary training. Carry it through mist layers, pre-dawn blue, solitary practice. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'mist layers; pre-dawn blue; solitary practice',
     },
     ui: {
@@ -469,7 +469,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rooftop Wind Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Rooftop wind anime: sky-dominated frames with strong wind, flapping clothes and hair, and sweeping clouds. Carry it through windblown cloth, big sky, streaking clouds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'windblown cloth; big sky; streaking clouds',
     },
     ui: {
@@ -502,7 +502,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Late Train Window Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Late train anime: night commuter frames with window reflections, passing lights and tired quiet passengers. Carry it through window reflections, streaked lights, tired passengers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'window reflections; streaked lights; tired passengers',
     },
     ui: {
@@ -536,7 +536,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soft Focus Letter Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Soft focus anime: dreamy frames with shallow depth, glowing bokeh and gentle blur, like remembered moments. Carry it through bokeh, shallow focus, glowing backlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'bokeh; shallow focus; glowing backlight',
     },
     ui: {
@@ -569,7 +569,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Club Room Clutter Comedy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Club room clutter comedy: dense, busy frames packed with props, posters and chaotic group reactions. Carry it through dense clutter, chibi reactions, group chaos. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'dense clutter; chibi reactions; group chaos',
     },
     ui: {
@@ -603,7 +603,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Library Sunbeam Quiet Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Library sunbeam anime: hushed frames with shafts of sun, floating dust and quiet readers. Carry it through sun shafts, dust motes, quiet readers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'sun shafts; dust motes; quiet readers',
     },
     ui: {
@@ -635,7 +635,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Choir Harmony Light Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Choir harmony anime: rows of singers bathed in soft light, open mouths, uplifted faces and warm glow. Carry it through rows, uplifted faces, soft glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'rows; uplifted faces; soft glow',
     },
     ui: {

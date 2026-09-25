@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; frame through a thick door opening, low ceiling pressing down, machinery lining the walls.
   atmosphere_and_mood: Enclosed, anxious and waiting, a world sealed against the end.
   rendering_and_quality: Low-light photograph with period analogue detail and worn paint, no readable signs or screens.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cold War Bunker as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cold War bunker: a buried reinforced-concrete shelter of blast doors, air-filtration machinery, bunk rooms and control desks, painted in institutional colours and lit by caged lamps. Carry it through round steel blast doors, pale green painted concrete, caged bulbs and fluorescent tubes, air-filtration ducts, analogue dials. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: round steel blast doors; pale green painted concrete; caged bulbs and fluorescent tubes; air-filtration ducts; analogue dials
 avoidRules:
   - one-point corridor perspective as default

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Clear and instructive, every detail pointed out.
   rendering_and_quality: Manual-illustration finish with blank tags instead of words; no painted scene behind the object.
   key_features: hatched hero view; circular magnified callouts; blue leader lines; blank tags; white ground
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Callout Detail Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Technical callout sheet: the subject drawn in hatched line and grey tone, with circular magnified detail views linked by leader lines. Carry it through hatched hero view, circular magnified callouts, blue leader lines, blank tags, white ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - placeholder gibberish text
   - invented numbers presented as data

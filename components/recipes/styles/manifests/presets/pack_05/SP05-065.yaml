@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Subtle wrongness and a quiet, bright, high-key unease.
   rendering_and_quality: Sparse, pale, withheld lines that stay legible; no jump-scare darkness.
   key_features: high-key pale planes; withheld contour segments; silver-gray edge gaps; ash-white palette; rare small darks
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pale Threshold Horror Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Pale seinen horror line art of open white planes, thin silver-gray edge gaps and deliberately withheld contour segments, so forms dissolve into the paper at their edges. Carry it through high-key pale planes, withheld contour segments, silver-gray edge gaps, ash-white palette, rare small darks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

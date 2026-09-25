@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Bouncy and surreal, a cheerful world with a strange undertone.
   rendering_and_quality: Vintage 1930s print texture; original characters, no mouse or cat mascots.
   key_features: boneless rubber-hose limbs; pie-cut eyes; black and white; objects with faces dancing; film flicker
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 1930s Rubber Hose Cartoon as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "1930s rubber-hose cartoon: black-and-white animation with boneless bouncing limbs, pie-cut eyes and everything alive and dancing to the beat. Carry it through boneless rubber-hose limbs, pie-cut eyes, black and white, objects with faces dancing, film flicker. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - exact studio character copy
   - franchise likeness

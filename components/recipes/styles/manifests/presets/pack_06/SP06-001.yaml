@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Grave and weighty, a quiet drama carried by the fall of light.
   rendering_and_quality: Lost edges in shadow, found edges on the light side, thick lights over thin darks; brushwork stays visible up close and resolves at a distance.
   key_features: thin transparent darks and thick lights; single side light chiaroscuro; earth palette with lead white; linen weave in shadows; amber varnish glow
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oil Painting (Classic) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Classic studio oil painting: transparent warm darks laid in thin, opaque lead-white lights built up thick, and form turned by a strong single light in the academic chiaroscuro manner. Carry it through thin transparent darks and thick lights, single side light chiaroscuro, earth palette with lead white, linen weave in shadows, amber varnish glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - changing the requested framing

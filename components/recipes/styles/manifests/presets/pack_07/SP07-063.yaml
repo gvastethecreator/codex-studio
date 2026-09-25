@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Solemn, bureaucratic and funereal, the state as a tomb.
   rendering_and_quality: Severe architectural render with crisp stone edges and restrained glow; no skulls, gore or cemetery props.
   key_features: black basalt colonnades; bone-marble inlay grids; oxidized bronze doors; endless repeated pilasters; cold raking overcast light
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sepulchral Civic Monumentalism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Sepulchral civic monumentalism: public buildings designed as necropolis architecture, black basalt colonnades, bone-marble inlay grids and oxidized bronze doors at inhuman height. Carry it through black basalt colonnades, bone-marble inlay grids, oxidized bronze doors, endless repeated pilasters, cold raking overcast light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - licensed fantasy location
   - copy of a known film or game building

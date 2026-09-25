@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested location and camera; landmarks become tall simple blocks, paths become ramps and steps.
   atmosphere_and_mood: Honest and structural, a place stripped to space and scale.
   rendering_and_quality: Editor-viewport render with crisp edges, no fog, no post effects and no textures besides the grid.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Level Blockout Greybox as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Level blockout greybox: the location rebuilt from untextured boxes, ramps and cylinders with prototype grid materials, the stage before any art pass. Carry it through grey primitive volumes, orange prototype grid floors, one-meter measure tiles, default directional light, no detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: grey primitive volumes; orange prototype grid floors; one-meter measure tiles; default directional light; no detail
 avoidRules:
   - franchise likeness

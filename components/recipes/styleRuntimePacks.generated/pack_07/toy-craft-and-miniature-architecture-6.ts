@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'scored and folded cardstock; visible glue tabs; layered pop-up planes; tracing-paper windows; tabletop macro depth of field',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Papercraft Diorama Construction as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Papercraft construction: the subject scored, folded and glued from cardstock, with visible glue tabs, layered pop-up planes and tracing-paper windows at tabletop scale. Carry it through scored and folded cardstock, visible glue tabs, layered pop-up planes, tracing-paper windows, tabletop macro depth of field. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'studs as surface texture; stepped brick curves; offset plate seams; flat molded primaries; macro on a neutral base',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Studded ABS Brick System as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Microscale brick build: the subject assembled from tiny studded plastic bricks, plates and tiles so the studs become surface texture and curves turn into steps. Carry it through studs as surface texture, stepped brick curves, offset plate seams, flat molded primaries, macro on a neutral base. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -85,7 +85,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'bucket-molded and knife-carved sand; drip-castle spires; dry crust on wet sand; shell inclusions; low raking beach sun',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wet-Sand Ephemeral Modeling as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Wet-sand sculpture: the subject packed from bucket-molded sand and carved with palette knives and straws, finished with drip-castle spires and crumbling edges. Carry it through bucket-molded and knife-carved sand, drip-castle spires, dry crust on wet sand, shell inclusions, low raking beach sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -114,7 +114,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'reused box cardboard; exposed corrugated flutes; packing-tape joints; marker linework on card; hand-cut openings',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Corrugated Cardboard Improvisation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Improvised cardboard construction: reused shipping boxes cut with a craft knife, folded flaps, packing-tape joints and black marker linework drawn directly on the card. Carry it through reused box cardboard, exposed corrugated flutes, packing-tape joints, marker linework on card, hand-cut openings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -142,7 +142,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'rounded PVC pressure tubes; heat-welded seams; visible blower hose and valves; safety-primary colors; long specular streaks',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pressurized Vinyl Playform as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Heat-welded inflatable construction: every form made of rounded PVC pressure tubes and pillowy panels held up by air, with blower hose and valves visible. Carry it through rounded PVC pressure tubes, heat-welded seams, visible blower hose and valves, safety-primary colors, long specular streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -170,7 +170,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'baked cookie panels; piped royal icing seams; candy inlays; sugar-glass panes; tabletop macro scale',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Confectionery Structural Ornament as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tabletop gingerbread construction: baked cookie panels cut to shape and glued with piped royal icing, candy inlays and sugar-glass windows at model scale. Carry it through baked cookie panels, piped royal icing seams, candy inlays, sugar-glass panes, tabletop macro scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -198,7 +198,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'mushroom caps and gills as structure; bracket fungus ledges; cream speckling; spore dust in a light shaft; forest-floor macro',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fungal Vernacular Miniature as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fungal miniature construction: the subject grown and assembled from mushroom caps, gills and bracket fungi, with moss and lichen as the finish. Carry it through mushroom caps and gills as structure, bracket fungus ledges, cream speckling, spore dust in a light shaft, forest-floor macro. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -227,7 +227,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'subject enclosed in a corked bottle; aqua glass tint; refraction bending the miniature; fine rigging; caustic glow on the table',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bottle-Glass Curio Miniature as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bottle curio miniature: the subject built at tiny scale inside a corked glass bottle, as if assembled through the neck with tweezers and fine rigging. Carry it through subject enclosed in a corked bottle, aqua glass tint, refraction bending the miniature, fine rigging, caustic glow on the table. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -255,7 +255,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'vertical earth cross-section; capillary root branching; layered soil strata; rounded cavities; amber gel pockets',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Subterranean Bio-Cutaway as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sculpted earth cross-section: a handmade cutaway model sliced through soil, showing capillary root branching, layered strata and rounded cavities with amber gel pockets. Carry it through vertical earth cross-section, capillary root branching, layered soil strata, rounded cavities, amber gel pockets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -283,7 +283,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'front face removed; stacked miniature compartments; painted toy wood; raw-wood section edges; straight-on elevation',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Toy-Scale Sectional Cutaway as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Toy-scale sectional cutaway: the subject built in painted toy wood with its front face removed, revealing stacked compartments and every internal part in miniature. Carry it through front face removed, stacked miniature compartments, painted toy wood, raw-wood section edges, straight-on elevation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -316,7 +316,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Macro photograph of a real matchstick model with countable sticks; no smooth carved wood.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Matchstick Glue-Up Model as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Matchstick construction: the subject built from thousands of glued wooden matchsticks laid in courses, with the dark heads used as a deliberate pattern. Carry it through glued matchstick courses, match heads as pattern, glue fillets at joints, warm raking lamp, countable sticks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'glued matchstick courses; match heads as pattern; glue fillets at joints; warm raking lamp; countable sticks',
     },
@@ -354,7 +354,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Macro photograph of a real print with honest defects; never a smooth resin cast or CG render.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Layer-Line 3D-Print Model as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Desktop 3D-print model: the subject printed in plastic filament with fine horizontal layer lines, support scars and a slight elephant-foot flare at the base. Carry it through visible horizontal layer lines, support scars, stringing wisps, single-color filament, macro on a build plate. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'visible horizontal layer lines; support scars; stringing wisps; single-color filament; macro on a build plate',
     },
@@ -392,7 +392,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean photograph of real plastic frames; part numbers left as blank tabs, never readable.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sprue-Frame Model Kit as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Unassembled model kit: the subject broken into injection-molded parts still attached to rectangular sprue frames by thin gates, ready to be clipped. Carry it through parts on rectangular sprue frames, thin gates and ejector-pin marks, one color per frame, clipped parts, overhead view on a cutting mat. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'parts on rectangular sprue frames; thin gates and ejector-pin marks; one color per frame; clipped parts; overhead view on a cutting mat',
     },
@@ -430,7 +430,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Macro photograph of a real quilled relief; strip edges crisp, no printed paper surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Quilled Paper Coil Relief as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Paper quilling: the subject formed from narrow paper strips rolled into tight coils, teardrops and scrolls, glued edge-up onto a backing board as a shallow relief. Carry it through rolled paper-strip coils, teardrop and scroll shapes, edge-up relief on a board, strip-by-strip gradients, low side light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'rolled paper-strip coils; teardrop and scroll shapes; edge-up relief on a board; strip-by-strip gradients; low side light',
     },
@@ -468,7 +468,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photograph of a real papier-mache piece; lumpiness kept, newsprint stays blurred and unreadable.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Papier-Mache Strip Sculpture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Papier-mache sculpture: the subject built up from pasted strips of torn paper over a wire and balloon armature, then painted in thick poster paint. Carry it through pasted torn-paper strips, lumpy uneven surface, chalky poster paint, grey newsprint showing through, hollow lightweight form. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'pasted torn-paper strips; lumpy uneven surface; chalky poster paint; grey newsprint showing through; hollow lightweight form',
     },
@@ -506,7 +506,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Still-life photograph with accurate spherical refraction; distinct from a corked bottle, no water spilling.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Snow-Globe Dome Miniature as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Snow globe: the subject as a tiny painted resin miniature sealed in a water-filled glass dome on a turned base, flakes drifting around it. Carry it through water-filled glass dome, drifting flakes, spherical magnification, turned wooden base, cold blue inner cast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'water-filled glass dome; drifting flakes; spherical magnification; turned wooden base; cold blue inner cast',
     },
@@ -544,7 +544,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photograph of a real hobby layout; the flock and foliage read as model materials, not real grass.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Static-Grass Scenic Layout as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hobby scenic layout: the subject set on a baseboard landscape of static-grass flock, lichen and clump-foliage trees, plaster rock castings and a painted sky backdrop. Carry it through static-grass flock, clump-foliage trees, dry-brushed plaster rock, painted sky backdrop, visible baseboard edge. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'static-grass flock; clump-foliage trees; dry-brushed plaster rock; painted sky backdrop; visible baseboard edge',
     },
@@ -582,7 +582,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Macro photograph of a real chenille build with fuzz resolved; no smooth wire or plastic.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chenille Pipe-Cleaner Craft as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pipe-cleaner craft: the subject bent and twisted from fuzzy chenille stems, with pom-poms for round masses and wiggle-free bead eyes. Carry it through twisted fuzzy chenille stems, pom-pom masses, glowing fibre halos, exposed wire ends, plain seamless backdrop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'twisted fuzzy chenille stems; pom-pom masses; glowing fibre halos; exposed wire ends; plain seamless backdrop',
     },
@@ -620,7 +620,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photograph of a real metal assemblage; printed can graphics stay faded and unreadable.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tin-Can Scrap Assemblage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Scrap assemblage: the subject assembled from cut tin cans, bottle caps, washers, springs and spoons, bolted and soldered together. Carry it through cut tin cans and bottle caps, soldered and bolted joints, spoons and springs as parts, rust bloom, hard metallic glints. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'cut tin cans and bottle caps; soldered and bolted joints; spoons and springs as parts; rust bloom; hard metallic glints',
     },
@@ -654,7 +654,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Macro photograph of real soap with subsurface softness; not marble, not porcelain.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carved Soap-Bar Miniature as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Soap carving: the subject knife-carved from a single rectangular bar of soap, with the flat bar faces still visible on the back and base. Carry it through carved from a single soap bar, waxy knife scallops, translucent thin edges, curled shavings, pastel soap color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'carved from a single soap bar; waxy knife scallops; translucent thin edges; curled shavings; pastel soap color',
     },

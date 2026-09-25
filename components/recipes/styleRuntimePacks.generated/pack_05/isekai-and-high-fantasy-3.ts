@@ -31,7 +31,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'fading warm-grey lineart; pale watercolor background boards; lifted slate blacks; single soft shadow tier; drifting light flecks',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Faded-Line Pale Wash Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Modern TV anime cel over pale watercolor background boards: thin warm-grey lineart that fades to nothing at outer edges, two-tone cel shading and wide airy painted skies. Carry it through fading warm-grey lineart, pale watercolor background boards, lifted slate blacks, single soft shadow tier, drifting light flecks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -61,7 +61,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'nested concentric contour echoes; heavy dark-brown lineart; bronze edge rims; three-tone cel shadow; scuffed dry-brush wear',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Worn Bronze Concentric-Line Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Gritty TV-anime cel with heavy dark-brown lineart and nested contour echoes: two or three parallel strokes trace each major outline like growth rings. Carry it through nested concentric contour echoes, heavy dark-brown lineart, bronze edge rims, three-tone cel shadow, scuffed dry-brush wear. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -95,7 +95,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'fine brown pen lineart; specimen-plate clarity; earthy moss and ochre fills; stippled organic texture; warm reflected bounce',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Naturalist Sketchbook Anime Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Manga-derived cel painting with a naturalist's eye: fine brown pen lineart describing joints, scales, seams and grain over flat earthy fills with cutaway-diagram clarity. Carry it through fine brown pen lineart, specimen-plate clarity, earthy moss and ochre fills, stippled organic texture, warm reflected bounce. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -128,7 +128,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'rounded soft lineart; amber-to-twilight color split; airbrushed glow falloff; light diffusion filter; cream highlights',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Amber Dusk Rounded Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cozy TV-anime cel with soft rounded lineart, a blended amber glow and airbrushed twilight gradients, every corner of every shape softened. Carry it through rounded soft lineart, amber-to-twilight color split, airbrushed glow falloff, light diffusion filter, cream highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -158,7 +158,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'near-monochrome slate palette; single violet accent; dry economical line; wide horizontal negative space; one narrow highlight',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Slate Twilight Single-Violet Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Spare cool-toned anime cel: dry economical lineart, broad slate flats and exactly one violet accent that carries all the color in the frame. Carry it through near-monochrome slate palette, single violet accent, dry economical line, wide horizontal negative space, one narrow highlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -192,7 +192,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'hairline mechanical lineart; brass specular glints; grounded proportions; construction-readable three-quarter angle; calm single-tone shadow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fine-Line Brass Glint Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Practical anime cel drawing with hairline mechanical lineart, grounded realistic proportions and small warm brass specular glints on every metal part. Carry it through hairline mechanical lineart, brass specular glints, grounded proportions, construction-readable three-quarter angle, calm single-tone shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -222,7 +222,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'wobbly colored-pencil line; waxy crayon fills; dot eyes and rounded bodies; flat picture-book staging; paper tooth showing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Picture-Book Crayon Line Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fable-like anime drawn as a picture book: wobbly colored-pencil lineart, flat crayon-textured fills and simplified rounded shapes with small dot eyes. Carry it through wobbly colored-pencil line, waxy crayon fills, dot eyes and rounded bodies, flat picture-book staging, paper tooth showing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -252,7 +252,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'candy pastel palette; colored lineart; lavender-tinted shadows; satin gloss bands; soft bloom halo',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Candy Pastel Bloom Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Polished mobile-game splash-art cel in candy pastels: crisp soft colored lineart, glossy two-tone shading and a luminous bloom pass over highlights. Carry it through candy pastel palette, colored lineart, lavender-tinted shadows, satin gloss bands, soft bloom halo. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -282,7 +282,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'faceted crystal edge highlights; translucent cyan planes; pearl-white high key; prismatic pinpoint glints; restrained cyan bloom',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyan Crystal-Facet Glow Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Airy digital anime cel with crystalline edge breaks: forms are rimmed by thin faceted highlights and layered with translucent cyan planes of light. Carry it through faceted crystal edge highlights, translucent cyan planes, pearl-white high key, prismatic pinpoint glints, restrained cyan bloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -312,7 +312,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'silver after-image echo lines; violet-slate low key; narrow silver rims; ribbon-fine brush line; fading repetition',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Violet Echo-Line Gothic Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ornate dark anime cel in which each focal contour is echoed by fine silver after-image lines, as if the moment had been drawn several times over. Carry it through silver after-image echo lines, violet-slate low key, narrow silver rims, ribbon-fine brush line, fading repetition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -343,7 +343,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'painterly sepia-moss backgrounds; dry-brush contour accents; atmospheric blue fade; clean cel figures; parchment highlights',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sepia Moss Dry-Brush Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Film-quality anime with painterly background art: dry-brush contour accents, detailed sepia and moss landscapes and pale open skies behind clean cel figures. Carry it through painterly sepia-moss backgrounds, dry-brush contour accents, atmospheric blue fade, clean cel figures, parchment highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -373,7 +373,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'elastic springy lineart; deadpan exaggerated faces; yellow-coral-aqua flats; sweat-drop symbol shapes; post-gag pause timing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Springy Comic-Timing Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Comedy TV-anime cel with elastic lineart, exaggerated deadpan faces and punchy flat shapes caught on the beat just after the gag lands. Carry it through elastic springy lineart, deadpan exaggerated faces, yellow-coral-aqua flats, sweat-drop symbol shapes, post-gag pause timing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -403,7 +403,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'rounded silhouettes; sky-blue accents on cream; soft round highlights; pale blue shadows; uncluttered color blocks',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rounded Sky-Blue Friendly Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bright friendly anime cel with rounded silhouettes, simplified volumes and clean sky-blue accents set against warm cream. Carry it through rounded silhouettes, sky-blue accents on cream, soft round highlights, pale blue shadows, uncluttered color blocks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -433,7 +433,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'vertical mineral facets; amber point lights; cool teal depth; contained quartz-like glow; stacked vertical planes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vertical Mineral Amber Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Luminous anime cel built from tall mineral-like planes: vertical facets of value, warm amber point lights and cool teal depth. Carry it through vertical mineral facets, amber point lights, cool teal depth, contained quartz-like glow, stacked vertical planes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -463,7 +463,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'invisible modular grid; repeated forms at even intervals; identical short shadows; indigo-gold-cyan palette; hard-edged flats',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Systemic Cooperation Grid Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Precision anime cel organized on an invisible modular grid: forms repeat at measured intervals and align to shared horizontals and verticals. Carry it through invisible modular grid, repeated forms at even intervals, identical short shadows, indigo-gold-cyan palette, hard-edged flats. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -492,7 +492,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'lost smoky edges; clay-olive-charcoal range; smudged dragged brushwork; compressed values; clear exposed focal face',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Smoke-Mud Vulnerability Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Atmospheric painted anime with soft lost edges, layered low contrast and rough earth-toned brushwork, as if seen through settling smoke. Carry it through lost smoky edges, clay-olive-charcoal range, smudged dragged brushwork, compressed values, clear exposed focal face. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -522,7 +522,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'airbrushed highlight bands; hand-painted cel blocks; gouache background boards; film grain and cel dust; long-limbed period anatomy',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Classic OVA Quest Tapestry Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Late-1980s to early-1990s OVA hand-painted cel: confident color blocks, airbrushed highlights on hair and armor, glossy eye highlights and painted background boards. Carry it through airbrushed highlight bands, hand-painted cel blocks, gouache background boards, film grain and cel dust, long-limbed period anatomy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -555,7 +555,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'tall vertical rhythm; brocade-like repeating line pattern; indigo-parchment-cinnabar palette; near symmetry; precise ornament highlights',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tall Textile-Rhythm Formal Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Formal anime cel shaped by tall vertical rhythms and textile-like repeating line patterns, ornament balanced as carefully as woven cloth. Carry it through tall vertical rhythm, brocade-like repeating line pattern, indigo-parchment-cinnabar palette, near symmetry, precise ornament highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -587,7 +587,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'carmine accents; angular 1990s features; one-direction wind sweep; long tapered strokes; tilted diagonals',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carmine Angular Windswept Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "1990s action-romance anime cel with sharp angular features, long tapered strokes and everything, hair, cloth and grass, caught in one hard wind. Carry it through carmine accents, angular 1990s features, one-direction wind sweep, long tapered strokes, tilted diagonals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -616,7 +616,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'arabesque S-curve contours; jewel blue and turquoise; fine gold-line ornament; jewel-point specular stars; enamel tile shine',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Jewel Arabesque Curve Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ornamented anime cel led by jewel color and arabesque curves: contours flow in elegant S-arcs and fine decorative line rhythms sit inside shapes. Carry it through arabesque S-curve contours, jewel blue and turquoise, fine gold-line ornament, jewel-point specular stars, enamel tile shine. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -645,7 +645,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'inky indigo blocks; cream paper grain; fine hatchwork; slight off-register edges; amber accent ink',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Indigo Block-Print Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anime cel painting crossed with relief printing: inky indigo blocks, fine hatchwork, cream paper grain and slightly off-register edges. Carry it through inky indigo blocks, cream paper grain, fine hatchwork, slight off-register edges, amber accent ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -674,7 +674,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'matte gouache planes; simple stable geometry; pale gold and blue-grey; no rays or halos; centered balance',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grounded Matte Geometry Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Quiet anime cel with matte painted planes organized by simple geometry, squares, triangles and verticals, under broad gentle light. Carry it through matte gouache planes, simple stable geometry, pale gold and blue-grey, no rays or halos, centered balance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -706,7 +706,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'glass-green translucence; veinlike linework; high-key cream ground; transparent washes; muted gold accents',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glass-Green High-Key Herbarium Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Refined high-key anime cel with glass-green translucence and delicate veinlike linework, like a pressed-specimen plate under clear light. Carry it through glass-green translucence, veinlike linework, high-key cream ground, transparent washes, muted gold accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -735,7 +735,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'halo-like value rings; lavender and deep blue; large sparkling eyes; star sparkle marks; flowing hair arcs',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lavender Halo-Arc Shoujo Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Early-1990s shoujo fantasy cel: tall slender figures, large sparkling eyes, flowing hair and ornamental halo-like value rings arcing behind focal forms. Carry it through halo-like value rings, lavender and deep blue, large sparkling eyes, star sparkle marks, flowing hair arcs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -764,7 +764,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'upward-sweeping lines; ruby-sapphire-emerald hues; faceted gem glints; crisp contained glow; rising diagonals',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gem-Facet Rising-Line Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bright 1990s magical-adventure cel with long upward-sweeping lines, clear gem-tone color shifts and faceted gem highlights. Carry it through upward-sweeping lines, ruby-sapphire-emerald hues, faceted gem glints, crisp contained glow, rising diagonals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -797,7 +797,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'candy-neon planes; chromatic aberration fringes; multiple vanishing points; colored shadows; floating inverted elements',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hyper-Saturated Impossible Perspective Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "High-saturation digital anime with candy-neon color planes, chromatic aberration fringes and deliberately impossible, tilted perspective. Carry it through candy-neon planes, chromatic aberration fringes, multiple vanishing points, colored shadows, floating inverted elements. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -830,7 +830,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'swept diagonals; khaki and field grey; clipped high-key sky; compact silhouettes; newsreel-still stillness',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Khaki Compressed-Diagonal Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Compact, forceful military-fantasy anime cel with swept diagonals, crisp silhouettes and clipped high-key contrast, drawn like a newsreel still. Carry it through swept diagonals, khaki and field grey, clipped high-key sky, compact silhouettes, newsreel-still stillness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -860,7 +860,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'baroque bilateral symmetry; ivory against charcoal; cold narrow highlights; monumental value planes; powdery grain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ivory-Charcoal Baroque Symmetry Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Monumental anime cel painting with baroque bilateral symmetry, heavy value planes and a restrained ornamental silhouette language. Carry it through baroque bilateral symmetry, ivory against charcoal, cold narrow highlights, monumental value planes, powdery grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -893,7 +893,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'thorny branching contours; lilac glints; umber chiaroscuro framing; lit center; delicate grain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lilac Thorn-Line Chiaroscuro Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Luminous botanical anime cel in chiaroscuro: intricate thorny branching contours, lilac highlights and deep brown darkness framing a lit center. Carry it through thorny branching contours, lilac glints, umber chiaroscuro framing, lit center, delicate grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -923,7 +923,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'tapered brush-ink contours; vermilion accents; faded indigo dusk; sun-faded cel color; horizontal flow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vermilion Indigo Tapered-Ink Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Folkloric 1990s anime cel with tapered brush-ink contours, warm vermilion accents and faded indigo dusk values, as if the cels were slightly sun-faded. Carry it through tapered brush-ink contours, vermilion accents, faded indigo dusk, sun-faded cel color, horizontal flow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

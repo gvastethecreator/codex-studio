@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Early and promising, a space that already feels playable in grey boxes.
   rendering_and_quality: Hybrid finish, crisp facet geometry underneath and loose paint marks on top; not a polished low-poly art render.
   key_features: coarse flat-shaded proxy geometry; clay-grey facets; painted glow and fog over the mesh; strokes crossing facet edges; game-camera view
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Low Poly Concept as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Low-poly blockout concept: the scene modeled as coarse proxy geometry of a few hundred flat-shaded facets, then painted over with quick light, fog and color notes. Carry it through coarse flat-shaded proxy geometry, clay-grey facets, painted glow and fog over the mesh, strokes crossing facet edges, game-camera view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable annotations
   - readable text

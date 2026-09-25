@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Full-frame projection, arranged so the subject still reads at card size.
   atmosphere_and_mood: Psychedelic, pulsing, warm and hypnotic, driven by the construction, color and rhythm.
   rendering_and_quality: Projected finish, with clean, deliberate marks and no accidental noise.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Liquid Light Show as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Liquid light show: overhead-projected oil and dye blobs pulsing in saturated color. Carry it through projected oil blobs, saturated dye. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: projected oil blobs; saturated dye
 avoidRules:
   - readable text

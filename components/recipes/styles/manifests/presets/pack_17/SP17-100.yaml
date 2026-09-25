@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Simple centered or slightly tilted composition with clear silhouette and quiet margins, like a hand-drawn classroom handout image without words.
   atmosphere_and_mood: Nostalgic, eerie, humble, and faintly haunted.
   rendering_and_quality: 'Faithful but clean ditto reproduction: soft violet bleed stays controlled, forms remain readable, no digital glow.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mimeograph Violet Ditto Zine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Spirit-duplicator ditto print in soft aniline violet: faded purple line, feathery ink bleed, uneven pressure from the hand-cranked drum, and pale damp-paper tone. Carry it through aniline ditto violet, feathery line bleed, faded fortieth-copy tone, stylus hatch, humble handout drawing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: aniline ditto violet; feathery line bleed; faded fortieth-copy tone; stylus hatch; humble handout drawing
 avoidRules:
   - saturated neon purple

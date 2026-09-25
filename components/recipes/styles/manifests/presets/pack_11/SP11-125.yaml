@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Circular fisheye, matching how this instrument actually frames data.
   atmosphere_and_mood: Vast, quiet, cosmic and watchful, coming from seeing what eyes cannot.
   rendering_and_quality: Believable instrument output with correct signal logic, artifacts and resolution for that sensor.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies All-Sky Meteor Camera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "All-sky camera: a circular fisheye night sky with meteor streaks, horizon ring and trees. Carry it through circular fisheye, meteor streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: circular fisheye; meteor streaks
 avoidRules:
   - readable text

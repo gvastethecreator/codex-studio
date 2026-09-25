@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Watchful, cold attention in which everything feels observed.
   rendering_and_quality: A crisp band against soft falloff, with no scan effects, screens or interface graphics.
   key_features: selective-focus sharp band; pinpoint red speculars; graphite grays; low-key directional light; soft falloff outside the band
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Red-Optic Security Noir Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Graphite noir anime rendering with a narrow selective-focus band that sharpens a few contours to razor precision while the rest softens, punctuated by pinpoint red speculars. Carry it through selective-focus sharp band, pinpoint red speculars, graphite grays, low-key directional light, soft falloff outside the band. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; darker surroundings to show the emission.
   atmosphere_and_mood: Dangerous and primal, form pulled straight out of the forge.
   rendering_and_quality: Emissive blackbody material with heat distortion; not orange paint.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Molten Glowing Metal as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Molten glowing metal: the target made of incandescent liquid metal, glowing by its own heat from deep red to white-yellow, with a darker cooling skin. Carry it through blackbody glow gradient, cracked cooling crust, heat haze, drips and sparks, light cast on surroundings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: blackbody glow gradient; cracked cooling crust; heat haze; drips and sparks; light cast on surroundings
 avoidRules:
   - changing the surroundings

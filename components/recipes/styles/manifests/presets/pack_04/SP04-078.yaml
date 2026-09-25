@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Rebellious, quick and direct, an image left overnight.
   rendering_and_quality: Hard-edged posterized silhouettes with stencil bridges; never freehand shading or protest signs.
   key_features: cut stencil bridges; black spray plus one red; overspray halos and drips; posterized levels; wall texture
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Street Protest Stencil Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Street stencil art: the subject cut into a one- or two-layer stencil with bridges and sprayed onto a wall. Carry it through cut stencil bridges, black spray plus one red, overspray halos and drips, posterized levels, wall texture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - invented slogans
   - fake lettering

@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Cramped, volatile grime energy, a room that might ignite.
   rendering_and_quality: Controlled collision marks with every form still readable.
   key_features: scuffed ink masses; chipped color edges; broken contour joins; soot neutrals with bounded accent; stain-like strokes
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grimy Sorcery Collision Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Grimy dark-fantasy anime ink where scuffed black masses collide with chipped color edges and contour joins break abruptly, as if two drawings were forced together. Carry it through scuffed ink masses, chipped color edges, broken contour joins, soot neutrals with bounded accent, stain-like strokes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

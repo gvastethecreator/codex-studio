@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Asymmetric modular grid, arranged so the subject still reads at card size.
   atmosphere_and_mood: Rational, clean, confident and modern, driven by the construction, color and rhythm.
   rendering_and_quality: Crisp print finish, with clean, deliberate marks and no accidental noise.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Swiss Grid Composition as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Swiss grid composition: strict modular grid, asymmetric layout, bold geometric image blocks without type. Carry it through modular grid, asymmetric blocks, no type. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: modular grid; asymmetric blocks; no type
 avoidRules:
   - readable text

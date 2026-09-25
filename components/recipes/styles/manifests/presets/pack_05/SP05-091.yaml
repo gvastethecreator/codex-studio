@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Luminous, tender and spacious, like cold clear morning air.
   rendering_and_quality: Clean tapered cel edges, soft transitions, sharp glints and controlled glow, with no interface elements anywhere.
   key_features: faceted crystal edge highlights; translucent cyan planes; pearl-white high key; prismatic pinpoint glints; restrained cyan bloom
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyan Crystal-Facet Glow Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Airy digital anime cel with crystalline edge breaks: forms are rimmed by thin faceted highlights and layered with translucent cyan planes of light. Carry it through faceted crystal edge highlights, translucent cyan planes, pearl-white high key, prismatic pinpoint glints, restrained cyan bloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway

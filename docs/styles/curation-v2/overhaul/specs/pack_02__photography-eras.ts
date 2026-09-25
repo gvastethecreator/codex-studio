@@ -45,7 +45,7 @@ const spec: Spec = {
       avoid: [...BASE, 'color', 'paper texture', 'bicycle'],
       briefs: [
         'Daguerreotype of an adult alchemist seated rigidly beside his brass still, mirror-silver plate with a blue and rose tarnish halo creeping from the corners, a brass mat edge. No text or logo.',
-        "Daguerreotype of a modern hand-built electric guitar of original design, an asymmetric angular body with a carved wooden top and a single chrome pickup, resting on a stand, rendered in cool silver plate with fine hairline scratches and a tarnish bloom, still clearly a modern instrument. Not a recognizable guitar model; no text or logo.",
+        'Daguerreotype of a modern hand-built electric guitar of original design, an asymmetric angular body with a carved wooden top and a single chrome pickup, resting on a stand, rendered in cool silver plate with fine hairline scratches and a tarnish bloom, still clearly a modern instrument. Not a recognizable guitar model; no text or logo.',
         'Daguerreotype of an adult woman holding a barn owl on her gloved hand, both perfectly still, silver highlights and mirror-dark shadows. No text or logo.',
       ],
     },
@@ -314,7 +314,7 @@ const spec: Spec = {
     },
     'SP02-129': {
       briefs: [
-        "Silver-plate tonality photograph of a modern cordless espresso grinder of original, unbranded design on a marble kitchen counter beside a steel kettle, the modern appliances unchanged, cool silver tones and mirror-dark shadows, no period props. Not a recognizable product; no text or logo.",
+        'Silver-plate tonality photograph of a modern cordless espresso grinder of original, unbranded design on a marble kitchen counter beside a steel kettle, the modern appliances unchanged, cool silver tones and mirror-dark shadows, no period props. Not a recognizable product; no text or logo.',
         'Silver-plate tonality photograph of a modern running shoe resting on a wooden bench, fine silver detail in the mesh, no historical staging. No text or logo.',
         'Silver-plate tonality photograph of a houseplant in a concrete pot beside a tall window, soft silver gradations, a modern interior kept modern. No text or logo.',
       ],

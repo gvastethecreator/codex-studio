@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Soft, velvety and luminous, like light held in powder.
   rendering_and_quality: Dry powdery matte finish with visible stroke breaks on the paper grit; no wet washes and no glossy wax.
   key_features: powdery pigment on gritty toned paper; broken side-of-stick strokes; finger-blended passages; saturated complementary color; matte luminous glow
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pastel (Soft) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Soft pastel drawing: pure pigment sticks dragged and layered on sanded or velour pastel paper, blended with fingers in places and left as broken strokes in others. Carry it through powdery pigment on gritty toned paper, broken side-of-stick strokes, finger-blended passages, saturated complementary color, matte luminous glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - mixing in a second drawing tool

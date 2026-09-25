@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view as a small still life with shavings and the carving knife tip out of focus.
   atmosphere_and_mood: Gentle, clean and meditative, a small patient act.
   rendering_and_quality: Macro photograph of real soap with subsurface softness; not marble, not porcelain.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carved Soap-Bar Miniature as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Soap carving: the subject knife-carved from a single rectangular bar of soap, with the flat bar faces still visible on the back and base. Carry it through carved from a single soap bar, waxy knife scallops, translucent thin edges, curled shavings, pastel soap color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: carved from a single soap bar; waxy knife scallops; translucent thin edges; curled shavings; pastel soap color
 avoidRules:
   - brand logo on parts

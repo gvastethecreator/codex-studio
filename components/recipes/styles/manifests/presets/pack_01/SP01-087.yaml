@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Functional and trustworthy, exactly what arrives in the box.
   rendering_and_quality: Clean online-retail image; no lifestyle scene, dramatic light or colored backdrop.
   key_features: pure white background; even light box; small soft contact shadow; object fills frame; straight listing view
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies E-Commerce White Sweep as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "E-commerce white sweep: a marketplace listing photo with the object on pure white, evenly lit, readable from edge to edge. Carry it through pure white background, even light box, small soft contact shadow, object fills frame, straight listing view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - fake brand logo
   - readable labels

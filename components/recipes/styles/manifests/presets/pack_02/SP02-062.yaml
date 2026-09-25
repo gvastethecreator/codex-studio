@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Quiet and suspended, a scene held between day and night.
   rendering_and_quality: Clean low-light film image with rich blues; no trams or wet-street clichés.
   key_features: deep blue ambient sky; warm practicals in frame; hidden warm key; faint haze; balanced exposure
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blue Hour Cinematography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Blue-hour cinematography: shooting in the short window after sunset, balancing a deep blue ambient sky against warm practical lights rigged in frame. Carry it through deep blue ambient sky, warm practicals in frame, hidden warm key, faint haze, balanced exposure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested location
   - franchise likeness

@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'white lines on Prussian blue; plan, elevation and section; hatched cut material; blank dimension gaps; empty title block',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blueprint Schematic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Engineering blueprint sheet: white drafted lines on Prussian blue diazo paper, the subject shown in plan, side elevation and section. Carry it through white lines on Prussian blue, plan, elevation and section, hatched cut material, blank dimension gaps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -56,7 +56,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'central reticle; horizon ladder; segmented gauges; radar arc; cyan and amber glow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies UI/HUD Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Heads-up display design: thin luminous vector reticles, arcs and gauges floating over a first-person view of the subject. Carry it through central reticle, horizon ladder, segmented gauges, radar arc, cyan and amber glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -84,7 +84,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'hatched hero view; circular magnified callouts; blue leader lines; blank tags; white ground',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Callout Detail Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Technical callout sheet: the subject drawn in hatched line and grey tone, with circular magnified detail views linked by leader lines. Carry it through hatched hero view, circular magnified callouts, blue leader lines, blank tags, white ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -111,7 +111,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'surface, muscle and skeleton layers; madder red muscle; sepia engraving line; sectional insets; blank leader lines',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Anatomy Reference Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anatomy reference plate: the subject shown as layered écorché studies, surface, muscle and skeleton, like a hand-colored medical engraving. Carry it through surface, muscle and skeleton layers, madder red muscle, sepia engraving line, sectional insets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -138,7 +138,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'grey-box panels; crossed image placeholders; grey bars instead of text; blue flow arrows; layout alternatives',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies UI/HUD Wireframe Concept as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "UI wireframe: low-fidelity grey boxes, crossed image placeholders and bar-shaped text stand-ins mapping a game or app screen. Carry it through grey-box panels, crossed image placeholders, grey bars instead of text, blue flow arrows, layout alternatives. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -166,7 +166,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'smallest-to-largest lineup; human scale silhouette; height grid; shared ground line; unnumbered tick marks',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Monster Size Comparison Chart as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Size comparison chart: variants of the subject lined up smallest to largest as flat silhouettes on a height grid, a human figure for scale. Carry it through smallest-to-largest lineup, human scale silhouette, height grid, shared ground line, unnumbered tick marks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -194,7 +194,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp reproduction-ready line art with no reference numerals, captions or signatures.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Patent Figure Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Patent drawing plate: the subject in precise black ink line on white, shown as several figures with surface-shading lines and leader lines. Carry it through black line on white, thick shade lines, parallel surface shading, several figures on one sheet, blank leader lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'black line on white; thick shade lines; parallel surface shading; several figures on one sheet; blank leader lines',
     },
@@ -229,7 +229,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Scientific accuracy in every part, clean white paper, no decorative border or captions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Botanical Dissection Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Botanical dissection plate: the whole plant in watercolor and fine line, surrounded by dissected flower parts, fruit sections and magnified details. Carry it through whole specimen plus dissections, flower and fruit sections, magnified details, watercolor over fine line, white ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'whole specimen plus dissections; flower and fruit sections; magnified details; watercolor over fine line; white ground',
     },
@@ -264,7 +264,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Identification-grade clarity with no habitat scene and no species names.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Field Guide Species Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Field guide plate: one species painted in gouache as male, female and juvenile, with a flight or gait silhouette, egg or cocoon and a track. Carry it through male, female and juvenile, profile figures at one scale, flight or gait silhouette, track and egg. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'male, female and juvenile; profile figures at one scale; flight or gait silhouette; track and egg; cream ground',
     },
@@ -295,7 +295,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Consistent proportions and scale across poses; no action effects and no background.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pose Library Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pose library sheet: the same figure repeated in eight to twelve poses, rendered in neutral grey tone like a clay study. Carry it through eight to twelve poses, neutral grey clay tone, identical lighting, floor grid squares, one camera height. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'eight to twelve poses; neutral grey clay tone; identical lighting; floor grid squares; one camera height',
     },
@@ -326,7 +326,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'On-model consistency across every head; no captions for the emotions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Expression Model Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Expression model sheet: one character head drawn nine to twelve times in clean line with a single grey tone, each with a different expression. Carry it through nine to twelve heads, one character, clean line plus one grey tone, even grid, faint construction lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'nine to twelve heads; one character; clean line plus one grey tone; even grid; faint construction lines',
     },
@@ -357,7 +357,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Accurate pattern-piece shapes with no piece names, sizes or instructions written.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Garment Pattern Layout as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Garment pattern layout: the costume of the subject flattened into sewing pattern pieces printed on pale tissue paper, with a small croquis of the finished garment. Carry it through flat pattern pieces, grainline arrows, notches and dashed seam lines, creased tissue paper, small croquis. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'flat pattern pieces; grainline arrows; notches and dashed seam lines; creased tissue paper; small croquis',
     },
@@ -386,7 +386,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Friendly and clear, building without reading a single word.',
       rendering_and_quality: 'Diagrammatic clarity, no step numbers, words or part codes.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wordless Assembly Steps as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Wordless assembly instructions: clean isometric line drawings in six step panels, parts sliding into place along arrows. Carry it through six step panels, isometric line drawings, dashed motion arrows, accent color on the new part, blank step circles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'six step panels; isometric line drawings; dashed motion arrows; accent color on the new part; blank step circles',
     },
@@ -417,7 +417,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp drafted line with confident black fill, no perspective and no room labels.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Poché Section Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Poché section drawing: the subject sliced vertically, cut walls and floors filled solid black, everything beyond drawn in thin elevation line. Carry it through solid black cut walls, thin beyond-elevation line, hatched earth, tiny scale figures, orthographic section. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'solid black cut walls; thin beyond-elevation line; hatched earth; tiny scale figures; orthographic section',
     },
@@ -452,7 +452,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean heraldic drawing with consistent charge and no mottos or names.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Heraldry Tincture Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Heraldry design sheet: one coat of arms repeated in a grid of tincture and division variants, painted in gouache and shell gold on vellum. Carry it through one shield in many tinctures, division variants, gouache and shell gold, charge study, even grid. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'one shield in many tinctures; division variants; gouache and shell gold; charge study; even grid',
     },
@@ -482,7 +482,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise engraved chart with no star names, degree numbers or captions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Celestial Atlas Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Celestial atlas plate: the subject drawn as a hand-colored engraved constellation figure over a star field of graded dots and a coordinate grid. Carry it through constellation figure, magnitude-sized star dots, curved coordinate grid, midnight blue and gold, engraved hairlines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'constellation figure; magnitude-sized star dots; curved coordinate grid; midnight blue and gold; engraved hairlines',
     },
@@ -515,7 +515,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Alert and methodical, knowing a shape before it arrives.',
       rendering_and_quality: 'Exact silhouettes without type names, codes or numbers.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Three-View Recognition Chart as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Recognition chart: several related variants of the subject shown as solid black silhouettes in top, front and side view, like a spotter card. Carry it through black silhouettes, top, front and side per type, ruled rows, one scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'black silhouettes; top, front and side per type; ruled rows; one scale; worn card stock',
     },
@@ -550,7 +550,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Construction left visible as the point of the image, no painted finish and no labels.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Perspective Construction Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Perspective construction drawing: the subject built over a two- or three-point perspective grid, with boxes, ellipses and cross-contours left visible under the final line. Carry it through visible vanishing lines, construction boxes and ellipses, cross-contours, blue under black line, projected cast shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'visible vanishing lines; construction boxes and ellipses; cross-contours; blue under black line; projected cast shadow',
     },
@@ -584,7 +584,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean diagram with consistent link lengths across positions and no angle numbers.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Motion Cycle Linkage Study as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Linkage motion study: a mechanism drawn in successive ghosted positions through one full cycle, pivots circled and trace paths plotted. Carry it through ghosted successive positions, circled pivots, red trace path, curved motion arrows, side-view diagram. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'ghosted successive positions; circled pivots; red trace path; curved motion arrows; side-view diagram',
     },
@@ -618,7 +618,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Patient and evidential, a past recovered piece by piece.',
       rendering_and_quality: 'Recording-grade accuracy, no find numbers, site codes or captions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Archaeological Find Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Archaeological find drawing: the subject recorded as an excavated artifact, pottery-style half profiles with black section fill, stippled surfaces and dashed reconstructions. Carry it through half profile and section, solid black section fill, stippled surface, dashed reconstruction, unnumbered bar scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'half profile and section; solid black section fill; stippled surface; dashed reconstruction; unnumbered bar scale',
     },

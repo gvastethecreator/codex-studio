@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Macro lens, creature centered and floating, no seabed or surface visible.
   atmosphere_and_mood: Alien and fragile, strange life drifting through the void.
   rendering_and_quality: Clean black water with no backscatter; not the sunlit blue of daytime underwater.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blackwater Night Dive as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Blackwater photography: open ocean at night, with tiny drifting larvae and gelatinous creatures lit by a narrow strobe against total black. Carry it through total black water, snooted strobe, translucent larvae, iridescent accents, floating macro subject. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: total black water; snooted strobe; translucent larvae; iridescent accents; floating macro subject
 avoidRules:
   - illustration

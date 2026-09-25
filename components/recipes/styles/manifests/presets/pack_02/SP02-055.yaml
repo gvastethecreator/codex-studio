@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Cool and contemplative, a blue memory printed by the sun.
   rendering_and_quality: Contact-print photographic cyanotype, not a botanical photogram or blueprint.
   key_features: Prussian blue monochrome; watercolor paper tooth; brushed coating edges; sun-printed tones; white highlights
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyanotype (Photo) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cyanotype photographic print: an iron-salt print exposed by sunlight under a negative, giving a Prussian-blue image on watercolor paper. Carry it through Prussian blue monochrome, watercolor paper tooth, brushed coating edges, sun-printed tones, white highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - illustration
   - painting

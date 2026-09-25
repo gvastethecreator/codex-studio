@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Graphic, printed, retro and bold, coming from the medium itself.
   rendering_and_quality: Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.
   key_features: regular halftone dot screen; fixed angle
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Halftone Pattern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Halftone: the image built from dots of varying size in a regular screen. Carry it through regular halftone dot screen, fixed angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

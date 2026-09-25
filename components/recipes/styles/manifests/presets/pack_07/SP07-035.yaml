@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Studious, hushed and venerable, knowledge stored in wood and brass.
   rendering_and_quality: Warm low-light photograph with legible joinery and brass wear, spines without readable titles.
   key_features: oak shelving bays with rolling brass ladders; cast-iron galleries; green-shaded lamp pools; worn gilt coffering; leather spines
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bibliographic Classicism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Bibliographic classicism: the material language of a great old reading room — oak shelving bays, cast-iron galleries, brass rails and rolling ladders, leather and gilt under a coffered ceiling. Carry it through oak shelving bays with rolling brass ladders, cast-iron galleries, green-shaded lamp pools, worn gilt coffering, leather spines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - one-point corridor perspective as default
   - wet mirror-gloss floor as default

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; the star-shaped shadows visible on the ground.
   atmosphere_and_mood: Charged and exposed, everything on display under the lights.
   rendering_and_quality: Crisp overlapping multi-source shadows with a slight glare around each lamp.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stadium Floodlight Multi-Shadow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Stadium floodlight lighting: four or more powerful lights from high corners, giving every object several crossed shadows radiating in different directions. Carry it through several crossed shadows per object, high corner lights, cool white glare, bright even ground, night sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: several crossed shadows per object; high corner lights; cool white glare; bright even ground; night sky
 avoidRules:
   - changing the geometry

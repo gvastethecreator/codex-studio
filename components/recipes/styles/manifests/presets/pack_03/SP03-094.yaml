@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; macro feel to read the texture.
   atmosphere_and_mood: Playful and sweet, a treat you want to bite.
   rendering_and_quality: Soft translucent gelatin with light scattering inside, never hard glass.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gummy Candy Material as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Gummy candy: the target made of soft translucent gelatin candy, slightly sugar-dusted, glowing with saturated color when backlit. Carry it through translucent gelatin, sugar dusting, saturated candy colors, colored shadows, soft squishy edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: translucent gelatin; sugar dusting; saturated candy colors; colored shadows; soft squishy edges
 avoidRules:
   - changing the surroundings

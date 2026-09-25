@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Stark and tactical, danger read in a single glance.
   rendering_and_quality: Consistent tile size, line weight and palette across the whole set; no text glyphs.
   key_features: square pictograph tiles; black ground; two or three colors; even grid; stark silhouettes
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Roguelike Tile Glyph System as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Roguelike tile set: each subject reduced to one square pictographic tile with a stark silhouette in two or three colors on black. Carry it through square pictograph tiles, black ground, two or three colors, even grid, stark silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - known game HUD layout

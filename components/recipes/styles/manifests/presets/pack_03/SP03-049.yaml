@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Neutral and ready, a character waiting for its first animation.
   rendering_and_quality: Production-clean model with symmetric construction, no background props, no swatch panels and no text.
   key_features: neutral A-pose or T-pose only when unposed; flat grey backdrop; even soft lighting; full figure centered; material separation
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Character Design (T-Pose) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Character model presentation: a finished 3D character standing on flat grey, lit evenly so proportions, costume construction and materials read without drama. Carry it through neutral A-pose or T-pose only when unposed, flat grey backdrop, even soft lighting, full figure centered, material separation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - forced T-pose
   - object turned into an avatar

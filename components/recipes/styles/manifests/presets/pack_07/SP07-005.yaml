@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Free, lived-in and warm, a traveller who never unpacked.
   rendering_and_quality: 'Warm editorial photograph: patterns legible but not flattened, depth kept readable, no junk-pile chaos.'
   key_features: stacked flat-woven rugs; rattan and macramé; terracotta with indigo and turquoise; pierced-lantern dappled light; collected asymmetric layers
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bohemian Eclectic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Bohemian eclectic interior: collected layers of kilims, woven rattan and macramé, carved wood, pottery and hanging plants, gathered over years rather than bought as a set. Carry it through stacked flat-woven rugs, rattan and macramé, terracotta with indigo and turquoise, pierced-lantern dappled light, collected asymmetric layers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - furniture catalog staging
   - olive branch in a vase as default decor

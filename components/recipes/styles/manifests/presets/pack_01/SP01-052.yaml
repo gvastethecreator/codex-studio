@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Explosive and strained, the body at maximum effort held still for one frame.
   rendering_and_quality: Razor-sharp subject against creamy telephoto blur, no motion smear on the athlete.
   key_features: telephoto freeze at peak action; compressed blurred background; flying debris frozen; strained faces; hard top light
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sports Action as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Sports action photography: a 300–400 mm telephoto at f/2.8 and 1/2000 s freezing the peak instant of an effort. Carry it through telephoto freeze at peak action, compressed blurred background, flying debris frozen, strained faces, hard top light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - staged advertisement
   - stock-photo gloss

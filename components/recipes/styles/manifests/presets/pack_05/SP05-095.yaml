@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Wistful, unhurried and still, as if time passes slowly around the subject.
   rendering_and_quality: Lines break and fade selectively, gradients stay smooth and forms stay anatomically stable; restraint instead of effects.
   key_features: fading warm-grey lineart; pale watercolor background boards; lifted slate blacks; single soft shadow tier; drifting light flecks
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Faded-Line Pale Wash Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Modern TV anime cel over pale watercolor background boards: thin warm-grey lineart that fades to nothing at outer edges, two-tone cel shading and wide airy painted skies. Carry it through fading warm-grey lineart, pale watercolor background boards, lifted slate blacks, single soft shadow tier, drifting light flecks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway

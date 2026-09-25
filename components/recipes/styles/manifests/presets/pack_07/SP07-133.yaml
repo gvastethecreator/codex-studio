@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: An angle that shows the whole loop and the twist, so the single surface can be followed with the eye.
   atmosphere_and_mood: Elegant, endless and slightly dizzying, a path that never reaches an edge.
   rendering_and_quality: Precise architectural rendering with continuous surface details that never jump.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mobius Loop Architecture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Mobius architecture: a road, deck or building band twisted once and joined to itself, so its top surface flows onto its underside without an edge crossing. Carry it through band twisted once and joined, top flowing onto underside, continuous paving across the twist, whole-loop view, light-to-shadow gradient. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: band twisted once and joined; top flowing onto underside; continuous paving across the twist; whole-loop view; light-to-shadow gradient
 avoidRules:
   - black and gold sci-fi palette by default

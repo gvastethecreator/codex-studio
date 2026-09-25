@@ -31,10 +31,7 @@ visualDna:
     Visible drawing marks, controlled washes, no overgloss or fake paper damage.
   key_features: >-
     Pencil underdrawing, transparent gouache, warm paper, asymmetry within supplied framing
-  creative_brief: >-
-    Apply a visual treatment centered on pencil underdrawing, transparent gouache, warm
-    paper, asymmetry within supplied framing. Preserve the exact subject, action, count,
-    age, costume, setting, camera, and mood. Add nothing outside the prompt.
+  creative_brief: "Apply a visual treatment centered on pencil underdrawing, transparent gouache, warm paper, asymmetry within supplied framing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested camera; islands stack at different heights and sizes to sell great depth and scale.
   atmosphere_and_mood: Dizzy, bright and wondrous, a world with no ground.
   rendering_and_quality: Volumetric cloud sea with aerial perspective between islands; clear scale cues from bridges and trees.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Floating Sky Island Archipelago as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Sky island environment render: inverted-cone rock islands hanging above a cloud sea, root-bound undersides, waterfalls pouring off their edges into mist. Carry it through inverted rock islands, dangling roots, waterfalls falling into mist, cloud sea below, stacked depth scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: inverted rock islands; dangling roots; waterfalls falling into mist; cloud sea below; stacked depth scale
 avoidRules:
   - franchise likeness

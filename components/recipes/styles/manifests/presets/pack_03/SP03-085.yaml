@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Final framing, the noise strongest in shadows and interiors.
   atmosphere_and_mood: Anticipating and raw, an image caught in the middle of being born.
   rendering_and_quality: Unconverged path-trace grain; not film grain and not a denoised image.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Progressive Preview Noise Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Progressive preview render: a path-traced image stopped early, still full of grain and bright fireflies before it converges. Carry it through heavy sample noise, bright fireflies, grainy shadows, unconverged glossy reflections, correct underlying light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: heavy sample noise; bright fireflies; grainy shadows; unconverged glossy reflections; correct underlying light
 avoidRules:
   - 2d illustration

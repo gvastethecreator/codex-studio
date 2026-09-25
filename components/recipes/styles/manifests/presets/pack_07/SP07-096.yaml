@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; from the stage look back at the horseshoe of tiers, or from a high box across to the proscenium.
   atmosphere_and_mood: Glamorous, expectant and theatrical, a whole society watching itself.
   rendering_and_quality: Warm low-light photograph with crisp gilt ornament and velvet depth, no readable programmes or signs.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Horseshoe Opera Auditorium as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Horseshoe opera auditorium: a stacked horseshoe of private boxes in four or five tiers facing a proscenium, with red velvet, gilded plaster and a great chandelier at the centre of a painted ceiling. Carry it through stacked horseshoe of boxes, red velvet and gilded plaster, central crystal chandelier, painted ceiling roundel, proscenium arch. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: stacked horseshoe of boxes; red velvet and gilded plaster; central crystal chandelier; painted ceiling roundel; proscenium arch
 avoidRules:
   - one-point corridor perspective as default

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.
   atmosphere_and_mood: Mysterious, slow, elegant and dark, coming from the effect rather than added scenery.
   rendering_and_quality: Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ink Cloud in Water as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Ink in water: dark ink blooming into billowing clouds from the target underwater. Carry it through billowing ink plumes, clear water, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: billowing ink plumes; clear water; contained around the target
 avoidRules:
   - material applied to the background instead of the target

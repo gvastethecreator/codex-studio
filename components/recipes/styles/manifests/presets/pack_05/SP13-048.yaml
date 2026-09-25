@@ -28,7 +28,7 @@ visualDna:
   camera_and_composition: The subject in the outer fifth of the frame, the rest left as open lead space in the direction of the coming move.
   atmosphere_and_mood: Held breath and loaded stillness, energy about to release.
   rendering_and_quality: Precise pose drawing with visible weight shift, calm backgrounds and zero motion effects.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Coiled Anticipation Lead-Space Frame as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Anime anticipation staging: the instant before the requested action, the subject compressed into a tight coiled pose at one edge of the frame, facing a large empty lead space it is about to cross. Carry it through coiled pre-motion pose, subject in outer fifth of frame, large empty lead space, no motion marks, low side light on the tension. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: coiled pre-motion pose; subject in outer fifth of frame; large empty lead space; no motion marks; low side light on the tension
 avoidRules:
   - added opponent

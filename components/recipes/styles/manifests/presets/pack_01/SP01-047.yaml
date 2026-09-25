@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Grand and timeless, stillness and scale held in silver tones.
   rendering_and_quality: Fine-art silver print with deep blacks and no clipped highlights; an animal or object stays the subject, rendered with the same tonal range.
   key_features: ten-zone black and white; f/64 front-to-back sharpness; red-filter dark skies; raking dramatic light; silver print
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Zone System Landscape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Zone System black-and-white landscape: a large-format view camera at f/64, exposure placed and development controlled so the print runs from pure white to deep black with every zone in between. Carry it through ten-zone black and white, f/64 front-to-back sharpness, red-filter dark skies, raking dramatic light, silver print. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - zoo snapshot
   - oversaturated postcard

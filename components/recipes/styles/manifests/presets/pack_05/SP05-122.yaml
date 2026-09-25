@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Worn tension and dry absurdity, exhausted people in grimy places doing strange things.
   rendering_and_quality: Restrained cinematic finish, grain confined to shadows, main silhouette always clear.
   key_features: desaturated film grade; handheld off-center framing; thin precise lines; fluorescent streak accents; grime and shallow depth
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Muted Cinematic Grime Frenzy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Grounded cinematic anime: sober adult proportions, thin precise lines, desaturated film-graded color and handheld framing, with sudden violent motion shown as fluorescent streaks. Carry it through desaturated film grade, handheld off-center framing, thin precise lines, fluorescent streak accents, grime and shallow depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

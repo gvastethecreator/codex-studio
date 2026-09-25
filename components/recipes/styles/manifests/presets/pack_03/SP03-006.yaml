@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Serene and aspirational, a space waiting to be lived in.
   rendering_and_quality: Clean archviz render with no clutter and no oversaturated HDR look.
   key_features: sun and sky through big windows; straight verticals; warm neutral exposure; polished stone reflections; clean glass
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies V-Ray ArchViz Raytracer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Architectural visualization raytrace: interiors and buildings rendered with sun-and-sky daylight, clean glass and a warm neutral exposure for presentations. Carry it through sun and sky through big windows, straight verticals, warm neutral exposure, polished stone reflections, clean glass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - 2d illustration
   - hand-drawn

@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'single central axis; mirrored clipped box parterres; yew cones and obelisks; raked gravel walks; long raking shadows',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Formal Topiary Axis as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Formal topiary axis: a French-style garden laid out on one central axis, with mirrored parterres of clipped box, yew cones and obelisks, raked gravel walks and stone edging. Carry it through single central axis, mirrored clipped box parterres, yew cones and obelisks, raked gravel walks, long raking shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -56,7 +56,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'tiered self-seeding flowers; foxglove and hollyhock spires; plants spilling over mossy brick paths; roses on old walls; lavender edging',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cottage Bloom Layering as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cottage bloom layering: a small garden crammed with self-seeding flowers, herbs and vegetables in tiers of height, spilling over narrow brick or stone paths and low walls. Carry it through tiered self-seeding flowers, foxglove and hollyhock spires, plants spilling over mossy brick paths, roses on old walls, lavender edging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -84,7 +84,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'raked white gravel furrows; concentric rings around stones; odd-number stone groups; moss islands; tile-capped earthen wall',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Karesansui Dry Abstraction as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Karesansui dry garden: a walled rectangle of raked white gravel standing for water, with a few carefully placed stones and moss islands, made to be viewed from a veranda. Carry it through raked white gravel furrows, concentric rings around stones, odd-number stone groups, moss islands, tile-capped earthen wall. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -112,7 +112,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'industrial relics kept in place; pioneer birch and grasses; raised steel and timber walkways; rails and ballast; rust and concrete palette',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Postindustrial Ecological Promenade as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Postindustrial ecological promenade: an abandoned industrial site turned public landscape, keeping rails, concrete and steel ruins while pioneer planting and walkways thread through them. Carry it through industrial relics kept in place, pioneer birch and grasses, raised steel and timber walkways, rails and ballast, rust and concrete palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -140,7 +140,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'spaced agave and yucca rosettes; decomposed granite paths; river-rock dry creek bed; silver drought grasses; hard sun shadows',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Xeriscape Climate Grammar as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Xeriscape climate grammar: a dry-climate garden that needs no irrigation, arranged as sculptural succulents and drought grasses over gravel mulch with dry creek beds for rare rain. Carry it through spaced agave and yucca rosettes, decomposed granite paths, river-rock dry creek bed, silver drought grasses, hard sun shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -168,7 +168,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'vanishing-edge pool meeting the horizon; warm honed stone coping; teak decking; tropical leaf shadows; turquoise water',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Water-Horizon Hospitality as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Water-horizon hospitality landscape: warm stone terraces and pools whose edges vanish into a view, with tropical planting framing still turquoise water. Carry it through vanishing-edge pool meeting the horizon, warm honed stone coping, teak decking, tropical leaf shadows, turquoise water. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -196,7 +196,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'head-high clipped hedge walls; dead-end turns; broken sightlines; gravel paths; hidden central clearing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Topiary Wayfinding Trap as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Topiary wayfinding trap: a hedge maze of tall clipped walls, gravel paths, dead ends and a hidden centre, planned so sightlines are always broken. Carry it through head-high clipped hedge walls, dead-end turns, broken sightlines, gravel paths, hidden central clearing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -224,7 +224,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'modular deep planters; horizontal timber decks; layered grasses and multi-stem trees; integrated low lighting; height at the balustrade',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Elevated Biophilic Terrace as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Elevated biophilic terrace: planted terraces and balconies on a building, with modular deep planters, horizontal timber decks and layered grasses and small trees in the air. Carry it through modular deep planters, horizontal timber decks, layered grasses and multi-stem trees, integrated low lighting, height at the balustrade. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -252,7 +252,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'striped mowing bands; rolling contoured greens; sharp bunker lips; dew on short grass; still water edge',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tournament Turf Strategy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tournament turf: precision-maintained sports turf read as landscape design, with striped mowing bands, rolling contoured greens, sharp-edged bunkers and still water edges. Carry it through striped mowing bands, rolling contoured greens, sharp bunker lips, dew on short grass, still water edge. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -280,7 +280,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'curvilinear wrought-iron glass vault; net of rib shadows; specimen palms; cast-iron spiral stair and gallery; giant water-lily tank',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Botanical Iron Glasshouse as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Botanical iron glasshouse: a Victorian curvilinear palm house of wrought-iron ribs and small curved panes, planted as a display with specimen palms, tiered beds and a spiral stair to a gallery. Carry it through curvilinear wrought-iron glass vault, net of rib shadows, specimen palms, cast-iron spiral stair and gallery, giant water-lily tank. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -309,7 +309,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Painterly landscape photograph with hazy recession, no flower beds or formal hedges.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Picturesque Landscape Park as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Picturesque landscape park: an idealised pastoral scene built at estate scale, with a serpentine lake, rolling grazed grass, clumps of trees and an eye-catcher temple or ruin, fenced by a hidden ha-ha. Carry it through serpentine lake, grazed turf to the water, tree clumps as stage wings, eye-catcher temple or ruin, hidden ha-ha. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'serpentine lake; grazed turf to the water; tree clumps as stage wings; eye-catcher temple or ruin; hidden ha-ha',
     },
@@ -344,7 +344,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clear photograph with exact axial symmetry and sparkling water, no invented calligraphy or readable inscriptions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chahar Bagh Water Garden as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Chahar bagh: the Persian fourfold garden, walled and divided into four quarters by raised walkways and narrow stone water channels that meet at a central pool or pavilion. Carry it through four quarters divided by water channels, raised walkways over sunken beds, carved chadar water chute, central pool pavilion, cypress rows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'four quarters divided by water channels; raised walkways over sunken beds; carved chadar water chute; central pool pavilion; cypress rows',
     },
@@ -375,7 +375,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Soft photograph with rich moss textures and gentle haze, no raked gravel or dry stones.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Moss Stroll Garden as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Moss stroll garden: a shaded Japanese garden where many species of moss carpet the ground under maples and cedars, crossed by stepping stones around an irregular pond. Carry it through many-species moss carpet, stepping stones set in moss, irregular pond edge, high maple and cedar canopy, diffuse damp shade. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'many-species moss carpet; stepping stones set in moss; irregular pond edge; high maple and cedar canopy; diffuse damp shade',
     },
@@ -410,7 +410,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Rich photograph with moss and stone detail, clean falling water, no flat parterre plain.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Terraced Water-Stair Garden as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Terraced water-stair garden: an Italian Renaissance villa garden cut into a hillside in axial terraces, linked by balustraded stairs, with a water staircase, grottoes and fountains driven by gravity. Carry it through stacked hillside terraces, balustraded double stairs, stepped water staircase, mossy grotto niches, ilex and cypress groves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'stacked hillside terraces; balustraded double stairs; stepped water staircase; mossy grotto niches; ilex and cypress groves',
     },
@@ -441,7 +441,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Soft photograph with legible lattice and eroded rock, no readable calligraphy or souvenir red lanterns.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scholar Garden Rockery as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Chinese scholar garden: a walled garden of framed views, with pierced limestone rockeries, a pond with zigzag bridges, pavilions with upswept eaves and whitewashed walls opened by moon gates and lattice windows. Carry it through moon gate framed views, perforated limestone rockery, zigzag stone bridge, upswept pavilion eaves, bamboo shadows on white walls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'moon gate framed views; perforated limestone rockery; zigzag stone bridge; upswept pavilion eaves; bamboo shadows on white walls',
     },
@@ -476,7 +476,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Natural-light photograph with specific seedhead structure and backlit plumes, no bedding annuals or bare mulch.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Naturalistic Perennial Drift as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Naturalistic perennial drift: large sweeps of grasses interwoven with repeated perennials, planted as a self-sustaining matrix and left standing through winter for structure and seedheads. Carry it through grass matrix with repeated perennial drifts, seedheads left for winter, backlit plumes, mown path through, bronze and purple palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'grass matrix with repeated perennial drifts; seedheads left for winter; backlit plumes; mown path through; bronze and purple palette',
     },
@@ -511,7 +511,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Sharp photograph with slab edges and tiny flowers in focus, no lawn or soft beds.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crevice Rock Garden as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Crevice rock garden: thin slabs of stone set on edge in parallel rows like tilted strata, with alpine cushion plants rooted deep in the narrow gaps and gravel mulch over all. Carry it through parallel stone slabs set on edge, alpine cushions in narrow crevices, gravel mulch, tiny saturated flowers, hard crevice shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'parallel stone slabs set on edge; alpine cushions in narrow crevices; gravel mulch; tiny saturated flowers; hard crevice shadows',
     },
@@ -546,7 +546,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Soft daylight photograph with individual herbs legible, no readable plant labels.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cloister Herb Garth as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cloister herb garth: a medieval monastic garden enclosed by an arcaded walk, laid out in quartered raised beds edged with woven wattle or timber boards around a central well. Carry it through square garth inside an arcaded walk, quartered raised beds, woven wattle edging, central stone well, medicinal herbs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'square garth inside an arcaded walk; quartered raised beds; woven wattle edging; central stone well; medicinal herbs',
     },
@@ -581,7 +581,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Natural-light photograph with branch-training pattern crisp on the brick, no plastic tunnels.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Walled Espalier Potager as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Walled espalier potager: a brick-walled kitchen garden where fruit trees are trained flat against the warm walls in fans and tiers, and vegetables grow in box-edged geometric beds. Carry it through fan-trained fruit trees flat on brick walls, box-edged vegetable beds, terracotta forcing pots, glass cold frames, gravel grid paths. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'fan-trained fruit trees flat on brick walls; box-edged vegetable beds; terracotta forcing pots; glass cold frames; gravel grid paths',
     },
@@ -616,7 +616,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Landscape photograph with precise contour curves and water reflections, no costumed tourist staging.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stepped Paddy Terraces as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Stepped paddy terraces: hillsides carved into narrow flooded fields that follow the contours, held by earthen or stone bunds and fed by channels from the forest above. Carry it through contour-following flooded terraces, earthen and stone bunds, sky reflected in each pool, irrigation channels from the forest, seasonal green-to-gold colour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'contour-following flooded terraces; earthen and stone bunds; sky reflected in each pool; irrigation channels from the forest; seasonal green-to-gold colour',
     },

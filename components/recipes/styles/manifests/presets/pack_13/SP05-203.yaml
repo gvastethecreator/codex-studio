@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: 'Retain the requested mood; directional energy does not set the emotional tone.'
   rendering_and_quality: 'Keep gradients broad and controlled, contour ends sharp, and focal forms distinct from surrounding planes.'
   key_features: 'Tapered directional contours; broad clean gradients; crisp edge accents; bright value openings; motion aligned to existing forms.'
-  creative_brief: 'Let directional linework and clear gradients follow movement already in the prompt. Preserve subject, action, count, camera, and mood; add no new motion or narrative beat.'
+  creative_brief: "Let directional linework and clear gradients follow movement already in the prompt. Preserve subject, action, count, camera, and mood; add no new motion or narrative beat. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

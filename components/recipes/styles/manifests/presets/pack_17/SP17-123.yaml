@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Isolated specimen composition with a centered subject on white ground.
   atmosphere_and_mood: Meticulous, calm, clinical, and eerie.
   rendering_and_quality: 'Pristine dot precision: no line, no noise, readable at thumbnail size.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Obsessive Stipple Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Obsessively precise stipple engraving made only of dots: dense dot clouds for shadow, sparse scattering for light, crisp dot-built contours, and no line at all. Carry it through dots only, density-built volume, dot contours, specimen isolation, meticulous calm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: dots only; density-built volume; dot contours; specimen isolation; meticulous calm
 avoidRules:
   - lines or hatching

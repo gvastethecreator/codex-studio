@@ -27,7 +27,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Painterly Cubist finish with clear facet edges, with clean, deliberate marks and no accidental noise.',
       key_features: 'multiple viewpoints; faceted planes; shallow space; muted ochre-grey',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cubism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Analytic-synthetic Cubism: forms broken into faceted planes seen from several viewpoints at once. Carry it through multiple viewpoints, faceted planes, shallow space, muted ochre-grey. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -55,7 +55,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp poster-like finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'circle square triangle; primary colors; clean grid; flat shapes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bauhaus Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bauhaus design: primary shapes, clean grids, sans-serif-era modernism reduced to circle, square and triangle. Carry it through circle square triangle, primary colors, clean grid, flat shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -82,7 +82,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Bold print-like finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'dynamic diagonals; red wedges; black bars; cream ground',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Constructivism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Constructivism: dynamic diagonals, bold wedges and photomontage-free graphic propaganda energy. Carry it through dynamic diagonals, red wedges, black bars, cream ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -109,7 +109,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Hard-edged precise finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'warped stripes; bulging grid illusion; black and white; vibration',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Op Art (Optical) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Op Art: optical illusions of vibrating stripes, warped grids and moiré that make flat patterns seem to move. Carry it through warped stripes, bulging grid illusion, black and white, vibration. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -138,7 +138,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp flat finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'black orthogonal grid; primary blocks; white fields',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies De Stijl Grid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "De Stijl grid: black orthogonal lines dividing white fields with a few primary color blocks. Carry it through black orthogonal grid, primary blocks, white fields. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -164,7 +164,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp high-detail digital finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'self-similar recursion; infinite branching; glowing gradients',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fractal Geometry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fractal geometry: self-similar recursive forms repeating at every scale. Carry it through self-similar recursion, infinite branching, glowing gradients. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -192,7 +192,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp flat-shaded finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'flat-shaded triangles; visible facets; gradient colors',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Low Poly Abstract as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Low-poly abstraction: subjects built from flat-shaded triangles with visible facets. Carry it through flat-shaded triangles, visible facets, gradient colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -220,7 +220,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean painted finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'floating geometric shapes; white void; diagonal drift',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Suprematism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Suprematism: floating pure geometric shapes on a white void, weightless and non-objective. Carry it through floating geometric shapes, white void, diagonal drift. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -248,7 +248,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Precise, crisp geometric finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'star-and-polygon tessellation; interlaced strapwork; radial symmetry',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Islamic Geometric as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Islamic geometric pattern: star-and-polygon tessellations built from compass and straightedge. Carry it through star-and-polygon tessellation, interlaced strapwork, radial symmetry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -276,7 +276,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean generative finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'Voronoi cells; seed points; cellular borders',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Voronoi Pattern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Voronoi: space divided into irregular cells around seed points, like cracked earth or cells. Carry it through Voronoi cells, seed points, cellular borders. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -310,7 +310,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Painterly flat finish, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Orphism Color Discs as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Orphism: rhythmic concentric color discs and arcs that pulse with simultaneous contrast. Carry it through concentric color discs, simultaneous contrast, rhythmic arcs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'concentric color discs; simultaneous contrast; rhythmic arcs',
     },
     ui: {
@@ -344,7 +344,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Energetic painted finish, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Futurist Force Lines as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Futurist dynamism: repeated overlapping forms and force lines expressing speed and motion. Carry it through repeated motion contours, force lines, diagonal speed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'repeated motion contours; force lines; diagonal speed',
     },
     ui: {
@@ -377,7 +377,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean flat finish, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hard-Edge Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hard-edge painting: large flat color areas meeting at razor-sharp edges. Carry it through razor-sharp edges, flat color areas, bold simplicity. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'razor-sharp edges; flat color areas; bold simplicity',
     },
     ui: {
@@ -410,7 +410,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise smooth finish, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Precisionism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Precisionism: clean, sharp-edged geometric rendering of structures with smooth planes and crisp shadows. Carry it through smooth geometric planes, crisp shadows, industrial order. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'smooth geometric planes; crisp shadows; industrial order',
     },
     ui: {
@@ -443,7 +443,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Bold graphic finish, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vorticism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Vorticism: hard angular machine-like forms spiraling into a vortex center. Carry it through angular shards, vortex center, machine energy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'angular shards; vortex center; machine energy',
     },
     ui: {
@@ -477,7 +477,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp graphic finish, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Truchet Tile Weave as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Truchet tiling: square tiles with quarter-circle or diagonal motifs that combine into flowing mazes. Carry it through Truchet quarter-circle tiles, emergent curves, grid. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Truchet quarter-circle tiles; emergent curves; grid',
     },
     ui: {
@@ -511,7 +511,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp precise finish, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Penrose Aperiodic Tiling as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Penrose tiling: aperiodic kite-and-dart or rhombus tiling with five-fold symmetry. Carry it through aperiodic rhombus tiling, five-fold symmetry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'aperiodic rhombus tiling; five-fold symmetry',
     },
     ui: {
@@ -545,7 +545,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp print finish, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Swiss Grid Composition as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Swiss grid composition: strict modular grid, asymmetric layout, bold geometric image blocks without type. Carry it through modular grid, asymmetric blocks, no type. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'modular grid; asymmetric blocks; no type',
     },
     ui: {
@@ -578,7 +578,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp thread finish, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies String Art Geometry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "String art: taut straight threads between pins forming curves by envelope. Carry it through taut threads, pin outlines, curve envelopes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'taut threads; pin outlines; curve envelopes',
     },
     ui: {
@@ -610,7 +610,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Cool, detached, slick and ironic, driven by the construction, color and rhythm.',
       rendering_and_quality: 'Clean finish, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neo-Geo Minimalism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Neo-geo minimalism: cool, slick geometric forms with fluorescent accents and industrial surfaces. Carry it through geometric cells, fluorescent accents, industrial slick. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'geometric cells; fluorescent accents; industrial slick',
     },
     ui: {

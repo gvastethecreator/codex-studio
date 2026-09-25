@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Candid emotional overload breaking through calm, feeling spilling out as raw paint.
   rendering_and_quality: Raw paint crossings and acidic bursts while the figure silhouette stays sturdy and readable.
   key_features: paint-on-glass smears; thumb-smudged oil strokes; acid pink, lime and cyan; deep indigo ground; plain sturdy cel figures
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paint-on-Glass Surge Burst as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hand-painted eruption anime: frame-by-frame paint-on-glass smears, loose oil strokes and saturated overpaint bursting outward over simple, sturdy cel figures. Carry it through paint-on-glass smears, thumb-smudged oil strokes, acid pink, lime and cyan, deep indigo ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

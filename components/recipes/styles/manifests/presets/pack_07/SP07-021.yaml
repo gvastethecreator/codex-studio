@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Unsettled, kinetic and provocative, as if stability were undone.
   rendering_and_quality: Crisp architectural photograph, clean metal reflections and knife-edge shadows, no copy of a named landmark museum.
   key_features: colliding non-orthogonal volumes; tilted walls; slashed window cuts; brushed zinc and titanium cladding; unsupported-looking cantilevers
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Deconstructivism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Deconstructivist architecture: fragmented volumes that collide at non-orthogonal angles, tilted walls, slashed openings and cantilevers that seem to lack support. Carry it through colliding non-orthogonal volumes, tilted walls, slashed window cuts, brushed zinc and titanium cladding, unsupported-looking cantilevers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - golden-hour hero facade formula
   - copy of a named landmark

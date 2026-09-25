@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Imposing and calm, geometry and shadow doing all of the talking.
   rendering_and_quality: Architectural-magazine clarity; distinct from cosy cabins and from HDR listing photos.
   key_features: corrected verticals; hard sun on concrete planes; glass reflections; symmetrical geometry; tiny human scale
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Architecture (Modern) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Modern architectural photography: buildings of concrete, glass and steel photographed with corrected verticals and hard sun sculpting planes. Carry it through corrected verticals, hard sun on concrete planes, glass reflections, symmetrical geometry, tiny human scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - fake brand logo
   - readable labels

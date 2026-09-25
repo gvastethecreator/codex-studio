@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Vertical card crop with one centered emblem or stacked horizontal panels, generous negative black space, occult symmetry, and no titles or numbers.
   atmosphere_and_mood: Grim, ritual, clinical, devotional, and adult; unsettling through diagrammatic poise rather than gore.
   rendering_and_quality: High-resolution white-on-black engraving reproduced cleanly, controlled line density, readable silhouette, and heavy denoise.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Black Veil Anatomical Arcana as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Absolute black-ground occult engraving with bone-white anatomical symbols, ritual limbs, radial saint halos, horizontal vignette logic, and surgical tarot severity. Carry it through black void ground, bone-white anatomical linework, radial halos, ritual hands and organs, horizontal vignette bands. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: black void ground; bone-white anatomical linework; radial halos; ritual hands and organs; horizontal vignette bands; clean denoised ink
 avoidRules:
   - readable tarot titles

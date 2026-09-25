@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Opulent and larger than life, a star leaning straight into the lens.
   rendering_and_quality: Glossy 35 mm music-video look; invented performers only.
   key_features: extreme fisheye bulge; chrome and purple velvet; glossy specular light; performer close to lens; slow-motion opulence
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fisheye Glam Music Video as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Fisheye glam music video: late-90s luxury performance video shot through an extreme fisheye lens, with chrome, velvet and slow-motion opulence. Carry it through extreme fisheye bulge, chrome and purple velvet, glossy specular light, performer close to lens, slow-motion opulence. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable fake text
   - readable ticker

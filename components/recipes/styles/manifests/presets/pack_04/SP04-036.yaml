@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Absurd, provocative and irreverent, logic cut apart.
   rendering_and_quality: Visible scissor edges and seams; never a seamless digital composite or painted surface.
   key_features: cut found photographs; visible seams and paper edges; halftone fragments; absurd scale jumps; red accent paper
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Collage Art (Dada) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Dada photomontage: found photographs and engravings cut with scissors and glued into absurd hybrids, seams and scale jumps left visible. Carry it through cut found photographs, visible seams and paper edges, halftone fragments, absurd scale jumps, red accent paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - invented slogans
   - fake lettering

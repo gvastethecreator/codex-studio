@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Experimental and vivid, feeling carried by color alone.
   rendering_and_quality: In-camera abstraction; not a digital filter or generated fractal.
   key_features: intentional camera movement; extreme crop; rippled reflections; color over form; no scale
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Abstract Photo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Abstract photography: intentional camera movement, extreme crops and reflections that dissolve a real subject into color, line and texture. Carry it through intentional camera movement, extreme crop, rippled reflections, color over form, no scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - fake UI text
   - readable timestamp

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; a slice of sky and the shadowed ground.
   atmosphere_and_mood: Dramatic and changing, weather deciding what is lit.
   rendering_and_quality: High-detail volumetric clouds with fine wisps and no blocky noise.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Volumetric Cloud Silver Lining as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Volumetric cloud lighting: rendered clouds with dense cores and backlit edges glowing silver, casting moving shadows across the land. Carry it through silver-lined cloud edges, dark cores, cloud shadows on the ground, sun through gaps, billowing detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: silver-lined cloud edges; dark cores; cloud shadows on the ground; sun through gaps; billowing detail
 avoidRules:
   - changing the geometry

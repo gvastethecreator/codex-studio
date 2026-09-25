@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Flat side-view print with generous empty paper, arranged so the subject still reads at card size.
   atmosphere_and_mood: Quiet, natural, direct and eerie, driven by the construction, color and rhythm.
   rendering_and_quality: Authentic impression print with natural irregularity, with clean, deliberate marks and no accidental noise.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gyotaku Ink Rubbing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Gyotaku: the subject printed by inking a real creature or object and pressing thin paper onto it. Carry it through direct ink impression, scale texture, painted eye, thin paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: direct ink impression; scale texture; painted eye; thin paper
 avoidRules:
   - readable text

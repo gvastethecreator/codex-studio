@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Warm, dripping and hushed, a tropical air held behind glass.
   rendering_and_quality: Soft humid photograph with real condensation and haze, varied plant species, no plant-shop display.
   key_features: condensation-beaded glass; white-painted glazing bars; misting haze; cast-iron heating pipes; layered tropical foliage
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Conservatory Bioclimate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Conservatory bioclimate: a glasshouse climate machine of thin glazing bars, heating pipes and misting lines, where humidity and filtered light are the architecture. Carry it through condensation-beaded glass, white-painted glazing bars, misting haze, cast-iron heating pipes, layered tropical foliage. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - one-point corridor perspective as default
   - wet mirror-gloss floor as default

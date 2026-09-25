@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Unhurried, sunlit and cool within, a thick-walled refuge from heat.
   rendering_and_quality: Natural-light photograph with softly rounded plaster edges and honest wear, no postcard resort styling.
   key_features: thick lime-rendered walls; rounded arches and deep reveals; worn terracotta floor; majolica tile accent; slatted shutter light
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mediterranean Villa as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Mediterranean villa interior: thick lime-rendered masonry walls, rounded arches and deep window reveals, terracotta floors and handmade glazed tile, wrought iron. Carry it through thick lime-rendered walls, rounded arches and deep reveals, worn terracotta floor, majolica tile accent, slatted shutter light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - furniture catalog staging
   - olive branch in a vase as default decor

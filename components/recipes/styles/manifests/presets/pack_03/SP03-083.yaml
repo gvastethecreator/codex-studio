@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Interior views where colored walls sit close to other surfaces.
   atmosphere_and_mood: Soft and quiet, light gently filling a simple room.
   rendering_and_quality: Diffuse-only early global illumination look with no glossy reflections anywhere.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Radiosity Color Bleed as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Radiosity render: early global illumination where colored surfaces tint their neighbors with soft, slightly blotchy bounced light. Carry it through strong color bleeding, diffuse bounce only, matte surfaces, soft darkened corners, blotchy light maps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: strong color bleeding; diffuse bounce only; matte surfaces; soft darkened corners; blotchy light maps
 avoidRules:
   - 2d illustration

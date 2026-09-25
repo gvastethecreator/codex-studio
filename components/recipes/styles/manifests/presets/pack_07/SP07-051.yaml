@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Hushed, ancient and gentle, a building that was grown over centuries rather than laid.
   rendering_and_quality: Painterly-realist architectural illustration with fine linework in the tracery and soft foliage edges; no HDR glare or blown haze.
   key_features: trunks trained into lancet arches; branch-fork window tracery; pale limestone with silver inlay; filtered green canopy light; moss and lichen at the footings
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Verdant Elven Sanctuary as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Grown sanctuary architecture: living beech and ash trunks trained into tall lancet arches, pale limestone shells grafted between them, and branch forks forming the window tracery. Carry it through trunks trained into lancet arches, branch-fork window tracery, pale limestone with silver inlay, filtered green canopy light, moss and lichen at the footings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - licensed fantasy location
   - copy of a known film or game building

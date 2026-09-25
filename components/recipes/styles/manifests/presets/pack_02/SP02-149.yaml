@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Top-down swath with a dark vertical nadir band and objects to its sides.
   atmosphere_and_mood: Deep and ghostly, lost things found in the dark.
   rendering_and_quality: Credible sonar mosaic; no coordinates or grid text.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Side-Scan Sonar as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Side-scan sonar: acoustic strips of the seafloor recorded from a towed fish, turning shapes into amber reliefs with long black acoustic shadows. Carry it through amber acoustic relief, long black shadows, central nadir stripe, scan-line texture, top-down swath. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: amber acoustic relief; long black shadows; central nadir stripe; scan-line texture; top-down swath
 avoidRules:
   - readable readouts

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested camera; the horizon tilts with the swell and the nearest wave dominates the frame.
   atmosphere_and_mood: Cold, heaving and indifferent, the sea larger than anything on it.
   rendering_and_quality: Physically based water with correct fresnel reflection, crest translucency and particle spray; no glassy flat water.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Simulated Open Ocean Swell as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Simulated open ocean render: a spectral wave surface with long swells, choppy secondary waves, whitecap foam masks and wind-blown spray. Carry it through long swells with choppy detail, wind-aligned foam streaks, translucent turquoise crests, spray mist, fresnel reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: long swells with choppy detail; wind-aligned foam streaks; translucent turquoise crests; spray mist; fresnel reflections
 avoidRules:
   - franchise likeness

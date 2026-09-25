@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Joyous and theatrical, dreamlike spectacle with no shadow of doubt.
   rendering_and_quality: Dye-transfer saturation and gentle softness; painted backdrops obviously painted.
   key_features: three-strip saturation; painted backdrops; high-key studio light; crane-shot formations; satin and sequins
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Technicolor Musical as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Technicolor musical: golden-age three-strip dye-transfer color on theatrical studio sets with painted backdrops and staged spectacle. Carry it through three-strip saturation, painted backdrops, high-key studio light, crane-shot formations, satin and sequins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - readable fake text

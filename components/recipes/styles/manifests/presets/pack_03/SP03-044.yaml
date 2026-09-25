@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Diagnostic and vivid, energy mapped as color over a model.
   rendering_and_quality: 'Simulation-output finish: no sensor noise, no soft focus and no ironbow or white-hot camera palette.'
   key_features: simulated temperature attribute; jet blue-to-red ramp; crisp mesh edges; faint diffuse shading; no sensor bloom
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thermal Heatmap Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Thermal heatmap shader: a simulated temperature attribute diffused through clean 3D geometry and shown through a smooth false-color ramp, crisp as a CG render, with no infrared camera behind it. Carry it through simulated temperature attribute, jet blue-to-red ramp, crisp mesh edges, faint diffuse shading, no sensor bloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - sensor noise
   - camera lens optics

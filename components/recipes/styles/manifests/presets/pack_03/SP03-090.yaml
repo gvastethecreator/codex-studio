@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Anamorphic or spherical cinema framing with realistic depth of field.
   atmosphere_and_mood: Nostalgic and cinematic, digital worlds dressed as old celluloid.
   rendering_and_quality: CG with film emulation baked in; no clean digital sharpness.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Film-Emulated CG Beauty Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Film-emulated CG: a fully computer-generated shot graded to look photographed on 35 mm film, with grain, halation, gate weave and lens imperfections. Carry it through CG graded as 35 mm film, organic grain, highlight halation, gate weave, lens vignette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: CG graded as 35 mm film; organic grain; highlight halation; gate weave; lens vignette
 avoidRules:
   - 2d illustration

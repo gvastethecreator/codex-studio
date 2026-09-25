@@ -26,7 +26,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       key_features: 'thick contours; two-step cel; sunrise rim light; heroic pose',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cel Heroic Dawn as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Heroic dawn cel anime: bold adventure-series key art with strong silhouettes, two-step cel shading and warm sunrise light. Carry it through thick contours, two-step cel, sunrise rim light, heroic pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -52,7 +52,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       key_features: 'neon key light; wet reflections; rain lines; lonely figure',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon City Vigil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Neon city vigil anime: rain-soaked cyber-city night frames with sharp lines, wet reflections and lonely figures. Carry it through neon key light, wet reflections, rain lines, lonely figure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -79,7 +79,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       key_features: 'panel lines; floodlights; sparks; scale contrast',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mecha Hangar Ignition as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Mecha hangar anime: giant robots drawn with precise mechanical line work, panel lines and industrial lighting. Carry it through panel lines, floodlights, sparks, scale contrast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -106,7 +106,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       key_features: 'translucent spirits; lanterns; painted dusk; soft glow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Spirit Shrine Twilight as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Spirit shrine twilight anime: quiet supernatural frames with soft glowing spirits, lanterns and painted dusk skies. Carry it through translucent spirits, lanterns, painted dusk, soft glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -134,7 +134,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       key_features: 'speed lines; foreshortening; impact flash; sweat',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sports Climax Arena as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sports climax anime: explosive match-point frames with speed lines, sweat, impact frames and extreme perspective. Carry it through speed lines, foreshortening, impact flash, sweat. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -162,7 +162,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       key_features: 'long lines; pale faces; crimson accents; moonlight',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gothic Vampire Manor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Gothic vampire anime: elegant dark frames with long thin lines, pale faces, crimson accents and moonlit shadows. Carry it through long lines, pale faces, crimson accents, moonlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -190,7 +190,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       key_features: 'ribbons; prism flares; sparkles; transformation pose',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Magical Girl Prism Burst as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Magical girl prism anime: transformation-sequence sparkle, ribbons, stars and rainbow prism light. Carry it through ribbons, prism flares, sparkles, transformation pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -218,7 +218,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       key_features: 'caravan; lush painted backgrounds; clean cel; odd beasts',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Isekai Forest Caravan as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Isekai caravan anime: bright fantasy-adventure frames of travelers, carts, odd beasts and lush landscapes. Carry it through caravan, lush painted backgrounds, clean cel, odd beasts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -245,7 +245,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       key_features: 'torchlight; magic glow; dark stone; stylized monsters',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Meikyuu Dungeon Glow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dungeon glow anime: torchlit labyrinth frames with glowing magic circles, dark stone and stylized monsters. Carry it through torchlight, magic glow, dark stone, stylized monsters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -273,7 +273,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       key_features: 'VHS grain; painted highlight streaks; retro cel',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Retro Mecha VHS Grain as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Retro mecha VHS anime: 80s-90s cel look with VHS grain, color bleed and hand-painted highlight streaks. Carry it through VHS grain, painted highlight streaks, retro cel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -300,7 +300,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       key_features: 'standoff; white slash arcs; ink wash; half-shadow faces',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ronin Alley Duel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ronin duel anime: period samurai frames with long stillness, ink-brush accents and sudden white slash arcs. Carry it through standoff, white slash arcs, ink wash, half-shadow faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -328,7 +328,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       key_features: 'lightning cel shapes; layered circles; casting poses',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Battle Mage Stormcast as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Battle mage anime: spell-combat frames with storm magic, layered glowing circles and dynamic casting poses. Carry it through lightning cel shapes, layered circles, casting poses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -355,7 +355,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       key_features: 'solid black shadows; single accent color; hard light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ink Noir Detective as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ink noir detective anime: black-ink shadows, stark white highlights and a single accent color in hard-boiled mystery frames. Carry it through solid black shadows, single accent color, hard light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -382,7 +382,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       key_features: 'wind in grass; painted skies; soft lines; delivery journey',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Forest Spirit Courier as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Forest courier anime: gentle hand-drawn frames of young couriers flying or cycling through lush countryside and small towns. Carry it through wind in grass, painted skies, soft lines, delivery journey. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -410,7 +410,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       key_features: 'golden hour; tears; farewell framing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Final Episode Closure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Final episode anime: the soft, emotional look of a series finale, golden light, tears and wide quiet farewells. Carry it through golden hour, tears, farewell framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -439,7 +439,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sky Pirate Airship Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sky pirate anime: swashbuckling airship adventure with wind, clouds, ropes and bright wood-and-brass ships. Carry it through airships, clouds, ropes, cutlasses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'airships; clouds; ropes; cutlasses',
     },
     ui: {
@@ -473,7 +473,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cursed Blade Dark Fantasy Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cursed blade dark fantasy anime: grim seinen frames with heavy hatching, black ink shadows and blood-red accents. Carry it through heavy hatching, massive blades, blood-red accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'heavy hatching; massive blades; blood-red accents',
     },
     ui: {
@@ -510,7 +510,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Monster Tamer Adventure Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Monster tamer anime: bright creature-companion adventures with round readable creature designs and energetic kids. Carry it through creature companions, round designs, bright action. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'creature companions; round designs; bright action',
     },
     ui: {
@@ -544,7 +544,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mythic Beast-Rider Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Beast-rider anime: epic sky and battle frames of riders on dragons, griffins and giant wolves. Carry it through riders, wings, epic scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'riders; wings; epic scale',
     },
     ui: {
@@ -578,7 +578,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Midnight Mountain Racing Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Midnight mountain racing anime: late-night downhill racing with drifting cars, headlights and speed lines. Carry it through drift smoke, headlights, speed lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'drift smoke; headlights; speed lines',
     },
     ui: {

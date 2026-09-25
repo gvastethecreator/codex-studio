@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Patient, meditative and precise, tone grown one dot at a time.
   rendering_and_quality: Clean dot-only rendering with scientific-illustration clarity; no hatching or outline.
   key_features: dots only; density gradients for tone; no contour line; open-paper highlights; scientific plate clarity
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stipple (Dotwork) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Stipple dotwork: tone built only from thousands of technical-pen dots, dense clusters for shadow and sparse scatter for light. Carry it through dots only, density gradients for tone, no contour line, open-paper highlights, scientific plate clarity. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - brand logo

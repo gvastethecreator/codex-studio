@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Tender and chaotic, family memory in a warm fuzz.
   rendering_and_quality: Consumer VHS signal; a date stamp or REC mark only as unreadable shapes.
   key_features: camcorder handheld; tracking lines and head-switching noise; bleeding reds; zoom wobble; blown windows
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies VHS Home Video as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "VHS home video: a family camcorder recording in the 1990s, played back from a worn tape. Carry it through camcorder handheld, tracking lines and head-switching noise, bleeding reds, zoom wobble, blown windows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable fake text
   - readable ticker

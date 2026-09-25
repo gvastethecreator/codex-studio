@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; the tissue panel covers part of the image, often behind the focal subject or the sky.
   atmosphere_and_mood: Refined, quiet and precious, a print with a hidden glow.
   rendering_and_quality: Clean etched lines crossing from white paper onto the tinted tissue, visible tissue edge, plate mark; no painted color.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chine-Collé Etching as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Chine-collé etching: an etched plate printed onto a thin colored tissue that is glued to the heavier sheet in the same pass, so a tinted panel sits behind the lines. Carry it through tinted tissue laid under the etching, visible torn or cut tissue edge, black etched line, embossed plate mark, one accent color zone. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: tinted tissue laid under the etching; visible torn or cut tissue edge; black etched line; embossed plate mark; one accent color zone
 avoidRules:
   - photo

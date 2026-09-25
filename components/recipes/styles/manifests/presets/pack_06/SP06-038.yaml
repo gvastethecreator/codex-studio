@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Hushed, nocturnal and mysterious, light found in the dark.
   rendering_and_quality: Smooth soft tonal transitions, no lines at all, deep velvet blacks and burnished lights.
   key_features: velvet rocker-ground black; scraped and burnished lights; very soft tonal transitions; faint rocker texture in mid-greys; forms emerging from darkness
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rocker-Ground Mezzotint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Mezzotint: a copper plate roughened all over with a rocker so it prints solid velvet black, then scraped and burnished smooth to bring up the lights. Carry it through velvet rocker-ground black, scraped and burnished lights, very soft tonal transitions, faint rocker texture in mid-greys, forms emerging from darkness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - readable printed text

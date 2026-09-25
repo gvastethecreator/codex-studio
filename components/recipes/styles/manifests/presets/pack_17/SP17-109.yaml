@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Bold frontal or three-quarter silhouette with raw cardboard margins and slight layer offset.
   atmosphere_and_mood: Rebellious, raw, urgent, and street-level.
   rendering_and_quality: 'Controlled messy finish: shapes readable at thumbnail size, drips and overspray purposeful, cardboard texture clean.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Squat Stencil Spray Zine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Squat-made spray stencil art on brown cardboard: hand-cut stencil shapes with bridges, soft overspray halos, drips, doubled passes, and red and black paint. Carry it through hand-cut stencil layers, stencil bridges, overspray halos and drips, red and black on cardboard, raw urgency. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: hand-cut stencil layers; stencil bridges; overspray halos and drips; red and black on cardboard; raw urgency
 avoidRules:
   - readable graffiti tags

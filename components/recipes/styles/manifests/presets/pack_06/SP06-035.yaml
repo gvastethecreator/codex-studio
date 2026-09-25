@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Punchy, graphic and handmade, loud poster energy.
   rendering_and_quality: Flat layers with crisp stencil edges, visible misregistration and overprints; no halftone gradients, no brush texture.
   key_features: flat stacked spot-color layers; overprint color mixing; misregistration gaps; mesh texture at edges; four to six inks
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Screenprint (Serigraphy) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Screenprint: flat opaque ink squeegeed through stencilled silk mesh, one layer per color, stacked with slight misregistration. Carry it through flat stacked spot-color layers, overprint color mixing, misregistration gaps, mesh texture at edges, four to six inks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - readable printed text

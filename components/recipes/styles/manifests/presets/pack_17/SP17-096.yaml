@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Balanced single-image crop with a clear focal silhouette, open paper margins, and flat shape planning suited to a hand-bound zine page, with no readable typography.
   atmosphere_and_mood: Curious, crafted, warm, and quietly strange rather than grim.
   rendering_and_quality: 'Clean studio-grade risograph reproduction: crisp separations, controlled grain, legible shapes at thumbnail size, and no digital gradients.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Teal Tangerine Overprint Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Refined two-drum risograph print where teal and tangerine overlap into a deliberate third brown-olive, with confident brush-pen contour, tidy halftone ramps, and generous unprinted paper. Carry it through two-drum teal and tangerine, planned overprint third color, tidy halftone ramps, brush-pen contour, bare paper highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: two-drum teal and tangerine; planned overprint third color; tidy halftone ramps; brush-pen contour; bare paper highlights
 avoidRules:
   - black ink drum

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: 'Keep the requested mood and intensity; haze changes edge softness, not the story or emotional reading.'
   rendering_and_quality: 'Blend shadows gently while maintaining decisive contours and readable values; avoid blur over the whole image.'
   key_features: 'Translucent tonal veils; faded but prompt-led color; selective crisp contours; soft shadow transitions; faint pencil grain.'
-  creative_brief: "Use translucent color and softened edges around a few decisive lines. Preserve the user's subject, action, count, camera, and emotional tone without adding a narrative filter."
+  creative_brief: "Use translucent color and softened edges around a few decisive lines. Preserve the user's subject, action, count, camera, and emotional tone without adding a narrative filter. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

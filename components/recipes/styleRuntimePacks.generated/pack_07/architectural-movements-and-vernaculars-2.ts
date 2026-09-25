@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'board-formed concrete with plank grain; formwork tie holes; heavy cantilevered masses; deep-set repetitive window bays; rain-streaked grey faces',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Brutalist Architecture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Brutalist architecture: cast-in-place concrete left raw, showing board-formed plank grain and tie holes, heavy cantilevered upper masses and deep-set repetitive window bays. Carry it through board-formed concrete with plank grain, formwork tie holes, heavy cantilevered masses, deep-set repetitive window bays, rain-streaked grey faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -56,7 +56,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'stepped setback massing; vertical piers with chevron spandrels; sunburst crown; glazed terracotta and black granite; polished nickel and brass',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Art Deco as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Art Deco architecture: stepped setback massing, strong vertical piers, and ornament concentrated in spandrels, crowns and entrances as chevrons, zigzags, sunbursts and stylised relief. Carry it through stepped setback massing, vertical piers with chevron spandrels, sunburst crown, glazed terracotta and black granite, polished nickel and brass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -84,7 +84,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'pointed lancet arches; stone tracery windows; pinnacles and crockets; polychrome brick banding; steep slate roofs',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gothic Revival as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Gothic Revival architecture: pointed arches, lancet and traceried windows, buttresses, steep roofs with pinnacles and crockets, applied with nineteenth-century precision. Carry it through pointed lancet arches, stone tracery windows, pinnacles and crockets, polychrome brick banding, steep slate roofs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -112,7 +112,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'colliding non-orthogonal volumes; tilted walls; slashed window cuts; brushed zinc and titanium cladding; unsupported-looking cantilevers',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Deconstructivism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Deconstructivist architecture: fragmented volumes that collide at non-orthogonal angles, tilted walls, slashed openings and cantilevers that seem to lack support. Carry it through colliding non-orthogonal volumes, tilted walls, slashed window cuts, brushed zinc and titanium cladding, unsupported-looking cantilevers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -140,7 +140,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'pedimented temple portico; fluted columns of a correct order; rusticated base; strict bilateral symmetry; pale ashlar stone',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neoclassical as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Neoclassical architecture: a temple front of correctly proportioned columns and pediment, rusticated base, strict bilateral symmetry and calm ashlar walls. Carry it through pedimented temple portico, fluted columns of a correct order, rusticated base, strict bilateral symmetry, pale ashlar stone. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -168,7 +168,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'gradated fin and louvre spacing; doubly curved white surfaces; algorithmic panel rotation; seamless composite joints; raking light through ribs',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Parametric Architecture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Parametric architecture: facades and roofs generated by algorithm, with ribs, louvres or panels that change size, rotation and spacing gradually across doubly curved surfaces. Carry it through gradated fin and louvre spacing, doubly curved white surfaces, algorithmic panel rotation, seamless composite joints, raking light through ribs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -196,7 +196,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'three-plus colour trim scheme; angled bay windows; fish-scale shingles; turned spindlework and brackets; painted clapboard siding',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Victorian Painted Lady as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Victorian Painted Lady: timber row-house facades in Italianate, Stick and Queen Anne manners, with bay windows and every bracket, spindle and shingle picked out in three or more paint colours. Carry it through three-plus colour trim scheme, angled bay windows, fish-scale shingles, turned spindlework and brackets, painted clapboard siding. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -224,7 +224,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'asymmetric white cubic wings; ribbon windows; glass curtain wall on steel mullions; flat roofs; thin cantilevered balconies',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bauhaus Architecture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bauhaus architecture: asymmetric composition of white rendered cubic wings, flat roofs, ribbon windows and a glass curtain wall on steel mullions, with no ornament. Carry it through asymmetric white cubic wings, ribbon windows, glass curtain wall on steel mullions, flat roofs, thin cantilevered balconies. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -252,7 +252,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'upswept cantilevered roof; boomerang and parabolic forms; starburst ornaments; angled plate glass; neon outlines',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Googie Architecture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Googie architecture: car-age roadside modernism with upswept cantilevered roofs, boomerang and parabolic forms, starbursts, angled glass walls and neon. Carry it through upswept cantilevered roof, boomerang and parabolic forms, starburst ornaments, angled plate glass, neon outlines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -280,7 +280,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'decorative half-timbering over stucco; steep cross gables; clustered brick chimneys; leaded diamond-pane casements; jettied upper storey',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tudor Revival as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tudor Revival architecture: decorative half-timbering over stucco on upper storeys, steep cross gables, tall clustered brick chimneys and leaded diamond-pane casements. Carry it through decorative half-timbering over stucco, steep cross gables, clustered brick chimneys, leaded diamond-pane casements, jettied upper storey. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -308,7 +308,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'planted sedum and meadow roofs; timber brise-soleil; cross-laminated timber frame; rammed-earth strata walls; rain chains to cisterns',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sustainable Green as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sustainable green architecture: bioclimatic design where the building shades, ventilates and waters itself, with planted roofs and terraces, deep overhangs and exposed engineered timber. Carry it through planted sedum and meadow roofs, timber brise-soleil, cross-laminated timber frame, rammed-earth strata walls, rain chains to cisterns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -336,7 +336,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'sun-dried adobe with earth plaster; projecting log vigas; stepped setback terraces with ladders; wooden canales; rounded soft parapets',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Adobe/Pueblo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Adobe and Pueblo architecture: thick load-bearing walls of sun-dried adobe brick finished in earth plaster, flat roofs on projecting log vigas, stepped setback storeys and rounded parapets. Carry it through sun-dried adobe with earth plaster, projecting log vigas, stepped setback terraces with ladders, wooden canales, rounded soft parapets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -364,7 +364,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'colliding cylinders and prisms; glazed stair cylinder; dramatic cantilevers; steel lattice mast; single red accent',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soviet Constructivist as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Constructivist architecture of the 1920s avant-garde: dynamic compositions of cylinders, prisms and slabs, cantilevers, glazed stair towers and exposed frames expressing function and movement. Carry it through colliding cylinders and prisms, glazed stair cylinder, dramatic cantilevers, steel lattice mast, single red accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -397,7 +397,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Sharp architectural photograph with precise joints and clean enamel colours, no hidden services.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies High-Tech Exposed Structure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "High-tech architecture: the building turned inside out, with structure, ducts, lifts and stairs carried on the outside, tension rods, cast steel nodes and prefabricated panels on show. Carry it through external colour-coded ducts, tension rods and cast steel nodes, external glass lifts, tubular steel trusses, prefabricated panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'external colour-coded ducts; tension rods and cast steel nodes; external glass lifts; tubular steel trusses; prefabricated panels',
     },
@@ -432,7 +432,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Bright crisp photograph with flat colour fields and sharp outlines, no weathering or readable signs.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Postmodern Pastiche Facade as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Postmodern architecture of the 1980s: classical elements used as oversized flat graphics — broken pediments, giant keystones, cut-out arches, stubby columns — on stucco boxes. Carry it through oversized broken pediment, giant flat keystone, cut-out arches, pastel stripe banding, stubby exaggerated columns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'oversized broken pediment; giant flat keystone; cut-out arches; pastel stripe banding; stubby exaggerated columns',
     },
@@ -467,7 +467,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean photograph with smooth curved gradients and crisp horizontals, no Art Deco zigzags or vertical crowns.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Streamline Moderne as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Streamline Moderne architecture: horizontal speed lines, rounded corners and curved end walls, porthole windows, glass block and ship-like railings on smooth white render. Carry it through rounded corners with horizontal speed lines, porthole windows, curved glass block walls, tubular ship railings, smooth white render. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'rounded corners with horizontal speed lines; porthole windows; curved glass block walls; tubular ship railings; smooth white render',
     },
@@ -502,7 +502,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Documentary daylight photograph with true earth texture and toron shadow pattern, no invented symbols or costume staging.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sahelian Earthen Architecture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sahelian earthen architecture of the Niger bend: sun-dried mud-brick walls rendered with mud plaster, tapering buttress pilasters rising into conical pinnacles, and toron palm-wood beams projecting from the walls. Carry it through mud-plastered sun-dried brick, projecting toron palm beams, buttress pilasters with conical pinnacles, battered walls, ceramic roof drain spouts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'mud-plastered sun-dried brick; projecting toron palm beams; buttress pilasters with conical pinnacles; battered walls; ceramic roof drain spouts',
     },
@@ -537,7 +537,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clear daylight photograph with each slab ring legible and lime texture honest, no painted-on stone or fantasy exaggeration.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Trullo Corbelled Stone as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Trullo architecture of Apulia: thick whitewashed drystone walls under conical roofs corbelled from overlapping grey limestone slabs, each cone topped with a carved pinnacle and one cone per room. Carry it through corbelled limestone slab cones, whitewashed drystone walls, carved cone pinnacles, one cone per room, small deep-set doors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'corbelled limestone slab cones; whitewashed drystone walls; carved cone pinnacles; one cone per room; small deep-set doors',
     },
@@ -572,7 +572,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Documentary photograph with readable earth layering and timber structure, no invented ornament or theme-park styling.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tulou Rammed-Earth Ring as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fujian tulou architecture: a massive circular or square rammed-earth outer wall several storeys high, windowless at the base, enclosing inward-facing timber galleries around an open courtyard. Carry it through rammed-earth ring wall with formwork layers, windowless base with high slit windows, stacked inward timber galleries, open central courtyard, overhanging grey tile roof ring. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'rammed-earth ring wall with formwork layers; windowless base with high slit windows; stacked inward timber galleries; open central courtyard; overhanging grey tile roof ring',
     },
@@ -607,7 +607,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photograph with clear thatch layering and rope-lashed joinery, no fantasy exaggeration or souvenir lanterns.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gassho Thatch Farmhouse as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Gassho-zukuri farmhouse of the snowy Japanese mountains: a very steep A-frame roof of thick grass thatch, like hands pressed together, over a timber house with several attic floors inside the roof. Carry it through steep A-frame grass thatch roof, rope-lashed rafters without nails, multi-storey attic in the roof, soot-darkened beams from the hearth, gables aligned to the valley. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'steep A-frame grass thatch roof; rope-lashed rafters without nails; multi-storey attic in the roof; soot-darkened beams from the hearth; gables aligned to the valley',
     },

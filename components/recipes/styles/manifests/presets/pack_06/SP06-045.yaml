@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Earthy, tactile and experimental, a print you want to touch.
   rendering_and_quality: Heavy material textures and embossing define each area; no fine line drawing and no recognizable pasted photos.
   key_features: collaged material plate; sand and fabric textures; deep embossing; earthy intaglio-and-relief inking; cut-card shape edges
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Collagraph as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Collagraph: a printing plate collaged from card, sand, fabric, glue and leaves, inked both into its recesses and on its surface and printed with deep embossing. Carry it through collaged material plate, sand and fabric textures, deep embossing, earthy intaglio-and-relief inking, cut-card shape edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - readable printed text

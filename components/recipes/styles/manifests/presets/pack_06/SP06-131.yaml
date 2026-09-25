@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing in a small, dense vignette with jewel-like detail.
   atmosphere_and_mood: Intimate, precise and nocturnal, a tiny world carved in light.
   rendering_and_quality: Very fine controlled white-line tints and stipple, crisp black; no coarse gouge marks and no wood grain.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies End-Grain Wood Engraving as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "End-grain wood engraving: a polished block of boxwood cut with fine burins, so the image is built from delicate white lines engraved into black. Carry it through fine white lines cut into black, white-line tint greys, no wood grain, tiny stipple cuts, small jewel-like vignette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: fine white lines cut into black; white-line tint greys; no wood grain; tiny stipple cuts; small jewel-like vignette
 avoidRules:
   - photo

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; the split between the clay half and the foil half runs down the center line.
   atmosphere_and_mood: Workshop-serious and exploratory, a design still being decided.
   rendering_and_quality: Physical styling clay with tool marks, never smooth grey CGI clay, and no hands or tools cluttering the frame.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Milled Design Clay Buck as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Industrial design clay buck: the subject milled full size in tan styling clay, with one half wrapped in silver foil film to judge the highlights. Carry it through tan styling clay, silver foil half, black tape design lines, rake and slick marks, overhead light panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: tan styling clay; silver foil half; black tape design lines; rake and slick marks; overhead light panels
 avoidRules:
   - multi-view asset sheet

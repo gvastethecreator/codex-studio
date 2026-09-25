@@ -273,9 +273,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'known film hobbit-hole copy', 'tall square house', 'village postcard'],
       briefs: [
-        "Earth-sheltered pastoral architecture on a windswept northern sea cliff: five turf-roofed dwellings half-buried in the slope, round doors of grey slate slabs set in dry-stone arches, round porthole windows glowing amber, sheep grazing on the roofs, storm light over the sea. Not Hobbiton: no green doors, no brass center knob, no English village. No text or logo.",
-        "Earth-sheltered pastoral architecture in a snowy alpine valley at dusk: a turf-roofed cheese cellar dug into the hillside, round door of banded iron and weathered larch, lanterns on either side, snow piled on the mound. No green doors or brass knobs. No text or logo.",
-        "Earth-sheltered pastoral architecture in a red desert: a bermed caravanserai of adobe mounds with round wooden doors under painted arches, date palms on top, long evening shadows. No green doors or English cottage details. No readable text or logo.",
+        'Earth-sheltered pastoral architecture on a windswept northern sea cliff: five turf-roofed dwellings half-buried in the slope, round doors of grey slate slabs set in dry-stone arches, round porthole windows glowing amber, sheep grazing on the roofs, storm light over the sea. Not Hobbiton: no green doors, no brass center knob, no English village. No text or logo.',
+        'Earth-sheltered pastoral architecture in a snowy alpine valley at dusk: a turf-roofed cheese cellar dug into the hillside, round door of banded iron and weathered larch, lanterns on either side, snow piled on the mound. No green doors or brass knobs. No text or logo.',
+        'Earth-sheltered pastoral architecture in a red desert: a bermed caravanserai of adobe mounds with round wooden doors under painted arches, date palms on top, long evening shadows. No green doors or English cottage details. No readable text or logo.',
       ],
     },
     'SP07-060': {
@@ -326,7 +326,7 @@ const spec: Spec = {
       briefs: [
         'Glacial ice architecture: a polar observatory dome carved from blue glacier ice, faceted buttresses marching around it, low sun turning the thick walls deep blue inside, faint mint aurora on the rim. No text or logo.',
         'Glacial ice architecture: an ice harbour gate between two frozen headlands with ships locked in the sea ice below, trapped bubble streams visible in its columns, long blue shadows across the snow. No text or logo.',
-        "Glacial ice architecture applied to a covered market hall: stalls, lanterns and a vaulted roof kept, the whole hall carved from clear and blue glacier ice with faceted buttresses and frost on every beam, merchants in furs. No readable signage or logo.",
+        'Glacial ice architecture applied to a covered market hall: stalls, lanterns and a vaulted roof kept, the whole hall carved from clear and blue glacier ice with faceted buttresses and frost on every beam, merchants in furs. No readable signage or logo.',
       ],
     },
     'SP07-062': {
@@ -349,9 +349,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'polished metal', 'ground-level hut', 'jungle village postcard'],
       briefs: [
-        "Canopy rope vernacular: a circular meeting hall built on a radial timber platform lashed around the trunk of a giant forest tree, woven palm-leaf walls, rope bridges fanning out to other trees, dappled sunlight on the planks. No text or logo.",
-        "Canopy rope vernacular at dusk: a lookout hut of woven reeds hanging on catenary ropes in the crown of a giant tree, lanterns glowing, seen from far below between huge trunks. No text or logo.",
-        "Canopy rope vernacular applied to a small bakery: oven, counter and bread racks kept, built on a lashed platform between two trunks with woven walls and a rope-hung basket lowering loaves to the ground. No readable signage or logo.",
+        'Canopy rope vernacular: a circular meeting hall built on a radial timber platform lashed around the trunk of a giant forest tree, woven palm-leaf walls, rope bridges fanning out to other trees, dappled sunlight on the planks. No text or logo.',
+        'Canopy rope vernacular at dusk: a lookout hut of woven reeds hanging on catenary ropes in the crown of a giant tree, lanterns glowing, seen from far below between huge trunks. No text or logo.',
+        'Canopy rope vernacular applied to a small bakery: oven, counter and bread racks kept, built on a lashed platform between two trunks with woven walls and a rope-hung basket lowering loaves to the ground. No readable signage or logo.',
       ],
     },
     'SP07-063': {

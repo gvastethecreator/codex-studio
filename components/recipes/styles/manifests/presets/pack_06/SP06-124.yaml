@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; forms read as bright shapes emerging from a deep black ground.
   atmosphere_and_mood: Precious, nocturnal and mysterious, like light found under still water.
   rendering_and_quality: Glassy polished finish, sanded-through gradations, crisp eggshell inlay edges; no visible strokes or matte areas.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sanded Lacquer Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Sanded lacquer painting: many layers of tree lacquer, gold and silver leaf and crushed eggshell built on a black panel, then sanded back and polished so images surface from within. Carry it through polished black lacquer depth, crushed eggshell inlay, gold and silver leaf, sanded-through amber gradations, images surfacing from within. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: polished black lacquer depth; crushed eggshell inlay; gold and silver leaf; sanded-through amber gradations; images surfacing from within
 avoidRules:
   - photo

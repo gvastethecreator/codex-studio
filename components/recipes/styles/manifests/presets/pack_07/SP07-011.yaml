@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Hushed, expensive and composed, with calm at great height.
   rendering_and_quality: 'High-end architectural photograph: clean reflections, continuous vein matching, no gaudy gold overload or skyline postcard.'
   key_features: book-matched marble veining; satin brass inlay; layered cove and pin-spot light; smoked glass; built-in custom millwork
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Luxury Penthouse as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Luxury penthouse interior: book-matched marble slabs, satin brass inlays, full-height glazing and custom millwork, everything built in and seamlessly joined. Carry it through book-matched marble veining, satin brass inlay, layered cove and pin-spot light, smoked glass, built-in custom millwork. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - furniture catalog staging
   - olive branch in a vase as default decor

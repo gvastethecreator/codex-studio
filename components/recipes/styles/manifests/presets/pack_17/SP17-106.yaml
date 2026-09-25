@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Calm centered study composition with generous margins, a single clearly isolated subject, and small supporting details placed with care.
   atmosphere_and_mood: Gentle, scholarly, earthy, and quietly uncanny.
   rendering_and_quality: Pristine two-color reproduction with fine line clarity, controlled grain, and no grime.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Herbal Almanac Moss Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Refined almanac-style risograph with moss green and oxblood inks, delicate cross-hatched line work, fine stipple, and the quiet order of an old herbal page without any lettering. Carry it through moss green and oxblood riso, fine cross-hatch, delicate stipple, herbal study restraint, calm isolated subject. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: moss green and oxblood riso; fine cross-hatch; delicate stipple; herbal study restraint; calm isolated subject
 avoidRules:
   - heavy grime

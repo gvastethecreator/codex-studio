@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Brazen confidence and protective loyalty, the open sky making every stance feel larger.
   rendering_and_quality: Decisive line weight and broad sky, with cloth flutter lines only where wind or motion already exists.
   key_features: worm-eye low angle; sky blue and cloud white; tapered contour ends; flapping cloth folds; backlit hard shadows
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sky-Blue Low-Angle Brawler Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Street-youth anime: heavy clean contours with sharp tapered ends, low worm-eye angles, and flapping coats against a wide saturated sky with towering white clouds. Carry it through worm-eye low angle, sky blue and cloud white, tapered contour ends, flapping cloth folds, backlit hard shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

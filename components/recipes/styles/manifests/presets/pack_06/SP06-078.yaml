@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Rich and reverent, ornament as a sign of value.
   rendering_and_quality: Genuine metallic leaf behavior with tooling and seams; no yellow paint pretending to be gold.
   key_features: gold leaf on red bole; punched tooling; burnished glints; matte tempera figures; crackle
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gold Leaf Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Water-gilded panel: loose gold leaf laid over red bole on gesso, burnished and tooled, with the subject painted in flat matte egg tempera or ink. Carry it through gold leaf on red bole, punched tooling, burnished glints, matte tempera figures, crackle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - uniform beige torn-paper wash over every image
   - red tape strips added by default

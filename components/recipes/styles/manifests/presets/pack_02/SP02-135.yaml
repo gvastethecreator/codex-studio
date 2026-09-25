@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Frontal framing of the screen, forms emerging and dissolving into darkness.
   atmosphere_and_mood: Haunting and dreamlike, memories surfacing out of shadow.
   rendering_and_quality: Pinscreen tonality with no hard outlines; not a photograph or drawing.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pinscreen Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Pinscreen animation: an image formed by thousands of pins pushed to different depths and lit from the side, so their shadows create soft grey tones. Carry it through pin-shadow tones, velvety grey stipple, forms emerging from darkness, no outlines, oblique light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: pin-shadow tones; velvety grey stipple; forms emerging from darkness; no outlines; oblique light
 avoidRules:
   - exact studio character copy

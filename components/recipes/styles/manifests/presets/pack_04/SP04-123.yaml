@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Orthographic vertical section across the full width of the sheet, a clear ground line and small human figures for scale.
   atmosphere_and_mood: Revealing and architectural, the inside of a building laid bare.
   rendering_and_quality: Crisp drafted line with confident black fill, no perspective and no room labels.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Poché Section Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Poché section drawing: the subject sliced vertically, cut walls and floors filled solid black, everything beyond drawn in thin elevation line. Carry it through solid black cut walls, thin beyond-elevation line, hatched earth, tiny scale figures, orthographic section. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: solid black cut walls; thin beyond-elevation line; hatched earth; tiny scale figures; orthographic section
 avoidRules:
   - placeholder gibberish text

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Kitsch yet sincere, nocturnal and theatrical in its glow.
   rendering_and_quality: Soft fuzzy transitions into bare black, bright luminous lights, no painted background tone at all.
   key_features: bare black velvet as shadow; glowing rim-lit edges; saturated turquoise, magenta and gold; velvet pile fuzz; subject emerging from darkness
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Black Velvet Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Black velvet painting: bright opaque paint laid over black velvet so the fabric itself is the darkest value and forms glow out of the dark. Carry it through bare black velvet as shadow, glowing rim-lit edges, saturated turquoise, magenta and gold, velvet pile fuzz. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - changing the requested framing

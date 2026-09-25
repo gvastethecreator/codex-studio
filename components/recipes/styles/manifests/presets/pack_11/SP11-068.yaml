@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Living, intricate, calm and luminous, from discovering a hidden world at tiny scale.
   rendering_and_quality: Scientific-grade macro or micrograph realism with crisp structure and believable optics.
   key_features: backlit veins; cell pattern; chlorophyll glow
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Leaf Veins as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Leaf vein macro: backlit leaf showing a glowing network of veins and cells. Carry it through backlit veins, cell pattern, chlorophyll glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

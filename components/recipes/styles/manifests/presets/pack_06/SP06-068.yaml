@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Raw and underground, made in one night for a small crowd.
   rendering_and_quality: Second-generation copy loss that keeps the subject legible; one flat highlighter color only.
   key_features: photocopy toner; marker and ballpoint; halftoned photo scraps; correction fluid; one highlighter color
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Zine Aesthetic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Photocopied zine page: marker drawing, ballpoint hatching and halftoned photo scraps pasted up, then copied twice so everything shares the toner. Carry it through photocopy toner, marker and ballpoint, halftoned photo scraps, correction fluid, one highlighter color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - uniform beige torn-paper wash over every image
   - red tape strips added by default

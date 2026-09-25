@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Restless and transient, a figure half escaping the page.
   rendering_and_quality: Solid crisp core with a disintegrating trailing edge; fleck scatter stays controlled and never becomes an all-over noise layer.
   key_features: trailing edges dissolving into black flecks; crisp leading edge; charcoal and ash with pale-blue flecks; granulated matte pigment; fleck size gradient
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Black Particle Fugitive Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Kinetic anime ink in which the subject's trailing edges disintegrate into small separated black flecks and broken contourlets, as if its own movement were blowing the drawing apart. Carry it through trailing edges dissolving into black flecks, crisp leading edge, charcoal and ash with pale-blue flecks, granulated matte pigment, fleck size gradient. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

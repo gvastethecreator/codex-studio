@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Wide surveillance or wildlife view, stars visible in the sky.
   atmosphere_and_mood: Uncanny and hushed, night that looks wrongly like day.
   rendering_and_quality: Low-light sensor look without green tint; distinct from tube night vision.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Starlight Low-Light Camera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Starlight low-light camera: an ultra-sensitive sensor that turns a moonless night into a grainy, washed grey daylight. Carry it through moonless night made grey daylight, heavy grain, stars visible, blown lamps, no green tint. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: moonless night made grey daylight; heavy grain; stars visible; blown lamps; no green tint
 avoidRules:
   - readable readouts

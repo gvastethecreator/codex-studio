@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'thick brush ink contours; four flat process colors; Ben-Day dot tints; yellowed newsprint; slight plate misregistration',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Golden Age Comic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "1940s four-color newsprint comic: thick confident brush ink over flat process color, printed cheaply with Ben-Day dots and slightly drifting plates. Carry it through thick brush ink contours, four flat process colors, Ben-Day dot tints, yellowed newsprint, slight plate misregistration. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'energy-dot crackle; extreme foreshortening; blocky square anatomy; cosmic machine architecture; magenta-cyan-yellow flats',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Silver Age Comic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "1960s cosmic comic: blocky muscular ink drawing with extreme foreshortening, crackling black energy-dot fields and machine-like cosmic architecture. Carry it through energy-dot crackle, extreme foreshortening, blocky square anatomy, cosmic machine architecture, magenta-cyan-yellow flats. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -86,7 +86,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'glossy digital color; dual rim light; volumetric rays and flares; specular armor; widescreen low angle',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Modern Superhero (Digital) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Contemporary digital superhero comic: clean variable-weight digital inks under glossy rendered color with gradients, specular hits and composited FX glows. Carry it through glossy digital color, dual rim light, volumetric rays and flares, specular armor, widescreen low angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -115,7 +115,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'G-pen line-weight swings; radial speed lines; dot screentone; impact burst; extreme foreshortening',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Manga (Shonen) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Action manga page art: black G-pen ink with aggressive line-weight swings, radial speed lines and mechanical screentone gray. Carry it through G-pen line-weight swings, radial speed lines, dot screentone, impact burst, extreme foreshortening. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -143,7 +143,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'hair-fine pen lines; floral screentone; sparkle highlights; large glistening eyes; flower-framed negative space',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Manga (Shojo) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Romance manga art: hair-fine pen lines, large glistening eyes, floral and sparkle screentones and decorative flower borders floating around the subject. Carry it through hair-fine pen lines, floral screentone, sparkle highlights, large glistening eyes, flower-framed negative space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -171,7 +171,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'clean digital line; two-step cel shade; gradient backdrop; colored rim light; tall vertical framing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Webtoon Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Vertical-scroll webcomic art: clean digital line with soft cel shading over glowing full-color gradient backgrounds, drawn for a phone screen. Carry it through clean digital line, two-step cel shade, gradient backdrop, colored rim light, tall vertical framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -199,7 +199,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'uniform clear-line contour; flat album color; no hatching; precise backgrounds; calm eye-level view',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Franco-Belgian (Ligne Claire) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Franco-Belgian clear line: one uniform ink contour around every form, flat unshaded color and meticulously drawn backgrounds equal in clarity to the figures. Carry it through uniform clear-line contour, flat album color, no hatching, precise backgrounds, calm eye-level view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -228,7 +228,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'black and white only; negative-space carving; white-outlined silhouettes; knife-edge shadows; scratched-out rain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Binary Ink Noir Comic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Binary noir ink: the image carved from solid black and bare white with no gray at all, figures often reduced to white-outlined silhouettes. Carry it through black and white only, negative-space carving, white-outlined silhouettes, knife-edge shadows, scratched-out rain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -256,7 +256,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'obsessive crosshatching; nervous dip-pen wobble; rubbery lumpy anatomy; sweat and stink lines; crammed detail',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Underground Comix as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "1960s underground comix: nervous dip-pen line with obsessive crosshatching, lumpy rubbery anatomy and every inch of the drawing crammed with detail. Carry it through obsessive crosshatching, nervous dip-pen wobble, rubbery lumpy anatomy, sweat and stink lines, crammed detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -284,7 +284,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'fully painted gouache; outline-free forms; warm soft key; observed fabric and metal; realist proportions',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Graphic Novel (Painted) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Painted graphic novel: every image fully painted in gouache and watercolor from observation, forms built by value and edge with almost no outline. Carry it through fully painted gouache, outline-free forms, warm soft key, observed fabric and metal, realist proportions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -314,7 +314,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'obsessive fine-line hatching; creeping spiral patterns; realistic unhatched faces; symmetrical calm staging; pitch-black voids',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Obsessive Fine-Line Horror Manga as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Horror manga drawn with obsessive fine lines: thousands of parallel pen strokes accumulate into dread, and ordinary surfaces slowly turn into spirals, holes or patterns. Carry it through obsessive fine-line hatching, creeping spiral patterns, realistic unhatched faces, symmetrical calm staging, pitch-black voids. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -344,7 +344,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'fine even contour; stipple dot shading; dusty pastel matte color; organic-futurist forms; tiny figures in vast space',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dreamline Stipple Sci-Fi Comic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dreamline European science-fiction comic: fine even contour with stipple dot shading and flat matte pastel color over vast airy alien landscapes. Carry it through fine even contour, stipple dot shading, dusty pastel matte color, organic-futurist forms, tiny figures in vast space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -372,7 +372,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'one-pixel black outlines; ordered-dither shading; indexed 32-color palette; visible pixel grid; chunky silhouettes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pixel Art Comic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pixel comic art: comic inking translated into pixels, one-pixel black outlines, ordered-dither halftone shading and a strict indexed palette on a visible grid. Carry it through one-pixel black outlines, ordered-dither shading, indexed 32-color palette, visible pixel grid, chunky silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -400,7 +400,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'heavy black shadow architecture; cyan-magenta duotone; glossy black reflections; knife-edged ink; tilted long-lens framing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tech Noir Comic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tech-noir comic: angular ink with heavy black shadow architecture, lit only by cyan and magenta duotone neon and reflected on glossy black planes. Carry it through heavy black shadow architecture, cyan-magenta duotone, glossy black reflections, knife-edged ink, tilted long-lens framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -433,7 +433,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Realistic faces and anatomy, rough brush energy, no big sparkling eyes and no chibi proportions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gekiga Drybrush Realism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Gekiga dramatic manga: realistic adult proportions drawn with a split, dry-loaded brush, gritty screentone and cinematic framing instead of cute stylization. Carry it through split dry-brush strokes, realistic adult proportions, coarse screentone grit, deep shadow pools, cinematic long-lens framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'split dry-brush strokes; realistic adult proportions; coarse screentone grit; deep shadow pools; cinematic long-lens framing',
     },
@@ -468,7 +468,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Rich tonal wash gradations with sharp pen detail on top; no color, no dot screentone.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Greywash Horror Magazine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "1970s black-and-white horror magazine art: detailed pen ink drawing modeled with diluted ink gray washes instead of color or screentone. Carry it through diluted ink gray washes, pen hatching over wash, wash tide lines, theatrical underlight, looming low angles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'diluted ink gray washes; pen hatching over wash; wash tide lines; theatrical underlight; looming low angles',
     },
@@ -503,7 +503,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Elegant brush economy and accurate anatomy; no screentone, no digital gradients.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Feathered-Brush Adventure Strip as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Classic newspaper adventure strip: realist figures inked with a sable brush, shadows built from tapering feathered strokes and slabs of spotted black. Carry it through sable-brush feathering, spotted blacks, realist anatomy, muted flat Sunday color, horizontal framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'sable-brush feathering; spotted blacks; realist anatomy; muted flat Sunday color; horizontal framing',
     },
@@ -538,7 +538,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp ink contour under smooth airbrush color and metallic sheen; no flat print color, no screentone.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Airbrush Manhua Action as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Painted martial-arts manhua: sharp ink figures fully colored with airbrush gradients, glowing energy auras and metallic gold highlights. Carry it through airbrush gradient color, energy auras, metallic gold highlights, flowing silk trails, soaring diagonal composition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'airbrush gradient color; energy auras; metallic gold highlights; flowing silk trails; soaring diagonal composition',
     },
@@ -574,7 +574,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean confident pencil over messy blue structure; the image stays unfinished and uninked on purpose.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Non-Photo Blue Pencils as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Uninked comic pencil art: confident graphite line drawing laid over loose non-photo-blue construction sketching on bristol board, before any ink. Carry it through non-photo-blue construction lines, graphite finished line, X marks for blacks, visible perspective grid, bristol tooth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'non-photo-blue construction lines; graphite finished line; X marks for blacks; visible perspective grid; bristol tooth',
     },
@@ -609,7 +609,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Fine pen line softened by genuine watercolor behavior; no flat fills and no digital gradients.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Direct-Color Album Watercolor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "European direct-color album art: a fine pen line painted directly in transparent watercolor, washes flowing over and softening the ink. Carry it through pen line under transparent watercolor, wet-in-wet blooms, bare paper whites, granulating pigment, landscape-led view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'pen line under transparent watercolor; wet-in-wet blooms; bare paper whites; granulating pigment; landscape-led view',
     },

@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Vertigo, grit and stubborn survival against sheer height.
   rendering_and_quality: Hard stress-line hatching under eyes and along tendons, crisp silhouettes against flat pale sky.
   key_features: facial stress lines; towering vertical strata; taut cable motion trails; cold slate and olive palette; plunging verticals
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gritty Wallbound Survival as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Vertical-survival anime: thick sharp contours with harsh stress lines on faces and knuckles, figures dwarfed by colossal walls and cliffs, and taut cable-line motion trails. Carry it through facial stress lines, towering vertical strata, taut cable motion trails, cold slate and olive palette, plunging verticals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

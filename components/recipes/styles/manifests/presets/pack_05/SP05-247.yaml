@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Romantic and quietly uncanny, beauty with thorns.
   rendering_and_quality: Detailed contours against softly painted distance, precise focal form and restrained glow.
   key_features: thorny branching contours; lilac glints; umber chiaroscuro framing; lit center; delicate grain
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lilac Thorn-Line Chiaroscuro Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Luminous botanical anime cel in chiaroscuro: intricate thorny branching contours, lilac highlights and deep brown darkness framing a lit center. Carry it through thorny branching contours, lilac glints, umber chiaroscuro framing, lit center, delicate grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway

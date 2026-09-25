@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Flat slice, matching how this instrument actually frames data.
   atmosphere_and_mood: Scientific, abstract, precise and hidden, coming from seeing what eyes cannot.
   rendering_and_quality: Believable instrument output with correct signal logic, artifacts and resolution for that sensor.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mass Spectrometry Imaging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Mass spectrometry imaging: pixelated maps of where molecules sit in a tissue slice, hot colors on black. Carry it through pixelated molecule map, hot colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: pixelated molecule map; hot colors
 avoidRules:
   - readable text

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Heavy, industrial and endlessly explorable, a machine built from a scrapyard of other machines.
   rendering_and_quality: Crisp edges and clean occlusion; parts follow the form lines of the subject instead of scattering randomly across it.
   key_features: borrowed machine parts; large-medium-small detail hierarchy; raking hard key; occlusion in part gaps; quiet rest panels
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kitbash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Kitbash construction: the subject assembled from recognizable borrowed machine parts — engine blocks, pipe runs, hydraulic rams, vent grilles and hatch plates — packed along its silhouette. Carry it through borrowed machine parts, large-medium-small detail hierarchy, raking hard key, occlusion in part gaps, quiet rest panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - multi-view asset sheet
   - fake labels

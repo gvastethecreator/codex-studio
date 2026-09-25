@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Cool composure with latent tension, elegance held like a breath before moving.
   rendering_and_quality: Precise contours, sharp value blocks and very few luminous accents.
   key_features: elongated fashion-plate proportions; blank ivory negative space; stark black-white division; single violet accent; fine gapped contour
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Urban Spirit Blade as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Fashion-plate supernatural anime: elongated slender figures in fine variable contours with deliberate gaps, set against stark black-white divisions and large blank ivory space. Carry it through elongated fashion-plate proportions, blank ivory negative space, stark black-white division, single violet accent, fine gapped contour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

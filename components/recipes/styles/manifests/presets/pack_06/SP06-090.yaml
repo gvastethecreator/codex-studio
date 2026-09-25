@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Toy-like and charming, a collectible figure made of blocks.
   rendering_and_quality: Crisp cube faces, clean occlusion and readable silhouette at thumbnail size.
   key_features: coarse voxel model; flat color per cube; corner occlusion; orthographic three-quarter view; plain ground tile
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Voxel Block Sprites as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Voxel sprite model: the subject built as a small toy-like model of flat-colored cubes, like a pixel sprite pushed into three dimensions. Carry it through coarse voxel model, flat color per cube, corner occlusion, orthographic three-quarter view, plain ground tile. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - console or handheld hardware shown in frame

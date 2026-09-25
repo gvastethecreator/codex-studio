@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: 16–24 mm, low horizon, storm filling two thirds of the frame, a small structure or figure for scale.
   atmosphere_and_mood: Ominous and awe-struck, a wall of weather advancing slowly.
   rendering_and_quality: Natural contrast with detailed cloud structure; no HDR halos.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Supercell Storm Landscape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Storm photography: a wide lens capturing the structure of a severe storm — rotating supercells, shelf clouds and walls of rain or dust — towering over the land. Carry it through rotating supercell or shelf cloud, low horizon, light under the cloud base, small scale marker, rain or dust walls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: rotating supercell or shelf cloud; low horizon; light under the cloud base; small scale marker; rain or dust walls
 avoidRules:
   - illustration

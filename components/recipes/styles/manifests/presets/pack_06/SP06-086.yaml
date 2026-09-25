@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Homemade and nostalgic, a small adventure built tile by tile.
   rendering_and_quality: Grid-aligned tiles, consistent chibi scale and no perspective drift.
   key_features: square tile grid; chibi sprites; auto-tiled edges; shadow tiles; three-quarter overhead view
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chibi Top-Down Tileworld as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hobbyist top-down RPG map: 16 or 32 pixel square tiles in three-quarter overhead view with two-heads-tall chibi characters. Carry it through square tile grid, chibi sprites, auto-tiled edges, shadow tiles, three-quarter overhead view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - console or handheld hardware shown in frame

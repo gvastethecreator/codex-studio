@@ -116,7 +116,7 @@ const spec: Spec = {
         'scenic background',
       ],
       briefs: [
-        "Character turnaround of a stout middle-aged woman chimney sweep of a black citadel with cropped grey hair, a crooked top hat, soot-stained brass goggles pushed up, a long patched tailcoat and a bundle of round chimney brushes strapped to her back like a quiver; front, three-quarter, side and back views on grey with height guide lines and four expression heads below. Original design, no tactical gear or braid. No text or logo.",
+        'Character turnaround of a stout middle-aged woman chimney sweep of a black citadel with cropped grey hair, a crooked top hat, soot-stained brass goggles pushed up, a long patched tailcoat and a bundle of round chimney brushes strapped to her back like a quiver; front, three-quarter, side and back views on grey with height guide lines and four expression heads below. Original design, no tactical gear or braid. No text or logo.',
         'Character turnaround of an adult river-toll keeper in a lamellar coat of overlapping fish-scale plates, a hooked pole strapped across the back, flat color with occlusion. No text or logo.',
         'Character turnaround of a clockwork scarecrow sentinel with a pumpkin-lantern head and stitched sackcloth limbs over brass joints, four aligned views and a strip of palette chips. No text or logo.',
       ],
@@ -767,7 +767,7 @@ const spec: Spec = {
       briefs: [
         'Foliage design kit for a cursed blight forest, blackened thorn trees, fungal shrubs, bleeding moss and bone-white saplings isolated in rows from tall to small on a neutral ground, human silhouette for scale. No text or logo.',
         'Foliage design kit for an alpine meadow, pines, juniper, gentians and cushion plants with summer and autumn variants side by side. No text or logo.',
-        'Foliage design kit for a carnivorous swamp, pitcher plants, sundews, mangrove clumps and floating bladderwort. No text or logo.',
+        'Foliage design kit for a carnivorous swamp: pitcher plants, sundews, mangrove clumps, floating bladderwort and a flytrap tree isolated in rows from tall to small on a neutral ground, a human silhouette for scale. No text or logo.',
       ],
     },
     'SP04-096': {

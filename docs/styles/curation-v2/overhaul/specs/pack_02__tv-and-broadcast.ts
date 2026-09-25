@@ -221,7 +221,7 @@ const spec: Spec = {
       briefs: [
         "Security monitor quad split on a CRT showing four grainy black-and-white feeds of a castle's gate, stairwell, treasury and stable, a masked adult figure appearing only in the treasury feed. No labels, text or logo.",
         "Single full-frame CCTV feed from a high corner fisheye camera inside a tavern kitchen at night: an adult thief in a knight's surcoat freezes mid-step while lifting a roast from the spit, the whole room bent by the wide lens, grainy monochrome, blown hotspot from the hearth, scanlines. No timestamp, labels, text or logo.",
-        "Single full-frame night-vision CCTV feed of a cobbled castle courtyard where a huge winged dragon has just landed among parked hay carts, its eyes glowing white in infrared, green-grey monochrome, heavy compression blocks. No timestamp, labels, text or logo.",
+        'Single full-frame night-vision CCTV feed of a cobbled castle courtyard where a huge winged dragon has just landed among parked hay carts, its eyes glowing white in infrared, green-grey monochrome, heavy compression blocks. No timestamp, labels, text or logo.',
       ],
     },
     'SP02-023': {

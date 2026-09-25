@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Uneasy uncertainty, a whisper living inside the halftone.
   rendering_and_quality: Print-like offset keylines, clean dot gradients and a single red accent.
   key_features: doubled offset contours; shifting halftone density; charcoal and pale gray screentone; one red accent; unprinted gaps
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Civic Rumor Breakdown Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Manga screentone illustration where contours print twice, slightly offset, and halftone density shifts across a single form, so the image looks like a rumor retold: the same thing, not quite matching. Carry it through doubled offset contours, shifting halftone density, charcoal and pale gray screentone, one red accent, unprinted gaps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Bold, handmade and earthy, carved with a strong hand.
   rendering_and_quality: Chunky relief print with slight ink squash at the edges; no fine hairlines and no halftone.
   key_features: V and U gouge strokes; flat solid ink areas; speckled ink roll; one or two colors; directional carving rhythm
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Linocut Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Linocut relief print: the image carved into linoleum with V and U gouges, uncarved areas printed as flat solid ink and carved areas left paper white. Carry it through V and U gouge strokes, flat solid ink areas, speckled ink roll, one or two colors, directional carving rhythm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - brand logo

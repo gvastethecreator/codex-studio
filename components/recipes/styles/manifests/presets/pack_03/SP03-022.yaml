@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Cheerful and constructive, a world you could build block by block.
   rendering_and_quality: Clean voxel render with soft occlusion; no mining-game textures or characters.
   key_features: uniform cube voxels; strict grid; stepped palette shading; soft ambient occlusion; no curves
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Voxel Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Voxel art: the subject built from small uniform cubes on a strict grid, like 3D pixels, with soft global illumination. Carry it through uniform cube voxels, strict grid, stepped palette shading, soft ambient occlusion, no curves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - franchise likeness

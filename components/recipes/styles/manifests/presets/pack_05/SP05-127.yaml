@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Beautiful menace, ornate and watchful, lovely petals hiding a quiet threat.
   rendering_and_quality: Fine etched detail, quiet dark values and carefully limited pastel accents.
   key_features: fine etched contour; poison-pastel flowers; jade, chalk and wine; dry crosshatch shadows; foliage framing planes
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Toxic Flower Etched Ink as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Garden-horror anime: fine etched contours, lush ornamental flowers and vines in poison pastels, broken by compact angular shapes and dry crosshatch in the shadows. Carry it through fine etched contour, poison-pastel flowers, jade, chalk and wine, dry crosshatch shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Minimal and engineered, quiet confidence in precise machined form.
   rendering_and_quality: Keynote-grade retouch; no cables, dust or warm clutter.
   key_features: dark graphite sweep; precise rim-light outline; machined surfaces; long-lens compression; deep negative space
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tech Hardware Hero as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Tech hardware hero: a launch-keynote product image with a dark graphite sweep and precise rim lights tracing the object's outline. Carry it through dark graphite sweep, precise rim-light outline, machined surfaces, long-lens compression, deep negative space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - fake brand logo
   - readable labels

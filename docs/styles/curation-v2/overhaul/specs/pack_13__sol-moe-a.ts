@@ -46,14 +46,14 @@ const spec: Spec = {
       briefs: [
         'Restorative comfort anime frame of a traveler thawing by a hearth in a snowbound mountain inn, cool blue ambient values filling the room and warmer local highlights on hands, soup bowl and face, rounded contours and broad color planes. No readable text or logo.',
         'Anime frame of a girl wrapped in a blanket on a cold balcony holding cocoa, cool and warm temperature depth. No readable text or logo.',
-        'Anime frame of a sick knight being fed broth by a friend in a cold stone room. No readable text or logo.',
+        'Restorative anime frame of a sick knight in a cold stone room being fed broth by a friend, cool blue ambient values and warm highlights on the bowl and their hands. No readable text or logo.',
       ],
     },
     'SP05-087': {
       briefs: [
         'Pastoral anime frame of a young shepherd lying in a vast meadow watching sheep and one small cloud dragon drift overhead, fine unbroken outlines, broad pale washes and very little detail, lots of breathing room. No readable text or logo.',
-        'Pastoral anime frame of a girl cycling along a quiet country road through rice fields, broad pale washes. No readable text or logo.',
-        'Pastoral anime frame of an old farmer resting under a single tree on a hill at noon. No readable text or logo.',
+        'Pastoral anime frame of a girl cycling along a quiet country road through green rice fields, fine unbroken outlines, broad pale washes and lots of empty sky. No readable text or logo.',
+        'Pastoral anime frame of an old farmer resting under a single tree on a hill at noon, fine unbroken outlines, broad pale washes and very little surface detail. No readable text or logo.',
       ],
     },
     'SP05-088': {
@@ -80,7 +80,7 @@ const spec: Spec = {
     'SP05-201': {
       briefs: [
         'Observational mystery anime frame of a young tea shop owner noticing a single wet footprint on a dry wooden floor, fine precise contours and sharply resolved microdetails on the footprint and teacups against quiet color fields. No readable text or logo.',
-        'Anime frame of a detective girl studying a torn glove on a bench in a park, sharp microdetail. No readable text or logo.',
+        'Observational mystery anime frame of a detective girl studying a torn glove left on a park bench, sharply resolved stitching and a stain, quiet color fields around her. No readable text or logo.',
         'Observational mystery anime frame of a young scholar examining an unusual iron key under a brass lamp, fine contours and razor-sharp microdetail on the key teeth and a thread caught in it, quiet color around. No readable text or logo.',
       ],
     },

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Wide, cinematic full figure in open landscape, keeping the full outfit silhouette and fit readable at card size.
   atmosphere_and_mood: Rugged, romantic and independent, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Warm, film-like finish, with believable fabric weight, seams and fit detail.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neo-Western as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Neo-western fashion: cowboy codes reworked for today — embroidered yokes, fringe, denim, bolo ties and pointed boots, worn with modern cuts. Carry it through embroidered yoke and fringe, pointed boots, bolo tie, rust and turquoise, low golden light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: embroidered yoke and fringe; pointed boots; bolo tie; rust and turquoise; low golden light
 avoidRules:
   - brand logo

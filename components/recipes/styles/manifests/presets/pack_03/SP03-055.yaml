@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Embodied and inviting, a space you feel you could step into and touch.
   rendering_and_quality: No depth of field, no motion blur and no film grain; stable, evenly sharp real-time render ready for stereo.
   key_features: standing eye height; wide field of view; baked lightmaps; props within arm reach; no depth of field
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Virtual Reality Environment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Room-scale VR environment render: the scene built as an optimized real-time level seen from standing eye height, with baked lighting and everything sharp for stereo viewing. Carry it through standing eye height, wide field of view, baked lightmaps, props within arm reach, no depth of field. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise likeness
   - recognizable game or film world

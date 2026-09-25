@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Storybook, settled and homely, with an old-English romance.
   rendering_and_quality: Detailed photograph with timber pattern clear and regular, no cottage postcard staging.
   key_features: decorative half-timbering over stucco; steep cross gables; clustered brick chimneys; leaded diamond-pane casements; jettied upper storey
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tudor Revival as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Tudor Revival architecture: decorative half-timbering over stucco on upper storeys, steep cross gables, tall clustered brick chimneys and leaded diamond-pane casements. Carry it through decorative half-timbering over stucco, steep cross gables, clustered brick chimneys, leaded diamond-pane casements, jettied upper storey. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - golden-hour hero facade formula
   - copy of a named landmark

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Wistful and rescued, a thrown-away idea given a second chance.
   rendering_and_quality: Real crumpled-paper surface with light across the folds; not a texture overlay.
   key_features: crease network through the drawing; raking side light; skipped ink over folds; yellowed paper; coffee stain
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crumpled-Paper Scribble as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Crumpled-paper scribble: a pencil and ink drawing on paper that was crushed into a ball and flattened again, the creases cutting through the art. Carry it through crease network through the drawing, raking side light, skipped ink over folds, yellowed paper, coffee stain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photorealistic rendering
   - 3d render

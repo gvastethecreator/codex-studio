@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Solemn funereal dread, elegance carved into cold metal.
   rendering_and_quality: Engraving line with swelling and tapering strokes, a controlled hatch value scale and sparse crimson; no painterly color.
   key_features: parallel burin hatching; pointed filigree edging; blue-black ink on bone; single crimson spot color; stipple on curves
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyber-Goth Mausoleum Dread as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Copperplate-engraving cyber-gothic rendering: dense parallel burin hatching, pointed ornamental filigree traced along existing edges, and a single crimson spot color. Carry it through parallel burin hatching, pointed filigree edging, blue-black ink on bone, single crimson spot color, stipple on curves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'two to three fluorescent spot inks; overprint mixing; coarse riso grain; misregistration; uncoated paper',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Risograph Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Risograph print: the image separated into two or three soy-ink drums, fluorescent pink, teal or yellow, overprinting on uncoated paper. Carry it through two to three fluorescent spot inks, overprint mixing, coarse riso grain, misregistration, uncoated paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'radiating sunburst; streamlined elongation; black teal and gold; airbrushed gradient bands; stepped symmetry',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Art Deco Poster as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Art Deco poster: streamlined geometric forms, radiating sunbursts and speed lines, smooth airbrushed gradients and gold-on-black glamour. Carry it through radiating sunburst, streamlined elongation, black teal and gold, airbrushed gradient bands, stepped symmetry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -86,7 +86,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'circular halo behind the figure; whiplash curves; botanical arabesque border; peach sage and gold; lithograph grain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Art Nouveau Halo Lithograph as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Art Nouveau decorative lithograph: a figure framed by a circular halo, flowing whiplash contours and botanical arabesques that merge into an ornamental border. Carry it through circular halo behind the figure, whiplash curves, botanical arabesque border, peach sage and gold, lithograph grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -113,7 +113,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'red black and cream; steep diagonal thrust; worm-eye view; radiating ray wedges; hard silhouette reduction',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Propaganda Poster as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Constructivist propaganda poster: heroic figures reduced to hard silhouettes, thrust along steep diagonals against radiating red rays. Carry it through red black and cream, steep diagonal thrust, worm-eye view, radiating ray wedges, hard silhouette reduction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -141,7 +141,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'melting liquid swirls; vibrating equal-value complementaries; ripple contour bands; all-over density; screenprint halos',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Psychedelic Poster (60s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "1960s psychedelic concert poster: every form melting into liquid swirls, vibrating complementary colors and dense wave patterns filling the sheet. Carry it through melting liquid swirls, vibrating equal-value complementaries, ripple contour bands, all-over density, screenprint halos. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -168,7 +168,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'flat vector shapes; no outlines; oversized limbs and tiny heads; coral periwinkle mint palette; generous empty space',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Minimalist Vector as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Minimalist flat vector in the corporate-flat manner: rounded shapes, no outlines, figures with oversized limbs and tiny heads in cheerful colors. Carry it through flat vector shapes, no outlines, oversized limbs and tiny heads, coral periwinkle mint palette, generous empty space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -196,7 +196,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'cut found photographs; visible seams and paper edges; halftone fragments; absurd scale jumps; red accent paper',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Collage Art (Dada) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dada photomontage: found photographs and engravings cut with scissors and glued into absurd hybrids, seams and scale jumps left visible. Carry it through cut found photographs, visible seams and paper edges, halftone fragments, absurd scale jumps, red accent paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -223,7 +223,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'circles squares triangles and bars; primary triad with black; asymmetric grid; dominant circle; flat matte ink',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bauhaus Poster as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bauhaus poster: the subject rebuilt from circles, squares, triangles and thick bars on an asymmetric grid. Carry it through circles squares triangles and bars, primary triad with black, asymmetric grid, dominant circle, flat matte ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -250,7 +250,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'flat separated earth inks; stacked silhouette strata; banded sky; monumental landmark; screen-mesh texture',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies National Park Poster (WPA) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "1930s park poster screenprint: landscapes simplified into a few flat silhouette layers of separated earth-toned inks. Carry it through flat separated earth inks, stacked silhouette strata, banded sky, monumental landmark, screen-mesh texture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -277,7 +277,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'painted montage pyramid; giant background head or symbol; amber and cyan; airbrush mist; rim-lit heroes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Movie Poster (Painted) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Painted movie one-sheet: an airbrushed and oil-painted montage with a giant central head or symbol towering over smaller action vignettes. Carry it through painted montage pyramid, giant background head or symbol, amber and cyan, airbrush mist, rim-lit heroes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -304,7 +304,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'illustrated cross-section or cycle; connector arrows; categorical muted palette; clean vector; no labels',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Infographic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Editorial infographic illustration: the subject explained as an illustrated diagram of layers, cycles or flows, drawn in clean flat vector. Carry it through illustrated cross-section or cycle, connector arrows, categorical muted palette, clean vector, no labels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -332,7 +332,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'nine-heads-tall elongation; brush ink over graphite; watercolor garment splash; white space; mid-stride pose',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fashion Illustration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fashion illustration: a quick runway sketch in graphite and brush ink with loose watercolor splashes on the garment. Carry it through nine-heads-tall elongation, brush ink over graphite, watercolor garment splash, white space, mid-stride pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -359,7 +359,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'square format; one central impossible image; muted dusk palette; analog grain; wide empty space',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Album Cover (Surreal) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Surreal album cover: one impossible central image in a square frame, photographic calm and dream logic combined. Carry it through square format, one central impossible image, muted dusk palette, analog grain, wide empty space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -386,7 +386,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'lurid oil painting; acid yellow and red; hard spotlight; peak-action foreground; looming peril',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pulp Magazine Cover as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pulp magazine cover painting: lurid oil-painted adventure at its most sensational moment, thick painterly gesture and hard spotlighting. Carry it through lurid oil painting, acid yellow and red, hard spotlight, peak-action foreground, looming peril. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -412,7 +412,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'sunlit flat color blocks; high viewpoint; foreground framing element; lithographic grain; no title band',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Travel Poster (Vintage) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Vintage lithographic travel poster: a destination simplified into sunlit flat color blocks with a clean horizon and idealized weather. Carry it through sunlit flat color blocks, high viewpoint, foreground framing element, lithographic grain, no title band. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -440,7 +440,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'three spot inks plus black; coarse halftone; overprint colors; squeegee drag; central emblem subject',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gig Poster (Screenprint) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hand-pulled gig poster screenprint: bold illustrated image in three spot inks with halftone shading, overprints and squeegee imperfections. Carry it through three spot inks plus black, coarse halftone, overprint colors, squeegee drag, central emblem subject. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -468,7 +468,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'cut stencil bridges; black spray plus one red; overspray halos and drips; posterized levels; wall texture',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Street Protest Stencil Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Street stencil art: the subject cut into a one- or two-layer stencil with bridges and sprayed onto a wall. Carry it through cut stencil bridges, black spray plus one red, overspray halos and drips, posterized levels, wall texture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -497,7 +497,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Loose expressive painting with a clear single metaphor; no collage and no lettering.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Painterly Metaphor Poster as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Painterly metaphor poster: one surreal visual pun painted with loose gouache and brush, the idea carried entirely by the image. Carry it through single visual pun, loose gouache brushwork, flat painted ground, one saturated accent, central frontal object. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'single visual pun; loose gouache brushwork; flat painted ground; one saturated accent; central frontal object',
     },
@@ -532,7 +532,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Economical shape design with textured flats; no headlines, no borders and no speech bubbles.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Op-Ed Conceptual Spot Illustration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Newspaper op-ed spot illustration: a small conceptual scene of tiny figures and oversized symbols, drawn in flat shapes with fine grain. Carry it through conceptual metaphor staging, tiny figures and huge symbols, three to four color palette, dry grain texture, single cast shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'conceptual metaphor staging; tiny figures and huge symbols; three to four color palette; dry grain texture; single cast shadows',
     },
@@ -567,7 +567,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Rigorous alignment and clean hierarchy; no text blocks, no ornament and no gradients.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Swiss Grid Photo Poster as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Swiss modernist photo poster: a tightly cropped black-and-white photograph placed on a strict grid with one or two flat color geometric shapes. Carry it through extreme black-and-white photo crop, strict grid, one flat red or blue shape, white space, bleed off the edge. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'extreme black-and-white photo crop; strict grid; one flat red or blue shape; white space; bleed off the edge',
     },

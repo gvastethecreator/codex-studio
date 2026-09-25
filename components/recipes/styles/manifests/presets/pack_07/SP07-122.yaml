@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Top-down or low-angle view of two to four frames laid on a mat; the subject is recognisable from its parts.
   atmosphere_and_mood: Anticipation and order, the whole subject waiting to be built.
   rendering_and_quality: Clean photograph of real plastic frames; part numbers left as blank tabs, never readable.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sprue-Frame Model Kit as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Unassembled model kit: the subject broken into injection-molded parts still attached to rectangular sprue frames by thin gates, ready to be clipped. Carry it through parts on rectangular sprue frames, thin gates and ejector-pin marks, one color per frame, clipped parts, overhead view on a cutting mat. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: parts on rectangular sprue frames; thin gates and ejector-pin marks; one color per frame; clipped parts; overhead view on a cutting mat
 avoidRules:
   - brand logo on parts

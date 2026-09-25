@@ -34,7 +34,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Authentic limited-palette pixel art reproduced cleanly, no AI painterly smearing, no fake CRT text.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Monochrome Dungeon Pixels as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Grimdark monochrome pixel art with one-bit discipline, hard tile silhouettes, dithered candle gloom, and medieval dungeon weight. Carry it through one-bit dungeon pixels, hard tile shapes, chunky dither, bone black palette, no HUD. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'one-bit dungeon pixels; hard tile shapes; chunky dither; bone black palette; no HUD; grim medieval game mood',
     },
@@ -69,7 +69,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Polished stylized 2.5D/isometric fantasy game rendering, denoised, not photoreal, not promotional key art.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ashen Isometric ARPG as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Dark isometric action-RPG style with ashen cathedral floors, readable loot-era silhouettes, smoky depth, and grim fantasy game-camera staging without UI. Carry it through isometric ARPG camera, ashen gothic floor planes, ember rim, readable game-space depth, no UI. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'isometric ARPG camera; ashen gothic floor planes; ember rim; readable game-space depth; no UI; dark fantasy 2.5D finish',
     },
@@ -104,7 +104,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Stylized isometric game art that can lean pixel/2.5D but stays crisp, readable, and non-photoreal.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Obsidian 2.5D Catacombs as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Monochrome 2.5D catacomb game aesthetic with obsidian tiles, bone highlights, severe isometric depth, and sparse pixel-like value discipline. Carry it through obsidian isometric floor, bone highlights, monochrome dungeon game, sparse corpse-light, no HUD. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'obsidian isometric floor; bone highlights; monochrome dungeon game; sparse corpse-light; no HUD; 2.5D tactical depth',
     },
@@ -140,7 +140,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean fantasy sourcebook portrait illustration with broad planes, denoise, varied age/body type, and no pin-up formula.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Robust Adventurer Portraits as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Robust tabletop fantasy portrait style with heavy silhouettes, lived-in gear, adult body variety, readable faces, and grounded medieval grime without glossy hero-card sameness. Carry it through robust adult fantasy portraits, heavy silhouettes, worn gear, grounded sourcebook paint, body variety. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'robust adult fantasy portraits; heavy silhouettes; worn gear; grounded sourcebook paint; body variety; restrained character drama',
     },
@@ -175,7 +175,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Stylized post-apocalyptic fantasy illustration with broad shapes, no copied game identity, and controlled texture.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rusted Vault Grimdark as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Post-nuclear grimdark fantasy where rusted vault shapes, retrofuturist decay, medieval survival silhouettes, and sacred hazard symbols merge without using logos or readable signage. Carry it through rusted vault geometry, post-nuclear medieval survival, hazard glow, retrofuture decay, textless sacred symbols. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'rusted vault geometry; post-nuclear medieval survival; hazard glow; retrofuture decay; textless sacred symbols; denoised grime',
     },
@@ -210,7 +210,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean dark fantasy illustration with graphic void design, controlled cosmic texture, and no tentacle-cliche overload.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cosmic Chapel Horror as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Cosmic horror folded into medieval chapel language: void geometry, warped arches, starless halos, impossible relics, and religious scale pressure. Carry it through void chapel geometry, non-Euclidean arches, starless halos, bone and violet palette, cosmic devotional dread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'void chapel geometry; non-Euclidean arches; starless halos; bone and violet palette; cosmic devotional dread; clean black design',
     },
@@ -245,7 +245,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Stylized biomechanical fantasy illustration, rich but denoised, non-photoreal, no explicit gore.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Biomechanical Reliquary as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Biomechanical medieval reliquary style with tendon cables, black iron, bone housings, cathedral machinery, and organic-machine dread kept non-graphic. Carry it through tendon cables, bone housings, black iron reliquary, cathedral machinery, organic-machine silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'tendon cables; bone housings; black iron reliquary; cathedral machinery; organic-machine silhouettes; non-graphic body horror',
     },
@@ -281,7 +281,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean stylized apocalyptic fantasy illustration with medium detail, denoised grit, and non-graphic horror restraint.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Future Torture Apocalypse as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Future-apocalyptic punishment-machine fantasy with restraint architecture, rusted exoskeletons, ritual machinery, black scaffolds, and implied suffering without graphic torture detail. Carry it through future punishment machinery, rusted exoskeletons, ritual scaffold geometry, furnace slits, implied suffering. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'future punishment machinery; rusted exoskeletons; ritual scaffold geometry; furnace slits; implied suffering; no graphic torture detail',
     },
@@ -316,7 +316,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Stylized grimdark war illustration with broad value groups, readable silhouettes, controlled grime, and no real-world propaganda.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Endless War Gothic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Endless modern-war gothic where trench geometry, ruined cathedrals, drone silhouettes, gaslight, and medieval heraldic decay merge into permanent conflict without real-world flags. Carry it through trench cathedral, drone shadow, ruined heraldry, permanent war mood, mud-gray palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'trench cathedral; drone shadow; ruined heraldry; permanent war mood; mud-gray palette; no flags or logos; gothic tactical silhouettes',
     },

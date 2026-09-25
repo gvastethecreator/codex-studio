@@ -40,11 +40,7 @@ visualDna:
   key_features: >-
     Muted retrofuture palette; analogue grain; layered distance; softened far contours; quiet
     atmospheric separation.
-  creative_brief: >-
-    Apply this visual treatment to the requested content: Muted retrofuture palette; analogue grain;
-    layered distance; softened far contours; quiet atmospheric separation. Preserve its identity,
-    action, materials, composition and requested tone; introduce no persona, scene, franchise cue or
-    extra motif.
+  creative_brief: "Apply this visual treatment to the requested content: Muted retrofuture palette; analogue grain; layered distance; softened far contours; quiet atmospheric separation. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look

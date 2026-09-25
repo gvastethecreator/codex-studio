@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view as a workbench macro so the individual sticks remain countable.
   atmosphere_and_mood: Obsessive and proud, years of evenings visible in every course.
   rendering_and_quality: Macro photograph of a real matchstick model with countable sticks; no smooth carved wood.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Matchstick Glue-Up Model as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Matchstick construction: the subject built from thousands of glued wooden matchsticks laid in courses, with the dark heads used as a deliberate pattern. Carry it through glued matchstick courses, match heads as pattern, glue fillets at joints, warm raking lamp, countable sticks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: glued matchstick courses; match heads as pattern; glue fillets at joints; warm raking lamp; countable sticks
 avoidRules:
   - brand logo on parts

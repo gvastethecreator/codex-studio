@@ -27,7 +27,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean, precise diagram rendering with consistent line weights and no random marks.',
       key_features: 'copper traces; vias; component pads; illustrative only',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Circuit Board as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Circuit board: the subject laid out as copper traces, pads and components on a PCB. Carry it through copper traces, vias, component pads, illustrative only. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -54,7 +54,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean, precise diagram rendering with consistent line weights and no random marks.',
       key_features: 'nested contours; elevation tints; illustrative only',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Topographic Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Topographic map: the subject described by contour lines and elevation tints. Carry it through nested contours, elevation tints, illustrative only. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -81,7 +81,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean, precise diagram rendering with consistent line weights and no random marks.',
       key_features: 'square module grid; decorative finder squares; illustrative only',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies QR Code Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "QR-style pattern: square module grid inspired by QR codes, decorative and non-scannable. Carry it through square module grid, decorative finder squares, illustrative only. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -108,7 +108,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean, precise diagram rendering with consistent line weights and no random marks.',
       key_features: 'white lines on blue; dimension arrows; illustrative only',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blueprint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Blueprint: white technical line drawing on blue paper with dimension lines. Carry it through white lines on blue, dimension arrows, illustrative only. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -136,7 +136,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean, precise diagram rendering with consistent line weights and no random marks.',
       key_features: 'chalk strokes; slate; smudges; illustrative only',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chalkboard Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Chalkboard art: chalk drawing on a slate board with smudges and hand-drawn diagram marks. Carry it through chalk strokes, slate, smudges, illustrative only. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -165,7 +165,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, precise diagram rendering with consistent line weights and no random marks.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Transit Map Diagram as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Transit map: colored lines at 45° and 90° with station dots and interchange rings. Carry it through 45-degree routes, station dots, illustrative only. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: '45-degree routes; station dots; illustrative only',
     },
     ui: {
@@ -197,7 +197,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, precise diagram rendering with consistent line weights and no random marks.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Isotype Pictograms as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Isotype: rows of repeated flat pictograms showing quantities. Carry it through repeated pictograms, rows, illustrative only. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'repeated pictograms; rows; illustrative only',
     },
     ui: {
@@ -230,7 +230,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, precise diagram rendering with consistent line weights and no random marks.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Flowchart Nodes as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Flowchart: boxes, diamonds and arrows connecting steps. Carry it through boxes, diamonds, arrows, illustrative only. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'boxes; diamonds; arrows; illustrative only',
     },
     ui: {
@@ -263,7 +263,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, precise diagram rendering with consistent line weights and no random marks.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Star Chart as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Star chart: constellation lines, star dots and coordinate grid on dark blue. Carry it through constellation lines, coordinate grid, illustrative only. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'constellation lines; coordinate grid; illustrative only',
     },
     ui: {
@@ -295,7 +295,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, precise diagram rendering with consistent line weights and no random marks.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Weather Isobar Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Weather map: isobars, front symbols and pressure cells. Carry it through isobars, front symbols, illustrative only. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'isobars; front symbols; illustrative only',
     },
     ui: {
@@ -328,7 +328,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, precise diagram rendering with consistent line weights and no random marks.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sankey Flow Diagram as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sankey: flowing bands of varying width splitting and merging. Carry it through flowing bands, splits and merges, illustrative only. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'flowing bands; splits and merges; illustrative only',
     },
     ui: {
@@ -361,7 +361,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, precise diagram rendering with consistent line weights and no random marks.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Genealogy Tree as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Genealogy tree: branching lineage with portrait medallions. Carry it through branching lineage, medallions, illustrative only. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'branching lineage; medallions; illustrative only',
     },
     ui: {
@@ -395,7 +395,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, precise diagram rendering with consistent line weights and no random marks.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Nautical Chart as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Nautical chart: coastlines, depth soundings as dots, compass roses and rhumb lines. Carry it through compass roses, rhumb lines, illustrative only. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'compass roses; rhumb lines; illustrative only',
     },
     ui: {
@@ -428,7 +428,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, precise diagram rendering with consistent line weights and no random marks.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mind Map Web as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Mind map: a central node with radiating branches and doodle icons. Carry it through central node, radiating branches, illustrative only. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'central node; radiating branches; illustrative only',
     },
     ui: {
@@ -460,7 +460,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, precise diagram rendering with consistent line weights and no random marks.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Orbital Diagram as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Orbital diagram: concentric ellipses, bodies and trajectory arcs. Carry it through concentric ellipses, trajectories, illustrative only. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'concentric ellipses; trajectories; illustrative only',
     },
     ui: {
@@ -494,7 +494,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, precise diagram rendering with consistent line weights and no random marks.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Treasure Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Treasure map: hand-drawn parchment map with dotted paths, X marks and sea monsters. Carry it through dotted path, X mark, aged parchment, illustrative only. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'dotted path; X mark; aged parchment; illustrative only',
     },
     ui: {
@@ -527,7 +527,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, precise diagram rendering with consistent line weights and no random marks.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wiring Schematic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Wiring schematic: symbols for resistors, switches and nodes connected by right-angle lines. Carry it through schematic symbols, right-angle wires, illustrative only. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'schematic symbols; right-angle wires; illustrative only',
     },
     ui: {
@@ -557,7 +557,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, precise diagram rendering with consistent line weights and no random marks.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Heatmap Grid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Heatmap: grid cells colored from cool to hot values. Carry it through cool-to-hot grid cells, illustrative only. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'cool-to-hot grid cells; illustrative only',
     },
     ui: {
@@ -588,7 +588,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, precise diagram rendering with consistent line weights and no random marks.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Radial Sunburst Chart as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sunburst chart: concentric rings of segments radiating from a center. Carry it through concentric segment rings, illustrative only. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'concentric segment rings; illustrative only',
     },
     ui: {
@@ -622,7 +622,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, precise diagram rendering with consistent line weights and no random marks.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cutaway Isometric Diagram as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Isometric cutaway: the subject shown in isometric with sections removed to reveal inner parts and callout marks. Carry it through isometric cutaway, callout lines, illustrative only. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'isometric cutaway; callout lines; illustrative only',
     },
     ui: {

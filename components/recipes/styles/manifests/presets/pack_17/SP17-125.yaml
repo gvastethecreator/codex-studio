@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Stage-like composition with a main caricatured figure or group and receding secondary grotesques.
   atmosphere_and_mood: Mocking, grotesque, darkly funny, and sharp.
   rendering_and_quality: 'Refined old print quality: exaggerated but controlled drawing, readable groups, no digital noise.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grotesque Satire Etching as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Exaggerated satirical etching: caricatured grotesque faces and bodies, lively bitten line, dark aquatint shadows, and crowded but readable figure groups. Carry it through caricatured grotesque figures, lively etched line, dark aquatint shadow, theatrical satire, hand-tint option. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: caricatured grotesque figures; lively etched line; dark aquatint shadow; theatrical satire; hand-tint option
 avoidRules:
   - realistic flattering portraits

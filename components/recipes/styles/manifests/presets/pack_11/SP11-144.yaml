@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Projected plan and elevation, laid out as a real sheet of this drawing type.
   atmosphere_and_mood: Geometric, ancient, precise and austere, from careful, purposeful drafting.
   rendering_and_quality: Precise technical drafting with consistent line weights and believable conventions.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Masonry Stereotomy Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Stereotomy: the geometry of cutting stones for arches and vaults, drawn with projections, voussoirs and construction lines. Carry it through voussoirs, projections, construction lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: voussoirs; projections; construction lines
 avoidRules:
   - readable text

@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Believable instrument output with correct signal logic, artifacts and resolution for that sensor.',
       key_features: 'dual-energy colors; orange organics; blue metal; overlapping contents',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dual-Energy Baggage X-Ray as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Security baggage X-ray: dual-energy scan where organic materials read orange, metals blue and mixed materials green. Carry it through dual-energy colors, orange organics, blue metal, overlapping contents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -58,7 +58,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Believable instrument output with correct signal logic, artifacts and resolution for that sensor.',
       key_features: 'white-hot greyscale; red hottest spots; smoke transparency',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies White-Hot Thermal Imager as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "White-hot thermal imager: greyscale heat image where warm bodies glow white through smoke and darkness, hottest spots flagged red. Carry it through white-hot greyscale, red hottest spots, smoke transparency. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -88,7 +88,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Believable instrument output with correct signal logic, artifacts and resolution for that sensor.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neutron Radiography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Neutron radiography: an X-ray-like image with reversed logic, where metal turns see-through and organic or wet materials show dark. Carry it through metal transparent, organics dark, sealed contents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'metal transparent; organics dark; sealed contents',
     },
     ui: {
@@ -122,7 +122,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Believable instrument output with correct signal logic, artifacts and resolution for that sensor.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Terahertz Package Scan as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Terahertz scan: a soft, blurry, low-resolution image that sees through paper, cloth and plastic but not metal or water. Carry it through sees through cloth, bright metal, soft blur. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'sees through cloth; bright metal; soft blur',
     },
     ui: {
@@ -155,7 +155,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Believable instrument output with correct signal logic, artifacts and resolution for that sensor.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Event Camera Sparse Pixels as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Event camera: only changing pixels appear, as scattered colored dots along moving edges on a black or grey field. Carry it through sparse events, moving edges only, red and blue dots. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'sparse events; moving edges only; red and blue dots',
     },
     ui: {
@@ -189,7 +189,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Believable instrument output with correct signal logic, artifacts and resolution for that sensor.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Audio Spectrogram Imaging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Audio spectrogram: time runs left to right and frequency bottom to top, with sound energy as glowing color. Carry it through harmonic stripes, time-frequency, energy colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'harmonic stripes; time-frequency; energy colors',
     },
     ui: {
@@ -223,7 +223,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Believable instrument output with correct signal logic, artifacts and resolution for that sensor.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Infrared Reflectography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Infrared reflectography: a grey image of a painting that shows the hidden underdrawing and changed mind beneath the paint. Carry it through underdrawing, corrections, grey paint layer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'underdrawing; corrections; grey paint layer',
     },
     ui: {
@@ -260,7 +260,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Believable instrument output with correct signal logic, artifacts and resolution for that sensor.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Multispectral Palimpsest Imaging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Multispectral palimpsest: false-color processed manuscript where scraped-off earlier writing and drawings show in red over the later text. Carry it through recovered red layer, grey later text, parchment. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'recovered red layer; grey later text; parchment',
     },
     ui: {
@@ -294,7 +294,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Believable instrument output with correct signal logic, artifacts and resolution for that sensor.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Acoustic Camera Overlay as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Acoustic camera: an ordinary photo overlaid with colored sound hotspots showing where noise comes from. Carry it through sound hotspots, photo overlay. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'sound hotspots; photo overlay',
     },
     ui: {
@@ -332,7 +332,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Believable instrument output with correct signal logic, artifacts and resolution for that sensor.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies MR Tractography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tractography: bundles of fiber pathways color-coded by direction, glowing like silk threads. Carry it through direction-coded streamlines, fiber bundles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'direction-coded streamlines; fiber bundles',
     },
     ui: {
@@ -364,7 +364,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Believable instrument output with correct signal logic, artifacts and resolution for that sensor.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies EBSD Crystal Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "EBSD map: metal grains shown as a mosaic of flat colored patches by crystal orientation. Carry it through grain mosaic, orientation colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'grain mosaic; orientation colors',
     },
     ui: {
@@ -400,7 +400,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Believable instrument output with correct signal logic, artifacts and resolution for that sensor.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Atomic Force Microscope Topography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "AFM topography: a nanoscale surface shown as a 3D height map with a gold-brown color ramp. Carry it through height map, scan lines, gold ramp. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'height map; scan lines; gold ramp',
     },
     ui: {
@@ -430,7 +430,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Believable instrument output with correct signal logic, artifacts and resolution for that sensor.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fluoroscopy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fluoroscopy: live X-ray video frame, grainy greyscale with dark bones and a circular field. Carry it through circular field, grainy live X-ray. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'circular field; grainy live X-ray',
     },
     ui: {
@@ -462,7 +462,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Believable instrument output with correct signal logic, artifacts and resolution for that sensor.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Water Vapor Satellite Imagery as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Water vapor satellite image: swirling moisture in the upper atmosphere shown in grey or blue-orange false color. Carry it through vapor swirls, dry slots, storms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'vapor swirls; dry slots; storms',
     },
     ui: {
@@ -496,7 +496,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Believable instrument output with correct signal logic, artifacts and resolution for that sensor.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mass Spectrometry Imaging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Mass spectrometry imaging: pixelated maps of where molecules sit in a tissue slice, hot colors on black. Carry it through pixelated molecule map, hot colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'pixelated molecule map; hot colors',
     },
     ui: {
@@ -528,7 +528,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Believable instrument output with correct signal logic, artifacts and resolution for that sensor.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Streak Camera Image as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Streak camera: one line of space smeared across time into a glowing streak pattern. Carry it through space-time streak. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'space-time streak',
     },
     ui: {
@@ -560,7 +560,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Believable instrument output with correct signal logic, artifacts and resolution for that sensor.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Endoscopy Capsule View as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Capsule endoscopy: a fisheye camera view with ring light inside a wet tunnel, pink and glossy. Carry it through fisheye, ring light, wet tunnel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'fisheye; ring light; wet tunnel',
     },
     ui: {
@@ -590,7 +590,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Believable instrument output with correct signal logic, artifacts and resolution for that sensor.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Radio Telescope Intensity Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Radio telescope map: blurry false-color radio emission with lobes and jets. Carry it through radio lobes, jets, contours. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'radio lobes; jets; contours',
     },
     ui: {
@@ -621,7 +621,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Believable instrument output with correct signal logic, artifacts and resolution for that sensor.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Solar H-Alpha Telescope as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "H-alpha solar telescope: the sun in deep red-orange with prominences and filaments. Carry it through prominences, filaments, red disk. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'prominences; filaments; red disk',
     },
     ui: {
@@ -653,7 +653,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Believable instrument output with correct signal logic, artifacts and resolution for that sensor.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies All-Sky Meteor Camera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "All-sky camera: a circular fisheye night sky with meteor streaks, horizon ring and trees. Carry it through circular fisheye, meteor streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'circular fisheye; meteor streaks',
     },
     ui: {

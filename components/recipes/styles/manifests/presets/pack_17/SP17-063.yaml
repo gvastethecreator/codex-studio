@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Portrait zine card where a creature or fighter fills the panel against a flat bone-pink or mint field, with simple support marks and rough border rhythm.
   atmosphere_and_mood: Oddly pretty, grim, rotten-sweet, underground, and handmade.
   rendering_and_quality: Pastel-toxic risograph with black xerox contour, faded teal offset, purple shadow blocks, crude stipple, and denoised but handmade texture.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bone Pink Catacomb Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Bone-pink catacomb riso style with bat-eared skull beasts, awkward catacomb warriors, black claw shapes, pastel-toxic panels, and crude dot shadows. Carry it through bone pink riso, bat-eared skull beasts, awkward catacomb figures, teal offset, black claw shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: bone pink riso; bat-eared skull beasts; awkward catacomb figures; teal offset; black claw shapes; crude dot-shadow zine texture
 avoidRules:
   - sarcophagus-object hero

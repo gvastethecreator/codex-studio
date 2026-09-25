@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; frontal elevation, symmetry exaggerated then broken by one playful element, top of the building like a furniture crown.
   atmosphere_and_mood: Ironic, colourful and theatrical, history quoted with a wink.
   rendering_and_quality: Bright crisp photograph with flat colour fields and sharp outlines, no weathering or readable signs.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Postmodern Pastiche Facade as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Postmodern architecture of the 1980s: classical elements used as oversized flat graphics — broken pediments, giant keystones, cut-out arches, stubby columns — on stucco boxes. Carry it through oversized broken pediment, giant flat keystone, cut-out arches, pastel stripe banding, stubby exaggerated columns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: oversized broken pediment; giant flat keystone; cut-out arches; pastel stripe banding; stubby exaggerated columns
 avoidRules:
   - golden-hour hero facade formula

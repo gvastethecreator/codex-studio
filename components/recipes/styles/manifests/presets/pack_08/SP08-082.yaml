@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Full-figure, stark framing against plain or brutal architecture, keeping the full outfit silhouette and fit readable at card size.
   atmosphere_and_mood: Intellectual, severe, melancholic and poetic, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Matte, textured finish with deep blacks, with believable fabric weight, seams and fit detail.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Deconstructed Avant-Garde as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Deconstructed avant-garde fashion: garments that look taken apart and reassembled — raw hems, exposed seams, asymmetric layers and voluminous black. Carry it through raw hems and exposed seams, asymmetric black layering, displaced volumes, stark side light, monochrome. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: raw hems and exposed seams; asymmetric black layering; displaced volumes; stark side light; monochrome
 avoidRules:
   - brand logo

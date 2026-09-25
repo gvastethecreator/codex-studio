@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Quiet and sculptural, form revealed by where things touch.
   rendering_and_quality: Clean AO pass without directional shadows or color.
   key_features: contact darkness only; white matte surfaces; soft crevice gradients; no light direction; geometry-driven shading
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ambient Occlusion Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Ambient occlusion pass: a render where only contact darkness shows — corners, creases and touching surfaces darken while everything else stays near white. Carry it through contact darkness only, white matte surfaces, soft crevice gradients, no light direction, geometry-driven shading. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the geometry
   - adding a new environment

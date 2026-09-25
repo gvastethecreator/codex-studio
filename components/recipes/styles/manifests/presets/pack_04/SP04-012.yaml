@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Vast, meditative and enigmatic, a silent dream of another world.
   rendering_and_quality: Intricate but breathable detail, fine line and stipple only; no heavy black shadows.
   key_features: fine even contour; stipple dot shading; dusty pastel matte color; organic-futurist forms; tiny figures in vast space
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dreamline Stipple Sci-Fi Comic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Dreamline European science-fiction comic: fine even contour with stipple dot shading and flat matte pastel color over vast airy alien landscapes. Carry it through fine even contour, stipple dot shading, dusty pastel matte color, organic-futurist forms, tiny figures in vast space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - added panels or gutters
   - speech balloons

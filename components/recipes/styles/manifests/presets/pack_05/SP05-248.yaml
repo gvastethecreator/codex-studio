@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Curious, grounded and companionable, the pleasure of understanding how things work.
   rendering_and_quality: Crisp pen detail on the focal form and simpler blocks beyond it; every mark explains structure rather than decorating.
   key_features: fine brown pen lineart; specimen-plate clarity; earthy moss and ochre fills; stippled organic texture; warm reflected bounce
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Naturalist Sketchbook Anime Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Manga-derived cel painting with a naturalist's eye: fine brown pen lineart describing joints, scales, seams and grain over flat earthy fills with cutaway-diagram clarity. Carry it through fine brown pen lineart, specimen-plate clarity, earthy moss and ochre fills, stippled organic texture, warm reflected bounce. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway

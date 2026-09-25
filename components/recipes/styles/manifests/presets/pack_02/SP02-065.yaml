@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Solemn and reverent, a quiet room filled with visible light.
   rendering_and_quality: Film-set volumetrics with smooth haze and no banding.
   key_features: hard source through windows; hazed interior; parallel beams; mullion patterns on the floor; lifted shadows
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hazed Window Shafts as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hazed window shafts: large film lights pushed through windows into a room filled with haze, so the light becomes solid beams. Carry it through hard source through windows, hazed interior, parallel beams, mullion patterns on the floor, lifted shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested location
   - franchise likeness

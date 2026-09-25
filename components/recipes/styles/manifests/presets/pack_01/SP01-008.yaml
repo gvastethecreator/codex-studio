@@ -20,7 +20,7 @@ visualDna:
   camera_and_composition: Profile placed to one side, the second image aligned so its focal point sits inside the head, clean negative space around.
   atmosphere_and_mood: Dreamlike, reflective, and symbolic.
   rendering_and_quality: Seamless photographic blend without cut-out edges or collage seams.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Double Exposure Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "In-camera double exposure portrait: a clean profile silhouette filled with a second image — landscape, texture, or scene — blended through the bright areas of the first. Carry it through profile as container, second image inside the silhouette, white negative space, seamless blend, symbolic pairing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: profile as container; second image inside the silhouette; white negative space; seamless blend; symbolic pairing
 avoidRules:
   - generic stock-photo face

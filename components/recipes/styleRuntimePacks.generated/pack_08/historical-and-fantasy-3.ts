@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'pleated white linen; broad beaded usekh collar; gold cuffs; kohl eyes; hieratic pose',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ancient Egyptian as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ancient Egyptian regalia: pleated white linen, broad beaded collars, gold armbands, kohl-lined eyes and ceremonial wigs or headdresses. Carry it through pleated white linen, broad beaded usekh collar, gold cuffs, kohl eyes, hieratic pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -55,7 +55,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'canvas trousers and suspenders; long duster; calico and bonnet; worn leather boots; dusty light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Frontier Workwear as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Frontier workwear: nineteenth-century American frontier clothing — canvas trousers, suspenders, flannel shirts, calico dresses, dusters and worn boots. Carry it through canvas trousers and suspenders, long duster, calico and bonnet, worn leather boots, dusty light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -82,7 +82,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'lacquered lamellar plates; silk lacing; crested kabuto; menpō mask; stoic presence',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Samurai Armor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ceremonial samurai armor: lacquered lamellar plates laced with silk cords, flared shoulder guards, a crested kabuto helmet and a menpō face mask. Carry it through lacquered lamellar plates, silk lacing, crested kabuto, menpō mask, stoic presence. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -110,7 +110,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'slashed puffed sleeves; stiff brocade bodice or doublet; ruff; jeweled girdle; court portrait light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Renaissance Royal as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sixteenth-century Renaissance court regalia: stiffened bodices, slashed and puffed sleeves, brocade, ruffs or square necklines and jeweled girdles. Carry it through slashed puffed sleeves, stiff brocade bodice or doublet, ruff, jeweled girdle, court portrait light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -137,7 +137,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'high-collared black crape; bustle and veil; jet jewelry; matte blacks; still solemnity',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Victorian Mourning as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Victorian mourning dress: head-to-toe black crape, high collars, bustles, veils and jet jewelry — grief made into strict ceremony. Carry it through high-collared black crape, bustle and veil, jet jewelry, matte blacks, still solemnity. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -166,7 +166,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'full circle skirt and petticoat; twinset and pearls; gloves; technicolor pastels; advertising polish',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vintage 1950s as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "1950s domestic-pop fashion: fitted bodices, full circle skirts over petticoats, cardigans, pearls, gloves and neat set hair, or boxy suits with fedoras. Carry it through full circle skirt and petticoat, twinset and pearls, gloves, technicolor pastels, advertising polish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -194,7 +194,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'dropped-waist beaded shift; swinging fringe; long pearls; feathered headband; speakeasy glow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Roaring 20s (Flapper) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "1920s flapper eveningwear: dropped-waist beaded dresses, fringe, long pearls, cloche or headband and T-strap heels; men in slick tuxedos. Carry it through dropped-waist beaded shift, swinging fringe, long pearls, feathered headband, speakeasy glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -222,7 +222,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'draped toga or stola; purple border; laurel wreath; bronze fibula; statuesque drapery',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Roman Ceremonial Regalia as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Roman ceremonial regalia: draped togas with colored borders, stolas and pallas, laurel wreaths, fibulae and military cuirasses with red cloaks. Carry it through draped toga or stola, purple border, laurel wreath, bronze fibula, statuesque drapery. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -250,7 +250,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'halter jumpsuit and flares; sequins and lamé; wide lapels; platforms; mirror-ball sparkle',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Disco (70s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "1970s disco fashion: slinky jersey wrap dresses, halter jumpsuits, sequined tops, wide-lapel shirts and flared trousers made to catch the mirror ball. Carry it through halter jumpsuit and flares, sequins and lamé, wide lapels, platforms, mirror-ball sparkle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -277,7 +277,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'panniered silk gown; powdered pouf; embroidered coat and breeches; lace engageantes; chandelier glow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies French Revolution as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Late eighteenth-century French court: rococo excess and revolutionary change — panniered silk gowns, powdered wigs, embroidered coats, or tricolor sashes and simple sans-culottes. Carry it through panniered silk gown, powdered pouf, embroidered coat and breeches, lace engageantes, chandelier glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -306,7 +306,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Rich, glowing, detailed finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Byzantine Court as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Byzantine court dress: stiff, jewel-encrusted silk dalmatics and loros sashes, pearl pendilia crowns and gold-embroidered cloaks. Carry it through jeweled loros sash, silk dalmatic, pearl pendilia crown, gold tablion, frontal icon pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'jeweled loros sash; silk dalmatic; pearl pendilia crown; gold tablion; frontal icon pose',
     },
@@ -340,7 +340,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Delicate, soft, luminous finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Heian Court Layers as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Heian court dress: many layered unlined silk robes whose sleeve edges show graded seasonal color combinations, with very long loose hair. Carry it through many layered silk robes, graded color edges, floor-length loose hair, hiōgi fan, kneeling spread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'many layered silk robes; graded color edges; floor-length loose hair; hiōgi fan; kneeling spread',
     },
@@ -373,7 +373,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Soft, fresh, detailed finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Regency Empire Line as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Regency dress: high-waisted empire-line muslin gowns, spencer jackets, bonnets and long gloves; men in tailcoats, cravats, waistcoats and tall boots. Carry it through empire-waist muslin gown, spencer and bonnet, tailcoat and cravat, Hessian boots, soft window light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'empire-waist muslin gown; spencer and bonnet; tailcoat and cravat; Hessian boots; soft window light',
     },
@@ -408,7 +408,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Rich, patterned, detailed finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ottoman Court Kaftan as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ottoman court dress: layered silk and velvet kaftans with large tulip, carnation and çintemani patterns, sashes, and tall headdresses or turbans. Carry it through layered patterned kaftans, tulip and çintemani motifs, hanging sleeves, wide sash, turban. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'layered patterned kaftans; tulip and çintemani motifs; hanging sleeves; wide sash; turban',
     },
@@ -445,7 +445,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Textured, natural finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Medieval Peasant Workwear as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Medieval working dress: homespun wool tunics and kirtles, linen coifs and hoods, belted aprons, patched hose and turnshoes — clothes made to last. Carry it through homespun wool tunic or kirtle, linen coif, hood with liripipe, patched hose, plant-dyed palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'homespun wool tunic or kirtle; linen coif; hood with liripipe; patched hose; plant-dyed palette',
     },
@@ -483,7 +483,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, slightly faded vintage finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 1940s Wartime Utility as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "1940s wartime utility clothing: austere tailored suits with padded shoulders, knee-length A-line skirts, headscarves, overalls, and make-do-and-mend details. Carry it through padded-shoulder utility suit, headscarf and victory rolls, work overalls, make-do-and-mend, muted palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'padded-shoulder utility suit; headscarf and victory rolls; work overalls; make-do-and-mend; muted palette',
     },
@@ -517,7 +517,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Soft, luminous, vintage finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Belle Époque as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Belle Époque fashion: S-bend corseted silhouettes, lace high collars, trumpet skirts, enormous plumed hats and parasols; men in frock coats and top hats. Carry it through S-bend silhouette, lace high collar, enormous plumed hat, parasol, hazy summer light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'S-bend silhouette; lace high collar; enormous plumed hat; parasol; hazy summer light',
     },
@@ -551,7 +551,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Luminous, colorful finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tang Dynasty Hanfu as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tang dynasty dress: high-waisted flowing skirts tied above the chest, short jackets with wide sleeves, long pibo shawls and elaborate high hairstyles with ornaments. Carry it through high-waisted ruqun skirt, long gauze pibo shawl, wide sleeves, high chignon with gold pins, opulent color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'high-waisted ruqun skirt; long gauze pibo shawl; wide sleeves; high chignon with gold pins; opulent color',
     },
@@ -585,7 +585,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Luminous, finely detailed finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mughal Court Jama as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Mughal court dress: flared jama robes tied at the side, patka sashes, fitted pyjamas, jeweled turbans and fine muslin veils with gold borders. Carry it through flared jama, embroidered patka sash, jeweled turban with sarpech, fine gold-bordered muslin, jali light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'flared jama; embroidered patka sash; jeweled turban with sarpech; fine gold-bordered muslin; jali light',
     },
@@ -618,7 +618,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'apron dress with oval brooches; fur-trimmed cloak; tablet-woven bands; leg wraps; cold northern light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Norse Seafaring Regalia as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Norse seafaring dress: layered wool tunics and apron dresses with oval brooches, fur-trimmed cloaks, woven bands and leg wraps. Carry it through apron dress with oval brooches, fur-trimmed cloak, tablet-woven bands, leg wraps, cold northern light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

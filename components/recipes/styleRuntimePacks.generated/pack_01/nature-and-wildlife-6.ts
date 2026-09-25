@@ -30,7 +30,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'ten-zone black and white; f/64 front-to-back sharpness; red-filter dark skies; raking dramatic light; silver print',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Zone System Landscape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Zone System black-and-white landscape: a large-format view camera at f/64, exposure placed and development controlled so the print runs from pure white to deep black with every zone in between. Carry it through ten-zone black and white, f/64 front-to-back sharpness, red-filter dark skies, raking dramatic light, silver print. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -58,7 +58,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         '1:1 magnification; paper-thin focus on the eyes; diffused macro flash; dew and scale detail; creamy background',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Macro Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Field macro photography: a 100 mm macro lens at 1:1 in nature, with a paper-thin plane of focus and a soft diffused flash revealing a tiny world. Carry it through 1:1 magnification, paper-thin focus on the eyes, diffused macro flash, dew and scale detail, creamy background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -86,7 +86,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         '600 mm telephoto; eye-level with the animal; low-sun rim light; blurred foreground; natural behavior',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wildlife Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Wildlife field photography: a 500–600 mm lens from a hide or low position, patient observation of a wild animal behaving naturally in its habitat. Carry it through 600 mm telephoto, eye-level with the animal, low-sun rim light, blurred foreground, natural behavior. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -114,7 +114,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'telescope deep-sky view; emission reds and oxygen teals; dust pillars; pinpoint stars; black background',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Astrophotography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Deep-sky astrophotography: a tracked telescope and hours of stacked exposures revealing nebulae, galaxies, comets and planets against black space. Carry it through telescope deep-sky view, emission reds and oxygen teals, dust pillars, pinpoint stars, black background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -141,7 +141,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'sun rays from the surface; caustic ripples; blue distance falloff; weightless subject; dome wide angle',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Underwater as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Underwater photography: a wide-angle lens in a dome housing in clear water, with sun rays, caustics and blue-green depth shaping everything. Carry it through sun rays from the surface, caustic ripples, blue distance falloff, weightless subject, dome wide angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -167,7 +167,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'animal eye level; sharp nearest eye; soft window light; personality moment; warm friendly color',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pet Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pet photography: companion animals photographed at their own eye level, with a fast lens and patient timing that capture personality. Carry it through animal eye level, sharp nearest eye, soft window light, personality moment, warm friendly color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -196,7 +196,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Tack-sharp eye and feathers against smooth background; no motion blur on the bird.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bird-in-Flight Telephoto as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bird-in-flight photography: a 600 mm lens tracking a flying bird at 1/4000 s, wings frozen at full extension. Carry it through wings fully spread, 1/4000 s freeze, space ahead of the bird, backlit flight feathers, clean background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'wings fully spread; 1/4000 s freeze; space ahead of the bird; backlit flight feathers; clean background',
     },
@@ -228,7 +228,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Real remote-camera look with some noise; no studio polish or posed animal.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Camera-Trap Night Flash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Camera-trap photography: a remote wide-angle camera low to the ground, fired by an animal crossing its beam at night with a flash close by. Carry it through ground-level wide angle, close off-camera night flash, eye-shine, black background, unaware animal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'ground-level wide angle; close off-camera night flash; eye-shine; black background; unaware animal',
     },
@@ -260,7 +260,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Meditative and calm, time made visible as silence.',
       rendering_and_quality: 'Clean long exposure without noise; no frozen splashing waves.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Long-Exposure Seascape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Long-exposure seascape: a tripod and dense ND filter stretching the exposure to thirty seconds or more, turning moving sea into mist and silk around still rocks. Carry it through silky misted water, streaked clouds, sharp still rocks, low tripod foreground, pastel dusk. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'silky misted water; streaked clouds; sharp still rocks; low tripod foreground; pastel dusk',
     },
@@ -293,7 +293,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Awestruck and quiet, a small earth under an enormous sky.',
       rendering_and_quality: 'Clean high-ISO exposure, pinpoint stars, no painted galaxies.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Milky Way Nightscape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Milky Way nightscape: a wide fast lens on a tripod capturing the galactic core arching over a landscape subject, stars as points, not trails. Carry it through Milky Way arch over land, pinpoint stars, landscape in lower third, faint airglow, wide fast lens. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'Milky Way arch over land; pinpoint stars; landscape in lower third; faint airglow; wide fast lens',
     },
@@ -326,7 +326,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Ominous and awe-struck, a wall of weather advancing slowly.',
       rendering_and_quality: 'Natural contrast with detailed cloud structure; no HDR halos.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Supercell Storm Landscape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Storm photography: a wide lens capturing the structure of a severe storm — rotating supercells, shelf clouds and walls of rain or dust — towering over the land. Carry it through rotating supercell or shelf cloud, low horizon, light under the cloud base, small scale marker, rain or dust walls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'rotating supercell or shelf cloud; low horizon; light under the cloud base; small scale marker; rain or dust walls',
     },
@@ -356,7 +356,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Contemplative and hushed, the quiet interior of the woods.',
       rendering_and_quality: 'Polarized, glare-free overcast color; no grand vistas or sunbursts.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Intimate Forest Landscape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Intimate forest landscape: a medium telephoto picking a small, quiet composition out of woodland under soft overcast light, with no sky in the frame. Carry it through no sky, overcast polarized color, trunk and root patterns, one quiet focal point, moss and wet texture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'no sky; overcast polarized color; trunk and root patterns; one quiet focal point; moss and wet texture',
     },
@@ -390,7 +390,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Delicate and radiant, fragile living structures lit from within.',
       rendering_and_quality: 'Clean highlights without clipping in the glowing tissue.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Backlit Botanical as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Backlit botanical photography: petals, leaves and seeds shot against the sun or a bright source so their veins and translucency glow. Carry it through light through leaves and petals, glowing veins, rim-lit hairs, dark background, shallow bokeh. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'light through leaves and petals; glowing veins; rim-lit hairs; dark background; shallow bokeh',
     },
@@ -419,7 +419,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Minimal and serene, quiet life almost erased by winter.',
       rendering_and_quality: 'Bright exposure without grey mud or blue cast in the whites.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies High-Key Snow Wildlife as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "High-key snow wildlife: an animal in snow or fog exposed two stops bright so the world goes almost pure white and only eyes, nose or dark feathers remain. Carry it through overexposed white field, dark eyes and nose as accents, huge negative space, flat snow light, minimal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'overexposed white field; dark eyes and nose as accents; huge negative space; flat snow light; minimal',
     },
@@ -449,7 +449,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean noiseless blacks with the thin rim highlights fully protected from clipping.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Low-Key Rim-Lit Wildlife as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Low-key rim-lit wildlife: an animal emerging from deep shadow, exposed for a thin backlit rim so most of the frame stays black. Carry it through black background, thin rim light on fur, breath or dust glowing, partial reveal, telephoto. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'black background; thin rim light on fur; breath or dust glowing; partial reveal; telephoto',
     },
@@ -483,7 +483,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Precise and scientific, wonder through exhaustive clarity.',
       rendering_and_quality: 'Museum-plate clarity with no blurred planes and no stacking halos.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Focus-Stacked Specimen as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Focus-stacked specimen photography: dozens of macro frames merged so a small specimen is sharp from front to back on a clean white or black background. Carry it through front-to-back sharpness, clean white or black ground, diffused dome light, centered specimen, scientific view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'front-to-back sharpness; clean white or black ground; diffused dome light; centered specimen; scientific view',
     },
@@ -516,7 +516,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Meditative and mysterious, the world made into its own abstraction.',
       rendering_and_quality: 'Sharp real texture; not a digital generated pattern.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Nature Abstract Pattern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Nature abstract photography: a tight crop on a natural surface — ice, sand, bark, rock, water — until it reads as pure pattern and color. Carry it through edge-to-edge natural pattern, no horizon or scale, raking light on relief, limited material palette, tight crop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'edge-to-edge natural pattern; no horizon or scale; raking light on relief; limited material palette; tight crop',
     },
@@ -545,7 +545,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Natural wide-angle perspective with mild edge stretch; not telephoto compression.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Animal-in-Habitat Wide Angle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Wide-angle wildlife: a remote-triggered or very close wide lens placing the animal large in the foreground with its whole habitat stretching behind. Carry it through animal large and close, habitat stretching behind, low wide angle, deep focus, visible sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'animal large and close; habitat stretching behind; low wide angle; deep focus; visible sky',
     },
@@ -575,7 +575,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Smooth fog gradients without banding, and no busy detail competing with the anchor.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Minimalist Fog Landscape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Minimalist fog landscape: a single simple element isolated in thick fog, with most of the frame left as empty pale space. Carry it through one element in fog, vast negative space, low-contrast pale palette, dissolving distance, off-center anchor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'one element in fog; vast negative space; low-contrast pale palette; dissolving distance; off-center anchor',
     },
@@ -606,7 +606,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean black water with no backscatter; not the sunlit blue of daytime underwater.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blackwater Night Dive as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Blackwater photography: open ocean at night, with tiny drifting larvae and gelatinous creatures lit by a narrow strobe against total black. Carry it through total black water, snooted strobe, translucent larvae, iridescent accents, floating macro subject. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'total black water; snooted strobe; translucent larvae; iridescent accents; floating macro subject',
     },

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; shapes nest inside each other from light to dark.
   atmosphere_and_mood: Warm, crafted and rich, color built patiently layer by layer.
   rendering_and_quality: Stacked flat color layers with visible edge halos and speckle; no gradients, no black key line drawn separately.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Reduction Linocut as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Reduction linocut: one linoleum block carved and printed again and again, each pass removing more and printing a darker color over the last. Carry it through one block printed in successive colors, light-to-dark stacked layers, edge halos of earlier colors, speckled ink, nested shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: one block printed in successive colors; light-to-dark stacked layers; edge halos of earlier colors; speckled ink; nested shapes
 avoidRules:
   - photo

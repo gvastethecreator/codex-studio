@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Lonely and electric, a late hour humming with color.
   rendering_and_quality: Clean saturated practicals without readable signage; not the rainy-street cliché.
   key_features: neon tubes as the only light; colored practical key and edge; haze; deep blacks; unreadable signs
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Practical Noir as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Neon practical noir: interiors lit only by neon tubes and signs rigged in frame, shot wide open in haze with a cool film grade. Carry it through neon tubes as the only light, colored practical key and edge, haze, deep blacks, unreadable signs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested location
   - franchise likeness

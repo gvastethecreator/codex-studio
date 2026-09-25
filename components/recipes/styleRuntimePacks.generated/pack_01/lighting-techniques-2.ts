@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'sun near horizon; long raking shadows; amber rim light; cool lavender shadows; glowing particles',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Golden Hour as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Golden-hour photographic light: the sun within ten degrees of the horizon, long warm raking beams, and air that glows amber. Carry it through sun near horizon, long raking shadows, amber rim light, cool lavender shadows, glowing particles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'cobalt sky ambient; shadowless soft light; warm practical accents; blue reflections; quiet twilight',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blue Hour as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Blue-hour light: the sun below the horizon, a luminous cobalt sky acting as a giant soft source, with warm artificial lights just switching on. Carry it through cobalt sky ambient, shadowless soft light, warm practical accents, blue reflections, quiet twilight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -86,7 +86,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'on-axis flash; hard drop shadow behind; blown speculars; dark falloff background; snapshot rawness',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hard Flash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Direct on-camera hard flash: a harsh frontal burst that flattens faces, blows highlights, and throws a crisp black shadow onto whatever is behind. Carry it through on-axis flash, hard drop shadow behind, blown speculars, dark falloff background, snapshot rawness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -112,7 +112,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'two-color practical light; magenta and teal split; wet reflections; smoke; deep black fill',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Noir as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Neon noir light: two saturated colored practical sources — typically magenta and teal — cutting through dark, wet, smoky air. Carry it through two-color practical light, magenta and teal split, wet reflections, smoke, deep black fill. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -140,7 +140,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'cheek light triangle; 45-degree high key; umber shadows; minimal fill; old-master chiaroscuro',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rembrandt Lighting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Rembrandt lighting: a single warm key high and to the side, leaving a small inverted triangle of light on the shadow cheek, with painterly chiaroscuro. Carry it through cheek light triangle, 45-degree high key, umber shadows, minimal fill, old-master chiaroscuro. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -165,7 +165,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         '90-degree side key; half lit half dark; vertical shadow line; no fill; grazing texture',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Split Lighting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Split lighting: a hard source at 90 degrees dividing the subject exactly in half — one side lit, one side in darkness. Carry it through 90-degree side key, half lit half dark, vertical shadow line, no fill, grazing texture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -193,7 +193,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'light behind subject; black shape; edge halo; bright background exposure; clean outline',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Silhouette (Backlit) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Backlit silhouette lighting: the light source behind the subject, exposure set for the bright background so the subject falls to a black shape. Carry it through light behind subject, black shape, edge halo, bright background exposure, clean outline. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -220,7 +220,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'high centered key; butterfly nose shadow; sculpted cheekbones; chin shadow; glamorous polish',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Butterfly Lighting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Butterfly lighting: a high frontal key centered above the lens that casts a small symmetrical shadow under the nose and sculpts cheekbones. Carry it through high centered key, butterfly nose shadow, sculpted cheekbones, chin shadow, glamorous polish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -246,7 +246,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality: 'Clean low-light exposure with rich blacks, no gray noise.',
       key_features: 'flame-only light; steep falloff; amber glow; velvety black; visible candle',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Candlelight as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Candlelight: small warm flames as the only source, falling off within an arm's length into velvety darkness. Carry it through flame-only light, steep falloff, amber glow, velvety black, visible candle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -272,7 +272,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'visible light shafts; haze; occluder pattern; dust motes; subject crossed by beams',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies God Rays (Volumetric) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Volumetric god rays: hard beams of light made visible by haze, dust or fog, crossing the scene in defined shafts. Carry it through visible light shafts, haze, occluder pattern, dust motes, subject crossed by beams. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -299,7 +299,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'living light sources; cyan-green glow; dark surroundings; speckled illumination; wet reflections',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bioluminescence as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bioluminescent light: living organisms glowing cyan, green or blue as the scene's only illumination in darkness. Carry it through living light sources, cyan-green glow, dark surroundings, speckled illumination, wet reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -326,7 +326,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'motion frozen mid-air; hard strobe; crisp droplets and debris; dark background; peak action',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Strobe Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Strobe freeze: an extremely short burst of light that freezes fast motion — splashes, debris, hair, fabric — in crisp suspended detail. Carry it through motion frozen mid-air, hard strobe, crisp droplets and debris, dark background, peak action. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -352,7 +352,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean, even frontal exposure with round ring catchlights clearly visible in both eyes.',
       key_features: 'ring catchlight; shadowless frontal light; cool LED white; soft halo shadow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ring Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Continuous ring light: a soft circular LED around the lens giving shadowless frontal light and a ring-shaped catchlight in the eyes. Carry it through ring catchlight, shadowless frontal light, cool LED white, soft halo shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -378,7 +378,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'projected pattern wrapping contours; subject shadow in projection; single beam; dark ambient',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Projector Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Projector light: an image or pattern projected onto the subject and surroundings, wrapping across faces, bodies and walls. Carry it through projected pattern wrapping contours, subject shadow in projection, single beam, dark ambient. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -406,7 +406,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'long-exposure light trails; steel-wool sparks; glowing ribbons; dark background; still subject',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Light Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Light painting: long-exposure photography where moving lights draw glowing trails, arcs and shapes around a still subject in darkness. Carry it through long-exposure light trails, steel-wool sparks, glowing ribbons, dark background, still subject. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -433,7 +433,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Peaceful and summery, a slow flicker of warm light and cool shade.',
       rendering_and_quality: 'Natural contrast with bright spots held, not clipped.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dappled Leaf Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dappled canopy light: sun filtered through leaves scattering bright coin-shaped patches across the subject and ground. Carry it through leaf-filtered sun spots, green shade, dapple on subject, translucent leaves, summer calm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'leaf-filtered sun spots; green shade; dapple on subject; translucent leaves; summer calm',
     },
@@ -463,7 +463,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean darkness above the source and crisp, brightly lit planes on every underside.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Horror Underlight as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Horror underlighting: a single source from below the face or subject, inverting natural shadows so features look wrong and menacing. Carry it through light from below, inverted shadows, dark eye sockets, cold or fire tint, menacing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'light from below; inverted shadows; dark eye sockets; cold or fire tint; menacing',
     },
@@ -492,7 +492,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp circular beam edge, deep clean blacks outside it, and controlled highlights inside.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Theatrical Spotlight as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Theatrical follow spot: a hard circular beam from above isolating the subject on a dark stage, with a visible pool of light at their feet. Carry it through circular follow spot, light pool on floor, dark stage, visible beam in haze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'circular follow spot; light pool on floor; dark stage; visible beam in haze',
     },
   },
@@ -519,7 +519,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Silent and cold, romantic mystery in a wide pale-blue hush.',
       rendering_and_quality: 'Clean low-light exposure without noise or orange cast.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Moonlight Night as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Moonlight: a single cold, soft-edged high source washing the scene in silver-blue with deep black shadows. Carry it through silver-blue high source, black shadows, low saturation, frost and water highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'silver-blue high source; black shadows; low saturation; frost and water highlights',
     },
@@ -548,7 +548,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Violent and ominous, a frozen instant of shock inside the storm.',
       rendering_and_quality: 'Crisp frozen rain, clean highlights, deep storm darkness.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lightning Flash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Lightning flash: an instant of blinding blue-white light from a strike, revealing the scene in stark relief against a dark storm. Carry it through blue-white strike light, frozen rain, hard instant shadows, storm darkness, visible bolt. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'blue-white strike light; frozen rain; hard instant shadows; storm darkness; visible bolt',
     },

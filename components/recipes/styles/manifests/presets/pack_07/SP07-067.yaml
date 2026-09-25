@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Fleeting and sunny, a monument that the next wave will take.
   rendering_and_quality: Outdoor photograph of real sand with visible grain; never hard stone, never plastic.
   key_features: bucket-molded and knife-carved sand; drip-castle spires; dry crust on wet sand; shell inclusions; low raking beach sun
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wet-Sand Ephemeral Modeling as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Wet-sand sculpture: the subject packed from bucket-molded sand and carved with palette knives and straws, finished with drip-castle spires and crumbling edges. Carry it through bucket-molded and knife-carved sand, drip-castle spires, dry crust on wet sand, shell inclusions, low raking beach sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo on parts
   - readable text

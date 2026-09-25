@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Heavy, patient and withheld; the weight comes from how much of each form stays hidden.
   rendering_and_quality: Large confident brush sweeps, one crisp scar line per form, and deep values kept legible as violet-black rather than dead flat black.
   key_features: crescent black value sweeps; thin midtone scar on lit edges; bone gray with muted violet; 1:8 rim-to-occlusion; dry-brush breaks
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Eclipse Scar Weight Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Brush-ink anime illustration of wide crescent value sweeps: each form sits half-swallowed in a curved black mass, and a thin scar of bare midtone runs along its lit edge. Carry it through crescent black value sweeps, thin midtone scar on lit edges, bone gray with muted violet, 1:8 rim-to-occlusion, dry-brush breaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

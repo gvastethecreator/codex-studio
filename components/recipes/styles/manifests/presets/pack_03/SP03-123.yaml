@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; the silhouette stays clear while the surface boils with folds.
   atmosphere_and_mood: Hypnotic and alive, a form that kept growing after it was finished.
   rendering_and_quality: Simulation-grown surface with self-avoiding folds, not noise displacement or fractal copies.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Differential Growth Folds as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Differential growth: the subject's surfaces grown into dense crinkled ruffles like lettuce coral, kale or brain folds, where the edge outgrows the center. Carry it through crinkled ruffled edges, edge-outgrows-center folds, deep fold occlusion, subsurface on thin edges, single organic hue. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: crinkled ruffled edges; edge-outgrows-center folds; deep fold occlusion; subsurface on thin edges; single organic hue
 avoidRules:
   - forced T-pose

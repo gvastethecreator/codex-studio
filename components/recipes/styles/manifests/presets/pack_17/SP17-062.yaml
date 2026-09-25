@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Compressed vertical monster-card crop with reaching hands, too-small shields, drooping hoods, simple flat background, and no readable pamphlet text.
   atmosphere_and_mood: Mildewed, pulp, cheap, grim, and old-game-store weird.
   rendering_and_quality: Cheap pulp risograph/xerox reproduction with chunky black line, aged paper, wobbly contour, print scum, and controlled low-detail grit.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mold Pulp Dungeon Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Mold-green pulp dungeon zine with slime monks, ghouls, old-game-store ogres, drooping robes, cheap pamphlet ink, and sickly aged-yellow panels. Carry it through mold green pulp zine, slime monks and ghouls, aged yellow panels, crude black robe mass, wobbly old-school monster-card drawing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: mold green pulp zine; slime monks and ghouls; aged yellow panels; crude black robe mass; wobbly old-school monster-card drawing
 avoidRules:
   - relic-object hero

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Determined full figure, keeping the full outfit silhouette and fit readable at card size.
   atmosphere_and_mood: Resolute, practical, thrifty and brave, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Crisp, slightly faded vintage finish, with believable fabric weight, seams and fit detail.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 1940s Wartime Utility as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "1940s wartime utility clothing: austere tailored suits with padded shoulders, knee-length A-line skirts, headscarves, overalls, and make-do-and-mend details. Carry it through padded-shoulder utility suit, headscarf and victory rolls, work overalls, make-do-and-mend, muted palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: padded-shoulder utility suit; headscarf and victory rolls; work overalls; make-do-and-mend; muted palette
 avoidRules:
   - brand logo

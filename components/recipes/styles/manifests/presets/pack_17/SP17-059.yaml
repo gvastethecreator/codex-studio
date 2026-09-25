@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Single-panel zine card crop where the subject fills the rectangle with awkward stance, blunt negative space, rough border pressure, flat color field, and no readable typography.
   atmosphere_and_mood: Dry, brutal, underground, handmade, and slightly comic without being cute.
   rendering_and_quality: 'Deliberately rough but high-quality dungeon zine reproduction: crunchy black ink, controlled xerox stipple, riso offset, coarse paper, and no vector polish.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rust Red Dungeon Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Rust-red old-school dungeon zine monster-card style with grotesque skull cultists, squat brutes, spiked hoods, wobbly hand-inked bodies, flat rust panels, and black xerox shadows. Carry it through rust red OSR zine, grotesque hand-inked dungeon figures, black xerox stipple, crooked full-body monster-card poses, flat color panel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: rust red OSR zine; grotesque hand-inked dungeon figures; black xerox stipple; crooked full-body monster-card poses; flat color panel; no centered door emblem
 avoidRules:
   - centered door emblem

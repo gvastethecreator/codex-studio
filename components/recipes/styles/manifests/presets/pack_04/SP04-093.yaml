@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Comparative and atmospheric, one place with four moods.
   rendering_and_quality: Medium-finish paintings of equal detail; the contrast between panels is the whole point.
   key_features: two-by-two grid; identical composition; four times of day or weather; consistent shadow logic; equal finish
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lighting Scenario Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Lighting scenario pass: the same fixed view painted four times under different light, like a lighting artist testing times of day and weather. Carry it through two-by-two grid, identical composition, four times of day or weather, consistent shadow logic, equal finish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable annotations
   - readable text

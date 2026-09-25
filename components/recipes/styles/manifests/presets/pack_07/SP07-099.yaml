@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; long bay of repeating tool enclosures, gowned figures small and faceless, symmetry softened by yellow haze.
   atmosphere_and_mood: Sterile, silent and uncanny, a sealed world with one colour.
   rendering_and_quality: Clean photograph with a single yellow cast held consistently, no readable screens or labels.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Yellow-Light Clean Room as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Yellow-light clean room: a semiconductor fabrication bay lit by filtered amber light, with laminar-flow ceiling filters, perforated floors and workers in full-body gowns. Carry it through filtered yellow-amber light, full-body gowned figures, laminar-flow ceiling filters, perforated floor, stainless tool enclosures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: filtered yellow-amber light; full-body gowned figures; laminar-flow ceiling filters; perforated floor; stainless tool enclosures
 avoidRules:
   - one-point corridor perspective as default

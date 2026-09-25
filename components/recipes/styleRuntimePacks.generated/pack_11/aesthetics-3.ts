@@ -25,7 +25,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean 3D icon render with smooth subdivided surfaces, with clean, deliberate marks and no accidental noise.',
       key_features: 'inflated rounded forms; glossy highlights; simple face; icon framing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Emoji 3D as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Glossy 3D emoji: the subject as a chunky, rounded, candy-glossy icon with a simple expressive face. Carry it through inflated rounded forms, glossy highlights, simple face, icon framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -50,7 +50,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality: 'Hand-placed pixel art with clean clusters and no stray pixels.',
       key_features: 'hard pixels; indexed palette; dithering; strong silhouettes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Indexed Pixel Constraint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Indexed pixel art: the subject drawn under strict old-console limits, hard square pixels and a tiny fixed palette. Carry it through hard pixels, indexed palette, dithering, strong silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -75,7 +75,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Polished retro airbrush and neon render, with clean, deliberate marks and no accidental noise.',
       key_features: 'perspective grid; striped sun; chrome rim; magenta-cyan haze',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chrome Horizon Voltage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Chrome horizon synthwave: glowing grid floors, a striped sunset sun, chrome edges and magenta-cyan night haze. Carry it through perspective grid, striped sun, chrome rim, magenta-cyan haze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -102,7 +102,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean detailed illustration or painting, with clean, deliberate marks and no accidental noise.',
       key_features: 'rooftop gardens; solar canopies; wind sails; communal life',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Solarpunk as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Solarpunk: hopeful green-tech communities where plants, solar glass and handmade repair live together. Carry it through rooftop gardens, solar canopies, wind sails, communal life. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -130,7 +130,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Painterly concept art with heavy forms, with clean, deliberate marks and no accidental noise.',
       key_features: 'rivets; diesel smoke; searchlights; zeppelins; monumental machines',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dieselpunk as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dieselpunk: 1930s-40s heavy industry retrofuturism, huge riveted machines, smoke and searchlights. Carry it through rivets, diesel smoke, searchlights, zeppelins, monumental machines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -158,7 +158,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Soft painterly or photographic finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'cottage garden; linen; baking; wildflowers; golden light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cottagecore as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cottagecore: soft pastoral life, wildflower gardens, handmade bread, linen and warm cottage light. Carry it through cottage garden, linen, baking, wildflowers, golden light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -186,7 +186,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Moody painterly or film-photo finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'tweed; candlelit library; marble busts; ink and parchment',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dark Academia as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dark academia: candlelit old universities, tweed, leather books, marble busts and scholarly obsession. Carry it through tweed, candlelit library, marble busts, ink and parchment. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -216,7 +216,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Glossy digital collage finish with mild pixel grain, with clean, deliberate marks and no accidental noise.',
       key_features: 'empty mall; marble bust; palms; pastel gradients; low-res grain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vaporwave Mall Haze as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Vaporwave mall haze: empty 90s shopping malls, marble statues, palms, pastel gradients and low-res digital nostalgia. Carry it through empty mall, marble bust, palms, pastel gradients, low-res grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -244,7 +244,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Detailed illustration or painting, with clean, deliberate marks and no accidental noise.',
       key_features: 'brass gears; gauges; steam; goggles; airships',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Steampunk as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Steampunk: Victorian brass-and-steam invention, gears, gauges, goggles and airships. Carry it through brass gears, gauges, steam, goggles, airships. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -271,7 +271,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Detailed painterly render with wet surfaces, with clean, deliberate marks and no accidental noise.',
       key_features: 'grown machinery; veins; membranes; vats; bioluminescence',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Biopunk as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Biopunk: living technology grown from flesh, veins and tissue in wet labs and organic cities. Carry it through grown machinery, veins, membranes, vats, bioluminescence. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -299,7 +299,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Dark painterly finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'pointed arches; crypt; candelabra; pale aristocrat; moonlight',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gothic Horror as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Gothic horror: crumbling castles, crypts, candlelit aristocrats and vertical menace. Carry it through pointed arches, crypt, candelabra, pale aristocrat, moonlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -327,7 +327,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean vector-like illustration, with clean, deliberate marks and no accidental noise.',
       key_features: 'round mascot; blush marks; big eyes; pastel palette; sparkles',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kawaii Pastel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Kawaii pastel: super-cute mascot style with round shapes, blushing cheeks and soft pastel colors. Carry it through round mascot, blush marks, big eyes, pastel palette, sparkles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -354,7 +354,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Gritty painterly concept art, with clean, deliberate marks and no accidental noise.',
       key_features: 'battered ornate armor; skull fortress; relic banners; endless war',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grimdark as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Grimdark war fantasy: endless war, cathedral-sized fortresses, filthy armored soldiers and religious fanaticism. Carry it through battered ornate armor, skull fortress, relic banners, endless war. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -381,7 +381,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Glossy 2000s digital render, with clean, deliberate marks and no accidental noise.',
       key_features: 'aqua glass; bubbles; blue sky; green hills; glossy shine',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Frutiger Aero as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Frutiger Aero: mid-2000s glossy optimism with water, bubbles, green fields, blue skies and glassy UI shine. Carry it through aqua glass, bubbles, blue sky, green hills, glossy shine. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -409,7 +409,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp graphic render, with clean, deliberate marks and no accidental noise.',
       key_features: 'squiggles; terrazzo; checkerboard; primary shapes; pedestals',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Postmodern Pattern Clash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Postmodern pattern clash: Memphis-style squiggles, terrazzo, checkerboards and bold primary shapes colliding. Carry it through squiggles, terrazzo, checkerboard, primary shapes, pedestals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -439,7 +439,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean psychedelic illustration, with clean, deliberate marks and no accidental noise.',
       key_features: 'nested repeats; melting contours; paisley; vibrating colors',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Psychedelic Optical Recursion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Psychedelic recursion: melting patterns, paisley whorls and repeating concentric forms in vibrating colors. Carry it through nested repeats, melting contours, paisley, vibrating colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -467,7 +467,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Macro sparkle render, with clean, deliberate marks and no accidental noise.',
       key_features: 'iridescent flakes; rainbow sparkle; holographic foil',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Holographic Flake Scatter as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Holographic flake: the subject covered in iridescent glitter flakes that scatter rainbow sparkles. Carry it through iridescent flakes, rainbow sparkle, holographic foil. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -495,7 +495,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Detailed illustration or macro photo feel, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Goblincore as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Goblincore: loving the ugly and overlooked parts of nature, mushrooms, moss, frogs, snails, bones and shiny found treasures. Carry it through moss, mushrooms, frogs, snails, bones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'moss; mushrooms; frogs; snails; bones; found treasures',
     },
     ui: {
@@ -531,7 +531,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Lo-fi reproduced painting, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dungeon Synth Cassette Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dungeon synth cover art: murky lo-fi fantasy painting reproduced like a photocopied cassette insert, with small lonely figures, heavy mist and faded ink. Carry it through misty castle, lone wanderer, murky paint, copier grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'misty castle; lone wanderer; murky paint; copier grain',
     },
     ui: {
@@ -565,7 +565,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Painterly or film-photo finish, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Southern Gothic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Southern Gothic: decaying rural mansions, swamps, Spanish moss, humid heat and quiet grotesque secrets. Carry it through Spanish moss, swamp, peeling mansion, humid haze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Spanish moss; swamp; peeling mansion; humid haze',
     },
     ui: {

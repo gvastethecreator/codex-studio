@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Optimistic, fresh, clean and nostalgic, driven by the construction, color and rhythm.
   rendering_and_quality: Glossy 2000s digital render, with clean, deliberate marks and no accidental noise.
   key_features: aqua glass; bubbles; blue sky; green hills; glossy shine
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Frutiger Aero as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Frutiger Aero: mid-2000s glossy optimism with water, bubbles, green fields, blue skies and glassy UI shine. Carry it through aqua glass, bubbles, blue sky, green hills, glossy shine. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

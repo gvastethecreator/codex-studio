@@ -30,7 +30,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Painterly or photoreal finish chosen by the prompt, with clean edges and no muddy haze.',
       key_features: 'melting rigid forms; precise rendering; long shadows',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Melting Dream Surrealism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Melting dream surrealism: hard objects softening and drooping over edges under an eerie, precise dream sky. Carry it through melting rigid forms, precise rendering, long shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -58,7 +58,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Painterly or photoreal finish chosen by the prompt, with clean edges and no muddy haze.',
       key_features: 'emptied transitional feeling; flat light; off-hours quiet',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Liminal Space as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Liminal space mood: the feeling of transitional, empty, slightly wrong places at odd hours. Carry it through emptied transitional feeling, flat light, off-hours quiet. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -86,7 +86,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Painterly or photoreal finish chosen by the prompt, with clean edges and no muddy haze.',
       key_features: 'swirling saturated color; vibrating contours',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Psychedelic Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Psychedelic art: saturated swirling color, vibrating patterns and melting contours. Carry it through swirling saturated color, vibrating contours. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -114,7 +114,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Painterly or photoreal finish chosen by the prompt, with clean edges and no muddy haze.',
       key_features: 'pastel soft focus; nostalgic haze; faint eeriness',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dreamcore as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dreamcore mood: soft, pastel, nostalgic unreality with a faint childhood eeriness. Carry it through pastel soft focus, nostalgic haze, faint eeriness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -142,7 +142,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Painterly or photoreal finish chosen by the prompt, with clean edges and no muddy haze.',
       key_features: 'realistic everyday scene; one calm impossibility',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Magical Realism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Magical realism: an ordinary scene rendered realistically where one impossible thing happens calmly. Carry it through realistic everyday scene, one calm impossibility. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -169,7 +169,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Painterly or photoreal finish chosen by the prompt, with clean edges and no muddy haze.',
       key_features: 'second image inside silhouette; blended layers',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Double Exposure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Surreal double exposure: two images fused inside one silhouette. Carry it through second image inside silhouette, blended layers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -199,7 +199,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Painterly or photoreal finish chosen by the prompt, with clean edges and no muddy haze.',
       key_features: 'impossible loops; stairs into themselves; walls as floors',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Impossible Perspective as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Impossible perspective: architecture and objects that connect in geometrically impossible loops and staircases. Carry it through impossible loops, stairs into themselves, walls as floors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -226,7 +226,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Painterly or photoreal finish chosen by the prompt, with clean edges and no muddy haze.',
       key_features: 'pastel gradient; grid floor; classical motifs; neon',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vaporwave as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Vaporwave theme: pastel 80s-90s digital nostalgia with classical busts, grids and sunsets. Carry it through pastel gradient, grid floor, classical motifs, neon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -256,7 +256,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Painterly or photoreal finish chosen by the prompt, with clean edges and no muddy haze.',
       key_features: 'fused anatomy and machinery; ribbed tubes; monochrome',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Biomechanical Surrealism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Biomechanical surrealism: organic anatomy fused with ribbed machinery in dark monochrome. Carry it through fused anatomy and machinery, ribbed tubes, monochrome. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -284,7 +284,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Painterly or photoreal finish chosen by the prompt, with clean edges and no muddy haze.',
       key_features: 'cut vintage fragments; visible paper edges',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Collage Surrealism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Collage surrealism: cut-and-paste vintage imagery combined into impossible scenes. Carry it through cut vintage fragments, visible paper edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -311,7 +311,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Painterly or photoreal finish chosen by the prompt, with clean edges and no muddy haze.',
       key_features: 'long shadows; enigmatic stillness; arcades',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Metaphysical Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Metaphysical art mood: empty arcades, long shadows and enigmatic stillness. Carry it through long shadows, enigmatic stillness, arcades. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -339,7 +339,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Painterly or photoreal finish chosen by the prompt, with clean edges and no muddy haze.',
       key_features: 'big-eyed cute-grotesque; candy gloss',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lowbrow (Pop Surrealism) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pop surrealism: glossy cute-grotesque characters in candy colors with dark undertones. Carry it through big-eyed cute-grotesque, candy gloss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -367,7 +367,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Painterly or photoreal finish chosen by the prompt, with clean edges and no muddy haze.',
       key_features: 'gothic ruins; mist; ominous scale',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dark Fantasy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dark fantasy dream theme: gothic, grim, mythic worlds of ruins, monsters and fading light. Carry it through gothic ruins, mist, ominous scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -394,7 +394,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Painterly or photoreal finish chosen by the prompt, with clean edges and no muddy haze.',
       key_features: 'green tech; gardens; hopeful future',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Solarpunk as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Solarpunk theme: hopeful green futures with gardens, solar tech and community. Carry it through green tech, gardens, hopeful future. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -422,7 +422,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Painterly or photoreal finish chosen by the prompt, with clean edges and no muddy haze.',
       key_features: 'low-fi wrongness; odd framing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Weirdcore as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Weirdcore mood: off-putting low-fi uncanniness with odd framing and wrong details. Carry it through low-fi wrongness, odd framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -451,7 +451,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Painterly or photoreal finish chosen by the prompt, with clean edges and no muddy haze.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scale Inversion Surrealism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Scale inversion: familiar objects or creatures at impossible scales relative to their surroundings. Carry it through impossible scale, giant or tiny element. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'impossible scale; giant or tiny element',
     },
     ui: {
@@ -485,7 +485,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Painterly or photoreal finish chosen by the prompt, with clean edges and no muddy haze.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Symbolist Dreamscape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Symbolist dreamscape: hazy, jewel-toned allegorical painting of myth and mystery. Carry it through hazy jewel-tone allegory. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'hazy jewel-tone allegory',
     },
     ui: {
@@ -521,7 +521,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Painterly or photoreal finish chosen by the prompt, with clean edges and no muddy haze.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mirror World Surrealism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Mirror world: reflections that show a different reality than the scene. Carry it through reflection shows another reality. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'reflection shows another reality',
     },
     ui: {
@@ -554,7 +554,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Painterly or photoreal finish chosen by the prompt, with clean edges and no muddy haze.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fever Dream Grotesque as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fever dream grotesque: sweaty, warped, overheated dream imagery with swollen forms. Carry it through swollen warped forms, overheated palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'swollen warped forms; overheated palette',
     },
     ui: {
@@ -587,7 +587,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Painterly or photoreal finish chosen by the prompt, with clean edges and no muddy haze.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Levitation Surrealism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Levitation: people and objects floating calmly in mid-air as if gravity paused. Carry it through floating subjects, paused gravity. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'floating subjects; paused gravity',
     },
     ui: {

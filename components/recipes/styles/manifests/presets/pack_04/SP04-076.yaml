@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Fast, defiant and kinetic, drawn before anyone could stop it.
   rendering_and_quality: Raw single-color spray line on a real wall surface; not a 3D sculpture or a digital vector.
   key_features: one continuous spray line; overspray halos; gravity drips; even cap width; wall surface visible
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Graffiti (Tag) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Aerosol tag handstyle: the subject drawn in fast continuous spray-can strokes on a wall, with overspray halos, gravity drips and a consistent cap width. Carry it through one continuous spray line, overspray halos, gravity drips, even cap width, wall surface visible. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - brand logo

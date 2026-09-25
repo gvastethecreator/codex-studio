@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Competent, approachable and composed, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Clean, natural editorial finish, with believable fabric weight, seams and fit detail.
   key_features: unstructured blazer; open collar; tailored trousers; soft neutral palette; composed ease
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Business Casual as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Business casual: polished but relaxed workwear — unstructured blazer, knit or open collar, tailored trousers — made for long days. Carry it through unstructured blazer, open collar, tailored trousers, soft neutral palette, composed ease. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - readable label text

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: 'Keep the requested mood; make subtle expression legible without turning a neutral scene shy, comforting, or cheerful.'
   rendering_and_quality: 'Use clean closed contours, stable proportions, readable facial features, and restrained soft transitions; avoid a glossy digital finish.'
   key_features: 'Fine tapered contours; minute facial marks; compact soft cel shadows; gentle warm and cool separation; sparse surface detail.'
-  creative_brief: 'Build expression from tiny facial shifts and tapered linework over soft cel planes. Preserve the subject, action, count, camera, and mood from the request; add no scene props.'
+  creative_brief: "Build expression from tiny facial shifts and tapered linework over soft cel planes. Preserve the subject, action, count, camera, and mood from the request; add no scene props. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

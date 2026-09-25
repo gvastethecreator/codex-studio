@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Exact and engineered, a thing ready to be built.
   rendering_and_quality: Flat drafted line drawing with no perspective, no 3D shading and no fake measurement text.
   key_features: white lines on Prussian blue; plan, elevation and section; hatched cut material; blank dimension gaps; empty title block
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blueprint Schematic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Engineering blueprint sheet: white drafted lines on Prussian blue diazo paper, the subject shown in plan, side elevation and section. Carry it through white lines on Prussian blue, plan, elevation and section, hatched cut material, blank dimension gaps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - placeholder gibberish text
   - invented numbers presented as data

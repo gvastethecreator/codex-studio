@@ -26,7 +26,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
       key_features: 'neon tube contours; gas glow; emissive modifier',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Light Lines as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Neon light lines: bent glass neon tubes tracing the subject's contours. Carry it through neon tube contours, gas glow, emissive modifier. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -52,7 +52,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
       key_features: 'metallic foil; crisp impression; physical print process',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Foil Stamping as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Foil stamping: metallic foil pressed into paper with slight impression. Carry it through metallic foil, crisp impression, physical print process. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -79,7 +79,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
       key_features: 'deep letterpress bite; cotton paper; physical print process',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Letterpress as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Letterpress: ink pressed deeply into soft cotton paper, leaving crisp debossed impressions. Carry it through deep letterpress bite, cotton paper, physical print process. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -108,7 +108,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies EL Wire Outline as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "EL wire: thin flexible electroluminescent wire outlining the subject in soft even glow. Carry it through thin EL wire outlines, emissive modifier. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'thin EL wire outlines; emissive modifier',
     },
     ui: {
@@ -139,7 +139,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Laser Beam Show as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Laser show: sharp colored beams fanning through haze around the subject. Carry it through laser fans, haze beams, emissive modifier. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'laser fans; haze beams; emissive modifier',
     },
     ui: {
@@ -170,7 +170,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies UV Blacklight Glow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "UV blacklight: fluorescent paint on the subject glowing under ultraviolet light. Carry it through UV fluorescent glow, emissive modifier. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'UV fluorescent glow; emissive modifier',
     },
     ui: {
@@ -201,7 +201,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies LED Strip Contour as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "LED strip: dotted LED strips tracing edges with visible diodes. Carry it through dotted LED strips, emissive modifier. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'dotted LED strips; emissive modifier',
     },
     ui: {
@@ -234,7 +234,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Projection Mapping Glow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Projection mapping: animated patterns projected precisely onto the subject's surfaces. Carry it through surface-mapped projection, emissive modifier. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'surface-mapped projection; emissive modifier',
     },
     ui: {
@@ -266,7 +266,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fiber Optic Sparkle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fiber optics: tiny glowing fiber tips scattered across the subject like stars. Carry it through fiber-optic pinpoints, emissive modifier. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'fiber-optic pinpoints; emissive modifier',
     },
     ui: {
@@ -297,7 +297,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glow-in-the-Dark Phosphor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Glow-in-the-dark: phosphorescent green glow on the subject in darkness. Carry it through phosphor green glow, emissive modifier. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'phosphor green glow; emissive modifier',
     },
     ui: {
@@ -327,7 +327,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blind Embossing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Blind embossing: raised relief pressed into paper without ink. Carry it through uninked raised relief, physical print process. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'uninked raised relief; physical print process',
     },
     ui: {
@@ -357,7 +357,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Debossing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Debossing: artwork pressed down into thick board. Carry it through recessed impression, physical print process. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'recessed impression; physical print process',
     },
     ui: {
@@ -388,7 +388,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Spot UV Gloss as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Spot UV: glossy varnish on selected areas over matte stock. Carry it through gloss on matte, physical print process. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'gloss on matte; physical print process',
     },
     ui: {
@@ -418,7 +418,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Die-Cut Layers as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Die-cut layers: stacked laser-cut paper layers creating depth. Carry it through stacked die-cut layers, physical print process. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'stacked die-cut layers; physical print process',
     },
     ui: {
@@ -449,7 +449,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Metallic Screenprint Ink as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Metallic screenprint: flat layers with metallic ink catching light. Carry it through flat layers, metallic ink, physical print process. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'flat layers; metallic ink; physical print process',
     },
     ui: {
@@ -480,7 +480,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thermography Raised Ink as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Thermography: glossy raised ink puffed by heat. Carry it through glossy raised ink, physical print process. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'glossy raised ink; physical print process',
     },
     ui: {
@@ -513,7 +513,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Intaglio Engraved Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Intaglio: engraved plate print with raised ink lines and plate mark. Carry it through raised engraved lines, plate mark, physical print process. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'raised engraved lines; plate mark; physical print process',
     },
     ui: {
@@ -544,7 +544,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wax Seal Impression as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Wax seal: artwork stamped into a pool of colored sealing wax. Carry it through stamped wax relief, physical print process. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'stamped wax relief; physical print process',
     },
     ui: {
@@ -576,7 +576,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gilded Page Edges as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Gilded edges: artwork painted on the fore-edge of a book with gold gilding. Carry it through fore-edge painting, gilt edges, physical print process. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'fore-edge painting; gilt edges; physical print process',
     },
     ui: {
@@ -607,7 +607,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pearlescent Ink as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pearlescent ink: printed artwork with shimmering mother-of-pearl ink. Carry it through pearlescent shimmer ink, physical print process. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'pearlescent shimmer ink; physical print process',
     },
     ui: {

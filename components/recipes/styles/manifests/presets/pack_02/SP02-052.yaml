@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Spontaneous and experimental, every happy accident gladly embraced.
   rendering_and_quality: Toy-camera artifacts in the negative; distinct from the Lomo LC-A lens look in pack_01.
   key_features: red-orange light leaks; exposed sprocket rebate; heavy vignette; plastic-lens blur; overlapping frames
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lomography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Holga toy-camera lomography: a plastic 120 camera with a leaky body and a soft plastic lens, often shot on 35 mm so the sprocket holes are exposed. Carry it through red-orange light leaks, exposed sprocket rebate, heavy vignette, plastic-lens blur, overlapping frames. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - illustration
   - painting

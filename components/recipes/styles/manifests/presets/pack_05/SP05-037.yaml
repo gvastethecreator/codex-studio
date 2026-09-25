@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Deadpan timing and an absurdly oversized reaction.
   rendering_and_quality: Deliberate disproportion between a trivial action and a huge impact graphic.
   key_features: single impact frame zone; black, white and signal red; thick radial wedges; muted calm cel; broad empty stage
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Impact Frame Comedy Hero as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Comedy action anime built on the impact frame: calm simple cel shots where one moment snaps to high-contrast black, white and red with thick radial wedges and a jagged silhouette. Carry it through single impact frame zone, black, white and signal red, thick radial wedges, muted calm cel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Kinetic and graphic, a comic page coming alive.
   rendering_and_quality: Hybrid 3D and print finish; original characters, no superhero franchise designs.
   key_features: halftone dot shading; off-register color fringes; ink lines over 3D; stepped frame rate; extreme perspective
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Comic Offset 3D Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Comic offset 3D animation: 3D characters and cities finished like a printed comic page, with halftone dots, ink lines and off-register color. Carry it through halftone dot shading, off-register color fringes, ink lines over 3D, stepped frame rate, extreme perspective. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - exact studio character copy
   - franchise likeness

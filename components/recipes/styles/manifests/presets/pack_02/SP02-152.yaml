@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Orbital view, subject as landscape-scale texture and bright points.
   atmosphere_and_mood: Cold and technical, the world seen through storm and night alike.
   rendering_and_quality: Credible SAR speckle look; no labels or scale bars.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Synthetic Aperture Radar as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Synthetic aperture radar: a satellite radar image in grainy greyscale where rough and metal surfaces return bright and smooth water stays black. Carry it through speckled greyscale, black smooth water, bright metal returns, radar shadow on slopes, layover distortion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: speckled greyscale; black smooth water; bright metal returns; radar shadow on slopes; layover distortion
 avoidRules:
   - readable readouts

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Scrappy and irreverent, full of early internet energy and jokes.
   rendering_and_quality: Vector web-animation look; no textures, no painterly softness.
   key_features: vector symbols; tweened motion trails; radial gradients; crisp anti-aliased edges; side-on staging
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Flash Animation (2000s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "2000s Flash web animation: vector characters built from reusable symbols, tweened motion, radial gradients and crisp anti-aliased edges. Carry it through vector symbols, tweened motion trails, radial gradients, crisp anti-aliased edges, side-on staging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - exact studio character copy
   - franchise likeness

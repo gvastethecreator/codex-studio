@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Calm, exact and explanatory, beauty coming from measured order.
   rendering_and_quality: Clean anti-aliased render with no photographic texture; the colormap is continuous and never rainbow-banded.
   key_features: streamline tubes; translucent isosurfaces; cone arrow glyphs; single perceptual colormap; grey matte context geometry
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scientific Visualization as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Scientific simulation visualization: the scene shown as grey context geometry with a measured field drawn over it as streamlines, isosurfaces and arrow glyphs. Carry it through streamline tubes, translucent isosurfaces, cone arrow glyphs, single perceptual colormap, grey matte context geometry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise likeness
   - recognizable game or film world

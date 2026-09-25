@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Helpful and orderly, the sky explained in shapes and colors.
   rendering_and_quality: Broadcast forecast graphics with no readable place names or numbers.
   key_features: composited forecast map; isobar lines; weather symbols; temperature gradient; textless 3D map
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Weather Channel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Weather channel forecast graphic: a composited map with isobars, weather symbols and temperature gradients, rendered in broadcast graphic style. Carry it through composited forecast map, isobar lines, weather symbols, temperature gradient, textless 3D map. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable fake text
   - readable ticker

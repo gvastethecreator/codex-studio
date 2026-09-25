@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Intimate and playful, a moment you can hold in your hand.
   rendering_and_quality: Physical instant print object; the emulsion look alone belongs to Polaroid 600 in pack_01.
   key_features: white frame with wide bottom; square image; developer spread marks; cyan-green shadows; close flash
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Polaroid (Instant) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Polaroid instant print: the whole physical print, with its square image, wide white frame thicker at the bottom and instant-film chemistry. Carry it through white frame with wide bottom, square image, developer spread marks, cyan-green shadows, close flash. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - illustration
   - painting

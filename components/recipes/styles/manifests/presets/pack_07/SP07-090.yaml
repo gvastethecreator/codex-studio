@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; from inside show the full ring of galleries stacked in a curve, from outside show the fortress-like wall and its single gate.
   atmosphere_and_mood: Defended, communal and enclosing, a village inside one wall.
   rendering_and_quality: Documentary photograph with readable earth layering and timber structure, no invented ornament or theme-park styling.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tulou Rammed-Earth Ring as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Fujian tulou architecture: a massive circular or square rammed-earth outer wall several storeys high, windowless at the base, enclosing inward-facing timber galleries around an open courtyard. Carry it through rammed-earth ring wall with formwork layers, windowless base with high slit windows, stacked inward timber galleries, open central courtyard, overhanging grey tile roof ring. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: rammed-earth ring wall with formwork layers; windowless base with high slit windows; stacked inward timber galleries; open central courtyard; overhanging grey tile roof ring
 avoidRules:
   - golden-hour hero facade formula

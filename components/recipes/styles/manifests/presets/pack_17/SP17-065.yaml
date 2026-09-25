@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Three-quarter isometric card crop with navigable floor read, one focal subject, and no HUD, no cursor, no labels.
   atmosphere_and_mood: Grim, loot-hungry, cathedral-heavy, occult, and game-native.
   rendering_and_quality: Polished stylized 2.5D/isometric fantasy game rendering, denoised, not photoreal, not promotional key art.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ashen Isometric ARPG as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Dark isometric action-RPG style with ashen cathedral floors, readable loot-era silhouettes, smoky depth, and grim fantasy game-camera staging without UI. Carry it through isometric ARPG camera, ashen gothic floor planes, ember rim, readable game-space depth, no UI. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: isometric ARPG camera; ashen gothic floor planes; ember rim; readable game-space depth; no UI; dark fantasy 2.5D finish
 avoidRules:
   - visible HUD

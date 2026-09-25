@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Thoughtful and tactile, ideas tested in cardboard.
   rendering_and_quality: Real physical model look with no finished facades, no rendered materials and no dollhouse interior.
   key_features: white foam and chipboard volumes; basswood blocks; glue seams and pin heads; one colored focal block; photographed on a base
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Architecture Massing Model as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Architectural massing model: the subject rebuilt as a handmade study model of white foam board, chipboard and basswood blocks on a flat base. Carry it through white foam and chipboard volumes, basswood blocks, glue seams and pin heads, one colored focal block, photographed on a base. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable annotations
   - readable text

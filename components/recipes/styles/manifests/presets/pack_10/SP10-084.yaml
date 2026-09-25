@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Frontal or low-angle structural view, arranged so the subject still reads at card size.
   atmosphere_and_mood: Calm, orderly, monumental and quiet, driven by the construction, color and rhythm.
   rendering_and_quality: Precise smooth finish, with clean, deliberate marks and no accidental noise.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Precisionism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Precisionism: clean, sharp-edged geometric rendering of structures with smooth planes and crisp shadows. Carry it through smooth geometric planes, crisp shadows, industrial order. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: smooth geometric planes; crisp shadows; industrial order
 avoidRules:
   - readable text

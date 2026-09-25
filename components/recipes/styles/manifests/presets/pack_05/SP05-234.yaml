@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Cold command tension, the calm of watching disaster as geometry.
   rendering_and_quality: Clean single-weight vector wireframe, phosphor glow and sparse red ticks; no letters, numerals or filled surfaces.
   key_features: glowing single-weight wireframe; hidden-line removal; phosphor glow on black; modular blue grid; red target ticks without text
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Extinction Interface Command as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Vector-display anime: subjects drawn as glowing single-weight wireframe lines with hidden lines removed, on a black field with modular grid divisions. Carry it through glowing single-weight wireframe, hidden-line removal, phosphor glow on black, modular blue grid, red target ticks without text. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

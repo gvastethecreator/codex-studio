@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Vertical card crop that can show a sprite portrait, isometric tile fragment, side-view scenelet, or symbolic pixel object with no interface.
   atmosphere_and_mood: Bleak, old-game, cursed, stark, and playable without nostalgia cuteness.
   rendering_and_quality: Authentic limited-palette pixel art reproduced cleanly, no AI painterly smearing, no fake CRT text.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Monochrome Dungeon Pixels as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Grimdark monochrome pixel art with one-bit discipline, hard tile silhouettes, dithered candle gloom, and medieval dungeon weight. Carry it through one-bit dungeon pixels, hard tile shapes, chunky dither, bone black palette, no HUD. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: one-bit dungeon pixels; hard tile shapes; chunky dither; bone black palette; no HUD; grim medieval game mood
 avoidRules:
   - smooth digital painting

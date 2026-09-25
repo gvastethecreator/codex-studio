@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: The window seen straight on, filling the frame; no whole car.
   atmosphere_and_mood: Cheeky and surprising, art found on a neglected surface.
   rendering_and_quality: Real finger drawing in grime; no written joke words.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dusty Car Window Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Dusty car window drawing: a picture drawn with fingertips and palms in the thick grime on a car rear window, the clean glass showing darker through the lines. Carry it through finger lines in grime, dark clean glass through strokes, smudged palm tones, drip streaks, straight-on window. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: finger lines in grime; dark clean glass through strokes; smudged palm tones; drip streaks; straight-on window
 avoidRules:
   - photorealistic rendering

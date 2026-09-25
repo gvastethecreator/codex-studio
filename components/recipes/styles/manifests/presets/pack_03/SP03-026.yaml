@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Satisfying and analytical, an object understood by its pieces.
   rendering_and_quality: Crisp CGI knolling; not a photographic flat lay of whole objects.
   key_features: disassembled parts; right-angle grid; top-down view; grouped by size; even spacing
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Knolling (Flat Lay) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Knolling: every part of the subject disassembled and laid out flat at right angles in a tidy grid, seen from straight above. Carry it through disassembled parts, right-angle grid, top-down view, grouped by size, even spacing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - franchise likeness

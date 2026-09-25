@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Still, shimmering and orderly, a moment frozen in bright air.
   rendering_and_quality: No strokes, lines or blended areas at all; every value produced by dot density and color pairing.
   key_features: uniform dots of pure color; complementary color pairs; optical mixing; contrast haloes at edges; stiff geometric silhouettes
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pointillism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Pointillist dot painting: the whole image built from small round dots of pure color placed side by side so the eye mixes them at a distance. Carry it through uniform dots of pure color, complementary color pairs, optical mixing, contrast haloes at edges, stiff geometric silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - changing the requested framing

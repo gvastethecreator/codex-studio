@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Grand and immersive, a playable world at cinematic fidelity.
   rendering_and_quality: Real-time next-gen look with subtle TAA softness; no UI or HUD.
   key_features: real-time bounce GI; micro-detail scanned geometry; volumetric fog shafts; filmic tonemap; TAA softness
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Unreal Engine 5 Next-Gen Real-Time Engine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Unreal Engine 5 real-time render: dynamic global illumination, film-quality micro-detail geometry and volumetric fog running at game frame rates. Carry it through real-time bounce GI, micro-detail scanned geometry, volumetric fog shafts, filmic tonemap, TAA softness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - 2d illustration
   - hand-drawn

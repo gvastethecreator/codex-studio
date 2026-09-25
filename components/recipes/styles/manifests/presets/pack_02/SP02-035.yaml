@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Frantic and comic, timing sharpened into a single perfect gag.
   rendering_and_quality: Classic theatrical cartoon finish; original characters only, no studio mascots.
   key_features: squash-and-stretch; smear frames; painted stylized backgrounds; held take poses; dust-cloud impacts
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Golden Age Slapstick Cartoon as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Golden-age slapstick cartoon: elastic cel characters with extreme squash-and-stretch and smear frames against stylized painted backgrounds. Carry it through squash-and-stretch, smear frames, painted stylized backgrounds, held take poses, dust-cloud impacts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - exact studio character copy
   - franchise likeness

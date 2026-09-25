@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Fresh and energetic, cold you can almost feel on your hand.
   rendering_and_quality: Beverage-ad clarity with sharp droplets; no warm or dry surfaces.
   key_features: condensation beads; frost bloom; backlit cold glow; rim-lit droplets; heroic low angle
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cold Condensation Commercial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cold condensation commercial: refreshment advertising where frost, beads of water and backlit cold haze make a vessel look ice-cold. Carry it through condensation beads, frost bloom, backlit cold glow, rim-lit droplets, heroic low angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - fake brand logo
   - readable labels

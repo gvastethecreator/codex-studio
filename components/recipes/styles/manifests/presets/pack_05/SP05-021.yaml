@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Buoyant resolve and forward curiosity, the road ahead always open and bright.
   rendering_and_quality: Crisp silhouettes and flat fills, with smears and trails only on motion already present.
   key_features: stretched limb smear frames; tapered ink contour; curling dust and leaf trails; teal and orange; two-step shadow
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Teal-Orange Sakuga Smear as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Journey-adventure anime at its most animated: tapered black-ink contours that thicken at turns, limbs stretched into smear frames, and dust or leaf trails curling behind fast motion. Carry it through stretched limb smear frames, tapered ink contour, curling dust and leaf trails, teal and orange, two-step shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

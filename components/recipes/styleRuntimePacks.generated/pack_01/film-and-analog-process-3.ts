@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'overexposed color negative; peach skin tones; pastel highlight rolloff; lifted warm shadows; fine even grain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kodak Portra 400 as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Kodak Portra 400 color negative: a forgiving portrait stock rated at 400 and usually overexposed by a stop, giving creamy low-contrast color and flattering skin. Carry it through overexposed color negative, peach skin tones, pastel highlight rolloff, lifted warm shadows, fine even grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'ultra-saturated slide; electric greens; magenta dawn bias; crushed black shadows; near-invisible grain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fujifilm Velvia 50 as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fujifilm Velvia 50 color slide: a slow, ultra-saturated landscape reversal film shot on a tripod, with dense blacks and almost no exposure latitude. Carry it through ultra-saturated slide, electric greens, magenta dawn bias, crushed black shadows, near-invisible grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -85,7 +85,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'box-speed black-and-white; long neutral grey scale; moderate soft grain; open shadows; documentary honesty',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ilford HP5 Plus as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ilford HP5 Plus at box speed 400: classic black-and-white documentary negative with a long, even grey scale and honest, moderate grain. Carry it through box-speed black-and-white, long neutral grey scale, moderate soft grain, open shadows, documentary honesty. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -114,7 +114,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'red-orange halation halos; tungsten teal shadows; amber practicals; fast-film grain; night cinema stock',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cinestill 800T as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cinestill 800T: tungsten-balanced motion-picture stock with its anti-halation layer removed, so every bright light blooms with a red-orange halo. Carry it through red-orange halation halos, tungsten teal shadows, amber practicals, fast-film grain, night cinema stock. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -141,7 +141,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Slide-film density and color separation; modern subjects stay modern — no mid-century costume or props unless asked.',
       key_features: 'dense slide dyes; cardinal red pop; deep blues; inky shadows; very fine grain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kodachrome 64 as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Kodachrome 64 color slide: a slow, sharp reversal stock with dense dye layers, famous for rich reds, deep blues and weighty blacks. Carry it through dense slide dyes, cardinal red pop, deep blues, inky shadows, very fine grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -169,7 +169,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'integral instant color; cyan-green shadows; creamy low-contrast highlights; close flash falloff; soft plastic lens',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Polaroid 600 as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Polaroid 600 integral instant film: a soft plastic-lens snapshot with built-in flash and the washed, dreamy color of instant chemistry — the emulsion look, not the print frame. Carry it through integral instant color, cyan-green shadows, creamy low-contrast highlights, close flash falloff, soft plastic lens. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -198,7 +198,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'tunnel vignette; saturated center; wide 32 mm closeness; tilted hip-shot horizon; soft corners',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lomo LC-A as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Lomo LC-A snapshot: a compact zone-focus camera with a wide 32 mm lens, shot fast from the hip on saturated color negative, known for its tunnel vignette. Carry it through tunnel vignette, saturated center, wide 32 mm closeness, tilted hip-shot horizon, soft corners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -228,7 +228,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'ivory on black glass; orthochromatic tones; Petzval swirl; collodion pour ripples; long-exposure stillness',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wet Plate Ambrotype as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Wet plate ambrotype: a collodion negative on clear glass backed with black varnish so it reads as a positive, with ivory highlights floating on a deep black ground. Carry it through ivory on black glass, orthochromatic tones, Petzval swirl, collodion pour ripples, long-exposure stillness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -259,7 +259,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'white glowing foliage; near-black sky; halation bloom; milky skin; pronounced grain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Black-and-White Infrared Film as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Black-and-white infrared film behind a deep red filter: living foliage glows white, clear skies turn nearly black, and highlights bloom with soft halation. Carry it through white glowing foliage, near-black sky, halation bloom, milky skin, pronounced grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -287,7 +287,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'fogged lifted blacks; drifting color cast; coarse clumped grain; low contrast; faded dyes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Expired Film as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Expired color negative: film long past its date, fogged by age and heat, with a lifted base, drifting color casts and weak contrast. Carry it through fogged lifted blacks, drifting color cast, coarse clumped grain, low contrast, faded dyes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -316,7 +316,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'view-camera detail; seamless tonal gradation; corrected verticals; tilted focus plane; invisible grain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Large Format (4x5) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Large-format 4x5 sheet film: a view camera on a tripod recording extraordinary detail with smooth, seamless tonal gradation. Carry it through view-camera detail, seamless tonal gradation, corrected verticals, tilted focus plane, invisible grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -345,7 +345,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'built-in flash hotspot; harsh falloff; plastic-lens softness; corner fringing; consumer film grain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Disposable Camera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Disposable single-use camera: a fixed-focus plastic lens, a weak built-in flash and fast consumer film, used without thought at close range. Carry it through built-in flash hotspot, harsh falloff, plastic-lens softness, corner fringing, consumer film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -375,7 +375,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'lensless uniform softness; ghosted motion; heavy corner vignette; infinite soft depth; minutes-long exposure',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pinhole Long Exposure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pinhole camera long exposure: a lensless box with a tiny aperture, so everything is equally soft and exposures run from seconds to minutes. Carry it through lensless uniform softness, ghosted motion, heavy corner vignette, infinite soft depth, minutes-long exposure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -404,7 +404,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'In-camera reversed-film color, not a red duotone filter; tonal range preserved inside the warm band.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Redscale Film as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Redscale film: color negative loaded backwards and exposed through its base, so the red-sensitive layer dominates and the whole scene burns red, orange and amber. Carry it through red-orange-amber palette, yellow highlights, rust-brown shadows, no blues, warm grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'red-orange-amber palette; yellow highlights; rust-brown shadows; no blues; warm grain',
     },
@@ -439,7 +439,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Projected home-movie look without sprocket holes, gate edges, frame counters or scratches drawn as overlay.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Super 8 Home-Movie Film as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Super 8 home movie: a single frame pulled from a tiny-gauge reversal film shot at 18 frames per second on a handheld family camera. Carry it through coarse home-movie grain, 18 fps motion smear, warm reversal color, exposure flicker, handheld softness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'coarse home-movie grain; 18 fps motion smear; warm reversal color; exposure flicker; handheld softness',
     },
@@ -469,7 +469,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Push-processed darkroom print: high contrast and grit, not a clean box-speed tonal scale.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kodak Tri-X Pushed as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Kodak Tri-X pushed to 1600–3200: black-and-white film underexposed in low light and overdeveloped, giving hard contrast and gritty, clumped grain. Carry it through push-processed grit, clumped coarse grain, blocked black shadows, chalky highlights, low available light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'push-processed grit; clumped coarse grain; blocked black shadows; chalky highlights; low available light',
     },
@@ -504,7 +504,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Chemical color shift in the emulsion, not an Instagram split-tone; no vignette or light leaks unless asked.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cross-Processed Slide as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cross-processed slide film: E-6 reversal film developed in C-41 negative chemistry, giving harsh contrast and violently shifted color. Carry it through cyan-green shadows, acid yellow highlights, blown whites, boosted saturation, harsh contrast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'cyan-green shadows; acid yellow highlights; blown whites; boosted saturation; harsh contrast',
     },
@@ -535,7 +535,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Silver-retained print look — desaturated but contrasty — not simple black-and-white or a teal-orange grade.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bleach Bypass Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bleach bypass: the bleach step skipped so silver stays in the image alongside the color dyes, as in gritty war and crime films. Carry it through half-drained color, silver-dense blacks, steely sheen, hard contrast, gritty grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'half-drained color; silver-dense blacks; steely sheen; hard contrast; gritty grain',
     },
@@ -567,7 +567,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Darkroom paper print look, not a sepia filter; each tone zone behaves differently (pepper shadows, soft highlights).',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lith Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Lith print: a heavily overexposed darkroom print developed in dilute lith developer, pulled at the last second, giving peppery black shadows and soft, warm highlights. Carry it through peppery black shadows, salmon-cream highlights, natural split tone, matte fiber paper, darkroom unpredictability. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'peppery black shadows; salmon-cream highlights; natural split tone; matte fiber paper; darkroom unpredictability',
     },
@@ -598,7 +598,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Organic chemical damage in the emulsion, not a digital glitch, overlay texture or double exposure.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Film Soup as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Film soup: color film soaked in household chemicals before shooting, so the damaged emulsion erupts in blooms, bubbles and saturated color stains over a readable photo. Carry it through chemical color blooms, bubble craters, dissolved emulsion patches, readable subject, stained sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'chemical color blooms; bubble craters; dissolved emulsion patches; readable subject; stained sky',
     },

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Vertiginous and sublime, weight hanging where nothing should hold it.
   rendering_and_quality: Aerial-perspective painting with strong value falloff by distance and a sharp, detailed foreground island.
   key_features: inverted rock islands; root-hung strata undersides; chain bridges over void; aerial haze depth; hard high-sun rims
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Suspended Fortress Sublime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Suspended architecture: buildings sit on inverted rock islands torn from the ground, root-hung strata dangling underneath, linked by thin chain bridges across an open void. Carry it through inverted rock islands, root-hung strata undersides, chain bridges over void, aerial haze depth, hard high-sun rims. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - licensed fantasy location
   - copy of a known film or game building

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Haunted, intimate and fragile, a drawing surfacing through fog.
   rendering_and_quality: Single impression with its accidents intact, no crisp lines and no edition-perfect cleanliness.
   key_features: fuzzy stylus-traced lines; hand-pressure ghost smudges; thin Japanese paper; faint plate edge; one-off impression
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Trace Monotype as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Trace monotype: lines drawn with a stylus on paper laid over an inked glass plate, printing soft fuzzy dark lines with ghost smudges from the resting hand. Carry it through fuzzy stylus-traced lines, hand-pressure ghost smudges, thin Japanese paper, faint plate edge, one-off impression. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - brand logo

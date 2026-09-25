@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Top-down floor view with the path spiraling or zigzagging.
   atmosphere_and_mood: Playful, rhythmic, nostalgic and clear, from careful, purposeful drafting.
   rendering_and_quality: Precise technical drafting with consistent line weights and believable conventions.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dance Step Diagram as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Dance step diagram: old instruction-book footprints on a floor plan, with curved arrows and dotted paths showing the steps. Carry it through footprints, turning arrows, dotted paths, partner markers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: footprints; turning arrows; dotted paths; partner markers
 avoidRules:
   - readable text

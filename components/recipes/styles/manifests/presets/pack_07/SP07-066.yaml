@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Clever and tactile, a builder solving every curve with small parts.
   rendering_and_quality: Macro photograph of a real brick model, generic parts only, no minifigures and no brand marks.
   key_features: studs as surface texture; stepped brick curves; offset plate seams; flat molded primaries; macro on a neutral base
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Studded ABS Brick System as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Microscale brick build: the subject assembled from tiny studded plastic bricks, plates and tiles so the studs become surface texture and curves turn into steps. Carry it through studs as surface texture, stepped brick curves, offset plate seams, flat molded primaries, macro on a neutral base. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo on parts
   - readable text

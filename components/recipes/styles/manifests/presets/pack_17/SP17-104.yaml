@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Dynamic tilted crop, extreme foreshortening, and a single oversized subject bursting toward the frame edge.
   atmosphere_and_mood: Gleeful, grotesque, loud, and funny.
   rendering_and_quality: 'High-quality reproduction of a thick crayon-like drawing: bold legible shapes, clean paper, no digital smoothness.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grease Pencil Monster Fanzine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Exaggerated fanzine drawing in thick waxy grease pencil and china marker: fat wobbling lines, cartoonish distortion, stubby hatch, and one flat color tint added by cheap offset. Carry it through thick waxy grease pencil, rubbery exaggeration, skipping line on paper tooth, one offset spot tint, bursting foreshortening. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: thick waxy grease pencil; rubbery exaggeration; skipping line on paper tooth; one offset spot tint; bursting foreshortening
 avoidRules:
   - thin precise pen line

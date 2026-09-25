@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; wide lens emphasising curvature, rounded openings framing depth, a sunken level in the foreground.
   atmosphere_and_mood: Swinging, optimistic and futuristic, the future as imagined then.
   rendering_and_quality: Glossy period colour photograph with clean highlights on curved plastic, no pixel-age screens or modern hardware.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Space-Age Fiberglass Interior as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Space-age interior of the late 1960s: molded white fiberglass shells, curved walls with rounded porthole openings, sunken conversation pits and wall-to-wall shag. Carry it through molded white fiberglass shells, sunken conversation pit, tangerine shag carpet, porthole openings, glowing ceiling domes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: molded white fiberglass shells; sunken conversation pit; tangerine shag carpet; porthole openings; glowing ceiling domes
 avoidRules:
   - furniture catalog staging

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Sleek and precise, a form made of reflections.
   rendering_and_quality: Accurate mirror reflections with correct distortion; no grey plastic.
   key_features: mirror reflections of surroundings; anisotropic streaks; gold or copper tints; black reflected darks; precise highlights
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chrome & Metal as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Chrome and polished metal: mirror-grade reflective surfaces showing the whole environment, with sharp or anisotropic streaked highlights. Carry it through mirror reflections of surroundings, anisotropic streaks, gold or copper tints, black reflected darks, precise highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the surroundings
   - changing the camera

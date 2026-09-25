@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Mischief and unstable luck, the rules visibly breaking.
   rendering_and_quality: Broken contour, small shard displacement and a tightly controlled accent palette.
   key_features: glass-shard fracture; halftone that changes per shard; coral and black with yellow or cobalt; broken contours; radial fracture focal point
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Broken-Rule Halftone Shatter as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Rule-breaking action anime: the picture cracked into angular glass-like shards, each shard shifting color and halftone, with uneven broken contours and abrupt cutout breaks. Carry it through glass-shard fracture, halftone that changes per shard, coral and black with yellow or cobalt, broken contours, radial fracture focal point. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

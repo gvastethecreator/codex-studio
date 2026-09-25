@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested geometry; look up from the lowland so the wall fills the frame and the sea shows at the crest.
   atmosphere_and_mood: Precarious and monumental, calm life under a wall of water.
   rendering_and_quality: Photographic realism with correct haze at the top of the wall; no disaster breach unless asked.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ocean-Barrier Megadam as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Ocean megadam: a curved concrete wall kilometres high holding back a raised sea, spillway gates and buttresses dwarfing the land in its lee. Carry it through kilometre-high curved sea wall, ocean at the brim, buttresses and spillway gates, vast shadow over the lowland, spray at the crest. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: kilometre-high curved sea wall; ocean at the brim; buttresses and spillway gates; vast shadow over the lowland; spray at the crest
 avoidRules:
   - black and gold sci-fi palette by default

@@ -28,7 +28,7 @@ visualDna:
   camera_and_composition: A clean mid-shot that shows the full arc of the smeared part from start pose to end pose.
   atmosphere_and_mood: Snappy, elastic and fast, the energy of a single animation frame.
   rendering_and_quality: Stable on-model anatomy outside the smear, with the smear clearly an intentional animation device.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Smear-Frame Arc Staging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Anime in-between smear frame: the fastest moving part of the subject is drawn as one stretched, distorted ribbon shape along its arc, while the rest of the body stays sharp and on model. Carry it through one stretched smear shape along the arc, rest of body sharp, flat smear color bands, no speed lines, full arc visible. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: one stretched smear shape along the arc; rest of body sharp; flat smear color bands; no speed lines; full arc visible
 avoidRules:
   - added opponent

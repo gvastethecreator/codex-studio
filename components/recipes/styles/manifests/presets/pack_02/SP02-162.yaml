@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Orbital view, the subject expressed as a pattern of light.
   atmosphere_and_mood: Quiet and vast, human life drawn in scattered light.
   rendering_and_quality: Orbital night imagery with no borders, labels or map lines.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Satellite Night Lights as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Satellite night lights: the dark side of the Earth seen from orbit, with settlements as gold and white light clusters threaded by roads. Carry it through gold city lights on black, road webs, dark mountain gaps, blue limb airglow, orbital view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: gold city lights on black; road webs; dark mountain gaps; blue limb airglow; orbital view
 avoidRules:
   - readable readouts

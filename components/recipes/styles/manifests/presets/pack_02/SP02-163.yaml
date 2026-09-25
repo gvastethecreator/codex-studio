@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Page seen flat, the drawing crowding the margin and spilling over the rules.
   atmosphere_and_mood: Absorbed and restless, a lesson ignored for a better idea.
   rendering_and_quality: Real ballpoint on lined paper; handwriting reduced to unreadable squiggles.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Notebook Margin Ballpoint Doodle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Notebook margin doodle: a blue ballpoint drawing grown obsessively in the margin of a lined school notebook, with dense hatching and pressed-in grooves. Carry it through blue ballpoint hatching, lined notebook paper, red margin line, ink blobs and grooves, spilling doodle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: blue ballpoint hatching; lined notebook paper; red margin line; ink blobs and grooves; spilling doodle
 avoidRules:
   - photorealistic rendering

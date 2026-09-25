@@ -32,10 +32,7 @@ visualDna:
     Crisp separation, readable mids, sparse red, precise lines, no fake UI text.
   key_features: >-
     Hard-cut silhouette, compressed negative space, sparse signal red, precise cel shadows
-  creative_brief: >-
-    Apply a visual treatment centered on hard-cut silhouette, compressed negative space,
-    sparse signal red, precise cel shadows. Preserve the exact subject, action, count, age,
-    costume, setting, camera, and mood. Add nothing outside the prompt.
+  creative_brief: "Apply a visual treatment centered on hard-cut silhouette, compressed negative space, sparse signal red, precise cel shadows. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

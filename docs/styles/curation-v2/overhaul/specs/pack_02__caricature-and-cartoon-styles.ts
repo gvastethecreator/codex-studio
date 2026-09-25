@@ -23,9 +23,9 @@ const spec: Spec = {
     },
     'SP02-083': {
       briefs: [
-        "Uncanny valley caricature of an adult butler holding a silver tray: glossy vinyl-smooth skin, eyes set slightly too far apart and a fraction too large, a smile stretched one tooth too wide, a faint puppet seam along the jaw, rigid mirror symmetry, precise vector contours and polished fill. Clearly a drawn caricature, not a photograph. No text or logo.",
-        "Uncanny valley caricature of an adult piano teacher seated at a piano: hands with fingers a little too long and evenly spaced like piano keys, porcelain-smooth face with pupils not quite aligned, hair modeled as one hard plastic shell, sterile polished shading. Clearly a drawn caricature, not a photograph. No text or logo.",
-        "Uncanny valley caricature of a family cat sitting upright on a chair like a person, face almost human with too-regular whiskers and eyes looking in two very slightly different directions, smooth vector rendering with one visible seam around the muzzle. Clearly drawn, not a photograph. No text or logo.",
+        'Uncanny valley caricature of an adult butler holding a silver tray: glossy vinyl-smooth skin, eyes set slightly too far apart and a fraction too large, a smile stretched one tooth too wide, a faint puppet seam along the jaw, rigid mirror symmetry, precise vector contours and polished fill. Clearly a drawn caricature, not a photograph. No text or logo.',
+        'Uncanny valley caricature of an adult piano teacher seated at a piano: hands with fingers a little too long and evenly spaced like piano keys, porcelain-smooth face with pupils not quite aligned, hair modeled as one hard plastic shell, sterile polished shading. Clearly a drawn caricature, not a photograph. No text or logo.',
+        'Uncanny valley caricature of a family cat sitting upright on a chair like a person, face almost human with too-regular whiskers and eyes looking in two very slightly different directions, smooth vector rendering with one visible seam around the muzzle. Clearly drawn, not a photograph. No text or logo.',
       ],
     },
     'SP02-084': {
@@ -60,14 +60,14 @@ const spec: Spec = {
       briefs: [
         'Crude crayon monster devouring an entire birthday cake with jagged crayon teeth, wax-clogged strokes, paper tooth and deliberate color gaps. No text or logo.',
         'Crude crayon monster hiding under a bed with only its uneven circle eyes showing, heavy waxy darkness. No text or logo.',
-        'Crude crayon monster riding a lopsided crayon rocket over scribbled stars. No text or logo.',
+        'Crude crayon drawing of a lopsided monster riding a wobbly crayon rocket over scribbled stars and a smiling moon, wax-clogged flame strokes, uneven circle windows and big gaps in the fill on construction paper. No text or logo.',
       ],
     },
     'SP02-089': {
       briefs: [
         'Grotesque meat-puppet caricature of an adult innkeeper puppet with sagging jowls and stretched latex skin, fine wrinkle marks and layered wet highlights, sickly color contrast. No text or logo.',
         'Grotesque meat-puppet caricature of a sagging walrus puppet in a bath towel, soft bulges and surface tension. No text or logo.',
-        'Grotesque meat-puppet caricature of a puppet grandmother knitting, fine wrinkle marks and swollen knuckles. No text or logo.',
+        'Grotesque meat-puppet caricature of a puppet grandmother knitting in a sagging armchair, swollen knuckles and drooping cheeks, fine wrinkle marks, stretched latex sheen and a ball of yarn rolling away. No text or logo.',
       ],
     },
     'SP02-090': {
@@ -102,7 +102,7 @@ const spec: Spec = {
       briefs: [
         'Flipbook rough animation sheet of an adult acrobat doing a backflip, overlapping key poses, gesture arcs, timing marks and blue construction lines, peg-bar holes at the top. No text or logo.',
         'Flipbook rough animation of a dragon taking off, overlapping wing poses with boiling contours and arc guides. No text or logo.',
-        'Flipbook rough animation of a teapot tipping and pouring, construction circles and timing ticks. No text or logo.',
+        'Flipbook rough animation sheet of a teapot tipping and pouring tea into a cup, overlapping key poses, construction circles, gesture arcs and timing ticks, blue pencil under darker line and peg-bar holes. No text or logo.',
       ],
     },
     'SP02-101': {
@@ -126,7 +126,7 @@ const spec: Spec = {
       briefs: [
         'Sewer grotesque cartoon of three lumpy monsters sharing a pizza crust inside a drainpipe, off-center eyes, rubbery contours, grime marks and a playful toxic palette. No text or logo.',
         'Sewer grotesque cartoon of a monster popping out of a trash can wearing a banana peel as a hat. No text or logo.',
-        'Sewer grotesque cartoon of a grimy one-toothed monster brushing its tooth with a toilet brush. No text or logo.',
+        'Sewer grotesque cartoon of a grimy one-toothed monster brushing its single tooth with a toilet brush under a dripping pipe, off-center eyes, rubbery contours and toxic green grime accents. No text or logo.',
       ],
     },
     'SP02-104': {
@@ -166,14 +166,14 @@ const spec: Spec = {
       briefs: [
         'Loud primary derangement cartoon of a screaming rooster in front of jagged red and yellow bursts, thick crude contour and rubbery stretch. No text or logo.',
         'Loud primary derangement cartoon of a purple bull shouting in a china shop, blocks of primary color and blunt impact shapes. No text or logo.',
-        'Loud primary derangement cartoon of an alarm clock exploding off a nightstand, jagged graphic bursts. No text or logo.',
+        'Loud primary derangement cartoon of an alarm clock exploding off a nightstand at dawn, its bells flying, jagged red and yellow bursts, thick crude contours and a sleeper launched out of bed. No text or logo.',
       ],
     },
     'SP02-109': {
       name: 'Shared-Body Elastic Nonsense',
       briefs: [
         'Shared-body elastic cartoon of a two-headed sock puppet with one stretchy body pulling in two directions, one continuous outline and elastic compression. No text or logo.',
-        'Shared-body elastic cartoon of a two-headed snake stretching toward two different apples. No text or logo.',
+        'Shared-body elastic cartoon of a two-headed snake whose single stretchy body pulls toward two different apples on opposite branches, one continuous outline, accordion compression in the middle and two opposite expressions. No text or logo.',
         'Shared-body elastic cartoon of two bread loaves joined in one elastic crust, each end straining toward a different toaster. No text or logo.',
       ],
     },
@@ -189,7 +189,7 @@ const spec: Spec = {
       name: 'Dumb Couch Slouch Cartoon',
       briefs: [
         'Dumb couch-slouch cartoon of two adult trolls sinking into a sagging couch in front of a dark TV, slack contours, drooping geometry and muted TV colors. No text or logo.',
-        "Dumb couch-slouch cartoon of a lumpy grey stone troll with a tiny head and a huge sagging body half asleep behind a tavern counter, drooping arms, sparse dot eyes. Original design. No readable signs or logo.",
+        'Dumb couch-slouch cartoon of a lumpy grey stone troll with a tiny head and a huge sagging body half asleep behind a tavern counter, drooping arms, sparse dot eyes. Original design. No readable signs or logo.',
         'Dumb couch-slouch cartoon of an adult knight melted into an armchair with his helmet sliding off. No text or logo.',
       ],
     },
@@ -205,7 +205,7 @@ const spec: Spec = {
       name: 'Toxic Suburb Family Cartoon',
       briefs: [
         'Toxic suburb family cartoon of a lopsided house beside a glowing green pond, irregular silhouettes, worn graphic marks and toxic color notes. No text or logo.',
-        'Toxic suburb family cartoon of an adult suburban dad mowing grass that glows radioactive green. No text or logo.',
+        'Toxic suburb family cartoon of an adult suburban dad proudly mowing a lawn that glows radioactive green, lopsided house behind, irregular silhouettes and worn toxic color notes on the fence. No text or logo.',
         'Toxic suburb family cartoon of a three-eyed goldfish in a cloudy bowl on a kitchen counter. No text or logo.',
       ],
     },
@@ -213,7 +213,7 @@ const spec: Spec = {
       name: 'Squiggle-Line Therapy Doodle',
       briefs: [
         "Squiggle-line therapy doodle of an adult patient lying on a therapist's couch, jittering contours, loose line drift, shallow space and soft TV texture. No text or logo.",
-        'Squiggle-line therapy doodle of an adult therapist holding a blank notepad, nodding, low-action framing. No text or logo.',
+        'Squiggle-line therapy doodle of an adult therapist holding a blank notepad and nodding slowly in an armchair, jittering contours, shallow space, soft TV texture and almost no action. No text or logo.',
         'Squiggle-line therapy doodle of a potted cactus on a windowsill, its jittering outline the only movement. No text or logo.',
       ],
     },
@@ -230,29 +230,29 @@ const spec: Spec = {
       briefs: [
         'Photo-cutout menace cartoon of a villain with a photocopied invented face pasted onto a drawn body, scissored edges, mismatched seams and toner grain. No real person, text or logo.',
         'Photo-cutout menace cartoon of a collage cat built from pasted photocopies, flattened depth and photocopy contrast. No text or logo.',
-        'Photo-cutout menace cartoon of a vacuum cleaner monster assembled from cut-out magazine photos. No text or logo.',
+        'Photo-cutout menace cartoon of a vacuum cleaner monster assembled from cut-out magazine photos of hoses and teeth, torn edges, black-and-white photocopy contrast and pasted layers chasing a drawn cat. No text or logo.',
       ],
     },
     'SP02-118': {
       name: 'Crash Zoom Sticker-Card Caricature',
       briefs: [
         'Crash-zoom sticker-card caricature of an adult barber whose hair explodes out of the frame, swollen graphic shapes, thick sticker outline and halftone print. No text or logo.',
-        'Crash-zoom sticker-card caricature of a melting snowman grimacing, crash-zoom crop and gloss accents. No text or logo.',
-        'Crash-zoom sticker-card caricature of a greedy goblin with coins spilling from his mouth. No text or logo.',
+        'Crash-zoom sticker-card caricature of a melting snowman grimacing as the camera slams into his face, swollen dripping shapes, thick sticker outline, halftone dots and a glossy wet highlight. No text or logo.',
+        'Crash-zoom sticker-card caricature of a greedy goblin with gold coins spilling from his stretched mouth, bulging eyes, gooey edges, thick white sticker outline and halftone print texture. No text or logo.',
       ],
     },
     'SP02-119': {
       briefs: [
         'Public-pool mucus monster doodle of a wobbling jelly monster lounging in a kiddie pool, crooked marker contour, liquid wobble, marker bleed and wet-look highlights. No text or logo.',
         'Public-pool marker doodle of a jellyfish wearing a swim ring, naive irregular curves and flow accents. No text or logo.',
-        'Public-pool marker doodle of a leaky water balloon with a worried face, marker bleed. No text or logo.',
+        'Public-pool marker doodle of a leaky water balloon with a worried face floating in a kiddie pool, crooked marker contour, marker bleed, chlorine-blue accents and cheap paper grain. No text or logo.',
       ],
     },
     'SP02-120': {
       briefs: [
         'Toxic marker classroom freakout doodle of a chalkboard eraser monster, scratchy marker strokes, irregular doodle marks crowding the edges, ink feather and paper tooth. No text or logo.',
-        'Toxic marker doodle of a pencil sharpener chewing pencils, correction accents. No text or logo.',
-        'Toxic marker doodle of a lunchbox with teeth snapping at a sandwich. No text or logo.',
+        'Toxic marker classroom freakout doodle of a pencil sharpener monster chewing a pile of pencils, scratchy permanent-marker strokes, malformed doodles crowding the edges and ink feathering into the paper. No text or logo.',
+        'Toxic marker classroom freakout doodle of a lunchbox with teeth snapping at a sandwich on a school desk, scratchy marker lines, restless doodles crowding every edge and ink feather. No text or logo.',
       ],
     },
   },

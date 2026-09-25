@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Create a fragile digital presence through controlled signal breakup, without implying a message, remote caller or mission.
   rendering_and_quality: Keep scanline spacing deliberate, edge ghosts subtle and any distortion tied to the subject; use no fake text or interface graphics.
   key_features: Translucent monochrome bands; horizontal scanline grain; restrained ghost contours; localized signal breakup.
-  creative_brief: 'Render the requested wearer and clothing with a holographic signal surface: translucent bands, scanlines and subtle interference. Preserve identity, pose, role, scene and framing; do not add a sender, message, projector, portal or transmission destination.'
+  creative_brief: "Render the requested wearer and clothing with a holographic signal surface: translucent bands, scanlines and subtle interference. Preserve identity, pose, role, scene and framing; do not add a sender, message, projector, portal or transmission destination. Use it as a reusable look on any subject."
 avoidRules:
   - solid
   - generic cosplay

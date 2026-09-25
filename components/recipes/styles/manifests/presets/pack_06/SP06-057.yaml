@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Poetic, reflective and dreamlike, two worlds inside one form.
   rendering_and_quality: Clean mask edge with soft internal fades; no hard collage cut lines and no cluttered background.
   key_features: subject silhouette as a mask; second scene inside; soft feathered fade to white; aligned inner horizon; muted tinted palette
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Silhouette Double Exposure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Silhouette double exposure: a clean subject silhouette used as a mask, filled with a second scene that blends softly into a pale background. Carry it through subject silhouette as a mask, second scene inside, soft feathered fade to white, aligned inner horizon, muted tinted palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - concept board layout

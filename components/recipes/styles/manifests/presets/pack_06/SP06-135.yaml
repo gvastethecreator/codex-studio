@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; elegant stylized shapes with generous white paper.
   atmosphere_and_mood: Chic, luminous and elegant, a hand-colored fashion plate.
   rendering_and_quality: Crisp stencil boundaries filled with dabbed hand color; no screenprint ink film and no digital flat fills.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pochoir Hand Stencil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Pochoir: a fine line image colored by hand through a series of cut stencils, gouache or watercolor dabbed with brushes so each color sits in a crisp stencil shape. Carry it through crisp cut-stencil color shapes, dabbed brush stipple inside shapes, brilliant gouache palette, metallic gold accents, fine key line. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: crisp cut-stencil color shapes; dabbed brush stipple inside shapes; brilliant gouache palette; metallic gold accents; fine key line
 avoidRules:
   - photo

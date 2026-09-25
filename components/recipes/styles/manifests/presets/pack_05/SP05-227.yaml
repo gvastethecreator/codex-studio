@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Brittle, tense and worn, the quiet of something slowly giving way.
   rendering_and_quality: Hairline fine-liner precision against loose rust watercolor, with selective cyan glints and a readable silhouette.
   key_features: dense 0.1 mm fine-liner tangles; rust watercolor blooms and backruns; slate and black ink; cold cyan glints; downward slanting line rhythm
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rust-Wire Descent as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Technical-pen tangle drawing: dense 0.1 mm fine-liner cable lines layered over rust-stained watercolor blooms, with small cold cyan glints. Carry it through dense 0.1 mm fine-liner tangles, rust watercolor blooms and backruns, slate and black ink, cold cyan glints, downward slanting line rhythm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

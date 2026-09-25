@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Considered and calm, a mood distilled into color and touch.
   rendering_and_quality: Crisp tile edges, accurate material textures and a palette obvious at thumbnail size; no captions.
   key_features: six to nine tiles; paint chips; fabric swatches; material samples; one shared palette
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Moodboard Color Story as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Moodboard color story: cropped images of the subject beside fabric swatches, paint chips and material samples, all tuned to one small palette. Carry it through six to nine tiles, paint chips, fabric swatches, material samples, one shared palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - uniform beige torn-paper wash over every image
   - red tape strips added by default

@@ -474,7 +474,7 @@ const spec: Spec = {
       avoid: [...AVOID, 'rain-soaked neon street'],
       briefs: [
         'Armored chrome noir illustration of an adult chrome-plated android jazz singer leaning into an old ribbon microphone, airbrushed mirror banding with a reflected horizon line across her torso, velvet black background, pinpoint starburst glints. No text or logo.',
-        "Armored chrome noir illustration of an invented chrome hover-sled shaped like a stretched teardrop with no wheels, fins and a single slit headlight, floating in total darkness, its curved hull carrying hard black-and-white reflection bands and a tiny magenta glint at the nose. Not a real car model. No text or logo.",
+        'Armored chrome noir illustration of an invented chrome hover-sled shaped like a stretched teardrop with no wheels, fins and a single slit headlight, floating in total darkness, its curved hull carrying hard black-and-white reflection bands and a tiny magenta glint at the nose. Not a real car model. No text or logo.',
         'Armored chrome noir illustration of a black swan gliding on still dark water, kept a real swan, its wet feathers reflecting chrome-like bands and tiny cyan glints. No text or logo.',
       ],
     },

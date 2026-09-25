@@ -20,7 +20,7 @@ visualDna:
   camera_and_composition: 85–105 mm portrait lens at f/5.6–8, eye-level camera, tight vertical crop with a little headroom and no environmental clutter.
   atmosphere_and_mood: Confident, calm, credible, and quietly approachable.
   rendering_and_quality: Tack-sharp eyes, smooth tonal gradations on the backdrop, and retouching that stays invisible at full size.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Studio Headshot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Premium studio headshot photography: one large softbox key, controlled fill, and a seamless backdrop that isolates the sitter with precise, trustworthy polish. Carry it through large softbox key, hair-light separation, seamless grey backdrop, invisible retouching, eyes on the upper third. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: large softbox key; hair-light separation; seamless grey backdrop; invisible retouching; eyes on the upper third
 avoidRules:
   - generic stock-photo face

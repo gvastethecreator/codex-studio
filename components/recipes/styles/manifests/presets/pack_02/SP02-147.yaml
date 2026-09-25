@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Straight sagittal, axial or coronal slice, subject centered on black.
   atmosphere_and_mood: Calm and revealing, a quiet map of an inside.
   rendering_and_quality: Clinical MRI look with no text, markers or diagnosis.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies MRI Slice as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "MRI slice: a thin cross-section through the subject where soft tissues separate into smooth grey tones, water bright or dark depending on the weighting. Carry it through thin cross-section slice, smooth greyscale soft tissue, black background, sagittal or axial view, faint ringing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: thin cross-section slice; smooth greyscale soft tissue; black background; sagittal or axial view; faint ringing
 avoidRules:
   - readable readouts

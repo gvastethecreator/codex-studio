@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Functional and heavy, a form dictated by how it strikes.
   rendering_and_quality: Precise production finish with clean edges, no motion effects and no background scene.
   key_features: strict side elevation; full length across the frame; cross-section slices; hand silhouette for scale; one accent material
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Weapon Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Weapon design orthographic: one weapon drawn in strict side elevation at full length, painted in greyscale over clean line, with cross-section slices. Carry it through strict side elevation, full length across the frame, cross-section slices, hand silhouette for scale, one accent material. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable annotations
   - readable text

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Cosmic and silent, vast distance rendered as quiet structure.
   rendering_and_quality: 'Clean stacked-image look: low noise, no star trails, no painted glow; a ground subject belongs to Milky Way Nightscape instead.'
   key_features: telescope deep-sky view; emission reds and oxygen teals; dust pillars; pinpoint stars; black background
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Astrophotography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Deep-sky astrophotography: a tracked telescope and hours of stacked exposures revealing nebulae, galaxies, comets and planets against black space. Carry it through telescope deep-sky view, emission reds and oxygen teals, dust pillars, pinpoint stars, black background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - zoo snapshot
   - oversaturated postcard

@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'multi-bounce indirect light; color bleeding; soft open shadows; darker tight corners; natural gradients',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Global Illumination as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Global illumination lighting: light bouncing between surfaces so shadows fill softly and colors bleed from one surface to the next. Carry it through multi-bounce indirect light, color bleeding, soft open shadows, darker tight corners, natural gradients. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -54,7 +54,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'visible light cones; atmospheric depth fade; shadow beams through fog; drifting wisps; silhouetted foreground',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Volumetric Fog as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Volumetric fog lighting: participating media fills the scene, so every light becomes a visible cone and depth fades into haze. Carry it through visible light cones, atmospheric depth fade, shadow beams through fog, drifting wisps, silhouetted foreground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -80,7 +80,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'key, fill and back light; 45-degree key; edge separation; balanced exposure; dark backdrop',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Studio Lighting (3 Point) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Three-point CGI lighting rig: a key, a fill and a back light placed around the subject for clean shape, separation and balanced exposure. Carry it through key, fill and back light, 45-degree key, edge separation, balanced exposure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -108,7 +108,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'image-based lighting; environment in reflections; matched sun hotspot; environment-derived color; grounded shadows',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies HDRI Environment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "HDRI environment lighting: a captured 360-degree environment lights the subject and appears in every reflection, so light and reflections match a real place. Carry it through image-based lighting, environment in reflections, matched sun hotspot, environment-derived color, grounded shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -133,7 +133,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'contact darkness only; white matte surfaces; soft crevice gradients; no light direction; geometry-driven shading',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ambient Occlusion Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ambient occlusion pass: a render where only contact darkness shows — corners, creases and touching surfaces darken while everything else stays near white. Carry it through contact darkness only, white matte surfaces, soft crevice gradients, no light direction, geometry-driven shading. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -162,7 +162,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'thin bright silhouette edge; dark subject; twin back lights; fresnel edges; controlled bloom',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rendered Rim Light Rig as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Rendered rim light rig: CGI back lights placed behind the subject so a thin bright edge traces its silhouette against a dark background. Carry it through thin bright silhouette edge, dark subject, twin back lights, fresnel edges, controlled bloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -190,7 +190,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'crisp rendered beams; occluder pattern; dust particles; diagonal shafts; lifted haze',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rendered Volumetric Shafts as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Rendered volumetric shafts: a strong light behind an occluder rendered through a participating medium, producing crisp beams with dust particles. Carry it through crisp rendered beams, occluder pattern, dust particles, diagonal shafts, lifted haze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -216,7 +216,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'miniature-scaled lights; macro depth falloff; cozy saturated palette; model-kit materials; tiny window glows',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Diorama Lighting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Diorama lighting: small warm lights and a soft key scaled to a miniature, with shallow macro depth of field that makes any scene read as a handmade model. Carry it through miniature-scaled lights, macro depth falloff, cozy saturated palette, model-kit materials, tiny window glows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -246,7 +246,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Moody and electric, darkness drawn with glowing lines.',
       rendering_and_quality: 'Clean emissive GI with bloom; no readable signage.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Emissive Neon Geometry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Emissive-only lighting: the scene lit solely by glowing emissive shapes — tubes, panels and trims — with no other lights at all. Carry it through emissive shapes as only light, colored glossy reflections, soft long shadows, dark surfaces, bloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'emissive shapes as only light; colored glossy reflections; soft long shadows; dark surfaces; bloom',
     },
@@ -280,7 +280,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Accurate photometric light distributions, with no readable labels on any fixture.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies IES Profile Wall Wash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "IES profile wall wash: photometric light fixtures casting their characteristic scalloped and cone patterns onto walls, as in architectural visualization. Carry it through scalloped light pools, repeating fixture rhythm, warm color temperature, grazing wall texture, crisp pool edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'scalloped light pools; repeating fixture rhythm; warm color temperature; grazing wall texture; crisp pool edges',
     },
@@ -313,7 +313,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Physically based sky gradients rendered smoothly, without HDR banding or halos.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Physical Sky Scattering as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Physical sky scattering: a simulated atmosphere where sun angle sets the sky color through Rayleigh and Mie scattering, from deep blue noon to red dusk. Carry it through sun-angle sky gradients, aerial perspective haze, directional sun with sky dome, colored long shadows, soft sun disk. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'sun-angle sky gradients; aerial perspective haze; directional sun with sky dome; colored long shadows; soft sun disk',
     },
@@ -344,7 +344,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Dramatic and changing, weather deciding what is lit.',
       rendering_and_quality: 'High-detail volumetric clouds with fine wisps and no blocky noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Volumetric Cloud Silver Lining as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Volumetric cloud lighting: rendered clouds with dense cores and backlit edges glowing silver, casting moving shadows across the land. Carry it through silver-lined cloud edges, dark cores, cloud shadows on the ground, sun through gaps, billowing detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'silver-lined cloud edges; dark cores; cloud shadows on the ground; sun through gaps; billowing detail',
     },
@@ -375,7 +375,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean projected pattern without image content; distinct from projector imagery.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gobo Pattern Shadows as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Gobo pattern lighting: a spotlight through a cut-out cookie projecting shaped shadows — leaves, window bars, lattice — across the subject and set. Carry it through cut-out pattern shadows, spotlight cookie, pattern wrapping forms, theatrical dark ambient, focusable edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'cut-out pattern shadows; spotlight cookie; pattern wrapping forms; theatrical dark ambient; focusable edges',
     },
@@ -407,7 +407,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Playful and scientific, color born from light itself.',
       rendering_and_quality: 'Accurate additive color mixing; not colored gels on a dark scene.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies RGB Colored Shadows as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "RGB colored shadows: three lights in red, green and blue from different directions, so white surfaces glow neutral while each shadow turns a vivid color. Carry it through red, green and blue lights, cyan-magenta-yellow shadows, white neutral lit areas, fanned shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'red, green and blue lights; cyan-magenta-yellow shadows; white neutral lit areas; fanned shadows; additive mixing',
     },
@@ -433,7 +433,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Graphic and stylish, reality simplified into shapes of light.',
       rendering_and_quality: 'Crisp banded lighting on 3D forms; no outlines unless requested.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Two-Tone Ramp Lighting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Two-tone ramp lighting: realistic 3D forms lit through a stepped ramp, so light and shadow snap into two or three clean bands with a colored terminator. Carry it through two or three light bands, saturated terminator line, hard transitions, single key, graphic 3D forms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'two or three light bands; saturated terminator line; hard transitions; single key; graphic 3D forms',
     },
@@ -459,7 +459,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Quiet and melancholic, a calm grey day with nothing hidden.',
       rendering_and_quality: 'Even dome lighting; not the ambient occlusion pass look.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Overcast Dome Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Overcast dome lighting: a uniform white sky dome lighting everything from above with no sun, like a grey cloudy day. Carry it through uniform white sky dome, no directional shadows, soft contact darkening, low contrast, even detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'uniform white sky dome; no directional shadows; soft contact darkening; low contrast; even detail',
     },
@@ -490,7 +490,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp single-source lighting with no fill light softening the shadows.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hard Noon Sun as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hard noon sun: a single tiny sun directly overhead, casting short black shadows straight down and bleaching the tops of every surface. Carry it through sun directly overhead, short black pooled shadows, bleached tops, deep blue sky, no fill. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'sun directly overhead; short black pooled shadows; bleached tops; deep blue sky; no fill',
     },
@@ -523,7 +523,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp overlapping multi-source shadows with a slight glare around each lamp.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stadium Floodlight Multi-Shadow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Stadium floodlight lighting: four or more powerful lights from high corners, giving every object several crossed shadows radiating in different directions. Carry it through several crossed shadows per object, high corner lights, cool white glare, bright even ground, night sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'several crossed shadows per object; high corner lights; cool white glare; bright even ground; night sky',
     },
@@ -558,7 +558,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean, noise-free night render with smooth auroral gradients across the sky.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Aurora Sky Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Aurora sky lighting: the night lit by curtains of green, violet and pink aurora, casting a soft shifting colored glow onto snow, water and faces. Carry it through green and violet aurora curtains, colored ambient on snow, nearly shadowless, stars, reflections on ice. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'green and violet aurora curtains; colored ambient on snow; nearly shadowless; stars; reflections on ice',
     },
@@ -587,7 +587,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean low-light eclipse render with smooth gradients and no visible noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Eclipse Corona Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Total eclipse lighting: the sun hidden behind the moon, a white corona ring in a dark sky, and a strange dim 360-degree sunset glow along the horizon. Carry it through black sun with white corona, indigo daytime sky, 360-degree horizon glow, dim flat light, eerie mood. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'black sun with white corona; indigo daytime sky; 360-degree horizon glow; dim flat light; eerie mood',
     },

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Energetic action crop with a clear black-line focal subject and color doubles offset in one consistent direction.
   atmosphere_and_mood: Chaotic, pulpy, electric, and slightly dizzy.
   rendering_and_quality: 'Controlled chaos: black key crisp, misregistration consistent and intentional, dots readable, no smeared blur.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Misregistered CMY Chaos Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Cheap offset print gone wrong: cyan, magenta, and yellow separations slide several millimeters apart, creating ghost edges, color fringes, and vibrating doubled contours around a strong black key. Carry it through drifting CMY plates, sharp black key, ghost color fringes, rosette halftone, newsprint pulp energy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: drifting CMY plates; sharp black key; ghost color fringes; rosette halftone; newsprint pulp energy
 avoidRules:
   - perfect registration

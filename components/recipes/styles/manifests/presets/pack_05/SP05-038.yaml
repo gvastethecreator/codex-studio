@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Quiet unease and introspection, pressure felt in the empty space more than seen.
   rendering_and_quality: Airy hand-drawn marks, sparse distortion and a large share of untouched paper.
   key_features: searching pencil contours; wide blank space; subtly warped peripheral shapes; airy pastels; acid yellow-green accent
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Psychedelic Psychic Minimalism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Minimal psychic anime: plain forms drawn with lightly layered searching pencil contours in wide blank space, with a few peripheral shapes subtly warped as if bent by pressure. Carry it through searching pencil contours, wide blank space, subtly warped peripheral shapes, airy pastels, acid yellow-green accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

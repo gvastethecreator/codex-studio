@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Tripod or braced camera; still subject centered or on a third, motion flowing past on both sides.
   atmosphere_and_mood: Calm inside rush, a single point of stillness while the world streams past.
   rendering_and_quality: Optical motion blur with a genuinely sharp anchor, not a digital radial blur.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Slow-Shutter Crowd Drag as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Slow-shutter drag: a quarter to one second exposure where one still subject stays sharp while everything moving streaks around it. Carry it through one sharp still subject, streaked moving crowd, quarter-second exposure, ghosted figures, stillness versus flow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: one sharp still subject; streaked moving crowd; quarter-second exposure; ghosted figures; stillness versus flow
 avoidRules:
   - illustration

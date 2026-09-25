@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Crowded, humid and lonely at once, a city too tall to see the sky.
   rendering_and_quality: Real-time volumetric fog with bloom and screen-space reflections; emissive panels read as light sources, not flat stickers.
   key_features: emissive sign panels as key lights; stacked haze layers; stretched neon reflections; no sun; glyph shapes without letters
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon City (Cyberpunk) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Neon megacity environment render: towering stacked blocks lit by hundreds of emissive sign panels, sky bridges and haze layers receding into a lit night fog. Carry it through emissive sign panels as key lights, stacked haze layers, stretched neon reflections, no sun, glyph shapes without letters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise likeness
   - recognizable game or film world

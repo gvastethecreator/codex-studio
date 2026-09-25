@@ -69,8 +69,8 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'photoreal space render'],
       briefs: [
-        "Silver Age cosmic comic image of an elderly bearded alchemist in a hooded violet robe prying open a glowing lead casket; a storm of black cosmic energy dots and machine-like crackle bursts out around his foreshortened hands, bright magenta, cyan and yellow flat colors, blocky square-cornered ink. Single image, no panels, balloons, text or logo.",
-        "Silver Age cosmic comic image of a colossal crystalline space whale with a spiral shell on its back swimming over a cratered moon, tiny rocket ships near its fins for scale, radial black-dot energy burst behind, blocky square-cornered ink, flat magenta, cyan and yellow. No humanoid hero, no cape or chest emblem. Single image, no panels, balloons, text or logo.",
+        'Silver Age cosmic comic image of an elderly bearded alchemist in a hooded violet robe prying open a glowing lead casket; a storm of black cosmic energy dots and machine-like crackle bursts out around his foreshortened hands, bright magenta, cyan and yellow flat colors, blocky square-cornered ink. Single image, no panels, balloons, text or logo.',
+        'Silver Age cosmic comic image of a colossal crystalline space whale with a spiral shell on its back swimming over a cratered moon, tiny rocket ships near its fins for scale, radial black-dot energy burst behind, blocky square-cornered ink, flat magenta, cyan and yellow. No humanoid hero, no cape or chest emblem. Single image, no panels, balloons, text or logo.',
         'Silver Age cosmic comic image of a chrome robot gorilla punching through a laboratory wall, bricks and dot crackle flying toward the viewer, flat print color. Single image, no panels, balloons, text or logo.',
       ],
     },

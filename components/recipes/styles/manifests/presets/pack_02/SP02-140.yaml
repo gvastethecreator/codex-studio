@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Full-length or three-quarter figure before a painted balustrade or drapery backdrop, small format card.
   atmosphere_and_mood: Formal and charming, a calling card meant to be traded.
   rendering_and_quality: Glossy albumen card look; not a salt print and not a tintype.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Albumen Carte de Visite as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Albumen carte de visite: an 1860s small card portrait printed on egg-white-coated paper and mounted on a card, with a painted studio backdrop. Carry it through glossy sepia-purple albumen, mounted card with rounded corners, painted studio backdrop, foxing, formal pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: glossy sepia-purple albumen; mounted card with rounded corners; painted studio backdrop; foxing; formal pose
 avoidRules:
   - illustration

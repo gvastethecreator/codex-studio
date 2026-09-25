@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Sacred and dramatic, light made solid in the air.
   rendering_and_quality: Clean rendered volumes; the photographic and cinematic shafts live in pack_01 and pack_02.
   key_features: crisp rendered beams; occluder pattern; dust particles; diagonal shafts; lifted haze
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rendered Volumetric Shafts as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Rendered volumetric shafts: a strong light behind an occluder rendered through a participating medium, producing crisp beams with dust particles. Carry it through crisp rendered beams, occluder pattern, dust particles, diagonal shafts, lifted haze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the geometry
   - adding a new environment

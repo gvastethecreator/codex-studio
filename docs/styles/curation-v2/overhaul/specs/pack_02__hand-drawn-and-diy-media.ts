@@ -70,7 +70,7 @@ const spec: Spec = {
       briefs: [
         'Crumpled-paper scribble of a lighthouse keeper cat in a raincoat drawn in pencil and blue ink, the flattened paper crossed by sharp creases, low side light casting tiny shadows on every fold. No readable text or logo.',
         'Crumpled-paper scribble of a sailing ship in a storm, the ink broken where it crossed the folds, a coffee stain in one corner. No readable text or logo.',
-        'Crumpled-paper scribble of a sleeping fox curled in a teacup, yellowed paper with abraded fibers. No readable text or logo.',
+        'Crumpled-paper scribble of a sleeping fox curled inside a teacup, pencil and ink lines broken by sharp creases, yellowed paper with abraded fibers and tiny shadows on every fold. No readable text or logo.',
       ],
     },
     'SP02-093': {
@@ -198,7 +198,7 @@ const spec: Spec = {
       avoid: BASE,
       briefs: [
         'Notebook margin ballpoint doodle of a knight on a winged horse drawn in dense blue hatching along the red margin line of a lined page, ink blobs and pressed grooves, spilling across the rules. No readable handwriting or logo.',
-        'Notebook margin doodle of a tower of stacked cats wearing crowns, overworked shiny ballpoint patches. No readable handwriting or logo.',
+        'Notebook margin ballpoint doodle of a tower of stacked cats wearing crowns climbing the margin of a lined page, dense blue hatching, overworked shiny ballpoint patches and pressed-in grooves. No readable handwriting or logo.',
         'Notebook margin doodle of a sea monster coiling around the page edge, hatching getting darker toward the spine. No readable handwriting or logo.',
       ],
     },
@@ -226,7 +226,7 @@ const spec: Spec = {
       briefs: [
         'Sticky-note wall mosaic of a green dragon breathing orange fire, built from dozens of square notes on a pale office wall, curled corners casting tiny shadows, one note fallen to the floor. No writing or logo.',
         'Sticky-note mosaic of a giant yellow sun with a smiling face over pink mountains, visible gaps between the notes. No writing or logo.',
-        'Sticky-note mosaic of a cyan whale leaping from lime waves, coarse square grid. No writing or logo.',
+        'Sticky-note wall mosaic of a cyan whale leaping from lime-green waves, each square note one coarse pixel on a pale office wall, curled corners and a few notes fluttering loose. No writing or logo.',
       ],
     },
     {
@@ -252,7 +252,7 @@ const spec: Spec = {
       briefs: [
         'Continuous-line toy screen drawing of a castle on a hill with a winding road, one unbroken dark line of stair-stepped diagonals on silver-grey powder, red plastic frame edge. No brand name or logo.',
         'Continuous-line toy screen drawing of a cat face with long whiskers, curves built from tiny steps. No brand name or logo.',
-        'Continuous-line toy screen drawing of a steam locomotive with zig-zag filled smoke. No brand name or logo.',
+        'Toy screen sketch of a steam locomotive crossing a trestle bridge, its smoke drawn as zig-zag scribbles filling the sky, every curve built from tiny steps of one never-lifted line, a knob-turning hand at the corner. No brand name or logo.',
       ],
     },
     {
@@ -329,7 +329,7 @@ const spec: Spec = {
       briefs: [
         'Carved desk graffiti of a skull wearing a pirate hat gouged into an old varnished school desk, fresh pale grooves and blue ink rubbed into older cuts, window light showing their depth. No initials, words or logo.',
         'Carved desk graffiti of a rocket circling a planet, splintered edges among layers of older scratches. No initials, words or logo.',
-        'Carved desk graffiti of a lightning-struck tree, ink pooled in the deepest grooves. No initials, words or logo.',
+        'Carved desk graffiti of a lightning-struck tree gouged into an old varnished school desk, ink pooled in the deepest grooves, splintered edges and faint older carvings around it. No initials, words or logo.',
       ],
     },
     {
@@ -379,8 +379,8 @@ const spec: Spec = {
       avoid: BASE,
       briefs: [
         'Graph-paper pixel doodle of a knight holding a flaming sword, each graph square filled by hand with streaky felt pen, pale blue grid showing through, one square colored by mistake. No text or logo.',
-        'Graph-paper pixel doodle of a mushroom house with a smoking chimney, bright limited colors. No text or logo.',
-        'Graph-paper pixel doodle of a jumping frog catching a fly, fills slightly over the lines. No text or logo.',
+        'Graph-paper pixel doodle of a mushroom house with a smoking chimney and a tiny door, each square filled by hand with streaky felt pen in bright limited colors, pale grid showing through. No text or logo.',
+        'Graph-paper pixel doodle of a jumping frog catching a fly with its long tongue, felt-pen fills slightly over the lines, a pale blue grid and one crossed-out square. No text or logo.',
       ],
     },
     {
@@ -484,8 +484,8 @@ const spec: Spec = {
       avoid: BASE,
       briefs: [
         'Glowing peg-board picture of a red dragon curled around a yellow sun, each translucent peg a glowing dot on a black backlit board, soft glow halos. No brand name or text.',
-        'Glowing peg-board picture of a blue jellyfish drifting with green tentacles. No brand name or text.',
-        'Glowing peg-board picture of an orange campfire under white stars. No brand name or text.',
+        'Glowing peg-board picture of a blue jellyfish drifting with long green tentacles, each translucent peg a glowing dot of light on a black backlit board with soft halos. No brand name or text.',
+        'Glowing peg-board picture of an orange campfire under white stars with two tiny travelers beside it, translucent pegs glowing on a black backlit board, a few empty holes. No brand name or text.',
       ],
     },
     {
@@ -509,7 +509,7 @@ const spec: Spec = {
       avoid: BASE,
       briefs: [
         'Gear-ring spiral drawing of a peacock whose tail is made of overlapping rosette patterns in teal, purple and gold gel pen, a slipped-wheel wobble in one loop. No brand name or text.',
-        'Gear-ring spiral drawing of a flower bouquet where each bloom is a different looping rosette. No brand name or text.',
+        'Gear-ring spiral drawing of a flower bouquet where each bloom is a different looping rosette in pink, orange and violet gel pen, stems drawn as long thin hypotrochoid loops, one pen skip. No brand name or text.',
         'Gear-ring spiral drawing of an owl built from nested spirals, pen skips in the fine lines. No brand name or text.',
       ],
     },

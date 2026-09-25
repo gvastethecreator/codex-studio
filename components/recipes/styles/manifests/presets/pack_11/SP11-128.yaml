@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Isometric sheet with a flow arrow and title block left blank.
   atmosphere_and_mood: Industrial, systematic, precise and clean, from careful, purposeful drafting.
   rendering_and_quality: Precise technical drafting with consistent line weights and believable conventions.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Isometric Piping Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Piping isometric: single-line pipe runs drawn on a 30-degree grid with valves, flanges and elbows as symbols. Carry it through isometric grid, single-line pipes, valve symbols. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: isometric grid; single-line pipes; valve symbols
 avoidRules:
   - readable text

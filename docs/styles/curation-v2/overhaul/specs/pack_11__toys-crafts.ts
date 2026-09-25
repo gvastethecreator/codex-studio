@@ -312,7 +312,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Photograph of an ice-carved dragon at a winter festival, wings clear and thin, chisel marks and frosty edges, lit blue from below at night. No text or logo.',
-        'Ice-carved knight holding a sword, clear ice with trapped bubbles, melting drips at the base, lit by warm torchlight. No text or logo.',
+        'Photograph of an ice-carved knight holding a sword upright in a frozen courtyard, clear ice with trapped bubbles and chisel marks, meltwater dripping from the gauntlets, lit amber by torches on the castle wall. No text or logo.',
         'Ice-carved throne in a frozen hall, chisel marks on the armrests, frost on the seat, cold blue light passing through it. No text or logo.',
       ],
     },

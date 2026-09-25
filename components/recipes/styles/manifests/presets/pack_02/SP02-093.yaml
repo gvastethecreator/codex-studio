@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Ancient and ritual, the first images made by firelight.
   rendering_and_quality: Real pigment on stone; not a flat tribal graphic and not modern clip art.
   key_features: ochre and charcoal pigment; spray-blown hand stencils; rock relief as volume; torchlight; overlapping figures
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Prehistoric Cave Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Prehistoric cave painting: ochre, charcoal and red iron pigment blown and smeared onto a bumpy limestone wall by firelight. Carry it through ochre and charcoal pigment, spray-blown hand stencils, rock relief as volume, torchlight, overlapping figures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photorealistic rendering
   - 3d render

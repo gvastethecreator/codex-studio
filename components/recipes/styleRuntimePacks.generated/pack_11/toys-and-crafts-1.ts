@@ -30,7 +30,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal craft-object rendering with believable scale, material detail and construction evidence.',
       key_features: 'studded bricks; stepped curves; plastic gloss',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Interlocking Brick Build as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Interlocking brick build: the subject assembled from studded plastic building bricks. Carry it through studded bricks, stepped curves, plastic gloss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -60,7 +60,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal craft-object rendering with believable scale, material detail and construction evidence.',
       key_features: 'oversized head; small body; blank eyes; matte vinyl',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Big-Head Vinyl Collectible as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Big-head vinyl collectible: stylized figure with oversized square head, small body and blank black eyes. Carry it through oversized head, small body, blank eyes, matte vinyl. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -90,7 +90,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal craft-object rendering with believable scale, material detail and construction evidence.',
       key_features: 'soft dough; fingerprints; drying cracks',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Modeling Dough Clay as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Modeling dough: soft bright dough rolled and pinched with fingerprints and cracks. Carry it through soft dough, fingerprints, drying cracks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -117,7 +117,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal craft-object rendering with believable scale, material detail and construction evidence.',
       key_features: 'folded paper facets; glue tabs',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Papercraft Low Poly as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Papercraft low poly: folded paper model with flat faceted panels and glue tabs. Carry it through folded paper facets, glue tabs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -145,7 +145,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal craft-object rendering with believable scale, material detail and construction evidence.',
       key_features: 'crochet stitches; safety eyes; stuffed',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Amigurumi Crochet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Amigurumi crochet: small crocheted stuffed figures with single-crochet stitches and safety eyes. Carry it through crochet stitches, safety eyes, stuffed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -173,7 +173,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal craft-object rendering with believable scale, material detail and construction evidence.',
       key_features: 'minky fabric; seams; embroidered eyes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Plushie as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Plushie: soft stuffed toy with fleece or minky fabric, seams and embroidered features. Carry it through minky fabric, seams, embroidered eyes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -201,7 +201,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal craft-object rendering with believable scale, material detail and construction evidence.',
       key_features: 'swivel joints; sculpted plastic; paint apps',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Action Figure (90s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "90s action figure: hard plastic figure with visible joints, sculpted muscles and painted details. Carry it through swivel joints, sculpted plastic, paint apps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -227,7 +227,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal craft-object rendering with believable scale, material detail and construction evidence.',
       key_features: 'twisted balloons; glossy latex',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Balloon Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Balloon art: the subject twisted from long modeling balloons. Carry it through twisted balloons, glossy latex. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -254,7 +254,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal craft-object rendering with believable scale, material detail and construction evidence.',
       key_features: 'turned wood; dowels; simple paint',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wooden Toy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Wooden toy: turned and carved wood toy with rounded shapes and simple paint. Carry it through turned wood, dowels, simple paint. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -281,7 +281,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal craft-object rendering with believable scale, material detail and construction evidence.',
       key_features: 'die-cut sticker; white border; glossy',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sticker Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sticker art: die-cut vinyl sticker with thick white border and glossy print. Carry it through die-cut sticker, white border, glossy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -309,7 +309,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal craft-object rendering with believable scale, material detail and construction evidence.',
       key_features: 'plasticine puppets; wide grins; fingerprints',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Clay Stop-Motion Comedy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Clay stop-motion comedy: plasticine characters with big grins and fingerprinted surfaces on a miniature set. Carry it through plasticine puppets, wide grins, fingerprints. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -336,7 +336,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal craft-object rendering with believable scale, material detail and construction evidence.',
       key_features: 'lithographed tin; tabs; wind-up key',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tin Toy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tin toy: lithographed tin-plate toy with wind-up key and tabs. Carry it through lithographed tin, tabs, wind-up key. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -363,7 +363,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal craft-object rendering with believable scale, material detail and construction evidence.',
       key_features: 'shadow box; layered miniature scene',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Diorama Box as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Diorama box: a miniature scene built inside an open box with layered depth. Carry it through shadow box, layered miniature scene. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -390,7 +390,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal craft-object rendering with believable scale, material detail and construction evidence.',
       key_features: 'button eyes; stitched cloth; yarn hair',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Button Eye Doll as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Button-eye doll: stitched cloth doll with button eyes and yarn hair. Carry it through button eyes, stitched cloth, yarn hair. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -416,7 +416,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal craft-object rendering with believable scale, material detail and construction evidence.',
       key_features: 'craft mosaic tiles; grout',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mosaic Tile as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Craft mosaic tile: small ceramic craft tiles glued onto a form. Carry it through craft mosaic tiles, grout. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -443,7 +443,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal craft-object rendering with believable scale, material detail and construction evidence.',
       key_features: 'embroidery stitches; hoop; linen',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Embroidery as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Embroidery: the subject stitched in thread on fabric in a hoop. Carry it through embroidery stitches, hoop, linen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -469,7 +469,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal craft-object rendering with believable scale, material detail and construction evidence.',
       key_features: 'layered colored sand; glass',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sand Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sand art: colored sand layered in a glass bottle into patterns and scenes. Carry it through layered colored sand, glass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -496,7 +496,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal craft-object rendering with believable scale, material detail and construction evidence.',
       key_features: 'carved clear ice; chisel marks',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ice Carving as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ice carving: the subject carved from clear ice with chisel marks. Carry it through carved clear ice, chisel marks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -526,7 +526,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal craft-object rendering with believable scale, material detail and construction evidence.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paper Theater Puppets as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Paper theater: flat printed cardboard figures on sticks in a miniature stage with layered wings. Carry it through flat card cut-outs, toy stage, layered wings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'flat card cut-outs; toy stage; layered wings',
     },
     ui: {
@@ -560,7 +560,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal craft-object rendering with believable scale, material detail and construction evidence.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Resin Garage Kit as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Resin garage kit: hand-painted resin model on a sculpted base with fine brushwork. Carry it through hand-painted resin, washes, sculpted base. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'hand-painted resin; washes; sculpted base',
     },
     ui: {

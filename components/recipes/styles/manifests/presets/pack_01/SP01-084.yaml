@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Sensorial and smooth, texture you want to touch presented with calm luxury.
   rendering_and_quality: Premium beauty campaign polish; no grit, harsh contrast or clutter.
   key_features: ribbon gloss highlights; product swirls and drops; pearl and blush palette; creamy gradients; soft reflection
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cosmetic Gloss Still Life as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cosmetic gloss still life: beauty-product advertising built on liquid highlights, creamy textures and translucent color. Carry it through ribbon gloss highlights, product swirls and drops, pearl and blush palette, creamy gradients, soft reflection. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - fake brand logo
   - readable labels

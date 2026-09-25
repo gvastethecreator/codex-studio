@@ -20,7 +20,7 @@ visualDna:
   camera_and_composition: Clean separation between shape and background, generous negative space, low or eye-level camera to lift the outline against the light.
   atmosphere_and_mood: Mysterious, poetic, and iconic.
   rendering_and_quality: Crisp outline edges, no muddy gray inside the figure, smooth luminous gradient behind.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Silhouette Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Silhouette portraiture: the subject reduced to a pure dark shape against an intensely bright field, identity carried entirely by profile and outline. Carry it through pure black shape, backlit exposure, readable profile outline, luminous background gradient, edge halo. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: pure black shape; backlit exposure; readable profile outline; luminous background gradient; edge halo
 avoidRules:
   - generic stock-photo face

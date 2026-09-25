@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Nostalgic, crafted and adventurous, a console-era world.
   rendering_and_quality: Every edge snapped to the pixel grid, deliberate clusters without orphan pixels, hue-shifted ramps; no UI and no readable text.
   key_features: hand-placed pixels on a grid; 32 to 64 color palette; hue-shifted shading ramps; checkerboard dither; no interface elements
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pixel Art (16-bit) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "16-bit pixel art: a scene drawn pixel by pixel on a low-resolution grid with a limited palette, hand-placed anti-aliasing and dithered transitions. Carry it through hand-placed pixels on a grid, 32 to 64 color palette, hue-shifted shading ramps, checkerboard dither, no interface elements. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - concept board layout

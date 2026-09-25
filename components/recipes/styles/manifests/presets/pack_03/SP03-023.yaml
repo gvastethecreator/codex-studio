@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Orderly and inviting, a tiny world you can take in at a glance.
   rendering_and_quality: Clean isometric render with parallel lines and no perspective distortion at all.
   key_features: isometric orthographic camera; cutaway square block; no perspective; soft top-left key; tidy detail
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Isometric 3D as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Isometric 3D: the scene seen through a parallel orthographic camera at the classic isometric angle, usually as a neat cutaway block. Carry it through isometric orthographic camera, cutaway square block, no perspective, soft top-left key, tidy detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - franchise likeness

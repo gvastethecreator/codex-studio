@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Quiet, cold loneliness carried by sparse marks and long empty intervals, never outright tragedy.
   rendering_and_quality: Crisp planar ink drawing with fissure contours and flat chalk fills, no soft gradients; always illustrated, never a photographed crystal or stone.
   key_features: branching fissure contours; few unequal flat planes; chalk, slate and graphite values; single mica-silver glint; wide empty margins
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mineral Loneliness Fracture Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Seinen ink illustration whose contours branch like hairline fissures in slate, splitting every form into a few large unequal planes of flat chalky tone. Carry it through branching fissure contours, few unequal flat planes, chalk, slate and graphite values, single mica-silver glint. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

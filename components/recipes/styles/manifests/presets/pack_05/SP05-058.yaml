@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Quiet grief and detachment, a distance that the lens itself enforces.
   rendering_and_quality: Thin line, soft cel shading, lens blur and bokeh, lifted-black grade and faint grain; nothing saturated.
   key_features: shallow depth of field with round bokeh; thin brown line art; lifted-black blue-gray grade; fine film grain; single cold-white highlight
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Remote Command Grief as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Muted cinematic digital anime: thin brown line art, simulated shallow depth of field with round bokeh, and a cold blue-gray grade with lifted blacks. Carry it through shallow depth of field with round bokeh, thin brown line art, lifted-black blue-gray grade, fine film grain, single cold-white highlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; three-quarter view on a rounded corner so horizontals sweep around it.
   atmosphere_and_mood: Breezy, fast and sunny, a building dressed as an ocean liner.
   rendering_and_quality: Clean photograph with smooth curved gradients and crisp horizontals, no Art Deco zigzags or vertical crowns.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Streamline Moderne as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Streamline Moderne architecture: horizontal speed lines, rounded corners and curved end walls, porthole windows, glass block and ship-like railings on smooth white render. Carry it through rounded corners with horizontal speed lines, porthole windows, curved glass block walls, tubular ship railings, smooth white render. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: rounded corners with horizontal speed lines; porthole windows; curved glass block walls; tubular ship railings; smooth white render
 avoidRules:
   - golden-hour hero facade formula

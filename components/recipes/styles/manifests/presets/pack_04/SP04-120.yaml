@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Heads in an even grid, mostly front and three-quarter, identical size and head proportion.
   atmosphere_and_mood: Lively and consistent, one personality in many moods.
   rendering_and_quality: On-model consistency across every head; no captions for the emotions.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Expression Model Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Expression model sheet: one character head drawn nine to twelve times in clean line with a single grey tone, each with a different expression. Carry it through nine to twelve heads, one character, clean line plus one grey tone, even grid, faint construction lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: nine to twelve heads; one character; clean line plus one grey tone; even grid; faint construction lines
 avoidRules:
   - placeholder gibberish text

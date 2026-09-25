@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Peaceful, joyful, idealistic and free, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Warm, saturated vintage film finish, with believable fabric weight, seams and fit detail.
   key_features: bell-bottoms; tie-dye; flower headband; fringed vest; handmade beads
-  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hippie (60s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
+  creative_brief: "1960s hippie: flower-power clothing — bell-bottoms, peasant blouses, tie-dye, fringe, headbands and handmade beads. Carry it through bell-bottoms, tie-dye, flower headband, fringed vest, handmade beads. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - readable label text

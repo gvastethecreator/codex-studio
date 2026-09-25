@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Calm, clinical and optimistic, a future that has been sanded smooth.
   rendering_and_quality: Clean product-grade render with soft reflections; no clouds, rings or orbital setting added by default.
   key_features: cornerless white polymer shells; seamless molded joints; rounded oval thresholds; cyan seam glow; shadowless cove light
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Futuristic Pod as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Pod architecture: rooms and shells molded as cornerless white polymer capsules with seamless joints, rounded thresholds and soft cyan light embedded in the seams. Carry it through cornerless white polymer shells, seamless molded joints, rounded oval thresholds, cyan seam glow, shadowless cove light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - black and gold sci-fi palette by default
   - franchise ship or station likeness

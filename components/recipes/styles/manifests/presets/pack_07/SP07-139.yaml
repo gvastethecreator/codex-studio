@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested geometry; circular rings frame the view, looking up to the sky disc or down into the dark.
   atmosphere_and_mood: Enclosed and communal, a city turned inside out.
   rendering_and_quality: Painterly realism with a smooth light gradient from opening to depth.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vertical Shaft Sinkhole City as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Shaft city: a city lining the inner walls of a colossal cylindrical sinkhole, ring terraces spiraling down, the only sky a disc of light far above. Carry it through city lining a cylindrical sinkhole, spiral ring terraces, bright sky disc overhead, light fading with depth, cantilevered platforms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: city lining a cylindrical sinkhole; spiral ring terraces; bright sky disc overhead; light fading with depth; cantilevered platforms
 avoidRules:
   - black and gold sci-fi palette by default

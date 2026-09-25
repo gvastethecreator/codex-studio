@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; look up through layers of painted ironwork galleries, one huge wheel or beam crossing the frame.
   atmosphere_and_mood: Grand, proud and mechanical, engineering dressed as a temple.
   rendering_and_quality: Detailed photograph with crisp ornament and clean paint, oil sheen, no steampunk gadget clutter.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Victorian Pumping Station Ironwork as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Victorian pumping station ironwork: an engine house turned into a cathedral of machinery, with ornate cast-iron columns, galleries and brackets painted in polychrome around giant beam engines. Carry it through polychrome painted cast-iron columns, foliate capitals and pierced galleries, giant beam engines, polished brass, tall arched windows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: polychrome painted cast-iron columns; foliate capitals and pierced galleries; giant beam engines; polished brass; tall arched windows
 avoidRules:
   - one-point corridor perspective as default

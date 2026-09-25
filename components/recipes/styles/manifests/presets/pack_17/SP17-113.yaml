@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Uneasy off-center crop with tilted verticals and an isolated subject in an empty, stained field.
   atmosphere_and_mood: Anxious, feverish, intimate, and disturbing.
   rendering_and_quality: 'High-quality drypoint reproduction: burr controlled and meaningful, subject readable, no digital noise.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Drypoint Burr Nightmare as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Nervous drypoint scratched directly into the plate: jittery needle lines with fuzzy velvet burr, sudden dark knots, torn scratches, and uneven wiped plate tone. Carry it through jittery needle line, velvet burr knots, uneven wiped plate tone, trembling contours, feverish unease. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: jittery needle line; velvet burr knots; uneven wiped plate tone; trembling contours; feverish unease
 avoidRules:
   - clean engraving

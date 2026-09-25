@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: One subject filling the frame, centered and head-on, with big bold patterns inside the shapes.
   atmosphere_and_mood: Calm, clear and captivating for the very youngest eyes.
   rendering_and_quality: Maximal contrast and minimal detail; no gradients, no small parts and no busy background.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies High-Contrast Baby Board Book as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Infant board book graphics: huge simple shapes in black, white and one red, with bold stripes, dots and spirals a baby can see. Carry it through black white and red only, huge flat shapes, stripe dot and spiral patterns, centered head-on subject, rounded board corners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: black white and red only; huge flat shapes; stripe dot and spiral patterns; centered head-on subject; rounded board corners
 avoidRules:
   - frightening gore

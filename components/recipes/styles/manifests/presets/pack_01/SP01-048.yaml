@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Intimate and strange, a small alien world seen at its own scale.
   rendering_and_quality: Crisp focal plane with creamy falloff; no wide-angle view and no blurry subject.
   key_features: 1:1 magnification; paper-thin focus on the eyes; diffused macro flash; dew and scale detail; creamy background
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Macro Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Field macro photography: a 100 mm macro lens at 1:1 in nature, with a paper-thin plane of focus and a soft diffused flash revealing a tiny world. Carry it through 1:1 magnification, paper-thin focus on the eyes, diffused macro flash, dew and scale detail, creamy background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - zoo snapshot
   - oversaturated postcard

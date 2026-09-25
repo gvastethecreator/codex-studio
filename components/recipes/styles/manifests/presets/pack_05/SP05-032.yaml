@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Coiled menace and cool confidence, danger held in shadow.
   rendering_and_quality: Big black shapes read first; smoke ribbons and rims carry the only color, with no particle confetti.
   key_features: brush-pen contour; spotted black masses; ink-smoke energy ribbons; cyan-violet rim light; tilted horizon
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gritty Urban Curses as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Dark modern exorcism anime: confident brush-pen contours, large spotted black shadow masses, and supernatural energy drawn as ink-smoke ribbons rimmed in cyan and violet. Carry it through brush-pen contour, spotted black masses, ink-smoke energy ribbons, cyan-violet rim light, tilted horizon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

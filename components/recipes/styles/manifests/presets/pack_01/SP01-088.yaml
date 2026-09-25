@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close frontal framing with the subject near the backdrop so the halo shadow is visible.
   atmosphere_and_mood: Loud, pop, confrontational, and fun.
   rendering_and_quality: Crisp commercial finish, circular catchlights clearly visible in both eyes.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ring Flash Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Ring-flash portrait photography: a circular light around the lens that flattens the face, rings the eyes with donut catchlights, and wraps the subject in a thin even shadow halo. Carry it through ring flash donut catchlights, thin halo shadow, flat on-axis face light, saturated pop color, glossy speculars. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: ring flash donut catchlights; thin halo shadow; flat on-axis face light; saturated pop color; glossy speculars
 avoidRules:
   - generic stock-photo face

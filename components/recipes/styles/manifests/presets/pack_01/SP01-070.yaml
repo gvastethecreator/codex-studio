@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Curious and restless, the pleasure of arriving somewhere far from home.
   rendering_and_quality: Magazine travel realism with restrained grading; no brochure gloss, selfie framing or tourist-trap staging.
   key_features: traveler for scale; route and path in frame; local accent color; warm raking daylight; tactile place detail
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Travel Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Editorial travel photography: a place discovered through a traveler, with the journey layered into the frame as route, scale and local light. Carry it through traveler for scale, route and path in frame, local accent color, warm raking daylight, tactile place detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - staged advertisement
   - stock-photo gloss

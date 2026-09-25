@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Humble, capable and attentive, the satisfaction of a job done properly.
   rendering_and_quality: Crisp focal structure and useful rather than decorative detail, with no heavy effects or bloom.
   key_features: hairline mechanical lineart; brass specular glints; grounded proportions; construction-readable three-quarter angle; calm single-tone shadow
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fine-Line Brass Glint Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Practical anime cel drawing with hairline mechanical lineart, grounded realistic proportions and small warm brass specular glints on every metal part. Carry it through hairline mechanical lineart, brass specular glints, grounded proportions, construction-readable three-quarter angle, calm single-tone shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway

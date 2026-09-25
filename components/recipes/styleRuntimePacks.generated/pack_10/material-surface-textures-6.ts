@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'scattered chips; polished matrix; decorative surface pattern',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Terrazzo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Terrazzo: polished composite with scattered stone and glass chips in a cement matrix. Carry it through scattered chips, polished matrix, decorative surface pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -54,7 +54,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'dramatic flowing veins; decorative surface pattern',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Marble Texture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Marble veining texture: dramatic flowing veins across polished stone. Carry it through dramatic flowing veins, decorative surface pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -81,7 +81,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'flowing grain lines; knots; decorative surface pattern',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wood Grain as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Wood grain texture: bold flowing grain lines and knots across the surface. Carry it through flowing grain lines, knots, decorative surface pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -108,7 +108,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'twill carbon weave; glossy; decorative surface pattern',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carbon Fiber as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Carbon fiber weave: glossy twill pattern of black fibers. Carry it through twill carbon weave, glossy, decorative surface pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -135,7 +135,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'leather grain; saddle stitching; decorative surface pattern',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Leather Texture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Leather texture: pebbled or embossed leather grain with stitching. Carry it through leather grain, saddle stitching, decorative surface pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -162,7 +162,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'dense glitter sparkle; decorative surface pattern',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glitter Texture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Glitter texture: dense sparkling glitter coating. Carry it through dense glitter sparkle, decorative surface pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -189,7 +189,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'rust blooms and streaks; decorative surface pattern',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rust Texture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Rust texture: decorative rust blooms and streaks as surface pattern. Carry it through rust blooms and streaks, decorative surface pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -216,7 +216,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'holographic diffraction foil; decorative surface pattern',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Holographic Foil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Holographic foil: rainbow diffraction foil that shifts color with angle. Carry it through holographic diffraction foil, decorative surface pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -243,7 +243,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'interlocking ring pattern; decorative surface pattern',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chainmail as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Chainmail texture: ring pattern as a decorative surface. Carry it through interlocking ring pattern, decorative surface pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -270,7 +270,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'snake scale markings; decorative surface pattern',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Snake Skin as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Snake skin texture: scale pattern with bold markings as decorative surface. Carry it through snake scale markings, decorative surface pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -297,7 +297,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'gold-repaired cracks; decorative surface pattern',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kintsugi as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Kintsugi: broken ceramic repaired with gold-filled seams. Carry it through gold-repaired cracks, decorative surface pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -327,7 +327,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Raku Crackle Glaze as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Raku glaze: crackled white glaze with smoky black craze lines and metallic flashes. Carry it through raku crackle, smoky lines, copper flash, decorative surface pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'raku crackle; smoky lines; copper flash; decorative surface pattern',
     },
     ui: {
@@ -360,7 +360,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Damascus Steel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Damascus steel: flowing layered wave patterns in etched steel. Carry it through Damascus wave pattern, decorative surface pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Damascus wave pattern; decorative surface pattern',
     },
     ui: {
@@ -393,7 +393,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Burl Wood Figure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Burl wood: swirling chaotic grain with eyes and clusters. Carry it through swirling burl figure, eyes, decorative surface pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'swirling burl figure; eyes; decorative surface pattern',
     },
     ui: {
@@ -426,7 +426,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mokume-gane as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Mokume-gane: layered mixed metals forming wood-grain-like patterns. Carry it through layered metal grain, decorative surface pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'layered metal grain; decorative surface pattern',
     },
     ui: {
@@ -459,7 +459,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tadelakt Plaster as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tadelakt: burnished lime plaster with soft sheen and subtle cloudy variation. Carry it through burnished plaster, cloudy sheen, decorative surface pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'burnished plaster; cloudy sheen; decorative surface pattern',
     },
     ui: {
@@ -492,7 +492,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cloisonné Enamel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cloisonné: glossy colored enamel fields separated by fine gold wire cells. Carry it through enamel in gold wire cells, decorative surface pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'enamel in gold wire cells; decorative surface pattern',
     },
     ui: {
@@ -525,7 +525,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Guilloché Engraving as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Guilloché: machine-engraved repeating wave and sunburst patterns under enamel. Carry it through engine-turned grooves, sunburst, decorative surface pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'engine-turned grooves; sunburst; decorative surface pattern',
     },
     ui: {
@@ -559,7 +559,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Urushi Lacquer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Urushi lacquer: deep glossy lacquer in black and vermilion with maki-e gold sprinkles. Carry it through deep lacquer, maki-e gold, decorative surface pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'deep lacquer; maki-e gold; decorative surface pattern',
     },
     ui: {
@@ -592,7 +592,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hammered Metal as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hammered metal: dimpled facets from hand hammering catching light. Carry it through hammered dimples, decorative surface pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'hammered dimples; decorative surface pattern',
     },
     ui: {

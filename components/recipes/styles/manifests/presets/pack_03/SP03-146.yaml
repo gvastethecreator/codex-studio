@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested camera; curved and folded areas of the model face the viewer to show distortion.
   atmosphere_and_mood: Playful and diagnostic, a test pattern wrapped around form.
   rendering_and_quality: Clean viewport-style render with a sharp grid and no other material; seams and stretches left visible.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies UV Checker Grid Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "UV checker test shader: the model wrapped in a colored checker grid that exposes its texture mapping, with stretching, pinching and seams visible. Carry it through colored checker grid, stretched cells on strained areas, visible UV seams, orientation arrows only, simple viewport light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: colored checker grid; stretched cells on strained areas; visible UV seams; orientation arrows only; simple viewport light
 avoidRules:
   - sensor noise

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low tripod near the waterline, a strong foreground rock or structure, leading lines into the smooth sea.
   atmosphere_and_mood: Meditative and calm, time made visible as silence.
   rendering_and_quality: Clean long exposure without noise; no frozen splashing waves.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Long-Exposure Seascape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Long-exposure seascape: a tripod and dense ND filter stretching the exposure to thirty seconds or more, turning moving sea into mist and silk around still rocks. Carry it through silky misted water, streaked clouds, sharp still rocks, low tripod foreground, pastel dusk. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: silky misted water; streaked clouds; sharp still rocks; low tripod foreground; pastel dusk
 avoidRules:
   - illustration

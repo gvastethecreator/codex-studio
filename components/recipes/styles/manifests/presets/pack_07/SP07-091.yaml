@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; show the steep triangular gable facing the valley, roof far taller than the walls, several houses aligned the same way.
   atmosphere_and_mood: Sheltering, communal and patient, a roof built to carry deep snow.
   rendering_and_quality: Photograph with clear thatch layering and rope-lashed joinery, no fantasy exaggeration or souvenir lanterns.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gassho Thatch Farmhouse as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Gassho-zukuri farmhouse of the snowy Japanese mountains: a very steep A-frame roof of thick grass thatch, like hands pressed together, over a timber house with several attic floors inside the roof. Carry it through steep A-frame grass thatch roof, rope-lashed rafters without nails, multi-storey attic in the roof, soot-darkened beams from the hearth, gables aligned to the valley. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: steep A-frame grass thatch roof; rope-lashed rafters without nails; multi-storey attic in the roof; soot-darkened beams from the hearth; gables aligned to the valley
 avoidRules:
   - golden-hour hero facade formula

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; include the corona or horizon glow when the sky is visible.
   atmosphere_and_mood: Eerie and awe-struck, day turned wrong for a few minutes.
   rendering_and_quality: Clean low-light eclipse render with smooth gradients and no visible noise.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Eclipse Corona Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Total eclipse lighting: the sun hidden behind the moon, a white corona ring in a dark sky, and a strange dim 360-degree sunset glow along the horizon. Carry it through black sun with white corona, indigo daytime sky, 360-degree horizon glow, dim flat light, eerie mood. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: black sun with white corona; indigo daytime sky; 360-degree horizon glow; dim flat light; eerie mood
 avoidRules:
   - changing the geometry

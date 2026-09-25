@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Kinetic and glossy, spectacle blazing across the lens.
   rendering_and_quality: True anamorphic flare behavior on invented designs, never any franchise ships or costumes.
   key_features: long horizontal blue flares; oval highlights; lens veiling; lights aimed at the lens; glossy blacks
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Anamorphic Overflare as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Anamorphic overflare: bright lights pointed into an anamorphic lens so long horizontal blue streaks and veiling flares cross the frame. Carry it through long horizontal blue flares, oval highlights, lens veiling, lights aimed at the lens, glossy blacks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested location
   - franchise likeness

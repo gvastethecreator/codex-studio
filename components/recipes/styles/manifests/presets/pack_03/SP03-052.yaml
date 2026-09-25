@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Powerful and poised, motion implied while the machine stands completely still.
   rendering_and_quality: Reflection lines continuous across panel gaps, floor reflection softly faded, and no dirt, dents or motion blur.
   key_features: overhead light canopy; unbroken horizon reflection; low front three-quarter; color-flop metallic paint; turned front wheels
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Automotive Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Automotive CGI studio render: a vehicle under a vast overhead light canopy, its paint showing one clean horizon reflection flowing unbroken from nose to tail. Carry it through overhead light canopy, unbroken horizon reflection, low front three-quarter, color-flop metallic paint, turned front wheels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - multi-view asset sheet
   - fake labels

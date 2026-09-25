@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Delicate and precious, beauty that could break at a touch.
   rendering_and_quality: Glazed ceramic with subtle translucency; not matte plaster.
   key_features: glassy white glaze; translucent thin rims; fine crackle; cobalt painted accents; pooled glaze
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Porcelain as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Glazed porcelain: fine white ceramic with a glassy glaze, milky translucency at thin edges and tiny crackle lines. Carry it through glassy white glaze, translucent thin rims, fine crackle, cobalt painted accents, pooled glaze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the surroundings
   - changing the camera

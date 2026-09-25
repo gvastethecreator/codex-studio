@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Angled downward view with depth receding to a high horizon or distant haze; subject in the near third.
   atmosphere_and_mood: Expansive and exploratory, the land revealed as a whole shape at once.
   rendering_and_quality: Aerial survey clarity with haze falloff; distinct from a straight-down drone view and from tilt-shift miniature blur.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Low Oblique Aerial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Low oblique aerial: a camera in a helicopter or small plane looking down at 30–45 degrees from a few hundred meters, showing relief, depth and often the horizon. Carry it through 30–45 degree downward angle, raking dawn light, terrain relief, distant haze and horizon, tiny human scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: 30–45 degree downward angle; raking dawn light; terrain relief; distant haze and horizon; tiny human scale
 avoidRules:
   - illustration

@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Rounded pressure-suit volume; gasketed cuffs and collar; beta-cloth texture; compact retro hardware accents.',
       creative_brief:
-        'Restyle the requested outfit as a retro pressure suit with padded segments, gasketed joins and archival canvas-and-metal detailing. Preserve wearer, pose, role, setting and frame; make helmet, tether and pack optional, with no agency logo or mission scene.',
+        'Restyle the requested outfit as a retro pressure suit with padded segments, gasketed joins and archival canvas-and-metal detailing. Preserve wearer, pose, role, setting and frame; make helmet, tether and pack optional, with no agency logo or mission scene. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -58,7 +58,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Foam-faceted panels; thermoplastic edgework; bonded and painted seam joins; modular trim with crafted scale.',
       creative_brief:
-        'Rebuild the requested clothing as a hand-fabricated performance costume using shaped foam, thermoplastic trims and precise joined panels. Preserve wearer, pose, role, scene and framing; add no licensed likeness, convention setting, wig, mask or prop unless requested.',
+        'Rebuild the requested clothing as a hand-fabricated performance costume using shaped foam, thermoplastic trims and precise joined panels. Preserve wearer, pose, role, scene and framing; add no licensed likeness, convention setting, wig, mask or prop unless requested. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -87,7 +87,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Airy sheer over-layers; long floating hems; fine silver-thread seams; delicate glass-like trim.',
       creative_brief:
-        'Transform the requested wardrobe into airy fantasy formalwear with translucent sleeves, layered drape, fine silvered stitching and light trims. Preserve identity, anatomy, pose, role, scene and framing; do not add wings, horns, crown or magical events.',
+        'Transform the requested wardrobe into airy fantasy formalwear with translucent sleeves, layered drape, fine silvered stitching and light trims. Preserve identity, anatomy, pose, role, scene and framing; do not add wings, horns, crown or magical events. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -116,7 +116,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Victorian panel layering; gear-like fastener accents; brass against leather and tweed; vertical tailored lines.',
       creative_brief:
-        'Reinterpret the requested wardrobe as Victorian mechanical tailoring with structured waist layers, fine brass fasteners, chain accents and woven cloth. Preserve wearer, role, pose, scene and framing; do not add a workshop, machine, hat or goggles unless requested.',
+        'Reinterpret the requested wardrobe as Victorian mechanical tailoring with structured waist layers, fine brass fasteners, chain accents and woven cloth. Preserve wearer, role, pose, scene and framing; do not add a workshop, machine, hat or goggles unless requested. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -145,7 +145,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Water-sealed shell layers; offset zip paths; webbing and clipped pocket modules; restrained signal piping.',
       creative_brief:
-        'Transform the requested clothing into technical modular outerwear with sealed layers, offset seams, webbing and compact pocket modules. Preserve wearer, pose, role, scene and framing; keep hood, armor inserts and signal lights optional, and add no mission or props.',
+        'Transform the requested clothing into technical modular outerwear with sealed layers, offset seams, webbing and compact pocket modules. Preserve wearer, pose, role, scene and framing; keep hood, armor inserts and signal lights optional, and add no mission or props. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -174,7 +174,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Transparent veil panels; lens-bent contour edges; localized background displacement; fine prismatic fringe.',
       creative_brief:
-        'Add refractive veil surfaces to the requested clothing with transparent panels, subtle lens bending and prismatic edges. Preserve wearer, identity, pose, role, scene and frame; keep concealment localized unless total invisibility is explicitly requested.',
+        'Add refractive veil surfaces to the requested clothing with transparent panels, subtle lens bending and prismatic edges. Preserve wearer, identity, pose, role, scene and frame; keep concealment localized unless total invisibility is explicitly requested. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -203,7 +203,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Luminous flex-circuit paths; hexagonal junctions; matte technical panels; restrained local emissive glow.',
       creative_brief:
-        'Restyle the requested wardrobe as a neon circuit suit with illuminated seam paths over matte technical panels. Preserve wearer, body, role, pose, scene and framing; colors follow the prompt, with no grid arena, vehicle or default helmet.',
+        'Restyle the requested wardrobe as a neon circuit suit with illuminated seam paths over matte technical panels. Preserve wearer, body, role, pose, scene and framing; colors follow the prompt, with no grid arena, vehicle or default helmet. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -232,7 +232,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Translucent monochrome bands; horizontal scanline grain; restrained ghost contours; localized signal breakup.',
       creative_brief:
-        'Render the requested wearer and clothing with a holographic signal surface: translucent bands, scanlines and subtle interference. Preserve identity, pose, role, scene and framing; do not add a sender, message, projector, portal or transmission destination.',
+        'Render the requested wearer and clothing with a holographic signal surface: translucent bands, scanlines and subtle interference. Preserve identity, pose, role, scene and framing; do not add a sender, message, projector, portal or transmission destination. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -261,7 +261,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Light-absorbing near-black cloth; smoke-soft garment edges; selective rim separation; legible negative-space silhouette.',
       creative_brief:
-        'Transform the requested wardrobe into shadow couture using velvety dark fabric, soft-edged hems and restrained rim detail. Preserve identity, anatomy, pose, role, scene and framing; do not create a ghost, smoke-body, void or new setting.',
+        'Transform the requested wardrobe into shadow couture using velvety dark fabric, soft-edged hems and restrained rim detail. Preserve identity, anatomy, pose, role, scene and framing; do not create a ghost, smoke-body, void or new setting. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -294,7 +294,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, glossy, detailed finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chitin Insectoid Armor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Chitin insectoid armor: segmented iridescent exoskeleton plates shaped like beetle, mantis or wasp shells, overlapping at joints with membrane-like fabric between. Carry it through segmented iridescent chitin plates, membrane joints, elytra cape panels, oil-slick sheen, raking light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'segmented iridescent chitin plates; membrane joints; elytra cape panels; oil-slick sheen; raking light',
     },
@@ -328,7 +328,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Long robe columns; deep cowl folds; bell-sleeve drape; fine celestial stitchwork.',
       creative_brief:
-        'Reinterpret the requested clothing as mage-inspired robes with vertical drape, layered hems, cowl folds and fine celestial embroidery. Preserve identity, anatomy, role, pose, scene and frame; keep hood optional and add no spell, wand, book or school setting.',
+        'Reinterpret the requested clothing as mage-inspired robes with vertical drape, layered hems, cowl folds and fine celestial embroidery. Preserve identity, anatomy, role, pose, scene and frame; keep hood optional and add no spell, wand, book or school setting. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -357,7 +357,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Patched denim and flannel; taped repair seams; wrapped cuffs; layered protective bulk.',
       creative_brief:
-        'Turn the requested clothing into repaired utilitywear with patched fabric, taped seams and wrapped cuffs. Preserve wearer, identity, anatomy, pose, role, scene and framing; add no wounds, weapons, zombies or outbreak setting.',
+        'Turn the requested clothing into repaired utilitywear with patched fabric, taped seams and wrapped cuffs. Preserve wearer, identity, anatomy, pose, role, scene and framing; add no wounds, weapons, zombies or outbreak setting. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -386,7 +386,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Architectural waist shaping; vertical sleeve and train lines; beaded or luminous textile layers; optional halo-like headpiece.',
       creative_brief:
-        'Restyle the requested outfit as ceremonial space-opera couture with sculpted tailoring, flowing textile architecture and fine luminous ornament. Preserve wearer, role, pose, location and framing; do not imply royal rank or add a court, throne or species.',
+        'Restyle the requested outfit as ceremonial space-opera couture with sculpted tailoring, flowing textile architecture and fine luminous ornament. Preserve wearer, role, pose, location and framing; do not imply royal rank or add a court, throne or species. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -415,7 +415,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Close-fit performance knit; bold angular panel blocking; gauntlet-to-boot seam rhythm; optional cape or emblem by request.',
       creative_brief:
-        'Transform the requested clothing into a graphic heroic suit with matte stretch fabric and bold, original panel geometry. Preserve wearer, anatomy, pose, role, scene, palette and framing; add no default cape, emblem, franchise colors, powers or mission.',
+        'Transform the requested clothing into a graphic heroic suit with matte stretch fabric and bold, original panel geometry. Preserve wearer, anatomy, pose, role, scene, palette and framing; add no default cape, emblem, franchise colors, powers or mission. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -473,7 +473,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Mismatched protective layers; wrapped cuffs; patched canvas and denim; salvaged fasteners and shoulder panels.',
       creative_brief:
-        'Turn the requested clothing into repaired scavenged survivalwear with mismatched layers, wrapped cuffs, patched cloth and salvaged fasteners. Preserve wearer, role, pose, scene and framing; add no weapon, vehicle, injury or apocalypse.',
+        'Turn the requested clothing into repaired scavenged survivalwear with mismatched layers, wrapped cuffs, patched cloth and salvaged fasteners. Preserve wearer, role, pose, scene and framing; add no weapon, vehicle, injury or apocalypse. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -502,7 +502,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Raised sculptural collar; tapered longline tailoring; velvet and satin contrast; optional cape and signet ornaments.',
       creative_brief:
-        'Restyle the requested wardrobe with gothic longline tailoring, a high collar, rich lining and measured ornament. Preserve wearer, identity, role, pose, scene and frame; cape, medallion and crimson are optional, with no vampire anatomy or manor.',
+        'Restyle the requested wardrobe with gothic longline tailoring, a high collar, rich lining and measured ornament. Preserve wearer, identity, role, pose, scene and frame; cape, medallion and crimson are optional, with no vampire anatomy or manor. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -531,7 +531,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Capsule-contour seam map; sealed support bands; reinforced collar connectors; polymer and neoprene transitions.',
       creative_brief:
-        'Turn the requested clothes into a mech-interface suit with ergonomic seam maps, sealed support bands and compact connectors. Preserve wearer, pose, role, scene and framing; add no cockpit, machine, neural port or mission.',
+        'Turn the requested clothes into a mech-interface suit with ergonomic seam maps, sealed support bands and compact connectors. Preserve wearer, pose, role, scene and framing; add no cockpit, machine, neural port or mission. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -560,7 +560,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Implant-like seam channels; carbon contour bands; titanium and silicone transitions; discreet interface nodes.',
       creative_brief:
-        'Add cybernetic couture detail to the requested wardrobe through contour seams, carbon panels and discreet interface hardware. Preserve identity, anatomy, pose, role, scene and framing; perform no surgery or limb replacement unless explicitly requested.',
+        'Add cybernetic couture detail to the requested wardrobe through contour seams, carbon panels and discreet interface hardware. Preserve identity, anatomy, pose, role, scene and framing; perform no surgery or limb replacement unless explicitly requested. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -589,7 +589,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Scalloped scale lattice; fin-like garment seams; fluid tapered panels; nacre and organza sheen.',
       creative_brief:
-        'Transform the requested wardrobe into pelagic couture with scale-patterned panels, fin-like hems and fluid iridescent cloth. Preserve wearer, anatomy, pose, role, scene and frame; any fishtail line belongs to the garment, with no species or underwater setting.',
+        'Transform the requested wardrobe into pelagic couture with scale-patterned panels, fin-like hems and fluid iridescent cloth. Preserve wearer, anatomy, pose, role, scene and frame; any fishtail line belongs to the garment, with no species or underwater setting. Use it as a reusable look on any subject.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

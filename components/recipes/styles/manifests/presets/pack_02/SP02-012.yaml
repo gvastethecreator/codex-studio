@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Whimsical and melancholic, deadpan charm inside strict order.
   rendering_and_quality: Crisp storybook film look; no handheld mess and no asymmetry.
   key_features: dead-center symmetry; pastel dollhouse palette; frontal deadpan subject; flat soft light; one-point perspective
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Symmetrical Storybook Cinema as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Symmetrical storybook cinema: meticulously centered compositions, pastel dollhouse sets and deadpan performers, as if every frame were a page of a picture book. Carry it through dead-center symmetry, pastel dollhouse palette, frontal deadpan subject, flat soft light, one-point perspective. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - readable fake text

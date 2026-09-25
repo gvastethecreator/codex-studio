@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Severe and composed, a heavy pressure that never turns violent.
   rendering_and_quality: Detail held within clean edges and deep values, with subtle grain softening the darkest areas.
   key_features: baroque bilateral symmetry; ivory against charcoal; cold narrow highlights; monumental value planes; powdery grain
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ivory-Charcoal Baroque Symmetry Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Monumental anime cel painting with baroque bilateral symmetry, heavy value planes and a restrained ornamental silhouette language. Carry it through baroque bilateral symmetry, ivory against charcoal, cold narrow highlights, monumental value planes, powdery grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Pressurized, silent and opulent, luxury holding its breath against the ocean.
   rendering_and_quality: Underwater volumetric rendering with drifting particulate and softened distance; brass highlights stay crisp up close.
   key_features: stepped deco setbacks; domed pressure-glass portholes; riveted brass and verdigris; coral and barnacle crust; blue murk falloff
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Abyssal Deco Pressure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Deep-sea deco architecture: stepped Art Deco setbacks built for crushing depth, domed pressure-glass windows in riveted brass frames, coral and barnacles colonizing every ledge. Carry it through stepped deco setbacks, domed pressure-glass portholes, riveted brass and verdigris, coral and barnacle crust, blue murk falloff. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - licensed fantasy location
   - copy of a known film or game building

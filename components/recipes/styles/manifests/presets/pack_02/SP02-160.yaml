@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Circular image on black, optic disc off to one side, vessels arching across.
   atmosphere_and_mood: Intimate and cosmic, a planet hidden inside an eye.
   rendering_and_quality: Clinical fundus photograph look without any markings, arrows or diagnosis.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Retinal Fundus Image as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Retinal fundus photograph: the inside back of an eye seen through the pupil, a glowing orange-red disc with branching vessels and a bright optic disc. Carry it through orange-red retinal disc, branching vessels, pale optic disc, black circular surround, flash center. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: orange-red retinal disc; branching vessels; pale optic disc; black circular surround; flash center
 avoidRules:
   - readable readouts

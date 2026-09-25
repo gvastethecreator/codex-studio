@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'high corner viewpoint; IR monochrome; compression blocks; wide barrel distortion; smeared motion',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies CCTV Security as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "CCTV security capture: a fixed camera high in a corner recording low-resolution, compressed surveillance frames, often in infrared monochrome at night. Carry it through high corner viewpoint, IR monochrome, compression blocks, wide barrel distortion, smeared motion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -56,7 +56,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'behind-windshield view; hood or dash at bottom; headlight pools; glass reflections; wide bowed horizon',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dashcam as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dashcam capture: a small wide-angle camera behind a vehicle windshield recording the road ahead, bright and utilitarian. Carry it through behind-windshield view, hood or dash at bottom, headlight pools, glass reflections, wide bowed horizon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -86,7 +86,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'ironbow palette; heat as brightness; smooth thermal gradients; hot white peaks; no visible-light shading',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ironbow Thermal Imaging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ironbow thermal imaging: a longwave infrared camera mapping temperature to a black-purple-red-orange-yellow-white palette, so heat, not light, defines the image. Carry it through ironbow palette, heat as brightness, smooth thermal gradients, hot white peaks, no visible-light shading. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -113,7 +113,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'greyscale electron image; glowing edge rims; enormous magnification; deep focus; dark ground',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Microscope (SEM) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Scanning electron micrograph: a tiny specimen coated and scanned by an electron beam, rendered in greyscale with extreme depth and edge glow. Carry it through greyscale electron image, glowing edge rims, enormous magnification, deep focus, dark ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -140,7 +140,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'gold-teal narrowband mapping; multi-point diffraction spikes; sculpted gas pillars; black space; scientific framing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Telescope (Hubble) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Space-telescope false-color imaging: narrowband exposures of gas mapped to gold, teal and blue channels, with sharp multi-spike stars. Carry it through gold-teal narrowband mapping, multi-point diffraction spikes, sculpted gas pillars, black space, scientific framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -164,7 +164,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'single isolated subject; vast negative space; two or three tones; one accent color; clean edges',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Minimalist Photo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Minimalist photography: one subject isolated in a large field of plain tone, with two or three colors and nothing else competing. Carry it through single isolated subject, vast negative space, two or three tones, one accent color, clean edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -189,7 +189,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'intentional camera movement; extreme crop; rippled reflections; color over form; no scale',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Abstract Photo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Abstract photography: intentional camera movement, extreme crops and reflections that dissolve a real subject into color, line and texture. Carry it through intentional camera movement, extreme crop, rippled reflections, color over form, no scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -214,7 +214,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'thin tilted focus band; high vantage; blur top and bottom; boosted toy-like color; small crisp shadows',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tilt-Shift (Miniature) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tilt-shift miniature: a tilted lens plane from a high vantage point so only a thin band is sharp, making real scenes look like toy models. Carry it through thin tilted focus band, high vantage, blur top and bottom, boosted toy-like color, small crisp shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -240,7 +240,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'silky moving water; sharp still surroundings; tripod stillness; cool overcast tones; misted flow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Long Exposure (Water) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Long-exposure water modifier: a slow shutter of one to thirty seconds that turns any moving water in the scene into silk, mist or glass. Carry it through silky moving water, sharp still surroundings, tripod stillness, cool overcast tones, misted flow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -266,7 +266,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'wide view with f/1.4 depth; melted background; swirl at the edges; subject centered; no wide distortion',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bokeh Panorama (Brenizer) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Brenizer bokeh panorama: dozens of frames at f/1.4 stitched together, giving a wide field of view with the shallow depth of a telephoto portrait. Carry it through wide view with f/1.4 depth, melted background, swirl at the edges, subject centered, no wide distortion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -292,7 +292,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'scale bar beside the object; even flash; camera square to the surface; neutral color; plain evidence markers',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Forensic Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Forensic evidence photography: a flat, objective record of an object or trace with a scale reference and even flash, meant for measurement, not emotion. Carry it through scale bar beside the object, even flash, camera square to the surface, neutral color, plain evidence markers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -317,7 +317,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'sterile blue drape; shadowless twin flash; standardized straight-on view; accurate color; plain scale',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Medical Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Clinical medical photography: standardized documentation under bright even light against a sterile blue or neutral background. Carry it through sterile blue drape, shadowless twin flash, standardized straight-on view, accurate color, plain scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -345,7 +345,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Revelatory and precise, invisible forces suddenly made visible.',
       rendering_and_quality: 'Real optical schlieren look; not smoke, not a painted glow.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Schlieren Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Schlieren photography: a knife-edge optical setup that makes invisible air flow, heat and shock waves visible as sharp gradients of light and dark. Carry it through visible air and heat flow, knife-edge gradients, round mirror field, silhouetted object, rainbow or silver tones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'visible air and heat flow; knife-edge gradients; round mirror field; silhouetted object; rainbow or silver tones',
     },
@@ -378,7 +378,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Scientific and psychedelic, hidden tension turned into color.',
       rendering_and_quality: 'Crisp fringe bands; not a rainbow gradient overlay.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Photoelastic Stress Imaging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Photoelastic stress imaging: transparent plastic objects between crossed polarizers, where internal stress appears as bands of rainbow interference color. Carry it through rainbow stress fringes, crossed polarizers, clear plastic object, black background, dense bands at pressure points. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'rainbow stress fringes; crossed polarizers; clear plastic object; black background; dense bands at pressure points',
     },
@@ -412,7 +412,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Strange and kinetic, time laid out flat across space.',
       rendering_and_quality: 'True slit-scan distortion; not a motion blur filter.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Slit-Scan Photo Finish as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Slit-scan photo finish: a camera recording one thin vertical line over time, so moving subjects appear whole while the static background becomes vertical stripes. Carry it through vertical-stripe background, time along the horizontal axis, stretched moving bodies, side view, smeared static parts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'vertical-stripe background; time along the horizontal axis; stretched moving bodies; side view; smeared static parts',
     },
@@ -446,7 +446,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Real multiple exposure with overlapping transparency; not a digital clone stamp.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chronophotography Sequence as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Chronophotography: a single plate exposed many times at fixed intervals, showing one movement as a row of overlapping phases. Carry it through many overlapping phases, black backdrop, fixed side view, left-to-right progression, translucent overlaps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'many overlapping phases; black backdrop; fixed side view; left-to-right progression; translucent overlaps',
     },
@@ -479,7 +479,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Seamless stitched panorama with no visible seams, ghosting or broken lines.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tiny Planet Stereographic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tiny planet projection: a full 360-degree panorama bent into a stereographic circle, so the ground becomes a small globe and the sky wraps around it. Carry it through round tiny-planet ground, sky wrapping the edges, objects radiating outward, 360-degree stitch, centered globe. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'round tiny-planet ground; sky wrapping the edges; objects radiating outward; 360-degree stitch; centered globe',
     },
@@ -514,7 +514,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Real fluorescence with violet cast in shadows; not neon signs or painted glow.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies UV Fluorescence Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "UV fluorescence photography: the scene lit only by ultraviolet lamps so certain materials glow in their own vivid colors while everything else stays dark. Carry it through UV-only lighting, materials glowing in their own colors, black-violet shadows, hidden patterns revealed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'UV-only lighting; materials glowing in their own colors; black-violet shadows; hidden patterns revealed',
     },
@@ -547,7 +547,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Uncanny and electric, the object seeming to give off its own aura.',
       rendering_and_quality: 'Contact-print discharge look; not a painted aura or glow filter.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kirlian Corona Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Kirlian photography: an object pressed onto film on a high-voltage plate, so a corona discharge draws a glowing halo of sparks around its outline. Carry it through electric corona halo, radiating spark filaments, violet-white on black, flat contact view, glowing edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'electric corona halo; radiating spark filaments; violet-white on black; flat contact view; glowing edges',
     },
@@ -579,7 +579,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Honest inspection-camera realism with no readable overlay, grid or measurements.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Borescope Inspection as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Borescope inspection: a tiny camera on a flexible probe pushed into a cavity, with its own ring of LEDs lighting a round, tunnel-like view. Carry it through circular vignette, ring-LED glare, tunnel perspective, rapid falloff to black, low-resolution softness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'circular vignette; ring-LED glare; tunnel perspective; rapid falloff to black; low-resolution softness',
     },

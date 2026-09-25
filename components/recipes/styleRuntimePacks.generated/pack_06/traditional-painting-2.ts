@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'thin transparent darks and thick lights; single side light chiaroscuro; earth palette with lead white; linen weave in shadows; amber varnish glow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oil Painting (Classic) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Classic studio oil painting: transparent warm darks laid in thin, opaque lead-white lights built up thick, and form turned by a strong single light in the academic chiaroscuro manner. Carry it through thin transparent darks and thick lights, single side light chiaroscuro, earth palette with lead white, linen weave in shadows, amber varnish glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -56,7 +56,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'velvety matte opaque film; warm key and cool shadows; dry-brush scumbles over dark; firm modeled planes; mid-century illustration staging',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Casein Paint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Casein paint illustration: milk-protein paint laid in opaque velvety layers, the matte workhorse medium of mid-century magazine and book illustration. Carry it through velvety matte opaque film, warm key and cool shadows, dry-brush scumbles over dark, firm modeled planes, mid-century illustration staging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -84,7 +84,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'opaque hard-edged color shapes; two or three flat value steps; complementary high-key palette; satin-matte acrylic skin; crisp colored cast shadows',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Acrylic (Modern) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Contemporary acrylic painting: fast-drying opaque color laid in clean flat shapes with taped or hard edges, layered one over another without blending. Carry it through opaque hard-edged color shapes, two or three flat value steps, complementary high-key palette, satin-matte acrylic skin, crisp colored cast shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -112,7 +112,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'wet-in-wet bleeding washes; reserved paper whites; granulation and blooms; hard tide lines; vignette into bare paper',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Watercolor (Soft) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Soft transparent watercolor: diluted pigment flooded wet-in-wet onto damp cold-press paper, with the white of the paper serving as the only white. Carry it through wet-in-wet bleeding washes, reserved paper whites, granulation and blooms, hard tide lines, vignette into bare paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -140,7 +140,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'flat chalky opaque shapes; one flat shadow per form; dry-brush streaks; dead-matte surface; muted mid-century palette',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gouache (Flat) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Flat opaque gouache illustration: chalky matte color applied in even single-layer shapes, with small dry-brush textures inside each shape. Carry it through flat chalky opaque shapes, one flat shadow per form, dry-brush streaks, dead-matte surface, muted mid-century palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -168,7 +168,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'fine cross-hatched modeling; burnished and punched gold leaf; green-earth underpainting in flesh; frontal stacked space; matte eggshell sheen',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tempera (Egg) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Egg tempera on a gessoed panel: pure pigment bound in yolk, built from thousands of tiny parallel and cross-hatched brush strokes, often set against burnished gold leaf. Carry it through fine cross-hatched modeling, burnished and punched gold leaf, green-earth underpainting in flesh, frontal stacked space, matte eggshell sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -196,7 +196,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'translucent fused wax layers; scraped channels revealing underlayers; amber honey glow; soft melted edges; satin wax sheen',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Encaustic (Wax) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Encaustic hot-wax painting: pigmented beeswax melted, brushed on and fused with heat, then scraped and re-layered so color sits inside a translucent skin. Carry it through translucent fused wax layers, scraped channels revealing underlayers, amber honey glow, soft melted edges, satin wax sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -224,7 +224,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'pigment sunk into lime plaster; day-patch seams; mineral earth palette; hairline cracks and flaked losses; broad readable forms',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fresco (Wall) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "True buon fresco: mineral pigments painted into wet lime plaster so color becomes part of the wall, worked one day-patch at a time. Carry it through pigment sunk into lime plaster, day-patch seams, mineral earth palette, hairline cracks and flaked losses, broad readable forms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -252,7 +252,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'short broken strokes of pure color; violet and blue shadows; no black; light ground showing through; blurred edges in bright light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Impressionist Oil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Impressionist oil sketch: short separate strokes of unmixed color laid side by side outdoors, catching one moment of changing daylight rather than fixed forms. Carry it through short broken strokes of pure color, violet and blue shadows, no black, light ground showing through, blurred edges in bright light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -280,7 +280,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'uniform dots of pure color; complementary color pairs; optical mixing; contrast haloes at edges; stiff geometric silhouettes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pointillism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pointillist dot painting: the whole image built from small round dots of pure color placed side by side so the eye mixes them at a distance. Carry it through uniform dots of pure color, complementary color pairs, optical mixing, contrast haloes at edges, stiff geometric silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -308,7 +308,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'flat steel-knife slabs; sharp lifted ridges; streaked two-color swipes; raking-light relief; bare canvas gaps',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Palette Knife as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Palette-knife painting: paint spread and scraped onto the canvas with a steel knife in flat, sharp-edged slabs instead of brushed. Carry it through flat steel-knife slabs, sharp lifted ridges, streaked two-color swipes, raking-light relief, bare canvas gaps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -336,7 +336,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'layered stencil shapes; soft freehand fades; overspray speckle halos; paint drips and runs; offset registration',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Spray Paint (Aerosol) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Aerosol spray painting: color laid in layers through cut stencils and freehand can control, with soft sprayed falloff, hard stencil edges and drips. Carry it through layered stencil shapes, soft freehand fades, overspray speckle halos, paint drips and runs, offset registration. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -364,7 +364,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'one-stroke brush forms; five ink tones; feathered bleed on rice paper; dry-brush flying white; large empty paper as mist',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ink Wash (Sumi-e) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "East Asian ink wash: a single loaded brush of carbon ink on absorbent paper, one stroke per form, with pressure and water content doing all the modeling. Carry it through one-stroke brush forms, five ink tones, feathered bleed on rice paper, dry-brush flying white, large empty paper as mist. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -392,7 +392,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'seamless sprayed gradients; frisket-masked hard edges; chrome horizon reflections; star-sparkle highlights; sunset magenta and cyan palette',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Airbrush (80s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Eighties commercial airbrush painting: frisket-masked shapes filled with seamless sprayed gradients, chrome reflections and hard pin-point star highlights. Carry it through seamless sprayed gradients, frisket-masked hard edges, chrome horizon reflections, star-sparkle highlights, sunset magenta and cyan palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -420,7 +420,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'bare black velvet as shadow; glowing rim-lit edges; saturated turquoise, magenta and gold; velvet pile fuzz; subject emerging from darkness',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Black Velvet Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Black velvet painting: bright opaque paint laid over black velvet so the fabric itself is the darkest value and forms glow out of the dark. Carry it through bare black velvet as shadow, glowing rim-lit edges, saturated turquoise, magenta and gold, velvet pile fuzz. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -453,7 +453,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Confident single-pass strokes, wet edges softly merged, bare toned ground visible; not polished or reworked.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Alla Prima Plein-Air Sketch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Alla prima plein-air oil sketch: painted outdoors in a single wet-into-wet session on a small toned panel, each passage laid once and left. Carry it through single-session wet-into-wet strokes, warm toned ground peeking through, two families of light and shadow, loose unfinished borders, small panel sketch. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'single-session wet-into-wet strokes; warm toned ground peeking through; two families of light and shadow; loose unfinished borders; small panel sketch',
     },
@@ -488,7 +488,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Uniform opaque color behind crisp outlines, glossy glass surface over everything, foil sparkle; no brush texture and no gradients.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Reverse Glass Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Reverse glass painting: opaque paint applied to the back of a glass pane in reverse order, outlines and highlights first and background last, viewed through the glossy glass. Carry it through paint behind glass seen through a glossy pane, outlines laid first, flat bright folk colors, crumpled foil backing, decorative frontal layout. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'paint behind glass seen through a glossy pane; outlines laid first; flat bright folk colors; crumpled foil backing; decorative frontal layout',
     },
@@ -524,7 +524,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Every hair, vein and feather individually outlined and tinted; no loose brushwork, no cast shadows, no blending across outlines.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fine-Line Silk Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Meticulous fine-line painting on sized silk: every form drawn first in hair-thin even ink outlines, then filled with many thin layers of mineral and plant color. Carry it through hair-thin even ink outlines, layered mineral color washes, aged honey silk ground, gradated color inside each outline, shadowless meticulous detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'hair-thin even ink outlines; layered mineral color washes; aged honey silk ground; gradated color inside each outline; shadowless meticulous detail',
     },
@@ -560,7 +560,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Glassy polished finish, sanded-through gradations, crisp eggshell inlay edges; no visible strokes or matte areas.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sanded Lacquer Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sanded lacquer painting: many layers of tree lacquer, gold and silver leaf and crushed eggshell built on a black panel, then sanded back and polished so images surface from within. Carry it through polished black lacquer depth, crushed eggshell inlay, gold and silver leaf, sanded-through amber gradations, images surfacing from within. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'polished black lacquer depth; crushed eggshell inlay; gold and silver leaf; sanded-through amber gradations; images surfacing from within',
     },
@@ -592,7 +592,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Softened edges everywhere, close values, no crisp detail and no saturated color; depth built by layered haze.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tonalist Veil Oil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tonalist oil painting: thin veils of close-valued color scumbled and rubbed over each other until the scene sinks into a single enveloping hour of haze or dusk. Carry it through single enveloping tone, compressed middle values, scumbled thin veils, one faint warm light, soft lost edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'single enveloping tone; compressed middle values; scumbled thin veils; one faint warm light; soft lost edges',
     },

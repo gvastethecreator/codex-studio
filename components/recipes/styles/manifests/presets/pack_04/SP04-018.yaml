@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Bright, bold and exploratory, a big shape a toddler can point at.
   rendering_and_quality: Handmade collage with real paper textures; no outlines and no digital gradients.
   key_features: hand-painted tissue papers; scissor-cut shapes; mottled brush texture inside shapes; white ground; overlapping layers
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paper Cutout (Collage) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Painted tissue collage: sheets of paper first painted with brushy textures, then cut and torn into shapes and layered into bold animals and landscapes. Carry it through hand-painted tissue papers, scissor-cut shapes, mottled brush texture inside shapes, white ground, overlapping layers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - frightening gore
   - known picture-book characters

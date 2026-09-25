@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Opulent and intimate, a treasure seen from a jeweler's loupe distance.
   rendering_and_quality: Spectral dispersion in every stone, clean metal without smudges, and a contact reflection on the display surface.
   key_features: macro loupe distance; spectral fire and scintillation; black-card facet contrast; mirror-polished metal; pavé settings
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Jewelry Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "High-jewelry macro render: precious metal and cut stones filling the frame, with fire, scintillation and polished metal reflections as the whole subject. Carry it through macro loupe distance, spectral fire and scintillation, black-card facet contrast, mirror-polished metal, pavé settings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - multi-view asset sheet
   - fake labels

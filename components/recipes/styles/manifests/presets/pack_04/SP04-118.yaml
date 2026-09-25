@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Figures in strict profile arranged in two rows at one scale, silhouettes and track below.
   atmosphere_and_mood: Observant and patient, a species learned at a glance.
   rendering_and_quality: Identification-grade clarity with no habitat scene and no species names.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Field Guide Species Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Field guide plate: one species painted in gouache as male, female and juvenile, with a flight or gait silhouette, egg or cocoon and a track. Carry it through male, female and juvenile, profile figures at one scale, flight or gait silhouette, track and egg. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: male, female and juvenile; profile figures at one scale; flight or gait silhouette; track and egg; cream ground
 avoidRules:
   - placeholder gibberish text

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Wistful and unreliable, the image half dissolved like an old memory.
   rendering_and_quality: Chemical aging in the emulsion itself, not a generic vintage filter or a torn-paper texture.
   key_features: fogged lifted blacks; drifting color cast; coarse clumped grain; low contrast; faded dyes
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Expired Film as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Expired color negative: film long past its date, fogged by age and heat, with a lifted base, drifting color casts and weak contrast. Carry it through fogged lifted blacks, drifting color cast, coarse clumped grain, low contrast, faded dyes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - clean digital sensor look
   - generic stock-photo face

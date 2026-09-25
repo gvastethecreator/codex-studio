@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Full figure in or against rugged landscape, keeping the full outfit silhouette and fit readable at card size.
   atmosphere_and_mood: Adventurous, playful and practical, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Sharp outdoor-editorial finish, with believable fabric weight, seams and fit detail.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gorpcore Trail as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Gorpcore: outdoor and mountaineering gear worn as fashion — fleece, shell jackets, trail shoes and utility accessories in bold color-blocking. Carry it through color-blocked shell and fleece, trail shoes, utility accessories, bold accents on earth tones, mountain daylight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: color-blocked shell and fleece; trail shoes; utility accessories; bold accents on earth tones; mountain daylight
 avoidRules:
   - brand logo

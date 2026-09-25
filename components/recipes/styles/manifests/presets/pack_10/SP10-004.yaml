@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Dizzying, hypnotic, precise and kinetic, driven by the construction, color and rhythm.
   rendering_and_quality: Hard-edged precise finish, with clean, deliberate marks and no accidental noise.
   key_features: warped stripes; bulging grid illusion; black and white; vibration
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Op Art (Optical) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Op Art: optical illusions of vibrating stripes, warped grids and moiré that make flat patterns seem to move. Carry it through warped stripes, bulging grid illusion, black and white, vibration. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

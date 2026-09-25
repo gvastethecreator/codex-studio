@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Contact-print view, object flat and centered, corona radiating outward.
   atmosphere_and_mood: Uncanny and electric, the object seeming to give off its own aura.
   rendering_and_quality: Contact-print discharge look; not a painted aura or glow filter.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kirlian Corona Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Kirlian photography: an object pressed onto film on a high-voltage plate, so a corona discharge draws a glowing halo of sparks around its outline. Carry it through electric corona halo, radiating spark filaments, violet-white on black, flat contact view, glowing edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: electric corona halo; radiating spark filaments; violet-white on black; flat contact view; glowing edges
 avoidRules:
   - illustration

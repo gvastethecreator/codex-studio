@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Horizontal landscape framing, grounded realist staging with figures and wide scenery given equal weight.
   atmosphere_and_mood: Stoic adventure and romance, sturdy and handsome, told with craft.
   rendering_and_quality: Elegant brush economy and accurate anatomy; no screentone, no digital gradients.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Feathered-Brush Adventure Strip as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Classic newspaper adventure strip: realist figures inked with a sable brush, shadows built from tapering feathered strokes and slabs of spotted black. Carry it through sable-brush feathering, spotted blacks, realist anatomy, muted flat Sunday color, horizontal framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: sable-brush feathering; spotted blacks; realist anatomy; muted flat Sunday color; horizontal framing
 avoidRules:
   - added panels or gutters

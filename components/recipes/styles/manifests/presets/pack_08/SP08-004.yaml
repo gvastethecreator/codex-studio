@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Free, sunny, romantic and wandering, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Warm, hazy, film-like finish, with believable fabric weight, seams and fit detail.
   key_features: flowing printed layers; fringe and crochet; stacked beaded jewelry; sun-bleached palette; golden backlight
-  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Boho Festival as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
+  creative_brief: "Boho festival style: sun-faded layers of flowing prints, fringe, crochet and handmade jewelry worn loose for dancing outdoors. Carry it through flowing printed layers, fringe and crochet, stacked beaded jewelry, sun-bleached palette, golden backlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - readable label text

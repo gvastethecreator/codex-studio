@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Suggest fluid, ceremonial elegance through curve and shimmer without assigning a mermaid or other aquatic species.
   rendering_and_quality: Control reflective detail so scales, fabric and transparent layers remain distinct; avoid turning the outfit into a literal creature body.
   key_features: Scalloped scale lattice; fin-like garment seams; fluid tapered panels; nacre and organza sheen.
-  creative_brief: Transform the requested wardrobe into pelagic couture with scale-patterned panels, fin-like hems and fluid iridescent cloth. Preserve wearer, anatomy, pose, role, scene and frame; any fishtail line belongs to the garment, with no species or underwater setting.
+  creative_brief: "Transform the requested wardrobe into pelagic couture with scale-patterned panels, fin-like hems and fluid iridescent cloth. Preserve wearer, anatomy, pose, role, scene and frame; any fishtail line belongs to the garment, with no species or underwater setting. Use it as a reusable look on any subject."
 avoidRules:
   - dry casualwear
   - generic cosplay

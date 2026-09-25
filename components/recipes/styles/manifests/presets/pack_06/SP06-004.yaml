@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Cheerful and tidy, a mid-century picture-book calm.
   rendering_and_quality: Crisp shape edges with small dry-brush speckle, no glossy highlights, no transparent washes, no line art outline.
   key_features: flat chalky opaque shapes; one flat shadow per form; dry-brush streaks; dead-matte surface; muted mid-century palette
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gouache (Flat) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Flat opaque gouache illustration: chalky matte color applied in even single-layer shapes, with small dry-brush textures inside each shape. Carry it through flat chalky opaque shapes, one flat shadow per form, dry-brush streaks, dead-matte surface, muted mid-century palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - changing the requested framing

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Escalating competitive energy, the loudest moment of a fight frozen mid-strike.
   rendering_and_quality: Sharp tapered G-pen strokes, clean tone edges and readable silhouettes; never colored or painted.
   key_features: G-pen line-weight swings; radial speed lines; dot screentone; impact burst; extreme foreshortening
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Manga (Shonen) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Action manga page art: black G-pen ink with aggressive line-weight swings, radial speed lines and mechanical screentone gray. Carry it through G-pen line-weight swings, radial speed lines, dot screentone, impact burst, extreme foreshortening. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - added panels or gutters
   - speech balloons

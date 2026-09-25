@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Ethereal, delicate, mysterious and fleeting, driven by the construction, color and rhythm.
   rendering_and_quality: Crisp high-contrast finish, with clean, deliberate marks and no accidental noise.
   key_features: smoke filaments tracing form; black ground
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Smoke Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Smoke photography style: the subject drawn as thin wisps of backlit smoke on black. Carry it through smoke filaments tracing form, black ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

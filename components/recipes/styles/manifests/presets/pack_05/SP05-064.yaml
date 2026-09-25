@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Worn endurance with a faint hope, redemption as a quiet reading.
   rendering_and_quality: A steady rhythm of long strokes and a readable silhouette; no ink splatter.
   key_features: long dry directional strokes; tapering abrasion tails; earth and faded blue-gray; chalk highlights; broad open midtones
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wind-Scoured Redemption Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Weathered travel-epic anime ink in long dry directional brushstrokes that skim the silhouettes and taper into sparse mineral abrasion, like wind-scored rock. Carry it through long dry directional strokes, tapering abrasion tails, earth and faded blue-gray, chalk highlights, broad open midtones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

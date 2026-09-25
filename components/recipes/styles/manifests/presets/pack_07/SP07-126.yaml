@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Eye-level at model scale, with the cut edge of the baseboard visible at one side to reveal the model.
   atmosphere_and_mood: Quiet, loving and orderly, a landscape built on evenings and weekends.
   rendering_and_quality: Photograph of a real hobby layout; the flock and foliage read as model materials, not real grass.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Static-Grass Scenic Layout as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hobby scenic layout: the subject set on a baseboard landscape of static-grass flock, lichen and clump-foliage trees, plaster rock castings and a painted sky backdrop. Carry it through static-grass flock, clump-foliage trees, dry-brushed plaster rock, painted sky backdrop, visible baseboard edge. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: static-grass flock; clump-foliage trees; dry-brushed plaster rock; painted sky backdrop; visible baseboard edge
 avoidRules:
   - brand logo on parts

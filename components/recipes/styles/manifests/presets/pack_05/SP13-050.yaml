@@ -28,7 +28,7 @@ visualDna:
   camera_and_composition: Macro framing where the contact fills the center third, very shallow depth and nothing else of the subject visible.
   atmosphere_and_mood: Tactile and precise, the whole action compressed into one touch.
   rendering_and_quality: Detailed but clean cel rendering at macro scale, with the kind of contact instantly readable.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Contact-Point Extreme Close-Up as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Anime insert shot: an extreme close-up of the exact point where the requested action makes contact, such as a hand, foot or hoof meeting a surface, with the rest of the subject cropped away. Carry it through extreme close-up of the contact point, subject cropped away, raking hard key light, magnified surface detail, very shallow depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: extreme close-up of the contact point; subject cropped away; raking hard key light; magnified surface detail; very shallow depth
 avoidRules:
   - added opponent

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; the erosion network runs downhill toward the subject or along the leading lines.
   atmosphere_and_mood: Vast and ancient, land shaped by a million simulated years of rain.
   rendering_and_quality: Dense displaced terrain with mask-driven materials and light haze; no tiling rock texture repeats.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hydraulic Erosion Heightfield as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Procedural terrain render: land built from a heightfield run through hydraulic and thermal erosion, with branching gullies, talus slopes and sediment fans. Carry it through dendritic erosion gullies, sediment fans, slope-masked colors, raking relief light, strata ridges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: dendritic erosion gullies; sediment fans; slope-masked colors; raking relief light; strata ridges
 avoidRules:
   - franchise likeness

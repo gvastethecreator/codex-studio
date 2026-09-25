@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Cerebral suspense and controlled stillness, every shadow suggesting a calculation in progress.
   rendering_and_quality: Crisp edges, limited color, and quiet fields around the accent.
   key_features: gothic chiaroscuro; fine deliberate black stroke; bone-white fields; single vermilion accent; steep dramatic angle
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Shadow Notebook Thriller as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Psychological-thriller anime: fine deliberate black strokes, gothic chiaroscuro at sharp dramatic angles, bone-white fields and one isolated vermilion accent. Carry it through gothic chiaroscuro, fine deliberate black stroke, bone-white fields, single vermilion accent, steep dramatic angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

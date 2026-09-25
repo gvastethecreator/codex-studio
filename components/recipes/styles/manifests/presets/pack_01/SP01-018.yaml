@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Still and solemn, luminous faces floating out of a velvet void.
   rendering_and_quality: Positive-on-glass look, not a tintype plate or a paper print; modern subjects stay modern (an appliance stays an appliance).
   key_features: ivory on black glass; orthochromatic tones; Petzval swirl; collodion pour ripples; long-exposure stillness
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wet Plate Ambrotype as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Wet plate ambrotype: a collodion negative on clear glass backed with black varnish so it reads as a positive, with ivory highlights floating on a deep black ground. Carry it through ivory on black glass, orthochromatic tones, Petzval swirl, collodion pour ripples, long-exposure stillness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - clean digital sensor look
   - generic stock-photo face

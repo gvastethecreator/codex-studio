@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Side-view orthographic of the mechanism, positions overlapping in one frame, the traced path looping through it.
   atmosphere_and_mood: Rhythmic and ingenious, movement frozen into a diagram.
   rendering_and_quality: Clean diagram with consistent link lengths across positions and no angle numbers.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Motion Cycle Linkage Study as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Linkage motion study: a mechanism drawn in successive ghosted positions through one full cycle, pivots circled and trace paths plotted. Carry it through ghosted successive positions, circled pivots, red trace path, curved motion arrows, side-view diagram. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: ghosted successive positions; circled pivots; red trace path; curved motion arrows; side-view diagram
 avoidRules:
   - placeholder gibberish text

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Playful and editorial, clean surrealism with a design sensibility.
   rendering_and_quality: Crisp masks, consistent drop-shadow angle, clean flat color; no torn paper or glue.
   key_features: hard-masked cutouts; duotone gradient maps; halftone overlays; flat geometric shapes; uniform drop shadows
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Digital Collage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Digital collage: hard-masked photo cutouts, flat geometric shapes, duotone gradient maps and halftone overlays layered in software. Carry it through hard-masked cutouts, duotone gradient maps, halftone overlays, flat geometric shapes, uniform drop shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - uniform beige torn-paper wash over every image
   - red tape strips added by default

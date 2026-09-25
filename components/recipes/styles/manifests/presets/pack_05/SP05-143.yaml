@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Lonely secrecy and restrained unease, a quiet city under a sky that feels false.
   rendering_and_quality: Thin cyan line accents, dark reflective values and generous empty space.
   key_features: false starfield sky; thin cyan contour threads; blue-black city; glowing cyan edges; guarded negative space
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cold Starfield Night Noir as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Urban night noir anime: fine dark contours threaded by thin cyan lines, an unnaturally starry sky over a blue-black city, and faint glowing cyan edges on figures. Carry it through false starfield sky, thin cyan contour threads, blue-black city, glowing cyan edges, guarded negative space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

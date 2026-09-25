@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested camera; strong single-light modeling shows all hatch levels.
   atmosphere_and_mood: Bookish and moody, an engraving that turns in 3D.
   rendering_and_quality: Non-photorealistic render with even stroke density and clean silhouettes; distinct from hand-drawn ink and from cel shading.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tonal Art Map Hatching Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Real-time hatching shader: lit 3D geometry shaded with stacked hatch textures, one layer of strokes per tone, so darker areas gain cross-hatching automatically. Carry it through stacked hatch texture layers, tone by stroke density, strokes follow surface UVs, one directional light, clean silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: stacked hatch texture layers; tone by stroke density; strokes follow surface UVs; one directional light; clean silhouettes
 avoidRules:
   - sensor noise

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Hopeful and busy, a plan still taking shape.
   rendering_and_quality: Readable layering, taut thread lines and clear pinned depth; no legible notes.
   key_features: cork board; pushpins; index-card sketches; colored thread links; central hero print
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pinned Planning Board as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Pinned planning board: sketches, prints and index cards about the subject pinned to cork and linked by colored thread in a hopeful working plan. Carry it through cork board, pushpins, index-card sketches, colored thread links, central hero print. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - uniform beige torn-paper wash over every image
   - red tape strips added by default

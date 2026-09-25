@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Extreme crop, off-center subject aligned to grid columns, strong diagonals and bleed off the edge.
   atmosphere_and_mood: Objective, precise and dynamic, calm energy held in tension.
   rendering_and_quality: Rigorous alignment and clean hierarchy; no text blocks, no ornament and no gradients.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Swiss Grid Photo Poster as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Swiss modernist photo poster: a tightly cropped black-and-white photograph placed on a strict grid with one or two flat color geometric shapes. Carry it through extreme black-and-white photo crop, strict grid, one flat red or blue shape, white space, bleed off the edge. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: extreme black-and-white photo crop; strict grid; one flat red or blue shape; white space; bleed off the edge
 avoidRules:
   - invented slogans

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Graceful full-figure framing, keeping the full outfit silhouette and fit readable at card size.
   atmosphere_and_mood: Genteel, romantic, restrained and witty, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Soft, fresh, detailed finish, with believable fabric weight, seams and fit detail.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Regency Empire Line as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Regency dress: high-waisted empire-line muslin gowns, spencer jackets, bonnets and long gloves; men in tailcoats, cravats, waistcoats and tall boots. Carry it through empire-waist muslin gown, spencer and bonnet, tailcoat and cravat, Hessian boots, soft window light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: empire-waist muslin gown; spencer and bonnet; tailcoat and cravat; Hessian boots; soft window light
 avoidRules:
   - brand logo

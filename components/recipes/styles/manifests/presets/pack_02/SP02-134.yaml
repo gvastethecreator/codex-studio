@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Strict side profile, figures on a ground line, layered silhouette scenery.
   atmosphere_and_mood: Fairy-tale and graceful, drama told through outline alone.
   rendering_and_quality: Crisp cut-paper edges on a luminous ground; not a photographic silhouette.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Shadow-Puppet Silhouette Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Silhouette cutout animation: jointed black paper figures cut with fine lace-like detail, animated on a backlit glass table against glowing color. Carry it through jointed black paper figures, backlit color gradient, lace-cut detail, strict profiles, layered silhouette scenery. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: jointed black paper figures; backlit color gradient; lace-cut detail; strict profiles; layered silhouette scenery
 avoidRules:
   - exact studio character copy

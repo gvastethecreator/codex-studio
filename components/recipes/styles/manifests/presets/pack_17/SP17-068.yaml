@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Vertical grimdark card or sourcebook crop with one strong symbolic focal subject and background survival architecture as support.
   atmosphere_and_mood: Bleak, irradiated, feudal, scavenged, ritualized, and adult.
   rendering_and_quality: Stylized post-apocalyptic fantasy illustration with broad shapes, no copied game identity, and controlled texture.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rusted Vault Grimdark as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Post-nuclear grimdark fantasy where rusted vault shapes, retrofuturist decay, medieval survival silhouettes, and sacred hazard symbols merge without using logos or readable signage. Carry it through rusted vault geometry, post-nuclear medieval survival, hazard glow, retrofuture decay, textless sacred symbols. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: rusted vault geometry; post-nuclear medieval survival; hazard glow; retrofuture decay; textless sacred symbols; denoised grime
 avoidRules:
   - readable vault numbers

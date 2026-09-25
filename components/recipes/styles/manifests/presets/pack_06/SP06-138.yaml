@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested subject as a silhouette on one of five to seven receding layers.
   atmosphere_and_mood: Serene, spacious and quiet, a calm moment of distance.
   rendering_and_quality: Clean flat silhouettes with smooth gradient fills and haze between; no textures, no outlines.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Layered Gradient Silhouette as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Layered gradient silhouette illustration: a scene reduced to overlapping flat silhouette bands, each filled with a smooth vertical gradient that lightens with distance. Carry it through receding silhouette layers, smooth vertical gradients, darker near and paler far, analogous palette, no interior detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: receding silhouette layers; smooth vertical gradients; darker near and paler far; analogous palette; no interior detail
 avoidRules:
   - photo

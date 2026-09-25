@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Ethereal and dark, forms half-summoned from vapor.
   rendering_and_quality: Delicate soot gradients with crisp lifted highlights; no brush strokes or ink washes.
   key_features: candle soot plumes; eraser-lifted highlights; feathery edges; scorch marks; brown-black on cream
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fumage (Smoke Art) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Fumage: soot from a candle flame deposited on paper in plumes, the subject coaxed out of the smoke and refined by erasing and scratching. Carry it through candle soot plumes, eraser-lifted highlights, feathery edges, scorch marks, brown-black on cream. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - uniform beige torn-paper wash over every image
   - red tape strips added by default

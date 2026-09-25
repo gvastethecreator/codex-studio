@@ -20,7 +20,7 @@ visualDna:
   camera_and_composition: Clean centered or rule-of-thirds placement, lots of white negative space, eye-level camera.
   atmosphere_and_mood: Fresh, weightless, optimistic, and serene.
   rendering_and_quality: Clean exposure without clipping skin, smooth white field, crisp eyes.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies High Key Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "High-key portraiture: a bright, nearly shadowless white world where the subject floats in clean light and soft pastel accents. Carry it through blown white background, shadowless wrap light, pastel accents, floating subject, clean negative space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: blown white background; shadowless wrap light; pastel accents; floating subject; clean negative space
 avoidRules:
   - generic stock-photo face

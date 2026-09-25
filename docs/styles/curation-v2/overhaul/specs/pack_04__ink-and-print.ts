@@ -504,8 +504,8 @@ const spec: Spec = {
       avoid: [...AVOID, 'readable words', 'rounded modern lettering'],
       briefs: [
         'Blackletter calligraphy of a rearing griffin drawn entirely in broad-nib textura strokes with diamond terminals, gold leaf hairline flourishes on vellum. No readable letters or logo.',
-        'Blackletter calligraphy of gothic cathedral window tracery, vertical columns of broken-curve strokes and vermilion accents. No readable letters or logo.',
-        'Blackletter calligraphy of a serpent coiled around a sword, thick-thin strokes and raised burnished gilding. No readable letters or logo.',
+        'Blackletter calligraphy of a gothic cathedral window, its tracery built from vertical columns of broken-curve textura strokes, vermilion accents in the rose and fine hairlines on cream vellum. No readable letters or logo.',
+        'Blackletter calligraphy of a serpent coiled around a sword, its body made of thick-thin broad-nib strokes with diamond terminals, raised burnished gilding on the hilt and vellum grain. No readable letters or logo.',
       ],
     },
     'SP04-080': {

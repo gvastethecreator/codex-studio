@@ -22,7 +22,7 @@ visualDna:
   atmosphere_and_mood: Calm, reflective, lonely and cozy, driven by the construction, color and rhythm.
   rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
   key_features: rain on glass; muted palette; small gestures; warm interiors
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rainy Slice of Life as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Rainy slice of life anime: quiet everyday frames with rain on glass, muted color and small gestures. Carry it through rain on glass, muted palette, small gestures, warm interiors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Existential unease, quiet dread and isolation, a held breath that lasts too long.
   rendering_and_quality: Flat color fields, silhouette clarity, pen-hatched interiors and a thin bone rim; no ornament and no glow.
   key_features: flat saturated color field; black silhouettes; G-pen crosshatched interiors; off-center composition with a huge void; thin bone rim line
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gothic Tech Existential Dread as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Stark psychological anime framing: flat unshaded silhouettes against one saturated color field, sparse thin line, and pen-hatched interiors held like a still frame. Carry it through flat saturated color field, black silhouettes, G-pen crosshatched interiors, off-center composition with a huge void, thin bone rim line. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

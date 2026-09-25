@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Disciplined endurance, silent and exacting, where one mistake is final.
   rendering_and_quality: Thick stable outlines, binary lit-or-black shading, razor terminator edges and minimal glow.
   key_features: single unfiltered point-source key; zero-fill pitch-black shadows; razor terminator line; cold white and steel palette; amber caution accent
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vacuum-Fortress Survival Discipline as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hard-vacuum anime lighting: one unfiltered point-source key, pitch-black shadows with zero fill, razor terminator lines, and thick clean outlines. Carry it through single unfiltered point-source key, zero-fill pitch-black shadows, razor terminator line, cold white and steel palette, amber caution accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

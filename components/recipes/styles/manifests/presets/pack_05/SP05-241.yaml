@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Orderly and collaborative, many parts moving as one.
   rendering_and_quality: Sparse balanced graphic marks, stable forms and a clear focal priority inside the repetition.
   key_features: invisible modular grid; repeated forms at even intervals; identical short shadows; indigo-gold-cyan palette; hard-edged flats
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Systemic Cooperation Grid Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Precision anime cel organized on an invisible modular grid: forms repeat at measured intervals and align to shared horizontals and verticals. Carry it through invisible modular grid, repeated forms at even intervals, identical short shadows, indigo-gold-cyan palette, hard-edged flats. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway

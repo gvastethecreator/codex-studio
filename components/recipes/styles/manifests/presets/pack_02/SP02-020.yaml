@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Confessional and gossipy, private feelings performed for everyone.
   rendering_and_quality: Crisp reality-TV video with no readable name captions or show graphics.
   key_features: direct-to-lens confession; colored backdrop; centered chest-up shot; soft key; crisp video
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Reality TV Confessional as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Reality TV confessional: a contestant alone in a chair speaking straight into the lens against a colored backdrop. Carry it through direct-to-lens confession, colored backdrop, centered chest-up shot, soft key, crisp video. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable fake text
   - readable ticker

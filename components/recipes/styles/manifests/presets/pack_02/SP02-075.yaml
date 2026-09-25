@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Dreamy and experimental, reality slipping through glass.
   rendering_and_quality: Real in-camera refraction through glass; never a digital rainbow overlay.
   key_features: prism rainbow smears; ghost reflections at the edge; spectral fringes; doubled shapes; hazy refraction
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Prism Effect as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Prism effect: a glass prism or crystal held in front of the lens, splitting light into rainbow smears and ghost reflections at the frame edges. Carry it through prism rainbow smears, ghost reflections at the edge, spectral fringes, doubled shapes, hazy refraction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested location
   - franchise likeness

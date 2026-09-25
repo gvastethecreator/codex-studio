@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; frame a composed scene through a moon gate or lattice window, layering wall, water and rock in depth.
   atmosphere_and_mood: Contemplative, poetic and intimate, a painted landscape in miniature.
   rendering_and_quality: Soft photograph with legible lattice and eroded rock, no readable calligraphy or souvenir red lanterns.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scholar Garden Rockery as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Chinese scholar garden: a walled garden of framed views, with pierced limestone rockeries, a pond with zigzag bridges, pavilions with upswept eaves and whitewashed walls opened by moon gates and lattice windows. Carry it through moon gate framed views, perforated limestone rockery, zigzag stone bridge, upswept pavilion eaves, bamboo shadows on white walls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: moon gate framed views; perforated limestone rockery; zigzag stone bridge; upswept pavilion eaves; bamboo shadows on white walls
 avoidRules:
   - golden-hour garden postcard formula

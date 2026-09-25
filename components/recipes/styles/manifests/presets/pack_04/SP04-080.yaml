@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Quick, confident and alive, each stroke committed.
   rendering_and_quality: Economical gestural ink with visible stroke order; no pencil underdrawing and no digital fill.
   key_features: thick-to-thin brush strokes; dry-brush fractures; grey water washes; open negative space; one-breath gestures
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Brush Pen Ink as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Brush pen ink drawing: a flexible synthetic brush tip laying thick-to-thin single strokes, dry-brush breaks at speed and grey water-brush washes. Carry it through thick-to-thin brush strokes, dry-brush fractures, grey water washes, open negative space, one-breath gestures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - brand logo

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested geometry; always show the drop below and the far chasm wall for scale.
   atmosphere_and_mood: Precarious and lively, a town that refuses to look down.
   rendering_and_quality: Detailed painterly realism with strong depth falloff into the chasm.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Abyss-Span Bridge City as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Bridge city: an entire town built on a colossal bridge spanning a bottomless chasm, houses stacked on the deck and hanging beneath the arches. Carry it through town built on a colossal bridge, houses hanging under arches, bottomless chasm below, masonry piers, misty depth falloff. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: town built on a colossal bridge; houses hanging under arches; bottomless chasm below; masonry piers; misty depth falloff
 avoidRules:
   - black and gold sci-fi palette by default

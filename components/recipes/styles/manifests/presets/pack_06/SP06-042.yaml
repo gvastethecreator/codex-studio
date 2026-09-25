@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Urgent, documentary and yesterday, a report from the morning edition.
   rendering_and_quality: Clearly visible dot grid, dot gain in the darks, slight blur from fast printing; no color and no clean digital sharpness.
   key_features: coarse visible halftone dots; dot gain in darks; yellowed newsprint; show-through from reverse; compressed tonal range
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Halftone (Newspaper) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Newspaper halftone: a photograph screened into a coarse grid of black dots and printed at speed on cheap newsprint. Carry it through coarse visible halftone dots, dot gain in darks, yellowed newsprint, show-through from reverse, compressed tonal range. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - readable printed text

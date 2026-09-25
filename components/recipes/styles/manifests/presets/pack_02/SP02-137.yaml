@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Characters in a row facing camera or in profile, a repeating painted background behind a chase.
   atmosphere_and_mood: Goofy and cozy, Saturday-morning adventure on a tight budget.
   rendering_and_quality: Broadcast cel look with slight dust; original characters, no existing show designs.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 70s Limited TV Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "70s limited TV animation: budget television cartoons with held cels, only mouths and eyes moving, thick outlines and painted backgrounds that repeat in pans. Carry it through held cels with moving mouths, thick outlines, repeating painted background, flat saturated color, cel dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: held cels with moving mouths; thick outlines; repeating painted background; flat saturated color; cel dust
 avoidRules:
   - exact studio character copy

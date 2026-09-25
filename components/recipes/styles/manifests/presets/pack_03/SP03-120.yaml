@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; a slightly high three-quarter angle suits the chunky silhouette.
   atmosphere_and_mood: Warm and adventurous, the friendly heft of an old online fantasy world.
   rendering_and_quality: Diffuse-only painted look on low-poly silhouettes, with no photoreal shading or glossy reflections.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hand-Painted Texture Character as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hand-painted texture CGI: chunky stylized 3D forms whose lighting, highlights and occlusion are painted straight into the color texture and rendered almost unlit. Carry it through painted-in highlights and shadows, chunky proportions, visible brush strokes in textures, diffuse-only shading, bright edge highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: painted-in highlights and shadows; chunky proportions; visible brush strokes in textures; diffuse-only shading; bright edge highlights
 avoidRules:
   - forced T-pose

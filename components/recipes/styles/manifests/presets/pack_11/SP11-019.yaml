@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Warm, funny, handmade and playful, driven by the construction, color and rhythm.
   rendering_and_quality: Photographic puppet-show still with real fabric texture, with clean, deliberate marks and no accidental noise.
   key_features: fleece puppets; ping-pong eyes; hinged mouths; arm rods; TV set
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Felt Puppet Broadcast as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Felt puppet broadcast: the subject as a fuzzy hand puppet made of felt and fleece, performing on a small TV set. Carry it through fleece puppets, ping-pong eyes, hinged mouths, arm rods, TV set. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

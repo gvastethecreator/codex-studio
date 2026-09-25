@@ -38,13 +38,13 @@ const spec: Spec = {
       briefs: [
         'Quiet naturalism anime frame of an old woman peeling apples at a kitchen table in morning light, believable weight in her hands and posture, economical contours and detailed kitchen tools integrated into the same observed world, original character. No readable text or logo.',
         'Naturalism anime frame of a mechanic wiping her hands beside a truck at dusk, believable weight and quiet contour economy. No readable text or logo.',
-        'Naturalism anime frame of a boy waiting for a bus in winter, hands in pockets, observational detail. No readable text or logo.',
+        'Quiet naturalism anime frame of a boy waiting for a bus in winter, hands deep in his pockets and breath visible, believable weight and observational detail in the shelter. No readable text or logo.',
       ],
     },
     'SP05-334': {
       briefs: [
         'Emergency storyboard anime frame of a rescue crew rushing into a collapsing mine, rough graphite and brush contours breaking and restarting around compressed shadow masses, a few cyan and rust-red accents for urgency, no lettering. No readable text or logo.',
-        'Storyboard tension anime frame of a pilot reaching for an eject lever, rough graphite and cyan accents. No readable text or logo.',
+        'Emergency storyboard anime frame of a pilot reaching for an eject lever in a shaking cockpit, rough graphite contours breaking around compressed shadows and cyan warning accents. No readable text or logo.',
         'Emergency storyboard anime frame of a ship listing hard in a storm, sailors clinging to ropes, rough brush contours restarting around heavy compressed shadows and a few rust-red accents on the lifeboats. No readable text or logo.',
       ],
     },

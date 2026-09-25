@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Sheet hanging flat-ish, filling the frame, pegs or ropes at the corners.
   atmosphere_and_mood: Proud and homemade, a big announcement made with what was at hand.
   rendering_and_quality: Real paint on fabric; images only, no painted slogans.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bedsheet Banner Paint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Bedsheet banner paint: a big image painted with leftover house paint and a wide brush on an old bedsheet, hung by its corners. Carry it through house paint on bedsheet, bleeding into weave, wrinkles and drips, backlit thin fabric, hung by the corners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: house paint on bedsheet; bleeding into weave; wrinkles and drips; backlit thin fabric; hung by the corners
 avoidRules:
   - photorealistic rendering

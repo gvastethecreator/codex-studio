@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing with a casual, slightly off-center family snapshot composition.
   atmosphere_and_mood: Warm and bittersweet, a summer kept in an old album.
   rendering_and_quality: Dye-fading in the print; not an overall sepia filter.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 1970s Faded Color Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "1970s faded color print: a family snapshot on chromogenic paper whose cyan dye has faded, leaving a warm magenta-orange cast. Carry it through faded cyan dye, magenta-orange cast, yellowed whites, satin print surface, snapshot framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: faded cyan dye; magenta-orange cast; yellowed whites; satin print surface; snapshot framing
 avoidRules:
   - illustration

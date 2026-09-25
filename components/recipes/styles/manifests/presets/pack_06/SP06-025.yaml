@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Rational, calm and exacting, the pleasure of understanding how things work.
   rendering_and_quality: Three line weights at most, heavy outline, medium edges, fine hatching; no freehand wobble, no labels or dimensions.
   key_features: fixed-width line hierarchy; ruled and templated geometry; uniform angled hatching; cutaway or exploded views; smooth vellum
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Technical Pen as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Technical pen drafting: fixed-width tubular nibs in a strict line-weight hierarchy, with ruled straight lines, template ellipses and measured parallel hatching. Carry it through fixed-width line hierarchy, ruled and templated geometry, uniform angled hatching, cutaway or exploded views, smooth vellum. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - mixing in a second drawing tool

@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Organic-mechanical contours, compact cel shadows, mineral teal, compressed negative space',
       creative_brief:
-        'Apply a visual treatment centered on organic-mechanical contours, compact cel shadows, mineral teal, compressed negative space. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on organic-mechanical contours, compact cel shadows, mineral teal, compressed negative space. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -58,7 +58,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Fluid transformation arcs when requested, continuous subject identity, jewel accents, clean cel phases',
       creative_brief:
-        'Apply a transformation-profile layer centered on fluid arcs, jewel accents, and clean cel phases. Preserve the exact subject, action, count, age, setting, camera, and mood. Only when a transformation sequence is explicitly requested, keep one identity through the requested stages and change only elements named in the prompt; otherwise draw one requested state. Add no unrequested costume, accessory, emblem, effect, place, prop, or text.',
+        'Apply a transformation-profile layer centered on fluid arcs, jewel accents, and clean cel phases. Preserve the exact subject, action, count, age, setting, camera, and mood. Only when a transformation sequence is explicitly requested, keep one identity through the requested stages and change only elements named in the prompt; otherwise draw one requested state. Add no unrequested costume, accessory, emblem, effect, place, prop, or text. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -84,7 +84,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Hard-cut silhouette, compressed negative space, sparse signal red, precise cel shadows',
       creative_brief:
-        'Apply a visual treatment centered on hard-cut silhouette, compressed negative space, sparse signal red, precise cel shadows. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on hard-cut silhouette, compressed negative space, sparse signal red, precise cel shadows. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -112,7 +112,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Elastic contour, warm-cool blocks, quick tapered marks, effects tied to requested action',
       creative_brief:
-        'Apply a visual treatment centered on elastic contour, warm-cool blocks, quick tapered marks, effects tied to requested action. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on elastic contour, warm-cool blocks, quick tapered marks, effects tied to requested action. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -141,7 +141,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Engraved contour, beveled value planes, localized metal accents, restrained geometry',
       creative_brief:
-        'Apply a visual treatment centered on engraved contour, beveled value planes, localized metal accents, restrained geometry. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on engraved contour, beveled value planes, localized metal accents, restrained geometry. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -169,7 +169,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Polygonal cel facets, bold outline, cerulean-amber contrast, accents on existing surfaces',
       creative_brief:
-        'Apply a visual treatment centered on polygonal cel facets, bold outline, cerulean-amber contrast, accents on existing surfaces. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on polygonal cel facets, bold outline, cerulean-amber contrast, accents on existing surfaces. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -197,7 +197,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Crisp mechanical line when relevant, navy-orange balance, smooth flats, spacing-led group rhythm',
       creative_brief:
-        'Apply a visual treatment centered on crisp mechanical line when relevant, navy-orange balance, smooth flats, spacing-led group rhythm. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on crisp mechanical line when relevant, navy-orange balance, smooth flats, spacing-led group rhythm. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -226,7 +226,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Organic-angular contour, pine-vermilion palette, localized hatch, controlled negative space',
       creative_brief:
-        'Apply a visual treatment centered on organic-angular contour, pine-vermilion palette, localized hatch, controlled negative space. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on organic-angular contour, pine-vermilion palette, localized hatch, controlled negative space. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -254,7 +254,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Broken contour rhythm, local scanline grain, cyan signal accents, asymmetric pauses',
       creative_brief:
-        'Apply a visual treatment centered on broken contour rhythm, local scanline grain, cyan signal accents, asymmetric pauses. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on broken contour rhythm, local scanline grain, cyan signal accents, asymmetric pauses. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -282,7 +282,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp silhouettes, restrained glow, legible ornament, clean flat color.',
       key_features: 'Curved emblem line, soft local bloom, precise ornament, lapis and ivory',
       creative_brief:
-        'Apply a visual treatment centered on curved emblem line, soft local bloom, precise ornament, lapis and ivory. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on curved emblem line, soft local bloom, precise ornament, lapis and ivory. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -310,7 +310,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Fine rounded contour, pale aqua-blue, soft cel transitions, measured open space',
       creative_brief:
-        'Apply a visual treatment centered on fine rounded contour, pale aqua-blue, soft cel transitions, measured open space. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on fine rounded contour, pale aqua-blue, soft cel transitions, measured open space. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -336,7 +336,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Smooth precise contour, powder-blue neutrals, matte cel planes, context-led open spacing',
       creative_brief:
-        'Apply a visual treatment centered on smooth precise contour, powder-blue neutrals, matte cel planes, context-led open spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on smooth precise contour, powder-blue neutrals, matte cel planes, context-led open spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -365,7 +365,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Rounded fine contour, warm-cool values, subtle wash, closeness only when requested',
       creative_brief:
-        'Apply a visual treatment centered on rounded fine contour, warm-cool values, subtle wash, closeness only when requested. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on rounded fine contour, warm-cool values, subtle wash, closeness only when requested. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -394,7 +394,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Dense expressive blacks, smoke-violet mids, selective fabric detail, precise highlights',
       creative_brief:
-        'Apply a visual treatment centered on dense expressive blacks, smoke-violet mids, selective fabric detail, precise highlights. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on dense expressive blacks, smoke-violet mids, selective fabric detail, precise highlights. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -421,7 +421,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Refined cel polish, ivory-teal contrast, local trim detail, clean graphic timing',
       creative_brief:
-        'Apply a visual treatment centered on refined cel polish, ivory-teal contrast, local trim detail, clean graphic timing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on refined cel polish, ivory-teal contrast, local trim detail, clean graphic timing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -450,7 +450,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Angular editorial line, selective stitch detail, electric accents, matte-gloss contrast',
       creative_brief:
-        'Apply a visual treatment centered on angular editorial line, selective stitch detail, electric accents, matte-gloss contrast. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on angular editorial line, selective stitch detail, electric accents, matte-gloss contrast. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -477,7 +477,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Variable contour rhythm, vivid color blocks, timing through space, expression without scale change',
       creative_brief:
-        'Apply a visual treatment centered on variable contour rhythm, vivid color blocks, timing through space, expression without scale change. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on variable contour rhythm, vivid color blocks, timing through space, expression without scale change. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -505,7 +505,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Sharp silhouette, ink-violet values, selective glints, radiance only when requested',
       creative_brief:
-        'Apply a visual treatment centered on sharp silhouette, ink-violet values, selective glints, radiance only when requested. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on sharp silhouette, ink-violet values, selective glints, radiance only when requested. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -531,7 +531,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Precise edge hierarchy, indigo-brass palette, contextual vertical rhythm, restrained cel finish',
       creative_brief:
-        'Apply a visual treatment centered on precise edge hierarchy, indigo-brass palette, contextual vertical rhythm, restrained cel finish. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on precise edge hierarchy, indigo-brass palette, contextual vertical rhythm, restrained cel finish. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -557,7 +557,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality: 'Clear focal contour, quiet layers, no global bloom or sepia.',
       key_features: 'Translucent overlap, warm-cool wash, soft edge intervals, clear focal contour',
       creative_brief:
-        'Apply a visual treatment centered on translucent overlap, warm-cool wash, soft edge intervals, clear focal contour. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on translucent overlap, warm-cool wash, soft edge intervals, clear focal contour. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -586,7 +586,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Rounded contour, teal-amber accent, localized reflections, spacing follows the prompt',
       creative_brief:
-        'Apply a visual treatment centered on rounded contour, teal-amber accent, localized reflections, spacing follows the prompt. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on rounded contour, teal-amber accent, localized reflections, spacing follows the prompt. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -615,7 +615,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Structured contour, ruffle rhythm, black-ivory-red values, contrast without wardrobe change',
       creative_brief:
-        'Apply a visual treatment centered on structured contour, ruffle rhythm, black-ivory-red values, contrast without wardrobe change. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on structured contour, ruffle rhythm, black-ivory-red values, contrast without wardrobe change. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -641,7 +641,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Engraved contour, black-bone contrast, scarlet-gold accents, disciplined diagonals',
       creative_brief:
-        'Apply a visual treatment centered on engraved contour, black-bone contrast, scarlet-gold accents, disciplined diagonals. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on engraved contour, black-bone contrast, scarlet-gold accents, disciplined diagonals. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -669,7 +669,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Elastic hand-drawn contour, bright color blocks, local surface pattern, slight line irregularity',
       creative_brief:
-        'Apply a visual treatment centered on elastic hand-drawn contour, bright color blocks, local surface pattern, slight line irregularity. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on elastic hand-drawn contour, bright color blocks, local surface pattern, slight line irregularity. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -698,7 +698,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Pencil underdrawing, transparent gouache, warm paper, asymmetry within supplied framing',
       creative_brief:
-        'Apply a visual treatment centered on pencil underdrawing, transparent gouache, warm paper, asymmetry within supplied framing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on pencil underdrawing, transparent gouache, warm paper, asymmetry within supplied framing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -725,7 +725,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Bold mineral ink, vermilion-pine palette, restrained paper grain, symbols only when prompted',
       creative_brief:
-        'Apply a visual treatment centered on bold mineral ink, vermilion-pine palette, restrained paper grain, symbols only when prompted. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on bold mineral ink, vermilion-pine palette, restrained paper grain, symbols only when prompted. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -754,7 +754,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Pearly translucent layers, sea-glass-violet palette, local filament marks, clear opaque forms',
       creative_brief:
-        'Apply a visual treatment centered on pearly translucent layers, sea-glass-violet palette, local filament marks, clear opaque forms. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on pearly translucent layers, sea-glass-violet palette, local filament marks, clear opaque forms. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -781,7 +781,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Curved plane layering, deep-teal-amber contrast, local reflected strokes, prompt-led mood and spacing',
       creative_brief:
-        'Apply a visual treatment centered on curved plane layering, deep-teal-amber contrast, local reflected strokes, prompt-led mood and spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on curved plane layering, deep-teal-amber contrast, local reflected strokes, prompt-led mood and spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -809,7 +809,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Tapered botanical-style line, terracotta-sage palette, crisp cel edges, details on existing forms',
       creative_brief:
-        'Apply a visual treatment centered on tapered botanical-style line, terracotta-sage palette, crisp cel edges, details on existing forms. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on tapered botanical-style line, terracotta-sage palette, crisp cel edges, details on existing forms. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -837,7 +837,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Long directional contour, earthy cel planes, selective dry-brush, motion follows the prompt',
       creative_brief:
-        'Apply a visual treatment centered on long directional contour, earthy cel planes, selective dry-brush, motion follows the prompt. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on long directional contour, earthy cel planes, selective dry-brush, motion follows the prompt. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -864,7 +864,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Feathered line, pale cool-warm balance, clean focal glints, controlled open spacing',
       creative_brief:
-        'Apply a visual treatment centered on feathered line, pale cool-warm balance, clean focal glints, controlled open spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on feathered line, pale cool-warm balance, clean focal glints, controlled open spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -893,7 +893,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Tapered ornamental contour, nested cel shapes, jade-cobalt accents, measured vertical balance',
       creative_brief:
-        'Apply a visual treatment centered on tapered ornamental contour, nested cel shapes, jade-cobalt accents, measured vertical balance. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on tapered ornamental contour, nested cel shapes, jade-cobalt accents, measured vertical balance. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -920,7 +920,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Opposed value planes, emphatic ink, diagonal counterbalance, vermilion accents',
       creative_brief:
-        'Apply a visual treatment centered on opposed value planes, emphatic ink, diagonal counterbalance, vermilion accents. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on opposed value planes, emphatic ink, diagonal counterbalance, vermilion accents. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -949,7 +949,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Rounded contours, low-contrast cel values, sage-ochre palette, generous breathing room',
       creative_brief:
-        'Apply a visual treatment centered on rounded contours, low-contrast cel values, sage-ochre palette, generous breathing room. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on rounded contours, low-contrast cel values, sage-ochre palette, generous breathing room. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -976,7 +976,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp silhouette, limited scratches, readable mids, no blanket distress.',
       key_features: 'Heavy variable ink, angular cuts, electric accents, localized dry-brush',
       creative_brief:
-        'Apply a visual treatment centered on heavy variable ink, angular cuts, electric accents, localized dry-brush. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on heavy variable ink, angular cuts, electric accents, localized dry-brush. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -1004,7 +1004,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Elastic focal marks, polished cel fill, warm-cool contrast, timing through space',
       creative_brief:
-        'Apply a visual treatment centered on elastic focal marks, polished cel fill, warm-cool contrast, timing through space. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on elastic focal marks, polished cel fill, warm-cool contrast, timing through space. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -1031,7 +1031,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality: 'Thin wash, legible ink, subtle paper texture; no global sepia haze.',
       key_features: 'Fine ink contour, transparent pigment wash, amber-slate palette, open margins',
       creative_brief:
-        'Apply a visual treatment centered on fine ink contour, transparent pigment wash, amber-slate palette, open margins. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on fine ink contour, transparent pigment wash, amber-slate palette, open margins. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -1058,7 +1058,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Gesture-readable contour, matte cel planes, teal-copper accents, clarity through spacing',
       creative_brief:
-        'Apply a visual treatment centered on gesture-readable contour, matte cel planes, teal-copper accents, clarity through spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on gesture-readable contour, matte cel planes, teal-copper accents, clarity through spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -1086,7 +1086,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Decisive tapered line, clay-red accent, firm cel shadows, gesture-led diagonals',
       creative_brief:
-        'Apply a visual treatment centered on decisive tapered line, clay-red accent, firm cel shadows, gesture-led diagonals. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on decisive tapered line, clay-red accent, firm cel shadows, gesture-led diagonals. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -1115,7 +1115,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Dense matte silhouette, cool silver edge, dark plum values, selective material ornament',
       creative_brief:
-        'Apply a visual treatment centered on dense matte silhouette, cool silver edge, dark plum values, selective material ornament. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
+        'Apply a visual treatment centered on dense matte silhouette, cool silver edge, dark plum values, selective material ornament. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

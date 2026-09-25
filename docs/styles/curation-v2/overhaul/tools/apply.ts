@@ -3,6 +3,7 @@
 import { createRequire } from 'node:module';
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
+import { creativeBriefFromDna } from './creative-brief';
 
 const repo = path.resolve(import.meta.dir, '../../../../..');
 const require = createRequire(path.join(repo, 'package.json'));
@@ -54,10 +55,6 @@ const COMMON_AVOID = [
 const dumpOpts = { lineWidth: -1, noRefs: true, sortKeys: false };
 const presetsRoot = path.join(repo, 'components/recipes/styles/manifests/presets');
 
-function creativeBrief(name: string) {
-  return `Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies ${name} as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.`;
-}
-
 function mergeAvoid(specific: string[], existing: string[] = []) {
   const out: string[] = [];
   for (const rule of [...specific, ...existing, ...COMMON_AVOID]) {
@@ -106,7 +103,7 @@ for (const [id, update] of Object.entries(spec.updates)) {
   }
   if (update.dna) {
     doc.visualDna = { ...doc.visualDna, ...update.dna };
-    doc.visualDna.creative_brief = creativeBrief(doc.name);
+    doc.visualDna.creative_brief = creativeBriefFromDna(doc.visualDna);
     doc.version = Number(doc.version ?? 1) + 1;
   }
   if (update.avoid || update.dropAvoid) {
@@ -161,7 +158,7 @@ if (spec.creates?.length) {
       tags,
       visualDna: {
         ...create.dna,
-        creative_brief: creativeBrief(create.name),
+        creative_brief: creativeBriefFromDna(create.dna),
       },
       avoidRules,
       assets: {},

@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Quiet awe and rising dominance, darkness gathering upward toward a cold glow.
   rendering_and_quality: Glossy digital finish with dark tonal depth and thin cyan edges, no panel borders.
   key_features: airbrushed digital painting; glowing cyan eyes; smoky shadow silhouettes; black and violet palette; tall vertical staging
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Full-Color Manhwa Shadow Glow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Full-color vertical webcomic action: smooth airbrushed digital painting, narrow dark contours, deep black-violet shadows, glowing cyan eyes and smoky shadow silhouettes rising from the ground. Carry it through airbrushed digital painting, glowing cyan eyes, smoky shadow silhouettes, black and violet palette, tall vertical staging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

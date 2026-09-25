@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Cramped, practical and lived-in, a workplace where nothing can be put down.
   rendering_and_quality: Documentary interior photograph realism; never an ornate gold station exterior.
   key_features: beige equipment racks; circular hatches; blue hook-and-loop patches and straps; floating tethered objects; flat fluorescent strip light
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Orbital Utility Habitat as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Working space-station interior: beige equipment racks, circular hatches, blue hook-and-loop patches and retention straps, cables bungeed to every wall and no up or down. Carry it through beige equipment racks, circular hatches, blue hook-and-loop patches and straps, floating tethered objects, flat fluorescent strip light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - black and gold sci-fi palette by default
   - franchise ship or station likeness

@@ -20,7 +20,7 @@ visualDna:
   camera_and_composition: 24–35 mm, subject at one third, deep depth of field so the environment stays legible, strong leading lines toward the sitter.
   atmosphere_and_mood: Grounded, dignified, and narrative.
   rendering_and_quality: Editorial magazine finish with believable exposure across subject and space.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Environmental Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Environmental portrait: the sitter placed inside the space that explains them, posed with intent, the room or landscape carrying half the story. Carry it through sitter inside their world, deep depth of field, environment as narrative, subtle added face light, leading lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: sitter inside their world; deep depth of field; environment as narrative; subtle added face light; leading lines
 avoidRules:
   - generic stock-photo face

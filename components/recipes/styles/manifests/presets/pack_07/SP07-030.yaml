@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Urgent, utopian and machine-like, architecture as a social engine.
   rendering_and_quality: Stark photograph with clear geometric volumes, no flags, slogans, propaganda posters or readable text.
   key_features: colliding cylinders and prisms; glazed stair cylinder; dramatic cantilevers; steel lattice mast; single red accent
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soviet Constructivist as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Constructivist architecture of the 1920s avant-garde: dynamic compositions of cylinders, prisms and slabs, cantilevers, glazed stair towers and exposed frames expressing function and movement. Carry it through colliding cylinders and prisms, glazed stair cylinder, dramatic cantilevers, steel lattice mast, single red accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - golden-hour hero facade formula
   - copy of a named landmark

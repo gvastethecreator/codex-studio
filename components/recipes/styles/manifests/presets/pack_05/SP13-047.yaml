@@ -28,7 +28,7 @@ visualDna:
   camera_and_composition: Very wide establishing view from a high distant vantage, the arc spanning at least two thirds of the frame width.
   atmosphere_and_mood: Epic scale and solitude, one small life moving through a huge world.
   rendering_and_quality: Clean readable arc, a tiny but unmistakable subject, and painterly depth layers.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tiny-Figure Grand Arc Wide as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Anime extreme-wide staging: the subject is tiny, under a twentieth of the frame height, while the path of its movement sweeps one grand clean arc across a vast landscape or interior. Carry it through tiny subject under one twentieth of frame height, one grand movement arc, vast layered space, high distant vantage, arc from existing material. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: tiny subject under one twentieth of frame height; one grand movement arc; vast layered space; high distant vantage; arc from existing material
 avoidRules:
   - added opponent

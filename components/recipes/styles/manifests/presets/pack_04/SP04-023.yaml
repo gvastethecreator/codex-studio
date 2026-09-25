@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Nocturnal, crisp and revelatory, light pulled out of darkness.
   rendering_and_quality: Razor-clean white lines of even hardness, no grey wash and no pen-drawn black lines.
   key_features: subtractive white lines on black; knife and fiberglass scratch marks; contour-following hatching; untouched black shadows; chalky clay white
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scratchboard as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Scratchboard: white lines scraped with a knife and fiberglass brush out of a black ink layer on white clay board, light built entirely by removal. Carry it through subtractive white lines on black, knife and fiberglass scratch marks, contour-following hatching, untouched black shadows, chalky clay white. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - brand logo

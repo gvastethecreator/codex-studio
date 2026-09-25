@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested camera; turn the cut plane toward the viewer so the section fills a large part of the frame.
   atmosphere_and_mood: Curious and revealing, like opening a book of the object.
   rendering_and_quality: Crisp CG section with no torn or broken edges; the removed half is simply absent, never exploded.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Voxel Cross-Section Cutaway as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Clipping-plane section shader: the model sliced cleanly by a flat plane, the cut face capped with a grid of solid voxels colored by the material inside. Carry it through flat clipping plane, voxelized section cap, one color per interior material, beauty-lit outer half, no explosion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: flat clipping plane; voxelized section cap; one color per interior material; beauty-lit outer half; no explosion
 avoidRules:
   - sensor noise

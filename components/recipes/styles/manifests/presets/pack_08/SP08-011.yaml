@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Optimistic, polished, wholesome and slightly uncanny, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Saturated, glossy vintage print finish, with believable fabric weight, seams and fit detail.
   key_features: full circle skirt and petticoat; twinset and pearls; gloves; technicolor pastels; advertising polish
-  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vintage 1950s as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
+  creative_brief: "1950s domestic-pop fashion: fitted bodices, full circle skirts over petticoats, cardigans, pearls, gloves and neat set hair, or boxy suits with fedoras. Carry it through full circle skirt and petticoat, twinset and pearls, gloves, technicolor pastels, advertising polish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - readable label text

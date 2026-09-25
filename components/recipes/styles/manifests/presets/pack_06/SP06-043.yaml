@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Official, precise and dignified, value engraved in steel.
   rendering_and_quality: Extremely fine swelling lines and interlaced guilloche, no free sketching; no numbers, denominations or readable text.
   key_features: burin-cut swelling line modeling; guilloche rosettes; dot-and-lozenge half-tones; single intaglio ink color; cotton-rag paper
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Security Engraving as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Security engraving: burin-cut steel line work of extreme density, swelling lines and dot-and-lozenge patterns, surrounded by machine-turned guilloche rosettes. Carry it through burin-cut swelling line modeling, guilloche rosettes, dot-and-lozenge half-tones, single intaglio ink color, cotton-rag paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - readable printed text

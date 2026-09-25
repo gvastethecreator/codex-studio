@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Dazzling and precious, the thrill of a rare pull.
   rendering_and_quality: Polished anime finish with crisp foil edges; no stats, numbers or name banner.
   key_features: vertical card; iridescent foil frame; rarity gems; clean anime paint; figure breaking the frame
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Anime Gacha Foil Frame as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Gacha character card: a vertical collectible card with an ornate iridescent foil frame around a clean anime-painted character illustration. Carry it through vertical card, iridescent foil frame, rarity gems, clean anime paint, figure breaking the frame. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - known game HUD layout

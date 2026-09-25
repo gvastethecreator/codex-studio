@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; close enough to read the joints and colour-coded ducts, strong repetition of structural bays.
   atmosphere_and_mood: Optimistic, engineered and transparent, a machine shown working.
   rendering_and_quality: Sharp architectural photograph with precise joints and clean enamel colours, no hidden services.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies High-Tech Exposed Structure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "High-tech architecture: the building turned inside out, with structure, ducts, lifts and stairs carried on the outside, tension rods, cast steel nodes and prefabricated panels on show. Carry it through external colour-coded ducts, tension rods and cast steel nodes, external glass lifts, tubular steel trusses, prefabricated panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: external colour-coded ducts; tension rods and cast steel nodes; external glass lifts; tubular steel trusses; prefabricated panels
 avoidRules:
   - golden-hour hero facade formula

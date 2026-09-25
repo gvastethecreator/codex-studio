@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'bulbous distortion; mismatched feature scale; unstable contour redraw; scratchy marks; sickly accents',
       creative_brief:
-        'Render the supplied content with wobbly uneven contours, spasming line weight, broken construction, scratchy redraws, elastic form distortion. Use bruised purple, deep yellow, clammy gray, and sickly green as style colors while honoring any explicit color instructions. Apply pitted irregular marks, oily-looking highlights, and blotchy grain as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.',
+        'Render the supplied content with wobbly uneven contours, spasming line weight, broken construction, scratchy redraws, elastic form distortion. Use bruised purple, deep yellow, clammy gray, and sickly green as style colors while honoring any explicit color instructions. Apply pitted irregular marks, oily-looking highlights, and blotchy grain as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -145,7 +145,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'sinking contours; vertical drips; stretched edges; pooled graphic shapes; wavering boundaries',
       creative_brief:
-        'Render the supplied content with sinking contours, drooping outlines, vertical stretch, and liquid-like edge distortion. Use melting-wax pastels, bruise-spectrum purple and yellow, jaundiced yellow, soft amber, and muted peach as style colors while honoring any explicit color instructions. Apply graphic drip trails, stretched contour marks, and pooled edge accents as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.',
+        'Render the supplied content with sinking contours, drooping outlines, vertical stretch, and liquid-like edge distortion. Use melting-wax pastels, bruise-spectrum purple and yellow, jaundiced yellow, soft amber, and muted peach as style colors while honoring any explicit color instructions. Apply graphic drip trails, stretched contour marks, and pooled edge accents as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -174,7 +174,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'lumpy asymmetry; rounded uneven contours; irregular bumps; mismatched scale; candy-sick glow',
       creative_brief:
-        'Render the supplied content with chunky uneven outlines, bulbous swelling curves, irregular bumps, and playful protrusions. Use mold green, soft pink, bruise purple, and muted yellow accents as style colors while honoring any explicit color instructions. Apply irregular soft bumps, crust-like grain, and dry uneven marks as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.',
+        'Render the supplied content with chunky uneven outlines, bulbous swelling curves, irregular bumps, and playful protrusions. Use mold green, soft pink, bruise purple, and muted yellow accents as style colors while honoring any explicit color instructions. Apply irregular soft bumps, crust-like grain, and dry uneven marks as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -376,7 +376,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'polished vector shapes; over-regular symmetry; frozen cheer; uneven feature scale; sterile gloss',
       creative_brief:
-        'Render the supplied content with smooth vector contours, near-symmetry, polished simple shapes, and tiny controlled alignment errors. Use primary blue, bright red, yellow, sterile white, warm peach, and glossy green as style colors while honoring any explicit color instructions. Apply smooth vector-like fill, restrained sheen, clean highlights, and sterile surface finish as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.',
+        'Render the supplied content with smooth vector contours, near-symmetry, polished simple shapes, and tiny controlled alignment errors. Use primary blue, bright red, yellow, sterile white, warm peach, and glossy green as style colors while honoring any explicit color instructions. Apply smooth vector-like fill, restrained sheen, clean highlights, and sterile surface finish as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -436,7 +436,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'simple cartoon contour; swollen micro-detail; trembling folds; wet highlights; optional invasive crop',
       creative_brief:
-        'Render the supplied content with wobbling brush contours, variable line weight, swollen micro-detail, and irregular surface edges. Use hot pink, nicotine yellow, clammy teal shadows, red-orange accents, and greasy beige as style colors while honoring any explicit color instructions. Apply macro contour variation, uneven highlights, fine drawn grain, and tight clusters of micro-marks as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.',
+        'Render the supplied content with wobbling brush contours, variable line weight, swollen micro-detail, and irregular surface edges. Use hot pink, nicotine yellow, clammy teal shadows, red-orange accents, and greasy beige as style colors while honoring any explicit color instructions. Apply macro contour variation, uneven highlights, fine drawn grain, and tight clusters of micro-marks as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -563,7 +563,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'vibrating contours; stretched expression geometry; smear frames; squash and stretch; rough pencil marks',
       creative_brief:
-        'Render the supplied content with vibrating outlines, stretched smear frames, contour boil, and high-energy cartoon scribble. Use warm yellow, candy red, chlorine blue, warm peach, and muted gray as style colors while honoring any explicit color instructions. Apply cel-paint wobble, analog-TV softness, warm color haze, and rough pencil marks as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.',
+        'Render the supplied content with vibrating outlines, stretched smear frames, contour boil, and high-energy cartoon scribble. Use warm yellow, candy red, chlorine blue, warm peach, and muted gray as style colors while honoring any explicit color instructions. Apply cel-paint wobble, analog-TV softness, warm color haze, and rough pencil marks as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -696,7 +696,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'continuous outline; elastic compression; simple cartoon shapes; contrast only where present',
       creative_brief:
-        'Render the supplied content with clean elastic outlines, continuous contour, simple construction, and soft squash curves. Use flat TV colors, mustard tan, muted blue, warm orange, faded green, and heavy black accents as style colors while honoring any explicit color instructions. Apply smooth cel fill, analog-TV softness, light scan grain, and simple painted-looking marks as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.',
+        'Render the supplied content with clean elastic outlines, continuous contour, simple construction, and soft squash curves. Use flat TV colors, mustard tan, muted blue, warm orange, faded green, and heavy black accents as style colors while honoring any explicit color instructions. Apply smooth cel fill, analog-TV softness, light scan grain, and simple painted-looking marks as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -727,7 +727,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'flat cheerful fill; simple contour; localized painterly detail; macro contrast when requested; source-led texture',
       creative_brief:
-        'Render the supplied content with simple bright contours interrupted by hyper-detailed brush marks in limited areas. Use cheerful yellow-blue base, sickly pink accents, red accents, greasy beige, and seafoam green as style colors while honoring any explicit color instructions. Apply cartoon fill with painterly micro-marks and gloss only where they suit the input material as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.',
+        'Render the supplied content with simple bright contours interrupted by hyper-detailed brush marks in limited areas. Use cheerful yellow-blue base, sickly pink accents, red accents, greasy beige, and seafoam green as style colors while honoring any explicit color instructions. Apply cartoon fill with painterly micro-marks and gloss only where they suit the input material as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -820,7 +820,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'irregular silhouette; lopsided contour; toxic color notes; worn graphic marks; optional social symbolism',
       creative_brief:
-        'Render the supplied content with irregular clean outlines, lopsided silhouettes, friendly deformity marks, and restrained exaggeration. Use toxic yellow, smoke gray, bruised mauve, dull green, cheap tan, and muted domestic pink as style colors while honoring any explicit color instructions. Apply grime-like speckling, worn edge marks, dent-like drawn accents, and dusty cel grain as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.',
+        'Render the supplied content with irregular clean outlines, lopsided silhouettes, friendly deformity marks, and restrained exaggeration. Use toxic yellow, smoke gray, bruised mauve, dull green, cheap tan, and muted domestic pink as style colors while honoring any explicit color instructions. Apply grime-like speckling, worn edge marks, dent-like drawn accents, and dusty cel grain as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -973,7 +973,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'crooked marker contour; liquid-like wobble; naive irregular curves; flow accents; marker bleed; wet-look highlights',
       creative_brief:
-        'Render the supplied content with crooked marker outlines, liquid-like wobble, naive irregular curves, and optional flow strokes. Use acid green, wet turquoise, warm red, bright cool blue, sticky yellow, and marker black as style colors while honoring any explicit color instructions. Apply marker bleed, slick-looking highlights, wet-paper grain, plastic-like sheen marks, and damp speckles as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.',
+        'Render the supplied content with crooked marker outlines, liquid-like wobble, naive irregular curves, and optional flow strokes. Use acid green, wet turquoise, warm red, bright cool blue, sticky yellow, and marker black as style colors while honoring any explicit color instructions. Apply marker bleed, slick-looking highlights, wet-paper grain, plastic-like sheen marks, and damp speckles as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag. Use it as a reusable look on any subject.',
     },
   },
   {

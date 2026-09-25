@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Monumental composition with a large sculptural subject and simple backdrop.
   atmosphere_and_mood: Heroic, grave, classical, and earthy.
   rendering_and_quality: 'Refined printmaking finish: clean block edges, subtle wood grain, readable shapes.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chiaroscuro Tone Block Woodcut as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Chiaroscuro woodcut printed from a key block and two tone blocks in olive, ochre, and dark green-brown, with highlights cut out to reveal pale paper. Carry it through key block plus olive and ochre tone blocks, carved highlights, wood grain fields, monumental sculptural light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: key block plus olive and ochre tone blocks; carved highlights; wood grain fields; monumental sculptural light
 avoidRules:
   - bright saturated color

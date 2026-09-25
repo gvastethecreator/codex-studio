@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Analytical, trustworthy and clear, a curious question calmly answered.
   rendering_and_quality: Precise vector illustration; no charts with numbers, no dashboards and no readable labels.
   key_features: illustrated cross-section or cycle; connector arrows; categorical muted palette; clean vector; no labels
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Infographic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Editorial infographic illustration: the subject explained as an illustrated diagram of layers, cycles or flows, drawn in clean flat vector. Carry it through illustrated cross-section or cycle, connector arrows, categorical muted palette, clean vector, no labels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - invented slogans
   - fake lettering

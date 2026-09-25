@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Buoyant, affectionate and hopeful, a love song played at full volume.
   rendering_and_quality: Crisp ink line, airbrushed gradients, star glints and ribbon loops with soft film grain; no modern bloom.
   key_features: airbrushed cyan-pink gradient sky; looping white vapor-trail ribbons; four-point star glints; gold rim light; 1980s cel film grain
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pop-Signal Engineered Romance as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "1980s idol-era mecha cel: airbrushed cyan-pink gradient skies, star-shaped sparkle glints, and looping white vapor-trail ribbons curving around clean inked forms. Carry it through airbrushed cyan-pink gradient sky, looping white vapor-trail ribbons, four-point star glints, gold rim light, 1980s cel film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

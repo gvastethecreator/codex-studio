@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Documentary-style off-center crop as if a found photo or sketch was faxed, with slight skew and cut-off edges.
   atmosphere_and_mood: Cold, mysterious, lost, and unsettling.
   rendering_and_quality: 'Clean controlled reproduction of degradation: dither is regular and readable, subject still recognizable, no random noise.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thermal Fax Decay Zine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Image received by thermal fax and left in the sun: brown-gray dithered tones, horizontal scan streaks, compressed blacks, curling glossy paper, and fading toward one edge. Carry it through thermal fax dither, horizontal scan streaks, sun-faded sepia gray, skewed found-evidence crop, dissolving detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: thermal fax dither; horizontal scan streaks; sun-faded sepia gray; skewed found-evidence crop; dissolving detail
 avoidRules:
   - sharp clean print

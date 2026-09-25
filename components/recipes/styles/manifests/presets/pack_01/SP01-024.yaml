@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Detached and epic, the familiar world turned into an abstract map seen from far above.
   rendering_and_quality: Sharp drone survey clarity with no tilt-shift blur, fisheye curve or oblique angle.
   key_features: straight-down nadir view; flattened map perspective; long shadows reveal height; tiny human marks; pattern fields
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Drone Aerial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Drone nadir aerial: the camera pointing straight down from 60 to 120 meters, turning the ground into a flat map of shapes, paths and shadows. Carry it through straight-down nadir view, flattened map perspective, long shadows reveal height, tiny human marks, pattern fields. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - staged advertisement
   - stock-photo gloss

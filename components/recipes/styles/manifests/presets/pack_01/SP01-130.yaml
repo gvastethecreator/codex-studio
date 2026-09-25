@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: 16–24 mm very close to the animal, low angle, deep depth of field showing sky and horizon.
   atmosphere_and_mood: Intimate yet expansive, the animal inside its whole world.
   rendering_and_quality: Natural wide-angle perspective with mild edge stretch; not telephoto compression.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Animal-in-Habitat Wide Angle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Wide-angle wildlife: a remote-triggered or very close wide lens placing the animal large in the foreground with its whole habitat stretching behind. Carry it through animal large and close, habitat stretching behind, low wide angle, deep focus, visible sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: animal large and close; habitat stretching behind; low wide angle; deep focus; visible sky
 avoidRules:
   - illustration

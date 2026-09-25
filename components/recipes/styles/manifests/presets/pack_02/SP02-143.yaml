@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; grand wide views from a high vantage, perfectly level horizon.
   atmosphere_and_mood: Monumental and silent, a new land measured on glass.
   rendering_and_quality: Large-plate albumen print with blank skies; not a modern HDR landscape.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mammoth Plate Landscape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Mammoth plate landscape: 1870s survey photographs on enormous glass negatives, extraordinarily detailed, with skies burned to blank white by blue-sensitive emulsion. Carry it through blank white sky, extreme land detail, warm albumen browns, misted moving water, high vantage survey view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: blank white sky; extreme land detail; warm albumen browns; misted moving water; high vantage survey view
 avoidRules:
   - illustration

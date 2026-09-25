@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Quiet, botanical and archival, a drawing developed by sunlight.
   rendering_and_quality: White line drawing and photogram silhouettes on blue; not a photograph toned blue.
   key_features: white lines on Prussian blue; photogram silhouettes; brushed chemistry edges; reversed values; paper tooth
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyanotype (Blueprint) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cyanotype sun print from a hand-inked acetate negative: white drawn lines and soft photogram shadows on deep Prussian blue. Carry it through white lines on Prussian blue, photogram silhouettes, brushed chemistry edges, reversed values, paper tooth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - brand logo

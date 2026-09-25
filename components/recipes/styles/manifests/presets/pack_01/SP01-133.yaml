@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Object in profile inside a round mirror field, air flow rising or streaming across the frame.
   atmosphere_and_mood: Revelatory and precise, invisible forces suddenly made visible.
   rendering_and_quality: Real optical schlieren look; not smoke, not a painted glow.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Schlieren Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Schlieren photography: a knife-edge optical setup that makes invisible air flow, heat and shock waves visible as sharp gradients of light and dark. Carry it through visible air and heat flow, knife-edge gradients, round mirror field, silhouetted object, rainbow or silver tones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: visible air and heat flow; knife-edge gradients; round mirror field; silhouetted object; rainbow or silver tones
 avoidRules:
   - illustration

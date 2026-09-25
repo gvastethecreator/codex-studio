@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.
   atmosphere_and_mood: Harsh, mysterious, arid and wild, coming from the effect rather than added scenery.
   rendering_and_quality: Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sandstorm Veil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Sandstorm veil: a tight swirl of sand spiraling around the target. Carry it through spiraling sand veil, blowing grains, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: spiraling sand veil; blowing grains; contained around the target
 avoidRules:
   - material applied to the background instead of the target

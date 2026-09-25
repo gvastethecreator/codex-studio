@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Emotional and contemporary, a cliffhanger beat in a serial story.
   rendering_and_quality: Clean anti-aliased line, simple two-step shading and soft glow; polished but not painterly.
   key_features: clean digital line; two-step cel shade; gradient backdrop; colored rim light; tall vertical framing
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Webtoon Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Vertical-scroll webcomic art: clean digital line with soft cel shading over glowing full-color gradient backgrounds, drawn for a phone screen. Carry it through clean digital line, two-step cel shade, gradient backdrop, colored rim light, tall vertical framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - added panels or gutters
   - speech balloons

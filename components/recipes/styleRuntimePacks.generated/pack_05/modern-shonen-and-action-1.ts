@@ -31,7 +31,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'heavy manga contour; crosshatched cel shadow wedges; primary red, cobalt and yellow; wide-lens limb foreshortening; white specular ticks',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crosshatched Primary Hero Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hero-TV anime built on a manga ink base: heavy variable contours and crosshatched shadow wedges printed over flat primary-color cel fills. Carry it through heavy manga contour, crosshatched cel shadow wedges, primary red, cobalt and yellow, wide-lens limb foreshortening. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -61,7 +61,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'expressionless dot-eyed face; filigree against brick-square forms; pastel lilac and mint; heavy uniform block outline; symmetric frozen staging',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Deadpan Filigree Brick Comedy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Straight-faced comedy anime: lace-like filigree curls and ornate decoration interrupted by blunt brick-square forms and a face kept completely blank with dot eyes and a flat mouth line. Carry it through expressionless dot-eyed face, filigree against brick-square forms, pastel lilac and mint, heavy uniform block outline, symmetric frozen staging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -94,7 +94,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'calm thin contours; one snapped straight smear; pale fluorescent palette; single tangerine accent; horizontal lane staging',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fluorescent Everyday Snap Action as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Everyday-object action anime: calm thin contours and flat retail color, broken by a single snapped motion where one limb or object becomes a short straight smear with crisp speed ticks. Carry it through calm thin contours, one snapped straight smear, pale fluorescent palette, single tangerine accent, horizontal lane staging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -124,7 +124,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'brush-pen contour; spotted black masses; ink-smoke energy ribbons; cyan-violet rim light; tilted horizon',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gritty Urban Curses as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dark modern exorcism anime: confident brush-pen contours, large spotted black shadow masses, and supernatural energy drawn as ink-smoke ribbons rimmed in cyan and violet. Carry it through brush-pen contour, spotted black masses, ink-smoke energy ribbons, cyan-violet rim light, tilted horizon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -154,7 +154,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'facial stress lines; towering vertical strata; taut cable motion trails; cold slate and olive palette; plunging verticals',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gritty Wallbound Survival as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Vertical-survival anime: thick sharp contours with harsh stress lines on faces and knuckles, figures dwarfed by colossal walls and cliffs, and taut cable-line motion trails. Carry it through facial stress lines, towering vertical strata, taut cable motion trails, cold slate and olive palette, plunging verticals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -184,7 +184,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'brush-textured painted backgrounds; desaturated wartime palette; thin scratchy contour; soft film grain; small figures against heavy masses',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Colossal War Drama as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Late-war anime drama: thin, slightly scratchy contours over brush-textured painted backgrounds, desaturated like old wartime photographs under a soft film grain. Carry it through brush-textured painted backgrounds, desaturated wartime palette, thin scratchy contour, soft film grain, small figures against heavy masses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -213,7 +213,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'slim clean contour; translucent wobbling aura outline; sunlit cel palette; clear figure intervals; one-tier cel shadow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tactical Adventure Shonen as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bright adventure-TV anime: slim clean contours and simple sunlit cel color, with inner power drawn as a translucent, wobbling double outline that hugs a figure like heat shimmer. Carry it through slim clean contour, translucent wobbling aura outline, sunlit cel palette, clear figure intervals, one-tier cel shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -247,7 +247,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'woodblock-print effect trails; bokashi-graded waves and flames; clean digital cel figures; winter blue and amber; nested trail arcs',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Printed-Wave Effect Trail Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Polished digital cel anime whose motion and energy trails are drawn as woodblock-print elements: curling wave crests, stylized flame tongues and wind bands in flat graded color. Carry it through woodblock-print effect trails, bokashi-graded waves and flames, clean digital cel figures, winter blue and amber, nested trail arcs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -276,7 +276,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'ultramarine eye-light trails; extreme wide-lens foreshortening; converging blue vector backgrounds; blue-white rim; hard-edged glow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ultramarine Glare Foreshortening as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hyper-focused competition anime: razor-clean contours, extreme wide-lens foreshortening, and eyes that trail streaks of ultramarine light while backgrounds dissolve into converging blue vectors. Carry it through ultramarine eye-light trails, extreme wide-lens foreshortening, converging blue vector backgrounds, blue-white rim, hard-edged glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -310,7 +310,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'partial photographic-negative inversion; broad black brush contour; ivory negative space; single crimson flash; formal diagonal',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Inverted Negative Ink Opera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ceremonial ink anime that flips into photographic negative: broad black brush contours, huge ivory fields, and one region inverted so shadows turn white and highlights black. Carry it through partial photographic-negative inversion, broad black brush contour, ivory negative space, single crimson flash, formal diagonal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -344,7 +344,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'worm-eye low angle; sky blue and cloud white; tapered contour ends; flapping cloth folds; backlit hard shadows',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sky-Blue Low-Angle Brawler Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Street-youth anime: heavy clean contours with sharp tapered ends, low worm-eye angles, and flapping coats against a wide saturated sky with towering white clouds. Carry it through worm-eye low angle, sky blue and cloud white, tapered contour ends, flapping cloth folds, backlit hard shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -374,7 +374,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'glass-shard fracture; halftone that changes per shard; coral and black with yellow or cobalt; broken contours; radial fracture focal point',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Broken-Rule Halftone Shatter as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Rule-breaking action anime: the picture cracked into angular glass-like shards, each shard shifting color and halftone, with uneven broken contours and abrupt cutout breaks. Carry it through glass-shard fracture, halftone that changes per shard, coral and black with yellow or cobalt, broken contours, radial fracture focal point. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -404,7 +404,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'black-edged gold lightning branches; etched engraving detail; forest green, black and gold; spiky contour ends; polished cel',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Etched Branch-Lightning Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Magic-squad anime: thick spiky contours, fine etched engraving in leather, metal and stone, and energy drawn as jagged branching lightning in black-edged gold. Carry it through black-edged gold lightning branches, etched engraving detail, forest green, black and gold, spiky contour ends. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -435,7 +435,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'severe sumi-brush black; single neon edge line; wide horizontal banding; long still hold; matte indigo darks',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sumi-Black Neon Edge Stillness as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cinematic ink anime: severe dry sumi-brush blacks, long still holds, and a single thin neon edge of magenta or cyan on otherwise matte darkness. Carry it through severe sumi-brush black, single neon edge line, wide horizontal banding, long still hold, matte indigo darks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -465,7 +465,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'coarse dense crosshatching; extreme scale contrast; hatched dust plumes; olive and stone palette; grimacing faces',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crosshatched Giant-Scale Panic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Horror-scale action translated to color anime: coarse dense crosshatching, grimacing faces, and enormous forms looming over tiny figures, with dust and steam drawn as layered hatch masses. Carry it through coarse dense crosshatching, extreme scale contrast, hatched dust plumes, olive and stone palette, grimacing faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -498,7 +498,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'concentric geometric light rings; pale cyan and parchment; fine exact outline; open quiet spacing; soft diffuse light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pale Calm Spell Geometry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Quiet fantasy anime: fine exact outlines, pale matte color, and magic drawn as thin concentric rings and polygons of light, precise and unhurried. Carry it through concentric geometric light rings, pale cyan and parchment, fine exact outline, open quiet spacing, soft diffuse light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -528,7 +528,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'single impact frame zone; black, white and signal red; thick radial wedges; muted calm cel; broad empty stage',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Impact Frame Comedy Hero as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Comedy action anime built on the impact frame: calm simple cel shots where one moment snaps to high-contrast black, white and red with thick radial wedges and a jagged silhouette. Carry it through single impact frame zone, black, white and signal red, thick radial wedges, muted calm cel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -559,7 +559,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'minimal dot-eyed main figure; hyper-detailed surroundings; polished hard lighting; flat pale figure fill; absurd scale contrast',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dual-Detail Deadpan Satire as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Satirical hero anime with split detail levels: the main figure drawn in minimal round lines with dot eyes, everything around it rendered in dense, polished detail. Carry it through minimal dot-eyed main figure, hyper-detailed surroundings, polished hard lighting, flat pale figure fill, absurd scale contrast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -592,7 +592,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'airbrushed digital painting; glowing cyan eyes; smoky shadow silhouettes; black and violet palette; tall vertical staging',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Full-Color Manhwa Shadow Glow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Full-color vertical webcomic action: smooth airbrushed digital painting, narrow dark contours, deep black-violet shadows, glowing cyan eyes and smoky shadow silhouettes rising from the ground. Carry it through airbrushed digital painting, glowing cyan eyes, smoky shadow silhouettes, black and violet palette, tall vertical staging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -621,7 +621,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'cel figures over detailed painted backgrounds; volumetric light shafts; drifting embers and bokeh; navy and ivory; shallow depth of field',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blade Field Urban Fantasy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Composited digital-effects anime: crisp cel characters layered over richly lit, near-photographic painted backgrounds with volumetric light shafts, drifting embers and shallow depth-of-field blur. Carry it through cel figures over detailed painted backgrounds, volumetric light shafts, drifting embers and bokeh, navy and ivory, shallow depth of field. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -651,7 +651,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'white-hot flame cores; flat stylized flame tongues; radiating halo rings; charcoal and orange palette; light-leak film grain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies White-Core Flame Halo Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fire-brigade anime: flames drawn as flat stylized tongues with a hard white-hot core, orange body and scarlet edge, set in radiating halo rings over strong dark contours and film grain. Carry it through white-hot flame cores, flat stylized flame tongues, radiating halo rings, charcoal and orange palette, light-leak film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -683,7 +683,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'hi-vis orange and yellow equipment; grid tick scale marks; sturdy dark contour; matte blue-grey; wide procedural framing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hazard-Orange Monster Response Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Civic-defense anime: sturdy dark contours, clean machine-precise vehicles and equipment in high-visibility orange and yellow, and scale measured by grid-like tick marks on structures. Carry it through hi-vis orange and yellow equipment, grid tick scale marks, sturdy dark contour, matte blue-grey, wide procedural framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -712,7 +712,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'acid teal, hot pink and lime; melting smear frames; doubled reaction lines; elastic contour; palette flips',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Acid Occult Color-Burst Smear as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Paranormal comedy anime: elastic bright contours, doubled reaction lines, and sudden palette flips into acid teal, hot pink and lime, with fluid smear frames melting shapes during fast motion. Carry it through acid teal, hot pink and lime, melting smear frames, doubled reaction lines, elastic contour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -742,7 +742,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'fine etched contour; poison-pastel flowers; jade, chalk and wine; dry crosshatch shadows; foliage framing planes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Toxic Flower Etched Ink as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Garden-horror anime: fine etched contours, lush ornamental flowers and vines in poison pastels, broken by compact angular shapes and dry crosshatch in the shadows. Carry it through fine etched contour, poison-pastel flowers, jade, chalk and wine, dry crosshatch shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -771,7 +771,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'searching pencil contours; wide blank space; subtly warped peripheral shapes; airy pastels; acid yellow-green accent',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Psychedelic Psychic Minimalism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Minimal psychic anime: plain forms drawn with lightly layered searching pencil contours in wide blank space, with a few peripheral shapes subtly warped as if bent by pressure. Carry it through searching pencil contours, wide blank space, subtly warped peripheral shapes, airy pastels, acid yellow-green accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -801,7 +801,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'paint-on-glass smears; thumb-smudged oil strokes; acid pink, lime and cyan; deep indigo ground; plain sturdy cel figures',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paint-on-Glass Surge Burst as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hand-painted eruption anime: frame-by-frame paint-on-glass smears, loose oil strokes and saturated overpaint bursting outward over simple, sturdy cel figures. Carry it through paint-on-glass smears, thumb-smudged oil strokes, acid pink, lime and cyan, deep indigo ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -830,7 +830,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'chalk schematic overlay; unnumbered dimension ticks; mineral green and chalk white; clean cel figures; open diagram margins',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chalk-Schematic Inventor Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Inventor adventure anime: clean cel figures overlaid with faint chalk schematic strokes, construction lines, cross-sections, arcs and dimension ticks without numbers. Carry it through chalk schematic overlay, unnumbered dimension ticks, mineral green and chalk white, clean cel figures, open diagram margins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -859,7 +859,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'calligraphic sumi strokes; wet jewel-color washes; bloom rings; open paper margins; dry-brush flicks',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Painterly Blade Fantasy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ink-wash action painting: calligraphic sumi strokes with fine tapers form contours and motion, bleeding into wet watercolor washes of jewel color over broad cel silhouettes. Carry it through calligraphic sumi strokes, wet jewel-color washes, bloom rings, open paper margins, dry-brush flicks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -887,7 +887,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'screen-print poster look; ink splatter pattern; off-register red; scratchy heavy contour; warm paper ground',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chaotic Splatter Action as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Punk screen-print action poster: scratchy heavy contours, lopsided cutout shapes, ink splatter used as graphic pattern, halftone breaks and off-register red. Carry it through screen-print poster look, ink splatter pattern, off-register red, scratchy heavy contour, warm paper ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -918,7 +918,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'desaturated film grade; handheld off-center framing; thin precise lines; fluorescent streak accents; grime and shallow depth',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Muted Cinematic Grime Frenzy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Grounded cinematic anime: sober adult proportions, thin precise lines, desaturated film-graded color and handheld framing, with sudden violent motion shown as fluorescent streaks. Carry it through desaturated film grade, handheld off-center framing, thin precise lines, fluorescent streak accents, grime and shallow depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -946,7 +946,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'gothic chiaroscuro; fine deliberate black stroke; bone-white fields; single vermilion accent; steep dramatic angle',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Shadow Notebook Thriller as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Psychological-thriller anime: fine deliberate black strokes, gothic chiaroscuro at sharp dramatic angles, bone-white fields and one isolated vermilion accent. Carry it through gothic chiaroscuro, fine deliberate black stroke, bone-white fields, single vermilion accent, steep dramatic angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -975,7 +975,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'overlapping ensemble clusters; brass and amber palette; period tailoring; printed grain; syncopated rhythm',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Amber Jazz-Age Ensemble Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Prohibition-era ensemble anime: lively variable contours, many overlapping characters in syncopated clusters, period tailoring, flat amber and brass color with printed grain. Carry it through overlapping ensemble clusters, brass and amber palette, period tailoring, printed grain, syncopated rhythm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -1004,7 +1004,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'stretched limb smear frames; tapered ink contour; curling dust and leaf trails; teal and orange; two-step shadow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Teal-Orange Sakuga Smear as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Journey-adventure anime at its most animated: tapered black-ink contours that thicken at turns, limbs stretched into smear frames, and dust or leaf trails curling behind fast motion. Carry it through stretched limb smear frames, tapered ink contour, curling dust and leaf trails, teal and orange, two-step shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -1032,7 +1032,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'elongated fashion-plate proportions; blank ivory negative space; stark black-white division; single violet accent; fine gapped contour',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Urban Spirit Blade as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fashion-plate supernatural anime: elongated slender figures in fine variable contours with deliberate gaps, set against stark black-white divisions and large blank ivory space. Carry it through elongated fashion-plate proportions, blank ivory negative space, stark black-white division, single violet accent, fine gapped contour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -1059,7 +1059,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'rubbery exaggerated anatomy; huge grins; bold rounded outlines; ocean blue, red and gold; flexible diagonals',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Elastic Big-Grin Adventure Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sunny seafaring adventure anime: bold rounded outlines, rubbery exaggerated anatomy with huge grins and stretched limbs, broad flexible curves and flat vivid color. Carry it through rubbery exaggerated anatomy, huge grins, bold rounded outlines, ocean blue, red and gold. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -1087,7 +1087,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'dry brush line; dusty ochre and sepia; long low horizons; analog grain; off-axis focal weight',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lo-Fi Sword Roadtrip as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Road-movie anime: dry brush lines with imperfect tapered ends, flattened slightly oversized forms, dusty grain and long landscapes crossed on foot. Carry it through dry brush line, dusty ochre and sepia, long low horizons, analog grain, off-axis focal weight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -1114,7 +1114,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'tilted manga panel cuts; torn overdrawn contour; complementary color blocks; halftone collage; registration slip',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chaotic Indie Adolescence as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Punk-indie anime: manga panel cuts bursting into the frame, torn overdrawn contours, collage blocks and wonky pop shapes with screen-print halftone and registration slip. Carry it through tilted manga panel cuts, torn overdrawn contour, complementary color blocks, halftone collage, registration slip. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -1142,7 +1142,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'sweat-sheen highlights; humid haze; pressure-heavy contour; rust and faded teal; harsh overhead sun',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Humid Tropic Grit Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tropical crime anime: weighty pressure-heavy contours, sweat-sheened skin, harsh sun, dense humid haze and scuffed ink on sun-bleached surfaces. Carry it through sweat-sheen highlights, humid haze, pressure-heavy contour, rust and faded teal, harsh overhead sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -1172,7 +1172,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'false starfield sky; thin cyan contour threads; blue-black city; glowing cyan edges; guarded negative space',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cold Starfield Night Noir as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Urban night noir anime: fine dark contours threaded by thin cyan lines, an unnaturally starry sky over a blue-black city, and faint glowing cyan edges on figures. Carry it through false starfield sky, thin cyan contour threads, blue-black city, glowing cyan edges, guarded negative space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -1200,7 +1200,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'doubled offset stutter outlines; vinyl scratch texture; flattened woodblock landscape; dusty gold and brown; offbeat balance',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Record-Scratch Stutter Swagger as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hip-hop period anime: flattened woodblock-style landscapes under loose ink-brush figures, with record-scratch stutter frames of doubled offset outlines and rewind jitter. Carry it through doubled offset stutter outlines, vinyl scratch texture, flattened woodblock landscape, dusty gold and brown, offbeat balance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

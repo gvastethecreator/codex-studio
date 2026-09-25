@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Isometric or three-quarter game camera over a compact scene.
   atmosphere_and_mood: Cozy and toy-like, a pocket world that runs anywhere.
   rendering_and_quality: Mobile game render look; no real-time GI and no HUD.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Baked Lightmap Mobile Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Baked lightmap mobile render: a low-poly game scene whose light and shadow are painted into textures in advance, with vertex colors and unlit fake glows. Carry it through baked soft shadows, low-poly shapes, vertex color warmth, glow cards, lightmap seams. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: baked soft shadows; low-poly shapes; vertex color warmth; glow cards; lightmap seams
 avoidRules:
   - 2d illustration

@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'layered hard and textured digital brushwork; focal-area sharpening; warm key and cool shadow; painted rim and bounce light; economical surroundings',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Digital Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Polished digital painting: a painted illustration built on layers with hard round and textured brushes, finished with a sharp focal area and softer, economical surroundings. Carry it through layered hard and textured digital brushwork, focal-area sharpening, warm key and cool shadow, painted rim and bounce light, economical surroundings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -56,7 +56,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'wide establishing shot; tiny scale figures; seamless photo and paint blend; aerial perspective haze; stacked depth planes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Matte Painting Extension as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Digital matte painting: a painted and photo-integrated environment extension that makes a scene read as vast and real, as for a film establishing shot. Carry it through wide establishing shot, tiny scale figures, seamless photo and paint blend, aerial perspective haze, stacked depth planes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -84,7 +84,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'single cinematic keyframe; focal hierarchy; painted-over photo texture; dramatic lighting design; mood-driven limited palette',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Concept Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Concept art keyframe: one painted production illustration that sells the mood and design of a world moment, with clear focal hierarchy and painted-over photo textures. Carry it through single cinematic keyframe, focal hierarchy, painted-over photo texture, dramatic lighting design, mood-driven limited palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -114,7 +114,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'large flat-shaded triangles; one color per facet; hard polygon edges; single directional sun; minimal geometry',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Flat-Shaded Low Poly as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Flat-shaded low poly: subjects and scenes built from a small number of large triangles, each facet one flat color, rendered like a simple real-time game scene. Carry it through large flat-shaded triangles, one color per facet, hard polygon edges, single directional sun, minimal geometry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -144,7 +144,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'big flat brush and lasso shapes; three to five values; unfinished borders; strong silhouette read; one saturated accent',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Block-In Speedpaint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Digital speedpaint: a scene blocked in within minutes using big flat brushes and lasso-filled shapes, left rough with only the focal area slightly refined. Carry it through big flat brush and lasso shapes, three to five values, unfinished borders, strong silhouette read, one saturated accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -172,7 +172,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'parallel 30-degree projection; no vanishing point; three-tone face shading; diorama cut-out block; small crisp details',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Isometric as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Isometric digital illustration: scenes drawn in parallel projection with 30-degree axes and no vanishing point, like a detailed miniature diorama. Carry it through parallel 30-degree projection, no vanishing point, three-tone face shading, diorama cut-out block, small crisp details. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -202,7 +202,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'subject silhouette as a mask; second scene inside; soft feathered fade to white; aligned inner horizon; muted tinted palette',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Silhouette Double Exposure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Silhouette double exposure: a clean subject silhouette used as a mask, filled with a second scene that blends softly into a pale background. Carry it through subject silhouette as a mask, second scene inside, soft feathered fade to white, aligned inner horizon, muted tinted palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -230,7 +230,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'stacked flat paper layers; soft layer drop shadows; paper fiber grain; five to eight depth planes; clean cut edges',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paper Cutout (Digital) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Digital layered paper cutout: scenes built from stacked flat paper shapes with soft drop shadows between layers, as if cut and arranged in a shallow box. Carry it through stacked flat paper layers, soft layer drop shadows, paper fiber grain, five to eight depth planes, clean cut edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -258,7 +258,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'hand-placed pixels on a grid; 32 to 64 color palette; hue-shifted shading ramps; checkerboard dither; no interface elements',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pixel Art (16-bit) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "16-bit pixel art: a scene drawn pixel by pixel on a low-resolution grid with a limited palette, hand-placed anti-aliasing and dithered transitions. Carry it through hand-placed pixels on a grid, 32 to 64 color palette, hue-shifted shading ramps, checkerboard dither, no interface elements. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -286,7 +286,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'purple-to-pink retro gradient; neon cyan and magenta lines; striped sun; perspective grid horizon; chrome highlights',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Synthwave as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Synthwave digital art: an eighties retro-future look with glowing neon outlines, a striped setting sun and a perspective grid receding to the horizon. Carry it through purple-to-pink retro gradient, neon cyan and magenta lines, striped sun, perspective grid horizon, chrome highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -316,7 +316,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'monospaced glyph grid; density-based values; phosphor green or amber on black; soft glow and scanlines; no readable words',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Terminal Glyph Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Terminal glyph art: an image made entirely of monospaced characters on a fixed grid, with denser glyphs for dark or bright areas depending on the screen. Carry it through monospaced glyph grid, density-based values, phosphor green or amber on black, soft glow and scanlines, no readable words. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -349,7 +349,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean anti-aliased curves with consistent width, density modulation only; no brush strokes, no fills.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Flow-Field Generative Lines as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Generative flow-field art: thousands of thin lines traced by code through an invisible vector field, their density and direction revealing the subject. Carry it through thousands of flowing non-crossing lines, density-based tone, subject revealed by field direction, plain ground, consistent thin width. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'thousands of flowing non-crossing lines; density-based tone; subject revealed by field direction; plain ground; consistent thin width',
     },
@@ -384,7 +384,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Mechanically regular line spacing with real ink behavior; no hand wobble, no filled solids, no gradients.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pen-Plotter Hatch Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pen-plotter drawing: vector paths drawn on paper by a machine holding a real pen, with tone from perfectly regular computed hatch and contour-line fills. Carry it through machine-regular hatching, contour-line fills, real fineliner ink on paper, pen-start dots, one or two pen colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'machine-regular hatching; contour-line fills; real fineliner ink on paper; pen-start dots; one or two pen colors',
     },
@@ -419,7 +419,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean flat silhouettes with smooth gradient fills and haze between; no textures, no outlines.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Layered Gradient Silhouette as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Layered gradient silhouette illustration: a scene reduced to overlapping flat silhouette bands, each filled with a smooth vertical gradient that lightens with distance. Carry it through receding silhouette layers, smooth vertical gradients, darker near and paler far, analogous palette, no interior detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'receding silhouette layers; smooth vertical gradients; darker near and paler far; analogous palette; no interior detail',
     },
@@ -453,7 +453,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Perfect mirror seams and radial repetition with the subject still recognizable in each wedge; no random asymmetry.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mirror-Tool Kaleidoscope as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Kaleidoscope symmetry art: the subject drawn once in one wedge and mirrored six or eight times around a center, forming a radial mandala. Carry it through radial mirror symmetry, six or eight repeating wedges, jewel color rhythm, central glow, recognizable repeated subject. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'radial mirror symmetry; six or eight repeating wedges; jewel color rhythm; central glow; recognizable repeated subject',
     },
@@ -488,7 +488,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp shapes with directional grain shading only; no smooth gradients, no line art, no 3D.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grain-Shaded Flat Illustration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Grain-shaded flat illustration: simple rounded vector shapes shaded not by gradients but by speckled noise grain brushed along one side of each form. Carry it through rounded flat vector shapes, directional noise-grain shading, warm muted palette, no outlines, generous space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'rounded flat vector shapes; directional noise-grain shading; warm muted palette; no outlines; generous space',
     },
@@ -518,7 +518,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'RGB channel split; horizontal pixel displacement; compression block artifacts; pixel sorting streaks; recognizable subject under corruption',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glitch Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Glitch art: an image corrupted digitally, with RGB channels split apart, rows of pixels displaced sideways and blocks of compression artifacts breaking the picture. Carry it through RGB channel split, horizontal pixel displacement, compression block artifacts, pixel sorting streaks, recognizable subject under corruption. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -546,7 +546,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'smooth Bezier shapes; flat solid fills; limited five-to-eight color palette; one flat shadow per form; geometric simplification',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vector Art (Flat) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Flat vector illustration: clean Bezier shapes filled with solid colors, built from simple geometric primitives with perfectly smooth curves. Carry it through smooth Bezier shapes, flat solid fills, limited five-to-eight color palette, one flat shadow per form, geometric simplification. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -574,7 +574,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         '2D triangle mesh; averaged color per facet; adaptive triangle density; faint facet seams; crystalline shimmer',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Polygon Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "2D polygon art: a flat image divided into a mesh of triangles, each filled with the average color of that area, like a faceted mosaic. Carry it through 2D triangle mesh, averaged color per facet, adaptive triangle density, faint facet seams, crystalline shimmer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -604,7 +604,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'equal-sized cubes on a 3D grid; stepped silhouettes; one color per cube with variation; ambient occlusion between cubes; diorama base',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Voxel Cube Build as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Voxel construction: every subject and surface built from equal-sized cubes on a 3D grid, like a hand-placed digital diorama. Carry it through equal-sized cubes on a 3D grid, stepped silhouettes, one color per cube with variation, ambient occlusion between cubes, diorama base. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

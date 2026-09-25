@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Wry, poised and quiet, a composed calm with a hint of irony.
   rendering_and_quality: Sparse detail, exact focal edges and one accent heavy enough to hold the whole frame.
   key_features: near-monochrome slate palette; single violet accent; dry economical line; wide horizontal negative space; one narrow highlight
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Slate Twilight Single-Violet Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Spare cool-toned anime cel: dry economical lineart, broad slate flats and exactly one violet accent that carries all the color in the frame. Carry it through near-monochrome slate palette, single violet accent, dry economical line, wide horizontal negative space, one narrow highlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway

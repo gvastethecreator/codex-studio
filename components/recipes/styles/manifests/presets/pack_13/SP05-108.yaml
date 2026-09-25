@@ -38,10 +38,7 @@ visualDna:
     or interface.
   key_features: >-
     Curved contour; pastel gouache glaze; lace-like edge rhythm; soft light; fine paper tooth.
-  creative_brief: >-
-    Apply this visual treatment to the requested content: Curved contour; pastel gouache glaze;
-    lace-like edge rhythm; soft light; fine paper tooth. Preserve its identity, action, materials,
-    composition and requested tone; introduce no persona, scene, franchise cue or extra motif.
+  creative_brief: "Apply this visual treatment to the requested content: Curved contour; pastel gouache glaze; lace-like edge rhythm; soft light; fine paper tooth. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look

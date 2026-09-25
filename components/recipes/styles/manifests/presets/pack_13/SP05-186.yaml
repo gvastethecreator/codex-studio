@@ -33,10 +33,7 @@ visualDna:
   key_features: >-
     Variable contour rhythm, vivid color blocks, timing through space, expression without
     scale change
-  creative_brief: >-
-    Apply a visual treatment centered on variable contour rhythm, vivid color blocks, timing
-    through space, expression without scale change. Preserve the exact subject, action,
-    count, age, costume, setting, camera, and mood. Add nothing outside the prompt.
+  creative_brief: "Apply a visual treatment centered on variable contour rhythm, vivid color blocks, timing through space, expression without scale change. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

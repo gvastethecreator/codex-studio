@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Tired, public and nocturnal, the city worn smooth by millions of passing hands.
   rendering_and_quality: Low-light documentary photograph with specific grime and chips, abstract colour bands only, no readable maps or signs.
   key_features: chipped bevelled subway tile; riveted painted steel columns; tactile yellow safety edge; fluorescent greenish light; grime-dark grout
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Metropolitan Transit Patina as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Metropolitan transit patina: the worn public skin of an old underground railway, with bevelled glazed tile, riveted steel columns, tactile safety edges and decades of grime in every joint. Carry it through chipped bevelled subway tile, riveted painted steel columns, tactile yellow safety edge, fluorescent greenish light, grime-dark grout. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - one-point corridor perspective as default
   - wet mirror-gloss floor as default

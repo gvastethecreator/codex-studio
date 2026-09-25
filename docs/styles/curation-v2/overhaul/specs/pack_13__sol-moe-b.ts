@@ -30,8 +30,8 @@ const spec: Spec = {
     'SP05-209': {
       briefs: [
         'Hospitality miniature anime frame of a tiny inn run by mice for traveling fairies, each teacup and pillow drawn with delicate contours and tiny controlled highlight points, a finely finished compact surface everywhere. No readable text or logo.',
-        'Miniature anime frame of a candy shop counter with tiny glittering sweets and a shop girl, delicate highlights. No readable text or logo.',
-        'Miniature anime frame of a dollhouse kitchen where a tiny witch bakes, fine contours and pinpoint highlights. No readable text or logo.',
+        'Miniature hospitality anime frame of a candy shop counter lined with tiny glittering sweets in glass jars and a smiling shop girl, delicate contours and pinpoint highlights. No readable text or logo.',
+        'Miniature hospitality anime frame of a dollhouse kitchen where a tiny witch bakes cookies the size of seeds, fine contours and tiny controlled highlight points. No readable text or logo.',
       ],
     },
     'SP05-210': {
@@ -44,7 +44,7 @@ const spec: Spec = {
     'SP05-211': {
       briefs: [
         'Quiet freedom anime frame of a young woman living alone in a bare apartment, sitting on the floor with noodles and a single plant, structural contours, broad quiet color fields and only a few crisp value boundaries. No readable text or logo.',
-        'Quiet anime frame of a lone traveler camping on a flat plain with one tent, minimal crisp shapes. No readable text or logo.',
+        'Quiet freedom anime frame of a lone traveler camping on a flat empty plain beside a single tent, structural contours, broad quiet color fields and a few crisp value edges. No readable text or logo.',
         'Quiet anime frame of a lighthouse keeper eating breakfast alone at a small table facing the sea, broad quiet color fields, structural contours and a few crisp value edges on the window frame. No readable text or logo.',
       ],
     },
@@ -87,7 +87,7 @@ const spec: Spec = {
       briefs: [
         'Rough ideation anime frame of a sword fight drawn as an unfinished key-animation sketch, visible construction lines, loose contour passes and sparse action-tracing arcs over restrained flat color. No readable text or logo.',
         'Rough ideation anime frame of a dragon takeoff drawn as an unfinished animation sketch, construction circles for the body, loose repeated wing passes and sparse motion arcs over flat muted color. No readable text or logo.',
-        'Rough ideation anime frame of a dancer mid-spin as a key-pose study, visible construction lines, loose contour passes and a few action-tracing arcs over restrained flat color. No readable text or logo.',
+        'Rough ideation anime frame of a horse and rider jumping a fence drawn as a layout sketch, construction ovals for the horse, loose repeated leg passes and one bold motion arc over muted flat color. No readable text or logo.',
       ],
     },
     'SP05-218': {

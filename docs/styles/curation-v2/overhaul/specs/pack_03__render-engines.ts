@@ -318,7 +318,7 @@ const spec: Spec = {
       briefs: [
         'Classic raytraced render of mirror spheres and a clear glass goblet on an infinite checkerboard floor, each reflecting the others endlessly, razor-hard shadows, blue gradient sky. No text or logo.',
         'Classic raytraced render of a chrome chess set mid-game, every piece reflecting the board and each other. No text or logo.',
-        'Classic raytraced render of a floating glass crown refracting the checkerboard floor beneath it. No text or logo.',
+        'Classic raytraced render of a floating glass crown above an infinite checkerboard, the squares bending and flipping inside its refracting jewels, a chrome sphere beside it mirroring both, razor-hard shadows and a blue gradient sky. No text or logo.',
       ],
     },
     {

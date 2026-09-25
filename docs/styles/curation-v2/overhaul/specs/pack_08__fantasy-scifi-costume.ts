@@ -41,7 +41,7 @@ const spec: Spec = {
       briefs: [
         'Photograph of an adult woman in a retro pressure suit — rounded quilted volume, gasketed collar ring and fishbowl helmet under her arm — standing in a medieval tavern doorway. No text or logo.',
         'Photograph of an elderly adult man in a silver retro space suit fishing from a rowboat on a still lake. No text or logo.',
-        'Photograph of two adults in matching orange retro pressure suits dancing in a snowy forest. No text or logo.',
+        'Photograph of two adults in matching orange retro pressure suits with quilted volume and gasketed collar rings dancing in a snowy pine forest at dusk, fishbowl helmets set on a fallen log beside them. No text or logo.',
       ],
     },
     'SP08-041': {
@@ -62,7 +62,7 @@ const spec: Spec = {
       briefs: [
         'Photograph of an adult woman in space-opera royal couture — towering sculpted collar, crimson-and-gold vertical robes and jeweled headdress — standing on a rain-soaked castle balcony. No text or logo.',
         'Photograph of an elderly adult man in ceremonial space-opera robes of ivory with gilded shoulder architecture seated alone on a vast stone throne. No text or logo.',
-        'Photograph of an adult man in midnight-blue space-opera couture walking through a dusty desert bazaar. No text or logo.',
+        'Photograph of an adult man in midnight-blue space-opera couture with a sculpted waist and towering shoulder architecture walking through a dusty desert bazaar, silk panels trailing in the hot wind among spice stalls. No text or logo.',
       ],
     },
     'SP08-044': {
@@ -90,7 +90,7 @@ const spec: Spec = {
       briefs: [
         'Photograph of an adult woman in vampire-lord tailoring — high collar, tapered longline black coat with blood-red lining and silver clasps — walking through a sunny flower market. No text or logo.',
         'Photograph of an elderly adult man in an aristocratic vampire coat with a high collar playing an organ in a ruined chapel. No text or logo.',
-        'Photograph of an adult man in vampire-lord tailoring rowing a gondola through a fogbound canal. No text or logo.',
+        'Photograph of an adult man in vampire-lord tailoring with a high collar, tapered black longline coat and blood-red lining standing in a gondola gliding through a fogbound canal at night, a single lantern on the prow. No text or logo.',
       ],
     },
     'SP08-048': {
@@ -125,7 +125,7 @@ const spec: Spec = {
       briefs: [
         'Photograph of an adult woman queen rendered as a hologram — translucent bands, horizontal scanlines and faint ghost edges — flickering above a stone well in a village square. No text or logo.',
         'Photograph of an elderly adult man sitting in an armchair whose clothes and body are rendered as a cyan hologram with interference bands. No text or logo.',
-        'Photograph of an adult knight projected as a flickering hologram guarding an empty museum hall. No text or logo.',
+        'Photograph of an adult knight projected as a flickering blue hologram guarding an empty museum hall at night, translucent bands and horizontal scanlines across the armor, faint ghost edges on the real display cases behind. No text or logo.',
       ],
     },
     'SP08-079': {
@@ -162,7 +162,7 @@ const spec: Spec = {
       avoid: [...AVOID, 'full insect transformation of the body'],
       briefs: [
         'Photograph of an adult woman knight in iridescent green-violet chitin insectoid armor with elytra-like cape panels, kneeling in a moonlit rose garden. Raking light. No text or logo.',
-        'Photograph of an elderly adult man in matte black-and-amber beetle-shell armor segments tending beehives. No text or logo.',
+        'Photograph of an elderly adult beekeeper in matte black-and-amber beetle-shell armor segments with membrane joints tending wooden hives in a wildflower meadow, bees landing on the iridescent plates in warm evening light. No text or logo.',
         'Photograph of an adult dancer in bronze mantis-plate armor with membrane joints posing on a rooftop at dusk. No text or logo.',
       ],
     },

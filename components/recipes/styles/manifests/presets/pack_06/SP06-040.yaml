@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Cool, quiet and ethereal, a sun-drawn blueprint.
   rendering_and_quality: Monochrome Prussian blue with soft photogram edges and brushstroke chemistry borders; no other colors, no ink lines.
   key_features: Prussian blue ground; white and pale cyan forms; brushed chemistry edges; soft photogram halos; watercolor paper texture
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyanotype as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cyanotype contact print: iron-salt coated paper exposed in sunlight under objects or a negative, then washed, so forms appear in white or pale blue on Prussian blue. Carry it through Prussian blue ground, white and pale cyan forms, brushed chemistry edges, soft photogram halos, watercolor paper texture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - readable printed text

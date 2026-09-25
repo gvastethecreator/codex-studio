@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Quiet grief hardening into resolve, long silences held before a single decisive edge.
   rendering_and_quality: Precise dark contour, minimal detail, and exactly one neon edge in the frame.
   key_features: severe sumi-brush black; single neon edge line; wide horizontal banding; long still hold; matte indigo darks
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sumi-Black Neon Edge Stillness as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cinematic ink anime: severe dry sumi-brush blacks, long still holds, and a single thin neon edge of magenta or cyan on otherwise matte darkness. Carry it through severe sumi-brush black, single neon edge line, wide horizontal banding, long still hold, matte indigo darks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

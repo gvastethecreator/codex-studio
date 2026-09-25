@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Tilted, zig-zag perspectives, doorways and windows as sharp trapezoids, figures small against distorted architecture.
   atmosphere_and_mood: Nightmarish and uncanny, the world bent by a troubled mind.
   rendering_and_quality: Silent-era print with deliberate artifice; not realistic architecture.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies German Expressionist Cinema as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "German Expressionist cinema: 1920s films with painted, crooked sets, shadows drawn on the walls and performers moving like marionettes. Carry it through painted crooked sets, elongated looming shadows, zig-zag perspective, theatrical makeup, stark monochrome. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: painted crooked sets; elongated looming shadows; zig-zag perspective; theatrical makeup; stark monochrome
 avoidRules:
   - watermark

@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Tense, disciplined and precise, a held breath before orders.
   rendering_and_quality: Economical detail, stable contours and strong contrast without overloading the image.
   key_features: swept diagonals; khaki and field grey; clipped high-key sky; compact silhouettes; newsreel-still stillness
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Khaki Compressed-Diagonal Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Compact, forceful military-fantasy anime cel with swept diagonals, crisp silhouettes and clipped high-key contrast, drawn like a newsreel still. Carry it through swept diagonals, khaki and field grey, clipped high-key sky, compact silhouettes, newsreel-still stillness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway

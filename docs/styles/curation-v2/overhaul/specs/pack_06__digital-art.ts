@@ -573,7 +573,7 @@ const spec: Spec = {
       briefs: [
         'Grain-shaded flat illustration of a cat asleep on a windowsill among potted plants, terracotta and sage shapes, sandy grain on the shadow side of each pot, crisp vector edges. No text or logo.',
         'Grain-shaded flat illustration of an adult astronaut floating while watering a houseplant, dusty blue suit with directional grain shading, generous space. No text or logo.',
-        "Grain-shaded flat illustration of a small mountain cabin at dusk with a curl of chimney smoke, glowing mustard windows and a lone deer at the edge of the pines, stippled grain along the roof and snow shadows, muted teal and plum palette. No text or logo.",
+        'Grain-shaded flat illustration of a small mountain cabin at dusk with a curl of chimney smoke, glowing mustard windows and a lone deer at the edge of the pines, stippled grain along the roof and snow shadows, muted teal and plum palette. No text or logo.',
       ],
     },
   ],

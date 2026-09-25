@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Oblique 3D height view, matching how this instrument actually frames data.
   atmosphere_and_mood: Precise, alien, tiny and strange, coming from seeing what eyes cannot.
   rendering_and_quality: Believable instrument output with correct signal logic, artifacts and resolution for that sensor.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Atomic Force Microscope Topography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "AFM topography: a nanoscale surface shown as a 3D height map with a gold-brown color ramp. Carry it through height map, scan lines, gold ramp. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: height map; scan lines; gold ramp
 avoidRules:
   - readable text

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Light, fresh and fleeting, a breath of air caught quickly.
   rendering_and_quality: Detail dissolved into distinct strokes, no blending on the canvas, no black outlines; the image resolves only at a distance.
   key_features: short broken strokes of pure color; violet and blue shadows; no black; light ground showing through; blurred edges in bright light
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Impressionist Oil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Impressionist oil sketch: short separate strokes of unmixed color laid side by side outdoors, catching one moment of changing daylight rather than fixed forms. Carry it through short broken strokes of pure color, violet and blue shadows, no black, light ground showing through, blurred edges in bright light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - changing the requested framing

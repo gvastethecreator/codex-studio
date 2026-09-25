@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Delicate, handmade, patient and cozy, coming from the handmade or toy quality.
   rendering_and_quality: Photoreal craft-object rendering with believable scale, material detail and construction evidence.
   key_features: embroidery stitches; hoop; linen
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Embroidery as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Embroidery: the subject stitched in thread on fabric in a hoop. Carry it through embroidery stitches, hoop, linen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo or trademarked toy likeness
   - readable packaging text

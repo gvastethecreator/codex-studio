@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Fervent, almost liturgical heat, fire treated as ritual rather than disaster.
   rendering_and_quality: Strong silhouette cuts, limited warm bloom and carefully placed ring geometry.
   key_features: white-hot flame cores; flat stylized flame tongues; radiating halo rings; charcoal and orange palette; light-leak film grain
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies White-Core Flame Halo Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Fire-brigade anime: flames drawn as flat stylized tongues with a hard white-hot core, orange body and scarlet edge, set in radiating halo rings over strong dark contours and film grain. Carry it through white-hot flame cores, flat stylized flame tongues, radiating halo rings, charcoal and orange palette, light-leak film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

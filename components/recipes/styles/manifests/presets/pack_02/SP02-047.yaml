@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Stoic and raw, a hard-won portrait on a scrap of metal.
   rendering_and_quality: Iron-plate collodion look on dark metal; not a glass plate and not a paper print.
   key_features: black iron plate; olive-grey creamy highlights; lacquered edges and pour lines; rust and scratches; Petzval swirl
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tintype (Civil War) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Tintype: a collodion positive on a thin black-lacquered iron plate, fast, cheap and made in a portable darkroom. Carry it through black iron plate, olive-grey creamy highlights, lacquered edges and pour lines, rust and scratches, Petzval swirl. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - illustration
   - painting

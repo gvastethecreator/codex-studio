@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Warm and organic, quiet and slightly nostalgic.
   rendering_and_quality: Visible dilution steps and tide lines; never a sepia filter over a photo.
   key_features: layered coffee washes; tide-line blooms; granules in paper tooth; espresso darks; cold-press paper
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Coffee Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Coffee painting: brewed coffee applied in dilutions from pale tea-brown washes to thick espresso reductions on cold-press paper. Carry it through layered coffee washes, tide-line blooms, granules in paper tooth, espresso darks, cold-press paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - uniform beige torn-paper wash over every image
   - red tape strips added by default

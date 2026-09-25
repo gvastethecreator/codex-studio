@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Light, calm and airy, an interface made of mist and glass.
   rendering_and_quality: Every control left blank, pill shapes and circles in place of words, numbers or text icons; distinct from matte extruded clay UI.
   key_features: stacked frosted panes; blurred gradient blobs behind; hairline bright edges; blank pill controls; soft drop shadows
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glassmorphism UI as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Glassmorphism interface render: layered frosted-glass panels floating over blurred color blobs, each pane with a thin bright edge and a soft inner glow. Carry it through stacked frosted panes, blurred gradient blobs behind, hairline bright edges, blank pill controls, soft drop shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - multi-view asset sheet
   - fake labels

@@ -20,7 +20,7 @@ visualDna:
   camera_and_composition: Three-quarter or profile framing, subject near the window edge, calm negative space of wall.
   atmosphere_and_mood: Quiet, introspective, and timeless, like a Dutch interior.
   rendering_and_quality: Natural, softly detailed daylight rendering with painterly falloff.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soft Editorial Window as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Soft editorial window portrait: a single large north-facing window shaping the subject in quiet, painterly daylight. Carry it through single window source, gradual falloff, earth tones, contemplative profile, painterly quiet. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: single window source; gradual falloff; earth tones; contemplative profile; painterly quiet
 avoidRules:
   - generic stock-photo face

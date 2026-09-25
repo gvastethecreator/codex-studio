@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Ordered vertical composition with a clear central subject and small non-text ornamental marks in the margins.
   atmosphere_and_mood: Solemn, precise, ritual, and severe.
   rendering_and_quality: 'Clean refined manuscript quality: exact line, flat red, no grime, no gold.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vermilion Rubrication Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Two-ink manuscript drawing: crisp carbon-black pen line and vermilion red rubrication accents on smooth vellum, with disciplined ornament and no readable script. Carry it through carbon black pen line, vermilion rubrication accents, smooth vellum, disciplined non-text ornament. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: carbon black pen line; vermilion rubrication accents; smooth vellum; disciplined non-text ornament
 avoidRules:
   - gold leaf

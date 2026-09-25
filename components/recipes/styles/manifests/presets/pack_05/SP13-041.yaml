@@ -28,7 +28,7 @@ visualDna:
   camera_and_composition: Eye-level or slightly low, rolled 20 to 35 degrees, with the subject pushing uphill against the tilt.
   atmosphere_and_mood: Unsteady urgency and strain without any added threat.
   rendering_and_quality: Straight, confident perspective lines on the tilted grid and a stable readable subject.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dutch Tilt Momentum Frame as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Anime canted-frame staging: the camera rolls 20 to 35 degrees so the horizon and verticals tilt in the direction of the effort, making ordinary action feel off balance and urgent. Carry it through camera rolled 20-35 degrees, tilted horizon and verticals, subject pushing against the tilt, diagonal shadows, straight not warped lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: camera rolled 20-35 degrees; tilted horizon and verticals; subject pushing against the tilt; diagonal shadows; straight not warped lines
 avoidRules:
   - added opponent

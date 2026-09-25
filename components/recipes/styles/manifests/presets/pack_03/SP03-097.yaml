@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; light behind to reveal the inclusions.
   atmosphere_and_mood: Ancient and treasured, a moment preserved forever.
   rendering_and_quality: Translucent resin with depth and inclusions; not orange glass.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Amber Resin Inclusion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Amber resin inclusion: the target made of golden fossil amber or clear resin, with small objects, bubbles and debris suspended inside. Carry it through golden amber glow, suspended inclusions, flow lines, tiny bubbles, backlit warm transmission. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: golden amber glow; suspended inclusions; flow lines; tiny bubbles; backlit warm transmission
 avoidRules:
   - changing the surroundings

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; the full garment in frame with its stress points clearly visible.
   atmosphere_and_mood: Clinical and revealing, the place where cloth fights the body.
   rendering_and_quality: Continuous heatmap across the cloth mesh with no legend, scale bar, numbers or interface.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Garment Fit Strain Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Garment fit strain map: simulated clothing colored by a stress heatmap, cool blue where fabric hangs loose, green to red where it stretches tight. Carry it through blue-to-red strain heatmap, tension lines from stress points, grey fit form or wearer, visible seams, no legend. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: blue-to-red strain heatmap; tension lines from stress points; grey fit form or wearer; visible seams; no legend
 avoidRules:
   - forced T-pose

@@ -275,7 +275,7 @@ const spec: Spec = {
       briefs: [
         'Text-mode roguelike map of a treasure vault where a sleeping basilisk coils around a hoard, double-line box walls, yellow shade blocks for gold, one bright green serpent symbol in a lit radius on black. No readable words or logo.',
         'Text-mode roguelike map of a flooded crypt lit by two braziers, blue shade-block water, dotted stone floor and unexplored cells in darkness. No readable words or logo.',
-        "Text-mode roguelike map filling the whole frame: a large forest clearing drawn with dense bright green club and spade glyph trees, a ring of grey block standing stones in the center, a yellow at-sign hero, red letter monsters at the edges and a cyan tilde stream, 16 ANSI colors on black, readable at thumbnail size. No readable words or logo.",
+        'Text-mode roguelike map filling the whole frame: a large forest clearing drawn with dense bright green club and spade glyph trees, a ring of grey block standing stones in the center, a yellow at-sign hero, red letter monsters at the edges and a cyan tilde stream, 16 ANSI colors on black, readable at thumbnail size. No readable words or logo.',
       ],
     },
     'SP06-090': {

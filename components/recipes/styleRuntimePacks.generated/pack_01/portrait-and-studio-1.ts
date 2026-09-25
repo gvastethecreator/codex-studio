@@ -26,7 +26,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Tack-sharp eyes, smooth tonal gradations on the backdrop, and retouching that stays invisible at full size.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Studio Headshot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Premium studio headshot photography: one large softbox key, controlled fill, and a seamless backdrop that isolates the sitter with precise, trustworthy polish. Carry it through large softbox key, hair-light separation, seamless grey backdrop, invisible retouching, eyes on the upper third. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'large softbox key; hair-light separation; seamless grey backdrop; invisible retouching; eyes on the upper third',
     },
@@ -54,7 +54,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Documentary sharpness on the face with natural lens falloff; no studio polish or retouching.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Candid Street Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Candid street portraiture: a stranger caught in a genuine moment in public space, available light only, the city present as texture rather than backdrop. Carry it through unposed mid-action moment, available light, foreground intrusion, layered street depth, honest skin. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'unposed mid-action moment; available light; foreground intrusion; layered street depth; honest skin',
     },
@@ -82,7 +82,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Editorial magazine finish with believable exposure across subject and space.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Environmental Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Environmental portrait: the sitter placed inside the space that explains them, posed with intent, the room or landscape carrying half the story. Carry it through sitter inside their world, deep depth of field, environment as narrative, subtle added face light, leading lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'sitter inside their world; deep depth of field; environment as narrative; subtle added face light; leading lines',
     },
@@ -110,7 +110,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'High-gloss magazine finish with specular sparkle and controlled retouching.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glamour Shot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Old-Hollywood-meets-magazine glamour: sculpted beauty light, luxurious styling, and a posed, idealized presence built for a cover. Carry it through beauty-dish butterfly light, glowing rim, jewel-tone styling, sculpted pose, specular sparkle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'beauty-dish butterfly light; glowing rim; jewel-tone styling; sculpted pose; specular sparkle',
     },
@@ -138,7 +138,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Cinema-camera look with filmic rolloff and no digital oversharpening.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cinematic Close-up as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cinematic close-up still: a single frame lifted from a feature film, face filling the screen with motivated light, story implied off-frame. Carry it through extreme close-up, motivated practical light, film grade, oval bokeh, off-frame story. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'extreme close-up; motivated practical light; film grade; oval bokeh; off-frame story',
     },
@@ -166,7 +166,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Convincing phone image, not a professional portrait; no studio polish.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Selfie Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Front-camera smartphone selfie: arm-length wide lens, casual social framing, computational processing, and the charm of an unplanned moment. Carry it through arm-length wide lens, phone HDR, computational smoothing, tilted casual framing, visible arm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'arm-length wide lens; phone HDR; computational smoothing; tilted casual framing; visible arm',
     },
@@ -194,7 +194,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp outline edges, no muddy gray inside the figure, smooth luminous gradient behind.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Silhouette Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Silhouette portraiture: the subject reduced to a pure dark shape against an intensely bright field, identity carried entirely by profile and outline. Carry it through pure black shape, backlit exposure, readable profile outline, luminous background gradient, edge halo. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'pure black shape; backlit exposure; readable profile outline; luminous background gradient; edge halo',
     },
@@ -221,7 +221,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Dreamlike, reflective, and symbolic.',
       rendering_and_quality: 'Seamless photographic blend without cut-out edges or collage seams.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Double Exposure Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "In-camera double exposure portrait: a clean profile silhouette filled with a second image — landscape, texture, or scene — blended through the bright areas of the first. Carry it through profile as container, second image inside the silhouette, white negative space, seamless blend, symbolic pairing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'profile as container; second image inside the silhouette; white negative space; seamless blend; symbolic pairing',
     },
@@ -248,7 +248,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean exposure without clipping skin, smooth white field, crisp eyes.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies High Key Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "High-key portraiture: a bright, nearly shadowless white world where the subject floats in clean light and soft pastel accents. Carry it through blown white background, shadowless wrap light, pastel accents, floating subject, clean negative space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'blown white background; shadowless wrap light; pastel accents; floating subject; clean negative space',
     },
@@ -276,7 +276,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean noise-free blacks with detailed highlights; no muddy gray shadows.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Low Key Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Low-key portraiture: a figure carved out of darkness by one narrow source, most of the frame surrendered to deep shadow. Carry it through single gridded source, no fill, black negative space, raking texture, restrained highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'single gridded source; no fill; black negative space; raking texture; restrained highlights',
     },
@@ -306,7 +306,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'silhouette-first posing; concept set; graphic hard light; color-block backdrop; garment precision',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fashion Editorial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fashion editorial photography: styling-first images built as a magazine story, with graphic poses, bold silhouettes, and concept-driven sets. Carry it through silhouette-first posing, concept set, graphic hard light, color-block backdrop, garment precision. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -333,7 +333,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'backlit veil halo; candid emotion; airy pastel grade; layered foreground flowers; shallow depth',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wedding Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Wedding photography: luminous, romantic documentary of a ceremony or couple, balancing candid emotion with editorial composition. Carry it through backlit veil halo, candid emotion, airy pastel grade, layered foreground flowers, shallow depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -358,7 +358,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'safely supported sleeping infant; knitted textures; feathered window light; warm neutrals; hushed calm',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Newborn Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Newborn photography: gentle, protected studio portraits of a sleeping infant with soft wraps, warm neutrals, and handmade props. Carry it through safely supported sleeping infant, knitted textures, feathered window light, warm neutrals, hushed calm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -383,7 +383,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'warm side window light; draped fabric; deep wine tones; confident adult pose; tasteful intimacy',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Boudoir Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Boudoir photography: an intimate, respectful adult portrait in a private interior, sensual through light, fabric and mood rather than exposure. Carry it through warm side window light, draped fabric, deep wine tones, confident adult pose, tasteful intimacy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -408,7 +408,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'mottled laser backdrop; flat on-axis flash; forced smile; centered yearbook crop; picture-day awkwardness',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies School Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Institutional school portrait: flat studio flash, mottled laser backdrop, and the awkward charm of picture day. Carry it through mottled laser backdrop, flat on-axis flash, forced smile, centered yearbook crop, picture-day awkwardness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -433,7 +433,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'height-line backdrop; flat on-camera flash; deadpan frontal pose; institutional color cast; disheveled detail',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mugshot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Booking photograph: deadpan frontal documentation with a height chart, flat light and bureaucratic indifference. Carry it through height-line backdrop, flat on-camera flash, deadpan frontal pose, institutional color cast, disheveled detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -459,7 +459,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'strict frontal symmetry; white background; shadowless light; neutral expression; fixed centered crop',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Passport Photo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Official ID photograph: strict frontal symmetry, white background, shadowless light, zero expression — the administrative portrait. Carry it through strict frontal symmetry, white background, shadowless light, neutral expression, fixed centered crop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -483,7 +483,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Quiet, introspective, and timeless, like a Dutch interior.',
       rendering_and_quality: 'Natural, softly detailed daylight rendering with painterly falloff.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soft Editorial Window as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Soft editorial window portrait: a single large north-facing window shaping the subject in quiet, painterly daylight. Carry it through single window source, gradual falloff, earth tones, contemplative profile, painterly quiet. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'single window source; gradual falloff; earth tones; contemplative profile; painterly quiet',
     },
@@ -518,7 +518,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp commercial finish, circular catchlights clearly visible in both eyes.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ring Flash Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ring-flash portrait photography: a circular light around the lens that flattens the face, rings the eyes with donut catchlights, and wraps the subject in a thin even shadow halo. Carry it through ring flash donut catchlights, thin halo shadow, flat on-axis face light, saturated pop color, glossy speculars. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'ring flash donut catchlights; thin halo shadow; flat on-axis face light; saturated pop color; glossy speculars',
     },
@@ -553,7 +553,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Large-format photographic depth and tonality, rich midtones, no digital effects.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Painted Muslin Backdrop Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fine-art studio portrait in front of a hand-painted muslin backdrop, with directional window-like light that echoes old-master painting while staying fully photographic. Carry it through hand-painted mottled muslin, glowing backdrop patch, Rembrandt-leaning soft key, painterly pose, rich midtones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'hand-painted mottled muslin; glowing backdrop patch; Rembrandt-leaning soft key; painterly pose; rich midtones',
     },

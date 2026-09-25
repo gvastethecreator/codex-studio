@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Personal and tactile, a memory touched by hand.
   rendering_and_quality: Sharp photographic base with dimensional thread; never flat printed lines pretending to be stitches.
   key_features: printed photo base; satin and running stitch; French knots; needle holes; thread casting shadow
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Embroidery on Photo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Embroidery on photo: a printed photograph pierced and hand-stitched, thread adding color, pattern or light as a physical layer over the image. Carry it through printed photo base, satin and running stitch, French knots, needle holes, thread casting shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - uniform beige torn-paper wash over every image
   - red tape strips added by default

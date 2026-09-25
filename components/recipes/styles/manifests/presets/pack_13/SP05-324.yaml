@@ -42,11 +42,7 @@ visualDna:
   key_features: >-
     Comic smears; expressive reaction timing; controlled squash-and-stretch; readable rounded
     silhouettes; buoyant tension; bright cartoon clarity.
-  creative_brief: >-
-    Apply this visual treatment to the requested content: Comic smears; expressive reaction timing;
-    controlled squash-and-stretch; readable rounded silhouettes; buoyant tension; bright cartoon
-    clarity. Preserve its identity, action, materials, composition and requested tone; introduce no
-    persona, scene, franchise cue or extra motif.
+  creative_brief: "Apply this visual treatment to the requested content: Comic smears; expressive reaction timing; controlled squash-and-stretch; readable rounded silhouettes; buoyant tension; bright cartoon clarity. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Hopeful, communal, fresh and calm, driven by the construction, color and rhythm.
   rendering_and_quality: Clean detailed illustration or painting, with clean, deliberate marks and no accidental noise.
   key_features: rooftop gardens; solar canopies; wind sails; communal life
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Solarpunk as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Solarpunk: hopeful green-tech communities where plants, solar glass and handmade repair live together. Carry it through rooftop gardens, solar canopies, wind sails, communal life. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

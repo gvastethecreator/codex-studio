@@ -52,7 +52,7 @@ const spec: Spec = {
       briefs: [
         'Performance anime frame of a young actress transforming on stage from timid to terrifying villain in one turn, sharp contours and shadow cutouts across her face, precise glints on her eyes under the stage lights. No readable text or logo.',
         'Performance anime frame of a rookie idol practicing alone at midnight in a mirrored studio, sharp contours and glints of sweat. No readable text or logo.',
-        'Performance anime frame of a revenge-driven actress smiling coldly at a rival across a glittering awards hall. No readable text or logo.',
+        'Performance anime frame of a revenge-driven actress smiling coldly at a rival across a glittering awards hall, sharp contours and shadow cutouts, precise glints on her earrings. No readable text or logo.',
       ],
     },
     'SP05-188': {
@@ -73,14 +73,14 @@ const spec: Spec = {
       briefs: [
         'Contemporary anime frame of two former classmates meeting again on a summer train platform in clean uniforms, smooth precise line, modest weight shifts and broad quiet values, a pause of awkward recognition. No readable text or logo.',
         'Anime frame of friends at a summer festival sharing a quiet look across a crowd, smooth line and quiet values. No readable text or logo.',
-        'Anime frame of a boy and girl sheltering from sudden rain under a shop awning, clean uniform detail. No readable text or logo.',
+        'Contemporary anime frame of a boy and a girl sheltering from sudden summer rain under a shop awning, clean uniform detail, smooth precise line and broad quiet grey values. No readable text or logo.',
       ],
     },
     'SP05-191': {
       briefs: [
         'Night-walk anime frame of a quiet girl and a boy walking home along a canal under streetlamps, rounded contours, pooled dark shapes in their coats and the water, small reflective accents on wet stone. No readable text or logo.',
-        'Anime frame of a couple sitting on a playground swing at night, pooled darkness and reflective accents. No readable text or logo.',
-        'Anime frame of a girl feeding a stray cat under a streetlamp, rounded contours and small highlights. No readable text or logo.',
+        'Night-walk anime frame of a couple sitting on a playground swing set at night, pooled dark shapes under the slide, small reflective accents on the chains and their eyes. No readable text or logo.',
+        'Night-walk anime frame of a girl crouching to feed a stray cat under a streetlamp, rounded contours, pooled dark shadows and small highlights on the wet pavement. No readable text or logo.',
       ],
     },
     'SP05-192': {

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Loud, celebratory and virtuosic, a wall claimed in color.
   rendering_and_quality: Finished mural piece with clean cut-back edges and no readable letters.
   key_features: interlocking arrows and bevels; 3D drop block; nested outlines; complementary fades; white shine strokes
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Graffiti (Piece) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Wildstyle graffiti piece: a full-color spray mural where the subject is built from interlocking arrows, bevels, 3D block drop shadows and nested outlines. Carry it through interlocking arrows and bevels, 3D drop block, nested outlines, complementary fades, white shine strokes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - brand logo

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Clinical and eerie, the hidden inside of familiar things laid bare.
   rendering_and_quality: Credible radiograph film look; a shader version lives in pack_03 and a playful one in pack_11.
   key_features: density shown as brightness; blue-black film; bone-white metal and bone; overlapping translucency; interior structure
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies X-Ray Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "X-ray radiograph: dense material blocks the beam and shows bright, thin material lets it through and stays dark, revealing the inside of the subject as a glowing negative. Carry it through density shown as brightness, blue-black film, bone-white metal and bone, overlapping translucency, interior structure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable readouts
   - fake UI text

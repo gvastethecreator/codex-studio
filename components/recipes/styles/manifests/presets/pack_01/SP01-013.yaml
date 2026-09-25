@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Observant and sober, an even grey calm that lets the moment speak.
   rendering_and_quality: Darkroom-print look on neutral fiber paper; no crushed shadows, no push-processing grit, no digital clarity.
   key_features: box-speed black-and-white; long neutral grey scale; moderate soft grain; open shadows; documentary honesty
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ilford HP5 Plus as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Ilford HP5 Plus at box speed 400: classic black-and-white documentary negative with a long, even grey scale and honest, moderate grain. Carry it through box-speed black-and-white, long neutral grey scale, moderate soft grain, open shadows, documentary honesty. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - clean digital sensor look
   - generic stock-photo face

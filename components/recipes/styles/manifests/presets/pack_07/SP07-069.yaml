@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Buoyant, loud and slightly absurd, anything can be blown up.
   rendering_and_quality: Photographic PVC material with crisp highlights; distinct from twisted balloon art and from bounce castles.
   key_features: rounded PVC pressure tubes; heat-welded seams; visible blower hose and valves; safety-primary colors; long specular streaks
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pressurized Vinyl Playform as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Heat-welded inflatable construction: every form made of rounded PVC pressure tubes and pillowy panels held up by air, with blower hose and valves visible. Carry it through rounded PVC pressure tubes, heat-welded seams, visible blower hose and valves, safety-primary colors, long specular streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo on parts
   - readable text

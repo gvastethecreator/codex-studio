@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Dazzling and showy, every surface competing to sparkle.
   rendering_and_quality: Fully converged path trace with dispersion and post glare; no noise and no flat plastic shading.
   key_features: spectral dispersion rainbows; caustics under glass; glare and bloom; glossy clearcoat; round bokeh
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Octane Spectral GPU Path Tracer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Spectral GPU path tracing: an unbiased GPU render with spectral light, so glass and gems split light into rainbow caustics, finished with glare and bloom. Carry it through spectral dispersion rainbows, caustics under glass, glare and bloom, glossy clearcoat, round bokeh. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - 2d illustration
   - hand-drawn

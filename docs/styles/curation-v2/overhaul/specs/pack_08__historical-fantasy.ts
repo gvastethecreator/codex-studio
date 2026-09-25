@@ -141,7 +141,7 @@ const spec: Spec = {
       briefs: [
         'Photograph of an adult woman in black-and-vermilion ceremonial samurai armor with crimson silk lacing and a crested kabuto kneeling in a field of red spider lilies at dusk. No text or logo.',
         'Photograph of an elderly adult man in indigo-laced lamellar armor and menpō mask fishing from a wooden pier in fog. No text or logo.',
-        'Photograph of an adult samurai in gold-crested armor standing guard at a neon-lit night market. No readable text or logo.',
+        'Photograph of an adult samurai in gold-crested lamellar armor with dark blue silk lacing standing guard at a lantern-lit night market, rain beading on the lacquered plates, stall steam drifting past the menpō mask. No readable text or logo.',
       ],
     },
     'SP08-036': {
@@ -159,7 +159,7 @@ const spec: Spec = {
       avoid: [...AVOID, 'horned helmets'],
       briefs: [
         'Photograph of an adult woman in a madder-red Norse apron dress with oval bronze brooches, bead strings and a fur-trimmed cloak standing at a ship prow in a storm. No text or logo.',
-        'Photograph of an elderly adult man in a woad-blue wool tunic, leg wraps and ring-pinned cloak carving runes-free wood by a longhouse fire. No text or logo.',
+        'Photograph of an elderly adult man in a woad-blue wool tunic, leg wraps and ring-pinned cloak carving a dragon-head figure from driftwood beside a longhouse fire, sparks rising and firelight on the woven bands. No text or logo.',
         'Photograph of two adult sisters in Norse dress hauling nets on a black pebble beach. Cold grey light. No text or logo.',
       ],
     },
@@ -285,7 +285,7 @@ const spec: Spec = {
       briefs: [
         'Photograph of an adult woman in a white Regency empire-line gown, spencer jacket and bonnet walking a griffin on a lead through a formal garden. Soft daylight. No text or logo.',
         'Photograph of an adult man in a bottle-green tailcoat, cravat and Hessian boots rowing across a misty lake at dawn. No text or logo.',
-        'Photograph of two elderly adult sisters in pastel Regency gowns playing cards with a ghost. No text or logo.',
+        'Photograph of two elderly adult sisters in pastel Regency gowns and lace caps playing cards by candlelight with a translucent ghost in a tailcoat, long gloves resting on the table, soft window light fading. No text or logo.',
       ],
     },
     {

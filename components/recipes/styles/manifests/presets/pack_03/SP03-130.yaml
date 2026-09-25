@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; a long-lens close-up on a flank or face sells the scale.
   atmosphere_and_mood: Heavy and ancient, an animal older than the landscape.
   rendering_and_quality: Feature-VFX surfacing where wetness, dust and scars follow the anatomy, with no rubber-suit sheen.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Photoreal Creature Hide as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Film creature hide: the subject covered in massive, wrinkled, scarred hide with layered displacement, wet sheen in the folds and dust caked on high points. Carry it through multi-scale hide displacement, wet creases and dusty ridges, scar tissue, glancing light, long-lens scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: multi-scale hide displacement; wet creases and dusty ridges; scar tissue; glancing light; long-lens scale
 avoidRules:
   - forced T-pose

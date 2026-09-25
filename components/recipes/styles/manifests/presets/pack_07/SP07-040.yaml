@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Adventurous, handmade and airy, living high among the leaves.
   rendering_and_quality: Natural-light photograph with honest joinery, lashing detail and bark contact, no plastic playground kit.
   key_features: platforms bolted to living trunks; rope lashings; plank suspension bridges; silver-weathered cedar; dappled canopy light
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Arboreal Craft Shelter as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Arboreal craft shelter: hand-built timber structures in living trees, platforms bolted to trunks with heavy steel bolts, rope lashings, suspension bridges and small shingled roofs. Carry it through platforms bolted to living trunks, rope lashings, plank suspension bridges, silver-weathered cedar, dappled canopy light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - one-point corridor perspective as default
   - wet mirror-gloss floor as default

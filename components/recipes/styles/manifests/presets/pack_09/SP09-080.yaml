@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Powerful, armored, mythic and fierce, carried by the material itself rather than by added props.
   rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
   key_features: large overlapping dragon scales; ridges; metallic sheen; battle scratches
-  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dragon Scale as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
+  creative_brief: "Dragon scale: large armored overlapping scales with ridges, metallic sheen and battle scratches. Carry it through large overlapping dragon scales, ridges, metallic sheen, battle scratches. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - material applied to the background instead of the target
   - unrequested sample object or habitat

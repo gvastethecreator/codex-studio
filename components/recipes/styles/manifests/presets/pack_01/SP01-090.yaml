@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep requested framing; the dapple pattern must fall across the main subject.
   atmosphere_and_mood: Peaceful and summery, a slow flicker of warm light and cool shade.
   rendering_and_quality: Natural contrast with bright spots held, not clipped.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dappled Leaf Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Dappled canopy light: sun filtered through leaves scattering bright coin-shaped patches across the subject and ground. Carry it through leaf-filtered sun spots, green shade, dapple on subject, translucent leaves, summer calm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: leaf-filtered sun spots; green shade; dapple on subject; translucent leaves; summer calm
 avoidRules:
   - generic stock-photo face

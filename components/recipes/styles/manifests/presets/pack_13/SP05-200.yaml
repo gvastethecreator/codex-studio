@@ -34,10 +34,7 @@ visualDna:
   key_features: >-
     Curved plane layering, deep-teal-amber contrast, local reflected strokes, prompt-led
     mood and spacing
-  creative_brief: >-
-    Apply a visual treatment centered on curved plane layering, deep-teal-amber contrast,
-    local reflected strokes, prompt-led mood and spacing. Preserve the exact subject,
-    action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.
+  creative_brief: "Apply a visual treatment centered on curved plane layering, deep-teal-amber contrast, local reflected strokes, prompt-led mood and spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

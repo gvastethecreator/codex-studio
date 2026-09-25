@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'pixel sprites in 3D diorama; tilt-shift blur; bloom point lights; pixel textures on blocks; floating world chunk',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies JRPG Pixel Diorama Grammar as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pixel diorama: flat pixel-art sprites and pixel textures placed inside a real 3D miniature set, lit with modern bloom and tilt-shift depth of field. Carry it through pixel sprites in 3D diorama, tilt-shift blur, bloom point lights, pixel textures on blocks, floating world chunk. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
     layout: {
       preferredFrameCount: 8,
@@ -62,7 +62,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'square pictograph tiles; black ground; two or three colors; even grid; stark silhouettes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Roguelike Tile Glyph System as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Roguelike tile set: each subject reduced to one square pictographic tile with a stark silhouette in two or three colors on black. Carry it through square pictograph tiles, black ground, two or three colors, even grid, stark silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
     layout: {
       preferredFrameCount: 8,
@@ -97,7 +97,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'strict side view; stacked parallax layers; near-black foreground; fog-washed background; rim-lit silhouettes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Side-Scroll Parallax Gloom as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Side-scrolling exploration art: a dark near-black gameplay plane in front of four to six parallax layers that fade into colored fog. Carry it through strict side view, stacked parallax layers, near-black foreground, fog-washed background, rim-lit silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
     layout: {
       preferredFrameCount: 8,
@@ -130,7 +130,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'holographic brackets; segmented arcs; hexagon grid; scanlines; cyan and magenta glow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyberpunk Diegetic HUD Glow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Diegetic sci-fi HUD: translucent holographic panels, brackets and arcs projected into the world around the subject, glowing cyan and magenta. Carry it through holographic brackets, segmented arcs, hexagon grid, scanlines, cyan and magenta glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -158,7 +158,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'portrait tile grid; diagonal versus split; painterly pixel portraits; gradient backgrounds; selection glow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Retro Fighting Game Select Screen as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "90s arcade fighter select screen: a grid of bold hand-painted pixel portraits of original fighters with diagonal energy slashes and a versus split. Carry it through portrait tile grid, diagonal versus split, painterly pixel portraits, gradient backgrounds, selection glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -186,7 +186,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         '2:1 diamond tiles; beveled edges; cross-section tile sides; fixed top-left sun; plain background',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Isometric Strategy Tile Language as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Isometric strategy tiles: each subject built on a 2:1 diamond tile with beveled edges, as a clean atlas-ready game asset. Carry it through 2:1 diamond tiles, beveled edges, cross-section tile sides, fixed top-left sun, plain background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
     layout: {
       preferredFrameCount: 8,
@@ -219,7 +219,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'diagonal splash; exaggerated heroic proportions; ability-color rim light; particle trails; sculpted painted forms',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies MOBA Splash Rendering as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hero splash art: a painterly 3D-looking champion with exaggerated heroic proportions exploding out of a diagonal composition in ability-colored effects. Carry it through diagonal splash, exaggerated heroic proportions, ability-color rim light, particle trails, sculpted painted forms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -247,7 +247,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'empty anime backdrop; neon magenta and cyan wash; bloom; open central stage; blank signs',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Visual Novel Neon Backdrop Wash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Visual-novel backdrop: a clean anime-painted location with no characters, graded in neon night color and staged for a character to stand in later. Carry it through empty anime backdrop, neon magenta and cyan wash, bloom, open central stage, blank signs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -277,7 +277,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'colossal ruins; tiny figure; desaturated ash palette; pale god-rays; eroded stone and tarnish',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Eroded Grandeur Dark Fantasy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dark fantasy art direction of eroded grandeur: colossal ruined architecture, worn stone and dim gold, with a tiny figure against oppressive scale. Carry it through colossal ruins, tiny figure, desaturated ash palette, pale god-rays, eroded stone and tarnish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -305,7 +305,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'chibi proportions; squash and stretch; sprite-sheet row; hue-shifted outlines; plain field',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chibi Platformer Sprite Bounce as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Chibi platformer sprite: a two-to-three-heads-tall pixel character drawn with squash and stretch, shown as a small sprite sheet of key poses. Carry it through chibi proportions, squash and stretch, sprite-sheet row, hue-shifted outlines, plain field. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
     layout: {
       preferredFrameCount: 8,
@@ -338,7 +338,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'chunky stylized forms; rarity color tints; violet storm gradient; strong rim light; clean foliage clumps',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Battle Royale Compression Colorway as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Stylized competitive-shooter art direction: chunky readable forms, bright saturated PBR-lite materials and color coding that separates everything at distance. Carry it through chunky stylized forms, rarity color tints, violet storm gradient, strong rim light, clean foliage clumps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -366,7 +366,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'three-quarter icon angle; emissive accent strips; panel lines and bevels; dark gradient field; equal grid padding',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sci-Fi Arsenal Icon Kit as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sci-fi equipment icon kit: hard-surface items rendered at three-quarter view as matching inventory icons with emissive accent strips. Carry it through three-quarter icon angle, emissive accent strips, panel lines and bevels, dark gradient field, equal grid padding. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
     layout: {
       preferredFrameCount: 8,
@@ -399,7 +399,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'parchment panel; carved ornate border; wax seal; icon slots; inked illustration',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fantasy MMO Parchment Interface as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fantasy MMO parchment interface: aged parchment and leather panels with carved wood or metal borders, wax seals and icon slots. Carry it through parchment panel, carved ornate border, wax seal, icon slots, inked illustration. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -427,7 +427,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'vertical card; iridescent foil frame; rarity gems; clean anime paint; figure breaking the frame',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Anime Gacha Foil Frame as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Gacha character card: a vertical collectible card with an ornate iridescent foil frame around a clean anime-painted character illustration. Carry it through vertical card, iridescent foil frame, rarity gems, clean anime paint, figure breaking the frame. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -455,7 +455,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'single warm lamp pool; fixed high-corner camera; green-grey darkness; damp worn surfaces; fine grain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Survival Horror Save-Room Lighting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Survival-horror safe room: a pre-rendered-looking interior lit by one warm lamp pool inside cold darkness, seen from a fixed high camera. Carry it through single warm lamp pool, fixed high-corner camera, green-grey darkness, damp worn surfaces, fine grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -482,7 +482,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'lit and unlit zones; hard-edged light pools; cool blue shadows; warm lantern light; visible hiding path',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stealth Game Shadow Readability as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Stealth art direction: the world divided into readable lit and unlit zones, cool blue shadow where you hide and warm pools where you are seen. Carry it through lit and unlit zones, hard-edged light pools, cool blue shadows, warm lantern light, visible hiding path. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -510,7 +510,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'neon light trails; low wide angle; vanishing-point pull; glossy reflections; radial motion streaks',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Arcade Racing Velocity Neon as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Arcade racing art direction: glossy vehicles and streaking neon light trails pulled toward a vanishing point at exaggerated speed. Carry it through neon light trails, low wide angle, vanishing-point pull, glossy reflections, radial motion streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -538,7 +538,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         '32x32 pixel icons; one-pixel outline; hue-shifted ramps; top-left light; matched square slots',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies RPG Pixel Inventory Icon System as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "RPG pixel inventory icons: small 32 by 32 pixel item icons with a one-pixel dark outline, top-left light and a matched slot frame. Carry it through 32x32 pixel icons, one-pixel outline, hue-shifted ramps, top-left light, matched square slots. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
     layout: {
       preferredFrameCount: 8,
@@ -571,7 +571,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'seasonal palette; rounded forms; soft outlines; warm light; cozy negative space',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cozy Sim Seasonal Palette as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cozy life-sim art direction: soft pixel or painted forms with rounded shapes, gentle outlines and warm seasonal palettes. Carry it through seasonal palette, rounded forms, soft outlines, warm light, cozy negative space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
     layout: {
       preferredFrameCount: 8,
@@ -604,7 +604,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'extreme scale contrast; low angle from behind the hero; boss rim light; drifting ash; one ominous color',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Boss Encounter Key Art Tension as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Boss encounter key art: a colossal threat towering over a tiny challenger, cinematic painterly rendering built on extreme scale contrast. Carry it through extreme scale contrast, low angle from behind the hero, boss rim light, drifting ash, one ominous color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

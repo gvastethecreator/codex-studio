@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Urgent and authoritative, every subject presented as breaking news.
   rendering_and_quality: Crisp HD broadcast signal; no ticker, no readable graphics and no added anchor.
   key_features: blue LED video wall; glossy desk; soft key with hair light; desk-height medium shot; crisp HD
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies News Broadcast as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Network news studio look: the subject lit and framed as a headline segment in front of a cool blue LED video wall. Carry it through blue LED video wall, glossy desk, soft key with hair light, desk-height medium shot, crisp HD. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable fake text
   - readable ticker

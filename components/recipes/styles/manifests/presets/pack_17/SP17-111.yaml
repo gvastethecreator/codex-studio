@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Formal, well-balanced composition with a clearly modeled focal subject and orderly receding background planes.
   atmosphere_and_mood: Precise, authoritative, antique, and composed.
   rendering_and_quality: 'Museum-grade engraving clarity: every line intentional and crisp, no scribble, no noise, readable at thumbnail size.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Copperplate Burin Engraving as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Refined copperplate line engraving: swelling and tapering burin lines, disciplined parallel and cross hatching, dot-and-lozenge fills, and crisp black ink on bright plate-toned paper. Carry it through swelling burin lines, form-following hatch, dot-and-lozenge fills, monochrome plate tone, classical order. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: swelling burin lines; form-following hatch; dot-and-lozenge fills; monochrome plate tone; classical order
 avoidRules:
   - ink wash

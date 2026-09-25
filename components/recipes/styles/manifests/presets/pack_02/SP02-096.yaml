@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Rebellious and loud, pure street-culture swagger in every drip.
   rendering_and_quality: Flat screenprint art only; no skateboard object, no brand or magazine names.
   key_features: flat spot-color screenprint; dripping slime; thick keylines; tall emblem composition; misregistration
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Skateboard Deck Graphic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Skateboard deck graphic: 80s punk screenprint artwork with dripping slime, bold iconography and thick black keylines, printed flat in loud spot colors. Carry it through flat spot-color screenprint, dripping slime, thick keylines, tall emblem composition, misregistration. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photorealistic rendering
   - 3d render

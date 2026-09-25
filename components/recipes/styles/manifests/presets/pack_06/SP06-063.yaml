@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Antique and domestic, an heirloom surface patiently sealed by hand.
   rendering_and_quality: Unified varnished finish with legible motif cuts; nothing floats above the surface.
   key_features: cut printed motifs; painted wooden ground; amber varnish sheen; crackle glaze; sanded flush edges
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Decoupage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Decoupage: cut printed motifs glued onto a painted wooden surface and sealed under many coats of varnish until paper and paint read as one skin. Carry it through cut printed motifs, painted wooden ground, amber varnish sheen, crackle glaze, sanded flush edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - uniform beige torn-paper wash over every image
   - red tape strips added by default

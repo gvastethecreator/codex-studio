@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; simplify it into a few large soft masses with wide quiet space.
   atmosphere_and_mood: Hushed, melancholic and dreamlike, a scene remembered rather than seen.
   rendering_and_quality: Softened edges everywhere, close values, no crisp detail and no saturated color; depth built by layered haze.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tonalist Veil Oil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Tonalist oil painting: thin veils of close-valued color scumbled and rubbed over each other until the scene sinks into a single enveloping hour of haze or dusk. Carry it through single enveloping tone, compressed middle values, scumbled thin veils, one faint warm light, soft lost edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: single enveloping tone; compressed middle values; scumbled thin veils; one faint warm light; soft lost edges
 avoidRules:
   - photo

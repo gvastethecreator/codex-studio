@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: The whole dome and base visible and centered on a surface; the subject is contained within the sphere.
   atmosphere_and_mood: Hushed, wintry and nostalgic, a small world shaken and settling.
   rendering_and_quality: Still-life photograph with accurate spherical refraction; distinct from a corked bottle, no water spilling.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Snow-Globe Dome Miniature as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Snow globe: the subject as a tiny painted resin miniature sealed in a water-filled glass dome on a turned base, flakes drifting around it. Carry it through water-filled glass dome, drifting flakes, spherical magnification, turned wooden base, cold blue inner cast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: water-filled glass dome; drifting flakes; spherical magnification; turned wooden base; cold blue inner cast
 avoidRules:
   - brand logo on parts

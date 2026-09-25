@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Curious and patient, a collector cabinet piece full of impossible care.
   rendering_and_quality: Still-life photograph with accurate glass refraction; the scene stays contained, never an open seascape.
   key_features: subject enclosed in a corked bottle; aqua glass tint; refraction bending the miniature; fine rigging; caustic glow on the table
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bottle-Glass Curio Miniature as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Bottle curio miniature: the subject built at tiny scale inside a corked glass bottle, as if assembled through the neck with tweezers and fine rigging. Carry it through subject enclosed in a corked bottle, aqua glass tint, refraction bending the miniature, fine rigging, caustic glow on the table. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo on parts
   - readable text

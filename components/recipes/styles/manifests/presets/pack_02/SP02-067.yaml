@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Dreamlike and memory-laden, two moments sharing one frame.
   rendering_and_quality: Optical superimposition look; not a hard digital cutout.
   key_features: two superimposed images; second image inside the dark areas; soft translucent blend; primary silhouette; dreamlike
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Double Exposure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "In-camera double exposure: two images superimposed on the same film, with the darker areas of one revealing the other. Carry it through two superimposed images, second image inside the dark areas, soft translucent blend, primary silhouette, dreamlike. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested location
   - franchise likeness

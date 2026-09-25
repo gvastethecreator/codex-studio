@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Loud and euphoric, heat and noise felt through the color and the haze.
   rendering_and_quality: High-ISO live realism with clean blacks; no studio lighting and no invented band logos.
   key_features: gel beams through haze; backlit performer; pit angle; crowd hands foreground; high-ISO grain
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Concert Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Live concert photography: stage lighting cutting through haze, shot from the pit at high ISO during a peak moment of performance. Carry it through gel beams through haze, backlit performer, pit angle, crowd hands foreground, high-ISO grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - staged advertisement
   - stock-photo gloss

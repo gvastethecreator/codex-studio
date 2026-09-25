@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Intimate quiet composition, uncluttered, with a single softly defined subject.
   atmosphere_and_mood: Tender, reflective, soft, and quietly mysterious.
   rendering_and_quality: Refined print quality with soft yet readable forms and no muddiness.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soft Ground Crayon Etching as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Soft-ground etching with pencil-like grainy lines that capture the texture of the paper they were drawn through, soft gray tonal areas, and delicate plate tone. Carry it through grainy crayon etched line, captured paper weave, soft gray masses, quiet tenderness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: grainy crayon etched line; captured paper weave; soft gray masses; quiet tenderness
 avoidRules:
   - hard black mass

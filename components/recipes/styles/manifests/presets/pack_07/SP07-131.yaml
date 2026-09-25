@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Horizon replaced by a crisp fold line; the upper half of the frame is the same world hanging overhead.
   atmosphere_and_mood: Disorienting and grand, the world closing like a book.
   rendering_and_quality: Photographic realism along a clean hinge, not a smooth ring curve or a mirror reflection.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Folded-Horizon City as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Folded horizon: the ground plane hinges upward along a sharp crease and folds over itself, streets and buildings continuing upside down overhead. Carry it through ground hinging along a sharp crease, setting continuing upside down overhead, one consistent sun, fold line instead of horizon, hazier upper half. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: ground hinging along a sharp crease; setting continuing upside down overhead; one consistent sun; fold line instead of horizon; hazier upper half
 avoidRules:
   - black and gold sci-fi palette by default

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; the subject drawn in outline with computed hatch regions.
   atmosphere_and_mood: Precise, meditative and technical, a machine with a steady hand.
   rendering_and_quality: Mechanically regular line spacing with real ink behavior; no hand wobble, no filled solids, no gradients.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pen-Plotter Hatch Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Pen-plotter drawing: vector paths drawn on paper by a machine holding a real pen, with tone from perfectly regular computed hatch and contour-line fills. Carry it through machine-regular hatching, contour-line fills, real fineliner ink on paper, pen-start dots, one or two pen colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: machine-regular hatching; contour-line fills; real fineliner ink on paper; pen-start dots; one or two pen colors
 avoidRules:
   - photo

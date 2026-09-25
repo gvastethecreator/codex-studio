@@ -265,7 +265,7 @@ const spec: Spec = {
       ),
       [
         'Ink in water forming a winged beast, black and crimson clouds curling into wings and a tail, tendrils trailing downward, lit on clean white. No text or logo.',
-        'Ink cloud unfurling in dark water into a ghostly lady in a flowing gown, pale indigo tendrils against black. No text or logo.',
+        'Ink in water: a cloud of pale indigo ink unfurling through dark water into a ghostly lady in a flowing gown, tendrils trailing from her sleeves and hem, lit evenly against black. No text or logo.',
         'Ink drops sinking in clear water as vortex rings that stack into the smoke towers of a castle, violet and gold ink on white. No text or logo.',
       ],
     ),
@@ -297,8 +297,8 @@ const spec: Spec = {
       ),
       [
         'Macro of a chemical garden where blue and green crystal towers grow into a castle skyline in a glass jar, faceted spires, backlight glowing through the crystals. No text or logo.',
-        'Crystal growth forming the ribcage of a giant beast from white salt needles on black stone, sharp facets glinting. No text or logo.',
-        'Rainbow bismuth crystal like a stepped temple staircase, iridescent oxide colors on square terraces, hard side light. No text or logo.',
+        'Crystal growth forming the ribcage of a giant beast from white salt needles on black volcanic stone, sharp faceted spines catching a cold side light, tiny crystals still sprouting at the tips. No text or logo.',
+        'Macro of a rainbow bismuth crystal grown like a stepped temple staircase, iridescent oxide colors shifting across its square hopper terraces, hard side light and a black background. No text or logo.',
       ],
     ),
     'SP11-073': u(
@@ -330,7 +330,7 @@ const spec: Spec = {
       [
         'Extreme macro of hook-and-loop fastener where black plastic hooks form a thorny forest and tangled loops hang like vines, a dust mite caught between them, side light. No text or logo.',
         'Hook-and-loop macro with curved hooks lined up like a field of scythes under a pale light, loops blurred in the background. No text or logo.',
-        'Macro of fastener loops like a tangled jungle canopy with a single torn fiber drooping like a rope bridge. No text or logo.',
+        'Extreme macro of hook-and-loop fastener loops grown like a tangled jungle canopy, one torn fiber drooping across the gap like a rope bridge, soft side light and deep shadows between the loops. No text or logo.',
       ],
       'Hook-and-Loop Macro',
     ),
@@ -346,8 +346,8 @@ const spec: Spec = {
       ),
       [
         'Extreme macro of a natural sea sponge where the holes become a cave system, light filtering through pores, a tiny water droplet hanging from a cave ceiling. No text or logo.',
-        'Sponge macro in amber light where the open cells frame a hidden face formed by shadows. No text or logo.',
-        'Synthetic sponge cells like a honeycomb city of round rooms, soft light glowing through thin walls. No text or logo.',
+        'Sponge macro in warm amber light where the open cells and shadows arrange into a hidden watching face, soft glow through the thin walls, droplets clinging to the pore edges. No text or logo.',
+        'Macro of synthetic sponge cells like a honeycomb city of round rooms, soft light glowing through the thin foam walls, one cell holding a single trapped bubble. No text or logo.',
       ],
     ),
     'SP11-076': u(
@@ -362,8 +362,8 @@ const spec: Spec = {
       ),
       [
         'Macro of moss as a miniature forest, spore capsules on thin stalks like lanterns, dew drops, a beetle wandering through soft forest light. No text or logo.',
-        'Moss macro covering a fallen stone carving of a face, tiny leaves in its eye sockets, morning dew. No text or logo.',
-        'Moss macro with a snail climbing a spore stalk like a slow dragon on a tower, soft green light. No text or logo.',
+        'Macro of moss covering a fallen stone carving of a face in a forest, tiny moss leaves filling its eye sockets, spore capsules rising like eyelashes, morning dew on everything. No text or logo.',
+        'Moss macro where a small snail climbs a tall spore stalk like a slow dragon scaling a tower, dew beads on the capsule, soft green forest light and blurred moss hills behind. No text or logo.',
       ],
     ),
     'SP11-077': u(
@@ -378,8 +378,8 @@ const spec: Spec = {
       ),
       [
         'Extreme macro of coarse sandpaper where angular grains become a rocky mountain range, glue pooled between them like frozen lakes, raking light. No text or logo.',
-        'Sandpaper macro with a single red grain rising like a fortress on a hill of grey grit. No text or logo.',
-        'Macro of fine grit like a desert of glittering crystals, one hair lying across like a fallen pillar. No text or logo.',
+        'Extreme macro of sandpaper with a single red garnet grain rising like a fortress on a hill of grey abrasive grit, glue pooled around its base, harsh raking light. No text or logo.',
+        'Macro of fine sandpaper grit like a desert of glittering crystal boulders, one human hair lying across it like a fallen pillar, raking light casting long shadows. No text or logo.',
       ],
     ),
     'SP11-078': u(
@@ -394,8 +394,8 @@ const spec: Spec = {
       ),
       [
         'Microscope view of cork cells forming a honeycomb of hollow rooms, warm tan light through thin walls, one dark pore like a tunnel entrance. No text or logo.',
-        'Macro of a wine cork with wine-stained pores like red caves, broken cell walls at the cut edge. No text or logo.',
-        'Cork bark macro with deep cracks like canyons and a small spider crossing a ridge. No text or logo.',
+        'Macro of the cut end of an old wine cork, wine-stained pores like red caves, broken cell walls at the cut edge and a single dried drop of wine like a ruby. No text or logo.',
+        'Macro of cork oak bark with deep cracks like canyons, honeycomb cell texture on the ridges and a small spider crossing a ridge, warm side light. No text or logo.',
       ],
     ),
     'SP11-079': u(
@@ -410,8 +410,8 @@ const spec: Spec = {
       ),
       [
         'Macro of carbon fiber twill weave where the glossy black tows form armor-like scales, resin highlights and hard rim light. No text or logo.',
-        'Carbon fiber macro following the curve of a helmet shell, weave pattern bending over the edge, glossy clearcoat. No text or logo.',
-        'Macro of carbon fiber weave like a woven dark landscape, one frayed tow like a fallen tree. No text or logo.',
+        'Macro of carbon fiber weave following the curve of a helmet shell, the twill pattern bending over the rim, deep glossy clearcoat reflecting a hard rim light. No text or logo.',
+        'Macro of carbon fiber weave like a woven dark landscape seen from above, one frayed tow lifting out like a fallen tree, resin gloss catching a cold light. No text or logo.',
       ],
       'Carbon Fiber Weave Macro',
     ),
@@ -427,8 +427,8 @@ const spec: Spec = {
       ),
       [
         'Backlit macro of a dandelion seed head at sunset, seeds breaking away on glowing parachutes, fine pappus hairs catching the golden light. No text or logo.',
-        'Single dandelion seed drifting past a black castle silhouette at dusk, pappus hairs glowing. No text or logo.',
-        'Macro of dandelion seeds caught in a spider web like trapped stars, dew and dark background. No text or logo.',
+        'Backlit macro of a single dandelion seed drifting past a black castle silhouette at dusk, its pappus hairs glowing gold, a few more seeds blurred in the orange sky. No text or logo.',
+        'Macro of dandelion seeds caught in a dew-covered spider web like trapped stars, pappus hairs glittering, a dark forest background and the spider waiting at the edge. No text or logo.',
       ],
     ),
   },

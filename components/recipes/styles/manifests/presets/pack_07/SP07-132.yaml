@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Locked at the single alignment point; small clues at the edges reveal the fragments are far apart.
   atmosphere_and_mood: Delightful and uncanny, a trick that only works right here.
   rendering_and_quality: Photographic realism with exact alignment; no flat overlay or composited graphic.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Anamorphic Viewpoint Alignment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Anamorphic alignment: fragments scattered through deep space line up into one perfect shape only from the camera position and are broken from anywhere else. Carry it through fragments at different depths, one perfect shape from one viewpoint, flat strong color, shadows revealing depth, edge clues to the trick. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: fragments at different depths; one perfect shape from one viewpoint; flat strong color; shadows revealing depth; edge clues to the trick
 avoidRules:
   - black and gold sci-fi palette by default

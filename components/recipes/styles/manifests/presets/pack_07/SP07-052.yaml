@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Heavy, patient and proud, as if built to outlast the mountain around it.
   rendering_and_quality: Crisp architectural render with sharp stone edges and bloom limited to the heat channels; no fog wash over the masonry.
   key_features: single-block granite megaliths; stepped angular relief without readable runes; hammered gold edging; glowing heat channels in grooves; squat trabeated proportions
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dwarven Megalithic Forge as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Megalithic mountain-hall architecture: walls cut from single granite blocks with hairline joints, stepped angular relief bands, hammered gold edging and molten heat running in floor and wall grooves. Carry it through single-block granite megaliths, stepped angular relief without readable runes, hammered gold edging, glowing heat channels in grooves, squat trabeated proportions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - licensed fantasy location
   - copy of a known film or game building

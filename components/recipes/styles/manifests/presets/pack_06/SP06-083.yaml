@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Electric and austere, a whole world drawn in light.
   rendering_and_quality: Clean continuous lines with vertex hot spots; no raster jaggies and no fills.
   key_features: glowing beam lines; transparent wireframe; vertex hot spots; phosphor bloom; black void
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vector Arcade Wireframe as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Color vector CRT: the subject drawn only as glowing beam lines on pure black, with no pixels and no filled surfaces. Carry it through glowing beam lines, transparent wireframe, vertex hot spots, phosphor bloom, black void. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - console or handheld hardware shown in frame

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Curious and inviting, a whole place small enough to hold.
   rendering_and_quality: Clean stylized render with crisp contour edges and no fog, every region readable at a glance.
   key_features: tabletop terrain block; stepped contour terraces; hypsometric tints; low sun relief shadows; cut strata edges
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 3D Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Isometric 3D relief map: the location sculpted as a tabletop terrain block with stepped contour terraces, a flat water plane and miniature landmarks. Carry it through tabletop terrain block, stepped contour terraces, hypsometric tints, low sun relief shadows, cut strata edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise likeness
   - recognizable game or film world

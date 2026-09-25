@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Bored and playful, inspiration sneaking into a long meeting.
   rendering_and_quality: Real marker on glossy board with glare; no readable words, only arrows and shapes.
   key_features: dry-erase marker streaks; half-erased ghost drawings; fluorescent glare; arrows and circles; four-color markers
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Office Whiteboard Doodle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Office whiteboard doodle: dry-erase markers on a glossy whiteboard, drawn fast during a meeting, with the ghosts of earlier half-erased drawings underneath. Carry it through dry-erase marker streaks, half-erased ghost drawings, fluorescent glare, arrows and circles, four-color markers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photorealistic rendering
   - 3d render

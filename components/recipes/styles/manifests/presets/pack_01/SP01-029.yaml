@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Alien and precise, familiar things revealed as strange landscapes.
   rendering_and_quality: SEM image quality with fine noise; no color tint unless the prompt asks for false color.
   key_features: greyscale electron image; glowing edge rims; enormous magnification; deep focus; dark ground
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Microscope (SEM) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Scanning electron micrograph: a tiny specimen coated and scanned by an electron beam, rendered in greyscale with extreme depth and edge glow. Carry it through greyscale electron image, glowing edge rims, enormous magnification, deep focus, dark ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - fake UI text
   - readable timestamp

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Temporary and dreamy, a drawing that could be wiped away.
   rendering_and_quality: Soft dusty edges, broken strokes and rubbed glow; no readable writing, no clean vector lines.
   key_features: white chalk on dark slate; finger-rubbed dust tone; ghost erasure smears; broken gritty strokes; light as the drawn element
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chalk Dust Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Chalk dust drawing on a dark slate board: soft white and pale colored chalk rubbed into tone with the fingertips, with ghostly half-erased earlier marks behind. Carry it through white chalk on dark slate, finger-rubbed dust tone, ghost erasure smears, broken gritty strokes, light as the drawn element. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - mixing in a second drawing tool

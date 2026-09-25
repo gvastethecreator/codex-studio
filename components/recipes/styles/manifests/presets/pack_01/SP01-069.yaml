@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Intimate, confident, private, and warm.
   rendering_and_quality: Tasteful fine-art finish, no explicit nudity.
   key_features: warm side window light; draped fabric; deep wine tones; confident adult pose; tasteful intimacy
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Boudoir Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Boudoir photography: an intimate, respectful adult portrait in a private interior, sensual through light, fabric and mood rather than exposure. Carry it through warm side window light, draped fabric, deep wine tones, confident adult pose, tasteful intimacy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - generic stock-photo face
   - celebrity likeness

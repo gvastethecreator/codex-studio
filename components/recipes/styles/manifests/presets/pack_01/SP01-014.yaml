@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Nocturnal and melancholic, warm halos glowing against cool empty shadow.
   rendering_and_quality: 'Motion-picture negative look: soft rolloff, halation in-camera rather than painted glow, no digital bloom filter.'
   key_features: red-orange halation halos; tungsten teal shadows; amber practicals; fast-film grain; night cinema stock
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cinestill 800T as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cinestill 800T: tungsten-balanced motion-picture stock with its anti-halation layer removed, so every bright light blooms with a red-orange halo. Carry it through red-orange halation halos, tungsten teal shadows, amber practicals, fast-film grain, night cinema stock. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - clean digital sensor look
   - generic stock-photo face

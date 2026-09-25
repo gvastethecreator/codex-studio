@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Immense silence and scale, a stillness older than anyone inside it.
   rendering_and_quality: Sparse ruled pen line, layered wash values and white scratch highlights, with restrained detail and no glow.
   key_features: ruler-drawn pen lines; vast gray ink-wash fields; dry-brush drag; scratched-out white highlights; long converging ruled lines
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Terminal Megastructure Silence as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Ink-wash megastructure manga plate: ruler-drawn pen lines, vast flat fields of diluted gray wash, dry-brush edges, and highlights scratched out in white. Carry it through ruler-drawn pen lines, vast gray ink-wash fields, dry-brush drag, scratched-out white highlights, long converging ruled lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

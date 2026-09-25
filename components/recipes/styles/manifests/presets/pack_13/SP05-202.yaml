@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: 'Follow the requested mood; rounded shape rhythm contributes graphic structure without prescribing emotion.'
   rendering_and_quality: 'Use clean color separations with soft layered overlaps; preserve crisp edges where the prompt requires precision.'
   key_features: 'Rounded ink joins; modular color blocks; layered print edges; alternating warm and cool accents; light surface grain.'
-  creative_brief: 'Use overlapping color shapes and rounded contour joins to create a gentle graphic rhythm. Keep the requested subject, action, count, camera, and mood.'
+  creative_brief: "Use overlapping color shapes and rounded contour joins to create a gentle graphic rhythm. Keep the requested subject, action, count, camera, and mood. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

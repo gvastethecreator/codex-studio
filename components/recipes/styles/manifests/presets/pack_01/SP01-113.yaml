@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: 45 degrees or eye level, low-key frame with the food in the one lit area, props receding into darkness.
   atmosphere_and_mood: Rich and brooding, a feast glimpsed in a candle-dark hall.
   rendering_and_quality: Low-key exposure with clean blacks and detailed highlights; not a bright cookbook look.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dark Chiaroscuro Food as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Dark chiaroscuro food photography: food on dark wood and pewter lit by one small window, falling off into deep shadow like an old-master still life. Carry it through single side window, black falloff, pewter and dark oak, old-master still-life mood, jewel accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: single side window; black falloff; pewter and dark oak; old-master still-life mood; jewel accents
 avoidRules:
   - illustration

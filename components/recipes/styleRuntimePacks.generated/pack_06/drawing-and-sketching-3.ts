@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'swelling flexible-nib line; hatching and cross-hatching for tone; stippled half-tones; bare-paper highlights; pure black on white',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ink (Pen & Ink) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dip pen and ink: a flexible steel nib swelling from hairline to heavy line under pressure, with all tone built from hatching, cross-hatching and stippling. Carry it through swelling flexible-nib line, hatching and cross-hatching for tone, stippled half-tones, bare-paper highlights, pure black on white. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -58,7 +58,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'chisel-tip parallel streaks; cool grey marker shadows; fineliner outline; white gel highlights; marker background swatch',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Alcohol Marker Rendering as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Alcohol marker rendering: broad chisel-tip markers laid in fast parallel streaks and blended while wet, finished with a fineliner outline and white gel highlights. Carry it through chisel-tip parallel streaks, cool grey marker shadows, fineliner outline, white gel highlights, marker background swatch. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -86,7 +86,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'layered directional pencil strokes; silvery graphite sheen in darks; paper-white highlights; fine tooth in mid-tones; unfinished vignetted edges',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Graphite Pencil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Graphite pencil drawing: tone built with a range of hard and soft pencils in layered directional strokes, from crisp H-grade lines to dense 8B darks. Carry it through layered directional pencil strokes, silvery graphite sheen in darks, paper-white highlights, fine tooth in mid-tones, unfinished vignetted edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -114,7 +114,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'velvet matte blacks; smudged smoky greys; kneaded-eraser lifted lights; visible gesture lines; charcoal dust on laid paper',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Charcoal (Expressive) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Expressive charcoal drawing: willow vine charcoal swept in broad gestures, pushed into velvety blacks with compressed charcoal and wiped or erased back to light. Carry it through velvet matte blacks, smudged smoky greys, kneaded-eraser lifted lights, visible gesture lines, charcoal dust on laid paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -144,7 +144,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'layered wax pencil in circular strokes; burnished glossy surface; complementary layered darks; paper tooth filled; clean white field',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Burnished Colored Pencil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Burnished colored pencil: many light layers of wax-based pencil laid in small circular strokes, then pressed hard with a colorless blender until the paper tooth disappears. Carry it through layered wax pencil in circular strokes, burnished glossy surface, complementary layered darks, paper tooth filled, clean white field. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -172,7 +172,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'powdery pigment on gritty toned paper; broken side-of-stick strokes; finger-blended passages; saturated complementary color; matte luminous glow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pastel (Soft) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Soft pastel drawing: pure pigment sticks dragged and layered on sanded or velour pastel paper, blended with fingers in places and left as broken strokes in others. Carry it through powdery pigment on gritty toned paper, broken side-of-stick strokes, finger-blended passages, saturated complementary color, matte luminous glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -200,7 +200,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'white chalk on dark slate; finger-rubbed dust tone; ghost erasure smears; broken gritty strokes; light as the drawn element',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chalk Dust Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Chalk dust drawing on a dark slate board: soft white and pale colored chalk rubbed into tone with the fingertips, with ghostly half-erased earlier marks behind. Carry it through white chalk on dark slate, finger-rubbed dust tone, ghost erasure smears, broken gritty strokes, light as the drawn element. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -230,7 +230,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'white lines scratched from black; wire-brush fur texture; stippled scratch dots; solid black shadows; form-following line direction',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Clayboard Scratch Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Scratchboard drawing: a black ink layer over white clay scratched away with a knife and wire brush, so every mark is a white line pulled out of darkness. Carry it through white lines scratched from black, wire-brush fur texture, stippled scratch dots, solid black shadows, form-following line direction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -258,7 +258,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'single solid black shape; profile readable outline; scissor-cut edge detail; no interior modeling; flat paper ground',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Silhouette as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cut-paper silhouette: the subject reduced to a single solid black shape cut from paper, with all information carried by the outline. Carry it through single solid black shape, profile readable outline, scissor-cut edge detail, no interior modeling, flat paper ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -285,7 +285,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'one unbroken line; even line weight; connecting loops between forms; no fill or shading; simplified elegant contours',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Continuous Line as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Continuous line drawing: the whole image drawn with one unbroken line of even weight that never lifts from the paper. Carry it through one unbroken line, even line weight, connecting loops between forms, no fill or shading, simplified elegant contours. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -317,7 +317,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Continuous wandering line with misaligned features and overshoots; never corrected, never cleaned up.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blind Contour Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Blind contour drawing: a slow single pen line made while the eye follows the subject and never looks at the paper, so proportions drift and parts misalign. Carry it through slow wobbling single line, drifting proportions, misaligned features, overshooting joins, no shading. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'slow wobbling single line; drifting proportions; misaligned features; overshooting joins; no shading',
     },
@@ -348,7 +348,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Blunt varied marks with dry edges, no fine hatching, no wash, no hairline nib strokes.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Reed Pen Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Reed pen drawing: a cut reed dipped in brown ink making blunt, slightly splitting strokes, with the landscape built from rhythmic dashes, dots and short curls. Carry it through blunt split reed strokes, rhythmic dashes, dots and curls, brown ink on cream laid paper, dry-edged marks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'blunt split reed strokes; rhythmic dashes, dots and curls; brown ink on cream laid paper; dry-edged marks; pattern per surface',
     },
@@ -383,7 +383,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Soft halo edges around lifted lights, silvery sheen, eraser marks visible; no line drawing and no hatching.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Graphite Powder Lift-Out as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Graphite powder lift-out: the paper first covered in a smooth grey-black layer of powdered graphite brushed on with a soft pad, then the image erased out of it in light. Carry it through brushed powdered graphite ground, erased lights with halos, eraser-pen sharp highlights, silvery sheen, forms emerging from haze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'brushed powdered graphite ground; erased lights with halos; eraser-pen sharp highlights; silvery sheen; forms emerging from haze',
     },
@@ -418,7 +418,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'A deliberate mix of crisp dry pencil strokes and melted wash zones, hatching ghosts under water; no opaque paint.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Watercolor Pencil Dissolve as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Watercolor pencil drawing: colored lines hatched with water-soluble pencils, then partly brushed with clean water so some strokes melt into washes while others stay crisp. Carry it through dry pencil hatching beside dissolved washes, ghost strokes under water, soft bleed edges, paper white gaps, sketchy trailing edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'dry pencil hatching beside dissolved washes; ghost strokes under water; soft bleed edges; paper white gaps; sketchy trailing edges',
     },
@@ -453,7 +453,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Faceted blocky tone with sharp-sided strokes and thin edge accents; no smooth gradients and no fine hatching.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carpenter Pencil Block Sketch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Carpenter pencil sketch: a flat rectangular lead sharpened with a knife, used on its broad side for wide blocky strokes and on its edge for thin lines. Carry it through wide flat chisel strokes, thick-to-thin rotation marks, faceted planes, bare paper lights, thin edge accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'wide flat chisel strokes; thick-to-thin rotation marks; faceted planes; bare paper lights; thin edge accents',
     },
@@ -485,7 +485,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'tangled circular scribble tone; ballpoint ink blobs; glossy dense darks; pressure indentations; loose trailing edges',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ballpoint Scribble Shading as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ballpoint scribble drawing: tone built from tangled looping circular scribbles of a cheap ballpoint, layered denser and harder where it needs to go dark. Carry it through tangled circular scribble tone, ballpoint ink blobs, glossy dense darks, pressure indentations, loose trailing edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -513,7 +513,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'thick greasy unblended strokes; sgraffito scratches through layers; waxy crumbs and smears; bold saturated color; chunky simplified shapes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oil Pastel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Oil pastel drawing: chunky greasy sticks pressed on thick and unblended, layered color over color and scratched back through with a blade to reveal what lies under. Carry it through thick greasy unblended strokes, sgraffito scratches through layers, waxy crumbs and smears, bold saturated color, chunky simplified shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -541,7 +541,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'sanguine, bistre and black crayon; white chalk highlights; buff paper as mid-tone; square-stick hatching; sculptural planes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Conte Crayon as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Conté crayon drawing: square sticks of hard pressed chalk in sanguine red, bistre brown, black and white used on a mid-toned buff paper. Carry it through sanguine, bistre and black crayon, white chalk highlights, buff paper as mid-tone, square-stick hatching. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -570,7 +570,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'fixed-width line hierarchy; ruled and templated geometry; uniform angled hatching; cutaway or exploded views; smooth vellum',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Technical Pen as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Technical pen drafting: fixed-width tubular nibs in a strict line-weight hierarchy, with ruled straight lines, template ellipses and measured parallel hatching. Carry it through fixed-width line hierarchy, ruled and templated geometry, uniform angled hatching, cutaway or exploded views, smooth vellum. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -598,7 +598,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'hair-fine uniform metal lines; cream bone-ash ground; parallel diagonal hatching; pale narrow value range; warm tarnish in dense areas',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Silverpoint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Silverpoint drawing: a silver stylus drawn over a white bone-ash prepared ground, leaving extremely fine uniform grey lines that cannot be erased. Carry it through hair-fine uniform metal lines, cream bone-ash ground, parallel diagonal hatching, pale narrow value range, warm tarnish in dense areas. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

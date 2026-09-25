@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Curious and quietly expansive, the sense of a big world just past the frame.
   rendering_and_quality: Painterly background with tactile detail, crisp cel figures and dry-brush lines only where they clarify form.
   key_features: painterly sepia-moss backgrounds; dry-brush contour accents; atmospheric blue fade; clean cel figures; parchment highlights
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sepia Moss Dry-Brush Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Film-quality anime with painterly background art: dry-brush contour accents, detailed sepia and moss landscapes and pale open skies behind clean cel figures. Carry it through painterly sepia-moss backgrounds, dry-brush contour accents, atmospheric blue fade, clean cel figures, parchment highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway

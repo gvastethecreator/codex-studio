@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Divided and menacing, two natures inside one face.
   rendering_and_quality: Clean film blacks and detailed highlights along the split line.
   key_features: 90-degree hard key; full negative fill; center split line; grazing texture; near-black half
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cinematic Split Key as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cinematic split key: a hard light at exactly 90 degrees to the lens with full negative fill, cutting the subject into a lit half and a black half. Carry it through 90-degree hard key, full negative fill, center split line, grazing texture, near-black half. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested location
   - franchise likeness

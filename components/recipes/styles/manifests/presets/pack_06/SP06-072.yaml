@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Improvised and graphic, a temporary image made fast and bold.
   rendering_and_quality: Clean strip geometry and visible overlaps, consistent strip width; no painted fills.
   key_features: masking, duct and vinyl tape; blade-cut curves; torn ends; flat layered color; strip geometry
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tape Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Tape art: the image built entirely from strips of colored masking, duct and vinyl tape laid on a flat surface and trimmed with a blade. Carry it through masking, duct and vinyl tape, blade-cut curves, torn ends, flat layered color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - uniform beige torn-paper wash over every image
   - red tape strips added by default

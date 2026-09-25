@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Eye-level medium and wide shots, people embedded in crowds and real places, long lenses rare.
   atmosphere_and_mood: Humane and aching, ordinary struggle filmed with compassion.
   rendering_and_quality: Grainy postwar film stock; no stylization and no heroic posing.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Italian Neorealism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Italian neorealism: postwar black-and-white cinema shot in real streets and courtyards with non-actors, available light and plain, honest framing. Carry it through real locations, non-actor faces, available daylight, eye-level framing, soft grey black and white. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: real locations; non-actor faces; available daylight; eye-level framing; soft grey black and white
 avoidRules:
   - watermark

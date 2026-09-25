@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Vertical reliquary/sourcebook crop with one central constructed silhouette and architectural or altar support shapes.
   atmosphere_and_mood: Sacred, invasive, industrial, clinical, and medieval-gothic.
   rendering_and_quality: Stylized biomechanical fantasy illustration, rich but denoised, non-photoreal, no explicit gore.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Biomechanical Reliquary as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Biomechanical medieval reliquary style with tendon cables, black iron, bone housings, cathedral machinery, and organic-machine dread kept non-graphic. Carry it through tendon cables, bone housings, black iron reliquary, cathedral machinery, organic-machine silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: tendon cables; bone housings; black iron reliquary; cathedral machinery; organic-machine silhouettes; non-graphic body horror
 avoidRules:
   - explicit gore

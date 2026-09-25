@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Cozy and toy-like, a world you could hold in your hands.
   rendering_and_quality: Miniature lighting and macro depth; geometry itself stays as requested.
   key_features: miniature-scaled lights; macro depth falloff; cozy saturated palette; model-kit materials; tiny window glows
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Diorama Lighting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Diorama lighting: small warm lights and a soft key scaled to a miniature, with shallow macro depth of field that makes any scene read as a handmade model. Carry it through miniature-scaled lights, macro depth falloff, cozy saturated palette, model-kit materials, tiny window glows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the geometry
   - adding a new environment

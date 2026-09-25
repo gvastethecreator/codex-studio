@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Comic smears; expressive reaction timing; controlled squash-and-stretch; readable rounded silhouettes; buoyant tension; bright cartoon clarity.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Comic smears; expressive reaction timing; controlled squash-and-stretch; readable rounded silhouettes; buoyant tension; bright cartoon clarity. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Comic smears; expressive reaction timing; controlled squash-and-stretch; readable rounded silhouettes; buoyant tension; bright cartoon clarity. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -58,7 +58,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Prismatic sparkle; tapered contour; ribbon-like motion; gem-light accents; layered translucent facets; polished shoujo finish.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Prismatic sparkle; tapered contour; ribbon-like motion; gem-light accents; layered translucent facets; polished shoujo finish. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Prismatic sparkle; tapered contour; ribbon-like motion; gem-light accents; layered translucent facets; polished shoujo finish. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -87,7 +87,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Angular cel-shadow cuts; mirror-edge glints; black-and-white value blocks; cyan/magenta shards; high-impact contour.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Angular cel-shadow cuts; mirror-edge glints; black-and-white value blocks; cyan/magenta shards; high-impact contour. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Angular cel-shadow cuts; mirror-edge glints; black-and-white value blocks; cyan/magenta shards; high-impact contour. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -116,7 +116,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Rough graphite/ink; compressed black masses; interrupted contours; sparse cyan/rust accents; storyboard-like economy.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Rough graphite/ink; compressed black masses; interrupted contours; sparse cyan/rust accents; storyboard-like economy. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Rough graphite/ink; compressed black masses; interrupted contours; sparse cyan/rust accents; storyboard-like economy. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -145,7 +145,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Restrained contour; microgesture-scale detail; muted values; quiet spacing; naturalistic observation; low-key suspense.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Restrained contour; microgesture-scale detail; muted values; quiet spacing; naturalistic observation; low-key suspense. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Restrained contour; microgesture-scale detail; muted values; quiet spacing; naturalistic observation; low-key suspense. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -174,7 +174,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Offset reflection edge; warm/cool echo; localized alignment slip; stable surrounding forms; restrained uncanny detail.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Offset reflection edge; warm/cool echo; localized alignment slip; stable surrounding forms; restrained uncanny detail. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Offset reflection edge; warm/cool echo; localized alignment slip; stable surrounding forms; restrained uncanny detail. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -203,7 +203,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Observational naturalism; economical contour; believable weight; quiet environmental integration; nuanced light.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Observational naturalism; economical contour; believable weight; quiet environmental integration; nuanced light. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Observational naturalism; economical contour; believable weight; quiet environmental integration; nuanced light. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -232,7 +232,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Fine fragile contour; pale mineral planes; translucent edges; broad void; quiet faceting.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Fine fragile contour; pale mineral planes; translucent edges; broad void; quiet faceting. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Fine fragile contour; pale mineral planes; translucent edges; broad void; quiet faceting. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -261,7 +261,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Sturdy contour; articulated joins; practical mechanical detail; warm accents; readable ensemble staging.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Sturdy contour; articulated joins; practical mechanical detail; warm accents; readable ensemble staging. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Sturdy contour; articulated joins; practical mechanical detail; warm accents; readable ensemble staging. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -290,7 +290,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Muted retrofuture palette; analogue grain; layered distance; softened far contours; quiet atmospheric separation.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Muted retrofuture palette; analogue grain; layered distance; softened far contours; quiet atmospheric separation. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Muted retrofuture palette; analogue grain; layered distance; softened far contours; quiet atmospheric separation. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -319,7 +319,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Directional speed-line forests; impact radials; restrained afterimage trails; force vectors; clear silhouette.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Directional speed-line forests; impact radials; restrained afterimage trails; force vectors; clear silhouette. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Directional speed-line forests; impact radials; restrained afterimage trails; force vectors; clear silhouette. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -348,7 +348,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Razorline silhouette; black cutout pools; vermilion/cream/navy blocks; long slashes; poster-value contrast.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Razorline silhouette; black cutout pools; vermilion/cream/navy blocks; long slashes; poster-value contrast. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Razorline silhouette; black cutout pools; vermilion/cream/navy blocks; long slashes; poster-value contrast. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -377,7 +377,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Elongated contour accents; fine celestial geometry; silver/navy/gold; poised negative space; restrained ornament.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Elongated contour accents; fine celestial geometry; silver/navy/gold; poised negative space; restrained ornament. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Elongated contour accents; fine celestial geometry; silver/navy/gold; poised negative space; restrained ornament. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -406,7 +406,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Emblematic silhouette; repeated prompt-derived shape; flat ink/gold contrast; ordered spacing; icon-like hierarchy.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Emblematic silhouette; repeated prompt-derived shape; flat ink/gold contrast; ordered spacing; icon-like hierarchy. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Emblematic silhouette; repeated prompt-derived shape; flat ink/gold contrast; ordered spacing; icon-like hierarchy. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -435,7 +435,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Drafting contours; radial arcs; loose construction marks; sparse edge glow; clean perspective.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Drafting contours; radial arcs; loose construction marks; sparse edge glow; clean perspective. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Drafting contours; radial arcs; loose construction marks; sparse edge glow; clean perspective. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -464,7 +464,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Woodblock contour; bokashi gradient fields; flat color planes; parallel carved marks; paper texture.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Woodblock contour; bokashi gradient fields; flat color planes; parallel carved marks; paper texture. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Woodblock contour; bokashi gradient fields; flat color planes; parallel carved marks; paper texture. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -493,7 +493,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Held-beat freeze; bold silhouette; poster-value grouping; selective rim; subtle film grain.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Held-beat freeze; bold silhouette; poster-value grouping; selective rim; subtle film grain. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Held-beat freeze; bold silhouette; poster-value grouping; selective rim; subtle film grain. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -522,7 +522,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Tapered contour; delicate line weight; restrained shadow; muted richness; quiet refined tension.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Tapered contour; delicate line weight; restrained shadow; muted richness; quiet refined tension. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Tapered contour; delicate line weight; restrained shadow; muted richness; quiet refined tension. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -551,7 +551,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Scraped strokes; coarse grain; angled/blocky contour; ash and rust accents; tactile graphic friction.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Scraped strokes; coarse grain; angled/blocky contour; ash and rust accents; tactile graphic friction. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Scraped strokes; coarse grain; angled/blocky contour; ash and rust accents; tactile graphic friction. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -580,7 +580,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Warm rim contour; silhouette separation; restrained flare haze; twilight color transition; posture-led emphasis.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Warm rim contour; silhouette separation; restrained flare haze; twilight color transition; posture-led emphasis. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Warm rim contour; silhouette separation; restrained flare haze; twilight color transition; posture-led emphasis. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -609,7 +609,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Leaded segmentation; jewel translucency; transmitted color; seam highlights; controlled glass imperfection.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Leaded segmentation; jewel translucency; transmitted color; seam highlights; controlled glass imperfection. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Leaded segmentation; jewel translucency; transmitted color; seam highlights; controlled glass imperfection. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -637,7 +637,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Apply controlled drawing elasticity to any subject; add no limbs, expressions, sprint, gag or copied scene. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features: 'Elastic contour; bent plane rhythm; loose brush marks; graphic push/pull.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Elastic contour; bent plane rhythm; loose brush marks; graphic push/pull. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Elastic contour; bent plane rhythm; loose brush marks; graphic push/pull. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -666,7 +666,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Pressure-variable sumi strokes; dry-bristle splinters; wet ink pools; rice-paper texture; negative-space impact.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Pressure-variable sumi strokes; dry-bristle splinters; wet ink pools; rice-paper texture; negative-space impact. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Pressure-variable sumi strokes; dry-bristle splinters; wet ink pools; rice-paper texture; negative-space impact. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -695,7 +695,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Minimal line count; broad value field; one muted accent; negative space; humble scale.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Minimal line count; broad value field; one muted accent; negative space; humble scale. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Minimal line count; broad value field; one muted accent; negative space; humble scale. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -724,7 +724,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Stencil edge; overspray halo; paint drips; particulate grain; bold contour energy; cyan/magenta accents.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Stencil edge; overspray halo; paint drips; particulate grain; bold contour energy; cyan/magenta accents. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Stencil edge; overspray halo; paint drips; particulate grain; bold contour energy; cyan/magenta accents. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -753,7 +753,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Broken chalk cadence; powder halo; smudge ghost; erasure trace; slate-grain field.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Broken chalk cadence; powder halo; smudge ghost; erasure trace; slate-grain field. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Broken chalk cadence; powder halo; smudge ghost; erasure trace; slate-grain field. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -782,7 +782,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Grounded proportions; selective wear; fine hatching; practical hard light; material realism; composed restraint.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Grounded proportions; selective wear; fine hatching; practical hard light; material realism; composed restraint. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Grounded proportions; selective wear; fine hatching; practical hard light; material realism; composed restraint. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -811,7 +811,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Elongated contours; decorative ink wisps; feathered ornament; sparse gold; void-rich composition.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Elongated contours; decorative ink wisps; feathered ornament; sparse gold; void-rich composition. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Elongated contours; decorative ink wisps; feathered ornament; sparse gold; void-rich composition. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -840,7 +840,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Offset planes; contradictory alignment or light; restrained spatial loop; stable recognizable forms.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Offset planes; contradictory alignment or light; restrained spatial loop; stable recognizable forms. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Offset planes; contradictory alignment or light; restrained spatial loop; stable recognizable forms. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -869,7 +869,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Curved contour; pastel gouache glaze; lace-like edge rhythm; soft light; fine paper tooth.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Curved contour; pastel gouache glaze; lace-like edge rhythm; soft light; fine paper tooth. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Curved contour; pastel gouache glaze; lace-like edge rhythm; soft light; fine paper tooth. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -898,7 +898,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Geometric fan shapes; ruler-straight contour; faceted focal areas; jewel-color cells; asymmetry preserved.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Geometric fan shapes; ruler-straight contour; faceted focal areas; jewel-color cells; asymmetry preserved. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Geometric fan shapes; ruler-straight contour; faceted focal areas; jewel-color cells; asymmetry preserved. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -927,7 +927,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Dry uneven ink; compact flats; repeated small hatch; catalog-like spacing; deadpan restraint.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Dry uneven ink; compact flats; repeated small hatch; catalog-like spacing; deadpan restraint. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Dry uneven ink; compact flats; repeated small hatch; catalog-like spacing; deadpan restraint. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -956,7 +956,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Stitched contour; crosswise weave/hatch; patch seams; selective fray; sashiko-like rhythm only when source pattern supports it.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Stitched contour; crosswise weave/hatch; patch seams; selective fray; sashiko-like rhythm only when source pattern supports it. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Stitched contour; crosswise weave/hatch; patch seams; selective fray; sashiko-like rhythm only when source pattern supports it. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -985,7 +985,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Winding hatch arcs; scratched engraving; ink pools; directional pressure; focused dark/light contrast.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Winding hatch arcs; scratched engraving; ink pools; directional pressure; focused dark/light contrast. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Winding hatch arcs; scratched engraving; ink pools; directional pressure; focused dark/light contrast. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -1014,7 +1014,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Acute angular cuts; hard cel shadows; restrained ember accents; icon-like contrast; crisp contour.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Acute angular cuts; hard cel shadows; restrained ember accents; icon-like contrast; crisp contour. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Acute angular cuts; hard cel shadows; restrained ember accents; icon-like contrast; crisp contour. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -1043,7 +1043,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Graphite underdrawing; smudge marks; colored-pencil fill; paper tooth; sparse margin registration.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Graphite underdrawing; smudge marks; colored-pencil fill; paper tooth; sparse margin registration. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Graphite underdrawing; smudge marks; colored-pencil fill; paper tooth; sparse margin registration. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -1072,7 +1072,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Watercolor blooms; disappearing contour; ink pools; pigment granulation; wet-paper texture; negative space.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Watercolor blooms; disappearing contour; ink pools; pigment granulation; wet-paper texture; negative space. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Watercolor blooms; disappearing contour; ink pools; pigment granulation; wet-paper texture; negative space. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -1101,7 +1101,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Faceted shading; internal refraction; icy blue bias; restrained prism edges; fine frost-like surface marks.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Faceted shading; internal refraction; icy blue bias; restrained prism edges; fine frost-like surface marks. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Faceted shading; internal refraction; icy blue bias; restrained prism edges; fine frost-like surface marks. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -1130,7 +1130,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Dense organic cross-contour; anatomical pattern density; carmine/bone/black; biological precision; controlled dread.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Dense organic cross-contour; anatomical pattern density; carmine/bone/black; biological precision; controlled dread. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Dense organic cross-contour; anatomical pattern density; carmine/bone/black; biological precision; controlled dread. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -1159,7 +1159,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Phosphor monochrome; intensifier grain; lens vignette; faint alignment echo; restrained infrared-like points.',
       creative_brief:
-        'Apply this visual treatment to the requested content: Phosphor monochrome; intensifier grain; lens vignette; faint alignment echo; restrained infrared-like points. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: Phosphor monochrome; intensifier grain; lens vignette; faint alignment echo; restrained infrared-like points. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -1188,7 +1188,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'White-hot to blue bands; ironbow false color; restrained heat bloom; sparse calibration ticks; clear segmentation.',
       creative_brief:
-        'Apply this visual treatment to the requested content: White-hot to blue bands; ironbow false color; restrained heat bloom; sparse calibration ticks; clear segmentation. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: White-hot to blue bands; ironbow false color; restrained heat bloom; sparse calibration ticks; clear segmentation. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -1217,7 +1217,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'RGB channel split; chromatic edge aberration; small glitch pixels; spectral sheen; saturated but controlled color.',
       creative_brief:
-        'Apply this visual treatment to the requested content: RGB channel split; chromatic edge aberration; small glitch pixels; spectral sheen; saturated but controlled color. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
+        'Apply this visual treatment to the requested content: RGB channel split; chromatic edge aberration; small glitch pixels; spectral sheen; saturated but controlled color. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

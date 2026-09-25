@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: 'Retain the requested mood; kinetic linework does not assign an emotional tone or relationship.'
   rendering_and_quality: 'Keep contours continuous where needed and motion accents sparse; maintain clear object boundaries.'
   key_features: 'Directional action contours; rounded joins; clear overlap planes; moderate color separation; sparse material marks.'
-  creative_brief: 'Clarify movement and overlaps already present with directional linework and readable color planes. Preserve scene, count, camera, and mood; add no new interaction.'
+  creative_brief: "Clarify movement and overlaps already present with directional linework and readable color planes. Preserve scene, count, camera, and mood; add no new interaction. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

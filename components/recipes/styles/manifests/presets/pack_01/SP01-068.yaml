@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Peaceful, tender, and hushed.
   rendering_and_quality: Delicate skin rendering and soft focus falloff; no harsh retouching.
   key_features: safely supported sleeping infant; knitted textures; feathered window light; warm neutrals; hushed calm
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Newborn Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Newborn photography: gentle, protected studio portraits of a sleeping infant with soft wraps, warm neutrals, and handmade props. Carry it through safely supported sleeping infant, knitted textures, feathered window light, warm neutrals, hushed calm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - generic stock-photo face
   - celebrity likeness

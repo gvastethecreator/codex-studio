@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Revealing and clinical, hidden heat made suddenly visible.
   rendering_and_quality: Radiometric camera look with soft low-resolution gradients; no UI crosshairs or readable scale.
   key_features: ironbow palette; heat as brightness; smooth thermal gradients; hot white peaks; no visible-light shading
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ironbow Thermal Imaging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Ironbow thermal imaging: a longwave infrared camera mapping temperature to a black-purple-red-orange-yellow-white palette, so heat, not light, defines the image. Carry it through ironbow palette, heat as brightness, smooth thermal gradients, hot white peaks, no visible-light shading. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - fake UI text
   - readable timestamp

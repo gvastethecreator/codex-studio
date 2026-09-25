@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Simple bold figures centered on the strip, energetic abstract marks around them.
   atmosphere_and_mood: Raw and musical, marks dancing to an unheard rhythm.
   rendering_and_quality: Handmade celluloid texture; no sprocket holes drawn and no digital vector.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Direct-on-Film Scratch Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Direct-on-film animation: images scratched, painted and inked straight onto celluloid without a camera, so every frame vibrates with hand-made marks. Carry it through scratched white lines on black, translucent dyes, jittering hand marks, projector glow, bold simple figures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: scratched white lines on black; translucent dyes; jittering hand marks; projector glow; bold simple figures
 avoidRules:
   - exact studio character copy

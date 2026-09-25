@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested geometry; the stepped slope and its thousands of terraces set the scale.
   atmosphere_and_mood: Hopeful, dense and green, a whole civilization in one building.
   rendering_and_quality: Detailed architectural visualization with legible terrace repetition; not a sterile line style.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Terraced Arcology Pyramid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Terraced arcology: an entire city built as one stepped pyramid, every slope lined with homes, farms and gardens, the hollow core a sunlit atrium. Carry it through stepped pyramid city, terraced farms and homes, hollow sunlit atrium, irrigation channels, raking morning sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: stepped pyramid city; terraced farms and homes; hollow sunlit atrium; irrigation channels; raking morning sun
 avoidRules:
   - black and gold sci-fi palette by default

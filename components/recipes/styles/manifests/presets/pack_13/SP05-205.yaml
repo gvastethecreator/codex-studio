@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: 'Preserve the requested feeling; loose marks describe brushwork, not a required emotion.'
   rendering_and_quality: 'Leave a controlled handmade edge while keeping anatomy and object boundaries legible; avoid a uniformly rough finish.'
   key_features: 'Loose directional brushwork; geometric underpainting; visible paper gaps; broken shadow edges; selective pencil grain.'
-  creative_brief: 'Combine confident brush edges with simple color geometry and visible gaps. Keep the original subject, action, count, camera, and mood unchanged.'
+  creative_brief: "Combine confident brush edges with simple color geometry and visible gaps. Keep the original subject, action, count, camera, and mood unchanged. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; lines follow the contours and gestures of the subject.
   atmosphere_and_mood: Hypnotic, calm and mathematical, motion frozen in lines.
   rendering_and_quality: Clean anti-aliased curves with consistent width, density modulation only; no brush strokes, no fills.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Flow-Field Generative Lines as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Generative flow-field art: thousands of thin lines traced by code through an invisible vector field, their density and direction revealing the subject. Carry it through thousands of flowing non-crossing lines, density-based tone, subject revealed by field direction, plain ground, consistent thin width. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: thousands of flowing non-crossing lines; density-based tone; subject revealed by field direction; plain ground; consistent thin width
 avoidRules:
   - photo

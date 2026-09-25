@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Patient and observational, quiet attention to form.
   rendering_and_quality: Visible stroke direction following the form, crisp contours on the light side, graphite shine in the darks; no charcoal velvet black and no ink line.
   key_features: layered directional pencil strokes; silvery graphite sheen in darks; paper-white highlights; fine tooth in mid-tones; unfinished vignetted edges
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Graphite Pencil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Graphite pencil drawing: tone built with a range of hard and soft pencils in layered directional strokes, from crisp H-grade lines to dense 8B darks. Carry it through layered directional pencil strokes, silvery graphite sheen in darks, paper-white highlights, fine tooth in mid-tones, unfinished vignetted edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - mixing in a second drawing tool

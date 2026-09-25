@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Orderly and inviting, a board game ready to be played.
   rendering_and_quality: Crisp edges and consistent tile size and light across the set; no perspective drift.
   key_features: 2:1 diamond tiles; beveled edges; cross-section tile sides; fixed top-left sun; plain background
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Isometric Strategy Tile Language as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Isometric strategy tiles: each subject built on a 2:1 diamond tile with beveled edges, as a clean atlas-ready game asset. Carry it through 2:1 diamond tiles, beveled edges, cross-section tile sides, fixed top-left sun, plain background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - known game HUD layout

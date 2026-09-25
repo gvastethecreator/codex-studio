@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Casual, energetic and improvised, drawn fast at the kitchen table.
   rendering_and_quality: Visible hand-speed decisions and streaky fills; no paint, no smooth gradients.
   key_features: streaky marker fills; overlap darkening; bleed halos; black marker outlines; saturated hot palette
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Felt Tip Marker as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Felt-tip marker drawing: broad water-based marker strokes that streak, overlap into darker mixes and bleed slightly into cheap paper. Carry it through streaky marker fills, overlap darkening, bleed halos, black marker outlines, saturated hot palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - frightening gore
   - known picture-book characters

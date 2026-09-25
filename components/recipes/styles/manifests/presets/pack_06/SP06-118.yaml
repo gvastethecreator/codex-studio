@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Satisfying and collectible, loot sorted with care.
   rendering_and_quality: Pixel-perfect edges and uniform scale and outline weight across the set; no numbers.
   key_features: 32x32 pixel icons; one-pixel outline; hue-shifted ramps; top-left light; matched square slots
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies RPG Pixel Inventory Icon System as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "RPG pixel inventory icons: small 32 by 32 pixel item icons with a one-pixel dark outline, top-left light and a matched slot frame. Carry it through 32x32 pixel icons, one-pixel outline, hue-shifted ramps, top-left light, matched square slots. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - known game HUD layout

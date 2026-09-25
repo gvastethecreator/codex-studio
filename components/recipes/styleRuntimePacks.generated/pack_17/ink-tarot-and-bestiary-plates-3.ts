@@ -400,7 +400,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'High-resolution white-on-black engraving reproduced cleanly, controlled line density, readable silhouette, and heavy denoise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Black Veil Anatomical Arcana as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Absolute black-ground occult engraving with bone-white anatomical symbols, ritual limbs, radial saint halos, horizontal vignette logic, and surgical tarot severity. Carry it through black void ground, bone-white anatomical linework, radial halos, ritual hands and organs, horizontal vignette bands. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'black void ground; bone-white anatomical linework; radial halos; ritual hands and organs; horizontal vignette bands; clean denoised ink',
     },
@@ -435,7 +435,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp minimalist occult engraving with very low detail budget and strong thumbnail readability.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies White Thread Omen Cards as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Minimal black-field omen cards where fragile white line, radiating rule marks, suspended relics, and blank space carry the dread. Carry it through negative black space, thin white thread line, sparse halos, small omen relics, asymmetrical card balance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'negative black space; thin white thread line; sparse halos; small omen relics; asymmetrical card balance; clean minimal print finish',
     },
@@ -471,7 +471,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'High-quality reproduction of deliberately crude white-ink drawing, readable at thumbnail size, denoised black fields.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crooked White Ink Horror Cards as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Creepy badly drawn horror-card language that still feels art-directed: lopsided white ink, warped anatomy, blunt shapes, black ground, and grotesque amateur pressure. Carry it through bad-good drawing, crooked white ink, grotesque anatomy, black empty margins, crude horror card pressure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'bad-good drawing; crooked white ink; grotesque anatomy; black empty margins; crude horror card pressure; controlled messy finish',
     },
@@ -506,7 +506,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Cleanly reproduced scratchboard/ink-card finish with controlled ugliness and strong silhouette hierarchy.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gutter Saint Scratchcards as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Devotional gutter-horror cards with black voids, damaged saint geometry, white scratch halos, ragged banners without writing, and cheap holy-object tension. Carry it through black devotional card, white scratch halo, damaged icon geometry, gutter holy-object mood, chalk and scrape marks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'black devotional card; white scratch halo; damaged icon geometry; gutter holy-object mood; chalk and scrape marks; no text',
     },
@@ -541,7 +541,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Purposefully poor illustration reproduced with premium clarity: bad drawing as style, not accidental failure.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Malformed Bestiary Xerox as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Low-fidelity malformed bestiary plates where creatures, objects, or figures look wrongly copied, cheaply xeroxed, and grotesquely authoritative. Carry it through malformed bestiary plate, cheap xerox, wrong anatomy, silent tick marks, black-white specimen card. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'malformed bestiary plate; cheap xerox; wrong anatomy; silent tick marks; black-white specimen card; controlled low-fi grit',
     },
@@ -577,7 +577,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Denoised inverted manuscript illustration with clean contours, broad value groups, and restrained plate ornament.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dark Medieval Ink Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "A dark inversion of medieval ink fantasy plates: blackened vellum, bone linework, oxidized washes, carved silhouettes, and manuscript discipline without readable script. Carry it through blackened vellum, bone ink, dark medieval plate, inverted manuscript logic, oxidized accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'blackened vellum; bone ink; dark medieval plate; inverted manuscript logic; oxidized accents; textless scholastic horror',
     },
@@ -612,7 +612,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Museum-grade engraving clarity: every line intentional and crisp, no scribble, no noise, readable at thumbnail size.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Copperplate Burin Engraving as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Refined copperplate line engraving: swelling and tapering burin lines, disciplined parallel and cross hatching, dot-and-lozenge fills, and crisp black ink on bright plate-toned paper. Carry it through swelling burin lines, form-following hatch, dot-and-lozenge fills, monochrome plate tone, classical order. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'swelling burin lines; form-following hatch; dot-and-lozenge fills; monochrome plate tone; classical order',
     },
@@ -642,7 +642,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Smooth, noiseless mezzotint quality: blacks deep and rich, gradations soft, subject clearly readable.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mezzotint Abyss Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Velvety mezzotint where everything begins in deep rocked black and forms are burnished up into soft glowing grays and pale highlights, with almost no line. Carry it through rocked velvet black, burnished soft light, no line, single luminous focus, grave nocturnal hush. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'rocked velvet black; burnished soft light; no line; single luminous focus; grave nocturnal hush',
     },
@@ -676,7 +676,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'High-quality drypoint reproduction: burr controlled and meaningful, subject readable, no digital noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Drypoint Burr Nightmare as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Nervous drypoint scratched directly into the plate: jittery needle lines with fuzzy velvet burr, sudden dark knots, torn scratches, and uneven wiped plate tone. Carry it through jittery needle line, velvet burr knots, uneven wiped plate tone, trembling contours, feverish unease. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'jittery needle line; velvet burr knots; uneven wiped plate tone; trembling contours; feverish unease',
     },
@@ -711,7 +711,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Refined print finish: grains even, stepped tones clean, line delicate, no muddiness.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sepia Aquatint Wash Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Elegant etched line combined with granular sepia aquatint tone fields, stepped value layers, and soft warm paper, like a refined travel-plate or naturalist etching. Carry it through granular sepia aquatint, stepped tone layers, delicate etched line, atmospheric depth, refined calm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'granular sepia aquatint; stepped tone layers; delicate etched line; atmospheric depth; refined calm',
     },
@@ -746,7 +746,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Master-drawing quality: confident marks, anatomical clarity, and clean paper.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sanguine Iron Gall Study as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Old master study combining sanguine red chalk modeling with corroded brown iron-gall pen lines, white chalk heightening, and toned buff paper. Carry it through sanguine chalk volume, iron-gall pen contours, white chalk highlights, buff laid paper, study-sheet vitality. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'sanguine chalk volume; iron-gall pen contours; white chalk highlights; buff laid paper; study-sheet vitality',
     },
@@ -781,7 +781,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Refined luxury finish: crisp metallic lines, no muddy overlaps, no digital glow.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gold Ink Indigo Paper Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Luxurious ink drawing on indigo-dyed paper using gold and silver ink line and fine metallic hatching, with the dark paper as the ground. Carry it through gold and silver ink on indigo, metallic fine hatching, paper as shadow, precious nocturne. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'gold and silver ink on indigo; metallic fine hatching; paper as shadow; precious nocturne',
     },
@@ -811,7 +811,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Controlled chaos: marks purposeful, silhouette clear, no random noise or digital spatter.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Frantic Quill Blot Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Frantic quill-and-ink drawing: fast whipping lines, sudden blots, spatters, dragged dry strokes, and scratchy energetic hatching that looks drawn in one feverish sitting. Carry it through whipping quill line, ink blots and spatter, split-nib strokes, gesture over detail, feverish speed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'whipping quill line; ink blots and spatter; split-nib strokes; gesture over detail; feverish speed',
     },
@@ -844,7 +844,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Tender, reflective, soft, and quietly mysterious.',
       rendering_and_quality: 'Refined print quality with soft yet readable forms and no muddiness.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soft Ground Crayon Etching as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Soft-ground etching with pencil-like grainy lines that capture the texture of the paper they were drawn through, soft gray tonal areas, and delicate plate tone. Carry it through grainy crayon etched line, captured paper weave, soft gray masses, quiet tenderness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'grainy crayon etched line; captured paper weave; soft gray masses; quiet tenderness',
     },
@@ -877,7 +877,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean refined manuscript quality: exact line, flat red, no grime, no gold.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vermilion Rubrication Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Two-ink manuscript drawing: crisp carbon-black pen line and vermilion red rubrication accents on smooth vellum, with disciplined ornament and no readable script. Carry it through carbon black pen line, vermilion rubrication accents, smooth vellum, disciplined non-text ornament. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'carbon black pen line; vermilion rubrication accents; smooth vellum; disciplined non-text ornament',
     },
@@ -911,7 +911,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Refined printmaking finish: clean block edges, subtle wood grain, readable shapes.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chiaroscuro Tone Block Woodcut as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Chiaroscuro woodcut printed from a key block and two tone blocks in olive, ochre, and dark green-brown, with highlights cut out to reveal pale paper. Carry it through key block plus olive and ochre tone blocks, carved highlights, wood grain fields, monumental sculptural light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'key block plus olive and ochre tone blocks; carved highlights; wood grain fields; monumental sculptural light',
     },
@@ -946,7 +946,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp material realism for metal and ink while the engraved drawing remains readable.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Inked Copper Matrix Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "The image shown as the engraved copper printing plate itself: ink-filled grooves on polished reddish copper, burnished highlights, verdigris spots, and slight mirror reversal feel. Carry it through engraved copper surface, ink-filled grooves, verdigris patina, raking metallic sheen, image as object. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'engraved copper surface; ink-filled grooves; verdigris patina; raking metallic sheen; image as object',
     },
@@ -979,7 +979,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Controlled watery finish: blooms intentional, subject clearly readable, no mud.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Walnut Ink Bleed Brushplate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Loose wet brush drawing in walnut ink: warm brown washes blooming and feathering into damp paper, dark concentrated brush accents, and pale water-rings. Carry it through walnut ink wet blooms, feathered bleed, dark brush accents, emerging subject, poetic fluidity. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'walnut ink wet blooms; feathered bleed; dark brush accents; emerging subject; poetic fluidity',
     },
@@ -1008,7 +1008,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Pristine dot precision: no line, no noise, readable at thumbnail size.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Obsessive Stipple Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Obsessively precise stipple engraving made only of dots: dense dot clouds for shadow, sparse scattering for light, crisp dot-built contours, and no line at all. Carry it through dots only, density-built volume, dot contours, specimen isolation, meticulous calm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'dots only; density-built volume; dot contours; specimen isolation; meticulous calm',
     },
@@ -1042,7 +1042,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Painterly print quality with purposeful marks; dark but not muddy; subject readable.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blood Rust Monotype Ghost as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Dark painterly monotype: ink painted on a plate and printed once, with wiped-out lights, finger and rag marks, oxide red and black, and faded ghost second-pull areas. Carry it through single-pull monotype, wiped-out lights, rag and finger marks, oxide red and black, ghost second-pull haze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'single-pull monotype; wiped-out lights; rag and finger marks; oxide red and black; ghost second-pull haze',
     },
@@ -1077,7 +1077,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Refined old print quality: exaggerated but controlled drawing, readable groups, no digital noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grotesque Satire Etching as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Exaggerated satirical etching: caricatured grotesque faces and bodies, lively bitten line, dark aquatint shadows, and crowded but readable figure groups. Carry it through caricatured grotesque figures, lively etched line, dark aquatint shadow, theatrical satire, hand-tint option. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'caricatured grotesque figures; lively etched line; dark aquatint shadow; theatrical satire; hand-tint option',
     },

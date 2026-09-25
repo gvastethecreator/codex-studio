@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Lonely and hushed, time pressing on a room that everyone has left.
   rendering_and_quality: Tripod-sharp exposure with restrained HDR; no fake grunge overlay or horror props.
   key_features: abandoned interior; light shafts through collapse; peeling paint and rust; symmetrical wide view; tiny human scale
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Urbex (Urban Exploration) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Urban exploration photography: abandoned buildings recorded on a tripod, with decay, light shafts and silence as the subject. Carry it through abandoned interior, light shafts through collapse, peeling paint and rust, symmetrical wide view, tiny human scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - staged advertisement
   - stock-photo gloss

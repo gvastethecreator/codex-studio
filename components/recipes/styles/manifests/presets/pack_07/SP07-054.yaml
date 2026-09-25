@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Oppressive, dense and labyrinthine, a structure that keeps growing by accretion.
   rendering_and_quality: Matte photographic grit, detailed module repetition, restrained glow; not the sober single-slab look of classic brutalism.
   key_features: stacked cantilevered concrete modules; conduits and cable stays across facades; rust-black panels; telephoto compression; tiny utility lights at dusk
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Techno-Brutalist Compression as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Techno-brutalist megablock: board-marked concrete modules stacked and cantilevered into a mountain-like mass, service conduits and cable stays strung across the facades, rust-black steel panels. Carry it through stacked cantilevered concrete modules, conduits and cable stays across facades, rust-black panels, telephoto compression, tiny utility lights at dusk. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - licensed fantasy location
   - copy of a known film or game building

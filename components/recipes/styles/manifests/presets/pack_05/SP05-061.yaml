@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Oppressive weight and grim endurance, even in a quiet scene.
   rendering_and_quality: Meticulous nib crosshatching with clean white gaps and legible detail inside the darks.
   key_features: layered three-to-five direction crosshatch; clean open paper gaps; charcoal and bone; dominant shadow mass; hard single source
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crosshatched Doom Weight Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Dense pen crosshatch seinen manga that builds shadow in three to five layered hatch directions and stops cleanly at large open paper areas, so forms feel carved and heavy. Carry it through layered three-to-five direction crosshatch, clean open paper gaps, charcoal and bone, dominant shadow mass, hard single source. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

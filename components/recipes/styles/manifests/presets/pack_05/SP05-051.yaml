@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Breathless velocity, cool metal and nerve at the edge of control.
   rendering_and_quality: Sharp subject contours, chromatic RGB offset on edges, motion-smear afterimages and a streaked background; never a static still life.
   key_features: horizontal tracking pan blur; RGB-split chromatic edges; tapered afterimage smears; cyan-fuchsia fringes; warning-red leading edge
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Kinetic Alloy Sprint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "High-speed digital anime compositing: horizontal background pan blur, RGB-split chromatic edges, and tapered afterimage smears trailing the moving forms. Carry it through horizontal tracking pan blur, RGB-split chromatic edges, tapered afterimage smears, cyan-fuchsia fringes, warning-red leading edge. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

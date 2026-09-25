@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Mournful gravity and the weight of consequence.
   rendering_and_quality: Thin lines with soft modelled cel shading, painterly backgrounds and restrained color.
   key_features: brush-textured painted backgrounds; desaturated wartime palette; thin scratchy contour; soft film grain; small figures against heavy masses
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Colossal War Drama as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Late-war anime drama: thin, slightly scratchy contours over brush-textured painted backgrounds, desaturated like old wartime photographs under a soft film grain. Carry it through brush-textured painted backgrounds, desaturated wartime palette, thin scratchy contour, soft film grain, small figures against heavy masses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

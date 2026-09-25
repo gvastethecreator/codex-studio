@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Decadent, fragile, dramatic and on the edge of upheaval.
   rendering_and_quality: Rich, detailed, painterly photographic finish, with believable fabric weight, seams and fit detail.
   key_features: panniered silk gown; powdered pouf; embroidered coat and breeches; lace engageantes; chandelier glow
-  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies French Revolution as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
+  creative_brief: "Late eighteenth-century French court: rococo excess and revolutionary change — panniered silk gowns, powdered wigs, embroidered coats, or tricolor sashes and simple sans-culottes. Carry it through panniered silk gown, powdered pouf, embroidered coat and breeches, lace engageantes, chandelier glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - readable label text

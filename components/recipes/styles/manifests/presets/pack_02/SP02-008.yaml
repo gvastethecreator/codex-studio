@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Panicked and claustrophobic, dread coming from what the light has not reached.
   rendering_and_quality: Consumer-video low fidelity; no readable timestamp or cinematic lighting.
   key_features: flashlight cone; night-mode green; shaky handheld; video noise and smear; half-seen threat in the dark
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Found Footage Horror as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Found-footage horror: a frame from a consumer camcorder or phone carried by a panicking person in the dark. Carry it through flashlight cone, night-mode green, shaky handheld, video noise and smear, half-seen threat in the dark. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - readable fake text

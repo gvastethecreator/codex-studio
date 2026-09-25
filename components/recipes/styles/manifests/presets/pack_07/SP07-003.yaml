@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Optimistic, warm and relaxed, a confident post-war modernity.
   rendering_and_quality: 'Period magazine interior clarity: clean grain, soft warm contrast, restrained staging, no replica of a named designer chair.'
   key_features: tapered splayed legs; book-matched walnut veneer; low horizontal proportion; mustard and teal tweed accents; slatted wood divider
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mid-Century Modern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Mid-century modern interior: low horizontal lines, walnut and teak casework on tapered splayed legs, molded plywood curves, open plan with a floating room divider. Carry it through tapered splayed legs, book-matched walnut veneer, low horizontal proportion, mustard and teal tweed accents, slatted wood divider. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - furniture catalog staging
   - olive branch in a vase as default decor

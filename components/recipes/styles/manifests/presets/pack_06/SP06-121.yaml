@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; big shapes blocked first, details suggested by a few final accents, edges unfinished at the borders.
   atmosphere_and_mood: Fresh, spontaneous and alive, painted fast against the light.
   rendering_and_quality: Confident single-pass strokes, wet edges softly merged, bare toned ground visible; not polished or reworked.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Alla Prima Plein-Air Sketch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Alla prima plein-air oil sketch: painted outdoors in a single wet-into-wet session on a small toned panel, each passage laid once and left. Carry it through single-session wet-into-wet strokes, warm toned ground peeking through, two families of light and shadow, loose unfinished borders, small panel sketch. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: single-session wet-into-wet strokes; warm toned ground peeking through; two families of light and shadow; loose unfinished borders; small panel sketch
 avoidRules:
   - photo

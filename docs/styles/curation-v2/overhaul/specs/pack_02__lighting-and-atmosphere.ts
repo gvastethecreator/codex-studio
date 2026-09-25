@@ -233,7 +233,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Film still with a split key of an adult double agent staring into the lens, one half of his face lit hard from the side, the other half swallowed by black. No text or logo.',
-        "Split-key film still of an elderly adult woman demon hunter with cropped white hair and a ritual scar across her brow, holding a silver dagger beside her face, the grazing side light revealing every scar and blade nick on the lit half, the other half black. No text or logo.",
+        'Split-key film still of an elderly adult woman demon hunter with cropped white hair and a ritual scar across her brow, holding a silver dagger beside her face, the grazing side light revealing every scar and blade nick on the lit half, the other half black. No text or logo.',
         'Split-key film still of an adult judge in a black robe behind a bench, a crisp line of light and dark down the center of the face. No text or logo.',
       ],
     },

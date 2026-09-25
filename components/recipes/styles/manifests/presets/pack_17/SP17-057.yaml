@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Specimen-card vertical crop with one large malformed focal read, optional inset silhouettes, and no written labels.
   atmosphere_and_mood: Untrustworthy, creepy, academic, grotesque, and old-catalog wrong.
   rendering_and_quality: 'Purposefully poor illustration reproduced with premium clarity: bad drawing as style, not accidental failure.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Malformed Bestiary Xerox as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Low-fidelity malformed bestiary plates where creatures, objects, or figures look wrongly copied, cheaply xeroxed, and grotesquely authoritative. Carry it through malformed bestiary plate, cheap xerox, wrong anatomy, silent tick marks, black-white specimen card. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: malformed bestiary plate; cheap xerox; wrong anatomy; silent tick marks; black-white specimen card; controlled low-fi grit
 avoidRules:
   - readable field-guide labels

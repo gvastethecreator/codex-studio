@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Dramatic three-quarter or full figure pose, keeping the full outfit silhouette and fit readable at card size.
   atmosphere_and_mood: Theatrical, androgynous, dark and glamorous, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Glossy, high-contrast stage finish, with believable fabric weight, seams and fit detail.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Visual Kei as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Visual kei: theatrical rock fashion with dramatic hair, heavy makeup and ornate layered costumes mixing gothic, aristocratic and punk elements. Carry it through ornate layered costume, teased sculpted hair, heavy stage makeup, brocade and buckles, colored rim light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: ornate layered costume; teased sculpted hair; heavy stage makeup; brocade and buckles; colored rim light
 avoidRules:
   - brand logo

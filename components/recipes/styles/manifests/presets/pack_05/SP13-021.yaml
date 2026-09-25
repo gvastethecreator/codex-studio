@@ -22,7 +22,7 @@ visualDna:
   atmosphere_and_mood: Forward pressure and urgency that live in the framing, not in added danger.
   rendering_and_quality: Sharp 2D cel rendering with stable anatomy through the foreshortening and clean foreground-to-background separation.
   key_features: lunge toward the lens; leading limb foreshortened to double size; converging diagonals; compressed depth; tapered trailing streaks
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Action Burst Alley Rush as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Anime action frame staged as a forward rush: the subject lunges toward the lens along converging diagonals, its nearest limb foreshortened to about twice its size, depth squeezed like a narrow passage. Carry it through lunge toward the lens, leading limb foreshortened to double size, converging diagonals, compressed depth, tapered trailing streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - added opponent
   - added sports gear

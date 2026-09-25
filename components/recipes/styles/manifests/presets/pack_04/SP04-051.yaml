@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Plausible and unsettling, an animal that could have evolved somewhere.
   rendering_and_quality: Hero painted near finish, insets deliberately looser, callout lines that carry no words.
   key_features: one painted hero pose; graphite anatomy insets; skull and limb studies; human scale silhouette; evolved camouflage palette
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Creature Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Creature design study: one painted creature in a readable hero pose, surrounded by anatomical inset studies of skull, limb mechanics and skin. Carry it through one painted hero pose, graphite anatomy insets, skull and limb studies, human scale silhouette, evolved camouflage palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable annotations
   - readable text

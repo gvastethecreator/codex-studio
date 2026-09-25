@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Glamorous, festive, dazzling and theatrical, carried by how the material moves and catches light.
   rendering_and_quality: Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.
   key_features: overlapping sequins; scattered sparkle; spotlight glitter; shifting color
-  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sequins as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
+  creative_brief: "Sequin couture: garments covered in overlapping sequins or paillettes that scatter points of light. Carry it through overlapping sequins, scattered sparkle, spotlight glitter, shifting color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - readable label text

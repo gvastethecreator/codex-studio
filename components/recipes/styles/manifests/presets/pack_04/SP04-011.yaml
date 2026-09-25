@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Claustrophobic, uncanny and quietly escalating toward horror.
   rendering_and_quality: Precise fine-pen draftsmanship with realistic faces and relentless line density; no gore splash, no cute shapes.
   key_features: obsessive fine-line hatching; creeping spiral patterns; realistic unhatched faces; symmetrical calm staging; pitch-black voids
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Obsessive Fine-Line Horror Manga as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Horror manga drawn with obsessive fine lines: thousands of parallel pen strokes accumulate into dread, and ordinary surfaces slowly turn into spirals, holes or patterns. Carry it through obsessive fine-line hatching, creeping spiral patterns, realistic unhatched faces, symmetrical calm staging, pitch-black voids. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - added panels or gutters
   - speech balloons

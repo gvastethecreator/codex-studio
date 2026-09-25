@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'chipped bevelled subway tile; riveted painted steel columns; tactile yellow safety edge; fluorescent greenish light; grime-dark grout',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Metropolitan Transit Patina as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Metropolitan transit patina: the worn public skin of an old underground railway, with bevelled glazed tile, riveted steel columns, tactile safety edges and decades of grime in every joint. Carry it through chipped bevelled subway tile, riveted painted steel columns, tactile yellow safety edge, fluorescent greenish light, grime-dark grout. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'condensation-beaded glass; white-painted glazing bars; misting haze; cast-iron heating pipes; layered tropical foliage',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Conservatory Bioclimate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Conservatory bioclimate: a glasshouse climate machine of thin glazing bars, heating pipes and misting lines, where humidity and filtered light are the architecture. Carry it through condensation-beaded glass, white-painted glazing bars, misting haze, cast-iron heating pipes, layered tropical foliage. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -85,7 +85,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'curled delaminating paint; collapsed ceiling tiles; rust-bleed from fixtures; moss through cracked floor; dusty skylight shafts',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Institutional Ruin Patina as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Institutional ruin patina: an abandoned public building decaying in place, with paint peeling in curls, collapsed ceiling tiles, rust bleeding from fixtures and plants reclaiming the floor. Carry it through curled delaminating paint, collapsed ceiling tiles, rust-bleed from fixtures, moss through cracked floor, dusty skylight shafts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -113,7 +113,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'oak shelving bays with rolling brass ladders; cast-iron galleries; green-shaded lamp pools; worn gilt coffering; leather spines',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bibliographic Classicism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bibliographic classicism: the material language of a great old reading room — oak shelving bays, cast-iron galleries, brass rails and rolling ladders, leather and gilt under a coffered ceiling. Carry it through oak shelving bays with rolling brass ladders, cast-iron galleries, green-shaded lamp pools, worn gilt coffering, leather spines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -141,7 +141,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'windowless low mirrored ceiling; busy patterned carpet; hundreds of pot lights; red gold and neon; endless reflections',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Casino Sensory Grid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Casino sensory grid: a windowless, clockless interior designed to hold attention, with low mirrored and gilded ceilings, busy patterned carpet, chandeliers and endless reflections. Carry it through windowless low mirrored ceiling, busy patterned carpet, hundreds of pot lights, red gold and neon, endless reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -169,7 +169,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'blue depth attenuation; rippling caustic nets; thick curved acrylic distortion; suspended particles; dark silhouettes against glowing water',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Immersive Aquarium Optics as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Immersive aquarium optics: a room seen through or beside thick acrylic water walls, where blue attenuation, refraction and caustics shape everything. Carry it through blue depth attenuation, rippling caustic nets, thick curved acrylic distortion, suspended particles, dark silhouettes against glowing water. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -197,7 +197,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'carved chalk and tuff chambers; low compressed barrel vaults; walls of empty stacked niches; calcite crust; lantern-only light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ossuary Subterranean as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ossuary subterranean architecture: chambers carved into chalk, tuff or limestone, with low compressed barrel vaults and walls of empty stacked niches, crusted with calcite. Carry it through carved chalk and tuff chambers, low compressed barrel vaults, walls of empty stacked niches, calcite crust, lantern-only light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -225,7 +225,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'hot and cold aisle containment; perforated raised floor; yellow fibre raceway; blinking status LEDs; combed cable looms',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Data Center Grid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Data center grid: a sealed technical hall of hot and cold aisle containment, perforated raised floor, overhead cable trays and racks blinking in a cold white light. Carry it through hot and cold aisle containment, perforated raised floor, yellow fibre raceway, blinking status LEDs, combed cable looms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -253,7 +253,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'platforms bolted to living trunks; rope lashings; plank suspension bridges; silver-weathered cedar; dappled canopy light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Arboreal Craft Shelter as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Arboreal craft shelter: hand-built timber structures in living trees, platforms bolted to trunks with heavy steel bolts, rope lashings, suspension bridges and small shingled roofs. Carry it through platforms bolted to living trunks, rope lashings, plank suspension bridges, silver-weathered cedar, dappled canopy light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -286,7 +286,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Low-light photograph with crisp baluster rhythm and central light pool, no gore; any body stays covered.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Anatomical Theatre Tiers as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anatomical theatre: steep concentric oval tiers of carved timber balustrades rising around a small central table, lit from a lantern skylight, built so every spectator looks down. Carry it through steep concentric oval timber tiers, turned baluster rails, lantern skylight onto the centre, central demonstration table, spectators looking down. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'steep concentric oval timber tiers; turned baluster rails; lantern skylight onto the centre; central demonstration table; spectators looking down',
     },
@@ -321,7 +321,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Low-light photograph with glassy reflections and precise brick coursing, no fantasy glow effects.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Flooded Column Cistern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Flooded column cistern: a vast underground reservoir hall of reused stone columns carrying brick cross vaults, standing in shallow still water that doubles every column. Carry it through forest of stone columns in still water, brick cross vaults, warm uplights at column bases, mirror reflections, mineral tide lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'forest of stone columns in still water; brick cross vaults; warm uplights at column bases; mirror reflections; mineral tide lines',
     },
@@ -356,7 +356,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Night photograph with clean star points, red light kept low, riveted structure legible.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Observatory Dome Instrumentation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Observatory dome interior: a rotating hemispherical dome with an open shutter slit, a massive equatorial telescope mount on a pier, and a raised observing floor ringed by brass and iron. Carry it through rotating dome with open shutter slit, equatorial telescope on a pier, dim red working light, riveted dome ribs, brass setting circles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'rotating dome with open shutter slit; equatorial telescope on a pier; dim red working light; riveted dome ribs; brass setting circles',
     },
@@ -391,7 +391,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Detailed photograph with crisp ornament and clean paint, oil sheen, no steampunk gadget clutter.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Victorian Pumping Station Ironwork as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Victorian pumping station ironwork: an engine house turned into a cathedral of machinery, with ornate cast-iron columns, galleries and brackets painted in polychrome around giant beam engines. Carry it through polychrome painted cast-iron columns, foliate capitals and pierced galleries, giant beam engines, polished brass, tall arched windows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'polychrome painted cast-iron columns; foliate capitals and pierced galleries; giant beam engines; polished brass; tall arched windows',
     },
@@ -426,7 +426,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Warm low-light photograph with crisp gilt ornament and velvet depth, no readable programmes or signs.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Horseshoe Opera Auditorium as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Horseshoe opera auditorium: a stacked horseshoe of private boxes in four or five tiers facing a proscenium, with red velvet, gilded plaster and a great chandelier at the centre of a painted ceiling. Carry it through stacked horseshoe of boxes, red velvet and gilded plaster, central crystal chandelier, painted ceiling roundel, proscenium arch. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'stacked horseshoe of boxes; red velvet and gilded plaster; central crystal chandelier; painted ceiling roundel; proscenium arch',
     },
@@ -461,7 +461,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Sober daylight photograph with legible joinery, no readable crests, mottoes or documents.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oak-Panelled Courtroom as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Oak-panelled courtroom: a hierarchy built in joinery, with a raised bench under a canopy, a railed dock, a jury box, counsel tables and a public gallery, all in dark panelled oak. Carry it through raised bench under a carved canopy, railed dock, raised-and-fielded oak panelling, green leather and brass, clerestory light on the well. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'raised bench under a carved canopy; railed dock; raised-and-fielded oak panelling; green leather and brass; clerestory light on the well',
     },
@@ -496,7 +496,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Sober photograph with exact repetition and ironwork detail, no violence or gore.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Radial Panopticon Cell Block as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Radial panopticon cell block: tiers of identical cells with iron galleries and stairs ringing a tall top-lit hall, all visible from a central observation point. Carry it through tiers of identical cells around a central void, iron lattice galleries, roof lantern top light, safety netting, central observation point. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'tiers of identical cells around a central void; iron lattice galleries; roof lantern top light; safety netting; central observation point',
     },
@@ -531,7 +531,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean photograph with a single yellow cast held consistently, no readable screens or labels.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Yellow-Light Clean Room as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Yellow-light clean room: a semiconductor fabrication bay lit by filtered amber light, with laminar-flow ceiling filters, perforated floors and workers in full-body gowns. Carry it through filtered yellow-amber light, full-body gowned figures, laminar-flow ceiling filters, perforated floor, stainless tool enclosures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'filtered yellow-amber light; full-body gowned figures; laminar-flow ceiling filters; perforated floor; stainless tool enclosures',
     },
@@ -562,7 +562,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean gallery photograph with even white without clipping, no wall text or labels.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies White-Cube Gallery as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "White-cube gallery: a neutral exhibition box of seamless white walls, pale polished concrete floor and track lights, where one object is presented as if nothing else exists. Carry it through seamless white walls, polished pale concrete, track spotlights, single object on a low plinth, large empty margins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'seamless white walls; polished pale concrete; track spotlights; single object on a low plinth; large empty margins',
     },
@@ -593,7 +593,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Low-light photograph with period analogue detail and worn paint, no readable signs or screens.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cold War Bunker as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cold War bunker: a buried reinforced-concrete shelter of blast doors, air-filtration machinery, bunk rooms and control desks, painted in institutional colours and lit by caged lamps. Carry it through round steel blast doors, pale green painted concrete, caged bulbs and fluorescent tubes, air-filtration ducts, analogue dials. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'round steel blast doors; pale green painted concrete; caged bulbs and fluorescent tubes; air-filtration ducts; analogue dials',
     },
@@ -628,7 +628,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photograph with crisp tile joints, ripple reflections and gentle steam, no readable signs.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glazed-Tile Municipal Baths as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Municipal swimming baths of the early twentieth century: a long pool hall of glazed brick and tile under arched iron roof trusses, with changing cubicles lining a gallery around the water. Carry it through glazed brick with coloured tile bands, arched iron roof trusses, changing cubicles along a gallery, turquoise water, ripple reflections on tile. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'glazed brick with coloured tile bands; arched iron roof trusses; changing cubicles along a gallery; turquoise water; ripple reflections on tile',
     },

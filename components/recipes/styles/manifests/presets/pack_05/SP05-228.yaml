@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Elegiac, hushed and tender, like a memory of a machine slowly fading out.
   rendering_and_quality: Low-contrast pencil line, pale single-step shadows, paper grain overlay and vignette-to-white edges; no ink blacks.
   key_features: sepia-gray colored-pencil line; bleached pastel fills; paper grain overlay; flaked enamel chips; fade-to-white edges
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies White Machine Elegy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Bleached pastel anime illustration: soft sepia-gray colored-pencil line instead of ink, chalk-pale cel fills, and visible paper grain multiplied over everything. Carry it through sepia-gray colored-pencil line, bleached pastel fills, paper grain overlay, flaked enamel chips, fade-to-white edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

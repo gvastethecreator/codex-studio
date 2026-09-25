@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Vertical flowing blobs, arranged so the subject still reads at card size.
   atmosphere_and_mood: Retro, dreamy, slow and warm, driven by the construction, color and rhythm.
   rendering_and_quality: Soft glowing finish, with clean, deliberate marks and no accidental noise.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lava Lamp Blobs as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Lava lamp: soft rising wax blobs merging and splitting in glowing liquid. Carry it through glowing wax blobs, merging, retro glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: glowing wax blobs; merging; retro glow
 avoidRules:
   - readable text

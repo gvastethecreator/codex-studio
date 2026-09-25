@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Monumental emphasis on one instant, weighty without triumph or aggression.
   rendering_and_quality: Hard controlled strokes, stable structure and a single unmistakable focal hub.
   key_features: peak instant at the hub; radiating structural lines; huge-scale foreground element; low wide angle; hub-centered contrast
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Monumental Impact Burst Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Anime key frame of the peak instant of the requested action, placed at the hub of radiating structural lines, with one element of the scene enlarged in the foreground for extreme scale contrast. Carry it through peak instant at the hub, radiating structural lines, huge-scale foreground element, low wide angle, hub-centered contrast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - added opponent
   - added sports gear

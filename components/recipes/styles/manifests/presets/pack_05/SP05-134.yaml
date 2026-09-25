@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Mundane calm with one instant of startling precision.
   rendering_and_quality: Minimal detail and clean shapes, with the snap the only streaked element in the frame.
   key_features: calm thin contours; one snapped straight smear; pale fluorescent palette; single tangerine accent; horizontal lane staging
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fluorescent Everyday Snap Action as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Everyday-object action anime: calm thin contours and flat retail color, broken by a single snapped motion where one limb or object becomes a short straight smear with crisp speed ticks. Carry it through calm thin contours, one snapped straight smear, pale fluorescent palette, single tangerine accent, horizontal lane staging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

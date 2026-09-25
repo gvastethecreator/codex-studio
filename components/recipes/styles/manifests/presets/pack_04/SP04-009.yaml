@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Subversive, sweaty and gleefully rude, an anxious joke told loudly.
   rendering_and_quality: Hand-forged anti-polish ink with visible wobble; never clean vector line or smooth color.
   key_features: obsessive crosshatching; nervous dip-pen wobble; rubbery lumpy anatomy; sweat and stink lines; crammed detail
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Underground Comix as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "1960s underground comix: nervous dip-pen line with obsessive crosshatching, lumpy rubbery anatomy and every inch of the drawing crammed with detail. Carry it through obsessive crosshatching, nervous dip-pen wobble, rubbery lumpy anatomy, sweat and stink lines, crammed detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - added panels or gutters
   - speech balloons

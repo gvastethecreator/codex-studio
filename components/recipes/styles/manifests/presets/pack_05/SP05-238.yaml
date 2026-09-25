@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Bright heroic summer-afternoon spectacle with a hint of toy-model wonder.
   rendering_and_quality: Clean vector cel lines, two shadow values, glowing grid-line accents and crisp cumulus; no painterly mush.
   key_features: worm's-eye telephoto giant scale; bold primary color blocks; glowing cyan grid-line contours; towering summer cumulus; miniature ground detail
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tokusatsu Digital Grid Scale as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Digital tokusatsu-homage anime: clean cel shading in bold saturated primaries, low telephoto giant-scale framing, and fine glowing grid lines tracing major contours. Carry it through worm's-eye telephoto giant scale, bold primary color blocks, glowing cyan grid-line contours, towering summer cumulus, miniature ground detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

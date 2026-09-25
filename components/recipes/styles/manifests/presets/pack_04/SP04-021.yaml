@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Cheerful atomic-age optimism, stylish and gently humorous.
   rendering_and_quality: Opaque flat shapes with visible brush edges; no transparency and no photographic modeling.
   key_features: opaque matte gouache; flat geometric shapes; mustard-teal-tomato palette; dry-brush edges; patterned foliage
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gouache Illustration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Mid-century gouache picture book: opaque matte paint in flat geometric shapes, stylized foliage and animals reduced to playful modernist forms. Carry it through opaque matte gouache, flat geometric shapes, mustard-teal-tomato palette, dry-brush edges, patterned foliage. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - frightening gore
   - known picture-book characters

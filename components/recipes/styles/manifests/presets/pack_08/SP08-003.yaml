@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Serene, precise, confident and understated, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Clean, soft-contrast editorial finish, with believable fabric weight, seams and fit detail.
   key_features: few perfect pieces; bone and camel palette; no prints or hardware; soft window light; generous negative space
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Minimalist Chic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Scandinavian-style minimalist chic: few pieces, perfect proportions and quiet surfaces, where cut and fabric quality do all the talking. Carry it through few perfect pieces, bone and camel palette, no prints or hardware, soft window light, generous negative space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - readable label text

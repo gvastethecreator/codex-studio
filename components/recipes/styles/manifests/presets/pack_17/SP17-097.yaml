@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close off-balance crop that feels drawn directly on a page, with one dominant subject and unfinished edges fading into bare paper.
   atmosphere_and_mood: Restless, nervous, intimate, funny-desperate, and handmade.
   rendering_and_quality: High-quality reproduction of a deliberately untidy pen drawing; clear silhouette and readable face or form despite the scrawl, without digital cleanup.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ballpoint Scrawl Copier Zine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Messy ballpoint-pen zine drawing pushed through a cheap copier: looping blue-black biro scribble, overworked shading tangles, uneven pressure, and gray toner haze at the page edges. Carry it through looping ballpoint scribble, overworked tangles, copier gray, searching contours, unfinished bare-paper edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: looping ballpoint scribble; overworked tangles; copier gray; searching contours; unfinished bare-paper edges; highlighter accent
 avoidRules:
   - clean vector line

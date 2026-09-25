@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Ominous and electric, a future that has already gone wrong.
   rendering_and_quality: Knife-edged ink contours with flat duotone color and controlled glow; no daylight palette.
   key_features: heavy black shadow architecture; cyan-magenta duotone; glossy black reflections; knife-edged ink; tilted long-lens framing
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tech Noir Comic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Tech-noir comic: angular ink with heavy black shadow architecture, lit only by cyan and magenta duotone neon and reflected on glossy black planes. Carry it through heavy black shadow architecture, cyan-magenta duotone, glossy black reflections, knife-edged ink, tilted long-lens framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - added panels or gutters
   - speech balloons

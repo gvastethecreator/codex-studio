@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close angled view of the printed piece so the finish and the subject both read at card size.
   atmosphere_and_mood: Bold, crafted, poster-like and shiny, carried by the tactile finish.
   rendering_and_quality: Crisp product-photography finish with accurate paper and ink detail; no readable text.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Metallic Screenprint Ink as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Metallic screenprint: flat layers with metallic ink catching light. Carry it through flat layers, metallic ink, physical print process. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: flat layers; metallic ink; physical print process
 avoidRules:
   - readable text

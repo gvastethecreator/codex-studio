@@ -22,7 +22,7 @@ visualDna:
   atmosphere_and_mood: Brutal, heavy, austere and monumental, carried by the material itself rather than by added props.
   rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
   key_features: board-formed concrete; tie holes; air voids; cool grey
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Concrete (Raw) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Raw concrete: board-formed or cast concrete with tie holes, air voids and grey mineral texture. Carry it through board-formed concrete, tie holes, air voids, cool grey. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - material applied to the background instead of the target
   - unrequested sample object or habitat

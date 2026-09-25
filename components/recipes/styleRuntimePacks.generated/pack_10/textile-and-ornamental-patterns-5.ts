@@ -27,7 +27,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
       key_features: 'teardrop botehs; intricate filling',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paisley Pattern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Paisley: curved teardrop botehs with intricate inner filling. Carry it through teardrop botehs, intricate filling. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -53,7 +53,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
       key_features: 'tone-on-tone damask; satin/matte contrast',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Damask Pattern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Damask: reversible woven floral motifs in tone-on-tone sheen. Carry it through tone-on-tone damask, satin/matte contrast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -79,7 +79,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
       key_features: 'houndstooth broken check',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Houndstooth as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Houndstooth: broken check of four-pointed jagged shapes. Carry it through houndstooth broken check. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -105,7 +105,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
       key_features: 'tartan sett; twill diagonals',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tartan (Plaid) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tartan: intersecting colored stripes forming a woven plaid sett. Carry it through tartan sett, twill diagonals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -132,7 +132,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
       key_features: 'even round dots',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Polka Dot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Polka dot: evenly spaced round dots on a contrasting ground. Carry it through even round dots. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -159,7 +159,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
       key_features: 'camouflage blotches',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Camouflage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Camouflage: disruptive organic blotch pattern for concealment. Carry it through camouflage blotches. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -186,7 +186,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
       key_features: 'tie-dye spirals; bleeding edges',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tie Dye as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tie-dye: radial or spiral dye bursts with soft bleeding edges. Carry it through tie-dye spirals, bleeding edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -212,7 +212,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
       key_features: 'knit stitches; cables',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Knitted Texture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Knitted texture: visible knit stitches, cables and ribbing forming the surface. Carry it through knit stitches, cables. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -239,7 +239,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
       key_features: 'indigo twill; diagonal weave',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Denim Texture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Denim texture: indigo twill with diagonal weave and fading. Carry it through indigo twill, diagonal weave. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -266,7 +266,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
       key_features: 'over-under interlaced strips',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Basket Weave as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Basket weave: over-under interlaced strips like woven rattan. Carry it through over-under interlaced strips. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -293,7 +293,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
       key_features: 'hexagon tessellation',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Honeycomb as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Honeycomb pattern: tessellated hexagon cells as a surface motif. Carry it through hexagon tessellation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -320,7 +320,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
       key_features: 'blue-white glazed tiles; ornate repeats',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Azulejo Tile as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Azulejo: glazed blue-and-white painted tiles with ornate repeats. Carry it through blue-white glazed tiles, ornate repeats. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -347,7 +347,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
       key_features: 'X stitches; even-weave grid',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cross Stitch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cross stitch: X-shaped stitches forming pixel-like motifs on even-weave fabric. Carry it through X stitches, even-weave grid. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -375,7 +375,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Toile de Jouy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Toile de Jouy: single-color engraved pastoral scenes repeated on cream cloth. Carry it through engraved vignettes, single color on cream. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'engraved vignettes; single color on cream',
     },
     ui: {
@@ -408,7 +408,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ikat Blur as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ikat: resist-dyed yarns woven into blurred-edge geometric motifs. Carry it through blurred-edge ikat motifs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'blurred-edge ikat motifs',
     },
     ui: {
@@ -441,7 +441,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Batik Wax Resist as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Batik: wax-resist dyed cloth with crackled lines and layered colors. Carry it through wax-resist motifs, crackle lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'wax-resist motifs; crackle lines',
     },
     ui: {
@@ -472,7 +472,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Shibori Indigo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Shibori: indigo shaped-resist dyeing with folded, bound and stitched patterns. Carry it through indigo shibori resist. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'indigo shibori resist',
     },
     ui: {
@@ -504,7 +504,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Argyle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Argyle: overlapping diamonds with thin diagonal crossing lines. Carry it through argyle diamonds, crossing lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'argyle diamonds; crossing lines',
     },
     ui: {
@@ -537,7 +537,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kilim Geometric as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Kilim: flat-woven geometric diamonds, hooks and stepped motifs. Carry it through kilim stepped diamonds, flatweave. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'kilim stepped diamonds; flatweave',
     },
     ui: {
@@ -570,7 +570,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Celtic Knotwork as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Celtic knotwork: continuous interlaced bands weaving over and under. Carry it through over-under interlace, continuous bands. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'over-under interlace; continuous bands',
     },
     ui: {

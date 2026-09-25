@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Graceful, warm and lively, like music in motion.
   rendering_and_quality: Rich but controlled color with delicate line detail sitting over clean cel shapes.
   key_features: arabesque S-curve contours; jewel blue and turquoise; fine gold-line ornament; jewel-point specular stars; enamel tile shine
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Jewel Arabesque Curve Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Ornamented anime cel led by jewel color and arabesque curves: contours flow in elegant S-arcs and fine decorative line rhythms sit inside shapes. Carry it through arabesque S-curve contours, jewel blue and turquoise, fine gold-line ornament, jewel-point specular stars, enamel tile shine. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway

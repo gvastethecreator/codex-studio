@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Seat-level frames through windows, arranged so the subject still reads at card size.
   atmosphere_and_mood: Melancholic, tired, reflective and quiet, driven by the construction, color and rhythm.
   rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Late Train Window Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Late train anime: night commuter frames with window reflections, passing lights and tired quiet passengers. Carry it through window reflections, streaked lights, tired passengers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: window reflections; streaked lights; tired passengers
 avoidRules:
   - existing anime character likeness

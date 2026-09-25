@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Playful, synthetic and giddy, a toy-bright simulation of summer.
   rendering_and_quality: Vector-clean outlines, glossy gel highlights and ordered dither transitions; no grime and no photorealism.
   key_features: candy-jelly gel highlights; bubble gradients; chrome-pink rims; ordered pixel dither; pink, cyan and lime palette
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pop-Cyber Simulation Gloss as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Y2K pop-cyber gloss: candy-jelly highlights, bubble gradients, chrome-pink rims, and edges dissolving into ordered pixel dither. Carry it through candy-jelly gel highlights, bubble gradients, chrome-pink rims, ordered pixel dither, pink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

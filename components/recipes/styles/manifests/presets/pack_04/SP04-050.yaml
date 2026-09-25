@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Fast, confident and aspirational, a machine that already wants to move.
   rendering_and_quality: 'Design-studio sketch finish: construction lines left visible, a quick marker drop shadow, no photographic environment.'
   key_features: alcohol marker on grey paper; white gouache highlights; construction ellipses; hero three-quarter plus side elevation; one bold body color
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vehicle Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Industrial vehicle design sketch: alcohol marker and colored pencil on grey toned paper, with confident ellipses, construction lines and white gouache highlights. Carry it through alcohol marker on grey paper, white gouache highlights, construction ellipses, hero three-quarter plus side elevation, one bold body color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable annotations
   - readable text

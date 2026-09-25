@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Subject large on the sheet, vanishing points marked on or near the edges, horizon line drawn across.
   atmosphere_and_mood: Analytical and confident, form understood from the inside out.
   rendering_and_quality: Construction left visible as the point of the image, no painted finish and no labels.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Perspective Construction Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Perspective construction drawing: the subject built over a two- or three-point perspective grid, with boxes, ellipses and cross-contours left visible under the final line. Carry it through visible vanishing lines, construction boxes and ellipses, cross-contours, blue under black line, projected cast shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: visible vanishing lines; construction boxes and ellipses; cross-contours; blue under black line; projected cast shadow
 avoidRules:
   - placeholder gibberish text

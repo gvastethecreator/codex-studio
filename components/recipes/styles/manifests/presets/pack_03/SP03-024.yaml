@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Technical and ghostly, the hidden structure laid completely bare.
   rendering_and_quality: Clean anti-aliased lines with a subtle glow and no noise.
   key_features: mesh edges only; neon lines on black; visible edge loops; no surface shading; subtle glow
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wireframe Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Wireframe render: only the mesh edges drawn as glowing lines, revealing the topology of the subject against a dark field. Carry it through mesh edges only, neon lines on black, visible edge loops, no surface shading, subtle glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - franchise likeness

@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         '150-degree fisheye; curved horizon; wearer or gear in frame; droplets on the dome; deep focus',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies GoPro Wide as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Action-camera point of view: a tiny ultra-wide camera strapped to a helmet, chest, handlebar or pole, seeing about 150 degrees with a bulging fisheye curve. Carry it through 150-degree fisheye, curved horizon, wearer or gear in frame, droplets on the dome, deep focus. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -58,7 +58,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'straight-down nadir view; flattened map perspective; long shadows reveal height; tiny human marks; pattern fields',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Drone Aerial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Drone nadir aerial: the camera pointing straight down from 60 to 120 meters, turning the ground into a flat map of shapes, paths and shadows. Carry it through straight-down nadir view, flattened map perspective, long shadows reveal height, tiny human marks, pattern fields. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -87,7 +87,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'decisive moment; high-contrast black and white; gesture aligned with geometry; 28–35 mm closeness; honest grain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Street Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Classic black-and-white street photography: a 28–35 mm rangefinder at zone focus, catching the decisive instant when gesture and geometry line up. Carry it through decisive moment, high-contrast black and white, gesture aligned with geometry, 28–35 mm closeness, honest grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -116,7 +116,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'telephoto freeze at peak action; compressed blurred background; flying debris frozen; strained faces; hard top light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sports Action as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sports action photography: a 300–400 mm telephoto at f/2.8 and 1/2000 s freezing the peak instant of an effort. Carry it through telephoto freeze at peak action, compressed blurred background, flying debris frozen, strained faces, hard top light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -145,7 +145,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'desaturated dust palette; 35 mm closeness; tilted urgent framing; exhaustion over spectacle; grain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Documentary (War) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "War reportage: a 35 mm witness close to exhausted people in harsh conditions, shot fast, without heroics or staging. Carry it through desaturated dust palette, 35 mm closeness, tilted urgent framing, exhaustion over spectacle, grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -174,7 +174,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'blasting on-axis flash; startled shielding subject; rival flash bursts; tilted crowded framing; high-ISO noise',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paparazzi Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Paparazzi night shot: a long lens and a blasting on-camera flash catching a startled subject leaving somewhere, pressed by other photographers. Carry it through blasting on-axis flash, startled shielding subject, rival flash bursts, tilted crowded framing, high-ISO noise. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -202,7 +202,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'gel beams through haze; backlit performer; pit angle; crowd hands foreground; high-ISO grain',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Concert Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Live concert photography: stage lighting cutting through haze, shot from the pit at high ISO during a peak moment of performance. Carry it through gel beams through haze, backlit performer, pit angle, crowd hands foreground, high-ISO grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -231,7 +231,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'traveler for scale; route and path in frame; local accent color; warm raking daylight; tactile place detail',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Travel Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Editorial travel photography: a place discovered through a traveler, with the journey layered into the frame as route, scale and local light. Carry it through traveler for scale, route and path in frame, local accent color, warm raking daylight, tactile place detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -259,7 +259,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'abandoned interior; light shafts through collapse; peeling paint and rust; symmetrical wide view; tiny human scale',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Urbex (Urban Exploration) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Urban exploration photography: abandoned buildings recorded on a tripod, with decay, light shafts and silence as the subject. Carry it through abandoned interior, light shafts through collapse, peeling paint and rust, symmetrical wide view, tiny human scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -293,7 +293,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Saturated documentary color without HDR; separation comes from light and color, not sharpening.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Layered Color Street as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Layered color street photography: saturated color and hard light organized into three or four planes of depth, each holding its own small action. Carry it through three or four depth planes, saturated color fields, black shadow gaps, foreground crop, simultaneous small actions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'three or four depth planes; saturated color fields; black shadow gaps; foreground crop; simultaneous small actions',
     },
@@ -329,7 +329,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Long-lens rendering with atmospheric softness; no wide-angle perspective lines.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Telephoto Compression Street as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Telephoto street compression: a 300–600 mm lens from far away, stacking distant layers so near and far press into one flat wall. Carry it through extreme telephoto compression, stacked layers, giant background sun or moon, heat haze, flattened depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'extreme telephoto compression; stacked layers; giant background sun or moon; heat haze; flattened depth',
     },
@@ -365,7 +365,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean deep blacks and protected highlights; no fill light lifting the shadows.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hard-Shadow Street Geometry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hard-shadow street geometry: exposure set for the sunlit patches so everything else falls into solid black shapes, and the subject steps into the light. Carry it through subject in a slice of light, solid black shadow shapes, hard sun, long cast shadows, underexposed surroundings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'subject in a slice of light; solid black shadow shapes; hard sun; long cast shadows; underexposed surroundings',
     },
@@ -400,7 +400,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'In-camera optical overlap, not a digital double exposure or blend-mode composite.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Reflection-Layered Street as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Reflection-layered street photography: shooting through window glass so the room behind and the street reflected on it overlap in one ambiguous frame. Carry it through through-glass layering, reflected street over interior, semi-transparent overlap, glass flaws, ambiguous depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'through-glass layering; reflected street over interior; semi-transparent overlap; glass flaws; ambiguous depth',
     },
@@ -435,7 +435,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Optical motion blur with a genuinely sharp anchor, not a digital radial blur.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Slow-Shutter Crowd Drag as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Slow-shutter drag: a quarter to one second exposure where one still subject stays sharp while everything moving streaks around it. Carry it through one sharp still subject, streaked moving crowd, quarter-second exposure, ghosted figures, stillness versus flow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'one sharp still subject; streaked moving crowd; quarter-second exposure; ghosted figures; stillness versus flow',
     },
@@ -470,7 +470,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Real optical split with refraction at the waterline, not a stitched composite.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Over-Under Split Shot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Over-under split shot: a dome port held half in the water, so the waterline cuts the frame and shows the world above and below at once. Carry it through waterline splits the frame, above and below at once, dome droplets, underwater caustics, subject across both halves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'waterline splits the frame; above and below at once; dome droplets; underwater caustics; subject across both halves',
     },
@@ -505,7 +505,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Medium-format precision and restraint; no dramatic grading, wide-angle distortion or candid blur.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Documentary Typology Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Documentary typology portrait: a medium-format frontal full-length portrait of a person as their trade, one of an imagined series, with no drama in light or pose. Carry it through frontal full-length stance, direct gaze, defining tool in hand, even overcast light, centered symmetrical frame. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'frontal full-length stance; direct gaze; defining tool in hand; even overcast light; centered symmetrical frame',
     },
@@ -539,7 +539,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Aerial survey clarity with haze falloff; distinct from a straight-down drone view and from tilt-shift miniature blur.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Low Oblique Aerial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Low oblique aerial: a camera in a helicopter or small plane looking down at 30–45 degrees from a few hundred meters, showing relief, depth and often the horizon. Carry it through 30–45 degree downward angle, raking dawn light, terrain relief, distant haze and horizon, tiny human scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         '30–45 degree downward angle; raking dawn light; terrain relief; distant haze and horizon; tiny human scale',
     },
@@ -575,7 +575,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Natural exposure favoring the lit interior; no flash and no staged eye contact.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Frame-Within-Frame Observational as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Observational frame-within-frame: the photographer stays in the dark next room and records life through a doorway, window or arch, unnoticed. Carry it through dark doorway or arch frame, subject lit beyond, unseen observer, small centered subject, straight verticals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'dark doorway or arch frame; subject lit beyond; unseen observer; small centered subject; straight verticals',
     },
@@ -609,7 +609,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Soft darkroom print; distinct from gritty high-contrast street photography.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Humanist Reportage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Humanist reportage: tender black-and-white photographs of ordinary people at eye level with a 50 mm lens, finding dignity and gentle humor in everyday life. Carry it through tender everyday moment, soft grey monochrome, 50 mm eye level, overcast light, gentle humor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'tender everyday moment; soft grey monochrome; 50 mm eye level; overcast light; gentle humor',
     },
@@ -641,7 +641,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Honest digital high-ISO noise and soft focus falloff; no flash, no noise reduction smear.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies High-ISO Night Reportage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "High-ISO night reportage: handheld at ISO 6400–12800 with no flash, using only the practical light of fires, lamps and windows. Carry it through no flash, practical light pools, high-ISO noise, shallow handheld focus, deep blue-black shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'no flash; practical light pools; high-ISO noise; shallow handheld focus; deep blue-black shadows',
     },

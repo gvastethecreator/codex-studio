@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Vertical card with one impossible focal geometry, warped devotional symmetry, and strong scale tension.
   atmosphere_and_mood: Vast, sacred, alien, helpless, quiet, and ominous.
   rendering_and_quality: Clean dark fantasy illustration with graphic void design, controlled cosmic texture, and no tentacle-cliche overload.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cosmic Chapel Horror as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Cosmic horror folded into medieval chapel language: void geometry, warped arches, starless halos, impossible relics, and religious scale pressure. Carry it through void chapel geometry, non-Euclidean arches, starless halos, bone and violet palette, cosmic devotional dread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: void chapel geometry; non-Euclidean arches; starless halos; bone and violet palette; cosmic devotional dread; clean black design
 avoidRules:
   - tentacle wallpaper

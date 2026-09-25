@@ -28,7 +28,7 @@ visualDna:
   camera_and_composition: Strict side-on profile view at subject height, the subject a little behind center with lead room in the direction of travel.
   atmosphere_and_mood: Sustained speed and a steady, flowing momentum.
   rendering_and_quality: Crisp subject, uniformly directional background streaks, no radial speed lines.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Panning Background Streak Frame as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Anime tracking pan: the camera moves alongside the subject at its speed, so the subject is drawn sharp while the background smears into long horizontal color streaks. Carry it through sharp subject on streaked background, horizontal color bands, side-on profile view, lead room ahead, no radial speed lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: sharp subject on streaked background; horizontal color bands; side-on profile view; lead room ahead; no radial speed lines
 avoidRules:
   - added opponent

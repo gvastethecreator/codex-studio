@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Patient, fragile, colorful and calm, coming from the handmade or toy quality.
   rendering_and_quality: Photoreal craft-object rendering with believable scale, material detail and construction evidence.
   key_features: layered colored sand; glass
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sand Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Sand art: colored sand layered in a glass bottle into patterns and scenes. Carry it through layered colored sand, glass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo or trademarked toy likeness
   - readable packaging text

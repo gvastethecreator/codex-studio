@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Hidden and busy, the secret underground half of an ordinary place.
   rendering_and_quality: Model-like cross-section with clean cut edges; no insects, larvae or creatures in the cavities.
   key_features: vertical earth cross-section; capillary root branching; layered soil strata; rounded cavities; amber gel pockets
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Subterranean Bio-Cutaway as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Sculpted earth cross-section: a handmade cutaway model sliced through soil, showing capillary root branching, layered strata and rounded cavities with amber gel pockets. Carry it through vertical earth cross-section, capillary root branching, layered soil strata, rounded cavities, amber gel pockets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo on parts
   - readable text

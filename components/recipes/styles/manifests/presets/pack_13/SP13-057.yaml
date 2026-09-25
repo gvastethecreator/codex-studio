@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Wide still frames with strong window geometry, arranged so the subject still reads at card size.
   atmosphere_and_mood: Nostalgic, bittersweet, quiet and warm, driven by the construction, color and rhythm.
   rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Afterschool Golden Hour Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Afterschool golden hour anime: long orange light through windows, dust motes and long shadows at the end of the day. Carry it through orange shafts, long shadows, dust motes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: orange shafts; long shadows; dust motes
 avoidRules:
   - existing anime character likeness

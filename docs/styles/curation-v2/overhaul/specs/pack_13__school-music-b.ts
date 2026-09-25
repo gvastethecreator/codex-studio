@@ -68,7 +68,7 @@ const spec: Spec = {
       briefs: [
         'Rooftop wind anime frame of a young tower guard leaning into a strong wind on castle battlements, cloak and hair streaming, a paper kite torn loose and flying away, huge clouds racing across a bright sky. No readable text or logo.',
         'Anime frame of two friends on a school rooftop holding their skirts and jackets against gusts, laughing, fence rattling. No readable text or logo.',
-        'Anime frame of a witch standing on a windmill roof, hat flying off, seeds and leaves swirling past. No readable text or logo.',
+        'Rooftop wind anime frame of a young witch standing on a windmill roof as her hat flies off, seeds and autumn leaves swirling past, the sails turning and the sky racing with clouds. No readable text or logo.',
       ],
     },
     {

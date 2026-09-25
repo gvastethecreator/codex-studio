@@ -31,10 +31,7 @@ visualDna:
     Clean edge hierarchy, low-noise detail, stable features, no bloom.
   key_features: >-
     Fine rounded contour, pale aqua-blue, soft cel transitions, measured open space
-  creative_brief: >-
-    Apply a visual treatment centered on fine rounded contour, pale aqua-blue, soft cel
-    transitions, measured open space. Preserve the exact subject, action, count, age,
-    costume, setting, camera, and mood. Add nothing outside the prompt.
+  creative_brief: "Apply a visual treatment centered on fine rounded contour, pale aqua-blue, soft cel transitions, measured open space. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested camera; the sky body occupies a large part of the frame to set the world instantly.
   atmosphere_and_mood: Lonely and awe-struck, the quiet of a place no one was meant to see.
   rendering_and_quality: Physically based atmospheric scattering with haze layers and crisp near-field regolith detail.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Exoplanet Surface Environment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Exoplanet surface environment render: alien terrain under a strange sky, a giant ringed planet or twin suns hanging above, thin atmosphere scattering odd colors. Carry it through giant sky planet or twin suns, double colored shadows, non-Earth palette, regolith dust, atmospheric haze layers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: giant sky planet or twin suns; double colored shadows; non-Earth palette; regolith dust; atmospheric haze layers
 avoidRules:
   - franchise likeness

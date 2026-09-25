@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Understated authority and reflective calm, power shown without strain or noise.
   rendering_and_quality: Exact contours and a quiet palette, geometry lines thin and legible with no glyphs.
   key_features: concentric geometric light rings; pale cyan and parchment; fine exact outline; open quiet spacing; soft diffuse light
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pale Calm Spell Geometry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Quiet fantasy anime: fine exact outlines, pale matte color, and magic drawn as thin concentric rings and polygons of light, precise and unhurried. Carry it through concentric geometric light rings, pale cyan and parchment, fine exact outline, open quiet spacing, soft diffuse light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

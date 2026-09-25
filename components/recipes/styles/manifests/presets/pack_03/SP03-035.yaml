@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Grounded and believable, the object truly belonging somewhere.
   rendering_and_quality: Image-based lighting with correct reflections; no mismatched studio look.
   key_features: image-based lighting; environment in reflections; matched sun hotspot; environment-derived color; grounded shadows
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies HDRI Environment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "HDRI environment lighting: a captured 360-degree environment lights the subject and appears in every reflection, so light and reflections match a real place. Carry it through image-based lighting, environment in reflections, matched sun hotspot, environment-derived color, grounded shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the geometry
   - adding a new environment

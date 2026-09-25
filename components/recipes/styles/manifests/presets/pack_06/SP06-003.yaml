@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Bright, direct and sunny, energy carried by bold color contrast.
   rendering_and_quality: Hard, clean edges between opaque layers, no soft blending or glazing, color fields even from edge to edge.
   key_features: opaque hard-edged color shapes; two or three flat value steps; complementary high-key palette; satin-matte acrylic skin; crisp colored cast shadows
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Acrylic (Modern) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Contemporary acrylic painting: fast-drying opaque color laid in clean flat shapes with taped or hard edges, layered one over another without blending. Carry it through opaque hard-edged color shapes, two or three flat value steps, complementary high-key palette, satin-matte acrylic skin, crisp colored cast shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - changing the requested framing

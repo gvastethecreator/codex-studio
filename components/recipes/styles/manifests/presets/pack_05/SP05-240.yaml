@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Rebellious, loud and joyful, a riot of shards moving to a three-beat rhythm.
   rendering_and_quality: Lineless vector facets with clean overlaps, bounded color fields and no soft glow or gradients.
   key_features: lineless triangular facets; complementary-colored shadow shards; ember orange, yellow and cyan triad; translucent shard overlaps; counter-slanting background triangles
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tri-Fire Riot Geometry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Lineless triangular color-facet animation: forms built from flat translucent triangles, with shadows cut as complementary-colored shards instead of darker values. Carry it through lineless triangular facets, complementary-colored shadow shards, ember orange, yellow and cyan triad, translucent shard overlaps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

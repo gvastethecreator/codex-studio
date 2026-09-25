@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Witty and cool, jazz-age rhythm in a few elegant shapes.
   rendering_and_quality: Mid-century graphic design finish; not realistic or 3D.
   key_features: flat geometric reduction; angular silhouettes; limited mustard-teal palette; negative space; dry brush texture
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mid-Century Modernist Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Mid-century modernist animation: 1950s design-led cartoons with flat geometric shapes, angular silhouettes and limited movement. Carry it through flat geometric reduction, angular silhouettes, limited mustard-teal palette, negative space, dry brush texture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - exact studio character copy
   - franchise likeness

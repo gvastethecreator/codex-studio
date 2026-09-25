@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Clinical, watchful and judgemental, the feeling of being assessed.
   rendering_and_quality: Clean anime line under a scanline overlay, two-value duotone, crisp bracket marks, and no letters or numerals.
   key_features: cyan-slate duotone; fixed-pitch scanlines; corner bracket marks without text; interlace doubling; single red signal
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Surveillance Verdict Grid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Surveillance-feed anime rendering: cold cyan duotone, fine horizontal scanlines at a fixed pitch, and thin ruled bracket marks framing forms without any characters. Carry it through cyan-slate duotone, fixed-pitch scanlines, corner bracket marks without text, interlace doubling, single red signal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

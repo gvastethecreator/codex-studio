@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Trippy, hypnotic, ecstatic and strange, driven by the construction, color and rhythm.
   rendering_and_quality: Clean psychedelic illustration, with clean, deliberate marks and no accidental noise.
   key_features: nested repeats; melting contours; paisley; vibrating colors
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Psychedelic Optical Recursion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Psychedelic recursion: melting patterns, paisley whorls and repeating concentric forms in vibrating colors. Carry it through nested repeats, melting contours, paisley, vibrating colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

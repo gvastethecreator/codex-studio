@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Abrupt and decisive, a clean break in continuity without any implied violence.
   rendering_and_quality: Confident calligraphic brushwork with readable forms; the red stroke is a graphic accent, never a wound or splatter.
   key_features: one or two carmine brush slashes; black sumi ink on rice paper; capillary feathering; diagonal split of the composition; non-gory red
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blood-Ink Severance Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Black sumi-ink seinen illustration cut through by one or two decisive carmine brushstrokes that split, taper and feather along an existing edge, like a seal-red slash across the page rather than blood. Carry it through one or two carmine brush slashes, black sumi ink on rice paper, capillary feathering, diagonal split of the composition, non-gory red. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

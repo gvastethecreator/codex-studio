@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Monumental and contemplative, slow precision that invites long looking.
   rendering_and_quality: Sheet-film clarity and tonality without digital sharpening halos or HDR; depth rendered through lens movements.
   key_features: view-camera detail; seamless tonal gradation; corrected verticals; tilted focus plane; invisible grain
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Large Format (4x5) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Large-format 4x5 sheet film: a view camera on a tripod recording extraordinary detail with smooth, seamless tonal gradation. Carry it through view-camera detail, seamless tonal gradation, corrected verticals, tilted focus plane, invisible grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - clean digital sensor look
   - generic stock-photo face

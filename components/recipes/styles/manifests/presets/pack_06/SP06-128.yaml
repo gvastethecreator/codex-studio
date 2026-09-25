@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; the subject emerges from a smoky enveloping ground.
   atmosphere_and_mood: Misty, ghostly and cinematic, forms appearing out of smoke.
   rendering_and_quality: Soft halo edges around lifted lights, silvery sheen, eraser marks visible; no line drawing and no hatching.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Graphite Powder Lift-Out as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Graphite powder lift-out: the paper first covered in a smooth grey-black layer of powdered graphite brushed on with a soft pad, then the image erased out of it in light. Carry it through brushed powdered graphite ground, erased lights with halos, eraser-pen sharp highlights, silvery sheen, forms emerging from haze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: brushed powdered graphite ground; erased lights with halos; eraser-pen sharp highlights; silvery sheen; forms emerging from haze
 avoidRules:
   - photo

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Flat paper, rosette patterns arranged to shape the subject.
   atmosphere_and_mood: Hypnotic and precise, patterns blooming from a spinning wheel.
   rendering_and_quality: Real pen-on-paper spirals with slight ink skips, and no brand name.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gear-Ring Spiral Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Gear-ring spiral drawing: looping hypotrochoid patterns drawn with a pen through toothed plastic wheels, layered in several colors to form the subject. Carry it through looping hypotrochoid rosettes, gel-pen colors, overlapping loop density, slipped-wheel wobble, white paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: looping hypotrochoid rosettes; gel-pen colors; overlapping loop density; slipped-wheel wobble; white paper
 avoidRules:
   - photorealistic rendering

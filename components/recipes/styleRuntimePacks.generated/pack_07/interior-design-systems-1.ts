@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'flush handle-less joinery; shadow-gap skirting; warm mineral white limewash; seamless microcement floor; single pale oak accent',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Modern Minimalist as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Modern minimalist interior built from flush planes: handle-less push-latch joinery, shadow-gap skirting, recessed doors and one pale oak element against microcement and limewash. Carry it through flush handle-less joinery, shadow-gap skirting, warm mineral white limewash, seamless microcement floor, single pale oak accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'riveted steel trusses; raw soot-marked brick; steel-framed factory glazing; gridded window shadow; exposed ducts and conduit',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Industrial Loft as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Industrial loft conversion: a former warehouse shell with riveted steel trusses, cast-iron columns, raw brick and steel-framed factory glazing left exposed, furnished sparingly inside it. Carry it through riveted steel trusses, raw soot-marked brick, steel-framed factory glazing, gridded window shadow, exposed ducts and conduit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -85,7 +85,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'tapered splayed legs; book-matched walnut veneer; low horizontal proportion; mustard and teal tweed accents; slatted wood divider',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mid-Century Modern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Mid-century modern interior: low horizontal lines, walnut and teak casework on tapered splayed legs, molded plywood curves, open plan with a floating room divider. Carry it through tapered splayed legs, book-matched walnut veneer, low horizontal proportion, mustard and teal tweed accents, slatted wood divider. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -113,7 +113,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'scrubbed pale pine; layered wool and sheepskin; many small warm light points; cool blue window dusk; rounded low furniture',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scandinavian Hygge as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Scandinavian hygge interior: pale scrubbed pine and birch, rounded low furniture, layered wool and linen, and many small warm light sources against long northern dusk. Carry it through scrubbed pale pine, layered wool and sheepskin, many small warm light points, cool blue window dusk, rounded low furniture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -141,7 +141,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'stacked flat-woven rugs; rattan and macramé; terracotta with indigo and turquoise; pierced-lantern dappled light; collected asymmetric layers',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bohemian Eclectic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bohemian eclectic interior: collected layers of kilims, woven rattan and macramé, carved wood, pottery and hanging plants, gathered over years rather than bought as a set. Carry it through stacked flat-woven rugs, rattan and macramé, terracotta with indigo and turquoise, pierced-lantern dappled light, collected asymmetric layers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -169,7 +169,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'tatami module floor; washi paper shoji light; unpainted hinoki post and beam; clay-plaster walls; single-object alcove',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Japanese Zen as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Japanese Zen interior built on the tatami module: sliding shoji and fusuma panels, an alcove for one object, exposed post-and-beam in unpainted hinoki or cedar. Carry it through tatami module floor, washi paper shoji light, unpainted hinoki post and beam, clay-plaster walls, single-object alcove. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -197,7 +197,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'book-matched marble veining; satin brass inlay; layered cove and pin-spot light; smoked glass; built-in custom millwork',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Luxury Penthouse as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Luxury penthouse interior: book-matched marble slabs, satin brass inlays, full-height glazing and custom millwork, everything built in and seamlessly joined. Carry it through book-matched marble veining, satin brass inlay, layered cove and pin-spot light, smoked glass, built-in custom millwork. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -225,7 +225,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'saddle-notched chinked logs; adze-marked beams; fieldstone hearth; forged iron hardware; firelight against cool window light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rustic Cabin as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Rustic cabin interior: saddle-notched round logs or hand-hewn beams with adze marks, a fieldstone hearth, and plank furniture made on site. Carry it through saddle-notched chinked logs, adze-marked beams, fieldstone hearth, forged iron hardware, firelight against cool window light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -253,7 +253,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'thick lime-rendered walls; rounded arches and deep reveals; worn terracotta floor; majolica tile accent; slatted shutter light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mediterranean Villa as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Mediterranean villa interior: thick lime-rendered masonry walls, rounded arches and deep window reveals, terracotta floors and handmade glazed tile, wrought iron. Carry it through thick lime-rendered walls, rounded arches and deep reveals, worn terracotta floor, majolica tile accent, slatted shutter light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -281,7 +281,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'surface-run cable bundles; salvaged metal panels; magenta and cyan neon spill; amber small practicals; cramped wide-angle frame',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyberpunk Apartment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cyberpunk apartment: a cramped high-rise unit retrofitted by its tenant, with salvaged panels, surface-run cable bundles, stacked hardware and colored light from signs outside. Carry it through surface-run cable bundles, salvaged metal panels, magenta and cyan neon spill, amber small practicals, cramped wide-angle frame. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -309,7 +309,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'carved mahogany with French polish; damask wallpaper; velvet and brocade layers; gaslight amber pools; encaustic tile floor',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Victorian Mansion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Victorian mansion interior: heavy carved mahogany and walnut, dado and picture rails, patterned wallpaper, brocade and velvet layered at high density. Carry it through carved mahogany with French polish, damask wallpaper, velvet and brocade layers, gaslight amber pools, encaustic tile floor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -337,7 +337,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'chrome tubular steel; white planes with one primary accent; linoleum floor; steel window grid; orthogonal composition',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bauhaus Interior as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bauhaus interior: functional workshop modernism with chrome tubular steel, flat white walls, glass, and furniture reduced to structure, circles and rectangles. Carry it through chrome tubular steel, white planes with one primary accent, linoleum floor, steel window grid, orthogonal composition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -365,7 +365,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'pattern on pattern; floor-to-ceiling gallery wall; jewel-tone velvet; high-gloss lacquered walls; gilded trim',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Maximalist Decor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Maximalist decor: more is more, with pattern on pattern, gallery-hung frames floor to ceiling, jewel-tone velvet, gilded trim and collected objects on every surface. Carry it through pattern on pattern, floor-to-ceiling gallery wall, jewel-tone velvet, high-gloss lacquered walls, gilded trim. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -393,7 +393,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'painted shiplap walls; reclaimed barn beams; sliding barn door on black rail; galvanized steel; washed linen',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Farmhouse Chic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Farmhouse chic interior: painted shiplap and board-and-batten walls, reclaimed barn beams, sliding barn doors on black strap rails, and practical country furniture freshened with white. Carry it through painted shiplap walls, reclaimed barn beams, sliding barn door on black rail, galvanized steel, washed linen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -421,7 +421,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'whiplash curve ornament; wrought iron vine balustrade; iridescent stained glass; carved organic mouldings; glass mosaic',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Art Nouveau Interior as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Art Nouveau interior: whiplash curves grow through structure and ornament alike, with carved wood, bent wrought iron, stained and opalescent glass, and mosaic. Carry it through whiplash curve ornament, wrought iron vine balustrade, iridescent stained glass, carved organic mouldings, glass mosaic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -449,7 +449,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'clashing geometric furniture volumes; squiggle and confetti patterns; plastic laminate; speckled terrazzo; pastel versus primary color clash',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Memphis Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Memphis design interior: playful anti-functional postmodern furniture built from clashing geometric volumes, laminate, terrazzo and bold squiggle patterns. Carry it through clashing geometric furniture volumes, squiggle and confetti patterns, plastic laminate, speckled terrazzo, pastel versus primary color clash. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -482,7 +482,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Quiet daylight photograph, crisp joinery, matte milk-paint finish, no decorative clutter or ornament.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Shaker Peg-Rail Interior as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Shaker plain-style interior: whitewashed plaster, a continuous wooden peg rail at head height, built-in drawer walls and ladder-back furniture hung up out of the way. Carry it through continuous peg rail with hung chairs, built-in drawer walls, milk-paint accent colors, oval bentwood boxes, ladder-back chairs with woven tape. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'continuous peg rail with hung chairs; built-in drawer walls; milk-paint accent colors; oval bentwood boxes; ladder-back chairs with woven tape',
     },
@@ -517,7 +517,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Soft photograph in low light with fine texture detail and gentle grain, no gloss, polish or symmetry.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wabi-Sabi Earthen Interior as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Wabi-sabi interior: rough earthen plaster, patched and repaired surfaces, weathered timber and unmatched handmade ceramics, beauty found in wear and asymmetry. Carry it through cracked clay plaster with straw, gold-seamed repaired ceramics, silver-weathered timber, single raking side light, off-centre asymmetry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'cracked clay plaster with straw; gold-seamed repaired ceramics; silver-weathered timber; single raking side light; off-centre asymmetry',
     },
@@ -552,7 +552,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Warm low-light photograph with oak ray flecks and hammer marks legible, no mass-produced gloss or Victorian clutter.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Arts and Crafts Inglenook as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Arts and Crafts interior: quarter-sawn oak panelling and exposed joinery with pegged tenons, a built-in inglenook hearth, hammered copper and stylised plant-pattern textiles. Carry it through quarter-sawn oak with ray fleck, exposed pegged through-tenons, built-in inglenook settle, hand-hammered copper, stylised vine-pattern textiles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'quarter-sawn oak with ray fleck; exposed pegged through-tenons; built-in inglenook settle; hand-hammered copper; stylised vine-pattern textiles',
     },
@@ -587,7 +587,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Glossy period colour photograph with clean highlights on curved plastic, no pixel-age screens or modern hardware.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Space-Age Fiberglass Interior as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Space-age interior of the late 1960s: molded white fiberglass shells, curved walls with rounded porthole openings, sunken conversation pits and wall-to-wall shag. Carry it through molded white fiberglass shells, sunken conversation pit, tangerine shag carpet, porthole openings, glowing ceiling domes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'molded white fiberglass shells; sunken conversation pit; tangerine shag carpet; porthole openings; glowing ceiling domes',
     },

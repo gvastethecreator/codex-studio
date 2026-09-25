@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'brushed satin aluminum; parallel brush lines; anisotropic highlight; machined edges',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Brushed Aluminum as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Brushed aluminum: satin metal with fine parallel brush lines and soft anisotropic highlights. Carry it through brushed satin aluminum, parallel brush lines, anisotropic highlight, machined edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -55,7 +55,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'gold leaf seams; crackle over red bole; burnished highlights',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gold Leaf as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Gold leaf: thin beaten gold applied over the target with visible leaf seams, crackle and burnish. Carry it through gold leaf seams, crackle over red bole, burnished highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -81,7 +81,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'verdigris patina; bright worn copper edges; teal and orange',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Copper Patina as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Copper patina: aged copper with verdigris green bloom over bronze-brown metal. Carry it through verdigris patina, bright worn copper edges, teal and orange. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -107,7 +107,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'marbled forged carbon; glossy clear coat; graphite and black',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carbon Fiber (Forged) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Forged carbon fiber: marbled chopped-fiber composite under a glossy clear coat. Carry it through marbled forged carbon, glossy clear coat, graphite and black. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -134,7 +134,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'board-formed concrete; tie holes; air voids; cool grey',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Concrete (Raw) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Raw concrete: board-formed or cast concrete with tie holes, air voids and grey mineral texture. Carry it through board-formed concrete, tie holes, air voids, cool grey. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -160,7 +160,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'aged brick bond; lime mortar joints; chipped edges; efflorescence',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Brick Wall (Aged) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Aged brick: fired clay bricks in a running or Flemish bond, with worn edges and lime mortar. Carry it through aged brick bond, lime mortar joints, chipped edges, efflorescence. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -187,7 +187,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'wet asphalt aggregate; mirror reflections; night sheen',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Asphalt (Wet) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Wet asphalt: dark aggregate surface slick with water and mirror reflections. Carry it through wet asphalt aggregate, mirror reflections, night sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -214,7 +214,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'molded plastic; parting lines; rounded edges; saturated color',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Plastic (Injection Molded) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Injection-molded plastic: smooth toy-like plastic with slight gloss, parting lines and rounded edges. Carry it through molded plastic, parting lines, rounded edges, saturated color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -241,7 +241,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'matte vulcanized rubber; molded ridges; scuffs',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rubber (Tire) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Vulcanized rubber: matte black rubber with molded tread-like ridges and slight wear. Carry it through matte vulcanized rubber, molded ridges, scuffs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -267,7 +267,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'radial spiderweb cracks; chipped glass edges; backlit fractures',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glass (Shattered) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Shattered glass: glass surfaces crazed with radial cracks and missing shards, held in place. Carry it through radial spiderweb cracks, chipped glass edges, backlit fractures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -294,7 +294,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'glossy latex skin; specular streaks; stretched surface',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Latex (Shiny) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Shiny latex: stretched glossy rubber film with sharp specular streaks. Carry it through glossy latex skin, specular streaks, stretched surface. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -322,7 +322,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'corrugated cardboard; exposed flutes; tape joints; creases',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cardboard as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cardboard: corrugated brown cardboard with exposed flutes, tape and crushed edges. Carry it through corrugated cardboard, exposed flutes, tape joints, creases. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -349,7 +349,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'bubble wrap cells; glinting highlights; wrapped folds',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bubble Wrap as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bubble wrap: clear plastic sheet with rows of air cells wrapped over the target. Carry it through bubble wrap cells, glinting highlights, wrapped folds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -377,7 +377,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'overlapping sequins; scattered sparkle; point-light glitter',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sequins as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sequins: overlapping sequins or paillettes covering the target and scattering light. Carry it through overlapping sequins, scattered sparkle, point-light glitter. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -404,7 +404,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'granulated cork; speckled texture; pinholes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cork Board as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cork: granulated cork board with speckled texture and soft pinholes. Carry it through granulated cork, speckled texture, pinholes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -431,7 +431,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'hook-and-loop panels; bristly hooks; fuzzy loops',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Velcro as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hook-and-loop fastener: dense nylon hooks and loops covering the target in fuzzy and bristly zones. Carry it through hook-and-loop panels, bristly hooks, fuzzy loops. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -459,7 +459,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'liquid mirror metal; ripples and beads; environment reflections',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mercury (Liquid Metal) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Liquid mercury: mirror liquid metal that pools, beads and ripples over the target. Carry it through liquid mirror metal, ripples and beads, environment reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -487,7 +487,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'white expanded foam; bead texture; hot-wire cuts',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Polystyrene (Styrofoam) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Polystyrene foam: white expanded foam with visible beads, carved edges and crumbs. Carry it through white expanded foam, bead texture, hot-wire cuts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -514,7 +514,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'plywood layered edges; birch faces; screw joints',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Plywood as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Plywood: laminated veneer sheets with visible ply edges and wood grain faces. Carry it through plywood layered edges, birch faces, screw joints. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -541,7 +541,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'pressed wood strands; OSB mosaic; rough edges',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies OSB Board as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Oriented strand board: pressed wood flakes in a chaotic mosaic of strands. Carry it through pressed wood strands, OSB mosaic, rough edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -568,7 +568,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'marbled linoleum; seams; soft sheen',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Linoleum Floor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Linoleum: smooth resilient sheet with marbled color flecks and slight sheen. Carry it through marbled linoleum, seams, soft sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -595,7 +595,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'chain-link diamond mesh; galvanized wire; backlit pattern',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chain Link Fence as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Chain link: woven steel wire diamond mesh forming the target's surfaces. Carry it through chain-link diamond mesh, galvanized wire, backlit pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -622,7 +622,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'twisted barbed wire; barbs; rust',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Barbed Wire as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Barbed wire: twisted wire with barbs wound into the target's shape. Carry it through twisted barbed wire, barbs, rust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -649,7 +649,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'solar cell grid; silver busbars; blue-black glass',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Solar Panel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Solar panel: photovoltaic cells with blue-black grid lines and glass surface. Carry it through solar cell grid, silver busbars, blue-black glass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

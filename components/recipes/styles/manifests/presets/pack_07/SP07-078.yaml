@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Relentless and mechanical, a place built for processes rather than people.
   rendering_and_quality: Precise hard-surface rendering with exact repetition; no concrete, no dusk sky, no gold.
   key_features: recursive cube-cell alcoves; conduit bundles on service frames; graphite panels; phosphor-green cell glow; deep one-point repetition
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cybernetic Hive Infrastructure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cybernetic hive infrastructure: recursive grids of cube-shell alcoves stacked on service frames, dense conduit bundles and graphite panels, each cell lit phosphor green. Carry it through recursive cube-cell alcoves, conduit bundles on service frames, graphite panels, phosphor-green cell glow, deep one-point repetition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - black and gold sci-fi palette by default
   - franchise ship or station likeness

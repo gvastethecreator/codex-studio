@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Intimate and playful, a close flash moment already fading into memory.
   rendering_and_quality: Instant-film softness and faded chemistry; no crisp digital detail and no drawn white frame.
   key_features: integral instant color; cyan-green shadows; creamy low-contrast highlights; close flash falloff; soft plastic lens
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Polaroid 600 as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Polaroid 600 integral instant film: a soft plastic-lens snapshot with built-in flash and the washed, dreamy color of instant chemistry — the emulsion look, not the print frame. Carry it through integral instant color, cyan-green shadows, creamy low-contrast highlights, close flash falloff, soft plastic lens. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - clean digital sensor look
   - generic stock-photo face

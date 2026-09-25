@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Full figure against a patterned or colorful background, keeping the full outfit silhouette and fit readable at card size.
   atmosphere_and_mood: Joyful, loud, eccentric and fearless, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Crisp pattern detail with rich saturation, with believable fabric weight, seams and fit detail.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Maximalist Print Clash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Maximalist print clash: many bold patterns and colors layered on purpose — florals with stripes, animal print with brocade — in a controlled riot. Carry it through three or more clashing prints, saturated color riot, brocade and printed silk, bold jewelry, controlled maximalism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: three or more clashing prints; saturated color riot; brocade and printed silk; bold jewelry; controlled maximalism
 avoidRules:
   - brand logo

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; long view down the pool or from the gallery, cubicle doors repeating along both sides.
   atmosphere_and_mood: Echoing, civic and bright, a public luxury of water.
   rendering_and_quality: Photograph with crisp tile joints, ripple reflections and gentle steam, no readable signs.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glazed-Tile Municipal Baths as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Municipal swimming baths of the early twentieth century: a long pool hall of glazed brick and tile under arched iron roof trusses, with changing cubicles lining a gallery around the water. Carry it through glazed brick with coloured tile bands, arched iron roof trusses, changing cubicles along a gallery, turquoise water, ripple reflections on tile. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: glazed brick with coloured tile bands; arched iron roof trusses; changing cubicles along a gallery; turquoise water; ripple reflections on tile
 avoidRules:
   - one-point corridor perspective as default

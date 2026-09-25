@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.
   atmosphere_and_mood: Retro, broadcast, charming and crude, coming from the medium itself.
   rendering_and_quality: Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Teletext Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Teletext mosaic: coarse 2×3 block graphics in eight bright colors on black. Carry it through teletext block cells, eight colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: teletext block cells; eight colors
 avoidRules:
   - readable text

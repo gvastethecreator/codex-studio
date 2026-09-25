@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Awkward and nostalgic, the early days of posting everything.
   rendering_and_quality: Low-resolution digital compact look with no readable date overlay.
   key_features: tiny-sensor noise; harsh on-camera flash; JPEG blocks; purple fringing; clipped highlights
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Early Digital (2000s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Early digital compact camera: a 2–3 megapixel point-and-shoot from the early 2000s with a tiny sensor, harsh flash and heavy JPEG compression. Carry it through tiny-sensor noise, harsh on-camera flash, JPEG blocks, purple fringing, clipped highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - illustration
   - painting

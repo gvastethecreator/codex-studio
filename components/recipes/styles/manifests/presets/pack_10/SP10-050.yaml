@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Rugged, clan-proud, warm and bold, carried by the pattern and its colors.
   rendering_and_quality: Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.
   key_features: tartan sett; twill diagonals
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tartan (Plaid) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Tartan: intersecting colored stripes forming a woven plaid sett. Carry it through tartan sett, twill diagonals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

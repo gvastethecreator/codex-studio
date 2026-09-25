@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Clear and satisfying, the hidden logic of an object laid open.
   rendering_and_quality: Precise CGI with parts neither overlapping nor randomly scattered, and no callouts, numbers or labels.
   key_features: parts floating along one assembly axis; even gaps; assembly order; thin alignment guides; no labels
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Exploded View as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Exploded-view render: the subject taken apart along its assembly axis, every component floating in order with even gaps that show how it fits together. Carry it through parts floating along one assembly axis, even gaps, assembly order, thin alignment guides, no labels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - multi-view asset sheet
   - fake labels

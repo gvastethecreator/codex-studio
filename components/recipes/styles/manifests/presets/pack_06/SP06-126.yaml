@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested subject and view; its parts shift out of register, with an eye drifting off the face or a hand growing too large.
   atmosphere_and_mood: Honest, awkward and funny, full of searching attention.
   rendering_and_quality: Continuous wandering line with misaligned features and overshoots; never corrected, never cleaned up.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blind Contour Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Blind contour drawing: a slow single pen line made while the eye follows the subject and never looks at the paper, so proportions drift and parts misalign. Carry it through slow wobbling single line, drifting proportions, misaligned features, overshooting joins, no shading. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: slow wobbling single line; drifting proportions; misaligned features; overshooting joins; no shading
 avoidRules:
   - photo

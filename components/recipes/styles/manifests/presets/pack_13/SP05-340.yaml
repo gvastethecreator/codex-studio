@@ -38,11 +38,7 @@ visualDna:
     Keep important silhouettes and joins legible; no watermark, unrequested text or interface.
   key_features: >-
     Tapered contour; delicate line weight; restrained shadow; muted richness; quiet refined tension.
-  creative_brief: >-
-    Apply this visual treatment to the requested content: Tapered contour; delicate line weight;
-    restrained shadow; muted richness; quiet refined tension. Preserve its identity, action,
-    materials, composition and requested tone; introduce no persona, scene, franchise cue or extra
-    motif.
+  creative_brief: "Apply this visual treatment to the requested content: Tapered contour; delicate line weight; restrained shadow; muted richness; quiet refined tension. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look

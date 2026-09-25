@@ -165,7 +165,7 @@ const spec: Spec = {
       briefs: [
         'Pyrography on a round birch slice with bark edge: a wolf howling at a moon over a pine forest, fine burned lines and stippled shading, scorched black sky. No readable text or logo.',
         'Woodburned panel of an old witch with a long pipe, wrinkles and hair burned in fine lines, the hot pen resting beside it with a curl of smoke. No readable text or logo.',
-        'Pyrography box lid of a dragon coiled around a castle, following the wood grain, deep charred shadows. No readable text or logo.',
+        'Pyrography on a wooden box lid showing a dragon coiled around a castle tower, burned lines following the wood grain, stippled mid-tones and deep charred shadows under its wings, a hot pen resting on the lid. No readable text or logo.',
       ],
     },
     {
@@ -187,7 +187,7 @@ const spec: Spec = {
       briefs: [
         'Close photograph of a scrimshaw carved bone showing a whaling ship attacked by a giant sea serpent, fine scratched lines filled with black ink, curved polished surface with age cracks. No readable text or logo.',
         'Scrimshaw powder horn engraved along its curve with a lighthouse on a cliff and a drowned sailor ghost rising from crosshatched waves, ink worn thin where hands held it. No readable text or logo.',
-        'Scrimshaw bone knife handle engraved with a mermaid skeleton holding a lantern, crosshatched shadows, yellowed bone. No readable text or logo.',
+        'Scrimshaw on a curved bone knife handle engraved with a mermaid skeleton holding up a lantern, fine crosshatched shadows filled with black ink, yellowed polished bone with age cracks. No readable text or logo.',
       ],
     },
     {
@@ -208,7 +208,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Gyotaku ink impression of a huge deep-sea anglerfish with long teeth, every scale and fin ray printed in black ink on thin mulberry paper, the eye painted by hand. No readable text or logo.',
-        'Gyotaku print of an octopus with tentacles spread, indigo ink, patchy pressure, suckers clearly impressed. No readable text or logo.',
+        'Gyotaku print of a large octopus with all eight tentacles spread across thin mulberry paper, indigo ink, patchy hand pressure, every sucker clearly impressed and one eye painted by hand. No readable text or logo.',
         'Gyotaku sheet with two ink impressions, a huge armored carp and a spider crab, printed in sumi black with one faint ghost pressing beside them, uneven ink and a hand-painted golden eye. No readable text or logo.',
       ],
     },

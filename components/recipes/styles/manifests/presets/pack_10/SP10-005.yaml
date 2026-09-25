@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Calm, pure, ordered and spiritual, driven by the construction, color and rhythm.
   rendering_and_quality: Crisp flat finish, with clean, deliberate marks and no accidental noise.
   key_features: black orthogonal grid; primary blocks; white fields
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies De Stijl Grid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "De Stijl grid: black orthogonal lines dividing white fields with a few primary color blocks. Carry it through black orthogonal grid, primary blocks, white fields. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Intimate and hushed, darkness pressing close around a small warm circle.
   rendering_and_quality: Clean low-light exposure with rich blacks, no gray noise.
   key_features: flame-only light; steep falloff; amber glow; velvety black; visible candle
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Candlelight as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Candlelight: small warm flames as the only source, falling off within an arm's length into velvety darkness. Carry it through flame-only light, steep falloff, amber glow, velvety black, visible candle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - generic stock-photo face
   - celebrity likeness

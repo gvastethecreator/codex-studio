@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Wide widescreen tableaux, heroic low angles, crowds of extras arranged in symmetrical ranks.
   atmosphere_and_mood: Grand and naive, mythic heroics staged with theatrical confidence.
   rendering_and_quality: Vintage widescreen color print where the props and painted skies read openly as props.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Peplum Sword-and-Sandal Epic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Peplum sword-and-sandal epic: late-1950s widescreen color films of mythic strongmen, painted skies and plaster temples. Carry it through painted skies, plaster temples, oiled strongmen, Eastmancolor gold and purple, widescreen tableaux. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: painted skies; plaster temples; oiled strongmen; Eastmancolor gold and purple; widescreen tableaux
 avoidRules:
   - watermark

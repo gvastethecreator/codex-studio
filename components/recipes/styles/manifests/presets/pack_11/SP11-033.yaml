@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Worn, practical, nostalgic and hands-on, from careful, purposeful drafting.
   rendering_and_quality: Precise technical drafting with consistent line weights and believable conventions.
   key_features: faded diazo sheet; creases; stains; pencil markups; workbench
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Faded Workshop Blueprint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Faded workshop blueprint: a real, used blueprint sheet photographed on a workbench, sun-faded, creased and marked up. Carry it through faded diazo sheet, creases, stains, pencil markups, workbench. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

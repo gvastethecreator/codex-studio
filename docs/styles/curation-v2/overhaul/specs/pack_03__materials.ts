@@ -138,7 +138,7 @@ const spec: Spec = {
       briefs: [
         'CGI groomed-fur study of a teapot covered in long silver fur, strands clumping around the spout, rim light glowing through the tips. No text or logo.',
         'CGI groomed-fur study of a tall snow-white owl with wind combing its feathers into flowing strands. No text or logo.',
-        'CGI groomed-fur study of an armchair covered in shaggy orange fur, flyaways catching window light. No text or logo.',
+        'CGI groomed-fur study of an armchair covered in long shaggy orange fur in an empty study, clumps parting where someone sat, flyaways catching warm window light and a rim glow along the back. No text or logo.',
       ],
     },
     'SP03-017': {
@@ -305,7 +305,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'CGI bronze study of a hare sitting upright, cast in bronze with verdigris pooled in its fur grooves and its ears polished bright where visitors touched them. No text or logo.',
-        'CGI bronze study of a lantern-bearing monk statue, green patina streaks running down his robe. No text or logo.',
+        'CGI bronze study of a monk statue carrying a lantern on a cloister plinth, green-blue patina streaks running down his robe from the rain, polished bright toes where pilgrims touch them. No text or logo.',
         'CGI bronze study of an octopus wrapped around an anchor, warm bronze highlights on the suckers. No text or logo.',
       ],
     },
@@ -328,7 +328,7 @@ const spec: Spec = {
       briefs: [
         'CGI marble study of a heavy draped cloak carved in white Carrara marble, soft folds glowing faintly translucent, grey veins running across the drapery. No text or logo.',
         'CGI marble study of a sleeping lion carved from grey-veined marble, polished mane and rasped paws. No text or logo.',
-        'CGI marble study of a knotted ship rope carved in gold-veined marble on a dock. No text or logo.',
+        'CGI marble study of a heavy knotted ship rope carved in gold-veined white marble lying coiled on a stone dock, chisel-crisp fiber twists and a faint translucency at the thin ends. No text or logo.',
       ],
     },
   },
@@ -356,7 +356,7 @@ const spec: Spec = {
       briefs: [
         "CGI thin-film iridescent study of a knight's helmet whose steel carries an oil-slick coating shifting from teal to magenta to gold across its curves. No text or logo.",
         'CGI thin-film study of a ceramic vase coated like a beetle shell, green and violet flopping as the surface turns. No text or logo.',
-        'CGI thin-film study of a dagger blade with a rainbow temper coating along its edge. No text or logo.',
+        'CGI thin-film study of a dagger laid on black velvet, a rainbow temper coating flowing along its edge from straw gold through purple to deep blue as the blade curves toward the tip. No text or logo.',
       ],
     },
     {
@@ -382,7 +382,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'CGI molten-metal study of a crown made of glowing liquid gold on an anvil, white-yellow at its points and cooling to a dark red crust at the base, sparks and heat haze. No text or logo.',
-        'CGI molten-metal study of a rose poured from glowing iron, petals cracking as they cool. No text or logo.',
+        'CGI molten-metal study of a rose poured from glowing iron on a blacksmith anvil, white-hot petal tips cracking as they cool into a dark red crust, sparks and heat shimmer above. No text or logo.',
         'CGI molten-metal study of a chess king dripping incandescent metal onto a stone board, lighting the board orange. No text or logo.',
       ],
     },
@@ -409,7 +409,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'CGI opal study of a small dragon made of black opal curled on a velvet cloth, patches of fiery red, green and violet flashing across its scales. No text or logo.',
-        'CGI opal study of a seashell in milky opal with harlequin color patches. No text or logo.',
+        'CGI opal study of a spiral seashell carved from milky white opal resting on dark sand, harlequin patches of red, green and blue flashing across the whorls as a lamp moves overhead. No text or logo.',
         'CGI opal study of an owl figurine in polished opal glowing with blue and green flashes. No text or logo.',
       ],
     },
@@ -436,8 +436,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'CGI gummy-candy study of a knight on horseback made of translucent cherry and lime gummy, sugar crystals on the helmet, backlight glowing through the horse, colored shadows on the table. No text or logo.',
-        'CGI gummy-candy study of a skull made of grape gummy with tiny trapped bubbles. No text or logo.',
-        'CGI gummy-candy study of a castle tower in orange gummy slightly squished at the base. No text or logo.',
+        'CGI gummy-candy study of a grinning skull made of translucent grape gummy on a white plate, tiny trapped bubbles, a sugar dusting on the crown and purple light glowing through onto the table. No text or logo.',
+        'CGI gummy-candy study of a castle tower in orange gummy slightly squished and bulging at its base, a gummy dragon wrapped around the top, backlight making both glow like stained glass. No text or logo.',
       ],
     },
     {
@@ -464,8 +464,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'CGI pearlescent flake paint study of a suit of armor finished in candy violet paint flopping to teal at its edges, metal flakes glittering under point lights, deep clear coat reflections. No text or logo.',
-        'CGI flake-paint study of a grand piano in deep red candy paint with gold flakes. No text or logo.',
-        'CGI flake-paint study of a rocking horse in pearl white flopping to pink. No text or logo.',
+        'CGI flake-paint study of a grand piano finished in deep red candy paint packed with gold flakes, the lid open, showroom point lights glittering under a thick mirror-like clear coat. No text or logo.',
+        'CGI flake-paint study of an antique rocking horse painted pearl white flopping to pink along its curves, fine metallic flakes glittering in the mane and a glossy clear coat reflecting a nursery window. No text or logo.',
       ],
     },
     {
@@ -491,7 +491,7 @@ const spec: Spec = {
       briefs: [
         'CGI aerogel study of a stag head made of silica aerogel mounted on a dark wall, a ghostly pale blue haze with blurred edges, faint amber where the lamp shines through. No text or logo.',
         'CGI aerogel study of a brick of aerogel shaped like a book resting on a flower without bending it. No text or logo.',
-        'CGI aerogel study of a hand-sized dragon egg glowing faint blue in a black room. No text or logo.',
+        'CGI aerogel study of a hand-sized dragon egg made of silica aerogel resting on a black cloth in a dark room, a ghostly pale blue haze with no hard edges, a candle behind it glowing amber through the middle. No text or logo.',
       ],
     },
     {

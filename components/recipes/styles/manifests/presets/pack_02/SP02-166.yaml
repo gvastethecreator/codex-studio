@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Glass seen straight on, the drawing centered, vague shapes behind the fog.
   atmosphere_and_mood: Fleeting and intimate, a picture that will vanish in a minute.
   rendering_and_quality: Real condensation and drips; no readable words written in the fog.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fogged Mirror Finger Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Fogged mirror finger drawing: a picture traced with a fingertip in the steam on a bathroom mirror or window, clear lines cut through white fog. Carry it through fingertip lines in fog, drips running down, milky white glass, clear view through the lines, ephemeral. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: fingertip lines in fog; drips running down; milky white glass; clear view through the lines; ephemeral
 avoidRules:
   - photorealistic rendering

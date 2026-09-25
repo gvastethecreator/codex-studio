@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Rare, ceremonial, theatrical and imperious, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Crisp garment edges, believable weight and stiffness of fabric, runway-level finish.
   key_features: sculptural couture volume; stiffened silk and organza; hand embellishment; single dramatic silhouette; sculpted editorial shadow
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Haute Couture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Haute couture: one sculptural, hand-built garment treated as wearable architecture, where volume, cut and handwork are the spectacle. Carry it through sculptural couture volume, stiffened silk and organza, hand embellishment, single dramatic silhouette, sculpted editorial shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - readable label text

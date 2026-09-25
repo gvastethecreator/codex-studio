@@ -30,7 +30,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'inked cels over painted backgrounds; multiplane depth; storybook palette; airbrushed cel shadow; luminous highlights',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Golden Age Multiplane Cel Feature as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Golden-age cel feature animation: hand-inked characters on clear cels over lush watercolor and gouache backgrounds, shot through a multiplane camera for layered depth. Carry it through inked cels over painted backgrounds, multiplane depth, storybook palette, airbrushed cel shadow, luminous highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -59,7 +59,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'hand-painted landscapes; small cel figures; wind in grass; dappled light; towering cumulus',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Painterly Nature Anime Feature as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Painterly nature anime feature: simple cel characters set inside richly hand-painted, breathing landscapes of grass, cloud and forest. Carry it through hand-painted landscapes, small cel figures, wind in grass, dappled light, towering cumulus. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -89,7 +89,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'rounded appealing CG shapes; warm bounce light; subsurface skin glow; expressive faces; shallow cinematic depth',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Family Feature CG Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Family feature CG animation: stylized 3D characters with appealing rounded shapes, expressive faces and warm cinematic lighting. Carry it through rounded appealing CG shapes, warm bounce light, subsurface skin glow, expressive faces, shallow cinematic depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -117,7 +117,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'handcrafted puppets; replacement-face seams; miniature practical lights; macro shallow focus; tactile fabrics',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Moody Miniature Stop-Motion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Moody miniature stop-motion: handcrafted puppets with replacement faces animated frame by frame in dark, detailed miniature sets. Carry it through handcrafted puppets, replacement-face seams, miniature practical lights, macro shallow focus, tactile fabrics. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -149,7 +149,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'squash-and-stretch; smear frames; painted stylized backgrounds; held take poses; dust-cloud impacts',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Golden Age Slapstick Cartoon as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Golden-age slapstick cartoon: elastic cel characters with extreme squash-and-stretch and smear frames against stylized painted backgrounds. Carry it through squash-and-stretch, smear frames, painted stylized backgrounds, held take poses, dust-cloud impacts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -177,7 +177,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'boneless rubber-hose limbs; pie-cut eyes; black and white; objects with faces dancing; film flicker',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 1930s Rubber Hose Cartoon as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "1930s rubber-hose cartoon: black-and-white animation with boneless bouncing limbs, pie-cut eyes and everything alive and dancing to the beat. Carry it through boneless rubber-hose limbs, pie-cut eyes, black and white, objects with faces dancing, film flicker. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -204,7 +204,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'pastel-neon cel palette; airbrushed highlights; sparkle overlays; flowing hair; VHS softness',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Anime (90s Aesthetic) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "90s TV anime: hand-painted cel animation with pastel-and-neon color, sparkle overlays and the soft grain of a broadcast tape. Carry it through pastel-neon cel palette, airbrushed highlights, sparkle overlays, flowing hair, VHS softness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -234,7 +234,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'halftone dot shading; off-register color fringes; ink lines over 3D; stepped frame rate; extreme perspective',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Comic Offset 3D Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Comic offset 3D animation: 3D characters and cities finished like a printed comic page, with halftone dots, ink lines and off-register color. Carry it through halftone dot shading, off-register color fringes, ink lines over 3D, stepped frame rate, extreme perspective. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -260,7 +260,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'flat geometric reduction; angular silhouettes; limited mustard-teal palette; negative space; dry brush texture',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mid-Century Modernist Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Mid-century modernist animation: 1950s design-led cartoons with flat geometric shapes, angular silhouettes and limited movement. Carry it through flat geometric reduction, angular silhouettes, limited mustard-teal palette, negative space, dry brush texture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -290,7 +290,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'flat construction-paper pieces; scissor edges; small drop shadows; frontal staging; paper fibers',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Construction Paper Cutout Cartoon as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Construction-paper cutout cartoon: flat pieces of colored paper cut with scissors and moved frame by frame, casting small drop shadows. Carry it through flat construction-paper pieces, scissor edges, small drop shadows, frontal staging, paper fibers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -314,7 +314,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'traced live-action motion; posterized color blocks; line boil; flat shadow bands; uncanny realism',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rotoscoping as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Rotoscoped animation: live-action footage traced frame by frame into posterized flat shapes with trembling outlines. Carry it through traced live-action motion, posterized color blocks, line boil, flat shadow bands, uncanny realism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -338,7 +338,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'folded paper models; crease shadows; visible paper thickness; soft directional light; diorama depth',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Papercraft Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Papercraft animation: folded and cut paper models animated in stop motion, with creases, thickness and soft paper shadows. Carry it through folded paper models, crease shadows, visible paper thickness, soft directional light, diorama depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -363,7 +363,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'vector symbols; tweened motion trails; radial gradients; crisp anti-aliased edges; side-on staging',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Flash Animation (2000s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "2000s Flash web animation: vector characters built from reusable symbols, tweened motion, radial gradients and crisp anti-aliased edges. Carry it through vector symbols, tweened motion trails, radial gradients, crisp anti-aliased edges, side-on staging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -388,7 +388,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'painted frame by frame; swirling brush direction; impasto ridges; canvas weave; complementary color',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oil Paint Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Oil-paint animation: every frame painted in thick oils on canvas, so brushstrokes move and swirl from frame to frame. Carry it through painted frame by frame, swirling brush direction, impasto ridges, canvas weave, complementary color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -414,7 +414,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'indexed palette; pixel grid; stepped shading ramps; dithering; sprite animation frames',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pixel Art Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pixel-art animation: 16-bit sprites and tiles with a limited indexed palette, animated in a few hand-placed frames. Carry it through indexed palette, pixel grid, stepped shading ramps, dithering, sprite animation frames. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -447,7 +447,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp cut-paper edges on a luminous ground; not a photographic silhouette.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Shadow-Puppet Silhouette Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Silhouette cutout animation: jointed black paper figures cut with fine lace-like detail, animated on a backlit glass table against glowing color. Carry it through jointed black paper figures, backlit color gradient, lace-cut detail, strict profiles, layered silhouette scenery. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'jointed black paper figures; backlit color gradient; lace-cut detail; strict profiles; layered silhouette scenery',
     },
@@ -477,7 +477,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Pinscreen tonality with no hard outlines; not a photograph or drawing.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pinscreen Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pinscreen animation: an image formed by thousands of pins pushed to different depths and lit from the side, so their shadows create soft grey tones. Carry it through pin-shadow tones, velvety grey stipple, forms emerging from darkness, no outlines, oblique light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'pin-shadow tones; velvety grey stipple; forms emerging from darkness; no outlines; oblique light',
     },
@@ -509,7 +509,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Melancholic and restless, memory that never quite disappears.',
       rendering_and_quality: 'Real charcoal on paper look; not a clean pencil sketch.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Charcoal Erasure Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Charcoal erasure animation: a single charcoal drawing altered, erased and redrawn under the camera, leaving ghost traces of every earlier frame. Carry it through ghost traces of earlier frames, eraser streaks, smudged charcoal, paper tooth, fixed drawing under camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'ghost traces of earlier frames; eraser streaks; smudged charcoal; paper tooth; fixed drawing under camera',
     },
@@ -543,7 +543,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Broadcast cel look with slight dust; original characters, no existing show designs.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 70s Limited TV Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "70s limited TV animation: budget television cartoons with held cels, only mouths and eyes moving, thick outlines and painted backgrounds that repeat in pans. Carry it through held cels with moving mouths, thick outlines, repeating painted background, flat saturated color, cel dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'held cels with moving mouths; thick outlines; repeating painted background; flat saturated color; cel dust',
     },
@@ -577,7 +577,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Handmade celluloid texture; no sprocket holes drawn and no digital vector.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Direct-on-Film Scratch Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Direct-on-film animation: images scratched, painted and inked straight onto celluloid without a camera, so every frame vibrates with hand-made marks. Carry it through scratched white lines on black, translucent dyes, jittering hand marks, projector glow, bold simple figures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'scratched white lines on black; translucent dyes; jittering hand marks; projector glow; bold simple figures',
     },

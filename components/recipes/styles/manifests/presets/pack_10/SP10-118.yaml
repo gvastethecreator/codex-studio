@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.
   atmosphere_and_mood: Earthy, handcrafted, intricate and warm, carried by the pattern and its colors.
   rendering_and_quality: Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Batik Wax Resist as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Batik: wax-resist dyed cloth with crackled lines and layered colors. Carry it through wax-resist motifs, crackle lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: wax-resist motifs; crackle lines
 avoidRules:
   - readable text

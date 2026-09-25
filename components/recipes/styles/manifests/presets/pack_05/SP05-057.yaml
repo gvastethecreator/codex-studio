@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Wistful, tender and bittersweet, beauty glimpsed while things fall apart.
   rendering_and_quality: Clean silhouettes softened by diffusion bloom, blush-gradient shadow edges, sparkle dust and flare ghosts; never glossy or harsh.
   key_features: diffusion-filter bloom; hexagonal lens-flare ghosts; blush-gradient shadow edges; rose-apricot and blue-gray palette; floating sparkle dust
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sleek Collapse Romance as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Soft-focus romantic digital anime: diffusion-filter bloom around every highlight, hexagonal lens-flare ghosts, and cel shading with gradient blush tones at shadow edges. Carry it through diffusion-filter bloom, hexagonal lens-flare ghosts, blush-gradient shadow edges, rose-apricot and blue-gray palette, floating sparkle dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

@@ -31,7 +31,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'three or four value groups; hard round and chalk brush strokes; detail only at the focal point; canvas edges left as block-in; one complementary accent',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Value-Block Speedpaint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Digital speedpaint finished in under an hour: big flat value blocks laid with a hard round and a textured chalk brush, detail placed only at the focal point. Carry it through three or four value groups, hard round and chalk brush strokes, detail only at the focal point, canvas edges left as block-in, one complementary accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -59,7 +59,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'invisible plate seams; five or more haze planes; one shared light direction; photographic near detail; photoreal finish',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Matte Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Film matte painting: a photoreal digital painting made to extend a live-action plate, with invisible seams between painted architecture, photo texture and sky. Carry it through invisible plate seams, five or more haze planes, one shared light direction, photographic near detail, photoreal finish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -87,7 +87,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'front, three-quarter, side and back views; shared height guide lines; flat color plus occlusion; expression head row; unlabeled palette chips',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Character Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Production character turnaround: clean line with flat color and a single occlusion pass, one design shown in front, three-quarter, side and back views. Carry it through front, three-quarter, side and back views, shared height guide lines, flat color plus occlusion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -115,7 +115,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'readable route through the space; lit landmark; tiny scale figure; warm-to-cool depth palette; semi-finished paint',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Environment Concept as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Environment design painting: a place designed for production in semi-finished digital paint, with clear paths, a landmark and a tiny figure for scale. Carry it through readable route through the space, lit landmark, tiny scale figure, warm-to-cool depth palette, semi-finished paint. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -144,7 +144,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'alcohol marker on grey paper; white gouache highlights; construction ellipses; hero three-quarter plus side elevation; one bold body color',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vehicle Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Industrial vehicle design sketch: alcohol marker and colored pencil on grey toned paper, with confident ellipses, construction lines and white gouache highlights. Carry it through alcohol marker on grey paper, white gouache highlights, construction ellipses, hero three-quarter plus side elevation, one bold body color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -172,7 +172,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'one painted hero pose; graphite anatomy insets; skull and limb studies; human scale silhouette; evolved camouflage palette',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Creature Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Creature design study: one painted creature in a readable hero pose, surrounded by anatomical inset studies of skull, limb mechanics and skin. Carry it through one painted hero pose, graphite anatomy insets, skull and limb studies, human scale silhouette, evolved camouflage palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -200,7 +200,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         '2:1 diamond tile grid; painted top faces with darker sides; fixed top-left light; floating ground chunk; modular repeated assets',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Isometric Game Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hand-painted 2D isometric game art: the scene assembled from modular diamond tiles with painted top faces and darker side faces, like a builder game map. Carry it through 2:1 diamond tile grid, painted top faces with darker sides, fixed top-left light, floating ground chunk, modular repeated assets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -228,7 +228,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'four to six ruled panels; varied shot sizes; red pencil motion arrows; grey marker values; blank note margins',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Storyboard Sketch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Film storyboard page: rough pencil and grey-marker panels drawn for shot communication, with camera arrows and motion arrows. Carry it through four to six ruled panels, varied shot sizes, red pencil motion arrows, grey marker values, blank note margins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -256,7 +256,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'isolated hero three-quarter view; front and side orthographics; circular detail zooms; wear placed by use; neutral grey ground',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Prop Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Prop design presentation: one object painted to production detail in a three-quarter hero view, with smaller orthographic views and detail zooms. Carry it through isolated hero three-quarter view, front and side orthographics, circular detail zooms, wear placed by use, neutral grey ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -284,7 +284,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'widescreen letterbox frame; one turning-point moment; motivated dramatic light; foreground occluders; graded color story',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Keyframe Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Narrative keyframe: a polished cinematic painting of one turning-point moment, composed and lit like a single film frame. Carry it through widescreen letterbox frame, one turning-point moment, motivated dramatic light, foreground occluders, graded color story. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -312,7 +312,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'cut photo fragments; perspective warping; one unifying grade; visible seams and clone repeats; painted light glue',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Photobash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Photobash concept: the subject assembled from cut photographic fragments of rock, metal, foliage and architecture, warped into perspective and unified with painted light. Carry it through cut photo fragments, perspective warping, one unifying grade, visible seams and clone repeats, painted light glue. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -341,7 +341,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'coarse flat-shaded proxy geometry; clay-grey facets; painted glow and fog over the mesh; strokes crossing facet edges; game-camera view',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Low Poly Concept as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Low-poly blockout concept: the scene modeled as coarse proxy geometry of a few hundred flat-shaded facets, then painted over with quick light, fog and color notes. Carry it through coarse flat-shaded proxy geometry, clay-grey facets, painted glow and fog over the mesh, strokes crossing facet edges, game-camera view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -369,7 +369,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'strict side elevation; full length across the frame; cross-section slices; hand silhouette for scale; one accent material',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Weapon Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Weapon design orthographic: one weapon drawn in strict side elevation at full length, painted in greyscale over clean line, with cross-section slices. Carry it through strict side elevation, full length across the frame, cross-section slices, hand silhouette for scale, one accent material. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -397,7 +397,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'scattered pose silhouettes; black brush-pen fills; toned sketchbook paper; grey ground-shadow ellipses; gesture readability test',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thumbnail Silhouette Exploration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pose silhouette thumbnails: the subject drawn as a scatter of small solid brush-pen silhouettes in different poses and actions, testing gesture readability. Carry it through scattered pose silhouettes, black brush-pen fills, toned sketchbook paper, grey ground-shadow ellipses, gesture readability test. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -425,7 +425,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'split before-and-after frame; raw photo collage with seams; resolved paintover; identical composition; one unifying grade',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Photobash Paintover Iteration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Paintover demonstration: the same frame shown as a raw photobash collage and then as a painted-over concept, side by side. Carry it through split before-and-after frame, raw photo collage with seams, resolved paintover, identical composition, one unifying grade. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -453,7 +453,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'layered search lines; colored line of action; charcoal smudges; motion arcs off the page; no clean-up',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Loose Gesture Energy Sketch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Gesture energy sketch: fast charcoal pencil and brush-pen lines chasing the action, with repeated search lines, a line of action and motion trails. Carry it through layered search lines, colored line of action, charcoal smudges, motion arcs off the page, no clean-up. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -481,7 +481,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'swatch grid; material spheres; central semi-finished subject study; identical swatch lighting; circular zoom callouts',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Material Texture Exploration Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Material exploration board: a design sketch of the subject beside a grid of candidate swatches and material spheres, each testing a different surface. Carry it through swatch grid, material spheres, central semi-finished subject study, identical swatch lighting, circular zoom callouts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -509,7 +509,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'eight to twelve small frames; one or two hues per frame; beat-by-beat palette shift; dark gutters; gouache-like flat shapes',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mood Color Script Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Color script: a sequence of eight to twelve small, loosely painted frames tracing how color and light change through a story. Carry it through eight to twelve small frames, one or two hues per frame, beat-by-beat palette shift, dark gutters, gouache-like flat shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -537,7 +537,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'pure black silhouettes; rigid equal grid; same pose and scale; varied shape language; outline-only design',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Silhouette Iteration Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Silhouette iteration sheet: design variants of the subject as pure black fills on white, same pose and scale, only the outline changing. Carry it through pure black silhouettes, rigid equal grid, same pose and scale, varied shape language, outline-only design. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -565,7 +565,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'three to five flat value planes; lasso-cut edges; gradient fills; single focal light; no surface detail',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rough Environment Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Rough environment pass: the location blocked in with three to five flat lasso-cut value planes stacked in depth, one focal light and almost no texture. Carry it through three to five flat value planes, lasso-cut edges, gradient fills, single focal light, no surface detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -593,7 +593,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'six to nine creature variants; graphite and grey marker; one color-washed pick; pen circle; matching angle and scale',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Creature Design Iteration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Creature iteration page: six to nine quick graphite and grey-marker variants of one creature concept, each testing a different adaptation. Carry it through six to nine creature variants, graphite and grey marker, one color-washed pick, pen circle, matching angle and scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -621,7 +621,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'five to seven variants in a row; shared base proportion; identical scale and light; faction accent hue; swapped modular parts',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Prop Variant Design Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Prop variant sheet: one prop type redesigned five to seven times side by side, each version changing function, culture or material on a shared base proportion. Carry it through five to seven variants in a row, shared base proportion, identical scale and light, faction accent hue, swapped modular parts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -649,7 +649,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'white foam and chipboard volumes; basswood blocks; glue seams and pin heads; one colored focal block; photographed on a base',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Architecture Massing Model as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Architectural massing model: the subject rebuilt as a handmade study model of white foam board, chipboard and basswood blocks on a flat base. Carry it through white foam and chipboard volumes, basswood blocks, glue seams and pin heads, one colored focal block, photographed on a base. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -677,7 +677,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'full-length costume plate; colorway mini-figures; pinned fabric swatches; pencil and watercolor; theatrical silhouette',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Costume Design Exploration Board as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Costume design board: one figure in a hero costume drawing with alternate colorways and fabric swatches pinned around it. Carry it through full-length costume plate, colorway mini-figures, pinned fabric swatches, pencil and watercolor, theatrical silhouette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -705,7 +705,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'two-by-two grid; identical composition; four times of day or weather; consistent shadow logic; equal finish',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lighting Scenario Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Lighting scenario pass: the same fixed view painted four times under different light, like a lighting artist testing times of day and weather. Carry it through two-by-two grid, identical composition, four times of day or weather, consistent shadow logic, equal finish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -733,7 +733,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'isolated plant assets in rows; one shared shape language; seasonal variants; human scale silhouette; neutral ground',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Foliage Design Kit as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Foliage design kit: a library sheet of isolated plant assets, from trees to groundcover, designed as one family sharing a shape language. Carry it through isolated plant assets in rows, one shared shape language, seasonal variants, human scale silhouette, neutral ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -761,7 +761,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'four or five tiers; crude to masterwork progression; tier-coded materials; shared baseline; one glowing final accent',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Weapon Tier Progression as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Upgrade progression sheet: the same weapon or item shown in four or five tiers side by side, growing from crude utility to ornate masterwork. Carry it through four or five tiers, crude to masterwork progression, tier-coded materials, shared baseline, one glowing final accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -787,7 +787,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'three-by-four thumbnail grid; one scene in twelve framings; three grey values; freehand frames; varied camera heights',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Composition Thumbnail Grid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Composition thumbnail grid: the same scene explored in twelve small pencil-framed rectangles, each testing a different camera and shot size. Carry it through three-by-four thumbnail grid, one scene in twelve framings, three grey values, freehand frames, varied camera heights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -815,7 +815,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'dip-pen and watercolor; pictorial mountains and forests; hatched coastlines; compass rose; blank cartouche',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies World Map Concept as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fantasy world map concept: a hand-drawn ink and watercolor map on aged paper with pictorial mountains, forests and hatched coastlines. Carry it through dip-pen and watercolor, pictorial mountains and forests, hatched coastlines, compass rose, blank cartouche. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

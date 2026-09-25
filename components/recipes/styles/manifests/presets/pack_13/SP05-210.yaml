@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: 'Keep the supplied emotional tone; loose line texture does not require a particular activity or feeling.'
   rendering_and_quality: 'Retain clean silhouettes under rough accents; keep sketch detail intentional and geometry soft but stable.'
   key_features: 'Loose pencil contour; soft geometric underpainting; short scribble marks; paper-like tonal base; stable readable silhouettes.'
-  creative_brief: 'Place loose pencil marks over gentle geometric color fields, tying both to forms already present. Preserve subject, action, count, camera, and mood.'
+  creative_brief: "Place loose pencil marks over gentle geometric color fields, tying both to forms already present. Preserve subject, action, count, camera, and mood. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

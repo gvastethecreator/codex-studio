@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Raw, spacious and working, a factory shell re-inhabited.
   rendering_and_quality: 'Documentary interior photograph: honest wear, readable rivets and mortar joints, no shabby-chic distressing painted on new surfaces.'
   key_features: riveted steel trusses; raw soot-marked brick; steel-framed factory glazing; gridded window shadow; exposed ducts and conduit
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Industrial Loft as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Industrial loft conversion: a former warehouse shell with riveted steel trusses, cast-iron columns, raw brick and steel-framed factory glazing left exposed, furnished sparingly inside it. Carry it through riveted steel trusses, raw soot-marked brick, steel-framed factory glazing, gridded window shadow, exposed ducts and conduit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - furniture catalog staging
   - olive branch in a vase as default decor

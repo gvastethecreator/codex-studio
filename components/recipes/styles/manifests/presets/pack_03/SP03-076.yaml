@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Festive and slightly absurd, a celebration you could pop with a pin.
   rendering_and_quality: Thin inflated foil with seams and wrinkles, distinct from twisted latex balloon animals and from solid chrome.
   key_features: heat-sealed crimped rim seam; pillowed flat-sheet volumes; pinch wrinkles; warped mirror reflections; floating lightness
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mylar Foil Balloon Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Mylar foil balloon: the subject rebuilt as an inflated metallic-foil balloon, two flat sheets heat-sealed at the rim and puffed into soft pillowed forms. Carry it through heat-sealed crimped rim seam, pillowed flat-sheet volumes, pinch wrinkles, warped mirror reflections, floating lightness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - forced T-pose
   - object turned into an avatar

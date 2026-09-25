@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Silent, severe and pristine, cold enough to ring.
   rendering_and_quality: Subsurface transmission rendering with crisp facets; distinct from colored crystal, which is hexagonal and jewel-toned.
   key_features: faceted ice buttresses; blue subsurface transmission; trapped bubble streams; low polar sun; mint aurora rim
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cryomorphic Palace Geometry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Glacial ice architecture: faceted ice buttresses, frozen column rhythms and vaults carved from clear and blue glacier ice with trapped air bubbles. Carry it through faceted ice buttresses, blue subsurface transmission, trapped bubble streams, low polar sun, mint aurora rim. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - licensed fantasy location
   - copy of a known film or game building

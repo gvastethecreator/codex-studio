@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Playful and toy-like, a busy world shrunk to a tabletop.
   rendering_and_quality: Optical tilt blur with a clean gradient; not a straight top-down drone view.
   key_features: thin tilted focus band; high vantage; blur top and bottom; boosted toy-like color; small crisp shadows
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tilt-Shift (Miniature) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Tilt-shift miniature: a tilted lens plane from a high vantage point so only a thin band is sharp, making real scenes look like toy models. Carry it through thin tilted focus band, high vantage, blur top and bottom, boosted toy-like color, small crisp shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - fake UI text
   - readable timestamp

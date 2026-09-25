@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Operatic grandeur and melancholy, light blazing inside a vast dark.
   rendering_and_quality: Halation around backlit lines, airbrushed gradients, crisp inked mechanics and light film grain; no modern digital bloom.
   key_features: backlit-cel glow lines with halation; airbrushed cobalt gradients; ivory and gold accents; diagonal light sweeps; optical film grain
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Luminous Beam Opera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "1980s space-opera cel photography: backlit-cel light effects where pure light shines through cut lines in black, over airbrushed cobalt gradients and inked mechanical forms. Carry it through backlit-cel glow lines with halation, airbrushed cobalt gradients, ivory and gold accents, diagonal light sweeps, optical film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

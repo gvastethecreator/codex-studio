@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Nine to twelve identical shield shapes in an even grid, a larger study of the main charge beside them.
   atmosphere_and_mood: Proud and ceremonial, a lineage chosen color by color.
   rendering_and_quality: Clean heraldic drawing with consistent charge and no mottos or names.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Heraldry Tincture Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Heraldry design sheet: one coat of arms repeated in a grid of tincture and division variants, painted in gouache and shell gold on vellum. Carry it through one shield in many tinctures, division variants, gouache and shell gold, charge study, even grid. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: one shield in many tinctures; division variants; gouache and shell gold; charge study; even grid
 avoidRules:
   - placeholder gibberish text

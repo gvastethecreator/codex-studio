@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Electric and nocturnal, a hum of light in a dark room.
   rendering_and_quality: Physical glass tubes casting real glow and reflections, not a flat 2D neon stroke; lettering only when the prompt supplies it.
   key_features: continuous bent glass tube line; hot white core; colored halo on backing; blacked-out tube sections; standoffs and transformer
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Sign 3D as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Neon sign construction: the subject redrawn as one continuous line of bent glass tubing glowing with gas, mounted on a dark backing with visible hardware. Carry it through continuous bent glass tube line, hot white core, colored halo on backing, blacked-out tube sections, standoffs and transformer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - multi-view asset sheet
   - fake labels

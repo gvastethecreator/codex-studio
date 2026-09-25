@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Lift and ascent carried by spacing and line direction, not by heroics.
   rendering_and_quality: Powerful but controlled contours with clear vertical separation between layers.
   key_features: stacked horizontal layers; subject rising from lower half; open space above; values lightening upward; side-on tall framing
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Upward Thunder Momentum Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Anime action frame staged vertically: the subject rises through stacked horizontal layers of the scene seen from beside, with open space kept above it to pull the eye upward. Carry it through stacked horizontal layers, subject rising from lower half, open space above, values lightening upward, side-on tall framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - added opponent
   - added sports gear

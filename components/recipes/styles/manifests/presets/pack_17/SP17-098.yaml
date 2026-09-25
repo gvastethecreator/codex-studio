@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Tight dramatic crop or looming low angle with a single white-read silhouette; black negative space dominates at least two thirds of the image.
   atmosphere_and_mood: Oppressive, loud, violent in contrast, and grimly exhilarating.
   rendering_and_quality: 'Clean high-contrast reproduction of an overexposed copy: the black is solid, not noisy, and white shapes stay sharp and readable at thumbnail size.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blackout Toner Doom Zine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Near-total black toner flood from an overdriven copier, with the subject surviving only as blown-out white shapes, razor edges, and a few crushed gray transitions. Carry it through black toner flood, white knockout survivors, crushed grays, copier banding, two-thirds black space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: black toner flood; white knockout survivors; crushed grays; copier banding; two-thirds black space; brutal contrast
 avoidRules:
   - mid-gray muddiness

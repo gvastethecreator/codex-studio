@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; strict axial view along a channel to the pavilion, or overhead showing the four quarters.
   atmosphere_and_mood: Cool, ordered and paradisal, water as the gift of the desert.
   rendering_and_quality: Clear photograph with exact axial symmetry and sparkling water, no invented calligraphy or readable inscriptions.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chahar Bagh Water Garden as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Chahar bagh: the Persian fourfold garden, walled and divided into four quarters by raised walkways and narrow stone water channels that meet at a central pool or pavilion. Carry it through four quarters divided by water channels, raised walkways over sunken beds, carved chadar water chute, central pool pavilion, cypress rows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: four quarters divided by water channels; raised walkways over sunken beds; carved chadar water chute; central pool pavilion; cypress rows
 avoidRules:
   - golden-hour garden postcard formula

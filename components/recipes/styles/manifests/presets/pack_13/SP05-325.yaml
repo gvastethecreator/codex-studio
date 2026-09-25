@@ -39,11 +39,7 @@ visualDna:
   key_features: >-
     Scraped strokes; coarse grain; angled/blocky contour; ash and rust accents; tactile graphic
     friction.
-  creative_brief: >-
-    Apply this visual treatment to the requested content: Scraped strokes; coarse grain;
-    angled/blocky contour; ash and rust accents; tactile graphic friction. Preserve its identity,
-    action, materials, composition and requested tone; introduce no persona, scene, franchise cue or
-    extra motif.
+  creative_brief: "Apply this visual treatment to the requested content: Scraped strokes; coarse grain; angled/blocky contour; ash and rust accents; tactile graphic friction. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look

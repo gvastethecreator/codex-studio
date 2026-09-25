@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Brooding and dystopian, a heavy night that never seems to end.
   rendering_and_quality: Practical-effects cinema with film grain; no clean CGI and no franchise designs.
   key_features: backlit smoke; anamorphic blue flares; neon and sodium practicals; spinning fan shafts; grimy industrial sets
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 80s Sci-Fi as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "80s practical sci-fi cinema: smoke-filled sets, backlit haze and glowing practical lights, shot on 35 mm anamorphic with streaking lens flares. Carry it through backlit smoke, anamorphic blue flares, neon and sodium practicals, spinning fan shafts, grimy industrial sets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - readable fake text

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Solemn resolve and sacrifice, heroic stillness before the end.
   rendering_and_quality: Painterly flat-brush key art with a crisp silhouette, rim glow and restrained bloom; not cel line art.
   key_features: backlit ember rim; broad flat-brush beveled planes; near-black silhouettes; drifting ember specks; low monumental horizon
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Monumental Ignition Sacrifice as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Painted anime key art: broad beveled planes laid in with a flat digital brush, silhouettes backlit by an ember-red rim, and deep empty blacks. Carry it through backlit ember rim, broad flat-brush beveled planes, near-black silhouettes, drifting ember specks, low monumental horizon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Vertical grimdark card with one oppressive system silhouette, scale cues, and no explicit victim spectacle.
   atmosphere_and_mood: Cruel, terminal, industrial, ritual, and heavy; disturbing by design implication.
   rendering_and_quality: Clean stylized apocalyptic fantasy illustration with medium detail, denoised grit, and non-graphic horror restraint.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Future Torture Apocalypse as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Future-apocalyptic punishment-machine fantasy with restraint architecture, rusted exoskeletons, ritual machinery, black scaffolds, and implied suffering without graphic torture detail. Carry it through future punishment machinery, rusted exoskeletons, ritual scaffold geometry, furnace slits, implied suffering. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: future punishment machinery; rusted exoskeletons; ritual scaffold geometry; furnace slits; implied suffering; no graphic torture detail
 avoidRules:
   - explicit torture

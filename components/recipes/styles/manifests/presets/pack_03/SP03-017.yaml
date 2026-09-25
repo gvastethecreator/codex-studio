@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Gross and playful, satisfying and a little disgusting.
   rendering_and_quality: Viscous fluid look with translucency; not hard glossy plastic.
   key_features: sagging viscous form; stretched sticky strings; trapped bubbles; glossy wet highlights; pooling drips
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Slime & Goo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Slime and goo: the target made of thick glossy viscous fluid that sags, drips and stretches into sticky strings. Carry it through sagging viscous form, stretched sticky strings, trapped bubbles, glossy wet highlights, pooling drips. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the surroundings
   - changing the camera

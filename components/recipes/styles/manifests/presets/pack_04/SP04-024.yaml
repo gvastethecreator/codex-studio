@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Gentle, handmade and funny, made for the very young.
   rendering_and_quality: Physical plasticine and craft materials with visible handling marks; never glossy plastic CG.
   key_features: chunky plasticine characters; felt and cardboard set; fingerprints and tool dents; bright even lamps; shallow tabletop depth
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Claymation Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Preschool stop-motion clay: chunky plasticine characters on a small tabletop set of felt, cardboard and wooden blocks, filmed under bright lamps. Carry it through chunky plasticine characters, felt and cardboard set, fingerprints and tool dents, bright even lamps, shallow tabletop depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - frightening gore
   - known picture-book characters

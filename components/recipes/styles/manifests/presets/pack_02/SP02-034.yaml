@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Eerie and tender, handmade dread with a beating heart.
   rendering_and_quality: Physical stop-motion look with slight frame jitter; not smooth CG.
   key_features: handcrafted puppets; replacement-face seams; miniature practical lights; macro shallow focus; tactile fabrics
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Moody Miniature Stop-Motion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Moody miniature stop-motion: handcrafted puppets with replacement faces animated frame by frame in dark, detailed miniature sets. Carry it through handcrafted puppets, replacement-face seams, miniature practical lights, macro shallow focus, tactile fabrics. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - exact studio character copy
   - franchise likeness

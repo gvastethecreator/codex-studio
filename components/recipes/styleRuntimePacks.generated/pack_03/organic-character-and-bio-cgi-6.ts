@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'neutral A-pose or T-pose only when unposed; flat grey backdrop; even soft lighting; full figure centered; material separation',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Character Design (T-Pose) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Character model presentation: a finished 3D character standing on flat grey, lit evenly so proportions, costume construction and materials read without drama. Carry it through neutral A-pose or T-pose only when unposed, flat grey backdrop, even soft lighting, full figure centered, material separation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -56,7 +56,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'translucent skin layer; color-coded arteries and veins; ivory bones; shadowless wrap light; pale backdrop',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Medical Illustration 3D as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Medical 3D illustration: the subject's body made partly translucent so organs, vessels, bones and muscles show in layered, color-coded depth. Carry it through translucent skin layer, color-coded arteries and veins, ivory bones, shadowless wrap light, pale backdrop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -84,7 +84,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'levitating ingredient arc; frozen splashes and droplets; backlit steam; specular pings; diagonal hero composition',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Food CGI as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Food advertising CGI: the dish exploded into a frozen moment, ingredients levitating in an arc, sauces splashing and droplets suspended around the hero item. Carry it through levitating ingredient arc, frozen splashes and droplets, backlit steam, specular pings, diagonal hero composition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -113,7 +113,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'centered chest-up bust; flat color field; swappable trait accessories; glossy vinyl and gold; bright rim light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies NFT Collectible Avatar Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Collectible avatar render: a stylized bust centered on a flat color field, built from a few chunky trait pieces such as headwear, eyewear, clothing and one accessory in glossy toy materials. Carry it through centered chest-up bust, flat color field, swappable trait accessories, glossy vinyl and gold, bright rim light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -141,7 +141,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'cloth simulation drape; impossible fabrics; fluttering hems; specular sheen on folds; correct body collision',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Digital Fashion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Digital fashion: garments that exist only as cloth simulation, impossible fabrics draping, floating and folding with real weight on a body or on nothing at all. Carry it through cloth simulation drape, impossible fabrics, fluttering hems, specular sheen on folds, correct body collision. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -169,7 +169,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'flowing muscle and growth planes; polypaint color; cavity tint; subsurface in thin parts; round turntable plinth',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Organic Modeling as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Organic digital sculpture presentation: the subject sculpted as flowing soft volumes whose planes follow muscle, growth and gravity, polypainted and shown on a turntable plinth. Carry it through flowing muscle and growth planes, polypaint color, cavity tint, subsurface in thin parts, round turntable plinth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -199,7 +199,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'heat-sealed crimped rim seam; pillowed flat-sheet volumes; pinch wrinkles; warped mirror reflections; floating lightness',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mylar Foil Balloon Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Mylar foil balloon: the subject rebuilt as an inflated metallic-foil balloon, two flat sheets heat-sealed at the rim and puffed into soft pillowed forms. Carry it through heat-sealed crimped rim seam, pillowed flat-sheet volumes, pinch wrinkles, warped mirror reflections, floating lightness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -232,7 +232,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Path-traced skin and eye caustics with asymmetry kept, never waxy, airbrushed or doll-like.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Photoreal Digital Human as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Photoreal digital human: an adult face and body built from layered skin shading of epidermis, dermis and blood, with groomed strand hair and wet, refractive eyes. Carry it through layered subsurface skin, strand hair and lashes, refractive wet eyes, pores and vellus hair, red light bleed in thin skin. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'layered subsurface skin; strand hair and lashes; refractive wet eyes; pores and vellus hair; red light bleed in thin skin',
     },
@@ -268,7 +268,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Diffuse-only painted look on low-poly silhouettes, with no photoreal shading or glossy reflections.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hand-Painted Texture Character as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hand-painted texture CGI: chunky stylized 3D forms whose lighting, highlights and occlusion are painted straight into the color texture and rendered almost unlit. Carry it through painted-in highlights and shadows, chunky proportions, visible brush strokes in textures, diffuse-only shading, bright edge highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'painted-in highlights and shadows; chunky proportions; visible brush strokes in textures; diffuse-only shading; bright edge highlights',
     },
@@ -300,7 +300,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean museum-model finish with no blood, gore, wounds or exposed organs.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Écorché Muscle Study as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Écorché muscle study: the subject shown as a flayed anatomical sculpture, each muscle a distinct striated form wrapping the bone like a classical art-school figure. Carry it through flayed muscle groups, fiber striations, ivory tendons, single high sculpture key, clean museum finish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'flayed muscle groups; fiber striations; ivory tendons; single high sculpture key; clean museum finish',
     },
@@ -335,7 +335,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Plausible bone count and joints for the species or invented creature, with no flesh and no gore.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Articulated Skeleton Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Natural-history skeleton mount: the subject reduced to its articulated bones, wired together in a lifelike pose on slender iron rods like a museum display. Carry it through articulated bones, iron armature rods, ivory to tea-brown bone, rib shadows from gallery spots, brass joint pins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'articulated bones; iron armature rods; ivory to tea-brown bone; rib shadows from gallery spots; brass joint pins',
     },
@@ -370,7 +370,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Simulation-grown surface with self-avoiding folds, not noise displacement or fractal copies.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Differential Growth Folds as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Differential growth: the subject's surfaces grown into dense crinkled ruffles like lettuce coral, kale or brain folds, where the edge outgrows the center. Carry it through crinkled ruffled edges, edge-outgrows-center folds, deep fold occlusion, subsurface on thin edges, single organic hue. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'crinkled ruffled edges; edge-outgrows-center folds; deep fold occlusion; subsurface on thin edges; single organic hue',
     },
@@ -405,7 +405,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Branching with correct taper and attachment, with no floating leaves or random green noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Space-Colonization Vine Overgrowth as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Procedural vine overgrowth: branching stems grown by a space-colonization algorithm, climbing and wrapping every surface of the subject toward the light. Carry it through algorithmic branching vines, taper from root to tip, tendrils gripping edges, dappled leaf shadows, growth toward light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'algorithmic branching vines; taper from root to tip; tendrils gripping edges; dappled leaf shadows; growth toward light',
     },
@@ -440,7 +440,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Volume-preserving deformation with believable contact; not melting, not liquid and not broken.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soft-Body Squash Simulation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Soft-body simulation: the subject behaving like a volume-preserving jelly, squashed against surfaces, bulging between obstacles and wobbling mid-bounce. Carry it through volume-preserving squash, bulges between obstacles, flattened contact patches, frozen wobble ripples, stretched highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'volume-preserving squash; bulges between obstacles; flattened contact patches; frozen wobble ripples; stretched highlights',
     },
@@ -475,7 +475,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean overlay of bones and curves with no interface panels, text, numbers or timeline.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Animation Rig Overlay as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Animation rig preview: a shaded character with its joint chain drawn through the body as slim bones and colored control curves orbiting the limbs. Carry it through joint bone chain through the body, colored control curves by side, semi-transparent skin, even light, requested pose kept. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'joint bone chain through the body; colored control curves by side; semi-transparent skin; even light; requested pose kept',
     },
@@ -510,7 +510,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Continuous heatmap across the cloth mesh with no legend, scale bar, numbers or interface.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Garment Fit Strain Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Garment fit strain map: simulated clothing colored by a stress heatmap, cool blue where fabric hangs loose, green to red where it stretches tight. Carry it through blue-to-red strain heatmap, tension lines from stress points, grey fit form or wearer, visible seams, no legend. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'blue-to-red strain heatmap; tension lines from stress points; grey fit form or wearer; visible seams; no legend',
     },
@@ -545,7 +545,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Structural color and plate hinges rendered precisely, not metal armor painted to look like a bug.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chitin Exoskeleton Plating as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Chitin exoskeleton: the subject's outer shell rebuilt from overlapping lacquer-hard insect plates, joined by flexible membranes and edged with fine bristles. Carry it through overlapping chitin plates, structural iridescence, flexible amber membranes, setae bristles, macro depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'overlapping chitin plates; structural iridescence; flexible amber membranes; setae bristles; macro depth',
     },
@@ -577,7 +577,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal production still with no screens, skeleton overlays, numbers or interface.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Motion-Capture Marker Suit as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Motion-capture stage: a performer in a tight black suit studded with small reflective marker balls, standing in a grey capture volume ringed by cameras. Carry it through black marker suit, reflective marker balls, grey capture volume, ring-light strobes, taped proxy props. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'black marker suit; reflective marker balls; grey capture volume; ring-light strobes; taped proxy props',
     },
@@ -612,7 +612,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Feature-VFX surfacing where wetness, dust and scars follow the anatomy, with no rubber-suit sheen.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Photoreal Creature Hide as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Film creature hide: the subject covered in massive, wrinkled, scarred hide with layered displacement, wet sheen in the folds and dust caked on high points. Carry it through multi-scale hide displacement, wet creases and dusty ridges, scar tissue, glancing light, long-lens scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'multi-scale hide displacement; wet creases and dusty ridges; scar tissue; glancing light; long-lens scale',
     },
@@ -647,7 +647,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Stylized feature-animation finish, distinct from hyperreal food advertising and from clay or toy food.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Animated-Film Food Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Animated-film food: dishes simplified into plump rounded shapes with exaggerated glossy sauces, jewel-bright colors and soft painterly subsurface, as cooked in a feature cartoon. Carry it through plump simplified food shapes, exaggerated glossy sauce, jewel-bright colors, colored shadows, backlit steam wisp. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'plump simplified food shapes; exaggerated glossy sauce; jewel-bright colors; colored shadows; backlit steam wisp',
     },

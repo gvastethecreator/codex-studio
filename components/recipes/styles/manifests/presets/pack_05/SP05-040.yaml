@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Calm formality in the moment before a storm.
   rendering_and_quality: 'Tight compositing: sharp cel edges, soft volumetric light, particles and bloom kept in check.'
   key_features: cel figures over detailed painted backgrounds; volumetric light shafts; drifting embers and bokeh; navy and ivory; shallow depth of field
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blade Field Urban Fantasy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Composited digital-effects anime: crisp cel characters layered over richly lit, near-photographic painted backgrounds with volumetric light shafts, drifting embers and shallow depth-of-field blur. Carry it through cel figures over detailed painted backgrounds, volumetric light shafts, drifting embers and bokeh, navy and ivory, shallow depth of field. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

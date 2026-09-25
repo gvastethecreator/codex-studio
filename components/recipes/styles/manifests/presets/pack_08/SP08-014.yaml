@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Capable, rugged, practical and quietly stylish, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Matte, textured finish with visible wear, with believable fabric weight, seams and fit detail.
   key_features: multi-pocket field jacket; duck canvas; webbing belt; lace-up boots; olive and khaki palette
-  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Field Utility Textile as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
+  creative_brief: "Field utility textile styling: workwear and military-surplus pieces worn as fashion — multi-pocket jackets, canvas, webbing belts and sturdy boots. Carry it through multi-pocket field jacket, duck canvas, webbing belt, lace-up boots, olive and khaki palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - readable label text

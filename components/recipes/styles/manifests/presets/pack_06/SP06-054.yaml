@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Orderly, charming and toy-like, a whole world you could hold.
   rendering_and_quality: Strict parallel lines, consistent 30-degree angles, three-tone face shading; no perspective convergence, no UI.
   key_features: parallel 30-degree projection; no vanishing point; three-tone face shading; diorama cut-out block; small crisp details
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Isometric as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Isometric digital illustration: scenes drawn in parallel projection with 30-degree axes and no vanishing point, like a detailed miniature diorama. Carry it through parallel 30-degree projection, no vanishing point, three-tone face shading, diorama cut-out block, small crisp details. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - concept board layout

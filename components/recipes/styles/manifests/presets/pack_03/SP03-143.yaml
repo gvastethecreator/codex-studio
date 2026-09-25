@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested camera; far points thin out and the cloud ends in a ragged edge.
   atmosphere_and_mood: Ghostly and precise, a place reduced to measured dust.
   rendering_and_quality: Screen-space point sprites of uniform size, no surface reconstruction and no soft splat blending.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lidar Point Cloud Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Lidar point cloud render: the scene shown only as millions of tiny points sampled on surfaces, with no meshes, so gaps and scan shadows reveal how it was measured. Carry it through millions of tiny points, height or intensity coloring, scan shadows behind objects, concentric ground rings, black void. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: millions of tiny points; height or intensity coloring; scan shadows behind objects; concentric ground rings; black void
 avoidRules:
   - sensor noise

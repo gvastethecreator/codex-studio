@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Elegant three-quarter or full figure, keeping the full outfit silhouette and fit readable at card size.
   atmosphere_and_mood: Refined, regal, poetic and sumptuous, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Luminous, finely detailed finish, with believable fabric weight, seams and fit detail.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mughal Court Jama as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Mughal court dress: flared jama robes tied at the side, patka sashes, fitted pyjamas, jeweled turbans and fine muslin veils with gold borders. Carry it through flared jama, embroidered patka sash, jeweled turban with sarpech, fine gold-bordered muslin, jali light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: flared jama; embroidered patka sash; jeweled turban with sarpech; fine gold-bordered muslin; jali light
 avoidRules:
   - brand logo

@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Playful openness and generous momentum, a sunny, big-hearted adventure with room to stretch.
   rendering_and_quality: Vivid flat colors, legible outlines and little small-scale detail.
   key_features: rubbery exaggerated anatomy; huge grins; bold rounded outlines; ocean blue, red and gold; flexible diagonals
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Elastic Big-Grin Adventure Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Sunny seafaring adventure anime: bold rounded outlines, rubbery exaggerated anatomy with huge grins and stretched limbs, broad flexible curves and flat vivid color. Carry it through rubbery exaggerated anatomy, huge grins, bold rounded outlines, ocean blue, red and gold. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Gentle and wondrous, everyday magic breathing in the wind.
   rendering_and_quality: Hand-painted feature finish; original characters, no studio designs.
   key_features: hand-painted landscapes; small cel figures; wind in grass; dappled light; towering cumulus
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Painterly Nature Anime Feature as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Painterly nature anime feature: simple cel characters set inside richly hand-painted, breathing landscapes of grass, cloud and forest. Carry it through hand-painted landscapes, small cel figures, wind in grass, dappled light, towering cumulus. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - exact studio character copy
   - franchise likeness

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Brash, urgent and optimistic, like a shout drawn in straight lines and sharp corners.
   rendering_and_quality: Flat two-tone cel with brush-pen line weight swelling at corners, crisp triangle glints, and no airbrush or 3D shading.
   key_features: thick tapered brush-pen outlines; triangular shadow and highlight wedges; flat coral, yellow and cyan fills; star-shaped glints; forced foreshortening with speed wedges
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Geometric Ignition Urgency as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hyper-angular limited-animation cel: thick tapered brush-pen outlines, flat fills with no gradients, and triangular highlight and shadow shapes cut at sharp angles. Carry it through thick tapered brush-pen outlines, triangular shadow and highlight wedges, flat coral, yellow and cyan fills, star-shaped glints. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

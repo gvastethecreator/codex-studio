@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'sculptural couture volume; stiffened silk and organza; hand embellishment; single dramatic silhouette; sculpted editorial shadow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Haute Couture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Haute couture: one sculptural, hand-built garment treated as wearable architecture, where volume, cut and handwork are the spectacle. Carry it through sculptural couture volume, stiffened silk and organza, hand embellishment, single dramatic silhouette, sculpted editorial shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -56,7 +56,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'floor-length gown with train; black-tie tailoring; jewel tones; flashbulb sparkle; statement jewelry',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Red Carpet Gown as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Red-carpet gala formalwear: floor-length gowns and sharp black-tie, built for flashbulbs, with trains, capes and statement jewelry. Carry it through floor-length gown with train, black-tie tailoring, jewel tones, flashbulb sparkle, statement jewelry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -85,7 +85,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Refined, soft-contrast finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Quiet Luxury Cashmere as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Quiet luxury: impeccably cut, unbranded clothes in the finest materials, where wealth is legible only to those who know. Carry it through unbranded cashmere, tonal neutrals, perfect tailoring, discreet wealth, soft warm light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'unbranded cashmere; tonal neutrals; perfect tailoring; discreet wealth; soft warm light',
     },
@@ -123,7 +123,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Matte, textured finish with deep blacks, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Deconstructed Avant-Garde as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Deconstructed avant-garde fashion: garments that look taken apart and reassembled — raw hems, exposed seams, asymmetric layers and voluminous black. Carry it through raw hems and exposed seams, asymmetric black layering, displaced volumes, stark side light, monochrome. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'raw hems and exposed seams; asymmetric black layering; displaced volumes; stark side light; monochrome',
     },
@@ -157,7 +157,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Sharp outdoor-editorial finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gorpcore Trail as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Gorpcore: outdoor and mountaineering gear worn as fashion — fleece, shell jackets, trail shoes and utility accessories in bold color-blocking. Carry it through color-blocked shell and fleece, trail shoes, utility accessories, bold accents on earth tones, mountain daylight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'color-blocked shell and fleece; trail shoes; utility accessories; bold accents on earth tones; mountain daylight',
     },
@@ -192,7 +192,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Glossy, slightly oversaturated finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Y2K Pop Glam as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Y2K pop glam: turn-of-the-millennium fashion — low-rise, metallics, baby tees, butterfly clips, tinted sunglasses and shiny synthetic fabrics. Carry it through low-rise and baby tees, chrome and baby pink, butterfly clips, tinted sunglasses, glossy flash. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'low-rise and baby tees; chrome and baby pink; butterfly clips; tinted sunglasses; glossy flash',
     },
@@ -230,7 +230,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp pattern detail with rich saturation, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Maximalist Print Clash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Maximalist print clash: many bold patterns and colors layered on purpose — florals with stripes, animal print with brocade — in a controlled riot. Carry it through three or more clashing prints, saturated color riot, brocade and printed silk, bold jewelry, controlled maximalism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'three or more clashing prints; saturated color riot; brocade and printed silk; bold jewelry; controlled maximalism',
     },
@@ -269,7 +269,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Sharp, graphic, high-contrast finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Monochrome Power Suit as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Monochrome power suit: one strong color from head to toe — sharp-shouldered suit, matching shirt and shoes — cut to command a room. Carry it through head-to-toe single color, strong shoulders, sharp tailoring, low-angle power framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'head-to-toe single color; strong shoulders; sharp tailoring; low-angle power framing',
     },
@@ -304,7 +304,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Soft, airy finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Balletcore as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Balletcore: dancewear as fashion — wrap cardigans, leotards, tulle skirts, leg warmers and ribbon-tied flats in soft blush tones. Carry it through wrap cardigan and tulle, satin ribbon flats, leg warmers, blush palette, graceful line. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'wrap cardigan and tulle; satin ribbon flats; leg warmers; blush palette; graceful line',
     },
@@ -337,7 +337,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Bright, warm, natural finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Resort Linen as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Resort linen: breezy vacation dressing in wrinkled linen, open collars, wide trousers and woven accessories under strong sun. Carry it through wrinkled linen, wide trousers, straw hat, sun-washed palette, hard midday shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'wrinkled linen; wide trousers; straw hat; sun-washed palette; hard midday shadows',
     },
@@ -370,7 +370,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Refined, soft editorial finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Modest Layered Tailoring as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Modest layered tailoring: long, covering silhouettes built from elegant layers — maxi coats, wide trousers, long tunics and draped headscarves — with refined color play. Carry it through long-line layers, draped headscarf, tonal color play, wide trousers or maxi skirt, graceful full length. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'long-line layers; draped headscarf; tonal color play; wide trousers or maxi skirt; graceful full length',
     },
@@ -408,7 +408,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Rich, warm editorial finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Equestrian Heritage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Equestrian heritage: riding-inspired dressing — tailored hacking jackets, jodhpurs, tall leather boots, quilted vests and silk scarves. Carry it through hacking jacket and jodhpurs, tall riding boots, silk scarf, chestnut and olive palette, country morning light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'hacking jacket and jodhpurs; tall riding boots; silk scarf; chestnut and olive palette; country morning light',
     },
@@ -443,7 +443,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Warm, film-like finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neo-Western as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Neo-western fashion: cowboy codes reworked for today — embroidered yokes, fringe, denim, bolo ties and pointed boots, worn with modern cuts. Carry it through embroidered yoke and fringe, pointed boots, bolo tie, rust and turquoise, low golden light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'embroidered yoke and fringe; pointed boots; bolo tie; rust and turquoise; low golden light',
     },
@@ -476,7 +476,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'unstructured blazer; open collar; tailored trousers; soft neutral palette; composed ease',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Business Casual as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Business casual: polished but relaxed workwear — unstructured blazer, knit or open collar, tailored trousers — made for long days. Carry it through unstructured blazer, open collar, tailored trousers, soft neutral palette, composed ease. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -502,7 +502,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'tonal performance sets; bonded seams and mesh panels; reflective accent; mid-stride energy; clean daylight',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Athleisure Sport as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Athleisure sport styling: performance fabrics worn as everyday fashion, with sculpted seams, compression panels and sleek technical layering. Carry it through tonal performance sets, bonded seams and mesh panels, reflective accent, mid-stride energy, clean daylight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -529,7 +529,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'black merino knit; slim dark trousers; minimalist sneakers; tonal discipline; keynote framing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tech-Industry Uniform as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tech-industry uniform: a repeated, disciplined outfit — black knit, slim dark trousers, minimalist sneakers — optimized to remove choice. Carry it through black merino knit, slim dark trousers, minimalist sneakers, tonal discipline, keynote framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -557,7 +557,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'coordinated stage tailoring; cropped jackets; matching colorways; stage haze; choreographed pose',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pop-Performance Tailoring as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pop-performance tailoring: stage-ready suits and coordinated outfits cut for choreography, with sharp shoulders, cropped jackets and matching sets. Carry it through coordinated stage tailoring, cropped jackets, matching colorways, stage haze, choreographed pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -585,7 +585,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'few perfect pieces; bone and camel palette; no prints or hardware; soft window light; generous negative space',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Minimalist Chic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Scandinavian-style minimalist chic: few pieces, perfect proportions and quiet surfaces, where cut and fabric quality do all the talking. Carry it through few perfect pieces, bone and camel palette, no prints or hardware, soft window light, generous negative space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -614,7 +614,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'plain fleece and straight jeans; white sneakers; no branding; deadpan framing; flat daylight',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Normcore as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Normcore: deliberately plain everyday clothes worn with intent — the fashion is in the anonymity. Carry it through plain fleece and straight jeans, white sneakers, no branding, deadpan framing, flat daylight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -643,7 +643,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'navy blazer and cable knit; oxford cloth; loafers; autumn palette; relaxed polish',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Preppy Ivy League as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Preppy Ivy League styling: collegiate tailoring with cable knits, oxford cloth, blazers and loafers worn with relaxed polish. Carry it through navy blazer and cable knit, oxford cloth, loafers, autumn palette, relaxed polish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

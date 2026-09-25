@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Airy landscape or portrait composition with clear depth layers and calm negative space.
   atmosphere_and_mood: Wistful, elegant, calm, and slightly melancholic.
   rendering_and_quality: 'Refined print finish: grains even, stepped tones clean, line delicate, no muddiness.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sepia Aquatint Wash Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Elegant etched line combined with granular sepia aquatint tone fields, stepped value layers, and soft warm paper, like a refined travel-plate or naturalist etching. Carry it through granular sepia aquatint, stepped tone layers, delicate etched line, atmospheric depth, refined calm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: granular sepia aquatint; stepped tone layers; delicate etched line; atmospheric depth; refined calm
 avoidRules:
   - black heavy ink

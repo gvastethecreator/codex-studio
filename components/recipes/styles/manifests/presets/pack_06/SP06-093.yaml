@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Bright and plucky, adventure on a small bedroom machine.
   rendering_and_quality: Square pixels with visible line-clash artifacts; no dithering gradients and no muted colors.
   key_features: square pixels; two colors per 8x1 segment; horizontal clash fringes; candy primaries; black field
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bright Line-Clash Home Micro as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Japanese-market 8-bit micro graphics: square pixels in bright candy primaries, with only two colors allowed in each 8 by 1 pixel line segment. Carry it through square pixels, two colors per 8x1 segment, horizontal clash fringes, candy primaries, black field. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - console or handheld hardware shown in frame

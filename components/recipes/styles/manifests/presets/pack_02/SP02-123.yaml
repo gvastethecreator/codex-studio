@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Endless and oddly comforting, community notices looping through the night.
   rendering_and_quality: Analog cable character-generator look with all text replaced by blank bars.
   key_features: gradient bulletin slide; pixel clip-art; blank crawl band; inset still photo; VHS noise
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Public Access Cable Crawl as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Public access cable crawl: a community-bulletin slide from a character generator, with gradient backgrounds, clip-art and scrolling bands, played over VHS noise. Carry it through gradient bulletin slide, pixel clip-art, blank crawl band, inset still photo, VHS noise. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable fake text
   - readable ticker

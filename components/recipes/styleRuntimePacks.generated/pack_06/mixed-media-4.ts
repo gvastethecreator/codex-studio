@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'salvaged objects in relief; raking side light; real cast shadows; rust and brass; board or shallow box',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Assemblage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Found-object assemblage: the subject built in low relief from real salvaged objects glued and wired onto a wooden board or inside a shallow box. Carry it through salvaged objects in relief, raking side light, real cast shadows, rust and brass, board or shallow box. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'printed photo base; satin and running stitch; French knots; needle holes; thread casting shadow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Embroidery on Photo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Embroidery on photo: a printed photograph pierced and hand-stitched, thread adding color, pattern or light as a physical layer over the image. Carry it through printed photo base, satin and running stitch, French knots, needle holes, thread casting shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -85,7 +85,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'layered coffee washes; tide-line blooms; granules in paper tooth; espresso darks; cold-press paper',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Coffee Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Coffee painting: brewed coffee applied in dilutions from pale tea-brown washes to thick espresso reductions on cold-press paper. Carry it through layered coffee washes, tide-line blooms, granules in paper tooth, espresso darks, cold-press paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -113,7 +113,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'black-grey realism; flat red brush swaths; splatter and drips; abstract bars; off-white ground',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Trash Polka as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Trash polka: realistic black-and-grey rendering violently interrupted by bold red brush swaths, smeared circles, bars and ink splatter. Carry it through black-grey realism, flat red brush swaths, splatter and drips, abstract bars, off-white ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -141,7 +141,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'photocopy toner; marker and ballpoint; halftoned photo scraps; correction fluid; one highlighter color',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Zine Aesthetic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Photocopied zine page: marker drawing, ballpoint hatching and halftoned photo scraps pasted up, then copied twice so everything shares the toner. Carry it through photocopy toner, marker and ballpoint, halftoned photo scraps, correction fluid, one highlighter color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -169,7 +169,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'six to nine tiles; paint chips; fabric swatches; material samples; one shared palette',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Moodboard Color Story as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Moodboard color story: cropped images of the subject beside fabric swatches, paint chips and material samples, all tuned to one small palette. Carry it through six to nine tiles, paint chips, fabric swatches, material samples, one shared palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -197,7 +197,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'cork board; pushpins; index-card sketches; colored thread links; central hero print',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pinned Planning Board as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pinned planning board: sketches, prints and index cards about the subject pinned to cork and linked by colored thread in a hopeful working plan. Carry it through cork board, pushpins, index-card sketches, colored thread links, central hero print. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -225,7 +225,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'hand-torn scraps; white fiber edges; optical color mixing; smaller scraps at the focus; glue sheen',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Torn Paper Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Torn-paper mosaic: the subject built from hundreds of fingernail-sized hand-torn paper bits sorted by color like mosaic tesserae. Carry it through hand-torn scraps, white fiber edges, optical color mixing, smaller scraps at the focus, glue sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -253,7 +253,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'masking, duct and vinyl tape; blade-cut curves; torn ends; flat layered color; strip geometry',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tape Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tape art: the image built entirely from strips of colored masking, duct and vinyl tape laid on a flat surface and trimmed with a blade. Carry it through masking, duct and vinyl tape, blade-cut curves, torn ends, flat layered color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -281,7 +281,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'photographic print base; opaque acrylic swipes; drips; palette-knife smears; one dominant paint color',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paint over Photo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Paint over photo: a photographic print partly covered by opaque acrylic swipes, drips and gestural strokes that hide, extend or redraw the image. Carry it through photographic print base, opaque acrylic swipes, drips, palette-knife smears, one dominant paint color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -309,7 +309,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'gold leaf on red bole; punched tooling; burnished glints; matte tempera figures; crackle',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gold Leaf Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Water-gilded panel: loose gold leaf laid over red bole on gesso, burnished and tooled, with the subject painted in flat matte egg tempera or ink. Carry it through gold leaf on red bole, punched tooling, burnished glints, matte tempera figures, crackle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -337,7 +337,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'three to four stencil layers; cut bridges; overspray halos; registration offset; posterized values',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stencil Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Multi-layer studio stencil: three or four hand-cut stencils sprayed in tonal steps onto board, rebuilding the subject from flat value shapes. Carry it through three to four stencil layers, cut bridges, overspray halos, registration offset, posterized values. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -365,7 +365,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'cut printed motifs; painted wooden ground; amber varnish sheen; crackle glaze; sanded flush edges',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Decoupage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Decoupage: cut printed motifs glued onto a painted wooden surface and sealed under many coats of varnish until paper and paint read as one skin. Carry it through cut printed motifs, painted wooden ground, amber varnish sheen, crackle glaze, sanded flush edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -393,7 +393,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'mounted photos with corners; washi tape; deckle mats; pressed keepsakes; flat-lay page',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scrapbook Layer Grammar as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Scrapbook page: photographs of the subject mounted on patterned paper mats with photo corners, washi tape, die-cut shapes and pressed keepsakes. Carry it through mounted photos with corners, washi tape, deckle mats, pressed keepsakes, flat-lay page. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -421,7 +421,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'hard-masked cutouts; duotone gradient maps; halftone overlays; flat geometric shapes; uniform drop shadows',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Digital Collage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Digital collage: hard-masked photo cutouts, flat geometric shapes, duotone gradient maps and halftone overlays layered in software. Carry it through hard-masked cutouts, duotone gradient maps, halftone overlays, flat geometric shapes, uniform drop shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -450,7 +450,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'impossible scale; matched light direction; unified color grade; rebuilt contact shadows; invisible seams',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Photomontage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Seamless photomontage: several photographs composited into one believable image with an impossible scale or logic, the joins hidden by matched light and grain. Carry it through impossible scale, matched light direction, unified color grade, rebuilt contact shadows, invisible seams. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -478,7 +478,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'modeling paste relief; palette-knife scrapes; embedded tissue; sand grit; drips and graphite',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mixed Media Canvas as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Mixed-media canvas: heavy-body acrylic over gesso with modeling paste, sand, embedded tissue and graphite marks building a thick, scraped surface. Carry it through modeling paste relief, palette-knife scrapes, embedded tissue, sand grit, drips and graphite. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -506,7 +506,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'candle soot plumes; eraser-lifted highlights; feathery edges; scorch marks; brown-black on cream',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fumage (Smoke Art) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fumage: soot from a candle flame deposited on paper in plumes, the subject coaxed out of the smoke and refined by erasing and scratching. Carry it through candle soot plumes, eraser-lifted highlights, feathery edges, scorch marks, brown-black on cream. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -534,7 +534,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'floated pigment on size; combed feather patterns; stylus-drawn motif; dropped color rings; crisp flowing boundaries',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paper Marbling as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Paper marbling: floated pigments on a size bath combed and dragged with a stylus into the subject shapes, then lifted onto paper in one print. Carry it through floated pigment on size, combed feather patterns, stylus-drawn motif, dropped color rings, crisp flowing boundaries. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -563,7 +563,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'scissor-cut printed fragments; halftone rosettes; soft paper drop shadows; mixed coated and matte stock; one accent fragment',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Analog Cut-Paper Collage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Analog cut-paper collage: the subject assembled from scissor-cut pieces of different printed sources, each fragment keeping its own print texture, halftone and color. Carry it through scissor-cut printed fragments, halftone rosettes, soft paper drop shadows, mixed coated and matte stock, one accent fragment. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

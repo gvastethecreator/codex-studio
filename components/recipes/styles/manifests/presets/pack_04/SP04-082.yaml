@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Instructive and satisfying, chaos resolved into intent.
   rendering_and_quality: Process-demonstration finish, the paintover side at concept-final level and the raw side left deliberately crude.
   key_features: split before-and-after frame; raw photo collage with seams; resolved paintover; identical composition; one unifying grade
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Photobash Paintover Iteration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Paintover demonstration: the same frame shown as a raw photobash collage and then as a painted-over concept, side by side. Carry it through split before-and-after frame, raw photo collage with seams, resolved paintover, identical composition, one unifying grade. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable annotations
   - readable text

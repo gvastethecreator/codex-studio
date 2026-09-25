@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: 14–24 mm, landscape subject in the lower third, the arch or band of the Milky Way rising above it.
   atmosphere_and_mood: Awestruck and quiet, a small earth under an enormous sky.
   rendering_and_quality: Clean high-ISO exposure, pinpoint stars, no painted galaxies.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Milky Way Nightscape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Milky Way nightscape: a wide fast lens on a tripod capturing the galactic core arching over a landscape subject, stars as points, not trails. Carry it through Milky Way arch over land, pinpoint stars, landscape in lower third, faint airglow, wide fast lens. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Milky Way arch over land; pinpoint stars; landscape in lower third; faint airglow; wide fast lens
 avoidRules:
   - illustration

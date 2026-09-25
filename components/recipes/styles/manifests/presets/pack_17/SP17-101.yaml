@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Compact, carefully composed miniature image with a centered focal subject, clean edges, and small breathing margin of paper, without lettering.
   atmosphere_and_mood: Precious, calm, ceremonial, and collectible.
   rendering_and_quality: 'Pristine craft-print finish: exact layer registration, no grain noise, crisp shape edges, and luxurious restraint.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gocco Gold Leaf Micro Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Small-format screen print with thick opaque inks: deep green, cream, brick, and one metallic gold layer, each shape sharp-edged with the slight raised ink ridge of a tiny hand screen. Carry it through thick opaque screen inks, metallic gold spot, raised ink ridges, precise layer registration, jewel-like miniature. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: thick opaque screen inks; metallic gold spot; raised ink ridges; precise layer registration; jewel-like miniature
 avoidRules:
   - sloppy registration

@@ -174,7 +174,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Renaissance invention notebook page: sepia pen sketches of a flying machine with bat wings, a gear study and a hand gripping a lever, dense unreadable script marks around them, red chalk shading and foxing. No readable text.',
-        'Renaissance notebook page of studies for a mechanical lion: sepia sketches of its walking gear, a cutaway of the chest, a paw study and dense unreadable script marks around them, red chalk shading. No readable text.',
+        'Renaissance notebook page of anatomy and motion studies for a walking automaton: sepia sketches of a leg at four stages, pulley diagrams and a small portrait of its inventor, unreadable mirror-script marks and red chalk. No readable text.',
         'Renaissance notebook page of war machine designs: a giant siege crossbow, a scythed chariot and a covered battering ram, sepia pen and wash, script marks and foxing. No readable text.',
       ],
     },
@@ -254,7 +254,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Origami crease pattern on a square sheet for a dragon, red mountain and blue valley lines forming a dense geometric web, a small folded dragon sitting beside it. No readable text or numbers.',
-        'Origami crease pattern for a mounted knight with lance, dense red mountain and blue valley lines on a square, the folded model standing beside the sheet. No readable text or numbers.',
+        'Origami crease pattern pinned to a workshop wall for a flapping bird with wings in motion, radial red and blue fold lines, three test folds in different papers taped beside it. No readable text or numbers.',
         'Origami crease pattern for a crane with an extra-long tail, clean radial red and blue lines on a square sheet, the folded crane and a bone folder beside it. No readable text or numbers.',
       ],
     },
@@ -354,8 +354,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Gear train drawing for the wing mechanism of a clockwork dragon, meshing gears in pitch circles, a crank and linkage to the wing spar, rotation arrows and a side section. No readable text or numbers.',
-        'Gear train drawing of a water-mill mechanism: waterwheel shaft, crown gear and millstone spindle, compass-drawn tooth outlines. No readable text or numbers.',
-        'Gear train drawing of an astronomical clock with nested planetary gears and a moon-phase disk. No readable text or numbers.',
+        'Gear train drawing of a water-mill mechanism in side section: waterwheel shaft, pit wheel, crown gear and millstone spindle, compass-drawn tooth outlines and rotation arrows. No readable text or numbers.',
+        'Gear train drawing of an astronomical clock with nested planetary gears, a moon-phase disk and a plain star dial, pitch circles in grey and fine ink teeth. No readable text or numbers.',
       ],
     },
     {
@@ -375,7 +375,7 @@ const spec: Spec = {
       briefs: [
         'Ship rigging diagram of a ghost galleon in profile, tattered sails outlined in pale washes, every stay, shroud and halyard drawn as a fine web, a figurehead of a drowned queen. No readable text or numbers.',
         'Rigging diagram of a war galleon with three masts and a spritsail, fine pen lines and pale sail washes. No readable text or numbers.',
-        'Rigging diagram of a smuggler sloop with a single mast and bowsprit, sails furled. No readable text or numbers.',
+        'Rigging diagram of a smuggler sloop in profile with a single tall mast, long bowsprit and furled sails, every halyard and stay drawn as a fine line, pale sea wash below. No readable text or numbers.',
       ],
     },
     {
@@ -395,7 +395,7 @@ const spec: Spec = {
       briefs: [
         'Architectural elevation of a gothic cathedral west front: rose window, pointed portals and gargoyles, grey and sepia wash shadows, tiny scale figures on the steps. No readable text or numbers.',
         'Elevation of a wizard tower with spiral balconies, ink and wash, a cat on the ground line for scale. No readable text or numbers.',
-        'Elevation of a fortified city gate with portcullis and banners. No readable text or numbers.',
+        'Architectural elevation of a fortified city gate with twin towers, raised portcullis and hanging banners, sepia wash shadows in the arch and tiny guards on the walls for scale. No readable text or numbers.',
       ],
     },
     {
@@ -414,8 +414,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Landscape plan of a hedge maze with a sunken garden and a black obelisk at the center, contour lines, canopy circles for yews and colored-pencil greens. No readable text or numbers.',
-        'Landscape plan of a monastery cloister garden with herb beds and a well. No readable text or numbers.',
-        'Landscape plan of a sacred grove around a stone circle on a hill. No readable text or numbers.',
+        'Landscape plan of a monastery cloister garden with four herb beds around a central well, canopy circles for fruit trees, gravel paths and colored-pencil greens on paper. No readable text or numbers.',
+        'Landscape plan of a sacred grove on a hill around a stone circle, contour lines rising to the summit, oak canopies as shaded circles and a winding pilgrim path. No readable text or numbers.',
       ],
     },
     {
@@ -434,8 +434,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Stereotomy drawing of a skewed pointed arch over a crypt entrance, every voussoir block projected with fine construction lines and pale sandstone washes. No readable text or numbers.',
-        'Stereotomy drawing of a ribbed vault with each rib stone unfolded. No readable text or numbers.',
-        'Stereotomy drawing of a spiral staircase in a tower, each step stone projected. No readable text or numbers.',
+        'Stereotomy drawing of a ribbed gothic vault with each rib stone unfolded into flat templates beside the projection, fine construction lines and pale sandstone washes. No readable text or numbers.',
+        'Stereotomy drawing of a spiral staircase inside a round tower, each step stone projected in plan and elevation, fine construction lines radiating from the newel. No readable text or numbers.',
       ],
     },
   ] satisfies Create[],

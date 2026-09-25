@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.
   atmosphere_and_mood: Theatrical, nostalgic, charming and quaint, coming from the handmade or toy quality.
   rendering_and_quality: Photoreal craft-object rendering with believable scale, material detail and construction evidence.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paper Theater Puppets as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Paper theater: flat printed cardboard figures on sticks in a miniature stage with layered wings. Carry it through flat card cut-outs, toy stage, layered wings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: flat card cut-outs; toy stage; layered wings
 avoidRules:
   - brand logo or trademarked toy likeness

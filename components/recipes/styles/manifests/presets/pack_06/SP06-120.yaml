@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Ominous and awe-struck, the moment before an impossible fight.
   rendering_and_quality: Cinematic painterly finish, clear silhouettes at both scales; no health bars or titles.
   key_features: extreme scale contrast; low angle from behind the hero; boss rim light; drifting ash; one ominous color
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Boss Encounter Key Art Tension as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Boss encounter key art: a colossal threat towering over a tiny challenger, cinematic painterly rendering built on extreme scale contrast. Carry it through extreme scale contrast, low angle from behind the hero, boss rim light, drifting ash, one ominous color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - known game HUD layout

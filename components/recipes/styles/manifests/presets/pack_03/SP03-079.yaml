@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Monumental and weathered, a form that has stood for centuries.
   rendering_and_quality: Real metal with layered patina and wear, never painted plastic.
   key_features: cast bronze sheen; verdigris in crevices; polished wear spots; raking light; casting texture
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bronze Statue as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cast bronze: the target as a bronze casting with polished high points, dark recesses and green-blue verdigris patina in the crevices. Carry it through cast bronze sheen, verdigris in crevices, polished wear spots, raking light, casting texture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the surroundings
   - changing the camera

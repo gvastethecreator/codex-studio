@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Dangerous and immense, heat you can read in the motion.
   rendering_and_quality: High-resolution volumetric render with self-shadowed smoke and temperature-driven emission; no painted or cartoon flames.
   key_features: pyroclastic billows; blackbody color ramp; self-lit smoke; advected embers; clear rise direction
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies VFX Simulation (Fire/Smoke) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Pyro volume simulation: fire and smoke rendered as a physically simulated volume, with rolling pyroclastic billows, turbulent vortices and incandescent cores. Carry it through pyroclastic billows, blackbody color ramp, self-lit smoke, advected embers, clear rise direction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise likeness
   - recognizable game or film world

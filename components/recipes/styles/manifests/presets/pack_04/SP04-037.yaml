@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Rational, constructive and playful, function made beautiful.
   rendering_and_quality: Exact geometric primitives only; no decoration, no ornament and no typography.
   key_features: circles squares triangles and bars; primary triad with black; asymmetric grid; dominant circle; flat matte ink
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bauhaus Poster as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Bauhaus poster: the subject rebuilt from circles, squares, triangles and thick bars on an asymmetric grid. Carry it through circles squares triangles and bars, primary triad with black, asymmetric grid, dominant circle, flat matte ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - invented slogans
   - fake lettering

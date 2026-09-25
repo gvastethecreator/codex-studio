@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Wide film frame with tracks entering from one side and exploding outward.
   atmosphere_and_mood: Elegant and explosive, a hidden collision drawn in lines.
   rendering_and_quality: Archival film look; no numbers or text on the frame.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bubble Chamber Photograph as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Bubble chamber photograph: a mid-century particle-physics record of tiny bubble tracks in liquid, curving and spiraling in a magnetic field. Carry it through dotted bubble tracks, tight spirals, V-shaped decays, fiducial crosses, archival film frame. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: dotted bubble tracks; tight spirals; V-shaped decays; fiducial crosses; archival film frame
 avoidRules:
   - readable readouts

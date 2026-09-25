@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Shimmering and serene, light turned into moving lace.
   rendering_and_quality: Photon-accurate caustics; distinct from the photographic glass still life in pack_01.
   key_features: caustic light networks; focused hot spots; rippling bands on nearby surfaces; spectral fringes; refracting target
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Caustics as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Caustic light material response: a clear or liquid target that focuses light into bright dancing networks and bands on the surfaces around it. Carry it through caustic light networks, focused hot spots, rippling bands on nearby surfaces, spectral fringes, refracting target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the surroundings
   - changing the camera

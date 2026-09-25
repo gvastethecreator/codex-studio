@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Severe, antiseptic and silent, order so complete that it becomes uneasy.
   rendering_and_quality: Hairline vector precision, bloom-softened whites, one flat shadow band per form, and no hand-drawn wobble anywhere.
   key_features: ruler-straight hairline contours; overexposed white bloom; single ultramarine shadow band; hairline panel seams; vast white negative space
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sterile Arcology Severity as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Clean digital architectural anime: ruler-straight hairline contours traced from a 3D layout, near-white fills, and overexposed bloom on every bright plane. Carry it through ruler-straight hairline contours, overexposed white bloom, single ultramarine shadow band, hairline panel seams, vast white negative space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'density shown as brightness; blue-black film; bone-white metal and bone; overlapping translucency; interior structure',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies X-Ray Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "X-ray radiograph: dense material blocks the beam and shows bright, thin material lets it through and stays dark, revealing the inside of the subject as a glowing negative. Carry it through density shown as brightness, blue-black film, bone-white metal and bone, overlapping translucency, interior structure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -55,7 +55,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'white-hot greyscale; black cold background; soft heat bloom; residual heat trails; low-resolution sensor',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thermal Camera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "White-hot thermal feed: a surveillance-grade infrared camera shown in greyscale, where heat is white and cold is black, with a slightly soft, noisy sensor image. Carry it through white-hot greyscale, black cold background, soft heat bloom, residual heat trails, low-resolution sensor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -80,7 +80,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'phosphor green monochrome; round eyepiece vignette; scintillation noise; bloom halos; eyeshine',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Night Vision (Green) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Night-vision intensifier: starlight amplified by an image tube and shown in phosphor green inside a round eyepiece view. Carry it through phosphor green monochrome, round eyepiece vignette, scintillation noise, bloom halos, eyeshine. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -107,7 +107,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Intimate and mysterious, a shape half glimpsed through sound.',
       rendering_and_quality: 'Credible ultrasound speckle; no measurement text or medical labels.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Medical Ultrasound Scan as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Medical ultrasound: sound echoes drawn as a grainy greyscale fan-shaped image, with bright reflective boundaries and dark fluid spaces. Carry it through fan-shaped sector, speckle noise, bright echo boundaries, dark fluid spaces, acoustic shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'fan-shaped sector; speckle noise; bright echo boundaries; dark fluid spaces; acoustic shadows',
     },
@@ -135,7 +135,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Calm and revealing, a quiet map of an inside.',
       rendering_and_quality: 'Clinical MRI look with no text, markers or diagnosis.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies MRI Slice as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "MRI slice: a thin cross-section through the subject where soft tissues separate into smooth grey tones, water bright or dark depending on the weighting. Carry it through thin cross-section slice, smooth greyscale soft tissue, black background, sagittal or axial view, faint ringing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'thin cross-section slice; smooth greyscale soft tissue; black background; sagittal or axial view; faint ringing',
     },
@@ -169,7 +169,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Archaeological and uncanny, secrets revealed without opening anything.',
       rendering_and_quality: 'Scientific volume render with no labels, scale bars or measurements.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies CT Volume Rendering as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "CT volume rendering: a stack of X-ray slices reconstructed into a 3D view where dense materials appear as ivory solids and softer layers as translucent shells. Carry it through ivory reconstructed solids, translucent outer shell, cut-away reveal, slice stepping, black background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'ivory reconstructed solids; translucent outer shell; cut-away reveal; slice stepping; black background',
     },
@@ -199,7 +199,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Deep and ghostly, lost things found in the dark.',
       rendering_and_quality: 'Credible sonar mosaic; no coordinates or grid text.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Side-Scan Sonar as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Side-scan sonar: acoustic strips of the seafloor recorded from a towed fish, turning shapes into amber reliefs with long black acoustic shadows. Carry it through amber acoustic relief, long black shadows, central nadir stripe, scan-line texture, top-down swath. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'amber acoustic relief; long black shadows; central nadir stripe; scan-line texture; top-down swath',
     },
@@ -228,7 +228,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Tense and watchful, something approaching in the sweep.',
       rendering_and_quality: 'Analog radar display look; no readable numbers or bearings.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Radar PPI Scope as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Radar plan-position scope: a round phosphor display where a rotating sweep paints echoes of ships, land and weather that slowly fade. Carry it through rotating sweep line, fading phosphor echoes, round scope, range rings, green glow on black. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'rotating sweep line; fading phosphor echoes; round scope; range rings; green glow on black',
     },
@@ -260,7 +260,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Detached and revealing, the planet seen in invisible light.',
       rendering_and_quality: 'Remote-sensing false-color composite; no map labels or borders.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Multispectral Satellite False Color as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Multispectral satellite false color: near-infrared mapped to red so healthy vegetation blazes red, water turns black-blue and cities cyan-grey. Carry it through red vegetation, black-blue water, cyan cities, orbital top-down, near-infrared false color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'red vegetation; black-blue water; cyan cities; orbital top-down; near-infrared false color',
     },
@@ -288,7 +288,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Cold and technical, the world seen through storm and night alike.',
       rendering_and_quality: 'Credible SAR speckle look; no labels or scale bars.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Synthetic Aperture Radar as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Synthetic aperture radar: a satellite radar image in grainy greyscale where rough and metal surfaces return bright and smooth water stays black. Carry it through speckled greyscale, black smooth water, bright metal returns, radar shadow on slopes, layover distortion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'speckled greyscale; black smooth water; bright metal returns; radar shadow on slopes; layover distortion',
     },
@@ -321,7 +321,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Low-light sensor look without green tint; distinct from tube night vision.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Starlight Low-Light Camera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Starlight low-light camera: an ultra-sensitive sensor that turns a moonless night into a grainy, washed grey daylight. Carry it through moonless night made grey daylight, heavy grain, stars visible, blown lamps, no green tint. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'moonless night made grey daylight; heavy grain; stars visible; blown lamps; no green tint',
     },
@@ -350,7 +350,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Quiet and diagnostic, the body mapped as faint light.',
       rendering_and_quality: 'Gamma-camera noise and blur; no labels, arrows or diagnoses.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Nuclear Scintigraphy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Nuclear scintigraphy: a gamma camera image of where a tracer gathers, shown as soft blurry dots and hot spots on black or white. Carry it through tracer hot spots, coarse counting noise, blurry outline, paired front and back views, heat-scale color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'tracer hot spots; coarse counting noise; blurry outline; paired front and back views; heat-scale color',
     },
@@ -379,7 +379,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean scientific visualization without any axes, numbers, legends or captions.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hyperspectral Data Cube as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hyperspectral data cube: an image shown as the top face of a 3D block whose sides display hundreds of spectral bands as rainbow streaks. Carry it through isometric data cube, subject on the top face, rainbow spectral sides, band striations, dark background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'isometric data cube; subject on the top face; rainbow spectral sides; band striations; dark background',
     },
@@ -412,7 +412,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Deep and geological, hidden history pressed into layers.',
       rendering_and_quality: 'Credible seismic profile with no depth numbers or annotations.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Seismic Reflection Section as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Seismic reflection section: a vertical slice of the ground built from echo traces, showing rock layers as stacked wiggly bands. Carry it through stacked reflection bands, wiggle traces, fault offsets, red-white-blue polarity, wide cross-section. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'stacked reflection bands; wiggle traces; fault offsets; red-white-blue polarity; wide cross-section',
     },
@@ -445,7 +445,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Credible field radargram look without any depth scales, grids or text.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ground-Penetrating Radar as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ground-penetrating radar profile: a grey radargram where buried objects appear as bright hyperbola arcs and buried surfaces as bands. Carry it through hyperbola arcs over buried objects, banded background, horizontal profile, void reflections, grey radargram. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'hyperbola arcs over buried objects; banded background; horizontal profile; void reflections; grey radargram',
     },
@@ -477,7 +477,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Awe-struck and quiet, invisible rain made visible.',
       rendering_and_quality: 'Real cloud-chamber photograph look; not a digital particle effect.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cloud Chamber Particle Tracks as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cloud chamber: supersaturated vapor inside a dark chamber where passing particles leave thin white condensation trails. Carry it through white vapor trails on black, raking side light, straight and curling tracks, fat alpha streaks, top-down chamber view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'white vapor trails on black; raking side light; straight and curling tracks; fat alpha streaks; top-down chamber view',
     },
@@ -506,7 +506,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Elegant and explosive, a hidden collision drawn in lines.',
       rendering_and_quality: 'Archival film look; no numbers or text on the frame.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bubble Chamber Photograph as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bubble chamber photograph: a mid-century particle-physics record of tiny bubble tracks in liquid, curving and spiraling in a magnetic field. Carry it through dotted bubble tracks, tight spirals, V-shaped decays, fiducial crosses, archival film frame. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'dotted bubble tracks; tight spirals; V-shaped decays; fiducial crosses; archival film frame',
     },
@@ -540,7 +540,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clinical fundus photograph look without any markings, arrows or diagnosis.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Retinal Fundus Image as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Retinal fundus photograph: the inside back of an eye seen through the pupil, a glowing orange-red disc with branching vessels and a bright optic disc. Carry it through orange-red retinal disc, branching vessels, pale optic disc, black circular surround, flash center. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'orange-red retinal disc; branching vessels; pale optic disc; black circular surround; flash center',
     },
@@ -573,7 +573,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Luminous and alive, a hidden neon forest inside living things.',
       rendering_and_quality: 'Scientific micrograph look; no scale bars or labels.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Confocal Fluorescence Microscopy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Confocal fluorescence microscopy: stained structures glowing in separate colored channels against black, sharp in thin optical sections. Carry it through glowing colored channels, black background, thin optical section, filament and nucleus detail, channel overlap. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'glowing colored channels; black background; thin optical section; filament and nucleus detail; channel overlap',
     },
@@ -605,7 +605,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Quiet and vast, human life drawn in scattered light.',
       rendering_and_quality: 'Orbital night imagery with no borders, labels or map lines.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Satellite Night Lights as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Satellite night lights: the dark side of the Earth seen from orbit, with settlements as gold and white light clusters threaded by roads. Carry it through gold city lights on black, road webs, dark mountain gaps, blue limb airglow, orbital view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'gold city lights on black; road webs; dark mountain gaps; blue limb airglow; orbital view',
     },

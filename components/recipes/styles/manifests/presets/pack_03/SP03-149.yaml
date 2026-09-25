@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested camera; the frozen action shows several directions of motion at once.
   atmosphere_and_mood: Kinetic and strange, movement made visible without blur.
   rendering_and_quality: Clean velocity buffer with no motion blur applied and no shading.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Motion Vector Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Motion vector pass: each pixel colored by its screen-space velocity, red for horizontal and green for vertical movement, so moving parts glow and still parts go dark. Carry it through red horizontal and green vertical velocity, dark static areas, brightest fastest parts, no blur, opposing motions split by color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: red horizontal and green vertical velocity; dark static areas; brightest fastest parts; no blur; opposing motions split by color
 avoidRules:
   - sensor noise

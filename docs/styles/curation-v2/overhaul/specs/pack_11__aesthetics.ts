@@ -328,7 +328,7 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Holographic glitter dragon skull covered in iridescent flakes scattering rainbow sparkles, on black velvet under point lights. No text or logo.',
+        'Holographic glitter dragon skull covered in tiny iridescent flakes that scatter rainbow sparkles across black velvet, point lights creating starburst flares on the horns and eye sockets, macro close-up. No text or logo.',
         'Holographic glitter crown resting on a deep violet velvet cushion in a dark throne room, iridescent flakes throwing rainbow sparkles across the stone walls. No text or logo.',
         'Holographic glitter witch hat floating above a black cauldron, iridescent flakes shifting from silver to pink to green, tiny star sparkles and flare, dark background. No text or logo.',
       ],

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: 'Preserve the requested emotional tone; directional light does not assign a new one.'
   rendering_and_quality: 'Keep light boundaries crisp and gradients subtle; separate forms without excessive glow.'
   key_features: 'Geometric color planes; progressive value steps; crisp lit edges; controlled gradients; clear focal hierarchy.'
-  creative_brief: 'Use a measured light-to-shadow progression along existing shapes to build hierarchy. Preserve subject, action, count, camera, and mood without shifting composition.'
+  creative_brief: "Use a measured light-to-shadow progression along existing shapes to build hierarchy. Preserve subject, action, count, camera, and mood without shifting composition. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

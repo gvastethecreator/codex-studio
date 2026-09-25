@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; low among the plants with drifts overlapping in depth, a mown path or single subject in the middle distance.
   atmosphere_and_mood: Wild yet composed, a meadow designed to age beautifully.
   rendering_and_quality: Natural-light photograph with specific seedhead structure and backlit plumes, no bedding annuals or bare mulch.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Naturalistic Perennial Drift as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Naturalistic perennial drift: large sweeps of grasses interwoven with repeated perennials, planted as a self-sustaining matrix and left standing through winter for structure and seedheads. Carry it through grass matrix with repeated perennial drifts, seedheads left for winter, backlit plumes, mown path through, bronze and purple palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: grass matrix with repeated perennial drifts; seedheads left for winter; backlit plumes; mown path through; bronze and purple palette
 avoidRules:
   - golden-hour garden postcard formula

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close, intimate crop or looming presence with most of the frame in deep black and a single luminous focus.
   atmosphere_and_mood: Grave, hushed, mysterious, and dark.
   rendering_and_quality: 'Smooth, noiseless mezzotint quality: blacks deep and rich, gradations soft, subject clearly readable.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mezzotint Abyss Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Velvety mezzotint where everything begins in deep rocked black and forms are burnished up into soft glowing grays and pale highlights, with almost no line. Carry it through rocked velvet black, burnished soft light, no line, single luminous focus, grave nocturnal hush. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: rocked velvet black; burnished soft light; no line; single luminous focus; grave nocturnal hush
 avoidRules:
   - line hatching

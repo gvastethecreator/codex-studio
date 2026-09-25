@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; the wear pattern should explain how the object has been handled for years.
   atmosphere_and_mood: Lived-with and storied, a tool that has outlasted its owners.
   rendering_and_quality: Wear placed by edges, cavities and touch, never an even overlay of scratches or noise.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Curvature Wear Hero Prop as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hero-prop wear: a painted metal object whose damage follows its geometry — paint chipped on convex edges, grime packed into concave corners, polish where hands grip. Carry it through chips on convex edges, grime in cavities, paint-primer-steel layers, rub-polished grip points, runoff streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: chips on convex edges; grime in cavities; paint-primer-steel layers; rub-polished grip points; runoff streaks
 avoidRules:
   - multi-view asset sheet

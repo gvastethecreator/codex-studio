@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Poster-safe vertical card with asymmetric void, one small-to-medium focal icon, and compact support marks that never become readable typography.
   atmosphere_and_mood: Quiet, fatalistic, spare, austere, and threatening without spectacle.
   rendering_and_quality: Crisp minimalist occult engraving with very low detail budget and strong thumbnail readability.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies White Thread Omen Cards as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Minimal black-field omen cards where fragile white line, radiating rule marks, suspended relics, and blank space carry the dread. Carry it through negative black space, thin white thread line, sparse halos, small omen relics, asymmetrical card balance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: negative black space; thin white thread line; sparse halos; small omen relics; asymmetrical card balance; clean minimal print finish
 avoidRules:
   - filled tarot borders

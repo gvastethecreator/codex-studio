@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; forms simplified with slightly exaggerated proportions and generous space.
   atmosphere_and_mood: Warm, cozy and calm, a contemporary editorial feel.
   rendering_and_quality: Crisp shapes with directional grain shading only; no smooth gradients, no line art, no 3D.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grain-Shaded Flat Illustration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Grain-shaded flat illustration: simple rounded vector shapes shaded not by gradients but by speckled noise grain brushed along one side of each form. Carry it through rounded flat vector shapes, directional noise-grain shading, warm muted palette, no outlines, generous space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: rounded flat vector shapes; directional noise-grain shading; warm muted palette; no outlines; generous space
 avoidRules:
   - photo

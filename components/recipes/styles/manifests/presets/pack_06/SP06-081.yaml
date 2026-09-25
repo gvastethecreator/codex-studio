@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Quiet and portable, a small glowing-green world held in the hands.
   rendering_and_quality: Hard square pixels with no anti-aliasing and no fifth color; tile repetition allowed in backgrounds.
   key_features: four olive-green shades; 8x8 tiles; checkerboard dither; pixel-gap grid; LCD ghosting
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Four-Shade Pea-Green LCD as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Unlit reflective handheld LCD at about 160 by 144 pixels, drawn with exactly four shades of olive green on 8 by 8 tiles. Carry it through four olive-green shades, 8x8 tiles, checkerboard dither, pixel-gap grid, LCD ghosting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - console or handheld hardware shown in frame

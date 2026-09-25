@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Irreverent playfulness and quick shifts in emphasis.
   rendering_and_quality: Rough printed edges, deliberate misalignment and legible broad shapes.
   key_features: tilted manga panel cuts; torn overdrawn contour; complementary color blocks; halftone collage; registration slip
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chaotic Indie Adolescence as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Punk-indie anime: manga panel cuts bursting into the frame, torn overdrawn contours, collage blocks and wonky pop shapes with screen-print halftone and registration slip. Carry it through tilted manga panel cuts, torn overdrawn contour, complementary color blocks, halftone collage, registration slip. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

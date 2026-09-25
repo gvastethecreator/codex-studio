@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Dreamlike and slightly uncanny, sweetness scaled up until it becomes monumental.
   rendering_and_quality: Soft-edged surreal realism; candy materials behave like building materials and carry believable loads.
   key_features: sugar-glass windows; marshmallow domes; candy-striped columns; piped-icing cornices; building-scale candy materials
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Confectionery Surrealism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Full-scale confectionery architecture: sugar-glass windows, marshmallow domes, candy-striped load-bearing columns and piped-icing cornices built at real building size. Carry it through sugar-glass windows, marshmallow domes, candy-striped columns, piped-icing cornices, building-scale candy materials. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - licensed fantasy location
   - copy of a known film or game building

@@ -28,7 +28,7 @@ visualDna:
   camera_and_composition: Medium-full shot with space on the side the loose parts trail toward, the body near a third line.
   atmosphere_and_mood: Graceful, lingering momentum after a decisive move.
   rendering_and_quality: Clear S-curves of consistent lag and still, sharp faces and hands.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cloth-and-Hair Follow-Through Trails as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Anime secondary-motion staging: the body has just stopped or turned, and everything loose on it, including hair, cloak, sleeves and straps, keeps flowing in long lagging S-curves that show where the movement came from. Carry it through lagging S-curves in hair and cloth, body already stopped or turned, tapering tips, light along each fold, trailing space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: lagging S-curves in hair and cloth; body already stopped or turned; tapering tips; light along each fold; trailing space
 avoidRules:
   - added opponent

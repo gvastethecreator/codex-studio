@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Tender and unhurried, warmth and softness keeping every edge gentle.
   rendering_and_quality: 'Lab-scanned negative look: soft contrast curve, fine grain across the frame, no HDR clarity or oversaturation.'
   key_features: overexposed color negative; peach skin tones; pastel highlight rolloff; lifted warm shadows; fine even grain
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kodak Portra 400 as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Kodak Portra 400 color negative: a forgiving portrait stock rated at 400 and usually overexposed by a stop, giving creamy low-contrast color and flattering skin. Carry it through overexposed color negative, peach skin tones, pastel highlight rolloff, lifted warm shadows, fine even grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - clean digital sensor look
   - generic stock-photo face

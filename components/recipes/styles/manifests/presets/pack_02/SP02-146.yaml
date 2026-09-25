@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Fan- or sector-shaped image narrowing to the top, subject in cross-section.
   atmosphere_and_mood: Intimate and mysterious, a shape half glimpsed through sound.
   rendering_and_quality: Credible ultrasound speckle; no measurement text or medical labels.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Medical Ultrasound Scan as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Medical ultrasound: sound echoes drawn as a grainy greyscale fan-shaped image, with bright reflective boundaries and dark fluid spaces. Carry it through fan-shaped sector, speckle noise, bright echo boundaries, dark fluid spaces, acoustic shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: fan-shaped sector; speckle noise; bright echo boundaries; dark fluid spaces; acoustic shadows
 avoidRules:
   - readable readouts

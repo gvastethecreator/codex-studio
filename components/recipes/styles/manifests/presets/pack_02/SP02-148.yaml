@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Three-quarter view of the object with the outer layer cut away to reveal the inside.
   atmosphere_and_mood: Archaeological and uncanny, secrets revealed without opening anything.
   rendering_and_quality: Scientific volume render with no labels, scale bars or measurements.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies CT Volume Rendering as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "CT volume rendering: a stack of X-ray slices reconstructed into a 3D view where dense materials appear as ivory solids and softer layers as translucent shells. Carry it through ivory reconstructed solids, translucent outer shell, cut-away reveal, slice stepping, black background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: ivory reconstructed solids; translucent outer shell; cut-away reveal; slice stepping; black background
 avoidRules:
   - readable readouts

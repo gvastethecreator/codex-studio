@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing inside a rounded mask shape, lit from behind.
   atmosphere_and_mood: Wondrous and old-fashioned, a travel lecture in a darkened hall.
   rendering_and_quality: Hand-tinted projected glass look; not modern color photography.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hand-Colored Lantern Slide as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hand-colored lantern slide: a black-and-white positive on glass tinted by hand with transparent dyes and projected by a magic lantern. Carry it through hand-tinted transparent dyes, monochrome base, projected glow, rounded mask, tints slipping past edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: hand-tinted transparent dyes; monochrome base; projected glow; rounded mask; tints slipping past edges
 avoidRules:
   - illustration

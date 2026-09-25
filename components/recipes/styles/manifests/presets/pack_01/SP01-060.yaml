@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Unflinching and weary, quiet exhaustion instead of spectacle or triumph.
   rendering_and_quality: Credible press photograph; no explosions, gore or heroic posing unless the prompt asks for them.
   key_features: desaturated dust palette; 35 mm closeness; tilted urgent framing; exhaustion over spectacle; grain
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Documentary (War) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "War reportage: a 35 mm witness close to exhausted people in harsh conditions, shot fast, without heroics or staging. Carry it through desaturated dust palette, 35 mm closeness, tilted urgent framing, exhaustion over spectacle, grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - staged advertisement
   - stock-photo gloss

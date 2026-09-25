@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Visual silence and numb detachment; nothing in the picture is loud.
   rendering_and_quality: Crisp dashed contours of even weight, clean black fills and one accent color; illustrated, never a photographed object on black.
   key_features: broken dash contours; large near-black negative pockets; one cyan or acid-green edge accent; thinning dot noise; flat matte blacks
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Black Signal Nihilism Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Graphic anime ink whose contours break into dashes at uneven intervals, like a lost transmission, separated by large clean pockets of near-black negative space. Carry it through broken dash contours, large near-black negative pockets, one cyan or acid-green edge accent, thinning dot noise, flat matte blacks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

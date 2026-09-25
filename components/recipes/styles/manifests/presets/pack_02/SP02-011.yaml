@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Melancholic and philosophical, technology pressing in from every side.
   rendering_and_quality: Film-print cel animation with slight gate weave; no modern digital sheen.
   key_features: cel animation with painted backgrounds; green CRT cast; two-tone cel shadows; dense cables; film grain
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyberpunk Anime (90s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "90s cyberpunk anime film: dense cel animation over hand-painted backgrounds, with a sickly green CRT cast and techno-organic clutter. Carry it through cel animation with painted backgrounds, green CRT cast, two-tone cel shadows, dense cables, film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - readable fake text

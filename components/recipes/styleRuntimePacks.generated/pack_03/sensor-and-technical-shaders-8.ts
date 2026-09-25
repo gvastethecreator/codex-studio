@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'facing-ratio fresnel rims; additive stacking toward white; modeled interior shown as nested contours; perspective 3D depth; no lights',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies X-Ray Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fresnel x-ray shader: every surface drawn as additive glowing shells whose brightness follows the facing ratio, bright at grazing silhouettes and nearly clear where faces look at the camera. Carry it through facing-ratio fresnel rims, additive stacking toward white, modeled interior shown as nested contours, perspective 3D depth, no lights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -58,7 +58,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'simulated temperature attribute; jet blue-to-red ramp; crisp mesh edges; faint diffuse shading; no sensor bloom',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thermal Heatmap Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Thermal heatmap shader: a simulated temperature attribute diffused through clean 3D geometry and shown through a smooth false-color ramp, crisp as a CG render, with no infrared camera behind it. Carry it through simulated temperature attribute, jet blue-to-red ramp, crisp mesh edges, faint diffuse shading, no sensor bloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -91,7 +91,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Screen-space point sprites of uniform size, no surface reconstruction and no soft splat blending.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lidar Point Cloud Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Lidar point cloud render: the scene shown only as millions of tiny points sampled on surfaces, with no meshes, so gaps and scan shadows reveal how it was measured. Carry it through millions of tiny points, height or intensity coloring, scan shadows behind objects, concentric ground rings, black void. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'millions of tiny points; height or intensity coloring; scan shadows behind objects; concentric ground rings; black void',
     },
@@ -122,7 +122,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean anti-aliased depth buffer normalized between near and far, with no banding and no noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Z-Depth Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Z-depth render pass: each pixel shows only its distance from the camera, near surfaces white fading smoothly to black at the far clip. Carry it through distance as brightness, white near to black far, hard steps at overlapping edges, no texture, no lighting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'distance as brightness; white near to black far; hard steps at overlapping edges; no texture; no lighting',
     },
@@ -153,7 +153,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean anti-aliased buffer with no shading, no grain and smooth interpolation across curves.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies World-Space Normal Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "World-space normal pass: each surface colored by the direction it faces, so the X, Y and Z axes map to red, green and blue. Carry it through axis-to-RGB color mapping, pastel lilac and mint fields, hard color changes at creases, no lighting, carved detail as tiny shifts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'axis-to-RGB color mapping; pastel lilac and mint fields; hard color changes at creases; no lighting; carved detail as tiny shifts',
     },
@@ -184,7 +184,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean viewport-style render with a sharp grid and no other material; seams and stretches left visible.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies UV Checker Grid Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "UV checker test shader: the model wrapped in a colored checker grid that exposes its texture mapping, with stretching, pinching and seams visible. Carry it through colored checker grid, stretched cells on strained areas, visible UV seams, orientation arrows only, simple viewport light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'colored checker grid; stretched cells on strained areas; visible UV seams; orientation arrows only; simple viewport light',
     },
@@ -215,7 +215,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp baked-texture look with pixel-sharp edge lines, no ambient-occlusion blur and no cast shadows.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Curvature Cavity Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Curvature and cavity bake: the model shown as mid grey where flat, white on convex edges and dark in concave creases, the map texture artists use for wear. Carry it through mid-grey flats, white convex edge lines, dark concave grooves, no light direction, sharp engraved detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'mid-grey flats; white convex edge lines; dark concave grooves; no light direction; sharp engraved detail',
     },
@@ -249,7 +249,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Compositing-buffer finish with exact object boundaries and no gradients.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Object ID Matte Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Object ID matte pass: every separate object filled with one flat random color, so the whole scene becomes a patchwork map of its parts. Carry it through one flat random color per object, no shading, crisp object edges, patchwork of many parts, black background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'one flat random color per object; no shading; crisp object edges; patchwork of many parts; black background',
     },
@@ -283,7 +283,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Kinetic and strange, movement made visible without blur.',
       rendering_and_quality: 'Clean velocity buffer with no motion blur applied and no shading.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Motion Vector Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Motion vector pass: each pixel colored by its screen-space velocity, red for horizontal and green for vertical movement, so moving parts glow and still parts go dark. Carry it through red horizontal and green vertical velocity, dark static areas, brightest fastest parts, no blur, opposing motions split by color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'red horizontal and green vertical velocity; dark static areas; brightest fastest parts; no blur; opposing motions split by color',
     },
@@ -318,7 +318,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean real-time refraction; no schlieren shadowgraph look, no smoke and no color tint.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Heat-Distortion Shimmer Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Heat-distortion shader: rising columns of screen-space refraction above hot sources, warping and rippling whatever lies behind them. Carry it through rising refraction columns, wavy warped background lines, strongest near source, no color tint, no smoke. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'rising refraction columns; wavy warped background lines; strongest near source; no color tint; no smoke',
     },
@@ -353,7 +353,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp CG section with no torn or broken edges; the removed half is simply absent, never exploded.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Voxel Cross-Section Cutaway as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Clipping-plane section shader: the model sliced cleanly by a flat plane, the cut face capped with a grid of solid voxels colored by the material inside. Carry it through flat clipping plane, voxelized section cap, one color per interior material, beauty-lit outer half, no explosion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'flat clipping plane; voxelized section cap; one color per interior material; beauty-lit outer half; no explosion',
     },
@@ -388,7 +388,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Additive line render with crisp slice edges; distinct from translucent scanlined hologram material.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Depth-Sliced Hologram Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Depth-sliced hologram shader: the subject rebuilt as dozens of parallel glowing contour slices stacked in depth, like a volumetric display, with dark gaps between layers. Carry it through stacked parallel contour slices, dark gaps between layers, amber or green self-lit lines, no scanlines, no projector beam. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'stacked parallel contour slices; dark gaps between layers; amber or green self-lit lines; no scanlines; no projector beam',
     },
@@ -419,7 +419,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean diffuse-color buffer with crisp texture detail and no shading of any kind.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Unlit Albedo Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Unlit albedo pass: the scene shown only in its surface base colors and painted textures, with every trace of light, shadow and reflection removed. Carry it through base color only, no shadows or highlights, flat merged shapes, full texture detail, matte gloss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'base color only; no shadows or highlights; flat merged shapes; full texture detail; matte gloss',
     },
@@ -454,7 +454,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Raymarched finish with perfectly smooth blends and even stripe spacing; no polygons visible.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies SDF Contour Band Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Signed distance field debug shader: a slicing plane through smoothly blended SDF shapes, painted with repeating distance rings, warm outside and cool inside. Carry it through repeating distance rings, orange outside and blue inside, white zero-surface line, smooth-minimum blends, raymarched forms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'repeating distance rings; orange outside and blue inside; white zero-surface line; smooth-minimum blends; raymarched forms',
     },
@@ -489,7 +489,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Additive accumulation buffer with no shading, clean edges and smooth count gradients.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Overdraw Accumulation View as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Overdraw debug view: every rendered layer adds a little brightness, so transparent and stacked surfaces glow in proportion to how many times each pixel was drawn. Carry it through additive layer counting, navy to orange to white ramp, hidden back faces visible, hot particle stacks, no lighting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'additive layer counting; navy to orange to white ramp; hidden back faces visible; hot particle stacks; no lighting',
     },
@@ -524,7 +524,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Real-time VFX shader finish with clean additive glow; the subject stays sharp behind the shell.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hex Force-Field Shield Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hexagonal force-field shader: a transparent energy dome or shell around the named subject, fresnel-bright at its rim, tiled with faint hexagon cells that flare at impact points. Carry it through fresnel-bright dome rim, hexagon cell tiling, impact ripple rings, single energy hue, subject clear behind the shell. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'fresnel-bright dome rim; hexagon cell tiling; impact ripple rings; single energy hue; subject clear behind the shell',
     },
@@ -555,7 +555,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean alpha-clip shader with a sharp emissive edge; no paper burn texture and no painted smoke.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Noise Dissolve Edge Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Noise dissolve shader: the named subject disappearing along a threshold driven by procedural noise, leaving ragged holes with a thin glowing burn edge. Carry it through noise-driven holes, thin emissive edge band, ember particles off the edge, one-direction dissolve front, background through holes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'noise-driven holes; thin emissive edge band; ember particles off the edge; one-direction dissolve front; background through holes',
     },
@@ -590,7 +590,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Screen-space depth-based pulse with crisp edges; no lidar points and no UI markers.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Radial Scanner Pulse Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Radial scanner pulse shader: an expanding ring of light sweeping across the scene from one point, briefly outlining every edge it crosses in glowing lines. Carry it through expanding ring of light, edge lines lit inside the band, dim desaturated scene, sharp leading edge, soft trailing fade. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'expanding ring of light; edge lines lit inside the band; dim desaturated scene; sharp leading edge; soft trailing fade',
     },
@@ -625,7 +625,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Screen-space Sobel filter look with pixel-even lines; no hand-drawn wobble, no mesh wireframe.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Edge Detection Line Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Edge detection line pass: a post-process that draws black lines wherever depth or surface direction jumps, on plain white, with no shading and no triangle wires. Carry it through lines from depth and normal jumps, heavier silhouette lines, white fill, no shading, no mesh triangles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'lines from depth and normal jumps; heavier silhouette lines; white fill; no shading; no mesh triangles',
     },
@@ -660,7 +660,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Non-photorealistic render with even stroke density and clean silhouettes; distinct from hand-drawn ink and from cel shading.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tonal Art Map Hatching Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Real-time hatching shader: lit 3D geometry shaded with stacked hatch textures, one layer of strokes per tone, so darker areas gain cross-hatching automatically. Carry it through stacked hatch texture layers, tone by stroke density, strokes follow surface UVs, one directional light, clean silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'stacked hatch texture layers; tone by stroke density; strokes follow surface UVs; one directional light; clean silhouettes',
     },

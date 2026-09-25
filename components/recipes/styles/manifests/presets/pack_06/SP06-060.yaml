@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Retro, hacker-like and mysterious, an image hidden in code.
   rendering_and_quality: Every mark a glyph cell on a regular grid, no readable words or sentences; shape emerges from density.
   key_features: monospaced glyph grid; density-based values; phosphor green or amber on black; soft glow and scanlines; no readable words
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Terminal Glyph Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Terminal glyph art: an image made entirely of monospaced characters on a fixed grid, with denser glyphs for dark or bright areas depending on the screen. Carry it through monospaced glyph grid, density-based values, phosphor green or amber on black, soft glow and scanlines, no readable words. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - concept board layout

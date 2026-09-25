@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Raw and confrontational, the subject caught exposed against sudden blackness.
   rendering_and_quality: Snapshot realism with crisp edges and deliberately unflattering flash character.
   key_features: on-axis flash; hard drop shadow behind; blown speculars; dark falloff background; snapshot rawness
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hard Flash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Direct on-camera hard flash: a harsh frontal burst that flattens faces, blows highlights, and throws a crisp black shadow onto whatever is behind. Carry it through on-axis flash, hard drop shadow behind, blown speculars, dark falloff background, snapshot rawness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - generic stock-photo face
   - celebrity likeness

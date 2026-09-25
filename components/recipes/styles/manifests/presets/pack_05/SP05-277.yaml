@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Restless young-adult dread or tenderness, raw and nervous.
   rendering_and_quality: Scraped marks stay controlled while faces and key forms remain clean and readable.
   key_features: scraped offset strokes; rust red with neon violet or cyan slips; oxidized specks; palette-knife scrapes; nervous stroke rhythm
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rusted Neon Adolescent Dread Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Scratchy seinen anime drawing of scraped, slightly offset strokes that alternate rust-red oxidized marks with thin cool neon edge slips, like a poster scraped off a metal shutter. Carry it through scraped offset strokes, rust red with neon violet or cyan slips, oxidized specks, palette-knife scrapes, nervous stroke rhythm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

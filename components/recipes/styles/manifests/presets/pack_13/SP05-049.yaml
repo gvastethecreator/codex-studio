@@ -32,10 +32,7 @@ visualDna:
     Deliberate blacks, selective fine detail, open mids, no ornate border.
   key_features: >-
     Dense matte silhouette, cool silver edge, dark plum values, selective material ornament
-  creative_brief: >-
-    Apply a visual treatment centered on dense matte silhouette, cool silver edge, dark plum
-    values, selective material ornament. Preserve the exact subject, action, count, age,
-    costume, setting, camera, and mood. Add nothing outside the prompt.
+  creative_brief: "Apply a visual treatment centered on dense matte silhouette, cool silver edge, dark plum values, selective material ornament. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

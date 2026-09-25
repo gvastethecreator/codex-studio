@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Fixed paper under the camera, moving elements trailing their own erased ghosts.
   atmosphere_and_mood: Melancholic and restless, memory that never quite disappears.
   rendering_and_quality: Real charcoal on paper look; not a clean pencil sketch.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Charcoal Erasure Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Charcoal erasure animation: a single charcoal drawing altered, erased and redrawn under the camera, leaving ghost traces of every earlier frame. Carry it through ghost traces of earlier frames, eraser streaks, smudged charcoal, paper tooth, fixed drawing under camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: ghost traces of earlier frames; eraser streaks; smudged charcoal; paper tooth; fixed drawing under camera
 avoidRules:
   - exact studio character copy

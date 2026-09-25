@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Intimate and inquisitive, the look of an old printed book plate.
   rendering_and_quality: Line-only tone with bitten depth variation, plate tone and embossed plate mark; no solid flat blacks and no halftone dots.
   key_features: needle-drawn bitten lines; varied bite depth; grey plate tone; embossed plate mark; warm black on cream paper
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Etching as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Line etching: lines drawn with a needle through an acid-resistant ground on a copper plate, bitten in acid, inked into the grooves and printed under heavy pressure. Carry it through needle-drawn bitten lines, varied bite depth, grey plate tone, embossed plate mark, warm black on cream paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - readable printed text

@@ -28,7 +28,7 @@ visualDna:
   camera_and_composition: A three-quarter rear or low side angle that the prompt did not imply, the subject centered with suspended elements in a loose ring.
   atmosphere_and_mood: Hushed suspended stillness inside a fast movement.
   rendering_and_quality: Everything sharp, no motion blur, clean separation between the subject and each suspended element.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bullet-Time Orbit Freeze as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Anime frozen-instant staging: time stops at the height of the action and the camera has swung around to an unexpected side, showing airborne elements of the scene hanging perfectly still. Carry it through time frozen at the action peak, camera swung to an unexpected side, suspended scene elements, no motion blur, cool desaturated background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: time frozen at the action peak; camera swung to an unexpected side; suspended scene elements; no motion blur; cool desaturated background
 avoidRules:
   - added opponent

@@ -141,7 +141,7 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'glamour styling'],
       briefs: [
-        'Deadpan fashion photograph of an adult wizard with a long white beard wearing a plain grey fleece, straight jeans and white sneakers, standing in a supermarket-free parking lot beside his staff. Flat daylight. No text or logo.',
+        'Deadpan fashion photograph of an adult wizard with a long white beard wearing a plain grey fleece, straight jeans and white sneakers, standing in an empty parking lot at noon beside his gnarled staff, flat daylight and a centered frame. No text or logo.',
         'Deadpan fashion photograph of an adult woman in a beige crewneck and washed khakis feeding a huge tame dragon in a quiet suburban backyard. Flat light, centered. No text or logo.',
         'Deadpan fashion photograph of a middle-aged adult man in a plain navy fleece and basic sandals standing in a medieval castle courtyard among knights in armor. No text or logo.',
       ],

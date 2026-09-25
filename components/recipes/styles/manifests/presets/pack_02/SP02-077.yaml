@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Weightless and serene, sound and time slowed down.
   rendering_and_quality: Real underwater light behavior; a lighting modifier, not a nature scene.
   key_features: moving caustic nets; sunbeams from the surface; cyan attenuation; floating particles; drifting fabric
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Underwater Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Underwater light: sunlight refracted through a rippling surface, throwing moving caustic nets across everything below. Carry it through moving caustic nets, sunbeams from the surface, cyan attenuation, floating particles, drifting fabric. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested location
   - franchise likeness

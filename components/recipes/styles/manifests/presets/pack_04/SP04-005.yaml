@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Tender, dreamy and wistful, a heartbeat stretched into a moment.
   rendering_and_quality: Delicate controlled line with elongated graceful proportions; never rough, heavy or muscular.
   key_features: hair-fine pen lines; floral screentone; sparkle highlights; large glistening eyes; flower-framed negative space
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Manga (Shojo) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Romance manga art: hair-fine pen lines, large glistening eyes, floral and sparkle screentones and decorative flower borders floating around the subject. Carry it through hair-fine pen lines, floral screentone, sparkle highlights, large glistening eyes, flower-framed negative space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - added panels or gutters
   - speech balloons

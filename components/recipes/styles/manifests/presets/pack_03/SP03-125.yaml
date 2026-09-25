@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; a contact point or obstacle stays in frame to show the squash.
   atmosphere_and_mood: Playful and tactile, satisfying enough to want to poke.
   rendering_and_quality: Volume-preserving deformation with believable contact; not melting, not liquid and not broken.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soft-Body Squash Simulation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Soft-body simulation: the subject behaving like a volume-preserving jelly, squashed against surfaces, bulging between obstacles and wobbling mid-bounce. Carry it through volume-preserving squash, bulges between obstacles, flattened contact patches, frozen wobble ripples, stretched highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: volume-preserving squash; bulges between obstacles; flattened contact patches; frozen wobble ripples; stretched highlights
 avoidRules:
   - forced T-pose

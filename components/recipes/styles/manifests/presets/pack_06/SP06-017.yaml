@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Raw and physical, energy caught in fast sweeping gestures.
   rendering_and_quality: Soft lost edges, smeared tones and eraser lifts next to a few hard compressed accents; no graphite shine, no clean line work.
   key_features: velvet matte blacks; smudged smoky greys; kneaded-eraser lifted lights; visible gesture lines; charcoal dust on laid paper
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Charcoal (Expressive) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Expressive charcoal drawing: willow vine charcoal swept in broad gestures, pushed into velvety blacks with compressed charcoal and wiped or erased back to light. Carry it through velvet matte blacks, smudged smoky greys, kneaded-eraser lifted lights, visible gesture lines, charcoal dust on laid paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - mixing in a second drawing tool

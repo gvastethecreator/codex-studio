@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Specimen centered, straight lateral or dorsal view, generous clean margin.
   atmosphere_and_mood: Precise and scientific, wonder through exhaustive clarity.
   rendering_and_quality: Museum-plate clarity with no blurred planes and no stacking halos.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Focus-Stacked Specimen as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Focus-stacked specimen photography: dozens of macro frames merged so a small specimen is sharp from front to back on a clean white or black background. Carry it through front-to-back sharpness, clean white or black ground, diffused dome light, centered specimen, scientific view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: front-to-back sharpness; clean white or black ground; diffused dome light; centered specimen; scientific view
 avoidRules:
   - illustration

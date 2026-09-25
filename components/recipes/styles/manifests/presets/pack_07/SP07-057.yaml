@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Industrious, humid and clanking, a city that runs on pressure and coal.
   rendering_and_quality: Engraving-like detail density in metalwork with soft steam; not a glass conservatory and not a vehicle scene.
   key_features: riveted copper boiler plate; exterior pipe runs; dial clusters without numbers; venting steam; amber gaslight in smog
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neo-Victorian Steamwork as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Victorian steamwork architecture: brick and cast-iron buildings wrapped in riveted copper boiler plate, exterior pipe runs, dial clusters and venting steam as working building services. Carry it through riveted copper boiler plate, exterior pipe runs, dial clusters without numbers, venting steam, amber gaslight in smog. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - licensed fantasy location
   - copy of a known film or game building

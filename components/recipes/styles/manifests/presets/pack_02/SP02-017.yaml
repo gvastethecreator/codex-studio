@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Cozy and comic, a safe living room where every problem resolves by the end.
   rendering_and_quality: Clean broadcast color of the set itself; tape artifacts belong to Analog Sitcom Multicam, not here.
   key_features: three-wall studio set; flat overhead wash; actors staged toward the fourth wall; beige and cream palette; proscenium framing
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 90s Sitcom as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "90s sitcom set look: a bright three-wall studio set lit by an even overhead wash, staged so every actor faces the audience side. Carry it through three-wall studio set, flat overhead wash, actors staged toward the fourth wall, beige and cream palette, proscenium framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable fake text
   - readable ticker

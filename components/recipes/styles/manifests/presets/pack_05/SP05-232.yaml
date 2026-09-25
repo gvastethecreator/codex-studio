@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Lamenting, weary and quiet, a long war seen through settling dust.
   rendering_and_quality: Layered atmospheric haze, soft focus beyond the focal plane, crisp focal line and fine grain; never crisp photoreal.
   key_features: stacked translucent haze cels; dissolving distance; crisp line only at focus; sand and dusty blue palette; small amber signal; 16 mm grain
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dustfront Drone Lament as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hazy frontier anime: stacked translucent sand-colored haze cels, soft cel figures dissolving with distance, crisp line only on the focal detail, and 16 mm film grain. Carry it through stacked translucent haze cels, dissolving distance, crisp line only at focus, sand and dusty blue palette, small amber signal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

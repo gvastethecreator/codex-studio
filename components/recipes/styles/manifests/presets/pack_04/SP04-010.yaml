@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Solemn and reverent, legends treated as living people.
   rendering_and_quality: Fine-art painted finish with anatomical and textile fidelity; no ink outlines and no digital gloss.
   key_features: fully painted gouache; outline-free forms; warm soft key; observed fabric and metal; realist proportions
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Graphic Novel (Painted) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Painted graphic novel: every image fully painted in gouache and watercolor from observation, forms built by value and edge with almost no outline. Carry it through fully painted gouache, outline-free forms, warm soft key, observed fabric and metal, realist proportions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - added panels or gutters
   - speech balloons

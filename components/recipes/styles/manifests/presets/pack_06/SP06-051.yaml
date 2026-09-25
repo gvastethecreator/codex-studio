@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Calm, toy-like and tidy, a minimal game world.
   rendering_and_quality: Uniform flat facets with hard edges and simple lighting; no smooth shading, no high-poly detail, no photo textures.
   key_features: large flat-shaded triangles; one color per facet; hard polygon edges; single directional sun; minimal geometry
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Flat-Shaded Low Poly as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Flat-shaded low poly: subjects and scenes built from a small number of large triangles, each facet one flat color, rendered like a simple real-time game scene. Carry it through large flat-shaded triangles, one color per facet, hard polygon edges, single directional sun, minimal geometry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - concept board layout

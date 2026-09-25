@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Macro lens at close focus with shallow depth, one wheel or the balance held in sharp focus.
   atmosphere_and_mood: Meticulous and hushed, the heartbeat of a tiny machine.
   rendering_and_quality: Microscopic finishing detail rendered cleanly, with no dial numerals, engraved words or maker marks.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Horology Macro Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Fine watchmaking macro: the subject built from a miniature mechanical movement of polished bridges, toothed wheels, ruby jewel bearings and blued screws. Carry it through polished bridges and gears, ruby jewel bearings, blued screws, striped and grained plate finishing, macro shallow depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: polished bridges and gears; ruby jewel bearings; blued screws; striped and grained plate finishing; macro shallow depth
 avoidRules:
   - multi-view asset sheet

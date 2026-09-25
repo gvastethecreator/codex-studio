@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Misty, somber and melancholy, weather seen through grain.
   rendering_and_quality: Granular tone fields with pooled edges; never a smooth digital gradient.
   key_features: rosin grain tone; spit-bite pools; stepped bite values; few etched accents; sepia or blue-grey ink
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Spit-Bite Aquatint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Aquatint: rosin grain fused to a plate and bitten in stages, printing granular tonal washes, with brushed spit-bite acid giving soft pooled tones. Carry it through rosin grain tone, spit-bite pools, stepped bite values, few etched accents, sepia or blue-grey ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - brand logo

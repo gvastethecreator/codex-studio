@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Decisive and comparative, shape language on trial.
   rendering_and_quality: Solid flat silhouettes with zero internal detail, no texture and no rendering.
   key_features: pure black silhouettes; rigid equal grid; same pose and scale; varied shape language; outline-only design
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Silhouette Iteration Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Silhouette iteration sheet: design variants of the subject as pure black fills on white, same pose and scale, only the outline changing. Carry it through pure black silhouettes, rigid equal grid, same pose and scale, varied shape language, outline-only design. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable annotations
   - readable text

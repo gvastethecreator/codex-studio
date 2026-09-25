@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Absurd deadpan wit; the face never reacts to anything around it.
   rendering_and_quality: Exactly two line weights, fine filigree and heavy block, with frozen symmetric poses so the joke is the contrast between ornament and bluntness.
   key_features: expressionless dot-eyed face; filigree against brick-square forms; pastel lilac and mint; heavy uniform block outline; symmetric frozen staging
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Deadpan Filigree Brick Comedy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Straight-faced comedy anime: lace-like filigree curls and ornate decoration interrupted by blunt brick-square forms and a face kept completely blank with dot eyes and a flat mouth line. Carry it through expressionless dot-eyed face, filigree against brick-square forms, pastel lilac and mint, heavy uniform block outline, symmetric frozen staging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

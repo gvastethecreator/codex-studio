@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Crafty, playful and tactile, patterns pressed by hand.
   rendering_and_quality: Handmade impression quality with pale spots where the pressure failed; no bureaucratic office stamps.
   key_features: repeated stamped units; speckled ink-pad transfer; faint block edges; kraft paper; one to three pad colors
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carved Eraser Stamp as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hand-carved rubber stamp impressions: the subject cut into soft eraser blocks and stamped by hand from ink pads, built from repeated units. Carry it through repeated stamped units, speckled ink-pad transfer, faint block edges, kraft paper, one to three pad colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - brand logo

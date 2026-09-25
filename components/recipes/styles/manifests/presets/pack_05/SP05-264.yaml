@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Fragile calm with one small wrong note, innocence kept under glass.
   rendering_and_quality: Pristine hairline contours, flat pale fills and one controlled irregularity; no grime and no gradients beyond a soft gray shadow.
   key_features: technical hairline contours; broad porcelain-pale planes; one broken or doubled contour; tiny coral accent; near-shadowless diffuse light
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Clinical Innocence Rupture Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hairline anime linework on broad porcelain-pale planes, drawn with medical-plate precision, where one single contour deliberately breaks, doubles or wobbles. Carry it through technical hairline contours, broad porcelain-pale planes, one broken or doubled contour, tiny coral accent, near-shadowless diffuse light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

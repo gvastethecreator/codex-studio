@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Hopeful and humble, a small warmth inside something vast.
   rendering_and_quality: Clean cel edges, layered depth and readable contrast without heavy bloom.
   key_features: vertical mineral facets; amber point lights; cool teal depth; contained quartz-like glow; stacked vertical planes
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vertical Mineral Amber Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Luminous anime cel built from tall mineral-like planes: vertical facets of value, warm amber point lights and cool teal depth. Carry it through vertical mineral facets, amber point lights, cool teal depth, contained quartz-like glow, stacked vertical planes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway

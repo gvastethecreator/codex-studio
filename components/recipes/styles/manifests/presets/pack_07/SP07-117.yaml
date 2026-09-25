@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; segmented ribs set a repeating arthropod rhythm along roofs and walls.
   atmosphere_and_mood: Alien, elegant and slightly unsettling, a building that could have molted.
   rendering_and_quality: Precise specular rendering of iridescent surfaces; architecture only, with no insects or creatures.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chitin Carapace Architecture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Carapace architecture: roofs and walls of overlapping iridescent shell plates on segmented ribs, jointed buttresses and amber resin membranes as windows. Carry it through overlapping iridescent shell plates, segmented rib structure, jointed buttresses, amber resin membrane windows, oil-slick sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: overlapping iridescent shell plates; segmented rib structure; jointed buttresses; amber resin membrane windows; oil-slick sheen
 avoidRules:
   - licensed fantasy location

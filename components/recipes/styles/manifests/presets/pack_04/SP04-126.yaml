@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Rows of types, each row with its top, front and side view aligned at one scale.
   atmosphere_and_mood: Alert and methodical, knowing a shape before it arrives.
   rendering_and_quality: Exact silhouettes without type names, codes or numbers.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Three-View Recognition Chart as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Recognition chart: several related variants of the subject shown as solid black silhouettes in top, front and side view, like a spotter card. Carry it through black silhouettes, top, front and side per type, ruled rows, one scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: black silhouettes; top, front and side per type; ruled rows; one scale; worn card stock
 avoidRules:
   - placeholder gibberish text

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Dynamic diagonal composition with the subject caught mid-action and splashes spilling outward.
   atmosphere_and_mood: Wild, urgent, energetic, and chaotic.
   rendering_and_quality: 'Controlled chaos: marks purposeful, silhouette clear, no random noise or digital spatter.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Frantic Quill Blot Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Frantic quill-and-ink drawing: fast whipping lines, sudden blots, spatters, dragged dry strokes, and scratchy energetic hatching that looks drawn in one feverish sitting. Carry it through whipping quill line, ink blots and spatter, split-nib strokes, gesture over detail, feverish speed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: whipping quill line; ink blots and spatter; split-nib strokes; gesture over detail; feverish speed
 avoidRules:
   - careful tidy hatching

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: A dark frame occupying the edges, the subject small and centered inside it, eye level, 35–50 mm, straight verticals.
   atmosphere_and_mood: Quiet and discreet, the viewer an unseen witness to an intimate, private moment.
   rendering_and_quality: Natural exposure favoring the lit interior; no flash and no staged eye contact.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Frame-Within-Frame Observational as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Observational frame-within-frame: the photographer stays in the dark next room and records life through a doorway, window or arch, unnoticed. Carry it through dark doorway or arch frame, subject lit beyond, unseen observer, small centered subject, straight verticals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: dark doorway or arch frame; subject lit beyond; unseen observer; small centered subject; straight verticals
 avoidRules:
   - illustration

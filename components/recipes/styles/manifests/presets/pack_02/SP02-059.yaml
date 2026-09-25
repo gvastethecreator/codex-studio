@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Cold and watchful, living warmth tracked across the dark.
   rendering_and_quality: White-hot greyscale thermal; the color ironbow palette belongs to pack_01.
   key_features: white-hot greyscale; black cold background; soft heat bloom; residual heat trails; low-resolution sensor
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thermal Camera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "White-hot thermal feed: a surveillance-grade infrared camera shown in greyscale, where heat is white and cold is black, with a slightly soft, noisy sensor image. Carry it through white-hot greyscale, black cold background, soft heat bloom, residual heat trails, low-resolution sensor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable readouts
   - fake UI text

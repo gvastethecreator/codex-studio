@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Measured resilience and calm procedure under threat.
   rendering_and_quality: Stable silhouettes, crisp machine edges and controlled color blocks without chaos.
   key_features: hi-vis orange and yellow equipment; grid tick scale marks; sturdy dark contour; matte blue-grey; wide procedural framing
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hazard-Orange Monster Response Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Civic-defense anime: sturdy dark contours, clean machine-precise vehicles and equipment in high-visibility orange and yellow, and scale measured by grid-like tick marks on structures. Carry it through hi-vis orange and yellow equipment, grid tick scale marks, sturdy dark contour, matte blue-grey, wide procedural framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

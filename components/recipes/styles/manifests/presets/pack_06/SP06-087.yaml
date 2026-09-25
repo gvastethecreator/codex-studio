@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Clear and tactical, a whole battle understood at a glance.
   rendering_and_quality: Crisp readable icons and terrain; no numbers, stat windows or text on the map.
   key_features: square battle grid; bright unlit-screen palette; outlined unit sprites; movement-range squares; terrain tiles
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Handheld Tactics Grid Pixel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Handheld strategy map: bright 15-bit pixel art on a square battle grid, with chunky outlined unit sprites standing on clean terrain tiles. Carry it through square battle grid, bright unlit-screen palette, outlined unit sprites, movement-range squares, terrain tiles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - console or handheld hardware shown in frame

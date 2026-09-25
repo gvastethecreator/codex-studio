@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Homemade, cheerful and a little clumsy, a craft-table charm.
   rendering_and_quality: Uneven hand-pressed ink coverage and slightly rotated repeats; no perfect alignment, no gradients, no readable text.
   key_features: hand-carved rubber motif; patchy incomplete impressions; ink halos at edges; tilted repeats; one or two pad inks
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carved Rubber Stamp as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hand-carved rubber stamp: simple motifs cut into a soft rubber block, inked from a pad and pressed by hand, often repeated across the sheet. Carry it through hand-carved rubber motif, patchy incomplete impressions, ink halos at edges, tilted repeats, one or two pad inks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - readable printed text

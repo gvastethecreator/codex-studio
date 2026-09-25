@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Cold, intrusive curiosity about a form studied too closely.
   rendering_and_quality: Precise diagrammatic seams on faceted planes, clean and illustrated rather than a photographed object.
   key_features: branching seam lines on surfaces; pale faceted planes; bone and ceramic gray; single crimson junction; porcelain crazing
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Invasive Anatomy Thriller Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Clinical thriller ink that maps fine branching seam lines and pale faceted planes across the surface of objects and architecture, like a dissection diagram drawn on porcelain, without revealing any interior. Carry it through branching seam lines on surfaces, pale faceted planes, bone and ceramic gray, single crimson junction, porcelain crazing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

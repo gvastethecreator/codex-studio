@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Urgent, loud and improvised, made fast in one session.
   rendering_and_quality: Hard stencil edges mixed with soft freehand fades, visible speckle and drips; no brush marks and no readable tags.
   key_features: layered stencil shapes; soft freehand fades; overspray speckle halos; paint drips and runs; offset registration
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Spray Paint (Aerosol) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Aerosol spray painting: color laid in layers through cut stencils and freehand can control, with soft sprayed falloff, hard stencil edges and drips. Carry it through layered stencil shapes, soft freehand fades, overspray speckle halos, paint drips and runs, offset registration. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - changing the requested framing

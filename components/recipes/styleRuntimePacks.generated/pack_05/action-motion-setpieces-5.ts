@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'lunge toward the lens; leading limb foreshortened to double size; converging diagonals; compressed depth; tapered trailing streaks',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Action Burst Alley Rush as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anime action frame staged as a forward rush: the subject lunges toward the lens along converging diagonals, its nearest limb foreshortened to about twice its size, depth squeezed like a narrow passage. Carry it through lunge toward the lens, leading limb foreshortened to double size, converging diagonals, compressed depth, tapered trailing streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -60,7 +60,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'steep 70-80 degree down-angle; X-crossing of travel line and edge line; wide lens; far depth dropping in value; horizon out of frame',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vertigo Energy Cross Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anime vertigo frame from a steep high oblique looking down past the subject into deep space, where the subject's line of travel crosses a strong architectural or terrain edge in a clean X. Carry it through steep 70-80 degree down-angle, X-crossing of travel line and edge line, wide lens, far depth dropping in value, horizon out of frame. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -91,7 +91,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'movement path traced as vector arcs; thin evenly spaced curves; violet-blue path color; three-quarter side view; clean flat cel finish',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Vector Discharge Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Precise anime action frame in which the exact path of the requested movement is traced as clean vector arcs, like motion-capture curves, thin and geometric behind the moving parts. Carry it through movement path traced as vector arcs, thin evenly spaced curves, violet-blue path color, three-quarter side view, clean flat cel finish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -122,7 +122,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'peak instant at the hub; radiating structural lines; huge-scale foreground element; low wide angle; hub-centered contrast',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Monumental Impact Burst Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anime key frame of the peak instant of the requested action, placed at the hub of radiating structural lines, with one element of the scene enlarged in the foreground for extreme scale contrast. Carry it through peak instant at the hub, radiating structural lines, huge-scale foreground element, low wide angle, hub-centered contrast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -152,7 +152,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'stacked horizontal layers; subject rising from lower half; open space above; values lightening upward; side-on tall framing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Upward Thunder Momentum Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anime action frame staged vertically: the subject rises through stacked horizontal layers of the scene seen from beside, with open space kept above it to pull the eye upward. Carry it through stacked horizontal layers, subject rising from lower half, open space above, values lightening upward, side-on tall framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -185,7 +185,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Stable on-model anatomy outside the smear, with the smear clearly an intentional animation device.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Smear-Frame Arc Staging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anime in-between smear frame: the fastest moving part of the subject is drawn as one stretched, distorted ribbon shape along its arc, while the rest of the body stays sharp and on model. Carry it through one stretched smear shape along the arc, rest of body sharp, flat smear color bands, no speed lines, full arc visible. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'one stretched smear shape along the arc; rest of body sharp; flat smear color bands; no speed lines; full arc visible',
     },
@@ -220,7 +220,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'High-contrast inverted graphic frame in which the action and subject remain clearly readable.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Negative Impact Frame Staging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anime impact frame at the exact instant of contact: the whole picture flips to inverted values, white shapes on black with a few raw rough outlines, as if one frame of the film were printed in negative. Carry it through inverted black and white values, single accent at contact, rough shaky outlines, tight tilted framing, white ring around contact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'inverted black and white values; single accent at contact; rough shaky outlines; tight tilted framing; white ring around contact',
     },
@@ -255,7 +255,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Everything sharp, no motion blur, clean separation between the subject and each suspended element.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bullet-Time Orbit Freeze as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anime frozen-instant staging: time stops at the height of the action and the camera has swung around to an unexpected side, showing airborne elements of the scene hanging perfectly still. Carry it through time frozen at the action peak, camera swung to an unexpected side, suspended scene elements, no motion blur, cool desaturated background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'time frozen at the action peak; camera swung to an unexpected side; suspended scene elements; no motion blur; cool desaturated background',
     },
@@ -290,7 +290,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp subject, uniformly directional background streaks, no radial speed lines.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Panning Background Streak Frame as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anime tracking pan: the camera moves alongside the subject at its speed, so the subject is drawn sharp while the background smears into long horizontal color streaks. Carry it through sharp subject on streaked background, horizontal color bands, side-on profile view, lead room ahead, no radial speed lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'sharp subject on streaked background; horizontal color bands; side-on profile view; lead room ahead; no radial speed lines',
     },
@@ -325,7 +325,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean graphic silhouette with readable pose and a sharp rim; no clutter in the sky.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Worm's-Eye Leap Silhouette as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anime worm's-eye staging: the camera lies directly beneath the moving subject and looks straight up, so the subject passes overhead as a crisp dark silhouette against a bright flat sky. Carry it through camera straight beneath looking up, backlit dark silhouette, thin bright rim, converging edges to center, diagonal crossing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'camera straight beneath looking up; backlit dark silhouette; thin bright rim; converging edges to center; diagonal crossing',
     },
@@ -360,7 +360,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Straight, confident perspective lines on the tilted grid and a stable readable subject.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dutch Tilt Momentum Frame as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anime canted-frame staging: the camera rolls 20 to 35 degrees so the horizon and verticals tilt in the direction of the effort, making ordinary action feel off balance and urgent. Carry it through camera rolled 20-35 degrees, tilted horizon and verticals, subject pushing against the tilt, diagonal shadows, straight not warped lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'camera rolled 20-35 degrees; tilted horizon and verticals; subject pushing against the tilt; diagonal shadows; straight not warped lines',
     },
@@ -392,7 +392,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Consistent model and costume across the panels, with each pose readable on its own.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Three-Beat Action Triptych as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anime storyboard triptych: one requested action split into three side-by-side panels showing anticipation, the peak of action and the follow-through, with the same subject in each. Carry it through three equal panels, anticipation, peak, follow-through, same subject and light in each. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'three equal panels; anticipation, peak, follow-through; same subject and light in each; thin textless gutters; closer middle panel',
     },
@@ -427,7 +427,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Controlled focus split between the soft near mass and the sharp background, with the subject still identifiable.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Near-Lens Pass-By Frame as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anime pass-by staging: the moving subject sweeps past extremely close to the lens, a large part of it cropped and softly blurred in the near foreground, while the setting behind stays sharp. Carry it through subject sweeping past the lens, cropped by two frame edges, soft near-lens defocus, sharp background, bright edge on passing mass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'subject sweeping past the lens; cropped by two frame edges; soft near-lens defocus; sharp background; bright edge on passing mass',
     },
@@ -462,7 +462,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean flat perspective without distortion and readable shadow shapes that explain the pose.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Top-Down Spiral Path Staging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anime overhead staging: the camera looks straight down and the requested movement is arranged along a spiral or circular path, so the ground pattern and the action form one curling shape. Carry it through straight-down 90 degree view, spiral or circular path, subject at the leading end, long flat side-lit shadows, readable ground pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'straight-down 90 degree view; spiral or circular path; subject at the leading end; long flat side-lit shadows; readable ground pattern',
     },
@@ -497,7 +497,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Controlled barrel distortion and believable anatomy through the extreme foreshortening.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fisheye Foreshortened Reach as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anime fisheye staging: the subject reaches or throws straight toward an ultra-wide lens, the hand swelling to the size of the head while the body shrinks behind it and the edges of the scene curve. Carry it through hand reaching into an ultra-wide lens, hand as large as the head, barrel-curved edges, bright near hand, small readable face behind. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'hand reaching into an ultra-wide lens; hand as large as the head; barrel-curved edges; bright near hand; small readable face behind',
     },
@@ -531,7 +531,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Graceful, lingering momentum after a decisive move.',
       rendering_and_quality: 'Clear S-curves of consistent lag and still, sharp faces and hands.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cloth-and-Hair Follow-Through Trails as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anime secondary-motion staging: the body has just stopped or turned, and everything loose on it, including hair, cloak, sleeves and straps, keeps flowing in long lagging S-curves that show where the movement came from. Carry it through lagging S-curves in hair and cloth, body already stopped or turned, tapering tips, light along each fold, trailing space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'lagging S-curves in hair and cloth; body already stopped or turned; tapering tips; light along each fold; trailing space',
     },
@@ -566,7 +566,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean readable arc, a tiny but unmistakable subject, and painterly depth layers.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tiny-Figure Grand Arc Wide as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anime extreme-wide staging: the subject is tiny, under a twentieth of the frame height, while the path of its movement sweeps one grand clean arc across a vast landscape or interior. Carry it through tiny subject under one twentieth of frame height, one grand movement arc, vast layered space, high distant vantage, arc from existing material. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'tiny subject under one twentieth of frame height; one grand movement arc; vast layered space; high distant vantage; arc from existing material',
     },
@@ -601,7 +601,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise pose drawing with visible weight shift, calm backgrounds and zero motion effects.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Coiled Anticipation Lead-Space Frame as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anime anticipation staging: the instant before the requested action, the subject compressed into a tight coiled pose at one edge of the frame, facing a large empty lead space it is about to cross. Carry it through coiled pre-motion pose, subject in outer fifth of frame, large empty lead space, no motion marks, low side light on the tension. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'coiled pre-motion pose; subject in outer fifth of frame; large empty lead space; no motion marks; low side light on the tension',
     },
@@ -636,7 +636,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Controlled ground streaking only in the near band and a crisp, stable subject.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ground-Skim Low Tracking Shot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anime ground-skim staging: the camera races just above the ground ahead of the subject, so the near ground rushes in stretched detail at the bottom of the frame and the subject looms toward the lens from a low angle. Carry it through ankle-height camera ahead of subject, near ground stretched into streaks, horizon in lower third, shadow toward camera, looming low angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'ankle-height camera ahead of subject; near ground stretched into streaks; horizon in lower third; shadow toward camera; looming low angle',
     },
@@ -671,7 +671,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Detailed but clean cel rendering at macro scale, with the kind of contact instantly readable.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Contact-Point Extreme Close-Up as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Anime insert shot: an extreme close-up of the exact point where the requested action makes contact, such as a hand, foot or hoof meeting a surface, with the rest of the subject cropped away. Carry it through extreme close-up of the contact point, subject cropped away, raking hard key light, magnified surface detail, very shallow depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'extreme close-up of the contact point; subject cropped away; raking hard key light; magnified surface detail; very shallow depth',
     },

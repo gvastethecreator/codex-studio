@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'borrowed machine parts; large-medium-small detail hierarchy; raking hard key; occlusion in part gaps; quiet rest panels',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kitbash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Kitbash construction: the subject assembled from recognizable borrowed machine parts — engine blocks, pipe runs, hydraulic rams, vent grilles and hatch plates — packed along its silhouette. Carry it through borrowed machine parts, large-medium-small detail hierarchy, raking hard key, occlusion in part gaps, quiet rest panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'polygon-budget silhouette; baked normal-map bevels; metal-roughness PBR; trim-sheet strips; neutral viewer lighting',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Game Asset (PBR) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Real-time game asset presentation: a single prop built to a polygon budget, its fine detail baked into normal maps and textured with metal-roughness PBR maps. Carry it through polygon-budget silhouette, baked normal-map bevels, metal-roughness PBR, trim-sheet strips, neutral viewer lighting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -86,7 +86,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'eye-level two-point exterior; corrected verticals; planted soft foreground; ghosted entourage; graded sky with raking sun',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Architectural Visualization as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Design-competition exterior render: a building shown in its landscape at human eye height, clean CGI architecture blended with planted foreground and a graded sky. Carry it through eye-level two-point exterior, corrected verticals, planted soft foreground, ghosted entourage, graded sky with raking sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -115,7 +115,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'emerging from darkness; strip-light edge tracing; black mirror floor; long-lens hero view; single matched color glow',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Product Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Launch-reveal product render: one object emerging from darkness, its silhouette traced by sweeping edge light, floating a hair above a black mirror floor. Carry it through emerging from darkness, strip-light edge tracing, black mirror floor, long-lens hero view, single matched color glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -144,7 +144,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'overhead light canopy; unbroken horizon reflection; low front three-quarter; color-flop metallic paint; turned front wheels',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Automotive Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Automotive CGI studio render: a vehicle under a vast overhead light canopy, its paint showing one clean horizon reflection flowing unbroken from nose to tail. Carry it through overhead light canopy, unbroken horizon reflection, low front three-quarter, color-flop metallic paint, turned front wheels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -172,7 +172,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'macro loupe distance; spectral fire and scintillation; black-card facet contrast; mirror-polished metal; pavé settings',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Jewelry Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "High-jewelry macro render: precious metal and cut stones filling the frame, with fire, scintillation and polished metal reflections as the whole subject. Carry it through macro loupe distance, spectral fire and scintillation, black-card facet contrast, mirror-polished metal, pavé settings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -200,7 +200,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'chamfered bevel highlight lines; boolean-cut ports; panel seams and recessed bolts; two-tone paint; stacked plates',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hard Surface Modeling as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hard-surface modeling: the subject rebuilt as engineered panels with chamfered edges, boolean cuts and support-looped bevels that each catch a thin line of light. Carry it through chamfered bevel highlight lines, boolean-cut ports, panel seams and recessed bolts, two-tone paint, stacked plates. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -228,7 +228,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'parts floating along one assembly axis; even gaps; assembly order; thin alignment guides; no labels',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Exploded View as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Exploded-view render: the subject taken apart along its assembly axis, every component floating in order with even gaps that show how it fits together. Carry it through parts floating along one assembly axis, even gaps, assembly order, thin alignment guides, no labels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -258,7 +258,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'flush implant modules; skin-to-metal seam; chrome and white ceramic; small status light; subsurface skin with hard metal rim',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Flush-Seam Cyber Implant as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cyber implant integration: machined chrome and white ceramic modules set flush into skin, with the seam between flesh and metal as the focal detail. Carry it through flush implant modules, skin-to-metal seam, chrome and white ceramic, small status light, subsurface skin with hard metal rim. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -286,7 +286,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'stacked frosted panes; blurred gradient blobs behind; hairline bright edges; blank pill controls; soft drop shadows',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glassmorphism UI as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Glassmorphism interface render: layered frosted-glass panels floating over blurred color blobs, each pane with a thin bright edge and a soft inner glow. Carry it through stacked frosted panes, blurred gradient blobs behind, hairline bright edges, blank pill controls, soft drop shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -314,7 +314,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'continuous bent glass tube line; hot white core; colored halo on backing; blacked-out tube sections; standoffs and transformer',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Sign 3D as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Neon sign construction: the subject redrawn as one continuous line of bent glass tubing glowing with gas, mounted on a dark backing with visible hardware. Carry it through continuous bent glass tube line, hot white core, colored halo on backing, blacked-out tube sections, standoffs and transformer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -347,7 +347,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Precise boolean section with crisp cap edges and no hatching, dimension lines or labels.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Half-Section Engineering Cutaway as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Engineering half-section: the subject sliced exactly in half on one clean plane, the cut faces capped in flat color so walls, cavities and mechanisms read at once. Carry it through single section plane, flat colored cut caps, exposed wall thickness, cavities with occlusion, untouched exterior half. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'single section plane; flat colored cut caps; exposed wall thickness; cavities with occlusion; untouched exterior half',
     },
@@ -382,7 +382,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Wear placed by edges, cavities and touch, never an even overlay of scratches or noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Curvature Wear Hero Prop as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hero-prop wear: a painted metal object whose damage follows its geometry — paint chipped on convex edges, grime packed into concave corners, polish where hands grip. Carry it through chips on convex edges, grime in cavities, paint-primer-steel layers, rub-polished grip points, runoff streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'chips on convex edges; grime in cavities; paint-primer-steel layers; rub-polished grip points; runoff streaks',
     },
@@ -413,7 +413,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Microscopic finishing detail rendered cleanly, with no dial numerals, engraved words or maker marks.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Horology Macro Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fine watchmaking macro: the subject built from a miniature mechanical movement of polished bridges, toothed wheels, ruby jewel bearings and blued screws. Carry it through polished bridges and gears, ruby jewel bearings, blued screws, striped and grained plate finishing, macro shallow depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'polished bridges and gears; ruby jewel bearings; blued screws; striped and grained plate finishing; macro shallow depth',
     },
@@ -444,7 +444,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Physical styling clay with tool marks, never smooth grey CGI clay, and no hands or tools cluttering the frame.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Milled Design Clay Buck as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Industrial design clay buck: the subject milled full size in tan styling clay, with one half wrapped in silver foil film to judge the highlights. Carry it through tan styling clay, silver foil half, black tape design lines, rake and slick marks, overhead light panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'tan styling clay; silver foil half; black tape design lines; rake and slick marks; overhead light panels',
     },
@@ -479,7 +479,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Accurate plastic refraction and internal detail; chips are unmarked and boards carry no readable print.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Clear-Shell Electronics Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Clear-shell electronics: the subject's housing molded in transparent tinted plastic, so circuit boards, wiring, screws and mechanisms inside are fully visible. Carry it through transparent tinted housing, visible circuit boards, molded screw bosses and ribs, colored wires, backlit shell edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'transparent tinted housing; visible circuit boards; molded screw bosses and ribs; colored wires; backlit shell edges',
     },
@@ -514,7 +514,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Thin-sheet construction with real fold thickness, never solid cast or machined parts.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Riveted Sheet-Metal Build as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Riveted sheet-metal construction: the subject built from bent and folded metal sheet, joined by rows of rivets with visible bend radii and overlapping seams. Carry it through folded sheet with bend radii, rows of domed rivets, lap seams, oil-can dents, galvanized spangle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'folded sheet with bend radii; rows of domed rivets; lap seams; oil-can dents; galvanized spangle',
     },
@@ -545,7 +545,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Machining evidence on every surface, never smooth cast metal or molded plastic.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies CNC Billet-Machined Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "CNC billet machining: the subject carved from a solid block of aluminum, with scalloped toolpath marks, pocketed recesses and crisp chamfers left by the mill. Carry it through solid billet aluminum, toolpath scallops, pocketed recesses, deburred chamfers, anodized accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'solid billet aluminum; toolpath scallops; pocketed recesses; deburred chamfers; anodized accents',
     },
@@ -581,7 +581,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Smooth rounded surfacing with clean chrome reflections and no badges, numbered dials or brand names.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Streamline Enamel Appliance as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Streamline appliance design: the subject reshaped as a mid-century household machine with teardrop curves, baked enamel shell and chrome speed-line trim. Carry it through teardrop rounded casing, baked pastel enamel, triple chrome speed lines, phenolic knobs, long curved highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'teardrop rounded casing; baked pastel enamel; triple chrome speed lines; phenolic knobs; long curved highlights',
     },
@@ -616,7 +616,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Printed-metal behavior with smooth branching joints; not a random fractal, a wireframe or a plant.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Generative-Design Lattice Part as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Topology-optimized generative design: the subject reduced to bone-like load paths and organic lattice struts, as if grown by an algorithm and printed in metal. Carry it through bone-like load-path struts, gyroid infill, sintered titanium finish, layer lines, machined contact faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'bone-like load-path struts; gyroid infill; sintered titanium finish; layer lines; machined contact faces',
     },

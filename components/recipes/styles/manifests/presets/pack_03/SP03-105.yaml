@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; even detail across the whole frame.
   atmosphere_and_mood: Quiet and melancholic, a calm grey day with nothing hidden.
   rendering_and_quality: Even dome lighting; not the ambient occlusion pass look.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Overcast Dome Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Overcast dome lighting: a uniform white sky dome lighting everything from above with no sun, like a grey cloudy day. Carry it through uniform white sky dome, no directional shadows, soft contact darkening, low contrast, even detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: uniform white sky dome; no directional shadows; soft contact darkening; low contrast; even detail
 avoidRules:
   - changing the geometry

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Loose, airy composition with the subject emerging from washes and generous blank paper.
   atmosphere_and_mood: Poetic, fluid, dreamy, and ancient.
   rendering_and_quality: 'Controlled watery finish: blooms intentional, subject clearly readable, no mud.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Walnut Ink Bleed Brushplate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Loose wet brush drawing in walnut ink: warm brown washes blooming and feathering into damp paper, dark concentrated brush accents, and pale water-rings. Carry it through walnut ink wet blooms, feathered bleed, dark brush accents, emerging subject, poetic fluidity. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: walnut ink wet blooms; feathered bleed; dark brush accents; emerging subject; poetic fluidity
 avoidRules:
   - hard crisp line everywhere

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Commanding, urgent and collective, mass energy in motion.
   rendering_and_quality: Bold emblematic reduction with hard edges; no slogans, no real leaders, no national emblems.
   key_features: red black and cream; steep diagonal thrust; worm-eye view; radiating ray wedges; hard silhouette reduction
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Propaganda Poster as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Constructivist propaganda poster: heroic figures reduced to hard silhouettes, thrust along steep diagonals against radiating red rays. Carry it through red black and cream, steep diagonal thrust, worm-eye view, radiating ray wedges, hard silhouette reduction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - invented slogans
   - fake lettering

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Crisp, precise and old-fashioned, a book-plate clarity.
   rendering_and_quality: Every value made from line or dot, no grey wash, no smudge; line weight varies with pressure along each stroke.
   key_features: swelling flexible-nib line; hatching and cross-hatching for tone; stippled half-tones; bare-paper highlights; pure black on white
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ink (Pen & Ink) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Dip pen and ink: a flexible steel nib swelling from hairline to heavy line under pressure, with all tone built from hatching, cross-hatching and stippling. Carry it through swelling flexible-nib line, hatching and cross-hatching for tone, stippled half-tones, bare-paper highlights, pure black on white. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - mixing in a second drawing tool

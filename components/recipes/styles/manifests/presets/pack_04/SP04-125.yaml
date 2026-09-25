@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: The constellation figure filling a circular or rectangular chart, coordinate arcs curving across it.
   atmosphere_and_mood: Mythic and quiet, a story written in the stars.
   rendering_and_quality: Precise engraved chart with no star names, degree numbers or captions.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Celestial Atlas Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Celestial atlas plate: the subject drawn as a hand-colored engraved constellation figure over a star field of graded dots and a coordinate grid. Carry it through constellation figure, magnitude-sized star dots, curved coordinate grid, midnight blue and gold, engraved hairlines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: constellation figure; magnitude-sized star dots; curved coordinate grid; midnight blue and gold; engraved hairlines
 avoidRules:
   - placeholder gibberish text

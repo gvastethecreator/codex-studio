@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Full figure in a stable, field or estate setting.
   atmosphere_and_mood: Poised, heritage-proud and outdoorsy, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Rich, warm editorial finish, with believable fabric weight, seams and fit detail.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Equestrian Heritage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Equestrian heritage: riding-inspired dressing — tailored hacking jackets, jodhpurs, tall leather boots, quilted vests and silk scarves. Carry it through hacking jacket and jodhpurs, tall riding boots, silk scarf, chestnut and olive palette, country morning light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: hacking jacket and jodhpurs; tall riding boots; silk scarf; chestnut and olive palette; country morning light
 avoidRules:
   - brand logo

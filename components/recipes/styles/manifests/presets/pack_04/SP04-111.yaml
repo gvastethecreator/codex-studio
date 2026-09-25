@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Theatrical framed tableau, characters in period costume, detailed but clear foreground action.
   atmosphere_and_mood: Old-fashioned, curious and gently eerie, a tale told by candlelight.
   rendering_and_quality: Precise hatched pen detail with restrained tinting; no flat digital color and no outlines-only drawing.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Victorian Hatched Storybook Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Victorian fairy-tale book plate: detailed pen drawing built from fine parallel hatching and crosshatching, lightly hand-tinted with a few watercolors. Carry it through fine parallel hatching, crosshatch shadows, sparing hand tints, cream foxed paper, theatrical tableau. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: fine parallel hatching; crosshatch shadows; sparing hand tints; cream foxed paper; theatrical tableau
 avoidRules:
   - frightening gore

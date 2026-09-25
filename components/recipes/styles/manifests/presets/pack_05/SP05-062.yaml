@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Quiet metamorphic tension, a change happening in silence.
   rendering_and_quality: Clean lacquer highlights and crisp seam lines with readable underlying form.
   key_features: split translucent lacquer plates; membrane-thin overlaps; crimson seams; transmitted edge light; person-free subject
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crimson Hunger Metamorphosis Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Lacquer anime illustration in which a nonhuman subject or object seems to shed its surface: split translucent lacquer plates, membrane-thin overlaps and fine crimson seams in clean ink. Carry it through split translucent lacquer plates, membrane-thin overlaps, crimson seams, transmitted edge light, person-free subject. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'flowing printed layers; fringe and crochet; stacked beaded jewelry; sun-bleached palette; golden backlight',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Boho Festival as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Boho festival style: sun-faded layers of flowing prints, fringe, crochet and handmade jewelry worn loose for dancing outdoors. Carry it through flowing printed layers, fringe and crochet, stacked beaded jewelry, sun-bleached palette, golden backlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -58,7 +58,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'oversized drop-shoulder layers; chunky statement sneakers; crossbody bag; washed black with loud accent; low-angle framing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Streetwear Hypebeast as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Streetwear hype styling: oversized drop-shoulder layers, heavyweight hoodies, graphic-free statement pieces and coveted sneakers stacked with attitude. Carry it through oversized drop-shoulder layers, chunky statement sneakers, crossbody bag, washed black with loud accent, low-angle framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -85,7 +85,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'multi-pocket field jacket; duck canvas; webbing belt; lace-up boots; olive and khaki palette',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Field Utility Textile as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Field utility textile styling: workwear and military-surplus pieces worn as fashion — multi-pocket jackets, canvas, webbing belts and sturdy boots. Carry it through multi-pocket field jacket, duck canvas, webbing belt, lace-up boots, olive and khaki palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -113,7 +113,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'puff-sleeve prairie dress; linen apron; straw hat; calico florals; soft morning light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cottagecore as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cottagecore: romantic rural wardrobe — puff-sleeve prairie dresses, aprons, knitted cardigans, straw hats and embroidered florals. Carry it through puff-sleeve prairie dress, linen apron, straw hat, calico florals, soft morning light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -142,7 +142,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'cuffed jeans and leather jacket; polka-dot swing dress; pompadour and victory rolls; cherry red and turquoise',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rockabilly as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "1950s rockabilly: hot-rod Americana wardrobe — cuffed selvedge jeans, bowling shirts, swing dresses, leather jackets and pompadours or victory rolls. Carry it through cuffed jeans and leather jacket, polka-dot swing dress, pompadour and victory rolls, cherry red and turquoise. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -169,7 +169,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'goth silhouettes in pastels; platform creepers; spiked choker; bat and skull charms; pastel hair',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pastel Goth as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pastel goth: creepy-cute fusion of goth silhouettes in candy pastels — platform shoes, spiked chokers, bat and skull motifs in lilac and mint. Carry it through goth silhouettes in pastels, platform creepers, spiked choker, bat and skull charms, pastel hair. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -197,7 +197,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'safety pins and rips; studded leather; tartan bondage trousers; spiked dyed hair; harsh flash',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Punk Rock as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "1970s punk: DIY insurrection clothing — ripped and safety-pinned tees, studded leather, tartan bondage trousers and spiked hair. Carry it through safety pins and rips, studded leather, tartan bondage trousers, spiked dyed hair, harsh flash. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -226,7 +226,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'tweed blazer and turtleneck; long wool coat; oxfords; wire glasses; autumnal dark palette',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dark Academia as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dark academia: scholarly tailoring in autumnal darks — tweed blazers, turtlenecks, pleated trousers, long wool coats, oxfords and wire glasses. Carry it through tweed blazer and turtleneck, long wool coat, oxfords, wire glasses, autumnal dark palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -253,7 +253,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'heavy worn leather; chaps and engineer boots; chrome chains; road dust; low heroic framing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Road-Worn Biker Leather as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Road-worn biker leather: heavy motorcycle leathers with patina — thick jackets, vests, chaps, engineer boots and chains, dusty from the road. Carry it through heavy worn leather, chaps and engineer boots, chrome chains, road dust, low heroic framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -280,7 +280,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'baggy jeans and oversized tee; vulcanized skate shoes; beanie; low wide angle; candid energy',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Skater Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Skater style: loose, durable clothes built around the board — baggy jeans or cords, oversized tees, hoodies, flannel, beanies and scuffed vulcanized shoes. Carry it through baggy jeans and oversized tee, vulcanized skate shoes, beanie, low wide angle, candid energy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -307,7 +307,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'fluorescent phat pants; kandi bracelets; fuzzy accessories; platform sneakers; UV and lasers',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Raver (90s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "90s raver: club-kid ravewear — fluorescent colors, oversized cargos, crop tops, fuzzy accessories, visors, kandi bracelets and platform sneakers. Carry it through fluorescent phat pants, kandi bracelets, fuzzy accessories, platform sneakers, UV and lasers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -335,7 +335,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Slightly grainy, flash-lit finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Emo Scene as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "2000s emo and scene style: skinny black jeans, band-free graphic tees, studded belts, checkered accessories and side-swept dyed fringe. Carry it through skinny black jeans, studded belt, checkered accessories, side-swept dyed fringe, heavy eyeliner. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'skinny black jeans; studded belt; checkered accessories; side-swept dyed fringe; heavy eyeliner',
     },
@@ -369,7 +369,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Glossy, high-contrast stage finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Visual Kei as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Visual kei: theatrical rock fashion with dramatic hair, heavy makeup and ornate layered costumes mixing gothic, aristocratic and punk elements. Carry it through ornate layered costume, teased sculpted hair, heavy stage makeup, brocade and buckles, colored rim light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'ornate layered costume; teased sculpted hair; heavy stage makeup; brocade and buckles; colored rim light',
     },
@@ -403,7 +403,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, graphic finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sixties Mod as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "1960s mod style: sharp slim tailoring and graphic geometric dresses — two-button suits, fishtail parkas, shift dresses, go-go boots and bold op-art patterns. Carry it through slim two-button suit, geometric shift dress, go-go boots, op-art patterns, bob haircut. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'slim two-button suit; geometric shift dress; go-go boots; op-art patterns; bob haircut',
     },
@@ -436,7 +436,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp, saturated, detailed finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Decora Harajuku as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Decora street fashion: layered, hyper-accessorized kawaii style — dozens of hair clips, bright layered clothes, stickers, toys and bags worn all at once. Carry it through dozens of hair clips, layered candy colors, toy charms, face stickers, hyper-accessorized. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'dozens of hair clips; layered candy colors; toy charms; face stickers; hyper-accessorized',
     },
@@ -473,7 +473,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Gritty, high-contrast finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Metalhead Battle Vest as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Heavy metal fan style: denim or leather battle vest covered in sewn patches and studs, black tees, bullet belts, long hair and high-top sneakers or boots. Carry it through patch-covered battle vest, studded bullet belt, black tee, long hair, concert glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'patch-covered battle vest; studded bullet belt; black tee; long hair; concert glow',
     },
@@ -505,7 +505,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'bell-shaped petticoat skirt; lace and bows; bonnet; frilled socks; doll-like elegance',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lolita Fashion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Lolita fashion: doll-like Victorian-Rococo silhouettes — bell-shaped petticoated skirts, lace, bows, blouses with high collars and bonnets. Carry it through bell-shaped petticoat skirt, lace and bows, bonnet, frilled socks, doll-like elegance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -532,7 +532,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Warm, saturated vintage film finish, with believable fabric weight, seams and fit detail.',
       key_features: 'bell-bottoms; tie-dye; flower headband; fringed vest; handmade beads',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hippie (60s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "1960s hippie: flower-power clothing — bell-bottoms, peasant blouses, tie-dye, fringe, headbands and handmade beads. Carry it through bell-bottoms, tie-dye, flower headband, fringed vest, handmade beads. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -558,7 +558,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'black lace and velvet layers; silver moons and crosses; dark lipstick; heavy boots; candlelit low key',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Goth Darkwave as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Traditional goth darkwave: black-on-black romantic layers — lace, velvet, fishnet and silver — with pale skin and dramatic dark makeup. Carry it through black lace and velvet layers, silver moons and crosses, dark lipstick, heavy boots, candlelit low key. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -585,7 +585,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'oversized flannel; ripped jeans; knit beanie; scuffed boots; faded plaid palette',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grunge (90s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "90s grunge: slouchy thrift-store layers — oversized flannel, ripped jeans, faded band-less tees, knit beanies and scuffed boots — worn uncared-for. Carry it through oversized flannel, ripped jeans, knit beanie, scuffed boots, faded plaid palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

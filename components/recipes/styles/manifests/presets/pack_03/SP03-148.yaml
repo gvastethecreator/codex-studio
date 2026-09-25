@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested camera; cluttered scenes with many parts make the patchwork strongest.
   atmosphere_and_mood: Cheerfully clinical, a scene sorted into pieces.
   rendering_and_quality: Compositing-buffer finish with exact object boundaries and no gradients.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Object ID Matte Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Object ID matte pass: every separate object filled with one flat random color, so the whole scene becomes a patchwork map of its parts. Carry it through one flat random color per object, no shading, crisp object edges, patchwork of many parts, black background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: one flat random color per object; no shading; crisp object edges; patchwork of many parts; black background
 avoidRules:
   - sensor noise

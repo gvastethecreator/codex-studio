@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'mirror silver plate; iridescent tarnish halo; extreme fine detail; brass mat edge; positive-negative shimmer',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Daguerreotype (1840s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Daguerreotype: a one-of-a-kind image on a mirror-polished silver-plated copper plate, finely detailed and flipping between positive and negative as the viewing angle changes. Carry it through mirror silver plate, iridescent tarnish halo, extreme fine detail, brass mat edge, positive-negative shimmer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -55,7 +55,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'black iron plate; olive-grey creamy highlights; lacquered edges and pour lines; rust and scratches; Petzval swirl',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tintype (Civil War) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tintype: a collodion positive on a thin black-lacquered iron plate, fast, cheap and made in a portable darkroom. Carry it through black iron plate, olive-grey creamy highlights, lacquered edges and pour lines, rust and scratches, Petzval swirl. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -80,7 +80,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'starch-grain color mosaic; muted pastel palette; soft pointillist speckle; dim glow; glass plate softness',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Autochrome (1900s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Autochrome: an early color glass plate whose image is built from a mosaic of dyed potato-starch grains, soft and pointillist. Carry it through starch-grain color mosaic, muted pastel palette, soft pointillist speckle, dim glow, glass plate softness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -106,7 +106,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'projected slide glow; red and blue dye richness; center hot spot; dust specks on the slide; warm projector cast',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kodachrome (50s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Projected 1950s Kodachrome slide: mid-century reversal color seen as a lit transparency, with projector glow, slight vignetting and dust on the slide. Carry it through projected slide glow, red and blue dye richness, center hot spot, dust specks on the slide, warm projector cast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -133,7 +133,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'white frame with wide bottom; square image; developer spread marks; cyan-green shadows; close flash',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Polaroid (Instant) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Polaroid instant print: the whole physical print, with its square image, wide white frame thicker at the bottom and instant-film chemistry. Carry it through white frame with wide bottom, square image, developer spread marks, cyan-green shadows, close flash. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -159,7 +159,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'warm lab print cast; flash-blown faces; grain; tilted snapshot framing; matte 4x6 surface',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Disposable Camera (90s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "90s disposable-camera lab print: a 4x6 drugstore print from a single-use camera, with flash, warm lab color and a slightly off exposure. Carry it through warm lab print cast, flash-blown faces, grain, tilted snapshot framing, matte 4x6 surface. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -186,7 +186,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'red-orange light leaks; exposed sprocket rebate; heavy vignette; plastic-lens blur; overlapping frames',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lomography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Holga toy-camera lomography: a plastic 120 camera with a leaky body and a soft plastic lens, often shot on 35 mm so the sprocket holes are exposed. Carry it through red-orange light leaks, exposed sprocket rebate, heavy vignette, plastic-lens blur, overlapping frames. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -213,7 +213,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'glass plate edges; chipped corners and silvering; collodion pour marks; orthochromatic tones; view-camera falloff',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wet Plate Collodion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Wet plate glass negative: a collodion negative on glass, printed or scanned into a positive, with the chipped edges and pour marks of the plate itself. Carry it through glass plate edges, chipped corners and silvering, collodion pour marks, orthochromatic tones, view-camera falloff. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -241,7 +241,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'magenta and red foliage; deep cyan sky; pale yellow skin; infrared bloom; false-color reversal',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Infrared Film (Aerochrome) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Aerochrome color infrared: a false-color reversal film where healthy foliage turns red and magenta and skies go deep cyan-blue. Carry it through magenta and red foliage, deep cyan sky, pale yellow skin, infrared bloom, false-color reversal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -266,7 +266,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Prussian blue monochrome; watercolor paper tooth; brushed coating edges; sun-printed tones; white highlights',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyanotype (Photo) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cyanotype photographic print: an iron-salt print exposed by sunlight under a negative, giving a Prussian-blue image on watercolor paper. Carry it through Prussian blue monochrome, watercolor paper tooth, brushed coating edges, sun-printed tones, white highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -292,7 +292,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'tiny-sensor noise; harsh on-camera flash; JPEG blocks; purple fringing; clipped highlights',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Early Digital (2000s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Early digital compact camera: a 2–3 megapixel point-and-shoot from the early 2000s with a tiny sensor, harsh flash and heavy JPEG compression. Carry it through tiny-sensor noise, harsh on-camera flash, JPEG blocks, purple fringing, clipped highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -318,7 +318,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'paper-negative fiber texture; uniform pinhole softness; curved-plane stretch; dark corners; ghosted motion',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pinhole Camera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Paper-negative pinhole print: a box camera with a pinhole exposing photographic paper, contact-printed into a positive with the paper negative's texture. Carry it through paper-negative fiber texture, uniform pinhole softness, curved-plane stretch, dark corners, ghosted motion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -379,7 +379,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Soft and painterly, an early photograph still halfway to a drawing.',
       rendering_and_quality: 'Matte salted-paper print; not glossy albumen and not a metal plate.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Salt Print Calotype as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Salt print from a calotype: an 1840s paper negative printed on salted paper, soft and fibrous, with warm matte tones sunk into the paper. Carry it through paper-negative fiber texture, warm brown-lavender tones, matte salted paper, soft broad masses, low contrast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'paper-negative fiber texture; warm brown-lavender tones; matte salted paper; soft broad masses; low contrast',
     },
@@ -412,7 +412,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Formal and charming, a calling card meant to be traded.',
       rendering_and_quality: 'Glossy albumen card look; not a salt print and not a tintype.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Albumen Carte de Visite as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Albumen carte de visite: an 1860s small card portrait printed on egg-white-coated paper and mounted on a card, with a painted studio backdrop. Carry it through glossy sepia-purple albumen, mounted card with rounded corners, painted studio backdrop, foxing, formal pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'glossy sepia-purple albumen; mounted card with rounded corners; painted studio backdrop; foxing; formal pose',
     },
@@ -443,7 +443,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Poetic and hushed, the world softened into a reverie.',
       rendering_and_quality: 'Platinum-print tonality with soft-focus glow; not crisp documentary.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pictorialist Platinum Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pictorialist platinum print: an early-1900s art photograph made with a soft-focus lens and printed in platinum on matte paper to look like a painting. Carry it through soft-focus bloom, long warm grey scale, matte platinum paper, misty backlight, painterly composition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'soft-focus bloom; long warm grey scale; matte platinum paper; misty backlight; painterly composition',
     },
@@ -476,7 +476,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Wondrous and old-fashioned, a travel lecture in a darkened hall.',
       rendering_and_quality: 'Hand-tinted projected glass look; not modern color photography.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hand-Colored Lantern Slide as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Hand-colored lantern slide: a black-and-white positive on glass tinted by hand with transparent dyes and projected by a magic lantern. Carry it through hand-tinted transparent dyes, monochrome base, projected glow, rounded mask, tints slipping past edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'hand-tinted transparent dyes; monochrome base; projected glow; rounded mask; tints slipping past edges',
     },
@@ -509,7 +509,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Large-plate albumen print with blank skies; not a modern HDR landscape.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mammoth Plate Landscape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Mammoth plate landscape: 1870s survey photographs on enormous glass negatives, extraordinarily detailed, with skies burned to blank white by blue-sensitive emulsion. Carry it through blank white sky, extreme land detail, warm albumen browns, misted moving water, high vantage survey view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'blank white sky; extreme land detail; warm albumen browns; misted moving water; high vantage survey view',
     },
@@ -536,7 +536,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Warm and bittersweet, a summer kept in an old album.',
       rendering_and_quality: 'Dye-fading in the print; not an overall sepia filter.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 1970s Faded Color Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "1970s faded color print: a family snapshot on chromogenic paper whose cyan dye has faded, leaving a warm magenta-orange cast. Carry it through faded cyan dye, magenta-orange cast, yellowed whites, satin print surface, snapshot framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'faded cyan dye; magenta-orange cast; yellowed whites; satin print surface; snapshot framing',
     },
@@ -564,7 +564,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Everyday and affectionate, a small memory in a shoebox.',
       rendering_and_quality: 'Tiny-negative enlargement look; softer than 35 mm film.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 1980s Pocket Instamatic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "1980s pocket Instamatic: a tiny 110 negative enlarged into a small grainy print, with a flash bar and fixed-focus lens. Carry it through heavy 110 grain, soft fixed focus, flash bar hot center, saturated muddy color, glossy small print. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'heavy 110 grain; soft fixed focus; flash bar hot center; saturated muddy color; glossy small print',
     },

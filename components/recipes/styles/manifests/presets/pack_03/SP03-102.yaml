@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; the pattern falling across the main subject.
   atmosphere_and_mood: Theatrical and intimate, the light telling a story of an unseen window.
   rendering_and_quality: Clean projected pattern without image content; distinct from projector imagery.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gobo Pattern Shadows as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Gobo pattern lighting: a spotlight through a cut-out cookie projecting shaped shadows — leaves, window bars, lattice — across the subject and set. Carry it through cut-out pattern shadows, spotlight cookie, pattern wrapping forms, theatrical dark ambient, focusable edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: cut-out pattern shadows; spotlight cookie; pattern wrapping forms; theatrical dark ambient; focusable edges
 avoidRules:
   - changing the geometry

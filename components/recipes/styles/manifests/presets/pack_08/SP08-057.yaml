@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Scholarly, rural, dignified and warm, carried by how the material moves and catches light.
   rendering_and_quality: Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.
   key_features: flecked wool tweed; herringbone and check; heritage tailoring; overcast light
-  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tweed Suit as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
+  creative_brief: "Tweed tailoring: suits and coats of rough woven wool tweed with flecked color and heritage structure. Carry it through flecked wool tweed, herringbone and check, heritage tailoring, overcast light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - readable label text

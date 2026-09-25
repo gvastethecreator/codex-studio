@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested camera; the slice plane crosses the shapes at a clear readable angle.
   atmosphere_and_mood: Mathematical and hypnotic, space measured in rings.
   rendering_and_quality: Raymarched finish with perfectly smooth blends and even stripe spacing; no polygons visible.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies SDF Contour Band Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Signed distance field debug shader: a slicing plane through smoothly blended SDF shapes, painted with repeating distance rings, warm outside and cool inside. Carry it through repeating distance rings, orange outside and blue inside, white zero-surface line, smooth-minimum blends, raymarched forms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: repeating distance rings; orange outside and blue inside; white zero-surface line; smooth-minimum blends; raymarched forms
 avoidRules:
   - sensor noise

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Restless and obsessive, nervous energy turned into form.
   rendering_and_quality: Continuous circular scribble marks everywhere, no straight hatching and no clean outlines; ink blobs and indents visible.
   key_features: tangled circular scribble tone; ballpoint ink blobs; glossy dense darks; pressure indentations; loose trailing edges
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ballpoint Scribble Shading as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Ballpoint scribble drawing: tone built from tangled looping circular scribbles of a cheap ballpoint, layered denser and harder where it needs to go dark. Carry it through tangled circular scribble tone, ballpoint ink blobs, glossy dense darks, pressure indentations, loose trailing edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - mixing in a second drawing tool

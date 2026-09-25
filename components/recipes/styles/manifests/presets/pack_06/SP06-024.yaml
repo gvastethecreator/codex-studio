@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Warm, classical and sculptural, like an old study sheet.
   rendering_and_quality: Controlled hard chalk hatching with crisp edges, three values plus paper tone; less smudging than charcoal.
   key_features: sanguine, bistre and black crayon; white chalk highlights; buff paper as mid-tone; square-stick hatching; sculptural planes
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Conte Crayon as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Conté crayon drawing: square sticks of hard pressed chalk in sanguine red, bistre brown, black and white used on a mid-toned buff paper. Carry it through sanguine, bistre and black crayon, white chalk highlights, buff paper as mid-tone, square-stick hatching. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - mixing in a second drawing tool

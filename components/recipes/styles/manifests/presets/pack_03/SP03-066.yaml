@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Calm, luxurious and weightless, rhythm without a story.
   rendering_and_quality: Noise-free path-traced finish with soft depth of field on the farthest layer.
   key_features: sweeping glossy ribbons; two-hue gradients; long area-light highlights; diagonal depth layers; calm subject space
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Abstract Background as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Procedural abstract environment: sweeping glossy ribbons, extruded curves and soft volumes arranged in deep space, with no recognizable objects of their own. Carry it through sweeping glossy ribbons, two-hue gradients, long area-light highlights, diagonal depth layers, calm subject space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise likeness
   - recognizable game or film world

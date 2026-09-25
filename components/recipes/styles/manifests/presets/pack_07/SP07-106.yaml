@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; look up or down the hillside axis so terraces stack, the water stair as the spine of the composition.
   atmosphere_and_mood: Theatrical, cool and humanist, a hillside choreographed with water.
   rendering_and_quality: Rich photograph with moss and stone detail, clean falling water, no flat parterre plain.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Terraced Water-Stair Garden as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Terraced water-stair garden: an Italian Renaissance villa garden cut into a hillside in axial terraces, linked by balustraded stairs, with a water staircase, grottoes and fountains driven by gravity. Carry it through stacked hillside terraces, balustraded double stairs, stepped water staircase, mossy grotto niches, ilex and cypress groves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: stacked hillside terraces; balustraded double stairs; stepped water staircase; mossy grotto niches; ilex and cypress groves
 avoidRules:
   - golden-hour garden postcard formula

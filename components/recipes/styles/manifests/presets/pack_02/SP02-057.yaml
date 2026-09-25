@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Quiet and handmade, a slow image from a box and a needle hole.
   rendering_and_quality: Contact-printed paper-negative look; distinct from the modern long-exposure pinhole in pack_01.
   key_features: paper-negative fiber texture; uniform pinhole softness; curved-plane stretch; dark corners; ghosted motion
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pinhole Camera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Paper-negative pinhole print: a box camera with a pinhole exposing photographic paper, contact-printed into a positive with the paper negative's texture. Carry it through paper-negative fiber texture, uniform pinhole softness, curved-plane stretch, dark corners, ghosted motion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - illustration
   - painting

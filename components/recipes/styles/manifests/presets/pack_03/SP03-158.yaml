@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested camera; the ring expands from the foreground or center so its curvature reads.
   atmosphere_and_mood: Searching and suspenseful, the dark revealed one ring at a time.
   rendering_and_quality: Screen-space depth-based pulse with crisp edges; no lidar points and no UI markers.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Radial Scanner Pulse Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Radial scanner pulse shader: an expanding ring of light sweeping across the scene from one point, briefly outlining every edge it crosses in glowing lines. Carry it through expanding ring of light, edge lines lit inside the band, dim desaturated scene, sharp leading edge, soft trailing fade. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: expanding ring of light; edge lines lit inside the band; dim desaturated scene; sharp leading edge; soft trailing fade
 avoidRules:
   - sensor noise

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Full figure packed with accessories, playful pose, keeping the full outfit silhouette and fit readable at card size.
   atmosphere_and_mood: Joyful, excessive, childlike and fearless, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Crisp, saturated, detailed finish, with believable fabric weight, seams and fit detail.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Decora Harajuku as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Decora street fashion: layered, hyper-accessorized kawaii style — dozens of hair clips, bright layered clothes, stickers, toys and bags worn all at once. Carry it through dozens of hair clips, layered candy colors, toy charms, face stickers, hyper-accessorized. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: dozens of hair clips; layered candy colors; toy charms; face stickers; hyper-accessorized
 avoidRules:
   - brand logo

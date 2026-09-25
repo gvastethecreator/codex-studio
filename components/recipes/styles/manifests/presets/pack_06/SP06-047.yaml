@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Raw, energetic and cinematic, a fast glimpse of an idea.
   rendering_and_quality: Rough shape-first finish with hard lasso cuts and broad strokes; no fine detail, no polish and no line art.
   key_features: big flat brush and lasso shapes; three to five values; unfinished borders; strong silhouette read; one saturated accent
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Block-In Speedpaint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Digital speedpaint: a scene blocked in within minutes using big flat brushes and lasso-filled shapes, left rough with only the focal area slightly refined. Carry it through big flat brush and lasso shapes, three to five values, unfinished borders, strong silhouette read, one saturated accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - concept board layout

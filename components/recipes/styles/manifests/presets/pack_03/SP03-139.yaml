@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested camera; visibility drops sharply with distance so the subject reads as a silhouette in white.
   atmosphere_and_mood: Harsh and isolating, the wind louder than anything.
   rendering_and_quality: Layered particle volume with depth-based density and motion blur; no painted snow overlay.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Particle Blizzard Simulation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Particle blizzard simulation: millions of wind-driven snow particles streaming across the scene in layered sheets, with gust eddies and drifts building against obstacles. Carry it through wind-driven particle sheets, motion-blurred near streaks, drifts on windward faces, haloed point lights, steep visibility falloff. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: wind-driven particle sheets; motion-blurred near streaks; drifts on windward faces; haloed point lights; steep visibility falloff
 avoidRules:
   - franchise likeness

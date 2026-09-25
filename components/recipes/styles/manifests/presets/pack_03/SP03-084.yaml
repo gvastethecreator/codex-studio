@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Final shot framing, exactly as the finished scene would be seen.
   atmosphere_and_mood: Calm and sculptural, the scene stripped back to pure form.
   rendering_and_quality: Clean GI clay render; distinct from a sculpting-app matcap viewport.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grey Clay Lighting Test as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Grey clay lighting test: a whole scene rendered with every material set to matte grey so only form, light and shadow remain. Carry it through all-grey matte materials, full global illumination, ambient occlusion in crevices, no textures, final shot framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: all-grey matte materials; full global illumination; ambient occlusion in crevices; no textures; final shot framing
 avoidRules:
   - 2d illustration

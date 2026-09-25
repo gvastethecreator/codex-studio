@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Gentle and comforting, daily routine as a small pleasure.
   rendering_and_quality: Clean soft outlines and a controlled seasonal palette; nothing harsh or gritty.
   key_features: seasonal palette; rounded forms; soft outlines; warm light; cozy negative space
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cozy Sim Seasonal Palette as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cozy life-sim art direction: soft pixel or painted forms with rounded shapes, gentle outlines and warm seasonal palettes. Carry it through seasonal palette, rounded forms, soft outlines, warm light, cozy negative space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - known game HUD layout

@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Solemn, lush pressure, beautiful and costly at once.
   rendering_and_quality: Glazed layers with soft distant edges and crisp near edges, values readable to the back.
   key_features: layered teal value falloff; translucent edge glazes; pore stipple; pale cyan accents; damp patina
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lush Abyssal Toll Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Deep-water anime painting in layered teal values with translucent edge glazes and low-contrast pore marks, as if the subject were seen through fathoms of water. Carry it through layered teal value falloff, translucent edge glazes, pore stipple, pale cyan accents, damp patina. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

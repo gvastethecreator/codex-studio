@@ -32,10 +32,7 @@ visualDna:
     Crisp edges, controlled facets, sparse line detail, no fake inscriptions.
   key_features: >-
     Engraved contour, beveled value planes, localized metal accents, restrained geometry
-  creative_brief: >-
-    Apply a visual treatment centered on engraved contour, beveled value planes, localized
-    metal accents, restrained geometry. Preserve the exact subject, action, count, age,
-    costume, setting, camera, and mood. Add nothing outside the prompt.
+  creative_brief: "Apply a visual treatment centered on engraved contour, beveled value planes, localized metal accents, restrained geometry. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

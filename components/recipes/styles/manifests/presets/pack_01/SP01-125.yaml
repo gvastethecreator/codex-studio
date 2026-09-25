@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Macro or close-up, the plant against a darker background, shallow depth with glowing bokeh.
   atmosphere_and_mood: Delicate and radiant, fragile living structures lit from within.
   rendering_and_quality: Clean highlights without clipping in the glowing tissue.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Backlit Botanical as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Backlit botanical photography: petals, leaves and seeds shot against the sun or a bright source so their veins and translucency glow. Carry it through light through leaves and petals, glowing veins, rim-lit hairs, dark background, shallow bokeh. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: light through leaves and petals; glowing veins; rim-lit hairs; dark background; shallow bokeh
 avoidRules:
   - illustration

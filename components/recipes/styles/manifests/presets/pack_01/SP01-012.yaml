@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Vivid and dramatic, saturated color pushing against dense black shadow.
   rendering_and_quality: 'Projected-slide intensity: high contrast, saturated but clean color, no HDR halos or digital clarity.'
   key_features: ultra-saturated slide; electric greens; magenta dawn bias; crushed black shadows; near-invisible grain
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fujifilm Velvia 50 as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Fujifilm Velvia 50 color slide: a slow, ultra-saturated landscape reversal film shot on a tripod, with dense blacks and almost no exposure latitude. Carry it through ultra-saturated slide, electric greens, magenta dawn bias, crushed black shadows, near-invisible grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - clean digital sensor look
   - generic stock-photo face

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Clean and playful, the world simplified into crystal shards.
   rendering_and_quality: Crisp flat-shaded facets without smoothing or texture maps.
   key_features: visible triangular facets; flat per-facet shading; no textures; vivid palette; readable silhouettes
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Low Poly as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Low-poly 3D: forms reduced to a few hundred flat triangular facets, each facet a single shaded tone. Carry it through visible triangular facets, flat per-facet shading, no textures, vivid palette, readable silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - franchise likeness

@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Tactile, practical, lived-in grit without forced danger.
   rendering_and_quality: Chipped contour edges, matte planes and clear construction logic in every object.
   key_features: chipped contour edges; scuffed matte planes; stone gray, iron and linen; narrow light slices; rubbed pigment
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Procedural Low-Fantasy Grit Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Grounded low-fantasy anime ink with scuffed matte planes, chipped contour edges and narrow slices of light that show how everyday things are made and worn. Carry it through chipped contour edges, scuffed matte planes, stone gray, iron and linen, narrow light slices. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

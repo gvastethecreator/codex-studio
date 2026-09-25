@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Operatic and tense, a long silence stretched before sudden violence.
   rendering_and_quality: Faded Techniscope color and grain; no clean modern grade.
   key_features: extreme close-up versus extreme wide; noon sun; sun-bleached ochre; dust and sweat; widescreen tension
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Spaghetti Western as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Spaghetti western: 1960s widescreen frontier cinema that alternates extreme wide landscapes with extreme close-ups of eyes, under merciless sun. Carry it through extreme close-up versus extreme wide, noon sun, sun-bleached ochre, dust and sweat, widescreen tension. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - readable fake text

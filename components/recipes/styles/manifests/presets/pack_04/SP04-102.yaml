@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: 'Splash-page drama: looming low angles, a monster or figure rising out of gloom, deep receding backgrounds.'
   atmosphere_and_mood: Lurid, gothic and delicious dread, a campfire tale drawn seriously.
   rendering_and_quality: Rich tonal wash gradations with sharp pen detail on top; no color, no dot screentone.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Greywash Horror Magazine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "1970s black-and-white horror magazine art: detailed pen ink drawing modeled with diluted ink gray washes instead of color or screentone. Carry it through diluted ink gray washes, pen hatching over wash, wash tide lines, theatrical underlight, looming low angles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: diluted ink gray washes; pen hatching over wash; wash tide lines; theatrical underlight; looming low angles
 avoidRules:
   - added panels or gutters

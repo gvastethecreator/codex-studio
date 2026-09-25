@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Wondrous, collected and bright, the world's plants under one roof.
   rendering_and_quality: Crisp photograph with continuous iron curves and a legible rib-shadow net; humidity haze belongs to Conservatory Bioclimate, not here.
   key_features: curvilinear wrought-iron glass vault; net of rib shadows; specimen palms; cast-iron spiral stair and gallery; giant water-lily tank
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Botanical Iron Glasshouse as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Botanical iron glasshouse: a Victorian curvilinear palm house of wrought-iron ribs and small curved panes, planted as a display with specimen palms, tiered beds and a spiral stair to a gallery. Carry it through curvilinear wrought-iron glass vault, net of rib shadows, specimen palms, cast-iron spiral stair and gallery, giant water-lily tank. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - golden-hour garden postcard formula
   - corten steel edging as default

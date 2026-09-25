@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Dramatic and sleek, form drawn with a single line of light.
   rendering_and_quality: Clean CG rim with controlled bloom; the cinematic rim light lives in pack_02.
   key_features: thin bright silhouette edge; dark subject; twin back lights; fresnel edges; controlled bloom
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rendered Rim Light Rig as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Rendered rim light rig: CGI back lights placed behind the subject so a thin bright edge traces its silhouette against a dark background. Carry it through thin bright silhouette edge, dark subject, twin back lights, fresnel edges, controlled bloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the geometry
   - adding a new environment

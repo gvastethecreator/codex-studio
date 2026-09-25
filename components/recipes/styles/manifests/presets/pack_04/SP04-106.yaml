@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Spacious landscape-led views with figures in their environment, weather and season given room.
   atmosphere_and_mood: Warm, travelled and wistful, adventure felt through light and weather.
   rendering_and_quality: Fine pen line softened by genuine watercolor behavior; no flat fills and no digital gradients.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Direct-Color Album Watercolor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "European direct-color album art: a fine pen line painted directly in transparent watercolor, washes flowing over and softening the ink. Carry it through pen line under transparent watercolor, wet-in-wet blooms, bare paper whites, granulating pigment, landscape-led view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: pen line under transparent watercolor; wet-in-wet blooms; bare paper whites; granulating pigment; landscape-led view
 avoidRules:
   - added panels or gutters

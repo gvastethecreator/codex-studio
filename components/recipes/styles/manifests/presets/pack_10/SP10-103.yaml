@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.
   atmosphere_and_mood: Broadcast, twitchy, retro and technical, coming from the medium itself.
   rendering_and_quality: Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Interlace Comb Tear as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Interlace combing: alternate horizontal lines from two fields offset on moving edges. Carry it through interlace comb teeth, motion edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: interlace comb teeth; motion edges
 avoidRules:
   - readable text

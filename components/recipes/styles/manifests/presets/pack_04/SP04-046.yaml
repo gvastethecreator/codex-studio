@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Urgent and decisive, the energy of fast choices left visible on the canvas.
   rendering_and_quality: 'Deliberately unfinished: detail density drops sharply outside the focal point, with no smoothing pass and no rendered texture maps.'
   key_features: three or four value groups; hard round and chalk brush strokes; detail only at the focal point; canvas edges left as block-in; one complementary accent
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Value-Block Speedpaint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Digital speedpaint finished in under an hour: big flat value blocks laid with a hard round and a textured chalk brush, detail placed only at the focal point. Carry it through three or four value groups, hard round and chalk brush strokes, detail only at the focal point, canvas edges left as block-in, one complementary accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable annotations
   - readable text

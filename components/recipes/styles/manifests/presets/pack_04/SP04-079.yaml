@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Solemn, gothic and ceremonial, like a page from a chained book.
   rendering_and_quality: Precise pen-built strokes with consistent nib angle; no readable text.
   key_features: broad-nib textura strokes; diamond terminals; hairline flourishes; gold leaf; vellum grain
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Calligraphy (Blackletter) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Blackletter calligraphy: the subject drawn with a broad-edged nib in textura strokes, vertical columns, broken curves and diamond terminals, like a gothic illuminated initial. Carry it through broad-nib textura strokes, diamond terminals, hairline flourishes, gold leaf, vellum grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - brand logo

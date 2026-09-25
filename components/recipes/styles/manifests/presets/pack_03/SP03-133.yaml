@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested camera; kit repetition creates a rhythm of arches receding into darkness.
   atmosphere_and_mood: Oppressive and cold, every archway promising something waiting.
   rendering_and_quality: Game-engine level art with baked GI, light dust in torch beams and visible but tasteful module repetition.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Modular Dungeon Kit Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Modular dungeon environment render: corridors and halls assembled from repeating stone wall, arch, pillar and floor kit pieces on a snap grid. Carry it through snap-grid stone kit pieces, repeating arches, torch pools with hard falloff, trim-sheet bevels, moss in seams. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: snap-grid stone kit pieces; repeating arches; torch pools with hard falloff; trim-sheet bevels; moss in seams
 avoidRules:
   - franchise likeness

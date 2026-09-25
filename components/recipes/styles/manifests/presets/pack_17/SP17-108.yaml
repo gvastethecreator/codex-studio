@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Moody central composition with large areas of empty black paper, a strong focal glow, and elegant silhouette.
   atmosphere_and_mood: Dark, ceremonial, luxurious, and smoldering.
   rendering_and_quality: 'Refined special-edition print quality: flat unmodulated ink layers, crisp gold contour and halftone, visible riso grain and slight registration drift, no painted modeling, no realistic skin or metal rendering, no digital bloom.'
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gold Ember Black Stock Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Night-edition risograph printed on black paper stock with flat metallic gold and fluorescent orange spot inks, a few opaque white highlights, and the subject built only from printed line, halftone, and flat ink shapes over bare black paper. Carry it through black paper stock, metallic gold line, fluorescent orange ember glow, opaque white highlights, inverted light logic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: black paper stock; metallic gold line; fluorescent orange ember glow; opaque white highlights; inverted light logic
 avoidRules:
   - white paper

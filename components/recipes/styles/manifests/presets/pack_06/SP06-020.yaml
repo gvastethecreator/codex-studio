@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Rich, careful and jewel-like, colors almost glowing.
   rendering_and_quality: Smooth burnished surfaces with crisp edges; no pencil hatching visible in the finished areas, no watery washes.
   key_features: layered wax pencil in circular strokes; burnished glossy surface; complementary layered darks; paper tooth filled; clean white field
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Burnished Colored Pencil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Burnished colored pencil: many light layers of wax-based pencil laid in small circular strokes, then pressed hard with a colorless blender until the paper tooth disappears. Carry it through layered wax pencil in circular strokes, burnished glossy surface, complementary layered darks, paper tooth filled, clean white field. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - mixing in a second drawing tool

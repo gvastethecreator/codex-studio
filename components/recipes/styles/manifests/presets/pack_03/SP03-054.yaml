@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Crave-inducing and energetic, appetite frozen at its peak.
   rendering_and_quality: Hyperreal simulation of splashes and particles, glossy but never plastic, with no packaging text or brand marks.
   key_features: levitating ingredient arc; frozen splashes and droplets; backlit steam; specular pings; diagonal hero composition
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Food CGI as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Food advertising CGI: the dish exploded into a frozen moment, ingredients levitating in an arc, sauces splashing and droplets suspended around the hero item. Carry it through levitating ingredient arc, frozen splashes and droplets, backlit steam, specular pings, diagonal hero composition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - forced T-pose
   - object turned into an avatar

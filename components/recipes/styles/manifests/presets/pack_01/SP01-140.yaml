@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Circular vignette, extreme wide angle, tunnel perspective into the cavity.
   atmosphere_and_mood: Claustrophobic and curious, peering into places never meant to be seen.
   rendering_and_quality: Honest inspection-camera realism with no readable overlay, grid or measurements.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Borescope Inspection as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Borescope inspection: a tiny camera on a flexible probe pushed into a cavity, with its own ring of LEDs lighting a round, tunnel-like view. Carry it through circular vignette, ring-LED glare, tunnel perspective, rapid falloff to black, low-resolution softness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: circular vignette; ring-LED glare; tunnel perspective; rapid falloff to black; low-resolution softness
 avoidRules:
   - illustration

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested location and camera; chunky silhouettes lean and taper for a hand-built feel.
   atmosphere_and_mood: Cozy, warm and welcoming, a place built for adventure.
   rendering_and_quality: Low specular, no photographic texture and no physically based sheen; strokes stay readable at distance.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hand-Painted Texture Environment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hand-painted texture environment: chunky stylized 3D geometry wrapped in painted diffuse textures where light, shadow and wear are painted into the color itself. Carry it through painted diffuse textures, brush strokes in stone and wood, painted edge highlights, chunky leaning silhouettes, low specular. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: painted diffuse textures; brush strokes in stone and wood; painted edge highlights; chunky leaning silhouettes; low specular
 avoidRules:
   - franchise likeness

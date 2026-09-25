@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Gentle, crafted and storybook-like, a tidy paper theater.
   rendering_and_quality: Flat shapes with subtle paper texture and soft layer shadows; no glossy 3D, no outlines.
   key_features: stacked flat paper layers; soft layer drop shadows; paper fiber grain; five to eight depth planes; clean cut edges
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paper Cutout (Digital) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Digital layered paper cutout: scenes built from stacked flat paper shapes with soft drop shadows between layers, as if cut and arranged in a shallow box. Carry it through stacked flat paper layers, soft layer drop shadows, paper fiber grain, five to eight depth planes, clean cut edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - concept board layout

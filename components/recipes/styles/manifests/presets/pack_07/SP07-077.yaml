@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Expansive and uncanny, the whole world overhead.
   rendering_and_quality: Naturalistic landscape rendering with correct aerial haze along the rising arc; never a globe view.
   key_features: horizon curving upward; landscape band overhead; charcoal containment walls; ocean-cyan strips; aerial haze along the arc
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Orbital Ribbon Habitat as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Orbital ribbon habitat: a landscape laid on the inside of a vast ring, the ground rising into the sky on both sides, held in by charcoal containment walls. Carry it through horizon curving upward, landscape band overhead, charcoal containment walls, ocean-cyan strips, aerial haze along the arc. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - black and gold sci-fi palette by default
   - franchise ship or station likeness

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Decoration framed by the shape of a chest, plate or bowl.
   atmosphere_and_mood: Homely, festive, rustic and warm, driven by the construction, color and rhythm.
   rendering_and_quality: Confident folk brushwork, with clean, deliberate marks and no accidental noise.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rosemaling Folk Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Rosemaling: Scandinavian-style decorative folk painting with C- and S-stroke scrolls and flowers on wooden objects. Carry it through C and S strokes, scroll flowers, painted wood object. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: C and S strokes; scroll flowers; painted wood object
 avoidRules:
   - readable text

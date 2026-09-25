@@ -360,8 +360,8 @@ const spec: Spec = {
       avoid: [...AVOID, 'cyan scanline hologram', 'projector beam', 'flicker glitch'],
       briefs: [
         'Depth-sliced hologram shader of a crowned lich skull floating in darkness, its bone rebuilt as dozens of stacked amber contour slices with black gaps between, slices bunching bright along the brow and jaw, three-quarter view. No text or logo.',
-        'Depth-sliced hologram shader of a three-masted galleon, hull and sails as soft green stacked slices. No text or logo.',
-        'Depth-sliced hologram shader of an anatomical heart, chambers traced by the changing slice outlines. No text or logo.',
+        'Depth-sliced hologram shader of a three-masted galleon floating in darkness, hull and sails rebuilt as soft green stacked slices with black gaps, slices bunching bright along the rigging. No text or logo.',
+        'Depth-sliced hologram shader of a human heart, its chambers traced by changing amber slice outlines stacked in depth, the valves glowing where the slices crowd together. No text or logo.',
       ],
     },
     {
@@ -502,7 +502,7 @@ const spec: Spec = {
       avoid: [...AVOID, 'real burning paper', 'gore'],
       briefs: [
         'Noise dissolve shader on a weeping stone angel statue in a moonlit graveyard, the stone body vanishing from the feet upward in cloudy ragged holes, a thin orange-white burning edge band, embers drifting off, gravestones visible through the gaps. No text or logo.',
-        'Noise dissolve shader on a red rose, petals erasing through cold cyan edge bands. No text or logo.',
+        'Noise dissolve shader on a single red rose in a vase, petals erasing from the top in cloudy ragged holes edged with a thin cold cyan glow, tiny sparks drifting off. No text or logo.',
         'Noise dissolve shader on a rowing boat at the waterline, the hull vanishing bow first into drifting ash. No text or logo.',
       ],
     },

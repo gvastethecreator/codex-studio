@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; the tiered roof silhouette with finials must read clearly against the sky.
   atmosphere_and_mood: Austere, windswept and devout, craft built against long winters.
   rendering_and_quality: Crisp timber detail with visible carving depth; interlace stays ornamental and never forms readable runes.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tarred Stave-Hall Interlace as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Northern stave architecture: vertical timber staves, steep stacked roofs clad in tarred scale shingles, carved beast-head gable finials and interlace-carved portals. Carry it through tarred scale-shingle roofs, stacked tiered roof silhouette, carved beast-head finials, interlace portals, low grazing winter sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: tarred scale-shingle roofs; stacked tiered roof silhouette; carved beast-head finials; interlace portals; low grazing winter sun
 avoidRules:
   - licensed fantasy location

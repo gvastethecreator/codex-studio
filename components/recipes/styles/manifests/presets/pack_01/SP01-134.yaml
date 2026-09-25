@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Object centered flat against the light, black surround, fringes as the main pattern.
   atmosphere_and_mood: Scientific and psychedelic, hidden tension turned into color.
   rendering_and_quality: Crisp fringe bands; not a rainbow gradient overlay.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Photoelastic Stress Imaging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Photoelastic stress imaging: transparent plastic objects between crossed polarizers, where internal stress appears as bands of rainbow interference color. Carry it through rainbow stress fringes, crossed polarizers, clear plastic object, black background, dense bands at pressure points. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: rainbow stress fringes; crossed polarizers; clear plastic object; black background; dense bands at pressure points
 avoidRules:
   - illustration

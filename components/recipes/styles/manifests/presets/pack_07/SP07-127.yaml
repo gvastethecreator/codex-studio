@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view as a close macro against a plain seamless backdrop so the silhouettes stay clear.
   atmosphere_and_mood: Playful, tactile and a little silly, whimsy bent by hand.
   rendering_and_quality: Macro photograph of a real chenille build with fuzz resolved; no smooth wire or plastic.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chenille Pipe-Cleaner Craft as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Pipe-cleaner craft: the subject bent and twisted from fuzzy chenille stems, with pom-poms for round masses and wiggle-free bead eyes. Carry it through twisted fuzzy chenille stems, pom-pom masses, glowing fibre halos, exposed wire ends, plain seamless backdrop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: twisted fuzzy chenille stems; pom-pom masses; glowing fibre halos; exposed wire ends; plain seamless backdrop
 avoidRules:
   - brand logo on parts

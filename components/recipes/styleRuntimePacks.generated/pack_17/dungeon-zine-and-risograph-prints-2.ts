@@ -216,7 +216,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Deliberately rough but high-quality dungeon zine reproduction: crunchy black ink, controlled xerox stipple, riso offset, coarse paper, and no vector polish.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rust Red Dungeon Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Rust-red old-school dungeon zine monster-card style with grotesque skull cultists, squat brutes, spiked hoods, wobbly hand-inked bodies, flat rust panels, and black xerox shadows. Carry it through rust red OSR zine, grotesque hand-inked dungeon figures, black xerox stipple, crooked full-body monster-card poses, flat color panel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'rust red OSR zine; grotesque hand-inked dungeon figures; black xerox stipple; crooked full-body monster-card poses; flat color panel; no centered door emblem',
     },
@@ -246,7 +246,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Rough acid riso/xerox finish with broken black contour, halftone dirt, paper tooth, and controlled denoise while staying ugly, handmade, and readable.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Toxic Lime Crawl Flyer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Toxic lime crawl zine style with hot magenta misprint shadows, grotesque frog demons, horned masks, cultists, crude weapons, chains, and nasty-bright flat panels. Carry it through toxic lime panel, hot magenta offset, grotesque dungeon freaks, chains and crude weapons, black xerox ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'toxic lime panel; hot magenta offset; grotesque dungeon freaks; chains and crude weapons; black xerox ink; crooked OSR figure crop',
     },
@@ -277,7 +277,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Limited-palette risograph with heavy black contour, dry hatch fields, riso bloom, rough cream gaps, and intentionally crude but legible anatomy.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cobalt Rot Risograph as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Cobalt and rot-orange dungeon zine print where fungal knights, swollen trolls, lumpy helmets, shields, boots, and rude hand-inked anatomy carry the style. Carry it through cobalt rot palette, fungal knight-monsters, lumpy OSR bodies, rough black hatching, flat riso panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'cobalt rot palette; fungal knight-monsters; lumpy OSR bodies; rough black hatching; flat riso panels; rude handmade dungeon print',
     },
@@ -308,7 +308,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Cheap pulp risograph/xerox reproduction with chunky black line, aged paper, wobbly contour, print scum, and controlled low-detail grit.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mold Pulp Dungeon Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Mold-green pulp dungeon zine with slime monks, ghouls, old-game-store ogres, drooping robes, cheap pamphlet ink, and sickly aged-yellow panels. Carry it through mold green pulp zine, slime monks and ghouls, aged yellow panels, crude black robe mass, wobbly old-school monster-card drawing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'mold green pulp zine; slime monks and ghouls; aged yellow panels; crude black robe mass; wobbly old-school monster-card drawing',
     },
@@ -343,7 +343,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Pastel-toxic risograph with black xerox contour, faded teal offset, purple shadow blocks, crude stipple, and denoised but handmade texture.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bone Pink Catacomb Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Bone-pink catacomb riso style with bat-eared skull beasts, awkward catacomb warriors, black claw shapes, pastel-toxic panels, and crude dot shadows. Carry it through bone pink riso, bat-eared skull beasts, awkward catacomb figures, teal offset, black claw shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'bone pink riso; bat-eared skull beasts; awkward catacomb figures; teal offset; black claw shapes; crude dot-shadow zine texture',
     },
@@ -378,7 +378,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean studio-grade risograph reproduction: crisp separations, controlled grain, legible shapes at thumbnail size, and no digital gradients.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Teal Tangerine Overprint Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Refined two-drum risograph print where teal and tangerine overlap into a deliberate third brown-olive, with confident brush-pen contour, tidy halftone ramps, and generous unprinted paper. Carry it through two-drum teal and tangerine, planned overprint third color, tidy halftone ramps, brush-pen contour, bare paper highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'two-drum teal and tangerine; planned overprint third color; tidy halftone ramps; brush-pen contour; bare paper highlights',
     },
@@ -413,7 +413,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'High-quality reproduction of a deliberately untidy pen drawing; clear silhouette and readable face or form despite the scrawl, without digital cleanup.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ballpoint Scrawl Copier Zine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Messy ballpoint-pen zine drawing pushed through a cheap copier: looping blue-black biro scribble, overworked shading tangles, uneven pressure, and gray toner haze at the page edges. Carry it through looping ballpoint scribble, overworked tangles, copier gray, searching contours, unfinished bare-paper edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'looping ballpoint scribble; overworked tangles; copier gray; searching contours; unfinished bare-paper edges; highlighter accent',
     },
@@ -443,7 +443,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean high-contrast reproduction of an overexposed copy: the black is solid, not noisy, and white shapes stay sharp and readable at thumbnail size.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blackout Toner Doom Zine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Near-total black toner flood from an overdriven copier, with the subject surviving only as blown-out white shapes, razor edges, and a few crushed gray transitions. Carry it through black toner flood, white knockout survivors, crushed grays, copier banding, two-thirds black space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'black toner flood; white knockout survivors; crushed grays; copier banding; two-thirds black space; brutal contrast',
     },
@@ -477,7 +477,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp two-color riso reproduction with clean dot structure and pure spot-color fields.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fluoro Pink Federal Blue Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Classic fluorescent pink and deep federal-blue risograph pairing, overlapping into electric purple, with bold graphic contour, coarse halftone gradients, and poster-like flatness. Carry it through fluorescent pink plus federal blue, violet overprint, coarse halftone gradients, bold flat poster shapes, glow as pink dots. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'fluorescent pink plus federal blue; violet overprint; coarse halftone gradients; bold flat poster shapes; glow as pink dots',
     },
@@ -512,7 +512,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Faithful but clean ditto reproduction: soft violet bleed stays controlled, forms remain readable, no digital glow.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mimeograph Violet Ditto Zine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Spirit-duplicator ditto print in soft aniline violet: faded purple line, feathery ink bleed, uneven pressure from the hand-cranked drum, and pale damp-paper tone. Carry it through aniline ditto violet, feathery line bleed, faded fortieth-copy tone, stylus hatch, humble handout drawing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'aniline ditto violet; feathery line bleed; faded fortieth-copy tone; stylus hatch; humble handout drawing',
     },
@@ -547,7 +547,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Pristine craft-print finish: exact layer registration, no grain noise, crisp shape edges, and luxurious restraint.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gocco Gold Leaf Micro Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Small-format screen print with thick opaque inks: deep green, cream, brick, and one metallic gold layer, each shape sharp-edged with the slight raised ink ridge of a tiny hand screen. Carry it through thick opaque screen inks, metallic gold spot, raised ink ridges, precise layer registration, jewel-like miniature. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'thick opaque screen inks; metallic gold spot; raised ink ridges; precise layer registration; jewel-like miniature',
     },
@@ -581,7 +581,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'High-quality reproduction of a deliberately crude carving; readable at thumbnail size with deep solid blacks and no muddy gray.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crust Linocut Copier Rag as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Crust-punk rag aesthetic: violently gouged linocut blocks photocopied and re-photocopied, black chunky carving, white gouge scars, stencil spray fringes, and dirty generational copy loss. Carry it through gouged linocut blocks, generational copy loss, white gouge scars, stencil spray fringe, massive crude silhouette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'gouged linocut blocks; generational copy loss; white gouge scars; stencil spray fringe; massive crude silhouette',
     },
@@ -616,7 +616,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean riso reproduction with a true printed blend rather than a digital gradient, sharp indigo drawing, and no muddy overlaps.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Split Fountain Dusk Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Split-fountain risograph where one drum carries a smooth ink blend from magenta to orange to yellow, printed under a deep indigo line and shadow layer. Carry it through split fountain magenta-orange-yellow blend, indigo drawing layer, vertical color bands, printed not digital gradient. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'split fountain magenta-orange-yellow blend; indigo drawing layer; vertical color bands; printed not digital gradient',
     },
@@ -651,7 +651,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'High-quality reproduction of a thick crayon-like drawing: bold legible shapes, clean paper, no digital smoothness.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grease Pencil Monster Fanzine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Exaggerated fanzine drawing in thick waxy grease pencil and china marker: fat wobbling lines, cartoonish distortion, stubby hatch, and one flat color tint added by cheap offset. Carry it through thick waxy grease pencil, rubbery exaggeration, skipping line on paper tooth, one offset spot tint, bursting foreshortening. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'thick waxy grease pencil; rubbery exaggeration; skipping line on paper tooth; one offset spot tint; bursting foreshortening',
     },
@@ -685,7 +685,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Controlled chaos: black key crisp, misregistration consistent and intentional, dots readable, no smeared blur.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Misregistered CMY Chaos Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Cheap offset print gone wrong: cyan, magenta, and yellow separations slide several millimeters apart, creating ghost edges, color fringes, and vibrating doubled contours around a strong black key. Carry it through drifting CMY plates, sharp black key, ghost color fringes, rosette halftone, newsprint pulp energy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'drifting CMY plates; sharp black key; ghost color fringes; rosette halftone; newsprint pulp energy',
     },
@@ -719,7 +719,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Pristine two-color reproduction with fine line clarity, controlled grain, and no grime.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Herbal Almanac Moss Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Refined almanac-style risograph with moss green and oxblood inks, delicate cross-hatched line work, fine stipple, and the quiet order of an old herbal page without any lettering. Carry it through moss green and oxblood riso, fine cross-hatch, delicate stipple, herbal study restraint, calm isolated subject. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'moss green and oxblood riso; fine cross-hatch; delicate stipple; herbal study restraint; calm isolated subject',
     },
@@ -754,7 +754,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean controlled reproduction of degradation: dither is regular and readable, subject still recognizable, no random noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thermal Fax Decay Zine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Image received by thermal fax and left in the sun: brown-gray dithered tones, horizontal scan streaks, compressed blacks, curling glossy paper, and fading toward one edge. Carry it through thermal fax dither, horizontal scan streaks, sun-faded sepia gray, skewed found-evidence crop, dissolving detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'thermal fax dither; horizontal scan streaks; sun-faded sepia gray; skewed found-evidence crop; dissolving detail',
     },
@@ -788,7 +788,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Refined special-edition print quality: flat unmodulated ink layers, crisp gold contour and halftone, visible riso grain and slight registration drift, no painted modeling, no realistic skin or metal rendering, no digital bloom.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gold Ember Black Stock Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Night-edition risograph printed on black paper stock with flat metallic gold and fluorescent orange spot inks, a few opaque white highlights, and the subject built only from printed line, halftone, and flat ink shapes over bare black paper. Carry it through black paper stock, metallic gold line, fluorescent orange ember glow, opaque white highlights, inverted light logic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'black paper stock; metallic gold line; fluorescent orange ember glow; opaque white highlights; inverted light logic',
     },
@@ -823,7 +823,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Controlled messy finish: shapes readable at thumbnail size, drips and overspray purposeful, cardboard texture clean.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Squat Stencil Spray Zine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Squat-made spray stencil art on brown cardboard: hand-cut stencil shapes with bridges, soft overspray halos, drips, doubled passes, and red and black paint. Carry it through hand-cut stencil layers, stencil bridges, overspray halos and drips, red and black on cardboard, raw urgency. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'hand-cut stencil layers; stencil bridges; overspray halos and drips; red and black on cardboard; raw urgency',
     },
@@ -858,7 +858,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean reproduction of an aged print: faded but not dirty, readable shapes, no grime or digital haze.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sun Faded Newsprint Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+        "Old risograph zine found on a windowsill: sun-bleached aqua and butter yellow inks, soft low contrast, yellowed newsprint, and gentle fading toward the exposed edge. Carry it through sun-bleached aqua and butter yellow, low contrast, yellowed newsprint, gentle edge fade, relaxed halftone. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'sun-bleached aqua and butter yellow; low contrast; yellowed newsprint; gentle edge fade; relaxed halftone',
     },

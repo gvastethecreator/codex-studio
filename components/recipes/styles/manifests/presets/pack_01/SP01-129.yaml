@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Flat-on or tight telephoto, no horizon and no recognizable scale, pattern filling the frame edge to edge.
   atmosphere_and_mood: Meditative and mysterious, the world made into its own abstraction.
   rendering_and_quality: Sharp real texture; not a digital generated pattern.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Nature Abstract Pattern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Nature abstract photography: a tight crop on a natural surface — ice, sand, bark, rock, water — until it reads as pure pattern and color. Carry it through edge-to-edge natural pattern, no horizon or scale, raking light on relief, limited material palette, tight crop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: edge-to-edge natural pattern; no horizon or scale; raking light on relief; limited material palette; tight crop
 avoidRules:
   - illustration

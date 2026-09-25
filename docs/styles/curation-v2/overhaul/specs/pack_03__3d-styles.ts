@@ -66,7 +66,7 @@ const spec: Spec = {
       briefs: [
         'Low-poly 3D render of a griffin perched on a faceted cliff above a valley, every feather a flat triangular facet, gradient sunset sky. No text or logo.',
         'Low-poly 3D render of a longship with a striped sail riding faceted waves, crisp triangle shadows. No text or logo.',
-        'Low-poly 3D render of a camel caravan crossing a faceted desert canyon at noon. No text or logo.',
+        'Low-poly 3D render of a camel caravan crossing a faceted desert canyon at noon, every dune and rock a flat triangle, crisp faceted shadows and a flat gradient sky. No text or logo.',
       ],
     },
     'SP03-022': {
@@ -87,7 +87,7 @@ const spec: Spec = {
       avoid: [...AVOID, 'mining game textures'],
       briefs: [
         'Voxel art render of a crooked wizard tower on a small floating island, every stone, window and vine built from tiny cubes, soft occlusion in the corners. No text or logo.',
-        'Voxel art render of a blue whale diving through a sea of translucent blue cubes. No text or logo.',
+        'Voxel art render of a blue whale diving through a sea made of translucent blue cubes, bubbles as single white voxels, soft light filtering down in stepped shafts. No text or logo.',
         'Voxel art render of a horned owl on a branch built from stepped brown and gold voxels. No text or logo.',
       ],
     },
@@ -138,7 +138,7 @@ const spec: Spec = {
       briefs: [
         'Wireframe render of a whale skeleton suspended in darkness, every bone drawn as glowing cyan mesh edges with clean edge loops. No text or logo.',
         'Wireframe render of a gothic cathedral, its vaults and buttresses traced in white topology lines on black. No text or logo.',
-        'Wireframe render of a jellyfish with trailing tentacles in magenta edge lines. No text or logo.',
+        'Wireframe render of a jellyfish drifting in darkness, its bell and long trailing tentacles drawn as glowing magenta mesh edges, the topology dense at the rim and sparse in the tentacles. No text or logo.',
       ],
     },
     'SP03-026': {
@@ -159,7 +159,7 @@ const spec: Spec = {
       briefs: [
         'CGI knolling of a disassembled crossbow: limbs, string, trigger pieces, bolts and screws laid out in a perfect right-angle grid on a slate ground, top-down. No text or logo.',
         'CGI knolling of a clockwork beetle taken apart: shell plates, gears, springs and legs grouped by size. No text or logo.',
-        'CGI knolling of an iron lantern disassembled into glass panes, frame, handle and candle cup. No text or logo.',
+        'CGI knolling of an iron lantern disassembled on a slate ground: four glass panes, the frame, the handle, hinge pins and the candle cup laid out in a strict right-angle grid, top-down. No text or logo.',
       ],
     },
     'SP03-027': {
@@ -180,8 +180,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Metaball render of an octopus built from glossy merging blobs, its arms made of spheres melting into each other, soft studio highlights. No text or logo.',
-        'Metaball render of a flock of blobby sheep grazing on a smooth green hill. No text or logo.',
-        'Metaball render of a candle whose wax drips are merging spheres. No text or logo.',
+        'Metaball render of a flock of blobby sheep grazing on a smooth green hill, each woolly body a cluster of merging spheres, glossy highlights and soft contact shadows. No text or logo.',
+        'Metaball render of a candle burning on a table, its wax drips made of glossy spheres merging into each other and pooling at the base, a warm flame reflected in every blob. No text or logo.',
       ],
     },
     'SP03-028': {
@@ -205,7 +205,7 @@ const spec: Spec = {
       briefs: [
         'NURBS class-A render of a sleek racing boat hull, striped studio lights flowing as unbroken zebra reflections over its curves, glossy white finish. No text or logo.',
         'NURBS render of a flowing chaise lounge with a single sharp crease line and perfect reflections. No text or logo.',
-        'NURBS render of a spiraling hunting horn with continuous chrome curvature. No text or logo.',
+        'NURBS class-A render of a spiraling hunting horn with continuous chrome curvature, striped studio lights sliding as unbroken reflections along its bell and coils on a black stage. No text or logo.',
       ],
     },
     'SP03-029': {
@@ -226,7 +226,7 @@ const spec: Spec = {
       briefs: [
         'Fractal 3D render of a tree whose branches split into smaller trees again and again into infinity, iridescent gradient by depth, glowing tips. No text or logo.',
         'Fractal 3D render of a fortress whose towers carry smaller fortresses on their battlements, recursing endlessly. No text or logo.',
-        'Fractal 3D render of a coral reef grown from recursive spirals and bulbs. No text or logo.',
+        'Fractal 3D render of a coral reef grown from recursive spirals and bulbs, each branch sprouting smaller copies of itself, deep blue water and glowing pink tips. No text or logo.',
       ],
     },
     'SP03-030': {
@@ -272,7 +272,7 @@ const spec: Spec = {
       briefs: [
         'Toon-shaded 3D render of a patched wooden airship drifting over clouds, flat cel shadow bands and bold ink outlines. No text or logo.',
         'Toon-shaded 3D render of an adult swordswoman in a flowing coat mid-leap, one shadow band and variable-width outline. No text or logo.',
-        'Toon-shaded 3D render of a mushroom village at dusk with glowing windows. No text or logo.',
+        'Toon-shaded 3D render of a mushroom village at dusk, round houses with glowing windows, flat cel shadow bands, bold ink outlines and a tiny figure carrying a lantern across a bridge. No text or logo.',
       ],
     },
     'SP03-045': {
@@ -291,8 +291,8 @@ const spec: Spec = {
       avoid: [...AVOID, 'viewport UI'],
       briefs: [
         'Wireframe-on-shaded render of a hulking troll model in neutral grey with clean quad edge loops drawn over the surface, soft studio light. No UI, text or logo.',
-        'Wireframe-on-shaded render of a winged helmet showing its topology around the feathers. No UI, text or logo.',
-        'Wireframe-on-shaded render of a carved rocking horse with edge loops following its curves. No UI, text or logo.',
+        'Wireframe-on-shaded render of a winged helmet in neutral grey on a turntable, clean quad edge loops drawn over the surface, the topology dense around each sculpted feather. No UI, text or logo.',
+        'Wireframe-on-shaded render of a carved rocking horse in grey clay shading, edge loops following the curves of the neck and rockers, soft studio light and a plain backdrop. No UI, text or logo.',
       ],
     },
     'SP03-050': {
@@ -312,8 +312,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Motion-graphics 3D render of satin rings and spheres orbiting a glowing central orb in a rhythmic spiral, bright gradient background. No text or logo.',
-        'Motion-graphics 3D render of a cascade of candy-colored cubes flipping down a staircase, frozen mid-motion. No text or logo.',
-        'Motion-graphics 3D render of frosted ribbons weaving themselves into a knot. No text or logo.',
+        'Motion-graphics 3D render of a cascade of candy-colored cubes flipping down a white staircase, frozen mid-motion in a rhythmic arc, bright gradient background and soft shadows. No text or logo.',
+        'Motion-graphics 3D render of frosted translucent ribbons weaving themselves into a knot in midair, gradient light passing through them and small spheres orbiting the knot. No text or logo.',
       ],
     },
     'SP03-058': {
@@ -338,7 +338,7 @@ const spec: Spec = {
       briefs: [
         '3D typographic sculpture of an invented ornamental glyph grown from twisting ivy and thorns, small roses at its terminals, studio light and soft shadow. No readable letters or logo.',
         '3D typographic sculpture of an invented glyph built from melting candles, wax dripping down its curves. No readable letters or logo.',
-        '3D typographic sculpture of an invented glyph forged from riveted iron with brass inlay. No readable letters or logo.',
+        '3D typographic sculpture of an invented ornamental glyph forged from riveted black iron with brass inlay, hammer marks on the curves and a warm spotlight casting its shadow on a stone wall. No readable letters or logo.',
       ],
     },
     'SP03-065': {
@@ -362,7 +362,7 @@ const spec: Spec = {
       briefs: [
         '3D app icon of a treasure chest bursting with gold inside a soft purple squircle tile, glossy rounded forms, soft top light and small drop shadow. No text or logo.',
         '3D app icon of a round potion flask with glowing green liquid in a teal squircle. No text or logo.',
-        '3D app icon of a castle gate with a portcullis in a warm orange squircle. No text or logo.',
+        '3D app icon of a castle gate with a raised portcullis inside a warm orange squircle tile, glossy rounded stone blocks, soft top light and a small drop shadow, readable at tiny size. No text or logo.',
       ],
     },
     'SP03-070': {
@@ -455,8 +455,8 @@ const spec: Spec = {
       avoid: [...AVOID, 'brand name on studs'],
       briefs: [
         "Toy-brick-built render of a crooked wizard's tower with a spiral staircase and a purple roof, every brick studded and glossy, crisp stud shadows. No brand name or logo.",
-        'Toy-brick-built render of a pirate galleon with black sails and tiny cannons. No brand name or logo.',
-        'Toy-brick-built render of a kraken wrapping its brick tentacles around a lighthouse-free rocky island. No brand name or logo.',
+        'Toy-brick-built render of a pirate galleon with black brick sails and tiny cannons on a sea of blue plates, studs catching light on every surface and crisp stud shadows. No brand name or logo.',
+        'Toy-brick-built render of a kraken wrapping curved brick tentacles around a rocky island with a small ruined tower, studs glossy, translucent blue bricks as splashing water. No brand name or logo.',
       ],
     },
     'SP03-078': {
@@ -477,8 +477,8 @@ const spec: Spec = {
       avoid: [...AVOID, 'elevator'],
       briefs: [
         'Origami 3D render of a flock of paper cranes in several colors rising from a folded paper pond, crisp creases catching directional light. No text or logo.',
-        'Origami 3D render of a coiled dragon folded from a single red sheet. No text or logo.',
-        'Origami 3D render of a stag with branching folded antlers in cream paper. No text or logo.',
+        'Origami 3D render of a coiled dragon folded from a single red sheet on a black table, crisp creases catching a side light, its wings made of pleated fans and its tail spiraling. No text or logo.',
+        'Origami 3D render of a stag with branching folded antlers in cream paper standing in a forest of folded paper pines, sharp creases and soft shadows between the planes. No text or logo.',
       ],
     },
   },

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Symmetric framing around a vertical fold, arranged so the subject still reads at card size.
   atmosphere_and_mood: Uncanny, psychological, ambiguous and eerie, driven by the construction, color and rhythm.
   rendering_and_quality: Authentic blot with clean symmetry, with clean, deliberate marks and no accidental noise.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rorschach Ink Blot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Rorschach ink blot: ink pressed between a folded sheet so the subject appears as a symmetrical blot with organic edges. Carry it through mirror symmetry, pooled ink, feathered edges, fold line. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: mirror symmetry; pooled ink; feathered edges; fold line
 avoidRules:
   - readable text

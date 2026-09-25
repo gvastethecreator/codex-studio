@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Side view, subjects moving in one direction across the frame, horizontal axis representing time.
   atmosphere_and_mood: Strange and kinetic, time laid out flat across space.
   rendering_and_quality: True slit-scan distortion; not a motion blur filter.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Slit-Scan Photo Finish as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Slit-scan photo finish: a camera recording one thin vertical line over time, so moving subjects appear whole while the static background becomes vertical stripes. Carry it through vertical-stripe background, time along the horizontal axis, stretched moving bodies, side view, smeared static parts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: vertical-stripe background; time along the horizontal axis; stretched moving bodies; side view; smeared static parts
 avoidRules:
   - illustration

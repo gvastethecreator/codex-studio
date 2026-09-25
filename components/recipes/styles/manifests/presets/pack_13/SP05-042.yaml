@@ -31,10 +31,7 @@ visualDna:
     Forceful contours, flat shadows, few accents, no decorative clutter.
   key_features: >-
     Opposed value planes, emphatic ink, diagonal counterbalance, vermilion accents
-  creative_brief: >-
-    Apply a visual treatment centered on opposed value planes, emphatic ink, diagonal
-    counterbalance, vermilion accents. Preserve the exact subject, action, count, age,
-    costume, setting, camera, and mood. Add nothing outside the prompt.
+  creative_brief: "Apply a visual treatment centered on opposed value planes, emphatic ink, diagonal counterbalance, vermilion accents. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

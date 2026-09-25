@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: 'Preserve the requested emotion; quiet line drift may feel unusual without forcing deadpan humor or surreal content.'
   rendering_and_quality: 'Keep silhouettes and focal details crisp; use small controlled edge variation against otherwise stable drawing.'
   key_features: 'Calm continuous silhouettes; slight contour drift; soft shadow edges; localized boundary irregularity; stable interior forms.'
-  creative_brief: 'Introduce restrained contour drift while leaving shapes intact and readable. Keep subject, action, count, camera, and mood from the prompt; add no surreal object or duplicate.'
+  creative_brief: "Introduce restrained contour drift while leaving shapes intact and readable. Keep subject, action, count, camera, and mood from the prompt; add no surreal object or duplicate. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

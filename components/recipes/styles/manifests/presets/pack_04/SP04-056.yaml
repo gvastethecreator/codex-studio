@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Gritty and tangible, realism assembled at speed for a pitch.
   rendering_and_quality: Photoreal-feeling surfaces with visible seams and paint glue in places, never a clean CG render.
   key_features: cut photo fragments; perspective warping; one unifying grade; visible seams and clone repeats; painted light glue
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Photobash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Photobash concept: the subject assembled from cut photographic fragments of rock, metal, foliage and architecture, warped into perspective and unified with painted light. Carry it through cut photo fragments, perspective warping, one unifying grade, visible seams and clone repeats, painted light glue. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable annotations
   - readable text

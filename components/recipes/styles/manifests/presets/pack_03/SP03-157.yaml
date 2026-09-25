@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested camera; the dissolve front sweeps across the subject in one direction.
   atmosphere_and_mood: Eerie and final, something being erased from the world.
   rendering_and_quality: Clean alpha-clip shader with a sharp emissive edge; no paper burn texture and no painted smoke.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Noise Dissolve Edge Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Noise dissolve shader: the named subject disappearing along a threshold driven by procedural noise, leaving ragged holes with a thin glowing burn edge. Carry it through noise-driven holes, thin emissive edge band, ember particles off the edge, one-direction dissolve front, background through holes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: noise-driven holes; thin emissive edge band; ember particles off the edge; one-direction dissolve front; background through holes
 avoidRules:
   - sensor noise

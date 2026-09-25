@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; circular plans and conical roofs dominate, clustered together at ground level.
   atmosphere_and_mood: Quiet, communal and rooted, architecture woven by hand from the marsh.
   rendering_and_quality: Naturalistic painting with tactile weave detail; no ropes, platforms or tree-lashing construction.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Woven Willow Roundhouse as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Woven wattle architecture: circular buildings of living willow withies and hazel wattle, clay daub infill and tall conical thatch roofs. Carry it through woven willow and hazel wattle, conical reed thatch, clay daub infill, circular plans, smoke through thatch in mist. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: woven willow and hazel wattle; conical reed thatch; clay daub infill; circular plans; smoke through thatch in mist
 avoidRules:
   - licensed fantasy location

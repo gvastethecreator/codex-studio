@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Briefly safe yet uneasy, a held breath before going back out.
   rendering_and_quality: Soft pre-rendered look with fine grain; no monsters or gore unless the prompt asks.
   key_features: single warm lamp pool; fixed high-corner camera; green-grey darkness; damp worn surfaces; fine grain
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Survival Horror Save-Room Lighting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Survival-horror safe room: a pre-rendered-looking interior lit by one warm lamp pool inside cold darkness, seen from a fixed high camera. Carry it through single warm lamp pool, fixed high-corner camera, green-grey darkness, damp worn surfaces, fine grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - known game HUD layout

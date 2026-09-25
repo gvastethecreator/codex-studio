@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'orange rust blooms; flaking scale; run-off streaks; pitting; surface-level damage; structure intact',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rusty Iron as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Rusty iron: iron or steel surfaces oxidized into orange-brown rust with flaking scale and streaks. Carry it through orange rust blooms, flaking scale, run-off streaks, pitting, surface-level damage. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -56,7 +56,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'crazed glaze network; hairline cracks; chipped edges; surface-level damage; structure intact',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Porcelain (Cracked) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cracked porcelain: glazed ceramic surfaces crazed with hairline cracks and a few chips. Carry it through crazed glaze network, hairline cracks, chipped edges, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -82,7 +82,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features: 'frayed burlap; stains; patched weave; surface-level damage; structure intact',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Burlap Sack as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Burlap decay: coarse sackcloth surfaces frayed, stained and patched. Carry it through frayed burlap, stains, patched weave, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -110,7 +110,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'curling paint flakes; layered old colors; exposed substrate; surface-level damage; structure intact',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Peeling Paint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Peeling paint: layered paint coats curling, cracking and flaking off to reveal older colors beneath. Carry it through curling paint flakes, layered old colors, exposed substrate, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -138,7 +138,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'fuzzy mold colonies; mildew spots; damp stains; surface-level damage; structure intact',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mold & Mildew as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Mold and mildew: fuzzy spotted mold colonies spreading over damp surfaces. Carry it through fuzzy mold colonies, mildew spots, damp stains, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -166,7 +166,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'alligator char crackle; silvery sheen; brushed grain; surface-level damage; structure intact',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Burnt Wood (Shou Sugi Ban) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Charred wood (shou sugi ban): wood surfaces deliberately charred into black alligator-skin char. Carry it through alligator char crackle, silvery sheen, brushed grain, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -194,7 +194,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'tide-line stains; swelling; mineral bloom; surface-level damage; structure intact',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Water Damage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Water damage: tide lines, swelling, staining and bloom where water soaked the target. Carry it through tide-line stains, swelling, mineral bloom, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -222,7 +222,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'bright scratch lines; scuffs and nicks; dulled wear; surface-level damage; structure intact',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scratched Metal as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Scratched metal: bright scratches and scuffs cutting through a metal finish. Carry it through bright scratch lines, scuffs and nicks, dulled wear, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -251,7 +251,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'settled dust layer; thicker on top faces; finger swipes; surface-level damage; structure intact',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dusty Surface as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Dusty surface: a soft layer of settled dust dulling the target, thicker on top surfaces. Carry it through settled dust layer, thicker on top faces, finger swipes, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -279,7 +279,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'oil stains; grease smears; iridescent film; surface-level damage; structure intact',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oil Stains as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Oil stains: dark glossy oil and grease stains soaking into the target. Carry it through oil stains, grease smears, iridescent film, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -308,7 +308,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'abrasive grit; sanding swirls; matte scuffed finish; surface-level damage; structure intact',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sandpaper as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sandpaper abrasion: surfaces covered in grit or scuffed by sanding into a matte scratched finish. Carry it through abrasive grit, sanding swirls, matte scuffed finish, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -336,7 +336,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'dried mud polygon cracks; curled edges; parched clay; surface-level damage; structure intact',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mud (Cracked) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cracked mud: dried mud coating the target and splitting into polygon cracks. Carry it through dried mud polygon cracks, curled edges, parched clay, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -364,7 +364,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'glossy black tar; drips and strands; viscous coating; surface-level damage; structure intact',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tar as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Tar coating: thick black tar coating the target, glossy, dripping and sticky. Carry it through glossy black tar, drips and strands, viscous coating, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -394,7 +394,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Salt Crust as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Salt crust: white crystalline salt deposits crusting over the target, as if dried by sea spray. Carry it through white salt crystal crust, efflorescence blooms, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'white salt crystal crust; efflorescence blooms; surface-level damage; structure intact',
     },
@@ -429,7 +429,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sun-Bleached Fade as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Sun-bleached fade: colors washed out by years of sun, pale on exposed faces and richer in shadowed folds. Carry it through sun-faded exposed faces, deeper colors in folds, chalky pigment, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'sun-faded exposed faces; deeper colors in folds; chalky pigment; surface-level damage; structure intact',
     },
@@ -464,7 +464,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soot Staining as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Soot staining: black smoke deposits blackening the target from below, as after a fire, without burning it away. Carry it through soot gradients from below, smudges, intact surfaces, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'soot gradients from below; smudges; intact surfaces; surface-level damage; structure intact',
     },
@@ -498,7 +498,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Woodworm Rot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Woodworm rot: wood riddled with tiny boreholes and soft dry-rot cracking. Carry it through woodworm boreholes, cubic dry rot, frass dust, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'woodworm boreholes; cubic dry rot; frass dust; surface-level damage; structure intact',
     },
@@ -533,7 +533,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Acid Etching as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Acid etching: surfaces eaten by acid into pitted, frosted and bubbled zones with bright residue edges. Carry it through acid pits, frosted zones, splash patterns, residue edges, surface-level damage. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'acid pits; frosted zones; splash patterns; residue edges; surface-level damage; structure intact',
     },
@@ -568,7 +568,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lichen Crust as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Lichen crust: flat crusty lichen rosettes in orange, yellow and grey growing over the target. Carry it through lichen rosettes, circular crust patches, orange and chartreuse, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'lichen rosettes; circular crust patches; orange and chartreuse; surface-level damage; structure intact',
     },
@@ -603,7 +603,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ash Fall Coating as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ash fall coating: fine grey volcanic ash settled over the target, softening edges. Carry it through grey ash drifts, softened edges, monochrome, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'grey ash drifts; softened edges; monochrome; surface-level damage; structure intact',
     },

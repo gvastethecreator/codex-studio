@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; low camera near the moss surface, stepping-stone path winding into depth.
   atmosphere_and_mood: Hushed, damp and ancient, green silence under trees.
   rendering_and_quality: Soft photograph with rich moss textures and gentle haze, no raked gravel or dry stones.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Moss Stroll Garden as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Moss stroll garden: a shaded Japanese garden where many species of moss carpet the ground under maples and cedars, crossed by stepping stones around an irregular pond. Carry it through many-species moss carpet, stepping stones set in moss, irregular pond edge, high maple and cedar canopy, diffuse damp shade. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: many-species moss carpet; stepping stones set in moss; irregular pond edge; high maple and cedar canopy; diffuse damp shade
 avoidRules:
   - golden-hour garden postcard formula

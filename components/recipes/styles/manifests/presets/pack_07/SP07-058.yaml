@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Cold, resonant and otherworldly, a building that seems to have crystallized overnight.
   rendering_and_quality: Refraction-accurate glass rendering with crisp facets; distinct from ice, which is cyan, bubbled and melting.
   key_features: hexagonal quartz and amethyst prisms; internal light transmission; caustics and rainbow dispersion; frosted fracture bases; spiky asymmetric silhouettes
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Prismatic Mineral Megastructure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Crystal-grown architecture: walls and towers built from clustered hexagonal quartz and amethyst prisms, cleavage planes serving as floors, light travelling inside the stone. Carry it through hexagonal quartz and amethyst prisms, internal light transmission, caustics and rainbow dispersion, frosted fracture bases, spiky asymmetric silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - licensed fantasy location
   - copy of a known film or game building

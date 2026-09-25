@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Wide aperture shallow focus, 35 mm handheld, subject turned toward the light source.
   atmosphere_and_mood: Hushed and nocturnal, work carrying on while the rest of the world sleeps.
   rendering_and_quality: Honest digital high-ISO noise and soft focus falloff; no flash, no noise reduction smear.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies High-ISO Night Reportage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "High-ISO night reportage: handheld at ISO 6400–12800 with no flash, using only the practical light of fires, lamps and windows. Carry it through no flash, practical light pools, high-ISO noise, shallow handheld focus, deep blue-black shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: no flash; practical light pools; high-ISO noise; shallow handheld focus; deep blue-black shadows
 avoidRules:
   - illustration

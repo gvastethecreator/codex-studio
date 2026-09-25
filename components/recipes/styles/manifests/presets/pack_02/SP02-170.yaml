@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Sheet seen flat, the subject centered in a coarse square grid.
   atmosphere_and_mood: Methodical and cheerful, patience rewarded square by square.
   rendering_and_quality: Real pen on graph paper; not digital pixel art.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Graph-Paper Pixel Doodle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Graph-paper pixel doodle: a picture made by filling graph-paper squares one by one with colored pens, like hand-made pixel art. Carry it through filled graph-paper squares, streaky felt pen, pale blue grid, limited colors, hand-made pixels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: filled graph-paper squares; streaky felt pen; pale blue grid; limited colors; hand-made pixels
 avoidRules:
   - photorealistic rendering

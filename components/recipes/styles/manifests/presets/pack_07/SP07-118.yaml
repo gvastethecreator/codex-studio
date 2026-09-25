@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; the projected light pattern must cross the main surfaces of the frame.
   atmosphere_and_mood: Cool shelter from blazing heat, contemplative and precise.
   rendering_and_quality: Sharp-edged light patterns with crisp geometry; ornament stays geometric and never forms calligraphy or text.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Star-Lattice Desert Palace as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Star-lattice desert architecture: whitewashed and rose-stone halls wrapped in carved screens of interlocking geometric star patterns, horseshoe arches and shaded courtyards. Carry it through carved geometric star lattices, star-shaped light patterns projected by hard sun, horseshoe arches, cobalt tile, courtyard shade. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: carved geometric star lattices; star-shaped light patterns projected by hard sun; horseshoe arches; cobalt tile; courtyard shade
 avoidRules:
   - licensed fantasy location

@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'three-wall studio set; flat overhead wash; actors staged toward the fourth wall; beige and cream palette; proscenium framing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 90s Sitcom as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "90s sitcom set look: a bright three-wall studio set lit by an even overhead wash, staged so every actor faces the audience side. Carry it through three-wall studio set, flat overhead wash, actors staged toward the fourth wall, beige and cream palette, proscenium framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -56,7 +56,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'blue LED video wall; glossy desk; soft key with hair light; desk-height medium shot; crisp HD',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies News Broadcast as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Network news studio look: the subject lit and framed as a headline segment in front of a cool blue LED video wall. Carry it through blue LED video wall, glossy desk, soft key with hair light, desk-height medium shot, crisp HD. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -83,7 +83,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'diffusion bloom; hair backlight halo; melodramatic close-up; slow push-in; video gloss',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soap Opera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Daytime soap opera: high-gloss video with heavy diffusion, melodramatic close-ups and slow zooms onto shocked faces. Carry it through diffusion bloom, hair backlight halo, melodramatic close-up, slow push-in, video gloss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -109,7 +109,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'direct-to-lens confession; colored backdrop; centered chest-up shot; soft key; crisp video',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Reality TV Confessional as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Reality TV confessional: a contestant alone in a chair speaking straight into the lens against a colored backdrop. Carry it through direct-to-lens confession, colored backdrop, centered chest-up shot, soft key, crisp video. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -137,7 +137,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'extreme fisheye bulge; chrome and purple velvet; glossy specular light; performer close to lens; slow-motion opulence',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fisheye Glam Music Video as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fisheye glam music video: late-90s luxury performance video shot through an extreme fisheye lens, with chrome, velvet and slow-motion opulence. Carry it through extreme fisheye bulge, chrome and purple velvet, glossy specular light, performer close to lens, slow-motion opulence. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -165,7 +165,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'two-by-two feed grid; CRT curvature and scanlines; high-corner views; grainy monochrome; one anomaly',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies CCTV/Security Cam as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Security monitor wall: several CCTV feeds shown together in a quad split on a CRT monitor, so the scene is seen from four fixed cameras at once. Carry it through two-by-two feed grid, CRT curvature and scanlines, high-corner views, grainy monochrome, one anomaly. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -193,7 +193,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'camcorder handheld; tracking lines and head-switching noise; bleeding reds; zoom wobble; blown windows',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies VHS Home Video as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "VHS home video: a family camcorder recording in the 1990s, played back from a worn tape. Carry it through camcorder handheld, tracking lines and head-switching noise, bleeding reds, zoom wobble, blown windows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -219,7 +219,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'tiny community studio; blue curtain backdrop; badly placed lights; UHF noise; awkward static framing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Public Access TV as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Public access TV studio: a sincere amateur show taped in a tiny community studio with cheap sets and uneven lighting. Carry it through tiny community studio, blue curtain backdrop, badly placed lights, UHF noise, awkward static framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -245,7 +245,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'hard vertical split; gray before versus bright after; same subject twice; exaggerated struggle; overlit result',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Infomercial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        'Infomercial before-and-after: a split screen contrasting a gray, clumsy "before" struggle with a bright, triumphant "after". Carry it through hard vertical split, gray before versus bright after, same subject twice, exaggerated struggle, overlit result. Use it as a reusable look on any subject, keeping the prompt\'s own subject, action, setting and mood.',
     },
   },
   {
@@ -272,7 +272,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'rail telephoto; floodlit multiple shadows; compressed crowd; saturated field color; live HD feed',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sports Broadcast as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Live sports broadcast: an HD telephoto camera on the rail following the action under floodlights, with the flat, bright look of a live feed. Carry it through rail telephoto, floodlit multiple shadows, compressed crowd, saturated field color, live HD feed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -298,7 +298,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'composited forecast map; isobar lines; weather symbols; temperature gradient; textless 3D map',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Weather Channel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Weather channel forecast graphic: a composited map with isobars, weather symbols and temperature gradients, rendered in broadcast graphic style. Carry it through composited forecast map, isobar lines, weather symbols, temperature gradient, textless 3D map. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -327,7 +327,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'distressed film and video; jump-cut stutter; single bulb light; video feedback; tilted handheld',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 90s Grunge Music Video as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "90s grunge music video: distressed film and video mixed with jump cuts, video feedback and anti-polish aggression. Carry it through distressed film and video, jump-cut stutter, single bulb light, video feedback, tilted handheld. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -354,7 +354,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'bright TV kitchen set; overhead demo angle; steam and sizzle; prepped ingredient bowls; warm appetite light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cooking Show as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cooking show: a bright TV kitchen set with warm appetite lighting and overhead mirror shots of hands at work. Carry it through bright TV kitchen set, overhead demo angle, steam and sizzle, prepped ingredient bowls, warm appetite light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -379,7 +379,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'slow-motion peak moment; telephoto patience; sweeping aerials; rich natural grade; documentary clarity',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Nature Documentary as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Premium TV nature documentary: patient telephoto, slow motion and sweeping aerials, graded for spectacle and clarity. Carry it through slow-motion peak moment, telephoto patience, sweeping aerials, rich natural grade, documentary clarity. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -411,7 +411,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'dry marker linework; streaky flat fills; line boil; static sitcom staging; awkward deadpan timing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Marker-Edge Improvised Sitcom Cartoon as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Marker-edge sitcom cartoon: a homemade-looking TV animation drawn with dry felt markers, wobbly outlines and deliberately awkward timing. Carry it through dry marker linework, streaky flat fills, line boil, static sitcom staging, awkward deadpan timing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -438,7 +438,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'interlace combing; chroma bleed; dot crawl; tape generation softness; loose multicam medium shots',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Analog Sitcom Multicam as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Analog sitcom multicam: a frame of a studio comedy recorded on broadcast videotape and dubbed a few generations, so the signal itself carries the look. Carry it through interlace combing, chroma bleed, dot crawl, tape generation softness, loose multicam medium shots. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -466,7 +466,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'chroma-key halo; mismatched foreground and plate light; green spill; inset rectangle; SD compression',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Local News Chroma Key Package as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Local news chroma-key package: the subject keyed over a background plate on a budget, with telltale green halos and mismatched light. Carry it through chroma-key halo, mismatched foreground and plate light, green spill, inset rectangle, SD compression. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -494,7 +494,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'gradient bulletin slide; pixel clip-art; blank crawl band; inset still photo; VHS noise',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Public Access Cable Crawl as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Public access cable crawl: a community-bulletin slide from a character generator, with gradient backgrounds, clip-art and scrolling bands, played over VHS noise. Carry it through gradient bulletin slide, pixel clip-art, blank crawl band, inset still photo, VHS noise. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -521,7 +521,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'telestrator circles and arrows; freeze-frame jitter; stepped replay inset; tape noise; motion combing',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies VHS Sports Replay Broadcast as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "VHS sports replay: an analog freeze-frame breakdown with hand-drawn telestrator circles and arrows and a stepped replay inset. Carry it through telestrator circles and arrows, freeze-frame jitter, stepped replay inset, tape noise, motion combing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -547,7 +547,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'radar sweep line; green-to-red reflectivity cells; dark map; blocky radar pixels; top-down view',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Weather Radar Doppler Graphic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Doppler radar graphic: a radar sweep turning precipitation into green, yellow, orange and red cells over a dark map. Carry it through radar sweep line, green-to-red reflectivity cells, dark map, blocky radar pixels, top-down view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -574,7 +574,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'overlit demo set; textless starburst callouts; glossy product; hot primaries; frantic energy',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Late Night Infomercial Gloss as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Late-night infomercial gloss: an overlit demonstration set where a miracle product performs, surrounded by starbursts and arrows. Carry it through overlit demo set, textless starburst callouts, glossy product, hot primaries, frantic energy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -599,7 +599,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'blown colored gels; soft-focus bloom; interlace motion echo; haze silhouettes; slow circling camera',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Interlaced Music Video Glow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Interlaced music-video glow: 90s cable performance video with blown colored gels, soft-focus bloom and dreamy interlaced motion. Carry it through blown colored gels, soft-focus bloom, interlace motion echo, haze silhouettes, slow circling camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -626,7 +626,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'color bars; scanline tear; signal snow; warning triangle symbol; subject half lost behind noise',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Emergency Broadcast Signal Break as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Emergency broadcast signal break: an interrupted transmission where color bars, scanline tears and a warning shape cut through the picture. Carry it through color bars, scanline tear, signal snow, warning triangle symbol, subject half lost behind noise. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

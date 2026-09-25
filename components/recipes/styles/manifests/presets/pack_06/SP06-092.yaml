@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Homely and melancholic, the glow of a bedroom computer.
   rendering_and_quality: Strict wide pixels and cell color limits; no colors outside the fixed sixteen.
   key_features: double-wide pixels; fixed 16 muted colors; 4x8 cell color limit; horizontal dither; bedroom-computer glow
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fat-Pixel 16-Color Home Computer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "8-bit home computer multicolor bitmap: double-wide pixels at 160 by 200 from a fixed palette of sixteen muted colors. Carry it through double-wide pixels, fixed 16 muted colors, 4x8 cell color limit, horizontal dither, bedroom-computer glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - console or handheld hardware shown in frame

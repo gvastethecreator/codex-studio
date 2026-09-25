@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep requested framing; show the moon or its reflection when the sky is visible.
   atmosphere_and_mood: Silent and cold, romantic mystery in a wide pale-blue hush.
   rendering_and_quality: Clean low-light exposure without noise or orange cast.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Moonlight Night as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Moonlight: a single cold, soft-edged high source washing the scene in silver-blue with deep black shadows. Carry it through silver-blue high source, black shadows, low saturation, frost and water highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: silver-blue high source; black shadows; low saturation; frost and water highlights
 avoidRules:
   - generic stock-photo face

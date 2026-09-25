@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Lucid, curious adventure told with calm intelligence and gentle irony.
   rendering_and_quality: Constant contour width, closed shapes, exact edges; the clarity of the line is the whole style.
   key_features: uniform clear-line contour; flat album color; no hatching; precise backgrounds; calm eye-level view
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Franco-Belgian (Ligne Claire) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Franco-Belgian clear line: one uniform ink contour around every form, flat unshaded color and meticulously drawn backgrounds equal in clarity to the figures. Carry it through uniform clear-line contour, flat album color, no hatching, precise backgrounds, calm eye-level view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - added panels or gutters
   - speech balloons

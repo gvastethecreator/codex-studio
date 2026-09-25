@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Warm and inviting, craft and appetite shared with the viewer.
   rendering_and_quality: Clean broadcast color; no readable recipe graphics or brand labels.
   key_features: bright TV kitchen set; overhead demo angle; steam and sizzle; prepped ingredient bowls; warm appetite light
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cooking Show as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cooking show: a bright TV kitchen set with warm appetite lighting and overhead mirror shots of hands at work. Carry it through bright TV kitchen set, overhead demo angle, steam and sizzle, prepped ingredient bowls, warm appetite light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable fake text
   - readable ticker

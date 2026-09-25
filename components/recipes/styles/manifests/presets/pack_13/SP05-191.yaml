@@ -32,10 +32,7 @@ visualDna:
     Small highlights, open blacks, clean contours, no rain haze or cinematic blur.
   key_features: >-
     Rounded contour, teal-amber accent, localized reflections, spacing follows the prompt
-  creative_brief: >-
-    Apply a visual treatment centered on rounded contour, teal-amber accent, localized
-    reflections, spacing follows the prompt. Preserve the exact subject, action, count, age,
-    costume, setting, camera, and mood. Add nothing outside the prompt.
+  creative_brief: "Apply a visual treatment centered on rounded contour, teal-amber accent, localized reflections, spacing follows the prompt. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

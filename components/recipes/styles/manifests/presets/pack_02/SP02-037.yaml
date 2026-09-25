@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Nostalgic and romantic, sparkle and melancholy in one frame.
   rendering_and_quality: Broadcast cel look with slight grain; original characters, no franchise designs.
   key_features: pastel-neon cel palette; airbrushed highlights; sparkle overlays; flowing hair; VHS softness
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Anime (90s Aesthetic) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "90s TV anime: hand-painted cel animation with pastel-and-neon color, sparkle overlays and the soft grain of a broadcast tape. Carry it through pastel-neon cel palette, airbrushed highlights, sparkle overlays, flowing hair, VHS softness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - exact studio character copy
   - franchise likeness

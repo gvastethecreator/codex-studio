@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Calm, exact and expectant, space prepared for a contest.
   rendering_and_quality: Sharp landscape photograph with even stripe pattern and dew detail, no stadium branding or readable signs.
   key_features: striped mowing bands; rolling contoured greens; sharp bunker lips; dew on short grass; still water edge
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tournament Turf Strategy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Tournament turf: precision-maintained sports turf read as landscape design, with striped mowing bands, rolling contoured greens, sharp-edged bunkers and still water edges. Carry it through striped mowing bands, rolling contoured greens, sharp bunker lips, dew on short grass, still water edge. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - golden-hour garden postcard formula
   - corten steel edging as default

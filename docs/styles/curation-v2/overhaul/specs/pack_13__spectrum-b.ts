@@ -57,7 +57,7 @@ const spec: Spec = {
     'SP05-322': {
       briefs: [
         'Celestial vertical anime frame of a star priestess standing on a high tower balcony, elongated contour accents, fine celestial geometry of orbits and constellations in silver, navy and gold, poised spacing without a forced portrait crop. No readable text or logo.',
-        'Celestial anime frame of a tall clock tower under a starry sky, silver orbits and gold geometry. No readable text or logo.',
+        'Celestial vertical anime frame of a tall clock tower under a starry sky, elongated spire accents, silver orbit lines and gold star geometry, a small figure on the balcony. No readable text or logo.',
         'Celestial vertical anime frame of a moon-cat curled on a thin crescent above a sleeping city, elongated tail and ear accents, fine orbit lines and star geometry in navy, silver and gold, calm poised spacing. No readable text or logo.',
       ],
     },

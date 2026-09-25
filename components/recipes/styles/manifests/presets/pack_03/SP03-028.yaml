@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Precise and elegant, with the calm of perfect industrial design.
   rendering_and_quality: Continuous-curvature surfaces whose reflection lines never break or kink.
   key_features: mathematically smooth surfaces; zebra reflection stripes; continuous curvature; crisp creases; glossy finish
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Nurbs Surface as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "NURBS class-A surfacing: the subject modeled from perfectly smooth mathematical curves, with continuous reflections revealing flawless curvature. Carry it through mathematically smooth surfaces, zebra reflection stripes, continuous curvature, crisp creases, glossy finish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - franchise likeness

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Handheld or tripod live-action framing, CG element interacting with real surfaces.
   atmosphere_and_mood: Believable and startling, the impossible standing in a real place.
   rendering_and_quality: Seamless VFX composite; no floating, unshadowed cutout look.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Live-Action Plate Integration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Live-action plate integration: a CG element composited into real photographed footage, matched in light direction, grain, lens blur and color. Carry it through CG in a real photographed plate, matched grain and lens, contact shadows on real ground, plate HDRI lighting, interaction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: CG in a real photographed plate; matched grain and lens; contact shadows on real ground; plate HDRI lighting; interaction
 avoidRules:
   - 2d illustration

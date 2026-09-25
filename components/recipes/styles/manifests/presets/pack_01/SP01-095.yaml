@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; bright open scenes and skies show the red-to-yellow shift best.
   atmosphere_and_mood: Scorched and strange, a familiar scene seen through burning heat.
   rendering_and_quality: In-camera reversed-film color, not a red duotone filter; tonal range preserved inside the warm band.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Redscale Film as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Redscale film: color negative loaded backwards and exposed through its base, so the red-sensitive layer dominates and the whole scene burns red, orange and amber. Carry it through red-orange-amber palette, yellow highlights, rust-brown shadows, no blues, warm grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: red-orange-amber palette; yellow highlights; rust-brown shadows; no blues; warm grain
 avoidRules:
   - illustration

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Feverish emotional overload with tenderness underneath the noise.
   rendering_and_quality: Loose flat shapes, clean-edged smears and thick anchors; no anatomy horror.
   key_features: elastic stretched contours; magenta-cyan smears; thick black anchor lines; blacklight edge color; loose flat shapes
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Tragic Metamorphosis as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Elastic neon anime drawing where contours stretch like rubber into short magenta-cyan color smears and snap back, built from loose flat shapes held by thick black anchor lines. Carry it through elastic stretched contours, magenta-cyan smears, thick black anchor lines, blacklight edge color, loose flat shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

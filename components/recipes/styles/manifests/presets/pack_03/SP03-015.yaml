@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Handmade and charming, a world pressed together by patient fingers.
   rendering_and_quality: Physical plasticine look with visible handling marks, never smooth plastic CG.
   key_features: plasticine with fingerprints; miniature set; small hard lamps; macro depth; handmade imperfection
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Claymation (Stop Motion) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Claymation stop-motion: the subject sculpted in plasticine and posed on a miniature set, with fingerprints, tool marks and slight frame-to-frame boil. Carry it through plasticine with fingerprints, miniature set, small hard lamps, macro depth, handmade imperfection. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - franchise likeness

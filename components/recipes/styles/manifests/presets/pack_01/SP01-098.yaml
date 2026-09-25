@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; sunlit subjects and open sky show the color clash most clearly.
   atmosphere_and_mood: Loud and sunburnt, rebellious color clashing in harsh bright sun.
   rendering_and_quality: Chemical color shift in the emulsion, not an Instagram split-tone; no vignette or light leaks unless asked.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cross-Processed Slide as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Cross-processed slide film: E-6 reversal film developed in C-41 negative chemistry, giving harsh contrast and violently shifted color. Carry it through cyan-green shadows, acid yellow highlights, blown whites, boosted saturation, harsh contrast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: cyan-green shadows; acid yellow highlights; blown whites; boosted saturation; harsh contrast
 avoidRules:
   - illustration

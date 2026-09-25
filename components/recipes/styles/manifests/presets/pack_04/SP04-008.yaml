@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Menacing and nocturnal, a world of hard choices and cold rain.
   rendering_and_quality: Negative-space carving with razor edges; midtones are forbidden and white shapes must read alone.
   key_features: black and white only; negative-space carving; white-outlined silhouettes; knife-edge shadows; scratched-out rain
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Binary Ink Noir Comic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Binary noir ink: the image carved from solid black and bare white with no gray at all, figures often reduced to white-outlined silhouettes. Carry it through black and white only, negative-space carving, white-outlined silhouettes, knife-edge shadows, scratched-out rain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - added panels or gutters
   - speech balloons

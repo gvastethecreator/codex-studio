@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Aggressive and chaotic, beauty and vandalism fighting on one surface.
   rendering_and_quality: Crisp contrast between photographic grey detail and raw red marks; no third color.
   key_features: black-grey realism; flat red brush swaths; splatter and drips; abstract bars; off-white ground
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Trash Polka as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Trash polka: realistic black-and-grey rendering violently interrupted by bold red brush swaths, smeared circles, bars and ink splatter. Carry it through black-grey realism, flat red brush swaths, splatter and drips, abstract bars, off-white ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - uniform beige torn-paper wash over every image
   - red tape strips added by default

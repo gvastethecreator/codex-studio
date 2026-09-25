@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Stifling, opulent and secretive behind drawn drapery.
   rendering_and_quality: Warm low-light photograph with legible pattern and carving, controlled shadow, no ghost-story props unless requested.
   key_features: carved mahogany with French polish; damask wallpaper; velvet and brocade layers; gaslight amber pools; encaustic tile floor
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Victorian Mansion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Victorian mansion interior: heavy carved mahogany and walnut, dado and picture rails, patterned wallpaper, brocade and velvet layered at high density. Carry it through carved mahogany with French polish, damask wallpaper, velvet and brocade layers, gaslight amber pools, encaustic tile floor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - furniture catalog staging
   - olive branch in a vase as default decor

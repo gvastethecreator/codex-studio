@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Still, attentive and spare, with space left for silence.
   rendering_and_quality: Soft photograph with very gentle contrast; straight lattice lines, readable rush weave and wood grain, no clutter or plastic.
   key_features: tatami module floor; washi paper shoji light; unpainted hinoki post and beam; clay-plaster walls; single-object alcove
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Japanese Zen as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Japanese Zen interior built on the tatami module: sliding shoji and fusuma panels, an alcove for one object, exposed post-and-beam in unpainted hinoki or cedar. Carry it through tatami module floor, washi paper shoji light, unpainted hinoki post and beam, clay-plaster walls, single-object alcove. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - furniture catalog staging
   - olive branch in a vase as default decor

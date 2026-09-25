@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Vertical old-school monster-card crop with a large awkward body, flat lime background, jagged black silhouette, and support props that bend with the figure.
   atmosphere_and_mood: Aggressive, cheap, occult-punk, playable, and nasty-bright.
   rendering_and_quality: Rough acid riso/xerox finish with broken black contour, halftone dirt, paper tooth, and controlled denoise while staying ugly, handmade, and readable.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Toxic Lime Crawl Flyer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  creative_brief: "Toxic lime crawl zine style with hot magenta misprint shadows, grotesque frog demons, horned masks, cultists, crude weapons, chains, and nasty-bright flat panels. Carry it through toxic lime panel, hot magenta offset, grotesque dungeon freaks, chains and crude weapons, black xerox ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: toxic lime panel; hot magenta offset; grotesque dungeon freaks; chains and crude weapons; black xerox ink; crooked OSR figure crop
 avoidRules:
   - trap-glyph emblem

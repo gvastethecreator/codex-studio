@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Very shallow depth close-ups, arranged so the subject still reads at card size.
   atmosphere_and_mood: Tender, nostalgic, dreamy and intimate, driven by the construction, color and rhythm.
   rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soft Focus Letter Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Soft focus anime: dreamy frames with shallow depth, glowing bokeh and gentle blur, like remembered moments. Carry it through bokeh, shallow focus, glowing backlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: bokeh; shallow focus; glowing backlight
 avoidRules:
   - existing anime character likeness

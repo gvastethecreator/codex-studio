@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; frontal and symmetrical, the peg rail running across the frame as a horizon line, floor kept clear.
   atmosphere_and_mood: Orderly, honest and serene, every object earning its place.
   rendering_and_quality: Quiet daylight photograph, crisp joinery, matte milk-paint finish, no decorative clutter or ornament.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Shaker Peg-Rail Interior as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Shaker plain-style interior: whitewashed plaster, a continuous wooden peg rail at head height, built-in drawer walls and ladder-back furniture hung up out of the way. Carry it through continuous peg rail with hung chairs, built-in drawer walls, milk-paint accent colors, oval bentwood boxes, ladder-back chairs with woven tape. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: continuous peg rail with hung chairs; built-in drawer walls; milk-paint accent colors; oval bentwood boxes; ladder-back chairs with woven tape
 avoidRules:
   - furniture catalog staging

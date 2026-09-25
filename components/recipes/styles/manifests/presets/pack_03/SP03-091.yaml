@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; curved surfaces to show the color flop.
   atmosphere_and_mood: Magical and shimmering, color that refuses to stay still.
   rendering_and_quality: Physically based thin-film interference; not a rainbow texture.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thin-Film Iridescent Coating as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Thin-film iridescent coating: a microscopically thin layer over the target that shifts hue with viewing angle, like oil on water or a beetle shell. Carry it through angle-dependent hue shift, oil-slick rainbow bands, dark base, glossy coat, grazing-angle color flop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: angle-dependent hue shift; oil-slick rainbow bands; dark base; glossy coat; grazing-angle color flop
 avoidRules:
   - changing the surroundings

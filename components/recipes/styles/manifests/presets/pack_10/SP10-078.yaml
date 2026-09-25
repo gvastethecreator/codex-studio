@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Nocturnal, electric, bold and retro, coming from the light.
   rendering_and_quality: Clean glow with controlled bloom, no blown-out haze over the whole frame.
   key_features: neon tube contours; gas glow; emissive modifier
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Light Lines as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Neon light lines: bent glass neon tubes tracing the subject's contours. Carry it through neon tube contours, gas glow, emissive modifier. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

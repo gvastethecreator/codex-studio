@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low camera over the endless floor, objects arranged like a demo scene.
   atmosphere_and_mood: Crystalline and uncanny, a perfect world with no dust.
   rendering_and_quality: Aliased-free but unmistakably early raytraced look; no noise, no GI.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Classic Raytracer Mirror Demo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Classic recursive raytracing: perfect mirrors and clear glass reflecting and refracting each other endlessly over an infinite floor, with razor-hard shadows. Carry it through perfect mirrors and glass, hard point-light shadows, infinite checkerboard, recursive reflections, no bounce light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: perfect mirrors and glass; hard point-light shadows; infinite checkerboard; recursive reflections; no bounce light
 avoidRules:
   - 2d illustration

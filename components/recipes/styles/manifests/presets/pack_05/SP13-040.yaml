@@ -28,7 +28,7 @@ visualDna:
   camera_and_composition: Straight-up view with a very wide lens; nearby walls, trees or edges converge toward the frame center and the subject crosses diagonally.
   atmosphere_and_mood: Soaring, weightless and breath-held for a single instant.
   rendering_and_quality: Clean graphic silhouette with readable pose and a sharp rim; no clutter in the sky.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Worm's-Eye Leap Silhouette as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Anime worm's-eye staging: the camera lies directly beneath the moving subject and looks straight up, so the subject passes overhead as a crisp dark silhouette against a bright flat sky. Carry it through camera straight beneath looking up, backlit dark silhouette, thin bright rim, converging edges to center, diagonal crossing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: camera straight beneath looking up; backlit dark silhouette; thin bright rim; converging edges to center; diagonal crossing
 avoidRules:
   - added opponent

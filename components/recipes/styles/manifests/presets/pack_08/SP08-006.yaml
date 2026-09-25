@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Suggest preparedness through orderly construction and compact utility details, without assigning combat, rescue, travel or other work.
   rendering_and_quality: Separate soft textile, hard inserts and reflective piping with precise edges and believable folds. Avoid muddy noise and decorative hardware that obscures the cut.
   key_features: Water-sealed shell layers; offset zip paths; webbing and clipped pocket modules; restrained signal piping.
-  creative_brief: Transform the requested clothing into technical modular outerwear with sealed layers, offset seams, webbing and compact pocket modules. Preserve wearer, pose, role, scene and framing; keep hood, armor inserts and signal lights optional, and add no mission or props.
+  creative_brief: "Transform the requested clothing into technical modular outerwear with sealed layers, offset seams, webbing and compact pocket modules. Preserve wearer, pose, role, scene and framing; keep hood, armor inserts and signal lights optional, and add no mission or props. Use it as a reusable look on any subject."
 avoidRules:
   - generic cosplay
   - plastic toy armor

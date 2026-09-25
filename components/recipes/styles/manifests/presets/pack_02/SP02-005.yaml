@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Restless and playful, youthful improvisation with a touch of melancholy.
   rendering_and_quality: Loose documentary cinema look; no polished studio perfection.
   key_features: handheld black and white; available light; glances into the lens; off-balance framing; overexposed windows
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies French New Wave as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "French New Wave: early-1960s handheld cinema on fast black-and-white film, real locations, available light and jump-cut spontaneity. Carry it through handheld black and white, available light, glances into the lens, off-balance framing, overexposed windows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - readable fake text

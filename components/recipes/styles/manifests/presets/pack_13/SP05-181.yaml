@@ -32,10 +32,7 @@ visualDna:
     Stable anatomy, delicate contours, distinct mids, no haze or oversoften.
   key_features: >-
     Rounded fine contour, warm-cool values, subtle wash, closeness only when requested
-  creative_brief: >-
-    Apply a visual treatment centered on rounded fine contour, warm-cool values, subtle
-    wash, closeness only when requested. Preserve the exact subject, action, count, age,
-    costume, setting, camera, and mood. Add nothing outside the prompt.
+  creative_brief: "Apply a visual treatment centered on rounded fine contour, warm-cool values, subtle wash, closeness only when requested. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

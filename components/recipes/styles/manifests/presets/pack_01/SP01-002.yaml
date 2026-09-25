@@ -20,7 +20,7 @@ visualDna:
   camera_and_composition: 28–50 mm at chest height, off-center subject, foreground elements partially intruding, layered depth with other people or street furniture.
   atmosphere_and_mood: Immediate, human, unguarded, and a little stolen.
   rendering_and_quality: Documentary sharpness on the face with natural lens falloff; no studio polish or retouching.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Candid Street Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Candid street portraiture: a stranger caught in a genuine moment in public space, available light only, the city present as texture rather than backdrop. Carry it through unposed mid-action moment, available light, foreground intrusion, layered street depth, honest skin. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: unposed mid-action moment; available light; foreground intrusion; layered street depth; honest skin
 avoidRules:
   - generic stock-photo face

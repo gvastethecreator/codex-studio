@@ -24,7 +24,7 @@ visualDna:
   atmosphere_and_mood: Pressured, over-bright and quietly desperate under a calm surface.
   rendering_and_quality: A stable black keyline with two offset color ghosts and flat fills; no all-over glow haze.
   key_features: magenta and cyan edge offsets; stable black keyline; misregistered print feel; navy-gray fills; localized pigment bloom
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Despair Pressure Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Seinen anime ink with selective chromatic edge doubling: magenta and cyan outlines slip two or three pixels off an otherwise stable black contour, like misregistered two-color print. Carry it through magenta and cyan edge offsets, stable black keyline, misregistered print feel, navy-gray fills, localized pigment bloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene

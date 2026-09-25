@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Glamorous and timeless, a studio portrait of a screen idol.
   rendering_and_quality: Studio-era glamour finish with soft diffusion; invented faces only.
   key_features: high centered hard spot; butterfly nose shadow; glowing hair light; satin speculars; soft diffusion
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Old Hollywood Beauty Key as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Old Hollywood beauty key: a hard spotlight high and centered in front of the face, making a small butterfly shadow under the nose, with a glowing backlight. Carry it through high centered hard spot, butterfly nose shadow, glowing hair light, satin speculars, soft diffusion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested location
   - franchise likeness

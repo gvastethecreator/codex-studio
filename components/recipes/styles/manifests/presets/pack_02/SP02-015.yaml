@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Awkward and intimate, small uncertain moments between people.
   rendering_and_quality: Unpolished indie realism; no cinematic grade or glamour.
   key_features: available light apartments; consumer video softness; handheld accidental framing; lived-in clutter; awkward intimacy
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mumblecore as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Mumblecore: low-budget indie cinema shot on consumer video in real apartments with available light and improvised, awkward conversation. Carry it through available light apartments, consumer video softness, handheld accidental framing, lived-in clutter, awkward intimacy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - readable fake text

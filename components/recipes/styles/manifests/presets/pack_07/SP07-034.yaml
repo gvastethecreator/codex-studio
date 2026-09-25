@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Melancholic, quiet and abandoned, time settling in dust.
   rendering_and_quality: Urban-exploration photograph with precise decay detail, no gore, creatures or horror staging.
   key_features: curled delaminating paint; collapsed ceiling tiles; rust-bleed from fixtures; moss through cracked floor; dusty skylight shafts
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Institutional Ruin Patina as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Institutional ruin patina: an abandoned public building decaying in place, with paint peeling in curls, collapsed ceiling tiles, rust bleeding from fixtures and plants reclaiming the floor. Carry it through curled delaminating paint, collapsed ceiling tiles, rust-bleed from fixtures, moss through cracked floor, dusty skylight shafts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - one-point corridor perspective as default
   - wet mirror-gloss floor as default

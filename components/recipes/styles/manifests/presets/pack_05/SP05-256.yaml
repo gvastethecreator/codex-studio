@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Nostalgic and mythic, a story told at dusk.
   rendering_and_quality: A focal silhouette sharp enough to read through the soft color fade and low-contrast detail.
   key_features: tapered brush-ink contours; vermilion accents; faded indigo dusk; sun-faded cel color; horizontal flow
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vermilion Indigo Tapered-Ink Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Folkloric 1990s anime cel with tapered brush-ink contours, warm vermilion accents and faded indigo dusk values, as if the cels were slightly sun-faded. Carry it through tapered brush-ink contours, vermilion accents, faded indigo dusk, sun-faded cel color, horizontal flow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway

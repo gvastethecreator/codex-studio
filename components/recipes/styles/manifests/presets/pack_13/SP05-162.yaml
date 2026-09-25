@@ -39,13 +39,7 @@ visualDna:
   key_features: >-
     Fluid transformation arcs when requested, continuous subject identity, jewel accents,
     clean cel phases
-  creative_brief: >-
-    Apply a transformation-profile layer centered on fluid arcs, jewel accents, and clean
-    cel phases. Preserve the exact subject, action, count, age, setting, camera, and mood.
-    Only when a transformation sequence is explicitly requested, keep one identity through
-    the requested stages and change only elements named in the prompt; otherwise draw one
-    requested state. Add no unrequested costume, accessory, emblem, effect, place, prop, or
-    text.
+  creative_brief: "Apply a transformation-profile layer centered on fluid arcs, jewel accents, and clean cel phases. Preserve the exact subject, action, count, age, setting, camera, and mood. Only when a transformation sequence is explicitly requested, keep one identity through the requested stages and change only elements named in the prompt; otherwise draw one requested state. Add no unrequested costume, accessory, emblem, effect, place, prop, or text. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

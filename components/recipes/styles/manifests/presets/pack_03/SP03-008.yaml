@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Heartfelt and whimsical, emotion carried by warm light.
   rendering_and_quality: Feature-film animation finish; original designs only, no studio characters.
   key_features: stylized rounded forms; rich subsurface skin; colorful luminous shadows; warm bounce; cinematic depth of field
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Feature Animation Path Tracer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Feature-animation path tracing: stylized characters and sets rendered with rich subsurface skin, luminous bounce light and storybook saturation. Carry it through stylized rounded forms, rich subsurface skin, colorful luminous shadows, warm bounce, cinematic depth of field. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - 2d illustration
   - hand-drawn

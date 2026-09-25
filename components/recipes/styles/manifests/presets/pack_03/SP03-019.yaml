@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Futuristic and ghostly, present and absent at once.
   rendering_and_quality: Additive light projection with scanlines; no readable interface text.
   key_features: translucent projected light; scanlines; flicker glitch offsets; bright fresnel edges; no cast shadow
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hologram as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Hologram material: the target rebuilt from projected light — translucent, scanlined and flickering — standing on its projector beam. Carry it through translucent projected light, scanlines, flicker glitch offsets, bright fresnel edges, no cast shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the surroundings
   - changing the camera

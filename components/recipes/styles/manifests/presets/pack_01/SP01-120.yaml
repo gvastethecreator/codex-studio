@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Camera at ground level with a wide lens, animal close and unaware, sometimes slightly cut off at the edge.
   atmosphere_and_mood: Secret and wild, a glimpse of a nocturnal life no one was there to see.
   rendering_and_quality: Real remote-camera look with some noise; no studio polish or posed animal.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Camera-Trap Night Flash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Camera-trap photography: a remote wide-angle camera low to the ground, fired by an animal crossing its beam at night with a flash close by. Carry it through ground-level wide angle, close off-camera night flash, eye-shine, black background, unaware animal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: ground-level wide angle; close off-camera night flash; eye-shine; black background; unaware animal
 avoidRules:
   - illustration

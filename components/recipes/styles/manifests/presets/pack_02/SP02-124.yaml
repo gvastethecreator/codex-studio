@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Analytical and dramatic, one decisive moment dissected.
   rendering_and_quality: Analog replay package whose graphics stay entirely textless and hand-drawn.
   key_features: telestrator circles and arrows; freeze-frame jitter; stepped replay inset; tape noise; motion combing
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies VHS Sports Replay Broadcast as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "VHS sports replay: an analog freeze-frame breakdown with hand-drawn telestrator circles and arrows and a stepped replay inset. Carry it through telestrator circles and arrows, freeze-frame jitter, stepped replay inset, tape noise, motion combing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable fake text
   - readable ticker

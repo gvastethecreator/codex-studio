@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; the subject is simplified into faceted planes with a strong silhouette.
   atmosphere_and_mood: Blunt, sturdy and quick, a builder’s sure hand.
   rendering_and_quality: Faceted blocky tone with sharp-sided strokes and thin edge accents; no smooth gradients and no fine hatching.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carpenter Pencil Block Sketch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Carpenter pencil sketch: a flat rectangular lead sharpened with a knife, used on its broad side for wide blocky strokes and on its edge for thin lines. Carry it through wide flat chisel strokes, thick-to-thin rotation marks, faceted planes, bare paper lights, thin edge accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: wide flat chisel strokes; thick-to-thin rotation marks; faceted planes; bare paper lights; thin edge accents
 avoidRules:
   - photo

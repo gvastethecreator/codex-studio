@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Dramatic, nocturnal and precise, carved out of the dark.
   rendering_and_quality: Consistently crisp white scratched lines following the form; no grey wash, no black drawn lines on white.
   key_features: white lines scratched from black; wire-brush fur texture; stippled scratch dots; solid black shadows; form-following line direction
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Clayboard Scratch Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Scratchboard drawing: a black ink layer over white clay scratched away with a knife and wire brush, so every mark is a white line pulled out of darkness. Carry it through white lines scratched from black, wire-brush fur texture, stippled scratch dots, solid black shadows, form-following line direction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - mixing in a second drawing tool

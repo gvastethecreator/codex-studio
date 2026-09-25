@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
         'High-end editorial food photography, with clean, deliberate marks and no accidental noise.',
       key_features: 'negative space; tweezered garnish; sauce dots; wide plate',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fine-Dining Plating Editorial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fine-dining plating editorial: tiny precise compositions on large plates, negative space and tweezered garnish. Carry it through negative space, tweezered garnish, sauce dots, wide plate. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -58,7 +58,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Glossy candy render or photo, with clean, deliberate marks and no accidental noise.',
       key_features: 'candy construction; sugar glass; frosting; gumdrops',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Confectionery Wonderland as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Confectionery wonderland: everything made of candy, sugar glass, gumdrops, frosting and striped sugar sticks. Carry it through candy construction, sugar glass, frosting, gumdrops. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -83,7 +83,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal food photography, with clean, deliberate marks and no accidental noise.',
       key_features: 'precise slices; nigiri; nori; dark wood counter',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sushi Platter as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Omakase sushi: precise slices of fish and rice arranged on dark wood or slate with restraint. Carry it through precise slices, nigiri, nori, dark wood counter. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -111,7 +111,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Commercial food photography with styling tricks, with clean, deliberate marks and no accidental noise.',
       key_features: 'perfect stack; flying ingredients; gloss; hero angle',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fast Food Commercial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fast-food commercial: impossibly perfect burgers and fries with crave-engineered gloss and flying ingredients. Carry it through perfect stack, flying ingredients, gloss, hero angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -139,7 +139,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Macro bar photography, with clean, deliberate marks and no accidental noise.',
       key_features: 'refracting glass; ice; garnish; condensation',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cocktail Macro as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Cocktail macro: close refracting glass, ice, citrus and colored liquor with condensation. Carry it through refracting glass, ice, garnish, condensation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -167,7 +167,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal bakery photography, with clean, deliberate marks and no accidental noise.',
       key_features: 'scored crust; laminated pastry; flour dust; window light',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bakery Window as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bakery window: crusty loaves and laminated pastries in warm window light, flour dust and wooden trays. Carry it through scored crust, laminated pastry, flour dust, window light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -194,7 +194,7 @@ export const GENERATED_STYLE_PRESETS = [
         'High-speed product photography, with clean, deliberate marks and no accidental noise.',
       key_features: 'juice splash; frozen droplets; sliced fruit',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fruit Explosion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Fruit explosion: high-speed photo of fruit bursting with juice splashes and flying slices. Carry it through juice splash, frozen droplets, sliced fruit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -221,7 +221,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Commercial food render or photo, with clean, deliberate marks and no accidental noise.',
       key_features: 'molten ribbons; glossy pour; cocoa dust',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chocolate Flow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Chocolate flow: thick glossy molten chocolate pouring, ribbons and waves. Carry it through molten ribbons, glossy pour, cocoa dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -248,7 +248,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal food photography, with clean, deliberate marks and no accidental noise.',
       key_features: 'compartments; rice characters; nori faces',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bento Box as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Bento box: compartmentalized lunch with cute character food made from rice, nori and vegetables. Carry it through compartments, rice characters, nori faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -275,7 +275,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Commercial food photography, with clean, deliberate marks and no accidental noise.',
       key_features: 'cheese pull; charred crust; oil sheen',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pizza Melt as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pizza melt: molten cheese pulls, charred crust and glistening toppings. Carry it through cheese pull, charred crust, oil sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -300,7 +300,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Photoreal cafe photography, with clean, deliberate marks and no accidental noise.',
       key_features: 'microfoam drawing; crema; top-down cup; pour curves',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Latte Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Latte art: a picture poured and etched into espresso microfoam, seen from above in a ceramic cup. Carry it through microfoam drawing, crema, top-down cup, pour curves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -330,7 +330,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Painterly or photoreal feast still life, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Medieval Feast Banquet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Medieval feast: long candlelit tables heavy with roasts, bread, fruit, pies and goblets. Carry it through roasts, pewter goblets, candles, long table. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'roasts; pewter goblets; candles; long table',
     },
     ui: {
@@ -364,7 +364,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal street food photography, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Night Market Street Food as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Night market street food: steam, sizzling grills, paper lanterns and hands serving food. Carry it through steam, grill, lanterns, stall. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'steam; grill; lanterns; stall',
     },
     ui: {
@@ -398,7 +398,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Faded vintage print photograph, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Retro Aspic Cookbook as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Retro cookbook: overlit 1960s-70s food photos with gelatin molds, aspics and garish garnishes. Carry it through gelatin mold, suspended items, flash, faded print. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'gelatin mold; suspended items; flash; faded print',
     },
     ui: {
@@ -432,7 +432,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal still life photography, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Preserving Pantry Jars as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Preserving pantry: shelves of backlit jars with pickles, jams and ferments glowing like stained glass. Carry it through glowing jars, brine, wax seals, shelves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'glowing jars; brine; wax seals; shelves',
     },
     ui: {
@@ -466,7 +466,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal overhead food photography, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Charcuterie Grazing Board as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Charcuterie board: abundant overhead spread of cured meats, cheeses, fruit, nuts and bread. Carry it through overhead spread, folded meats, cheese, fruit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'overhead spread; folded meats; cheese; fruit',
     },
     ui: {
@@ -500,7 +500,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Editorial food photography, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Molecular Gastronomy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Molecular gastronomy: spheres, foams, gels and liquid nitrogen fog in lab-like plating. Carry it through spheres, foams, nitrogen fog, gels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'spheres; foams; nitrogen fog; gels',
     },
     ui: {
@@ -533,7 +533,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal rustic food photography, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Open-Fire Hearth Cooking as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Open-fire cooking: cast iron, embers, smoke and meat on hooks over flames. Carry it through embers, cast iron, smoke, spit roast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'embers; cast iron; smoke; spit roast',
     },
     ui: {
@@ -567,7 +567,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal competition pastry photography, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pulled-Sugar Showpiece as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Pulled-sugar showpiece: competition pastry sculpture in glossy blown and pulled sugar. Carry it through pulled sugar, blown sugar, translucent gloss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'pulled sugar; blown sugar; translucent gloss',
     },
     ui: {
@@ -600,7 +600,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Photoreal food photography, with clean, deliberate marks and no accidental noise.',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ramen Steam Close-Up as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Ramen close-up: steaming bowl, noodle lift, glossy broth and toppings. Carry it through steam, noodle lift, broth gloss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'steam; noodle lift; broth gloss',
     },
     ui: {

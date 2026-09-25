@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Bag flattened and seen straight on, drawing crossing the folds.
   atmosphere_and_mood: Scrappy and charming, a proud drawing made during a lunch break.
   rendering_and_quality: Real marker on kraft; no printed store logo on the bag.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kraft Paper Bag Marker Sketch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Kraft paper bag sketch: black marker and white paint pen drawn on a flattened brown paper bag, with its folds and gusset creases. Carry it through brown kraft ground, black marker and white highlights, bag folds, marker bleed, one red accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: brown kraft ground; black marker and white highlights; bag folds; marker bleed; one red accent
 avoidRules:
   - photorealistic rendering

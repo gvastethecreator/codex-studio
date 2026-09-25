@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: 'Preserve the requested mood; imperfect surface marks describe the drawing process and do not limit quality or emotion.'
   rendering_and_quality: 'Keep structure carefully readable beneath imperfect edges; this is intentionally hand-drawn, not low-resolution or careless.'
   key_features: 'Slightly wavering ink; irregular fill edges; overlapping pigment passes; broad simple shadows; clear assembled silhouettes.'
-  creative_brief: 'Use controlled line wobble and uneven pigment at the surface while keeping forms structurally sound. Keep subject, action, count, camera, and mood from the request.'
+  creative_brief: "Use controlled line wobble and uneven pigment at the surface while keeping forms structurally sound. Keep subject, action, count, camera, and mood from the request. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

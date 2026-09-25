@@ -549,7 +549,7 @@ const spec: Spec = {
       briefs: [
         'Multi-layer studio stencil of a hooded archer drawing a longbow, four posterized olive tones and one orange accent, cut bridges across the bowstring, soft overspray halos on primed board. No text or logo.',
         'Multi-layer studio stencil of a mountain goat balanced on a cliff ledge, three grey tones and a sky-blue accent, slight registration offset between layers. No text or logo.',
-        "Multi-layer spray stencil of a hulking invented steam-powered motorcycle with a riveted boiler tank and spoked wheels, built from four flat cut layers (black, charcoal, mid grey, one red accent), visible bridges in the cutouts, soft overspray halos and slight layer misregistration on rough cardboard. Clearly a stencil print, not a photograph or a real motorcycle model. No text or logo.",
+        'Multi-layer spray stencil of a hulking invented steam-powered motorcycle with a riveted boiler tank and spoked wheels, built from four flat cut layers (black, charcoal, mid grey, one red accent), visible bridges in the cutouts, soft overspray halos and slight layer misregistration on rough cardboard. Clearly a stencil print, not a photograph or a real motorcycle model. No text or logo.',
       ],
     },
   },

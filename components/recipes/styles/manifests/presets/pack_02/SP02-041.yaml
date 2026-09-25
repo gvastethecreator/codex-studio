@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Uncanny and dreamy, as if reality itself were slightly unstable.
   rendering_and_quality: Traced-over realism with flat shapes; not smooth 3D or clean vector.
   key_features: traced live-action motion; posterized color blocks; line boil; flat shadow bands; uncanny realism
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rotoscoping as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Rotoscoped animation: live-action footage traced frame by frame into posterized flat shapes with trembling outlines. Carry it through traced live-action motion, posterized color blocks, line boil, flat shadow bands, uncanny realism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - exact studio character copy
   - franchise likeness

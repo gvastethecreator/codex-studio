@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Snug, settled and unhurried, homes that belong to the hill.
   rendering_and_quality: Warm naturalistic illustration with soft edges; an original design, never a copy of a known film village.
   key_features: turf-mound roofs; round doors and windows; lime-plastered faces; adzed oak frames; low warm afternoon sun
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bermed Round-Door Pastoral as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Earth-sheltered pastoral architecture: dwellings dug into turf mounds with round doors and round windows, lime-plastered faces and hand-hewn oak frames. Carry it through turf-mound roofs, round doors and windows, lime-plastered faces, adzed oak frames, low warm afternoon sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - licensed fantasy location
   - copy of a known film or game building

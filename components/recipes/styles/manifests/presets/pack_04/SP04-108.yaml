@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Small characters spread across open white paper, simple action lines and tiny pen-drawn props.
   atmosphere_and_mood: Funny, tiny and homemade, a rainy-afternoon craft.
   rendering_and_quality: Real fingerprint texture with minimal pen additions; no painted fills and no outlines around prints.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thumbprint Ink Critters as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Thumbprint critters: oval fingerprints pressed from colored ink pads, turned into animals and bugs with a few fine pen lines. Carry it through fingerprint ridges in ink blobs, stamp-pad colors, fine black pen details, white paper, tiny characters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: fingerprint ridges in ink blobs; stamp-pad colors; fine black pen details; white paper; tiny characters
 avoidRules:
   - frightening gore

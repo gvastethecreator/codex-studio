@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; contour lines stacking into layered curves across the frame, from a high viewpoint or a low bund edge.
   atmosphere_and_mood: Patient, communal and vast, a mountain shaped by generations of hands.
   rendering_and_quality: Landscape photograph with precise contour curves and water reflections, no costumed tourist staging.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stepped Paddy Terraces as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Stepped paddy terraces: hillsides carved into narrow flooded fields that follow the contours, held by earthen or stone bunds and fed by channels from the forest above. Carry it through contour-following flooded terraces, earthen and stone bunds, sky reflected in each pool, irrigation channels from the forest, seasonal green-to-gold colour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: contour-following flooded terraces; earthen and stone bunds; sky reflected in each pool; irrigation channels from the forest; seasonal green-to-gold colour
 avoidRules:
   - golden-hour garden postcard formula

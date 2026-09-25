@@ -20,7 +20,7 @@ visualDna:
   camera_and_composition: Tight crop, subject off-center, large black negative space, eye-level or slightly below.
   atmosphere_and_mood: Brooding, secretive, grave, and intense.
   rendering_and_quality: Clean noise-free blacks with detailed highlights; no muddy gray shadows.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Low Key Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Low-key portraiture: a figure carved out of darkness by one narrow source, most of the frame surrendered to deep shadow. Carry it through single gridded source, no fill, black negative space, raking texture, restrained highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: single gridded source; no fill; black negative space; raking texture; restrained highlights
 avoidRules:
   - generic stock-photo face

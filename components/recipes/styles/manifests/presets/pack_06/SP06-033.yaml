@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Bold, crafty and rhythmic, a handmade poster clarity.
   rendering_and_quality: Clean flowing cuts, flat even color, speckled light-pressure ink; no wood grain and no fine hatching.
   key_features: smooth flowing gouge lines; flat solid colors; rhythmic decorative cut patterns; speckled ink texture; no wood grain
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Linocut as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Linocut relief print: soft linoleum carved with V and U gouges into smooth flowing cuts, printed as clean flat ink areas with rhythmic white line patterns. Carry it through smooth flowing gouge lines, flat solid colors, rhythmic decorative cut patterns, speckled ink texture, no wood grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - changing the requested subject
   - readable printed text

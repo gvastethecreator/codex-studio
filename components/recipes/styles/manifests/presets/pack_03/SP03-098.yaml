@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested framing; emissive shapes visible in frame.
   atmosphere_and_mood: Moody and electric, darkness drawn with glowing lines.
   rendering_and_quality: Clean emissive GI with bloom; no readable signage.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Emissive Neon Geometry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Emissive-only lighting: the scene lit solely by glowing emissive shapes — tubes, panels and trims — with no other lights at all. Carry it through emissive shapes as only light, colored glossy reflections, soft long shadows, dark surfaces, bloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: emissive shapes as only light; colored glossy reflections; soft long shadows; dark surfaces; bloom
 avoidRules:
   - changing the geometry

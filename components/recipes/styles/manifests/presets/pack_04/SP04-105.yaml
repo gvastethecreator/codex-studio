@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: The requested view built on a visible blue perspective grid and mannequin forms, finished line on top.
   atmosphere_and_mood: Energetic and in-progress, the thinking of the artist left on the page.
   rendering_and_quality: Clean confident pencil over messy blue structure; the image stays unfinished and uninked on purpose.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Non-Photo Blue Pencils as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Uninked comic pencil art: confident graphite line drawing laid over loose non-photo-blue construction sketching on bristol board, before any ink. Carry it through non-photo-blue construction lines, graphite finished line, X marks for blacks, visible perspective grid, bristol tooth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: non-photo-blue construction lines; graphite finished line; X marks for blacks; visible perspective grid; bristol tooth
 avoidRules:
   - added panels or gutters

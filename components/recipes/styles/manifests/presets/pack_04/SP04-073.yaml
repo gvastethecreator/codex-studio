@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Elegant and spontaneous, like a traveller’s sketchbook.
   rendering_and_quality: Line-led drawing with modulated width and a few washes; no pencil and no digital fill.
   key_features: flex-nib swelling line; iron-gall ink browning; finger washes; spatters; laid paper
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fountain Pen as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Fountain pen drawing: a flexible steel nib swelling and thinning with pressure, iron-gall ink browning as it dries, loose washes pulled with a wet finger. Carry it through flex-nib swelling line, iron-gall ink browning, finger washes, spatters, laid paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - brand logo

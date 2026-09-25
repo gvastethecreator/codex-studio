@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Loud cosmic wonder, everything enormous, charged and about to explode.
   rendering_and_quality: Heavy square-cornered contours, flat print color and dot crackle; no painted gradients or realistic textures.
   key_features: energy-dot crackle; extreme foreshortening; blocky square anatomy; cosmic machine architecture; magenta-cyan-yellow flats
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Silver Age Comic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "1960s cosmic comic: blocky muscular ink drawing with extreme foreshortening, crackling black energy-dot fields and machine-like cosmic architecture. Carry it through energy-dot crackle, extreme foreshortening, blocky square anatomy, cosmic machine architecture, magenta-cyan-yellow flats. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - added panels or gutters
   - speech balloons

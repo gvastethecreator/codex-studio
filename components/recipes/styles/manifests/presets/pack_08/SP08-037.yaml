@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Weathered, stubborn, lonely and hardworking, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Dusty, film-like finish, with believable fabric weight, seams and fit detail.
   key_features: canvas trousers and suspenders; long duster; calico and bonnet; worn leather boots; dusty light
-  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Frontier Workwear as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
+  creative_brief: "Frontier workwear: nineteenth-century American frontier clothing — canvas trousers, suspenders, flannel shirts, calico dresses, dusters and worn boots. Carry it through canvas trousers and suspenders, long duster, calico and bonnet, worn leather boots, dusty light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - readable label text

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Create quiet, otherworldly gravity through negative space and low sheen, without assigning a ghost, monster or supernatural role.
   rendering_and_quality: Balance soft outer edges with readable seams and folds. Retain face and garment structure instead of collapsing the subject into a featureless black shape.
   key_features: Light-absorbing near-black cloth; smoke-soft garment edges; selective rim separation; legible negative-space silhouette.
-  creative_brief: Transform the requested wardrobe into shadow couture using velvety dark fabric, soft-edged hems and restrained rim detail. Preserve identity, anatomy, pose, role, scene and framing; do not create a ghost, smoke-body, void or new setting.
+  creative_brief: "Transform the requested wardrobe into shadow couture using velvety dark fabric, soft-edged hems and restrained rim detail. Preserve identity, anatomy, pose, role, scene and framing; do not create a ghost, smoke-body, void or new setting. Use it as a reusable look on any subject."
 avoidRules:
   - generic cosplay
   - plastic toy armor

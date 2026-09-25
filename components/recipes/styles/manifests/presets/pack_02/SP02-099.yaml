@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Angry and handmade, anti-design energy on a borrowed copier.
   rendering_and_quality: Real photocopied collage; cut-out letter shapes stay unreadable.
   key_features: photocopy toner grit; scissored collage; tape strips; fluorescent spot color; crushed blacks
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Punk Zine Cut-and-Paste as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Punk zine cut-and-paste: photocopied collage of cut-out images and shapes, taped and glued, then copied again until the blacks crush and the greys break into grit. Carry it through photocopy toner grit, scissored collage, tape strips, fluorescent spot color, crushed blacks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photorealistic rendering
   - 3d render

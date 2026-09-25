@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.
   atmosphere_and_mood: Adventurous, playful, antique and mysterious, coming from the diagram language.
   rendering_and_quality: Clean, precise diagram rendering with consistent line weights and no random marks.
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Treasure Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Treasure map: hand-drawn parchment map with dotted paths, X marks and sea monsters. Carry it through dotted path, X mark, aged parchment, illustrative only. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: dotted path; X mark; aged parchment; illustrative only
 avoidRules:
   - readable text

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Damp, secret and gently eerie, something grown overnight.
   rendering_and_quality: Macro nature photograph of real fungal material; no fairy-cottage cliché and no creatures.
   key_features: mushroom caps and gills as structure; bracket fungus ledges; cream speckling; spore dust in a light shaft; forest-floor macro
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fungal Vernacular Miniature as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Fungal miniature construction: the subject grown and assembled from mushroom caps, gills and bracket fungi, with moss and lichen as the finish. Carry it through mushroom caps and gills as structure, bracket fungus ledges, cream speckling, spore dust in a light shaft, forest-floor macro. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo on parts
   - readable text

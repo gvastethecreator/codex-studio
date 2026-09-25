@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Analytical and suspenseful, searching for the strongest shot.
   rendering_and_quality: Stamp-size value studies only, no detail, no finished frame.
   key_features: three-by-four thumbnail grid; one scene in twelve framings; three grey values; freehand frames; varied camera heights
-  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Composition Thumbnail Grid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  creative_brief: "Composition thumbnail grid: the same scene explored in twelve small pencil-framed rectangles, each testing a different camera and shot size. Carry it through three-by-four thumbnail grid, one scene in twelve framings, three grey values, freehand frames, varied camera heights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable annotations
   - readable text
