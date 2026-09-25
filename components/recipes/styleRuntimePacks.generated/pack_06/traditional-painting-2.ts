@@ -457,9 +457,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'single-session wet-into-wet strokes; warm toned ground peeking through; two families of light and shadow; loose unfinished borders; small panel sketch',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP06-122',
@@ -494,9 +491,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Reverse Glass Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'paint behind glass seen through a glossy pane; outlines laid first; flat bright folk colors; crumpled foil backing; decorative frontal layout',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -534,9 +528,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'hair-thin even ink outlines; layered mineral color washes; aged honey silk ground; gradated color inside each outline; shadowless meticulous detail',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP06-124',
@@ -573,9 +564,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'polished black lacquer depth; crushed eggshell inlay; gold and silver leaf; sanded-through amber gradations; images surfacing from within',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP06-125',
@@ -607,9 +595,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tonalist Veil Oil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'single enveloping tone; compressed middle values; scumbled thin veils; one faint warm light; soft lost edges',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -353,9 +353,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'thousands of flowing non-crossing lines; density-based tone; subject revealed by field direction; plain ground; consistent thin width',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP06-137',
@@ -390,9 +387,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pen-Plotter Hatch Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'machine-regular hatching; contour-line fills; real fineliner ink on paper; pen-start dots; one or two pen colors',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -429,9 +423,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'receding silhouette layers; smooth vertical gradients; darker near and paler far; analogous palette; no interior detail',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP06-139',
@@ -465,9 +456,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mirror-Tool Kaleidoscope as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'radial mirror symmetry; six or eight repeating wedges; jewel color rhythm; central glow; recognizable repeated subject',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -503,9 +491,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grain-Shaded Flat Illustration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'rounded flat vector shapes; directional noise-grain shading; warm muted palette; no outlines; generous space',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {

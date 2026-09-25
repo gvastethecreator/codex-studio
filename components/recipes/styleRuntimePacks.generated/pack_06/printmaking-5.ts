@@ -465,9 +465,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'fine white lines cut into black; white-line tint greys; no wood grain; tiny stipple cuts; small jewel-like vignette',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP06-132',
@@ -502,9 +499,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Reduction Linocut as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'one block printed in successive colors; light-to-dark stacked layers; edge halos of earlier colors; speckled ink; nested shapes',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -541,9 +535,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'tinted tissue laid under the etching; visible torn or cut tissue edge; black etched line; embossed plate mark; one accent color zone',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP06-134',
@@ -573,9 +564,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carborundum Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'brushed grit plate; deep velvet embossed darks; brush marks in granular tone; soft furry edges; bold painterly masses',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -611,9 +599,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pochoir Hand Stencil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'crisp cut-stencil color shapes; dabbed brush stipple inside shapes; brilliant gouache palette; metallic gold accents; fine key line',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

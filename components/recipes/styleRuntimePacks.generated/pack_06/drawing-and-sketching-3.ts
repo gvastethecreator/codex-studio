@@ -321,9 +321,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'slow wobbling single line; drifting proportions; misaligned features; overshooting joins; no shading',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP06-127',
@@ -354,9 +351,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Reed Pen Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'blunt split reed strokes; rhythmic dashes, dots and curls; brown ink on cream laid paper; dry-edged marks; pattern per surface',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -393,9 +387,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'brushed powdered graphite ground; erased lights with halos; eraser-pen sharp highlights; silvery sheen; forms emerging from haze',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP06-129',
@@ -431,9 +422,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'dry pencil hatching beside dissolved washes; ghost strokes under water; soft bleed edges; paper white gaps; sketchy trailing edges',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP06-130',
@@ -468,9 +456,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carpenter Pencil Block Sketch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'wide flat chisel strokes; thick-to-thin rotation marks; faceted planes; bare paper lights; thin edge accents',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
