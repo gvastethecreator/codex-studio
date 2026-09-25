@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP11-095
+packId: pack_11
+name: Oil on Copper Panel
+styleAnchors:
+  - Oil on Copper Panel
+  - oil painting on copper
+  - copper support
+displayName: Oil on Copper Panel
+category: 2. Artistic Mediums
+domain: oil painting on copper
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - artistic-mediums
+  - oil-on-copper
+  - painting
+  - medium
+visualDna:
+  aesthetic: 'Oil on copper: a small, glassy, extremely smooth oil painting on a copper plate, with jewel-like color.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: painted in thin smooth oil glazes on copper, fine detail and no canvas texture, small cabinet-picture scale."
+  color_and_tone: Jewel-like saturated color with warm copper glow in thin areas.
+  lighting_and_shadow: Theatrical lighting with glowing highlights, expressed through the style rather than photographic lighting.
+  texture_and_material: Smooth enamel-like paint, copper edge visible, visible at card size as the signature of the style.
+  camera_and_composition: Small cabinet-picture framing, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Precious, intimate, dramatic and old, driven by the construction, color and rhythm.
+  rendering_and_quality: Glassy fine oil painting, with clean, deliberate marks and no accidental noise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oil on Copper Panel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: copper support; smooth glazes; jewel color; small scale
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_11
+  packName: Miscellaneous & Fun
+  categoryId: artistic-mediums
+  categoryName: 2. Artistic Mediums
+  tags:
+    - miscellaneous-and-fun
+    - artistic-mediums
+    - oil-on-copper
+    - painting
+    - medium
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: oil painting on copper

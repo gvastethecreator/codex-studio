@@ -8,28 +8,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Chalkboard Art',
     category: '2. Artistic Mediums',
     negativePrompt:
-      'paper, ink, digital, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, paper, ink, digital, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Chalkboard Art operates as a portable source-router layer: combine Chalkboard drawing language on dark slate surfaces with manual medium logic with mark discipline, process texture, graphic reduction, and authored surface treatment, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Chalkboard art: colored-chalk illustration on a black slate board, like a hand-drawn tavern or café board, with bold outlines and drop shadows.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms draw, print, stitch, spray, glaze, outline, cut, layer, or illuminate through Chalk dust, variable thickness, smudged contours, broken strokes, re-drawn corrections; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: drawn in white and colored chalk on black slate with bold outlines, side-of-chalk shading and simple drop shadows; decorative borders and flourishes frame it but carry no words.",
       color_and_tone:
-        "Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
-      lighting_and_shadow:
-        "Use Flat, even overhead fluorescents, no glare, diffused ambient plus surface-aware illumination that reveals pigment body, glass translucency, chalk haze, spray mist, or print layers as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Black-green slate with chalk white, dusty pastel red, yellow, teal and pink.',
+      lighting_and_shadow: 'Flat light; tone comes from chalk pressure and smudge.',
       texture_and_material:
-        'Render Slate grain, eraser smudges, chalk dust, ghosted afterimages, rough tooth plus mark residue, substrate grain, lead came, screen ink, sprayed overspray, needlework, and hand-built edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Chalk dust, smudges, eraser ghosts of earlier drawings and slate grain.',
       camera_and_composition:
-        'Compose with Hand-drawn imperfections, slightly tilted lettering, uneven scale, organic spacing plus graphic spacing, panel division, emblem balance, handmade alignment, and medium-specific rhythm as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Board-shaped framing with the subject centered and ornamental corners.',
       atmosphere_and_mood:
-        "Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and object presence; the emotional tone should feel specific to Chalkboard Art while still obeying the prompt's subject and context.",
+        'Handmade, homely, charming and a little dusty, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with legible medium identity, crisp material boundary, intentional artifacts, and no generic illustration filler; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Chalkboard drawing language on dark slate surfaces; Chalk dust, variable thickness, smudged contours, broken strokes, re-drawn corrections; Slate grain, eraser smudges, chalk dust, ghosted afterimages, rough tooth; Flat, even overhead fluorescents, no glare, diffused ambient; Hand-drawn imperfections, slightly tilted lettering, uneven scale, organic spacing',
+        'Chalk illustration with confident strokes and visible erasures, with clean, deliberate marks and no accidental noise.',
+      key_features: 'colored chalk on slate; drop shadows; ornamental flourishes; eraser ghosts',
       creative_brief:
-        'Use Chalkboard Art after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Chalkboard drawing language on dark slate surfaces, Chalk dust, variable thickness, smudged contours, broken strokes, re-drawn corrections, Slate grain, eraser smudges, chalk dust, ghosted afterimages, rough tooth, Flat, even overhead fluorescents, no glare, diffused ambient, Hand-drawn imperfections, slightly tilted lettering, uneven scale, organic spacing plus stroke direction, pigment edge, stencil separation, lead structure, fabric or print registration, and clearly expressed hand process, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chalkboard Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +35,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tattoo Flash (Old School)',
     category: '2. Artistic Mediums',
     negativePrompt:
-      'realistic, photo, 3d, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, banner lettering, real tattoo artist flash copy, realistic, photo, 3d, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Tattoo Flash (Old School) operates as a portable source-router layer: combine Traditional old-institutional-system tattoo flash design language with manual medium logic with mark discipline, process texture, graphic reduction, and authored surface treatment, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Old-school tattoo flash sheet: several bold traditional designs painted on paper, arranged as a sheet a tattooer would hang on the wall.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms draw, print, stitch, spray, glaze, outline, cut, layer, or illuminate through Bold black outlines, heavy contour weight, ribbony banners, coiled snakes; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as one or more flash designs with heavy black outlines, solid black fills and flat watercolor color, spaced across a paper sheet with small filler designs around it.",
       color_and_tone:
-        "Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
-      lighting_and_shadow:
-        "Use Paper stain (coffee), vintage amber wash, warm sepia base, parchment glow plus surface-aware illumination that reveals pigment body, glass translucency, chalk haze, spray mist, or print layers as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
-      texture_and_material:
-        'Render Watercolor paper, skin, flash-sheet tooth, poster-board grain, ink-bled edges plus mark residue, substrate grain, lead came, screen ink, sprayed overspray, needlework, and hand-built edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Traditional flash palette: black, red, yellow, green and skin tone on aged cream paper.',
+      lighting_and_shadow: 'No realistic lighting; color is flat with simple black shading.',
+      texture_and_material: 'Watercolor on toothy paper, pinholes, tape marks and yellowed edges.',
       camera_and_composition:
-        'Compose with 2D flat design, pinup proportions, dagger-and-heart motifs, talismanic layout plus graphic spacing, panel division, emblem balance, handmade alignment, and medium-specific rhythm as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Flat sheet layout with the main design large and small fillers around it.',
       atmosphere_and_mood:
-        "Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and object presence; the emotional tone should feel specific to Tattoo Flash (Old School) while still obeying the prompt's subject and context.",
+        'Bold, timeless, tough and handcrafted, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with legible medium identity, crisp material boundary, intentional artifacts, and no generic illustration filler; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Traditional old-institutional-system tattoo flash design language; Bold black outlines, heavy contour weight, ribbony banners, coiled snakes; Watercolor paper, skin, flash-sheet tooth, poster-board grain, ink-bled edges; Paper stain (coffee), vintage amber wash, warm sepia base, parchment glow; 2D flat design, pinup proportions, dagger-and-heart motifs, talismanic layout',
+        'Clean hand-painted flash with steady linework, with clean, deliberate marks and no accidental noise.',
+      key_features: 'heavy black outlines; flat watercolor fills; flash-sheet layout; aged paper',
       creative_brief:
-        'Use Tattoo Flash (Old School) after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Traditional old-institutional-system tattoo flash design language, Bold black outlines, heavy contour weight, ribbony banners, coiled snakes, Watercolor paper, skin, flash-sheet tooth, poster-board grain, ink-bled edges, Paper stain (coffee), vintage amber wash, warm sepia base, parchment glow, 2D flat design, pinup proportions, dagger-and-heart motifs, talismanic layout plus stroke direction, pigment edge, stencil separation, lead structure, fabric or print registration, and clearly expressed hand process, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tattoo Flash (Old School) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,115 +61,109 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Stained Glass',
     category: '2. Artistic Mediums',
     negativePrompt:
-      'opaque, dull, painting, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, opaque, dull, painting, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Stained Glass operates as a portable source-router layer: combine Stained-glass window art with lead-came segmentation with manual medium logic with mark discipline, process texture, graphic reduction, and authored surface treatment, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Stained glass window: the subject built from colored glass pieces joined by dark lead lines and lit from behind.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms draw, print, stitch, spray, glaze, outline, cut, layer, or illuminate through Thick black lead came, segmented contours, curvilinear divisions, interconnected cells; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
-      color_and_tone:
-        "Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: broken into colored glass pieces separated by thick dark lead came, with painted details on faces and hands.",
+      color_and_tone: 'Jewel colors: ruby, cobalt, emerald, amber and clear glass.',
       lighting_and_shadow:
-        "Use Backlit, glowing, sun-through-glass radiance, interior candle warmth, beam-fall drama plus surface-aware illumination that reveals pigment body, glass translucency, chalk haze, spray mist, or print layers as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
-      texture_and_material:
-        'Render Glass imperfections, bubbles, rippled surface, wavy transparency, antique patina plus mark residue, substrate grain, lead came, screen ink, sprayed overspray, needlework, and hand-built edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Strong backlight through the glass with colored light spilling onto stone.',
+      texture_and_material: 'Glass with bubbles, ripples, painted grisaille detail and lead came.',
       camera_and_composition:
-        'Compose with Mosaic segmentation, lead-line compartmentalization, piecemeal assembly, fractured-light unity plus graphic spacing, panel division, emblem balance, handmade alignment, and medium-specific rhythm as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Window shape such as a pointed arch or rose, the subject fitted into it.',
       atmosphere_and_mood:
-        "Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and object presence; the emotional tone should feel specific to Stained Glass while still obeying the prompt's subject and context.",
+        'Sacred, luminous, solemn and grand, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with legible medium identity, crisp material boundary, intentional artifacts, and no generic illustration filler; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Stained-glass window art with lead-came segmentation; Thick black lead came, segmented contours, curvilinear divisions, interconnected cells; Glass imperfections, bubbles, rippled surface, wavy transparency, antique patina; Backlit, glowing, sun-through-glass radiance, interior candle warmth, beam-fall drama; Mosaic segmentation, lead-line compartmentalization, piecemeal assembly, fractured-light unity',
+        'Clear stained-glass construction where every piece reads, with clean, deliberate marks and no accidental noise.',
+      key_features: 'colored glass pieces; lead came; backlight; window shape',
       creative_brief:
-        'Use Stained Glass after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Stained-glass window art with lead-came segmentation, Thick black lead came, segmented contours, curvilinear divisions, interconnected cells, Glass imperfections, bubbles, rippled surface, wavy transparency, antique patina, Backlit, glowing, sun-through-glass radiance, interior candle warmth, beam-fall drama, Mosaic segmentation, lead-line compartmentalization, piecemeal assembly, fractured-light unity plus stroke direction, pigment edge, stencil separation, lead structure, fabric or print registration, and clearly expressed hand process, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stained Glass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP11-019',
-    name: 'Felt Signal Handmade Broadcast',
+    name: 'Felt Puppet Broadcast',
+    displayName: 'Felt Puppet Broadcast',
+    styleAnchors: ['Felt Puppet Broadcast'],
     category: '2. Artistic Mediums',
     negativePrompt:
-      'cgi, smooth, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real puppet character likeness, cgi, smooth, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Felt Signal Handmade Broadcast operates as a portable source-router layer: combine Handmade broadcast texture system where any subject becomes soft, stitched, fuzzy, visibly operated, and warmly stage-lit with manual medium logic with mark discipline, process texture, graphic reduction, and authored surface treatment, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Felt puppet broadcast: the subject as a fuzzy hand puppet made of felt and fleece, performing on a small TV set.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms draw, print, stitch, spray, glaze, outline, cut, layer, or illuminate through Rounded cut-fabric contours, sock-like volume breaks, seam-guided silhouettes, elastic wobble arcs, simplified expressive geometry; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
-      color_and_tone:
-        "Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: rebuilt as foam-and-fleece hand puppets with felt faces, ping-pong ball eyes, wide hinged mouths and visible arm rods.",
+      color_and_tone: 'Saturated felt colors against a warm, simple TV set.',
       lighting_and_shadow:
-        "Use Friendly multi-camera studio light with soft key-fill balance, gentle rim glow, and practical set warmth without requiring a stage plus surface-aware illumination that reveals pigment body, glass translucency, chalk haze, spray mist, or print layers as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
-      texture_and_material:
-        'Render Felt nap, fleece fuzz, foam padding, clearly expressed stitching, brushed fabric grain, handmade edge irregularity plus mark residue, substrate grain, lead came, screen ink, sprayed overspray, needlework, and hand-built edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Warm studio TV lighting with soft shadows, expressed through the style rather than photographic lighting.',
+      texture_and_material: 'Felt, fleece fuzz, visible seams and glued fabric pieces.',
       camera_and_composition:
-        'Compose with Mouth-flap compression, rod-like gesture arcs, slight squash at joints, fabric slouch, shallow theatrical depth plus graphic spacing, panel division, emblem balance, handmade alignment, and medium-specific rhythm as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Medium TV shot at puppet height, bottom edge of the set hiding the puppeteers.',
       atmosphere_and_mood:
-        "Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and object presence; the emotional tone should feel specific to Felt Signal Handmade Broadcast while still obeying the prompt's subject and context.",
+        'Warm, funny, handmade and playful, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with legible medium identity, crisp material boundary, intentional artifacts, and no generic illustration filler; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Handmade broadcast texture system where any subject becomes soft, stitched, fuzzy, visibly operated, and warmly stage-lit; Rounded cut-fabric contours, sock-like volume breaks, seam-guided silhouettes, elastic wobble arcs, simplified expressive geometry; Felt nap, fleece fuzz, foam padding, clearly expressed stitching, brushed fabric grain, handmade edge irregularity; Friendly multi-camera studio light with soft key-fill balance, gentle rim glow, and practical set warmth without requiring a stage; Mouth-flap compression, rod-like gesture arcs, slight squash at joints, fabric slouch, shallow theatrical depth',
+        'Photographic puppet-show still with real fabric texture, with clean, deliberate marks and no accidental noise.',
+      key_features: 'fleece puppets; ping-pong eyes; hinged mouths; arm rods; TV set',
       creative_brief:
-        'Use Felt Signal Handmade Broadcast after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Handmade broadcast texture system where any subject becomes soft, stitched, fuzzy, visibly operated, and warmly stage-lit, Rounded cut-fabric contours, sock-like volume breaks, seam-guided silhouettes, elastic wobble arcs, simplified expressive geometry, Felt nap, fleece fuzz, foam padding, clearly expressed stitching, brushed fabric grain, handmade edge irregularity, Friendly multi-camera studio light with soft key-fill balance, gentle rim glow, and practical set warmth without requiring a stage, Mouth-flap compression, rod-like gesture arcs, slight squash at joints, fabric slouch, shallow theatrical depth plus stroke direction, pigment edge, stencil separation, lead structure, fabric or print registration, and clearly expressed hand process, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Felt Puppet Broadcast as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP11-026',
-    name: 'Aerosol Velocity Layering',
+    name: 'Freehand Aerosol Layering',
+    displayName: 'Freehand Aerosol Layering',
+    styleAnchors: ['Freehand Aerosol Layering'],
     category: '2. Artistic Mediums',
     negativePrompt:
-      'brush strokes, clean, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brush strokes, clean, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Aerosol Velocity Layering operates as a portable source-router layer: combine Aerosol markmaking system with overpainted speed, cap-pressure variation, graphic rebellion, and layered surface memory with manual medium logic with mark discipline, process texture, graphic reduction, and authored surface treatment, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Freehand aerosol painting: the subject built up in layers of spray paint, with soft overspray, crisp fade edges and drips.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms draw, print, stitch, spray, glaze, outline, cut, layer, or illuminate through Fat-cap fills, skinny-cap cuts, overspray halos, drips, stencil interrupts, tag-like motion trails, scuffed outline collisions; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: painted freehand in stacked spray layers: soft fades, hard cap-lines for detail, overspray halos and a few drips.",
       color_and_tone:
-        "Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
-      lighting_and_shadow:
-        "Use Flat flash-like visibility with wet-paint glints, grazing texture light, and saturated color punch plus surface-aware illumination that reveals pigment body, glass translucency, chalk haze, spray mist, or print layers as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Bold spray colors over grey concrete or brick, used consistently across subject and background.',
+      lighting_and_shadow: 'Light is painted: bright fades and dark outline shadows.',
       texture_and_material:
-        'Render Powdery overspray, glossy wet paint, scratched base surface, stencil edge dust, aerosol speckle fields plus mark residue, substrate grain, lead came, screen ink, sprayed overspray, needlework, and hand-built edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
-      camera_and_composition:
-        'Compose with Spray drift, drip gravity, edge bloom, stencil offsets, overlapping tag gestures, pressure-fade depth plus graphic spacing, panel division, emblem balance, handmade alignment, and medium-specific rhythm as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Spray grain, overspray halos, drips and wall texture, visible at card size as the signature of the style.',
+      camera_and_composition: 'Mural framing on a wall with the subject large.',
       atmosphere_and_mood:
-        "Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and object presence; the emotional tone should feel specific to Aerosol Velocity Layering while still obeying the prompt's subject and context.",
+        'Rebellious, energetic, loud and urban, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with legible medium identity, crisp material boundary, intentional artifacts, and no generic illustration filler; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Aerosol markmaking system with overpainted speed, cap-pressure variation, graphic rebellion, and layered surface memory; Fat-cap fills, skinny-cap cuts, overspray halos, drips, stencil interrupts, tag-like motion trails, scuffed outline collisions; Powdery overspray, glossy wet paint, scratched base surface, stencil edge dust, aerosol speckle fields; Flat flash-like visibility with wet-paint glints, grazing texture light, and saturated color punch; Spray drift, drip gravity, edge bloom, stencil offsets, overlapping tag gestures, pressure-fade depth',
+        'Skilled freehand spray mural, with clean, deliberate marks and no accidental noise.',
+      key_features: 'spray fades; cap lines; drips; overspray; wall texture',
       creative_brief:
-        'Use Aerosol Velocity Layering after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Aerosol markmaking system with overpainted speed, cap-pressure variation, graphic rebellion, and layered surface memory, Fat-cap fills, skinny-cap cuts, overspray halos, drips, stencil interrupts, tag-like motion trails, scuffed outline collisions, Powdery overspray, glossy wet paint, scratched base surface, stencil edge dust, aerosol speckle fields, Flat flash-like visibility with wet-paint glints, grazing texture light, and saturated color punch, Spray drift, drip gravity, edge bloom, stencil offsets, overlapping tag gestures, pressure-fade depth plus stroke direction, pigment edge, stencil separation, lead structure, fabric or print registration, and clearly expressed hand process, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Freehand Aerosol Layering as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP11-028',
-    name: 'Gas-Tube Halo Typography',
+    name: 'Gas-Tube Halo Contours',
+    displayName: 'Gas-Tube Halo Contours',
+    styleAnchors: ['Gas-Tube Halo Contours'],
     category: '2. Artistic Mediums',
     negativePrompt:
-      'daylight, paint, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, daylight, paint, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Gas-Tube Halo Typography operates as a portable source-router layer: combine Electric gas-discharge graphic treatment built from glowing tube contours, dark void contrast, and chromatic halo bleed with manual medium logic with mark discipline, process texture, graphic reduction, and authored surface treatment, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Gas-tube glow: the subject drawn only in bent glowing glass tubes on a dark wall, with color halos around each tube.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms draw, print, stitch, spray, glaze, outline, cut, layer, or illuminate through Continuous bent-tube strokes, cursive contour loops, clipped mounting shadows, soft wall-wash silhouettes, luminous edge repetition; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
-      color_and_tone:
-        "Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: traced as a few continuous bent glass tubes of glowing gas, with small gaps where tubes end and mounting clips visible.",
+      color_and_tone: 'Pink, red, blue and ice-white gas colors against black.',
       lighting_and_shadow:
-        "Use Self-illuminated emission with colored spill, bloom halos, high local contrast, and dim ambient falloff plus surface-aware illumination that reveals pigment body, glass translucency, chalk haze, spray mist, or print layers as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
-      texture_and_material:
-        'Render Glass tubing, gas glow, enamel backing, transformer warmth, glossy reflections, dust caught inside colored light plus mark residue, substrate grain, lead came, screen ink, sprayed overspray, needlework, and hand-built edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'The tubes are the only light, with halo bloom and reflections on the wall.',
+      texture_and_material: 'Glass tubes, clips, wires and a dark brick or panel wall.',
       camera_and_composition:
-        'Compose with Halo expansion, chromatic fringe drift, tube refraction, glow stacking, slight sign-maker asymmetry plus graphic spacing, panel division, emblem balance, handmade alignment, and medium-specific rhythm as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Frontal sign framing with the glowing drawing centered, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and object presence; the emotional tone should feel specific to Gas-Tube Halo Typography while still obeying the prompt's subject and context.",
+        'Nocturnal, moody, electric and lonely, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with legible medium identity, crisp material boundary, intentional artifacts, and no generic illustration filler; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Electric gas-discharge graphic treatment built from glowing tube contours, dark void contrast, and chromatic halo bleed; Continuous bent-tube strokes, cursive contour loops, clipped mounting shadows, soft wall-wash silhouettes, luminous edge repetition; Glass tubing, gas glow, enamel backing, transformer warmth, glossy reflections, dust caught inside colored light; Self-illuminated emission with colored spill, bloom halos, high local contrast, and dim ambient falloff; Halo expansion, chromatic fringe drift, tube refraction, glow stacking, slight sign-maker asymmetry',
+        'Photoreal glowing tube sign, with clean, deliberate marks and no accidental noise.',
+      key_features: 'bent glass tubes; halo glow; clips and wires; dark wall',
       creative_brief:
-        'Use Gas-Tube Halo Typography after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Electric gas-discharge graphic treatment built from glowing tube contours, dark void contrast, and chromatic halo bleed, Continuous bent-tube strokes, cursive contour loops, clipped mounting shadows, soft wall-wash silhouettes, luminous edge repetition, Glass tubing, gas glow, enamel backing, transformer warmth, glossy reflections, dust caught inside colored light, Self-illuminated emission with colored spill, bloom halos, high local contrast, and dim ambient falloff, Halo expansion, chromatic fringe drift, tube refraction, glow stacking, slight sign-maker asymmetry plus stroke direction, pigment edge, stencil separation, lead structure, fabric or print registration, and clearly expressed hand process, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gas-Tube Halo Contours as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +171,455 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Silkscreen Icon Impact',
     category: '2. Artistic Mediums',
     negativePrompt:
-      'subtle, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real celebrity likeness, subtle, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Silkscreen Icon Impact operates as a portable source-router layer: combine Pop silkscreen impact system using mechanical reproduction, celebrity-scale flatness, commodity color, and graphic repetition with manual medium logic with mark discipline, process texture, graphic reduction, and authored surface treatment, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Pop silkscreen: the subject as a flat screen print in loud commodity colors, sometimes repeated in a grid with off-register color.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms draw, print, stitch, spray, glaze, outline, cut, layer, or illuminate through Ben-Day dots, thick contour separation, screen-registration offsets, posterized planes, repeated frame logic; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
-      color_and_tone:
-        "Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: flattened into high-contrast photographic shadows printed over flat color blocks, with slightly misregistered color layers.",
+      color_and_tone: 'Loud flat colors: hot pink, acid yellow, turquoise and black.',
       lighting_and_shadow:
-        "Use Flattened print light with almost no modeled depth, hard color field contrast, and ink-density emphasis plus surface-aware illumination that reveals pigment body, glass translucency, chalk haze, spray mist, or print layers as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Harsh flash contrast reduced to black shapes, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Screenprint ink, paper tooth, halftone grain, misregistration edges, cheap poster gloss plus mark residue, substrate grain, lead came, screen ink, sprayed overspray, needlework, and hand-built edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
-      camera_and_composition:
-        'Compose with Color-channel offset, serial repetition, halftone scale shifts, cropped icon flattening, print misalignment plus graphic spacing, panel division, emblem balance, handmade alignment, and medium-specific rhythm as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Silkscreen ink, off-register edges and flat paper, visible at card size as the signature of the style.',
+      camera_and_composition: 'Single frontal panel or a grid of repeats in different colorways.',
       atmosphere_and_mood:
-        "Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and object presence; the emotional tone should feel specific to Silkscreen Icon Impact while still obeying the prompt's subject and context.",
+        'Bold, ironic, graphic and cool, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with legible medium identity, crisp material boundary, intentional artifacts, and no generic illustration filler; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Pop silkscreen impact system using mechanical reproduction, celebrity-scale flatness, commodity color, and graphic repetition; Ben-Day dots, thick contour separation, screen-registration offsets, posterized planes, repeated frame logic; Screenprint ink, paper tooth, halftone grain, misregistration edges, cheap poster gloss; Flattened print light with almost no modeled depth, hard color field contrast, and ink-density emphasis; Color-channel offset, serial repetition, halftone scale shifts, cropped icon flattening, print misalignment',
+        'Clean silkscreen print with deliberate misregistration, with clean, deliberate marks and no accidental noise.',
+      key_features: 'flat color blocks; black photo shadows; off-register; repeat grid',
       creative_brief:
-        'Use Silkscreen Icon Impact after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Pop silkscreen impact system using mechanical reproduction, celebrity-scale flatness, commodity color, and graphic repetition, Ben-Day dots, thick contour separation, screen-registration offsets, posterized planes, repeated frame logic, Screenprint ink, paper tooth, halftone grain, misregistration edges, cheap poster gloss, Flattened print light with almost no modeled depth, hard color field contrast, and ink-density emphasis, Color-channel offset, serial repetition, halftone scale shifts, cropped icon flattening, print misalignment plus stroke direction, pigment edge, stencil separation, lead structure, fabric or print registration, and clearly expressed hand process, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Silkscreen Icon Impact as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP11-083',
+    name: 'Pyrography Woodburning',
+    displayName: 'Pyrography Woodburning',
+    styleAnchors: ['Pyrography Woodburning', 'wood burning drawing', 'burned lines'],
+    category: '2. Artistic Mediums',
+    domain: 'wood burning drawing',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pyrography: the subject burned into pale wood with a hot pen, tones from light tan to charred black.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: drawn with a hot burning pen: lines, stippled shading and deep scorched blacks following the wood grain.",
+      color_and_tone: 'Pale birch or basswood with tan, brown and black burn tones.',
+      lighting_and_shadow:
+        'Tone comes only from burn depth, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Wood grain, scorched lines and slight charring, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Plaque or wood-slice framing with bark edge, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Rustic, warm, patient and handmade, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Fine pyrography with controlled burn tones, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pyrography Woodburning as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'burned lines; scorched blacks; wood grain; bark edge',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-084',
+    name: 'Scrimshaw Engraving',
+    displayName: 'Scrimshaw Engraving',
+    styleAnchors: ['Scrimshaw Engraving', 'engraved bone and ink', 'scratched lines'],
+    category: '2. Artistic Mediums',
+    domain: 'engraved bone and ink',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real ivory trade imagery, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Scrimshaw: fine lines scratched into polished ivory-colored bone and rubbed with black ink.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: scratched as fine engraved lines and crosshatching into a curved polished bone surface, filled with black ink.",
+      color_and_tone: 'Creamy bone with black ink lines and occasional faded red.',
+      lighting_and_shadow:
+        'Polished surface sheen on a curved object, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Polished bone with scratched lines and age cracks, visible at card size as the signature of the style.',
+      camera_and_composition: 'Object close-up following the curve of a tooth or tusk.',
+      atmosphere_and_mood:
+        'Nautical, lonely, patient and old, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Fine engraved line work on bone, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scrimshaw Engraving as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'scratched lines; black ink fill; curved bone; age cracks',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-085',
+    name: 'Gyotaku Ink Rubbing',
+    displayName: 'Gyotaku Ink Rubbing',
+    styleAnchors: ['Gyotaku Ink Rubbing', 'fish ink print', 'direct ink impression'],
+    category: '2. Artistic Mediums',
+    domain: 'fish ink print',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gyotaku: the subject printed by inking a real creature or object and pressing thin paper onto it.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: transferred as a direct ink impression: scales, fins and textures captured exactly, with patchy ink and a hand-painted eye.",
+      color_and_tone:
+        'Black or indigo ink on thin cream paper, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Tone comes from ink pressure; no lighting, expressed through the style rather than photographic lighting.',
+      texture_and_material: 'Thin mulberry paper with ink texture and uneven pressure.',
+      camera_and_composition:
+        'Flat side-view print with generous empty paper, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Quiet, natural, direct and eerie, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Authentic impression print with natural irregularity, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gyotaku Ink Rubbing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'direct ink impression; scale texture; painted eye; thin paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-086',
+    name: 'Folded Papercut Lace',
+    displayName: 'Folded Papercut Lace',
+    styleAnchors: ['Folded Papercut Lace', 'symmetrical cut paper', 'mirror symmetry'],
+    category: '2. Artistic Mediums',
+    domain: 'symmetrical cut paper',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Folded papercut: a single sheet folded and cut into symmetrical lace, with the subject as a silhouette inside ornamental cutwork.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: cut from one folded sheet into a mirrored silhouette surrounded by lacy cutwork, every piece still connected.",
+      color_and_tone: 'One paper color, black or red, on a contrasting background.',
+      lighting_and_shadow: 'Light passing through the cut holes with small shadows.',
+      texture_and_material:
+        'Paper with crisp cut edges and fold line, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Symmetrical framing around a central fold, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Delicate, folkloric, careful and intricate, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Precise paper cutting with all pieces connected, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Folded Papercut Lace as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'mirror symmetry; lace cutwork; one sheet; connected pieces',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-087',
+    name: 'Rosemaling Folk Painting',
+    displayName: 'Rosemaling Folk Painting',
+    styleAnchors: ['Rosemaling Folk Painting', 'painted folk ornament', 'C and S strokes'],
+    category: '2. Artistic Mediums',
+    domain: 'painted folk ornament',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Rosemaling: Scandinavian-style decorative folk painting with C- and S-stroke scrolls and flowers on wooden objects.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: painted with flowing one-stroke brush scrolls and stylized flowers framing a simple figure, on a painted wooden object.",
+      color_and_tone: 'Deep blue, red and green grounds with cream, ochre and white strokes.',
+      lighting_and_shadow:
+        'Flat painted decoration; object surface sheen, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Oil paint strokes on painted wood with wear, visible at card size as the signature of the style.',
+      camera_and_composition: 'Decoration framed by the shape of a chest, plate or bowl.',
+      atmosphere_and_mood:
+        'Homely, festive, rustic and warm, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Confident folk brushwork, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rosemaling Folk Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'C and S strokes; scroll flowers; painted wood object',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-088',
+    name: 'Black Lacquer Miniature',
+    displayName: 'Black Lacquer Miniature',
+    styleAnchors: [
+      'Black Lacquer Miniature',
+      'lacquer box miniature painting',
+      'black lacquer ground',
+    ],
+    category: '2. Artistic Mediums',
+    domain: 'lacquer box miniature painting',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Black lacquer miniature: a tiny, jewel-bright fairy-tale painting on a glossy black lacquer box with fine gold detail.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: painted in miniature with tiny brushes on deep black lacquer, figures elongated and graceful, fine gold highlights and ornamental borders.",
+      color_and_tone: 'Glossy black with jewel reds, greens, and fine gold.',
+      lighting_and_shadow:
+        'Glossy lacquer reflections; painted light, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Mirror-smooth lacquer and fine gold lines, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Box lid composition with ornate gold border, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Fairy-tale, precious, delicate and enchanted, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Extremely fine miniature painting, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Black Lacquer Miniature as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'black lacquer ground; tiny figures; gold detail; ornate border',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-089',
+    name: 'Rorschach Ink Blot',
+    displayName: 'Rorschach Ink Blot',
+    styleAnchors: ['Rorschach Ink Blot', 'symmetric ink blot', 'mirror symmetry'],
+    category: '2. Artistic Mediums',
+    domain: 'symmetric ink blot',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Rorschach ink blot: ink pressed between a folded sheet so the subject appears as a symmetrical blot with organic edges.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: suggested by a mirrored ink blot: pooled blacks, feathered edges and accidental forms that hint at the subject.",
+      color_and_tone: 'Black ink on white, sometimes with a red accent.',
+      lighting_and_shadow:
+        'No lighting; flat ink, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Absorbent paper, pooled and feathered ink, fold line, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Symmetric framing around a vertical fold, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Uncanny, psychological, ambiguous and eerie, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Authentic blot with clean symmetry, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rorschach Ink Blot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'mirror symmetry; pooled ink; feathered edges; fold line',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-090',
+    name: 'Pressed Flower Collage',
+    displayName: 'Pressed Flower Collage',
+    styleAnchors: ['Pressed Flower Collage', 'dried botanical collage', 'pressed petals'],
+    category: '2. Artistic Mediums',
+    domain: 'dried botanical collage',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pressed flower collage: the subject composed from flattened dried petals, leaves and ferns glued on paper.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: assembled from pressed petals, leaves, stems and seeds, each keeping its real shape and vein detail.",
+      color_and_tone: 'Faded petal colors: dusty rose, violet, brown and olive.',
+      lighting_and_shadow:
+        'Soft flat light, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Translucent dried petals and leaf veins on paper, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Frame or album page with the subject centered, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Nostalgic, delicate, quiet and melancholy, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Careful botanical collage, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pressed Flower Collage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'pressed petals; leaf veins; dried stems; paper page',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-091',
+    name: 'Hooked Rug',
+    displayName: 'Hooked Rug',
+    styleAnchors: ['Hooked Rug', 'hooked wool textile', 'wool loops'],
+    category: '2. Artistic Mediums',
+    domain: 'hooked wool textile',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Hooked rug: the subject made from loops of wool strips pulled through burlap.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: filled with rows of wool loops following the shapes, with simple outlines and flat color areas.",
+      color_and_tone: 'Muted wool colors: rust, navy, mustard, cream and black.',
+      lighting_and_shadow:
+        'Soft light on wool loops, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Wool loops, burlap edges and uneven rows, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Rug-shaped framing with a border, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Cozy, folk, homely and warm, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Handmade textile with visible loops, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hooked Rug as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'wool loops; burlap; flat colors; rug border',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-092',
+    name: 'Diamond-Point Glass Engraving',
+    displayName: 'Diamond-Point Glass Engraving',
+    styleAnchors: ['Diamond-Point Glass Engraving', 'engraved glass', 'frosted marks'],
+    category: '2. Artistic Mediums',
+    domain: 'engraved glass',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Diamond-point glass engraving: the subject scratched and stippled as frosty white marks into clear glass.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: engraved into clear glass with fine scratched lines and stipple dots, the image appearing as frosted white against dark.",
+      color_and_tone: 'Frosted white on clear glass over a dark background.',
+      lighting_and_shadow:
+        'Light catching the engraved marks, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Clear glass with frosted scratches and stipple, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Object framing: goblet, window pane or glass panel, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Delicate, elegant, cold and refined, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Fine precise engraving, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Diamond-Point Glass Engraving as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'frosted marks; stipple; clear glass; dark backdrop',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-093',
+    name: 'Punched Tin Lantern',
+    displayName: 'Punched Tin Lantern',
+    styleAnchors: ['Punched Tin Lantern', 'pierced metal lantern', 'punched holes'],
+    category: '2. Artistic Mediums',
+    domain: 'pierced metal lantern',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Punched tin: the subject drawn as patterns of punched holes in a tin lantern or panel, glowing from a candle inside.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: drawn only with rows of punched holes and slits in tin, glowing as dots of light when lit from inside.",
+      color_and_tone:
+        'Dark tin with warm candle dots of light, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Candle inside casting dot patterns on walls, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Tin, punched holes and rust, visible at card size as the signature of the style.',
+      camera_and_composition: 'Lantern or panel framing with light patterns around it.',
+      atmosphere_and_mood:
+        'Folk, cozy, mysterious and warm, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Crafted pierced metal, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Punched Tin Lantern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'punched holes; candle light dots; tin; rust',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-094',
+    name: 'Pastiglia Gilded Gesso',
+    displayName: 'Pastiglia Gilded Gesso',
+    styleAnchors: ['Pastiglia Gilded Gesso', 'raised gilded gesso', 'raised gesso'],
+    category: '2. Artistic Mediums',
+    domain: 'raised gilded gesso',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pastiglia: raised gesso relief patterns gilded with gold leaf, framing painted figures on a panel.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: built up in low relief gesso, gilded and punched with tool patterns, with small painted figures set into the gold.",
+      color_and_tone:
+        'Gold with deep red, blue and earth pigments, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Gold catching light unevenly on raised relief, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Gold leaf, gesso relief, punch marks and craquelure, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Panel or box framing with ornamental gilded border, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Sacred, precious, medieval and rich, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Refined gilded craft, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pastiglia Gilded Gesso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'raised gesso; gold leaf; punched patterns; craquelure',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-095',
+    name: 'Oil on Copper Panel',
+    displayName: 'Oil on Copper Panel',
+    styleAnchors: ['Oil on Copper Panel', 'oil painting on copper', 'copper support'],
+    category: '2. Artistic Mediums',
+    domain: 'oil painting on copper',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Oil on copper: a small, glassy, extremely smooth oil painting on a copper plate, with jewel-like color.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: painted in thin smooth oil glazes on copper, fine detail and no canvas texture, small cabinet-picture scale.",
+      color_and_tone: 'Jewel-like saturated color with warm copper glow in thin areas.',
+      lighting_and_shadow:
+        'Theatrical lighting with glowing highlights, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Smooth enamel-like paint, copper edge visible, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Small cabinet-picture framing, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Precious, intimate, dramatic and old, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Glassy fine oil painting, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oil on Copper Panel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'copper support; smooth glazes; jewel color; small scale',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

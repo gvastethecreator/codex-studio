@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP11-026
 packId: pack_11
-name: Aerosol Velocity Layering
+name: Freehand Aerosol Layering
 category: 2. Artistic Mediums
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,65 +12,22 @@ tags:
   - miscellaneous-and-fun
   - artistic-mediums
 visualDna:
-  aesthetic: >-
-    Aerosol Velocity Layering operates as a portable source-router layer: combine Aerosol markmaking
-    system with overpainted speed, cap-pressure variation, graphic rebellion, and layered surface
-    memory with manual medium logic with mark discipline, process texture, graphic reduction, and
-    authored surface treatment, so the preset supplies visual behavior rather than a fixed card
-    scene or literal sample.
-  subject_treatment: >-
-    Preserve the prompt's subject plus requested motion and context while letting forms draw, print,
-    stitch, spray, glaze, outline, cut, layer, or illuminate through Fat-cap fills, skinny-cap cuts,
-    overspray halos, drips, stencil interrupts, tag-like motion trails, scuffed outline collisions;
-    identity stays readable through construction grammar, proportion, edge logic, and detail scale
-    as this preset is applied.
-  color_and_tone: >-
-    Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread
-    color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette
-    behavior attached to the subject's forms instead of pasted decoration.
-  lighting_and_shadow: >-
-    Use Flat flash-like visibility with wet-paint glints, grazing texture light, and saturated color
-    punch plus surface-aware illumination that reveals pigment body, glass translucency, chalk haze,
-    spray mist, or print layers as the light-response contract, with readable hierarchy, controlled
-    contact detail, and no lighting choice that erases the user's requested content.
-  texture_and_material: >-
-    Render Powdery overspray, glossy wet paint, scratched base surface, stencil edge dust, aerosol
-    speckle fields plus mark residue, substrate grain, lead came, screen ink, sprayed overspray,
-    needlework, and hand-built edges; surface scale, residue, gloss, grain, fiber, pores, edges, or
-    signal artifacts must remain coherent across figures, objects, and environments.
-  camera_and_composition: >-
-    Compose with Spray drift, drip gravity, edge bloom, stencil offsets, overlapping tag gestures,
-    pressure-fade depth plus graphic spacing, panel division, emblem balance, handmade alignment,
-    and medium-specific rhythm as reusable framing grammar, allowing cards, portraits, objects,
-    scenes, and abstract prompts to inherit the style without one required layout.
-  atmosphere_and_mood: >-
-    Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and
-    object presence; the emotional tone should feel specific to Aerosol Velocity Layering while
-    still obeying the prompt's subject and context.
-  rendering_and_quality: >-
-    Finish with legible medium identity, crisp material boundary, intentional artifacts, and no
-    generic illustration filler; prioritize clean style recognition, prompt preservation, controlled
-    detail, and a finished image with no watermark, fake text, or accidental UI.
-  key_features: >-
-    Aerosol markmaking system with overpainted speed, cap-pressure variation, graphic rebellion, and
-    layered surface memory; Fat-cap fills, skinny-cap cuts, overspray halos, drips, stencil
-    interrupts, tag-like motion trails, scuffed outline collisions; Powdery overspray, glossy wet
-    paint, scratched base surface, stencil edge dust, aerosol speckle fields; Flat flash-like
-    visibility with wet-paint glints, grazing texture light, and saturated color punch; Spray drift,
-    drip gravity, edge bloom, stencil offsets, overlapping tag gestures, pressure-fade depth
-  creative_brief: >-
-    Use Aerosol Velocity Layering after prompt X as a transferable style layer: prompt X supplies
-    subject, action, and setting, while the preset supplies Aerosol markmaking system with
-    overpainted speed, cap-pressure variation, graphic rebellion, and layered surface memory,
-    Fat-cap fills, skinny-cap cuts, overspray halos, drips, stencil interrupts, tag-like motion
-    trails, scuffed outline collisions, Powdery overspray, glossy wet paint, scratched base surface,
-    stencil edge dust, aerosol speckle fields, Flat flash-like visibility with wet-paint glints,
-    grazing texture light, and saturated color punch, Spray drift, drip gravity, edge bloom, stencil
-    offsets, overlapping tag gestures, pressure-fade depth plus stroke direction, pigment edge,
-    stencil separation, lead structure, fabric or print registration, and clearly expressed hand
-    process, palette behavior, light response, material treatment, and finish discipline without
-    requiring one specimen, prop bundle, product still, or card composition.
+  aesthetic: 'Freehand aerosol painting: the subject built up in layers of spray paint, with soft overspray, crisp fade edges and drips.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: painted freehand in stacked spray layers: soft fades, hard cap-lines for detail, overspray halos and a few drips."
+  color_and_tone: Bold spray colors over grey concrete or brick, used consistently across subject and background.
+  lighting_and_shadow: 'Light is painted: bright fades and dark outline shadows.'
+  texture_and_material: Spray grain, overspray halos, drips and wall texture, visible at card size as the signature of the style.
+  camera_and_composition: Mural framing on a wall with the subject large.
+  atmosphere_and_mood: Rebellious, energetic, loud and urban, driven by the construction, color and rhythm.
+  rendering_and_quality: Skilled freehand spray mural, with clean, deliberate marks and no accidental noise.
+  key_features: spray fades; cap lines; drips; overspray; wall texture
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Freehand Aerosol Layering as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
   - brush strokes
   - clean
   - generic digital painting
@@ -81,13 +38,16 @@ avoidRules:
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-026.webp
 attributes:
-  negativePrompt: >-
-    brush strokes, clean, generic digital painting, flat vector shortcut, lost medium texture, fixed
-    specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brush strokes, clean, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
@@ -101,3 +61,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Freehand Aerosol Layering
+styleAnchors:
+  - Freehand Aerosol Layering

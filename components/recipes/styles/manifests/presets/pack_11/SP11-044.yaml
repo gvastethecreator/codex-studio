@@ -3,7 +3,7 @@ id: SP11-044
 packId: pack_11
 name: Silkscreen Icon Impact
 category: 2. Artistic Mediums
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,66 +12,23 @@ tags:
   - miscellaneous-and-fun
   - artistic-mediums
 visualDna:
-  aesthetic: >-
-    Silkscreen Icon Impact operates as a portable source-router layer: combine Pop silkscreen impact
-    system using mechanical reproduction, celebrity-scale flatness, commodity color, and graphic
-    repetition with manual medium logic with mark discipline, process texture, graphic reduction,
-    and authored surface treatment, so the preset supplies visual behavior rather than a fixed card
-    scene or literal sample.
-  subject_treatment: >-
-    Preserve the prompt's subject plus requested motion and context while letting forms draw, print,
-    stitch, spray, glaze, outline, cut, layer, or illuminate through Ben-Day dots, thick contour
-    separation, screen-registration offsets, posterized planes, repeated frame logic; identity stays
-    readable through construction grammar, proportion, edge logic, and detail scale as this preset
-    is applied.
-  color_and_tone: >-
-    Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread
-    color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette
-    behavior attached to the subject's forms instead of pasted decoration.
-  lighting_and_shadow: >-
-    Use Flattened print light with almost no modeled depth, hard color field contrast, and
-    ink-density emphasis plus surface-aware illumination that reveals pigment body, glass
-    translucency, chalk haze, spray mist, or print layers as the light-response contract, with
-    readable hierarchy, controlled contact detail, and no lighting choice that erases the user's
-    requested content.
-  texture_and_material: >-
-    Render Screenprint ink, paper tooth, halftone grain, misregistration edges, cheap poster gloss
-    plus mark residue, substrate grain, lead came, screen ink, sprayed overspray, needlework, and
-    hand-built edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts
-    must remain coherent across figures, objects, and environments.
-  camera_and_composition: >-
-    Compose with Color-channel offset, serial repetition, halftone scale shifts, cropped icon
-    flattening, print misalignment plus graphic spacing, panel division, emblem balance, handmade
-    alignment, and medium-specific rhythm as reusable framing grammar, allowing cards, portraits,
-    objects, scenes, and abstract prompts to inherit the style without one required layout.
-  atmosphere_and_mood: >-
-    Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and
-    object presence; the emotional tone should feel specific to Silkscreen Icon Impact while still
-    obeying the prompt's subject and context.
-  rendering_and_quality: >-
-    Finish with legible medium identity, crisp material boundary, intentional artifacts, and no
-    generic illustration filler; prioritize clean style recognition, prompt preservation, controlled
-    detail, and a finished image with no watermark, fake text, or accidental UI.
-  key_features: >-
-    Pop silkscreen impact system using mechanical reproduction, celebrity-scale flatness, commodity
-    color, and graphic repetition; Ben-Day dots, thick contour separation, screen-registration
-    offsets, posterized planes, repeated frame logic; Screenprint ink, paper tooth, halftone grain,
-    misregistration edges, cheap poster gloss; Flattened print light with almost no modeled depth,
-    hard color field contrast, and ink-density emphasis; Color-channel offset, serial repetition,
-    halftone scale shifts, cropped icon flattening, print misalignment
-  creative_brief: >-
-    Use Silkscreen Icon Impact after prompt X as a transferable style layer: prompt X supplies
-    subject, action, and setting, while the preset supplies Pop silkscreen impact system using
-    mechanical reproduction, celebrity-scale flatness, commodity color, and graphic repetition,
-    Ben-Day dots, thick contour separation, screen-registration offsets, posterized planes, repeated
-    frame logic, Screenprint ink, paper tooth, halftone grain, misregistration edges, cheap poster
-    gloss, Flattened print light with almost no modeled depth, hard color field contrast, and
-    ink-density emphasis, Color-channel offset, serial repetition, halftone scale shifts, cropped
-    icon flattening, print misalignment plus stroke direction, pigment edge, stencil separation,
-    lead structure, fabric or print registration, and clearly expressed hand process, palette
-    behavior, light response, material treatment, and finish discipline without requiring one
-    specimen, prop bundle, product still, or card composition.
+  aesthetic: 'Pop silkscreen: the subject as a flat screen print in loud commodity colors, sometimes repeated in a grid with off-register color.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: flattened into high-contrast photographic shadows printed over flat color blocks, with slightly misregistered color layers."
+  color_and_tone: 'Loud flat colors: hot pink, acid yellow, turquoise and black.'
+  lighting_and_shadow: Harsh flash contrast reduced to black shapes, expressed through the style rather than photographic lighting.
+  texture_and_material: Silkscreen ink, off-register edges and flat paper, visible at card size as the signature of the style.
+  camera_and_composition: Single frontal panel or a grid of repeats in different colorways.
+  atmosphere_and_mood: Bold, ironic, graphic and cool, driven by the construction, color and rhythm.
+  rendering_and_quality: Clean silkscreen print with deliberate misregistration, with clean, deliberate marks and no accidental noise.
+  key_features: flat color blocks; black photo shadows; off-register; repeat grid
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Silkscreen Icon Impact as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real celebrity likeness
   - subtle
   - generic digital painting
   - flat vector shortcut
@@ -81,13 +38,16 @@ avoidRules:
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-044.webp
 attributes:
-  negativePrompt: >-
-    subtle, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen,
-    literal card scene, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real celebrity likeness, subtle, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

@@ -3,7 +3,7 @@
     {
       "id": "pack_11",
       "name": "Miscellaneous & Fun",
-      "presetCount": 82
+      "presetCount": 95
     }
   ],
   "presets": [
@@ -292,7 +292,8 @@
     },
     {
       "id": "SP11-019",
-      "name": "Felt Signal Handmade Broadcast",
+      "name": "Felt Puppet Broadcast",
+      "styleAnchors": ["Felt Puppet Broadcast"],
       "ref": "pack_11/SP11-019.yaml",
       "packId": "pack_11",
       "packName": "Miscellaneous & Fun",
@@ -300,11 +301,12 @@
       "categoryName": "2. Artistic Mediums",
       "tags": ["miscellaneous-and-fun", "artistic-mediums"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp11-019 felt signal handmade broadcast 2. artistic mediums specialist illustration pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums"
+      "searchableText": "sp11-019 felt puppet broadcast 2. artistic mediums specialist illustration pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums"
     },
     {
       "id": "SP11-026",
-      "name": "Aerosol Velocity Layering",
+      "name": "Freehand Aerosol Layering",
+      "styleAnchors": ["Freehand Aerosol Layering"],
       "ref": "pack_11/SP11-026.yaml",
       "packId": "pack_11",
       "packName": "Miscellaneous & Fun",
@@ -312,11 +314,12 @@
       "categoryName": "2. Artistic Mediums",
       "tags": ["miscellaneous-and-fun", "artistic-mediums"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp11-026 aerosol velocity layering 2. artistic mediums specialist illustration pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums"
+      "searchableText": "sp11-026 freehand aerosol layering 2. artistic mediums specialist illustration pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums"
     },
     {
       "id": "SP11-028",
-      "name": "Gas-Tube Halo Typography",
+      "name": "Gas-Tube Halo Contours",
+      "styleAnchors": ["Gas-Tube Halo Contours"],
       "ref": "pack_11/SP11-028.yaml",
       "packId": "pack_11",
       "packName": "Miscellaneous & Fun",
@@ -324,7 +327,7 @@
       "categoryName": "2. Artistic Mediums",
       "tags": ["miscellaneous-and-fun", "artistic-mediums"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp11-028 gas-tube halo typography 2. artistic mediums specialist illustration pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums"
+      "searchableText": "sp11-028 gas-tube halo contours 2. artistic mediums specialist illustration pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums"
     },
     {
       "id": "SP11-044",
@@ -337,6 +340,192 @@
       "tags": ["miscellaneous-and-fun", "artistic-mediums"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp11-044 silkscreen icon impact 2. artistic mediums specialist illustration pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums"
+    },
+    {
+      "id": "SP11-083",
+      "name": "Pyrography Woodburning",
+      "styleAnchors": ["Pyrography Woodburning", "wood burning drawing", "burned lines"],
+      "ref": "pack_11/SP11-083.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "artistic-mediums",
+      "categoryName": "2. Artistic Mediums",
+      "domain": "wood burning drawing",
+      "tags": ["miscellaneous-and-fun", "artistic-mediums", "wood-burning-drawing"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-083 pyrography woodburning wood burning drawing burned lines 2. artistic mediums specialist illustration wood burning drawing pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums wood-burning-drawing"
+    },
+    {
+      "id": "SP11-084",
+      "name": "Scrimshaw Engraving",
+      "styleAnchors": ["Scrimshaw Engraving", "engraved bone and ink", "scratched lines"],
+      "ref": "pack_11/SP11-084.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "artistic-mediums",
+      "categoryName": "2. Artistic Mediums",
+      "domain": "engraved bone and ink",
+      "tags": ["miscellaneous-and-fun", "artistic-mediums", "engraved-bone-and-ink"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-084 scrimshaw engraving engraved bone and ink scratched lines 2. artistic mediums specialist illustration engraved bone and ink pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums engraved-bone-and-ink"
+    },
+    {
+      "id": "SP11-085",
+      "name": "Gyotaku Ink Rubbing",
+      "styleAnchors": ["Gyotaku Ink Rubbing", "fish ink print", "direct ink impression"],
+      "ref": "pack_11/SP11-085.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "artistic-mediums",
+      "categoryName": "2. Artistic Mediums",
+      "domain": "fish ink print",
+      "tags": ["miscellaneous-and-fun", "artistic-mediums", "fish-ink-print"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-085 gyotaku ink rubbing fish ink print direct ink impression 2. artistic mediums specialist illustration fish ink print pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums fish-ink-print"
+    },
+    {
+      "id": "SP11-086",
+      "name": "Folded Papercut Lace",
+      "styleAnchors": ["Folded Papercut Lace", "symmetrical cut paper", "mirror symmetry"],
+      "ref": "pack_11/SP11-086.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "artistic-mediums",
+      "categoryName": "2. Artistic Mediums",
+      "domain": "symmetrical cut paper",
+      "tags": ["miscellaneous-and-fun", "artistic-mediums", "symmetrical-cut-paper"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-086 folded papercut lace symmetrical cut paper mirror symmetry 2. artistic mediums specialist illustration symmetrical cut paper pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums symmetrical-cut-paper"
+    },
+    {
+      "id": "SP11-087",
+      "name": "Rosemaling Folk Painting",
+      "styleAnchors": ["Rosemaling Folk Painting", "painted folk ornament", "C and S strokes"],
+      "ref": "pack_11/SP11-087.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "artistic-mediums",
+      "categoryName": "2. Artistic Mediums",
+      "domain": "painted folk ornament",
+      "tags": ["miscellaneous-and-fun", "artistic-mediums", "painted-folk-ornament"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-087 rosemaling folk painting painted folk ornament c and s strokes 2. artistic mediums specialist illustration painted folk ornament pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums painted-folk-ornament"
+    },
+    {
+      "id": "SP11-088",
+      "name": "Black Lacquer Miniature",
+      "styleAnchors": [
+        "Black Lacquer Miniature",
+        "lacquer box miniature painting",
+        "black lacquer ground"
+      ],
+      "ref": "pack_11/SP11-088.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "artistic-mediums",
+      "categoryName": "2. Artistic Mediums",
+      "domain": "lacquer box miniature painting",
+      "tags": ["miscellaneous-and-fun", "artistic-mediums", "lacquer-box-miniature-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-088 black lacquer miniature lacquer box miniature painting black lacquer ground 2. artistic mediums specialist illustration lacquer box miniature painting pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums lacquer-box-miniature-painting"
+    },
+    {
+      "id": "SP11-089",
+      "name": "Rorschach Ink Blot",
+      "styleAnchors": ["Rorschach Ink Blot", "symmetric ink blot", "mirror symmetry"],
+      "ref": "pack_11/SP11-089.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "artistic-mediums",
+      "categoryName": "2. Artistic Mediums",
+      "domain": "symmetric ink blot",
+      "tags": ["miscellaneous-and-fun", "artistic-mediums", "symmetric-ink-blot"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-089 rorschach ink blot symmetric ink blot mirror symmetry 2. artistic mediums specialist illustration symmetric ink blot pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums symmetric-ink-blot"
+    },
+    {
+      "id": "SP11-090",
+      "name": "Pressed Flower Collage",
+      "styleAnchors": ["Pressed Flower Collage", "dried botanical collage", "pressed petals"],
+      "ref": "pack_11/SP11-090.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "artistic-mediums",
+      "categoryName": "2. Artistic Mediums",
+      "domain": "dried botanical collage",
+      "tags": ["miscellaneous-and-fun", "artistic-mediums", "dried-botanical-collage"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-090 pressed flower collage dried botanical collage pressed petals 2. artistic mediums specialist illustration dried botanical collage pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums dried-botanical-collage"
+    },
+    {
+      "id": "SP11-091",
+      "name": "Hooked Rug",
+      "styleAnchors": ["Hooked Rug", "hooked wool textile", "wool loops"],
+      "ref": "pack_11/SP11-091.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "artistic-mediums",
+      "categoryName": "2. Artistic Mediums",
+      "domain": "hooked wool textile",
+      "tags": ["miscellaneous-and-fun", "artistic-mediums", "hooked-wool-textile"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-091 hooked rug hooked wool textile wool loops 2. artistic mediums specialist illustration hooked wool textile pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums hooked-wool-textile"
+    },
+    {
+      "id": "SP11-092",
+      "name": "Diamond-Point Glass Engraving",
+      "styleAnchors": ["Diamond-Point Glass Engraving", "engraved glass", "frosted marks"],
+      "ref": "pack_11/SP11-092.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "artistic-mediums",
+      "categoryName": "2. Artistic Mediums",
+      "domain": "engraved glass",
+      "tags": ["miscellaneous-and-fun", "artistic-mediums", "engraved-glass"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-092 diamond-point glass engraving engraved glass frosted marks 2. artistic mediums specialist illustration engraved glass pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums engraved-glass"
+    },
+    {
+      "id": "SP11-093",
+      "name": "Punched Tin Lantern",
+      "styleAnchors": ["Punched Tin Lantern", "pierced metal lantern", "punched holes"],
+      "ref": "pack_11/SP11-093.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "artistic-mediums",
+      "categoryName": "2. Artistic Mediums",
+      "domain": "pierced metal lantern",
+      "tags": ["miscellaneous-and-fun", "artistic-mediums", "pierced-metal-lantern"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-093 punched tin lantern pierced metal lantern punched holes 2. artistic mediums specialist illustration pierced metal lantern pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums pierced-metal-lantern"
+    },
+    {
+      "id": "SP11-094",
+      "name": "Pastiglia Gilded Gesso",
+      "styleAnchors": ["Pastiglia Gilded Gesso", "raised gilded gesso", "raised gesso"],
+      "ref": "pack_11/SP11-094.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "artistic-mediums",
+      "categoryName": "2. Artistic Mediums",
+      "domain": "raised gilded gesso",
+      "tags": ["miscellaneous-and-fun", "artistic-mediums", "raised-gilded-gesso"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-094 pastiglia gilded gesso raised gilded gesso raised gesso 2. artistic mediums specialist illustration raised gilded gesso pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums raised-gilded-gesso"
+    },
+    {
+      "id": "SP11-095",
+      "name": "Oil on Copper Panel",
+      "styleAnchors": ["Oil on Copper Panel", "oil painting on copper", "copper support"],
+      "ref": "pack_11/SP11-095.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "artistic-mediums",
+      "categoryName": "2. Artistic Mediums",
+      "domain": "oil painting on copper",
+      "tags": ["miscellaneous-and-fun", "artistic-mediums", "oil-painting-on-copper"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-095 oil on copper panel oil painting on copper copper support 2. artistic mediums specialist illustration oil painting on copper pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums oil-painting-on-copper"
     },
     {
       "id": "SP11-009",
@@ -999,5 +1188,5 @@
       "searchableText": "sp11-033 blueprint 7. diagram and technical drawing blueprint drawing pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing"
     }
   ],
-  "totalPresetCount": 82
+  "totalPresetCount": 95
 }

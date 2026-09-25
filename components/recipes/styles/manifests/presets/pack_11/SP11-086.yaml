@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP11-086
+packId: pack_11
+name: Folded Papercut Lace
+styleAnchors:
+  - Folded Papercut Lace
+  - symmetrical cut paper
+  - mirror symmetry
+displayName: Folded Papercut Lace
+category: 2. Artistic Mediums
+domain: symmetrical cut paper
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - artistic-mediums
+  - papercut
+  - symmetry
+  - medium
+visualDna:
+  aesthetic: 'Folded papercut: a single sheet folded and cut into symmetrical lace, with the subject as a silhouette inside ornamental cutwork.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: cut from one folded sheet into a mirrored silhouette surrounded by lacy cutwork, every piece still connected."
+  color_and_tone: One paper color, black or red, on a contrasting background.
+  lighting_and_shadow: Light passing through the cut holes with small shadows.
+  texture_and_material: Paper with crisp cut edges and fold line, visible at card size as the signature of the style.
+  camera_and_composition: Symmetrical framing around a central fold, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Delicate, folkloric, careful and intricate, driven by the construction, color and rhythm.
+  rendering_and_quality: Precise paper cutting with all pieces connected, with clean, deliberate marks and no accidental noise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Folded Papercut Lace as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: mirror symmetry; lace cutwork; one sheet; connected pieces
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_11
+  packName: Miscellaneous & Fun
+  categoryId: artistic-mediums
+  categoryName: 2. Artistic Mediums
+  tags:
+    - miscellaneous-and-fun
+    - artistic-mediums
+    - papercut
+    - symmetry
+    - medium
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: symmetrical cut paper

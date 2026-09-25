@@ -3,7 +3,7 @@ id: SP11-006
 packId: pack_11
 name: Chalkboard Art
 category: 2. Artistic Mediums
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,59 +12,22 @@ tags:
   - miscellaneous-and-fun
   - artistic-mediums
 visualDna:
-  aesthetic: >-
-    Chalkboard Art operates as a portable source-router layer: combine Chalkboard drawing language
-    on dark slate surfaces with manual medium logic with mark discipline, process texture, graphic
-    reduction, and authored surface treatment, so the preset supplies visual behavior rather than a
-    fixed card scene or literal sample.
-  subject_treatment: >-
-    Preserve the prompt's subject plus requested motion and context while letting forms draw, print,
-    stitch, spray, glaze, outline, cut, layer, or illuminate through Chalk dust, variable thickness,
-    smudged contours, broken strokes, re-drawn corrections; identity stays readable through
-    construction grammar, proportion, edge logic, and detail scale as this preset is applied.
-  color_and_tone: >-
-    Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread
-    color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette
-    behavior attached to the subject's forms instead of pasted decoration.
-  lighting_and_shadow: >-
-    Use Flat, even overhead fluorescents, no glare, diffused ambient plus surface-aware illumination
-    that reveals pigment body, glass translucency, chalk haze, spray mist, or print layers as the
-    light-response contract, with readable hierarchy, controlled contact detail, and no lighting
-    choice that erases the user's requested content.
-  texture_and_material: >-
-    Render Slate grain, eraser smudges, chalk dust, ghosted afterimages, rough tooth plus mark
-    residue, substrate grain, lead came, screen ink, sprayed overspray, needlework, and hand-built
-    edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must
-    remain coherent across figures, objects, and environments.
-  camera_and_composition: >-
-    Compose with Hand-drawn imperfections, slightly tilted lettering, uneven scale, organic spacing
-    plus graphic spacing, panel division, emblem balance, handmade alignment, and medium-specific
-    rhythm as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract
-    prompts to inherit the style without one required layout.
-  atmosphere_and_mood: >-
-    Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and
-    object presence; the emotional tone should feel specific to Chalkboard Art while still obeying
-    the prompt's subject and context.
-  rendering_and_quality: >-
-    Finish with legible medium identity, crisp material boundary, intentional artifacts, and no
-    generic illustration filler; prioritize clean style recognition, prompt preservation, controlled
-    detail, and a finished image with no watermark, fake text, or accidental UI.
-  key_features: >-
-    Chalkboard drawing language on dark slate surfaces; Chalk dust, variable thickness, smudged
-    contours, broken strokes, re-drawn corrections; Slate grain, eraser smudges, chalk dust, ghosted
-    afterimages, rough tooth; Flat, even overhead fluorescents, no glare, diffused ambient;
-    Hand-drawn imperfections, slightly tilted lettering, uneven scale, organic spacing
-  creative_brief: >-
-    Use Chalkboard Art after prompt X as a transferable style layer: prompt X supplies subject,
-    action, and setting, while the preset supplies Chalkboard drawing language on dark slate
-    surfaces, Chalk dust, variable thickness, smudged contours, broken strokes, re-drawn
-    corrections, Slate grain, eraser smudges, chalk dust, ghosted afterimages, rough tooth, Flat,
-    even overhead fluorescents, no glare, diffused ambient, Hand-drawn imperfections, slightly
-    tilted lettering, uneven scale, organic spacing plus stroke direction, pigment edge, stencil
-    separation, lead structure, fabric or print registration, and clearly expressed hand process,
-    palette behavior, light response, material treatment, and finish discipline without requiring
-    one specimen, prop bundle, product still, or card composition.
+  aesthetic: 'Chalkboard art: colored-chalk illustration on a black slate board, like a hand-drawn tavern or café board, with bold outlines and drop shadows.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: drawn in white and colored chalk on black slate with bold outlines, side-of-chalk shading and simple drop shadows; decorative borders and flourishes frame it but carry no words."
+  color_and_tone: Black-green slate with chalk white, dusty pastel red, yellow, teal and pink.
+  lighting_and_shadow: Flat light; tone comes from chalk pressure and smudge.
+  texture_and_material: Chalk dust, smudges, eraser ghosts of earlier drawings and slate grain.
+  camera_and_composition: Board-shaped framing with the subject centered and ornamental corners.
+  atmosphere_and_mood: Handmade, homely, charming and a little dusty, driven by the construction, color and rhythm.
+  rendering_and_quality: Chalk illustration with confident strokes and visible erasures, with clean, deliberate marks and no accidental noise.
+  key_features: colored chalk on slate; drop shadows; ornamental flourishes; eraser ghosts
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chalkboard Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
   - paper
   - ink
   - digital
@@ -76,13 +39,16 @@ avoidRules:
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-006.webp
 attributes:
-  negativePrompt: >-
-    paper, ink, digital, generic digital painting, flat vector shortcut, lost medium texture, fixed
-    specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, paper, ink, digital, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

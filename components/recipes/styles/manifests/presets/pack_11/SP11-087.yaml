@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP11-087
+packId: pack_11
+name: Rosemaling Folk Painting
+styleAnchors:
+  - Rosemaling Folk Painting
+  - painted folk ornament
+  - C and S strokes
+displayName: Rosemaling Folk Painting
+category: 2. Artistic Mediums
+domain: painted folk ornament
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - artistic-mediums
+  - rosemaling
+  - folk-art
+  - medium
+visualDna:
+  aesthetic: 'Rosemaling: Scandinavian-style decorative folk painting with C- and S-stroke scrolls and flowers on wooden objects.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: painted with flowing one-stroke brush scrolls and stylized flowers framing a simple figure, on a painted wooden object."
+  color_and_tone: Deep blue, red and green grounds with cream, ochre and white strokes.
+  lighting_and_shadow: Flat painted decoration; object surface sheen, expressed through the style rather than photographic lighting.
+  texture_and_material: Oil paint strokes on painted wood with wear, visible at card size as the signature of the style.
+  camera_and_composition: Decoration framed by the shape of a chest, plate or bowl.
+  atmosphere_and_mood: Homely, festive, rustic and warm, driven by the construction, color and rhythm.
+  rendering_and_quality: Confident folk brushwork, with clean, deliberate marks and no accidental noise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rosemaling Folk Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: C and S strokes; scroll flowers; painted wood object
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_11
+  packName: Miscellaneous & Fun
+  categoryId: artistic-mediums
+  categoryName: 2. Artistic Mediums
+  tags:
+    - miscellaneous-and-fun
+    - artistic-mediums
+    - rosemaling
+    - folk-art
+    - medium
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: painted folk ornament

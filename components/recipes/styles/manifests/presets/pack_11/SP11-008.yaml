@@ -3,7 +3,7 @@ id: SP11-008
 packId: pack_11
 name: Stained Glass
 category: 2. Artistic Mediums
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,61 +12,22 @@ tags:
   - miscellaneous-and-fun
   - artistic-mediums
 visualDna:
-  aesthetic: >-
-    Stained Glass operates as a portable source-router layer: combine Stained-glass window art with
-    lead-came segmentation with manual medium logic with mark discipline, process texture, graphic
-    reduction, and authored surface treatment, so the preset supplies visual behavior rather than a
-    fixed card scene or literal sample.
-  subject_treatment: >-
-    Preserve the prompt's subject plus requested motion and context while letting forms draw, print,
-    stitch, spray, glaze, outline, cut, layer, or illuminate through Thick black lead came,
-    segmented contours, curvilinear divisions, interconnected cells; identity stays readable through
-    construction grammar, proportion, edge logic, and detail scale as this preset is applied.
-  color_and_tone: >-
-    Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread
-    color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette
-    behavior attached to the subject's forms instead of pasted decoration.
-  lighting_and_shadow: >-
-    Use Backlit, glowing, sun-through-glass radiance, interior candle warmth, beam-fall drama plus
-    surface-aware illumination that reveals pigment body, glass translucency, chalk haze, spray
-    mist, or print layers as the light-response contract, with readable hierarchy, controlled
-    contact detail, and no lighting choice that erases the user's requested content.
-  texture_and_material: >-
-    Render Glass imperfections, bubbles, rippled surface, wavy transparency, antique patina plus
-    mark residue, substrate grain, lead came, screen ink, sprayed overspray, needlework, and
-    hand-built edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts
-    must remain coherent across figures, objects, and environments.
-  camera_and_composition: >-
-    Compose with Mosaic segmentation, lead-line compartmentalization, piecemeal assembly,
-    fractured-light unity plus graphic spacing, panel division, emblem balance, handmade alignment,
-    and medium-specific rhythm as reusable framing grammar, allowing cards, portraits, objects,
-    scenes, and abstract prompts to inherit the style without one required layout.
-  atmosphere_and_mood: >-
-    Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and
-    object presence; the emotional tone should feel specific to Stained Glass while still obeying
-    the prompt's subject and context.
-  rendering_and_quality: >-
-    Finish with legible medium identity, crisp material boundary, intentional artifacts, and no
-    generic illustration filler; prioritize clean style recognition, prompt preservation, controlled
-    detail, and a finished image with no watermark, fake text, or accidental UI.
-  key_features: >-
-    Stained-glass window art with lead-came segmentation; Thick black lead came, segmented contours,
-    curvilinear divisions, interconnected cells; Glass imperfections, bubbles, rippled surface, wavy
-    transparency, antique patina; Backlit, glowing, sun-through-glass radiance, interior candle
-    warmth, beam-fall drama; Mosaic segmentation, lead-line compartmentalization, piecemeal
-    assembly, fractured-light unity
-  creative_brief: >-
-    Use Stained Glass after prompt X as a transferable style layer: prompt X supplies subject,
-    action, and setting, while the preset supplies Stained-glass window art with lead-came
-    segmentation, Thick black lead came, segmented contours, curvilinear divisions, interconnected
-    cells, Glass imperfections, bubbles, rippled surface, wavy transparency, antique patina,
-    Backlit, glowing, sun-through-glass radiance, interior candle warmth, beam-fall drama, Mosaic
-    segmentation, lead-line compartmentalization, piecemeal assembly, fractured-light unity plus
-    stroke direction, pigment edge, stencil separation, lead structure, fabric or print
-    registration, and clearly expressed hand process, palette behavior, light response, material
-    treatment, and finish discipline without requiring one specimen, prop bundle, product still, or
-    card composition.
+  aesthetic: 'Stained glass window: the subject built from colored glass pieces joined by dark lead lines and lit from behind.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: broken into colored glass pieces separated by thick dark lead came, with painted details on faces and hands."
+  color_and_tone: 'Jewel colors: ruby, cobalt, emerald, amber and clear glass.'
+  lighting_and_shadow: Strong backlight through the glass with colored light spilling onto stone.
+  texture_and_material: Glass with bubbles, ripples, painted grisaille detail and lead came.
+  camera_and_composition: Window shape such as a pointed arch or rose, the subject fitted into it.
+  atmosphere_and_mood: Sacred, luminous, solemn and grand, driven by the construction, color and rhythm.
+  rendering_and_quality: Clear stained-glass construction where every piece reads, with clean, deliberate marks and no accidental noise.
+  key_features: colored glass pieces; lead came; backlight; window shape
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stained Glass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
   - opaque
   - dull
   - painting
@@ -78,13 +39,16 @@ avoidRules:
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-008.webp
 attributes:
-  negativePrompt: >-
-    opaque, dull, painting, generic digital painting, flat vector shortcut, lost medium texture,
-    fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, opaque, dull, painting, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

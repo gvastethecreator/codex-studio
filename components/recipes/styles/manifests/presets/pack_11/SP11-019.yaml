@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP11-019
 packId: pack_11
-name: Felt Signal Handmade Broadcast
+name: Felt Puppet Broadcast
 category: 2. Artistic Mediums
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,68 +12,23 @@ tags:
   - miscellaneous-and-fun
   - artistic-mediums
 visualDna:
-  aesthetic: >-
-    Felt Signal Handmade Broadcast operates as a portable source-router layer: combine Handmade
-    broadcast texture system where any subject becomes soft, stitched, fuzzy, visibly operated, and
-    warmly stage-lit with manual medium logic with mark discipline, process texture, graphic
-    reduction, and authored surface treatment, so the preset supplies visual behavior rather than a
-    fixed card scene or literal sample.
-  subject_treatment: >-
-    Preserve the prompt's subject plus requested motion and context while letting forms draw, print,
-    stitch, spray, glaze, outline, cut, layer, or illuminate through Rounded cut-fabric contours,
-    sock-like volume breaks, seam-guided silhouettes, elastic wobble arcs, simplified expressive
-    geometry; identity stays readable through construction grammar, proportion, edge logic, and
-    detail scale as this preset is applied.
-  color_and_tone: >-
-    Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread
-    color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette
-    behavior attached to the subject's forms instead of pasted decoration.
-  lighting_and_shadow: >-
-    Use Friendly multi-camera studio light with soft key-fill balance, gentle rim glow, and
-    practical set warmth without requiring a stage plus surface-aware illumination that reveals
-    pigment body, glass translucency, chalk haze, spray mist, or print layers as the light-response
-    contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases
-    the user's requested content.
-  texture_and_material: >-
-    Render Felt nap, fleece fuzz, foam padding, clearly expressed stitching, brushed fabric grain,
-    handmade edge irregularity plus mark residue, substrate grain, lead came, screen ink, sprayed
-    overspray, needlework, and hand-built edges; surface scale, residue, gloss, grain, fiber, pores,
-    edges, or signal artifacts must remain coherent across figures, objects, and environments.
-  camera_and_composition: >-
-    Compose with Mouth-flap compression, rod-like gesture arcs, slight squash at joints, fabric
-    slouch, shallow theatrical depth plus graphic spacing, panel division, emblem balance, handmade
-    alignment, and medium-specific rhythm as reusable framing grammar, allowing cards, portraits,
-    objects, scenes, and abstract prompts to inherit the style without one required layout.
-  atmosphere_and_mood: >-
-    Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and
-    object presence; the emotional tone should feel specific to Felt Signal Handmade Broadcast while
-    still obeying the prompt's subject and context.
-  rendering_and_quality: >-
-    Finish with legible medium identity, crisp material boundary, intentional artifacts, and no
-    generic illustration filler; prioritize clean style recognition, prompt preservation, controlled
-    detail, and a finished image with no watermark, fake text, or accidental UI.
-  key_features: >-
-    Handmade broadcast texture system where any subject becomes soft, stitched, fuzzy, visibly
-    operated, and warmly stage-lit; Rounded cut-fabric contours, sock-like volume breaks,
-    seam-guided silhouettes, elastic wobble arcs, simplified expressive geometry; Felt nap, fleece
-    fuzz, foam padding, clearly expressed stitching, brushed fabric grain, handmade edge
-    irregularity; Friendly multi-camera studio light with soft key-fill balance, gentle rim glow,
-    and practical set warmth without requiring a stage; Mouth-flap compression, rod-like gesture
-    arcs, slight squash at joints, fabric slouch, shallow theatrical depth
-  creative_brief: >-
-    Use Felt Signal Handmade Broadcast after prompt X as a transferable style layer: prompt X
-    supplies subject, action, and setting, while the preset supplies Handmade broadcast texture
-    system where any subject becomes soft, stitched, fuzzy, visibly operated, and warmly stage-lit,
-    Rounded cut-fabric contours, sock-like volume breaks, seam-guided silhouettes, elastic wobble
-    arcs, simplified expressive geometry, Felt nap, fleece fuzz, foam padding, clearly expressed
-    stitching, brushed fabric grain, handmade edge irregularity, Friendly multi-camera studio light
-    with soft key-fill balance, gentle rim glow, and practical set warmth without requiring a stage,
-    Mouth-flap compression, rod-like gesture arcs, slight squash at joints, fabric slouch, shallow
-    theatrical depth plus stroke direction, pigment edge, stencil separation, lead structure, fabric
-    or print registration, and clearly expressed hand process, palette behavior, light response,
-    material treatment, and finish discipline without requiring one specimen, prop bundle, product
-    still, or card composition.
+  aesthetic: 'Felt puppet broadcast: the subject as a fuzzy hand puppet made of felt and fleece, performing on a small TV set.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: rebuilt as foam-and-fleece hand puppets with felt faces, ping-pong ball eyes, wide hinged mouths and visible arm rods."
+  color_and_tone: Saturated felt colors against a warm, simple TV set.
+  lighting_and_shadow: Warm studio TV lighting with soft shadows, expressed through the style rather than photographic lighting.
+  texture_and_material: Felt, fleece fuzz, visible seams and glued fabric pieces.
+  camera_and_composition: Medium TV shot at puppet height, bottom edge of the set hiding the puppeteers.
+  atmosphere_and_mood: Warm, funny, handmade and playful, driven by the construction, color and rhythm.
+  rendering_and_quality: Photographic puppet-show still with real fabric texture, with clean, deliberate marks and no accidental noise.
+  key_features: fleece puppets; ping-pong eyes; hinged mouths; arm rods; TV set
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Felt Puppet Broadcast as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real puppet character likeness
   - cgi
   - smooth
   - generic digital painting
@@ -84,13 +39,16 @@ avoidRules:
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-019.webp
 attributes:
-  negativePrompt: >-
-    cgi, smooth, generic digital painting, flat vector shortcut, lost medium texture, fixed
-    specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real puppet character likeness, cgi, smooth, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
@@ -104,3 +62,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Felt Puppet Broadcast
+styleAnchors:
+  - Felt Puppet Broadcast
