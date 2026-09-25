@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP13-079
+packId: pack_16
+name: Crusade Desert Glare Anime
+styleAnchors:
+  - Crusade Desert Glare Anime
+  - desert war anime
+  - blinding glare
+displayName: Crusade Desert Glare Anime
+category: 6. Samurai & Medieval
+domain: desert war anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - samurai-and-medieval
+  - desert
+  - glare
+  - anime
+visualDna:
+  aesthetic: 'Desert war anime bleached by glare: blinding sun, burning sand, heavy armor and thirst.'
+  subject_treatment: Keep the prompt's subject and setting; expose it to overwhelming sun, heat and glare that flatten colors.
+  color_and_tone: Blinding white and sand gold with dark blue shadows and sunburnt skin.
+  lighting_and_shadow: Overhead desert sun with bleached highlights, short hard shadows and heat shimmer.
+  texture_and_material: Hot metal, wind-blown sand, sweat and faded linen drawn with bold cel.
+  camera_and_composition: Wide desert horizons with small figures, or close faces squinting against light.
+  atmosphere_and_mood: Exhausted and scorched, faith and thirst wearing down people who are far from home.
+  rendering_and_quality: Harsh high-key anime with strong glare effects and clean silhouettes.
+  creative_brief: "Desert war anime bleached by glare: blinding sun, burning sand, heavy armor and thirst. Carry it through blinding glare, heat shimmer, sand gold, short shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: blinding glare; heat shimmer; sand gold; short shadows
+avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: samurai-and-medieval
+  categoryName: 6. Samurai & Medieval
+  tags:
+    - anime-classics-and-prestige
+    - samurai-and-medieval
+    - desert
+    - glare
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: desert war anime

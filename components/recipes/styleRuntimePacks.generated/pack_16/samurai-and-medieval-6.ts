@@ -5,157 +5,651 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-026',
-    name: 'Pre-Impact Ritual Stillness Style',
-    displayName: 'Pre-Impact Ritual Stillness',
-    styleAnchors: ['Pre-Impact Ritual Stillness Style'],
+    name: 'Pre-Strike Stillness Anime',
+    displayName: 'Pre-Strike Stillness Anime',
+    styleAnchors: ['Pre-Strike Stillness Anime'],
     category: '6. Samurai & Medieval',
     negativePrompt:
-      'photoreal, modern-firearms, sci-fi-neon, watermark, text, logo, generic samurai cosplay, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, modern-firearms, sci-fi-neon, watermark, text, logo, generic samurai cosplay, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Pre-Impact Ritual Stillness Style acts as a transferable anime-prestige router: formal rite pressure and ceremonial anime severity, alongside a pre anime direction shaped by era-aware line economy and genre tone; fuse it with prestige martial anime with restrained violence, ritual stillness, heraldic form, textile discipline, and fatal composure; it routes era, genre, line economy, cel or digital finish, and performance tone without locking prompt content to the source title or sample image.',
+        'Prestige period anime frozen in the breath before a strike: long held frames, severe composition and a single thin line of tension.',
       subject_treatment:
-        'Preserve the prompt subject, action, and context while restyling forms through poised contour, held breath, and minimal motion cues, alongside contours paced by pre tension, readable pose energy, and silhouette discipline; identity should remain readable through anime contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of a required canon character or title scene.',
+        "Keep the prompt's subject, action and setting; draw it at the instant before motion, weight settled, eyes fixed, hands resting near what they will use.",
       color_and_tone:
-        'Map color through a pre accent system held inside disciplined cel values, alongside a impact accent system held inside disciplined cel values; anchor it in slate neutrals, lacquer crimson, moonlit indigo, cedar brown, ember orange, and sparse metallic glints; keep value separation clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested content.',
+        'Slate greys, lacquer crimson and moonlit indigo with one sharp accent, mostly desaturated around a single warm point.',
       lighting_and_shadow:
-        'Use white impact flashes and hard shadow breaks, alongside a pre light logic using cel rim, glow behavior, and blocked shadow; combine it with raking lateral light, warm bounce, moonlit edges, ember glow, and selective metal highlights; shadows should read as anime light design, rims should clarify form, and glow or effects should support the prompt rather than replacing it.',
+        'Raking side light and long hard shadows, faces half in dark, a thin rim tracing the silhouette.',
       texture_and_material:
-        'Render wax, cloth, ash, lacquer, paper, and restrained blood-red marks, alongside cel paint and ink grain tuned to pre material contrast; anchor surfaces in woven cloth, lacquer, cedar grain, stone moisture, ash, polished metal, and restrained ink texture; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments, action, and abstractions.',
+        'Clean cel with fine ink line, woven cloth folds and lacquer gloss kept sparse and controlled.',
       camera_and_composition:
-        'Frame around withheld-motion setup and pre-impact pause, alongside impact bursts, recoil spacing, and force-balanced cuts and rite intervals, axial pauses, and symbolic repetition, then extend it with axial pressure, ritual asymmetry, pre-impact spacing, heraldic diagonals, and calm negative space; the style should support portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed card layout.',
+        'Wide static frames with large empty space, or extreme close-ups on eyes and hands, nothing moving yet.',
       atmosphere_and_mood:
-        'Carry mood through breath control before release, alongside violent punctuation without gore dependency and taboo formality and controlled spiritual pressure; braid it with discipline, pre-impact breath, fatal code, sacred vow, controlled pressure, and quiet aftermath; the preset can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.',
+        'Silent, tense and ceremonial, like a held breath just before something fatal happens.',
       rendering_and_quality:
-        'Finish with clean anime finishing that keeps pre identity readable without noisy denoise, alongside clean anime finishing that keeps impact identity readable without noisy denoise; enforce high-fidelity martial anime finish with calm contour clarity, micro-contrast, and zero ornamental clutter; prioritize clean denoise, stable anatomy or object structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or 3D-render drift.',
-      key_features:
-        'formal rite pressure and ceremonial anime severity, alongside a pre anime direction shaped by era-aware line economy and genre tone; poised contour, held breath, and minimal motion cues, alongside contours paced by pre tension, readable pose energy, and silhouette discipline; wax, cloth, ash, lacquer, paper, and restrained blood-red marks, alongside cel paint and ink grain tuned to pre material contrast; white impact flashes and hard shadow breaks, alongside a pre light logic using cel rim, glow behavior, and blocked shadow; withheld-motion setup and pre-impact pause, alongside impact bursts, recoil spacing, and force-balanced cuts and rite intervals, axial pauses, and symbolic repetition',
+        'Theatrical prestige anime key frame with precise line weight and restrained effects.',
+      key_features: 'held breath; empty space; raking light; eye and hand close-ups',
       creative_brief:
-        'Apply Pre-Impact Ritual Stillness Style after prompt X as a transferable anime-prestige layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies formal rite pressure and ceremonial anime severity, alongside a pre anime direction shaped by era-aware line economy and genre tone, alongside poised contour, held breath, and minimal motion cues, alongside contours paced by pre tension, readable pose energy, and silhouette discipline; a pre accent system held inside disciplined cel values, alongside a impact accent system held inside disciplined cel values; white impact flashes and hard shadow breaks, alongside a pre light logic using cel rim, glow behavior, and blocked shadow; wax, cloth, ash, lacquer, paper, and restrained blood-red marks, alongside cel paint and ink grain tuned to pre material contrast and withheld-motion setup and pre-impact pause, alongside impact bursts, recoil spacing, and force-balanced cuts and rite intervals, axial pauses, and symbolic repetition, finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.',
+        "Prestige period anime frozen in the breath before a strike: long held frames, severe composition and a single thin line of tension. Carry it through held breath, empty space, raking light, eye and hand close-ups. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-027',
-    name: 'Crimson Formation Momentum Style',
-    displayName: 'Crimson Formation Momentum',
-    styleAnchors: ['Crimson Formation Momentum Style'],
+    name: 'Crimson Formation Charge Anime',
+    displayName: 'Crimson Formation Charge Anime',
+    styleAnchors: ['Crimson Formation Charge Anime'],
     category: '6. Samurai & Medieval',
     negativePrompt:
-      'photoreal, cartoon-goofy, modern-urban-system pressure, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, cartoon-goofy, modern-urban-system pressure, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Crimson Formation Momentum Style acts as a transferable anime-prestige router: a crimson anime direction shaped by era-aware line economy and genre tone, alongside a formation anime direction shaped by era-aware line economy and genre tone; fuse it with prestige martial anime with restrained violence, ritual stillness, heraldic form, textile discipline, and fatal composure; it routes era, genre, line economy, cel or digital finish, and performance tone without locking prompt content to the source title or sample image.',
+        'Epic battle anime of massed formations: rows of armored riders and spears surging as one red wave across the frame.',
       subject_treatment:
-        'Preserve the prompt subject, action, and context while restyling forms through contours paced by crimson tension, readable pose energy, and silhouette discipline, alongside contours paced by formation tension, readable pose energy, and silhouette discipline; identity should remain readable through anime contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of a required canon character or title scene.',
+        "Keep the prompt's subject and setting; place it inside a moving formation or charge, individuals simplified into rhythmic repeated shapes.",
       color_and_tone:
-        'Map color through crimson accents over black, bone, and smoky violet, alongside a formation accent system held inside disciplined cel values; anchor it in slate neutrals, lacquer crimson, moonlit indigo, cedar brown, ember orange, and sparse metallic glints; keep value separation clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested content.',
+        'Lacquer crimson and black armor against dust gold and pale sky, banners as bright repeated accents.',
       lighting_and_shadow:
-        'Use red omen glow and ember rim cuts, alongside a formation light logic using cel rim, glow behavior, and blocked shadow; combine it with raking lateral light, warm bounce, moonlit edges, ember glow, and selective metal highlights; shadows should read as anime light design, rims should clarify form, and glow or effects should support the prompt rather than replacing it.',
+        'Low afternoon sun through dust, blocked cel shadows under helmets and a hot rim along the front rank.',
       texture_and_material:
-        'Render cel paint and ink grain tuned to crimson material contrast, alongside cel paint and ink grain tuned to formation material contrast; anchor surfaces in woven cloth, lacquer, cedar grain, stone moisture, ash, polished metal, and restrained ink texture; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments, action, and abstractions.',
+        'Lamellar armor plates, banner silk and churned earth drawn with bold simplified cel shapes.',
       camera_and_composition:
-        'Frame around group formation geometry and sacrificial symmetry, alongside crimson converted into reusable framing rhythm and anime timing, then extend it with axial pressure, ritual asymmetry, pre-impact spacing, heraldic diagonals, and calm negative space; the style should support portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed card layout.',
+        'Low angle into the oncoming charge or high wide shots of whole formations sweeping diagonally.',
       atmosphere_and_mood:
-        'Carry mood through collective resolve and ritualized teamwork, alongside crimson emotional pressure and genre-specific tone; braid it with discipline, pre-impact breath, fatal code, sacred vow, controlled pressure, and quiet aftermath; the preset can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.',
+        'Thunderous and collective, a single unstoppable will carried forward by many riders at once.',
       rendering_and_quality:
-        'Finish with clean anime finishing that keeps crimson identity readable without noisy denoise, alongside clean anime finishing that keeps formation identity readable without noisy denoise; enforce high-fidelity martial anime finish with calm contour clarity, micro-contrast, and zero ornamental clutter; prioritize clean denoise, stable anatomy or object structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or 3D-render drift.',
-      key_features:
-        'a crimson anime direction shaped by era-aware line economy and genre tone, alongside a formation anime direction shaped by era-aware line economy and genre tone; contours paced by crimson tension, readable pose energy, and silhouette discipline, alongside contours paced by formation tension, readable pose energy, and silhouette discipline; cel paint and ink grain tuned to crimson material contrast, alongside cel paint and ink grain tuned to formation material contrast; red omen glow and ember rim cuts, alongside a formation light logic using cel rim, glow behavior, and blocked shadow; group formation geometry and sacrificial symmetry, alongside crimson converted into reusable framing rhythm and anime timing',
+        'Large-scale battle anime with repeated figures, speed lines and clean readable masses.',
+      key_features: 'massed formation; diagonal charge; repeated banners; dust light',
       creative_brief:
-        'Apply Crimson Formation Momentum Style after prompt X as a transferable anime-prestige layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a crimson anime direction shaped by era-aware line economy and genre tone, alongside a formation anime direction shaped by era-aware line economy and genre tone, alongside contours paced by crimson tension, readable pose energy, and silhouette discipline, alongside contours paced by formation tension, readable pose energy, and silhouette discipline; crimson accents over black, bone, and smoky violet, alongside a formation accent system held inside disciplined cel values; red omen glow and ember rim cuts, alongside a formation light logic using cel rim, glow behavior, and blocked shadow; cel paint and ink grain tuned to crimson material contrast, alongside cel paint and ink grain tuned to formation material contrast and group formation geometry and sacrificial symmetry, alongside crimson converted into reusable framing rhythm and anime timing, finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.',
+        "Epic battle anime of massed formations: rows of armored riders and spears surging as one red wave across the frame. Carry it through massed formation, diagonal charge, repeated banners, dust light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-028',
-    name: 'Sacred Heraldic Vow Style',
-    displayName: 'Sacred Heraldic Vow',
-    styleAnchors: ['Sacred Heraldic Vow Style'],
+    name: 'Heraldic Oath Anime',
+    displayName: 'Heraldic Oath Anime',
+    styleAnchors: ['Heraldic Oath Anime'],
     category: '6. Samurai & Medieval',
     negativePrompt:
-      'photoreal, sci-fi-ui, casual-modern, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, sci-fi-ui, casual-modern, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Sacred Heraldic Vow Style acts as a transferable anime-prestige router: sacred emblem order and severe devotional anime composition, alongside a heraldic anime direction shaped by era-aware line economy and genre tone; fuse it with prestige martial anime with restrained violence, ritual stillness, heraldic form, textile discipline, and fatal composure; it routes era, genre, line economy, cel or digital finish, and performance tone without locking prompt content to the source title or sample image.',
+        'Devotional medieval anime built around vows and heraldry: kneeling figures, banners, stained light and solemn symmetry.',
       subject_treatment:
-        'Preserve the prompt subject, action, and context while restyling forms through emblem-bearing silhouettes and banner-like contour logic, alongside contours paced by sacred tension, readable pose energy, and silhouette discipline; identity should remain readable through anime contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of a required canon character or title scene.',
+        "Keep the prompt's subject and setting; stage it as a solemn act of promise, framed by emblems, banners or architecture already present.",
       color_and_tone:
-        'Map color through gold, crimson, slate, and quiet moonlit neutrals, alongside lacquer crimson, slate, gold, and heraldic dark neutrals; anchor it in slate neutrals, lacquer crimson, moonlit indigo, cedar brown, ember orange, and sparse metallic glints; keep value separation clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested content.',
+        'Heraldic reds, blues and golds against cold stone grey, colored light falling from high windows.',
       lighting_and_shadow:
-        'Use a sacred light logic using cel rim, glow behavior, and blocked shadow, alongside a heraldic light logic using cel rim, glow behavior, and blocked shadow; combine it with raking lateral light, warm bounce, moonlit edges, ember glow, and selective metal highlights; shadows should read as anime light design, rims should clarify form, and glow or effects should support the prompt rather than replacing it.',
+        'Colored shafts of window light and candle glow, soft shadows pooling at the base of pillars.',
       texture_and_material:
-        'Render cel paint and ink grain tuned to sacred material contrast, alongside cel paint and ink grain tuned to heraldic material contrast; anchor surfaces in woven cloth, lacquer, cedar grain, stone moisture, ash, polished metal, and restrained ink texture; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments, action, and abstractions.',
+        'Embroidered banners, polished plate, worn stone and wax, drawn with fine line and flat cel.',
       camera_and_composition:
-        'Frame around crest-like symmetry and severe diagonal rank, alongside sacred converted into reusable framing rhythm and anime timing, then extend it with axial pressure, ritual asymmetry, pre-impact spacing, heraldic diagonals, and calm negative space; the style should support portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed card layout.',
+        'Symmetrical frontal framing down a nave or hall, the subject small and centered.',
       atmosphere_and_mood:
-        'Carry mood through vow pressure and restrained reverence, alongside vow, lineage, and public symbolic weight; braid it with discipline, pre-impact breath, fatal code, sacred vow, controlled pressure, and quiet aftermath; the preset can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.',
+        'Solemn and sacred, loyalty felt quietly rather than shouted, with deep restrained emotion.',
       rendering_and_quality:
-        'Finish with clean anime finishing that keeps sacred identity readable without noisy denoise, alongside clean anime finishing that keeps heraldic identity readable without noisy denoise; enforce high-fidelity martial anime finish with calm contour clarity, micro-contrast, and zero ornamental clutter; prioritize clean denoise, stable anatomy or object structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or 3D-render drift.',
-      key_features:
-        'sacred emblem order and severe devotional anime composition, alongside a heraldic anime direction shaped by era-aware line economy and genre tone; emblem-bearing silhouettes and banner-like contour logic, alongside contours paced by sacred tension, readable pose energy, and silhouette discipline; cel paint and ink grain tuned to sacred material contrast, alongside cel paint and ink grain tuned to heraldic material contrast; a sacred light logic using cel rim, glow behavior, and blocked shadow, alongside a heraldic light logic using cel rim, glow behavior, and blocked shadow; crest-like symmetry and severe diagonal rank, alongside sacred converted into reusable framing rhythm and anime timing',
+        'Refined prestige anime with careful ornament and luminous colored light.',
+      key_features: 'symmetry; heraldic banners; colored window light; kneeling vow',
       creative_brief:
-        'Apply Sacred Heraldic Vow Style after prompt X as a transferable anime-prestige layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies sacred emblem order and severe devotional anime composition, alongside a heraldic anime direction shaped by era-aware line economy and genre tone, alongside emblem-bearing silhouettes and banner-like contour logic, alongside contours paced by sacred tension, readable pose energy, and silhouette discipline; gold, crimson, slate, and quiet moonlit neutrals, alongside lacquer crimson, slate, gold, and heraldic dark neutrals; a sacred light logic using cel rim, glow behavior, and blocked shadow, alongside a heraldic light logic using cel rim, glow behavior, and blocked shadow; cel paint and ink grain tuned to sacred material contrast, alongside cel paint and ink grain tuned to heraldic material contrast and crest-like symmetry and severe diagonal rank, alongside sacred converted into reusable framing rhythm and anime timing, finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.',
+        "Devotional medieval anime built around vows and heraldry: kneeling figures, banners, stained light and solemn symmetry. Carry it through symmetry, heraldic banners, colored window light, kneeling vow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-029',
-    name: 'Ember Breach Pressure Style',
-    displayName: 'Ember Breach Pressure',
-    styleAnchors: ['Ember Breach Pressure Style'],
+    name: 'Siege Breach Ember Anime',
+    displayName: 'Siege Breach Ember Anime',
+    styleAnchors: ['Siege Breach Ember Anime'],
     category: '6. Samurai & Medieval',
     negativePrompt:
-      'photoreal, modern-tech, colorful-cute, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, modern-tech, colorful-cute, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Ember Breach Pressure Style acts as a transferable anime-prestige router: a ember anime direction shaped by era-aware line economy and genre tone, alongside a breach anime direction shaped by era-aware line economy and genre tone; fuse it with prestige martial anime with restrained violence, ritual stillness, heraldic form, textile discipline, and fatal composure; it routes era, genre, line economy, cel or digital finish, and performance tone without locking prompt content to the source title or sample image.',
+        'Siege anime at the moment walls break: fire, splintered timber, embers and bodies of smoke pushing through a gap.',
       subject_treatment:
-        'Preserve the prompt subject, action, and context while restyling forms through contours paced by ember tension, readable pose energy, and silhouette discipline, alongside contours paced by breach tension, readable pose energy, and silhouette discipline; identity should remain readable through anime contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of a required canon character or title scene.',
-      color_and_tone:
-        'Map color through ember orange, smoke black, and hot crimson accents, alongside a breach accent system held inside disciplined cel values; anchor it in slate neutrals, lacquer crimson, moonlit indigo, cedar brown, ember orange, and sparse metallic glints; keep value separation clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested content.',
+        "Keep the prompt's subject and setting; put it at a threshold being forced open, with fire and debris driving through the frame.",
+      color_and_tone: 'Ember orange and ash grey against night blue, sparks as bright points.',
       lighting_and_shadow:
-        'Use low fire glow and ash-soft rim light, alongside a breach light logic using cel rim, glow behavior, and blocked shadow; combine it with raking lateral light, warm bounce, moonlit edges, ember glow, and selective metal highlights; shadows should read as anime light design, rims should clarify form, and glow or effects should support the prompt rather than replacing it.',
+        'Firelight from the breach, hard orange rims and deep blue shadow on the far side.',
       texture_and_material:
-        'Render soot, sparks, warm dust, and charred paint texture, alongside cel paint and ink grain tuned to breach material contrast; anchor surfaces in woven cloth, lacquer, cedar grain, stone moisture, ash, polished metal, and restrained ink texture; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments, action, and abstractions.',
+        'Splintered wood, cracked stone, smoke and flying sparks drawn as bold effect animation.',
       camera_and_composition:
-        'Frame around ember converted into reusable framing rhythm and anime timing, alongside breach converted into reusable framing rhythm and anime timing, then extend it with axial pressure, ritual asymmetry, pre-impact spacing, heraldic diagonals, and calm negative space; the style should support portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed card layout.',
+        'Framed through the breach or from inside looking out at the flood of light and debris.',
       atmosphere_and_mood:
-        'Carry mood through ember emotional pressure and genre-specific tone, alongside breach emotional pressure and genre-specific tone; braid it with discipline, pre-impact breath, fatal code, sacred vow, controlled pressure, and quiet aftermath; the preset can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.',
+        'Violent and desperate, the roar of a wall giving way and no time left to choose.',
       rendering_and_quality:
-        'Finish with clean anime finishing that keeps ember identity readable without noisy denoise, alongside clean anime finishing that keeps breach identity readable without noisy denoise; enforce high-fidelity martial anime finish with calm contour clarity, micro-contrast, and zero ornamental clutter; prioritize clean denoise, stable anatomy or object structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or 3D-render drift.',
-      key_features:
-        'a ember anime direction shaped by era-aware line economy and genre tone, alongside a breach anime direction shaped by era-aware line economy and genre tone; contours paced by ember tension, readable pose energy, and silhouette discipline, alongside contours paced by breach tension, readable pose energy, and silhouette discipline; soot, sparks, warm dust, and charred paint texture, alongside cel paint and ink grain tuned to breach material contrast; low fire glow and ash-soft rim light, alongside a breach light logic using cel rim, glow behavior, and blocked shadow; ember converted into reusable framing rhythm and anime timing, alongside breach converted into reusable framing rhythm and anime timing',
+        'Dynamic effects-heavy anime with readable silhouettes against the fire.',
+      key_features: 'breaching gap; embers; fire rim light; debris effects',
       creative_brief:
-        'Apply Ember Breach Pressure Style after prompt X as a transferable anime-prestige layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a ember anime direction shaped by era-aware line economy and genre tone, alongside a breach anime direction shaped by era-aware line economy and genre tone, alongside contours paced by ember tension, readable pose energy, and silhouette discipline, alongside contours paced by breach tension, readable pose energy, and silhouette discipline; ember orange, smoke black, and hot crimson accents, alongside a breach accent system held inside disciplined cel values; low fire glow and ash-soft rim light, alongside a breach light logic using cel rim, glow behavior, and blocked shadow; soot, sparks, warm dust, and charred paint texture, alongside cel paint and ink grain tuned to breach material contrast and ember converted into reusable framing rhythm and anime timing, alongside breach converted into reusable framing rhythm and anime timing, finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.',
+        "Siege anime at the moment walls break: fire, splintered timber, embers and bodies of smoke pushing through a gap. Carry it through breaching gap, embers, fire rim light, debris effects. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-030',
-    name: 'Moonlit Ascetic Discipline Style',
-    displayName: 'Moonlit Ascetic Discipline',
-    styleAnchors: ['Moonlit Ascetic Discipline Style'],
+    name: 'Moonlit Ascetic Training Anime',
+    displayName: 'Moonlit Ascetic Training Anime',
+    styleAnchors: ['Moonlit Ascetic Training Anime'],
     category: '6. Samurai & Medieval',
     negativePrompt:
-      'photoreal, bright-daylight, cyberpunk, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, bright-daylight, cyberpunk, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Moonlit Ascetic Discipline Style acts as a transferable anime-prestige router: a moonlit anime direction shaped by era-aware line economy and genre tone, alongside a ascetic anime direction shaped by era-aware line economy and genre tone; fuse it with prestige martial anime with restrained violence, ritual stillness, heraldic form, textile discipline, and fatal composure; it routes era, genre, line economy, cel or digital finish, and performance tone without locking prompt content to the source title or sample image.',
+        'Quiet training anime of monks and warriors at night: repetition, cold moonlight, breath and discipline.',
       subject_treatment:
-        'Preserve the prompt subject, action, and context while restyling forms through contours paced by moonlit tension, readable pose energy, and silhouette discipline, alongside contours paced by ascetic tension, readable pose energy, and silhouette discipline; identity should remain readable through anime contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of a required canon character or title scene.',
+        "Keep the prompt's subject and setting; show it practicing, repeating or holding a pose, alone or with one teacher.",
       color_and_tone:
-        'Map color through moonlit indigo, slate gray, and small silver-white edge notes, alongside a ascetic accent system held inside disciplined cel values; anchor it in slate neutrals, lacquer crimson, moonlit indigo, cedar brown, ember orange, and sparse metallic glints; keep value separation clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested content.',
+        'Silver moon blue, cedar brown and white breath, a single warm lantern accent.',
       lighting_and_shadow:
-        'Use cool moon rim and restrained nocturnal bounce, alongside a ascetic light logic using cel rim, glow behavior, and blocked shadow; combine it with raking lateral light, warm bounce, moonlit edges, ember glow, and selective metal highlights; shadows should read as anime light design, rims should clarify form, and glow or effects should support the prompt rather than replacing it.',
+        'Cold moonlight from above with soft blue shadows and a small lantern pool on the ground.',
       texture_and_material:
-        'Render cel paint and ink grain tuned to moonlit material contrast, alongside cel paint and ink grain tuned to ascetic material contrast; anchor surfaces in woven cloth, lacquer, cedar grain, stone moisture, ash, polished metal, and restrained ink texture; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments, action, and abstractions.',
+        'Rough cotton, wet stone, bamboo and snow drawn with thin line and soft cel.',
       camera_and_composition:
-        'Frame around moonlit converted into reusable framing rhythm and anime timing, alongside ascetic converted into reusable framing rhythm and anime timing, then extend it with axial pressure, ritual asymmetry, pre-impact spacing, heraldic diagonals, and calm negative space; the style should support portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed card layout.',
+        'Medium frames with the moon or a lantern in view, calm and centered.',
       atmosphere_and_mood:
-        'Carry mood through ascetic quiet and night discipline, alongside ascetic emotional pressure and genre-specific tone; braid it with discipline, pre-impact breath, fatal code, sacred vow, controlled pressure, and quiet aftermath; the preset can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.',
-      rendering_and_quality:
-        'Finish with clean anime finishing that keeps moonlit identity readable without noisy denoise, alongside clean anime finishing that keeps ascetic identity readable without noisy denoise; enforce high-fidelity martial anime finish with calm contour clarity, micro-contrast, and zero ornamental clutter; prioritize clean denoise, stable anatomy or object structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or 3D-render drift.',
-      key_features:
-        'a moonlit anime direction shaped by era-aware line economy and genre tone, alongside a ascetic anime direction shaped by era-aware line economy and genre tone; contours paced by moonlit tension, readable pose energy, and silhouette discipline, alongside contours paced by ascetic tension, readable pose energy, and silhouette discipline; cel paint and ink grain tuned to moonlit material contrast, alongside cel paint and ink grain tuned to ascetic material contrast; cool moon rim and restrained nocturnal bounce, alongside a ascetic light logic using cel rim, glow behavior, and blocked shadow; moonlit converted into reusable framing rhythm and anime timing, alongside ascetic converted into reusable framing rhythm and anime timing',
+        'Disciplined and lonely, calm repetition carrying a stubborn and very quiet determination.',
+      rendering_and_quality: 'Subtle prestige anime with gentle motion and precise body mechanics.',
+      key_features: 'moonlight; breath; repetition; lantern pool',
       creative_brief:
-        'Apply Moonlit Ascetic Discipline Style after prompt X as a transferable anime-prestige layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a moonlit anime direction shaped by era-aware line economy and genre tone, alongside a ascetic anime direction shaped by era-aware line economy and genre tone, alongside contours paced by moonlit tension, readable pose energy, and silhouette discipline, alongside contours paced by ascetic tension, readable pose energy, and silhouette discipline; moonlit indigo, slate gray, and small silver-white edge notes, alongside a ascetic accent system held inside disciplined cel values; cool moon rim and restrained nocturnal bounce, alongside a ascetic light logic using cel rim, glow behavior, and blocked shadow; cel paint and ink grain tuned to moonlit material contrast, alongside cel paint and ink grain tuned to ascetic material contrast and moonlit converted into reusable framing rhythm and anime timing, alongside ascetic converted into reusable framing rhythm and anime timing, finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.',
+        "Quiet training anime of monks and warriors at night: repetition, cold moonlight, breath and discipline. Carry it through moonlight, breath, repetition, lantern pool. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+    },
+  },
+  {
+    id: 'SP13-071',
+    name: 'Ink-Splatter Swordplay Anime',
+    displayName: 'Ink-Splatter Swordplay Anime',
+    styleAnchors: ['Ink-Splatter Swordplay Anime', 'sumi ink action anime', 'ink splatter'],
+    category: '6. Samurai & Medieval',
+    domain: 'sumi ink action anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Action anime where every cut explodes into sumi ink splatter and brush arcs across paper-white backgrounds.',
+      subject_treatment:
+        "Keep the prompt's subject and action; turn movement and impacts into brush arcs, ink splatter and dry-brush trails.",
+      color_and_tone: 'Black ink on warm paper white with a single red accent for blood or cloth.',
+      lighting_and_shadow:
+        'No realistic light; value comes from ink density, wet pools and dry brush.',
+      texture_and_material: 'Wet ink pools, dry-bristle streaks, splatter dots and paper grain.',
+      camera_and_composition: 'Dynamic diagonals with large empty paper areas around the action.',
+      atmosphere_and_mood:
+        'Explosive and stylish, every lethal movement turned into a single line of poetry.',
+      rendering_and_quality:
+        'Painterly anime action with bold brushwork over clean character line.',
+      creative_brief:
+        "Action anime where every cut explodes into sumi ink splatter and brush arcs across paper-white backgrounds. Carry it through ink splatter, brush arcs, paper white, red accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'ink splatter; brush arcs; paper white; red accent',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-072',
+    name: 'Woodblock Palette Period Anime',
+    displayName: 'Woodblock Palette Period Anime',
+    styleAnchors: ['Woodblock Palette Period Anime', 'ukiyo-e colored anime', 'flat printed color'],
+    category: '6. Samurai & Medieval',
+    domain: 'ukiyo-e colored anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Period anime colored like woodblock prints: flat indigo, vermilion and ochre fields with printed gradient skies.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; flatten color into printed areas while keeping anime line and expression.",
+      color_and_tone:
+        'Indigo, vermilion, ochre, sea green and paper cream with bokashi gradient bands in the sky.',
+      lighting_and_shadow:
+        'Almost no cast shadow; depth comes from overlapping flat shapes and gradient bands.',
+      texture_and_material: 'Subtle paper grain and wood-grain texture inside flat color fields.',
+      camera_and_composition:
+        'Decorative framing with strong silhouettes, cropped foreground elements and high horizons.',
+      atmosphere_and_mood:
+        'Elegant and nostalgic, a graphic calm like an old print hanging in a quiet inn.',
+      rendering_and_quality: 'Clean anime line over flat printed color with deliberate grain.',
+      creative_brief:
+        "Period anime colored like woodblock prints: flat indigo, vermilion and ochre fields with printed gradient skies. Carry it through flat printed color, bokashi sky, paper grain, cropped foreground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'flat printed color; bokashi sky; paper grain; cropped foreground',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-073',
+    name: 'Rain Duel Slow-Motion Anime',
+    displayName: 'Rain Duel Slow-Motion Anime',
+    styleAnchors: ['Rain Duel Slow-Motion Anime', 'slow-motion rain anime', 'frozen raindrops'],
+    category: '6. Samurai & Medieval',
+    domain: 'slow-motion rain anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Slow-motion anime in heavy rain: every drop frozen as a bright bead, splashes suspended around moving figures.',
+      subject_treatment:
+        "Keep the prompt's subject and action; slow it down so raindrops, splashes and hair hang in the air around it.",
+      color_and_tone:
+        'Wet slate blue and grey with bright white droplets and one warm color accent.',
+      lighting_and_shadow:
+        'Backlight through rain making drops glow, dark wet reflections on the ground.',
+      texture_and_material: 'Beaded raindrops, soaked cloth and glossy wet surfaces drawn crisply.',
+      camera_and_composition:
+        'Close and mid frames with drops in the foreground, subjects caught mid-motion.',
+      atmosphere_and_mood:
+        'Suspended and melancholy, intense moments stretched out until they become strangely beautiful.',
+      rendering_and_quality: 'Detailed anime effects work with sharp droplets and clean motion.',
+      creative_brief:
+        "Slow-motion anime in heavy rain: every drop frozen as a bright bead, splashes suspended around moving figures. Carry it through frozen raindrops, suspended splash, backlit rain, wet reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'frozen raindrops; suspended splash; backlit rain; wet reflections',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-074',
+    name: 'Snowfield Last Stand Anime',
+    displayName: 'Snowfield Last Stand Anime',
+    styleAnchors: ['Snowfield Last Stand Anime', 'winter battle anime', 'white expanse'],
+    category: '6. Samurai & Medieval',
+    domain: 'winter battle anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Winter war anime of small groups holding out in endless snow: white silence, dark figures and red accents.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; isolate it in a vast snowy space, dark against white, with falling snow.",
+      color_and_tone:
+        'Near-monochrome white and blue-grey with dark figures and one sharp red accent.',
+      lighting_and_shadow: 'Flat overcast light with soft blue shadows and bright snow glare.',
+      texture_and_material: 'Falling snow, frost on armor and fur, deep footprints drawn simply.',
+      camera_and_composition:
+        'Extreme wide shots with tiny figures, or tight faces with snow in the lashes.',
+      atmosphere_and_mood:
+        'Desperate and cold, a quiet heroism in small figures refusing to leave the snow.',
+      rendering_and_quality:
+        'Minimal prestige anime with strong silhouettes and soft snow effects.',
+      creative_brief:
+        "Winter war anime of small groups holding out in endless snow: white silence, dark figures and red accents. Carry it through white expanse, dark silhouettes, falling snow, red accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'white expanse; dark silhouettes; falling snow; red accent',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-075',
+    name: 'Grand Siege Panorama Anime',
+    displayName: 'Grand Siege Panorama Anime',
+    styleAnchors: ['Grand Siege Panorama Anime', 'epic siege anime', 'colossal walls'],
+    category: '6. Samurai & Medieval',
+    domain: 'epic siege anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Epic panoramic anime of sieges: colossal walls and towers with armies reduced to tiny detailed specks.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; place it within an enormous environment where scale dwarfs every figure.",
+      color_and_tone:
+        'Stone ochre, smoke grey and sky blue with fires as orange points across the landscape.',
+      lighting_and_shadow:
+        'Broad daylight or sunset with long shadows cast by towers across the battlefield.',
+      texture_and_material:
+        'Detailed painted backgrounds of stone, siege engines and smoke with small cel figures.',
+      camera_and_composition: 'Ultra-wide establishing shots from high above or far away.',
+      atmosphere_and_mood:
+        'Awe-struck and vast, the grim weight of history seen from very far away.',
+      rendering_and_quality:
+        'Richly painted background art with precise small-scale detail and clean tiny cel figures.',
+      creative_brief:
+        "Epic panoramic anime of sieges: colossal walls and towers with armies reduced to tiny detailed specks. Carry it through colossal walls, tiny armies, painted panorama, long tower shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'colossal walls; tiny armies; painted panorama; long tower shadows',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-076',
+    name: 'Court Intrigue Lacquer Anime',
+    displayName: 'Court Intrigue Lacquer Anime',
+    styleAnchors: ['Court Intrigue Lacquer Anime', 'palace politics anime', 'paper screens'],
+    category: '6. Samurai & Medieval',
+    domain: 'palace politics anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Palace intrigue anime of whispers and screens: lacquered rooms, folding panels, candlelight and faces half hidden behind fans or sleeves.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; frame it through screens, doorways or partitions so something is always half hidden.",
+      color_and_tone:
+        'Black lacquer, deep vermilion and gold leaf with ivory skin tones and pools of dark shadow.',
+      lighting_and_shadow:
+        'Low candle and lantern light through paper screens, soft glows and deep shadow behind every partition.',
+      texture_and_material:
+        'Glossy lacquer, silk brocade, gold leaf and paper screens rendered with fine line and soft cel gradients.',
+      camera_and_composition:
+        'Layered framing through panels and sliding doors, subjects placed off-center and partly occluded.',
+      atmosphere_and_mood:
+        'Secretive and elegant, every polite gesture hiding a dangerous intention underneath.',
+      rendering_and_quality:
+        'Luxurious prestige anime with ornate detail, careful gradients and restrained expression.',
+      creative_brief:
+        "Palace intrigue anime of whispers and screens: lacquered rooms, folding panels, candlelight and faces half hidden behind fans or sleeves. Carry it through paper screens, lacquer and gold, half-hidden faces, candlelight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'paper screens; lacquer and gold; half-hidden faces; candlelight',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-077',
+    name: 'Wandering Ronin Western Anime',
+    displayName: 'Wandering Ronin Western Anime',
+    styleAnchors: ['Wandering Ronin Western Anime', 'drifter period anime', 'empty road'],
+    category: '6. Samurai & Medieval',
+    domain: 'drifter period anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Period anime staged like a dusty western: lone drifters, wide empty roads, squinting close-ups and heat haze.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; turn it into a drifter's standoff or arrival, alone against open land.",
+      color_and_tone: 'Sun-bleached ochre, dusty tan and faded indigo with harsh white sky.',
+      lighting_and_shadow:
+        'Harsh midday sun with short black shadows and heat shimmer on the horizon.',
+      texture_and_material:
+        'Dust clouds, worn straw hats, frayed cloth and cracked earth in simplified cel.',
+      camera_and_composition:
+        'Extreme wide shots of empty roads alternating with extreme close-ups of eyes and hands.',
+      atmosphere_and_mood:
+        'Lonely and sun-scorched, a quiet stranger arriving in a town that is holding its breath.',
+      rendering_and_quality:
+        'Stylized prestige anime with bold framing contrasts and clean dusty effects.',
+      creative_brief:
+        "Period anime staged like a dusty western: lone drifters, wide empty roads, squinting close-ups and heat haze. Carry it through empty road, heat haze, eye close-ups, drifting dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'empty road; heat haze; eye close-ups; drifting dust',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-078',
+    name: 'Arthurian Tapestry Anime',
+    displayName: 'Arthurian Tapestry Anime',
+    styleAnchors: ['Arthurian Tapestry Anime', 'medieval romance anime', 'millefleur meadow'],
+    category: '6. Samurai & Medieval',
+    domain: 'medieval romance anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Medieval romance anime with backgrounds woven like tapestries: flat millefleur meadows, stylized trees and jewel-toned figures.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; set it against flattened, woven-looking backgrounds while figures keep anime line and feeling.",
+      color_and_tone:
+        'Madder red, woad blue, weld yellow and deep green on a dark ground, faded like old wool.',
+      lighting_and_shadow: 'Soft even light with little cast shadow, as in a woven wall hanging.',
+      texture_and_material:
+        'Visible weave texture in backgrounds, embroidered detail on clothing and small scattered flowers.',
+      camera_and_composition:
+        'Frontal, layered compositions with tall trees framing the sides like a tapestry border.',
+      atmosphere_and_mood: 'Courtly and wistful, a legend being told softly beside a winter fire.',
+      rendering_and_quality:
+        'Decorative prestige anime blending clean cel figures with woven background textures.',
+      creative_brief:
+        "Medieval romance anime with backgrounds woven like tapestries: flat millefleur meadows, stylized trees and jewel-toned figures. Carry it through millefleur meadow, woven texture, jewel wool colors, framing trees. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'millefleur meadow; woven texture; jewel wool colors; framing trees',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-079',
+    name: 'Crusade Desert Glare Anime',
+    displayName: 'Crusade Desert Glare Anime',
+    styleAnchors: ['Crusade Desert Glare Anime', 'desert war anime', 'blinding glare'],
+    category: '6. Samurai & Medieval',
+    domain: 'desert war anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Desert war anime bleached by glare: blinding sun, burning sand, heavy armor and thirst.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; expose it to overwhelming sun, heat and glare that flatten colors.",
+      color_and_tone: 'Blinding white and sand gold with dark blue shadows and sunburnt skin.',
+      lighting_and_shadow:
+        'Overhead desert sun with bleached highlights, short hard shadows and heat shimmer.',
+      texture_and_material:
+        'Hot metal, wind-blown sand, sweat and faded linen drawn with bold cel.',
+      camera_and_composition:
+        'Wide desert horizons with small figures, or close faces squinting against light.',
+      atmosphere_and_mood:
+        'Exhausted and scorched, faith and thirst wearing down people who are far from home.',
+      rendering_and_quality:
+        'Harsh high-key anime with strong glare effects and clean silhouettes.',
+      creative_brief:
+        "Desert war anime bleached by glare: blinding sun, burning sand, heavy armor and thirst. Carry it through blinding glare, heat shimmer, sand gold, short shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'blinding glare; heat shimmer; sand gold; short shadows',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-080',
+    name: 'Northern Saga Longship Anime',
+    displayName: 'Northern Saga Longship Anime',
+    styleAnchors: ['Northern Saga Longship Anime', 'viking saga anime', 'longships'],
+    category: '6. Samurai & Medieval',
+    domain: 'viking saga anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gritty northern saga anime of cold seas, longships, fur, iron and weather-beaten faces.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; make it cold, wet and weathered, with sea spray and wind shaping everything.",
+      color_and_tone: 'Slate sea grey, cold green, iron and bone white with rust red accents.',
+      lighting_and_shadow:
+        'Low overcast light, breaks of cold sun on the water and heavy dark cloud shadows.',
+      texture_and_material:
+        'Tarred wood, wet fur, rope, iron and salt spray drawn with gritty line.',
+      camera_and_composition:
+        'Low angles on heaving decks and wide shots of ships dwarfed by waves and fjords.',
+      atmosphere_and_mood:
+        'Harsh and restless, a hard life lived between storms and long journeys.',
+      rendering_and_quality:
+        'Gritty seinen anime with heavy line weight and textured painted skies.',
+      creative_brief:
+        "Gritty northern saga anime of cold seas, longships, fur, iron and weather-beaten faces. Carry it through longships, cold spray, fur and iron, fjord scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'longships; cold spray; fur and iron; fjord scale',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-081',
+    name: 'Plague Year Chronicle Anime',
+    displayName: 'Plague Year Chronicle Anime',
+    styleAnchors: [
+      'Plague Year Chronicle Anime',
+      'dark medieval chronicle anime',
+      'masked doctors',
+    ],
+    category: '6. Samurai & Medieval',
+    domain: 'dark medieval chronicle anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Somber medieval chronicle anime of a plague year: muted streets, masked doctors, empty markets and candle vigils.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; place it in a time of sickness and fear, with distance between people.",
+      color_and_tone:
+        'Muted ash, mud brown and bone with sickly green and small candle-gold accents.',
+      lighting_and_shadow:
+        'Dim overcast light and candlelight, heavy shadows in narrow streets and doorways.',
+      texture_and_material:
+        'Rough wool, wax cloth, rotting timber and muddy cobbles drawn with thin nervous line.',
+      camera_and_composition:
+        'Narrow alleys and doorways, figures isolated, empty space between them.',
+      atmosphere_and_mood:
+        'Grim and hushed, fear and kindness sharing the same narrow, silent streets.',
+      rendering_and_quality:
+        'Restrained prestige anime with muted painting and fine, careful detail.',
+      creative_brief:
+        "Somber medieval chronicle anime of a plague year: muted streets, masked doctors, empty markets and candle vigils. Carry it through masked doctors, empty streets, candle vigils, muted palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'masked doctors; empty streets; candle vigils; muted palette',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-082',
+    name: 'Tournament Pageantry Anime',
+    displayName: 'Tournament Pageantry Anime',
+    styleAnchors: ['Tournament Pageantry Anime', 'medieval tournament anime', 'striped pavilions'],
+    category: '6. Samurai & Medieval',
+    domain: 'medieval tournament anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bright medieval tournament anime full of pageantry: striped pavilions, banners, crowds and polished color under open sky.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; surround it with festival color, banners and an excited watching crowd.",
+      color_and_tone:
+        'Saturated heraldic stripes of red, gold, blue and green against clear summer sky blue.',
+      lighting_and_shadow:
+        'Bright midday sun with crisp short shadows and glints on polished metal.',
+      texture_and_material:
+        'Silk banners, striped canvas, polished armor and trampled grass in clean cel.',
+      camera_and_composition:
+        'Wide festive frames with pavilions and stands, or dynamic close shots at the lists.',
+      atmosphere_and_mood:
+        'Festive and competitive, a whole town cheering for its champions on a sunny day.',
+      rendering_and_quality:
+        'Colorful prestige anime with crisp detail and lively crowd animation.',
+      creative_brief:
+        "Bright medieval tournament anime full of pageantry: striped pavilions, banners, crowds and polished color under open sky. Carry it through striped pavilions, banners, cheering crowd, bright sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'striped pavilions; banners; cheering crowd; bright sun',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-083',
+    name: 'Shadow Stealth Night Anime',
+    displayName: 'Shadow Stealth Night Anime',
+    styleAnchors: ['Shadow Stealth Night Anime', 'ninja stealth anime', 'blue darkness'],
+    category: '6. Samurai & Medieval',
+    domain: 'ninja stealth anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Stealth anime of night infiltration: deep blue darkness, silhouettes on rooftops and thin blades of moonlight.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; hide it in darkness so only edges, eyes and small highlights remain visible.",
+      color_and_tone: 'Deep indigo and black with pale moon silver and a tiny warm lantern accent.',
+      lighting_and_shadow:
+        'Moonlight rim on silhouettes, pools of shadow and occasional lantern glow in windows.',
+      texture_and_material:
+        'Tiled rooftops, dark cloth and wet stone reduced to silhouette and rim line.',
+      camera_and_composition:
+        'High rooftop angles and tight framing on eyes, with most of the frame dark.',
+      atmosphere_and_mood: 'Silent and watchful, a held breath while guards pass by just below.',
+      rendering_and_quality:
+        'Low-key prestige anime with clean silhouettes and precise rim lighting.',
+      creative_brief:
+        "Stealth anime of night infiltration: deep blue darkness, silhouettes on rooftops and thin blades of moonlight. Carry it through blue darkness, moonlit rims, rooftop silhouettes, lantern windows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'blue darkness; moonlit rims; rooftop silhouettes; lantern windows',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-084',
+    name: 'Onmyoji Talisman Court Anime',
+    displayName: 'Onmyoji Talisman Court Anime',
+    styleAnchors: [
+      'Onmyoji Talisman Court Anime',
+      'Heian spirit exorcism anime',
+      'layered silk robes',
+    ],
+    category: '6. Samurai & Medieval',
+    domain: 'Heian spirit exorcism anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Refined Heian-court fantasy anime where diviners seal spirits with glowing paper talismans and star diagrams in silk-robed elegance.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; add the presence of spirits and glowing sealing marks only where the prompt allows supernatural elements.",
+      color_and_tone:
+        'Layered Heian robe colors of plum, pale green and white with soft spirit-light blue.',
+      lighting_and_shadow:
+        'Soft night garden light and glowing talisman light casting cool highlights on silk.',
+      texture_and_material:
+        'Layered silk robes, paper talismans, lacquered caps and misty gardens in fine line.',
+      camera_and_composition:
+        'Elegant horizontal compositions across verandas and gardens with drifting spirit shapes.',
+      atmosphere_and_mood:
+        'Mysterious and graceful, polite court life brushing against a hidden spirit world.',
+      rendering_and_quality:
+        'Elegant prestige anime with fine line, soft glows and gentle painted gardens.',
+      creative_brief:
+        "Refined Heian-court fantasy anime where diviners seal spirits with glowing paper talismans and star diagrams in silk-robed elegance. Carry it through layered silk robes, glowing talismans, night garden, spirit mist. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'layered silk robes; glowing talismans; night garden; spirit mist',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-085',
+    name: 'Swordsmith Forge Craft Anime',
+    displayName: 'Swordsmith Forge Craft Anime',
+    styleAnchors: ['Swordsmith Forge Craft Anime', 'craft process anime', 'forge glow'],
+    category: '6. Samurai & Medieval',
+    domain: 'craft process anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Craft-process anime of forges and workshops: glowing metal, precise hand work, sparks and the patience of making.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; show it being made, repaired or tended, with hands and tools central.",
+      color_and_tone:
+        'Forge orange and yellow-white heat against charcoal black and dim workshop brown.',
+      lighting_and_shadow:
+        'Hot forge glow from below, sparks as bright streaks and deep workshop shadow.',
+      texture_and_material:
+        'Glowing steel, scale, charcoal, water steam and worn leather aprons in detailed cel.',
+      camera_and_composition:
+        'Close shots on hands, tools and glowing metal with occasional wide workshop frames.',
+      atmosphere_and_mood:
+        'Focused and reverent, the quiet pride of skilled hands doing difficult work.',
+      rendering_and_quality:
+        'Detailed prestige anime with careful process animation and glowing effects.',
+      creative_brief:
+        "Craft-process anime of forges and workshops: glowing metal, precise hand work, sparks and the patience of making. Carry it through forge glow, sparks, hands and tools, quench steam. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'forge glow; sparks; hands and tools; quench steam',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

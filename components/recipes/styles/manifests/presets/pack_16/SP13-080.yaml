@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP13-080
+packId: pack_16
+name: Northern Saga Longship Anime
+styleAnchors:
+  - Northern Saga Longship Anime
+  - viking saga anime
+  - longships
+displayName: Northern Saga Longship Anime
+category: 6. Samurai & Medieval
+domain: viking saga anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - samurai-and-medieval
+  - viking
+  - saga
+  - anime
+visualDna:
+  aesthetic: Gritty northern saga anime of cold seas, longships, fur, iron and weather-beaten faces.
+  subject_treatment: Keep the prompt's subject and setting; make it cold, wet and weathered, with sea spray and wind shaping everything.
+  color_and_tone: Slate sea grey, cold green, iron and bone white with rust red accents.
+  lighting_and_shadow: Low overcast light, breaks of cold sun on the water and heavy dark cloud shadows.
+  texture_and_material: Tarred wood, wet fur, rope, iron and salt spray drawn with gritty line.
+  camera_and_composition: Low angles on heaving decks and wide shots of ships dwarfed by waves and fjords.
+  atmosphere_and_mood: Harsh and restless, a hard life lived between storms and long journeys.
+  rendering_and_quality: Gritty seinen anime with heavy line weight and textured painted skies.
+  creative_brief: Gritty northern saga anime of cold seas, longships, fur, iron and weather-beaten faces. Carry it through longships, cold spray, fur and iron, fjord scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.
+  key_features: longships; cold spray; fur and iron; fjord scale
+avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: samurai-and-medieval
+  categoryName: 6. Samurai & Medieval
+  tags:
+    - anime-classics-and-prestige
+    - samurai-and-medieval
+    - viking
+    - saga
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: viking saga anime

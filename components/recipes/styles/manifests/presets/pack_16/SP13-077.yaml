@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP13-077
+packId: pack_16
+name: Wandering Ronin Western Anime
+styleAnchors:
+  - Wandering Ronin Western Anime
+  - drifter period anime
+  - empty road
+displayName: Wandering Ronin Western Anime
+category: 6. Samurai & Medieval
+domain: drifter period anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - samurai-and-medieval
+  - ronin
+  - western
+  - anime
+visualDna:
+  aesthetic: 'Period anime staged like a dusty western: lone drifters, wide empty roads, squinting close-ups and heat haze.'
+  subject_treatment: Keep the prompt's subject and setting; turn it into a drifter's standoff or arrival, alone against open land.
+  color_and_tone: Sun-bleached ochre, dusty tan and faded indigo with harsh white sky.
+  lighting_and_shadow: Harsh midday sun with short black shadows and heat shimmer on the horizon.
+  texture_and_material: Dust clouds, worn straw hats, frayed cloth and cracked earth in simplified cel.
+  camera_and_composition: Extreme wide shots of empty roads alternating with extreme close-ups of eyes and hands.
+  atmosphere_and_mood: Lonely and sun-scorched, a quiet stranger arriving in a town that is holding its breath.
+  rendering_and_quality: Stylized prestige anime with bold framing contrasts and clean dusty effects.
+  creative_brief: "Period anime staged like a dusty western: lone drifters, wide empty roads, squinting close-ups and heat haze. Carry it through empty road, heat haze, eye close-ups, drifting dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: empty road; heat haze; eye close-ups; drifting dust
+avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: samurai-and-medieval
+  categoryName: 6. Samurai & Medieval
+  tags:
+    - anime-classics-and-prestige
+    - samurai-and-medieval
+    - ronin
+    - western
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: drifter period anime

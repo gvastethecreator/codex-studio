@@ -17,14 +17,16 @@ const MIN: Record<keyof Dna, number> = {
 const words = (t: string) => t.split(/\s+/).filter(Boolean).length;
 
 export function dna(fields: Dna): Dna {
+  const problems: string[] = [];
   for (const [key, min] of Object.entries(MIN) as [keyof Dna, number][]) {
     const value = String(fields[key] ?? '').trim();
-    if (words(value) < min) {
-      throw new Error(`DNA field ${key} needs at least ${min} words: "${value}"`);
-    }
+    if (words(value) < min) problems.push(`${key} needs at least ${min} words: "${value}"`);
     if (/\bcard[- ](size|scale)\b|\bat card\b/i.test(value)) {
-      throw new Error(`DNA field ${key} must not use card vocabulary: "${value}"`);
+      problems.push(`${key} must not use card vocabulary: "${value}"`);
     }
+  }
+  if (problems.length) {
+    throw new Error(`DNA for "${fields.aesthetic.slice(0, 40)}":\n  ${problems.join('\n  ')}`);
   }
   return fields;
 }

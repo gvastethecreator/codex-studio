@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP13-085
+packId: pack_16
+name: Swordsmith Forge Craft Anime
+styleAnchors:
+  - Swordsmith Forge Craft Anime
+  - craft process anime
+  - forge glow
+displayName: Swordsmith Forge Craft Anime
+category: 6. Samurai & Medieval
+domain: craft process anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - samurai-and-medieval
+  - forge
+  - craft
+  - anime
+visualDna:
+  aesthetic: 'Craft-process anime of forges and workshops: glowing metal, precise hand work, sparks and the patience of making.'
+  subject_treatment: Keep the prompt's subject and setting; show it being made, repaired or tended, with hands and tools central.
+  color_and_tone: Forge orange and yellow-white heat against charcoal black and dim workshop brown.
+  lighting_and_shadow: Hot forge glow from below, sparks as bright streaks and deep workshop shadow.
+  texture_and_material: Glowing steel, scale, charcoal, water steam and worn leather aprons in detailed cel.
+  camera_and_composition: Close shots on hands, tools and glowing metal with occasional wide workshop frames.
+  atmosphere_and_mood: Focused and reverent, the quiet pride of skilled hands doing difficult work.
+  rendering_and_quality: Detailed prestige anime with careful process animation and glowing effects.
+  creative_brief: "Craft-process anime of forges and workshops: glowing metal, precise hand work, sparks and the patience of making. Carry it through forge glow, sparks, hands and tools, quench steam. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: forge glow; sparks; hands and tools; quench steam
+avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: samurai-and-medieval
+  categoryName: 6. Samurai & Medieval
+  tags:
+    - anime-classics-and-prestige
+    - samurai-and-medieval
+    - forge
+    - craft
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: craft process anime

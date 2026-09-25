@@ -3,7 +3,7 @@
     {
       "id": "pack_16",
       "name": "Anime 03 — Anime Classics & Prestige",
-      "presetCount": 141
+      "presetCount": 156
     }
   ],
   "presets": [
@@ -1837,9 +1837,8 @@
     },
     {
       "id": "SP13-026",
-      "name": "Pre-Impact Ritual Stillness",
-      "sourceName": "Pre-Impact Ritual Stillness Style",
-      "styleAnchors": ["Pre-Impact Ritual Stillness Style"],
+      "name": "Pre-Strike Stillness Anime",
+      "styleAnchors": ["Pre-Strike Stillness Anime"],
       "ref": "pack_16/SP13-026.yaml",
       "packId": "pack_16",
       "packName": "Anime 03 — Anime Classics & Prestige",
@@ -1847,13 +1846,12 @@
       "categoryName": "6. Samurai & Medieval",
       "tags": ["anime-03-anime-classics-and-prestige", "samurai-and-medieval"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-026 pre-impact ritual stillness pre-impact ritual stillness style 6. samurai & medieval period action pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval"
+      "searchableText": "sp13-026 pre-strike stillness anime 6. samurai & medieval period action pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval"
     },
     {
       "id": "SP13-027",
-      "name": "Crimson Formation Momentum",
-      "sourceName": "Crimson Formation Momentum Style",
-      "styleAnchors": ["Crimson Formation Momentum Style"],
+      "name": "Crimson Formation Charge Anime",
+      "styleAnchors": ["Crimson Formation Charge Anime"],
       "ref": "pack_16/SP13-027.yaml",
       "packId": "pack_16",
       "packName": "Anime 03 — Anime Classics & Prestige",
@@ -1861,13 +1859,12 @@
       "categoryName": "6. Samurai & Medieval",
       "tags": ["anime-03-anime-classics-and-prestige", "samurai-and-medieval"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-027 crimson formation momentum crimson formation momentum style 6. samurai & medieval period action pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval"
+      "searchableText": "sp13-027 crimson formation charge anime 6. samurai & medieval period action pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval"
     },
     {
       "id": "SP13-028",
-      "name": "Sacred Heraldic Vow",
-      "sourceName": "Sacred Heraldic Vow Style",
-      "styleAnchors": ["Sacred Heraldic Vow Style"],
+      "name": "Heraldic Oath Anime",
+      "styleAnchors": ["Heraldic Oath Anime"],
       "ref": "pack_16/SP13-028.yaml",
       "packId": "pack_16",
       "packName": "Anime 03 — Anime Classics & Prestige",
@@ -1875,13 +1872,12 @@
       "categoryName": "6. Samurai & Medieval",
       "tags": ["anime-03-anime-classics-and-prestige", "samurai-and-medieval"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-028 sacred heraldic vow sacred heraldic vow style 6. samurai & medieval period action pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval"
+      "searchableText": "sp13-028 heraldic oath anime 6. samurai & medieval period action pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval"
     },
     {
       "id": "SP13-029",
-      "name": "Ember Breach Pressure",
-      "sourceName": "Ember Breach Pressure Style",
-      "styleAnchors": ["Ember Breach Pressure Style"],
+      "name": "Siege Breach Ember Anime",
+      "styleAnchors": ["Siege Breach Ember Anime"],
       "ref": "pack_16/SP13-029.yaml",
       "packId": "pack_16",
       "packName": "Anime 03 — Anime Classics & Prestige",
@@ -1889,13 +1885,12 @@
       "categoryName": "6. Samurai & Medieval",
       "tags": ["anime-03-anime-classics-and-prestige", "samurai-and-medieval"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-029 ember breach pressure ember breach pressure style 6. samurai & medieval period action pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval"
+      "searchableText": "sp13-029 siege breach ember anime 6. samurai & medieval period action pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval"
     },
     {
       "id": "SP13-030",
-      "name": "Moonlit Ascetic Discipline",
-      "sourceName": "Moonlit Ascetic Discipline Style",
-      "styleAnchors": ["Moonlit Ascetic Discipline Style"],
+      "name": "Moonlit Ascetic Training Anime",
+      "styleAnchors": ["Moonlit Ascetic Training Anime"],
       "ref": "pack_16/SP13-030.yaml",
       "packId": "pack_16",
       "packName": "Anime 03 — Anime Classics & Prestige",
@@ -1903,7 +1898,281 @@
       "categoryName": "6. Samurai & Medieval",
       "tags": ["anime-03-anime-classics-and-prestige", "samurai-and-medieval"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-030 moonlit ascetic discipline moonlit ascetic discipline style 6. samurai & medieval period action pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval"
+      "searchableText": "sp13-030 moonlit ascetic training anime 6. samurai & medieval period action pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval"
+    },
+    {
+      "id": "SP13-071",
+      "name": "Ink-Splatter Swordplay Anime",
+      "styleAnchors": ["Ink-Splatter Swordplay Anime", "sumi ink action anime", "ink splatter"],
+      "ref": "pack_16/SP13-071.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "samurai-and-medieval",
+      "categoryName": "6. Samurai & Medieval",
+      "domain": "sumi ink action anime",
+      "tags": [
+        "anime-03-anime-classics-and-prestige",
+        "samurai-and-medieval",
+        "sumi-ink-action-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-071 ink-splatter swordplay anime sumi ink action anime ink splatter 6. samurai & medieval period action sumi ink action anime pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval sumi-ink-action-anime"
+    },
+    {
+      "id": "SP13-072",
+      "name": "Woodblock Palette Period Anime",
+      "styleAnchors": [
+        "Woodblock Palette Period Anime",
+        "ukiyo-e colored anime",
+        "flat printed color"
+      ],
+      "ref": "pack_16/SP13-072.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "samurai-and-medieval",
+      "categoryName": "6. Samurai & Medieval",
+      "domain": "ukiyo-e colored anime",
+      "tags": [
+        "anime-03-anime-classics-and-prestige",
+        "samurai-and-medieval",
+        "ukiyo-e-colored-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-072 woodblock palette period anime ukiyo-e colored anime flat printed color 6. samurai & medieval period action ukiyo-e colored anime pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval ukiyo-e-colored-anime"
+    },
+    {
+      "id": "SP13-073",
+      "name": "Rain Duel Slow-Motion Anime",
+      "styleAnchors": ["Rain Duel Slow-Motion Anime", "slow-motion rain anime", "frozen raindrops"],
+      "ref": "pack_16/SP13-073.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "samurai-and-medieval",
+      "categoryName": "6. Samurai & Medieval",
+      "domain": "slow-motion rain anime",
+      "tags": [
+        "anime-03-anime-classics-and-prestige",
+        "samurai-and-medieval",
+        "slow-motion-rain-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-073 rain duel slow-motion anime slow-motion rain anime frozen raindrops 6. samurai & medieval period action slow-motion rain anime pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval slow-motion-rain-anime"
+    },
+    {
+      "id": "SP13-074",
+      "name": "Snowfield Last Stand Anime",
+      "styleAnchors": ["Snowfield Last Stand Anime", "winter battle anime", "white expanse"],
+      "ref": "pack_16/SP13-074.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "samurai-and-medieval",
+      "categoryName": "6. Samurai & Medieval",
+      "domain": "winter battle anime",
+      "tags": [
+        "anime-03-anime-classics-and-prestige",
+        "samurai-and-medieval",
+        "winter-battle-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-074 snowfield last stand anime winter battle anime white expanse 6. samurai & medieval period action winter battle anime pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval winter-battle-anime"
+    },
+    {
+      "id": "SP13-075",
+      "name": "Grand Siege Panorama Anime",
+      "styleAnchors": ["Grand Siege Panorama Anime", "epic siege anime", "colossal walls"],
+      "ref": "pack_16/SP13-075.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "samurai-and-medieval",
+      "categoryName": "6. Samurai & Medieval",
+      "domain": "epic siege anime",
+      "tags": ["anime-03-anime-classics-and-prestige", "samurai-and-medieval", "epic-siege-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-075 grand siege panorama anime epic siege anime colossal walls 6. samurai & medieval period action epic siege anime pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval epic-siege-anime"
+    },
+    {
+      "id": "SP13-076",
+      "name": "Court Intrigue Lacquer Anime",
+      "styleAnchors": ["Court Intrigue Lacquer Anime", "palace politics anime", "paper screens"],
+      "ref": "pack_16/SP13-076.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "samurai-and-medieval",
+      "categoryName": "6. Samurai & Medieval",
+      "domain": "palace politics anime",
+      "tags": [
+        "anime-03-anime-classics-and-prestige",
+        "samurai-and-medieval",
+        "palace-politics-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-076 court intrigue lacquer anime palace politics anime paper screens 6. samurai & medieval period action palace politics anime pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval palace-politics-anime"
+    },
+    {
+      "id": "SP13-077",
+      "name": "Wandering Ronin Western Anime",
+      "styleAnchors": ["Wandering Ronin Western Anime", "drifter period anime", "empty road"],
+      "ref": "pack_16/SP13-077.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "samurai-and-medieval",
+      "categoryName": "6. Samurai & Medieval",
+      "domain": "drifter period anime",
+      "tags": [
+        "anime-03-anime-classics-and-prestige",
+        "samurai-and-medieval",
+        "drifter-period-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-077 wandering ronin western anime drifter period anime empty road 6. samurai & medieval period action drifter period anime pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval drifter-period-anime"
+    },
+    {
+      "id": "SP13-078",
+      "name": "Arthurian Tapestry Anime",
+      "styleAnchors": ["Arthurian Tapestry Anime", "medieval romance anime", "millefleur meadow"],
+      "ref": "pack_16/SP13-078.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "samurai-and-medieval",
+      "categoryName": "6. Samurai & Medieval",
+      "domain": "medieval romance anime",
+      "tags": [
+        "anime-03-anime-classics-and-prestige",
+        "samurai-and-medieval",
+        "medieval-romance-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-078 arthurian tapestry anime medieval romance anime millefleur meadow 6. samurai & medieval period action medieval romance anime pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval medieval-romance-anime"
+    },
+    {
+      "id": "SP13-079",
+      "name": "Crusade Desert Glare Anime",
+      "styleAnchors": ["Crusade Desert Glare Anime", "desert war anime", "blinding glare"],
+      "ref": "pack_16/SP13-079.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "samurai-and-medieval",
+      "categoryName": "6. Samurai & Medieval",
+      "domain": "desert war anime",
+      "tags": ["anime-03-anime-classics-and-prestige", "samurai-and-medieval", "desert-war-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-079 crusade desert glare anime desert war anime blinding glare 6. samurai & medieval period action desert war anime pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval desert-war-anime"
+    },
+    {
+      "id": "SP13-080",
+      "name": "Northern Saga Longship Anime",
+      "styleAnchors": ["Northern Saga Longship Anime", "viking saga anime", "longships"],
+      "ref": "pack_16/SP13-080.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "samurai-and-medieval",
+      "categoryName": "6. Samurai & Medieval",
+      "domain": "viking saga anime",
+      "tags": ["anime-03-anime-classics-and-prestige", "samurai-and-medieval", "viking-saga-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-080 northern saga longship anime viking saga anime longships 6. samurai & medieval period action viking saga anime pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval viking-saga-anime"
+    },
+    {
+      "id": "SP13-081",
+      "name": "Plague Year Chronicle Anime",
+      "styleAnchors": [
+        "Plague Year Chronicle Anime",
+        "dark medieval chronicle anime",
+        "masked doctors"
+      ],
+      "ref": "pack_16/SP13-081.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "samurai-and-medieval",
+      "categoryName": "6. Samurai & Medieval",
+      "domain": "dark medieval chronicle anime",
+      "tags": [
+        "anime-03-anime-classics-and-prestige",
+        "samurai-and-medieval",
+        "dark-medieval-chronicle-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-081 plague year chronicle anime dark medieval chronicle anime masked doctors 6. samurai & medieval period action dark medieval chronicle anime pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval dark-medieval-chronicle-anime"
+    },
+    {
+      "id": "SP13-082",
+      "name": "Tournament Pageantry Anime",
+      "styleAnchors": [
+        "Tournament Pageantry Anime",
+        "medieval tournament anime",
+        "striped pavilions"
+      ],
+      "ref": "pack_16/SP13-082.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "samurai-and-medieval",
+      "categoryName": "6. Samurai & Medieval",
+      "domain": "medieval tournament anime",
+      "tags": [
+        "anime-03-anime-classics-and-prestige",
+        "samurai-and-medieval",
+        "medieval-tournament-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-082 tournament pageantry anime medieval tournament anime striped pavilions 6. samurai & medieval period action medieval tournament anime pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval medieval-tournament-anime"
+    },
+    {
+      "id": "SP13-083",
+      "name": "Shadow Stealth Night Anime",
+      "styleAnchors": ["Shadow Stealth Night Anime", "ninja stealth anime", "blue darkness"],
+      "ref": "pack_16/SP13-083.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "samurai-and-medieval",
+      "categoryName": "6. Samurai & Medieval",
+      "domain": "ninja stealth anime",
+      "tags": [
+        "anime-03-anime-classics-and-prestige",
+        "samurai-and-medieval",
+        "ninja-stealth-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-083 shadow stealth night anime ninja stealth anime blue darkness 6. samurai & medieval period action ninja stealth anime pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval ninja-stealth-anime"
+    },
+    {
+      "id": "SP13-084",
+      "name": "Onmyoji Talisman Court Anime",
+      "styleAnchors": [
+        "Onmyoji Talisman Court Anime",
+        "Heian spirit exorcism anime",
+        "layered silk robes"
+      ],
+      "ref": "pack_16/SP13-084.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "samurai-and-medieval",
+      "categoryName": "6. Samurai & Medieval",
+      "domain": "Heian spirit exorcism anime",
+      "tags": [
+        "anime-03-anime-classics-and-prestige",
+        "samurai-and-medieval",
+        "heian-spirit-exorcism-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-084 onmyoji talisman court anime heian spirit exorcism anime layered silk robes 6. samurai & medieval period action heian spirit exorcism anime pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval heian-spirit-exorcism-anime"
+    },
+    {
+      "id": "SP13-085",
+      "name": "Swordsmith Forge Craft Anime",
+      "styleAnchors": ["Swordsmith Forge Craft Anime", "craft process anime", "forge glow"],
+      "ref": "pack_16/SP13-085.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "samurai-and-medieval",
+      "categoryName": "6. Samurai & Medieval",
+      "domain": "craft process anime",
+      "tags": [
+        "anime-03-anime-classics-and-prestige",
+        "samurai-and-medieval",
+        "craft-process-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-085 swordsmith forge craft anime craft process anime forge glow 6. samurai & medieval period action craft process anime pack_16 anime 03 — anime classics & prestige samurai-and-medieval anime-03-anime-classics-and-prestige samurai-and-medieval craft-process-anime"
     },
     {
       "id": "SP13-031",
@@ -1976,5 +2245,5 @@
       "searchableText": "sp13-035 demonic ritual mask geometry demonic ritual mask geometry style 7. horror horror animation pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror"
     }
   ],
-  "totalPresetCount": 141
+  "totalPresetCount": 156
 }

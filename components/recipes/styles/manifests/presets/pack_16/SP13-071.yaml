@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP13-071
+packId: pack_16
+name: Ink-Splatter Swordplay Anime
+styleAnchors:
+  - Ink-Splatter Swordplay Anime
+  - sumi ink action anime
+  - ink splatter
+displayName: Ink-Splatter Swordplay Anime
+category: 6. Samurai & Medieval
+domain: sumi ink action anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - samurai-and-medieval
+  - ink
+  - swordplay
+  - anime
+visualDna:
+  aesthetic: Action anime where every cut explodes into sumi ink splatter and brush arcs across paper-white backgrounds.
+  subject_treatment: Keep the prompt's subject and action; turn movement and impacts into brush arcs, ink splatter and dry-brush trails.
+  color_and_tone: Black ink on warm paper white with a single red accent for blood or cloth.
+  lighting_and_shadow: No realistic light; value comes from ink density, wet pools and dry brush.
+  texture_and_material: Wet ink pools, dry-bristle streaks, splatter dots and paper grain.
+  camera_and_composition: Dynamic diagonals with large empty paper areas around the action.
+  atmosphere_and_mood: Explosive and stylish, every lethal movement turned into a single line of poetry.
+  rendering_and_quality: Painterly anime action with bold brushwork over clean character line.
+  creative_brief: Action anime where every cut explodes into sumi ink splatter and brush arcs across paper-white backgrounds. Carry it through ink splatter, brush arcs, paper white, red accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.
+  key_features: ink splatter; brush arcs; paper white; red accent
+avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: samurai-and-medieval
+  categoryName: 6. Samurai & Medieval
+  tags:
+    - anime-classics-and-prestige
+    - samurai-and-medieval
+    - ink
+    - swordplay
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: sumi ink action anime

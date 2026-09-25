@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP13-026
 packId: pack_16
-name: Pre-Impact Ritual Stillness Style
+name: Pre-Strike Stillness Anime
 styleAnchors:
-  - 'Pre-Impact Ritual Stillness Style'
-displayName: 'Pre-Impact Ritual Stillness'
+  - Pre-Strike Stillness Anime
+displayName: Pre-Strike Stillness Anime
 category: 6. Samurai & Medieval
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -16,80 +16,22 @@ tags:
   - anime
   - samurai-medieval
 visualDna:
-  aesthetic: >-
-    Pre-Impact Ritual Stillness Style acts as a transferable anime-prestige router: formal rite
-    pressure and ceremonial anime severity, alongside a pre anime direction shaped by era-aware line
-    economy and genre tone; fuse it with prestige martial anime with restrained violence, ritual
-    stillness, heraldic form, textile discipline, and fatal composure; it routes era, genre, line
-    economy, cel or digital finish, and performance tone without locking prompt content to the
-    source title or sample image.
-  subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through poised contour,
-    held breath, and minimal motion cues, alongside contours paced by pre tension, readable pose
-    energy, and silhouette discipline; identity should remain readable through anime contour,
-    expression economy, pose energy, shape simplification, and effect hierarchy instead of a
-    required canon character or title scene.
-  color_and_tone: >-
-    Map color through a pre accent system held inside disciplined cel values, alongside a impact
-    accent system held inside disciplined cel values; anchor it in slate neutrals, lacquer crimson,
-    moonlit indigo, cedar brown, ember orange, and sparse metallic glints; keep value separation
-    clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested
-    content.
-  lighting_and_shadow: >-
-    Use white impact flashes and hard shadow breaks, alongside a pre light logic using cel rim, glow
-    behavior, and blocked shadow; combine it with raking lateral light, warm bounce, moonlit edges,
-    ember glow, and selective metal highlights; shadows should read as anime light design, rims
-    should clarify form, and glow or effects should support the prompt rather than replacing it.
-  texture_and_material: >-
-    Render wax, cloth, ash, lacquer, paper, and restrained blood-red marks, alongside cel paint and
-    ink grain tuned to pre material contrast; anchor surfaces in woven cloth, lacquer, cedar grain,
-    stone moisture, ash, polished metal, and restrained ink texture; cel edges, painted surfaces,
-    grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people,
-    objects, environments, action, and abstractions.
-  camera_and_composition: >-
-    Frame around withheld-motion setup and pre-impact pause, alongside impact bursts, recoil
-    spacing, and force-balanced cuts and rite intervals, axial pauses, and symbolic repetition, then
-    extend it with axial pressure, ritual asymmetry, pre-impact spacing, heraldic diagonals, and
-    calm negative space; the style should support portraits, props, machines, performances,
-    landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed
-    card layout.
-  atmosphere_and_mood: >-
-    Carry mood through breath control before release, alongside violent punctuation without gore
-    dependency and taboo formality and controlled spiritual pressure; braid it with discipline,
-    pre-impact breath, fatal code, sacred vow, controlled pressure, and quiet aftermath; the preset
-    can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for
-    it while preserving the chosen anime lineage.
-  rendering_and_quality: >-
-    Finish with clean anime finishing that keeps pre identity readable without noisy denoise,
-    alongside clean anime finishing that keeps impact identity readable without noisy denoise;
-    enforce high-fidelity martial anime finish with calm contour clarity, micro-contrast, and zero
-    ornamental clutter; prioritize clean denoise, stable anatomy or object structure, readable
-    effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or
-    3D-render drift.
-  key_features: >-
-    formal rite pressure and ceremonial anime severity, alongside a pre anime direction shaped by
-    era-aware line economy and genre tone; poised contour, held breath, and minimal motion cues,
-    alongside contours paced by pre tension, readable pose energy, and silhouette discipline; wax,
-    cloth, ash, lacquer, paper, and restrained blood-red marks, alongside cel paint and ink grain
-    tuned to pre material contrast; white impact flashes and hard shadow breaks, alongside a pre
-    light logic using cel rim, glow behavior, and blocked shadow; withheld-motion setup and
-    pre-impact pause, alongside impact bursts, recoil spacing, and force-balanced cuts and rite
-    intervals, axial pauses, and symbolic repetition
-  creative_brief: >-
-    Apply Pre-Impact Ritual Stillness Style after prompt X as a transferable anime-prestige layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
-    formal rite pressure and ceremonial anime severity, alongside a pre anime direction shaped by
-    era-aware line economy and genre tone, alongside poised contour, held breath, and minimal motion
-    cues, alongside contours paced by pre tension, readable pose energy, and silhouette discipline;
-    a pre accent system held inside disciplined cel values, alongside a impact accent system held
-    inside disciplined cel values; white impact flashes and hard shadow breaks, alongside a pre
-    light logic using cel rim, glow behavior, and blocked shadow; wax, cloth, ash, lacquer, paper,
-    and restrained blood-red marks, alongside cel paint and ink grain tuned to pre material contrast
-    and withheld-motion setup and pre-impact pause, alongside impact bursts, recoil spacing, and
-    force-balanced cuts and rite intervals, axial pauses, and symbolic repetition, finish
-    discipline, and negative controls without requiring a fixed canon cast, title scene, prop
-    bundle, location, sport, instrument, weapon, or card composition.
+  aesthetic: 'Prestige period anime frozen in the breath before a strike: long held frames, severe composition and a single thin line of tension.'
+  subject_treatment: Keep the prompt's subject, action and setting; draw it at the instant before motion, weight settled, eyes fixed, hands resting near what they will use.
+  color_and_tone: Slate greys, lacquer crimson and moonlit indigo with one sharp accent, mostly desaturated around a single warm point.
+  lighting_and_shadow: Raking side light and long hard shadows, faces half in dark, a thin rim tracing the silhouette.
+  texture_and_material: Clean cel with fine ink line, woven cloth folds and lacquer gloss kept sparse and controlled.
+  camera_and_composition: Wide static frames with large empty space, or extreme close-ups on eyes and hands, nothing moving yet.
+  atmosphere_and_mood: Silent, tense and ceremonial, like a held breath just before something fatal happens.
+  rendering_and_quality: Theatrical prestige anime key frame with precise line weight and restrained effects.
+  key_features: held breath; empty space; raking light; eye and hand close-ups
+  creative_brief: "Prestige period anime frozen in the breath before a strike: long held frames, severe composition and a single thin line of tension. Carry it through held breath, empty space, raking light, eye and hand close-ups. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
   - photoreal
   - modern-firearms
   - sci-fi-neon
@@ -103,15 +45,16 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
   - signature
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-026.webp
 attributes:
-  negativePrompt: >-
-    photoreal, modern-firearms, sci-fi-neon, watermark, text, logo, generic samurai cosplay, fixed
-    canon character, literal title scene, required anime screenshot, generic anime filter,
-    prompt-literal card, muddy cel noise, readable text, signature
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, modern-firearms, sci-fi-neon, watermark, text, logo, generic samurai cosplay, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

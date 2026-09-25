@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP13-073
+packId: pack_16
+name: Rain Duel Slow-Motion Anime
+styleAnchors:
+  - Rain Duel Slow-Motion Anime
+  - slow-motion rain anime
+  - frozen raindrops
+displayName: Rain Duel Slow-Motion Anime
+category: 6. Samurai & Medieval
+domain: slow-motion rain anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - samurai-and-medieval
+  - rain
+  - slow-motion
+  - anime
+visualDna:
+  aesthetic: 'Slow-motion anime in heavy rain: every drop frozen as a bright bead, splashes suspended around moving figures.'
+  subject_treatment: Keep the prompt's subject and action; slow it down so raindrops, splashes and hair hang in the air around it.
+  color_and_tone: Wet slate blue and grey with bright white droplets and one warm color accent.
+  lighting_and_shadow: Backlight through rain making drops glow, dark wet reflections on the ground.
+  texture_and_material: Beaded raindrops, soaked cloth and glossy wet surfaces drawn crisply.
+  camera_and_composition: Close and mid frames with drops in the foreground, subjects caught mid-motion.
+  atmosphere_and_mood: Suspended and melancholy, intense moments stretched out until they become strangely beautiful.
+  rendering_and_quality: Detailed anime effects work with sharp droplets and clean motion.
+  creative_brief: "Slow-motion anime in heavy rain: every drop frozen as a bright bead, splashes suspended around moving figures. Carry it through frozen raindrops, suspended splash, backlit rain, wet reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: frozen raindrops; suspended splash; backlit rain; wet reflections
+avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: samurai-and-medieval
+  categoryName: 6. Samurai & Medieval
+  tags:
+    - anime-classics-and-prestige
+    - samurai-and-medieval
+    - rain
+    - slow-motion
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: slow-motion rain anime

@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP13-074
+packId: pack_16
+name: Snowfield Last Stand Anime
+styleAnchors:
+  - Snowfield Last Stand Anime
+  - winter battle anime
+  - white expanse
+displayName: Snowfield Last Stand Anime
+category: 6. Samurai & Medieval
+domain: winter battle anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - samurai-and-medieval
+  - snow
+  - last-stand
+  - anime
+visualDna:
+  aesthetic: 'Winter war anime of small groups holding out in endless snow: white silence, dark figures and red accents.'
+  subject_treatment: Keep the prompt's subject and setting; isolate it in a vast snowy space, dark against white, with falling snow.
+  color_and_tone: Near-monochrome white and blue-grey with dark figures and one sharp red accent.
+  lighting_and_shadow: Flat overcast light with soft blue shadows and bright snow glare.
+  texture_and_material: Falling snow, frost on armor and fur, deep footprints drawn simply.
+  camera_and_composition: Extreme wide shots with tiny figures, or tight faces with snow in the lashes.
+  atmosphere_and_mood: Desperate and cold, a quiet heroism in small figures refusing to leave the snow.
+  rendering_and_quality: Minimal prestige anime with strong silhouettes and soft snow effects.
+  creative_brief: "Winter war anime of small groups holding out in endless snow: white silence, dark figures and red accents. Carry it through white expanse, dark silhouettes, falling snow, red accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: white expanse; dark silhouettes; falling snow; red accent
+avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: samurai-and-medieval
+  categoryName: 6. Samurai & Medieval
+  tags:
+    - anime-classics-and-prestige
+    - samurai-and-medieval
+    - snow
+    - last-stand
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: winter battle anime

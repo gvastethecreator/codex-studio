@@ -160,6 +160,21 @@ categories:
       - pack_16/SP13-028.yaml
       - pack_16/SP13-029.yaml
       - pack_16/SP13-030.yaml
+      - pack_16/SP13-071.yaml
+      - pack_16/SP13-072.yaml
+      - pack_16/SP13-073.yaml
+      - pack_16/SP13-074.yaml
+      - pack_16/SP13-075.yaml
+      - pack_16/SP13-076.yaml
+      - pack_16/SP13-077.yaml
+      - pack_16/SP13-078.yaml
+      - pack_16/SP13-079.yaml
+      - pack_16/SP13-080.yaml
+      - pack_16/SP13-081.yaml
+      - pack_16/SP13-082.yaml
+      - pack_16/SP13-083.yaml
+      - pack_16/SP13-084.yaml
+      - pack_16/SP13-085.yaml
   - id: horror
     name: 7. Horror
     presetRefs:
@@ -305,6 +320,21 @@ presetRefs:
   - pack_16/SP13-028.yaml
   - pack_16/SP13-029.yaml
   - pack_16/SP13-030.yaml
+  - pack_16/SP13-071.yaml
+  - pack_16/SP13-072.yaml
+  - pack_16/SP13-073.yaml
+  - pack_16/SP13-074.yaml
+  - pack_16/SP13-075.yaml
+  - pack_16/SP13-076.yaml
+  - pack_16/SP13-077.yaml
+  - pack_16/SP13-078.yaml
+  - pack_16/SP13-079.yaml
+  - pack_16/SP13-080.yaml
+  - pack_16/SP13-081.yaml
+  - pack_16/SP13-082.yaml
+  - pack_16/SP13-083.yaml
+  - pack_16/SP13-084.yaml
+  - pack_16/SP13-085.yaml
   - pack_16/SP13-031.yaml
   - pack_16/SP13-032.yaml
   - pack_16/SP13-033.yaml

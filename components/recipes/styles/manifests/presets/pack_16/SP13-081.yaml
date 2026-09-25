@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP13-081
+packId: pack_16
+name: Plague Year Chronicle Anime
+styleAnchors:
+  - Plague Year Chronicle Anime
+  - dark medieval chronicle anime
+  - masked doctors
+displayName: Plague Year Chronicle Anime
+category: 6. Samurai & Medieval
+domain: dark medieval chronicle anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - samurai-and-medieval
+  - plague
+  - chronicle
+  - anime
+visualDna:
+  aesthetic: 'Somber medieval chronicle anime of a plague year: muted streets, masked doctors, empty markets and candle vigils.'
+  subject_treatment: Keep the prompt's subject and setting; place it in a time of sickness and fear, with distance between people.
+  color_and_tone: Muted ash, mud brown and bone with sickly green and small candle-gold accents.
+  lighting_and_shadow: Dim overcast light and candlelight, heavy shadows in narrow streets and doorways.
+  texture_and_material: Rough wool, wax cloth, rotting timber and muddy cobbles drawn with thin nervous line.
+  camera_and_composition: Narrow alleys and doorways, figures isolated, empty space between them.
+  atmosphere_and_mood: Grim and hushed, fear and kindness sharing the same narrow, silent streets.
+  rendering_and_quality: Restrained prestige anime with muted painting and fine, careful detail.
+  creative_brief: "Somber medieval chronicle anime of a plague year: muted streets, masked doctors, empty markets and candle vigils. Carry it through masked doctors, empty streets, candle vigils, muted palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: masked doctors; empty streets; candle vigils; muted palette
+avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - gore
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: samurai-and-medieval
+  categoryName: 6. Samurai & Medieval
+  tags:
+    - anime-classics-and-prestige
+    - samurai-and-medieval
+    - plague
+    - chronicle
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: dark medieval chronicle anime

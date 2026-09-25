@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP13-083
+packId: pack_16
+name: Shadow Stealth Night Anime
+styleAnchors:
+  - Shadow Stealth Night Anime
+  - ninja stealth anime
+  - blue darkness
+displayName: Shadow Stealth Night Anime
+category: 6. Samurai & Medieval
+domain: ninja stealth anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - samurai-and-medieval
+  - stealth
+  - night
+  - anime
+visualDna:
+  aesthetic: 'Stealth anime of night infiltration: deep blue darkness, silhouettes on rooftops and thin blades of moonlight.'
+  subject_treatment: Keep the prompt's subject and setting; hide it in darkness so only edges, eyes and small highlights remain visible.
+  color_and_tone: Deep indigo and black with pale moon silver and a tiny warm lantern accent.
+  lighting_and_shadow: Moonlight rim on silhouettes, pools of shadow and occasional lantern glow in windows.
+  texture_and_material: Tiled rooftops, dark cloth and wet stone reduced to silhouette and rim line.
+  camera_and_composition: High rooftop angles and tight framing on eyes, with most of the frame dark.
+  atmosphere_and_mood: Silent and watchful, a held breath while guards pass by just below.
+  rendering_and_quality: Low-key prestige anime with clean silhouettes and precise rim lighting.
+  creative_brief: "Stealth anime of night infiltration: deep blue darkness, silhouettes on rooftops and thin blades of moonlight. Carry it through blue darkness, moonlit rims, rooftop silhouettes, lantern windows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: blue darkness; moonlit rims; rooftop silhouettes; lantern windows
+avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: samurai-and-medieval
+  categoryName: 6. Samurai & Medieval
+  tags:
+    - anime-classics-and-prestige
+    - samurai-and-medieval
+    - stealth
+    - night
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: ninja stealth anime

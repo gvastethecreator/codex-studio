@@ -73,7 +73,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       'Timeless anime craft across classics, sports drama, auteur studio works, retro eras, samurai epics, and horror prestige.',
     cardTitle: 'Anime Prestige',
     cardDescription: 'Classic anime craft, prestige drama, retro eras.',
-    presetCount: 141,
+    presetCount: 156,
   },
   {
     id: 'pack_06',
