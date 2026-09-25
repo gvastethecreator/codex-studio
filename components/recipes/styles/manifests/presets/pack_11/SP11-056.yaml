@@ -3,7 +3,7 @@ id: SP11-056
 packId: pack_11
 name: Electron Microscope
 category: 5. Micro Macro
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,65 +12,24 @@ tags:
   - miscellaneous-and-fun
   - micro-macro
 visualDna:
-  aesthetic: >-
-    Electron Microscope operates as a portable source-router layer: combine SEM scan,
-    electron-micrograph, nano-landscape, sub-micron-world, vacuum-chamber art with magnified
-    source-study logic with scale shift, optical detail, structural pattern, and
-    specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed
-    card scene or literal sample.
-  subject_treatment: >-
-    Preserve the prompt's subject plus requested motion and context while letting forms magnify,
-    reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure
-    through Tiny details, micro-sphere contours, crystalline-facet edges, dendrite-branch, nanowire
-    strands; identity stays readable through construction grammar, proportion, edge logic, and
-    detail scale as this preset is applied.
-  color_and_tone: >-
-    Map color through source-derived color variation, iridescence, false-scale contrast, translucent
-    edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and
-    palette behavior attached to the subject's forms instead of pasted decoration.
-  lighting_and_shadow: >-
-    Use Scanning beam, raster-scan lines, secondary-electron emission, top-down detector, spot-mode
-    shadow plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections,
-    and shallow optical falloff as the light-response contract, with readable hierarchy, controlled
-    contact detail, and no lighting choice that erases the user's requested content.
-  texture_and_material: >-
-    Render Alien landscape, nanometer-roughness, sputter-coated surface, carbon-tape distant-plane,
-    electron-discharge artifact plus pores, fibers, facets, droplets, spores, grain, grooves, cells,
-    filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores,
-    edges, or signal artifacts must remain coherent across figures, objects, and environments.
-  camera_and_composition: >-
-    Compose with Dust looks like boulders, scale-shift vertigo, micro-to-macro confusion,
-    feature-magnification awe plus scale abstraction, repeated micro-patterns, sectional rhythm,
-    optical compression, and detail-first framing as reusable framing grammar, allowing cards,
-    portraits, objects, scenes, and abstract prompts to inherit the style without one required
-    layout.
-  atmosphere_and_mood: >-
-    Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural
-    engineering, entropy, and fragile wonder; the emotional tone should feel specific to Electron
-    Microscope while still obeying the prompt's subject and context.
-  rendering_and_quality: >-
-    Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy
-    stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled
-    detail, and a finished image with no watermark, fake text, or accidental UI.
-  key_features: >-
-    SEM scan, electron-micrograph, nano-landscape, sub-micron-world, vacuum-chamber art; Tiny
-    details, micro-sphere contours, crystalline-facet edges, dendrite-branch, nanowire strands;
-    Alien landscape, nanometer-roughness, sputter-coated surface, carbon-tape distant-plane,
-    electron-discharge artifact; Scanning beam, raster-scan lines, secondary-electron emission,
-    top-down detector, spot-mode shadow; Dust looks like boulders, scale-shift vertigo,
-    micro-to-macro confusion, feature-magnification awe
-  creative_brief: >-
-    Use Electron Microscope after prompt X as a transferable style layer: prompt X supplies subject,
-    action, and setting, while the preset supplies SEM scan, electron-micrograph, nano-landscape,
-    sub-micron-world, vacuum-chamber art, Tiny details, micro-sphere contours, crystalline-facet
-    edges, dendrite-branch, nanowire strands, Alien landscape, nanometer-roughness, sputter-coated
-    surface, carbon-tape distant-plane, electron-discharge artifact, Scanning beam, raster-scan
-    lines, secondary-electron emission, top-down detector, spot-mode shadow, Dust looks like
-    boulders, scale-shift vertigo, micro-to-macro confusion, feature-magnification awe plus
-    microstructure, magnification artifacts, focus stacking, surface topology, optical refraction,
-    and scale-legible detail, palette behavior, light response, material treatment, and finish
-    discipline without requiring one specimen, prop bundle, product still, or card composition.
+  aesthetic: 'Scanning electron micrograph: grey, razor-sharp microscopic landscape with deep focus and edge glow.'
+  subject_treatment: "Show the prompt's subject at this magnification, or let its shape and action emerge from this specimen texture while staying recognizable: rendered as a greyscale SEM image with bright edges, deep focus and sculptural microstructures; false color only if asked."
+  color_and_tone: Monochrome grey with bright edge highlights, as the instrument or lens would record it.
+  lighting_and_shadow: Electron-beam edge glow with no cast shadows, matching the real imaging setup at this scale.
+  texture_and_material: Microscopic ridges, spores, hairs and crystalline grains, resolved in fine detail at extreme magnification.
+  camera_and_composition: Extreme close-up or microscope field with shallow or instrument-specific depth, the specimen filling the frame and scale implied by structure.
+  atmosphere_and_mood: Alien, precise, eerie and fascinating, from discovering a hidden world at tiny scale.
+  rendering_and_quality: Scientific-grade macro or micrograph realism with crisp structure and believable optics.
+  key_features: greyscale SEM; edge glow; deep focus; microstructure
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Electron Microscope as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - medical gore
+  - readable scale bar text
   - color
   - far away
   - generic macro blur
@@ -81,13 +40,16 @@ avoidRules:
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-056.webp
 attributes:
-  negativePrompt: >-
-    color, far away, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen,
-    literal card scene, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, color, far away, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

@@ -5883,5 +5883,101 @@
   "SP11-107": [
     "Ramen bowl with dark tonkotsu broth swirled with black garlic oil, a skull-shaped fishcake, halved marinated egg, chashu and scallions, steam rising in moody backlight. No text or logo.",
     "Steaming ramen bowl on a tiny counter at a rainy-night noodle stall, rain streaking past the curtain, chopsticks lifting noodles, lantern light glowing in the glossy broth. No text or logo."
+  ],
+  "SP11-056": [
+    "Greyscale SEM image of a field of diatom shells arranged like the ruins of a cathedral, lace-like pores in every shell, a single spore resting on an arch, bright edge glow and deep focus. No text or scale bar.",
+    "Electron micrograph of a moth's wing scales overlapping like tiles on a dark roof, one scale lifted and curled, a dust mite crawling across the ridges, crisp greyscale edge glow. No text or scale bar."
+  ],
+  "SP11-057": [
+    "Macro of a horsefly's compound eye with red and green interference bands, a gothic window reflected across every facet, glassy hexagons curving away into blur. No text or logo.",
+    "Macro portrait of a jumping spider with glossy black main eyes reflecting a hooded wanderer holding a lantern, iridescent scales on its head and fine hairs catching the ring light. No text or logo."
+  ],
+  "SP11-058": [
+    "Brightfield histology slide stained pink and violet in which the tissue folds read as a mountain fortress at dusk, soft backlight, granular cytoplasm and dark nuclei like windows. No text or scale bar.",
+    "Fluorescent neurons branching like a black winter forest, one bright cell glowing amber at the center like a lantern in the woods, dendrites crossing in blue and magenta. No text or scale bar."
+  ],
+  "SP11-059": [
+    "Snowflake macro with a thick hexagonal plate at the center like a frozen throne room, feathery dendrites radiating outward, backlit so the ridges glow cold blue. No text or logo.",
+    "Frost crystals growing across an old leaded window in the shape of a rider on horseback, feathery ice ferns, dawn backlight turning the frost gold at the edges. No text or logo."
+  ],
+  "SP11-060": [
+    "Silicon die macro with rainbow interference sheen, its logic blocks laid out like a labyrinth garden, a single dust particle at the center like a lost wanderer. No text or logo.",
+    "Circuit board macro at night angle with warm LEDs glowing like windows in a sleeping town, copper roads, solder-bead boulders and a mite crossing a trace bridge. No text or logo."
+  ],
+  "SP11-061": [
+    "Row of dew drops strung along a spider thread at dawn, each drop holding an inverted image of a burning torch procession, golden bokeh behind. No text or logo.",
+    "Single raindrop on a dark leaf refracting a raven taking flight across a stormy sky, meniscus edge glowing, smaller droplets around it. No text or logo."
+  ],
+  "SP11-062": [
+    "Macro of an old embroidered tapestry where the gold-thread stitches of a serpent become giant twisted cables, frayed ends and dust in the weave. No text or logo.",
+    "Silk weave macro shimmering like a moonlit landscape of woven hills, one pulled thread running across it like a river, soft side light. No text or logo."
+  ],
+  "SP11-063": [
+    "Rust macro on an old ship hull where corrosion blooms spread like the tentacles of a kraken, peeling teal paint and salt crust, raking light. No text or logo.",
+    "Macro of a rusted skeleton key where oxide crystals rise like crumbling towers along the bit, flakes of paint caught in the teeth, dark iron beneath. No text or logo."
+  ],
+  "SP11-064": [
+    "Macro of a pale grey iris with a witch holding a candle reflected in the pupil, fine fibers and a dark limbal ring, soft ring-light reflection. No text or logo.",
+    "Iris macro in deep violet and amber radiating like a solar eclipse, a lone hooded figure reflected small in the pupil, glossy wet surface. No text or logo."
+  ],
+  "SP11-065": [
+    "Soap bubble drifting through a dark castle hall, its skin reflecting a candlelit banquet table in curved rainbow colors, tiny black thin spots on top. No text or logo.",
+    "Cluster of soap bubbles joined by thin walls like a floating palace, each surface reflecting a stained-glass window, swirling magenta and teal film. No text or logo."
+  ],
+  "SP11-067": [
+    "Macro of a peacock feather eye, blue and bronze barbules forming a watchful dragon-like eye, structural iridescence shifting under side light. No text or logo.",
+    "Owl feather macro with soft downy barbs like a snowy landscape at dusk, fringe edges catching light, a tiny seed caught in the plumage. No text or logo."
+  ],
+  "SP11-068": [
+    "Macro of a leaf skeleton with lace-like veins forming the tracery of a gothic rose window, backlit against a dark sky. No text or logo.",
+    "Green leaf macro where the veins read as a river delta seen from above, cells like tiny fields, chlorophyll glowing in strong backlight. No text or logo."
+  ],
+  "SP11-069": [
+    "Skin macro of an old blackwork tattoo of a serpent, ink settled into pores and fine lines, slightly blurred edges, soft side light. No text or logo.",
+    "Macro of a fingertip whose ridge pattern forms a labyrinth, a bead of sweat at its center like a pool, soft raking light. No text or logo."
+  ],
+  "SP11-070": [
+    "Ink cloud unfurling in dark water into a ghostly lady in a flowing gown, pale indigo tendrils against black. No text or logo.",
+    "Ink drops sinking in clear water as vortex rings that stack into the smoke towers of a castle, violet and gold ink on white. No text or logo."
+  ],
+  "SP11-071": [
+    "Macro of mold spore heads rising like a forest of black-capped trees on a crust of old bread, fuzzy hyphae fog between them, dim light. No text or logo.",
+    "Fungal growth spreading across a slice of bread in colored patches like the map of rival kingdoms, fuzzy borders where they meet. No text or logo."
+  ],
+  "SP11-072": [
+    "Crystal growth forming the ribcage of a giant beast from white salt needles on black stone, sharp facets glinting. No text or logo.",
+    "Rainbow bismuth crystal like a stepped temple staircase, iridescent oxide colors on square terraces, hard side light. No text or logo."
+  ],
+  "SP11-073": [
+    "Groove macro of an old record with dust particles like boulders and a hair like a fallen tree across the canyon, rainbow sheen. No text or logo.",
+    "Vinyl record macro where the grooves of a loud passage become jagged cliffs, the stylus throwing a long shadow, dark glossy surface. No text or logo."
+  ],
+  "SP11-074": [
+    "Hook-and-loop macro with curved hooks lined up like a field of scythes under a pale light, loops blurred in the background. No text or logo.",
+    "Macro of fastener loops like a tangled jungle canopy with a single torn fiber drooping like a rope bridge. No text or logo."
+  ],
+  "SP11-075": [
+    "Sponge macro in amber light where the open cells frame a hidden face formed by shadows. No text or logo.",
+    "Synthetic sponge cells like a honeycomb city of round rooms, soft light glowing through thin walls. No text or logo."
+  ],
+  "SP11-076": [
+    "Moss macro covering a fallen stone carving of a face, tiny leaves in its eye sockets, morning dew. No text or logo.",
+    "Moss macro with a snail climbing a spore stalk like a slow dragon on a tower, soft green light. No text or logo."
+  ],
+  "SP11-077": [
+    "Sandpaper macro with a single red grain rising like a fortress on a hill of grey grit. No text or logo.",
+    "Macro of fine grit like a desert of glittering crystals, one hair lying across like a fallen pillar. No text or logo."
+  ],
+  "SP11-078": [
+    "Macro of a wine cork with wine-stained pores like red caves, broken cell walls at the cut edge. No text or logo.",
+    "Cork bark macro with deep cracks like canyons and a small spider crossing a ridge. No text or logo."
+  ],
+  "SP11-079": [
+    "Carbon fiber macro following the curve of a helmet shell, weave pattern bending over the edge, glossy clearcoat. No text or logo.",
+    "Macro of carbon fiber weave like a woven dark landscape, one frayed tow like a fallen tree. No text or logo."
+  ],
+  "SP11-080": [
+    "Single dandelion seed drifting past a black castle silhouette at dusk, pappus hairs glowing. No text or logo.",
+    "Macro of dandelion seeds caught in a spider web like trapped stars, dew and dark background. No text or logo."
   ]
 }
