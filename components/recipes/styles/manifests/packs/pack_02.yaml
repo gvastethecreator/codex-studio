@@ -24,6 +24,10 @@ categories:
       - pack_02/SP02-014.yaml
       - pack_02/SP02-015.yaml
       - pack_02/SP02-016.yaml
+      - pack_02/SP02-130.yaml
+      - pack_02/SP02-131.yaml
+      - pack_02/SP02-132.yaml
+      - pack_02/SP02-133.yaml
   - id: tv-and-broadcast
     name: 2. TV And Broadcast
     presetRefs:
@@ -175,6 +179,10 @@ presetRefs:
   - pack_02/SP02-014.yaml
   - pack_02/SP02-015.yaml
   - pack_02/SP02-016.yaml
+  - pack_02/SP02-130.yaml
+  - pack_02/SP02-131.yaml
+  - pack_02/SP02-132.yaml
+  - pack_02/SP02-133.yaml
   - pack_02/SP02-017.yaml
   - pack_02/SP02-018.yaml
   - pack_02/SP02-019.yaml

@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP02-132
+packId: pack_02
+name: Italian Neorealism
+styleAnchors:
+  - Italian Neorealism
+  - postwar neorealist cinema
+  - real locations
+displayName: Italian Neorealism
+category: 1. Film Genres
+domain: postwar neorealist cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - film-genres
+  - neorealism
+  - black-and-white
+  - documentary-cinema
+visualDna:
+  aesthetic: 'Italian neorealism: postwar black-and-white cinema shot in real streets and courtyards with non-actors, available light and plain, honest framing.'
+  subject_treatment: Keep the prompt subject, action and setting; translate them through this genre's camera, lighting, film stock and grade, without adding genre costumes, sets or plot events the prompt did not ask for.
+  color_and_tone: Soft grey black and white with open shadows and hazy daylight.
+  lighting_and_shadow: Natural daylight and overcast skies; no studio lighting or glamour.
+  texture_and_material: Worn clothes, rubble, laundry lines, cracked plaster and cobbles.
+  camera_and_composition: Eye-level medium and wide shots, people embedded in crowds and real places, long lenses rare.
+  atmosphere_and_mood: Humane and aching, ordinary struggle filmed with compassion.
+  rendering_and_quality: Grainy postwar film stock; no stylization and no heroic posing.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Italian Neorealism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: real locations; non-actor faces; available daylight; eye-level framing; soft grey black and white
+avoidRules:
+  - watermark
+  - readable fake text
+  - logo clutter
+  - franchise likeness
+  - recognizable film character
+  - real actor likeness
+  - celebrity likeness
+  - adding genre costumes or plot the prompt did not ask for
+  - glamour lighting
+  - color
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: watermark, readable fake text, logo clutter, franchise likeness, recognizable film character, real actor likeness, celebrity likeness, adding genre costumes or plot the prompt did not ask for, glamour lighting, color, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: film-genres
+  categoryName: 1. Film Genres
+  tags:
+    - cinematic-and-media
+    - film-genres
+    - neorealism
+    - black-and-white
+    - documentary-cinema
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: postwar neorealist cinema

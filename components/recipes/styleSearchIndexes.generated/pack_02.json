@@ -3,7 +3,7 @@
     {
       "id": "pack_02",
       "name": "Cinematic & Media",
-      "presetCount": 129
+      "presetCount": 133
     }
   ],
   "presets": [
@@ -117,7 +117,8 @@
     },
     {
       "id": "SP02-010",
-      "name": "Kung Fu Studio Epic (Shaw Brothers)",
+      "name": "70s Kung Fu Studio Epic",
+      "styleAnchors": ["70s Kung Fu Studio Epic"],
       "ref": "pack_02/SP02-010.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -125,7 +126,7 @@
       "categoryName": "1. Film Genres",
       "tags": ["cinematic-and-media", "film-genres"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-010 kung fu studio epic (shaw brothers) 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
+      "searchableText": "sp02-010 70s kung fu studio epic 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
     },
     {
       "id": "SP02-011",
@@ -141,7 +142,8 @@
     },
     {
       "id": "SP02-012",
-      "name": "Wes Anderson Symmetrical Storybook Cinema",
+      "name": "Symmetrical Storybook Cinema",
+      "styleAnchors": ["Symmetrical Storybook Cinema"],
       "ref": "pack_02/SP02-012.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -149,7 +151,7 @@
       "categoryName": "1. Film Genres",
       "tags": ["cinematic-and-media", "film-genres"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-012 wes anderson symmetrical storybook cinema 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
+      "searchableText": "sp02-012 symmetrical storybook cinema 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
     },
     {
       "id": "SP02-013",
@@ -198,6 +200,70 @@
       "tags": ["cinematic-and-media", "film-genres"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp02-016 space opera (70s) 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
+    },
+    {
+      "id": "SP02-130",
+      "name": "German Expressionist Cinema",
+      "styleAnchors": [
+        "German Expressionist Cinema",
+        "expressionist silent film",
+        "painted crooked sets"
+      ],
+      "ref": "pack_02/SP02-130.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "film-genres",
+      "categoryName": "1. Film Genres",
+      "domain": "expressionist silent film",
+      "tags": ["cinematic-and-media", "film-genres", "expressionist-silent-film"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-130 german expressionist cinema expressionist silent film painted crooked sets 1. film genres cinema languages expressionist silent film pack_02 cinematic & media film-genres cinematic-and-media film-genres expressionist-silent-film"
+    },
+    {
+      "id": "SP02-131",
+      "name": "80s Sword-and-Sorcery Film",
+      "styleAnchors": [
+        "80s Sword-and-Sorcery Film",
+        "80s practical fantasy cinema",
+        "blue backlit fog"
+      ],
+      "ref": "pack_02/SP02-131.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "film-genres",
+      "categoryName": "1. Film Genres",
+      "domain": "80s practical fantasy cinema",
+      "tags": ["cinematic-and-media", "film-genres", "80s-practical-fantasy-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-131 80s sword-and-sorcery film 80s practical fantasy cinema blue backlit fog 1. film genres cinema languages 80s practical fantasy cinema pack_02 cinematic & media film-genres cinematic-and-media film-genres 80s-practical-fantasy-cinema"
+    },
+    {
+      "id": "SP02-132",
+      "name": "Italian Neorealism",
+      "styleAnchors": ["Italian Neorealism", "postwar neorealist cinema", "real locations"],
+      "ref": "pack_02/SP02-132.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "film-genres",
+      "categoryName": "1. Film Genres",
+      "domain": "postwar neorealist cinema",
+      "tags": ["cinematic-and-media", "film-genres", "postwar-neorealist-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-132 italian neorealism postwar neorealist cinema real locations 1. film genres cinema languages postwar neorealist cinema pack_02 cinematic & media film-genres cinematic-and-media film-genres postwar-neorealist-cinema"
+    },
+    {
+      "id": "SP02-133",
+      "name": "Peplum Sword-and-Sandal Epic",
+      "styleAnchors": ["Peplum Sword-and-Sandal Epic", "peplum epic cinema", "painted skies"],
+      "ref": "pack_02/SP02-133.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "film-genres",
+      "categoryName": "1. Film Genres",
+      "domain": "peplum epic cinema",
+      "tags": ["cinematic-and-media", "film-genres", "peplum-epic-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-133 peplum sword-and-sandal epic peplum epic cinema painted skies 1. film genres cinema languages peplum epic cinema pack_02 cinematic & media film-genres cinematic-and-media film-genres peplum-epic-cinema"
     },
     {
       "id": "SP02-017",
@@ -1556,5 +1622,5 @@
       "searchableText": "sp02-099 punk zine cut-and-paste 8. hand-drawn and diy media diy drawing surfaces pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media"
     }
   ],
-  "totalPresetCount": 129
+  "totalPresetCount": 133
 }

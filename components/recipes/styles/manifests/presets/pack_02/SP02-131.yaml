@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP02-131
+packId: pack_02
+name: 80s Sword-and-Sorcery Film
+styleAnchors:
+  - 80s Sword-and-Sorcery Film
+  - 80s practical fantasy cinema
+  - blue backlit fog
+displayName: 80s Sword-and-Sorcery Film
+category: 1. Film Genres
+domain: 80s practical fantasy cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - film-genres
+  - sword-and-sorcery
+  - 80s-cinema
+  - fantasy
+visualDna:
+  aesthetic: '80s sword-and-sorcery cinema: practical fantasy films with backlit fog, torch-lit sets, rubber creatures and sweaty, rim-lit warriors on 35 mm.'
+  subject_treatment: Keep the prompt subject, action and setting; translate them through this genre's camera, lighting, film stock and grade, without adding genre costumes, sets or plot events the prompt did not ask for.
+  color_and_tone: Blue backlit fog against orange torchlight, deep blacks, bronze skin highlights.
+  lighting_and_shadow: Strong blue backlight through fog, warm torches as key, hard rim light outlining muscles and blades.
+  texture_and_material: Fur, oiled leather, rough bronze and iron, foam-rubber creatures, dry-ice smoke on the floor.
+  camera_and_composition: Low heroic angles, silhouettes on smoky altars, anamorphic flares from torches.
+  atmosphere_and_mood: Savage and mythic, pulpy heroism in a haze of smoke.
+  rendering_and_quality: 35 mm grain and practical-effects charm; not a painted pulp illustration.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 80s Sword-and-Sorcery Film as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: blue backlit fog; orange torch key; rim-lit warriors; practical rubber creatures; smoky altars
+avoidRules:
+  - watermark
+  - readable fake text
+  - logo clutter
+  - franchise likeness
+  - recognizable film character
+  - real actor likeness
+  - celebrity likeness
+  - adding genre costumes or plot the prompt did not ask for
+  - clean digital grade
+  - painted illustration
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: watermark, readable fake text, logo clutter, franchise likeness, recognizable film character, real actor likeness, celebrity likeness, adding genre costumes or plot the prompt did not ask for, clean digital grade, painted illustration, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: film-genres
+  categoryName: 1. Film Genres
+  tags:
+    - cinematic-and-media
+    - film-genres
+    - sword-and-sorcery
+    - 80s-cinema
+    - fantasy
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: 80s practical fantasy cinema

@@ -28,7 +28,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       'A collection of 120+ styles covering film language, broadcast aesthetics, animation traditions, and historical photography.',
     cardTitle: 'Cinematic Media',
     cardDescription: 'Film, broadcast, animation, media-grade looks.',
-    presetCount: 129,
+    presetCount: 133,
   },
   {
     id: 'pack_03',

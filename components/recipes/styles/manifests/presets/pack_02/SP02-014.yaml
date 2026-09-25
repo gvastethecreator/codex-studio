@@ -3,7 +3,7 @@ id: SP02-014
 packId: pack_02
 name: Giallo Horror
 category: 1. Film Genres
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,85 +12,46 @@ tags:
   - cinematic-and-media
   - film-genres
 visualDna:
-  aesthetic: >-
-    Giallo Horror acts as a transferable cinematic-media router: start from Italian horror, Giallo
-    Horror lens grammar, film stock behavior, genre blocking, projection texture, and cinematic
-    color grade, Color gels, polished threat, baroque shadow and cinematic genre system built from
-    lens grammar, film stock, blocking pressure, edit rhythm, production design, grain, and color
-    grade, then apply the media behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
-    under Giallo Horror: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1.
-    Film Genres cinematic and broadcast grammar without locking to one plot beat; preserve the
-    requested subject while staging it as filmed material through blocking, wardrobe pressure, lens
-    distance, movement cues, or genre-era performance texture only when useful, keeping the
-    requested identity, silhouette, action, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Deep Red, Blue, Green gels, saturated primaries, blood crimson; treat color as
-    cinema process: film emulsion, lab timing, gel lighting, period stock response, genre grade,
-    faded print, or projection decay, with deliberate value grouping, accent control, and
-    process-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Unnatural colored light, gel-drenched, theatrical splash; make light feel
-    motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical
-    glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure
-    support the media process without overwriting the requested content.
-  texture_and_material: >-
-    Render Film grain, polished surfaces, leatherlike shadow; surface detail should reveal film
-    grain, gate weave, scratches, halation, acetate texture, projection damage, optical compositing,
-    or photographed production surfaces, keeping artifact scale coherent and avoiding noisy filler
-    texture.
-  camera_and_composition: >-
-    Structure the image through POV unease, obscured geometry, scale rhythm, frame hierarchy, lens
-    distance, and composition rules specific to Giallo Horror; compose through lens choice,
-    blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease, symmetrical staging,
-    or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy, and visual hierarchy
-    doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Mystery, stylish, hallucinatory dread, mood carried by Giallo Horror media
-    process, signal pressure, and visual restraint; derive mood from cinematic tradition,
-    performance tone, genre stakes, projection damage, auteur restraint, camp excess, or analog
-    spectacle, letting the media style alter interpretation without demanding a specific story,
-    location, or actor.
-  rendering_and_quality: >-
-    Finish with Stylish, baroque, operatic color dread; finish as credible moving-image language
-    with controlled film artifacts, readable subject identity, and no mandatory plot scene,
-    franchise copy, or fake caption text, clean denoised surfaces where appropriate, and enough
-    process evidence to make the style recognizable.
-  key_features: >-
-    Italian horror, Giallo Horror lens grammar, film stock behavior, genre blocking, projection
-    texture, and cinematic color grade; Color gels, polished threat, baroque shadow; Deep Red, Blue,
-    Green gels, saturated primaries, blood crimson; Film grain, polished surfaces, leatherlike
-    shadow; POV unease, obscured geometry, scale rhythm, frame hierarchy, lens distance, and
-    composition rules specific to Giallo Horror
-  creative_brief: >-
-    Apply Giallo Horror as a cinematic-media preset over prompt X: preserve the user's requested
-    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
-    and final media craft through Italian horror, Giallo Horror lens grammar, film stock behavior,
-    genre blocking, projection texture, and cinematic color grade, Color gels, polished threat,
-    baroque shadow, Film grain, polished surfaces, leatherlike shadow without requiring the card
-    image's original subject.
+  aesthetic: 'Giallo: 1970s Italian thriller cinema of baroque interiors flooded with saturated colored gels and tense, stylized close-ups.'
+  subject_treatment: Keep the prompt subject, action and setting; translate them through this genre's camera, lighting, film stock and grade, without adding genre costumes, sets or plot events the prompt did not ask for.
+  color_and_tone: Deep red, cobalt blue and acid green gels on dark baroque interiors; glossy blacks.
+  lighting_and_shadow: Colored gels from opposite sides, hard shadows, sudden pools of saturated light.
+  texture_and_material: Velvet, marble, lacquer, black leather gloves and glass reflections.
+  camera_and_composition: Extreme close-ups of eyes and hands, slow zooms, long corridors in deep perspective.
+  atmosphere_and_mood: Stylish and paranoid, beauty and menace sharing the same colored light.
+  rendering_and_quality: Saturated 35 mm film look with grain; implied threat, never gore.
+  key_features: red, blue and green gels; baroque interiors; eye and hand close-ups; deep corridors; implied threat
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Giallo Horror as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - watermark
+  - readable fake text
+  - logo clutter
+  - franchise likeness
+  - recognizable film character
+  - real actor likeness
+  - celebrity likeness
+  - adding genre costumes or plot the prompt did not ask for
   - natural lighting
+  - gore
   - official card scene
   - fixed thumbnail subject
   - prompt replaced by sample image
-  - readable fake text
-  - watermark
-  - logo clutter
   - generic stock footage
   - uncontrolled noise
   - mandatory plot scene
   - franchise copy
   - fake caption text
   - generic movie poster
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-014.webp
 attributes:
-  negativePrompt: >-
-    natural lighting, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise,
-    mandatory plot scene, franchise copy, fake caption text, generic movie poster
+  negativePrompt: watermark, readable fake text, logo clutter, franchise likeness, recognizable film character, real actor likeness, celebrity likeness, adding genre costumes or plot the prompt did not ask for, natural lighting, gore, official card scene, fixed thumbnail subject, prompt replaced by sample image, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

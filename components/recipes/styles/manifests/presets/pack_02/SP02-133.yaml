@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP02-133
+packId: pack_02
+name: Peplum Sword-and-Sandal Epic
+styleAnchors:
+  - Peplum Sword-and-Sandal Epic
+  - peplum epic cinema
+  - painted skies
+displayName: Peplum Sword-and-Sandal Epic
+category: 1. Film Genres
+domain: peplum epic cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - film-genres
+  - peplum
+  - epic-cinema
+  - widescreen
+visualDna:
+  aesthetic: 'Peplum sword-and-sandal epic: late-1950s widescreen color films of mythic strongmen, painted skies and plaster temples.'
+  subject_treatment: Keep the prompt subject, action and setting; translate them through this genre's camera, lighting, film stock and grade, without adding genre costumes, sets or plot events the prompt did not ask for.
+  color_and_tone: Eastmancolor gold, marble white, imperial purple and blood red under a painted blue sky.
+  lighting_and_shadow: Bright hard studio sun, oiled skin highlights, crisp shadows on plaster columns.
+  texture_and_material: Plaster columns, gilded props, leather sandals, oiled muscles and linen tunics.
+  camera_and_composition: Wide widescreen tableaux, heroic low angles, crowds of extras arranged in symmetrical ranks.
+  atmosphere_and_mood: Grand and naive, mythic heroics staged with theatrical confidence.
+  rendering_and_quality: Vintage widescreen color print where the props and painted skies read openly as props.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Peplum Sword-and-Sandal Epic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: painted skies; plaster temples; oiled strongmen; Eastmancolor gold and purple; widescreen tableaux
+avoidRules:
+  - watermark
+  - readable fake text
+  - logo clutter
+  - franchise likeness
+  - recognizable film character
+  - real actor likeness
+  - celebrity likeness
+  - adding genre costumes or plot the prompt did not ask for
+  - gritty realism
+  - desaturated grade
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: watermark, readable fake text, logo clutter, franchise likeness, recognizable film character, real actor likeness, celebrity likeness, adding genre costumes or plot the prompt did not ask for, gritty realism, desaturated grade, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: film-genres
+  categoryName: 1. Film Genres
+  tags:
+    - cinematic-and-media
+    - film-genres
+    - peplum
+    - epic-cinema
+    - widescreen
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: peplum epic cinema

@@ -3,7 +3,7 @@ id: SP02-009
 packId: pack_02
 name: Kaiju Movie (Suitmation)
 category: 1. Film Genres
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,84 +12,47 @@ tags:
   - cinematic-and-media
   - film-genres
 visualDna:
-  aesthetic: >-
-    Kaiju Movie (Suitmation) acts as a transferable cinematic-media router: start from
-    Black-and-white suitmation spectacle, Godzilla 1954, miniature-scale practical terror, Low
-    angle, miniature scale, charming artifice and cinematic genre system built from lens grammar,
-    film stock, blocking pressure, edit rhythm, production design, grain, and color grade, then
-    apply the media behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
-    under Kaiju Movie (Suitmation): casting, wardrobe, props, motion cues, and silhouette hierarchy
-    follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat; preserve
-    the requested subject while staging it as filmed material through blocking, wardrobe pressure,
-    lens distance, movement cues, or genre-era performance texture only when useful, keeping the
-    requested identity, silhouette, action, object function, or setting legible.
-  color_and_tone: >-
-    Build color with B&W or Eastmancolor, muted desaturated, faded film stock; treat color as cinema
-    process: film emulsion, lab timing, gel lighting, period stock response, genre grade, faded
-    print, or projection decay, with deliberate value grouping, accent control, and process-specific
-    limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Miniature set, forced perspective, matte backdrop light; make light feel
-    motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical
-    glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure
-    support the media process without overwriting the requested content.
-  texture_and_material: >-
-    Render Rubber suit texture, latex sheen, toy-scale practical material; surface detail should
-    reveal film grain, gate weave, scratches, halation, acetate texture, projection damage, optical
-    compositing, or photographed production surfaces, keeping artifact scale coherent and avoiding
-    noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Stiff movement, lumbering gait, wire-work float; compose through
-    lens choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease,
-    symmetrical staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy,
-    and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Epic, handmade, scale panic, mood carried by Kaiju Movie (Suitmation) media
-    process, signal pressure, and visual restraint; derive mood from cinematic tradition,
-    performance tone, genre stakes, projection damage, auteur restraint, camp excess, or analog
-    spectacle, letting the media style alter interpretation without demanding a specific story,
-    location, or actor.
-  rendering_and_quality: >-
-    Finish with Tokusatsu, scale model, practical destruction, charming artifice; finish as credible
-    moving-image language with controlled film artifacts, readable subject identity, and no
-    mandatory plot scene, franchise copy, or fake caption text, clean denoised surfaces where
-    appropriate, and enough process evidence to make the style recognizable.
-  key_features: >-
-    Black-and-white suitmation spectacle, Godzilla 1954, miniature-scale practical terror; Low
-    angle, miniature scale, charming artifice; B&W or Eastmancolor, muted desaturated, faded film
-    stock; Rubber suit texture, latex sheen, toy-scale practical material; Stiff movement, lumbering
-    gait, wire-work float
-  creative_brief: >-
-    Apply Kaiju Movie (Suitmation) as a cinematic-media preset over prompt X: preserve the user's
-    requested subject, then route lens behavior, palette, light, signal or film texture,
-    composition, mood, and final media craft through Black-and-white suitmation spectacle, Godzilla
-    1954, miniature-scale practical terror, Low angle, miniature scale, charming artifice, Rubber
-    suit texture, latex sheen, toy-scale practical material without requiring the card image's
-    original subject.
+  aesthetic: 'Kaiju suitmation cinema: a performer in a rubber creature suit stomping through detailed miniature sets, shot low to fake enormous scale.'
+  subject_treatment: Keep the prompt subject and setting; render them as practical miniatures and suits filmed at giant scale, without adding a monster the prompt did not ask for.
+  color_and_tone: Black and white or faded early Eastmancolor, grey smoke, orange fire accents.
+  lighting_and_shadow: Hard studio floods mimicking daylight, smoke diffusing it, flickering practical fires.
+  texture_and_material: Rubber suit folds, plaster rubble, balsa miniatures, visible wire supports and model water.
+  camera_and_composition: Very low camera among the miniatures, forced perspective, smoke and debris in the foreground.
+  atmosphere_and_mood: Charming and terrifying at once, handmade catastrophe on a tabletop.
+  rendering_and_quality: Practical-effects film look; original creatures only, no famous monster designs.
+  key_features: rubber-suit performer; detailed miniatures; low camera forced perspective; smoke and model fire; faded film stock
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kaiju Movie (Suitmation) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - watermark
+  - readable fake text
+  - logo clutter
+  - franchise likeness
+  - recognizable film character
+  - real actor likeness
+  - celebrity likeness
+  - adding genre costumes or plot the prompt did not ask for
   - cgi
+  - famous monster design
   - realistic
   - official card scene
   - fixed thumbnail subject
   - prompt replaced by sample image
-  - readable fake text
-  - watermark
-  - logo clutter
   - generic stock footage
   - uncontrolled noise
   - mandatory plot scene
   - franchise copy
   - fake caption text
   - generic movie poster
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-009.webp
 attributes:
-  negativePrompt: >-
-    cgi, realistic, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise,
-    mandatory plot scene, franchise copy, fake caption text, generic movie poster
+  negativePrompt: watermark, readable fake text, logo clutter, franchise likeness, recognizable film character, real actor likeness, celebrity likeness, adding genre costumes or plot the prompt did not ask for, cgi, famous monster design, realistic, official card scene, fixed thumbnail subject, prompt replaced by sample image, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
