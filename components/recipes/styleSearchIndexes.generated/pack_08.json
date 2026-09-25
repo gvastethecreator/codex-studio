@@ -3,7 +3,7 @@
     {
       "id": "pack_08",
       "name": "Fashion & Costume",
-      "presetCount": 80
+      "presetCount": 91
     }
   ],
   "presets": [
@@ -42,6 +42,184 @@
       "tags": ["fashion-and-costume", "contemporary-fashion"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp08-020 red carpet gown 1. contemporary fashion contemporary clothing pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion"
+    },
+    {
+      "id": "SP08-081",
+      "name": "Quiet Luxury Cashmere",
+      "styleAnchors": ["Quiet Luxury Cashmere", "quiet luxury wardrobe", "unbranded cashmere"],
+      "ref": "pack_08/SP08-081.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "contemporary-fashion",
+      "categoryName": "1. Contemporary Fashion",
+      "domain": "quiet luxury wardrobe",
+      "tags": ["fashion-and-costume", "contemporary-fashion", "quiet-luxury-wardrobe"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-081 quiet luxury cashmere quiet luxury wardrobe unbranded cashmere 1. contemporary fashion contemporary clothing quiet luxury wardrobe pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion quiet-luxury-wardrobe"
+    },
+    {
+      "id": "SP08-082",
+      "name": "Deconstructed Avant-Garde",
+      "styleAnchors": [
+        "Deconstructed Avant-Garde",
+        "deconstructed black avant-garde",
+        "raw hems and exposed seams"
+      ],
+      "ref": "pack_08/SP08-082.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "contemporary-fashion",
+      "categoryName": "1. Contemporary Fashion",
+      "domain": "deconstructed black avant-garde",
+      "tags": ["fashion-and-costume", "contemporary-fashion", "deconstructed-black-avant-garde"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-082 deconstructed avant-garde deconstructed black avant-garde raw hems and exposed seams 1. contemporary fashion contemporary clothing deconstructed black avant-garde pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion deconstructed-black-avant-garde"
+    },
+    {
+      "id": "SP08-083",
+      "name": "Gorpcore Trail",
+      "styleAnchors": [
+        "Gorpcore Trail",
+        "outdoor technical fashion",
+        "color-blocked shell and fleece"
+      ],
+      "ref": "pack_08/SP08-083.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "contemporary-fashion",
+      "categoryName": "1. Contemporary Fashion",
+      "domain": "outdoor technical fashion",
+      "tags": ["fashion-and-costume", "contemporary-fashion", "outdoor-technical-fashion"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-083 gorpcore trail outdoor technical fashion color-blocked shell and fleece 1. contemporary fashion contemporary clothing outdoor technical fashion pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion outdoor-technical-fashion"
+    },
+    {
+      "id": "SP08-084",
+      "name": "Y2K Pop Glam",
+      "styleAnchors": ["Y2K Pop Glam", "Y2K fashion revival", "low-rise and baby tees"],
+      "ref": "pack_08/SP08-084.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "contemporary-fashion",
+      "categoryName": "1. Contemporary Fashion",
+      "domain": "Y2K fashion revival",
+      "tags": ["fashion-and-costume", "contemporary-fashion", "y2k-fashion-revival"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-084 y2k pop glam y2k fashion revival low-rise and baby tees 1. contemporary fashion contemporary clothing y2k fashion revival pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion y2k-fashion-revival"
+    },
+    {
+      "id": "SP08-085",
+      "name": "Maximalist Print Clash",
+      "styleAnchors": [
+        "Maximalist Print Clash",
+        "maximalist pattern fashion",
+        "three or more clashing prints"
+      ],
+      "ref": "pack_08/SP08-085.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "contemporary-fashion",
+      "categoryName": "1. Contemporary Fashion",
+      "domain": "maximalist pattern fashion",
+      "tags": ["fashion-and-costume", "contemporary-fashion", "maximalist-pattern-fashion"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-085 maximalist print clash maximalist pattern fashion three or more clashing prints 1. contemporary fashion contemporary clothing maximalist pattern fashion pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion maximalist-pattern-fashion"
+    },
+    {
+      "id": "SP08-086",
+      "name": "Monochrome Power Suit",
+      "styleAnchors": [
+        "Monochrome Power Suit",
+        "monochrome power tailoring",
+        "head-to-toe single color"
+      ],
+      "ref": "pack_08/SP08-086.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "contemporary-fashion",
+      "categoryName": "1. Contemporary Fashion",
+      "domain": "monochrome power tailoring",
+      "tags": ["fashion-and-costume", "contemporary-fashion", "monochrome-power-tailoring"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-086 monochrome power suit monochrome power tailoring head-to-toe single color 1. contemporary fashion contemporary clothing monochrome power tailoring pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion monochrome-power-tailoring"
+    },
+    {
+      "id": "SP08-087",
+      "name": "Balletcore",
+      "styleAnchors": ["Balletcore", "ballet-inspired fashion", "wrap cardigan and tulle"],
+      "ref": "pack_08/SP08-087.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "contemporary-fashion",
+      "categoryName": "1. Contemporary Fashion",
+      "domain": "ballet-inspired fashion",
+      "tags": ["fashion-and-costume", "contemporary-fashion", "ballet-inspired-fashion"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-087 balletcore ballet-inspired fashion wrap cardigan and tulle 1. contemporary fashion contemporary clothing ballet-inspired fashion pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion ballet-inspired-fashion"
+    },
+    {
+      "id": "SP08-088",
+      "name": "Resort Linen",
+      "styleAnchors": ["Resort Linen", "resort linen wardrobe", "wrinkled linen"],
+      "ref": "pack_08/SP08-088.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "contemporary-fashion",
+      "categoryName": "1. Contemporary Fashion",
+      "domain": "resort linen wardrobe",
+      "tags": ["fashion-and-costume", "contemporary-fashion", "resort-linen-wardrobe"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-088 resort linen resort linen wardrobe wrinkled linen 1. contemporary fashion contemporary clothing resort linen wardrobe pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion resort-linen-wardrobe"
+    },
+    {
+      "id": "SP08-089",
+      "name": "Modest Layered Tailoring",
+      "styleAnchors": ["Modest Layered Tailoring", "modest fashion layering", "long-line layers"],
+      "ref": "pack_08/SP08-089.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "contemporary-fashion",
+      "categoryName": "1. Contemporary Fashion",
+      "domain": "modest fashion layering",
+      "tags": ["fashion-and-costume", "contemporary-fashion", "modest-fashion-layering"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-089 modest layered tailoring modest fashion layering long-line layers 1. contemporary fashion contemporary clothing modest fashion layering pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion modest-fashion-layering"
+    },
+    {
+      "id": "SP08-090",
+      "name": "Equestrian Heritage",
+      "styleAnchors": [
+        "Equestrian Heritage",
+        "equestrian heritage style",
+        "hacking jacket and jodhpurs"
+      ],
+      "ref": "pack_08/SP08-090.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "contemporary-fashion",
+      "categoryName": "1. Contemporary Fashion",
+      "domain": "equestrian heritage style",
+      "tags": ["fashion-and-costume", "contemporary-fashion", "equestrian-heritage-style"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-090 equestrian heritage equestrian heritage style hacking jacket and jodhpurs 1. contemporary fashion contemporary clothing equestrian heritage style pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion equestrian-heritage-style"
+    },
+    {
+      "id": "SP08-091",
+      "name": "Neo-Western",
+      "styleAnchors": [
+        "Neo-Western",
+        "contemporary western fashion",
+        "embroidered yoke and fringe"
+      ],
+      "ref": "pack_08/SP08-091.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "contemporary-fashion",
+      "categoryName": "1. Contemporary Fashion",
+      "domain": "contemporary western fashion",
+      "tags": ["fashion-and-costume", "contemporary-fashion", "contemporary-western-fashion"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-091 neo-western contemporary western fashion embroidered yoke and fringe 1. contemporary fashion contemporary clothing contemporary western fashion pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion contemporary-western-fashion"
     },
     {
       "id": "SP08-019",
@@ -968,5 +1146,5 @@
       "searchableText": "sp08-049 pelagic tail couture 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     }
   ],
-  "totalPresetCount": 80
+  "totalPresetCount": 91
 }

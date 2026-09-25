@@ -216,7 +216,7 @@ const spec: Spec = {
       briefs: [
         'Patent figure plate of a clockwork bird-scarer with flapping iron arms, perspective view, side view and section on one white sheet, thick shade lines on the lower edges, leader lines ending at blank points. No readable numerals, text or logo.',
         "Patent figure plate of a folding traveller's writing desk shown closed, opened and in exploded detail, stippled section faces. No readable numerals, text or logo.",
-        'Patent figure plate of a spring-loaded crossbow bolt magazine, dashed hidden lines and parallel shading on the cylinders. No readable numerals, text or logo.',
+        "Patent figure plate of a clockwork music box with a rotating pinned cylinder and a tuned steel comb, shown in exploded view with dashed hidden lines, leader lines and parallel shading on the cylinders. No readable numerals, text or logo.",
       ],
     },
     {

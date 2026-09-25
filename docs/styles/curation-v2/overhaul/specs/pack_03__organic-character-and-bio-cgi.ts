@@ -321,7 +321,7 @@ const spec: Spec = {
       avoid: [...AVOID, 'blood', 'gore', 'open wounds', 'exposed organs'],
       briefs: [
         'Écorché muscle study render of a rearing warhorse, every muscle a distinct terracotta striated form wrapping the bones, pearly ivory tendons in the legs, a single high sculpture key carving each muscle belly, clean museum finish. No blood, text or logo.',
-        'Écorché muscle study render of an adult archer drawing a longbow, back and shoulder muscles in full contraction, glossy tendon sheaths at the elbow, soft rounded shadows. No blood, text or logo.',
+        "Écorché muscle study render of a charging bull, flayed-anatomy style like a museum anatomical sculpture, neck and shoulder muscles bunched in full contraction, glossy tendon sheaths at the hocks, clean matte red-brown muscle and ivory tendon, soft rounded studio shadows on a grey sweep. No blood, gore, text or logo.",
         'Écorché muscle study render of a great horned owl with its wings spread, the flight muscles and the long wing tendons laid bare, bone-white joints. No blood, text or logo.',
       ],
     },

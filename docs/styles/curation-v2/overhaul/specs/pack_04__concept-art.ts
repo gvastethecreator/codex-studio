@@ -116,7 +116,7 @@ const spec: Spec = {
         'scenic background',
       ],
       briefs: [
-        'Character turnaround of an adult woman chimney sweep of a black citadel, soot-stained brass goggles and a coil of brushes on her back, front, three-quarter, side and back views on grey with height guide lines and four expression heads below. No text or logo.',
+        "Character turnaround of a stout middle-aged woman chimney sweep of a black citadel with cropped grey hair, a crooked top hat, soot-stained brass goggles pushed up, a long patched tailcoat and a bundle of round chimney brushes strapped to her back like a quiver; front, three-quarter, side and back views on grey with height guide lines and four expression heads below. Original design, no tactical gear or braid. No text or logo.",
         'Character turnaround of an adult river-toll keeper in a lamellar coat of overlapping fish-scale plates, a hooked pole strapped across the back, flat color with occlusion. No text or logo.',
         'Character turnaround of a clockwork scarecrow sentinel with a pumpkin-lantern head and stitched sackcloth limbs over brass joints, four aligned views and a strip of palette chips. No text or logo.',
       ],

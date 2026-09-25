@@ -36,7 +36,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'photography_camera',
     kind: 'collection',
-    presetCount: 49,
+    presetCount: 80,
     imageKeys: [
       'pack_01__portrait_and_studio',
       'pack_01__documentary_and_street',
@@ -49,7 +49,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'analog_film_process',
     kind: 'collection',
-    presetCount: 26,
+    presetCount: 40,
     imageKeys: [
       'pack_01__film_and_analog_process',
       'pack_02__photography_eras',
@@ -62,7 +62,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'lighting_optics_atmosphere',
     kind: 'collection',
-    presetCount: 44,
+    presetCount: 61,
     imageKeys: [
       'pack_01__lighting_techniques',
       'pack_02__lighting_and_atmosphere',
@@ -75,13 +75,13 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'technical_imaging',
     kind: 'collection',
-    presetCount: 43,
+    presetCount: 86,
     imageKeys: ['SP01-028', 'SP01-029', 'SP02-058', 'SP03-043', 'SP11-034', 'SP01-025'],
   },
   {
     id: 'cinema_film_genres',
     kind: 'collection',
-    presetCount: 16,
+    presetCount: 20,
     imageKeys: ['pack_02__film_genres', 'SP02-001', 'SP02-002', 'SP02-003', 'SP02-004', 'SP02-005'],
   },
   {
@@ -100,7 +100,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'animation_cartoons',
     kind: 'collection',
-    presetCount: 48,
+    presetCount: 53,
     imageKeys: [
       'pack_02__animation_styles',
       'SP02-031',
@@ -113,13 +113,13 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'anime_manga',
     kind: 'collection',
-    presetCount: 411,
+    presetCount: 426,
     imageKeys: ['SP05-034', 'SP05-133', 'SP05-134', 'SP05-032', 'SP05-035', 'SP05-036'],
   },
   {
     id: 'comics_sequential',
     kind: 'collection',
-    presetCount: 14,
+    presetCount: 20,
     imageKeys: [
       'pack_04__comic_book_styles',
       'SP04-001',
@@ -132,7 +132,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'illustration_publishing',
     kind: 'collection',
-    presetCount: 60,
+    presetCount: 69,
     imageKeys: [
       'pack_04__children_s_illustration',
       'pack_04__editorial_and_poster',
@@ -145,7 +145,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'drawing_ink_print',
     kind: 'collection',
-    presetCount: 59,
+    presetCount: 83,
     imageKeys: [
       'SP04-061',
       'SP04-062',
@@ -158,7 +158,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'painting_traditional',
     kind: 'collection',
-    presetCount: 42,
+    presetCount: 47,
     imageKeys: [
       'pack_06__traditional_painting',
       'pack_06__mixed_media',
@@ -171,7 +171,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'digital_concept_art',
     kind: 'collection',
-    presetCount: 44,
+    presetCount: 49,
     imageKeys: [
       'pack_06__digital_art',
       'pack_04__concept_art',
@@ -184,13 +184,13 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'cgi_product_render',
     kind: 'collection',
-    presetCount: 80,
+    presetCount: 160,
     imageKeys: ['SP03-001', 'SP03-002', 'SP03-003', 'SP03-004', 'SP03-005', 'SP03-006'],
   },
   {
     id: 'materials_textures_surfaces',
     kind: 'collection',
-    presetCount: 130,
+    presetCount: 137,
     imageKeys: [
       'pack_08__fabric_and_texture_focus',
       'pack_03__materials',
@@ -209,19 +209,19 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'diagrams_blueprints_technical_sheets',
     kind: 'collection',
-    presetCount: 15,
+    presetCount: 29,
     imageKeys: ['SP04-057', 'SP10-067', 'SP10-076', 'SP11-033', 'SP04-098', 'SP02-091'],
   },
   {
     id: 'fashion_costume_wearables',
     kind: 'collection',
-    presetCount: 80,
+    presetCount: 91,
     imageKeys: ['SP08-004', 'SP08-001', 'SP08-020', 'SP08-019', 'SP08-002', 'SP08-005'],
   },
   {
     id: 'architecture_interiors_places',
     kind: 'collection',
-    presetCount: 51,
+    presetCount: 83,
     imageKeys: ['SP07-001', 'SP07-017', 'SP07-041', 'SP01-056', 'SP04-091', 'SP01-057'],
   },
   {
@@ -233,7 +233,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'speculative_architecture_places',
     kind: 'collection',
-    presetCount: 22,
+    presetCount: 40,
     imageKeys: ['SP07-051', 'SP07-064', 'SP07-075', 'SP07-076', 'SP07-079', 'SP07-052'],
   },
   {
@@ -283,13 +283,13 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'toys_craft_food_scale',
     kind: 'collection',
-    presetCount: 39,
+    presetCount: 49,
     imageKeys: ['SP11-001', 'SP11-046', 'SP11-032', 'SP07-065', 'SP07-070', 'SP11-002'],
   },
   {
     id: 'pack_01',
     kind: 'source',
-    presetCount: 89,
+    presetCount: 140,
     imageKeys: [
       'pack_01__portrait_and_studio',
       'pack_01__lighting_techniques',
@@ -302,7 +302,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'pack_02',
     kind: 'source',
-    presetCount: 129,
+    presetCount: 176,
     imageKeys: [
       'pack_02__film_genres',
       'pack_02__tv_and_broadcast',
@@ -315,7 +315,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'pack_03',
     kind: 'source',
-    presetCount: 80,
+    presetCount: 160,
     imageKeys: [
       'pack_03__render_engines',
       'pack_03__materials',
@@ -328,7 +328,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'pack_04',
     kind: 'source',
-    presetCount: 100,
+    presetCount: 129,
     imageKeys: [
       'pack_04__comic_book_styles',
       'pack_04__children_s_illustration',
@@ -341,7 +341,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'pack_05',
     kind: 'source',
-    presetCount: 135,
+    presetCount: 150,
     imageKeys: [
       'pack_05__modern_shonen_and_action',
       'pack_05__mecha_and_cyberpunk',
@@ -380,7 +380,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'pack_06',
     kind: 'source',
-    presetCount: 120,
+    presetCount: 140,
     imageKeys: [
       'pack_06__digital_art',
       'pack_06__traditional_painting',
@@ -393,13 +393,13 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'pack_07',
     kind: 'source',
-    presetCount: 80,
+    presetCount: 140,
     imageKeys: ['SP07-001', 'SP07-002', 'SP07-003', 'SP07-004', 'SP07-005', 'SP07-008'],
   },
   {
     id: 'pack_08',
     kind: 'source',
-    presetCount: 80,
+    presetCount: 91,
     imageKeys: [
       'pack_08__subcultures',
       'pack_08__contemporary_fashion',

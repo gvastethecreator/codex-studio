@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP08-090
+packId: pack_08
+name: Equestrian Heritage
+styleAnchors:
+  - Equestrian Heritage
+  - equestrian heritage style
+  - hacking jacket and jodhpurs
+displayName: Equestrian Heritage
+category: 1. Contemporary Fashion
+domain: equestrian heritage style
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - contemporary-fashion
+  - equestrian
+  - heritage
+  - fashion
+visualDna:
+  aesthetic: 'Equestrian heritage: riding-inspired dressing — tailored hacking jackets, jodhpurs, tall leather boots, quilted vests and silk scarves.'
+  subject_treatment: "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a tailored hacking jacket or quilted vest, jodhpurs or slim trousers, tall polished riding boots and a silk scarf or leather gloves."
+  color_and_tone: Chestnut, olive, cream, navy and oxblood, applied to garments and accessories while skin, setting and props keep their natural color.
+  lighting_and_shadow: Soft countryside morning light, shaped to reveal garment cut, drape, texture and fit on the wearer.
+  texture_and_material: Tweed, moleskin, quilted cotton, silk and polished leather, rendered with correct weave, weight, sheen and stitching.
+  camera_and_composition: Full figure in a stable, field or estate setting.
+  atmosphere_and_mood: Poised, heritage-proud and outdoorsy, carried by the wearer's posture, styling and attitude.
+  rendering_and_quality: Rich, warm editorial finish, with believable fabric weight, seams and fit detail.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Equestrian Heritage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: hacking jacket and jodhpurs; tall riding boots; silk scarf; chestnut and olive palette; country morning light
+avoidRules:
+  - brand logo
+  - readable label text
+  - real designer or celebrity likeness
+  - generic catalog outfit
+  - bad garment fit
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_08
+  packName: Fashion & Costume
+  categoryId: contemporary-fashion
+  categoryName: 1. Contemporary Fashion
+  tags:
+    - fashion-and-costume
+    - contemporary-fashion
+    - equestrian
+    - heritage
+    - fashion
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: equestrian heritage style

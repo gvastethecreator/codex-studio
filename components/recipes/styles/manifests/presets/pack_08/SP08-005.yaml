@@ -3,7 +3,7 @@ id: SP08-005
 packId: pack_08
 name: Athleisure Sport
 category: 1. Contemporary Fashion
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,74 +12,27 @@ tags:
   - fashion-and-costume
   - contemporary-fashion
 visualDna:
-  aesthetic: >-
-    Athleisure Sport operates as a portable fashion-costume router: combine Performance athleisure
-    styling, pre-to-post-workout fluidity, wellness-as-status with contemporary fashion styling with
-    fit control, editorial polish, wearable silhouette, and modern wardrobe hierarchy, so the preset
-    supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment
-    sample.
-  subject_treatment: >-
-    Preserve the prompt's subject, motion, and context while forms tailor, drape, cinch, layer,
-    streamline, accessorize, polish, or simplify through Ergonomic contouring, compressive
-    structure, racerback line logic, high-waist support, motion-tension seams; identity stays
-    readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy
-    shift into this preset.
-  color_and_tone: >-
-    Map color through modern neutrals, controlled accent color, textile value separation,
-    skin-adjacent warmth, and editorial contrast; keep textile values separated, accents
-    intentional, material color believable, and palette behavior attached to the subject instead of
-    pasted wardrobe decoration.
-  lighting_and_shadow: >-
-    Use Crisp fitness-editorial light, sweat-sheen reflection, early-morning clarity, clean rim
-    highlights plus fashion editorial light with fabric sheen, controlled shadow, polished skin or
-    surface response, and clean silhouette reads as the styling light contract, revealing cut,
-    drape, surface response, trim, transparency, or armor structure without erasing prompt
-    readability.
-  texture_and_material: >-
-    Render Spandex, mesh, sweat-wicking knit, zero-gravity nylon, perforated neoprene, seamless rib
-    plus woven cloth, suiting, jersey, performance fabric, satin, leather, knit, seams, folds,
-    closures, and garment hardware; keep fabric scale, seams, fibers, shine, opacity, folds,
-    hardware, elemental edges, or body-surface treatment coherent across the whole prompt.
-  camera_and_composition: >-
-    Compose with Compose for Athleisure Sport using its key spatial cues: Sleek silhouette,
-    reflective trim hits, zip-free second-skin, thumbhole cuffs plus lookbook clarity, runway
-    silhouette rhythm, full-form readability, crop discipline, and styling hierarchy as reusable
-    fashion framing grammar, allowing portraits, objects, creatures, environments, action, and
-    abstract prompts to inherit styling without one required pose.
-  atmosphere_and_mood: >-
-    Carry mood through confidence, restraint, luxury, ease, polish, modern taste, and professional
-    or event-specific presence; the tone should feel specific to Athleisure Sport while still
-    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
-  rendering_and_quality: >-
-    Finish with high-end styling clarity, crisp garment edges, believable fit, controlled
-    retouching, and no catalog blandness; prioritize clean style recognition, believable material
-    physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.
-  key_features: >-
-    Performance athleisure styling, pre-to-post-workout fluidity, wellness-as-status; Ergonomic
-    contouring, compressive structure, racerback line logic, high-waist support, motion-tension
-    seams; Spandex, mesh, sweat-wicking knit, zero-gravity nylon, perforated neoprene, seamless rib;
-    Crisp fitness-editorial light, sweat-sheen reflection, early-morning clarity, clean rim
-    highlights; Compose for Athleisure Sport using its key spatial cues: Sleek silhouette,
-    reflective trim hits, zip-free second-skin, thumbhole cuffs
-  creative_brief: >-
-    Use Athleisure Sport after prompt X as a transferable fashion/costume layer: prompt X supplies
-    subject, motion, setting, tone, and intensity, while the preset supplies Performance athleisure
-    styling, pre-to-post-workout fluidity, wellness-as-status, Ergonomic contouring, compressive
-    structure, racerback line logic, high-waist support, motion-tension seams, Spandex, mesh,
-    sweat-wicking knit, zero-gravity nylon, perforated neoprene, seamless rib, Crisp
-    fitness-editorial light, sweat-sheen reflection, early-morning clarity, clean rim highlights,
-    Compose for Athleisure Sport using its key spatial cues: Sleek silhouette, reflective trim hits,
-    zip-free second-skin, thumbhole cuffs plus tailoring lines, garment fit, hem placement,
-    accessory restraint, layered proportion, and intentional styling choices, palette behavior,
-    light response, material treatment, silhouette grammar, and finish discipline without requiring
-    one body type, fixed outfit, venue, prop bundle, or card composition.
+  aesthetic: 'Athleisure sport styling: performance fabrics worn as everyday fashion, with sculpted seams, compression panels and sleek technical layering.'
+  subject_treatment: "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: fitted technical leggings or joggers, a zip-neck mid-layer or cropped windbreaker and clean running shoes, styled with deliberate tonal coordination."
+  color_and_tone: Tonal sets in sage, slate, lilac or black with one reflective accent.
+  lighting_and_shadow: Bright clean daylight with crisp specular highlights on technical fabric.
+  texture_and_material: Brushed jersey, ripstop, mesh ventilation panels, bonded seams and reflective trims.
+  camera_and_composition: Dynamic three-quarter or full figure with a sense of movement.
+  atmosphere_and_mood: Energetic, fresh, capable and modern, carried by the wearer's posture, styling and attitude.
+  rendering_and_quality: Sharp commercial finish with believable stretch and fabric sheen.
+  key_features: tonal performance sets; bonded seams and mesh panels; reflective accent; mid-stride energy; clean daylight
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Athleisure Sport as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - brand logo
+  - readable label text
+  - real designer or celebrity likeness
+  - generic catalog outfit
+  - bad garment fit
+  - sports team logos
   - dress
   - jeans
   - formal
-  - generic catalog outfit
   - brand logo styling
-  - bad garment fit
   - fixed outfit
   - required body type
   - literal card scene
@@ -87,13 +40,17 @@ avoidRules:
   - muddy fabric noise
   - watermark
   - readable text
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-005.webp
 attributes:
-  negativePrompt: >-
-    dress, jeans, formal, generic catalog outfit, brand logo styling, bad garment fit, fixed outfit,
-    required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
-    readable text
+  negativePrompt: brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, sports team logos, dress, jeans, formal, brand logo styling, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

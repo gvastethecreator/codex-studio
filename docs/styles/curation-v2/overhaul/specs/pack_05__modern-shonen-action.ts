@@ -923,7 +923,7 @@ const spec: Spec = {
       briefs: [
         'Elastic big-grin adventure cel of an adult island postwoman riding a giant sea turtle across bright blue waves with a satchel of letters, rubbery stretched arm waving, huge grin, bold rounded outlines. No readable text or logo.',
         'Elastic big-grin adventure cel of an adult strongman hauling a festival float up a steep hill, his arms stretched like taffy, red and gold flags, broad flexible curves. No text or logo.',
-        'Elastic big-grin adventure cel of an adult man napping in a hammock on a porch, rubbery limbs drooping over the edge, a content grin, flat vivid color and calm summer light. No text or logo.',
+        "Elastic big-grin adventure cel of a plump bald old fisherman with a huge curling grey mustache, a knitted blue beanie and a striped wool sweater, napping in a hammock on a harbor porch, rubbery arms drooping to the floor, a cat asleep on his belly, flat vivid color and calm summer light. Original character: no straw hat, no red vest, no young hero. No text or logo.",
       ],
     },
     'SP05-028': {

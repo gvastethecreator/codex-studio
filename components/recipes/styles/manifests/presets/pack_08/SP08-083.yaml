@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP08-083
+packId: pack_08
+name: Gorpcore Trail
+styleAnchors:
+  - Gorpcore Trail
+  - outdoor technical fashion
+  - color-blocked shell and fleece
+displayName: Gorpcore Trail
+category: 1. Contemporary Fashion
+domain: outdoor technical fashion
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - contemporary-fashion
+  - gorpcore
+  - outdoor
+  - fashion
+visualDna:
+  aesthetic: 'Gorpcore: outdoor and mountaineering gear worn as fashion — fleece, shell jackets, trail shoes and utility accessories in bold color-blocking.'
+  subject_treatment: "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a color-blocked shell jacket or fleece, cargo or trail trousers, chunky trail shoes and a small technical accessory such as a carabiner, sling bag or bucket hat."
+  color_and_tone: Earth tones mixed with bold accents — burnt orange, teal, lilac, lime.
+  lighting_and_shadow: Crisp mountain daylight, shaped to reveal garment cut, drape, texture and fit on the wearer.
+  texture_and_material: Ripstop nylon, polar fleece, Gore-style shells, webbing and rubber soles.
+  camera_and_composition: Full figure in or against rugged landscape, keeping the full outfit silhouette and fit readable at card size.
+  atmosphere_and_mood: Adventurous, playful and practical, carried by the wearer's posture, styling and attitude.
+  rendering_and_quality: Sharp outdoor-editorial finish, with believable fabric weight, seams and fit detail.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gorpcore Trail as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: color-blocked shell and fleece; trail shoes; utility accessories; bold accents on earth tones; mountain daylight
+avoidRules:
+  - brand logo
+  - readable label text
+  - real designer or celebrity likeness
+  - generic catalog outfit
+  - bad garment fit
+  - outdoor brand logos
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, outdoor brand logos, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_08
+  packName: Fashion & Costume
+  categoryId: contemporary-fashion
+  categoryName: 1. Contemporary Fashion
+  tags:
+    - fashion-and-costume
+    - contemporary-fashion
+    - gorpcore
+    - outdoor
+    - fashion
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: outdoor technical fashion

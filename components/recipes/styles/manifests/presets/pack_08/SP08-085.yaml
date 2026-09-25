@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP08-085
+packId: pack_08
+name: Maximalist Print Clash
+styleAnchors:
+  - Maximalist Print Clash
+  - maximalist pattern fashion
+  - three or more clashing prints
+displayName: Maximalist Print Clash
+category: 1. Contemporary Fashion
+domain: maximalist pattern fashion
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - contemporary-fashion
+  - maximalism
+  - print-clash
+  - fashion
+visualDna:
+  aesthetic: 'Maximalist print clash: many bold patterns and colors layered on purpose — florals with stripes, animal print with brocade — in a controlled riot.'
+  subject_treatment: "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: at least three clashing printed garments and accessories — patterned coat, printed shirt, contrasting trousers, headscarf and bold jewelry — layered with intent."
+  color_and_tone: 'Saturated, clashing color: tomato, cobalt, chartreuse, fuchsia and gold.'
+  lighting_and_shadow: Bright, even light that shows every pattern, shaped to reveal garment cut, drape, texture and fit on the wearer.
+  texture_and_material: Brocade, printed silk, jacquard, velvet and beaded accessories, rendered with correct weave, weight, sheen and stitching.
+  camera_and_composition: Full figure against a patterned or colorful background, keeping the full outfit silhouette and fit readable at card size.
+  atmosphere_and_mood: Joyful, loud, eccentric and fearless, carried by the wearer's posture, styling and attitude.
+  rendering_and_quality: Crisp pattern detail with rich saturation, with believable fabric weight, seams and fit detail.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Maximalist Print Clash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: three or more clashing prints; saturated color riot; brocade and printed silk; bold jewelry; controlled maximalism
+avoidRules:
+  - brand logo
+  - readable label text
+  - real designer or celebrity likeness
+  - generic catalog outfit
+  - bad garment fit
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_08
+  packName: Fashion & Costume
+  categoryId: contemporary-fashion
+  categoryName: 1. Contemporary Fashion
+  tags:
+    - fashion-and-costume
+    - contemporary-fashion
+    - maximalism
+    - print-clash
+    - fashion
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: maximalist pattern fashion

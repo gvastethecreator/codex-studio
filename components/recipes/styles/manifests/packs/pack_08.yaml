@@ -17,6 +17,17 @@ categories:
       - pack_08/SP08-018.yaml
       - pack_08/SP08-019.yaml
       - pack_08/SP08-020.yaml
+      - pack_08/SP08-081.yaml
+      - pack_08/SP08-082.yaml
+      - pack_08/SP08-083.yaml
+      - pack_08/SP08-084.yaml
+      - pack_08/SP08-085.yaml
+      - pack_08/SP08-086.yaml
+      - pack_08/SP08-087.yaml
+      - pack_08/SP08-088.yaml
+      - pack_08/SP08-089.yaml
+      - pack_08/SP08-090.yaml
+      - pack_08/SP08-091.yaml
   - id: subcultures
     name: 2. Subcultures
     presetRefs:
@@ -104,6 +115,17 @@ presetRefs:
   - pack_08/SP08-004.yaml
   - pack_08/SP08-001.yaml
   - pack_08/SP08-020.yaml
+  - pack_08/SP08-081.yaml
+  - pack_08/SP08-082.yaml
+  - pack_08/SP08-083.yaml
+  - pack_08/SP08-084.yaml
+  - pack_08/SP08-085.yaml
+  - pack_08/SP08-086.yaml
+  - pack_08/SP08-087.yaml
+  - pack_08/SP08-088.yaml
+  - pack_08/SP08-089.yaml
+  - pack_08/SP08-090.yaml
+  - pack_08/SP08-091.yaml
   - pack_08/SP08-019.yaml
   - pack_08/SP08-002.yaml
   - pack_08/SP08-005.yaml

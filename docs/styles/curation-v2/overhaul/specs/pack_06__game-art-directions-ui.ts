@@ -488,7 +488,7 @@ const spec: Spec = {
       briefs: [
         'Arcade racing art direction of a hover-sled tearing through a red canyon at dusk, magenta and cyan light trails, low wide angle with strong vanishing-point pull, sparks off the rock walls. No text or logo.',
         'Arcade racing art direction of armored beetles racing down a desert dune at sunset, orange light streaks and glossy shells, diagonal lanes of sand. No text or logo.',
-        'Arcade racing art direction of a badge-free vintage roadster on a spiral mountain road at night, headlight streaks and bloom around every curve. No text or logo.',
+        "Arcade racing art direction of an invented wedge-shaped rally buggy with oversized knobby tires, exposed roll cage and twin roof lamps, drifting on a spiral mountain road at night, headlight streaks and bloom around every curve. Not a real car model; no badges, text or logo.",
       ],
     },
     'SP06-118': {
