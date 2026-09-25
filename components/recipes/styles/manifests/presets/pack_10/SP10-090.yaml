@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP10-090
+packId: pack_10
+name: Neo-Geo Minimalism
+styleAnchors:
+  - Neo-Geo Minimalism
+  - neo-geo minimal geometry
+  - geometric cells
+displayName: Neo-Geo Minimalism
+category: 1. Geometric Abstraction
+domain: neo-geo minimal geometry
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - geometric-abstraction
+  - neo-geo
+  - minimal
+  - geometric
+visualDna:
+  aesthetic: 'Neo-geo minimalism: cool, slick geometric forms with fluorescent accents and industrial surfaces.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is reduced to slick geometric cells, bars and conduits."
+  color_and_tone: Fluorescent accents on grey and white, used consistently across subject and background.
+  lighting_and_shadow: Clean flat light, expressed through the style rather than photographic lighting.
+  texture_and_material: Smooth industrial surfaces, visible at card size as the signature of the style.
+  camera_and_composition: Grid-based cells, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Cool, detached, slick and ironic, driven by the construction, color and rhythm.
+  rendering_and_quality: Clean finish, with clean, deliberate marks and no accidental noise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neo-Geo Minimalism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: geometric cells; fluorescent accents; industrial slick
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_10
+  packName: Abstract & Experimental
+  categoryId: geometric-abstraction
+  categoryName: 1. Geometric Abstraction
+  tags:
+    - abstract-and-experimental
+    - geometric-abstraction
+    - neo-geo
+    - minimal
+    - geometric
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: neo-geo minimal geometry

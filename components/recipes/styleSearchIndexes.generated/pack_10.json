@@ -3,7 +3,7 @@
     {
       "id": "pack_10",
       "name": "Abstract & Experimental",
-      "presetCount": 80
+      "presetCount": 90
     }
   ],
   "presets": [
@@ -57,7 +57,8 @@
     },
     {
       "id": "SP10-005",
-      "name": "Mondrian (De Stijl)",
+      "name": "De Stijl Grid",
+      "styleAnchors": ["De Stijl Grid"],
       "ref": "pack_10/SP10-005.yaml",
       "packId": "pack_10",
       "packName": "Abstract & Experimental",
@@ -65,7 +66,7 @@
       "categoryName": "1. Geometric Abstraction",
       "tags": ["abstract-and-experimental", "geometric-abstraction"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp10-005 mondrian (de stijl) 1. geometric abstraction geometric abstraction pack_10 abstract & experimental geometric-abstraction abstract-and-experimental geometric-abstraction"
+      "searchableText": "sp10-005 de stijl grid 1. geometric abstraction geometric abstraction pack_10 abstract & experimental geometric-abstraction abstract-and-experimental geometric-abstraction"
     },
     {
       "id": "SP10-006",
@@ -126,6 +127,170 @@
       "tags": ["abstract-and-experimental", "geometric-abstraction"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp10-010 voronoi pattern 1. geometric abstraction geometric abstraction pack_10 abstract & experimental geometric-abstraction abstract-and-experimental geometric-abstraction"
+    },
+    {
+      "id": "SP10-081",
+      "name": "Orphism Color Discs",
+      "styleAnchors": [
+        "Orphism Color Discs",
+        "orphist color disc abstraction",
+        "concentric color discs"
+      ],
+      "ref": "pack_10/SP10-081.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "geometric-abstraction",
+      "categoryName": "1. Geometric Abstraction",
+      "domain": "orphist color disc abstraction",
+      "tags": [
+        "abstract-and-experimental",
+        "geometric-abstraction",
+        "orphist-color-disc-abstraction"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-081 orphism color discs orphist color disc abstraction concentric color discs 1. geometric abstraction geometric abstraction orphist color disc abstraction pack_10 abstract & experimental geometric-abstraction abstract-and-experimental geometric-abstraction orphist-color-disc-abstraction"
+    },
+    {
+      "id": "SP10-082",
+      "name": "Futurist Force Lines",
+      "styleAnchors": ["Futurist Force Lines", "futurist dynamism", "repeated motion contours"],
+      "ref": "pack_10/SP10-082.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "geometric-abstraction",
+      "categoryName": "1. Geometric Abstraction",
+      "domain": "futurist dynamism",
+      "tags": ["abstract-and-experimental", "geometric-abstraction", "futurist-dynamism"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-082 futurist force lines futurist dynamism repeated motion contours 1. geometric abstraction geometric abstraction futurist dynamism pack_10 abstract & experimental geometric-abstraction abstract-and-experimental geometric-abstraction futurist-dynamism"
+    },
+    {
+      "id": "SP10-083",
+      "name": "Hard-Edge Painting",
+      "styleAnchors": ["Hard-Edge Painting", "hard-edge color field", "razor-sharp edges"],
+      "ref": "pack_10/SP10-083.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "geometric-abstraction",
+      "categoryName": "1. Geometric Abstraction",
+      "domain": "hard-edge color field",
+      "tags": ["abstract-and-experimental", "geometric-abstraction", "hard-edge-color-field"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-083 hard-edge painting hard-edge color field razor-sharp edges 1. geometric abstraction geometric abstraction hard-edge color field pack_10 abstract & experimental geometric-abstraction abstract-and-experimental geometric-abstraction hard-edge-color-field"
+    },
+    {
+      "id": "SP10-084",
+      "name": "Precisionism",
+      "styleAnchors": [
+        "Precisionism",
+        "precisionist industrial geometry",
+        "smooth geometric planes"
+      ],
+      "ref": "pack_10/SP10-084.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "geometric-abstraction",
+      "categoryName": "1. Geometric Abstraction",
+      "domain": "precisionist industrial geometry",
+      "tags": [
+        "abstract-and-experimental",
+        "geometric-abstraction",
+        "precisionist-industrial-geometry"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-084 precisionism precisionist industrial geometry smooth geometric planes 1. geometric abstraction geometric abstraction precisionist industrial geometry pack_10 abstract & experimental geometric-abstraction abstract-and-experimental geometric-abstraction precisionist-industrial-geometry"
+    },
+    {
+      "id": "SP10-085",
+      "name": "Vorticism",
+      "styleAnchors": ["Vorticism", "vorticist angular abstraction", "angular shards"],
+      "ref": "pack_10/SP10-085.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "geometric-abstraction",
+      "categoryName": "1. Geometric Abstraction",
+      "domain": "vorticist angular abstraction",
+      "tags": [
+        "abstract-and-experimental",
+        "geometric-abstraction",
+        "vorticist-angular-abstraction"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-085 vorticism vorticist angular abstraction angular shards 1. geometric abstraction geometric abstraction vorticist angular abstraction pack_10 abstract & experimental geometric-abstraction abstract-and-experimental geometric-abstraction vorticist-angular-abstraction"
+    },
+    {
+      "id": "SP10-086",
+      "name": "Truchet Tile Weave",
+      "styleAnchors": [
+        "Truchet Tile Weave",
+        "truchet tile patterns",
+        "Truchet quarter-circle tiles"
+      ],
+      "ref": "pack_10/SP10-086.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "geometric-abstraction",
+      "categoryName": "1. Geometric Abstraction",
+      "domain": "truchet tile patterns",
+      "tags": ["abstract-and-experimental", "geometric-abstraction", "truchet-tile-patterns"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-086 truchet tile weave truchet tile patterns truchet quarter-circle tiles 1. geometric abstraction geometric abstraction truchet tile patterns pack_10 abstract & experimental geometric-abstraction abstract-and-experimental geometric-abstraction truchet-tile-patterns"
+    },
+    {
+      "id": "SP10-087",
+      "name": "Penrose Aperiodic Tiling",
+      "styleAnchors": ["Penrose Aperiodic Tiling", "aperiodic tiling", "aperiodic rhombus tiling"],
+      "ref": "pack_10/SP10-087.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "geometric-abstraction",
+      "categoryName": "1. Geometric Abstraction",
+      "domain": "aperiodic tiling",
+      "tags": ["abstract-and-experimental", "geometric-abstraction", "aperiodic-tiling"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-087 penrose aperiodic tiling aperiodic tiling aperiodic rhombus tiling 1. geometric abstraction geometric abstraction aperiodic tiling pack_10 abstract & experimental geometric-abstraction abstract-and-experimental geometric-abstraction aperiodic-tiling"
+    },
+    {
+      "id": "SP10-088",
+      "name": "Swiss Grid Composition",
+      "styleAnchors": ["Swiss Grid Composition", "Swiss grid design", "modular grid"],
+      "ref": "pack_10/SP10-088.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "geometric-abstraction",
+      "categoryName": "1. Geometric Abstraction",
+      "domain": "Swiss grid design",
+      "tags": ["abstract-and-experimental", "geometric-abstraction", "swiss-grid-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-088 swiss grid composition swiss grid design modular grid 1. geometric abstraction geometric abstraction swiss grid design pack_10 abstract & experimental geometric-abstraction abstract-and-experimental geometric-abstraction swiss-grid-design"
+    },
+    {
+      "id": "SP10-089",
+      "name": "String Art Geometry",
+      "styleAnchors": ["String Art Geometry", "string art line geometry", "taut threads"],
+      "ref": "pack_10/SP10-089.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "geometric-abstraction",
+      "categoryName": "1. Geometric Abstraction",
+      "domain": "string art line geometry",
+      "tags": ["abstract-and-experimental", "geometric-abstraction", "string-art-line-geometry"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-089 string art geometry string art line geometry taut threads 1. geometric abstraction geometric abstraction string art line geometry pack_10 abstract & experimental geometric-abstraction abstract-and-experimental geometric-abstraction string-art-line-geometry"
+    },
+    {
+      "id": "SP10-090",
+      "name": "Neo-Geo Minimalism",
+      "styleAnchors": ["Neo-Geo Minimalism", "neo-geo minimal geometry", "geometric cells"],
+      "ref": "pack_10/SP10-090.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "geometric-abstraction",
+      "categoryName": "1. Geometric Abstraction",
+      "domain": "neo-geo minimal geometry",
+      "tags": ["abstract-and-experimental", "geometric-abstraction", "neo-geo-minimal-geometry"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-090 neo-geo minimalism neo-geo minimal geometry geometric cells 1. geometric abstraction geometric abstraction neo-geo minimal geometry pack_10 abstract & experimental geometric-abstraction abstract-and-experimental geometric-abstraction neo-geo-minimal-geometry"
     },
     {
       "id": "SP10-011",
@@ -968,5 +1133,5 @@
       "searchableText": "sp10-080 letterpress 9. print and light finishes print & light finish pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes"
     }
   ],
-  "totalPresetCount": 80
+  "totalPresetCount": 90
 }

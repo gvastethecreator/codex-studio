@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP10-082
+packId: pack_10
+name: Futurist Force Lines
+styleAnchors:
+  - Futurist Force Lines
+  - futurist dynamism
+  - repeated motion contours
+displayName: Futurist Force Lines
+category: 1. Geometric Abstraction
+domain: futurist dynamism
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - geometric-abstraction
+  - futurism
+  - force-lines
+  - geometric
+visualDna:
+  aesthetic: 'Futurist dynamism: repeated overlapping forms and force lines expressing speed and motion.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is repeated in successive overlapping positions with sharp force lines."
+  color_and_tone: Bright reds, blues and metallic greys, used consistently across subject and background.
+  lighting_and_shadow: Dynamic light fragments, expressed through the style rather than photographic lighting.
+  texture_and_material: Repeated contours, force lines and fragmented planes, visible at card size as the signature of the style.
+  camera_and_composition: Diagonal motion across the frame, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Fast, violent, mechanical and exhilarating, driven by the construction, color and rhythm.
+  rendering_and_quality: Energetic painted finish, with clean, deliberate marks and no accidental noise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Futurist Force Lines as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: repeated motion contours; force lines; diagonal speed
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_10
+  packName: Abstract & Experimental
+  categoryId: geometric-abstraction
+  categoryName: 1. Geometric Abstraction
+  tags:
+    - abstract-and-experimental
+    - geometric-abstraction
+    - futurism
+    - force-lines
+    - geometric
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: futurist dynamism

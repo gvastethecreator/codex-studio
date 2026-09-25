@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP10-086
+packId: pack_10
+name: Truchet Tile Weave
+styleAnchors:
+  - Truchet Tile Weave
+  - truchet tile patterns
+  - Truchet quarter-circle tiles
+displayName: Truchet Tile Weave
+category: 1. Geometric Abstraction
+domain: truchet tile patterns
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - geometric-abstraction
+  - truchet
+  - tiling
+  - geometric
+visualDna:
+  aesthetic: 'Truchet tiling: square tiles with quarter-circle or diagonal motifs that combine into flowing mazes.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject emerges from a field of rotated Truchet tiles whose curves form its outline."
+  color_and_tone: Two- or three-color schemes, used consistently across subject and background.
+  lighting_and_shadow: Flat, no shading, expressed through the style rather than photographic lighting.
+  texture_and_material: Tiled quarter-circle arcs, visible at card size as the signature of the style.
+  camera_and_composition: Grid of tiles filling the frame, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Playful, maze-like, rhythmic and clever, driven by the construction, color and rhythm.
+  rendering_and_quality: Crisp graphic finish, with clean, deliberate marks and no accidental noise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Truchet Tile Weave as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: Truchet quarter-circle tiles; emergent curves; grid
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_10
+  packName: Abstract & Experimental
+  categoryId: geometric-abstraction
+  categoryName: 1. Geometric Abstraction
+  tags:
+    - abstract-and-experimental
+    - geometric-abstraction
+    - truchet
+    - tiling
+    - geometric
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: truchet tile patterns

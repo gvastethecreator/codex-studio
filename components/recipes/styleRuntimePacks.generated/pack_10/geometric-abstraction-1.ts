@@ -8,28 +8,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cubism',
     category: '1. Geometric Abstraction',
     negativePrompt:
-      'realistic perspective, smooth, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, realistic perspective, smooth, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cubism becomes a transferable geometric abstraction system: start from Fragmented objects, Geometric breakdown, and Multiple viewpoints, then route prompt content through planes, grids, vectors, optical order, and deliberate formal reduction without forcing one card scene.',
+        'Analytic-synthetic Cubism: forms broken into faceted planes seen from several viewpoints at once.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Sharp angles to break, flatten, triangulate, align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is fractured into overlapping angular planes showing front and profile simultaneously, reassembled into a shallow space.",
       color_and_tone:
-        'Build the palette from Brown, Grey, Blue; treat color as structural contrast, field separation, and rhythm rather than decorative wash, with enough value control that the subject remains readable after the style layer is applied.',
-      lighting_and_shadow:
-        'Let Flat drive the light response: keep light graphic and structural, with shadows simplified into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Muted ochre, grey, olive and brown with occasional collage-like color blocks.',
+      lighting_and_shadow: 'Light is flattened into tonal facets rather than a single source.',
       texture_and_material:
-        'Render Paint strokes as the tactile or mark-making basis; surfaces should read as designed planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces, or close material studies.',
+        'Faceted planes, overlapping outlines and paint-like brushwork, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose around Multiple viewpoints as reusable spatial grammar: favor axial tension, repeated modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Shallow, compressed picture plane with interlocking facets, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Use Intellectual, fragmented as the emotional register; derive mood from rigor, optical tension, intellectual order, and abstraction pressure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Intellectual, restless, fragmented and dense, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Resolve as Picasso, Braque: finish with crisp geometry, controlled edges, clean separations, and no accidental realism, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Fragmented objects; Sharp angles; Brown, Grey, Blue; Flat; Paint strokes; Multiple viewpoints; Intellectual, fragmented; Picasso, Braque; Geometric breakdown',
+        'Painterly Cubist finish with clear facet edges, with clean, deliberate marks and no accidental noise.',
+      key_features: 'multiple viewpoints; faceted planes; shallow space; muted ochre-grey',
       creative_brief:
-        'Apply cubist fracture to the input: simultaneous viewpoints, angular planes, muted ochre-blue-grey paint facets, and deliberate spatial disassembly should let any subject remain readable while broken into intellectual geometry.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cubism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +35,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bauhaus Style',
     category: '1. Geometric Abstraction',
     negativePrompt:
-      'organic, messy, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, organic, messy, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bauhaus Style becomes a transferable geometric abstraction system: start from Functional design, Primary colors, and Simplified forms, then route prompt content through planes, grids, vectors, optical order, and deliberate formal reduction without forcing one card scene.',
+        'Bauhaus design: primary shapes, clean grids, sans-serif-era modernism reduced to circle, square and triangle.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Clean lines to break, flatten, triangulate, align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is simplified into circles, squares, triangles and bold bars arranged on a clean grid.",
       color_and_tone:
-        'Build the palette from Red, Yellow, Blue, Black; treat color as structural contrast, field separation, and rhythm rather than decorative wash, with enough value control that the subject remains readable after the style layer is applied.',
+        'Red, yellow, blue, black and off-white, used consistently across subject and background.',
       lighting_and_shadow:
-        'Let Flat drive the light response: keep light graphic and structural, with shadows simplified into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Flat, shadowless color, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Matte paper as the tactile or mark-making basis; surfaces should read as designed planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces, or close material studies.',
+        'Flat printed color with crisp geometric edges, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose around Simplified forms as reusable spatial grammar: favor axial tension, repeated modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Balanced asymmetric grid composition, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Use Rational, bold as the emotional register; derive mood from rigor, optical tension, intellectual order, and abstraction pressure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Rational, bold, modern and clear, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Resolve as Modernist, clean: finish with crisp geometry, controlled edges, clean separations, and no accidental realism, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Functional design; Clean lines; Red, Yellow, Blue, Black; Flat; Matte paper; Simplified forms; Rational, bold; Modernist, clean; Primary colors',
+        'Crisp poster-like finish, with clean, deliberate marks and no accidental noise.',
+      key_features: 'circle square triangle; primary colors; clean grid; flat shapes',
       creative_brief:
-        'Apply Bauhaus reduction to the input: primary-color blocks, strict circles, bars, grids, and functional negative space should strip any subject to clear modular construction without becoming a poster-only layout.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bauhaus Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +63,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Constructivism',
     category: '1. Geometric Abstraction',
     negativePrompt:
-      'soft, nature, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, soft, nature, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Constructivism becomes a transferable geometric abstraction system: start from Industrial propaganda, Typography elements, and Aggressive angles, then route prompt content through planes, grids, vectors, optical order, and deliberate formal reduction without forcing one card scene.',
+        'Constructivism: dynamic diagonals, bold wedges and photomontage-free graphic propaganda energy.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Diagonal lines to break, flatten, triangulate, align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy, object identity, or scene intent beneath the abstraction.",
-      color_and_tone:
-        'Build the palette from Red, Black, White, Kraft; treat color as structural contrast, field separation, and rhythm rather than decorative wash, with enough value control that the subject remains readable after the style layer is applied.',
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is built from strong diagonal wedges, bars and circles pushing across the frame.",
+      color_and_tone: 'Red, black and cream, used consistently across subject and background.',
       lighting_and_shadow:
-        'Let Flat drive the light response: keep light graphic and structural, with shadows simplified into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Flat graphic contrast, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Rough paper as the tactile or mark-making basis; surfaces should read as designed planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces, or close material studies.',
+        'Flat printed shapes with crisp edges, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose around Aggressive angles as reusable spatial grammar: favor axial tension, repeated modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Steep diagonals and radiating wedges, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Use Revolutionary, strong as the emotional register; derive mood from rigor, optical tension, intellectual order, and abstraction pressure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Urgent, heroic, industrial and forceful, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Resolve as Soviet poster, bold: finish with crisp geometry, controlled edges, clean separations, and no accidental realism, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Industrial propaganda; Diagonal lines; Red, Black, White, Kraft; Flat; Rough paper; Aggressive angles; Revolutionary, strong; Soviet poster, bold; Typography elements',
+        'Bold print-like finish, with clean, deliberate marks and no accidental noise.',
+      key_features: 'dynamic diagonals; red wedges; black bars; cream ground',
       creative_brief:
-        'Drive the input through constructivist urgency: red-black diagonals, industrial geometry, hard typographic-like blocks without readable text, and poster-force composition should make any subject feel engineered, public, and declarative.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Constructivism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,57 +90,55 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Op Art (Optical)',
     category: '1. Geometric Abstraction',
     negativePrompt:
-      'still, calm, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, still, calm, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Op Art (Optical) becomes a transferable geometric abstraction system: start from Visual illusion, Bridget Riley, trippy, and Dizzying, kinetic, then route prompt content through planes, grids, vectors, optical order, and deliberate formal reduction without forcing one card scene.',
+        'Op Art: optical illusions of vibrating stripes, warped grids and moiré that make flat patterns seem to move.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Warped grids to break, flatten, triangulate, align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is formed by bending black-and-white stripes or grids so it bulges or recedes optically.",
       color_and_tone:
-        'Build the palette from Black and White; treat color as structural contrast, field separation, and rhythm rather than decorative wash, with enough value control that the subject remains readable after the style layer is applied.',
+        'Black and white, sometimes one vibrating color pair, used consistently across subject and background.',
       lighting_and_shadow:
-        'Let Smooth drive the light response: keep light graphic and structural, with shadows simplified into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'No light; illusion comes from pattern density, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Vibrating effect as the tactile or mark-making basis; surfaces should read as designed planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces, or close material studies.',
-      camera_and_composition:
-        'Compose around Dizzying, kinetic as reusable spatial grammar: favor axial tension, repeated modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Precise stripes, checks and warped grids, visible at card size as the signature of the style.',
+      camera_and_composition: 'Pattern fills the frame with the subject as distortion.',
       atmosphere_and_mood:
-        'Use Dizzying, kinetic as the emotional register; derive mood from rigor, optical tension, intellectual order, and abstraction pressure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Dizzying, hypnotic, precise and kinetic, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Resolve as Bridget Riley, trippy: finish with crisp geometry, controlled edges, clean separations, and no accidental realism, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Visual illusion; Warped grids; Black and White; Smooth; Vibrating effect; Dizzying, kinetic; Dizzying, kinetic; Bridget Riley, trippy; Bridget Riley, trippy',
+        'Hard-edged precise finish, with clean, deliberate marks and no accidental noise.',
+      key_features: 'warped stripes; bulging grid illusion; black and white; vibration',
       creative_brief:
-        'Apply op-art optical stress to the input: pulsing line fields, high-contrast waves, vibrating figure-ground reversals, and controlled visual interference should make any subject feel unstable without losing silhouette legibility.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Op Art (Optical) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP10-005',
-    name: 'Mondrian (De Stijl)',
+    name: 'De Stijl Grid',
+    displayName: 'De Stijl Grid',
+    styleAnchors: ['De Stijl Grid'],
     category: '1. Geometric Abstraction',
     negativePrompt:
-      'curves, diagonal, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, curves, diagonal, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Mondrian (De Stijl) becomes a transferable geometric abstraction system: start from Grid of rectangles, Grid structure, and Only 90 degree angles, then route prompt content through planes, grids, vectors, optical order, and deliberate formal reduction without forcing one card scene.',
+        'De Stijl grid: black orthogonal lines dividing white fields with a few primary color blocks.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Thick black lines to break, flatten, triangulate, align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy, object identity, or scene intent beneath the abstraction.",
-      color_and_tone:
-        'Build the palette from Primary colors + White; treat color as structural contrast, field separation, and rhythm rather than decorative wash, with enough value control that the subject remains readable after the style layer is applied.',
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is abstracted into an asymmetric grid of rectangles, with color blocks placed at its key parts.",
+      color_and_tone: 'White fields, black lines, red, yellow and blue blocks.',
       lighting_and_shadow:
-        'Let Flat drive the light response: keep light graphic and structural, with shadows simplified into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Flat, no shadows, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Canvas as the tactile or mark-making basis; surfaces should read as designed planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces, or close material studies.',
+        'Flat paint with crisp lines, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose around Only 90 degree angles as reusable spatial grammar: favor axial tension, repeated modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Asymmetric orthogonal balance, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Use Balanced, rigid as the emotional register; derive mood from rigor, optical tension, intellectual order, and abstraction pressure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Calm, pure, ordered and spiritual, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Resolve as Modern art, minimal: finish with crisp geometry, controlled edges, clean separations, and no accidental realism, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Grid of rectangles; Thick black lines; Primary colors + White; Flat; Canvas; Only 90 degree angles; Balanced, rigid; Modern art, minimal; Grid structure',
+        'Crisp flat finish, with clean, deliberate marks and no accidental noise.',
+      key_features: 'black orthogonal grid; primary blocks; white fields',
       creative_brief:
-        'Apply De Stijl grid logic to the input: black orthogonal bars, white space, primary color rectangles, and asymmetric balance should convert any subject into disciplined planar harmony without requiring a literal painting panel.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies De Stijl Grid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +146,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fractal Geometry',
     category: '1. Geometric Abstraction',
     negativePrompt:
-      'simple, finite, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, simple, finite, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Fractal Geometry becomes a transferable geometric abstraction system: start from Mandelbrot set, Self-similarity, and Recursive, then route prompt content through planes, grids, vectors, optical order, and deliberate formal reduction without forcing one card scene.',
+      aesthetic: 'Fractal geometry: self-similar recursive forms repeating at every scale.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Infinite detail to break, flatten, triangulate, align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy, object identity, or scene intent beneath the abstraction.",
-      color_and_tone:
-        'Build the palette from Psychedelic gradient; treat color as structural contrast, field separation, and rhythm rather than decorative wash, with enough value control that the subject remains readable after the style layer is applied.',
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is built from recursive self-similar branches, spirals or tiles repeating inward.",
+      color_and_tone: 'Deep gradients of blue, violet, gold or fire tones.',
       lighting_and_shadow:
-        'Let Mathematical drive the light response: keep light graphic and structural, with shadows simplified into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Glowing edges on recursive forms, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Smooth as the tactile or mark-making basis; surfaces should read as designed planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces, or close material studies.',
+        'Infinitely detailed recursive branching, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose around Recursive as reusable spatial grammar: favor axial tension, repeated modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Central spiral or branching recursion, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Use Infinite, trippy as the emotional register; derive mood from rigor, optical tension, intellectual order, and abstraction pressure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Infinite, mesmerizing, mathematical and cosmic, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Resolve as Math art, complex: finish with crisp geometry, controlled edges, clean separations, and no accidental realism, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Mandelbrot set; Infinite detail; Psychedelic gradient; Mathematical; Smooth; Recursive; Infinite, trippy; Math art, complex; Self-similarity',
+        'Crisp high-detail digital finish, with clean, deliberate marks and no accidental noise.',
+      key_features: 'self-similar recursion; infinite branching; glowing gradients',
       creative_brief:
-        'Apply fractal recursion to the input: self-similar branching, nested scale echoes, mathematical edge repetition, and infinite-depth ornament should let any subject bloom into repeatable geometry.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fractal Geometry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +172,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Low Poly Abstract',
     category: '1. Geometric Abstraction',
     negativePrompt:
-      'curved, smooth, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, curved, smooth, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Low Poly Abstract becomes a transferable geometric abstraction system: start from Triangulated mesh, Triangles, and Geometric reduction, then route prompt content through planes, grids, vectors, optical order, and deliberate formal reduction without forcing one card scene.',
+        'Low-poly abstraction: subjects built from flat-shaded triangles with visible facets.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Edges visible to break, flatten, triangulate, align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is triangulated into flat-shaded polygons with no smoothing.",
       color_and_tone:
-        'Build the palette from Facet gradients; treat color as structural contrast, field separation, and rhythm rather than decorative wash, with enough value control that the subject remains readable after the style layer is applied.',
+        'Gradient-sampled flat colors across facets, used consistently across subject and background.',
       lighting_and_shadow:
-        'Let Global illumination drive the light response: keep light graphic and structural, with shadows simplified into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Facet shading from one soft light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Paper or plastic as the tactile or mark-making basis; surfaces should read as designed planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces, or close material studies.',
+        'Flat triangular facets with crisp edges, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose around Geometric reduction as reusable spatial grammar: favor axial tension, repeated modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Clean centered subject on a simple faceted ground, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Use Modern, tech as the emotional register; derive mood from rigor, optical tension, intellectual order, and abstraction pressure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Modern, crystalline, clean and graphic, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Resolve as Digital art, clean: finish with crisp geometry, controlled edges, clean separations, and no accidental realism, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Triangulated mesh; Edges visible; Facet gradients; Global illumination; Paper or plastic; Geometric reduction; Modern, tech; Digital art, clean; Triangles',
+        'Crisp flat-shaded finish, with clean, deliberate marks and no accidental noise.',
+      key_features: 'flat-shaded triangles; visible facets; gradient colors',
       creative_brief:
-        'Route any subject through Low Poly Abstract as a transferable geometric abstraction visual system: preserve prompt intent while converting form, edge hierarchy, color blocks, spatial rhythm, and graphic reduction through this preset. Reduce the input through low-poly abstraction: faceted planes, vertex-driven color blocks, crisp digital triangulation, and simplified light shards should preserve subject identity as crystalline geometry. Apply this abstract/vector construction over any input: preserve shape system, color logic, edge treatment, composition rhythm, and graphic rendering behavior while avoiding a required subject category, poster layout, icon, or scene template.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Low Poly Abstract as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +200,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Suprematism',
     category: '1. Geometric Abstraction',
     negativePrompt:
-      'complex, real, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, complex, real, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Suprematism becomes a transferable geometric abstraction system: start from Floating shapes, White void, and Zero gravity, then route prompt content through planes, grids, vectors, optical order, and deliberate formal reduction without forcing one card scene.',
+        'Suprematism: floating pure geometric shapes on a white void, weightless and non-objective.',
       subject_treatment:
-        "Keep the user's subject recognizable while using White void to break, flatten, triangulate, align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is reduced to a few floating rectangles, circles and crosses drifting on white.",
       color_and_tone:
-        'Build the palette from Black square, simple; treat color as structural contrast, field separation, and rhythm rather than decorative wash, with enough value control that the subject remains readable after the style layer is applied.',
+        'Black, red, yellow, blue on white, used consistently across subject and background.',
       lighting_and_shadow:
-        'Let Flat drive the light response: keep light graphic and structural, with shadows simplified into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Flat, no light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Canvas as the tactile or mark-making basis; surfaces should read as designed planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces, or close material studies.',
+        'Flat painted shapes, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose around Zero gravity as reusable spatial grammar: favor axial tension, repeated modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Shapes floating diagonally in empty space, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Use Spiritual, empty as the emotional register; derive mood from rigor, optical tension, intellectual order, and abstraction pressure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Spiritual, weightless, pure and radical, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Resolve as Malevich, pure feeling: finish with crisp geometry, controlled edges, clean separations, and no accidental realism, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Floating shapes; White void; Black square, simple; Flat; Canvas; Zero gravity; Spiritual, empty; Malevich, pure feeling; White void',
+        'Clean painted finish, with clean, deliberate marks and no accidental noise.',
+      key_features: 'floating geometric shapes; white void; diagonal drift',
       creative_brief:
-        'Apply suprematist weightlessness to the input: floating rectangles, circles, stark white voids, minimal gravity, and pure color-shape tension should make any subject feel abstracted into sensation.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Suprematism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +228,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Islamic Geometric',
     category: '1. Geometric Abstraction',
     negativePrompt:
-      'figurative, random, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, religious text, figurative, random, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Islamic Geometric becomes a transferable geometric abstraction system: start from Tessellated star pattern and Radial symmetry, then route prompt content through planes, grids, vectors, optical order, and deliberate formal reduction without forcing one card scene.',
+        'Islamic geometric pattern: star-and-polygon tessellations built from compass and straightedge.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Interlaced lines to break, flatten, triangulate, align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is filled or outlined with interlaced star-and-polygon tessellation.",
       color_and_tone:
-        'Build the palette from Gold, Blue, Turquoise; treat color as structural contrast, field separation, and rhythm rather than decorative wash, with enough value control that the subject remains readable after the style layer is applied.',
+        'Lapis blue, turquoise, gold, white and terracotta, used consistently across subject and background.',
       lighting_and_shadow:
-        'Let Flat drive the light response: keep light graphic and structural, with shadows simplified into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Flat or tile-glaze sheen, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Tile, mosaic as the tactile or mark-making basis; surfaces should read as designed planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces, or close material studies.',
+        'Interlaced strapwork, stars and rosettes, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose around Radial symmetry as reusable spatial grammar: favor axial tension, repeated modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Radial symmetric tessellation, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Use Divine, orderly as the emotional register; derive mood from rigor, optical tension, intellectual order, and abstraction pressure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Harmonious, infinite, sacred and precise, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Resolve as Sacred geometry, precise: finish with crisp geometry, controlled edges, clean separations, and no accidental realism, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Tessellated star pattern; Interlaced lines; Gold, Blue, Turquoise; Flat; Tile, mosaic; Radial symmetry; Divine, orderly; Sacred geometry, precise; Radial symmetry',
+        'Precise, crisp geometric finish, with clean, deliberate marks and no accidental noise.',
+      key_features: 'star-and-polygon tessellation; interlaced strapwork; radial symmetry',
       creative_brief:
-        'Apply Islamic geometric order to the input: star lattices, interlocking tessellations, radial symmetry, and disciplined repetition should turn any subject into devotional pattern logic without requiring architecture.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Islamic Geometric as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -269,28 +256,365 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Voronoi Pattern',
     category: '1. Geometric Abstraction',
     negativePrompt:
-      'square grid, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, square grid, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Voronoi Pattern becomes a transferable geometric abstraction system: start from Cellular diagram and Cell structure, then route prompt content through planes, grids, vectors, optical order, and deliberate formal reduction without forcing one card scene.',
+        'Voronoi: space divided into irregular cells around seed points, like cracked earth or cells.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Cell walls to break, flatten, triangulate, align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is divided into Voronoi cells that follow its form, with thicker cell walls at contours.",
       color_and_tone:
-        'Build the palette from Random seed colors; treat color as structural contrast, field separation, and rhythm rather than decorative wash, with enough value control that the subject remains readable after the style layer is applied.',
+        'Organic gradient colors per cell, used consistently across subject and background.',
       lighting_and_shadow:
-        'Let Flat drive the light response: keep light graphic and structural, with shadows simplified into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Soft shading inside each cell, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Biological or math as the tactile or mark-making basis; surfaces should read as designed planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces, or close material studies.',
+        'Irregular cells with clean borders, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose around Cellular as reusable spatial grammar: favor axial tension, repeated modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Cellular fill across subject and ground, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Use Natural math as the emotional register; derive mood from rigor, optical tension, intellectual order, and abstraction pressure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Organic, cellular, scientific and modern, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Resolve as Generative art: finish with crisp geometry, controlled edges, clean separations, and no accidental realism, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Cellular diagram; Cell walls; Random seed colors; Flat; Biological or math; Cellular; Natural math; Generative art; Cell structure',
+        'Clean generative finish, with clean, deliberate marks and no accidental noise.',
+      key_features: 'Voronoi cells; seed points; cellular borders',
       creative_brief:
-        'Apply Voronoi partitioning to the input: cellular borders, influence zones, organic algorithmic tiles, and equilibrium maps should segment any subject into living computational geometry.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Voronoi Pattern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP10-081',
+    name: 'Orphism Color Discs',
+    displayName: 'Orphism Color Discs',
+    styleAnchors: [
+      'Orphism Color Discs',
+      'orphist color disc abstraction',
+      'concentric color discs',
+    ],
+    category: '1. Geometric Abstraction',
+    domain: 'orphist color disc abstraction',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Orphism: rhythmic concentric color discs and arcs that pulse with simultaneous contrast.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject emerges from overlapping concentric color discs and arcs.",
+      color_and_tone:
+        'Saturated contrasting color rings, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Light is color contrast itself, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Painted concentric rings and arcs, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Circular rhythms around the subject, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Joyful, rhythmic, luminous and musical, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Painterly flat finish, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Orphism Color Discs as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'concentric color discs; simultaneous contrast; rhythmic arcs',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-082',
+    name: 'Futurist Force Lines',
+    displayName: 'Futurist Force Lines',
+    styleAnchors: ['Futurist Force Lines', 'futurist dynamism', 'repeated motion contours'],
+    category: '1. Geometric Abstraction',
+    domain: 'futurist dynamism',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Futurist dynamism: repeated overlapping forms and force lines expressing speed and motion.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is repeated in successive overlapping positions with sharp force lines.",
+      color_and_tone:
+        'Bright reds, blues and metallic greys, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Dynamic light fragments, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Repeated contours, force lines and fragmented planes, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Diagonal motion across the frame, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Fast, violent, mechanical and exhilarating, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Energetic painted finish, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Futurist Force Lines as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'repeated motion contours; force lines; diagonal speed',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-083',
+    name: 'Hard-Edge Painting',
+    displayName: 'Hard-Edge Painting',
+    styleAnchors: ['Hard-Edge Painting', 'hard-edge color field', 'razor-sharp edges'],
+    category: '1. Geometric Abstraction',
+    domain: 'hard-edge color field',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Hard-edge painting: large flat color areas meeting at razor-sharp edges.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is simplified into a few large flat color shapes with crisp edges.",
+      color_and_tone:
+        'Bold flat complementary colors, used consistently across subject and background.',
+      lighting_and_shadow:
+        'No shading, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Flat opaque paint with razor edges, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Large simple shapes filling the frame, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Bold, calm, confident and modern, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Clean flat finish, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hard-Edge Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'razor-sharp edges; flat color areas; bold simplicity',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-084',
+    name: 'Precisionism',
+    displayName: 'Precisionism',
+    styleAnchors: ['Precisionism', 'precisionist industrial geometry', 'smooth geometric planes'],
+    category: '1. Geometric Abstraction',
+    domain: 'precisionist industrial geometry',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Precisionism: clean, sharp-edged geometric rendering of structures with smooth planes and crisp shadows.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is rendered as clean geometric volumes with smooth planes and precise shadows.",
+      color_and_tone: 'Cool greys, soft blues and cream with sharp shadow shapes.',
+      lighting_and_shadow:
+        'Crisp directional sun with geometric shadows, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Smooth painted planes without texture, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Frontal or low-angle structural view, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Calm, orderly, monumental and quiet, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Precise smooth finish, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Precisionism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'smooth geometric planes; crisp shadows; industrial order',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-085',
+    name: 'Vorticism',
+    displayName: 'Vorticism',
+    styleAnchors: ['Vorticism', 'vorticist angular abstraction', 'angular shards'],
+    category: '1. Geometric Abstraction',
+    domain: 'vorticist angular abstraction',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Vorticism: hard angular machine-like forms spiraling into a vortex center.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is broken into hard angular shards converging into a vortex.",
+      color_and_tone:
+        'Strong blacks, reds and ochres, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Harsh contrast, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Sharp angular shards, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Vortex converging to a point, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Aggressive, mechanical, energetic and harsh, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Bold graphic finish, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vorticism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'angular shards; vortex center; machine energy',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-086',
+    name: 'Truchet Tile Weave',
+    displayName: 'Truchet Tile Weave',
+    styleAnchors: ['Truchet Tile Weave', 'truchet tile patterns', 'Truchet quarter-circle tiles'],
+    category: '1. Geometric Abstraction',
+    domain: 'truchet tile patterns',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Truchet tiling: square tiles with quarter-circle or diagonal motifs that combine into flowing mazes.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject emerges from a field of rotated Truchet tiles whose curves form its outline.",
+      color_and_tone:
+        'Two- or three-color schemes, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Flat, no shading, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Tiled quarter-circle arcs, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Grid of tiles filling the frame, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Playful, maze-like, rhythmic and clever, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Crisp graphic finish, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Truchet Tile Weave as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'Truchet quarter-circle tiles; emergent curves; grid',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-087',
+    name: 'Penrose Aperiodic Tiling',
+    displayName: 'Penrose Aperiodic Tiling',
+    styleAnchors: ['Penrose Aperiodic Tiling', 'aperiodic tiling', 'aperiodic rhombus tiling'],
+    category: '1. Geometric Abstraction',
+    domain: 'aperiodic tiling',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Penrose tiling: aperiodic kite-and-dart or rhombus tiling with five-fold symmetry.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is filled and outlined with aperiodic rhombus tiles.",
+      color_and_tone:
+        'Two-tone or jewel palette per tile type, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Flat or subtle tile sheen, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Rhombus tiles with fine grout lines, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Five-fold radial tiling, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Mathematical, mysterious, ordered and unusual, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Crisp precise finish, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Penrose Aperiodic Tiling as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'aperiodic rhombus tiling; five-fold symmetry',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-088',
+    name: 'Swiss Grid Composition',
+    displayName: 'Swiss Grid Composition',
+    styleAnchors: ['Swiss Grid Composition', 'Swiss grid design', 'modular grid'],
+    category: '1. Geometric Abstraction',
+    domain: 'Swiss grid design',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Swiss grid composition: strict modular grid, asymmetric layout, bold geometric image blocks without type.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is placed in a strict modular grid of image blocks and color fields.",
+      color_and_tone:
+        'Red, black, white and one accent, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Flat or photographic within blocks, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Clean blocks with precise alignment, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Asymmetric modular grid, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Rational, clean, confident and modern, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Crisp print finish, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Swiss Grid Composition as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'modular grid; asymmetric blocks; no type',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-089',
+    name: 'String Art Geometry',
+    displayName: 'String Art Geometry',
+    styleAnchors: ['String Art Geometry', 'string art line geometry', 'taut threads'],
+    category: '1. Geometric Abstraction',
+    domain: 'string art line geometry',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'String art: taut straight threads between pins forming curves by envelope.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is drawn by taut threads stretched between pins, curves emerging from straight lines.",
+      color_and_tone:
+        'Bright thread colors on dark board, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Soft light on threads, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Taut threads, pins and board, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Pinned outline with thread envelopes, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Precise, handmade, delicate and mathematical, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Crisp thread finish, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies String Art Geometry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'taut threads; pin outlines; curve envelopes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-090',
+    name: 'Neo-Geo Minimalism',
+    displayName: 'Neo-Geo Minimalism',
+    styleAnchors: ['Neo-Geo Minimalism', 'neo-geo minimal geometry', 'geometric cells'],
+    category: '1. Geometric Abstraction',
+    domain: 'neo-geo minimal geometry',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Neo-geo minimalism: cool, slick geometric forms with fluorescent accents and industrial surfaces.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is reduced to slick geometric cells, bars and conduits.",
+      color_and_tone:
+        'Fluorescent accents on grey and white, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Clean flat light, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Smooth industrial surfaces, visible at card size as the signature of the style.',
+      camera_and_composition: 'Grid-based cells, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Cool, detached, slick and ironic, driven by the construction, color and rhythm.',
+      rendering_and_quality: 'Clean finish, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neo-Geo Minimalism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'geometric cells; fluorescent accents; industrial slick',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP10-083
+packId: pack_10
+name: Hard-Edge Painting
+styleAnchors:
+  - Hard-Edge Painting
+  - hard-edge color field
+  - razor-sharp edges
+displayName: Hard-Edge Painting
+category: 1. Geometric Abstraction
+domain: hard-edge color field
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - geometric-abstraction
+  - hard-edge
+  - color-field
+  - geometric
+visualDna:
+  aesthetic: 'Hard-edge painting: large flat color areas meeting at razor-sharp edges.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is simplified into a few large flat color shapes with crisp edges."
+  color_and_tone: Bold flat complementary colors, used consistently across subject and background.
+  lighting_and_shadow: No shading, expressed through the style rather than photographic lighting.
+  texture_and_material: Flat opaque paint with razor edges, visible at card size as the signature of the style.
+  camera_and_composition: Large simple shapes filling the frame, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Bold, calm, confident and modern, driven by the construction, color and rhythm.
+  rendering_and_quality: Clean flat finish, with clean, deliberate marks and no accidental noise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hard-Edge Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: razor-sharp edges; flat color areas; bold simplicity
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_10
+  packName: Abstract & Experimental
+  categoryId: geometric-abstraction
+  categoryName: 1. Geometric Abstraction
+  tags:
+    - abstract-and-experimental
+    - geometric-abstraction
+    - hard-edge
+    - color-field
+    - geometric
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: hard-edge color field

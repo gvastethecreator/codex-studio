@@ -20,6 +20,16 @@ categories:
       - pack_10/SP10-008.yaml
       - pack_10/SP10-009.yaml
       - pack_10/SP10-010.yaml
+      - pack_10/SP10-081.yaml
+      - pack_10/SP10-082.yaml
+      - pack_10/SP10-083.yaml
+      - pack_10/SP10-084.yaml
+      - pack_10/SP10-085.yaml
+      - pack_10/SP10-086.yaml
+      - pack_10/SP10-087.yaml
+      - pack_10/SP10-088.yaml
+      - pack_10/SP10-089.yaml
+      - pack_10/SP10-090.yaml
   - id: fluid-and-organic
     name: 2. Fluid & Organic
     presetRefs:
@@ -125,6 +135,16 @@ presetRefs:
   - pack_10/SP10-008.yaml
   - pack_10/SP10-009.yaml
   - pack_10/SP10-010.yaml
+  - pack_10/SP10-081.yaml
+  - pack_10/SP10-082.yaml
+  - pack_10/SP10-083.yaml
+  - pack_10/SP10-084.yaml
+  - pack_10/SP10-085.yaml
+  - pack_10/SP10-086.yaml
+  - pack_10/SP10-087.yaml
+  - pack_10/SP10-088.yaml
+  - pack_10/SP10-089.yaml
+  - pack_10/SP10-090.yaml
   - pack_10/SP10-011.yaml
   - pack_10/SP10-012.yaml
   - pack_10/SP10-013.yaml

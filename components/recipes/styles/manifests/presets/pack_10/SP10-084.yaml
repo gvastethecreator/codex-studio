@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP10-084
+packId: pack_10
+name: Precisionism
+styleAnchors:
+  - Precisionism
+  - precisionist industrial geometry
+  - smooth geometric planes
+displayName: Precisionism
+category: 1. Geometric Abstraction
+domain: precisionist industrial geometry
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - geometric-abstraction
+  - precisionism
+  - industrial
+  - geometric
+visualDna:
+  aesthetic: 'Precisionism: clean, sharp-edged geometric rendering of structures with smooth planes and crisp shadows.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is rendered as clean geometric volumes with smooth planes and precise shadows."
+  color_and_tone: Cool greys, soft blues and cream with sharp shadow shapes.
+  lighting_and_shadow: Crisp directional sun with geometric shadows, expressed through the style rather than photographic lighting.
+  texture_and_material: Smooth painted planes without texture, visible at card size as the signature of the style.
+  camera_and_composition: Frontal or low-angle structural view, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Calm, orderly, monumental and quiet, driven by the construction, color and rhythm.
+  rendering_and_quality: Precise smooth finish, with clean, deliberate marks and no accidental noise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Precisionism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: smooth geometric planes; crisp shadows; industrial order
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_10
+  packName: Abstract & Experimental
+  categoryId: geometric-abstraction
+  categoryName: 1. Geometric Abstraction
+  tags:
+    - abstract-and-experimental
+    - geometric-abstraction
+    - precisionism
+    - industrial
+    - geometric
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: precisionist industrial geometry
