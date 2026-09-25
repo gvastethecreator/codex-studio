@@ -1,0 +1,79 @@
+schemaVersion: 1
+id: SP01-137
+packId: pack_01
+name: Tiny Planet Stereographic
+styleAnchors:
+  - Tiny Planet Stereographic
+  - stereographic panorama projection
+  - round tiny-planet ground
+displayName: Tiny Planet Stereographic
+category: 7. Technical And Specialist Imaging
+domain: stereographic panorama projection
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - technical-and-specialist-imaging
+  - tiny-planet
+  - 360-panorama
+  - projection
+visualDna:
+  aesthetic: 'Tiny planet projection: a full 360-degree panorama bent into a stereographic circle, so the ground becomes a small globe and the sky wraps around it.'
+  subject_treatment: Keep the prompt subject and action; this preset owns the stereographic tiny-planet projection, and the setting stays the prompt's.
+  color_and_tone: Natural color with sky filling the outer ring, ground concentrated at the center.
+  lighting_and_shadow: Daylight or dusk light; shadows radiate outward from the globe.
+  texture_and_material: Buildings, trees and people bending outward from the round horizon.
+  camera_and_composition: Circular planet at center, vertical objects pointing outward like spikes, subject standing on the curve.
+  atmosphere_and_mood: Playful and dizzy, a whole place held like a toy globe.
+  rendering_and_quality: Seamless stitched panorama with no visible seams, ghosting or broken lines.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tiny Planet Stereographic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: round tiny-planet ground; sky wrapping the edges; objects radiating outward; 360-degree stitch; centered globe
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - cartoon
+  - anime
+  - plastic render
+  - fake UI text
+  - readable timestamp
+  - random sci-fi overlay
+  - cinematic beauty lighting
+  - generic stock-photo face
+  - celebrity likeness
+  - visible stitch seams
+  - ordinary rectilinear view
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, drawing, cartoon, anime, plastic render, fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, visible stitch seams, ordinary rectilinear view, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: technical-and-specialist-imaging
+  categoryName: 7. Technical And Specialist Imaging
+  tags:
+    - photography-and-realism
+    - technical-and-specialist-imaging
+    - tiny-planet
+    - 360-panorama
+    - projection
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: stereographic panorama projection

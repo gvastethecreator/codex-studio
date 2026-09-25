@@ -19,7 +19,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       'A comprehensive collection of 80+ photographic styles, film stocks, and lighting setups.',
     cardTitle: 'Photo Realism',
     cardDescription: 'Photography, film stock, lens, portrait, lighting.',
-    presetCount: 132,
+    presetCount: 140,
   },
   {
     id: 'pack_02',

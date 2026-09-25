@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP01-028
 packId: pack_01
-name: Thermal Camera
+name: Ironbow Thermal Imaging
 category: 7. Technical And Specialist Imaging
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,48 +12,25 @@ tags:
   - photography-and-realism
   - technical-and-specialist-imaging
 visualDna:
-  aesthetic: >-
-    Thermal Camera acts as a transferable photographic style router: begin from Heat map imaging,
-    Heat gradient, and technical capture system built from diagnostic optics, surveillance position,
-    scientific sensor behavior, and evidence-grade readability, then apply the photographic behavior
-    to prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Blobby heat signatures; preserve prompt identity while
-    translating it through device constraints, evidence logic, extreme scale, or diagnostic signal,
-    keeping the original subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with Ironbow (Purple to Yellow); use palette as sensor output: thermal gradients,
-    monochrome electron depth, CCTV compression, medical neutral color, or astrophotographic false
-    color, with value separation and white balance choices that feel captured in-camera rather than
-    painted over.
-  lighting_and_shadow: >-
-    Use Emissive; make light come from device behavior, flash documentation, emissive heat,
-    telescope exposure, glass reflections, or clinical illumination, preserving believable exposure,
-    shadow density, highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Digital noise; render scan noise, compression, measurement surfaces, medical cleanliness,
-    forensic detail, microtexture, or signal artifacts as capture evidence, avoiding both waxy
-    smoothing and noisy texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through No surface detail; compose through mounted POV, deadpan documentation, miniature
-    focal bands, abstract cropping, evidence scale, or instrument framing, with lens distance,
-    depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Diagnostic, technical; derive mood from surveillance, diagnosis, evidence,
-    scientific alienness, minimalism, procedural restraint, or technical unease, so the preset
-    changes interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Military, scientific; finish with exact capture logic, readable signal, controlled
-    artifacts, and no cinematic beauty-lighting overwrite, high-resolution photographic detail, and
-    disciplined denoise without losing natural grain where the preset needs it.
-  key_features: Heat map imaging; Heat gradient; Ironbow (Purple to Yellow); Emissive; No surface detail
-  creative_brief: >-
-    Apply Thermal Camera as a photographic preset over prompt X: preserve the user's requested
-    subject, then route Heat map imaging, Ironbow (Purple to Yellow), Emissive, Digital noise, and
-    No surface detail through optics, exposure, palette, surface response, timing, and finish
-    without requiring the card image's original subject.
+  aesthetic: 'Ironbow thermal imaging: a longwave infrared camera mapping temperature to a black-purple-red-orange-yellow-white palette, so heat, not light, defines the image.'
+  subject_treatment: Keep the prompt subject, action and setting; change only the capture technique described here, so the subject reads clearly through it.
+  color_and_tone: 'Ironbow palette: cold areas deep indigo and purple, warm bodies orange, hottest points yellow-white.'
+  lighting_and_shadow: No visible light logic; shapes read by temperature, with heat bleeding softly into cold surroundings.
+  texture_and_material: Surface detail replaced by smooth thermal gradients; breath, hot spots and cooling trails visible.
+  camera_and_composition: Keep the requested framing; the thermal palette is the transferable part.
+  atmosphere_and_mood: Revealing and clinical, hidden heat made suddenly visible.
+  rendering_and_quality: Radiometric camera look with soft low-resolution gradients; no UI crosshairs or readable scale.
+  key_features: ironbow palette; heat as brightness; smooth thermal gradients; hot white peaks; no visible-light shading
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ironbow Thermal Imaging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - fake UI text
+  - readable timestamp
+  - random sci-fi overlay
+  - cinematic beauty lighting
+  - generic stock-photo face
+  - celebrity likeness
   - realistic colors
+  - readable temperature scale
   - illustration
   - painting
   - drawing
@@ -67,18 +44,19 @@ avoidRules:
   - readable text
   - signature
   - low resolution
-  - cinematic beauty lighting
   - artistic blur
   - wrong diagnostic palette
-  - fake UI text
-  - random sci-fi overlay
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-028.webp
 attributes:
-  negativePrompt: >-
-    realistic colors, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic
-    CGI, plastic render, watermark, readable text, signature, low resolution, cinematic beauty
-    lighting, artistic blur, wrong diagnostic palette, fake UI text, random sci-fi overlay
+  negativePrompt: fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, realistic colors, readable temperature scale, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
@@ -92,3 +70,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Ironbow Thermal Imaging
+styleAnchors:
+  - Ironbow Thermal Imaging

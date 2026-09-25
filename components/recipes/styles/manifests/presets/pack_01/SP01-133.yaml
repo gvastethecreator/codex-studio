@@ -1,0 +1,79 @@
+schemaVersion: 1
+id: SP01-133
+packId: pack_01
+name: Schlieren Photography
+styleAnchors:
+  - Schlieren Photography
+  - schlieren flow imaging
+  - visible air and heat flow
+displayName: Schlieren Photography
+category: 7. Technical And Specialist Imaging
+domain: schlieren flow imaging
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - technical-and-specialist-imaging
+  - schlieren
+  - scientific
+  - optics
+visualDna:
+  aesthetic: 'Schlieren photography: a knife-edge optical setup that makes invisible air flow, heat and shock waves visible as sharp gradients of light and dark.'
+  subject_treatment: Keep the prompt subject, action and setting; change only the capture technique described here, so the subject reads clearly through it.
+  color_and_tone: Monochrome silver grey, or color schlieren with a rainbow filter turning density gradients into blues, magentas and golds.
+  lighting_and_shadow: Collimated light through the scene against a dark or grey field; refraction becomes light and shadow.
+  texture_and_material: Plumes, ripples, vortex curls and shock fronts rendered crisp; solid objects in silhouette.
+  camera_and_composition: Object in profile inside a round mirror field, air flow rising or streaming across the frame.
+  atmosphere_and_mood: Revelatory and precise, invisible forces suddenly made visible.
+  rendering_and_quality: Real optical schlieren look; not smoke, not a painted glow.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Schlieren Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: visible air and heat flow; knife-edge gradients; round mirror field; silhouetted object; rainbow or silver tones
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - cartoon
+  - anime
+  - plastic render
+  - fake UI text
+  - readable timestamp
+  - random sci-fi overlay
+  - cinematic beauty lighting
+  - generic stock-photo face
+  - celebrity likeness
+  - smoke
+  - painted aura
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, drawing, cartoon, anime, plastic render, fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, smoke, painted aura, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: technical-and-specialist-imaging
+  categoryName: 7. Technical And Specialist Imaging
+  tags:
+    - photography-and-realism
+    - technical-and-specialist-imaging
+    - schlieren
+    - scientific
+    - optics
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: schlieren flow imaging

@@ -3,7 +3,7 @@
     {
       "id": "pack_01",
       "name": "Photography & Realism",
-      "presetCount": 132
+      "presetCount": 140
     }
   ],
   "presets": [
@@ -1750,7 +1750,8 @@
     },
     {
       "id": "SP01-028",
-      "name": "Thermal Camera",
+      "name": "Ironbow Thermal Imaging",
+      "styleAnchors": ["Ironbow Thermal Imaging"],
       "ref": "pack_01/SP01-028.yaml",
       "packId": "pack_01",
       "packName": "Photography & Realism",
@@ -1758,7 +1759,7 @@
       "categoryName": "7. Technical And Specialist Imaging",
       "tags": ["photography-and-realism", "technical-and-specialist-imaging"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp01-028 thermal camera 7. technical and specialist imaging technical capture pack_01 photography & realism technical-and-specialist-imaging photography-and-realism technical-and-specialist-imaging"
+      "searchableText": "sp01-028 ironbow thermal imaging 7. technical and specialist imaging technical capture pack_01 photography & realism technical-and-specialist-imaging photography-and-realism technical-and-specialist-imaging"
     },
     {
       "id": "SP01-029",
@@ -1867,7 +1868,179 @@
       "tags": ["photography-and-realism", "technical-and-specialist-imaging"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp01-077 medical photography 7. technical and specialist imaging technical capture pack_01 photography & realism technical-and-specialist-imaging photography-and-realism technical-and-specialist-imaging"
+    },
+    {
+      "id": "SP01-133",
+      "name": "Schlieren Photography",
+      "styleAnchors": [
+        "Schlieren Photography",
+        "schlieren flow imaging",
+        "visible air and heat flow"
+      ],
+      "ref": "pack_01/SP01-133.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "technical-and-specialist-imaging",
+      "categoryName": "7. Technical And Specialist Imaging",
+      "domain": "schlieren flow imaging",
+      "tags": [
+        "photography-and-realism",
+        "technical-and-specialist-imaging",
+        "schlieren-flow-imaging"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-133 schlieren photography schlieren flow imaging visible air and heat flow 7. technical and specialist imaging technical capture schlieren flow imaging pack_01 photography & realism technical-and-specialist-imaging photography-and-realism technical-and-specialist-imaging schlieren-flow-imaging"
+    },
+    {
+      "id": "SP01-134",
+      "name": "Photoelastic Stress Imaging",
+      "styleAnchors": [
+        "Photoelastic Stress Imaging",
+        "photoelastic stress analysis",
+        "rainbow stress fringes"
+      ],
+      "ref": "pack_01/SP01-134.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "technical-and-specialist-imaging",
+      "categoryName": "7. Technical And Specialist Imaging",
+      "domain": "photoelastic stress analysis",
+      "tags": [
+        "photography-and-realism",
+        "technical-and-specialist-imaging",
+        "photoelastic-stress-analysis"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-134 photoelastic stress imaging photoelastic stress analysis rainbow stress fringes 7. technical and specialist imaging technical capture photoelastic stress analysis pack_01 photography & realism technical-and-specialist-imaging photography-and-realism technical-and-specialist-imaging photoelastic-stress-analysis"
+    },
+    {
+      "id": "SP01-135",
+      "name": "Slit-Scan Photo Finish",
+      "styleAnchors": [
+        "Slit-Scan Photo Finish",
+        "slit-scan finish-line camera",
+        "vertical-stripe background"
+      ],
+      "ref": "pack_01/SP01-135.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "technical-and-specialist-imaging",
+      "categoryName": "7. Technical And Specialist Imaging",
+      "domain": "slit-scan finish-line camera",
+      "tags": [
+        "photography-and-realism",
+        "technical-and-specialist-imaging",
+        "slit-scan-finish-line-camera"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-135 slit-scan photo finish slit-scan finish-line camera vertical-stripe background 7. technical and specialist imaging technical capture slit-scan finish-line camera pack_01 photography & realism technical-and-specialist-imaging photography-and-realism technical-and-specialist-imaging slit-scan-finish-line-camera"
+    },
+    {
+      "id": "SP01-136",
+      "name": "Chronophotography Sequence",
+      "styleAnchors": [
+        "Chronophotography Sequence",
+        "multiple-exposure motion study",
+        "many overlapping phases"
+      ],
+      "ref": "pack_01/SP01-136.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "technical-and-specialist-imaging",
+      "categoryName": "7. Technical And Specialist Imaging",
+      "domain": "multiple-exposure motion study",
+      "tags": [
+        "photography-and-realism",
+        "technical-and-specialist-imaging",
+        "multiple-exposure-motion-study"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-136 chronophotography sequence multiple-exposure motion study many overlapping phases 7. technical and specialist imaging technical capture multiple-exposure motion study pack_01 photography & realism technical-and-specialist-imaging photography-and-realism technical-and-specialist-imaging multiple-exposure-motion-study"
+    },
+    {
+      "id": "SP01-137",
+      "name": "Tiny Planet Stereographic",
+      "styleAnchors": [
+        "Tiny Planet Stereographic",
+        "stereographic panorama projection",
+        "round tiny-planet ground"
+      ],
+      "ref": "pack_01/SP01-137.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "technical-and-specialist-imaging",
+      "categoryName": "7. Technical And Specialist Imaging",
+      "domain": "stereographic panorama projection",
+      "tags": [
+        "photography-and-realism",
+        "technical-and-specialist-imaging",
+        "stereographic-panorama-projection"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-137 tiny planet stereographic stereographic panorama projection round tiny-planet ground 7. technical and specialist imaging technical capture stereographic panorama projection pack_01 photography & realism technical-and-specialist-imaging photography-and-realism technical-and-specialist-imaging stereographic-panorama-projection"
+    },
+    {
+      "id": "SP01-138",
+      "name": "UV Fluorescence Photography",
+      "styleAnchors": [
+        "UV Fluorescence Photography",
+        "ultraviolet-induced fluorescence",
+        "UV-only lighting"
+      ],
+      "ref": "pack_01/SP01-138.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "technical-and-specialist-imaging",
+      "categoryName": "7. Technical And Specialist Imaging",
+      "domain": "ultraviolet-induced fluorescence",
+      "tags": [
+        "photography-and-realism",
+        "technical-and-specialist-imaging",
+        "ultraviolet-induced-fluorescence"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-138 uv fluorescence photography ultraviolet-induced fluorescence uv-only lighting 7. technical and specialist imaging technical capture ultraviolet-induced fluorescence pack_01 photography & realism technical-and-specialist-imaging photography-and-realism technical-and-specialist-imaging ultraviolet-induced-fluorescence"
+    },
+    {
+      "id": "SP01-139",
+      "name": "Kirlian Corona Photography",
+      "styleAnchors": [
+        "Kirlian Corona Photography",
+        "corona discharge contact photography",
+        "electric corona halo"
+      ],
+      "ref": "pack_01/SP01-139.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "technical-and-specialist-imaging",
+      "categoryName": "7. Technical And Specialist Imaging",
+      "domain": "corona discharge contact photography",
+      "tags": [
+        "photography-and-realism",
+        "technical-and-specialist-imaging",
+        "corona-discharge-contact-photography"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-139 kirlian corona photography corona discharge contact photography electric corona halo 7. technical and specialist imaging technical capture corona discharge contact photography pack_01 photography & realism technical-and-specialist-imaging photography-and-realism technical-and-specialist-imaging corona-discharge-contact-photography"
+    },
+    {
+      "id": "SP01-140",
+      "name": "Borescope Inspection",
+      "styleAnchors": ["Borescope Inspection", "industrial borescope camera", "circular vignette"],
+      "ref": "pack_01/SP01-140.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "technical-and-specialist-imaging",
+      "categoryName": "7. Technical And Specialist Imaging",
+      "domain": "industrial borescope camera",
+      "tags": [
+        "photography-and-realism",
+        "technical-and-specialist-imaging",
+        "industrial-borescope-camera"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-140 borescope inspection industrial borescope camera circular vignette 7. technical and specialist imaging technical capture industrial borescope camera pack_01 photography & realism technical-and-specialist-imaging photography-and-realism technical-and-specialist-imaging industrial-borescope-camera"
     }
   ],
-  "totalPresetCount": 132
+  "totalPresetCount": 140
 }

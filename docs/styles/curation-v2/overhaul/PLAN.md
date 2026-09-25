@@ -47,14 +47,15 @@ Pack order, skipping pack_12 and pack_17: pack_01 → pack_24, then pack_12, pac
 
 ## Progress
 
-| Category                            | Audit | DNA  | Briefs | New presets       | Cards               | Commit             |
-| ----------------------------------- | ----- | ---- | ------ | ----------------- | ------------------- | ------------------ |
-| pack_01::1. Portrait And Studio     | done  | done | done   | 2 (SP01-088, 089) | generated, reviewed | 58808ede, b12dd6f5 |
-| pack_01::2. Lighting Techniques     | done  | done | done   | 5 (SP01-090…094)  | pending (local)     | 3adb6717 + fix     |
-| pack_01::3. Film And Analog Process | done  | done | done   | 7 (SP01-095…101)  | pending (local)     | see git log        |
-| pack_01::4. Documentary And Street  | done  | done | done   | 11 (SP01-102…112) | pending (local)     | see git log        |
-| pack_01::5. Commercial And Product  | done  | done | done   | 6 (SP01-113…118)  | pending (local)     | see git log        |
-| pack_01::6. Nature And Wildlife     | done  | done | done   | 14 (SP01-119…132) | pending (local)     | see git log        |
+| Category                                     | Audit | DNA  | Briefs | New presets       | Cards               | Commit             |
+| -------------------------------------------- | ----- | ---- | ------ | ----------------- | ------------------- | ------------------ |
+| pack_01::1. Portrait And Studio              | done  | done | done   | 2 (SP01-088, 089) | generated, reviewed | 58808ede, b12dd6f5 |
+| pack_01::2. Lighting Techniques              | done  | done | done   | 5 (SP01-090…094)  | pending (local)     | 3adb6717 + fix     |
+| pack_01::3. Film And Analog Process          | done  | done | done   | 7 (SP01-095…101)  | pending (local)     | see git log        |
+| pack_01::4. Documentary And Street           | done  | done | done   | 11 (SP01-102…112) | pending (local)     | see git log        |
+| pack_01::5. Commercial And Product           | done  | done | done   | 6 (SP01-113…118)  | pending (local)     | see git log        |
+| pack_01::6. Nature And Wildlife              | done  | done | done   | 14 (SP01-119…132) | pending (local)     | see git log        |
+| pack_01::7. Technical And Specialist Imaging | done  | done | done   | 8 (SP01-133…140)  | pending (local)     | see git log        |
 
 ## Open risks
 

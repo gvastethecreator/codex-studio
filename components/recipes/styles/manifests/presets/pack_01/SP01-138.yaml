@@ -1,0 +1,79 @@
+schemaVersion: 1
+id: SP01-138
+packId: pack_01
+name: UV Fluorescence Photography
+styleAnchors:
+  - UV Fluorescence Photography
+  - ultraviolet-induced fluorescence
+  - UV-only lighting
+displayName: UV Fluorescence Photography
+category: 7. Technical And Specialist Imaging
+domain: ultraviolet-induced fluorescence
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - technical-and-specialist-imaging
+  - ultraviolet
+  - fluorescence
+  - scientific
+visualDna:
+  aesthetic: 'UV fluorescence photography: the scene lit only by ultraviolet lamps so certain materials glow in their own vivid colors while everything else stays dark.'
+  subject_treatment: Keep the prompt subject, action and setting; change only the capture technique described here, so the subject reads clearly through it.
+  color_and_tone: Black-violet darkness with glowing neon greens, reds, oranges and cyan from fluorescing materials.
+  lighting_and_shadow: Invisible UV source; light seems to come from within the fluorescent materials.
+  texture_and_material: Minerals, varnish, inks, shells and insects revealing hidden glowing patterns.
+  camera_and_composition: Keep the requested framing; the glowing materials become the focal points.
+  atmosphere_and_mood: Secret and eerie, hidden layers glowing out of the dark.
+  rendering_and_quality: Real fluorescence with violet cast in shadows; not neon signs or painted glow.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies UV Fluorescence Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: UV-only lighting; materials glowing in their own colors; black-violet shadows; hidden patterns revealed
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - cartoon
+  - anime
+  - plastic render
+  - fake UI text
+  - readable timestamp
+  - random sci-fi overlay
+  - cinematic beauty lighting
+  - generic stock-photo face
+  - celebrity likeness
+  - neon signs
+  - ordinary daylight
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, drawing, cartoon, anime, plastic render, fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, neon signs, ordinary daylight, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: technical-and-specialist-imaging
+  categoryName: 7. Technical And Specialist Imaging
+  tags:
+    - photography-and-realism
+    - technical-and-specialist-imaging
+    - ultraviolet
+    - fluorescence
+    - scientific
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: ultraviolet-induced fluorescence

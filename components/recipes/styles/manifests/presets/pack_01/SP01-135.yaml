@@ -1,0 +1,79 @@
+schemaVersion: 1
+id: SP01-135
+packId: pack_01
+name: Slit-Scan Photo Finish
+styleAnchors:
+  - Slit-Scan Photo Finish
+  - slit-scan finish-line camera
+  - vertical-stripe background
+displayName: Slit-Scan Photo Finish
+category: 7. Technical And Specialist Imaging
+domain: slit-scan finish-line camera
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - technical-and-specialist-imaging
+  - slit-scan
+  - photo-finish
+  - scientific
+visualDna:
+  aesthetic: 'Slit-scan photo finish: a camera recording one thin vertical line over time, so moving subjects appear whole while the static background becomes vertical stripes.'
+  subject_treatment: Keep the prompt subject, action and setting; change only the capture technique described here, so the subject reads clearly through it.
+  color_and_tone: Natural color on subjects; background reduced to repeated streaks of one color column.
+  lighting_and_shadow: Daylight or stadium light; lighting on the subject stays fixed as it passes the line.
+  texture_and_material: Stretched or compressed bodies depending on speed, stationary parts smeared into long horizontal bands.
+  camera_and_composition: Side view, subjects moving in one direction across the frame, horizontal axis representing time.
+  atmosphere_and_mood: Strange and kinetic, time laid out flat across space.
+  rendering_and_quality: True slit-scan distortion; not a motion blur filter.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Slit-Scan Photo Finish as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: vertical-stripe background; time along the horizontal axis; stretched moving bodies; side view; smeared static parts
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - cartoon
+  - anime
+  - plastic render
+  - fake UI text
+  - readable timestamp
+  - random sci-fi overlay
+  - cinematic beauty lighting
+  - generic stock-photo face
+  - celebrity likeness
+  - ordinary motion blur
+  - readable timing numbers
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, drawing, cartoon, anime, plastic render, fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, ordinary motion blur, readable timing numbers, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: technical-and-specialist-imaging
+  categoryName: 7. Technical And Specialist Imaging
+  tags:
+    - photography-and-realism
+    - technical-and-specialist-imaging
+    - slit-scan
+    - photo-finish
+    - scientific
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: slit-scan finish-line camera

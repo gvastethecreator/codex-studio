@@ -8,28 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'CCTV Security',
     category: '7. Technical And Specialist Imaging',
     negativePrompt:
-      'hd, 4k, clean, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, cinematic beauty lighting, artistic blur, wrong diagnostic palette, fake UI text, random sci-fi overlay',
+      'fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, hd, clean, artistic blur, 4k, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'CCTV Security acts as a transferable photographic style router: begin from Surveillance footage, Surveillance UI burn-in, and technical capture system built from diagnostic optics, surveillance position, scientific sensor behavior, and evidence-grade readability, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'CCTV security capture: a fixed camera high in a corner recording low-resolution, compressed surveillance frames, often in infrared monochrome at night.',
       subject_treatment:
-        'Treat any prompt subject through Low resolution, interlaced; preserve prompt identity while translating it through device constraints, evidence logic, extreme scale, or diagnostic signal, keeping the original subject, pose, species, object, or environment legible.',
+        "Keep the prompt subject and action; this preset owns the high fixed corner viewpoint and the surveillance signal, and the setting stays the prompt's.",
       color_and_tone:
-        'Grade with Desaturated or B&W; use palette as sensor output: thermal gradients, monochrome electron depth, CCTV compression, medical neutral color, or astrophotographic false color, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Washed grey-green or infrared monochrome at night, desaturated cool color by day, crushed blacks, blown lamps.',
       lighting_and_shadow:
-        'Use High contrast, night vision; make light come from device behavior, flash documentation, emissive heat, telescope exposure, glass reflections, or clinical illumination, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        "Existing ceiling lights or the camera's own infrared illuminator; hot center, dark corners, glowing eyes under IR.",
       texture_and_material:
-        'Render Compression artifacts, scanlines; render scan noise, compression, measurement surfaces, medical cleanliness, forensic detail, microtexture, or signal artifacts as capture evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Blocky compression artifacts, soft low resolution, interlaced motion smear on moving figures, slight lens dirt.',
       camera_and_composition:
-        'Compose through Wide angle distortion; compose through mounted POV, deadpan documentation, miniature focal bands, abstract cropping, evidence scale, or instrument framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Creepy, voyeuristic; derive mood from surveillance, diagnosis, evidence, scientific alienness, minimalism, procedural restraint, or technical unease, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Ceiling-corner angle looking down, wide lens with barrel distortion, subject small and off-center, no framing intent.',
+      atmosphere_and_mood: 'Cold and voyeuristic, an indifferent machine watching without caring.',
       rendering_and_quality:
-        'Finish with Gritty, crime; finish with exact capture logic, readable signal, controlled artifacts, and no cinematic beauty-lighting overwrite, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Evidence-grade surveillance frame; any on-screen overlay stays abstract and unreadable, never text.',
       key_features:
-        'Surveillance footage; Surveillance UI burn-in; Desaturated or B&W; High contrast, night vision; Wide angle distortion',
+        'high corner viewpoint; IR monochrome; compression blocks; wide barrel distortion; smeared motion',
       creative_brief:
-        "Apply CCTV Security as a photographic preset over prompt X: preserve the user's requested subject, then route Surveillance footage, Desaturated or B&W, High contrast, night vision, Compression artifacts, scanlines, and Wide angle distortion through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies CCTV Security as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,57 +36,57 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Dashcam',
     category: '7. Technical And Specialist Imaging',
     negativePrompt:
-      'portrait, studio, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, cinematic beauty lighting, artistic blur, wrong diagnostic palette, fake UI text, random sci-fi overlay',
+      'fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, portrait, studio, wet road reflections cliché, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Dashcam acts as a transferable photographic style router: begin from Mounted glass POV, Glass reflection frame, and technical capture system built from diagnostic optics, surveillance position, scientific sensor behavior, and evidence-grade readability, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Dashcam capture: a small wide-angle camera behind a vehicle windshield recording the road ahead, bright and utilitarian.',
       subject_treatment:
-        'Treat any prompt subject through Wide angle; preserve prompt identity while translating it through device constraints, evidence logic, extreme scale, or diagnostic signal, keeping the original subject, pose, species, object, or environment legible.',
+        "Keep the prompt subject and action; this preset owns the behind-the-windshield driver viewpoint, and the setting stays the prompt's.",
       color_and_tone:
-        'Grade with Digital, utilitarian; use palette as sensor output: thermal gradients, monochrome electron depth, CCTV compression, medical neutral color, or astrophotographic false color, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Flat digital color, slightly oversharpened, headlight pools at night, clipped sky by day.',
       lighting_and_shadow:
-        'Use Hard practical light; make light come from device behavior, flash documentation, emissive heat, telescope exposure, glass reflections, or clinical illumination, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Headlights and road light at night, harsh daylight otherwise; reflections of the dashboard on the glass.',
       texture_and_material:
-        'Render Windshield reflection, rain; render scan noise, compression, measurement surfaces, medical cleanliness, forensic detail, microtexture, or signal artifacts as capture evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Windshield dust, faint reflections, wiper streaks, compression softness in fast motion.',
       camera_and_composition:
-        'Compose through Motion blur; compose through mounted POV, deadpan documentation, miniature focal bands, abstract cropping, evidence scale, or instrument framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+        'Centered road perspective, hood edge or dashboard at the bottom, wide lens bowing the horizon.',
       atmosphere_and_mood:
-        'Keep the mood Real, urgent; derive mood from surveillance, diagnosis, evidence, scientific alienness, minimalism, procedural restraint, or technical unease, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Raw incident recorder; finish with exact capture logic, readable signal, controlled artifacts, and no cinematic beauty-lighting overwrite, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Sudden and matter-of-fact, the unexpected appearing ahead without warning.',
+      rendering_and_quality: 'Consumer dashcam realism; no readable speed or time overlay.',
       key_features:
-        'Mounted glass POV; Glass reflection frame; Digital, utilitarian; Hard practical light; Motion blur',
+        'behind-windshield view; hood or dash at bottom; headlight pools; glass reflections; wide bowed horizon',
       creative_brief:
-        "Apply Dashcam as a photographic preset over prompt X: preserve the user's requested subject, then route Mounted glass POV, Digital, utilitarian, Hard practical light, Windshield reflection, rain, and Motion blur through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dashcam as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP01-028',
-    name: 'Thermal Camera',
+    name: 'Ironbow Thermal Imaging',
+    displayName: 'Ironbow Thermal Imaging',
+    styleAnchors: ['Ironbow Thermal Imaging'],
     category: '7. Technical And Specialist Imaging',
     negativePrompt:
-      'realistic colors, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, cinematic beauty lighting, artistic blur, wrong diagnostic palette, fake UI text, random sci-fi overlay',
+      'fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, realistic colors, readable temperature scale, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Thermal Camera acts as a transferable photographic style router: begin from Heat map imaging, Heat gradient, and technical capture system built from diagnostic optics, surveillance position, scientific sensor behavior, and evidence-grade readability, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Ironbow thermal imaging: a longwave infrared camera mapping temperature to a black-purple-red-orange-yellow-white palette, so heat, not light, defines the image.',
       subject_treatment:
-        'Treat any prompt subject through Blobby heat signatures; preserve prompt identity while translating it through device constraints, evidence logic, extreme scale, or diagnostic signal, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action and setting; change only the capture technique described here, so the subject reads clearly through it.',
       color_and_tone:
-        'Grade with Ironbow (Purple to Yellow); use palette as sensor output: thermal gradients, monochrome electron depth, CCTV compression, medical neutral color, or astrophotographic false color, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Ironbow palette: cold areas deep indigo and purple, warm bodies orange, hottest points yellow-white.',
       lighting_and_shadow:
-        'Use Emissive; make light come from device behavior, flash documentation, emissive heat, telescope exposure, glass reflections, or clinical illumination, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'No visible light logic; shapes read by temperature, with heat bleeding softly into cold surroundings.',
       texture_and_material:
-        'Render Digital noise; render scan noise, compression, measurement surfaces, medical cleanliness, forensic detail, microtexture, or signal artifacts as capture evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Surface detail replaced by smooth thermal gradients; breath, hot spots and cooling trails visible.',
       camera_and_composition:
-        'Compose through No surface detail; compose through mounted POV, deadpan documentation, miniature focal bands, abstract cropping, evidence scale, or instrument framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Diagnostic, technical; derive mood from surveillance, diagnosis, evidence, scientific alienness, minimalism, procedural restraint, or technical unease, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Keep the requested framing; the thermal palette is the transferable part.',
+      atmosphere_and_mood: 'Revealing and clinical, hidden heat made suddenly visible.',
       rendering_and_quality:
-        'Finish with Military, scientific; finish with exact capture logic, readable signal, controlled artifacts, and no cinematic beauty-lighting overwrite, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Radiometric camera look with soft low-resolution gradients; no UI crosshairs or readable scale.',
       key_features:
-        'Heat map imaging; Heat gradient; Ironbow (Purple to Yellow); Emissive; No surface detail',
+        'ironbow palette; heat as brightness; smooth thermal gradients; hot white peaks; no visible-light shading',
       creative_brief:
-        "Apply Thermal Camera as a photographic preset over prompt X: preserve the user's requested subject, then route Heat map imaging, Ironbow (Purple to Yellow), Emissive, Digital noise, and No surface detail through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ironbow Thermal Imaging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +94,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Microscope (SEM)',
     category: '7. Technical And Specialist Imaging',
     negativePrompt:
-      'color, macro, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, cinematic beauty lighting, artistic blur, wrong diagnostic palette, fake UI text, random sci-fi overlay',
+      'fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, color, optical macro bokeh, macro, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Microscope (SEM) acts as a transferable photographic style router: begin from Electron microscope scan, B&W depth, and technical capture system built from diagnostic optics, surveillance position, scientific sensor behavior, and evidence-grade readability, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Scanning electron micrograph: a tiny specimen coated and scanned by an electron beam, rendered in greyscale with extreme depth and edge glow.',
       subject_treatment:
-        'Treat any prompt subject through Incredible texture detail; preserve prompt identity while translating it through device constraints, evidence logic, extreme scale, or diagnostic signal, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Greyscale; use palette as sensor output: thermal gradients, monochrome electron depth, CCTV compression, medical neutral color, or astrophotographic false color, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Keep the prompt subject, action and setting; change only the capture technique described here, so the subject reads clearly through it.',
+      color_and_tone: 'Pure greyscale, bright rims on edges and ridges, dark hollows, no color.',
       lighting_and_shadow:
-        'Use Directional electron beam; make light come from device behavior, flash documentation, emissive heat, telescope exposure, glass reflections, or clinical illumination, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Detector-direction shading: edges facing the detector glow, recesses fall dark, a characteristic halo along every ridge.',
       texture_and_material:
-        'Render Fractal patterns; render scan noise, compression, measurement surfaces, medical cleanliness, forensic detail, microtexture, or signal artifacts as capture evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Microscopic surface structure — pores, hairs, scales, crystals — sharp at enormous magnification.',
       camera_and_composition:
-        'Compose through Extreme magnification; compose through mounted POV, deadpan documentation, miniature focal bands, abstract cropping, evidence scale, or instrument framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Scientific, alien; derive mood from surveillance, diagnosis, evidence, scientific alienness, minimalism, procedural restraint, or technical unease, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Specimen centered on a black or dark grey ground, deep depth of field, no lens bokeh.',
+      atmosphere_and_mood: 'Alien and precise, familiar things revealed as strange landscapes.',
       rendering_and_quality:
-        'Finish with Scientific, alien; finish with exact capture logic, readable signal, controlled artifacts, and no cinematic beauty-lighting overwrite, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'SEM image quality with fine noise; no color tint unless the prompt asks for false color.',
       key_features:
-        'Electron microscope scan; B&W depth; Greyscale; Directional electron beam; Extreme magnification',
+        'greyscale electron image; glowing edge rims; enormous magnification; deep focus; dark ground',
       creative_brief:
-        "Apply Microscope (SEM) as a photographic preset over prompt X: preserve the user's requested subject, then route Electron microscope scan, Greyscale, Directional electron beam, Fractal patterns, and Extreme magnification through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Microscope (SEM) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +121,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Telescope (Hubble)',
     category: '7. Technical And Specialist Imaging',
     negativePrompt:
-      'earth, ground, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, cinematic beauty lighting, artistic blur, wrong diagnostic palette, fake UI text, random sci-fi overlay',
+      'fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, earth, ground, natural-color galaxy, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Telescope (Hubble) acts as a transferable photographic style router: begin from Deep space astrophotography, Deep-field false color, and technical capture system built from diagnostic optics, surveillance position, scientific sensor behavior, and evidence-grade readability, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Space-telescope false-color imaging: narrowband exposures of gas mapped to gold, teal and blue channels, with sharp multi-spike stars.',
       subject_treatment:
-        'Treat any prompt subject through Luminous diffuse structures; preserve prompt identity while translating it through device constraints, evidence logic, extreme scale, or diagnostic signal, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action and setting; change only the capture technique described here, so the subject reads clearly through it.',
       color_and_tone:
-        'Grade with False color (NASA palette); use palette as sensor output: thermal gradients, monochrome electron depth, CCTV compression, medical neutral color, or astrophotographic false color, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Mapped palette: sulfur and hydrogen as gold and amber, oxygen as teal and blue; deep black space.',
       lighting_and_shadow:
-        'Use Emissive deep-field glow; make light come from device behavior, flash documentation, emissive heat, telescope exposure, glass reflections, or clinical illumination, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Emission glow from within the gas; dark dust silhouetted against bright regions.',
       texture_and_material:
-        'Render Ionized haze, dustlike speckle; render scan noise, compression, measurement surfaces, medical cleanliness, forensic detail, microtexture, or signal artifacts as capture evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
-      camera_and_composition:
-        'Compose through Telescope (Hubble) diagnostic capture constraints, device-specific signal, evidence clarity, and technical photographic neutrality; compose through mounted POV, deadpan documentation, miniature focal bands, abstract cropping, evidence scale, or instrument framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Awe-inspiring, vast; derive mood from surveillance, diagnosis, evidence, scientific alienness, minimalism, procedural restraint, or technical unease, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Sculpted gas walls, pillars and filaments at huge scale, stars with six- or eight-point diffraction spikes.',
+      camera_and_composition: 'Scientific framing of the object, no horizon, no ground.',
+      atmosphere_and_mood: 'Monumental and awe-struck, cosmic structures shown as sculpture.',
       rendering_and_quality:
-        'Finish with Space-telescope false color; finish with exact capture logic, readable signal, controlled artifacts, and no cinematic beauty-lighting overwrite, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Processed space-telescope image with mapped color; distinct from natural-color amateur astrophotography.',
       key_features:
-        'Deep space astrophotography; Deep-field false color; False color (NASA palette); Emissive deep-field glow; Telescope (Hubble) diagnostic capture constraints, device-specific signal, evidence clarity, and technical photographic neutrality',
+        'gold-teal narrowband mapping; multi-point diffraction spikes; sculpted gas pillars; black space; scientific framing',
       creative_brief:
-        "Apply Telescope (Hubble) as a photographic preset over prompt X: preserve the user's requested subject, then route Deep space astrophotography, False color (NASA palette), Emissive deep-field glow, Ionized haze, dustlike speckle, and Telescope (Hubble) diagnostic capture constraints, device-specific signal, evidence clarity, and technical photographic neutrality through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Telescope (Hubble) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +148,23 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Minimalist Photo',
     category: '7. Technical And Specialist Imaging',
     negativePrompt:
-      'busy, detailed, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, cinematic beauty lighting, artistic blur, wrong diagnostic palette, fake UI text, random sci-fi overlay',
+      'fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, busy, detailed background, detailed, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Minimalist Photo acts as a transferable photographic style router: begin from Simple composition, Isolation, and technical capture system built from diagnostic optics, surveillance position, scientific sensor behavior, and evidence-grade readability, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Minimalist photography: one subject isolated in a large field of plain tone, with two or three colors and nothing else competing.',
       subject_treatment:
-        'Treat any prompt subject through Negative space; preserve prompt identity while translating it through device constraints, evidence logic, extreme scale, or diagnostic signal, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Two or three tones; use palette as sensor output: thermal gradients, monochrome electron depth, CCTV compression, medical neutral color, or astrophotographic false color, with value separation and white balance choices that feel captured in-camera rather than painted over.',
-      lighting_and_shadow:
-        'Use Flat; make light come from device behavior, flash documentation, emissive heat, telescope exposure, glass reflections, or clinical illumination, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
-      texture_and_material:
-        'Render Smooth; render scan noise, compression, measurement surfaces, medical cleanliness, forensic detail, microtexture, or signal artifacts as capture evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Keep the prompt subject, action and setting; change only the capture technique described here, so the subject reads clearly through it.',
+      color_and_tone: 'Two or three flat tones, pale or dark ground, one contrasting accent.',
+      lighting_and_shadow: 'Soft even light or a single clean shadow; no busy texture.',
+      texture_and_material: 'Surfaces simplified to flat planes; detail kept only on the subject.',
       camera_and_composition:
-        'Compose through Minimalist Photo diagnostic capture constraints, device-specific signal, evidence clarity, and technical photographic neutrality; compose through mounted POV, deadpan documentation, miniature focal bands, abstract cropping, evidence scale, or instrument framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Calm, empty; derive mood from surveillance, diagnosis, evidence, scientific alienness, minimalism, procedural restraint, or technical unease, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Fine art, graphic; finish with exact capture logic, readable signal, controlled artifacts, and no cinematic beauty-lighting overwrite, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Subject small and placed on a third or at an edge, with at least two thirds negative space.',
+      atmosphere_and_mood: 'Calm and spare, silence given as much weight as the subject.',
+      rendering_and_quality: 'Clean photographic minimalism; no clutter, no heavy grading.',
       key_features:
-        'Simple composition; Isolation; Two or three tones; Flat; Minimalist Photo diagnostic capture constraints, device-specific signal, evidence clarity, and technical photographic neutrality',
+        'single isolated subject; vast negative space; two or three tones; one accent color; clean edges',
       creative_brief:
-        "Apply Minimalist Photo as a photographic preset over prompt X: preserve the user's requested subject, then route Simple composition, Two or three tones, Flat, Smooth, and Minimalist Photo diagnostic capture constraints, device-specific signal, evidence clarity, and technical photographic neutrality through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Minimalist Photo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,27 +172,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Abstract Photo',
     category: '7. Technical And Specialist Imaging',
     negativePrompt:
-      'recognizable object, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, cinematic beauty lighting, artistic blur, wrong diagnostic palette, fake UI text, random sci-fi overlay',
+      'fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, digital fractal, clearly posed subject, recognizable object, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Abstract Photo acts as a transferable photographic style router: begin from Unrecognizable forms, No subject, and technical capture system built from diagnostic optics, surveillance position, scientific sensor behavior, and evidence-grade readability, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Abstract photography: intentional camera movement, extreme crops and reflections that dissolve a real subject into color, line and texture.',
       subject_treatment:
-        'Treat any prompt subject through Shape and color; preserve prompt identity while translating it through device constraints, evidence logic, extreme scale, or diagnostic signal, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Bold; use palette as sensor output: thermal gradients, monochrome electron depth, CCTV compression, medical neutral color, or astrophotographic false color, with value separation and white balance choices that feel captured in-camera rather than painted over.',
-      lighting_and_shadow:
-        'Use Experimental; make light come from device behavior, flash documentation, emissive heat, telescope exposure, glass reflections, or clinical illumination, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Start from the prompt subject and setting, then abstract them on purpose through motion, crop or reflection until form becomes secondary to color and line.',
+      color_and_tone: 'Bold, saturated or strongly contrasting color taken from the subject.',
+      lighting_and_shadow: 'Light used as streaks, glints and reflections rather than modeling.',
       texture_and_material:
-        'Render Macro or motion blur; render scan noise, compression, measurement surfaces, medical cleanliness, forensic detail, microtexture, or signal artifacts as capture evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Motion streaks, rippled reflections, macro surface detail filling the frame.',
       camera_and_composition:
-        'Compose through Total abstraction; compose through mounted POV, deadpan documentation, miniature focal bands, abstract cropping, evidence scale, or instrument framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Conceptual; derive mood from surveillance, diagnosis, evidence, scientific alienness, minimalism, procedural restraint, or technical unease, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Artistic, confusion; finish with exact capture logic, readable signal, controlled artifacts, and no cinematic beauty-lighting overwrite, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
-      key_features: 'Unrecognizable forms; No subject; Bold; Experimental; Total abstraction',
+        'No clear horizon or scale, full-frame pattern, a single dominant direction of movement.',
+      atmosphere_and_mood: 'Experimental and vivid, feeling carried by color alone.',
+      rendering_and_quality: 'In-camera abstraction; not a digital filter or generated fractal.',
+      key_features:
+        'intentional camera movement; extreme crop; rippled reflections; color over form; no scale',
       creative_brief:
-        "Apply Abstract Photo as a photographic preset over prompt X: preserve the user's requested subject, then route Unrecognizable forms, Bold, Experimental, Macro or motion blur, and Total abstraction through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Abstract Photo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -210,28 +197,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tilt-Shift (Miniature)',
     category: '7. Technical And Specialist Imaging',
     negativePrompt:
-      'sharp everywhere, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, cinematic beauty lighting, artistic blur, wrong diagnostic palette, fake UI text, random sci-fi overlay',
+      'fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, sharp everywhere, eye-level view, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Tilt-Shift (Miniature) acts as a transferable photographic style router: begin from Miniature tilt-shift effect, Miniature effect, and technical capture system built from diagnostic optics, surveillance position, scientific sensor behavior, and evidence-grade readability, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Tilt-shift miniature: a tilted lens plane from a high vantage point so only a thin band is sharp, making real scenes look like toy models.',
       subject_treatment:
-        'Treat any prompt subject through Blur top and bottom; preserve prompt identity while translating it through device constraints, evidence logic, extreme scale, or diagnostic signal, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Saturated; use palette as sensor output: thermal gradients, monochrome electron depth, CCTV compression, medical neutral color, or astrophotographic false color, with value separation and white balance choices that feel captured in-camera rather than painted over.',
-      lighting_and_shadow:
-        'Use Daylight; make light come from device behavior, flash documentation, emissive heat, telescope exposure, glass reflections, or clinical illumination, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
-      texture_and_material:
-        'Render Toylike surface crispness; render scan noise, compression, measurement surfaces, medical cleanliness, forensic detail, microtexture, or signal artifacts as capture evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Keep the prompt subject, action and setting; change only the capture technique described here, so the subject reads clearly through it.',
+      color_and_tone: 'Slightly boosted saturation and contrast that make surfaces look painted.',
+      lighting_and_shadow: 'Bright daylight with clear small shadows, like a lit model table.',
+      texture_and_material: 'Sharp band of detail across the middle; heavy blur above and below.',
       camera_and_composition:
-        'Compose through Selective focus plane; compose through mounted POV, deadpan documentation, miniature focal bands, abstract cropping, evidence scale, or instrument framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Tiny, cute; derive mood from surveillance, diagnosis, evidence, scientific alienness, minimalism, procedural restraint, or technical unease, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'High downward angle, thin horizontal or diagonal focus band on the subject, strong blur fading to top and bottom.',
+      atmosphere_and_mood: 'Playful and toy-like, a busy world shrunk to a tabletop.',
       rendering_and_quality:
-        'Finish with Miniature diorama realism; finish with exact capture logic, readable signal, controlled artifacts, and no cinematic beauty-lighting overwrite, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Optical tilt blur with a clean gradient; not a straight top-down drone view.',
       key_features:
-        'Miniature tilt-shift effect; Miniature effect; Saturated; Daylight; Selective focus plane',
+        'thin tilted focus band; high vantage; blur top and bottom; boosted toy-like color; small crisp shadows',
       creative_brief:
-        "Apply Tilt-Shift (Miniature) as a photographic preset over prompt X: preserve the user's requested subject, then route Miniature tilt-shift effect, Saturated, Daylight, Toylike surface crispness, and Selective focus plane through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tilt-Shift (Miniature) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -239,28 +222,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Long Exposure (Water)',
     category: '7. Technical And Specialist Imaging',
     negativePrompt:
-      'frozen motion, jagged flow, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, cinematic beauty lighting, artistic blur, wrong diagnostic palette, fake UI text, random sci-fi overlay',
+      'fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, frozen droplets, jagged flow, frozen motion, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Long Exposure (Water) acts as a transferable photographic style router: begin from Long-exposure motion smoothing, Silky temporal flow, and technical capture system built from diagnostic optics, surveillance position, scientific sensor behavior, and evidence-grade readability, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Long-exposure water modifier: a slow shutter of one to thirty seconds that turns any moving water in the scene into silk, mist or glass.',
       subject_treatment:
-        'Treat any prompt subject through Silky motion, sharp anchors; preserve prompt identity while translating it through device constraints, evidence logic, extreme scale, or diagnostic signal, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Cool blues, grey; use palette as sensor output: thermal gradients, monochrome electron depth, CCTV compression, medical neutral color, or astrophotographic false color, with value separation and white balance choices that feel captured in-camera rather than painted over.',
-      lighting_and_shadow:
-        'Use Overcast; make light come from device behavior, flash documentation, emissive heat, telescope exposure, glass reflections, or clinical illumination, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Keep the prompt subject, action and setting; change only the capture technique described here, so the subject reads clearly through it.',
+      color_and_tone: 'Cool blues and greys, soft pastel highlights, natural color elsewhere.',
+      lighting_and_shadow: 'Overcast or low light allowing long exposure; no hard sun glare.',
       texture_and_material:
-        'Render Mistlike blur, stable texture; render scan noise, compression, measurement surfaces, medical cleanliness, forensic detail, microtexture, or signal artifacts as capture evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Moving water smoothed to veils and mist; still stone, wood and metal kept sharp and textured.',
       camera_and_composition:
-        'Compose through Motion-smoothed flow; compose through mounted POV, deadpan documentation, miniature focal bands, abstract cropping, evidence scale, or instrument framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Calm, ethereal; derive mood from surveillance, diagnosis, evidence, scientific alienness, minimalism, procedural restraint, or technical unease, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Keep the requested framing; the camera is tripod-still, so only moving water changes.',
+      atmosphere_and_mood: 'Calm and timeless, motion softened into quiet flow.',
       rendering_and_quality:
-        'Finish with Fine-art long exposure; finish with exact capture logic, readable signal, controlled artifacts, and no cinematic beauty-lighting overwrite, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Clean long-exposure look; applies to fountains, mills and rivers, not only seascapes.',
       key_features:
-        'Long-exposure motion smoothing; Silky temporal flow; Cool blues, grey; Overcast; Motion-smoothed flow',
+        'silky moving water; sharp still surroundings; tripod stillness; cool overcast tones; misted flow',
       creative_brief:
-        "Apply Long Exposure (Water) as a photographic preset over prompt X: preserve the user's requested subject, then route Long-exposure motion smoothing, Cool blues, grey, Overcast, Mistlike blur, stable texture, and Motion-smoothed flow through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Long Exposure (Water) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -268,28 +248,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bokeh Panorama (Brenizer)',
     category: '7. Technical And Specialist Imaging',
     negativePrompt:
-      'deep focus, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, cinematic beauty lighting, artistic blur, wrong diagnostic palette, fake UI text, random sci-fi overlay',
+      'fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, deep focus, wide-angle distortion, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bokeh Panorama (Brenizer) acts as a transferable photographic style router: begin from Wide angle with shallow depth, Thin focus plane, and technical capture system built from diagnostic optics, surveillance position, scientific sensor behavior, and evidence-grade readability, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Brenizer bokeh panorama: dozens of frames at f/1.4 stitched together, giving a wide field of view with the shallow depth of a telephoto portrait.',
       subject_treatment:
-        'Treat any prompt subject through Subject pop; preserve prompt identity while translating it through device constraints, evidence logic, extreme scale, or diagnostic signal, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Vibrant; use palette as sensor output: thermal gradients, monochrome electron depth, CCTV compression, medical neutral color, or astrophotographic false color, with value separation and white balance choices that feel captured in-camera rather than painted over.',
-      lighting_and_shadow:
-        'Use Natural; make light come from device behavior, flash documentation, emissive heat, telescope exposure, glass reflections, or clinical illumination, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        "Keep the prompt subject and action; this preset owns the stitched wide field of view and shallow depth, and the setting stays the prompt's.",
+      color_and_tone: 'Natural vibrant color, warm subject, creamy color washes in the background.',
+      lighting_and_shadow: 'Soft natural light, often golden hour or open shade.',
       texture_and_material:
-        'Render Blurry depth field; render scan noise, compression, measurement surfaces, medical cleanliness, forensic detail, microtexture, or signal artifacts as capture evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Sharp subject, very large smooth bokeh behind, gentle swirl toward the edges.',
       camera_and_composition:
-        'Compose through Swirly bokeh; compose through mounted POV, deadpan documentation, miniature focal bands, abstract cropping, evidence scale, or instrument framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Epic portrait; derive mood from surveillance, diagnosis, evidence, scientific alienness, minimalism, procedural restraint, or technical unease, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Environmental wide frame with the subject small to medium in the middle, background melted despite the wide view.',
+      atmosphere_and_mood: 'Dreamy and intimate, a quiet figure inside a softly dissolving world.',
       rendering_and_quality:
-        'Finish with Impossible depth of field; finish with exact capture logic, readable signal, controlled artifacts, and no cinematic beauty-lighting overwrite, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Stitched medium-format feel with no wide-angle distortion on the subject.',
       key_features:
-        'Wide angle with shallow depth; Thin focus plane; Vibrant; Natural; Swirly bokeh',
+        'wide view with f/1.4 depth; melted background; swirl at the edges; subject centered; no wide distortion',
       creative_brief:
-        "Apply Bokeh Panorama (Brenizer) as a photographic preset over prompt X: preserve the user's requested subject, then route Wide angle with shallow depth, Vibrant, Natural, Blurry depth field, and Swirly bokeh through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bokeh Panorama (Brenizer) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -297,28 +274,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Forensic Photography',
     category: '7. Technical And Specialist Imaging',
     negativePrompt:
-      'artistic, emotional, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, cinematic beauty lighting, artistic blur, wrong diagnostic palette, fake UI text, random sci-fi overlay',
+      'fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, artistic, gore, readable case numbers, emotional, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Forensic Photography acts as a transferable photographic style router: begin from Forensic evidence documentation, Evidence-like markers, and technical capture system built from diagnostic optics, surveillance position, scientific sensor behavior, and evidence-grade readability, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Forensic evidence photography: a flat, objective record of an object or trace with a scale reference and even flash, meant for measurement, not emotion.',
       subject_treatment:
-        'Treat any prompt subject through Clinical scale logic; preserve prompt identity while translating it through device constraints, evidence logic, extreme scale, or diagnostic signal, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Neutral, flash; use palette as sensor output: thermal gradients, monochrome electron depth, CCTV compression, medical neutral color, or astrophotographic false color, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        "Keep the prompt subject and action; this preset owns the documentary evidence framing with scale reference, and the setting stays the prompt's.",
+      color_and_tone: 'Neutral accurate color, white balance for a grey card, no grading.',
       lighting_and_shadow:
-        'Use Flat flash; make light come from device behavior, flash documentation, emissive heat, telescope exposure, glass reflections, or clinical illumination, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
-      texture_and_material:
-        'Render Detail focus; render scan noise, compression, measurement surfaces, medical cleanliness, forensic detail, microtexture, or signal artifacts as capture evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Even on-axis or ring flash, or a low oblique light to reveal impressions.',
+      texture_and_material: 'Surface detail, cracks, prints and fibers recorded sharply.',
       camera_and_composition:
-        'Compose through Forensic Photography diagnostic capture constraints, device-specific signal, evidence clarity, and technical photographic neutrality; compose through mounted POV, deadpan documentation, miniature focal bands, abstract cropping, evidence scale, or instrument framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Unsettling, factual; derive mood from surveillance, diagnosis, evidence, scientific alienness, minimalism, procedural restraint, or technical unease, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Camera square to the surface, black-and-white scale bar beside the object, plain markers without numbers.',
+      atmosphere_and_mood: 'Detached and procedural, calm clarity about something that went wrong.',
       rendering_and_quality:
-        'Finish with Objective, cold; finish with exact capture logic, readable signal, controlled artifacts, and no cinematic beauty-lighting overwrite, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Documentation-grade sharpness; no gore, drama or readable case numbers.',
       key_features:
-        'Forensic evidence documentation; Evidence-like markers; Neutral, flash; Flat flash; Forensic Photography diagnostic capture constraints, device-specific signal, evidence clarity, and technical photographic neutrality',
+        'scale bar beside the object; even flash; camera square to the surface; neutral color; plain evidence markers',
       creative_brief:
-        "Apply Forensic Photography as a photographic preset over prompt X: preserve the user's requested subject, then route Forensic evidence documentation, Neutral, flash, Flat flash, Detail focus, and Forensic Photography diagnostic capture constraints, device-specific signal, evidence clarity, and technical photographic neutrality through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Forensic Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -326,28 +300,312 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Medical Photography',
     category: '7. Technical And Specialist Imaging',
     negativePrompt:
-      'artistic, moody shadow, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, cinematic beauty lighting, artistic blur, wrong diagnostic palette, fake UI text, random sci-fi overlay',
+      'fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, gore, moody shadow, artistic, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Medical Photography acts as a transferable photographic style router: begin from Clinical medical documentation, Clean depth field, and technical capture system built from diagnostic optics, surveillance position, scientific sensor behavior, and evidence-grade readability, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Clinical medical photography: standardized documentation under bright even light against a sterile blue or neutral background.',
       subject_treatment:
-        'Treat any prompt subject through Clean hyper-detailed framing; preserve prompt identity while translating it through device constraints, evidence logic, extreme scale, or diagnostic signal, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Sterile red-blue accents; use palette as sensor output: thermal gradients, monochrome electron depth, CCTV compression, medical neutral color, or astrophotographic false color, with value separation and white balance choices that feel captured in-camera rather than painted over.',
-      lighting_and_shadow:
-        'Use Bright surgical light; make light come from device behavior, flash documentation, emissive heat, telescope exposure, glass reflections, or clinical illumination, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        "Keep the prompt subject and action; this preset owns the standardized clinical documentation framing, and the setting stays the prompt's.",
+      color_and_tone: 'Accurate neutral color, sterile blue drapes, clean whites, no mood grading.',
+      lighting_and_shadow: 'Bright twin flashes or surgical light, shadowless and even.',
       texture_and_material:
-        'Render Sterile surface, metal, medical sheen; render scan noise, compression, measurement surfaces, medical cleanliness, forensic detail, microtexture, or signal artifacts as capture evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Stainless steel, gauze, skin and plaster recorded accurately without beautification.',
       camera_and_composition:
-        'Compose through Medical Photography diagnostic capture constraints, device-specific signal, evidence clarity, and technical photographic neutrality; compose through mounted POV, deadpan documentation, miniature focal bands, abstract cropping, evidence scale, or instrument framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Sterile, intense; derive mood from surveillance, diagnosis, evidence, scientific alienness, minimalism, procedural restraint, or technical unease, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Clinical, sharp; finish with exact capture logic, readable signal, controlled artifacts, and no cinematic beauty-lighting overwrite, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Straight-on standardized view, subject centered on a plain drape, optional plain scale ruler without numbers.',
+      atmosphere_and_mood: 'Sterile and factual, careful attention without any emotion.',
+      rendering_and_quality: 'Clinical accuracy; no gore, no moody shadows, no readable labels.',
       key_features:
-        'Clinical medical documentation; Clean depth field; Sterile red-blue accents; Bright surgical light; Medical Photography diagnostic capture constraints, device-specific signal, evidence clarity, and technical photographic neutrality',
+        'sterile blue drape; shadowless twin flash; standardized straight-on view; accurate color; plain scale',
       creative_brief:
-        "Apply Medical Photography as a photographic preset over prompt X: preserve the user's requested subject, then route Clinical medical documentation, Sterile red-blue accents, Bright surgical light, Sterile surface, metal, medical sheen, and Medical Photography diagnostic capture constraints, device-specific signal, evidence clarity, and technical photographic neutrality through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Medical Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP01-133',
+    name: 'Schlieren Photography',
+    displayName: 'Schlieren Photography',
+    styleAnchors: ['Schlieren Photography', 'schlieren flow imaging', 'visible air and heat flow'],
+    category: '7. Technical And Specialist Imaging',
+    domain: 'schlieren flow imaging',
+    negativePrompt:
+      'illustration, painting, drawing, cartoon, anime, plastic render, fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, smoke, painted aura, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Schlieren photography: a knife-edge optical setup that makes invisible air flow, heat and shock waves visible as sharp gradients of light and dark.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting; change only the capture technique described here, so the subject reads clearly through it.',
+      color_and_tone:
+        'Monochrome silver grey, or color schlieren with a rainbow filter turning density gradients into blues, magentas and golds.',
+      lighting_and_shadow:
+        'Collimated light through the scene against a dark or grey field; refraction becomes light and shadow.',
+      texture_and_material:
+        'Plumes, ripples, vortex curls and shock fronts rendered crisp; solid objects in silhouette.',
+      camera_and_composition:
+        'Object in profile inside a round mirror field, air flow rising or streaming across the frame.',
+      atmosphere_and_mood: 'Revelatory and precise, invisible forces suddenly made visible.',
+      rendering_and_quality: 'Real optical schlieren look; not smoke, not a painted glow.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Schlieren Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'visible air and heat flow; knife-edge gradients; round mirror field; silhouetted object; rainbow or silver tones',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-134',
+    name: 'Photoelastic Stress Imaging',
+    displayName: 'Photoelastic Stress Imaging',
+    styleAnchors: [
+      'Photoelastic Stress Imaging',
+      'photoelastic stress analysis',
+      'rainbow stress fringes',
+    ],
+    category: '7. Technical And Specialist Imaging',
+    domain: 'photoelastic stress analysis',
+    negativePrompt:
+      'illustration, painting, drawing, cartoon, anime, plastic render, fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, rainbow gradient overlay, opaque materials, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Photoelastic stress imaging: transparent plastic objects between crossed polarizers, where internal stress appears as bands of rainbow interference color.',
+      subject_treatment:
+        'Keep the prompt subject and setting, rendering the subject as clear photoelastic material where needed so stress fringes reveal its structure.',
+      color_and_tone:
+        'Saturated interference fringes — magenta, cyan, yellow, green — on a black background.',
+      lighting_and_shadow: 'Backlit polarized light box; only strained material transmits color.',
+      texture_and_material:
+        'Clear plastic with concentric fringe bands densest at points of pressure.',
+      camera_and_composition:
+        'Object centered flat against the light, black surround, fringes as the main pattern.',
+      atmosphere_and_mood: 'Scientific and psychedelic, hidden tension turned into color.',
+      rendering_and_quality: 'Crisp fringe bands; not a rainbow gradient overlay.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Photoelastic Stress Imaging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'rainbow stress fringes; crossed polarizers; clear plastic object; black background; dense bands at pressure points',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-135',
+    name: 'Slit-Scan Photo Finish',
+    displayName: 'Slit-Scan Photo Finish',
+    styleAnchors: [
+      'Slit-Scan Photo Finish',
+      'slit-scan finish-line camera',
+      'vertical-stripe background',
+    ],
+    category: '7. Technical And Specialist Imaging',
+    domain: 'slit-scan finish-line camera',
+    negativePrompt:
+      'illustration, painting, drawing, cartoon, anime, plastic render, fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, ordinary motion blur, readable timing numbers, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Slit-scan photo finish: a camera recording one thin vertical line over time, so moving subjects appear whole while the static background becomes vertical stripes.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting; change only the capture technique described here, so the subject reads clearly through it.',
+      color_and_tone:
+        'Natural color on subjects; background reduced to repeated streaks of one color column.',
+      lighting_and_shadow:
+        'Daylight or stadium light; lighting on the subject stays fixed as it passes the line.',
+      texture_and_material:
+        'Stretched or compressed bodies depending on speed, stationary parts smeared into long horizontal bands.',
+      camera_and_composition:
+        'Side view, subjects moving in one direction across the frame, horizontal axis representing time.',
+      atmosphere_and_mood: 'Strange and kinetic, time laid out flat across space.',
+      rendering_and_quality: 'True slit-scan distortion; not a motion blur filter.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Slit-Scan Photo Finish as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'vertical-stripe background; time along the horizontal axis; stretched moving bodies; side view; smeared static parts',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-136',
+    name: 'Chronophotography Sequence',
+    displayName: 'Chronophotography Sequence',
+    styleAnchors: [
+      'Chronophotography Sequence',
+      'multiple-exposure motion study',
+      'many overlapping phases',
+    ],
+    category: '7. Technical And Specialist Imaging',
+    domain: 'multiple-exposure motion study',
+    negativePrompt:
+      'illustration, painting, drawing, cartoon, anime, plastic render, fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, single frozen instant, cloned identical copies, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Chronophotography: a single plate exposed many times at fixed intervals, showing one movement as a row of overlapping phases.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting; change only the capture technique described here, so the subject reads clearly through it.',
+      color_and_tone: 'Monochrome or muted sepia-grey, subject bright against a black backdrop.',
+      lighting_and_shadow:
+        'Strong light on the subject, dark background so each phase stays readable.',
+      texture_and_material:
+        'Semi-transparent overlapping figures, each phase crisp at its instant.',
+      camera_and_composition:
+        'Fixed side view, the movement progressing across the frame left to right in eight to twelve phases.',
+      atmosphere_and_mood: 'Analytical and graceful, motion taken apart like a mechanism.',
+      rendering_and_quality:
+        'Real multiple exposure with overlapping transparency; not a digital clone stamp.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chronophotography Sequence as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'many overlapping phases; black backdrop; fixed side view; left-to-right progression; translucent overlaps',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-137',
+    name: 'Tiny Planet Stereographic',
+    displayName: 'Tiny Planet Stereographic',
+    styleAnchors: [
+      'Tiny Planet Stereographic',
+      'stereographic panorama projection',
+      'round tiny-planet ground',
+    ],
+    category: '7. Technical And Specialist Imaging',
+    domain: 'stereographic panorama projection',
+    negativePrompt:
+      'illustration, painting, drawing, cartoon, anime, plastic render, fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, visible stitch seams, ordinary rectilinear view, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Tiny planet projection: a full 360-degree panorama bent into a stereographic circle, so the ground becomes a small globe and the sky wraps around it.',
+      subject_treatment:
+        "Keep the prompt subject and action; this preset owns the stereographic tiny-planet projection, and the setting stays the prompt's.",
+      color_and_tone:
+        'Natural color with sky filling the outer ring, ground concentrated at the center.',
+      lighting_and_shadow: 'Daylight or dusk light; shadows radiate outward from the globe.',
+      texture_and_material: 'Buildings, trees and people bending outward from the round horizon.',
+      camera_and_composition:
+        'Circular planet at center, vertical objects pointing outward like spikes, subject standing on the curve.',
+      atmosphere_and_mood: 'Playful and dizzy, a whole place held like a toy globe.',
+      rendering_and_quality:
+        'Seamless stitched panorama with no visible seams, ghosting or broken lines.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tiny Planet Stereographic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'round tiny-planet ground; sky wrapping the edges; objects radiating outward; 360-degree stitch; centered globe',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-138',
+    name: 'UV Fluorescence Photography',
+    displayName: 'UV Fluorescence Photography',
+    styleAnchors: [
+      'UV Fluorescence Photography',
+      'ultraviolet-induced fluorescence',
+      'UV-only lighting',
+    ],
+    category: '7. Technical And Specialist Imaging',
+    domain: 'ultraviolet-induced fluorescence',
+    negativePrompt:
+      'illustration, painting, drawing, cartoon, anime, plastic render, fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, neon signs, ordinary daylight, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'UV fluorescence photography: the scene lit only by ultraviolet lamps so certain materials glow in their own vivid colors while everything else stays dark.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting; change only the capture technique described here, so the subject reads clearly through it.',
+      color_and_tone:
+        'Black-violet darkness with glowing neon greens, reds, oranges and cyan from fluorescing materials.',
+      lighting_and_shadow:
+        'Invisible UV source; light seems to come from within the fluorescent materials.',
+      texture_and_material:
+        'Minerals, varnish, inks, shells and insects revealing hidden glowing patterns.',
+      camera_and_composition:
+        'Keep the requested framing; the glowing materials become the focal points.',
+      atmosphere_and_mood: 'Secret and eerie, hidden layers glowing out of the dark.',
+      rendering_and_quality:
+        'Real fluorescence with violet cast in shadows; not neon signs or painted glow.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies UV Fluorescence Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'UV-only lighting; materials glowing in their own colors; black-violet shadows; hidden patterns revealed',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-139',
+    name: 'Kirlian Corona Photography',
+    displayName: 'Kirlian Corona Photography',
+    styleAnchors: [
+      'Kirlian Corona Photography',
+      'corona discharge contact photography',
+      'electric corona halo',
+    ],
+    category: '7. Technical And Specialist Imaging',
+    domain: 'corona discharge contact photography',
+    negativePrompt:
+      'illustration, painting, drawing, cartoon, anime, plastic render, fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, soft glow filter, lens perspective, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Kirlian photography: an object pressed onto film on a high-voltage plate, so a corona discharge draws a glowing halo of sparks around its outline.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting; change only the capture technique described here, so the subject reads clearly through it.',
+      color_and_tone:
+        'Violet, blue and white electric corona on black; object interior dark or faintly lit.',
+      lighting_and_shadow: 'No external light: only the discharge around edges and veins.',
+      texture_and_material:
+        'Fine radiating spark filaments, beaded streamers and veins traced in light.',
+      camera_and_composition:
+        'Contact-print view, object flat and centered, corona radiating outward.',
+      atmosphere_and_mood: 'Uncanny and electric, the object seeming to give off its own aura.',
+      rendering_and_quality: 'Contact-print discharge look; not a painted aura or glow filter.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kirlian Corona Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'electric corona halo; radiating spark filaments; violet-white on black; flat contact view; glowing edges',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-140',
+    name: 'Borescope Inspection',
+    displayName: 'Borescope Inspection',
+    styleAnchors: ['Borescope Inspection', 'industrial borescope camera', 'circular vignette'],
+    category: '7. Technical And Specialist Imaging',
+    domain: 'industrial borescope camera',
+    negativePrompt:
+      'illustration, painting, drawing, cartoon, anime, plastic render, fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, readable measurement overlay, studio lighting, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Borescope inspection: a tiny camera on a flexible probe pushed into a cavity, with its own ring of LEDs lighting a round, tunnel-like view.',
+      subject_treatment:
+        "Keep the prompt subject and action; this preset owns the probe-camera view from inside a narrow cavity, and the setting stays the prompt's.",
+      color_and_tone:
+        'Cool LED white near the lens, rapid falloff to black, slight green or blue sensor cast.',
+      lighting_and_shadow:
+        'Ring LEDs around the lens: bright glare on near wet surfaces, darkness beyond.',
+      texture_and_material:
+        'Dust, corrosion, cobwebs and condensation magnified; low resolution softness.',
+      camera_and_composition:
+        'Circular vignette, extreme wide angle, tunnel perspective into the cavity.',
+      atmosphere_and_mood:
+        'Claustrophobic and curious, peering into places never meant to be seen.',
+      rendering_and_quality:
+        'Honest inspection-camera realism with no readable overlay, grid or measurements.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Borescope Inspection as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'circular vignette; ring-LED glare; tunnel perspective; rapid falloff to black; low-resolution softness',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -1,0 +1,79 @@
+schemaVersion: 1
+id: SP01-139
+packId: pack_01
+name: Kirlian Corona Photography
+styleAnchors:
+  - Kirlian Corona Photography
+  - corona discharge contact photography
+  - electric corona halo
+displayName: Kirlian Corona Photography
+category: 7. Technical And Specialist Imaging
+domain: corona discharge contact photography
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - technical-and-specialist-imaging
+  - kirlian
+  - corona-discharge
+  - contact-print
+visualDna:
+  aesthetic: 'Kirlian photography: an object pressed onto film on a high-voltage plate, so a corona discharge draws a glowing halo of sparks around its outline.'
+  subject_treatment: Keep the prompt subject, action and setting; change only the capture technique described here, so the subject reads clearly through it.
+  color_and_tone: Violet, blue and white electric corona on black; object interior dark or faintly lit.
+  lighting_and_shadow: 'No external light: only the discharge around edges and veins.'
+  texture_and_material: Fine radiating spark filaments, beaded streamers and veins traced in light.
+  camera_and_composition: Contact-print view, object flat and centered, corona radiating outward.
+  atmosphere_and_mood: Uncanny and electric, the object seeming to give off its own aura.
+  rendering_and_quality: Contact-print discharge look; not a painted aura or glow filter.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kirlian Corona Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: electric corona halo; radiating spark filaments; violet-white on black; flat contact view; glowing edges
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - cartoon
+  - anime
+  - plastic render
+  - fake UI text
+  - readable timestamp
+  - random sci-fi overlay
+  - cinematic beauty lighting
+  - generic stock-photo face
+  - celebrity likeness
+  - soft glow filter
+  - lens perspective
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, drawing, cartoon, anime, plastic render, fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, soft glow filter, lens perspective, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: technical-and-specialist-imaging
+  categoryName: 7. Technical And Specialist Imaging
+  tags:
+    - photography-and-realism
+    - technical-and-specialist-imaging
+    - kirlian
+    - corona-discharge
+    - contact-print
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: corona discharge contact photography

@@ -158,6 +158,14 @@ categories:
       - pack_01/SP01-074.yaml
       - pack_01/SP01-076.yaml
       - pack_01/SP01-077.yaml
+      - pack_01/SP01-133.yaml
+      - pack_01/SP01-134.yaml
+      - pack_01/SP01-135.yaml
+      - pack_01/SP01-136.yaml
+      - pack_01/SP01-137.yaml
+      - pack_01/SP01-138.yaml
+      - pack_01/SP01-139.yaml
+      - pack_01/SP01-140.yaml
 presetRefs:
   - pack_01/SP01-001.yaml
   - pack_01/SP01-002.yaml
@@ -291,3 +299,11 @@ presetRefs:
   - pack_01/SP01-074.yaml
   - pack_01/SP01-076.yaml
   - pack_01/SP01-077.yaml
+  - pack_01/SP01-133.yaml
+  - pack_01/SP01-134.yaml
+  - pack_01/SP01-135.yaml
+  - pack_01/SP01-136.yaml
+  - pack_01/SP01-137.yaml
+  - pack_01/SP01-138.yaml
+  - pack_01/SP01-139.yaml
+  - pack_01/SP01-140.yaml

@@ -3,7 +3,7 @@ id: SP01-076
 packId: pack_01
 name: Forensic Photography
 category: 7. Technical And Specialist Imaging
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,53 +12,26 @@ tags:
   - photography-and-realism
   - technical-and-specialist-imaging
 visualDna:
-  aesthetic: >-
-    Forensic Photography acts as a transferable photographic style router: begin from Forensic
-    evidence documentation, Evidence-like markers, and technical capture system built from
-    diagnostic optics, surveillance position, scientific sensor behavior, and evidence-grade
-    readability, then apply the photographic behavior to prompt X instead of recreating a fixed card
-    scene.
-  subject_treatment: >-
-    Treat any prompt subject through Clinical scale logic; preserve prompt identity while
-    translating it through device constraints, evidence logic, extreme scale, or diagnostic signal,
-    keeping the original subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with Neutral, flash; use palette as sensor output: thermal gradients, monochrome electron
-    depth, CCTV compression, medical neutral color, or astrophotographic false color, with value
-    separation and white balance choices that feel captured in-camera rather than painted over.
-  lighting_and_shadow: >-
-    Use Flat flash; make light come from device behavior, flash documentation, emissive heat,
-    telescope exposure, glass reflections, or clinical illumination, preserving believable exposure,
-    shadow density, highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Detail focus; render scan noise, compression, measurement surfaces, medical cleanliness,
-    forensic detail, microtexture, or signal artifacts as capture evidence, avoiding both waxy
-    smoothing and noisy texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Forensic Photography diagnostic capture constraints, device-specific signal,
-    evidence clarity, and technical photographic neutrality; compose through mounted POV, deadpan
-    documentation, miniature focal bands, abstract cropping, evidence scale, or instrument framing,
-    with lens distance, depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Unsettling, factual; derive mood from surveillance, diagnosis, evidence,
-    scientific alienness, minimalism, procedural restraint, or technical unease, so the preset
-    changes interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Objective, cold; finish with exact capture logic, readable signal, controlled
-    artifacts, and no cinematic beauty-lighting overwrite, high-resolution photographic detail, and
-    disciplined denoise without losing natural grain where the preset needs it.
-  key_features: >-
-    Forensic evidence documentation; Evidence-like markers; Neutral, flash; Flat flash; Forensic
-    Photography diagnostic capture constraints, device-specific signal, evidence clarity, and
-    technical photographic neutrality
-  creative_brief: >-
-    Apply Forensic Photography as a photographic preset over prompt X: preserve the user's requested
-    subject, then route Forensic evidence documentation, Neutral, flash, Flat flash, Detail focus,
-    and Forensic Photography diagnostic capture constraints, device-specific signal, evidence
-    clarity, and technical photographic neutrality through optics, exposure, palette, surface
-    response, timing, and finish without requiring the card image's original subject.
+  aesthetic: 'Forensic evidence photography: a flat, objective record of an object or trace with a scale reference and even flash, meant for measurement, not emotion.'
+  subject_treatment: Keep the prompt subject and action; this preset owns the documentary evidence framing with scale reference, and the setting stays the prompt's.
+  color_and_tone: Neutral accurate color, white balance for a grey card, no grading.
+  lighting_and_shadow: Even on-axis or ring flash, or a low oblique light to reveal impressions.
+  texture_and_material: Surface detail, cracks, prints and fibers recorded sharply.
+  camera_and_composition: Camera square to the surface, black-and-white scale bar beside the object, plain markers without numbers.
+  atmosphere_and_mood: Detached and procedural, calm clarity about something that went wrong.
+  rendering_and_quality: Documentation-grade sharpness; no gore, drama or readable case numbers.
+  key_features: scale bar beside the object; even flash; camera square to the surface; neutral color; plain evidence markers
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Forensic Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - fake UI text
+  - readable timestamp
+  - random sci-fi overlay
+  - cinematic beauty lighting
+  - generic stock-photo face
+  - celebrity likeness
   - artistic
+  - gore
+  - readable case numbers
   - emotional
   - illustration
   - painting
@@ -73,18 +46,19 @@ avoidRules:
   - readable text
   - signature
   - low resolution
-  - cinematic beauty lighting
   - artistic blur
   - wrong diagnostic palette
-  - fake UI text
-  - random sci-fi overlay
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-076.webp
 attributes:
-  negativePrompt: >-
-    artistic, emotional, illustration, painting, drawing, 3d render, cartoon, anime, sketch,
-    synthetic CGI, plastic render, watermark, readable text, signature, low resolution, cinematic
-    beauty lighting, artistic blur, wrong diagnostic palette, fake UI text, random sci-fi overlay
+  negativePrompt: fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, artistic, gore, readable case numbers, emotional, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

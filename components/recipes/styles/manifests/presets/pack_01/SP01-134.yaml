@@ -1,0 +1,79 @@
+schemaVersion: 1
+id: SP01-134
+packId: pack_01
+name: Photoelastic Stress Imaging
+styleAnchors:
+  - Photoelastic Stress Imaging
+  - photoelastic stress analysis
+  - rainbow stress fringes
+displayName: Photoelastic Stress Imaging
+category: 7. Technical And Specialist Imaging
+domain: photoelastic stress analysis
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - technical-and-specialist-imaging
+  - photoelasticity
+  - polarized-light
+  - scientific
+visualDna:
+  aesthetic: 'Photoelastic stress imaging: transparent plastic objects between crossed polarizers, where internal stress appears as bands of rainbow interference color.'
+  subject_treatment: Keep the prompt subject and setting, rendering the subject as clear photoelastic material where needed so stress fringes reveal its structure.
+  color_and_tone: Saturated interference fringes — magenta, cyan, yellow, green — on a black background.
+  lighting_and_shadow: Backlit polarized light box; only strained material transmits color.
+  texture_and_material: Clear plastic with concentric fringe bands densest at points of pressure.
+  camera_and_composition: Object centered flat against the light, black surround, fringes as the main pattern.
+  atmosphere_and_mood: Scientific and psychedelic, hidden tension turned into color.
+  rendering_and_quality: Crisp fringe bands; not a rainbow gradient overlay.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Photoelastic Stress Imaging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: rainbow stress fringes; crossed polarizers; clear plastic object; black background; dense bands at pressure points
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - cartoon
+  - anime
+  - plastic render
+  - fake UI text
+  - readable timestamp
+  - random sci-fi overlay
+  - cinematic beauty lighting
+  - generic stock-photo face
+  - celebrity likeness
+  - rainbow gradient overlay
+  - opaque materials
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, drawing, cartoon, anime, plastic render, fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, rainbow gradient overlay, opaque materials, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: technical-and-specialist-imaging
+  categoryName: 7. Technical And Specialist Imaging
+  tags:
+    - photography-and-realism
+    - technical-and-specialist-imaging
+    - photoelasticity
+    - polarized-light
+    - scientific
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: photoelastic stress analysis

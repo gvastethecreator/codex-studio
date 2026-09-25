@@ -3,7 +3,7 @@ id: SP01-074
 packId: pack_01
 name: Bokeh Panorama (Brenizer)
 category: 7. Technical And Specialist Imaging
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,47 +12,25 @@ tags:
   - photography-and-realism
   - technical-and-specialist-imaging
 visualDna:
-  aesthetic: >-
-    Bokeh Panorama (Brenizer) acts as a transferable photographic style router: begin from Wide
-    angle with shallow depth, Thin focus plane, and technical capture system built from diagnostic
-    optics, surveillance position, scientific sensor behavior, and evidence-grade readability, then
-    apply the photographic behavior to prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Subject pop; preserve prompt identity while translating it
-    through device constraints, evidence logic, extreme scale, or diagnostic signal, keeping the
-    original subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with Vibrant; use palette as sensor output: thermal gradients, monochrome electron depth,
-    CCTV compression, medical neutral color, or astrophotographic false color, with value separation
-    and white balance choices that feel captured in-camera rather than painted over.
-  lighting_and_shadow: >-
-    Use Natural; make light come from device behavior, flash documentation, emissive heat, telescope
-    exposure, glass reflections, or clinical illumination, preserving believable exposure, shadow
-    density, highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Blurry depth field; render scan noise, compression, measurement surfaces, medical
-    cleanliness, forensic detail, microtexture, or signal artifacts as capture evidence, avoiding
-    both waxy smoothing and noisy texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Swirly bokeh; compose through mounted POV, deadpan documentation, miniature
-    focal bands, abstract cropping, evidence scale, or instrument framing, with lens distance,
-    depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Epic portrait; derive mood from surveillance, diagnosis, evidence, scientific
-    alienness, minimalism, procedural restraint, or technical unease, so the preset changes
-    interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Impossible depth of field; finish with exact capture logic, readable signal,
-    controlled artifacts, and no cinematic beauty-lighting overwrite, high-resolution photographic
-    detail, and disciplined denoise without losing natural grain where the preset needs it.
-  key_features: Wide angle with shallow depth; Thin focus plane; Vibrant; Natural; Swirly bokeh
-  creative_brief: >-
-    Apply Bokeh Panorama (Brenizer) as a photographic preset over prompt X: preserve the user's
-    requested subject, then route Wide angle with shallow depth, Vibrant, Natural, Blurry depth
-    field, and Swirly bokeh through optics, exposure, palette, surface response, timing, and finish
-    without requiring the card image's original subject.
+  aesthetic: 'Brenizer bokeh panorama: dozens of frames at f/1.4 stitched together, giving a wide field of view with the shallow depth of a telephoto portrait.'
+  subject_treatment: Keep the prompt subject and action; this preset owns the stitched wide field of view and shallow depth, and the setting stays the prompt's.
+  color_and_tone: Natural vibrant color, warm subject, creamy color washes in the background.
+  lighting_and_shadow: Soft natural light, often golden hour or open shade.
+  texture_and_material: Sharp subject, very large smooth bokeh behind, gentle swirl toward the edges.
+  camera_and_composition: Environmental wide frame with the subject small to medium in the middle, background melted despite the wide view.
+  atmosphere_and_mood: Dreamy and intimate, a quiet figure inside a softly dissolving world.
+  rendering_and_quality: Stitched medium-format feel with no wide-angle distortion on the subject.
+  key_features: wide view with f/1.4 depth; melted background; swirl at the edges; subject centered; no wide distortion
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bokeh Panorama (Brenizer) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - fake UI text
+  - readable timestamp
+  - random sci-fi overlay
+  - cinematic beauty lighting
+  - generic stock-photo face
+  - celebrity likeness
   - deep focus
+  - wide-angle distortion
   - illustration
   - painting
   - drawing
@@ -66,18 +44,19 @@ avoidRules:
   - readable text
   - signature
   - low resolution
-  - cinematic beauty lighting
   - artistic blur
   - wrong diagnostic palette
-  - fake UI text
-  - random sci-fi overlay
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-074.webp
 attributes:
-  negativePrompt: >-
-    deep focus, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI,
-    plastic render, watermark, readable text, signature, low resolution, cinematic beauty lighting,
-    artistic blur, wrong diagnostic palette, fake UI text, random sci-fi overlay
+  negativePrompt: fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, deep focus, wide-angle distortion, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
