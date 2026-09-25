@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP11-112
+packId: pack_11
+name: Infrared Reflectography
+styleAnchors:
+  - Infrared Reflectography
+  - art conservation imaging
+  - underdrawing
+displayName: Infrared Reflectography
+category: 6. Sensor And Technical Imaging
+domain: art conservation imaging
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - sensor-and-technical-imaging
+  - reflectography
+  - conservation
+  - sensor
+visualDna:
+  aesthetic: 'Infrared reflectography: a grey image of a painting that shows the hidden underdrawing and changed mind beneath the paint.'
+  subject_treatment: "Keep the prompt subject's geometry, pose and setting; replace only its appearance with what this instrument records: the visible paint fades to grey, revealing the artist underdrawing: sketch lines, grid squares and corrections."
+  color_and_tone: Neutral greys with dark carbon lines, exactly as the instrument maps its signal.
+  lighting_and_shadow: Even flat lighting, because the image shows signal, not ordinary light.
+  texture_and_material: Faded paint, sketch lines and craquelure, as real instrument artifacts rather than decoration.
+  camera_and_composition: Frontal view of a painting panel, matching how this instrument actually frames data.
+  atmosphere_and_mood: Secretive, scholarly, quiet and revealing, coming from seeing what eyes cannot.
+  rendering_and_quality: Believable instrument output with correct signal logic, artifacts and resolution for that sensor.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Infrared Reflectography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: underdrawing; corrections; grey paint layer
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - readable UI text
+  - fake HUD clutter
+  - medical gore
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_11
+  packName: Miscellaneous & Fun
+  categoryId: sensor-and-technical-imaging
+  categoryName: 6. Sensor And Technical Imaging
+  tags:
+    - miscellaneous-and-fun
+    - sensor-and-technical-imaging
+    - reflectography
+    - conservation
+    - sensor
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: art conservation imaging

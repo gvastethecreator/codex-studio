@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP11-111
+packId: pack_11
+name: Audio Spectrogram Imaging
+styleAnchors:
+  - Audio Spectrogram Imaging
+  - sound spectrogram
+  - harmonic stripes
+displayName: Audio Spectrogram Imaging
+category: 6. Sensor And Technical Imaging
+domain: sound spectrogram
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - sensor-and-technical-imaging
+  - spectrogram
+  - sound
+  - sensor
+visualDna:
+  aesthetic: 'Audio spectrogram: time runs left to right and frequency bottom to top, with sound energy as glowing color.'
+  subject_treatment: "Keep the prompt subject's geometry, pose and setting; replace only its appearance with what this instrument records: drawn as sound energy in a spectrogram: harmonics as stacked lines, noise as clouds, silence dark."
+  color_and_tone: Magma or viridis color ramps on black, exactly as the instrument maps its signal.
+  lighting_and_shadow: No light; brightness is sound energy, because the image shows signal, not ordinary light.
+  texture_and_material: Harmonic stripes, noise clouds and pixel blocks, as real instrument artifacts rather than decoration.
+  camera_and_composition: Wide horizontal time-frequency plot with no axis labels, matching how this instrument actually frames data.
+  atmosphere_and_mood: Hidden, eerie, musical and precise, coming from seeing what eyes cannot.
+  rendering_and_quality: Believable instrument output with correct signal logic, artifacts and resolution for that sensor.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Audio Spectrogram Imaging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: harmonic stripes; time-frequency; energy colors
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - readable UI text
+  - fake HUD clutter
+  - medical gore
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_11
+  packName: Miscellaneous & Fun
+  categoryId: sensor-and-technical-imaging
+  categoryName: 6. Sensor And Technical Imaging
+  tags:
+    - miscellaneous-and-fun
+    - sensor-and-technical-imaging
+    - spectrogram
+    - sound
+    - sensor
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: sound spectrogram

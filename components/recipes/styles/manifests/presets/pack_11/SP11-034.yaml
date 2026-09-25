@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP11-034
 packId: pack_11
-name: X-Ray
+name: Dual-Energy Baggage X-Ray
 category: 6. Sensor And Technical Imaging
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,63 +12,25 @@ tags:
   - miscellaneous-and-fun
   - sensor-and-technical-imaging
 visualDna:
-  aesthetic: >-
-    X-Ray operates as a portable source-router layer: combine Radiographic transparency,
-    density-layer scan art, shadow-bone logic, Roentgen spectral imaging with sensor modality logic
-    with diagnostic mapping, hidden-structure reveal, false color, and technical readout discipline,
-    so the preset supplies visual behavior rather than a fixed card scene or literal sample.
-  subject_treatment: >-
-    Preserve the prompt's subject plus requested motion and context while letting forms scan,
-    reveal, map, attenuate, isolate, invert, color-code, or expose internal construction through
-    Bone density, marrow-gradient contour, trabecular-web lattice, cortical-bone edge; identity
-    stays readable through construction grammar, proportion, edge logic, and detail scale as this
-    preset is applied.
-  color_and_tone: >-
-    Map color through sensor-coded values, monochrome density, heat gradients, cold transmission,
-    and readable technical contrast; keep hue roles intentional, value separation clear, and palette
-    behavior attached to the subject's forms instead of pasted decoration.
-  lighting_and_shadow: >-
-    Use Backlit, light-box glow, radiograph-viewer luminance, cold-blue-white transmission plus
-    display-like luminance, transmission glow, diagnostic contrast, signal bloom, and controlled
-    technical haze as the light-response contract, with readable hierarchy, controlled contact
-    detail, and no lighting choice that erases the user's requested content.
-  texture_and_material: >-
-    Render Film grain, silver-halide emulsion, radiation-speckle noise, acetate-base curl,
-    developer-chemistry stain plus film grain, scan bands, hidden structure, emissive heat regions,
-    density edges, and signal texture; surface scale, residue, gloss, grain, fiber, pores, edges, or
-    signal artifacts must remain coherent across figures, objects, and environments.
-  camera_and_composition: >-
-    Compose with Interior revelation, nested transparency, density-stacked projection, skeletal or
-    structural ghosting plus diagnostic hierarchy, projection logic, section-like readability, and
-    technical symmetry without forcing a device as reusable framing grammar, allowing cards,
-    portraits, objects, scenes, and abstract prompts to inherit the style without one required
-    layout.
-  atmosphere_and_mood: >-
-    Carry mood through clinical curiosity, hidden truth, analytical tension, forensic clarity, and
-    machine-mediated vision; the emotional tone should feel specific to X-Ray while still obeying
-    the prompt's subject and context.
-  rendering_and_quality: >-
-    Finish with precise sensor behavior, believable modality limits, clean subject preservation, and
-    no decorative sci-fi noise; prioritize clean style recognition, prompt preservation, controlled
-    detail, and a finished image with no watermark, fake text, or accidental UI.
-  key_features: >-
-    Radiographic transparency, density-layer scan art, shadow-bone logic, Roentgen spectral imaging;
-    Bone density, marrow-gradient contour, trabecular-web lattice, cortical-bone edge; Film grain,
-    silver-halide emulsion, radiation-speckle noise, acetate-base curl, developer-chemistry stain;
-    Backlit, light-box glow, radiograph-viewer luminance, cold-blue-white transmission; Interior
-    revelation, nested transparency, density-stacked projection, skeletal or structural ghosting
-  creative_brief: >-
-    Use X-Ray after prompt X as a transferable style layer: prompt X supplies subject, action, and
-    setting, while the preset supplies Radiographic transparency, density-layer scan art,
-    shadow-bone logic, Roentgen spectral imaging, Bone density, marrow-gradient contour,
-    trabecular-web lattice, cortical-bone edge, Film grain, silver-halide emulsion,
-    radiation-speckle noise, acetate-base curl, developer-chemistry stain, Backlit, light-box glow,
-    radiograph-viewer luminance, cold-blue-white transmission, Interior revelation, nested
-    transparency, density-stacked projection, skeletal or structural ghosting plus density maps,
-    thermal bands, attenuation layers, signal falloff, scan artifacts, and structure-first
-    visibility, palette behavior, light response, material treatment, and finish discipline without
-    requiring one specimen, prop bundle, product still, or card composition.
+  aesthetic: 'Security baggage X-ray: dual-energy scan where organic materials read orange, metals blue and mixed materials green.'
+  subject_treatment: "Keep the prompt subject's geometry, pose and setting; replace only its appearance with what this instrument records: a flat top-down transmission scan: dense metal in dark blue-black, organics in orange, mixed materials in green, overlapping objects adding density."
+  color_and_tone: Orange, green and blue-black on a pale background, exactly as the instrument maps its signal.
+  lighting_and_shadow: No light; brightness is material density, because the image shows signal, not ordinary light.
+  texture_and_material: Overlapping translucent layers with crisp metal edges and slight scan noise.
+  camera_and_composition: Top-down scan of a case or container with contents packed together.
+  atmosphere_and_mood: Clinical, suspicious, revealing and tense, coming from seeing what eyes cannot.
+  rendering_and_quality: Believable instrument output with correct signal logic, artifacts and resolution for that sensor.
+  key_features: dual-energy colors; orange organics; blue metal; overlapping contents
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dual-Energy Baggage X-Ray as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - readable UI text
+  - fake HUD clutter
+  - medical gore
   - skin
   - color
   - normal camera color
@@ -79,13 +41,16 @@ avoidRules:
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-034.webp
 attributes:
-  negativePrompt: >-
-    skin, color, normal camera color, medical-only scene, fake UI text, fixed specimen, literal card
-    scene, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, skin, color, normal camera color, medical-only scene, fake UI text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
@@ -99,3 +64,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Dual-Energy Baggage X-Ray
+styleAnchors:
+  - Dual-Energy Baggage X-Ray

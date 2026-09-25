@@ -129,6 +129,24 @@ categories:
     presetRefs:
       - pack_11/SP11-034.yaml
       - pack_11/SP11-035.yaml
+      - pack_11/SP11-108.yaml
+      - pack_11/SP11-109.yaml
+      - pack_11/SP11-110.yaml
+      - pack_11/SP11-111.yaml
+      - pack_11/SP11-112.yaml
+      - pack_11/SP11-113.yaml
+      - pack_11/SP11-114.yaml
+      - pack_11/SP11-115.yaml
+      - pack_11/SP11-116.yaml
+      - pack_11/SP11-117.yaml
+      - pack_11/SP11-118.yaml
+      - pack_11/SP11-119.yaml
+      - pack_11/SP11-120.yaml
+      - pack_11/SP11-121.yaml
+      - pack_11/SP11-122.yaml
+      - pack_11/SP11-123.yaml
+      - pack_11/SP11-124.yaml
+      - pack_11/SP11-125.yaml
   - id: diagram-and-technical-drawing
     name: 7. Diagram And Technical Drawing
     presetRefs:
@@ -240,4 +258,22 @@ presetRefs:
   - pack_11/SP11-080.yaml
   - pack_11/SP11-034.yaml
   - pack_11/SP11-035.yaml
+  - pack_11/SP11-108.yaml
+  - pack_11/SP11-109.yaml
+  - pack_11/SP11-110.yaml
+  - pack_11/SP11-111.yaml
+  - pack_11/SP11-112.yaml
+  - pack_11/SP11-113.yaml
+  - pack_11/SP11-114.yaml
+  - pack_11/SP11-115.yaml
+  - pack_11/SP11-116.yaml
+  - pack_11/SP11-117.yaml
+  - pack_11/SP11-118.yaml
+  - pack_11/SP11-119.yaml
+  - pack_11/SP11-120.yaml
+  - pack_11/SP11-121.yaml
+  - pack_11/SP11-122.yaml
+  - pack_11/SP11-123.yaml
+  - pack_11/SP11-124.yaml
+  - pack_11/SP11-125.yaml
   - pack_11/SP11-033.yaml

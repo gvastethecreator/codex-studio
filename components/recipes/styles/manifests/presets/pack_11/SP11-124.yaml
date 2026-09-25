@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP11-124
+packId: pack_11
+name: Solar H-Alpha Telescope
+styleAnchors:
+  - Solar H-Alpha Telescope
+  - solar telescope
+  - prominences
+displayName: Solar H-Alpha Telescope
+category: 6. Sensor And Technical Imaging
+domain: solar telescope
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - sensor-and-technical-imaging
+  - h-alpha
+  - sun
+  - sensor
+visualDna:
+  aesthetic: 'H-alpha solar telescope: the sun in deep red-orange with prominences and filaments.'
+  subject_treatment: "Keep the prompt subject's geometry, pose and setting; replace only its appearance with what this instrument records: shown in H-alpha: red-orange disk, prominences, filaments and granular texture."
+  color_and_tone: Red-orange on black, exactly as the instrument maps its signal.
+  lighting_and_shadow: Solar glow, because the image shows signal, not ordinary light.
+  texture_and_material: Granulation and filaments, as real instrument artifacts rather than decoration.
+  camera_and_composition: Sun disk or limb, matching how this instrument actually frames data.
+  atmosphere_and_mood: Fiery, vast, cosmic and dramatic, coming from seeing what eyes cannot.
+  rendering_and_quality: Believable instrument output with correct signal logic, artifacts and resolution for that sensor.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Solar H-Alpha Telescope as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: prominences; filaments; red disk
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - readable UI text
+  - fake HUD clutter
+  - medical gore
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_11
+  packName: Miscellaneous & Fun
+  categoryId: sensor-and-technical-imaging
+  categoryName: 6. Sensor And Technical Imaging
+  tags:
+    - miscellaneous-and-fun
+    - sensor-and-technical-imaging
+    - h-alpha
+    - sun
+    - sensor
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: solar telescope

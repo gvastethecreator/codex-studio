@@ -3,7 +3,7 @@
     {
       "id": "pack_11",
       "name": "Miscellaneous & Fun",
-      "presetCount": 107
+      "presetCount": 125
     }
   ],
   "presets": [
@@ -1331,7 +1331,8 @@
     },
     {
       "id": "SP11-034",
-      "name": "X-Ray",
+      "name": "Dual-Energy Baggage X-Ray",
+      "styleAnchors": ["Dual-Energy Baggage X-Ray"],
       "ref": "pack_11/SP11-034.yaml",
       "packId": "pack_11",
       "packName": "Miscellaneous & Fun",
@@ -1339,11 +1340,12 @@
       "categoryName": "6. Sensor And Technical Imaging",
       "tags": ["miscellaneous-and-fun", "sensor-and-technical-imaging"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp11-034 x-ray 6. sensor and technical imaging technical imaging pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging"
+      "searchableText": "sp11-034 dual-energy baggage x-ray 6. sensor and technical imaging technical imaging pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging"
     },
     {
       "id": "SP11-035",
-      "name": "Thermal Vision",
+      "name": "White-Hot Thermal Imager",
+      "styleAnchors": ["White-Hot Thermal Imager"],
       "ref": "pack_11/SP11-035.yaml",
       "packId": "pack_11",
       "packName": "Miscellaneous & Fun",
@@ -1351,7 +1353,303 @@
       "categoryName": "6. Sensor And Technical Imaging",
       "tags": ["miscellaneous-and-fun", "sensor-and-technical-imaging"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp11-035 thermal vision 6. sensor and technical imaging technical imaging pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging"
+      "searchableText": "sp11-035 white-hot thermal imager 6. sensor and technical imaging technical imaging pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging"
+    },
+    {
+      "id": "SP11-108",
+      "name": "Neutron Radiography",
+      "styleAnchors": ["Neutron Radiography", "neutron imaging", "metal transparent"],
+      "ref": "pack_11/SP11-108.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "6. Sensor And Technical Imaging",
+      "domain": "neutron imaging",
+      "tags": ["miscellaneous-and-fun", "sensor-and-technical-imaging", "neutron-imaging"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-108 neutron radiography neutron imaging metal transparent 6. sensor and technical imaging technical imaging neutron imaging pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging neutron-imaging"
+    },
+    {
+      "id": "SP11-109",
+      "name": "Terahertz Package Scan",
+      "styleAnchors": ["Terahertz Package Scan", "terahertz imaging", "sees through cloth"],
+      "ref": "pack_11/SP11-109.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "6. Sensor And Technical Imaging",
+      "domain": "terahertz imaging",
+      "tags": ["miscellaneous-and-fun", "sensor-and-technical-imaging", "terahertz-imaging"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-109 terahertz package scan terahertz imaging sees through cloth 6. sensor and technical imaging technical imaging terahertz imaging pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging terahertz-imaging"
+    },
+    {
+      "id": "SP11-110",
+      "name": "Event Camera Sparse Pixels",
+      "styleAnchors": ["Event Camera Sparse Pixels", "neuromorphic event sensor", "sparse events"],
+      "ref": "pack_11/SP11-110.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "6. Sensor And Technical Imaging",
+      "domain": "neuromorphic event sensor",
+      "tags": [
+        "miscellaneous-and-fun",
+        "sensor-and-technical-imaging",
+        "neuromorphic-event-sensor"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-110 event camera sparse pixels neuromorphic event sensor sparse events 6. sensor and technical imaging technical imaging neuromorphic event sensor pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging neuromorphic-event-sensor"
+    },
+    {
+      "id": "SP11-111",
+      "name": "Audio Spectrogram Imaging",
+      "styleAnchors": ["Audio Spectrogram Imaging", "sound spectrogram", "harmonic stripes"],
+      "ref": "pack_11/SP11-111.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "6. Sensor And Technical Imaging",
+      "domain": "sound spectrogram",
+      "tags": ["miscellaneous-and-fun", "sensor-and-technical-imaging", "sound-spectrogram"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-111 audio spectrogram imaging sound spectrogram harmonic stripes 6. sensor and technical imaging technical imaging sound spectrogram pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging sound-spectrogram"
+    },
+    {
+      "id": "SP11-112",
+      "name": "Infrared Reflectography",
+      "styleAnchors": ["Infrared Reflectography", "art conservation imaging", "underdrawing"],
+      "ref": "pack_11/SP11-112.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "6. Sensor And Technical Imaging",
+      "domain": "art conservation imaging",
+      "tags": ["miscellaneous-and-fun", "sensor-and-technical-imaging", "art-conservation-imaging"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-112 infrared reflectography art conservation imaging underdrawing 6. sensor and technical imaging technical imaging art conservation imaging pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging art-conservation-imaging"
+    },
+    {
+      "id": "SP11-113",
+      "name": "Multispectral Palimpsest Imaging",
+      "styleAnchors": [
+        "Multispectral Palimpsest Imaging",
+        "manuscript recovery imaging",
+        "recovered red layer"
+      ],
+      "ref": "pack_11/SP11-113.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "6. Sensor And Technical Imaging",
+      "domain": "manuscript recovery imaging",
+      "tags": [
+        "miscellaneous-and-fun",
+        "sensor-and-technical-imaging",
+        "manuscript-recovery-imaging"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-113 multispectral palimpsest imaging manuscript recovery imaging recovered red layer 6. sensor and technical imaging technical imaging manuscript recovery imaging pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging manuscript-recovery-imaging"
+    },
+    {
+      "id": "SP11-114",
+      "name": "Acoustic Camera Overlay",
+      "styleAnchors": ["Acoustic Camera Overlay", "sound source localization", "sound hotspots"],
+      "ref": "pack_11/SP11-114.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "6. Sensor And Technical Imaging",
+      "domain": "sound source localization",
+      "tags": [
+        "miscellaneous-and-fun",
+        "sensor-and-technical-imaging",
+        "sound-source-localization"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-114 acoustic camera overlay sound source localization sound hotspots 6. sensor and technical imaging technical imaging sound source localization pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging sound-source-localization"
+    },
+    {
+      "id": "SP11-115",
+      "name": "MR Tractography",
+      "styleAnchors": [
+        "MR Tractography",
+        "diffusion MRI fiber tracking",
+        "direction-coded streamlines"
+      ],
+      "ref": "pack_11/SP11-115.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "6. Sensor And Technical Imaging",
+      "domain": "diffusion MRI fiber tracking",
+      "tags": [
+        "miscellaneous-and-fun",
+        "sensor-and-technical-imaging",
+        "diffusion-mri-fiber-tracking"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-115 mr tractography diffusion mri fiber tracking direction-coded streamlines 6. sensor and technical imaging technical imaging diffusion mri fiber tracking pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging diffusion-mri-fiber-tracking"
+    },
+    {
+      "id": "SP11-116",
+      "name": "EBSD Crystal Map",
+      "styleAnchors": ["EBSD Crystal Map", "crystal orientation mapping", "grain mosaic"],
+      "ref": "pack_11/SP11-116.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "6. Sensor And Technical Imaging",
+      "domain": "crystal orientation mapping",
+      "tags": [
+        "miscellaneous-and-fun",
+        "sensor-and-technical-imaging",
+        "crystal-orientation-mapping"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-116 ebsd crystal map crystal orientation mapping grain mosaic 6. sensor and technical imaging technical imaging crystal orientation mapping pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging crystal-orientation-mapping"
+    },
+    {
+      "id": "SP11-117",
+      "name": "Atomic Force Microscope Topography",
+      "styleAnchors": [
+        "Atomic Force Microscope Topography",
+        "nanoscale surface topography",
+        "height map"
+      ],
+      "ref": "pack_11/SP11-117.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "6. Sensor And Technical Imaging",
+      "domain": "nanoscale surface topography",
+      "tags": [
+        "miscellaneous-and-fun",
+        "sensor-and-technical-imaging",
+        "nanoscale-surface-topography"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-117 atomic force microscope topography nanoscale surface topography height map 6. sensor and technical imaging technical imaging nanoscale surface topography pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging nanoscale-surface-topography"
+    },
+    {
+      "id": "SP11-118",
+      "name": "Fluoroscopy",
+      "styleAnchors": ["Fluoroscopy", "live X-ray video", "circular field"],
+      "ref": "pack_11/SP11-118.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "6. Sensor And Technical Imaging",
+      "domain": "live X-ray video",
+      "tags": ["miscellaneous-and-fun", "sensor-and-technical-imaging", "live-x-ray-video"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-118 fluoroscopy live x-ray video circular field 6. sensor and technical imaging technical imaging live x-ray video pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging live-x-ray-video"
+    },
+    {
+      "id": "SP11-119",
+      "name": "Water Vapor Satellite Imagery",
+      "styleAnchors": ["Water Vapor Satellite Imagery", "meteorological satellite", "vapor swirls"],
+      "ref": "pack_11/SP11-119.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "6. Sensor And Technical Imaging",
+      "domain": "meteorological satellite",
+      "tags": ["miscellaneous-and-fun", "sensor-and-technical-imaging", "meteorological-satellite"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-119 water vapor satellite imagery meteorological satellite vapor swirls 6. sensor and technical imaging technical imaging meteorological satellite pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging meteorological-satellite"
+    },
+    {
+      "id": "SP11-120",
+      "name": "Mass Spectrometry Imaging",
+      "styleAnchors": [
+        "Mass Spectrometry Imaging",
+        "molecular distribution map",
+        "pixelated molecule map"
+      ],
+      "ref": "pack_11/SP11-120.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "6. Sensor And Technical Imaging",
+      "domain": "molecular distribution map",
+      "tags": [
+        "miscellaneous-and-fun",
+        "sensor-and-technical-imaging",
+        "molecular-distribution-map"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-120 mass spectrometry imaging molecular distribution map pixelated molecule map 6. sensor and technical imaging technical imaging molecular distribution map pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging molecular-distribution-map"
+    },
+    {
+      "id": "SP11-121",
+      "name": "Streak Camera Image",
+      "styleAnchors": ["Streak Camera Image", "ultrafast streak imaging", "space-time streak"],
+      "ref": "pack_11/SP11-121.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "6. Sensor And Technical Imaging",
+      "domain": "ultrafast streak imaging",
+      "tags": ["miscellaneous-and-fun", "sensor-and-technical-imaging", "ultrafast-streak-imaging"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-121 streak camera image ultrafast streak imaging space-time streak 6. sensor and technical imaging technical imaging ultrafast streak imaging pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging ultrafast-streak-imaging"
+    },
+    {
+      "id": "SP11-122",
+      "name": "Endoscopy Capsule View",
+      "styleAnchors": ["Endoscopy Capsule View", "capsule camera", "fisheye"],
+      "ref": "pack_11/SP11-122.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "6. Sensor And Technical Imaging",
+      "domain": "capsule camera",
+      "tags": ["miscellaneous-and-fun", "sensor-and-technical-imaging", "capsule-camera"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-122 endoscopy capsule view capsule camera fisheye 6. sensor and technical imaging technical imaging capsule camera pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging capsule-camera"
+    },
+    {
+      "id": "SP11-123",
+      "name": "Radio Telescope Intensity Map",
+      "styleAnchors": ["Radio Telescope Intensity Map", "radio astronomy", "radio lobes"],
+      "ref": "pack_11/SP11-123.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "6. Sensor And Technical Imaging",
+      "domain": "radio astronomy",
+      "tags": ["miscellaneous-and-fun", "sensor-and-technical-imaging", "radio-astronomy"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-123 radio telescope intensity map radio astronomy radio lobes 6. sensor and technical imaging technical imaging radio astronomy pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging radio-astronomy"
+    },
+    {
+      "id": "SP11-124",
+      "name": "Solar H-Alpha Telescope",
+      "styleAnchors": ["Solar H-Alpha Telescope", "solar telescope", "prominences"],
+      "ref": "pack_11/SP11-124.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "6. Sensor And Technical Imaging",
+      "domain": "solar telescope",
+      "tags": ["miscellaneous-and-fun", "sensor-and-technical-imaging", "solar-telescope"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-124 solar h-alpha telescope solar telescope prominences 6. sensor and technical imaging technical imaging solar telescope pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging solar-telescope"
+    },
+    {
+      "id": "SP11-125",
+      "name": "All-Sky Meteor Camera",
+      "styleAnchors": ["All-Sky Meteor Camera", "fisheye night sky camera", "circular fisheye"],
+      "ref": "pack_11/SP11-125.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "6. Sensor And Technical Imaging",
+      "domain": "fisheye night sky camera",
+      "tags": ["miscellaneous-and-fun", "sensor-and-technical-imaging", "fisheye-night-sky-camera"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-125 all-sky meteor camera fisheye night sky camera circular fisheye 6. sensor and technical imaging technical imaging fisheye night sky camera pack_11 miscellaneous & fun sensor-and-technical-imaging miscellaneous-and-fun sensor-and-technical-imaging fisheye-night-sky-camera"
     },
     {
       "id": "SP11-033",
@@ -1366,5 +1664,5 @@
       "searchableText": "sp11-033 blueprint 7. diagram and technical drawing blueprint drawing pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing"
     }
   ],
-  "totalPresetCount": 107
+  "totalPresetCount": 125
 }

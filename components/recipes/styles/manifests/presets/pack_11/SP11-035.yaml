@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP11-035
 packId: pack_11
-name: Thermal Vision
+name: White-Hot Thermal Imager
 category: 6. Sensor And Technical Imaging
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,62 +12,25 @@ tags:
   - miscellaneous-and-fun
   - sensor-and-technical-imaging
 visualDna:
-  aesthetic: >-
-    Thermal Vision operates as a portable source-router layer: combine Heat map camera,
-    predator-vision, infrared-surveillance, temperature-portrait with sensor modality logic with
-    diagnostic mapping, hidden-structure reveal, false color, and technical readout discipline, so
-    the preset supplies visual behavior rather than a fixed card scene or literal sample.
-  subject_treatment: >-
-    Preserve the prompt's subject plus requested motion and context while letting forms scan,
-    reveal, map, attenuate, isolate, invert, color-code, or expose internal construction through
-    Heat gradients, thermal-blob contours, isotherm-boundary curves, heat-plume wisps; identity
-    stays readable through construction grammar, proportion, edge logic, and detail scale as this
-    preset is applied.
-  color_and_tone: >-
-    Map color through sensor-coded values, monochrome density, heat gradients, cold transmission,
-    and readable technical contrast; keep hue roles intentional, value separation clear, and palette
-    behavior attached to the subject's forms instead of pasted decoration.
-  lighting_and_shadow: >-
-    Use Emission, self-illuminated heat, body-heat radiance, engine-exhaust glow, no external source
-    plus display-like luminance, transmission glow, diagnostic contrast, signal bloom, and
-    controlled technical haze as the light-response contract, with readable hierarchy, controlled
-    contact detail, and no lighting choice that erases the user's requested content.
-  texture_and_material: >-
-    Render Digital noise, sensor-speckle, hot-pixel artifacts, low-res thermal grain,
-    calibration-barrier banding plus film grain, scan bands, hidden structure, emissive heat
-    regions, density edges, and signal texture; surface scale, residue, gloss, grain, fiber, pores,
-    edges, or signal artifacts must remain coherent across figures, objects, and environments.
-  camera_and_composition: >-
-    Compose with Blobby heat zones, thermal-plume bloom, heat-bleed blur, convection-trail smear
-    plus diagnostic hierarchy, projection logic, section-like readability, and technical symmetry
-    without forcing a device as reusable framing grammar, allowing cards, portraits, objects,
-    scenes, and abstract prompts to inherit the style without one required layout.
-  atmosphere_and_mood: >-
-    Carry mood through clinical curiosity, hidden truth, analytical tension, forensic clarity, and
-    machine-mediated vision; the emotional tone should feel specific to Thermal Vision while still
-    obeying the prompt's subject and context.
-  rendering_and_quality: >-
-    Finish with precise sensor behavior, believable modality limits, clean subject preservation, and
-    no decorative sci-fi noise; prioritize clean style recognition, prompt preservation, controlled
-    detail, and a finished image with no watermark, fake text, or accidental UI.
-  key_features: >-
-    Heat map camera, predator-vision, infrared-surveillance, temperature-portrait; Heat gradients,
-    thermal-blob contours, isotherm-boundary curves, heat-plume wisps; Digital noise,
-    sensor-speckle, hot-pixel artifacts, low-res thermal grain, calibration-barrier banding;
-    Emission, self-illuminated heat, body-heat radiance, engine-exhaust glow, no external source;
-    Blobby heat zones, thermal-plume bloom, heat-bleed blur, convection-trail smear
-  creative_brief: >-
-    Use Thermal Vision after prompt X as a transferable style layer: prompt X supplies subject,
-    action, and setting, while the preset supplies Heat map camera, predator-vision,
-    infrared-surveillance, temperature-portrait, Heat gradients, thermal-blob contours,
-    isotherm-boundary curves, heat-plume wisps, Digital noise, sensor-speckle, hot-pixel artifacts,
-    low-res thermal grain, calibration-barrier banding, Emission, self-illuminated heat, body-heat
-    radiance, engine-exhaust glow, no external source, Blobby heat zones, thermal-plume bloom,
-    heat-bleed blur, convection-trail smear plus density maps, thermal bands, attenuation layers,
-    signal falloff, scan artifacts, and structure-first visibility, palette behavior, light
-    response, material treatment, and finish discipline without requiring one specimen, prop bundle,
-    product still, or card composition.
+  aesthetic: 'White-hot thermal imager: greyscale heat image where warm bodies glow white through smoke and darkness, hottest spots flagged red.'
+  subject_treatment: "Keep the prompt subject's geometry, pose and setting; replace only its appearance with what this instrument records: shown as heat: warm bodies bright white, cool surfaces dark grey, the hottest points tinted red, smoke and darkness ignored."
+  color_and_tone: Greyscale white-hot with a single red hot-spot overlay, exactly as the instrument maps its signal.
+  lighting_and_shadow: Heat glows; no visible light or shadows, because the image shows signal, not ordinary light.
+  texture_and_material: Soft thermal blur, low resolution and slight sensor noise.
+  camera_and_composition: Handheld imager view with a centered crosshair, matching how this instrument actually frames data.
+  atmosphere_and_mood: Urgent, tactical, eerie and tense, coming from seeing what eyes cannot.
+  rendering_and_quality: Believable instrument output with correct signal logic, artifacts and resolution for that sensor.
+  key_features: white-hot greyscale; red hottest spots; smoke transparency
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies White-Hot Thermal Imager as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - readable UI text
+  - fake HUD clutter
+  - medical gore
   - natural colors
   - normal camera color
   - medical-only scene
@@ -77,13 +40,16 @@ avoidRules:
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-035.webp
 attributes:
-  negativePrompt: >-
-    natural colors, normal camera color, medical-only scene, fake UI text, fixed specimen, literal
-    card scene, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, natural colors, normal camera color, medical-only scene, fake UI text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
@@ -97,3 +63,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: White-Hot Thermal Imager
+styleAnchors:
+  - White-Hot Thermal Imager

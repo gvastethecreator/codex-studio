@@ -125,7 +125,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     description: 'Playful, toy-like, and niche aesthetic styles.',
     cardTitle: 'Fun Oddities',
     cardDescription: 'Playful objects, food, toys, science curiosities.',
-    presetCount: 107,
+    presetCount: 125,
   },
   {
     id: 'pack_12',

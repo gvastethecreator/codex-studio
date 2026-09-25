@@ -5979,5 +5979,85 @@
   "SP11-080": [
     "Single dandelion seed drifting past a black castle silhouette at dusk, pappus hairs glowing. No text or logo.",
     "Macro of dandelion seeds caught in a spider web like trapped stars, dew and dark background. No text or logo."
+  ],
+  "SP11-034": [
+    "Baggage X-ray of a knight travel trunk: folded armor plates in blue-black, a helmet, a lute, bread and a wrapped sword, all overlapping in orange and green. No readable text.",
+    "Baggage X-ray of a witch satchel: a cat curled asleep in orange, glass vials in green, iron keys and a pair of shears in dark blue. No readable text."
+  ],
+  "SP11-035": [
+    "Thermal imager view of a dark forest at night revealing a hulking warm beast hiding behind trees, its breath glowing, a hunter barely warm at the edge. No readable text.",
+    "White-hot thermal view of a crypt where a coffin lid is warm from something inside, the candle flagged red, cold skeletons black. No readable text."
+  ],
+  "SP11-108": [
+    "Neutron radiograph of a steel knight helmet on a stand: the steel shell almost vanished into a pale ghost, while the leather padding, straps, sweat-soaked lining and a hidden folded letter show dark and sharp, fine greyscale grain. No readable text.",
+    "Neutron image of a locked iron treasure chest: the iron frame faint and ghostly, water-swollen books, a wax candle and a coiled snake inside rendered dark and crisp, soft grain across the plate. No readable text."
+  ],
+  "SP11-109": [
+    "Terahertz scan of a sealed wax-stamped envelope held up to the scanner, the paper nearly invisible, a silver signet ring and a tiny key inside glowing as bright yellow shapes in soft blue false color. No readable text.",
+    "Terahertz scan of a wooden marionette case, the wood fading away to reveal bright metal hinges, a coiled spring and a hidden thin blade tucked behind the puppet, blurry speckled false color. No readable text."
+  ],
+  "SP11-110": [
+    "Event camera frame of hundreds of bats bursting from a cave mouth at dusk, each flapping wing edge a flicker of red and blue dots, the still rock face completely empty on mid grey. No readable text.",
+    "Event camera frame of a galloping horse and armored rider, legs and cloak traced by dense red and blue dots, dust kicked up as scattered speckle, the static road invisible. No readable text."
+  ],
+  "SP11-111": [
+    "Audio spectrogram of a dragon roar: a low rumble band at the bottom and rising harmonic curves that spread upward like wings, bright magma colors fading to purple noise on black. No axis labels or readable text.",
+    "Audio spectrogram of a monastery choir: evenly stacked glowing harmonics rising and falling like the arches and spires of a cathedral, viridis colors on black, reverb tails as soft haze. No axis labels or readable text."
+  ],
+  "SP11-112": [
+    "Infrared reflectogram of an old portrait of a noblewoman: the paint faded to soft grey, revealing a skull sketched in carbon lines beneath her face, the painter's grid and a changed hand position. No readable text.",
+    "Infrared reflectogram of a pastoral landscape painting revealing a sketched fortress and gallows hidden under the painted meadow, grey paint layer and craquelure. No readable text."
+  ],
+  "SP11-113": [
+    "Multispectral palimpsest page where a scraped-away drawing of a walled city and its gates returns in magenta beneath grey unreadable blocks of later script, holes and stitched tears in the parchment. No readable text.",
+    "Multispectral palimpsest parchment revealing a faint erased portrait of a crowned queen in red, her eyes crossing through grey later marks, worn edges and fibers. No readable text."
+  ],
+  "SP11-114": [
+    "Acoustic camera image of a blacksmith forge: a normal photo with red-hot sound hotspots on the hammer and anvil, softer orange around the bellows, quiet blue elsewhere. No readable text.",
+    "Acoustic camera view of an empty candlelit corridor where a red sound hotspot hangs in mid-air at head height where weeping is heard, nothing visible beneath it. No readable text."
+  ],
+  "SP11-115": [
+    "MR tractography of a crowned human head in profile, fiber streamlines through the brain glowing red, green and blue, and the crown outlined faintly as a ghostly shell on black. No readable text.",
+    "Tractography-style rendering of a war horse in motion, muscle fiber streamlines along its neck and legs color-coded by direction, glowing like silk on black. No readable text."
+  ],
+  "SP11-116": [
+    "EBSD crystal orientation map of a cross-section of an old gold crown, grains as a mosaic of flat rainbow patches, jewel settings as black holes and sharp grain boundaries. No readable text.",
+    "EBSD map of a polished iron meteorite slice with large interlocking crystal bands in pastel orientation colors, a dark fracture running through. No readable text."
+  ],
+  "SP11-117": [
+    "Atomic force microscope topography of a DNA strand coiling across a surface like a serpent, gold-brown height ramp, oblique 3D view, faint scan-line streaks. No readable text.",
+    "AFM height map of a crystal surface with stepped terraces like a ruined amphitheater, gold-brown ramp and scan artifacts. No readable text."
+  ],
+  "SP11-118": [
+    "Fluoroscopy frame of a cat mid-leap, spine and legs dark and crisp, fur a faint haze, grainy circular field with motion blur. No readable text.",
+    "Fluoroscopy frame of a swallowed iron key inside a stomach outline, dark key sharp, organs faint, grainy circular field. No readable text."
+  ],
+  "SP11-119": [
+    "Water vapor satellite image of a hurricane with a clear eye and spiral bands, bright moist swirls against dark dry slots, blue-orange false color, faint coastlines. No readable text.",
+    "Water vapor satellite image of jet stream ribbons wrapping around a continent like serpents, bright moisture filaments and dark dry air. No readable text."
+  ],
+  "SP11-120": [
+    "Mass spectrometry image of a mushroom slice with molecules mapped in pixelated hot colors, gills glowing yellow and the cap edge red on black. No readable text.",
+    "Mass spectrometry map of a leaf where one molecule gathers along the veins in hot orange pixels, forming a tree shape on black. No readable text."
+  ],
+  "SP11-121": [
+    "Streak camera image of an explosion in a castle powder room smeared into fanning green time streaks on black. No readable text.",
+    "Streak camera image of a laser pulse passing through a crystal, a thin bright streak splitting into colored lines on black. No readable text."
+  ],
+  "SP11-122": [
+    "Capsule endoscopy fisheye view down the throat of a sleeping dragon, ring light glinting on glossy red walls and ridged cartilage, a faint ember glow deep ahead. No readable text.",
+    "Endoscopy capsule view inside an old copper pipe, green corrosion and water drops on the walls, ring light and fisheye distortion. No readable text."
+  ],
+  "SP11-123": [
+    "Radio telescope map of a pulsar and its wind nebula shaped like a lighthouse beam, false-color emission and contour lines on black. No readable text.",
+    "Radio telescope map of a nebula whose false-color emission blobs form a hooded figure, soft contour lines. No readable text."
+  ],
+  "SP11-124": [
+    "H-alpha solar telescope close-up of a large sunspot with dark umbra and fibrous penumbra like an eye, red-orange granulation around it. No readable text.",
+    "H-alpha full solar disk with dark filaments snaking across it and bright plage areas, prominences on the limb like flames, black background. No readable text."
+  ],
+  "SP11-125": [
+    "All-sky camera frame of green and violet aurora curtains filling the fisheye circle, pine silhouettes and a stone watchtower around the rim, noisy stars. No readable text.",
+    "All-sky camera long exposure of a meteor shower, dozens of white streaks radiating from one point, circular horizon of mountains and a small chapel. No readable text."
   ]
 }

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP11-113
+packId: pack_11
+name: Multispectral Palimpsest Imaging
+styleAnchors:
+  - Multispectral Palimpsest Imaging
+  - manuscript recovery imaging
+  - recovered red layer
+displayName: Multispectral Palimpsest Imaging
+category: 6. Sensor And Technical Imaging
+domain: manuscript recovery imaging
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - sensor-and-technical-imaging
+  - palimpsest
+  - multispectral
+  - sensor
+visualDna:
+  aesthetic: 'Multispectral palimpsest: false-color processed manuscript where scraped-off earlier writing and drawings show in red over the later text.'
+  subject_treatment: "Keep the prompt subject's geometry, pose and setting; replace only its appearance with what this instrument records: shown as a recovered layer on parchment: the hidden older image in red or magenta, later marks in grey."
+  color_and_tone: Pale grey parchment with recovered red, exactly as the instrument maps its signal.
+  lighting_and_shadow: Even flat lighting, because the image shows signal, not ordinary light.
+  texture_and_material: Parchment fibers, erased ink and holes, as real instrument artifacts rather than decoration.
+  camera_and_composition: Flat page view, matching how this instrument actually frames data.
+  atmosphere_and_mood: Scholarly, secret, ancient and haunting, coming from seeing what eyes cannot.
+  rendering_and_quality: Believable instrument output with correct signal logic, artifacts and resolution for that sensor.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Multispectral Palimpsest Imaging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: recovered red layer; grey later text; parchment
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - readable UI text
+  - fake HUD clutter
+  - medical gore
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_11
+  packName: Miscellaneous & Fun
+  categoryId: sensor-and-technical-imaging
+  categoryName: 6. Sensor And Technical Imaging
+  tags:
+    - miscellaneous-and-fun
+    - sensor-and-technical-imaging
+    - palimpsest
+    - multispectral
+    - sensor
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: manuscript recovery imaging
