@@ -1358,7 +1358,7 @@
     "baselineHash": "82bf718846d52ca3b9db34bf74b9518138a3bf4c2006f21e732fc5eddb509c06",
     "problem": "Many auteur-like titles share long templates, masking their actual visual differences.",
     "preserve": "Specific layout, edge, color and background relationships.",
-    "proposedAction": "Preserve distinct contour, value, timing and background mechanics without forcing source scenes; rerender neutral subjects and compare the resulting styles.",
+    "proposedAction": "Preserve distinct contour, value, timing and background mechanics without forcing source scenes; rerender neutral subjects and compare the resulting styles. Overhaul: DNA audited and kept; three original briefs written per preset (30), creator- or title-named presets using original characters only.",
     "validation": "The difference is observable without iconic scenes or remembered characters.",
     "evidencePresetIds": ["SP05-071", "SP05-286"],
     "status": "text-reviewed",
