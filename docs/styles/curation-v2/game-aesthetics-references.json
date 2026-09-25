@@ -1117,5 +1117,75 @@
       "presets": ["SP17-090", "SP17-095", "SP12-087"],
       "reason": "Rendered inspection found Darksiders too realistically proportioned and Darkest Dungeon too textured. Strengthen oversized graphic shapes, explicit medium and broad value separation while retaining epic active compositions."
     }
+  },
+  "medievalCardCritique": {
+    "date": "2026-09-25",
+    "scope": [
+      "SP17-090",
+      "SP17-094",
+      "SP17-074",
+      "SP17-075",
+      "SP17-076",
+      "SP17-077",
+      "SP17-078",
+      "SP17-079",
+      "SP17-080",
+      "SP17-081",
+      "SP17-082",
+      "SP17-083"
+    ],
+    "userFeedback": "MK1 was generic; Darksiders needs much more exaggerated musculature and forms; the ten drawing and print cards need creative medieval fantasy and dungeon compositions.",
+    "supersedes": "Prior representative-card acceptance for SP17-090 and SP17-094; prior ten media cards remain historical alternatives.",
+    "reviewer": "root",
+    "proposalReview": "Luna 6 Max proposals reviewed and corrected by root. Technique definitions remain portable; fantasy scenes belong only to preview briefs.",
+    "visualReview": {
+      "status": "root-reviewed",
+      "presets": 12,
+      "jobs": 13,
+      "provider": "chatgpt",
+      "codexTurns": 0,
+      "userAcceptance": "pending",
+      "crossSubjectValidation": "pending",
+      "observations": [
+        "Torn-paper impossible architecture, three-ink shield impact and stamped skeletal siege creature have distinct construction and compositions.",
+        "The first airbrush candidate drifted into bristle-painted concept art. Root strengthened sprayed gradients in the style definition and generated a second candidate with smooth skin, cloak and cosmic tonal rolls.",
+        "Drybrush rescue and colored-pencil magical archery preserve visible directional marks and character-led medieval action.",
+        "Silverpoint basilisk, wax-resist kraken, chalk moth and Conte haunted-armor duel replace natural-history and ordinary-work scenes with different dungeon compositions.",
+        "Darksiders now exposes monumental living muscle beneath oversized armor; MK1 now uses distinct martial equipment, luminous realm scenery and character-linked opposing powers.",
+        "All former primary cards and existing alternatives were retained, newest to oldest; historical Studio jobs and assets were not rewritten."
+      ]
+    },
+    "sources": [
+      {
+        "presetId": "SP17-090",
+        "url": "https://darksiders.thqnordic.com/",
+        "observed": "Observed on the official THQ Nordic game page: War is framed as the first Horseman in a Heaven-versus-Hell apocalypse, with brutal supernatural attacks, an extreme angelic/demonic/Earthly arsenal, and a ravaged Earth. The page's hero image shows a broad armored humanoid silhouette, oversized equipment and red cloth. Inference: retain the apocalyptic force and monumental humanlike character design without copying War."
+      },
+      {
+        "presetId": "SP17-090",
+        "url": "https://darksiders.thqnordic.com/game-sites/darksiders/content/screenshots/screenshot-01.jpg",
+        "observed": "Observed in the official game's screenshot gallery: an armored humanoid with dark blue-gray plates and a red cloth accent moves through overgrown, fractured city architecture. This supports the ruined-world setting and material contrast; the screenshot alone does not establish exaggerated muscle ratios or comic rendering."
+      },
+      {
+        "presetId": "SP17-094",
+        "url": "https://www.mortalkombat.com/en-us/game",
+        "observed": "Observed on the official base-game page: a sunset-and-fireline ensemble presents fighters with sharply different silhouettes, including hooded or masked figures, distinct armor and clothing colors, and varied body builds. Inference: the preset should preserve identity-coded costume and silhouette instead of reducing the cast to one jade-and-silk look."
+      },
+      {
+        "presetId": "SP17-094",
+        "url": "https://www.mortalkombat.com/en-us/media",
+        "observed": "Observed on the official media page: it separates original Launch, Gameplay and Announce trailers and shows trailer frames with masked or armored fighters, weapon-led poses, group compositions and fire-lit spectacle. Inference: equipment and supernatural staging should be structural cues, not background decoration."
+      },
+      {
+        "presetId": "SP17-094",
+        "url": "https://warnerbrosgames.com/article/mk1",
+        "observed": "Observed in Warner Bros. Games' 2023 launch announcement: it describes a reborn universe with reimagined heroes and villains, character-specific abilities, and Kameo support fighters. Inference: retain distinct character roles and ability motifs without copying a named fighter or canonical scene."
+      },
+      {
+        "presetId": "SP17-079",
+        "url": "https://www.getty.edu/art/exhibitions/hatched/index.html",
+        "observed": "Museum explanation used to check that controlled hatching builds drawn volume; the fantasy composition is an authored choice, not sourced from the museum."
+      }
+    ]
   }
 }

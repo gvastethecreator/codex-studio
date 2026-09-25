@@ -11,21 +11,21 @@ export const GENERATED_STYLE_PRESETS = [
       'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested',
     style: {
       aesthetic:
-        'Make the Darksiders (2010) graphic-novel action-fantasy identity read through the combination of broad, sculpted 3D-like masses and comic-led drawing: oversized heroic anatomy, unusually large weapons, angular armor breaks, weighty dark contour accents and selectively painted color planes. The result should feel forceful and authored, not like a generic beveled fantasy illustration.',
+        'Darksiders (2010) as Western action-comic fantasy: monumental, sculpted heroic bodies and oversized equipment are cut into forceful silhouettes, dark ink contours and clear cel-like planes. Keep the modeled volume, but let graphic shape design and hard value breaks define it before surface texture.',
       subject_treatment:
-        'Preserve the requested identity, action and defining proportions, then clarify its silhouette with an exaggerated shoulder, torso, hand, tool or garment mass where the subject supports it. Build armor, clothing and equipment from a few large interlocking plates or wedges; use a gestural pose and a strong object diagonal to communicate weight. Do not add armor, weapons or Horseman lore to subjects that do not call for them.',
+        'Preserve the requested identity, action and framing. Unless the user explicitly locks the proportions, where a humanoid subject fits, push heroic anatomy far beyond natural proportions: huge chest, trapezius, deltoids, upper arms and forearms; a conspicuously small head and pinched waist; hands, gauntlets and boots enlarged enough to dominate the silhouette. Layer a few angular armor plates over visibly living anatomy so flesh, armor and joints remain distinct. Keep the treatment adaptable; do not default to War, a Horseman, a demon, a weapon or a battle.',
       color_and_tone:
         'Soot and weathered stone against blue-steel armor and dirty urban green; selective saturated crimson and amber focal accents. Large graphic color masses stay clear without a uniform orange-teal filter.',
       lighting_and_shadow:
-        'Separate large planes with deliberate cool ambient shadow and narrow, readable light on steel, stone and cloth. Let a warm impact or supernatural glow occupy a small focal area instead of flooding the whole scene. Preserve the dimensionality of the modeled forms; the comic influence comes from shape, contour and value grouping rather than a uniform cel-shader.',
+        'Use broad, hard-edged comic shadow shapes to carve the chest, shoulder masses and limbs; keep highlights selective and decisive on flesh, steel and stone. Make the major value divisions read at card size, with supernatural light concentrated around the point of impact.',
       texture_and_material:
-        "Describe armor through broad forged facets, scored bevels and a few crisp edge glints; stone through broken block planes and large fractures; cloth through substantial, wind-pulled folds. Use localized chips and dirt to explain use. Avoid a blanket scratch or grit pass that replaces Darksiders' sculptural, graphic forms.",
+        'Model living muscle as huge interlocking rounded and wedge-shaped masses: deltoids overlap broad pectorals, forearms taper sharply into enormous hands, and tendon breaks are clean rather than densely striated. Distinguish flesh from a few broad forged armor facets, thick leather and substantial cloth folds. Use restrained localized wear; neither rock facets nor realistic skin microdetail should replace the graphic anatomy.',
       camera_and_composition:
         'Keep the camera, crop and scale requested by the prompt. For an illustration, favor a readable foreground silhouette, a strong weapon or body diagonal and architecture that makes the subject feel large; let these devices support the chosen subject rather than impose a game chase view or poster pose.',
       atmosphere_and_mood:
         "Carry the series' biblical-apocalyptic scale, blunt heroic force and collision of ruined civilization with supernatural power through shape and contrast. Keep the mood requested by the prompt; a non-apocalyptic subject does not need ash, demons or a battle narrative.",
       rendering_and_quality:
-        "Translate the original game's comic-book-led modeling into a finished illustration: broad painted planes, controlled dark contour accents, distinct material edges and detail concentrated on face, hands, armor and focal equipment. Preserve dimensional form without turning the image into an in-engine screenshot, flat vector art or glossy photoreal fantasy.",
+        'Favor thick, tapering dark contours and a small number of large cel-painted color and shadow planes over soft blended modeling. Keep forms three-dimensional, anatomy unmistakable and armor edges angular; confine chips and etched details to a few focal areas.',
     },
     ui: {
       kind: 'full_style',
@@ -127,21 +127,21 @@ export const GENERATED_STYLE_PRESETS = [
       'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested',
     style: {
       aesthetic:
-        'Mortal Kombat 1 (2023) visual direction translated into polished painted illustration: naturalistic athletic anatomy, ornate martial tailoring, lush ceremonial color and precise theatrical action.',
+        'Mortal Kombat 1 (2023) cinematic martial fantasy, built around identifiable fighter designs, tailored combat gear and supernatural techniques that belong to the character. Keep the realistic, sculpted body rendering and theatrical finish, while making role, weapon and power silhouette as distinctive as the palette.',
       subject_treatment:
-        'Preserve explicit identity and action. Show poised, physically committed gestures, elegant asymmetrical fabric shapes and clean costume accents; supernatural color accents follow the action when appropriate.',
+        'Preserve the requested subject, action and explicit clothing. When a fighter or fantasy character is present, make their identity readable through a specific combat silhouette: headwear or mask, high collar, fitted or layered tunic, wraps, segmented armor, metal guards, waist panels and a signature weapon as the subject warrants. Treat these as a coordinated, functional design rather than generic flowing silk and ornaments. Integrate a fitting supernatural effect into the body, weapon or action silhouette (for example fire, ice, lightning, shadow or transformation); do not replace the requested identity or outfit with a stock fighter.',
       color_and_tone:
-        'Rich jade, royal blue, vermilion, warm skin and brushed gold against luminous scenic color. Avoid the uniformly gritty brown treatment of older fighting games.',
+        'Use vivid, character-coded color relationships: jade or verdigris, royal blue, lacquer red, bone, plum, ember and brushed gold can combine with deep neutral armor and warm skin. Give each focal character or power a clear dominant hue and counter-color; keep jade available but never make it the default identity for every costume.',
       lighting_and_shadow:
-        'Bright cinematic key light and cool fill define athletic forms; small localized emissive accents coexist with readable daylight or jewel-toned ambience.',
+        "Use cinematic directional light and a readable warm/cool split to reveal sculpted anatomy, fabric construction and armor edges. Let a fitting supernatural power cast a localized color onto nearby forms; preserve dangerous contrast and keep the fighter's face, hands and equipment clear against the stage.",
       texture_and_material:
-        'Fine woven cloth, embossed trims, brushed metal and taut skin; contrast delicate ceremonial finish with disciplined physical force.',
+        'Separate skin, layered woven combat cloth, quilted panels, fitted leather, engraved metal guards and hard lacquer with precise material response. Costume ornament follows armor joints, seam construction and rank; it must support a distinctive fighting silhouette rather than dissolve into loose silk and jewelry.',
       camera_and_composition:
-        'A legible arc of action and an offset balancing shape, with ornamental depth behind the subject. Explicit framing stays intact; no obligatory two-fighter game plane.',
+        "Honor requested framing. Prioritize the fighter's identifying silhouette, weapon and supernatural action before scenic ornament. In an action image, separate combat roles with distinct counter-directions and keep moving cloth or effects subordinate to the main gesture; do not require a two-fighter side-on game plane.",
       atmosphere_and_mood:
-        'Regal spectacle and immediate martial danger, luxurious and vivid rather than monochrome grimdark.',
+        'Balance disciplined martial intent with immediate supernatural danger and realm-scale spectacle. Ceremonial ornament should communicate character, faction or rank; the scene should feel perilous and mythic, not like decorative fashion pageantry.',
       rendering_and_quality:
-        'Polished naturalistic digital painting with precise anatomy and rich controlled color; painted key art, not anime cel shading or a glossy fashion photograph.',
+        'Painted cinematic key art over sculpted, naturalistic anatomy: precise garment construction, crisp metal and cloth separation, expressive but grounded faces, and supernatural effects with clear designed shapes. Concentrate fine detail on identity-bearing costume and equipment; keep the action legible at thumbnail size.',
     },
     ui: {
       kind: 'full_style',

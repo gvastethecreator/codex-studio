@@ -3,7 +3,7 @@ id: SP17-094
 packId: pack_17
 name: Mortal Kombat 1 — Martial Pageantry
 category: 10. Graphic & Feudal Art Directions
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,31 +17,48 @@ tags:
   - visual-evaluation-pending
 visualDna:
   aesthetic: >-
-    Mortal Kombat 1 (2023) visual direction translated into polished painted illustration:
-    naturalistic athletic anatomy, ornate martial tailoring, lush ceremonial color and precise
-    theatrical action.
+    Mortal Kombat 1 (2023) cinematic martial fantasy, built around identifiable fighter designs,
+    tailored combat gear and supernatural techniques that belong to the character. Keep the
+    realistic, sculpted body rendering and theatrical finish, while making role, weapon and power
+    silhouette as distinctive as the palette.
   subject_treatment: >-
-    Preserve explicit identity and action. Show poised, physically committed gestures, elegant
-    asymmetrical fabric shapes and clean costume accents; supernatural color accents follow the
-    action when appropriate.
+    Preserve the requested subject, action and explicit clothing. When a fighter or fantasy
+    character is present, make their identity readable through a specific combat silhouette:
+    headwear or mask, high collar, fitted or layered tunic, wraps, segmented armor, metal guards,
+    waist panels and a signature weapon as the subject warrants. Treat these as a coordinated,
+    functional design rather than generic flowing silk and ornaments. Integrate a fitting
+    supernatural effect into the body, weapon or action silhouette (for example fire, ice,
+    lightning, shadow or transformation); do not replace the requested identity or outfit with a
+    stock fighter.
   color_and_tone: >-
-    Rich jade, royal blue, vermilion, warm skin and brushed gold against luminous scenic color.
-    Avoid the uniformly gritty brown treatment of older fighting games.
+    Use vivid, character-coded color relationships: jade or verdigris, royal blue, lacquer red,
+    bone, plum, ember and brushed gold can combine with deep neutral armor and warm skin. Give each
+    focal character or power a clear dominant hue and counter-color; keep jade available but never
+    make it the default identity for every costume.
   lighting_and_shadow: >-
-    Bright cinematic key light and cool fill define athletic forms; small localized emissive accents
-    coexist with readable daylight or jewel-toned ambience.
+    Use cinematic directional light and a readable warm/cool split to reveal sculpted anatomy,
+    fabric construction and armor edges. Let a fitting supernatural power cast a localized color
+    onto nearby forms; preserve dangerous contrast and keep the fighter's face, hands and equipment
+    clear against the stage.
   texture_and_material: >-
-    Fine woven cloth, embossed trims, brushed metal and taut skin; contrast delicate ceremonial
-    finish with disciplined physical force.
+    Separate skin, layered woven combat cloth, quilted panels, fitted leather, engraved metal guards
+    and hard lacquer with precise material response. Costume ornament follows armor joints, seam
+    construction and rank; it must support a distinctive fighting silhouette rather than dissolve
+    into loose silk and jewelry.
   camera_and_composition: >-
-    A legible arc of action and an offset balancing shape, with ornamental depth behind the subject.
-    Explicit framing stays intact; no obligatory two-fighter game plane.
+    Honor requested framing. Prioritize the fighter's identifying silhouette, weapon and
+    supernatural action before scenic ornament. In an action image, separate combat roles with
+    distinct counter-directions and keep moving cloth or effects subordinate to the main gesture; do
+    not require a two-fighter side-on game plane.
   atmosphere_and_mood: >-
-    Regal spectacle and immediate martial danger, luxurious and vivid rather than monochrome
-    grimdark.
+    Balance disciplined martial intent with immediate supernatural danger and realm-scale spectacle.
+    Ceremonial ornament should communicate character, faction or rank; the scene should feel
+    perilous and mythic, not like decorative fashion pageantry.
   rendering_and_quality: >-
-    Polished naturalistic digital painting with precise anatomy and rich controlled color; painted
-    key art, not anime cel shading or a glossy fashion photograph.
+    Painted cinematic key art over sculpted, naturalistic anatomy: precise garment construction,
+    crisp metal and cloth separation, expressive but grounded faces, and supernatural effects with
+    clear designed shapes. Concentrate fine detail on identity-bearing costume and equipment; keep
+    the action legible at thumbnail size.
 avoidRules:
   - overriding explicitly requested subject, action, identity, count or camera
   - generic neutral rendering that removes the reference visual grammar
@@ -67,6 +84,8 @@ attributes:
       url: https://www.youtube.com/watch?v=mr8kkXnMTxw
     - title: Mortal Kombat 1 — official media
       url: https://www.mortalkombat.com/en-us/media
+    - title: Official visual reference reviewed for style identity
+      url: https://www.mortalkombat.com/en-us/game
   intentionalPolicy:
     schemaVersion: 1
     kind: full_style

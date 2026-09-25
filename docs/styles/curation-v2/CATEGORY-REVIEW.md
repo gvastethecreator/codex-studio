@@ -1317,7 +1317,7 @@ Evidence [SP17-076](../../../components/recipes/styles/manifests/presets/pack_17
 
 **Problem:** Airbrush and drybrush need clear medium identity without defaulting to stock cover scenes or realistic key art.
 **Retain:** Requested content, silhouette and framing; the painting process changes the rendering.
-**Proposed action:** Compare smooth sprayed transitions with skipped-pigment strokes and keep each transferable.
+**Proposed action:** Keep airbrush and drybrush as distinct portable painting mechanisms. Root visual review strengthened dominant sprayed gradients after a representative airbrush card drifted into bristle-painted concept art. Fantasy events remain confined to card briefs.
 **Image acceptance check:** Apply both processes to the same non-fantasy subject and inspect whether their marks remain distinguishable at card size.
 
 Evidence [SP17-077](../../../components/recipes/styles/manifests/presets/pack_17/SP17-077.yaml) — Paperback Airbrush Fantasy: `Honor the requested camera, crop, and placement. Use broad value separation to read within the given arrangement, without forcing a hero pose, diagonal, or paperback cover layout.`
@@ -2054,7 +2054,7 @@ Evidence [SP17-086](../../../components/recipes/styles/manifests/presets/pack_17
 
 **Problem:** A recognizable art direction must retain its material, palette and lighting mechanisms without imposing the reference game scene.
 **Retain:** Reference-specific silhouettes, color relationships, material construction, emotional tone and rendering; explicit subject choices remain authoritative.
-**Proposed action:** Keep researched illustration and gameplay counterparts separate. Activate characteristic design vocabulary by default without copying canonical scenes or overriding explicit content. Root reviewed Luna proposals and revised diluted definitions.
+**Proposed action:** Keep illustration and gameplay separate. Root-reviewed correction strengthens Darksiders muscular anatomy and exaggerated silhouette, and MK1 martial costume construction and supernatural danger. Representative scenes stay in card briefs, not reusable DNA.
 **Image acceptance check:** Review a complete representative composition, then test transfer to different subjects with explicit camera, text, palette and material requests.
 
 Evidence [SP17-090](../../../components/recipes/styles/manifests/presets/pack_17/SP17-090.yaml) — Darksiders — Apocalyptic Graphic Fantasy: `Keep the camera, crop and scale requested by the prompt. For an illustration, favor a readable foreground silhouette, a strong weapon or body diagonal and architecture that makes the subject feel large; let these devices support the chosen subject rather than `…

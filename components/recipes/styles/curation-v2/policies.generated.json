@@ -3070,7 +3070,7 @@
         "field": "camera_and_composition"
       },
       {
-        "text": "invented light sources or magical glow",
+        "text": "unrequested light sources or magical glow",
         "field": "lighting_and_shadow"
       },
       {
@@ -3082,7 +3082,7 @@
         "field": "rendering_and_quality"
       }
     ],
-    "presetVersion": 1,
+    "presetVersion": 2,
     "packId": "pack_17",
     "name": "Paperback Airbrush Fantasy"
   },
@@ -3665,7 +3665,7 @@
         "field": "global"
       }
     ],
-    "presetVersion": 1,
+    "presetVersion": 2,
     "packId": "pack_17",
     "name": "Darksiders — Apocalyptic Graphic Fantasy"
   },
@@ -3837,7 +3837,7 @@
         "field": "global"
       }
     ],
-    "presetVersion": 1,
+    "presetVersion": 2,
     "packId": "pack_17",
     "name": "Mortal Kombat 1 — Martial Pageantry"
   },

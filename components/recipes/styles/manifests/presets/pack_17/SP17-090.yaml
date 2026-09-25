@@ -3,7 +3,7 @@ id: SP17-090
 packId: pack_17
 name: Darksiders — Apocalyptic Graphic Fantasy
 category: 10. Graphic & Feudal Art Directions
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,31 +17,31 @@ tags:
   - visual-evaluation-pending
 visualDna:
   aesthetic: >-
-    Make the Darksiders (2010) graphic-novel action-fantasy identity read through the combination of
-    broad, sculpted 3D-like masses and comic-led drawing: oversized heroic anatomy, unusually large
-    weapons, angular armor breaks, weighty dark contour accents and selectively painted color
-    planes. The result should feel forceful and authored, not like a generic beveled fantasy
-    illustration.
+    Darksiders (2010) as Western action-comic fantasy: monumental, sculpted heroic bodies and
+    oversized equipment are cut into forceful silhouettes, dark ink contours and clear cel-like
+    planes. Keep the modeled volume, but let graphic shape design and hard value breaks define it
+    before surface texture.
   subject_treatment: >-
-    Preserve the requested identity, action and defining proportions, then clarify its silhouette
-    with an exaggerated shoulder, torso, hand, tool or garment mass where the subject supports it.
-    Build armor, clothing and equipment from a few large interlocking plates or wedges; use a
-    gestural pose and a strong object diagonal to communicate weight. Do not add armor, weapons or
-    Horseman lore to subjects that do not call for them.
+    Preserve the requested identity, action and framing. Unless the user explicitly locks the
+    proportions, where a humanoid subject fits, push heroic anatomy far beyond natural proportions:
+    huge chest, trapezius, deltoids, upper arms and forearms; a conspicuously small head and pinched
+    waist; hands, gauntlets and boots enlarged enough to dominate the silhouette. Layer a few
+    angular armor plates over visibly living anatomy so flesh, armor and joints remain distinct.
+    Keep the treatment adaptable; do not default to War, a Horseman, a demon, a weapon or a battle.
   color_and_tone: >-
     Soot and weathered stone against blue-steel armor and dirty urban green; selective saturated
     crimson and amber focal accents. Large graphic color masses stay clear without a uniform
     orange-teal filter.
   lighting_and_shadow: >-
-    Separate large planes with deliberate cool ambient shadow and narrow, readable light on steel,
-    stone and cloth. Let a warm impact or supernatural glow occupy a small focal area instead of
-    flooding the whole scene. Preserve the dimensionality of the modeled forms; the comic influence
-    comes from shape, contour and value grouping rather than a uniform cel-shader.
+    Use broad, hard-edged comic shadow shapes to carve the chest, shoulder masses and limbs; keep
+    highlights selective and decisive on flesh, steel and stone. Make the major value divisions read
+    at card size, with supernatural light concentrated around the point of impact.
   texture_and_material: >-
-    Describe armor through broad forged facets, scored bevels and a few crisp edge glints; stone
-    through broken block planes and large fractures; cloth through substantial, wind-pulled folds.
-    Use localized chips and dirt to explain use. Avoid a blanket scratch or grit pass that replaces
-    Darksiders' sculptural, graphic forms.
+    Model living muscle as huge interlocking rounded and wedge-shaped masses: deltoids overlap broad
+    pectorals, forearms taper sharply into enormous hands, and tendon breaks are clean rather than
+    densely striated. Distinguish flesh from a few broad forged armor facets, thick leather and
+    substantial cloth folds. Use restrained localized wear; neither rock facets nor realistic skin
+    microdetail should replace the graphic anatomy.
   camera_and_composition: >-
     Keep the camera, crop and scale requested by the prompt. For an illustration, favor a readable
     foreground silhouette, a strong weapon or body diagonal and architecture that makes the subject
@@ -52,10 +52,9 @@ visualDna:
     civilization with supernatural power through shape and contrast. Keep the mood requested by the
     prompt; a non-apocalyptic subject does not need ash, demons or a battle narrative.
   rendering_and_quality: >-
-    Translate the original game's comic-book-led modeling into a finished illustration: broad
-    painted planes, controlled dark contour accents, distinct material edges and detail concentrated
-    on face, hands, armor and focal equipment. Preserve dimensional form without turning the image
-    into an in-engine screenshot, flat vector art or glossy photoreal fantasy.
+    Favor thick, tapering dark contours and a small number of large cel-painted color and shadow
+    planes over soft blended modeling. Keep forms three-dimensional, anatomy unmistakable and armor
+    edges angular; confine chips and etched details to a few focal areas.
 avoidRules:
   - overriding explicitly requested subject, action, identity, count or camera
   - generic neutral rendering that removes the reference visual grammar

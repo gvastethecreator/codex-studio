@@ -8,10 +8,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Paperback Airbrush Fantasy',
     category: '7. Pulp Fantasy Painting',
     negativePrompt:
-      'unrequested fantasy props or action, fixed paperback cover composition or title lettering, invented light sources or magical glow, chrome-like highlights on every material, plastic gradients or blurred contours',
+      'unrequested fantasy props or action, fixed paperback-cover composition or title lettering, unrequested light sources or magical glow, chrome-like highlights on every material, plastic gradients or blurred contours',
     style: {
       aesthetic:
-        'Retro pulp-fantasy illustration combining smooth airbrushed value transitions with selected sharply painted contours and bright edge accents. Airbrush is the tonal method, not a prompt for a fixed cover scene.',
+        'Retro paperback fantasy rendered primarily with airbrush: uninterrupted softly sprayed tonal masses, feathered transitions and concentrated vivid color. A few sharply painted contours and edge accents anchor the smooth forms. The dominant surface must read as controlled sprayed pigment, not bristle-painted digital concept art.',
       subject_treatment:
         'Preserve the requested identity, anatomy, action, count, and silhouette. Use blended volumes to clarify existing forms, then place crisp accents only where the source shape supports them.',
       color_and_tone:
@@ -19,13 +19,13 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Follow the requested light source and direction. Use smooth tonal rolls and a few controlled highlights to model existing forms without adding a sunset, magical beam, or backlight.',
       texture_and_material:
-        'Keep the airbrush transitions clean and let hard-edged brush accents distinguish selected surfaces. Preserve material identity; do not turn everything into chrome or polished armor.',
+        'Keep large areas of skin, cloth and space smoothly graded with fine atomized pigment transitions. Distinguish the depicted materials through edge control, reflected color and selected painted accents, without replacing their identity with chrome. Confine visible bristle work to small focal details; no all-over scraped paint, impasto or drybrush.',
       camera_and_composition:
         'Honor the requested camera, crop, and placement. Use broad value separation to read within the given arrangement, without forcing a hero pose, diagonal, or paperback cover layout.',
       atmosphere_and_mood:
         'Carry the requested mood through contrast and color temperature. The retro painting language adds no warrior, monster, spell, or adventure episode on its own.',
       rendering_and_quality:
-        'Keep transitions deliberate, contours selective, and details crisp where they define identity. Avoid plastic shine, poster lettering, and soft gradients that erase form separation.',
+        'Use broad, visibly smooth tonal rolls with crisp silhouettes in selected places, as in airbrushed paperback fantasy cover art. Preserve dimensional volume and readable anatomy without either photographic microtexture or unfocused digital blur. Make the difference between sprayed gradation and sparse hand-painted accents evident at thumbnail size.',
     },
     ui: {
       kind: 'full_style',
