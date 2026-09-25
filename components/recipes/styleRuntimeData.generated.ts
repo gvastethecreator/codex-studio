@@ -64,7 +64,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       'Character-first anime styles spanning shojo, magical themes, slice-of-life moods, and expressive everyday storytelling.',
     cardTitle: 'Anime Lifestyle',
     cardDescription: 'Character anime, slice-of-life, shojo, magical moods.',
-    presetCount: 132,
+    presetCount: 137,
   },
   {
     id: 'pack_16',

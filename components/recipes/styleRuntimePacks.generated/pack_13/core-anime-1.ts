@@ -8,28 +8,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cel Heroic Dawn',
     category: '1. Core Anime',
     negativePrompt:
-      'photoreal, western comic, 3d render, watermark, text, logo, low quality, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, western comic, 3d render, watermark, text, logo, low quality, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cel Heroic Dawn operates as a portable anime-lifestyle router: combine Cel Heroic Dawn identity cues through Heroic silhouette dominance; expressive focal line; two step cel shading logic; warm dawn tonal bias; and iconic pose readability; Cel Heroic Dawn anime style cues with core anime character and adventure grammar with cel contour hierarchy, expressive acting, readable silhouette, genre clarity, and clean TV to key visual polish, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Heroic dawn cel anime: bold adventure-series key art with strong silhouettes, two-step cel shading and warm sunrise light.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through line-weight hierarchy, pose-first shape design, simplified interior detail, readable costume or surface cues, and emotion-led facial or object emphasis; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
-      color_and_tone:
-        'Map color through clear cel values, saturated accents, stable skin or material midtones, sky or neon support color, and disciplined complementary contrast; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
-      lighting_and_shadow:
-        'Use binary cel shadow, gentle rim, effect glow when requested, broadcast friendly key light, and clean value separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: confident thick outer contours, thinner inner lines, two-step cel shadows, heroic low-angle poses with windblown hair and cloth.",
+      color_and_tone: 'Warm gold, peach and orange against cool blue shadow.',
+      lighting_and_shadow: 'Low sunrise backlight with a bright rim on hair and armor.',
       texture_and_material:
-        'Render flat cel fills, painted distant plane softness, limited grain, clean ink edges, controlled effect overlays, and low noise finish; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Flat cel fills with softly painted sky gradients, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose through silhouette-priority framing, moderate dynamic lensing, readable action or emotion lanes, and subject-first depth without required genre staging as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Low heroic angle with the sky behind, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Carry mood through heroic resolve, genre wonder, kinetic focus, gothic pressure, magical uplift, or final episode tenderness guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Brave, hopeful, determined and bright, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with premium cel anime clarity with stable anatomy or object structure, crisp lines, denoised color blocks, no fake text, and no 3D render drift; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Heroic silhouette dominance; expressive focal line; two step cel shading logic; warm dawn tonal bias; and iconic pose readability; Cel Heroic Dawn anime style cues',
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      key_features: 'thick contours; two-step cel; sunrise rim light; heroic pose',
       creative_brief:
-        'Use Cel Heroic Dawn after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Heroic silhouette dominance, expressive focal line, two step cel shading logic, warm dawn tonal bias, and iconic pose readability, Cel Heroic Dawn anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cel Heroic Dawn as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +34,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Neon City Vigil',
     category: '1. Core Anime',
     negativePrompt:
-      'photoreal, watercolor, low detail, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, watercolor, low detail, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Neon City Vigil operates as a portable anime-lifestyle router: combine Neon City Vigil identity cues through Neon channel reflections; rain layer depth; alert silhouette framing; cyan magenta contrast gating; and noir silhouette integrity; Neon City Vigil anime style cues with core anime character and adventure grammar with cel contour hierarchy, expressive acting, readable silhouette, genre clarity, and clean TV to key visual polish, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Neon city vigil anime: rain-soaked cyber-city night frames with sharp lines, wet reflections and lonely figures.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through line-weight hierarchy, pose-first shape design, simplified interior detail, readable costume or surface cues, and emotion-led facial or object emphasis; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
-      color_and_tone:
-        'Map color through clear cel values, saturated accents, stable skin or material midtones, sky or neon support color, and disciplined complementary contrast; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: crisp thin lines, hard cel shadows, faces lit by colored signs, rain streaks drawn as straight white lines.",
+      color_and_tone: 'Magenta, cyan and violet neon on deep navy black.',
       lighting_and_shadow:
-        'Use binary cel shadow, gentle rim, effect glow when requested, broadcast friendly key light, and clean value separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
-      texture_and_material:
-        'Render flat cel fills, painted distant plane softness, limited grain, clean ink edges, controlled effect overlays, and low noise finish; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Neon signs as key light with wet reflections, expressed through the style rather than photographic lighting.',
+      texture_and_material: 'Flat cel with glossy painted reflections and rain streaks.',
       camera_and_composition:
-        'Compose through silhouette-priority framing, moderate dynamic lensing, readable action or emotion lanes, and subject-first depth without required genre staging as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Street-level wide shots and tight lonely close-ups, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Carry mood through heroic resolve, genre wonder, kinetic focus, gothic pressure, magical uplift, or final episode tenderness guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Lonely, cool, watchful and melancholic, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with premium cel anime clarity with stable anatomy or object structure, crisp lines, denoised color blocks, no fake text, and no 3D render drift; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Neon channel reflections; rain layer depth; alert silhouette framing; cyan magenta contrast gating; and noir silhouette integrity; Neon City Vigil anime style cues',
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      key_features: 'neon key light; wet reflections; rain lines; lonely figure',
       creative_brief:
-        'Use Neon City Vigil after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Neon channel reflections, rain layer depth, alert silhouette framing, cyan magenta contrast gating, and noir silhouette integrity, Neon City Vigil anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon City Vigil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +60,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mecha Hangar Ignition',
     category: '1. Core Anime',
     negativePrompt:
-      'photoreal, toy like, lowres, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, toy like, lowres, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Mecha Ignition operates as a portable anime-lifestyle router: combine Mecha Hangar Ignition identity cues through Monument scale mechanical silhouette; articulated panel logic; industrial support line context; launch readiness lighting cues; and scale contrast markers; Mecha Hangar Ignition anime style cues with core anime character and adventure grammar with cel contour hierarchy, expressive acting, readable silhouette, genre clarity, and clean TV to key visual polish, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Mecha hangar anime: giant robots drawn with precise mechanical line work, panel lines and industrial lighting.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through line-weight hierarchy, pose-first shape design, simplified interior detail, readable costume or surface cues, and emotion-led facial or object emphasis; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: hard-edged mechanical line work with panel lines, bolts and vents, humans tiny beside machines, sparks and steam as cel effects.",
       color_and_tone:
-        'Map color through clear cel values, saturated accents, stable skin or material midtones, sky or neon support color, and disciplined complementary contrast; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Gunmetal, hazard orange, off-white and teal accents, used consistently across subject and background.',
       lighting_and_shadow:
-        'Use binary cel shadow, gentle rim, effect glow when requested, broadcast friendly key light, and clean value separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Industrial floodlights, sparks and visor glow, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render flat cel fills, painted distant plane softness, limited grain, clean ink edges, controlled effect overlays, and low noise finish; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
-      camera_and_composition:
-        'Compose through silhouette-priority framing, moderate dynamic lensing, readable action or emotion lanes, and subject-first depth without required genre staging as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Crisp cel metal with sharp highlight blocks, visible at card size as the signature of the style.',
+      camera_and_composition: 'Low angle up at the machine with tiny figures for scale.',
       atmosphere_and_mood:
-        'Carry mood through heroic resolve, genre wonder, kinetic focus, gothic pressure, magical uplift, or final episode tenderness guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Tense, powerful, mechanical and awe-struck, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with premium cel anime clarity with stable anatomy or object structure, crisp lines, denoised color blocks, no fake text, and no 3D render drift; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Monument scale mechanical silhouette; articulated panel logic; industrial support line context; launch readiness lighting cues; and scale contrast markers; Mecha Hangar Ignition anime style cues',
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      key_features: 'panel lines; floodlights; sparks; scale contrast',
       creative_brief:
-        'Use Mecha Ignition after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Monument scale mechanical silhouette, articulated panel logic, industrial support line context, launch readiness lighting cues, and scale contrast markers, Mecha Hangar Ignition anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mecha Hangar Ignition as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +87,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Spirit Shrine Twilight',
     category: '1. Core Anime',
     negativePrompt:
-      'photoreal, horror gore, sci fi ui, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, horror gore, sci fi ui, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Spirit Shrine Twilight operates as a portable anime-lifestyle router: combine Spirit Shrine Twilight identity cues through Gate depth cadence; ceremonial silhouette rhythm; twilight halo lighting; sacred material authenticity; and restrained supernatural cues; Spirit Shrine Twilight anime style cues with core anime character and adventure grammar with cel contour hierarchy, expressive acting, readable silhouette, genre clarity, and clean TV to key visual polish, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Spirit shrine twilight anime: quiet supernatural frames with soft glowing spirits, lanterns and painted dusk skies.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through line-weight hierarchy, pose-first shape design, simplified interior detail, readable costume or surface cues, and emotion-led facial or object emphasis; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: soft thin lines, gentle cel shading, spirits drawn translucent with glowing edges, richly painted backgrounds.",
       color_and_tone:
-        'Map color through clear cel values, saturated accents, stable skin or material midtones, sky or neon support color, and disciplined complementary contrast; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Dusky violet, lantern orange and spirit teal, used consistently across subject and background.',
       lighting_and_shadow:
-        'Use binary cel shadow, gentle rim, effect glow when requested, broadcast friendly key light, and clean value separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
-      texture_and_material:
-        'Render flat cel fills, painted distant plane softness, limited grain, clean ink edges, controlled effect overlays, and low noise finish; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Twilight sky with lantern and spirit glow, expressed through the style rather than photographic lighting.',
+      texture_and_material: 'Painted backgrounds with soft cel characters and glowing particles.',
       camera_and_composition:
-        'Compose through silhouette-priority framing, moderate dynamic lensing, readable action or emotion lanes, and subject-first depth without required genre staging as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Calm wide frames with small figures, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Carry mood through heroic resolve, genre wonder, kinetic focus, gothic pressure, magical uplift, or final episode tenderness guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Mysterious, gentle, sacred and wistful, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with premium cel anime clarity with stable anatomy or object structure, crisp lines, denoised color blocks, no fake text, and no 3D render drift; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Gate depth cadence; ceremonial silhouette rhythm; twilight halo lighting; sacred material authenticity; and restrained supernatural cues; Spirit Shrine Twilight anime style cues',
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      key_features: 'translucent spirits; lanterns; painted dusk; soft glow',
       creative_brief:
-        'Use Spirit Shrine Twilight after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Gate depth cadence, ceremonial silhouette rhythm, twilight halo lighting, sacred material authenticity, and restrained supernatural cues, Spirit Shrine Twilight anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Spirit Shrine Twilight as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +114,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sports Climax Arena',
     category: '1. Core Anime',
     negativePrompt:
-      'photoreal, muddy motion, low detail, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, muddy motion, low detail, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Sports Climax Arena operates as a portable anime-lifestyle router: combine Sports Climax Arena identity cues through Freeze frame kinetic apex; competitive focal intensity; speed line hierarchy; arena light contrast gating; and action vector composition; Sports Climax Arena anime style cues with core anime character and adventure grammar with cel contour hierarchy, expressive acting, readable silhouette, genre clarity, and clean TV to key visual polish, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Sports climax anime: explosive match-point frames with speed lines, sweat, impact frames and extreme perspective.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through line-weight hierarchy, pose-first shape design, simplified interior detail, readable costume or surface cues, and emotion-led facial or object emphasis; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: extreme foreshortening, speed lines, impact flashes, sweat drops and gritted faces at the peak of motion.",
       color_and_tone:
-        'Map color through clear cel values, saturated accents, stable skin or material midtones, sky or neon support color, and disciplined complementary contrast; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Bright team colors with white impact flashes, used consistently across subject and background.',
       lighting_and_shadow:
-        'Use binary cel shadow, gentle rim, effect glow when requested, broadcast friendly key light, and clean value separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Arena lights and hard rim light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render flat cel fills, painted distant plane softness, limited grain, clean ink edges, controlled effect overlays, and low noise finish; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Cel with speed-line overlays and motion smears, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose through silhouette-priority framing, moderate dynamic lensing, readable action or emotion lanes, and subject-first depth without required genre staging as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Extreme angles close to the action, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Carry mood through heroic resolve, genre wonder, kinetic focus, gothic pressure, magical uplift, or final episode tenderness guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Intense, triumphant, sweaty and electric, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with premium cel anime clarity with stable anatomy or object structure, crisp lines, denoised color blocks, no fake text, and no 3D render drift; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Freeze frame kinetic apex; competitive focal intensity; speed line hierarchy; arena light contrast gating; and action vector composition; Sports Climax Arena anime style cues',
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      key_features: 'speed lines; foreshortening; impact flash; sweat',
       creative_brief:
-        'Use Sports Climax Arena after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Freeze frame kinetic apex, competitive focal intensity, speed line hierarchy, arena light contrast gating, and action vector composition, Sports Climax Arena anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sports Climax Arena as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +142,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Gothic Vampire Manor',
     category: '1. Core Anime',
     negativePrompt:
-      'photoreal, cute chibi, daylight, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, cute chibi, daylight, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Gothic Vampire Manor operates as a portable anime-lifestyle router: combine Gothic Vampire Manor identity cues through Regal silhouette dominance; baroque ornament cadence; candlelit shadow orchestration; velvet black value control; and noble gothic iconography; Gothic Vampire Manor anime style cues with core anime character and adventure grammar with cel contour hierarchy, expressive acting, readable silhouette, genre clarity, and clean TV to key visual polish, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Gothic vampire anime: elegant dark frames with long thin lines, pale faces, crimson accents and moonlit shadows.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through line-weight hierarchy, pose-first shape design, simplified interior detail, readable costume or surface cues, and emotion-led facial or object emphasis; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: long elegant lines, sharp eyes and chins, flowing capes and lace, large solid black shadow shapes.",
       color_and_tone:
-        'Map color through clear cel values, saturated accents, stable skin or material midtones, sky or neon support color, and disciplined complementary contrast; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Black, crimson, bone white and moon blue, used consistently across subject and background.',
       lighting_and_shadow:
-        'Use binary cel shadow, gentle rim, effect glow when requested, broadcast friendly key light, and clean value separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Moonlight and candlelight with deep shadows, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render flat cel fills, painted distant plane softness, limited grain, clean ink edges, controlled effect overlays, and low noise finish; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Cel with fine lace and velvet detail, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose through silhouette-priority framing, moderate dynamic lensing, readable action or emotion lanes, and subject-first depth without required genre staging as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Tall vertical frames and dramatic angles, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Carry mood through heroic resolve, genre wonder, kinetic focus, gothic pressure, magical uplift, or final episode tenderness guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Elegant, dangerous, romantic and cold, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with premium cel anime clarity with stable anatomy or object structure, crisp lines, denoised color blocks, no fake text, and no 3D render drift; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Regal silhouette dominance; baroque ornament cadence; candlelit shadow orchestration; velvet black value control; and noble gothic iconography; Gothic Vampire Manor anime style cues',
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      key_features: 'long lines; pale faces; crimson accents; moonlight',
       creative_brief:
-        'Use Gothic Vampire Manor after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Regal silhouette dominance, baroque ornament cadence, candlelit shadow orchestration, velvet black value control, and noble gothic iconography, Gothic Vampire Manor anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gothic Vampire Manor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +170,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Magical Girl Prism Burst',
     category: '1. Core Anime',
     negativePrompt:
-      'photoreal, gritty, dark horror, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, gritty, dark horror, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Magical Girl Prism Burst operates as a portable anime-lifestyle router: combine Magical Girl Prism Burst identity cues through Transformation silhouette lock; emblem centric composition; prism energy ring motifs; and sparkle field rhythm control; Magical Girl Prism Burst anime style cues; Transformational magical girl anime language with prismatic optimism with core anime character and adventure grammar with cel contour hierarchy, expressive acting, readable silhouette, genre clarity, and clean TV to key visual polish, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Magical girl prism anime: transformation-sequence sparkle, ribbons, stars and rainbow prism light.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through line-weight hierarchy, pose-first shape design, simplified interior detail, readable costume or surface cues, and emotion-led facial or object emphasis; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: big shining eyes, flowing ribbons, star and heart sparkles, spinning transformation poses with bursts of light.",
       color_and_tone:
-        'Map color through clear cel values, saturated accents, stable skin or material midtones, sky or neon support color, and disciplined complementary contrast; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Pastel pinks, lilac, gold and rainbow prisms, used consistently across subject and background.',
       lighting_and_shadow:
-        'Use binary cel shadow, gentle rim, effect glow when requested, broadcast friendly key light, and clean value separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Radiant backlight and prism flares, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render flat cel fills, painted distant plane softness, limited grain, clean ink edges, controlled effect overlays, and low noise finish; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Glossy cel with sparkle overlays, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose through silhouette-priority framing, moderate dynamic lensing, readable action or emotion lanes, and subject-first depth without required genre staging as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Centered spinning pose on a starry background, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Carry mood through heroic resolve, genre wonder, kinetic focus, gothic pressure, magical uplift, or final episode tenderness guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Magical, joyful, radiant and brave, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with premium cel anime clarity with stable anatomy or object structure, crisp lines, denoised color blocks, no fake text, and no 3D render drift; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Transformation silhouette lock; emblem centric composition; prism energy ring motifs; and sparkle field rhythm control; Magical Girl Prism Burst anime style cues; Transformational magical girl anime language with prismatic optimism',
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      key_features: 'ribbons; prism flares; sparkles; transformation pose',
       creative_brief:
-        'Use Magical Girl Prism Burst after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Transformation silhouette lock, emblem centric composition, prism energy ring motifs, and sparkle field rhythm control, Magical Girl Prism Burst anime style cues, Transformational magical girl anime language with prismatic optimism, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Magical Girl Prism Burst as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +198,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Isekai Forest Caravan',
     category: '1. Core Anime',
     negativePrompt:
-      'photoreal, sci fi city, low detail, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, sci fi city, low detail, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Isekai Forest Caravan operates as a portable anime-lifestyle router: combine Isekai Forest Caravan identity cues through Class distinct design language; travel texture cues; gear like silhouette markers; and path to horizon compositional flow; Isekai Forest Caravan anime style cues; Isekai travel anime language with warm exploratory spirit with core anime character and adventure grammar with cel contour hierarchy, expressive acting, readable silhouette, genre clarity, and clean TV to key visual polish, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Isekai caravan anime: bright fantasy-adventure frames of travelers, carts, odd beasts and lush landscapes.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through line-weight hierarchy, pose-first shape design, simplified interior detail, readable costume or surface cues, and emotion-led facial or object emphasis; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: friendly character designs, clean lines, soft cel shading, rich painted fantasy backgrounds.",
       color_and_tone:
-        'Map color through clear cel values, saturated accents, stable skin or material midtones, sky or neon support color, and disciplined complementary contrast; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Lush greens, sky blue and warm earth, used consistently across subject and background.',
       lighting_and_shadow:
-        'Use binary cel shadow, gentle rim, effect glow when requested, broadcast friendly key light, and clean value separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Sunny daylight through leaves, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render flat cel fills, painted distant plane softness, limited grain, clean ink edges, controlled effect overlays, and low noise finish; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Painted backgrounds with clean cel characters, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose through silhouette-priority framing, moderate dynamic lensing, readable action or emotion lanes, and subject-first depth without required genre staging as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Wide travel frames, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Carry mood through heroic resolve, genre wonder, kinetic focus, gothic pressure, magical uplift, or final episode tenderness guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Adventurous, cozy, curious and bright, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with premium cel anime clarity with stable anatomy or object structure, crisp lines, denoised color blocks, no fake text, and no 3D render drift; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Class distinct design language; travel texture cues; gear like silhouette markers; and path to horizon compositional flow; Isekai Forest Caravan anime style cues; Isekai travel anime language with warm exploratory spirit',
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      key_features: 'caravan; lush painted backgrounds; clean cel; odd beasts',
       creative_brief:
-        'Use Isekai Forest Caravan after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Class distinct design language, travel texture cues, gear like silhouette markers, and path to horizon compositional flow, Isekai Forest Caravan anime style cues, Isekai travel anime language with warm exploratory spirit, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Isekai Forest Caravan as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +226,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Meikyuu Dungeon Glow',
     category: '1. Core Anime',
     negativePrompt:
-      'photoreal, daylight, flat color only, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, daylight, flat color only, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Meikyuu Dungeon Glow operates as a portable anime-lifestyle router: combine Meikyuu Dungeon Glow identity cues through Bioluminescent rune cues; portal like glow anchors; survival silhouette markers; and moisture rich cavern material signatures; Meikyuu Dungeon Glow anime style cues; Labyrinthine glow anime language with bioluminescent mysticism with core anime character and adventure grammar with cel contour hierarchy, expressive acting, readable silhouette, genre clarity, and clean TV to key visual polish, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Dungeon glow anime: torchlit labyrinth frames with glowing magic circles, dark stone and stylized monsters.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through line-weight hierarchy, pose-first shape design, simplified interior detail, readable costume or surface cues, and emotion-led facial or object emphasis; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
-      color_and_tone:
-        'Map color through clear cel values, saturated accents, stable skin or material midtones, sky or neon support color, and disciplined complementary contrast; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: clean lines, strong cel shadow, magic drawn as glowing shapes, monsters stylized with readable silhouettes.",
+      color_and_tone: 'Deep blue stone with torch orange and magic teal.',
       lighting_and_shadow:
-        'Use binary cel shadow, gentle rim, effect glow when requested, broadcast friendly key light, and clean value separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Torch and magic glow in darkness, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render flat cel fills, painted distant plane softness, limited grain, clean ink edges, controlled effect overlays, and low noise finish; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Cel with glowing effect overlays, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose through silhouette-priority framing, moderate dynamic lensing, readable action or emotion lanes, and subject-first depth without required genre staging as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Corridor and chamber frames with depth, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Carry mood through heroic resolve, genre wonder, kinetic focus, gothic pressure, magical uplift, or final episode tenderness guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Tense, adventurous, eerie and exciting, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with premium cel anime clarity with stable anatomy or object structure, crisp lines, denoised color blocks, no fake text, and no 3D render drift; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Bioluminescent rune cues; portal like glow anchors; survival silhouette markers; and moisture rich cavern material signatures; Meikyuu Dungeon Glow anime style cues; Labyrinthine glow anime language with bioluminescent mysticism',
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      key_features: 'torchlight; magic glow; dark stone; stylized monsters',
       creative_brief:
-        'Use Meikyuu Dungeon Glow after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Bioluminescent rune cues, portal like glow anchors, survival silhouette markers, and moisture rich cavern material signatures, Meikyuu Dungeon Glow anime style cues, Labyrinthine glow anime language with bioluminescent mysticism, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Meikyuu Dungeon Glow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -269,28 +253,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Retro Mecha VHS Grain',
     category: '1. Core Anime',
     negativePrompt:
-      'photoreal, ultra clean digital, lowres, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, ultra clean digital, lowres, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Retro Mecha VHS Grain operates as a portable anime-lifestyle router: combine Retro Mecha VHS Grain identity cues through OVA era mechanical silhouette authority; analog artifact signature; scale contrast; and hard lit industrial context; Retro Mecha VHS Grain anime style cues; 90s OVA inspired retro machine language blending analog broadcast nostalgia with core anime character and adventure grammar with cel contour hierarchy, expressive acting, readable silhouette, genre clarity, and clean TV to key visual polish, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Retro mecha VHS anime: 80s-90s cel look with VHS grain, color bleed and hand-painted highlight streaks.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through line-weight hierarchy, pose-first shape design, simplified interior detail, readable costume or surface cues, and emotion-led facial or object emphasis; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: thick line art, cel shading with hand-painted highlight streaks and gradient shadows, then VHS tracking noise over everything.",
       color_and_tone:
-        'Map color through clear cel values, saturated accents, stable skin or material midtones, sky or neon support color, and disciplined complementary contrast; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Faded saturated colors with red and cyan bleed, used consistently across subject and background.',
       lighting_and_shadow:
-        'Use binary cel shadow, gentle rim, effect glow when requested, broadcast friendly key light, and clean value separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Dramatic backlight and explosions, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render flat cel fills, painted distant plane softness, limited grain, clean ink edges, controlled effect overlays, and low noise finish; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'VHS grain, scanlines, cel and paint streaks, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose through silhouette-priority framing, moderate dynamic lensing, readable action or emotion lanes, and subject-first depth without required genre staging as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Dynamic mecha shots and tight cockpit close-ups, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Carry mood through heroic resolve, genre wonder, kinetic focus, gothic pressure, magical uplift, or final episode tenderness guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Nostalgic, dramatic, gritty and bold, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with premium cel anime clarity with stable anatomy or object structure, crisp lines, denoised color blocks, no fake text, and no 3D render drift; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'OVA era mechanical silhouette authority; analog artifact signature; scale contrast; and hard lit industrial context; Retro Mecha VHS Grain anime style cues; 90s OVA inspired retro machine language blending analog broadcast nostalgia',
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      key_features: 'VHS grain; painted highlight streaks; retro cel',
       creative_brief:
-        'Use Retro Mecha VHS Grain after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies OVA era mechanical silhouette authority, analog artifact signature, scale contrast, and hard lit industrial context, Retro Mecha VHS Grain anime style cues, 90s OVA inspired retro machine language blending analog broadcast nostalgia, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Retro Mecha VHS Grain as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -298,28 +281,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ronin Alley Duel',
     category: '1. Core Anime',
     negativePrompt:
-      'photoreal, goofy chibi, modern guns, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, goofy chibi, modern guns, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Ronin Alley Duel operates as a portable anime-lifestyle router: combine Ronin Alley Duel identity cues through Opposition lock silhouettes; rain thread depth cues; blade highlight discipline; and lantern shadow conflict lines; Ronin Alley Duel anime style cues; Ritualized stillness anime language with disciplined minimalism with core anime character and adventure grammar with cel contour hierarchy, expressive acting, readable silhouette, genre clarity, and clean TV to key visual polish, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Ronin duel anime: period samurai frames with long stillness, ink-brush accents and sudden white slash arcs.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through line-weight hierarchy, pose-first shape design, simplified interior detail, readable costume or surface cues, and emotion-led facial or object emphasis; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: sharp restrained lines, faces half in shadow, slashes drawn as white arcs, ink-brush accents in the backgrounds.",
       color_and_tone:
-        'Map color through clear cel values, saturated accents, stable skin or material midtones, sky or neon support color, and disciplined complementary contrast; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Muted indigo, grey and blood red, used consistently across subject and background.',
       lighting_and_shadow:
-        'Use binary cel shadow, gentle rim, effect glow when requested, broadcast friendly key light, and clean value separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Moonlight or lantern light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render flat cel fills, painted distant plane softness, limited grain, clean ink edges, controlled effect overlays, and low noise finish; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
-      camera_and_composition:
-        'Compose through silhouette-priority framing, moderate dynamic lensing, readable action or emotion lanes, and subject-first depth without required genre staging as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Cel with ink-wash backgrounds, visible at card size as the signature of the style.',
+      camera_and_composition: 'Wide standoff frames and extreme close-ups of eyes and hilts.',
       atmosphere_and_mood:
-        'Carry mood through heroic resolve, genre wonder, kinetic focus, gothic pressure, magical uplift, or final episode tenderness guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Tense, still, lethal and poetic, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with premium cel anime clarity with stable anatomy or object structure, crisp lines, denoised color blocks, no fake text, and no 3D render drift; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Opposition lock silhouettes; rain thread depth cues; blade highlight discipline; and lantern shadow conflict lines; Ronin Alley Duel anime style cues; Ritualized stillness anime language with disciplined minimalism',
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      key_features: 'standoff; white slash arcs; ink wash; half-shadow faces',
       creative_brief:
-        'Use Ronin Alley Duel after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Opposition lock silhouettes, rain thread depth cues, blade highlight discipline, and lantern shadow conflict lines, Ronin Alley Duel anime style cues, Ritualized stillness anime language with disciplined minimalism, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ronin Alley Duel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -327,28 +308,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Battle Mage Stormcast',
     category: '1. Core Anime',
     negativePrompt:
-      'photoreal, low contrast, muddy fx, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, low contrast, muddy fx, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Battle Mage Stormcast operates as a portable anime-lifestyle router: combine Battle Mage Stormcast identity cues through Central magic circle architecture; lightning discharge hierarchy; dominant stance geometry; and rune particle choreography; Battle Mage Stormcast anime style cues; Arcane stormcast anime language with elemental authority with core anime character and adventure grammar with cel contour hierarchy, expressive acting, readable silhouette, genre clarity, and clean TV to key visual polish, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Battle mage anime: spell-combat frames with storm magic, layered glowing circles and dynamic casting poses.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through line-weight hierarchy, pose-first shape design, simplified interior detail, readable costume or surface cues, and emotion-led facial or object emphasis; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: dynamic casting poses, flowing robes, layered glowing circles and jagged lightning drawn as bright cel shapes.",
       color_and_tone:
-        'Map color through clear cel values, saturated accents, stable skin or material midtones, sky or neon support color, and disciplined complementary contrast; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Storm blue, violet and electric white, used consistently across subject and background.',
       lighting_and_shadow:
-        'Use binary cel shadow, gentle rim, effect glow when requested, broadcast friendly key light, and clean value separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Magic glow lighting faces from below, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render flat cel fills, painted distant plane softness, limited grain, clean ink edges, controlled effect overlays, and low noise finish; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Cel with bright effect layers and debris, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose through silhouette-priority framing, moderate dynamic lensing, readable action or emotion lanes, and subject-first depth without required genre staging as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Dynamic low and high angles, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Carry mood through heroic resolve, genre wonder, kinetic focus, gothic pressure, magical uplift, or final episode tenderness guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Powerful, dramatic, electric and fierce, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with premium cel anime clarity with stable anatomy or object structure, crisp lines, denoised color blocks, no fake text, and no 3D render drift; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Central magic circle architecture; lightning discharge hierarchy; dominant stance geometry; and rune particle choreography; Battle Mage Stormcast anime style cues; Arcane stormcast anime language with elemental authority',
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      key_features: 'lightning cel shapes; layered circles; casting poses',
       creative_brief:
-        'Use Battle Mage Stormcast after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Central magic circle architecture, lightning discharge hierarchy, dominant stance geometry, and rune particle choreography, Battle Mage Stormcast anime style cues, Arcane stormcast anime language with elemental authority, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Battle Mage Stormcast as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -356,28 +336,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ink Noir Detective',
     category: '1. Core Anime',
     negativePrompt:
-      'photoreal, colorful rainbow, 3d render, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, colorful rainbow, 3d render, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Ink Noir Detective operates as a portable anime-lifestyle router: combine Ink Noir Detective identity cues through Trenchcoat like silhouette authority; central evidence like anchor; striped shadow patterning; and crimson clue emphasis logic; Ink Noir Detective anime style cues; Ink driven anime noir language with psychological austerity with core anime character and adventure grammar with cel contour hierarchy, expressive acting, readable silhouette, genre clarity, and clean TV to key visual polish, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Ink noir detective anime: black-ink shadows, stark white highlights and a single accent color in hard-boiled mystery frames.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through line-weight hierarchy, pose-first shape design, simplified interior detail, readable costume or surface cues, and emotion-led facial or object emphasis; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
-      color_and_tone:
-        'Map color through clear cel values, saturated accents, stable skin or material midtones, sky or neon support color, and disciplined complementary contrast; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: heavy solid black shadows, sharp white highlights, lean angular faces, smoke and rain drawn in ink.",
+      color_and_tone: 'Black and white with one accent color, usually red.',
       lighting_and_shadow:
-        'Use binary cel shadow, gentle rim, effect glow when requested, broadcast friendly key light, and clean value separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Hard single-source light through blinds or a streetlamp, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render flat cel fills, painted distant plane softness, limited grain, clean ink edges, controlled effect overlays, and low noise finish; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Ink fills with light screentone, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose through silhouette-priority framing, moderate dynamic lensing, readable action or emotion lanes, and subject-first depth without required genre staging as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Canted angles and deep shadow frames, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Carry mood through heroic resolve, genre wonder, kinetic focus, gothic pressure, magical uplift, or final episode tenderness guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Moody, suspicious, weary and cool, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with premium cel anime clarity with stable anatomy or object structure, crisp lines, denoised color blocks, no fake text, and no 3D render drift; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Trenchcoat like silhouette authority; central evidence like anchor; striped shadow patterning; and crimson clue emphasis logic; Ink Noir Detective anime style cues; Ink driven anime noir language with psychological austerity',
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      key_features: 'solid black shadows; single accent color; hard light',
       creative_brief:
-        'Use Ink Noir Detective after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Trenchcoat like silhouette authority, central evidence like anchor, striped shadow patterning, and crimson clue emphasis logic, Ink Noir Detective anime style cues, Ink driven anime noir language with psychological austerity, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ink Noir Detective as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -385,28 +363,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Forest Spirit Courier',
     category: '1. Core Anime',
     negativePrompt:
-      'photoreal, dark gore, sci fi neon, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, dark gore, sci fi neon, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Forest Spirit Courier operates as a portable anime-lifestyle router: combine Forest Spirit Courier identity cues through Courier like iconography; spirit companion silhouette cues; path to nature depth rhythm; and letter delivery texture anchors; Forest Spirit Courier anime style cues; Gentle pastoral fantasy anime language with kindness forward adventure with core anime character and adventure grammar with cel contour hierarchy, expressive acting, readable silhouette, genre clarity, and clean TV to key visual polish, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Forest courier anime: gentle hand-drawn frames of young couriers flying or cycling through lush countryside and small towns.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through line-weight hierarchy, pose-first shape design, simplified interior detail, readable costume or surface cues, and emotion-led facial or object emphasis; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
-      color_and_tone:
-        'Map color through clear cel values, saturated accents, stable skin or material midtones, sky or neon support color, and disciplined complementary contrast; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: soft thin lines, rounded friendly faces, careful everyday motion, wind in clothes and grass.",
+      color_and_tone: 'Leaf greens, sky blue, warm cream and red accents.',
       lighting_and_shadow:
-        'Use binary cel shadow, gentle rim, effect glow when requested, broadcast friendly key light, and clean value separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Clear summer daylight with cloud shadows, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render flat cel fills, painted distant plane softness, limited grain, clean ink edges, controlled effect overlays, and low noise finish; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Richly painted watercolor-like backgrounds with soft cel characters, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose through silhouette-priority framing, moderate dynamic lensing, readable action or emotion lanes, and subject-first depth without required genre staging as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Wide sky-and-land frames, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Carry mood through heroic resolve, genre wonder, kinetic focus, gothic pressure, magical uplift, or final episode tenderness guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Gentle, free, hopeful and warm, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with premium cel anime clarity with stable anatomy or object structure, crisp lines, denoised color blocks, no fake text, and no 3D render drift; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Courier like iconography; spirit companion silhouette cues; path to nature depth rhythm; and letter delivery texture anchors; Forest Spirit Courier anime style cues; Gentle pastoral fantasy anime language with kindness forward adventure',
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      key_features: 'wind in grass; painted skies; soft lines; delivery journey',
       creative_brief:
-        'Use Forest Spirit Courier after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Courier like iconography, spirit companion silhouette cues, path to nature depth rhythm, and letter delivery texture anchors, Forest Spirit Courier anime style cues, Gentle pastoral fantasy anime language with kindness forward adventure, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Forest Spirit Courier as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -414,28 +390,199 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Final Episode Closure',
     category: '1. Core Anime',
     negativePrompt:
-      'photoreal, comedy chibi, lowres, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, comedy chibi, lowres, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Final Episode Closure operates as a portable anime-lifestyle router: combine Final Episode Closure identity cues through Backlit silhouette framing; sunset horizon stratification; wind motion line cues; and farewell tone color orchestration; Final Episode Closure anime style cues; Transferable end of season finale anime language with mature reflection with core anime character and adventure grammar with cel contour hierarchy, expressive acting, readable silhouette, genre clarity, and clean TV to key visual polish, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Final episode anime: the soft, emotional look of a series finale, golden light, tears and wide quiet farewells.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through line-weight hierarchy, pose-first shape design, simplified interior detail, readable costume or surface cues, and emotion-led facial or object emphasis; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: gentle expressive faces, glistening eyes, soft lines, lingering held poses.",
       color_and_tone:
-        'Map color through clear cel values, saturated accents, stable skin or material midtones, sky or neon support color, and disciplined complementary contrast; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Warm gold and rose with soft blue, used consistently across subject and background.',
       lighting_and_shadow:
-        'Use binary cel shadow, gentle rim, effect glow when requested, broadcast friendly key light, and clean value separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Golden hour light and lens bloom, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render flat cel fills, painted distant plane softness, limited grain, clean ink edges, controlled effect overlays, and low noise finish; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Soft painted light and particles, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose through silhouette-priority framing, moderate dynamic lensing, readable action or emotion lanes, and subject-first depth without required genre staging as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Wide farewells and intimate close-ups, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Carry mood through heroic resolve, genre wonder, kinetic focus, gothic pressure, magical uplift, or final episode tenderness guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Tender, bittersweet, grateful and final, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with premium cel anime clarity with stable anatomy or object structure, crisp lines, denoised color blocks, no fake text, and no 3D render drift; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Backlit silhouette framing; sunset horizon stratification; wind motion line cues; and farewell tone color orchestration; Final Episode Closure anime style cues; Transferable end of season finale anime language with mature reflection',
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      key_features: 'golden hour; tears; farewell framing',
       creative_brief:
-        'Use Final Episode Closure after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Backlit silhouette framing, sunset horizon stratification, wind motion line cues, and farewell tone color orchestration, Final Episode Closure anime style cues, Transferable end of season finale anime language with mature reflection, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Final Episode Closure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP13-051',
+    name: 'Sky Pirate Airship Anime',
+    displayName: 'Sky Pirate Airship Anime',
+    styleAnchors: ['Sky Pirate Airship Anime', 'airship adventure anime', 'airships'],
+    category: '1. Core Anime',
+    domain: 'airship adventure anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sky pirate anime: swashbuckling airship adventure with wind, clouds, ropes and bright wood-and-brass ships.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: lively poses with ropes and cutlasses, clothes snapping in the wind, detailed ships with patched sails.",
+      color_and_tone: 'Sky blue, cloud white, brass gold and red sails.',
+      lighting_and_shadow:
+        'Bright sun above clouds, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Cel with painted clouds, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Wide sky shots with ships and falling figures, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Adventurous, free, cheeky and bright, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sky Pirate Airship Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'airships; clouds; ropes; cutlasses',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-052',
+    name: 'Cursed Blade Dark Fantasy Anime',
+    displayName: 'Cursed Blade Dark Fantasy Anime',
+    styleAnchors: ['Cursed Blade Dark Fantasy Anime', 'grim sword anime', 'heavy hatching'],
+    category: '1. Core Anime',
+    domain: 'grim sword anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cursed blade dark fantasy anime: grim seinen frames with heavy hatching, black ink shadows and blood-red accents.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: heavy hatching on faces and armor, scarred bodies, massive weapons, grim expressions and ink-black shadows.",
+      color_and_tone:
+        'Desaturated grey, rust brown and blood red, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Grim overcast or firelight, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Cel with hatching and grit, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Low menacing angles, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Grim, desperate, brutal and defiant, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cursed Blade Dark Fantasy Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'heavy hatching; massive blades; blood-red accents',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-053',
+    name: 'Monster Tamer Adventure Anime',
+    displayName: 'Monster Tamer Adventure Anime',
+    styleAnchors: [
+      'Monster Tamer Adventure Anime',
+      'creature companion anime',
+      'creature companions',
+    ],
+    category: '1. Core Anime',
+    domain: 'creature companion anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Monster tamer anime: bright creature-companion adventures with round readable creature designs and energetic kids.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: round readable creatures with simple markings, energetic young tamers, clear action effects.",
+      color_and_tone:
+        'Bright primaries and fresh greens, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Sunny daylight, expressed through the style rather than photographic lighting.',
+      texture_and_material: 'Clean cel, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Dynamic mid shots with creature and tamer, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Energetic, friendly, brave and fun, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Monster Tamer Adventure Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'creature companions; round designs; bright action',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-054',
+    name: 'Mythic Beast-Rider Anime',
+    displayName: 'Mythic Beast-Rider Anime',
+    styleAnchors: ['Mythic Beast-Rider Anime', 'epic mount anime', 'riders'],
+    category: '1. Core Anime',
+    domain: 'epic mount anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Beast-rider anime: epic sky and battle frames of riders on dragons, griffins and giant wolves.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: sweeping poses, flowing manes and wings, riders in light armor, huge creature scale.",
+      color_and_tone:
+        'Sky blues, dragon scale colors and gold, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Dramatic sunset or storm light, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Cel with painted skies, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Wide aerial and low heroic angles, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Epic, free, fierce and noble, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mythic Beast-Rider Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'riders; wings; epic scale',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-055',
+    name: 'Midnight Mountain Racing Anime',
+    displayName: 'Midnight Mountain Racing Anime',
+    styleAnchors: ['Midnight Mountain Racing Anime', 'street racing anime', 'drift smoke'],
+    category: '1. Core Anime',
+    domain: 'street racing anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real car brand, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Midnight mountain racing anime: late-night downhill racing with drifting cars, headlights and speed lines.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: precise car line work, drift smoke, speed lines, driver close-ups with focused eyes.",
+      color_and_tone:
+        'Night blue with headlight white and taillight red, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Headlights and streetlamps, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Cel with speed-line overlays, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Low angles on mountain roads, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Fast, tense, cool and electric, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Midnight Mountain Racing Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'drift smoke; headlights; speed lines',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

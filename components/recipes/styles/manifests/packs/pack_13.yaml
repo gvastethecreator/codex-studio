@@ -24,6 +24,11 @@ categories:
       - pack_13/SP13-017.yaml
       - pack_13/SP13-019.yaml
       - pack_13/SP13-020.yaml
+      - pack_13/SP13-051.yaml
+      - pack_13/SP13-052.yaml
+      - pack_13/SP13-053.yaml
+      - pack_13/SP13-054.yaml
+      - pack_13/SP13-055.yaml
   - id: slice-of-life-school-music
     name: 2. Slice Of Life, School And Music
     presetRefs:
@@ -169,6 +174,11 @@ presetRefs:
   - pack_13/SP13-017.yaml
   - pack_13/SP13-019.yaml
   - pack_13/SP13-020.yaml
+  - pack_13/SP13-051.yaml
+  - pack_13/SP13-052.yaml
+  - pack_13/SP13-053.yaml
+  - pack_13/SP13-054.yaml
+  - pack_13/SP13-055.yaml
   - pack_13/SP13-003.yaml
   - pack_13/SP13-005.yaml
   - pack_13/SP13-013.yaml

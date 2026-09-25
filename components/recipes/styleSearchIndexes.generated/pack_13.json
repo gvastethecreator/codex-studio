@@ -3,7 +3,7 @@
     {
       "id": "pack_13",
       "name": "Anime 02 — Anime Character & Lifestyle",
-      "presetCount": 132
+      "presetCount": 137
     }
   ],
   "presets": [
@@ -186,6 +186,80 @@
       "tags": ["anime-02-anime-character-and-lifestyle", "core-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp13-020 final episode closure 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
+    },
+    {
+      "id": "SP13-051",
+      "name": "Sky Pirate Airship Anime",
+      "styleAnchors": ["Sky Pirate Airship Anime", "airship adventure anime", "airships"],
+      "ref": "pack_13/SP13-051.yaml",
+      "packId": "pack_13",
+      "packName": "Anime 02 — Anime Character & Lifestyle",
+      "categoryId": "core-anime",
+      "categoryName": "1. Core Anime",
+      "domain": "airship adventure anime",
+      "tags": ["anime-02-anime-character-and-lifestyle", "core-anime", "airship-adventure-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-051 sky pirate airship anime airship adventure anime airships 1. core anime cel fundamentals airship adventure anime pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime airship-adventure-anime"
+    },
+    {
+      "id": "SP13-052",
+      "name": "Cursed Blade Dark Fantasy Anime",
+      "styleAnchors": ["Cursed Blade Dark Fantasy Anime", "grim sword anime", "heavy hatching"],
+      "ref": "pack_13/SP13-052.yaml",
+      "packId": "pack_13",
+      "packName": "Anime 02 — Anime Character & Lifestyle",
+      "categoryId": "core-anime",
+      "categoryName": "1. Core Anime",
+      "domain": "grim sword anime",
+      "tags": ["anime-02-anime-character-and-lifestyle", "core-anime", "grim-sword-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-052 cursed blade dark fantasy anime grim sword anime heavy hatching 1. core anime cel fundamentals grim sword anime pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime grim-sword-anime"
+    },
+    {
+      "id": "SP13-053",
+      "name": "Monster Tamer Adventure Anime",
+      "styleAnchors": [
+        "Monster Tamer Adventure Anime",
+        "creature companion anime",
+        "creature companions"
+      ],
+      "ref": "pack_13/SP13-053.yaml",
+      "packId": "pack_13",
+      "packName": "Anime 02 — Anime Character & Lifestyle",
+      "categoryId": "core-anime",
+      "categoryName": "1. Core Anime",
+      "domain": "creature companion anime",
+      "tags": ["anime-02-anime-character-and-lifestyle", "core-anime", "creature-companion-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-053 monster tamer adventure anime creature companion anime creature companions 1. core anime cel fundamentals creature companion anime pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime creature-companion-anime"
+    },
+    {
+      "id": "SP13-054",
+      "name": "Mythic Beast-Rider Anime",
+      "styleAnchors": ["Mythic Beast-Rider Anime", "epic mount anime", "riders"],
+      "ref": "pack_13/SP13-054.yaml",
+      "packId": "pack_13",
+      "packName": "Anime 02 — Anime Character & Lifestyle",
+      "categoryId": "core-anime",
+      "categoryName": "1. Core Anime",
+      "domain": "epic mount anime",
+      "tags": ["anime-02-anime-character-and-lifestyle", "core-anime", "epic-mount-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-054 mythic beast-rider anime epic mount anime riders 1. core anime cel fundamentals epic mount anime pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime epic-mount-anime"
+    },
+    {
+      "id": "SP13-055",
+      "name": "Midnight Mountain Racing Anime",
+      "styleAnchors": ["Midnight Mountain Racing Anime", "street racing anime", "drift smoke"],
+      "ref": "pack_13/SP13-055.yaml",
+      "packId": "pack_13",
+      "packName": "Anime 02 — Anime Character & Lifestyle",
+      "categoryId": "core-anime",
+      "categoryName": "1. Core Anime",
+      "domain": "street racing anime",
+      "tags": ["anime-02-anime-character-and-lifestyle", "core-anime", "street-racing-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-055 midnight mountain racing anime street racing anime drift smoke 1. core anime cel fundamentals street racing anime pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime street-racing-anime"
     },
     {
       "id": "SP13-003",
@@ -1712,5 +1786,5 @@
       "searchableText": "sp05-103 neon hyperpop anime 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     }
   ],
-  "totalPresetCount": 132
+  "totalPresetCount": 137
 }

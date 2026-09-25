@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP13-054
+packId: pack_13
+name: Mythic Beast-Rider Anime
+styleAnchors:
+  - Mythic Beast-Rider Anime
+  - epic mount anime
+  - riders
+displayName: Mythic Beast-Rider Anime
+category: 1. Core Anime
+domain: epic mount anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - core-anime
+  - beast-rider
+  - epic
+  - anime
+visualDna:
+  aesthetic: 'Beast-rider anime: epic sky and battle frames of riders on dragons, griffins and giant wolves.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: sweeping poses, flowing manes and wings, riders in light armor, huge creature scale."
+  color_and_tone: Sky blues, dragon scale colors and gold, used consistently across subject and background.
+  lighting_and_shadow: Dramatic sunset or storm light, expressed through the style rather than photographic lighting.
+  texture_and_material: Cel with painted skies, visible at card size as the signature of the style.
+  camera_and_composition: Wide aerial and low heroic angles, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Epic, free, fierce and noble, driven by the construction, color and rhythm.
+  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mythic Beast-Rider Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: riders; wings; epic scale
+avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: core-anime
+  categoryName: 1. Core Anime
+  tags:
+    - anime-character-and-lifestyle
+    - core-anime
+    - beast-rider
+    - epic
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: epic mount anime
