@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP13-064
+packId: pack_13
+name: Dawn Practice Mist Anime
+styleAnchors:
+  - Dawn Practice Mist Anime
+  - early morning practice anime
+  - mist layers
+displayName: Dawn Practice Mist Anime
+category: 2. Slice Of Life, School And Music
+domain: early morning practice anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - slice-of-life-school-music
+  - dawn
+  - practice
+  - anime
+visualDna:
+  aesthetic: 'Dawn practice anime: cold blue early mornings, mist on fields, breath and determined solitary training.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: focused determined faces, repeated practice poses, mist drawn in soft layers."
+  color_and_tone: Cold blue-grey with the first pale gold on the horizon.
+  lighting_and_shadow: Pre-dawn blue light turning gold, expressed through the style rather than photographic lighting.
+  texture_and_material: Cel with soft mist layers, visible at card size as the signature of the style.
+  camera_and_composition: Wide lonely frames with small figures, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Determined, lonely, quiet and hopeful, driven by the construction, color and rhythm.
+  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dawn Practice Mist Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: mist layers; pre-dawn blue; solitary practice
+avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: slice-of-life-school-music
+  categoryName: 2. Slice Of Life, School And Music
+  tags:
+    - anime-character-and-lifestyle
+    - slice-of-life-school-music
+    - dawn
+    - practice
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: early morning practice anime

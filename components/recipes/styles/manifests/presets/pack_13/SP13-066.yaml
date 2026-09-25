@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP13-066
+packId: pack_13
+name: Late Train Window Anime
+styleAnchors:
+  - Late Train Window Anime
+  - night train melancholy anime
+  - window reflections
+displayName: Late Train Window Anime
+category: 2. Slice Of Life, School And Music
+domain: night train melancholy anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - slice-of-life-school-music
+  - train
+  - night
+  - anime
+visualDna:
+  aesthetic: 'Late train anime: night commuter frames with window reflections, passing lights and tired quiet passengers.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: still tired poses, reflections layered over faces, streaked passing lights."
+  color_and_tone: Deep blue night, fluorescent green-white and warm passing lights.
+  lighting_and_shadow: Train interior light and passing streetlights, expressed through the style rather than photographic lighting.
+  texture_and_material: Cel with reflective glass layers, visible at card size as the signature of the style.
+  camera_and_composition: Seat-level frames through windows, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Melancholic, tired, reflective and quiet, driven by the construction, color and rhythm.
+  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Late Train Window Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: window reflections; streaked lights; tired passengers
+avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: slice-of-life-school-music
+  categoryName: 2. Slice Of Life, School And Music
+  tags:
+    - anime-character-and-lifestyle
+    - slice-of-life-school-music
+    - train
+    - night
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: night train melancholy anime

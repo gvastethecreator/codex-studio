@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP13-062
+packId: pack_13
+name: Classical Recital Hush Anime
+styleAnchors:
+  - Classical Recital Hush Anime
+  - classical music anime
+  - polished instruments
+displayName: Classical Recital Hush Anime
+category: 2. Slice Of Life, School And Music
+domain: classical music anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - slice-of-life-school-music
+  - recital
+  - classical
+  - anime
+visualDna:
+  aesthetic: 'Classical recital anime: hushed concert-hall frames, polished instruments, soft spotlight and suspended breath.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: elegant restrained lines, precise hands on instruments, formal clothing."
+  color_and_tone: Deep wood browns, black, cream and gold, used consistently across subject and background.
+  lighting_and_shadow: Soft spotlight in a dark hall, expressed through the style rather than photographic lighting.
+  texture_and_material: Cel with polished reflections, visible at card size as the signature of the style.
+  camera_and_composition: Stage framing, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Hushed, elegant, intense and emotional, driven by the construction, color and rhythm.
+  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Classical Recital Hush Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: polished instruments; spotlight; hush
+avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: slice-of-life-school-music
+  categoryName: 2. Slice Of Life, School And Music
+  tags:
+    - anime-character-and-lifestyle
+    - slice-of-life-school-music
+    - recital
+    - classical
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: classical music anime

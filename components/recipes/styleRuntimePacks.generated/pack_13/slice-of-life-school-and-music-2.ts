@@ -8,28 +8,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Soft Shojo Spring',
     category: '2. Slice Of Life, School And Music',
     negativePrompt:
-      'photoreal, gritty, horror, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, gritty, horror, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Soft Shojo Spring operates as a portable anime-lifestyle router: combine Soft Shojo Spring identity cues through Expressive focal hierarchy; pastel harmony discipline; floating petal motion cues; fine contour elegance; and intimacy first composition; Soft Shojo Spring anime style cues with slice of life school and music grammar with soft social acting, weathered everyday light, gentle performance rhythm, and intimate mundane storytelling, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Soft shojo spring anime: airy pastel frames with fine elegant lines, sparkling eyes and drifting petals.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through microgesture acting, soft contour, posture pauses, everyday prop restraint, textile simplicity, and emotion carried by spacing rather than spectacle; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: fine thin contours, tall slender figures, large glossy eyes with many highlights, petals and light sparkles drifting through the frame.",
       color_and_tone:
-        'Map color through rain blue, spring pink, warm cream, muted uniform or casual neutrals, stage amber, soft daylight, and restrained accent color; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Pastel pink, mint, cream and pale sky blue, used consistently across subject and background.',
       lighting_and_shadow:
-        'Use window diffusion, rain reflection, lantern or stage glow, soft bounce, pastel rim, and low contrast emotional separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
-      texture_and_material:
-        'Render matte paper like backgrounds, crisp textile softness, umbrella sheen, instrument gloss when requested, dessert warmth, and low noise painted surfaces; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
-      camera_and_composition:
-        'Compose through near-but-not-touching spacing, quiet inserts, performance beats, seasonal framing, and open everyday depth without classroom or venue dependency as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Soft diffused spring daylight with gentle bloom, expressed through the style rather than photographic lighting.',
+      texture_and_material: 'Light cel with soft painted gradients and screentone-like sparkle.',
+      camera_and_composition: 'Intimate close and mid shots with lots of air.',
       atmosphere_and_mood:
-        'Carry mood through gentle longing, shy warmth, quiet comedy, festival nostalgia, backstage nerves, soft friendship, and sincere ordinary wonder; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Tender, hopeful, shy and dreamy, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with clean slice of life anime finish with subtle bloom, controlled softness, readable expressions, no fake signage, and no photographic realism; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Expressive focal hierarchy; pastel harmony discipline; floating petal motion cues; fine contour elegance; and intimacy first composition; Soft Shojo Spring anime style cues',
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      key_features: 'fine lines; sparkling eyes; drifting petals; pastel bloom',
       creative_brief:
-        'Use Soft Shojo Spring after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Expressive focal hierarchy, pastel harmony discipline, floating petal motion cues, fine contour elegance, and intimacy first composition, Soft Shojo Spring anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soft Shojo Spring as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,57 +34,57 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rainy Slice of Life',
     category: '2. Slice Of Life, School And Music',
     negativePrompt:
-      'photoreal, action chaos, neon heavy, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, action chaos, neon heavy, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Rainy Slice of Life operates as a portable anime-lifestyle router: combine Rainy Slice of Life identity cues through Rain laced glazing cues; understated micro expression; everyday prop simplicity; and soft tonal transitions; Rainy Slice of Life anime style cues; Intimate slice of life anime language with rainy day melancholy with slice of life school and music grammar with soft social acting, weathered everyday light, gentle performance rhythm, and intimate mundane storytelling, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Rainy slice of life anime: quiet everyday frames with rain on glass, muted color and small gestures.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through microgesture acting, soft contour, posture pauses, everyday prop restraint, textile simplicity, and emotion carried by spacing rather than spectacle; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: restrained expressions, small hand gestures, detailed rain drops on glass and puddles, simple clean lines.",
       color_and_tone:
-        'Map color through rain blue, spring pink, warm cream, muted uniform or casual neutrals, stage amber, soft daylight, and restrained accent color; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Muted blue-grey with warm interior amber, used consistently across subject and background.',
       lighting_and_shadow:
-        'Use window diffusion, rain reflection, lantern or stage glow, soft bounce, pastel rim, and low contrast emotional separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Overcast daylight or warm indoor lamps against rain, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render matte paper like backgrounds, crisp textile softness, umbrella sheen, instrument gloss when requested, dessert warmth, and low noise painted surfaces; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Painted rain streaks, droplets and wet reflections, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose through near-but-not-touching spacing, quiet inserts, performance beats, seasonal framing, and open everyday depth without classroom or venue dependency as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Framed through windows and doorways, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Carry mood through gentle longing, shy warmth, quiet comedy, festival nostalgia, backstage nerves, soft friendship, and sincere ordinary wonder; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Calm, reflective, lonely and cozy, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with clean slice of life anime finish with subtle bloom, controlled softness, readable expressions, no fake signage, and no photographic realism; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Rain laced glazing cues; understated micro expression; everyday prop simplicity; and soft tonal transitions; Rainy Slice of Life anime style cues; Intimate slice of life anime language with rainy day melancholy',
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      key_features: 'rain on glass; muted palette; small gestures; warm interiors',
       creative_brief:
-        'Use Rainy Slice of Life after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Rain laced glazing cues, understated micro expression, everyday prop simplicity, and soft tonal transitions, Rainy Slice of Life anime style cues, Intimate slice of life anime language with rainy day melancholy, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rainy Slice of Life as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP13-013',
-    name: 'Rainy Idol Backstage',
+    name: 'Backstage Nerves Anime',
+    displayName: 'Backstage Nerves Anime',
+    styleAnchors: ['Backstage Nerves Anime'],
     category: '2. Slice Of Life, School And Music',
     negativePrompt:
-      'photoreal, gritty horror, low detail, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, gritty horror, low detail, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Rainy Idol Backstage operates as a portable anime-lifestyle router: combine Rainy Idol Backstage identity cues through Backstage like light rhythm; pre stage expression anchor; readiness cues; and rain muted contrast; Rainy Idol Backstage anime style cues; Pre performance slice of life anime language with emotional intimacy with slice of life school and music grammar with soft social acting, weathered everyday light, gentle performance rhythm, and intimate mundane storytelling, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Backstage nerves anime: the look of the minutes before a performance, dim wings, mirror bulbs and a slice of stage light.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through microgesture acting, soft contour, posture pauses, everyday prop restraint, textile simplicity, and emotion carried by spacing rather than spectacle; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: tight faces and hands, small nervous gestures, costumes half-done, the stage glimpsed as a bright strip.",
       color_and_tone:
-        'Map color through rain blue, spring pink, warm cream, muted uniform or casual neutrals, stage amber, soft daylight, and restrained accent color; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Dim backstage browns with mirror-bulb warm white and stage-light color spill.',
       lighting_and_shadow:
-        'Use window diffusion, rain reflection, lantern or stage glow, soft bounce, pastel rim, and low contrast emotional separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Mirror bulbs and stage light leaking through curtains, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render matte paper like backgrounds, crisp textile softness, umbrella sheen, instrument gloss when requested, dessert warmth, and low noise painted surfaces; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Cel with soft glow and dust in light, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose through near-but-not-touching spacing, quiet inserts, performance beats, seasonal framing, and open everyday depth without classroom or venue dependency as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Close framing among curtains, cables and mirrors, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Carry mood through gentle longing, shy warmth, quiet comedy, festival nostalgia, backstage nerves, soft friendship, and sincere ordinary wonder; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Nervous, private, hopeful and tense, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with clean slice of life anime finish with subtle bloom, controlled softness, readable expressions, no fake signage, and no photographic realism; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Backstage like light rhythm; pre stage expression anchor; readiness cues; and rain muted contrast; Rainy Idol Backstage anime style cues; Pre performance slice of life anime language with emotional intimacy',
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      key_features: 'mirror bulbs; stage light strip; nervous hands',
       creative_brief:
-        'Use Rainy Idol Backstage after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Backstage like light rhythm, pre stage expression anchor, readiness cues, and rain muted contrast, Rainy Idol Backstage anime style cues, Pre performance slice of life anime language with emotional intimacy, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Backstage Nerves Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +92,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Dessert Cafe Comedy',
     category: '2. Slice Of Life, School And Music',
     negativePrompt:
-      'photoreal, horror, dark gritty, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, horror, dark gritty, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Dessert Cafe Comedy operates as a portable anime-lifestyle router: combine Dessert Cafe Comedy identity cues through Sweet centerpiece framing; comedic expression timing cues; warm comfort prop language; and soft convivial color rhythm; Dessert Cafe Comedy anime style cues; Feel good confection comedy anime language with warm slice of life softness with slice of life school and music grammar with soft social acting, weathered everyday light, gentle performance rhythm, and intimate mundane storytelling, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Dessert cafe comedy anime: warm, sugary comedic frames with glossy desserts and big reaction faces.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through microgesture acting, soft contour, posture pauses, everyday prop restraint, textile simplicity, and emotion carried by spacing rather than spectacle; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: rounded friendly designs, exaggerated reaction faces, chibi moments, glossy dessert close-ups.",
       color_and_tone:
-        'Map color through rain blue, spring pink, warm cream, muted uniform or casual neutrals, stage amber, soft daylight, and restrained accent color; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Cream, strawberry pink, caramel and mint, used consistently across subject and background.',
       lighting_and_shadow:
-        'Use window diffusion, rain reflection, lantern or stage glow, soft bounce, pastel rim, and low contrast emotional separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Warm cozy cafe light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render matte paper like backgrounds, crisp textile softness, umbrella sheen, instrument gloss when requested, dessert warmth, and low noise painted surfaces; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Soft cel with glossy dessert highlights, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose through near-but-not-touching spacing, quiet inserts, performance beats, seasonal framing, and open everyday depth without classroom or venue dependency as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Table-level framing with desserts in the foreground, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Carry mood through gentle longing, shy warmth, quiet comedy, festival nostalgia, backstage nerves, soft friendship, and sincere ordinary wonder; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Sweet, silly, cozy and cheerful, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with clean slice of life anime finish with subtle bloom, controlled softness, readable expressions, no fake signage, and no photographic realism; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Sweet centerpiece framing; comedic expression timing cues; warm comfort prop language; and soft convivial color rhythm; Dessert Cafe Comedy anime style cues; Feel good confection comedy anime language with warm slice of life softness',
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      key_features: 'glossy desserts; reaction faces; warm light',
       creative_brief:
-        'Use Dessert Cafe Comedy after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Sweet centerpiece framing, comedic expression timing cues, warm comfort prop language, and soft convivial color rhythm, Dessert Cafe Comedy anime style cues, Feel good confection comedy anime language with warm slice of life softness, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dessert Cafe Comedy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +120,526 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Festival Lantern Summer',
     category: '2. Slice Of Life, School And Music',
     negativePrompt:
-      'photoreal, bleak horror, low detail, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, bleak horror, low detail, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Festival Lantern Summer operates as a portable anime-lifestyle router: combine Festival Lantern Summer identity cues through Lantern string cadence; flowing silhouette motifs; distant shimmer accents; and shared gesture emotional anchors; Festival Lantern Summer anime style cues; Lantern summer slice of life anime language with flowing elegance with slice of life school and music grammar with soft social acting, weathered everyday light, gentle performance rhythm, and intimate mundane storytelling, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Festival lantern summer anime: warm summer-night frames with rows of lanterns, yukata-like robes and firefly glow.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through microgesture acting, soft contour, posture pauses, everyday prop restraint, textile simplicity, and emotion carried by spacing rather than spectacle; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: soft lines, flowing robes and sleeves, faces lit warmly from lanterns, fireworks drawn as soft bursts.",
       color_and_tone:
-        'Map color through rain blue, spring pink, warm cream, muted uniform or casual neutrals, stage amber, soft daylight, and restrained accent color; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Lantern orange, deep indigo night and firework colors, used consistently across subject and background.',
       lighting_and_shadow:
-        'Use window diffusion, rain reflection, lantern or stage glow, soft bounce, pastel rim, and low contrast emotional separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Lantern and firework light on faces, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render matte paper like backgrounds, crisp textile softness, umbrella sheen, instrument gloss when requested, dessert warmth, and low noise painted surfaces; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Cel with bokeh lantern glows, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose through near-but-not-touching spacing, quiet inserts, performance beats, seasonal framing, and open everyday depth without classroom or venue dependency as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Crowd-level frames with lanterns receding, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        'Carry mood through gentle longing, shy warmth, quiet comedy, festival nostalgia, backstage nerves, soft friendship, and sincere ordinary wonder; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Nostalgic, warm, romantic and fleeting, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with clean slice of life anime finish with subtle bloom, controlled softness, readable expressions, no fake signage, and no photographic realism; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Lantern string cadence; flowing silhouette motifs; distant shimmer accents; and shared gesture emotional anchors; Festival Lantern Summer anime style cues; Lantern summer slice of life anime language with flowing elegance',
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      key_features: 'lantern rows; fireworks; warm faces; summer night',
       creative_brief:
-        'Use Festival Lantern Summer after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Lantern string cadence, flowing silhouette motifs, distant shimmer accents, and shared gesture emotional anchors, Festival Lantern Summer anime style cues, Lantern summer slice of life anime language with flowing elegance, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Festival Lantern Summer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP13-056',
+    name: 'Concert Spotlight Anime',
+    displayName: 'Concert Spotlight Anime',
+    styleAnchors: ['Concert Spotlight Anime', 'live performance anime', 'spotlights'],
+    category: '2. Slice Of Life, School And Music',
+    domain: 'live performance anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Concert spotlight anime: live-performance frames with blazing spotlights, lens flares, sweat and silhouetted crowds.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: dynamic performing poses, flying sweat and hair, instruments drawn precisely, crowd as silhouettes with raised hands.",
+      color_and_tone: 'Saturated stage colors: magenta, blue and gold against black.',
+      lighting_and_shadow:
+        'Spotlights, backlight and lens flares, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Cel with glow, haze and flare overlays, visible at card size as the signature of the style.',
+      camera_and_composition: 'Low angle from the crowd or wide from behind the band.',
+      atmosphere_and_mood:
+        'Euphoric, loud, sweaty and alive, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Concert Spotlight Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'spotlights; lens flares; sweat; crowd silhouettes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-057',
+    name: 'Afterschool Golden Hour Anime',
+    displayName: 'Afterschool Golden Hour Anime',
+    styleAnchors: ['Afterschool Golden Hour Anime', 'late afternoon light anime', 'orange shafts'],
+    category: '2. Slice Of Life, School And Music',
+    domain: 'late afternoon light anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Afterschool golden hour anime: long orange light through windows, dust motes and long shadows at the end of the day.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: simple quiet poses, long cast shadows, window frames and silhouettes against the light.",
+      color_and_tone:
+        'Deep orange and amber with violet shadows, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Low sun through windows with bright shafts, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Cel with painted light shafts and floating dust, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Wide still frames with strong window geometry, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Nostalgic, bittersweet, quiet and warm, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Afterschool Golden Hour Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'orange shafts; long shadows; dust motes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-058',
+    name: 'Winter Breath Quiet Anime',
+    displayName: 'Winter Breath Quiet Anime',
+    styleAnchors: ['Winter Breath Quiet Anime', 'winter slice of life anime', 'visible breath'],
+    category: '2. Slice Of Life, School And Music',
+    domain: 'winter slice of life anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Winter breath anime: hushed snowy frames with visible breath, red noses, scarves and pale blue light.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: soft lines, bundled clothes, visible breath clouds, rosy cheeks and falling snow.",
+      color_and_tone:
+        'Pale blue, white and a warm red accent, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Soft overcast snow light, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Cel with painted snow and soft glow, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Quiet mid shots with snow falling, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Hushed, tender, cold and cozy, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Winter Breath Quiet Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'visible breath; scarves; falling snow',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-059',
+    name: 'Night Study Lamp Anime',
+    displayName: 'Night Study Lamp Anime',
+    styleAnchors: ['Night Study Lamp Anime', 'late-night study anime', 'lamp pool'],
+    category: '2. Slice Of Life, School And Music',
+    domain: 'late-night study anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Night study lamp anime: small pools of warm desk light in dark rooms, tired eyes and late-night focus.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: tired soft faces, messy hair, hands with pens, cluttered desks drawn in detail.",
+      color_and_tone:
+        'Warm lamp yellow in deep blue darkness, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Single desk lamp pool of light, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Cel with soft glow, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Close desk framing, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Quiet, tired, focused and intimate, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Night Study Lamp Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'lamp pool; darkness; tired focus',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-060',
+    name: 'Nineties School Cel Nostalgia',
+    displayName: 'Nineties School Cel Nostalgia',
+    styleAnchors: ['Nineties School Cel Nostalgia', '90s cel anime look', 'film grain'],
+    category: '2. Slice Of Life, School And Music',
+    domain: '90s cel anime look',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        '90s cel anime: hand-painted cel look with muted palette, slightly soft film grain and classic character proportions.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: classic 90s proportions, thin lines, hard two-tone cel shadows and slightly soft film transfer.",
+      color_and_tone:
+        'Muted pastels with film warmth, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Soft film light, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Film grain and cel paint, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Classic TV framing, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Nostalgic, warm, simple and sincere, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Nineties School Cel Nostalgia as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'film grain; muted cel; 90s proportions',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-061',
+    name: 'Garage Band Grit Anime',
+    displayName: 'Garage Band Grit Anime',
+    styleAnchors: ['Garage Band Grit Anime', 'rough rock band anime', 'rough lines'],
+    category: '2. Slice Of Life, School And Music',
+    domain: 'rough rock band anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Garage band anime: raw, energetic frames with rough lines, amp glow, sweat and cramped rehearsal spaces.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: rough energetic lines, loose expressive faces, instruments slightly distorted by motion.",
+      color_and_tone:
+        'Grimy greys with amp red and bulb yellow, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Bare bulb and amp glow, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Rough cel with grain, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Cramped low angles, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Raw, loud, messy and passionate, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Garage Band Grit Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'rough lines; amp glow; sweat',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-062',
+    name: 'Classical Recital Hush Anime',
+    displayName: 'Classical Recital Hush Anime',
+    styleAnchors: ['Classical Recital Hush Anime', 'classical music anime', 'polished instruments'],
+    category: '2. Slice Of Life, School And Music',
+    domain: 'classical music anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Classical recital anime: hushed concert-hall frames, polished instruments, soft spotlight and suspended breath.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: elegant restrained lines, precise hands on instruments, formal clothing.",
+      color_and_tone:
+        'Deep wood browns, black, cream and gold, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Soft spotlight in a dark hall, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Cel with polished reflections, visible at card size as the signature of the style.',
+      camera_and_composition: 'Stage framing, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Hushed, elegant, intense and emotional, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Classical Recital Hush Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'polished instruments; spotlight; hush',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-063',
+    name: 'Seaside Summer Haze Anime',
+    displayName: 'Seaside Summer Haze Anime',
+    styleAnchors: ['Seaside Summer Haze Anime', 'summer seaside anime', 'cumulus towers'],
+    category: '2. Slice Of Life, School And Music',
+    domain: 'summer seaside anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Seaside summer haze anime: saturated blue skies, towering cumulus clouds, heat shimmer and bright white light.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: clean simple lines, sun-squinting faces, sweat beads, hair and shirts moving in sea wind.",
+      color_and_tone: 'Saturated cobalt sky, white clouds, sea teal and sun-bleached colors.',
+      lighting_and_shadow: 'Harsh midday sun with heat haze and deep short shadows.',
+      texture_and_material:
+        'Cel with painted clouds and shimmer, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Wide horizon frames with big sky, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Free, lazy, nostalgic and bright, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Seaside Summer Haze Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'cumulus towers; heat haze; cobalt sky; sea wind',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-064',
+    name: 'Dawn Practice Mist Anime',
+    displayName: 'Dawn Practice Mist Anime',
+    styleAnchors: ['Dawn Practice Mist Anime', 'early morning practice anime', 'mist layers'],
+    category: '2. Slice Of Life, School And Music',
+    domain: 'early morning practice anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Dawn practice anime: cold blue early mornings, mist on fields, breath and determined solitary training.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: focused determined faces, repeated practice poses, mist drawn in soft layers.",
+      color_and_tone: 'Cold blue-grey with the first pale gold on the horizon.',
+      lighting_and_shadow:
+        'Pre-dawn blue light turning gold, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Cel with soft mist layers, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Wide lonely frames with small figures, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Determined, lonely, quiet and hopeful, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dawn Practice Mist Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'mist layers; pre-dawn blue; solitary practice',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-065',
+    name: 'Rooftop Wind Anime',
+    displayName: 'Rooftop Wind Anime',
+    styleAnchors: ['Rooftop Wind Anime', 'wind and sky anime', 'windblown cloth'],
+    category: '2. Slice Of Life, School And Music',
+    domain: 'wind and sky anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Rooftop wind anime: sky-dominated frames with strong wind, flapping clothes and hair, and sweeping clouds.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: dynamic windblown hair and cloth, open body poses, speed of clouds drawn with long strokes.",
+      color_and_tone: 'Bright sky blue and white with small warm accents.',
+      lighting_and_shadow:
+        'Clear daylight with fast cloud shadows, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Cel with painted streaking clouds, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Low angles with most of the frame sky, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Free, restless, open and youthful, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rooftop Wind Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'windblown cloth; big sky; streaking clouds',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-066',
+    name: 'Late Train Window Anime',
+    displayName: 'Late Train Window Anime',
+    styleAnchors: ['Late Train Window Anime', 'night train melancholy anime', 'window reflections'],
+    category: '2. Slice Of Life, School And Music',
+    domain: 'night train melancholy anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Late train anime: night commuter frames with window reflections, passing lights and tired quiet passengers.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: still tired poses, reflections layered over faces, streaked passing lights.",
+      color_and_tone: 'Deep blue night, fluorescent green-white and warm passing lights.',
+      lighting_and_shadow:
+        'Train interior light and passing streetlights, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Cel with reflective glass layers, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Seat-level frames through windows, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Melancholic, tired, reflective and quiet, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Late Train Window Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'window reflections; streaked lights; tired passengers',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-067',
+    name: 'Soft Focus Letter Anime',
+    displayName: 'Soft Focus Letter Anime',
+    styleAnchors: ['Soft Focus Letter Anime', 'soft focus romantic anime', 'bokeh'],
+    category: '2. Slice Of Life, School And Music',
+    domain: 'soft focus romantic anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Soft focus anime: dreamy frames with shallow depth, glowing bokeh and gentle blur, like remembered moments.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: sharp focus on one small detail (hands, a letter, eyes) with everything else melting into bokeh.",
+      color_and_tone:
+        'Soft creams, rose and pale gold, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Backlit glow with bokeh circles, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Cel with blur and glow layers, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Very shallow depth close-ups, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Tender, nostalgic, dreamy and intimate, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soft Focus Letter Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'bokeh; shallow focus; glowing backlight',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-068',
+    name: 'Club Room Clutter Comedy',
+    displayName: 'Club Room Clutter Comedy',
+    styleAnchors: ['Club Room Clutter Comedy', 'cluttered comedy anime', 'dense clutter'],
+    category: '2. Slice Of Life, School And Music',
+    domain: 'cluttered comedy anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Club room clutter comedy: dense, busy frames packed with props, posters and chaotic group reactions.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: dense background detail, chibi reactions, comedic sweat drops and exaggerated poses.",
+      color_and_tone:
+        'Busy colorful props with warm light, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Flat warm light, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Cel with dense line detail, visible at card size as the signature of the style.',
+      camera_and_composition: 'Wide busy frames, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Chaotic, silly, cozy and lively, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Club Room Clutter Comedy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'dense clutter; chibi reactions; group chaos',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-069',
+    name: 'Library Sunbeam Quiet Anime',
+    displayName: 'Library Sunbeam Quiet Anime',
+    styleAnchors: ['Library Sunbeam Quiet Anime', 'quiet library light anime', 'sun shafts'],
+    category: '2. Slice Of Life, School And Music',
+    domain: 'quiet library light anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Library sunbeam anime: hushed frames with shafts of sun, floating dust and quiet readers.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: quiet relaxed poses, turning pages, soft lines.",
+      color_and_tone:
+        'Warm wood, cream and dusty gold, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Shafts of sun through high windows, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Cel with painted light shafts and dust, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Tall frames with shelves and beams, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Quiet, peaceful, studious and warm, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Library Sunbeam Quiet Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'sun shafts; dust motes; quiet readers',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-070',
+    name: 'Choir Harmony Light Anime',
+    displayName: 'Choir Harmony Light Anime',
+    styleAnchors: ['Choir Harmony Light Anime', 'choir anime', 'rows'],
+    category: '2. Slice Of Life, School And Music',
+    domain: 'choir anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Choir harmony anime: rows of singers bathed in soft light, open mouths, uplifted faces and warm glow.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: uplifted faces, open mouths, rows of figures, soft lines.",
+      color_and_tone:
+        'Warm cream and gold with soft blue, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Soft glow from above, expressed through the style rather than photographic lighting.',
+      texture_and_material: 'Cel with glow, visible at card size as the signature of the style.',
+      camera_and_composition: 'Rows of singers, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Uplifting, warm, together and moving, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Choir Harmony Light Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'rows; uplifted faces; soft glow',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

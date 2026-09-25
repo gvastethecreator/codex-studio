@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP13-056
+packId: pack_13
+name: Concert Spotlight Anime
+styleAnchors:
+  - Concert Spotlight Anime
+  - live performance anime
+  - spotlights
+displayName: Concert Spotlight Anime
+category: 2. Slice Of Life, School And Music
+domain: live performance anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - slice-of-life-school-music
+  - concert
+  - stage-light
+  - anime
+visualDna:
+  aesthetic: 'Concert spotlight anime: live-performance frames with blazing spotlights, lens flares, sweat and silhouetted crowds.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: dynamic performing poses, flying sweat and hair, instruments drawn precisely, crowd as silhouettes with raised hands."
+  color_and_tone: 'Saturated stage colors: magenta, blue and gold against black.'
+  lighting_and_shadow: Spotlights, backlight and lens flares, expressed through the style rather than photographic lighting.
+  texture_and_material: Cel with glow, haze and flare overlays, visible at card size as the signature of the style.
+  camera_and_composition: Low angle from the crowd or wide from behind the band.
+  atmosphere_and_mood: Euphoric, loud, sweaty and alive, driven by the construction, color and rhythm.
+  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Concert Spotlight Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: spotlights; lens flares; sweat; crowd silhouettes
+avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: slice-of-life-school-music
+  categoryName: 2. Slice Of Life, School And Music
+  tags:
+    - anime-character-and-lifestyle
+    - slice-of-life-school-music
+    - concert
+    - stage-light
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: live performance anime

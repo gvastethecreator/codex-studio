@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP13-013
 packId: pack_13
-name: Rainy Idol Backstage
+name: Backstage Nerves Anime
 category: 2. Slice Of Life, School And Music
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,61 +13,22 @@ tags:
   - anime
   - slice-of-life
 visualDna:
-  aesthetic: >-
-    Rainy Idol Backstage operates as a portable anime-lifestyle router: combine Rainy Idol Backstage
-    identity cues through Backstage like light rhythm; pre stage expression anchor; readiness cues;
-    and rain muted contrast; Rainy Idol Backstage anime style cues; Pre performance slice of life
-    anime language with emotional intimacy with slice of life school and music grammar with soft
-    social acting, weathered everyday light, gentle performance rhythm, and intimate mundane
-    storytelling, so the preset supplies anime style behavior after prompt X rather than a required
-    scene, character, franchise image, or card composition.
-  subject_treatment: >-
-    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
-    microgesture acting, soft contour, posture pauses, everyday prop restraint, textile simplicity,
-    and emotion carried by spacing rather than spectacle; subjects may be characters, creatures,
-    objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.
-  color_and_tone: >-
-    Map color through rain blue, spring pink, warm cream, muted uniform or casual neutrals, stage
-    amber, soft daylight, and restrained accent color; keep cel values readable, accent roles
-    intentional, skin or material midtones stable, and palette behavior attached to the prompt
-    instead of pasted anime decoration.
-  lighting_and_shadow: >-
-    Use window diffusion, rain reflection, lantern or stage glow, soft bounce, pastel rim, and low
-    contrast emotional separation; lighting should clarify expression, silhouette, material, and
-    emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
-  texture_and_material: >-
-    Render matte paper like backgrounds, crisp textile softness, umbrella sheen, instrument gloss
-    when requested, dessert warmth, and low noise painted surfaces; keep line, paint, textile,
-    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
-    surface chatter.
-  camera_and_composition: >-
-    Compose through near-but-not-touching spacing, quiet inserts, performance beats, seasonal
-    framing, and open everyday depth without classroom or venue dependency as reusable anime framing
-    grammar, allowing close acting, objects, performances, action, environments, or abstract prompts
-    without one required pose or location.
-  atmosphere_and_mood: >-
-    Carry mood through gentle longing, shy warmth, quiet comedy, festival nostalgia, backstage
-    nerves, soft friendship, and sincere ordinary wonder; the preset can become cute, sensual,
-    severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its
-    anime lineage.
-  rendering_and_quality: >-
-    Finish with clean slice of life anime finish with subtle bloom, controlled softness, readable
-    expressions, no fake signage, and no photographic realism; prioritize stable anatomy or object
-    structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no
-    generic AI anime gloss.
-  key_features: >-
-    Backstage like light rhythm; pre stage expression anchor; readiness cues; and rain muted
-    contrast; Rainy Idol Backstage anime style cues; Pre performance slice of life anime language
-    with emotional intimacy
-  creative_brief: >-
-    Use Rainy Idol Backstage after prompt X as a transferable anime character/lifestyle layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies
-    Backstage like light rhythm, pre stage expression anchor, readiness cues, and rain muted
-    contrast, Rainy Idol Backstage anime style cues, Pre performance slice of life anime language
-    with emotional intimacy, color logic, lighting, material finish, composition rhythm, mood
-    pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle,
-    title screenshot, or sample-card composition.
+  aesthetic: 'Backstage nerves anime: the look of the minutes before a performance, dim wings, mirror bulbs and a slice of stage light.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: tight faces and hands, small nervous gestures, costumes half-done, the stage glimpsed as a bright strip."
+  color_and_tone: Dim backstage browns with mirror-bulb warm white and stage-light color spill.
+  lighting_and_shadow: Mirror bulbs and stage light leaking through curtains, expressed through the style rather than photographic lighting.
+  texture_and_material: Cel with soft glow and dust in light, visible at card size as the signature of the style.
+  camera_and_composition: Close framing among curtains, cables and mirrors, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Nervous, private, hopeful and tense, driven by the construction, color and rhythm.
+  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
+  key_features: mirror bulbs; stage light strip; nervous hands
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Backstage Nerves Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
   - photoreal
   - gritty horror
   - low detail
@@ -83,16 +44,15 @@ avoidRules:
   - fixed anime cast
   - generic anime filter
   - prompt literal card reuse
-  - readable text
   - fake UI
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-013.webp
 attributes:
-  negativePrompt: >-
-    photoreal, gritty horror, low detail, watermark, text, logo, classroom dependency, idol stage
-    dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card
-    setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake
-    UI, photoreal cosplay, 3D render look, copied franchise costume, signature
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, gritty horror, low detail, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -107,3 +67,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Backstage Nerves Anime
+styleAnchors:
+  - Backstage Nerves Anime

@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP13-070
+packId: pack_13
+name: Choir Harmony Light Anime
+styleAnchors:
+  - Choir Harmony Light Anime
+  - choir anime
+  - rows
+displayName: Choir Harmony Light Anime
+category: 2. Slice Of Life, School And Music
+domain: choir anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - slice-of-life-school-music
+  - choir
+  - music
+  - anime
+visualDna:
+  aesthetic: 'Choir harmony anime: rows of singers bathed in soft light, open mouths, uplifted faces and warm glow.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: uplifted faces, open mouths, rows of figures, soft lines."
+  color_and_tone: Warm cream and gold with soft blue, used consistently across subject and background.
+  lighting_and_shadow: Soft glow from above, expressed through the style rather than photographic lighting.
+  texture_and_material: Cel with glow, visible at card size as the signature of the style.
+  camera_and_composition: Rows of singers, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Uplifting, warm, together and moving, driven by the construction, color and rhythm.
+  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Choir Harmony Light Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: rows; uplifted faces; soft glow
+avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: slice-of-life-school-music
+  categoryName: 2. Slice Of Life, School And Music
+  tags:
+    - anime-character-and-lifestyle
+    - slice-of-life-school-music
+    - choir
+    - music
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: choir anime

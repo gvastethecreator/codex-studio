@@ -3,7 +3,7 @@
     {
       "id": "pack_13",
       "name": "Anime 02 — Anime Character & Lifestyle",
-      "presetCount": 137
+      "presetCount": 152
     }
   ],
   "presets": [
@@ -287,7 +287,8 @@
     },
     {
       "id": "SP13-013",
-      "name": "Rainy Idol Backstage",
+      "name": "Backstage Nerves Anime",
+      "styleAnchors": ["Backstage Nerves Anime"],
       "ref": "pack_13/SP13-013.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -295,7 +296,7 @@
       "categoryName": "2. Slice Of Life, School And Music",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-school-and-music"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-013 rainy idol backstage 2. slice of life, school and music everyday anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music"
+      "searchableText": "sp13-013 backstage nerves anime 2. slice of life, school and music everyday anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music"
     },
     {
       "id": "SP13-015",
@@ -320,6 +321,288 @@
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-school-and-music"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp13-018 festival lantern summer 2. slice of life, school and music everyday anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music"
+    },
+    {
+      "id": "SP13-056",
+      "name": "Concert Spotlight Anime",
+      "styleAnchors": ["Concert Spotlight Anime", "live performance anime", "spotlights"],
+      "ref": "pack_13/SP13-056.yaml",
+      "packId": "pack_13",
+      "packName": "Anime 02 — Anime Character & Lifestyle",
+      "categoryId": "slice-of-life-school-and-music",
+      "categoryName": "2. Slice Of Life, School And Music",
+      "domain": "live performance anime",
+      "tags": [
+        "anime-02-anime-character-and-lifestyle",
+        "slice-of-life-school-and-music",
+        "live-performance-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-056 concert spotlight anime live performance anime spotlights 2. slice of life, school and music everyday anime live performance anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music live-performance-anime"
+    },
+    {
+      "id": "SP13-057",
+      "name": "Afterschool Golden Hour Anime",
+      "styleAnchors": [
+        "Afterschool Golden Hour Anime",
+        "late afternoon light anime",
+        "orange shafts"
+      ],
+      "ref": "pack_13/SP13-057.yaml",
+      "packId": "pack_13",
+      "packName": "Anime 02 — Anime Character & Lifestyle",
+      "categoryId": "slice-of-life-school-and-music",
+      "categoryName": "2. Slice Of Life, School And Music",
+      "domain": "late afternoon light anime",
+      "tags": [
+        "anime-02-anime-character-and-lifestyle",
+        "slice-of-life-school-and-music",
+        "late-afternoon-light-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-057 afterschool golden hour anime late afternoon light anime orange shafts 2. slice of life, school and music everyday anime late afternoon light anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music late-afternoon-light-anime"
+    },
+    {
+      "id": "SP13-058",
+      "name": "Winter Breath Quiet Anime",
+      "styleAnchors": ["Winter Breath Quiet Anime", "winter slice of life anime", "visible breath"],
+      "ref": "pack_13/SP13-058.yaml",
+      "packId": "pack_13",
+      "packName": "Anime 02 — Anime Character & Lifestyle",
+      "categoryId": "slice-of-life-school-and-music",
+      "categoryName": "2. Slice Of Life, School And Music",
+      "domain": "winter slice of life anime",
+      "tags": [
+        "anime-02-anime-character-and-lifestyle",
+        "slice-of-life-school-and-music",
+        "winter-slice-of-life-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-058 winter breath quiet anime winter slice of life anime visible breath 2. slice of life, school and music everyday anime winter slice of life anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music winter-slice-of-life-anime"
+    },
+    {
+      "id": "SP13-059",
+      "name": "Night Study Lamp Anime",
+      "styleAnchors": ["Night Study Lamp Anime", "late-night study anime", "lamp pool"],
+      "ref": "pack_13/SP13-059.yaml",
+      "packId": "pack_13",
+      "packName": "Anime 02 — Anime Character & Lifestyle",
+      "categoryId": "slice-of-life-school-and-music",
+      "categoryName": "2. Slice Of Life, School And Music",
+      "domain": "late-night study anime",
+      "tags": [
+        "anime-02-anime-character-and-lifestyle",
+        "slice-of-life-school-and-music",
+        "late-night-study-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-059 night study lamp anime late-night study anime lamp pool 2. slice of life, school and music everyday anime late-night study anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music late-night-study-anime"
+    },
+    {
+      "id": "SP13-060",
+      "name": "Nineties School Cel Nostalgia",
+      "styleAnchors": ["Nineties School Cel Nostalgia", "90s cel anime look", "film grain"],
+      "ref": "pack_13/SP13-060.yaml",
+      "packId": "pack_13",
+      "packName": "Anime 02 — Anime Character & Lifestyle",
+      "categoryId": "slice-of-life-school-and-music",
+      "categoryName": "2. Slice Of Life, School And Music",
+      "domain": "90s cel anime look",
+      "tags": [
+        "anime-02-anime-character-and-lifestyle",
+        "slice-of-life-school-and-music",
+        "90s-cel-anime-look"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-060 nineties school cel nostalgia 90s cel anime look film grain 2. slice of life, school and music everyday anime 90s cel anime look pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music 90s-cel-anime-look"
+    },
+    {
+      "id": "SP13-061",
+      "name": "Garage Band Grit Anime",
+      "styleAnchors": ["Garage Band Grit Anime", "rough rock band anime", "rough lines"],
+      "ref": "pack_13/SP13-061.yaml",
+      "packId": "pack_13",
+      "packName": "Anime 02 — Anime Character & Lifestyle",
+      "categoryId": "slice-of-life-school-and-music",
+      "categoryName": "2. Slice Of Life, School And Music",
+      "domain": "rough rock band anime",
+      "tags": [
+        "anime-02-anime-character-and-lifestyle",
+        "slice-of-life-school-and-music",
+        "rough-rock-band-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-061 garage band grit anime rough rock band anime rough lines 2. slice of life, school and music everyday anime rough rock band anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music rough-rock-band-anime"
+    },
+    {
+      "id": "SP13-062",
+      "name": "Classical Recital Hush Anime",
+      "styleAnchors": [
+        "Classical Recital Hush Anime",
+        "classical music anime",
+        "polished instruments"
+      ],
+      "ref": "pack_13/SP13-062.yaml",
+      "packId": "pack_13",
+      "packName": "Anime 02 — Anime Character & Lifestyle",
+      "categoryId": "slice-of-life-school-and-music",
+      "categoryName": "2. Slice Of Life, School And Music",
+      "domain": "classical music anime",
+      "tags": [
+        "anime-02-anime-character-and-lifestyle",
+        "slice-of-life-school-and-music",
+        "classical-music-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-062 classical recital hush anime classical music anime polished instruments 2. slice of life, school and music everyday anime classical music anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music classical-music-anime"
+    },
+    {
+      "id": "SP13-063",
+      "name": "Seaside Summer Haze Anime",
+      "styleAnchors": ["Seaside Summer Haze Anime", "summer seaside anime", "cumulus towers"],
+      "ref": "pack_13/SP13-063.yaml",
+      "packId": "pack_13",
+      "packName": "Anime 02 — Anime Character & Lifestyle",
+      "categoryId": "slice-of-life-school-and-music",
+      "categoryName": "2. Slice Of Life, School And Music",
+      "domain": "summer seaside anime",
+      "tags": [
+        "anime-02-anime-character-and-lifestyle",
+        "slice-of-life-school-and-music",
+        "summer-seaside-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-063 seaside summer haze anime summer seaside anime cumulus towers 2. slice of life, school and music everyday anime summer seaside anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music summer-seaside-anime"
+    },
+    {
+      "id": "SP13-064",
+      "name": "Dawn Practice Mist Anime",
+      "styleAnchors": ["Dawn Practice Mist Anime", "early morning practice anime", "mist layers"],
+      "ref": "pack_13/SP13-064.yaml",
+      "packId": "pack_13",
+      "packName": "Anime 02 — Anime Character & Lifestyle",
+      "categoryId": "slice-of-life-school-and-music",
+      "categoryName": "2. Slice Of Life, School And Music",
+      "domain": "early morning practice anime",
+      "tags": [
+        "anime-02-anime-character-and-lifestyle",
+        "slice-of-life-school-and-music",
+        "early-morning-practice-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-064 dawn practice mist anime early morning practice anime mist layers 2. slice of life, school and music everyday anime early morning practice anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music early-morning-practice-anime"
+    },
+    {
+      "id": "SP13-065",
+      "name": "Rooftop Wind Anime",
+      "styleAnchors": ["Rooftop Wind Anime", "wind and sky anime", "windblown cloth"],
+      "ref": "pack_13/SP13-065.yaml",
+      "packId": "pack_13",
+      "packName": "Anime 02 — Anime Character & Lifestyle",
+      "categoryId": "slice-of-life-school-and-music",
+      "categoryName": "2. Slice Of Life, School And Music",
+      "domain": "wind and sky anime",
+      "tags": [
+        "anime-02-anime-character-and-lifestyle",
+        "slice-of-life-school-and-music",
+        "wind-and-sky-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-065 rooftop wind anime wind and sky anime windblown cloth 2. slice of life, school and music everyday anime wind and sky anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music wind-and-sky-anime"
+    },
+    {
+      "id": "SP13-066",
+      "name": "Late Train Window Anime",
+      "styleAnchors": [
+        "Late Train Window Anime",
+        "night train melancholy anime",
+        "window reflections"
+      ],
+      "ref": "pack_13/SP13-066.yaml",
+      "packId": "pack_13",
+      "packName": "Anime 02 — Anime Character & Lifestyle",
+      "categoryId": "slice-of-life-school-and-music",
+      "categoryName": "2. Slice Of Life, School And Music",
+      "domain": "night train melancholy anime",
+      "tags": [
+        "anime-02-anime-character-and-lifestyle",
+        "slice-of-life-school-and-music",
+        "night-train-melancholy-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-066 late train window anime night train melancholy anime window reflections 2. slice of life, school and music everyday anime night train melancholy anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music night-train-melancholy-anime"
+    },
+    {
+      "id": "SP13-067",
+      "name": "Soft Focus Letter Anime",
+      "styleAnchors": ["Soft Focus Letter Anime", "soft focus romantic anime", "bokeh"],
+      "ref": "pack_13/SP13-067.yaml",
+      "packId": "pack_13",
+      "packName": "Anime 02 — Anime Character & Lifestyle",
+      "categoryId": "slice-of-life-school-and-music",
+      "categoryName": "2. Slice Of Life, School And Music",
+      "domain": "soft focus romantic anime",
+      "tags": [
+        "anime-02-anime-character-and-lifestyle",
+        "slice-of-life-school-and-music",
+        "soft-focus-romantic-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-067 soft focus letter anime soft focus romantic anime bokeh 2. slice of life, school and music everyday anime soft focus romantic anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music soft-focus-romantic-anime"
+    },
+    {
+      "id": "SP13-068",
+      "name": "Club Room Clutter Comedy",
+      "styleAnchors": ["Club Room Clutter Comedy", "cluttered comedy anime", "dense clutter"],
+      "ref": "pack_13/SP13-068.yaml",
+      "packId": "pack_13",
+      "packName": "Anime 02 — Anime Character & Lifestyle",
+      "categoryId": "slice-of-life-school-and-music",
+      "categoryName": "2. Slice Of Life, School And Music",
+      "domain": "cluttered comedy anime",
+      "tags": [
+        "anime-02-anime-character-and-lifestyle",
+        "slice-of-life-school-and-music",
+        "cluttered-comedy-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-068 club room clutter comedy cluttered comedy anime dense clutter 2. slice of life, school and music everyday anime cluttered comedy anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music cluttered-comedy-anime"
+    },
+    {
+      "id": "SP13-069",
+      "name": "Library Sunbeam Quiet Anime",
+      "styleAnchors": ["Library Sunbeam Quiet Anime", "quiet library light anime", "sun shafts"],
+      "ref": "pack_13/SP13-069.yaml",
+      "packId": "pack_13",
+      "packName": "Anime 02 — Anime Character & Lifestyle",
+      "categoryId": "slice-of-life-school-and-music",
+      "categoryName": "2. Slice Of Life, School And Music",
+      "domain": "quiet library light anime",
+      "tags": [
+        "anime-02-anime-character-and-lifestyle",
+        "slice-of-life-school-and-music",
+        "quiet-library-light-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-069 library sunbeam quiet anime quiet library light anime sun shafts 2. slice of life, school and music everyday anime quiet library light anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music quiet-library-light-anime"
+    },
+    {
+      "id": "SP13-070",
+      "name": "Choir Harmony Light Anime",
+      "styleAnchors": ["Choir Harmony Light Anime", "choir anime", "rows"],
+      "ref": "pack_13/SP13-070.yaml",
+      "packId": "pack_13",
+      "packName": "Anime 02 — Anime Character & Lifestyle",
+      "categoryId": "slice-of-life-school-and-music",
+      "categoryName": "2. Slice Of Life, School And Music",
+      "domain": "choir anime",
+      "tags": [
+        "anime-02-anime-character-and-lifestyle",
+        "slice-of-life-school-and-music",
+        "choir-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-070 choir harmony light anime choir anime rows 2. slice of life, school and music everyday anime choir anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music choir-anime"
     },
     {
       "id": "SP05-013",
@@ -1786,5 +2069,5 @@
       "searchableText": "sp05-103 neon hyperpop anime 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     }
   ],
-  "totalPresetCount": 137
+  "totalPresetCount": 152
 }

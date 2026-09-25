@@ -3,7 +3,7 @@ id: SP13-018
 packId: pack_13
 name: Festival Lantern Summer
 category: 2. Slice Of Life, School And Music
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,61 +13,22 @@ tags:
   - anime
   - slice-of-life
 visualDna:
-  aesthetic: >-
-    Festival Lantern Summer operates as a portable anime-lifestyle router: combine Festival Lantern
-    Summer identity cues through Lantern string cadence; flowing silhouette motifs; distant shimmer
-    accents; and shared gesture emotional anchors; Festival Lantern Summer anime style cues; Lantern
-    summer slice of life anime language with flowing elegance with slice of life school and music
-    grammar with soft social acting, weathered everyday light, gentle performance rhythm, and
-    intimate mundane storytelling, so the preset supplies anime style behavior after prompt X rather
-    than a required scene, character, franchise image, or card composition.
-  subject_treatment: >-
-    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
-    microgesture acting, soft contour, posture pauses, everyday prop restraint, textile simplicity,
-    and emotion carried by spacing rather than spectacle; subjects may be characters, creatures,
-    objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.
-  color_and_tone: >-
-    Map color through rain blue, spring pink, warm cream, muted uniform or casual neutrals, stage
-    amber, soft daylight, and restrained accent color; keep cel values readable, accent roles
-    intentional, skin or material midtones stable, and palette behavior attached to the prompt
-    instead of pasted anime decoration.
-  lighting_and_shadow: >-
-    Use window diffusion, rain reflection, lantern or stage glow, soft bounce, pastel rim, and low
-    contrast emotional separation; lighting should clarify expression, silhouette, material, and
-    emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
-  texture_and_material: >-
-    Render matte paper like backgrounds, crisp textile softness, umbrella sheen, instrument gloss
-    when requested, dessert warmth, and low noise painted surfaces; keep line, paint, textile,
-    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
-    surface chatter.
-  camera_and_composition: >-
-    Compose through near-but-not-touching spacing, quiet inserts, performance beats, seasonal
-    framing, and open everyday depth without classroom or venue dependency as reusable anime framing
-    grammar, allowing close acting, objects, performances, action, environments, or abstract prompts
-    without one required pose or location.
-  atmosphere_and_mood: >-
-    Carry mood through gentle longing, shy warmth, quiet comedy, festival nostalgia, backstage
-    nerves, soft friendship, and sincere ordinary wonder; the preset can become cute, sensual,
-    severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its
-    anime lineage.
-  rendering_and_quality: >-
-    Finish with clean slice of life anime finish with subtle bloom, controlled softness, readable
-    expressions, no fake signage, and no photographic realism; prioritize stable anatomy or object
-    structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no
-    generic AI anime gloss.
-  key_features: >-
-    Lantern string cadence; flowing silhouette motifs; distant shimmer accents; and shared gesture
-    emotional anchors; Festival Lantern Summer anime style cues; Lantern summer slice of life anime
-    language with flowing elegance
-  creative_brief: >-
-    Use Festival Lantern Summer after prompt X as a transferable anime character/lifestyle layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies
-    Lantern string cadence, flowing silhouette motifs, distant shimmer accents, and shared gesture
-    emotional anchors, Festival Lantern Summer anime style cues, Lantern summer slice of life anime
-    language with flowing elegance, color logic, lighting, material finish, composition rhythm, mood
-    pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle,
-    title screenshot, or sample-card composition.
+  aesthetic: 'Festival lantern summer anime: warm summer-night frames with rows of lanterns, yukata-like robes and firefly glow.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: soft lines, flowing robes and sleeves, faces lit warmly from lanterns, fireworks drawn as soft bursts."
+  color_and_tone: Lantern orange, deep indigo night and firework colors, used consistently across subject and background.
+  lighting_and_shadow: Lantern and firework light on faces, expressed through the style rather than photographic lighting.
+  texture_and_material: Cel with bokeh lantern glows, visible at card size as the signature of the style.
+  camera_and_composition: Crowd-level frames with lanterns receding, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Nostalgic, warm, romantic and fleeting, driven by the construction, color and rhythm.
+  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
+  key_features: lantern rows; fireworks; warm faces; summer night
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Festival Lantern Summer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
   - photoreal
   - bleak horror
   - low detail
@@ -83,16 +44,15 @@ avoidRules:
   - fixed anime cast
   - generic anime filter
   - prompt literal card reuse
-  - readable text
   - fake UI
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-018.webp
 attributes:
-  negativePrompt: >-
-    photoreal, bleak horror, low detail, watermark, text, logo, classroom dependency, idol stage
-    dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card
-    setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake
-    UI, photoreal cosplay, 3D render look, copied franchise costume, signature
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, bleak horror, low detail, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

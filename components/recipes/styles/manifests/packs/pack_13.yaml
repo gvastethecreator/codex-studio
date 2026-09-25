@@ -37,6 +37,21 @@ categories:
       - pack_13/SP13-013.yaml
       - pack_13/SP13-015.yaml
       - pack_13/SP13-018.yaml
+      - pack_13/SP13-056.yaml
+      - pack_13/SP13-057.yaml
+      - pack_13/SP13-058.yaml
+      - pack_13/SP13-059.yaml
+      - pack_13/SP13-060.yaml
+      - pack_13/SP13-061.yaml
+      - pack_13/SP13-062.yaml
+      - pack_13/SP13-063.yaml
+      - pack_13/SP13-064.yaml
+      - pack_13/SP13-065.yaml
+      - pack_13/SP13-066.yaml
+      - pack_13/SP13-067.yaml
+      - pack_13/SP13-068.yaml
+      - pack_13/SP13-069.yaml
+      - pack_13/SP13-070.yaml
   - id: shojo-magical-girl-and-visionary-classics
     name: 3. Shojo, Magical Girl & Visionary Classics
     presetRefs:
@@ -184,6 +199,21 @@ presetRefs:
   - pack_13/SP13-013.yaml
   - pack_13/SP13-015.yaml
   - pack_13/SP13-018.yaml
+  - pack_13/SP13-056.yaml
+  - pack_13/SP13-057.yaml
+  - pack_13/SP13-058.yaml
+  - pack_13/SP13-059.yaml
+  - pack_13/SP13-060.yaml
+  - pack_13/SP13-061.yaml
+  - pack_13/SP13-062.yaml
+  - pack_13/SP13-063.yaml
+  - pack_13/SP13-064.yaml
+  - pack_13/SP13-065.yaml
+  - pack_13/SP13-066.yaml
+  - pack_13/SP13-067.yaml
+  - pack_13/SP13-068.yaml
+  - pack_13/SP13-069.yaml
+  - pack_13/SP13-070.yaml
   - pack_13/SP05-013.yaml
   - pack_13/SP05-162.yaml
   - pack_13/SP05-168.yaml

@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP13-063
+packId: pack_13
+name: Seaside Summer Haze Anime
+styleAnchors:
+  - Seaside Summer Haze Anime
+  - summer seaside anime
+  - cumulus towers
+displayName: Seaside Summer Haze Anime
+category: 2. Slice Of Life, School And Music
+domain: summer seaside anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - slice-of-life-school-music
+  - summer
+  - seaside
+  - anime
+visualDna:
+  aesthetic: 'Seaside summer haze anime: saturated blue skies, towering cumulus clouds, heat shimmer and bright white light.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: clean simple lines, sun-squinting faces, sweat beads, hair and shirts moving in sea wind."
+  color_and_tone: Saturated cobalt sky, white clouds, sea teal and sun-bleached colors.
+  lighting_and_shadow: Harsh midday sun with heat haze and deep short shadows.
+  texture_and_material: Cel with painted clouds and shimmer, visible at card size as the signature of the style.
+  camera_and_composition: Wide horizon frames with big sky, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Free, lazy, nostalgic and bright, driven by the construction, color and rhythm.
+  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Seaside Summer Haze Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: cumulus towers; heat haze; cobalt sky; sea wind
+avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: slice-of-life-school-music
+  categoryName: 2. Slice Of Life, School And Music
+  tags:
+    - anime-character-and-lifestyle
+    - slice-of-life-school-music
+    - summer
+    - seaside
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: summer seaside anime

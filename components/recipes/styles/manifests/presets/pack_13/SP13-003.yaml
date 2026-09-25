@@ -3,7 +3,7 @@ id: SP13-003
 packId: pack_13
 name: Soft Shojo Spring
 category: 2. Slice Of Life, School And Music
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,59 +13,22 @@ tags:
   - anime
   - slice-of-life
 visualDna:
-  aesthetic: >-
-    Soft Shojo Spring operates as a portable anime-lifestyle router: combine Soft Shojo Spring
-    identity cues through Expressive focal hierarchy; pastel harmony discipline; floating petal
-    motion cues; fine contour elegance; and intimacy first composition; Soft Shojo Spring anime
-    style cues with slice of life school and music grammar with soft social acting, weathered
-    everyday light, gentle performance rhythm, and intimate mundane storytelling, so the preset
-    supplies anime style behavior after prompt X rather than a required scene, character, franchise
-    image, or card composition.
-  subject_treatment: >-
-    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
-    microgesture acting, soft contour, posture pauses, everyday prop restraint, textile simplicity,
-    and emotion carried by spacing rather than spectacle; subjects may be characters, creatures,
-    objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.
-  color_and_tone: >-
-    Map color through rain blue, spring pink, warm cream, muted uniform or casual neutrals, stage
-    amber, soft daylight, and restrained accent color; keep cel values readable, accent roles
-    intentional, skin or material midtones stable, and palette behavior attached to the prompt
-    instead of pasted anime decoration.
-  lighting_and_shadow: >-
-    Use window diffusion, rain reflection, lantern or stage glow, soft bounce, pastel rim, and low
-    contrast emotional separation; lighting should clarify expression, silhouette, material, and
-    emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
-  texture_and_material: >-
-    Render matte paper like backgrounds, crisp textile softness, umbrella sheen, instrument gloss
-    when requested, dessert warmth, and low noise painted surfaces; keep line, paint, textile,
-    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
-    surface chatter.
-  camera_and_composition: >-
-    Compose through near-but-not-touching spacing, quiet inserts, performance beats, seasonal
-    framing, and open everyday depth without classroom or venue dependency as reusable anime framing
-    grammar, allowing close acting, objects, performances, action, environments, or abstract prompts
-    without one required pose or location.
-  atmosphere_and_mood: >-
-    Carry mood through gentle longing, shy warmth, quiet comedy, festival nostalgia, backstage
-    nerves, soft friendship, and sincere ordinary wonder; the preset can become cute, sensual,
-    severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its
-    anime lineage.
-  rendering_and_quality: >-
-    Finish with clean slice of life anime finish with subtle bloom, controlled softness, readable
-    expressions, no fake signage, and no photographic realism; prioritize stable anatomy or object
-    structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no
-    generic AI anime gloss.
-  key_features: >-
-    Expressive focal hierarchy; pastel harmony discipline; floating petal motion cues; fine contour
-    elegance; and intimacy first composition; Soft Shojo Spring anime style cues
-  creative_brief: >-
-    Use Soft Shojo Spring after prompt X as a transferable anime character/lifestyle layer: prompt X
-    supplies subject, action, setting, tone, and intensity, while the preset supplies Expressive
-    focal hierarchy, pastel harmony discipline, floating petal motion cues, fine contour elegance,
-    and intimacy first composition, Soft Shojo Spring anime style cues, color logic, lighting,
-    material finish, composition rhythm, mood pressure, and quality controls without requiring a
-    fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.
+  aesthetic: 'Soft shojo spring anime: airy pastel frames with fine elegant lines, sparkling eyes and drifting petals.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: fine thin contours, tall slender figures, large glossy eyes with many highlights, petals and light sparkles drifting through the frame."
+  color_and_tone: Pastel pink, mint, cream and pale sky blue, used consistently across subject and background.
+  lighting_and_shadow: Soft diffused spring daylight with gentle bloom, expressed through the style rather than photographic lighting.
+  texture_and_material: Light cel with soft painted gradients and screentone-like sparkle.
+  camera_and_composition: Intimate close and mid shots with lots of air.
+  atmosphere_and_mood: Tender, hopeful, shy and dreamy, driven by the construction, color and rhythm.
+  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
+  key_features: fine lines; sparkling eyes; drifting petals; pastel bloom
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soft Shojo Spring as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
   - photoreal
   - gritty
   - horror
@@ -81,16 +44,15 @@ avoidRules:
   - fixed anime cast
   - generic anime filter
   - prompt literal card reuse
-  - readable text
   - fake UI
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-003.webp
 attributes:
-  negativePrompt: >-
-    photoreal, gritty, horror, watermark, text, logo, classroom dependency, idol stage dependency,
-    generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed
-    anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal
-    cosplay, 3D render look, copied franchise costume, signature
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, gritty, horror, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
