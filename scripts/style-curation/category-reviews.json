@@ -1268,7 +1268,7 @@
     "baselineHash": "6736b8a880a5b631c78282b9b633aafd6ae8f5c06de3103262963b4e87db16d8",
     "problem": "Studio-era and magical-character references blend visual grammar with iconic narrative markers.",
     "preserve": "Line elasticity, cel polish and expressive staging.",
-    "proposedAction": "Document references separately and derive transferable rendering; transformations remain explicit profiles.",
+    "proposedAction": "Document references separately and derive transferable rendering; transformations remain explicit profiles. Overhaul: DNA already carries portable line and cel mechanics, so this pass audits it unchanged and adds three original briefs per preset (40); franchise names stay as search identity while every brief uses original characters and places.",
     "validation": "No fixed costume, character or magical sequence is imported solely through a name.",
     "evidencePresetIds": ["SP05-013", "SP05-181"],
     "status": "text-reviewed",
