@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-118
+packId: pack_17
+name: Soft Ground Crayon Etching
+styleAnchors:
+  - Soft Ground Crayon Etching
+  - soft-ground etching plate
+  - grainy crayon etched line
+displayName: Soft Ground Crayon Etching
+category: 3. Ink, Tarot & Bestiary Plates
+domain: soft-ground etching plate
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - ink-tarot-and-bestiary-plates
+  - soft-ground
+  - etching
+  - crayon-line
+visualDna:
+  aesthetic: Soft-ground etching with pencil-like grainy lines that capture the texture of the paper they were drawn through, soft gray tonal areas, and delicate plate tone.
+  subject_treatment: 'Render prompt X with the quiet softness of a crayon drawing transferred to metal: grainy contours, gently massed shading, and restrained detail.'
+  color_and_tone: Soft gray-black ink on warm white paper, faint plate tone, occasional very pale sepia wipe.
+  lighting_and_shadow: Diffuse gentle light with soft transitions and bright open areas.
+  texture_and_material: Grainy crayon-like lines, captured paper weave, soft tonal texture, and faint plate edge.
+  camera_and_composition: Intimate quiet composition, uncluttered, with a single softly defined subject.
+  atmosphere_and_mood: Tender, reflective, soft, and quietly mysterious.
+  rendering_and_quality: Refined print quality with soft yet readable forms and no muddiness.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soft Ground Crayon Etching as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: grainy crayon etched line; captured paper weave; soft gray masses; quiet tenderness
+avoidRules:
+  - hard black mass
+  - crisp engraving
+  - color
+  - heavy contrast
+  - noisy grain overlay
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-118.webp
+attributes:
+  negativePrompt: hard black mass, crisp engraving, color, heavy contrast, noisy grain overlay, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
+  domain: soft-ground etching plate
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - ink-tarot-and-bestiary-plates
+    - soft-ground
+    - etching
+    - crayon-line
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

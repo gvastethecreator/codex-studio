@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-101
+packId: pack_17
+name: Gocco Gold Leaf Micro Print
+styleAnchors:
+  - Gocco Gold Leaf Micro Print
+  - precise mini screen print with metallic ink
+  - thick opaque screen inks
+displayName: Gocco Gold Leaf Micro Print
+category: 2. Dungeon Zine & Risograph Prints
+domain: precise mini screen print with metallic ink
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - dungeon-zine-and-risograph-prints
+  - screen-print
+  - metallic-gold
+  - refined-print
+visualDna:
+  aesthetic: 'Small-format screen print with thick opaque inks: deep green, cream, brick, and one metallic gold layer, each shape sharp-edged with the slight raised ink ridge of a tiny hand screen.'
+  subject_treatment: 'Render prompt X as a jewel-like print object: forms are simplified into precise stacked ink layers, with gold reserved for the single most precious detail such as an eye, edge, flame, halo, or ornament.'
+  color_and_tone: Bottle green, cream, brick red, soft charcoal, and one metallic gold spot; colors are opaque and never blend.
+  lighting_and_shadow: Graphic light built from layered flat shapes; gold catches implied light as the brightest accent.
+  texture_and_material: Thick matte ink with slight edge ridges, micro pinholes, faint screen mesh, and smooth heavy cotton paper.
+  camera_and_composition: Compact, carefully composed miniature image with a centered focal subject, clean edges, and small breathing margin of paper, without lettering.
+  atmosphere_and_mood: Precious, calm, ceremonial, and collectible.
+  rendering_and_quality: 'Pristine craft-print finish: exact layer registration, no grain noise, crisp shape edges, and luxurious restraint.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gocco Gold Leaf Micro Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: thick opaque screen inks; metallic gold spot; raised ink ridges; precise layer registration; jewel-like miniature
+avoidRules:
+  - sloppy registration
+  - photocopy grime
+  - gradient shading
+  - overdecoration
+  - glitter effect
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-101.webp
+attributes:
+  negativePrompt: sloppy registration, photocopy grime, gradient shading, overdecoration, glitter effect, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
+  domain: precise mini screen print with metallic ink
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - dungeon-zine-and-risograph-prints
+    - screen-print
+    - metallic-gold
+    - refined-print
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

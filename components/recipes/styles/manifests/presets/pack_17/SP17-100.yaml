@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-100
+packId: pack_17
+name: Mimeograph Violet Ditto Zine
+styleAnchors:
+  - Mimeograph Violet Ditto Zine
+  - spirit duplicator violet zine
+  - aniline ditto violet
+displayName: Mimeograph Violet Ditto Zine
+category: 2. Dungeon Zine & Risograph Prints
+domain: spirit duplicator violet zine
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - dungeon-zine-and-risograph-prints
+  - mimeograph
+  - ditto-violet
+  - faded-print
+visualDna:
+  aesthetic: 'Spirit-duplicator ditto print in soft aniline violet: faded purple line, feathery ink bleed, uneven pressure from the hand-cranked drum, and pale damp-paper tone.'
+  subject_treatment: 'Any prompt subject becomes a modest, slightly ghostly duplicated drawing: firm stylus line for the structure, light hatch for shade, and a fading second pass that suggests it was the fortieth copy of the run.'
+  color_and_tone: Aniline violet from strong to washed lilac on cool off-white paper; no second hue.
+  lighting_and_shadow: Flat reproduction light; value is line density and ink strength, with the lightest areas fading almost into the paper.
+  texture_and_material: Feathered bleeding line edges, uneven drum pressure bands, faint solvent stains, and soft paper tooth.
+  camera_and_composition: Simple centered or slightly tilted composition with clear silhouette and quiet margins, like a hand-drawn classroom handout image without words.
+  atmosphere_and_mood: Nostalgic, eerie, humble, and faintly haunted.
+  rendering_and_quality: 'Faithful but clean ditto reproduction: soft violet bleed stays controlled, forms remain readable, no digital glow.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mimeograph Violet Ditto Zine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: aniline ditto violet; feathery line bleed; faded fortieth-copy tone; stylus hatch; humble handout drawing
+avoidRules:
+  - saturated neon purple
+  - multiple colors
+  - crisp vector line
+  - heavy black
+  - fake worksheet text
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-100.webp
+attributes:
+  negativePrompt: saturated neon purple, multiple colors, crisp vector line, heavy black, fake worksheet text, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
+  domain: spirit duplicator violet zine
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - dungeon-zine-and-risograph-prints
+    - mimeograph
+    - ditto-violet
+    - faded-print
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

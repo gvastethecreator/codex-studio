@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-114
+packId: pack_17
+name: Sepia Aquatint Wash Plate
+styleAnchors:
+  - Sepia Aquatint Wash Plate
+  - sepia aquatint tonal etching
+  - granular sepia aquatint
+displayName: Sepia Aquatint Wash Plate
+category: 3. Ink, Tarot & Bestiary Plates
+domain: sepia aquatint tonal etching
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - ink-tarot-and-bestiary-plates
+  - aquatint
+  - sepia
+  - refined-ink
+visualDna:
+  aesthetic: Elegant etched line combined with granular sepia aquatint tone fields, stepped value layers, and soft warm paper, like a refined travel-plate or naturalist etching.
+  subject_treatment: Render prompt X with a light etched contour and two to four stepped aquatint tones that separate foreground, subject, and distance; mood comes from tonal order rather than detail.
+  color_and_tone: Sepia brown ink in stepped tones, warm cream paper, and occasional deeper umber accent.
+  lighting_and_shadow: Soft atmospheric daylight described by stepped aquatint grains; distance fades to pale tone.
+  texture_and_material: Fine rosin grain, crisp etched line, soft plate edges, and slight ink wipe variation.
+  camera_and_composition: Airy landscape or portrait composition with clear depth layers and calm negative space.
+  atmosphere_and_mood: Wistful, elegant, calm, and slightly melancholic.
+  rendering_and_quality: 'Refined print finish: grains even, stepped tones clean, line delicate, no muddiness.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sepia Aquatint Wash Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: granular sepia aquatint; stepped tone layers; delicate etched line; atmospheric depth; refined calm
+avoidRules:
+  - black heavy ink
+  - saturated color
+  - dense crosshatch
+  - gritty noise
+  - card border
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-114.webp
+attributes:
+  negativePrompt: black heavy ink, saturated color, dense crosshatch, gritty noise, card border, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
+  domain: sepia aquatint tonal etching
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - ink-tarot-and-bestiary-plates
+    - aquatint
+    - sepia
+    - refined-ink
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

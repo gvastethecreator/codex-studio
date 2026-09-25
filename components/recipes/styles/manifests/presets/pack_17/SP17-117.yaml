@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-117
+packId: pack_17
+name: Frantic Quill Blot Plate
+styleAnchors:
+  - Frantic Quill Blot Plate
+  - frantic quill ink scribble
+  - whipping quill line
+displayName: Frantic Quill Blot Plate
+category: 3. Ink, Tarot & Bestiary Plates
+domain: frantic quill ink scribble
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - ink-tarot-and-bestiary-plates
+  - quill-ink
+  - blots
+  - messy-line
+visualDna:
+  aesthetic: 'Frantic quill-and-ink drawing: fast whipping lines, sudden blots, spatters, dragged dry strokes, and scratchy energetic hatching that looks drawn in one feverish sitting.'
+  subject_treatment: 'Any prompt subject is captured in motion and urgency: gesture over detail, splashy blacks for mass, lightning hatch for shadow, with the subject readable at a glance.'
+  color_and_tone: Black and diluted gray ink on off-white rag paper, occasional sepia stain.
+  lighting_and_shadow: Rough dramatic light built from blot masses and whipped white paper gaps.
+  texture_and_material: Ink blots, spatter, split-nib double lines, dry-drag strokes, and rag paper tooth.
+  camera_and_composition: Dynamic diagonal composition with the subject caught mid-action and splashes spilling outward.
+  atmosphere_and_mood: Wild, urgent, energetic, and chaotic.
+  rendering_and_quality: 'Controlled chaos: marks purposeful, silhouette clear, no random noise or digital spatter.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Frantic Quill Blot Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: whipping quill line; ink blots and spatter; split-nib strokes; gesture over detail; feverish speed
+avoidRules:
+  - careful tidy hatching
+  - smooth digital line
+  - color
+  - realistic rendering
+  - decorative frame
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-117.webp
+attributes:
+  negativePrompt: careful tidy hatching, smooth digital line, color, realistic rendering, decorative frame, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
+  domain: frantic quill ink scribble
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - ink-tarot-and-bestiary-plates
+    - quill-ink
+    - blots
+    - messy-line
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

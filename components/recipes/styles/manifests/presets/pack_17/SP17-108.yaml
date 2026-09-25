@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP17-108
+packId: pack_17
+name: Gold Ember Black Stock Riso
+styleAnchors:
+  - Gold Ember Black Stock Riso
+  - metallic ink on black paper risograph
+  - black paper stock
+displayName: Gold Ember Black Stock Riso
+category: 2. Dungeon Zine & Risograph Prints
+domain: metallic ink on black paper risograph
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - dungeon-zine-and-risograph-prints
+  - risograph
+  - black-paper
+  - metallic-gold
+visualDna:
+  aesthetic: Night-edition risograph printed on black paper stock with flat metallic gold and fluorescent orange spot inks, a few opaque white highlights, and the subject built only from printed line, halftone, and flat ink shapes over bare black paper.
+  subject_treatment: 'Any prompt subject is drawn with light instead of shadow: gold carries structure and edges, orange carries heat and glow, white catches the brightest points, and the black stock supplies every shadow.'
+  color_and_tone: Metallic gold, fluorescent orange, opaque white, and deep black paper.
+  lighting_and_shadow: 'Inverted light logic: printed ink is light, bare black paper is darkness, creating an ember-lit nocturnal glow.'
+  texture_and_material: Metallic shimmer grain, slightly translucent orange over black, riso grain, and soft black paper fiber.
+  camera_and_composition: Moody central composition with large areas of empty black paper, a strong focal glow, and elegant silhouette.
+  atmosphere_and_mood: Dark, ceremonial, luxurious, and smoldering.
+  rendering_and_quality: 'Refined special-edition print quality: flat unmodulated ink layers, crisp gold contour and halftone, visible riso grain and slight registration drift, no painted modeling, no realistic skin or metal rendering, no digital bloom.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gold Ember Black Stock Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: black paper stock; metallic gold line; fluorescent orange ember glow; opaque white highlights; inverted light logic
+avoidRules:
+  - white paper
+  - painterly digital rendering
+  - realistic skin shading
+  - full color painting
+  - digital glow bloom
+  - grimy noise
+  - lens flare
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-108.webp
+attributes:
+  negativePrompt: white paper, painterly digital rendering, realistic skin shading, full color painting, digital glow bloom, grimy noise, lens flare, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
+  domain: metallic ink on black paper risograph
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - dungeon-zine-and-risograph-prints
+    - risograph
+    - black-paper
+    - metallic-gold
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

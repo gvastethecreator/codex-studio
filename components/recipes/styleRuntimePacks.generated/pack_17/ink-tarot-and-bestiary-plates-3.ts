@@ -582,4 +582,504 @@ export const GENERATED_STYLE_PRESETS = [
         'blackened vellum; bone ink; dark medieval plate; inverted manuscript logic; oxidized accents; textless scholastic horror',
     },
   },
+  {
+    id: 'SP17-111',
+    name: 'Copperplate Burin Engraving',
+    displayName: 'Copperplate Burin Engraving',
+    styleAnchors: [
+      'Copperplate Burin Engraving',
+      'refined line engraving plate',
+      'swelling burin lines',
+    ],
+    category: '3. Ink, Tarot & Bestiary Plates',
+    domain: 'refined line engraving plate',
+    negativePrompt:
+      'ink wash, scribbled line, color accents, digital halftone, card border, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Refined copperplate line engraving: swelling and tapering burin lines, disciplined parallel and cross hatching, dot-and-lozenge fills, and crisp black ink on bright plate-toned paper.',
+      subject_treatment:
+        'Any prompt subject is modeled entirely by engraved line: contour lines follow the form, hatch direction describes surface, and value comes from line thickness and spacing, never from wash.',
+      color_and_tone:
+        'Black ink on warm white paper with a faint plate-tone edge; strictly monochrome.',
+      lighting_and_shadow:
+        'Classical directional light described by hatch density, with clean highlights left as untouched paper.',
+      texture_and_material:
+        'Swelling burin lines, cross-hatch lattices, dot-and-lozenge patterns, and a subtle plate mark.',
+      camera_and_composition:
+        'Formal, well-balanced composition with a clearly modeled focal subject and orderly receding background planes.',
+      atmosphere_and_mood: 'Precise, authoritative, antique, and composed.',
+      rendering_and_quality:
+        'Museum-grade engraving clarity: every line intentional and crisp, no scribble, no noise, readable at thumbnail size.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Copperplate Burin Engraving as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'swelling burin lines; form-following hatch; dot-and-lozenge fills; monochrome plate tone; classical order',
+    },
+  },
+  {
+    id: 'SP17-112',
+    name: 'Mezzotint Abyss Plate',
+    displayName: 'Mezzotint Abyss Plate',
+    styleAnchors: ['Mezzotint Abyss Plate', 'velvet black mezzotint plate', 'rocked velvet black'],
+    category: '3. Ink, Tarot & Bestiary Plates',
+    domain: 'velvet black mezzotint plate',
+    negativePrompt:
+      'line hatching, harsh contrast, color, noisy grain, flat gray mush, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Velvety mezzotint where everything begins in deep rocked black and forms are burnished up into soft glowing grays and pale highlights, with almost no line.',
+      subject_treatment:
+        'Prompt X is pulled out of darkness: faces, hands, edges, and key forms are burnished toward light while the rest stays swallowed in velvet black, making any subject feel nocturnal and grave.',
+      color_and_tone: 'Rich warm black, soft graphite grays, and creamy paper-white highlights.',
+      lighting_and_shadow:
+        'Single low light source; soft tonal gradations emerging from black with gentle edge glow.',
+      texture_and_material:
+        'Fine velvety rocker grain, smooth burnished transitions, and soft plate tone.',
+      camera_and_composition:
+        'Close, intimate crop or looming presence with most of the frame in deep black and a single luminous focus.',
+      atmosphere_and_mood: 'Grave, hushed, mysterious, and dark.',
+      rendering_and_quality:
+        'Smooth, noiseless mezzotint quality: blacks deep and rich, gradations soft, subject clearly readable.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mezzotint Abyss Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'rocked velvet black; burnished soft light; no line; single luminous focus; grave nocturnal hush',
+    },
+  },
+  {
+    id: 'SP17-113',
+    name: 'Drypoint Burr Nightmare',
+    displayName: 'Drypoint Burr Nightmare',
+    styleAnchors: [
+      'Drypoint Burr Nightmare',
+      'scratchy drypoint burr plate',
+      'jittery needle line',
+    ],
+    category: '3. Ink, Tarot & Bestiary Plates',
+    domain: 'scratchy drypoint burr plate',
+    negativePrompt:
+      'clean engraving, smooth wash, color, cartoon, dense background, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Nervous drypoint scratched directly into the plate: jittery needle lines with fuzzy velvet burr, sudden dark knots, torn scratches, and uneven wiped plate tone.',
+      subject_treatment:
+        'Any prompt subject is drawn with trembling urgency: contours shake, shadows are burred tangles, and anatomy or form stretches slightly toward unease while staying recognizable.',
+      color_and_tone: 'Warm black with brown undertone, uneven gray plate tone, and cream paper.',
+      lighting_and_shadow:
+        'Unstable light; dark burr pools around the focal subject with scratched white breaks.',
+      texture_and_material:
+        'Fuzzy burr lines, scratch marks, fingerprints of plate tone, and soft-edged ink bleed.',
+      camera_and_composition:
+        'Uneasy off-center crop with tilted verticals and an isolated subject in an empty, stained field.',
+      atmosphere_and_mood: 'Anxious, feverish, intimate, and disturbing.',
+      rendering_and_quality:
+        'High-quality drypoint reproduction: burr controlled and meaningful, subject readable, no digital noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Drypoint Burr Nightmare as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'jittery needle line; velvet burr knots; uneven wiped plate tone; trembling contours; feverish unease',
+    },
+  },
+  {
+    id: 'SP17-114',
+    name: 'Sepia Aquatint Wash Plate',
+    displayName: 'Sepia Aquatint Wash Plate',
+    styleAnchors: [
+      'Sepia Aquatint Wash Plate',
+      'sepia aquatint tonal etching',
+      'granular sepia aquatint',
+    ],
+    category: '3. Ink, Tarot & Bestiary Plates',
+    domain: 'sepia aquatint tonal etching',
+    negativePrompt:
+      'black heavy ink, saturated color, dense crosshatch, gritty noise, card border, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Elegant etched line combined with granular sepia aquatint tone fields, stepped value layers, and soft warm paper, like a refined travel-plate or naturalist etching.',
+      subject_treatment:
+        'Render prompt X with a light etched contour and two to four stepped aquatint tones that separate foreground, subject, and distance; mood comes from tonal order rather than detail.',
+      color_and_tone:
+        'Sepia brown ink in stepped tones, warm cream paper, and occasional deeper umber accent.',
+      lighting_and_shadow:
+        'Soft atmospheric daylight described by stepped aquatint grains; distance fades to pale tone.',
+      texture_and_material:
+        'Fine rosin grain, crisp etched line, soft plate edges, and slight ink wipe variation.',
+      camera_and_composition:
+        'Airy landscape or portrait composition with clear depth layers and calm negative space.',
+      atmosphere_and_mood: 'Wistful, elegant, calm, and slightly melancholic.',
+      rendering_and_quality:
+        'Refined print finish: grains even, stepped tones clean, line delicate, no muddiness.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sepia Aquatint Wash Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'granular sepia aquatint; stepped tone layers; delicate etched line; atmospheric depth; refined calm',
+    },
+  },
+  {
+    id: 'SP17-115',
+    name: 'Sanguine Iron Gall Study',
+    displayName: 'Sanguine Iron Gall Study',
+    styleAnchors: [
+      'Sanguine Iron Gall Study',
+      'red chalk and iron gall ink study',
+      'sanguine chalk volume',
+    ],
+    category: '3. Ink, Tarot & Bestiary Plates',
+    domain: 'red chalk and iron gall ink study',
+    negativePrompt:
+      'full color painting, black digital line, fake handwriting, heavy grime, card frame, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Old master study combining sanguine red chalk modeling with corroded brown iron-gall pen lines, white chalk heightening, and toned buff paper.',
+      subject_treatment:
+        'Any prompt subject is studied rather than illustrated: red chalk builds volume, brown pen lines assert key contours and details, and white chalk marks the highest lights.',
+      color_and_tone:
+        'Sanguine red, iron-gall brown-black, white chalk, and buff or light ochre paper.',
+      lighting_and_shadow:
+        'Soft studio light from one side; red chalk shadows, paper midtones, and white chalk highlights.',
+      texture_and_material:
+        'Chalk grain on laid paper, slightly bleeding iron-gall ink, corrosion halos, and faint rubbed smudges.',
+      camera_and_composition:
+        'Study composition with one main figure or subject plus optional small secondary detail studies of hands, heads, or parts, arranged without text.',
+      atmosphere_and_mood: 'Thoughtful, sensual, classical, and alive.',
+      rendering_and_quality:
+        'Master-drawing quality: confident marks, anatomical clarity, and clean paper.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sanguine Iron Gall Study as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'sanguine chalk volume; iron-gall pen contours; white chalk highlights; buff laid paper; study-sheet vitality',
+    },
+  },
+  {
+    id: 'SP17-116',
+    name: 'Gold Ink Indigo Paper Plate',
+    displayName: 'Gold Ink Indigo Paper Plate',
+    styleAnchors: [
+      'Gold Ink Indigo Paper Plate',
+      'gold and silver ink on indigo paper',
+      'gold and silver ink on indigo',
+    ],
+    category: '3. Ink, Tarot & Bestiary Plates',
+    domain: 'gold and silver ink on indigo paper',
+    negativePrompt:
+      'white paper, full color painting, digital glow, glitter, busy background, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Luxurious ink drawing on indigo-dyed paper using gold and silver ink line and fine metallic hatching, with the dark paper as the ground.',
+      subject_treatment:
+        'Prompt X is drawn as a precious nocturne: gold ink for warm forms and edges, silver for cold light and secondary shapes, bare indigo for shadow.',
+      color_and_tone:
+        'Indigo paper, warm gold ink, cool silver ink, and very small touches of white.',
+      lighting_and_shadow:
+        'Metallic line catches implied moonlight or candlelight; darkness is the indigo paper itself.',
+      texture_and_material:
+        'Metallic ink sheen, fine hatching, indigo paper fiber, and slight ink pooling.',
+      camera_and_composition:
+        'Composed central image with plenty of indigo space and elegant decorative restraint.',
+      atmosphere_and_mood: 'Precious, serene, nocturnal, and devotional.',
+      rendering_and_quality:
+        'Refined luxury finish: crisp metallic lines, no muddy overlaps, no digital glow.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gold Ink Indigo Paper Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'gold and silver ink on indigo; metallic fine hatching; paper as shadow; precious nocturne',
+    },
+  },
+  {
+    id: 'SP17-117',
+    name: 'Frantic Quill Blot Plate',
+    displayName: 'Frantic Quill Blot Plate',
+    styleAnchors: ['Frantic Quill Blot Plate', 'frantic quill ink scribble', 'whipping quill line'],
+    category: '3. Ink, Tarot & Bestiary Plates',
+    domain: 'frantic quill ink scribble',
+    negativePrompt:
+      'careful tidy hatching, smooth digital line, color, realistic rendering, decorative frame, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Frantic quill-and-ink drawing: fast whipping lines, sudden blots, spatters, dragged dry strokes, and scratchy energetic hatching that looks drawn in one feverish sitting.',
+      subject_treatment:
+        'Any prompt subject is captured in motion and urgency: gesture over detail, splashy blacks for mass, lightning hatch for shadow, with the subject readable at a glance.',
+      color_and_tone: 'Black and diluted gray ink on off-white rag paper, occasional sepia stain.',
+      lighting_and_shadow:
+        'Rough dramatic light built from blot masses and whipped white paper gaps.',
+      texture_and_material:
+        'Ink blots, spatter, split-nib double lines, dry-drag strokes, and rag paper tooth.',
+      camera_and_composition:
+        'Dynamic diagonal composition with the subject caught mid-action and splashes spilling outward.',
+      atmosphere_and_mood: 'Wild, urgent, energetic, and chaotic.',
+      rendering_and_quality:
+        'Controlled chaos: marks purposeful, silhouette clear, no random noise or digital spatter.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Frantic Quill Blot Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'whipping quill line; ink blots and spatter; split-nib strokes; gesture over detail; feverish speed',
+    },
+  },
+  {
+    id: 'SP17-118',
+    name: 'Soft Ground Crayon Etching',
+    displayName: 'Soft Ground Crayon Etching',
+    styleAnchors: [
+      'Soft Ground Crayon Etching',
+      'soft-ground etching plate',
+      'grainy crayon etched line',
+    ],
+    category: '3. Ink, Tarot & Bestiary Plates',
+    domain: 'soft-ground etching plate',
+    negativePrompt:
+      'hard black mass, crisp engraving, color, heavy contrast, noisy grain overlay, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Soft-ground etching with pencil-like grainy lines that capture the texture of the paper they were drawn through, soft gray tonal areas, and delicate plate tone.',
+      subject_treatment:
+        'Render prompt X with the quiet softness of a crayon drawing transferred to metal: grainy contours, gently massed shading, and restrained detail.',
+      color_and_tone:
+        'Soft gray-black ink on warm white paper, faint plate tone, occasional very pale sepia wipe.',
+      lighting_and_shadow: 'Diffuse gentle light with soft transitions and bright open areas.',
+      texture_and_material:
+        'Grainy crayon-like lines, captured paper weave, soft tonal texture, and faint plate edge.',
+      camera_and_composition:
+        'Intimate quiet composition, uncluttered, with a single softly defined subject.',
+      atmosphere_and_mood: 'Tender, reflective, soft, and quietly mysterious.',
+      rendering_and_quality: 'Refined print quality with soft yet readable forms and no muddiness.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soft Ground Crayon Etching as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'grainy crayon etched line; captured paper weave; soft gray masses; quiet tenderness',
+    },
+  },
+  {
+    id: 'SP17-119',
+    name: 'Vermilion Rubrication Plate',
+    displayName: 'Vermilion Rubrication Plate',
+    styleAnchors: [
+      'Vermilion Rubrication Plate',
+      'black ink with vermilion rubrication',
+      'carbon black pen line',
+    ],
+    category: '3. Ink, Tarot & Bestiary Plates',
+    domain: 'black ink with vermilion rubrication',
+    negativePrompt:
+      'gold leaf, multicolor illumination, readable script, heavy wash, aged grime, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Two-ink manuscript drawing: crisp carbon-black pen line and vermilion red rubrication accents on smooth vellum, with disciplined ornament and no readable script.',
+      subject_treatment:
+        'Prompt X is drawn in precise black line while vermilion is reserved for the most meaningful elements: blood, fire, eyes, garments, or a symbolic accent, never everywhere.',
+      color_and_tone: 'Carbon black, vermilion red, and warm vellum; nothing else.',
+      lighting_and_shadow: 'Flat manuscript light; value from line weight and small black fills.',
+      texture_and_material:
+        'Smooth vellum sheen, crisp pen line, flat red pigment fills with slight edge pooling.',
+      camera_and_composition:
+        'Ordered vertical composition with a clear central subject and small non-text ornamental marks in the margins.',
+      atmosphere_and_mood: 'Solemn, precise, ritual, and severe.',
+      rendering_and_quality:
+        'Clean refined manuscript quality: exact line, flat red, no grime, no gold.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vermilion Rubrication Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'carbon black pen line; vermilion rubrication accents; smooth vellum; disciplined non-text ornament',
+    },
+  },
+  {
+    id: 'SP17-120',
+    name: 'Chiaroscuro Tone Block Woodcut',
+    displayName: 'Chiaroscuro Tone Block Woodcut',
+    styleAnchors: [
+      'Chiaroscuro Tone Block Woodcut',
+      'multi-block chiaroscuro woodcut',
+      'key block plus olive and ochre tone blocks',
+    ],
+    category: '3. Ink, Tarot & Bestiary Plates',
+    domain: 'multi-block chiaroscuro woodcut',
+    negativePrompt:
+      'bright saturated color, fine engraving hatch, digital gradient, grime, card border, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Chiaroscuro woodcut printed from a key block and two tone blocks in olive, ochre, and dark green-brown, with highlights cut out to reveal pale paper.',
+      subject_treatment:
+        'Any prompt subject is built from flat tonal wood blocks: mid tone as the base, darker block for shadow, key block for contour, and carved highlights for light.',
+      color_and_tone: 'Olive, ochre, dark green-brown, black key line, and pale paper highlights.',
+      lighting_and_shadow:
+        'Strong sculptural light from highlight cuts; shadows as flat dark block shapes.',
+      texture_and_material:
+        'Wood grain in the flat tone fields, crisp gouged edges, slight block misalignment.',
+      camera_and_composition:
+        'Monumental composition with a large sculptural subject and simple backdrop.',
+      atmosphere_and_mood: 'Heroic, grave, classical, and earthy.',
+      rendering_and_quality:
+        'Refined printmaking finish: clean block edges, subtle wood grain, readable shapes.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chiaroscuro Tone Block Woodcut as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'key block plus olive and ochre tone blocks; carved highlights; wood grain fields; monumental sculptural light',
+    },
+  },
+  {
+    id: 'SP17-121',
+    name: 'Inked Copper Matrix Plate',
+    displayName: 'Inked Copper Matrix Plate',
+    styleAnchors: [
+      'Inked Copper Matrix Plate',
+      'engraved copper plate as object',
+      'engraved copper surface',
+    ],
+    category: '3. Ink, Tarot & Bestiary Plates',
+    domain: 'engraved copper plate as object',
+    negativePrompt:
+      'paper print, full color painting, coins or medals, readable inscriptions, photoreal hands holding plate, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'The image shown as the engraved copper printing plate itself: ink-filled grooves on polished reddish copper, burnished highlights, verdigris spots, and slight mirror reversal feel.',
+      subject_treatment:
+        'Prompt X appears as a finely engraved design on metal: black ink trapped in grooves draws the subject while the copper surface gleams between lines.',
+      color_and_tone:
+        'Polished copper orange-rose, black ink in grooves, verdigris green patina spots, and bright metallic highlights.',
+      lighting_and_shadow:
+        'Raking light across the metal plate producing specular sheen and soft reflections.',
+      texture_and_material:
+        'Engraved grooves, polished metal sheen, fine scratches, verdigris, and ink residue.',
+      camera_and_composition:
+        'Flat frontal view filling the frame with the plate surface, the engraving composed as a single image.',
+      atmosphere_and_mood: 'Precious, archaeological, mysterious, and tactile.',
+      rendering_and_quality:
+        'Crisp material realism for metal and ink while the engraved drawing remains readable.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Inked Copper Matrix Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'engraved copper surface; ink-filled grooves; verdigris patina; raking metallic sheen; image as object',
+    },
+  },
+  {
+    id: 'SP17-122',
+    name: 'Walnut Ink Bleed Brushplate',
+    displayName: 'Walnut Ink Bleed Brushplate',
+    styleAnchors: [
+      'Walnut Ink Bleed Brushplate',
+      'wet walnut ink brush plate',
+      'walnut ink wet blooms',
+    ],
+    category: '3. Ink, Tarot & Bestiary Plates',
+    domain: 'wet walnut ink brush plate',
+    negativePrompt:
+      'hard crisp line everywhere, black ink, bright color, digital watercolor texture, dense detail, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Loose wet brush drawing in walnut ink: warm brown washes blooming and feathering into damp paper, dark concentrated brush accents, and pale water-rings.',
+      subject_treatment:
+        'Prompt X is suggested more than described: large wet masses establish the subject, a few dark brush accents define the key features, and blooms fill the atmosphere.',
+      color_and_tone: 'Warm walnut browns from pale honey to dark umber on cream cotton paper.',
+      lighting_and_shadow: 'Soft luminous light from bare paper within blooming washes.',
+      texture_and_material:
+        'Wet-in-wet blooms, feathered bleed edges, cauliflower rings, and dry brush accents.',
+      camera_and_composition:
+        'Loose, airy composition with the subject emerging from washes and generous blank paper.',
+      atmosphere_and_mood: 'Poetic, fluid, dreamy, and ancient.',
+      rendering_and_quality:
+        'Controlled watery finish: blooms intentional, subject clearly readable, no mud.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Walnut Ink Bleed Brushplate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'walnut ink wet blooms; feathered bleed; dark brush accents; emerging subject; poetic fluidity',
+    },
+  },
+  {
+    id: 'SP17-123',
+    name: 'Obsessive Stipple Plate',
+    displayName: 'Obsessive Stipple Plate',
+    styleAnchors: ['Obsessive Stipple Plate', 'pure stipple engraving', 'dots only'],
+    category: '3. Ink, Tarot & Bestiary Plates',
+    domain: 'pure stipple engraving',
+    negativePrompt:
+      'lines or hatching, wash, random noise grain, busy background, card border, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Obsessively precise stipple engraving made only of dots: dense dot clouds for shadow, sparse scattering for light, crisp dot-built contours, and no line at all.',
+      subject_treatment:
+        'Any prompt subject is sculpted in dots: volume and material come from dot density and dot size, with clear outer silhouette.',
+      color_and_tone:
+        'Black dots on bright white paper; optional single muted tint of rust or slate in the dot field.',
+      lighting_and_shadow: 'Clear classical light with smooth dot gradations and luminous whites.',
+      texture_and_material: 'Uniform crisp dots, varying density, and smooth paper.',
+      camera_and_composition:
+        'Isolated specimen composition with a centered subject on white ground.',
+      atmosphere_and_mood: 'Meticulous, calm, clinical, and eerie.',
+      rendering_and_quality:
+        'Pristine dot precision: no line, no noise, readable at thumbnail size.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Obsessive Stipple Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'dots only; density-built volume; dot contours; specimen isolation; meticulous calm',
+    },
+  },
+  {
+    id: 'SP17-124',
+    name: 'Blood Rust Monotype Ghost',
+    displayName: 'Blood Rust Monotype Ghost',
+    styleAnchors: [
+      'Blood Rust Monotype Ghost',
+      'dark monotype ghost print',
+      'single-pull monotype',
+    ],
+    category: '3. Ink, Tarot & Bestiary Plates',
+    domain: 'dark monotype ghost print',
+    negativePrompt:
+      'clean line art, bright color, digital paint texture, gore detail, noisy speckle, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Dark painterly monotype: ink painted on a plate and printed once, with wiped-out lights, finger and rag marks, oxide red and black, and faded ghost second-pull areas.',
+      subject_treatment:
+        'Any prompt subject becomes a spectral apparition: bold wiped shapes carry the form, edges dissolve into ghost-print haze, and the image feels pulled from memory.',
+      color_and_tone: 'Black, oxide rust red, dirty gray ghost tones, and cream paper.',
+      lighting_and_shadow:
+        'Wiped-out light shapes against dark painted ink; a single area of pale luminous paper.',
+      texture_and_material:
+        'Brush and rag wipe marks, fingerprints, reticulated ink, and ghost-print softness.',
+      camera_and_composition:
+        'Dramatic close or looming composition with large dark mass and a single luminous shape.',
+      atmosphere_and_mood: 'Haunted, violent, feverish, and dark.',
+      rendering_and_quality:
+        'Painterly print quality with purposeful marks; dark but not muddy; subject readable.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blood Rust Monotype Ghost as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'single-pull monotype; wiped-out lights; rag and finger marks; oxide red and black; ghost second-pull haze',
+    },
+  },
+  {
+    id: 'SP17-125',
+    name: 'Grotesque Satire Etching',
+    displayName: 'Grotesque Satire Etching',
+    styleAnchors: [
+      'Grotesque Satire Etching',
+      'exaggerated satirical etching',
+      'caricatured grotesque figures',
+    ],
+    category: '3. Ink, Tarot & Bestiary Plates',
+    domain: 'exaggerated satirical etching',
+    negativePrompt:
+      'realistic flattering portraits, modern cartoon style, speech bubbles, captions, anime, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Exaggerated satirical etching: caricatured grotesque faces and bodies, lively bitten line, dark aquatint shadows, and crowded but readable figure groups.',
+      subject_treatment:
+        'Prompt X is played as biting satire: faces, postures, and forms are exaggerated to reveal vanity, fear, greed, or absurdity while the subject remains identifiable.',
+      color_and_tone:
+        'Brown-black ink, warm gray aquatint, and cream paper; optional single hand-tinted watercolor wash.',
+      lighting_and_shadow:
+        'Theatrical light with deep aquatint shadow and brightly lit caricatured faces.',
+      texture_and_material:
+        'Lively etched line, aquatint grain, slight plate tone, and occasional hand-tint wash.',
+      camera_and_composition:
+        'Stage-like composition with a main caricatured figure or group and receding secondary grotesques.',
+      atmosphere_and_mood: 'Mocking, grotesque, darkly funny, and sharp.',
+      rendering_and_quality:
+        'Refined old print quality: exaggerated but controlled drawing, readable groups, no digital noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grotesque Satire Etching as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'caricatured grotesque figures; lively etched line; dark aquatint shadow; theatrical satire; hand-tint option',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

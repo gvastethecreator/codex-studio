@@ -348,4 +348,519 @@ export const GENERATED_STYLE_PRESETS = [
         'bone pink riso; bat-eared skull beasts; awkward catacomb figures; teal offset; black claw shapes; crude dot-shadow zine texture',
     },
   },
+  {
+    id: 'SP17-096',
+    name: 'Teal Tangerine Overprint Riso',
+    displayName: 'Teal Tangerine Overprint Riso',
+    styleAnchors: [
+      'Teal Tangerine Overprint Riso',
+      'refined two-drum risograph overprint',
+      'two-drum teal and tangerine',
+    ],
+    category: '2. Dungeon Zine & Risograph Prints',
+    domain: 'refined two-drum risograph overprint',
+    negativePrompt:
+      'black ink drum, rainbow palette, smooth digital gradient, heavy grime, photocopy noise, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Refined two-drum risograph print where teal and tangerine overlap into a deliberate third brown-olive, with confident brush-pen contour, tidy halftone ramps, and generous unprinted paper.',
+      subject_treatment:
+        'Route any prompt subject into a calm two-layer riso separation: one drum carries contour and shadow, the other carries warm fill, and their overlap models form. Figures, creatures, objects, places, and abstract motifs all read through planned overprint rather than painted rendering.',
+      color_and_tone:
+        'Teal, tangerine, their dark overprint olive, and warm off-white paper; no black drum and no extra hues.',
+      lighting_and_shadow:
+        'Light is described by paper left bare, tangerine halftone for midtones, and teal-plus-tangerine overprint for the deepest shadow.',
+      texture_and_material:
+        'Fine even riso grain, clean halftone steps, slight soy-ink sheen, and one to two millimeters of intentional registration drift.',
+      camera_and_composition:
+        'Balanced single-image crop with a clear focal silhouette, open paper margins, and flat shape planning suited to a hand-bound zine page, with no readable typography.',
+      atmosphere_and_mood: 'Curious, crafted, warm, and quietly strange rather than grim.',
+      rendering_and_quality:
+        'Clean studio-grade risograph reproduction: crisp separations, controlled grain, legible shapes at thumbnail size, and no digital gradients.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Teal Tangerine Overprint Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'two-drum teal and tangerine; planned overprint third color; tidy halftone ramps; brush-pen contour; bare paper highlights',
+    },
+  },
+  {
+    id: 'SP17-097',
+    name: 'Ballpoint Scrawl Copier Zine',
+    displayName: 'Ballpoint Scrawl Copier Zine',
+    styleAnchors: [
+      'Ballpoint Scrawl Copier Zine',
+      'messy ballpoint photocopy zine',
+      'looping ballpoint scribble',
+    ],
+    category: '2. Dungeon Zine & Risograph Prints',
+    domain: 'messy ballpoint photocopy zine',
+    negativePrompt:
+      'clean vector line, crisp risograph color, painterly brushwork, lined notebook text, doodle clutter, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Messy ballpoint-pen zine drawing pushed through a cheap copier: looping blue-black biro scribble, overworked shading tangles, uneven pressure, and gray toner haze at the page edges.',
+      subject_treatment:
+        'Keep prompt X intact but render it as an obsessive notebook drawing: contours are found through many searching loops, shadows are dense scribble knots, and details that matter are gone over again and again until the pen almost tears the page.',
+      color_and_tone:
+        'Copier-gray blue-black ink on slightly gray paper, with one optional flat highlighter-yellow or red-pen accent patch.',
+      lighting_and_shadow:
+        'No modeled light; value comes from scribble density, with the darkest knots placed where shadows gather.',
+      texture_and_material:
+        'Ballpoint groove lines, ink blobs at stroke starts, copier toner speckle kept sparse, and faint paper-edge shadow from the glass.',
+      camera_and_composition:
+        'Close off-balance crop that feels drawn directly on a page, with one dominant subject and unfinished edges fading into bare paper.',
+      atmosphere_and_mood: 'Restless, nervous, intimate, funny-desperate, and handmade.',
+      rendering_and_quality:
+        'High-quality reproduction of a deliberately untidy pen drawing; clear silhouette and readable face or form despite the scrawl, without digital cleanup.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ballpoint Scrawl Copier Zine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'looping ballpoint scribble; overworked tangles; copier gray; searching contours; unfinished bare-paper edges; highlighter accent',
+    },
+  },
+  {
+    id: 'SP17-098',
+    name: 'Blackout Toner Doom Zine',
+    displayName: 'Blackout Toner Doom Zine',
+    styleAnchors: ['Blackout Toner Doom Zine', 'overexposed black toner zine', 'black toner flood'],
+    category: '2. Dungeon Zine & Risograph Prints',
+    domain: 'overexposed black toner zine',
+    negativePrompt:
+      'mid-gray muddiness, color accents, readable collage clippings, detailed background, grainy noise overlay, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Near-total black toner flood from an overdriven copier, with the subject surviving only as blown-out white shapes, razor edges, and a few crushed gray transitions.',
+      subject_treatment:
+        'Any subject is reduced to its strongest light-catching planes: faces, hands, edges, and silhouettes are carved as white islands in a sea of black, so prompt X stays readable while becoming extreme and ominous.',
+      color_and_tone: 'Pure toner black, paper white, and a thin band of crushed gray; no color.',
+      lighting_and_shadow:
+        'Brutal top or side light implied by white knockouts, with nearly everything else swallowed by black.',
+      texture_and_material:
+        'Dense glossy toner, faint banding streaks, drum-scratch lines, and occasional white dropouts kept deliberate and sparse.',
+      camera_and_composition:
+        'Tight dramatic crop or looming low angle with a single white-read silhouette; black negative space dominates at least two thirds of the image.',
+      atmosphere_and_mood: 'Oppressive, loud, violent in contrast, and grimly exhilarating.',
+      rendering_and_quality:
+        'Clean high-contrast reproduction of an overexposed copy: the black is solid, not noisy, and white shapes stay sharp and readable at thumbnail size.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blackout Toner Doom Zine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'black toner flood; white knockout survivors; crushed grays; copier banding; two-thirds black space; brutal contrast',
+    },
+  },
+  {
+    id: 'SP17-099',
+    name: 'Fluoro Pink Federal Blue Riso',
+    displayName: 'Fluoro Pink Federal Blue Riso',
+    styleAnchors: [
+      'Fluoro Pink Federal Blue Riso',
+      'fluorescent pink and blue risograph',
+      'fluorescent pink plus federal blue',
+    ],
+    category: '2. Dungeon Zine & Risograph Prints',
+    domain: 'fluorescent pink and blue risograph',
+    negativePrompt:
+      'full-color painting, black keyline drum, neon glow effects, grunge overlay, muddy brown overprint, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Classic fluorescent pink and deep federal-blue risograph pairing, overlapping into electric purple, with bold graphic contour, coarse halftone gradients, and poster-like flatness.',
+      subject_treatment:
+        'Translate any prompt into a punchy two-spot-color separation: blue carries structure and shadow, fluorescent pink carries energy, skin, glow, or motion, and their overlap marks the most important forms.',
+      color_and_tone: 'Fluorescent pink, federal blue, overprint violet, and bright white paper.',
+      lighting_and_shadow:
+        'Glow and light sources are pink halftone blooms; shadows are blue masses; overlaps create saturated violet depth.',
+      texture_and_material:
+        'Coarse halftone dot gradients, visible drum grain, slight ink offset, and fluorescent ink saturation that never turns to gradient mush.',
+      camera_and_composition:
+        'Bold centered or diagonal composition with big flat color shapes, strong silhouette, and poster-like breathing room, without typography.',
+      atmosphere_and_mood: 'Loud, playful, nocturnal, and a little dangerous.',
+      rendering_and_quality:
+        'Crisp two-color riso reproduction with clean dot structure and pure spot-color fields.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fluoro Pink Federal Blue Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'fluorescent pink plus federal blue; violet overprint; coarse halftone gradients; bold flat poster shapes; glow as pink dots',
+    },
+  },
+  {
+    id: 'SP17-100',
+    name: 'Mimeograph Violet Ditto Zine',
+    displayName: 'Mimeograph Violet Ditto Zine',
+    styleAnchors: [
+      'Mimeograph Violet Ditto Zine',
+      'spirit duplicator violet zine',
+      'aniline ditto violet',
+    ],
+    category: '2. Dungeon Zine & Risograph Prints',
+    domain: 'spirit duplicator violet zine',
+    negativePrompt:
+      'saturated neon purple, multiple colors, crisp vector line, heavy black, fake worksheet text, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Spirit-duplicator ditto print in soft aniline violet: faded purple line, feathery ink bleed, uneven pressure from the hand-cranked drum, and pale damp-paper tone.',
+      subject_treatment:
+        'Any prompt subject becomes a modest, slightly ghostly duplicated drawing: firm stylus line for the structure, light hatch for shade, and a fading second pass that suggests it was the fortieth copy of the run.',
+      color_and_tone:
+        'Aniline violet from strong to washed lilac on cool off-white paper; no second hue.',
+      lighting_and_shadow:
+        'Flat reproduction light; value is line density and ink strength, with the lightest areas fading almost into the paper.',
+      texture_and_material:
+        'Feathered bleeding line edges, uneven drum pressure bands, faint solvent stains, and soft paper tooth.',
+      camera_and_composition:
+        'Simple centered or slightly tilted composition with clear silhouette and quiet margins, like a hand-drawn classroom handout image without words.',
+      atmosphere_and_mood: 'Nostalgic, eerie, humble, and faintly haunted.',
+      rendering_and_quality:
+        'Faithful but clean ditto reproduction: soft violet bleed stays controlled, forms remain readable, no digital glow.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mimeograph Violet Ditto Zine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'aniline ditto violet; feathery line bleed; faded fortieth-copy tone; stylus hatch; humble handout drawing',
+    },
+  },
+  {
+    id: 'SP17-101',
+    name: 'Gocco Gold Leaf Micro Print',
+    displayName: 'Gocco Gold Leaf Micro Print',
+    styleAnchors: [
+      'Gocco Gold Leaf Micro Print',
+      'precise mini screen print with metallic ink',
+      'thick opaque screen inks',
+    ],
+    category: '2. Dungeon Zine & Risograph Prints',
+    domain: 'precise mini screen print with metallic ink',
+    negativePrompt:
+      'sloppy registration, photocopy grime, gradient shading, overdecoration, glitter effect, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Small-format screen print with thick opaque inks: deep green, cream, brick, and one metallic gold layer, each shape sharp-edged with the slight raised ink ridge of a tiny hand screen.',
+      subject_treatment:
+        'Render prompt X as a jewel-like print object: forms are simplified into precise stacked ink layers, with gold reserved for the single most precious detail such as an eye, edge, flame, halo, or ornament.',
+      color_and_tone:
+        'Bottle green, cream, brick red, soft charcoal, and one metallic gold spot; colors are opaque and never blend.',
+      lighting_and_shadow:
+        'Graphic light built from layered flat shapes; gold catches implied light as the brightest accent.',
+      texture_and_material:
+        'Thick matte ink with slight edge ridges, micro pinholes, faint screen mesh, and smooth heavy cotton paper.',
+      camera_and_composition:
+        'Compact, carefully composed miniature image with a centered focal subject, clean edges, and small breathing margin of paper, without lettering.',
+      atmosphere_and_mood: 'Precious, calm, ceremonial, and collectible.',
+      rendering_and_quality:
+        'Pristine craft-print finish: exact layer registration, no grain noise, crisp shape edges, and luxurious restraint.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gocco Gold Leaf Micro Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'thick opaque screen inks; metallic gold spot; raised ink ridges; precise layer registration; jewel-like miniature',
+    },
+  },
+  {
+    id: 'SP17-102',
+    name: 'Crust Linocut Copier Rag',
+    displayName: 'Crust Linocut Copier Rag',
+    styleAnchors: [
+      'Crust Linocut Copier Rag',
+      'crust punk linocut photocopy',
+      'gouged linocut blocks',
+    ],
+    category: '2. Dungeon Zine & Risograph Prints',
+    domain: 'crust punk linocut photocopy',
+    negativePrompt:
+      'refined engraving, fine hatching, multiple colors, readable slogans, band logos, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Crust-punk rag aesthetic: violently gouged linocut blocks photocopied and re-photocopied, black chunky carving, white gouge scars, stencil spray fringes, and dirty generational copy loss.',
+      subject_treatment:
+        'Any prompt subject is carved into brutal blocky masses: faces become angular gouge planes, bodies become heavy black shapes with white cut marks, and the prompt keeps its identity through bold silhouette rather than detail.',
+      color_and_tone: 'Black, dirty off-white, and one optional blood-red stencil spray accent.',
+      lighting_and_shadow:
+        'Harsh carved light: white gouge strokes follow form direction; shadows are uncut black.',
+      texture_and_material:
+        'Linocut gouge chatter, uneven ink roll, copier degradation, spray-paint fringe, and grimy but controlled paper wear.',
+      camera_and_composition:
+        'Aggressive frontal or worm-eye crop with a massive silhouette pushing the edges and minimal background.',
+      atmosphere_and_mood: 'Furious, political, raw, underground, and defiant.',
+      rendering_and_quality:
+        'High-quality reproduction of a deliberately crude carving; readable at thumbnail size with deep solid blacks and no muddy gray.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crust Linocut Copier Rag as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'gouged linocut blocks; generational copy loss; white gouge scars; stencil spray fringe; massive crude silhouette',
+    },
+  },
+  {
+    id: 'SP17-103',
+    name: 'Split Fountain Dusk Riso',
+    displayName: 'Split Fountain Dusk Riso',
+    styleAnchors: [
+      'Split Fountain Dusk Riso',
+      'split fountain gradient risograph',
+      'split fountain magenta-orange-yellow blend',
+    ],
+    category: '2. Dungeon Zine & Risograph Prints',
+    domain: 'split fountain gradient risograph',
+    negativePrompt:
+      'digital airbrush gradient, rainbow spectrum, black ink, photographic sky, lens flare, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Split-fountain risograph where one drum carries a smooth ink blend from magenta to orange to yellow, printed under a deep indigo line and shadow layer.',
+      subject_treatment:
+        'Prompt X is laid across the ink fountain so that its vertical position picks up the gradient: sky, heads, or tall forms catch the hot top colors, grounds and feet sink into warmer bands, and indigo holds all drawing.',
+      color_and_tone:
+        'Split fountain magenta, orange, and yellow bands, deep indigo, and warm white paper.',
+      lighting_and_shadow:
+        'Sunset-like light is supplied by the ink fountain itself; indigo halftone and solid shapes model shadow.',
+      texture_and_material:
+        'Soft gradient banding inside the fountain, visible riso grain, crisp indigo halftone, and faint drum roller marks.',
+      camera_and_composition:
+        'Tall vertical composition that uses the full gradient height, with a strong silhouette crossing several color bands.',
+      atmosphere_and_mood: 'Dreamy, melancholic, warm, and cinematic.',
+      rendering_and_quality:
+        'Clean riso reproduction with a true printed blend rather than a digital gradient, sharp indigo drawing, and no muddy overlaps.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Split Fountain Dusk Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'split fountain magenta-orange-yellow blend; indigo drawing layer; vertical color bands; printed not digital gradient',
+    },
+  },
+  {
+    id: 'SP17-104',
+    name: 'Grease Pencil Monster Fanzine',
+    displayName: 'Grease Pencil Monster Fanzine',
+    styleAnchors: [
+      'Grease Pencil Monster Fanzine',
+      'exaggerated grease pencil fanzine',
+      'thick waxy grease pencil',
+    ],
+    category: '2. Dungeon Zine & Risograph Prints',
+    domain: 'exaggerated grease pencil fanzine',
+    negativePrompt:
+      'thin precise pen line, realistic anatomy, painted shading, many colors, cute mascot style, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Exaggerated fanzine drawing in thick waxy grease pencil and china marker: fat wobbling lines, cartoonish distortion, stubby hatch, and one flat color tint added by cheap offset.',
+      subject_treatment:
+        'Push prompt X into rubbery exaggeration: huge heads or hands, bent limbs, oversized teeth or eyes where appropriate, and forceful gesture, while the subject stays recognizable.',
+      color_and_tone:
+        'Waxy black line with one flat spot tint chosen from acid yellow, tomato red, or sky blue on off-white paper.',
+      lighting_and_shadow:
+        'Cartoon flat light with blunt waxy shadow shapes and clear white paper highlights.',
+      texture_and_material:
+        'Crumbly waxy line edges, broken strokes where the pencil skips on paper tooth, and a slightly offset flat color tint.',
+      camera_and_composition:
+        'Dynamic tilted crop, extreme foreshortening, and a single oversized subject bursting toward the frame edge.',
+      atmosphere_and_mood: 'Gleeful, grotesque, loud, and funny.',
+      rendering_and_quality:
+        'High-quality reproduction of a thick crayon-like drawing: bold legible shapes, clean paper, no digital smoothness.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grease Pencil Monster Fanzine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'thick waxy grease pencil; rubbery exaggeration; skipping line on paper tooth; one offset spot tint; bursting foreshortening',
+    },
+  },
+  {
+    id: 'SP17-105',
+    name: 'Misregistered CMY Chaos Print',
+    displayName: 'Misregistered CMY Chaos Print',
+    styleAnchors: [
+      'Misregistered CMY Chaos Print',
+      'extreme offset misregistration print',
+      'drifting CMY plates',
+    ],
+    category: '2. Dungeon Zine & Risograph Prints',
+    domain: 'extreme offset misregistration print',
+    negativePrompt:
+      'perfect registration, glitch pixel effects, RGB chromatic aberration, digital blur, comic speech balloons, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cheap offset print gone wrong: cyan, magenta, and yellow separations slide several millimeters apart, creating ghost edges, color fringes, and vibrating doubled contours around a strong black key.',
+      subject_treatment:
+        'Any prompt subject is printed as if the press shifted mid-run: the black key drawing stays sharp and readable while color plates drift, leaving haloed doubles that exaggerate motion, heat, or panic.',
+      color_and_tone:
+        'Process cyan, magenta, yellow, their accidental overprints, a solid black key, and newsprint-white paper.',
+      lighting_and_shadow: 'Flat print light; fringe colors create a vibrating glow around edges.',
+      texture_and_material:
+        'Visible rosette halftone dots, ink trapping gaps, slight ink set-off, and newsprint fiber.',
+      camera_and_composition:
+        'Energetic action crop with a clear black-line focal subject and color doubles offset in one consistent direction.',
+      atmosphere_and_mood: 'Chaotic, pulpy, electric, and slightly dizzy.',
+      rendering_and_quality:
+        'Controlled chaos: black key crisp, misregistration consistent and intentional, dots readable, no smeared blur.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Misregistered CMY Chaos Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'drifting CMY plates; sharp black key; ghost color fringes; rosette halftone; newsprint pulp energy',
+    },
+  },
+  {
+    id: 'SP17-106',
+    name: 'Herbal Almanac Moss Riso',
+    displayName: 'Herbal Almanac Moss Riso',
+    styleAnchors: [
+      'Herbal Almanac Moss Riso',
+      'refined botanical almanac risograph',
+      'moss green and oxblood riso',
+    ],
+    category: '2. Dungeon Zine & Risograph Prints',
+    domain: 'refined botanical almanac risograph',
+    negativePrompt:
+      'heavy grime, thick crude line, neon colors, readable botanical labels, dense collage, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Refined almanac-style risograph with moss green and oxblood inks, delicate cross-hatched line work, fine stipple, and the quiet order of an old herbal page without any lettering.',
+      subject_treatment:
+        'Render any prompt subject with patient natural-history care: clear contour, measured hatch, and plant-like decorative restraint, so creatures, people, objects, and places feel observed rather than dramatized.',
+      color_and_tone: 'Moss green, oxblood, their dark brown overprint, and warm cream paper.',
+      lighting_and_shadow:
+        'Soft even studio light suggested by careful hatch gradients and bare paper highlights.',
+      texture_and_material:
+        'Fine riso grain, crisp fine line, delicate stipple, light soy-ink sheen, and soft cream paper tooth.',
+      camera_and_composition:
+        'Calm centered study composition with generous margins, a single clearly isolated subject, and small supporting details placed with care.',
+      atmosphere_and_mood: 'Gentle, scholarly, earthy, and quietly uncanny.',
+      rendering_and_quality:
+        'Pristine two-color reproduction with fine line clarity, controlled grain, and no grime.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Herbal Almanac Moss Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'moss green and oxblood riso; fine cross-hatch; delicate stipple; herbal study restraint; calm isolated subject',
+    },
+  },
+  {
+    id: 'SP17-107',
+    name: 'Thermal Fax Decay Zine',
+    displayName: 'Thermal Fax Decay Zine',
+    styleAnchors: [
+      'Thermal Fax Decay Zine',
+      'faded thermal fax reproduction',
+      'thermal fax dither',
+    ],
+    category: '2. Dungeon Zine & Risograph Prints',
+    domain: 'faded thermal fax reproduction',
+    negativePrompt:
+      'sharp clean print, color accents, readable fax headers, digital glitch art, heavy random noise, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Image received by thermal fax and left in the sun: brown-gray dithered tones, horizontal scan streaks, compressed blacks, curling glossy paper, and fading toward one edge.',
+      subject_treatment:
+        'Any prompt subject becomes a degraded transmitted image: silhouettes and key gestures survive through coarse dither and scan lines, while fine details dissolve in a way that feels like lost evidence.',
+      color_and_tone:
+        'Brown-black, sepia-gray, and pale yellowed thermal paper; one edge faded almost to blank.',
+      lighting_and_shadow:
+        'Flattened scanned light with harsh dithered midtones and compressed shadows.',
+      texture_and_material:
+        'Ordered dither patterns, horizontal scan streaks, thermal paper sheen, and gentle fading gradient across the sheet.',
+      camera_and_composition:
+        'Documentary-style off-center crop as if a found photo or sketch was faxed, with slight skew and cut-off edges.',
+      atmosphere_and_mood: 'Cold, mysterious, lost, and unsettling.',
+      rendering_and_quality:
+        'Clean controlled reproduction of degradation: dither is regular and readable, subject still recognizable, no random noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thermal Fax Decay Zine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'thermal fax dither; horizontal scan streaks; sun-faded sepia gray; skewed found-evidence crop; dissolving detail',
+    },
+  },
+  {
+    id: 'SP17-108',
+    name: 'Gold Ember Black Stock Riso',
+    displayName: 'Gold Ember Black Stock Riso',
+    styleAnchors: [
+      'Gold Ember Black Stock Riso',
+      'metallic ink on black paper risograph',
+      'black paper stock',
+    ],
+    category: '2. Dungeon Zine & Risograph Prints',
+    domain: 'metallic ink on black paper risograph',
+    negativePrompt:
+      'white paper, painterly digital rendering, realistic skin shading, full color painting, digital glow bloom, grimy noise, lens flare, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Night-edition risograph printed on black paper stock with flat metallic gold and fluorescent orange spot inks, a few opaque white highlights, and the subject built only from printed line, halftone, and flat ink shapes over bare black paper.',
+      subject_treatment:
+        'Any prompt subject is drawn with light instead of shadow: gold carries structure and edges, orange carries heat and glow, white catches the brightest points, and the black stock supplies every shadow.',
+      color_and_tone: 'Metallic gold, fluorescent orange, opaque white, and deep black paper.',
+      lighting_and_shadow:
+        'Inverted light logic: printed ink is light, bare black paper is darkness, creating an ember-lit nocturnal glow.',
+      texture_and_material:
+        'Metallic shimmer grain, slightly translucent orange over black, riso grain, and soft black paper fiber.',
+      camera_and_composition:
+        'Moody central composition with large areas of empty black paper, a strong focal glow, and elegant silhouette.',
+      atmosphere_and_mood: 'Dark, ceremonial, luxurious, and smoldering.',
+      rendering_and_quality:
+        'Refined special-edition print quality: flat unmodulated ink layers, crisp gold contour and halftone, visible riso grain and slight registration drift, no painted modeling, no realistic skin or metal rendering, no digital bloom.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gold Ember Black Stock Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'black paper stock; metallic gold line; fluorescent orange ember glow; opaque white highlights; inverted light logic',
+    },
+  },
+  {
+    id: 'SP17-109',
+    name: 'Squat Stencil Spray Zine',
+    displayName: 'Squat Stencil Spray Zine',
+    styleAnchors: [
+      'Squat Stencil Spray Zine',
+      'spray stencil cardboard zine',
+      'hand-cut stencil layers',
+    ],
+    category: '2. Dungeon Zine & Risograph Prints',
+    domain: 'spray stencil cardboard zine',
+    negativePrompt:
+      'readable graffiti tags, slogans, brick wall scene, smooth airbrush realism, many colors, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Squat-made spray stencil art on brown cardboard: hand-cut stencil shapes with bridges, soft overspray halos, drips, doubled passes, and red and black paint.',
+      subject_treatment:
+        'Any prompt subject is broken into two or three stencil layers with visible bridges holding islands in place; identity survives through bold cut-paper shapes rather than line detail.',
+      color_and_tone:
+        'Matte black, signal red, and occasional white spray on corrugated brown cardboard.',
+      lighting_and_shadow:
+        'High-contrast stencil value split into highlight, mid, and shadow layers.',
+      texture_and_material:
+        'Overspray halos, drips, paint pooling, stencil bridges, cardboard corrugation, and taped-edge lines.',
+      camera_and_composition:
+        'Bold frontal or three-quarter silhouette with raw cardboard margins and slight layer offset.',
+      atmosphere_and_mood: 'Rebellious, raw, urgent, and street-level.',
+      rendering_and_quality:
+        'Controlled messy finish: shapes readable at thumbnail size, drips and overspray purposeful, cardboard texture clean.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Squat Stencil Spray Zine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'hand-cut stencil layers; stencil bridges; overspray halos and drips; red and black on cardboard; raw urgency',
+    },
+  },
+  {
+    id: 'SP17-110',
+    name: 'Sun Faded Newsprint Riso',
+    displayName: 'Sun Faded Newsprint Riso',
+    styleAnchors: [
+      'Sun Faded Newsprint Riso',
+      'sun-bleached newsprint risograph',
+      'sun-bleached aqua and butter yellow',
+    ],
+    category: '2. Dungeon Zine & Risograph Prints',
+    domain: 'sun-bleached newsprint risograph',
+    negativePrompt:
+      'deep black, high contrast, neon saturation, heavy grime, torn paper collage, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Old risograph zine found on a windowsill: sun-bleached aqua and butter yellow inks, soft low contrast, yellowed newsprint, and gentle fading toward the exposed edge.',
+      subject_treatment:
+        'Render prompt X with soft, simplified shapes and loose halftone, as if the image has quietly faded for years; silhouettes remain clear, detail relaxes.',
+      color_and_tone:
+        'Faded aqua, butter yellow, pale overprint green, and yellowed newsprint; no deep blacks.',
+      lighting_and_shadow:
+        'Soft washed light with low contrast; the brightest areas are bare yellowed paper.',
+      texture_and_material:
+        'Soft newsprint fiber, loose halftone, gentle fade gradient, faint fold crease, and mild ink rub.',
+      camera_and_composition:
+        'Relaxed open composition with plenty of air, one clear subject, and a few secondary shapes.',
+      atmosphere_and_mood: 'Nostalgic, sleepy, sunny, and wistful.',
+      rendering_and_quality:
+        'Clean reproduction of an aged print: faded but not dirty, readable shapes, no grime or digital haze.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sun Faded Newsprint Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'sun-bleached aqua and butter yellow; low contrast; yellowed newsprint; gentle edge fade; relaxed halftone',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

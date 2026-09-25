@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-112
+packId: pack_17
+name: Mezzotint Abyss Plate
+styleAnchors:
+  - Mezzotint Abyss Plate
+  - velvet black mezzotint plate
+  - rocked velvet black
+displayName: Mezzotint Abyss Plate
+category: 3. Ink, Tarot & Bestiary Plates
+domain: velvet black mezzotint plate
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - ink-tarot-and-bestiary-plates
+  - mezzotint
+  - velvet-black
+  - dark-ink
+visualDna:
+  aesthetic: Velvety mezzotint where everything begins in deep rocked black and forms are burnished up into soft glowing grays and pale highlights, with almost no line.
+  subject_treatment: 'Prompt X is pulled out of darkness: faces, hands, edges, and key forms are burnished toward light while the rest stays swallowed in velvet black, making any subject feel nocturnal and grave.'
+  color_and_tone: Rich warm black, soft graphite grays, and creamy paper-white highlights.
+  lighting_and_shadow: Single low light source; soft tonal gradations emerging from black with gentle edge glow.
+  texture_and_material: Fine velvety rocker grain, smooth burnished transitions, and soft plate tone.
+  camera_and_composition: Close, intimate crop or looming presence with most of the frame in deep black and a single luminous focus.
+  atmosphere_and_mood: Grave, hushed, mysterious, and dark.
+  rendering_and_quality: 'Smooth, noiseless mezzotint quality: blacks deep and rich, gradations soft, subject clearly readable.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mezzotint Abyss Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: rocked velvet black; burnished soft light; no line; single luminous focus; grave nocturnal hush
+avoidRules:
+  - line hatching
+  - harsh contrast
+  - color
+  - noisy grain
+  - flat gray mush
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-112.webp
+attributes:
+  negativePrompt: line hatching, harsh contrast, color, noisy grain, flat gray mush, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
+  domain: velvet black mezzotint plate
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - ink-tarot-and-bestiary-plates
+    - mezzotint
+    - velvet-black
+    - dark-ink
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-120
+packId: pack_17
+name: Chiaroscuro Tone Block Woodcut
+styleAnchors:
+  - Chiaroscuro Tone Block Woodcut
+  - multi-block chiaroscuro woodcut
+  - key block plus olive and ochre tone blocks
+displayName: Chiaroscuro Tone Block Woodcut
+category: 3. Ink, Tarot & Bestiary Plates
+domain: multi-block chiaroscuro woodcut
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - ink-tarot-and-bestiary-plates
+  - woodcut
+  - chiaroscuro
+  - tone-blocks
+visualDna:
+  aesthetic: Chiaroscuro woodcut printed from a key block and two tone blocks in olive, ochre, and dark green-brown, with highlights cut out to reveal pale paper.
+  subject_treatment: 'Any prompt subject is built from flat tonal wood blocks: mid tone as the base, darker block for shadow, key block for contour, and carved highlights for light.'
+  color_and_tone: Olive, ochre, dark green-brown, black key line, and pale paper highlights.
+  lighting_and_shadow: Strong sculptural light from highlight cuts; shadows as flat dark block shapes.
+  texture_and_material: Wood grain in the flat tone fields, crisp gouged edges, slight block misalignment.
+  camera_and_composition: Monumental composition with a large sculptural subject and simple backdrop.
+  atmosphere_and_mood: Heroic, grave, classical, and earthy.
+  rendering_and_quality: 'Refined printmaking finish: clean block edges, subtle wood grain, readable shapes.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chiaroscuro Tone Block Woodcut as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: key block plus olive and ochre tone blocks; carved highlights; wood grain fields; monumental sculptural light
+avoidRules:
+  - bright saturated color
+  - fine engraving hatch
+  - digital gradient
+  - grime
+  - card border
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-120.webp
+attributes:
+  negativePrompt: bright saturated color, fine engraving hatch, digital gradient, grime, card border, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
+  domain: multi-block chiaroscuro woodcut
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - ink-tarot-and-bestiary-plates
+    - woodcut
+    - chiaroscuro
+    - tone-blocks
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

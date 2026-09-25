@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-119
+packId: pack_17
+name: Vermilion Rubrication Plate
+styleAnchors:
+  - Vermilion Rubrication Plate
+  - black ink with vermilion rubrication
+  - carbon black pen line
+displayName: Vermilion Rubrication Plate
+category: 3. Ink, Tarot & Bestiary Plates
+domain: black ink with vermilion rubrication
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - ink-tarot-and-bestiary-plates
+  - rubrication
+  - vermilion
+  - refined-ink
+visualDna:
+  aesthetic: 'Two-ink manuscript drawing: crisp carbon-black pen line and vermilion red rubrication accents on smooth vellum, with disciplined ornament and no readable script.'
+  subject_treatment: 'Prompt X is drawn in precise black line while vermilion is reserved for the most meaningful elements: blood, fire, eyes, garments, or a symbolic accent, never everywhere.'
+  color_and_tone: Carbon black, vermilion red, and warm vellum; nothing else.
+  lighting_and_shadow: Flat manuscript light; value from line weight and small black fills.
+  texture_and_material: Smooth vellum sheen, crisp pen line, flat red pigment fills with slight edge pooling.
+  camera_and_composition: Ordered vertical composition with a clear central subject and small non-text ornamental marks in the margins.
+  atmosphere_and_mood: Solemn, precise, ritual, and severe.
+  rendering_and_quality: 'Clean refined manuscript quality: exact line, flat red, no grime, no gold.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vermilion Rubrication Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: carbon black pen line; vermilion rubrication accents; smooth vellum; disciplined non-text ornament
+avoidRules:
+  - gold leaf
+  - multicolor illumination
+  - readable script
+  - heavy wash
+  - aged grime
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-119.webp
+attributes:
+  negativePrompt: gold leaf, multicolor illumination, readable script, heavy wash, aged grime, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
+  domain: black ink with vermilion rubrication
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - ink-tarot-and-bestiary-plates
+    - rubrication
+    - vermilion
+    - refined-ink
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

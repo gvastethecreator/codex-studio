@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-103
+packId: pack_17
+name: Split Fountain Dusk Riso
+styleAnchors:
+  - Split Fountain Dusk Riso
+  - split fountain gradient risograph
+  - split fountain magenta-orange-yellow blend
+displayName: Split Fountain Dusk Riso
+category: 2. Dungeon Zine & Risograph Prints
+domain: split fountain gradient risograph
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - dungeon-zine-and-risograph-prints
+  - risograph
+  - split-fountain
+  - gradient-ink
+visualDna:
+  aesthetic: Split-fountain risograph where one drum carries a smooth ink blend from magenta to orange to yellow, printed under a deep indigo line and shadow layer.
+  subject_treatment: 'Prompt X is laid across the ink fountain so that its vertical position picks up the gradient: sky, heads, or tall forms catch the hot top colors, grounds and feet sink into warmer bands, and indigo holds all drawing.'
+  color_and_tone: Split fountain magenta, orange, and yellow bands, deep indigo, and warm white paper.
+  lighting_and_shadow: Sunset-like light is supplied by the ink fountain itself; indigo halftone and solid shapes model shadow.
+  texture_and_material: Soft gradient banding inside the fountain, visible riso grain, crisp indigo halftone, and faint drum roller marks.
+  camera_and_composition: Tall vertical composition that uses the full gradient height, with a strong silhouette crossing several color bands.
+  atmosphere_and_mood: Dreamy, melancholic, warm, and cinematic.
+  rendering_and_quality: Clean riso reproduction with a true printed blend rather than a digital gradient, sharp indigo drawing, and no muddy overlaps.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Split Fountain Dusk Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: split fountain magenta-orange-yellow blend; indigo drawing layer; vertical color bands; printed not digital gradient
+avoidRules:
+  - digital airbrush gradient
+  - rainbow spectrum
+  - black ink
+  - photographic sky
+  - lens flare
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-103.webp
+attributes:
+  negativePrompt: digital airbrush gradient, rainbow spectrum, black ink, photographic sky, lens flare, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
+  domain: split fountain gradient risograph
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - dungeon-zine-and-risograph-prints
+    - risograph
+    - split-fountain
+    - gradient-ink
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

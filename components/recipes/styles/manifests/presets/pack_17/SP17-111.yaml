@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-111
+packId: pack_17
+name: Copperplate Burin Engraving
+styleAnchors:
+  - Copperplate Burin Engraving
+  - refined line engraving plate
+  - swelling burin lines
+displayName: Copperplate Burin Engraving
+category: 3. Ink, Tarot & Bestiary Plates
+domain: refined line engraving plate
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - ink-tarot-and-bestiary-plates
+  - engraving
+  - burin-line
+  - refined-ink
+visualDna:
+  aesthetic: 'Refined copperplate line engraving: swelling and tapering burin lines, disciplined parallel and cross hatching, dot-and-lozenge fills, and crisp black ink on bright plate-toned paper.'
+  subject_treatment: 'Any prompt subject is modeled entirely by engraved line: contour lines follow the form, hatch direction describes surface, and value comes from line thickness and spacing, never from wash.'
+  color_and_tone: Black ink on warm white paper with a faint plate-tone edge; strictly monochrome.
+  lighting_and_shadow: Classical directional light described by hatch density, with clean highlights left as untouched paper.
+  texture_and_material: Swelling burin lines, cross-hatch lattices, dot-and-lozenge patterns, and a subtle plate mark.
+  camera_and_composition: Formal, well-balanced composition with a clearly modeled focal subject and orderly receding background planes.
+  atmosphere_and_mood: Precise, authoritative, antique, and composed.
+  rendering_and_quality: 'Museum-grade engraving clarity: every line intentional and crisp, no scribble, no noise, readable at thumbnail size.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Copperplate Burin Engraving as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: swelling burin lines; form-following hatch; dot-and-lozenge fills; monochrome plate tone; classical order
+avoidRules:
+  - ink wash
+  - scribbled line
+  - color accents
+  - digital halftone
+  - card border
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-111.webp
+attributes:
+  negativePrompt: ink wash, scribbled line, color accents, digital halftone, card border, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
+  domain: refined line engraving plate
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - ink-tarot-and-bestiary-plates
+    - engraving
+    - burin-line
+    - refined-ink
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

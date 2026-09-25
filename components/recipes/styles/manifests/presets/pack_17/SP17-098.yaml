@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-098
+packId: pack_17
+name: Blackout Toner Doom Zine
+styleAnchors:
+  - Blackout Toner Doom Zine
+  - overexposed black toner zine
+  - black toner flood
+displayName: Blackout Toner Doom Zine
+category: 2. Dungeon Zine & Risograph Prints
+domain: overexposed black toner zine
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - dungeon-zine-and-risograph-prints
+  - photocopy
+  - blackout
+  - dark-print
+visualDna:
+  aesthetic: Near-total black toner flood from an overdriven copier, with the subject surviving only as blown-out white shapes, razor edges, and a few crushed gray transitions.
+  subject_treatment: 'Any subject is reduced to its strongest light-catching planes: faces, hands, edges, and silhouettes are carved as white islands in a sea of black, so prompt X stays readable while becoming extreme and ominous.'
+  color_and_tone: Pure toner black, paper white, and a thin band of crushed gray; no color.
+  lighting_and_shadow: Brutal top or side light implied by white knockouts, with nearly everything else swallowed by black.
+  texture_and_material: Dense glossy toner, faint banding streaks, drum-scratch lines, and occasional white dropouts kept deliberate and sparse.
+  camera_and_composition: Tight dramatic crop or looming low angle with a single white-read silhouette; black negative space dominates at least two thirds of the image.
+  atmosphere_and_mood: Oppressive, loud, violent in contrast, and grimly exhilarating.
+  rendering_and_quality: 'Clean high-contrast reproduction of an overexposed copy: the black is solid, not noisy, and white shapes stay sharp and readable at thumbnail size.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blackout Toner Doom Zine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: black toner flood; white knockout survivors; crushed grays; copier banding; two-thirds black space; brutal contrast
+avoidRules:
+  - mid-gray muddiness
+  - color accents
+  - readable collage clippings
+  - detailed background
+  - grainy noise overlay
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-098.webp
+attributes:
+  negativePrompt: mid-gray muddiness, color accents, readable collage clippings, detailed background, grainy noise overlay, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
+  domain: overexposed black toner zine
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - dungeon-zine-and-risograph-prints
+    - photocopy
+    - blackout
+    - dark-print
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

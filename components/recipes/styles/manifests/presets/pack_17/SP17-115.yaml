@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-115
+packId: pack_17
+name: Sanguine Iron Gall Study
+styleAnchors:
+  - Sanguine Iron Gall Study
+  - red chalk and iron gall ink study
+  - sanguine chalk volume
+displayName: Sanguine Iron Gall Study
+category: 3. Ink, Tarot & Bestiary Plates
+domain: red chalk and iron gall ink study
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - ink-tarot-and-bestiary-plates
+  - sanguine
+  - iron-gall-ink
+  - study-sheet
+visualDna:
+  aesthetic: Old master study combining sanguine red chalk modeling with corroded brown iron-gall pen lines, white chalk heightening, and toned buff paper.
+  subject_treatment: 'Any prompt subject is studied rather than illustrated: red chalk builds volume, brown pen lines assert key contours and details, and white chalk marks the highest lights.'
+  color_and_tone: Sanguine red, iron-gall brown-black, white chalk, and buff or light ochre paper.
+  lighting_and_shadow: Soft studio light from one side; red chalk shadows, paper midtones, and white chalk highlights.
+  texture_and_material: Chalk grain on laid paper, slightly bleeding iron-gall ink, corrosion halos, and faint rubbed smudges.
+  camera_and_composition: Study composition with one main figure or subject plus optional small secondary detail studies of hands, heads, or parts, arranged without text.
+  atmosphere_and_mood: Thoughtful, sensual, classical, and alive.
+  rendering_and_quality: 'Master-drawing quality: confident marks, anatomical clarity, and clean paper.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sanguine Iron Gall Study as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: sanguine chalk volume; iron-gall pen contours; white chalk highlights; buff laid paper; study-sheet vitality
+avoidRules:
+  - full color painting
+  - black digital line
+  - fake handwriting
+  - heavy grime
+  - card frame
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-115.webp
+attributes:
+  negativePrompt: full color painting, black digital line, fake handwriting, heavy grime, card frame, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
+  domain: red chalk and iron gall ink study
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - ink-tarot-and-bestiary-plates
+    - sanguine
+    - iron-gall-ink
+    - study-sheet
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

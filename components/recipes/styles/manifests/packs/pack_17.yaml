@@ -47,6 +47,21 @@ categories:
       - pack_17/SP17-061.yaml
       - pack_17/SP17-062.yaml
       - pack_17/SP17-063.yaml
+      - pack_17/SP17-096.yaml
+      - pack_17/SP17-097.yaml
+      - pack_17/SP17-098.yaml
+      - pack_17/SP17-099.yaml
+      - pack_17/SP17-100.yaml
+      - pack_17/SP17-101.yaml
+      - pack_17/SP17-102.yaml
+      - pack_17/SP17-103.yaml
+      - pack_17/SP17-104.yaml
+      - pack_17/SP17-105.yaml
+      - pack_17/SP17-106.yaml
+      - pack_17/SP17-107.yaml
+      - pack_17/SP17-108.yaml
+      - pack_17/SP17-109.yaml
+      - pack_17/SP17-110.yaml
   - id: ink-tarot-and-bestiary-plates
     name: 3. Ink, Tarot & Bestiary Plates
     presetRefs:
@@ -68,6 +83,21 @@ categories:
       - pack_17/SP17-056.yaml
       - pack_17/SP17-057.yaml
       - pack_17/SP17-058.yaml
+      - pack_17/SP17-111.yaml
+      - pack_17/SP17-112.yaml
+      - pack_17/SP17-113.yaml
+      - pack_17/SP17-114.yaml
+      - pack_17/SP17-115.yaml
+      - pack_17/SP17-116.yaml
+      - pack_17/SP17-117.yaml
+      - pack_17/SP17-118.yaml
+      - pack_17/SP17-119.yaml
+      - pack_17/SP17-120.yaml
+      - pack_17/SP17-121.yaml
+      - pack_17/SP17-122.yaml
+      - pack_17/SP17-123.yaml
+      - pack_17/SP17-124.yaml
+      - pack_17/SP17-125.yaml
   - id: rune-tech-and-apocalyptic-warfronts
     name: 4. Rune-Tech & Apocalyptic Warfronts
     presetRefs:
@@ -167,6 +197,21 @@ presetRefs:
   - pack_17/SP17-061.yaml
   - pack_17/SP17-062.yaml
   - pack_17/SP17-063.yaml
+  - pack_17/SP17-096.yaml
+  - pack_17/SP17-097.yaml
+  - pack_17/SP17-098.yaml
+  - pack_17/SP17-099.yaml
+  - pack_17/SP17-100.yaml
+  - pack_17/SP17-101.yaml
+  - pack_17/SP17-102.yaml
+  - pack_17/SP17-103.yaml
+  - pack_17/SP17-104.yaml
+  - pack_17/SP17-105.yaml
+  - pack_17/SP17-106.yaml
+  - pack_17/SP17-107.yaml
+  - pack_17/SP17-108.yaml
+  - pack_17/SP17-109.yaml
+  - pack_17/SP17-110.yaml
   - pack_17/SP17-033.yaml
   - pack_17/SP17-034.yaml
   - pack_17/SP17-035.yaml
@@ -185,6 +230,21 @@ presetRefs:
   - pack_17/SP17-056.yaml
   - pack_17/SP17-057.yaml
   - pack_17/SP17-058.yaml
+  - pack_17/SP17-111.yaml
+  - pack_17/SP17-112.yaml
+  - pack_17/SP17-113.yaml
+  - pack_17/SP17-114.yaml
+  - pack_17/SP17-115.yaml
+  - pack_17/SP17-116.yaml
+  - pack_17/SP17-117.yaml
+  - pack_17/SP17-118.yaml
+  - pack_17/SP17-119.yaml
+  - pack_17/SP17-120.yaml
+  - pack_17/SP17-121.yaml
+  - pack_17/SP17-122.yaml
+  - pack_17/SP17-123.yaml
+  - pack_17/SP17-124.yaml
+  - pack_17/SP17-125.yaml
   - pack_17/SP17-019.yaml
   - pack_17/SP17-020.yaml
   - pack_17/SP17-021.yaml

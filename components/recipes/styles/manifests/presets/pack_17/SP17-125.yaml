@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-125
+packId: pack_17
+name: Grotesque Satire Etching
+styleAnchors:
+  - Grotesque Satire Etching
+  - exaggerated satirical etching
+  - caricatured grotesque figures
+displayName: Grotesque Satire Etching
+category: 3. Ink, Tarot & Bestiary Plates
+domain: exaggerated satirical etching
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - ink-tarot-and-bestiary-plates
+  - etching
+  - satire
+  - grotesque-caricature
+visualDna:
+  aesthetic: 'Exaggerated satirical etching: caricatured grotesque faces and bodies, lively bitten line, dark aquatint shadows, and crowded but readable figure groups.'
+  subject_treatment: 'Prompt X is played as biting satire: faces, postures, and forms are exaggerated to reveal vanity, fear, greed, or absurdity while the subject remains identifiable.'
+  color_and_tone: Brown-black ink, warm gray aquatint, and cream paper; optional single hand-tinted watercolor wash.
+  lighting_and_shadow: Theatrical light with deep aquatint shadow and brightly lit caricatured faces.
+  texture_and_material: Lively etched line, aquatint grain, slight plate tone, and occasional hand-tint wash.
+  camera_and_composition: Stage-like composition with a main caricatured figure or group and receding secondary grotesques.
+  atmosphere_and_mood: Mocking, grotesque, darkly funny, and sharp.
+  rendering_and_quality: 'Refined old print quality: exaggerated but controlled drawing, readable groups, no digital noise.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grotesque Satire Etching as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: caricatured grotesque figures; lively etched line; dark aquatint shadow; theatrical satire; hand-tint option
+avoidRules:
+  - realistic flattering portraits
+  - modern cartoon style
+  - speech bubbles
+  - captions
+  - anime
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-125.webp
+attributes:
+  negativePrompt: realistic flattering portraits, modern cartoon style, speech bubbles, captions, anime, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
+  domain: exaggerated satirical etching
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - ink-tarot-and-bestiary-plates
+    - etching
+    - satire
+    - grotesque-caricature
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

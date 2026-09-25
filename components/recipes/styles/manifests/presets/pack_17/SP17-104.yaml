@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-104
+packId: pack_17
+name: Grease Pencil Monster Fanzine
+styleAnchors:
+  - Grease Pencil Monster Fanzine
+  - exaggerated grease pencil fanzine
+  - thick waxy grease pencil
+displayName: Grease Pencil Monster Fanzine
+category: 2. Dungeon Zine & Risograph Prints
+domain: exaggerated grease pencil fanzine
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - dungeon-zine-and-risograph-prints
+  - grease-pencil
+  - exaggerated
+  - fanzine
+visualDna:
+  aesthetic: 'Exaggerated fanzine drawing in thick waxy grease pencil and china marker: fat wobbling lines, cartoonish distortion, stubby hatch, and one flat color tint added by cheap offset.'
+  subject_treatment: 'Push prompt X into rubbery exaggeration: huge heads or hands, bent limbs, oversized teeth or eyes where appropriate, and forceful gesture, while the subject stays recognizable.'
+  color_and_tone: Waxy black line with one flat spot tint chosen from acid yellow, tomato red, or sky blue on off-white paper.
+  lighting_and_shadow: Cartoon flat light with blunt waxy shadow shapes and clear white paper highlights.
+  texture_and_material: Crumbly waxy line edges, broken strokes where the pencil skips on paper tooth, and a slightly offset flat color tint.
+  camera_and_composition: Dynamic tilted crop, extreme foreshortening, and a single oversized subject bursting toward the frame edge.
+  atmosphere_and_mood: Gleeful, grotesque, loud, and funny.
+  rendering_and_quality: 'High-quality reproduction of a thick crayon-like drawing: bold legible shapes, clean paper, no digital smoothness.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grease Pencil Monster Fanzine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: thick waxy grease pencil; rubbery exaggeration; skipping line on paper tooth; one offset spot tint; bursting foreshortening
+avoidRules:
+  - thin precise pen line
+  - realistic anatomy
+  - painted shading
+  - many colors
+  - cute mascot style
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-104.webp
+attributes:
+  negativePrompt: thin precise pen line, realistic anatomy, painted shading, many colors, cute mascot style, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
+  domain: exaggerated grease pencil fanzine
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - dungeon-zine-and-risograph-prints
+    - grease-pencil
+    - exaggerated
+    - fanzine
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

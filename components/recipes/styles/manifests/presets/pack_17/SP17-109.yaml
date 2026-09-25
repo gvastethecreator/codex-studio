@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-109
+packId: pack_17
+name: Squat Stencil Spray Zine
+styleAnchors:
+  - Squat Stencil Spray Zine
+  - spray stencil cardboard zine
+  - hand-cut stencil layers
+displayName: Squat Stencil Spray Zine
+category: 2. Dungeon Zine & Risograph Prints
+domain: spray stencil cardboard zine
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - dungeon-zine-and-risograph-prints
+  - stencil
+  - spray-paint
+  - messy-print
+visualDna:
+  aesthetic: 'Squat-made spray stencil art on brown cardboard: hand-cut stencil shapes with bridges, soft overspray halos, drips, doubled passes, and red and black paint.'
+  subject_treatment: Any prompt subject is broken into two or three stencil layers with visible bridges holding islands in place; identity survives through bold cut-paper shapes rather than line detail.
+  color_and_tone: Matte black, signal red, and occasional white spray on corrugated brown cardboard.
+  lighting_and_shadow: High-contrast stencil value split into highlight, mid, and shadow layers.
+  texture_and_material: Overspray halos, drips, paint pooling, stencil bridges, cardboard corrugation, and taped-edge lines.
+  camera_and_composition: Bold frontal or three-quarter silhouette with raw cardboard margins and slight layer offset.
+  atmosphere_and_mood: Rebellious, raw, urgent, and street-level.
+  rendering_and_quality: 'Controlled messy finish: shapes readable at thumbnail size, drips and overspray purposeful, cardboard texture clean.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Squat Stencil Spray Zine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: hand-cut stencil layers; stencil bridges; overspray halos and drips; red and black on cardboard; raw urgency
+avoidRules:
+  - readable graffiti tags
+  - slogans
+  - brick wall scene
+  - smooth airbrush realism
+  - many colors
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-109.webp
+attributes:
+  negativePrompt: readable graffiti tags, slogans, brick wall scene, smooth airbrush realism, many colors, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
+  domain: spray stencil cardboard zine
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - dungeon-zine-and-risograph-prints
+    - stencil
+    - spray-paint
+    - messy-print
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

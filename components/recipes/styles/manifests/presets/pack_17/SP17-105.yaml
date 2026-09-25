@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-105
+packId: pack_17
+name: Misregistered CMY Chaos Print
+styleAnchors:
+  - Misregistered CMY Chaos Print
+  - extreme offset misregistration print
+  - drifting CMY plates
+displayName: Misregistered CMY Chaos Print
+category: 2. Dungeon Zine & Risograph Prints
+domain: extreme offset misregistration print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - dungeon-zine-and-risograph-prints
+  - offset-print
+  - misregistration
+  - cmy
+visualDna:
+  aesthetic: 'Cheap offset print gone wrong: cyan, magenta, and yellow separations slide several millimeters apart, creating ghost edges, color fringes, and vibrating doubled contours around a strong black key.'
+  subject_treatment: 'Any prompt subject is printed as if the press shifted mid-run: the black key drawing stays sharp and readable while color plates drift, leaving haloed doubles that exaggerate motion, heat, or panic.'
+  color_and_tone: Process cyan, magenta, yellow, their accidental overprints, a solid black key, and newsprint-white paper.
+  lighting_and_shadow: Flat print light; fringe colors create a vibrating glow around edges.
+  texture_and_material: Visible rosette halftone dots, ink trapping gaps, slight ink set-off, and newsprint fiber.
+  camera_and_composition: Energetic action crop with a clear black-line focal subject and color doubles offset in one consistent direction.
+  atmosphere_and_mood: Chaotic, pulpy, electric, and slightly dizzy.
+  rendering_and_quality: 'Controlled chaos: black key crisp, misregistration consistent and intentional, dots readable, no smeared blur.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Misregistered CMY Chaos Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: drifting CMY plates; sharp black key; ghost color fringes; rosette halftone; newsprint pulp energy
+avoidRules:
+  - perfect registration
+  - glitch pixel effects
+  - RGB chromatic aberration
+  - digital blur
+  - comic speech balloons
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-105.webp
+attributes:
+  negativePrompt: perfect registration, glitch pixel effects, RGB chromatic aberration, digital blur, comic speech balloons, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
+  domain: extreme offset misregistration print
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - dungeon-zine-and-risograph-prints
+    - offset-print
+    - misregistration
+    - cmy
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

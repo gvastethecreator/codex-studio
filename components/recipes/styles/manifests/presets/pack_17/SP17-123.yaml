@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-123
+packId: pack_17
+name: Obsessive Stipple Plate
+styleAnchors:
+  - Obsessive Stipple Plate
+  - pure stipple engraving
+  - dots only
+displayName: Obsessive Stipple Plate
+category: 3. Ink, Tarot & Bestiary Plates
+domain: pure stipple engraving
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - ink-tarot-and-bestiary-plates
+  - stipple
+  - pointillist-ink
+  - refined-ink
+visualDna:
+  aesthetic: 'Obsessively precise stipple engraving made only of dots: dense dot clouds for shadow, sparse scattering for light, crisp dot-built contours, and no line at all.'
+  subject_treatment: 'Any prompt subject is sculpted in dots: volume and material come from dot density and dot size, with clear outer silhouette.'
+  color_and_tone: Black dots on bright white paper; optional single muted tint of rust or slate in the dot field.
+  lighting_and_shadow: Clear classical light with smooth dot gradations and luminous whites.
+  texture_and_material: Uniform crisp dots, varying density, and smooth paper.
+  camera_and_composition: Isolated specimen composition with a centered subject on white ground.
+  atmosphere_and_mood: Meticulous, calm, clinical, and eerie.
+  rendering_and_quality: 'Pristine dot precision: no line, no noise, readable at thumbnail size.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Obsessive Stipple Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: dots only; density-built volume; dot contours; specimen isolation; meticulous calm
+avoidRules:
+  - lines or hatching
+  - wash
+  - random noise grain
+  - busy background
+  - card border
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-123.webp
+attributes:
+  negativePrompt: lines or hatching, wash, random noise grain, busy background, card border, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
+  domain: pure stipple engraving
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - ink-tarot-and-bestiary-plates
+    - stipple
+    - pointillist-ink
+    - refined-ink
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

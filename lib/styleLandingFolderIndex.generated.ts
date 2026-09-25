@@ -245,7 +245,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'dungeon_dark_fantasy_wargame',
     kind: 'collection',
-    presetCount: 95,
+    presetCount: 125,
     imageKeys: ['SP17-001', 'SP17-073', 'SP17-002', 'SP17-003', 'SP17-004', 'SP17-005'],
   },
   {
@@ -455,7 +455,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'pack_17',
     kind: 'source',
-    presetCount: 95,
+    presetCount: 125,
     imageKeys: [
       'pack_17__dark_fantasy_and_gothic_courts',
       'pack_17__dungeon_zine_and_risograph_prints',

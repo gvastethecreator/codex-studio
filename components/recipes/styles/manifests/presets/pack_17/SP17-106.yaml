@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-106
+packId: pack_17
+name: Herbal Almanac Moss Riso
+styleAnchors:
+  - Herbal Almanac Moss Riso
+  - refined botanical almanac risograph
+  - moss green and oxblood riso
+displayName: Herbal Almanac Moss Riso
+category: 2. Dungeon Zine & Risograph Prints
+domain: refined botanical almanac risograph
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - dungeon-zine-and-risograph-prints
+  - risograph
+  - moss-oxblood
+  - refined-print
+visualDna:
+  aesthetic: Refined almanac-style risograph with moss green and oxblood inks, delicate cross-hatched line work, fine stipple, and the quiet order of an old herbal page without any lettering.
+  subject_treatment: 'Render any prompt subject with patient natural-history care: clear contour, measured hatch, and plant-like decorative restraint, so creatures, people, objects, and places feel observed rather than dramatized.'
+  color_and_tone: Moss green, oxblood, their dark brown overprint, and warm cream paper.
+  lighting_and_shadow: Soft even studio light suggested by careful hatch gradients and bare paper highlights.
+  texture_and_material: Fine riso grain, crisp fine line, delicate stipple, light soy-ink sheen, and soft cream paper tooth.
+  camera_and_composition: Calm centered study composition with generous margins, a single clearly isolated subject, and small supporting details placed with care.
+  atmosphere_and_mood: Gentle, scholarly, earthy, and quietly uncanny.
+  rendering_and_quality: Pristine two-color reproduction with fine line clarity, controlled grain, and no grime.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Herbal Almanac Moss Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: moss green and oxblood riso; fine cross-hatch; delicate stipple; herbal study restraint; calm isolated subject
+avoidRules:
+  - heavy grime
+  - thick crude line
+  - neon colors
+  - readable botanical labels
+  - dense collage
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-106.webp
+attributes:
+  negativePrompt: heavy grime, thick crude line, neon colors, readable botanical labels, dense collage, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
+  domain: refined botanical almanac risograph
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - dungeon-zine-and-risograph-prints
+    - risograph
+    - moss-oxblood
+    - refined-print
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

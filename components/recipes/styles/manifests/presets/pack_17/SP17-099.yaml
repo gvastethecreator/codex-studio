@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-099
+packId: pack_17
+name: Fluoro Pink Federal Blue Riso
+styleAnchors:
+  - Fluoro Pink Federal Blue Riso
+  - fluorescent pink and blue risograph
+  - fluorescent pink plus federal blue
+displayName: Fluoro Pink Federal Blue Riso
+category: 2. Dungeon Zine & Risograph Prints
+domain: fluorescent pink and blue risograph
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - dungeon-zine-and-risograph-prints
+  - risograph
+  - fluorescent-pink
+  - federal-blue
+visualDna:
+  aesthetic: Classic fluorescent pink and deep federal-blue risograph pairing, overlapping into electric purple, with bold graphic contour, coarse halftone gradients, and poster-like flatness.
+  subject_treatment: 'Translate any prompt into a punchy two-spot-color separation: blue carries structure and shadow, fluorescent pink carries energy, skin, glow, or motion, and their overlap marks the most important forms.'
+  color_and_tone: Fluorescent pink, federal blue, overprint violet, and bright white paper.
+  lighting_and_shadow: Glow and light sources are pink halftone blooms; shadows are blue masses; overlaps create saturated violet depth.
+  texture_and_material: Coarse halftone dot gradients, visible drum grain, slight ink offset, and fluorescent ink saturation that never turns to gradient mush.
+  camera_and_composition: Bold centered or diagonal composition with big flat color shapes, strong silhouette, and poster-like breathing room, without typography.
+  atmosphere_and_mood: Loud, playful, nocturnal, and a little dangerous.
+  rendering_and_quality: Crisp two-color riso reproduction with clean dot structure and pure spot-color fields.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fluoro Pink Federal Blue Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: fluorescent pink plus federal blue; violet overprint; coarse halftone gradients; bold flat poster shapes; glow as pink dots
+avoidRules:
+  - full-color painting
+  - black keyline drum
+  - neon glow effects
+  - grunge overlay
+  - muddy brown overprint
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-099.webp
+attributes:
+  negativePrompt: full-color painting, black keyline drum, neon glow effects, grunge overlay, muddy brown overprint, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
+  domain: fluorescent pink and blue risograph
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - dungeon-zine-and-risograph-prints
+    - risograph
+    - fluorescent-pink
+    - federal-blue
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

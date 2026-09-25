@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-122
+packId: pack_17
+name: Walnut Ink Bleed Brushplate
+styleAnchors:
+  - Walnut Ink Bleed Brushplate
+  - wet walnut ink brush plate
+  - walnut ink wet blooms
+displayName: Walnut Ink Bleed Brushplate
+category: 3. Ink, Tarot & Bestiary Plates
+domain: wet walnut ink brush plate
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - ink-tarot-and-bestiary-plates
+  - walnut-ink
+  - wet-brush
+  - bleed
+visualDna:
+  aesthetic: 'Loose wet brush drawing in walnut ink: warm brown washes blooming and feathering into damp paper, dark concentrated brush accents, and pale water-rings.'
+  subject_treatment: 'Prompt X is suggested more than described: large wet masses establish the subject, a few dark brush accents define the key features, and blooms fill the atmosphere.'
+  color_and_tone: Warm walnut browns from pale honey to dark umber on cream cotton paper.
+  lighting_and_shadow: Soft luminous light from bare paper within blooming washes.
+  texture_and_material: Wet-in-wet blooms, feathered bleed edges, cauliflower rings, and dry brush accents.
+  camera_and_composition: Loose, airy composition with the subject emerging from washes and generous blank paper.
+  atmosphere_and_mood: Poetic, fluid, dreamy, and ancient.
+  rendering_and_quality: 'Controlled watery finish: blooms intentional, subject clearly readable, no mud.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Walnut Ink Bleed Brushplate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: walnut ink wet blooms; feathered bleed; dark brush accents; emerging subject; poetic fluidity
+avoidRules:
+  - hard crisp line everywhere
+  - black ink
+  - bright color
+  - digital watercolor texture
+  - dense detail
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-122.webp
+attributes:
+  negativePrompt: hard crisp line everywhere, black ink, bright color, digital watercolor texture, dense detail, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
+  domain: wet walnut ink brush plate
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - ink-tarot-and-bestiary-plates
+    - walnut-ink
+    - wet-brush
+    - bleed
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

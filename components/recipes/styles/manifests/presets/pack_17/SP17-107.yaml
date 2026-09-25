@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-107
+packId: pack_17
+name: Thermal Fax Decay Zine
+styleAnchors:
+  - Thermal Fax Decay Zine
+  - faded thermal fax reproduction
+  - thermal fax dither
+displayName: Thermal Fax Decay Zine
+category: 2. Dungeon Zine & Risograph Prints
+domain: faded thermal fax reproduction
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - dungeon-zine-and-risograph-prints
+  - fax
+  - thermal-paper
+  - faded-print
+visualDna:
+  aesthetic: 'Image received by thermal fax and left in the sun: brown-gray dithered tones, horizontal scan streaks, compressed blacks, curling glossy paper, and fading toward one edge.'
+  subject_treatment: 'Any prompt subject becomes a degraded transmitted image: silhouettes and key gestures survive through coarse dither and scan lines, while fine details dissolve in a way that feels like lost evidence.'
+  color_and_tone: Brown-black, sepia-gray, and pale yellowed thermal paper; one edge faded almost to blank.
+  lighting_and_shadow: Flattened scanned light with harsh dithered midtones and compressed shadows.
+  texture_and_material: Ordered dither patterns, horizontal scan streaks, thermal paper sheen, and gentle fading gradient across the sheet.
+  camera_and_composition: Documentary-style off-center crop as if a found photo or sketch was faxed, with slight skew and cut-off edges.
+  atmosphere_and_mood: Cold, mysterious, lost, and unsettling.
+  rendering_and_quality: 'Clean controlled reproduction of degradation: dither is regular and readable, subject still recognizable, no random noise.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thermal Fax Decay Zine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: thermal fax dither; horizontal scan streaks; sun-faded sepia gray; skewed found-evidence crop; dissolving detail
+avoidRules:
+  - sharp clean print
+  - color accents
+  - readable fax headers
+  - digital glitch art
+  - heavy random noise
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-107.webp
+attributes:
+  negativePrompt: sharp clean print, color accents, readable fax headers, digital glitch art, heavy random noise, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
+  domain: faded thermal fax reproduction
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - dungeon-zine-and-risograph-prints
+    - fax
+    - thermal-paper
+    - faded-print
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

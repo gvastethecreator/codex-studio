@@ -3,7 +3,7 @@
     {
       "id": "pack_17",
       "name": "Medieval Fantasy & Dungeon Zine",
-      "presetCount": 95
+      "presetCount": 125
     }
   ],
   "presets": [
@@ -596,6 +596,336 @@
       "searchableText": "sp17-063 bone pink catacomb riso bone pink catacomb riso pastel toxic dungeon print 2. dungeon zine & risograph prints zine reproduction bone pink catacomb risograph pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints bone-pink-catacomb-risograph"
     },
     {
+      "id": "SP17-096",
+      "name": "Teal Tangerine Overprint Riso",
+      "styleAnchors": [
+        "Teal Tangerine Overprint Riso",
+        "refined two-drum risograph overprint",
+        "two-drum teal and tangerine"
+      ],
+      "ref": "pack_17/SP17-096.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "refined two-drum risograph overprint",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "refined-two-drum-risograph-overprint"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-096 teal tangerine overprint riso refined two-drum risograph overprint two-drum teal and tangerine 2. dungeon zine & risograph prints zine reproduction refined two-drum risograph overprint pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints refined-two-drum-risograph-overprint"
+    },
+    {
+      "id": "SP17-097",
+      "name": "Ballpoint Scrawl Copier Zine",
+      "styleAnchors": [
+        "Ballpoint Scrawl Copier Zine",
+        "messy ballpoint photocopy zine",
+        "looping ballpoint scribble"
+      ],
+      "ref": "pack_17/SP17-097.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "messy ballpoint photocopy zine",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "messy-ballpoint-photocopy-zine"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-097 ballpoint scrawl copier zine messy ballpoint photocopy zine looping ballpoint scribble 2. dungeon zine & risograph prints zine reproduction messy ballpoint photocopy zine pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints messy-ballpoint-photocopy-zine"
+    },
+    {
+      "id": "SP17-098",
+      "name": "Blackout Toner Doom Zine",
+      "styleAnchors": [
+        "Blackout Toner Doom Zine",
+        "overexposed black toner zine",
+        "black toner flood"
+      ],
+      "ref": "pack_17/SP17-098.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "overexposed black toner zine",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "overexposed-black-toner-zine"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-098 blackout toner doom zine overexposed black toner zine black toner flood 2. dungeon zine & risograph prints zine reproduction overexposed black toner zine pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints overexposed-black-toner-zine"
+    },
+    {
+      "id": "SP17-099",
+      "name": "Fluoro Pink Federal Blue Riso",
+      "styleAnchors": [
+        "Fluoro Pink Federal Blue Riso",
+        "fluorescent pink and blue risograph",
+        "fluorescent pink plus federal blue"
+      ],
+      "ref": "pack_17/SP17-099.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "fluorescent pink and blue risograph",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "fluorescent-pink-and-blue-risograph"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-099 fluoro pink federal blue riso fluorescent pink and blue risograph fluorescent pink plus federal blue 2. dungeon zine & risograph prints zine reproduction fluorescent pink and blue risograph pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints fluorescent-pink-and-blue-risograph"
+    },
+    {
+      "id": "SP17-100",
+      "name": "Mimeograph Violet Ditto Zine",
+      "styleAnchors": [
+        "Mimeograph Violet Ditto Zine",
+        "spirit duplicator violet zine",
+        "aniline ditto violet"
+      ],
+      "ref": "pack_17/SP17-100.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "spirit duplicator violet zine",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "spirit-duplicator-violet-zine"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-100 mimeograph violet ditto zine spirit duplicator violet zine aniline ditto violet 2. dungeon zine & risograph prints zine reproduction spirit duplicator violet zine pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints spirit-duplicator-violet-zine"
+    },
+    {
+      "id": "SP17-101",
+      "name": "Gocco Gold Leaf Micro Print",
+      "styleAnchors": [
+        "Gocco Gold Leaf Micro Print",
+        "precise mini screen print with metallic ink",
+        "thick opaque screen inks"
+      ],
+      "ref": "pack_17/SP17-101.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "precise mini screen print with metallic ink",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "precise-mini-screen-print-with-metallic-ink"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-101 gocco gold leaf micro print precise mini screen print with metallic ink thick opaque screen inks 2. dungeon zine & risograph prints zine reproduction precise mini screen print with metallic ink pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints precise-mini-screen-print-with-metallic-ink"
+    },
+    {
+      "id": "SP17-102",
+      "name": "Crust Linocut Copier Rag",
+      "styleAnchors": [
+        "Crust Linocut Copier Rag",
+        "crust punk linocut photocopy",
+        "gouged linocut blocks"
+      ],
+      "ref": "pack_17/SP17-102.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "crust punk linocut photocopy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "crust-punk-linocut-photocopy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-102 crust linocut copier rag crust punk linocut photocopy gouged linocut blocks 2. dungeon zine & risograph prints zine reproduction crust punk linocut photocopy pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints crust-punk-linocut-photocopy"
+    },
+    {
+      "id": "SP17-103",
+      "name": "Split Fountain Dusk Riso",
+      "styleAnchors": [
+        "Split Fountain Dusk Riso",
+        "split fountain gradient risograph",
+        "split fountain magenta-orange-yellow blend"
+      ],
+      "ref": "pack_17/SP17-103.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "split fountain gradient risograph",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "split-fountain-gradient-risograph"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-103 split fountain dusk riso split fountain gradient risograph split fountain magenta-orange-yellow blend 2. dungeon zine & risograph prints zine reproduction split fountain gradient risograph pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints split-fountain-gradient-risograph"
+    },
+    {
+      "id": "SP17-104",
+      "name": "Grease Pencil Monster Fanzine",
+      "styleAnchors": [
+        "Grease Pencil Monster Fanzine",
+        "exaggerated grease pencil fanzine",
+        "thick waxy grease pencil"
+      ],
+      "ref": "pack_17/SP17-104.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "exaggerated grease pencil fanzine",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "exaggerated-grease-pencil-fanzine"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-104 grease pencil monster fanzine exaggerated grease pencil fanzine thick waxy grease pencil 2. dungeon zine & risograph prints zine reproduction exaggerated grease pencil fanzine pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints exaggerated-grease-pencil-fanzine"
+    },
+    {
+      "id": "SP17-105",
+      "name": "Misregistered CMY Chaos Print",
+      "styleAnchors": [
+        "Misregistered CMY Chaos Print",
+        "extreme offset misregistration print",
+        "drifting CMY plates"
+      ],
+      "ref": "pack_17/SP17-105.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "extreme offset misregistration print",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "extreme-offset-misregistration-print"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-105 misregistered cmy chaos print extreme offset misregistration print drifting cmy plates 2. dungeon zine & risograph prints zine reproduction extreme offset misregistration print pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints extreme-offset-misregistration-print"
+    },
+    {
+      "id": "SP17-106",
+      "name": "Herbal Almanac Moss Riso",
+      "styleAnchors": [
+        "Herbal Almanac Moss Riso",
+        "refined botanical almanac risograph",
+        "moss green and oxblood riso"
+      ],
+      "ref": "pack_17/SP17-106.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "refined botanical almanac risograph",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "refined-botanical-almanac-risograph"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-106 herbal almanac moss riso refined botanical almanac risograph moss green and oxblood riso 2. dungeon zine & risograph prints zine reproduction refined botanical almanac risograph pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints refined-botanical-almanac-risograph"
+    },
+    {
+      "id": "SP17-107",
+      "name": "Thermal Fax Decay Zine",
+      "styleAnchors": [
+        "Thermal Fax Decay Zine",
+        "faded thermal fax reproduction",
+        "thermal fax dither"
+      ],
+      "ref": "pack_17/SP17-107.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "faded thermal fax reproduction",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "faded-thermal-fax-reproduction"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-107 thermal fax decay zine faded thermal fax reproduction thermal fax dither 2. dungeon zine & risograph prints zine reproduction faded thermal fax reproduction pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints faded-thermal-fax-reproduction"
+    },
+    {
+      "id": "SP17-108",
+      "name": "Gold Ember Black Stock Riso",
+      "styleAnchors": [
+        "Gold Ember Black Stock Riso",
+        "metallic ink on black paper risograph",
+        "black paper stock"
+      ],
+      "ref": "pack_17/SP17-108.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "metallic ink on black paper risograph",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "metallic-ink-on-black-paper-risograph"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-108 gold ember black stock riso metallic ink on black paper risograph black paper stock 2. dungeon zine & risograph prints zine reproduction metallic ink on black paper risograph pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints metallic-ink-on-black-paper-risograph"
+    },
+    {
+      "id": "SP17-109",
+      "name": "Squat Stencil Spray Zine",
+      "styleAnchors": [
+        "Squat Stencil Spray Zine",
+        "spray stencil cardboard zine",
+        "hand-cut stencil layers"
+      ],
+      "ref": "pack_17/SP17-109.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "spray stencil cardboard zine",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "spray-stencil-cardboard-zine"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-109 squat stencil spray zine spray stencil cardboard zine hand-cut stencil layers 2. dungeon zine & risograph prints zine reproduction spray stencil cardboard zine pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints spray-stencil-cardboard-zine"
+    },
+    {
+      "id": "SP17-110",
+      "name": "Sun Faded Newsprint Riso",
+      "styleAnchors": [
+        "Sun Faded Newsprint Riso",
+        "sun-bleached newsprint risograph",
+        "sun-bleached aqua and butter yellow"
+      ],
+      "ref": "pack_17/SP17-110.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "sun-bleached newsprint risograph",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "sun-bleached-newsprint-risograph"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-110 sun faded newsprint riso sun-bleached newsprint risograph sun-bleached aqua and butter yellow 2. dungeon zine & risograph prints zine reproduction sun-bleached newsprint risograph pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints sun-bleached-newsprint-risograph"
+    },
+    {
       "id": "SP17-033",
       "name": "Bone Tarot Arcana",
       "sourceName": "Bone Tarot Horror Arcana",
@@ -942,6 +1272,332 @@
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp17-058 dark medieval ink plate dark medieval ink plate inverted manuscript plate 3. ink, tarot & bestiary plates ink & plate formats dark inverted medieval ink pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates dark-inverted-medieval-ink"
+    },
+    {
+      "id": "SP17-111",
+      "name": "Copperplate Burin Engraving",
+      "styleAnchors": [
+        "Copperplate Burin Engraving",
+        "refined line engraving plate",
+        "swelling burin lines"
+      ],
+      "ref": "pack_17/SP17-111.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "refined line engraving plate",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "refined-line-engraving-plate"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-111 copperplate burin engraving refined line engraving plate swelling burin lines 3. ink, tarot & bestiary plates ink & plate formats refined line engraving plate pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates refined-line-engraving-plate"
+    },
+    {
+      "id": "SP17-112",
+      "name": "Mezzotint Abyss Plate",
+      "styleAnchors": [
+        "Mezzotint Abyss Plate",
+        "velvet black mezzotint plate",
+        "rocked velvet black"
+      ],
+      "ref": "pack_17/SP17-112.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "velvet black mezzotint plate",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "velvet-black-mezzotint-plate"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-112 mezzotint abyss plate velvet black mezzotint plate rocked velvet black 3. ink, tarot & bestiary plates ink & plate formats velvet black mezzotint plate pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates velvet-black-mezzotint-plate"
+    },
+    {
+      "id": "SP17-113",
+      "name": "Drypoint Burr Nightmare",
+      "styleAnchors": [
+        "Drypoint Burr Nightmare",
+        "scratchy drypoint burr plate",
+        "jittery needle line"
+      ],
+      "ref": "pack_17/SP17-113.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "scratchy drypoint burr plate",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "scratchy-drypoint-burr-plate"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-113 drypoint burr nightmare scratchy drypoint burr plate jittery needle line 3. ink, tarot & bestiary plates ink & plate formats scratchy drypoint burr plate pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates scratchy-drypoint-burr-plate"
+    },
+    {
+      "id": "SP17-114",
+      "name": "Sepia Aquatint Wash Plate",
+      "styleAnchors": [
+        "Sepia Aquatint Wash Plate",
+        "sepia aquatint tonal etching",
+        "granular sepia aquatint"
+      ],
+      "ref": "pack_17/SP17-114.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "sepia aquatint tonal etching",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "sepia-aquatint-tonal-etching"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-114 sepia aquatint wash plate sepia aquatint tonal etching granular sepia aquatint 3. ink, tarot & bestiary plates ink & plate formats sepia aquatint tonal etching pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates sepia-aquatint-tonal-etching"
+    },
+    {
+      "id": "SP17-115",
+      "name": "Sanguine Iron Gall Study",
+      "styleAnchors": [
+        "Sanguine Iron Gall Study",
+        "red chalk and iron gall ink study",
+        "sanguine chalk volume"
+      ],
+      "ref": "pack_17/SP17-115.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "red chalk and iron gall ink study",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "red-chalk-and-iron-gall-ink-study"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-115 sanguine iron gall study red chalk and iron gall ink study sanguine chalk volume 3. ink, tarot & bestiary plates ink & plate formats red chalk and iron gall ink study pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates red-chalk-and-iron-gall-ink-study"
+    },
+    {
+      "id": "SP17-116",
+      "name": "Gold Ink Indigo Paper Plate",
+      "styleAnchors": [
+        "Gold Ink Indigo Paper Plate",
+        "gold and silver ink on indigo paper",
+        "gold and silver ink on indigo"
+      ],
+      "ref": "pack_17/SP17-116.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "gold and silver ink on indigo paper",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "gold-and-silver-ink-on-indigo-paper"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-116 gold ink indigo paper plate gold and silver ink on indigo paper gold and silver ink on indigo 3. ink, tarot & bestiary plates ink & plate formats gold and silver ink on indigo paper pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates gold-and-silver-ink-on-indigo-paper"
+    },
+    {
+      "id": "SP17-117",
+      "name": "Frantic Quill Blot Plate",
+      "styleAnchors": [
+        "Frantic Quill Blot Plate",
+        "frantic quill ink scribble",
+        "whipping quill line"
+      ],
+      "ref": "pack_17/SP17-117.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "frantic quill ink scribble",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "frantic-quill-ink-scribble"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-117 frantic quill blot plate frantic quill ink scribble whipping quill line 3. ink, tarot & bestiary plates ink & plate formats frantic quill ink scribble pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates frantic-quill-ink-scribble"
+    },
+    {
+      "id": "SP17-118",
+      "name": "Soft Ground Crayon Etching",
+      "styleAnchors": [
+        "Soft Ground Crayon Etching",
+        "soft-ground etching plate",
+        "grainy crayon etched line"
+      ],
+      "ref": "pack_17/SP17-118.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "soft-ground etching plate",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "soft-ground-etching-plate"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-118 soft ground crayon etching soft-ground etching plate grainy crayon etched line 3. ink, tarot & bestiary plates ink & plate formats soft-ground etching plate pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates soft-ground-etching-plate"
+    },
+    {
+      "id": "SP17-119",
+      "name": "Vermilion Rubrication Plate",
+      "styleAnchors": [
+        "Vermilion Rubrication Plate",
+        "black ink with vermilion rubrication",
+        "carbon black pen line"
+      ],
+      "ref": "pack_17/SP17-119.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "black ink with vermilion rubrication",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "black-ink-with-vermilion-rubrication"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-119 vermilion rubrication plate black ink with vermilion rubrication carbon black pen line 3. ink, tarot & bestiary plates ink & plate formats black ink with vermilion rubrication pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates black-ink-with-vermilion-rubrication"
+    },
+    {
+      "id": "SP17-120",
+      "name": "Chiaroscuro Tone Block Woodcut",
+      "styleAnchors": [
+        "Chiaroscuro Tone Block Woodcut",
+        "multi-block chiaroscuro woodcut",
+        "key block plus olive and ochre tone blocks"
+      ],
+      "ref": "pack_17/SP17-120.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "multi-block chiaroscuro woodcut",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "multi-block-chiaroscuro-woodcut"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-120 chiaroscuro tone block woodcut multi-block chiaroscuro woodcut key block plus olive and ochre tone blocks 3. ink, tarot & bestiary plates ink & plate formats multi-block chiaroscuro woodcut pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates multi-block-chiaroscuro-woodcut"
+    },
+    {
+      "id": "SP17-121",
+      "name": "Inked Copper Matrix Plate",
+      "styleAnchors": [
+        "Inked Copper Matrix Plate",
+        "engraved copper plate as object",
+        "engraved copper surface"
+      ],
+      "ref": "pack_17/SP17-121.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "engraved copper plate as object",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "engraved-copper-plate-as-object"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-121 inked copper matrix plate engraved copper plate as object engraved copper surface 3. ink, tarot & bestiary plates ink & plate formats engraved copper plate as object pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates engraved-copper-plate-as-object"
+    },
+    {
+      "id": "SP17-122",
+      "name": "Walnut Ink Bleed Brushplate",
+      "styleAnchors": [
+        "Walnut Ink Bleed Brushplate",
+        "wet walnut ink brush plate",
+        "walnut ink wet blooms"
+      ],
+      "ref": "pack_17/SP17-122.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "wet walnut ink brush plate",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "wet-walnut-ink-brush-plate"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-122 walnut ink bleed brushplate wet walnut ink brush plate walnut ink wet blooms 3. ink, tarot & bestiary plates ink & plate formats wet walnut ink brush plate pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates wet-walnut-ink-brush-plate"
+    },
+    {
+      "id": "SP17-123",
+      "name": "Obsessive Stipple Plate",
+      "styleAnchors": ["Obsessive Stipple Plate", "pure stipple engraving", "dots only"],
+      "ref": "pack_17/SP17-123.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "pure stipple engraving",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "pure-stipple-engraving"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-123 obsessive stipple plate pure stipple engraving dots only 3. ink, tarot & bestiary plates ink & plate formats pure stipple engraving pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates pure-stipple-engraving"
+    },
+    {
+      "id": "SP17-124",
+      "name": "Blood Rust Monotype Ghost",
+      "styleAnchors": [
+        "Blood Rust Monotype Ghost",
+        "dark monotype ghost print",
+        "single-pull monotype"
+      ],
+      "ref": "pack_17/SP17-124.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "dark monotype ghost print",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "dark-monotype-ghost-print"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-124 blood rust monotype ghost dark monotype ghost print single-pull monotype 3. ink, tarot & bestiary plates ink & plate formats dark monotype ghost print pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates dark-monotype-ghost-print"
+    },
+    {
+      "id": "SP17-125",
+      "name": "Grotesque Satire Etching",
+      "styleAnchors": [
+        "Grotesque Satire Etching",
+        "exaggerated satirical etching",
+        "caricatured grotesque figures"
+      ],
+      "ref": "pack_17/SP17-125.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "exaggerated satirical etching",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "exaggerated-satirical-etching"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-125 grotesque satire etching exaggerated satirical etching caricatured grotesque figures 3. ink, tarot & bestiary plates ink & plate formats exaggerated satirical etching pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates exaggerated-satirical-etching"
     },
     {
       "id": "SP17-019",
@@ -1662,5 +2318,5 @@
       "searchableText": "sp17-095 darkest dungeon — expressionist ink 10. graphic & feudal art directions graphic & feudal art pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions"
     }
   ],
-  "totalPresetCount": 95
+  "totalPresetCount": 125
 }

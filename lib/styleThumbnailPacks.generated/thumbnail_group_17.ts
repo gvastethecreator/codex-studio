@@ -1323,5 +1323,125 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/style-card-thumbnails/SP17-095-03.webp',
       import.meta.url,
     ).href,
+    'SP17-096': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-096.webp',
+      import.meta.url,
+    ).href,
+    'SP17-097': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-097.webp',
+      import.meta.url,
+    ).href,
+    'SP17-098': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-098.webp',
+      import.meta.url,
+    ).href,
+    'SP17-099': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-099.webp',
+      import.meta.url,
+    ).href,
+    'SP17-100': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-100.webp',
+      import.meta.url,
+    ).href,
+    'SP17-101': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-101.webp',
+      import.meta.url,
+    ).href,
+    'SP17-102': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-102.webp',
+      import.meta.url,
+    ).href,
+    'SP17-103': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-103.webp',
+      import.meta.url,
+    ).href,
+    'SP17-104': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-104.webp',
+      import.meta.url,
+    ).href,
+    'SP17-105': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-105.webp',
+      import.meta.url,
+    ).href,
+    'SP17-106': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-106.webp',
+      import.meta.url,
+    ).href,
+    'SP17-107': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-107.webp',
+      import.meta.url,
+    ).href,
+    'SP17-108': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-108.webp',
+      import.meta.url,
+    ).href,
+    'SP17-109': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-109.webp',
+      import.meta.url,
+    ).href,
+    'SP17-110': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-110.webp',
+      import.meta.url,
+    ).href,
+    'SP17-111': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-111.webp',
+      import.meta.url,
+    ).href,
+    'SP17-112': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-112.webp',
+      import.meta.url,
+    ).href,
+    'SP17-113': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-113.webp',
+      import.meta.url,
+    ).href,
+    'SP17-114': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-114.webp',
+      import.meta.url,
+    ).href,
+    'SP17-115': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-115.webp',
+      import.meta.url,
+    ).href,
+    'SP17-116': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-116.webp',
+      import.meta.url,
+    ).href,
+    'SP17-117': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-117.webp',
+      import.meta.url,
+    ).href,
+    'SP17-118': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-118.webp',
+      import.meta.url,
+    ).href,
+    'SP17-119': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-119.webp',
+      import.meta.url,
+    ).href,
+    'SP17-120': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-120.webp',
+      import.meta.url,
+    ).href,
+    'SP17-121': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-121.webp',
+      import.meta.url,
+    ).href,
+    'SP17-122': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-122.webp',
+      import.meta.url,
+    ).href,
+    'SP17-123': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-123.webp',
+      import.meta.url,
+    ).href,
+    'SP17-124': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-124.webp',
+      import.meta.url,
+    ).href,
+    'SP17-125': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-125.webp',
+      import.meta.url,
+    ).href,
   },
 };

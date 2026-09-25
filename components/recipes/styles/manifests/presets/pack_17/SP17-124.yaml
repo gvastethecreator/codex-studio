@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-124
+packId: pack_17
+name: Blood Rust Monotype Ghost
+styleAnchors:
+  - Blood Rust Monotype Ghost
+  - dark monotype ghost print
+  - single-pull monotype
+displayName: Blood Rust Monotype Ghost
+category: 3. Ink, Tarot & Bestiary Plates
+domain: dark monotype ghost print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - ink-tarot-and-bestiary-plates
+  - monotype
+  - ghost-print
+  - blood-rust
+visualDna:
+  aesthetic: 'Dark painterly monotype: ink painted on a plate and printed once, with wiped-out lights, finger and rag marks, oxide red and black, and faded ghost second-pull areas.'
+  subject_treatment: 'Any prompt subject becomes a spectral apparition: bold wiped shapes carry the form, edges dissolve into ghost-print haze, and the image feels pulled from memory.'
+  color_and_tone: Black, oxide rust red, dirty gray ghost tones, and cream paper.
+  lighting_and_shadow: Wiped-out light shapes against dark painted ink; a single area of pale luminous paper.
+  texture_and_material: Brush and rag wipe marks, fingerprints, reticulated ink, and ghost-print softness.
+  camera_and_composition: Dramatic close or looming composition with large dark mass and a single luminous shape.
+  atmosphere_and_mood: Haunted, violent, feverish, and dark.
+  rendering_and_quality: Painterly print quality with purposeful marks; dark but not muddy; subject readable.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blood Rust Monotype Ghost as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: single-pull monotype; wiped-out lights; rag and finger marks; oxide red and black; ghost second-pull haze
+avoidRules:
+  - clean line art
+  - bright color
+  - digital paint texture
+  - gore detail
+  - noisy speckle
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-124.webp
+attributes:
+  negativePrompt: clean line art, bright color, digital paint texture, gore detail, noisy speckle, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
+  domain: dark monotype ghost print
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - ink-tarot-and-bestiary-plates
+    - monotype
+    - ghost-print
+    - blood-rust
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

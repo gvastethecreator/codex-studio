@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-116
+packId: pack_17
+name: Gold Ink Indigo Paper Plate
+styleAnchors:
+  - Gold Ink Indigo Paper Plate
+  - gold and silver ink on indigo paper
+  - gold and silver ink on indigo
+displayName: Gold Ink Indigo Paper Plate
+category: 3. Ink, Tarot & Bestiary Plates
+domain: gold and silver ink on indigo paper
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - ink-tarot-and-bestiary-plates
+  - gold-ink
+  - indigo-paper
+  - refined-ink
+visualDna:
+  aesthetic: Luxurious ink drawing on indigo-dyed paper using gold and silver ink line and fine metallic hatching, with the dark paper as the ground.
+  subject_treatment: 'Prompt X is drawn as a precious nocturne: gold ink for warm forms and edges, silver for cold light and secondary shapes, bare indigo for shadow.'
+  color_and_tone: Indigo paper, warm gold ink, cool silver ink, and very small touches of white.
+  lighting_and_shadow: Metallic line catches implied moonlight or candlelight; darkness is the indigo paper itself.
+  texture_and_material: Metallic ink sheen, fine hatching, indigo paper fiber, and slight ink pooling.
+  camera_and_composition: Composed central image with plenty of indigo space and elegant decorative restraint.
+  atmosphere_and_mood: Precious, serene, nocturnal, and devotional.
+  rendering_and_quality: 'Refined luxury finish: crisp metallic lines, no muddy overlaps, no digital glow.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gold Ink Indigo Paper Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: gold and silver ink on indigo; metallic fine hatching; paper as shadow; precious nocturne
+avoidRules:
+  - white paper
+  - full color painting
+  - digital glow
+  - glitter
+  - busy background
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-116.webp
+attributes:
+  negativePrompt: white paper, full color painting, digital glow, glitter, busy background, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
+  domain: gold and silver ink on indigo paper
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - ink-tarot-and-bestiary-plates
+    - gold-ink
+    - indigo-paper
+    - refined-ink
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

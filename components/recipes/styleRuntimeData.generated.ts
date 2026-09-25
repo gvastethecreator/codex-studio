@@ -161,7 +161,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       'Medieval fantasy representation styles spanning dark-fantasy kingdoms, hunter gothic horror, weird editorial courts, acid dungeon zines, monochrome tarot, white-ink occult plates, rune-tech crusades, apocalyptic warfronts, robust tabletop portraits, grimdark systems, isometric game aesthetics, analog zine processes, pulp fantasy painting, and transferable drawing-media studies.',
     cardTitle: 'Dungeon Zine',
     cardDescription: 'Fantasy zines, dungeons, bestiary, grim kingdoms.',
-    presetCount: 95,
+    presetCount: 125,
   },
   {
     id: 'pack_19',

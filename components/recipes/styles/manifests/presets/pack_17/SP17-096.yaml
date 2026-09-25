@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-096
+packId: pack_17
+name: Teal Tangerine Overprint Riso
+styleAnchors:
+  - Teal Tangerine Overprint Riso
+  - refined two-drum risograph overprint
+  - two-drum teal and tangerine
+displayName: Teal Tangerine Overprint Riso
+category: 2. Dungeon Zine & Risograph Prints
+domain: refined two-drum risograph overprint
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - dungeon-zine-and-risograph-prints
+  - risograph
+  - refined-print
+  - teal-tangerine
+visualDna:
+  aesthetic: Refined two-drum risograph print where teal and tangerine overlap into a deliberate third brown-olive, with confident brush-pen contour, tidy halftone ramps, and generous unprinted paper.
+  subject_treatment: 'Route any prompt subject into a calm two-layer riso separation: one drum carries contour and shadow, the other carries warm fill, and their overlap models form. Figures, creatures, objects, places, and abstract motifs all read through planned overprint rather than painted rendering.'
+  color_and_tone: Teal, tangerine, their dark overprint olive, and warm off-white paper; no black drum and no extra hues.
+  lighting_and_shadow: Light is described by paper left bare, tangerine halftone for midtones, and teal-plus-tangerine overprint for the deepest shadow.
+  texture_and_material: Fine even riso grain, clean halftone steps, slight soy-ink sheen, and one to two millimeters of intentional registration drift.
+  camera_and_composition: Balanced single-image crop with a clear focal silhouette, open paper margins, and flat shape planning suited to a hand-bound zine page, with no readable typography.
+  atmosphere_and_mood: Curious, crafted, warm, and quietly strange rather than grim.
+  rendering_and_quality: 'Clean studio-grade risograph reproduction: crisp separations, controlled grain, legible shapes at thumbnail size, and no digital gradients.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Teal Tangerine Overprint Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: two-drum teal and tangerine; planned overprint third color; tidy halftone ramps; brush-pen contour; bare paper highlights
+avoidRules:
+  - black ink drum
+  - rainbow palette
+  - smooth digital gradient
+  - heavy grime
+  - photocopy noise
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-096.webp
+attributes:
+  negativePrompt: black ink drum, rainbow palette, smooth digital gradient, heavy grime, photocopy noise, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
+  domain: refined two-drum risograph overprint
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - dungeon-zine-and-risograph-prints
+    - risograph
+    - refined-print
+    - teal-tangerine
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

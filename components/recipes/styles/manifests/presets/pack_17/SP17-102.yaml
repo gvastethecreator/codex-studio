@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-102
+packId: pack_17
+name: Crust Linocut Copier Rag
+styleAnchors:
+  - Crust Linocut Copier Rag
+  - crust punk linocut photocopy
+  - gouged linocut blocks
+displayName: Crust Linocut Copier Rag
+category: 2. Dungeon Zine & Risograph Prints
+domain: crust punk linocut photocopy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - dungeon-zine-and-risograph-prints
+  - linocut
+  - crust-punk
+  - photocopy
+visualDna:
+  aesthetic: 'Crust-punk rag aesthetic: violently gouged linocut blocks photocopied and re-photocopied, black chunky carving, white gouge scars, stencil spray fringes, and dirty generational copy loss.'
+  subject_treatment: 'Any prompt subject is carved into brutal blocky masses: faces become angular gouge planes, bodies become heavy black shapes with white cut marks, and the prompt keeps its identity through bold silhouette rather than detail.'
+  color_and_tone: Black, dirty off-white, and one optional blood-red stencil spray accent.
+  lighting_and_shadow: 'Harsh carved light: white gouge strokes follow form direction; shadows are uncut black.'
+  texture_and_material: Linocut gouge chatter, uneven ink roll, copier degradation, spray-paint fringe, and grimy but controlled paper wear.
+  camera_and_composition: Aggressive frontal or worm-eye crop with a massive silhouette pushing the edges and minimal background.
+  atmosphere_and_mood: Furious, political, raw, underground, and defiant.
+  rendering_and_quality: High-quality reproduction of a deliberately crude carving; readable at thumbnail size with deep solid blacks and no muddy gray.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crust Linocut Copier Rag as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: gouged linocut blocks; generational copy loss; white gouge scars; stencil spray fringe; massive crude silhouette
+avoidRules:
+  - refined engraving
+  - fine hatching
+  - multiple colors
+  - readable slogans
+  - band logos
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-102.webp
+attributes:
+  negativePrompt: refined engraving, fine hatching, multiple colors, readable slogans, band logos, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
+  domain: crust punk linocut photocopy
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - dungeon-zine-and-risograph-prints
+    - linocut
+    - crust-punk
+    - photocopy
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true
