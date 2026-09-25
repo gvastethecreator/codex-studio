@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/header/document.svg?title=Codex+Studio&subtitle=Local-first+image+operations+through+your+Codex+session&logo=openai&theme=cyan&align=center&mode=dark" />
-    <img alt="Codex Studio — local-first image operations through your Codex session" src="https://shieldcn.dev/header/document.svg?title=Codex+Studio&subtitle=Local-first+image+operations+through+your+Codex+session&logo=openai&theme=cyan&align=center&mode=light" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/header/document.svg?title=Cozy+Studio&subtitle=Your+space+to+create+images&logo=openai&theme=cyan&align=center&mode=dark" />
+    <img alt="Cozy Studio — your space to create images" src="https://shieldcn.dev/header/document.svg?title=Cozy+Studio&subtitle=Your+space+to+create+images&logo=openai&theme=cyan&align=center&mode=light" />
   </picture>
 </p>
 
@@ -13,7 +13,7 @@
   <a href="LICENSE"><img alt="MIT license" src="https://shieldcn.dev/github/license/gvastethecreator/codex-studio.svg?variant=secondary&size=xs" /></a>
 </p>
 
-Codex Studio is a local image studio. You create, review, and organize AI images with your Codex/ChatGPT login.
+Cozy Studio is a local image studio. You create, explore styles, and keep working from your results. ChatGPT is the suggested first connection. Codex remains a separate connection.
 
 [Project site](https://gvastethecreator.github.io/codex-studio/) · [Source and issues](https://github.com/gvastethecreator/codex-studio)
 

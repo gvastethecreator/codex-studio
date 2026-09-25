@@ -55,7 +55,7 @@ const Logo: React.FC<LogoProps> = ({ isGenerating = false }) => {
       onClick={handleClick}
       data-tooltip={`Change accent color · ${currentTheme}`}
       className="studio-logo group cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-[var(--wb-accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--wb-bg)] relative flex items-center gap-2 rounded-lg p-0.5 select-none"
-      aria-label={`Codex Studio — change accent color (current: ${currentTheme})`}
+      aria-label={`Cozy Studio — change accent color (current: ${currentTheme})`}
     >
       <span className="relative flex size-7 items-center justify-center" aria-hidden="true">
         <span
@@ -83,7 +83,7 @@ const Logo: React.FC<LogoProps> = ({ isGenerating = false }) => {
       {/* Text Label */}
       <span className="flex flex-col items-start leading-none">
         <span className="text-[11px] font-black tracking-tight text-[color:var(--wb-ink)] group-hover:opacity-90 transition-colors font-sans uppercase">
-          CODEX
+          COZY
         </span>
         <span
           className={`text-[7px] font-black uppercase tracking-widest transition-colors duration-300 ${appearance === 'light' ? 'text-accent-700 group-hover:text-accent-800' : 'text-accent-500 group-hover:text-accent-400'}`}

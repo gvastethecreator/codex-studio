@@ -3,7 +3,7 @@ name: codex-studio-setup
 description: Set up a local Codex Studio checkout end to end from the welcome-screen handoff prompt.
 ---
 
-# Codex Studio Setup
+# Cozy Studio Setup
 
 Use when a user asks to make this repo ready for first run, or when the welcome
 screen provides a setup handoff prompt.
@@ -30,15 +30,16 @@ ownership. Do not move the prompt body into the renderer.
 The product loop is detect, consent, mutate, stream, re-validate. One primary CTA:
 
 1. Missing Bun: open <https://bun.sh/docs/installation>. Never silent-install Bun.
-2. Missing Codex CLI: open <https://github.com/openai/codex>. Never silent-install Codex.
-3. ChatGPT login missing: Sign in from Studio Settings and select the ChatGPT provider.
-   Login is not bundled. Run `codex login` only when the user explicitly wants the Codex
-   app-server route.
+2. ChatGPT login missing: Sign in from the welcome flow or Studio Settings and keep the
+   ChatGPT provider. Login is not bundled. Codex CLI is not required for this path.
+3. Codex provider selected and Codex CLI missing: open <https://github.com/openai/codex>.
+   Never silent-install Codex. Run `codex login` only when the user explicitly wants the
+   Codex app-server route.
 4. Studio Library or Bootstrap Configuration missing: in-app Setup, or
    `bun run studio:onboard --setup`, after explicit consent.
-5. Everything else ready except Codex Product Runtime, and Studio ChatGPT Sign in is not
-   ready: start app-server through the local backend. Leave app-server stopped when
-   ChatGPT HTTP is the selected image route.
+5. Codex provider selected, and Codex Product Runtime is not ready: start app-server
+   through the local backend. Leave app-server stopped when ChatGPT HTTP is the selected
+   image route.
 6. Ready: Open Studio.
 
 Ask Codex is an extra path when Codex CLI exists. Grok Imagine is an optional provider
