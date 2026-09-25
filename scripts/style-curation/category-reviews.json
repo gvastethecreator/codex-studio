@@ -1343,7 +1343,7 @@
     "baselineHash": "3552e4452b3000b501f3d807de53562dc5d1d87f0e51ad220468a3909f370024",
     "problem": "Romance, clan comedy and specific narrative beats are mixed with digital-era appearance.",
     "preserve": "Compositing softness, cel line handling and background integration.",
-    "proposedAction": "Keep the documented line, timing, value and compositing mechanics without mandatory story beats. SP05-156 has no distinct technical mechanism in its source; leave its distinctness pending comparison instead of inventing one from the name.",
+    "proposedAction": "Keep the documented line, timing, value and compositing mechanics without mandatory story beats. SP05-156 has no distinct technical mechanism in its source; leave its distinctness pending comparison instead of inventing one from the name. Overhaul: DNA audited and kept; three original briefs written per preset (20).",
     "validation": "A neutral task must not become a romance or clan-comedy scene.",
     "evidencePresetIds": ["SP05-024", "SP05-151"],
     "status": "text-reviewed",
