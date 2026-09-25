@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP03-116
+packId: pack_03
+name: CNC Billet-Machined Render
+styleAnchors:
+  - CNC Billet-Machined Render
+  - CNC billet machining
+  - solid billet aluminum
+displayName: CNC Billet-Machined Render
+category: 5. Hard Surface And Product CGI
+domain: CNC billet machining
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - hard-surface-and-product-cgi
+  - cnc
+  - machined-aluminum
+  - anodized
+visualDna:
+  aesthetic: 'CNC billet machining: the subject carved from a solid block of aluminum, with scalloped toolpath marks, pocketed recesses and crisp chamfers left by the mill.'
+  subject_treatment: Keep the prompt subject, action, setting and camera view; rebuild the subject's construction in this hard-surface method as one hero image, never a multi-view asset sheet unless the prompt asks for one.
+  color_and_tone: Bright bare aluminum with selective anodized accents in deep red, cobalt blue or satin black.
+  lighting_and_shadow: Studio key with a strip light so the concentric and parallel toolpath scallops shimmer as anisotropic highlights.
+  texture_and_material: Ball-end mill scallops on curves, flat facing marks, pocket fillets, drilled holes and deburred chamfers.
+  camera_and_composition: Keep the requested view; the angle shows both a toolpath-textured curve and a crisp pocket.
+  atmosphere_and_mood: Precise and luxurious, weight and accuracy you can almost feel.
+  rendering_and_quality: Machining evidence on every surface, never smooth cast metal or molded plastic.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies CNC Billet-Machined Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: solid billet aluminum; toolpath scallops; pocketed recesses; deburred chamfers; anodized accents
+avoidRules:
+  - multi-view asset sheet
+  - fake labels
+  - brand logo
+  - readable text
+  - franchise likeness
+  - cast metal finish
+  - plastic look
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: multi-view asset sheet, fake labels, brand logo, readable text, franchise likeness, cast metal finish, plastic look, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: hard-surface-and-product-cgi
+  categoryName: 5. Hard Surface And Product CGI
+  tags:
+    - 3d-and-cgi-rendering
+    - hard-surface-and-product-cgi
+    - cnc
+    - machined-aluminum
+    - anodized
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: CNC billet machining

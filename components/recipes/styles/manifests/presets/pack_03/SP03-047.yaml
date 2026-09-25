@@ -3,7 +3,7 @@ id: SP03-047
 packId: pack_03
 name: Architectural Visualization
 category: 5. Hard Surface And Product CGI
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,59 +12,25 @@ tags:
   - 3d-and-cgi-rendering
   - hard-surface-and-product-cgi
 visualDna:
-  aesthetic: >-
-    Architectural Visualization acts as a transferable CGI-style router: start from Architectural
-    visualization render system, Straight verticals, daylight material truth and hard-surface and
-    product-CGI system built from bevel logic, manufactured surfaces, PBR maps, studio reflections,
-    mechanical detailing, and premium reveal, then apply the 3D/render behavior to prompt X instead
-    of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Straight verticals; preserve the prompt subject while
-    giving it engineered silhouette logic, panel hierarchy, assembly clarity, product-grade surface
-    control, or UI-material precision, keeping the requested identity, silhouette, pose, object
-    function, or environment legible.
-  color_and_tone: >-
-    Build color with Beige, White, Wood, natural material tones; use color as manufactured finish:
-    anodized metal, gunmetal, glass tint, enamel, ceramic, product neutrals, neon gas, or controlled
-    brand-neutral accents, with deliberate value grouping, exposure control, and medium-specific
-    limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Sunlight, window daylight simulation; shape light through studio strips,
-    rim edges, reflection cards, display glow, automotive flow lines, gemstone fire, or product
-    reveal gradients, so value structure supports the renderer and does not overwrite the requested
-    content.
-  texture_and_material: >-
-    Render Realistic materials, lived in warmth; surface detail should show bevels, panel seams,
-    normal maps, brushed metal, glass layers, stone facets, neon tubing, mechanical wear, or clean
-    UI translucency, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Lookdev camera for Architectural Visualization: three quarter or
-    orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical
-    card composition; compose for engineered readability through exploded spacing, hero compression,
-    orthographic clarity, packshot discipline, part hierarchy, or premium macro scale, with scale,
-    spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Aspirational, clean, designer curated; derive mood from precision, luxury,
-    tactical engineering, clean retail desire, transhuman unease, or high-end interface tactility,
-    letting the renderer alter interpretation without demanding a specific story, location, or
-    character.
-  rendering_and_quality: >-
-    Finish with Real estate brochure, lifestyle luxury; finish with exact edges, believable PBR
-    response, controlled reflections, and no fake labels, muddy grime, or random greeble clutter,
-    clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
-    recognizable.
-  key_features: >-
-    Architectural visualization render system; Straight verticals, daylight material truth; Beige,
-    White, Wood, natural material tones; Realistic materials, lived in warmth; Lookdev camera for
-    Architectural Visualization: three quarter or orthographic framing, clean silhouette read,
-    material highlights, controlled depth, and vertical card composition
-  creative_brief: >-
-    Apply Architectural Visualization as a CGI/render preset over prompt X: preserve the user's
-    requested subject, then route modeling, shader response, lighting, material scale, composition,
-    mood, and final render craft through Architectural visualization render system, Straight
-    verticals, daylight material truth, Realistic materials, lived in warmth without requiring the
-    card image's original subject.
+  aesthetic: 'Design-competition exterior render: a building shown in its landscape at human eye height, clean CGI architecture blended with planted foreground and a graded sky.'
+  subject_treatment: Keep the prompt subject and its identity; this preset owns the eye-level exterior hero framing with corrected verticals, planted foreground and ghosted entourage, while the requested building keeps its design. It stays one hero image and never becomes a multi-view asset sheet unless the prompt asks for one.
+  color_and_tone: Warm late-afternoon sun on facades against a blue-to-cream graded sky, slightly desaturated greens and glass reflecting the sky.
+  lighting_and_shadow: Low sun raking the facade at a steep angle, long soft-edged shadows across paving and interiors glowing faintly through the glass.
+  texture_and_material: Crisp mullions, board-formed concrete, timber cladding and stone paving, with soft-focus grasses and trees in the foreground.
+  camera_and_composition: Two-point perspective at standing eye height with corrected verticals, building in the middle third and planting framing the edges.
+  atmosphere_and_mood: Optimistic and persuasive, a building shown the way its designers hope it will feel.
+  rendering_and_quality: Clean exterior visualization with ghosted, motion-blurred adult entourage and light haze; no site plans, arrows or labels.
+  key_features: eye-level two-point exterior; corrected verticals; planted soft foreground; ghosted entourage; graded sky with raking sun
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Architectural Visualization as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - multi-view asset sheet
+  - fake labels
+  - brand logo
+  - readable text
+  - franchise likeness
+  - converging verticals
+  - site plan overlay
+  - aerial masterplan view
   - messy
   - lived in
   - wrong medium
@@ -72,19 +38,20 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - random greeble clutter
-  - fake labels
   - muddy grime
   - organic blob shape
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-047.webp
 attributes:
-  negativePrompt: >-
-    messy, lived in, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, random greeble clutter, fake labels, muddy grime, organic
-    blob shape
+  negativePrompt: multi-view asset sheet, fake labels, brand logo, readable text, franchise likeness, converging verticals, site plan overlay, aerial masterplan view, messy, lived in, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, random greeble clutter, muddy grime, organic blob shape, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

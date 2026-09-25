@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP03-114
+packId: pack_03
+name: Clear-Shell Electronics Render
+styleAnchors:
+  - Clear-Shell Electronics Render
+  - transparent electronics housing
+  - transparent tinted housing
+displayName: Clear-Shell Electronics Render
+category: 5. Hard Surface And Product CGI
+domain: transparent electronics housing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - hard-surface-and-product-cgi
+  - transparent
+  - electronics
+  - product-design
+visualDna:
+  aesthetic: "Clear-shell electronics: the subject's housing molded in transparent tinted plastic, so circuit boards, wiring, screws and mechanisms inside are fully visible."
+  subject_treatment: Keep the prompt subject recognizable with its pose, setting and camera view; mold its outer shell in translucent tinted plastic and fill it with plausible circuit boards, wiring and mechanisms (a declared construction change), delivered as one hero image, never a multi-view sheet.
+  color_and_tone: Smoke grey, ice blue or translucent grape and lime shells over green circuit boards, copper traces and colored wires.
+  lighting_and_shadow: Soft backlight glowing through the shell edges, crisp front highlights on the plastic and inner parts slightly darkened by the tint.
+  texture_and_material: Glossy clear plastic with molded screw bosses, ribs and parting lines; boards with chips, capacitors and ribbon cables.
+  camera_and_composition: Keep the requested view; the inside is arranged so the eye reads layers of shell, frame and electronics.
+  atmosphere_and_mood: Nerdy and delightful, the joy of seeing how something works.
+  rendering_and_quality: Accurate plastic refraction and internal detail; chips are unmarked and boards carry no readable print.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Clear-Shell Electronics Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: transparent tinted housing; visible circuit boards; molded screw bosses and ribs; colored wires; backlit shell edges
+avoidRules:
+  - multi-view asset sheet
+  - fake labels
+  - brand logo
+  - readable text
+  - franchise likeness
+  - opaque housing
+  - readable chip markings
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: multi-view asset sheet, fake labels, brand logo, readable text, franchise likeness, opaque housing, readable chip markings, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: hard-surface-and-product-cgi
+  categoryName: 5. Hard Surface And Product CGI
+  tags:
+    - 3d-and-cgi-rendering
+    - hard-surface-and-product-cgi
+    - transparent
+    - electronics
+    - product-design
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: transparent electronics housing

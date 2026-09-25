@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP03-118
+packId: pack_03
+name: Generative-Design Lattice Part
+styleAnchors:
+  - Generative-Design Lattice Part
+  - topology-optimized printed part
+  - bone-like load-path struts
+displayName: Generative-Design Lattice Part
+category: 5. Hard Surface And Product CGI
+domain: topology-optimized printed part
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - hard-surface-and-product-cgi
+  - generative-design
+  - lattice
+  - metal-print
+visualDna:
+  aesthetic: 'Topology-optimized generative design: the subject reduced to bone-like load paths and organic lattice struts, as if grown by an algorithm and printed in metal.'
+  subject_treatment: Keep the prompt subject recognizable with its pose, setting and camera view; hollow its solid mass into optimized struts and lattices that follow its load paths (a declared construction change), delivered as one hero image, never a multi-view sheet.
+  color_and_tone: Matte sintered titanium grey or powder-white nylon, with machined contact faces in brighter bare metal.
+  lighting_and_shadow: Soft studio key with deep occlusion inside the lattice and a rim light separating the branching struts.
+  texture_and_material: Fine layer lines and sintered grain on the struts, gyroid infill in thick regions, smooth machined mounting faces.
+  camera_and_composition: Keep the requested view; the angle looks through the lattice to show its depth.
+  atmosphere_and_mood: Alien and efficient, engineering that looks as if it grew.
+  rendering_and_quality: Printed-metal behavior with smooth branching joints; not a random fractal, a wireframe or a plant.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Generative-Design Lattice Part as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: bone-like load-path struts; gyroid infill; sintered titanium finish; layer lines; machined contact faces
+avoidRules:
+  - multi-view asset sheet
+  - fake labels
+  - brand logo
+  - readable text
+  - franchise likeness
+  - solid block
+  - random fractal branching
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: multi-view asset sheet, fake labels, brand logo, readable text, franchise likeness, solid block, random fractal branching, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: hard-surface-and-product-cgi
+  categoryName: 5. Hard Surface And Product CGI
+  tags:
+    - 3d-and-cgi-rendering
+    - hard-surface-and-product-cgi
+    - generative-design
+    - lattice
+    - metal-print
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: topology-optimized printed part

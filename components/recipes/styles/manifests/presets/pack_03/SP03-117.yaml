@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP03-117
+packId: pack_03
+name: Streamline Enamel Appliance
+styleAnchors:
+  - Streamline Enamel Appliance
+  - mid-century streamline appliance design
+  - teardrop rounded casing
+displayName: Streamline Enamel Appliance
+category: 5. Hard Surface And Product CGI
+domain: mid-century streamline appliance design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - hard-surface-and-product-cgi
+  - streamline
+  - enamel
+  - retro-appliance
+visualDna:
+  aesthetic: 'Streamline appliance design: the subject reshaped as a mid-century household machine with teardrop curves, baked enamel shell and chrome speed-line trim.'
+  subject_treatment: Keep the prompt subject recognizable with its pose, setting and camera view; restyle its casing into rounded streamline forms in baked enamel with chrome trim (a declared construction change), delivered as one hero image, never a multi-view sheet.
+  color_and_tone: Pastel mint, butter yellow, cream or cherry-red enamel with bright chrome bands and black phenolic knobs.
+  lighting_and_shadow: Soft broad key and a clean white bounce, long curving highlights running along the rounded shell.
+  texture_and_material: Thick glossy enamel with slight orange peel, triple parallel chrome strips, phenolic handles and rubber feet.
+  camera_and_composition: Keep the requested view; a slight low angle gives the object a proud, monumental stance.
+  atmosphere_and_mood: Optimistic and cheerful, the future as a showroom imagined it long ago.
+  rendering_and_quality: Smooth rounded surfacing with clean chrome reflections and no badges, numbered dials or brand names.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Streamline Enamel Appliance as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: teardrop rounded casing; baked pastel enamel; triple chrome speed lines; phenolic knobs; long curved highlights
+avoidRules:
+  - multi-view asset sheet
+  - fake labels
+  - brand logo
+  - readable text
+  - franchise likeness
+  - numbered dials
+  - badges
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: multi-view asset sheet, fake labels, brand logo, readable text, franchise likeness, numbered dials, badges, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: hard-surface-and-product-cgi
+  categoryName: 5. Hard Surface And Product CGI
+  tags:
+    - 3d-and-cgi-rendering
+    - hard-surface-and-product-cgi
+    - streamline
+    - enamel
+    - retro-appliance
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: mid-century streamline appliance design

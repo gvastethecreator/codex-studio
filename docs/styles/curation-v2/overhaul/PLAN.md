@@ -69,6 +69,7 @@ Pack order, skipping pack_12 and pack_17: pack_01 → pack_24, then pack_12, pac
 | pack_03::3. Lighting And Atmosphere          | done  | done | done   | 12 (SP03-098…109) | pending (local)     | see git log        |
 | pack_03::4. 3D Styles                        | done  | done | done   | 0 (already 20)    | pending (local)     | see git log        |
 | pack_05::3. Isekai & High Fantasy            | done  | done | done   | 0 (already 30)    | pending (local)     | see git log        |
+| pack_03::5. Hard Surface And Product CGI     | done  | done | done   | 9 (SP03-110…118)  | pending (local)     | see git log        |
 
 ## Open risks
 

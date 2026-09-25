@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP03-112
+packId: pack_03
+name: Horology Macro Render
+styleAnchors:
+  - Horology Macro Render
+  - watch movement macro
+  - polished bridges and gears
+displayName: Horology Macro Render
+category: 5. Hard Surface And Product CGI
+domain: watch movement macro
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - hard-surface-and-product-cgi
+  - horology
+  - macro
+  - mechanism
+visualDna:
+  aesthetic: 'Fine watchmaking macro: the subject built from a miniature mechanical movement of polished bridges, toothed wheels, ruby jewel bearings and blued screws.'
+  subject_treatment: Keep the prompt subject recognizable with its pose, setting and camera view; rebuild it as a miniature mechanical watch movement of bridges, wheels and jewel bearings that follows its silhouette (a declared construction change), delivered as one hero image, never a multi-view sheet.
+  color_and_tone: Rhodium silver and warm gold bridges, deep red jewels and heat-blued steel screws against a dark ground.
+  lighting_and_shadow: Small ring and strip lights create crisp highlights on the bevels and sweeping bands across the decorated plates.
+  texture_and_material: Striped and circular-grained plate finishing, mirror-polished beveled edges, fine gear teeth and hairspring coils.
+  camera_and_composition: Macro lens at close focus with shallow depth, one wheel or the balance held in sharp focus.
+  atmosphere_and_mood: Meticulous and hushed, the heartbeat of a tiny machine.
+  rendering_and_quality: Microscopic finishing detail rendered cleanly, with no dial numerals, engraved words or maker marks.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Horology Macro Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: polished bridges and gears; ruby jewel bearings; blued screws; striped and grained plate finishing; macro shallow depth
+avoidRules:
+  - multi-view asset sheet
+  - fake labels
+  - brand logo
+  - readable text
+  - franchise likeness
+  - dial numerals
+  - engraved words
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: multi-view asset sheet, fake labels, brand logo, readable text, franchise likeness, dial numerals, engraved words, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: hard-surface-and-product-cgi
+  categoryName: 5. Hard Surface And Product CGI
+  tags:
+    - 3d-and-cgi-rendering
+    - hard-surface-and-product-cgi
+    - horology
+    - macro
+    - mechanism
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: watch movement macro

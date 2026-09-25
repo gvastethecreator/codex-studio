@@ -111,6 +111,15 @@ categories:
       - pack_03/SP03-067.yaml
       - pack_03/SP03-071.yaml
       - pack_03/SP03-074.yaml
+      - pack_03/SP03-110.yaml
+      - pack_03/SP03-111.yaml
+      - pack_03/SP03-112.yaml
+      - pack_03/SP03-113.yaml
+      - pack_03/SP03-114.yaml
+      - pack_03/SP03-115.yaml
+      - pack_03/SP03-116.yaml
+      - pack_03/SP03-117.yaml
+      - pack_03/SP03-118.yaml
   - id: organic-character-and-bio-cgi
     name: 6. Organic Character And Bio CGI
     presetRefs:
@@ -230,6 +239,15 @@ presetRefs:
   - pack_03/SP03-067.yaml
   - pack_03/SP03-071.yaml
   - pack_03/SP03-074.yaml
+  - pack_03/SP03-110.yaml
+  - pack_03/SP03-111.yaml
+  - pack_03/SP03-112.yaml
+  - pack_03/SP03-113.yaml
+  - pack_03/SP03-114.yaml
+  - pack_03/SP03-115.yaml
+  - pack_03/SP03-116.yaml
+  - pack_03/SP03-117.yaml
+  - pack_03/SP03-118.yaml
   - pack_03/SP03-049.yaml
   - pack_03/SP03-051.yaml
   - pack_03/SP03-054.yaml

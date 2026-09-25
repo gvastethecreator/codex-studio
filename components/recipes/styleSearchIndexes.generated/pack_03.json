@@ -3,7 +3,7 @@
     {
       "id": "pack_03",
       "name": "3D & CGI Rendering",
-      "presetCount": 109
+      "presetCount": 118
     }
   ],
   "presets": [
@@ -1222,7 +1222,8 @@
     },
     {
       "id": "SP03-067",
-      "name": "Cybernetic Implant",
+      "name": "Flush-Seam Cyber Implant",
+      "styleAnchors": ["Flush-Seam Cyber Implant", "Cybernetic Implant"],
       "ref": "pack_03/SP03-067.yaml",
       "packId": "pack_03",
       "packName": "3D & CGI Rendering",
@@ -1230,7 +1231,7 @@
       "categoryName": "5. Hard Surface And Product CGI",
       "tags": ["3d-and-cgi-rendering", "hard-surface-and-product-cgi"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-067 cybernetic implant 5. hard surface and product cgi hard-surface production pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
+      "searchableText": "sp03-067 flush-seam cyber implant cybernetic implant 5. hard surface and product cgi hard-surface production pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
     },
     {
       "id": "SP03-071",
@@ -1255,6 +1256,196 @@
       "tags": ["3d-and-cgi-rendering", "hard-surface-and-product-cgi"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp03-074 neon sign 3d 5. hard surface and product cgi hard-surface production pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
+    },
+    {
+      "id": "SP03-110",
+      "name": "Half-Section Engineering Cutaway",
+      "styleAnchors": [
+        "Half-Section Engineering Cutaway",
+        "half-section engineering cutaway",
+        "single section plane"
+      ],
+      "ref": "pack_03/SP03-110.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "hard-surface-and-product-cgi",
+      "categoryName": "5. Hard Surface And Product CGI",
+      "domain": "half-section engineering cutaway",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "hard-surface-and-product-cgi",
+        "half-section-engineering-cutaway"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-110 half-section engineering cutaway half-section engineering cutaway single section plane 5. hard surface and product cgi hard-surface production half-section engineering cutaway pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi half-section-engineering-cutaway"
+    },
+    {
+      "id": "SP03-111",
+      "name": "Curvature Wear Hero Prop",
+      "styleAnchors": [
+        "Curvature Wear Hero Prop",
+        "weathered hero prop surfacing",
+        "chips on convex edges"
+      ],
+      "ref": "pack_03/SP03-111.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "hard-surface-and-product-cgi",
+      "categoryName": "5. Hard Surface And Product CGI",
+      "domain": "weathered hero prop surfacing",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "hard-surface-and-product-cgi",
+        "weathered-hero-prop-surfacing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-111 curvature wear hero prop weathered hero prop surfacing chips on convex edges 5. hard surface and product cgi hard-surface production weathered hero prop surfacing pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi weathered-hero-prop-surfacing"
+    },
+    {
+      "id": "SP03-112",
+      "name": "Horology Macro Render",
+      "styleAnchors": [
+        "Horology Macro Render",
+        "watch movement macro",
+        "polished bridges and gears"
+      ],
+      "ref": "pack_03/SP03-112.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "hard-surface-and-product-cgi",
+      "categoryName": "5. Hard Surface And Product CGI",
+      "domain": "watch movement macro",
+      "tags": ["3d-and-cgi-rendering", "hard-surface-and-product-cgi", "watch-movement-macro"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-112 horology macro render watch movement macro polished bridges and gears 5. hard surface and product cgi hard-surface production watch movement macro pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi watch-movement-macro"
+    },
+    {
+      "id": "SP03-113",
+      "name": "Milled Design Clay Buck",
+      "styleAnchors": [
+        "Milled Design Clay Buck",
+        "industrial design clay model",
+        "tan styling clay"
+      ],
+      "ref": "pack_03/SP03-113.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "hard-surface-and-product-cgi",
+      "categoryName": "5. Hard Surface And Product CGI",
+      "domain": "industrial design clay model",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "hard-surface-and-product-cgi",
+        "industrial-design-clay-model"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-113 milled design clay buck industrial design clay model tan styling clay 5. hard surface and product cgi hard-surface production industrial design clay model pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi industrial-design-clay-model"
+    },
+    {
+      "id": "SP03-114",
+      "name": "Clear-Shell Electronics Render",
+      "styleAnchors": [
+        "Clear-Shell Electronics Render",
+        "transparent electronics housing",
+        "transparent tinted housing"
+      ],
+      "ref": "pack_03/SP03-114.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "hard-surface-and-product-cgi",
+      "categoryName": "5. Hard Surface And Product CGI",
+      "domain": "transparent electronics housing",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "hard-surface-and-product-cgi",
+        "transparent-electronics-housing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-114 clear-shell electronics render transparent electronics housing transparent tinted housing 5. hard surface and product cgi hard-surface production transparent electronics housing pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi transparent-electronics-housing"
+    },
+    {
+      "id": "SP03-115",
+      "name": "Riveted Sheet-Metal Build",
+      "styleAnchors": [
+        "Riveted Sheet-Metal Build",
+        "riveted sheet-metal construction",
+        "folded sheet with bend radii"
+      ],
+      "ref": "pack_03/SP03-115.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "hard-surface-and-product-cgi",
+      "categoryName": "5. Hard Surface And Product CGI",
+      "domain": "riveted sheet-metal construction",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "hard-surface-and-product-cgi",
+        "riveted-sheet-metal-construction"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-115 riveted sheet-metal build riveted sheet-metal construction folded sheet with bend radii 5. hard surface and product cgi hard-surface production riveted sheet-metal construction pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi riveted-sheet-metal-construction"
+    },
+    {
+      "id": "SP03-116",
+      "name": "CNC Billet-Machined Render",
+      "styleAnchors": [
+        "CNC Billet-Machined Render",
+        "CNC billet machining",
+        "solid billet aluminum"
+      ],
+      "ref": "pack_03/SP03-116.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "hard-surface-and-product-cgi",
+      "categoryName": "5. Hard Surface And Product CGI",
+      "domain": "CNC billet machining",
+      "tags": ["3d-and-cgi-rendering", "hard-surface-and-product-cgi", "cnc-billet-machining"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-116 cnc billet-machined render cnc billet machining solid billet aluminum 5. hard surface and product cgi hard-surface production cnc billet machining pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi cnc-billet-machining"
+    },
+    {
+      "id": "SP03-117",
+      "name": "Streamline Enamel Appliance",
+      "styleAnchors": [
+        "Streamline Enamel Appliance",
+        "mid-century streamline appliance design",
+        "teardrop rounded casing"
+      ],
+      "ref": "pack_03/SP03-117.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "hard-surface-and-product-cgi",
+      "categoryName": "5. Hard Surface And Product CGI",
+      "domain": "mid-century streamline appliance design",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "hard-surface-and-product-cgi",
+        "mid-century-streamline-appliance-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-117 streamline enamel appliance mid-century streamline appliance design teardrop rounded casing 5. hard surface and product cgi hard-surface production mid-century streamline appliance design pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi mid-century-streamline-appliance-design"
+    },
+    {
+      "id": "SP03-118",
+      "name": "Generative-Design Lattice Part",
+      "styleAnchors": [
+        "Generative-Design Lattice Part",
+        "topology-optimized printed part",
+        "bone-like load-path struts"
+      ],
+      "ref": "pack_03/SP03-118.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "hard-surface-and-product-cgi",
+      "categoryName": "5. Hard Surface And Product CGI",
+      "domain": "topology-optimized printed part",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "hard-surface-and-product-cgi",
+        "topology-optimized-printed-part"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-118 generative-design lattice part topology-optimized printed part bone-like load-path struts 5. hard surface and product cgi hard-surface production topology-optimized printed part pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi topology-optimized-printed-part"
     },
     {
       "id": "SP03-049",
@@ -1473,5 +1664,5 @@
       "searchableText": "sp03-044 thermal vision 8. sensor and technical shaders technical shaders pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders"
     }
   ],
-  "totalPresetCount": 109
+  "totalPresetCount": 118
 }

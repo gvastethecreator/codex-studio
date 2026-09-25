@@ -3,7 +3,7 @@ id: SP03-046
 packId: pack_03
 name: Game Asset (PBR)
 category: 5. Hard Surface And Product CGI
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,57 +12,25 @@ tags:
   - 3d-and-cgi-rendering
   - hard-surface-and-product-cgi
 visualDna:
-  aesthetic: >-
-    Game Asset (PBR) acts as a transferable CGI-style router: start from Game asset PBR
-    optimization, Asset ready PBR, normal map detail and hard-surface and product-CGI system built
-    from bevel logic, manufactured surfaces, PBR maps, studio reflections, mechanical detailing, and
-    premium reveal, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo
-    image.
-  subject_treatment: >-
-    Transform any prompt subject through Normal map details; preserve the prompt subject while
-    giving it engineered silhouette logic, panel hierarchy, assembly clarity, product-grade surface
-    control, or UI-material precision, keeping the requested identity, silhouette, pose, object
-    function, or environment legible.
-  color_and_tone: >-
-    Build color with Albedo map; use color as manufactured finish: anodized metal, gunmetal, glass
-    tint, enamel, ceramic, product neutrals, neon gas, or controlled brand-neutral accents, with
-    deliberate value grouping, exposure control, and medium-specific limits rather than generic
-    color wash.
-  lighting_and_shadow: >-
-    Handle light through Marmoset asset viewer lighting, turntable glory; shape light through studio
-    strips, rim edges, reflection cards, display glow, automotive flow lines, gemstone fire, or
-    product reveal gradients, so value structure supports the renderer and does not overwrite the
-    requested content.
-  texture_and_material: >-
-    Render Roughness/Metalness, PBR surfacing; surface detail should show bevels, panel seams,
-    normal maps, brushed metal, glass layers, stone facets, neon tubing, mechanical wear, or clean
-    UI translucency, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Lookdev camera for Game Asset (PBR): three quarter or orthographic
-    framing, clean silhouette read, material highlights, controlled depth, and vertical card
-    composition; compose for engineered readability through exploded spacing, hero compression,
-    orthographic clarity, packshot discipline, part hierarchy, or premium macro scale, with scale,
-    spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Functional, clean, asset showcase; derive mood from precision, luxury, tactical
-    engineering, clean retail desire, transhuman unease, or high-end interface tactility, letting
-    the renderer alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Game ready, portfolio turntable; finish with exact edges, believable PBR response,
-    controlled reflections, and no fake labels, muddy grime, or random greeble clutter, clean
-    denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
-    recognizable.
-  key_features: >-
-    Game asset PBR optimization; Asset ready PBR, normal map detail; Albedo map;
-    Roughness/Metalness, PBR surfacing; Lookdev camera for Game Asset (PBR): three quarter or
-    orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical
-    card composition
-  creative_brief: >-
-    Apply Game Asset (PBR) as a CGI/render preset over prompt X: preserve the user's requested
-    subject, then route modeling, shader response, lighting, material scale, composition, mood, and
-    final render craft through Game asset PBR optimization, Asset ready PBR, normal map detail,
-    Roughness/Metalness, PBR surfacing without requiring the card image's original subject.
+  aesthetic: 'Real-time game asset presentation: a single prop built to a polygon budget, its fine detail baked into normal maps and textured with metal-roughness PBR maps.'
+  subject_treatment: Keep the prompt subject and its identity; this preset owns the single-asset presentation on a neutral grey backdrop with a soft ground shadow, one object in one three-quarter view. It stays one hero image and never becomes a multi-view asset sheet unless the prompt asks for one.
+  color_and_tone: Albedo colors kept flat and mid-value with no baked lighting; metals dark in albedo and bright only in their reflections.
+  lighting_and_shadow: Neutral studio HDRI with a soft key and a cool rim, the even viewer lighting that shows roughness variation honestly.
+  texture_and_material: Baked normal-map bevels on straight low-poly edges, trim-sheet panel strips, roughness breakups and edge wear painted into texture only.
+  camera_and_composition: Asset centered in a three-quarter view with generous margin; large curves show a faint polygon straightness in silhouette.
+  atmosphere_and_mood: Functional and proud, a finished piece ready to drop into a level.
+  rendering_and_quality: Real-time shading look with sharp texel-level detail, no path-traced caustics, no motion blur and no scene clutter.
+  key_features: polygon-budget silhouette; baked normal-map bevels; metal-roughness PBR; trim-sheet strips; neutral viewer lighting
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Game Asset (PBR) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - multi-view asset sheet
+  - fake labels
+  - brand logo
+  - readable text
+  - franchise likeness
+  - texture map swatches
+  - material ball row
+  - scene clutter
   - high poly
   - unoptimized
   - wrong medium
@@ -70,19 +38,20 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - random greeble clutter
-  - fake labels
   - muddy grime
   - organic blob shape
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-046.webp
 attributes:
-  negativePrompt: >-
-    high poly, unoptimized, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture
-    chatter, watermark, readable text, signature, random greeble clutter, fake labels, muddy grime,
-    organic blob shape
+  negativePrompt: multi-view asset sheet, fake labels, brand logo, readable text, franchise likeness, texture map swatches, material ball row, scene clutter, high poly, unoptimized, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, random greeble clutter, muddy grime, organic blob shape, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

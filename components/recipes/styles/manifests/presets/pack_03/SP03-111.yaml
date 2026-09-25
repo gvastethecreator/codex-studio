@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP03-111
+packId: pack_03
+name: Curvature Wear Hero Prop
+styleAnchors:
+  - Curvature Wear Hero Prop
+  - weathered hero prop surfacing
+  - chips on convex edges
+displayName: Curvature Wear Hero Prop
+category: 5. Hard Surface And Product CGI
+domain: weathered hero prop surfacing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - hard-surface-and-product-cgi
+  - edge-wear
+  - hero-prop
+  - weathering
+visualDna:
+  aesthetic: 'Hero-prop wear: a painted metal object whose damage follows its geometry — paint chipped on convex edges, grime packed into concave corners, polish where hands grip.'
+  subject_treatment: Keep the prompt subject, action, setting and camera view; rebuild the subject's construction in this hard-surface method as one hero image, never a multi-view asset sheet unless the prompt asks for one.
+  color_and_tone: Faded base paint over primer and bare steel, three layers exposed at each chip, grime in warm brown-grey.
+  lighting_and_shadow: Directional key with warm bounce, raking enough to show chip depth and the dull-versus-polished contrast.
+  texture_and_material: Curvature-driven chips, cavity dirt, streaked runoff under bolts and bright rub-polish on handles and triggers.
+  camera_and_composition: Keep the requested view; the wear pattern should explain how the object has been handled for years.
+  atmosphere_and_mood: Lived-with and storied, a tool that has outlasted its owners.
+  rendering_and_quality: Wear placed by edges, cavities and touch, never an even overlay of scratches or noise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Curvature Wear Hero Prop as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: chips on convex edges; grime in cavities; paint-primer-steel layers; rub-polished grip points; runoff streaks
+avoidRules:
+  - multi-view asset sheet
+  - fake labels
+  - brand logo
+  - readable text
+  - franchise likeness
+  - uniform grunge overlay
+  - pristine factory finish
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: multi-view asset sheet, fake labels, brand logo, readable text, franchise likeness, uniform grunge overlay, pristine factory finish, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: hard-surface-and-product-cgi
+  categoryName: 5. Hard Surface And Product CGI
+  tags:
+    - 3d-and-cgi-rendering
+    - hard-surface-and-product-cgi
+    - edge-wear
+    - hero-prop
+    - weathering
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: weathered hero prop surfacing
