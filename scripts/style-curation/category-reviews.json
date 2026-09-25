@@ -2533,5 +2533,20 @@
     "evidencePresetIds": ["SP25-201", "SP25-202", "SP25-203"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_25",
+    "category": "12. Information & Technical Graphics",
+    "displayCategory": "Information graphics",
+    "kind": "mixed",
+    "expectedCount": 20,
+    "baselineHash": "3319a3b62ffc490cd46a8c9f39364f3e8424cfa1218df30cbaa242fb8b18292a",
+    "problem": "Information graphics must change how data is drawn without changing the data: supplied values, labels, links and times stay exact, and nothing is invented to complete a chart.",
+    "preserve": "Every supplied value, unit, label, link, direction and time; each style keeps its data construction (annotated specimen, woven links, ledger with states, evidence layers, interval bands, flow plates, small multiples, isometric stages, typographic numbers, radial rings, cutaway, ink notation, time strip, nested containers, one mark per unit, sketchnotes, slope chart, periodic grid).",
+    "proposedAction": "Applied-design import: 15 data styles, three new styles (sketchnotes, slope chart, periodic grid) replacing the pack_10 transit-map overlap and the two verification recipes (moved to QA-PROTOCOLS.md), and synchronized telemetry and overview-and-detail profiles; requested-text policy with a no-invented-values negative and self-contained datasets in every brief.",
+    "validation": "Generate each card, then transcribe every value, label and link and compare with the brief; count dot units, check slope ends and time positions, and flag any invented element.",
+    "evidencePresetIds": ["SP25-221", "SP25-222", "SP25-223"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

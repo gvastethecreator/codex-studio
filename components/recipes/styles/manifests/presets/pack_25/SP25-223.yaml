@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-223
+packId: pack_25
+name: Ledger Diagram Systems
+styleAnchors:
+  - Ledger Diagram Systems
+  - ledger table with state connectors
+  - register rows
+displayName: Ledger Diagram Systems
+category: 12. Information & Technical Graphics
+domain: ledger table with state connectors
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - information-and-technical-graphics
+  - ledger-diagram
+  - applied-design
+  - infographic
+  - r-dat-03
+  - requested-text
+visualDna:
+  aesthetic: 'Ledger Diagram Systems: register rows stay recognizable while side connectors link each row to its states and steps.'
+  subject_treatment: Keep the prompt's records as clear rows with an outer lane of connectors to their states, every number, name and state exact.
+  color_and_tone: Neutral rows with category accents for declared states only.
+  lighting_and_shadow: Flat page where separation comes from rules, white space and bands.
+  texture_and_material: Clean page, fine rules and tabular numerals with no archive stains.
+  camera_and_composition: Fixed id column, data aligned by unit and an outer lane for transitions.
+  atmosphere_and_mood: Steady administrative reading with clear episodes of change.
+  rendering_and_quality: Crisp table with decimal alignment and connectors meeting the center of each row.
+  creative_brief: "Ledger Diagram Systems: register rows stay recognizable while side connectors link each row to its states and steps. Carry it through register rows, state connectors, fixed id column, decimal alignment. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: register rows; state connectors; fixed id column; decimal alignment
+avoidRules:
+  - truncated cells
+  - merged rows
+  - connections with no record
+  - invented values, links or measurements
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: truncated cells, merged rows, connections with no record, invented values, links or measurements, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: information-and-technical-graphics
+  categoryName: 12. Information & Technical Graphics
+  domain: ledger table with state connectors
+  tags:
+    - curation-v2
+    - information-and-technical-graphics
+    - ledger-diagram
+    - applied-design
+    - infographic
+    - r-dat-03
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

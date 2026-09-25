@@ -262,6 +262,29 @@ categories:
       - pack_25/SP25-218.yaml
       - pack_25/SP25-219.yaml
       - pack_25/SP25-220.yaml
+  - id: information-and-technical-graphics
+    name: 12. Information & Technical Graphics
+    presetRefs:
+      - pack_25/SP25-221.yaml
+      - pack_25/SP25-222.yaml
+      - pack_25/SP25-223.yaml
+      - pack_25/SP25-224.yaml
+      - pack_25/SP25-225.yaml
+      - pack_25/SP25-226.yaml
+      - pack_25/SP25-227.yaml
+      - pack_25/SP25-228.yaml
+      - pack_25/SP25-229.yaml
+      - pack_25/SP25-230.yaml
+      - pack_25/SP25-231.yaml
+      - pack_25/SP25-232.yaml
+      - pack_25/SP25-233.yaml
+      - pack_25/SP25-234.yaml
+      - pack_25/SP25-235.yaml
+      - pack_25/SP25-236.yaml
+      - pack_25/SP25-237.yaml
+      - pack_25/SP25-238.yaml
+      - pack_25/SP25-239.yaml
+      - pack_25/SP25-240.yaml
 presetRefs:
   - pack_25/SP25-001.yaml
   - pack_25/SP25-002.yaml
@@ -483,3 +506,23 @@ presetRefs:
   - pack_25/SP25-218.yaml
   - pack_25/SP25-219.yaml
   - pack_25/SP25-220.yaml
+  - pack_25/SP25-221.yaml
+  - pack_25/SP25-222.yaml
+  - pack_25/SP25-223.yaml
+  - pack_25/SP25-224.yaml
+  - pack_25/SP25-225.yaml
+  - pack_25/SP25-226.yaml
+  - pack_25/SP25-227.yaml
+  - pack_25/SP25-228.yaml
+  - pack_25/SP25-229.yaml
+  - pack_25/SP25-230.yaml
+  - pack_25/SP25-231.yaml
+  - pack_25/SP25-232.yaml
+  - pack_25/SP25-233.yaml
+  - pack_25/SP25-234.yaml
+  - pack_25/SP25-235.yaml
+  - pack_25/SP25-236.yaml
+  - pack_25/SP25-237.yaml
+  - pack_25/SP25-238.yaml
+  - pack_25/SP25-239.yaml
+  - pack_25/SP25-240.yaml

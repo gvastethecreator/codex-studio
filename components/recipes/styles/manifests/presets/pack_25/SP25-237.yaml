@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-237
+packId: pack_25
+name: Slope-Chart Editorials
+styleAnchors:
+  - Slope-Chart Editorials
+  - editorial slope chart
+  - two value columns
+displayName: Slope-Chart Editorials
+category: 12. Information & Technical Graphics
+domain: editorial slope chart
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - information-and-technical-graphics
+  - slope-chart
+  - applied-design
+  - infographic
+  - r-dat-19-new
+  - requested-text
+visualDna:
+  aesthetic: 'Slope-Chart Editorials: two columns of values joined by straight lines, the slopes telling the story of who rose and who fell.'
+  subject_treatment: Show the prompt's supplied before and after values as a slope chart, two labeled columns joined by lines, one highlighted line and every value exact.
+  color_and_tone: Grey lines for context and one or two bold highlight colors for the story.
+  lighting_and_shadow: Flat editorial chart with no shading or depth.
+  texture_and_material: Clean lines, round end dots and crisp editorial type.
+  camera_and_composition: Two aligned value columns with labels at both ends and a headline above.
+  atmosphere_and_mood: Editorial and pointed, a story told by a single rising or falling line.
+  rendering_and_quality: Crisp chart where line ends sit exactly on their stated values.
+  creative_brief: "Slope-Chart Editorials: two columns of values joined by straight lines, the slopes telling the story of who rose and who fell. Carry it through two value columns, joining slopes, highlighted line, headline. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: two value columns; joining slopes; highlighted line; headline
+avoidRules:
+  - lines not matching values
+  - unlabeled ends
+  - invented extra points
+  - invented values, links or measurements
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: lines not matching values, unlabeled ends, invented extra points, invented values, links or measurements, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: information-and-technical-graphics
+  categoryName: 12. Information & Technical Graphics
+  domain: editorial slope chart
+  tags:
+    - curation-v2
+    - information-and-technical-graphics
+    - slope-chart
+    - applied-design
+    - infographic
+    - r-dat-19-new
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-235
+packId: pack_25
+name: Dot-Unit Comparison
+styleAnchors:
+  - Dot-Unit Comparison
+  - one-dot-per-unit comparison
+  - one mark per unit
+displayName: Dot-Unit Comparison
+category: 12. Information & Technical Graphics
+domain: one-dot-per-unit comparison
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - information-and-technical-graphics
+  - dot-unit
+  - applied-design
+  - infographic
+  - r-dat-16
+  - requested-text
+visualDna:
+  aesthetic: 'Dot-Unit Comparison: one identical mark stands for one unit, grouped in rows so every count can be checked by eye.'
+  subject_treatment: Show the prompt's quantities with one identical mark per unit in rows of a declared size, totals printed beside each group and every number exact.
+  color_and_tone: Category colors backed by spacing or shape, every mark worth the same.
+  lighting_and_shadow: Flat marks with no depth, all read as equal discrete units.
+  texture_and_material: Simple circles or marks of constant area with crisp edges.
+  camera_and_composition: Rows of declared capacity with visible gaps and exact totals beside each.
+  atmosphere_and_mood: Orderly repetition with differences you can count in a moment.
+  rendering_and_quality: Crisp chart with complete units and counts matching the totals.
+  creative_brief: "Dot-Unit Comparison: one identical mark stands for one unit, grouped in rows so every count can be checked by eye. Carry it through one mark per unit, rows of fixed size, printed totals, countable. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: one mark per unit; rows of fixed size; printed totals; countable
+avoidRules:
+  - approximate counts
+  - unequal mark sizes
+  - decorative dots outside the system
+  - invented values, links or measurements
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: approximate counts, unequal mark sizes, decorative dots outside the system, invented values, links or measurements, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: information-and-technical-graphics
+  categoryName: 12. Information & Technical Graphics
+  domain: one-dot-per-unit comparison
+  tags:
+    - curation-v2
+    - information-and-technical-graphics
+    - dot-unit
+    - applied-design
+    - infographic
+    - r-dat-16
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

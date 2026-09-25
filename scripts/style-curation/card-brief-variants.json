@@ -9258,5 +9258,85 @@
   "SP25-220": [
     "A book called \"MY DOG WROTE THIS\" shown as cover, chewed-looking spine and two spreads of increasingly chaotic dog wisdom, title exact.",
     "The book \"OPEN RECORD\": cover, spine and two openings sharing one index system, black and cream."
+  ],
+  "SP25-221": [
+    "A deadly serious specimen plate of \"THE COMMON OFFICE STAPLER\" with callouts \"JAW\", \"SPRING\" and \"REGRET\", enlargements of the jammed staple.",
+    "A plate of a three-part case, base, body and lid, with three details tied to its real joins and no dimensions."
+  ],
+  "SP25-222": [
+    "A woven chart of who borrowed whose charger in a shared flat, four names and six guilty paths, crossings clearly marked \"NOT CONNECTED\".",
+    "A calm woven graph of A to B, A to C and B to D, the crossing left open and labeled \"crossing, no link\"."
+  ],
+  "SP25-223": [
+    "A household chore ledger with tasks \"DISHES\", \"TRASH\" and \"CAT\", days overdue 3, 9 and 0, connected to states \"DONE\", \"DENIED\" and \"CAT DID IT\".",
+    "A calm review ledger of three pieces moving from \"Draft\" to \"Review\" to \"Ready\", ids fixed on the left."
+  ],
+  "SP25-224": [
+    "An evidence map of where the cookies went: crumbs \"A\" and \"B\" observed, the kitchen as context and a dashed line leading straight to the dog.",
+    "A study plate with three documented samples, two areas with no observation and one proposed finish, titled \"FICTIONAL STUDY\"."
+  ],
+  "SP25-225": [
+    "A banded chart of \"SPICINESS OF GRANDMA'S CHILI\" from 0 to 30 in three equal bands, the top band labeled \"DO NOT\".",
+    "A square banded plate from a 0 to 40 grid with black contours and one accent at the threshold 20."
+  ],
+  "SP25-226": [
+    "The flow of a morning routine: \"WAKE\", \"COFFEE\" and \"FUNCTION\", with a very busy return duct from \"WAKE\" back to \"SLEEP\".",
+    "A calm plate for \"Input → Review → Save\", with \"Yes\" and \"No\" exits and an outer return duct."
+  ],
+  "SP25-227": [
+    "Small multiples of the same houseplant photographed daily for a week while its owner forgot to water it, one note per panel, getting sadder.",
+    "Three equal chart panels of series A=[2,4,6], B=[2,3,4] and C=[6,4,2] on one 0 to 6 axis, titled \"DEMO SERIES\"."
+  ],
+  "SP25-228": [
+    "The four stages of assembling flat-pack furniture, \"OPEN\", \"READ\", \"CRY\" and \"DONE\", as equal isometric blocks linked by clean connectors.",
+    "A calm flow of \"Capture\", \"Edit\" and \"Export\" as equal blocks in one oblique projection with horizontal labels."
+  ],
+  "SP25-229": [
+    "A bold typographic poster of \"HOURS OF SLEEP THIS WEEK\": 7, 5, 4, 3 and 2, the numbers shrinking in desperation, units kept beside each.",
+    "Three durations 00:12, 00:24 and 00:36 under the title \"THREE FRAGMENTS\", each with its id A, B or C."
+  ],
+  "SP25-230": [
+    "A radial chart of a family group chat with \"MOM\" at the center and rings for \"RESPONDS\", \"READS\" and \"IGNORES\", painfully accurate.",
+    "A calm radial chart of an archive at the center linked to \"SOUND\", \"IMAGE\" and \"TEXT\", legend outside the circle."
+  ],
+  "SP25-231": [
+    "A cutaway of a very ordinary rubber duck revealing that it is, in fact, just hollow, callout \"AIR\" and a disappointed note \"THAT'S ALL\".",
+    "A cutaway of a hollow container, one quarter of the body removed, base, wall and lid labeled, \"DEMONSTRATION MODEL\"."
+  ],
+  "SP25-232": [
+    "Three ink steps explaining how to fold a fitted sheet, \"GRAB\", \"FOLD\" and \"GIVE UP\", with small red patches marking each failure point.",
+    "Three ink folding steps for a panel, fold lines dashed and one small yellow patch for the pressure zone, order 1, 2, 3."
+  ],
+  "SP25-233": [
+    "A time strip of a cat's day, \"SLEEP\" from 0 to 20 hours and \"CHAOS\" from 20 to 20:05, the proportions painfully honest.",
+    "A 12-second session with segments A 0-4, B 4-8 and C 8-12 on one axis with ticks at 0, 4, 8 and 12."
+  ],
+  "SP25-234": [
+    "A nested diagram of a messy handbag: \"BAG\" contains \"POCKET\", which contains \"ANOTHER POCKET\", which contains \"THE KEYS, FINALLY\".",
+    "A project containing \"Track A\" and \"Track B\", with Track A containing \"Clip 1\" and \"Clip 2\", one external link through a named port."
+  ],
+  "SP25-235": [
+    "A dot chart of socks lost per family member this year, 12, 9 and 1, rows of three, the one with 1 looking smug.",
+    "Three calm groups of 5, 10 and 15 marks in rows of five, equal size, totals printed beside each."
+  ],
+  "SP25-236": [
+    "Sketchnotes summarizing a meeting that could have been an email, boxes \"AGENDA\", \"SNACKS\" and \"NOTHING DECIDED\", with a doodled clock melting.",
+    "Calm sketchnotes titled \"HOW BREAD RISES\", three doodled steps and one yellow accent, clear reading order."
+  ],
+  "SP25-237": [
+    "A slope chart of household snack levels from \"MONDAY\" to \"FRIDAY\", every line collapsing except \"BROCCOLI\", headline \"NOBODY TOUCHED IT\".",
+    "A calm slope chart of three values from \"BEFORE\" to \"AFTER\", one line highlighted in blue, labels at both ends."
+  ],
+  "SP25-238": [
+    "A periodic table of excuses for being late, tiles \"Tr\" Traffic, \"Al\" Alarm, \"Ca\" Cat and \"Ex\" Existential Dread, grouped by believability.",
+    "A calm periodic grid of bread types, tiles \"Sd\" Sourdough, \"Ry\" Rye and \"Br\" Brioche, grouped by crust, soft colors."
+  ],
+  "SP25-239": [
+    "Telemetry of a toddler's birthday party, panels \"SUGAR\", \"NOISE\" and \"TEARS\", the cursor at the moment the cake arrived.",
+    "A static mockup of two signals on 0, 4, 8 and 12 s, cursor at 8 s and the detail repeating those values."
+  ],
+  "SP25-240": [
+    "An overview of a messy desk with an inset enlarging \"THE DRAWER OF DOOM\", every object in the same place in both views.",
+    "An abstract plan of nodes A, B and C with an inset containing B and C unmoved, labeled \"test coordinates\"."
   ]
 }

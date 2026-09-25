@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-221
+packId: pack_25
+name: Specimen Annotation Graphics
+styleAnchors:
+  - Specimen Annotation Graphics
+  - annotated specimen plate
+  - whole figure
+displayName: Specimen Annotation Graphics
+category: 12. Information & Technical Graphics
+domain: annotated specimen plate
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - information-and-technical-graphics
+  - specimen-annotation
+  - applied-design
+  - infographic
+  - r-dat-01
+  - requested-text
+visualDna:
+  aesthetic: 'Specimen Annotation Graphics: one whole figure receives numbered callouts and linked enlargements with unmistakable anchors.'
+  subject_treatment: Show the prompt's subject whole, then add numbered callouts and a few enlargements tied exactly to real parts, every label kept exact.
+  color_and_tone: Light ground, figure in a mid value and one accent reserved for the annotated part.
+  lighting_and_shadow: No scene light, with descriptive shading kept apart from lines and numbers.
+  texture_and_material: Continuous technical line and sober fills, hatching only on declared sections.
+  camera_and_composition: Callouts outside the silhouette, no crossings and even spacing to each detail.
+  atmosphere_and_mood: Patient attention, from the whole figure to one part and back to the whole.
+  rendering_and_quality: Crisp plate with precise leader ends, each landing on a real component.
+  creative_brief: "Specimen Annotation Graphics: one whole figure receives numbered callouts and linked enlargements with unmistakable anchors. Carry it through whole figure, numbered callouts, linked enlargements, exact labels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: whole figure; numbered callouts; linked enlargements; exact labels
+avoidRules:
+  - invented parts
+  - leader lines ending in the air
+  - measurements added to look technical
+  - invented values, links or measurements
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: invented parts, leader lines ending in the air, measurements added to look technical, invented values, links or measurements, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: information-and-technical-graphics
+  categoryName: 12. Information & Technical Graphics
+  domain: annotated specimen plate
+  tags:
+    - curation-v2
+    - information-and-technical-graphics
+    - specimen-annotation
+    - applied-design
+    - infographic
+    - r-dat-01
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

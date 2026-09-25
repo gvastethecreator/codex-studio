@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-226
+packId: pack_25
+name: Mechanical Flow Plates
+styleAnchors:
+  - Mechanical Flow Plates
+  - chamber-and-duct process plate
+  - chambers and ducts
+displayName: Mechanical Flow Plates
+category: 12. Information & Technical Graphics
+domain: chamber-and-duct process plate
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - information-and-technical-graphics
+  - mechanical-flow
+  - applied-design
+  - infographic
+  - r-dat-06
+  - requested-text
+visualDna:
+  aesthetic: 'Mechanical Flow Plates: process stages drawn as chambers and ducts with unmistakable inputs, outputs and branches.'
+  subject_treatment: Translate the prompt's real process stages into chambers and ducts with clear inputs, outputs and a separate return lane, every stage name exact.
+  color_and_tone: One color for the active flow and neutral values for alternative routes.
+  lighting_and_shadow: Flat technical plate with a slight layer offset only at crossings.
+  texture_and_material: Circuit-like lines, functional nodes and clean fields with valves only for real steps.
+  camera_and_composition: Main flow from left to right, a separate return lane and a nearby symbol legend.
+  atmosphere_and_mood: A precise sequence of intake, transformation and output.
+  rendering_and_quality: Crisp plate with one arrow grammar and nodes named exactly.
+  creative_brief: "Mechanical Flow Plates: process stages drawn as chambers and ducts with unmistakable inputs, outputs and branches. Carry it through chambers and ducts, left-to-right flow, return lane, exact stage names. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: chambers and ducts; left-to-right flow; return lane; exact stage names
+avoidRules:
+  - decorative pipes
+  - false branches
+  - valves with no function
+  - invented values, links or measurements
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: decorative pipes, false branches, valves with no function, invented values, links or measurements, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: information-and-technical-graphics
+  categoryName: 12. Information & Technical Graphics
+  domain: chamber-and-duct process plate
+  tags:
+    - curation-v2
+    - information-and-technical-graphics
+    - mechanical-flow
+    - applied-design
+    - infographic
+    - r-dat-06
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

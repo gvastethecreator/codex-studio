@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-236
+packId: pack_25
+name: Sketchnote Visual Notes
+styleAnchors:
+  - Sketchnote Visual Notes
+  - hand-drawn sketchnote explainer
+  - doodles and hand lettering
+displayName: Sketchnote Visual Notes
+category: 12. Information & Technical Graphics
+domain: hand-drawn sketchnote explainer
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - information-and-technical-graphics
+  - sketchnote
+  - applied-design
+  - infographic
+  - r-dat-13-new
+  - requested-text
+visualDna:
+  aesthetic: 'Sketchnote Visual Notes: hand-drawn visual notes mixing quick doodles, hand lettering, arrows and containers into one lively explanation.'
+  subject_treatment: Explain the prompt's topic as hand-drawn visual notes, quick doodles, boxed hand-lettered headings and arrows, every requested word spelled exactly.
+  color_and_tone: Black fineliner with one or two marker accent colors and grey shadows.
+  lighting_and_shadow: Flat paper with simple grey marker shadows under boxes and doodles.
+  texture_and_material: Fineliner ink, marker strokes and a clean notebook page.
+  camera_and_composition: A central title with ideas radiating or flowing in a clear reading path.
+  atmosphere_and_mood: Friendly, energetic and approachable, like a great teacher at a whiteboard.
+  rendering_and_quality: Crisp hand-drawn notes with confident lines and legible lettering.
+  creative_brief: "Sketchnote Visual Notes: hand-drawn visual notes mixing quick doodles, hand lettering, arrows and containers into one lively explanation. Carry it through doodles and hand lettering, marker accents, clear reading path, boxed headings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: doodles and hand lettering; marker accents; clear reading path; boxed headings
+avoidRules:
+  - illegible handwriting
+  - clutter with no reading order
+  - misspelled headings
+  - invented values, links or measurements
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illegible handwriting, clutter with no reading order, misspelled headings, invented values, links or measurements, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: information-and-technical-graphics
+  categoryName: 12. Information & Technical Graphics
+  domain: hand-drawn sketchnote explainer
+  tags:
+    - curation-v2
+    - information-and-technical-graphics
+    - sketchnote
+    - applied-design
+    - infographic
+    - r-dat-13-new
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

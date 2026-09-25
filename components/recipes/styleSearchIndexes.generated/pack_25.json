@@ -3,7 +3,7 @@
     {
       "id": "pack_25",
       "name": "Applied Design",
-      "presetCount": 220
+      "presetCount": 240
     }
   ],
   "presets": [
@@ -3926,7 +3926,403 @@
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp25-220 book-object sequence book cover spine and interior profile cover, spine, spreads 11. editorial & publication design editorial & publication book cover spine and interior profile pack_25 applied design editorial-and-publication-design applied-design editorial-and-publication-design book-cover-spine-and-interior-profile"
+    },
+    {
+      "id": "SP25-221",
+      "name": "Specimen Annotation Graphics",
+      "styleAnchors": ["Specimen Annotation Graphics", "annotated specimen plate", "whole figure"],
+      "ref": "pack_25/SP25-221.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "information-and-technical-graphics",
+      "categoryName": "12. Information & Technical Graphics",
+      "domain": "annotated specimen plate",
+      "tags": ["applied-design", "information-and-technical-graphics", "annotated-specimen-plate"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-221 specimen annotation graphics annotated specimen plate whole figure 12. information & technical graphics information graphics annotated specimen plate pack_25 applied design information-and-technical-graphics applied-design information-and-technical-graphics annotated-specimen-plate"
+    },
+    {
+      "id": "SP25-222",
+      "name": "Woven Data Notation",
+      "styleAnchors": ["Woven Data Notation", "interwoven relationship notation", "woven paths"],
+      "ref": "pack_25/SP25-222.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "information-and-technical-graphics",
+      "categoryName": "12. Information & Technical Graphics",
+      "domain": "interwoven relationship notation",
+      "tags": [
+        "applied-design",
+        "information-and-technical-graphics",
+        "interwoven-relationship-notation"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-222 woven data notation interwoven relationship notation woven paths 12. information & technical graphics information graphics interwoven relationship notation pack_25 applied design information-and-technical-graphics applied-design information-and-technical-graphics interwoven-relationship-notation"
+    },
+    {
+      "id": "SP25-223",
+      "name": "Ledger Diagram Systems",
+      "styleAnchors": [
+        "Ledger Diagram Systems",
+        "ledger table with state connectors",
+        "register rows"
+      ],
+      "ref": "pack_25/SP25-223.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "information-and-technical-graphics",
+      "categoryName": "12. Information & Technical Graphics",
+      "domain": "ledger table with state connectors",
+      "tags": [
+        "applied-design",
+        "information-and-technical-graphics",
+        "ledger-table-with-state-connectors"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-223 ledger diagram systems ledger table with state connectors register rows 12. information & technical graphics information graphics ledger table with state connectors pack_25 applied design information-and-technical-graphics applied-design information-and-technical-graphics ledger-table-with-state-connectors"
+    },
+    {
+      "id": "SP25-224",
+      "name": "Layered Evidence Maps",
+      "styleAnchors": [
+        "Layered Evidence Maps",
+        "observation context interpretation map",
+        "three knowledge layers"
+      ],
+      "ref": "pack_25/SP25-224.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "information-and-technical-graphics",
+      "categoryName": "12. Information & Technical Graphics",
+      "domain": "observation context interpretation map",
+      "tags": [
+        "applied-design",
+        "information-and-technical-graphics",
+        "observation-context-interpretation-map"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-224 layered evidence maps observation context interpretation map three knowledge layers 12. information & technical graphics information graphics observation context interpretation map pack_25 applied design information-and-technical-graphics applied-design information-and-technical-graphics observation-context-interpretation-map"
+    },
+    {
+      "id": "SP25-225",
+      "name": "Contour-Band Explanations",
+      "styleAnchors": [
+        "Contour-Band Explanations",
+        "banded interval explanation graphic",
+        "declared intervals"
+      ],
+      "ref": "pack_25/SP25-225.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "information-and-technical-graphics",
+      "categoryName": "12. Information & Technical Graphics",
+      "domain": "banded interval explanation graphic",
+      "tags": [
+        "applied-design",
+        "information-and-technical-graphics",
+        "banded-interval-explanation-graphic"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-225 contour-band explanations banded interval explanation graphic declared intervals 12. information & technical graphics information graphics banded interval explanation graphic pack_25 applied design information-and-technical-graphics applied-design information-and-technical-graphics banded-interval-explanation-graphic"
+    },
+    {
+      "id": "SP25-226",
+      "name": "Mechanical Flow Plates",
+      "styleAnchors": [
+        "Mechanical Flow Plates",
+        "chamber-and-duct process plate",
+        "chambers and ducts"
+      ],
+      "ref": "pack_25/SP25-226.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "information-and-technical-graphics",
+      "categoryName": "12. Information & Technical Graphics",
+      "domain": "chamber-and-duct process plate",
+      "tags": [
+        "applied-design",
+        "information-and-technical-graphics",
+        "chamber-and-duct-process-plate"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-226 mechanical flow plates chamber-and-duct process plate chambers and ducts 12. information & technical graphics information graphics chamber-and-duct process plate pack_25 applied design information-and-technical-graphics applied-design information-and-technical-graphics chamber-and-duct-process-plate"
+    },
+    {
+      "id": "SP25-227",
+      "name": "Small-Multiple Field Notes",
+      "styleAnchors": [
+        "Small-Multiple Field Notes",
+        "small multiples comparison sheet",
+        "equal panels"
+      ],
+      "ref": "pack_25/SP25-227.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "information-and-technical-graphics",
+      "categoryName": "12. Information & Technical Graphics",
+      "domain": "small multiples comparison sheet",
+      "tags": [
+        "applied-design",
+        "information-and-technical-graphics",
+        "small-multiples-comparison-sheet"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-227 small-multiple field notes small multiples comparison sheet equal panels 12. information & technical graphics information graphics small multiples comparison sheet pack_25 applied design information-and-technical-graphics applied-design information-and-technical-graphics small-multiples-comparison-sheet"
+    },
+    {
+      "id": "SP25-228",
+      "name": "Isometric Process Blocks",
+      "styleAnchors": [
+        "Isometric Process Blocks",
+        "isometric stage block diagram",
+        "equal isometric blocks"
+      ],
+      "ref": "pack_25/SP25-228.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "information-and-technical-graphics",
+      "categoryName": "12. Information & Technical Graphics",
+      "domain": "isometric stage block diagram",
+      "tags": [
+        "applied-design",
+        "information-and-technical-graphics",
+        "isometric-stage-block-diagram"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-228 isometric process blocks isometric stage block diagram equal isometric blocks 12. information & technical graphics information graphics isometric stage block diagram pack_25 applied design information-and-technical-graphics applied-design information-and-technical-graphics isometric-stage-block-diagram"
+    },
+    {
+      "id": "SP25-229",
+      "name": "Typographic Data Fields",
+      "styleAnchors": ["Typographic Data Fields", "typographic number layout", "aligned numbers"],
+      "ref": "pack_25/SP25-229.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "information-and-technical-graphics",
+      "categoryName": "12. Information & Technical Graphics",
+      "domain": "typographic number layout",
+      "tags": ["applied-design", "information-and-technical-graphics", "typographic-number-layout"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-229 typographic data fields typographic number layout aligned numbers 12. information & technical graphics information graphics typographic number layout pack_25 applied design information-and-technical-graphics applied-design information-and-technical-graphics typographic-number-layout"
+    },
+    {
+      "id": "SP25-230",
+      "name": "Radial Relationship Graphics",
+      "styleAnchors": [
+        "Radial Relationship Graphics",
+        "radial relationship diagram",
+        "named center"
+      ],
+      "ref": "pack_25/SP25-230.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "information-and-technical-graphics",
+      "categoryName": "12. Information & Technical Graphics",
+      "domain": "radial relationship diagram",
+      "tags": [
+        "applied-design",
+        "information-and-technical-graphics",
+        "radial-relationship-diagram"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-230 radial relationship graphics radial relationship diagram named center 12. information & technical graphics information graphics radial relationship diagram pack_25 applied design information-and-technical-graphics applied-design information-and-technical-graphics radial-relationship-diagram"
+    },
+    {
+      "id": "SP25-231",
+      "name": "Cutaway Instruction Plates",
+      "styleAnchors": [
+        "Cutaway Instruction Plates",
+        "partial cutaway explainer plate",
+        "bounded cutaway"
+      ],
+      "ref": "pack_25/SP25-231.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "information-and-technical-graphics",
+      "categoryName": "12. Information & Technical Graphics",
+      "domain": "partial cutaway explainer plate",
+      "tags": [
+        "applied-design",
+        "information-and-technical-graphics",
+        "partial-cutaway-explainer-plate"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-231 cutaway instruction plates partial cutaway explainer plate bounded cutaway 12. information & technical graphics information graphics partial cutaway explainer plate pack_25 applied design information-and-technical-graphics applied-design information-and-technical-graphics partial-cutaway-explainer-plate"
+    },
+    {
+      "id": "SP25-232",
+      "name": "Ink-and-Color Notation",
+      "styleAnchors": ["Ink-and-Color Notation", "ink line with coded color notes", "ink lines"],
+      "ref": "pack_25/SP25-232.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "information-and-technical-graphics",
+      "categoryName": "12. Information & Technical Graphics",
+      "domain": "ink line with coded color notes",
+      "tags": [
+        "applied-design",
+        "information-and-technical-graphics",
+        "ink-line-with-coded-color-notes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-232 ink-and-color notation ink line with coded color notes ink lines 12. information & technical graphics information graphics ink line with coded color notes pack_25 applied design information-and-technical-graphics applied-design information-and-technical-graphics ink-line-with-coded-color-notes"
+    },
+    {
+      "id": "SP25-233",
+      "name": "Chronological Strip Graphics",
+      "styleAnchors": [
+        "Chronological Strip Graphics",
+        "time-proportional event strip",
+        "proportional time"
+      ],
+      "ref": "pack_25/SP25-233.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "information-and-technical-graphics",
+      "categoryName": "12. Information & Technical Graphics",
+      "domain": "time-proportional event strip",
+      "tags": [
+        "applied-design",
+        "information-and-technical-graphics",
+        "time-proportional-event-strip"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-233 chronological strip graphics time-proportional event strip proportional time 12. information & technical graphics information graphics time-proportional event strip pack_25 applied design information-and-technical-graphics applied-design information-and-technical-graphics time-proportional-event-strip"
+    },
+    {
+      "id": "SP25-234",
+      "name": "Nested System Explainers",
+      "styleAnchors": [
+        "Nested System Explainers",
+        "nested container system diagram",
+        "nested containers"
+      ],
+      "ref": "pack_25/SP25-234.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "information-and-technical-graphics",
+      "categoryName": "12. Information & Technical Graphics",
+      "domain": "nested container system diagram",
+      "tags": [
+        "applied-design",
+        "information-and-technical-graphics",
+        "nested-container-system-diagram"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-234 nested system explainers nested container system diagram nested containers 12. information & technical graphics information graphics nested container system diagram pack_25 applied design information-and-technical-graphics applied-design information-and-technical-graphics nested-container-system-diagram"
+    },
+    {
+      "id": "SP25-235",
+      "name": "Dot-Unit Comparison",
+      "styleAnchors": ["Dot-Unit Comparison", "one-dot-per-unit comparison", "one mark per unit"],
+      "ref": "pack_25/SP25-235.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "information-and-technical-graphics",
+      "categoryName": "12. Information & Technical Graphics",
+      "domain": "one-dot-per-unit comparison",
+      "tags": [
+        "applied-design",
+        "information-and-technical-graphics",
+        "one-dot-per-unit-comparison"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-235 dot-unit comparison one-dot-per-unit comparison one mark per unit 12. information & technical graphics information graphics one-dot-per-unit comparison pack_25 applied design information-and-technical-graphics applied-design information-and-technical-graphics one-dot-per-unit-comparison"
+    },
+    {
+      "id": "SP25-236",
+      "name": "Sketchnote Visual Notes",
+      "styleAnchors": [
+        "Sketchnote Visual Notes",
+        "hand-drawn sketchnote explainer",
+        "doodles and hand lettering"
+      ],
+      "ref": "pack_25/SP25-236.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "information-and-technical-graphics",
+      "categoryName": "12. Information & Technical Graphics",
+      "domain": "hand-drawn sketchnote explainer",
+      "tags": [
+        "applied-design",
+        "information-and-technical-graphics",
+        "hand-drawn-sketchnote-explainer"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-236 sketchnote visual notes hand-drawn sketchnote explainer doodles and hand lettering 12. information & technical graphics information graphics hand-drawn sketchnote explainer pack_25 applied design information-and-technical-graphics applied-design information-and-technical-graphics hand-drawn-sketchnote-explainer"
+    },
+    {
+      "id": "SP25-237",
+      "name": "Slope-Chart Editorials",
+      "styleAnchors": ["Slope-Chart Editorials", "editorial slope chart", "two value columns"],
+      "ref": "pack_25/SP25-237.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "information-and-technical-graphics",
+      "categoryName": "12. Information & Technical Graphics",
+      "domain": "editorial slope chart",
+      "tags": ["applied-design", "information-and-technical-graphics", "editorial-slope-chart"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-237 slope-chart editorials editorial slope chart two value columns 12. information & technical graphics information graphics editorial slope chart pack_25 applied design information-and-technical-graphics applied-design information-and-technical-graphics editorial-slope-chart"
+    },
+    {
+      "id": "SP25-238",
+      "name": "Periodic Grid Systems",
+      "styleAnchors": ["Periodic Grid Systems", "periodic table style grid", "element tiles"],
+      "ref": "pack_25/SP25-238.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "information-and-technical-graphics",
+      "categoryName": "12. Information & Technical Graphics",
+      "domain": "periodic table style grid",
+      "tags": ["applied-design", "information-and-technical-graphics", "periodic-table-style-grid"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-238 periodic grid systems periodic table style grid element tiles 12. information & technical graphics information graphics periodic table style grid pack_25 applied design information-and-technical-graphics applied-design information-and-technical-graphics periodic-table-style-grid"
+    },
+    {
+      "id": "SP25-239",
+      "name": "Synchronized Telemetry Layout",
+      "styleAnchors": [
+        "Synchronized Telemetry Layout",
+        "synced multi-panel telemetry profile",
+        "shared time axis"
+      ],
+      "ref": "pack_25/SP25-239.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "information-and-technical-graphics",
+      "categoryName": "12. Information & Technical Graphics",
+      "domain": "synced multi-panel telemetry profile",
+      "tags": [
+        "applied-design",
+        "information-and-technical-graphics",
+        "synced-multi-panel-telemetry-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-239 synchronized telemetry layout synced multi-panel telemetry profile shared time axis 12. information & technical graphics information graphics synced multi-panel telemetry profile pack_25 applied design information-and-technical-graphics applied-design information-and-technical-graphics synced-multi-panel-telemetry-profile"
+    },
+    {
+      "id": "SP25-240",
+      "name": "Overview-and-Detail Map",
+      "styleAnchors": [
+        "Overview-and-Detail Map",
+        "overview with enlargement profile",
+        "overview map"
+      ],
+      "ref": "pack_25/SP25-240.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "information-and-technical-graphics",
+      "categoryName": "12. Information & Technical Graphics",
+      "domain": "overview with enlargement profile",
+      "tags": [
+        "applied-design",
+        "information-and-technical-graphics",
+        "overview-with-enlargement-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-240 overview-and-detail map overview with enlargement profile overview map 12. information & technical graphics information graphics overview with enlargement profile pack_25 applied design information-and-technical-graphics applied-design information-and-technical-graphics overview-with-enlargement-profile"
     }
   ],
-  "totalPresetCount": 220
+  "totalPresetCount": 240
 }

@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-238
+packId: pack_25
+name: Periodic Grid Systems
+styleAnchors:
+  - Periodic Grid Systems
+  - periodic table style grid
+  - element tiles
+displayName: Periodic Grid Systems
+category: 12. Information & Technical Graphics
+domain: periodic table style grid
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - information-and-technical-graphics
+  - periodic-grid
+  - applied-design
+  - infographic
+  - r-dat-20-new
+  - requested-text
+visualDna:
+  aesthetic: 'Periodic Grid Systems: any set of things organized into a periodic-table-like grid of tiles, each with a symbol, a number and a category color.'
+  subject_treatment: Organize the prompt's items into a periodic-table-style grid of tiles, each with a short symbol, number and name, grouped by category color; keep all text exact.
+  color_and_tone: Category colors in a limited palette on a light ground with dark type.
+  lighting_and_shadow: Flat tiles with no shading, crisp like a classroom poster.
+  texture_and_material: Clean rounded tiles, bold symbols and small secondary text.
+  camera_and_composition: A structured grid with groups in blocks and a legend of categories.
+  atmosphere_and_mood: Playful and systematic, a whole world ordered into neat elements.
+  rendering_and_quality: Crisp grid with every tile legible and consistent in layout.
+  creative_brief: "Periodic Grid Systems: any set of things organized into a periodic-table-like grid of tiles, each with a symbol, a number and a category color. Carry it through element tiles, symbol and number, category colors, structured grid. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: element tiles; symbol and number; category colors; structured grid
+avoidRules:
+  - illegible tiles
+  - inconsistent tile layout
+  - real chemical data presented as this
+  - invented values, links or measurements
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illegible tiles, inconsistent tile layout, real chemical data presented as this, invented values, links or measurements, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: information-and-technical-graphics
+  categoryName: 12. Information & Technical Graphics
+  domain: periodic table style grid
+  tags:
+    - curation-v2
+    - information-and-technical-graphics
+    - periodic-grid
+    - applied-design
+    - infographic
+    - r-dat-20-new
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

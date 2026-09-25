@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-230
+packId: pack_25
+name: Radial Relationship Graphics
+styleAnchors:
+  - Radial Relationship Graphics
+  - radial relationship diagram
+  - named center
+displayName: Radial Relationship Graphics
+category: 12. Information & Technical Graphics
+domain: radial relationship diagram
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - information-and-technical-graphics
+  - radial-relationship
+  - applied-design
+  - infographic
+  - r-dat-10
+  - requested-text
+visualDna:
+  aesthetic: 'Radial Relationship Graphics: one named center, rings and arcs sort relationships outward, angle marking identity rather than amount.'
+  subject_treatment: Arrange the prompt's entities around one named center in rings by relationship type, each link drawn once and angle carrying no quantity; keep labels exact.
+  color_and_tone: Color by ring or class backed by node shape.
+  lighting_and_shadow: Flat layers separated by distance on one plane.
+  texture_and_material: Clean arcs, consistent node sizes and exterior labels without tangles.
+  camera_and_composition: A clearly named center, rings with distinct jobs and a legend outside the circle.
+  atmosphere_and_mood: An orderly expansion from one central idea outward.
+  rendering_and_quality: Crisp radial diagram with clean tangents and horizontal labels.
+  creative_brief: "Radial Relationship Graphics: one named center, rings and arcs sort relationships outward, angle marking identity rather than amount. Carry it through named center, relationship rings, single links, outside legend. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: named center; relationship rings; single links; outside legend
+avoidRules:
+  - decorative rings
+  - fake proportional areas
+  - categories duplicated to fill the circle
+  - invented values, links or measurements
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: decorative rings, fake proportional areas, categories duplicated to fill the circle, invented values, links or measurements, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: information-and-technical-graphics
+  categoryName: 12. Information & Technical Graphics
+  domain: radial relationship diagram
+  tags:
+    - curation-v2
+    - information-and-technical-graphics
+    - radial-relationship
+    - applied-design
+    - infographic
+    - r-dat-10
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

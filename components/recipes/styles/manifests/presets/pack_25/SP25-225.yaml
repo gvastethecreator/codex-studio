@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-225
+packId: pack_25
+name: Contour-Band Explanations
+styleAnchors:
+  - Contour-Band Explanations
+  - banded interval explanation graphic
+  - declared intervals
+displayName: Contour-Band Explanations
+category: 12. Information & Technical Graphics
+domain: banded interval explanation graphic
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - information-and-technical-graphics
+  - contour-band
+  - applied-design
+  - infographic
+  - r-dat-05
+  - requested-text
+visualDna:
+  aesthetic: 'Contour-Band Explanations: discrete bands built from declared intervals show variation with a visible scale and labeled limits.'
+  subject_treatment: Build the prompt's values into discrete bands from declared intervals, each level continuous and ordered, with the scale and limits labeled exactly.
+  color_and_tone: A monotonic value ramp with perceptible steps, diverging only around a real center.
+  lighting_and_shadow: Flat bands with no lit relief that would invent terrain.
+  texture_and_material: Flat surfaces bounded by clean contours, any interpolation stated.
+  camera_and_composition: Visible numeric scale, labeled limits and a legend set apart from the bands.
+  atmosphere_and_mood: Gradual variation with clear thresholds, honest and calm.
+  rendering_and_quality: Crisp graphic whose borders come from the data and equal intervals share equal steps.
+  creative_brief: "Contour-Band Explanations: discrete bands built from declared intervals show variation with a visible scale and labeled limits. Carry it through declared intervals, discrete bands, visible scale, labeled limits. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: declared intervals; discrete bands; visible scale; labeled limits
+avoidRules:
+  - arbitrary curves
+  - undeclared unequal intervals
+  - fake height on non-spatial data
+  - invented values, links or measurements
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: arbitrary curves, undeclared unequal intervals, fake height on non-spatial data, invented values, links or measurements, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: information-and-technical-graphics
+  categoryName: 12. Information & Technical Graphics
+  domain: banded interval explanation graphic
+  tags:
+    - curation-v2
+    - information-and-technical-graphics
+    - contour-band
+    - applied-design
+    - infographic
+    - r-dat-05
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

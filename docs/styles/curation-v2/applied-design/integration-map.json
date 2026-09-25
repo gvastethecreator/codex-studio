@@ -1316,40 +1316,76 @@
       "category": "11. Editorial & Publication Design"
     },
     "R-DAT-01": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-221",
+      "name": "Specimen Annotation Graphics",
+      "category": "12. Information & Technical Graphics"
     },
     "R-DAT-02": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-222",
+      "name": "Woven Data Notation",
+      "category": "12. Information & Technical Graphics"
     },
     "R-DAT-03": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-223",
+      "name": "Ledger Diagram Systems",
+      "category": "12. Information & Technical Graphics"
     },
     "R-DAT-04": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-224",
+      "name": "Layered Evidence Maps",
+      "category": "12. Information & Technical Graphics"
     },
     "R-DAT-05": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-225",
+      "name": "Contour-Band Explanations",
+      "category": "12. Information & Technical Graphics"
     },
     "R-DAT-06": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-226",
+      "name": "Mechanical Flow Plates",
+      "category": "12. Information & Technical Graphics"
     },
     "R-DAT-07": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-227",
+      "name": "Small-Multiple Field Notes",
+      "category": "12. Information & Technical Graphics"
     },
     "R-DAT-08": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-228",
+      "name": "Isometric Process Blocks",
+      "category": "12. Information & Technical Graphics"
     },
     "R-DAT-09": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-229",
+      "name": "Typographic Data Fields",
+      "category": "12. Information & Technical Graphics"
     },
     "R-DAT-10": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-230",
+      "name": "Radial Relationship Graphics",
+      "category": "12. Information & Technical Graphics"
     },
     "R-DAT-11": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-231",
+      "name": "Cutaway Instruction Plates",
+      "category": "12. Information & Technical Graphics"
     },
     "R-DAT-12": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-232",
+      "name": "Ink-and-Color Notation",
+      "category": "12. Information & Technical Graphics"
     },
     "R-DAT-13": {
       "status": "replaced",
@@ -1357,19 +1393,34 @@
       "doc": "AUDIT.md"
     },
     "R-DAT-14": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-233",
+      "name": "Chronological Strip Graphics",
+      "category": "12. Information & Technical Graphics"
     },
     "R-DAT-15": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-234",
+      "name": "Nested System Explainers",
+      "category": "12. Information & Technical Graphics"
     },
     "R-DAT-16": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-235",
+      "name": "Dot-Unit Comparison",
+      "category": "12. Information & Technical Graphics"
     },
     "R-DAT-17": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-239",
+      "name": "Synchronized Telemetry Layout",
+      "category": "12. Information & Technical Graphics"
     },
     "R-DAT-18": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-240",
+      "name": "Overview-and-Detail Map",
+      "category": "12. Information & Technical Graphics"
     },
     "R-DAT-19": {
       "status": "qa-protocol",

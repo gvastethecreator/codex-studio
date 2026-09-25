@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP25-240
+packId: pack_25
+name: Overview-and-Detail Map
+styleAnchors:
+  - Overview-and-Detail Map
+  - overview with enlargement profile
+  - overview map
+displayName: Overview-and-Detail Map
+category: 12. Information & Technical Graphics
+domain: overview with enlargement profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - information-and-technical-graphics
+  - overview-detail
+  - applied-design
+  - infographic
+  - profile
+  - r-dat-18
+  - requested-text
+visualDna:
+  aesthetic: 'Overview-and-Detail Map: one overview keeps every coordinate while an inset enlarges one exact region, linked by clear corners.'
+  subject_treatment: Show the prompt's overview with its coordinates intact and an inset enlarging one exact region, linked by corner lines; keep every label exact.
+  color_and_tone: The same codes in overview and detail, with a unique color for the selection frame.
+  lighting_and_shadow: Flat schematic rendering that keeps the source projection.
+  texture_and_material: Crisp outlines, controlled symbols and a declared scale for each view.
+  camera_and_composition: Dominant overview, a linked inset and labels naming region and scale.
+  atmosphere_and_mood: An oriented change of scale that never loses the reference point.
+  rendering_and_quality: Crisp map where inset elements match the overview exactly.
+  creative_brief: "Overview-and-Detail Map: one overview keeps every coordinate while an inset enlarges one exact region, linked by clear corners. Carry it through overview map, exact inset, corner links, declared scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: overview map; exact inset; corner links; declared scale
+avoidRules:
+  - invented enlargements
+  - rotation without notice
+  - measurements from a non-metric schema
+  - invented values, links or measurements
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: invented enlargements, rotation without notice, measurements from a non-metric schema, invented values, links or measurements, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: information-and-technical-graphics
+  categoryName: 12. Information & Technical Graphics
+  domain: overview with enlargement profile
+  tags:
+    - curation-v2
+    - information-and-technical-graphics
+    - overview-detail
+    - applied-design
+    - infographic
+    - profile
+    - r-dat-18
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
