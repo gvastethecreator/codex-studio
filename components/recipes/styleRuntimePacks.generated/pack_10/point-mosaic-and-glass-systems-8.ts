@@ -5,31 +5,31 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP10-072',
-    name: 'Pointillism (Seurat)',
+    name: 'Pointillism',
+    displayName: 'Pointillism',
+    styleAnchors: ['Pointillism'],
     category: '8. Point, Mosaic And Glass Systems',
     negativePrompt:
-      'brush strokes, lines, blurred mush, continuous brush rendering, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brush strokes, lines, blurred mush, continuous brush rendering, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Pointillism (Seurat) becomes a transferable discrete mark, mosaic, and glass segmentation system: start from Made of tiny dots and Dots only, then route prompt content through dots, tiles, grout, lead came, optical mixing, and segmented luminous surfaces without forcing one card scene.',
+      aesthetic: 'Pointillism: the image built from small dots of pure color that mix optically.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Dots only to rebuild forms from dots, glass cells, tile units, grout lines, or lead outlines while preserving silhouette; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: small round dots of pure unmixed paint; joints: visible canvas between dots.",
       color_and_tone:
-        'Build the palette from Optical mixing; use color as optical mixing, glass translucency, tile pigment, grout contrast, and luminous segmentation, with enough value control that the subject remains readable after the style layer is applied.',
+        'Complementary pure colors placed side by side, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow:
-        'Let Soft drive the light response: shape light through dot vibration, tile highlights, stained-glass glow, or shallow relief shadow, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Light comes from bright dot juxtaposition, no blending, as the physical behavior of this unit.',
       texture_and_material:
-        'Render Dots as the tactile or mark-making basis; surfaces require individual marks, tile gaps, lead seams, pigment density, and unit-to-unit variation, scaled to figures, props, spaces, or close material studies.',
+        'small round dots of pure unmixed paint, set with visible canvas between dots, at a unit size that keeps the subject readable.',
       camera_and_composition:
-        'Compose around Dots only as reusable spatial grammar: favor readable silhouettes, local unit scale changes, tessellated flow, and segmented rhythm, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.',
       atmosphere_and_mood:
-        'Use Calm, vibrant as the emotional register; derive mood from craft, sacred light, optical vibration, public art, and patient mark-making, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Luminous, calm, patient and vibrant, coming from the handcrafted construction.',
       rendering_and_quality:
-        'Resolve as Impressionist, scientific: finish with coherent units, controlled outlines, and no blurred pseudo-mosaic mush, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Made of tiny dots; Dots only; Optical mixing; Soft; Dots; Dots only; Calm, vibrant; Impressionist, scientific; Dots only',
+        'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
+      key_features: 'pure color dots; optical mixing',
       creative_brief:
-        'Route any subject through Pointillism (Seurat) as a transferable point, mosaic, or glass-construction visual system: preserve prompt intent while converting form, fragments, gaps, optical mixing, and cumulative mark logic through this preset. Apply pointillist color construction to the input: tiny separated pigment dots, optical color mixing, bright local marks, and distance-based cohesion should let the subject assemble from painterly particles.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pointillism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +37,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mosaic (Tile)',
     category: '8. Point, Mosaic And Glass Systems',
     negativePrompt:
-      'smooth painting, blurred mush, continuous brush rendering, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, smooth painting, blurred mush, continuous brush rendering, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Mosaic (Tile) becomes a transferable discrete mark, mosaic, and glass segmentation system: start from Small square tiles, Tile grid, and Pixelated by tiles, then route prompt content through dots, tiles, grout, lead came, optical mixing, and segmented luminous surfaces without forcing one card scene.',
+      aesthetic: 'Stone tile mosaic: cut stone and ceramic tesserae laid in flowing rows.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Grout lines to rebuild forms from dots, glass cells, tile units, grout lines, or lead outlines while preserving silhouette; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: square and cut stone or ceramic tesserae; joints: grey grout lines.",
       color_and_tone:
-        'Build the palette from Vibrant glass; use color as optical mixing, glass translucency, tile pigment, grout contrast, and luminous segmentation, with enough value control that the subject remains readable after the style layer is applied.',
+        'Earthy stone colors with bright accents, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow:
-        'Let Uneven reflection drive the light response: shape light through dot vibration, tile highlights, stained-glass glow, or shallow relief shadow, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Matte stone with slight surface unevenness, as the physical behavior of this unit.',
       texture_and_material:
-        'Render Glass/Stone tiles as the tactile or mark-making basis; surfaces require individual marks, tile gaps, lead seams, pigment density, and unit-to-unit variation, scaled to figures, props, spaces, or close material studies.',
+        'square and cut stone or ceramic tesserae, set with grey grout lines, at a unit size that keeps the subject readable.',
       camera_and_composition:
-        'Compose around Pixelated by tiles as reusable spatial grammar: favor readable silhouettes, local unit scale changes, tessellated flow, and segmented rhythm, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.',
       atmosphere_and_mood:
-        'Use Ancient, solid as the emotional register; derive mood from craft, sacred light, optical vibration, public art, and patient mark-making, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Ancient, durable, patient and crafted, coming from the handcrafted construction.',
       rendering_and_quality:
-        'Resolve as Roman, durable: finish with coherent units, controlled outlines, and no blurred pseudo-mosaic mush, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Small square tiles; Grout lines; Vibrant glass; Uneven reflection; Glass/Stone tiles; Pixelated by tiles; Ancient, solid; Roman, durable; Tile grid',
+        'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
+      key_features: 'cut tesserae; flowing rows; grout',
       creative_brief:
-        'Route any subject through Mosaic (Tile) as a transferable point, mosaic, or glass-construction visual system: preserve prompt intent while converting form, fragments, gaps, optical mixing, and cumulative mark logic through this preset. Apply mosaic tessera construction to the input: small stone or glass tiles, grout gaps, hand-set irregularity, and cumulative fragment logic should build the subject from durable modular pieces.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mosaic (Tile) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +64,577 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Stained Glass',
     category: '8. Point, Mosaic And Glass Systems',
     negativePrompt:
-      'opaque, blurred mush, continuous brush rendering, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, opaque, blurred mush, continuous brush rendering, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Stained Glass becomes a transferable discrete mark, mosaic, and glass segmentation system: start from Stained glass segmentation, Lead lines, and Simplified shapes, then route prompt content through dots, tiles, grout, lead came, optical mixing, and segmented luminous surfaces without forcing one card scene.',
+        'Stained glass: colored glass pieces joined by dark lead came, glowing with transmitted light.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Black lead came to rebuild forms from dots, glass cells, tile units, grout lines, or lead outlines while preserving silhouette; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: colored glass pieces; joints: dark lead came lines.",
       color_and_tone:
-        'Build the palette from Glowing, saturated; use color as optical mixing, glass translucency, tile pigment, grout contrast, and luminous segmentation, with enough value control that the subject remains readable after the style layer is applied.',
+        'Jewel reds, blues, greens and gold, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow:
-        'Let Backlit drive the light response: shape light through dot vibration, tile highlights, stained-glass glow, or shallow relief shadow, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Transmitted light glowing through the glass, as the physical behavior of this unit.',
       texture_and_material:
-        'Render Glass imperfections as the tactile or mark-making basis; surfaces require individual marks, tile gaps, lead seams, pigment density, and unit-to-unit variation, scaled to figures, props, spaces, or close material studies.',
+        'colored glass pieces, set with dark lead came lines, at a unit size that keeps the subject readable.',
       camera_and_composition:
-        'Compose around Simplified shapes as reusable spatial grammar: favor readable silhouettes, local unit scale changes, tessellated flow, and segmented rhythm, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.',
       atmosphere_and_mood:
-        'Use Reverent, bright as the emotional register; derive mood from craft, sacred light, optical vibration, public art, and patient mark-making, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Sacred, luminous, grand and still, coming from the handcrafted construction.',
       rendering_and_quality:
-        'Resolve as Luminous, leaded glass: finish with coherent units, controlled outlines, and no blurred pseudo-mosaic mush, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Stained glass segmentation; Black lead came; Glowing, saturated; Backlit; Glass imperfections; Simplified shapes; Reverent, bright; Luminous, leaded glass; Lead lines',
+        'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
+      key_features: 'colored glass; lead came; transmitted glow',
       creative_brief:
-        'Apply stained-glass segmentation over the input with cobalt and ruby panes, black lead came, backlit saturation, glass imperfections, and simplified luminous shapes. If icons, figures, architecture, or symbols exist, make them reverent; otherwise convert the subject into leaded color fields without requiring saints, windows, or sermon imagery.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stained Glass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP10-147',
+    name: 'Divisionist Color Dots',
+    displayName: 'Divisionist Color Dots',
+    styleAnchors: ['Divisionist Color Dots', 'divisionist brushwork', 'directional color dashes'],
+    category: '8. Point, Mosaic And Glass Systems',
+    domain: 'divisionist brushwork',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Divisionism: short directional dashes and dots of separated color.',
+      subject_treatment:
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: short directional dashes of pure color; joints: small gaps.",
+      color_and_tone:
+        'Sunlit complementary pairs, with each unit holding one color so the image is built by juxtaposition.',
+      lighting_and_shadow:
+        'Vibrating light from separated colors, as the physical behavior of this unit.',
+      texture_and_material:
+        'short directional dashes of pure color, set with small gaps, at a unit size that keeps the subject readable.',
+      camera_and_composition:
+        'Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.',
+      atmosphere_and_mood:
+        'Radiant, energetic, luminous and warm, coming from the handcrafted construction.',
+      rendering_and_quality:
+        'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Divisionist Color Dots as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'directional color dashes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-148',
+    name: 'Byzantine Gold Tessera',
+    displayName: 'Byzantine Gold Tessera',
+    styleAnchors: ['Byzantine Gold Tessera', 'Byzantine gold mosaic', 'gold-leaf tesserae'],
+    category: '8. Point, Mosaic And Glass Systems',
+    domain: 'Byzantine gold mosaic',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Byzantine mosaic: glass and gold-leaf tesserae set at angles to shimmer.',
+      subject_treatment:
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: glass and gold-leaf tesserae set at slight angles; joints: dark mortar gaps.",
+      color_and_tone:
+        'Gold ground with deep blues and reds, with each unit holding one color so the image is built by juxtaposition.',
+      lighting_and_shadow:
+        'Shimmering gold catching light unevenly, as the physical behavior of this unit.',
+      texture_and_material:
+        'glass and gold-leaf tesserae set at slight angles, set with dark mortar gaps, at a unit size that keeps the subject readable.',
+      camera_and_composition:
+        'Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.',
+      atmosphere_and_mood:
+        'Sacred, radiant, formal and eternal, coming from the handcrafted construction.',
+      rendering_and_quality:
+        'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Byzantine Gold Tessera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'gold-leaf tesserae; angled shimmer',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-149',
+    name: 'Roman Floor Mosaic',
+    displayName: 'Roman Floor Mosaic',
+    styleAnchors: ['Roman Floor Mosaic', 'Roman floor mosaic', 'limestone tesserae'],
+    category: '8. Point, Mosaic And Glass Systems',
+    domain: 'Roman floor mosaic',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Roman floor mosaic: small limestone tesserae in earthy tones with guilloche borders.',
+      subject_treatment:
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: small limestone and marble tesserae; joints: worn grout.",
+      color_and_tone:
+        'Terracotta, ochre, black and white, with each unit holding one color so the image is built by juxtaposition.',
+      lighting_and_shadow: 'Matte worn stone, as the physical behavior of this unit.',
+      texture_and_material:
+        'small limestone and marble tesserae, set with worn grout, at a unit size that keeps the subject readable.',
+      camera_and_composition:
+        'Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.',
+      atmosphere_and_mood:
+        'Ancient, grounded, archaeological and warm, coming from the handcrafted construction.',
+      rendering_and_quality:
+        'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Roman Floor Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'limestone tesserae; guilloche border',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-150',
+    name: 'Micro-Mosaic',
+    displayName: 'Micro-Mosaic',
+    styleAnchors: ['Micro-Mosaic', 'micro-mosaic', 'minute smalti'],
+    category: '8. Point, Mosaic And Glass Systems',
+    domain: 'micro-mosaic',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Micro-mosaic: tiny glass rods cut into minute tesserae, painterly and fine.',
+      subject_treatment:
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: minute glass smalti cut from rods; joints: nearly invisible joints.",
+      color_and_tone:
+        'Rich painterly colors, with each unit holding one color so the image is built by juxtaposition.',
+      lighting_and_shadow: 'Soft glassy sheen, as the physical behavior of this unit.',
+      texture_and_material:
+        'minute glass smalti cut from rods, set with nearly invisible joints, at a unit size that keeps the subject readable.',
+      camera_and_composition:
+        'Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.',
+      atmosphere_and_mood:
+        'Precious, delicate, refined and patient, coming from the handcrafted construction.',
+      rendering_and_quality:
+        'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Micro-Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'minute smalti; painterly fine',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-151',
+    name: 'Pique-Assiette Mosaic',
+    displayName: 'Pique-Assiette Mosaic',
+    styleAnchors: ['Pique-Assiette Mosaic', 'broken china mosaic', 'broken china shards'],
+    category: '8. Point, Mosaic And Glass Systems',
+    domain: 'broken china mosaic',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Pique-assiette: broken china plates and cups reassembled into mosaic.',
+      subject_treatment:
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: broken china shards with floral patterns; joints: white grout.",
+      color_and_tone:
+        'Blue-and-white and floral china, with each unit holding one color so the image is built by juxtaposition.',
+      lighting_and_shadow: 'Glossy glaze highlights, as the physical behavior of this unit.',
+      texture_and_material:
+        'broken china shards with floral patterns, set with white grout, at a unit size that keeps the subject readable.',
+      camera_and_composition:
+        'Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.',
+      atmosphere_and_mood:
+        'Whimsical, thrifty, colorful and homely, coming from the handcrafted construction.',
+      rendering_and_quality:
+        'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pique-Assiette Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'broken china shards; patterned pieces',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-152',
+    name: 'Pebble Mosaic',
+    displayName: 'Pebble Mosaic',
+    styleAnchors: ['Pebble Mosaic', 'pebble mosaic', 'pebbles on edge'],
+    category: '8. Point, Mosaic And Glass Systems',
+    domain: 'pebble mosaic',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Pebble mosaic: smooth river pebbles set on edge in patterns.',
+      subject_treatment:
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: smooth river pebbles set on edge; joints: packed mortar.",
+      color_and_tone:
+        'Black, white, grey and ochre pebbles, with each unit holding one color so the image is built by juxtaposition.',
+      lighting_and_shadow: 'Wet sheen on pebbles, as the physical behavior of this unit.',
+      texture_and_material:
+        'smooth river pebbles set on edge, set with packed mortar, at a unit size that keeps the subject readable.',
+      camera_and_composition:
+        'Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.',
+      atmosphere_and_mood:
+        'Earthy, patient, rhythmic and calm, coming from the handcrafted construction.',
+      rendering_and_quality:
+        'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pebble Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'pebbles on edge; flowing patterns',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-153',
+    name: 'Sea Glass Mosaic',
+    displayName: 'Sea Glass Mosaic',
+    styleAnchors: ['Sea Glass Mosaic', 'sea glass mosaic', 'frosted sea glass'],
+    category: '8. Point, Mosaic And Glass Systems',
+    domain: 'sea glass mosaic',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Sea glass: frosted rounded glass fragments assembled against light.',
+      subject_treatment:
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: frosted, rounded sea-glass fragments; joints: clear resin.",
+      color_and_tone:
+        'Aqua, green, brown and white glass, with each unit holding one color so the image is built by juxtaposition.',
+      lighting_and_shadow: 'Soft backlit glow, as the physical behavior of this unit.',
+      texture_and_material:
+        'frosted, rounded sea-glass fragments, set with clear resin, at a unit size that keeps the subject readable.',
+      camera_and_composition:
+        'Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.',
+      atmosphere_and_mood:
+        'Coastal, soft, calm and nostalgic, coming from the handcrafted construction.',
+      rendering_and_quality:
+        'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sea Glass Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'frosted sea glass; backlit',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-154',
+    name: 'Button Mosaic',
+    displayName: 'Button Mosaic',
+    styleAnchors: ['Button Mosaic', 'button mosaic', 'assorted buttons'],
+    category: '8. Point, Mosaic And Glass Systems',
+    domain: 'button mosaic',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Button mosaic: hundreds of sewing buttons forming the image.',
+      subject_treatment:
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: assorted sewing buttons with holes; joints: fabric or board gaps.",
+      color_and_tone:
+        'Assorted button colors, with each unit holding one color so the image is built by juxtaposition.',
+      lighting_and_shadow: 'Glossy button highlights, as the physical behavior of this unit.',
+      texture_and_material:
+        'assorted sewing buttons with holes, set with fabric or board gaps, at a unit size that keeps the subject readable.',
+      camera_and_composition:
+        'Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.',
+      atmosphere_and_mood:
+        'Playful, homely, crafty and charming, coming from the handcrafted construction.',
+      rendering_and_quality:
+        'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Button Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'assorted buttons; visible holes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-155',
+    name: 'Fuse Bead Pixel Art',
+    displayName: 'Fuse Bead Pixel Art',
+    styleAnchors: ['Fuse Bead Pixel Art', 'fuse bead pixel art', 'fused tube beads'],
+    category: '8. Point, Mosaic And Glass Systems',
+    domain: 'fuse bead pixel art',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Fuse beads: melted plastic tube beads on a pegboard grid.',
+      subject_treatment:
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: fused plastic tube beads with center holes; joints: grid adjacency.",
+      color_and_tone:
+        'Bright plastic colors, with each unit holding one color so the image is built by juxtaposition.',
+      lighting_and_shadow: 'Soft plastic sheen, as the physical behavior of this unit.',
+      texture_and_material:
+        'fused plastic tube beads with center holes, set with grid adjacency, at a unit size that keeps the subject readable.',
+      camera_and_composition:
+        'Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.',
+      atmosphere_and_mood:
+        'Playful, retro, crafty and nostalgic, coming from the handcrafted construction.',
+      rendering_and_quality:
+        'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fuse Bead Pixel Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'fused tube beads; center holes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-156',
+    name: 'Rhinestone Mosaic',
+    displayName: 'Rhinestone Mosaic',
+    styleAnchors: ['Rhinestone Mosaic', 'rhinestone mosaic', 'faceted rhinestones'],
+    category: '8. Point, Mosaic And Glass Systems',
+    domain: 'rhinestone mosaic',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Rhinestone mosaic: faceted crystals set edge to edge.',
+      subject_treatment:
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: faceted crystal rhinestones; joints: tight glue setting.",
+      color_and_tone:
+        'Crystal colors, with each unit holding one color so the image is built by juxtaposition.',
+      lighting_and_shadow: 'Sparkling facet flashes, as the physical behavior of this unit.',
+      texture_and_material:
+        'faceted crystal rhinestones, set with tight glue setting, at a unit size that keeps the subject readable.',
+      camera_and_composition:
+        'Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.',
+      atmosphere_and_mood:
+        'Glamorous, sparkling, kitsch and bright, coming from the handcrafted construction.',
+      rendering_and_quality:
+        'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rhinestone Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'faceted rhinestones; sparkle',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-157',
+    name: 'Opus Sectile Inlay',
+    displayName: 'Opus Sectile Inlay',
+    styleAnchors: ['Opus Sectile Inlay', 'opus sectile stone inlay', 'cut stone shapes'],
+    category: '8. Point, Mosaic And Glass Systems',
+    domain: 'opus sectile stone inlay',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Opus sectile: large cut stone shapes fitted into a picture.',
+      subject_treatment:
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: large cut marble and stone shapes; joints: hairline joints.",
+      color_and_tone:
+        'Colored marbles and porphyry, with each unit holding one color so the image is built by juxtaposition.',
+      lighting_and_shadow: 'Polished stone reflections, as the physical behavior of this unit.',
+      texture_and_material:
+        'large cut marble and stone shapes, set with hairline joints, at a unit size that keeps the subject readable.',
+      camera_and_composition:
+        'Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.',
+      atmosphere_and_mood:
+        'Grand, ancient, precise and noble, coming from the handcrafted construction.',
+      rendering_and_quality:
+        'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Opus Sectile Inlay as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'cut stone shapes; hairline joints',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-158',
+    name: 'Pietra Dura',
+    displayName: 'Pietra Dura',
+    styleAnchors: ['Pietra Dura', 'pietra dura hardstone inlay', 'hardstone inlay on black marble'],
+    category: '8. Point, Mosaic And Glass Systems',
+    domain: 'pietra dura hardstone inlay',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Pietra dura: polished hardstones inlaid seamlessly into black marble.',
+      subject_treatment:
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: polished semi-precious hardstones; joints: invisible seamless joints.",
+      color_and_tone:
+        'Lapis, malachite, coral on black marble, with each unit holding one color so the image is built by juxtaposition.',
+      lighting_and_shadow: 'High polish, as the physical behavior of this unit.',
+      texture_and_material:
+        'polished semi-precious hardstones, set with invisible seamless joints, at a unit size that keeps the subject readable.',
+      camera_and_composition:
+        'Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.',
+      atmosphere_and_mood:
+        'Precious, refined, elegant and rich, coming from the handcrafted construction.',
+      rendering_and_quality:
+        'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pietra Dura as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'hardstone inlay on black marble',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-159',
+    name: 'Marquetry Wood Inlay',
+    displayName: 'Marquetry Wood Inlay',
+    styleAnchors: ['Marquetry Wood Inlay', 'wood marquetry', 'wood veneers'],
+    category: '8. Point, Mosaic And Glass Systems',
+    domain: 'wood marquetry',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Marquetry: veneers of different woods cut and fitted into pictures.',
+      subject_treatment:
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: wood veneer pieces of different species; joints: tight fitted seams.",
+      color_and_tone:
+        'Wood tones from pale maple to dark ebony, with each unit holding one color so the image is built by juxtaposition.',
+      lighting_and_shadow: 'Satin varnish sheen, as the physical behavior of this unit.',
+      texture_and_material:
+        'wood veneer pieces of different species, set with tight fitted seams, at a unit size that keeps the subject readable.',
+      camera_and_composition:
+        'Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.',
+      atmosphere_and_mood:
+        'Crafted, warm, refined and patient, coming from the handcrafted construction.',
+      rendering_and_quality:
+        'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Marquetry Wood Inlay as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'wood veneers; fitted seams',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-160',
+    name: 'Tiffany Lampshade Glass',
+    displayName: 'Tiffany Lampshade Glass',
+    styleAnchors: ['Tiffany Lampshade Glass', 'tiffany-style lamp glass', 'opalescent glass'],
+    category: '8. Point, Mosaic And Glass Systems',
+    domain: 'tiffany-style lamp glass',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Tiffany-style lamp glass: opalescent glass pieces with copper-foil seams glowing warmly.',
+      subject_treatment:
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: opalescent streaky glass pieces; joints: copper-foil soldered seams.",
+      color_and_tone:
+        'Amber, green and dragonfly blues, with each unit holding one color so the image is built by juxtaposition.',
+      lighting_and_shadow: 'Warm glow from within, as the physical behavior of this unit.',
+      texture_and_material:
+        'opalescent streaky glass pieces, set with copper-foil soldered seams, at a unit size that keeps the subject readable.',
+      camera_and_composition:
+        'Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.',
+      atmosphere_and_mood:
+        'Warm, ornate, cozy and luminous, coming from the handcrafted construction.',
+      rendering_and_quality:
+        'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tiffany Lampshade Glass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'opalescent glass; copper-foil seams; warm glow',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-161',
+    name: 'Grisaille Leaded Glass',
+    displayName: 'Grisaille Leaded Glass',
+    styleAnchors: ['Grisaille Leaded Glass', 'grisaille painted glass', 'grey painted glass'],
+    category: '8. Point, Mosaic And Glass Systems',
+    domain: 'grisaille painted glass',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Grisaille glass: clear and grey painted glass with fine lead lines and delicate shading.',
+      subject_treatment:
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: clear glass panes painted in grey grisaille; joints: thin lead lines.",
+      color_and_tone:
+        'Silver-grey with pale yellow stain accents, with each unit holding one color so the image is built by juxtaposition.',
+      lighting_and_shadow: 'Soft silvery transmitted light, as the physical behavior of this unit.',
+      texture_and_material:
+        'clear glass panes painted in grey grisaille, set with thin lead lines, at a unit size that keeps the subject readable.',
+      camera_and_composition:
+        'Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.',
+      atmosphere_and_mood:
+        'Austere, delicate, sacred and quiet, coming from the handcrafted construction.',
+      rendering_and_quality:
+        'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grisaille Leaded Glass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'grey painted glass; thin lead',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-162',
+    name: 'Fused Glass Slab',
+    displayName: 'Fused Glass Slab',
+    styleAnchors: ['Fused Glass Slab', 'fused glass', 'kiln-fused glass'],
+    category: '8. Point, Mosaic And Glass Systems',
+    domain: 'fused glass',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Fused glass: glass pieces kiln-fused into one slab with rounded edges and bubbles.',
+      subject_treatment:
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: kiln-fused glass pieces; joints: melted, rounded seams.",
+      color_and_tone:
+        'Saturated glass colors, with each unit holding one color so the image is built by juxtaposition.',
+      lighting_and_shadow: 'Backlit glow with bubbles, as the physical behavior of this unit.',
+      texture_and_material:
+        'kiln-fused glass pieces, set with melted, rounded seams, at a unit size that keeps the subject readable.',
+      camera_and_composition:
+        'Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.',
+      atmosphere_and_mood:
+        'Modern, glowing, crafted and fluid, coming from the handcrafted construction.',
+      rendering_and_quality:
+        'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fused Glass Slab as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'kiln-fused glass; rounded seams; bubbles',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-163',
+    name: 'Paper Quilling Coils',
+    displayName: 'Paper Quilling Coils',
+    styleAnchors: ['Paper Quilling Coils', 'paper quilling', 'rolled paper coils'],
+    category: '8. Point, Mosaic And Glass Systems',
+    domain: 'paper quilling',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Quilling: rolled paper strip coils shaped and glued edge-on.',
+      subject_treatment:
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: rolled paper strip coils; joints: glued edge-on contact.",
+      color_and_tone:
+        'Paper colors, with each unit holding one color so the image is built by juxtaposition.',
+      lighting_and_shadow: 'Soft shadows between coils, as the physical behavior of this unit.',
+      texture_and_material:
+        'rolled paper strip coils, set with glued edge-on contact, at a unit size that keeps the subject readable.',
+      camera_and_composition:
+        'Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.',
+      atmosphere_and_mood:
+        'Delicate, crafty, intricate and charming, coming from the handcrafted construction.',
+      rendering_and_quality:
+        'Crisp, consistent units and joints across the whole image, with no smeared or random fill.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paper Quilling Coils as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'rolled paper coils; edge-on',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

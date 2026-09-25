@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP10-154
+packId: pack_10
+name: Button Mosaic
+styleAnchors:
+  - Button Mosaic
+  - button mosaic
+  - assorted buttons
+displayName: Button Mosaic
+category: 8. Point, Mosaic And Glass Systems
+domain: button mosaic
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - point-mosaic-and-glass-systems
+  - buttons
+  - mosaic
+  - unit-art
+visualDna:
+  aesthetic: 'Button mosaic: hundreds of sewing buttons forming the image.'
+  subject_treatment: "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: assorted sewing buttons with holes; joints: fabric or board gaps."
+  color_and_tone: Assorted button colors, with each unit holding one color so the image is built by juxtaposition.
+  lighting_and_shadow: Glossy button highlights, as the physical behavior of this unit.
+  texture_and_material: assorted sewing buttons with holes, set with fabric or board gaps, at a unit size that keeps the subject readable.
+  camera_and_composition: Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.
+  atmosphere_and_mood: Playful, homely, crafty and charming, coming from the handcrafted construction.
+  rendering_and_quality: Crisp, consistent units and joints across the whole image, with no smeared or random fill.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Button Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: assorted buttons; visible holes
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_10
+  packName: Abstract & Experimental
+  categoryId: point-mosaic-and-glass-systems
+  categoryName: 8. Point, Mosaic And Glass Systems
+  tags:
+    - abstract-and-experimental
+    - point-mosaic-and-glass-systems
+    - buttons
+    - mosaic
+    - unit-art
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: button mosaic

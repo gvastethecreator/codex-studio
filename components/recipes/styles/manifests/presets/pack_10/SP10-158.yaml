@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP10-158
+packId: pack_10
+name: Pietra Dura
+styleAnchors:
+  - Pietra Dura
+  - pietra dura hardstone inlay
+  - hardstone inlay on black marble
+displayName: Pietra Dura
+category: 8. Point, Mosaic And Glass Systems
+domain: pietra dura hardstone inlay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - point-mosaic-and-glass-systems
+  - pietra-dura
+  - inlay
+  - unit-art
+visualDna:
+  aesthetic: 'Pietra dura: polished hardstones inlaid seamlessly into black marble.'
+  subject_treatment: "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: polished semi-precious hardstones; joints: invisible seamless joints."
+  color_and_tone: Lapis, malachite, coral on black marble, with each unit holding one color so the image is built by juxtaposition.
+  lighting_and_shadow: High polish, as the physical behavior of this unit.
+  texture_and_material: polished semi-precious hardstones, set with invisible seamless joints, at a unit size that keeps the subject readable.
+  camera_and_composition: Keep the prompt framing; unit size and direction follow the subject contours so forms read clearly.
+  atmosphere_and_mood: Precious, refined, elegant and rich, coming from the handcrafted construction.
+  rendering_and_quality: Crisp, consistent units and joints across the whole image, with no smeared or random fill.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pietra Dura as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: hardstone inlay on black marble
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_10
+  packName: Abstract & Experimental
+  categoryId: point-mosaic-and-glass-systems
+  categoryName: 8. Point, Mosaic And Glass Systems
+  tags:
+    - abstract-and-experimental
+    - point-mosaic-and-glass-systems
+    - pietra-dura
+    - inlay
+    - unit-art
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: pietra dura hardstone inlay

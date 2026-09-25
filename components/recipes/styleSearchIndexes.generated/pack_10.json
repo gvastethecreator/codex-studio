@@ -3,7 +3,7 @@
     {
       "id": "pack_10",
       "name": "Abstract & Experimental",
-      "presetCount": 146
+      "presetCount": 163
     }
   ],
   "presets": [
@@ -1945,7 +1945,8 @@
     },
     {
       "id": "SP10-072",
-      "name": "Pointillism (Seurat)",
+      "name": "Pointillism",
+      "styleAnchors": ["Pointillism"],
       "ref": "pack_10/SP10-072.yaml",
       "packId": "pack_10",
       "packName": "Abstract & Experimental",
@@ -1953,7 +1954,7 @@
       "categoryName": "8. Point, Mosaic And Glass Systems",
       "tags": ["abstract-and-experimental", "point-mosaic-and-glass-systems"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp10-072 pointillism (seurat) 8. point, mosaic and glass systems unit-based illustration pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems"
+      "searchableText": "sp10-072 pointillism 8. point, mosaic and glass systems unit-based illustration pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems"
     },
     {
       "id": "SP10-073",
@@ -1978,6 +1979,284 @@
       "tags": ["abstract-and-experimental", "point-mosaic-and-glass-systems"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp10-074 stained glass 8. point, mosaic and glass systems unit-based illustration pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems"
+    },
+    {
+      "id": "SP10-147",
+      "name": "Divisionist Color Dots",
+      "styleAnchors": [
+        "Divisionist Color Dots",
+        "divisionist brushwork",
+        "directional color dashes"
+      ],
+      "ref": "pack_10/SP10-147.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "point-mosaic-and-glass-systems",
+      "categoryName": "8. Point, Mosaic And Glass Systems",
+      "domain": "divisionist brushwork",
+      "tags": [
+        "abstract-and-experimental",
+        "point-mosaic-and-glass-systems",
+        "divisionist-brushwork"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-147 divisionist color dots divisionist brushwork directional color dashes 8. point, mosaic and glass systems unit-based illustration divisionist brushwork pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems divisionist-brushwork"
+    },
+    {
+      "id": "SP10-148",
+      "name": "Byzantine Gold Tessera",
+      "styleAnchors": ["Byzantine Gold Tessera", "Byzantine gold mosaic", "gold-leaf tesserae"],
+      "ref": "pack_10/SP10-148.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "point-mosaic-and-glass-systems",
+      "categoryName": "8. Point, Mosaic And Glass Systems",
+      "domain": "Byzantine gold mosaic",
+      "tags": [
+        "abstract-and-experimental",
+        "point-mosaic-and-glass-systems",
+        "byzantine-gold-mosaic"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-148 byzantine gold tessera byzantine gold mosaic gold-leaf tesserae 8. point, mosaic and glass systems unit-based illustration byzantine gold mosaic pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems byzantine-gold-mosaic"
+    },
+    {
+      "id": "SP10-149",
+      "name": "Roman Floor Mosaic",
+      "styleAnchors": ["Roman Floor Mosaic", "Roman floor mosaic", "limestone tesserae"],
+      "ref": "pack_10/SP10-149.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "point-mosaic-and-glass-systems",
+      "categoryName": "8. Point, Mosaic And Glass Systems",
+      "domain": "Roman floor mosaic",
+      "tags": ["abstract-and-experimental", "point-mosaic-and-glass-systems", "roman-floor-mosaic"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-149 roman floor mosaic roman floor mosaic limestone tesserae 8. point, mosaic and glass systems unit-based illustration roman floor mosaic pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems roman-floor-mosaic"
+    },
+    {
+      "id": "SP10-150",
+      "name": "Micro-Mosaic",
+      "styleAnchors": ["Micro-Mosaic", "micro-mosaic", "minute smalti"],
+      "ref": "pack_10/SP10-150.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "point-mosaic-and-glass-systems",
+      "categoryName": "8. Point, Mosaic And Glass Systems",
+      "domain": "micro-mosaic",
+      "tags": ["abstract-and-experimental", "point-mosaic-and-glass-systems", "micro-mosaic"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-150 micro-mosaic micro-mosaic minute smalti 8. point, mosaic and glass systems unit-based illustration micro-mosaic pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems micro-mosaic"
+    },
+    {
+      "id": "SP10-151",
+      "name": "Pique-Assiette Mosaic",
+      "styleAnchors": ["Pique-Assiette Mosaic", "broken china mosaic", "broken china shards"],
+      "ref": "pack_10/SP10-151.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "point-mosaic-and-glass-systems",
+      "categoryName": "8. Point, Mosaic And Glass Systems",
+      "domain": "broken china mosaic",
+      "tags": [
+        "abstract-and-experimental",
+        "point-mosaic-and-glass-systems",
+        "broken-china-mosaic"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-151 pique-assiette mosaic broken china mosaic broken china shards 8. point, mosaic and glass systems unit-based illustration broken china mosaic pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems broken-china-mosaic"
+    },
+    {
+      "id": "SP10-152",
+      "name": "Pebble Mosaic",
+      "styleAnchors": ["Pebble Mosaic", "pebble mosaic", "pebbles on edge"],
+      "ref": "pack_10/SP10-152.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "point-mosaic-and-glass-systems",
+      "categoryName": "8. Point, Mosaic And Glass Systems",
+      "domain": "pebble mosaic",
+      "tags": ["abstract-and-experimental", "point-mosaic-and-glass-systems", "pebble-mosaic"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-152 pebble mosaic pebble mosaic pebbles on edge 8. point, mosaic and glass systems unit-based illustration pebble mosaic pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems pebble-mosaic"
+    },
+    {
+      "id": "SP10-153",
+      "name": "Sea Glass Mosaic",
+      "styleAnchors": ["Sea Glass Mosaic", "sea glass mosaic", "frosted sea glass"],
+      "ref": "pack_10/SP10-153.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "point-mosaic-and-glass-systems",
+      "categoryName": "8. Point, Mosaic And Glass Systems",
+      "domain": "sea glass mosaic",
+      "tags": ["abstract-and-experimental", "point-mosaic-and-glass-systems", "sea-glass-mosaic"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-153 sea glass mosaic sea glass mosaic frosted sea glass 8. point, mosaic and glass systems unit-based illustration sea glass mosaic pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems sea-glass-mosaic"
+    },
+    {
+      "id": "SP10-154",
+      "name": "Button Mosaic",
+      "styleAnchors": ["Button Mosaic", "button mosaic", "assorted buttons"],
+      "ref": "pack_10/SP10-154.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "point-mosaic-and-glass-systems",
+      "categoryName": "8. Point, Mosaic And Glass Systems",
+      "domain": "button mosaic",
+      "tags": ["abstract-and-experimental", "point-mosaic-and-glass-systems", "button-mosaic"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-154 button mosaic button mosaic assorted buttons 8. point, mosaic and glass systems unit-based illustration button mosaic pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems button-mosaic"
+    },
+    {
+      "id": "SP10-155",
+      "name": "Fuse Bead Pixel Art",
+      "styleAnchors": ["Fuse Bead Pixel Art", "fuse bead pixel art", "fused tube beads"],
+      "ref": "pack_10/SP10-155.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "point-mosaic-and-glass-systems",
+      "categoryName": "8. Point, Mosaic And Glass Systems",
+      "domain": "fuse bead pixel art",
+      "tags": [
+        "abstract-and-experimental",
+        "point-mosaic-and-glass-systems",
+        "fuse-bead-pixel-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-155 fuse bead pixel art fuse bead pixel art fused tube beads 8. point, mosaic and glass systems unit-based illustration fuse bead pixel art pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems fuse-bead-pixel-art"
+    },
+    {
+      "id": "SP10-156",
+      "name": "Rhinestone Mosaic",
+      "styleAnchors": ["Rhinestone Mosaic", "rhinestone mosaic", "faceted rhinestones"],
+      "ref": "pack_10/SP10-156.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "point-mosaic-and-glass-systems",
+      "categoryName": "8. Point, Mosaic And Glass Systems",
+      "domain": "rhinestone mosaic",
+      "tags": ["abstract-and-experimental", "point-mosaic-and-glass-systems", "rhinestone-mosaic"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-156 rhinestone mosaic rhinestone mosaic faceted rhinestones 8. point, mosaic and glass systems unit-based illustration rhinestone mosaic pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems rhinestone-mosaic"
+    },
+    {
+      "id": "SP10-157",
+      "name": "Opus Sectile Inlay",
+      "styleAnchors": ["Opus Sectile Inlay", "opus sectile stone inlay", "cut stone shapes"],
+      "ref": "pack_10/SP10-157.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "point-mosaic-and-glass-systems",
+      "categoryName": "8. Point, Mosaic And Glass Systems",
+      "domain": "opus sectile stone inlay",
+      "tags": [
+        "abstract-and-experimental",
+        "point-mosaic-and-glass-systems",
+        "opus-sectile-stone-inlay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-157 opus sectile inlay opus sectile stone inlay cut stone shapes 8. point, mosaic and glass systems unit-based illustration opus sectile stone inlay pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems opus-sectile-stone-inlay"
+    },
+    {
+      "id": "SP10-158",
+      "name": "Pietra Dura",
+      "styleAnchors": [
+        "Pietra Dura",
+        "pietra dura hardstone inlay",
+        "hardstone inlay on black marble"
+      ],
+      "ref": "pack_10/SP10-158.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "point-mosaic-and-glass-systems",
+      "categoryName": "8. Point, Mosaic And Glass Systems",
+      "domain": "pietra dura hardstone inlay",
+      "tags": [
+        "abstract-and-experimental",
+        "point-mosaic-and-glass-systems",
+        "pietra-dura-hardstone-inlay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-158 pietra dura pietra dura hardstone inlay hardstone inlay on black marble 8. point, mosaic and glass systems unit-based illustration pietra dura hardstone inlay pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems pietra-dura-hardstone-inlay"
+    },
+    {
+      "id": "SP10-159",
+      "name": "Marquetry Wood Inlay",
+      "styleAnchors": ["Marquetry Wood Inlay", "wood marquetry", "wood veneers"],
+      "ref": "pack_10/SP10-159.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "point-mosaic-and-glass-systems",
+      "categoryName": "8. Point, Mosaic And Glass Systems",
+      "domain": "wood marquetry",
+      "tags": ["abstract-and-experimental", "point-mosaic-and-glass-systems", "wood-marquetry"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-159 marquetry wood inlay wood marquetry wood veneers 8. point, mosaic and glass systems unit-based illustration wood marquetry pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems wood-marquetry"
+    },
+    {
+      "id": "SP10-160",
+      "name": "Tiffany Lampshade Glass",
+      "styleAnchors": ["Tiffany Lampshade Glass", "tiffany-style lamp glass", "opalescent glass"],
+      "ref": "pack_10/SP10-160.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "point-mosaic-and-glass-systems",
+      "categoryName": "8. Point, Mosaic And Glass Systems",
+      "domain": "tiffany-style lamp glass",
+      "tags": [
+        "abstract-and-experimental",
+        "point-mosaic-and-glass-systems",
+        "tiffany-style-lamp-glass"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-160 tiffany lampshade glass tiffany-style lamp glass opalescent glass 8. point, mosaic and glass systems unit-based illustration tiffany-style lamp glass pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems tiffany-style-lamp-glass"
+    },
+    {
+      "id": "SP10-161",
+      "name": "Grisaille Leaded Glass",
+      "styleAnchors": ["Grisaille Leaded Glass", "grisaille painted glass", "grey painted glass"],
+      "ref": "pack_10/SP10-161.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "point-mosaic-and-glass-systems",
+      "categoryName": "8. Point, Mosaic And Glass Systems",
+      "domain": "grisaille painted glass",
+      "tags": [
+        "abstract-and-experimental",
+        "point-mosaic-and-glass-systems",
+        "grisaille-painted-glass"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-161 grisaille leaded glass grisaille painted glass grey painted glass 8. point, mosaic and glass systems unit-based illustration grisaille painted glass pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems grisaille-painted-glass"
+    },
+    {
+      "id": "SP10-162",
+      "name": "Fused Glass Slab",
+      "styleAnchors": ["Fused Glass Slab", "fused glass", "kiln-fused glass"],
+      "ref": "pack_10/SP10-162.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "point-mosaic-and-glass-systems",
+      "categoryName": "8. Point, Mosaic And Glass Systems",
+      "domain": "fused glass",
+      "tags": ["abstract-and-experimental", "point-mosaic-and-glass-systems", "fused-glass"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-162 fused glass slab fused glass kiln-fused glass 8. point, mosaic and glass systems unit-based illustration fused glass pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems fused-glass"
+    },
+    {
+      "id": "SP10-163",
+      "name": "Paper Quilling Coils",
+      "styleAnchors": ["Paper Quilling Coils", "paper quilling", "rolled paper coils"],
+      "ref": "pack_10/SP10-163.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "point-mosaic-and-glass-systems",
+      "categoryName": "8. Point, Mosaic And Glass Systems",
+      "domain": "paper quilling",
+      "tags": ["abstract-and-experimental", "point-mosaic-and-glass-systems", "paper-quilling"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-163 paper quilling coils paper quilling rolled paper coils 8. point, mosaic and glass systems unit-based illustration paper quilling pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems paper-quilling"
     },
     {
       "id": "SP10-078",
@@ -2016,5 +2295,5 @@
       "searchableText": "sp10-080 letterpress 9. print and light finishes print & light finish pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes"
     }
   ],
-  "totalPresetCount": 146
+  "totalPresetCount": 163
 }
