@@ -5525,5 +5525,43 @@
   ],
   "SP10-161": ["Grisaille dragon. No text or logo.", "Grisaille vine window. No text or logo."],
   "SP10-162": ["Fused glass knight. No text or logo.", "Fused glass jellyfish. No text or logo."],
-  "SP10-163": ["Quilled knight. No text or logo.", "Quilled castle. No text or logo."]
+  "SP10-163": ["Quilled knight. No text or logo.", "Quilled castle. No text or logo."],
+  "SP10-078": ["Neon-outlined knight. No text or logo.", "Neon-outlined crown. No text or logo."],
+  "SP10-079": [
+    "Foil-stamped knight on navy. No text or logo.",
+    "Foil-stamped moth on black. No text or logo."
+  ],
+  "SP10-080": ["Letterpress dragon. No text or logo.", "Letterpress knight. No text or logo."],
+  "SP10-164": ["EL wire dragon. No text or logo.", "EL wire dancer. No text or logo."],
+  "SP10-165": ["Laser knight. No text or logo.", "Laser castle gate. No text or logo."],
+  "SP10-166": ["UV dragon. No text or logo.", "UV mushroom forest. No text or logo."],
+  "SP10-167": [
+    "LED-strip dragon sculpture. No text or logo.",
+    "LED-strip castle model. No text or logo."
+  ],
+  "SP10-168": [
+    "Projection-mapped statue. No text or logo.",
+    "Projection-mapped castle. No text or logo."
+  ],
+  "SP10-169": ["Fiber optic dragon. No text or logo.", "Fiber optic tree. No text or logo."],
+  "SP10-170": ["Glow-in-dark dragon. No text or logo.", "Glow-in-dark moon. No text or logo."],
+  "SP10-171": [
+    "Blind-embossed knight crest. No text or logo.",
+    "Blind-embossed rose. No text or logo."
+  ],
+  "SP10-172": ["Debossed dragon. No text or logo.", "Debossed sword. No text or logo."],
+  "SP10-173": ["Spot UV knight. No text or logo.", "Spot UV moon. No text or logo."],
+  "SP10-174": ["Die-cut forest knight. No text or logo.", "Die-cut sea serpent. No text or logo."],
+  "SP10-175": [
+    "Metallic screenprint dragon. No text or logo.",
+    "Metallic screenprint owl. No text or logo."
+  ],
+  "SP10-176": ["Thermography dragon. No text or logo.", "Thermography castle. No text or logo."],
+  "SP10-177": ["Intaglio dragon. No text or logo.", "Intaglio castle. No text or logo."],
+  "SP10-178": ["Wax seal knight. No text or logo.", "Wax seal moth. No text or logo."],
+  "SP10-179": [
+    "Fore-edge painting of a knight. No text or logo.",
+    "Fore-edge painting of a ship. No text or logo."
+  ],
+  "SP10-180": ["Pearlescent dragon. No text or logo.", "Pearlescent jellyfish. No text or logo."]
 }

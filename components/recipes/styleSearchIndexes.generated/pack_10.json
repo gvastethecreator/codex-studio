@@ -3,7 +3,7 @@
     {
       "id": "pack_10",
       "name": "Abstract & Experimental",
-      "presetCount": 163
+      "presetCount": 180
     }
   ],
   "presets": [
@@ -2293,7 +2293,261 @@
       "tags": ["abstract-and-experimental", "print-and-light-finishes"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp10-080 letterpress 9. print and light finishes print & light finish pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes"
+    },
+    {
+      "id": "SP10-164",
+      "name": "EL Wire Outline",
+      "styleAnchors": ["EL Wire Outline", "electroluminescent wire", "thin EL wire outlines"],
+      "ref": "pack_10/SP10-164.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "print-and-light-finishes",
+      "categoryName": "9. Print And Light Finishes",
+      "domain": "electroluminescent wire",
+      "tags": ["abstract-and-experimental", "print-and-light-finishes", "electroluminescent-wire"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-164 el wire outline electroluminescent wire thin el wire outlines 9. print and light finishes print & light finish electroluminescent wire pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes electroluminescent-wire"
+    },
+    {
+      "id": "SP10-165",
+      "name": "Laser Beam Show",
+      "styleAnchors": ["Laser Beam Show", "laser beams in haze", "laser fans"],
+      "ref": "pack_10/SP10-165.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "print-and-light-finishes",
+      "categoryName": "9. Print And Light Finishes",
+      "domain": "laser beams in haze",
+      "tags": ["abstract-and-experimental", "print-and-light-finishes", "laser-beams-in-haze"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-165 laser beam show laser beams in haze laser fans 9. print and light finishes print & light finish laser beams in haze pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes laser-beams-in-haze"
+    },
+    {
+      "id": "SP10-166",
+      "name": "UV Blacklight Glow",
+      "styleAnchors": ["UV Blacklight Glow", "ultraviolet fluorescence", "UV fluorescent glow"],
+      "ref": "pack_10/SP10-166.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "print-and-light-finishes",
+      "categoryName": "9. Print And Light Finishes",
+      "domain": "ultraviolet fluorescence",
+      "tags": ["abstract-and-experimental", "print-and-light-finishes", "ultraviolet-fluorescence"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-166 uv blacklight glow ultraviolet fluorescence uv fluorescent glow 9. print and light finishes print & light finish ultraviolet fluorescence pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes ultraviolet-fluorescence"
+    },
+    {
+      "id": "SP10-167",
+      "name": "LED Strip Contour",
+      "styleAnchors": ["LED Strip Contour", "LED strip contour light", "dotted LED strips"],
+      "ref": "pack_10/SP10-167.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "print-and-light-finishes",
+      "categoryName": "9. Print And Light Finishes",
+      "domain": "LED strip contour light",
+      "tags": ["abstract-and-experimental", "print-and-light-finishes", "led-strip-contour-light"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-167 led strip contour led strip contour light dotted led strips 9. print and light finishes print & light finish led strip contour light pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes led-strip-contour-light"
+    },
+    {
+      "id": "SP10-168",
+      "name": "Projection Mapping Glow",
+      "styleAnchors": [
+        "Projection Mapping Glow",
+        "projection mapping",
+        "surface-mapped projection"
+      ],
+      "ref": "pack_10/SP10-168.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "print-and-light-finishes",
+      "categoryName": "9. Print And Light Finishes",
+      "domain": "projection mapping",
+      "tags": ["abstract-and-experimental", "print-and-light-finishes", "projection-mapping"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-168 projection mapping glow projection mapping surface-mapped projection 9. print and light finishes print & light finish projection mapping pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes projection-mapping"
+    },
+    {
+      "id": "SP10-169",
+      "name": "Fiber Optic Sparkle",
+      "styleAnchors": ["Fiber Optic Sparkle", "fiber optic points", "fiber-optic pinpoints"],
+      "ref": "pack_10/SP10-169.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "print-and-light-finishes",
+      "categoryName": "9. Print And Light Finishes",
+      "domain": "fiber optic points",
+      "tags": ["abstract-and-experimental", "print-and-light-finishes", "fiber-optic-points"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-169 fiber optic sparkle fiber optic points fiber-optic pinpoints 9. print and light finishes print & light finish fiber optic points pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes fiber-optic-points"
+    },
+    {
+      "id": "SP10-170",
+      "name": "Glow-in-the-Dark Phosphor",
+      "styleAnchors": ["Glow-in-the-Dark Phosphor", "phosphorescent glow", "phosphor green glow"],
+      "ref": "pack_10/SP10-170.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "print-and-light-finishes",
+      "categoryName": "9. Print And Light Finishes",
+      "domain": "phosphorescent glow",
+      "tags": ["abstract-and-experimental", "print-and-light-finishes", "phosphorescent-glow"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-170 glow-in-the-dark phosphor phosphorescent glow phosphor green glow 9. print and light finishes print & light finish phosphorescent glow pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes phosphorescent-glow"
+    },
+    {
+      "id": "SP10-171",
+      "name": "Blind Embossing",
+      "styleAnchors": ["Blind Embossing", "blind embossed paper", "uninked raised relief"],
+      "ref": "pack_10/SP10-171.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "print-and-light-finishes",
+      "categoryName": "9. Print And Light Finishes",
+      "domain": "blind embossed paper",
+      "tags": ["abstract-and-experimental", "print-and-light-finishes", "blind-embossed-paper"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-171 blind embossing blind embossed paper uninked raised relief 9. print and light finishes print & light finish blind embossed paper pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes blind-embossed-paper"
+    },
+    {
+      "id": "SP10-172",
+      "name": "Debossing",
+      "styleAnchors": ["Debossing", "debossed paper", "recessed impression"],
+      "ref": "pack_10/SP10-172.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "print-and-light-finishes",
+      "categoryName": "9. Print And Light Finishes",
+      "domain": "debossed paper",
+      "tags": ["abstract-and-experimental", "print-and-light-finishes", "debossed-paper"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-172 debossing debossed paper recessed impression 9. print and light finishes print & light finish debossed paper pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes debossed-paper"
+    },
+    {
+      "id": "SP10-173",
+      "name": "Spot UV Gloss",
+      "styleAnchors": ["Spot UV Gloss", "spot UV varnish", "gloss on matte"],
+      "ref": "pack_10/SP10-173.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "print-and-light-finishes",
+      "categoryName": "9. Print And Light Finishes",
+      "domain": "spot UV varnish",
+      "tags": ["abstract-and-experimental", "print-and-light-finishes", "spot-uv-varnish"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-173 spot uv gloss spot uv varnish gloss on matte 9. print and light finishes print & light finish spot uv varnish pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes spot-uv-varnish"
+    },
+    {
+      "id": "SP10-174",
+      "name": "Die-Cut Layers",
+      "styleAnchors": ["Die-Cut Layers", "layered die-cut paper", "stacked die-cut layers"],
+      "ref": "pack_10/SP10-174.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "print-and-light-finishes",
+      "categoryName": "9. Print And Light Finishes",
+      "domain": "layered die-cut paper",
+      "tags": ["abstract-and-experimental", "print-and-light-finishes", "layered-die-cut-paper"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-174 die-cut layers layered die-cut paper stacked die-cut layers 9. print and light finishes print & light finish layered die-cut paper pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes layered-die-cut-paper"
+    },
+    {
+      "id": "SP10-175",
+      "name": "Metallic Screenprint Ink",
+      "styleAnchors": ["Metallic Screenprint Ink", "metallic screen print", "flat layers"],
+      "ref": "pack_10/SP10-175.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "print-and-light-finishes",
+      "categoryName": "9. Print And Light Finishes",
+      "domain": "metallic screen print",
+      "tags": ["abstract-and-experimental", "print-and-light-finishes", "metallic-screen-print"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-175 metallic screenprint ink metallic screen print flat layers 9. print and light finishes print & light finish metallic screen print pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes metallic-screen-print"
+    },
+    {
+      "id": "SP10-176",
+      "name": "Thermography Raised Ink",
+      "styleAnchors": [
+        "Thermography Raised Ink",
+        "thermographic raised print",
+        "glossy raised ink"
+      ],
+      "ref": "pack_10/SP10-176.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "print-and-light-finishes",
+      "categoryName": "9. Print And Light Finishes",
+      "domain": "thermographic raised print",
+      "tags": [
+        "abstract-and-experimental",
+        "print-and-light-finishes",
+        "thermographic-raised-print"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-176 thermography raised ink thermographic raised print glossy raised ink 9. print and light finishes print & light finish thermographic raised print pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes thermographic-raised-print"
+    },
+    {
+      "id": "SP10-177",
+      "name": "Intaglio Engraved Print",
+      "styleAnchors": [
+        "Intaglio Engraved Print",
+        "engraved intaglio print",
+        "raised engraved lines"
+      ],
+      "ref": "pack_10/SP10-177.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "print-and-light-finishes",
+      "categoryName": "9. Print And Light Finishes",
+      "domain": "engraved intaglio print",
+      "tags": ["abstract-and-experimental", "print-and-light-finishes", "engraved-intaglio-print"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-177 intaglio engraved print engraved intaglio print raised engraved lines 9. print and light finishes print & light finish engraved intaglio print pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes engraved-intaglio-print"
+    },
+    {
+      "id": "SP10-178",
+      "name": "Wax Seal Impression",
+      "styleAnchors": ["Wax Seal Impression", "wax seal", "stamped wax relief"],
+      "ref": "pack_10/SP10-178.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "print-and-light-finishes",
+      "categoryName": "9. Print And Light Finishes",
+      "domain": "wax seal",
+      "tags": ["abstract-and-experimental", "print-and-light-finishes", "wax-seal"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-178 wax seal impression wax seal stamped wax relief 9. print and light finishes print & light finish wax seal pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes wax-seal"
+    },
+    {
+      "id": "SP10-179",
+      "name": "Gilded Page Edges",
+      "styleAnchors": ["Gilded Page Edges", "gilded book edges", "fore-edge painting"],
+      "ref": "pack_10/SP10-179.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "print-and-light-finishes",
+      "categoryName": "9. Print And Light Finishes",
+      "domain": "gilded book edges",
+      "tags": ["abstract-and-experimental", "print-and-light-finishes", "gilded-book-edges"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-179 gilded page edges gilded book edges fore-edge painting 9. print and light finishes print & light finish gilded book edges pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes gilded-book-edges"
+    },
+    {
+      "id": "SP10-180",
+      "name": "Pearlescent Ink",
+      "styleAnchors": ["Pearlescent Ink", "pearlescent printing ink", "pearlescent shimmer ink"],
+      "ref": "pack_10/SP10-180.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "print-and-light-finishes",
+      "categoryName": "9. Print And Light Finishes",
+      "domain": "pearlescent printing ink",
+      "tags": ["abstract-and-experimental", "print-and-light-finishes", "pearlescent-printing-ink"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-180 pearlescent ink pearlescent printing ink pearlescent shimmer ink 9. print and light finishes print & light finish pearlescent printing ink pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes pearlescent-printing-ink"
     }
   ],
-  "totalPresetCount": 163
+  "totalPresetCount": 180
 }

@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP10-175
+packId: pack_10
+name: Metallic Screenprint Ink
+styleAnchors:
+  - Metallic Screenprint Ink
+  - metallic screen print
+  - flat layers
+displayName: Metallic Screenprint Ink
+category: 9. Print And Light Finishes
+domain: metallic screen print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - print-and-light-finishes
+  - screenprint
+  - metallic
+  - finish
+visualDna:
+  aesthetic: 'Metallic screenprint: flat layers with metallic ink catching light.'
+  subject_treatment: "Physical print finish: present the prompt's subject as artwork on a printed support (card, paper, cover) finished with this process, keeping the subject recognizable: the artwork is screen-printed in flat layers with one metallic ink."
+  color_and_tone: Flat colors plus metallic ink, as produced by the printing process on the stock.
+  lighting_and_shadow: Raking light across the printed support to reveal relief, gloss or foil.
+  texture_and_material: Screenprint ink layers, on quality paper or board stock.
+  camera_and_composition: Close angled view of the printed piece so the finish and the subject both read at card size.
+  atmosphere_and_mood: Bold, crafted, poster-like and shiny, carried by the tactile finish.
+  rendering_and_quality: Crisp product-photography finish with accurate paper and ink detail; no readable text.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Metallic Screenprint Ink as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: flat layers; metallic ink; physical print process
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - readable printed text
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable printed text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_10
+  packName: Abstract & Experimental
+  categoryId: print-and-light-finishes
+  categoryName: 9. Print And Light Finishes
+  tags:
+    - abstract-and-experimental
+    - print-and-light-finishes
+    - screenprint
+    - metallic
+    - finish
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: metallic screen print

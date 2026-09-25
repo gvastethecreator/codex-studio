@@ -8,28 +8,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Neon Light Lines',
     category: '9. Print And Light Finishes',
     negativePrompt:
-      'bulb, sun, fake readable text, flat sticker look, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable printed text, bulb, sun, fake readable text, flat sticker look, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Neon Light Lines becomes a transferable print finish and luminous line system: start from Glowing lines in dark, Nightlife, cyber, and Cool, dark, then route prompt content through embossing, debossing, foil reflectance, neon tubing, ink pressure, and premium substrate logic without forcing one card scene.',
+      aesthetic: "Neon light lines: bent glass neon tubes tracing the subject's contours.",
       subject_treatment:
-        "Keep the user's subject recognizable while using Light tubes to outline, stamp, emboss, deboss, gild, illuminate, or impress prompt subjects without replacing them with signage; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Emissive modifier: keep the prompt's subject and setting, and add this light to the subject's contours or surfaces: neon tubes trace the contours of the subject with glow.",
       color_and_tone:
-        'Build the palette from Neon colors; treat color as ink, paper, metallic foil, dark-field glow, warm tube light, or substrate contrast, with enough value control that the subject remains readable after the style layer is applied.',
+        'Hot pink, cyan and red neon, glowing against a darker surrounding so the light reads.',
       lighting_and_shadow:
-        'Let Self illuminated drive the light response: make highlights come from reflective foil, depressed paper shadows, glow falloff, or luminous glass tubes, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'The emissive element is the key light source, casting colored light on nearby surfaces.',
       texture_and_material:
-        'Render Glow as the tactile or mark-making basis; surface detail should show paper tooth, pressed edges, metallic shear, tube thickness, or ink bite, scaled to figures, props, spaces, or close material studies.',
+        'Bent glass tubes with gas glow and mounts, with a physically plausible light source.',
       camera_and_composition:
-        'Compose around Cool, dark as reusable spatial grammar: favor iconic line hierarchy, negative space, premium print registration, and tactile depth cues, adapting cleanly to portraits, objects, environments, and action scenes.',
-      atmosphere_and_mood:
-        'Use Cool, dark as the emotional register; derive mood from craft, nightlife, luxury, signage, invitation design, and tactile production, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at card size.',
+      atmosphere_and_mood: 'Nocturnal, electric, bold and retro, coming from the light.',
       rendering_and_quality:
-        'Resolve as Nightlife, cyber: finish with precise physical process, controlled glow or impression depth, and no fake text layout, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Glowing lines in dark; Light tubes; Neon colors; Self illuminated; Glow; Cool, dark; Cool, dark; Nightlife, cyber; Nightlife, cyber',
+        'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
+      key_features: 'neon tube contours; gas glow; emissive modifier',
       creative_brief:
-        'Apply neon-line treatment to the input: bent glass-tube strokes, colored glow halos, dark-field contrast, buzzing edge light, and sign-like contours should illuminate forms without requiring readable signage.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Light Lines as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +34,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Foil Stamping',
     category: '9. Print And Light Finishes',
     negativePrompt:
-      'print, ink, fake readable text, flat sticker look, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable printed text, print, ink, fake readable text, flat sticker look, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Foil Stamping becomes a transferable print finish and luminous line system: start from Metallic imprint on paper and Metallic shine, then route prompt content through embossing, debossing, foil reflectance, neon tubing, ink pressure, and premium substrate logic without forcing one card scene.',
+      aesthetic: 'Foil stamping: metallic foil pressed into paper with slight impression.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Debossed to outline, stamp, emboss, deboss, gild, illuminate, or impress prompt subjects without replacing them with signage; preserve anatomy, object identity, or scene intent beneath the abstraction.",
-      color_and_tone:
-        'Build the palette from Gold, Silver, Rose Gold; treat color as ink, paper, metallic foil, dark-field glow, warm tube light, or substrate contrast, with enough value control that the subject remains readable after the style layer is applied.',
+        "Physical print finish: present the prompt's subject as artwork on a printed support (card, paper, cover) finished with this process, keeping the subject recognizable: the artwork's key lines and shapes are foil-stamped in metallic gold or silver on dark stock.",
+      color_and_tone: 'Gold or silver foil on navy, black or deep green stock.',
       lighting_and_shadow:
-        'Let Reflective drive the light response: make highlights come from reflective foil, depressed paper shadows, glow falloff, or luminous glass tubes, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Raking light across the printed support to reveal relief, gloss or foil.',
       texture_and_material:
-        'Render Matte paper contrast as the tactile or mark-making basis; surface detail should show paper tooth, pressed edges, metallic shear, tube thickness, or ink bite, scaled to figures, props, spaces, or close material studies.',
+        'Metallic foil with crisp edges and slight deboss, on quality paper or board stock.',
       camera_and_composition:
-        'Compose around Metallic shine as reusable spatial grammar: favor iconic line hierarchy, negative space, premium print registration, and tactile depth cues, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Close angled view of the printed piece so the finish and the subject both read at card size.',
       atmosphere_and_mood:
-        'Use Expensive, elegant as the emotional register; derive mood from craft, nightlife, luxury, signage, invitation design, and tactile production, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Luxurious, elegant, precious and formal, carried by the tactile finish.',
       rendering_and_quality:
-        'Resolve as Premium, invite: finish with precise physical process, controlled glow or impression depth, and no fake text layout, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Metallic imprint on paper; Debossed; Gold, Silver, Rose Gold; Reflective; Matte paper contrast; Metallic shine; Expensive, elegant; Premium, invite; Metallic shine',
+        'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
+      key_features: 'metallic foil; crisp impression; physical print process',
       creative_brief:
-        'Apply foil-stamping luxury to the input: metallic pressed highlights, debossed edges, heat-transfer shine, and angle-dependent gold or silver reflections should refine forms without requiring packaging or typography.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Foil Stamping as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +60,558 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Letterpress',
     category: '9. Print And Light Finishes',
     negativePrompt:
-      'flat print, fake readable text, flat sticker look, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable printed text, flat print, fake readable text, flat sticker look, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Letterpress becomes a transferable print finish and luminous line system: start from Deep impression ink and Impression depth, then route prompt content through embossing, debossing, foil reflectance, neon tubing, ink pressure, and premium substrate logic without forcing one card scene.',
+        'Letterpress: ink pressed deeply into soft cotton paper, leaving crisp debossed impressions.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Debossed to outline, stamp, emboss, deboss, gild, illuminate, or impress prompt subjects without replacing them with signage; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Physical print finish: present the prompt's subject as artwork on a printed support (card, paper, cover) finished with this process, keeping the subject recognizable: the artwork is letterpress-printed in one or two inks with a deep bite into cotton paper.",
       color_and_tone:
-        'Build the palette from Solid ink; treat color as ink, paper, metallic foil, dark-field glow, warm tube light, or substrate contrast, with enough value control that the subject remains readable after the style layer is applied.',
+        'One or two inks on cream cotton paper, as produced by the printing process on the stock.',
       lighting_and_shadow:
-        'Let Shadow in impression drive the light response: make highlights come from reflective foil, depressed paper shadows, glow falloff, or luminous glass tubes, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Raking light across the printed support to reveal relief, gloss or foil.',
       texture_and_material:
-        'Render Cotton paper as the tactile or mark-making basis; surface detail should show paper tooth, pressed edges, metallic shear, tube thickness, or ink bite, scaled to figures, props, spaces, or close material studies.',
+        'Deep deboss, ink squeeze and paper fibers, on quality paper or board stock.',
       camera_and_composition:
-        'Compose around Impression depth as reusable spatial grammar: favor iconic line hierarchy, negative space, premium print registration, and tactile depth cues, adapting cleanly to portraits, objects, environments, and action scenes.',
-      atmosphere_and_mood:
-        'Use Craft, quality as the emotional register; derive mood from craft, nightlife, luxury, signage, invitation design, and tactile production, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+      atmosphere_and_mood: 'Crafted, tactile, warm and classic, carried by the tactile finish.',
       rendering_and_quality:
-        'Resolve as Tactile, classic: finish with precise physical process, controlled glow or impression depth, and no fake text layout, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Deep impression ink; Debossed; Solid ink; Shadow in impression; Cotton paper; Impression depth; Craft, quality; Tactile, classic; Impression depth',
+        'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
+      key_features: 'deep letterpress bite; cotton paper; physical print process',
       creative_brief:
-        'Apply letterpress impression to the input: inked relief edges, cotton-paper tooth, debossed shadows, pressure marks, and tactile print depth should make any subject feel physically pressed without requiring readable type.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Letterpress as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP10-164',
+    name: 'EL Wire Outline',
+    displayName: 'EL Wire Outline',
+    styleAnchors: ['EL Wire Outline', 'electroluminescent wire', 'thin EL wire outlines'],
+    category: '9. Print And Light Finishes',
+    domain: 'electroluminescent wire',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable printed text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'EL wire: thin flexible electroluminescent wire outlining the subject in soft even glow.',
+      subject_treatment:
+        "Emissive modifier: keep the prompt's subject and setting, and add this light to the subject's contours or surfaces: thin EL wire outlines the subject in soft even glowing lines.",
+      color_and_tone:
+        'Soft cyan, green, pink, glowing against a darker surrounding so the light reads.',
+      lighting_and_shadow:
+        'The emissive element is the key light source, casting colored light on nearby surfaces.',
+      texture_and_material:
+        'Flexible wire with even glow, with a physically plausible light source.',
+      camera_and_composition:
+        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at card size.',
+      atmosphere_and_mood: 'Playful, nocturnal, futuristic and soft, coming from the light.',
+      rendering_and_quality:
+        'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies EL Wire Outline as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'thin EL wire outlines; emissive modifier',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-165',
+    name: 'Laser Beam Show',
+    displayName: 'Laser Beam Show',
+    styleAnchors: ['Laser Beam Show', 'laser beams in haze', 'laser fans'],
+    category: '9. Print And Light Finishes',
+    domain: 'laser beams in haze',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable printed text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Laser show: sharp colored beams fanning through haze around the subject.',
+      subject_treatment:
+        "Emissive modifier: keep the prompt's subject and setting, and add this light to the subject's contours or surfaces: sharp laser beams fan from behind the subject through haze.",
+      color_and_tone:
+        'Green, red and blue beams, glowing against a darker surrounding so the light reads.',
+      lighting_and_shadow:
+        'The emissive element is the key light source, casting colored light on nearby surfaces.',
+      texture_and_material: 'Beams visible in haze, with a physically plausible light source.',
+      camera_and_composition:
+        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at card size.',
+      atmosphere_and_mood: 'Energetic, clubby, dramatic and electric, coming from the light.',
+      rendering_and_quality:
+        'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Laser Beam Show as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'laser fans; haze beams; emissive modifier',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-166',
+    name: 'UV Blacklight Glow',
+    displayName: 'UV Blacklight Glow',
+    styleAnchors: ['UV Blacklight Glow', 'ultraviolet fluorescence', 'UV fluorescent glow'],
+    category: '9. Print And Light Finishes',
+    domain: 'ultraviolet fluorescence',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable printed text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'UV blacklight: fluorescent paint on the subject glowing under ultraviolet light.',
+      subject_treatment:
+        "Emissive modifier: keep the prompt's subject and setting, and add this light to the subject's contours or surfaces: fluorescent patterns on the subject glow under UV while everything else goes dark violet.",
+      color_and_tone:
+        'Neon fluorescent colors under violet UV, glowing against a darker surrounding so the light reads.',
+      lighting_and_shadow:
+        'The emissive element is the key light source, casting colored light on nearby surfaces.',
+      texture_and_material: 'Fluorescent paint glow, with a physically plausible light source.',
+      camera_and_composition:
+        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at card size.',
+      atmosphere_and_mood: 'Psychedelic, nocturnal, eerie and vivid, coming from the light.',
+      rendering_and_quality:
+        'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies UV Blacklight Glow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'UV fluorescent glow; emissive modifier',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-167',
+    name: 'LED Strip Contour',
+    displayName: 'LED Strip Contour',
+    styleAnchors: ['LED Strip Contour', 'LED strip contour light', 'dotted LED strips'],
+    category: '9. Print And Light Finishes',
+    domain: 'LED strip contour light',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable printed text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'LED strip: dotted LED strips tracing edges with visible diodes.',
+      subject_treatment:
+        "Emissive modifier: keep the prompt's subject and setting, and add this light to the subject's contours or surfaces: LED strips trace the subject's edges with visible dotted diodes.",
+      color_and_tone: 'Cool white or RGB, glowing against a darker surrounding so the light reads.',
+      lighting_and_shadow:
+        'The emissive element is the key light source, casting colored light on nearby surfaces.',
+      texture_and_material:
+        'LED strips with visible dots, with a physically plausible light source.',
+      camera_and_composition:
+        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at card size.',
+      atmosphere_and_mood: 'Modern, architectural, clean and electric, coming from the light.',
+      rendering_and_quality:
+        'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies LED Strip Contour as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'dotted LED strips; emissive modifier',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-168',
+    name: 'Projection Mapping Glow',
+    displayName: 'Projection Mapping Glow',
+    styleAnchors: ['Projection Mapping Glow', 'projection mapping', 'surface-mapped projection'],
+    category: '9. Print And Light Finishes',
+    domain: 'projection mapping',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable printed text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        "Projection mapping: animated patterns projected precisely onto the subject's surfaces.",
+      subject_treatment:
+        "Emissive modifier: keep the prompt's subject and setting, and add this light to the subject's contours or surfaces: projected light patterns map precisely onto the subject's surfaces.",
+      color_and_tone:
+        'Vivid projected patterns, glowing against a darker surrounding so the light reads.',
+      lighting_and_shadow:
+        'The emissive element is the key light source, casting colored light on nearby surfaces.',
+      texture_and_material:
+        'Projected light following surfaces, with a physically plausible light source.',
+      camera_and_composition:
+        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at card size.',
+      atmosphere_and_mood: 'Spectacular, magical, nocturnal and vivid, coming from the light.',
+      rendering_and_quality:
+        'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Projection Mapping Glow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'surface-mapped projection; emissive modifier',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-169',
+    name: 'Fiber Optic Sparkle',
+    displayName: 'Fiber Optic Sparkle',
+    styleAnchors: ['Fiber Optic Sparkle', 'fiber optic points', 'fiber-optic pinpoints'],
+    category: '9. Print And Light Finishes',
+    domain: 'fiber optic points',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable printed text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Fiber optics: tiny glowing fiber tips scattered across the subject like stars.',
+      subject_treatment:
+        "Emissive modifier: keep the prompt's subject and setting, and add this light to the subject's contours or surfaces: tiny fiber-optic points sparkle over the subject.",
+      color_and_tone:
+        'Color-shifting pinpoints, glowing against a darker surrounding so the light reads.',
+      lighting_and_shadow:
+        'The emissive element is the key light source, casting colored light on nearby surfaces.',
+      texture_and_material:
+        'Fiber tips with pinpoint glow, with a physically plausible light source.',
+      camera_and_composition:
+        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at card size.',
+      atmosphere_and_mood: 'Magical, starry, soft and delicate, coming from the light.',
+      rendering_and_quality:
+        'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fiber Optic Sparkle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'fiber-optic pinpoints; emissive modifier',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-170',
+    name: 'Glow-in-the-Dark Phosphor',
+    displayName: 'Glow-in-the-Dark Phosphor',
+    styleAnchors: ['Glow-in-the-Dark Phosphor', 'phosphorescent glow', 'phosphor green glow'],
+    category: '9. Print And Light Finishes',
+    domain: 'phosphorescent glow',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable printed text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Glow-in-the-dark: phosphorescent green glow on the subject in darkness.',
+      subject_treatment:
+        "Emissive modifier: keep the prompt's subject and setting, and add this light to the subject's contours or surfaces: phosphorescent surfaces glow soft green in darkness.",
+      color_and_tone:
+        'Pale green phosphor glow, glowing against a darker surrounding so the light reads.',
+      lighting_and_shadow:
+        'The emissive element is the key light source, casting colored light on nearby surfaces.',
+      texture_and_material: 'Phosphorescent paint, with a physically plausible light source.',
+      camera_and_composition:
+        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at card size.',
+      atmosphere_and_mood: 'Eerie, playful, nocturnal and soft, coming from the light.',
+      rendering_and_quality:
+        'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glow-in-the-Dark Phosphor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'phosphor green glow; emissive modifier',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-171',
+    name: 'Blind Embossing',
+    displayName: 'Blind Embossing',
+    styleAnchors: ['Blind Embossing', 'blind embossed paper', 'uninked raised relief'],
+    category: '9. Print And Light Finishes',
+    domain: 'blind embossed paper',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable printed text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Blind embossing: raised relief pressed into paper without ink.',
+      subject_treatment:
+        "Physical print finish: present the prompt's subject as artwork on a printed support (card, paper, cover) finished with this process, keeping the subject recognizable: the artwork is a raised uninked relief on white or cream paper.",
+      color_and_tone: 'White on white or cream, as produced by the printing process on the stock.',
+      lighting_and_shadow:
+        'Raking light across the printed support to reveal relief, gloss or foil.',
+      texture_and_material: 'Raised paper relief, on quality paper or board stock.',
+      camera_and_composition:
+        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+      atmosphere_and_mood: 'Subtle, elegant, tactile and quiet, carried by the tactile finish.',
+      rendering_and_quality:
+        'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blind Embossing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'uninked raised relief; physical print process',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-172',
+    name: 'Debossing',
+    displayName: 'Debossing',
+    styleAnchors: ['Debossing', 'debossed paper', 'recessed impression'],
+    category: '9. Print And Light Finishes',
+    domain: 'debossed paper',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable printed text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Debossing: artwork pressed down into thick board.',
+      subject_treatment:
+        "Physical print finish: present the prompt's subject as artwork on a printed support (card, paper, cover) finished with this process, keeping the subject recognizable: the artwork is pressed into thick board as a recessed impression.",
+      color_and_tone: 'Tonal board color, as produced by the printing process on the stock.',
+      lighting_and_shadow:
+        'Raking light across the printed support to reveal relief, gloss or foil.',
+      texture_and_material: 'Recessed impression in thick board, on quality paper or board stock.',
+      camera_and_composition:
+        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+      atmosphere_and_mood: 'Solid, tactile, minimal and premium, carried by the tactile finish.',
+      rendering_and_quality:
+        'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Debossing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'recessed impression; physical print process',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-173',
+    name: 'Spot UV Gloss',
+    displayName: 'Spot UV Gloss',
+    styleAnchors: ['Spot UV Gloss', 'spot UV varnish', 'gloss on matte'],
+    category: '9. Print And Light Finishes',
+    domain: 'spot UV varnish',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable printed text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Spot UV: glossy varnish on selected areas over matte stock.',
+      subject_treatment:
+        "Physical print finish: present the prompt's subject as artwork on a printed support (card, paper, cover) finished with this process, keeping the subject recognizable: selected parts of the artwork are coated in glossy varnish over matte paper.",
+      color_and_tone:
+        'Tonal black-on-black or color with gloss, as produced by the printing process on the stock.',
+      lighting_and_shadow:
+        'Raking light across the printed support to reveal relief, gloss or foil.',
+      texture_and_material: 'Gloss vs matte contrast, on quality paper or board stock.',
+      camera_and_composition:
+        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+      atmosphere_and_mood: 'Sleek, premium, subtle and modern, carried by the tactile finish.',
+      rendering_and_quality:
+        'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Spot UV Gloss as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'gloss on matte; physical print process',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-174',
+    name: 'Die-Cut Layers',
+    displayName: 'Die-Cut Layers',
+    styleAnchors: ['Die-Cut Layers', 'layered die-cut paper', 'stacked die-cut layers'],
+    category: '9. Print And Light Finishes',
+    domain: 'layered die-cut paper',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable printed text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Die-cut layers: stacked laser-cut paper layers creating depth.',
+      subject_treatment:
+        "Physical print finish: present the prompt's subject as artwork on a printed support (card, paper, cover) finished with this process, keeping the subject recognizable: the artwork is built from stacked die-cut paper layers with shadows.",
+      color_and_tone: 'Tonal paper layers, as produced by the printing process on the stock.',
+      lighting_and_shadow:
+        'Raking light across the printed support to reveal relief, gloss or foil.',
+      texture_and_material: 'Cut paper edges and layered shadows, on quality paper or board stock.',
+      camera_and_composition:
+        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+      atmosphere_and_mood: 'Delicate, deep, crafted and magical, carried by the tactile finish.',
+      rendering_and_quality:
+        'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Die-Cut Layers as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'stacked die-cut layers; physical print process',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-175',
+    name: 'Metallic Screenprint Ink',
+    displayName: 'Metallic Screenprint Ink',
+    styleAnchors: ['Metallic Screenprint Ink', 'metallic screen print', 'flat layers'],
+    category: '9. Print And Light Finishes',
+    domain: 'metallic screen print',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable printed text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Metallic screenprint: flat layers with metallic ink catching light.',
+      subject_treatment:
+        "Physical print finish: present the prompt's subject as artwork on a printed support (card, paper, cover) finished with this process, keeping the subject recognizable: the artwork is screen-printed in flat layers with one metallic ink.",
+      color_and_tone:
+        'Flat colors plus metallic ink, as produced by the printing process on the stock.',
+      lighting_and_shadow:
+        'Raking light across the printed support to reveal relief, gloss or foil.',
+      texture_and_material: 'Screenprint ink layers, on quality paper or board stock.',
+      camera_and_composition:
+        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+      atmosphere_and_mood: 'Bold, crafted, poster-like and shiny, carried by the tactile finish.',
+      rendering_and_quality:
+        'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Metallic Screenprint Ink as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'flat layers; metallic ink; physical print process',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-176',
+    name: 'Thermography Raised Ink',
+    displayName: 'Thermography Raised Ink',
+    styleAnchors: ['Thermography Raised Ink', 'thermographic raised print', 'glossy raised ink'],
+    category: '9. Print And Light Finishes',
+    domain: 'thermographic raised print',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable printed text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Thermography: glossy raised ink puffed by heat.',
+      subject_treatment:
+        "Physical print finish: present the prompt's subject as artwork on a printed support (card, paper, cover) finished with this process, keeping the subject recognizable: the artwork is printed in glossy raised thermographic ink.",
+      color_and_tone:
+        'Glossy black or colored raised ink, as produced by the printing process on the stock.',
+      lighting_and_shadow:
+        'Raking light across the printed support to reveal relief, gloss or foil.',
+      texture_and_material: 'Puffy glossy raised ink, on quality paper or board stock.',
+      camera_and_composition:
+        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+      atmosphere_and_mood: 'Tactile, formal, glossy and crisp, carried by the tactile finish.',
+      rendering_and_quality:
+        'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thermography Raised Ink as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'glossy raised ink; physical print process',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-177',
+    name: 'Intaglio Engraved Print',
+    displayName: 'Intaglio Engraved Print',
+    styleAnchors: ['Intaglio Engraved Print', 'engraved intaglio print', 'raised engraved lines'],
+    category: '9. Print And Light Finishes',
+    domain: 'engraved intaglio print',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable printed text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Intaglio: engraved plate print with raised ink lines and plate mark.',
+      subject_treatment:
+        "Physical print finish: present the prompt's subject as artwork on a printed support (card, paper, cover) finished with this process, keeping the subject recognizable: the artwork is an engraved intaglio print with raised ink lines and plate mark.",
+      color_and_tone:
+        'Black or sepia ink on cream, as produced by the printing process on the stock.',
+      lighting_and_shadow:
+        'Raking light across the printed support to reveal relief, gloss or foil.',
+      texture_and_material:
+        'Raised ink lines and plate impression, on quality paper or board stock.',
+      camera_and_composition:
+        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+      atmosphere_and_mood:
+        'Classical, precise, precious and formal, carried by the tactile finish.',
+      rendering_and_quality:
+        'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Intaglio Engraved Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'raised engraved lines; plate mark; physical print process',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-178',
+    name: 'Wax Seal Impression',
+    displayName: 'Wax Seal Impression',
+    styleAnchors: ['Wax Seal Impression', 'wax seal', 'stamped wax relief'],
+    category: '9. Print And Light Finishes',
+    domain: 'wax seal',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable printed text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Wax seal: artwork stamped into a pool of colored sealing wax.',
+      subject_treatment:
+        "Physical print finish: present the prompt's subject as artwork on a printed support (card, paper, cover) finished with this process, keeping the subject recognizable: the artwork is stamped into a pool of sealing wax on paper.",
+      color_and_tone:
+        'Red, black, gold or green wax, as produced by the printing process on the stock.',
+      lighting_and_shadow:
+        'Raking light across the printed support to reveal relief, gloss or foil.',
+      texture_and_material: 'Glossy wax with crisp relief, on quality paper or board stock.',
+      camera_and_composition:
+        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+      atmosphere_and_mood: 'Antique, secret, formal and romantic, carried by the tactile finish.',
+      rendering_and_quality:
+        'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wax Seal Impression as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'stamped wax relief; physical print process',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-179',
+    name: 'Gilded Page Edges',
+    displayName: 'Gilded Page Edges',
+    styleAnchors: ['Gilded Page Edges', 'gilded book edges', 'fore-edge painting'],
+    category: '9. Print And Light Finishes',
+    domain: 'gilded book edges',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable printed text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Gilded edges: artwork painted on the fore-edge of a book with gold gilding.',
+      subject_treatment:
+        "Physical print finish: present the prompt's subject as artwork on a printed support (card, paper, cover) finished with this process, keeping the subject recognizable: the artwork appears on a book's fanned fore-edge with gilded top edges.",
+      color_and_tone:
+        'Gold gilding with painted scene, as produced by the printing process on the stock.',
+      lighting_and_shadow:
+        'Raking light across the printed support to reveal relief, gloss or foil.',
+      texture_and_material: 'Gilt and painted paper edges, on quality paper or board stock.',
+      camera_and_composition:
+        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+      atmosphere_and_mood:
+        'Secret, precious, antique and delightful, carried by the tactile finish.',
+      rendering_and_quality:
+        'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gilded Page Edges as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'fore-edge painting; gilt edges; physical print process',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-180',
+    name: 'Pearlescent Ink',
+    displayName: 'Pearlescent Ink',
+    styleAnchors: ['Pearlescent Ink', 'pearlescent printing ink', 'pearlescent shimmer ink'],
+    category: '9. Print And Light Finishes',
+    domain: 'pearlescent printing ink',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable printed text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Pearlescent ink: printed artwork with shimmering mother-of-pearl ink.',
+      subject_treatment:
+        "Physical print finish: present the prompt's subject as artwork on a printed support (card, paper, cover) finished with this process, keeping the subject recognizable: the artwork is printed in pearlescent ink that shifts color with angle.",
+      color_and_tone:
+        'Pearl white, pale pink and blue shimmer, as produced by the printing process on the stock.',
+      lighting_and_shadow:
+        'Raking light across the printed support to reveal relief, gloss or foil.',
+      texture_and_material: 'Pearlescent ink sheen, on quality paper or board stock.',
+      camera_and_composition:
+        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+      atmosphere_and_mood: 'Delicate, dreamy, luxurious and soft, carried by the tactile finish.',
+      rendering_and_quality:
+        'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pearlescent Ink as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'pearlescent shimmer ink; physical print process',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

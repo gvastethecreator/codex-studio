@@ -197,6 +197,23 @@ categories:
       - pack_10/SP10-078.yaml
       - pack_10/SP10-079.yaml
       - pack_10/SP10-080.yaml
+      - pack_10/SP10-164.yaml
+      - pack_10/SP10-165.yaml
+      - pack_10/SP10-166.yaml
+      - pack_10/SP10-167.yaml
+      - pack_10/SP10-168.yaml
+      - pack_10/SP10-169.yaml
+      - pack_10/SP10-170.yaml
+      - pack_10/SP10-171.yaml
+      - pack_10/SP10-172.yaml
+      - pack_10/SP10-173.yaml
+      - pack_10/SP10-174.yaml
+      - pack_10/SP10-175.yaml
+      - pack_10/SP10-176.yaml
+      - pack_10/SP10-177.yaml
+      - pack_10/SP10-178.yaml
+      - pack_10/SP10-179.yaml
+      - pack_10/SP10-180.yaml
 presetRefs:
   - pack_10/SP10-001.yaml
   - pack_10/SP10-002.yaml
@@ -361,3 +378,20 @@ presetRefs:
   - pack_10/SP10-078.yaml
   - pack_10/SP10-079.yaml
   - pack_10/SP10-080.yaml
+  - pack_10/SP10-164.yaml
+  - pack_10/SP10-165.yaml
+  - pack_10/SP10-166.yaml
+  - pack_10/SP10-167.yaml
+  - pack_10/SP10-168.yaml
+  - pack_10/SP10-169.yaml
+  - pack_10/SP10-170.yaml
+  - pack_10/SP10-171.yaml
+  - pack_10/SP10-172.yaml
+  - pack_10/SP10-173.yaml
+  - pack_10/SP10-174.yaml
+  - pack_10/SP10-175.yaml
+  - pack_10/SP10-176.yaml
+  - pack_10/SP10-177.yaml
+  - pack_10/SP10-178.yaml
+  - pack_10/SP10-179.yaml
+  - pack_10/SP10-180.yaml
