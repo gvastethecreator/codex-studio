@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-25T17:38:02.301Z",
+  "generatedAt": "2026-09-25T17:42:46.578Z",
   "size": {
     "width": 384,
     "height": 512
   },
-  "count": 4643,
-  "totalBytes": 149046324,
+  "count": 4400,
+  "totalBytes": 141934330,
   "packs": {
     "pack_01": 431,
     "pack_02": 535,
@@ -18,12 +18,12 @@
     "pack_09": 85,
     "pack_10": 85,
     "pack_11": 85,
-    "pack_12": 255,
+    "pack_12": 98,
     "pack_13": 95,
     "pack_14": 150,
     "pack_15": 122,
     "pack_16": 1,
-    "pack_17": 216,
+    "pack_17": 130,
     "pack_19": 10,
     "pack_20": 10,
     "pack_21": 10,
