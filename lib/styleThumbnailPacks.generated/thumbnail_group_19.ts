@@ -19,15 +19,29 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/style-card-thumbnails/SP20-004.webp',
       import.meta.url,
     ).href,
-    'SP20-005': new URL('../../assets/recipes/styles/defaults/SP20-005.webp', import.meta.url).href,
-    'SP20-005-01': new URL(
-      '../../assets/recipes/styles/defaults/variants/SP20-005-01.webp',
+    'SP20-005': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP20-005.webp',
       import.meta.url,
     ).href,
-    'SP20-006': new URL('../../assets/recipes/styles/defaults/SP20-006.webp', import.meta.url).href,
-    'SP20-007': new URL('../../assets/recipes/styles/defaults/SP20-007.webp', import.meta.url).href,
-    'SP20-008': new URL('../../assets/recipes/styles/defaults/SP20-008.webp', import.meta.url).href,
-    'SP20-009': new URL('../../assets/recipes/styles/defaults/SP20-009.webp', import.meta.url).href,
-    'SP20-010': new URL('../../assets/recipes/styles/defaults/SP20-010.webp', import.meta.url).href,
+    'SP20-006': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP20-006.webp',
+      import.meta.url,
+    ).href,
+    'SP20-007': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP20-007.webp',
+      import.meta.url,
+    ).href,
+    'SP20-008': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP20-008.webp',
+      import.meta.url,
+    ).href,
+    'SP20-009': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP20-009.webp',
+      import.meta.url,
+    ).href,
+    'SP20-010': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP20-010.webp',
+      import.meta.url,
+    ).href,
   },
 };

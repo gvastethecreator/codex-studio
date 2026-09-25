@@ -158,7 +158,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'painting_traditional',
     kind: 'collection',
-    presetCount: 47,
+    presetCount: 60,
     imageKeys: [
       'pack_06__traditional_painting',
       'pack_06__mixed_media',
@@ -190,7 +190,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'materials_textures_surfaces',
     kind: 'collection',
-    presetCount: 164,
+    presetCount: 173,
     imageKeys: [
       'pack_08__fabric_and_texture_focus',
       'pack_03__materials',
@@ -203,13 +203,13 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'patterns_ornament',
     kind: 'collection',
-    presetCount: 16,
+    presetCount: 40,
     imageKeys: ['SP10-070', 'SP10-075', 'SP10-072', 'SP10-073', 'SP10-074', 'SP10-046'],
   },
   {
     id: 'diagrams_blueprints_technical_sheets',
     kind: 'collection',
-    presetCount: 29,
+    presetCount: 44,
     imageKeys: ['SP04-057', 'SP10-067', 'SP10-076', 'SP11-033', 'SP04-098', 'SP02-091'],
   },
   {
@@ -257,7 +257,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'surreal_dream_symbolic',
     kind: 'collection',
-    presetCount: 15,
+    presetCount: 20,
     imageKeys: [
       'pack_10__surrealism_and_dream',
       'SP10-031',
@@ -270,7 +270,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'abstract_glitch_systems',
     kind: 'collection',
-    presetCount: 55,
+    presetCount: 80,
     imageKeys: [
       'pack_10__geometric_abstraction',
       'pack_10__fluid_and_organic',
@@ -283,7 +283,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'toys_craft_food_scale',
     kind: 'collection',
-    presetCount: 49,
+    presetCount: 51,
     imageKeys: ['SP11-001', 'SP11-046', 'SP11-032', 'SP07-065', 'SP07-070', 'SP11-002'],
   },
   {
@@ -418,7 +418,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'pack_10',
     kind: 'source',
-    presetCount: 100,
+    presetCount: 180,
     imageKeys: [
       'pack_10__geometric_abstraction',
       'pack_10__fluid_and_organic',
@@ -431,7 +431,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'pack_11',
     kind: 'source',
-    presetCount: 80,
+    presetCount: 95,
     imageKeys: ['SP11-001', 'SP11-002', 'SP11-003', 'SP11-004', 'SP11-005', 'SP11-016'],
   },
   {

@@ -966,13 +966,13 @@
     "packName": "Architecture & Interior",
     "category": "6. Toy Craft And Miniature Architecture",
     "file": "assets/recipes/styles/defaults/SP07-065.webp",
-    "jobId": "eb38c8d9-b147-4241-8e26-7be72b5074e2",
+    "jobId": "b96b8bc8-a73e-40e0-8175-ce3887fbfbc1",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-065.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T10:49:43.133Z"
+    "generatedAt": "2026-09-25T16:20:00.164Z"
   },
   {
     "presetId": "SP07-066",
@@ -981,13 +981,13 @@
     "packName": "Architecture & Interior",
     "category": "6. Toy Craft And Miniature Architecture",
     "file": "assets/recipes/styles/defaults/SP07-066.webp",
-    "jobId": "77bbae61-df40-41a9-b4cd-585232cd0800",
+    "jobId": "1e260c8d-d79a-4f2e-9c7a-3eeddf086f40",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-066.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T10:49:49.176Z"
+    "generatedAt": "2026-09-25T16:19:58.944Z"
   },
   {
     "presetId": "SP07-067",
@@ -996,13 +996,13 @@
     "packName": "Architecture & Interior",
     "category": "6. Toy Craft And Miniature Architecture",
     "file": "assets/recipes/styles/defaults/SP07-067.webp",
-    "jobId": "8c50bd9c-5aa6-4192-9f52-e949aa169690",
+    "jobId": "28bbc726-5287-4155-bf5f-25a929bd44dc",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-067.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T10:50:22.174Z"
+    "generatedAt": "2026-09-25T16:20:44.529Z"
   },
   {
     "presetId": "SP07-068",

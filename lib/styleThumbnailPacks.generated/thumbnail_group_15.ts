@@ -967,224 +967,72 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/style-card-thumbnails/SP15-081.webp',
       import.meta.url,
     ).href,
-    'SP15-081-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-081-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-081-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-081-02.webp',
-      import.meta.url,
-    ).href,
-    'SP15-081-03': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-081-03.webp',
-      import.meta.url,
-    ).href,
-    'SP15-081-04': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-081-04.webp',
-      import.meta.url,
-    ).href,
     'SP15-082': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-082.webp',
-      import.meta.url,
-    ).href,
-    'SP15-082-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-082-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-082-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-082-02.webp',
-      import.meta.url,
-    ).href,
-    'SP15-082-03': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-082-03.webp',
       import.meta.url,
     ).href,
     'SP15-083': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-083.webp',
       import.meta.url,
     ).href,
-    'SP15-083-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-083-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-083-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-083-02.webp',
-      import.meta.url,
-    ).href,
-    'SP15-083-03': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-083-03.webp',
-      import.meta.url,
-    ).href,
     'SP15-084': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-084.webp',
-      import.meta.url,
-    ).href,
-    'SP15-084-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-084-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-084-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-084-02.webp',
       import.meta.url,
     ).href,
     'SP15-085': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-085.webp',
       import.meta.url,
     ).href,
-    'SP15-085-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-085-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-085-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-085-02.webp',
-      import.meta.url,
-    ).href,
     'SP15-086': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-086.webp',
-      import.meta.url,
-    ).href,
-    'SP15-086-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-086-01.webp',
       import.meta.url,
     ).href,
     'SP15-087': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-087.webp',
       import.meta.url,
     ).href,
-    'SP15-087-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-087-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-087-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-087-02.webp',
-      import.meta.url,
-    ).href,
-    'SP15-087-03': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-087-03.webp',
-      import.meta.url,
-    ).href,
     'SP15-088': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-088.webp',
-      import.meta.url,
-    ).href,
-    'SP15-088-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-088-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-088-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-088-02.webp',
-      import.meta.url,
-    ).href,
-    'SP15-088-03': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-088-03.webp',
       import.meta.url,
     ).href,
     'SP15-089': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-089.webp',
       import.meta.url,
     ).href,
-    'SP15-089-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-089-01.webp',
-      import.meta.url,
-    ).href,
     'SP15-090': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-090.webp',
-      import.meta.url,
-    ).href,
-    'SP15-090-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-090-01.webp',
       import.meta.url,
     ).href,
     'SP15-091': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-091.webp',
       import.meta.url,
     ).href,
-    'SP15-091-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-091-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-091-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-091-02.webp',
-      import.meta.url,
-    ).href,
-    'SP15-091-03': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-091-03.webp',
-      import.meta.url,
-    ).href,
     'SP15-092': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-092.webp',
-      import.meta.url,
-    ).href,
-    'SP15-092-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-092-01.webp',
       import.meta.url,
     ).href,
     'SP15-093': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-093.webp',
       import.meta.url,
     ).href,
-    'SP15-093-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-093-01.webp',
-      import.meta.url,
-    ).href,
     'SP15-094': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-094.webp',
-      import.meta.url,
-    ).href,
-    'SP15-094-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-094-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-094-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-094-02.webp',
       import.meta.url,
     ).href,
     'SP15-095': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-095.webp',
       import.meta.url,
     ).href,
-    'SP15-095-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-095-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-095-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-095-02.webp',
-      import.meta.url,
-    ).href,
     'SP15-096': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-096.webp',
-      import.meta.url,
-    ).href,
-    'SP15-096-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-096-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-096-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-096-02.webp',
       import.meta.url,
     ).href,
     'SP15-097': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-097.webp',
       import.meta.url,
     ).href,
-    'SP15-097-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-097-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-097-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-097-02.webp',
-      import.meta.url,
-    ).href,
     'SP15-098': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-098.webp',
-      import.meta.url,
-    ).href,
-    'SP15-098-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-098-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-098-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-098-02.webp',
       import.meta.url,
     ).href,
     'SP15-099': new URL(
@@ -1195,320 +1043,92 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/style-card-thumbnails/SP15-100.webp',
       import.meta.url,
     ).href,
-    'SP15-100-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-100-01.webp',
-      import.meta.url,
-    ).href,
     'SP15-101': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-101.webp',
-      import.meta.url,
-    ).href,
-    'SP15-101-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-101-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-101-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-101-02.webp',
-      import.meta.url,
-    ).href,
-    'SP15-101-03': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-101-03.webp',
       import.meta.url,
     ).href,
     'SP15-102': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-102.webp',
       import.meta.url,
     ).href,
-    'SP15-102-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-102-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-102-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-102-02.webp',
-      import.meta.url,
-    ).href,
-    'SP15-102-03': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-102-03.webp',
-      import.meta.url,
-    ).href,
-    'SP15-102-04': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-102-04.webp',
-      import.meta.url,
-    ).href,
     'SP15-103': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-103.webp',
-      import.meta.url,
-    ).href,
-    'SP15-103-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-103-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-103-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-103-02.webp',
-      import.meta.url,
-    ).href,
-    'SP15-103-03': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-103-03.webp',
       import.meta.url,
     ).href,
     'SP15-104': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-104.webp',
       import.meta.url,
     ).href,
-    'SP15-104-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-104-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-104-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-104-02.webp',
-      import.meta.url,
-    ).href,
-    'SP15-104-03': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-104-03.webp',
-      import.meta.url,
-    ).href,
     'SP15-105': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-105.webp',
-      import.meta.url,
-    ).href,
-    'SP15-105-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-105-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-105-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-105-02.webp',
-      import.meta.url,
-    ).href,
-    'SP15-105-03': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-105-03.webp',
-      import.meta.url,
-    ).href,
-    'SP15-105-04': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-105-04.webp',
       import.meta.url,
     ).href,
     'SP15-106': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-106.webp',
       import.meta.url,
     ).href,
-    'SP15-106-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-106-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-106-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-106-02.webp',
-      import.meta.url,
-    ).href,
-    'SP15-106-03': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-106-03.webp',
-      import.meta.url,
-    ).href,
-    'SP15-106-04': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-106-04.webp',
-      import.meta.url,
-    ).href,
     'SP15-107': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-107.webp',
-      import.meta.url,
-    ).href,
-    'SP15-107-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-107-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-107-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-107-02.webp',
       import.meta.url,
     ).href,
     'SP15-108': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-108.webp',
       import.meta.url,
     ).href,
-    'SP15-108-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-108-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-108-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-108-02.webp',
-      import.meta.url,
-    ).href,
-    'SP15-108-03': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-108-03.webp',
-      import.meta.url,
-    ).href,
     'SP15-109': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-109.webp',
-      import.meta.url,
-    ).href,
-    'SP15-109-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-109-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-109-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-109-02.webp',
-      import.meta.url,
-    ).href,
-    'SP15-109-03': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-109-03.webp',
       import.meta.url,
     ).href,
     'SP15-110': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-110.webp',
       import.meta.url,
     ).href,
-    'SP15-110-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-110-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-110-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-110-02.webp',
-      import.meta.url,
-    ).href,
     'SP15-111': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-111.webp',
-      import.meta.url,
-    ).href,
-    'SP15-111-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-111-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-111-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-111-02.webp',
       import.meta.url,
     ).href,
     'SP15-112': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-112.webp',
       import.meta.url,
     ).href,
-    'SP15-112-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-112-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-112-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-112-02.webp',
-      import.meta.url,
-    ).href,
     'SP15-113': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-113.webp',
-      import.meta.url,
-    ).href,
-    'SP15-113-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-113-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-113-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-113-02.webp',
       import.meta.url,
     ).href,
     'SP15-114': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-114.webp',
       import.meta.url,
     ).href,
-    'SP15-114-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-114-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-114-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-114-02.webp',
-      import.meta.url,
-    ).href,
-    'SP15-114-03': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-114-03.webp',
-      import.meta.url,
-    ).href,
     'SP15-115': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-115.webp',
-      import.meta.url,
-    ).href,
-    'SP15-115-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-115-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-115-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-115-02.webp',
       import.meta.url,
     ).href,
     'SP15-116': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-116.webp',
       import.meta.url,
     ).href,
-    'SP15-116-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-116-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-116-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-116-02.webp',
-      import.meta.url,
-    ).href,
     'SP15-117': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-117.webp',
-      import.meta.url,
-    ).href,
-    'SP15-117-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-117-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-117-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-117-02.webp',
       import.meta.url,
     ).href,
     'SP15-118': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-118.webp',
       import.meta.url,
     ).href,
-    'SP15-118-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-118-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-118-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-118-02.webp',
-      import.meta.url,
-    ).href,
     'SP15-119': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-119.webp',
-      import.meta.url,
-    ).href,
-    'SP15-119-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-119-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-119-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-119-02.webp',
       import.meta.url,
     ).href,
     'SP15-120': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-120.webp',
       import.meta.url,
     ).href,
-    'SP15-120-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-120-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-120-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-120-02.webp',
-      import.meta.url,
-    ).href,
     'SP15-121': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-121.webp',
       import.meta.url,
     ).href,
-    'SP15-121-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-121-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-121-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-121-02.webp',
-      import.meta.url,
-    ).href,
     'SP15-122': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-122.webp',
-      import.meta.url,
-    ).href,
-    'SP15-122-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-122-01.webp',
-      import.meta.url,
-    ).href,
-    'SP15-122-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP15-122-02.webp',
       import.meta.url,
     ).href,
   },

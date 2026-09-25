@@ -7,1004 +7,480 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/style-card-thumbnails/SP22-101.webp',
       import.meta.url,
     ).href,
-    'SP22-101-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-101-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-102': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-102.webp',
-      import.meta.url,
-    ).href,
-    'SP22-102-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-102-01.webp',
       import.meta.url,
     ).href,
     'SP22-103': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-103.webp',
       import.meta.url,
     ).href,
-    'SP22-103-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-103-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-104': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-104.webp',
-      import.meta.url,
-    ).href,
-    'SP22-104-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-104-01.webp',
       import.meta.url,
     ).href,
     'SP22-105': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-105.webp',
       import.meta.url,
     ).href,
-    'SP22-105-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-105-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-106': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-106.webp',
-      import.meta.url,
-    ).href,
-    'SP22-106-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-106-01.webp',
-      import.meta.url,
-    ).href,
-    'SP22-106-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-106-02.webp',
       import.meta.url,
     ).href,
     'SP22-107': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-107.webp',
       import.meta.url,
     ).href,
-    'SP22-107-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-107-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-108': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-108.webp',
-      import.meta.url,
-    ).href,
-    'SP22-108-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-108-01.webp',
       import.meta.url,
     ).href,
     'SP22-109': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-109.webp',
       import.meta.url,
     ).href,
-    'SP22-109-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-109-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-110': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-110.webp',
-      import.meta.url,
-    ).href,
-    'SP22-110-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-110-01.webp',
       import.meta.url,
     ).href,
     'SP22-111': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-111.webp',
       import.meta.url,
     ).href,
-    'SP22-111-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-111-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-112': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-112.webp',
-      import.meta.url,
-    ).href,
-    'SP22-112-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-112-01.webp',
       import.meta.url,
     ).href,
     'SP22-113': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-113.webp',
       import.meta.url,
     ).href,
-    'SP22-113-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-113-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-114': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-114.webp',
-      import.meta.url,
-    ).href,
-    'SP22-114-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-114-01.webp',
       import.meta.url,
     ).href,
     'SP22-115': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-115.webp',
       import.meta.url,
     ).href,
-    'SP22-115-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-115-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-116': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-116.webp',
-      import.meta.url,
-    ).href,
-    'SP22-116-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-116-01.webp',
       import.meta.url,
     ).href,
     'SP22-117': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-117.webp',
       import.meta.url,
     ).href,
-    'SP22-117-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-117-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-118': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-118.webp',
-      import.meta.url,
-    ).href,
-    'SP22-118-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-118-01.webp',
       import.meta.url,
     ).href,
     'SP22-119': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-119.webp',
       import.meta.url,
     ).href,
-    'SP22-119-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-119-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-120': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-120.webp',
-      import.meta.url,
-    ).href,
-    'SP22-120-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-120-01.webp',
       import.meta.url,
     ).href,
     'SP22-121': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-121.webp',
       import.meta.url,
     ).href,
-    'SP22-121-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-121-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-122': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-122.webp',
-      import.meta.url,
-    ).href,
-    'SP22-122-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-122-01.webp',
       import.meta.url,
     ).href,
     'SP22-123': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-123.webp',
       import.meta.url,
     ).href,
-    'SP22-123-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-123-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-124': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-124.webp',
-      import.meta.url,
-    ).href,
-    'SP22-124-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-124-01.webp',
       import.meta.url,
     ).href,
     'SP22-125': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-125.webp',
       import.meta.url,
     ).href,
-    'SP22-125-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-125-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-126': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-126.webp',
-      import.meta.url,
-    ).href,
-    'SP22-126-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-126-01.webp',
       import.meta.url,
     ).href,
     'SP22-127': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-127.webp',
       import.meta.url,
     ).href,
-    'SP22-127-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-127-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-128': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-128.webp',
-      import.meta.url,
-    ).href,
-    'SP22-128-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-128-01.webp',
       import.meta.url,
     ).href,
     'SP22-129': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-129.webp',
       import.meta.url,
     ).href,
-    'SP22-129-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-129-01.webp',
-      import.meta.url,
-    ).href,
-    'SP22-129-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-129-02.webp',
-      import.meta.url,
-    ).href,
     'SP22-130': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-130.webp',
-      import.meta.url,
-    ).href,
-    'SP22-130-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-130-01.webp',
       import.meta.url,
     ).href,
     'SP22-131': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-131.webp',
       import.meta.url,
     ).href,
-    'SP22-131-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-131-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-132': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-132.webp',
-      import.meta.url,
-    ).href,
-    'SP22-132-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-132-01.webp',
       import.meta.url,
     ).href,
     'SP22-133': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-133.webp',
       import.meta.url,
     ).href,
-    'SP22-133-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-133-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-134': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-134.webp',
-      import.meta.url,
-    ).href,
-    'SP22-134-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-134-01.webp',
       import.meta.url,
     ).href,
     'SP22-135': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-135.webp',
       import.meta.url,
     ).href,
-    'SP22-135-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-135-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-136': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-136.webp',
-      import.meta.url,
-    ).href,
-    'SP22-136-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-136-01.webp',
       import.meta.url,
     ).href,
     'SP22-137': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-137.webp',
       import.meta.url,
     ).href,
-    'SP22-137-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-137-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-138': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-138.webp',
-      import.meta.url,
-    ).href,
-    'SP22-138-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-138-01.webp',
       import.meta.url,
     ).href,
     'SP22-139': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-139.webp',
       import.meta.url,
     ).href,
-    'SP22-139-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-139-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-140': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-140.webp',
-      import.meta.url,
-    ).href,
-    'SP22-140-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-140-01.webp',
       import.meta.url,
     ).href,
     'SP22-141': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-141.webp',
       import.meta.url,
     ).href,
-    'SP22-141-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-141-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-142': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-142.webp',
-      import.meta.url,
-    ).href,
-    'SP22-142-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-142-01.webp',
       import.meta.url,
     ).href,
     'SP22-143': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-143.webp',
       import.meta.url,
     ).href,
-    'SP22-143-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-143-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-144': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-144.webp',
-      import.meta.url,
-    ).href,
-    'SP22-144-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-144-01.webp',
       import.meta.url,
     ).href,
     'SP22-145': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-145.webp',
       import.meta.url,
     ).href,
-    'SP22-145-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-145-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-146': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-146.webp',
-      import.meta.url,
-    ).href,
-    'SP22-146-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-146-01.webp',
       import.meta.url,
     ).href,
     'SP22-147': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-147.webp',
       import.meta.url,
     ).href,
-    'SP22-147-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-147-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-148': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-148.webp',
-      import.meta.url,
-    ).href,
-    'SP22-148-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-148-01.webp',
       import.meta.url,
     ).href,
     'SP22-149': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-149.webp',
       import.meta.url,
     ).href,
-    'SP22-149-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-149-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-150': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-150.webp',
-      import.meta.url,
-    ).href,
-    'SP22-150-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-150-01.webp',
       import.meta.url,
     ).href,
     'SP22-151': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-151.webp',
       import.meta.url,
     ).href,
-    'SP22-151-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-151-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-152': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-152.webp',
-      import.meta.url,
-    ).href,
-    'SP22-152-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-152-01.webp',
       import.meta.url,
     ).href,
     'SP22-153': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-153.webp',
       import.meta.url,
     ).href,
-    'SP22-153-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-153-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-154': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-154.webp',
-      import.meta.url,
-    ).href,
-    'SP22-154-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-154-01.webp',
       import.meta.url,
     ).href,
     'SP22-155': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-155.webp',
       import.meta.url,
     ).href,
-    'SP22-155-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-155-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-156': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-156.webp',
-      import.meta.url,
-    ).href,
-    'SP22-156-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-156-01.webp',
       import.meta.url,
     ).href,
     'SP22-157': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-157.webp',
       import.meta.url,
     ).href,
-    'SP22-157-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-157-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-158': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-158.webp',
-      import.meta.url,
-    ).href,
-    'SP22-158-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-158-01.webp',
       import.meta.url,
     ).href,
     'SP22-159': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-159.webp',
       import.meta.url,
     ).href,
-    'SP22-159-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-159-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-160': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-160.webp',
-      import.meta.url,
-    ).href,
-    'SP22-160-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-160-01.webp',
       import.meta.url,
     ).href,
     'SP22-161': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-161.webp',
       import.meta.url,
     ).href,
-    'SP22-161-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-161-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-162': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-162.webp',
-      import.meta.url,
-    ).href,
-    'SP22-162-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-162-01.webp',
       import.meta.url,
     ).href,
     'SP22-163': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-163.webp',
       import.meta.url,
     ).href,
-    'SP22-163-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-163-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-164': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-164.webp',
-      import.meta.url,
-    ).href,
-    'SP22-164-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-164-01.webp',
       import.meta.url,
     ).href,
     'SP22-165': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-165.webp',
       import.meta.url,
     ).href,
-    'SP22-165-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-165-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-166': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-166.webp',
-      import.meta.url,
-    ).href,
-    'SP22-166-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-166-01.webp',
       import.meta.url,
     ).href,
     'SP22-167': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-167.webp',
       import.meta.url,
     ).href,
-    'SP22-167-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-167-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-168': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-168.webp',
-      import.meta.url,
-    ).href,
-    'SP22-168-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-168-01.webp',
       import.meta.url,
     ).href,
     'SP22-169': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-169.webp',
       import.meta.url,
     ).href,
-    'SP22-169-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-169-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-170': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-170.webp',
-      import.meta.url,
-    ).href,
-    'SP22-170-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-170-01.webp',
       import.meta.url,
     ).href,
     'SP22-171': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-171.webp',
       import.meta.url,
     ).href,
-    'SP22-171-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-171-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-172': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-172.webp',
-      import.meta.url,
-    ).href,
-    'SP22-172-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-172-01.webp',
       import.meta.url,
     ).href,
     'SP22-173': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-173.webp',
       import.meta.url,
     ).href,
-    'SP22-173-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-173-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-174': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-174.webp',
-      import.meta.url,
-    ).href,
-    'SP22-174-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-174-01.webp',
-      import.meta.url,
-    ).href,
-    'SP22-174-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-174-02.webp',
       import.meta.url,
     ).href,
     'SP22-175': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-175.webp',
       import.meta.url,
     ).href,
-    'SP22-175-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-175-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-176': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-176.webp',
-      import.meta.url,
-    ).href,
-    'SP22-176-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-176-01.webp',
       import.meta.url,
     ).href,
     'SP22-177': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-177.webp',
       import.meta.url,
     ).href,
-    'SP22-177-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-177-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-178': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-178.webp',
-      import.meta.url,
-    ).href,
-    'SP22-178-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-178-01.webp',
-      import.meta.url,
-    ).href,
-    'SP22-178-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-178-02.webp',
       import.meta.url,
     ).href,
     'SP22-179': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-179.webp',
       import.meta.url,
     ).href,
-    'SP22-179-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-179-01.webp',
-      import.meta.url,
-    ).href,
-    'SP22-179-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-179-02.webp',
-      import.meta.url,
-    ).href,
     'SP22-180': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-180.webp',
-      import.meta.url,
-    ).href,
-    'SP22-180-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-180-01.webp',
       import.meta.url,
     ).href,
     'SP22-181': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-181.webp',
       import.meta.url,
     ).href,
-    'SP22-181-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-181-01.webp',
-      import.meta.url,
-    ).href,
-    'SP22-181-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-181-02.webp',
-      import.meta.url,
-    ).href,
     'SP22-182': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-182.webp',
-      import.meta.url,
-    ).href,
-    'SP22-182-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-182-01.webp',
       import.meta.url,
     ).href,
     'SP22-183': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-183.webp',
       import.meta.url,
     ).href,
-    'SP22-183-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-183-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-184': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-184.webp',
-      import.meta.url,
-    ).href,
-    'SP22-184-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-184-01.webp',
       import.meta.url,
     ).href,
     'SP22-185': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-185.webp',
       import.meta.url,
     ).href,
-    'SP22-185-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-185-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-186': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-186.webp',
-      import.meta.url,
-    ).href,
-    'SP22-186-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-186-01.webp',
       import.meta.url,
     ).href,
     'SP22-187': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-187.webp',
       import.meta.url,
     ).href,
-    'SP22-187-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-187-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-188': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-188.webp',
-      import.meta.url,
-    ).href,
-    'SP22-188-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-188-01.webp',
       import.meta.url,
     ).href,
     'SP22-189': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-189.webp',
       import.meta.url,
     ).href,
-    'SP22-189-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-189-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-190': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-190.webp',
-      import.meta.url,
-    ).href,
-    'SP22-190-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-190-01.webp',
       import.meta.url,
     ).href,
     'SP22-191': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-191.webp',
       import.meta.url,
     ).href,
-    'SP22-191-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-191-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-192': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-192.webp',
-      import.meta.url,
-    ).href,
-    'SP22-192-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-192-01.webp',
-      import.meta.url,
-    ).href,
-    'SP22-192-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-192-02.webp',
       import.meta.url,
     ).href,
     'SP22-193': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-193.webp',
       import.meta.url,
     ).href,
-    'SP22-193-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-193-01.webp',
-      import.meta.url,
-    ).href,
-    'SP22-193-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-193-02.webp',
-      import.meta.url,
-    ).href,
     'SP22-194': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-194.webp',
-      import.meta.url,
-    ).href,
-    'SP22-194-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-194-01.webp',
       import.meta.url,
     ).href,
     'SP22-195': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-195.webp',
       import.meta.url,
     ).href,
-    'SP22-195-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-195-01.webp',
-      import.meta.url,
-    ).href,
-    'SP22-195-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-195-02.webp',
-      import.meta.url,
-    ).href,
     'SP22-196': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-196.webp',
-      import.meta.url,
-    ).href,
-    'SP22-196-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-196-01.webp',
-      import.meta.url,
-    ).href,
-    'SP22-196-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-196-02.webp',
       import.meta.url,
     ).href,
     'SP22-197': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-197.webp',
       import.meta.url,
     ).href,
-    'SP22-197-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-197-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-198': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-198.webp',
-      import.meta.url,
-    ).href,
-    'SP22-198-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-198-01.webp',
       import.meta.url,
     ).href,
     'SP22-199': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-199.webp',
       import.meta.url,
     ).href,
-    'SP22-199-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-199-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-200': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-200.webp',
-      import.meta.url,
-    ).href,
-    'SP22-200-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-200-01.webp',
       import.meta.url,
     ).href,
     'SP22-201': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-201.webp',
       import.meta.url,
     ).href,
-    'SP22-201-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-201-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-202': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-202.webp',
-      import.meta.url,
-    ).href,
-    'SP22-202-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-202-01.webp',
       import.meta.url,
     ).href,
     'SP22-203': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-203.webp',
       import.meta.url,
     ).href,
-    'SP22-203-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-203-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-204': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-204.webp',
-      import.meta.url,
-    ).href,
-    'SP22-204-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-204-01.webp',
       import.meta.url,
     ).href,
     'SP22-205': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-205.webp',
       import.meta.url,
     ).href,
-    'SP22-205-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-205-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-206': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-206.webp',
-      import.meta.url,
-    ).href,
-    'SP22-206-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-206-01.webp',
       import.meta.url,
     ).href,
     'SP22-207': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-207.webp',
       import.meta.url,
     ).href,
-    'SP22-207-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-207-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-208': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-208.webp',
-      import.meta.url,
-    ).href,
-    'SP22-208-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-208-01.webp',
       import.meta.url,
     ).href,
     'SP22-209': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-209.webp',
       import.meta.url,
     ).href,
-    'SP22-209-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-209-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-210': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-210.webp',
-      import.meta.url,
-    ).href,
-    'SP22-210-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-210-01.webp',
       import.meta.url,
     ).href,
     'SP22-211': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-211.webp',
       import.meta.url,
     ).href,
-    'SP22-211-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-211-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-212': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-212.webp',
-      import.meta.url,
-    ).href,
-    'SP22-212-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-212-01.webp',
       import.meta.url,
     ).href,
     'SP22-213': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-213.webp',
       import.meta.url,
     ).href,
-    'SP22-213-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-213-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-214': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-214.webp',
-      import.meta.url,
-    ).href,
-    'SP22-214-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-214-01.webp',
       import.meta.url,
     ).href,
     'SP22-215': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-215.webp',
       import.meta.url,
     ).href,
-    'SP22-215-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-215-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-216': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-216.webp',
-      import.meta.url,
-    ).href,
-    'SP22-216-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-216-01.webp',
       import.meta.url,
     ).href,
     'SP22-217': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-217.webp',
       import.meta.url,
     ).href,
-    'SP22-217-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-217-01.webp',
-      import.meta.url,
-    ).href,
-    'SP22-217-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-217-02.webp',
-      import.meta.url,
-    ).href,
     'SP22-218': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-218.webp',
-      import.meta.url,
-    ).href,
-    'SP22-218-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-218-01.webp',
       import.meta.url,
     ).href,
     'SP22-219': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-219.webp',
       import.meta.url,
     ).href,
-    'SP22-219-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-219-01.webp',
-      import.meta.url,
-    ).href,
     'SP22-220': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP22-220.webp',
-      import.meta.url,
-    ).href,
-    'SP22-220-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP22-220-01.webp',
       import.meta.url,
     ).href,
   },

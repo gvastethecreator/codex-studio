@@ -7,72 +7,24 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/style-card-thumbnails/SP24-001.webp',
       import.meta.url,
     ).href,
-    'SP24-001-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP24-001-01.webp',
-      import.meta.url,
-    ).href,
-    'SP24-001-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP24-001-02.webp',
-      import.meta.url,
-    ).href,
     'SP24-002': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP24-002.webp',
-      import.meta.url,
-    ).href,
-    'SP24-002-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP24-002-01.webp',
-      import.meta.url,
-    ).href,
-    'SP24-002-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP24-002-02.webp',
       import.meta.url,
     ).href,
     'SP24-003': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP24-003.webp',
       import.meta.url,
     ).href,
-    'SP24-003-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP24-003-01.webp',
-      import.meta.url,
-    ).href,
-    'SP24-003-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP24-003-02.webp',
-      import.meta.url,
-    ).href,
     'SP24-004': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP24-004.webp',
-      import.meta.url,
-    ).href,
-    'SP24-004-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP24-004-01.webp',
-      import.meta.url,
-    ).href,
-    'SP24-004-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP24-004-02.webp',
       import.meta.url,
     ).href,
     'SP24-005': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP24-005.webp',
       import.meta.url,
     ).href,
-    'SP24-005-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP24-005-01.webp',
-      import.meta.url,
-    ).href,
-    'SP24-005-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP24-005-02.webp',
-      import.meta.url,
-    ).href,
     'SP24-006': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP24-006.webp',
-      import.meta.url,
-    ).href,
-    'SP24-006-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP24-006-01.webp',
-      import.meta.url,
-    ).href,
-    'SP24-006-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP24-006-02.webp',
       import.meta.url,
     ).href,
   },
