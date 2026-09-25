@@ -175,7 +175,7 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Steampunk clockwork dragon of brass and copper breathing steam in a Victorian workshop, gauges on its chest, an inventor in goggles adjusting a gear, warm gaslight. No text or logo.',
+        'Steampunk clockwork octopus of brass and copper crawling across a Victorian workshop bench, steam venting from its joints, pressure gauges on its head and an inventor in goggles adjusting a gear, warm gaslight. No text or logo.',
         'Steampunk airship pirates in goggles and leather coats swinging on ropes to board a brass zeppelin above sunset clouds, cannon smoke, gears and propellers turning, copper hull glowing warm. No text or logo.',
         'Steampunk jousting knight in brass-trimmed plate riding a clockwork horse with pistons for legs, a steam-powered lance venting white clouds, a crowd of top hats in a Victorian tournament ground. No text or logo.',
       ],
@@ -194,7 +194,7 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'gore'],
       briefs: [
-        'Biopunk cathedral grown from living tissue: ribbed vaults of cartilage, glowing veins, a monk tending a pulsing vat that holds a sleeping dragon embryo, wet lab light. No text or logo.',
+        'Biopunk cathedral grown from living tissue: ribbed vaults of cartilage, glowing veins in the walls, a monk tending a pulsing vat that holds a sleeping whale calf, wet lab light. No text or logo.',
         'Biopunk war horse grown with chitin armor plates and glowing vein-cables along its neck, ridden by a masked rider in a membrane cloak across a foggy wetland at dusk. No text or logo.',
         'Biopunk night market in a medieval alley, stalls selling grown hearts and eyes floating in glass jars, lamps made of bioluminescent jellyfish, a hooded buyer bargaining with a vendor whose arm is grafted tissue. No text or logo.',
       ],
@@ -214,7 +214,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Gothic horror: a pale countess in black velvet descending a spiral stone staircase with a candelabra, portraits with scratched-out faces on the walls, moonlight through a broken rose window. No text or logo.',
-        'Gothic horror crypt lit by a single guttering candle: the stone effigy of a knight on its tomb begins to open its eyes, dust falling from its face, a priest backing away with a silver cross. No text or logo.',
+        'Gothic horror crypt lit by a single guttering candle: the stone effigy of a bishop on his tomb begins to open its eyes, dust falling from its face, a young priest backing away with a silver cross. No text or logo.',
         'Gothic horror castle on a black crag in a thunderstorm, lightning revealing bats around the towers, one high window glowing red, a lone carriage climbing the switchback road below. No text or logo.',
       ],
     },
@@ -233,7 +233,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Kawaii pastel grim reaper mascot with big shiny eyes and blush marks, holding a tiny scythe with a heart, sitting on a pastel cloud with sparkles. No text or logo.',
-        'Kawaii baby dragon hatching from a pastel speckled egg, yawning with big sleepy eyes and blush marks, tiny wings, eggshell hat on its head, mint and pink sparkles. No text or logo.',
+        'Kawaii baby penguin hatching from a pastel speckled egg, yawning with big sleepy eyes and blush marks, tiny flippers, an eggshell hat on its head, mint and pink sparkles. No text or logo.',
         'Kawaii haunted house with a smiling face in its door, round smiling ghosts floating out of the windows, candy-colored bats and a lollipop moon, pastel lavender sky. No text or logo.',
       ],
     },
@@ -252,7 +252,7 @@ const spec: Spec = {
       avoid: [...AVOID, 'franchise armor designs', 'franchise insignia'],
       briefs: [
         'Grimdark siege: exhausted soldiers in battered ornate plate trudging through mud toward a cathedral fortress carved with skulls, tattered relic banners, fires on the horizon, cold overcast light. No text or logo.',
-        'Grimdark war priest in skull-trimmed battered armor reading last rites from a chained book over a muddy trench of exhausted soldiers, smoking censer, rain and distant fire. No text or logo.',
+        'Grimdark war priest in battered armor trimmed with bone reading last rites from a chained book over a muddy trench of exhausted soldiers, smoking censer, rain and distant fire. No text or logo.',
         'Grimdark battlefield at dawn: broken siege towers, a toppled giant statue of a saint half sunk in mud, crows over the fallen, a lone standard-bearer still holding a tattered relic banner. No text or logo.',
       ],
     },
@@ -270,9 +270,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Frutiger Aero fantasy: a glossy glass castle on a green hill under a bright blue sky, water droplets and bubbles floating, a friendly aqua dragon swimming through the air, lens flare. No text or logo.',
+        'Frutiger Aero fantasy: a glossy glass island floating over a green hill under a bright blue sky, water droplets and bubbles drifting, a friendly aqua whale swimming through the air, lens flare. No text or logo.',
         'Frutiger Aero goldfish swimming inside a giant floating water bubble above a bright green meadow, glossy reflections, smaller bubbles drifting, clean blue sky with soft lens flare. No text or logo.',
-        'Frutiger Aero knight made of glossy aqua glass standing in a sunny field of green grass, water droplets on the armor, bubbles rising from the visor, bright clean sky and glassy shine. No text or logo.',
+        'Frutiger Aero penguin made of glossy aqua glass standing on a sunny ice floe, water droplets on its body, bubbles rising around it, bright clean sky and glassy shine. No text or logo.',
       ],
     },
     'SP11-043': {
@@ -289,9 +289,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Postmodern pattern clash: a knight made of Memphis-style geometric blocks, checkerboard armor, squiggle plume, terrazzo shield, standing on a pink pedestal with hard shadows. No text or logo.',
-        'Memphis-style dragon built from zigzag, dot and squiggle blocks guarding a terrazzo treasure chest on a mint pedestal, primary yellow flames, hard black shadows on a pink floor. No text or logo.',
-        'Postmodern pattern-clash castle with checkerboard towers, cylinder turrets in primary colors, squiggle flags and a terrazzo drawbridge, a tiny knight on a pink horse riding up. No text or logo.',
+        'Postmodern pattern clash: a flamingo made of Memphis-style geometric blocks, checkerboard wings, squiggle neck, terrazzo legs, standing on a pink pedestal with hard shadows. No text or logo.',
+        'Memphis-style crocodile built from zigzag, dot and squiggle blocks guarding a terrazzo treasure chest on a mint pedestal, primary yellow teeth, hard black shadows on a pink floor. No text or logo.',
+        'Postmodern pattern-clash lighthouse with checkerboard stripes, cylinder balconies in primary colors, squiggle waves and a terrazzo rock, a tiny sailboat passing. No text or logo.',
       ],
     },
     'SP11-045': {
@@ -310,7 +310,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Psychedelic optical recursion of a wizard whose beard melts into endless paisley swirls, concentric echoes of his face radiating outward, vibrating orange, magenta and green. No text or logo.',
-        'Psychedelic dragon eye repeating inward in endless nested rings, scales melting into paisley, vibrating orange and violet, a tiny knight silhouette reflected in the pupil. No text or logo.',
+        'Psychedelic tiger eye repeating inward in endless nested rings, stripes melting into paisley, vibrating orange and violet, a tiny figure silhouette reflected in the pupil. No text or logo.',
         'Psychedelic forest of giant mushrooms whose caps melt into waves of color, a robed wanderer walking a path that echoes outward in concentric ripples, vibrating green and magenta. No text or logo.',
       ],
     },
@@ -328,7 +328,7 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Holographic glitter dragon skull covered in tiny iridescent flakes that scatter rainbow sparkles across black velvet, point lights creating starburst flares on the horns and eye sockets, macro close-up. No text or logo.',
+        'Holographic glitter high-heeled shoe covered in tiny iridescent flakes that scatter rainbow sparkles across black velvet, point lights creating starburst flares on the heel and toe, macro close-up. No text or logo.',
         'Holographic glitter crown resting on a deep violet velvet cushion in a dark throne room, iridescent flakes throwing rainbow sparkles across the stone walls. No text or logo.',
         'Holographic glitter witch hat floating above a black cauldron, iridescent flakes shifting from silver to pink to green, tiny star sparkles and flare, dark background. No text or logo.',
       ],
@@ -374,7 +374,7 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Dungeon synth cover art: a lone cloaked wanderer on a misty hill facing a distant castle under a pale moon, murky old painting reproduced with copier grain and faded blues. No readable text or logo.',
+        'Dungeon synth cover art: a lone cloaked wanderer on a misty hill facing a distant ruined tower under a pale moon, murky old painting reproduced with copier grain and faded blues. No readable text or logo.',
         'Dungeon synth cover art of a ruined wizard tower rising above a black pine forest, one window lit, crows circling, murky painting with faded greens and copier grain. No readable text or logo.',
         'Dungeon synth cover art of an ancient king asleep on a stone throne in a mist-filled hall, sword across his knees, candles long cold, faded blue-grey paint with photocopy speckle. No readable text or logo.',
       ],

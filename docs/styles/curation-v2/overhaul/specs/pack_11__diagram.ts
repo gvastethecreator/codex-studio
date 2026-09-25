@@ -213,7 +213,7 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Urban figure-ground plan of a medieval city where the white streets and squares together form the silhouette of a dragon, solid black building blocks, top-down. No readable text or numbers.',
+        'Urban figure-ground plan of a medieval city where the white streets and squares together form the silhouette of a leaping fish, solid black building blocks, top-down. No readable text or numbers.',
         'Figure-ground plan of a walled medieval city, solid black building blocks, a white cathedral square at the center and white streets radiating to four gates in the city wall. No readable text or numbers.',
         'Figure-ground plan of a canal city where the white canals and squares form a serpent winding between dense black building blocks. No readable text or numbers.',
       ],
@@ -233,7 +233,7 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Stage lighting plot for a play about a dragon: set outline of a castle, lighting instrument symbols on battens, colored beam zones in red and blue across the stage, top-down plan. No readable text or numbers.',
+        'Stage lighting plot for a play about a storm at sea: set outline of a ship deck, lighting instrument symbols on battens, colored beam zones in blue and white across the stage, top-down plan. No readable text or numbers.',
         'Stage lighting plot for a ghost scene: set outline of a graveyard, instrument symbols on three battens, a pale blue beam zone around a trapdoor and a single cold spot on a gravestone, top-down plan. No readable text or numbers.',
         'Stage lighting plot for a haunted ballroom scene: chandelier outline at center, instruments on battens and side booms, warm amber zones for the dance floor and red zones at the doors. No readable text or numbers.',
       ],
@@ -253,7 +253,7 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Origami crease pattern on a square sheet for a dragon, red mountain and blue valley lines forming a dense geometric web, a small folded dragon sitting beside it. No readable text or numbers.',
+        'Origami crease pattern on a square sheet for a scorpion, red mountain and blue valley lines forming a dense geometric web, the small folded scorpion sitting beside it. No readable text or numbers.',
         'Origami crease pattern pinned to a workshop wall for a flapping bird with wings in motion, radial red and blue fold lines, three test folds in different papers taped beside it. No readable text or numbers.',
         'Origami crease pattern for a crane with an extra-long tail, clean radial red and blue lines on a square sheet, the folded crane and a bone folder beside it. No readable text or numbers.',
       ],
@@ -273,7 +273,7 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Knot tying diagram in six step panels showing how a sailor lashes a dragon tooth to a spear shaft, red and cream two-tone rope, arrows for each wrap and tuck, final panel with the tight lashing. No readable text or numbers.',
+        'Knot tying diagram in six step panels showing how a sailor lashes a whale-bone harpoon head to its shaft, red and cream two-tone rope, arrows for each wrap and tuck, final panel with the tight lashing. No readable text or numbers.',
         'Knot diagram in four panels showing how to tie a rope bridge plank to its hand lines over a chasm, arrows and cross-sections of the hitch, pale cream background. No readable text or numbers.',
         'Step diagram of tying a fishing net mesh knot, blue and white rope, arrows looping around a netting needle, the finished net corner in the last panel with a caught silver fish. No readable text or numbers.',
       ],
@@ -313,7 +313,7 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Weaving draft on graph paper whose large drawdown pattern of black filled squares forms a coiled dragon, threading grid across the top, tie-up in the corner and treadling down the side, a pencil and loose thread beside it. No readable text or numbers.',
+        'Weaving draft on graph paper whose large drawdown pattern of black filled squares forms a leaping deer, threading grid across the top, tie-up in the corner and treadling down the side, a pencil and loose thread beside it. No readable text or numbers.',
         'Weaving draft whose drawdown reveals a repeating castle-and-tree border in deep red squares, neat grids around it, a wooden shuttle resting on the page. No readable text or numbers.',
         'Weaving draft whose drawdown forms a field of small skulls and diamonds, black squares on aged graph paper, eraser smudges. No readable text or numbers.',
       ],
@@ -353,7 +353,7 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Gear train drawing for the wing mechanism of a clockwork dragon, meshing gears in pitch circles, a crank and linkage to the wing spar, rotation arrows and a side section. No readable text or numbers.',
+        'Gear train drawing for the wing mechanism of a clockwork bat, meshing gears in pitch circles, a crank and linkage to the wing spar, rotation arrows and a side section. No readable text or numbers.',
         'Gear train drawing of a water-mill mechanism in side section: waterwheel shaft, pit wheel, crown gear and millstone spindle, compass-drawn tooth outlines and rotation arrows. No readable text or numbers.',
         'Gear train drawing of an astronomical clock with nested planetary gears, a moon-phase disk and a plain star dial, pitch circles in grey and fine ink teeth. No readable text or numbers.',
       ],

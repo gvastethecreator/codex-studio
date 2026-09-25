@@ -165,7 +165,7 @@ const spec: Spec = {
       briefs: [
         'Pyrography on a round birch slice with bark edge: a wolf howling at a moon over a pine forest, fine burned lines and stippled shading, scorched black sky. No readable text or logo.',
         'Woodburned panel of an old witch with a long pipe, wrinkles and hair burned in fine lines, the hot pen resting beside it with a curl of smoke. No readable text or logo.',
-        'Pyrography on a wooden box lid showing a dragon coiled around a castle tower, burned lines following the wood grain, stippled mid-tones and deep charred shadows under its wings, a hot pen resting on the lid. No readable text or logo.',
+        'Pyrography on a wooden box lid showing a heron standing in reeds beside a mill, burned lines following the wood grain, stippled mid-tones and deep charred shadows, a hot pen resting on the lid. No readable text or logo.',
       ],
     },
     {
@@ -229,7 +229,7 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Folded papercut in black paper: a mirrored pair of dragons facing a tree of life, lacy cutwork of vines and stars around them, laid on cream paper with soft shadows. No readable text or logo.',
+        'Folded papercut in black paper: a mirrored pair of stags facing a tree of life, lacy cutwork of vines and stars around them, laid on cream paper with soft shadows. No readable text or logo.',
         'Red folded papercut of a castle on a hill with two ravens and a moon, delicate lace border of thorns and keys, the central fold crease visible, laid on black paper. No readable text or logo.',
         'Black folded papercut of a witch dance around a bonfire, mirrored dancers and cut-paper flames, backlit so light passes through. No readable text or logo.',
       ],
@@ -251,8 +251,8 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Rosemaling on a dark blue wooden chest: a small dragon among flowing scrolls and stylized red and cream flowers, confident one-stroke brushwork, worn edges. No readable text or logo.',
-        'Rosemaling on a round wooden plate: a longship with a dragon prow riding waves that curl into red and cream scroll flowers, deep blue ground, crackled old varnish. No readable text or logo.',
+        'Rosemaling on a dark blue wooden chest: a small red horse among flowing C- and S-stroke scrolls and stylized red and cream flowers, confident one-stroke brushwork, worn edges. No readable text or logo.',
+        'Rosemaling on a round wooden plate: a longship with a carved serpent prow riding waves that curl into red and cream scroll flowers, deep blue ground, crackled old varnish. No readable text or logo.',
         'Rosemaling on a carved wooden ale bowl: a hunched troll under a stone bridge surrounded by green and ochre acanthus scrolls, brushstrokes worn where hands gripped the handles. No readable text or logo.',
       ],
     },
@@ -317,7 +317,7 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Pressed flower collage of a witch riding a broom across a moon, cloak made of dark purple pansy petals, the broom a dried stem, fern stars, on aged paper. No readable text or logo.',
+        'Pressed flower collage of a girl riding a bicycle through a meadow, dress made of pink pansy petals, wheels of dried seed heads and fern grass, on aged paper. No readable text or logo.',
         'Pressed-flower owl built from brown oak leaves, rose-petal eyes and seed-head feathers on a yellowed album page, a sprig of dried lavender as its perch. No readable text or logo.',
         'Pressed-flower collage of a ghostly lady in a flowing gown made of pale hydrangea petals and skeleton leaves, drifting across dark paper, faded and fragile. No readable text or logo.',
       ],
@@ -339,8 +339,8 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a hooked wool rug showing a black cat on a moon over a haunted house, rows of wool loops in rust, navy and mustard, burlap edge unfinished. No readable text or logo.',
-        'Hooked wool rug of a green dragon sleeping on a gold hoard, simple loop-filled shapes and a border of oak leaves, lying on a worn plank floor by a hearth. No readable text or logo.',
+        'Photograph of a hooked wool rug showing a black cat asleep on a windowsill beside a teapot, rows of wool loops in rust, navy and mustard, burlap edge unfinished. No readable text or logo.',
+        'Hooked wool rug of a fox curled in a nest of autumn leaves, simple loop-filled shapes and a border of acorns, lying on a worn plank floor by a hearth. No readable text or logo.',
         'Hooked wool rug of a crowned stag in a dark pine forest under stars, navy and rust loops, worn flat in the center from years of feet. No readable text or logo.',
       ],
     },
@@ -362,7 +362,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Photograph of a crystal goblet engraved with a stag hunt through a dark forest, fine diamond-point stipple, frosted white marks against a black velvet background. No readable text or logo.',
-        'Old window pane engraved with a castle on a crag and a full moon, frosty diamond-point stipple catching cold night light from outside. No readable text or logo.',
+        'Old window pane engraved with a lighthouse on a rocky point and a sailing ship, frosty diamond-point stipple catching cold night light from outside. No readable text or logo.',
         'Tall glass panel engraved with a skeleton playing a violin at a graveside, delicate scratches and stipple glowing white against a dark room. No readable text or logo.',
       ],
     },
@@ -383,9 +383,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Punched tin lantern with a pattern of holes forming a howling wolf and moon, candle inside casting dots of light across a dark cabin wall. No readable text or logo.',
-        'Punched tin cabinet panel with a coiled dragon made of rows of holes and slits, lit from behind so the dragon glows in dots of amber light. No readable text or logo.',
-        'Punched tin lantern with bats, a crescent moon and a pointed witch hat pierced into it, rust spots on the tin, candlelight dots scattered over a stone wall. No readable text or logo.',
+        'Punched tin lantern with a pattern of holes forming a howling wolf among pines, candle inside casting dots of light across a dark cabin wall. No readable text or logo.',
+        'Punched tin cabinet panel with a rooster and wheat sheaves made of rows of holes and slits, lit from behind so the pattern glows in dots of amber light. No readable text or logo.',
+        'Punched tin lantern with bats, stars and a pointed witch hat pierced into it, rust spots on the tin, candlelight dots scattered over a stone wall. No readable text or logo.',
       ],
     },
     {
@@ -427,9 +427,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Small oil painting on copper of a hermit reading in a cave by candlelight, a skull and hourglass beside him, glassy smooth glazes, copper glow in the shadows. No readable text or logo.',
+        'Small oil painting on copper of a hermit reading in a cave by candlelight, an hourglass and a snuffed candle beside him, glassy smooth glazes and copper glow in the shadows. No readable text or logo.',
         'Small oil painting on copper of a burning walled city at night seen from a hill, tiny fleeing figures, jewel-orange fire reflected in a river, glassy smooth surface. No readable text or logo.',
-        'Oil on copper of a knight on a white horse lancing a dragon in a rocky gorge, jewel greens and reds, tiny precise detail, copper glowing through the thin sky. No readable text or logo.',
+        'Oil on copper of a saint on a white horse crossing a rocky gorge, jewel greens and reds, tiny precise detail, copper glowing through the thin sky. No readable text or logo.',
       ],
     },
   ] satisfies Create[],

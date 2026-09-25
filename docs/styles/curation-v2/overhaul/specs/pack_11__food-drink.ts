@@ -29,7 +29,7 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        'Top-down photograph of latte art of a coiled dragon etched into microfoam in a black ceramic cup, crema-brown shading along its scales, a tiny foam flame, saucer and silver spoon on a dark wooden table. No text or logo.',
+        'Top-down photograph of latte art of a coiled sea serpent etched into microfoam in a black ceramic cup, crema-brown shading along its scales, a tiny foam wave, saucer and silver spoon on a dark wooden table. No text or logo.',
         'Latte art of a howling wolf under a foam moon, poured and etched, in a speckled stoneware cup, rain-grey window light. No text or logo.',
         'Latte art of a hooded reaper with a scythe, etched into foam in a white cup, a few crema bubbles breaking the robe, candle beside the saucer. No text or logo.',
       ],
@@ -155,7 +155,7 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        'Bakery window at dawn with a large braided bread shaped like a sleeping dragon, scored scales, egg-wash gloss and flour dust, surrounded by croissants and seeded loaves on wooden trays, warm morning light. No text or logo.',
+        'Bakery window at dawn with a large braided bread shaped like a sleeping hedgehog, scored spines, egg-wash gloss and flour dust, surrounded by croissants and seeded loaves on wooden trays, warm morning light. No text or logo.',
         'Bakery window for an autumn death festival: dark rye loaves scored as skulls, bone-shaped breadsticks, sugar-dusted crossbones and marigold petals on wooden trays, warm dusk light and flour dust. No text or logo.',
         'Pastry case lined with golden crown-shaped brioches glazed in honey, pearl-sugar jewels on each point, flaky layers visible where one is torn open, warm morning light through the shop glass. No text or logo.',
       ],
@@ -176,7 +176,7 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        'High-speed photograph of a pomegranate bursting into the shape of a dragon, red seeds and juice splashing as wings, frozen droplets against a black background, strobe light. No text or logo.',
+        'High-speed photograph of a pomegranate bursting into the shape of a firework, red seeds and juice splashing outward in arcs, frozen droplets against a black background, strobe light. No text or logo.',
         'High-speed photograph of a blood orange exploding like a fireball, crimson juice and peel shards frozen mid-air, seeds scattered like sparks against a deep black background. No text or logo.',
         'High-speed photograph of a watermelon carved into a grinning skull bursting open, pink juice and black seeds flying outward, green rind shards frozen in strobe light on a dark backdrop. No text or logo.',
       ],
@@ -195,7 +195,7 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        'Molten dark chocolate pouring over a chocolate dragon sculpture, thick glossy ribbons running down its wings, cocoa dust in the air, soft studio highlights. No text or logo.',
+        'Molten dark chocolate pouring over a chocolate swan sculpture, thick glossy ribbons running down its wings and neck, cocoa dust in the air, soft studio highlights. No text or logo.',
         'Molten chocolate river flowing through a cocoa-dusted canyon, a small dark chocolate boat riding the glossy waves and a white chocolate ghost rising from the pour, soft studio highlights. No text or logo.',
         'Tempered dark chocolate skull wearing a crown of molten milk chocolate that drips slowly over its eye sockets, cocoa nibs scattered on a black slate, glossy highlights. No text or logo.',
       ],
@@ -216,7 +216,7 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        'Top-down photograph of a character bento box: rice shaped into a little knight and a sleepy dragon, nori faces, carrot flames, broccoli trees and tamagoyaki castle blocks in neat compartments of a red lacquer box. No text or logo.',
+        'Top-down photograph of a character bento box: rice shaped into a little sailor and a sleepy whale, nori faces, carrot starfish, broccoli trees and tamagoyaki lighthouse blocks in neat compartments of a red lacquer box. No text or logo.',
         'Top-down photograph of a harvest-night bento box: rice ghosts with nori faces, nori bats, a pumpkin croquette carved as a lantern, black sesame gravestones and cherry-tomato candles in neat compartments. No text or logo.',
         'Top-down bento box featuring a black witch cat made of seaweed-tinted rice with a nori hat, riding a sausage broom across a tamagoyaki moon, broccoli forest and carrot stars. No text or logo.',
       ],
@@ -237,7 +237,7 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        'Close photograph of a slice lifted from a wood-fired pizza shaped like a dragon, long molten cheese pulls, pepperoni scales, charred crust, glowing oven behind. No text or logo.',
+        'Close photograph of a slice lifted from a wood-fired pizza shaped like a sun, long molten cheese pulls, pepperoni rays, charred crust and the glowing oven behind. No text or logo.',
         'Close photograph of a wood-fired pizza with a pepperoni jack-o-lantern face and black olive bats, one slice lifted with a long molten cheese pull, charred crust edge and oven glow. No text or logo.',
         'Wood-fired pizza shaped like a castle seen from above, braided crust walls and towers, a moat of tomato sauce, basil trees and mozzarella snow melting under warm oven light. No text or logo.',
       ],
@@ -263,7 +263,7 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        'Medieval feast banquet in a torchlit hall: a whole roast boar with an apple, pies, bread loaves, grapes, cheeses and pewter goblets along a long oak table, dripping candles and a dragon-shaped sugar centerpiece. No text or logo.',
+        'Medieval feast banquet in a torchlit hall: a whole roast boar with an apple, pies, bread loaves, grapes, cheeses and pewter goblets along a long oak table, dripping candles and a sugar-sculpture ship as centerpiece. No text or logo.',
         'Close view of a medieval feast table after the guests have gone: knocked-over goblets spilling red wine, a half-carved roast, torn bread, a gnawed bone for a hound and candles guttering in a smoky hall. No text or logo.',
         'Feast of a dark king in a black stone hall: a roast peacock with its tail fanned, black bread, blood-red wine in silver chalices, pomegranates and figs, lit by a wall of candles. No text or logo.',
       ],
@@ -287,9 +287,9 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        'Night market stall where a cook grills skewers shaped like tiny dragons over glowing charcoal, steam and smoke rising into red paper lanterns, oil glistening, hands passing a paper tray. No text or logo.',
-        'Steaming bamboo baskets of dumplings pleated into little skull shapes at a night market stall, chili oil glistening, steam rising into red lanterns, a vendor lifting the lid. No text or logo.',
-        'Night market cook tossing noodles in a wok with a huge burst of flame, noodles and vegetables flying mid-air, smoke glowing orange under lanterns, crowded stall shelves behind. No text or logo.',
+        'Night market stall where a cook grills skewers of glazed squid over glowing charcoal, steam and smoke rising into red paper lanterns, oil glistening, hands passing a paper tray. No text or logo.',
+        'Steaming bamboo baskets of dumplings pleated into little rabbit shapes at a night market stall, chili oil glistening, steam rising into the dark, a vendor lifting the lid. No text or logo.',
+        'Night market cook tossing noodles in a wok with a huge burst of flame, noodles and vegetables flying mid-air, smoke glowing orange under string lights, crowded stall shelves behind. No text or logo.',
       ],
     },
     {
@@ -311,8 +311,8 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        'Retro cookbook photograph of a green gelatin mold shaped like a castle with a tiny dragon suspended inside among olives and eggs, garnished with parsley on an orange tablecloth, flat flash and faded print. No text or logo.',
-        'Retro cookbook photograph of a tomato aspic molded as a skull with peas, carrots and sliced eggs suspended inside, parsley ruff around it on a mustard tablecloth, flat flash and yellowed print. No text or logo.',
+        'Retro cookbook photograph of a green gelatin mold shaped like a castle turret with shrimp suspended inside among olives and eggs, garnished with parsley on an orange tablecloth, flat flash and faded print. No text or logo.',
+        'Retro cookbook photograph of a tomato aspic molded as a fish with peas, carrots and sliced eggs suspended inside, parsley ruff around it on a mustard tablecloth, flat flash and yellowed print. No text or logo.',
         'Retro cookbook photograph of a lime gelatin ring mold with shrimps and olives suspended inside, a lit taper candle in the center, doilies and a turquoise tablecloth, flat flash and faded color. No text or logo.',
       ],
     },
@@ -335,8 +335,8 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        'Photograph of a witch pantry shelf of backlit jars: pickled mushrooms, cherry preserves, amber honey with a comb and one jar holding a small curled dragon egg in brine, wax seals and twine, window light glowing through. No text or logo.',
-        'Fermenting jars of red cabbage, chili and garlic glowing ruby and amber on a stone cellar shelf, one lantern behind them, bubbles in the brine and cloth-covered lids tied with twine. No text or logo.',
+        'Photograph of a witch pantry shelf of backlit jars: pickled mushrooms, cherry preserves, amber honey with a comb and one jar holding a curled octopus in brine, wax seals and twine, window light glowing through. No text or logo.',
+        'Fermenting jars of red cabbage, chili and garlic glowing ruby and amber on a stone cellar shelf, a candle behind them, bubbles in the brine and cloth-covered lids tied with twine. No text or logo.',
         'Row of jars of candied lemons, plums and cherries on a rainy windowsill, glowing like stained glass in grey backlight, wax seals and plain paper caps. No text or logo.',
       ],
     },
@@ -359,8 +359,8 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        'Overhead photograph of a huge charcuterie board arranged as a dragon coiling around a wheel of brie, salami scales, grape eyes, fig and nut hoard, honeycomb and bread on dark wood. No text or logo.',
-        'Overhead grazing board arranged as a castle and its lands: cheese-block castle walls, prosciutto rivers, rosemary forests, cracker roads and grape villagers on a huge dark wood board. No text or logo.',
+        'Overhead photograph of a huge charcuterie board arranged as a peacock fanning its tail around a wheel of brie, salami feathers, grape eyes, fig and nut clusters, honeycomb and bread on dark wood. No text or logo.',
+        'Overhead grazing board arranged as a village and its fields: cheese-block houses, prosciutto rivers, rosemary forests, cracker roads and grape villagers on a huge dark wood board. No text or logo.',
         'Overhead charcuterie spread for a witch gathering: black grapes, blue cheese, dark salami roses, blackberries, charcoal crackers, fig halves and a small cauldron of honey on slate. No text or logo.',
       ],
     },
@@ -381,9 +381,9 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        'Molecular gastronomy dish of a dragon egg made from a glossy black sphere on a nest of smoked foam, liquid nitrogen fog spilling across a white plate, tweezers placing a gold leaf flake. No text or logo.',
+        'Molecular gastronomy dish of an ostrich-egg-sized glossy black sphere on a nest of smoked foam, liquid nitrogen fog spilling across a white plate, tweezers placing a gold leaf flake. No text or logo.',
         'Molecular dessert of violet potion spheres in a test-tube rack, each glossy sphere holding a swirl of edible glitter, nitrogen fog spilling over a white lab-like counter. No text or logo.',
-        'Molecular gastronomy dessert of a frozen white skull shattering as a spoon strikes it, nitrogen fog bursting out, shards and berry powder scattering on a black plate. No text or logo.',
+        'Molecular gastronomy dessert of a frozen white rose shattering as a spoon strikes it, nitrogen fog bursting out, shards and berry powder scattering on a black plate. No text or logo.',
       ],
     },
     {
@@ -425,9 +425,9 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        'Pastry competition showpiece of a rearing dragon in glossy red pulled sugar, blown-sugar wings translucent in the spotlight, sugar flames and ribbons on a chocolate pedestal. No text or logo.',
+        'Pastry competition showpiece of a rearing stallion in glossy red pulled sugar, blown-sugar mane translucent in the spotlight, sugar ribbons and flowers on a chocolate pedestal. No text or logo.',
         'Pulled-sugar showpiece of an ornate knight helmet in glossy silver-blue sugar with a towering plume of translucent pulled-sugar feathers, sugar ribbons curling at the base under a spotlight. No text or logo.',
-        'Blown-sugar castle with translucent amber towers and ruby windows on a chocolate cliff, pulled-sugar banners and a tiny sugar dragon on the highest spire, spotlit on a competition pedestal. No text or logo.',
+        'Blown-sugar palace with translucent amber towers and ruby windows on a chocolate cliff, pulled-sugar banners and a tiny sugar swan on the highest spire, spotlit on a competition pedestal. No text or logo.',
       ],
     },
     {
@@ -447,9 +447,9 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        'Close photograph of a ramen bowl where a noodle dragon rises out of rich golden broth on chopsticks, soft-boiled egg eyes, nori wings, chashu and scallions, steam backlit by a warm lantern. No text or logo.',
-        'Ramen bowl with dark tonkotsu broth swirled with black garlic oil, a skull-shaped fishcake, halved marinated egg, chashu and scallions, steam rising in moody backlight. No text or logo.',
-        'Steaming ramen bowl on a tiny counter at a rainy-night noodle stall, rain streaking past the curtain, chopsticks lifting noodles, lantern light glowing in the glossy broth. No text or logo.',
+        'Close photograph of a ramen bowl where a noodle octopus rises out of rich golden broth on chopsticks, soft-boiled egg eyes, nori fins, chashu and scallions, steam backlit by a warm window. No text or logo.',
+        'Ramen bowl with dark tonkotsu broth swirled with black garlic oil, a spiral fishcake shaped like a moon, halved marinated egg, chashu and scallions, steam rising in moody backlight. No text or logo.',
+        'Steaming ramen bowl on a tiny counter at a rainy-night noodle stall, rain streaking past the curtain, chopsticks lifting noodles, warm bulb light glowing in the glossy broth. No text or logo.',
       ],
     },
   ] satisfies Create[],
