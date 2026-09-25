@@ -3,10 +3,10 @@ id: SP05-266
 packId: pack_05
 name: Black Particle Fugitive Style
 styleAnchors:
-  - 'Black Particle Fugitive Style'
-displayName: 'Black Particle Fugitive'
+  - Black Particle Fugitive Style
+displayName: Black Particle Fugitive
 category: 4. Dark Fantasy & Seinen
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,69 +15,22 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: >-
-    A transferable ink-led illustrated treatment built around small separated flecks and
-    broken contourlets clustered beside existing motion or active edges, never forming a
-    new subject. For color and surface, retain source hues with charcoal, ash,
-    and a few cool pale particles as accents rather than a fixed black palette. A
-    fugitive quality can be suggested by quick gaps and sparse marks; do not turn a calm
-    or static request into a chase
-  subject_treatment: >-
-    Preserve the requested subject, action, count, pose, expression, setting, and
-    material identity. Restyle its contours through small separated flecks and broken
-    contourlets clustered beside existing motion or active edges, never forming a new
-    subject; use detail selectively and keep the actual form easy to read. Add no
-    unrequested subject or action.
-  color_and_tone: >-
-    Respect the prompt's colors and emotional temperature; retain source hues with
-    charcoal, ash, and a few cool pale particles as accents rather than a fixed black
-    palette. Keep values legible across the prompted light and dark range; do not crush
-    midtones or dim a bright request.
-  lighting_and_shadow: >-
-    Respect the stated light source, direction, and time; let tiny edge glints appear
-    only where the supplied lighting supports them, with no added luminous effect
-    source. Keep shadow detail and material transitions visible.
-  texture_and_material: >-
-    Preserve each material's identity; use sparse matte pigment granulation, varying dot
-    size and spacing while keeping the main silhouette continuous. Keep texture
-    subordinate to form and avoid a uniform grime overlay.
-  camera_and_composition: >-
-    Preserve the requested framing, perspective, subject placement, and count; preserve
-    pose, crop, and direction; place any particulate rhythm along the motion already
-    present in the prompt. Use the mark rhythm inside the supplied composition rather
-    than replacing it.
-  atmosphere_and_mood: >-
-    Follow the prompt's requested mood first. A fugitive quality can be suggested by
-    quick gaps and sparse marks; do not turn a calm or static request into a chase.
-    Darkness and tension are optional tonal pressure, never a requirement to add danger
-    or rewrite the scene.
-  rendering_and_quality: >-
-    Use clean, stable illustrated forms and small separated flecks and broken
-    contourlets clustered beside existing motion or active edges, never forming a new
-    subject; keep focal edges crisp, texture controlled, and dark values legible. Avoid
-    photoreal or 3D-render drift, watermark, logo, and fake readable text.
-  key_features: >-
-    small separated flecks and broken contourlets clustered beside existing motion or
-    active edges, never forming a new subject; retain source hues with charcoal, ash,
-    and a few cool pale particles as accents rather than a fixed black palette; let tiny
-    edge glints appear only where the supplied lighting supports them, with no added
-    luminous effect source; use sparse matte pigment granulation, varying dot size and
-    spacing while keeping the main silhouette continuous; and preserve pose, crop, and
-    direction; place any particulate rhythm along the motion already present in the
-    prompt. The five cues should read as one mark-and-value system, not as extra scene
-    content.
-  creative_brief: >-
-    Apply this style after the prompt while locking its subject, action, count, pose,
-    camera, context, and requested mood. Use small separated flecks and broken
-    contourlets clustered beside existing motion or active edges, never forming a new
-    subject, retain source hues with charcoal, ash, and a few cool pale particles as
-    accents rather than a fixed black palette, let tiny edge glints appear only where
-    the supplied lighting supports them, with no added luminous effect source, and use
-    sparse matte pigment granulation, varying dot size and spacing while keeping the
-    main silhouette continuous; the prompt supplies all scene content. Do not add
-    unrequested characters, objects, source-specific lore, readable symbols, or a
-    default action.
+  aesthetic: Kinetic anime ink in which the subject's trailing edges disintegrate into small separated black flecks and broken contourlets, as if its own movement were blowing the drawing apart.
+  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
+  color_and_tone: Charcoal and ash values with a few cool pale-blue flecks; the prompt colors stay on the solid core of the subject.
+  lighting_and_shadow: Tiny edge glints only where the prompt light strikes; the flecks stay dark and never glow.
+  texture_and_material: Sparse matte pigment granulation, flecks ranging from pinpoint to rice-grain size and thinning with distance from the silhouette.
+  camera_and_composition: Keep the requested camera; flecks stream off the trailing side of the motion or wind, leaving the leading edge crisp.
+  atmosphere_and_mood: Restless and transient, a figure half escaping the page.
+  rendering_and_quality: Solid crisp core with a disintegrating trailing edge; fleck scatter stays controlled and never becomes an all-over noise layer.
+  key_features: trailing edges dissolving into black flecks; crisp leading edge; charcoal and ash with pale-blue flecks; granulated matte pigment; fleck size gradient
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Black Particle Fugitive Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - photographic still-life object
+  - photoreal scene
+  - repeated hooded dark-haired swordsman
+  - franchise character likeness
+  - readable text
   - realistic
   - 3d render
   - photo
@@ -100,14 +53,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-266.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed
-    canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

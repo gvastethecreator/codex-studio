@@ -3,10 +3,10 @@ id: SP05-061
 packId: pack_05
 name: Crosshatched Doom Weight Style
 styleAnchors:
-  - 'Crosshatched Doom Weight Style'
-displayName: 'Crosshatched Doom Weight'
+  - Crosshatched Doom Weight Style
+displayName: Crosshatched Doom Weight
 category: 4. Dark Fantasy & Seinen
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,65 +15,22 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: >-
-    A transferable ink-led illustrated treatment built around layered crosshatch that
-    thickens selectively in shadow and stops cleanly before large open value gaps. For color and surface, preserve source colors while building weight from
-    charcoal, bone, and a narrow muted red or brown accent if needed. Doom can come from
-    dense marks beside quiet gaps, but seriousness and peril follow the requested mood
-  subject_treatment: >-
-    Preserve the requested subject, action, count, pose, expression, setting, and
-    material identity. Restyle its contours through layered crosshatch that thickens
-    selectively in shadow and stops cleanly before large open value gaps; use detail
-    selectively and keep the actual form easy to read. Add no unrequested subject or
-    action.
-  color_and_tone: >-
-    Respect the prompt's colors and emotional temperature; preserve source colors while
-    building weight from charcoal, bone, and a narrow muted red or brown accent if
-    needed. Keep values legible across the prompted light and dark range; do not crush
-    midtones or dim a bright request.
-  lighting_and_shadow: >-
-    Respect the stated light source, direction, and time; let broad shadow masses
-    contrast with a few exposed edges; keep facial, object, or material detail legible
-    where present. Keep shadow detail and material transitions visible.
-  texture_and_material: >-
-    Preserve each material's identity; vary hatch direction and spacing rather than
-    applying uniform grain or photoreal grime. Keep texture subordinate to form and
-    avoid a uniform grime overlay.
-  camera_and_composition: >-
-    Preserve the requested framing, perspective, subject placement, and count; keep the
-    original framing, using existing empty areas as counterweight without enlarging
-    architecture or subjects. Use the mark rhythm inside the supplied composition rather
-    than replacing it.
-  atmosphere_and_mood: >-
-    Follow the prompt's requested mood first. Doom can come from dense marks beside
-    quiet gaps, but seriousness and peril follow the requested mood. Darkness and
-    tension are optional tonal pressure, never a requirement to add danger or rewrite
-    the scene.
-  rendering_and_quality: >-
-    Use clean, stable illustrated forms and layered crosshatch that thickens selectively
-    in shadow and stops cleanly before large open value gaps; keep focal edges crisp,
-    texture controlled, and dark values legible. Avoid photoreal or 3D-render drift,
-    watermark, logo, and fake readable text.
-  key_features: >-
-    layered crosshatch that thickens selectively in shadow and stops cleanly before
-    large open value gaps; preserve source colors while building weight from charcoal,
-    bone, and a narrow muted red or brown accent if needed; let broad shadow masses
-    contrast with a few exposed edges; keep facial, object, or material detail legible
-    where present; vary hatch direction and spacing rather than applying uniform grain
-    or photoreal grime; and keep the original framing, using existing empty areas as
-    counterweight without enlarging architecture or subjects. The five cues should read
-    as one mark-and-value system, not as extra scene content.
-  creative_brief: >-
-    Apply this style after the prompt while locking its subject, action, count, pose,
-    camera, context, and requested mood. Use layered crosshatch that thickens
-    selectively in shadow and stops cleanly before large open value gaps, preserve
-    source colors while building weight from charcoal, bone, and a narrow muted red or
-    brown accent if needed, let broad shadow masses contrast with a few exposed edges;
-    keep facial, object, or material detail legible where present, and vary hatch
-    direction and spacing rather than applying uniform grain or photoreal grime; the
-    prompt supplies all scene content. Do not add unrequested characters, objects,
-    source-specific lore, readable symbols, or a default action.
+  aesthetic: Dense pen crosshatch seinen manga that builds shadow in three to five layered hatch directions and stops cleanly at large open paper areas, so forms feel carved and heavy.
+  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
+  color_and_tone: Charcoal black and bone white with a narrow muted red-brown accent; mostly monochrome.
+  lighting_and_shadow: A hard single source; broad shadow masses cover most of the frame against a few exposed edges.
+  texture_and_material: Fine nib lines whose direction and spacing change with every plane; no photoreal grime.
+  camera_and_composition: Keep the requested framing; empty paper areas act as counterweight to the dense hatching.
+  atmosphere_and_mood: Oppressive weight and grim endurance, even in a quiet scene.
+  rendering_and_quality: Meticulous nib crosshatching with clean white gaps and legible detail inside the darks.
+  key_features: layered three-to-five direction crosshatch; clean open paper gaps; charcoal and bone; dominant shadow mass; hard single source
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crosshatched Doom Weight Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - photographic still-life object
+  - photoreal scene
+  - repeated hooded dark-haired swordsman
+  - franchise character likeness
+  - readable text
   - realistic
   - 3d render
   - photo
@@ -103,15 +60,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-061.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, gore, severed bodies, sexual violence, famous dark-fantasy
-    swordsman likeness, giant sword, torture scene, readable occult text, splatter-only horror,
-    photoreal grime, cheap jump scare, fixed canon character, title scene replication, required
-    source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, gore, severed bodies, sexual violence, famous dark-fantasy swordsman likeness, giant sword, torture scene, readable occult text, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

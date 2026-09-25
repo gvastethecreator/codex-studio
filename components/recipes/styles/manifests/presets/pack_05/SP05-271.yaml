@@ -3,10 +3,10 @@ id: SP05-271
 packId: pack_05
 name: Sun-Reclaimed Concrete Mystery Style
 styleAnchors:
-  - 'Sun-Reclaimed Concrete Mystery Style'
-displayName: 'Sun-Reclaimed Concrete Mystery'
+  - Sun-Reclaimed Concrete Mystery Style
+displayName: Sun-Reclaimed Concrete Mystery
 category: 4. Dark Fantasy & Seinen
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,67 +15,22 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: >-
-    A transferable ink-led illustrated treatment built around eroded straight contours
-    and fine powdery grain that make broad planes feel sun-faded without adding a sun or
-    setting. For color and surface, respect prompt colors but lower their
-    saturation toward warm concrete gray, dust, and muted ochre highlights. Mystery can
-    come from softened detail and partially withheld edges without requiring an urban
-    clue or danger
-  subject_treatment: >-
-    Preserve the requested subject, action, count, pose, expression, setting, and
-    material identity. Restyle its contours through eroded straight contours and fine
-    powdery grain that make broad planes feel sun-faded without adding a sun or setting;
-    use detail selectively and keep the actual form easy to read. Add no unrequested
-    subject or action.
-  color_and_tone: >-
-    Respect the prompt's colors and emotional temperature; respect prompt colors but
-    lower their saturation toward warm concrete gray, dust, and muted ochre highlights.
-    Keep values legible across the prompted light and dark range; do not crush midtones
-    or dim a bright request.
-  lighting_and_shadow: >-
-    Respect the stated light source, direction, and time; broaden existing highlights
-    into a soft bleached falloff while preserving the stated direction and time of
-    light. Keep shadow detail and material transitions visible.
-  texture_and_material: >-
-    Preserve each material's identity; use dry mineral speckle and gently abraded edges
-    only on compatible surfaces; do not turn unrelated materials into concrete. Keep
-    texture subordinate to form and avoid a uniform grime overlay.
-  camera_and_composition: >-
-    Preserve the requested framing, perspective, subject placement, and count; organize
-    detail into broad quiet planes and a few exact edges within the existing camera and
-    crop. Use the mark rhythm inside the supplied composition rather than replacing it.
-  atmosphere_and_mood: >-
-    Follow the prompt's requested mood first. Mystery can come from softened detail and
-    partially withheld edges without requiring an urban clue or danger. Darkness and
-    tension are optional tonal pressure, never a requirement to add danger or rewrite
-    the scene.
-  rendering_and_quality: >-
-    Use clean, stable illustrated forms and eroded straight contours and fine powdery
-    grain that make broad planes feel sun-faded without adding a sun or setting; keep
-    focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or
-    3D-render drift, watermark, logo, and fake readable text.
-  key_features: >-
-    eroded straight contours and fine powdery grain that make broad planes feel
-    sun-faded without adding a sun or setting; respect prompt colors but lower their
-    saturation toward warm concrete gray, dust, and muted ochre highlights; broaden
-    existing highlights into a soft bleached falloff while preserving the stated
-    direction and time of light; use dry mineral speckle and gently abraded edges only
-    on compatible surfaces; do not turn unrelated materials into concrete; and organize
-    detail into broad quiet planes and a few exact edges within the existing camera and
-    crop. The five cues should read as one mark-and-value system, not as extra scene
-    content.
-  creative_brief: >-
-    Apply this style after the prompt while locking its subject, action, count, pose,
-    camera, context, and requested mood. Use eroded straight contours and fine powdery
-    grain that make broad planes feel sun-faded without adding a sun or setting, respect
-    prompt colors but lower their saturation toward warm concrete gray, dust, and muted
-    ochre highlights, broaden existing highlights into a soft bleached falloff while
-    preserving the stated direction and time of light, and use dry mineral speckle and
-    gently abraded edges only on compatible surfaces; do not turn unrelated materials
-    into concrete; the prompt supplies all scene content. Do not add unrequested
-    characters, objects, source-specific lore, readable symbols, or a default action.
+  aesthetic: Post-abandonment seinen illustration in eroded straight ink contours and fine powdery grain, every broad plane bleached and dusted like concrete left for years in the sun.
+  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
+  color_and_tone: Warm concrete gray, dust beige and muted ochre highlights, with greens and prompt colors lowered to half saturation.
+  lighting_and_shadow: Existing highlights spread into soft bleached falloff; shadows are pale, warm and low in contrast.
+  texture_and_material: Dry mineral speckle, gently abraded line edges and powdery stipple inside flat planes.
+  camera_and_composition: Keep the requested camera; the picture organizes into broad quiet planes and a few exact straight edges.
+  atmosphere_and_mood: Hushed, sunlit mystery of a place that time has quietly taken back.
+  rendering_and_quality: Faded, low-contrast illustrated finish with straight edges eroded yet still legible; never photographic.
+  key_features: eroded straight contours; powdery bleached planes; concrete gray and dust ochre; soft washed-out highlights; mineral speckle
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sun-Reclaimed Concrete Mystery Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - photographic still-life object
+  - photoreal scene
+  - repeated hooded dark-haired swordsman
+  - franchise character likeness
+  - readable text
   - realistic
   - 3d render
   - photo
@@ -104,15 +59,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-271.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, institutional corridor, classroom,
-    hospital, readable sign, empty landscape, splatter-only horror, photoreal grime, cheap jump
-    scare, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, institutional corridor, classroom, hospital, readable sign, empty landscape, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

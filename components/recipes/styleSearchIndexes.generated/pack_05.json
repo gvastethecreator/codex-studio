@@ -1797,7 +1797,8 @@
     },
     {
       "id": "SP05-070",
-      "name": "Devilman Crybaby – Neon Tragic Metamorphosis",
+      "name": "Neon Tragic Metamorphosis",
+      "styleAnchors": ["Neon Tragic Metamorphosis", "Devilman Crybaby – Neon Tragic Metamorphosis"],
       "ref": "pack_05/SP05-070.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1805,7 +1806,7 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-070 devilman crybaby – neon tragic metamorphosis 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-070 neon tragic metamorphosis devilman crybaby – neon tragic metamorphosis 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP13-021",

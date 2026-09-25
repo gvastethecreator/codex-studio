@@ -3,10 +3,10 @@ id: SP05-274
 packId: pack_05
 name: Winter Guilt Suspicion Style
 styleAnchors:
-  - 'Winter Guilt Suspicion Style'
-displayName: 'Winter Guilt Suspicion'
+  - Winter Guilt Suspicion Style
+displayName: Winter Guilt Suspicion
 category: 4. Dark Fantasy & Seinen
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,69 +15,22 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: >-
-    A transferable ink-led illustrated treatment built around brittle short hatches and
-    tiny edge grains that gather at contour turns without resembling literal frost or
-    snow. For color and surface, keep source hues while leaning toward slate,
-    cold blue-gray, and pale silver, with one restrained warm pivot if already
-    supported. Suspicion or guilt may register as a guarded value balance only when
-    compatible with the requested mood
-  subject_treatment: >-
-    Preserve the requested subject, action, count, pose, expression, setting, and
-    material identity. Restyle its contours through brittle short hatches and tiny edge
-    grains that gather at contour turns without resembling literal frost or snow; use
-    detail selectively and keep the actual form easy to read. Add no unrequested subject
-    or action.
-  color_and_tone: >-
-    Respect the prompt's colors and emotional temperature; keep source hues while
-    leaning toward slate, cold blue-gray, and pale silver, with one restrained warm
-    pivot if already supported. Keep values legible across the prompted light and dark
-    range; do not crush midtones or dim a bright request.
-  lighting_and_shadow: >-
-    Respect the stated light source, direction, and time; use cool, compact highlights
-    against readable shadow planes; do not change the prompt's weather or time of day.
-    Keep shadow detail and material transitions visible.
-  texture_and_material: >-
-    Preserve each material's identity; apply dry crystalline micrograin as a drawing
-    texture, not a new frozen material, and keep the original surfaces legible. Keep
-    texture subordinate to form and avoid a uniform grime overlay.
-  camera_and_composition: >-
-    Preserve the requested framing, perspective, subject placement, and count; hold the
-    framing and pose fixed; distribute hatching unevenly to suggest hesitation rather
-    than an imposed close-up. Use the mark rhythm inside the supplied composition rather
-    than replacing it.
-  atmosphere_and_mood: >-
-    Follow the prompt's requested mood first. Suspicion or guilt may register as a
-    guarded value balance only when compatible with the requested mood. Darkness and
-    tension are optional tonal pressure, never a requirement to add danger or rewrite
-    the scene.
-  rendering_and_quality: >-
-    Use clean, stable illustrated forms and brittle short hatches and tiny edge grains
-    that gather at contour turns without resembling literal frost or snow; keep focal
-    edges crisp, texture controlled, and dark values legible. Avoid photoreal or
-    3D-render drift, watermark, logo, and fake readable text.
-  key_features: >-
-    brittle short hatches and tiny edge grains that gather at contour turns without
-    resembling literal frost or snow; keep source hues while leaning toward slate, cold
-    blue-gray, and pale silver, with one restrained warm pivot if already supported; use
-    cool, compact highlights against readable shadow planes; do not change the prompt's
-    weather or time of day; apply dry crystalline micrograin as a drawing texture, not a
-    new frozen material, and keep the original surfaces legible; and hold the framing
-    and pose fixed; distribute hatching unevenly to suggest hesitation rather than an
-    imposed close-up. The five cues should read as one mark-and-value system, not as
-    extra scene content.
-  creative_brief: >-
-    Apply this style after the prompt while locking its subject, action, count, pose,
-    camera, context, and requested mood. Use brittle short hatches and tiny edge grains
-    that gather at contour turns without resembling literal frost or snow, keep source
-    hues while leaning toward slate, cold blue-gray, and pale silver, with one
-    restrained warm pivot if already supported, use cool, compact highlights against
-    readable shadow planes; do not change the prompt's weather or time of day, and apply
-    dry crystalline micrograin as a drawing texture, not a new frozen material, and keep
-    the original surfaces legible; the prompt supplies all scene content. Do not add
-    unrequested characters, objects, source-specific lore, readable symbols, or a
-    default action.
+  aesthetic: Cold seinen pen drawing of brittle short hatches and tiny edge grains that cluster where contours turn, like frost forming only at the corners of things, as a drawing texture rather than snow.
+  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
+  color_and_tone: Slate, cold blue-gray and pale silver, with one restrained warm pivot color when the prompt provides one.
+  lighting_and_shadow: Cool compact highlights against readable shadow planes under a flat overcast feel.
+  texture_and_material: Dry crystalline micrograin as drawing texture, hatches two to four millimeters long and irregularly spaced.
+  camera_and_composition: Keep the requested framing; hatching gathers denser behind the subject, as if something were watching from there.
+  atmosphere_and_mood: Guarded, guilty quiet, a breath held in the cold.
+  rendering_and_quality: Brittle but controlled pen hatching, with clean white paper in the highlights.
+  key_features: brittle short hatches at contour turns; slate and cold blue-gray; one warm pivot color; crystalline micrograin; uneven hatch density
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Winter Guilt Suspicion Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - photographic still-life object
+  - photoreal scene
+  - repeated hooded dark-haired swordsman
+  - franchise character likeness
+  - readable text
   - realistic
   - 3d render
   - photo
@@ -100,14 +53,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-274.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed
-    canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

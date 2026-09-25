@@ -3,10 +3,10 @@ id: SP05-276
 packId: pack_05
 name: Sun-Bleached Cruel Discipline Style
 styleAnchors:
-  - 'Sun-Bleached Cruel Discipline Style'
-displayName: 'Sun-Bleached Cruel Discipline'
+  - Sun-Bleached Cruel Discipline Style
+displayName: Sun-Bleached Cruel Discipline
 category: 4. Dark Fantasy & Seinen
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,69 +15,23 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: >-
-    A transferable ink-led illustrated treatment built around repeated parallel
-    dry-brush marks of measured length, interrupted by a single clean dark anchor where
-    the prompt has a focal edge. For color and surface, retain the prompt
-    palette while gently bleaching pigment toward warm paper, faded ochre, and softened
-    charcoal. Discipline is a visual cadence, not a command to make subjects cruel,
-    uniformed, or emotionally severe
-  subject_treatment: >-
-    Preserve the requested subject, action, count, pose, expression, setting, and
-    material identity. Restyle its contours through repeated parallel dry-brush marks of
-    measured length, interrupted by a single clean dark anchor where the prompt has a
-    focal edge; use detail selectively and keep the actual form easy to read. Add no
-    unrequested subject or action.
-  color_and_tone: >-
-    Respect the prompt's colors and emotional temperature; retain the prompt palette
-    while gently bleaching pigment toward warm paper, faded ochre, and softened
-    charcoal. Keep values legible across the prompted light and dark range; do not crush
-    midtones or dim a bright request.
-  lighting_and_shadow: >-
-    Respect the stated light source, direction, and time; compress highlight contrast as
-    if pigment has faded under exposure, without adding sunlight or changing the source
-    lighting. Keep shadow detail and material transitions visible.
-  texture_and_material: >-
-    Preserve each material's identity; use matte paper tooth and disciplined abrasion;
-    keep repeated strokes varied enough to avoid a mechanical pattern fill. Keep texture
-    subordinate to form and avoid a uniform grime overlay.
-  camera_and_composition: >-
-    Preserve the requested framing, perspective, subject placement, and count; preserve
-    number and placement of subjects; let mark repetition reinforce existing alignments
-    without forming ranks or formations. Use the mark rhythm inside the supplied
-    composition rather than replacing it.
-  atmosphere_and_mood: >-
-    Follow the prompt's requested mood first. Discipline is a visual cadence, not a
-    command to make subjects cruel, uniformed, or emotionally severe. Darkness and
-    tension are optional tonal pressure, never a requirement to add danger or rewrite
-    the scene.
-  rendering_and_quality: >-
-    Use clean, stable illustrated forms and repeated parallel dry-brush marks of
-    measured length, interrupted by a single clean dark anchor where the prompt has a
-    focal edge; keep focal edges crisp, texture controlled, and dark values legible.
-    Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.
-  key_features: >-
-    repeated parallel dry-brush marks of measured length, interrupted by a single clean
-    dark anchor where the prompt has a focal edge; retain the prompt palette while
-    gently bleaching pigment toward warm paper, faded ochre, and softened charcoal;
-    compress highlight contrast as if pigment has faded under exposure, without adding
-    sunlight or changing the source lighting; use matte paper tooth and disciplined
-    abrasion; keep repeated strokes varied enough to avoid a mechanical pattern fill;
-    and preserve number and placement of subjects; let mark repetition reinforce
-    existing alignments without forming ranks or formations. The five cues should read
-    as one mark-and-value system, not as extra scene content.
-  creative_brief: >-
-    Apply this style after the prompt while locking its subject, action, count, pose,
-    camera, context, and requested mood. Use repeated parallel dry-brush marks of
-    measured length, interrupted by a single clean dark anchor where the prompt has a
-    focal edge, retain the prompt palette while gently bleaching pigment toward warm
-    paper, faded ochre, and softened charcoal, compress highlight contrast as if pigment
-    has faded under exposure, without adding sunlight or changing the source lighting,
-    and use matte paper tooth and disciplined abrasion; keep repeated strokes varied
-    enough to avoid a mechanical pattern fill; the prompt supplies all scene content. Do
-    not add unrequested characters, objects, source-specific lore, readable symbols, or
-    a default action.
+  aesthetic: Dry-brush anime illustration built from repeated parallel strokes of measured length laid like drill marks, interrupted by a single clean black anchor stroke at the focal edge.
+  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
+  color_and_tone: Warm faded paper, bleached ochre and softened charcoal; the prompt colors fade as if long exposed to sun.
+  lighting_and_shadow: Compressed highlight contrast and a high flat sun feel with short brown shadows and no cast drama.
+  texture_and_material: Matte paper tooth and disciplined abrasion; each parallel stroke varies slightly so it never becomes a mechanical fill.
+  camera_and_composition: Keep the requested framing and subject count; stroke direction reinforces existing verticals and horizontals without forming ranks.
+  atmosphere_and_mood: Severe, rhythmic and sun-dried; discipline as a visual cadence.
+  rendering_and_quality: Even-length dry-brush rhythm with one crisp dark anchor and clearly legible forms.
+  key_features: measured parallel dry-brush strokes; single black anchor stroke; bleached ochre paper; compressed highlights; rhythmic cadence
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sun-Bleached Cruel Discipline Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - photographic still-life object
+  - photoreal scene
+  - repeated hooded dark-haired swordsman
+  - franchise character likeness
+  - readable text
+  - rows of uniformed figures
   - realistic
   - 3d render
   - photo
@@ -100,14 +54,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-276.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed
-    canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, rows of uniformed figures, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

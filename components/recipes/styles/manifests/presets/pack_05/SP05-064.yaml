@@ -3,10 +3,10 @@ id: SP05-064
 packId: pack_05
 name: Wind-Scoured Redemption Style
 styleAnchors:
-  - 'Wind-Scoured Redemption Style'
-displayName: 'Wind-Scoured Redemption'
+  - Wind-Scoured Redemption Style
+displayName: Wind-Scoured Redemption
 category: 4. Dark Fantasy & Seinen
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,64 +15,22 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: >-
-    A transferable ink-led illustrated treatment built around long dry directional
-    strokes that skim existing silhouettes and taper into sparse mineral abrasion. For color and surface, maintain prompt hues in muted earth, faded blue-gray,
-    and chalk highlights without requiring a landscape palette. Redemption is a possible
-    emotional reading, not a mandatory journey or heroic turn
-  subject_treatment: >-
-    Preserve the requested subject, action, count, pose, expression, setting, and
-    material identity. Restyle its contours through long dry directional strokes that
-    skim existing silhouettes and taper into sparse mineral abrasion; use detail
-    selectively and keep the actual form easy to read. Add no unrequested subject or
-    action.
-  color_and_tone: >-
-    Respect the prompt's colors and emotional temperature; maintain prompt hues in muted
-    earth, faded blue-gray, and chalk highlights without requiring a landscape palette.
-    Keep values legible across the prompted light and dark range; do not crush midtones
-    or dim a bright request.
-  lighting_and_shadow: >-
-    Respect the stated light source, direction, and time; keep the specified light
-    source while using broad open midtones and a few thin edge highlights. Keep shadow
-    detail and material transitions visible.
-  texture_and_material: >-
-    Preserve each material's identity; use dry brush drag and soft pigment loss,
-    preserving smooth, reflective, or delicate materials where they appear. Keep texture
-    subordinate to form and avoid a uniform grime overlay.
-  camera_and_composition: >-
-    Preserve the requested framing, perspective, subject placement, and count; retain
-    the supplied pose and camera; align stroke direction with forms already present
-    rather than adding wind or travel cues. Use the mark rhythm inside the supplied
-    composition rather than replacing it.
-  atmosphere_and_mood: >-
-    Follow the prompt's requested mood first. Redemption is a possible emotional
-    reading, not a mandatory journey or heroic turn. Darkness and tension are optional
-    tonal pressure, never a requirement to add danger or rewrite the scene.
-  rendering_and_quality: >-
-    Use clean, stable illustrated forms and long dry directional strokes that skim
-    existing silhouettes and taper into sparse mineral abrasion; keep focal edges crisp,
-    texture controlled, and dark values legible. Avoid photoreal or 3D-render drift,
-    watermark, logo, and fake readable text.
-  key_features: >-
-    long dry directional strokes that skim existing silhouettes and taper into sparse
-    mineral abrasion; maintain prompt hues in muted earth, faded blue-gray, and chalk
-    highlights without requiring a landscape palette; keep the specified light source
-    while using broad open midtones and a few thin edge highlights; use dry brush drag
-    and soft pigment loss, preserving smooth, reflective, or delicate materials where
-    they appear; and retain the supplied pose and camera; align stroke direction with
-    forms already present rather than adding wind or travel cues. The five cues should
-    read as one mark-and-value system, not as extra scene content.
-  creative_brief: >-
-    Apply this style after the prompt while locking its subject, action, count, pose,
-    camera, context, and requested mood. Use long dry directional strokes that skim
-    existing silhouettes and taper into sparse mineral abrasion, maintain prompt hues in
-    muted earth, faded blue-gray, and chalk highlights without requiring a landscape
-    palette, keep the specified light source while using broad open midtones and a few
-    thin edge highlights, and use dry brush drag and soft pigment loss, preserving
-    smooth, reflective, or delicate materials where they appear; the prompt supplies all
-    scene content. Do not add unrequested characters, objects, source-specific lore,
-    readable symbols, or a default action.
+  aesthetic: Weathered travel-epic anime ink in long dry directional brushstrokes that skim the silhouettes and taper into sparse mineral abrasion, like wind-scored rock.
+  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
+  color_and_tone: Muted earth, faded blue-gray and chalk highlights; no saturated color survives the weathering.
+  lighting_and_shadow: Broad open midtones under overcast plains light, with a few thin edge highlights.
+  texture_and_material: Dry-brush drag, soft pigment loss and abraded stroke tails; smooth or delicate materials stay intact.
+  camera_and_composition: Keep the requested camera; stroke direction follows the forms already there rather than adding wind.
+  atmosphere_and_mood: Worn endurance with a faint hope, redemption as a quiet reading.
+  rendering_and_quality: A steady rhythm of long strokes and a readable silhouette; no ink splatter.
+  key_features: long dry directional strokes; tapering abrasion tails; earth and faded blue-gray; chalk highlights; broad open midtones
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wind-Scoured Redemption Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - photographic still-life object
+  - photoreal scene
+  - repeated hooded dark-haired swordsman
+  - franchise character likeness
+  - readable text
   - realistic
   - 3d render
   - photo
@@ -102,15 +60,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-064.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named samurai likeness, duel pose, katana near-plane, blood,
-    revenge-kill scene, historical flag, battlefield gore, splatter-only horror, photoreal grime,
-    cheap jump scare, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named samurai likeness, duel pose, katana near-plane, blood, revenge-kill scene, historical flag, battlefield gore, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

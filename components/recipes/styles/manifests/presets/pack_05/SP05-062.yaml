@@ -3,10 +3,10 @@ id: SP05-062
 packId: pack_05
 name: Crimson Hunger Metamorphosis Style
 styleAnchors:
-  - 'Crimson Hunger Metamorphosis Style'
-displayName: 'Crimson Hunger Metamorphosis'
+  - Crimson Hunger Metamorphosis Style
+displayName: Crimson Hunger Metamorphosis
 category: 4. Dark Fantasy & Seinen
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,69 +15,24 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: >-
-    A transferable ink-led illustrated treatment built around split translucent lacquer
-    planes, a few membrane-thin overlaps, and restrained crimson seams on the specified
-    nonhuman or object form. For color and surface, retain prompted hues with
-    deep red as a narrow accent against black, bone, or the subject's own material
-    colors. Metamorphic tension can remain abstract and quiet; preserve the user's mood
-    without implying hunger, violence, or identity loss
-  subject_treatment: >-
-    Preserve the requested subject, action, count, pose, expression, setting, and
-    material identity. Restyle its contours through split translucent lacquer planes, a
-    few membrane-thin overlaps, and restrained crimson seams on the specified nonhuman
-    or object form; use detail selectively and keep the actual form easy to read. Do not
-    introduce a person, face, body, robe, or humanoid silhouette. Add no unrequested
-    subject or action.
-  color_and_tone: >-
-    Respect the prompt's colors and emotional temperature; retain prompted hues with
-    deep red as a narrow accent against black, bone, or the subject's own material
-    colors. Keep values legible across the prompted light and dark range; do not crush
-    midtones or dim a bright request.
-  lighting_and_shadow: >-
-    Respect the stated light source, direction, and time; use thin transmitted edges and
-    localized red bounce only on the existing person-free subject. Keep shadow detail
-    and material transitions visible.
-  texture_and_material: >-
-    Preserve each material's identity; layer polished lacquer against soft translucent
-    film without converting the subject into a mask, emblem, or specimen. Keep texture
-    subordinate to form and avoid a uniform grime overlay.
-  camera_and_composition: >-
-    Preserve the requested framing, perspective, subject placement, and count; preserve
-    the requested subject count, action, pose, and framing while keeping the image
-    entirely free of people. Use the mark rhythm inside the supplied composition rather
-    than replacing it.
-  atmosphere_and_mood: >-
-    Follow the prompt's requested mood first. Metamorphic tension can remain abstract
-    and quiet; preserve the user's mood without implying hunger, violence, or identity
-    loss. Darkness and tension are optional tonal pressure, never a requirement to add
-    danger or rewrite the scene.
-  rendering_and_quality: >-
-    Use clean, stable illustrated forms and split translucent lacquer planes, a few
-    membrane-thin overlaps, and restrained crimson seams on the specified nonhuman or
-    object form; keep focal edges crisp, texture controlled, and dark values legible.
-    Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.
-  key_features: >-
-    split translucent lacquer planes, a few membrane-thin overlaps, and restrained
-    crimson seams on the specified nonhuman or object form; retain prompted hues with
-    deep red as a narrow accent against black, bone, or the subject's own material
-    colors; use thin transmitted edges and localized red bounce only on the existing
-    person-free subject; layer polished lacquer against soft translucent film without
-    converting the subject into a mask, emblem, or specimen; and preserve the requested
-    subject count, action, pose, and framing while keeping the image entirely free of
-    people. The five cues should read as one mark-and-value system, not as extra scene
-    content.
-  creative_brief: >-
-    Apply this style after the prompt while locking its subject, action, count, pose,
-    camera, context, and requested mood. Use split translucent lacquer planes, a few
-    membrane-thin overlaps, and restrained crimson seams on the specified nonhuman or
-    object form, retain prompted hues with deep red as a narrow accent against black,
-    bone, or the subject's own material colors, use thin transmitted edges and localized
-    red bounce only on the existing person-free subject, and layer polished lacquer
-    against soft translucent film without converting the subject into a mask, emblem, or
-    specimen; the prompt supplies all scene content. Do not add unrequested characters,
-    objects, source-specific lore, readable symbols, or a default action.
+  aesthetic: 'Lacquer anime illustration in which a nonhuman subject or object seems to shed its surface: split translucent lacquer plates, membrane-thin overlaps and fine crimson seams in clean ink.'
+  subject_treatment: Redraw the prompt's nonhuman subject or object and its setting in this treatment; the image stays free of people, and a gentle prompt stays gentle in content.
+  color_and_tone: Black, bone and the subject's own colors, with deep red limited to the seams.
+  lighting_and_shadow: Thin transmitted light glows through the membranes, with localized red bounce beside each seam.
+  texture_and_material: Polished lacquer plates set against soft translucent film, never turned into a mask or specimen.
+  camera_and_composition: Keep the requested framing, subject count and pose; the image stays entirely free of people.
+  atmosphere_and_mood: Quiet metamorphic tension, a change happening in silence.
+  rendering_and_quality: Clean lacquer highlights and crisp seam lines with readable underlying form.
+  key_features: split translucent lacquer plates; membrane-thin overlaps; crimson seams; transmitted edge light; person-free subject
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crimson Hunger Metamorphosis Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - photographic still-life object
+  - photoreal scene
+  - repeated hooded dark-haired swordsman
+  - franchise character likeness
+  - readable text
+  - mask
+  - face
   - realistic
   - 3d render
   - photo
@@ -100,14 +55,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-062.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed
-    canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, mask, face, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

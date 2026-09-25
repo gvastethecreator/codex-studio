@@ -10,28 +10,28 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Mineral Loneliness Fracture Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, empty abstract-only field, ice palace corridor, weapon, gore, readable symbol, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, empty abstract-only field, ice palace corridor, weapon, gore, readable symbol, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        "A transferable ink-led illustrated treatment built around mineral-fissure contours that branch sparingly and divide forms into a few clean, unequal planes. For color and surface, retain the prompt's hues, but favor chalk, cool stone, and deep graphite values with a small mineral glint. Loneliness can come from sparse marks and cool intervals; keep it quiet rather than automatically tragic",
+        'Seinen ink illustration whose contours branch like hairline fissures in slate, splitting every form into a few large unequal planes of flat chalky tone.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through mineral-fissure contours that branch sparingly and divide forms into a few clean, unequal planes; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; retain the prompt's hues, but favor chalk, cool stone, and deep graphite values with a small mineral glint. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Chalk white, cool slate and deep graphite carry most values; one small mica-silver glint marks the focal plane and prompt hues survive at half saturation.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; separate planes with pale edge light and quiet inner shadow; avoid turning a highlight into a crystal object. Keep shadow detail and material transitions visible.',
+        'Pale edge light runs along the fissure lines with quiet flat shadow inside each plane; light reads as reflected off stone, never glowing.',
       texture_and_material:
-        "Preserve each material's identity; use fine dry mineral grain and crisp fracture-like strokes only where the existing material can carry them. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Dry pumice-like grain inside the planes, crisp fracture strokes of even width, and bare paper left open between the largest tonal shards.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; let open value space and isolated contour breaks create visual distance within the supplied framing. Use the mark rhythm inside the supplied composition rather than replacing it.',
+        'Keep the requested camera; wide margins of empty chalk-tone space make the subject sit small and isolated inside the requested framing.',
       atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Loneliness can come from sparse marks and cool intervals; keep it quiet rather than automatically tragic. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Quiet, cold loneliness carried by sparse marks and long empty intervals, never outright tragedy.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and mineral-fissure contours that branch sparingly and divide forms into a few clean, unequal planes; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Crisp planar ink drawing with fissure contours and flat chalk fills, no soft gradients; always illustrated, never a photographed crystal or stone.',
       key_features:
-        "mineral-fissure contours that branch sparingly and divide forms into a few clean, unequal planes; retain the prompt's hues, but favor chalk, cool stone, and deep graphite values with a small mineral glint; separate planes with pale edge light and quiet inner shadow; avoid turning a highlight into a crystal object; use fine dry mineral grain and crisp fracture-like strokes only where the existing material can carry them; and let open value space and isolated contour breaks create visual distance within the supplied framing. The five cues should read as one mark-and-value system, not as extra scene content.",
+        'branching fissure contours; few unequal flat planes; chalk, slate and graphite values; single mica-silver glint; wide empty margins',
       creative_brief:
-        "Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use mineral-fissure contours that branch sparingly and divide forms into a few clean, unequal planes, retain the prompt's hues, but favor chalk, cool stone, and deep graphite values with a small mineral glint, separate planes with pale edge light and quiet inner shadow; avoid turning a highlight into a crystal object, and use fine dry mineral grain and crisp fracture-like strokes only where the existing material can carry them; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mineral Loneliness Fracture Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -41,28 +41,28 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Eclipse Scar Weight Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        "A transferable ink-led illustrated treatment built around wide crescent-like value sweeps interrupted by a thin scar of exposed midtone along existing contours. For color and surface, keep the source colors while grouping them into ink-dark masses, bone-gray planes, and a restrained muted-violet accent. Weight and uncertainty may deepen through withheld values, while the prompt's emotional register remains in control",
+        'Brush-ink anime illustration of wide crescent value sweeps: each form sits half-swallowed in a curved black mass, and a thin scar of bare midtone runs along its lit edge.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through wide crescent-like value sweeps interrupted by a thin scar of exposed midtone along existing contours; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; keep the source colors while grouping them into ink-dark masses, bone-gray planes, and a restrained muted-violet accent. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Ink-black masses, bone-gray planes and one muted violet accent; the prompt colors appear mainly inside the narrow scar of exposed midtone.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; place a narrow rim against broad soft occlusion, keeping the source light direction and all important shadow detail. Keep shadow detail and material transitions visible.',
+        "A narrow crescent rim light against broad soft occlusion at roughly 1:8, always from the prompt's own light direction.",
       texture_and_material:
-        "Preserve each material's identity; use smooth ink washes with a few dry-edged breaks where a value boundary changes direction. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Smooth pooled ink washes with dry-brush breaks where a crescent sweep turns, and paper grain showing through the midtone scar.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; use curved value arcs and small gaps to steer attention inside the existing composition without adding a celestial motif. Use the mark rhythm inside the supplied composition rather than replacing it.',
+        'Keep the requested framing; curved value arcs steer the eye around the subject like a partial eclipse, without adding a moon or sun.',
       atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Weight and uncertainty may deepen through withheld values, while the prompt's emotional register remains in control. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Heavy, patient and withheld; the weight comes from how much of each form stays hidden.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and wide crescent-like value sweeps interrupted by a thin scar of exposed midtone along existing contours; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Large confident brush sweeps, one crisp scar line per form, and deep values kept legible as violet-black rather than dead flat black.',
       key_features:
-        'wide crescent-like value sweeps interrupted by a thin scar of exposed midtone along existing contours; keep the source colors while grouping them into ink-dark masses, bone-gray planes, and a restrained muted-violet accent; place a narrow rim against broad soft occlusion, keeping the source light direction and all important shadow detail; use smooth ink washes with a few dry-edged breaks where a value boundary changes direction; and use curved value arcs and small gaps to steer attention inside the existing composition without adding a celestial motif. The five cues should read as one mark-and-value system, not as extra scene content.',
+        'crescent black value sweeps; thin midtone scar on lit edges; bone gray with muted violet; 1:8 rim-to-occlusion; dry-brush breaks',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use wide crescent-like value sweeps interrupted by a thin scar of exposed midtone along existing contours, keep the source colors while grouping them into ink-dark masses, bone-gray planes, and a restrained muted-violet accent, place a narrow rim against broad soft occlusion, keeping the source light direction and all important shadow detail, and use smooth ink washes with a few dry-edged breaks where a value boundary changes direction; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Eclipse Scar Weight Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -72,28 +72,28 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Moral Suspicion Realism Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, school corridor, courtroom, weapon, blood, cinematic IP pose, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, school corridor, courtroom, weapon, blood, cinematic IP pose, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around slightly varied hand-ink contours, short observational hatches, and restrained edge misregistration around the focal form. For color and surface, preserve local color identity in subdued slate, tobacco, and paper neutrals, reserving stronger hue for prompt-led accents. Make doubt legible through controlled ambiguity and quiet value shifts, not through an imposed threat or revelation',
+        "Grounded seinen realism in slightly unsteady hand-inked contours and short observational hatching, like a court sketch artist's anime; edges misregister a hair around the focal face or object.",
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through slightly varied hand-ink contours, short observational hatches, and restrained edge misregistration around the focal form; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; preserve local color identity in subdued slate, tobacco, and paper neutrals, reserving stronger hue for prompt-led accents. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Subdued slate, tobacco brown and paper-cream neutrals with saturation kept below a third; stronger hue only where the prompt asks for an accent.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; use plausible, soft-edged value transitions with a few precise highlight cuts rather than theatrical beams. Keep shadow detail and material transitions visible.',
+        'Plausible soft-edged daylight or room light with a few precise highlight cuts on eyes, knuckles or metal; no theatrical beams.',
       texture_and_material:
-        "Preserve each material's identity; combine dry pencil grain with thin opaque ink; let materials remain distinct instead of coating everything in grime. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Dry pencil grain under thin opaque ink, hatching that follows each plane, and a faint doubled line at the focal edge.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; hold the supplied perspective and spacing; use small shifts in edge clarity to imply scrutiny, not a new camera angle. Use the mark rhythm inside the supplied composition rather than replacing it.',
+        'Keep the requested camera; observational eye-level feel with slightly sharper edges on the focal subject than on its surroundings.',
       atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Make doubt legible through controlled ambiguity and quiet value shifts, not through an imposed threat or revelation. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Doubt and scrutiny: calm on the surface, with watchful unease living in the hesitant lines.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and slightly varied hand-ink contours, short observational hatches, and restrained edge misregistration around the focal form; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Realistic proportions, restrained anime simplification of faces, crisp focal edges and softer peripheral hatching; drawn, never photographic.',
       key_features:
-        'slightly varied hand-ink contours, short observational hatches, and restrained edge misregistration around the focal form; preserve local color identity in subdued slate, tobacco, and paper neutrals, reserving stronger hue for prompt-led accents; use plausible, soft-edged value transitions with a few precise highlight cuts rather than theatrical beams; combine dry pencil grain with thin opaque ink; let materials remain distinct instead of coating everything in grime; and hold the supplied perspective and spacing; use small shifts in edge clarity to imply scrutiny, not a new camera angle. The five cues should read as one mark-and-value system, not as extra scene content.',
+        'unsteady observational ink contours; short plane-following hatches; slate, tobacco and paper palette; slight focal misregistration; realistic proportions',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use slightly varied hand-ink contours, short observational hatches, and restrained edge misregistration around the focal form, preserve local color identity in subdued slate, tobacco, and paper neutrals, reserving stronger hue for prompt-led accents, use plausible, soft-edged value transitions with a few precise highlight cuts rather than theatrical beams, and combine dry pencil grain with thin opaque ink; let materials remain distinct instead of coating everything in grime; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Moral Suspicion Realism Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -103,28 +103,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Black Signal Nihilism Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around broken contour dashes in uneven signal-like intervals, separated by large clean pockets of near-black negative value. For color and surface, retain prompted colors over a black-and-ash range, with one narrow cold cyan or acid-green accent only if useful. Nihilistic pressure is optional and should read as visual silence, not as a required disaster or attack',
+        'Graphic anime ink whose contours break into dashes at uneven intervals, like a lost transmission, separated by large clean pockets of near-black negative space.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through broken contour dashes in uneven signal-like intervals, separated by large clean pockets of near-black negative value; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; retain prompted colors over a black-and-ash range, with one narrow cold cyan or acid-green accent only if useful. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'A black-and-ash value range with one narrow cold cyan or acid-green accent on a single edge; prompt colors survive as small muted patches.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; use isolated sharp pulses of reflected color against broad quiet shadow; do not invent a display or light source. Keep shadow detail and material transitions visible.',
+        'Isolated sharp pulses of reflected color on a few edges against broad flat shadow; no visible screen or light fixture is added.',
       texture_and_material:
-        "Preserve each material's identity; keep edges graphic and slightly dry, with sparse dot noise that thins before it muddies the form. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Dry graphic edges, sparse dot noise that thins as it nears the subject, and flat matte black fields without grain.',
       camera_and_composition:
-        "Preserve the requested framing, perspective, subject placement, and count; let existing gaps and interrupted edges establish rhythm without changing the prompt's crop or spatial arrangement. Use the mark rhythm inside the supplied composition rather than replacing it.",
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Nihilistic pressure is optional and should read as visual silence, not as a required disaster or attack. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Keep the requested framing; near-black negative pockets fill about half the frame so the dashed subject floats inside them.',
+      atmosphere_and_mood: 'Visual silence and numb detachment; nothing in the picture is loud.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and broken contour dashes in uneven signal-like intervals, separated by large clean pockets of near-black negative value; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Crisp dashed contours of even weight, clean black fills and one accent color; illustrated, never a photographed object on black.',
       key_features:
-        "broken contour dashes in uneven signal-like intervals, separated by large clean pockets of near-black negative value; retain prompted colors over a black-and-ash range, with one narrow cold cyan or acid-green accent only if useful; use isolated sharp pulses of reflected color against broad quiet shadow; do not invent a display or light source; keep edges graphic and slightly dry, with sparse dot noise that thins before it muddies the form; and let existing gaps and interrupted edges establish rhythm without changing the prompt's crop or spatial arrangement. The five cues should read as one mark-and-value system, not as extra scene content.",
+        'broken dash contours; large near-black negative pockets; one cyan or acid-green edge accent; thinning dot noise; flat matte blacks',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use broken contour dashes in uneven signal-like intervals, separated by large clean pockets of near-black negative value, retain prompted colors over a black-and-ash range, with one narrow cold cyan or acid-green accent only if useful, use isolated sharp pulses of reflected color against broad quiet shadow; do not invent a display or light source, and keep edges graphic and slightly dry, with sparse dot noise that thins before it muddies the form; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Black Signal Nihilism Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -134,28 +133,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Clinical Innocence Rupture Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around precise hairline boundaries across broad pale planes, with one controlled interruption in the contour rhythm. For color and surface, protect the prompt palette while favoring porcelain white, cool gray, and a tiny coral or vermilion note. Fragility can come from the contrast between calm precision and one small irregularity; keep the requested emotion intact',
+        'Hairline anime linework on broad porcelain-pale planes, drawn with medical-plate precision, where one single contour deliberately breaks, doubles or wobbles.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through precise hairline boundaries across broad pale planes, with one controlled interruption in the contour rhythm; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; protect the prompt palette while favoring porcelain white, cool gray, and a tiny coral or vermilion note. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Porcelain white, cool gray and pale blue-gray fields with one tiny coral or vermilion note placed at the point of rupture.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; keep illumination clear and diffuse, then use a small hard highlight at the point where the line treatment breaks. Keep shadow detail and material transitions visible.',
+        'Clear diffuse near-shadowless light like a white room, plus one small hard highlight exactly where the line breaks.',
       texture_and_material:
-        "Preserve each material's identity; pair smooth matte fields with extremely fine paper grain; confine the accent mark instead of spreading stains. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Smooth matte fields over extremely fine paper grain; technical-pen hairlines of constant width and no stains anywhere.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; preserve the original arrangement and let broad quiet areas contrast with tightly resolved edges. Use the mark rhythm inside the supplied composition rather than replacing it.',
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Fragility can come from the contrast between calm precision and one small irregularity; keep the requested emotion intact. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Keep the requested camera; the subject sits with generous even margins so the precision feels clinical and calm.',
+      atmosphere_and_mood: 'Fragile calm with one small wrong note, innocence kept under glass.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and precise hairline boundaries across broad pale planes, with one controlled interruption in the contour rhythm; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Pristine hairline contours, flat pale fills and one controlled irregularity; no grime and no gradients beyond a soft gray shadow.',
       key_features:
-        'precise hairline boundaries across broad pale planes, with one controlled interruption in the contour rhythm; protect the prompt palette while favoring porcelain white, cool gray, and a tiny coral or vermilion note; keep illumination clear and diffuse, then use a small hard highlight at the point where the line treatment breaks; pair smooth matte fields with extremely fine paper grain; confine the accent mark instead of spreading stains; and preserve the original arrangement and let broad quiet areas contrast with tightly resolved edges. The five cues should read as one mark-and-value system, not as extra scene content.',
+        'technical hairline contours; broad porcelain-pale planes; one broken or doubled contour; tiny coral accent; near-shadowless diffuse light',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use precise hairline boundaries across broad pale planes, with one controlled interruption in the contour rhythm, protect the prompt palette while favoring porcelain white, cool gray, and a tiny coral or vermilion note, keep illumination clear and diffuse, then use a small hard highlight at the point where the line treatment breaks, and pair smooth matte fields with extremely fine paper grain; confine the accent mark instead of spreading stains; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Clinical Innocence Rupture Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -165,28 +163,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Rose-Black Baroque Decadence Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, coffin, blood, weapon, cathedral hallway, readable crest, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, coffin, blood, weapon, cathedral hallway, readable crest, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around tapered looping ink strokes that echo existing curves, with ornament kept subordinate to the main silhouette. For color and surface, keep the requested hues and build a rich black-plum range with selective dusty rose or burgundy accents. Decadence may feel elegant or uneasy through excess line detail, but need not imply danger, romance, or a period setting',
+        "Ornate seinen ink with tapered looping strokes that echo the subject's own curves like engraved baroque flourishes, laid over lacquer-smooth dark color.",
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through tapered looping ink strokes that echo existing curves, with ornament kept subordinate to the main silhouette; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; keep the requested hues and build a rich black-plum range with selective dusty rose or burgundy accents. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'A rich black-plum base with dusty rose and burgundy accents and a few tarnished-gold specks; prompt hues drift toward wine tones.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; use small warm specular cuts against velvety shadow, preserving the actual light source and form readability. Keep shadow detail and material transitions visible.',
+        'Small warm specular cuts on lacquered surfaces against velvety black shadow, contrast around 1:10.',
       texture_and_material:
-        "Preserve each material's identity; layer fine etched lines over smooth lacquer-like color only where the source material supports a polished finish. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Fine etched hairlines over smooth lacquer color, velvet-soft shadow gradients, and ornament only along contours that already exist.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; let the curved strokes follow already-present contours and empty spaces without creating decorative props or symmetry. Use the mark rhythm inside the supplied composition rather than replacing it.',
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Decadence may feel elegant or uneasy through excess line detail, but need not imply danger, romance, or a period setting. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Keep the requested framing; curling strokes follow the contours while quiet dark space surrounds the silhouette.',
+      atmosphere_and_mood: 'Elegant, overripe and faintly uneasy, like a ballroom after midnight.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and tapered looping ink strokes that echo existing curves, with ornament kept subordinate to the main silhouette; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Controlled etched detail on the focal silhouette, softer lacquer fields elsewhere; ornament always subordinate to the silhouette.',
       key_features:
-        'tapered looping ink strokes that echo existing curves, with ornament kept subordinate to the main silhouette; keep the requested hues and build a rich black-plum range with selective dusty rose or burgundy accents; use small warm specular cuts against velvety shadow, preserving the actual light source and form readability; layer fine etched lines over smooth lacquer-like color only where the source material supports a polished finish; and let the curved strokes follow already-present contours and empty spaces without creating decorative props or symmetry. The five cues should read as one mark-and-value system, not as extra scene content.',
+        'tapered looping flourish strokes; black-plum with dusty rose; lacquer-smooth fills; warm specular cuts; etched hairline detail',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use tapered looping ink strokes that echo existing curves, with ornament kept subordinate to the main silhouette, keep the requested hues and build a rich black-plum range with selective dusty rose or burgundy accents, use small warm specular cuts against velvety shadow, preserving the actual light source and form readability, and layer fine etched lines over smooth lacquer-like color only where the source material supports a polished finish; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rose-Black Baroque Decadence Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -196,28 +193,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Black Particle Fugitive Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around small separated flecks and broken contourlets clustered beside existing motion or active edges, never forming a new subject. For color and surface, retain source hues with charcoal, ash, and a few cool pale particles as accents rather than a fixed black palette. A fugitive quality can be suggested by quick gaps and sparse marks; do not turn a calm or static request into a chase',
+        "Kinetic anime ink in which the subject's trailing edges disintegrate into small separated black flecks and broken contourlets, as if its own movement were blowing the drawing apart.",
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through small separated flecks and broken contourlets clustered beside existing motion or active edges, never forming a new subject; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; retain source hues with charcoal, ash, and a few cool pale particles as accents rather than a fixed black palette. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Charcoal and ash values with a few cool pale-blue flecks; the prompt colors stay on the solid core of the subject.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; let tiny edge glints appear only where the supplied lighting supports them, with no added luminous effect source. Keep shadow detail and material transitions visible.',
+        'Tiny edge glints only where the prompt light strikes; the flecks stay dark and never glow.',
       texture_and_material:
-        "Preserve each material's identity; use sparse matte pigment granulation, varying dot size and spacing while keeping the main silhouette continuous. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Sparse matte pigment granulation, flecks ranging from pinpoint to rice-grain size and thinning with distance from the silhouette.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; preserve pose, crop, and direction; place any particulate rhythm along the motion already present in the prompt. Use the mark rhythm inside the supplied composition rather than replacing it.',
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. A fugitive quality can be suggested by quick gaps and sparse marks; do not turn a calm or static request into a chase. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Keep the requested camera; flecks stream off the trailing side of the motion or wind, leaving the leading edge crisp.',
+      atmosphere_and_mood: 'Restless and transient, a figure half escaping the page.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and small separated flecks and broken contourlets clustered beside existing motion or active edges, never forming a new subject; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Solid crisp core with a disintegrating trailing edge; fleck scatter stays controlled and never becomes an all-over noise layer.',
       key_features:
-        'small separated flecks and broken contourlets clustered beside existing motion or active edges, never forming a new subject; retain source hues with charcoal, ash, and a few cool pale particles as accents rather than a fixed black palette; let tiny edge glints appear only where the supplied lighting supports them, with no added luminous effect source; use sparse matte pigment granulation, varying dot size and spacing while keeping the main silhouette continuous; and preserve pose, crop, and direction; place any particulate rhythm along the motion already present in the prompt. The five cues should read as one mark-and-value system, not as extra scene content.',
+        'trailing edges dissolving into black flecks; crisp leading edge; charcoal and ash with pale-blue flecks; granulated matte pigment; fleck size gradient',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use small separated flecks and broken contourlets clustered beside existing motion or active edges, never forming a new subject, retain source hues with charcoal, ash, and a few cool pale particles as accents rather than a fixed black palette, let tiny edge glints appear only where the supplied lighting supports them, with no added luminous effect source, and use sparse matte pigment granulation, varying dot size and spacing while keeping the main silhouette continuous; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Black Particle Fugitive Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -227,28 +223,28 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Blood-Ink Severance Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        "A transferable ink-led illustrated treatment built around one or two controlled carmine ink strokes that split, taper, and feather into dry pigment along existing edges. For color and surface, preserve the requested palette and reserve carmine, oxblood, or warm red for narrow value accents rather than literal blood. Severance can be expressed as an abrupt break in visual continuity; preserve the prompt's mood and avoid assuming violence",
+        'Black sumi-ink seinen illustration cut through by one or two decisive carmine brushstrokes that split, taper and feather along an existing edge, like a seal-red slash across the page rather than blood.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through one or two controlled carmine ink strokes that split, taper, and feather into dry pigment along existing edges; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; preserve the requested palette and reserve carmine, oxblood, or warm red for narrow value accents rather than literal blood. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Monochrome black ink on warm rice paper, with carmine or oxblood reserved for one or two strokes only.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; use a slim raking highlight to distinguish the ink edge from its ground while keeping the original illumination intact. Keep shadow detail and material transitions visible.',
+        'Flat paper light; a slim raking highlight separates the red stroke from the black ground beneath it.',
       texture_and_material:
-        "Preserve each material's identity; combine dense black ink with a limited capillary feather and dry paper bite; keep all marks non-gory and material-aware. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Dense black ink with capillary feathering into rice paper and a dry-brush tail at the end of every red stroke.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; let the red stroke support the existing focal path without adding injury cues or a new gesture. Use the mark rhythm inside the supplied composition rather than replacing it.',
+        'Keep the requested framing; the red stroke crosses the focal path diagonally and splits the composition into two unequal parts.',
       atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Severance can be expressed as an abrupt break in visual continuity; preserve the prompt's mood and avoid assuming violence. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Abrupt and decisive, a clean break in continuity without any implied violence.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and one or two controlled carmine ink strokes that split, taper, and feather into dry pigment along existing edges; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Confident calligraphic brushwork with readable forms; the red stroke is a graphic accent, never a wound or splatter.',
       key_features:
-        'one or two controlled carmine ink strokes that split, taper, and feather into dry pigment along existing edges; preserve the requested palette and reserve carmine, oxblood, or warm red for narrow value accents rather than literal blood; use a slim raking highlight to distinguish the ink edge from its ground while keeping the original illumination intact; combine dense black ink with a limited capillary feather and dry paper bite; keep all marks non-gory and material-aware; and let the red stroke support the existing focal path without adding injury cues or a new gesture. The five cues should read as one mark-and-value system, not as extra scene content.',
+        'one or two carmine brush slashes; black sumi ink on rice paper; capillary feathering; diagonal split of the composition; non-gory red',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use one or two controlled carmine ink strokes that split, taper, and feather into dry pigment along existing edges, preserve the requested palette and reserve carmine, oxblood, or warm red for narrow value accents rather than literal blood, use a slim raking highlight to distinguish the ink edge from its ground while keeping the original illumination intact, and combine dense black ink with a limited capillary feather and dry paper bite; keep all marks non-gory and material-aware; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blood-Ink Severance Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -258,28 +254,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Neon Despair Pressure Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        "A transferable ink-led illustrated treatment built around selective chromatic edge doubling, with magenta and cyan slipping a few pixels beyond an otherwise stable ink contour. For color and surface, retain prompt-led color while using saturated pink, blue-cyan, and deep neutral as small, clearly separated bands. Despair is a possible pressure, not a required emotion; chromatic tension should follow the user's requested tone",
+        'Seinen anime ink with selective chromatic edge doubling: magenta and cyan outlines slip two or three pixels off an otherwise stable black contour, like misregistered two-color print.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through selective chromatic edge doubling, with magenta and cyan slipping a few pixels beyond an otherwise stable ink contour; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; retain prompt-led color while using saturated pink, blue-cyan, and deep neutral as small, clearly separated bands. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Deep neutral grays and navy fills, with saturated pink and blue-cyan kept as separate thin bands along the edges.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; suggest a neon-like edge through colored reflected light on existing forms, without adding signs, lamps, or a night setting. Keep shadow detail and material transitions visible.',
+        'Colored reflected light is suggested only by the offset edges; no signs, lamps or night setting are added.',
       texture_and_material:
-        "Preserve each material's identity; keep broad fills clean and use slight pigment bloom only at the colored edge; avoid all-over glow or noisy gradients. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Clean flat fills with slight pigment bloom confined to the colored edge bands.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; hold the supplied silhouette and crop steady so the offset color, not a changed camera, carries the energy. Use the mark rhythm inside the supplied composition rather than replacing it.',
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Despair is a possible pressure, not a required emotion; chromatic tension should follow the user's requested tone. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Keep the requested framing and a steady silhouette; the offset color, not the camera, carries all the energy.',
+      atmosphere_and_mood: 'Pressured, over-bright and quietly desperate under a calm surface.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and selective chromatic edge doubling, with magenta and cyan slipping a few pixels beyond an otherwise stable ink contour; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'A stable black keyline with two offset color ghosts and flat fills; no all-over glow haze.',
       key_features:
-        'selective chromatic edge doubling, with magenta and cyan slipping a few pixels beyond an otherwise stable ink contour; retain prompt-led color while using saturated pink, blue-cyan, and deep neutral as small, clearly separated bands; suggest a neon-like edge through colored reflected light on existing forms, without adding signs, lamps, or a night setting; keep broad fills clean and use slight pigment bloom only at the colored edge; avoid all-over glow or noisy gradients; and hold the supplied silhouette and crop steady so the offset color, not a changed camera, carries the energy. The five cues should read as one mark-and-value system, not as extra scene content.',
+        'magenta and cyan edge offsets; stable black keyline; misregistered print feel; navy-gray fills; localized pigment bloom',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use selective chromatic edge doubling, with magenta and cyan slipping a few pixels beyond an otherwise stable ink contour, retain prompt-led color while using saturated pink, blue-cyan, and deep neutral as small, clearly separated bands, suggest a neon-like edge through colored reflected light on existing forms, without adding signs, lamps, or a night setting, and keep broad fills clean and use slight pigment bloom only at the colored edge; avoid all-over glow or noisy gradients; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Despair Pressure Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -289,28 +284,28 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Smoke-Filled Calculation Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around stacked translucent gray washes with crisp negative-space windows that keep selected contours unusually exact. For color and surface, preserve local hues under a cool graphite, smoke-gray, and silver value structure, using no fixed accent color. Calculation can feel withheld through selective clarity, while the scene stays as calm, lively, or direct as requested',
+        'Layered gray ink-wash illustration where translucent washes stack like smoke over everything except a few crisp negative-space windows that keep chosen contours razor-exact.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through stacked translucent gray washes with crisp negative-space windows that keep selected contours unusually exact; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; preserve local hues under a cool graphite, smoke-gray, and silver value structure, using no fixed accent color. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Cool graphite, smoke gray and silver; the local prompt hues show only inside the clear windows.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; soften broad transitions but retain a few sharply bounded highlight islands on surfaces already catching light. Keep shadow detail and material transitions visible.',
+        'Broad soft transitions under the washes, with a few sharply bounded highlight islands on surfaces already catching light.',
       texture_and_material:
-        "Preserve each material's identity; use layered ink wash and fine graphite dust rather than literal smoke; leave the material underneath identifiable. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Three to five stacked transparent wash layers with pooled edges and fine graphite dust, never literal smoke.',
       camera_and_composition:
-        "Preserve the requested framing, perspective, subject placement, and count; concentrate clarity around the prompt's existing focal area and let peripheral edges soften without moving or cropping subjects. Use the mark rhythm inside the supplied composition rather than replacing it.",
+        'Keep the requested camera; the clear windows sit on the focal area while the periphery hides behind more wash layers.',
       atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Calculation can feel withheld through selective clarity, while the scene stays as calm, lively, or direct as requested. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Withheld, calculating stillness; the viewer sees only what the artist chooses.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and stacked translucent gray washes with crisp negative-space windows that keep selected contours unusually exact; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Selective clarity: razor contours inside the windows, veiled forms elsewhere, values still readable throughout.',
       key_features:
-        "stacked translucent gray washes with crisp negative-space windows that keep selected contours unusually exact; preserve local hues under a cool graphite, smoke-gray, and silver value structure, using no fixed accent color; soften broad transitions but retain a few sharply bounded highlight islands on surfaces already catching light; use layered ink wash and fine graphite dust rather than literal smoke; leave the material underneath identifiable; and concentrate clarity around the prompt's existing focal area and let peripheral edges soften without moving or cropping subjects. The five cues should read as one mark-and-value system, not as extra scene content.",
+        'stacked translucent gray washes; crisp negative-space windows; graphite and silver; pooled wash edges; selective clarity',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use stacked translucent gray washes with crisp negative-space windows that keep selected contours unusually exact, preserve local hues under a cool graphite, smoke-gray, and silver value structure, using no fixed accent color, soften broad transitions but retain a few sharply bounded highlight islands on surfaces already catching light, and use layered ink wash and fine graphite dust rather than literal smoke; leave the material underneath identifiable; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Smoke-Filled Calculation Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -320,28 +315,28 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Cursed Severance Compassion Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        "A transferable ink-led illustrated treatment built around angular contour cuts that resolve into rounded, soft-edged strokes before crossing into the focal form. For color and surface, keep the prompt's colors, balancing quiet ink neutrals with a small warm ochre, blush, or coral passage. Compassion can emerge as a softening of marks, not as a required injury, curse, or reconciliation story",
+        'Dual-stroke anime ink in which contours begin as angular knife-cut lines at the edges of the image and melt into round soft watercolor strokes as they approach the focal form.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through angular contour cuts that resolve into rounded, soft-edged strokes before crossing into the focal form; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; keep the prompt's colors, balancing quiet ink neutrals with a small warm ochre, blush, or coral passage. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Quiet ink neutrals with a warm ochre, blush or coral wash blooming only around the focal form.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; transition from a defined edge highlight to a soft reflected wash without changing source direction or time. Keep shadow detail and material transitions visible.',
+        'Defined edge highlights on the angular outer lines turn into soft reflected wash near the center of attention.',
       texture_and_material:
-        "Preserve each material's identity; contrast dry, crisp line ends with a gentle watercolor bloom, keeping both treatments selective and surface-aware. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Dry crisp line ends at the periphery and wet watercolor blooms with cauliflower edges near the focal form.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; preserve the original focal hierarchy; let line hardness soften locally rather than imposing a new pose or close-up. Use the mark rhythm inside the supplied composition rather than replacing it.',
+        'Keep the requested framing; hardness radiates from the frame edges and softness gathers at the focus.',
       atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Compassion can emerge as a softening of marks, not as a required injury, curse, or reconciliation story. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Harshness softening into compassion; a cold world with one warm center.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and angular contour cuts that resolve into rounded, soft-edged strokes before crossing into the focal form; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Two clearly legible stroke families in a gradient from angular to round, with the warm bloom contained.',
       key_features:
-        "angular contour cuts that resolve into rounded, soft-edged strokes before crossing into the focal form; keep the prompt's colors, balancing quiet ink neutrals with a small warm ochre, blush, or coral passage; transition from a defined edge highlight to a soft reflected wash without changing source direction or time; contrast dry, crisp line ends with a gentle watercolor bloom, keeping both treatments selective and surface-aware; and preserve the original focal hierarchy; let line hardness soften locally rather than imposing a new pose or close-up. The five cues should read as one mark-and-value system, not as extra scene content.",
+        'angular cuts melting into round strokes; warm bloom at the focal form; dry periphery and wet center; ink neutrals with coral; hard-to-soft gradient',
       creative_brief:
-        "Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use angular contour cuts that resolve into rounded, soft-edged strokes before crossing into the focal form, keep the prompt's colors, balancing quiet ink neutrals with a small warm ochre, blush, or coral passage, transition from a defined edge highlight to a soft reflected wash without changing source direction or time, and contrast dry, crisp line ends with a gentle watercolor bloom, keeping both treatments selective and surface-aware; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cursed Severance Compassion Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -351,28 +346,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Sun-Reclaimed Concrete Mystery Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, institutional corridor, classroom, hospital, readable sign, empty landscape, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, institutional corridor, classroom, hospital, readable sign, empty landscape, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around eroded straight contours and fine powdery grain that make broad planes feel sun-faded without adding a sun or setting. For color and surface, respect prompt colors but lower their saturation toward warm concrete gray, dust, and muted ochre highlights. Mystery can come from softened detail and partially withheld edges without requiring an urban clue or danger',
+        'Post-abandonment seinen illustration in eroded straight ink contours and fine powdery grain, every broad plane bleached and dusted like concrete left for years in the sun.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through eroded straight contours and fine powdery grain that make broad planes feel sun-faded without adding a sun or setting; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; respect prompt colors but lower their saturation toward warm concrete gray, dust, and muted ochre highlights. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Warm concrete gray, dust beige and muted ochre highlights, with greens and prompt colors lowered to half saturation.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; broaden existing highlights into a soft bleached falloff while preserving the stated direction and time of light. Keep shadow detail and material transitions visible.',
+        'Existing highlights spread into soft bleached falloff; shadows are pale, warm and low in contrast.',
       texture_and_material:
-        "Preserve each material's identity; use dry mineral speckle and gently abraded edges only on compatible surfaces; do not turn unrelated materials into concrete. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Dry mineral speckle, gently abraded line edges and powdery stipple inside flat planes.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; organize detail into broad quiet planes and a few exact edges within the existing camera and crop. Use the mark rhythm inside the supplied composition rather than replacing it.',
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Mystery can come from softened detail and partially withheld edges without requiring an urban clue or danger. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Keep the requested camera; the picture organizes into broad quiet planes and a few exact straight edges.',
+      atmosphere_and_mood: 'Hushed, sunlit mystery of a place that time has quietly taken back.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and eroded straight contours and fine powdery grain that make broad planes feel sun-faded without adding a sun or setting; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Faded, low-contrast illustrated finish with straight edges eroded yet still legible; never photographic.',
       key_features:
-        'eroded straight contours and fine powdery grain that make broad planes feel sun-faded without adding a sun or setting; respect prompt colors but lower their saturation toward warm concrete gray, dust, and muted ochre highlights; broaden existing highlights into a soft bleached falloff while preserving the stated direction and time of light; use dry mineral speckle and gently abraded edges only on compatible surfaces; do not turn unrelated materials into concrete; and organize detail into broad quiet planes and a few exact edges within the existing camera and crop. The five cues should read as one mark-and-value system, not as extra scene content.',
+        'eroded straight contours; powdery bleached planes; concrete gray and dust ochre; soft washed-out highlights; mineral speckle',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use eroded straight contours and fine powdery grain that make broad planes feel sun-faded without adding a sun or setting, respect prompt colors but lower their saturation toward warm concrete gray, dust, and muted ochre highlights, broaden existing highlights into a soft bleached falloff while preserving the stated direction and time of light, and use dry mineral speckle and gently abraded edges only on compatible surfaces; do not turn unrelated materials into concrete; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sun-Reclaimed Concrete Mystery Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -382,28 +376,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Machine Mourning Noir Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, interior investigation room, gun, gore, readable UI, police signage, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, interior investigation room, gun, gore, readable UI, police signage, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around short broken reflection bars and thin interference lines that describe existing reflective surfaces, not machinery. For color and surface, retain the prompted colors inside a cool steel-blue, charcoal, and muted silver value range with minimal oil-slick accents. Mourning may appear as a subdued, cool value balance; do not make the image nocturnal or mechanical by default',
+        'Cool noir anime ink where every reflective surface is drawn as short broken reflection bars and thin interference lines, like light sliding over wet steel.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through short broken reflection bars and thin interference lines that describe existing reflective surfaces, not machinery; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; retain the prompted colors inside a cool steel-blue, charcoal, and muted silver value range with minimal oil-slick accents. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Steel blue, charcoal and muted silver, with a faint oil-slick violet-green on glossy edges.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; keep the original light source and break its reflections into narrow, discontinuous bands with visible dark detail. Keep shadow detail and material transitions visible.',
+        'The original light source is kept; its reflections break into narrow discontinuous bands and dark detail stays visible.',
       texture_and_material:
-        "Preserve each material's identity; reserve smooth enamel-like sheen for already glossy material and use quiet graphite grain on matte areas. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Enamel-like sheen on glossy materials and quiet graphite grain on matte ones.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; use repeated reflection lengths to pace existing forms while preserving their number, orientation, and framing. Use the mark rhythm inside the supplied composition rather than replacing it.',
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Mourning may appear as a subdued, cool value balance; do not make the image nocturnal or mechanical by default. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Keep the requested framing; repeated reflection lengths pace the image in a steady horizontal rhythm.',
+      atmosphere_and_mood: 'Cool, grieving restraint in which mourning shows as stillness.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and short broken reflection bars and thin interference lines that describe existing reflective surfaces, not machinery; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Clean ink forms with crisp, regular reflection bars; no machinery or gadgets are added.',
       key_features:
-        'short broken reflection bars and thin interference lines that describe existing reflective surfaces, not machinery; retain the prompted colors inside a cool steel-blue, charcoal, and muted silver value range with minimal oil-slick accents; keep the original light source and break its reflections into narrow, discontinuous bands with visible dark detail; reserve smooth enamel-like sheen for already glossy material and use quiet graphite grain on matte areas; and use repeated reflection lengths to pace existing forms while preserving their number, orientation, and framing. The five cues should read as one mark-and-value system, not as extra scene content.',
+        'broken reflection bars; thin interference lines; steel blue and silver; oil-slick edge tint; enamel sheen against graphite matte',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use short broken reflection bars and thin interference lines that describe existing reflective surfaces, not machinery, retain the prompted colors inside a cool steel-blue, charcoal, and muted silver value range with minimal oil-slick accents, keep the original light source and break its reflections into narrow, discontinuous bands with visible dark detail, and reserve smooth enamel-like sheen for already glossy material and use quiet graphite grain on matte areas; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Machine Mourning Noir Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -413,28 +406,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Luminous Natural Cycle Calm Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, empty abstract mist, forest corridor, lab specimen table, monster attack, readable label, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, empty abstract mist, forest corridor, lab specimen table, monster attack, readable label, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around fine branching and vein-like linework only where the prompt already contains organic structure, kept quiet and legible. For color and surface, maintain a moonlit ecological character through silver-blue highlights and soft teal undertones while honoring prompted local colors. Quiet natural calm is central, but the requested emotional tone still leads; darkness is not a requirement',
+        'Nocturnal nature anime painting with fine silver vein-like linework traced through leaves, bark, antler, water and skin, as if living structure glowed faintly from inside.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through fine branching and vein-like linework only where the prompt already contains organic structure, kept quiet and legible; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; maintain a moonlit ecological character through silver-blue highlights and soft teal undertones while honoring prompted local colors. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Deep blue-teal night values with silver-blue highlights and pale mint light inside the veins.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; use gentle lunar-style falloff and cool reflected edges without adding a moon, changing the stated time, or inventing flora. Keep shadow detail and material transitions visible.',
+        'Gentle lunar falloff from above, cool reflected edges, and veins lit from within at very low intensity.',
       texture_and_material:
-        "Preserve each material's identity; lay a faint translucent living haze over compatible existing surfaces; keep stone, metal, and other materials distinct. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Translucent haze on organic surfaces over soft gouache-like fills, while stone and metal stay matte.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; preserve the source framing and let existing organic forms carry the detail, leaving other areas calm and uncluttered. Use the mark rhythm inside the supplied composition rather than replacing it.',
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Quiet natural calm is central, but the requested emotional tone still leads; darkness is not a requirement. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Keep the requested framing; organic forms carry the fine detail while other areas stay calm and open.',
+      atmosphere_and_mood: 'Hushed nocturnal calm, the whole world breathing slowly.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and fine branching and vein-like linework only where the prompt already contains organic structure, kept quiet and legible; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Soft painterly fills with fine crisp vein lines and no heavy blacks anywhere.',
       key_features:
-        'fine branching and vein-like linework only where the prompt already contains organic structure, kept quiet and legible; maintain a moonlit ecological character through silver-blue highlights and soft teal undertones while honoring prompted local colors; use gentle lunar-style falloff and cool reflected edges without adding a moon, changing the stated time, or inventing flora; lay a faint translucent living haze over compatible existing surfaces; keep stone, metal, and other materials distinct; and preserve the source framing and let existing organic forms carry the detail, leaving other areas calm and uncluttered. The five cues should read as one mark-and-value system, not as extra scene content.',
+        'silver vein linework through organic forms; blue-teal night palette; faint inner glow; lunar falloff; translucent haze',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use fine branching and vein-like linework only where the prompt already contains organic structure, kept quiet and legible, maintain a moonlit ecological character through silver-blue highlights and soft teal undertones while honoring prompted local colors, use gentle lunar-style falloff and cool reflected edges without adding a moon, changing the stated time, or inventing flora, and lay a faint translucent living haze over compatible existing surfaces; keep stone, metal, and other materials distinct; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Luminous Natural Cycle Calm Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -444,28 +436,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Winter Guilt Suspicion Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around brittle short hatches and tiny edge grains that gather at contour turns without resembling literal frost or snow. For color and surface, keep source hues while leaning toward slate, cold blue-gray, and pale silver, with one restrained warm pivot if already supported. Suspicion or guilt may register as a guarded value balance only when compatible with the requested mood',
+        'Cold seinen pen drawing of brittle short hatches and tiny edge grains that cluster where contours turn, like frost forming only at the corners of things, as a drawing texture rather than snow.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through brittle short hatches and tiny edge grains that gather at contour turns without resembling literal frost or snow; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; keep source hues while leaning toward slate, cold blue-gray, and pale silver, with one restrained warm pivot if already supported. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Slate, cold blue-gray and pale silver, with one restrained warm pivot color when the prompt provides one.',
       lighting_and_shadow:
-        "Respect the stated light source, direction, and time; use cool, compact highlights against readable shadow planes; do not change the prompt's weather or time of day. Keep shadow detail and material transitions visible.",
+        'Cool compact highlights against readable shadow planes under a flat overcast feel.',
       texture_and_material:
-        "Preserve each material's identity; apply dry crystalline micrograin as a drawing texture, not a new frozen material, and keep the original surfaces legible. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Dry crystalline micrograin as drawing texture, hatches two to four millimeters long and irregularly spaced.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; hold the framing and pose fixed; distribute hatching unevenly to suggest hesitation rather than an imposed close-up. Use the mark rhythm inside the supplied composition rather than replacing it.',
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Suspicion or guilt may register as a guarded value balance only when compatible with the requested mood. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Keep the requested framing; hatching gathers denser behind the subject, as if something were watching from there.',
+      atmosphere_and_mood: 'Guarded, guilty quiet, a breath held in the cold.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and brittle short hatches and tiny edge grains that gather at contour turns without resembling literal frost or snow; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Brittle but controlled pen hatching, with clean white paper in the highlights.',
       key_features:
-        "brittle short hatches and tiny edge grains that gather at contour turns without resembling literal frost or snow; keep source hues while leaning toward slate, cold blue-gray, and pale silver, with one restrained warm pivot if already supported; use cool, compact highlights against readable shadow planes; do not change the prompt's weather or time of day; apply dry crystalline micrograin as a drawing texture, not a new frozen material, and keep the original surfaces legible; and hold the framing and pose fixed; distribute hatching unevenly to suggest hesitation rather than an imposed close-up. The five cues should read as one mark-and-value system, not as extra scene content.",
+        'brittle short hatches at contour turns; slate and cold blue-gray; one warm pivot color; crystalline micrograin; uneven hatch density',
       creative_brief:
-        "Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use brittle short hatches and tiny edge grains that gather at contour turns without resembling literal frost or snow, keep source hues while leaning toward slate, cold blue-gray, and pale silver, with one restrained warm pivot if already supported, use cool, compact highlights against readable shadow planes; do not change the prompt's weather or time of day, and apply dry crystalline micrograin as a drawing texture, not a new frozen material, and keep the original surfaces legible; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Winter Guilt Suspicion Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -475,28 +466,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Sun-Bleached Cruel Discipline Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, rows of uniformed figures, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around repeated parallel dry-brush marks of measured length, interrupted by a single clean dark anchor where the prompt has a focal edge. For color and surface, retain the prompt palette while gently bleaching pigment toward warm paper, faded ochre, and softened charcoal. Discipline is a visual cadence, not a command to make subjects cruel, uniformed, or emotionally severe',
+        'Dry-brush anime illustration built from repeated parallel strokes of measured length laid like drill marks, interrupted by a single clean black anchor stroke at the focal edge.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through repeated parallel dry-brush marks of measured length, interrupted by a single clean dark anchor where the prompt has a focal edge; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; retain the prompt palette while gently bleaching pigment toward warm paper, faded ochre, and softened charcoal. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Warm faded paper, bleached ochre and softened charcoal; the prompt colors fade as if long exposed to sun.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; compress highlight contrast as if pigment has faded under exposure, without adding sunlight or changing the source lighting. Keep shadow detail and material transitions visible.',
+        'Compressed highlight contrast and a high flat sun feel with short brown shadows and no cast drama.',
       texture_and_material:
-        "Preserve each material's identity; use matte paper tooth and disciplined abrasion; keep repeated strokes varied enough to avoid a mechanical pattern fill. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Matte paper tooth and disciplined abrasion; each parallel stroke varies slightly so it never becomes a mechanical fill.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; preserve number and placement of subjects; let mark repetition reinforce existing alignments without forming ranks or formations. Use the mark rhythm inside the supplied composition rather than replacing it.',
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Discipline is a visual cadence, not a command to make subjects cruel, uniformed, or emotionally severe. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Keep the requested framing and subject count; stroke direction reinforces existing verticals and horizontals without forming ranks.',
+      atmosphere_and_mood: 'Severe, rhythmic and sun-dried; discipline as a visual cadence.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and repeated parallel dry-brush marks of measured length, interrupted by a single clean dark anchor where the prompt has a focal edge; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Even-length dry-brush rhythm with one crisp dark anchor and clearly legible forms.',
       key_features:
-        'repeated parallel dry-brush marks of measured length, interrupted by a single clean dark anchor where the prompt has a focal edge; retain the prompt palette while gently bleaching pigment toward warm paper, faded ochre, and softened charcoal; compress highlight contrast as if pigment has faded under exposure, without adding sunlight or changing the source lighting; use matte paper tooth and disciplined abrasion; keep repeated strokes varied enough to avoid a mechanical pattern fill; and preserve number and placement of subjects; let mark repetition reinforce existing alignments without forming ranks or formations. The five cues should read as one mark-and-value system, not as extra scene content.',
+        'measured parallel dry-brush strokes; single black anchor stroke; bleached ochre paper; compressed highlights; rhythmic cadence',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use repeated parallel dry-brush marks of measured length, interrupted by a single clean dark anchor where the prompt has a focal edge, retain the prompt palette while gently bleaching pigment toward warm paper, faded ochre, and softened charcoal, compress highlight contrast as if pigment has faded under exposure, without adding sunlight or changing the source lighting, and use matte paper tooth and disciplined abrasion; keep repeated strokes varied enough to avoid a mechanical pattern fill; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sun-Bleached Cruel Discipline Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -506,28 +496,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Rusted Neon Adolescent Dread Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around irregular scraped strokes with slight contour offsets, alternating rust-red marks and restrained cool neon edge slips. For color and surface, respect the prompt colors and pair oxidized orange-red with a contained violet or cyan note over stable midtones. Adolescent dread may be tender, energetic, or absent according to the prompt; avoid turning it into a forced urban threat',
+        'Scratchy seinen anime drawing of scraped, slightly offset strokes that alternate rust-red oxidized marks with thin cool neon edge slips, like a poster scraped off a metal shutter.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through irregular scraped strokes with slight contour offsets, alternating rust-red marks and restrained cool neon edge slips; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; respect the prompt colors and pair oxidized orange-red with a contained violet or cyan note over stable midtones. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Oxidized orange-red and rust brown over stable midtones, with contained violet or cyan slips on the edges.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; place colored rim accents only on existing edges that can catch them; preserve ambient value and avoid an invented neon source. Keep shadow detail and material transitions visible.',
+        'Colored rim accents sit only on edges that could catch them; ambient light stays low and even.',
       texture_and_material:
-        "Preserve each material's identity; mix dry scraped pigment with tiny oxidized specks, never distressing every surface or changing its material identity. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Dry scraped pigment, tiny oxidized specks and palette-knife scrapes in the backgrounds.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; keep the original composition intact and use broken stroke intervals to add unease inside existing negative space. Use the mark rhythm inside the supplied composition rather than replacing it.',
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Adolescent dread may be tender, energetic, or absent according to the prompt; avoid turning it into a forced urban threat. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Keep the requested framing; broken stroke intervals add unease inside the existing negative space.',
+      atmosphere_and_mood: 'Restless young-adult dread or tenderness, raw and nervous.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and irregular scraped strokes with slight contour offsets, alternating rust-red marks and restrained cool neon edge slips; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Scraped marks stay controlled while faces and key forms remain clean and readable.',
       key_features:
-        'irregular scraped strokes with slight contour offsets, alternating rust-red marks and restrained cool neon edge slips; respect the prompt colors and pair oxidized orange-red with a contained violet or cyan note over stable midtones; place colored rim accents only on existing edges that can catch them; preserve ambient value and avoid an invented neon source; mix dry scraped pigment with tiny oxidized specks, never distressing every surface or changing its material identity; and keep the original composition intact and use broken stroke intervals to add unease inside existing negative space. The five cues should read as one mark-and-value system, not as extra scene content.',
+        'scraped offset strokes; rust red with neon violet or cyan slips; oxidized specks; palette-knife scrapes; nervous stroke rhythm',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use irregular scraped strokes with slight contour offsets, alternating rust-red marks and restrained cool neon edge slips, respect the prompt colors and pair oxidized orange-red with a contained violet or cyan note over stable midtones, place colored rim accents only on existing edges that can catch them; preserve ambient value and avoid an invented neon source, and mix dry scraped pigment with tiny oxidized specks, never distressing every surface or changing its material identity; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rusted Neon Adolescent Dread Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -537,28 +526,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Red-Optic Security Noir Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around pinpoint red speculars and narrow selective focus bands that sharpen only a few existing contours. For color and surface, keep the source palette in graphite and cool neutral values, using red as a tiny accent rather than interface graphics. Security-noir restraint can create watchfulness through selective detail, but no camera, screen, or threat is implied',
+        'Graphite noir anime rendering with a narrow selective-focus band that sharpens a few contours to razor precision while the rest softens, punctuated by pinpoint red speculars.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through pinpoint red speculars and narrow selective focus bands that sharpen only a few existing contours; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; keep the source palette in graphite and cool neutral values, using red as a tiny accent rather than interface graphics. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Graphite and cool neutral grays; red appears only as two or three pinpoint speculars.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; use precise red reflection only where a real surface in the prompt would catch light; retain source direction and brightness hierarchy. Keep shadow detail and material transitions visible.',
+        'Low-key directional light with precise red reflections where real surfaces in the scene would catch it.',
       texture_and_material:
-        "Preserve each material's identity; contrast subdued matte planes with occasional clean glints, avoiding universal gloss or visible scan effects. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Subdued matte planes, smooth graphite blending and occasional clean glints; no scanlines.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; preserve the crop and subject placement; shift clarity locally instead of imposing surveillance framing or a viewpoint. Use the mark rhythm inside the supplied composition rather than replacing it.',
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Security-noir restraint can create watchfulness through selective detail, but no camera, screen, or threat is implied. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Keep the requested framing; a horizontal band of sharp focus crosses the focal area like a tilted lens plane.',
+      atmosphere_and_mood: 'Watchful, cold attention in which everything feels observed.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and pinpoint red speculars and narrow selective focus bands that sharpen only a few existing contours; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'A crisp band against soft falloff, with no scan effects, screens or interface graphics.',
       key_features:
-        'pinpoint red speculars and narrow selective focus bands that sharpen only a few existing contours; keep the source palette in graphite and cool neutral values, using red as a tiny accent rather than interface graphics; use precise red reflection only where a real surface in the prompt would catch light; retain source direction and brightness hierarchy; contrast subdued matte planes with occasional clean glints, avoiding universal gloss or visible scan effects; and preserve the crop and subject placement; shift clarity locally instead of imposing surveillance framing or a viewpoint. The five cues should read as one mark-and-value system, not as extra scene content.',
+        'selective-focus sharp band; pinpoint red speculars; graphite grays; low-key directional light; soft falloff outside the band',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use pinpoint red speculars and narrow selective focus bands that sharpen only a few existing contours, keep the source palette in graphite and cool neutral values, using red as a tiny accent rather than interface graphics, use precise red reflection only where a real surface in the prompt would catch light; retain source direction and brightness hierarchy, and contrast subdued matte planes with occasional clean glints, avoiding universal gloss or visible scan effects; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Red-Optic Security Noir Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -568,28 +556,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Lantern Retribution Ritual Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around measured rings of warm-to-dark value falloff around an existing bright focal area, with evenly spaced restrained marks. For color and surface, preserve requested colors and use contained amber, cream, and charcoal contrasts without requiring a light prop. Ritual cadence and retribution are optional readings of the mark rhythm, never a required story or emotion',
+        'Ceremonial anime ink with measured concentric rings of warm-to-dark value falloff spreading from the brightest area, and evenly spaced brush marks like ritual steps.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through measured rings of warm-to-dark value falloff around an existing bright focal area, with evenly spaced restrained marks; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; preserve requested colors and use contained amber, cream, and charcoal contrasts without requiring a light prop. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Amber, cream and charcoal; prompt colors warm toward amber near the center and cool toward charcoal at the rim.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; shape a small warm bloom only from an existing source or bright area; retain its real direction and leave shadows readable. Keep shadow detail and material transitions visible.',
+        'A small warm bloom from an existing bright area, falling off in four to six visible value steps with readable shadows.',
       texture_and_material:
-        "Preserve each material's identity; use smooth luminous washes bounded by crisp ink, keeping the bloom clean rather than smoky or glittering. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Smooth luminous washes bounded by crisp ink rings, clean rather than smoky or glittering.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; keep prompt framing and count; use radial value rhythm only when the supplied composition already offers a center. Use the mark rhythm inside the supplied composition rather than replacing it.',
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Ritual cadence and retribution are optional readings of the mark rhythm, never a required story or emotion. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Keep the requested framing; the radial value rhythm centers on the brightest point already in the scene.',
+      atmosphere_and_mood: 'Solemn ritual cadence, the stillness before a judgment.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and measured rings of warm-to-dark value falloff around an existing bright focal area, with evenly spaced restrained marks; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Stepped radial value bands, crisp ink boundaries and a controlled bloom that never washes out form.',
       key_features:
-        'measured rings of warm-to-dark value falloff around an existing bright focal area, with evenly spaced restrained marks; preserve requested colors and use contained amber, cream, and charcoal contrasts without requiring a light prop; shape a small warm bloom only from an existing source or bright area; retain its real direction and leave shadows readable; use smooth luminous washes bounded by crisp ink, keeping the bloom clean rather than smoky or glittering; and keep prompt framing and count; use radial value rhythm only when the supplied composition already offers a center. The five cues should read as one mark-and-value system, not as extra scene content.',
+        'concentric stepped value rings; amber, cream and charcoal; warm bloom from existing light; evenly spaced brush marks; ritual cadence',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use measured rings of warm-to-dark value falloff around an existing bright focal area, with evenly spaced restrained marks, preserve requested colors and use contained amber, cream, and charcoal contrasts without requiring a light prop, shape a small warm bloom only from an existing source or bright area; retain its real direction and leave shadows readable, and use smooth luminous washes bounded by crisp ink, keeping the bloom clean rather than smoky or glittering; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lantern Retribution Ritual Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -599,28 +586,26 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Civic Rumor Breakdown Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around slightly offset contour echoes and shifting halftone density that create ambiguity without multiplying the subject. For color and surface, retain local color while arranging charcoal, pale gray, and one small red accent into clear value groups. Rumor-like uncertainty may come from offset marks, not from adding a crowd, civic setting, or conflict',
+        'Manga screentone illustration where contours print twice, slightly offset, and halftone density shifts across a single form, so the image looks like a rumor retold: the same thing, not quite matching.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through slightly offset contour echoes and shifting halftone density that create ambiguity without multiplying the subject; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
-      color_and_tone:
-        "Respect the prompt's colors and emotional temperature; retain local color while arranging charcoal, pale gray, and one small red accent into clear value groups. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
+      color_and_tone: 'Charcoal, pale gray and white screentone with one small red accent.',
       lighting_and_shadow:
-        "Respect the stated light source, direction, and time; soften overlap areas and keep a few edges crisp under the prompt's existing illumination. Keep shadow detail and material transitions visible.",
+        "Soft overlaps in the offset zones and a few crisp edges under the prompt's existing light.",
       texture_and_material:
-        "Preserve each material's identity; alternate fine screenlike dots with clean unprinted gaps; avoid adding text, signage, or crowded detail. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Fine screentone dots alternating with clean unprinted gaps; no text, signs or captions.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; preserve all subjects and their spacing; let density variation imply competing emphasis within the supplied frame. Use the mark rhythm inside the supplied composition rather than replacing it.',
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Rumor-like uncertainty may come from offset marks, not from adding a crowd, civic setting, or conflict. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Keep the requested framing and count; density shifts move emphasis between elements without adding people.',
+      atmosphere_and_mood: 'Uneasy uncertainty, a whisper living inside the halftone.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and slightly offset contour echoes and shifting halftone density that create ambiguity without multiplying the subject; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Print-like offset keylines, clean dot gradients and a single red accent.',
       key_features:
-        "slightly offset contour echoes and shifting halftone density that create ambiguity without multiplying the subject; retain local color while arranging charcoal, pale gray, and one small red accent into clear value groups; soften overlap areas and keep a few edges crisp under the prompt's existing illumination; alternate fine screenlike dots with clean unprinted gaps; avoid adding text, signage, or crowded detail; and preserve all subjects and their spacing; let density variation imply competing emphasis within the supplied frame. The five cues should read as one mark-and-value system, not as extra scene content.",
+        'doubled offset contours; shifting halftone density; charcoal and pale gray screentone; one red accent; unprinted gaps',
       creative_brief:
-        "Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use slightly offset contour echoes and shifting halftone density that create ambiguity without multiplying the subject, retain local color while arranging charcoal, pale gray, and one small red accent into clear value groups, soften overlap areas and keep a few edges crisp under the prompt's existing illumination, and alternate fine screenlike dots with clean unprinted gaps; avoid adding text, signage, or crowded detail; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Civic Rumor Breakdown Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -630,28 +615,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Invasive Anatomy Thriller Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, body, anatomy, flesh, organs, gore, face, hands, surgery, creature, body-horror closeup, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, body, anatomy, flesh, organs, gore, face, hands, surgery, creature, body-horror closeup, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around fine branching seam lines and pale faceted planes that follow existing form rather than adding anatomy or cutaway detail. For color and surface, preserve prompt hues and favor bone, ceramic gray, and a very limited crimson stress accent. Thriller tension can live in a controlled contour irregularity; do not make the request anatomical, graphic, or threatening',
+        'Clinical thriller ink that maps fine branching seam lines and pale faceted planes across the surface of objects and architecture, like a dissection diagram drawn on porcelain, without revealing any interior.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through fine branching seam lines and pale faceted planes that follow existing form rather than adding anatomy or cutaway detail; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's nonhuman subject or object and its setting in this treatment; the image stays free of people, and a gentle prompt stays gentle in content.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; preserve prompt hues and favor bone, ceramic gray, and a very limited crimson stress accent. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Bone, ceramic gray and pale celadon, with a very limited crimson stress accent at one seam junction.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; use precise pale edge glints against soft shadow, keeping surfaces readable and avoiding clinical spotlighting. Keep shadow detail and material transitions visible.',
+        'Precise pale edge glints against soft shadow under even cabinet light, with no spotlight.',
       texture_and_material:
-        "Preserve each material's identity; combine matte porcelain-like fields with tiny dry cracks only where the original material supports them. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Matte porcelain fields, hairline seams of constant width and tiny dry crazing cracks.',
       camera_and_composition:
-        "Preserve the requested framing, perspective, subject placement, and count; keep the prompt's subject and crop fixed; direct seam detail along existing contours without exposing new interior structures. Use the mark rhythm inside the supplied composition rather than replacing it.",
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Thriller tension can live in a controlled contour irregularity; do not make the request anatomical, graphic, or threatening. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        "Keep the requested framing; seam lines follow the form's own contours and panel breaks, nothing is opened or cut.",
+      atmosphere_and_mood: 'Cold, intrusive curiosity about a form studied too closely.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and fine branching seam lines and pale faceted planes that follow existing form rather than adding anatomy or cutaway detail; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Precise diagrammatic seams on faceted planes, clean and illustrated rather than a photographed object.',
       key_features:
-        "fine branching seam lines and pale faceted planes that follow existing form rather than adding anatomy or cutaway detail; preserve prompt hues and favor bone, ceramic gray, and a very limited crimson stress accent; use precise pale edge glints against soft shadow, keeping surfaces readable and avoiding clinical spotlighting; combine matte porcelain-like fields with tiny dry cracks only where the original material supports them; and keep the prompt's subject and crop fixed; direct seam detail along existing contours without exposing new interior structures. The five cues should read as one mark-and-value system, not as extra scene content.",
+        'branching seam lines on surfaces; pale faceted planes; bone and ceramic gray; single crimson junction; porcelain crazing',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use fine branching seam lines and pale faceted planes that follow existing form rather than adding anatomy or cutaway detail, preserve prompt hues and favor bone, ceramic gray, and a very limited crimson stress accent, use precise pale edge glints against soft shadow, keeping surfaces readable and avoiding clinical spotlighting, and combine matte porcelain-like fields with tiny dry cracks only where the original material supports them; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Invasive Anatomy Thriller Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -661,28 +645,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Procedural Low-Fantasy Grit Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, corridor, dungeon hallway, adventurer, torch/lamp prop, weapon, enemy, blood, game UI, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, corridor, dungeon hallway, adventurer, torch/lamp prop, weapon, enemy, blood, game UI, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around scuffed matte planes, chipped contour edges, and narrow abstract slices of light that clarify existing shapes. For color and surface, keep requested hues grounded in worn stone gray, dirty metal neutrals, and subdued earth accents. Procedural grit is a tactile finish, not a forced quest, danger, or low-light scene',
+        'Grounded low-fantasy anime ink with scuffed matte planes, chipped contour edges and narrow slices of light that show how everyday things are made and worn.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through scuffed matte planes, chipped contour edges, and narrow abstract slices of light that clarify existing shapes; use detail selectively and keep the actual form easy to read. Do not introduce an adventurer, gear, or adversary. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; keep requested hues grounded in worn stone gray, dirty metal neutrals, and subdued earth accents. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Worn stone gray, dull iron, undyed linen and subdued earth accents with no saturated color.',
       lighting_and_shadow:
-        "Respect the stated light source, direction, and time; use restrained practical-looking contrast only when compatible with the prompt; keep the prompt's light sources unchanged. Keep shadow detail and material transitions visible.",
+        'Restrained practical-looking contrast with narrow slices of light laid across a few planes.',
       texture_and_material:
-        "Preserve each material's identity; apply sparse abrasion and rubbed pigment to compatible materials, preserving the material identity of everything else. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Sparse abrasion, rubbed pigment and chipped edges on wood, iron and leather; every material keeps its identity.',
       camera_and_composition:
-        "Preserve the requested framing, perspective, subject placement, and count; hold the prompt's camera, subject count, and arrangement; this treatment never adds an adventurer. Use the mark rhythm inside the supplied composition rather than replacing it.",
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Procedural grit is a tactile finish, not a forced quest, danger, or low-light scene. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Keep the requested camera, subject count and arrangement; this treatment never adds an adventurer.',
+      atmosphere_and_mood: 'Tactile, practical, lived-in grit without forced danger.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and scuffed matte planes, chipped contour edges, and narrow abstract slices of light that clarify existing shapes; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Chipped contour edges, matte planes and clear construction logic in every object.',
       key_features:
-        "scuffed matte planes, chipped contour edges, and narrow abstract slices of light that clarify existing shapes; keep requested hues grounded in worn stone gray, dirty metal neutrals, and subdued earth accents; use restrained practical-looking contrast only when compatible with the prompt; keep the prompt's light sources unchanged; apply sparse abrasion and rubbed pigment to compatible materials, preserving the material identity of everything else; and hold the prompt's camera, subject count, and arrangement; this treatment never adds an adventurer. The five cues should read as one mark-and-value system, not as extra scene content.",
+        'chipped contour edges; scuffed matte planes; stone gray, iron and linen; narrow light slices; rubbed pigment',
       creative_brief:
-        "Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use scuffed matte planes, chipped contour edges, and narrow abstract slices of light that clarify existing shapes, keep requested hues grounded in worn stone gray, dirty metal neutrals, and subdued earth accents, use restrained practical-looking contrast only when compatible with the prompt; keep the prompt's light sources unchanged, and apply sparse abrasion and rubbed pigment to compatible materials, preserving the material identity of everything else; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Procedural Low-Fantasy Grit Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -692,28 +675,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Crosshatched Doom Weight Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, gore, severed bodies, sexual violence, famous dark-fantasy swordsman likeness, giant sword, torture scene, readable occult text, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, gore, severed bodies, sexual violence, famous dark-fantasy swordsman likeness, giant sword, torture scene, readable occult text, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around layered crosshatch that thickens selectively in shadow and stops cleanly before large open value gaps. For color and surface, preserve source colors while building weight from charcoal, bone, and a narrow muted red or brown accent if needed. Doom can come from dense marks beside quiet gaps, but seriousness and peril follow the requested mood',
+        'Dense pen crosshatch seinen manga that builds shadow in three to five layered hatch directions and stops cleanly at large open paper areas, so forms feel carved and heavy.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through layered crosshatch that thickens selectively in shadow and stops cleanly before large open value gaps; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; preserve source colors while building weight from charcoal, bone, and a narrow muted red or brown accent if needed. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Charcoal black and bone white with a narrow muted red-brown accent; mostly monochrome.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; let broad shadow masses contrast with a few exposed edges; keep facial, object, or material detail legible where present. Keep shadow detail and material transitions visible.',
+        'A hard single source; broad shadow masses cover most of the frame against a few exposed edges.',
       texture_and_material:
-        "Preserve each material's identity; vary hatch direction and spacing rather than applying uniform grain or photoreal grime. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Fine nib lines whose direction and spacing change with every plane; no photoreal grime.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; keep the original framing, using existing empty areas as counterweight without enlarging architecture or subjects. Use the mark rhythm inside the supplied composition rather than replacing it.',
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Doom can come from dense marks beside quiet gaps, but seriousness and peril follow the requested mood. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Keep the requested framing; empty paper areas act as counterweight to the dense hatching.',
+      atmosphere_and_mood: 'Oppressive weight and grim endurance, even in a quiet scene.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and layered crosshatch that thickens selectively in shadow and stops cleanly before large open value gaps; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Meticulous nib crosshatching with clean white gaps and legible detail inside the darks.',
       key_features:
-        'layered crosshatch that thickens selectively in shadow and stops cleanly before large open value gaps; preserve source colors while building weight from charcoal, bone, and a narrow muted red or brown accent if needed; let broad shadow masses contrast with a few exposed edges; keep facial, object, or material detail legible where present; vary hatch direction and spacing rather than applying uniform grain or photoreal grime; and keep the original framing, using existing empty areas as counterweight without enlarging architecture or subjects. The five cues should read as one mark-and-value system, not as extra scene content.',
+        'layered three-to-five direction crosshatch; clean open paper gaps; charcoal and bone; dominant shadow mass; hard single source',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use layered crosshatch that thickens selectively in shadow and stops cleanly before large open value gaps, preserve source colors while building weight from charcoal, bone, and a narrow muted red or brown accent if needed, let broad shadow masses contrast with a few exposed edges; keep facial, object, or material detail legible where present, and vary hatch direction and spacing rather than applying uniform grain or photoreal grime; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crosshatched Doom Weight Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -723,28 +705,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Crimson Hunger Metamorphosis Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, mask, face, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        "A transferable ink-led illustrated treatment built around split translucent lacquer planes, a few membrane-thin overlaps, and restrained crimson seams on the specified nonhuman or object form. For color and surface, retain prompted hues with deep red as a narrow accent against black, bone, or the subject's own material colors. Metamorphic tension can remain abstract and quiet; preserve the user's mood without implying hunger, violence, or identity loss",
+        'Lacquer anime illustration in which a nonhuman subject or object seems to shed its surface: split translucent lacquer plates, membrane-thin overlaps and fine crimson seams in clean ink.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through split translucent lacquer planes, a few membrane-thin overlaps, and restrained crimson seams on the specified nonhuman or object form; use detail selectively and keep the actual form easy to read. Do not introduce a person, face, body, robe, or humanoid silhouette. Add no unrequested subject or action.',
+        "Redraw the prompt's nonhuman subject or object and its setting in this treatment; the image stays free of people, and a gentle prompt stays gentle in content.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; retain prompted hues with deep red as a narrow accent against black, bone, or the subject's own material colors. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        "Black, bone and the subject's own colors, with deep red limited to the seams.",
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; use thin transmitted edges and localized red bounce only on the existing person-free subject. Keep shadow detail and material transitions visible.',
+        'Thin transmitted light glows through the membranes, with localized red bounce beside each seam.',
       texture_and_material:
-        "Preserve each material's identity; layer polished lacquer against soft translucent film without converting the subject into a mask, emblem, or specimen. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Polished lacquer plates set against soft translucent film, never turned into a mask or specimen.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; preserve the requested subject count, action, pose, and framing while keeping the image entirely free of people. Use the mark rhythm inside the supplied composition rather than replacing it.',
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Metamorphic tension can remain abstract and quiet; preserve the user's mood without implying hunger, violence, or identity loss. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Keep the requested framing, subject count and pose; the image stays entirely free of people.',
+      atmosphere_and_mood: 'Quiet metamorphic tension, a change happening in silence.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and split translucent lacquer planes, a few membrane-thin overlaps, and restrained crimson seams on the specified nonhuman or object form; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Clean lacquer highlights and crisp seam lines with readable underlying form.',
       key_features:
-        "split translucent lacquer planes, a few membrane-thin overlaps, and restrained crimson seams on the specified nonhuman or object form; retain prompted hues with deep red as a narrow accent against black, bone, or the subject's own material colors; use thin transmitted edges and localized red bounce only on the existing person-free subject; layer polished lacquer against soft translucent film without converting the subject into a mask, emblem, or specimen; and preserve the requested subject count, action, pose, and framing while keeping the image entirely free of people. The five cues should read as one mark-and-value system, not as extra scene content.",
+        'split translucent lacquer plates; membrane-thin overlaps; crimson seams; transmitted edge light; person-free subject',
       creative_brief:
-        "Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use split translucent lacquer planes, a few membrane-thin overlaps, and restrained crimson seams on the specified nonhuman or object form, retain prompted hues with deep red as a narrow accent against black, bone, or the subject's own material colors, use thin transmitted edges and localized red bounce only on the existing person-free subject, and layer polished lacquer against soft translucent film without converting the subject into a mask, emblem, or specimen; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crimson Hunger Metamorphosis Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -754,28 +735,25 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Crimson Gothic Authority Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, vampire franchise likeness, Nazi/fascist insignia, guns, gore, bite scene, religious icon copy, readable crest, blade-first pose, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, vampire franchise likeness, Nazi/fascist insignia, guns, gore, bite scene, religious icon copy, readable crest, blade-first pose, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        "A transferable ink-led illustrated treatment built around hard black and crimson value blocks edged by fine tapered linework that decorates only contours already present. For color and surface, keep the requested colors while using crimson, ink black, and restrained pale contrast as a hierarchy, not a fixed palette. Authority can feel composed or theatrical through hierarchy alone and must follow the prompt's emotional direction",
+        'Gothic seinen poster ink with hard black and crimson color blocks edged by fine tapered hairlines that decorate only existing contours; flat and heraldic.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through hard black and crimson value blocks edged by fine tapered linework that decorates only contours already present; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
-      color_and_tone:
-        "Respect the prompt's colors and emotional temperature; keep the requested colors while using crimson, ink black, and restrained pale contrast as a hierarchy, not a fixed palette. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
+      color_and_tone: 'Crimson, ink black and pale ivory in a strict three-value hierarchy.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; use crisp controlled highlights and clean shadow edges without introducing a glowing symbol or architectural light source. Keep shadow detail and material transitions visible.',
+        'Crisp controlled highlights and clean hard shadow edges, without glowing symbols or shafts of light.',
       texture_and_material:
-        "Preserve each material's identity; combine flat opaque pigment with sparse etched detail; avoid filling quiet areas with ornament. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Flat opaque gouache-like pigment with sparse etched detail on the edges only.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; preserve existing balance and viewpoint; let color-block proportions, not imposed symmetry, carry authority. Use the mark rhythm inside the supplied composition rather than replacing it.',
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Authority can feel composed or theatrical through hierarchy alone and must follow the prompt's emotional direction. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
-      rendering_and_quality:
-        'Use clean, stable illustrated forms and hard black and crimson value blocks edged by fine tapered linework that decorates only contours already present; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Keep the requested framing; large color-block proportions carry authority rather than forced symmetry.',
+      atmosphere_and_mood: 'Composed, theatrical command held with cold, upright dignity.',
+      rendering_and_quality: 'Hard-edged blocks, hairline edge ornament and no gradients at all.',
       key_features:
-        'hard black and crimson value blocks edged by fine tapered linework that decorates only contours already present; keep the requested colors while using crimson, ink black, and restrained pale contrast as a hierarchy, not a fixed palette; use crisp controlled highlights and clean shadow edges without introducing a glowing symbol or architectural light source; combine flat opaque pigment with sparse etched detail; avoid filling quiet areas with ornament; and preserve existing balance and viewpoint; let color-block proportions, not imposed symmetry, carry authority. The five cues should read as one mark-and-value system, not as extra scene content.',
+        'flat crimson and black blocks; tapered hairline edge ornament; ivory highlights; three-value hierarchy; hard shadow edges',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use hard black and crimson value blocks edged by fine tapered linework that decorates only contours already present, keep the requested colors while using crimson, ink black, and restrained pale contrast as a hierarchy, not a fixed palette, use crisp controlled highlights and clean shadow edges without introducing a glowing symbol or architectural light source, and combine flat opaque pigment with sparse etched detail; avoid filling quiet areas with ornament; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crimson Gothic Authority Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -785,28 +763,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Wind-Scoured Redemption Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named samurai likeness, duel pose, katana near-plane, blood, revenge-kill scene, historical flag, battlefield gore, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named samurai likeness, duel pose, katana near-plane, blood, revenge-kill scene, historical flag, battlefield gore, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around long dry directional strokes that skim existing silhouettes and taper into sparse mineral abrasion. For color and surface, maintain prompt hues in muted earth, faded blue-gray, and chalk highlights without requiring a landscape palette. Redemption is a possible emotional reading, not a mandatory journey or heroic turn',
+        'Weathered travel-epic anime ink in long dry directional brushstrokes that skim the silhouettes and taper into sparse mineral abrasion, like wind-scored rock.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through long dry directional strokes that skim existing silhouettes and taper into sparse mineral abrasion; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; maintain prompt hues in muted earth, faded blue-gray, and chalk highlights without requiring a landscape palette. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Muted earth, faded blue-gray and chalk highlights; no saturated color survives the weathering.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; keep the specified light source while using broad open midtones and a few thin edge highlights. Keep shadow detail and material transitions visible.',
+        'Broad open midtones under overcast plains light, with a few thin edge highlights.',
       texture_and_material:
-        "Preserve each material's identity; use dry brush drag and soft pigment loss, preserving smooth, reflective, or delicate materials where they appear. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Dry-brush drag, soft pigment loss and abraded stroke tails; smooth or delicate materials stay intact.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; retain the supplied pose and camera; align stroke direction with forms already present rather than adding wind or travel cues. Use the mark rhythm inside the supplied composition rather than replacing it.',
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Redemption is a possible emotional reading, not a mandatory journey or heroic turn. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Keep the requested camera; stroke direction follows the forms already there rather than adding wind.',
+      atmosphere_and_mood: 'Worn endurance with a faint hope, redemption as a quiet reading.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and long dry directional strokes that skim existing silhouettes and taper into sparse mineral abrasion; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'A steady rhythm of long strokes and a readable silhouette; no ink splatter.',
       key_features:
-        'long dry directional strokes that skim existing silhouettes and taper into sparse mineral abrasion; maintain prompt hues in muted earth, faded blue-gray, and chalk highlights without requiring a landscape palette; keep the specified light source while using broad open midtones and a few thin edge highlights; use dry brush drag and soft pigment loss, preserving smooth, reflective, or delicate materials where they appear; and retain the supplied pose and camera; align stroke direction with forms already present rather than adding wind or travel cues. The five cues should read as one mark-and-value system, not as extra scene content.',
+        'long dry directional strokes; tapering abrasion tails; earth and faded blue-gray; chalk highlights; broad open midtones',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use long dry directional strokes that skim existing silhouettes and taper into sparse mineral abrasion, maintain prompt hues in muted earth, faded blue-gray, and chalk highlights without requiring a landscape palette, keep the specified light source while using broad open midtones and a few thin edge highlights, and use dry brush drag and soft pigment loss, preserving smooth, reflective, or delicate materials where they appear; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wind-Scoured Redemption Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -816,28 +793,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Pale Threshold Horror Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, hunter/prey body, chase, weapon, blood, gore, monster, corridor, confrontation scene, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, hunter/prey body, chase, weapon, blood, gore, monster, corridor, confrontation scene, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around pale open planes separated by thin silver-gray edge gaps and carefully withheld contour segments. For color and surface, preserve the prompt palette, allowing ash white and cool silver to organize values without draining important local color. Unease can be subtle and optional, carried by withheld detail rather than a jump scare or required horror event',
+        'Pale seinen horror line art of open white planes, thin silver-gray edge gaps and deliberately withheld contour segments, so forms dissolve into the paper at their edges.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through pale open planes separated by thin silver-gray edge gaps and carefully withheld contour segments; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; preserve the prompt palette, allowing ash white and cool silver to organize values without draining important local color. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Ash white, cool silver and very pale local colors; darks are rare and small.',
       lighting_and_shadow:
-        "Respect the stated light source, direction, and time; use quiet diffuse light with a small number of fine edge highlights; preserve the prompt's time and light direction. Keep shadow detail and material transitions visible.",
+        'Quiet diffuse high-key light with very few fine highlights and almost no cast shadow.',
       texture_and_material:
-        "Preserve each material's identity; keep broad matte washes clean, with only a faint paper grain and no foglike overlay unless the prompt supplies it. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Clean matte washes with a faint paper grain and no fog overlay unless the prompt asks for it.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; maintain the original framing; let contour gaps and open negative space create a threshold feeling without imposing architecture. Use the mark rhythm inside the supplied composition rather than replacing it.',
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Unease can be subtle and optional, carried by withheld detail rather than a jump scare or required horror event. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Keep the requested framing; generous negative space and contour gaps create a threshold feeling.',
+      atmosphere_and_mood: 'Subtle wrongness and a quiet, bright, high-key unease.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and pale open planes separated by thin silver-gray edge gaps and carefully withheld contour segments; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Sparse, pale, withheld lines that stay legible; no jump-scare darkness.',
       key_features:
-        "pale open planes separated by thin silver-gray edge gaps and carefully withheld contour segments; preserve the prompt palette, allowing ash white and cool silver to organize values without draining important local color; use quiet diffuse light with a small number of fine edge highlights; preserve the prompt's time and light direction; keep broad matte washes clean, with only a faint paper grain and no foglike overlay unless the prompt supplies it; and maintain the original framing; let contour gaps and open negative space create a threshold feeling without imposing architecture. The five cues should read as one mark-and-value system, not as extra scene content.",
+        'high-key pale planes; withheld contour segments; silver-gray edge gaps; ash-white palette; rare small darks',
       creative_brief:
-        "Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use pale open planes separated by thin silver-gray edge gaps and carefully withheld contour segments, preserve the prompt palette, allowing ash white and cool silver to organize values without draining important local color, use quiet diffuse light with a small number of fine edge highlights; preserve the prompt's time and light direction, and keep broad matte washes clean, with only a faint paper grain and no foglike overlay unless the prompt supplies it; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pale Threshold Horror Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -847,28 +823,26 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Lush Abyssal Toll Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, explorer, cave tunnel, fantasy corridor, monster, map, lantern, expedition gear, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, explorer, cave tunnel, fantasy corridor, monster, map, lantern, expedition gear, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around deep teal value layers with small translucent edge glazes and low-contrast pore marks on existing forms. For color and surface, keep source colors while deepening compatible shadows toward blue-green and reserving pale cyan for restrained accents. Depth and cost may feel solemn or calm according to the prompt, with no required monster or peril',
+        'Deep-water anime painting in layered teal values with translucent edge glazes and low-contrast pore marks, as if the subject were seen through fathoms of water.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through deep teal value layers with small translucent edge glazes and low-contrast pore marks on existing forms; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
-      color_and_tone:
-        "Respect the prompt's colors and emotional temperature; keep source colors while deepening compatible shadows toward blue-green and reserving pale cyan for restrained accents. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
+      color_and_tone: 'Blue-green shadows and deep teal with restrained pale cyan accents.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; use dim internal-looking color only as a treatment of existing surfaces; do not add a cave, glow source, or creature. Keep shadow detail and material transitions visible.',
+        'Dim color seemingly held inside surfaces, falling off in layered steps with depth; no added glow source.',
       texture_and_material:
-        "Preserve each material's identity; combine soft damp-looking patina with fine mineral grain only where the material can plausibly accept it. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Damp patina, fine mineral grain and pore stipple only on surfaces that can carry them.',
       camera_and_composition:
-        "Preserve the requested framing, perspective, subject placement, and count; hold the prompt's crop and number of forms; use layered value falloff to separate depth without making an abyssal setting. Use the mark rhythm inside the supplied composition rather than replacing it.",
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Depth and cost may feel solemn or calm according to the prompt, with no required monster or peril. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Keep the requested framing and number of forms; layered value falloff separates depth.',
+      atmosphere_and_mood: 'Solemn, lush pressure, beautiful and costly at once.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and deep teal value layers with small translucent edge glazes and low-contrast pore marks on existing forms; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Glazed layers with soft distant edges and crisp near edges, values readable to the back.',
       key_features:
-        "deep teal value layers with small translucent edge glazes and low-contrast pore marks on existing forms; keep source colors while deepening compatible shadows toward blue-green and reserving pale cyan for restrained accents; use dim internal-looking color only as a treatment of existing surfaces; do not add a cave, glow source, or creature; combine soft damp-looking patina with fine mineral grain only where the material can plausibly accept it; and hold the prompt's crop and number of forms; use layered value falloff to separate depth without making an abyssal setting. The five cues should read as one mark-and-value system, not as extra scene content.",
+        'layered teal value falloff; translucent edge glazes; pore stipple; pale cyan accents; damp patina',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use deep teal value layers with small translucent edge glazes and low-contrast pore marks on existing forms, keep source colors while deepening compatible shadows toward blue-green and reserving pale cyan for restrained accents, use dim internal-looking color only as a treatment of existing surfaces; do not add a cave, glow source, or creature, and combine soft damp-looking patina with fine mineral grain only where the material can plausibly accept it; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lush Abyssal Toll Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -878,57 +852,56 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Grimy Sorcery Collision Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, readable sigils, protagonist mask portrait, weapon, alley corridor, franchise wizard, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, readable sigils, protagonist mask portrait, weapon, alley corridor, franchise wizard, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A transferable ink-led illustrated treatment built around scuffed ink masses colliding with chipped color edges and a few abruptly broken contour joins. For color and surface, respect the prompt palette and organize it into soot-dark neutrals with one or two sharply bounded color accents. Sorcerous collision is an abstract energy in the mark-making, not an instruction to add magic, combat, or chaos',
+        'Grimy dark-fantasy anime ink where scuffed black masses collide with chipped color edges and contour joins break abruptly, as if two drawings were forced together.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through scuffed ink masses colliding with chipped color edges and a few abruptly broken contour joins; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; respect the prompt palette and organize it into soot-dark neutrals with one or two sharply bounded color accents. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Soot-dark neutrals with one or two sharply bounded accents such as acid yellow or bruise violet.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; keep highlights small and directional, using value collision rather than magical beams or glowing symbols. Keep shadow detail and material transitions visible.',
+        'Small directional highlights; value collisions do the work instead of glowing magic effects.',
       texture_and_material:
-        "Preserve each material's identity; use dry soot grain, chipped pigment, and short stainlike strokes without turning marks into readable sigils. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Dry soot grain, chipped pigment and short stain-like strokes that never become sigils.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; preserve composition and subject count; concentrate mark density where existing forms meet, not in invented effects. Use the mark rhythm inside the supplied composition rather than replacing it.',
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Sorcerous collision is an abstract energy in the mark-making, not an instruction to add magic, combat, or chaos. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
-      rendering_and_quality:
-        'Use clean, stable illustrated forms and scuffed ink masses colliding with chipped color edges and a few abruptly broken contour joins; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Keep the requested framing and count; mark density concentrates where forms meet.',
+      atmosphere_and_mood: 'Cramped, volatile grime energy, a room that might ignite.',
+      rendering_and_quality: 'Controlled collision marks with every form still readable.',
       key_features:
-        'scuffed ink masses colliding with chipped color edges and a few abruptly broken contour joins; respect the prompt palette and organize it into soot-dark neutrals with one or two sharply bounded color accents; keep highlights small and directional, using value collision rather than magical beams or glowing symbols; use dry soot grain, chipped pigment, and short stainlike strokes without turning marks into readable sigils; and preserve composition and subject count; concentrate mark density where existing forms meet, not in invented effects. The five cues should read as one mark-and-value system, not as extra scene content.',
+        'scuffed ink masses; chipped color edges; broken contour joins; soot neutrals with bounded accent; stain-like strokes',
       creative_brief:
-        'Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use scuffed ink masses colliding with chipped color edges and a few abruptly broken contour joins, respect the prompt palette and organize it into soot-dark neutrals with one or two sharply bounded color accents, keep highlights small and directional, using value collision rather than magical beams or glowing symbols, and use dry soot grain, chipped pigment, and short stainlike strokes without turning marks into readable sigils; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grimy Sorcery Collision Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-070',
-    name: 'Devilman Crybaby – Neon Tragic Metamorphosis',
+    name: 'Neon Tragic Metamorphosis',
+    displayName: 'Neon Tragic Metamorphosis',
+    styleAnchors: ['Neon Tragic Metamorphosis', 'Devilman Crybaby – Neon Tragic Metamorphosis'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, franchise likeness, demon body, nude body, gore, anatomy, club scene, crowd, horror attack, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, franchise likeness, demon body, nude body, gore, anatomy, club scene, crowd, horror attack, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        "A transferable ink-led illustrated treatment built around elastic contour displacement with short magenta-cyan color smears that stretch from existing edges and snap back cleanly. For color and surface, retain the prompt's local colors while allowing acid pink, cyan, and black to press against one another in selective bands. Emotional overload is optional; keep the prompt's requested tone and never force tragedy, horror, or transformation",
+        'Elastic neon anime drawing where contours stretch like rubber into short magenta-cyan color smears and snap back, built from loose flat shapes held by thick black anchor lines.',
       subject_treatment:
-        'Preserve the requested subject, action, count, pose, expression, setting, and material identity. Restyle its contours through elastic contour displacement with short magenta-cyan color smears that stretch from existing edges and snap back cleanly; use detail selectively and keep the actual form easy to read. Add no unrequested subject or action.',
+        "Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.",
       color_and_tone:
-        "Respect the prompt's colors and emotional temperature; retain the prompt's local colors while allowing acid pink, cyan, and black to press against one another in selective bands. Keep values legible across the prompted light and dark range; do not crush midtones or dim a bright request.",
+        'Acid pink, cyan and black pressing against each other in selective bands, with local colors retained underneath.',
       lighting_and_shadow:
-        'Respect the stated light source, direction, and time; use blacklight-like color response as a drawn edge treatment, without adding smoke, fixtures, or a new nighttime setting. Keep shadow detail and material transitions visible.',
+        'Blacklight-like color response drawn only as an edge treatment, without smoke, fixtures or a night setting.',
       texture_and_material:
-        "Preserve each material's identity; combine translucent color drag with opaque ink anchors so forms remain readable and materials stay recognizable. Keep texture subordinate to form and avoid a uniform grime overlay.",
+        'Translucent color drag anchored by opaque ink, so materials stay recognizable under the smears.',
       camera_and_composition:
-        'Preserve the requested framing, perspective, subject placement, and count; preserve camera, count, action, and silhouette; let color elasticity, not invented choreography, carry the style. Use the mark rhythm inside the supplied composition rather than replacing it.',
-      atmosphere_and_mood:
-        "Follow the prompt's requested mood first. Emotional overload is optional; keep the prompt's requested tone and never force tragedy, horror, or transformation. Darkness and tension are optional tonal pressure, never a requirement to add danger or rewrite the scene.",
+        'Keep the requested camera, count and silhouette; color elasticity, not new choreography, carries the style.',
+      atmosphere_and_mood: 'Feverish emotional overload with tenderness underneath the noise.',
       rendering_and_quality:
-        'Use clean, stable illustrated forms and elastic contour displacement with short magenta-cyan color smears that stretch from existing edges and snap back cleanly; keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render drift, watermark, logo, and fake readable text.',
+        'Loose flat shapes, clean-edged smears and thick anchors; no anatomy horror.',
       key_features:
-        "elastic contour displacement with short magenta-cyan color smears that stretch from existing edges and snap back cleanly; retain the prompt's local colors while allowing acid pink, cyan, and black to press against one another in selective bands; use blacklight-like color response as a drawn edge treatment, without adding smoke, fixtures, or a new nighttime setting; combine translucent color drag with opaque ink anchors so forms remain readable and materials stay recognizable; and preserve camera, count, action, and silhouette; let color elasticity, not invented choreography, carry the style. The five cues should read as one mark-and-value system, not as extra scene content.",
+        'elastic stretched contours; magenta-cyan smears; thick black anchor lines; blacklight edge color; loose flat shapes',
       creative_brief:
-        "Apply this style after the prompt while locking its subject, action, count, pose, camera, context, and requested mood. Use elastic contour displacement with short magenta-cyan color smears that stretch from existing edges and snap back cleanly, retain the prompt's local colors while allowing acid pink, cyan, and black to press against one another in selective bands, use blacklight-like color response as a drawn edge treatment, without adding smoke, fixtures, or a new nighttime setting, and combine translucent color drag with opaque ink anchors so forms remain readable and materials stay recognizable; the prompt supplies all scene content. Do not add unrequested characters, objects, source-specific lore, readable symbols, or a default action.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Tragic Metamorphosis as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

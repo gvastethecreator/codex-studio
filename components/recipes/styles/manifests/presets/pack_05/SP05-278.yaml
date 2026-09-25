@@ -3,10 +3,10 @@ id: SP05-278
 packId: pack_05
 name: Mineral Loneliness Fracture Style
 styleAnchors:
-  - 'Mineral Loneliness Fracture Style'
-displayName: 'Mineral Loneliness Fracture'
+  - Mineral Loneliness Fracture Style
+displayName: Mineral Loneliness Fracture
 category: 4. Dark Fantasy & Seinen
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,63 +15,22 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: >-
-    A transferable ink-led illustrated treatment built around mineral-fissure contours
-    that branch sparingly and divide forms into a few clean, unequal planes. For color and surface, retain the prompt's hues, but favor chalk, cool stone, and deep
-    graphite values with a small mineral glint. Loneliness can come from sparse marks
-    and cool intervals; keep it quiet rather than automatically tragic
-  subject_treatment: >-
-    Preserve the requested subject, action, count, pose, expression, setting, and
-    material identity. Restyle its contours through mineral-fissure contours that branch
-    sparingly and divide forms into a few clean, unequal planes; use detail selectively
-    and keep the actual form easy to read. Add no unrequested subject or action.
-  color_and_tone: >-
-    Respect the prompt's colors and emotional temperature; retain the prompt's hues, but
-    favor chalk, cool stone, and deep graphite values with a small mineral glint. Keep
-    values legible across the prompted light and dark range; do not crush midtones or
-    dim a bright request.
-  lighting_and_shadow: >-
-    Respect the stated light source, direction, and time; separate planes with pale edge
-    light and quiet inner shadow; avoid turning a highlight into a crystal object. Keep
-    shadow detail and material transitions visible.
-  texture_and_material: >-
-    Preserve each material's identity; use fine dry mineral grain and crisp
-    fracture-like strokes only where the existing material can carry them. Keep texture
-    subordinate to form and avoid a uniform grime overlay.
-  camera_and_composition: >-
-    Preserve the requested framing, perspective, subject placement, and count; let open
-    value space and isolated contour breaks create visual distance within the supplied
-    framing. Use the mark rhythm inside the supplied composition rather than replacing
-    it.
-  atmosphere_and_mood: >-
-    Follow the prompt's requested mood first. Loneliness can come from sparse marks and
-    cool intervals; keep it quiet rather than automatically tragic. Darkness and tension
-    are optional tonal pressure, never a requirement to add danger or rewrite the scene.
-  rendering_and_quality: >-
-    Use clean, stable illustrated forms and mineral-fissure contours that branch
-    sparingly and divide forms into a few clean, unequal planes; keep focal edges crisp,
-    texture controlled, and dark values legible. Avoid photoreal or 3D-render drift,
-    watermark, logo, and fake readable text.
-  key_features: >-
-    mineral-fissure contours that branch sparingly and divide forms into a few clean,
-    unequal planes; retain the prompt's hues, but favor chalk, cool stone, and deep
-    graphite values with a small mineral glint; separate planes with pale edge light and
-    quiet inner shadow; avoid turning a highlight into a crystal object; use fine dry
-    mineral grain and crisp fracture-like strokes only where the existing material can
-    carry them; and let open value space and isolated contour breaks create visual
-    distance within the supplied framing. The five cues should read as one
-    mark-and-value system, not as extra scene content.
-  creative_brief: >-
-    Apply this style after the prompt while locking its subject, action, count, pose,
-    camera, context, and requested mood. Use mineral-fissure contours that branch
-    sparingly and divide forms into a few clean, unequal planes, retain the prompt's
-    hues, but favor chalk, cool stone, and deep graphite values with a small mineral
-    glint, separate planes with pale edge light and quiet inner shadow; avoid turning a
-    highlight into a crystal object, and use fine dry mineral grain and crisp
-    fracture-like strokes only where the existing material can carry them; the prompt
-    supplies all scene content. Do not add unrequested characters, objects,
-    source-specific lore, readable symbols, or a default action.
+  aesthetic: Seinen ink illustration whose contours branch like hairline fissures in slate, splitting every form into a few large unequal planes of flat chalky tone.
+  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
+  color_and_tone: Chalk white, cool slate and deep graphite carry most values; one small mica-silver glint marks the focal plane and prompt hues survive at half saturation.
+  lighting_and_shadow: Pale edge light runs along the fissure lines with quiet flat shadow inside each plane; light reads as reflected off stone, never glowing.
+  texture_and_material: Dry pumice-like grain inside the planes, crisp fracture strokes of even width, and bare paper left open between the largest tonal shards.
+  camera_and_composition: Keep the requested camera; wide margins of empty chalk-tone space make the subject sit small and isolated inside the requested framing.
+  atmosphere_and_mood: Quiet, cold loneliness carried by sparse marks and long empty intervals, never outright tragedy.
+  rendering_and_quality: Crisp planar ink drawing with fissure contours and flat chalk fills, no soft gradients; always illustrated, never a photographed crystal or stone.
+  key_features: branching fissure contours; few unequal flat planes; chalk, slate and graphite values; single mica-silver glint; wide empty margins
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mineral Loneliness Fracture Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - photographic still-life object
+  - photoreal scene
+  - repeated hooded dark-haired swordsman
+  - franchise character likeness
+  - readable text
   - realistic
   - 3d render
   - photo
@@ -100,15 +59,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-278.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, empty abstract-only field, ice palace
-    corridor, weapon, gore, readable symbol, splatter-only horror, photoreal grime, cheap jump
-    scare, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, empty abstract-only field, ice palace corridor, weapon, gore, readable symbol, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

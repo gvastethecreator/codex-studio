@@ -3,10 +3,10 @@ id: SP05-277
 packId: pack_05
 name: Rusted Neon Adolescent Dread Style
 styleAnchors:
-  - 'Rusted Neon Adolescent Dread Style'
-displayName: 'Rusted Neon Adolescent Dread'
+  - Rusted Neon Adolescent Dread Style
+displayName: Rusted Neon Adolescent Dread
 category: 4. Dark Fantasy & Seinen
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,69 +15,22 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: >-
-    A transferable ink-led illustrated treatment built around irregular scraped strokes
-    with slight contour offsets, alternating rust-red marks and restrained cool neon
-    edge slips. For color and surface, respect the prompt colors and pair
-    oxidized orange-red with a contained violet or cyan note over stable midtones.
-    Adolescent dread may be tender, energetic, or absent according to the prompt; avoid
-    turning it into a forced urban threat
-  subject_treatment: >-
-    Preserve the requested subject, action, count, pose, expression, setting, and
-    material identity. Restyle its contours through irregular scraped strokes with
-    slight contour offsets, alternating rust-red marks and restrained cool neon edge
-    slips; use detail selectively and keep the actual form easy to read. Add no
-    unrequested subject or action.
-  color_and_tone: >-
-    Respect the prompt's colors and emotional temperature; respect the prompt colors and
-    pair oxidized orange-red with a contained violet or cyan note over stable midtones.
-    Keep values legible across the prompted light and dark range; do not crush midtones
-    or dim a bright request.
-  lighting_and_shadow: >-
-    Respect the stated light source, direction, and time; place colored rim accents only
-    on existing edges that can catch them; preserve ambient value and avoid an invented
-    neon source. Keep shadow detail and material transitions visible.
-  texture_and_material: >-
-    Preserve each material's identity; mix dry scraped pigment with tiny oxidized
-    specks, never distressing every surface or changing its material identity. Keep
-    texture subordinate to form and avoid a uniform grime overlay.
-  camera_and_composition: >-
-    Preserve the requested framing, perspective, subject placement, and count; keep the
-    original composition intact and use broken stroke intervals to add unease inside
-    existing negative space. Use the mark rhythm inside the supplied composition rather
-    than replacing it.
-  atmosphere_and_mood: >-
-    Follow the prompt's requested mood first. Adolescent dread may be tender, energetic,
-    or absent according to the prompt; avoid turning it into a forced urban threat.
-    Darkness and tension are optional tonal pressure, never a requirement to add danger
-    or rewrite the scene.
-  rendering_and_quality: >-
-    Use clean, stable illustrated forms and irregular scraped strokes with slight
-    contour offsets, alternating rust-red marks and restrained cool neon edge slips;
-    keep focal edges crisp, texture controlled, and dark values legible. Avoid photoreal
-    or 3D-render drift, watermark, logo, and fake readable text.
-  key_features: >-
-    irregular scraped strokes with slight contour offsets, alternating rust-red marks
-    and restrained cool neon edge slips; respect the prompt colors and pair oxidized
-    orange-red with a contained violet or cyan note over stable midtones; place colored
-    rim accents only on existing edges that can catch them; preserve ambient value and
-    avoid an invented neon source; mix dry scraped pigment with tiny oxidized specks,
-    never distressing every surface or changing its material identity; and keep the
-    original composition intact and use broken stroke intervals to add unease inside
-    existing negative space. The five cues should read as one mark-and-value system, not
-    as extra scene content.
-  creative_brief: >-
-    Apply this style after the prompt while locking its subject, action, count, pose,
-    camera, context, and requested mood. Use irregular scraped strokes with slight
-    contour offsets, alternating rust-red marks and restrained cool neon edge slips,
-    respect the prompt colors and pair oxidized orange-red with a contained violet or
-    cyan note over stable midtones, place colored rim accents only on existing edges
-    that can catch them; preserve ambient value and avoid an invented neon source, and
-    mix dry scraped pigment with tiny oxidized specks, never distressing every surface
-    or changing its material identity; the prompt supplies all scene content. Do not add
-    unrequested characters, objects, source-specific lore, readable symbols, or a
-    default action.
+  aesthetic: Scratchy seinen anime drawing of scraped, slightly offset strokes that alternate rust-red oxidized marks with thin cool neon edge slips, like a poster scraped off a metal shutter.
+  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
+  color_and_tone: Oxidized orange-red and rust brown over stable midtones, with contained violet or cyan slips on the edges.
+  lighting_and_shadow: Colored rim accents sit only on edges that could catch them; ambient light stays low and even.
+  texture_and_material: Dry scraped pigment, tiny oxidized specks and palette-knife scrapes in the backgrounds.
+  camera_and_composition: Keep the requested framing; broken stroke intervals add unease inside the existing negative space.
+  atmosphere_and_mood: Restless young-adult dread or tenderness, raw and nervous.
+  rendering_and_quality: Scraped marks stay controlled while faces and key forms remain clean and readable.
+  key_features: scraped offset strokes; rust red with neon violet or cyan slips; oxidized specks; palette-knife scrapes; nervous stroke rhythm
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rusted Neon Adolescent Dread Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - photographic still-life object
+  - photoreal scene
+  - repeated hooded dark-haired swordsman
+  - franchise character likeness
+  - readable text
   - realistic
   - 3d render
   - photo
@@ -100,14 +53,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-277.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed
-    canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

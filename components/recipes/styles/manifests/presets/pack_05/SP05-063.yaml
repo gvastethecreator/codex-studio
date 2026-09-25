@@ -3,10 +3,10 @@ id: SP05-063
 packId: pack_05
 name: Crimson Gothic Authority Style
 styleAnchors:
-  - 'Crimson Gothic Authority Style'
-displayName: 'Crimson Gothic Authority'
+  - Crimson Gothic Authority Style
+displayName: Crimson Gothic Authority
 category: 4. Dark Fantasy & Seinen
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,67 +15,22 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: >-
-    A transferable ink-led illustrated treatment built around hard black and crimson
-    value blocks edged by fine tapered linework that decorates only contours already
-    present. For color and surface, keep the requested colors while using
-    crimson, ink black, and restrained pale contrast as a hierarchy, not a fixed
-    palette. Authority can feel composed or theatrical through hierarchy alone and must
-    follow the prompt's emotional direction
-  subject_treatment: >-
-    Preserve the requested subject, action, count, pose, expression, setting, and
-    material identity. Restyle its contours through hard black and crimson value blocks
-    edged by fine tapered linework that decorates only contours already present; use
-    detail selectively and keep the actual form easy to read. Add no unrequested subject
-    or action.
-  color_and_tone: >-
-    Respect the prompt's colors and emotional temperature; keep the requested colors
-    while using crimson, ink black, and restrained pale contrast as a hierarchy, not a
-    fixed palette. Keep values legible across the prompted light and dark range; do not
-    crush midtones or dim a bright request.
-  lighting_and_shadow: >-
-    Respect the stated light source, direction, and time; use crisp controlled
-    highlights and clean shadow edges without introducing a glowing symbol or
-    architectural light source. Keep shadow detail and material transitions visible.
-  texture_and_material: >-
-    Preserve each material's identity; combine flat opaque pigment with sparse etched
-    detail; avoid filling quiet areas with ornament. Keep texture subordinate to form
-    and avoid a uniform grime overlay.
-  camera_and_composition: >-
-    Preserve the requested framing, perspective, subject placement, and count; preserve
-    existing balance and viewpoint; let color-block proportions, not imposed symmetry,
-    carry authority. Use the mark rhythm inside the supplied composition rather than
-    replacing it.
-  atmosphere_and_mood: >-
-    Follow the prompt's requested mood first. Authority can feel composed or theatrical
-    through hierarchy alone and must follow the prompt's emotional direction. Darkness
-    and tension are optional tonal pressure, never a requirement to add danger or
-    rewrite the scene.
-  rendering_and_quality: >-
-    Use clean, stable illustrated forms and hard black and crimson value blocks edged by
-    fine tapered linework that decorates only contours already present; keep focal edges
-    crisp, texture controlled, and dark values legible. Avoid photoreal or 3D-render
-    drift, watermark, logo, and fake readable text.
-  key_features: >-
-    hard black and crimson value blocks edged by fine tapered linework that decorates
-    only contours already present; keep the requested colors while using crimson, ink
-    black, and restrained pale contrast as a hierarchy, not a fixed palette; use crisp
-    controlled highlights and clean shadow edges without introducing a glowing symbol or
-    architectural light source; combine flat opaque pigment with sparse etched detail;
-    avoid filling quiet areas with ornament; and preserve existing balance and
-    viewpoint; let color-block proportions, not imposed symmetry, carry authority. The
-    five cues should read as one mark-and-value system, not as extra scene content.
-  creative_brief: >-
-    Apply this style after the prompt while locking its subject, action, count, pose,
-    camera, context, and requested mood. Use hard black and crimson value blocks edged
-    by fine tapered linework that decorates only contours already present, keep the
-    requested colors while using crimson, ink black, and restrained pale contrast as a
-    hierarchy, not a fixed palette, use crisp controlled highlights and clean shadow
-    edges without introducing a glowing symbol or architectural light source, and
-    combine flat opaque pigment with sparse etched detail; avoid filling quiet areas
-    with ornament; the prompt supplies all scene content. Do not add unrequested
-    characters, objects, source-specific lore, readable symbols, or a default action.
+  aesthetic: Gothic seinen poster ink with hard black and crimson color blocks edged by fine tapered hairlines that decorate only existing contours; flat and heraldic.
+  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
+  color_and_tone: Crimson, ink black and pale ivory in a strict three-value hierarchy.
+  lighting_and_shadow: Crisp controlled highlights and clean hard shadow edges, without glowing symbols or shafts of light.
+  texture_and_material: Flat opaque gouache-like pigment with sparse etched detail on the edges only.
+  camera_and_composition: Keep the requested framing; large color-block proportions carry authority rather than forced symmetry.
+  atmosphere_and_mood: Composed, theatrical command held with cold, upright dignity.
+  rendering_and_quality: Hard-edged blocks, hairline edge ornament and no gradients at all.
+  key_features: flat crimson and black blocks; tapered hairline edge ornament; ivory highlights; three-value hierarchy; hard shadow edges
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crimson Gothic Authority Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - photographic still-life object
+  - photoreal scene
+  - repeated hooded dark-haired swordsman
+  - franchise character likeness
+  - readable text
   - realistic
   - 3d render
   - photo
@@ -106,15 +61,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-063.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, vampire franchise likeness, Nazi/fascist insignia, guns, gore,
-    bite scene, religious icon copy, readable crest, blade-first pose, splatter-only horror,
-    photoreal grime, cheap jump scare, fixed canon character, title scene replication, required
-    source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, vampire franchise likeness, Nazi/fascist insignia, guns, gore, bite scene, religious icon copy, readable crest, blade-first pose, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

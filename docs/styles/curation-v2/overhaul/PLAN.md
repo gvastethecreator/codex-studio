@@ -80,6 +80,7 @@ Pack order, skipping pack_12 and pack_17: pack_01 → pack_24, then pack_12, pac
 | pack_04::5. Ink And Print                    | done  | done | done   | 0 (already 20)    | pending (local)     | see git log        |
 | pack_05::1. Modern Shonen & Action           | done  | done | done   | 0 (already 40)    | pending (local)     | see git log        |
 | pack_05::2. Mecha & Cyberpunk                | done  | done | done   | 0 (already 30)    | pending (local)     | see git log        |
+| pack_05::4. Dark Fantasy & Seinen            | done  | done | done   | 0 (already 30)    | pending (local)     | see git log        |
 
 ## Open risks
 
