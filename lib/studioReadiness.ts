@@ -35,7 +35,8 @@ function resolveLocalCodexSessionDetail(session: LocalCodexSessionResponse | nul
     case 'chatgpt_login_required':
       return {
         ok: false,
-        detail: 'Run `codex login` and choose ChatGPT before starting local Codex turns.',
+        detail:
+          'Sign in from Studio Settings and use the ChatGPT provider. Run `codex login` only for an explicit Codex app-server job.',
       };
     case 'api_key_not_supported':
       return {
@@ -100,7 +101,7 @@ function buildDescription(nextAction: StudioReadinessAction, runtimeLabel: strin
     case 'start-app-server':
       return 'The backend is reachable, but the App-Server Lifecycle still needs to start `codex app-server`.';
     case 'login-chatgpt':
-      return 'Sign in from Studio Settings, or run `codex login` and choose ChatGPT.';
+      return 'Sign in from Studio Settings and use the ChatGPT provider. Use `codex login` only for an explicit Codex app-server job.';
     case 'fix-library':
       return 'The Studio Library is missing folders or write access, so Local Assets cannot be persisted safely.';
     case 'retry':

@@ -16,9 +16,9 @@ Bring a Codex Studio checkout to a runnable local state:
 - `.env.local` bootstrap present and sane
 - Studio Library initialized outside the repo
 - SQLite migrations, default library, and default workspace created
-- Codex CLI available, app-server-capable, and authenticated with ChatGPT login
-- `codex app-server` reachable through the backend
+- Studio Settings Sign in present, with the ChatGPT provider selected for image jobs
 - UI and backend start cleanly
+- Codex CLI and `codex app-server` only when the user explicitly wants the Codex provider
 - closeout checks run once
 
 ## Onboarding loop
@@ -31,12 +31,14 @@ The product loop is detect, consent, mutate, stream, re-validate. One primary CT
 
 1. Missing Bun: open <https://bun.sh/docs/installation>. Never silent-install Bun.
 2. Missing Codex CLI: open <https://github.com/openai/codex>. Never silent-install Codex.
-3. ChatGPT login missing: Sign in from Studio Settings, or stop and ask the user to run `codex login`
-   and choose ChatGPT. Login is not bundled.
+3. ChatGPT login missing: Sign in from Studio Settings and select the ChatGPT provider.
+   Login is not bundled. Run `codex login` only when the user explicitly wants the Codex
+   app-server route.
 4. Studio Library or Bootstrap Configuration missing: in-app Setup, or
    `bun run studio:onboard --setup`, after explicit consent.
-5. Everything else ready except Codex Product Runtime: start app-server through the
-   local backend.
+5. Everything else ready except Codex Product Runtime, and Studio ChatGPT Sign in is not
+   ready: start app-server through the local backend. Leave app-server stopped when
+   ChatGPT HTTP is the selected image route.
 6. Ready: Open Studio.
 
 Ask Codex is an extra path when Codex CLI exists. Grok Imagine is an optional provider
@@ -102,8 +104,7 @@ For UI onboarding changes, also read:
    - Check `GET /api/health` and `/api/codex/session`.
    - Use `/api/app-server/start` or the UI button to start `codex app-server`
      when backend health says the backend is reachable but app-server is down.
-   - If ChatGPT auth is missing, stop and ask the user to Sign in from Studio Settings, or run `codex login`
-     and choose ChatGPT. Do not fake readiness.
+   - If ChatGPT auth is missing, stop and ask the user to Sign in from Studio Settings, then select the ChatGPT provider. Do not run `codex login` or start app-server unless the user explicitly wants the Codex route. Do not fake readiness.
 
 4. Diagnose failures.
    - For missing Codex CLI, report PATH/install issue and exact failed command.
@@ -131,4 +132,4 @@ End with:
 - setup actions performed
 - commands run and pass or fail result
 - current readiness summary from `/api/health` and `/api/codex/session` when reachable
-- any remaining user-only actions, such as Studio Settings Sign in or interactive `codex login`
+- any remaining user-only actions, such as Studio Settings Sign in. Mention interactive `codex login` only when the Codex app-server route was requested.

@@ -150,6 +150,8 @@ describe('buildStudioReadinessSnapshot', () => {
       isReady: false,
       nextAction: 'login-chatgpt',
       title: 'Sign in with ChatGPT',
+      description:
+        'Sign in from Studio Settings and use the ChatGPT provider. Use `codex login` only for an explicit Codex app-server job.',
     });
   });
 

@@ -153,8 +153,8 @@ export function buildOnboardingProbe(facts: OnboardingFacts): OnboardingProbe {
         facts.chatgptLoggedIn,
         'ChatGPT login',
         facts.chatgptLoggedIn
-          ? 'ChatGPT login is ready for Studio image jobs.'
-          : 'Sign in from Studio Settings, or run `codex login` and choose ChatGPT.',
+          ? 'ChatGPT login is ready. Select the ChatGPT provider so image jobs stay on HTTP.'
+          : 'Sign in from Studio Settings and use the ChatGPT provider. Use `codex login` only for an explicit Codex app-server job.',
         null,
       ),
       check(

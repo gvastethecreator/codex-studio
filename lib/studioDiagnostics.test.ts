@@ -258,6 +258,8 @@ describe('studioDiagnostics', () => {
         key: 'localCodexSession',
         value: 'Login Required',
         tone: 'warning',
+        detail:
+          'Sign in from Studio Settings and use the ChatGPT provider. Use `codex login` only for an explicit Codex app-server job.',
       }),
     );
   });

@@ -207,13 +207,7 @@ Current concrete adapters:
   The official local Comfy MCP/CLI can inspect nodes, templates, queue, and hardware before configuring a workflow.
   Pin CLI inspection to `--where local`; Studio itself talks directly to the configured runtime and does not start it.
 
-### Planned specialized Comfy workflows
-
-The current preparation uses one configured API workflow template. `workflowPreset` describes the task; it does not select a different template. Specialized workflow links and live validation are deferred to the next integration phase.
-
-That phase should bind a Studio recipe to a named, versioned Comfy workflow. The binding must define supported inputs, node parameter mappings, required models and custom nodes, and expected output nodes. Keep the task provider-independent and place the Comfy workflow reference in provider input. Capture the selected workflow version with the accepted job so later edits cannot change its execution or recovery.
-
-Use the local MCP/CLI to inspect the selected runtime and check dependencies before enabling a binding. Studio should show missing requirements before submission and continue to execute through its provider adapter, durable job identity, and Catalog finalization. Workflow selection, node installation, model downloads, and real generation are not part of the completed preparation.
+One configured API workflow template is the current Comfy contract. `workflowPreset` describes the task. It does not select a different template.
 
 Job observers use `/api/jobs/{id}/status` to reconcile attachment, reconnection, and missed events.
 This compact read does not load prompts, assets, or transcripts. Observation failures stay separate

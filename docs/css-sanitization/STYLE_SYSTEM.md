@@ -51,6 +51,4 @@ The style preview intentionally transitions its anchored `top` and `left` coordi
 
 ## Dependencies and review boundary
 
-Installed versions checked on 2026-09-20: Tailwind CSS and `@tailwindcss/vite` 4.3.3, `tailwind-merge` 3.6.0, GSAP 3.15.0. Keep each for its distinct current role. This CSS audit did not update packages, change source scanning, or claim advisory clearance. Vite/Tailwind generate one app CSS chunk; measure emitted and compressed sizes after a production build before claiming byte savings.
-
-The 2026-09-20 audit parsed seven CSS sources and reported 86 static candidates with 214 host-language coverage gaps. Repeated selectors, shared blocks, old `!important` declarations and `will-change` signals are not proof of dead or broken CSS. There were no helper-approved adjacent duplicate declarations to autofix. Preserve lazy-route, pseudo-state and JS-generated consumers until a bounded future review proves removal safe.
+Tailwind CSS, `@tailwindcss/vite`, `tailwind-merge`, and GSAP each keep a distinct role. Measure emitted and compressed CSS after a production build before claiming byte savings. Repeated selectors, shared blocks, `!important`, and `will-change` are not proof of dead or broken CSS. Preserve lazy-route, pseudo-state, and JS-generated consumers until a bounded review proves removal is safe.

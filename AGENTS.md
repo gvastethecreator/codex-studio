@@ -11,9 +11,13 @@ If the user asks for setup, getting started, first run, or onboarding, or if the
 3. Run `bun install` only when missing or stale dependencies block setup.
 4. Run `bun run studio:init` when `.env.local`, the Studio Library, SQLite state, the default library, or the default workspace is missing.
 5. Start the local runtime with `bun run dev` when needed, then confirm the UI and backend are healthy.
-6. If ChatGPT auth is missing, stop. Ask the user to Sign in from Studio Settings, or run `codex login` and choose ChatGPT.
-7. Do not block setup on an exact Bun or Codex release when readiness, supported scripts, app-server support, and Local Codex Session are healthy.
+6. If ChatGPT auth is missing, stop. Ask the user to Sign in from Studio Settings. Do not run `codex login` unless the user explicitly wants the Codex app-server route.
+7. Do not block setup on an exact Bun or Codex release. Studio ChatGPT Sign in is enough for recommended image jobs. App-server support and Local Codex Session matter only for the Codex provider.
 8. Close with one validation pass and a short readiness summary.
+
+## Image jobs
+
+Use the ChatGPT provider after Studio Settings Sign in. Do not start `codex app-server` or select the Codex provider for ordinary image jobs. Codex app-server jobs create Codex turns and spend Codex usage. ChatGPT HTTP does not create those turns. It can still hit its own HTTP usage limit. It is not a separate subscription and not API credits. If Studio Settings still has the Codex provider selected, switch the next image job to ChatGPT before generating.
 
 ## Commands
 

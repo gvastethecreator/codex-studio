@@ -120,7 +120,15 @@ describe('buildOnboardingProbe', () => {
     expect(probe.checks.find((check) => check.id === 'app_server')).toMatchObject({ ready: true });
     expect(probe.checks.find((check) => check.id === 'chatgpt_login')).toMatchObject({
       ready: true,
+      detail: 'ChatGPT login is ready. Select the ChatGPT provider so image jobs stay on HTTP.',
     });
+  });
+
+  it('points a missing ChatGPT login at Studio Settings Sign in', () => {
+    const probe = buildOnboardingProbe({ ...readyFacts, chatgptLoggedIn: false });
+    expect(probe.checks.find((check) => check.id === 'chatgpt_login')?.detail).toBe(
+      'Sign in from Studio Settings and use the ChatGPT provider. Use `codex login` only for an explicit Codex app-server job.',
+    );
   });
 });
 

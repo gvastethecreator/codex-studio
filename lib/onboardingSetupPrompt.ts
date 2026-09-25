@@ -63,7 +63,7 @@ export function buildCodexStudioSetupPrompt({
   return [
     `Use the repo-local skill at \`${CODEX_STUDIO_SETUP_SKILL_PATH}\` to complete Codex Studio setup.`,
     '',
-    'Goal: make this checkout ready for local image generation with the Codex Product Runtime.',
+    'Goal: make this checkout ready for local image generation through Studio Settings Sign in and the ChatGPT provider. Do not spend Codex app-server usage on ordinary image jobs.',
     '',
     'Current snapshot:',
     `- Project root: ${projectRoot}`,
@@ -88,7 +88,7 @@ export function buildCodexStudioSetupPrompt({
     '- Preserve dirty worktree changes you did not make.',
     '- Keep Provider Secrets out of SQLite, catalog metadata, logs, screenshots, docs, and committed files.',
     '- Do not delete, move, compact, or rewrite Studio Library data unless the user explicitly confirms it.',
-    '- Never silent-install Bun or Codex CLI. ChatGPT login is Studio Settings Sign in, or a user-only `codex login` step.',
+    '- Never silent-install Bun or Codex CLI. Recommended image login is Studio Settings Sign in, then the ChatGPT provider. `codex login` is only for an explicit Codex app-server job.',
     '- Default Studio Library is Codex Studio in the user home unless STUDIO_LIBRARY_DIR is already set. Do not treat Preferred Output Path as the generate destination.',
     '- Use Bun scripts from package.json and run broad checks only at closeout.',
     '- Treat Bun and Codex command output as diagnostic metadata only. Do not block setup on an exact tool release when app readiness, supported scripts, app-server support, and Local Codex Session are healthy.',
@@ -97,8 +97,8 @@ export function buildCodexStudioSetupPrompt({
     '1. Audit app readiness: git status, supported Bun scripts, Codex Runtime Doctor capability, ports, .env.local, Studio Library, and `/api/health` when reachable.',
     '2. If Studio Library or Bootstrap Configuration is missing, run in-app Setup or `bun run studio:onboard` after consent. Then run or repair `bun run studio:init` if local bootstrap files or library folders are still missing; keep existing .env.local values unless they are clearly invalid.',
     '3. Verify the local backend and Codex Product Runtime with `bun run dev` or separate backend/UI commands as needed.',
-    '4. Verify ChatGPT auth through Studio Settings Sign in or `/api/codex/session`. If login requires interactive auth, stop and give Settings Sign in or the exact `codex login` action for the user.',
-    '5. Start or verify `codex app-server` through the local backend when possible; avoid leaving orphaned processes.',
+    '4. Verify ChatGPT auth through Studio Settings Sign in. If login requires interactive auth, stop and give Settings Sign in. Do not run `codex login` unless the user explicitly wants the Codex app-server route.',
+    '5. Leave `codex app-server` stopped for ChatGPT HTTP image jobs. Start it through the local backend only when the user selects the Codex provider, and avoid orphaned processes.',
     '6. Run closeout once: `bun run test`, `bun run check`, and `bun run build`, or report exact blockers and risk.',
     '7. Finish with changed files, commands run, current health/readiness, and remaining user-only actions.',
   ].join('\n');

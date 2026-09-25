@@ -97,7 +97,7 @@ Sign in from Studio Settings for the ChatGPT HTTP route, or run `codex login` an
 
 Studio ChatGPT Sign in uses the Codex device-code flow. OpenAI does not document this as a supported Studio API. The provider selector separates ChatGPT HTTP from Codex app-server and captures the provider contract when the job is accepted. ChatGPT uses the existing credential store, so splitting providers does not require another login. If the selected route is unavailable, Studio blocks the job with the route-specific setup action instead of silently switching accounts.
 
-Luna Reserve belongs to the signed-in Codex app-server session. When the regular Codex bucket is exhausted, select `GPT-Reserve` and the desired reasoning mode, such as `MAX`. ChatGPT uses a separate HTTP execution path. This separation does not establish independent subscription quotas, and does not provide public OpenAI API credits. An API-key route requires separate OpenAI API credentials and billing.
+Luna Reserve belongs to the signed-in Codex app-server session. When the regular Codex bucket is exhausted, select `GPT-Reserve` and the desired reasoning mode, such as `MAX`. Recommended image jobs use Studio Settings Sign in and the ChatGPT provider instead. That HTTP path does not create Codex turns, so it does not spend the Codex app-server usage bucket. It can still hit the ChatGPT HTTP usage limit. This separation does not establish an independent subscription quota, and does not provide public OpenAI API credits. An API-key route requires separate OpenAI API credentials and billing.
 
 ### ChatGPT HTTP generation is rejected
 

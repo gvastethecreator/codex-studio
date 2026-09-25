@@ -107,7 +107,8 @@ export function buildStudioDiagnosticsSnapshot({
           : localCodexSession.reason === 'chatgpt_login_required'
             ? {
                 value: 'Login Required',
-                detail: 'Run `codex login` and choose ChatGPT before running local image tasks.',
+                detail:
+                  'Sign in from Studio Settings and use the ChatGPT provider. Use `codex login` only for an explicit Codex app-server job.',
                 tone: 'warning' as const,
               }
             : localCodexSession.reason === 'api_key_not_supported'

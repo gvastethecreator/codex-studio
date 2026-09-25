@@ -13,11 +13,12 @@ Codex Studio moves toward a polished open-source preview. It stays local-first, 
 ## What works today
 
 - Local assets, logs, transcripts, and SQLite state live in a Studio Library outside the repo.
-- The main flow runs through `codex app-server` and does not need `OPENAI_API_KEY`.
+- ChatGPT image jobs use subscription HTTP. Codex jobs use local `codex app-server`. Neither path needs `OPENAI_API_KEY`.
 - Jobs, events, transcripts, and catalog entries are traceable.
 - The browser shows Catalog Entries and one backend-owned Persistent Job lifecycle.
 - Generation Tasks and Generation Providers are separate concepts.
-- Optional Grok Imagine jobs reuse the signed-in Grok Build CLI. Codex stays the default runtime. Styles supports both providers.
+- Recommended image jobs use ChatGPT HTTP after Studio Settings Sign in, so they do not spend Codex app-server usage.
+- Optional Grok Imagine can use authenticated xAI HTTP or the signed-in Grok Build CLI. Codex stays available when that provider is selected. Home and Styles support ChatGPT, Codex, Grok, Google, and Antigravity.
 - Recipe Modules and Style Preset Manifests are the durable authoring surface.
 
 ## Phases

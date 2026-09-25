@@ -50,11 +50,13 @@ You need:
 - For Codex app-server: Codex CLI from <https://github.com/openai/codex> with `codex login`.
 - A modern browser
 
+Use Studio Settings Sign in and the ChatGPT provider for image jobs. Those jobs use subscription HTTP and do not create Codex turns, so they do not spend the Codex app-server usage bucket. They can still reach the ChatGPT HTTP usage limit. This path is not a second subscription and not API credits.
+
 The first-run surface is a detect, consent, mutate, stream, re-validate loop. One primary button follows this order:
 
 1. Missing Bun: open the official Bun installer.
 2. Missing Codex CLI and no Studio ChatGPT Sign in: open the Codex install docs.
-3. Login missing: use Studio Settings Sign in for ChatGPT HTTP, or open a visible `codex login` terminal for Codex app-server.
+3. Login missing: use Studio Settings Sign in for ChatGPT HTTP. Open a visible `codex login` terminal only for an explicit Codex app-server job.
 4. Studio Library or Bootstrap Configuration missing: in-app Setup, or `bun run studio:onboard --setup`.
 5. Everything else ready except Codex Product Runtime, and Studio ChatGPT Sign in is not ready: Start app-server.
 6. Ready: Open Studio.
@@ -148,7 +150,7 @@ If you use optional external adapters, keep Provider Secrets in backend environm
 
 Grok Build CLI login stays under `GROK_HOME`. Antigravity owns its CLI login and artifacts. Studio Sign in tokens stay in the current user's private app-data folder.
 
-Use the provider control in the top Command Center to switch the next image job between ChatGPT, Codex, Grok, Google, and Antigravity. The control shows runtime readiness. It stores the choice in Studio Settings. Deeper diagnostics stay in the same menu. Selecting ChatGPT shows its existing Studio Sign in; selecting Codex shows local runtime readiness. A connected session confirms authentication, not available quota.
+Use the provider control in the top Command Center to switch the next image job between ChatGPT, Codex, Grok, Google, and Antigravity. Choose ChatGPT for ordinary image jobs. The control shows runtime readiness and stores the choice in Studio Settings. Deeper diagnostics stay in the same menu. Selecting ChatGPT shows its existing Studio Sign in; selecting Codex shows local runtime readiness. A connected session confirms authentication, not available quota.
 
 ## Useful commands
 

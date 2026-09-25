@@ -11,8 +11,9 @@ Canonical terms live in `CONTEXT.md`.
 3. Automated setup must use supported repo commands: `bun install` when needed, `bun run studio:init`, `bun run dev`, `/api/health`, `/api/codex/session`, and `/api/app-server/start`.
 4. If Codex CLI path, diagnostic metadata, or app-server support is unclear, run `bun run runtime:doctor`.
    Capability and app readiness decide setup, not an exact tool release.
-5. If ChatGPT login is missing, stop with the exact action `codex login`.
-   Do not mark readiness complete without a real session.
+5. If ChatGPT Sign in is missing, stop and ask the user to Sign in from Studio Settings.
+   Then select the ChatGPT provider. Do not mark readiness complete without that session.
+   Do not run `codex login` or start app-server unless the user explicitly wants the Codex provider.
 6. Keep Provider Secrets out of SQLite, catalog metadata, logs, screenshots, docs, and committed files.
 7. Close with `bun run test`, `bun run check`, and `bun run build`.
    For onboarding or frontend changes, also add visual verification.

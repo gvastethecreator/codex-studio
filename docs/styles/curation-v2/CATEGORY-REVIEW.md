@@ -2,7 +2,7 @@
 
 Generated from `scripts/style-curation/category-reviews.json` and current source manifests.
 
-**Scope:** source/text decisions covering 1,775 presets, including legacy categories, authored studies and the imported atlases. Each entry separates editorial state from cross-subject image validation. Representative evidence describes the source; generated cards alone do not certify transfer across subjects. Implementation details are recorded in README.md.
+**Scope:** source/text decisions covering 1,805 presets, including legacy categories, authored studies and the imported atlases. Each entry separates editorial state from cross-subject image validation. Representative evidence describes the source; generated cards alone do not certify transfer across subjects. Implementation details are recorded in README.md.
 
 Types: style = visual language; modifier = scoped treatment; profile = deliberate output/camera format; theme = content/design/world direction; mixed = individual presets need separation.
 
@@ -1246,7 +1246,7 @@ Evidence [SP17-073](../../../components/recipes/styles/manifests/presets/pack_17
 
 ## pack_17 / 2. Dungeon Zine & Risograph Prints
 
-**Display:** Zine reproduction · **Scope:** mixed · **Presets:** 11
+**Display:** Zine reproduction · **Scope:** mixed · **Presets:** 26
 **Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Print media are tied to dungeon, necromancy and monster-manual content.
@@ -1259,7 +1259,7 @@ Evidence [SP17-018](../../../components/recipes/styles/manifests/presets/pack_17
 
 ## pack_17 / 3. Ink, Tarot & Bestiary Plates
 
-**Display:** Ink & plate formats · **Scope:** mixed · **Presets:** 18
+**Display:** Ink & plate formats · **Scope:** mixed · **Presets:** 33
 **Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Tarot, bestiary and icon layouts are mixed with reusable ink techniques.
