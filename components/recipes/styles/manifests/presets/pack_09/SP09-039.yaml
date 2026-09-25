@@ -3,7 +3,7 @@ id: SP09-039
 packId: pack_09
 name: Frozen/Frosted
 category: 4. Tactile Surfaces
-version: 1
+version: 2
 supportedTasks:
   - texture_generate
   - image_generate
@@ -13,59 +13,38 @@ tags:
   - texture-and-materiality
   - tactile-surfaces
 visualDna:
-  aesthetic: >-
-    Frozen/Frosted makes hand-feel and pressure visible across the image: start from Freezer burn,
-    Crystalline, and Surface buildup, then turn touch, softness, pile, fiber density, nap direction,
-    compression, and hand-feel into portable surface behavior rather than a literal material sample.
-  subject_treatment: >-
-    Transform any prompt subject through Ice crystals: preserve identity and pose while letting
-    forms compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile,
-    surface breakup, thickness, contact marks, and detail scale.
-  color_and_tone: >-
-    Use White, Blue as the material palette, with controlled value separation, local color
-    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
-    texture.
-  lighting_and_shadow: >-
-    Let Sparkle define the light response: highlights, occlusion, translucency, specular scatter,
-    matte falloff, or rim behavior should reveal Frozen/Frosted without hiding the prompt subject.
-  texture_and_material: >-
-    Render Crystalline through fiber structure, tactile depth, soft occlusion, fuzz, pile direction,
-    and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or surface
-    tension coherent across the whole image.
-  camera_and_composition: >-
-    Compose around Surface buildup as reusable material rhythm: macro-friendly for texture tasks,
-    but able to wrap objects, figures, environments, and props without forcing one sample view.
-  atmosphere_and_mood: >-
-    Keep the mood Freezing, preserved by using physical touch, comfort, irritation, warmth, dryness,
-    and surface softness; the material should color the scene's feeling while preserving the user's
-    requested subject and setting.
-  rendering_and_quality: >-
-    Finish with Cold, winter material clarity: physically coherent reflectance, clean contact
-    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
-    overlay.
-  key_features: Freezer burn; Ice crystals; Crystalline; Sparkle; Surface buildup
-  creative_brief: >-
-    Route any subject through Frozen/Frosted as a transferable tactile-surface visual system while
-    preserving the prompt's subject, action, and setting. Compose the crystalline invasion of frost
-    where ice crystals bloom in fern-like dendrites across surfaces, each branch a work of frozen
-    mathematics growing outward from nucleation points. The surface must sparkle with the
-    brittleness of extreme cold, white and blue whispering the language of winter across every
-    crystalline edge. Capture the moment water becomes architecture. Use Frozen/Frosted as portable
-    surface/render behavior over any input: map its texture, light response, edge wear, color
-    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample,
-    macro tile, wall, landscape, source object, or scene where the material naturally appears.
+  aesthetic: 'Frosted: a crust of feathery hoarfrost crystals growing over the target''s surfaces.'
+  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: hoarfrost crystals grow in feathery spikes over the target, thicker on edges.'
+  color_and_tone: White and pale blue frost over darker surfaces, kept on the material while the rest of the scene keeps its own palette.
+  lighting_and_shadow: Cold backlight sparkling on crystals, chosen to reveal how the material reflects, absorbs or transmits light.
+  texture_and_material: Feathery hoarfrost needles and rime crust, at a believable physical scale relative to the target.
+  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.
+  atmosphere_and_mood: Cold, crisp, silent and delicate, carried by the material itself rather than by added props.
+  rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
+  key_features: feathery hoarfrost needles; rime crust; cold sparkle
+  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Frozen/Frosted as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
 avoidRules:
+  - material applied to the background instead of the target
+  - unrequested sample object or habitat
+  - readable text
+  - logo
+  - muddy noisy texture
   - melted
   - wet
   - wrong material
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-039.webp
 attributes:
-  negativePrompt: melted, wet, wrong material, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, melted, wet, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

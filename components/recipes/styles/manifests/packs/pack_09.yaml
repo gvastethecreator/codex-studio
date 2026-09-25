@@ -92,6 +92,18 @@ categories:
       - pack_09/SP09-069.yaml
       - pack_09/SP09-074.yaml
       - pack_09/SP09-075.yaml
+      - pack_09/SP09-088.yaml
+      - pack_09/SP09-089.yaml
+      - pack_09/SP09-090.yaml
+      - pack_09/SP09-091.yaml
+      - pack_09/SP09-092.yaml
+      - pack_09/SP09-093.yaml
+      - pack_09/SP09-094.yaml
+      - pack_09/SP09-095.yaml
+      - pack_09/SP09-096.yaml
+      - pack_09/SP09-097.yaml
+      - pack_09/SP09-098.yaml
+      - pack_09/SP09-099.yaml
   - id: elemental-and-fx
     name: 5. Elemental And FX
     presetRefs:
@@ -183,6 +195,18 @@ presetRefs:
   - pack_09/SP09-069.yaml
   - pack_09/SP09-074.yaml
   - pack_09/SP09-075.yaml
+  - pack_09/SP09-088.yaml
+  - pack_09/SP09-089.yaml
+  - pack_09/SP09-090.yaml
+  - pack_09/SP09-091.yaml
+  - pack_09/SP09-092.yaml
+  - pack_09/SP09-093.yaml
+  - pack_09/SP09-094.yaml
+  - pack_09/SP09-095.yaml
+  - pack_09/SP09-096.yaml
+  - pack_09/SP09-097.yaml
+  - pack_09/SP09-098.yaml
+  - pack_09/SP09-099.yaml
   - pack_09/SP09-043.yaml
   - pack_09/SP09-051.yaml
   - pack_09/SP09-052.yaml

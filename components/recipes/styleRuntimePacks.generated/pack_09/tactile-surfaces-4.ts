@@ -8,27 +8,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Velvet Fabric',
     category: '4. Tactile Surfaces',
     negativePrompt:
-      'cotton, flat, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, cotton, flat, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Velvet Fabric makes hand-feel and pressure visible across the image: start from Luxury cloth, Fuzzy, and Soft drape, then turn touch, softness, pile, fiber density, nap direction, compression, and hand-feel into portable surface behavior rather than a literal material sample.',
+        'Velvet: short dense pile that darkens and brightens as it bends, showing finger-brushed trails.',
       subject_treatment:
-        'Transform any prompt subject through Soft folds: preserve identity and pose while letting forms compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile, surface breakup, thickness, contact marks, and detail scale.',
-      color_and_tone:
-        "Use Deep Red or Blue as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is upholstered in velvet whose pile reverses where touched, leaving darker brushed trails.",
+      color_and_tone: 'Jewel velvet colors shifting light to dark with pile direction.',
       lighting_and_shadow:
-        'Let Rim light sheen define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Velvet Fabric without hiding the prompt subject.',
-      texture_and_material:
-        'Render Fuzzy through fiber structure, tactile depth, soft occlusion, fuzz, pile direction, and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Low raking light to show pile direction, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material: 'Dense short pile with brushed trails and crush marks.',
       camera_and_composition:
-        'Compose around Soft drape as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Rich, soft by using physical touch, comfort, irritation, warmth, dryness, and surface softness; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Soft, rich, inviting and intimate, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Royal, theater material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Luxury cloth; Soft folds; Fuzzy; Rim light sheen; Soft drape',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'directional velvet pile; brushed dark trails; crush marks',
       creative_brief:
-        "Route any subject through Velvet Fabric as a transferable tactile-surface visual system while preserving the prompt's subject, action, and setting. Summon the deep luxury of velvet where piled fibers catch light at the crest of each soft fold, creating a landscape of deep shadows and rich highlights that shift with the angle of view. The surface should feel like visual touch, a textile that drinks light and returns it as color deepened by surrounding darkness. Render the sensuality of fabric that seems to breathe. Use Velvet Fabric as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Velvet Fabric as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -36,27 +34,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Frozen/Frosted',
     category: '4. Tactile Surfaces',
     negativePrompt:
-      'melted, wet, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, melted, wet, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Frozen/Frosted makes hand-feel and pressure visible across the image: start from Freezer burn, Crystalline, and Surface buildup, then turn touch, softness, pile, fiber density, nap direction, compression, and hand-feel into portable surface behavior rather than a literal material sample.',
+        "Frosted: a crust of feathery hoarfrost crystals growing over the target's surfaces.",
       subject_treatment:
-        'Transform any prompt subject through Ice crystals: preserve identity and pose while letting forms compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: hoarfrost crystals grow in feathery spikes over the target, thicker on edges.",
       color_and_tone:
-        "Use White, Blue as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'White and pale blue frost over darker surfaces, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Sparkle define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Frozen/Frosted without hiding the prompt subject.',
+        'Cold backlight sparkling on crystals, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Crystalline through fiber structure, tactile depth, soft occlusion, fuzz, pile direction, and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Feathery hoarfrost needles and rime crust, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Surface buildup as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Freezing, preserved by using physical touch, comfort, irritation, warmth, dryness, and surface softness; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Cold, crisp, silent and delicate, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Cold, winter material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Freezer burn; Ice crystals; Crystalline; Sparkle; Surface buildup',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'feathery hoarfrost needles; rime crust; cold sparkle',
       creative_brief:
-        "Route any subject through Frozen/Frosted as a transferable tactile-surface visual system while preserving the prompt's subject, action, and setting. Compose the crystalline invasion of frost where ice crystals bloom in fern-like dendrites across surfaces, each branch a work of frozen mathematics growing outward from nucleation points. The surface must sparkle with the brittleness of extreme cold, white and blue whispering the language of winter across every crystalline edge. Capture the moment water becomes architecture. Use Frozen/Frosted as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Frozen/Frosted as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -64,27 +62,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Felt Fabric',
     category: '4. Tactile Surfaces',
     negativePrompt:
-      'woven, shiny, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, woven, shiny, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Felt Fabric makes hand-feel and pressure visible across the image: start from Compressed wool, Fuzzy, dense, and No weave, then turn touch, softness, pile, fiber density, nap direction, compression, and hand-feel into portable surface behavior rather than a literal material sample.',
+        'Felt: dense matted wool with fuzzy surface and soft rounded edges, like needle-felted craft.',
       subject_treatment:
-        'Transform any prompt subject through Fuzzy edge: preserve identity and pose while letting forms compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is formed from dense needle-felted wool with soft rounded edges.",
       color_and_tone:
-        "Use Matte colors as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Soft saturated wool colors, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Soft absorption define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Felt Fabric without hiding the prompt subject.',
-      texture_and_material:
-        'Render Fuzzy, dense through fiber structure, tactile depth, soft occlusion, fuzz, pile direction, and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Soft diffuse light showing fuzz, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material: 'Matted wool fibers with fuzzy halo and needle pits.',
       camera_and_composition:
-        'Compose around No weave as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Warm, craft by using physical touch, comfort, irritation, warmth, dryness, and surface softness; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Cozy, handmade, soft and gentle, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Craft, soft material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Compressed wool; Fuzzy edge; Fuzzy, dense; Soft absorption; No weave',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'needle-felted wool; fuzzy halo; rounded edges',
       creative_brief:
-        "Route any subject through Felt Fabric as a transferable tactile-surface visual system while preserving the prompt's subject, action, and setting. Summon the soft density of felted wool where fibers have surrendered individual identity to become a unified surface without weave or grain, matte colors absorbing light like powdered pigment painted onto compressed cloud. The fuzzy edge should dissolve into atmosphere without a defined boundary. Capture the warmth of compression, softness achieved through the pressure of becoming one. Use Felt Fabric as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Felt Fabric as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -92,28 +89,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fur (Synthetic)',
     category: '4. Tactile Surfaces',
     negativePrompt:
-      'real fur, skin, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, real fur, skin, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Fur (Synthetic) makes hand-feel and pressure visible across the image: start from Faux fur coat, Soft but synthetic, and Uniform length, then turn touch, softness, pile, fiber density, nap direction, compression, and hand-feel into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Synthetic fur: long glossy faux-fur pile, uniformly colored and shaggy.',
       subject_treatment:
-        'Transform any prompt subject through Uniform strands: preserve identity and pose while letting forms compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is covered in long glossy synthetic fur that sways with volume.",
       color_and_tone:
-        "Use Bright Pink/Blue as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Bright or dyed faux-fur colors, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Plastic sheen define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Fur (Synthetic) without hiding the prompt subject.',
+        'Soft light with glossy fiber sheen, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Soft but synthetic through fiber structure, tactile depth, soft occlusion, fuzz, pile direction, and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Long synthetic fibers with glossy sheen and clumps, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Uniform length as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Trendy, soft by using physical touch, comfort, irritation, warmth, dryness, and surface softness; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Playful, plush, bold and cuddly, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Fashion, fun material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features:
-        'Faux fur coat; Uniform strands; Soft but synthetic; Plastic sheen; Uniform length',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'long glossy faux fur; shaggy volume; dyed color',
       creative_brief:
-        "Route any subject through Fur (Synthetic) as a transferable tactile-surface visual system while preserving the prompt's subject, action, and setting. Render the uniform plushness of faux fur in unnatural hues of pink or blue, where every identical strand is a manufactured messenger of softness, uniform in length and catching a faint plastic sheen that reveals the artifice. The density should invite the hand while the perfect regularity declares its synthetic nature. Capture the beauty of the proudly fake, comfort manufactured in Technicolor. Use Fur as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fur (Synthetic) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -121,27 +116,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Chalk (Dry)',
     category: '4. Tactile Surfaces',
     negativePrompt:
-      'wet paint, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, wet paint, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Chalk (Dry) makes hand-feel and pressure visible across the image: start from Sidewalk drawing, Powdery, and Smear, then turn touch, softness, pile, fiber density, nap direction, compression, and hand-feel into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Dry chalk: powdery matte chalk surfaces that smudge and leave dust.',
       subject_treatment:
-        'Transform any prompt subject through Dusty stroke: preserve identity and pose while letting forms compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is made of or coated in dry chalk, powdery, smudged and dusty at edges.",
       color_and_tone:
-        "Use Pastel as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Chalky pastels or white with dust, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Matte define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Chalk (Dry) without hiding the prompt subject.',
+        'Soft light for matte powder, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Powdery through fiber structure, tactile depth, soft occlusion, fuzz, pile direction, and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Powdery chalk with smudges, dust and fingerprints, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Smear as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Playful, temporary by using physical touch, comfort, irritation, warmth, dryness, and surface softness; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Fragile, dusty, soft and ephemeral, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Temporary, dry material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Sidewalk drawing; Dusty stroke; Powdery; Matte; Smear',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'powdery matte chalk; smudges; dust fall',
       creative_brief:
-        "Route any subject through Chalk (Dry) as a transferable tactile-surface visual system while preserving the prompt's subject, action, and setting. Render the powdery ephemera of dry chalk dragged across rough surface, leaving a trail of pigmented dust that hovers between presence and erasure, pastel color clinging to texture by the faintest of bonds. The mark should feel temporary and defiant, a streak of powdered joy that knows it will not survive the next breeze. Capture the beauty of the fugitive, art that accepts its own dissolution. Use Chalk as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chalk (Dry) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -149,27 +143,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fiberglass Insulation',
     category: '4. Tactile Surfaces',
     negativePrompt:
-      'cotton candy, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, cotton candy, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Fiberglass Insulation makes hand-feel and pressure visible across the image: start from Pink wall insulation, Itchy glass fibers, and Fluffy batts, then turn touch, softness, pile, fiber density, nap direction, compression, and hand-feel into portable surface behavior rather than a literal material sample.',
+        'Fiberglass insulation: pink or yellow fluffy glass-fiber batts with an itchy loose texture.',
       subject_treatment:
-        'Transform any prompt subject through Fibers: preserve identity and pose while letting forms compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is formed from fluffy fiberglass batts with loose fibers.",
       color_and_tone:
-        "Use Pink as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Pink or yellow insulation with pale fibers, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Soft define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Fiberglass Insulation without hiding the prompt subject.',
+        'Soft light showing fluffy fibers, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Itchy glass fibers through fiber structure, tactile depth, soft occlusion, fuzz, pile direction, and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Loose glass-fiber batts with torn edges, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Fluffy batts as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Unfinished, itchy by using physical touch, comfort, irritation, warmth, dryness, and surface softness; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Industrial, odd, soft-looking and prickly, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Construction, industrial material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Pink wall insulation; Fibers; Itchy glass fibers; Soft; Fluffy batts',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'fluffy fiberglass batts; loose fibers; pink or yellow',
       creative_brief:
-        "Route any subject through Fiberglass Insulation as a transferable tactile-surface visual system while preserving the prompt's subject, action, and setting. Capture the industrial cotton-candy of pink fiberglass insulation where glass fibers interweave into fluffy batts of suspended irritation, the color deceptively soft while the texture promises an itch that the eye can almost feel. The fiber direction should create a grain of pink haze across unfinished wall cavities. Render the beauty of the in-between, construction paused in mid-reveal. Use Fiberglass Insulation as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fiberglass Insulation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -177,27 +171,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Carpet (Shag)',
     category: '4. Tactile Surfaces',
     negativePrompt:
-      'berber, flat, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, berber, flat, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Carpet (Shag) makes hand-feel and pressure visible across the image: start from 70s rug, Deep pile, and Matted, then turn touch, softness, pile, fiber density, nap direction, compression, and hand-feel into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Shag carpet: long looped or cut shag pile covering the target like a rug.',
       subject_treatment:
-        'Transform any prompt subject through Long fibers: preserve identity and pose while letting forms compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is covered in long shag carpet pile.",
       color_and_tone:
-        "Use Orange or Green as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Retro orange, avocado, mustard or cream shag, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Soft define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Carpet (Shag) without hiding the prompt subject.',
+        'Warm indoor light, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Deep pile through fiber structure, tactile depth, soft occlusion, fuzz, pile direction, and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Long shag strands with deep pile, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Matted as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Cozy, retro by using physical touch, comfort, irritation, warmth, dryness, and surface softness; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Retro, cozy, kitsch and soft, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Retro, soft material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: '70s rug; Long fibers; Deep pile; Soft; Matted',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'long shag pile; retro colors; deep strands',
       creative_brief:
-        "Route any subject through Carpet (Shag) as a transferable tactile-surface visual system while preserving the prompt's subject, action, and setting. Summon the deep pile of shag carpet in audacious orange or avocado green, where long nylon fibers create a landscape of matted valleys and tufted peaks that swallow light and sound with equal enthusiasm. The texture should feel like visual noise, a field of synthetic softness that invites bare feet and collects the ghosts of a decade. Capture the brazen comfort of retro rebellion. Use Carpet as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carpet (Shag) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -205,27 +198,424 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Astroturf',
     category: '4. Tactile Surfaces',
     negativePrompt:
-      'real grass, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, real grass, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Artificial turf: synthetic grass blades in dense uniform rows over the target.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is covered in synthetic turf blades with a rubber-crumb base.",
+      color_and_tone:
+        'Bright artificial green with black rubber crumb, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Bright daylight, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Uniform plastic blades and rubber crumb infill, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Artificial, playful, suburban and odd, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'plastic turf blades; rubber crumb; uniform green',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Astroturf as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP09-088',
+    name: 'Terrycloth Loops',
+    displayName: 'Terrycloth Loops',
+    styleAnchors: ['Terrycloth Loops', 'terrycloth loop pile', 'uncut terry loops'],
+    category: '4. Tactile Surfaces',
+    domain: 'terrycloth loop pile',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Terrycloth: soft uncut cotton loops like a bath towel, absorbent and plush.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is covered in uncut cotton terry loops.",
+      color_and_tone:
+        'Soft white, pastel or striped terry, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Soft daylight showing loop texture, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Uncut cotton loops, absorbent and plush, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Soft, domestic, fresh and comfortable, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Terrycloth Loops as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'uncut terry loops; plush cotton; towel texture',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-089',
+    name: 'Brushed Suede',
+    displayName: 'Brushed Suede',
+    styleAnchors: ['Brushed Suede', 'brushed suede nap', 'brushed suede nap'],
+    category: '4. Tactile Surfaces',
+    domain: 'brushed suede nap',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Brushed suede: velvety leather nap that shows light and dark finger marks.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is covered in soft brushed suede with napped fingerprint marks.",
+      color_and_tone:
+        'Tan, camel, olive or dusty rose suede, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Soft side light for nap direction, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Napped suede with finger marks and matte softness, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Warm, soft, rich and tactile, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Brushed Suede as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'brushed suede nap; finger marks; matte softness',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-090',
+    name: 'Quilted Padding',
+    displayName: 'Quilted Padding',
+    styleAnchors: ['Quilted Padding', 'quilted padded surfaces', 'puffy quilted pockets'],
+    category: '4. Tactile Surfaces',
+    domain: 'quilted padded surfaces',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Quilted padding: puffy stitched quilting in diamond or channel patterns.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is covered in puffy quilted padding with stitched diamond or channel lines.",
+      color_and_tone:
+        'Glossy or matte fabric colors with stitch shadows, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Soft light casting shadows in each quilt pocket, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Stitched quilting with puffy pockets, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Protective, cozy, plush and cushioned, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Quilted Padding as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'puffy quilted pockets; stitched diamonds; soft shadows',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-091',
+    name: 'Corduroy Ridges',
+    displayName: 'Corduroy Ridges',
+    styleAnchors: ['Corduroy Ridges', 'corduroy wale ridges', 'parallel corduroy wales'],
+    category: '4. Tactile Surfaces',
+    domain: 'corduroy wale ridges',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Corduroy: parallel velvet wales with soft ridged texture.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is covered in corduroy with parallel wales following its form.",
+      color_and_tone:
+        'Rust, mustard, brown or bottle green cord, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Raking light over the ridges, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Parallel velvet wales and grooves, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Retro, warm, scholarly and cozy, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Corduroy Ridges as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'parallel corduroy wales; ridged pile; warm colors',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-092',
+    name: 'Memory Foam Imprint',
+    displayName: 'Memory Foam Imprint',
+    styleAnchors: ['Memory Foam Imprint', 'memory foam compression', 'memory foam'],
+    category: '4. Tactile Surfaces',
+    domain: 'memory foam compression',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Memory foam: slow-rebound foam holding fresh imprints of hands and objects.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is made of dense memory foam with fresh handprint and pressure imprints slowly recovering.",
+      color_and_tone:
+        'Pale grey, blue or white foam, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Soft light showing imprint depth, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Open-cell foam with deep slow-rebound imprints, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Soft, quiet, strange and yielding, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Memory Foam Imprint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'memory foam; handprint imprints; slow rebound',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-093',
+    name: 'Shearling Fleece',
+    displayName: 'Shearling Fleece',
+    styleAnchors: ['Shearling Fleece', 'shearling fleece curls', 'curly shearling fleece'],
+    category: '4. Tactile Surfaces',
+    domain: 'shearling fleece curls',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Shearling: curly sheepskin fleece with dense crimped wool.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is covered in curly sheepskin shearling.",
+      color_and_tone:
+        'Cream, oatmeal or caramel fleece, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Warm soft light, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Dense crimped wool curls, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Warm, cozy, rustic and soft, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Shearling Fleece as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'curly shearling fleece; crimped wool; cream tones',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-094',
+    name: 'Soft-Touch Silicone',
+    displayName: 'Soft-Touch Silicone',
+    styleAnchors: ['Soft-Touch Silicone', 'soft silicone surfaces', 'soft matte silicone'],
+    category: '4. Tactile Surfaces',
+    domain: 'soft silicone surfaces',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Astroturf makes hand-feel and pressure visible across the image: start from Fake grass, Plastic strips, and Uniform height, then turn touch, softness, pile, fiber density, nap direction, compression, and hand-feel into portable surface behavior rather than a literal material sample.',
+        'Soft-touch silicone: matte squishy silicone that looks rubbery and slightly translucent.',
       subject_treatment:
-        'Transform any prompt subject through Plastic blades: preserve identity and pose while letting forms compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is molded in soft matte silicone, slightly translucent at thin edges.",
       color_and_tone:
-        "Use Unnatural Green as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Pastel or clear silicone colors, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Plastic shine define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Astroturf without hiding the prompt subject.',
+        'Soft diffuse light with subsurface glow, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Plastic strips through fiber structure, tactile depth, soft occlusion, fuzz, pile direction, and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Matte silicone with slight translucency and softness, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Uniform height as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Fake, clean by using physical touch, comfort, irritation, warmth, dryness, and surface softness; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Soft, squishy, modern and friendly, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Artificial, sports material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Fake grass; Plastic blades; Plastic strips; Plastic shine; Uniform height',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Route any subject through Astroturf as a transferable tactile-surface visual system while preserving the prompt's subject, action, and setting. Render the uncanny uniformity of artificial turf where identical plastic blades stand in regimented rows of unnatural green, catching a plastic sheen that real grass would never yield under any sun. The surface should feel fake in its very perfection, a lawn that needs no water and holds no secrets. Capture the aesthetics of the substitute, nature made reliable at the cost of its soul. Use Astroturf as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soft-Touch Silicone as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'soft matte silicone; translucent edges; squishy',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-095',
+    name: 'Neoprene',
+    displayName: 'Neoprene',
+    styleAnchors: ['Neoprene', 'neoprene wetsuit material', 'neoprene'],
+    category: '4. Tactile Surfaces',
+    domain: 'neoprene wetsuit material',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Neoprene: thick spongy wetsuit rubber with jersey facing and glued seams.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is made of neoprene with jersey faces and flat-glued seams.",
+      color_and_tone:
+        'Black, navy or bright wetsuit colors, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Soft light showing texture, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Spongy neoprene with jersey faces and seams, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Sporty, protective, modern and snug, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neoprene as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'neoprene; jersey face; glued seams',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-096',
+    name: 'Pumice Stone',
+    displayName: 'Pumice Stone',
+    styleAnchors: ['Pumice Stone', 'pumice porous stone', 'pale porous pumice'],
+    category: '4. Tactile Surfaces',
+    domain: 'pumice porous stone',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Pumice: light frothy volcanic stone full of tiny pores, rough to the touch.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is carved from pale porous pumice.",
+      color_and_tone:
+        'Pale grey, cream or tan, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Soft light showing pores, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Frothy porous stone with rough texture, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Light, rough, abrasive and airy, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pumice Stone as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'pale porous pumice; frothy vesicles; rough',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-097',
+    name: 'Flocked Coating',
+    displayName: 'Flocked Coating',
+    styleAnchors: ['Flocked Coating', 'flocked fuzzy coating', 'flocked matte coat'],
+    category: '4. Tactile Surfaces',
+    domain: 'flocked fuzzy coating',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Flocking: short fibers sprayed onto a surface, giving a uniform velvety matte coat.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is flocked with a uniform velvety fiber coat.",
+      color_and_tone:
+        'Uniform flat colors — black, red, cream, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Soft light, no reflections, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Short uniform fibers, matte and velvety, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Soft, uniform, toy-like and plush, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Flocked Coating as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'flocked matte coat; uniform short fibers',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-098',
+    name: 'Kneaded Putty',
+    displayName: 'Kneaded Putty',
+    styleAnchors: ['Kneaded Putty', 'kneaded putty surfaces', 'kneaded putty'],
+    category: '4. Tactile Surfaces',
+    domain: 'kneaded putty surfaces',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Kneaded putty: soft malleable putty with fingerprints, folds and pulled strands.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is modeled in soft putty with fingerprints and pulled strands.",
+      color_and_tone:
+        'Grey, beige or pastel putty, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Soft light showing fingerprints, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Malleable putty with folds, strands and prints, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Handmade, soft, malleable and odd, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kneaded Putty as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'kneaded putty; fingerprints; pulled strands',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-099',
+    name: 'Pebbled Leather Grain',
+    displayName: 'Pebbled Leather Grain',
+    styleAnchors: ['Pebbled Leather Grain', 'pebbled leather grain', 'pebble-grain leather'],
+    category: '4. Tactile Surfaces',
+    domain: 'pebbled leather grain',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Pebbled leather: full-grain leather with raised pebble texture and soft sheen.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is covered in pebble-grain leather with stitched seams.",
+      color_and_tone:
+        'Black, cognac, oxblood or navy leather, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Soft side light showing pebble grain, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Raised pebble grain with soft sheen, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Luxurious, durable, tactile and classic, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pebbled Leather Grain as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'pebble-grain leather; stitched seams; soft sheen',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

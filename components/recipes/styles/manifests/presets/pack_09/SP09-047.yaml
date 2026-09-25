@@ -3,7 +3,7 @@ id: SP09-047
 packId: pack_09
 name: Fur (Synthetic)
 category: 4. Tactile Surfaces
-version: 1
+version: 2
 supportedTasks:
   - texture_generate
   - image_generate
@@ -13,61 +13,38 @@ tags:
   - texture-and-materiality
   - tactile-surfaces
 visualDna:
-  aesthetic: >-
-    Fur (Synthetic) makes hand-feel and pressure visible across the image: start from Faux fur coat,
-    Soft but synthetic, and Uniform length, then turn touch, softness, pile, fiber density, nap
-    direction, compression, and hand-feel into portable surface behavior rather than a literal
-    material sample.
-  subject_treatment: >-
-    Transform any prompt subject through Uniform strands: preserve identity and pose while letting
-    forms compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile,
-    surface breakup, thickness, contact marks, and detail scale.
-  color_and_tone: >-
-    Use Bright Pink/Blue as the material palette, with controlled value separation, local color
-    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
-    texture.
-  lighting_and_shadow: >-
-    Let Plastic sheen define the light response: highlights, occlusion, translucency, specular
-    scatter, matte falloff, or rim behavior should reveal Fur (Synthetic) without hiding the prompt
-    subject.
-  texture_and_material: >-
-    Render Soft but synthetic through fiber structure, tactile depth, soft occlusion, fuzz, pile
-    direction, and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or
-    surface tension coherent across the whole image.
-  camera_and_composition: >-
-    Compose around Uniform length as reusable material rhythm: macro-friendly for texture tasks, but
-    able to wrap objects, figures, environments, and props without forcing one sample view.
-  atmosphere_and_mood: >-
-    Keep the mood Trendy, soft by using physical touch, comfort, irritation, warmth, dryness, and
-    surface softness; the material should color the scene's feeling while preserving the user's
-    requested subject and setting.
-  rendering_and_quality: >-
-    Finish with Fashion, fun material clarity: physically coherent reflectance, clean contact
-    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
-    overlay.
-  key_features: Faux fur coat; Uniform strands; Soft but synthetic; Plastic sheen; Uniform length
-  creative_brief: >-
-    Route any subject through Fur (Synthetic) as a transferable tactile-surface visual system while
-    preserving the prompt's subject, action, and setting. Render the uniform plushness of faux fur
-    in unnatural hues of pink or blue, where every identical strand is a manufactured messenger of
-    softness, uniform in length and catching a faint plastic sheen that reveals the artifice. The
-    density should invite the hand while the perfect regularity declares its synthetic nature.
-    Capture the beauty of the proudly fake, comfort manufactured in Technicolor. Use Fur as portable
-    surface/render behavior over any input: map its texture, light response, edge wear, color
-    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample,
-    macro tile, wall, landscape, source object, or scene where the material naturally appears.
+  aesthetic: 'Synthetic fur: long glossy faux-fur pile, uniformly colored and shaggy.'
+  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is covered in long glossy synthetic fur that sways with volume.'
+  color_and_tone: Bright or dyed faux-fur colors, kept on the material while the rest of the scene keeps its own palette.
+  lighting_and_shadow: Soft light with glossy fiber sheen, chosen to reveal how the material reflects, absorbs or transmits light.
+  texture_and_material: Long synthetic fibers with glossy sheen and clumps, at a believable physical scale relative to the target.
+  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.
+  atmosphere_and_mood: Playful, plush, bold and cuddly, carried by the material itself rather than by added props.
+  rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
+  key_features: long glossy faux fur; shaggy volume; dyed color
+  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fur (Synthetic) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
 avoidRules:
+  - material applied to the background instead of the target
+  - unrequested sample object or habitat
+  - readable text
+  - logo
+  - muddy noisy texture
   - real fur
   - skin
   - wrong material
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-047.webp
 attributes:
-  negativePrompt: real fur, skin, wrong material, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, real fur, skin, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

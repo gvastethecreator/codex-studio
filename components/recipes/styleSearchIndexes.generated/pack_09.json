@@ -3,7 +3,7 @@
     {
       "id": "pack_09",
       "name": "Texture & Materiality",
-      "presetCount": 87
+      "presetCount": 99
     }
   ],
   "presets": [
@@ -922,6 +922,174 @@
       "searchableText": "sp09-075 astroturf 4. tactile surfaces tactile response pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces"
     },
     {
+      "id": "SP09-088",
+      "name": "Terrycloth Loops",
+      "styleAnchors": ["Terrycloth Loops", "terrycloth loop pile", "uncut terry loops"],
+      "ref": "pack_09/SP09-088.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "tactile-surfaces",
+      "categoryName": "4. Tactile Surfaces",
+      "domain": "terrycloth loop pile",
+      "tags": ["texture-and-materiality", "tactile-surfaces", "terrycloth-loop-pile"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-088 terrycloth loops terrycloth loop pile uncut terry loops 4. tactile surfaces tactile response terrycloth loop pile pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces terrycloth-loop-pile"
+    },
+    {
+      "id": "SP09-089",
+      "name": "Brushed Suede",
+      "styleAnchors": ["Brushed Suede", "brushed suede nap", "brushed suede nap"],
+      "ref": "pack_09/SP09-089.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "tactile-surfaces",
+      "categoryName": "4. Tactile Surfaces",
+      "domain": "brushed suede nap",
+      "tags": ["texture-and-materiality", "tactile-surfaces", "brushed-suede-nap"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-089 brushed suede brushed suede nap 4. tactile surfaces tactile response brushed suede nap pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces brushed-suede-nap"
+    },
+    {
+      "id": "SP09-090",
+      "name": "Quilted Padding",
+      "styleAnchors": ["Quilted Padding", "quilted padded surfaces", "puffy quilted pockets"],
+      "ref": "pack_09/SP09-090.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "tactile-surfaces",
+      "categoryName": "4. Tactile Surfaces",
+      "domain": "quilted padded surfaces",
+      "tags": ["texture-and-materiality", "tactile-surfaces", "quilted-padded-surfaces"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-090 quilted padding quilted padded surfaces puffy quilted pockets 4. tactile surfaces tactile response quilted padded surfaces pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces quilted-padded-surfaces"
+    },
+    {
+      "id": "SP09-091",
+      "name": "Corduroy Ridges",
+      "styleAnchors": ["Corduroy Ridges", "corduroy wale ridges", "parallel corduroy wales"],
+      "ref": "pack_09/SP09-091.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "tactile-surfaces",
+      "categoryName": "4. Tactile Surfaces",
+      "domain": "corduroy wale ridges",
+      "tags": ["texture-and-materiality", "tactile-surfaces", "corduroy-wale-ridges"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-091 corduroy ridges corduroy wale ridges parallel corduroy wales 4. tactile surfaces tactile response corduroy wale ridges pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces corduroy-wale-ridges"
+    },
+    {
+      "id": "SP09-092",
+      "name": "Memory Foam Imprint",
+      "styleAnchors": ["Memory Foam Imprint", "memory foam compression", "memory foam"],
+      "ref": "pack_09/SP09-092.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "tactile-surfaces",
+      "categoryName": "4. Tactile Surfaces",
+      "domain": "memory foam compression",
+      "tags": ["texture-and-materiality", "tactile-surfaces", "memory-foam-compression"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-092 memory foam imprint memory foam compression memory foam 4. tactile surfaces tactile response memory foam compression pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces memory-foam-compression"
+    },
+    {
+      "id": "SP09-093",
+      "name": "Shearling Fleece",
+      "styleAnchors": ["Shearling Fleece", "shearling fleece curls", "curly shearling fleece"],
+      "ref": "pack_09/SP09-093.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "tactile-surfaces",
+      "categoryName": "4. Tactile Surfaces",
+      "domain": "shearling fleece curls",
+      "tags": ["texture-and-materiality", "tactile-surfaces", "shearling-fleece-curls"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-093 shearling fleece shearling fleece curls curly shearling fleece 4. tactile surfaces tactile response shearling fleece curls pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces shearling-fleece-curls"
+    },
+    {
+      "id": "SP09-094",
+      "name": "Soft-Touch Silicone",
+      "styleAnchors": ["Soft-Touch Silicone", "soft silicone surfaces", "soft matte silicone"],
+      "ref": "pack_09/SP09-094.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "tactile-surfaces",
+      "categoryName": "4. Tactile Surfaces",
+      "domain": "soft silicone surfaces",
+      "tags": ["texture-and-materiality", "tactile-surfaces", "soft-silicone-surfaces"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-094 soft-touch silicone soft silicone surfaces soft matte silicone 4. tactile surfaces tactile response soft silicone surfaces pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces soft-silicone-surfaces"
+    },
+    {
+      "id": "SP09-095",
+      "name": "Neoprene",
+      "styleAnchors": ["Neoprene", "neoprene wetsuit material", "neoprene"],
+      "ref": "pack_09/SP09-095.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "tactile-surfaces",
+      "categoryName": "4. Tactile Surfaces",
+      "domain": "neoprene wetsuit material",
+      "tags": ["texture-and-materiality", "tactile-surfaces", "neoprene-wetsuit-material"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-095 neoprene neoprene wetsuit material neoprene 4. tactile surfaces tactile response neoprene wetsuit material pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces neoprene-wetsuit-material"
+    },
+    {
+      "id": "SP09-096",
+      "name": "Pumice Stone",
+      "styleAnchors": ["Pumice Stone", "pumice porous stone", "pale porous pumice"],
+      "ref": "pack_09/SP09-096.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "tactile-surfaces",
+      "categoryName": "4. Tactile Surfaces",
+      "domain": "pumice porous stone",
+      "tags": ["texture-and-materiality", "tactile-surfaces", "pumice-porous-stone"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-096 pumice stone pumice porous stone pale porous pumice 4. tactile surfaces tactile response pumice porous stone pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces pumice-porous-stone"
+    },
+    {
+      "id": "SP09-097",
+      "name": "Flocked Coating",
+      "styleAnchors": ["Flocked Coating", "flocked fuzzy coating", "flocked matte coat"],
+      "ref": "pack_09/SP09-097.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "tactile-surfaces",
+      "categoryName": "4. Tactile Surfaces",
+      "domain": "flocked fuzzy coating",
+      "tags": ["texture-and-materiality", "tactile-surfaces", "flocked-fuzzy-coating"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-097 flocked coating flocked fuzzy coating flocked matte coat 4. tactile surfaces tactile response flocked fuzzy coating pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces flocked-fuzzy-coating"
+    },
+    {
+      "id": "SP09-098",
+      "name": "Kneaded Putty",
+      "styleAnchors": ["Kneaded Putty", "kneaded putty surfaces", "kneaded putty"],
+      "ref": "pack_09/SP09-098.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "tactile-surfaces",
+      "categoryName": "4. Tactile Surfaces",
+      "domain": "kneaded putty surfaces",
+      "tags": ["texture-and-materiality", "tactile-surfaces", "kneaded-putty-surfaces"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-098 kneaded putty kneaded putty surfaces kneaded putty 4. tactile surfaces tactile response kneaded putty surfaces pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces kneaded-putty-surfaces"
+    },
+    {
+      "id": "SP09-099",
+      "name": "Pebbled Leather Grain",
+      "styleAnchors": ["Pebbled Leather Grain", "pebbled leather grain", "pebble-grain leather"],
+      "ref": "pack_09/SP09-099.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "tactile-surfaces",
+      "categoryName": "4. Tactile Surfaces",
+      "domain": "pebbled leather grain",
+      "tags": ["texture-and-materiality", "tactile-surfaces", "pebbled-leather-grain"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-099 pebbled leather grain pebbled leather grain pebble-grain leather 4. tactile surfaces tactile response pebbled leather grain pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces pebbled-leather-grain"
+    },
+    {
       "id": "SP09-043",
       "name": "Slime/Goo",
       "ref": "pack_09/SP09-043.yaml",
@@ -1066,5 +1234,5 @@
       "searchableText": "sp09-067 snow (powder) 5. elemental and fx elemental effects pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
     }
   ],
-  "totalPresetCount": 87
+  "totalPresetCount": 99
 }
