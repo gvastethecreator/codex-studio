@@ -3,7 +3,7 @@ id: SP03-054
 packId: pack_03
 name: Food CGI
 category: 6. Organic Character And Bio CGI
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,53 +12,24 @@ tags:
   - 3d-and-cgi-rendering
   - organic-character-and-bio-cgi
 visualDna:
-  aesthetic: >-
-    Food CGI acts as a transferable CGI-style router: start from Hyper appetizing food ad CGI, Water
-    droplets, steam wisps and organic and character CGI system built from anatomy, grooming, cloth,
-    soft-body simulation, food material, medical cutaway, and believable sculpt topology, then apply
-    the 3D/render behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Juicy details; preserve the prompt subject while routing it
-    through organic form flow, garment dynamics, avatar readability, diagnostic cutaway, or
-    appetizing surface simulation, keeping the requested identity, silhouette, pose, object
-    function, or environment legible.
-  color_and_tone: >-
-    Build color with Saturated, fresh; let color follow skin, cloth, food, biological tissue, mylar,
-    medical material, fashion fabric, or stylized collectible accents without flattening the shader,
-    with deliberate value grouping, exposure control, and medium-specific limits rather than generic
-    color wash.
-  lighting_and_shadow: >-
-    Handle light through Backlit steam; shape light through subsurface lift, cloth sheen, food
-    steam, rim grooming, diagnostic clarity, reflective foil, or studio character presentation, so
-    value structure supports the renderer and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Wet, condensation, micro droplets; surface detail should show sculpt topology, pores,
-    muscles, wrinkles, cloth weave, droplets, mylar seams, cutaway planes, or organic growth flow,
-    keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Flying ingredients; compose for model readability through
-    turnarounds, pose-neutral clarity, garment silhouette, cutaway hierarchy, appetizing macro, or
-    avatar trait legibility, with scale, spacing, edge rhythm, and visual hierarchy doing the style
-    work.
-  atmosphere_and_mood: >-
-    Keep the mood Delicious, hyperreal, crave inducing; derive mood from body realism, digital
-    fashion spectacle, clinical explanation, collectible identity, craving, celebration, or uncanny
-    organic transformation, letting the renderer alter interpretation without demanding a specific
-    story, location, or character.
-  rendering_and_quality: >-
-    Finish with Fast food hero ad polish, impossibly appetizing; finish with stable anatomy or
-    object structure, clean simulation, readable material detail, and no melted limbs or fake
-    plastic skin, clean denoised surfaces where appropriate, and enough shader evidence to make the
-    CGI mode recognizable.
-  key_features: >-
-    Hyper appetizing food ad CGI; Water droplets, steam wisps; Saturated, fresh; Wet, condensation,
-    micro droplets; Flying ingredients
-  creative_brief: >-
-    Apply Food CGI as a CGI/render preset over prompt X: preserve the user's requested subject, then
-    route modeling, shader response, lighting, material scale, composition, mood, and final render
-    craft through Hyper appetizing food ad CGI, Water droplets, steam wisps, Wet, condensation,
-    micro droplets without requiring the card image's original subject.
+  aesthetic: 'Food advertising CGI: the dish exploded into a frozen moment, ingredients levitating in an arc, sauces splashing and droplets suspended around the hero item.'
+  subject_treatment: Keep the prompt subject and its identity; this preset owns the frozen food-ad moment of levitating components, splash and steam around the requested food, and a non-food subject keeps its identity and only receives the glistening staging. It never forces a T-pose on a posed subject and never turns a requested object into an avatar.
+  color_and_tone: Saturated fresh color of glossy reds, bright greens and golden crusts against a warm gradient or deep contrasting backdrop.
+  lighting_and_shadow: Strong backlight making steam and droplets glow, a soft front fill and specular pings on every wet surface.
+  texture_and_material: Micro droplets, condensation beads, crisp crumbs, glossy sauce ribbons and salt flakes caught in mid-air.
+  camera_and_composition: Hero item centered low, components arcing around it on a diagonal, shallow depth with the nearest droplets sharp.
+  atmosphere_and_mood: Crave-inducing and energetic, appetite frozen at its peak.
+  rendering_and_quality: Hyperreal simulation of splashes and particles, glossy but never plastic, with no packaging text or brand marks.
+  key_features: levitating ingredient arc; frozen splashes and droplets; backlit steam; specular pings; diagonal hero composition
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Food CGI as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - forced T-pose
+  - object turned into an avatar
+  - franchise likeness
+  - readable text
+  - logo
+  - packaging
+  - plastic-looking food
   - rotten
   - dry
   - wrong medium
@@ -66,19 +37,20 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - melted anatomy
   - fake plastic skin
   - bad topology
   - rigging-breaking pose
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-054.webp
 attributes:
-  negativePrompt: >-
-    rotten, dry, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, melted anatomy, fake plastic skin, bad topology,
-    rigging-breaking pose
+  negativePrompt: forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, packaging, plastic-looking food, rotten, dry, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

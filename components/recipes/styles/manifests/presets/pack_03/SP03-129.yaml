@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP03-129
+packId: pack_03
+name: Motion-Capture Marker Suit
+styleAnchors:
+  - Motion-Capture Marker Suit
+  - motion-capture stage
+  - black marker suit
+displayName: Motion-Capture Marker Suit
+category: 6. Organic Character And Bio CGI
+domain: motion-capture stage
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - organic-character-and-bio-cgi
+  - mocap
+  - performance-capture
+  - production
+visualDna:
+  aesthetic: 'Motion-capture stage: a performer in a tight black suit studded with small reflective marker balls, standing in a grey capture volume ringed by cameras.'
+  subject_treatment: Keep the prompt subject and its identity; this preset owns the capture-stage look, where the requested performer, creature or prop keeps its pose while wearing a black marker suit or carrying reflective markers. It never forces a T-pose on a posed subject and never turns a requested object into an avatar.
+  color_and_tone: Matte black suit, bright white-grey markers glowing under the capture strobes, and a cool grey floor with a taped grid.
+  lighting_and_shadow: Ring-light strobes around the volume make every marker flare, with soft top light over the stage.
+  texture_and_material: Hook-and-loop patches, stretch fabric, a headband and face dots, and props wrapped in grey tape with markers.
+  camera_and_composition: Keep the requested view; the performer's pose is the focus with capture cameras visible at the edges.
+  atmosphere_and_mood: Behind-the-scenes and intense, an actor pretending hard in an empty room.
+  rendering_and_quality: Photoreal production still with no screens, skeleton overlays, numbers or interface.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Motion-Capture Marker Suit as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: black marker suit; reflective marker balls; grey capture volume; ring-light strobes; taped proxy props
+avoidRules:
+  - forced T-pose
+  - object turned into an avatar
+  - franchise likeness
+  - readable text
+  - logo
+  - monitors
+  - skeleton overlay
+  - costume instead of marker suit
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, monitors, skeleton overlay, costume instead of marker suit, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: organic-character-and-bio-cgi
+  categoryName: 6. Organic Character And Bio CGI
+  tags:
+    - 3d-and-cgi-rendering
+    - organic-character-and-bio-cgi
+    - mocap
+    - performance-capture
+    - production
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: motion-capture stage

@@ -3,7 +3,7 @@
     {
       "id": "pack_03",
       "name": "3D & CGI Rendering",
-      "presetCount": 118
+      "presetCount": 131
     }
   ],
   "presets": [
@@ -1521,7 +1521,8 @@
     },
     {
       "id": "SP03-076",
-      "name": "Balloon Art (Inflatable)",
+      "name": "Mylar Foil Balloon Render",
+      "styleAnchors": ["Mylar Foil Balloon Render", "Balloon Art (Inflatable)"],
       "ref": "pack_03/SP03-076.yaml",
       "packId": "pack_03",
       "packName": "3D & CGI Rendering",
@@ -1529,7 +1530,273 @@
       "categoryName": "6. Organic Character And Bio CGI",
       "tags": ["3d-and-cgi-rendering", "organic-character-and-bio-cgi"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-076 balloon art (inflatable) 6. organic character and bio cgi organic cgi pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi"
+      "searchableText": "sp03-076 mylar foil balloon render balloon art (inflatable) 6. organic character and bio cgi organic cgi pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi"
+    },
+    {
+      "id": "SP03-119",
+      "name": "Photoreal Digital Human",
+      "styleAnchors": [
+        "Photoreal Digital Human",
+        "offline digital human rendering",
+        "layered subsurface skin"
+      ],
+      "ref": "pack_03/SP03-119.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "organic-character-and-bio-cgi",
+      "categoryName": "6. Organic Character And Bio CGI",
+      "domain": "offline digital human rendering",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "organic-character-and-bio-cgi",
+        "offline-digital-human-rendering"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-119 photoreal digital human offline digital human rendering layered subsurface skin 6. organic character and bio cgi organic cgi offline digital human rendering pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi offline-digital-human-rendering"
+    },
+    {
+      "id": "SP03-120",
+      "name": "Hand-Painted Texture Character",
+      "styleAnchors": [
+        "Hand-Painted Texture Character",
+        "hand-painted texture game character",
+        "painted-in highlights and shadows"
+      ],
+      "ref": "pack_03/SP03-120.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "organic-character-and-bio-cgi",
+      "categoryName": "6. Organic Character And Bio CGI",
+      "domain": "hand-painted texture game character",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "organic-character-and-bio-cgi",
+        "hand-painted-texture-game-character"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-120 hand-painted texture character hand-painted texture game character painted-in highlights and shadows 6. organic character and bio cgi organic cgi hand-painted texture game character pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi hand-painted-texture-game-character"
+    },
+    {
+      "id": "SP03-121",
+      "name": "Écorché Muscle Study",
+      "styleAnchors": [
+        "Écorché Muscle Study",
+        "flayed anatomical sculpture",
+        "flayed muscle groups"
+      ],
+      "ref": "pack_03/SP03-121.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "organic-character-and-bio-cgi",
+      "categoryName": "6. Organic Character And Bio CGI",
+      "domain": "flayed anatomical sculpture",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "organic-character-and-bio-cgi",
+        "flayed-anatomical-sculpture"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-121 écorché muscle study flayed anatomical sculpture flayed muscle groups 6. organic character and bio cgi organic cgi flayed anatomical sculpture pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi flayed-anatomical-sculpture"
+    },
+    {
+      "id": "SP03-122",
+      "name": "Articulated Skeleton Render",
+      "styleAnchors": [
+        "Articulated Skeleton Render",
+        "natural-history skeleton mount",
+        "articulated bones"
+      ],
+      "ref": "pack_03/SP03-122.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "organic-character-and-bio-cgi",
+      "categoryName": "6. Organic Character And Bio CGI",
+      "domain": "natural-history skeleton mount",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "organic-character-and-bio-cgi",
+        "natural-history-skeleton-mount"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-122 articulated skeleton render natural-history skeleton mount articulated bones 6. organic character and bio cgi organic cgi natural-history skeleton mount pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi natural-history-skeleton-mount"
+    },
+    {
+      "id": "SP03-123",
+      "name": "Differential Growth Folds",
+      "styleAnchors": [
+        "Differential Growth Folds",
+        "differential growth surface",
+        "crinkled ruffled edges"
+      ],
+      "ref": "pack_03/SP03-123.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "organic-character-and-bio-cgi",
+      "categoryName": "6. Organic Character And Bio CGI",
+      "domain": "differential growth surface",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "organic-character-and-bio-cgi",
+        "differential-growth-surface"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-123 differential growth folds differential growth surface crinkled ruffled edges 6. organic character and bio cgi organic cgi differential growth surface pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi differential-growth-surface"
+    },
+    {
+      "id": "SP03-124",
+      "name": "Space-Colonization Vine Overgrowth",
+      "styleAnchors": [
+        "Space-Colonization Vine Overgrowth",
+        "procedural vine growth",
+        "algorithmic branching vines"
+      ],
+      "ref": "pack_03/SP03-124.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "organic-character-and-bio-cgi",
+      "categoryName": "6. Organic Character And Bio CGI",
+      "domain": "procedural vine growth",
+      "tags": ["3d-and-cgi-rendering", "organic-character-and-bio-cgi", "procedural-vine-growth"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-124 space-colonization vine overgrowth procedural vine growth algorithmic branching vines 6. organic character and bio cgi organic cgi procedural vine growth pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi procedural-vine-growth"
+    },
+    {
+      "id": "SP03-125",
+      "name": "Soft-Body Squash Simulation",
+      "styleAnchors": [
+        "Soft-Body Squash Simulation",
+        "soft-body physics simulation",
+        "volume-preserving squash"
+      ],
+      "ref": "pack_03/SP03-125.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "organic-character-and-bio-cgi",
+      "categoryName": "6. Organic Character And Bio CGI",
+      "domain": "soft-body physics simulation",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "organic-character-and-bio-cgi",
+        "soft-body-physics-simulation"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-125 soft-body squash simulation soft-body physics simulation volume-preserving squash 6. organic character and bio cgi organic cgi soft-body physics simulation pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi soft-body-physics-simulation"
+    },
+    {
+      "id": "SP03-126",
+      "name": "Animation Rig Overlay",
+      "styleAnchors": [
+        "Animation Rig Overlay",
+        "character rig preview",
+        "joint bone chain through the body"
+      ],
+      "ref": "pack_03/SP03-126.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "organic-character-and-bio-cgi",
+      "categoryName": "6. Organic Character And Bio CGI",
+      "domain": "character rig preview",
+      "tags": ["3d-and-cgi-rendering", "organic-character-and-bio-cgi", "character-rig-preview"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-126 animation rig overlay character rig preview joint bone chain through the body 6. organic character and bio cgi organic cgi character rig preview pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi character-rig-preview"
+    },
+    {
+      "id": "SP03-127",
+      "name": "Garment Fit Strain Map",
+      "styleAnchors": [
+        "Garment Fit Strain Map",
+        "cloth simulation strain visualization",
+        "blue-to-red strain heatmap"
+      ],
+      "ref": "pack_03/SP03-127.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "organic-character-and-bio-cgi",
+      "categoryName": "6. Organic Character And Bio CGI",
+      "domain": "cloth simulation strain visualization",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "organic-character-and-bio-cgi",
+        "cloth-simulation-strain-visualization"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-127 garment fit strain map cloth simulation strain visualization blue-to-red strain heatmap 6. organic character and bio cgi organic cgi cloth simulation strain visualization pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi cloth-simulation-strain-visualization"
+    },
+    {
+      "id": "SP03-128",
+      "name": "Chitin Exoskeleton Plating",
+      "styleAnchors": [
+        "Chitin Exoskeleton Plating",
+        "insect chitin surfacing",
+        "overlapping chitin plates"
+      ],
+      "ref": "pack_03/SP03-128.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "organic-character-and-bio-cgi",
+      "categoryName": "6. Organic Character And Bio CGI",
+      "domain": "insect chitin surfacing",
+      "tags": ["3d-and-cgi-rendering", "organic-character-and-bio-cgi", "insect-chitin-surfacing"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-128 chitin exoskeleton plating insect chitin surfacing overlapping chitin plates 6. organic character and bio cgi organic cgi insect chitin surfacing pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi insect-chitin-surfacing"
+    },
+    {
+      "id": "SP03-129",
+      "name": "Motion-Capture Marker Suit",
+      "styleAnchors": ["Motion-Capture Marker Suit", "motion-capture stage", "black marker suit"],
+      "ref": "pack_03/SP03-129.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "organic-character-and-bio-cgi",
+      "categoryName": "6. Organic Character And Bio CGI",
+      "domain": "motion-capture stage",
+      "tags": ["3d-and-cgi-rendering", "organic-character-and-bio-cgi", "motion-capture-stage"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-129 motion-capture marker suit motion-capture stage black marker suit 6. organic character and bio cgi organic cgi motion-capture stage pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi motion-capture-stage"
+    },
+    {
+      "id": "SP03-130",
+      "name": "Photoreal Creature Hide",
+      "styleAnchors": [
+        "Photoreal Creature Hide",
+        "film creature skin surfacing",
+        "multi-scale hide displacement"
+      ],
+      "ref": "pack_03/SP03-130.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "organic-character-and-bio-cgi",
+      "categoryName": "6. Organic Character And Bio CGI",
+      "domain": "film creature skin surfacing",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "organic-character-and-bio-cgi",
+        "film-creature-skin-surfacing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-130 photoreal creature hide film creature skin surfacing multi-scale hide displacement 6. organic character and bio cgi organic cgi film creature skin surfacing pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi film-creature-skin-surfacing"
+    },
+    {
+      "id": "SP03-131",
+      "name": "Animated-Film Food Render",
+      "styleAnchors": [
+        "Animated-Film Food Render",
+        "stylized animated-film food",
+        "plump simplified food shapes"
+      ],
+      "ref": "pack_03/SP03-131.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "organic-character-and-bio-cgi",
+      "categoryName": "6. Organic Character And Bio CGI",
+      "domain": "stylized animated-film food",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "organic-character-and-bio-cgi",
+        "stylized-animated-film-food"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-131 animated-film food render stylized animated-film food plump simplified food shapes 6. organic character and bio cgi organic cgi stylized animated-film food pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi stylized-animated-film-food"
     },
     {
       "id": "SP03-033",
@@ -1664,5 +1931,5 @@
       "searchableText": "sp03-044 thermal vision 8. sensor and technical shaders technical shaders pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders"
     }
   ],
-  "totalPresetCount": 118
+  "totalPresetCount": 131
 }

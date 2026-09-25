@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP03-128
+packId: pack_03
+name: Chitin Exoskeleton Plating
+styleAnchors:
+  - Chitin Exoskeleton Plating
+  - insect chitin surfacing
+  - overlapping chitin plates
+displayName: Chitin Exoskeleton Plating
+category: 6. Organic Character And Bio CGI
+domain: insect chitin surfacing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - organic-character-and-bio-cgi
+  - chitin
+  - exoskeleton
+  - structural-color
+visualDna:
+  aesthetic: "Chitin exoskeleton: the subject's outer shell rebuilt from overlapping lacquer-hard insect plates, joined by flexible membranes and edged with fine bristles."
+  subject_treatment: Keep the prompt subject recognizable with its pose, setting and camera view; rebuild its outer surface as segmented insect chitin plates with sutures and bristles, keeping its silhouette (a declared change), without forcing a T-pose or turning an object into an avatar.
+  color_and_tone: Deep beetle black, bronze-green or oil-slick structural iridescence shifting to violet at grazing angles, with amber membranes.
+  lighting_and_shadow: Macro studio key with sharp specular streaks on the curved plates and soft backlight through thin membranes.
+  texture_and_material: Glossy plates with micro-pitting, suture lines, hinged segments and fine setae hairs along every edge.
+  camera_and_composition: Keep the requested view; macro-like depth of field even at full-figure scale.
+  atmosphere_and_mood: Alien and armored, beautiful and faintly repellent.
+  rendering_and_quality: Structural color and plate hinges rendered precisely, not metal armor painted to look like a bug.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chitin Exoskeleton Plating as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: overlapping chitin plates; structural iridescence; flexible amber membranes; setae bristles; macro depth
+avoidRules:
+  - forced T-pose
+  - object turned into an avatar
+  - franchise likeness
+  - readable text
+  - logo
+  - painted metal armor
+  - extra insect legs
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, painted metal armor, extra insect legs, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: organic-character-and-bio-cgi
+  categoryName: 6. Organic Character And Bio CGI
+  tags:
+    - 3d-and-cgi-rendering
+    - organic-character-and-bio-cgi
+    - chitin
+    - exoskeleton
+    - structural-color
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: insect chitin surfacing

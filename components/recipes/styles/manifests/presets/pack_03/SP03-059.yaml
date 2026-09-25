@@ -3,7 +3,7 @@ id: SP03-059
 packId: pack_03
 name: Digital Fashion
 category: 6. Organic Character And Bio CGI
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,71 +12,44 @@ tags:
   - 3d-and-cgi-rendering
   - organic-character-and-bio-cgi
 visualDna:
-  aesthetic: >-
-    Digital Fashion acts as a transferable CGI-style router: start from Virtual clothing, Drape,
-    cloth dynamics and organic and character CGI system built from anatomy, grooming, cloth,
-    soft-body simulation, food material, medical cutaway, and believable sculpt topology, then apply
-    the 3D/render behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Cloth simulation; preserve the prompt subject while routing
-    it through organic form flow, garment dynamics, avatar readability, diagnostic cutaway, or
-    appetizing surface simulation, keeping the requested identity, silhouette, pose, object
-    function, or environment legible.
-  color_and_tone: >-
-    Build color with Iridescent, impossible fabric; let color follow skin, cloth, food, biological
-    tissue, mylar, medical material, fashion fabric, or stylized collectible accents without
-    flattening the shader, with deliberate value grouping, exposure control, and medium-specific
-    limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Runway; shape light through subsurface lift, cloth sheen, food steam, rim
-    grooming, diagnostic clarity, reflective foil, or studio character presentation, so value
-    structure supports the renderer and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Digital fabric, weave simulation; surface detail should show sculpt topology, pores,
-    muscles, wrinkles, cloth weave, droplets, mylar seams, cutaway planes, or organic growth flow,
-    keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Floating cloth; compose for model readability through turnarounds,
-    pose-neutral clarity, garment silhouette, cutaway hierarchy, appetizing macro, or avatar trait
-    legibility, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Futuristic, fashion material spectacle; derive mood from body realism, digital
-    fashion spectacle, clinical explanation, collectible identity, craving, celebration, or uncanny
-    organic transformation, letting the renderer alter interpretation without demanding a specific
-    story, location, or character.
-  rendering_and_quality: >-
-    Finish with Clo3D/Marvelous Designer digital garment simulation; finish with stable anatomy or
-    object structure, clean simulation, readable material detail, and no melted limbs or fake
-    plastic skin, clean denoised surfaces where appropriate, and enough shader evidence to make the
-    CGI mode recognizable.
-  key_features: >-
-    Virtual clothing; Drape, cloth dynamics; Iridescent, impossible fabric; Digital fabric, weave
-    simulation; Floating cloth
-  creative_brief: >-
-    Apply Digital Fashion as a CGI/render preset over prompt X: preserve the user's requested
-    subject, then route modeling, shader response, lighting, material scale, composition, mood, and
-    final render craft through Virtual clothing, Drape, cloth dynamics, Digital fabric, weave
-    simulation without requiring the card image's original subject.
+  aesthetic: 'Digital fashion: garments that exist only as cloth simulation, impossible fabrics draping, floating and folding with real weight on a body or on nothing at all.'
+  subject_treatment: Keep the prompt subject recognizable with its pose, setting and camera view; restyle its clothing into simulated digital garments, a wardrobe change, and dress an object or empty space only when the prompt asks (a declared change), without forcing a T-pose or turning an object into an avatar.
+  color_and_tone: Iridescent, liquid-metal or gradient-dyed fabrics against a neutral grey or deep charcoal studio background.
+  lighting_and_shadow: Soft studio key with bright specular sheen tracing every fold and a subtle colored bounce from the fabric.
+  texture_and_material: Simulated drape with gravity, compression folds, fluttering hems and impossible surfaces like liquid chrome or holographic knit.
+  camera_and_composition: Keep the requested view; enough fabric in motion that the simulation itself becomes the subject.
+  atmosphere_and_mood: Futuristic and weightless, couture freed from the sewing room.
+  rendering_and_quality: Physically plausible cloth with correct collision against the body, with no stiff shells or intersecting geometry.
+  key_features: cloth simulation drape; impossible fabrics; fluttering hems; specular sheen on folds; correct body collision
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Digital Fashion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - forced T-pose
+  - object turned into an avatar
+  - franchise likeness
+  - readable text
+  - logo
+  - stiff cloth shell
+  - cloth intersecting the body
   - stiff cloth
   - wrong medium
   - flat 2d paintover
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - melted anatomy
   - fake plastic skin
   - bad topology
   - rigging-breaking pose
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-059.webp
 attributes:
-  negativePrompt: >-
-    stiff cloth, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, melted anatomy, fake plastic skin, bad topology,
-    rigging-breaking pose
+  negativePrompt: forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, stiff cloth shell, cloth intersecting the body, stiff cloth, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

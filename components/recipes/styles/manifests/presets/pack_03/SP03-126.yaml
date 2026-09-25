@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP03-126
+packId: pack_03
+name: Animation Rig Overlay
+styleAnchors:
+  - Animation Rig Overlay
+  - character rig preview
+  - joint bone chain through the body
+displayName: Animation Rig Overlay
+category: 6. Organic Character And Bio CGI
+domain: character rig preview
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - organic-character-and-bio-cgi
+  - rigging
+  - animation
+  - bones
+visualDna:
+  aesthetic: 'Animation rig preview: a shaded character with its joint chain drawn through the body as slim bones and colored control curves orbiting the limbs.'
+  subject_treatment: Keep the prompt subject and its identity; this preset owns the rig-preview presentation of joint bones and colored control curves around the subject in its requested pose. It never forces a T-pose on a posed subject and never turns a requested object into an avatar.
+  color_and_tone: Neutral grey or lightly textured model, the bone chain in pale blue and control curves in saturated yellow, red and blue by side.
+  lighting_and_shadow: Flat even studio light with soft occlusion, keeping bones and curves readable over the model.
+  texture_and_material: Slim tapered bones from joint to joint, circle and arrow-shaped control curves and semi-transparent model skin.
+  camera_and_composition: Keep the requested view; the full rig visible, controls clear of the silhouette so it stays readable.
+  atmosphere_and_mood: Technical and expectant, a puppet waiting for its animator.
+  rendering_and_quality: Clean overlay of bones and curves with no interface panels, text, numbers or timeline.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Animation Rig Overlay as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: joint bone chain through the body; colored control curves by side; semi-transparent skin; even light; requested pose kept
+avoidRules:
+  - forced T-pose
+  - object turned into an avatar
+  - franchise likeness
+  - readable text
+  - logo
+  - interface panels
+  - timeline
+  - numbers
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, interface panels, timeline, numbers, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: organic-character-and-bio-cgi
+  categoryName: 6. Organic Character And Bio CGI
+  tags:
+    - 3d-and-cgi-rendering
+    - organic-character-and-bio-cgi
+    - rigging
+    - animation
+    - bones
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: character rig preview

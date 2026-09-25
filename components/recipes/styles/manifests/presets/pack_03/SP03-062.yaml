@@ -3,7 +3,7 @@ id: SP03-062
 packId: pack_03
 name: Organic Modeling
 category: 6. Organic Character And Bio CGI
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,56 +12,24 @@ tags:
   - 3d-and-cgi-rendering
   - organic-character-and-bio-cgi
 visualDna:
-  aesthetic: >-
-    Organic Modeling acts as a transferable CGI-style router: start from Organic modeling flow,
-    Muscle/Growth flow, dynamesh topology and organic and character CGI system built from anatomy,
-    grooming, cloth, soft-body simulation, food material, medical cutaway, and believable sculpt
-    topology, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo
-    image.
-  subject_treatment: >-
-    Transform any prompt subject through Flowing topology; preserve the prompt subject while routing
-    it through organic form flow, garment dynamics, avatar readability, diagnostic cutaway, or
-    appetizing surface simulation, keeping the requested identity, silhouette, pose, object
-    function, or environment legible.
-  color_and_tone: >-
-    Build color with Skin tones, green; let color follow skin, cloth, food, biological tissue,
-    mylar, medical material, fashion fabric, or stylized collectible accents without flattening the
-    shader, with deliberate value grouping, exposure control, and medium-specific limits rather than
-    generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Subsurface scattering; shape light through subsurface lift, cloth sheen,
-    food steam, rim grooming, diagnostic clarity, reflective foil, or studio character presentation,
-    so value structure supports the renderer and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Skin, bark, organic texture map; surface detail should show sculpt topology, pores,
-    muscles, wrinkles, cloth weave, droplets, mylar seams, cutaway planes, or organic growth flow,
-    keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Lookdev camera for Organic Modeling: three quarter or orthographic
-    framing, clean silhouette read, material highlights, controlled depth, and vertical card
-    composition; compose for model readability through turnarounds, pose-neutral clarity, garment
-    silhouette, cutaway hierarchy, appetizing macro, or avatar trait legibility, with scale,
-    spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Alive, natural, organic credibility; derive mood from body realism, digital
-    fashion spectacle, clinical explanation, collectible identity, craving, celebration, or uncanny
-    organic transformation, letting the renderer alter interpretation without demanding a specific
-    story, location, or character.
-  rendering_and_quality: >-
-    Finish with ZBrush digital sculpt, organic flow, natural forms; finish with stable anatomy or
-    object structure, clean simulation, readable material detail, and no melted limbs or fake
-    plastic skin, clean denoised surfaces where appropriate, and enough shader evidence to make the
-    CGI mode recognizable.
-  key_features: >-
-    Organic modeling flow; Muscle/Growth flow, dynamesh topology; Skin tones, green; Skin, bark,
-    organic texture map; Lookdev camera for Organic Modeling: three quarter or orthographic framing,
-    clean silhouette read, material highlights, controlled depth, and vertical card composition
-  creative_brief: >-
-    Apply Organic Modeling as a CGI/render preset over prompt X: preserve the user's requested
-    subject, then route modeling, shader response, lighting, material scale, composition, mood, and
-    final render craft through Organic modeling flow, Muscle/Growth flow, dynamesh topology, Skin,
-    bark, organic texture map without requiring the card image's original subject.
+  aesthetic: 'Organic digital sculpture presentation: the subject sculpted as flowing soft volumes whose planes follow muscle, growth and gravity, polypainted and shown on a turntable plinth.'
+  subject_treatment: Keep the prompt subject, action, pose, setting and camera view and rebuild its surfaces in this organic CGI method; never force a T-pose and never turn a requested object into an avatar.
+  color_and_tone: Muted polypaint in naturalistic hues of moss green, flesh and bark brown, with darker cavity tint and lighter peaks.
+  lighting_and_shadow: Soft three-point studio light with a warm key and cool rim, subsurface glow in thin parts like ears and fins.
+  texture_and_material: Muscle flow, skin folds, pores, wrinkles and bark grain sculpted into the surface, with no hard edges or panel seams.
+  camera_and_composition: Keep the requested view; the form placed on a simple round plinth against a dark gradient.
+  atmosphere_and_mood: Alive and tactile, a creature that seems to breathe under the light.
+  rendering_and_quality: Polypainted sculpt with real subsurface and form flow, distinct from a bare matcap sculpt and from a finished film-textured asset.
+  key_features: flowing muscle and growth planes; polypaint color; cavity tint; subsurface in thin parts; round turntable plinth
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Organic Modeling as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - forced T-pose
+  - object turned into an avatar
+  - franchise likeness
+  - readable text
+  - logo
+  - matcap-only grey clay
+  - panel seams
   - hard edge
   - robot
   - wrong medium
@@ -69,19 +37,20 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - melted anatomy
   - fake plastic skin
   - bad topology
   - rigging-breaking pose
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-062.webp
 attributes:
-  negativePrompt: >-
-    hard edge, robot, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, melted anatomy, fake plastic skin, bad topology,
-    rigging-breaking pose
+  negativePrompt: forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, matcap-only grey clay, panel seams, hard edge, robot, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

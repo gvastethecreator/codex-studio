@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP03-119
+packId: pack_03
+name: Photoreal Digital Human
+styleAnchors:
+  - Photoreal Digital Human
+  - offline digital human rendering
+  - layered subsurface skin
+displayName: Photoreal Digital Human
+category: 6. Organic Character And Bio CGI
+domain: offline digital human rendering
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - organic-character-and-bio-cgi
+  - digital-human
+  - skin-shading
+  - photoreal
+visualDna:
+  aesthetic: 'Photoreal digital human: an adult face and body built from layered skin shading of epidermis, dermis and blood, with groomed strand hair and wet, refractive eyes.'
+  subject_treatment: Keep the prompt subject, pose, setting and camera; render people as original photoreal adult digital humans, and leave non-human subjects in their own form at the same skin-level fidelity.
+  color_and_tone: Natural skin with red undertones in ears, nostrils and lips, uneven pigmentation, a slight flush and a true neutral grade.
+  lighting_and_shadow: Soft key with a clear catchlight, light bleeding red through thin skin at the edges of shadows.
+  texture_and_material: Pores, fine vellus hair, micro wrinkles, freckles and moles, strand-level brows and lashes and a wet meniscus on the eye.
+  camera_and_composition: Keep the requested view; an 85 mm portrait feel with one eye tack sharp.
+  atmosphere_and_mood: Intimate and unsettlingly present, a person who was never there.
+  rendering_and_quality: Path-traced skin and eye caustics with asymmetry kept, never waxy, airbrushed or doll-like.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Photoreal Digital Human as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: layered subsurface skin; strand hair and lashes; refractive wet eyes; pores and vellus hair; red light bleed in thin skin
+avoidRules:
+  - forced T-pose
+  - object turned into an avatar
+  - franchise likeness
+  - readable text
+  - logo
+  - real person likeness
+  - celebrity likeness
+  - waxy skin
+  - airbrushed skin
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, real person likeness, celebrity likeness, waxy skin, airbrushed skin, watermark, text, readable labels, UI overlay, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: organic-character-and-bio-cgi
+  categoryName: 6. Organic Character And Bio CGI
+  tags:
+    - 3d-and-cgi-rendering
+    - organic-character-and-bio-cgi
+    - digital-human
+    - skin-shading
+    - photoreal
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: offline digital human rendering

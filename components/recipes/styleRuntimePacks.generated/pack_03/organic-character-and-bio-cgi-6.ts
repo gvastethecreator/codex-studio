@@ -8,28 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Character Design (T-Pose)',
     category: '6. Organic Character And Bio CGI',
     negativePrompt:
-      'action pose, background, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose',
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, material swatch panels, extra views unless requested, background, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Character Design (T-Pose) acts as a transferable CGI-style router: start from Character model sheet, T Pose or A Pose, turn around clarity and organic and character CGI system built from anatomy, grooming, cloth, soft-body simulation, food material, medical cutaway, and believable sculpt topology, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Character model presentation: a finished 3D character standing on flat grey, lit evenly so proportions, costume construction and materials read without drama.',
       subject_treatment:
-        'Transform any prompt subject through Anatomical; preserve the prompt subject while routing it through organic form flow, garment dynamics, avatar readability, diagnostic cutaway, or appetizing surface simulation, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt character and costume; use a relaxed A-pose or T-pose only when the prompt leaves the pose open, keep any requested pose or action, and show one front view unless a turnaround is requested. An object stays an object on the same grey stage.',
       color_and_tone:
-        'Build color with Neutral light, skin tone accuracy; let color follow skin, cloth, food, biological tissue, mylar, medical material, fashion fabric, or stylized collectible accents without flattening the shader, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Neutral mid-grey backdrop, accurate unstylized skin and fabric colors, no color grade or tinted light.',
       lighting_and_shadow:
-        'Handle light through Flat, character sheet evenness; shape light through subsurface lift, cloth sheen, food steam, rim grooming, diagnostic clarity, reflective foil, or studio character presentation, so value structure supports the renderer and does not overwrite the requested content.',
+        'Large soft key and near-equal fill with a faint rim, shadows short and low in contrast so no detail hides.',
       texture_and_material:
-        'Render Skin, cloth, character assembly; surface detail should show sculpt topology, pores, muscles, wrinkles, cloth weave, droplets, mylar seams, cutaway planes, or organic growth flow, keeping material scale coherent and avoiding noisy filler texture.',
+        'Clean fabric weaves, leather seams, buckles and subsurface skin, every material clearly separated from the next.',
       camera_and_composition:
-        'Structure the image through Lookdev camera for Character Design (T Pose): three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for model readability through turnarounds, pose-neutral clarity, garment silhouette, cutaway hierarchy, appetizing macro, or avatar trait legibility, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Neutral, design, audition ready; derive mood from body realism, digital fashion spectacle, clinical explanation, collectible identity, craving, celebration, or uncanny organic transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Full figure centered with a long lens at chest height, feet visible on a soft contact shadow.',
+      atmosphere_and_mood: 'Neutral and ready, a character waiting for its first animation.',
       rendering_and_quality:
-        'Finish with Concept art, production, model sheet; finish with stable anatomy or object structure, clean simulation, readable material detail, and no melted limbs or fake plastic skin, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Production-clean model with symmetric construction, no background props, no swatch panels and no text.',
       key_features:
-        'Character model sheet; T Pose or A Pose, turn around clarity; Neutral light, skin tone accuracy; Skin, cloth, character assembly; Lookdev camera for Character Design (T Pose): three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
+        'neutral A-pose or T-pose only when unposed; flat grey backdrop; even soft lighting; full figure centered; material separation',
       creative_brief:
-        "Apply Character Design (T-Pose) as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Character model sheet, T Pose or A Pose, turn around clarity, Skin, cloth, character assembly without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Character Design (T-Pose) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +36,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Medical Illustration 3D',
     category: '6. Organic Character And Bio CGI',
     negativePrompt:
-      'gross, blood, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose',
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, labels, leader lines, wounds, gross, blood, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Medical Illustration 3D acts as a transferable CGI-style router: start from Clean diagnostic cutaway render, Label space, cutaway clarity and organic and character CGI system built from anatomy, grooming, cloth, soft-body simulation, food material, medical cutaway, and believable sculpt topology, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        "Medical 3D illustration: the subject's body made partly translucent so organs, vessels, bones and muscles show in layered, color-coded depth.",
       subject_treatment:
-        'Transform any prompt subject through Cutaway view; preserve the prompt subject while routing it through organic form flow, garment dynamics, avatar readability, diagnostic cutaway, or appetizing surface simulation, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject recognizable with its pose, setting and camera view; reveal its internal anatomy through translucent outer layers or a clean cutaway window, plausible for that creature, person or object (a declared change), without forcing a T-pose or turning an object into an avatar.',
       color_and_tone:
-        'Build color with Red, Blue, White, medical chart palettes; let color follow skin, cloth, food, biological tissue, mylar, medical material, fashion fabric, or stylized collectible accents without flattening the shader, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Clinical palette of red arteries, blue veins, yellow nerves, ivory bone and soft pink and plum organs inside milky translucent skin.',
       lighting_and_shadow:
-        'Handle light through Soft, clear, shadowless diagnostic; shape light through subsurface lift, cloth sheen, food steam, rim grooming, diagnostic clarity, reflective foil, or studio character presentation, so value structure supports the renderer and does not overwrite the requested content.',
+        'Soft shadowless wrap light with a gentle rim glow on the translucent skin edges and no dramatic cast shadows.',
       texture_and_material:
-        'Render Translucent layers, anatomical or system accuracy; surface detail should show sculpt topology, pores, muscles, wrinkles, cloth weave, droplets, mylar seams, cutaway planes, or organic growth flow, keeping material scale coherent and avoiding noisy filler texture.',
+        'Smooth glassy outer skin, satin organ surfaces, finely branching vessels and fibrous muscle bands.',
       camera_and_composition:
-        'Structure the image through Lookdev camera for Medical Illustration 3D: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for model readability through turnarounds, pose-neutral clarity, garment silhouette, cutaway hierarchy, appetizing macro, or avatar trait legibility, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Scientific, clean, knowledge dense; derive mood from body realism, digital fashion spectacle, clinical explanation, collectible identity, craving, celebration, or uncanny organic transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view on a white or pale blue backdrop, with open margin left around the subject.',
+      atmosphere_and_mood: 'Calm, clean and instructive, wonder without any gore.',
       rendering_and_quality:
-        'Finish with Textbook, educational, clinical reference; finish with stable anatomy or object structure, clean simulation, readable material detail, and no melted limbs or fake plastic skin, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Textbook-clean anatomy with no blood, wounds or labels, and structures plausible for the subject.',
       key_features:
-        'Clean diagnostic cutaway render; Label space, cutaway clarity; Red, Blue, White, medical chart palettes; Translucent layers, anatomical or system accuracy; Lookdev camera for Medical Illustration 3D: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
+        'translucent skin layer; color-coded arteries and veins; ivory bones; shadowless wrap light; pale backdrop',
       creative_brief:
-        "Apply Medical Illustration 3D as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Clean diagnostic cutaway render, Label space, cutaway clarity, Translucent layers, anatomical or system accuracy without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Medical Illustration 3D as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +64,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Food CGI',
     category: '6. Organic Character And Bio CGI',
     negativePrompt:
-      'rotten, dry, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose',
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, packaging, plastic-looking food, rotten, dry, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Food CGI acts as a transferable CGI-style router: start from Hyper appetizing food ad CGI, Water droplets, steam wisps and organic and character CGI system built from anatomy, grooming, cloth, soft-body simulation, food material, medical cutaway, and believable sculpt topology, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Food advertising CGI: the dish exploded into a frozen moment, ingredients levitating in an arc, sauces splashing and droplets suspended around the hero item.',
       subject_treatment:
-        'Transform any prompt subject through Juicy details; preserve the prompt subject while routing it through organic form flow, garment dynamics, avatar readability, diagnostic cutaway, or appetizing surface simulation, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject and its identity; this preset owns the frozen food-ad moment of levitating components, splash and steam around the requested food, and a non-food subject keeps its identity and only receives the glistening staging. It never forces a T-pose on a posed subject and never turns a requested object into an avatar.',
       color_and_tone:
-        'Build color with Saturated, fresh; let color follow skin, cloth, food, biological tissue, mylar, medical material, fashion fabric, or stylized collectible accents without flattening the shader, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Saturated fresh color of glossy reds, bright greens and golden crusts against a warm gradient or deep contrasting backdrop.',
       lighting_and_shadow:
-        'Handle light through Backlit steam; shape light through subsurface lift, cloth sheen, food steam, rim grooming, diagnostic clarity, reflective foil, or studio character presentation, so value structure supports the renderer and does not overwrite the requested content.',
+        'Strong backlight making steam and droplets glow, a soft front fill and specular pings on every wet surface.',
       texture_and_material:
-        'Render Wet, condensation, micro droplets; surface detail should show sculpt topology, pores, muscles, wrinkles, cloth weave, droplets, mylar seams, cutaway planes, or organic growth flow, keeping material scale coherent and avoiding noisy filler texture.',
+        'Micro droplets, condensation beads, crisp crumbs, glossy sauce ribbons and salt flakes caught in mid-air.',
       camera_and_composition:
-        'Structure the image through Flying ingredients; compose for model readability through turnarounds, pose-neutral clarity, garment silhouette, cutaway hierarchy, appetizing macro, or avatar trait legibility, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Delicious, hyperreal, crave inducing; derive mood from body realism, digital fashion spectacle, clinical explanation, collectible identity, craving, celebration, or uncanny organic transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Hero item centered low, components arcing around it on a diagonal, shallow depth with the nearest droplets sharp.',
+      atmosphere_and_mood: 'Crave-inducing and energetic, appetite frozen at its peak.',
       rendering_and_quality:
-        'Finish with Fast food hero ad polish, impossibly appetizing; finish with stable anatomy or object structure, clean simulation, readable material detail, and no melted limbs or fake plastic skin, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Hyperreal simulation of splashes and particles, glossy but never plastic, with no packaging text or brand marks.',
       key_features:
-        'Hyper appetizing food ad CGI; Water droplets, steam wisps; Saturated, fresh; Wet, condensation, micro droplets; Flying ingredients',
+        'levitating ingredient arc; frozen splashes and droplets; backlit steam; specular pings; diagonal hero composition',
       creative_brief:
-        "Apply Food CGI as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Hyper appetizing food ad CGI, Water droplets, steam wisps, Wet, condensation, micro droplets without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Food CGI as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +92,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'NFT Collectible Avatar Render',
     category: '6. Organic Character And Bio CGI',
     negativePrompt:
-      'traditional art, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose',
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, numbers, rarity labels, ape character, traditional art, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'NFT Collectible Avatar Render acts as a transferable CGI-style router: start from Collectible avatar render language, Profile view, trait accessories and organic and character CGI system built from anatomy, grooming, cloth, soft-body simulation, food material, medical cutaway, and believable sculpt topology, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Collectible avatar render: a stylized bust centered on a flat color field, built from a few chunky trait pieces such as headwear, eyewear, clothing and one accessory in glossy toy materials.',
       subject_treatment:
-        'Transform any prompt subject through Clean; preserve the prompt subject while routing it through organic form flow, garment dynamics, avatar readability, diagnostic cutaway, or appetizing surface simulation, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject and its identity; this preset owns the centered bust framing on a flat color field with glossy trait accessories for a person or creature, while a requested object stays that object, centered on the same field and never given a face. It never forces a T-pose on a posed subject and never turns a requested object into an avatar.',
       color_and_tone:
-        'Build color with Neon, Gold, Rare traits, rarity gradient; let color follow skin, cloth, food, biological tissue, mylar, medical material, fashion fabric, or stylized collectible accents without flattening the shader, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'One flat saturated background color, rich gold and neon accents, and soft pastel or gem-colored trait pieces.',
       lighting_and_shadow:
-        'Handle light through Studio, promo ready; shape light through subsurface lift, cloth sheen, food steam, rim grooming, diagnostic clarity, reflective foil, or studio character presentation, so value structure supports the renderer and does not overwrite the requested content.',
+        'Clean front-left studio softbox with a bright rim light and glossy highlights on every accessory.',
       texture_and_material:
-        'Render Plastic, Metal, collectible finish; surface detail should show sculpt topology, pores, muscles, wrinkles, cloth weave, droplets, mylar seams, cutaway planes, or organic growth flow, keeping material scale coherent and avoiding noisy filler texture.',
+        'Smooth vinyl skin, glossy lacquered accessories, brushed gold chains and soft fabric hoods.',
       camera_and_composition:
-        'Structure the image through Lookdev camera for NFT Collectible Avatar Render: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for model readability through turnarounds, pose-neutral clarity, garment silhouette, cutaway hierarchy, appetizing macro, or avatar trait legibility, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+        'Chest-up bust, perfectly centered in a slight three-quarter turn, with identical margins as if one of a series.',
       atmosphere_and_mood:
-        'Keep the mood Hype, digital, exclusive drop; derive mood from body realism, digital fashion spectacle, clinical explanation, collectible identity, craving, celebration, or uncanny organic transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Confident and collectible, a character assembled from swappable traits.',
       rendering_and_quality:
-        'Finish with Bored Ape 3D collectible, avatar centric hype; finish with stable anatomy or object structure, clean simulation, readable material detail, and no melted limbs or fake plastic skin, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Clean toy-like render with no background detail, no rarity text, no numbers and no brand marks.',
       key_features:
-        'Collectible avatar render language; Profile view, trait accessories; Neon, Gold, Rare traits, rarity gradient; Plastic, Metal, collectible finish; Lookdev camera for NFT Collectible Avatar Render: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
+        'centered chest-up bust; flat color field; swappable trait accessories; glossy vinyl and gold; bright rim light',
       creative_brief:
-        "Apply NFT Collectible Avatar Render as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Collectible avatar render language, Profile view, trait accessories, Plastic, Metal, collectible finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies NFT Collectible Avatar Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +121,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Digital Fashion',
     category: '6. Organic Character And Bio CGI',
     negativePrompt:
-      'stiff cloth, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose',
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, stiff cloth shell, cloth intersecting the body, stiff cloth, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Digital Fashion acts as a transferable CGI-style router: start from Virtual clothing, Drape, cloth dynamics and organic and character CGI system built from anatomy, grooming, cloth, soft-body simulation, food material, medical cutaway, and believable sculpt topology, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Digital fashion: garments that exist only as cloth simulation, impossible fabrics draping, floating and folding with real weight on a body or on nothing at all.',
       subject_treatment:
-        'Transform any prompt subject through Cloth simulation; preserve the prompt subject while routing it through organic form flow, garment dynamics, avatar readability, diagnostic cutaway, or appetizing surface simulation, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject recognizable with its pose, setting and camera view; restyle its clothing into simulated digital garments, a wardrobe change, and dress an object or empty space only when the prompt asks (a declared change), without forcing a T-pose or turning an object into an avatar.',
       color_and_tone:
-        'Build color with Iridescent, impossible fabric; let color follow skin, cloth, food, biological tissue, mylar, medical material, fashion fabric, or stylized collectible accents without flattening the shader, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Iridescent, liquid-metal or gradient-dyed fabrics against a neutral grey or deep charcoal studio background.',
       lighting_and_shadow:
-        'Handle light through Runway; shape light through subsurface lift, cloth sheen, food steam, rim grooming, diagnostic clarity, reflective foil, or studio character presentation, so value structure supports the renderer and does not overwrite the requested content.',
+        'Soft studio key with bright specular sheen tracing every fold and a subtle colored bounce from the fabric.',
       texture_and_material:
-        'Render Digital fabric, weave simulation; surface detail should show sculpt topology, pores, muscles, wrinkles, cloth weave, droplets, mylar seams, cutaway planes, or organic growth flow, keeping material scale coherent and avoiding noisy filler texture.',
+        'Simulated drape with gravity, compression folds, fluttering hems and impossible surfaces like liquid chrome or holographic knit.',
       camera_and_composition:
-        'Structure the image through Floating cloth; compose for model readability through turnarounds, pose-neutral clarity, garment silhouette, cutaway hierarchy, appetizing macro, or avatar trait legibility, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Futuristic, fashion material spectacle; derive mood from body realism, digital fashion spectacle, clinical explanation, collectible identity, craving, celebration, or uncanny organic transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; enough fabric in motion that the simulation itself becomes the subject.',
+      atmosphere_and_mood: 'Futuristic and weightless, couture freed from the sewing room.',
       rendering_and_quality:
-        'Finish with Clo3D/Marvelous Designer digital garment simulation; finish with stable anatomy or object structure, clean simulation, readable material detail, and no melted limbs or fake plastic skin, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Physically plausible cloth with correct collision against the body, with no stiff shells or intersecting geometry.',
       key_features:
-        'Virtual clothing; Drape, cloth dynamics; Iridescent, impossible fabric; Digital fabric, weave simulation; Floating cloth',
+        'cloth simulation drape; impossible fabrics; fluttering hems; specular sheen on folds; correct body collision',
       creative_brief:
-        "Apply Digital Fashion as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Virtual clothing, Drape, cloth dynamics, Digital fabric, weave simulation without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Digital Fashion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,57 +149,546 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Organic Modeling',
     category: '6. Organic Character And Bio CGI',
     negativePrompt:
-      'hard edge, robot, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose',
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, matcap-only grey clay, panel seams, hard edge, robot, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Organic Modeling acts as a transferable CGI-style router: start from Organic modeling flow, Muscle/Growth flow, dynamesh topology and organic and character CGI system built from anatomy, grooming, cloth, soft-body simulation, food material, medical cutaway, and believable sculpt topology, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Organic digital sculpture presentation: the subject sculpted as flowing soft volumes whose planes follow muscle, growth and gravity, polypainted and shown on a turntable plinth.',
       subject_treatment:
-        'Transform any prompt subject through Flowing topology; preserve the prompt subject while routing it through organic form flow, garment dynamics, avatar readability, diagnostic cutaway, or appetizing surface simulation, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, action, pose, setting and camera view and rebuild its surfaces in this organic CGI method; never force a T-pose and never turn a requested object into an avatar.',
       color_and_tone:
-        'Build color with Skin tones, green; let color follow skin, cloth, food, biological tissue, mylar, medical material, fashion fabric, or stylized collectible accents without flattening the shader, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Muted polypaint in naturalistic hues of moss green, flesh and bark brown, with darker cavity tint and lighter peaks.',
       lighting_and_shadow:
-        'Handle light through Subsurface scattering; shape light through subsurface lift, cloth sheen, food steam, rim grooming, diagnostic clarity, reflective foil, or studio character presentation, so value structure supports the renderer and does not overwrite the requested content.',
+        'Soft three-point studio light with a warm key and cool rim, subsurface glow in thin parts like ears and fins.',
       texture_and_material:
-        'Render Skin, bark, organic texture map; surface detail should show sculpt topology, pores, muscles, wrinkles, cloth weave, droplets, mylar seams, cutaway planes, or organic growth flow, keeping material scale coherent and avoiding noisy filler texture.',
+        'Muscle flow, skin folds, pores, wrinkles and bark grain sculpted into the surface, with no hard edges or panel seams.',
       camera_and_composition:
-        'Structure the image through Lookdev camera for Organic Modeling: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for model readability through turnarounds, pose-neutral clarity, garment silhouette, cutaway hierarchy, appetizing macro, or avatar trait legibility, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Alive, natural, organic credibility; derive mood from body realism, digital fashion spectacle, clinical explanation, collectible identity, craving, celebration, or uncanny organic transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; the form placed on a simple round plinth against a dark gradient.',
+      atmosphere_and_mood: 'Alive and tactile, a creature that seems to breathe under the light.',
       rendering_and_quality:
-        'Finish with ZBrush digital sculpt, organic flow, natural forms; finish with stable anatomy or object structure, clean simulation, readable material detail, and no melted limbs or fake plastic skin, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Polypainted sculpt with real subsurface and form flow, distinct from a bare matcap sculpt and from a finished film-textured asset.',
       key_features:
-        'Organic modeling flow; Muscle/Growth flow, dynamesh topology; Skin tones, green; Skin, bark, organic texture map; Lookdev camera for Organic Modeling: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
+        'flowing muscle and growth planes; polypaint color; cavity tint; subsurface in thin parts; round turntable plinth',
       creative_brief:
-        "Apply Organic Modeling as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Organic modeling flow, Muscle/Growth flow, dynamesh topology, Skin, bark, organic texture map without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Organic Modeling as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP03-076',
-    name: 'Balloon Art (Inflatable)',
+    name: 'Mylar Foil Balloon Render',
+    displayName: 'Mylar Foil Balloon Render',
+    styleAnchors: ['Mylar Foil Balloon Render', 'Balloon Art (Inflatable)'],
     category: '6. Organic Character And Bio CGI',
     negativePrompt:
-      'hard, heavy, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose',
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, twisted latex balloon animal, solid chrome sculpture, gallery artist likeness, hard, heavy, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Balloon Art (Inflatable) acts as a transferable CGI-style router: start from Mylar balloons, Seams, reflective curves and organic and character CGI system built from anatomy, grooming, cloth, soft-body simulation, food material, medical cutaway, and believable sculpt topology, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Mylar foil balloon: the subject rebuilt as an inflated metallic-foil balloon, two flat sheets heat-sealed at the rim and puffed into soft pillowed forms.',
       subject_treatment:
-        'Transform any prompt subject through Seams, wrinkles; preserve the prompt subject while routing it through organic form flow, garment dynamics, avatar readability, diagnostic cutaway, or appetizing surface simulation, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, action, pose, setting and camera view and rebuild its surfaces in this organic CGI method; never force a T-pose and never turn a requested object into an avatar.',
       color_and_tone:
-        'Build color with Metallic foil; let color follow skin, cloth, food, biological tissue, mylar, medical material, fashion fabric, or stylized collectible accents without flattening the shader, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Mirror silver, gold, rose gold or candy-tinted foil reflecting the surroundings in warped color.',
       lighting_and_shadow:
-        'Handle light through High reflection; shape light through subsurface lift, cloth sheen, food steam, rim grooming, diagnostic clarity, reflective foil, or studio character presentation, so value structure supports the renderer and does not overwrite the requested content.',
+        'Bright studio or party lights producing broad warped reflections and hot specular spots along the curves.',
       texture_and_material:
-        'Render Wrinkled foil, mylar shimmer; surface detail should show sculpt topology, pores, muscles, wrinkles, cloth weave, droplets, mylar seams, cutaway planes, or organic growth flow, keeping material scale coherent and avoiding noisy filler texture.',
+        'Crimped heat-sealed edge seams, radial pinch wrinkles where forms narrow, a small valve tail and no hard volumes.',
       camera_and_composition:
-        'Structure the image through Inflated; compose for model readability through turnarounds, pose-neutral clarity, garment silhouette, cutaway hierarchy, appetizing macro, or avatar trait legibility, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Fun, pop art, celebration; derive mood from body realism, digital fashion spectacle, clinical explanation, collectible identity, craving, celebration, or uncanny organic transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; the flat-sided pillowed profile reads clearly and floats slightly.',
+      atmosphere_and_mood: 'Festive and slightly absurd, a celebration you could pop with a pin.',
       rendering_and_quality:
-        'Finish with Jeff Koons gallery scale pop, party spectacle; finish with stable anatomy or object structure, clean simulation, readable material detail, and no melted limbs or fake plastic skin, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Thin inflated foil with seams and wrinkles, distinct from twisted latex balloon animals and from solid chrome.',
       key_features:
-        'Mylar balloons; Seams, reflective curves; Metallic foil; Wrinkled foil, mylar shimmer; Inflated',
+        'heat-sealed crimped rim seam; pillowed flat-sheet volumes; pinch wrinkles; warped mirror reflections; floating lightness',
       creative_brief:
-        "Apply Balloon Art (Inflatable) as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Mylar balloons, Seams, reflective curves, Wrinkled foil, mylar shimmer without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mylar Foil Balloon Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP03-119',
+    name: 'Photoreal Digital Human',
+    displayName: 'Photoreal Digital Human',
+    styleAnchors: [
+      'Photoreal Digital Human',
+      'offline digital human rendering',
+      'layered subsurface skin',
+    ],
+    category: '6. Organic Character And Bio CGI',
+    domain: 'offline digital human rendering',
+    negativePrompt:
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, real person likeness, celebrity likeness, waxy skin, airbrushed skin, watermark, text, readable labels, UI overlay, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Photoreal digital human: an adult face and body built from layered skin shading of epidermis, dermis and blood, with groomed strand hair and wet, refractive eyes.',
+      subject_treatment:
+        'Keep the prompt subject, pose, setting and camera; render people as original photoreal adult digital humans, and leave non-human subjects in their own form at the same skin-level fidelity.',
+      color_and_tone:
+        'Natural skin with red undertones in ears, nostrils and lips, uneven pigmentation, a slight flush and a true neutral grade.',
+      lighting_and_shadow:
+        'Soft key with a clear catchlight, light bleeding red through thin skin at the edges of shadows.',
+      texture_and_material:
+        'Pores, fine vellus hair, micro wrinkles, freckles and moles, strand-level brows and lashes and a wet meniscus on the eye.',
+      camera_and_composition:
+        'Keep the requested view; an 85 mm portrait feel with one eye tack sharp.',
+      atmosphere_and_mood: 'Intimate and unsettlingly present, a person who was never there.',
+      rendering_and_quality:
+        'Path-traced skin and eye caustics with asymmetry kept, never waxy, airbrushed or doll-like.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Photoreal Digital Human as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'layered subsurface skin; strand hair and lashes; refractive wet eyes; pores and vellus hair; red light bleed in thin skin',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-120',
+    name: 'Hand-Painted Texture Character',
+    displayName: 'Hand-Painted Texture Character',
+    styleAnchors: [
+      'Hand-Painted Texture Character',
+      'hand-painted texture game character',
+      'painted-in highlights and shadows',
+    ],
+    category: '6. Organic Character And Bio CGI',
+    domain: 'hand-painted texture game character',
+    negativePrompt:
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, photoreal skin, glossy reflections, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hand-painted texture CGI: chunky stylized 3D forms whose lighting, highlights and occlusion are painted straight into the color texture and rendered almost unlit.',
+      subject_treatment:
+        'Keep the prompt subject recognizable with its pose, setting and camera view; rebuild it with chunky stylized proportions of large hands, feet and shoulders (a declared change), without forcing a T-pose or turning an object into an avatar.',
+      color_and_tone:
+        'Warm saturated painted palette, highlights painted as pale warm strokes and shadows as cool purple washes in the texture.',
+      lighting_and_shadow:
+        'Mostly flat, unlit shading where the painted texture carries form, with only a soft ambient and a faint rim.',
+      texture_and_material:
+        'Visible brush strokes on armor, cloth and skin, painted edge highlights on every bevel, no specular or normal maps.',
+      camera_and_composition:
+        'Keep the requested view; a slightly high three-quarter angle suits the chunky silhouette.',
+      atmosphere_and_mood:
+        'Warm and adventurous, the friendly heft of an old online fantasy world.',
+      rendering_and_quality:
+        'Diffuse-only painted look on low-poly silhouettes, with no photoreal shading or glossy reflections.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hand-Painted Texture Character as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'painted-in highlights and shadows; chunky proportions; visible brush strokes in textures; diffuse-only shading; bright edge highlights',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-121',
+    name: 'Écorché Muscle Study',
+    displayName: 'Écorché Muscle Study',
+    styleAnchors: ['Écorché Muscle Study', 'flayed anatomical sculpture', 'flayed muscle groups'],
+    category: '6. Organic Character And Bio CGI',
+    domain: 'flayed anatomical sculpture',
+    negativePrompt:
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, blood, gore, open wounds, exposed organs, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Écorché muscle study: the subject shown as a flayed anatomical sculpture, each muscle a distinct striated form wrapping the bone like a classical art-school figure.',
+      subject_treatment:
+        'Keep the prompt subject recognizable with its pose, setting and camera view; show it without skin, with every muscle group, tendon and superficial vein sculpted as an anatomical study, never wounded or bloody (a declared change), without forcing a T-pose or turning an object into an avatar.',
+      color_and_tone:
+        'Muted terracotta and brick-red muscle, pearly ivory tendons and fascia, bone white at the joints.',
+      lighting_and_shadow:
+        'Single high sculpture key from the upper side carving each muscle belly with soft rounded shadow.',
+      texture_and_material:
+        'Fine directional striations along the fibers, glossy tendon sheaths and crisp origin and insertion points.',
+      camera_and_composition:
+        'Keep the requested view; the pose shows muscles in contraction and stretch.',
+      atmosphere_and_mood:
+        'Studious and powerful, the machinery of movement laid bare without horror.',
+      rendering_and_quality:
+        'Clean museum-model finish with no blood, gore, wounds or exposed organs.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Écorché Muscle Study as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'flayed muscle groups; fiber striations; ivory tendons; single high sculpture key; clean museum finish',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-122',
+    name: 'Articulated Skeleton Render',
+    displayName: 'Articulated Skeleton Render',
+    styleAnchors: [
+      'Articulated Skeleton Render',
+      'natural-history skeleton mount',
+      'articulated bones',
+    ],
+    category: '6. Organic Character And Bio CGI',
+    domain: 'natural-history skeleton mount',
+    negativePrompt:
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, flesh, gore, cartoon skeleton, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Natural-history skeleton mount: the subject reduced to its articulated bones, wired together in a lifelike pose on slender iron rods like a museum display.',
+      subject_treatment:
+        'Keep the prompt subject recognizable with its pose, setting and camera view; show it as its own articulated skeleton mounted on a thin iron armature, anatomically plausible for the creature (a declared change), without forcing a T-pose or turning an object into an avatar.',
+      color_and_tone:
+        'Aged ivory to tea-brown bone with darker staining at the joints, a black iron armature and a neutral gallery backdrop.',
+      lighting_and_shadow:
+        'Museum gallery spots from above casting crisp rib shadows across the plinth and floor.',
+      texture_and_material:
+        'Bone porosity, suture lines on the skull, worn joint surfaces, wire loops and brass pins at the joints.',
+      camera_and_composition:
+        'Keep the requested view; the full skeleton reads as a silhouette of ribs and limb bones.',
+      atmosphere_and_mood: 'Solemn and scholarly, a life reconstructed from what remains.',
+      rendering_and_quality:
+        'Plausible bone count and joints for the species or invented creature, with no flesh and no gore.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Articulated Skeleton Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'articulated bones; iron armature rods; ivory to tea-brown bone; rib shadows from gallery spots; brass joint pins',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-123',
+    name: 'Differential Growth Folds',
+    displayName: 'Differential Growth Folds',
+    styleAnchors: [
+      'Differential Growth Folds',
+      'differential growth surface',
+      'crinkled ruffled edges',
+    ],
+    category: '6. Organic Character And Bio CGI',
+    domain: 'differential growth surface',
+    negativePrompt:
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, noise displacement, repeating tiles, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        "Differential growth: the subject's surfaces grown into dense crinkled ruffles like lettuce coral, kale or brain folds, where the edge outgrows the center.",
+      subject_treatment:
+        'Keep the prompt subject recognizable with its pose, setting and camera view; rebuild its surfaces as densely ruffled differential-growth folds while its silhouette stays readable (a declared change), without forcing a T-pose or turning an object into an avatar.',
+      color_and_tone:
+        'One organic hue per form, such as coral pink, pale sea green or bone white, darker deep inside the folds.',
+      lighting_and_shadow:
+        'Soft top light with deep occlusion between the ruffles and subsurface glow on the thin fold edges.',
+      texture_and_material:
+        'Ever-smaller wavy frills, thin membrane edges of consistent thickness, no seams and no repeating tiles.',
+      camera_and_composition:
+        'Keep the requested view; the silhouette stays clear while the surface boils with folds.',
+      atmosphere_and_mood: 'Hypnotic and alive, a form that kept growing after it was finished.',
+      rendering_and_quality:
+        'Simulation-grown surface with self-avoiding folds, not noise displacement or fractal copies.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Differential Growth Folds as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'crinkled ruffled edges; edge-outgrows-center folds; deep fold occlusion; subsurface on thin edges; single organic hue',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-124',
+    name: 'Space-Colonization Vine Overgrowth',
+    displayName: 'Space-Colonization Vine Overgrowth',
+    styleAnchors: [
+      'Space-Colonization Vine Overgrowth',
+      'procedural vine growth',
+      'algorithmic branching vines',
+    ],
+    category: '6. Organic Character And Bio CGI',
+    domain: 'procedural vine growth',
+    negativePrompt:
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, floating leaves, random green noise, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Procedural vine overgrowth: branching stems grown by a space-colonization algorithm, climbing and wrapping every surface of the subject toward the light.',
+      subject_treatment:
+        'Keep the prompt subject recognizable with its pose, setting and camera view; grow procedural vines, roots and leaves over it along its surfaces without hiding its silhouette or changing what it is (a declared change), without forcing a T-pose or turning an object into an avatar.',
+      color_and_tone:
+        "Fresh leaf greens and dark stems with small pale blossoms, laid over the subject's own colors.",
+      lighting_and_shadow:
+        'Directional sunlight with dappled leaf shadows on the subject beneath and backlit translucent leaves.',
+      texture_and_material:
+        'Branch thickness tapering from root to tip, tendrils gripping edges and leaves turned toward the light.',
+      camera_and_composition:
+        'Keep the requested view; the growth direction of the vines leads the eye upward across the subject.',
+      atmosphere_and_mood: 'Patient and reclaiming, nature quietly taking something back.',
+      rendering_and_quality:
+        'Branching with correct taper and attachment, with no floating leaves or random green noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Space-Colonization Vine Overgrowth as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'algorithmic branching vines; taper from root to tip; tendrils gripping edges; dappled leaf shadows; growth toward light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-125',
+    name: 'Soft-Body Squash Simulation',
+    displayName: 'Soft-Body Squash Simulation',
+    styleAnchors: [
+      'Soft-Body Squash Simulation',
+      'soft-body physics simulation',
+      'volume-preserving squash',
+    ],
+    category: '6. Organic Character And Bio CGI',
+    domain: 'soft-body physics simulation',
+    negativePrompt:
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, melting, liquid splash, shattering, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Soft-body simulation: the subject behaving like a volume-preserving jelly, squashed against surfaces, bulging between obstacles and wobbling mid-bounce.',
+      subject_treatment:
+        'Keep the prompt subject, its material, setting and camera; simulate it as a soft body that squashes, bulges and jiggles on contact while preserving its volume.',
+      color_and_tone:
+        "The subject's own colors, a little brighter where it is stretched thin and deeper where it compresses.",
+      lighting_and_shadow:
+        'Clean studio key with glossy highlights stretching and pinching along the deformed curves.',
+      texture_and_material:
+        'Smooth surfaces with compression bulges, stretch lines, flattened contact patches and ripples frozen mid-wobble.',
+      camera_and_composition:
+        'Keep the requested view; a contact point or obstacle stays in frame to show the squash.',
+      atmosphere_and_mood: 'Playful and tactile, satisfying enough to want to poke.',
+      rendering_and_quality:
+        'Volume-preserving deformation with believable contact; not melting, not liquid and not broken.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soft-Body Squash Simulation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'volume-preserving squash; bulges between obstacles; flattened contact patches; frozen wobble ripples; stretched highlights',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-126',
+    name: 'Animation Rig Overlay',
+    displayName: 'Animation Rig Overlay',
+    styleAnchors: [
+      'Animation Rig Overlay',
+      'character rig preview',
+      'joint bone chain through the body',
+    ],
+    category: '6. Organic Character And Bio CGI',
+    domain: 'character rig preview',
+    negativePrompt:
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, interface panels, timeline, numbers, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Animation rig preview: a shaded character with its joint chain drawn through the body as slim bones and colored control curves orbiting the limbs.',
+      subject_treatment:
+        'Keep the prompt subject and its identity; this preset owns the rig-preview presentation of joint bones and colored control curves around the subject in its requested pose. It never forces a T-pose on a posed subject and never turns a requested object into an avatar.',
+      color_and_tone:
+        'Neutral grey or lightly textured model, the bone chain in pale blue and control curves in saturated yellow, red and blue by side.',
+      lighting_and_shadow:
+        'Flat even studio light with soft occlusion, keeping bones and curves readable over the model.',
+      texture_and_material:
+        'Slim tapered bones from joint to joint, circle and arrow-shaped control curves and semi-transparent model skin.',
+      camera_and_composition:
+        'Keep the requested view; the full rig visible, controls clear of the silhouette so it stays readable.',
+      atmosphere_and_mood: 'Technical and expectant, a puppet waiting for its animator.',
+      rendering_and_quality:
+        'Clean overlay of bones and curves with no interface panels, text, numbers or timeline.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Animation Rig Overlay as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'joint bone chain through the body; colored control curves by side; semi-transparent skin; even light; requested pose kept',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-127',
+    name: 'Garment Fit Strain Map',
+    displayName: 'Garment Fit Strain Map',
+    styleAnchors: [
+      'Garment Fit Strain Map',
+      'cloth simulation strain visualization',
+      'blue-to-red strain heatmap',
+    ],
+    category: '6. Organic Character And Bio CGI',
+    domain: 'cloth simulation strain visualization',
+    negativePrompt:
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, legend, scale bar, numbers, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Garment fit strain map: simulated clothing colored by a stress heatmap, cool blue where fabric hangs loose, green to red where it stretches tight.',
+      subject_treatment:
+        'Keep the prompt subject and its identity; this preset owns the fit-check presentation of fabric colored by strain, on the requested wearer in their pose or, when none is given, on a faceless grey fit form; a fabric object is mapped on its own cloth. It never forces a T-pose on a posed subject and never turns a requested object into an avatar.',
+      color_and_tone:
+        'Smooth blue-green-yellow-red gradient across the fabric, neutral grey skin and a dark neutral backdrop.',
+      lighting_and_shadow:
+        'Soft even light that keeps the heatmap colors true while the folds still read in shade.',
+      texture_and_material:
+        'Simulated folds, tension lines radiating from stress points at shoulders, elbows and seams, and visible seam lines.',
+      camera_and_composition:
+        'Keep the requested view; the full garment in frame with its stress points clearly visible.',
+      atmosphere_and_mood: 'Clinical and revealing, the place where cloth fights the body.',
+      rendering_and_quality:
+        'Continuous heatmap across the cloth mesh with no legend, scale bar, numbers or interface.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Garment Fit Strain Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'blue-to-red strain heatmap; tension lines from stress points; grey fit form or wearer; visible seams; no legend',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-128',
+    name: 'Chitin Exoskeleton Plating',
+    displayName: 'Chitin Exoskeleton Plating',
+    styleAnchors: [
+      'Chitin Exoskeleton Plating',
+      'insect chitin surfacing',
+      'overlapping chitin plates',
+    ],
+    category: '6. Organic Character And Bio CGI',
+    domain: 'insect chitin surfacing',
+    negativePrompt:
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, painted metal armor, extra insect legs, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        "Chitin exoskeleton: the subject's outer shell rebuilt from overlapping lacquer-hard insect plates, joined by flexible membranes and edged with fine bristles.",
+      subject_treatment:
+        'Keep the prompt subject recognizable with its pose, setting and camera view; rebuild its outer surface as segmented insect chitin plates with sutures and bristles, keeping its silhouette (a declared change), without forcing a T-pose or turning an object into an avatar.',
+      color_and_tone:
+        'Deep beetle black, bronze-green or oil-slick structural iridescence shifting to violet at grazing angles, with amber membranes.',
+      lighting_and_shadow:
+        'Macro studio key with sharp specular streaks on the curved plates and soft backlight through thin membranes.',
+      texture_and_material:
+        'Glossy plates with micro-pitting, suture lines, hinged segments and fine setae hairs along every edge.',
+      camera_and_composition:
+        'Keep the requested view; macro-like depth of field even at full-figure scale.',
+      atmosphere_and_mood: 'Alien and armored, beautiful and faintly repellent.',
+      rendering_and_quality:
+        'Structural color and plate hinges rendered precisely, not metal armor painted to look like a bug.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chitin Exoskeleton Plating as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'overlapping chitin plates; structural iridescence; flexible amber membranes; setae bristles; macro depth',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-129',
+    name: 'Motion-Capture Marker Suit',
+    displayName: 'Motion-Capture Marker Suit',
+    styleAnchors: ['Motion-Capture Marker Suit', 'motion-capture stage', 'black marker suit'],
+    category: '6. Organic Character And Bio CGI',
+    domain: 'motion-capture stage',
+    negativePrompt:
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, monitors, skeleton overlay, costume instead of marker suit, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Motion-capture stage: a performer in a tight black suit studded with small reflective marker balls, standing in a grey capture volume ringed by cameras.',
+      subject_treatment:
+        'Keep the prompt subject and its identity; this preset owns the capture-stage look, where the requested performer, creature or prop keeps its pose while wearing a black marker suit or carrying reflective markers. It never forces a T-pose on a posed subject and never turns a requested object into an avatar.',
+      color_and_tone:
+        'Matte black suit, bright white-grey markers glowing under the capture strobes, and a cool grey floor with a taped grid.',
+      lighting_and_shadow:
+        'Ring-light strobes around the volume make every marker flare, with soft top light over the stage.',
+      texture_and_material:
+        'Hook-and-loop patches, stretch fabric, a headband and face dots, and props wrapped in grey tape with markers.',
+      camera_and_composition:
+        "Keep the requested view; the performer's pose is the focus with capture cameras visible at the edges.",
+      atmosphere_and_mood:
+        'Behind-the-scenes and intense, an actor pretending hard in an empty room.',
+      rendering_and_quality:
+        'Photoreal production still with no screens, skeleton overlays, numbers or interface.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Motion-Capture Marker Suit as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'black marker suit; reflective marker balls; grey capture volume; ring-light strobes; taped proxy props',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-130',
+    name: 'Photoreal Creature Hide',
+    displayName: 'Photoreal Creature Hide',
+    styleAnchors: [
+      'Photoreal Creature Hide',
+      'film creature skin surfacing',
+      'multi-scale hide displacement',
+    ],
+    category: '6. Organic Character And Bio CGI',
+    domain: 'film creature skin surfacing',
+    negativePrompt:
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, rubber suit sheen, uniform scale tiling, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Film creature hide: the subject covered in massive, wrinkled, scarred hide with layered displacement, wet sheen in the folds and dust caked on high points.',
+      subject_treatment:
+        'Keep the prompt subject, action, pose, setting and camera view and rebuild its surfaces in this organic CGI method; never force a T-pose and never turn a requested object into an avatar.',
+      color_and_tone:
+        'Grey-brown to slate hide with pale scar tissue, darker wet creases and dusty lighter ridges.',
+      lighting_and_shadow:
+        'Overcast soft key with a hard rim, glancing light revealing every wrinkle and scale edge.',
+      texture_and_material:
+        'Multi-scale displacement of big folds, medium wrinkles, fine cracks and pebbled scales, with scars, dried mud and moss.',
+      camera_and_composition:
+        'Keep the requested view; a long-lens close-up on a flank or face sells the scale.',
+      atmosphere_and_mood: 'Heavy and ancient, an animal older than the landscape.',
+      rendering_and_quality:
+        'Feature-VFX surfacing where wetness, dust and scars follow the anatomy, with no rubber-suit sheen.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Photoreal Creature Hide as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'multi-scale hide displacement; wet creases and dusty ridges; scar tissue; glancing light; long-lens scale',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-131',
+    name: 'Animated-Film Food Render',
+    displayName: 'Animated-Film Food Render',
+    styleAnchors: [
+      'Animated-Film Food Render',
+      'stylized animated-film food',
+      'plump simplified food shapes',
+    ],
+    category: '6. Organic Character And Bio CGI',
+    domain: 'stylized animated-film food',
+    negativePrompt:
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, photoreal food texture, studio character likeness, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Animated-film food: dishes simplified into plump rounded shapes with exaggerated glossy sauces, jewel-bright colors and soft painterly subsurface, as cooked in a feature cartoon.',
+      subject_treatment:
+        'Keep the prompt subject, action, setting and camera; food is simplified into plump stylized shapes, and any other subject keeps its identity while taking the same warm, glossy finish.',
+      color_and_tone:
+        'Jewel-bright reds, butter yellows and herb greens with warm golden highlights and colored shadows, never grey.',
+      lighting_and_shadow:
+        'Warm key with a glowing rim, big soft specular blobs on sauces and a steam wisp lit from behind.',
+      texture_and_material:
+        'Simplified crumb and grill marks, thick glossy sauce ribbons, plump rounded volumes and painterly subsurface in fruit and cheese.',
+      camera_and_composition:
+        'Keep the requested view; a slightly low angle makes the dish look heroic and huge.',
+      atmosphere_and_mood: 'Cozy and mouthwatering, comfort food in a storybook kitchen.',
+      rendering_and_quality:
+        'Stylized feature-animation finish, distinct from hyperreal food advertising and from clay or toy food.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Animated-Film Food Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'plump simplified food shapes; exaggerated glossy sauce; jewel-bright colors; colored shadows; backlit steam wisp',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -130,6 +130,19 @@ categories:
       - pack_03/SP03-059.yaml
       - pack_03/SP03-062.yaml
       - pack_03/SP03-076.yaml
+      - pack_03/SP03-119.yaml
+      - pack_03/SP03-120.yaml
+      - pack_03/SP03-121.yaml
+      - pack_03/SP03-122.yaml
+      - pack_03/SP03-123.yaml
+      - pack_03/SP03-124.yaml
+      - pack_03/SP03-125.yaml
+      - pack_03/SP03-126.yaml
+      - pack_03/SP03-127.yaml
+      - pack_03/SP03-128.yaml
+      - pack_03/SP03-129.yaml
+      - pack_03/SP03-130.yaml
+      - pack_03/SP03-131.yaml
   - id: environment-and-worldbuilding
     name: 7. Environment And Worldbuilding
     presetRefs:
@@ -255,6 +268,19 @@ presetRefs:
   - pack_03/SP03-059.yaml
   - pack_03/SP03-062.yaml
   - pack_03/SP03-076.yaml
+  - pack_03/SP03-119.yaml
+  - pack_03/SP03-120.yaml
+  - pack_03/SP03-121.yaml
+  - pack_03/SP03-122.yaml
+  - pack_03/SP03-123.yaml
+  - pack_03/SP03-124.yaml
+  - pack_03/SP03-125.yaml
+  - pack_03/SP03-126.yaml
+  - pack_03/SP03-127.yaml
+  - pack_03/SP03-128.yaml
+  - pack_03/SP03-129.yaml
+  - pack_03/SP03-130.yaml
+  - pack_03/SP03-131.yaml
   - pack_03/SP03-033.yaml
   - pack_03/SP03-039.yaml
   - pack_03/SP03-055.yaml

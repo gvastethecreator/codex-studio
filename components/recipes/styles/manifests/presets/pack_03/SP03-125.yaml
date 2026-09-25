@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP03-125
+packId: pack_03
+name: Soft-Body Squash Simulation
+styleAnchors:
+  - Soft-Body Squash Simulation
+  - soft-body physics simulation
+  - volume-preserving squash
+displayName: Soft-Body Squash Simulation
+category: 6. Organic Character And Bio CGI
+domain: soft-body physics simulation
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - organic-character-and-bio-cgi
+  - soft-body
+  - simulation
+  - squash
+visualDna:
+  aesthetic: 'Soft-body simulation: the subject behaving like a volume-preserving jelly, squashed against surfaces, bulging between obstacles and wobbling mid-bounce.'
+  subject_treatment: Keep the prompt subject, its material, setting and camera; simulate it as a soft body that squashes, bulges and jiggles on contact while preserving its volume.
+  color_and_tone: The subject's own colors, a little brighter where it is stretched thin and deeper where it compresses.
+  lighting_and_shadow: Clean studio key with glossy highlights stretching and pinching along the deformed curves.
+  texture_and_material: Smooth surfaces with compression bulges, stretch lines, flattened contact patches and ripples frozen mid-wobble.
+  camera_and_composition: Keep the requested view; a contact point or obstacle stays in frame to show the squash.
+  atmosphere_and_mood: Playful and tactile, satisfying enough to want to poke.
+  rendering_and_quality: Volume-preserving deformation with believable contact; not melting, not liquid and not broken.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soft-Body Squash Simulation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: volume-preserving squash; bulges between obstacles; flattened contact patches; frozen wobble ripples; stretched highlights
+avoidRules:
+  - forced T-pose
+  - object turned into an avatar
+  - franchise likeness
+  - readable text
+  - logo
+  - melting
+  - liquid splash
+  - shattering
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, melting, liquid splash, shattering, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: organic-character-and-bio-cgi
+  categoryName: 6. Organic Character And Bio CGI
+  tags:
+    - 3d-and-cgi-rendering
+    - organic-character-and-bio-cgi
+    - soft-body
+    - simulation
+    - squash
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: soft-body physics simulation

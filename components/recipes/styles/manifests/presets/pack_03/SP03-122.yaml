@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP03-122
+packId: pack_03
+name: Articulated Skeleton Render
+styleAnchors:
+  - Articulated Skeleton Render
+  - natural-history skeleton mount
+  - articulated bones
+displayName: Articulated Skeleton Render
+category: 6. Organic Character And Bio CGI
+domain: natural-history skeleton mount
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - organic-character-and-bio-cgi
+  - skeleton
+  - natural-history
+  - museum-mount
+visualDna:
+  aesthetic: 'Natural-history skeleton mount: the subject reduced to its articulated bones, wired together in a lifelike pose on slender iron rods like a museum display.'
+  subject_treatment: Keep the prompt subject recognizable with its pose, setting and camera view; show it as its own articulated skeleton mounted on a thin iron armature, anatomically plausible for the creature (a declared change), without forcing a T-pose or turning an object into an avatar.
+  color_and_tone: Aged ivory to tea-brown bone with darker staining at the joints, a black iron armature and a neutral gallery backdrop.
+  lighting_and_shadow: Museum gallery spots from above casting crisp rib shadows across the plinth and floor.
+  texture_and_material: Bone porosity, suture lines on the skull, worn joint surfaces, wire loops and brass pins at the joints.
+  camera_and_composition: Keep the requested view; the full skeleton reads as a silhouette of ribs and limb bones.
+  atmosphere_and_mood: Solemn and scholarly, a life reconstructed from what remains.
+  rendering_and_quality: Plausible bone count and joints for the species or invented creature, with no flesh and no gore.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Articulated Skeleton Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: articulated bones; iron armature rods; ivory to tea-brown bone; rib shadows from gallery spots; brass joint pins
+avoidRules:
+  - forced T-pose
+  - object turned into an avatar
+  - franchise likeness
+  - readable text
+  - logo
+  - flesh
+  - gore
+  - cartoon skeleton
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, flesh, gore, cartoon skeleton, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: organic-character-and-bio-cgi
+  categoryName: 6. Organic Character And Bio CGI
+  tags:
+    - 3d-and-cgi-rendering
+    - organic-character-and-bio-cgi
+    - skeleton
+    - natural-history
+    - museum-mount
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: natural-history skeleton mount

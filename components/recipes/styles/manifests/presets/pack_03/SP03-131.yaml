@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP03-131
+packId: pack_03
+name: Animated-Film Food Render
+styleAnchors:
+  - Animated-Film Food Render
+  - stylized animated-film food
+  - plump simplified food shapes
+displayName: Animated-Film Food Render
+category: 6. Organic Character And Bio CGI
+domain: stylized animated-film food
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - organic-character-and-bio-cgi
+  - stylized-food
+  - feature-animation
+  - food
+visualDna:
+  aesthetic: 'Animated-film food: dishes simplified into plump rounded shapes with exaggerated glossy sauces, jewel-bright colors and soft painterly subsurface, as cooked in a feature cartoon.'
+  subject_treatment: Keep the prompt subject, action, setting and camera; food is simplified into plump stylized shapes, and any other subject keeps its identity while taking the same warm, glossy finish.
+  color_and_tone: Jewel-bright reds, butter yellows and herb greens with warm golden highlights and colored shadows, never grey.
+  lighting_and_shadow: Warm key with a glowing rim, big soft specular blobs on sauces and a steam wisp lit from behind.
+  texture_and_material: Simplified crumb and grill marks, thick glossy sauce ribbons, plump rounded volumes and painterly subsurface in fruit and cheese.
+  camera_and_composition: Keep the requested view; a slightly low angle makes the dish look heroic and huge.
+  atmosphere_and_mood: Cozy and mouthwatering, comfort food in a storybook kitchen.
+  rendering_and_quality: Stylized feature-animation finish, distinct from hyperreal food advertising and from clay or toy food.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Animated-Film Food Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: plump simplified food shapes; exaggerated glossy sauce; jewel-bright colors; colored shadows; backlit steam wisp
+avoidRules:
+  - forced T-pose
+  - object turned into an avatar
+  - franchise likeness
+  - readable text
+  - logo
+  - photoreal food texture
+  - studio character likeness
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, photoreal food texture, studio character likeness, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: organic-character-and-bio-cgi
+  categoryName: 6. Organic Character And Bio CGI
+  tags:
+    - 3d-and-cgi-rendering
+    - organic-character-and-bio-cgi
+    - stylized-food
+    - feature-animation
+    - food
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: stylized animated-film food

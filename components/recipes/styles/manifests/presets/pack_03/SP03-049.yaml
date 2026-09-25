@@ -3,7 +3,7 @@ id: SP03-049
 packId: pack_03
 name: Character Design (T-Pose)
 category: 6. Organic Character And Bio CGI
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,78 +12,44 @@ tags:
   - 3d-and-cgi-rendering
   - organic-character-and-bio-cgi
 visualDna:
-  aesthetic: >-
-    Character Design (T-Pose) acts as a transferable CGI-style router: start from Character model
-    sheet, T Pose or A Pose, turn around clarity and organic and character CGI system built from
-    anatomy, grooming, cloth, soft-body simulation, food material, medical cutaway, and believable
-    sculpt topology, then apply the 3D/render behavior to prompt X instead of recreating a fixed
-    demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Anatomical; preserve the prompt subject while routing it
-    through organic form flow, garment dynamics, avatar readability, diagnostic cutaway, or
-    appetizing surface simulation, keeping the requested identity, silhouette, pose, object
-    function, or environment legible.
-  color_and_tone: >-
-    Build color with Neutral light, skin tone accuracy; let color follow skin, cloth, food,
-    biological tissue, mylar, medical material, fashion fabric, or stylized collectible accents
-    without flattening the shader, with deliberate value grouping, exposure control, and
-    medium-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Flat, character sheet evenness; shape light through subsurface lift, cloth
-    sheen, food steam, rim grooming, diagnostic clarity, reflective foil, or studio character
-    presentation, so value structure supports the renderer and does not overwrite the requested
-    content.
-  texture_and_material: >-
-    Render Skin, cloth, character assembly; surface detail should show sculpt topology, pores,
-    muscles, wrinkles, cloth weave, droplets, mylar seams, cutaway planes, or organic growth flow,
-    keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Lookdev camera for Character Design (T Pose): three quarter or
-    orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical
-    card composition; compose for model readability through turnarounds, pose-neutral clarity,
-    garment silhouette, cutaway hierarchy, appetizing macro, or avatar trait legibility, with scale,
-    spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Neutral, design, audition ready; derive mood from body realism, digital fashion
-    spectacle, clinical explanation, collectible identity, craving, celebration, or uncanny organic
-    transformation, letting the renderer alter interpretation without demanding a specific story,
-    location, or character.
-  rendering_and_quality: >-
-    Finish with Concept art, production, model sheet; finish with stable anatomy or object
-    structure, clean simulation, readable material detail, and no melted limbs or fake plastic skin,
-    clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
-    recognizable.
-  key_features: >-
-    Character model sheet; T Pose or A Pose, turn around clarity; Neutral light, skin tone accuracy;
-    Skin, cloth, character assembly; Lookdev camera for Character Design (T Pose): three quarter or
-    orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical
-    card composition
-  creative_brief: >-
-    Apply Character Design (T-Pose) as a CGI/render preset over prompt X: preserve the user's
-    requested subject, then route modeling, shader response, lighting, material scale, composition,
-    mood, and final render craft through Character model sheet, T Pose or A Pose, turn around
-    clarity, Skin, cloth, character assembly without requiring the card image's original subject.
+  aesthetic: 'Character model presentation: a finished 3D character standing on flat grey, lit evenly so proportions, costume construction and materials read without drama.'
+  subject_treatment: Keep the prompt character and costume; use a relaxed A-pose or T-pose only when the prompt leaves the pose open, keep any requested pose or action, and show one front view unless a turnaround is requested. An object stays an object on the same grey stage.
+  color_and_tone: Neutral mid-grey backdrop, accurate unstylized skin and fabric colors, no color grade or tinted light.
+  lighting_and_shadow: Large soft key and near-equal fill with a faint rim, shadows short and low in contrast so no detail hides.
+  texture_and_material: Clean fabric weaves, leather seams, buckles and subsurface skin, every material clearly separated from the next.
+  camera_and_composition: Full figure centered with a long lens at chest height, feet visible on a soft contact shadow.
+  atmosphere_and_mood: Neutral and ready, a character waiting for its first animation.
+  rendering_and_quality: Production-clean model with symmetric construction, no background props, no swatch panels and no text.
+  key_features: neutral A-pose or T-pose only when unposed; flat grey backdrop; even soft lighting; full figure centered; material separation
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Character Design (T-Pose) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
-  - action pose
+  - forced T-pose
+  - object turned into an avatar
+  - franchise likeness
+  - readable text
+  - logo
+  - material swatch panels
+  - extra views unless requested
   - background
   - wrong medium
   - flat 2d paintover
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - melted anatomy
   - fake plastic skin
   - bad topology
   - rigging-breaking pose
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-049.webp
 attributes:
-  negativePrompt: >-
-    action pose, background, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture
-    chatter, watermark, readable text, signature, melted anatomy, fake plastic skin, bad topology,
-    rigging-breaking pose
+  negativePrompt: forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, material swatch panels, extra views unless requested, background, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

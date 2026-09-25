@@ -3,7 +3,7 @@ id: SP03-051
 packId: pack_03
 name: Medical Illustration 3D
 category: 6. Organic Character And Bio CGI
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,59 +12,25 @@ tags:
   - 3d-and-cgi-rendering
   - organic-character-and-bio-cgi
 visualDna:
-  aesthetic: >-
-    Medical Illustration 3D acts as a transferable CGI-style router: start from Clean diagnostic
-    cutaway render, Label space, cutaway clarity and organic and character CGI system built from
-    anatomy, grooming, cloth, soft-body simulation, food material, medical cutaway, and believable
-    sculpt topology, then apply the 3D/render behavior to prompt X instead of recreating a fixed
-    demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Cutaway view; preserve the prompt subject while routing it
-    through organic form flow, garment dynamics, avatar readability, diagnostic cutaway, or
-    appetizing surface simulation, keeping the requested identity, silhouette, pose, object
-    function, or environment legible.
-  color_and_tone: >-
-    Build color with Red, Blue, White, medical chart palettes; let color follow skin, cloth, food,
-    biological tissue, mylar, medical material, fashion fabric, or stylized collectible accents
-    without flattening the shader, with deliberate value grouping, exposure control, and
-    medium-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Soft, clear, shadowless diagnostic; shape light through subsurface lift,
-    cloth sheen, food steam, rim grooming, diagnostic clarity, reflective foil, or studio character
-    presentation, so value structure supports the renderer and does not overwrite the requested
-    content.
-  texture_and_material: >-
-    Render Translucent layers, anatomical or system accuracy; surface detail should show sculpt
-    topology, pores, muscles, wrinkles, cloth weave, droplets, mylar seams, cutaway planes, or
-    organic growth flow, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Lookdev camera for Medical Illustration 3D: three quarter or
-    orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical
-    card composition; compose for model readability through turnarounds, pose-neutral clarity,
-    garment silhouette, cutaway hierarchy, appetizing macro, or avatar trait legibility, with scale,
-    spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Scientific, clean, knowledge dense; derive mood from body realism, digital fashion
-    spectacle, clinical explanation, collectible identity, craving, celebration, or uncanny organic
-    transformation, letting the renderer alter interpretation without demanding a specific story,
-    location, or character.
-  rendering_and_quality: >-
-    Finish with Textbook, educational, clinical reference; finish with stable anatomy or object
-    structure, clean simulation, readable material detail, and no melted limbs or fake plastic skin,
-    clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
-    recognizable.
-  key_features: >-
-    Clean diagnostic cutaway render; Label space, cutaway clarity; Red, Blue, White, medical chart
-    palettes; Translucent layers, anatomical or system accuracy; Lookdev camera for Medical
-    Illustration 3D: three quarter or orthographic framing, clean silhouette read, material
-    highlights, controlled depth, and vertical card composition
-  creative_brief: >-
-    Apply Medical Illustration 3D as a CGI/render preset over prompt X: preserve the user's
-    requested subject, then route modeling, shader response, lighting, material scale, composition,
-    mood, and final render craft through Clean diagnostic cutaway render, Label space, cutaway
-    clarity, Translucent layers, anatomical or system accuracy without requiring the card image's
-    original subject.
+  aesthetic: "Medical 3D illustration: the subject's body made partly translucent so organs, vessels, bones and muscles show in layered, color-coded depth."
+  subject_treatment: Keep the prompt subject recognizable with its pose, setting and camera view; reveal its internal anatomy through translucent outer layers or a clean cutaway window, plausible for that creature, person or object (a declared change), without forcing a T-pose or turning an object into an avatar.
+  color_and_tone: Clinical palette of red arteries, blue veins, yellow nerves, ivory bone and soft pink and plum organs inside milky translucent skin.
+  lighting_and_shadow: Soft shadowless wrap light with a gentle rim glow on the translucent skin edges and no dramatic cast shadows.
+  texture_and_material: Smooth glassy outer skin, satin organ surfaces, finely branching vessels and fibrous muscle bands.
+  camera_and_composition: Keep the requested view on a white or pale blue backdrop, with open margin left around the subject.
+  atmosphere_and_mood: Calm, clean and instructive, wonder without any gore.
+  rendering_and_quality: Textbook-clean anatomy with no blood, wounds or labels, and structures plausible for the subject.
+  key_features: translucent skin layer; color-coded arteries and veins; ivory bones; shadowless wrap light; pale backdrop
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Medical Illustration 3D as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - forced T-pose
+  - object turned into an avatar
+  - franchise likeness
+  - readable text
+  - logo
+  - labels
+  - leader lines
+  - wounds
   - gross
   - blood
   - wrong medium
@@ -72,19 +38,20 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - melted anatomy
   - fake plastic skin
   - bad topology
   - rigging-breaking pose
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-051.webp
 attributes:
-  negativePrompt: >-
-    gross, blood, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, melted anatomy, fake plastic skin, bad topology,
-    rigging-breaking pose
+  negativePrompt: forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, labels, leader lines, wounds, gross, blood, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

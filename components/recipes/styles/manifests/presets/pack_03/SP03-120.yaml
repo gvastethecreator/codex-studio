@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP03-120
+packId: pack_03
+name: Hand-Painted Texture Character
+styleAnchors:
+  - Hand-Painted Texture Character
+  - hand-painted texture game character
+  - painted-in highlights and shadows
+displayName: Hand-Painted Texture Character
+category: 6. Organic Character And Bio CGI
+domain: hand-painted texture game character
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - organic-character-and-bio-cgi
+  - hand-painted
+  - stylized-3d
+  - diffuse-only
+visualDna:
+  aesthetic: 'Hand-painted texture CGI: chunky stylized 3D forms whose lighting, highlights and occlusion are painted straight into the color texture and rendered almost unlit.'
+  subject_treatment: Keep the prompt subject recognizable with its pose, setting and camera view; rebuild it with chunky stylized proportions of large hands, feet and shoulders (a declared change), without forcing a T-pose or turning an object into an avatar.
+  color_and_tone: Warm saturated painted palette, highlights painted as pale warm strokes and shadows as cool purple washes in the texture.
+  lighting_and_shadow: Mostly flat, unlit shading where the painted texture carries form, with only a soft ambient and a faint rim.
+  texture_and_material: Visible brush strokes on armor, cloth and skin, painted edge highlights on every bevel, no specular or normal maps.
+  camera_and_composition: Keep the requested view; a slightly high three-quarter angle suits the chunky silhouette.
+  atmosphere_and_mood: Warm and adventurous, the friendly heft of an old online fantasy world.
+  rendering_and_quality: Diffuse-only painted look on low-poly silhouettes, with no photoreal shading or glossy reflections.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hand-Painted Texture Character as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: painted-in highlights and shadows; chunky proportions; visible brush strokes in textures; diffuse-only shading; bright edge highlights
+avoidRules:
+  - forced T-pose
+  - object turned into an avatar
+  - franchise likeness
+  - readable text
+  - logo
+  - photoreal skin
+  - glossy reflections
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, photoreal skin, glossy reflections, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: organic-character-and-bio-cgi
+  categoryName: 6. Organic Character And Bio CGI
+  tags:
+    - 3d-and-cgi-rendering
+    - organic-character-and-bio-cgi
+    - hand-painted
+    - stylized-3d
+    - diffuse-only
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: hand-painted texture game character

@@ -3,7 +3,7 @@ id: SP03-057
 packId: pack_03
 name: NFT Collectible Avatar Render
 category: 6. Organic Character And Bio CGI
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,77 +12,45 @@ tags:
   - 3d-and-cgi-rendering
   - organic-character-and-bio-cgi
 visualDna:
-  aesthetic: >-
-    NFT Collectible Avatar Render acts as a transferable CGI-style router: start from Collectible
-    avatar render language, Profile view, trait accessories and organic and character CGI system
-    built from anatomy, grooming, cloth, soft-body simulation, food material, medical cutaway, and
-    believable sculpt topology, then apply the 3D/render behavior to prompt X instead of recreating
-    a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Clean; preserve the prompt subject while routing it through
-    organic form flow, garment dynamics, avatar readability, diagnostic cutaway, or appetizing
-    surface simulation, keeping the requested identity, silhouette, pose, object function, or
-    environment legible.
-  color_and_tone: >-
-    Build color with Neon, Gold, Rare traits, rarity gradient; let color follow skin, cloth, food,
-    biological tissue, mylar, medical material, fashion fabric, or stylized collectible accents
-    without flattening the shader, with deliberate value grouping, exposure control, and
-    medium-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Studio, promo ready; shape light through subsurface lift, cloth sheen, food
-    steam, rim grooming, diagnostic clarity, reflective foil, or studio character presentation, so
-    value structure supports the renderer and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Plastic, Metal, collectible finish; surface detail should show sculpt topology, pores,
-    muscles, wrinkles, cloth weave, droplets, mylar seams, cutaway planes, or organic growth flow,
-    keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Lookdev camera for NFT Collectible Avatar Render: three quarter or
-    orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical
-    card composition; compose for model readability through turnarounds, pose-neutral clarity,
-    garment silhouette, cutaway hierarchy, appetizing macro, or avatar trait legibility, with scale,
-    spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Hype, digital, exclusive drop; derive mood from body realism, digital fashion
-    spectacle, clinical explanation, collectible identity, craving, celebration, or uncanny organic
-    transformation, letting the renderer alter interpretation without demanding a specific story,
-    location, or character.
-  rendering_and_quality: >-
-    Finish with Bored Ape 3D collectible, avatar centric hype; finish with stable anatomy or object
-    structure, clean simulation, readable material detail, and no melted limbs or fake plastic skin,
-    clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
-    recognizable.
-  key_features: >-
-    Collectible avatar render language; Profile view, trait accessories; Neon, Gold, Rare traits,
-    rarity gradient; Plastic, Metal, collectible finish; Lookdev camera for NFT Collectible Avatar
-    Render: three quarter or orthographic framing, clean silhouette read, material highlights,
-    controlled depth, and vertical card composition
-  creative_brief: >-
-    Apply NFT Collectible Avatar Render as a CGI/render preset over prompt X: preserve the user's
-    requested subject, then route modeling, shader response, lighting, material scale, composition,
-    mood, and final render craft through Collectible avatar render language, Profile view, trait
-    accessories, Plastic, Metal, collectible finish without requiring the card image's original
-    subject.
+  aesthetic: 'Collectible avatar render: a stylized bust centered on a flat color field, built from a few chunky trait pieces such as headwear, eyewear, clothing and one accessory in glossy toy materials.'
+  subject_treatment: Keep the prompt subject and its identity; this preset owns the centered bust framing on a flat color field with glossy trait accessories for a person or creature, while a requested object stays that object, centered on the same field and never given a face. It never forces a T-pose on a posed subject and never turns a requested object into an avatar.
+  color_and_tone: One flat saturated background color, rich gold and neon accents, and soft pastel or gem-colored trait pieces.
+  lighting_and_shadow: Clean front-left studio softbox with a bright rim light and glossy highlights on every accessory.
+  texture_and_material: Smooth vinyl skin, glossy lacquered accessories, brushed gold chains and soft fabric hoods.
+  camera_and_composition: Chest-up bust, perfectly centered in a slight three-quarter turn, with identical margins as if one of a series.
+  atmosphere_and_mood: Confident and collectible, a character assembled from swappable traits.
+  rendering_and_quality: Clean toy-like render with no background detail, no rarity text, no numbers and no brand marks.
+  key_features: centered chest-up bust; flat color field; swappable trait accessories; glossy vinyl and gold; bright rim light
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies NFT Collectible Avatar Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - forced T-pose
+  - object turned into an avatar
+  - franchise likeness
+  - readable text
+  - logo
+  - numbers
+  - rarity labels
+  - ape character
   - traditional art
   - wrong medium
   - flat 2d paintover
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - melted anatomy
   - fake plastic skin
   - bad topology
   - rigging-breaking pose
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-057.webp
 attributes:
-  negativePrompt: >-
-    traditional art, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, melted anatomy, fake plastic skin, bad topology,
-    rigging-breaking pose
+  negativePrompt: forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, numbers, rarity labels, ape character, traditional art, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

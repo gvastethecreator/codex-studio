@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP03-076
 packId: pack_03
-name: Balloon Art (Inflatable)
+name: Mylar Foil Balloon Render
 category: 6. Organic Character And Bio CGI
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,50 +12,25 @@ tags:
   - 3d-and-cgi-rendering
   - organic-character-and-bio-cgi
 visualDna:
-  aesthetic: >-
-    Balloon Art (Inflatable) acts as a transferable CGI-style router: start from Mylar balloons,
-    Seams, reflective curves and organic and character CGI system built from anatomy, grooming,
-    cloth, soft-body simulation, food material, medical cutaway, and believable sculpt topology,
-    then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Seams, wrinkles; preserve the prompt subject while routing
-    it through organic form flow, garment dynamics, avatar readability, diagnostic cutaway, or
-    appetizing surface simulation, keeping the requested identity, silhouette, pose, object
-    function, or environment legible.
-  color_and_tone: >-
-    Build color with Metallic foil; let color follow skin, cloth, food, biological tissue, mylar,
-    medical material, fashion fabric, or stylized collectible accents without flattening the shader,
-    with deliberate value grouping, exposure control, and medium-specific limits rather than generic
-    color wash.
-  lighting_and_shadow: >-
-    Handle light through High reflection; shape light through subsurface lift, cloth sheen, food
-    steam, rim grooming, diagnostic clarity, reflective foil, or studio character presentation, so
-    value structure supports the renderer and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Wrinkled foil, mylar shimmer; surface detail should show sculpt topology, pores, muscles,
-    wrinkles, cloth weave, droplets, mylar seams, cutaway planes, or organic growth flow, keeping
-    material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Inflated; compose for model readability through turnarounds,
-    pose-neutral clarity, garment silhouette, cutaway hierarchy, appetizing macro, or avatar trait
-    legibility, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Fun, pop art, celebration; derive mood from body realism, digital fashion
-    spectacle, clinical explanation, collectible identity, craving, celebration, or uncanny organic
-    transformation, letting the renderer alter interpretation without demanding a specific story,
-    location, or character.
-  rendering_and_quality: >-
-    Finish with Jeff Koons gallery scale pop, party spectacle; finish with stable anatomy or object
-    structure, clean simulation, readable material detail, and no melted limbs or fake plastic skin,
-    clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
-    recognizable.
-  key_features: Mylar balloons; Seams, reflective curves; Metallic foil; Wrinkled foil, mylar shimmer; Inflated
-  creative_brief: >-
-    Apply Balloon Art (Inflatable) as a CGI/render preset over prompt X: preserve the user's
-    requested subject, then route modeling, shader response, lighting, material scale, composition,
-    mood, and final render craft through Mylar balloons, Seams, reflective curves, Wrinkled foil,
-    mylar shimmer without requiring the card image's original subject.
+  aesthetic: 'Mylar foil balloon: the subject rebuilt as an inflated metallic-foil balloon, two flat sheets heat-sealed at the rim and puffed into soft pillowed forms.'
+  subject_treatment: Keep the prompt subject, action, pose, setting and camera view and rebuild its surfaces in this organic CGI method; never force a T-pose and never turn a requested object into an avatar.
+  color_and_tone: Mirror silver, gold, rose gold or candy-tinted foil reflecting the surroundings in warped color.
+  lighting_and_shadow: Bright studio or party lights producing broad warped reflections and hot specular spots along the curves.
+  texture_and_material: Crimped heat-sealed edge seams, radial pinch wrinkles where forms narrow, a small valve tail and no hard volumes.
+  camera_and_composition: Keep the requested view; the flat-sided pillowed profile reads clearly and floats slightly.
+  atmosphere_and_mood: Festive and slightly absurd, a celebration you could pop with a pin.
+  rendering_and_quality: Thin inflated foil with seams and wrinkles, distinct from twisted latex balloon animals and from solid chrome.
+  key_features: heat-sealed crimped rim seam; pillowed flat-sheet volumes; pinch wrinkles; warped mirror reflections; floating lightness
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mylar Foil Balloon Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - forced T-pose
+  - object turned into an avatar
+  - franchise likeness
+  - readable text
+  - logo
+  - twisted latex balloon animal
+  - solid chrome sculpture
+  - gallery artist likeness
   - hard
   - heavy
   - wrong medium
@@ -63,19 +38,20 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - melted anatomy
   - fake plastic skin
   - bad topology
   - rigging-breaking pose
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-076.webp
 attributes:
-  negativePrompt: >-
-    hard, heavy, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, melted anatomy, fake plastic skin, bad topology,
-    rigging-breaking pose
+  negativePrompt: forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, twisted latex balloon animal, solid chrome sculpture, gallery artist likeness, hard, heavy, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
@@ -89,3 +65,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Mylar Foil Balloon Render
+styleAnchors:
+  - Mylar Foil Balloon Render
+  - Balloon Art (Inflatable)

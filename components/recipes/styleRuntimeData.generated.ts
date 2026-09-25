@@ -37,7 +37,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       'A comprehensive collection of 80+ 3D rendering pipelines, visual looks, and material simulations.',
     cardTitle: '3D CGI',
     cardDescription: 'CGI, render engines, materials, stylized 3D.',
-    presetCount: 118,
+    presetCount: 131,
   },
   {
     id: 'pack_04',

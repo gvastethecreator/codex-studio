@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP03-124
+packId: pack_03
+name: Space-Colonization Vine Overgrowth
+styleAnchors:
+  - Space-Colonization Vine Overgrowth
+  - procedural vine growth
+  - algorithmic branching vines
+displayName: Space-Colonization Vine Overgrowth
+category: 6. Organic Character And Bio CGI
+domain: procedural vine growth
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - organic-character-and-bio-cgi
+  - procedural-growth
+  - vines
+  - overgrowth
+visualDna:
+  aesthetic: 'Procedural vine overgrowth: branching stems grown by a space-colonization algorithm, climbing and wrapping every surface of the subject toward the light.'
+  subject_treatment: Keep the prompt subject recognizable with its pose, setting and camera view; grow procedural vines, roots and leaves over it along its surfaces without hiding its silhouette or changing what it is (a declared change), without forcing a T-pose or turning an object into an avatar.
+  color_and_tone: Fresh leaf greens and dark stems with small pale blossoms, laid over the subject's own colors.
+  lighting_and_shadow: Directional sunlight with dappled leaf shadows on the subject beneath and backlit translucent leaves.
+  texture_and_material: Branch thickness tapering from root to tip, tendrils gripping edges and leaves turned toward the light.
+  camera_and_composition: Keep the requested view; the growth direction of the vines leads the eye upward across the subject.
+  atmosphere_and_mood: Patient and reclaiming, nature quietly taking something back.
+  rendering_and_quality: Branching with correct taper and attachment, with no floating leaves or random green noise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Space-Colonization Vine Overgrowth as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: algorithmic branching vines; taper from root to tip; tendrils gripping edges; dappled leaf shadows; growth toward light
+avoidRules:
+  - forced T-pose
+  - object turned into an avatar
+  - franchise likeness
+  - readable text
+  - logo
+  - floating leaves
+  - random green noise
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, floating leaves, random green noise, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: organic-character-and-bio-cgi
+  categoryName: 6. Organic Character And Bio CGI
+  tags:
+    - 3d-and-cgi-rendering
+    - organic-character-and-bio-cgi
+    - procedural-growth
+    - vines
+    - overgrowth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: procedural vine growth

@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP03-127
+packId: pack_03
+name: Garment Fit Strain Map
+styleAnchors:
+  - Garment Fit Strain Map
+  - cloth simulation strain visualization
+  - blue-to-red strain heatmap
+displayName: Garment Fit Strain Map
+category: 6. Organic Character And Bio CGI
+domain: cloth simulation strain visualization
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - organic-character-and-bio-cgi
+  - cloth-sim
+  - heatmap
+  - garment-fit
+visualDna:
+  aesthetic: 'Garment fit strain map: simulated clothing colored by a stress heatmap, cool blue where fabric hangs loose, green to red where it stretches tight.'
+  subject_treatment: Keep the prompt subject and its identity; this preset owns the fit-check presentation of fabric colored by strain, on the requested wearer in their pose or, when none is given, on a faceless grey fit form; a fabric object is mapped on its own cloth. It never forces a T-pose on a posed subject and never turns a requested object into an avatar.
+  color_and_tone: Smooth blue-green-yellow-red gradient across the fabric, neutral grey skin and a dark neutral backdrop.
+  lighting_and_shadow: Soft even light that keeps the heatmap colors true while the folds still read in shade.
+  texture_and_material: Simulated folds, tension lines radiating from stress points at shoulders, elbows and seams, and visible seam lines.
+  camera_and_composition: Keep the requested view; the full garment in frame with its stress points clearly visible.
+  atmosphere_and_mood: Clinical and revealing, the place where cloth fights the body.
+  rendering_and_quality: Continuous heatmap across the cloth mesh with no legend, scale bar, numbers or interface.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Garment Fit Strain Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: blue-to-red strain heatmap; tension lines from stress points; grey fit form or wearer; visible seams; no legend
+avoidRules:
+  - forced T-pose
+  - object turned into an avatar
+  - franchise likeness
+  - readable text
+  - logo
+  - legend
+  - scale bar
+  - numbers
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, legend, scale bar, numbers, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: organic-character-and-bio-cgi
+  categoryName: 6. Organic Character And Bio CGI
+  tags:
+    - 3d-and-cgi-rendering
+    - organic-character-and-bio-cgi
+    - cloth-sim
+    - heatmap
+    - garment-fit
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: cloth simulation strain visualization
