@@ -414,9 +414,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'single side window; black falloff; pewter and dark oak; old-master still-life mood; jewel accents',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-114',
@@ -448,9 +445,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Architectural Twilight Exterior as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'blue-hour sky; every window lit amber; tripod long exposure; corrected verticals; smooth water reflections',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -486,9 +480,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'hard spot through glass; caustic light pool; colored cast shadow; pale ground; low angle',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-116',
@@ -522,9 +513,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lifestyle In-Hand Product as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'adult hands using the product; real environment; soft daylight; shallow background; tactile contact',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -561,9 +549,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'flat colored paper planes; hard steep light; long clean shadows; geometric plinths; bold contrast',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-118',
@@ -596,9 +581,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ghost Mannequin Apparel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'invisible body volume; hollow collar interior; straight-on symmetry; even soft light; neutral background',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

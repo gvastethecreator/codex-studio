@@ -55,12 +55,10 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
-assets: {}
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-103.webp
 attributes:
   negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, wide-angle perspective, deep converging lines, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
-  previewStatus: pending
-  ui:
-    previewStatus: pending
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
@@ -76,5 +74,5 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true
   domain: long-lens compressed street

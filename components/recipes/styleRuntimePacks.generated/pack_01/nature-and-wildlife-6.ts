@@ -200,9 +200,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'wings fully spread; 1/4000 s freeze; space ahead of the bird; backlit flight feathers; clean background',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-120',
@@ -235,9 +232,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'ground-level wide angle; close off-camera night flash; eye-shine; black background; unaware animal',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-121',
@@ -269,9 +263,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Long-Exposure Seascape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'silky misted water; streaked clouds; sharp still rocks; low tripod foreground; pastel dusk',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -306,9 +297,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Milky Way arch over land; pinpoint stars; landscape in lower third; faint airglow; wide fast lens',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-123',
@@ -342,9 +330,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'rotating supercell or shelf cloud; low horizon; light under the cloud base; small scale marker; rain or dust walls',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-124',
@@ -374,9 +359,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Intimate Forest Landscape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'no sky; overcast polarized color; trunk and root patterns; one quiet focal point; moss and wet texture',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -412,9 +394,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'light through leaves and petals; glowing veins; rim-lit hairs; dark background; shallow bokeh',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-126',
@@ -443,9 +422,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies High-Key Snow Wildlife as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'overexposed white field; dark eyes and nose as accents; huge negative space; flat snow light; minimal',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -476,9 +452,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Low-Key Rim-Lit Wildlife as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'black background; thin rim light on fur; breath or dust glowing; partial reveal; telephoto',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -514,9 +487,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'front-to-back sharpness; clean white or black ground; diffused dome light; centered specimen; scientific view',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-129',
@@ -550,9 +520,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'edge-to-edge natural pattern; no horizon or scale; raking light on relief; limited material palette; tight crop',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-130',
@@ -581,9 +548,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Animal-in-Habitat Wide Angle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'animal large and close; habitat stretching behind; low wide angle; deep focus; visible sky',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -615,9 +579,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'one element in fog; vast negative space; low-contrast pale palette; dissolving distance; off-center anchor',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-132',
@@ -648,9 +609,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blackwater Night Dive as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'total black water; snooted strobe; translucent larvae; iridescent accents; floating macro subject',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

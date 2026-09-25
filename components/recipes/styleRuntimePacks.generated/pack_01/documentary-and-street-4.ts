@@ -297,9 +297,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'three or four depth planes; saturated color fields; black shadow gaps; foreground crop; simultaneous small actions',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-103',
@@ -335,9 +332,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Telephoto Compression Street as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'extreme telephoto compression; stacked layers; giant background sun or moon; heat haze; flattened depth',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -375,9 +369,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'subject in a slice of light; solid black shadow shapes; hard sun; long cast shadows; underexposed surroundings',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-105',
@@ -412,9 +403,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Reflection-Layered Street as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'through-glass layering; reflected street over interior; semi-transparent overlap; glass flaws; ambiguous depth',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -451,9 +439,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'one sharp still subject; streaked moving crowd; quarter-second exposure; ghosted figures; stillness versus flow',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-107',
@@ -488,9 +473,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Over-Under Split Shot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'waterline splits the frame; above and below at once; dome droplets; underwater caustics; subject across both halves',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -527,9 +509,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'frontal full-length stance; direct gaze; defining tool in hand; even overcast light; centered symmetrical frame',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-109',
@@ -563,9 +542,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Low Oblique Aerial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         '30–45 degree downward angle; raking dawn light; terrain relief; distant haze and horizon; tiny human scale',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -603,9 +579,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'dark doorway or arch frame; subject lit beyond; unseen observer; small centered subject; straight verticals',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-111',
@@ -640,9 +613,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'tender everyday moment; soft grey monochrome; 50 mm eye level; overcast light; gentle humor',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-112',
@@ -674,9 +644,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies High-ISO Night Reportage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'no flash; practical light pools; high-ISO noise; shallow handheld focus; deep blue-black shadows',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

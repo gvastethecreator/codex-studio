@@ -61,12 +61,10 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
-assets: {}
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-100.webp
 attributes:
   negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, digital HDR overprocessing, oversharpened clarity, generic vintage filter, fake film border, sprocket holes, clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, full color, even sepia wash, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
-  previewStatus: pending
-  ui:
-    previewStatus: pending
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
@@ -83,5 +81,5 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true
   domain: lith-developed darkroom print

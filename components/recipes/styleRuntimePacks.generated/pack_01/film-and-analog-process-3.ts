@@ -408,9 +408,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'red-orange-amber palette; yellow highlights; rust-brown shadows; no blues; warm grain',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-096',
@@ -446,9 +443,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'coarse home-movie grain; 18 fps motion smear; warm reversal color; exposure flicker; handheld softness',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-097',
@@ -478,9 +472,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kodak Tri-X Pushed as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'push-processed grit; clumped coarse grain; blocked black shadows; chalky highlights; low available light',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -517,9 +508,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'cyan-green shadows; acid yellow highlights; blown whites; boosted saturation; harsh contrast',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-099',
@@ -550,9 +538,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bleach Bypass Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'half-drained color; silver-dense blacks; steely sheen; hard contrast; gritty grain',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -586,9 +571,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'peppery black shadows; salmon-cream highlights; natural split tone; matte fiber paper; darkroom unpredictability',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-101',
@@ -619,9 +601,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Film Soup as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'chemical color blooms; bubble craters; dissolved emulsion patches; readable subject; stained sky',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

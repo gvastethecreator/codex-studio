@@ -437,9 +437,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'leaf-filtered sun spots; green shade; dapple on subject; translucent leaves; summer calm',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-091',
@@ -470,9 +467,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'light from below; inverted shadows; dark eye sockets; cold or fire tint; menacing',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-092',
@@ -500,9 +494,6 @@ export const GENERATED_STYLE_PRESETS = [
       creative_brief:
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Theatrical Spotlight as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features: 'circular follow spot; light pool on floor; dark stage; visible beam in haze',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -532,9 +523,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'silver-blue high source; black shadows; low saturation; frost and water highlights',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-094',
@@ -563,9 +551,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lightning Flash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'blue-white strike light; frozen rain; hard instant shadows; storm darkness; visible bolt',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

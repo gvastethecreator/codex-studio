@@ -349,9 +349,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'visible air and heat flow; knife-edge gradients; round mirror field; silhouetted object; rainbow or silver tones',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-134',
@@ -384,9 +381,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Photoelastic Stress Imaging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'rainbow stress fringes; crossed polarizers; clear plastic object; black background; dense bands at pressure points',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -422,9 +416,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'vertical-stripe background; time along the horizontal axis; stretched moving bodies; side view; smeared static parts',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-136',
@@ -459,9 +450,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'many overlapping phases; black backdrop; fixed side view; left-to-right progression; translucent overlaps',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-137',
@@ -494,9 +482,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tiny Planet Stereographic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'round tiny-planet ground; sky wrapping the edges; objects radiating outward; 360-degree stitch; centered globe',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -533,9 +518,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'UV-only lighting; materials glowing in their own colors; black-violet shadows; hidden patterns revealed',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-139',
@@ -569,9 +551,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'electric corona halo; radiating spark filaments; violet-white on black; flat contact view; glowing edges',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-140',
@@ -603,9 +582,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Borescope Inspection as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'circular vignette; ring-LED glare; tunnel perspective; rapid falloff to black; low-resolution softness',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];
