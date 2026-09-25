@@ -47,12 +47,10 @@ avoidRules:
   - UI overlay
   - real person likeness
   - prompt literal card reuse
-assets: {}
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-116.webp
 attributes:
   negativePrompt: placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, reference numerals, grey wash, color, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
-  previewStatus: pending
-  ui:
-    previewStatus: pending
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
@@ -68,5 +66,5 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true
   domain: patent line drawing

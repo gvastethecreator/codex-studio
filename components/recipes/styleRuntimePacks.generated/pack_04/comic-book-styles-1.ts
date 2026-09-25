@@ -437,9 +437,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'split dry-brush strokes; realistic adult proportions; coarse screentone grit; deep shadow pools; cinematic long-lens framing',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP04-102',
@@ -474,9 +471,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Greywash Horror Magazine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'diluted ink gray washes; pen hatching over wash; wash tide lines; theatrical underlight; looming low angles',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -513,9 +507,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'sable-brush feathering; spotted blacks; realist anatomy; muted flat Sunday color; horizontal framing',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP04-104',
@@ -550,9 +541,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Airbrush Manhua Action as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'airbrush gradient color; energy auras; metallic gold highlights; flowing silk trails; soaring diagonal composition',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -590,9 +578,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'non-photo-blue construction lines; graphite finished line; X marks for blacks; visible perspective grid; bristol tooth',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP04-106',
@@ -627,9 +612,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Direct-Color Album Watercolor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'pen line under transparent watercolor; wet-in-wet blooms; bare paper whites; granulating pigment; landscape-led view',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -198,9 +198,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'black line on white; thick shade lines; parallel surface shading; several figures on one sheet; blank leader lines',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP04-117',
@@ -235,9 +232,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Botanical Dissection Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'whole specimen plus dissections; flower and fruit sections; magnified details; watercolor over fine line; white ground',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -274,9 +268,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'male, female and juvenile; profile figures at one scale; flight or gait silhouette; track and egg; cream ground',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP04-119',
@@ -307,9 +298,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pose Library Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'eight to twelve poses; neutral grey clay tone; identical lighting; floor grid squares; one camera height',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -342,9 +330,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'nine to twelve heads; one character; clean line plus one grey tone; even grid; faint construction lines',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP04-121',
@@ -376,9 +361,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'flat pattern pieces; grainline arrows; notches and dashed seam lines; creased tissue paper; small croquis',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP04-122',
@@ -407,9 +389,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wordless Assembly Steps as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'six step panels; isometric line drawings; dashed motion arrows; accent color on the new part; blank step circles',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -441,9 +420,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Poché Section Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'solid black cut walls; thin beyond-elevation line; hatched earth; tiny scale figures; orthographic section',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -480,9 +456,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'one shield in many tinctures; division variants; gouache and shell gold; charge study; even grid',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP04-125',
@@ -512,9 +485,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Celestial Atlas Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'constellation figure; magnitude-sized star dots; curved coordinate grid; midnight blue and gold; engraved hairlines',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -548,9 +518,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Three-View Recognition Chart as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'black silhouettes; top, front and side per type; ruled rows; one scale; worn card stock',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -587,9 +554,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'visible vanishing lines; construction boxes and ellipses; cross-contours; blue under black line; projected cast shadow',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP04-128',
@@ -624,9 +588,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'ghosted successive positions; circled pivots; red trace path; curved motion arrows; side-view diagram',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP04-129',
@@ -660,9 +621,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Archaeological Find Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'half profile and section; solid black section fill; stippled surface; dashed reconstruction; unnumbered bar scale',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

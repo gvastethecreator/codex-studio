@@ -49,12 +49,10 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
-assets: {}
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-114.webp
 attributes:
   negativePrompt: invented slogans, fake lettering, empty title plate, real musician likeness, poster border, added frame, poster title zone, headline, speech bubbles, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
-  previewStatus: pending
-  ui:
-    previewStatus: pending
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
@@ -70,5 +68,5 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true
   domain: editorial newspaper illustration

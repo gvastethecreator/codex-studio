@@ -501,9 +501,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'single visual pun; loose gouache brushwork; flat painted ground; one saturated accent; central frontal object',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP04-114',
@@ -539,9 +536,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'conceptual metaphor staging; tiny figures and huge symbols; three to four color palette; dry grain texture; single cast shadows',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP04-115',
@@ -576,9 +570,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Swiss Grid Photo Poster as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'extreme black-and-white photo crop; strict grid; one flat red or blue shape; white space; bleed off the edge',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

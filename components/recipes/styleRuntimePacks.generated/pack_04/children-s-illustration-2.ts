@@ -433,9 +433,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'black white and red only; huge flat shapes; stripe dot and spiral patterns; centered head-on subject; rounded board corners',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP04-108',
@@ -470,9 +467,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thumbprint Ink Critters as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'fingerprint ridges in ink blobs; stamp-pad colors; fine black pen details; white paper; tiny characters',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -509,9 +503,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'clay smeared flat on board; rolled clay outlines; pressed dots and scored lines; raking side light; frontal flat view',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP04-110',
@@ -546,9 +537,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grainy Digital Picture Book as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'grainy texture brushes; limited muted palette; no outlines; wide empty spreads; small characters in large space',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -585,9 +573,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'fine parallel hatching; crosshatch shadows; sparing hand tints; cream foxed paper; theatrical tableau',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP04-112',
@@ -622,9 +607,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Seek-and-Find Busy Panorama as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'high oblique bird-eye view; dozens of tiny figures; mini stories everywhere; even daylight; edge-to-edge detail',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];
