@@ -41,9 +41,7 @@ visualDna:
   key_features: >-
     Elastic expression; readable reaction contours; quick-pause timing; refined lines with
     clear value grouping.
-  creative_brief: >-
-    Use the elastic line and quick reaction rhythm where it supports the prompt. Preserve
-    its subjects, framing and chosen tone.
+  creative_brief: "Use the elastic line and quick reaction rhythm where it supports the prompt. Preserve its subjects, framing and chosen tone. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

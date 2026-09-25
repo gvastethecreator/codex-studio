@@ -43,9 +43,7 @@ visualDna:
   key_features: >-
     directional engine-like trails; sharp contour cuts; navy cel masses with selective red and
     electric-blue streaks
-  creative_brief: >-
-    Apply the kinetic cel lines and selective trail accents to movement already present in the
-    request. Preserve its identity, setting and composition; add no vehicle, rider, chase or weapon.
+  creative_brief: "Apply the kinetic cel lines and selective trail accents to movement already present in the request. Preserve its identity, setting and composition; add no vehicle, rider, chase or weapon. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

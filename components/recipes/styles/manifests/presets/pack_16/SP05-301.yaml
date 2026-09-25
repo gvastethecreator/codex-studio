@@ -33,8 +33,7 @@ visualDna:
     Finish as hand-drawn 2D cel illustration. Use broad value design, crisp focal contours and quiet background texture; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
   key_features: >-
     confident weighty outlines paired with broad, quiet value masses; clear outer contours and spare inner marks that describe only existing structure; large dark cel groupings with thin highlights only along edges reached by the requested light; matte painted fields, gentle airbrush transitions and subtle analog transfer grain.
-  creative_brief: >-
-    Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use confident weighty outlines paired with broad, quiet value masses; clear outer contours and spare inner marks that describe only existing structure; large dark cel groupings with thin highlights only along edges reached by the requested light; matte painted fields, gentle airbrush transitions and subtle analog transfer grain. Add no unrequested content or composition changes.
+  creative_brief: "Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use confident weighty outlines paired with broad, quiet value masses; clear outer contours and spare inner marks that describe only existing structure; large dark cel groupings with thin highlights only along edges reached by the requested light; matte painted fields, gentle airbrush transitions and subtle analog transfer grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

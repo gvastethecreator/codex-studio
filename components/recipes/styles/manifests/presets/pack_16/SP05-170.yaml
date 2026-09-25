@@ -41,9 +41,7 @@ visualDna:
     sparkle and generic fantasy glow.
   key_features: >-
     hand-drawn cel contour; small nested seal-like loops; restrained gold and blue-violet glints
-  creative_brief: >-
-    Apply storybook cel linework and restrained seal-like ornament to the requested content. Preserve
-    its identity, action and composition; add no literal seal, spell, costume or fantasy prop.
+  creative_brief: "Apply storybook cel linework and restrained seal-like ornament to the requested content. Preserve its identity, action and composition; add no literal seal, spell, costume or fantasy prop. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

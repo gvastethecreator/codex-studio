@@ -41,10 +41,7 @@ visualDna:
     decorative marks. Avoid speed streaks and heavy digital effects.
   key_features: >-
     broad ink shadows; slow smoke-like line ribbons; slate-blue field with sparse brass warmth
-  creative_brief: >-
-    Use quiet noir cel values, fluid line accents and measured negative space on the requested
-    content. Preserve subject, action, environment and framing; add no detective, instrument or smoke
-    prop.
+  creative_brief: "Use quiet noir cel values, fluid line accents and measured negative space on the requested content. Preserve subject, action, environment and framing; add no detective, instrument or smoke prop. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

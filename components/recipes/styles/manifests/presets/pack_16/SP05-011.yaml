@@ -43,9 +43,7 @@ visualDna:
   key_features: >-
     broken blue-violet aura rim; short radiating ink strokes; angular silhouette against deep cel
     shadow
-  creative_brief: >-
-    Apply the angular cel and localized aura treatment to the requested content. Preserve its subject,
-    action, setting, palette, camera and mood; use no title-specific character, prop or location.
+  creative_brief: "Apply the angular cel and localized aura treatment to the requested content. Preserve its subject, action, setting, palette, camera and mood; use no title-specific character, prop or location. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

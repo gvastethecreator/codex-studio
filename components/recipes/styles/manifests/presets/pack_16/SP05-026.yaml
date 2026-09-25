@@ -40,9 +40,7 @@ visualDna:
     depth and legibility.
   key_features: >-
     Opposing masses; rising diagonals; defiant spacing; clean contours and grouped shadow.
-  creative_brief: >-
-    Use opposing shape masses and upward diagonals as compositional treatment, not as a new
-    scene. Preserve the requested action, viewpoint and tone.
+  creative_brief: "Use opposing shape masses and upward diagonals as compositional treatment, not as a new scene. Preserve the requested action, viewpoint and tone. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

@@ -43,10 +43,7 @@ visualDna:
   key_features: >-
     Measured contour beats; slate-and-amber split; crisp micro-hatch; evenly repeated value
     intervals.
-  creative_brief: >-
-    Use measured contour beats; slate-and-amber split; crisp micro-hatch; evenly repeated value
-    intervals. Keep the requested subjects, action, setting, palette, framing and mood; add no
-    scene content.
+  creative_brief: "Use measured contour beats; slate-and-amber split; crisp micro-hatch; evenly repeated value intervals. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

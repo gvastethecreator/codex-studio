@@ -33,8 +33,7 @@ visualDna:
     Finish as hand-drawn 2D cel illustration. Use thin, stable outlines with soft background paint and no unrequested light effects; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
   key_features: >-
     fine pencil-like ink edges softened by translucent color windows; delicate contours and small interior marks balanced against broad simple paint shapes; two-value cel shading softened only where the requested light calls for it; translucent airbrush gradients with fine paper and transfer grain.
-  creative_brief: >-
-    Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use fine pencil-like ink edges softened by translucent color windows; delicate contours and small interior marks balanced against broad simple paint shapes; two-value cel shading softened only where the requested light calls for it; translucent airbrush gradients with fine paper and transfer grain. Add no unrequested content or composition changes.
+  creative_brief: "Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use fine pencil-like ink edges softened by translucent color windows; delicate contours and small interior marks balanced against broad simple paint shapes; two-value cel shading softened only where the requested light calls for it; translucent airbrush gradients with fine paper and transfer grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

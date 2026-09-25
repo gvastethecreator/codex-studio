@@ -42,9 +42,7 @@ visualDna:
     background detail faithful to the source content.
   key_features: >-
     rounded expressive contours; soft gold edge light; warm cel neutrals against calm blue shadow
-  creative_brief: >-
-    Restyle the requested content with warm, clean cel drawing and gentle value transitions. Preserve
-    its identity, action, number of subjects and composition; add no rival, companion or sunset.
+  creative_brief: "Restyle the requested content with warm, clean cel drawing and gentle value transitions. Preserve its identity, action, number of subjects and composition; add no rival, companion or sunset. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

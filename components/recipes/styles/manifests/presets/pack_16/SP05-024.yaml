@@ -41,9 +41,7 @@ visualDna:
   key_features: >-
     Repeated geometry; measured axes; rule-like spacing; fine nonverbal marks; rim light and
     compact glow.
-  creative_brief: >-
-    Apply geometric line organization and restrained light to existing forms. Preserve the
-    prompt's content and frame; markings remain abstract and nonverbal.
+  creative_brief: "Apply geometric line organization and restrained light to existing forms. Preserve the prompt's content and frame; markings remain abstract and nonverbal. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

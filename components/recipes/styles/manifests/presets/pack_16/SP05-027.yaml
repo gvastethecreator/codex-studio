@@ -41,9 +41,7 @@ visualDna:
     background integration.
   key_features: >-
     Upward thrust; enlarged scale rhythm; strong shape hierarchy; restrained motion accents.
-  creative_brief: >-
-    Apply upward force and scale contrast where they fit the supplied action. Preserve the
-    subject, framing and requested tone.
+  creative_brief: "Apply upward force and scale contrast where they fit the supplied action. Preserve the subject, framing and requested tone. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

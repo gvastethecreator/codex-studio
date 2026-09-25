@@ -42,9 +42,7 @@ visualDna:
   key_features: >-
     Elastic expression shifts; readable reaction silhouettes; setup-pause-payoff spacing;
     quick visual timing with clean ink.
-  creative_brief: >-
-    Use elastic expression and quick reaction timing only where they suit the requested
-    action. Keep the prompt's cast, scene, camera and tone intact.
+  creative_brief: "Use elastic expression and quick reaction timing only where they suit the requested action. Keep the prompt's cast, scene, camera and tone intact. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

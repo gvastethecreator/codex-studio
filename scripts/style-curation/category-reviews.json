@@ -1328,7 +1328,7 @@
     "baselineHash": "bb2070697fd27d656cacec0386984d8a1241e85275e2b073e9f614eb1c56a2a3",
     "problem": "Character archetypes and iconic genres dominate despite renamed display labels.",
     "preserve": "Shadow group count, lineweight and color separation.",
-    "proposedAction": "Keep contour echoes, cel-value grouping, line rhythm and material-aware highlights without mandatory characters or scenes. Remove bare text bans; compare regenerated subjects before grouping variants.",
+    "proposedAction": "Keep contour echoes, cel-value grouping, line rhythm and material-aware highlights without mandatory characters or scenes. Remove bare text bans; compare regenerated subjects before grouping variants. Overhaul: DNA audited and kept; three original briefs written per preset (20).",
     "validation": "Keep action, setting and identity constant across the comparison set.",
     "evidencePresetIds": ["SP05-011", "SP05-165"],
     "status": "text-reviewed",

@@ -42,9 +42,7 @@ visualDna:
     bloom and generic neon wash.
   key_features: >-
     clipped cyan reflections; precise dark contours; sparse scanline bands over material-aware gloss
-  creative_brief: >-
-    Apply the restrained techno-noir cel treatment to the requested content. Preserve its identity,
-    materials, lighting and composition; add no screens, neon signs, rain or cybernetic details.
+  creative_brief: "Apply the restrained techno-noir cel treatment to the requested content. Preserve its identity, materials, lighting and composition; add no screens, neon signs, rain or cybernetic details. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

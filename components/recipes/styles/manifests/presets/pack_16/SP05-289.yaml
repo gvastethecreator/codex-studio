@@ -41,9 +41,7 @@ visualDna:
     high-contrast silhouettes.
   key_features: >-
     Blue-black mass; bone-gray cutout; hairline edge; sparse engraved hatch.
-  creative_brief: >-
-    Use blue-black mass; bone-gray cutout; hairline edge; sparse engraved hatch. Keep the
-    requested subjects, action, setting, palette, framing and mood; add no scene content.
+  creative_brief: "Use blue-black mass; bone-gray cutout; hairline edge; sparse engraved hatch. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

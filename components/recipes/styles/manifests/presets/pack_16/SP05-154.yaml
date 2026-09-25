@@ -42,9 +42,7 @@ visualDna:
   key_features: >-
     Precise rim separation; broad even light with grouped shadows; controlled
     digital surfaces; measured spacing and clean silhouettes.
-  creative_brief: >-
-    Use cool value separation, precise edges and grouped shadows only where they fit the
-    prompt. Keep its camera, subject and intended mood.
+  creative_brief: "Use cool value separation, precise edges and grouped shadows only where they fit the prompt. Keep its camera, subject and intended mood. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

@@ -42,9 +42,7 @@ visualDna:
     motion effects.
   key_features: >-
     softly painted backgrounds; dust-muted amber and blue-green; open spacing with quiet cel contours
-  creative_brief: >-
-    Restyle the requested content with low-saturation cel color, gentle background paint and quiet
-    spacing. Preserve its subject, action, setting and framing; add no airship, companion or sunset.
+  creative_brief: "Restyle the requested content with low-saturation cel color, gentle background paint and quiet spacing. Preserve its subject, action, setting and framing; add no airship, companion or sunset. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

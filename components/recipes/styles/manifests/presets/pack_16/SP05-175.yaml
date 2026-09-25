@@ -42,9 +42,7 @@ visualDna:
     hierarchy.
   key_features: >-
     axial balance; repeated radial ornament; deep rose-garnet and violet cel values with refined ink
-  creative_brief: >-
-    Apply the formal cel symmetry, radial line rhythm and rose-garnet accents to the requested
-    content. Preserve its identity and composition; add no flower, emblem, altar or ceremony.
+  creative_brief: "Apply the formal cel symmetry, radial line rhythm and rose-garnet accents to the requested content. Preserve its identity and composition; add no flower, emblem, altar or ceremony. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

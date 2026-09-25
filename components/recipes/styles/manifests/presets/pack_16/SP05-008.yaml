@@ -33,8 +33,7 @@ visualDna:
     Finish as hand-drawn 2D cel illustration. Use crisp edges, limited interior detail and no soft digital bloom; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
   key_features: >-
     precise squared contours interrupted by compact, abrupt accent strokes; simplified shapes with deliberate hard edges and a few precise interior marks; angular flat shadow blocks and clipped highlights, without inventing a glow source; flat printed color areas with discreet, evenly distributed screen grain.
-  creative_brief: >-
-    Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use precise squared contours interrupted by compact, abrupt accent strokes; simplified shapes with deliberate hard edges and a few precise interior marks; angular flat shadow blocks and clipped highlights, without inventing a glow source; flat printed color areas with discreet, evenly distributed screen grain. Add no unrequested content or composition changes.
+  creative_brief: "Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use precise squared contours interrupted by compact, abrupt accent strokes; simplified shapes with deliberate hard edges and a few precise interior marks; angular flat shadow blocks and clipped highlights, without inventing a glow source; flat printed color areas with discreet, evenly distributed screen grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

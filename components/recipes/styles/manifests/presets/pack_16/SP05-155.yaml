@@ -40,9 +40,7 @@ visualDna:
   key_features: >-
     Upright contour; controlled expression; optional royal-blue and gold accents; precise
     line with restrained glow.
-  creative_brief: >-
-    Use refined contour, orderly light and optional palette accents while preserving the
-    prompt's subject, action and camera.
+  creative_brief: "Use refined contour, orderly light and optional palette accents while preserving the prompt's subject, action and camera. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

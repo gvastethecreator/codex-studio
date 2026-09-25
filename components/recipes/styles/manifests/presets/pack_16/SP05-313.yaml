@@ -33,8 +33,7 @@ visualDna:
     Finish as hand-drawn 2D cel illustration. Use crisp arcs and controlled color separation without added motifs; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
   key_features: >-
     curved radiating contour accents with clear gold-on-dark separation; long clean curves and small controlled marks while keeping silhouettes unchanged; clean cel rims on source-lit edges and distinct dark shape groupings; flat cel paint, broad restrained airbrush fields and fine print grain.
-  creative_brief: >-
-    Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use curved radiating contour accents with clear gold-on-dark separation; long clean curves and small controlled marks while keeping silhouettes unchanged; clean cel rims on source-lit edges and distinct dark shape groupings; flat cel paint, broad restrained airbrush fields and fine print grain. Add no unrequested content or composition changes.
+  creative_brief: "Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use curved radiating contour accents with clear gold-on-dark separation; long clean curves and small controlled marks while keeping silhouettes unchanged; clean cel rims on source-lit edges and distinct dark shape groupings; flat cel paint, broad restrained airbrush fields and fine print grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

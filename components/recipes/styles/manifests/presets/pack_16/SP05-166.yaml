@@ -41,9 +41,7 @@ visualDna:
     finish polished without denoising away all line character.
   key_features: >-
     quiet contour work; clean cel groups with gentle transitions; cool rim and restrained warm accents
-  creative_brief: >-
-    Restyle the requested content with calm cel drawing, measured shadows and quiet color. Preserve
-    its identity, action, mood and camera; introduce no redemption narrative, costume or prop.
+  creative_brief: "Restyle the requested content with calm cel drawing, measured shadows and quiet color. Preserve its identity, action, mood and camera; introduce no redemption narrative, costume or prop. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

@@ -42,10 +42,7 @@ visualDna:
   key_features: >-
     offset contour fragments; interrupted horizontal scan bands; electric blue-violet registration
     accents
-  creative_brief: >-
-    Restyle the requested content with sparse registration shifts and fragmented cel contours.
-    Preserve its identity, count, setting and composition; do not create duplicates, screens or a
-    digital narrative.
+  creative_brief: "Restyle the requested content with sparse registration shifts and fragmented cel contours. Preserve its identity, count, setting and composition; do not create duplicates, screens or a digital narrative. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

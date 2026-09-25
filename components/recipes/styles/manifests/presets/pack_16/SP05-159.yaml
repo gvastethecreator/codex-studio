@@ -40,9 +40,7 @@ visualDna:
   key_features: >-
     Hard dark contour; irregular accent color; rough ink edges; dense shadow with dirty
     highlight separation.
-  creative_brief: >-
-    Apply the rough line and contrast treatment to the forms already present. Keep requested
-    clothing, palette, action and emotional tone.
+  creative_brief: "Apply the rough line and contrast treatment to the forms already present. Keep requested clothing, palette, action and emotional tone. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

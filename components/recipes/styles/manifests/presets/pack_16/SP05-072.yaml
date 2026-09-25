@@ -41,10 +41,7 @@ visualDna:
   key_features: >-
     Broad depth planes; natural green-gold-blue range; firm foreground contour; distant value
     bands.
-  creative_brief: >-
-    Use broad depth planes; natural green-gold-blue range; firm foreground contour; distant
-    value bands. Keep the requested subjects, action, setting, palette, framing and mood; add no
-    scene content.
+  creative_brief: "Use broad depth planes; natural green-gold-blue range; firm foreground contour; distant value bands. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

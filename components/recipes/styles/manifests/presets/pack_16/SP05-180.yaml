@@ -42,9 +42,7 @@ visualDna:
   key_features: >-
     precise contour breaks; sharply cut cel-shadow wedges; timing and force lines tied to existing
     action
-  creative_brief: >-
-    Apply precise cel contours, shadow wedges and restrained timing marks to the requested content.
-    Preserve its identity, action, setting and composition; add no fighter, impact event or weapon.
+  creative_brief: "Apply precise cel contours, shadow wedges and restrained timing marks to the requested content. Preserve its identity, action, setting and composition; add no fighter, impact event or weapon. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

@@ -41,9 +41,7 @@ visualDna:
   key_features: >-
     Vertical lift; elongated action silhouettes; rising diagonals; trailing smears and
     compressed motion lanes.
-  creative_brief: >-
-    Emphasize vertical movement and speed marks only when the supplied action supports them.
-    Preserve the subject, camera, palette and scene.
+  creative_brief: "Emphasize vertical movement and speed marks only when the supplied action supports them. Preserve the subject, camera, palette and scene. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

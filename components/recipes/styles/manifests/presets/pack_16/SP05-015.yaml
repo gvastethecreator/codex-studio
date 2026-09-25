@@ -43,10 +43,7 @@ visualDna:
   key_features: >-
     recursive alignment and measured contour offsets; precise cel geometry; limited cyan, magenta and
     green accents
-  creative_brief: >-
-    Restyle the requested content with recursive geometry, controlled edge offsets and restrained
-    digital accents. Keep its identity, materials, setting and composition; introduce no screens,
-    cables or cybernetic parts.
+  creative_brief: "Restyle the requested content with recursive geometry, controlled edge offsets and restrained digital accents. Keep its identity, materials, setting and composition; introduce no screens, cables or cybernetic parts. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

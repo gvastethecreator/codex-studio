@@ -31,7 +31,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Delicate contour economy; diffuse light with small warm accents; pale cool fields when palette is open; soft integration between digital forms and painted backgrounds.',
       creative_brief:
-        'Apply the quiet contour, diffuse light and optional cool-warm palette after the prompt is set. Preserve its subject, action, setting and framing; texture only materials already present.',
+        'Apply the quiet contour, diffuse light and optional cool-warm palette after the prompt is set. Preserve its subject, action, setting and framing; texture only materials already present. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -62,7 +62,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Elastic expression shifts; readable reaction silhouettes; setup-pause-payoff spacing; quick visual timing with clean ink.',
       creative_brief:
-        "Use elastic expression and quick reaction timing only where they suit the requested action. Keep the prompt's cast, scene, camera and tone intact.",
+        "Use elastic expression and quick reaction timing only where they suit the requested action. Keep the prompt's cast, scene, camera and tone intact. Use it as a reusable look on any subject.",
     },
   },
   {
@@ -92,7 +92,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'High-key color grouping when palette is open; bright flat accents; crisp graphic highlights; restrained glow over stable silhouettes.',
       creative_brief:
-        'Apply bright accents, graphic highlights and restrained glow without altering the requested forms or scene. Honor explicit palette, mood and framing.',
+        'Apply bright accents, graphic highlights and restrained glow without altering the requested forms or scene. Honor explicit palette, mood and framing. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -123,7 +123,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Minimal expression shift; economical gesture; stillness contrasted with a sudden visual beat; clean ink and controlled value emphasis.',
       creative_brief:
-        'Use restrained acting and timing contrast while preserving the given subject, action, setting and camera; let the prompt set the tone.',
+        'Use restrained acting and timing contrast while preserving the given subject, action, setting and camera; let the prompt set the tone. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -154,7 +154,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Precise rim separation; broad even light with grouped shadows; controlled digital surfaces; measured spacing and clean silhouettes.',
       creative_brief:
-        'Use cool value separation, precise edges and grouped shadows only where they fit the prompt. Keep its camera, subject and intended mood.',
+        'Use cool value separation, precise edges and grouped shadows only where they fit the prompt. Keep its camera, subject and intended mood. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -183,7 +183,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Clear digital contours; soft compositing; integrated painted backgrounds; prompt-controlled palette, lighting and emotion.',
       creative_brief:
-        'Keep the requested content and composition. Apply clean contours, soft compositing and painted-background integration while following its palette and mood.',
+        'Keep the requested content and composition. Apply clean contours, soft compositing and painted-background integration while following its palette and mood. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -214,7 +214,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Vertical lift; elongated action silhouettes; rising diagonals; trailing smears and compressed motion lanes.',
       creative_brief:
-        'Emphasize vertical movement and speed marks only when the supplied action supports them. Preserve the subject, camera, palette and scene.',
+        'Emphasize vertical movement and speed marks only when the supplied action supports them. Preserve the subject, camera, palette and scene. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -243,7 +243,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Hard dark contour; irregular accent color; rough ink edges; dense shadow with dirty highlight separation.',
       creative_brief:
-        'Apply the rough line and contrast treatment to the forms already present. Keep requested clothing, palette, action and emotional tone.',
+        'Apply the rough line and contrast treatment to the forms already present. Keep requested clothing, palette, action and emotional tone. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -274,7 +274,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Elastic expression; readable reaction contours; quick-pause timing; refined lines with clear value grouping.',
       creative_brief:
-        'Use the elastic line and quick reaction rhythm where it supports the prompt. Preserve its subjects, framing and chosen tone.',
+        'Use the elastic line and quick reaction rhythm where it supports the prompt. Preserve its subjects, framing and chosen tone. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -305,7 +305,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Repeated geometry; measured axes; rule-like spacing; fine nonverbal marks; rim light and compact glow.',
       creative_brief:
-        "Apply geometric line organization and restrained light to existing forms. Preserve the prompt's content and frame; markings remain abstract and nonverbal.",
+        "Apply geometric line organization and restrained light to existing forms. Preserve the prompt's content and frame; markings remain abstract and nonverbal. Use it as a reusable look on any subject.",
     },
   },
   {
@@ -335,7 +335,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Opposing masses; rising diagonals; defiant spacing; clean contours and grouped shadow.',
       creative_brief:
-        'Use opposing shape masses and upward diagonals as compositional treatment, not as a new scene. Preserve the requested action, viewpoint and tone.',
+        'Use opposing shape masses and upward diagonals as compositional treatment, not as a new scene. Preserve the requested action, viewpoint and tone. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -366,7 +366,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Upward thrust; enlarged scale rhythm; strong shape hierarchy; restrained motion accents.',
       creative_brief:
-        'Apply upward force and scale contrast where they fit the supplied action. Preserve the subject, framing and requested tone.',
+        'Apply upward force and scale contrast where they fit the supplied action. Preserve the subject, framing and requested tone. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -396,7 +396,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Ornamental shadow shapes; hard rim over deep soft shadow; bright graphic accents; readable force-transfer lines.',
       creative_brief:
-        'Combine ornamental shadow, optional dark accents and clear action contours only as the prompt allows. Keep its scene, palette and framing.',
+        'Combine ornamental shadow, optional dark accents and clear action contours only as the prompt allows. Keep its scene, palette and framing. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -427,7 +427,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Ornamental shadow; dark and vivid accent contrast; pulsing highlight rhythm; rough ink on existing materials.',
       creative_brief:
-        'Use ornamental contours and optional pulsing highlights to style the supplied content. Preserve its subject, action, palette and camera.',
+        'Use ornamental contours and optional pulsing highlights to style the supplied content. Preserve its subject, action, palette and camera. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -458,7 +458,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Fine contours; gentle color transitions; optional blush-blue-warm accents; clear integration with painted backgrounds.',
       creative_brief:
-        "Apply the fine line, soft transitions and optional warm accents to the existing scene. Preserve the prompt's content and camera.",
+        "Apply the fine line, soft transitions and optional warm accents to the existing scene. Preserve the prompt's content and camera. Use it as a reusable look on any subject.",
     },
   },
   {
@@ -488,7 +488,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Ornate shadow; polished rim over velvety dark values; controlled warm glow; matte-to-gloss contrast.',
       creative_brief:
-        'Use dark value shapes, precise edge light and subject-dependent surface contrast. Preserve the requested scene, colors and composition.',
+        'Use dark value shapes, precise edge light and subject-dependent surface contrast. Preserve the requested scene, colors and composition. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -518,7 +518,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Optional crimson accent; red edge glow on existing forms; clear light-dark division; controlled digital contour.',
       creative_brief:
-        "Apply optional crimson edge light and divided value fields to the prompt's existing forms. Keep its scene, camera and palette intent.",
+        "Apply optional crimson edge light and divided value fields to the prompt's existing forms. Keep its scene, camera and palette intent. Use it as a reusable look on any subject.",
     },
   },
   {
@@ -549,7 +549,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Luminous edge; restrained monitor-like bloom; fine scan-like marks; ornate shadow against clean digital surfaces.',
       creative_brief:
-        'Apply synthetic light and scan-like detail only where compatible with the requested image. Preserve its content and composition.',
+        'Apply synthetic light and scan-like detail only where compatible with the requested image. Preserve its content and composition. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -579,7 +579,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Upright contour; controlled expression; optional royal-blue and gold accents; precise line with restrained glow.',
       creative_brief:
-        "Use refined contour, orderly light and optional palette accents while preserving the prompt's subject, action and camera.",
+        "Use refined contour, orderly light and optional palette accents while preserving the prompt's subject, action and camera. Use it as a reusable look on any subject.",
     },
   },
   {
@@ -610,7 +610,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Softened edge; partial detail; weak rim glow; selective contrast; negative space and painted-background integration.',
       creative_brief:
-        "Apply selective detail, softened edges and restrained light to the prompt's existing content. Preserve its scene, camera and requested tone.",
+        "Apply selective detail, softened edges and restrained light to the prompt's existing content. Preserve its scene, camera and requested tone. Use it as a reusable look on any subject.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

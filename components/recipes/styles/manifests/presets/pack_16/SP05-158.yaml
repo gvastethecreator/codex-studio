@@ -42,9 +42,7 @@ visualDna:
   key_features: >-
     Softened edge; partial detail; weak rim glow; selective contrast; negative
     space and painted-background integration.
-  creative_brief: >-
-    Apply selective detail, softened edges and restrained light to the prompt's existing
-    content. Preserve its scene, camera and requested tone.
+  creative_brief: "Apply selective detail, softened edges and restrained light to the prompt's existing content. Preserve its scene, camera and requested tone. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

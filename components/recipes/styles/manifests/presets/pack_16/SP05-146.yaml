@@ -40,9 +40,7 @@ visualDna:
   key_features: >-
     Ornate shadow; polished rim over velvety dark values; controlled warm glow;
     matte-to-gloss contrast.
-  creative_brief: >-
-    Use dark value shapes, precise edge light and subject-dependent surface contrast.
-    Preserve the requested scene, colors and composition.
+  creative_brief: "Use dark value shapes, precise edge light and subject-dependent surface contrast. Preserve the requested scene, colors and composition. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

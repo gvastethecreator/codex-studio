@@ -40,10 +40,7 @@ visualDna:
     overlay.
   key_features: >-
     Irregular hatch clusters; mottled broad washes; solid dark anchors; controlled density.
-  creative_brief: >-
-    Use irregular hatch clusters; mottled broad washes; solid dark anchors; controlled density.
-    Keep the requested subjects, action, setting, palette, framing and mood; add no scene
-    content.
+  creative_brief: "Use irregular hatch clusters; mottled broad washes; solid dark anchors; controlled density. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

@@ -31,7 +31,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Measured contour beats; slate-and-amber split; crisp micro-hatch; evenly repeated value intervals.',
       creative_brief:
-        'Use measured contour beats; slate-and-amber split; crisp micro-hatch; evenly repeated value intervals. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use measured contour beats; slate-and-amber split; crisp micro-hatch; evenly repeated value intervals. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -62,7 +62,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Broad silhouette; apricot-to-violet transition; diffuse source light; open horizontal value zones.',
       creative_brief:
-        'Use broad silhouette; apricot-to-violet transition; diffuse source light; open horizontal value zones. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use broad silhouette; apricot-to-violet transition; diffuse source light; open horizontal value zones. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -93,7 +93,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Hairline cel contour; transparent pastel glaze; soft value thresholds; precise focal edges.',
       creative_brief:
-        'Use hairline cel contour; transparent pastel glaze; soft value thresholds; precise focal edges. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use hairline cel contour; transparent pastel glaze; soft value thresholds; precise focal edges. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -124,7 +124,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Partial reversed contour; paired value polarity; existing-reflection echo; clear identity contours.',
       creative_brief:
-        'Use partial reversed contour; paired value polarity; existing-reflection echo; clear identity contours. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use partial reversed contour; paired value polarity; existing-reflection echo; clear identity contours. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -155,7 +155,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Angular ink blocks; hard cel planes; short edge-bound tapers; cool-dark and cream contrast.',
       creative_brief:
-        'Use angular ink blocks; hard cel planes; short edge-bound tapers; cool-dark and cream contrast. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use angular ink blocks; hard cel planes; short edge-bound tapers; cool-dark and cream contrast. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -186,7 +186,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Tapered speed contours; compressed-to-open spacing; cobalt-violet field; legible action silhouette.',
       creative_brief:
-        'Use tapered speed contours; compressed-to-open spacing; cobalt-violet field; legible action silhouette. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use tapered speed contours; compressed-to-open spacing; cobalt-violet field; legible action silhouette. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -215,7 +215,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Fluid line flow; translucent value layering; deep blue-teal and pearl; spacious dark-to-light separation.',
       creative_brief:
-        'Use fluid line flow; translucent value layering; deep blue-teal and pearl; spacious dark-to-light separation. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use fluid line flow; translucent value layering; deep blue-teal and pearl; spacious dark-to-light separation. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -246,7 +246,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Cinema-still depth; softened secondary edges; charcoal-blue values; isolated amber marks.',
       creative_brief:
-        'Use cinema-still depth; softened secondary edges; charcoal-blue values; isolated amber marks. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use cinema-still depth; softened secondary edges; charcoal-blue values; isolated amber marks. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -277,7 +277,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Responsive medium ink; natural proportion; soft cel modeling; locally resolved gestures.',
       creative_brief:
-        'Use responsive medium ink; natural proportion; soft cel modeling; locally resolved gestures. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use responsive medium ink; natural proportion; soft cel modeling; locally resolved gestures. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -308,7 +308,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Ascending diagonal rhythm; clean silhouettes; open value planes; graded depth.',
       creative_brief:
-        'Use ascending diagonal rhythm; clean silhouettes; open value planes; graded depth. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use ascending diagonal rhythm; clean silhouettes; open value planes; graded depth. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -339,7 +339,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Sweeping contour; filament taper; linked color paths; clear naturalistic values.',
       creative_brief:
-        'Use sweeping contour; filament taper; linked color paths; clear naturalistic values. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use sweeping contour; filament taper; linked color paths; clear naturalistic values. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -370,7 +370,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Close contour detail; joined midtones; olive-russet palette; restrained material grain.',
       creative_brief:
-        'Use close contour detail; joined midtones; olive-russet palette; restrained material grain. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use close contour detail; joined midtones; olive-russet palette; restrained material grain. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -401,7 +401,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Compressed-to-stretched cadence; tapered arcs; bright planes; intact silhouette.',
       creative_brief:
-        'Use compressed-to-stretched cadence; tapered arcs; bright planes; intact silhouette. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use compressed-to-stretched cadence; tapered arcs; bright planes; intact silhouette. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -432,7 +432,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Rectilinear shadow blocks; long contour runs; slate-blue low key; thin distance edges.',
       creative_brief:
-        'Use rectilinear shadow blocks; long contour runs; slate-blue low key; thin distance edges. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use rectilinear shadow blocks; long contour runs; slate-blue low key; thin distance edges. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -462,7 +462,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Retain clear subject boundaries through the wash and avoid smoothing away requested detail.',
       key_features: 'Fine contour; dilute glaze; pale aqua-sage; gentle adjacent-edge blending.',
       creative_brief:
-        'Use fine contour; dilute glaze; pale aqua-sage; gentle adjacent-edge blending. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use fine contour; dilute glaze; pale aqua-sage; gentle adjacent-edge blending. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -493,7 +493,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Broken scratch ink; heavy black silhouette; crimson-acid accent; source-bound hard light.',
       creative_brief:
-        'Use broken scratch ink; heavy black silhouette; crimson-acid accent; source-bound hard light. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use broken scratch ink; heavy black silhouette; crimson-acid accent; source-bound hard light. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -524,7 +524,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Irregular hatch clusters; mottled broad washes; solid dark anchors; controlled density.',
       creative_brief:
-        'Use irregular hatch clusters; mottled broad washes; solid dark anchors; controlled density. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use irregular hatch clusters; mottled broad washes; solid dark anchors; controlled density. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -555,7 +555,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Long fine contours; broad matte fields; intentional blank intervals; low mark density.',
       creative_brief:
-        'Use long fine contours; broad matte fields; intentional blank intervals; low mark density. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use long fine contours; broad matte fields; intentional blank intervals; low mark density. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -586,7 +586,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Stepped geometry; parallel line rhythm; calibrated symmetry; smooth cel fields.',
       creative_brief:
-        'Use stepped geometry; parallel line rhythm; calibrated symmetry; smooth cel fields. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use stepped geometry; parallel line rhythm; calibrated symmetry; smooth cel fields. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -617,7 +617,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Hairline contour; localized micro-detail; cool blue-gray field; fast detail falloff.',
       creative_brief:
-        'Use hairline contour; localized micro-detail; cool blue-gray field; fast detail falloff. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use hairline contour; localized micro-detail; cool blue-gray field; fast detail falloff. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -648,7 +648,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Amber-peach glaze; blue-gray contour; soft transition bands; open negative intervals.',
       creative_brief:
-        'Use amber-peach glaze; blue-gray contour; soft transition bands; open negative intervals. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use amber-peach glaze; blue-gray contour; soft transition bands; open negative intervals. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -679,7 +679,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'High-chroma flats; crisp layer separation; one gradient depth layer; controlled edge bloom.',
       creative_brief:
-        'Use high-chroma flats; crisp layer separation; one gradient depth layer; controlled edge bloom. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use high-chroma flats; crisp layer separation; one gradient depth layer; controlled edge bloom. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -710,7 +710,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Bold contour lock; interleaved chromatic planes; repeat-recoil spacing; source-bound rim separation.',
       creative_brief:
-        'Use bold contour lock; interleaved chromatic planes; repeat-recoil spacing; source-bound rim separation. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use bold contour lock; interleaved chromatic planes; repeat-recoil spacing; source-bound rim separation. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -741,7 +741,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Broad depth planes; natural green-gold-blue range; firm foreground contour; distant value bands.',
       creative_brief:
-        'Use broad depth planes; natural green-gold-blue range; firm foreground contour; distant value bands. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use broad depth planes; natural green-gold-blue range; firm foreground contour; distant value bands. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -772,7 +772,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Stable focal contours; peripheral edge slippage; graded pastel values; fixed scene geometry.',
       creative_brief:
-        'Use stable focal contours; peripheral edge slippage; graded pastel values; fixed scene geometry. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use stable focal contours; peripheral edge slippage; graded pastel values; fixed scene geometry. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -802,7 +802,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Protect identity-bearing edges from merging and keep sparse highlights precise rather than foggy.',
       key_features: 'Deep blue-black field; sparse contour; selective edge merge; pale accents.',
       creative_brief:
-        'Use deep blue-black field; sparse contour; selective edge merge; pale accents. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use deep blue-black field; sparse contour; selective edge merge; pale accents. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -833,7 +833,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Undulating internal color; stable contours; layered green-bronze values; restrained stipple.',
       creative_brief:
-        'Use undulating internal color; stable contours; layered green-bronze values; restrained stipple. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use undulating internal color; stable contours; layered green-bronze values; restrained stipple. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -864,7 +864,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Blue-violet shadow; sparse amber-cyan points; crisp foreground; softened secondary edge.',
       creative_brief:
-        'Use blue-violet shadow; sparse amber-cyan points; crisp foreground; softened secondary edge. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use blue-violet shadow; sparse amber-cyan points; crisp foreground; softened secondary edge. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -895,7 +895,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Local arc rhythm; violet-rose fields; alternating edge softness; stable recognizable forms.',
       creative_brief:
-        'Use local arc rhythm; violet-rose fields; alternating edge softness; stable recognizable forms. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use local arc rhythm; violet-rose fields; alternating edge softness; stable recognizable forms. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -925,7 +925,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Protect thin contours from noise, hold dark values clean, and preserve detail within high-contrast silhouettes.',
       key_features: 'Blue-black mass; bone-gray cutout; hairline edge; sparse engraved hatch.',
       creative_brief:
-        'Use blue-black mass; bone-gray cutout; hairline edge; sparse engraved hatch. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content.',
+        'Use blue-black mass; bone-gray cutout; hairline edge; sparse engraved hatch. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

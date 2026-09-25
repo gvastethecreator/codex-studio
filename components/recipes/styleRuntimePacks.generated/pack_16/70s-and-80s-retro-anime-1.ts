@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'broad, confident ink contours with firm dark turns and open interior shapes; sturdy silhouettes, a few expressive marks and emphatic held cel masses; decisive two-step shadow blocks with a narrow rim only on already lit edges; fine acetate grain, lightly dry-brushed background paint and barely visible film dust.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use broad, confident ink contours with firm dark turns and open interior shapes; sturdy silhouettes, a few expressive marks and emphatic held cel masses; decisive two-step shadow blocks with a narrow rim only on already lit edges; fine acetate grain, lightly dry-brushed background paint and barely visible film dust. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use broad, confident ink contours with firm dark turns and open interior shapes; sturdy silhouettes, a few expressive marks and emphatic held cel masses; decisive two-step shadow blocks with a narrow rim only on already lit edges; fine acetate grain, lightly dry-brushed background paint and barely visible film dust. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -90,7 +90,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'slightly broken dry-brush contours and softly weathered pigment edges; uneven outer marks around intact, readable silhouettes and stable anatomy; broad, low-chroma cel shadows with a firm silhouette edge; matte pigment mottling, sparse dry brush and fine transfer grain.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use slightly broken dry-brush contours and softly weathered pigment edges; uneven outer marks around intact, readable silhouettes and stable anatomy; broad, low-chroma cel shadows with a firm silhouette edge; matte pigment mottling, sparse dry brush and fine transfer grain. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use slightly broken dry-brush contours and softly weathered pigment edges; uneven outer marks around intact, readable silhouettes and stable anatomy; broad, low-chroma cel shadows with a firm silhouette edge; matte pigment mottling, sparse dry brush and fine transfer grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -121,7 +121,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'alternating thick and hairline ink strokes with clipped, syncopated curves; relaxed contour turns, carefully placed interior marks and no imposed gesture; narrow hard cel slices following the stated key light, with no added spotlight; dry ink edges over softly brushed matte color fields.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use alternating thick and hairline ink strokes with clipped, syncopated curves; relaxed contour turns, carefully placed interior marks and no imposed gesture; narrow hard cel slices following the stated key light, with no added spotlight; dry ink edges over softly brushed matte color fields. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use alternating thick and hairline ink strokes with clipped, syncopated curves; relaxed contour turns, carefully placed interior marks and no imposed gesture; narrow hard cel slices following the stated key light, with no added spotlight; dry ink edges over softly brushed matte color fields. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -152,7 +152,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'long sweeping contours, quiet edge-weight changes and broad tonal pauses; graceful contour arcs and restrained facial detail without changing proportions; large, low-contrast cel fields cut by a few decisive contour shadows; soft airbrushed color transitions behind crisp ink and a trace of cel grain.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use long sweeping contours, quiet edge-weight changes and broad tonal pauses; graceful contour arcs and restrained facial detail without changing proportions; large, low-contrast cel fields cut by a few decisive contour shadows; soft airbrushed color transitions behind crisp ink and a trace of cel grain. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use long sweeping contours, quiet edge-weight changes and broad tonal pauses; graceful contour arcs and restrained facial detail without changing proportions; large, low-contrast cel fields cut by a few decisive contour shadows; soft airbrushed color transitions behind crisp ink and a trace of cel grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -183,7 +183,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'precise squared contours interrupted by compact, abrupt accent strokes; simplified shapes with deliberate hard edges and a few precise interior marks; angular flat shadow blocks and clipped highlights, without inventing a glow source; flat printed color areas with discreet, evenly distributed screen grain.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use precise squared contours interrupted by compact, abrupt accent strokes; simplified shapes with deliberate hard edges and a few precise interior marks; angular flat shadow blocks and clipped highlights, without inventing a glow source; flat printed color areas with discreet, evenly distributed screen grain. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use precise squared contours interrupted by compact, abrupt accent strokes; simplified shapes with deliberate hard edges and a few precise interior marks; angular flat shadow blocks and clipped highlights, without inventing a glow source; flat printed color areas with discreet, evenly distributed screen grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -214,7 +214,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'dense nested contours with tightly controlled clusters of fine interior marks; a simple, dominant silhouette with detail concentrated only on forms already present; layered hard cel shapes with narrow source-matched edge light; fine ink grain and barely visible scan-like texture without accumulated noise.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use dense nested contours with tightly controlled clusters of fine interior marks; a simple, dominant silhouette with detail concentrated only on forms already present; layered hard cel shapes with narrow source-matched edge light; fine ink grain and barely visible scan-like texture without accumulated noise. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use dense nested contours with tightly controlled clusters of fine interior marks; a simple, dominant silhouette with detail concentrated only on forms already present; layered hard cel shapes with narrow source-matched edge light; fine ink grain and barely visible scan-like texture without accumulated noise. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -245,7 +245,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'rounded continuous ink contours, softened corners and occasional thick outline accents; broad curved groupings and abbreviated interior marks without reshaping the subject; one or two simple cel-shadow shapes with restrained highlights; matte opaque paint with slight paper-like color variation.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use rounded continuous ink contours, softened corners and occasional thick outline accents; broad curved groupings and abbreviated interior marks without reshaping the subject; one or two simple cel-shadow shapes with restrained highlights; matte opaque paint with slight paper-like color variation. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use rounded continuous ink contours, softened corners and occasional thick outline accents; broad curved groupings and abbreviated interior marks without reshaping the subject; one or two simple cel-shadow shapes with restrained highlights; matte opaque paint with slight paper-like color variation. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -276,7 +276,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'confident weighty outlines paired with broad, quiet value masses; clear outer contours and spare inner marks that describe only existing structure; large dark cel groupings with thin highlights only along edges reached by the requested light; matte painted fields, gentle airbrush transitions and subtle analog transfer grain.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use confident weighty outlines paired with broad, quiet value masses; clear outer contours and spare inner marks that describe only existing structure; large dark cel groupings with thin highlights only along edges reached by the requested light; matte painted fields, gentle airbrush transitions and subtle analog transfer grain. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use confident weighty outlines paired with broad, quiet value masses; clear outer contours and spare inner marks that describe only existing structure; large dark cel groupings with thin highlights only along edges reached by the requested light; matte painted fields, gentle airbrush transitions and subtle analog transfer grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -307,7 +307,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'tapered ink strokes, long curve returns and softly irregular contour ends; flowing silhouette lines with overlapping value planes, without adding costume shapes; long, clean shadow bands with one restrained intermediate cel tone; soft brushed transitions behind decisive ink edges with fine film grain.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use tapered ink strokes, long curve returns and softly irregular contour ends; flowing silhouette lines with overlapping value planes, without adding costume shapes; long, clean shadow bands with one restrained intermediate cel tone; soft brushed transitions behind decisive ink edges with fine film grain. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use tapered ink strokes, long curve returns and softly irregular contour ends; flowing silhouette lines with overlapping value planes, without adding costume shapes; long, clean shadow bands with one restrained intermediate cel tone; soft brushed transitions behind decisive ink edges with fine film grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -338,7 +338,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'fine pencil-like ink edges softened by translucent color windows; delicate contours and small interior marks balanced against broad simple paint shapes; two-value cel shading softened only where the requested light calls for it; translucent airbrush gradients with fine paper and transfer grain.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use fine pencil-like ink edges softened by translucent color windows; delicate contours and small interior marks balanced against broad simple paint shapes; two-value cel shading softened only where the requested light calls for it; translucent airbrush gradients with fine paper and transfer grain. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use fine pencil-like ink edges softened by translucent color windows; delicate contours and small interior marks balanced against broad simple paint shapes; two-value cel shading softened only where the requested light calls for it; translucent airbrush gradients with fine paper and transfer grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -369,7 +369,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'ornamental fine-line passages set against firm silhouette ink; nested marks following existing contours and surface details, not adding decoration; alternating narrow highlights and deep cel shapes aligned to the stated light; opaque pigment, selective engraved hatching and subtle print grain.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use ornamental fine-line passages set against firm silhouette ink; nested marks following existing contours and surface details, not adding decoration; alternating narrow highlights and deep cel shapes aligned to the stated light; opaque pigment, selective engraved hatching and subtle print grain. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use ornamental fine-line passages set against firm silhouette ink; nested marks following existing contours and surface details, not adding decoration; alternating narrow highlights and deep cel shapes aligned to the stated light; opaque pigment, selective engraved hatching and subtle print grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -400,7 +400,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'nimble rounded contours, quick expressive ticks and clean cel edges; simple flexible line shapes and legible details while preserving requested proportions; simple flat cel shadows with bright accents restricted to actual light sources; smooth flat paint with faint analog grain and no plastic gloss.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use nimble rounded contours, quick expressive ticks and clean cel edges; simple flexible line shapes and legible details while preserving requested proportions; simple flat cel shadows with bright accents restricted to actual light sources; smooth flat paint with faint analog grain and no plastic gloss. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use nimble rounded contours, quick expressive ticks and clean cel edges; simple flexible line shapes and legible details while preserving requested proportions; simple flat cel shadows with bright accents restricted to actual light sources; smooth flat paint with faint analog grain and no plastic gloss. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -431,7 +431,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'quiet fine-weight contours with slight emphasis around expressive features; understated interior marks that retain subtle expression, identity and material clues; broad soft value pools bounded by simple cel edges and matched to the stated light; matte pigment, delicate paper grain and low-intensity airbrush transitions.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use quiet fine-weight contours with slight emphasis around expressive features; understated interior marks that retain subtle expression, identity and material clues; broad soft value pools bounded by simple cel edges and matched to the stated light; matte pigment, delicate paper grain and low-intensity airbrush transitions. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use quiet fine-weight contours with slight emphasis around expressive features; understated interior marks that retain subtle expression, identity and material clues; broad soft value pools bounded by simple cel edges and matched to the stated light; matte pigment, delicate paper grain and low-intensity airbrush transitions. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -462,7 +462,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'elastic action contours, narrow speed accents and firmly resolved gesture ends; clear weight transfer along the requested movement without adding a pose or activity; hard cel planes following the stated light, with brief accents only at existing motion points; dry background brush and light cel-transfer grain.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use elastic action contours, narrow speed accents and firmly resolved gesture ends; clear weight transfer along the requested movement without adding a pose or activity; hard cel planes following the stated light, with brief accents only at existing motion points; dry background brush and light cel-transfer grain. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use elastic action contours, narrow speed accents and firmly resolved gesture ends; clear weight transfer along the requested movement without adding a pose or activity; hard cel planes following the stated light, with brief accents only at existing motion points; dry background brush and light cel-transfer grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -493,7 +493,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'precise fine outlines, clean-cut color areas and selectively crisp highlights; controlled proportions, sharp edge decisions and minimal interior marks; compact hard shadows and narrow highlight trims aligned to existing light; smooth opaque cel fields with slight analog color drift and fine grain.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use precise fine outlines, clean-cut color areas and selectively crisp highlights; controlled proportions, sharp edge decisions and minimal interior marks; compact hard shadows and narrow highlight trims aligned to existing light; smooth opaque cel fields with slight analog color drift and fine grain. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use precise fine outlines, clean-cut color areas and selectively crisp highlights; controlled proportions, sharp edge decisions and minimal interior marks; compact hard shadows and narrow highlight trims aligned to existing light; smooth opaque cel fields with slight analog color drift and fine grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -524,7 +524,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'sharp tapered contours with split-second, hard-edged shadow cuts; show force transfer only through the pose and motion the prompt already describes; abrupt two-tone blocks and a bright cut only at an explicitly lit point; clean hand ink, brief dry-brush streaks and restrained cel grain.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use sharp tapered contours with split-second, hard-edged shadow cuts; show force transfer only through the pose and motion the prompt already describes; abrupt two-tone blocks and a bright cut only at an explicitly lit point; clean hand ink, brief dry-brush streaks and restrained cel grain. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use sharp tapered contours with split-second, hard-edged shadow cuts; show force transfer only through the pose and motion the prompt already describes; abrupt two-tone blocks and a bright cut only at an explicitly lit point; clean hand ink, brief dry-brush streaks and restrained cel grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -555,7 +555,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'compact, confident ink outlines with flat tonal blocks and clear form separation; functional silhouettes and a few decisive internal marks without redesign; stable shadow shapes with a clear light-to-dark break and little bloom; matte painted planes, dry background brush and faint film grain.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use compact, confident ink outlines with flat tonal blocks and clear form separation; functional silhouettes and a few decisive internal marks without redesign; stable shadow shapes with a clear light-to-dark break and little bloom; matte painted planes, dry background brush and faint film grain. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use compact, confident ink outlines with flat tonal blocks and clear form separation; functional silhouettes and a few decisive internal marks without redesign; stable shadow shapes with a clear light-to-dark break and little bloom; matte painted planes, dry background brush and faint film grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -586,7 +586,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'sleek tapered contours, clean angles and measured curves; elegant edge accents on existing shapes while retaining identity and clothing; polished hard-edged cel highlights and narrow shadow slices matched to the light; smooth opaque paint with fine analog grain and no plastic sheen.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use sleek tapered contours, clean angles and measured curves; elegant edge accents on existing shapes while retaining identity and clothing; polished hard-edged cel highlights and narrow shadow slices matched to the light; smooth opaque paint with fine analog grain and no plastic sheen. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use sleek tapered contours, clean angles and measured curves; elegant edge accents on existing shapes while retaining identity and clothing; polished hard-edged cel highlights and narrow shadow slices matched to the light; smooth opaque paint with fine analog grain and no plastic sheen. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -617,7 +617,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'curved radiating contour accents with clear gold-on-dark separation; long clean curves and small controlled marks while keeping silhouettes unchanged; clean cel rims on source-lit edges and distinct dark shape groupings; flat cel paint, broad restrained airbrush fields and fine print grain.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use curved radiating contour accents with clear gold-on-dark separation; long clean curves and small controlled marks while keeping silhouettes unchanged; clean cel rims on source-lit edges and distinct dark shape groupings; flat cel paint, broad restrained airbrush fields and fine print grain. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use curved radiating contour accents with clear gold-on-dark separation; long clean curves and small controlled marks while keeping silhouettes unchanged; clean cel rims on source-lit edges and distinct dark shape groupings; flat cel paint, broad restrained airbrush fields and fine print grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -648,7 +648,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'blocky ink profiles, bright signal accents and short horizontal mark bands; strong silhouette edges with small graphic detail only on existing forms; crisp cut cel shadows and narrow electric edge accents only where light exists; fine screen-print grain and subtle transfer shift without visible interface graphics.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use blocky ink profiles, bright signal accents and short horizontal mark bands; strong silhouette edges with small graphic detail only on existing forms; crisp cut cel shadows and narrow electric edge accents only where light exists; fine screen-print grain and subtle transfer shift without visible interface graphics. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use blocky ink profiles, bright signal accents and short horizontal mark bands; strong silhouette edges with small graphic detail only on existing forms; crisp cut cel shadows and narrow electric edge accents only where light exists; fine screen-print grain and subtle transfer shift without visible interface graphics. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -679,7 +679,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'roughened contour ends, broad poster-ink shadows and crisp tapered curls; robust outer shapes with sparse inner lines while preserving the requested design; firm directional cel blocks with abrupt but readable transitions; soft dry brush, slight paper tooth and fine film grain without frame damage.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use roughened contour ends, broad poster-ink shadows and crisp tapered curls; robust outer shapes with sparse inner lines while preserving the requested design; firm directional cel blocks with abrupt but readable transitions; soft dry brush, slight paper tooth and fine film grain without frame damage. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use roughened contour ends, broad poster-ink shadows and crisp tapered curls; robust outer shapes with sparse inner lines while preserving the requested design; firm directional cel blocks with abrupt but readable transitions; soft dry brush, slight paper tooth and fine film grain without frame damage. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -710,7 +710,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'straight contour runs, hard corners and sparse angular breaks; rectilinear shadow planes applied to existing structures without adding architecture; flat, shallow cel bands with narrow strips of light matched to the described source; matte paint, fine even grain and no distressed texture.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use straight contour runs, hard corners and sparse angular breaks; rectilinear shadow planes applied to existing structures without adding architecture; flat, shallow cel bands with narrow strips of light matched to the described source; matte paint, fine even grain and no distressed texture. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use straight contour runs, hard corners and sparse angular breaks; rectilinear shadow planes applied to existing structures without adding architecture; flat, shallow cel bands with narrow strips of light matched to the described source; matte paint, fine even grain and no distressed texture. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -741,7 +741,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'technical contour passes, fine double edges and small hatch marks at existing joins; make visible structural boundaries legible without inventing seams or components; broad plane highlights and hard-edged half-tone shadows following the stated light; dry-brushed paint, subtle cel texture and light film grain.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use technical contour passes, fine double edges and small hatch marks at existing joins; make visible structural boundaries legible without inventing seams or components; broad plane highlights and hard-edged half-tone shadows following the stated light; dry-brushed paint, subtle cel texture and light film grain. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use technical contour passes, fine double edges and small hatch marks at existing joins; make visible structural boundaries legible without inventing seams or components; broad plane highlights and hard-edged half-tone shadows following the stated light; dry-brushed paint, subtle cel texture and light film grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -772,7 +772,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'utilitarian outlines, steady internal strokes and short structural marks; simple, practical silhouettes and only the construction details already present; compact cel shadows with clear value separation and few specular accents; matte cel paint, restrained dry brush and fine transfer grain.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use utilitarian outlines, steady internal strokes and short structural marks; simple, practical silhouettes and only the construction details already present; compact cel shadows with clear value separation and few specular accents; matte cel paint, restrained dry brush and fine transfer grain. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use utilitarian outlines, steady internal strokes and short structural marks; simple, practical silhouettes and only the construction details already present; compact cel shadows with clear value separation and few specular accents; matte cel paint, restrained dry brush and fine transfer grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -803,7 +803,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'long arcing contour strokes, crisp flat planes and open cel highlights; fluid outline motion while retaining anatomy, pose and the direction of action; clear geometric cel shadows with one small highlight on source-lit edges; clean matte pigment with a faint analog grain.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use long arcing contour strokes, crisp flat planes and open cel highlights; fluid outline motion while retaining anatomy, pose and the direction of action; clear geometric cel shadows with one small highlight on source-lit edges; clean matte pigment with a faint analog grain. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use long arcing contour strokes, crisp flat planes and open cel highlights; fluid outline motion while retaining anatomy, pose and the direction of action; clear geometric cel shadows with one small highlight on source-lit edges; clean matte pigment with a faint analog grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -834,7 +834,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'heavy unifying outer contours, broad simplified cels and reserved inner marks; stable individual silhouettes and broad shape balance without changing subject count; large simple blocks following the stated key light and existing forms; opaque cel paint, restrained background brushwork and fine film grain.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use heavy unifying outer contours, broad simplified cels and reserved inner marks; stable individual silhouettes and broad shape balance without changing subject count; large simple blocks following the stated key light and existing forms; opaque cel paint, restrained background brushwork and fine film grain. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use heavy unifying outer contours, broad simplified cels and reserved inner marks; stable individual silhouettes and broad shape balance without changing subject count; large simple blocks following the stated key light and existing forms; opaque cel paint, restrained background brushwork and fine film grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -865,7 +865,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'organic variable contours, fine tapered edges and layered translucent pigment; soft irregular line turns that follow existing anatomy and materials; diffuse cel-value pools that preserve the prompt’s light direction; soft wash-like image texture and blended edges, without changing depicted materials.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use organic variable contours, fine tapered edges and layered translucent pigment; soft irregular line turns that follow existing anatomy and materials; diffuse cel-value pools that preserve the prompt’s light direction; soft wash-like image texture and blended edges, without changing depicted materials. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use organic variable contours, fine tapered edges and layered translucent pigment; soft irregular line turns that follow existing anatomy and materials; diffuse cel-value pools that preserve the prompt’s light direction; soft wash-like image texture and blended edges, without changing depicted materials. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -896,7 +896,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'vivid alternating color planes, wavering contour echoes and compact optical hatch; repeat line accents within existing shapes while preserving identity and proportions; alternating dark and saturated midtone cel bands, matched to the stated light; hand-ink grain and tight halftone limited to the image surface.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use vivid alternating color planes, wavering contour echoes and compact optical hatch; repeat line accents within existing shapes while preserving identity and proportions; alternating dark and saturated midtone cel bands, matched to the stated light; hand-ink grain and tight halftone limited to the image surface. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use vivid alternating color planes, wavering contour echoes and compact optical hatch; repeat line accents within existing shapes while preserving identity and proportions; alternating dark and saturated midtone cel bands, matched to the stated light; hand-ink grain and tight halftone limited to the image surface. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -927,7 +927,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'jagged dry-brush outlines, solid dark masses and sharp angular edge cuts; forceful contour accents restricted to the requested pose and existing shapes; hard dark breaks and clear positive fields; dry brush and sparse pigment flecks kept away from small details.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use jagged dry-brush outlines, solid dark masses and sharp angular edge cuts; forceful contour accents restricted to the requested pose and existing shapes; hard dark breaks and clear positive fields; dry brush and sparse pigment flecks kept away from small details. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use jagged dry-brush outlines, solid dark masses and sharp angular edge cuts; forceful contour accents restricted to the requested pose and existing shapes; hard dark breaks and clear positive fields; dry brush and sparse pigment flecks kept away from small details. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -958,7 +958,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'clean graphic outlines, opposed flat color masses and paired highlight fragments; separate requested forms through color grouping without implying extra subjects; clean opposing cel planes with consistent light direction; smooth matte paint with a trace of offset-print grain.',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use clean graphic outlines, opposed flat color masses and paired highlight fragments; separate requested forms through color grouping without implying extra subjects; clean opposing cel planes with consistent light direction; smooth matte paint with a trace of offset-print grain. Add no unrequested content or composition changes.',
+        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use clean graphic outlines, opposed flat color masses and paired highlight fragments; separate requested forms through color grouping without implying extra subjects; clean opposing cel planes with consistent light direction; smooth matte paint with a trace of offset-print grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

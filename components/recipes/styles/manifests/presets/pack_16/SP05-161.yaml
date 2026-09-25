@@ -41,9 +41,7 @@ visualDna:
     avoid soft bloom obscuring form.
   key_features: >-
     broad curved aura shell; compact ivory-gold focal light; radial streaks that trace existing motion
-  creative_brief: >-
-    Apply the curved aura and impact-line language to the requested content where luminous effects
-    fit. Preserve its identity, action, palette and composition; add no planet, fighter or battle.
+  creative_brief: "Apply the curved aura and impact-line language to the requested content where luminous effects fit. Preserve its identity, action, palette and composition; add no planet, fighter or battle. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

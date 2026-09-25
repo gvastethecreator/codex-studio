@@ -42,9 +42,7 @@ visualDna:
   key_features: >-
     Fine contours; gentle color transitions; optional blush-blue-warm accents; clear
     integration with painted backgrounds.
-  creative_brief: >-
-    Apply the fine line, soft transitions and optional warm accents to the existing scene.
-    Preserve the prompt's content and camera.
+  creative_brief: "Apply the fine line, soft transitions and optional warm accents to the existing scene. Preserve the prompt's content and camera. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

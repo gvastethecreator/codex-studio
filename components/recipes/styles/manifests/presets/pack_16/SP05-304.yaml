@@ -33,8 +33,7 @@ visualDna:
     Finish as hand-drawn 2D cel illustration. Use balance ornate detail with large readable forms and clean cel edges; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
   key_features: >-
     ornamental fine-line passages set against firm silhouette ink; nested marks following existing contours and surface details, not adding decoration; alternating narrow highlights and deep cel shapes aligned to the stated light; opaque pigment, selective engraved hatching and subtle print grain.
-  creative_brief: >-
-    Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use ornamental fine-line passages set against firm silhouette ink; nested marks following existing contours and surface details, not adding decoration; alternating narrow highlights and deep cel shapes aligned to the stated light; opaque pigment, selective engraved hatching and subtle print grain. Add no unrequested content or composition changes.
+  creative_brief: "Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use ornamental fine-line passages set against firm silhouette ink; nested marks following existing contours and surface details, not adding decoration; alternating narrow highlights and deep cel shapes aligned to the stated light; opaque pigment, selective engraved hatching and subtle print grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

@@ -41,10 +41,7 @@ visualDna:
     smoothing.
   key_features: >-
     Responsive medium ink; natural proportion; soft cel modeling; locally resolved gestures.
-  creative_brief: >-
-    Use responsive medium ink; natural proportion; soft cel modeling; locally resolved gestures.
-    Keep the requested subjects, action, setting, palette, framing and mood; add no scene
-    content.
+  creative_brief: "Use responsive medium ink; natural proportion; soft cel modeling; locally resolved gestures. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

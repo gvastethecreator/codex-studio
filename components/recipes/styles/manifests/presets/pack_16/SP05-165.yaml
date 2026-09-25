@@ -43,9 +43,7 @@ visualDna:
   key_features: >-
     pale blue contour echo; translucent sweeping trails; dark nocturnal cel shapes with a clear focal
     silhouette
-  creative_brief: >-
-    Apply the spectral contour and cel-shadow treatment to the requested content. Keep its subject
-    count, identity, action, setting and composition; add no spirit, rival or supernatural scene.
+  creative_brief: "Apply the spectral contour and cel-shadow treatment to the requested content. Keep its subject count, identity, action, setting and composition; add no spirit, rival or supernatural scene. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

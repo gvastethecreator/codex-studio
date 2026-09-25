@@ -41,10 +41,7 @@ visualDna:
     to separate planes.
   key_features: >-
     Local arc rhythm; violet-rose fields; alternating edge softness; stable recognizable forms.
-  creative_brief: >-
-    Use local arc rhythm; violet-rose fields; alternating edge softness; stable recognizable
-    forms. Keep the requested subjects, action, setting, palette, framing and mood; add no scene
-    content.
+  creative_brief: "Use local arc rhythm; violet-rose fields; alternating edge softness; stable recognizable forms. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

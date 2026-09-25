@@ -41,10 +41,7 @@ visualDna:
     sparse.
   key_features: >-
     Blue-violet shadow; sparse amber-cyan points; crisp foreground; softened secondary edge.
-  creative_brief: >-
-    Use blue-violet shadow; sparse amber-cyan points; crisp foreground; softened secondary edge.
-    Keep the requested subjects, action, setting, palette, framing and mood; add no scene
-    content.
+  creative_brief: "Use blue-violet shadow; sparse amber-cyan points; crisp foreground; softened secondary edge. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

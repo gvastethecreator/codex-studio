@@ -40,9 +40,7 @@ visualDna:
   key_features: >-
     Optional crimson accent; red edge glow on existing forms; clear light-dark
     division; controlled digital contour.
-  creative_brief: >-
-    Apply optional crimson edge light and divided value fields to the prompt's existing
-    forms. Keep its scene, camera and palette intent.
+  creative_brief: "Apply optional crimson edge light and divided value fields to the prompt's existing forms. Keep its scene, camera and palette intent. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

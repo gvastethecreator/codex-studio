@@ -31,7 +31,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'broken blue-violet aura rim; short radiating ink strokes; angular silhouette against deep cel shadow',
       creative_brief:
-        'Apply the angular cel and localized aura treatment to the requested content. Preserve its subject, action, setting, palette, camera and mood; use no title-specific character, prop or location.',
+        'Apply the angular cel and localized aura treatment to the requested content. Preserve its subject, action, setting, palette, camera and mood; use no title-specific character, prop or location. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -62,7 +62,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'fine curved contours; pearl, moon-blue and rose accents; sparse star-point glints arranged in a repeated rhythm',
       creative_brief:
-        'Restyle the requested content with graceful cel linework, measured luminous accents and repeated ornamental cadence. Preserve its identity, action, environment and composition; add no magical cast, costume or event.',
+        'Restyle the requested content with graceful cel linework, measured luminous accents and repeated ornamental cadence. Preserve its identity, action, environment and composition; add no magical cast, costume or event. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -93,7 +93,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'off-beat diagonals and negative space; cool indigo-violet shadows; sparse amber highlights over expressive ink cuts',
       creative_brief:
-        'Apply the syncopated ink, cool noir values and selective amber accents to the requested content. Preserve its scene, subject, action and framing; add no spacecraft, club, detective or genre props.',
+        'Apply the syncopated ink, cool noir values and selective amber accents to the requested content. Preserve its scene, subject, action and framing; add no spacecraft, club, detective or genre props. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -124,7 +124,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'recursive alignment and measured contour offsets; precise cel geometry; limited cyan, magenta and green accents',
       creative_brief:
-        'Restyle the requested content with recursive geometry, controlled edge offsets and restrained digital accents. Keep its identity, materials, setting and composition; introduce no screens, cables or cybernetic parts.',
+        'Restyle the requested content with recursive geometry, controlled edge offsets and restrained digital accents. Keep its identity, materials, setting and composition; introduce no screens, cables or cybernetic parts. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -155,7 +155,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'compressed directional rhythm; violet rim pressure; forceful cel wedges separated into clean shadow groups',
       creative_brief:
-        'Use the pressure-driven contour and violet cel-light treatment on the requested content. Preserve its subject, action, wardrobe and composition; add no rival, tournament or combat event.',
+        'Use the pressure-driven contour and violet cel-light treatment on the requested content. Preserve its subject, action, wardrobe and composition; add no rival, tournament or combat event. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -186,7 +186,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'long slashing contours; dense blue-black cel masses; restrained rust-red accents with sparse dry-brush grain',
       creative_brief:
-        'Apply the raw, reflective cel line and restrained palette to the requested subject. Preserve its identity, action, setting and camera; add no swordsman, weapon or historical scene.',
+        'Apply the raw, reflective cel line and restrained palette to the requested subject. Preserve its identity, action, setting and camera; add no swordsman, weapon or historical scene. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -217,7 +217,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'elongated relaxed contours with abrupt angular accents; dusty warm-cool contrast; playful visual timing without literal gags',
       creative_brief:
-        'Restyle the requested content with dusty cel color, elastic line rhythm and an off-center sweep. Preserve its identity, action, environment and camera; add no western, spacecraft or outlaw props.',
+        'Restyle the requested content with dusty cel color, elastic line rhythm and an off-center sweep. Preserve its identity, action, environment and camera; add no western, spacecraft or outlaw props. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -248,7 +248,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'broad curved aura shell; compact ivory-gold focal light; radial streaks that trace existing motion',
       creative_brief:
-        'Apply the curved aura and impact-line language to the requested content where luminous effects fit. Preserve its identity, action, palette and composition; add no planet, fighter or battle.',
+        'Apply the curved aura and impact-line language to the requested content where luminous effects fit. Preserve its identity, action, palette and composition; add no planet, fighter or battle. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -279,7 +279,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'broad ink shadows; slow smoke-like line ribbons; slate-blue field with sparse brass warmth',
       creative_brief:
-        'Use quiet noir cel values, fluid line accents and measured negative space on the requested content. Preserve subject, action, environment and framing; add no detective, instrument or smoke prop.',
+        'Use quiet noir cel values, fluid line accents and measured negative space on the requested content. Preserve subject, action, environment and framing; add no detective, instrument or smoke prop. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -310,7 +310,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'clipped cyan reflections; precise dark contours; sparse scanline bands over material-aware gloss',
       creative_brief:
-        'Apply the restrained techno-noir cel treatment to the requested content. Preserve its identity, materials, lighting and composition; add no screens, neon signs, rain or cybernetic details.',
+        'Apply the restrained techno-noir cel treatment to the requested content. Preserve its identity, materials, lighting and composition; add no screens, neon signs, rain or cybernetic details. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -341,7 +341,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'pale blue contour echo; translucent sweeping trails; dark nocturnal cel shapes with a clear focal silhouette',
       creative_brief:
-        'Apply the spectral contour and cel-shadow treatment to the requested content. Keep its subject count, identity, action, setting and composition; add no spirit, rival or supernatural scene.',
+        'Apply the spectral contour and cel-shadow treatment to the requested content. Keep its subject count, identity, action, setting and composition; add no spirit, rival or supernatural scene. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -372,7 +372,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'quiet contour work; clean cel groups with gentle transitions; cool rim and restrained warm accents',
       creative_brief:
-        'Restyle the requested content with calm cel drawing, measured shadows and quiet color. Preserve its identity, action, mood and camera; introduce no redemption narrative, costume or prop.',
+        'Restyle the requested content with calm cel drawing, measured shadows and quiet color. Preserve its identity, action, mood and camera; introduce no redemption narrative, costume or prop. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -403,7 +403,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'directional engine-like trails; sharp contour cuts; navy cel masses with selective red and electric-blue streaks',
       creative_brief:
-        'Apply the kinetic cel lines and selective trail accents to movement already present in the request. Preserve its identity, setting and composition; add no vehicle, rider, chase or weapon.',
+        'Apply the kinetic cel lines and selective trail accents to movement already present in the request. Preserve its identity, setting and composition; add no vehicle, rider, chase or weapon. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -434,7 +434,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'offset contour fragments; interrupted horizontal scan bands; electric blue-violet registration accents',
       creative_brief:
-        'Restyle the requested content with sparse registration shifts and fragmented cel contours. Preserve its identity, count, setting and composition; do not create duplicates, screens or a digital narrative.',
+        'Restyle the requested content with sparse registration shifts and fragmented cel contours. Preserve its identity, count, setting and composition; do not create duplicates, screens or a digital narrative. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -465,7 +465,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'hand-drawn cel contour; small nested seal-like loops; restrained gold and blue-violet glints',
       creative_brief:
-        'Apply storybook cel linework and restrained seal-like ornament to the requested content. Preserve its identity, action and composition; add no literal seal, spell, costume or fantasy prop.',
+        'Apply storybook cel linework and restrained seal-like ornament to the requested content. Preserve its identity, action and composition; add no literal seal, spell, costume or fantasy prop. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -496,7 +496,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'softly painted backgrounds; dust-muted amber and blue-green; open spacing with quiet cel contours',
       creative_brief:
-        'Restyle the requested content with low-saturation cel color, gentle background paint and quiet spacing. Preserve its subject, action, setting and framing; add no airship, companion or sunset.',
+        'Restyle the requested content with low-saturation cel color, gentle background paint and quiet spacing. Preserve its subject, action, setting and framing; add no airship, companion or sunset. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -527,7 +527,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'broken heavy ink; chiseled shadow planes; iron-gray and rust-red accents with selective crosshatching',
       creative_brief:
-        'Apply distressed cel linework and weighty shadow planes to the requested content. Preserve its identity, materials, action and setting; add no ruin, armor, battle or damage.',
+        'Apply distressed cel linework and weighty shadow planes to the requested content. Preserve its identity, materials, action and setting; add no ruin, armor, battle or damage. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -558,7 +558,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'axial balance; repeated radial ornament; deep rose-garnet and violet cel values with refined ink',
       creative_brief:
-        'Apply the formal cel symmetry, radial line rhythm and rose-garnet accents to the requested content. Preserve its identity and composition; add no flower, emblem, altar or ceremony.',
+        'Apply the formal cel symmetry, radial line rhythm and rose-garnet accents to the requested content. Preserve its identity and composition; add no flower, emblem, altar or ceremony. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -589,7 +589,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'rounded expressive contours; soft gold edge light; warm cel neutrals against calm blue shadow',
       creative_brief:
-        'Restyle the requested content with warm, clean cel drawing and gentle value transitions. Preserve its identity, action, number of subjects and composition; add no rival, companion or sunset.',
+        'Restyle the requested content with warm, clean cel drawing and gentle value transitions. Preserve its identity, action, number of subjects and composition; add no rival, companion or sunset. Use it as a reusable look on any subject.',
     },
   },
   {
@@ -620,7 +620,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'precise contour breaks; sharply cut cel-shadow wedges; timing and force lines tied to existing action',
       creative_brief:
-        'Apply precise cel contours, shadow wedges and restrained timing marks to the requested content. Preserve its identity, action, setting and composition; add no fighter, impact event or weapon.',
+        'Apply precise cel contours, shadow wedges and restrained timing marks to the requested content. Preserve its identity, action, setting and composition; add no fighter, impact event or weapon. Use it as a reusable look on any subject.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

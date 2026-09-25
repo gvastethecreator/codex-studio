@@ -33,8 +33,7 @@ visualDna:
     Finish as hand-drawn 2D cel illustration. Use lively contour timing with clean, bounded shadows and restrained grain; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
   key_features: >-
     alternating thick and hairline ink strokes with clipped, syncopated curves; relaxed contour turns, carefully placed interior marks and no imposed gesture; narrow hard cel slices following the stated key light, with no added spotlight; dry ink edges over softly brushed matte color fields.
-  creative_brief: >-
-    Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use alternating thick and hairline ink strokes with clipped, syncopated curves; relaxed contour turns, carefully placed interior marks and no imposed gesture; narrow hard cel slices following the stated key light, with no added spotlight; dry ink edges over softly brushed matte color fields. Add no unrequested content or composition changes.
+  creative_brief: "Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use alternating thick and hairline ink strokes with clipped, syncopated curves; relaxed contour turns, carefully placed interior marks and no imposed gesture; narrow hard cel slices following the stated key light, with no added spotlight; dry ink edges over softly brushed matte color fields. Add no unrequested content or composition changes. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

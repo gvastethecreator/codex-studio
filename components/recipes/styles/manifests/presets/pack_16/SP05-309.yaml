@@ -33,8 +33,7 @@ visualDna:
     Finish as hand-drawn 2D cel illustration. Use sharp, bounded effects with the original action and silhouette intact; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
   key_features: >-
     sharp tapered contours with split-second, hard-edged shadow cuts; show force transfer only through the pose and motion the prompt already describes; abrupt two-tone blocks and a bright cut only at an explicitly lit point; clean hand ink, brief dry-brush streaks and restrained cel grain.
-  creative_brief: >-
-    Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use sharp tapered contours with split-second, hard-edged shadow cuts; show force transfer only through the pose and motion the prompt already describes; abrupt two-tone blocks and a bright cut only at an explicitly lit point; clean hand ink, brief dry-brush streaks and restrained cel grain. Add no unrequested content or composition changes.
+  creative_brief: "Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use sharp tapered contours with split-second, hard-edged shadow cuts; show force transfer only through the pose and motion the prompt already describes; abrupt two-tone blocks and a bright cut only at an explicitly lit point; clean hand ink, brief dry-brush streaks and restrained cel grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render

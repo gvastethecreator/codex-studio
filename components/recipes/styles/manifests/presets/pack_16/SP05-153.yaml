@@ -40,9 +40,7 @@ visualDna:
   key_features: >-
     Luminous edge; restrained monitor-like bloom; fine scan-like marks; ornate
     shadow against clean digital surfaces.
-  creative_brief: >-
-    Apply synthetic light and scan-like detail only where compatible with the
-    requested image. Preserve its content and composition.
+  creative_brief: "Apply synthetic light and scan-like detail only where compatible with the requested image. Preserve its content and composition. Use it as a reusable look on any subject."
 avoidRules:
   - realistic
   - 3d render
