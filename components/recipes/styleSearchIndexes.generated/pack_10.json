@@ -3,7 +3,7 @@
     {
       "id": "pack_10",
       "name": "Abstract & Experimental",
-      "presetCount": 110
+      "presetCount": 115
     }
   ],
   "presets": [
@@ -834,7 +834,8 @@
     },
     {
       "id": "SP10-031",
-      "name": "Surrealism (Dali)",
+      "name": "Melting Dream Surrealism",
+      "styleAnchors": ["Melting Dream Surrealism"],
       "ref": "pack_10/SP10-031.yaml",
       "packId": "pack_10",
       "packName": "Abstract & Experimental",
@@ -842,7 +843,7 @@
       "categoryName": "4. Surrealism & Dream",
       "tags": ["abstract-and-experimental", "surrealism-and-dream"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp10-031 surrealism (dali) 4. surrealism & dream surreal systems pack_10 abstract & experimental surrealism-and-dream abstract-and-experimental surrealism-and-dream"
+      "searchableText": "sp10-031 melting dream surrealism 4. surrealism & dream surreal systems pack_10 abstract & experimental surrealism-and-dream abstract-and-experimental surrealism-and-dream"
     },
     {
       "id": "SP10-032",
@@ -906,7 +907,8 @@
     },
     {
       "id": "SP10-037",
-      "name": "Escher Style",
+      "name": "Impossible Perspective",
+      "styleAnchors": ["Impossible Perspective"],
       "ref": "pack_10/SP10-037.yaml",
       "packId": "pack_10",
       "packName": "Abstract & Experimental",
@@ -914,7 +916,7 @@
       "categoryName": "4. Surrealism & Dream",
       "tags": ["abstract-and-experimental", "surrealism-and-dream"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp10-037 escher style 4. surrealism & dream surreal systems pack_10 abstract & experimental surrealism-and-dream abstract-and-experimental surrealism-and-dream"
+      "searchableText": "sp10-037 impossible perspective 4. surrealism & dream surreal systems pack_10 abstract & experimental surrealism-and-dream abstract-and-experimental surrealism-and-dream"
     },
     {
       "id": "SP10-038",
@@ -930,7 +932,8 @@
     },
     {
       "id": "SP10-039",
-      "name": "Biomechanical (Giger)",
+      "name": "Biomechanical Surrealism",
+      "styleAnchors": ["Biomechanical Surrealism"],
       "ref": "pack_10/SP10-039.yaml",
       "packId": "pack_10",
       "packName": "Abstract & Experimental",
@@ -938,7 +941,7 @@
       "categoryName": "4. Surrealism & Dream",
       "tags": ["abstract-and-experimental", "surrealism-and-dream"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp10-039 biomechanical (giger) 4. surrealism & dream surreal systems pack_10 abstract & experimental surrealism-and-dream abstract-and-experimental surrealism-and-dream"
+      "searchableText": "sp10-039 biomechanical surrealism 4. surrealism & dream surreal systems pack_10 abstract & experimental surrealism-and-dream abstract-and-experimental surrealism-and-dream"
     },
     {
       "id": "SP10-040",
@@ -1011,6 +1014,96 @@
       "tags": ["abstract-and-experimental", "surrealism-and-dream"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp10-045 weirdcore 4. surrealism & dream surreal systems pack_10 abstract & experimental surrealism-and-dream abstract-and-experimental surrealism-and-dream"
+    },
+    {
+      "id": "SP10-111",
+      "name": "Scale Inversion Surrealism",
+      "styleAnchors": [
+        "Scale Inversion Surrealism",
+        "scale inversion surrealism",
+        "impossible scale"
+      ],
+      "ref": "pack_10/SP10-111.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "surrealism-and-dream",
+      "categoryName": "4. Surrealism & Dream",
+      "domain": "scale inversion surrealism",
+      "tags": ["abstract-and-experimental", "surrealism-and-dream", "scale-inversion-surrealism"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-111 scale inversion surrealism scale inversion surrealism impossible scale 4. surrealism & dream surreal systems scale inversion surrealism pack_10 abstract & experimental surrealism-and-dream abstract-and-experimental surrealism-and-dream scale-inversion-surrealism"
+    },
+    {
+      "id": "SP10-112",
+      "name": "Symbolist Dreamscape",
+      "styleAnchors": [
+        "Symbolist Dreamscape",
+        "symbolist dream painting",
+        "hazy jewel-tone allegory"
+      ],
+      "ref": "pack_10/SP10-112.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "surrealism-and-dream",
+      "categoryName": "4. Surrealism & Dream",
+      "domain": "symbolist dream painting",
+      "tags": ["abstract-and-experimental", "surrealism-and-dream", "symbolist-dream-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-112 symbolist dreamscape symbolist dream painting hazy jewel-tone allegory 4. surrealism & dream surreal systems symbolist dream painting pack_10 abstract & experimental surrealism-and-dream abstract-and-experimental surrealism-and-dream symbolist-dream-painting"
+    },
+    {
+      "id": "SP10-113",
+      "name": "Mirror World Surrealism",
+      "styleAnchors": [
+        "Mirror World Surrealism",
+        "mirror world reflections",
+        "reflection shows another reality"
+      ],
+      "ref": "pack_10/SP10-113.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "surrealism-and-dream",
+      "categoryName": "4. Surrealism & Dream",
+      "domain": "mirror world reflections",
+      "tags": ["abstract-and-experimental", "surrealism-and-dream", "mirror-world-reflections"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-113 mirror world surrealism mirror world reflections reflection shows another reality 4. surrealism & dream surreal systems mirror world reflections pack_10 abstract & experimental surrealism-and-dream abstract-and-experimental surrealism-and-dream mirror-world-reflections"
+    },
+    {
+      "id": "SP10-114",
+      "name": "Fever Dream Grotesque",
+      "styleAnchors": ["Fever Dream Grotesque", "grotesque fever dream", "swollen warped forms"],
+      "ref": "pack_10/SP10-114.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "surrealism-and-dream",
+      "categoryName": "4. Surrealism & Dream",
+      "domain": "grotesque fever dream",
+      "tags": ["abstract-and-experimental", "surrealism-and-dream", "grotesque-fever-dream"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-114 fever dream grotesque grotesque fever dream swollen warped forms 4. surrealism & dream surreal systems grotesque fever dream pack_10 abstract & experimental surrealism-and-dream abstract-and-experimental surrealism-and-dream grotesque-fever-dream"
+    },
+    {
+      "id": "SP10-115",
+      "name": "Levitation Surrealism",
+      "styleAnchors": [
+        "Levitation Surrealism",
+        "levitation surreal photography",
+        "floating subjects"
+      ],
+      "ref": "pack_10/SP10-115.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "surrealism-and-dream",
+      "categoryName": "4. Surrealism & Dream",
+      "domain": "levitation surreal photography",
+      "tags": [
+        "abstract-and-experimental",
+        "surrealism-and-dream",
+        "levitation-surreal-photography"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-115 levitation surrealism levitation surreal photography floating subjects 4. surrealism & dream surreal systems levitation surreal photography pack_10 abstract & experimental surrealism-and-dream abstract-and-experimental surrealism-and-dream levitation-surreal-photography"
     },
     {
       "id": "SP10-046",
@@ -1433,5 +1526,5 @@
       "searchableText": "sp10-080 letterpress 9. print and light finishes print & light finish pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes"
     }
   ],
-  "totalPresetCount": 110
+  "totalPresetCount": 115
 }

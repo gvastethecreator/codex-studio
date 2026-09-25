@@ -94,6 +94,11 @@ categories:
       - pack_10/SP10-043.yaml
       - pack_10/SP10-044.yaml
       - pack_10/SP10-045.yaml
+      - pack_10/SP10-111.yaml
+      - pack_10/SP10-112.yaml
+      - pack_10/SP10-113.yaml
+      - pack_10/SP10-114.yaml
+      - pack_10/SP10-115.yaml
   - id: textile-and-ornamental-patterns
     name: 5. Textile & Ornamental Patterns
     presetRefs:
@@ -220,6 +225,11 @@ presetRefs:
   - pack_10/SP10-043.yaml
   - pack_10/SP10-044.yaml
   - pack_10/SP10-045.yaml
+  - pack_10/SP10-111.yaml
+  - pack_10/SP10-112.yaml
+  - pack_10/SP10-113.yaml
+  - pack_10/SP10-114.yaml
+  - pack_10/SP10-115.yaml
   - pack_10/SP10-046.yaml
   - pack_10/SP10-047.yaml
   - pack_10/SP10-049.yaml
