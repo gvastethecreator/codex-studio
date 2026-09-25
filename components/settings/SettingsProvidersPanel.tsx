@@ -125,8 +125,8 @@ export function SettingsProvidersPanel({
             </div>
           </div>
           <div className="settings-provider-accounts">
-            {[...providerCapabilities.providers]
-              .sort((left, right) =>
+            {providerCapabilities.providers
+              .toSorted((left, right) =>
                 compareGenerationProviderPresentation(left.providerId, right.providerId),
               )
               .map((provider) => {
