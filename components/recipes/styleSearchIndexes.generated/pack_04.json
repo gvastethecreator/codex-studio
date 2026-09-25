@@ -3,7 +3,7 @@
     {
       "id": "pack_04",
       "name": "Illustration & Graphic Novel",
-      "presetCount": 112
+      "presetCount": 115
     }
   ],
   "presets": [
@@ -630,7 +630,8 @@
     },
     {
       "id": "SP04-032",
-      "name": "Mucha Art Nouveau Poster",
+      "name": "Art Nouveau Halo Lithograph",
+      "styleAnchors": ["Art Nouveau Halo Lithograph", "Mucha Art Nouveau Poster"],
       "ref": "pack_04/SP04-032.yaml",
       "packId": "pack_04",
       "packName": "Illustration & Graphic Novel",
@@ -638,7 +639,7 @@
       "categoryName": "3. Editorial And Poster",
       "tags": ["illustration-and-graphic-novel", "editorial-and-poster"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp04-032 mucha art nouveau poster 3. editorial and poster editorial & posters pack_04 illustration & graphic novel editorial-and-poster illustration-and-graphic-novel editorial-and-poster"
+      "searchableText": "sp04-032 art nouveau halo lithograph mucha art nouveau poster 3. editorial and poster editorial & posters pack_04 illustration & graphic novel editorial-and-poster illustration-and-graphic-novel editorial-and-poster"
     },
     {
       "id": "SP04-033",
@@ -807,6 +808,72 @@
       "tags": ["illustration-and-graphic-novel", "editorial-and-poster"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp04-078 street protest stencil art 3. editorial and poster editorial & posters pack_04 illustration & graphic novel editorial-and-poster illustration-and-graphic-novel editorial-and-poster"
+    },
+    {
+      "id": "SP04-113",
+      "name": "Painterly Metaphor Poster",
+      "styleAnchors": [
+        "Painterly Metaphor Poster",
+        "painted conceptual poster",
+        "single visual pun"
+      ],
+      "ref": "pack_04/SP04-113.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "editorial-and-poster",
+      "categoryName": "3. Editorial And Poster",
+      "domain": "painted conceptual poster",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "editorial-and-poster",
+        "painted-conceptual-poster"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-113 painterly metaphor poster painted conceptual poster single visual pun 3. editorial and poster editorial & posters painted conceptual poster pack_04 illustration & graphic novel editorial-and-poster illustration-and-graphic-novel editorial-and-poster painted-conceptual-poster"
+    },
+    {
+      "id": "SP04-114",
+      "name": "Op-Ed Conceptual Spot Illustration",
+      "styleAnchors": [
+        "Op-Ed Conceptual Spot Illustration",
+        "editorial newspaper illustration",
+        "conceptual metaphor staging"
+      ],
+      "ref": "pack_04/SP04-114.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "editorial-and-poster",
+      "categoryName": "3. Editorial And Poster",
+      "domain": "editorial newspaper illustration",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "editorial-and-poster",
+        "editorial-newspaper-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-114 op-ed conceptual spot illustration editorial newspaper illustration conceptual metaphor staging 3. editorial and poster editorial & posters editorial newspaper illustration pack_04 illustration & graphic novel editorial-and-poster illustration-and-graphic-novel editorial-and-poster editorial-newspaper-illustration"
+    },
+    {
+      "id": "SP04-115",
+      "name": "Swiss Grid Photo Poster",
+      "styleAnchors": [
+        "Swiss Grid Photo Poster",
+        "modernist photographic poster",
+        "extreme black-and-white photo crop"
+      ],
+      "ref": "pack_04/SP04-115.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "editorial-and-poster",
+      "categoryName": "3. Editorial And Poster",
+      "domain": "modernist photographic poster",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "editorial-and-poster",
+        "modernist-photographic-poster"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-115 swiss grid photo poster modernist photographic poster extreme black-and-white photo crop 3. editorial and poster editorial & posters modernist photographic poster pack_04 illustration & graphic novel editorial-and-poster illustration-and-graphic-novel editorial-and-poster modernist-photographic-poster"
     },
     {
       "id": "SP04-046",
@@ -1469,5 +1536,5 @@
       "searchableText": "sp04-100 monster size comparison chart 6. technical and reference sheets reference layouts pack_04 illustration & graphic novel technical-and-reference-sheets illustration-and-graphic-novel technical-and-reference-sheets"
     }
   ],
-  "totalPresetCount": 112
+  "totalPresetCount": 115
 }

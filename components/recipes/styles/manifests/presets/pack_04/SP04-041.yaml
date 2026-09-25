@@ -3,7 +3,7 @@ id: SP04-041
 packId: pack_04
 name: Fashion Illustration
 category: 3. Editorial And Poster
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,66 +12,22 @@ tags:
   - illustration-and-graphic-novel
   - editorial-and-poster
 visualDna:
-  aesthetic: >-
-    Fashion Illustration acts as a transferable illustration router: start from Runway sketch,
-    Fashion Illustration poster hierarchy, symbolic compression, print surface, graphic color
-    pressure, and editorial shape control, 9 heads tall, loose gesture, editorial whitespace and
-    editorial graphic system built from poster hierarchy, symbolic compression, typography-as-shape,
-    reproduction limits, and immediate visual argument, then apply the visual behavior to prompt X
-    instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Loose, gestural, elongated runway sketch gesture, fast
-    contour, fabric sweep, and pose-aware line economy without requiring a model card; preserve the
-    requested subject while converting it into emblem, poster form, editorial metaphor, collage
-    fragment, fashion gesture, or information hierarchy, keeping the requested identity, silhouette,
-    pose, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Watercolor splash, runway accent, gestural pigment; use color as communication
-    pressure: ink plates, propaganda contrast, deco metallic restraint, psychedelic vibration,
-    Bauhaus primaries, vector flatness, or vintage print fade, with deliberate value grouping,
-    accent control, and process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Spontaneous stroke and fashion-line attitude without simulated lighting;
-    make light serve graphic hierarchy through flat poster contrast, airbrush gradients, screenprint
-    layers, symbolic rays, collage mismatch, or painted cover drama, so value structure supports the
-    illustration process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Paper, fashion paper tooth, watercolor accents, loose graphite underdrawing, and wet-dry
-    pigment blooms around fabric edges; surface detail should reveal screenprint ink, risograph
-    grain, paper stock, cut-paper edges, vector fields, album-cover wear, or editorial print finish,
-    keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Elongated legs, scale rhythm, edge hierarchy, spacing, and
-    composition rules specific to Fashion Illustration; compose through graphic hierarchy, diagonal
-    force, asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion
-    elongation without readable slogan dependency, with scale, spacing, edge rhythm, and visual
-    hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Chic, fast, atelier energy, catwalk motion; derive mood from propaganda urgency,
-    luxe modernity, counterculture heat, editorial wit, travel nostalgia, music-poster grit, or
-    cover-story seduction, letting the style alter interpretation without demanding a specific
-    story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Vogue, stylish, runway fluidity, editorial confidence; finish as deliberate graphic
-    communication with crisp shape logic, controlled print artifacts, and no random poster text or
-    literal advertisement clutter, clean denoised surfaces where appropriate, and enough process
-    evidence to make the style recognizable.
-  key_features: >-
-    Runway sketch, Fashion Illustration poster hierarchy, symbolic compression, print surface,
-    graphic color pressure, and editorial shape control; 9 heads tall, loose gesture, editorial
-    whitespace; Watercolor splash, runway accent, gestural pigment; Paper, fashion paper tooth,
-    watercolor accents, loose graphite underdrawing, and wet-dry pigment blooms around fabric edges;
-    Elongated legs, scale rhythm, edge hierarchy, spacing, and composition rules specific to Fashion
-    Illustration
-  creative_brief: >-
-    Apply Fashion Illustration as an illustration preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through Runway sketch, Fashion Illustration poster hierarchy, symbolic compression, print
-    surface, graphic color pressure, and editorial shape control, 9 heads tall, loose gesture,
-    editorial whitespace, Paper, fashion paper tooth, watercolor accents, loose graphite
-    underdrawing, and wet-dry pigment blooms around fabric edges without requiring the card image's
-    original subject.
+  aesthetic: 'Fashion illustration: a quick runway sketch in graphite and brush ink with loose watercolor splashes on the garment.'
+  subject_treatment: Keep the prompt subject and outfit; this preset explicitly elongates figures to about nine heads tall and adds no poster frame, slogan or layout.
+  color_and_tone: Mostly bare white paper, black ink and one or two bold watercolor accents in the garment.
+  lighting_and_shadow: No simulated light; a few fast strokes and the white of the paper suggest volume.
+  texture_and_material: Graphite underdrawing, brush-ink contours, wet watercolor blooms, dry-brush fabric sweeps.
+  camera_and_composition: Full-length figure mid-stride, lots of editorial white space, garments given the most detail.
+  atmosphere_and_mood: Chic, fast and confident, the energy of an atelier before a show.
+  rendering_and_quality: Loose gestural sketch with precise fabric rhythm; never realistic proportions or full backgrounds.
+  key_features: nine-heads-tall elongation; brush ink over graphite; watercolor garment splash; white space; mid-stride pose
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fashion Illustration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - invented slogans
+  - fake lettering
+  - empty title plate
+  - real musician likeness
+  - full background scene
   - short
   - realistic
   - official card scene
@@ -86,13 +42,17 @@ avoidRules:
   - literal ad layout
   - stock vector blandness
   - weak graphic hierarchy
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-041.webp
 attributes:
-  negativePrompt: >-
-    short, realistic, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random
-    poster text, literal ad layout, stock vector blandness, weak graphic hierarchy
+  negativePrompt: invented slogans, fake lettering, empty title plate, real musician likeness, full background scene, short, realistic, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

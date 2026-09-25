@@ -3,7 +3,7 @@ id: SP04-037
 packId: pack_04
 name: Bauhaus Poster
 category: 3. Editorial And Poster
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,62 +12,22 @@ tags:
   - illustration-and-graphic-novel
   - editorial-and-poster
 visualDna:
-  aesthetic: >-
-    Bauhaus Poster acts as a transferable illustration router: start from Bauhaus poster modernism
-    with function-first geometry, Modular grid, primary blocks, asymmetric equilibrium, typographic
-    integration and editorial graphic system built from poster hierarchy, symbolic compression,
-    typography-as-shape, reproduction limits, and immediate visual argument, then apply the visual
-    behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Grid-governed composition using circles, squares,
-    triangles, and bars; preserve the requested subject while converting it into emblem, poster
-    form, editorial metaphor, collage fragment, fashion gesture, or information hierarchy, keeping
-    the requested identity, silhouette, pose, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Primary triad with black/white neutral anchors; use color as communication
-    pressure: ink plates, propaganda contrast, deco metallic restraint, psychedelic vibration,
-    Bauhaus primaries, vector flatness, or vintage print fade, with deliberate value grouping,
-    accent control, and process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Flat functional value treatment, no decorative shading; make light serve
-    graphic hierarchy through flat poster contrast, airbrush gradients, screenprint layers, symbolic
-    rays, collage mismatch, or painted cover drama, so value structure supports the illustration
-    process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Matte print-surface simplicity, poster hierarchy, symbolic compression, print surface,
-    graphic color pressure, and editorial shape control; surface detail should reveal screenprint
-    ink, risograph grain, paper stock, cut-paper edges, vector fields, album-cover wear, or
-    editorial print finish, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Diagonal type and geometric tension as compositional drivers;
-    compose through graphic hierarchy, diagonal force, asymmetrical grid, ornamental framing, cover
-    impact, information grouping, or fashion elongation without readable slogan dependency, with
-    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Rational, didactic, constructive, mood carried by Bauhaus Poster craft, material
-    pressure, and visual restraint; derive mood from propaganda urgency, luxe modernity,
-    counterculture heat, editorial wit, travel nostalgia, music-poster grit, or cover-story
-    seduction, letting the style alter interpretation without demanding a specific story, location,
-    or actor.
-  rendering_and_quality: >-
-    Finish with Precise typographic-layout discipline and asymmetrical balance; finish as deliberate
-    graphic communication with crisp shape logic, controlled print artifacts, and no random poster
-    text or literal advertisement clutter, clean denoised surfaces where appropriate, and enough
-    process evidence to make the style recognizable.
-  key_features: >-
-    Bauhaus poster modernism with function-first geometry; Modular grid, primary blocks, asymmetric
-    equilibrium, typographic integration; Primary triad with black/white neutral anchors; Matte
-    print-surface simplicity, poster hierarchy, symbolic compression, print surface, graphic color
-    pressure, and editorial shape control; Diagonal type and geometric tension as compositional
-    drivers
-  creative_brief: >-
-    Apply Bauhaus Poster as an illustration preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Bauhaus poster modernism with function-first geometry, Modular grid, primary blocks, asymmetric
-    equilibrium, typographic integration, Matte print-surface simplicity, poster hierarchy, symbolic
-    compression, print surface, graphic color pressure, and editorial shape control without
-    requiring the card image's original subject.
+  aesthetic: 'Bauhaus poster: the subject rebuilt from circles, squares, triangles and thick bars on an asymmetric grid.'
+  subject_treatment: Keep the prompt subject and action; this preset owns the asymmetric geometric grid composition, and it never adds slogans, lettering or empty title plates.
+  color_and_tone: Primary red, yellow and blue with black and off-white; each shape one flat color.
+  lighting_and_shadow: No shading at all; values are the flat colors of the shapes.
+  texture_and_material: Matte lithographic ink on slightly warm paper, crisp compass and ruler edges.
+  camera_and_composition: Asymmetric balance on a modular grid, strong diagonals and one dominant circle.
+  atmosphere_and_mood: Rational, constructive and playful, function made beautiful.
+  rendering_and_quality: Exact geometric primitives only; no decoration, no ornament and no typography.
+  key_features: circles squares triangles and bars; primary triad with black; asymmetric grid; dominant circle; flat matte ink
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bauhaus Poster as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - invented slogans
+  - fake lettering
+  - empty title plate
+  - real musician likeness
+  - typography blocks
   - decorative
   - floral
   - official card scene
@@ -82,13 +42,17 @@ avoidRules:
   - literal ad layout
   - stock vector blandness
   - weak graphic hierarchy
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-037.webp
 attributes:
-  negativePrompt: >-
-    decorative, floral, official card scene, fixed thumbnail subject, prompt replaced by sample
-    image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop,
-    random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy
+  negativePrompt: invented slogans, fake lettering, empty title plate, real musician likeness, typography blocks, decorative, floral, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

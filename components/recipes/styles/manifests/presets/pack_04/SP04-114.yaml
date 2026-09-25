@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP04-114
+packId: pack_04
+name: Op-Ed Conceptual Spot Illustration
+styleAnchors:
+  - Op-Ed Conceptual Spot Illustration
+  - editorial newspaper illustration
+  - conceptual metaphor staging
+displayName: Op-Ed Conceptual Spot Illustration
+category: 3. Editorial And Poster
+domain: editorial newspaper illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - editorial-and-poster
+  - editorial
+  - conceptual
+  - spot-illustration
+visualDna:
+  aesthetic: 'Newspaper op-ed spot illustration: a small conceptual scene of tiny figures and oversized symbols, drawn in flat shapes with fine grain.'
+  subject_treatment: Keep the prompt subject, action, setting and framing; apply only this print or drawing technique, without adding slogans, borders, frames or a poster layout.
+  color_and_tone: Limited palette of three or four colors, typically navy, coral, cream and mustard, with dry grain texture.
+  lighting_and_shadow: Flat shapes with a single cast-shadow shape per object at a consistent angle.
+  texture_and_material: Dry digital grain and pencil-like speckle inside flat shapes, crisp silhouette edges.
+  camera_and_composition: Keeps the requested subject but stages it as a metaphor with dramatic scale contrast, tiny people and huge objects.
+  atmosphere_and_mood: Thoughtful, wry and a little anxious, an idea about the times.
+  rendering_and_quality: Economical shape design with textured flats; no headlines, no borders and no speech bubbles.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Op-Ed Conceptual Spot Illustration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: conceptual metaphor staging; tiny figures and huge symbols; three to four color palette; dry grain texture; single cast shadows
+avoidRules:
+  - invented slogans
+  - fake lettering
+  - empty title plate
+  - real musician likeness
+  - poster border
+  - added frame
+  - poster title zone
+  - headline
+  - speech bubbles
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: invented slogans, fake lettering, empty title plate, real musician likeness, poster border, added frame, poster title zone, headline, speech bubbles, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_04
+  packName: Illustration & Graphic Novel
+  categoryId: editorial-and-poster
+  categoryName: 3. Editorial And Poster
+  tags:
+    - illustration-and-graphic-novel
+    - editorial-and-poster
+    - editorial
+    - conceptual
+    - spot-illustration
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: editorial newspaper illustration

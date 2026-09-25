@@ -46,7 +46,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       "A versatile collection of 80+ illustration styles, covering comics, children's books, editorial art, and printmaking.",
     cardTitle: 'Graphic Novel',
     cardDescription: 'Comics, illustration, ink, posters, editorial art.',
-    presetCount: 112,
+    presetCount: 115,
   },
   {
     id: 'pack_05',

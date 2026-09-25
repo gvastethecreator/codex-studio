@@ -3,7 +3,7 @@ id: SP04-045
 packId: pack_04
 name: Gig Poster (Screenprint)
 category: 3. Editorial And Poster
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,70 +12,23 @@ tags:
   - illustration-and-graphic-novel
   - editorial-and-poster
 visualDna:
-  aesthetic: >-
-    Gig Poster (Screenprint) acts as a transferable illustration router: start from Limited-ink
-    screenprint gig-poster style with loud typographic presence, tactile print imperfection, and
-    venue-energy graphic impact, Overprint zone behavior, registration offset cues, distressed
-    border treatment, headline-weight typographic lockups and editorial graphic system built from
-    poster hierarchy, symbolic compression, typography-as-shape, reproduction limits, and immediate
-    visual argument, then apply the visual behavior to prompt X instead of recreating a fixed demo
-    image.
-  subject_treatment: >-
-    Transform any prompt subject through Thick ink contours with hand-pulled edge variance, halftone
-    transitions, and letterform-dominant compositional structure; preserve the requested subject
-    while converting it into emblem, poster form, editorial metaphor, collage fragment, fashion
-    gesture, or information hierarchy, keeping the requested identity, silhouette, pose, object
-    function, or setting legible.
-  color_and_tone: >-
-    Build color with Three-spot high-contrast palette with deliberate overprint interactions and
-    poster-impact chroma economy; use color as communication pressure: ink plates, propaganda
-    contrast, deco metallic restraint, psychedelic vibration, Bauhaus primaries, vector flatness, or
-    vintage print fade, with deliberate value grouping, accent control, and process-specific limits
-    rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Halftone-value illusion and flat print lighting logic prioritizing tonal
-    punch over realistic illumination; make light serve graphic hierarchy through flat poster
-    contrast, airbrush gradients, screenprint layers, symbolic rays, collage mismatch, or painted
-    cover drama, so value structure supports the illustration process and does not overwrite the
-    requested content.
-  texture_and_material: >-
-    Render Fibrous poster stock with squeegee drag traces, ink density fluctuation, and worn-edge
-    distress artifacts; surface detail should reveal screenprint ink, risograph grain, paper stock,
-    cut-paper edges, vector fields, album-cover wear, or editorial print finish, keeping material
-    scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Distressed print deformation with slight misregistration and
-    compositionally intentional grit accents; compose through graphic hierarchy, diagonal force,
-    asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion elongation
-    without readable slogan dependency, with scale, spacing, edge rhythm, and visual hierarchy doing
-    the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Loud, raw, energetic, gritty, live; derive mood from propaganda urgency, luxe
-    modernity, counterculture heat, editorial wit, travel nostalgia, music-poster grit, or
-    cover-story seduction, letting the style alter interpretation without demanding a specific
-    story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Handmade print-shop fidelity emphasizing process evidence, tactile ink layering, and
-    immediate event-readability; finish as deliberate graphic communication with crisp shape logic,
-    controlled print artifacts, and no random poster text or literal advertisement clutter, clean
-    denoised surfaces where appropriate, and enough process evidence to make the style recognizable.
-  key_features: >-
-    Limited-ink screenprint gig-poster style with loud typographic presence, tactile print
-    imperfection, and venue-energy graphic impact; Overprint zone behavior, registration offset
-    cues, distressed border treatment, headline-weight typographic lockups; Three-spot high-contrast
-    palette with deliberate overprint interactions and poster-impact chroma economy; Fibrous poster
-    stock with squeegee drag traces, ink density fluctuation, and worn-edge distress artifacts;
-    Distressed print deformation with slight misregistration and compositionally intentional grit
-    accents
-  creative_brief: >-
-    Apply Gig Poster (Screenprint) as an illustration preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through Limited-ink screenprint gig-poster style with loud typographic presence, tactile print
-    imperfection, and venue-energy graphic impact, Overprint zone behavior, registration offset
-    cues, distressed border treatment, headline-weight typographic lockups, Fibrous poster stock
-    with squeegee drag traces, ink density fluctuation, and worn-edge distress artifacts without
-    requiring the card image's original subject.
+  aesthetic: 'Hand-pulled gig poster screenprint: bold illustrated image in three spot inks with halftone shading, overprints and squeegee imperfections.'
+  subject_treatment: Keep the prompt subject and action; this preset owns the bold single-image gig print composition, with no lettering band, and it never adds slogans, lettering or empty title plates.
+  color_and_tone: Three spot inks, for example cream, teal and blood red, plus black; overprints make extra colors.
+  lighting_and_shadow: Tone made from coarse halftone dots, flat print lighting with punchy contrast.
+  texture_and_material: Fibrous poster stock, squeegee drag, ink density variation and slight misregistration.
+  camera_and_composition: Large central emblem-like subject, strong silhouette, decorative elements radiating from it.
+  atmosphere_and_mood: Loud, raw and energetic, printed the night before the show.
+  rendering_and_quality: Visible print-shop process with thick ink contours; no digital gradients and no band names.
+  key_features: three spot inks plus black; coarse halftone; overprint colors; squeegee drag; central emblem subject
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gig Poster (Screenprint) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - invented slogans
+  - fake lettering
+  - empty title plate
+  - real musician likeness
+  - concert crowd
+  - band on stage
   - digital gradient
   - official card scene
   - fixed thumbnail subject
@@ -89,13 +42,17 @@ avoidRules:
   - literal ad layout
   - stock vector blandness
   - weak graphic hierarchy
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-045.webp
 attributes:
-  negativePrompt: >-
-    digital gradient, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random
-    poster text, literal ad layout, stock vector blandness, weak graphic hierarchy
+  negativePrompt: invented slogans, fake lettering, empty title plate, real musician likeness, concert crowd, band on stage, digital gradient, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

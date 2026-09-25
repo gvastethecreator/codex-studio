@@ -3,7 +3,7 @@ id: SP04-033
 packId: pack_04
 name: Propaganda Poster
 category: 3. Editorial And Poster
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,65 +12,23 @@ tags:
   - illustration-and-graphic-novel
   - editorial-and-poster
 visualDna:
-  aesthetic: >-
-    Propaganda Poster acts as a transferable illustration router: start from Constructivist,
-    constructivist poster command language with hard geometry, reduced silhouettes, radial pressure,
-    and mass-communication urgency, Rays, bold typography, constructivist geometry and editorial
-    graphic system built from poster hierarchy, symbolic compression, typography-as-shape,
-    reproduction limits, and immediate visual argument, then apply the visual behavior to prompt X
-    instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Bold, bold emblematic reduction, simplified body or object
-    mass, and graphic hierarchy that turns the prompt into public-facing symbol; preserve the
-    requested subject while converting it into emblem, poster form, editorial metaphor, collage
-    fragment, fashion gesture, or information hierarchy, keeping the requested identity, silhouette,
-    pose, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Red, Black, Cream, revolutionary tension, stark authority; use color as
-    communication pressure: ink plates, propaganda contrast, deco metallic restraint, psychedelic
-    vibration, Bauhaus primaries, vector flatness, or vintage print fade, with deliberate value
-    grouping, accent control, and process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through High contrast, emblematic low-angle, dramatic light-beam; make light serve
-    graphic hierarchy through flat poster contrast, airbrush gradients, screenprint layers, symbolic
-    rays, collage mismatch, or painted cover drama, so value structure supports the illustration
-    process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Screenprint, poster hierarchy, symbolic compression, print surface, graphic color
-    pressure, and editorial shape control; surface detail should reveal screenprint ink, risograph
-    grain, paper stock, cut-paper edges, vector fields, album-cover wear, or editorial print finish,
-    keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through emblematic angle, scale rhythm, edge hierarchy, spacing, and
-    composition rules specific to Propaganda Poster; compose through graphic hierarchy, diagonal
-    force, asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion
-    elongation without readable slogan dependency, with scale, spacing, edge rhythm, and visual
-    hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Strong, commanding, revolutionary urgency, mass-movement energy; derive mood from
-    propaganda urgency, luxe modernity, counterculture heat, editorial wit, travel nostalgia,
-    music-poster grit, or cover-story seduction, letting the style alter interpretation without
-    demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with High-impact poster rendering with command-tone typography, screenprint flatness, and
-    mass-communication urgency; finish as deliberate graphic communication with crisp shape logic,
-    controlled print artifacts, and no random poster text or literal advertisement clutter, clean
-    denoised surfaces where appropriate, and enough process evidence to make the style recognizable.
-  key_features: >-
-    Constructivist, constructivist poster command language with hard geometry, reduced silhouettes,
-    radial pressure, and mass-communication urgency; Rays, bold typography, constructivist geometry;
-    Red, Black, Cream, revolutionary tension, stark authority; Screenprint, poster hierarchy,
-    symbolic compression, print surface, graphic color pressure, and editorial shape control;
-    emblematic angle, scale rhythm, edge hierarchy, spacing, and composition rules specific to
-    Propaganda Poster
-  creative_brief: >-
-    Apply Propaganda Poster as an illustration preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Constructivist, constructivist poster command language with hard geometry, reduced silhouettes,
-    radial pressure, and mass-communication urgency, Rays, bold typography, constructivist geometry,
-    Screenprint, poster hierarchy, symbolic compression, print surface, graphic color pressure, and
-    editorial shape control without requiring the card image's original subject.
+  aesthetic: 'Constructivist propaganda poster: heroic figures reduced to hard silhouettes, thrust along steep diagonals against radiating red rays.'
+  subject_treatment: Keep the prompt subject and action; this preset owns the diagonal constructivist poster composition with radiating rays, and it never adds slogans, lettering or empty title plates.
+  color_and_tone: Red, black and cream only, flat and uncompromising, one hue per shape.
+  lighting_and_shadow: Stark low-angle light, faces split into flat light and black planes, beams as geometric wedges.
+  texture_and_material: Flat screenprint and letterpress ink, slightly rough edges, aged cream paper.
+  camera_and_composition: Extreme worm-eye view, steep diagonals, repeated marching figures and huge scale contrast.
+  atmosphere_and_mood: Commanding, urgent and collective, mass energy in motion.
+  rendering_and_quality: Bold emblematic reduction with hard edges; no slogans, no real leaders, no national emblems.
+  key_features: red black and cream; steep diagonal thrust; worm-eye view; radiating ray wedges; hard silhouette reduction
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Propaganda Poster as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - invented slogans
+  - fake lettering
+  - empty title plate
+  - real musician likeness
+  - real political leaders
+  - national emblems
   - subtle
   - weak
   - official card scene
@@ -85,13 +43,17 @@ avoidRules:
   - literal ad layout
   - stock vector blandness
   - weak graphic hierarchy
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-033.webp
 attributes:
-  negativePrompt: >-
-    subtle, weak, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random
-    poster text, literal ad layout, stock vector blandness, weak graphic hierarchy
+  negativePrompt: invented slogans, fake lettering, empty title plate, real musician likeness, real political leaders, national emblems, subtle, weak, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

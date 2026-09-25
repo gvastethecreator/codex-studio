@@ -71,6 +71,9 @@ categories:
       - pack_04/SP04-044.yaml
       - pack_04/SP04-045.yaml
       - pack_04/SP04-078.yaml
+      - pack_04/SP04-113.yaml
+      - pack_04/SP04-114.yaml
+      - pack_04/SP04-115.yaml
   - id: concept-art
     name: 4. Concept Art
     presetRefs:
@@ -193,6 +196,9 @@ presetRefs:
   - pack_04/SP04-044.yaml
   - pack_04/SP04-045.yaml
   - pack_04/SP04-078.yaml
+  - pack_04/SP04-113.yaml
+  - pack_04/SP04-114.yaml
+  - pack_04/SP04-115.yaml
   - pack_04/SP04-046.yaml
   - pack_04/SP04-047.yaml
   - pack_04/SP04-048.yaml

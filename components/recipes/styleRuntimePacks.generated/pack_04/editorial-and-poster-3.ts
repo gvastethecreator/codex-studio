@@ -8,28 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Risograph Print',
     category: '3. Editorial And Poster',
     negativePrompt:
-      'perfect registration, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy',
+      'invented slogans, fake lettering, empty title plate, real musician likeness, poster border, added frame, poster title zone, full process color, perfect registration, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Risograph Print acts as a transferable illustration router: start from Risograph zine print language with analog imperfection as feature, Overprint collisions, halftone grain fields, registration mismatch signatures and editorial graphic system built from poster hierarchy, symbolic compression, typography-as-shape, reproduction limits, and immediate visual argument, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Risograph print: the image separated into two or three soy-ink drums, fluorescent pink, teal or yellow, overprinting on uncoated paper.',
       subject_treatment:
-        'Transform any prompt subject through Grain-bearing contours and stencil-like shape separation; preserve the requested subject while converting it into emblem, poster form, editorial metaphor, collage fragment, fashion gesture, or information hierarchy, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action, setting and framing; apply only this print or drawing technique, without adding slogans, borders, frames or a poster layout.',
       color_and_tone:
-        'Build color with Limited fluorescent/soy-ink channels with bold overprint interactions; use color as communication pressure: ink plates, propaganda contrast, deco metallic restraint, psychedelic vibration, Bauhaus primaries, vector flatness, or vintage print fade, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Two or three spot inks only, new colors appearing where they overlap, grainy tints instead of smooth tones.',
       lighting_and_shadow:
-        'Handle light through Layered translucent ink behavior instead of naturalistic light modeling; make light serve graphic hierarchy through flat poster contrast, airbrush gradients, screenprint layers, symbolic rays, collage mismatch, or painted cover drama, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Light shown by leaving paper bare; shadows are denser grain or an overprinted second ink.',
       texture_and_material:
-        'Render High grain, registration drift, roller noise, and paper absorbency artifacts; surface detail should reveal screenprint ink, risograph grain, paper stock, cut-paper edges, vector fields, album-cover wear, or editorial print finish, keeping material scale coherent and avoiding noisy filler texture.',
+        'Coarse stochastic grain, roller streaks, slight ink set-off and uncoated recycled paper fiber.',
       camera_and_composition:
-        'Structure the image through Channel misalignment and offset halos around forms; compose through graphic hierarchy, diagonal force, asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion elongation without readable slogan dependency, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Handmade, rebellious, art-press energy, mood carried by Risograph Print craft, material pressure, and visual restraint; derive mood from propaganda urgency, luxe modernity, counterculture heat, editorial wit, travel nostalgia, music-poster grit, or cover-story seduction, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Keeps the requested framing; each color layer drifts a few millimeters out of register.',
+      atmosphere_and_mood: 'Handmade, bright and indie, printed in a small studio.',
       rendering_and_quality:
-        'Finish with DIY indie-print finish with deliberate production irregularities; finish as deliberate graphic communication with crisp shape logic, controlled print artifacts, and no random poster text or literal advertisement clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Visible misregistration and grain are the finish; no smooth gradients or process color.',
       key_features:
-        'Risograph zine print language with analog imperfection as feature; Overprint collisions, halftone grain fields, registration mismatch signatures; Limited fluorescent/soy-ink channels with bold overprint interactions; High grain, registration drift, roller noise, and paper absorbency artifacts; Channel misalignment and offset halos around forms',
+        'two to three fluorescent spot inks; overprint mixing; coarse riso grain; misregistration; uncoated paper',
       creative_brief:
-        "Apply Risograph Print as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Risograph zine print language with analog imperfection as feature, Overprint collisions, halftone grain fields, registration mismatch signatures, High grain, registration drift, roller noise, and paper absorbency artifacts without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Risograph Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,57 +36,57 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Art Deco Poster',
     category: '3. Editorial And Poster',
     negativePrompt:
-      'messy, organic, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy',
+      'invented slogans, fake lettering, empty title plate, real musician likeness, messy, organic, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Art Deco Poster acts as a transferable illustration router: start from Art Deco poster language with streamlined geometric glamour, Sunbursts, frame borders, speed motifs, ornamental geometry and editorial graphic system built from poster hierarchy, symbolic compression, typography-as-shape, reproduction limits, and immediate visual argument, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Art Deco poster: streamlined geometric forms, radiating sunbursts and speed lines, smooth airbrushed gradients and gold-on-black glamour.',
       subject_treatment:
-        'Transform any prompt subject through Symmetry-aware curves, stepped geometry, and aerodynamic motifs; preserve the requested subject while converting it into emblem, poster form, editorial metaphor, collage fragment, fashion gesture, or information hierarchy, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and action; this preset owns the symmetrical Deco poster composition with sunburst and stepped geometry, and it never adds slogans, lettering or empty title plates.',
       color_and_tone:
-        'Build color with Black, teal, gold, and metallic-adjacent accent hierarchy; use color as communication pressure: ink plates, propaganda contrast, deco metallic restraint, psychedelic vibration, Bauhaus primaries, vector flatness, or vintage print fade, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Black, deep teal, ivory and metallic-looking gold, gradients banded in smooth airbrush steps.',
       lighting_and_shadow:
-        'Handle light through Stylized gradient bands and radial sunburst emphasis; make light serve graphic hierarchy through flat poster contrast, airbrush gradients, screenprint layers, symbolic rays, collage mismatch, or painted cover drama, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Radial sunburst light behind the subject, stylized gradient bands, crisp rim highlights on curves.',
       texture_and_material:
-        'Render Smooth poster print with soft airbrush-like transitions; surface detail should reveal screenprint ink, risograph grain, paper stock, cut-paper edges, vector fields, album-cover wear, or editorial print finish, keeping material scale coherent and avoiding noisy filler texture.',
+        'Smooth lithographic ink, airbrushed transitions, polished chrome and lacquer suggested graphically.',
       camera_and_composition:
-        'Structure the image through Streamlined elongation and geometric simplification; compose through graphic hierarchy, diagonal force, asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion elongation without readable slogan dependency, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+        'Strong symmetry, low monumental angle, elongated streamlined silhouettes and stepped ziggurat shapes.',
       atmosphere_and_mood:
-        'Keep the mood Luxurious, optimistic, metropolitan, mood carried by Art Deco Poster craft, material pressure, and visual restraint; derive mood from propaganda urgency, luxe modernity, counterculture heat, editorial wit, travel nostalgia, music-poster grit, or cover-story seduction, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Luxurious, confident and machine-age optimistic, a gilded evening in motion.',
       rendering_and_quality:
-        'Finish with Decorative high-finish composition with era-authentic polish; finish as deliberate graphic communication with crisp shape logic, controlled print artifacts, and no random poster text or literal advertisement clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Precise geometric shapes and polished gradients; never loose, organic or distressed.',
       key_features:
-        'Art Deco poster language with streamlined geometric glamour; Sunbursts, frame borders, speed motifs, ornamental geometry; Black, teal, gold, and metallic-adjacent accent hierarchy; Smooth poster print with soft airbrush-like transitions; Streamlined elongation and geometric simplification',
+        'radiating sunburst; streamlined elongation; black teal and gold; airbrushed gradient bands; stepped symmetry',
       creative_brief:
-        "Apply Art Deco Poster as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Art Deco poster language with streamlined geometric glamour, Sunbursts, frame borders, speed motifs, ornamental geometry, Smooth poster print with soft airbrush-like transitions without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Art Deco Poster as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP04-032',
-    name: 'Mucha Art Nouveau Poster',
+    name: 'Art Nouveau Halo Lithograph',
+    displayName: 'Art Nouveau Halo Lithograph',
+    styleAnchors: ['Art Nouveau Halo Lithograph', 'Mucha Art Nouveau Poster'],
     category: '3. Editorial And Poster',
     negativePrompt:
-      'straight lines, minimal, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy',
+      'invented slogans, fake lettering, empty title plate, real musician likeness, straight lines, minimal, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Mucha Art Nouveau Poster acts as a transferable illustration router: start from Art Nouveau decorative lithograph (Alphonse Mucha influence), Circular nimbus motifs, botanical arabesques, integrated border systems and editorial graphic system built from poster hierarchy, symbolic compression, typography-as-shape, reproduction limits, and immediate visual argument, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Art Nouveau decorative lithograph: a figure framed by a circular halo, flowing whiplash contours and botanical arabesques that merge into an ornamental border.',
       subject_treatment:
-        'Transform any prompt subject through Sinuous flowing contour integrating hair, vines, and ornamental framing; preserve the requested subject while converting it into emblem, poster form, editorial metaphor, collage fragment, fashion gesture, or information hierarchy, keeping the requested identity, silhouette, pose, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Peach, sage, ivory, and muted gold with floral pastel harmonics; use color as communication pressure: ink plates, propaganda contrast, deco metallic restraint, psychedelic vibration, Bauhaus primaries, vector flatness, or vintage print fade, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Keep the prompt subject and action; this preset owns the halo-and-arabesque decorative panel with its integrated floral border, and it never adds slogans, lettering or empty title plates.',
+      color_and_tone: 'Peach, sage, ivory and muted gold, soft flat tints with dark brown contour.',
       lighting_and_shadow:
-        'Handle light through Flat luminous treatment with halo-central emphasis; make light serve graphic hierarchy through flat poster contrast, airbrush gradients, screenprint layers, symbolic rays, collage mismatch, or painted cover drama, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Flat luminous light, halo glowing behind the head, minimal soft modeling on faces and hands.',
       texture_and_material:
-        'Render Poster-lithograph grain and ink-flat ornamental finish; surface detail should reveal screenprint ink, risograph grain, paper stock, cut-paper edges, vector fields, album-cover wear, or editorial print finish, keeping material scale coherent and avoiding noisy filler texture.',
+        'Stone-lithograph grain, flat ink tints, mosaic-like patterning in the halo and garments.',
       camera_and_composition:
-        'Structure the image through Organic curve dominance over rigid perspective structure; compose through graphic hierarchy, diagonal force, asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion elongation without readable slogan dependency, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Romantic, ornamental, reverent, mood carried by Mucha Art Nouveau Poster craft, material pressure, and visual restraint; derive mood from propaganda urgency, luxe modernity, counterculture heat, editorial wit, travel nostalgia, music-poster grit, or cover-story seduction, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Tall vertical panel, figure centered before a circular nimbus, hair and plants curling into the frame.',
+      atmosphere_and_mood: 'Romantic, reverent and ornamental, a quiet devotion to nature.',
       rendering_and_quality:
-        'Finish with Highly decorative, elegant, and pattern-rich composition; finish as deliberate graphic communication with crisp shape logic, controlled print artifacts, and no random poster text or literal advertisement clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Confident brown contour of varied weight, pattern-rich but orderly; no straight modernist geometry.',
       key_features:
-        'Art Nouveau decorative lithograph (Alphonse Mucha influence); Circular nimbus motifs, botanical arabesques, integrated border systems; Peach, sage, ivory, and muted gold with floral pastel harmonics; Poster-lithograph grain and ink-flat ornamental finish; Organic curve dominance over rigid perspective structure',
+        'circular halo behind the figure; whiplash curves; botanical arabesque border; peach sage and gold; lithograph grain',
       creative_brief:
-        "Apply Mucha Art Nouveau Poster as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Art Nouveau decorative lithograph (Alphonse Mucha influence), Circular nimbus motifs, botanical arabesques, integrated border systems, Poster-lithograph grain and ink-flat ornamental finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Art Nouveau Halo Lithograph as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +94,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Propaganda Poster',
     category: '3. Editorial And Poster',
     negativePrompt:
-      'subtle, weak, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy',
+      'invented slogans, fake lettering, empty title plate, real musician likeness, real political leaders, national emblems, subtle, weak, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Propaganda Poster acts as a transferable illustration router: start from Constructivist, constructivist poster command language with hard geometry, reduced silhouettes, radial pressure, and mass-communication urgency, Rays, bold typography, constructivist geometry and editorial graphic system built from poster hierarchy, symbolic compression, typography-as-shape, reproduction limits, and immediate visual argument, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Constructivist propaganda poster: heroic figures reduced to hard silhouettes, thrust along steep diagonals against radiating red rays.',
       subject_treatment:
-        'Transform any prompt subject through Bold, bold emblematic reduction, simplified body or object mass, and graphic hierarchy that turns the prompt into public-facing symbol; preserve the requested subject while converting it into emblem, poster form, editorial metaphor, collage fragment, fashion gesture, or information hierarchy, keeping the requested identity, silhouette, pose, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Red, Black, Cream, revolutionary tension, stark authority; use color as communication pressure: ink plates, propaganda contrast, deco metallic restraint, psychedelic vibration, Bauhaus primaries, vector flatness, or vintage print fade, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Keep the prompt subject and action; this preset owns the diagonal constructivist poster composition with radiating rays, and it never adds slogans, lettering or empty title plates.',
+      color_and_tone: 'Red, black and cream only, flat and uncompromising, one hue per shape.',
       lighting_and_shadow:
-        'Handle light through High contrast, emblematic low-angle, dramatic light-beam; make light serve graphic hierarchy through flat poster contrast, airbrush gradients, screenprint layers, symbolic rays, collage mismatch, or painted cover drama, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Stark low-angle light, faces split into flat light and black planes, beams as geometric wedges.',
       texture_and_material:
-        'Render Screenprint, poster hierarchy, symbolic compression, print surface, graphic color pressure, and editorial shape control; surface detail should reveal screenprint ink, risograph grain, paper stock, cut-paper edges, vector fields, album-cover wear, or editorial print finish, keeping material scale coherent and avoiding noisy filler texture.',
+        'Flat screenprint and letterpress ink, slightly rough edges, aged cream paper.',
       camera_and_composition:
-        'Structure the image through emblematic angle, scale rhythm, edge hierarchy, spacing, and composition rules specific to Propaganda Poster; compose through graphic hierarchy, diagonal force, asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion elongation without readable slogan dependency, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Strong, commanding, revolutionary urgency, mass-movement energy; derive mood from propaganda urgency, luxe modernity, counterculture heat, editorial wit, travel nostalgia, music-poster grit, or cover-story seduction, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Extreme worm-eye view, steep diagonals, repeated marching figures and huge scale contrast.',
+      atmosphere_and_mood: 'Commanding, urgent and collective, mass energy in motion.',
       rendering_and_quality:
-        'Finish with High-impact poster rendering with command-tone typography, screenprint flatness, and mass-communication urgency; finish as deliberate graphic communication with crisp shape logic, controlled print artifacts, and no random poster text or literal advertisement clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Bold emblematic reduction with hard edges; no slogans, no real leaders, no national emblems.',
       key_features:
-        'Constructivist, constructivist poster command language with hard geometry, reduced silhouettes, radial pressure, and mass-communication urgency; Rays, bold typography, constructivist geometry; Red, Black, Cream, revolutionary tension, stark authority; Screenprint, poster hierarchy, symbolic compression, print surface, graphic color pressure, and editorial shape control; emblematic angle, scale rhythm, edge hierarchy, spacing, and composition rules specific to Propaganda Poster',
+        'red black and cream; steep diagonal thrust; worm-eye view; radiating ray wedges; hard silhouette reduction',
       creative_brief:
-        "Apply Propaganda Poster as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Constructivist, constructivist poster command language with hard geometry, reduced silhouettes, radial pressure, and mass-communication urgency, Rays, bold typography, constructivist geometry, Screenprint, poster hierarchy, symbolic compression, print surface, graphic color pressure, and editorial shape control without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Propaganda Poster as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +121,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Psychedelic Poster (60s)',
     category: '3. Editorial And Poster',
     negativePrompt:
-      'straight, readable, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy',
+      'invented slogans, fake lettering, empty title plate, real musician likeness, rock band on stage, straight, readable, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Psychedelic Poster (60s) acts as a transferable illustration router: start from 60s psychedelic poster language with optical-vibration typography, Swirling typographic masses, radial waves, vibrating color adjacency and editorial graphic system built from poster hierarchy, symbolic compression, typography-as-shape, reproduction limits, and immediate visual argument, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        '1960s psychedelic concert poster: every form melting into liquid swirls, vibrating complementary colors and dense wave patterns filling the sheet.',
       subject_treatment:
-        'Transform any prompt subject through Liquidly warped letterforms and undulating contour fields; preserve the requested subject while converting it into emblem, poster form, editorial metaphor, collage fragment, fashion gesture, or information hierarchy, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and action; this preset owns the all-over swirling poster composition, with no lettering or band members, and it never adds slogans, lettering or empty title plates.',
       color_and_tone:
-        'Build color with High-chroma complementary clashes and acid-neon screenprint palette; use color as communication pressure: ink plates, propaganda contrast, deco metallic restraint, psychedelic vibration, Bauhaus primaries, vector flatness, or vintage print fade, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Clashing complementaries of equal value, orange on blue, magenta on green, so edges optically vibrate.',
       lighting_and_shadow:
-        'Handle light through Flat color-plane tension with no naturalistic light dependency; make light serve graphic hierarchy through flat poster contrast, airbrush gradients, screenprint layers, symbolic rays, collage mismatch, or painted cover drama, so value structure supports the illustration process and does not overwrite the requested content.',
+        'No natural light; flat color planes pulse through concentric contour bands.',
       texture_and_material:
-        'Render Screenprint grain and ink-overlap artifacts; surface detail should reveal screenprint ink, risograph grain, paper stock, cut-paper edges, vector fields, album-cover wear, or editorial print finish, keeping material scale coherent and avoiding noisy filler texture.',
+        'Screenprint ink with slight overlap halos, contour lines echoing outward like ripples.',
       camera_and_composition:
-        'Structure the image through Melting curvature and wave-like compositional drift; compose through graphic hierarchy, diagonal force, asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion elongation without readable slogan dependency, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Countercultural, ecstatic, sensory-saturated, mood carried by Psychedelic Poster (60s) craft, material pressure, and visual restraint; derive mood from propaganda urgency, luxe modernity, counterculture heat, editorial wit, travel nostalgia, music-poster grit, or cover-story seduction, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Central melting subject with radiating waves, no empty space left anywhere on the sheet.',
+      atmosphere_and_mood: 'Ecstatic, dizzy and sensory, a sound made visible.',
       rendering_and_quality:
-        'Finish with Dense retro visual overload with deliberate readability disruption; finish as deliberate graphic communication with crisp shape logic, controlled print artifacts, and no random poster text or literal advertisement clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Dense decorative overload with fluid forms; no readable letterforms and no musicians unless asked.',
       key_features:
-        '60s psychedelic poster language with optical-vibration typography; Swirling typographic masses, radial waves, vibrating color adjacency; High-chroma complementary clashes and acid-neon screenprint palette; Screenprint grain and ink-overlap artifacts; Melting curvature and wave-like compositional drift',
+        'melting liquid swirls; vibrating equal-value complementaries; ripple contour bands; all-over density; screenprint halos',
       creative_brief:
-        "Apply Psychedelic Poster (60s) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through 60s psychedelic poster language with optical-vibration typography, Swirling typographic masses, radial waves, vibrating color adjacency, Screenprint grain and ink-overlap artifacts without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Psychedelic Poster (60s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +149,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Minimalist Vector',
     category: '3. Editorial And Poster',
     negativePrompt:
-      'detail, texture, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy',
+      'invented slogans, fake lettering, empty title plate, real musician likeness, poster border, added frame, poster title zone, detail, texture, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Minimalist Vector acts as a transferable illustration router: start from Minimalist vector designed subjects style in Corporate Memphis tradition, Abstract human forms, geometric props, flat compositional hierarchy and editorial graphic system built from poster hierarchy, symbolic compression, typography-as-shape, reproduction limits, and immediate visual argument, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Minimalist flat vector in the corporate-flat manner: rounded shapes, no outlines, figures with oversized limbs and tiny heads in cheerful colors.',
       subject_treatment:
-        'Transform any prompt subject through Outline-light geometric silhouette subjects with simplified anatomy blocks; preserve the requested subject while converting it into emblem, poster form, editorial metaphor, collage fragment, fashion gesture, or information hierarchy, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action, setting and framing; apply only this print or drawing technique, without adding slogans, borders, frames or a poster layout.',
       color_and_tone:
-        'Build color with Flat bright palette with controlled corporate-friendly contrast; use color as communication pressure: ink plates, propaganda contrast, deco metallic restraint, psychedelic vibration, Bauhaus primaries, vector flatness, or vintage print fade, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Flat bright palette of coral, periwinkle, mint and mustard on an off-white ground, no gradients.',
       lighting_and_shadow:
-        'Handle light through Shadowless vector treatment with optional minimal shape layering; make light serve graphic hierarchy through flat poster contrast, airbrush gradients, screenprint layers, symbolic rays, collage mismatch, or painted cover drama, so value structure supports the illustration process and does not overwrite the requested content.',
-      texture_and_material:
-        'Render Clean digital-flat surfaces without tactile grain; surface detail should reveal screenprint ink, risograph grain, paper stock, cut-paper edges, vector fields, album-cover wear, or editorial print finish, keeping material scale coherent and avoiding noisy filler texture.',
+        'Shadowless; depth only from overlapping flat shapes and one darker tint.',
+      texture_and_material: 'Clean digital vector surfaces, no grain, simple geometric props.',
       camera_and_composition:
-        'Structure the image through Oversized limbs and soft blobby morphology; compose through graphic hierarchy, diagonal force, asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion elongation without readable slogan dependency, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Friendly, approachable, optimistic, mood carried by Minimalist Vector craft, material pressure, and visual restraint; derive mood from propaganda urgency, luxe modernity, counterculture heat, editorial wit, travel nostalgia, music-poster grit, or cover-story seduction, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Keeps the requested framing, with generous empty space around a simple readable arrangement.',
+      atmosphere_and_mood: 'Friendly, approachable and upbeat, calm and uncluttered.',
       rendering_and_quality:
-        'Finish with UI/editorial-ready vector polish with high scalability; finish as deliberate graphic communication with crisp shape logic, controlled print artifacts, and no random poster text or literal advertisement clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Smooth vector shapes with consistent curves; no texture, no outlines and no poster border.',
       key_features:
-        'Minimalist vector designed subjects style in Corporate Memphis tradition; Abstract human forms, geometric props, flat compositional hierarchy; Flat bright palette with controlled corporate-friendly contrast; Clean digital-flat surfaces without tactile grain; Oversized limbs and soft blobby morphology',
+        'flat vector shapes; no outlines; oversized limbs and tiny heads; coral periwinkle mint palette; generous empty space',
       creative_brief:
-        "Apply Minimalist Vector as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Minimalist vector designed subjects style in Corporate Memphis tradition, Abstract human forms, geometric props, flat compositional hierarchy, Clean digital-flat surfaces without tactile grain without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Minimalist Vector as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +176,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Collage Art (Dada)',
     category: '3. Editorial And Poster',
     negativePrompt:
-      'seamless, painted, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy',
+      'invented slogans, fake lettering, empty title plate, real musician likeness, poster border, added frame, poster title zone, seamless digital composite, readable newspaper text, seamless, painted, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Collage Art (Dada) acts as a transferable illustration router: start from Dada-style cut-and-paste photomontage collage, Collage Art (Dada) poster hierarchy, symbolic compression, print surface, graphic color pressure, and editorial shape control, Visible seams, torn edges, fragment clash composition and editorial graphic system built from poster hierarchy, symbolic compression, typography-as-shape, reproduction limits, and immediate visual argument, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Dada photomontage: found photographs and engravings cut with scissors and glued into absurd hybrids, seams and scale jumps left visible.',
       subject_treatment:
-        'Transform any prompt subject through Hard scissor-cut boundaries and abrupt fragment intersections; preserve the requested subject while converting it into emblem, poster form, editorial metaphor, collage fragment, fashion gesture, or information hierarchy, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action, setting and framing; apply only this print or drawing technique, without adding slogans, borders, frames or a poster layout.',
       color_and_tone:
-        'Build color with Found-image sepia/grayscale base with selective accent insertions; use color as communication pressure: ink plates, propaganda contrast, deco metallic restraint, psychedelic vibration, Bauhaus primaries, vector flatness, or vintage print fade, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Sepia and gray halftone photographs with one or two accent papers in red or ochre.',
       lighting_and_shadow:
-        'Handle light through Intentionally inconsistent source-light continuity across fragments; make light serve graphic hierarchy through flat poster contrast, airbrush gradients, screenprint layers, symbolic rays, collage mismatch, or painted cover drama, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Deliberately inconsistent light between fragments, each piece keeping its original photo lighting.',
       texture_and_material:
-        'Render Halftone dots, paper edges, print-scan wear artifacts; surface detail should reveal screenprint ink, risograph grain, paper stock, cut-paper edges, vector fields, album-cover wear, or editorial print finish, keeping material scale coherent and avoiding noisy filler texture.',
+        'Halftone dots, paper edges, glue wrinkles, yellowed newsprint and cut engraving lines.',
       camera_and_composition:
-        'Structure the image through Hybridized object-body juxtapositions and scale discontinuities; compose through graphic hierarchy, diagonal force, asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion elongation without readable slogan dependency, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Rebellious, absurdist, provocative, mood carried by Collage Art (Dada) craft, material pressure, and visual restraint; derive mood from propaganda urgency, luxe modernity, counterculture heat, editorial wit, travel nostalgia, music-poster grit, or cover-story seduction, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Keeps the requested subject readable while replacing parts of it with mismatched fragments at odd scales.',
+      atmosphere_and_mood: 'Absurd, provocative and irreverent, logic cut apart.',
       rendering_and_quality:
-        'Finish with Deliberate anti-polish collage assembly with conceptual friction; finish as deliberate graphic communication with crisp shape logic, controlled print artifacts, and no random poster text or literal advertisement clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Visible scissor edges and seams; never a seamless digital composite or painted surface.',
       key_features:
-        'Dada-style cut-and-paste photomontage collage, Collage Art (Dada) poster hierarchy, symbolic compression, print surface, graphic color pressure, and editorial shape control; Visible seams, torn edges, fragment clash composition; Found-image sepia/grayscale base with selective accent insertions; Halftone dots, paper edges, print-scan wear artifacts; Hybridized object-body juxtapositions and scale discontinuities',
+        'cut found photographs; visible seams and paper edges; halftone fragments; absurd scale jumps; red accent paper',
       creative_brief:
-        "Apply Collage Art (Dada) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Dada-style cut-and-paste photomontage collage, Collage Art (Dada) poster hierarchy, symbolic compression, print surface, graphic color pressure, and editorial shape control, Visible seams, torn edges, fragment clash composition, Halftone dots, paper edges, print-scan wear artifacts without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Collage Art (Dada) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +204,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bauhaus Poster',
     category: '3. Editorial And Poster',
     negativePrompt:
-      'decorative, floral, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy',
+      'invented slogans, fake lettering, empty title plate, real musician likeness, typography blocks, decorative, floral, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bauhaus Poster acts as a transferable illustration router: start from Bauhaus poster modernism with function-first geometry, Modular grid, primary blocks, asymmetric equilibrium, typographic integration and editorial graphic system built from poster hierarchy, symbolic compression, typography-as-shape, reproduction limits, and immediate visual argument, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Bauhaus poster: the subject rebuilt from circles, squares, triangles and thick bars on an asymmetric grid.',
       subject_treatment:
-        'Transform any prompt subject through Grid-governed composition using circles, squares, triangles, and bars; preserve the requested subject while converting it into emblem, poster form, editorial metaphor, collage fragment, fashion gesture, or information hierarchy, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and action; this preset owns the asymmetric geometric grid composition, and it never adds slogans, lettering or empty title plates.',
       color_and_tone:
-        'Build color with Primary triad with black/white neutral anchors; use color as communication pressure: ink plates, propaganda contrast, deco metallic restraint, psychedelic vibration, Bauhaus primaries, vector flatness, or vintage print fade, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
-      lighting_and_shadow:
-        'Handle light through Flat functional value treatment, no decorative shading; make light serve graphic hierarchy through flat poster contrast, airbrush gradients, screenprint layers, symbolic rays, collage mismatch, or painted cover drama, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Primary red, yellow and blue with black and off-white; each shape one flat color.',
+      lighting_and_shadow: 'No shading at all; values are the flat colors of the shapes.',
       texture_and_material:
-        'Render Matte print-surface simplicity, poster hierarchy, symbolic compression, print surface, graphic color pressure, and editorial shape control; surface detail should reveal screenprint ink, risograph grain, paper stock, cut-paper edges, vector fields, album-cover wear, or editorial print finish, keeping material scale coherent and avoiding noisy filler texture.',
+        'Matte lithographic ink on slightly warm paper, crisp compass and ruler edges.',
       camera_and_composition:
-        'Structure the image through Diagonal type and geometric tension as compositional drivers; compose through graphic hierarchy, diagonal force, asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion elongation without readable slogan dependency, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Rational, didactic, constructive, mood carried by Bauhaus Poster craft, material pressure, and visual restraint; derive mood from propaganda urgency, luxe modernity, counterculture heat, editorial wit, travel nostalgia, music-poster grit, or cover-story seduction, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Asymmetric balance on a modular grid, strong diagonals and one dominant circle.',
+      atmosphere_and_mood: 'Rational, constructive and playful, function made beautiful.',
       rendering_and_quality:
-        'Finish with Precise typographic-layout discipline and asymmetrical balance; finish as deliberate graphic communication with crisp shape logic, controlled print artifacts, and no random poster text or literal advertisement clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Exact geometric primitives only; no decoration, no ornament and no typography.',
       key_features:
-        'Bauhaus poster modernism with function-first geometry; Modular grid, primary blocks, asymmetric equilibrium, typographic integration; Primary triad with black/white neutral anchors; Matte print-surface simplicity, poster hierarchy, symbolic compression, print surface, graphic color pressure, and editorial shape control; Diagonal type and geometric tension as compositional drivers',
+        'circles squares triangles and bars; primary triad with black; asymmetric grid; dominant circle; flat matte ink',
       creative_brief:
-        "Apply Bauhaus Poster as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Bauhaus poster modernism with function-first geometry, Modular grid, primary blocks, asymmetric equilibrium, typographic integration, Matte print-surface simplicity, poster hierarchy, symbolic compression, print surface, graphic color pressure, and editorial shape control without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bauhaus Poster as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +231,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'National Park Poster (WPA)',
     category: '3. Editorial And Poster',
     negativePrompt:
-      'photo, detailed, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy',
+      'invented slogans, fake lettering, empty title plate, real musician likeness, photo, detailed, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'National Park Poster (WPA) acts as a transferable illustration router: start from WPA-inspired national-park travel poster screenprint language, Serif titling, horizontal strata, landmark silhouette simplification and editorial graphic system built from poster hierarchy, symbolic compression, typography-as-shape, reproduction limits, and immediate visual argument, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        '1930s park poster screenprint: landscapes simplified into a few flat silhouette layers of separated earth-toned inks.',
       subject_treatment:
-        'Transform any prompt subject through Simplified landscape silhouettes with strong horizon stratification; preserve the requested subject while converting it into emblem, poster form, editorial metaphor, collage fragment, fashion gesture, or information hierarchy, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and action; this preset owns the layered scenic poster composition of stacked landscape planes, and it never adds slogans, lettering or empty title plates.',
       color_and_tone:
-        'Build color with Earth-toned separated inks with limited scenic band gradients; use color as communication pressure: ink plates, propaganda contrast, deco metallic restraint, psychedelic vibration, Bauhaus primaries, vector flatness, or vintage print fade, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Six to eight flat inks, rust, ochre, forest green, slate blue and cream, sky in stepped color bands.',
       lighting_and_shadow:
-        'Handle light through Stylized day-phase color banding rather than realistic light physics; make light serve graphic hierarchy through flat poster contrast, airbrush gradients, screenprint layers, symbolic rays, collage mismatch, or painted cover drama, so value structure supports the illustration process and does not overwrite the requested content.',
-      texture_and_material:
-        'Render Screen mesh print feel with flat-ink layering; surface detail should reveal screenprint ink, risograph grain, paper stock, cut-paper edges, vector fields, album-cover wear, or editorial print finish, keeping material scale coherent and avoiding noisy filler texture.',
+        'Time of day shown by color banding in the sky and a few flat shadow shapes on the mountains.',
+      texture_and_material: 'Flat screen-mesh ink with slight edge spread, uncoated poster stock.',
       camera_and_composition:
-        'Structure the image through Simplified mountain masses and compressed depth tiers; compose through graphic hierarchy, diagonal force, asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion elongation without readable slogan dependency, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Majestic, nostalgic, civic-romantic, mood carried by National Park Poster (WPA) craft, material pressure, and visual restraint; derive mood from propaganda urgency, luxe modernity, counterculture heat, editorial wit, travel nostalgia, music-poster grit, or cover-story seduction, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Horizontal strata from foreground silhouette to far peaks, one landmark centered and monumental.',
+      atmosphere_and_mood: 'Majestic, nostalgic and civic, nature presented with pride.',
       rendering_and_quality:
-        'Finish with Bold vintage poster clarity with monumental scenic abstraction; finish as deliberate graphic communication with crisp shape logic, controlled print artifacts, and no random poster text or literal advertisement clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Clear flat shape separation with no photographic detail; no title band.',
       key_features:
-        'WPA-inspired national-park travel poster screenprint language; Serif titling, horizontal strata, landmark silhouette simplification; Earth-toned separated inks with limited scenic band gradients; Screen mesh print feel with flat-ink layering; Simplified mountain masses and compressed depth tiers',
+        'flat separated earth inks; stacked silhouette strata; banded sky; monumental landmark; screen-mesh texture',
       creative_brief:
-        "Apply National Park Poster (WPA) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through WPA-inspired national-park travel poster screenprint language, Serif titling, horizontal strata, landmark silhouette simplification, Screen mesh print feel with flat-ink layering without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies National Park Poster (WPA) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -269,28 +258,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Movie Poster (Painted)',
     category: '3. Editorial And Poster',
     negativePrompt:
-      'photo collage, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy',
+      'invented slogans, fake lettering, empty title plate, real musician likeness, credits block, eclipse motif, photo collage, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Movie Poster (Painted) acts as a transferable illustration router: start from Hand-painted epic poster style with airbrushed montage drama, nostalgic theatrical promise, and maximal emotional compression, Airbrushed montage composition, theatrical light contrast, high-impact focal stacking, title-safe lead archetype spacing and editorial graphic system built from poster hierarchy, symbolic compression, typography-as-shape, reproduction limits, and immediate visual argument, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Painted movie one-sheet: an airbrushed and oil-painted montage with a giant central head or symbol towering over smaller action vignettes.',
       subject_treatment:
-        'Transform any prompt subject through Soft-airbrush contour blending, compositional silhouette subjects stacking, and montage-guided directional flow toward focal hierarchy; preserve the requested subject while converting it into emblem, poster form, editorial metaphor, collage fragment, fashion gesture, or information hierarchy, keeping the requested identity, silhouette, pose, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Bold warm-cool oppositions with theatrical amber/cyan pushes, luminous atmospheric transitions, and poster-grade chroma emphasis; use color as communication pressure: ink plates, propaganda contrast, deco metallic restraint, psychedelic vibration, Bauhaus primaries, vector flatness, or vintage print fade, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Keep the prompt subject and action; this preset owns the painted montage one-sheet composition with scaled vignettes, and it never adds slogans, lettering or empty title plates.',
+      color_and_tone: 'Theatrical amber against cyan, deep painted shadows and glowing highlights.',
       lighting_and_shadow:
-        'Handle light through emblematic rim/backlight layering with dramatic key splits, glow accents, and stage-like contrast separation; make light serve graphic hierarchy through flat poster contrast, airbrush gradients, screenprint layers, symbolic rays, collage mismatch, or painted cover drama, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Strong rim and backlight on every figure, glow accents and dramatic split key light.',
       texture_and_material:
-        'Render Subtle painted-surface grain with airbrush mist transitions and matte poster-print finish cues; surface detail should reveal screenprint ink, risograph grain, paper stock, cut-paper edges, vector fields, album-cover wear, or editorial print finish, keeping material scale coherent and avoiding noisy filler texture.',
+        'Soft airbrush mist, visible oil brushwork in the focal faces, matte poster print.',
       camera_and_composition:
-        'Structure the image through Layered montage depth with overlapping portrait scales and symbolic depth field expansion for mythic scope; compose through graphic hierarchy, diagonal force, asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion elongation without readable slogan dependency, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Cinematic, nostalgic, anticipatory, grand, emotional; derive mood from propaganda urgency, luxe modernity, counterculture heat, editorial wit, travel nostalgia, music-poster grit, or cover-story seduction, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Pyramid montage: huge background element, hero figures in the middle, small action scene at the base.',
+      atmosphere_and_mood: 'Grand, cinematic and anticipatory, a whole story in one sheet.',
       rendering_and_quality:
-        'Finish with Classic illustrated one-sheet fidelity emphasizing narrative condensation, iconic readability, and high-drama polish; finish as deliberate graphic communication with crisp shape logic, controlled print artifacts, and no random poster text or literal advertisement clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Hand-painted polish with airbrush blending; no photo collage, no credits block and no title.',
       key_features:
-        'Hand-painted epic poster style with airbrushed montage drama, nostalgic theatrical promise, and maximal emotional compression; Airbrushed montage composition, theatrical light contrast, high-impact focal stacking, title-safe lead archetype spacing; Bold warm-cool oppositions with theatrical amber/cyan pushes, luminous atmospheric transitions, and poster-grade chroma emphasis; Subtle painted-surface grain with airbrush mist transitions and matte poster-print finish cues; Layered montage depth with overlapping portrait scales and symbolic depth field expansion for mythic scope',
+        'painted montage pyramid; giant background head or symbol; amber and cyan; airbrush mist; rim-lit heroes',
       creative_brief:
-        "Apply Movie Poster (Painted) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Hand-painted epic poster style with airbrushed montage drama, nostalgic theatrical promise, and maximal emotional compression, Airbrushed montage composition, theatrical light contrast, high-impact focal stacking, title-safe lead archetype spacing, Subtle painted-surface grain with airbrush mist transitions and matte poster-print finish cues without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Movie Poster (Painted) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -298,28 +285,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Infographic',
     category: '3. Editorial And Poster',
     negativePrompt:
-      'messy, art, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy',
+      'invented slogans, fake lettering, empty title plate, real musician likeness, dashboard UI, numbers, readable labels, messy, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy, text, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Infographic acts as a transferable illustration router: start from Editorial infographic/data-visualization illustration system, Chart blocks, iconography families, data-flow arrows, hierarchy scaffolds and editorial graphic system built from poster hierarchy, symbolic compression, typography-as-shape, reproduction limits, and immediate visual argument, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Editorial infographic illustration: the subject explained as an illustrated diagram of layers, cycles or flows, drawn in clean flat vector.',
       subject_treatment:
-        'Transform any prompt subject through Thin icon strokes, modular chart primitives, directional flow connectors; preserve the requested subject while converting it into emblem, poster form, editorial metaphor, collage fragment, fashion gesture, or information hierarchy, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and action; this preset owns the diagram layout of layers, loops or flows around the subject, with no numbers or labels, and it never adds slogans, lettering or empty title plates.',
       color_and_tone:
-        'Build color with Consistent categorical palette with accessible contrast grouping; use color as communication pressure: ink plates, propaganda contrast, deco metallic restraint, psychedelic vibration, Bauhaus primaries, vector flatness, or vintage print fade, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
-      lighting_and_shadow:
-        'Handle light through Flat informational rendering with no decorative shadowing; make light serve graphic hierarchy through flat poster contrast, airbrush gradients, screenprint layers, symbolic rays, collage mismatch, or painted cover drama, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Consistent categorical palette of five muted hues on warm white, one accent for the key element.',
+      lighting_and_shadow: 'Flat informational rendering with no decorative shadows or glows.',
       texture_and_material:
-        'Render Clean vector output suitable for print and screen; surface detail should reveal screenprint ink, risograph grain, paper stock, cut-paper edges, vector fields, album-cover wear, or editorial print finish, keeping material scale coherent and avoiding noisy filler texture.',
+        'Clean vector lines, thin connector arrows and small illustrated vignettes.',
       camera_and_composition:
-        'Structure the image through Optional isometric modules integrated into 2D data layouts; compose through graphic hierarchy, diagonal force, asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion elongation without readable slogan dependency, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Analytical, trustworthy, concise, mood carried by Infographic craft, material pressure, and visual restraint; derive mood from propaganda urgency, luxe modernity, counterculture heat, editorial wit, travel nostalgia, music-poster grit, or cover-story seduction, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Cross-sections, circular life-cycle loops or vertical strata, clear reading order.',
+      atmosphere_and_mood: 'Analytical, trustworthy and clear, a curious question calmly answered.',
       rendering_and_quality:
-        'Finish with High-legibility explainer quality with dashboard-grade precision; finish as deliberate graphic communication with crisp shape logic, controlled print artifacts, and no random poster text or literal advertisement clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Precise vector illustration; no charts with numbers, no dashboards and no readable labels.',
       key_features:
-        'Editorial infographic/data-visualization illustration system; Chart blocks, iconography families, data-flow arrows, hierarchy scaffolds; Consistent categorical palette with accessible contrast grouping; Clean vector output suitable for print and screen; Optional isometric modules integrated into 2D data layouts',
+        'illustrated cross-section or cycle; connector arrows; categorical muted palette; clean vector; no labels',
       creative_brief:
-        "Apply Infographic as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Editorial infographic/data-visualization illustration system, Chart blocks, iconography families, data-flow arrows, hierarchy scaffolds, Clean vector output suitable for print and screen without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Infographic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -327,28 +312,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fashion Illustration',
     category: '3. Editorial And Poster',
     negativePrompt:
-      'short, realistic, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy',
+      'invented slogans, fake lettering, empty title plate, real musician likeness, full background scene, short, realistic, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Fashion Illustration acts as a transferable illustration router: start from Runway sketch, Fashion Illustration poster hierarchy, symbolic compression, print surface, graphic color pressure, and editorial shape control, 9 heads tall, loose gesture, editorial whitespace and editorial graphic system built from poster hierarchy, symbolic compression, typography-as-shape, reproduction limits, and immediate visual argument, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Fashion illustration: a quick runway sketch in graphite and brush ink with loose watercolor splashes on the garment.',
       subject_treatment:
-        'Transform any prompt subject through Loose, gestural, elongated runway sketch gesture, fast contour, fabric sweep, and pose-aware line economy without requiring a model card; preserve the requested subject while converting it into emblem, poster form, editorial metaphor, collage fragment, fashion gesture, or information hierarchy, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and outfit; this preset explicitly elongates figures to about nine heads tall and adds no poster frame, slogan or layout.',
       color_and_tone:
-        'Build color with Watercolor splash, runway accent, gestural pigment; use color as communication pressure: ink plates, propaganda contrast, deco metallic restraint, psychedelic vibration, Bauhaus primaries, vector flatness, or vintage print fade, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Mostly bare white paper, black ink and one or two bold watercolor accents in the garment.',
       lighting_and_shadow:
-        'Handle light through Spontaneous stroke and fashion-line attitude without simulated lighting; make light serve graphic hierarchy through flat poster contrast, airbrush gradients, screenprint layers, symbolic rays, collage mismatch, or painted cover drama, so value structure supports the illustration process and does not overwrite the requested content.',
+        'No simulated light; a few fast strokes and the white of the paper suggest volume.',
       texture_and_material:
-        'Render Paper, fashion paper tooth, watercolor accents, loose graphite underdrawing, and wet-dry pigment blooms around fabric edges; surface detail should reveal screenprint ink, risograph grain, paper stock, cut-paper edges, vector fields, album-cover wear, or editorial print finish, keeping material scale coherent and avoiding noisy filler texture.',
+        'Graphite underdrawing, brush-ink contours, wet watercolor blooms, dry-brush fabric sweeps.',
       camera_and_composition:
-        'Structure the image through Elongated legs, scale rhythm, edge hierarchy, spacing, and composition rules specific to Fashion Illustration; compose through graphic hierarchy, diagonal force, asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion elongation without readable slogan dependency, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Chic, fast, atelier energy, catwalk motion; derive mood from propaganda urgency, luxe modernity, counterculture heat, editorial wit, travel nostalgia, music-poster grit, or cover-story seduction, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Full-length figure mid-stride, lots of editorial white space, garments given the most detail.',
+      atmosphere_and_mood: 'Chic, fast and confident, the energy of an atelier before a show.',
       rendering_and_quality:
-        'Finish with Vogue, stylish, runway fluidity, editorial confidence; finish as deliberate graphic communication with crisp shape logic, controlled print artifacts, and no random poster text or literal advertisement clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Loose gestural sketch with precise fabric rhythm; never realistic proportions or full backgrounds.',
       key_features:
-        'Runway sketch, Fashion Illustration poster hierarchy, symbolic compression, print surface, graphic color pressure, and editorial shape control; 9 heads tall, loose gesture, editorial whitespace; Watercolor splash, runway accent, gestural pigment; Paper, fashion paper tooth, watercolor accents, loose graphite underdrawing, and wet-dry pigment blooms around fabric edges; Elongated legs, scale rhythm, edge hierarchy, spacing, and composition rules specific to Fashion Illustration',
+        'nine-heads-tall elongation; brush ink over graphite; watercolor garment splash; white space; mid-stride pose',
       creative_brief:
-        "Apply Fashion Illustration as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Runway sketch, Fashion Illustration poster hierarchy, symbolic compression, print surface, graphic color pressure, and editorial shape control, 9 heads tall, loose gesture, editorial whitespace, Paper, fashion paper tooth, watercolor accents, loose graphite underdrawing, and wet-dry pigment blooms around fabric edges without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fashion Illustration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -356,28 +340,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Album Cover (Surreal)',
     category: '3. Editorial And Poster',
     negativePrompt:
-      'photo, boring, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy',
+      'invented slogans, fake lettering, empty title plate, real musician likeness, boring, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Album Cover (Surreal) acts as a transferable illustration router: start from Surreal music-cover style with conceptual visual paradoxes, dream-logic symbolism, and iconic square-format image tension, Square-cover composition, symbolic juxtaposition engine, prismatic accent system, impossible-space staging and editorial graphic system built from poster hierarchy, symbolic compression, typography-as-shape, reproduction limits, and immediate visual argument, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Surreal album cover: one impossible central image in a square frame, photographic calm and dream logic combined.',
       subject_treatment:
-        'Transform any prompt subject through Sharp-edged geometric motifs balanced with soft surreal transitions, symbolic object juxtaposition, and clean silhouette punctuation; preserve the requested subject while converting it into emblem, poster form, editorial metaphor, collage fragment, fashion gesture, or information hierarchy, keeping the requested identity, silhouette, pose, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Prismatic spectral accents over controlled dark bases, uncanny complementary pairings, and dream-state tonal discontinuities; use color as communication pressure: ink plates, propaganda contrast, deco metallic restraint, psychedelic vibration, Bauhaus primaries, vector flatness, or vintage print fade, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Keep the prompt subject and action; this preset owns the square cover format with one central surreal metaphor, and it never adds slogans, lettering or empty title plates.',
+      color_and_tone: 'Muted dusk palette with one prismatic or uncanny accent color.',
       lighting_and_shadow:
-        'Handle light through Impossible-source illumination with haloed glows, selective hard-edge highlights, and surreal depth cues; make light serve graphic hierarchy through flat poster contrast, airbrush gradients, screenprint layers, symbolic rays, collage mismatch, or painted cover drama, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Clean natural light with an impossible source or a shadow that falls the wrong way.',
       texture_and_material:
-        'Render Fine analog-photo grain with matte print designed subjects and subtle collage-surface irregularity; surface detail should reveal screenprint ink, risograph grain, paper stock, cut-paper edges, vector fields, album-cover wear, or editorial print finish, keeping material scale coherent and avoiding noisy filler texture.',
+        'Fine analog photo grain, matte print, subtle vinyl-sleeve wear at the edges.',
       camera_and_composition:
-        'Structure the image through Non-Euclidean object relationships and paradox perspective logic sustaining deliberate visual disorientation; compose through graphic hierarchy, diagonal force, asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion elongation without readable slogan dependency, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Mysterious, contemplative, strange, immersive, hypnotic; derive mood from propaganda urgency, luxe modernity, counterculture heat, editorial wit, travel nostalgia, music-poster grit, or cover-story seduction, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Square format, centered subject, wide empty space and a flat horizon.',
+      atmosphere_and_mood: 'Mysterious, contemplative and hypnotic, a dream held perfectly still.',
       rendering_and_quality:
-        'Finish with Concept-forward cover rendering prioritizing symbolic ambiguity, memorable central metaphor, and high-impact square readability; finish as deliberate graphic communication with crisp shape logic, controlled print artifacts, and no random poster text or literal advertisement clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Seamless believable surrealism with one strong metaphor; no band names or track lists.',
       key_features:
-        'Surreal music-cover style with conceptual visual paradoxes, dream-logic symbolism, and iconic square-format image tension; Square-cover composition, symbolic juxtaposition engine, prismatic accent system, impossible-space staging; Prismatic spectral accents over controlled dark bases, uncanny complementary pairings, and dream-state tonal discontinuities; Fine analog-photo grain with matte print designed subjects and subtle collage-surface irregularity; Non-Euclidean object relationships and paradox perspective logic sustaining deliberate visual disorientation',
+        'square format; one central impossible image; muted dusk palette; analog grain; wide empty space',
       creative_brief:
-        "Apply Album Cover (Surreal) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Surreal music-cover style with conceptual visual paradoxes, dream-logic symbolism, and iconic square-format image tension, Square-cover composition, symbolic juxtaposition engine, prismatic accent system, impossible-space staging, Fine analog-photo grain with matte print designed subjects and subtle collage-surface irregularity without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Album Cover (Surreal) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -385,28 +367,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Pulp Magazine Cover',
     category: '3. Editorial And Poster',
     negativePrompt:
-      'modern, clean, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy',
+      'invented slogans, fake lettering, empty title plate, real musician likeness, masthead, blurb text, modern, clean, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Pulp Magazine Cover acts as a transferable illustration router: start from Mid-century pulp-cover illustration style with sensational composition, high-urgency editorial drama, and lurid trade texture-impact intent, Masthead-safe title zone, blurb-driven layout logic, sensational focal center, newsstand-impact color blocking and editorial graphic system built from poster hierarchy, symbolic compression, typography-as-shape, reproduction limits, and immediate visual argument, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Pulp magazine cover painting: lurid oil-painted adventure at its most sensational moment, thick painterly gesture and hard spotlighting.',
       subject_treatment:
-        'Transform any prompt subject through Painterly contour emphasis with bold gesture silhouettes, kinetic focal diagonals, and headline-oriented compositional framing; preserve the requested subject while converting it into emblem, poster form, editorial metaphor, collage fragment, fashion gesture, or information hierarchy, keeping the requested identity, silhouette, pose, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Aggressive warm primaries with acid yellow-red pushes, deep shadow anchors, and high-contrast attention-grab hierarchy; use color as communication pressure: ink plates, propaganda contrast, deco metallic restraint, psychedelic vibration, Bauhaus primaries, vector flatness, or vintage print fade, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Keep the prompt subject and action; this preset owns the vertical pulp cover composition with the peak action moment in the foreground, and it never adds slogans, lettering or empty title plates.',
+      color_and_tone: 'Acid yellow, blood orange and saturated red against near-black shadow.',
       lighting_and_shadow:
-        'Handle light through Hard-edged spotlight contrast with half-lit faces, dramatic shadow wedges, and suspense-driven value staging; make light serve graphic hierarchy through flat poster contrast, airbrush gradients, screenprint layers, symbolic rays, collage mismatch, or painted cover drama, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Hard spotlight, half-lit faces, dramatic shadow wedges and a hot backlight.',
       texture_and_material:
-        'Render Cheap coated-pulp paper feel with visible print wear, ink soak variation, and subtle halftone residue; surface detail should reveal screenprint ink, risograph grain, paper stock, cut-paper edges, vector fields, album-cover wear, or editorial print finish, keeping material scale coherent and avoiding noisy filler texture.',
+        'Loose oil brushwork, cheap coated paper, faint halftone and print wear.',
       camera_and_composition:
-        'Structure the image through Perspective pushed toward action-forward staging with near field exaggeration and compressed narrative depth; compose through graphic hierarchy, diagonal force, asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion elongation without readable slogan dependency, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Tense, sensational, urgent, dramatic, lurid; derive mood from propaganda urgency, luxe modernity, counterculture heat, editorial wit, travel nostalgia, music-poster grit, or cover-story seduction, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Action thrust toward the viewer, near-field exaggeration, peril looming above the hero.',
+      atmosphere_and_mood: 'Sensational, tense and lurid, danger at full volume.',
       rendering_and_quality:
-        'Finish with High-energy cover-art finish prioritizing immediate shelf readability, dramatic hooks, and tabloid-level visual punch; finish as deliberate graphic communication with crisp shape logic, controlled print artifacts, and no random poster text or literal advertisement clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Vigorous painted finish; no masthead, no blurbs and no damsel-in-distress cliché.',
       key_features:
-        'Mid-century pulp-cover illustration style with sensational composition, high-urgency editorial drama, and lurid trade texture-impact intent; Masthead-safe title zone, blurb-driven layout logic, sensational focal center, newsstand-impact color blocking; Aggressive warm primaries with acid yellow-red pushes, deep shadow anchors, and high-contrast attention-grab hierarchy; Cheap coated-pulp paper feel with visible print wear, ink soak variation, and subtle halftone residue; Perspective pushed toward action-forward staging with near field exaggeration and compressed narrative depth',
+        'lurid oil painting; acid yellow and red; hard spotlight; peak-action foreground; looming peril',
       creative_brief:
-        "Apply Pulp Magazine Cover as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Mid-century pulp-cover illustration style with sensational composition, high-urgency editorial drama, and lurid trade texture-impact intent, Masthead-safe title zone, blurb-driven layout logic, sensational focal center, newsstand-impact color blocking, Cheap coated-pulp paper feel with visible print wear, ink soak variation, and subtle halftone residue without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pulp Magazine Cover as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -414,28 +394,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Travel Poster (Vintage)',
     category: '3. Editorial And Poster',
     negativePrompt:
-      'photo, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy',
+      'invented slogans, fake lettering, empty title plate, real musician likeness, blank lower band, photo, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Travel Poster (Vintage) acts as a transferable illustration router: start from Vintage travel-poster style with idealized destination abstraction, optimistic transit-era polish, and graphic promotional clarity, Bottom title-lockup zone, destination-led typographic framing, simplified landmark anchors, travel-poster layout discipline and editorial graphic system built from poster hierarchy, symbolic compression, typography-as-shape, reproduction limits, and immediate visual argument, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Vintage lithographic travel poster: a destination simplified into sunlit flat color blocks with a clean horizon and idealized weather.',
       subject_treatment:
-        'Transform any prompt subject through Simplified geometric landmark silhouettes with clean contour economy, broad shape stacking, and poster-friendly horizon banding; preserve the requested subject while converting it into emblem, poster form, editorial metaphor, collage fragment, fashion gesture, or information hierarchy, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and action; this preset owns the idealized destination composition, filled to the edges without a title lockup or blank band, and it never adds slogans, lettering or empty title plates.',
       color_and_tone:
-        'Build color with Sunlit flat chroma blocks with warm coastal tones, sky-sea separation, and restrained retro print contrast; use color as communication pressure: ink plates, propaganda contrast, deco metallic restraint, psychedelic vibration, Bauhaus primaries, vector flatness, or vintage print fade, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
-      lighting_and_shadow:
-        'Handle light through Even poster illumination with soft midday optimism and minimal shadow complexity to maximize graphic legibility; make light serve graphic hierarchy through flat poster contrast, airbrush gradients, screenprint layers, symbolic rays, collage mismatch, or painted cover drama, so value structure supports the illustration process and does not overwrite the requested content.',
-      texture_and_material:
-        'Render Lithographic print grain with subtle ink spread, paper aging cues, and lightly faded archival surface designed subjects; surface detail should reveal screenprint ink, risograph grain, paper stock, cut-paper edges, vector fields, album-cover wear, or editorial print finish, keeping material scale coherent and avoiding noisy filler texture.',
+        'Warm sunlit flats, turquoise sea, terracotta, lemon and sky blue, restrained and bright.',
+      lighting_and_shadow: 'Even midday light, simple flat shadow shapes, luminous sky gradient.',
+      texture_and_material: 'Lithographic grain, slight ink spread and lightly faded paper.',
       camera_and_composition:
-        'Structure the image through Deliberately simplified depth planes with flattened perspective and iconized environment hierarchy; compose through graphic hierarchy, diagonal force, asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion elongation without readable slogan dependency, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Bright, inviting, relaxed, optimistic, escapist; derive mood from propaganda urgency, luxe modernity, counterculture heat, editorial wit, travel nostalgia, music-poster grit, or cover-story seduction, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'High viewpoint over the destination, simplified depth planes, a framing tree or balcony in the foreground.',
+      atmosphere_and_mood: 'Inviting, relaxed and escapist, the holiday before it happens.',
       rendering_and_quality:
-        'Finish with Clean promotional illustration finish emphasizing readable forms, aspirational mood, and destination-forward composition; finish as deliberate graphic communication with crisp shape logic, controlled print artifacts, and no random poster text or literal advertisement clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Clean simplified shapes filled edge to edge; no empty title band and no letters.',
       key_features:
-        'Vintage travel-poster style with idealized destination abstraction, optimistic transit-era polish, and graphic promotional clarity; Bottom title-lockup zone, destination-led typographic framing, simplified landmark anchors, travel-poster layout discipline; Sunlit flat chroma blocks with warm coastal tones, sky-sea separation, and restrained retro print contrast; Lithographic print grain with subtle ink spread, paper aging cues, and lightly faded archival surface designed subjects; Deliberately simplified depth planes with flattened perspective and iconized environment hierarchy',
+        'sunlit flat color blocks; high viewpoint; foreground framing element; lithographic grain; no title band',
       creative_brief:
-        "Apply Travel Poster (Vintage) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Vintage travel-poster style with idealized destination abstraction, optimistic transit-era polish, and graphic promotional clarity, Bottom title-lockup zone, destination-led typographic framing, simplified landmark anchors, travel-poster layout discipline, Lithographic print grain with subtle ink spread, paper aging cues, and lightly faded archival surface designed subjects without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Travel Poster (Vintage) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -443,28 +420,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Gig Poster (Screenprint)',
     category: '3. Editorial And Poster',
     negativePrompt:
-      'digital gradient, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy',
+      'invented slogans, fake lettering, empty title plate, real musician likeness, concert crowd, band on stage, digital gradient, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Gig Poster (Screenprint) acts as a transferable illustration router: start from Limited-ink screenprint gig-poster style with loud typographic presence, tactile print imperfection, and venue-energy graphic impact, Overprint zone behavior, registration offset cues, distressed border treatment, headline-weight typographic lockups and editorial graphic system built from poster hierarchy, symbolic compression, typography-as-shape, reproduction limits, and immediate visual argument, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Hand-pulled gig poster screenprint: bold illustrated image in three spot inks with halftone shading, overprints and squeegee imperfections.',
       subject_treatment:
-        'Transform any prompt subject through Thick ink contours with hand-pulled edge variance, halftone transitions, and letterform-dominant compositional structure; preserve the requested subject while converting it into emblem, poster form, editorial metaphor, collage fragment, fashion gesture, or information hierarchy, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and action; this preset owns the bold single-image gig print composition, with no lettering band, and it never adds slogans, lettering or empty title plates.',
       color_and_tone:
-        'Build color with Three-spot high-contrast palette with deliberate overprint interactions and poster-impact chroma economy; use color as communication pressure: ink plates, propaganda contrast, deco metallic restraint, psychedelic vibration, Bauhaus primaries, vector flatness, or vintage print fade, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Three spot inks, for example cream, teal and blood red, plus black; overprints make extra colors.',
       lighting_and_shadow:
-        'Handle light through Halftone-value illusion and flat print lighting logic prioritizing tonal punch over realistic illumination; make light serve graphic hierarchy through flat poster contrast, airbrush gradients, screenprint layers, symbolic rays, collage mismatch, or painted cover drama, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Tone made from coarse halftone dots, flat print lighting with punchy contrast.',
       texture_and_material:
-        'Render Fibrous poster stock with squeegee drag traces, ink density fluctuation, and worn-edge distress artifacts; surface detail should reveal screenprint ink, risograph grain, paper stock, cut-paper edges, vector fields, album-cover wear, or editorial print finish, keeping material scale coherent and avoiding noisy filler texture.',
+        'Fibrous poster stock, squeegee drag, ink density variation and slight misregistration.',
       camera_and_composition:
-        'Structure the image through Distressed print deformation with slight misregistration and compositionally intentional grit accents; compose through graphic hierarchy, diagonal force, asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion elongation without readable slogan dependency, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Loud, raw, energetic, gritty, live; derive mood from propaganda urgency, luxe modernity, counterculture heat, editorial wit, travel nostalgia, music-poster grit, or cover-story seduction, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Large central emblem-like subject, strong silhouette, decorative elements radiating from it.',
+      atmosphere_and_mood: 'Loud, raw and energetic, printed the night before the show.',
       rendering_and_quality:
-        'Finish with Handmade print-shop fidelity emphasizing process evidence, tactile ink layering, and immediate event-readability; finish as deliberate graphic communication with crisp shape logic, controlled print artifacts, and no random poster text or literal advertisement clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Visible print-shop process with thick ink contours; no digital gradients and no band names.',
       key_features:
-        'Limited-ink screenprint gig-poster style with loud typographic presence, tactile print imperfection, and venue-energy graphic impact; Overprint zone behavior, registration offset cues, distressed border treatment, headline-weight typographic lockups; Three-spot high-contrast palette with deliberate overprint interactions and poster-impact chroma economy; Fibrous poster stock with squeegee drag traces, ink density fluctuation, and worn-edge distress artifacts; Distressed print deformation with slight misregistration and compositionally intentional grit accents',
+        'three spot inks plus black; coarse halftone; overprint colors; squeegee drag; central emblem subject',
       creative_brief:
-        "Apply Gig Poster (Screenprint) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Limited-ink screenprint gig-poster style with loud typographic presence, tactile print imperfection, and venue-energy graphic impact, Overprint zone behavior, registration offset cues, distressed border treatment, headline-weight typographic lockups, Fibrous poster stock with squeegee drag traces, ink density fluctuation, and worn-edge distress artifacts without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gig Poster (Screenprint) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -472,28 +448,137 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Street Protest Stencil Art',
     category: '3. Editorial And Poster',
     negativePrompt:
-      'freehand, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy',
+      'invented slogans, fake lettering, empty title plate, real musician likeness, poster border, added frame, poster title zone, protest placards, blank signs, freehand, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random poster text, literal ad layout, stock vector blandness, weak graphic hierarchy, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'public-space Protest Stencil Art acts as a transferable illustration router: start from Spray over cutout, protest-stencil print language with cut bridges, hard one-ink silhouettes, overspray halos, and public-message compression, Bridges, cutout connections, stencil registration and editorial graphic system built from poster hierarchy, symbolic compression, typography-as-shape, reproduction limits, and immediate visual argument, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Street stencil art: the subject cut into a one- or two-layer stencil with bridges and sprayed onto a wall.',
       subject_treatment:
-        'Transform any prompt subject through Bridges, bridged cutout reduction, hard silhouette islands, stencil registration breaks, and shape choices that keep the prompt recognizable; preserve the requested subject while converting it into emblem, poster form, editorial metaphor, collage fragment, fashion gesture, or information hierarchy, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action, setting and framing; apply only this print or drawing technique, without adding slogans, borders, frames or a poster layout.',
       color_and_tone:
-        'Build color with Black on Wall, single-color guerrilla, high-arrest contrast; use color as communication pressure: ink plates, propaganda contrast, deco metallic restraint, psychedelic vibration, Bauhaus primaries, vector flatness, or vintage print fade, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Black spray with at most one accent color, usually red, on a gray concrete or brick wall.',
       lighting_and_shadow:
-        'Handle light through Flat, public-space-light ambient, no-studio rawness; make light serve graphic hierarchy through flat poster contrast, airbrush gradients, screenprint layers, symbolic rays, collage mismatch, or painted cover drama, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Light reduced to two or three posterized levels; shadows are solid black islands.',
       texture_and_material:
-        'Render Overspray, poster hierarchy, symbolic compression, print surface, graphic color pressure, and editorial shape control; surface detail should reveal screenprint ink, risograph grain, paper stock, cut-paper edges, vector fields, album-cover wear, or editorial print finish, keeping material scale coherent and avoiding noisy filler texture.',
+        'Overspray halos, drips, bridge gaps in the shapes, rough wall texture showing through.',
       camera_and_composition:
-        'Structure the image through Simplified levels, negative-space compression, poster-impact scale, cutout bridge placement, and simplified value zones; compose through graphic hierarchy, diagonal force, asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion elongation without readable slogan dependency, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Rebellious, simple, urban-dissident energy, unauthorized truth; derive mood from propaganda urgency, luxe modernity, counterculture heat, editorial wit, travel nostalgia, music-poster grit, or cover-story seduction, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Keeps the requested framing and subject, placed on a wall surface without placards, slogans or frames.',
+      atmosphere_and_mood: 'Rebellious, quick and direct, an image left overnight.',
       rendering_and_quality:
-        'Finish with Political, public-space, quick-strike impact, message-first clarity; finish as deliberate graphic communication with crisp shape logic, controlled print artifacts, and no random poster text or literal advertisement clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Hard-edged posterized silhouettes with stencil bridges; never freehand shading or protest signs.',
       key_features:
-        'Spray over cutout, protest-stencil print language with cut bridges, hard one-ink silhouettes, overspray halos, and public-message compression; Bridges, cutout connections, stencil registration; Black on Wall, single-color guerrilla, high-arrest contrast; Overspray, poster hierarchy, symbolic compression, print surface, graphic color pressure, and editorial shape control; Simplified levels, negative-space compression, poster-impact scale, cutout bridge placement, and simplified value zones',
+        'cut stencil bridges; black spray plus one red; overspray halos and drips; posterized levels; wall texture',
       creative_brief:
-        "Apply public-space Protest Stencil Art as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Spray over cutout, protest-stencil print language with cut bridges, hard one-ink silhouettes, overspray halos, and public-message compression, Bridges, cutout connections, stencil registration, Overspray, poster hierarchy, symbolic compression, print surface, graphic color pressure, and editorial shape control without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Street Protest Stencil Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP04-113',
+    name: 'Painterly Metaphor Poster',
+    displayName: 'Painterly Metaphor Poster',
+    styleAnchors: ['Painterly Metaphor Poster', 'painted conceptual poster', 'single visual pun'],
+    category: '3. Editorial And Poster',
+    domain: 'painted conceptual poster',
+    negativePrompt:
+      'invented slogans, fake lettering, empty title plate, real musician likeness, photographic collage, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Painterly metaphor poster: one surreal visual pun painted with loose gouache and brush, the idea carried entirely by the image.',
+      subject_treatment:
+        'Keep the prompt subject and action; this preset owns the single central visual-metaphor composition on a flat painted ground, and it never adds slogans, lettering or empty title plates.',
+      color_and_tone:
+        'Two or three dominant muted colors on a flat painted ground, one saturated accent for the twist.',
+      lighting_and_shadow:
+        'Simple soft side light and flat shadow; drama comes from the idea, not the light.',
+      texture_and_material:
+        'Visible brush strokes, dry scumbles, paper or canvas texture, imperfect hand-cut edges.',
+      camera_and_composition:
+        'One central object isolated on a flat ground, large and frontal, with generous margins.',
+      atmosphere_and_mood: 'Witty, melancholy and thoughtful, a quiet shock.',
+      rendering_and_quality:
+        'Loose expressive painting with a clear single metaphor; no collage and no lettering.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Painterly Metaphor Poster as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'single visual pun; loose gouache brushwork; flat painted ground; one saturated accent; central frontal object',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP04-114',
+    name: 'Op-Ed Conceptual Spot Illustration',
+    displayName: 'Op-Ed Conceptual Spot Illustration',
+    styleAnchors: [
+      'Op-Ed Conceptual Spot Illustration',
+      'editorial newspaper illustration',
+      'conceptual metaphor staging',
+    ],
+    category: '3. Editorial And Poster',
+    domain: 'editorial newspaper illustration',
+    negativePrompt:
+      'invented slogans, fake lettering, empty title plate, real musician likeness, poster border, added frame, poster title zone, headline, speech bubbles, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Newspaper op-ed spot illustration: a small conceptual scene of tiny figures and oversized symbols, drawn in flat shapes with fine grain.',
+      subject_treatment:
+        'Keep the prompt subject, action, setting and framing; apply only this print or drawing technique, without adding slogans, borders, frames or a poster layout.',
+      color_and_tone:
+        'Limited palette of three or four colors, typically navy, coral, cream and mustard, with dry grain texture.',
+      lighting_and_shadow:
+        'Flat shapes with a single cast-shadow shape per object at a consistent angle.',
+      texture_and_material:
+        'Dry digital grain and pencil-like speckle inside flat shapes, crisp silhouette edges.',
+      camera_and_composition:
+        'Keeps the requested subject but stages it as a metaphor with dramatic scale contrast, tiny people and huge objects.',
+      atmosphere_and_mood: 'Thoughtful, wry and a little anxious, an idea about the times.',
+      rendering_and_quality:
+        'Economical shape design with textured flats; no headlines, no borders and no speech bubbles.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Op-Ed Conceptual Spot Illustration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'conceptual metaphor staging; tiny figures and huge symbols; three to four color palette; dry grain texture; single cast shadows',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP04-115',
+    name: 'Swiss Grid Photo Poster',
+    displayName: 'Swiss Grid Photo Poster',
+    styleAnchors: [
+      'Swiss Grid Photo Poster',
+      'modernist photographic poster',
+      'extreme black-and-white photo crop',
+    ],
+    category: '3. Editorial And Poster',
+    domain: 'modernist photographic poster',
+    negativePrompt:
+      'invented slogans, fake lettering, empty title plate, real musician likeness, typography columns, decorative ornament, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Swiss modernist photo poster: a tightly cropped black-and-white photograph placed on a strict grid with one or two flat color geometric shapes.',
+      subject_treatment:
+        'Keep the prompt subject and action; this preset owns the grid composition of a bold photo crop and flat geometric shapes, with no typography, and it never adds slogans, lettering or empty title plates.',
+      color_and_tone:
+        'High-contrast black-and-white photography with one flat signal red or blue shape, lots of white.',
+      lighting_and_shadow:
+        'Hard studio or sunlight in the photograph, deep blacks, crisp shadow shapes that echo the grid.',
+      texture_and_material:
+        'Fine gravure grain in the photo, flat offset ink in the shapes, smooth white stock.',
+      camera_and_composition:
+        'Extreme crop, off-center subject aligned to grid columns, strong diagonals and bleed off the edge.',
+      atmosphere_and_mood: 'Objective, precise and dynamic, calm energy held in tension.',
+      rendering_and_quality:
+        'Rigorous alignment and clean hierarchy; no text blocks, no ornament and no gradients.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Swiss Grid Photo Poster as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'extreme black-and-white photo crop; strict grid; one flat red or blue shape; white space; bleed off the edge',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];
