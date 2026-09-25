@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-151
+packId: pack_15
+name: Laserpunk
+styleAnchors:
+  - Laserpunk
+  - laser light culture punk
+  - visible beams
+displayName: Laserpunk
+category: 2. Neon, Net & Signal Punks
+domain: laser light culture punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - neon-net-and-signal-punks
+  - laserpunk
+  - punk
+  - signal
+visualDna:
+  aesthetic: 'Laserpunk: a culture of visible laser beams, where fences, locks, art and duels are made of light cutting through haze.'
+  subject_treatment: Keep the prompt's subject and setting; cut sharp laser beams through haze around it as barriers, tools or weapons.
+  color_and_tone: Deep haze black with razor-thin red, green and violet beams.
+  lighting_and_shadow: Beams as the only sharp light, glowing where they pass through smoke or dust.
+  texture_and_material: Haze, mirrors, prisms, glossy black surfaces and beam scorch marks.
+  camera_and_composition: Geometric grids of beams crossing the frame with figures threading through.
+  atmosphere_and_mood: Sharp and dangerous, every movement measured against lines of light.
+  rendering_and_quality: High-contrast illustration with crisp beams and soft haze glow.
+  creative_brief: "Laserpunk: a culture of visible laser beams, where fences, locks, art and duels are made of light cutting through haze. Carry it through visible beams, haze, mirrors and prisms, beam grids. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: visible beams; haze; mirrors and prisms; beam grids
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - readable interface text
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: neon-net-and-signal-punks
+  categoryName: 2. Neon, Net & Signal Punks
+  tags:
+    - curation-v2
+    - neon-net-and-signal-punks
+    - laserpunk
+    - punk
+    - signal
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: laser light culture punk

@@ -63,4 +63,590 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP15-140',
+    name: 'Holopunk',
+    displayName: 'Holopunk',
+    styleAnchors: ['Holopunk', 'hologram street punk', 'translucent holograms'],
+    category: '2. Neon, Net & Signal Punks',
+    domain: 'hologram street punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Holopunk: a street culture of cheap holograms, where ads, pets, disguises and ghosts are projected light flickering over grimy reality.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; overlay or replace parts of it with translucent projected light that glitches at the edges.",
+      color_and_tone:
+        'Grimy concrete greys under translucent cyan, violet and pink projected light.',
+      lighting_and_shadow:
+        'Projected light that casts no shadows, flickering scanlines and projector beams through haze.',
+      texture_and_material:
+        'Semi-transparent holograms with scanlines and dropouts over wet concrete and rust.',
+      camera_and_composition:
+        'Street-level frames where the hologram and the real object overlap awkwardly.',
+      atmosphere_and_mood:
+        'Dazzling and fake, a city where you can never be sure what is really there.',
+      rendering_and_quality:
+        'Crisp illustration with convincing translucent glow and projector artifacts.',
+      creative_brief:
+        "Holopunk: a street culture of cheap holograms, where ads, pets, disguises and ghosts are projected light flickering over grimy reality. Carry it through translucent holograms, scanline flicker, projector beams, grimy reality. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'translucent holograms; scanline flicker; projector beams; grimy reality',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-141',
+    name: 'Dronepunk',
+    displayName: 'Dronepunk',
+    styleAnchors: ['Dronepunk', 'drone swarm punk', 'drone swarms'],
+    category: '2. Neon, Net & Signal Punks',
+    domain: 'drone swarm punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Dronepunk: skies thick with delivery, police and hobby drones, swarms forming shapes, and people living under a constant buzz.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; fill the air around it with drones of many sizes, some forming swarms or shapes.",
+      color_and_tone:
+        'Hazy sky grey and dusk orange with tiny blinking red, green and white drone lights.',
+      lighting_and_shadow:
+        'Drone spotlights pinning subjects from above, blinking navigation lights in the dusk.',
+      texture_and_material:
+        'Carbon rotor arms, plastic shells, tethered packages and strung-up drone nets.',
+      camera_and_composition:
+        'Low angles looking up into swarms, or top-down views from a drone above.',
+      atmosphere_and_mood:
+        'Buzzing and watched, freedom and surveillance sharing the same crowded sky.',
+      rendering_and_quality:
+        'Detailed illustration with many small readable drones and crisp lights.',
+      creative_brief:
+        "Dronepunk: skies thick with delivery, police and hobby drones, swarms forming shapes, and people living under a constant buzz. Carry it through drone swarms, spotlights from above, blinking nav lights, rotor haze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'drone swarms; spotlights from above; blinking nav lights; rotor haze',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-142',
+    name: 'Fiberpunk',
+    displayName: 'Fiberpunk',
+    styleAnchors: ['Fiberpunk', 'optical fiber light punk', 'glowing fibers'],
+    category: '2. Neon, Net & Signal Punks',
+    domain: 'optical fiber light punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Fiberpunk: a city threaded with glowing optical fibers, where data travels as visible light through cables, clothing and even hair.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; weave thin glowing fibers through it so light pulses along cables, fabric or strands.",
+      color_and_tone:
+        'Deep night navy and black with thread-thin cyan, magenta and gold light lines.',
+      lighting_and_shadow:
+        'Light emitted only from fiber tips and strands, faint glows on nearby faces.',
+      texture_and_material:
+        'Bundles of glass fiber, woven light fabrics, braided cables and dark matte surfaces.',
+      camera_and_composition:
+        'Close views of glowing strands and wide views of cities laced with light threads.',
+      atmosphere_and_mood:
+        'Delicate and electric, information made into something you could almost touch.',
+      rendering_and_quality: 'Luminous illustration with fine thread-like light and deep darks.',
+      creative_brief:
+        "Fiberpunk: a city threaded with glowing optical fibers, where data travels as visible light through cables, clothing and even hair. Carry it through glowing fibers, light pulses, woven light fabric, dark city. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'glowing fibers; light pulses; woven light fabric; dark city',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-143',
+    name: 'Arcadepunk',
+    displayName: 'Arcadepunk',
+    styleAnchors: ['Arcadepunk', 'arcade culture punk', 'cabinet rows'],
+    category: '2. Neon, Net & Signal Punks',
+    domain: 'arcade culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Arcadepunk: a culture built inside neon arcades, where tokens are currency, high scores are honor and cabinets glow like shrines.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; surround it with arcade cabinets, tokens, joysticks and screen glow.",
+      color_and_tone:
+        'Carpet purple, cabinet black and saturated screen colors with neon pink trim.',
+      lighting_and_shadow:
+        'Screen glow lighting faces from below and neon tubes along the ceiling.',
+      texture_and_material:
+        'Worn joysticks, scratched plexiglass, patterned carpet and metal tokens.',
+      camera_and_composition:
+        'Rows of cabinets receding into glow, players framed by screen light.',
+      atmosphere_and_mood:
+        'Obsessive and joyful, rivalries and legends measured in coins and points.',
+      rendering_and_quality: 'Vivid illustration with glowing screens and tactile worn details.',
+      creative_brief:
+        "Arcadepunk: a culture built inside neon arcades, where tokens are currency, high scores are honor and cabinets glow like shrines. Carry it through cabinet rows, screen glow, tokens, neon trim. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'cabinet rows; screen glow; tokens; neon trim',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-144',
+    name: 'Pagerpunk',
+    displayName: 'Pagerpunk',
+    styleAnchors: ['Pagerpunk', '90s telecom punk', 'pagers'],
+    category: '2. Neon, Net & Signal Punks',
+    domain: '90s telecom punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pagerpunk: a late-90s telecom underground of beepers, phone booths, flip phones and payphone codes whispered across the city.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; place it among pagers, payphones, cords and blinking displays without readable text.",
+      color_and_tone:
+        'Translucent teal and purple plastics, payphone silver and sodium streetlight orange.',
+      lighting_and_shadow:
+        'Streetlights, backlit green pager screens and phone booth glow in the night.',
+      texture_and_material:
+        'Translucent plastic shells, coiled phone cords, scratched booth glass and belt clips.',
+      camera_and_composition:
+        'Night streets with phone booths as islands of light and close-ups of blinking devices.',
+      atmosphere_and_mood:
+        'Nostalgic and conspiratorial, secret messages beeping in pockets across the city.',
+      rendering_and_quality:
+        'Grainy late-90s illustration with glowing small screens and plastic sheen.',
+      creative_brief:
+        "Pagerpunk: a late-90s telecom underground of beepers, phone booths, flip phones and payphone codes whispered across the city. Carry it through pagers, payphone booths, coiled cords, green backlit screens. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'pagers; payphone booths; coiled cords; green backlit screens',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-145',
+    name: 'Satpunk',
+    displayName: 'Satpunk',
+    styleAnchors: ['Satpunk', 'satellite age punk', 'rooftop dish forests'],
+    category: '2. Neon, Net & Signal Punks',
+    domain: 'satellite age punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Satpunk: a world obsessed with satellites, of rooftop dishes, orbital junk, uplink shrines and people tracking lights across the sky.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; point dishes and antennas toward the sky and show satellites or orbital debris overhead.",
+      color_and_tone:
+        'Night sky indigo with white satellite streaks, dish silver and warm window lights.',
+      lighting_and_shadow: 'Starlight, satellite glints and warm light from rooftop shacks.',
+      texture_and_material:
+        'Weathered satellite dishes, cable bundles, solar panels and scrap antenna forests.',
+      camera_and_composition:
+        'Rooftops full of dishes pointing up, with long-exposure satellite trails in the sky.',
+      atmosphere_and_mood:
+        'Yearning and connected, people listening to the sky for voices from orbit.',
+      rendering_and_quality:
+        'Detailed night illustration with fine satellite trails and dish textures.',
+      creative_brief:
+        "Satpunk: a world obsessed with satellites, of rooftop dishes, orbital junk, uplink shrines and people tracking lights across the sky. Carry it through rooftop dish forests, satellite trails, orbital debris, uplink shacks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'rooftop dish forests; satellite trails; orbital debris; uplink shacks',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-146',
+    name: 'Wirepunk',
+    displayName: 'Wirepunk',
+    styleAnchors: ['Wirepunk', 'tangled cable city punk', 'cable canopies'],
+    category: '2. Neon, Net & Signal Punks',
+    domain: 'tangled cable city punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Wirepunk: dense cities where every surface is buried under tangled cables, junction boxes and illegal taps, wires as the true architecture.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; bury the surroundings in tangled cables, taped splices and hanging wire bundles.",
+      color_and_tone:
+        'Black and grey cable masses with colored insulation accents and sodium orange light.',
+      lighting_and_shadow: 'Streetlamps filtering through wire canopies, sparks from bad splices.',
+      texture_and_material:
+        'Rubber insulation, electrical tape, junction boxes, rusted poles and dripping water.',
+      camera_and_composition: 'Upward views into cable canopies and narrow alleys roofed by wires.',
+      atmosphere_and_mood: 'Chaotic and alive, a city held together by improvised connections.',
+      rendering_and_quality:
+        'Dense line illustration with readable cable structure and spark accents.',
+      creative_brief:
+        "Wirepunk: dense cities where every surface is buried under tangled cables, junction boxes and illegal taps, wires as the true architecture. Carry it through cable canopies, tape splices, junction boxes, sparks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'cable canopies; tape splices; junction boxes; sparks',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-147',
+    name: 'Neurapunk',
+    displayName: 'Neurapunk',
+    styleAnchors: ['Neurapunk', 'neural implant punk', 'neural ports'],
+    category: '2. Neon, Net & Signal Punks',
+    domain: 'neural implant punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Neurapunk: a culture of neural implants, shared dreams and memory markets, where glowing ports and cable crowns connect minds.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; add neural ports, cable crowns or glowing thought-lines connecting heads and machines.",
+      color_and_tone: 'Clinical white and slate with glowing violet and teal thought-lines.',
+      lighting_and_shadow:
+        'Soft medical light plus glowing implant ports and floating memory projections.',
+      texture_and_material:
+        'Smooth implant plates, braided neural cables, clinic fabrics and glass vials.',
+      camera_and_composition:
+        'Close portraits with ports visible and wide scenes of linked sleepers.',
+      atmosphere_and_mood:
+        'Intimate and unsettling, minds opened like doors that anyone could walk through.',
+      rendering_and_quality:
+        'Clean clinical illustration with soft glows and delicate cable detail.',
+      creative_brief:
+        "Neurapunk: a culture of neural implants, shared dreams and memory markets, where glowing ports and cable crowns connect minds. Carry it through neural ports, cable crowns, memory projections, linked sleepers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'neural ports; cable crowns; memory projections; linked sleepers',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-148',
+    name: 'Surveillancepunk',
+    displayName: 'Surveillancepunk',
+    styleAnchors: ['Surveillancepunk', 'watched city punk', 'dome cameras'],
+    category: '2. Neon, Net & Signal Punks',
+    domain: 'watched city punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Surveillancepunk: a city of cameras on every corner, scanning lasers, facial-recognition halos and people inventing ways to hide in plain sight.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; place cameras, scan beams and tracking halos around it, and give people small tricks for hiding.",
+      color_and_tone:
+        'Cold grey concrete, camera-lens black and red tracking lights with pale green scan lines.',
+      lighting_and_shadow:
+        'Harsh security floodlights, red camera LEDs and thin laser scan lines across faces.',
+      texture_and_material:
+        'Dome cameras, lens glass, reflective anti-scan fabrics, face paint and concrete.',
+      camera_and_composition:
+        'Fish-eye security-camera angles and street views crowded with lenses.',
+      atmosphere_and_mood:
+        'Paranoid and defiant, a constant game of hide and seek with the whole city.',
+      rendering_and_quality:
+        'Crisp illustration with sharp lens reflections and clean scan-line effects.',
+      creative_brief:
+        "Surveillancepunk: a city of cameras on every corner, scanning lasers, facial-recognition halos and people inventing ways to hide in plain sight. Carry it through dome cameras, scan lines, tracking halos, camouflage makeup. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'dome cameras; scan lines; tracking halos; camouflage makeup',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-149',
+    name: 'Serverpunk',
+    displayName: 'Serverpunk',
+    styleAnchors: ['Serverpunk', 'data center punk', 'rack canyons'],
+    category: '2. Neon, Net & Signal Punks',
+    domain: 'data center punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Serverpunk: people living inside colossal data centers, among humming rack canyons, cooling fog, cable rivers and blinking status lights.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; place it among server racks, cable trays and cooling fog, with blinking lights as the environment.",
+      color_and_tone:
+        'Cold steel grey and deep blue with thousands of tiny green, amber and blue status lights.',
+      lighting_and_shadow:
+        'Blinking rack lights in darkness, cold aisle blue and warm aisle amber.',
+      texture_and_material:
+        'Perforated steel racks, cable trays, raised floor tiles and condensation fog.',
+      camera_and_composition:
+        'Endless aisle perspectives and tall vertical canyons of racks rising into darkness.',
+      atmosphere_and_mood:
+        'Humming and cold, a hidden world that never sleeps while everyone else does.',
+      rendering_and_quality:
+        'Precise illustration with deep perspective and countless small lights.',
+      creative_brief:
+        "Serverpunk: people living inside colossal data centers, among humming rack canyons, cooling fog, cable rivers and blinking status lights. Carry it through rack canyons, status lights, cooling fog, cable rivers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'rack canyons; status lights; cooling fog; cable rivers',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-150',
+    name: 'Screenpunk',
+    displayName: 'Screenpunk',
+    styleAnchors: ['Screenpunk', 'giant screen city punk', 'building-sized screens'],
+    category: '2. Neon, Net & Signal Punks',
+    domain: 'giant screen city punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Screenpunk: a city of giant screens where building facades are displays, faces loom across towers and people live in the glow.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; surround it with huge glowing screens and let their color spill over everything.",
+      color_and_tone:
+        'Saturated screen colors spilling over dark streets, faces tinted by whatever the screens show.',
+      lighting_and_shadow:
+        'Screen light as the dominant source, shifting colors on wet surfaces and faces.',
+      texture_and_material:
+        'Visible pixel grids up close, glass towers, wet asphalt and umbrellas.',
+      camera_and_composition: 'Tiny people below colossal screen faces and pixel close-ups.',
+      atmosphere_and_mood: 'Overwhelming and mesmerizing, a city that is always watching you back.',
+      rendering_and_quality: 'Vivid illustration with glowing screens and pixel grid detail.',
+      creative_brief:
+        "Screenpunk: a city of giant screens where building facades are displays, faces loom across towers and people live in the glow. Carry it through building-sized screens, spilled screen color, pixel grids, tiny people. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'building-sized screens; spilled screen color; pixel grids; tiny people',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-151',
+    name: 'Laserpunk',
+    displayName: 'Laserpunk',
+    styleAnchors: ['Laserpunk', 'laser light culture punk', 'visible beams'],
+    category: '2. Neon, Net & Signal Punks',
+    domain: 'laser light culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Laserpunk: a culture of visible laser beams, where fences, locks, art and duels are made of light cutting through haze.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; cut sharp laser beams through haze around it as barriers, tools or weapons.",
+      color_and_tone: 'Deep haze black with razor-thin red, green and violet beams.',
+      lighting_and_shadow:
+        'Beams as the only sharp light, glowing where they pass through smoke or dust.',
+      texture_and_material: 'Haze, mirrors, prisms, glossy black surfaces and beam scorch marks.',
+      camera_and_composition:
+        'Geometric grids of beams crossing the frame with figures threading through.',
+      atmosphere_and_mood: 'Sharp and dangerous, every movement measured against lines of light.',
+      rendering_and_quality: 'High-contrast illustration with crisp beams and soft haze glow.',
+      creative_brief:
+        "Laserpunk: a culture of visible laser beams, where fences, locks, art and duels are made of light cutting through haze. Carry it through visible beams, haze, mirrors and prisms, beam grids. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'visible beams; haze; mirrors and prisms; beam grids',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-152',
+    name: 'Capsulepunk',
+    displayName: 'Capsulepunk',
+    styleAnchors: ['Capsulepunk', 'micro-dwelling punk', 'stacked pods'],
+    category: '2. Neon, Net & Signal Punks',
+    domain: 'micro-dwelling punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Capsulepunk: people living in stacked capsule pods, micro-apartments and sleeping walls, making whole lives inside tiny glowing boxes.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; compress it into stacked pods and tiny rooms, with personal clutter filling every inch.",
+      color_and_tone:
+        'Plastic white and pale grey pods with warm personal lights and colorful clutter.',
+      lighting_and_shadow:
+        'Rows of small pod lights, each a different color, in a dark corridor wall.',
+      texture_and_material:
+        'Molded plastic pods, curtains, ladders, sticky notes and tiny appliances.',
+      camera_and_composition: 'Grid walls of pods seen head-on and cramped interiors from inside.',
+      atmosphere_and_mood: 'Cramped and tender, big lives squeezed into small glowing boxes.',
+      rendering_and_quality: 'Detailed illustration with a grid of individual lit pods.',
+      creative_brief:
+        "Capsulepunk: people living in stacked capsule pods, micro-apartments and sleeping walls, making whole lives inside tiny glowing boxes. Carry it through stacked pods, tiny lit interiors, ladders, personal clutter. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'stacked pods; tiny lit interiors; ladders; personal clutter',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-153',
+    name: 'Hackerspacepunk',
+    displayName: 'Hackerspacepunk',
+    styleAnchors: ['Hackerspacepunk', 'maker collective punk', 'soldering glow'],
+    category: '2. Neon, Net & Signal Punks',
+    domain: 'maker collective punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hackerspacepunk: cluttered maker collectives where soldering irons, 3D printers, salvaged robots and all-night projects fill warehouse workshops.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; surround it with half-built projects, tools, circuit boards and people making things.",
+      color_and_tone:
+        'Warm workshop amber with green circuit boards, colored wires and cool monitor glow.',
+      lighting_and_shadow: 'Clamp lamps, monitor glow and soldering sparks in a dim warehouse.',
+      texture_and_material:
+        'Circuit boards, spools of filament, pegboards of tools, duct tape and salvage.',
+      camera_and_composition: 'Busy workshop views with many projects in different stages.',
+      atmosphere_and_mood:
+        'Chaotic and hopeful, a community building the future out of junk at 3 a.m.',
+      rendering_and_quality:
+        'Dense detailed illustration where every tool and half-built project stays readable.',
+      creative_brief:
+        "Hackerspacepunk: cluttered maker collectives where soldering irons, 3D printers, salvaged robots and all-night projects fill warehouse workshops. Carry it through soldering glow, half-built robots, tool pegboards, salvage. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'soldering glow; half-built robots; tool pegboards; salvage',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-154',
+    name: 'Overlaypunk',
+    displayName: 'Overlaypunk',
+    styleAnchors: ['Overlaypunk', 'augmented reality punk', 'floating overlays'],
+    category: '2. Neon, Net & Signal Punks',
+    domain: 'augmented reality punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Overlaypunk: a world seen through augmented reality, where floating icons, virtual creatures and painted-on skins cover a shabby real city.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; layer floating wordless overlays, virtual creatures and bright skins over the real scene.",
+      color_and_tone:
+        'Dull real-world greys and browns under bright candy-colored virtual overlays.',
+      lighting_and_shadow:
+        'Real daylight or streetlight, with overlays glowing flatly without real shadows.',
+      texture_and_material: 'Flat glowing virtual shapes floating over worn real surfaces.',
+      camera_and_composition: 'Split views where overlays and reality misalign at the edges.',
+      atmosphere_and_mood: 'Playful and hollow, a beautiful illusion painted over a tired world.',
+      rendering_and_quality:
+        'Clean illustration contrasting flat virtual layers with detailed reality.',
+      creative_brief:
+        "Overlaypunk: a world seen through augmented reality, where floating icons, virtual creatures and painted-on skins cover a shabby real city. Carry it through floating overlays, virtual creatures, misaligned edges, dull reality beneath. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'floating overlays; virtual creatures; misaligned edges; dull reality beneath',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-155',
+    name: 'Maglevpunk',
+    displayName: 'Maglevpunk',
+    styleAnchors: ['Maglevpunk', 'magnetic transit punk', 'floating trains'],
+    category: '2. Neon, Net & Signal Punks',
+    domain: 'magnetic transit punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Maglevpunk: a city stitched together by floating magnetic trains, silent rails through buildings and sky-high stations.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; run silent floating trains and glowing rails through or past it.",
+      color_and_tone: 'Sleek white and silver with glowing blue rail lines against dusk skies.',
+      lighting_and_shadow:
+        'Glowing rail strips, streaking train lights and reflective station glass.',
+      texture_and_material:
+        'Smooth composite train shells, magnetic rails, glass stations and concrete pylons.',
+      camera_and_composition:
+        'Sweeping curves of elevated rails and trains frozen mid-glide through the city.',
+      atmosphere_and_mood: 'Silent and swift, a city that moves without a sound.',
+      rendering_and_quality: 'Sleek illustration with smooth curves and luminous rail lines.',
+      creative_brief:
+        "Maglevpunk: a city stitched together by floating magnetic trains, silent rails through buildings and sky-high stations. Carry it through floating trains, glowing rails, sky stations, silent speed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'floating trains; glowing rails; sky stations; silent speed',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-156',
+    name: 'Vendingpunk',
+    displayName: 'Vendingpunk',
+    styleAnchors: ['Vendingpunk', 'vending machine culture punk', 'glowing vending rows'],
+    category: '2. Neon, Net & Signal Punks',
+    domain: 'vending machine culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Vendingpunk: a city where glowing vending machines sell everything, from noodles to umbrellas to secrets, and form their own lit landmarks at night.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; line it with glowing vending machines stocked with strange goods behind lit glass.",
+      color_and_tone:
+        'Night navy streets with bright white and pastel machine glow and colorful packaging without text.',
+      lighting_and_shadow:
+        'Machines as glowing boxes of light casting rectangles onto wet pavement.',
+      texture_and_material:
+        'Lit plastic fronts, coin slots, rows of cans and packages, rain on glass.',
+      camera_and_composition: 'Lonely rows of machines at night with one small figure choosing.',
+      atmosphere_and_mood:
+        'Quiet and strange, a lonely city where machines offer comfort at any hour.',
+      rendering_and_quality:
+        'Clean night illustration with luminous machine fronts and wet reflections.',
+      creative_brief:
+        "Vendingpunk: a city where glowing vending machines sell everything, from noodles to umbrellas to secrets, and form their own lit landmarks at night. Carry it through glowing vending rows, strange goods, wet reflections, lonely night. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'glowing vending rows; strange goods; wet reflections; lonely night',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-157',
+    name: 'Neon Benderpunk',
+    displayName: 'Neon Benderpunk',
+    styleAnchors: ['Neon Benderpunk', 'neon tube craft punk', 'hand-bent tubes'],
+    category: '2. Neon, Net & Signal Punks',
+    domain: 'neon tube craft punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Neon benderpunk: the craft culture of neon tube benders, workshops of flame, glass rods and glowing gas where signs are born by hand.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; shape parts of it from hand-bent glowing glass tubes and show the flame work that made them.",
+      color_and_tone:
+        'Dark workshop blacks with ribbon-burner blue flames and glowing neon pink, red and green.',
+      lighting_and_shadow:
+        'Neon tubes and blue torch flames as the only light, colored glows on skin and glass.',
+      texture_and_material:
+        'Glass rods, ribbon burners, electrodes, heat mats and freshly bent tubes.',
+      camera_and_composition:
+        'Close craft views of hands bending glowing tubes, and walls of finished signs.',
+      atmosphere_and_mood:
+        'Warm and meticulous, a dying craft keeping the city lit one tube at a time.',
+      rendering_and_quality:
+        'Glowing illustration with precise glass tube shapes and flame detail.',
+      creative_brief:
+        "Neon benderpunk: the craft culture of neon tube benders, workshops of flame, glass rods and glowing gas where signs are born by hand. Carry it through hand-bent tubes, ribbon burner flame, glowing gas colors, workshop walls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'hand-bent tubes; ribbon burner flame; glowing gas colors; workshop walls',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

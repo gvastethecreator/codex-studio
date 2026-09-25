@@ -35,6 +35,24 @@ categories:
     presetRefs:
       - pack_15/SP15-084.yaml
       - pack_15/SP15-085.yaml
+      - pack_15/SP15-140.yaml
+      - pack_15/SP15-141.yaml
+      - pack_15/SP15-142.yaml
+      - pack_15/SP15-143.yaml
+      - pack_15/SP15-144.yaml
+      - pack_15/SP15-145.yaml
+      - pack_15/SP15-146.yaml
+      - pack_15/SP15-147.yaml
+      - pack_15/SP15-148.yaml
+      - pack_15/SP15-149.yaml
+      - pack_15/SP15-150.yaml
+      - pack_15/SP15-151.yaml
+      - pack_15/SP15-152.yaml
+      - pack_15/SP15-153.yaml
+      - pack_15/SP15-154.yaml
+      - pack_15/SP15-155.yaml
+      - pack_15/SP15-156.yaml
+      - pack_15/SP15-157.yaml
   - id: eco-repair-and-climate-punks
     name: 3. Eco, Repair & Climate Punks
     presetRefs:
@@ -112,6 +130,24 @@ presetRefs:
   - pack_15/SP15-139.yaml
   - pack_15/SP15-084.yaml
   - pack_15/SP15-085.yaml
+  - pack_15/SP15-140.yaml
+  - pack_15/SP15-141.yaml
+  - pack_15/SP15-142.yaml
+  - pack_15/SP15-143.yaml
+  - pack_15/SP15-144.yaml
+  - pack_15/SP15-145.yaml
+  - pack_15/SP15-146.yaml
+  - pack_15/SP15-147.yaml
+  - pack_15/SP15-148.yaml
+  - pack_15/SP15-149.yaml
+  - pack_15/SP15-150.yaml
+  - pack_15/SP15-151.yaml
+  - pack_15/SP15-152.yaml
+  - pack_15/SP15-153.yaml
+  - pack_15/SP15-154.yaml
+  - pack_15/SP15-155.yaml
+  - pack_15/SP15-156.yaml
+  - pack_15/SP15-157.yaml
   - pack_15/SP15-087.yaml
   - pack_15/SP15-088.yaml
   - pack_15/SP15-091.yaml

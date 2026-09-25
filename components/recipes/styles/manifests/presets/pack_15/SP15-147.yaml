@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-147
+packId: pack_15
+name: Neurapunk
+styleAnchors:
+  - Neurapunk
+  - neural implant punk
+  - neural ports
+displayName: Neurapunk
+category: 2. Neon, Net & Signal Punks
+domain: neural implant punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - neon-net-and-signal-punks
+  - neurapunk
+  - punk
+  - signal
+visualDna:
+  aesthetic: 'Neurapunk: a culture of neural implants, shared dreams and memory markets, where glowing ports and cable crowns connect minds.'
+  subject_treatment: Keep the prompt's subject and setting; add neural ports, cable crowns or glowing thought-lines connecting heads and machines.
+  color_and_tone: Clinical white and slate with glowing violet and teal thought-lines.
+  lighting_and_shadow: Soft medical light plus glowing implant ports and floating memory projections.
+  texture_and_material: Smooth implant plates, braided neural cables, clinic fabrics and glass vials.
+  camera_and_composition: Close portraits with ports visible and wide scenes of linked sleepers.
+  atmosphere_and_mood: Intimate and unsettling, minds opened like doors that anyone could walk through.
+  rendering_and_quality: Clean clinical illustration with soft glows and delicate cable detail.
+  creative_brief: "Neurapunk: a culture of neural implants, shared dreams and memory markets, where glowing ports and cable crowns connect minds. Carry it through neural ports, cable crowns, memory projections, linked sleepers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: neural ports; cable crowns; memory projections; linked sleepers
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - readable interface text
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: neon-net-and-signal-punks
+  categoryName: 2. Neon, Net & Signal Punks
+  tags:
+    - curation-v2
+    - neon-net-and-signal-punks
+    - neurapunk
+    - punk
+    - signal
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: neural implant punk

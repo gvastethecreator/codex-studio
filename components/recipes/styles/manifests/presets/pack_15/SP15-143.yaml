@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-143
+packId: pack_15
+name: Arcadepunk
+styleAnchors:
+  - Arcadepunk
+  - arcade culture punk
+  - cabinet rows
+displayName: Arcadepunk
+category: 2. Neon, Net & Signal Punks
+domain: arcade culture punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - neon-net-and-signal-punks
+  - arcadepunk
+  - punk
+  - signal
+visualDna:
+  aesthetic: 'Arcadepunk: a culture built inside neon arcades, where tokens are currency, high scores are honor and cabinets glow like shrines.'
+  subject_treatment: Keep the prompt's subject and setting; surround it with arcade cabinets, tokens, joysticks and screen glow.
+  color_and_tone: Carpet purple, cabinet black and saturated screen colors with neon pink trim.
+  lighting_and_shadow: Screen glow lighting faces from below and neon tubes along the ceiling.
+  texture_and_material: Worn joysticks, scratched plexiglass, patterned carpet and metal tokens.
+  camera_and_composition: Rows of cabinets receding into glow, players framed by screen light.
+  atmosphere_and_mood: Obsessive and joyful, rivalries and legends measured in coins and points.
+  rendering_and_quality: Vivid illustration with glowing screens and tactile worn details.
+  creative_brief: "Arcadepunk: a culture built inside neon arcades, where tokens are currency, high scores are honor and cabinets glow like shrines. Carry it through cabinet rows, screen glow, tokens, neon trim. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: cabinet rows; screen glow; tokens; neon trim
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - readable interface text
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: neon-net-and-signal-punks
+  categoryName: 2. Neon, Net & Signal Punks
+  tags:
+    - curation-v2
+    - neon-net-and-signal-punks
+    - arcadepunk
+    - punk
+    - signal
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: arcade culture punk

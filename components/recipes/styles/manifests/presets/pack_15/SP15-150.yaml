@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-150
+packId: pack_15
+name: Screenpunk
+styleAnchors:
+  - Screenpunk
+  - giant screen city punk
+  - building-sized screens
+displayName: Screenpunk
+category: 2. Neon, Net & Signal Punks
+domain: giant screen city punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - neon-net-and-signal-punks
+  - screenpunk
+  - punk
+  - signal
+visualDna:
+  aesthetic: 'Screenpunk: a city of giant screens where building facades are displays, faces loom across towers and people live in the glow.'
+  subject_treatment: Keep the prompt's subject and setting; surround it with huge glowing screens and let their color spill over everything.
+  color_and_tone: Saturated screen colors spilling over dark streets, faces tinted by whatever the screens show.
+  lighting_and_shadow: Screen light as the dominant source, shifting colors on wet surfaces and faces.
+  texture_and_material: Visible pixel grids up close, glass towers, wet asphalt and umbrellas.
+  camera_and_composition: Tiny people below colossal screen faces and pixel close-ups.
+  atmosphere_and_mood: Overwhelming and mesmerizing, a city that is always watching you back.
+  rendering_and_quality: Vivid illustration with glowing screens and pixel grid detail.
+  creative_brief: "Screenpunk: a city of giant screens where building facades are displays, faces loom across towers and people live in the glow. Carry it through building-sized screens, spilled screen color, pixel grids, tiny people. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: building-sized screens; spilled screen color; pixel grids; tiny people
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - readable interface text
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: neon-net-and-signal-punks
+  categoryName: 2. Neon, Net & Signal Punks
+  tags:
+    - curation-v2
+    - neon-net-and-signal-punks
+    - screenpunk
+    - punk
+    - signal
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: giant screen city punk

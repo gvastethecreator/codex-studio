@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-156
+packId: pack_15
+name: Vendingpunk
+styleAnchors:
+  - Vendingpunk
+  - vending machine culture punk
+  - glowing vending rows
+displayName: Vendingpunk
+category: 2. Neon, Net & Signal Punks
+domain: vending machine culture punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - neon-net-and-signal-punks
+  - vendingpunk
+  - punk
+  - signal
+visualDna:
+  aesthetic: 'Vendingpunk: a city where glowing vending machines sell everything, from noodles to umbrellas to secrets, and form their own lit landmarks at night.'
+  subject_treatment: Keep the prompt's subject and setting; line it with glowing vending machines stocked with strange goods behind lit glass.
+  color_and_tone: Night navy streets with bright white and pastel machine glow and colorful packaging without text.
+  lighting_and_shadow: Machines as glowing boxes of light casting rectangles onto wet pavement.
+  texture_and_material: Lit plastic fronts, coin slots, rows of cans and packages, rain on glass.
+  camera_and_composition: Lonely rows of machines at night with one small figure choosing.
+  atmosphere_and_mood: Quiet and strange, a lonely city where machines offer comfort at any hour.
+  rendering_and_quality: Clean night illustration with luminous machine fronts and wet reflections.
+  creative_brief: "Vendingpunk: a city where glowing vending machines sell everything, from noodles to umbrellas to secrets, and form their own lit landmarks at night. Carry it through glowing vending rows, strange goods, wet reflections, lonely night. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: glowing vending rows; strange goods; wet reflections; lonely night
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - readable interface text
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: neon-net-and-signal-punks
+  categoryName: 2. Neon, Net & Signal Punks
+  tags:
+    - curation-v2
+    - neon-net-and-signal-punks
+    - vendingpunk
+    - punk
+    - signal
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: vending machine culture punk

@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-149
+packId: pack_15
+name: Serverpunk
+styleAnchors:
+  - Serverpunk
+  - data center punk
+  - rack canyons
+displayName: Serverpunk
+category: 2. Neon, Net & Signal Punks
+domain: data center punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - neon-net-and-signal-punks
+  - serverpunk
+  - punk
+  - signal
+visualDna:
+  aesthetic: 'Serverpunk: people living inside colossal data centers, among humming rack canyons, cooling fog, cable rivers and blinking status lights.'
+  subject_treatment: Keep the prompt's subject and setting; place it among server racks, cable trays and cooling fog, with blinking lights as the environment.
+  color_and_tone: Cold steel grey and deep blue with thousands of tiny green, amber and blue status lights.
+  lighting_and_shadow: Blinking rack lights in darkness, cold aisle blue and warm aisle amber.
+  texture_and_material: Perforated steel racks, cable trays, raised floor tiles and condensation fog.
+  camera_and_composition: Endless aisle perspectives and tall vertical canyons of racks rising into darkness.
+  atmosphere_and_mood: Humming and cold, a hidden world that never sleeps while everyone else does.
+  rendering_and_quality: Precise illustration with deep perspective and countless small lights.
+  creative_brief: "Serverpunk: people living inside colossal data centers, among humming rack canyons, cooling fog, cable rivers and blinking status lights. Carry it through rack canyons, status lights, cooling fog, cable rivers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: rack canyons; status lights; cooling fog; cable rivers
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - readable interface text
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: neon-net-and-signal-punks
+  categoryName: 2. Neon, Net & Signal Punks
+  tags:
+    - curation-v2
+    - neon-net-and-signal-punks
+    - serverpunk
+    - punk
+    - signal
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: data center punk
