@@ -27,7 +27,7 @@ visualDna:
   lighting_and_shadow: Hard sun broken by foliage into many small soft-edged spots; the subject moves between light and shade.
   texture_and_material: Leaf shadows patterning skin, fabric and stone; glowing translucent leaves overhead.
   camera_and_composition: Keep requested framing; the dapple pattern must fall across the main subject.
-  atmosphere_and_mood: Peaceful, summery, and dreamlike.
+  atmosphere_and_mood: Peaceful and summery, a slow flicker of warm light and cool shade.
   rendering_and_quality: Natural contrast with bright spots held, not clipped.
   creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dappled Leaf Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
   key_features: leaf-filtered sun spots; green shade; dapple on subject; translucent leaves; summer calm

@@ -18,7 +18,7 @@ visualDna:
   lighting_and_shadow: Key about 45 degrees to the side and above; the shadow side keeps a lit triangle under the eye; minimal fill; dark background.
   texture_and_material: Skin, fabric folds and metal modeled with strong but soft-edged falloff.
   camera_and_composition: Keep requested framing; the lit triangle and the key direction must be visible on any face.
-  atmosphere_and_mood: Contemplative, dignified, and timeless.
+  atmosphere_and_mood: Contemplative and dignified, quiet weight held in one warm pool of light.
   rendering_and_quality: Rich midtone modeling, soft shadow edges, no flat fill.
   key_features: cheek light triangle; 45-degree high key; umber shadows; minimal fill; old-master chiaroscuro
   creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rembrandt Lighting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."

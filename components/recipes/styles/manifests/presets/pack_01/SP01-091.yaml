@@ -27,8 +27,8 @@ visualDna:
   lighting_and_shadow: 'Low source pointing upward: shadows climb above brows and nose, bright chin and nostrils, dark eye sockets.'
   texture_and_material: Skin, teeth, cobwebs and wet surfaces catching upward light.
   camera_and_composition: Keep requested framing; the light must visibly come from below.
-  atmosphere_and_mood: Uncanny, menacing, and theatrical.
-  rendering_and_quality: Clean darkness above, crisp lit planes below.
+  atmosphere_and_mood: Uncanny and menacing, familiar features turned wrong by light from below.
+  rendering_and_quality: Clean darkness above the source and crisp, brightly lit planes on every underside.
   creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Horror Underlight as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
   key_features: light from below; inverted shadows; dark eye sockets; cold or fire tint; menacing
 avoidRules:

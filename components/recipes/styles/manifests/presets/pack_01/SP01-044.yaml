@@ -18,7 +18,7 @@ visualDna:
   lighting_and_shadow: Single projector beam; pattern distorts over contours; the subject casts a shadow into the projection behind.
   texture_and_material: Pattern bends across skin, fabric and objects, revealing their shape.
   camera_and_composition: Keep requested framing; the projection must visibly wrap the subject.
-  atmosphere_and_mood: Dreamy, surreal, and theatrical.
+  atmosphere_and_mood: Dreamlike and theatrical, the projected image and the body merging into one surface.
   rendering_and_quality: Sharp projection detail where in focus, dark clean surroundings.
   key_features: projected pattern wrapping contours; subject shadow in projection; single beam; dark ambient
   creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Projector Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."

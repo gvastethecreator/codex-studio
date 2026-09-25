@@ -18,8 +18,8 @@ visualDna:
   lighting_and_shadow: One or two hard strobes from the side, sharp shadows, no motion blur.
   texture_and_material: Droplets, shards, dust and fibers frozen mid-air with individual detail.
   camera_and_composition: Keep requested framing; show an action at its peak with debris around it.
-  atmosphere_and_mood: Kinetic, explosive, and precise.
-  rendering_and_quality: Ultra-sharp frozen particles against dark background.
+  atmosphere_and_mood: Kinetic and explosive, violent motion held perfectly still for one instant.
+  rendering_and_quality: Ultra-sharp frozen droplets and debris against a clean dark background, with no motion blur.
   key_features: motion frozen mid-air; hard strobe; crisp droplets and debris; dark background; peak action
   creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Strobe Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:

@@ -18,7 +18,7 @@ visualDna:
   lighting_and_shadow: Low, directional sun from behind or the side; long stretched shadows, rim light on hair and edges, gentle flare when the sun is in frame.
   texture_and_material: Dust, pollen, spray or mist catching the light; surfaces turned gold where the beam lands.
   camera_and_composition: Respect the requested framing; place the light source or its beams so the direction reads immediately.
-  atmosphere_and_mood: Nostalgic, warm, and fleeting.
+  atmosphere_and_mood: Nostalgic and warm, with long shadows stretching the moment before it fades.
   rendering_and_quality: Natural photographic exposure protecting highlight rolloff, soft haze, no oversaturated orange cast.
   key_features: sun near horizon; long raking shadows; amber rim light; cool lavender shadows; glowing particles
   creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Golden Hour as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."

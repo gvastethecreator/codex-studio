@@ -18,8 +18,8 @@ visualDna:
   lighting_and_shadow: Key directly in front and above, small butterfly-shaped nose shadow, soft shadow under the chin, optional reflector fill from below.
   texture_and_material: Luminous skin, defined cheekbones, glossy hair and jewelry.
   camera_and_composition: Keep requested framing; the face should be frontal enough to show the symmetrical shadow.
-  atmosphere_and_mood: Glamorous, classic, and poised.
-  rendering_and_quality: Polished beauty rendering with real skin texture.
+  atmosphere_and_mood: Poised and glamorous, symmetrical calm with the face held in clean light.
+  rendering_and_quality: Polished beauty rendering that keeps real skin texture and clean symmetrical shadow edges.
   key_features: high centered key; butterfly nose shadow; sculpted cheekbones; chin shadow; glamorous polish
   creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Butterfly Lighting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:

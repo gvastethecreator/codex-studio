@@ -27,7 +27,7 @@ visualDna:
   lighting_and_shadow: Single overwhelming source from the sky, hard shadows thrown all at once, sharp rim light on wet edges.
   texture_and_material: Rain drops, wet stone, soaked cloth and metal flashing bright.
   camera_and_composition: Keep requested framing; show the bolt or its reflection when the sky is in frame.
-  atmosphere_and_mood: Violent, awe-struck, and ominous.
+  atmosphere_and_mood: Violent and ominous, a frozen instant of shock inside the storm.
   rendering_and_quality: Crisp frozen rain, clean highlights, deep storm darkness.
   creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lightning Flash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
   key_features: blue-white strike light; frozen rain; hard instant shadows; storm darkness; visible bolt

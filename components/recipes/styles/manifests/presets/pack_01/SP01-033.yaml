@@ -18,7 +18,7 @@ visualDna:
   lighting_and_shadow: Point source on the lens axis; hard drop shadow offset behind the subject, specular hotspots on skin, glass and metal, rapid falloff into darkness.
   texture_and_material: Shiny surfaces flare, skin gets oily highlights, dust and rain caught as bright specks.
   camera_and_composition: Keep the requested framing; subject near the camera so the flash falloff and background shadow read.
-  atmosphere_and_mood: Raw, party-like, voyeuristic, or forensic.
+  atmosphere_and_mood: Raw and confrontational, the subject caught exposed against sudden blackness.
   rendering_and_quality: Snapshot realism with crisp edges and deliberately unflattering flash character.
   key_features: on-axis flash; hard drop shadow behind; blown speculars; dark falloff background; snapshot rawness
   creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hard Flash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."

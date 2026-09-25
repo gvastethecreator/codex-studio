@@ -18,7 +18,7 @@ visualDna:
   lighting_and_shadow: Colored key from one side, contrasting colored rim from the other, deep black fill, reflections doubling the light on wet surfaces.
   texture_and_material: Rain, puddles, steam and glossy fabrics reflecting colored light.
   camera_and_composition: Keep requested framing; show at least one source or its colored spill.
-  atmosphere_and_mood: Moody, dangerous, and seductive.
+  atmosphere_and_mood: Moody and dangerous, two hues pulling the face apart in color tension.
   rendering_and_quality: Clean saturated color without muddy mixing; deep blacks preserved.
   key_features: two-color practical light; magenta and teal split; wet reflections; smoke; deep black fill
   creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Noir as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."

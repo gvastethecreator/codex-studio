@@ -18,7 +18,7 @@ visualDna:
   lighting_and_shadow: Strong backlight only; thin halo where light wraps edges; no front fill at all.
   texture_and_material: 'Detail lives in the glowing background: haze, clouds, sparks or dust.'
   camera_and_composition: Keep requested framing; separate the subject outline from other dark shapes against the brightest area.
-  atmosphere_and_mood: Iconic, mysterious, and graphic.
+  atmosphere_and_mood: Iconic and mysterious, meaning carried by outline, gesture and negative space.
   rendering_and_quality: Pure black shape without muddy detail; smooth bright background gradient.
   key_features: light behind subject; black shape; edge halo; bright background exposure; clean outline
   creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Silhouette (Backlit) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."

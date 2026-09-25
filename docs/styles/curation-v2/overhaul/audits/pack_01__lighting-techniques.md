@@ -37,6 +37,8 @@ Audited 2026-09-25 from the contact sheet of current cards (15 primaries + 3 var
 - Before applying, the handoff spec repeated subjects inside the category (three knights, two dancers, tenor and opera singer, three horses, three castles, grave robber and gravedigger, two rowing boats, two monks). 15 briefs were rewritten so no subject repeats: vintner, ropemaker, scarred mercenary, weaver at a loom, war drummer, court harpist, fencer, astronomer, windmill, museum night guard, ballerina, barn owl, herbalist, bell-ringer, dead oak.
 - New presets (pending cards): SP01-090 Dappled Leaf Light, SP01-091 Horror Underlight, SP01-092 Theatrical Spotlight, SP01-093 Moonlight Night, SP01-094 Lightning Flash. Category now 20.
 
+- Follow-up: `atmosphere_and_mood` (all 20) and `rendering_and_quality` (7) were below the DNA audit minimum length; rewritten to express mood through contrast, rhythm and space, and finish through observable edges and exposure. pack_01 DNA audit findings for this category went to zero.
+
 ## Overlap notes
 
 - SP01-094 Lightning Flash vs SP09-052 Electricity/Lightning (pack_09, Elemental And FX): SP09-052 draws electric bolts as an effect; SP01-094 only changes illumination to a strike's blue-white flash. Kept both.

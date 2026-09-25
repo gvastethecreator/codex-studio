@@ -27,8 +27,8 @@ visualDna:
   lighting_and_shadow: Hard high spot with a crisp circular edge on the floor, short dark shadow under the subject, faint beam visible in haze.
   texture_and_material: Stage dust in the beam; costume fabrics and props sharply lit.
   camera_and_composition: Keep requested framing; include the pool or edge of the spot.
-  atmosphere_and_mood: Dramatic, lonely, and performative.
-  rendering_and_quality: Crisp beam edge, deep blacks, clean highlights.
+  atmosphere_and_mood: Lonely and theatrical, a single figure held in a circle of attention.
+  rendering_and_quality: Crisp circular beam edge, deep clean blacks outside it, and controlled highlights inside.
   creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Theatrical Spotlight as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
   key_features: circular follow spot; light pool on floor; dark stage; visible beam in haze
 avoidRules:

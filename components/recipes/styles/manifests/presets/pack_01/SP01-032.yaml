@@ -18,7 +18,7 @@ visualDna:
   lighting_and_shadow: Shadowless, even sky light; practical lamps, windows or fires create the only directional pools.
   texture_and_material: Surfaces reflect the blue sky; wet or glossy materials mirror both sky and warm lights.
   camera_and_composition: Keep the requested framing; include enough sky or reflection to show the blue source.
-  atmosphere_and_mood: Calm, cool, melancholic, and suspended between day and night.
+  atmosphere_and_mood: 'Calm and suspended: cool stillness broken only by small warm pools of light.'
   rendering_and_quality: Clean low-light exposure with smooth sky gradients and little noise.
   key_features: cobalt sky ambient; shadowless soft light; warm practical accents; blue reflections; quiet twilight
   creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blue Hour as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."

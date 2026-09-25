@@ -22,7 +22,8 @@ export const GENERATED_STYLE_PRESETS = [
         'Dust, pollen, spray or mist catching the light; surfaces turned gold where the beam lands.',
       camera_and_composition:
         'Respect the requested framing; place the light source or its beams so the direction reads immediately.',
-      atmosphere_and_mood: 'Nostalgic, warm, and fleeting.',
+      atmosphere_and_mood:
+        'Nostalgic and warm, with long shadows stretching the moment before it fades.',
       rendering_and_quality:
         'Natural photographic exposure protecting highlight rolloff, soft haze, no oversaturated orange cast.',
       key_features:
@@ -50,7 +51,8 @@ export const GENERATED_STYLE_PRESETS = [
         'Surfaces reflect the blue sky; wet or glossy materials mirror both sky and warm lights.',
       camera_and_composition:
         'Keep the requested framing; include enough sky or reflection to show the blue source.',
-      atmosphere_and_mood: 'Calm, cool, melancholic, and suspended between day and night.',
+      atmosphere_and_mood:
+        'Calm and suspended: cool stillness broken only by small warm pools of light.',
       rendering_and_quality: 'Clean low-light exposure with smooth sky gradients and little noise.',
       key_features:
         'cobalt sky ambient; shadowless soft light; warm practical accents; blue reflections; quiet twilight',
@@ -77,7 +79,8 @@ export const GENERATED_STYLE_PRESETS = [
         'Shiny surfaces flare, skin gets oily highlights, dust and rain caught as bright specks.',
       camera_and_composition:
         'Keep the requested framing; subject near the camera so the flash falloff and background shadow read.',
-      atmosphere_and_mood: 'Raw, party-like, voyeuristic, or forensic.',
+      atmosphere_and_mood:
+        'Raw and confrontational, the subject caught exposed against sudden blackness.',
       rendering_and_quality:
         'Snapshot realism with crisp edges and deliberately unflattering flash character.',
       key_features:
@@ -104,7 +107,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material: 'Rain, puddles, steam and glossy fabrics reflecting colored light.',
       camera_and_composition:
         'Keep requested framing; show at least one source or its colored spill.',
-      atmosphere_and_mood: 'Moody, dangerous, and seductive.',
+      atmosphere_and_mood: 'Moody and dangerous, two hues pulling the face apart in color tension.',
       rendering_and_quality: 'Clean saturated color without muddy mixing; deep blacks preserved.',
       key_features:
         'two-color practical light; magenta and teal split; wet reflections; smoke; deep black fill',
@@ -131,7 +134,8 @@ export const GENERATED_STYLE_PRESETS = [
         'Skin, fabric folds and metal modeled with strong but soft-edged falloff.',
       camera_and_composition:
         'Keep requested framing; the lit triangle and the key direction must be visible on any face.',
-      atmosphere_and_mood: 'Contemplative, dignified, and timeless.',
+      atmosphere_and_mood:
+        'Contemplative and dignified, quiet weight held in one warm pool of light.',
       rendering_and_quality: 'Rich midtone modeling, soft shadow edges, no flat fill.',
       key_features:
         'cheek light triangle; 45-degree high key; umber shadows; minimal fill; old-master chiaroscuro',
@@ -156,7 +160,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material: 'Texture exaggerated on the lit half by grazing light.',
       camera_and_composition:
         'Keep requested framing; face or object frontal enough that the half-and-half division is obvious.',
-      atmosphere_and_mood: 'Dual, conflicted, dramatic, and mysterious.',
+      atmosphere_and_mood: 'Divided and tense, a hard center line setting light against darkness.',
       rendering_and_quality: 'Crisp division line with detailed highlights and clean blacks.',
       key_features:
         '90-degree side key; half lit half dark; vertical shadow line; no fill; grazing texture',
@@ -182,7 +186,8 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material: 'Detail lives in the glowing background: haze, clouds, sparks or dust.',
       camera_and_composition:
         'Keep requested framing; separate the subject outline from other dark shapes against the brightest area.',
-      atmosphere_and_mood: 'Iconic, mysterious, and graphic.',
+      atmosphere_and_mood:
+        'Iconic and mysterious, meaning carried by outline, gesture and negative space.',
       rendering_and_quality:
         'Pure black shape without muddy detail; smooth bright background gradient.',
       key_features:
@@ -208,8 +213,10 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material: 'Luminous skin, defined cheekbones, glossy hair and jewelry.',
       camera_and_composition:
         'Keep requested framing; the face should be frontal enough to show the symmetrical shadow.',
-      atmosphere_and_mood: 'Glamorous, classic, and poised.',
-      rendering_and_quality: 'Polished beauty rendering with real skin texture.',
+      atmosphere_and_mood:
+        'Poised and glamorous, symmetrical calm with the face held in clean light.',
+      rendering_and_quality:
+        'Polished beauty rendering that keeps real skin texture and clean symmetrical shadow edges.',
       key_features:
         'high centered key; butterfly nose shadow; sculpted cheekbones; chin shadow; glamorous polish',
       creative_brief:
@@ -234,7 +241,8 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material: 'Wax, glass, skin and fabric glowing warmly; smoke threads visible.',
       camera_and_composition:
         'Keep requested framing; place at least one flame visible or clearly motivating the light.',
-      atmosphere_and_mood: 'Intimate, secretive, hushed, and old-world.',
+      atmosphere_and_mood:
+        'Intimate and hushed, darkness pressing close around a small warm circle.',
       rendering_and_quality: 'Clean low-light exposure with rich blacks, no gray noise.',
       key_features: 'flame-only light; steep falloff; amber glow; velvety black; visible candle',
       creative_brief:
@@ -259,7 +267,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material: 'Dust motes, smoke, spray or mist in the beams.',
       camera_and_composition:
         'Keep requested framing; angle the beams across the frame toward or past the subject.',
-      atmosphere_and_mood: 'Sacred, awe-filled, and quiet.',
+      atmosphere_and_mood: 'Reverent and awed, silent space cut by slow diagonal shafts of light.',
       rendering_and_quality: 'Clean beam edges and smooth haze without banding.',
       key_features:
         'visible light shafts; haze; occluder pattern; dust motes; subject crossed by beams',
@@ -284,8 +292,10 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material: 'Wet surfaces, water, skin and leaves catching speckled glow.',
       camera_and_composition:
         'Keep requested framing; make the glowing organisms the visible light sources.',
-      atmosphere_and_mood: 'Magical, eerie, and natural.',
-      rendering_and_quality: 'Long-exposure-clean darkness with crisp glowing specks.',
+      atmosphere_and_mood:
+        'Eerie and magical, cold living sparks floating in a vast quiet darkness.',
+      rendering_and_quality:
+        'Clean long-exposure darkness without noise, the glowing specks crisp and individually visible.',
       key_features:
         'living light sources; cyan-green glow; dark surroundings; speckled illumination; wet reflections',
       creative_brief:
@@ -309,8 +319,10 @@ export const GENERATED_STYLE_PRESETS = [
         'Droplets, shards, dust and fibers frozen mid-air with individual detail.',
       camera_and_composition:
         'Keep requested framing; show an action at its peak with debris around it.',
-      atmosphere_and_mood: 'Kinetic, explosive, and precise.',
-      rendering_and_quality: 'Ultra-sharp frozen particles against dark background.',
+      atmosphere_and_mood:
+        'Kinetic and explosive, violent motion held perfectly still for one instant.',
+      rendering_and_quality:
+        'Ultra-sharp frozen droplets and debris against a clean dark background, with no motion blur.',
       key_features:
         'motion frozen mid-air; hard strobe; crisp droplets and debris; dark background; peak action',
       creative_brief:
@@ -334,8 +346,10 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material: 'Smooth skin, glossy lips and eyes with clear ring reflections.',
       camera_and_composition:
         'Keep requested framing; face close enough to show the ring catchlight.',
-      atmosphere_and_mood: 'Direct, intimate, and contemporary.',
-      rendering_and_quality: 'Clean even exposure with visible ring catchlights.',
+      atmosphere_and_mood:
+        'Direct and intimate, an even frontal gaze with nothing hidden in shadow.',
+      rendering_and_quality:
+        'Clean, even frontal exposure with round ring catchlights clearly visible in both eyes.',
       key_features: 'ring catchlight; shadowless frontal light; cool LED white; soft halo shadow',
       creative_brief:
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ring Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
@@ -358,7 +372,8 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material: 'Pattern bends across skin, fabric and objects, revealing their shape.',
       camera_and_composition:
         'Keep requested framing; the projection must visibly wrap the subject.',
-      atmosphere_and_mood: 'Dreamy, surreal, and theatrical.',
+      atmosphere_and_mood:
+        'Dreamlike and theatrical, the projected image and the body merging into one surface.',
       rendering_and_quality: 'Sharp projection detail where in focus, dark clean surroundings.',
       key_features:
         'projected pattern wrapping contours; subject shadow in projection; single beam; dark ambient',
@@ -384,8 +399,10 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material: 'Smooth glowing ribbons, sparks from steel wool, ghosted movement.',
       camera_and_composition:
         'Keep requested framing; tripod-steady background with the trails as graphic lines.',
-      atmosphere_and_mood: 'Magical, energetic, and playful.',
-      rendering_and_quality: 'Clean black background, continuous trails without breaks.',
+      atmosphere_and_mood:
+        'Playful and energetic, stillness wrapped in fast, looping ribbons of light.',
+      rendering_and_quality:
+        'Clean black background and continuous, unbroken light trails with smooth glowing edges.',
       key_features:
         'long-exposure light trails; steel-wool sparks; glowing ribbons; dark background; still subject',
       creative_brief:
@@ -413,7 +430,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Leaf shadows patterning skin, fabric and stone; glowing translucent leaves overhead.',
       camera_and_composition:
         'Keep requested framing; the dapple pattern must fall across the main subject.',
-      atmosphere_and_mood: 'Peaceful, summery, and dreamlike.',
+      atmosphere_and_mood: 'Peaceful and summery, a slow flicker of warm light and cool shade.',
       rendering_and_quality: 'Natural contrast with bright spots held, not clipped.',
       creative_brief:
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dappled Leaf Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
@@ -444,8 +461,10 @@ export const GENERATED_STYLE_PRESETS = [
         'Low source pointing upward: shadows climb above brows and nose, bright chin and nostrils, dark eye sockets.',
       texture_and_material: 'Skin, teeth, cobwebs and wet surfaces catching upward light.',
       camera_and_composition: 'Keep requested framing; the light must visibly come from below.',
-      atmosphere_and_mood: 'Uncanny, menacing, and theatrical.',
-      rendering_and_quality: 'Clean darkness above, crisp lit planes below.',
+      atmosphere_and_mood:
+        'Uncanny and menacing, familiar features turned wrong by light from below.',
+      rendering_and_quality:
+        'Clean darkness above the source and crisp, brightly lit planes on every underside.',
       creative_brief:
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Horror Underlight as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
@@ -475,8 +494,9 @@ export const GENERATED_STYLE_PRESETS = [
         'Hard high spot with a crisp circular edge on the floor, short dark shadow under the subject, faint beam visible in haze.',
       texture_and_material: 'Stage dust in the beam; costume fabrics and props sharply lit.',
       camera_and_composition: 'Keep requested framing; include the pool or edge of the spot.',
-      atmosphere_and_mood: 'Dramatic, lonely, and performative.',
-      rendering_and_quality: 'Crisp beam edge, deep blacks, clean highlights.',
+      atmosphere_and_mood: 'Lonely and theatrical, a single figure held in a circle of attention.',
+      rendering_and_quality:
+        'Crisp circular beam edge, deep clean blacks outside it, and controlled highlights inside.',
       creative_brief:
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Theatrical Spotlight as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features: 'circular follow spot; light pool on floor; dark stage; visible beam in haze',
@@ -505,7 +525,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material: 'Frost, dew, water and metal catching silver highlights.',
       camera_and_composition:
         'Keep requested framing; show the moon or its reflection when the sky is visible.',
-      atmosphere_and_mood: 'Silent, cold, mysterious, and romantic.',
+      atmosphere_and_mood: 'Silent and cold, romantic mystery in a wide pale-blue hush.',
       rendering_and_quality: 'Clean low-light exposure without noise or orange cast.',
       creative_brief:
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Moonlight Night as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
@@ -537,7 +557,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material: 'Rain drops, wet stone, soaked cloth and metal flashing bright.',
       camera_and_composition:
         'Keep requested framing; show the bolt or its reflection when the sky is in frame.',
-      atmosphere_and_mood: 'Violent, awe-struck, and ominous.',
+      atmosphere_and_mood: 'Violent and ominous, a frozen instant of shock inside the storm.',
       rendering_and_quality: 'Crisp frozen rain, clean highlights, deep storm darkness.',
       creative_brief:
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lightning Flash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",

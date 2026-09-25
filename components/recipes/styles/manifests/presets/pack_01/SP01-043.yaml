@@ -18,8 +18,8 @@ visualDna:
   lighting_and_shadow: Frontal on-axis soft light, almost no facial shadow, subtle halo shadow on a close background.
   texture_and_material: Smooth skin, glossy lips and eyes with clear ring reflections.
   camera_and_composition: Keep requested framing; face close enough to show the ring catchlight.
-  atmosphere_and_mood: Direct, intimate, and contemporary.
-  rendering_and_quality: Clean even exposure with visible ring catchlights.
+  atmosphere_and_mood: Direct and intimate, an even frontal gaze with nothing hidden in shadow.
+  rendering_and_quality: Clean, even frontal exposure with round ring catchlights clearly visible in both eyes.
   key_features: ring catchlight; shadowless frontal light; cool LED white; soft halo shadow
   creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ring Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
