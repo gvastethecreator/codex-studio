@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP11-140
+packId: pack_11
+name: Gear Train Drawing
+styleAnchors:
+  - Gear Train Drawing
+  - gear train engineering drawing
+  - pitch circles
+displayName: Gear Train Drawing
+category: 7. Diagram And Technical Drawing
+domain: gear train engineering drawing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - diagram-and-technical-drawing
+  - gears
+  - mechanism
+  - diagram
+visualDna:
+  aesthetic: 'Gear train drawing: interlocking gears drawn as pitch circles and tooth outlines, with shafts and rotation arrows.'
+  subject_treatment: "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: drawn as a gear train: pitch circles, tooth profiles, shafts, bearings and curved rotation arrows, the subject shaped by the mechanism."
+  color_and_tone: Black ink with light grey pitch circles, following the conventions of this drawing type.
+  lighting_and_shadow: No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.
+  texture_and_material: Pen and compass lines on smooth drafting paper, with the drafting tools visible in the line quality.
+  camera_and_composition: Front view of meshing gears with a side section.
+  atmosphere_and_mood: Mechanical, precise, clever and calm, from careful, purposeful drafting.
+  rendering_and_quality: Precise technical drafting with consistent line weights and believable conventions.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gear Train Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: pitch circles; tooth profiles; shafts; rotation arrows
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - readable labels or numbers
+  - fake data claims
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_11
+  packName: Miscellaneous & Fun
+  categoryId: diagram-and-technical-drawing
+  categoryName: 7. Diagram And Technical Drawing
+  tags:
+    - miscellaneous-and-fun
+    - diagram-and-technical-drawing
+    - gears
+    - mechanism
+    - diagram
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: gear train engineering drawing

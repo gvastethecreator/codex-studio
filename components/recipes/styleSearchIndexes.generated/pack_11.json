@@ -3,7 +3,7 @@
     {
       "id": "pack_11",
       "name": "Miscellaneous & Fun",
-      "presetCount": 125
+      "presetCount": 144
     }
   ],
   "presets": [
@@ -1653,7 +1653,8 @@
     },
     {
       "id": "SP11-033",
-      "name": "Blueprint",
+      "name": "Faded Workshop Blueprint",
+      "styleAnchors": ["Faded Workshop Blueprint"],
       "ref": "pack_11/SP11-033.yaml",
       "packId": "pack_11",
       "packName": "Miscellaneous & Fun",
@@ -1661,8 +1662,294 @@
       "categoryName": "7. Diagram And Technical Drawing",
       "tags": ["miscellaneous-and-fun", "diagram-and-technical-drawing"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp11-033 blueprint 7. diagram and technical drawing blueprint drawing pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing"
+      "searchableText": "sp11-033 faded workshop blueprint 7. diagram and technical drawing blueprint drawing pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing"
+    },
+    {
+      "id": "SP11-126",
+      "name": "Hachure Relief Map",
+      "styleAnchors": ["Hachure Relief Map", "hachured terrain map", "hachure strokes"],
+      "ref": "pack_11/SP11-126.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "diagram-and-technical-drawing",
+      "categoryName": "7. Diagram And Technical Drawing",
+      "domain": "hachured terrain map",
+      "tags": ["miscellaneous-and-fun", "diagram-and-technical-drawing", "hachured-terrain-map"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-126 hachure relief map hachured terrain map hachure strokes 7. diagram and technical drawing blueprint drawing hachured terrain map pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing hachured-terrain-map"
+    },
+    {
+      "id": "SP11-127",
+      "name": "Naval Lines Plan",
+      "styleAnchors": ["Naval Lines Plan", "ship hull lines drawing", "profile"],
+      "ref": "pack_11/SP11-127.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "diagram-and-technical-drawing",
+      "categoryName": "7. Diagram And Technical Drawing",
+      "domain": "ship hull lines drawing",
+      "tags": ["miscellaneous-and-fun", "diagram-and-technical-drawing", "ship-hull-lines-drawing"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-127 naval lines plan ship hull lines drawing profile 7. diagram and technical drawing blueprint drawing ship hull lines drawing pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing ship-hull-lines-drawing"
+    },
+    {
+      "id": "SP11-128",
+      "name": "Isometric Piping Drawing",
+      "styleAnchors": ["Isometric Piping Drawing", "piping isometric", "isometric grid"],
+      "ref": "pack_11/SP11-128.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "diagram-and-technical-drawing",
+      "categoryName": "7. Diagram And Technical Drawing",
+      "domain": "piping isometric",
+      "tags": ["miscellaneous-and-fun", "diagram-and-technical-drawing", "piping-isometric"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-128 isometric piping drawing piping isometric isometric grid 7. diagram and technical drawing blueprint drawing piping isometric pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing piping-isometric"
+    },
+    {
+      "id": "SP11-129",
+      "name": "Star-Fort Fortification Plan",
+      "styleAnchors": ["Star-Fort Fortification Plan", "bastion fort plan", "bastions"],
+      "ref": "pack_11/SP11-129.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "diagram-and-technical-drawing",
+      "categoryName": "7. Diagram And Technical Drawing",
+      "domain": "bastion fort plan",
+      "tags": ["miscellaneous-and-fun", "diagram-and-technical-drawing", "bastion-fort-plan"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-129 star-fort fortification plan bastion fort plan bastions 7. diagram and technical drawing blueprint drawing bastion fort plan pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing bastion-fort-plan"
+    },
+    {
+      "id": "SP11-130",
+      "name": "Clockwork Escapement Drawing",
+      "styleAnchors": ["Clockwork Escapement Drawing", "horological drawing", "escapement"],
+      "ref": "pack_11/SP11-130.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "diagram-and-technical-drawing",
+      "categoryName": "7. Diagram And Technical Drawing",
+      "domain": "horological drawing",
+      "tags": ["miscellaneous-and-fun", "diagram-and-technical-drawing", "horological-drawing"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-130 clockwork escapement drawing horological drawing escapement 7. diagram and technical drawing blueprint drawing horological drawing pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing horological-drawing"
+    },
+    {
+      "id": "SP11-131",
+      "name": "Renaissance Invention Notebook",
+      "styleAnchors": [
+        "Renaissance Invention Notebook",
+        "inventor notebook page",
+        "sepia sketches"
+      ],
+      "ref": "pack_11/SP11-131.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "diagram-and-technical-drawing",
+      "categoryName": "7. Diagram And Technical Drawing",
+      "domain": "inventor notebook page",
+      "tags": ["miscellaneous-and-fun", "diagram-and-technical-drawing", "inventor-notebook-page"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-131 renaissance invention notebook inventor notebook page sepia sketches 7. diagram and technical drawing blueprint drawing inventor notebook page pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing inventor-notebook-page"
+    },
+    {
+      "id": "SP11-132",
+      "name": "Axonometric Architectural Drawing",
+      "styleAnchors": [
+        "Axonometric Architectural Drawing",
+        "axonometric drawing",
+        "axonometric projection"
+      ],
+      "ref": "pack_11/SP11-132.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "diagram-and-technical-drawing",
+      "categoryName": "7. Diagram And Technical Drawing",
+      "domain": "axonometric drawing",
+      "tags": ["miscellaneous-and-fun", "diagram-and-technical-drawing", "axonometric-drawing"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-132 axonometric architectural drawing axonometric drawing axonometric projection 7. diagram and technical drawing blueprint drawing axonometric drawing pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing axonometric-drawing"
+    },
+    {
+      "id": "SP11-133",
+      "name": "Urban Figure-Ground Plan",
+      "styleAnchors": ["Urban Figure-Ground Plan", "figure-ground map", "black buildings"],
+      "ref": "pack_11/SP11-133.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "diagram-and-technical-drawing",
+      "categoryName": "7. Diagram And Technical Drawing",
+      "domain": "figure-ground map",
+      "tags": ["miscellaneous-and-fun", "diagram-and-technical-drawing", "figure-ground-map"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-133 urban figure-ground plan figure-ground map black buildings 7. diagram and technical drawing blueprint drawing figure-ground map pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing figure-ground-map"
+    },
+    {
+      "id": "SP11-134",
+      "name": "Stage Lighting Plot",
+      "styleAnchors": ["Stage Lighting Plot", "theatre lighting plan", "instrument symbols"],
+      "ref": "pack_11/SP11-134.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "diagram-and-technical-drawing",
+      "categoryName": "7. Diagram And Technical Drawing",
+      "domain": "theatre lighting plan",
+      "tags": ["miscellaneous-and-fun", "diagram-and-technical-drawing", "theatre-lighting-plan"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-134 stage lighting plot theatre lighting plan instrument symbols 7. diagram and technical drawing blueprint drawing theatre lighting plan pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing theatre-lighting-plan"
+    },
+    {
+      "id": "SP11-135",
+      "name": "Origami Crease Pattern",
+      "styleAnchors": [
+        "Origami Crease Pattern",
+        "origami crease diagram",
+        "mountain and valley lines"
+      ],
+      "ref": "pack_11/SP11-135.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "diagram-and-technical-drawing",
+      "categoryName": "7. Diagram And Technical Drawing",
+      "domain": "origami crease diagram",
+      "tags": ["miscellaneous-and-fun", "diagram-and-technical-drawing", "origami-crease-diagram"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-135 origami crease pattern origami crease diagram mountain and valley lines 7. diagram and technical drawing blueprint drawing origami crease diagram pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing origami-crease-diagram"
+    },
+    {
+      "id": "SP11-136",
+      "name": "Knot Tying Diagram",
+      "styleAnchors": ["Knot Tying Diagram", "knot instruction diagram", "step panels"],
+      "ref": "pack_11/SP11-136.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "diagram-and-technical-drawing",
+      "categoryName": "7. Diagram And Technical Drawing",
+      "domain": "knot instruction diagram",
+      "tags": [
+        "miscellaneous-and-fun",
+        "diagram-and-technical-drawing",
+        "knot-instruction-diagram"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-136 knot tying diagram knot instruction diagram step panels 7. diagram and technical drawing blueprint drawing knot instruction diagram pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing knot-instruction-diagram"
+    },
+    {
+      "id": "SP11-137",
+      "name": "Dance Step Diagram",
+      "styleAnchors": ["Dance Step Diagram", "dance footprint diagram", "footprints"],
+      "ref": "pack_11/SP11-137.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "diagram-and-technical-drawing",
+      "categoryName": "7. Diagram And Technical Drawing",
+      "domain": "dance footprint diagram",
+      "tags": ["miscellaneous-and-fun", "diagram-and-technical-drawing", "dance-footprint-diagram"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-137 dance step diagram dance footprint diagram footprints 7. diagram and technical drawing blueprint drawing dance footprint diagram pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing dance-footprint-diagram"
+    },
+    {
+      "id": "SP11-138",
+      "name": "Weaving Draft Grid",
+      "styleAnchors": ["Weaving Draft Grid", "weaving draft", "threading"],
+      "ref": "pack_11/SP11-138.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "diagram-and-technical-drawing",
+      "categoryName": "7. Diagram And Technical Drawing",
+      "domain": "weaving draft",
+      "tags": ["miscellaneous-and-fun", "diagram-and-technical-drawing", "weaving-draft"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-138 weaving draft grid weaving draft threading 7. diagram and technical drawing blueprint drawing weaving draft pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing weaving-draft"
+    },
+    {
+      "id": "SP11-139",
+      "name": "Survey Plat Map",
+      "styleAnchors": ["Survey Plat Map", "land survey plat", "lot lines"],
+      "ref": "pack_11/SP11-139.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "diagram-and-technical-drawing",
+      "categoryName": "7. Diagram And Technical Drawing",
+      "domain": "land survey plat",
+      "tags": ["miscellaneous-and-fun", "diagram-and-technical-drawing", "land-survey-plat"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-139 survey plat map land survey plat lot lines 7. diagram and technical drawing blueprint drawing land survey plat pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing land-survey-plat"
+    },
+    {
+      "id": "SP11-140",
+      "name": "Gear Train Drawing",
+      "styleAnchors": ["Gear Train Drawing", "gear train engineering drawing", "pitch circles"],
+      "ref": "pack_11/SP11-140.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "diagram-and-technical-drawing",
+      "categoryName": "7. Diagram And Technical Drawing",
+      "domain": "gear train engineering drawing",
+      "tags": [
+        "miscellaneous-and-fun",
+        "diagram-and-technical-drawing",
+        "gear-train-engineering-drawing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-140 gear train drawing gear train engineering drawing pitch circles 7. diagram and technical drawing blueprint drawing gear train engineering drawing pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing gear-train-engineering-drawing"
+    },
+    {
+      "id": "SP11-141",
+      "name": "Ship Rigging Diagram",
+      "styleAnchors": ["Ship Rigging Diagram", "sail and rigging plan", "masts"],
+      "ref": "pack_11/SP11-141.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "diagram-and-technical-drawing",
+      "categoryName": "7. Diagram And Technical Drawing",
+      "domain": "sail and rigging plan",
+      "tags": ["miscellaneous-and-fun", "diagram-and-technical-drawing", "sail-and-rigging-plan"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-141 ship rigging diagram sail and rigging plan masts 7. diagram and technical drawing blueprint drawing sail and rigging plan pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing sail-and-rigging-plan"
+    },
+    {
+      "id": "SP11-142",
+      "name": "Architectural Elevation Drawing",
+      "styleAnchors": ["Architectural Elevation Drawing", "building elevation", "frontal facade"],
+      "ref": "pack_11/SP11-142.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "diagram-and-technical-drawing",
+      "categoryName": "7. Diagram And Technical Drawing",
+      "domain": "building elevation",
+      "tags": ["miscellaneous-and-fun", "diagram-and-technical-drawing", "building-elevation"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-142 architectural elevation drawing building elevation frontal facade 7. diagram and technical drawing blueprint drawing building elevation pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing building-elevation"
+    },
+    {
+      "id": "SP11-143",
+      "name": "Garden Contour Plan",
+      "styleAnchors": ["Garden Contour Plan", "landscape design plan", "contours"],
+      "ref": "pack_11/SP11-143.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "diagram-and-technical-drawing",
+      "categoryName": "7. Diagram And Technical Drawing",
+      "domain": "landscape design plan",
+      "tags": ["miscellaneous-and-fun", "diagram-and-technical-drawing", "landscape-design-plan"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-143 garden contour plan landscape design plan contours 7. diagram and technical drawing blueprint drawing landscape design plan pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing landscape-design-plan"
+    },
+    {
+      "id": "SP11-144",
+      "name": "Masonry Stereotomy Drawing",
+      "styleAnchors": ["Masonry Stereotomy Drawing", "stone cutting geometry", "voussoirs"],
+      "ref": "pack_11/SP11-144.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "diagram-and-technical-drawing",
+      "categoryName": "7. Diagram And Technical Drawing",
+      "domain": "stone cutting geometry",
+      "tags": ["miscellaneous-and-fun", "diagram-and-technical-drawing", "stone-cutting-geometry"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-144 masonry stereotomy drawing stone cutting geometry voussoirs 7. diagram and technical drawing blueprint drawing stone cutting geometry pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing stone-cutting-geometry"
     }
   ],
-  "totalPresetCount": 125
+  "totalPresetCount": 144
 }

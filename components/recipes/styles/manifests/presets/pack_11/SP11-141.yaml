@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP11-141
+packId: pack_11
+name: Ship Rigging Diagram
+styleAnchors:
+  - Ship Rigging Diagram
+  - sail and rigging plan
+  - masts
+displayName: Ship Rigging Diagram
+category: 7. Diagram And Technical Drawing
+domain: sail and rigging plan
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - diagram-and-technical-drawing
+  - rigging
+  - ship
+  - diagram
+visualDna:
+  aesthetic: 'Rigging diagram: a sailing ship profile with every mast, yard, stay and line drawn as a fine web.'
+  subject_treatment: "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: drawn in profile with masts, yards, sails outlined, and standing and running rigging as fine straight lines."
+  color_and_tone: Black ink with pale sail washes, following the conventions of this drawing type.
+  lighting_and_shadow: No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.
+  texture_and_material: Fine pen on cream paper, with the drafting tools visible in the line quality.
+  camera_and_composition: Side profile filling the sheet, laid out as a real sheet of this drawing type.
+  atmosphere_and_mood: Maritime, intricate, elegant and patient, from careful, purposeful drafting.
+  rendering_and_quality: Precise technical drafting with consistent line weights and believable conventions.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ship Rigging Diagram as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: masts; yards; stays; running rigging
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - readable labels or numbers
+  - fake data claims
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_11
+  packName: Miscellaneous & Fun
+  categoryId: diagram-and-technical-drawing
+  categoryName: 7. Diagram And Technical Drawing
+  tags:
+    - miscellaneous-and-fun
+    - diagram-and-technical-drawing
+    - rigging
+    - ship
+    - diagram
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: sail and rigging plan

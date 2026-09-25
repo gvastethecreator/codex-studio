@@ -151,6 +151,25 @@ categories:
     name: 7. Diagram And Technical Drawing
     presetRefs:
       - pack_11/SP11-033.yaml
+      - pack_11/SP11-126.yaml
+      - pack_11/SP11-127.yaml
+      - pack_11/SP11-128.yaml
+      - pack_11/SP11-129.yaml
+      - pack_11/SP11-130.yaml
+      - pack_11/SP11-131.yaml
+      - pack_11/SP11-132.yaml
+      - pack_11/SP11-133.yaml
+      - pack_11/SP11-134.yaml
+      - pack_11/SP11-135.yaml
+      - pack_11/SP11-136.yaml
+      - pack_11/SP11-137.yaml
+      - pack_11/SP11-138.yaml
+      - pack_11/SP11-139.yaml
+      - pack_11/SP11-140.yaml
+      - pack_11/SP11-141.yaml
+      - pack_11/SP11-142.yaml
+      - pack_11/SP11-143.yaml
+      - pack_11/SP11-144.yaml
 presetRefs:
   - pack_11/SP11-001.yaml
   - pack_11/SP11-002.yaml
@@ -277,3 +296,22 @@ presetRefs:
   - pack_11/SP11-124.yaml
   - pack_11/SP11-125.yaml
   - pack_11/SP11-033.yaml
+  - pack_11/SP11-126.yaml
+  - pack_11/SP11-127.yaml
+  - pack_11/SP11-128.yaml
+  - pack_11/SP11-129.yaml
+  - pack_11/SP11-130.yaml
+  - pack_11/SP11-131.yaml
+  - pack_11/SP11-132.yaml
+  - pack_11/SP11-133.yaml
+  - pack_11/SP11-134.yaml
+  - pack_11/SP11-135.yaml
+  - pack_11/SP11-136.yaml
+  - pack_11/SP11-137.yaml
+  - pack_11/SP11-138.yaml
+  - pack_11/SP11-139.yaml
+  - pack_11/SP11-140.yaml
+  - pack_11/SP11-141.yaml
+  - pack_11/SP11-142.yaml
+  - pack_11/SP11-143.yaml
+  - pack_11/SP11-144.yaml

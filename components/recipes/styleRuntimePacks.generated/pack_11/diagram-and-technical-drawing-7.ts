@@ -5,31 +5,657 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP11-033',
-    name: 'Blueprint',
+    name: 'Faded Workshop Blueprint',
+    displayName: 'Faded Workshop Blueprint',
+    styleAnchors: ['Faded Workshop Blueprint'],
     category: '7. Diagram And Technical Drawing',
     negativePrompt:
-      'color, photo, messy sketch, random labels, decorative blueprint only, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, color, photo, messy sketch, random labels, decorative blueprint only, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        "Blueprint operates as a portable source-router layer: combine Architectural plan, drafting-table vision, engineer's-ghost, technical-imagination with technical notation logic with measured linework, construction marks, schematic hierarchy, and annotation-ready clarity, so the preset supplies visual behavior rather than a fixed card scene or literal sample.",
+        'Faded workshop blueprint: a real, used blueprint sheet photographed on a workbench, sun-faded, creased and marked up.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms measure, section, blueprint, annotate, simplify, align, explode, or draft into construction logic through White technical lines, dimension-string contours, section-cut profiles, orthographic-projection edges; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
-      color_and_tone:
-        "Map color through blueprint cyan, white linework, restrained value coding, technical accents, and drafting-paper contrast; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: drawn as white lines on a faded, creased blueprint that has been used for years: pencil marks, pin holes, stains and torn corners.",
+      color_and_tone: 'Sun-faded cyan and grey-blue with white lines and brown stains.',
       lighting_and_shadow:
-        "Use Flat, drafting-table glow, backlit-tracing vellum, even-fluorescent illumination plus flat documentation visibility, clean line contrast, blueprint glow, and no dramatic shadow dependency as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
-      texture_and_material:
-        'Render Paper grain, diazo-paper tooth, ammonia-print curl, mylar-film gloss, old-blueprint fold plus line ink, tracing surface, grid substrate, blueprint grain, guide marks, and crisp drafting artifacts; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
-      camera_and_composition:
-        'Compose with 2D schematic, plan-section-elevation, orthographic-projection geometry, isometric-grid underlay plus schematic spacing, plan/elevation logic, sectional clarity, part separation, and precise reading order as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.',
+      texture_and_material: 'Diazo paper, creases, coffee rings, pencil smudges and tape.',
+      camera_and_composition: 'Sheet pinned or weighted on a workbench with tools at the edges.',
       atmosphere_and_mood:
-        "Carry mood through engineering calm, planning intent, exactitude, workshop intelligence, and construction anticipation; the emotional tone should feel specific to Blueprint while still obeying the prompt's subject and context.",
+        'Worn, practical, nostalgic and hands-on, from careful, purposeful drafting.',
       rendering_and_quality:
-        'Finish with crisp line hierarchy, clean symbol discipline, readable structure, and no fake unreadable labels; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        "Architectural plan, drafting-table vision, engineer's-ghost, technical-imagination; White technical lines, dimension-string contours, section-cut profiles, orthographic-projection edges; Paper grain, diazo-paper tooth, ammonia-print curl, mylar-film gloss, old-blueprint fold; Flat, drafting-table glow, backlit-tracing vellum, even-fluorescent illumination; 2D schematic, plan-section-elevation, orthographic-projection geometry, isometric-grid underlay",
+        'Precise technical drafting with consistent line weights and believable conventions.',
+      key_features: 'faded diazo sheet; creases; stains; pencil markups; workbench',
       creative_brief:
-        "Use Blueprint after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Architectural plan, drafting-table vision, engineer's-ghost, technical-imagination, White technical lines, dimension-string contours, section-cut profiles, orthographic-projection edges, Paper grain, diazo-paper tooth, ammonia-print curl, mylar-film gloss, old-blueprint fold, Flat, drafting-table glow, backlit-tracing vellum, even-fluorescent illumination, 2D schematic, plan-section-elevation, orthographic-projection geometry, isometric-grid underlay plus orthographic line weights, construction guides, measurement marks, diagram layers, and systematic part labeling space, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Faded Workshop Blueprint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP11-126',
+    name: 'Hachure Relief Map',
+    displayName: 'Hachure Relief Map',
+    styleAnchors: ['Hachure Relief Map', 'hachured terrain map', 'hachure strokes'],
+    category: '7. Diagram And Technical Drawing',
+    domain: 'hachured terrain map',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hachure relief map: terrain drawn with thousands of short strokes that follow the slopes, dense on steep ground.',
+      subject_treatment:
+        "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: mapped as terrain seen from above, with slope strokes, rivers, roads and settlements; figures become landforms.",
+      color_and_tone: 'Brown or black ink on cream paper with blue water.',
+      lighting_and_shadow:
+        'No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.',
+      texture_and_material:
+        'Engraved ink strokes on laid paper, with the drafting tools visible in the line quality.',
+      camera_and_composition:
+        'Map sheet with neatline border and compass rose, laid out as a real sheet of this drawing type.',
+      atmosphere_and_mood:
+        'Old, careful, geographic and patient, from careful, purposeful drafting.',
+      rendering_and_quality:
+        'Precise technical drafting with consistent line weights and believable conventions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hachure Relief Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'hachure strokes; slopes; rivers; compass rose',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-127',
+    name: 'Naval Lines Plan',
+    displayName: 'Naval Lines Plan',
+    styleAnchors: ['Naval Lines Plan', 'ship hull lines drawing', 'profile'],
+    category: '7. Diagram And Technical Drawing',
+    domain: 'ship hull lines drawing',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        "Naval lines plan: a ship's hull drawn as profile, half-breadth and body plan, with flowing waterlines and station curves.",
+      subject_treatment:
+        "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: drawn as a hull lines plan: sheer profile, waterlines, buttock lines and station curves in three linked views.",
+      color_and_tone:
+        'Fine black or sepia ink on off-white paper, following the conventions of this drawing type.',
+      lighting_and_shadow:
+        'No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.',
+      texture_and_material:
+        'Ink on drafting linen with ship curves, with the drafting tools visible in the line quality.',
+      camera_and_composition:
+        'Three linked views aligned on one long sheet, laid out as a real sheet of this drawing type.',
+      atmosphere_and_mood:
+        'Elegant, precise, maritime and classic, from careful, purposeful drafting.',
+      rendering_and_quality:
+        'Precise technical drafting with consistent line weights and believable conventions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Naval Lines Plan as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'profile; half-breadth; body plan; waterlines',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-128',
+    name: 'Isometric Piping Drawing',
+    displayName: 'Isometric Piping Drawing',
+    styleAnchors: ['Isometric Piping Drawing', 'piping isometric', 'isometric grid'],
+    category: '7. Diagram And Technical Drawing',
+    domain: 'piping isometric',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Piping isometric: single-line pipe runs drawn on a 30-degree grid with valves, flanges and elbows as symbols.',
+      subject_treatment:
+        "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: rebuilt as pipe runs on an isometric grid: single lines, valve and flange symbols, flow arrows and elbows.",
+      color_and_tone: 'Black line work on white, with one accent color.',
+      lighting_and_shadow:
+        'No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.',
+      texture_and_material:
+        'Clean CAD-like lines on paper, with the drafting tools visible in the line quality.',
+      camera_and_composition: 'Isometric sheet with a flow arrow and title block left blank.',
+      atmosphere_and_mood:
+        'Industrial, systematic, precise and clean, from careful, purposeful drafting.',
+      rendering_and_quality:
+        'Precise technical drafting with consistent line weights and believable conventions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Isometric Piping Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'isometric grid; single-line pipes; valve symbols',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-129',
+    name: 'Star-Fort Fortification Plan',
+    displayName: 'Star-Fort Fortification Plan',
+    styleAnchors: ['Star-Fort Fortification Plan', 'bastion fort plan', 'bastions'],
+    category: '7. Diagram And Technical Drawing',
+    domain: 'bastion fort plan',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Star-fort plan: angular bastion fortifications seen from above, with moats, ravelins and lines of fire.',
+      subject_treatment:
+        "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: laid out as a bastioned fortification plan: star-shaped walls, moats, outworks and dashed lines of fire.",
+      color_and_tone: 'Ink with watercolor washes: moat blue, earth ochre, walls red.',
+      lighting_and_shadow:
+        'No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.',
+      texture_and_material:
+        'Engraved line and wash on old paper, with the drafting tools visible in the line quality.',
+      camera_and_composition:
+        'Top-down plan centered on the sheet, laid out as a real sheet of this drawing type.',
+      atmosphere_and_mood:
+        'Military, geometric, severe and elegant, from careful, purposeful drafting.',
+      rendering_and_quality:
+        'Precise technical drafting with consistent line weights and believable conventions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Star-Fort Fortification Plan as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'bastions; ravelins; moat; lines of fire',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-130',
+    name: 'Clockwork Escapement Drawing',
+    displayName: 'Clockwork Escapement Drawing',
+    styleAnchors: ['Clockwork Escapement Drawing', 'horological drawing', 'escapement'],
+    category: '7. Diagram And Technical Drawing',
+    domain: 'horological drawing',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Horological drawing: precise views of escapements, wheels and springs with fine ink and brass wash.',
+      subject_treatment:
+        "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: drawn as a mechanism: escapement, wheel train, springs and pivots in front and side views.",
+      color_and_tone:
+        'Black ink with brass and steel-blue washes, following the conventions of this drawing type.',
+      lighting_and_shadow:
+        'No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.',
+      texture_and_material:
+        'Fine pen on smooth paper, with the drafting tools visible in the line quality.',
+      camera_and_composition:
+        'Front and side views with detail circles, laid out as a real sheet of this drawing type.',
+      atmosphere_and_mood:
+        'Precise, intricate, patient and elegant, from careful, purposeful drafting.',
+      rendering_and_quality:
+        'Precise technical drafting with consistent line weights and believable conventions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Clockwork Escapement Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'escapement; wheel train; detail circles',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-131',
+    name: 'Renaissance Invention Notebook',
+    displayName: 'Renaissance Invention Notebook',
+    styleAnchors: ['Renaissance Invention Notebook', 'inventor notebook page', 'sepia sketches'],
+    category: '7. Diagram And Technical Drawing',
+    domain: 'inventor notebook page',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Renaissance invention notebook: sepia pen sketches of machines and studies scattered across a page with dense mirror-script marks.',
+      subject_treatment:
+        "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: sketched as inventions and studies on a notebook page: pen and wash views, details, and unreadable script marks.",
+      color_and_tone:
+        'Sepia and red chalk on aged paper, following the conventions of this drawing type.',
+      lighting_and_shadow:
+        'No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.',
+      texture_and_material:
+        'Iron-gall ink, red chalk and foxing, with the drafting tools visible in the line quality.',
+      camera_and_composition:
+        'Several sketches arranged loosely on one page, laid out as a real sheet of this drawing type.',
+      atmosphere_and_mood:
+        'Curious, brilliant, restless and old, from careful, purposeful drafting.',
+      rendering_and_quality:
+        'Precise technical drafting with consistent line weights and believable conventions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Renaissance Invention Notebook as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'sepia sketches; script marks; red chalk; aged page',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-132',
+    name: 'Axonometric Architectural Drawing',
+    displayName: 'Axonometric Architectural Drawing',
+    styleAnchors: [
+      'Axonometric Architectural Drawing',
+      'axonometric drawing',
+      'axonometric projection',
+    ],
+    category: '7. Diagram And Technical Drawing',
+    domain: 'axonometric drawing',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Axonometric drawing: a building shown in a parallel projection from above with crisp lines and flat color.',
+      subject_treatment:
+        "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: drawn in parallel axonometric projection, often exploded or cut open, with flat color fills.",
+      color_and_tone:
+        'Flat pastel fills with black lines, following the conventions of this drawing type.',
+      lighting_and_shadow:
+        'No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.',
+      texture_and_material:
+        'Clean lines on white, with the drafting tools visible in the line quality.',
+      camera_and_composition:
+        'Axonometric view floating on white, laid out as a real sheet of this drawing type.',
+      atmosphere_and_mood:
+        'Clear, modern, analytic and elegant, from careful, purposeful drafting.',
+      rendering_and_quality:
+        'Precise technical drafting with consistent line weights and believable conventions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Axonometric Architectural Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'axonometric projection; flat fills; cut-away',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-133',
+    name: 'Urban Figure-Ground Plan',
+    displayName: 'Urban Figure-Ground Plan',
+    styleAnchors: ['Urban Figure-Ground Plan', 'figure-ground map', 'black buildings'],
+    category: '7. Diagram And Technical Drawing',
+    domain: 'figure-ground map',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Figure-ground plan: buildings as solid black shapes, streets and open space as white.',
+      subject_treatment:
+        "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: reduced to solid black buildings and white open space, so the subject shape emerges from streets and squares.",
+      color_and_tone: 'Pure black and white, following the conventions of this drawing type.',
+      lighting_and_shadow:
+        'No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.',
+      texture_and_material: 'Flat print, with the drafting tools visible in the line quality.',
+      camera_and_composition: 'Top-down plan, laid out as a real sheet of this drawing type.',
+      atmosphere_and_mood: 'Stark, graphic, analytic and bold, from careful, purposeful drafting.',
+      rendering_and_quality:
+        'Precise technical drafting with consistent line weights and believable conventions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Urban Figure-Ground Plan as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'black buildings; white streets',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-134',
+    name: 'Stage Lighting Plot',
+    displayName: 'Stage Lighting Plot',
+    styleAnchors: ['Stage Lighting Plot', 'theatre lighting plan', 'instrument symbols'],
+    category: '7. Diagram And Technical Drawing',
+    domain: 'theatre lighting plan',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Lighting plot: a theatre stage plan with instrument symbols on pipes and beam zones.',
+      subject_treatment:
+        "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: shown as a stage plan: set outline, lighting instrument symbols on battens and colored beam zones.",
+      color_and_tone:
+        'Black lines with colored beam zones, following the conventions of this drawing type.',
+      lighting_and_shadow:
+        'No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.',
+      texture_and_material: 'CAD-like plan, with the drafting tools visible in the line quality.',
+      camera_and_composition: 'Stage plan top-down, laid out as a real sheet of this drawing type.',
+      atmosphere_and_mood:
+        'Theatrical, technical, organized and precise, from careful, purposeful drafting.',
+      rendering_and_quality:
+        'Precise technical drafting with consistent line weights and believable conventions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stage Lighting Plot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'instrument symbols; battens; beam zones',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-135',
+    name: 'Origami Crease Pattern',
+    displayName: 'Origami Crease Pattern',
+    styleAnchors: ['Origami Crease Pattern', 'origami crease diagram', 'mountain and valley lines'],
+    category: '7. Diagram And Technical Drawing',
+    domain: 'origami crease diagram',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Crease pattern: a square sheet covered in mountain and valley fold lines that fold into the subject.',
+      subject_treatment:
+        "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: shown as a crease pattern: geometric mountain and valley lines on a square, the subject hinted by flaps.",
+      color_and_tone:
+        'Red and blue lines on white, following the conventions of this drawing type.',
+      lighting_and_shadow:
+        'No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.',
+      texture_and_material: 'Paper, with the drafting tools visible in the line quality.',
+      camera_and_composition: 'Square sheet, laid out as a real sheet of this drawing type.',
+      atmosphere_and_mood:
+        'Geometric, clever, precise and calm, from careful, purposeful drafting.',
+      rendering_and_quality:
+        'Precise technical drafting with consistent line weights and believable conventions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Origami Crease Pattern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'mountain and valley lines; square',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-136',
+    name: 'Knot Tying Diagram',
+    displayName: 'Knot Tying Diagram',
+    styleAnchors: ['Knot Tying Diagram', 'knot instruction diagram', 'step panels'],
+    category: '7. Diagram And Technical Drawing',
+    domain: 'knot instruction diagram',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Knot tying diagram: a clear step-by-step sequence of rope drawings with arrows showing each pass, tuck and pull.',
+      subject_treatment:
+        "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: shown as a numbered-feeling sequence of panels (without readable numbers) where rope wraps, crosses and tightens around or through the subject, with direction arrows.",
+      color_and_tone: 'Two contrasting rope colors on white or pale cream.',
+      lighting_and_shadow:
+        'No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.',
+      texture_and_material: 'Clean vector rope with simple twist texture and soft flat shading.',
+      camera_and_composition: 'Four to six step panels in a grid, each with arrows.',
+      atmosphere_and_mood: 'Practical, calm, clear and handy, from careful, purposeful drafting.',
+      rendering_and_quality:
+        'Precise technical drafting with consistent line weights and believable conventions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Knot Tying Diagram as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'step panels; rope twist; direction arrows; tightening sequence',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-137',
+    name: 'Dance Step Diagram',
+    displayName: 'Dance Step Diagram',
+    styleAnchors: ['Dance Step Diagram', 'dance footprint diagram', 'footprints'],
+    category: '7. Diagram And Technical Drawing',
+    domain: 'dance footprint diagram',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Dance step diagram: old instruction-book footprints on a floor plan, with curved arrows and dotted paths showing the steps.',
+      subject_treatment:
+        "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: translated into a floor diagram of footprints, turning arrows, dotted paths and partner positions, the subject implied by the pattern and small silhouette markers.",
+      color_and_tone:
+        'Black footprints and red arrows on cream paper, following the conventions of this drawing type.',
+      lighting_and_shadow:
+        'No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.',
+      texture_and_material: 'Printed ink on old book paper with slight dot gain.',
+      camera_and_composition: 'Top-down floor view with the path spiraling or zigzagging.',
+      atmosphere_and_mood:
+        'Playful, rhythmic, nostalgic and clear, from careful, purposeful drafting.',
+      rendering_and_quality:
+        'Precise technical drafting with consistent line weights and believable conventions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dance Step Diagram as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'footprints; turning arrows; dotted paths; partner markers',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-138',
+    name: 'Weaving Draft Grid',
+    displayName: 'Weaving Draft Grid',
+    styleAnchors: ['Weaving Draft Grid', 'weaving draft', 'threading'],
+    category: '7. Diagram And Technical Drawing',
+    domain: 'weaving draft',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        "Weaving draft: a weaver's grid with threading, tie-up and treadling blocks around a drawdown that reveals the woven pattern.",
+      subject_treatment:
+        "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: encoded as a weaving draft whose drawdown pattern of filled squares forms the subject, with threading, tie-up and treadling grids around it.",
+      color_and_tone: 'Black filled squares on graph paper, sometimes one accent color.',
+      lighting_and_shadow:
+        'No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.',
+      texture_and_material:
+        'Pencil or ink squares on printed graph paper, with the drafting tools visible in the line quality.',
+      camera_and_composition:
+        'Classic four-block draft layout with the drawdown largest, laid out as a real sheet of this drawing type.',
+      atmosphere_and_mood:
+        'Methodical, patient, crafty and precise, from careful, purposeful drafting.',
+      rendering_and_quality:
+        'Precise technical drafting with consistent line weights and believable conventions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Weaving Draft Grid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'threading; tie-up; treadling; drawdown pattern',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-139',
+    name: 'Survey Plat Map',
+    displayName: 'Survey Plat Map',
+    styleAnchors: ['Survey Plat Map', 'land survey plat', 'lot lines'],
+    category: '7. Diagram And Technical Drawing',
+    domain: 'land survey plat',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Survey plat: a legal land map of lots, boundaries, bearings and monuments drawn with ruler-straight lines.',
+      subject_treatment:
+        "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: mapped as surveyed parcels: straight boundary lines, lot blocks, corner monuments, easements and a north arrow, with the subject shaping the land.",
+      color_and_tone:
+        'Black ink with faint colored lot washes, following the conventions of this drawing type.',
+      lighting_and_shadow:
+        'No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.',
+      texture_and_material:
+        'Ink on linen with a slightly yellowed surface, with the drafting tools visible in the line quality.',
+      camera_and_composition: 'Plan view with a north arrow and blank title block.',
+      atmosphere_and_mood:
+        'Dry, official, precise and quietly eerie, from careful, purposeful drafting.',
+      rendering_and_quality:
+        'Precise technical drafting with consistent line weights and believable conventions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Survey Plat Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'lot lines; corner monuments; north arrow; easements',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-140',
+    name: 'Gear Train Drawing',
+    displayName: 'Gear Train Drawing',
+    styleAnchors: ['Gear Train Drawing', 'gear train engineering drawing', 'pitch circles'],
+    category: '7. Diagram And Technical Drawing',
+    domain: 'gear train engineering drawing',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gear train drawing: interlocking gears drawn as pitch circles and tooth outlines, with shafts and rotation arrows.',
+      subject_treatment:
+        "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: drawn as a gear train: pitch circles, tooth profiles, shafts, bearings and curved rotation arrows, the subject shaped by the mechanism.",
+      color_and_tone:
+        'Black ink with light grey pitch circles, following the conventions of this drawing type.',
+      lighting_and_shadow:
+        'No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.',
+      texture_and_material:
+        'Pen and compass lines on smooth drafting paper, with the drafting tools visible in the line quality.',
+      camera_and_composition: 'Front view of meshing gears with a side section.',
+      atmosphere_and_mood:
+        'Mechanical, precise, clever and calm, from careful, purposeful drafting.',
+      rendering_and_quality:
+        'Precise technical drafting with consistent line weights and believable conventions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gear Train Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'pitch circles; tooth profiles; shafts; rotation arrows',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-141',
+    name: 'Ship Rigging Diagram',
+    displayName: 'Ship Rigging Diagram',
+    styleAnchors: ['Ship Rigging Diagram', 'sail and rigging plan', 'masts'],
+    category: '7. Diagram And Technical Drawing',
+    domain: 'sail and rigging plan',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Rigging diagram: a sailing ship profile with every mast, yard, stay and line drawn as a fine web.',
+      subject_treatment:
+        "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: drawn in profile with masts, yards, sails outlined, and standing and running rigging as fine straight lines.",
+      color_and_tone:
+        'Black ink with pale sail washes, following the conventions of this drawing type.',
+      lighting_and_shadow:
+        'No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.',
+      texture_and_material:
+        'Fine pen on cream paper, with the drafting tools visible in the line quality.',
+      camera_and_composition:
+        'Side profile filling the sheet, laid out as a real sheet of this drawing type.',
+      atmosphere_and_mood:
+        'Maritime, intricate, elegant and patient, from careful, purposeful drafting.',
+      rendering_and_quality:
+        'Precise technical drafting with consistent line weights and believable conventions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ship Rigging Diagram as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'masts; yards; stays; running rigging',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-142',
+    name: 'Architectural Elevation Drawing',
+    displayName: 'Architectural Elevation Drawing',
+    styleAnchors: ['Architectural Elevation Drawing', 'building elevation', 'frontal facade'],
+    category: '7. Diagram And Technical Drawing',
+    domain: 'building elevation',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Architectural elevation: a flat frontal facade drawing with precise lines, cast-shadow washes and entourage figures.',
+      subject_treatment:
+        "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: drawn as a flat frontal elevation of a facade or front: windows, ornament and material patterns, with soft wash shadows and tiny scale figures.",
+      color_and_tone:
+        'Ink with grey and sepia washes, following the conventions of this drawing type.',
+      lighting_and_shadow:
+        'No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.',
+      texture_and_material:
+        'Ink and wash on heavy paper, with the drafting tools visible in the line quality.',
+      camera_and_composition:
+        'Frontal elevation with ground line, laid out as a real sheet of this drawing type.',
+      atmosphere_and_mood: 'Grand, orderly, classical and calm, from careful, purposeful drafting.',
+      rendering_and_quality:
+        'Precise technical drafting with consistent line weights and believable conventions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Architectural Elevation Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'frontal facade; wash shadows; scale figures',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-143',
+    name: 'Garden Contour Plan',
+    displayName: 'Garden Contour Plan',
+    styleAnchors: ['Garden Contour Plan', 'landscape design plan', 'contours'],
+    category: '7. Diagram And Technical Drawing',
+    domain: 'landscape design plan',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Landscape plan: garden design seen from above with contour lines, tree canopies as circles, paths and planting beds.',
+      subject_treatment:
+        "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: laid out as a landscape plan: contour lines, canopy circles with shadows, hedges, paths and water.",
+      color_and_tone:
+        'Soft greens and earth tones over black ink, following the conventions of this drawing type.',
+      lighting_and_shadow:
+        'No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.',
+      texture_and_material:
+        'Colored pencil and ink on paper, with the drafting tools visible in the line quality.',
+      camera_and_composition:
+        'Top-down plan with north arrow, laid out as a real sheet of this drawing type.',
+      atmosphere_and_mood:
+        'Calm, verdant, ordered and inviting, from careful, purposeful drafting.',
+      rendering_and_quality:
+        'Precise technical drafting with consistent line weights and believable conventions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Garden Contour Plan as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'contours; canopy circles; hedges; paths',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-144',
+    name: 'Masonry Stereotomy Drawing',
+    displayName: 'Masonry Stereotomy Drawing',
+    styleAnchors: ['Masonry Stereotomy Drawing', 'stone cutting geometry', 'voussoirs'],
+    category: '7. Diagram And Technical Drawing',
+    domain: 'stone cutting geometry',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Stereotomy: the geometry of cutting stones for arches and vaults, drawn with projections, voussoirs and construction lines.',
+      subject_treatment:
+        "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: drawn as stone-cutting geometry: projected views, voussoir blocks and fine construction lines.",
+      color_and_tone:
+        'Black ink with sandstone washes, following the conventions of this drawing type.',
+      lighting_and_shadow:
+        'No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.',
+      texture_and_material:
+        'Fine lines on old paper, with the drafting tools visible in the line quality.',
+      camera_and_composition:
+        'Projected plan and elevation, laid out as a real sheet of this drawing type.',
+      atmosphere_and_mood:
+        'Geometric, ancient, precise and austere, from careful, purposeful drafting.',
+      rendering_and_quality:
+        'Precise technical drafting with consistent line weights and believable conventions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Masonry Stereotomy Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'voussoirs; projections; construction lines',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

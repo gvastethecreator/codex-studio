@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP11-139
+packId: pack_11
+name: Survey Plat Map
+styleAnchors:
+  - Survey Plat Map
+  - land survey plat
+  - lot lines
+displayName: Survey Plat Map
+category: 7. Diagram And Technical Drawing
+domain: land survey plat
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - diagram-and-technical-drawing
+  - survey
+  - plat
+  - diagram
+visualDna:
+  aesthetic: 'Survey plat: a legal land map of lots, boundaries, bearings and monuments drawn with ruler-straight lines.'
+  subject_treatment: "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: mapped as surveyed parcels: straight boundary lines, lot blocks, corner monuments, easements and a north arrow, with the subject shaping the land."
+  color_and_tone: Black ink with faint colored lot washes, following the conventions of this drawing type.
+  lighting_and_shadow: No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.
+  texture_and_material: Ink on linen with a slightly yellowed surface, with the drafting tools visible in the line quality.
+  camera_and_composition: Plan view with a north arrow and blank title block.
+  atmosphere_and_mood: Dry, official, precise and quietly eerie, from careful, purposeful drafting.
+  rendering_and_quality: Precise technical drafting with consistent line weights and believable conventions.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Survey Plat Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: lot lines; corner monuments; north arrow; easements
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - readable labels or numbers
+  - fake data claims
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_11
+  packName: Miscellaneous & Fun
+  categoryId: diagram-and-technical-drawing
+  categoryName: 7. Diagram And Technical Drawing
+  tags:
+    - miscellaneous-and-fun
+    - diagram-and-technical-drawing
+    - survey
+    - plat
+    - diagram
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: land survey plat

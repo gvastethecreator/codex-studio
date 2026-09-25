@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP11-033
 packId: pack_11
-name: Blueprint
+name: Faded Workshop Blueprint
 category: 7. Diagram And Technical Drawing
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,62 +12,24 @@ tags:
   - miscellaneous-and-fun
   - diagram-and-technical-drawing
 visualDna:
-  aesthetic: >-
-    Blueprint operates as a portable source-router layer: combine Architectural plan, drafting-table
-    vision, engineer's-ghost, technical-imagination with technical notation logic with measured
-    linework, construction marks, schematic hierarchy, and annotation-ready clarity, so the preset
-    supplies visual behavior rather than a fixed card scene or literal sample.
-  subject_treatment: >-
-    Preserve the prompt's subject plus requested motion and context while letting forms measure,
-    section, blueprint, annotate, simplify, align, explode, or draft into construction logic through
-    White technical lines, dimension-string contours, section-cut profiles, orthographic-projection
-    edges; identity stays readable through construction grammar, proportion, edge logic, and detail
-    scale as this preset is applied.
-  color_and_tone: >-
-    Map color through blueprint cyan, white linework, restrained value coding, technical accents,
-    and drafting-paper contrast; keep hue roles intentional, value separation clear, and palette
-    behavior attached to the subject's forms instead of pasted decoration.
-  lighting_and_shadow: >-
-    Use Flat, drafting-table glow, backlit-tracing vellum, even-fluorescent illumination plus flat
-    documentation visibility, clean line contrast, blueprint glow, and no dramatic shadow dependency
-    as the light-response contract, with readable hierarchy, controlled contact detail, and no
-    lighting choice that erases the user's requested content.
-  texture_and_material: >-
-    Render Paper grain, diazo-paper tooth, ammonia-print curl, mylar-film gloss, old-blueprint fold
-    plus line ink, tracing surface, grid substrate, blueprint grain, guide marks, and crisp drafting
-    artifacts; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must
-    remain coherent across figures, objects, and environments.
-  camera_and_composition: >-
-    Compose with 2D schematic, plan-section-elevation, orthographic-projection geometry,
-    isometric-grid underlay plus schematic spacing, plan/elevation logic, sectional clarity, part
-    separation, and precise reading order as reusable framing grammar, allowing cards, portraits,
-    objects, scenes, and abstract prompts to inherit the style without one required layout.
-  atmosphere_and_mood: >-
-    Carry mood through engineering calm, planning intent, exactitude, workshop intelligence, and
-    construction anticipation; the emotional tone should feel specific to Blueprint while still
-    obeying the prompt's subject and context.
-  rendering_and_quality: >-
-    Finish with crisp line hierarchy, clean symbol discipline, readable structure, and no fake
-    unreadable labels; prioritize clean style recognition, prompt preservation, controlled detail,
-    and a finished image with no watermark, fake text, or accidental UI.
-  key_features: >-
-    Architectural plan, drafting-table vision, engineer's-ghost, technical-imagination; White
-    technical lines, dimension-string contours, section-cut profiles, orthographic-projection edges;
-    Paper grain, diazo-paper tooth, ammonia-print curl, mylar-film gloss, old-blueprint fold; Flat,
-    drafting-table glow, backlit-tracing vellum, even-fluorescent illumination; 2D schematic,
-    plan-section-elevation, orthographic-projection geometry, isometric-grid underlay
-  creative_brief: >-
-    Use Blueprint after prompt X as a transferable style layer: prompt X supplies subject, action,
-    and setting, while the preset supplies Architectural plan, drafting-table vision,
-    engineer's-ghost, technical-imagination, White technical lines, dimension-string contours,
-    section-cut profiles, orthographic-projection edges, Paper grain, diazo-paper tooth,
-    ammonia-print curl, mylar-film gloss, old-blueprint fold, Flat, drafting-table glow,
-    backlit-tracing vellum, even-fluorescent illumination, 2D schematic, plan-section-elevation,
-    orthographic-projection geometry, isometric-grid underlay plus orthographic line weights,
-    construction guides, measurement marks, diagram layers, and systematic part labeling space,
-    palette behavior, light response, material treatment, and finish discipline without requiring
-    one specimen, prop bundle, product still, or card composition.
+  aesthetic: 'Faded workshop blueprint: a real, used blueprint sheet photographed on a workbench, sun-faded, creased and marked up.'
+  subject_treatment: "Treat the prompt's subject as the thing being documented, keeping it recognizable; all labels, numbers and notes are unreadable marks: drawn as white lines on a faded, creased blueprint that has been used for years: pencil marks, pin holes, stains and torn corners."
+  color_and_tone: Sun-faded cyan and grey-blue with white lines and brown stains.
+  lighting_and_shadow: No scene lighting; depth and emphasis come only from line weight, hatching and flat tone.
+  texture_and_material: Diazo paper, creases, coffee rings, pencil smudges and tape.
+  camera_and_composition: Sheet pinned or weighted on a workbench with tools at the edges.
+  atmosphere_and_mood: Worn, practical, nostalgic and hands-on, from careful, purposeful drafting.
+  rendering_and_quality: Precise technical drafting with consistent line weights and believable conventions.
+  key_features: faded diazo sheet; creases; stains; pencil markups; workbench
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Faded Workshop Blueprint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - readable labels or numbers
+  - fake data claims
   - color
   - photo
   - messy sketch
@@ -78,13 +40,16 @@ avoidRules:
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-033.webp
 attributes:
-  negativePrompt: >-
-    color, photo, messy sketch, random labels, decorative blueprint only, fixed specimen, literal
-    card scene, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, fake data claims, color, photo, messy sketch, random labels, decorative blueprint only, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
@@ -98,3 +63,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Faded Workshop Blueprint
+styleAnchors:
+  - Faded Workshop Blueprint
