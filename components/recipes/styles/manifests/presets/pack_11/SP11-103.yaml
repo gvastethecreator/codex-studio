@@ -24,11 +24,11 @@ visualDna:
   aesthetic: 'Charcuterie board: abundant overhead spread of cured meats, cheeses, fruit, nuts and bread.'
   subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — laid out on a grazing board: folded meats, cheese wedges, grapes, figs, nuts, crackers and honey."
   color_and_tone: Warm reds, creams, purples and wood, used consistently across subject and background.
-  lighting_and_shadow: Soft natural light from the side, expressed through the style rather than photographic lighting.
+  lighting_and_shadow: 'Soft natural light from the side giving gentle shadows between meats, cheeses and fruit.'
   texture_and_material: Wood grain, cheese rind, cured meat marbling, visible at a glance as the signature of the style.
   camera_and_composition: Overhead flat-lay, arranged so the subject still reads at a glance.
   atmosphere_and_mood: Abundant, generous, social and warm, driven by the construction, color and rhythm.
-  rendering_and_quality: Photoreal overhead food photography, with clean, deliberate marks and no accidental noise.
+  rendering_and_quality: 'Photoreal overhead food photograph with crisp textures, marbled meat and honest color.'
   creative_brief: "Charcuterie board: abundant overhead spread of cured meats, cheeses, fruit, nuts and bread. Carry it through overhead spread, folded meats, cheese, fruit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: overhead spread; folded meats; cheese; fruit
 avoidRules:

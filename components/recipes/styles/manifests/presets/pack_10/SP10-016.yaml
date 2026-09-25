@@ -15,11 +15,11 @@ visualDna:
   aesthetic: 'Ferrofluid: black magnetic liquid spiking into sharp cones.'
   subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is sculpted from glossy black ferrofluid spikes."
   color_and_tone: Glossy black with reflected highlights, used consistently across subject and background.
-  lighting_and_shadow: Hard studio light on spikes, expressed through the style rather than photographic lighting.
+  lighting_and_shadow: 'Hard studio light raking across the spikes so each cone carries a bright specular edge and a deep shadow side.'
   texture_and_material: Liquid spikes with mirror gloss, visible at a glance as the signature of the style.
   camera_and_composition: Centered spiky form, arranged so the subject still reads at a glance.
   atmosphere_and_mood: Alien, tense, sleek and strange, driven by the construction, color and rhythm.
-  rendering_and_quality: Glossy macro finish, with clean, deliberate marks and no accidental noise.
+  rendering_and_quality: 'Glossy macro photograph with razor-sharp spike tips, liquid reflections and a clean black or white backdrop.'
   key_features: ferrofluid spikes; glossy black
   creative_brief: "Ferrofluid: black magnetic liquid spiking into sharp cones. Carry it through ferrofluid spikes, glossy black. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:

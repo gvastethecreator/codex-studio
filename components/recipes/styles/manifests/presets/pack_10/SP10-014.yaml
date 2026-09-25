@@ -15,11 +15,11 @@ visualDna:
   aesthetic: 'Macro bubble: the subject seen inside or reflected on a giant soap-bubble surface.'
   subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is reflected and wrapped on the curved surface of a huge bubble with thin-film swirls."
   color_and_tone: Iridescent swirls with dark background, used consistently across subject and background.
-  lighting_and_shadow: Soft backlight, expressed through the style rather than photographic lighting.
+  lighting_and_shadow: 'Soft backlight and a few small reflected highlights on the bubble film, the curved surface bending the light behind it.'
   texture_and_material: Thin-film surface with swirling interference, visible at a glance as the signature of the style.
   camera_and_composition: Spherical framing, arranged so the subject still reads at a glance.
   atmosphere_and_mood: Dreamy, fragile, cosmic and delicate, driven by the construction, color and rhythm.
-  rendering_and_quality: Crisp macro finish, with clean, deliberate marks and no accidental noise.
+  rendering_and_quality: 'Crisp macro photograph with shallow depth, true thin-film interference color and clean dark background.'
   key_features: giant bubble surface; iridescent swirls; spherical framing
   creative_brief: "Macro bubble: the subject seen inside or reflected on a giant soap-bubble surface. Carry it through giant bubble surface, iridescent swirls, spherical framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:

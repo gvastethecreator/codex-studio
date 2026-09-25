@@ -18,14 +18,14 @@ export const GENERATED_STYLE_PRESETS = [
         "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — plated as a small precise composition on a wide plate: sauce swooshes, dots, microgreens, edible flowers and one sculptural centerpiece.",
       color_and_tone: 'Restrained palette with one vivid accent on white or matte black ceramic.',
       lighting_and_shadow:
-        'Soft directional editorial light with gentle shadow, expressed through the style rather than photographic lighting.',
+        'Soft directional editorial light from one side with a gentle shadow falling across the empty plate.',
       texture_and_material:
         'Glossy sauce, crisp tuiles, microgreens and matte ceramic, visible at a glance as the signature of the style.',
       camera_and_composition: 'Overhead or low three-quarter view with lots of empty plate.',
       atmosphere_and_mood:
         'Refined, precise, calm and luxurious, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'High-end editorial food photography, with clean, deliberate marks and no accidental noise.',
+        'High-end editorial food photograph with shallow focus on the garnish and pristine plate surfaces.',
       key_features: 'negative space; tweezered garnish; sauce dots; wide plate',
       creative_brief:
         "Fine-dining plating editorial: tiny precise compositions on large plates, negative space and tweezered garnish. Carry it through negative space, tweezered garnish, sauce dots, wide plate. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -47,7 +47,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Saturated candy colors with pastel and glossy highlights, used consistently across subject and background.',
       lighting_and_shadow:
-        'Bright sugary light with glossy sparkle, expressed through the style rather than photographic lighting.',
+        'Bright sugary daylight with glossy sparkle on candy surfaces and colored glow through sugar glass.',
       texture_and_material:
         'Sugar glass, sprinkles, frosting and gummy translucency, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -55,7 +55,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Sweet, whimsical, playful and a little uncanny, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Glossy candy render or photo, with clean, deliberate marks and no accidental noise.',
+        'Glossy candy render or photograph with sugar-crystal sparkle and saturated translucent color.',
       key_features: 'candy construction; sugar glass; frosting; gumdrops',
       creative_brief:
         "Confectionery wonderland: everything made of candy, sugar glass, gumdrops, frosting and striped sugar sticks. Carry it through candy construction, sugar glass, frosting, gumdrops. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -80,7 +80,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Calm, precise, fresh and respectful, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Photoreal food photography, with clean, deliberate marks and no accidental noise.',
+        'Photoreal food photograph with glistening raw fish, sharp knife-cut edges and warm wood grain.',
       key_features: 'precise slices; nigiri; nori; dark wood counter',
       creative_brief:
         "Omakase sushi: precise slices of fish and rice arranged on dark wood or slate with restraint. Carry it through precise slices, nigiri, nori, dark wood counter. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -100,7 +100,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Warm reds, yellows and golden browns, used consistently across subject and background.',
       lighting_and_shadow:
-        'Hard commercial light with rim highlights, expressed through the style rather than photographic lighting.',
+        'Hard commercial key light with bright rim highlights that make sauces and buns glisten against a colored backdrop.',
       texture_and_material:
         'Glossy buns, melting cheese, crisp lettuce and fries, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -108,7 +108,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Craving, loud, energetic and bold, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Commercial food photography with styling tricks, with clean, deliberate marks and no accidental noise.',
+        'Commercial food photograph with styling tricks, frozen flying ingredients and immaculate gloss.',
       key_features: 'perfect stack; flying ingredients; gloss; hero angle',
       creative_brief:
         "Fast-food commercial: impossibly perfect burgers and fries with crave-engineered gloss and flying ingredients. Carry it through perfect stack, flying ingredients, gloss, hero angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -128,7 +128,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Jewel liquor colors against dark bar tones, used consistently across subject and background.',
       lighting_and_shadow:
-        'Backlight through the glass with rim glints, expressed through the style rather than photographic lighting.',
+        'Backlight through the glass with rim glints on the edge and ice, liquor glowing like colored lamp light.',
       texture_and_material:
         'Condensation, ice, citrus peel and glass refraction, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -136,7 +136,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Glamorous, nocturnal, cool and sensual, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Macro bar photography, with clean, deliberate marks and no accidental noise.',
+        'Macro bar photograph with crisp condensation beads, true refraction and a dark softly blurred bar.',
       key_features: 'refracting glass; ice; garnish; condensation',
       creative_brief:
         "Cocktail macro: close refracting glass, ice, citrus and colored liquor with condensation. Carry it through refracting glass, ice, garnish, condensation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -156,7 +156,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Golden browns, cream and warm wood, used consistently across subject and background.',
       lighting_and_shadow:
-        'Warm morning light through a shop window, expressed through the style rather than photographic lighting.',
+        'Warm morning light through the shop window, soft shadows under loaves and flour dust glowing in the air.',
       texture_and_material:
         'Crust cracks, crumb, flaky layers and flour, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -164,7 +164,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Warm, homely, abundant and inviting, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Photoreal bakery photography, with clean, deliberate marks and no accidental noise.',
+        'Photoreal bakery photograph with crisp crust cracks, flaky layers and warm natural color.',
       key_features: 'scored crust; laminated pastry; flour dust; window light',
       creative_brief:
         "Bakery window: crusty loaves and laminated pastries in warm window light, flour dust and wooden trays. Carry it through scored crust, laminated pastry, flour dust, window light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -183,7 +183,7 @@ export const GENERATED_STYLE_PRESETS = [
         "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — made of or bursting with fruit: sliced halves, juice splashes and droplets frozen mid-air.",
       color_and_tone: 'Vivid fruit colors on a dark or clean backdrop.',
       lighting_and_shadow:
-        'High-speed strobe light freezing droplets, expressed through the style rather than photographic lighting.',
+        'High-speed strobe light freezing droplets and seeds mid-air, bright rim on each drop against a dark ground.',
       texture_and_material:
         'Juice droplets, cut fruit flesh and seeds, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -191,7 +191,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Fresh, energetic, juicy and bright, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'High-speed product photography, with clean, deliberate marks and no accidental noise.',
+        'High-speed product photograph with frozen juice, sharp cut surfaces and crystal-clear droplets.',
       key_features: 'juice splash; frozen droplets; sliced fruit',
       creative_brief:
         "Fruit explosion: high-speed photo of fruit bursting with juice splashes and flying slices. Carry it through juice splash, frozen droplets, sliced fruit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -210,7 +210,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Dark, milk and white chocolate browns, used consistently across subject and background.',
       lighting_and_shadow:
-        'Soft studio light with glossy highlights, expressed through the style rather than photographic lighting.',
+        'Soft studio light with long glossy highlights sliding along the chocolate ribbons and folds.',
       texture_and_material:
         'Molten gloss, tempered sheen and cocoa dust, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -218,7 +218,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Indulgent, rich, sensual and slow, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Commercial food render or photo, with clean, deliberate marks and no accidental noise.',
+        'Commercial food photograph or render with thick viscous gloss, cocoa dust and smooth tempered sheen.',
       key_features: 'molten ribbons; glossy pour; cocoa dust',
       creative_brief:
         "Chocolate flow: thick glossy molten chocolate pouring, ribbons and waves. Carry it through molten ribbons, glossy pour, cocoa dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -237,7 +237,7 @@ export const GENERATED_STYLE_PRESETS = [
         "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — arranged in a bento box: rice shaped into characters, nori faces, vegetable details and neat compartments.",
       color_and_tone: 'Fresh greens, white rice, pink, yellow and nori black.',
       lighting_and_shadow:
-        'Bright soft daylight from above, expressed through the style rather than photographic lighting.',
+        'Bright soft daylight from above with gentle shadows inside each compartment of the box.',
       texture_and_material:
         'Rice grains, nori, egg, vegetables and lacquer box, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -245,7 +245,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Cute, careful, cheerful and neat, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Photoreal food photography, with clean, deliberate marks and no accidental noise.',
+        'Photoreal top-down food photograph with distinct rice grains, crisp nori edges and neat detail.',
       key_features: 'compartments; rice characters; nori faces',
       creative_brief:
         "Bento box: compartmentalized lunch with cute character food made from rice, nori and vegetables. Carry it through compartments, rice characters, nori faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -264,7 +264,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Warm reds, golden cheese, charred brown, used consistently across subject and background.',
       lighting_and_shadow:
-        'Warm oven glow, expressed through the style rather than photographic lighting.',
+        'Warm oven glow and kitchen light catching the oil sheen and the stretching cheese strands.',
       texture_and_material:
         'Stretchy cheese, char and oil, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -272,7 +272,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Craving, warm, casual and fun, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Commercial food photography, with clean, deliberate marks and no accidental noise.',
+        'Commercial food photograph with molten cheese pulls, charred crust detail and appetizing warmth.',
       key_features: 'cheese pull; charred crust; oil sheen',
       creative_brief:
         "Pizza melt: molten cheese pulls, charred crust and glistening toppings. Carry it through cheese pull, charred crust, oil sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -297,7 +297,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Cozy, crafted, fleeting and warm, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Photoreal cafe photography, with clean, deliberate marks and no accidental noise.',
+        'Photoreal cafe photograph from above with true foam texture, crema speckle and soft glazed ceramic reflections.',
       key_features: 'microfoam drawing; crema; top-down cup; pour curves',
       creative_brief:
         "Latte art: a picture poured and etched into espresso microfoam, seen from above in a ceramic cup. Carry it through microfoam drawing, crema, top-down cup, pour curves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -320,7 +320,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Deep reds, golden browns, pewter and candle gold, used consistently across subject and background.',
       lighting_and_shadow:
-        'Candlelight and hearth firelight, expressed through the style rather than photographic lighting.',
+        'Candlelight and hearth firelight glowing on roast skin and pewter, deep smoky shadows down the long hall.',
       texture_and_material:
         'Roast skin, crusty bread, pewter, wax and wood, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -328,7 +328,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Abundant, rich, rowdy and warm, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Painterly or photoreal feast still life, with clean, deliberate marks and no accidental noise.',
+        'Painterly or photoreal feast still life with rich textures, warm glow and abundant detail.',
       creative_brief:
         "Medieval feast: long candlelit tables heavy with roasts, bread, fruit, pies and goblets. Carry it through roasts, pewter goblets, candles, long table. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'roasts; pewter goblets; candles; long table',
@@ -354,7 +354,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Warm lantern reds and oranges against dark night, used consistently across subject and background.',
       lighting_and_shadow:
-        'Lantern and grill glow with rising steam, expressed through the style rather than photographic lighting.',
+        'Lantern and charcoal-grill glow with rising steam catching the light against the dark night market.',
       texture_and_material:
         'Char, steam, oil sheen and paper, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -362,7 +362,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Lively, warm, crowded and delicious, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Photoreal street food photography, with clean, deliberate marks and no accidental noise.',
+        'Photoreal street food photograph with steam, oil sheen and busy but readable stall detail.',
       creative_brief:
         "Night market street food: steam, sizzling grills, paper lanterns and hands serving food. Carry it through steam, grill, lanterns, stall. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'steam; grill; lanterns; stall',
@@ -388,7 +388,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Oversaturated oranges, greens and pinks with yellowed print, used consistently across subject and background.',
       lighting_and_shadow:
-        'Flat flash light, expressed through the style rather than photographic lighting.',
+        'Flat on-camera flash with hard short shadows and bright reflections on the wobbling gelatin.',
       texture_and_material:
         'Wobbly gelatin, printed grain and faded color, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -396,7 +396,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Kitschy, strange, nostalgic and funny, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Faded vintage print photograph, with clean, deliberate marks and no accidental noise.',
+        'Faded vintage print photograph with yellowed color, halftone softness and dated tablecloth texture.',
       creative_brief:
         "Retro cookbook: overlit 1960s-70s food photos with gelatin molds, aspics and garish garnishes. Carry it through gelatin mold, suspended items, flash, faded print. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'gelatin mold; suspended items; flash; faded print',
@@ -422,7 +422,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Amber, ruby, green and golden liquids, used consistently across subject and background.',
       lighting_and_shadow:
-        'Window backlight through jars, expressed through the style rather than photographic lighting.',
+        'Window backlight passing through the jars so the brines, jams and honey glow like stained glass.',
       texture_and_material:
         'Glass jars, brine, wax seals and wood shelves, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -430,7 +430,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Homely, patient, abundant and mysterious, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Photoreal still life photography, with clean, deliberate marks and no accidental noise.',
+        'Photoreal still-life photograph with glass reflections, suspended bubbles and wax-seal detail.',
       creative_brief:
         "Preserving pantry: shelves of backlit jars with pickles, jams and ferments glowing like stained glass. Carry it through glowing jars, brine, wax seals, shelves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'glowing jars; brine; wax seals; shelves',
@@ -456,14 +456,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Warm reds, creams, purples and wood, used consistently across subject and background.',
       lighting_and_shadow:
-        'Soft natural light from the side, expressed through the style rather than photographic lighting.',
+        'Soft natural light from the side giving gentle shadows between meats, cheeses and fruit.',
       texture_and_material:
         'Wood grain, cheese rind, cured meat marbling, visible at a glance as the signature of the style.',
       camera_and_composition: 'Overhead flat-lay, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Abundant, generous, social and warm, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Photoreal overhead food photography, with clean, deliberate marks and no accidental noise.',
+        'Photoreal overhead food photograph with crisp textures, marbled meat and honest color.',
       creative_brief:
         "Charcuterie board: abundant overhead spread of cured meats, cheeses, fruit, nuts and bread. Carry it through overhead spread, folded meats, cheese, fruit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'overhead spread; folded meats; cheese; fruit',
@@ -489,7 +489,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Clean whites with jewel-bright spheres, used consistently across subject and background.',
       lighting_and_shadow:
-        'Cool clinical light with fog, expressed through the style rather than photographic lighting.',
+        'Cool clinical light on white ceramic with nitrogen fog catching soft highlights at plate level.',
       texture_and_material:
         'Glossy spheres, airy foams and powder dusting, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -497,7 +497,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Curious, futuristic, precise and playful, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Editorial food photography, with clean, deliberate marks and no accidental noise.',
+        'Editorial food photograph with glossy spheres, airy foams and precise tweezer-placed detail.',
       creative_brief:
         "Molecular gastronomy: spheres, foams, gels and liquid nitrogen fog in lab-like plating. Carry it through spheres, foams, nitrogen fog, gels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'spheres; foams; nitrogen fog; gels',
@@ -522,7 +522,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Ember orange, soot black and charred brown, used consistently across subject and background.',
       lighting_and_shadow:
-        'Firelight from below, expressed through the style rather than photographic lighting.',
+        'Firelight from below, embers glowing orange on cast iron and faces, smoke drifting through the beam.',
       texture_and_material:
         'Cast iron, ash, smoke and char, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -530,7 +530,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Primal, rustic, warm and smoky, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Photoreal rustic food photography, with clean, deliberate marks and no accidental noise.',
+        'Photoreal rustic food photograph with char, ash, smoke and heavy cast-iron texture.',
       creative_brief:
         "Open-fire cooking: cast iron, embers, smoke and meat on hooks over flames. Carry it through embers, cast iron, smoke, spit roast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'embers; cast iron; smoke; spit roast',
@@ -556,7 +556,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Glossy jewel colors in translucent sugar, used consistently across subject and background.',
       lighting_and_shadow:
-        'Spotlight on glossy sugar, expressed through the style rather than photographic lighting.',
+        'Spotlight on glossy sugar, light passing through translucent petals and wings and pooling on the pedestal.',
       texture_and_material:
         'Glossy translucent sugar and satin ribbons, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -564,7 +564,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Spectacular, fragile, virtuosic and bright, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Photoreal competition pastry photography, with clean, deliberate marks and no accidental noise.',
+        'Photoreal competition pastry photograph with glass-like sugar, satin ribbons and clean black backdrop.',
       creative_brief:
         "Pulled-sugar showpiece: competition pastry sculpture in glossy blown and pulled sugar. Carry it through pulled sugar, blown sugar, translucent gloss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'pulled sugar; blown sugar; translucent gloss',
@@ -589,7 +589,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Warm broth gold with green and pink accents, used consistently across subject and background.',
       lighting_and_shadow:
-        'Warm light with backlit steam, expressed through the style rather than photographic lighting.',
+        'Warm light with backlit steam rising from the bowl and gloss on the broth surface.',
       texture_and_material:
         'Glossy broth, noodles and steam, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -597,7 +597,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Comforting, warm, rich and hungry, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Photoreal food photography, with clean, deliberate marks and no accidental noise.',
+        'Photoreal food photograph with glossy broth, springy noodles and soft steam.',
       creative_brief:
         "Ramen close-up: steaming bowl, noodle lift, glossy broth and toppings. Carry it through steam, noodle lift, broth gloss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'steam; noodle lift; broth gloss',

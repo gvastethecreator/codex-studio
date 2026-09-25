@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Glossy raw fish, rice grains, nori and wood grain.
   camera_and_composition: Low three-quarter view along the counter, arranged so the subject still reads at a glance.
   atmosphere_and_mood: Calm, precise, fresh and respectful, driven by the construction, color and rhythm.
-  rendering_and_quality: Photoreal food photography, with clean, deliberate marks and no accidental noise.
+  rendering_and_quality: 'Photoreal food photograph with glistening raw fish, sharp knife-cut edges and warm wood grain.'
   key_features: precise slices; nigiri; nori; dark wood counter
   creative_brief: "Omakase sushi: precise slices of fish and rice arranged on dark wood or slate with restraint. Carry it through precise slices, nigiri, nori, dark wood counter. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:

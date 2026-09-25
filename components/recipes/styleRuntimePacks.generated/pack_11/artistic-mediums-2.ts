@@ -97,14 +97,14 @@ export const GENERATED_STYLE_PRESETS = [
         "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: rebuilt as foam-and-fleece hand puppets with felt faces, ping-pong ball eyes, wide hinged mouths and visible arm rods.",
       color_and_tone: 'Saturated felt colors against a warm, simple TV set.',
       lighting_and_shadow:
-        'Warm studio TV lighting with soft shadows, expressed through the style rather than photographic lighting.',
+        'Warm studio television lighting with soft key and fill, gentle shadows on the felt and a bright set behind.',
       texture_and_material: 'Felt, fleece fuzz, visible seams and glued fabric pieces.',
       camera_and_composition:
         'Medium TV shot at puppet height, bottom edge of the set hiding the puppeteers.',
       atmosphere_and_mood:
         'Warm, funny, handmade and playful, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Photographic puppet-show still with real fabric texture, with clean, deliberate marks and no accidental noise.',
+        'Photographic puppet-show still with real fabric fuzz, visible seams and practical miniature set detail.',
       key_features: 'fleece puppets; ping-pong eyes; hinged mouths; arm rods; TV set',
       creative_brief:
         "Felt puppet broadcast: the subject as a fuzzy hand puppet made of felt and fleece, performing on a small TV set. Carry it through fleece puppets, ping-pong eyes, hinged mouths, arm rods, TV set. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -160,7 +160,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Nocturnal, moody, electric and lonely, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Photoreal glowing tube sign, with clean, deliberate marks and no accidental noise.',
+        'Photoreal night photograph of a glowing tube sign, true bloom around the tubes and crisp mounting hardware.',
       key_features: 'bent glass tubes; halo glow; clips and wires; dark wall',
       creative_brief:
         "Gas-tube glow: the subject drawn only in bent glowing glass tubes on a dark wall, with color halos around each tube. Carry it through bent glass tubes, halo glow, clips and wires, dark wall. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",

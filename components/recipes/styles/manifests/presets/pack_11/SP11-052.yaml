@@ -15,11 +15,11 @@ visualDna:
   aesthetic: 'Fruit explosion: high-speed photo of fruit bursting with juice splashes and flying slices.'
   subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — made of or bursting with fruit: sliced halves, juice splashes and droplets frozen mid-air."
   color_and_tone: Vivid fruit colors on a dark or clean backdrop.
-  lighting_and_shadow: High-speed strobe light freezing droplets, expressed through the style rather than photographic lighting.
+  lighting_and_shadow: 'High-speed strobe light freezing droplets and seeds mid-air, bright rim on each drop against a dark ground.'
   texture_and_material: Juice droplets, cut fruit flesh and seeds, visible at a glance as the signature of the style.
   camera_and_composition: Centered burst with flying pieces, arranged so the subject still reads at a glance.
   atmosphere_and_mood: Fresh, energetic, juicy and bright, driven by the construction, color and rhythm.
-  rendering_and_quality: High-speed product photography, with clean, deliberate marks and no accidental noise.
+  rendering_and_quality: 'High-speed product photograph with frozen juice, sharp cut surfaces and crystal-clear droplets.'
   key_features: juice splash; frozen droplets; sliced fruit
   creative_brief: "Fruit explosion: high-speed photo of fruit bursting with juice splashes and flying slices. Carry it through juice splash, frozen droplets, sliced fruit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:

@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Smooth glossy plastic or gummy material with no fine texture.
   camera_and_composition: Centered single icon on a plain soft gradient background.
   atmosphere_and_mood: Cheerful, readable, cute and instant, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean 3D icon render with smooth subdivided surfaces, with clean, deliberate marks and no accidental noise.
+  rendering_and_quality: 'Clean 3D icon render with smooth subdivided surfaces, soft ambient occlusion and no texture noise.'
   key_features: inflated rounded forms; glossy highlights; simple face; icon framing
   creative_brief: "Glossy 3D emoji: the subject as a chunky, rounded, candy-glossy icon with a simple expressive face. Carry it through inflated rounded forms, glossy highlights, simple face, icon framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:

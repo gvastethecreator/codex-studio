@@ -15,11 +15,11 @@ visualDna:
   aesthetic: 'Felt puppet broadcast: the subject as a fuzzy hand puppet made of felt and fleece, performing on a small TV set.'
   subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: rebuilt as foam-and-fleece hand puppets with felt faces, ping-pong ball eyes, wide hinged mouths and visible arm rods."
   color_and_tone: Saturated felt colors against a warm, simple TV set.
-  lighting_and_shadow: Warm studio TV lighting with soft shadows, expressed through the style rather than photographic lighting.
+  lighting_and_shadow: 'Warm studio television lighting with soft key and fill, gentle shadows on the felt and a bright set behind.'
   texture_and_material: Felt, fleece fuzz, visible seams and glued fabric pieces.
   camera_and_composition: Medium TV shot at puppet height, bottom edge of the set hiding the puppeteers.
   atmosphere_and_mood: Warm, funny, handmade and playful, driven by the construction, color and rhythm.
-  rendering_and_quality: Photographic puppet-show still with real fabric texture, with clean, deliberate marks and no accidental noise.
+  rendering_and_quality: 'Photographic puppet-show still with real fabric fuzz, visible seams and practical miniature set detail.'
   key_features: fleece puppets; ping-pong eyes; hinged mouths; arm rods; TV set
   creative_brief: "Felt puppet broadcast: the subject as a fuzzy hand puppet made of felt and fleece, performing on a small TV set. Carry it through fleece puppets, ping-pong eyes, hinged mouths, arm rods, TV set. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:

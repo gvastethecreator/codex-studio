@@ -24,11 +24,11 @@ visualDna:
   aesthetic: 'Molecular gastronomy: spheres, foams, gels and liquid nitrogen fog in lab-like plating.'
   subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — made with modernist techniques: spheres, foams, gels, powders and cold fog."
   color_and_tone: Clean whites with jewel-bright spheres, used consistently across subject and background.
-  lighting_and_shadow: Cool clinical light with fog, expressed through the style rather than photographic lighting.
+  lighting_and_shadow: 'Cool clinical light on white ceramic with nitrogen fog catching soft highlights at plate level.'
   texture_and_material: Glossy spheres, airy foams and powder dusting, visible at a glance as the signature of the style.
   camera_and_composition: Close lab-like plating, arranged so the subject still reads at a glance.
   atmosphere_and_mood: Curious, futuristic, precise and playful, driven by the construction, color and rhythm.
-  rendering_and_quality: Editorial food photography, with clean, deliberate marks and no accidental noise.
+  rendering_and_quality: 'Editorial food photograph with glossy spheres, airy foams and precise tweezer-placed detail.'
   creative_brief: "Molecular gastronomy: spheres, foams, gels and liquid nitrogen fog in lab-like plating. Carry it through spheres, foams, nitrogen fog, gels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: spheres; foams; nitrogen fog; gels
 avoidRules:

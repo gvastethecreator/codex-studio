@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Chrome reflections, scanline haze and airbrushed gradients, visible at a glance as the signature of the style.
   camera_and_composition: Low wide shot toward the horizon with the grid receding.
   atmosphere_and_mood: Nostalgic, cool, electric and dreamy, driven by the construction, color and rhythm.
-  rendering_and_quality: Polished retro airbrush and neon render, with clean, deliberate marks and no accidental noise.
+  rendering_and_quality: 'Polished retro airbrush-and-neon render with smooth gradients, crisp chrome edges and faint scanline haze.'
   key_features: perspective grid; striped sun; chrome rim; magenta-cyan haze
   creative_brief: "Chrome horizon synthwave: glowing grid floors, a striped sunset sun, chrome edges and magenta-cyan night haze. Carry it through perspective grid, striped sun, chrome rim, magenta-cyan haze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:

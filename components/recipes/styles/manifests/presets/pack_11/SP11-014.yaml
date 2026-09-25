@@ -15,11 +15,11 @@ visualDna:
   aesthetic: 'Cottagecore: soft pastoral life, wildflower gardens, handmade bread, linen and warm cottage light.'
   subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: set in a slow rural life of cottage gardens, baking, sewing, foraging and animals."
   color_and_tone: Soft creams, sage, dusty rose and butter yellow, used consistently across subject and background.
-  lighting_and_shadow: Golden afternoon light through windows, expressed through the style rather than photographic lighting.
+  lighting_and_shadow: 'Golden afternoon light through small windows and dappled garden shade, warm pools of light on linen and flour.'
   texture_and_material: Linen, wicker, wood, flowers and bread crust, visible at a glance as the signature of the style.
   camera_and_composition: Cozy interior or garden framing with foreground flowers, arranged so the subject still reads at a glance.
   atmosphere_and_mood: Gentle, warm, nostalgic and peaceful, driven by the construction, color and rhythm.
-  rendering_and_quality: Soft painterly or photographic finish, with clean, deliberate marks and no accidental noise.
+  rendering_and_quality: 'Soft painterly illustration or gentle film photograph with warm grain and rounded, homely detail.'
   key_features: cottage garden; linen; baking; wildflowers; golden light
   creative_brief: "Cottagecore: soft pastoral life, wildflower gardens, handmade bread, linen and warm cottage light. Carry it through cottage garden, linen, baking, wildflowers, golden light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:

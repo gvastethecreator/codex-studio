@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Velvety microfoam, crema speckle and glazed ceramic, visible at a glance as the signature of the style.
   camera_and_composition: Top-down view of the cup with saucer and a spoon at the edge.
   atmosphere_and_mood: Cozy, crafted, fleeting and warm, driven by the construction, color and rhythm.
-  rendering_and_quality: Photoreal cafe photography, with clean, deliberate marks and no accidental noise.
+  rendering_and_quality: 'Photoreal cafe photograph from above with true foam texture, crema speckle and soft glazed ceramic reflections.'
   key_features: microfoam drawing; crema; top-down cup; pour curves
   creative_brief: "Latte art: a picture poured and etched into espresso microfoam, seen from above in a ceramic cup. Carry it through microfoam drawing, crema, top-down cup, pour curves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:

@@ -45,7 +45,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'White or tinted smoke on pure black, used consistently across subject and background.',
       lighting_and_shadow:
-        'Hard side backlight on smoke, expressed through the style rather than photographic lighting.',
+        'Hard side backlight raking through the smoke against pure black, so only the thin wisps catch light and everything else falls away.',
       texture_and_material:
         'Thin curling smoke filaments, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -53,7 +53,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Ethereal, delicate, mysterious and fleeting, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Crisp high-contrast finish, with clean, deliberate marks and no accidental noise.',
+        'Crisp high-contrast studio photograph with sharp wisp edges, deep clean blacks and no stray haze or grain.',
       key_features: 'smoke filaments tracing form; black ground',
       creative_brief:
         "Smoke photography style: the subject drawn as thin wisps of backlit smoke on black. Carry it through smoke filaments tracing form, black ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -99,14 +99,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Iridescent swirls with dark background, used consistently across subject and background.',
       lighting_and_shadow:
-        'Soft backlight, expressed through the style rather than photographic lighting.',
+        'Soft backlight and a few small reflected highlights on the bubble film, the curved surface bending the light behind it.',
       texture_and_material:
         'Thin-film surface with swirling interference, visible at a glance as the signature of the style.',
       camera_and_composition: 'Spherical framing, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Dreamy, fragile, cosmic and delicate, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Crisp macro finish, with clean, deliberate marks and no accidental noise.',
+        'Crisp macro photograph with shallow depth, true thin-film interference color and clean dark background.',
       key_features: 'giant bubble surface; iridescent swirls; spherical framing',
       creative_brief:
         "Macro bubble: the subject seen inside or reflected on a giant soap-bubble surface. Carry it through giant bubble surface, iridescent swirls, spherical framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -153,7 +153,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Glossy black with reflected highlights, used consistently across subject and background.',
       lighting_and_shadow:
-        'Hard studio light on spikes, expressed through the style rather than photographic lighting.',
+        'Hard studio light raking across the spikes so each cone carries a bright specular edge and a deep shadow side.',
       texture_and_material:
         'Liquid spikes with mirror gloss, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -161,7 +161,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Alien, tense, sleek and strange, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Glossy macro finish, with clean, deliberate marks and no accidental noise.',
+        'Glossy macro photograph with razor-sharp spike tips, liquid reflections and a clean black or white backdrop.',
       key_features: 'ferrofluid spikes; glossy black',
       creative_brief:
         "Ferrofluid: black magnetic liquid spiking into sharp cones. Carry it through ferrofluid spikes, glossy black. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",

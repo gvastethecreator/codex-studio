@@ -22,7 +22,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Cheerful, readable, cute and instant, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Clean 3D icon render with smooth subdivided surfaces, with clean, deliberate marks and no accidental noise.',
+        'Clean 3D icon render with smooth subdivided surfaces, soft ambient occlusion and no texture noise.',
       key_features: 'inflated rounded forms; glossy highlights; simple face; icon framing',
       creative_brief:
         "Glossy 3D emoji: the subject as a chunky, rounded, candy-glossy icon with a simple expressive face. Carry it through inflated rounded forms, glossy highlights, simple face, icon framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -72,7 +72,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Nostalgic, cool, electric and dreamy, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Polished retro airbrush and neon render, with clean, deliberate marks and no accidental noise.',
+        'Polished retro airbrush-and-neon render with smooth gradients, crisp chrome edges and faint scanline haze.',
       key_features: 'perspective grid; striped sun; chrome rim; magenta-cyan haze',
       creative_brief:
         "Chrome horizon synthwave: glowing grid floors, a striped sunset sun, chrome edges and magenta-cyan night haze. Carry it through perspective grid, striped sun, chrome rim, magenta-cyan haze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -147,7 +147,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Soft creams, sage, dusty rose and butter yellow, used consistently across subject and background.',
       lighting_and_shadow:
-        'Golden afternoon light through windows, expressed through the style rather than photographic lighting.',
+        'Golden afternoon light through small windows and dappled garden shade, warm pools of light on linen and flour.',
       texture_and_material:
         'Linen, wicker, wood, flowers and bread crust, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -155,7 +155,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Gentle, warm, nostalgic and peaceful, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Soft painterly or photographic finish, with clean, deliberate marks and no accidental noise.',
+        'Soft painterly illustration or gentle film photograph with warm grain and rounded, homely detail.',
       key_features: 'cottage garden; linen; baking; wildflowers; golden light',
       creative_brief:
         "Cottagecore: soft pastoral life, wildflower gardens, handmade bread, linen and warm cottage light. Carry it through cottage garden, linen, baking, wildflowers, golden light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -175,7 +175,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Brown, oxblood, forest green, cream and candle gold, used consistently across subject and background.',
       lighting_and_shadow:
-        'Candlelight and grey window light, expressed through the style rather than photographic lighting.',
+        'Candlelight and cold grey window light meeting in deep brown shadow, highlights on leather spines and marble.',
       texture_and_material:
         'Leather, tweed, parchment, marble and dark wood, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -183,7 +183,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Melancholic, intellectual, secretive and romantic, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Moody painterly or film-photo finish, with clean, deliberate marks and no accidental noise.',
+        'Moody painterly or film-photo finish with rich darks, soft grain and detailed old materials.',
       key_features: 'tweed; candlelit library; marble busts; ink and parchment',
       creative_brief:
         "Dark academia: candlelit old universities, tweed, leather books, marble busts and scholarly obsession. Carry it through tweed, candlelit library, marble busts, ink and parchment. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -260,7 +260,7 @@ export const GENERATED_STYLE_PRESETS = [
         "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: fused with grown organic machinery: veins, tendons, membranes, growth vats and pulsing tubes.",
       color_and_tone: 'Flesh pinks, bile yellow, sick green and dark red.',
       lighting_and_shadow:
-        'Wet lab light and bioluminescent glow, expressed through the style rather than photographic lighting.',
+        'Wet lab light and bioluminescent glow from veins and vats, shining off wet membranes into green-black shadow.',
       texture_and_material:
         'Wet skin, membrane, cartilage and glass vats, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -268,7 +268,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Unsettling, visceral, strange and feverish, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Detailed painterly render with wet surfaces, with clean, deliberate marks and no accidental noise.',
+        'Detailed painterly render with wet glossy surfaces, organic translucency and controlled, readable detail.',
       key_features: 'grown machinery; veins; membranes; vats; bioluminescence',
       creative_brief:
         "Biopunk: living technology grown from flesh, veins and tissue in wet labs and organic cities. Carry it through grown machinery, veins, membranes, vats, bioluminescence. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -378,7 +378,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Optimistic, fresh, clean and nostalgic, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Glossy 2000s digital render, with clean, deliberate marks and no accidental noise.',
+        'Glossy 2000s digital render with bright gradients, water-droplet highlights and clean airbrushed glass.',
       key_features: 'aqua glass; bubbles; blue sky; green hills; glossy shine',
       creative_brief:
         "Frutiger Aero: mid-2000s glossy optimism with water, bubbles, green fields, blue skies and glassy UI shine. Carry it through aqua glass, bubbles, blue sky, green hills, glossy shine. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -456,7 +456,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Rainbow iridescence over silver, violet and pink, used consistently across subject and background.',
       lighting_and_shadow:
-        'Bright point lights creating sparkle and flare, expressed through the style rather than photographic lighting.',
+        'Bright point lights creating sparkle, starburst flares and rainbow scatter across the flakes on a dark ground.',
       texture_and_material:
         'Glitter flakes, holographic foil and gloss, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -464,7 +464,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Festive, dazzling, glamorous and playful, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Macro sparkle render, with clean, deliberate marks and no accidental noise.',
+        'Macro sparkle render or photograph with crisp individual flakes and clean iridescent color.',
       key_features: 'iridescent flakes; rainbow sparkle; holographic foil',
       creative_brief:
         "Holographic flake: the subject covered in iridescent glitter flakes that scatter rainbow sparkles. Carry it through iridescent flakes, rainbow sparkle, holographic foil. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -486,14 +486,14 @@ export const GENERATED_STYLE_PRESETS = [
         "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: set on a damp forest floor among moss, mushrooms, snails, frogs, beetles, old bones and collected shiny trinkets.",
       color_and_tone: 'Moss green, mud brown, mushroom cream and beetle iridescence.',
       lighting_and_shadow:
-        'Damp soft light under trees, expressed through the style rather than photographic lighting.',
+        'Damp soft light under trees, dew highlights on moss and mushroom caps, cool shade near the ground.',
       texture_and_material: 'Moss, mud, mushroom gills, snail shells and tarnished trinkets.',
       camera_and_composition:
         'Low ground-level framing close to the forest floor, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Earthy, cozy, strange and playful, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Detailed illustration or macro photo feel, with clean, deliberate marks and no accidental noise.',
+        'Detailed illustration or close macro photograph with rich organic texture and earthy color.',
       creative_brief:
         "Goblincore: loving the ugly and overlooked parts of nature, mushrooms, moss, frogs, snails, bones and shiny found treasures. Carry it through moss, mushrooms, frogs, snails, bones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'moss; mushrooms; frogs; snails; bones; found treasures',
@@ -522,14 +522,14 @@ export const GENERATED_STYLE_PRESETS = [
         "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: painted as a murky amateur oil or gouache, shrunk small within a wide, mist-filled space, then reproduced in faded photocopy with grain and crushed blacks.",
       color_and_tone: 'Muted greys, deep blues, forest greens and one faded accent.',
       lighting_and_shadow:
-        'Dim mist and moonlight, expressed through the style rather than photographic lighting.',
+        'Dim mist and pale moonlight flattening the scene, small figures lost in soft grey haze.',
       texture_and_material: 'Old painting reproduced with copier grain and faded print.',
       camera_and_composition:
         'Square-ish cover framing with a lonely distant subject, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Melancholic, mysterious, lonely and ancient, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Lo-fi reproduced painting, with clean, deliberate marks and no accidental noise.',
+        'Lo-fi reproduced painting with photocopy grain, crushed blacks and faded cassette-insert color.',
       creative_brief:
         "Dungeon synth cover art: murky lo-fi fantasy painting reproduced like a photocopied cassette insert, with small lonely figures, heavy mist and faded ink. Carry it through misty castle, lone wanderer, murky paint, copier grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'misty castle; lone wanderer; murky paint; copier grain',
@@ -555,7 +555,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Faded whites, moss green, rust and humid gold, used consistently across subject and background.',
       lighting_and_shadow:
-        'Hazy humid light and dusk, expressed through the style rather than photographic lighting.',
+        'Hazy humid light at dusk, low gold sun through moss and heavy damp shadows on porches.',
       texture_and_material:
         'Peeling paint, moss, rust and damp wood, visible at a glance as the signature of the style.',
       camera_and_composition:
@@ -563,7 +563,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Uneasy, humid, secretive and melancholy, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Painterly or film-photo finish, with clean, deliberate marks and no accidental noise.',
+        'Painterly or film-photograph finish with humid haze, grain and weathered textures.',
       creative_brief:
         "Southern Gothic: decaying rural mansions, swamps, Spanish moss, humid heat and quiet grotesque secrets. Carry it through Spanish moss, swamp, peeling mansion, humid haze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Spanish moss; swamp; peeling mansion; humid haze',

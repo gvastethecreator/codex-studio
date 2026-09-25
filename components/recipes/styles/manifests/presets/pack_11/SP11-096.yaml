@@ -24,11 +24,11 @@ visualDna:
   aesthetic: 'Goblincore: loving the ugly and overlooked parts of nature, mushrooms, moss, frogs, snails, bones and shiny found treasures.'
   subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: set on a damp forest floor among moss, mushrooms, snails, frogs, beetles, old bones and collected shiny trinkets."
   color_and_tone: Moss green, mud brown, mushroom cream and beetle iridescence.
-  lighting_and_shadow: Damp soft light under trees, expressed through the style rather than photographic lighting.
+  lighting_and_shadow: 'Damp soft light under trees, dew highlights on moss and mushroom caps, cool shade near the ground.'
   texture_and_material: Moss, mud, mushroom gills, snail shells and tarnished trinkets.
   camera_and_composition: Low ground-level framing close to the forest floor, arranged so the subject still reads at a glance.
   atmosphere_and_mood: Earthy, cozy, strange and playful, driven by the construction, color and rhythm.
-  rendering_and_quality: Detailed illustration or macro photo feel, with clean, deliberate marks and no accidental noise.
+  rendering_and_quality: 'Detailed illustration or close macro photograph with rich organic texture and earthy color.'
   creative_brief: "Goblincore: loving the ugly and overlooked parts of nature, mushrooms, moss, frogs, snails, bones and shiny found treasures. Carry it through moss, mushrooms, frogs, snails, bones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: moss; mushrooms; frogs; snails; bones; found treasures
 avoidRules:

@@ -24,11 +24,11 @@ visualDna:
   aesthetic: 'Dungeon synth cover art: murky lo-fi fantasy painting reproduced like a photocopied cassette insert, with small lonely figures, heavy mist and faded ink.'
   subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: painted as a murky amateur oil or gouache, shrunk small within a wide, mist-filled space, then reproduced in faded photocopy with grain and crushed blacks."
   color_and_tone: Muted greys, deep blues, forest greens and one faded accent.
-  lighting_and_shadow: Dim mist and moonlight, expressed through the style rather than photographic lighting.
+  lighting_and_shadow: 'Dim mist and pale moonlight flattening the scene, small figures lost in soft grey haze.'
   texture_and_material: Old painting reproduced with copier grain and faded print.
   camera_and_composition: Square-ish cover framing with a lonely distant subject, arranged so the subject still reads at a glance.
   atmosphere_and_mood: Melancholic, mysterious, lonely and ancient, driven by the construction, color and rhythm.
-  rendering_and_quality: Lo-fi reproduced painting, with clean, deliberate marks and no accidental noise.
+  rendering_and_quality: 'Lo-fi reproduced painting with photocopy grain, crushed blacks and faded cassette-insert color.'
   creative_brief: "Dungeon synth cover art: murky lo-fi fantasy painting reproduced like a photocopied cassette insert, with small lonely figures, heavy mist and faded ink. Carry it through misty castle, lone wanderer, murky paint, copier grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: misty castle; lone wanderer; murky paint; copier grain
 avoidRules:

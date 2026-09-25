@@ -15,11 +15,11 @@ visualDna:
   aesthetic: 'Bento box: compartmentalized lunch with cute character food made from rice, nori and vegetables.'
   subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — arranged in a bento box: rice shaped into characters, nori faces, vegetable details and neat compartments."
   color_and_tone: Fresh greens, white rice, pink, yellow and nori black.
-  lighting_and_shadow: Bright soft daylight from above, expressed through the style rather than photographic lighting.
+  lighting_and_shadow: 'Bright soft daylight from above with gentle shadows inside each compartment of the box.'
   texture_and_material: Rice grains, nori, egg, vegetables and lacquer box, visible at a glance as the signature of the style.
   camera_and_composition: Top-down view of the box, arranged so the subject still reads at a glance.
   atmosphere_and_mood: Cute, careful, cheerful and neat, driven by the construction, color and rhythm.
-  rendering_and_quality: Photoreal food photography, with clean, deliberate marks and no accidental noise.
+  rendering_and_quality: 'Photoreal top-down food photograph with distinct rice grains, crisp nori edges and neat detail.'
   key_features: compartments; rice characters; nori faces
   creative_brief: "Bento box: compartmentalized lunch with cute character food made from rice, nori and vegetables. Carry it through compartments, rice characters, nori faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:

@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Glass, water droplets, bubbles and glossy plastic, visible at a glance as the signature of the style.
   camera_and_composition: Clean airy framing with lots of sky, arranged so the subject still reads at a glance.
   atmosphere_and_mood: Optimistic, fresh, clean and nostalgic, driven by the construction, color and rhythm.
-  rendering_and_quality: Glossy 2000s digital render, with clean, deliberate marks and no accidental noise.
+  rendering_and_quality: 'Glossy 2000s digital render with bright gradients, water-droplet highlights and clean airbrushed glass.'
   key_features: aqua glass; bubbles; blue sky; green hills; glossy shine
   creative_brief: "Frutiger Aero: mid-2000s glossy optimism with water, bubbles, green fields, blue skies and glassy UI shine. Carry it through aqua glass, bubbles, blue sky, green hills, glossy shine. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
