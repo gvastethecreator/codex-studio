@@ -2503,5 +2503,20 @@
     "evidencePresetIds": ["SP25-161", "SP25-162", "SP25-163"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_25",
+    "category": "10. Typography & Lettering",
+    "displayCategory": "Typography & lettering",
+    "kind": "mixed",
+    "expectedCount": 20,
+    "baselineHash": "d253e3c6cf9e18a713d81266997d47db35e9e6b079624835bd5c2c0620fbcb0e",
+    "problem": "Lettering styles must change how letters are built while every requested character, accent and sign stays exact, without copying commercial typefaces or presenting images as installable fonts.",
+    "preserve": "The exact requested string, case, accents, punctuation and spacing; each style keeps its letter construction (plotter facets, breathing counters, interlocking feet, ribbon terminals, offset inlines, wedge capitals, soft ligatures, mechanical joints, compressed apertures, woven strokes, pixel clusters, cut ink, angular script, tilted counters, layered edges, taut bridges, signwriter brush).",
+    "proposedAction": "Applied-design import: 16 lettering styles, Signwriter Brush Lettering as a new style replacing the exact-copy proof (moved to QA-PROTOCOLS.md), width and optical-size specimen profiles and the variable rhythm sequence profile; requested-text policy and three new title briefs per preset.",
+    "validation": "Generate each card, then transcribe the result character by character against the brief; test a short word, a two-line title, numbers with punctuation, mixed case script and an accented word.",
+    "evidencePresetIds": ["SP25-181", "SP25-182", "SP25-183"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

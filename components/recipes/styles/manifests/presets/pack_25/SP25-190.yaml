@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-190
+packId: pack_25
+name: Interwoven Stroke Display
+styleAnchors:
+  - Interwoven Stroke Display
+  - woven stroke display lettering
+  - over-under strokes
+displayName: Interwoven Stroke Display
+category: 10. Typography & Lettering
+domain: woven stroke display lettering
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - typography-and-lettering
+  - interwoven-stroke
+  - applied-design
+  - lettering
+  - r-typ-10
+  - requested-text
+visualDna:
+  aesthetic: 'Interwoven Stroke Display: letter strokes cross over and under each other at a few clear points, the word still reading in order.'
+  subject_treatment: Letter a short requested title with strokes that cross over and under at a few well-spaced points, keeping every letter recognizable and in order.
+  color_and_tone: One ink or two values per path, readable in monochrome.
+  lighting_and_shadow: Flat bands where over and under are shown by the lower stroke stopping.
+  texture_and_material: Bands of related weight, clean gaps and only a few crossings.
+  camera_and_composition: Spaced crossings and separate words, no central knot blocking the reading.
+  atmosphere_and_mood: Continuity and cooperation between strokes, woven and lively.
+  rendering_and_quality: Crisp display lettering where each path can be traced by finger.
+  creative_brief: "Interwoven Stroke Display: letter strokes cross over and under each other at a few clear points, the word still reading in order. Carry it through over-under strokes, few crossings, traceable paths, short title. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: over-under strokes; few crossings; traceable paths; short title
+avoidRules:
+  - impossible knot
+  - illegible letters
+  - rope decoration added
+  - copying a commercial typeface
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: impossible knot, illegible letters, rope decoration added, copying a commercial typeface, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: typography-and-lettering
+  categoryName: 10. Typography & Lettering
+  domain: woven stroke display lettering
+  tags:
+    - curation-v2
+    - typography-and-lettering
+    - interwoven-stroke
+    - applied-design
+    - lettering
+    - r-typ-10
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

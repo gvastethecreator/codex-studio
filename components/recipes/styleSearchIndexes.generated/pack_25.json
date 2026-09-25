@@ -3,7 +3,7 @@
     {
       "id": "pack_25",
       "name": "Applied Design",
-      "presetCount": 180
+      "presetCount": 200
     }
   ],
   "presets": [
@@ -3206,7 +3206,335 @@
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp25-180 material transformation sequence material change keyframe sequence profile three stages 9. advertising & campaign design advertising & campaigns material change keyframe sequence profile pack_25 applied design advertising-and-campaign-design applied-design advertising-and-campaign-design material-change-keyframe-sequence-profile"
+    },
+    {
+      "id": "SP25-181",
+      "name": "Plotter-Facet Lettering",
+      "styleAnchors": ["Plotter-Facet Lettering", "faceted segment lettering", "segmented curves"],
+      "ref": "pack_25/SP25-181.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "typography-and-lettering",
+      "categoryName": "10. Typography & Lettering",
+      "domain": "faceted segment lettering",
+      "tags": ["applied-design", "typography-and-lettering", "faceted-segment-lettering"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-181 plotter-facet lettering faceted segment lettering segmented curves 10. typography & lettering typography & lettering faceted segment lettering pack_25 applied design typography-and-lettering applied-design typography-and-lettering faceted-segment-lettering"
+    },
+    {
+      "id": "SP25-182",
+      "name": "Counterform Breathing",
+      "styleAnchors": [
+        "Counterform Breathing",
+        "breathing counter lettering",
+        "breathing counters"
+      ],
+      "ref": "pack_25/SP25-182.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "typography-and-lettering",
+      "categoryName": "10. Typography & Lettering",
+      "domain": "breathing counter lettering",
+      "tags": ["applied-design", "typography-and-lettering", "breathing-counter-lettering"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-182 counterform breathing breathing counter lettering breathing counters 10. typography & lettering typography & lettering breathing counter lettering pack_25 applied design typography-and-lettering applied-design typography-and-lettering breathing-counter-lettering"
+    },
+    {
+      "id": "SP25-183",
+      "name": "Interlocking Baseline Type",
+      "styleAnchors": ["Interlocking Baseline Type", "interlocking foot lettering", "shared feet"],
+      "ref": "pack_25/SP25-183.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "typography-and-lettering",
+      "categoryName": "10. Typography & Lettering",
+      "domain": "interlocking foot lettering",
+      "tags": ["applied-design", "typography-and-lettering", "interlocking-foot-lettering"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-183 interlocking baseline type interlocking foot lettering shared feet 10. typography & lettering typography & lettering interlocking foot lettering pack_25 applied design typography-and-lettering applied-design typography-and-lettering interlocking-foot-lettering"
+    },
+    {
+      "id": "SP25-184",
+      "name": "Ribbon-Terminal Lettering",
+      "styleAnchors": [
+        "Ribbon-Terminal Lettering",
+        "ribbon terminal lettering",
+        "ribbon terminals"
+      ],
+      "ref": "pack_25/SP25-184.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "typography-and-lettering",
+      "categoryName": "10. Typography & Lettering",
+      "domain": "ribbon terminal lettering",
+      "tags": ["applied-design", "typography-and-lettering", "ribbon-terminal-lettering"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-184 ribbon-terminal lettering ribbon terminal lettering ribbon terminals 10. typography & lettering typography & lettering ribbon terminal lettering pack_25 applied design typography-and-lettering applied-design typography-and-lettering ribbon-terminal-lettering"
+    },
+    {
+      "id": "SP25-185",
+      "name": "Offset Inline Stems",
+      "styleAnchors": [
+        "Offset Inline Stems",
+        "offset inner channel lettering",
+        "offset inner channels"
+      ],
+      "ref": "pack_25/SP25-185.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "typography-and-lettering",
+      "categoryName": "10. Typography & Lettering",
+      "domain": "offset inner channel lettering",
+      "tags": ["applied-design", "typography-and-lettering", "offset-inner-channel-lettering"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-185 offset inline stems offset inner channel lettering offset inner channels 10. typography & lettering typography & lettering offset inner channel lettering pack_25 applied design typography-and-lettering applied-design typography-and-lettering offset-inner-channel-lettering"
+    },
+    {
+      "id": "SP25-186",
+      "name": "Carved Wedge Capitals",
+      "styleAnchors": ["Carved Wedge Capitals", "wedge-cut capital lettering", "wedge serifs"],
+      "ref": "pack_25/SP25-186.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "typography-and-lettering",
+      "categoryName": "10. Typography & Lettering",
+      "domain": "wedge-cut capital lettering",
+      "tags": ["applied-design", "typography-and-lettering", "wedge-cut-capital-lettering"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-186 carved wedge capitals wedge-cut capital lettering wedge serifs 10. typography & lettering typography & lettering wedge-cut capital lettering pack_25 applied design typography-and-lettering applied-design typography-and-lettering wedge-cut-capital-lettering"
+    },
+    {
+      "id": "SP25-187",
+      "name": "Soft-Block Ligatures",
+      "styleAnchors": ["Soft-Block Ligatures", "soft compact ligature lettering", "soft blocks"],
+      "ref": "pack_25/SP25-187.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "typography-and-lettering",
+      "categoryName": "10. Typography & Lettering",
+      "domain": "soft compact ligature lettering",
+      "tags": ["applied-design", "typography-and-lettering", "soft-compact-ligature-lettering"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-187 soft-block ligatures soft compact ligature lettering soft blocks 10. typography & lettering typography & lettering soft compact ligature lettering pack_25 applied design typography-and-lettering applied-design typography-and-lettering soft-compact-ligature-lettering"
+    },
+    {
+      "id": "SP25-188",
+      "name": "Mechanical Joint Alphabet",
+      "styleAnchors": ["Mechanical Joint Alphabet", "assembled-piece lettering", "bars and arcs"],
+      "ref": "pack_25/SP25-188.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "typography-and-lettering",
+      "categoryName": "10. Typography & Lettering",
+      "domain": "assembled-piece lettering",
+      "tags": ["applied-design", "typography-and-lettering", "assembled-piece-lettering"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-188 mechanical joint alphabet assembled-piece lettering bars and arcs 10. typography & lettering typography & lettering assembled-piece lettering pack_25 applied design typography-and-lettering applied-design typography-and-lettering assembled-piece-lettering"
+    },
+    {
+      "id": "SP25-189",
+      "name": "Compressed Aperture Sans",
+      "styleAnchors": [
+        "Compressed Aperture Sans",
+        "narrow wide-aperture lettering",
+        "narrow widths"
+      ],
+      "ref": "pack_25/SP25-189.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "typography-and-lettering",
+      "categoryName": "10. Typography & Lettering",
+      "domain": "narrow wide-aperture lettering",
+      "tags": ["applied-design", "typography-and-lettering", "narrow-wide-aperture-lettering"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-189 compressed aperture sans narrow wide-aperture lettering narrow widths 10. typography & lettering typography & lettering narrow wide-aperture lettering pack_25 applied design typography-and-lettering applied-design typography-and-lettering narrow-wide-aperture-lettering"
+    },
+    {
+      "id": "SP25-190",
+      "name": "Interwoven Stroke Display",
+      "styleAnchors": [
+        "Interwoven Stroke Display",
+        "woven stroke display lettering",
+        "over-under strokes"
+      ],
+      "ref": "pack_25/SP25-190.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "typography-and-lettering",
+      "categoryName": "10. Typography & Lettering",
+      "domain": "woven stroke display lettering",
+      "tags": ["applied-design", "typography-and-lettering", "woven-stroke-display-lettering"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-190 interwoven stroke display woven stroke display lettering over-under strokes 10. typography & lettering typography & lettering woven stroke display lettering pack_25 applied design typography-and-lettering applied-design typography-and-lettering woven-stroke-display-lettering"
+    },
+    {
+      "id": "SP25-191",
+      "name": "Stepped Pixel Lettering",
+      "styleAnchors": [
+        "Stepped Pixel Lettering",
+        "quantized pixel lettering",
+        "whole pixel clusters"
+      ],
+      "ref": "pack_25/SP25-191.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "typography-and-lettering",
+      "categoryName": "10. Typography & Lettering",
+      "domain": "quantized pixel lettering",
+      "tags": ["applied-design", "typography-and-lettering", "quantized-pixel-lettering"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-191 stepped pixel lettering quantized pixel lettering whole pixel clusters 10. typography & lettering typography & lettering quantized pixel lettering pack_25 applied design typography-and-lettering applied-design typography-and-lettering quantized-pixel-lettering"
+    },
+    {
+      "id": "SP25-192",
+      "name": "Interrupted Ink Letters",
+      "styleAnchors": ["Interrupted Ink Letters", "structurally cut ink lettering", "heavy ink"],
+      "ref": "pack_25/SP25-192.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "typography-and-lettering",
+      "categoryName": "10. Typography & Lettering",
+      "domain": "structurally cut ink lettering",
+      "tags": ["applied-design", "typography-and-lettering", "structurally-cut-ink-lettering"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-192 interrupted ink letters structurally cut ink lettering heavy ink 10. typography & lettering typography & lettering structurally cut ink lettering pack_25 applied design typography-and-lettering applied-design typography-and-lettering structurally-cut-ink-lettering"
+    },
+    {
+      "id": "SP25-193",
+      "name": "Angular Loop Script",
+      "styleAnchors": [
+        "Angular Loop Script",
+        "angular connected script lettering",
+        "angular loops"
+      ],
+      "ref": "pack_25/SP25-193.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "typography-and-lettering",
+      "categoryName": "10. Typography & Lettering",
+      "domain": "angular connected script lettering",
+      "tags": ["applied-design", "typography-and-lettering", "angular-connected-script-lettering"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-193 angular loop script angular connected script lettering angular loops 10. typography & lettering typography & lettering angular connected script lettering pack_25 applied design typography-and-lettering applied-design typography-and-lettering angular-connected-script-lettering"
+    },
+    {
+      "id": "SP25-194",
+      "name": "Rotated Counter Display",
+      "styleAnchors": [
+        "Rotated Counter Display",
+        "tilted counter display lettering",
+        "tilted counters"
+      ],
+      "ref": "pack_25/SP25-194.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "typography-and-lettering",
+      "categoryName": "10. Typography & Lettering",
+      "domain": "tilted counter display lettering",
+      "tags": ["applied-design", "typography-and-lettering", "tilted-counter-display-lettering"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-194 rotated counter display tilted counter display lettering tilted counters 10. typography & lettering typography & lettering tilted counter display lettering pack_25 applied design typography-and-lettering applied-design typography-and-lettering tilted-counter-display-lettering"
+    },
+    {
+      "id": "SP25-195",
+      "name": "Layer-Edge Typography",
+      "styleAnchors": ["Layer-Edge Typography", "shallow layered edge lettering", "stacked layers"],
+      "ref": "pack_25/SP25-195.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "typography-and-lettering",
+      "categoryName": "10. Typography & Lettering",
+      "domain": "shallow layered edge lettering",
+      "tags": ["applied-design", "typography-and-lettering", "shallow-layered-edge-lettering"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-195 layer-edge typography shallow layered edge lettering stacked layers 10. typography & lettering typography & lettering shallow layered edge lettering pack_25 applied design typography-and-lettering applied-design typography-and-lettering shallow-layered-edge-lettering"
+    },
+    {
+      "id": "SP25-196",
+      "name": "Tension-Bridge Wordforms",
+      "styleAnchors": ["Tension-Bridge Wordforms", "bridged letter wordform", "taut bridges"],
+      "ref": "pack_25/SP25-196.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "typography-and-lettering",
+      "categoryName": "10. Typography & Lettering",
+      "domain": "bridged letter wordform",
+      "tags": ["applied-design", "typography-and-lettering", "bridged-letter-wordform"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-196 tension-bridge wordforms bridged letter wordform taut bridges 10. typography & lettering typography & lettering bridged letter wordform pack_25 applied design typography-and-lettering applied-design typography-and-lettering bridged-letter-wordform"
+    },
+    {
+      "id": "SP25-197",
+      "name": "Signwriter Brush Lettering",
+      "styleAnchors": [
+        "Signwriter Brush Lettering",
+        "hand-painted sign lettering",
+        "flat-brush strokes"
+      ],
+      "ref": "pack_25/SP25-197.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "typography-and-lettering",
+      "categoryName": "10. Typography & Lettering",
+      "domain": "hand-painted sign lettering",
+      "tags": ["applied-design", "typography-and-lettering", "hand-painted-sign-lettering"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-197 signwriter brush lettering hand-painted sign lettering flat-brush strokes 10. typography & lettering typography & lettering hand-painted sign lettering pack_25 applied design typography-and-lettering applied-design typography-and-lettering hand-painted-sign-lettering"
+    },
+    {
+      "id": "SP25-198",
+      "name": "Width-Axis Exploration",
+      "styleAnchors": [
+        "Width-Axis Exploration",
+        "width variation specimen profile",
+        "three widths"
+      ],
+      "ref": "pack_25/SP25-198.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "typography-and-lettering",
+      "categoryName": "10. Typography & Lettering",
+      "domain": "width variation specimen profile",
+      "tags": ["applied-design", "typography-and-lettering", "width-variation-specimen-profile"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-198 width-axis exploration width variation specimen profile three widths 10. typography & lettering typography & lettering width variation specimen profile pack_25 applied design typography-and-lettering applied-design typography-and-lettering width-variation-specimen-profile"
+    },
+    {
+      "id": "SP25-199",
+      "name": "Optical Size Specimen",
+      "styleAnchors": [
+        "Optical Size Specimen",
+        "optical size comparison profile",
+        "display and small versions"
+      ],
+      "ref": "pack_25/SP25-199.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "typography-and-lettering",
+      "categoryName": "10. Typography & Lettering",
+      "domain": "optical size comparison profile",
+      "tags": ["applied-design", "typography-and-lettering", "optical-size-comparison-profile"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-199 optical size specimen optical size comparison profile display and small versions 10. typography & lettering typography & lettering optical size comparison profile pack_25 applied design typography-and-lettering applied-design typography-and-lettering optical-size-comparison-profile"
+    },
+    {
+      "id": "SP25-200",
+      "name": "Variable Rhythm Sequence",
+      "styleAnchors": [
+        "Variable Rhythm Sequence",
+        "lettering change keyframe sequence",
+        "three frames"
+      ],
+      "ref": "pack_25/SP25-200.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "typography-and-lettering",
+      "categoryName": "10. Typography & Lettering",
+      "domain": "lettering change keyframe sequence",
+      "tags": ["applied-design", "typography-and-lettering", "lettering-change-keyframe-sequence"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-200 variable rhythm sequence lettering change keyframe sequence three frames 10. typography & lettering typography & lettering lettering change keyframe sequence pack_25 applied design typography-and-lettering applied-design typography-and-lettering lettering-change-keyframe-sequence"
     }
   ],
-  "totalPresetCount": 180
+  "totalPresetCount": 200
 }

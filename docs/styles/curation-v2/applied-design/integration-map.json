@@ -1077,58 +1077,112 @@
       "category": "9. Advertising & Campaign Design"
     },
     "R-TYP-01": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-181",
+      "name": "Plotter-Facet Lettering",
+      "category": "10. Typography & Lettering"
     },
     "R-TYP-02": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-182",
+      "name": "Counterform Breathing",
+      "category": "10. Typography & Lettering"
     },
     "R-TYP-03": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-183",
+      "name": "Interlocking Baseline Type",
+      "category": "10. Typography & Lettering"
     },
     "R-TYP-04": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-184",
+      "name": "Ribbon-Terminal Lettering",
+      "category": "10. Typography & Lettering"
     },
     "R-TYP-05": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-185",
+      "name": "Offset Inline Stems",
+      "category": "10. Typography & Lettering"
     },
     "R-TYP-06": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-186",
+      "name": "Carved Wedge Capitals",
+      "category": "10. Typography & Lettering"
     },
     "R-TYP-07": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-187",
+      "name": "Soft-Block Ligatures",
+      "category": "10. Typography & Lettering"
     },
     "R-TYP-08": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-188",
+      "name": "Mechanical Joint Alphabet",
+      "category": "10. Typography & Lettering"
     },
     "R-TYP-09": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-189",
+      "name": "Compressed Aperture Sans",
+      "category": "10. Typography & Lettering"
     },
     "R-TYP-10": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-190",
+      "name": "Interwoven Stroke Display",
+      "category": "10. Typography & Lettering"
     },
     "R-TYP-11": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-191",
+      "name": "Stepped Pixel Lettering",
+      "category": "10. Typography & Lettering"
     },
     "R-TYP-12": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-192",
+      "name": "Interrupted Ink Letters",
+      "category": "10. Typography & Lettering"
     },
     "R-TYP-13": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-193",
+      "name": "Angular Loop Script",
+      "category": "10. Typography & Lettering"
     },
     "R-TYP-14": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-194",
+      "name": "Rotated Counter Display",
+      "category": "10. Typography & Lettering"
     },
     "R-TYP-15": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-195",
+      "name": "Layer-Edge Typography",
+      "category": "10. Typography & Lettering"
     },
     "R-TYP-16": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-196",
+      "name": "Tension-Bridge Wordforms",
+      "category": "10. Typography & Lettering"
     },
     "R-TYP-17": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-198",
+      "name": "Width-Axis Exploration",
+      "category": "10. Typography & Lettering"
     },
     "R-TYP-18": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-199",
+      "name": "Optical Size Specimen",
+      "category": "10. Typography & Lettering"
     },
     "R-TYP-19": {
       "status": "qa-protocol",
@@ -1136,7 +1190,10 @@
       "doc": "QA-PROTOCOLS.md"
     },
     "R-TYP-20": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-200",
+      "name": "Variable Rhythm Sequence",
+      "category": "10. Typography & Lettering"
     },
     "R-EDT-01": {
       "status": "pending"

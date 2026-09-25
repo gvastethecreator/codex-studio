@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP25-199
+packId: pack_25
+name: Optical Size Specimen
+styleAnchors:
+  - Optical Size Specimen
+  - optical size comparison profile
+  - display and small versions
+displayName: Optical Size Specimen
+category: 10. Typography & Lettering
+domain: optical size comparison profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - typography-and-lettering
+  - optical-size
+  - applied-design
+  - lettering
+  - profile
+  - r-typ-18
+  - requested-text
+visualDna:
+  aesthetic: 'Optical Size Specimen: a display version and a small-size version of the same lettering compared, with the adjustments made visible.'
+  subject_treatment: Compare a display version and a small-size version of the requested words, adjusting apertures, contrast and detail and keeping every character exact.
+  color_and_tone: One ink on opposing test grounds with nothing hiding problems.
+  lighting_and_shadow: Flat specimen that measures only letters and reading.
+  texture_and_material: Clean edges, detail reduced only where it helps the small size.
+  camera_and_composition: The same text at native sizes and in separate enlargements.
+  atmosphere_and_mood: Perceptual consistency across scales rather than identical outlines.
+  rendering_and_quality: The small version stays legible after authorized simplifications.
+  creative_brief: "Optical Size Specimen: a display version and a small-size version of the same lettering compared, with the adjustments made visible. Carry it through display and small versions, visible adjustments, native sizes, enlargements. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: display and small versions; visible adjustments; native sizes; enlargements
+avoidRules:
+  - sharpening as correction
+  - different text
+  - detail removed without a note
+  - copying a commercial typeface
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: sharpening as correction, different text, detail removed without a note, copying a commercial typeface, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: typography-and-lettering
+  categoryName: 10. Typography & Lettering
+  domain: optical size comparison profile
+  tags:
+    - curation-v2
+    - typography-and-lettering
+    - optical-size
+    - applied-design
+    - lettering
+    - profile
+    - r-typ-18
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

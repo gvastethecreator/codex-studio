@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-192
+packId: pack_25
+name: Interrupted Ink Letters
+styleAnchors:
+  - Interrupted Ink Letters
+  - structurally cut ink lettering
+  - heavy ink
+displayName: Interrupted Ink Letters
+category: 10. Typography & Lettering
+domain: structurally cut ink lettering
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - typography-and-lettering
+  - interrupted-ink
+  - applied-design
+  - lettering
+  - r-typ-12
+  - requested-text
+visualDna:
+  aesthetic: 'Interrupted Ink Letters: heavy ink letters broken by deliberate structural cuts that still leave every letter unmistakable.'
+  subject_treatment: Letter the requested words as heavy ink masses with structural cuts placed by anatomy, every distinctive trait and accent kept.
+  color_and_tone: One solid ink with the ground showing through the cuts.
+  lighting_and_shadow: Flat lettering where the cuts are drawn into the letters.
+  texture_and_material: Controlled ink edges, minimal irregularity and wide openings.
+  camera_and_composition: Cuts distributed by function rather than one identical stripe.
+  atmosphere_and_mood: Printed force and internal pauses, bold and punchy.
+  rendering_and_quality: Crisp lettering that still reads when reduced and without texture.
+  creative_brief: "Interrupted Ink Letters: heavy ink letters broken by deliberate structural cuts that still leave every letter unmistakable. Carry it through heavy ink, structural cuts, anatomy-led breaks, punchy weight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: heavy ink; structural cuts; anatomy-led breaks; punchy weight
+avoidRules:
+  - generic grunge
+  - damaged letters
+  - cuts that change a character
+  - copying a commercial typeface
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: generic grunge, damaged letters, cuts that change a character, copying a commercial typeface, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: typography-and-lettering
+  categoryName: 10. Typography & Lettering
+  domain: structurally cut ink lettering
+  tags:
+    - curation-v2
+    - typography-and-lettering
+    - interrupted-ink
+    - applied-design
+    - lettering
+    - r-typ-12
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

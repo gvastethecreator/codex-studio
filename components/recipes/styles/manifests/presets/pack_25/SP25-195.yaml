@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-195
+packId: pack_25
+name: Layer-Edge Typography
+styleAnchors:
+  - Layer-Edge Typography
+  - shallow layered edge lettering
+  - stacked layers
+displayName: Layer-Edge Typography
+category: 10. Typography & Lettering
+domain: shallow layered edge lettering
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - typography-and-lettering
+  - layer-edge
+  - applied-design
+  - lettering
+  - r-typ-15
+  - requested-text
+visualDna:
+  aesthetic: 'Layer-Edge Typography: letters built from shallow stacked layers with visible edges, a low tactile depth that keeps the word clear.'
+  subject_treatment: Build the requested words from two or three shallow stacked layers with clear edges, keeping silhouette, counters and every character exact.
+  color_and_tone: Two or three values separating the layers, readable in one ink too.
+  lighting_and_shadow: Soft light from one direction with short shadows clear of the counters.
+  texture_and_material: Smooth matte layers of related thickness, clean and precise.
+  camera_and_composition: Frontal or near-frontal view, depth always subordinate to reading.
+  atmosphere_and_mood: Editorial tactility and a layered construction, crafted and calm.
+  rendering_and_quality: Crisp lettering where every layer belongs to the same letter.
+  creative_brief: "Layer-Edge Typography: letters built from shallow stacked layers with visible edges, a low tactile depth that keeps the word clear. Carry it through stacked layers, visible edges, shallow depth, frontal view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stacked layers; visible edges; shallow depth; frontal view
+avoidRules:
+  - misregistered layers
+  - deformed letters
+  - material as the only difference
+  - copying a commercial typeface
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: misregistered layers, deformed letters, material as the only difference, copying a commercial typeface, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: typography-and-lettering
+  categoryName: 10. Typography & Lettering
+  domain: shallow layered edge lettering
+  tags:
+    - curation-v2
+    - typography-and-lettering
+    - layer-edge
+    - applied-design
+    - lettering
+    - r-typ-15
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

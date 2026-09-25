@@ -216,6 +216,29 @@ categories:
       - pack_25/SP25-178.yaml
       - pack_25/SP25-179.yaml
       - pack_25/SP25-180.yaml
+  - id: typography-and-lettering
+    name: 10. Typography & Lettering
+    presetRefs:
+      - pack_25/SP25-181.yaml
+      - pack_25/SP25-182.yaml
+      - pack_25/SP25-183.yaml
+      - pack_25/SP25-184.yaml
+      - pack_25/SP25-185.yaml
+      - pack_25/SP25-186.yaml
+      - pack_25/SP25-187.yaml
+      - pack_25/SP25-188.yaml
+      - pack_25/SP25-189.yaml
+      - pack_25/SP25-190.yaml
+      - pack_25/SP25-191.yaml
+      - pack_25/SP25-192.yaml
+      - pack_25/SP25-193.yaml
+      - pack_25/SP25-194.yaml
+      - pack_25/SP25-195.yaml
+      - pack_25/SP25-196.yaml
+      - pack_25/SP25-197.yaml
+      - pack_25/SP25-198.yaml
+      - pack_25/SP25-199.yaml
+      - pack_25/SP25-200.yaml
 presetRefs:
   - pack_25/SP25-001.yaml
   - pack_25/SP25-002.yaml
@@ -397,3 +420,23 @@ presetRefs:
   - pack_25/SP25-178.yaml
   - pack_25/SP25-179.yaml
   - pack_25/SP25-180.yaml
+  - pack_25/SP25-181.yaml
+  - pack_25/SP25-182.yaml
+  - pack_25/SP25-183.yaml
+  - pack_25/SP25-184.yaml
+  - pack_25/SP25-185.yaml
+  - pack_25/SP25-186.yaml
+  - pack_25/SP25-187.yaml
+  - pack_25/SP25-188.yaml
+  - pack_25/SP25-189.yaml
+  - pack_25/SP25-190.yaml
+  - pack_25/SP25-191.yaml
+  - pack_25/SP25-192.yaml
+  - pack_25/SP25-193.yaml
+  - pack_25/SP25-194.yaml
+  - pack_25/SP25-195.yaml
+  - pack_25/SP25-196.yaml
+  - pack_25/SP25-197.yaml
+  - pack_25/SP25-198.yaml
+  - pack_25/SP25-199.yaml
+  - pack_25/SP25-200.yaml

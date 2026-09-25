@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-196
+packId: pack_25
+name: Tension-Bridge Wordforms
+styleAnchors:
+  - Tension-Bridge Wordforms
+  - bridged letter wordform
+  - taut bridges
+displayName: Tension-Bridge Wordforms
+category: 10. Typography & Lettering
+domain: bridged letter wordform
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - typography-and-lettering
+  - tension-bridge
+  - applied-design
+  - lettering
+  - r-typ-16
+  - requested-text
+visualDna:
+  aesthetic: 'Tension-Bridge Wordforms: a few thin taut bridges join compatible letters while the rest of the word keeps clear separations.'
+  subject_treatment: Letter the requested words and join two or three compatible letters with thin taut bridges, leaving every other space open and every character exact.
+  color_and_tone: One ink with bridges lighter in weight than the main stems.
+  lighting_and_shadow: Flat lettering where tension comes from contour and counterform.
+  texture_and_material: Clean contours, precise meetings and smooth bridges of even thickness.
+  camera_and_composition: Bridges placed on compatible pairs, wide pauses elsewhere.
+  atmosphere_and_mood: Connection and tension, taut like a held string.
+  rendering_and_quality: Crisp wordform that keeps complete letters when bridges are removed.
+  creative_brief: "Tension-Bridge Wordforms: a few thin taut bridges join compatible letters while the rest of the word keeps clear separations. Carry it through taut bridges, few joins, open spaces, exact word. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: taut bridges; few joins; open spaces; exact word
+avoidRules:
+  - decorative bridges
+  - merged letters
+  - too many connections
+  - copying a commercial typeface
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: decorative bridges, merged letters, too many connections, copying a commercial typeface, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: typography-and-lettering
+  categoryName: 10. Typography & Lettering
+  domain: bridged letter wordform
+  tags:
+    - curation-v2
+    - typography-and-lettering
+    - tension-bridge
+    - applied-design
+    - lettering
+    - r-typ-16
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

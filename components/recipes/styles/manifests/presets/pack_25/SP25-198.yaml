@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP25-198
+packId: pack_25
+name: Width-Axis Exploration
+styleAnchors:
+  - Width-Axis Exploration
+  - width variation specimen profile
+  - three widths
+displayName: Width-Axis Exploration
+category: 10. Typography & Lettering
+domain: width variation specimen profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - typography-and-lettering
+  - width-axis
+  - applied-design
+  - lettering
+  - profile
+  - r-typ-17
+  - requested-text
+visualDna:
+  aesthetic: 'Width-Axis Exploration: one word shown in compact, regular and wide versions at the same height and weight, redrawn for each width.'
+  subject_treatment: Show the requested word in three related widths at the same height and apparent weight, redrawing counters and spacing for each.
+  color_and_tone: One common ink for comparing form, with notes outside the art.
+  lighting_and_shadow: Flat specimen with no light favoring any width.
+  texture_and_material: Clean contours and a constant apparent weight across versions.
+  camera_and_composition: Same word and reference height with declared widths aligned.
+  atmosphere_and_mood: One coherent family with different rhythms, clearly related.
+  rendering_and_quality: Letters keep anatomy and weight as the width changes.
+  creative_brief: "Width-Axis Exploration: one word shown in compact, regular and wide versions at the same height and weight, redrawn for each width. Carry it through three widths, same height, redrawn counters, aligned specimen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: three widths; same height; redrawn counters; aligned specimen
+avoidRules:
+  - mechanical scaling
+  - undeclared weight change
+  - changed characters
+  - copying a commercial typeface
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: mechanical scaling, undeclared weight change, changed characters, copying a commercial typeface, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: typography-and-lettering
+  categoryName: 10. Typography & Lettering
+  domain: width variation specimen profile
+  tags:
+    - curation-v2
+    - typography-and-lettering
+    - width-axis
+    - applied-design
+    - lettering
+    - profile
+    - r-typ-17
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

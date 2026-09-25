@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-182
+packId: pack_25
+name: Counterform Breathing
+styleAnchors:
+  - Counterform Breathing
+  - breathing counter lettering
+  - breathing counters
+displayName: Counterform Breathing
+category: 10. Typography & Lettering
+domain: breathing counter lettering
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - typography-and-lettering
+  - counterform-breathing
+  - applied-design
+  - lettering
+  - r-typ-02
+  - requested-text
+visualDna:
+  aesthetic: 'Counterform Breathing: the inner spaces of the letters widen and narrow in a coordinated rhythm while weight and reading stay steady.'
+  subject_treatment: Letter the requested words with counters that open and close in a coordinated rhythm, the skeleton, weight and every character left intact.
+  color_and_tone: One ink to judge the counters, with any second color kept for notes.
+  lighting_and_shadow: Flat lettering where every counter is a true open space.
+  texture_and_material: Continuous contours and clean-edged counters on a plain ground.
+  camera_and_composition: Inner width varying across the word while outer spacing stays even.
+  atmosphere_and_mood: A sense of breathing and tension, alive but never wobbly.
+  rendering_and_quality: Crisp lettering where counters change without closing any letter.
+  creative_brief: "Counterform Breathing: the inner spaces of the letters widen and narrow in a coordinated rhythm while weight and reading stay steady. Carry it through breathing counters, steady weight, even outer spacing, open letters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: breathing counters; steady weight; even outer spacing; open letters
+avoidRules:
+  - closed counters
+  - inconsistent weight
+  - letters lost to expansion
+  - copying a commercial typeface
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: closed counters, inconsistent weight, letters lost to expansion, copying a commercial typeface, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: typography-and-lettering
+  categoryName: 10. Typography & Lettering
+  domain: breathing counter lettering
+  tags:
+    - curation-v2
+    - typography-and-lettering
+    - counterform-breathing
+    - applied-design
+    - lettering
+    - r-typ-02
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

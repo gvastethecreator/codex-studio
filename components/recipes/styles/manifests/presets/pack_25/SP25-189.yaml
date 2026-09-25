@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-189
+packId: pack_25
+name: Compressed Aperture Sans
+styleAnchors:
+  - Compressed Aperture Sans
+  - narrow wide-aperture lettering
+  - narrow widths
+displayName: Compressed Aperture Sans
+category: 10. Typography & Lettering
+domain: narrow wide-aperture lettering
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - typography-and-lettering
+  - compressed-aperture
+  - applied-design
+  - lettering
+  - r-typ-09
+  - requested-text
+visualDna:
+  aesthetic: 'Compressed Aperture Sans: narrow compact letters paired with wide open apertures and expressive cuts, drawn rather than squashed.'
+  subject_treatment: Letter the requested words in narrow compact forms with wide apertures and expressive cuts, redrawn letter by letter with every sign exact.
+  color_and_tone: One ink of firm contrast on a clean ground.
+  lighting_and_shadow: Flat lettering where the apertures open through drawing alone.
+  texture_and_material: Defined terminals, consistent walls and optically widened apertures.
+  camera_and_composition: Tight rhythm with enough spacing, widths adapted to each letter.
+  atmosphere_and_mood: Concentration and energy, tall and confident without feeling crushed.
+  rendering_and_quality: Crisp lettering where C, G and S apertures stay open when small.
+  creative_brief: "Compressed Aperture Sans: narrow compact letters paired with wide open apertures and expressive cuts, drawn rather than squashed. Carry it through narrow widths, wide apertures, expressive cuts, drawn letters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: narrow widths; wide apertures; expressive cuts; drawn letters
+avoidRules:
+  - automatic condensing
+  - closed apertures
+  - uneven letter weights
+  - copying a commercial typeface
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: automatic condensing, closed apertures, uneven letter weights, copying a commercial typeface, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: typography-and-lettering
+  categoryName: 10. Typography & Lettering
+  domain: narrow wide-aperture lettering
+  tags:
+    - curation-v2
+    - typography-and-lettering
+    - compressed-aperture
+    - applied-design
+    - lettering
+    - r-typ-09
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
