@@ -44,6 +44,13 @@ categories:
       - pack_03/SP03-075.yaml
       - pack_03/SP03-079.yaml
       - pack_03/SP03-080.yaml
+      - pack_03/SP03-091.yaml
+      - pack_03/SP03-092.yaml
+      - pack_03/SP03-093.yaml
+      - pack_03/SP03-094.yaml
+      - pack_03/SP03-095.yaml
+      - pack_03/SP03-096.yaml
+      - pack_03/SP03-097.yaml
   - id: lighting-and-atmosphere
     name: 3. Lighting And Atmosphere
     presetRefs:
@@ -153,6 +160,13 @@ presetRefs:
   - pack_03/SP03-075.yaml
   - pack_03/SP03-079.yaml
   - pack_03/SP03-080.yaml
+  - pack_03/SP03-091.yaml
+  - pack_03/SP03-092.yaml
+  - pack_03/SP03-093.yaml
+  - pack_03/SP03-094.yaml
+  - pack_03/SP03-095.yaml
+  - pack_03/SP03-096.yaml
+  - pack_03/SP03-097.yaml
   - pack_03/SP03-031.yaml
   - pack_03/SP03-032.yaml
   - pack_03/SP03-034.yaml

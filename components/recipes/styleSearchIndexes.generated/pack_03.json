@@ -3,7 +3,7 @@
     {
       "id": "pack_03",
       "name": "3D & CGI Rendering",
-      "presetCount": 90
+      "presetCount": 97
     }
   ],
   "presets": [
@@ -462,6 +462,116 @@
       "tags": ["3d-and-cgi-rendering", "materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp03-080 marble statue 2. materials cgi material response pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
+    },
+    {
+      "id": "SP03-091",
+      "name": "Thin-Film Iridescent Coating",
+      "styleAnchors": [
+        "Thin-Film Iridescent Coating",
+        "thin-film interference material",
+        "angle-dependent hue shift"
+      ],
+      "ref": "pack_03/SP03-091.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "materials",
+      "categoryName": "2. Materials",
+      "domain": "thin-film interference material",
+      "tags": ["3d-and-cgi-rendering", "materials", "thin-film-interference-material"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-091 thin-film iridescent coating thin-film interference material angle-dependent hue shift 2. materials cgi material response thin-film interference material pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials thin-film-interference-material"
+    },
+    {
+      "id": "SP03-092",
+      "name": "Molten Glowing Metal",
+      "styleAnchors": [
+        "Molten Glowing Metal",
+        "incandescent molten metal",
+        "blackbody glow gradient"
+      ],
+      "ref": "pack_03/SP03-092.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "materials",
+      "categoryName": "2. Materials",
+      "domain": "incandescent molten metal",
+      "tags": ["3d-and-cgi-rendering", "materials", "incandescent-molten-metal"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-092 molten glowing metal incandescent molten metal blackbody glow gradient 2. materials cgi material response incandescent molten metal pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials incandescent-molten-metal"
+    },
+    {
+      "id": "SP03-093",
+      "name": "Precious Opal Material",
+      "styleAnchors": ["Precious Opal Material", "play-of-color opal", "play-of-color flashes"],
+      "ref": "pack_03/SP03-093.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "materials",
+      "categoryName": "2. Materials",
+      "domain": "play-of-color opal",
+      "tags": ["3d-and-cgi-rendering", "materials", "play-of-color-opal"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-093 precious opal material play-of-color opal play-of-color flashes 2. materials cgi material response play-of-color opal pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials play-of-color-opal"
+    },
+    {
+      "id": "SP03-094",
+      "name": "Gummy Candy Material",
+      "styleAnchors": ["Gummy Candy Material", "translucent gummy candy", "translucent gelatin"],
+      "ref": "pack_03/SP03-094.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "materials",
+      "categoryName": "2. Materials",
+      "domain": "translucent gummy candy",
+      "tags": ["3d-and-cgi-rendering", "materials", "translucent-gummy-candy"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-094 gummy candy material translucent gummy candy translucent gelatin 2. materials cgi material response translucent gummy candy pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials translucent-gummy-candy"
+    },
+    {
+      "id": "SP03-095",
+      "name": "Pearlescent Flake Paint",
+      "styleAnchors": [
+        "Pearlescent Flake Paint",
+        "metallic flake automotive paint",
+        "candy color flop"
+      ],
+      "ref": "pack_03/SP03-095.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "materials",
+      "categoryName": "2. Materials",
+      "domain": "metallic flake automotive paint",
+      "tags": ["3d-and-cgi-rendering", "materials", "metallic-flake-automotive-paint"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-095 pearlescent flake paint metallic flake automotive paint candy color flop 2. materials cgi material response metallic flake automotive paint pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials metallic-flake-automotive-paint"
+    },
+    {
+      "id": "SP03-096",
+      "name": "Aerogel Material",
+      "styleAnchors": ["Aerogel Material", "silica aerogel", "frozen blue-smoke solid"],
+      "ref": "pack_03/SP03-096.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "materials",
+      "categoryName": "2. Materials",
+      "domain": "silica aerogel",
+      "tags": ["3d-and-cgi-rendering", "materials", "silica-aerogel"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-096 aerogel material silica aerogel frozen blue-smoke solid 2. materials cgi material response silica aerogel pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials silica-aerogel"
+    },
+    {
+      "id": "SP03-097",
+      "name": "Amber Resin Inclusion",
+      "styleAnchors": ["Amber Resin Inclusion", "amber with inclusions", "golden amber glow"],
+      "ref": "pack_03/SP03-097.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "materials",
+      "categoryName": "2. Materials",
+      "domain": "amber with inclusions",
+      "tags": ["3d-and-cgi-rendering", "materials", "amber-with-inclusions"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-097 amber resin inclusion amber with inclusions golden amber glow 2. materials cgi material response amber with inclusions pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials amber-with-inclusions"
     },
     {
       "id": "SP03-031",
@@ -1148,5 +1258,5 @@
       "searchableText": "sp03-044 thermal vision 8. sensor and technical shaders technical shaders pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders"
     }
   ],
-  "totalPresetCount": 90
+  "totalPresetCount": 97
 }

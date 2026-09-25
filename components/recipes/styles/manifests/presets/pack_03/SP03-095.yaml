@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP03-095
+packId: pack_03
+name: Pearlescent Flake Paint
+styleAnchors:
+  - Pearlescent Flake Paint
+  - metallic flake automotive paint
+  - candy color flop
+displayName: Pearlescent Flake Paint
+category: 2. Materials
+domain: metallic flake automotive paint
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - materials
+  - car-paint
+  - pearlescent
+  - material
+visualDna:
+  aesthetic: 'Pearlescent flake paint: the target finished in custom automotive paint with metallic flakes under a deep clear coat and a color flop at the edges.'
+  subject_treatment: Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.
+  color_and_tone: Candy base color flopping to a second hue at grazing angles, sparkling flakes.
+  lighting_and_shadow: Long mirror-like clear coat reflections, glittering flakes under point lights.
+  texture_and_material: Deep glossy lacquer, fine metal flake sparkle, smooth orange-peel-free finish.
+  camera_and_composition: Keep the requested framing; studio or street lights to excite the flakes.
+  atmosphere_and_mood: Flashy and custom, a hot-rod finish on anything.
+  rendering_and_quality: Layered base, flake and clear-coat shading, never flat glossy plastic.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pearlescent Flake Paint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: candy color flop; metallic flake sparkle; deep clear coat reflections; glittering under point lights; custom finish
+avoidRules:
+  - changing the surroundings
+  - changing the camera
+  - converting every object in the scene
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: materials
+  categoryName: 2. Materials
+  tags:
+    - 3d-and-cgi-rendering
+    - materials
+    - car-paint
+    - pearlescent
+    - material
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: metallic flake automotive paint

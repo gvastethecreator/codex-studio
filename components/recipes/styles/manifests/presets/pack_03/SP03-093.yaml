@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP03-093
+packId: pack_03
+name: Precious Opal Material
+styleAnchors:
+  - Precious Opal Material
+  - play-of-color opal
+  - play-of-color flashes
+displayName: Precious Opal Material
+category: 2. Materials
+domain: play-of-color opal
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - materials
+  - opal
+  - gemstone
+  - material
+visualDna:
+  aesthetic: 'Precious opal: the target made of milky or black opal with flashes of spectral color that shift as the light moves.'
+  subject_treatment: Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.
+  color_and_tone: Milky white or dark body with patches of fiery red, green, blue and violet play-of-color.
+  lighting_and_shadow: Soft glossy highlights; color flashes appearing and vanishing across the form.
+  texture_and_material: Polished cabochon surface, harlequin patches, faint internal cloudiness.
+  camera_and_composition: Keep the requested framing; moving light to show the flashes.
+  atmosphere_and_mood: Dreamlike and precious, a galaxy trapped in stone.
+  rendering_and_quality: Diffraction play-of-color inside the stone, never a painted rainbow texture.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Precious Opal Material as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: play-of-color flashes; milky or black opal body; polished cabochon surface; harlequin patches; glossy highlights
+avoidRules:
+  - changing the surroundings
+  - changing the camera
+  - converting every object in the scene
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: materials
+  categoryName: 2. Materials
+  tags:
+    - 3d-and-cgi-rendering
+    - materials
+    - opal
+    - gemstone
+    - material
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: play-of-color opal

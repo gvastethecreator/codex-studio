@@ -3,7 +3,7 @@ id: SP03-013
 packId: pack_03
 name: Subsurface Scattering (SSS)
 category: 2. Materials
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,52 +12,22 @@ tags:
   - 3d-and-cgi-rendering
   - materials
 visualDna:
-  aesthetic: >-
-    Subsurface Scattering (SSS) acts as a transferable CGI-style router: start from Translucent
-    material (wax, skin, jade), Inner glow and shader-material system built from reflectance,
-    refraction, scattering, phase behavior, procedural structure, and physically coherent surface
-    response, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo
-    image.
-  subject_treatment: >-
-    Transform any prompt subject through Soft light penetration; preserve the prompt subject while
-    wrapping or transforming forms through the material behavior named by the preset, keeping the
-    requested identity, silhouette, pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with Glowing from inside, warm subsurface hues; let palette follow absorption,
-    dispersion, subsurface tint, metallic reflectance, patina, mineral veining, transparency, or
-    fluid coloration, with deliberate value grouping, exposure control, and medium-specific limits
-    rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Backlit, rim penetration; make highlights, caustics, shadow softness,
-    transmission, internal glow, rim fuzz, photon paths, or specular lobe shape explain the
-    material, so value structure supports the renderer and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Waxy, organic, light permeable; surface detail should keep scale-consistent shaders,
-    bumps, strands, droplets, veining, casting marks, melt edges, weave, or simulated fluid motion,
-    keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Soft edges; compose to demonstrate material behavior across
-    silhouette, thickness, contact edges, reflection zones, and readable material transitions, with
-    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Soft, organic, life like warmth; derive mood from luxury, fragility, tactile
-    attraction, gross elasticity, scientific precision, craft, permanence, or uncanny material
-    transformation, letting the renderer alter interpretation without demanding a specific story,
-    location, or character.
-  rendering_and_quality: >-
-    Finish with Realistic organic material, portrait grade softness when relevant; finish with
-    coherent shader response, clean denoise, readable forms, and no stock texture overlay pretending
-    to be material simulation, clean denoised surfaces where appropriate, and enough shader evidence
-    to make the CGI mode recognizable.
-  key_features: >-
-    Translucent material (wax, skin, jade); Inner glow; Glowing from inside, warm subsurface hues;
-    Waxy, organic, light permeable; Soft edges
-  creative_brief: >-
-    Apply Subsurface Scattering (SSS) as a CGI/render preset over prompt X: preserve the user's
-    requested subject, then route modeling, shader response, lighting, material scale, composition,
-    mood, and final render craft through Translucent material (wax, skin, jade), Inner glow, Waxy,
-    organic, light permeable without requiring the card image's original subject.
+  aesthetic: 'Subsurface scattering material: light enters the surface, travels inside and glows back out, so thin areas shine warm like wax, jade or backlit skin.'
+  subject_treatment: Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.
+  color_and_tone: Warm inner glow in reds, ambers or greens; soft saturated transmission at thin edges.
+  lighting_and_shadow: Backlight or side light producing glowing edges and soft terminator lines.
+  texture_and_material: Soft waxy surface, blurred inner detail, faint veins or clouds inside.
+  camera_and_composition: Keep the requested framing; a light behind or beside the target to reveal the glow.
+  atmosphere_and_mood: Warm and alive, the material holding light like a heartbeat.
+  rendering_and_quality: Physically based scattering; not a flat emissive glow.
+  key_features: light glowing through thin areas; soft terminator; waxy inner clouds; backlit translucency; warm transmission
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Subsurface Scattering (SSS) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - changing the surroundings
+  - changing the camera
+  - converting every object in the scene
+  - readable text
+  - logo
   - hard
   - plastic
   - metal
@@ -66,19 +36,21 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - wrong material
   - pasted stock texture
   - flat color fill
   - shaderless surface
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-013.webp
 attributes:
-  negativePrompt: >-
-    hard, plastic, metal, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture
-    chatter, watermark, readable text, signature, wrong material, pasted stock texture, flat color
-    fill, shaderless surface
+  negativePrompt: changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, hard, plastic, metal, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, wrong material, pasted stock texture, flat color fill, shaderless surface, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

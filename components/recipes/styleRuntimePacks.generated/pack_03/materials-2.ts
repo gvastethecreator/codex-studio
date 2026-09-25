@@ -8,28 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Glass & Crystal',
     category: '2. Materials',
     negativePrompt:
-      'opaque, dull, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, wrong material, pasted stock texture, flat color fill, shaderless surface',
+      'changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, opaque, dull, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, wrong material, pasted stock texture, flat color fill, shaderless surface, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Glass & Crystal acts as a transferable CGI-style router: start from Transparent refractive material system, Transparency, dispersion rainbow and shader-material system built from reflectance, refraction, scattering, phase behavior, procedural structure, and physically coherent surface response, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Glass and crystal material: flawless transparent solids that bend the background through refraction and split bright light into thin rainbow edges.',
       subject_treatment:
-        'Transform any prompt subject through Caustics; preserve the prompt subject while wrapping or transforming forms through the material behavior named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.",
       color_and_tone:
-        'Build color with Prismatic dispersion; let palette follow absorption, dispersion, subsurface tint, metallic reflectance, patina, mineral veining, transparency, or fluid coloration, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Clear or faintly tinted body, bright white edge highlights, small spectral fringes.',
       lighting_and_shadow:
-        'Handle light through Refracted light; make highlights, caustics, shadow softness, transmission, internal glow, rim fuzz, photon paths, or specular lobe shape explain the material, so value structure supports the renderer and does not overwrite the requested content.',
+        'Refraction flips and bends what lies behind; caustic light pools and colored fringes in the cast shadow.',
       texture_and_material:
-        'Render Smooth, flawless, refractive clarity; surface detail should keep scale-consistent shaders, bumps, strands, droplets, veining, casting marks, melt edges, weave, or simulated fluid motion, keeping material scale coherent and avoiding noisy filler texture.',
+        'Polished facets or smooth curves, internal reflections, tiny bubbles or inclusions.',
       camera_and_composition:
-        'Structure the image through Refraction; compose to demonstrate material behavior across silhouette, thickness, contact edges, reflection zones, and readable material transitions, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Elegant, fragile, luxury boutique; derive mood from luxury, fragility, tactile attraction, gross elasticity, scientific precision, craft, permanence, or uncanny material transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested framing; a textured background behind the target to show refraction.',
+      atmosphere_and_mood: 'Pure and fragile, light caught and bent inside a clear form.',
       rendering_and_quality:
-        'Finish with Raytraced, crystal clear; finish with coherent shader response, clean denoise, readable forms, and no stock texture overlay pretending to be material simulation, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Physically based refraction with dispersion; not a flat transparent overlay.',
       key_features:
-        'Transparent refractive material system; Transparency, dispersion rainbow; Prismatic dispersion; Smooth, flawless, refractive clarity; Refraction',
+        'refraction bending the background; rainbow edge dispersion; caustic shadow pools; internal reflections; flawless clarity',
       creative_brief:
-        "Apply Glass & Crystal as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Transparent refractive material system, Transparency, dispersion rainbow, Smooth, flawless, refractive clarity without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glass & Crystal as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +36,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Liquid Simulation',
     category: '2. Materials',
     negativePrompt:
-      'solid, dry, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, wrong material, pasted stock texture, flat color fill, shaderless surface',
+      'changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, solid, dry, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, wrong material, pasted stock texture, flat color fill, shaderless surface, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Liquid Simulation acts as a transferable CGI-style router: start from Splashing water or fluid, Splash shape, foam particles and shader-material system built from reflectance, refraction, scattering, phase behavior, procedural structure, and physically coherent surface response, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Liquid simulation material: the target formed from moving fluid — splashing, sheeting and breaking into droplets while keeping its silhouette.',
       subject_treatment:
-        'Transform any prompt subject through Droplets; preserve the prompt subject while wrapping or transforming forms through the material behavior named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.",
       color_and_tone:
-        'Build color with Clear or colored liquid; let palette follow absorption, dispersion, subsurface tint, metallic reflectance, patina, mineral veining, transparency, or fluid coloration, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Clear water, colored juice or ink as the prompt suggests; bright specular droplets.',
       lighting_and_shadow:
-        'Handle light through Specular highlights; make highlights, caustics, shadow softness, transmission, internal glow, rim fuzz, photon paths, or specular lobe shape explain the material, so value structure supports the renderer and does not overwrite the requested content.',
+        'Backlight through the liquid for glow, sharp specular points on every drop.',
       texture_and_material:
-        'Render Wet, surface tension; surface detail should keep scale-consistent shaders, bumps, strands, droplets, veining, casting marks, melt edges, weave, or simulated fluid motion, keeping material scale coherent and avoiding noisy filler texture.',
+        'Surface tension skins, crown splashes, thin sheets tearing into droplets, foam.',
       camera_and_composition:
-        'Structure the image through Fluid dynamics; compose to demonstrate material behavior across silhouette, thickness, contact edges, reflection zones, and readable material transitions, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Dynamic, wet, in motion energy; derive mood from luxury, fragility, tactile attraction, gross elasticity, scientific precision, craft, permanence, or uncanny material transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Realflow fluid simulation, splashing realism; finish with coherent shader response, clean denoise, readable forms, and no stock texture overlay pretending to be material simulation, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Keep the requested framing; the frozen instant shows the flow direction.',
+      atmosphere_and_mood: 'Kinetic and refreshing, a form held together for one instant.',
+      rendering_and_quality: 'High-resolution fluid sim frozen in time; no stiff plastic water.',
       key_features:
-        'Splashing water or fluid; Splash shape, foam particles; Clear or colored liquid; Wet, surface tension; Fluid dynamics',
+        'fluid-formed silhouette; crown splashes; droplets tearing off; surface tension; backlit glow',
       creative_brief:
-        "Apply Liquid Simulation as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Splashing water or fluid, Splash shape, foam particles, Wet, surface tension without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Liquid Simulation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +63,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Subsurface Scattering (SSS)',
     category: '2. Materials',
     negativePrompt:
-      'hard, plastic, metal, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, wrong material, pasted stock texture, flat color fill, shaderless surface',
+      'changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, hard, plastic, metal, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, wrong material, pasted stock texture, flat color fill, shaderless surface, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Subsurface Scattering (SSS) acts as a transferable CGI-style router: start from Translucent material (wax, skin, jade), Inner glow and shader-material system built from reflectance, refraction, scattering, phase behavior, procedural structure, and physically coherent surface response, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Subsurface scattering material: light enters the surface, travels inside and glows back out, so thin areas shine warm like wax, jade or backlit skin.',
       subject_treatment:
-        'Transform any prompt subject through Soft light penetration; preserve the prompt subject while wrapping or transforming forms through the material behavior named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.",
       color_and_tone:
-        'Build color with Glowing from inside, warm subsurface hues; let palette follow absorption, dispersion, subsurface tint, metallic reflectance, patina, mineral veining, transparency, or fluid coloration, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Warm inner glow in reds, ambers or greens; soft saturated transmission at thin edges.',
       lighting_and_shadow:
-        'Handle light through Backlit, rim penetration; make highlights, caustics, shadow softness, transmission, internal glow, rim fuzz, photon paths, or specular lobe shape explain the material, so value structure supports the renderer and does not overwrite the requested content.',
+        'Backlight or side light producing glowing edges and soft terminator lines.',
       texture_and_material:
-        'Render Waxy, organic, light permeable; surface detail should keep scale-consistent shaders, bumps, strands, droplets, veining, casting marks, melt edges, weave, or simulated fluid motion, keeping material scale coherent and avoiding noisy filler texture.',
+        'Soft waxy surface, blurred inner detail, faint veins or clouds inside.',
       camera_and_composition:
-        'Structure the image through Soft edges; compose to demonstrate material behavior across silhouette, thickness, contact edges, reflection zones, and readable material transitions, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Soft, organic, life like warmth; derive mood from luxury, fragility, tactile attraction, gross elasticity, scientific precision, craft, permanence, or uncanny material transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Realistic organic material, portrait grade softness when relevant; finish with coherent shader response, clean denoise, readable forms, and no stock texture overlay pretending to be material simulation, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Keep the requested framing; a light behind or beside the target to reveal the glow.',
+      atmosphere_and_mood: 'Warm and alive, the material holding light like a heartbeat.',
+      rendering_and_quality: 'Physically based scattering; not a flat emissive glow.',
       key_features:
-        'Translucent material (wax, skin, jade); Inner glow; Glowing from inside, warm subsurface hues; Waxy, organic, light permeable; Soft edges',
+        'light glowing through thin areas; soft terminator; waxy inner clouds; backlit translucency; warm transmission',
       creative_brief:
-        "Apply Subsurface Scattering (SSS) as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Translucent material (wax, skin, jade), Inner glow, Waxy, organic, light permeable without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Subsurface Scattering (SSS) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +90,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Chrome & Metal',
     category: '2. Materials',
     negativePrompt:
-      'matte, rough, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, wrong material, pasted stock texture, flat color fill, shaderless surface',
+      'changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, matte, rough, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, wrong material, pasted stock texture, flat color fill, shaderless surface, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Chrome & Metal acts as a transferable CGI-style router: start from Highly reflective surface, Reflection, anisotropic highlights and shader-material system built from reflectance, refraction, scattering, phase behavior, procedural structure, and physically coherent surface response, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Chrome and polished metal: mirror-grade reflective surfaces showing the whole environment, with sharp or anisotropic streaked highlights.',
       subject_treatment:
-        'Transform any prompt subject through Sharp reflections; preserve the prompt subject while wrapping or transforming forms through the material behavior named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.",
       color_and_tone:
-        'Build color with Silver, Gold, Copper, anodized tones; let palette follow absorption, dispersion, subsurface tint, metallic reflectance, patina, mineral veining, transparency, or fluid coloration, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Silver chrome, warm gold or rose copper, deep black reflections of dark surroundings.',
       lighting_and_shadow:
-        'Handle light through HDRI environment reflection, specular bounce; make highlights, caustics, shadow softness, transmission, internal glow, rim fuzz, photon paths, or specular lobe shape explain the material, so value structure supports the renderer and does not overwrite the requested content.',
+        'Reflections of lights and windows as bright shapes; brushed areas stretching highlights into streaks.',
       texture_and_material:
-        'Render Polished, mirror grade chrome; surface detail should keep scale-consistent shaders, bumps, strands, droplets, veining, casting marks, melt edges, weave, or simulated fluid motion, keeping material scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Lookdev camera for Chrome & Metal: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth; compose to demonstrate material behavior across silhouette, thickness, contact edges, reflection zones, and readable material transitions, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Sleek, futuristic, precision luxury; derive mood from luxury, fragility, tactile attraction, gross elasticity, scientific precision, craft, permanence, or uncanny material transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Mirror polish, fine anisotropic brushing, subtle fingerprints or dust only if asked.',
+      camera_and_composition: 'Keep the requested framing; interesting surroundings to reflect.',
+      atmosphere_and_mood: 'Sleek and precise, a form made of reflections.',
       rendering_and_quality:
-        'Finish with Automotive finish, showroom gloss; finish with coherent shader response, clean denoise, readable forms, and no stock texture overlay pretending to be material simulation, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Accurate mirror reflections with correct distortion; no grey plastic.',
       key_features:
-        'Highly reflective surface; Reflection, anisotropic highlights; Silver, Gold, Copper, anodized tones; Polished, mirror grade chrome; Lookdev camera for Chrome & Metal: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth',
+        'mirror reflections of surroundings; anisotropic streaks; gold or copper tints; black reflected darks; precise highlights',
       creative_brief:
-        "Apply Chrome & Metal as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Highly reflective surface, Reflection, anisotropic highlights, Polished, mirror grade chrome without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chrome & Metal as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +117,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fur & Hair',
     category: '2. Materials',
     negativePrompt:
-      'bald, smooth, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, wrong material, pasted stock texture, flat color fill, shaderless surface',
+      'changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, bald, smooth, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, wrong material, pasted stock texture, flat color fill, shaderless surface, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Fur & Hair acts as a transferable CGI-style router: start from Groomed fur simulation, Hair strands, clump variation and shader-material system built from reflectance, refraction, scattering, phase behavior, procedural structure, and physically coherent surface response, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Groomed fur and hair: the target covered in simulated strands with clumping, flyaways and soft light passing through the tips.',
       subject_treatment:
-        'Transform any prompt subject through Individual strands; preserve the prompt subject while wrapping or transforming forms through the material behavior named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.',
-      color_and_tone:
-        'Build color with Soft gradient; let palette follow absorption, dispersion, subsurface tint, metallic reflectance, patina, mineral veining, transparency, or fluid coloration, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        "Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.",
+      color_and_tone: 'Natural or dyed fur color, lighter translucent tips, darker dense roots.',
       lighting_and_shadow:
-        'Handle light through Rim light on fuzz; make highlights, caustics, shadow softness, transmission, internal glow, rim fuzz, photon paths, or specular lobe shape explain the material, so value structure supports the renderer and does not overwrite the requested content.',
+        'Rim light glowing through strand tips, soft self-shadowing inside the coat.',
       texture_and_material:
-        'Render Fluffy, soft, dimensional volume; surface detail should keep scale-consistent shaders, bumps, strands, droplets, veining, casting marks, melt edges, weave, or simulated fluid motion, keeping material scale coherent and avoiding noisy filler texture.',
+        'Clumped strands, visible parting lines, stray flyaways and a clear wind-combed direction.',
       camera_and_composition:
-        'Structure the image through Wind blown; compose to demonstrate material behavior across silhouette, thickness, contact edges, reflection zones, and readable material transitions, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Cozy, tactile warmth, groomed softness; derive mood from luxury, fragility, tactile attraction, gross elasticity, scientific precision, craft, permanence, or uncanny material transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with XGen groom simulation, every strand deliberate; finish with coherent shader response, clean denoise, readable forms, and no stock texture overlay pretending to be material simulation, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Keep the requested framing; a silhouette against light shows the fuzz.',
+      atmosphere_and_mood: 'Soft and huggable, warmth you can almost feel.',
+      rendering_and_quality: 'Individual strand rendering with depth; not a painted fur texture.',
       key_features:
-        'Groomed fur simulation; Hair strands, clump variation; Soft gradient; Fluffy, soft, dimensional volume; Wind blown',
+        'simulated strands with clumping; glowing rim through tips; flyaways; self-shadowing; wind direction',
       creative_brief:
-        "Apply Fur & Hair as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Groomed fur simulation, Hair strands, clump variation, Fluffy, soft, dimensional volume without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fur & Hair as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +143,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Slime & Goo',
     category: '2. Materials',
     negativePrompt:
-      'dry, solid, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, wrong material, pasted stock texture, flat color fill, shaderless surface',
+      'changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, dry, solid, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, wrong material, pasted stock texture, flat color fill, shaderless surface, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Slime & Goo acts as a transferable CGI-style router: start from Viscous sticky fluid, Drips, stretch strings and shader-material system built from reflectance, refraction, scattering, phase behavior, procedural structure, and physically coherent surface response, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Slime and goo: the target made of thick glossy viscous fluid that sags, drips and stretches into sticky strings.',
       subject_treatment:
-        'Transform any prompt subject through Stretching strands; preserve the prompt subject while wrapping or transforming forms through the material behavior named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.",
       color_and_tone:
-        'Build color with Neon Green/Pink; let palette follow absorption, dispersion, subsurface tint, metallic reflectance, patina, mineral veining, transparency, or fluid coloration, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Glossy; make highlights, caustics, shadow softness, transmission, internal glow, rim fuzz, photon paths, or specular lobe shape explain the material, so value structure supports the renderer and does not overwrite the requested content.',
+        'Saturated translucent color — acid green, hot pink, cobalt — with bright glossy highlights.',
+      lighting_and_shadow: 'Backlight glowing through thick goo, sharp wet specular streaks.',
       texture_and_material:
-        'Render Sticky, wet, viscous elasticity; surface detail should keep scale-consistent shaders, bumps, strands, droplets, veining, casting marks, melt edges, weave, or simulated fluid motion, keeping material scale coherent and avoiding noisy filler texture.',
+        'Sagging mass, stretched strings, trapped bubbles, drips pooling at the base.',
       camera_and_composition:
-        'Structure the image through Dripping; compose to demonstrate material behavior across silhouette, thickness, contact edges, reflection zones, and readable material transitions, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Fun, gross, messy joy; derive mood from luxury, fragility, tactile attraction, gross elasticity, scientific precision, craft, permanence, or uncanny material transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Nickelodeon gooey cartoon gross out, slime fun; finish with coherent shader response, clean denoise, readable forms, and no stock texture overlay pretending to be material simulation, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Keep the requested framing; show drips and strings leaving the form.',
+      atmosphere_and_mood: 'Gross and playful, satisfying and a little disgusting.',
+      rendering_and_quality: 'Viscous fluid look with translucency; not hard glossy plastic.',
       key_features:
-        'Viscous sticky fluid; Drips, stretch strings; Neon Green/Pink; Sticky, wet, viscous elasticity; Dripping',
+        'sagging viscous form; stretched sticky strings; trapped bubbles; glossy wet highlights; pooling drips',
       creative_brief:
-        "Apply Slime & Goo as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Viscous sticky fluid, Drips, stretch strings, Sticky, wet, viscous elasticity without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Slime & Goo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +169,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Carbon Fiber',
     category: '2. Materials',
     negativePrompt:
-      'smooth, paint, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, wrong material, pasted stock texture, flat color fill, shaderless surface',
+      'changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, smooth, paint, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, wrong material, pasted stock texture, flat color fill, shaderless surface, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Carbon Fiber acts as a transferable CGI-style router: start from Woven composite material, Weave pattern, carbon fiber direction and shader-material system built from reflectance, refraction, scattering, phase behavior, procedural structure, and physically coherent surface response, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Carbon fiber composite: a woven twill of black fibers under a deep glossy clear coat, the weave shimmering as the angle changes.',
       subject_treatment:
-        'Transform any prompt subject through Weave pattern; preserve the prompt subject while wrapping or transforming forms through the material behavior named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.",
       color_and_tone:
-        'Build color with Black/Grey anisotropic, carbon weave contrast; let palette follow absorption, dispersion, subsurface tint, metallic reflectance, patina, mineral veining, transparency, or fluid coloration, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Black and charcoal weave with silver-grey anisotropic sheen, deep lacquer reflections.',
       lighting_and_shadow:
-        'Handle light through Clear coat reflection, directional anisotropy; make highlights, caustics, shadow softness, transmission, internal glow, rim fuzz, photon paths, or specular lobe shape explain the material, so value structure supports the renderer and does not overwrite the requested content.',
+        'Strip highlights revealing the checker weave, clear coat mirror reflections on top.',
       texture_and_material:
-        'Render Geometric weave, layered composite; surface detail should keep scale-consistent shaders, bumps, strands, droplets, veining, casting marks, melt edges, weave, or simulated fluid motion, keeping material scale coherent and avoiding noisy filler texture.',
+        'Two-by-two twill pattern following the curves, depth under the lacquer.',
       camera_and_composition:
-        'Structure the image through Lookdev camera for Carbon Fiber: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth; compose to demonstrate material behavior across silhouette, thickness, contact edges, reflection zones, and readable material transitions, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Fast, strong, engineering precision; derive mood from luxury, fragility, tactile attraction, gross elasticity, scientific precision, craft, permanence, or uncanny material transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with High tech, automotive, motorsport grade; finish with coherent shader response, clean denoise, readable forms, and no stock texture overlay pretending to be material simulation, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Keep the requested framing; curved surfaces to show the weave bending.',
+      atmosphere_and_mood: 'Technical and fast, the feeling of engineered, weightless strength.',
+      rendering_and_quality: 'Anisotropic weave with a clear coat; not a flat printed pattern.',
       key_features:
-        'Woven composite material; Weave pattern, carbon fiber direction; Black/Grey anisotropic, carbon weave contrast; Geometric weave, layered composite; Lookdev camera for Carbon Fiber: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth',
+        'twill weave pattern; anisotropic shimmer; deep glossy clear coat; strip highlights; weave following curves',
       creative_brief:
-        "Apply Carbon Fiber as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Woven composite material, Weave pattern, carbon fiber direction, Geometric weave, layered composite without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carbon Fiber as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +196,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Hologram',
     category: '2. Materials',
     negativePrompt:
-      'solid, opaque, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, wrong material, pasted stock texture, flat color fill, shaderless surface',
+      'changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, readable interface, solid, opaque, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, wrong material, pasted stock texture, flat color fill, shaderless surface, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Hologram acts as a transferable CGI-style router: start from Projected light construct, Transparency, flickering projection and shader-material system built from reflectance, refraction, scattering, phase behavior, procedural structure, and physically coherent surface response, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Hologram material: the target rebuilt from projected light — translucent, scanlined and flickering — standing on its projector beam.',
       subject_treatment:
-        'Transform any prompt subject through Scanlines, interference; preserve the prompt subject while wrapping or transforming forms through the material behavior named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.",
       color_and_tone:
-        'Build color with Cyan, Blue transparent, interference spectrum; let palette follow absorption, dispersion, subsurface tint, metallic reflectance, patina, mineral veining, transparency, or fluid coloration, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Cyan and blue light with magenta interference fringes, darker transparent interior.',
       lighting_and_shadow:
-        'Handle light through Emissive, volumetric projection; make highlights, caustics, shadow softness, transmission, internal glow, rim fuzz, photon paths, or specular lobe shape explain the material, so value structure supports the renderer and does not overwrite the requested content.',
+        'The hologram emits light but casts no shadow; faint beam from a base below.',
       texture_and_material:
-        'Render Digital noise, scanline grain; surface detail should keep scale-consistent shaders, bumps, strands, droplets, veining, casting marks, melt edges, weave, or simulated fluid motion, keeping material scale coherent and avoiding noisy filler texture.',
+        'Horizontal scanlines, glitch offsets, see-through edges brighter than the core.',
       camera_and_composition:
-        'Structure the image through Lookdev camera for Hologram: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth; compose to demonstrate material behavior across silhouette, thickness, contact edges, reflection zones, and readable material transitions, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Futuristic, tech, ghost data; derive mood from luxury, fragility, tactile attraction, gross elasticity, scientific precision, craft, permanence, or uncanny material transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested framing; the surroundings visible through the target.',
+      atmosphere_and_mood: 'Futuristic and ghostly, present and absent at once.',
       rendering_and_quality:
-        'Finish with Sci fi interface, AR overlay; finish with coherent shader response, clean denoise, readable forms, and no stock texture overlay pretending to be material simulation, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Additive light projection with scanlines; no readable interface text.',
       key_features:
-        'Projected light construct; Transparency, flickering projection; Cyan, Blue transparent, interference spectrum; Digital noise, scanline grain; Lookdev camera for Hologram: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth',
+        'translucent projected light; scanlines; flicker glitch offsets; bright fresnel edges; no cast shadow',
       creative_brief:
-        "Apply Hologram as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Projected light construct, Transparency, flickering projection, Digital noise, scanline grain without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hologram as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +224,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Porcelain',
     category: '2. Materials',
     negativePrompt:
-      'plastic, metal, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, wrong material, pasted stock texture, flat color fill, shaderless surface',
+      'changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, plastic, metal, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, wrong material, pasted stock texture, flat color fill, shaderless surface, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Porcelain acts as a transferable CGI-style router: start from Porcelain glazed ceramic translucency, milky porcelain surface, tiny crackle, polished rim highlights and shader-material system built from reflectance, refraction, scattering, phase behavior, procedural structure, and physically coherent surface response, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Glazed porcelain: fine white ceramic with a glassy glaze, milky translucency at thin edges and tiny crackle lines.',
       subject_treatment:
-        'Transform any prompt subject through adapt the requested subject through glazed ceramic translucency, milky porcelain surface, tiny crackle, polished rim highlights while preserving its identity; preserve the prompt subject while wrapping or transforming forms through the material behavior named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.",
       color_and_tone:
-        'Build color with palette and exposure choices that support glazed ceramic translucency, milky porcelain surface, tiny crackle, polished rim highlights; let palette follow absorption, dispersion, subsurface tint, metallic reflectance, patina, mineral veining, transparency, or fluid coloration, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through light behavior that reveals glazed ceramic translucency, milky porcelain surface, tiny crackle, polished rim highlights; make highlights, caustics, shadow softness, transmission, internal glow, rim fuzz, photon paths, or specular lobe shape explain the material, so value structure supports the renderer and does not overwrite the requested content.',
+        'Milky white or celadon, optional cobalt blue painted accents, soft pooled glaze color.',
+      lighting_and_shadow: 'Soft broad highlights on the glaze, light glowing through thin rims.',
       texture_and_material:
-        'Render glazed ceramic translucency, milky porcelain surface, tiny crackle, polished rim highlights; surface detail should keep scale-consistent shaders, bumps, strands, droplets, veining, casting marks, melt edges, weave, or simulated fluid motion, keeping material scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Lookdev camera for Porcelain: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth; compose to demonstrate material behavior across silhouette, thickness, contact edges, reflection zones, and readable material transitions, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood mood carried by glazed ceramic translucency, milky porcelain surface, tiny crackle, polished rim highlights; derive mood from luxury, fragility, tactile attraction, gross elasticity, scientific precision, craft, permanence, or uncanny material transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with finished Porcelain CGI with glazed ceramic translucency, milky porcelain surface, tiny crackle, polished rim highlights and controlled detail; finish with coherent shader response, clean denoise, readable forms, and no stock texture overlay pretending to be material simulation, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Smooth glaze, fine crackle network, pooled glaze in hollows, crisp rims.',
+      camera_and_composition: 'Keep the requested framing; soft studio or window light.',
+      atmosphere_and_mood: 'Delicate and precious, beauty that could break at a touch.',
+      rendering_and_quality: 'Glazed ceramic with subtle translucency; not matte plaster.',
       key_features:
-        'Porcelain glazed ceramic translucency, milky porcelain surface, tiny crackle, polished rim highlights; palette and exposure choices that support glazed ceramic translucency, milky porcelain surface, tiny crackle, polished rim highlights; Lookdev camera for Porcelain: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth',
+        'glassy white glaze; translucent thin rims; fine crackle; cobalt painted accents; pooled glaze',
       creative_brief:
-        "Apply Porcelain as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Porcelain glazed ceramic translucency, milky porcelain surface, tiny crackle, polished rim highlights without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Porcelain as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -269,28 +249,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Caustics',
     category: '2. Materials',
     negativePrompt:
-      'diffuse, matte, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, wrong material, pasted stock texture, flat color fill, shaderless surface',
+      'changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, diffuse, matte, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, wrong material, pasted stock texture, flat color fill, shaderless surface, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Caustics acts as a transferable CGI-style router: start from Light focusing through glass/water, Light dancing, photon mapping and shader-material system built from reflectance, refraction, scattering, phase behavior, procedural structure, and physically coherent surface response, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Caustic light material response: a clear or liquid target that focuses light into bright dancing networks and bands on the surfaces around it.',
       subject_treatment:
-        'Transform any prompt subject through Bright patterns; preserve the prompt subject while wrapping or transforming forms through the material behavior named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject and setting; make the target (or the water or glass the prompt names) focus light into caustic patterns on nearby surfaces, without changing anything else.',
       color_and_tone:
-        'Build color with Prismatic, light concentration bands; let palette follow absorption, dispersion, subsurface tint, metallic reflectance, patina, mineral veining, transparency, or fluid coloration, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Bright white-gold caustic networks, slight spectral fringes, darker surrounding surfaces.',
       lighting_and_shadow:
-        'Handle light through Focused intensity, photon convergence; make highlights, caustics, shadow softness, transmission, internal glow, rim fuzz, photon paths, or specular lobe shape explain the material, so value structure supports the renderer and does not overwrite the requested content.',
-      texture_and_material:
-        'Render Light patterns, refractive surfaces; surface detail should keep scale-consistent shaders, bumps, strands, droplets, veining, casting marks, melt edges, weave, or simulated fluid motion, keeping material scale coherent and avoiding noisy filler texture.',
+        'Hard light through the refracting target, caustic nets rippling across floors and walls.',
+      texture_and_material: 'Bright web-like light lines, focused hot spots, soft rainbow edges.',
       camera_and_composition:
-        'Structure the image through Lookdev camera for Caustics: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth; compose to demonstrate material behavior across silhouette, thickness, contact edges, reflection zones, and readable material transitions, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Ethereal, complex, underwater magic; derive mood from luxury, fragility, tactile attraction, gross elasticity, scientific precision, craft, permanence, or uncanny material transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested framing; the caustic pattern visible beside the target.',
+      atmosphere_and_mood: 'Shimmering and serene, light turned into moving lace.',
       rendering_and_quality:
-        'Finish with Physically correct, optical precision; finish with coherent shader response, clean denoise, readable forms, and no stock texture overlay pretending to be material simulation, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Photon-accurate caustics; distinct from the photographic glass still life in pack_01.',
       key_features:
-        'Light focusing through glass/water; Light dancing, photon mapping; Prismatic, light concentration bands; Light patterns, refractive surfaces; Lookdev camera for Caustics: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth',
+        'caustic light networks; focused hot spots; rippling bands on nearby surfaces; spectral fringes; refracting target',
       creative_brief:
-        "Apply Caustics as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Light focusing through glass/water, Light dancing, photon mapping, Light patterns, refractive surfaces without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Caustics as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -298,28 +276,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ice Sculpture',
     category: '2. Materials',
     negativePrompt:
-      'warm, melted, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, wrong material, pasted stock texture, flat color fill, shaderless surface',
+      'changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, warm, melted, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, wrong material, pasted stock texture, flat color fill, shaderless surface, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Ice Sculpture acts as a transferable CGI-style router: start from Carved ice, Transparency, melt edge detail and shader-material system built from reflectance, refraction, scattering, phase behavior, procedural structure, and physically coherent surface response, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Carved ice: the target sculpted from clear block ice, with frosted chisel marks, trapped bubbles and edges beginning to melt.',
       subject_treatment:
-        'Transform any prompt subject through Chiseled edges; preserve the prompt subject while wrapping or transforming forms through the material behavior named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.",
       color_and_tone:
-        'Build color with Clear, Blue tint, frosty translucence; let palette follow absorption, dispersion, subsurface tint, metallic reflectance, patina, mineral veining, transparency, or fluid coloration, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Clear icy blue-white, cyan in thick areas, frosted white on carved surfaces.',
       lighting_and_shadow:
-        'Handle light through Refractive, ice crystal dispersion; make highlights, caustics, shadow softness, transmission, internal glow, rim fuzz, photon paths, or specular lobe shape explain the material, so value structure supports the renderer and does not overwrite the requested content.',
+        'Backlight glowing through the ice, cool refraction, drips catching highlights.',
       texture_and_material:
-        'Render Smooth, frosty, cold surface; surface detail should keep scale-consistent shaders, bumps, strands, droplets, veining, casting marks, melt edges, weave, or simulated fluid motion, keeping material scale coherent and avoiding noisy filler texture.',
+        'Chisel grooves, frost bloom, trapped air columns, meltwater drops at the base.',
       camera_and_composition:
-        'Structure the image through Lookdev camera for Ice Sculpture: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth; compose to demonstrate material behavior across silhouette, thickness, contact edges, reflection zones, and readable material transitions, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Cold, temporary, ephemeral beauty; derive mood from luxury, fragility, tactile attraction, gross elasticity, scientific precision, craft, permanence, or uncanny material transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Event, art, gala tier sculpture; finish with coherent shader response, clean denoise, readable forms, and no stock texture overlay pretending to be material simulation, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Keep the requested framing; a dark or colored background to show the clarity.',
+      atmosphere_and_mood: 'Cold and fleeting, a careful carving that is already melting away.',
+      rendering_and_quality: 'Refractive ice with frosted carving marks; not glass.',
       key_features:
-        'Carved ice; Transparency, melt edge detail; Clear, Blue tint, frosty translucence; Smooth, frosty, cold surface; Lookdev camera for Ice Sculpture: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth',
+        'clear block ice; frosted chisel marks; trapped bubbles; melting drips; backlit cyan glow',
       creative_brief:
-        "Apply Ice Sculpture as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Carved ice, Transparency, melt edge detail, Smooth, frosty, cold surface without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ice Sculpture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -327,28 +303,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bronze Statue',
     category: '2. Materials',
     negativePrompt:
-      'flesh, color, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, wrong material, pasted stock texture, flat color fill, shaderless surface',
+      'changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, flesh, color, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, wrong material, pasted stock texture, flat color fill, shaderless surface, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bronze Statue acts as a transferable CGI-style router: start from Cast bronze sculptural material, Patina in crevices, cast metal detail and shader-material system built from reflectance, refraction, scattering, phase behavior, procedural structure, and physically coherent surface response, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Cast bronze: the target as a bronze casting with polished high points, dark recesses and green-blue verdigris patina in the crevices.',
       subject_treatment:
-        'Transform any prompt subject through Sculpted details; preserve the prompt subject while wrapping or transforming forms through the material behavior named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.",
       color_and_tone:
-        'Build color with Bronze, Patina (Green), verdigris aging; let palette follow absorption, dispersion, subsurface tint, metallic reflectance, patina, mineral veining, transparency, or fluid coloration, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Warm brown-gold bronze, bright polished wear spots, verdigris green and turquoise in recesses.',
       lighting_and_shadow:
-        'Handle light through Specular highlights, metal luster; make highlights, caustics, shadow softness, transmission, internal glow, rim fuzz, photon paths, or specular lobe shape explain the material, so value structure supports the renderer and does not overwrite the requested content.',
+        'Directional light raking the cast forms, warm specular on rubbed areas.',
       texture_and_material:
-        'Render Metal, weathering, cast texture; surface detail should keep scale-consistent shaders, bumps, strands, droplets, veining, casting marks, melt edges, weave, or simulated fluid motion, keeping material scale coherent and avoiding noisy filler texture.',
+        'Casting texture, chased details, patina streaks, polished wear where hands touch.',
       camera_and_composition:
-        'Structure the image through Lookdev camera for Bronze Statue: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth; compose to demonstrate material behavior across silhouette, thickness, contact edges, reflection zones, and readable material transitions, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Timeless, heavy, historical gravity; derive mood from luxury, fragility, tactile attraction, gross elasticity, scientific precision, craft, permanence, or uncanny material transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Monument, classic, sculpture garden; finish with coherent shader response, clean denoise, readable forms, and no stock texture overlay pretending to be material simulation, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Keep the requested framing; a plinth only if the prompt includes one.',
+      atmosphere_and_mood: 'Monumental and weathered, a form that has stood for centuries.',
+      rendering_and_quality: 'Real metal with layered patina and wear, never painted plastic.',
       key_features:
-        'Cast bronze sculptural material; Patina in crevices, cast metal detail; Bronze, Patina (Green), verdigris aging; Metal, weathering, cast texture; Lookdev camera for Bronze Statue: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth',
+        'cast bronze sheen; verdigris in crevices; polished wear spots; raking light; casting texture',
       creative_brief:
-        "Apply Bronze Statue as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Cast bronze sculptural material, Patina in crevices, cast metal detail, Metal, weathering, cast texture without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bronze Statue as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -356,28 +330,258 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Marble Statue',
     category: '2. Materials',
     negativePrompt:
-      'flesh, warm, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, wrong material, pasted stock texture, flat color fill, shaderless surface',
+      'changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, flesh, warm, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, wrong material, pasted stock texture, flat color fill, shaderless surface, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Marble Statue acts as a transferable CGI-style router: start from Carved stone, Stone texture, vein flow naturalism and shader-material system built from reflectance, refraction, scattering, phase behavior, procedural structure, and physically coherent surface response, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Carved marble: the target as polished white or grey marble with flowing veins, soft translucency and crisp chisel-sharp edges.',
       subject_treatment:
-        'Transform any prompt subject through Chisel marks (optional); preserve the prompt subject while wrapping or transforming forms through the material behavior named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.",
       color_and_tone:
-        'Build color with White, Grey veins, Carrara purity; let palette follow absorption, dispersion, subsurface tint, metallic reflectance, patina, mineral veining, transparency, or fluid coloration, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Subsurface scattering (slight), marble translucency; make highlights, caustics, shadow softness, transmission, internal glow, rim fuzz, photon paths, or specular lobe shape explain the material, so value structure supports the renderer and does not overwrite the requested content.',
+        'Carrara white with grey or gold veins, faint warm translucency in thin parts.',
+      lighting_and_shadow: 'Soft directional light with gentle subsurface glow in thin areas.',
       texture_and_material:
-        'Render Stone polish, veined crystal surface; surface detail should keep scale-consistent shaders, bumps, strands, droplets, veining, casting marks, melt edges, weave, or simulated fluid motion, keeping material scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Lookdev camera for Marble Statue: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth; compose to demonstrate material behavior across silhouette, thickness, contact edges, reflection zones, and readable material transitions, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Classic, pure, sculpted eternity; derive mood from luxury, fragility, tactile attraction, gross elasticity, scientific precision, craft, permanence, or uncanny material transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Classical art, museum, neoclassical perfection; finish with coherent shader response, clean denoise, readable forms, and no stock texture overlay pretending to be material simulation, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Polished surfaces, rasp-textured areas, veins following the stone not the form.',
+      camera_and_composition: 'Keep the requested framing; the target alone becomes stone.',
+      atmosphere_and_mood: 'Serene and timeless, softness carved out of stone.',
+      rendering_and_quality: 'Veined marble with subtle scattering; not grey concrete.',
       key_features:
-        'Carved stone; Stone texture, vein flow naturalism; White, Grey veins, Carrara purity; Stone polish, veined crystal surface; Lookdev camera for Marble Statue: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth',
+        'white marble with flowing veins; polished and rasped areas; soft translucency; crisp carved edges',
       creative_brief:
-        "Apply Marble Statue as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Carved stone, Stone texture, vein flow naturalism, Stone polish, veined crystal surface without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Marble Statue as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP03-091',
+    name: 'Thin-Film Iridescent Coating',
+    displayName: 'Thin-Film Iridescent Coating',
+    styleAnchors: [
+      'Thin-Film Iridescent Coating',
+      'thin-film interference material',
+      'angle-dependent hue shift',
+    ],
+    category: '2. Materials',
+    domain: 'thin-film interference material',
+    negativePrompt:
+      'changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Thin-film iridescent coating: a microscopically thin layer over the target that shifts hue with viewing angle, like oil on water or a beetle shell.',
+      subject_treatment:
+        "Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.",
+      color_and_tone:
+        'Angle-dependent bands of teal, magenta, gold and violet over a dark or metallic base.',
+      lighting_and_shadow:
+        'Hue changes across curvature; highlights shift color at grazing angles.',
+      texture_and_material: 'Smooth glossy coat with rainbow gradients flowing along the form.',
+      camera_and_composition: 'Keep the requested framing; curved surfaces to show the color flop.',
+      atmosphere_and_mood: 'Magical and shimmering, color that refuses to stay still.',
+      rendering_and_quality: 'Physically based thin-film interference; not a rainbow texture.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thin-Film Iridescent Coating as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'angle-dependent hue shift; oil-slick rainbow bands; dark base; glossy coat; grazing-angle color flop',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-092',
+    name: 'Molten Glowing Metal',
+    displayName: 'Molten Glowing Metal',
+    styleAnchors: ['Molten Glowing Metal', 'incandescent molten metal', 'blackbody glow gradient'],
+    category: '2. Materials',
+    domain: 'incandescent molten metal',
+    negativePrompt:
+      'changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Molten glowing metal: the target made of incandescent liquid metal, glowing by its own heat from deep red to white-yellow, with a darker cooling skin.',
+      subject_treatment:
+        "Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.",
+      color_and_tone:
+        'Blackbody gradient from dull red through orange to white-yellow, dark crusted skin.',
+      lighting_and_shadow:
+        'The target emits light onto its surroundings; heat haze distorting the air above.',
+      texture_and_material: 'Flowing liquid surface, cracked cooling crust, drips and sparks.',
+      camera_and_composition:
+        'Keep the requested framing; darker surroundings to show the emission.',
+      atmosphere_and_mood: 'Dangerous and primal, form pulled straight out of the forge.',
+      rendering_and_quality: 'Emissive blackbody material with heat distortion; not orange paint.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Molten Glowing Metal as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'blackbody glow gradient; cracked cooling crust; heat haze; drips and sparks; light cast on surroundings',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-093',
+    name: 'Precious Opal Material',
+    displayName: 'Precious Opal Material',
+    styleAnchors: ['Precious Opal Material', 'play-of-color opal', 'play-of-color flashes'],
+    category: '2. Materials',
+    domain: 'play-of-color opal',
+    negativePrompt:
+      'changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Precious opal: the target made of milky or black opal with flashes of spectral color that shift as the light moves.',
+      subject_treatment:
+        "Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.",
+      color_and_tone:
+        'Milky white or dark body with patches of fiery red, green, blue and violet play-of-color.',
+      lighting_and_shadow:
+        'Soft glossy highlights; color flashes appearing and vanishing across the form.',
+      texture_and_material:
+        'Polished cabochon surface, harlequin patches, faint internal cloudiness.',
+      camera_and_composition: 'Keep the requested framing; moving light to show the flashes.',
+      atmosphere_and_mood: 'Dreamlike and precious, a galaxy trapped in stone.',
+      rendering_and_quality:
+        'Diffraction play-of-color inside the stone, never a painted rainbow texture.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Precious Opal Material as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'play-of-color flashes; milky or black opal body; polished cabochon surface; harlequin patches; glossy highlights',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-094',
+    name: 'Gummy Candy Material',
+    displayName: 'Gummy Candy Material',
+    styleAnchors: ['Gummy Candy Material', 'translucent gummy candy', 'translucent gelatin'],
+    category: '2. Materials',
+    domain: 'translucent gummy candy',
+    negativePrompt:
+      'changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gummy candy: the target made of soft translucent gelatin candy, slightly sugar-dusted, glowing with saturated color when backlit.',
+      subject_treatment:
+        "Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.",
+      color_and_tone: 'Saturated cherry red, lime, orange and grape, deeper color in thick parts.',
+      lighting_and_shadow:
+        'Backlight glowing through the candy, soft rounded highlights, colored shadows.',
+      texture_and_material:
+        'Soft rounded edges, sugar crystals, slight squish, tiny trapped bubbles.',
+      camera_and_composition: 'Keep the requested framing; macro feel to read the texture.',
+      atmosphere_and_mood: 'Playful and sweet, a treat you want to bite.',
+      rendering_and_quality:
+        'Soft translucent gelatin with light scattering inside, never hard glass.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gummy Candy Material as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'translucent gelatin; sugar dusting; saturated candy colors; colored shadows; soft squishy edges',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-095',
+    name: 'Pearlescent Flake Paint',
+    displayName: 'Pearlescent Flake Paint',
+    styleAnchors: [
+      'Pearlescent Flake Paint',
+      'metallic flake automotive paint',
+      'candy color flop',
+    ],
+    category: '2. Materials',
+    domain: 'metallic flake automotive paint',
+    negativePrompt:
+      'changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pearlescent flake paint: the target finished in custom automotive paint with metallic flakes under a deep clear coat and a color flop at the edges.',
+      subject_treatment:
+        "Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.",
+      color_and_tone:
+        'Candy base color flopping to a second hue at grazing angles, sparkling flakes.',
+      lighting_and_shadow:
+        'Long mirror-like clear coat reflections, glittering flakes under point lights.',
+      texture_and_material:
+        'Deep glossy lacquer, fine metal flake sparkle, smooth orange-peel-free finish.',
+      camera_and_composition:
+        'Keep the requested framing; studio or street lights to excite the flakes.',
+      atmosphere_and_mood: 'Flashy and custom, a hot-rod finish on anything.',
+      rendering_and_quality:
+        'Layered base, flake and clear-coat shading, never flat glossy plastic.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pearlescent Flake Paint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'candy color flop; metallic flake sparkle; deep clear coat reflections; glittering under point lights; custom finish',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-096',
+    name: 'Aerogel Material',
+    displayName: 'Aerogel Material',
+    styleAnchors: ['Aerogel Material', 'silica aerogel', 'frozen blue-smoke solid'],
+    category: '2. Materials',
+    domain: 'silica aerogel',
+    negativePrompt:
+      'changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Aerogel: the target made of ultra-light silica aerogel, a nearly weightless solid that looks like frozen blue smoke.',
+      subject_treatment:
+        "Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.",
+      color_and_tone:
+        'Hazy pale blue against dark backgrounds, faint amber where light passes through.',
+      lighting_and_shadow:
+        'Scattering makes it glow blue from the side and orange in transmitted light; blurred edges.',
+      texture_and_material:
+        'Soft undefined edges, no surface gloss at all and a ghostly hazy volume.',
+      camera_and_composition: 'Keep the requested framing; dark background to reveal the haze.',
+      atmosphere_and_mood: 'Ghostly and scientific, a solid barely there.',
+      rendering_and_quality: 'Volumetric Rayleigh scattering solid; not glass and not smoke.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Aerogel Material as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'frozen blue-smoke solid; blurred edges; Rayleigh scattering blue; faint amber transmission; no gloss',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-097',
+    name: 'Amber Resin Inclusion',
+    displayName: 'Amber Resin Inclusion',
+    styleAnchors: ['Amber Resin Inclusion', 'amber with inclusions', 'golden amber glow'],
+    category: '2. Materials',
+    domain: 'amber with inclusions',
+    negativePrompt:
+      'changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Amber resin inclusion: the target made of golden fossil amber or clear resin, with small objects, bubbles and debris suspended inside.',
+      subject_treatment:
+        "Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.",
+      color_and_tone:
+        'Honey gold to deep cognac, darker orange in thick parts, warm glow when backlit.',
+      lighting_and_shadow:
+        'Backlight glowing through the amber, internal inclusions casting soft shadows inside.',
+      texture_and_material:
+        'Polished surface, flow lines, trapped insects, seeds or leaves, tiny bubbles.',
+      camera_and_composition: 'Keep the requested framing; light behind to reveal the inclusions.',
+      atmosphere_and_mood: 'Ancient and treasured, a moment preserved forever.',
+      rendering_and_quality: 'Translucent resin with depth and inclusions; not orange glass.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Amber Resin Inclusion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'golden amber glow; suspended inclusions; flow lines; tiny bubbles; backlit warm transmission',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -64,7 +64,8 @@ Pack order, skipping pack_12 and pack_17: pack_01 → pack_24, then pack_12, pac
 | pack_02::6. Caricature And Cartoon Styles    | done  | done | done   | 0 (already 33)    | pending (local)     | see git log        |
 | pack_02::7. Sensor And Technical Imaging     | done  | done | done   | 17 (SP02-146…162) | pending (local)     | see git log        |
 | pack_02::8. Hand-Drawn And DIY Media         | done  | done | done   | 14 (SP02-163…176) | pending (local)     | see git log        |
-| pack_03::1. Render Engines                   | done  | done | done   | 10 (SP03-129…138) | pending (local)     | see git log        |
+| pack_03::1. Render Engines                   | done  | done | done   | 10 (SP03-081…090) | pending (local)     | see git log        |
+| pack_03::2. Materials                        | done  | done | done   | 7 (SP03-091…097)  | pending (local)     | see git log        |
 
 ## Open risks
 

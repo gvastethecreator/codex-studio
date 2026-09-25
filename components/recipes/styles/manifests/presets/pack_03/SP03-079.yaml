@@ -3,7 +3,7 @@ id: SP03-079
 packId: pack_03
 name: Bronze Statue
 category: 2. Materials
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,57 +12,22 @@ tags:
   - 3d-and-cgi-rendering
   - materials
 visualDna:
-  aesthetic: >-
-    Bronze Statue acts as a transferable CGI-style router: start from Cast bronze sculptural
-    material, Patina in crevices, cast metal detail and shader-material system built from
-    reflectance, refraction, scattering, phase behavior, procedural structure, and physically
-    coherent surface response, then apply the 3D/render behavior to prompt X instead of recreating a
-    fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Sculpted details; preserve the prompt subject while
-    wrapping or transforming forms through the material behavior named by the preset, keeping the
-    requested identity, silhouette, pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with Bronze, Patina (Green), verdigris aging; let palette follow absorption,
-    dispersion, subsurface tint, metallic reflectance, patina, mineral veining, transparency, or
-    fluid coloration, with deliberate value grouping, exposure control, and medium-specific limits
-    rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Specular highlights, metal luster; make highlights, caustics, shadow
-    softness, transmission, internal glow, rim fuzz, photon paths, or specular lobe shape explain
-    the material, so value structure supports the renderer and does not overwrite the requested
-    content.
-  texture_and_material: >-
-    Render Metal, weathering, cast texture; surface detail should keep scale-consistent shaders,
-    bumps, strands, droplets, veining, casting marks, melt edges, weave, or simulated fluid motion,
-    keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Lookdev camera for Bronze Statue: close three quarter or macro
-    material framing, strong highlight planes, readable surface curvature, and controlled depth;
-    compose to demonstrate material behavior across silhouette, thickness, contact edges, reflection
-    zones, and readable material transitions, with scale, spacing, edge rhythm, and visual hierarchy
-    doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Timeless, heavy, historical gravity; derive mood from luxury, fragility, tactile
-    attraction, gross elasticity, scientific precision, craft, permanence, or uncanny material
-    transformation, letting the renderer alter interpretation without demanding a specific story,
-    location, or character.
-  rendering_and_quality: >-
-    Finish with Monument, classic, sculpture garden; finish with coherent shader response, clean
-    denoise, readable forms, and no stock texture overlay pretending to be material simulation,
-    clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
-    recognizable.
-  key_features: >-
-    Cast bronze sculptural material; Patina in crevices, cast metal detail; Bronze, Patina (Green),
-    verdigris aging; Metal, weathering, cast texture; Lookdev camera for Bronze Statue: close three
-    quarter or macro material framing, strong highlight planes, readable surface curvature, and
-    controlled depth
-  creative_brief: >-
-    Apply Bronze Statue as a CGI/render preset over prompt X: preserve the user's requested subject,
-    then route modeling, shader response, lighting, material scale, composition, mood, and final
-    render craft through Cast bronze sculptural material, Patina in crevices, cast metal detail,
-    Metal, weathering, cast texture without requiring the card image's original subject.
+  aesthetic: 'Cast bronze: the target as a bronze casting with polished high points, dark recesses and green-blue verdigris patina in the crevices.'
+  subject_treatment: Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.
+  color_and_tone: Warm brown-gold bronze, bright polished wear spots, verdigris green and turquoise in recesses.
+  lighting_and_shadow: Directional light raking the cast forms, warm specular on rubbed areas.
+  texture_and_material: Casting texture, chased details, patina streaks, polished wear where hands touch.
+  camera_and_composition: Keep the requested framing; a plinth only if the prompt includes one.
+  atmosphere_and_mood: Monumental and weathered, a form that has stood for centuries.
+  rendering_and_quality: Real metal with layered patina and wear, never painted plastic.
+  key_features: cast bronze sheen; verdigris in crevices; polished wear spots; raking light; casting texture
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bronze Statue as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - changing the surroundings
+  - changing the camera
+  - converting every object in the scene
+  - readable text
+  - logo
   - flesh
   - color
   - wrong medium
@@ -70,19 +35,21 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - wrong material
   - pasted stock texture
   - flat color fill
   - shaderless surface
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-079.webp
 attributes:
-  negativePrompt: >-
-    flesh, color, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, wrong material, pasted stock texture, flat color fill,
-    shaderless surface
+  negativePrompt: changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, flesh, color, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, wrong material, pasted stock texture, flat color fill, shaderless surface, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

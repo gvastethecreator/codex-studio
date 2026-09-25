@@ -3,7 +3,7 @@ id: SP03-016
 packId: pack_03
 name: Fur & Hair
 category: 2. Materials
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,51 +12,22 @@ tags:
   - 3d-and-cgi-rendering
   - materials
 visualDna:
-  aesthetic: >-
-    Fur & Hair acts as a transferable CGI-style router: start from Groomed fur simulation, Hair
-    strands, clump variation and shader-material system built from reflectance, refraction,
-    scattering, phase behavior, procedural structure, and physically coherent surface response, then
-    apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Individual strands; preserve the prompt subject while
-    wrapping or transforming forms through the material behavior named by the preset, keeping the
-    requested identity, silhouette, pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with Soft gradient; let palette follow absorption, dispersion, subsurface tint,
-    metallic reflectance, patina, mineral veining, transparency, or fluid coloration, with
-    deliberate value grouping, exposure control, and medium-specific limits rather than generic
-    color wash.
-  lighting_and_shadow: >-
-    Handle light through Rim light on fuzz; make highlights, caustics, shadow softness,
-    transmission, internal glow, rim fuzz, photon paths, or specular lobe shape explain the
-    material, so value structure supports the renderer and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Fluffy, soft, dimensional volume; surface detail should keep scale-consistent shaders,
-    bumps, strands, droplets, veining, casting marks, melt edges, weave, or simulated fluid motion,
-    keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Wind blown; compose to demonstrate material behavior across
-    silhouette, thickness, contact edges, reflection zones, and readable material transitions, with
-    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Cozy, tactile warmth, groomed softness; derive mood from luxury, fragility,
-    tactile attraction, gross elasticity, scientific precision, craft, permanence, or uncanny
-    material transformation, letting the renderer alter interpretation without demanding a specific
-    story, location, or character.
-  rendering_and_quality: >-
-    Finish with XGen groom simulation, every strand deliberate; finish with coherent shader
-    response, clean denoise, readable forms, and no stock texture overlay pretending to be material
-    simulation, clean denoised surfaces where appropriate, and enough shader evidence to make the
-    CGI mode recognizable.
-  key_features: >-
-    Groomed fur simulation; Hair strands, clump variation; Soft gradient; Fluffy, soft, dimensional
-    volume; Wind blown
-  creative_brief: >-
-    Apply Fur & Hair as a CGI/render preset over prompt X: preserve the user's requested subject,
-    then route modeling, shader response, lighting, material scale, composition, mood, and final
-    render craft through Groomed fur simulation, Hair strands, clump variation, Fluffy, soft,
-    dimensional volume without requiring the card image's original subject.
+  aesthetic: 'Groomed fur and hair: the target covered in simulated strands with clumping, flyaways and soft light passing through the tips.'
+  subject_treatment: Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.
+  color_and_tone: Natural or dyed fur color, lighter translucent tips, darker dense roots.
+  lighting_and_shadow: Rim light glowing through strand tips, soft self-shadowing inside the coat.
+  texture_and_material: Clumped strands, visible parting lines, stray flyaways and a clear wind-combed direction.
+  camera_and_composition: Keep the requested framing; a silhouette against light shows the fuzz.
+  atmosphere_and_mood: Soft and huggable, warmth you can almost feel.
+  rendering_and_quality: Individual strand rendering with depth; not a painted fur texture.
+  key_features: simulated strands with clumping; glowing rim through tips; flyaways; self-shadowing; wind direction
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fur & Hair as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - changing the surroundings
+  - changing the camera
+  - converting every object in the scene
+  - readable text
+  - logo
   - bald
   - smooth
   - wrong medium
@@ -64,19 +35,21 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - wrong material
   - pasted stock texture
   - flat color fill
   - shaderless surface
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-016.webp
 attributes:
-  negativePrompt: >-
-    bald, smooth, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, wrong material, pasted stock texture, flat color fill,
-    shaderless surface
+  negativePrompt: changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, bald, smooth, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, wrong material, pasted stock texture, flat color fill, shaderless surface, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

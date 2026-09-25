@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP03-096
+packId: pack_03
+name: Aerogel Material
+styleAnchors:
+  - Aerogel Material
+  - silica aerogel
+  - frozen blue-smoke solid
+displayName: Aerogel Material
+category: 2. Materials
+domain: silica aerogel
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - materials
+  - aerogel
+  - translucent
+  - material
+visualDna:
+  aesthetic: 'Aerogel: the target made of ultra-light silica aerogel, a nearly weightless solid that looks like frozen blue smoke.'
+  subject_treatment: Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.
+  color_and_tone: Hazy pale blue against dark backgrounds, faint amber where light passes through.
+  lighting_and_shadow: Scattering makes it glow blue from the side and orange in transmitted light; blurred edges.
+  texture_and_material: Soft undefined edges, no surface gloss at all and a ghostly hazy volume.
+  camera_and_composition: Keep the requested framing; dark background to reveal the haze.
+  atmosphere_and_mood: Ghostly and scientific, a solid barely there.
+  rendering_and_quality: Volumetric Rayleigh scattering solid; not glass and not smoke.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Aerogel Material as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: frozen blue-smoke solid; blurred edges; Rayleigh scattering blue; faint amber transmission; no gloss
+avoidRules:
+  - changing the surroundings
+  - changing the camera
+  - converting every object in the scene
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: changing the surroundings, changing the camera, converting every object in the scene, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: materials
+  categoryName: 2. Materials
+  tags:
+    - 3d-and-cgi-rendering
+    - materials
+    - aerogel
+    - translucent
+    - material
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: silica aerogel
