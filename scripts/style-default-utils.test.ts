@@ -105,15 +105,20 @@ describe('writeRepoWebpAsset', () => {
     process.env.STYLE_DEFAULT_CARD_ARCHIVE_DIR = archivePath;
 
     try {
-      await sharp({
-        create: { width: 12, height: 16, channels: 3, background: '#334455' },
-      })
+      const pixels = Buffer.from(Array.from({ length: 12 * 16 * 3 }, (_, i) => (i * 37) % 256));
+      await sharp(pixels, { raw: { width: 12, height: 16, channels: 3 } })
         .png()
         .toFile(sourcePath);
 
       await writeRepoWebpAsset(sourcePath, destinationPath, { archive: false });
 
       expect(existsSync(destinationPath)).toBe(true);
+      // Cards keep the provider resolution and every pixel (lossless).
+      const written = await sharp(readFileSync(destinationPath))
+        .raw()
+        .toBuffer({ resolveWithObject: true });
+      expect(written.info).toMatchObject({ width: 12, height: 16, channels: 3 });
+      expect(written.data.equals(pixels)).toBe(true);
       expect(existsSync(archivePath)).toBe(false);
       const firstCard = readFileSync(destinationPath);
       const previousAlternate = path.join(directory, 'previous', 'output.webp');

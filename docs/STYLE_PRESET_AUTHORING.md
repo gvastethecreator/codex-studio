@@ -79,6 +79,9 @@ reviewed batch, pass a JSON object mapping each preset ID to its latest complete
 job ID with `--reviewed-replacements-file=<path> --parallel=4`. A job in
 `needs_review` must be inspected before any new submission.
 
+Cards are stored at the provider's full resolution as lossless WebP (`STYLE_CARD_WEBP_OPTIONS` in
+`scripts/style-default-utils.ts`); only `style-card-thumbnails/` holds reduced copies.
+
 A card set is three cards per preset, each from a different brief: the primary
 card uses `card-briefs.json`, and `variants/<id>-01` and `-02` use the two entries
 in `scripts/style-curation/card-brief-variants.json`. Generate a set with

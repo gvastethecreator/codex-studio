@@ -58,6 +58,10 @@ export async function preserveReviewedChatgptLock(lockPath: string, evidencePath
   await unlink(lockPath);
 }
 
+// Full-quality cards: same resolution as the provider output, lossless WebP. Thumbnails are
+// generated separately by build-style-pack-card-thumbnails.
+export const STYLE_CARD_WEBP_OPTIONS = { lossless: true, effort: 6 } as const;
+
 export async function writeRepoWebpAsset(
   sourcePath: string,
   destinationPath: string,
@@ -84,7 +88,7 @@ export async function writeRepoWebpAsset(
   );
 
   try {
-    await sharp(sourcePath).webp({ quality: 92, effort: 6 }).toFile(tempDestination);
+    await sharp(sourcePath).webp(STYLE_CARD_WEBP_OPTIONS).toFile(tempDestination);
     if (options.exclusive) {
       await copyFile(tempDestination, finalDestination, constants.COPYFILE_EXCL);
       await rm(tempDestination, { force: true });
