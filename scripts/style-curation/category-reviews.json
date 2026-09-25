@@ -1298,7 +1298,7 @@
     "baselineHash": "2189a532e03dcf37f38a4fc5560349df1e827b8c997d2e9f869217cf760a85be",
     "problem": "Many differently named entries repeat the same broad template and motion vocabulary.",
     "preserve": "Specific contour, shading and compositional decisions.",
-    "proposedAction": "Keep the distinct drawing mechanics, with requested-content preservation and defect-specific negatives. Compare the regenerated cards and cross-subject images before grouping adjacent variants.",
+    "proposedAction": "Keep the distinct drawing mechanics, with requested-content preservation and defect-specific negatives. Compare the regenerated cards and cross-subject images before merging. Overhaul: DNA already carries portable mechanics, so this pass keeps it and writes three original briefs per preset (42); named creator lineages stay technique references and every brief uses original characters.",
     "validation": "Blind comparisons should reveal the rendering difference rather than the renamed scene.",
     "evidencePresetIds": ["SP05-101", "SP05-322"],
     "status": "text-reviewed",
