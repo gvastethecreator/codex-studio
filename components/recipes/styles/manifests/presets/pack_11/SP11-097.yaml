@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP11-097
+packId: pack_11
+name: Dungeon Synth Cassette Art
+styleAnchors:
+  - Dungeon Synth Cassette Art
+  - lo-fi medieval fantasy cover aesthetic
+  - misty castle
+displayName: Dungeon Synth Cassette Art
+category: 3. Aesthetics
+domain: lo-fi medieval fantasy cover aesthetic
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - aesthetics
+  - dungeon-synth
+  - medieval
+  - aesthetic
+visualDna:
+  aesthetic: 'Dungeon synth cover art: murky lo-fi fantasy painting reproduced like a photocopied cassette insert, with small lonely figures, heavy mist and faded ink.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: painted as a murky amateur oil or gouache, shrunk small within a wide, mist-filled space, then reproduced in faded photocopy with grain and crushed blacks."
+  color_and_tone: Muted greys, deep blues, forest greens and one faded accent.
+  lighting_and_shadow: Dim mist and moonlight, expressed through the style rather than photographic lighting.
+  texture_and_material: Old painting reproduced with copier grain and faded print.
+  camera_and_composition: Square-ish cover framing with a lonely distant subject, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Melancholic, mysterious, lonely and ancient, driven by the construction, color and rhythm.
+  rendering_and_quality: Lo-fi reproduced painting, with clean, deliberate marks and no accidental noise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dungeon Synth Cassette Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: misty castle; lone wanderer; murky paint; copier grain
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_11
+  packName: Miscellaneous & Fun
+  categoryId: aesthetics
+  categoryName: 3. Aesthetics
+  tags:
+    - miscellaneous-and-fun
+    - aesthetics
+    - dungeon-synth
+    - medieval
+    - aesthetic
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: lo-fi medieval fantasy cover aesthetic

@@ -3,7 +3,7 @@ id: SP11-009
 packId: pack_11
 name: Emoji 3D
 category: 3. Aesthetics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,59 +12,22 @@ tags:
   - miscellaneous-and-fun
   - aesthetics
 visualDna:
-  aesthetic: >-
-    Emoji 3D operates as a portable source-router layer: combine Glossy 3D emoji/icon language for
-    playful digital communication with cultural style-system logic with recognizable design codes,
-    mood grammar, and transferable taste rules, so the preset supplies visual behavior rather than a
-    fixed card scene or literal sample.
-  subject_treatment: >-
-    Preserve the prompt's subject plus requested motion and context while letting forms re-code,
-    stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Round,
-    smooth, pill-shaped, sphere-based, soft extrusion; identity stays readable through construction
-    grammar, proportion, edge logic, and detail scale as this preset is applied.
-  color_and_tone: >-
-    Map color through identity-bearing color families, accent rules, tonal pressure, era-specific
-    contrast, and material color behavior; keep hue roles intentional, value separation clear, and
-    palette behavior attached to the subject's forms instead of pasted decoration.
-  lighting_and_shadow: >-
-    Use Studio softbox, rim light, gradient sky reflection, glossy hotspot plus mood-led lighting
-    that reinforces the aesthetic code without replacing the requested subject as the light-response
-    contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases
-    the user's requested content.
-  texture_and_material: >-
-    Render Shiny plastic or glass, bubble-smooth surface, high-gloss lacquer, candy shell plus
-    signature finishes, symbolic surfaces, pattern systems, ornamental density, polish, grime,
-    gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal
-    artifacts must remain coherent across figures, objects, and environments.
-  camera_and_composition: >-
-    Compose with Sphere based, anthropomorphic objects, simplified features, chunky proportions plus
-    taste-coded spacing, silhouette discipline, motif placement, designed clutter, and reusable
-    visual hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and
-    abstract prompts to inherit the style without one required layout.
-  atmosphere_and_mood: >-
-    Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread,
-    cuteness, or spectacle; the emotional tone should feel specific to Emoji 3D while still obeying
-    the prompt's subject and context.
-  rendering_and_quality: >-
-    Finish with coherent art direction, strong subject preservation, clean code recognition, and no
-    mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled
-    detail, and a finished image with no watermark, fake text, or accidental UI.
-  key_features: >-
-    Glossy 3D emoji/icon language for playful digital communication; Round, smooth, pill-shaped,
-    sphere-based, soft extrusion; Shiny plastic or glass, bubble-smooth surface, high-gloss lacquer,
-    candy shell; Studio softbox, rim light, gradient sky reflection, glossy hotspot; Sphere based,
-    anthropomorphic objects, simplified features, chunky proportions
-  creative_brief: >-
-    Use Emoji 3D after prompt X as a transferable style layer: prompt X supplies subject, action,
-    and setting, while the preset supplies Glossy 3D emoji/icon language for playful digital
-    communication, Round, smooth, pill-shaped, sphere-based, soft extrusion, Shiny plastic or glass,
-    bubble-smooth surface, high-gloss lacquer, candy shell, Studio softbox, rim light, gradient sky
-    reflection, glossy hotspot, Sphere based, anthropomorphic objects, simplified features, chunky
-    proportions plus proportion codes, recurring surface motifs, era cues, pattern pressure,
-    cultural references, and designed contrast, palette behavior, light response, material
-    treatment, and finish discipline without requiring one specimen, prop bundle, product still, or
-    card composition.
+  aesthetic: 'Glossy 3D emoji: the subject as a chunky, rounded, candy-glossy icon with a simple expressive face.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: simplified into soft inflated volumes with rounded edges, oversized eyes and one clear expression, like a platform emoji rendered in 3D."
+  color_and_tone: Bright saturated candy colors with soft gradients, used consistently across subject and background.
+  lighting_and_shadow: Soft top light with big glossy highlights and a gentle contact shadow.
+  texture_and_material: Smooth glossy plastic or gummy material with no fine texture.
+  camera_and_composition: Centered single icon on a plain soft gradient background.
+  atmosphere_and_mood: Cheerful, readable, cute and instant, driven by the construction, color and rhythm.
+  rendering_and_quality: Clean 3D icon render with smooth subdivided surfaces, with clean, deliberate marks and no accidental noise.
+  key_features: inflated rounded forms; glossy highlights; simple face; icon framing
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Emoji 3D as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
   - flat
   - 2d
   - sketch
@@ -76,13 +39,16 @@ avoidRules:
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-009.webp
 attributes:
-  negativePrompt: >-
-    flat, 2d, sketch, generic aesthetic collage, random trend mix, style-board text, fixed specimen,
-    literal card scene, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, flat, 2d, sketch, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

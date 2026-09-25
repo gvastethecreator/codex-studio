@@ -8,28 +8,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Emoji 3D',
     category: '3. Aesthetics',
     negativePrompt:
-      'flat, 2d, sketch, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, flat, 2d, sketch, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Emoji 3D operates as a portable source-router layer: combine Glossy 3D emoji/icon language for playful digital communication with cultural style-system logic with recognizable design codes, mood grammar, and transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Glossy 3D emoji: the subject as a chunky, rounded, candy-glossy icon with a simple expressive face.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms re-code, stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Round, smooth, pill-shaped, sphere-based, soft extrusion; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: simplified into soft inflated volumes with rounded edges, oversized eyes and one clear expression, like a platform emoji rendered in 3D.",
       color_and_tone:
-        "Map color through identity-bearing color families, accent rules, tonal pressure, era-specific contrast, and material color behavior; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
-      lighting_and_shadow:
-        "Use Studio softbox, rim light, gradient sky reflection, glossy hotspot plus mood-led lighting that reinforces the aesthetic code without replacing the requested subject as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
-      texture_and_material:
-        'Render Shiny plastic or glass, bubble-smooth surface, high-gloss lacquer, candy shell plus signature finishes, symbolic surfaces, pattern systems, ornamental density, polish, grime, gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
-      camera_and_composition:
-        'Compose with Sphere based, anthropomorphic objects, simplified features, chunky proportions plus taste-coded spacing, silhouette discipline, motif placement, designed clutter, and reusable visual hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Bright saturated candy colors with soft gradients, used consistently across subject and background.',
+      lighting_and_shadow: 'Soft top light with big glossy highlights and a gentle contact shadow.',
+      texture_and_material: 'Smooth glossy plastic or gummy material with no fine texture.',
+      camera_and_composition: 'Centered single icon on a plain soft gradient background.',
       atmosphere_and_mood:
-        "Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread, cuteness, or spectacle; the emotional tone should feel specific to Emoji 3D while still obeying the prompt's subject and context.",
+        'Cheerful, readable, cute and instant, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with coherent art direction, strong subject preservation, clean code recognition, and no mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Glossy 3D emoji/icon language for playful digital communication; Round, smooth, pill-shaped, sphere-based, soft extrusion; Shiny plastic or glass, bubble-smooth surface, high-gloss lacquer, candy shell; Studio softbox, rim light, gradient sky reflection, glossy hotspot; Sphere based, anthropomorphic objects, simplified features, chunky proportions',
+        'Clean 3D icon render with smooth subdivided surfaces, with clean, deliberate marks and no accidental noise.',
+      key_features: 'inflated rounded forms; glossy highlights; simple face; icon framing',
       creative_brief:
-        'Use Emoji 3D after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Glossy 3D emoji/icon language for playful digital communication, Round, smooth, pill-shaped, sphere-based, soft extrusion, Shiny plastic or glass, bubble-smooth surface, high-gloss lacquer, candy shell, Studio softbox, rim light, gradient sky reflection, glossy hotspot, Sphere based, anthropomorphic objects, simplified features, chunky proportions plus proportion codes, recurring surface motifs, era cues, pattern pressure, cultural references, and designed contrast, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Emoji 3D as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +33,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Indexed Pixel Constraint',
     category: '3. Aesthetics',
     negativePrompt:
-      'hd, vector, smooth, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, blurry upscaled pixels, HUD text, hd, vector, smooth, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Indexed Pixel Constraint operates as a portable source-router layer: combine Strict retro raster system with tile logic, hard pixel edges, indexed palettes, and low-resolution silhouette discipline with cultural style-system logic with recognizable design codes, mood grammar, and transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Indexed pixel art: the subject drawn under strict old-console limits, hard square pixels and a tiny fixed palette.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms re-code, stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Square-grid clusters, stair-step diagonals, one-pixel outlines, chunky negative shapes, tile-aligned contours; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
-      color_and_tone:
-        "Map color through identity-bearing color families, accent rules, tonal pressure, era-specific contrast, and material color behavior; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn on a low-resolution grid with hard pixel edges, a limited indexed palette, hand-placed dithering and clear silhouettes.",
+      color_and_tone: 'A fixed palette of about 16 colors, no gradients beyond dithering.',
       lighting_and_shadow:
-        "Use Palette-step shading with no soft gradients, cluster highlights, hard shadow cells, and readable value bands plus mood-led lighting that reinforces the aesthetic code without replacing the requested subject as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
-      texture_and_material:
-        'Render Pixel blocks, ordered dithering, tile repeats, aliased edges, screen-grid crispness plus signature finishes, symbolic surfaces, pattern systems, ornamental density, polish, grime, gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Light shown by palette steps and dither, with one clear light direction.',
+      texture_and_material: 'Crisp square pixels with no anti-aliasing and no blur.',
       camera_and_composition:
-        'Compose with Resolution compression, tile repetition, stair-stepped curves, sprite-scale simplification, grid-snapped perspective plus taste-coded spacing, silhouette discipline, motif placement, designed clutter, and reusable visual hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Game-scene framing at native low resolution scaled up with nearest-neighbor.',
       atmosphere_and_mood:
-        "Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread, cuteness, or spectacle; the emotional tone should feel specific to Indexed Pixel Constraint while still obeying the prompt's subject and context.",
-      rendering_and_quality:
-        'Finish with coherent art direction, strong subject preservation, clean code recognition, and no mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Strict retro raster system with tile logic, hard pixel edges, indexed palettes, and low-resolution silhouette discipline; Square-grid clusters, stair-step diagonals, one-pixel outlines, chunky negative shapes, tile-aligned contours; Pixel blocks, ordered dithering, tile repeats, aliased edges, screen-grid crispness; Palette-step shading with no soft gradients, cluster highlights, hard shadow cells, and readable value bands; Resolution compression, tile repetition, stair-stepped curves, sprite-scale simplification, grid-snapped perspective',
+        'Nostalgic, precise, crafted and playful, driven by the construction, color and rhythm.',
+      rendering_and_quality: 'Hand-placed pixel art with clean clusters and no stray pixels.',
+      key_features: 'hard pixels; indexed palette; dithering; strong silhouettes',
       creative_brief:
-        'Use Indexed Pixel Constraint after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Strict retro raster system with tile logic, hard pixel edges, indexed palettes, and low-resolution silhouette discipline, Square-grid clusters, stair-step diagonals, one-pixel outlines, chunky negative shapes, tile-aligned contours, Pixel blocks, ordered dithering, tile repeats, aliased edges, screen-grid crispness, Palette-step shading with no soft gradients, cluster highlights, hard shadow cells, and readable value bands, Resolution compression, tile repetition, stair-stepped curves, sprite-scale simplification, grid-snapped perspective plus proportion codes, recurring surface motifs, era cues, pattern pressure, cultural references, and designed contrast, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Indexed Pixel Constraint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +58,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Chrome Horizon Voltage',
     category: '3. Aesthetics',
     negativePrompt:
-      'nature, green, day, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, nature, green, day, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Chrome Horizon Voltage operates as a portable source-router layer: combine Synthwave voltage system with neon geometry, analog-video nostalgia, chrome accents, and clean retro-futurist depth with cultural style-system logic with recognizable design codes, mood grammar, and transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Chrome horizon synthwave: glowing grid floors, a striped sunset sun, chrome edges and magenta-cyan night haze.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms re-code, stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Wireframe planes, parallel grid recurrences, sharp vector silhouettes, triangular solar motifs, chrome edge cuts; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
-      color_and_tone:
-        "Map color through identity-bearing color families, accent rules, tonal pressure, era-specific contrast, and material color behavior; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
-      lighting_and_shadow:
-        "Use Neon rim emission, gradient voltage glow, hard backlight silhouettes, analog screen bloom, dark-field contrast plus mood-led lighting that reinforces the aesthetic code without replacing the requested subject as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: placed on a glowing perspective grid under a striped setting sun, edges rimmed in chrome and neon, silhouettes simplified.",
+      color_and_tone: 'Magenta, cyan, violet and hot orange with deep indigo night.',
+      lighting_and_shadow: 'Neon rim light, glowing grid lines and sunset backlight.',
       texture_and_material:
-        'Render VHS scanlines, chrome sheen, vector grid glow, smooth plastic black, analog display noise plus signature finishes, symbolic surfaces, pattern systems, ornamental density, polish, grime, gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
-      camera_and_composition:
-        'Compose with Wireframe recession, horizon compression, scanline drift, chrome reflection bend, geometric depth slicing plus taste-coded spacing, silhouette discipline, motif placement, designed clutter, and reusable visual hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Chrome reflections, scanline haze and airbrushed gradients, visible at card size as the signature of the style.',
+      camera_and_composition: 'Low wide shot toward the horizon with the grid receding.',
       atmosphere_and_mood:
-        "Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread, cuteness, or spectacle; the emotional tone should feel specific to Chrome Horizon Voltage while still obeying the prompt's subject and context.",
+        'Nostalgic, cool, electric and dreamy, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with coherent art direction, strong subject preservation, clean code recognition, and no mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Synthwave voltage system with neon geometry, analog-video nostalgia, chrome accents, and clean retro-futurist depth; Wireframe planes, parallel grid recurrences, sharp vector silhouettes, triangular solar motifs, chrome edge cuts; VHS scanlines, chrome sheen, vector grid glow, smooth plastic black, analog display noise; Neon rim emission, gradient voltage glow, hard backlight silhouettes, analog screen bloom, dark-field contrast; Wireframe recession, horizon compression, scanline drift, chrome reflection bend, geometric depth slicing',
+        'Polished retro airbrush and neon render, with clean, deliberate marks and no accidental noise.',
+      key_features: 'perspective grid; striped sun; chrome rim; magenta-cyan haze',
       creative_brief:
-        'Use Chrome Horizon Voltage after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Synthwave voltage system with neon geometry, analog-video nostalgia, chrome accents, and clean retro-futurist depth, Wireframe planes, parallel grid recurrences, sharp vector silhouettes, triangular solar motifs, chrome edge cuts, VHS scanlines, chrome sheen, vector grid glow, smooth plastic black, analog display noise, Neon rim emission, gradient voltage glow, hard backlight silhouettes, analog screen bloom, dark-field contrast, Wireframe recession, horizon compression, scanline drift, chrome reflection bend, geometric depth slicing plus proportion codes, recurring surface motifs, era cues, pattern pressure, cultural references, and designed contrast, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chrome Horizon Voltage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +83,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Solarpunk',
     category: '3. Aesthetics',
     negativePrompt:
-      'dark, industrial, pollution, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, dark, industrial, pollution, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Solarpunk operates as a portable source-router layer: combine Regenerative eco-futurist style with biophilic infrastructure language, clean-tech optimism, and balanced organic-technological harmony with cultural style-system logic with recognizable design codes, mood grammar, and transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Solarpunk: hopeful green-tech communities where plants, solar glass and handmade repair live together.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms re-code, stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Flowing botanical arcs merged with engineered modular structures, branch-like network geometry, and smooth growth-driven contours; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: set in a lived-in green city: terraces of gardens, solar canopies, wind sails, stained-glass panels and people working together.",
       color_and_tone:
-        "Map color through identity-bearing color families, accent rules, tonal pressure, era-specific contrast, and material color behavior; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        'Sunny greens, warm whites, sky blue and copper, used consistently across subject and background.',
       lighting_and_shadow:
-        "Use Clear daylight with leaf-filtered dapple, gentle solar glints, and selective bio-luminous accents for hopeful atmosphere plus mood-led lighting that reinforces the aesthetic code without replacing the requested subject as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Bright warm daylight filtered through leaves and glass, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Living-wall foliage, transparent energy glass, matte photovoltaic surfaces, bamboo-like composites, and bio-grown material cues plus signature finishes, symbolic surfaces, pattern systems, ornamental density, polish, grime, gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
-      camera_and_composition:
-        'Compose with Vertical garden layering, canopy-network depth paths, and architecture-as-ecosystem spatial interweaving plus taste-coded spacing, silhouette discipline, motif placement, designed clutter, and reusable visual hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Living plants, bamboo, glass, copper and weathered wood, visible at card size as the signature of the style.',
+      camera_and_composition: 'Wide inhabited view with foreground gardens and deep city layers.',
       atmosphere_and_mood:
-        "Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread, cuteness, or spectacle; the emotional tone should feel specific to Solarpunk while still obeying the prompt's subject and context.",
+        'Hopeful, communal, fresh and calm, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with coherent art direction, strong subject preservation, clean code recognition, and no mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Regenerative eco-futurist style with biophilic infrastructure language, clean-tech optimism, and balanced organic-technological harmony; Flowing botanical arcs merged with engineered modular structures, branch-like network geometry, and smooth growth-driven contours; Living-wall foliage, transparent energy glass, matte photovoltaic surfaces, bamboo-like composites, and bio-grown material cues; Clear daylight with leaf-filtered dapple, gentle solar glints, and selective bio-luminous accents for hopeful atmosphere; Vertical garden layering, canopy-network depth paths, and architecture-as-ecosystem spatial interweaving',
+        'Clean detailed illustration or painting, with clean, deliberate marks and no accidental noise.',
+      key_features: 'rooftop gardens; solar canopies; wind sails; communal life',
       creative_brief:
-        'Use Solarpunk after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Regenerative eco-futurist style with biophilic infrastructure language, clean-tech optimism, and balanced organic-technological harmony, Flowing botanical arcs merged with engineered modular structures, branch-like network geometry, and smooth growth-driven contours, Living-wall foliage, transparent energy glass, matte photovoltaic surfaces, bamboo-like composites, and bio-grown material cues, Clear daylight with leaf-filtered dapple, gentle solar glints, and selective bio-luminous accents for hopeful atmosphere, Vertical garden layering, canopy-network depth paths, and architecture-as-ecosystem spatial interweaving plus proportion codes, recurring surface motifs, era cues, pattern pressure, cultural references, and designed contrast, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Solarpunk as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +110,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Dieselpunk',
     category: '3. Aesthetics',
     negativePrompt:
-      'clean, digital, plastic, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real war insignia, clean, digital, plastic, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Dieselpunk operates as a portable source-router layer: combine Diesel-industrial retrofuturism with heavy mechanical massing, soot-era infrastructure, and oppressive analog power aesthetics with cultural style-system logic with recognizable design codes, mood grammar, and transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Dieselpunk: 1930s-40s heavy industry retrofuturism, huge riveted machines, smoke and searchlights.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms re-code, stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Rivets, heavy metal plates, cast-iron curves, bolted seams, industrial silhouettes; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: set in a world of riveted steel, diesel engines, zeppelins and war-era propaganda-poster weight.",
       color_and_tone:
-        "Map color through identity-bearing color families, accent rules, tonal pressure, era-specific contrast, and material color behavior; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        'Oily blacks, gunmetal, rust, olive and sodium amber, used consistently across subject and background.',
       lighting_and_shadow:
-        "Use Sooty, dark, industrial, caged-bulb gloom, exhaust-haze diffusion, furnace-glow warmth plus mood-led lighting that reinforces the aesthetic code without replacing the requested subject as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Searchlights and furnace glow through smoke, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Grime, smoke, metal, cold-stamped steel, oil-slick puddles, sweat-stained leather, caked rust plus signature finishes, symbolic surfaces, pattern systems, ornamental density, polish, grime, gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Riveted steel, grease, soot and heavy canvas, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose with Bulky machinery, oversized engines, vertical oppression, crushing-mass architecture plus taste-coded spacing, silhouette discipline, motif placement, designed clutter, and reusable visual hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Low monumental angle with massive machines, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread, cuteness, or spectacle; the emotional tone should feel specific to Dieselpunk while still obeying the prompt's subject and context.",
+        'Oppressive, grim, mighty and industrial, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with coherent art direction, strong subject preservation, clean code recognition, and no mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Diesel-industrial retrofuturism with heavy mechanical massing, soot-era infrastructure, and oppressive analog power aesthetics; Rivets, heavy metal plates, cast-iron curves, bolted seams, industrial silhouettes; Grime, smoke, metal, cold-stamped steel, oil-slick puddles, sweat-stained leather, caked rust; Sooty, dark, industrial, caged-bulb gloom, exhaust-haze diffusion, furnace-glow warmth; Bulky machinery, oversized engines, vertical oppression, crushing-mass architecture',
+        'Painterly concept art with heavy forms, with clean, deliberate marks and no accidental noise.',
+      key_features: 'rivets; diesel smoke; searchlights; zeppelins; monumental machines',
       creative_brief:
-        'Use Dieselpunk after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Diesel-industrial retrofuturism with heavy mechanical massing, soot-era infrastructure, and oppressive analog power aesthetics, Rivets, heavy metal plates, cast-iron curves, bolted seams, industrial silhouettes, Grime, smoke, metal, cold-stamped steel, oil-slick puddles, sweat-stained leather, caked rust, Sooty, dark, industrial, caged-bulb gloom, exhaust-haze diffusion, furnace-glow warmth, Bulky machinery, oversized engines, vertical oppression, crushing-mass architecture plus proportion codes, recurring surface motifs, era cues, pattern pressure, cultural references, and designed contrast, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dieselpunk as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +138,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cottagecore',
     category: '3. Aesthetics',
     negativePrompt:
-      'urban-system, modern, cold, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, urban-system, modern, cold, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cottagecore operates as a portable source-router layer: combine Soft handcrafted pastoral-romantic style balanced on slow-living warmth, botanical gentleness, and domestic natural charm with cultural style-system logic with recognizable design codes, mood grammar, and transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Cottagecore: soft pastoral life, wildflower gardens, handmade bread, linen and warm cottage light.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms re-code, stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Delicate organic contouring, airy floral tendrils, soft textile drape lines, and graceful hand-drawn edge behavior; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: set in a slow rural life of cottage gardens, baking, sewing, foraging and animals.",
       color_and_tone:
-        "Map color through identity-bearing color families, accent rules, tonal pressure, era-specific contrast, and material color behavior; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        'Soft creams, sage, dusty rose and butter yellow, used consistently across subject and background.',
       lighting_and_shadow:
-        "Use Diffused golden warmth with curtain-soft scatter, candlelike ambient glows, and misty morning low-contrast serenity plus mood-led lighting that reinforces the aesthetic code without replacing the requested subject as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Golden afternoon light through windows, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Natural-fiber linens, hand-thrown ceramic matte grain, wicker weave detail, embroidered thread cues, and dried-botanical tactility plus signature finishes, symbolic surfaces, pattern systems, ornamental density, polish, grime, gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Linen, wicker, wood, flowers and bread crust, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose with Natural human-scale proportions with close-range framing and gently compressed depth for intimate mood plus taste-coded spacing, silhouette discipline, motif placement, designed clutter, and reusable visual hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Cozy interior or garden framing with foreground flowers, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread, cuteness, or spectacle; the emotional tone should feel specific to Cottagecore while still obeying the prompt's subject and context.",
+        'Gentle, warm, nostalgic and peaceful, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with coherent art direction, strong subject preservation, clean code recognition, and no mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Soft handcrafted pastoral-romantic style balanced on slow-living warmth, botanical gentleness, and domestic natural charm; Delicate organic contouring, airy floral tendrils, soft textile drape lines, and graceful hand-drawn edge behavior; Natural-fiber linens, hand-thrown ceramic matte grain, wicker weave detail, embroidered thread cues, and dried-botanical tactility; Diffused golden warmth with curtain-soft scatter, candlelike ambient glows, and misty morning low-contrast serenity; Natural human-scale proportions with close-range framing and gently compressed depth for intimate mood',
+        'Soft painterly or photographic finish, with clean, deliberate marks and no accidental noise.',
+      key_features: 'cottage garden; linen; baking; wildflowers; golden light',
       creative_brief:
-        'Use Cottagecore after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Soft handcrafted pastoral-romantic style balanced on slow-living warmth, botanical gentleness, and domestic natural charm, Delicate organic contouring, airy floral tendrils, soft textile drape lines, and graceful hand-drawn edge behavior, Natural-fiber linens, hand-thrown ceramic matte grain, wicker weave detail, embroidered thread cues, and dried-botanical tactility, Diffused golden warmth with curtain-soft scatter, candlelike ambient glows, and misty morning low-contrast serenity, Natural human-scale proportions with close-range framing and gently compressed depth for intimate mood plus proportion codes, recurring surface motifs, era cues, pattern pressure, cultural references, and designed contrast, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cottagecore as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,57 +166,57 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Dark Academia',
     category: '3. Aesthetics',
     negativePrompt:
-      'bright, modern, neon, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, bright, modern, neon, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Dark Academia operates as a portable source-router layer: combine Gothic scholarly interior style with candlelit intellectual mood, archival intimacy, and old-world academic romance with cultural style-system logic with recognizable design codes, mood grammar, and transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Dark academia: candlelit old universities, tweed, leather books, marble busts and scholarly obsession.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms re-code, stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Detailed, gothic, arch-window contours, columnar rhythm, ornate typography; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: set in old stone colleges and libraries, with students in tweed and wool, candles, inkwells and marble.",
       color_and_tone:
-        "Map color through identity-bearing color families, accent rules, tonal pressure, era-specific contrast, and material color behavior; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        'Brown, oxblood, forest green, cream and candle gold, used consistently across subject and background.',
       lighting_and_shadow:
-        "Use Candlelight, dim, desk-lamp pool, fireplace flicker, window-shaft dust-mote drama plus mood-led lighting that reinforces the aesthetic code without replacing the requested subject as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Candlelight and grey window light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Old paper, leather books, wood, wax-drip candle stacks, wool-blend jackets, ink-stained fingertips plus signature finishes, symbolic surfaces, pattern systems, ornamental density, polish, grime, gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Leather, tweed, parchment, marble and dark wood, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose with Towering bookshelf compression, vaulted-ceiling vertigo, cloistered intimacy plus taste-coded spacing, silhouette discipline, motif placement, designed clutter, and reusable visual hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Intimate interior framing with deep shadows, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread, cuteness, or spectacle; the emotional tone should feel specific to Dark Academia while still obeying the prompt's subject and context.",
+        'Melancholic, intellectual, secretive and romantic, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with coherent art direction, strong subject preservation, clean code recognition, and no mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Gothic scholarly interior style with candlelit intellectual mood, archival intimacy, and old-world academic romance; Detailed, gothic, arch-window contours, columnar rhythm, ornate typography; Old paper, leather books, wood, wax-drip candle stacks, wool-blend jackets, ink-stained fingertips; Candlelight, dim, desk-lamp pool, fireplace flicker, window-shaft dust-mote drama; Towering bookshelf compression, vaulted-ceiling vertigo, cloistered intimacy',
+        'Moody painterly or film-photo finish, with clean, deliberate marks and no accidental noise.',
+      key_features: 'tweed; candlelit library; marble busts; ink and parchment',
       creative_brief:
-        'Use Dark Academia after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Gothic scholarly interior style with candlelit intellectual mood, archival intimacy, and old-world academic romance, Detailed, gothic, arch-window contours, columnar rhythm, ornate typography, Old paper, leather books, wood, wax-drip candle stacks, wool-blend jackets, ink-stained fingertips, Candlelight, dim, desk-lamp pool, fireplace flicker, window-shaft dust-mote drama, Towering bookshelf compression, vaulted-ceiling vertigo, cloistered intimacy plus proportion codes, recurring surface motifs, era cues, pattern pressure, cultural references, and designed contrast, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dark Academia as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP11-036',
-    name: 'Liminal Consumer Vapor',
+    name: 'Vaporwave Mall Haze',
+    displayName: 'Vaporwave Mall Haze',
+    styleAnchors: ['Vaporwave Mall Haze'],
     category: '3. Aesthetics',
     negativePrompt:
-      'serious, dark, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, serious, dark, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Liminal Consumer Vapor operates as a portable source-router layer: combine Retro-digital consumer-memory haze with synthetic gradients, low-res luxury, mall-air unreality, and soft ironic emptiness with cultural style-system logic with recognizable design codes, mood grammar, and transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Vaporwave mall haze: empty 90s shopping malls, marble statues, palms, pastel gradients and low-res digital nostalgia.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms re-code, stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Pixel-sorted edges, glossy primitive geometry, UI-era grids, marble-like fragments, low-poly planes, VHS drift; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: placed in an empty dreamlike mall or lobby with fountains, palms, marble busts and glossy tiles, a little too clean and quiet.",
       color_and_tone:
-        "Map color through identity-bearing color families, accent rules, tonal pressure, era-specific contrast, and material color behavior; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        'Pastel pink, teal, lavender and chrome, used consistently across subject and background.',
       lighting_and_shadow:
-        "Use Diffuse monitor glow, gradient backwash, weak ambient haze, artificial highlight bands, nostalgic screen bloom plus mood-led lighting that reinforces the aesthetic code without replacing the requested subject as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Soft even fluorescent light with gradient skies, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Compressed video artifacts, glossy plastic, cheap marble, CRT fuzz, low-res UI texture, airbrushed gradients plus signature finishes, symbolic surfaces, pattern systems, ornamental density, polish, grime, gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Glossy tiles, marble, chrome and low-res image grain, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose with Pixel sorting, grid recession, VHS wobble, object-scale ambiguity, compression trails, liminal perspective flattening plus taste-coded spacing, silhouette discipline, motif placement, designed clutter, and reusable visual hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Symmetrical frontal framing with empty space, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread, cuteness, or spectacle; the emotional tone should feel specific to Liminal Consumer Vapor while still obeying the prompt's subject and context.",
+        'Dreamy, ironic, lonely and nostalgic, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with coherent art direction, strong subject preservation, clean code recognition, and no mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Retro-digital consumer-memory haze with synthetic gradients, low-res luxury, mall-air unreality, and soft ironic emptiness; Pixel-sorted edges, glossy primitive geometry, UI-era grids, marble-like fragments, low-poly planes, VHS drift; Compressed video artifacts, glossy plastic, cheap marble, CRT fuzz, low-res UI texture, airbrushed gradients; Diffuse monitor glow, gradient backwash, weak ambient haze, artificial highlight bands, nostalgic screen bloom; Pixel sorting, grid recession, VHS wobble, object-scale ambiguity, compression trails, liminal perspective flattening',
+        'Glossy digital collage finish with mild pixel grain, with clean, deliberate marks and no accidental noise.',
+      key_features: 'empty mall; marble bust; palms; pastel gradients; low-res grain',
       creative_brief:
-        'Use Liminal Consumer Vapor after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Retro-digital consumer-memory haze with synthetic gradients, low-res luxury, mall-air unreality, and soft ironic emptiness, Pixel-sorted edges, glossy primitive geometry, UI-era grids, marble-like fragments, low-poly planes, VHS drift, Compressed video artifacts, glossy plastic, cheap marble, CRT fuzz, low-res UI texture, airbrushed gradients, Diffuse monitor glow, gradient backwash, weak ambient haze, artificial highlight bands, nostalgic screen bloom, Pixel sorting, grid recession, VHS wobble, object-scale ambiguity, compression trails, liminal perspective flattening plus proportion codes, recurring surface motifs, era cues, pattern pressure, cultural references, and designed contrast, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vaporwave Mall Haze as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +224,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Steampunk',
     category: '3. Aesthetics',
     negativePrompt:
-      'plastic, digital, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, plastic, digital, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Steampunk operates as a portable source-router layer: combine Victorian-industrial speculative style with brass-and-steam futurism, analog invention romance, and ornate mechanical worldbuilding with cultural style-system logic with recognizable design codes, mood grammar, and transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Steampunk: Victorian brass-and-steam invention, gears, gauges, goggles and airships.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms re-code, stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Gears, pipes, cog-train silhouettes, steam-vent contours, clock-face profiles; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: fitted with brass gears, pressure gauges, copper pipes and steam vents, dressed in Victorian clothing.",
       color_and_tone:
-        "Map color through identity-bearing color families, accent rules, tonal pressure, era-specific contrast, and material color behavior; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        'Brass, copper, mahogany, cream and soot, used consistently across subject and background.',
       lighting_and_shadow:
-        "Use Gaslight, steam, mantle-flame glow, hissing-vent haze, Edison-bulb warmth, lantern-swing shadows plus mood-led lighting that reinforces the aesthetic code without replacing the requested subject as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Warm gaslight and steam glow, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Metal, leather, steam, polished-brass luster, rivet-head bumps, pressure-gauge glass, oiled-gear teeth plus signature finishes, symbolic surfaces, pattern systems, ornamental density, polish, grime, gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Polished brass, riveted copper, leather and steam, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose with Clockwork parts, over-engineered joints, exposed-mechanism transparency, piston-in-sleeve precision plus taste-coded spacing, silhouette discipline, motif placement, designed clutter, and reusable visual hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Detailed mid shot with machinery around the subject, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread, cuteness, or spectacle; the emotional tone should feel specific to Steampunk while still obeying the prompt's subject and context.",
+        'Inventive, adventurous, ornate and romantic, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with coherent art direction, strong subject preservation, clean code recognition, and no mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Victorian-industrial speculative style with brass-and-steam futurism, analog invention romance, and ornate mechanical worldbuilding; Gears, pipes, cog-train silhouettes, steam-vent contours, clock-face profiles; Metal, leather, steam, polished-brass luster, rivet-head bumps, pressure-gauge glass, oiled-gear teeth; Gaslight, steam, mantle-flame glow, hissing-vent haze, Edison-bulb warmth, lantern-swing shadows; Clockwork parts, over-engineered joints, exposed-mechanism transparency, piston-in-sleeve precision',
+        'Detailed illustration or painting, with clean, deliberate marks and no accidental noise.',
+      key_features: 'brass gears; gauges; steam; goggles; airships',
       creative_brief:
-        'Use Steampunk after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Victorian-industrial speculative style with brass-and-steam futurism, analog invention romance, and ornate mechanical worldbuilding, Gears, pipes, cog-train silhouettes, steam-vent contours, clock-face profiles, Metal, leather, steam, polished-brass luster, rivet-head bumps, pressure-gauge glass, oiled-gear teeth, Gaslight, steam, mantle-flame glow, hissing-vent haze, Edison-bulb warmth, lantern-swing shadows, Clockwork parts, over-engineered joints, exposed-mechanism transparency, piston-in-sleeve precision plus proportion codes, recurring surface motifs, era cues, pattern pressure, cultural references, and designed contrast, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Steampunk as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -269,28 +252,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Biopunk',
     category: '3. Aesthetics',
     negativePrompt:
-      'metal, dry, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, metal, dry, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Biopunk operates as a portable source-router layer: combine Biopunk flesh-tech hybrid design with recombinant-lab aesthetics with cultural style-system logic with recognizable design codes, mood grammar, and transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Biopunk: living technology grown from flesh, veins and tissue in wet labs and organic cities.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms re-code, stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Veins, flesh, sinew-strand contours, tendril-tangle, organic-tube networks; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
-      color_and_tone:
-        "Map color through identity-bearing color families, accent rules, tonal pressure, era-specific contrast, and material color behavior; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: fused with grown organic machinery: veins, tendons, membranes, growth vats and pulsing tubes.",
+      color_and_tone: 'Flesh pinks, bile yellow, sick green and dark red.',
       lighting_and_shadow:
-        "Use Wet, slime, fluorescent-incubator, surgical-key, mucous-membrane sheen, bioreactor-glow plus mood-led lighting that reinforces the aesthetic code without replacing the requested subject as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Wet lab light and bioluminescent glow, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Organic matter, membrane-film, pulsating-tissue, slime-coat, chitin-shell, grown-not-built surface plus signature finishes, symbolic surfaces, pattern systems, ornamental density, polish, grime, gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Wet skin, membrane, cartilage and glass vats, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose with Mutations, extra-limb growth, asymmetric-organ placement, tumor-bud emergence, fused-anatomy plus taste-coded spacing, silhouette discipline, motif placement, designed clutter, and reusable visual hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Close, claustrophobic framing, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread, cuteness, or spectacle; the emotional tone should feel specific to Biopunk while still obeying the prompt's subject and context.",
+        'Unsettling, visceral, strange and feverish, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with coherent art direction, strong subject preservation, clean code recognition, and no mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Biopunk flesh-tech hybrid design with recombinant-lab aesthetics; Veins, flesh, sinew-strand contours, tendril-tangle, organic-tube networks; Organic matter, membrane-film, pulsating-tissue, slime-coat, chitin-shell, grown-not-built surface; Wet, slime, fluorescent-incubator, surgical-key, mucous-membrane sheen, bioreactor-glow; Mutations, extra-limb growth, asymmetric-organ placement, tumor-bud emergence, fused-anatomy',
+        'Detailed painterly render with wet surfaces, with clean, deliberate marks and no accidental noise.',
+      key_features: 'grown machinery; veins; membranes; vats; bioluminescence',
       creative_brief:
-        'Use Biopunk after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Biopunk flesh-tech hybrid design with recombinant-lab aesthetics, Veins, flesh, sinew-strand contours, tendril-tangle, organic-tube networks, Organic matter, membrane-film, pulsating-tissue, slime-coat, chitin-shell, grown-not-built surface, Wet, slime, fluorescent-incubator, surgical-key, mucous-membrane sheen, bioreactor-glow, Mutations, extra-limb growth, asymmetric-organ placement, tumor-bud emergence, fused-anatomy plus proportion codes, recurring surface motifs, era cues, pattern pressure, cultural references, and designed contrast, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Biopunk as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -298,28 +279,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Gothic Horror',
     category: '3. Aesthetics',
     negativePrompt:
-      'sunlight, happy, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sunlight, happy, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Gothic Horror operates as a portable source-router layer: combine Gothic horror romanticism with ornamental decay, aristocratic gloom, and vertical menace with cultural style-system logic with recognizable design codes, mood grammar, and transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Gothic horror: crumbling castles, crypts, candlelit aristocrats and vertical menace.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms re-code, stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Spiky vertical silhouettes, flying-buttress rhythm, tombstone-contours, wrought-iron flourishes; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: framed by tall vertical shadows and pointed-arch shapes, figures made pale and elegant, surfaces aged and decaying, with the threat kept just out of sight.",
       color_and_tone:
-        "Map color through identity-bearing color families, accent rules, tonal pressure, era-specific contrast, and material color behavior; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        'Black, blood red, bone white and candle gold, used consistently across subject and background.',
       lighting_and_shadow:
-        "Use Moonlight, fog, candelabra-flicker, stained-glass color cuts, lightning-flash drama, torch-sconce warmth plus mood-led lighting that reinforces the aesthetic code without replacing the requested subject as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Candlelight and moonlight with deep shadow, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Stone, velvet, fog, crumbling-masonry, coffin-wood, wax-drip candle, cold-marble tomb, cobweb-silk plus signature finishes, symbolic surfaces, pattern systems, ornamental density, polish, grime, gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Stone, velvet, cobwebs and tarnished silver, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose with Shadows, elongated-finger silhouettes, stretched verticals, impossible depth, cape-like darkness plus taste-coded spacing, silhouette discipline, motif placement, designed clutter, and reusable visual hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Tall vertical framing with looming architecture, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread, cuteness, or spectacle; the emotional tone should feel specific to Gothic Horror while still obeying the prompt's subject and context.",
+        'Dread, romantic, decadent and haunted, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with coherent art direction, strong subject preservation, clean code recognition, and no mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Gothic horror romanticism with ornamental decay, aristocratic gloom, and vertical menace; Spiky vertical silhouettes, flying-buttress rhythm, tombstone-contours, wrought-iron flourishes; Stone, velvet, fog, crumbling-masonry, coffin-wood, wax-drip candle, cold-marble tomb, cobweb-silk; Moonlight, fog, candelabra-flicker, stained-glass color cuts, lightning-flash drama, torch-sconce warmth; Shadows, elongated-finger silhouettes, stretched verticals, impossible depth, cape-like darkness',
+        'Dark painterly finish, with clean, deliberate marks and no accidental noise.',
+      key_features: 'pointed arches; crypt; candelabra; pale aristocrat; moonlight',
       creative_brief:
-        'Use Gothic Horror after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Gothic horror romanticism with ornamental decay, aristocratic gloom, and vertical menace, Spiky vertical silhouettes, flying-buttress rhythm, tombstone-contours, wrought-iron flourishes, Stone, velvet, fog, crumbling-masonry, coffin-wood, wax-drip candle, cold-marble tomb, cobweb-silk, Moonlight, fog, candelabra-flicker, stained-glass color cuts, lightning-flash drama, torch-sconce warmth, Shadows, elongated-finger silhouettes, stretched verticals, impossible depth, cape-like darkness plus proportion codes, recurring surface motifs, era cues, pattern pressure, cultural references, and designed contrast, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gothic Horror as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -327,28 +307,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Kawaii Pastel',
     category: '3. Aesthetics',
     negativePrompt:
-      'dark, scary, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, dark, scary, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Kawaii Pastel operates as a portable source-router layer: combine Kawaii pastel mascot illustration language with high-cute stylization with cultural style-system logic with recognizable design codes, mood grammar, and transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Kawaii pastel: super-cute mascot style with round shapes, blushing cheeks and soft pastel colors.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms re-code, stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Thick soft lines, rounded-rubber-hose curves, marshmallow-contours, plushie-silhouette; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as a round mascot with big shiny eyes, tiny mouth, blush marks and soft thick outlines.",
       color_and_tone:
-        "Map color through identity-bearing color families, accent rules, tonal pressure, era-specific contrast, and material color behavior; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        'Pastel pink, mint, baby blue and lavender, used consistently across subject and background.',
       lighting_and_shadow:
-        "Use Bright, flat, ring-light softness, studio-bounce fill, high-key-whites, shadowless-cheer plus mood-led lighting that reinforces the aesthetic code without replacing the requested subject as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Soft flat light with small sparkles, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Smooth, fluffy, marshmallow-soft, fondant-gloss, sherbet-grain, cotton-ball fuzz plus signature finishes, symbolic surfaces, pattern systems, ornamental density, polish, grime, gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Smooth flat color with soft outlines, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose with Big eyes, sparkle-pupil, oversized-head, tiny-body, chibi-extremity, bean-proportion plus taste-coded spacing, silhouette discipline, motif placement, designed clutter, and reusable visual hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Centered mascot with sparkles and small props, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread, cuteness, or spectacle; the emotional tone should feel specific to Kawaii Pastel while still obeying the prompt's subject and context.",
+        'Adorable, sweet, cheerful and soft, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with coherent art direction, strong subject preservation, clean code recognition, and no mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Kawaii pastel mascot illustration language with high-cute stylization; Thick soft lines, rounded-rubber-hose curves, marshmallow-contours, plushie-silhouette; Smooth, fluffy, marshmallow-soft, fondant-gloss, sherbet-grain, cotton-ball fuzz; Bright, flat, ring-light softness, studio-bounce fill, high-key-whites, shadowless-cheer; Big eyes, sparkle-pupil, oversized-head, tiny-body, chibi-extremity, bean-proportion',
+        'Clean vector-like illustration, with clean, deliberate marks and no accidental noise.',
+      key_features: 'round mascot; blush marks; big eyes; pastel palette; sparkles',
       creative_brief:
-        'Use Kawaii Pastel after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Kawaii pastel mascot illustration language with high-cute stylization, Thick soft lines, rounded-rubber-hose curves, marshmallow-contours, plushie-silhouette, Smooth, fluffy, marshmallow-soft, fondant-gloss, sherbet-grain, cotton-ball fuzz, Bright, flat, ring-light softness, studio-bounce fill, high-key-whites, shadowless-cheer, Big eyes, sparkle-pupil, oversized-head, tiny-body, chibi-extremity, bean-proportion plus proportion codes, recurring surface motifs, era cues, pattern pressure, cultural references, and designed contrast, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kawaii Pastel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -356,28 +335,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Grimdark',
     category: '3. Aesthetics',
     negativePrompt:
-      'hope, light, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, franchise armor designs, franchise insignia, hope, light, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Grimdark operates as a portable source-router layer: combine Grimdark cathedral-industrial war fantasy with oppressive futurism with cultural style-system logic with recognizable design codes, mood grammar, and transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Grimdark war fantasy: endless war, cathedral-sized fortresses, filthy armored soldiers and religious fanaticism.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms re-code, stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Heavy, dirty, ceramite-plate contours, purity-seal ribbons, chainsword-teeth, servo-skull profiles; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
-      color_and_tone:
-        "Map color through identity-bearing color families, accent rules, tonal pressure, era-specific contrast, and material color behavior; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: set in a world of permanent war: massive ornate armor worn down by mud and blood, relic-covered banners, skull-carved fortresses.",
+      color_and_tone: 'Mud brown, rust, bone, grim gold and ash grey.',
       lighting_and_shadow:
-        "Use Dark, harsh, gothic-arch crypt-light, muzzle-flash bursts, warp-storm flicker, candle-shrine pools plus mood-led lighting that reinforces the aesthetic code without replacing the requested subject as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Smoky battlefield light, fire and cold overcast, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Grime, scars, ceramite-ceramic, battle-damage pitting, purity-seal wax, worn-leather, adamantium-rivet plus signature finishes, symbolic surfaces, pattern systems, ornamental density, polish, grime, gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Battered plate, torn cloth, bone, soot and stone, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose with Skulls everywhere, gothic-overscaling, cathedral-proportions, dreadnought-mass, flying-buttress tanks plus taste-coded spacing, silhouette discipline, motif placement, designed clutter, and reusable visual hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Monumental framing with tiny figures against huge structures, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread, cuteness, or spectacle; the emotional tone should feel specific to Grimdark while still obeying the prompt's subject and context.",
+        'Bleak, grim, oppressive and fanatical, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with coherent art direction, strong subject preservation, clean code recognition, and no mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Grimdark cathedral-industrial war fantasy with oppressive futurism; Heavy, dirty, ceramite-plate contours, purity-seal ribbons, chainsword-teeth, servo-skull profiles; Grime, scars, ceramite-ceramic, battle-damage pitting, purity-seal wax, worn-leather, adamantium-rivet; Dark, harsh, gothic-arch crypt-light, muzzle-flash bursts, warp-storm flicker, candle-shrine pools; Skulls everywhere, gothic-overscaling, cathedral-proportions, dreadnought-mass, flying-buttress tanks',
+        'Gritty painterly concept art, with clean, deliberate marks and no accidental noise.',
+      key_features: 'battered ornate armor; skull fortress; relic banners; endless war',
       creative_brief:
-        'Use Grimdark after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Grimdark cathedral-industrial war fantasy with oppressive futurism, Heavy, dirty, ceramite-plate contours, purity-seal ribbons, chainsword-teeth, servo-skull profiles, Grime, scars, ceramite-ceramic, battle-damage pitting, purity-seal wax, worn-leather, adamantium-rivet, Dark, harsh, gothic-arch crypt-light, muzzle-flash bursts, warp-storm flicker, candle-shrine pools, Skulls everywhere, gothic-overscaling, cathedral-proportions, dreadnought-mass, flying-buttress tanks plus proportion codes, recurring surface motifs, era cues, pattern pressure, cultural references, and designed contrast, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grimdark as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -385,28 +362,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Frutiger Aero',
     category: '3. Aesthetics',
     negativePrompt:
-      'flat, matte, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, flat, matte, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Frutiger Aero operates as a portable source-router layer: combine Frutiger Aero Y2K-era glossy UI optimism and skeuomorphic futurism with cultural style-system logic with recognizable design codes, mood grammar, and transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Frutiger Aero: mid-2000s glossy optimism with water, bubbles, green fields, blue skies and glassy UI shine.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms re-code, stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Glossy curves, rounded-rect silhouettes, bubble-button contours, aqua-orb profiles; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: placed in a glossy clean world of blue sky, green grass, water droplets, bubbles and aqua glass reflections.",
       color_and_tone:
-        "Map color through identity-bearing color families, accent rules, tonal pressure, era-specific contrast, and material color behavior; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
-      lighting_and_shadow:
-        "Use Bright, glossy, window-reflection streak, soft-overhead ambient, screen-glow-backlight, inset-shadow depth plus mood-led lighting that reinforces the aesthetic code without replacing the requested subject as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Aqua blue, grass green, white and glossy silver, used consistently across subject and background.',
+      lighting_and_shadow: 'Bright clean daylight with lens flares and glass shine.',
       texture_and_material:
-        'Render Glass, water bubbles, brushed-aluminum, aqua-gel buttons, acrylic-transparency, droplet-lens plus signature finishes, symbolic surfaces, pattern systems, ornamental density, polish, grime, gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Glass, water droplets, bubbles and glossy plastic, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose with Floating icons, dock-magnification, widget-flyout, layer-drop-shadow separation plus taste-coded spacing, silhouette discipline, motif placement, designed clutter, and reusable visual hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Clean airy framing with lots of sky, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread, cuteness, or spectacle; the emotional tone should feel specific to Frutiger Aero while still obeying the prompt's subject and context.",
+        'Optimistic, fresh, clean and nostalgic, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with coherent art direction, strong subject preservation, clean code recognition, and no mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Frutiger Aero Y2K-era glossy UI optimism and skeuomorphic futurism; Glossy curves, rounded-rect silhouettes, bubble-button contours, aqua-orb profiles; Glass, water bubbles, brushed-aluminum, aqua-gel buttons, acrylic-transparency, droplet-lens; Bright, glossy, window-reflection streak, soft-overhead ambient, screen-glow-backlight, inset-shadow depth; Floating icons, dock-magnification, widget-flyout, layer-drop-shadow separation',
+        'Glossy 2000s digital render, with clean, deliberate marks and no accidental noise.',
+      key_features: 'aqua glass; bubbles; blue sky; green hills; glossy shine',
       creative_brief:
-        'Use Frutiger Aero after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Frutiger Aero Y2K-era glossy UI optimism and skeuomorphic futurism, Glossy curves, rounded-rect silhouettes, bubble-button contours, aqua-orb profiles, Glass, water bubbles, brushed-aluminum, aqua-gel buttons, acrylic-transparency, droplet-lens, Bright, glossy, window-reflection streak, soft-overhead ambient, screen-glow-backlight, inset-shadow depth, Floating icons, dock-magnification, widget-flyout, layer-drop-shadow separation plus proportion codes, recurring surface motifs, era cues, pattern pressure, cultural references, and designed contrast, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Frutiger Aero as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -414,57 +389,57 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Postmodern Pattern Clash',
     category: '3. Aesthetics',
     negativePrompt:
-      'realistic, 3d, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, realistic, 3d, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Postmodern Pattern Clash operates as a portable source-router layer: combine Memphis-informed anti-minimal pattern system with geometric jokes, surface collision, and playful design contradiction with cultural style-system logic with recognizable design codes, mood grammar, and transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Postmodern pattern clash: Memphis-style squiggles, terrazzo, checkerboards and bold primary shapes colliding.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms re-code, stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Squiggles, triangles, terrazzo speckles, checker fragments, zany circles, offset blocks, zigzag punctuation; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: rebuilt from bold geometric blocks and patterned surfaces: squiggles, dots, terrazzo, zigzags and checkerboards.",
       color_and_tone:
-        "Map color through identity-bearing color families, accent rules, tonal pressure, era-specific contrast, and material color behavior; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        'Primary colors with pink, mint and black, used consistently across subject and background.',
       lighting_and_shadow:
-        "Use Flat product-design illumination with crisp shape boundaries, minimal shadows, and pattern-first readability plus mood-led lighting that reinforces the aesthetic code without replacing the requested subject as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Flat light and hard shadows, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Laminate gloss, terrazzo chips, matte plastic, printed pattern fields, synthetic tabletop tactility plus signature finishes, symbolic surfaces, pattern systems, ornamental density, polish, grime, gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Flat patterned surfaces and laminate, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose with Pattern scale jumps, floating shape collisions, anti-grid balance, shallow design-stage depth, playful visual imbalance plus taste-coded spacing, silhouette discipline, motif placement, designed clutter, and reusable visual hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Playful staged framing with objects on pedestals, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread, cuteness, or spectacle; the emotional tone should feel specific to Postmodern Pattern Clash while still obeying the prompt's subject and context.",
+        'Playful, loud, witty and irreverent, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with coherent art direction, strong subject preservation, clean code recognition, and no mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Memphis-informed anti-minimal pattern system with geometric jokes, surface collision, and playful design contradiction; Squiggles, triangles, terrazzo speckles, checker fragments, zany circles, offset blocks, zigzag punctuation; Laminate gloss, terrazzo chips, matte plastic, printed pattern fields, synthetic tabletop tactility; Flat product-design illumination with crisp shape boundaries, minimal shadows, and pattern-first readability; Pattern scale jumps, floating shape collisions, anti-grid balance, shallow design-stage depth, playful visual imbalance',
+        'Crisp graphic render, with clean, deliberate marks and no accidental noise.',
+      key_features: 'squiggles; terrazzo; checkerboard; primary shapes; pedestals',
       creative_brief:
-        'Use Postmodern Pattern Clash after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Memphis-informed anti-minimal pattern system with geometric jokes, surface collision, and playful design contradiction, Squiggles, triangles, terrazzo speckles, checker fragments, zany circles, offset blocks, zigzag punctuation, Laminate gloss, terrazzo chips, matte plastic, printed pattern fields, synthetic tabletop tactility, Flat product-design illumination with crisp shape boundaries, minimal shadows, and pattern-first readability, Pattern scale jumps, floating shape collisions, anti-grid balance, shallow design-stage depth, playful visual imbalance plus proportion codes, recurring surface motifs, era cues, pattern pressure, cultural references, and designed contrast, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Postmodern Pattern Clash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP11-045',
-    name: 'Liquid Optic Recursion',
+    name: 'Psychedelic Optical Recursion',
+    displayName: 'Psychedelic Optical Recursion',
+    styleAnchors: ['Psychedelic Optical Recursion'],
     category: '3. Aesthetics',
     negativePrompt:
-      'boring, straight, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, boring, straight, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Liquid Optic Recursion operates as a portable source-router layer: combine Psychedelic optical recursion where color, line, and form melt into high-intensity perceptual feedback with cultural style-system logic with recognizable design codes, mood grammar, and transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Psychedelic recursion: melting patterns, paisley whorls and repeating concentric forms in vibrating colors.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms re-code, stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Paisley whorls, melting contours, nested mandalas, flame tongues, vibrating curves, morphing edge loops; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: dissolved into nested repeating forms, melting contours and paisley swirls that echo outward from the subject.",
       color_and_tone:
-        "Map color through identity-bearing color families, accent rules, tonal pressure, era-specific contrast, and material color behavior; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        'Vibrating complementary colors: orange, magenta, green and violet, used consistently across subject and background.',
       lighting_and_shadow:
-        "Use Internal chromatic glow, blacklight saturation, high contrast optical vibration, color-field pulsing plus mood-led lighting that reinforces the aesthetic code without replacing the requested subject as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Glow comes from color vibration, not light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Poster ink, liquid gradient bands, vibrating print grain, glossy ink pools, hand-drawn optical waves plus signature finishes, symbolic surfaces, pattern systems, ornamental density, polish, grime, gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Smooth flowing paint and concentric lines, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose with Recursive warping, swirl pull, contour melt, scale loops, radial feedback, figure-ground reversal plus taste-coded spacing, silhouette discipline, motif placement, designed clutter, and reusable visual hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Centered, radiating composition, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread, cuteness, or spectacle; the emotional tone should feel specific to Liquid Optic Recursion while still obeying the prompt's subject and context.",
+        'Trippy, hypnotic, ecstatic and strange, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with coherent art direction, strong subject preservation, clean code recognition, and no mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Psychedelic optical recursion where color, line, and form melt into high-intensity perceptual feedback; Paisley whorls, melting contours, nested mandalas, flame tongues, vibrating curves, morphing edge loops; Poster ink, liquid gradient bands, vibrating print grain, glossy ink pools, hand-drawn optical waves; Internal chromatic glow, blacklight saturation, high contrast optical vibration, color-field pulsing; Recursive warping, swirl pull, contour melt, scale loops, radial feedback, figure-ground reversal',
+        'Clean psychedelic illustration, with clean, deliberate marks and no accidental noise.',
+      key_features: 'nested repeats; melting contours; paisley; vibrating colors',
       creative_brief:
-        'Use Liquid Optic Recursion after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Psychedelic optical recursion where color, line, and form melt into high-intensity perceptual feedback, Paisley whorls, melting contours, nested mandalas, flame tongues, vibrating curves, morphing edge loops, Poster ink, liquid gradient bands, vibrating print grain, glossy ink pools, hand-drawn optical waves, Internal chromatic glow, blacklight saturation, high contrast optical vibration, color-field pulsing, Recursive warping, swirl pull, contour melt, scale loops, radial feedback, figure-ground reversal plus proportion codes, recurring surface motifs, era cues, pattern pressure, cultural references, and designed contrast, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Psychedelic Optical Recursion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -472,28 +447,129 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Holographic Flake Scatter',
     category: '3. Aesthetics',
     negativePrompt:
-      'matte, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, matte, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Holographic Flake Scatter operates as a portable source-router layer: combine Macro sparkle material system built from iridescent flake scatter, specular chaos, and celebratory micro-geometry with cultural style-system logic with recognizable design codes, mood grammar, and transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Holographic flake: the subject covered in iridescent glitter flakes that scatter rainbow sparkles.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms re-code, stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Tiny hexagons, sliced polygons, star confetti, shard edges, bokeh circles, clustered micro-facets; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: coated with tiny iridescent flakes and glitter that shift color across the surface.",
       color_and_tone:
-        "Map color through identity-bearing color families, accent rules, tonal pressure, era-specific contrast, and material color behavior; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        'Rainbow iridescence over silver, violet and pink, used consistently across subject and background.',
       lighting_and_shadow:
-        "Use Hard specular points, shallow macro falloff, prismatic bounce, high sparkle density, dark-to-bright contrast plus mood-led lighting that reinforces the aesthetic code without replacing the requested subject as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Bright point lights creating sparkle and flare, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Foil flakes, glitter dust, micro-mirrors, glossy confetti, granular sparkle fields, scattered reflective chips plus signature finishes, symbolic surfaces, pattern systems, ornamental density, polish, grime, gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Glitter flakes, holographic foil and gloss, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose with Bokeh expansion, specular starbursts, scale ambiguity, shallow-depth scatter, chromatic reflection shifts plus taste-coded spacing, silhouette discipline, motif placement, designed clutter, and reusable visual hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Close hero framing to show sparkle, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread, cuteness, or spectacle; the emotional tone should feel specific to Holographic Flake Scatter while still obeying the prompt's subject and context.",
+        'Festive, dazzling, glamorous and playful, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with coherent art direction, strong subject preservation, clean code recognition, and no mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Macro sparkle material system built from iridescent flake scatter, specular chaos, and celebratory micro-geometry; Tiny hexagons, sliced polygons, star confetti, shard edges, bokeh circles, clustered micro-facets; Foil flakes, glitter dust, micro-mirrors, glossy confetti, granular sparkle fields, scattered reflective chips; Hard specular points, shallow macro falloff, prismatic bounce, high sparkle density, dark-to-bright contrast; Bokeh expansion, specular starbursts, scale ambiguity, shallow-depth scatter, chromatic reflection shifts',
+        'Macro sparkle render, with clean, deliberate marks and no accidental noise.',
+      key_features: 'iridescent flakes; rainbow sparkle; holographic foil',
       creative_brief:
-        'Use Holographic Flake Scatter after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Macro sparkle material system built from iridescent flake scatter, specular chaos, and celebratory micro-geometry, Tiny hexagons, sliced polygons, star confetti, shard edges, bokeh circles, clustered micro-facets, Foil flakes, glitter dust, micro-mirrors, glossy confetti, granular sparkle fields, scattered reflective chips, Hard specular points, shallow macro falloff, prismatic bounce, high sparkle density, dark-to-bright contrast, Bokeh expansion, specular starbursts, scale ambiguity, shallow-depth scatter, chromatic reflection shifts plus proportion codes, recurring surface motifs, era cues, pattern pressure, cultural references, and designed contrast, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Holographic Flake Scatter as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP11-096',
+    name: 'Goblincore',
+    displayName: 'Goblincore',
+    styleAnchors: ['Goblincore', 'forest floor treasure aesthetic', 'moss'],
+    category: '3. Aesthetics',
+    domain: 'forest floor treasure aesthetic',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Goblincore: loving the ugly and overlooked parts of nature, mushrooms, moss, frogs, snails, bones and shiny found treasures.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: set on a damp forest floor among moss, mushrooms, snails, frogs, beetles, old bones and collected shiny trinkets.",
+      color_and_tone: 'Moss green, mud brown, mushroom cream and beetle iridescence.',
+      lighting_and_shadow:
+        'Damp soft light under trees, expressed through the style rather than photographic lighting.',
+      texture_and_material: 'Moss, mud, mushroom gills, snail shells and tarnished trinkets.',
+      camera_and_composition:
+        'Low ground-level framing close to the forest floor, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Earthy, cozy, strange and playful, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Detailed illustration or macro photo feel, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Goblincore as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'moss; mushrooms; frogs; snails; bones; found treasures',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-097',
+    name: 'Dungeon Synth Cassette Art',
+    displayName: 'Dungeon Synth Cassette Art',
+    styleAnchors: [
+      'Dungeon Synth Cassette Art',
+      'lo-fi medieval fantasy cover aesthetic',
+      'misty castle',
+    ],
+    category: '3. Aesthetics',
+    domain: 'lo-fi medieval fantasy cover aesthetic',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Dungeon synth cover art: murky lo-fi fantasy painting reproduced like a photocopied cassette insert, with small lonely figures, heavy mist and faded ink.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: painted as a murky amateur oil or gouache, shrunk small within a wide, mist-filled space, then reproduced in faded photocopy with grain and crushed blacks.",
+      color_and_tone: 'Muted greys, deep blues, forest greens and one faded accent.',
+      lighting_and_shadow:
+        'Dim mist and moonlight, expressed through the style rather than photographic lighting.',
+      texture_and_material: 'Old painting reproduced with copier grain and faded print.',
+      camera_and_composition:
+        'Square-ish cover framing with a lonely distant subject, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Melancholic, mysterious, lonely and ancient, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Lo-fi reproduced painting, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dungeon Synth Cassette Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'misty castle; lone wanderer; murky paint; copier grain',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-098',
+    name: 'Southern Gothic',
+    displayName: 'Southern Gothic',
+    styleAnchors: ['Southern Gothic', 'decaying rural gothic aesthetic', 'Spanish moss'],
+    category: '3. Aesthetics',
+    domain: 'decaying rural gothic aesthetic',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Southern Gothic: decaying rural mansions, swamps, Spanish moss, humid heat and quiet grotesque secrets.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: set among overgrown old houses, cypress swamps, moss-hung oaks, rusty porches and old churches.",
+      color_and_tone:
+        'Faded whites, moss green, rust and humid gold, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Hazy humid light and dusk, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Peeling paint, moss, rust and damp wood, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Still, wide framing with a lonely figure, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Uneasy, humid, secretive and melancholy, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Painterly or film-photo finish, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Southern Gothic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'Spanish moss; swamp; peeling mansion; humid haze',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

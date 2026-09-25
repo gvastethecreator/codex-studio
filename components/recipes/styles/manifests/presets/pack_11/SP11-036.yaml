@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP11-036
 packId: pack_11
-name: Liminal Consumer Vapor
+name: Vaporwave Mall Haze
 category: 3. Aesthetics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,67 +12,22 @@ tags:
   - miscellaneous-and-fun
   - aesthetics
 visualDna:
-  aesthetic: >-
-    Liminal Consumer Vapor operates as a portable source-router layer: combine Retro-digital
-    consumer-memory haze with synthetic gradients, low-res luxury, mall-air unreality, and soft
-    ironic emptiness with cultural style-system logic with recognizable design codes, mood grammar,
-    and transferable taste rules, so the preset supplies visual behavior rather than a fixed card
-    scene or literal sample.
-  subject_treatment: >-
-    Preserve the prompt's subject plus requested motion and context while letting forms re-code,
-    stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through
-    Pixel-sorted edges, glossy primitive geometry, UI-era grids, marble-like fragments, low-poly
-    planes, VHS drift; identity stays readable through construction grammar, proportion, edge logic,
-    and detail scale as this preset is applied.
-  color_and_tone: >-
-    Map color through identity-bearing color families, accent rules, tonal pressure, era-specific
-    contrast, and material color behavior; keep hue roles intentional, value separation clear, and
-    palette behavior attached to the subject's forms instead of pasted decoration.
-  lighting_and_shadow: >-
-    Use Diffuse monitor glow, gradient backwash, weak ambient haze, artificial highlight bands,
-    nostalgic screen bloom plus mood-led lighting that reinforces the aesthetic code without
-    replacing the requested subject as the light-response contract, with readable hierarchy,
-    controlled contact detail, and no lighting choice that erases the user's requested content.
-  texture_and_material: >-
-    Render Compressed video artifacts, glossy plastic, cheap marble, CRT fuzz, low-res UI texture,
-    airbrushed gradients plus signature finishes, symbolic surfaces, pattern systems, ornamental
-    density, polish, grime, gloss, or softness; surface scale, residue, gloss, grain, fiber, pores,
-    edges, or signal artifacts must remain coherent across figures, objects, and environments.
-  camera_and_composition: >-
-    Compose with Pixel sorting, grid recession, VHS wobble, object-scale ambiguity, compression
-    trails, liminal perspective flattening plus taste-coded spacing, silhouette discipline, motif
-    placement, designed clutter, and reusable visual hierarchy as reusable framing grammar, allowing
-    cards, portraits, objects, scenes, and abstract prompts to inherit the style without one
-    required layout.
-  atmosphere_and_mood: >-
-    Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread,
-    cuteness, or spectacle; the emotional tone should feel specific to Liminal Consumer Vapor while
-    still obeying the prompt's subject and context.
-  rendering_and_quality: >-
-    Finish with coherent art direction, strong subject preservation, clean code recognition, and no
-    mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled
-    detail, and a finished image with no watermark, fake text, or accidental UI.
-  key_features: >-
-    Retro-digital consumer-memory haze with synthetic gradients, low-res luxury, mall-air unreality,
-    and soft ironic emptiness; Pixel-sorted edges, glossy primitive geometry, UI-era grids,
-    marble-like fragments, low-poly planes, VHS drift; Compressed video artifacts, glossy plastic,
-    cheap marble, CRT fuzz, low-res UI texture, airbrushed gradients; Diffuse monitor glow, gradient
-    backwash, weak ambient haze, artificial highlight bands, nostalgic screen bloom; Pixel sorting,
-    grid recession, VHS wobble, object-scale ambiguity, compression trails, liminal perspective
-    flattening
-  creative_brief: >-
-    Use Liminal Consumer Vapor after prompt X as a transferable style layer: prompt X supplies
-    subject, action, and setting, while the preset supplies Retro-digital consumer-memory haze with
-    synthetic gradients, low-res luxury, mall-air unreality, and soft ironic emptiness, Pixel-sorted
-    edges, glossy primitive geometry, UI-era grids, marble-like fragments, low-poly planes, VHS
-    drift, Compressed video artifacts, glossy plastic, cheap marble, CRT fuzz, low-res UI texture,
-    airbrushed gradients, Diffuse monitor glow, gradient backwash, weak ambient haze, artificial
-    highlight bands, nostalgic screen bloom, Pixel sorting, grid recession, VHS wobble, object-scale
-    ambiguity, compression trails, liminal perspective flattening plus proportion codes, recurring
-    surface motifs, era cues, pattern pressure, cultural references, and designed contrast, palette
-    behavior, light response, material treatment, and finish discipline without requiring one
-    specimen, prop bundle, product still, or card composition.
+  aesthetic: 'Vaporwave mall haze: empty 90s shopping malls, marble statues, palms, pastel gradients and low-res digital nostalgia.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: placed in an empty dreamlike mall or lobby with fountains, palms, marble busts and glossy tiles, a little too clean and quiet."
+  color_and_tone: Pastel pink, teal, lavender and chrome, used consistently across subject and background.
+  lighting_and_shadow: Soft even fluorescent light with gradient skies, expressed through the style rather than photographic lighting.
+  texture_and_material: Glossy tiles, marble, chrome and low-res image grain, visible at card size as the signature of the style.
+  camera_and_composition: Symmetrical frontal framing with empty space, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Dreamy, ironic, lonely and nostalgic, driven by the construction, color and rhythm.
+  rendering_and_quality: Glossy digital collage finish with mild pixel grain, with clean, deliberate marks and no accidental noise.
+  key_features: empty mall; marble bust; palms; pastel gradients; low-res grain
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vaporwave Mall Haze as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
   - serious
   - dark
   - generic aesthetic collage
@@ -83,13 +38,16 @@ avoidRules:
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-036.webp
 attributes:
-  negativePrompt: >-
-    serious, dark, generic aesthetic collage, random trend mix, style-board text, fixed specimen,
-    literal card scene, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, serious, dark, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
@@ -103,3 +61,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Vaporwave Mall Haze
+styleAnchors:
+  - Vaporwave Mall Haze

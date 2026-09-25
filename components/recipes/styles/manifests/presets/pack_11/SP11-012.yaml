@@ -3,7 +3,7 @@ id: SP11-012
 packId: pack_11
 name: Solarpunk
 category: 3. Aesthetics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,68 +12,22 @@ tags:
   - miscellaneous-and-fun
   - aesthetics
 visualDna:
-  aesthetic: >-
-    Solarpunk operates as a portable source-router layer: combine Regenerative eco-futurist style
-    with biophilic infrastructure language, clean-tech optimism, and balanced organic-technological
-    harmony with cultural style-system logic with recognizable design codes, mood grammar, and
-    transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene
-    or literal sample.
-  subject_treatment: >-
-    Preserve the prompt's subject plus requested motion and context while letting forms re-code,
-    stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Flowing
-    botanical arcs merged with engineered modular structures, branch-like network geometry, and
-    smooth growth-driven contours; identity stays readable through construction grammar, proportion,
-    edge logic, and detail scale as this preset is applied.
-  color_and_tone: >-
-    Map color through identity-bearing color families, accent rules, tonal pressure, era-specific
-    contrast, and material color behavior; keep hue roles intentional, value separation clear, and
-    palette behavior attached to the subject's forms instead of pasted decoration.
-  lighting_and_shadow: >-
-    Use Clear daylight with leaf-filtered dapple, gentle solar glints, and selective bio-luminous
-    accents for hopeful atmosphere plus mood-led lighting that reinforces the aesthetic code without
-    replacing the requested subject as the light-response contract, with readable hierarchy,
-    controlled contact detail, and no lighting choice that erases the user's requested content.
-  texture_and_material: >-
-    Render Living-wall foliage, transparent energy glass, matte photovoltaic surfaces, bamboo-like
-    composites, and bio-grown material cues plus signature finishes, symbolic surfaces, pattern
-    systems, ornamental density, polish, grime, gloss, or softness; surface scale, residue, gloss,
-    grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects,
-    and environments.
-  camera_and_composition: >-
-    Compose with Vertical garden layering, canopy-network depth paths, and architecture-as-ecosystem
-    spatial interweaving plus taste-coded spacing, silhouette discipline, motif placement, designed
-    clutter, and reusable visual hierarchy as reusable framing grammar, allowing cards, portraits,
-    objects, scenes, and abstract prompts to inherit the style without one required layout.
-  atmosphere_and_mood: >-
-    Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread,
-    cuteness, or spectacle; the emotional tone should feel specific to Solarpunk while still obeying
-    the prompt's subject and context.
-  rendering_and_quality: >-
-    Finish with coherent art direction, strong subject preservation, clean code recognition, and no
-    mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled
-    detail, and a finished image with no watermark, fake text, or accidental UI.
-  key_features: >-
-    Regenerative eco-futurist style with biophilic infrastructure language, clean-tech optimism, and
-    balanced organic-technological harmony; Flowing botanical arcs merged with engineered modular
-    structures, branch-like network geometry, and smooth growth-driven contours; Living-wall
-    foliage, transparent energy glass, matte photovoltaic surfaces, bamboo-like composites, and
-    bio-grown material cues; Clear daylight with leaf-filtered dapple, gentle solar glints, and
-    selective bio-luminous accents for hopeful atmosphere; Vertical garden layering, canopy-network
-    depth paths, and architecture-as-ecosystem spatial interweaving
-  creative_brief: >-
-    Use Solarpunk after prompt X as a transferable style layer: prompt X supplies subject, action,
-    and setting, while the preset supplies Regenerative eco-futurist style with biophilic
-    infrastructure language, clean-tech optimism, and balanced organic-technological harmony,
-    Flowing botanical arcs merged with engineered modular structures, branch-like network geometry,
-    and smooth growth-driven contours, Living-wall foliage, transparent energy glass, matte
-    photovoltaic surfaces, bamboo-like composites, and bio-grown material cues, Clear daylight with
-    leaf-filtered dapple, gentle solar glints, and selective bio-luminous accents for hopeful
-    atmosphere, Vertical garden layering, canopy-network depth paths, and architecture-as-ecosystem
-    spatial interweaving plus proportion codes, recurring surface motifs, era cues, pattern
-    pressure, cultural references, and designed contrast, palette behavior, light response, material
-    treatment, and finish discipline without requiring one specimen, prop bundle, product still, or
-    card composition.
+  aesthetic: 'Solarpunk: hopeful green-tech communities where plants, solar glass and handmade repair live together.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: set in a lived-in green city: terraces of gardens, solar canopies, wind sails, stained-glass panels and people working together."
+  color_and_tone: Sunny greens, warm whites, sky blue and copper, used consistently across subject and background.
+  lighting_and_shadow: Bright warm daylight filtered through leaves and glass, expressed through the style rather than photographic lighting.
+  texture_and_material: Living plants, bamboo, glass, copper and weathered wood, visible at card size as the signature of the style.
+  camera_and_composition: Wide inhabited view with foreground gardens and deep city layers.
+  atmosphere_and_mood: Hopeful, communal, fresh and calm, driven by the construction, color and rhythm.
+  rendering_and_quality: Clean detailed illustration or painting, with clean, deliberate marks and no accidental noise.
+  key_features: rooftop gardens; solar canopies; wind sails; communal life
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Solarpunk as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
   - dark
   - industrial
   - pollution
@@ -85,13 +39,16 @@ avoidRules:
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-012.webp
 attributes:
-  negativePrompt: >-
-    dark, industrial, pollution, generic aesthetic collage, random trend mix, style-board text,
-    fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, dark, industrial, pollution, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

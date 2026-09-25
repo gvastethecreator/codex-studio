@@ -3,7 +3,7 @@
     {
       "id": "pack_11",
       "name": "Miscellaneous & Fun",
-      "presetCount": 95
+      "presetCount": 98
     }
   ],
   "presets": [
@@ -613,7 +613,8 @@
     },
     {
       "id": "SP11-036",
-      "name": "Liminal Consumer Vapor",
+      "name": "Vaporwave Mall Haze",
+      "styleAnchors": ["Vaporwave Mall Haze"],
       "ref": "pack_11/SP11-036.yaml",
       "packId": "pack_11",
       "packName": "Miscellaneous & Fun",
@@ -621,7 +622,7 @@
       "categoryName": "3. Aesthetics",
       "tags": ["miscellaneous-and-fun", "aesthetics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp11-036 liminal consumer vapor 3. aesthetics digital aesthetics pack_11 miscellaneous & fun aesthetics miscellaneous-and-fun aesthetics"
+      "searchableText": "sp11-036 vaporwave mall haze 3. aesthetics digital aesthetics pack_11 miscellaneous & fun aesthetics miscellaneous-and-fun aesthetics"
     },
     {
       "id": "SP11-037",
@@ -709,7 +710,8 @@
     },
     {
       "id": "SP11-045",
-      "name": "Liquid Optic Recursion",
+      "name": "Psychedelic Optical Recursion",
+      "styleAnchors": ["Psychedelic Optical Recursion"],
       "ref": "pack_11/SP11-045.yaml",
       "packId": "pack_11",
       "packName": "Miscellaneous & Fun",
@@ -717,7 +719,7 @@
       "categoryName": "3. Aesthetics",
       "tags": ["miscellaneous-and-fun", "aesthetics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp11-045 liquid optic recursion 3. aesthetics digital aesthetics pack_11 miscellaneous & fun aesthetics miscellaneous-and-fun aesthetics"
+      "searchableText": "sp11-045 psychedelic optical recursion 3. aesthetics digital aesthetics pack_11 miscellaneous & fun aesthetics miscellaneous-and-fun aesthetics"
     },
     {
       "id": "SP11-066",
@@ -730,6 +732,52 @@
       "tags": ["miscellaneous-and-fun", "aesthetics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp11-066 holographic flake scatter 3. aesthetics digital aesthetics pack_11 miscellaneous & fun aesthetics miscellaneous-and-fun aesthetics"
+    },
+    {
+      "id": "SP11-096",
+      "name": "Goblincore",
+      "styleAnchors": ["Goblincore", "forest floor treasure aesthetic", "moss"],
+      "ref": "pack_11/SP11-096.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "aesthetics",
+      "categoryName": "3. Aesthetics",
+      "domain": "forest floor treasure aesthetic",
+      "tags": ["miscellaneous-and-fun", "aesthetics", "forest-floor-treasure-aesthetic"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-096 goblincore forest floor treasure aesthetic moss 3. aesthetics digital aesthetics forest floor treasure aesthetic pack_11 miscellaneous & fun aesthetics miscellaneous-and-fun aesthetics forest-floor-treasure-aesthetic"
+    },
+    {
+      "id": "SP11-097",
+      "name": "Dungeon Synth Cassette Art",
+      "styleAnchors": [
+        "Dungeon Synth Cassette Art",
+        "lo-fi medieval fantasy cover aesthetic",
+        "misty castle"
+      ],
+      "ref": "pack_11/SP11-097.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "aesthetics",
+      "categoryName": "3. Aesthetics",
+      "domain": "lo-fi medieval fantasy cover aesthetic",
+      "tags": ["miscellaneous-and-fun", "aesthetics", "lo-fi-medieval-fantasy-cover-aesthetic"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-097 dungeon synth cassette art lo-fi medieval fantasy cover aesthetic misty castle 3. aesthetics digital aesthetics lo-fi medieval fantasy cover aesthetic pack_11 miscellaneous & fun aesthetics miscellaneous-and-fun aesthetics lo-fi-medieval-fantasy-cover-aesthetic"
+    },
+    {
+      "id": "SP11-098",
+      "name": "Southern Gothic",
+      "styleAnchors": ["Southern Gothic", "decaying rural gothic aesthetic", "Spanish moss"],
+      "ref": "pack_11/SP11-098.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "aesthetics",
+      "categoryName": "3. Aesthetics",
+      "domain": "decaying rural gothic aesthetic",
+      "tags": ["miscellaneous-and-fun", "aesthetics", "decaying-rural-gothic-aesthetic"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-098 southern gothic decaying rural gothic aesthetic spanish moss 3. aesthetics digital aesthetics decaying rural gothic aesthetic pack_11 miscellaneous & fun aesthetics miscellaneous-and-fun aesthetics decaying-rural-gothic-aesthetic"
     },
     {
       "id": "SP11-046",
@@ -1188,5 +1236,5 @@
       "searchableText": "sp11-033 blueprint 7. diagram and technical drawing blueprint drawing pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing"
     }
   ],
-  "totalPresetCount": 95
+  "totalPresetCount": 98
 }

@@ -3,7 +3,7 @@ id: SP11-038
 packId: pack_11
 name: Biopunk
 category: 3. Aesthetics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,61 +12,23 @@ tags:
   - miscellaneous-and-fun
   - aesthetics
 visualDna:
-  aesthetic: >-
-    Biopunk operates as a portable source-router layer: combine Biopunk flesh-tech hybrid design
-    with recombinant-lab aesthetics with cultural style-system logic with recognizable design codes,
-    mood grammar, and transferable taste rules, so the preset supplies visual behavior rather than a
-    fixed card scene or literal sample.
-  subject_treatment: >-
-    Preserve the prompt's subject plus requested motion and context while letting forms re-code,
-    stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Veins,
-    flesh, sinew-strand contours, tendril-tangle, organic-tube networks; identity stays readable
-    through construction grammar, proportion, edge logic, and detail scale as this preset is
-    applied.
-  color_and_tone: >-
-    Map color through identity-bearing color families, accent rules, tonal pressure, era-specific
-    contrast, and material color behavior; keep hue roles intentional, value separation clear, and
-    palette behavior attached to the subject's forms instead of pasted decoration.
-  lighting_and_shadow: >-
-    Use Wet, slime, fluorescent-incubator, surgical-key, mucous-membrane sheen, bioreactor-glow plus
-    mood-led lighting that reinforces the aesthetic code without replacing the requested subject as
-    the light-response contract, with readable hierarchy, controlled contact detail, and no lighting
-    choice that erases the user's requested content.
-  texture_and_material: >-
-    Render Organic matter, membrane-film, pulsating-tissue, slime-coat, chitin-shell,
-    grown-not-built surface plus signature finishes, symbolic surfaces, pattern systems, ornamental
-    density, polish, grime, gloss, or softness; surface scale, residue, gloss, grain, fiber, pores,
-    edges, or signal artifacts must remain coherent across figures, objects, and environments.
-  camera_and_composition: >-
-    Compose with Mutations, extra-limb growth, asymmetric-organ placement, tumor-bud emergence,
-    fused-anatomy plus taste-coded spacing, silhouette discipline, motif placement, designed
-    clutter, and reusable visual hierarchy as reusable framing grammar, allowing cards, portraits,
-    objects, scenes, and abstract prompts to inherit the style without one required layout.
-  atmosphere_and_mood: >-
-    Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread,
-    cuteness, or spectacle; the emotional tone should feel specific to Biopunk while still obeying
-    the prompt's subject and context.
-  rendering_and_quality: >-
-    Finish with coherent art direction, strong subject preservation, clean code recognition, and no
-    mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled
-    detail, and a finished image with no watermark, fake text, or accidental UI.
-  key_features: >-
-    Biopunk flesh-tech hybrid design with recombinant-lab aesthetics; Veins, flesh, sinew-strand
-    contours, tendril-tangle, organic-tube networks; Organic matter, membrane-film,
-    pulsating-tissue, slime-coat, chitin-shell, grown-not-built surface; Wet, slime,
-    fluorescent-incubator, surgical-key, mucous-membrane sheen, bioreactor-glow; Mutations,
-    extra-limb growth, asymmetric-organ placement, tumor-bud emergence, fused-anatomy
-  creative_brief: >-
-    Use Biopunk after prompt X as a transferable style layer: prompt X supplies subject, action, and
-    setting, while the preset supplies Biopunk flesh-tech hybrid design with recombinant-lab
-    aesthetics, Veins, flesh, sinew-strand contours, tendril-tangle, organic-tube networks, Organic
-    matter, membrane-film, pulsating-tissue, slime-coat, chitin-shell, grown-not-built surface, Wet,
-    slime, fluorescent-incubator, surgical-key, mucous-membrane sheen, bioreactor-glow, Mutations,
-    extra-limb growth, asymmetric-organ placement, tumor-bud emergence, fused-anatomy plus
-    proportion codes, recurring surface motifs, era cues, pattern pressure, cultural references, and
-    designed contrast, palette behavior, light response, material treatment, and finish discipline
-    without requiring one specimen, prop bundle, product still, or card composition.
+  aesthetic: 'Biopunk: living technology grown from flesh, veins and tissue in wet labs and organic cities.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: fused with grown organic machinery: veins, tendons, membranes, growth vats and pulsing tubes."
+  color_and_tone: Flesh pinks, bile yellow, sick green and dark red.
+  lighting_and_shadow: Wet lab light and bioluminescent glow, expressed through the style rather than photographic lighting.
+  texture_and_material: Wet skin, membrane, cartilage and glass vats, visible at card size as the signature of the style.
+  camera_and_composition: Close, claustrophobic framing, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Unsettling, visceral, strange and feverish, driven by the construction, color and rhythm.
+  rendering_and_quality: Detailed painterly render with wet surfaces, with clean, deliberate marks and no accidental noise.
+  key_features: grown machinery; veins; membranes; vats; bioluminescence
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Biopunk as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
   - metal
   - dry
   - generic aesthetic collage
@@ -77,13 +39,16 @@ avoidRules:
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-038.webp
 attributes:
-  negativePrompt: >-
-    metal, dry, generic aesthetic collage, random trend mix, style-board text, fixed specimen,
-    literal card scene, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, metal, dry, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
