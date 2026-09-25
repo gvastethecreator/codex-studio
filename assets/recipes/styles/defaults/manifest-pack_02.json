@@ -1176,13 +1176,13 @@
     "packName": "Cinematic & Media",
     "category": "5. Lighting And Atmosphere",
     "file": "assets/recipes/styles/defaults/SP02-079.webp",
-    "jobId": "d9fa7cd2-5bca-4a51-8506-89b3777992e5",
+    "jobId": "a100dcbf-875f-46eb-97b4-93bc329f17c0",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-079.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-25T08:08:02.300Z"
+    "generatedAt": "2026-09-25T16:04:56.224Z"
   },
   {
     "presetId": "SP02-080",
@@ -1236,13 +1236,13 @@
     "packName": "Cinematic & Media",
     "category": "6. Caricature And Cartoon Styles",
     "file": "assets/recipes/styles/defaults/SP02-083.webp",
-    "jobId": "c055c973-5dab-4554-a75f-4dec6e7f197a",
+    "jobId": "ba4f828d-9935-4abc-88fb-bf4e18cc71e8",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-083.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-25T08:10:57.372Z"
+    "generatedAt": "2026-09-25T16:05:04.682Z"
   },
   {
     "presetId": "SP02-084",
@@ -1926,13 +1926,13 @@
     "packName": "Cinematic & Media",
     "category": "4. Photography Eras",
     "file": "assets/recipes/styles/defaults/SP02-129.webp",
-    "jobId": "108944b2-29e6-4c68-85cd-e7c9c1b81149",
+    "jobId": "7f86d88b-0459-4355-80c0-ad6102900cfd",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-129.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-25T07:53:32.029Z"
+    "generatedAt": "2026-09-25T16:04:42.703Z"
   },
   {
     "presetId": "SP02-130",

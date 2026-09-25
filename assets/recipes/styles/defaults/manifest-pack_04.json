@@ -21,13 +21,13 @@
     "packName": "Illustration & Graphic Novel",
     "category": "1. Comic Book Styles",
     "file": "assets/recipes/styles/defaults/SP04-002.webp",
-    "jobId": "c5e6a273-aa98-438c-a568-3f1a11054112",
+    "jobId": "637cff4b-60ba-4d6c-aeda-6a8507362174",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-002.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-25T10:14:39.069Z"
+    "generatedAt": "2026-09-25T16:06:16.004Z"
   },
   {
     "presetId": "SP04-003",
@@ -711,13 +711,13 @@
     "packName": "Illustration & Graphic Novel",
     "category": "4. Concept Art",
     "file": "assets/recipes/styles/defaults/SP04-048.webp",
-    "jobId": "e2762812-8069-4c10-932b-0bfa6579138b",
+    "jobId": "9f385ec6-a573-46bf-8619-8c8644306cb9",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-048.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-25T10:48:47.215Z"
+    "generatedAt": "2026-09-25T16:06:41.822Z"
   },
   {
     "presetId": "SP04-049",

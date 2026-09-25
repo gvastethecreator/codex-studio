@@ -290,9 +290,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'steep concentric oval timber tiers; turned baluster rails; lantern skylight onto the centre; central demonstration table; spectators looking down',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-093',
@@ -327,9 +324,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Flooded Column Cistern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'forest of stone columns in still water; brick cross vaults; warm uplights at column bases; mirror reflections; mineral tide lines',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -366,9 +360,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'rotating dome with open shutter slit; equatorial telescope on a pier; dim red working light; riveted dome ribs; brass setting circles',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-095',
@@ -403,9 +394,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Victorian Pumping Station Ironwork as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'polychrome painted cast-iron columns; foliate capitals and pierced galleries; giant beam engines; polished brass; tall arched windows',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -442,9 +430,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'stacked horseshoe of boxes; red velvet and gilded plaster; central crystal chandelier; painted ceiling roundel; proscenium arch',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-097',
@@ -479,9 +464,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oak-Panelled Courtroom as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'raised bench under a carved canopy; railed dock; raised-and-fielded oak panelling; green leather and brass; clerestory light on the well',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -518,9 +500,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'tiers of identical cells around a central void; iron lattice galleries; roof lantern top light; safety netting; central observation point',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-099',
@@ -556,9 +535,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'filtered yellow-amber light; full-body gowned figures; laminar-flow ceiling filters; perforated floor; stainless tool enclosures',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-100',
@@ -590,9 +566,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'seamless white walls; polished pale concrete; track spotlights; single object on a low plinth; large empty margins',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-101',
@@ -623,9 +596,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cold War Bunker as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'round steel blast doors; pale green painted concrete; caged bulbs and fluorescent tubes; air-filtration ducts; analogue dials',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -661,9 +631,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glazed-Tile Municipal Baths as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'glazed brick with coloured tile bands; arched iron roof trusses; changing cubicles along a gallery; turquoise water; ripple reflections on tile',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

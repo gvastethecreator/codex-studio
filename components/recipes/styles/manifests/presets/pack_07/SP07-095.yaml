@@ -47,12 +47,10 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
-assets: {}
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-095.webp
 attributes:
   negativePrompt: one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, steampunk gadget clutter, goggles and gears decor, plain grey steel, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
-  previewStatus: pending
-  ui:
-    previewStatus: pending
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
@@ -68,5 +66,5 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true
   domain: Victorian engine house interior

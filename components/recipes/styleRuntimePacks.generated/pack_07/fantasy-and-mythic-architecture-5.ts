@@ -410,9 +410,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'carved in one piece from the cliff; banded sandstone strata through the carving; giant relief figures; black doorway voids; hard raking sun',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-114',
@@ -447,9 +444,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tarred Stave-Hall Interlace as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'tarred scale-shingle roofs; stacked tiered roof silhouette; carved beast-head finials; interlace portals; low grazing winter sun',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -486,9 +480,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'stacked upswept eaves; interlocking bracket sets; vermilion lacquer and gold leaf; glazed jade tiles; mist bands between tiers',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-116',
@@ -523,9 +514,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Woven Willow Roundhouse as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'woven willow and hazel wattle; conical reed thatch; clay daub infill; circular plans; smoke through thatch in mist',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -563,9 +551,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'overlapping iridescent shell plates; segmented rib structure; jointed buttresses; amber resin membrane windows; oil-slick sheen',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-118',
@@ -601,9 +586,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'carved geometric star lattices; star-shaped light patterns projected by hard sun; horseshoe arches; cobalt tile; courtyard shade',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-119',
@@ -638,9 +620,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Nautilus Chamber Architecture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'logarithmic spiral plan; chambered interiors with curved septa; tiger-striped porcelain exterior; nacre-lined rooms; soft wrapping daylight',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

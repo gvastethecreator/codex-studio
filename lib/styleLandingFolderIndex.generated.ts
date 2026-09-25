@@ -190,7 +190,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'materials_textures_surfaces',
     kind: 'collection',
-    presetCount: 137,
+    presetCount: 164,
     imageKeys: [
       'pack_08__fabric_and_texture_focus',
       'pack_03__materials',
@@ -215,7 +215,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'fashion_costume_wearables',
     kind: 'collection',
-    presetCount: 91,
+    presetCount: 106,
     imageKeys: ['SP08-004', 'SP08-001', 'SP08-020', 'SP08-019', 'SP08-002', 'SP08-005'],
   },
   {
@@ -251,7 +251,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'punk_alt_futures',
     kind: 'collection',
-    presetCount: 67,
+    presetCount: 72,
     imageKeys: ['pack_08__subcultures', 'SP15-081', 'SP15-082', 'SP15-083', 'SP15-084', 'SP15-085'],
   },
   {
@@ -270,7 +270,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'abstract_glitch_systems',
     kind: 'collection',
-    presetCount: 35,
+    presetCount: 55,
     imageKeys: [
       'pack_10__geometric_abstraction',
       'pack_10__fluid_and_organic',
@@ -399,7 +399,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'pack_08',
     kind: 'source',
-    presetCount: 91,
+    presetCount: 106,
     imageKeys: [
       'pack_08__subcultures',
       'pack_08__contemporary_fashion',
@@ -412,13 +412,13 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'pack_09',
     kind: 'source',
-    presetCount: 80,
+    presetCount: 107,
     imageKeys: ['SP09-001', 'SP09-002', 'SP09-003', 'SP09-004', 'SP09-005', 'SP09-006'],
   },
   {
     id: 'pack_10',
     kind: 'source',
-    presetCount: 80,
+    presetCount: 100,
     imageKeys: [
       'pack_10__geometric_abstraction',
       'pack_10__fluid_and_organic',

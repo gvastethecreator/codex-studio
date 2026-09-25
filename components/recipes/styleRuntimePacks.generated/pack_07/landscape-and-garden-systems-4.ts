@@ -313,9 +313,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'serpentine lake; grazed turf to the water; tree clumps as stage wings; eye-catcher temple or ruin; hidden ha-ha',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-104',
@@ -351,9 +348,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'four quarters divided by water channels; raised walkways over sunken beds; carved chadar water chute; central pool pavilion; cypress rows',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-105',
@@ -384,9 +378,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Moss Stroll Garden as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'many-species moss carpet; stepping stones set in moss; irregular pond edge; high maple and cedar canopy; diffuse damp shade',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -423,9 +414,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'stacked hillside terraces; balustraded double stairs; stepped water staircase; mossy grotto niches; ilex and cypress groves',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-107',
@@ -456,9 +444,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scholar Garden Rockery as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'moon gate framed views; perforated limestone rockery; zigzag stone bridge; upswept pavilion eaves; bamboo shadows on white walls',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -495,9 +480,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'grass matrix with repeated perennial drifts; seedheads left for winter; backlit plumes; mown path through; bronze and purple palette',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-109',
@@ -532,9 +514,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crevice Rock Garden as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'parallel stone slabs set on edge; alpine cushions in narrow crevices; gravel mulch; tiny saturated flowers; hard crevice shadows',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -571,9 +550,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'square garth inside an arcaded walk; quartered raised beds; woven wattle edging; central stone well; medicinal herbs',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-111',
@@ -609,9 +585,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'fan-trained fruit trees flat on brick walls; box-edged vegetable beds; terracotta forcing pots; glass cold frames; gravel grid paths',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-112',
@@ -646,9 +619,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stepped Paddy Terraces as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'contour-following flooded terraces; earthen and stone bunds; sky reflected in each pool; irrigation channels from the forest; seasonal green-to-gold colour',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

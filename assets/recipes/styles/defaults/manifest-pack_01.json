@@ -156,13 +156,13 @@
     "packName": "Photography & Realism",
     "category": "3. Film And Analog Process",
     "file": "assets/recipes/styles/defaults/SP01-011.webp",
-    "jobId": "4edd8bc2-6e27-4d1b-a18f-55695bfd4856",
+    "jobId": "9db313ed-b4d7-4d4a-a749-54dc195c6c1e",
     "sourceAsset": "assets/recipes/styles/defaults/SP01-011.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-25T06:13:16.669Z"
+    "generatedAt": "2026-09-25T16:02:45.023Z"
   },
   {
     "presetId": "SP01-012",
@@ -636,13 +636,13 @@
     "packName": "Photography & Realism",
     "category": "2. Lighting Techniques",
     "file": "assets/recipes/styles/defaults/SP01-043.webp",
-    "jobId": "df09c882-08ee-49e6-b67c-1fa052abefdf",
+    "jobId": "c481f5b7-eb68-4392-9379-ea05b645389b",
     "sourceAsset": "assets/recipes/styles/defaults/SP01-043.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-25T06:08:13.200Z"
+    "generatedAt": "2026-09-25T16:02:48.798Z"
   },
   {
     "presetId": "SP01-044",

@@ -486,9 +486,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'continuous peg rail with hung chairs; built-in drawer walls; milk-paint accent colors; oval bentwood boxes; ladder-back chairs with woven tape',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-082',
@@ -523,9 +520,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wabi-Sabi Earthen Interior as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'cracked clay plaster with straw; gold-seamed repaired ceramics; silver-weathered timber; single raking side light; off-centre asymmetry',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -562,9 +556,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'quarter-sawn oak with ray fleck; exposed pegged through-tenons; built-in inglenook settle; hand-hammered copper; stylised vine-pattern textiles',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-084',
@@ -599,9 +590,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Space-Age Fiberglass Interior as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'molded white fiberglass shells; sunken conversation pit; tangerine shag carpet; porthole openings; glowing ceiling domes',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

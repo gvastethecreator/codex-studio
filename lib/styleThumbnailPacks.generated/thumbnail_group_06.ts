@@ -2659,5 +2659,9 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/style-card-thumbnails/SP06-140-01.webp',
       import.meta.url,
     ).href,
+    'SP06-140-02': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP06-140-02.webp',
+      import.meta.url,
+    ).href,
   },
 };

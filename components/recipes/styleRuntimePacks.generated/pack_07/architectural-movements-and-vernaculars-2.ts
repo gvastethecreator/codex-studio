@@ -401,9 +401,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'external colour-coded ducts; tension rods and cast steel nodes; external glass lifts; tubular steel trusses; prefabricated panels',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-086',
@@ -438,9 +435,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Postmodern Pastiche Facade as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'oversized broken pediment; giant flat keystone; cut-out arches; pastel stripe banding; stubby exaggerated columns',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -477,9 +471,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'rounded corners with horizontal speed lines; porthole windows; curved glass block walls; tubular ship railings; smooth white render',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-088',
@@ -514,9 +505,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sahelian Earthen Architecture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'mud-plastered sun-dried brick; projecting toron palm beams; buttress pilasters with conical pinnacles; battered walls; ceramic roof drain spouts',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -553,9 +541,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'corbelled limestone slab cones; whitewashed drystone walls; carved cone pinnacles; one cone per room; small deep-set doors',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-090',
@@ -591,9 +576,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'rammed-earth ring wall with formwork layers; windowless base with high slit windows; stacked inward timber galleries; open central courtyard; overhanging grey tile roof ring',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP07-091',
@@ -628,9 +610,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gassho Thatch Farmhouse as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'steep A-frame grass thatch roof; rope-lashed rafters without nails; multi-storey attic in the roof; soot-darkened beams from the hearth; gables aligned to the valley',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];
