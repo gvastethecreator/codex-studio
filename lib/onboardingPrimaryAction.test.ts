@@ -30,6 +30,11 @@ describe('resolveOnboardingPrimaryAction', () => {
   });
 
   it('opens Studio Settings for ChatGPT Sign in', () => {
+    expect(resolveOnboardingPrimaryAction('connect_chatgpt')).toEqual({
+      type: 'connect_chatgpt',
+      cta: 'connect_chatgpt',
+      label: 'Sign in with ChatGPT',
+    });
     expect(resolveOnboardingPrimaryAction('codex_login')).toEqual({
       type: 'codex_login',
       cta: 'codex_login',

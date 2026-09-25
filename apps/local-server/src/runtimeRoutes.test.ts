@@ -204,7 +204,7 @@ describe('runtimeRoutes', () => {
       codexRuntime: { canRunJobs: boolean; candidates: unknown[]; selectedExecutable: string };
     };
     expect(healthPayload.ok).toBe(true);
-    expect(healthPayload.checks.onboardingReady).toBe(true);
+    expect(healthPayload.checks.onboardingReady).toBe(false);
     expect(healthPayload.appServer.running).toBe(true);
     expect(healthPayload.codexRuntime.canRunJobs).toBe(true);
     expect(healthPayload.codexRuntime.candidates).toEqual([]);
@@ -401,6 +401,16 @@ describe('runtimeRoutes', () => {
     expect(payload.checks.onboardingReady).toBe(false);
   });
 
+  it('treats a selected Codex connection as onboarding-ready when the CLI path can run', async () => {
+    const routes = createRoutes({
+      readEditableSettings: () => ({ defaultProviderId: 'codex' }),
+    });
+    const health = (await (await routes.request('/health')).json()) as {
+      checks: { onboardingReady: boolean };
+    };
+    expect(health.checks.onboardingReady).toBe(true);
+  });
+
   it('treats Studio ChatGPT Sign in as onboarding-ready without app-server', async () => {
     vi.stubGlobal('Bun', { ...(globalThis as { Bun?: object }).Bun, version: '1.3.14' });
     try {
@@ -562,7 +572,8 @@ describe('runtimeRoutes', () => {
     expect(probe.primaryCta).toBe(resolvePrimaryCta(probe.facts));
     expect(probe.facts.studioLibraryReady).toBe(false);
     expect(probe.facts.bootstrapConfigReady).toBe(false);
-    expect(probe.facts.chatgptLoggedIn).toBe(true);
+    expect(probe.facts.chatgptLoggedIn).toBe(false);
+    expect(probe.facts.selectedProviderId).toBe('chatgpt');
 
     const snapshot = (await snapshotResponse.json()) as { onboarding: OnboardingProbe };
     expect(snapshot.onboarding.primaryCta).toBe(probe.primaryCta);
@@ -782,14 +793,14 @@ describe('runtimeRoutes', () => {
       expect(response.status).toBe(200);
       await expect(response.json()).resolves.toMatchObject({
         ok: true,
-        probe: { primaryCta: 'start_app_server' },
+        probe: { primaryCta: 'connect_chatgpt' },
       });
 
       const stageIndex = seen.findIndex((event) => event.type === 'onboarding.stage');
       const probeIndex = seen.findIndex((event) => event.type === 'onboarding.probe');
       expect(stageIndex).toBeGreaterThanOrEqual(0);
       expect(probeIndex).toBeGreaterThan(stageIndex);
-      expect(seen[probeIndex]?.payload).toMatchObject({ primaryCta: 'start_app_server' });
+      expect(seen[probeIndex]?.payload).toMatchObject({ primaryCta: 'connect_chatgpt' });
       expect(seen.some((event) => event.type === 'log.created')).toBe(true);
     } finally {
       unsubscribe();

@@ -9,6 +9,7 @@ export type OnboardingPrimaryAction =
   | { type: 'open_url'; cta: OnboardingPrimaryCta; label: string; url: string }
   | { type: 'start_app_server'; cta: OnboardingPrimaryCta; label: string }
   | { type: 'in_app_setup'; cta: OnboardingPrimaryCta; label: string }
+  | { type: 'connect_chatgpt'; cta: OnboardingPrimaryCta; label: string }
   | { type: 'codex_login'; cta: OnboardingPrimaryCta; label: string }
   | { type: 'complete'; cta: OnboardingPrimaryCta; label: string }
   | { type: 'deferred'; cta: OnboardingPrimaryCta; label: string };
@@ -26,6 +27,9 @@ export function resolveOnboardingPrimaryAction(cta: OnboardingPrimaryCta): Onboa
   }
   if (cta === 'in_app_setup') {
     return { type: 'in_app_setup', cta, label };
+  }
+  if (cta === 'connect_chatgpt') {
+    return { type: 'connect_chatgpt', cta, label };
   }
   if (cta === 'codex_login') {
     return { type: 'codex_login', cta, label };

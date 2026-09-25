@@ -27,15 +27,56 @@ const readyFacts: OnboardingFacts = {
 const matrix: Array<{ name: string; patch: Partial<OnboardingFacts>; cta: OnboardingPrimaryCta }> =
   [
     { name: 'missing Bun', patch: { bunAvailable: false }, cta: 'open_bun_install' },
-    { name: 'missing Codex CLI', patch: { codexCliAvailable: false }, cta: 'open_codex_install' },
-    { name: 'missing ChatGPT login', patch: { chatgptLoggedIn: false }, cta: 'codex_login' },
+    {
+      name: 'missing Codex CLI on the ChatGPT path',
+      patch: { codexCliAvailable: false },
+      cta: 'ready',
+    },
+    {
+      name: 'missing ChatGPT login',
+      patch: { chatgptLoggedIn: false },
+      cta: 'connect_chatgpt',
+    },
     { name: 'missing Studio Library', patch: { studioLibraryReady: false }, cta: 'in_app_setup' },
     {
       name: 'missing Bootstrap Configuration',
       patch: { bootstrapConfigReady: false },
       cta: 'in_app_setup',
     },
-    { name: 'stopped app-server', patch: { appServerReady: false }, cta: 'start_app_server' },
+    {
+      name: 'stopped app-server on the ChatGPT path',
+      patch: { appServerReady: false },
+      cta: 'ready',
+    },
+    {
+      name: 'Codex selected without CLI',
+      patch: { selectedProviderId: 'codex', codexCliAvailable: false },
+      cta: 'open_codex_install',
+    },
+    {
+      name: 'Codex selected without app-server',
+      patch: { selectedProviderId: 'codex', appServerReady: false },
+      cta: 'start_app_server',
+    },
+    {
+      name: 'Codex selected with a local session and no HTTP sign-in',
+      patch: {
+        selectedProviderId: 'codex',
+        chatgptLoggedIn: false,
+        localCodexSessionReady: true,
+      },
+      cta: 'ready',
+    },
+    {
+      name: 'Codex selected without a local session or HTTP sign-in',
+      patch: { selectedProviderId: 'codex', chatgptLoggedIn: false },
+      cta: 'codex_login',
+    },
+    {
+      name: 'Grok selected without ChatGPT',
+      patch: { selectedProviderId: 'grok', chatgptLoggedIn: false },
+      cta: 'ready',
+    },
     { name: 'ready', patch: {}, cta: 'ready' },
   ];
 
@@ -107,7 +148,7 @@ describe('buildOnboardingProbe', () => {
     expect(probe.grok).toMatchObject({ cliAvailable: false, loggedIn: false });
   });
 
-  it('marks Codex CLI and app-server checks ready when Studio Sign in covers them', () => {
+  it('keeps Codex CLI and app-server not required when ChatGPT is connected', () => {
     const probe = buildOnboardingProbe({
       ...readyFacts,
       codexCliAvailable: false,
@@ -116,18 +157,25 @@ describe('buildOnboardingProbe', () => {
       appServerReady: false,
     });
     expect(probe.primaryCta).toBe('ready');
-    expect(probe.checks.find((check) => check.id === 'codex_cli')).toMatchObject({ ready: true });
-    expect(probe.checks.find((check) => check.id === 'app_server')).toMatchObject({ ready: true });
+    expect(probe.checks.find((check) => check.id === 'codex_cli')).toMatchObject({
+      ready: false,
+      requirement: 'not_required',
+    });
+    expect(probe.checks.find((check) => check.id === 'app_server')).toMatchObject({
+      ready: false,
+      requirement: 'not_required',
+    });
     expect(probe.checks.find((check) => check.id === 'chatgpt_login')).toMatchObject({
       ready: true,
-      detail: 'ChatGPT login is ready. Select the ChatGPT provider so image jobs stay on HTTP.',
+      detail: 'ChatGPT is connected. Availability is checked when you generate.',
     });
   });
 
-  it('points a missing ChatGPT login at Studio Settings Sign in', () => {
+  it('points a missing ChatGPT login at ChatGPT sign-in', () => {
     const probe = buildOnboardingProbe({ ...readyFacts, chatgptLoggedIn: false });
+    expect(probe.primaryCta).toBe('connect_chatgpt');
     expect(probe.checks.find((check) => check.id === 'chatgpt_login')?.detail).toBe(
-      'Sign in from Studio Settings and use the ChatGPT provider. Use `codex login` only for an explicit Codex app-server job.',
+      'Sign in with ChatGPT. Codex CLI is only for the Codex connection.',
     );
   });
 });

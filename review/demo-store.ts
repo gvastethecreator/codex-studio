@@ -413,6 +413,7 @@ export function getOnboardingProbe(): OnboardingProbe {
       {
         id: 'bun',
         ready: true,
+        requirement: 'required',
         label: 'Bun',
         detail: 'Present in this review fixture.',
         meta: null,
@@ -420,13 +421,15 @@ export function getOnboardingProbe(): OnboardingProbe {
       {
         id: 'codex_cli',
         ready,
+        requirement: 'not_required',
         label: 'Codex CLI',
-        detail: ready ? 'Simulated ready.' : 'Simulated blocked.',
+        detail: ready ? 'Simulated ready.' : 'Not required for ChatGPT.',
         meta: null,
       },
       {
         id: 'chatgpt_login',
         ready,
+        requirement: 'required',
         label: 'ChatGPT login',
         detail: ready ? 'Simulated signed in.' : 'Simulated signed out.',
         meta: null,
@@ -434,6 +437,7 @@ export function getOnboardingProbe(): OnboardingProbe {
       {
         id: 'studio_library',
         ready: true,
+        requirement: 'required',
         label: 'Studio Library',
         detail: 'Synthetic review library.',
         meta: null,
@@ -441,19 +445,21 @@ export function getOnboardingProbe(): OnboardingProbe {
       {
         id: 'bootstrap_config',
         ready: true,
+        requirement: 'required',
         label: 'Bootstrap',
-        detail: 'Not required in the demo.',
+        detail: 'Present in this review fixture.',
         meta: null,
       },
       {
         id: 'app_server',
         ready,
+        requirement: 'not_required',
         label: 'app-server',
-        detail: ready ? 'Simulated connected.' : 'Simulated stopped.',
+        detail: ready ? 'Simulated connected.' : 'Not required for ChatGPT.',
         meta: null,
       },
     ],
-    primaryCta: ready ? 'ready' : 'codex_login',
+    primaryCta: ready ? 'ready' : 'connect_chatgpt',
     studioLibraryPath: 'Review Library (synthetic)',
     grok: {
       cliAvailable: true,

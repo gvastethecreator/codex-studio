@@ -4,6 +4,7 @@ import {
   onboardingFactsFromHealth,
   type AppServerEnsureReason,
   type CodexRuntimeDoctorReport,
+  type GenerationProviderId,
   type StudioReadinessRefreshReason,
   type StudioReadinessRefreshRequest,
 } from '../../../packages/shared/src';
@@ -45,6 +46,7 @@ interface RuntimeRoutesDependencies {
   applyOnboardingHostActionFn?: typeof applyOnboardingHostAction;
   readGrokOnboardingFacts?: () => { grokCliAvailable: boolean; grokLoggedIn: boolean };
   readSubscriptionFacts?: () => { codexSignedIn: boolean; grokSignedIn: boolean };
+  readEditableSettings?: () => { defaultProviderId?: GenerationProviderId | null };
 }
 
 export function createCheckingRuntimeReport(): CodexRuntimeDoctorReport {
@@ -144,6 +146,7 @@ export function createRuntimeRoutes({
   applyOnboardingHostActionFn = applyOnboardingHostAction,
   readGrokOnboardingFacts = () => ({ grokCliAvailable: false, grokLoggedIn: false }),
   readSubscriptionFacts = readSubscriptionOnboardingFacts,
+  readEditableSettings,
 }: RuntimeRoutesDependencies) {
   const routes = new Hono();
 
@@ -170,6 +173,7 @@ export function createRuntimeRoutes({
       fullCodexRuntime.canRunJobs &&
       appServerRunning &&
       localCodexSession?.canRunLocalJobs === true;
+    const selectedProviderId = readEditableSettings?.().defaultProviderId ?? 'chatgpt';
 
     return {
       ok: true,
@@ -215,7 +219,13 @@ export function createRuntimeRoutes({
       checks: {
         libraryReady,
         codexReady: fullCodexRuntime.canRunJobs || subscription.codexSignedIn,
-        onboardingReady: libraryReady && (cliReady || subscription.codexSignedIn),
+        onboardingReady:
+          libraryReady &&
+          (selectedProviderId === 'codex'
+            ? cliReady
+            : selectedProviderId === 'chatgpt'
+              ? subscription.codexSignedIn
+              : true),
       },
       worker: readWorkerStatus(),
     };
@@ -224,15 +234,15 @@ export function createRuntimeRoutes({
   const buildOnboardingResponse = (health: ReturnType<typeof buildHealthResponse>) => {
     const session = readiness?.readSnapshot()?.localCodexSession ?? null;
     const subscription = readSubscriptionFacts();
+    const selectedProviderId = readEditableSettings?.().defaultProviderId ?? 'chatgpt';
     return buildOnboardingProbe(
       onboardingFactsFromHealth({
         bunVersion: health.runtime.bunVersion,
         codexCliAvailable: health.codexCli.available,
-        chatgptLoggedIn:
-          subscription.codexSignedIn ||
-          session?.isChatgptLogin === true ||
-          session?.canRunLocalJobs === true,
+        chatgptLoggedIn: subscription.codexSignedIn,
         codexSubscriptionReady: subscription.codexSignedIn,
+        selectedProviderId,
+        localCodexSessionReady: session?.canRunLocalJobs === true,
         studioLibraryReady: health.checks.libraryReady,
         studioLibraryPath: health.libraryDir,
         bootstrapConfigReady: health.runtime.envLocalPresent,

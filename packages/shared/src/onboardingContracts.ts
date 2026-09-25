@@ -1,6 +1,9 @@
+import type { GenerationProviderId } from './generationContracts';
+
 export type OnboardingPrimaryCta =
   | 'open_bun_install'
   | 'open_codex_install'
+  | 'connect_chatgpt'
   | 'codex_login'
   | 'in_app_setup'
   | 'start_app_server'
@@ -57,6 +60,7 @@ export const ONBOARDING_GROK_INSTALL_URL = 'https://docs.x.ai/build/overview';
 export const ONBOARDING_PRIMARY_CTA_LABEL: Record<OnboardingPrimaryCta, string> = {
   open_bun_install: 'Install Bun',
   open_codex_install: 'Install Codex CLI',
+  connect_chatgpt: 'Sign in with ChatGPT',
   codex_login: 'Log in with ChatGPT',
   in_app_setup: 'Set up Studio',
   start_app_server: 'Start app-server',
@@ -68,6 +72,8 @@ export interface OnboardingFacts {
   codexCliAvailable: boolean;
   chatgptLoggedIn: boolean;
   codexSubscriptionReady?: boolean;
+  selectedProviderId?: GenerationProviderId;
+  localCodexSessionReady?: boolean;
   studioLibraryReady: boolean;
   studioLibraryPath: string;
   bootstrapConfigReady: boolean;
@@ -76,9 +82,12 @@ export interface OnboardingFacts {
   grokLoggedIn: boolean;
 }
 
+export type OnboardingCheckRequirement = 'required' | 'not_required';
+
 export interface OnboardingCheck {
   id: OnboardingCheckId;
   ready: boolean;
+  requirement: OnboardingCheckRequirement;
   label: string;
   detail: string;
   meta: string | null;
@@ -99,12 +108,24 @@ export interface OnboardingProbe {
   grok: OnboardingGrokRow;
 }
 
+function selectedProvider(facts: OnboardingFacts): GenerationProviderId {
+  return facts.selectedProviderId ?? 'chatgpt';
+}
+
+function chatgptConnected(facts: OnboardingFacts) {
+  return Boolean(facts.codexSubscriptionReady || facts.chatgptLoggedIn);
+}
+
 export function resolvePrimaryCta(facts: OnboardingFacts): OnboardingPrimaryCta {
   if (!facts.bunAvailable) return 'open_bun_install';
-  if (!facts.codexCliAvailable && !facts.codexSubscriptionReady) return 'open_codex_install';
-  if (!facts.chatgptLoggedIn) return 'codex_login';
   if (!facts.studioLibraryReady || !facts.bootstrapConfigReady) return 'in_app_setup';
-  if (!facts.appServerReady && !facts.codexSubscriptionReady) return 'start_app_server';
+  if (selectedProvider(facts) === 'codex') {
+    if (!facts.codexCliAvailable) return 'open_codex_install';
+    if (!facts.appServerReady) return 'start_app_server';
+    if (!facts.localCodexSessionReady && !chatgptConnected(facts)) return 'codex_login';
+    return 'ready';
+  }
+  if (selectedProvider(facts) === 'chatgpt' && !chatgptConnected(facts)) return 'connect_chatgpt';
   return 'ready';
 }
 
@@ -114,8 +135,9 @@ function check(
   label: string,
   detail: string,
   meta: string | null,
+  requirement: OnboardingCheckRequirement = 'required',
 ): OnboardingCheck {
-  return { id, ready, label, detail, meta };
+  return { id, ready, requirement, label, detail, meta };
 }
 
 export function buildOnboardingProbe(facts: OnboardingFacts): OnboardingProbe {
@@ -134,27 +156,28 @@ export function buildOnboardingProbe(facts: OnboardingFacts): OnboardingProbe {
         'Bun',
         facts.bunAvailable
           ? 'The local Bun runtime is available.'
-          : 'Install Bun from the official installer, then restart Codex Studio.',
+          : 'Install Bun from the official installer, then restart Cozy Studio.',
         null,
       ),
       check(
         'codex_cli',
-        facts.codexCliAvailable || Boolean(facts.codexSubscriptionReady),
+        facts.codexCliAvailable,
         'Codex CLI',
         facts.codexCliAvailable
           ? 'Codex CLI is on this machine.'
-          : facts.codexSubscriptionReady
-            ? 'Studio Sign in is ready for HTTP image jobs. Codex CLI is optional for app-server jobs.'
-            : 'Install Codex CLI, then return here.',
+          : selectedProvider(facts) === 'codex'
+            ? 'Install Codex CLI, then return here.'
+            : 'Not required for ChatGPT. Codex CLI is required only for the Codex connection.',
         null,
+        selectedProvider(facts) === 'codex' ? 'required' : 'not_required',
       ),
       check(
         'chatgpt_login',
-        facts.chatgptLoggedIn,
+        chatgptConnected(facts),
         'ChatGPT login',
-        facts.chatgptLoggedIn
-          ? 'ChatGPT login is ready. Select the ChatGPT provider so image jobs stay on HTTP.'
-          : 'Sign in from Studio Settings and use the ChatGPT provider. Use `codex login` only for an explicit Codex app-server job.',
+        chatgptConnected(facts)
+          ? 'ChatGPT is connected. Availability is checked when you generate.'
+          : 'Sign in with ChatGPT. Codex CLI is only for the Codex connection.',
         null,
       ),
       check(
@@ -177,14 +200,15 @@ export function buildOnboardingProbe(facts: OnboardingFacts): OnboardingProbe {
       ),
       check(
         'app_server',
-        facts.appServerReady || Boolean(facts.codexSubscriptionReady),
+        facts.appServerReady,
         'Codex Product Runtime',
         facts.appServerReady
           ? 'codex app-server is running.'
-          : facts.codexSubscriptionReady
-            ? 'Studio Sign in is ready for HTTP image jobs. Codex app-server is optional for local jobs.'
-            : 'Start app-server after Codex CLI and ChatGPT login are ready.',
+          : selectedProvider(facts) === 'codex'
+            ? 'Start app-server after Codex CLI is ready.'
+            : 'Not required for ChatGPT. codex app-server is required only for the Codex connection.',
         null,
+        selectedProvider(facts) === 'codex' ? 'required' : 'not_required',
       ),
     ],
     grok: {
@@ -211,12 +235,16 @@ export function onboardingFactsFromHealth(input: {
   appServerReady: boolean;
   grokCliAvailable?: boolean;
   grokLoggedIn?: boolean;
+  selectedProviderId?: GenerationProviderId;
+  localCodexSessionReady?: boolean;
 }): OnboardingFacts {
   return {
     bunAvailable: Boolean(input.bunVersion),
     codexCliAvailable: input.codexCliAvailable,
     chatgptLoggedIn: input.chatgptLoggedIn,
     codexSubscriptionReady: Boolean(input.codexSubscriptionReady),
+    selectedProviderId: input.selectedProviderId,
+    localCodexSessionReady: Boolean(input.localCodexSessionReady),
     studioLibraryReady: input.studioLibraryReady,
     studioLibraryPath: input.studioLibraryPath,
     bootstrapConfigReady: input.bootstrapConfigReady,

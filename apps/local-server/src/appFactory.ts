@@ -247,6 +247,7 @@ export async function createStudioApp(
       readWorkerStatus: () => workerController.getWorkerStatus(),
       readiness,
       readGrokOnboardingFacts: () => grokOnboardingFactsFromDoctor(readGrokRuntimeDoctorFn()),
+      readEditableSettings: () => readEditableStudioSettings(settingsStorage),
     }),
   );
 
