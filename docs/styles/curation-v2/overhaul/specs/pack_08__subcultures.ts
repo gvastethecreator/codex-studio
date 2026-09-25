@@ -235,6 +235,7 @@ const spec: Spec = {
       ],
     },
     'SP08-028': {
+      name: 'Cottagecore Wardrobe',
       dna: wear(
         'Cottagecore: romantic rural wardrobe — puff-sleeve prairie dresses, aprons, knitted cardigans, straw hats and embroidered florals.',
         'a puff-sleeve prairie or smocked dress, linen apron or knitted cardigan, straw hat or headscarf, and simple leather boots or clogs.',
@@ -254,6 +255,7 @@ const spec: Spec = {
       ],
     },
     'SP08-029': {
+      name: 'Dark Academia Wardrobe',
       dna: wear(
         'Dark academia: scholarly tailoring in autumnal darks — tweed blazers, turtlenecks, pleated trousers, long wool coats, oxfords and wire glasses.',
         'a tweed blazer or long wool coat, turtleneck or collared shirt with sweater vest, pleated trousers or skirt, oxford shoes and round wire glasses.',

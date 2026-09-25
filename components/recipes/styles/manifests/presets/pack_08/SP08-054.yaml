@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP08-054
 packId: pack_08
-name: Chainmail
+name: Chainmail Garments
 category: 5. Fabric & Texture Focus
 version: 2
 supportedTasks:
@@ -13,7 +13,7 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: 'Chainmail garments: clothing built from interlocking metal rings that drape heavy and shimmer.'
-  subject_treatment: 'Make the prompt''s garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments made of fine interlocking steel, bronze or silver rings — mail dresses, hoods or shirts — that drape with weight.'
+  subject_treatment: "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments made of fine interlocking steel, bronze or silver rings — mail dresses, hoods or shirts — that drape with weight."
   color_and_tone: Steel grey, bronze and silver with warm reflections, on the target material while the rest of the scene keeps its natural color.
   lighting_and_shadow: Warm directional light that sparkles on each ring, chosen to reveal how this material reflects, absorbs or transmits light.
   texture_and_material: Riveted interlocking rings with weight, drape and ring pattern visible.

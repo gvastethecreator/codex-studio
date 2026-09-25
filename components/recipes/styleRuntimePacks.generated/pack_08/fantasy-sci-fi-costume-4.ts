@@ -208,7 +208,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP08-078',
-    name: 'Hologram',
+    name: 'Holographic Projection Figure',
     category: '4. Fantasy Sci-Fi Costume',
     negativePrompt:
       'solid, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',

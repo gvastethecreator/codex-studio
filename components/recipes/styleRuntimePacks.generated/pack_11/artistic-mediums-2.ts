@@ -58,7 +58,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP11-008',
-    name: 'Stained Glass',
+    name: 'Stained Glass Window',
     category: '2. Artistic Mediums',
     negativePrompt:
       'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, opaque, dull, painting, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',

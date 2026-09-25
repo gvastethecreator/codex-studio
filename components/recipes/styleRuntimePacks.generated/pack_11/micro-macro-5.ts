@@ -115,7 +115,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP11-060',
-    name: 'Circuit Board',
+    name: 'Circuit Board Macro',
     category: '5. Micro Macro',
     negativePrompt:
       'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, organic, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
@@ -541,7 +541,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP11-077',
-    name: 'Sandpaper',
+    name: 'Sandpaper Grit Macro',
     category: '5. Micro Macro',
     negativePrompt:
       'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, smooth, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',

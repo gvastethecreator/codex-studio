@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP10-091
 packId: pack_10
-name: Paper Marbling
+name: Floating Ink Marbling
 styleAnchors:
-  - Paper Marbling
+  - Floating Ink Marbling
   - marbled paper pattern
   - combed marbling
-displayName: Paper Marbling
+displayName: Floating Ink Marbling
 category: 2. Fluid & Organic
 domain: marbled paper pattern
 version: 1

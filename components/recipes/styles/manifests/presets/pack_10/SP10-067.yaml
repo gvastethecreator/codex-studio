@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP10-067
 packId: pack_10
-name: Circuit Board
+name: Circuit Board Layout
 category: 7. Diagram And Data Systems
 version: 2
 supportedTasks:

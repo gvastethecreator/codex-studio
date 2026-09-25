@@ -276,9 +276,9 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP10-091',
-    name: 'Paper Marbling',
-    displayName: 'Paper Marbling',
-    styleAnchors: ['Paper Marbling', 'marbled paper pattern', 'combed marbling'],
+    name: 'Floating Ink Marbling',
+    displayName: 'Floating Ink Marbling',
+    styleAnchors: ['Floating Ink Marbling', 'marbled paper pattern', 'combed marbling'],
     category: '2. Fluid & Organic',
     domain: 'marbled paper pattern',
     negativePrompt:

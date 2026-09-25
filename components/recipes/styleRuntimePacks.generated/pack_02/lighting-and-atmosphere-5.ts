@@ -175,7 +175,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP02-067',
-    name: 'Double Exposure',
+    name: 'In-Camera Double Exposure',
     category: '5. Lighting And Atmosphere',
     negativePrompt:
       'changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, hard digital cutout, single image, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',

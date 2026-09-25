@@ -122,6 +122,7 @@ const spec: Spec = {
       ],
     },
     'SP08-078': {
+      name: 'Holographic Projection Figure',
       briefs: [
         'Photograph of an adult woman queen rendered as a hologram — translucent bands, horizontal scanlines and faint ghost edges — flickering above a stone well in a village square. No text or logo.',
         'Photograph of an elderly adult man sitting in an armchair whose clothes and body are rendered as a cyan hologram with interference bands. No text or logo.',

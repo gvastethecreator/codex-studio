@@ -145,6 +145,7 @@ const spec: Spec = {
       ],
     },
     'SP10-036': {
+      name: 'Surreal Silhouette Fusion',
       dna: dream(
         'distortion',
         'Surreal double exposure: two images fused inside one silhouette.',
@@ -291,6 +292,7 @@ const spec: Spec = {
       ],
     },
     'SP10-044': {
+      name: 'Green Future Dream',
       dna: dream(
         'theme',
         'Solarpunk theme: hopeful green futures with gardens, solar tech and community.',

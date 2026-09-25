@@ -280,7 +280,7 @@
     },
     {
       "id": "SP11-008",
-      "name": "Stained Glass",
+      "name": "Stained Glass Window",
       "ref": "pack_11/SP11-008.yaml",
       "packId": "pack_11",
       "packName": "Miscellaneous & Fun",
@@ -288,7 +288,7 @@
       "categoryName": "2. Artistic Mediums",
       "tags": ["miscellaneous-and-fun", "artistic-mediums"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp11-008 stained glass 2. artistic mediums specialist illustration pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums"
+      "searchableText": "sp11-008 stained glass window 2. artistic mediums specialist illustration pack_11 miscellaneous & fun artistic-mediums miscellaneous-and-fun artistic-mediums"
     },
     {
       "id": "SP11-019",
@@ -1089,7 +1089,7 @@
     },
     {
       "id": "SP11-060",
-      "name": "Circuit Board",
+      "name": "Circuit Board Macro",
       "ref": "pack_11/SP11-060.yaml",
       "packId": "pack_11",
       "packName": "Miscellaneous & Fun",
@@ -1097,7 +1097,7 @@
       "categoryName": "5. Micro Macro",
       "tags": ["miscellaneous-and-fun", "micro-macro"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp11-060 circuit board 5. micro macro scale & microscopy pack_11 miscellaneous & fun micro-macro miscellaneous-and-fun micro-macro"
+      "searchableText": "sp11-060 circuit board macro 5. micro macro scale & microscopy pack_11 miscellaneous & fun micro-macro miscellaneous-and-fun micro-macro"
     },
     {
       "id": "SP11-061",
@@ -1282,7 +1282,7 @@
     },
     {
       "id": "SP11-077",
-      "name": "Sandpaper",
+      "name": "Sandpaper Grit Macro",
       "ref": "pack_11/SP11-077.yaml",
       "packId": "pack_11",
       "packName": "Miscellaneous & Fun",
@@ -1290,7 +1290,7 @@
       "categoryName": "5. Micro Macro",
       "tags": ["miscellaneous-and-fun", "micro-macro"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp11-077 sandpaper 5. micro macro scale & microscopy pack_11 miscellaneous & fun micro-macro miscellaneous-and-fun micro-macro"
+      "searchableText": "sp11-077 sandpaper grit macro 5. micro macro scale & microscopy pack_11 miscellaneous & fun micro-macro miscellaneous-and-fun micro-macro"
     },
     {
       "id": "SP11-078",

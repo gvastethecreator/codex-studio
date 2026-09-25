@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP02-067
 packId: pack_02
-name: Double Exposure
+name: In-Camera Double Exposure
 category: 5. Lighting And Atmosphere
 version: 2
 supportedTasks:

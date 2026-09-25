@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP08-058
 packId: pack_08
-name: Sequins
+name: Sequined Garments
 category: 5. Fabric & Texture Focus
 version: 2
 supportedTasks:
@@ -13,7 +13,7 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: 'Sequin couture: garments covered in overlapping sequins or paillettes that scatter points of light.'
-  subject_treatment: 'Make the prompt''s garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments covered edge to edge in overlapping sequins or paillettes that shift color and sparkle with movement.'
+  subject_treatment: "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments covered edge to edge in overlapping sequins or paillettes that shift color and sparkle with movement."
   color_and_tone: Gold, silver, midnight blue or ruby with scattered sparkle.
   lighting_and_shadow: Hard points of light and spotlights creating glitter, chosen to reveal how this material reflects, absorbs or transmits light.
   texture_and_material: Overlapping sequins and paillettes with individual reflections, with correct scale, weight and surface behavior at every fold and edge.

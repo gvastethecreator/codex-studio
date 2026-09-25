@@ -169,6 +169,7 @@ const spec: Spec = {
       ],
     },
     'SP02-067': {
+      name: 'In-Camera Double Exposure',
       dna: lit({
         aesthetic:
           'In-camera double exposure: two images superimposed on the same film, with the darker areas of one revealing the other.',

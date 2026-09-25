@@ -90,7 +90,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP08-028',
-    name: 'Cottagecore',
+    name: 'Cottagecore Wardrobe',
     category: '2. Subcultures',
     negativePrompt:
       'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, urban, modern, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
@@ -202,7 +202,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP08-029',
-    name: 'Dark Academia',
+    name: 'Dark Academia Wardrobe',
     category: '2. Subcultures',
     negativePrompt:
       'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, bright, sport, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP11-060
 packId: pack_11
-name: Circuit Board
+name: Circuit Board Macro
 category: 5. Micro Macro
 version: 2
 supportedTasks:

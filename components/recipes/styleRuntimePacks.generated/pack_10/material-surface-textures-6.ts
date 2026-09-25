@@ -86,7 +86,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP10-056',
-    name: 'Carbon Fiber',
+    name: 'Carbon Fiber Twill Surface',
     category: '6. Material Surface Textures',
     negativePrompt:
       'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, organic, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
@@ -221,7 +221,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP10-063',
-    name: 'Chainmail',
+    name: 'Chainmail Ring Pattern',
     category: '6. Material Surface Textures',
     negativePrompt:
       'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, plate armor, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',

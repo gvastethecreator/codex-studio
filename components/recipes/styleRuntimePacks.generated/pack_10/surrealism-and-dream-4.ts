@@ -147,7 +147,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP10-036',
-    name: 'Double Exposure',
+    name: 'Surreal Silhouette Fusion',
     category: '4. Surrealism & Dream',
     negativePrompt:
       'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, stock liminal props unless requested, copying a famous surrealist painting, single image, literal fantasy scene lock, generic dream blur, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
@@ -372,7 +372,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP10-044',
-    name: 'Solarpunk',
+    name: 'Green Future Dream',
     category: '4. Surrealism & Dream',
     negativePrompt:
       'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, stock liminal props unless requested, copying a famous surrealist painting, industrial, dirty, literal fantasy scene lock, generic dream blur, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',

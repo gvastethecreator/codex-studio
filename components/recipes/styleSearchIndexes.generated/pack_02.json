@@ -1186,7 +1186,7 @@
     },
     {
       "id": "SP02-067",
-      "name": "Double Exposure",
+      "name": "In-Camera Double Exposure",
       "ref": "pack_02/SP02-067.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -1194,7 +1194,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-067 double exposure 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-067 in-camera double exposure 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-068",

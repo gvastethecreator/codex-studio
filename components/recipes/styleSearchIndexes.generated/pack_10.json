@@ -414,8 +414,8 @@
     },
     {
       "id": "SP10-091",
-      "name": "Paper Marbling",
-      "styleAnchors": ["Paper Marbling", "marbled paper pattern", "combed marbling"],
+      "name": "Floating Ink Marbling",
+      "styleAnchors": ["Floating Ink Marbling", "marbled paper pattern", "combed marbling"],
       "ref": "pack_10/SP10-091.yaml",
       "packId": "pack_10",
       "packName": "Abstract & Experimental",
@@ -424,7 +424,7 @@
       "domain": "marbled paper pattern",
       "tags": ["abstract-and-experimental", "fluid-and-organic", "marbled-paper-pattern"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp10-091 paper marbling marbled paper pattern combed marbling 2. fluid & organic fluid abstraction marbled paper pattern pack_10 abstract & experimental fluid-and-organic abstract-and-experimental fluid-and-organic marbled-paper-pattern"
+      "searchableText": "sp10-091 floating ink marbling marbled paper pattern combed marbling 2. fluid & organic fluid abstraction marbled paper pattern pack_10 abstract & experimental fluid-and-organic abstract-and-experimental fluid-and-organic marbled-paper-pattern"
     },
     {
       "id": "SP10-092",
@@ -895,7 +895,7 @@
     },
     {
       "id": "SP10-036",
-      "name": "Double Exposure",
+      "name": "Surreal Silhouette Fusion",
       "ref": "pack_10/SP10-036.yaml",
       "packId": "pack_10",
       "packName": "Abstract & Experimental",
@@ -903,7 +903,7 @@
       "categoryName": "4. Surrealism & Dream",
       "tags": ["abstract-and-experimental", "surrealism-and-dream"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp10-036 double exposure 4. surrealism & dream surreal systems pack_10 abstract & experimental surrealism-and-dream abstract-and-experimental surrealism-and-dream"
+      "searchableText": "sp10-036 surreal silhouette fusion 4. surrealism & dream surreal systems pack_10 abstract & experimental surrealism-and-dream abstract-and-experimental surrealism-and-dream"
     },
     {
       "id": "SP10-037",
@@ -993,7 +993,7 @@
     },
     {
       "id": "SP10-044",
-      "name": "Solarpunk",
+      "name": "Green Future Dream",
       "ref": "pack_10/SP10-044.yaml",
       "packId": "pack_10",
       "packName": "Abstract & Experimental",
@@ -1001,7 +1001,7 @@
       "categoryName": "4. Surrealism & Dream",
       "tags": ["abstract-and-experimental", "surrealism-and-dream"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp10-044 solarpunk 4. surrealism & dream surreal systems pack_10 abstract & experimental surrealism-and-dream abstract-and-experimental surrealism-and-dream"
+      "searchableText": "sp10-044 green future dream 4. surrealism & dream surreal systems pack_10 abstract & experimental surrealism-and-dream abstract-and-experimental surrealism-and-dream"
     },
     {
       "id": "SP10-045",
@@ -1421,7 +1421,7 @@
     },
     {
       "id": "SP10-056",
-      "name": "Carbon Fiber",
+      "name": "Carbon Fiber Twill Surface",
       "ref": "pack_10/SP10-056.yaml",
       "packId": "pack_10",
       "packName": "Abstract & Experimental",
@@ -1429,7 +1429,7 @@
       "categoryName": "6. Material Surface Textures",
       "tags": ["abstract-and-experimental", "material-surface-textures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp10-056 carbon fiber 6. material surface textures surface transformations pack_10 abstract & experimental material-surface-textures abstract-and-experimental material-surface-textures"
+      "searchableText": "sp10-056 carbon fiber twill surface 6. material surface textures surface transformations pack_10 abstract & experimental material-surface-textures abstract-and-experimental material-surface-textures"
     },
     {
       "id": "SP10-059",
@@ -1481,7 +1481,7 @@
     },
     {
       "id": "SP10-063",
-      "name": "Chainmail",
+      "name": "Chainmail Ring Pattern",
       "ref": "pack_10/SP10-063.yaml",
       "packId": "pack_10",
       "packName": "Abstract & Experimental",
@@ -1489,7 +1489,7 @@
       "categoryName": "6. Material Surface Textures",
       "tags": ["abstract-and-experimental", "material-surface-textures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp10-063 chainmail 6. material surface textures surface transformations pack_10 abstract & experimental material-surface-textures abstract-and-experimental material-surface-textures"
+      "searchableText": "sp10-063 chainmail ring pattern 6. material surface textures surface transformations pack_10 abstract & experimental material-surface-textures abstract-and-experimental material-surface-textures"
     },
     {
       "id": "SP10-064",
@@ -1659,7 +1659,7 @@
     },
     {
       "id": "SP10-067",
-      "name": "Circuit Board",
+      "name": "Circuit Board Layout",
       "ref": "pack_10/SP10-067.yaml",
       "packId": "pack_10",
       "packName": "Abstract & Experimental",
@@ -1667,7 +1667,7 @@
       "categoryName": "7. Diagram And Data Systems",
       "tags": ["abstract-and-experimental", "diagram-and-data-systems"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp10-067 circuit board 7. diagram and data systems diagram languages pack_10 abstract & experimental diagram-and-data-systems abstract-and-experimental diagram-and-data-systems"
+      "searchableText": "sp10-067 circuit board layout 7. diagram and data systems diagram languages pack_10 abstract & experimental diagram-and-data-systems abstract-and-experimental diagram-and-data-systems"
     },
     {
       "id": "SP10-068",
@@ -1707,7 +1707,7 @@
     },
     {
       "id": "SP10-077",
-      "name": "Chalkboard Art",
+      "name": "Chalkboard Diagram",
       "ref": "pack_10/SP10-077.yaml",
       "packId": "pack_10",
       "packName": "Abstract & Experimental",
@@ -1715,7 +1715,7 @@
       "categoryName": "7. Diagram And Data Systems",
       "tags": ["abstract-and-experimental", "diagram-and-data-systems"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp10-077 chalkboard art 7. diagram and data systems diagram languages pack_10 abstract & experimental diagram-and-data-systems abstract-and-experimental diagram-and-data-systems"
+      "searchableText": "sp10-077 chalkboard diagram 7. diagram and data systems diagram languages pack_10 abstract & experimental diagram-and-data-systems abstract-and-experimental diagram-and-data-systems"
     },
     {
       "id": "SP10-132",
@@ -1945,8 +1945,8 @@
     },
     {
       "id": "SP10-072",
-      "name": "Pointillism",
-      "styleAnchors": ["Pointillism"],
+      "name": "Optical Dot Pointillism",
+      "styleAnchors": ["Optical Dot Pointillism"],
       "ref": "pack_10/SP10-072.yaml",
       "packId": "pack_10",
       "packName": "Abstract & Experimental",
@@ -1954,7 +1954,7 @@
       "categoryName": "8. Point, Mosaic And Glass Systems",
       "tags": ["abstract-and-experimental", "point-mosaic-and-glass-systems"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp10-072 pointillism 8. point, mosaic and glass systems unit-based illustration pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems"
+      "searchableText": "sp10-072 optical dot pointillism 8. point, mosaic and glass systems unit-based illustration pack_10 abstract & experimental point-mosaic-and-glass-systems abstract-and-experimental point-mosaic-and-glass-systems"
     },
     {
       "id": "SP10-073",

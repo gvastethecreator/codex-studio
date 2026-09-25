@@ -40,7 +40,7 @@ const spec: Spec = {
   category: '8. Point, Mosaic And Glass Systems',
   updates: {
     'SP10-072': {
-      name: 'Pointillism',
+      name: 'Optical Dot Pointillism',
       dna: units(
         'Pointillism: the image built from small dots of pure color that mix optically.',
         'small round dots of pure unmixed paint',

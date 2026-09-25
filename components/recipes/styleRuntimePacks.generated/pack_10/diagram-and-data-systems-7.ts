@@ -5,7 +5,7 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP10-067',
-    name: 'Circuit Board',
+    name: 'Circuit Board Layout',
     category: '7. Diagram And Data Systems',
     negativePrompt:
       'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, organic, random text labels, unreadable diagram clutter, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
@@ -113,7 +113,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP10-077',
-    name: 'Chalkboard Art',
+    name: 'Chalkboard Diagram',
     category: '7. Diagram And Data Systems',
     negativePrompt:
       'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, pen, ink, random text labels, unreadable diagram clutter, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',

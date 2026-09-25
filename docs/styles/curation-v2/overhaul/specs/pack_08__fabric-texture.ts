@@ -112,6 +112,7 @@ const spec: Spec = {
       ],
     },
     'SP08-054': {
+      name: 'Chainmail Garments',
       dna: fabric(
         'textile',
         'Chainmail garments: clothing built from interlocking metal rings that drape heavy and shimmer.',
@@ -184,6 +185,7 @@ const spec: Spec = {
       ],
     },
     'SP08-058': {
+      name: 'Sequined Garments',
       dna: fabric(
         'textile',
         'Sequin couture: garments covered in overlapping sequins or paillettes that scatter points of light.',
@@ -328,6 +330,7 @@ const spec: Spec = {
       ],
     },
     'SP08-067': {
+      name: 'Bubble Wrap Fashion',
       dna: fabric(
         'textile',
         'Bubble wrap fashion: garments made of clear bubble wrap, with rows of air cells catching light.',
@@ -472,6 +475,7 @@ const spec: Spec = {
       ],
     },
     'SP08-075': {
+      name: 'Gilded Body And Garments',
       dna: fabric(
         'body',
         'Gold leaf gilding: the figure or its garments covered in applied gold leaf with crackle and burnish.',

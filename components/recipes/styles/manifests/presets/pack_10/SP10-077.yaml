@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP10-077
 packId: pack_10
-name: Chalkboard Art
+name: Chalkboard Diagram
 category: 7. Diagram And Data Systems
 version: 2
 supportedTasks:

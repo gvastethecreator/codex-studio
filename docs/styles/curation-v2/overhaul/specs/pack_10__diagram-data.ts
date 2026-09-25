@@ -43,6 +43,7 @@ const spec: Spec = {
   category: '7. Diagram And Data Systems',
   updates: {
     'SP10-067': {
+      name: 'Circuit Board Layout',
       dna: diagram(
         'Circuit board: the subject laid out as copper traces, pads and components on a PCB.',
         "the subject's silhouette is formed by copper traces, vias and chip pads on green solder mask.",
@@ -107,6 +108,7 @@ const spec: Spec = {
       ],
     },
     'SP10-077': {
+      name: 'Chalkboard Diagram',
       dna: diagram(
         'Chalkboard art: chalk drawing on a slate board with smudges and hand-drawn diagram marks.',
         'the subject is chalk-drawn with arrows, circles and underlines on slate.',

@@ -202,7 +202,7 @@ const spec: Spec = {
   },
   creates: [
     {
-      name: 'Paper Marbling',
+      name: 'Floating Ink Marbling',
       domain: 'marbled paper pattern',
       tags: ['marbling', 'paper', 'fluid'],
       dna: style(

@@ -71,6 +71,7 @@ const spec: Spec = {
       ],
     },
     'SP10-056': {
+      name: 'Carbon Fiber Twill Surface',
       dna: s(
         'Carbon fiber weave: glossy twill pattern of black fibers.',
         'a glossy 2x2 twill carbon weave covers the surfaces.',
@@ -156,6 +157,7 @@ const spec: Spec = {
       ],
     },
     'SP10-063': {
+      name: 'Chainmail Ring Pattern',
       dna: s(
         'Chainmail texture: ring pattern as a decorative surface.',
         'fine interlocking ring pattern covers the surfaces.',

@@ -47,6 +47,7 @@ const spec: Spec = {
       ],
     },
     'SP11-008': {
+      name: 'Stained Glass Window',
       dna: style(
         'Stained glass window: the subject built from colored glass pieces joined by dark lead lines and lit from behind.',
         'broken into colored glass pieces separated by thick dark lead came, with painted details on faces and hands.',

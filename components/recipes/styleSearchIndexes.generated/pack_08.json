@@ -625,7 +625,7 @@
     },
     {
       "id": "SP08-028",
-      "name": "Cottagecore",
+      "name": "Cottagecore Wardrobe",
       "ref": "pack_08/SP08-028.yaml",
       "packId": "pack_08",
       "packName": "Fashion & Costume",
@@ -633,7 +633,7 @@
       "categoryName": "2. Subcultures",
       "tags": ["fashion-and-costume", "subcultures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-028 cottagecore 2. subcultures subcultural clothing pack_08 fashion & costume subcultures fashion-and-costume subcultures"
+      "searchableText": "sp08-028 cottagecore wardrobe 2. subcultures subcultural clothing pack_08 fashion & costume subcultures fashion-and-costume subcultures"
     },
     {
       "id": "SP08-010",
@@ -685,7 +685,7 @@
     },
     {
       "id": "SP08-029",
-      "name": "Dark Academia",
+      "name": "Dark Academia Wardrobe",
       "ref": "pack_08/SP08-029.yaml",
       "packId": "pack_08",
       "packName": "Fashion & Costume",
@@ -693,7 +693,7 @@
       "categoryName": "2. Subcultures",
       "tags": ["fashion-and-costume", "subcultures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-029 dark academia 2. subcultures subcultural clothing pack_08 fashion & costume subcultures fashion-and-costume subcultures"
+      "searchableText": "sp08-029 dark academia wardrobe 2. subcultures subcultural clothing pack_08 fashion & costume subcultures fashion-and-costume subcultures"
     },
     {
       "id": "SP08-026",
@@ -1047,7 +1047,7 @@
     },
     {
       "id": "SP08-054",
-      "name": "Chainmail",
+      "name": "Chainmail Garments",
       "ref": "pack_08/SP08-054.yaml",
       "packId": "pack_08",
       "packName": "Fashion & Costume",
@@ -1055,7 +1055,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-054 chainmail 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-054 chainmail garments 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-055",
@@ -1143,7 +1143,7 @@
     },
     {
       "id": "SP08-078",
-      "name": "Hologram",
+      "name": "Holographic Projection Figure",
       "ref": "pack_08/SP08-078.yaml",
       "packId": "pack_08",
       "packName": "Fashion & Costume",
@@ -1151,7 +1151,7 @@
       "categoryName": "4. Fantasy Sci-Fi Costume",
       "tags": ["fashion-and-costume", "fantasy-sci-fi-costume"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-078 hologram 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
+      "searchableText": "sp08-078 holographic projection figure 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     },
     {
       "id": "SP08-080",
@@ -1185,7 +1185,7 @@
     },
     {
       "id": "SP08-058",
-      "name": "Sequins",
+      "name": "Sequined Garments",
       "ref": "pack_08/SP08-058.yaml",
       "packId": "pack_08",
       "packName": "Fashion & Costume",
@@ -1193,7 +1193,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-058 sequins 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-058 sequined garments 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-063",
@@ -1209,7 +1209,7 @@
     },
     {
       "id": "SP08-067",
-      "name": "Bubble Wrap",
+      "name": "Bubble Wrap Fashion",
       "ref": "pack_08/SP08-067.yaml",
       "packId": "pack_08",
       "packName": "Fashion & Costume",
@@ -1217,7 +1217,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-067 bubble wrap 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-067 bubble wrap fashion 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-070",
@@ -1233,7 +1233,7 @@
     },
     {
       "id": "SP08-075",
-      "name": "Gold Leaf",
+      "name": "Gilded Body And Garments",
       "ref": "pack_08/SP08-075.yaml",
       "packId": "pack_08",
       "packName": "Fashion & Costume",
@@ -1241,7 +1241,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-075 gold leaf 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-075 gilded body and garments 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-069",

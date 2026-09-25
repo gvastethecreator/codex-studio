@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP08-029
 packId: pack_08
-name: Dark Academia
+name: Dark Academia Wardrobe
 category: 2. Subcultures
 version: 2
 supportedTasks:
@@ -13,7 +13,7 @@ tags:
   - subcultures
 visualDna:
   aesthetic: 'Dark academia: scholarly tailoring in autumnal darks — tweed blazers, turtlenecks, pleated trousers, long wool coats, oxfords and wire glasses.'
-  subject_treatment: 'Redress the prompt''s wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a tweed blazer or long wool coat, turtleneck or collared shirt with sweater vest, pleated trousers or skirt, oxford shoes and round wire glasses.'
+  subject_treatment: "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a tweed blazer or long wool coat, turtleneck or collared shirt with sweater vest, pleated trousers or skirt, oxford shoes and round wire glasses."
   color_and_tone: Chocolate brown, charcoal, burgundy, forest green and ivory, applied to garments and accessories while skin, setting and props keep their natural color.
   lighting_and_shadow: Dim library lamplight or grey autumn light, shaped to reveal garment cut, drape, texture and fit on the wearer.
   texture_and_material: Tweed, wool, corduroy, leather and aged paper tones, rendered with correct weave, weight, sheen and stitching.

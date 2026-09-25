@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP10-072
 packId: pack_10
-name: Pointillism
+name: Optical Dot Pointillism
 category: 8. Point, Mosaic And Glass Systems
 version: 2
 supportedTasks:
@@ -59,6 +59,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-displayName: Pointillism
+displayName: Optical Dot Pointillism
 styleAnchors:
-  - Pointillism
+  - Optical Dot Pointillism

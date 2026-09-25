@@ -124,6 +124,7 @@ const spec: Spec = {
         'Silicon die macro with rainbow interference sheen, its logic blocks laid out like a labyrinth garden, a single dust particle at the center like a lost wanderer. No text or logo.',
         'Circuit board macro at night angle with warm LEDs glowing like windows in a sleeping town, copper roads, solder-bead boulders and a mite crossing a trace bridge. No text or logo.',
       ],
+      'Circuit Board Macro',
     ),
     'SP11-061': u(
       macro(
@@ -381,6 +382,7 @@ const spec: Spec = {
         'Extreme macro of sandpaper with a single red garnet grain rising like a fortress on a hill of grey abrasive grit, glue pooled around its base, harsh raking light. No text or logo.',
         'Macro of fine sandpaper grit like a desert of glittering crystal boulders, one human hair lying across it like a fallen pillar, raking light casting long shadows. No text or logo.',
       ],
+      'Sandpaper Grit Macro',
     ),
     'SP11-078': u(
       macro(

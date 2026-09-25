@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP11-008
 packId: pack_11
-name: Stained Glass
+name: Stained Glass Window
 category: 2. Artistic Mediums
 version: 2
 supportedTasks:

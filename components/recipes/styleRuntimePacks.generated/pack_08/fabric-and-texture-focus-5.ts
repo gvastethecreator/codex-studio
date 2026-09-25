@@ -353,7 +353,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP08-054',
-    name: 'Chainmail',
+    name: 'Chainmail Garments',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
       'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, plain fabric-only surface, soft textile dominance, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
@@ -539,7 +539,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP08-058',
-    name: 'Sequins',
+    name: 'Sequined Garments',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
       'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, matte, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
@@ -593,7 +593,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP08-067',
-    name: 'Bubble Wrap',
+    name: 'Bubble Wrap Fashion',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
       'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, plain textile drape dominance, soft woven cloth replacing bubble plastic, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
@@ -647,7 +647,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP08-075',
-    name: 'Gold Leaf',
+    name: 'Gilded Body And Garments',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
       'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, dull, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',

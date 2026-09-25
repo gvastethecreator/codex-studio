@@ -5,9 +5,9 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP10-072',
-    name: 'Pointillism',
-    displayName: 'Pointillism',
-    styleAnchors: ['Pointillism'],
+    name: 'Optical Dot Pointillism',
+    displayName: 'Optical Dot Pointillism',
+    styleAnchors: ['Optical Dot Pointillism'],
     category: '8. Point, Mosaic And Glass Systems',
     negativePrompt:
       'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brush strokes, lines, blurred mush, continuous brush rendering, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
