@@ -3,7 +3,7 @@ id: SP05-232
 packId: pack_05
 name: Dustfront Drone Lament
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,36 +12,24 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Soft, dusty illustration with muted layered values, drifting particulate marks, sparse
-    mechanical line accents, and a restrained amber signal.
-  subject_treatment: >-
-    Keep the requested subject recognizable. Soften secondary edges and retain crisp line
-    accents only on its existing focal details; add no drone or pilot.
-  color_and_tone: >-
-    Use sand, smoke gray, faded olive, and dusty blue, with a small amber highlight against
-    subdued values.
-  lighting_and_shadow: >-
-    Layer broad soft shadows with narrow, pale edge light; keep haze subtle and avoid a forced
-    sunset or dust storm.
-  texture_and_material: >-
-    Retain the subject’s material with fine dust grain, rubbed edges, and sparse particulate
-    specks rather than coating it uniformly.
-  camera_and_composition: >-
-    Preserve the requested crop and view. Leave breathing room around the subject and let a few
-    drifting marks create depth.
-  atmosphere_and_mood: >-
-    Carry a quiet, lamenting mood through subdued contrast and suspended detail, without a
-    desert or military narrative.
-  rendering_and_quality: >-
-    Blend soft atmospheric layers with crisp focal contours; keep grain fine, color separation
-    clear, and highlights restrained.
-  key_features: >-
-    Dust-softened layers; sparse crisp contours; sand and slate palette; small amber signals.
-  creative_brief: >-
-    Keep the specified subject, pose, and setting. Use dust-softened values, sparse particulate
-    marks, and quiet amber accents; add no drone, pilot, desert, or storm.
+  aesthetic: 'Hazy frontier anime: stacked translucent sand-colored haze cels, soft cel figures dissolving with distance, crisp line only on the focal detail, and 16 mm film grain.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Sand, smoke gray, faded olive and dusty blue with one small amber signal light; contrast falls off in each haze layer.
+  lighting_and_shadow: Low diffuse sun filtered through dust, broad soft shadows, pale edge light, and haze glowing faintly where the sun sits.
+  texture_and_material: Floating particulate specks, soft film grain, rubbed edges and faded cel paint.
+  camera_and_composition: Keep the requested view; stack three or four haze layers between foreground and horizon to build distance.
+  atmosphere_and_mood: Lamenting, weary and quiet, a long war seen through settling dust.
+  rendering_and_quality: Layered atmospheric haze, soft focus beyond the focal plane, crisp focal line and fine grain; never crisp photoreal.
+  key_features: stacked translucent haze cels; dissolving distance; crisp line only at focus; sand and dusty blue palette; small amber signal; 16 mm grain
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dustfront Drone Lament as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - photoreal military drone
+  - desert war photo
   - realistic
   - 3d render
   - photo
@@ -64,14 +52,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-232.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI
-    panel, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, photoreal military drone, desert war photo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

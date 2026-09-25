@@ -3,7 +3,7 @@ id: SP05-238
 packId: pack_05
 name: Tokusatsu Digital Grid Scale
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,37 +12,25 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Digital action graphics with precise grid-like contour breaks, exaggerated but clean value
-    separation, and clear depth cues that never dictate the subject’s scale.
-  subject_treatment: >-
-    Preserve the requested subject and proportions. Clarify its existing geometry with precise
-    digital line divisions and bold edge accents; add no giant armor or figure.
-  color_and_tone: >-
-    Use steel, navy, white, and signal red or cyan in sharply separated blocks; keep the primary
-    silhouette distinct from its surroundings.
-  lighting_and_shadow: >-
-    Use firm cel shadows, crisp rim accents, and controlled luminous bands; make every highlight
-    serve form rather than spectacle.
-  texture_and_material: >-
-    Retain the depicted material with clean digital edge marks, restrained panel-like divisions,
-    and minimal surface noise.
-  camera_and_composition: >-
-    Respect the prompt’s view and scale. Use clear near-to-far value steps and grid-like
-    alignment within the established layout.
-  atmosphere_and_mood: >-
-    Suggest screen-era action energy through clean rhythm, scale cues, and bright accents,
-    without adding a city or battle.
-  rendering_and_quality: >-
-    Use stable ink contours, graphic shadow planes, precise color blocks, and restrained glow;
-    keep detail legible at reduced size.
-  key_features: >-
-    Digital grid contours; clear depth steps; crisp cel shadows; steel, navy, and signal-color
-    blocks.
-  creative_brief: >-
-    Keep the specified subject, setting, and scale. Apply precise digital contours, clear value
-    steps, and controlled signal accents; add no giant figure, city, or battle.
+  aesthetic: 'Digital tokusatsu-homage anime: clean cel shading in bold saturated primaries, low telephoto giant-scale framing, and fine glowing grid lines tracing major contours.'
+  subject_treatment: Keep the prompt subject, action and setting redrawn in this mechanical anime rendering; this preset owns a low telephoto giant-scale camera, and a plant stays a plant, never a robot or kaiju.
+  color_and_tone: Steel white, navy and signal red or cyan in hard blocks, against bright summer-sky blue and towering white cumulus.
+  lighting_and_shadow: Crisp midday sun with hard two-tone cel shadows and thin glowing cyan grid lines along the major edges.
+  texture_and_material: Smooth digital cel paint with tiny miniature-set detail at ground level so the subject reads colossal.
+  camera_and_composition: "Owns a worm's-eye telephoto view: horizon low, depth compressed, the subject towering above tiny rooftops, poles or trees."
+  atmosphere_and_mood: Bright heroic summer-afternoon spectacle with a hint of toy-model wonder.
+  rendering_and_quality: Clean vector cel lines, two shadow values, glowing grid-line accents and crisp cumulus; no painterly mush.
+  key_features: worm's-eye telephoto giant scale; bold primary color blocks; glowing cyan grid-line contours; towering summer cumulus; miniature ground detail
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tokusatsu Digital Grid Scale as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - white-blue-red hero robot copy
+  - V-fin horned faceplate copy
+  - suited hero copy
   - realistic
   - 3d render
   - photo
@@ -65,14 +53,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-238.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI
-    panel, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, white-blue-red hero robot copy, V-fin horned faceplate copy, suited hero copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -3,7 +3,7 @@ id: SP05-221
 packId: pack_05
 name: Pop-Signal Engineered Romance
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,37 +12,23 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    An optimistic signal style combining human-scale contour rhythm, flowing cyan-pink strokes,
-    and orderly panel-like divisions with a warm gold edge.
-  subject_treatment: >-
-    Retain the requested subject’s shape and identity. Use rhythmic contour breaks and smooth,
-    sweeping accents on its existing forms, without adding people or machinery.
-  color_and_tone: >-
-    Center cyan and pink with a warm gold highlight, balancing vivid accents against clear
-    neutral values.
-  lighting_and_shadow: >-
-    Use clean cel-shadow shapes and a gentle gold rim on selected edges; keep glow narrow and
-    controlled.
-  texture_and_material: >-
-    Preserve the original materials. Add smooth painted highlight bands, fine engineered line
-    rhythms, and minimal surface grain.
-  camera_and_composition: >-
-    Respect the prompt’s crop and perspective. Let flowing strokes echo the existing gesture and
-    use panel-like spacing to organize detail.
-  atmosphere_and_mood: >-
-    Keep the image buoyant and affectionate through open spacing, warm edge light, and fluid
-    marks, without staging romance or performance.
-  rendering_and_quality: >-
-    Use crisp contours, polished color separation, soft restrained glow, and readable details at
-    multiple scales.
-  key_features: >-
-    Cyan-pink signal strokes; warm gold edge light; rhythmic panel divisions; optimistic contour
-    flow.
-  creative_brief: >-
-    Keep the requested subject and action intact. Apply flowing cyan-pink accents, orderly
-    contour breaks, and a soft gold rim; add no performer, robot, or stage.
+  aesthetic: '1980s idol-era mecha cel: airbrushed cyan-pink gradient skies, star-shaped sparkle glints, and looping white vapor-trail ribbons curving around clean inked forms.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Cyan and bubble pink with warm gold edge highlights over clear neutral cel colors; skies are smooth airbrushed gradients.
+  lighting_and_shadow: Clean two-tone cel shadows, a gentle gold rim, and four-point star glints on the brightest edges.
+  texture_and_material: Airbrushed gradient backgrounds, flat cel paint, faint film grain and the slight color bleed of an old cel.
+  camera_and_composition: Keep the requested view; loop white trail ribbons in wide arcs around the subject to lead the eye inward.
+  atmosphere_and_mood: Buoyant, affectionate and hopeful, a love song played at full volume.
+  rendering_and_quality: Crisp ink line, airbrushed gradients, star glints and ribbon loops with soft film grain; no modern bloom.
+  key_features: airbrushed cyan-pink gradient sky; looping white vapor-trail ribbons; four-point star glints; gold rim light; 1980s cel film grain
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pop-Signal Engineered Romance as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - transforming jet copy
   - realistic
   - 3d render
   - photo
@@ -72,15 +58,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-221.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, idol portrait, cockpit closeup, concert stage, missile barrage,
-    readable UI, crowd, robot face closeup, plastic 3d robot render, cockpit source-frame look,
-    readable UI panel, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, transforming jet copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, idol portrait, cockpit closeup, concert stage, missile barrage, readable UI, crowd, robot face closeup, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

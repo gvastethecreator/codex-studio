@@ -3,7 +3,7 @@ id: SP05-052
 packId: pack_05
 name: Surveillance Verdict Grid
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,37 +12,26 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    A cool, forensic graphic style using precise scan bands, rectilinear divisions, and measured
-    contour lines; abstract marks suggest analysis without becoming readable interface graphics.
-  subject_treatment: >-
-    Retain the subject’s identity and proportions. Clarify its structure with aligned planes and
-    fine technical contours, without adding uniforms, devices, or anonymous figures.
-  color_and_tone: >-
-    Use slate, deep blue, and icy cyan with small, deliberate red signals. Keep saturation low
-    and separate important forms by value.
-  lighting_and_shadow: >-
-    Pair broad, hard shadow shapes with thin cool scan-like highlights along existing edges;
-    avoid implying a monitor or other light source.
-  texture_and_material: >-
-    Keep materials recognizable beneath restrained glassy overlays, fine hatch marks, and sparse
-    etched lines; use no labels or literal data.
-  camera_and_composition: >-
-    Respect the requested framing. Repeat measured horizontal and vertical alignments within the
-    subject, leaving clear space around its key outline.
-  atmosphere_and_mood: >-
-    Make the image feel controlled and questioning through still spacing, cool contrast, and
-    exact marks rather than a surveillance scene.
-  rendering_and_quality: >-
-    Favor clean technical line weights, flat cel shadows, crisp color boundaries, and legible
-    nonverbal marks; keep overlays sparse.
-  key_features: >-
-    Forensic blue planes; scan-band accents; aligned technical contours; quiet red signals.
-  creative_brief: >-
-    Keep the requested subject, action, and setting. Render its existing forms with cool scan
-    bands, measured blue planes, and fine technical contours; add no agents, screens, or
-    readable data.
+  aesthetic: 'Surveillance-feed anime rendering: cold cyan duotone, fine horizontal scanlines at a fixed pitch, and thin ruled bracket marks framing forms without any characters.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Icy cyan and deep slate duotone with one saturated red signal; every other hue collapses into the two-tone ramp.
+  lighting_and_shadow: Flat cold top light like a low-lux sensor exposure; shadows crushed to slate and highlights clipped to pale cyan.
+  texture_and_material: Uniform two-pixel scanline texture over everything, slight interlace doubling on moving edges, and faint sensor noise in darks.
+  camera_and_composition: Keep the requested view; add thin corner bracket marks and a small crosshair tick around the focal form, never readable data.
+  atmosphere_and_mood: Clinical, watchful and judgemental, the feeling of being assessed.
+  rendering_and_quality: Clean anime line under a scanline overlay, two-value duotone, crisp bracket marks, and no letters or numerals.
+  key_features: cyan-slate duotone; fixed-pitch scanlines; corner bracket marks without text; interlace doubling; single red signal
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Surveillance Verdict Grid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - readable timestamp
+  - numerals
+  - enforcement pistol copy
+  - photoreal office
   - realistic
   - 3d render
   - photo
@@ -60,7 +49,6 @@ avoidRules:
   - gun
   - crime scene gore
   - celebrity likeness
-  - Psycho-Pass-specific weapon/device
   - plastic 3d robot render
   - cockpit source-frame look
   - readable UI panel
@@ -71,17 +59,16 @@ avoidRules:
   - generic anime filter
   - prompt-required card
   - logo
-  - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-052.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, readable UI text, police badge, real-world law enforcement,
-    gun, crime scene gore, celebrity likeness, Psycho-Pass-specific weapon/device, plastic 3d robot
-    render, cockpit source-frame look, readable UI panel, fixed canon character, title scene
-    replication, required source-frame look, cosplay, generic anime filter, prompt-required card,
-    logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, readable timestamp, numerals, enforcement pistol copy, photoreal office, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, readable UI text, police badge, real-world law enforcement, gun, crime scene gore, celebrity likeness, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -3,7 +3,7 @@ id: SP05-226
 packId: pack_05
 name: Cyber-Goth Mausoleum Dread
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,37 +12,24 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Cyber-gothic rendering with pointed contour rhythms, fine ornamental etching, monumental
-    value shapes, and a stark red accent against cold darks.
-  subject_treatment: >-
-    Keep the subject’s identity and outline. Trace existing forms with pointed, nested lines and
-    restrained etched detail without adding statues, robes, or architecture.
-  color_and_tone: >-
-    Use black, blue-gray, bone, and muted violet, with a narrow crimson signal; keep the palette
-    dark but distinct.
-  lighting_and_shadow: >-
-    Set deep cel-shadow masses against slim cold highlights and occasional red edge light; do
-    not imply candles or a mausoleum.
-  texture_and_material: >-
-    Preserve the subject’s material. Add delicate engraved marks and worn speckling sparingly,
-    keeping ornament subordinate to the form.
-  camera_and_composition: >-
-    Honor the requested view. Use tall, pointed line rhythms and large shadow shapes within the
-    existing crop, without building a hall.
-  atmosphere_and_mood: >-
-    Convey solemn dread through negative space, severe contrast, and fine ornamental lines
-    rather than funerary props.
-  rendering_and_quality: >-
-    Pair precise etching with broad, clean cel shadows; keep highlights sparse, silhouettes
-    legible, and dark detail controlled.
-  key_features: >-
-    Pointed gothic contours; fine etched detail; black and blue-gray masses; narrow crimson
-    accents.
-  creative_brief: >-
-    Keep the requested subject, action, and setting. Apply pointed contour rhythms, restrained
-    etching, and severe shadow; add no mausoleum, statues, robes, or candles.
+  aesthetic: 'Copperplate-engraving cyber-gothic rendering: dense parallel burin hatching, pointed ornamental filigree traced along existing edges, and a single crimson spot color.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Blue-black ink on cold bone paper with one narrow crimson signal; midtones are built only from hatch density.
+  lighting_and_shadow: 'Hard directional light carved by line density: tight crosshatch in shadow, open paper for highlights, crimson for emissive points.'
+  texture_and_material: Engraved swelling lines, fine stipple on curved surfaces, and pointed-arch filigree edging on existing contours.
+  camera_and_composition: Keep the requested view; frame with tall vertical rhythms of hatching and deep black masses at the edges.
+  atmosphere_and_mood: Solemn funereal dread, elegance carved into cold metal.
+  rendering_and_quality: Engraving line with swelling and tapering strokes, a controlled hatch value scale and sparse crimson; no painterly color.
+  key_features: parallel burin hatching; pointed filigree edging; blue-black ink on bone; single crimson spot color; stipple on curves
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyber-Goth Mausoleum Dread as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - full color painting
+  - soft airbrush
   - realistic
   - 3d render
   - photo
@@ -65,14 +52,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-226.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI
-    panel, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, full color painting, soft airbrush, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -3,7 +3,7 @@ id: SP05-229
 packId: pack_05
 name: Punitive Neon Vice Texture
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,37 +12,24 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Abrasive neon-noir rendering with distressed ink, dense crosshatch, hard surface glints, and
-    saturated signals cutting through shadow.
-  subject_treatment: >-
-    Keep the requested subject and silhouette intact. Use rough hatch clusters and precise neon
-    edge accents on existing contours; add no weapon or costume.
-  color_and_tone: >-
-    Set toxic green, hot red, and magenta against black and smoky gray; keep the vivid color
-    concentrated in small areas.
-  lighting_and_shadow: >-
-    Use hard cel-shadow blocks with clipped red or green highlights; avoid creating neon signs
-    or a nighttime street.
-  texture_and_material: >-
-    Respect each depicted material while adding scratched ink, worn patches, and coarse hatching
-    in selected regions.
-  camera_and_composition: >-
-    Respect the prompt’s camera. Use abrupt contrast shifts and angled detail clusters within
-    the frame, not forced close-ups.
-  atmosphere_and_mood: >-
-    Make the image feel tense and abrasive through compressed values, irregular marks, and sharp
-    color interruptions, not criminal subject matter.
-  rendering_and_quality: >-
-    Keep rough texture controlled against clean silhouette edges; separate colors clearly and
-    prevent darks from filling with noise.
-  key_features: >-
-    Distressed crosshatch; toxic green and hot red; sharp surface glints; compressed noir
-    shadows.
-  creative_brief: >-
-    Retain the requested subject, action, and setting. Apply distressed ink, sparse toxic-neon
-    accents, and hard shadow blocks; add no weapon, costume, signage, or street.
+  aesthetic: 'Risograph cyberpunk manga print: coarse photocopied screentone and black toner, overprinted with two saturated neon spot colors slightly off register.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Toxic fluorescent green and hot red spot inks over black toner and paper white; overlaps turn brown only in thin misregistered slivers.
+  lighting_and_shadow: Values made by screentone dot size and toner black; neon spot color marks the lit edges, with no gradients.
+  texture_and_material: Coarse halftone dots, toner speckle, scratched photocopy streaks and the uneven ink coverage of a stencil drum.
+  camera_and_composition: Keep the requested view; crop hard and let angled detail clusters and black masses bleed off the edges.
+  atmosphere_and_mood: Abrasive, sleazy and tense, a city that punishes while it glows.
+  rendering_and_quality: Two-spot-color risograph finish with misregistration, coarse dots and toner grit around a clean silhouette.
+  key_features: two neon spot inks off register; coarse screentone dots; black toner grit; photocopy streaks; hard crop with bleed
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Punitive Neon Vice Texture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - smooth digital gradients
+  - wet night market
   - realistic
   - 3d render
   - photo
@@ -64,15 +51,16 @@ avoidRules:
   - generic anime filter
   - prompt-required card
   - logo
-  - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-229.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI
-    panel, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, smooth digital gradients, wet night market, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

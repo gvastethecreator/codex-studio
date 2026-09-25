@@ -3,7 +3,7 @@ id: SP05-053
 packId: pack_05
 name: Hydraulic Attrition Mass
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,39 +12,24 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Weighty industrial rendering defined by broad overlapping planes, load-bearing contours,
-    chipped edges, and dense shadow blocks; imply strain through surface wear rather than new
-    parts.
-  subject_treatment: >-
-    Preserve the subject’s identity and silhouette. Give existing forms a heavier read with
-    thick contour accents and layered value planes; do not attach armor or pistons.
-  color_and_tone: >-
-    Build from iron gray, dirty olive, muted clay, and rust, with small pale highlights. Keep
-    the palette grounded and low in saturation.
-  lighting_and_shadow: >-
-    Use hard, deep shadows under overlaps and broad worn highlights across exposed surfaces; let
-    weight read through value grouping.
-  texture_and_material: >-
-    Retain the depicted material while adding sparse chips, rubbed edges, grime streaks, and
-    coarse painted wear in controlled patches.
-  camera_and_composition: >-
-    Keep the requested angle and scale. Group marks into compact masses and let weight settle
-    toward the lower part of the existing frame.
-  atmosphere_and_mood: >-
-    Convey endurance and strain through dense shadows, worn edges, and restrained color, without
-    staging a battlefield or repair scene.
-  rendering_and_quality: >-
-    Use decisive cel-shadow blocks, thick-to-thin contours, and purposeful abrasion; preserve
-    enough clean area to keep forms readable.
-  key_features: >-
-    Load-bearing silhouette; broad shadow masses; chipped surface accents; iron, olive, and rust
-    palette.
-  creative_brief: >-
-    Preserve the specified subject and framing. Apply heavy contour accents, layered shadows,
-    and restrained worn marks to its existing forms; add no armor, pistons, or battlefield
-    props.
+  aesthetic: 'Model-kit box-art painting: opaque gouache blocks, chipped-paint highlights, oil-stain washes and pin-washed panel lines on heavy load-bearing forms.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Iron gray, dirty olive, muted clay and rust, with pale chipped-metal highlights and dark oil-brown washes.
+  lighting_and_shadow: Strong raking daylight from one side, deep shadows under overlaps, and dry-brushed highlights on every exposed edge.
+  texture_and_material: Gouache brush marks, sponge chipping, streaked oil and grime washes, and dark pin-wash in seams.
+  camera_and_composition: Keep the requested view; weight the mass toward the bottom of the frame with a strong three-quarter presence.
+  atmosphere_and_mood: Weighty endurance and strain, the grandeur of heavy machinery doing hard work.
+  rendering_and_quality: Painted illustration finish with opaque gouache, dry-brush edges, pin-wash and chipping; no cel line and no 3D gloss.
+  key_features: opaque gouache box-art painting; sponge chipping; oil-stain streak washes; dark pin-washed seams; raking side light
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hydraulic Attrition Mass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - clean cel outlines
+  - plastic toy gloss
   - realistic
   - 3d render
   - photo
@@ -75,15 +60,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-053.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, tank, firearm, battlefield, soldier, real military insignia,
-    franchise mech likeness, gore, weapon-first composition, plastic 3d robot render, cockpit
-    source-frame look, readable UI panel, fixed canon character, title scene replication, required
-    source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, clean cel outlines, plastic toy gloss, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, tank, firearm, battlefield, soldier, real military insignia, franchise mech likeness, gore, weapon-first composition, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

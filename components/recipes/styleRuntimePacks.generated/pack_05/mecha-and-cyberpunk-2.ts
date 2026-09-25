@@ -8,28 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Geometric Ignition Urgency',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, Gurren-like drill face, firefighting disaster scene, real emergency logo, burning people, gore, weapon, franchise robot, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, soft gradient shading, literal flames, drill-faced super robot copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, firefighting disaster scene, real emergency logo, burning people, gore, weapon, franchise robot, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bright vector illustration using flat angular shapes, crisp contour cuts, and forward-leaning color wedges; its heat and optimism are graphic cues, not literal flames.',
+        'Hyper-angular limited-animation cel: thick tapered brush-pen outlines, flat fills with no gradients, and triangular highlight and shadow shapes cut at sharp angles.',
       subject_treatment:
-        'Keep the requested form and identity intact. Simplify its existing edges into clean angular planes and lively directional strokes; add no rescue gear or vehicle parts.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Mix warm coral, apricot, and yellow with clean cyan or lavender accents. Keep hues bright but clearly separated.',
+        'Hot coral, apricot and lemon yellow as flat fills against clean cyan and lavender shadow triangles; no blending, every hue separated by an ink line.',
       lighting_and_shadow:
-        'Use flat, hard-edged cel shadows and simple warm highlights; avoid realistic firelight or an implied flame source.',
+        'One hard warm key rendered as jagged triangular shadow wedges and star-shaped glints on edges; shadows are flat lavender shapes, never soft gradients.',
       texture_and_material:
-        'Keep the original material legible beneath smooth color blocks, precise edge lines, and a few dry-brush accents.',
+        'Smooth untextured cel paint with a few dry-brush speed flecks along outlines; surfaces read through shadow shape rather than surface detail.',
       camera_and_composition:
-        'Respect the requested view. Carry momentum with angled marks and offset color planes inside the existing silhouette and crop.',
+        'Keep the requested view but push its perspective: foreshortened near forms, converging diagonals, and solid color speed wedges behind the main silhouette.',
       atmosphere_and_mood:
-        'Make the image feel urgent yet buoyant through quick directional strokes, open color, and uncluttered spacing.',
+        'Brash, urgent and optimistic, like a shout drawn in straight lines and sharp corners.',
       rendering_and_quality:
-        'Favor vector-clean edges, decisive shadow cuts, limited gradients, and readable shapes at a glance.',
+        'Flat two-tone cel with brush-pen line weight swelling at corners, crisp triangle glints, and no airbrush or 3D shading.',
       key_features:
-        'Flat angular vectors; warm pastel-neon accents; forward motion wedges; crisp cel shadows.',
+        'thick tapered brush-pen outlines; triangular shadow and highlight wedges; flat coral, yellow and cyan fills; star-shaped glints; forced foreshortening with speed wedges',
       creative_brief:
-        'Keep the specified subject, action, and setting. Apply angular color planes, warm bright accents, and quick directional linework; add no flames, rescue machines, or gear.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Geometric Ignition Urgency as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +37,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Municipal Machine Procedure',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, cockpit UI, drone weapon, robot battle, readable paperwork, garage corridor lock, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, robot battle, neon night, tram, readable police markings, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, cockpit UI, drone weapon, readable paperwork, garage corridor lock, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Practical technical illustration with maintenance-like line discipline, utility color blocks, wet-looking reflected accents, and a lightly offbeat rhythm.',
+        'Late-1980s police-procedural OVA cel: precise pencil-traced line, two-tone hand-painted cel shading, and poster-color painted backgrounds of ordinary city daylight.',
       subject_treatment:
-        'Preserve the requested subject and proportions. Clarify its existing construction with functional contour lines and small, deliberate detail clusters; add no tools or vehicles.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Use utility teal, signal amber, concrete gray, and off-white in clear, economical blocks; keep bright color functional and sparse.',
+        'Utility teal, signal amber, concrete gray and off-white in economical flat blocks, the whole palette slightly faded like an aged cel print.',
       lighting_and_shadow:
-        'Set firm cel-shadow planes against narrow reflected highlights, using wet-looking accents only where they suit the depicted material.',
+        'Overcast daylight with a single soft-edged shadow tone per surface and thin white highlight slivers on metal edges; no dramatic contrast.',
       texture_and_material:
-        'Keep each material recognizable; add fine scuffs, tidy seams, and restrained reflective streaks without turning surfaces into pavement or machinery.',
+        'Poster-color brush texture in backgrounds, clean flat cel paint on figures and machines, and small painted scuffs on machine panels.',
       camera_and_composition:
-        'Honor the requested camera. Use measured alignment and slight rhythm breaks within the frame to give the drawing practical order and dry wit.',
+        'Keep the requested view; favor level eye-height framing with measured documentary spacing and ordinary street detail kept uncluttered.',
       atmosphere_and_mood:
-        'Convey procedural calm with a subtle comic lift through exact spacing and small visual offsets, without introducing civic props.',
+        'Procedural, dry and quietly funny, workday calm where a machine is just another piece of equipment.',
       rendering_and_quality:
-        'Favor clean technical contours, flat shadow groups, concise texture, and legible utility-color separation.',
+        'Hand-painted cel finish with slight registration shift, faint film grain and precise mechanical line; no digital glow or bloom.',
       key_features:
-        'Maintenance-grid line discipline; teal and amber utility palette; neat surface marks; subtle offbeat spacing.',
+        'pencil-precise 1980s OVA line; two-tone cel shading; poster-color daylight backgrounds; teal and amber utility palette; faint film grain',
       creative_brief:
-        'Preserve the specified subject, setting, and framing. Apply practical contour lines, restrained teal-and-amber blocks, and tidy reflected accents; add no tools, vehicles, or street scene.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Municipal Machine Procedure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +66,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sterile Arcology Severity',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, dirty grunge, warm cozy palette, crowded city, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A severe, orderly style defined by precise orthogonal contours, pale architectural value planes, and small signal accents; structure comes from linework, not added buildings.',
+        'Clean digital architectural anime: ruler-straight hairline contours traced from a 3D layout, near-white fills, and overexposed bloom on every bright plane.',
       subject_treatment:
-        'Preserve the subject’s identity and proportions. Emphasize its existing straight edges and divisions with clean, measured contours; do not reshape it into architecture.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Use white, cool gray, pale steel, and deep blue shadow, with a very small cyan or red accent.',
+        'White, cool gray and pale steel dominate, with one deep ultramarine shadow tone and a single tiny red or cyan signal accent.',
       lighting_and_shadow:
-        'Separate forms with crisp, cool cel shadows and broad even highlights; keep emissive accents thin and localized.',
+        'Flat shadowless daylight blown toward white with bloom spilling over edges; one crisp ultramarine shadow band where planes turn away.',
       texture_and_material:
-        'Maintain the requested material with smooth, clean surfaces, subtle panel-like divisions, and almost no incidental grain.',
+        'Seamless glossy surfaces with hairline panel seams and almost no grain; reflections drawn as flat pale-blue strips.',
       camera_and_composition:
-        'Respect the requested camera and layout. Echo existing lines with parallel spacing and deliberate negative space, without imposing a vertical city view.',
+        'Keep the requested view; enforce perfectly vertical lines, parallel spacing and large empty white negative space around the subject.',
       atmosphere_and_mood:
-        'Convey severity through exact alignment, cool restraint, and quiet emptiness rather than a sterile urban setting.',
+        'Severe, antiseptic and silent, order so complete that it becomes uneasy.',
       rendering_and_quality:
-        'Favor immaculate contour precision, flat shadow bands, clean whites, and restrained detail; preserve silhouette clarity.',
+        'Hairline vector precision, bloom-softened whites, one flat shadow band per form, and no hand-drawn wobble anywhere.',
       key_features:
-        'Orthogonal line precision; cool-white planes; deep blue shadows; minimal signal accents.',
+        'ruler-straight hairline contours; overexposed white bloom; single ultramarine shadow band; hairline panel seams; vast white negative space',
       creative_brief:
-        'Keep the specified subject, scale, and setting. Apply clean orthogonal contours, cool-white color separation, and precise shadows; add no buildings, corridors, or city.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sterile Arcology Severity as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +95,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'White Machine Elegy',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, humanoid robot copy, hangar corridor, weapon, readable serial marks, cockpit UI, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, deep black shadows, saturated neon, heavy ink outlines, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, humanoid robot copy, hangar corridor, weapon, readable serial marks, cockpit UI, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Quiet pale rendering with worn enamel-like highlights, dust-softened edges, delicate synthetic line rhythms, and generous white space.',
+        'Bleached pastel anime illustration: soft sepia-gray colored-pencil line instead of ink, chalk-pale cel fills, and visible paper grain multiplied over everything.',
       subject_treatment:
-        'Keep the requested subject recognizable. Draw fine, graceful contours and a few carefully worn edges on its existing forms; add no robot or machine fragments.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Stay mostly in bone, soft white, silver, and pale blue-gray, reserving darker values for essential contour and structure.',
+        'Bone, chalk white, faded silver and pale blue-gray; the darkest value is a warm mid-gray, so the image stays high-key.',
       lighting_and_shadow:
-        'Use soft, cool cel shadows and diffuse white highlights, with limited contrast and no visible light source.',
+        'Diffuse overcast glow with soft single-step pale blue shadows and no visible light source; edges dissolve into white.',
       texture_and_material:
-        'Preserve material identity while suggesting enamel through smooth highlight bands, faint dust grain, and small worn flecks.',
+        'Cold-press paper tooth, colored-pencil grain inside shadows, and small flaked enamel chips drawn as tiny gray flecks.',
       camera_and_composition:
-        'Honor the given framing. Let spare negative space and quiet line spacing carry the composition without shrinking the subject.',
+        'Keep the requested framing; leave generous white margins and let contours fade out toward the edges of the frame.',
       atmosphere_and_mood:
-        'Build elegiac calm through pale values, delicate marks, and stillness, without adding a lonely landscape or character.',
+        'Elegiac, hushed and tender, like a memory of a machine slowly fading out.',
       rendering_and_quality:
-        'Keep outlines fine but stable, shadow edges soft, whites clean, and texture sparse enough to retain clarity.',
+        'Low-contrast pencil line, pale single-step shadows, paper grain overlay and vignette-to-white edges; no ink blacks.',
       key_features:
-        'Pale enamel-like highlights; dust-softened detail; fine contours; quiet white and blue-gray palette.',
+        'sepia-gray colored-pencil line; bleached pastel fills; paper grain overlay; flaked enamel chips; fade-to-white edges',
       creative_brief:
-        'Preserve the specified subject and composition. Apply pale tonal bands, delicate contours, and faint worn texture; add no robot, landscape, or isolated character.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies White Machine Elegy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +124,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Compact Attrition Hardware',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, gun near-plane, tank copy, soldier portrait, battlefield gore, readable markings, garage corridor lock, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, glossy chrome, neon bloom, clean showroom paint, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, gun near-plane, tank copy, soldier portrait, battlefield gore, readable markings, garage corridor lock, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Compact, blunt industrial drawing with dense silhouette masses, short functional seam lines, mud-rust wear, and pragmatic low-saturation color.',
+        'Early-1980s real-robot TV cel: thick uniform ink line, flat military paint colors, one hard black shadow fill, and dirt dabbed onto the cel with a sponge.',
       subject_treatment:
-        'Keep the requested subject’s identity and proportions. Make its existing forms read with blunt contour weight and compact shadows; do not add chassis or armor.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Use iron gray, dark olive, earth brown, and oxidized orange, with small pale highlights and little saturation.',
+        'Dark olive, iron gray, earth brown and oxidized orange at low saturation, with every shadow filled solid near-black.',
       lighting_and_shadow:
-        'Group forms into firm, close-set cel shadows with minimal rim light; let wear and structure read without dramatic effects.',
+        'Single hard overhead key; shadows are solid black shapes with no midtone, plus one thin pale highlight line on top edges.',
       texture_and_material:
-        'Preserve each material while adding compressed scuffs, rubbed edges, and restrained mud-like marks only where appropriate.',
+        'Sponge-dabbed mud and rust speckle over flat cel color, scratched paint chips, and grainy 16 mm film transfer.',
       camera_and_composition:
-        'Honor the requested crop and scale. Keep detail dense near the existing focal form and avoid enlarging or compressing the subject.',
+        'Keep the requested view; crop tight and compact so the subject fills the frame with squat, heavy mass.',
       atmosphere_and_mood:
-        'Convey practical endurance with close value grouping, muted color, and minimal flourish.',
+        'Grim, practical and stubborn, machines as disposable tools of a long campaign.',
       rendering_and_quality:
-        'Use sturdy contours, compact shadow planes, subtle surface wear, and clear separation despite dense detail.',
+        'Uniform-weight ink line, flat paint with black shadow fills, sponge grime and soft film grain; no gloss or bloom.',
       key_features:
-        'Blunt compact contours; dense shadow groups; mud-rust wear; low-saturation utility palette.',
+        'uniform thick ink line; solid black shadow fills; sponge-dabbed mud and rust; olive and iron palette; 16 mm film grain',
       creative_brief:
-        'Preserve the requested subject and scale. Apply blunt contour weight, close-set shadows, and muted worn color; add no chassis, armor, or survival equipment.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Compact Attrition Hardware as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +153,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tokusatsu Digital Grid Scale',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, white-blue-red hero robot copy, V-fin horned faceplate copy, suited hero copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Digital action graphics with precise grid-like contour breaks, exaggerated but clean value separation, and clear depth cues that never dictate the subject’s scale.',
+        'Digital tokusatsu-homage anime: clean cel shading in bold saturated primaries, low telephoto giant-scale framing, and fine glowing grid lines tracing major contours.',
       subject_treatment:
-        'Preserve the requested subject and proportions. Clarify its existing geometry with precise digital line divisions and bold edge accents; add no giant armor or figure.',
+        'Keep the prompt subject, action and setting redrawn in this mechanical anime rendering; this preset owns a low telephoto giant-scale camera, and a plant stays a plant, never a robot or kaiju.',
       color_and_tone:
-        'Use steel, navy, white, and signal red or cyan in sharply separated blocks; keep the primary silhouette distinct from its surroundings.',
+        'Steel white, navy and signal red or cyan in hard blocks, against bright summer-sky blue and towering white cumulus.',
       lighting_and_shadow:
-        'Use firm cel shadows, crisp rim accents, and controlled luminous bands; make every highlight serve form rather than spectacle.',
+        'Crisp midday sun with hard two-tone cel shadows and thin glowing cyan grid lines along the major edges.',
       texture_and_material:
-        'Retain the depicted material with clean digital edge marks, restrained panel-like divisions, and minimal surface noise.',
+        'Smooth digital cel paint with tiny miniature-set detail at ground level so the subject reads colossal.',
       camera_and_composition:
-        'Respect the prompt’s view and scale. Use clear near-to-far value steps and grid-like alignment within the established layout.',
+        "Owns a worm's-eye telephoto view: horizon low, depth compressed, the subject towering above tiny rooftops, poles or trees.",
       atmosphere_and_mood:
-        'Suggest screen-era action energy through clean rhythm, scale cues, and bright accents, without adding a city or battle.',
+        'Bright heroic summer-afternoon spectacle with a hint of toy-model wonder.',
       rendering_and_quality:
-        'Use stable ink contours, graphic shadow planes, precise color blocks, and restrained glow; keep detail legible at reduced size.',
+        'Clean vector cel lines, two shadow values, glowing grid-line accents and crisp cumulus; no painterly mush.',
       key_features:
-        'Digital grid contours; clear depth steps; crisp cel shadows; steel, navy, and signal-color blocks.',
+        "worm's-eye telephoto giant scale; bold primary color blocks; glowing cyan grid-line contours; towering summer cumulus; miniature ground detail",
       creative_brief:
-        'Keep the specified subject, setting, and scale. Apply precise digital contours, clear value steps, and controlled signal accents; add no giant figure, city, or battle.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tokusatsu Digital Grid Scale as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +182,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tri-Fire Riot Geometry',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, black outlines, soft airbrush gradients, literal fire, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Triadic riot graphics using sharp triangular cuts, three-part color rhythm, angular contours, and tightly controlled high-energy contrast.',
+        'Lineless triangular color-facet animation: forms built from flat translucent triangles, with shadows cut as complementary-colored shards instead of darker values.',
       subject_treatment:
-        'Keep the requested subject and silhouette. Carry its existing divisions through crisp triangular line accents and directional marks without adding weapons or armor.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Organize ember orange, hot yellow, and electric cyan as distinct accents over charcoal and neutral midtones; avoid mixing them into mud.',
+        'Ember orange, hot yellow and electric cyan over charcoal; overlapping shards produce magenta and lime where they cross.',
       lighting_and_shadow:
-        'Use hard cel-shadow wedges with clean warm and cool edge highlights; do not create literal fire or energy weapons.',
+        'No modeled light: each plane gets a flat warm or cool triangle, highlights are pale yellow shards and shadows are cyan shards.',
       texture_and_material:
-        'Respect the original material; add sharp painted facets, fine scratches, and brief color slashes without changing its substance.',
+        'Perfectly flat translucent fills with visible overlaps between shards and no outlines, grain or brush marks.',
       camera_and_composition:
-        'Keep the requested framing. Use triangular visual paths and counter-slanting marks within it rather than forcing a battle pose.',
+        'Keep the requested view; break the background into giant diagonal triangles that counter-slant against the subject.',
       atmosphere_and_mood:
-        'Create rebellious energy through asymmetry, clipped accents, and a quick three-beat rhythm, independent of subject matter.',
+        'Rebellious, loud and joyful, a riot of shards moving to a three-beat rhythm.',
       rendering_and_quality:
-        'Favor crisp edges, strong cel-shadow separation, bounded color fields, and minimal glow for a clean graphic finish.',
+        'Lineless vector facets with clean overlaps, bounded color fields and no soft glow or gradients.',
       key_features:
-        'Triadic accent palette; triangular contour cuts; hard shadow wedges; counter-slanting rhythm.',
+        'lineless triangular facets; complementary-colored shadow shards; ember orange, yellow and cyan triad; translucent shard overlaps; counter-slanting background triangles',
       creative_brief:
-        'Retain the specified subject, action, and setting. Use three-part color accents, triangular line cuts, and crisp shadows; add no fire, weapon, armor, or battle pose.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tri-Fire Riot Geometry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +211,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Neon Kinetic Alloy Sprint',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named cyborg heroine likeness, roller-blade weapon feet, gore, police logo, readable UI, full body fan-art pose, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, static pose, mechanical limbs added to people, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named cyborg heroine likeness, roller-blade weapon feet, gore, police logo, readable UI, full body fan-art pose, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Fast, precise illustration built from segmented contours, tapered motion strokes, reflective edge accents, and alloy-like panel rhythm; speed comes from the marks, not added machinery.',
+        'High-speed digital anime compositing: horizontal background pan blur, RGB-split chromatic edges, and tapered afterimage smears trailing the moving forms.',
       subject_treatment:
-        'Keep the requested anatomy and object shape intact. Clarify its existing edges with clean contour breaks and swept strokes; add no prostheses, armor, or mechanical limbs.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Set cyan and fuchsia against graphite and pearl, with a restrained warning-red accent. Reserve the brightest color for existing focal edges and motion.',
+        'Cyan and fuchsia split fringes over graphite and pearl, with one warning-red accent on the leading edge.',
       lighting_and_shadow:
-        'Separate forms with crisp cel-shadow planes; trace selected edges with narrow cool reflections and hot glints, without requiring a new light source.',
+        'Crisp two-tone cel shadows on the subject, background lights stretched into horizontal streaks by the pan, and hot glints on leading edges.',
       texture_and_material:
-        'Preserve each requested material. Suggest polished alloy through painted highlight bands and fine scuffs rather than replacing the subject’s surface.',
+        'Polished alloy suggested by painted highlight bands, with the background dissolved into long streaked lines.',
       camera_and_composition:
-        'Honor the requested view and crop. Use diagonal strokes, tapered repeats, and varied line lengths to imply speed inside the existing composition.',
-      atmosphere_and_mood:
-        'Create urgency through forward line flow, compressed values, and bright accents while leaving the prompt’s emotional direction intact.',
+        'Keep the requested view; the subject stays sharp while everything behind it smears sideways in a tracking pan.',
+      atmosphere_and_mood: 'Breathless velocity, cool metal and nerve at the edge of control.',
       rendering_and_quality:
-        'Use sharp ink boundaries, a few decisive cel-shadow values, controlled glow, and clean detail hierarchy; keep textures crisp rather than noisy.',
+        'Sharp subject contours, chromatic RGB offset on edges, motion-smear afterimages and a streaked background; never a static still life.',
       key_features:
-        'Segmented precision contours; cyan-fuchsia edge accents; reflective glints; diagonal speed rhythm.',
+        'horizontal tracking pan blur; RGB-split chromatic edges; tapered afterimage smears; cyan-fuchsia fringes; warning-red leading edge',
       creative_brief:
-        'Preserve the specified subject, action, and setting. Apply segmented contours, cyan-fuchsia accents, and tapered motion marks to existing forms; add no prostheses, armor, or machinery.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Kinetic Alloy Sprint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +239,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Surveillance Verdict Grid',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, readable UI text, police badge, real-world law enforcement, gun, crime scene gore, celebrity likeness, Psycho-Pass-specific weapon/device, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, readable timestamp, numerals, enforcement pistol copy, photoreal office, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, readable UI text, police badge, real-world law enforcement, gun, crime scene gore, celebrity likeness, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A cool, forensic graphic style using precise scan bands, rectilinear divisions, and measured contour lines; abstract marks suggest analysis without becoming readable interface graphics.',
+        'Surveillance-feed anime rendering: cold cyan duotone, fine horizontal scanlines at a fixed pitch, and thin ruled bracket marks framing forms without any characters.',
       subject_treatment:
-        'Retain the subject’s identity and proportions. Clarify its structure with aligned planes and fine technical contours, without adding uniforms, devices, or anonymous figures.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Use slate, deep blue, and icy cyan with small, deliberate red signals. Keep saturation low and separate important forms by value.',
+        'Icy cyan and deep slate duotone with one saturated red signal; every other hue collapses into the two-tone ramp.',
       lighting_and_shadow:
-        'Pair broad, hard shadow shapes with thin cool scan-like highlights along existing edges; avoid implying a monitor or other light source.',
+        'Flat cold top light like a low-lux sensor exposure; shadows crushed to slate and highlights clipped to pale cyan.',
       texture_and_material:
-        'Keep materials recognizable beneath restrained glassy overlays, fine hatch marks, and sparse etched lines; use no labels or literal data.',
+        'Uniform two-pixel scanline texture over everything, slight interlace doubling on moving edges, and faint sensor noise in darks.',
       camera_and_composition:
-        'Respect the requested framing. Repeat measured horizontal and vertical alignments within the subject, leaving clear space around its key outline.',
-      atmosphere_and_mood:
-        'Make the image feel controlled and questioning through still spacing, cool contrast, and exact marks rather than a surveillance scene.',
+        'Keep the requested view; add thin corner bracket marks and a small crosshair tick around the focal form, never readable data.',
+      atmosphere_and_mood: 'Clinical, watchful and judgemental, the feeling of being assessed.',
       rendering_and_quality:
-        'Favor clean technical line weights, flat cel shadows, crisp color boundaries, and legible nonverbal marks; keep overlays sparse.',
+        'Clean anime line under a scanline overlay, two-value duotone, crisp bracket marks, and no letters or numerals.',
       key_features:
-        'Forensic blue planes; scan-band accents; aligned technical contours; quiet red signals.',
+        'cyan-slate duotone; fixed-pitch scanlines; corner bracket marks without text; interlace doubling; single red signal',
       creative_brief:
-        'Keep the requested subject, action, and setting. Render its existing forms with cool scan bands, measured blue planes, and fine technical contours; add no agents, screens, or readable data.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Surveillance Verdict Grid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -269,28 +267,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Luminous Beam Opera',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, beam saber, Gundam-like faceplate, cockpit hero portrait, named mecha likeness, laser weapon focus, readable UI, war gore, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, flat digital glow, V-fin horned faceplate copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, beam saber, cockpit hero portrait, named mecha likeness, laser weapon focus, readable UI, war gore, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Operatic light-and-line illustration with sleek contours, radiant diagonals, and carefully tiered color fields; scale comes from contrast and sweeping direction, not added spacecraft.',
+        '1980s space-opera cel photography: backlit-cel light effects where pure light shines through cut lines in black, over airbrushed cobalt gradients and inked mechanical forms.',
       subject_treatment:
-        'Keep the requested subject recognizable. Sharpen its existing outline and use a few luminous directional strokes to guide attention without changing its shape.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Contrast deep cobalt and ink with ivory, warm gold, and a chosen saturated accent. Separate colors into clear, dramatic bands.',
+        'Deep cobalt, ink black and ivory with warm gold, plus one saturated backlit accent that burns almost white at its core.',
       lighting_and_shadow:
-        'Set broad cel shadows against clean, radiant highlight paths. Let light sweep across existing forms without inventing beams, engines, or spotlights.',
+        'Backlit glow lines with halation bleeding into the surrounding cel, hard ink shadows, and airbrushed rim highlights sweeping on the diagonal.',
       texture_and_material:
-        'Render the subject’s actual materials with smooth painted gradients, fine metallic glints, and minimal grain; keep every surface distinct.',
+        'Airbrushed starfield speckle, smooth cel paint, and faint dust and grain from optical camera photography.',
       camera_and_composition:
-        'Honor the requested framing. Arrange highlights and contour rhythm along strong diagonals while preserving the subject’s scale and placement.',
-      atmosphere_and_mood:
-        'Create grandeur through luminous contrast, elegant spacing, and deliberate visual cadence, whether the prompt calls for calm or action.',
+        'Keep the requested view; arrange glow lines and highlights along strong diagonals that sweep through the subject.',
+      atmosphere_and_mood: 'Operatic grandeur and melancholy, light blazing inside a vast dark.',
       rendering_and_quality:
-        'Use precise outlines, clean color separation, controlled bloom, and a small number of bold shadow shapes; avoid muddy glow.',
+        'Halation around backlit lines, airbrushed gradients, crisp inked mechanics and light film grain; no modern digital bloom.',
       key_features:
-        'Radiant diagonal highlights; sleek contour lines; cobalt and ivory contrast; dramatic color hierarchy.',
+        'backlit-cel glow lines with halation; airbrushed cobalt gradients; ivory and gold accents; diagonal light sweeps; optical film grain',
       creative_brief:
-        'Keep the specified subject, action, and setting. Apply sleek contours, radiant diagonal accents, and operatic color separation; add no spacecraft, engines, or staged light beams.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Luminous Beam Opera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -298,28 +295,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Gothic Tech Existential Dread',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, Eva-like giant, crucifix pose, exposed organs, gore, hospital tube body, franchise robot silhouette, religious icon copy, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, purple horned giant copy, ornamental filigree, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, crucifix pose, exposed organs, gore, hospital tube body, franchise robot silhouette, religious icon copy, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Severe gothic-industrial drawing with nested pointed contours, finely etched seams, and dark shell-like value shapes; its unease comes from line rhythm, not invented architecture.',
+        'Stark psychological anime framing: flat unshaded silhouettes against one saturated color field, sparse thin line, and pen-hatched interiors held like a still frame.',
       subject_treatment:
-        'Retain the subject’s recognizable anatomy and outline. Use narrow, nested contours and restrained pointed accents only where its existing forms support them.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Favor black, charcoal, bone, and muted violet, with a small blood-red or cold-cyan accent. Keep luminous color scarce.',
+        'Black, bone and one flooding field of violet, sickly green or vermilion; everything else stays near-monochrome.',
       lighting_and_shadow:
-        'Cut large, hard shadow masses against thin rim highlights; let small accents emerge from darkness without adding lamps or windows.',
+        'Mostly shapeless light: silhouettes cut against the lit color field, a thin bone-white rim line, and hatched gloom inside forms.',
       texture_and_material:
-        'Preserve the subject’s materials while adding etched linework, fine stippling, and selective dry-brush texture to existing surfaces.',
+        'Fine G-pen crosshatching inside dark shapes, flat untextured color fields, and faint cel dust.',
       camera_and_composition:
-        'Keep the requested camera. Use tall contour rhythms and compressed negative space within the existing frame, without building a hall or tower.',
+        'Keep the requested view; push the subject off-center against a large empty field and hold the frame static and tense.',
       atmosphere_and_mood:
-        'Carry dread through stillness, deep values, and intricate edge detail rather than religious symbols or a gothic setting.',
+        'Existential unease, quiet dread and isolation, a held breath that lasts too long.',
       rendering_and_quality:
-        'Balance ornate fine lines with simple cel-shadow masses; keep the silhouette clear and highlights sparse.',
+        'Flat color fields, silhouette clarity, pen-hatched interiors and a thin bone rim; no ornament and no glow.',
       key_features:
-        'Pointed nested contours; etched industrial detail; deep black shadow; restrained violet and red accents.',
+        'flat saturated color field; black silhouettes; G-pen crosshatched interiors; off-center composition with a huge void; thin bone rim line',
       creative_brief:
-        'Preserve the requested subject and setting. Use etched contours, pointed line rhythms, and broad dark shadows on existing forms; add no cathedral, shell, or ritual objects.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gothic Tech Existential Dread as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -327,28 +324,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sleek Collapse Romance',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, Darling-like couple pose, sexualized bodysuit, exposed skin focus, cockpit romance scene, franchise plugsuit, readable UI, ruined city cliche, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, hard black shadows, piloting couple pose copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, sexualized bodysuit, exposed skin focus, cockpit romance scene, franchise plugsuit, readable UI, ruined city cliche, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A refined, wistful style pairing sleek broken contours, delicate curved line accents, and polished highlight bands with softened edges and gentle color transitions.',
+        'Soft-focus romantic digital anime: diffusion-filter bloom around every highlight, hexagonal lens-flare ghosts, and cel shading with gradient blush tones at shadow edges.',
       subject_treatment:
-        'Preserve the subject’s identity and proportions. Let its existing contours alternate between clean, sleek edges and a few delicate, interrupted lines.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Blend muted rose, apricot, pale gold, and blue-gray, keeping dark values soft and the warm-cool balance delicate.',
+        'Muted rose, apricot, pale gold and dusty blue-gray; shadows tinted lilac rather than dark, with lifted, gentle contrast.',
       lighting_and_shadow:
-        'Use soft-edged cel shadows with thin sunset-like highlights across existing forms; do not introduce ruins or a literal sunset.',
+        'Low golden backlight with wide diffusion halos, flare ghosts crossing the frame, and soft-edged cel shadows fading through a warm blush band.',
       texture_and_material:
-        'Retain the requested materials. Suggest polish with restrained luminous streaks, fine surface lines, and gentle tonal transitions.',
+        'Smooth digital paint with fine sparkle dust in the air and a light glow haze over the whole image.',
       camera_and_composition:
-        'Keep the prompt’s camera and layout. Use graceful curves and a slight offset in detail density to create a tender, unsettled rhythm.',
+        'Keep the requested view; let flare ghosts and bloom drift diagonally across the frame toward the subject.',
       atmosphere_and_mood:
-        'Express melancholy through softened contrast, quiet spacing, and delicate interruptions, without adding flowers, alarms, or a romance scene.',
+        'Wistful, tender and bittersweet, beauty glimpsed while things fall apart.',
       rendering_and_quality:
-        'Combine precise silhouettes with soft shadow edges, clean gradients, and sparse fine detail; avoid glossy over-rendering.',
+        'Clean silhouettes softened by diffusion bloom, blush-gradient shadow edges, sparkle dust and flare ghosts; never glossy or harsh.',
       key_features:
-        'Sleek interrupted contours; soft cel shadows; rose-apricot and blue-gray palette; delicate polished glints.',
+        'diffusion-filter bloom; hexagonal lens-flare ghosts; blush-gradient shadow edges; rose-apricot and blue-gray palette; floating sparkle dust',
       creative_brief:
-        'Preserve the specified subject and setting. Apply refined contours, gentle rose-and-blue transitions, and sparse polished highlights; add no suit, ruins, flowers, or alarm devices.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sleek Collapse Romance as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -356,28 +353,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Remote Command Grief',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, child soldier exploitation, gun, cockpit UI text, real military insignia, drone strike gore, readable maps, franchise uniform, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, saturated neon, crushed pure blacks, photoreal control room, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, child soldier exploitation, gun, cockpit UI text, real military insignia, drone strike gore, readable maps, franchise uniform, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A restrained, distant visual language built from quiet blue-gray planes, fine system-like lines, and generous negative space; emotional weight comes from separation, not added screens.',
+        'Muted cinematic digital anime: thin brown line art, simulated shallow depth of field with round bokeh, and a cold blue-gray grade with lifted blacks.',
       subject_treatment:
-        'Keep the subject’s identity and requested pose. Reduce interior detail and place precise accents along existing edges, without adding a pilot, drone, or uniform.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Use desaturated steel blue, fog gray, muted navy, and a small cold-white highlight. Keep contrast subdued except at the focal outline.',
+        'Desaturated steel blue, fog gray and muted navy with lifted milky blacks and one cold-white highlight on the focal edge.',
       lighting_and_shadow:
-        'Use broad cool shadows, softened distant light, and a few narrow edge glints; avoid visible monitors or control-room lighting.',
+        'Soft overcast or distant window light, broad low-contrast shadows, and bokeh discs where small lights fall out of focus.',
       texture_and_material:
-        'Maintain each material’s character with fine grain, subtle scuffs, and sparse technical line accents rather than tactical equipment.',
+        'Fine digital film grain, soft focus falloff, and thin sepia-brown line that dissolves where forms go out of focus.',
       camera_and_composition:
-        'Preserve the given framing. Let existing forms sit against open space and use thin aligned strokes to suggest distance without changing scale.',
-      atmosphere_and_mood:
-        'Suggest quiet burden and detachment through muted values, restrained detail, and open spacing; do not imply a specific age or story.',
+        'Keep the requested view; set a shallow focal plane on the subject and let foreground and background melt into bokeh.',
+      atmosphere_and_mood: 'Quiet grief and detachment, a distance that the lens itself enforces.',
       rendering_and_quality:
-        'Keep contours calm and exact, shadows broad but soft-edged, and grain faint; prevent the image from collapsing into uniform blue.',
+        'Thin line, soft cel shading, lens blur and bokeh, lifted-black grade and faint grain; nothing saturated.',
       key_features:
-        'Muted blue-gray systems; fine aligned lines; distant spacing; restrained edge highlights.',
+        'shallow depth of field with round bokeh; thin brown line art; lifted-black blue-gray grade; fine film grain; single cold-white highlight',
       creative_brief:
-        'Retain the requested subject, pose, and setting. Use quiet blue-gray values, fine system-like contours, and open spacing; add no pilot, drone, uniform, or control room.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Remote Command Grief as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -385,28 +381,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tactical Network Cognition',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, readable UI text, brand logo, celebrity spy likeness, real institution badge, gun, camera prop, surveillance screen wall, franchise cyber-police device, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, readable code, opaque heavy paint, photoreal office, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, readable UI text, brand logo, celebrity spy likeness, real institution badge, gun, camera prop, surveillance screen wall, franchise cyber-police device, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Precise layered illustration with translucent planes, modular line divisions, and optical-glass clarity; data-like geometry remains abstract and never becomes readable interface content.',
+        'Layered-transparency cyber anime: semi-transparent cel planes stacked in screen blend, refraction ripples where layers overlap, and thin teal line contours.',
       subject_treatment:
-        'Preserve the subject and its proportions. Clarify its existing structure with fine layered contours and selected transparent-looking accents, not agent silhouettes or devices.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Use cool teal, glass green, slate, and silver-white, with modest contrast and carefully separated transparent-looking color layers.',
+        'Teal, glass green, slate and silver-white; overlaps brighten toward pale aqua and never form readable content.',
       lighting_and_shadow:
-        'Pair clear cel-shadow shapes with thin refracted highlights along existing edges; keep the light even and technical.',
+        'Even cool technical light with thin refracted highlights on edges and soft cel shadows seen through translucent layers.',
       texture_and_material:
-        'Retain the depicted materials, adding delicate double lines, polished edge glints, and sparse etched geometry without covering the surface.',
+        'Glassy translucent planes, faint refraction warping at overlaps, and an optical-camouflage shimmer outlining partly invisible forms.',
       camera_and_composition:
-        'Respect the specified view. Repeat modular alignments within the composition and keep overlays subordinate to the subject.',
-      atmosphere_and_mood:
-        'Create calm analytical tension with ordered spacing, fine detail, and restrained tonal shifts; introduce no investigation scene.',
+        'Keep the requested view; offset two or three translucent echoes of the subject slightly in depth behind it.',
+      atmosphere_and_mood: 'Calm analytical focus, a mind reading the world in layers.',
       rendering_and_quality:
-        'Use crisp line weights, clean translucent color fields, stable shadow bands, and sparse nonverbal marks; omit legible text.',
+        'Crisp teal line, clean translucent fills, refraction ripples and sparse abstract hexagon marks; no legible text.',
       key_features:
-        'Translucent color layers; modular contours; optical edge glints; calm teal and glass-green palette.',
+        'stacked translucent cel planes; refraction ripples at overlaps; optical-camouflage shimmer; teal and glass-green palette; offset depth echoes',
       creative_brief:
-        'Keep the subject, action, and setting specified by the prompt. Apply translucent color layers, modular contours, and optical edge glints; add no agent, device, or readable interface.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tactical Network Cognition as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -414,28 +409,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Orbital Rivalry Symmetry',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named orbital mecha likeness, beam weapon, cockpit portrait, real national flags, space battle gore, readable insignia, weapon-first duel, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, busy clutter, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named orbital mecha likeness, beam weapon, cockpit portrait, real national flags, space battle gore, readable insignia, weapon-first duel, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Elegant crystalline rendering defined by precise facet seams, long orbital arcs, and balanced counter-direction; tension comes from geometry, not a required pair of subjects.',
+        'Crystalline facet-highlight anime: specular highlights cut as sharp polygon shards, fine seam lines, and long thin orbital arc strokes balancing the frame.',
       subject_treatment:
-        'Keep the requested subject’s identity and proportions. Trace its existing planes with crisp facet lines and fine curved accents without multiplying or redesigning it.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Set deep blue and violet against glacial white, with a small warm gold signal; preserve clean value separation between facets.',
+        'Deep blue and violet against glacial white, with a tiny warm gold signal; each facet is a separate clean tone.',
       lighting_and_shadow:
-        'Use hard-edged cel shadows with cool rim glints and a few bright facet reflections; avoid requiring a spacecraft or light source.',
+        'Hard cold key producing polygonal white specular shards on edges and hard violet cel shadows, with one gold glint as counterweight.',
       texture_and_material:
-        'Keep each material recognizable while adding crystalline line breaks, polished highlights, and smooth, controlled gradients.',
+        'Polished mirror surfaces broken into crystal facets, with smooth gradients inside each facet.',
       camera_and_composition:
-        'Honor the requested view. Balance visual weight with opposing diagonals and spare arcs, without forcing symmetry or multiple subjects.',
+        'Keep the requested view; counterbalance the subject with opposing diagonal arcs so the frame feels mirrored without duplicating the subject.',
       atmosphere_and_mood:
-        'Suggest strategic tension through poised counter-rhythms, cool light, and careful spacing rather than combat or rivalry staging.',
+        'Cold strategic tension, poised and elegant, like a move not yet played.',
       rendering_and_quality:
-        'Use fine accurate seams, clean facet color blocks, restrained glow, and crisp silhouette edges.',
+        'Sharp polygon specular shards, fine seams, clean facet color blocks and thin arcs, with restrained glow.',
       key_features:
-        'Crystalline seam lines; orbital arcs; blue-violet and glacial-white contrast; balanced counter-motion.',
+        'polygon-shard specular highlights; blue-violet and glacial white palette; opposing orbital arcs; fine seam lines; single gold counterweight glint',
       creative_brief:
-        'Preserve the specified subject and framing. Apply crystalline seams, spare orbital arcs, and cool facet shading; do not add a second subject, craft, or battle.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Orbital Rivalry Symmetry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -443,28 +438,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Pop-Signal Engineered Romance',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, idol portrait, cockpit closeup, concert stage, missile barrage, readable UI, crowd, robot face closeup, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, transforming jet copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, idol portrait, cockpit closeup, concert stage, missile barrage, readable UI, crowd, robot face closeup, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'An optimistic signal style combining human-scale contour rhythm, flowing cyan-pink strokes, and orderly panel-like divisions with a warm gold edge.',
+        '1980s idol-era mecha cel: airbrushed cyan-pink gradient skies, star-shaped sparkle glints, and looping white vapor-trail ribbons curving around clean inked forms.',
       subject_treatment:
-        'Retain the requested subject’s shape and identity. Use rhythmic contour breaks and smooth, sweeping accents on its existing forms, without adding people or machinery.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Center cyan and pink with a warm gold highlight, balancing vivid accents against clear neutral values.',
+        'Cyan and bubble pink with warm gold edge highlights over clear neutral cel colors; skies are smooth airbrushed gradients.',
       lighting_and_shadow:
-        'Use clean cel-shadow shapes and a gentle gold rim on selected edges; keep glow narrow and controlled.',
+        'Clean two-tone cel shadows, a gentle gold rim, and four-point star glints on the brightest edges.',
       texture_and_material:
-        'Preserve the original materials. Add smooth painted highlight bands, fine engineered line rhythms, and minimal surface grain.',
+        'Airbrushed gradient backgrounds, flat cel paint, faint film grain and the slight color bleed of an old cel.',
       camera_and_composition:
-        'Respect the prompt’s crop and perspective. Let flowing strokes echo the existing gesture and use panel-like spacing to organize detail.',
-      atmosphere_and_mood:
-        'Keep the image buoyant and affectionate through open spacing, warm edge light, and fluid marks, without staging romance or performance.',
+        'Keep the requested view; loop white trail ribbons in wide arcs around the subject to lead the eye inward.',
+      atmosphere_and_mood: 'Buoyant, affectionate and hopeful, a love song played at full volume.',
       rendering_and_quality:
-        'Use crisp contours, polished color separation, soft restrained glow, and readable details at multiple scales.',
+        'Crisp ink line, airbrushed gradients, star glints and ribbon loops with soft film grain; no modern bloom.',
       key_features:
-        'Cyan-pink signal strokes; warm gold edge light; rhythmic panel divisions; optimistic contour flow.',
+        'airbrushed cyan-pink gradient sky; looping white vapor-trail ribbons; four-point star glints; gold rim light; 1980s cel film grain',
       creative_brief:
-        'Keep the requested subject and action intact. Apply flowing cyan-pink accents, orderly contour breaks, and a soft gold rim; add no performer, robot, or stage.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pop-Signal Engineered Romance as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -472,28 +466,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Armored Chrome Noir Elegance',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, rain-soaked neon street, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Noir surface rendering with razor-clean contours, mirror-bright edge glints, deep black value masses, and composed chrome-like reflections.',
+        'Airbrushed chrome noir illustration: mirror surfaces rendered as hard black-and-white bands with a reflected horizon line, deep black masses, and pinpoint star glints.',
       subject_treatment:
-        'Keep the requested subject recognizable and unchanged in form. Give its existing silhouette a few sharp reflective edges and broad, elegant shadow shapes.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Build a restrained range of black, pewter, silver, and smoke, punctuated by tiny magenta or cyan reflections.',
+        'Black, pewter, silver and smoke, with tiny magenta or cyan reflections caught in the chrome.',
       lighting_and_shadow:
-        'Use hard cel shadows and precise specular accents; concentrate highlights along existing edges instead of adding neon sources.',
+        'Hard single key from above and behind; chrome reads through sharp reflected bands, a horizon line across curved surfaces, and starburst glints.',
       texture_and_material:
-        'Respect the depicted material while suggesting a polished finish through narrow highlight bands, clean reflections, and minimal scuffing.',
+        'Seamless airbrushed gradients and mirror polish with minimal scuffing, against a background that falls into velvet black.',
       camera_and_composition:
-        'Keep the given framing. Balance dark masses with narrow reflective lines and leave negative space around the main silhouette.',
-      atmosphere_and_mood:
-        'Create poised noir elegance through controlled contrast, stillness, and sparse color glints rather than a city-at-night setting.',
+        'Keep the requested view; isolate the subject against black with generous negative space and one elegant reflective contour.',
+      atmosphere_and_mood: 'Poised, cool and seductive noir elegance, stillness with a knife edge.',
       rendering_and_quality:
-        'Use smooth value transitions, crisp boundaries, a few hard shadow planes, and clean highlights; keep reflections graphic and legible.',
+        'Masked-airbrush smoothness, crisp hard-edged reflection bands and starburst glints; no plastic 3D CG look.',
       key_features:
-        'Mirror-like edge glints; deep noir shadows; pewter and smoke values; sparse neon reflections.',
+        'airbrushed chrome banding; reflected horizon line; velvet black background; pinpoint starburst glints; tiny magenta and cyan reflections',
       creative_brief:
-        'Retain the prompt’s subject, action, and setting. Use crisp reflective accents, pewter values, and deep noir shadows; add no armor, city, or neon signage.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Armored Chrome Noir Elegance as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -501,28 +494,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Scrap Velocity Resilience',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, robot duel, weapon arm, cockpit UI, scrapyard corridor, readable decals, gore, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, polished final render, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, robot duel, weapon arm, cockpit UI, scrapyard corridor, readable decals, gore, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Rough kinetic illustration with dented-edge marks, short spark-like strokes, compact directional forms, and visible hand-worked grit.',
+        'Rough-key action animation drawing: blue construction pencil left under black cleanup line, smear-frame distortions, and painted spark dots on impact.',
       subject_treatment:
-        'Retain the requested subject and silhouette. Use broken contours, localized dents, and quick directional hatching on existing forms; add no scrap parts or tools.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Combine iron, dusty ochre, rust, and charcoal, with small bright amber accents against muted values.',
+        'Iron, dusty ochre, rust and charcoal cel fills with blue pencil showing through and bright amber spark dots.',
       lighting_and_shadow:
-        'Cut firm shadows beneath edges and use brief warm glints to sharpen movement; do not require sparks or a welding source.',
+        'Firm cel shadows and short warm glints; impact flashes drawn as flat amber shapes with black outlines.',
       texture_and_material:
-        'Keep the original material readable while layering scuffs, scratches, rubbed paint, and uneven hand-drawn marks in focused areas.',
+        'Visible pencil tooth, loose blue construction lines, scribbled hatching and dented-edge contour breaks.',
       camera_and_composition:
-        'Keep the requested crop. Carry speed with compact diagonals and short repeated strokes inside the existing layout.',
-      atmosphere_and_mood:
-        'Express resilience through rough but controlled mark-making, warm accents, and persistent forward rhythm.',
+        'Keep the requested view; stretch the moving part of the subject into a smear frame along its arc of motion.',
+      atmosphere_and_mood: 'Scrappy, determined and kinetic, a thing held together by will.',
       rendering_and_quality:
-        'Mix firm cel shadows with scratchy line texture; maintain a clear contour and avoid uniform distress or visual noise.',
+        'Keyframe rough energy with blue under-pencil, confident black line, smear distortion and spark dots; not a polished final cel.',
       key_features:
-        'Dented-edge marks; compact motion strokes; iron and rust palette; hand-worked surface grit.',
+        'blue construction pencil under black line; smear-frame distortion; amber spark dots; iron and rust cel fills; scribbled hatching',
       creative_brief:
-        'Preserve the prompt’s subject and framing. Apply scratched contours, compact directional strokes, and muted iron-and-rust color; add no scrap, tools, or sparks.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scrap Velocity Resilience as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -530,28 +522,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cyber-Goth Mausoleum Dread',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, full color painting, soft airbrush, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cyber-gothic rendering with pointed contour rhythms, fine ornamental etching, monumental value shapes, and a stark red accent against cold darks.',
+        'Copperplate-engraving cyber-gothic rendering: dense parallel burin hatching, pointed ornamental filigree traced along existing edges, and a single crimson spot color.',
       subject_treatment:
-        'Keep the subject’s identity and outline. Trace existing forms with pointed, nested lines and restrained etched detail without adding statues, robes, or architecture.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Use black, blue-gray, bone, and muted violet, with a narrow crimson signal; keep the palette dark but distinct.',
+        'Blue-black ink on cold bone paper with one narrow crimson signal; midtones are built only from hatch density.',
       lighting_and_shadow:
-        'Set deep cel-shadow masses against slim cold highlights and occasional red edge light; do not imply candles or a mausoleum.',
+        'Hard directional light carved by line density: tight crosshatch in shadow, open paper for highlights, crimson for emissive points.',
       texture_and_material:
-        'Preserve the subject’s material. Add delicate engraved marks and worn speckling sparingly, keeping ornament subordinate to the form.',
+        'Engraved swelling lines, fine stipple on curved surfaces, and pointed-arch filigree edging on existing contours.',
       camera_and_composition:
-        'Honor the requested view. Use tall, pointed line rhythms and large shadow shapes within the existing crop, without building a hall.',
-      atmosphere_and_mood:
-        'Convey solemn dread through negative space, severe contrast, and fine ornamental lines rather than funerary props.',
+        'Keep the requested view; frame with tall vertical rhythms of hatching and deep black masses at the edges.',
+      atmosphere_and_mood: 'Solemn funereal dread, elegance carved into cold metal.',
       rendering_and_quality:
-        'Pair precise etching with broad, clean cel shadows; keep highlights sparse, silhouettes legible, and dark detail controlled.',
+        'Engraving line with swelling and tapering strokes, a controlled hatch value scale and sparse crimson; no painterly color.',
       key_features:
-        'Pointed gothic contours; fine etched detail; black and blue-gray masses; narrow crimson accents.',
+        'parallel burin hatching; pointed filigree edging; blue-black ink on bone; single crimson spot color; stipple on curves',
       creative_brief:
-        'Keep the requested subject, action, and setting. Apply pointed contour rhythms, restrained etching, and severe shadow; add no mausoleum, statues, robes, or candles.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyber-Goth Mausoleum Dread as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -559,28 +550,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Punitive Neon Vice Texture',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, smooth digital gradients, wet night market, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Abrasive neon-noir rendering with distressed ink, dense crosshatch, hard surface glints, and saturated signals cutting through shadow.',
+        'Risograph cyberpunk manga print: coarse photocopied screentone and black toner, overprinted with two saturated neon spot colors slightly off register.',
       subject_treatment:
-        'Keep the requested subject and silhouette intact. Use rough hatch clusters and precise neon edge accents on existing contours; add no weapon or costume.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Set toxic green, hot red, and magenta against black and smoky gray; keep the vivid color concentrated in small areas.',
+        'Toxic fluorescent green and hot red spot inks over black toner and paper white; overlaps turn brown only in thin misregistered slivers.',
       lighting_and_shadow:
-        'Use hard cel-shadow blocks with clipped red or green highlights; avoid creating neon signs or a nighttime street.',
+        'Values made by screentone dot size and toner black; neon spot color marks the lit edges, with no gradients.',
       texture_and_material:
-        'Respect each depicted material while adding scratched ink, worn patches, and coarse hatching in selected regions.',
+        'Coarse halftone dots, toner speckle, scratched photocopy streaks and the uneven ink coverage of a stencil drum.',
       camera_and_composition:
-        'Respect the prompt’s camera. Use abrupt contrast shifts and angled detail clusters within the frame, not forced close-ups.',
-      atmosphere_and_mood:
-        'Make the image feel tense and abrasive through compressed values, irregular marks, and sharp color interruptions, not criminal subject matter.',
+        'Keep the requested view; crop hard and let angled detail clusters and black masses bleed off the edges.',
+      atmosphere_and_mood: 'Abrasive, sleazy and tense, a city that punishes while it glows.',
       rendering_and_quality:
-        'Keep rough texture controlled against clean silhouette edges; separate colors clearly and prevent darks from filling with noise.',
+        'Two-spot-color risograph finish with misregistration, coarse dots and toner grit around a clean silhouette.',
       key_features:
-        'Distressed crosshatch; toxic green and hot red; sharp surface glints; compressed noir shadows.',
+        'two neon spot inks off register; coarse screentone dots; black toner grit; photocopy streaks; hard crop with bleed',
       creative_brief:
-        'Retain the requested subject, action, and setting. Apply distressed ink, sparse toxic-neon accents, and hard shadow blocks; add no weapon, costume, signage, or street.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Punitive Neon Vice Texture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -588,28 +578,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Terminal Megastructure Silence',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, saturated color, busy neon detail, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Monumental graphic rendering built from long structural lines, blocky value masses, broad voids, and rare cold highlights; scale is a visual relation, not a required setting.',
+        'Ink-wash megastructure manga plate: ruler-drawn pen lines, vast flat fields of diluted gray wash, dry-brush edges, and highlights scratched out in white.',
       subject_treatment:
-        'Preserve the subject’s identity and proportions. Clarify its existing structure with long clean contours and large shadow groupings without enlarging or replacing it.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Use charcoal, slate, blue-black, and steel, with very sparse cyan or white highlights.',
+        'Charcoal, slate and blue-black wash values with sparse cold white scratch highlights and at most a hint of cyan.',
       lighting_and_shadow:
-        'Set large hard cel-shadow shapes against a few cold edge glints; keep illuminated areas broad, quiet, and subordinate.',
+        'Faint cold light from one distant source; most of the plate falls into layered gray wash with hard ruled shadow edges.',
       texture_and_material:
-        'Keep existing materials legible. Limit texture to precise seams, faint wear, and controlled grain against expansive simple areas.',
+        'Granulating ink wash pooling at edges, dry-brush drag on large planes, and fine ruled hatching in the far distance.',
       camera_and_composition:
-        'Keep the requested view and scale. Use long aligned contours and open negative space within the established framing.',
-      atmosphere_and_mood:
-        'Create silence and scale through still spacing, strong value grouping, and minimal accents, without adding a megastructure or vessel.',
+        'Keep the requested view and scale; leave huge empty wash areas and long converging ruled lines around the subject.',
+      atmosphere_and_mood: 'Immense silence and scale, a stillness older than anyone inside it.',
       rendering_and_quality:
-        'Use clean block shadows, sharp silhouettes, disciplined line density, and a low glow threshold to preserve quiet.',
+        'Sparse ruled pen line, layered wash values and white scratch highlights, with restrained detail and no glow.',
       key_features:
-        'Long structural contours; broad dark masses; open negative space; sparse cold highlights.',
+        'ruler-drawn pen lines; vast gray ink-wash fields; dry-brush drag; scratched-out white highlights; long converging ruled lines',
       creative_brief:
-        'Keep the specified subject, scale, and setting. Use long structural lines, broad shadow masses, and sparse cold glints; add no megastructure, vessel, or space scene.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Terminal Megastructure Silence as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -617,27 +606,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Coral Resonance Liturgy',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, cockpit UI, weapon, angel/robot copy, cathedral corridor, readable glyphs, body-horror gore, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, daylight, flat even lighting, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, cockpit UI, weapon, angel/robot copy, cathedral corridor, readable glyphs, body-horror gore, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Rhythmic luminous illustration with branching contour patterns, concentric halo-like curves, and bioluminescent color accents over deep blue values.',
+        'Bioluminescent fluorescent-paint anime: a dark abyssal base with luminous teal and coral lines painted like glowing ink, radiating stipple dots and concentric halos.',
       subject_treatment:
-        'Retain the subject’s identity and proportions. Echo its existing divisions with branching lines and repeated arcs, without changing it into coral or machinery.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Anchor the palette in abyssal blue and teal, with coral pink, pale aqua, and soft pearl highlights.',
+        'Abyssal navy and teal with glowing coral pink, pale aqua and pearl; glow colors appear only on lines and dots.',
       lighting_and_shadow:
-        'Use layered cel shadows with smooth luminous edges and circular highlight rhythms; keep the glow attached to existing forms.',
+        'No external light: forms are lit from within by their glowing lines, with soft bloom and concentric ring highlights.',
       texture_and_material:
-        'Preserve the original surface while adding fine branching lines, soft stipple, and controlled translucent accents.',
+        'Fine radiating stipple, branching vein-like lines, and a soft translucent glow haze over dark cel shadow.',
       camera_and_composition:
-        'Honor the requested framing. Repeat arcs and branching marks to create rhythm without imposing a halo or centered layout.',
-      atmosphere_and_mood:
-        'Suggest resonance and reverence through repeated curves, deep color, and measured glow, not religious symbols or an underwater scene.',
+        'Keep the requested view; repeat concentric rings and branching lines outward from the focal form.',
+      atmosphere_and_mood: 'Reverent, resonant and hushed, a slow pulse of light in deep dark.',
       rendering_and_quality:
-        'Combine precise fine lines with clean shadow bands and soft controlled bloom; maintain clear separation between marks.',
-      key_features: 'Branching contours; concentric rhythms; abyssal blues; coral and aqua glow.',
+        'Crisp glowing linework over dark cel masses, controlled bloom and radiating dot patterns; never daylight.',
+      key_features:
+        'self-luminous teal and coral lines; branching vein patterns; radiating stipple dots; concentric halo rings; abyssal navy base',
       creative_brief:
-        'Preserve the prompt’s subject and setting. Apply branching line rhythms, deep blue values, and restrained coral-aqua glows; add no coral growth, ocean, or sacred symbols.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Coral Resonance Liturgy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -645,28 +634,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Dustfront Drone Lament',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, photoreal military drone, desert war photo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Soft, dusty illustration with muted layered values, drifting particulate marks, sparse mechanical line accents, and a restrained amber signal.',
+        'Hazy frontier anime: stacked translucent sand-colored haze cels, soft cel figures dissolving with distance, crisp line only on the focal detail, and 16 mm film grain.',
       subject_treatment:
-        'Keep the requested subject recognizable. Soften secondary edges and retain crisp line accents only on its existing focal details; add no drone or pilot.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Use sand, smoke gray, faded olive, and dusty blue, with a small amber highlight against subdued values.',
+        'Sand, smoke gray, faded olive and dusty blue with one small amber signal light; contrast falls off in each haze layer.',
       lighting_and_shadow:
-        'Layer broad soft shadows with narrow, pale edge light; keep haze subtle and avoid a forced sunset or dust storm.',
+        'Low diffuse sun filtered through dust, broad soft shadows, pale edge light, and haze glowing faintly where the sun sits.',
       texture_and_material:
-        'Retain the subject’s material with fine dust grain, rubbed edges, and sparse particulate specks rather than coating it uniformly.',
+        'Floating particulate specks, soft film grain, rubbed edges and faded cel paint.',
       camera_and_composition:
-        'Preserve the requested crop and view. Leave breathing room around the subject and let a few drifting marks create depth.',
-      atmosphere_and_mood:
-        'Carry a quiet, lamenting mood through subdued contrast and suspended detail, without a desert or military narrative.',
+        'Keep the requested view; stack three or four haze layers between foreground and horizon to build distance.',
+      atmosphere_and_mood: 'Lamenting, weary and quiet, a long war seen through settling dust.',
       rendering_and_quality:
-        'Blend soft atmospheric layers with crisp focal contours; keep grain fine, color separation clear, and highlights restrained.',
+        'Layered atmospheric haze, soft focus beyond the focal plane, crisp focal line and fine grain; never crisp photoreal.',
       key_features:
-        'Dust-softened layers; sparse crisp contours; sand and slate palette; small amber signals.',
+        'stacked translucent haze cels; dissolving distance; crisp line only at focus; sand and dusty blue palette; small amber signal; 16 mm grain',
       creative_brief:
-        'Keep the specified subject, pose, and setting. Use dust-softened values, sparse particulate marks, and quiet amber accents; add no drone, pilot, desert, or storm.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dustfront Drone Lament as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -674,28 +662,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Vacuum-Fortress Survival Discipline',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, soft ambient fill, atmospheric haze, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Disciplined survival graphics with sealed angular divisions, compact high-contrast shapes, exact seam lines, and restrained caution-color accents.',
+        'Hard-vacuum anime lighting: one unfiltered point-source key, pitch-black shadows with zero fill, razor terminator lines, and thick clean outlines.',
       subject_treatment:
-        'Preserve the requested form and identity. Emphasize its existing structural divisions with thick clean outlines and compact shadow planes; add no suit or equipment.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Pair cold white, steel, charcoal, and deep blue with a small amber caution accent; keep the palette practical and controlled.',
+        'Cold white, steel and charcoal with pure black shadows and a small amber caution accent.',
       lighting_and_shadow:
-        'Use crisp cel-shadow bands and hard edge highlights to separate surfaces; avoid suggesting vacuum lighting or a sealed chamber.',
+        'Single harsh sun with no atmosphere: lit planes blaze white, turned planes drop straight to black, and nothing bounces.',
       texture_and_material:
-        'Keep depicted materials recognizable while adding fine scuffs, tight seam marks, and limited grain in protected areas.',
+        'Tight seam marks, micro-scuffs and grit on lit faces only; shadows carry no detail at all.',
       camera_and_composition:
-        'Honor the requested camera. Group existing contours compactly and maintain clear separation between forms without forcing a survival layout.',
+        'Keep the requested view; let large black shadow shapes cut the frame into sharp lit and unlit zones.',
       atmosphere_and_mood:
-        'Suggest disciplined endurance through compact values, exact linework, and restrained accents rather than peril or confinement.',
+        'Disciplined endurance, silent and exacting, where one mistake is final.',
       rendering_and_quality:
-        'Use stable outlines, hard shadow separation, minimal glow, and carefully rationed surface detail.',
+        'Thick stable outlines, binary lit-or-black shading, razor terminator edges and minimal glow.',
       key_features:
-        'Sealed angular divisions; compact value groups; cool steel palette; restrained amber signals.',
+        'single unfiltered point-source key; zero-fill pitch-black shadows; razor terminator line; cold white and steel palette; amber caution accent',
       creative_brief:
-        'Preserve the requested subject and composition. Apply compact angular contours, crisp shadow bands, and restrained caution accents; add no spacesuit, equipment, or chamber.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vacuum-Fortress Survival Discipline as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -703,28 +691,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Extinction Interface Command',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, filled painted surfaces, numerals, readable map labels, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Command-like graphic precision using modular divisions, sparse signal bars, rigid alignment, and stark cel-shadow blocks; keep all data-like marks abstract.',
+        'Vector-display anime: subjects drawn as glowing single-weight wireframe lines with hidden lines removed, on a black field with modular grid divisions.',
       subject_treatment:
-        'Keep the subject’s identity and outline. Divide its existing forms with clean modular contours and small signal accents, not interface panels or weapons.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Set black, cool gray, and deep blue against cyan or red signal accents; keep bright marks few and highly legible.',
+        'Black ground with cyan vector lines, a deep blue grid and small red target accents; no filled color anywhere.',
       lighting_and_shadow:
-        'Use hard shadow blocks and thin localized highlights to create a severe, controlled read without visible displays.',
+        'Lines are self-luminous with a thin phosphor glow; there is no shading, and depth is shown by line density and brightness falloff.',
       texture_and_material:
-        'Preserve existing material qualities; add fine digital-looking breaks and edge marks sparingly, with no labels or text.',
+        'Phosphor bloom along lines, faint persistence trails, and a soft curved-screen vignette at the corners.',
       camera_and_composition:
-        'Respect the requested framing. Use measured grid alignment within existing forms and keep the main silhouette dominant.',
-      atmosphere_and_mood:
-        'Create command tension through strict spacing, deliberate interruption, and quiet contrast rather than an extinction event.',
+        'Keep the requested view; lay a fine modular grid behind the subject and bracket its key points with small red target ticks.',
+      atmosphere_and_mood: 'Cold command tension, the calm of watching disaster as geometry.',
       rendering_and_quality:
-        'Favor precise line weights, flat value blocks, clean signal-color boundaries, and minimal texture.',
+        'Clean single-weight vector wireframe, phosphor glow and sparse red ticks; no letters, numerals or filled surfaces.',
       key_features:
-        'Modular contour divisions; abstract signal marks; stark cel shadows; black, blue, and cyan-red accents.',
+        'glowing single-weight wireframe; hidden-line removal; phosphor glow on black; modular blue grid; red target ticks without text',
       creative_brief:
-        'Keep the specified subject, action, and setting intact. Apply modular line divisions, abstract signal accents, and stark shadows; add no display, weapon, text, or catastrophe.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Extinction Interface Command as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -732,28 +719,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Pop-Cyber Simulation Gloss',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, photoreal car render, showroom 3D product shot, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Glossy pop-cyber illustration combining clean vector contours, bright synthetic color, smooth highlight bands, and tiny controlled pixel-like interruptions.',
+        'Y2K pop-cyber gloss: candy-jelly highlights, bubble gradients, chrome-pink rims, and edges dissolving into ordered pixel dither.',
       subject_treatment:
-        'Preserve the requested subject and proportions. Use smooth, clean contour lines and glossy color accents on its existing forms, without adding avatars or devices.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Use vivid pink, cyan, violet, and a small lime accent against clean dark or pale neutrals; keep colors distinct and buoyant.',
+        'Vivid pink, cyan, violet and a small lime accent on white or deep indigo, with glossy bright gradients.',
       lighting_and_shadow:
-        'Pair smooth highlight bands with sharply separated cel shadows; keep shine graphic rather than photoreal.',
+        'Big soft jelly specular blobs and a white window-shaped highlight on curved surfaces, with cel shadows in clean violet.',
       texture_and_material:
-        'Maintain the depicted material beneath polished edge glints, clean gradients, and occasional tiny digital breaks.',
+        'Translucent gel-plastic surfaces, bubble gradients, and ordered four-by-four pixel dither on edges and falloffs.',
       camera_and_composition:
-        'Keep the requested view. Use lively color offsets and crisp graphic edges within the existing framing, without adding a simulated screen.',
-      atmosphere_and_mood:
-        'Make the image feel playful and synthetic through buoyant color, clean spacing, and a few controlled glitches.',
+        'Keep the requested view; float small glossy bubble shapes and dither patches around the subject.',
+      atmosphere_and_mood: 'Playful, synthetic and giddy, a toy-bright simulation of summer.',
       rendering_and_quality:
-        'Use vector-clean outlines, smooth color transitions, precise shadow bands, and sparse pixel accents; avoid noisy effects.',
+        'Vector-clean outlines, glossy gel highlights and ordered dither transitions; no grime and no photorealism.',
       key_features:
-        'Glossy vector contours; vivid pop colors; smooth highlights; tiny pixel-like breaks.',
+        'candy-jelly gel highlights; bubble gradients; chrome-pink rims; ordered pixel dither; pink, cyan and lime palette',
       creative_brief:
-        'Retain the prompt’s subject and setting. Apply glossy vector edges, vivid pop color, and a few pixel-like breaks; add no avatar, device, or screen.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pop-Cyber Simulation Gloss as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -761,28 +747,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Monumental Ignition Sacrifice',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, thin cel outlines, bright even daylight, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Monumental high-contrast graphics with broad beveled planes, a warm flare-like accent, and deep shadow.',
+        'Painted anime key art: broad beveled planes laid in with a flat digital brush, silhouettes backlit by an ember-red rim, and deep empty blacks.',
       subject_treatment:
-        'Keep the prompt’s subject and silhouette recognizable. Emphasize its existing planes with bold contour cuts and directional highlights; add no heroic gear or weapon.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Contrast ember red, gold, and pale cream with ink black and charcoal; reserve the hottest values for a few focal edges.',
+        'Ember red, gold and pale cream against ink black and charcoal, with the hottest values reserved for the rim.',
       lighting_and_shadow:
-        'Use hard cel shadows against a sweeping warm highlight, treated as graphic color rather than a required flame or source.',
+        'Strong backlight or underlight rim of ember and gold; the front of forms sits in near-black with bevel-edge highlights.',
       texture_and_material:
-        'Respect the original material while adding clean bevel-like highlights, sparse scuffs, and large smooth color planes.',
+        'Flat-brush painted planes with visible stroke edges, sparse scuffs, and soft drifting ember specks.',
       camera_and_composition:
-        "Honor the requested framing and scale. Use broad value masses and open darks to carry presence without changing the subject's pose or viewpoint.",
-      atmosphere_and_mood:
-        'Create intensity and resolve through scale contrast, warm light, and deliberate empty darks, without a sacrifice narrative.',
+        'Keep the requested view; place the horizon low so the silhouette stands monumental against a glowing sky or void.',
+      atmosphere_and_mood: 'Solemn resolve and sacrifice, heroic stillness before the end.',
       rendering_and_quality:
-        'Keep outlines crisp, shadows decisive, highlight shapes broad and clean, and glow tightly controlled.',
+        'Painterly flat-brush key art with a crisp silhouette, rim glow and restrained bloom; not cel line art.',
       key_features:
-        'Broad beveled planes; warm flare highlights; ember-red and gold accents; deep cel shadows.',
+        'backlit ember rim; broad flat-brush beveled planes; near-black silhouettes; drifting ember specks; low monumental horizon',
       creative_brief:
-        'Preserve the specified subject, action, and composition. Apply bold beveled highlights, ember-gold accents, and deep shadows; add no weapon, flames, or heroic pose.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Monumental Ignition Sacrifice as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -790,28 +775,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bubblegum Cosmic Overdrive',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, cockpit, weapon, mecha battle, readable UI, toy-logo composition, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, muted gray palette, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, cockpit, weapon, mecha battle, readable UI, toy-logo composition, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Elastic pop rendering with rounded graphic contours, joyful saturated color, sweeping flare-like shapes, and lively shifts in scale and rhythm.',
+        '1990s magical space cel: thick rounded ink lines, rainbow airbrushed gradients, holographic sparkle overlays, and bursting star-shaped twinkles.',
       subject_treatment:
-        'Keep the requested subject recognizable. Soften selected contours and apply rounded color shapes to existing forms without turning them into toys or characters.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Use vivid bubblegum pink, cyan, lemon yellow, and violet against clear dark anchors; keep color joyful and strongly separated.',
+        'Bubblegum pink, cyan, lemon yellow and violet against deep indigo space, with gradients running in rainbow bands.',
       lighting_and_shadow:
-        'Set soft luminous gradients against crisp cel shadows, with broad bright accents that follow existing forms rather than adding cosmic effects.',
+        'Soft glowing gradients with clean cel shadows, and four- and eight-point twinkles on every bright edge.',
       texture_and_material:
-        'Preserve the subject’s material beneath smooth gradients, clean highlight bands, and a few playful grain or sparkle-like marks.',
+        'Holographic foil sparkle overlay, smooth airbrush, flat cel paint and faint 1990s cel grain.',
       camera_and_composition:
-        'Honor the requested view. Use energetic curves and varied color scale inside the existing composition without adding planets or burst shapes.',
-      atmosphere_and_mood:
-        'Keep the mood buoyant, expansive, and sincere through saturated color, elastic line rhythm, and open spacing.',
+        'Keep the requested view; scatter twinkles and curving rainbow ribbons around the subject.',
+      atmosphere_and_mood: 'Buoyant, sincere and wildly optimistic, joy at escape velocity.',
       rendering_and_quality:
-        'Combine smooth gradients, firm outlines, clear shadow blocks, and controlled bloom; prevent color from obscuring the silhouette.',
+        'Thick rounded outlines, rainbow gradients, holographic sparkle and crisp twinkles around a bright but readable silhouette.',
       key_features:
-        'Elastic rounded contours; joyful saturated color; smooth flare-like gradients; lively scale rhythm.',
+        'thick rounded ink lines; rainbow airbrush gradients; holographic foil sparkle; eight-point twinkles; indigo space backdrop',
       creative_brief:
-        'Preserve the prompt’s subject and setting. Apply rounded contours, joyful pop colors, and smooth luminous gradients; add no toy, planet, or cosmic scene.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bubblegum Cosmic Overdrive as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -819,28 +803,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rust-Wire Descent',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, clean flat vector color, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'A wiry, weathered line style using thin tangled contours, rust-like stains, descending diagonals, and cool signal glints against industrial darks.',
+        'Technical-pen tangle drawing: dense 0.1 mm fine-liner cable lines layered over rust-stained watercolor blooms, with small cold cyan glints.',
       subject_treatment:
-        'Preserve the requested subject and pose. Thread fine broken lines along its existing edges and use sparse scratch marks; add no cables, harness, or person.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Pair oxidized orange and brown with slate, black, and cold cyan; keep the brightest accents small and isolated.',
+        'Oxidized orange and brown watercolor blooms over slate and black ink, with isolated cold cyan glints.',
       lighting_and_shadow:
-        'Use firm dark shadows, thin cool edge highlights, and muted warm reflections; avoid adding a visible neon source.',
+        'Shadow built from tangled line density; watercolor blooms carry warm reflected light and cyan glints mark wet edges.',
       texture_and_material:
-        'Retain the depicted material with dry scratches, fine wire-like marks, and scattered rust-colored wear as surface treatment only.',
+        'Hairline pen tangles, cauliflower watercolor blooms and backruns, dry scratches and rust speckle.',
       camera_and_composition:
-        'Keep the requested camera. Use slanting line rhythms and uneven detail density within the existing composition; do not imply falling.',
-      atmosphere_and_mood:
-        'Create a tense, worn quiet through brittle lines, downward visual cadence, and subdued color rather than a descent scene.',
+        'Keep the requested view; run line tangles in slanting downward rhythms that thicken toward the bottom of the frame.',
+      atmosphere_and_mood: 'Brittle, tense and worn, the quiet of something slowly giving way.',
       rendering_and_quality:
-        'Balance delicate contour threads with substantial shadow blocks; keep surface grain selective and shapes readable.',
+        'Hairline fine-liner precision against loose rust watercolor, with selective cyan glints and a readable silhouette.',
       key_features:
-        'Wiry broken contours; rust and slate palette; descending line cadence; cold cyan glints.',
+        'dense 0.1 mm fine-liner tangles; rust watercolor blooms and backruns; slate and black ink; cold cyan glints; downward slanting line rhythm',
       creative_brief:
-        'Retain the prompt’s subject, pose, and setting. Apply wiry contours, rust-toned surface marks, and cold glints; add no cable, harness, falling figure, or industrial scene.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rust-Wire Descent as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -848,28 +831,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Hydraulic Attrition Mass',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, tank, firearm, battlefield, soldier, real military insignia, franchise mech likeness, gore, weapon-first composition, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, clean cel outlines, plastic toy gloss, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, tank, firearm, battlefield, soldier, real military insignia, franchise mech likeness, gore, weapon-first composition, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Weighty industrial rendering defined by broad overlapping planes, load-bearing contours, chipped edges, and dense shadow blocks; imply strain through surface wear rather than new parts.',
+        'Model-kit box-art painting: opaque gouache blocks, chipped-paint highlights, oil-stain washes and pin-washed panel lines on heavy load-bearing forms.',
       subject_treatment:
-        'Preserve the subject’s identity and silhouette. Give existing forms a heavier read with thick contour accents and layered value planes; do not attach armor or pistons.',
+        'Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.',
       color_and_tone:
-        'Build from iron gray, dirty olive, muted clay, and rust, with small pale highlights. Keep the palette grounded and low in saturation.',
+        'Iron gray, dirty olive, muted clay and rust, with pale chipped-metal highlights and dark oil-brown washes.',
       lighting_and_shadow:
-        'Use hard, deep shadows under overlaps and broad worn highlights across exposed surfaces; let weight read through value grouping.',
+        'Strong raking daylight from one side, deep shadows under overlaps, and dry-brushed highlights on every exposed edge.',
       texture_and_material:
-        'Retain the depicted material while adding sparse chips, rubbed edges, grime streaks, and coarse painted wear in controlled patches.',
+        'Gouache brush marks, sponge chipping, streaked oil and grime washes, and dark pin-wash in seams.',
       camera_and_composition:
-        'Keep the requested angle and scale. Group marks into compact masses and let weight settle toward the lower part of the existing frame.',
+        'Keep the requested view; weight the mass toward the bottom of the frame with a strong three-quarter presence.',
       atmosphere_and_mood:
-        'Convey endurance and strain through dense shadows, worn edges, and restrained color, without staging a battlefield or repair scene.',
+        'Weighty endurance and strain, the grandeur of heavy machinery doing hard work.',
       rendering_and_quality:
-        'Use decisive cel-shadow blocks, thick-to-thin contours, and purposeful abrasion; preserve enough clean area to keep forms readable.',
+        'Painted illustration finish with opaque gouache, dry-brush edges, pin-wash and chipping; no cel line and no 3D gloss.',
       key_features:
-        'Load-bearing silhouette; broad shadow masses; chipped surface accents; iron, olive, and rust palette.',
+        'opaque gouache box-art painting; sponge chipping; oil-stain streak washes; dark pin-washed seams; raking side light',
       creative_brief:
-        'Preserve the specified subject and framing. Apply heavy contour accents, layered shadows, and restrained worn marks to its existing forms; add no armor, pistons, or battlefield props.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hydraulic Attrition Mass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -3,7 +3,7 @@ id: SP05-225
 packId: pack_05
 name: Scrap Velocity Resilience
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,36 +12,23 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Rough kinetic illustration with dented-edge marks, short spark-like strokes, compact
-    directional forms, and visible hand-worked grit.
-  subject_treatment: >-
-    Retain the requested subject and silhouette. Use broken contours, localized dents, and quick
-    directional hatching on existing forms; add no scrap parts or tools.
-  color_and_tone: >-
-    Combine iron, dusty ochre, rust, and charcoal, with small bright amber accents against muted
-    values.
-  lighting_and_shadow: >-
-    Cut firm shadows beneath edges and use brief warm glints to sharpen movement; do not require
-    sparks or a welding source.
-  texture_and_material: >-
-    Keep the original material readable while layering scuffs, scratches, rubbed paint, and
-    uneven hand-drawn marks in focused areas.
-  camera_and_composition: >-
-    Keep the requested crop. Carry speed with compact diagonals and short repeated strokes
-    inside the existing layout.
-  atmosphere_and_mood: >-
-    Express resilience through rough but controlled mark-making, warm accents, and persistent
-    forward rhythm.
-  rendering_and_quality: >-
-    Mix firm cel shadows with scratchy line texture; maintain a clear contour and avoid uniform
-    distress or visual noise.
-  key_features: >-
-    Dented-edge marks; compact motion strokes; iron and rust palette; hand-worked surface grit.
-  creative_brief: >-
-    Preserve the prompt’s subject and framing. Apply scratched contours, compact directional
-    strokes, and muted iron-and-rust color; add no scrap, tools, or sparks.
+  aesthetic: 'Rough-key action animation drawing: blue construction pencil left under black cleanup line, smear-frame distortions, and painted spark dots on impact.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Iron, dusty ochre, rust and charcoal cel fills with blue pencil showing through and bright amber spark dots.
+  lighting_and_shadow: Firm cel shadows and short warm glints; impact flashes drawn as flat amber shapes with black outlines.
+  texture_and_material: Visible pencil tooth, loose blue construction lines, scribbled hatching and dented-edge contour breaks.
+  camera_and_composition: Keep the requested view; stretch the moving part of the subject into a smear frame along its arc of motion.
+  atmosphere_and_mood: Scrappy, determined and kinetic, a thing held together by will.
+  rendering_and_quality: Keyframe rough energy with blue under-pencil, confident black line, smear distortion and spark dots; not a polished final cel.
+  key_features: blue construction pencil under black line; smear-frame distortion; amber spark dots; iron and rust cel fills; scribbled hatching
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scrap Velocity Resilience as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - polished final render
   - realistic
   - 3d render
   - photo
@@ -71,15 +58,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-225.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, robot duel, weapon arm, cockpit UI,
-    scrapyard corridor, readable decals, gore, plastic 3d robot render, cockpit source-frame look,
-    readable UI panel, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, polished final render, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, robot duel, weapon arm, cockpit UI, scrapyard corridor, readable decals, gore, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

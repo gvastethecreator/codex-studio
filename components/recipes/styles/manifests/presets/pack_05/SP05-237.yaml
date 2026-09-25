@@ -3,7 +3,7 @@ id: SP05-237
 packId: pack_05
 name: Monumental Ignition Sacrifice
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,35 +12,24 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Monumental high-contrast graphics with broad beveled planes, a warm flare-like accent, and deep shadow.
-  subject_treatment: >-
-    Keep the prompt’s subject and silhouette recognizable. Emphasize its existing planes with
-    bold contour cuts and directional highlights; add no heroic gear or weapon.
-  color_and_tone: >-
-    Contrast ember red, gold, and pale cream with ink black and charcoal; reserve the hottest
-    values for a few focal edges.
-  lighting_and_shadow: >-
-    Use hard cel shadows against a sweeping warm highlight, treated as graphic color rather than
-    a required flame or source.
-  texture_and_material: >-
-    Respect the original material while adding clean bevel-like highlights, sparse scuffs, and
-    large smooth color planes.
-  camera_and_composition: >-
-    Honor the requested framing and scale. Use broad value masses and open darks to carry
-    presence without changing the subject's pose or viewpoint.
-  atmosphere_and_mood: >-
-    Create intensity and resolve through scale contrast, warm light, and deliberate empty darks,
-    without a sacrifice narrative.
-  rendering_and_quality: >-
-    Keep outlines crisp, shadows decisive, highlight shapes broad and clean, and glow tightly
-    controlled.
-  key_features: >-
-    Broad beveled planes; warm flare highlights; ember-red and gold accents; deep cel shadows.
-  creative_brief: >-
-    Preserve the specified subject, action, and composition. Apply bold beveled highlights,
-    ember-gold accents, and deep shadows; add no weapon, flames, or heroic pose.
+  aesthetic: 'Painted anime key art: broad beveled planes laid in with a flat digital brush, silhouettes backlit by an ember-red rim, and deep empty blacks.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Ember red, gold and pale cream against ink black and charcoal, with the hottest values reserved for the rim.
+  lighting_and_shadow: Strong backlight or underlight rim of ember and gold; the front of forms sits in near-black with bevel-edge highlights.
+  texture_and_material: Flat-brush painted planes with visible stroke edges, sparse scuffs, and soft drifting ember specks.
+  camera_and_composition: Keep the requested view; place the horizon low so the silhouette stands monumental against a glowing sky or void.
+  atmosphere_and_mood: Solemn resolve and sacrifice, heroic stillness before the end.
+  rendering_and_quality: Painterly flat-brush key art with a crisp silhouette, rim glow and restrained bloom; not cel line art.
+  key_features: backlit ember rim; broad flat-brush beveled planes; near-black silhouettes; drifting ember specks; low monumental horizon
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Monumental Ignition Sacrifice as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - thin cel outlines
+  - bright even daylight
   - realistic
   - 3d render
   - photo
@@ -63,14 +52,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-237.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI
-    panel, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, thin cel outlines, bright even daylight, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

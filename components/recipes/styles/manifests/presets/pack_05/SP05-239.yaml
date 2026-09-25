@@ -3,7 +3,7 @@ id: SP05-239
 packId: pack_05
 name: Bubblegum Cosmic Overdrive
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,37 +12,23 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Elastic pop rendering with rounded graphic contours, joyful saturated color, sweeping
-    flare-like shapes, and lively shifts in scale and rhythm.
-  subject_treatment: >-
-    Keep the requested subject recognizable. Soften selected contours and apply rounded color
-    shapes to existing forms without turning them into toys or characters.
-  color_and_tone: >-
-    Use vivid bubblegum pink, cyan, lemon yellow, and violet against clear dark anchors; keep
-    color joyful and strongly separated.
-  lighting_and_shadow: >-
-    Set soft luminous gradients against crisp cel shadows, with broad bright accents that follow
-    existing forms rather than adding cosmic effects.
-  texture_and_material: >-
-    Preserve the subject’s material beneath smooth gradients, clean highlight bands, and a few
-    playful grain or sparkle-like marks.
-  camera_and_composition: >-
-    Honor the requested view. Use energetic curves and varied color scale inside the existing
-    composition without adding planets or burst shapes.
-  atmosphere_and_mood: >-
-    Keep the mood buoyant, expansive, and sincere through saturated color, elastic line rhythm,
-    and open spacing.
-  rendering_and_quality: >-
-    Combine smooth gradients, firm outlines, clear shadow blocks, and controlled bloom; prevent
-    color from obscuring the silhouette.
-  key_features: >-
-    Elastic rounded contours; joyful saturated color; smooth flare-like gradients; lively scale
-    rhythm.
-  creative_brief: >-
-    Preserve the prompt’s subject and setting. Apply rounded contours, joyful pop colors, and
-    smooth luminous gradients; add no toy, planet, or cosmic scene.
+  aesthetic: '1990s magical space cel: thick rounded ink lines, rainbow airbrushed gradients, holographic sparkle overlays, and bursting star-shaped twinkles.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Bubblegum pink, cyan, lemon yellow and violet against deep indigo space, with gradients running in rainbow bands.
+  lighting_and_shadow: Soft glowing gradients with clean cel shadows, and four- and eight-point twinkles on every bright edge.
+  texture_and_material: Holographic foil sparkle overlay, smooth airbrush, flat cel paint and faint 1990s cel grain.
+  camera_and_composition: Keep the requested view; scatter twinkles and curving rainbow ribbons around the subject.
+  atmosphere_and_mood: Buoyant, sincere and wildly optimistic, joy at escape velocity.
+  rendering_and_quality: Thick rounded outlines, rainbow gradients, holographic sparkle and crisp twinkles around a bright but readable silhouette.
+  key_features: thick rounded ink lines; rainbow airbrush gradients; holographic foil sparkle; eight-point twinkles; indigo space backdrop
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bubblegum Cosmic Overdrive as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - muted gray palette
   - realistic
   - 3d render
   - photo
@@ -71,15 +57,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-239.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, cockpit, weapon, mecha battle,
-    readable UI, toy-logo composition, plastic 3d robot render, cockpit source-frame look, readable
-    UI panel, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, muted gray palette, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, cockpit, weapon, mecha battle, readable UI, toy-logo composition, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -3,7 +3,7 @@ id: SP05-236
 packId: pack_05
 name: Compact Attrition Hardware
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,35 +12,25 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Compact, blunt industrial drawing with dense silhouette masses, short functional seam lines,
-    mud-rust wear, and pragmatic low-saturation color.
-  subject_treatment: >-
-    Keep the requested subject’s identity and proportions. Make its existing forms read with
-    blunt contour weight and compact shadows; do not add chassis or armor.
-  color_and_tone: >-
-    Use iron gray, dark olive, earth brown, and oxidized orange, with small pale highlights and
-    little saturation.
-  lighting_and_shadow: >-
-    Group forms into firm, close-set cel shadows with minimal rim light; let wear and structure
-    read without dramatic effects.
-  texture_and_material: >-
-    Preserve each material while adding compressed scuffs, rubbed edges, and restrained mud-like
-    marks only where appropriate.
-  camera_and_composition: >-
-    Honor the requested crop and scale. Keep detail dense near the existing focal form and avoid
-    enlarging or compressing the subject.
-  atmosphere_and_mood: >-
-    Convey practical endurance with close value grouping, muted color, and minimal flourish.
-  rendering_and_quality: >-
-    Use sturdy contours, compact shadow planes, subtle surface wear, and clear separation
-    despite dense detail.
-  key_features: >-
-    Blunt compact contours; dense shadow groups; mud-rust wear; low-saturation utility palette.
-  creative_brief: >-
-    Preserve the requested subject and scale. Apply blunt contour weight, close-set shadows, and
-    muted worn color; add no chassis, armor, or survival equipment.
+  aesthetic: 'Early-1980s real-robot TV cel: thick uniform ink line, flat military paint colors, one hard black shadow fill, and dirt dabbed onto the cel with a sponge.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Dark olive, iron gray, earth brown and oxidized orange at low saturation, with every shadow filled solid near-black.
+  lighting_and_shadow: Single hard overhead key; shadows are solid black shapes with no midtone, plus one thin pale highlight line on top edges.
+  texture_and_material: Sponge-dabbed mud and rust speckle over flat cel color, scratched paint chips, and grainy 16 mm film transfer.
+  camera_and_composition: Keep the requested view; crop tight and compact so the subject fills the frame with squat, heavy mass.
+  atmosphere_and_mood: Grim, practical and stubborn, machines as disposable tools of a long campaign.
+  rendering_and_quality: Uniform-weight ink line, flat paint with black shadow fills, sponge grime and soft film grain; no gloss or bloom.
+  key_features: uniform thick ink line; solid black shadow fills; sponge-dabbed mud and rust; olive and iron palette; 16 mm film grain
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Compact Attrition Hardware as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - glossy chrome
+  - neon bloom
+  - clean showroom paint
   - realistic
   - 3d render
   - photo
@@ -70,16 +60,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-236.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, gun near-plane, tank copy, soldier
-    portrait, battlefield gore, readable markings, garage corridor lock, plastic 3d robot render,
-    cockpit source-frame look, readable UI panel, fixed canon character, title scene replication,
-    required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy
-    noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, glossy chrome, neon bloom, clean showroom paint, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, gun near-plane, tank copy, soldier portrait, battlefield gore, readable markings, garage corridor lock, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

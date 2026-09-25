@@ -3,7 +3,7 @@ id: SP05-059
 packId: pack_05
 name: Tactical Network Cognition
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,39 +12,25 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Precise layered illustration with translucent planes, modular line divisions, and
-    optical-glass clarity; data-like geometry remains abstract and never becomes readable
-    interface content.
-  subject_treatment: >-
-    Preserve the subject and its proportions. Clarify its existing structure with fine layered
-    contours and selected transparent-looking accents, not agent silhouettes or devices.
-  color_and_tone: >-
-    Use cool teal, glass green, slate, and silver-white, with modest contrast and carefully
-    separated transparent-looking color layers.
-  lighting_and_shadow: >-
-    Pair clear cel-shadow shapes with thin refracted highlights along existing edges; keep the
-    light even and technical.
-  texture_and_material: >-
-    Retain the depicted materials, adding delicate double lines, polished edge glints, and
-    sparse etched geometry without covering the surface.
-  camera_and_composition: >-
-    Respect the specified view. Repeat modular alignments within the composition and keep
-    overlays subordinate to the subject.
-  atmosphere_and_mood: >-
-    Create calm analytical tension with ordered spacing, fine detail, and restrained tonal
-    shifts; introduce no investigation scene.
-  rendering_and_quality: >-
-    Use crisp line weights, clean translucent color fields, stable shadow bands, and sparse
-    nonverbal marks; omit legible text.
-  key_features: >-
-    Translucent color layers; modular contours; optical edge glints; calm teal and glass-green
-    palette.
-  creative_brief: >-
-    Keep the subject, action, and setting specified by the prompt. Apply translucent color
-    layers, modular contours, and optical edge glints; add no agent, device, or readable
-    interface.
+  aesthetic: 'Layered-transparency cyber anime: semi-transparent cel planes stacked in screen blend, refraction ripples where layers overlap, and thin teal line contours.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Teal, glass green, slate and silver-white; overlaps brighten toward pale aqua and never form readable content.
+  lighting_and_shadow: Even cool technical light with thin refracted highlights on edges and soft cel shadows seen through translucent layers.
+  texture_and_material: Glassy translucent planes, faint refraction warping at overlaps, and an optical-camouflage shimmer outlining partly invisible forms.
+  camera_and_composition: Keep the requested view; offset two or three translucent echoes of the subject slightly in depth behind it.
+  atmosphere_and_mood: Calm analytical focus, a mind reading the world in layers.
+  rendering_and_quality: Crisp teal line, clean translucent fills, refraction ripples and sparse abstract hexagon marks; no legible text.
+  key_features: stacked translucent cel planes; refraction ripples at overlaps; optical-camouflage shimmer; teal and glass-green palette; offset depth echoes
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tactical Network Cognition as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - readable code
+  - opaque heavy paint
+  - photoreal office
   - realistic
   - 3d render
   - photo
@@ -75,16 +61,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-059.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, readable UI text, brand logo, celebrity spy likeness, real
-    institution badge, gun, camera prop, surveillance screen wall, franchise cyber-police device,
-    plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character,
-    title scene replication, required source-frame look, cosplay, generic anime filter,
-    prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, readable code, opaque heavy paint, photoreal office, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, readable UI text, brand logo, celebrity spy likeness, real institution badge, gun, camera prop, surveillance screen wall, franchise cyber-police device, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

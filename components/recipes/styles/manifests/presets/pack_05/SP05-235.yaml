@@ -3,7 +3,7 @@ id: SP05-235
 packId: pack_05
 name: Pop-Cyber Simulation Gloss
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,36 +12,24 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Glossy pop-cyber illustration combining clean vector contours, bright synthetic color,
-    smooth highlight bands, and tiny controlled pixel-like interruptions.
-  subject_treatment: >-
-    Preserve the requested subject and proportions. Use smooth, clean contour lines and glossy
-    color accents on its existing forms, without adding avatars or devices.
-  color_and_tone: >-
-    Use vivid pink, cyan, violet, and a small lime accent against clean dark or pale neutrals;
-    keep colors distinct and buoyant.
-  lighting_and_shadow: >-
-    Pair smooth highlight bands with sharply separated cel shadows; keep shine graphic rather
-    than photoreal.
-  texture_and_material: >-
-    Maintain the depicted material beneath polished edge glints, clean gradients, and occasional
-    tiny digital breaks.
-  camera_and_composition: >-
-    Keep the requested view. Use lively color offsets and crisp graphic edges within the
-    existing framing, without adding a simulated screen.
-  atmosphere_and_mood: >-
-    Make the image feel playful and synthetic through buoyant color, clean spacing, and a few
-    controlled glitches.
-  rendering_and_quality: >-
-    Use vector-clean outlines, smooth color transitions, precise shadow bands, and sparse pixel
-    accents; avoid noisy effects.
-  key_features: >-
-    Glossy vector contours; vivid pop colors; smooth highlights; tiny pixel-like breaks.
-  creative_brief: >-
-    Retain the prompt’s subject and setting. Apply glossy vector edges, vivid pop color, and a
-    few pixel-like breaks; add no avatar, device, or screen.
+  aesthetic: 'Y2K pop-cyber gloss: candy-jelly highlights, bubble gradients, chrome-pink rims, and edges dissolving into ordered pixel dither.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Vivid pink, cyan, violet and a small lime accent on white or deep indigo, with glossy bright gradients.
+  lighting_and_shadow: Big soft jelly specular blobs and a white window-shaped highlight on curved surfaces, with cel shadows in clean violet.
+  texture_and_material: Translucent gel-plastic surfaces, bubble gradients, and ordered four-by-four pixel dither on edges and falloffs.
+  camera_and_composition: Keep the requested view; float small glossy bubble shapes and dither patches around the subject.
+  atmosphere_and_mood: Playful, synthetic and giddy, a toy-bright simulation of summer.
+  rendering_and_quality: Vector-clean outlines, glossy gel highlights and ordered dither transitions; no grime and no photorealism.
+  key_features: candy-jelly gel highlights; bubble gradients; chrome-pink rims; ordered pixel dither; pink, cyan and lime palette
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pop-Cyber Simulation Gloss as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - photoreal car render
+  - showroom 3D product shot
   - realistic
   - 3d render
   - photo
@@ -64,14 +52,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-235.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI
-    panel, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, photoreal car render, showroom 3D product shot, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

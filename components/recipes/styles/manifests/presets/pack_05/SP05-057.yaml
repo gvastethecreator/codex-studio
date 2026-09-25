@@ -3,7 +3,7 @@ id: SP05-057
 packId: pack_05
 name: Sleek Collapse Romance
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,37 +12,24 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    A refined, wistful style pairing sleek broken contours, delicate curved line accents, and
-    polished highlight bands with softened edges and gentle color transitions.
-  subject_treatment: >-
-    Preserve the subject’s identity and proportions. Let its existing contours alternate between
-    clean, sleek edges and a few delicate, interrupted lines.
-  color_and_tone: >-
-    Blend muted rose, apricot, pale gold, and blue-gray, keeping dark values soft and the
-    warm-cool balance delicate.
-  lighting_and_shadow: >-
-    Use soft-edged cel shadows with thin sunset-like highlights across existing forms; do not
-    introduce ruins or a literal sunset.
-  texture_and_material: >-
-    Retain the requested materials. Suggest polish with restrained luminous streaks, fine
-    surface lines, and gentle tonal transitions.
-  camera_and_composition: >-
-    Keep the prompt’s camera and layout. Use graceful curves and a slight offset in detail
-    density to create a tender, unsettled rhythm.
-  atmosphere_and_mood: >-
-    Express melancholy through softened contrast, quiet spacing, and delicate interruptions,
-    without adding flowers, alarms, or a romance scene.
-  rendering_and_quality: >-
-    Combine precise silhouettes with soft shadow edges, clean gradients, and sparse fine detail;
-    avoid glossy over-rendering.
-  key_features: >-
-    Sleek interrupted contours; soft cel shadows; rose-apricot and blue-gray palette; delicate
-    polished glints.
-  creative_brief: >-
-    Preserve the specified subject and setting. Apply refined contours, gentle rose-and-blue
-    transitions, and sparse polished highlights; add no suit, ruins, flowers, or alarm devices.
+  aesthetic: 'Soft-focus romantic digital anime: diffusion-filter bloom around every highlight, hexagonal lens-flare ghosts, and cel shading with gradient blush tones at shadow edges.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Muted rose, apricot, pale gold and dusty blue-gray; shadows tinted lilac rather than dark, with lifted, gentle contrast.
+  lighting_and_shadow: Low golden backlight with wide diffusion halos, flare ghosts crossing the frame, and soft-edged cel shadows fading through a warm blush band.
+  texture_and_material: Smooth digital paint with fine sparkle dust in the air and a light glow haze over the whole image.
+  camera_and_composition: Keep the requested view; let flare ghosts and bloom drift diagonally across the frame toward the subject.
+  atmosphere_and_mood: Wistful, tender and bittersweet, beauty glimpsed while things fall apart.
+  rendering_and_quality: Clean silhouettes softened by diffusion bloom, blush-gradient shadow edges, sparkle dust and flare ghosts; never glossy or harsh.
+  key_features: diffusion-filter bloom; hexagonal lens-flare ghosts; blush-gradient shadow edges; rose-apricot and blue-gray palette; floating sparkle dust
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sleek Collapse Romance as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - hard black shadows
+  - piloting couple pose copy
   - realistic
   - 3d render
   - photo
@@ -54,7 +41,6 @@ avoidRules:
   - jpeg artifacts
   - watermark
   - signature
-  - Darling-like couple pose
   - sexualized bodysuit
   - exposed skin focus
   - cockpit romance scene
@@ -72,16 +58,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-057.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, Darling-like couple pose, sexualized bodysuit, exposed skin
-    focus, cockpit romance scene, franchise plugsuit, readable UI, ruined city cliche, plastic 3d
-    robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene
-    replication, required source-frame look, cosplay, generic anime filter, prompt-required card,
-    logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, hard black shadows, piloting couple pose copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, sexualized bodysuit, exposed skin focus, cockpit romance scene, franchise plugsuit, readable UI, ruined city cliche, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

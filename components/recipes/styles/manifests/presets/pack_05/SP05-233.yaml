@@ -3,7 +3,7 @@ id: SP05-233
 packId: pack_05
 name: Vacuum-Fortress Survival Discipline
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,37 +12,24 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Disciplined survival graphics with sealed angular divisions, compact high-contrast shapes,
-    exact seam lines, and restrained caution-color accents.
-  subject_treatment: >-
-    Preserve the requested form and identity. Emphasize its existing structural divisions with
-    thick clean outlines and compact shadow planes; add no suit or equipment.
-  color_and_tone: >-
-    Pair cold white, steel, charcoal, and deep blue with a small amber caution accent; keep the
-    palette practical and controlled.
-  lighting_and_shadow: >-
-    Use crisp cel-shadow bands and hard edge highlights to separate surfaces; avoid suggesting
-    vacuum lighting or a sealed chamber.
-  texture_and_material: >-
-    Keep depicted materials recognizable while adding fine scuffs, tight seam marks, and limited
-    grain in protected areas.
-  camera_and_composition: >-
-    Honor the requested camera. Group existing contours compactly and maintain clear separation
-    between forms without forcing a survival layout.
-  atmosphere_and_mood: >-
-    Suggest disciplined endurance through compact values, exact linework, and restrained accents
-    rather than peril or confinement.
-  rendering_and_quality: >-
-    Use stable outlines, hard shadow separation, minimal glow, and carefully rationed surface
-    detail.
-  key_features: >-
-    Sealed angular divisions; compact value groups; cool steel palette; restrained amber
-    signals.
-  creative_brief: >-
-    Preserve the requested subject and composition. Apply compact angular contours, crisp shadow
-    bands, and restrained caution accents; add no spacesuit, equipment, or chamber.
+  aesthetic: 'Hard-vacuum anime lighting: one unfiltered point-source key, pitch-black shadows with zero fill, razor terminator lines, and thick clean outlines.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Cold white, steel and charcoal with pure black shadows and a small amber caution accent.
+  lighting_and_shadow: 'Single harsh sun with no atmosphere: lit planes blaze white, turned planes drop straight to black, and nothing bounces.'
+  texture_and_material: Tight seam marks, micro-scuffs and grit on lit faces only; shadows carry no detail at all.
+  camera_and_composition: Keep the requested view; let large black shadow shapes cut the frame into sharp lit and unlit zones.
+  atmosphere_and_mood: Disciplined endurance, silent and exacting, where one mistake is final.
+  rendering_and_quality: Thick stable outlines, binary lit-or-black shading, razor terminator edges and minimal glow.
+  key_features: single unfiltered point-source key; zero-fill pitch-black shadows; razor terminator line; cold white and steel palette; amber caution accent
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vacuum-Fortress Survival Discipline as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - soft ambient fill
+  - atmospheric haze
   - realistic
   - 3d render
   - photo
@@ -65,14 +52,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-233.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI
-    panel, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, soft ambient fill, atmospheric haze, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

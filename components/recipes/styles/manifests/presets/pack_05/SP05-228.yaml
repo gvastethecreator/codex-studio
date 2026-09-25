@@ -3,7 +3,7 @@ id: SP05-228
 packId: pack_05
 name: White Machine Elegy
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,37 +12,25 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Quiet pale rendering with worn enamel-like highlights, dust-softened edges, delicate
-    synthetic line rhythms, and generous white space.
-  subject_treatment: >-
-    Keep the requested subject recognizable. Draw fine, graceful contours and a few carefully
-    worn edges on its existing forms; add no robot or machine fragments.
-  color_and_tone: >-
-    Stay mostly in bone, soft white, silver, and pale blue-gray, reserving darker values for
-    essential contour and structure.
-  lighting_and_shadow: >-
-    Use soft, cool cel shadows and diffuse white highlights, with limited contrast and no
-    visible light source.
-  texture_and_material: >-
-    Preserve material identity while suggesting enamel through smooth highlight bands, faint
-    dust grain, and small worn flecks.
-  camera_and_composition: >-
-    Honor the given framing. Let spare negative space and quiet line spacing carry the
-    composition without shrinking the subject.
-  atmosphere_and_mood: >-
-    Build elegiac calm through pale values, delicate marks, and stillness, without adding a
-    lonely landscape or character.
-  rendering_and_quality: >-
-    Keep outlines fine but stable, shadow edges soft, whites clean, and texture sparse enough to
-    retain clarity.
-  key_features: >-
-    Pale enamel-like highlights; dust-softened detail; fine contours; quiet white and blue-gray
-    palette.
-  creative_brief: >-
-    Preserve the specified subject and composition. Apply pale tonal bands, delicate contours,
-    and faint worn texture; add no robot, landscape, or isolated character.
+  aesthetic: 'Bleached pastel anime illustration: soft sepia-gray colored-pencil line instead of ink, chalk-pale cel fills, and visible paper grain multiplied over everything.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Bone, chalk white, faded silver and pale blue-gray; the darkest value is a warm mid-gray, so the image stays high-key.
+  lighting_and_shadow: Diffuse overcast glow with soft single-step pale blue shadows and no visible light source; edges dissolve into white.
+  texture_and_material: Cold-press paper tooth, colored-pencil grain inside shadows, and small flaked enamel chips drawn as tiny gray flecks.
+  camera_and_composition: Keep the requested framing; leave generous white margins and let contours fade out toward the edges of the frame.
+  atmosphere_and_mood: Elegiac, hushed and tender, like a memory of a machine slowly fading out.
+  rendering_and_quality: Low-contrast pencil line, pale single-step shadows, paper grain overlay and vignette-to-white edges; no ink blacks.
+  key_features: sepia-gray colored-pencil line; bleached pastel fills; paper grain overlay; flaked enamel chips; fade-to-white edges
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies White Machine Elegy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - deep black shadows
+  - saturated neon
+  - heavy ink outlines
   - realistic
   - 3d render
   - photo
@@ -71,15 +59,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-228.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, humanoid robot copy, hangar corridor,
-    weapon, readable serial marks, cockpit UI, plastic 3d robot render, cockpit source-frame look,
-    readable UI panel, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, deep black shadows, saturated neon, heavy ink outlines, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, humanoid robot copy, hangar corridor, weapon, readable serial marks, cockpit UI, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -3,7 +3,7 @@ id: SP05-056
 packId: pack_05
 name: Geometric Ignition Urgency
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,36 +12,25 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Bright vector illustration using flat angular shapes, crisp contour cuts, and
-    forward-leaning color wedges; its heat and optimism are graphic cues, not literal flames.
-  subject_treatment: >-
-    Keep the requested form and identity intact. Simplify its existing edges into clean angular
-    planes and lively directional strokes; add no rescue gear or vehicle parts.
-  color_and_tone: >-
-    Mix warm coral, apricot, and yellow with clean cyan or lavender accents. Keep hues bright
-    but clearly separated.
-  lighting_and_shadow: >-
-    Use flat, hard-edged cel shadows and simple warm highlights; avoid realistic firelight or an
-    implied flame source.
-  texture_and_material: >-
-    Keep the original material legible beneath smooth color blocks, precise edge lines, and a
-    few dry-brush accents.
-  camera_and_composition: >-
-    Respect the requested view. Carry momentum with angled marks and offset color planes inside
-    the existing silhouette and crop.
-  atmosphere_and_mood: >-
-    Make the image feel urgent yet buoyant through quick directional strokes, open color, and
-    uncluttered spacing.
-  rendering_and_quality: >-
-    Favor vector-clean edges, decisive shadow cuts, limited gradients, and readable shapes at a
-    glance.
-  key_features: >-
-    Flat angular vectors; warm pastel-neon accents; forward motion wedges; crisp cel shadows.
-  creative_brief: >-
-    Keep the specified subject, action, and setting. Apply angular color planes, warm bright
-    accents, and quick directional linework; add no flames, rescue machines, or gear.
+  aesthetic: 'Hyper-angular limited-animation cel: thick tapered brush-pen outlines, flat fills with no gradients, and triangular highlight and shadow shapes cut at sharp angles.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Hot coral, apricot and lemon yellow as flat fills against clean cyan and lavender shadow triangles; no blending, every hue separated by an ink line.
+  lighting_and_shadow: One hard warm key rendered as jagged triangular shadow wedges and star-shaped glints on edges; shadows are flat lavender shapes, never soft gradients.
+  texture_and_material: Smooth untextured cel paint with a few dry-brush speed flecks along outlines; surfaces read through shadow shape rather than surface detail.
+  camera_and_composition: 'Keep the requested view but push its perspective: foreshortened near forms, converging diagonals, and solid color speed wedges behind the main silhouette.'
+  atmosphere_and_mood: Brash, urgent and optimistic, like a shout drawn in straight lines and sharp corners.
+  rendering_and_quality: Flat two-tone cel with brush-pen line weight swelling at corners, crisp triangle glints, and no airbrush or 3D shading.
+  key_features: thick tapered brush-pen outlines; triangular shadow and highlight wedges; flat coral, yellow and cyan fills; star-shaped glints; forced foreshortening with speed wedges
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Geometric Ignition Urgency as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - soft gradient shading
+  - literal flames
+  - drill-faced super robot copy
   - realistic
   - 3d render
   - photo
@@ -53,7 +42,6 @@ avoidRules:
   - jpeg artifacts
   - watermark
   - signature
-  - Gurren-like drill face
   - firefighting disaster scene
   - real emergency logo
   - burning people
@@ -71,15 +59,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-056.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, Gurren-like drill face, firefighting disaster scene, real
-    emergency logo, burning people, gore, weapon, franchise robot, plastic 3d robot render, cockpit
-    source-frame look, readable UI panel, fixed canon character, title scene replication, required
-    source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, soft gradient shading, literal flames, drill-faced super robot copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, firefighting disaster scene, real emergency logo, burning people, gore, weapon, franchise robot, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -3,7 +3,7 @@ id: SP05-060
 packId: pack_05
 name: Orbital Rivalry Symmetry
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,37 +12,23 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Elegant crystalline rendering defined by precise facet seams, long orbital arcs, and
-    balanced counter-direction; tension comes from geometry, not a required pair of subjects.
-  subject_treatment: >-
-    Keep the requested subject’s identity and proportions. Trace its existing planes with crisp
-    facet lines and fine curved accents without multiplying or redesigning it.
-  color_and_tone: >-
-    Set deep blue and violet against glacial white, with a small warm gold signal; preserve
-    clean value separation between facets.
-  lighting_and_shadow: >-
-    Use hard-edged cel shadows with cool rim glints and a few bright facet reflections; avoid
-    requiring a spacecraft or light source.
-  texture_and_material: >-
-    Keep each material recognizable while adding crystalline line breaks, polished highlights,
-    and smooth, controlled gradients.
-  camera_and_composition: >-
-    Honor the requested view. Balance visual weight with opposing diagonals and spare arcs,
-    without forcing symmetry or multiple subjects.
-  atmosphere_and_mood: >-
-    Suggest strategic tension through poised counter-rhythms, cool light, and careful spacing
-    rather than combat or rivalry staging.
-  rendering_and_quality: >-
-    Use fine accurate seams, clean facet color blocks, restrained glow, and crisp silhouette
-    edges.
-  key_features: >-
-    Crystalline seam lines; orbital arcs; blue-violet and glacial-white contrast; balanced
-    counter-motion.
-  creative_brief: >-
-    Preserve the specified subject and framing. Apply crystalline seams, spare orbital arcs, and
-    cool facet shading; do not add a second subject, craft, or battle.
+  aesthetic: 'Crystalline facet-highlight anime: specular highlights cut as sharp polygon shards, fine seam lines, and long thin orbital arc strokes balancing the frame.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Deep blue and violet against glacial white, with a tiny warm gold signal; each facet is a separate clean tone.
+  lighting_and_shadow: Hard cold key producing polygonal white specular shards on edges and hard violet cel shadows, with one gold glint as counterweight.
+  texture_and_material: Polished mirror surfaces broken into crystal facets, with smooth gradients inside each facet.
+  camera_and_composition: Keep the requested view; counterbalance the subject with opposing diagonal arcs so the frame feels mirrored without duplicating the subject.
+  atmosphere_and_mood: Cold strategic tension, poised and elegant, like a move not yet played.
+  rendering_and_quality: Sharp polygon specular shards, fine seams, clean facet color blocks and thin arcs, with restrained glow.
+  key_features: polygon-shard specular highlights; blue-violet and glacial white palette; opposing orbital arcs; fine seam lines; single gold counterweight glint
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Orbital Rivalry Symmetry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - busy clutter
   - realistic
   - 3d render
   - photo
@@ -72,16 +58,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-060.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named orbital mecha likeness, beam weapon, cockpit portrait,
-    real national flags, space battle gore, readable insignia, weapon-first duel, plastic 3d robot
-    render, cockpit source-frame look, readable UI panel, fixed canon character, title scene
-    replication, required source-frame look, cosplay, generic anime filter, prompt-required card,
-    logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, busy clutter, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named orbital mecha likeness, beam weapon, cockpit portrait, real national flags, space battle gore, readable insignia, weapon-first duel, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

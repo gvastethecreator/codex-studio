@@ -3,7 +3,7 @@ id: SP05-222
 packId: pack_05
 name: Municipal Machine Procedure
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,38 +12,26 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Practical technical illustration with maintenance-like line discipline, utility color
-    blocks, wet-looking reflected accents, and a lightly offbeat rhythm.
-  subject_treatment: >-
-    Preserve the requested subject and proportions. Clarify its existing construction with
-    functional contour lines and small, deliberate detail clusters; add no tools or vehicles.
-  color_and_tone: >-
-    Use utility teal, signal amber, concrete gray, and off-white in clear, economical blocks;
-    keep bright color functional and sparse.
-  lighting_and_shadow: >-
-    Set firm cel-shadow planes against narrow reflected highlights, using wet-looking accents
-    only where they suit the depicted material.
-  texture_and_material: >-
-    Keep each material recognizable; add fine scuffs, tidy seams, and restrained reflective
-    streaks without turning surfaces into pavement or machinery.
-  camera_and_composition: >-
-    Honor the requested camera. Use measured alignment and slight rhythm breaks within the frame
-    to give the drawing practical order and dry wit.
-  atmosphere_and_mood: >-
-    Convey procedural calm with a subtle comic lift through exact spacing and small visual
-    offsets, without introducing civic props.
-  rendering_and_quality: >-
-    Favor clean technical contours, flat shadow groups, concise texture, and legible
-    utility-color separation.
-  key_features: >-
-    Maintenance-grid line discipline; teal and amber utility palette; neat surface marks; subtle
-    offbeat spacing.
-  creative_brief: >-
-    Preserve the specified subject, setting, and framing. Apply practical contour lines,
-    restrained teal-and-amber blocks, and tidy reflected accents; add no tools, vehicles, or
-    street scene.
+  aesthetic: 'Late-1980s police-procedural OVA cel: precise pencil-traced line, two-tone hand-painted cel shading, and poster-color painted backgrounds of ordinary city daylight.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Utility teal, signal amber, concrete gray and off-white in economical flat blocks, the whole palette slightly faded like an aged cel print.
+  lighting_and_shadow: Overcast daylight with a single soft-edged shadow tone per surface and thin white highlight slivers on metal edges; no dramatic contrast.
+  texture_and_material: Poster-color brush texture in backgrounds, clean flat cel paint on figures and machines, and small painted scuffs on machine panels.
+  camera_and_composition: Keep the requested view; favor level eye-height framing with measured documentary spacing and ordinary street detail kept uncluttered.
+  atmosphere_and_mood: Procedural, dry and quietly funny, workday calm where a machine is just another piece of equipment.
+  rendering_and_quality: Hand-painted cel finish with slight registration shift, faint film grain and precise mechanical line; no digital glow or bloom.
+  key_features: pencil-precise 1980s OVA line; two-tone cel shading; poster-color daylight backgrounds; teal and amber utility palette; faint film grain
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Municipal Machine Procedure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - robot battle
+  - neon night
+  - tram
+  - readable police markings
   - realistic
   - 3d render
   - photo
@@ -58,7 +46,6 @@ avoidRules:
   - named franchise likeness
   - cockpit UI
   - drone weapon
-  - robot battle
   - readable paperwork
   - garage corridor lock
   - plastic 3d robot render
@@ -72,15 +59,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-222.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, cockpit UI, drone weapon, robot
-    battle, readable paperwork, garage corridor lock, plastic 3d robot render, cockpit source-frame
-    look, readable UI panel, fixed canon character, title scene replication, required source-frame
-    look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, robot battle, neon night, tram, readable police markings, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, cockpit UI, drone weapon, readable paperwork, garage corridor lock, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

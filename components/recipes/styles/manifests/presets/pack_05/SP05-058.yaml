@@ -3,7 +3,7 @@ id: SP05-058
 packId: pack_05
 name: Remote Command Grief
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,37 +12,25 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    A restrained, distant visual language built from quiet blue-gray planes, fine system-like
-    lines, and generous negative space; emotional weight comes from separation, not added
-    screens.
-  subject_treatment: >-
-    Keep the subject’s identity and requested pose. Reduce interior detail and place precise
-    accents along existing edges, without adding a pilot, drone, or uniform.
-  color_and_tone: >-
-    Use desaturated steel blue, fog gray, muted navy, and a small cold-white highlight. Keep
-    contrast subdued except at the focal outline.
-  lighting_and_shadow: >-
-    Use broad cool shadows, softened distant light, and a few narrow edge glints; avoid visible
-    monitors or control-room lighting.
-  texture_and_material: >-
-    Maintain each material’s character with fine grain, subtle scuffs, and sparse technical line
-    accents rather than tactical equipment.
-  camera_and_composition: >-
-    Preserve the given framing. Let existing forms sit against open space and use thin aligned
-    strokes to suggest distance without changing scale.
-  atmosphere_and_mood: >-
-    Suggest quiet burden and detachment through muted values, restrained detail, and open
-    spacing; do not imply a specific age or story.
-  rendering_and_quality: >-
-    Keep contours calm and exact, shadows broad but soft-edged, and grain faint; prevent the
-    image from collapsing into uniform blue.
-  key_features: >-
-    Muted blue-gray systems; fine aligned lines; distant spacing; restrained edge highlights.
-  creative_brief: >-
-    Retain the requested subject, pose, and setting. Use quiet blue-gray values, fine
-    system-like contours, and open spacing; add no pilot, drone, uniform, or control room.
+  aesthetic: 'Muted cinematic digital anime: thin brown line art, simulated shallow depth of field with round bokeh, and a cold blue-gray grade with lifted blacks.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Desaturated steel blue, fog gray and muted navy with lifted milky blacks and one cold-white highlight on the focal edge.
+  lighting_and_shadow: Soft overcast or distant window light, broad low-contrast shadows, and bokeh discs where small lights fall out of focus.
+  texture_and_material: Fine digital film grain, soft focus falloff, and thin sepia-brown line that dissolves where forms go out of focus.
+  camera_and_composition: Keep the requested view; set a shallow focal plane on the subject and let foreground and background melt into bokeh.
+  atmosphere_and_mood: Quiet grief and detachment, a distance that the lens itself enforces.
+  rendering_and_quality: Thin line, soft cel shading, lens blur and bokeh, lifted-black grade and faint grain; nothing saturated.
+  key_features: shallow depth of field with round bokeh; thin brown line art; lifted-black blue-gray grade; fine film grain; single cold-white highlight
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Remote Command Grief as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - saturated neon
+  - crushed pure blacks
+  - photoreal control room
   - realistic
   - 3d render
   - photo
@@ -72,15 +60,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-058.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, child soldier exploitation, gun, cockpit UI text, real military
-    insignia, drone strike gore, readable maps, franchise uniform, plastic 3d robot render, cockpit
-    source-frame look, readable UI panel, fixed canon character, title scene replication, required
-    source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, saturated neon, crushed pure blacks, photoreal control room, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, child soldier exploitation, gun, cockpit UI text, real military insignia, drone strike gore, readable maps, franchise uniform, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

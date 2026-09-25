@@ -3,7 +3,7 @@ id: SP05-227
 packId: pack_05
 name: Rust-Wire Descent
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,36 +12,23 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    A wiry, weathered line style using thin tangled contours, rust-like stains, descending
-    diagonals, and cool signal glints against industrial darks.
-  subject_treatment: >-
-    Preserve the requested subject and pose. Thread fine broken lines along its existing edges
-    and use sparse scratch marks; add no cables, harness, or person.
-  color_and_tone: >-
-    Pair oxidized orange and brown with slate, black, and cold cyan; keep the brightest accents
-    small and isolated.
-  lighting_and_shadow: >-
-    Use firm dark shadows, thin cool edge highlights, and muted warm reflections; avoid adding a
-    visible neon source.
-  texture_and_material: >-
-    Retain the depicted material with dry scratches, fine wire-like marks, and scattered
-    rust-colored wear as surface treatment only.
-  camera_and_composition: >-
-    Keep the requested camera. Use slanting line rhythms and uneven detail density within the
-    existing composition; do not imply falling.
-  atmosphere_and_mood: >-
-    Create a tense, worn quiet through brittle lines, downward visual cadence, and subdued color
-    rather than a descent scene.
-  rendering_and_quality: >-
-    Balance delicate contour threads with substantial shadow blocks; keep surface grain
-    selective and shapes readable.
-  key_features: >-
-    Wiry broken contours; rust and slate palette; descending line cadence; cold cyan glints.
-  creative_brief: >-
-    Retain the prompt’s subject, pose, and setting. Apply wiry contours, rust-toned surface
-    marks, and cold glints; add no cable, harness, falling figure, or industrial scene.
+  aesthetic: 'Technical-pen tangle drawing: dense 0.1 mm fine-liner cable lines layered over rust-stained watercolor blooms, with small cold cyan glints.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Oxidized orange and brown watercolor blooms over slate and black ink, with isolated cold cyan glints.
+  lighting_and_shadow: Shadow built from tangled line density; watercolor blooms carry warm reflected light and cyan glints mark wet edges.
+  texture_and_material: Hairline pen tangles, cauliflower watercolor blooms and backruns, dry scratches and rust speckle.
+  camera_and_composition: Keep the requested view; run line tangles in slanting downward rhythms that thicken toward the bottom of the frame.
+  atmosphere_and_mood: Brittle, tense and worn, the quiet of something slowly giving way.
+  rendering_and_quality: Hairline fine-liner precision against loose rust watercolor, with selective cyan glints and a readable silhouette.
+  key_features: dense 0.1 mm fine-liner tangles; rust watercolor blooms and backruns; slate and black ink; cold cyan glints; downward slanting line rhythm
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rust-Wire Descent as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - clean flat vector color
   - realistic
   - 3d render
   - photo
@@ -64,14 +51,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-227.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI
-    panel, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, clean flat vector color, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

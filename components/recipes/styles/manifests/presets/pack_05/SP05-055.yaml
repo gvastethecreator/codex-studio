@@ -3,7 +3,7 @@ id: SP05-055
 packId: pack_05
 name: Gothic Tech Existential Dread
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,37 +12,24 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Severe gothic-industrial drawing with nested pointed contours, finely etched seams, and dark
-    shell-like value shapes; its unease comes from line rhythm, not invented architecture.
-  subject_treatment: >-
-    Retain the subject’s recognizable anatomy and outline. Use narrow, nested contours and
-    restrained pointed accents only where its existing forms support them.
-  color_and_tone: >-
-    Favor black, charcoal, bone, and muted violet, with a small blood-red or cold-cyan accent.
-    Keep luminous color scarce.
-  lighting_and_shadow: >-
-    Cut large, hard shadow masses against thin rim highlights; let small accents emerge from
-    darkness without adding lamps or windows.
-  texture_and_material: >-
-    Preserve the subject’s materials while adding etched linework, fine stippling, and selective
-    dry-brush texture to existing surfaces.
-  camera_and_composition: >-
-    Keep the requested camera. Use tall contour rhythms and compressed negative space within the
-    existing frame, without building a hall or tower.
-  atmosphere_and_mood: >-
-    Carry dread through stillness, deep values, and intricate edge detail rather than religious
-    symbols or a gothic setting.
-  rendering_and_quality: >-
-    Balance ornate fine lines with simple cel-shadow masses; keep the silhouette clear and
-    highlights sparse.
-  key_features: >-
-    Pointed nested contours; etched industrial detail; deep black shadow; restrained violet and
-    red accents.
-  creative_brief: >-
-    Preserve the requested subject and setting. Use etched contours, pointed line rhythms, and
-    broad dark shadows on existing forms; add no cathedral, shell, or ritual objects.
+  aesthetic: 'Stark psychological anime framing: flat unshaded silhouettes against one saturated color field, sparse thin line, and pen-hatched interiors held like a still frame.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Black, bone and one flooding field of violet, sickly green or vermilion; everything else stays near-monochrome.
+  lighting_and_shadow: 'Mostly shapeless light: silhouettes cut against the lit color field, a thin bone-white rim line, and hatched gloom inside forms.'
+  texture_and_material: Fine G-pen crosshatching inside dark shapes, flat untextured color fields, and faint cel dust.
+  camera_and_composition: Keep the requested view; push the subject off-center against a large empty field and hold the frame static and tense.
+  atmosphere_and_mood: Existential unease, quiet dread and isolation, a held breath that lasts too long.
+  rendering_and_quality: Flat color fields, silhouette clarity, pen-hatched interiors and a thin bone rim; no ornament and no glow.
+  key_features: flat saturated color field; black silhouettes; G-pen crosshatched interiors; off-center composition with a huge void; thin bone rim line
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gothic Tech Existential Dread as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - purple horned giant copy
+  - ornamental filigree
   - realistic
   - 3d render
   - photo
@@ -54,7 +41,6 @@ avoidRules:
   - jpeg artifacts
   - watermark
   - signature
-  - Eva-like giant
   - crucifix pose
   - exposed organs
   - gore
@@ -72,15 +58,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-055.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, Eva-like giant, crucifix pose, exposed organs, gore, hospital
-    tube body, franchise robot silhouette, religious icon copy, plastic 3d robot render, cockpit
-    source-frame look, readable UI panel, fixed canon character, title scene replication, required
-    source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, purple horned giant copy, ornamental filigree, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, crucifix pose, exposed organs, gore, hospital tube body, franchise robot silhouette, religious icon copy, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

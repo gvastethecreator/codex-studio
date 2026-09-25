@@ -3,7 +3,7 @@ id: SP05-054
 packId: pack_05
 name: Luminous Beam Opera
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,37 +12,24 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Operatic light-and-line illustration with sleek contours, radiant diagonals, and carefully
-    tiered color fields; scale comes from contrast and sweeping direction, not added spacecraft.
-  subject_treatment: >-
-    Keep the requested subject recognizable. Sharpen its existing outline and use a few luminous
-    directional strokes to guide attention without changing its shape.
-  color_and_tone: >-
-    Contrast deep cobalt and ink with ivory, warm gold, and a chosen saturated accent. Separate
-    colors into clear, dramatic bands.
-  lighting_and_shadow: >-
-    Set broad cel shadows against clean, radiant highlight paths. Let light sweep across
-    existing forms without inventing beams, engines, or spotlights.
-  texture_and_material: >-
-    Render the subject’s actual materials with smooth painted gradients, fine metallic glints,
-    and minimal grain; keep every surface distinct.
-  camera_and_composition: >-
-    Honor the requested framing. Arrange highlights and contour rhythm along strong diagonals
-    while preserving the subject’s scale and placement.
-  atmosphere_and_mood: >-
-    Create grandeur through luminous contrast, elegant spacing, and deliberate visual cadence,
-    whether the prompt calls for calm or action.
-  rendering_and_quality: >-
-    Use precise outlines, clean color separation, controlled bloom, and a small number of bold
-    shadow shapes; avoid muddy glow.
-  key_features: >-
-    Radiant diagonal highlights; sleek contour lines; cobalt and ivory contrast; dramatic color
-    hierarchy.
-  creative_brief: >-
-    Keep the specified subject, action, and setting. Apply sleek contours, radiant diagonal
-    accents, and operatic color separation; add no spacecraft, engines, or staged light beams.
+  aesthetic: '1980s space-opera cel photography: backlit-cel light effects where pure light shines through cut lines in black, over airbrushed cobalt gradients and inked mechanical forms.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Deep cobalt, ink black and ivory with warm gold, plus one saturated backlit accent that burns almost white at its core.
+  lighting_and_shadow: Backlit glow lines with halation bleeding into the surrounding cel, hard ink shadows, and airbrushed rim highlights sweeping on the diagonal.
+  texture_and_material: Airbrushed starfield speckle, smooth cel paint, and faint dust and grain from optical camera photography.
+  camera_and_composition: Keep the requested view; arrange glow lines and highlights along strong diagonals that sweep through the subject.
+  atmosphere_and_mood: Operatic grandeur and melancholy, light blazing inside a vast dark.
+  rendering_and_quality: Halation around backlit lines, airbrushed gradients, crisp inked mechanics and light film grain; no modern digital bloom.
+  key_features: backlit-cel glow lines with halation; airbrushed cobalt gradients; ivory and gold accents; diagonal light sweeps; optical film grain
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Luminous Beam Opera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - flat digital glow
+  - V-fin horned faceplate copy
   - realistic
   - 3d render
   - photo
@@ -55,7 +42,6 @@ avoidRules:
   - watermark
   - signature
   - beam saber
-  - Gundam-like faceplate
   - cockpit hero portrait
   - named mecha likeness
   - laser weapon focus
@@ -72,15 +58,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-054.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, beam saber, Gundam-like faceplate, cockpit hero portrait, named
-    mecha likeness, laser weapon focus, readable UI, war gore, plastic 3d robot render, cockpit
-    source-frame look, readable UI panel, fixed canon character, title scene replication, required
-    source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, flat digital glow, V-fin horned faceplate copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, beam saber, cockpit hero portrait, named mecha likeness, laser weapon focus, readable UI, war gore, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

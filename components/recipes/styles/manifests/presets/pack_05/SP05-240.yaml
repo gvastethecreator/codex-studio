@@ -3,7 +3,7 @@ id: SP05-240
 packId: pack_05
 name: Tri-Fire Riot Geometry
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,37 +12,25 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Triadic riot graphics using sharp triangular cuts, three-part color rhythm, angular
-    contours, and tightly controlled high-energy contrast.
-  subject_treatment: >-
-    Keep the requested subject and silhouette. Carry its existing divisions through crisp
-    triangular line accents and directional marks without adding weapons or armor.
-  color_and_tone: >-
-    Organize ember orange, hot yellow, and electric cyan as distinct accents over charcoal and
-    neutral midtones; avoid mixing them into mud.
-  lighting_and_shadow: >-
-    Use hard cel-shadow wedges with clean warm and cool edge highlights; do not create literal
-    fire or energy weapons.
-  texture_and_material: >-
-    Respect the original material; add sharp painted facets, fine scratches, and brief color
-    slashes without changing its substance.
-  camera_and_composition: >-
-    Keep the requested framing. Use triangular visual paths and counter-slanting marks within it
-    rather than forcing a battle pose.
-  atmosphere_and_mood: >-
-    Create rebellious energy through asymmetry, clipped accents, and a quick three-beat rhythm,
-    independent of subject matter.
-  rendering_and_quality: >-
-    Favor crisp edges, strong cel-shadow separation, bounded color fields, and minimal glow for
-    a clean graphic finish.
-  key_features: >-
-    Triadic accent palette; triangular contour cuts; hard shadow wedges; counter-slanting
-    rhythm.
-  creative_brief: >-
-    Retain the specified subject, action, and setting. Use three-part color accents, triangular
-    line cuts, and crisp shadows; add no fire, weapon, armor, or battle pose.
+  aesthetic: 'Lineless triangular color-facet animation: forms built from flat translucent triangles, with shadows cut as complementary-colored shards instead of darker values.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Ember orange, hot yellow and electric cyan over charcoal; overlapping shards produce magenta and lime where they cross.
+  lighting_and_shadow: 'No modeled light: each plane gets a flat warm or cool triangle, highlights are pale yellow shards and shadows are cyan shards.'
+  texture_and_material: Perfectly flat translucent fills with visible overlaps between shards and no outlines, grain or brush marks.
+  camera_and_composition: Keep the requested view; break the background into giant diagonal triangles that counter-slant against the subject.
+  atmosphere_and_mood: Rebellious, loud and joyful, a riot of shards moving to a three-beat rhythm.
+  rendering_and_quality: Lineless vector facets with clean overlaps, bounded color fields and no soft glow or gradients.
+  key_features: lineless triangular facets; complementary-colored shadow shards; ember orange, yellow and cyan triad; translucent shard overlaps; counter-slanting background triangles
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tri-Fire Riot Geometry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - black outlines
+  - soft airbrush gradients
+  - literal fire
   - realistic
   - 3d render
   - photo
@@ -65,14 +53,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-240.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI
-    panel, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, black outlines, soft airbrush gradients, literal fire, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

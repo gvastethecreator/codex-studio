@@ -3,7 +3,7 @@ id: SP05-230
 packId: pack_05
 name: Terminal Megastructure Silence
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,35 +12,24 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Monumental graphic rendering built from long structural lines, blocky value masses, broad
-    voids, and rare cold highlights; scale is a visual relation, not a required setting.
-  subject_treatment: >-
-    Preserve the subject’s identity and proportions. Clarify its existing structure with long
-    clean contours and large shadow groupings without enlarging or replacing it.
-  color_and_tone: >-
-    Use charcoal, slate, blue-black, and steel, with very sparse cyan or white highlights.
-  lighting_and_shadow: >-
-    Set large hard cel-shadow shapes against a few cold edge glints; keep illuminated areas
-    broad, quiet, and subordinate.
-  texture_and_material: >-
-    Keep existing materials legible. Limit texture to precise seams, faint wear, and controlled
-    grain against expansive simple areas.
-  camera_and_composition: >-
-    Keep the requested view and scale. Use long aligned contours and open negative space within
-    the established framing.
-  atmosphere_and_mood: >-
-    Create silence and scale through still spacing, strong value grouping, and minimal accents,
-    without adding a megastructure or vessel.
-  rendering_and_quality: >-
-    Use clean block shadows, sharp silhouettes, disciplined line density, and a low glow
-    threshold to preserve quiet.
-  key_features: >-
-    Long structural contours; broad dark masses; open negative space; sparse cold highlights.
-  creative_brief: >-
-    Keep the specified subject, scale, and setting. Use long structural lines, broad shadow
-    masses, and sparse cold glints; add no megastructure, vessel, or space scene.
+  aesthetic: 'Ink-wash megastructure manga plate: ruler-drawn pen lines, vast flat fields of diluted gray wash, dry-brush edges, and highlights scratched out in white.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Charcoal, slate and blue-black wash values with sparse cold white scratch highlights and at most a hint of cyan.
+  lighting_and_shadow: Faint cold light from one distant source; most of the plate falls into layered gray wash with hard ruled shadow edges.
+  texture_and_material: Granulating ink wash pooling at edges, dry-brush drag on large planes, and fine ruled hatching in the far distance.
+  camera_and_composition: Keep the requested view and scale; leave huge empty wash areas and long converging ruled lines around the subject.
+  atmosphere_and_mood: Immense silence and scale, a stillness older than anyone inside it.
+  rendering_and_quality: Sparse ruled pen line, layered wash values and white scratch highlights, with restrained detail and no glow.
+  key_features: ruler-drawn pen lines; vast gray ink-wash fields; dry-brush drag; scratched-out white highlights; long converging ruled lines
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Terminal Megastructure Silence as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - saturated color
+  - busy neon detail
   - realistic
   - 3d render
   - photo
@@ -63,14 +52,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-230.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI
-    panel, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, saturated color, busy neon detail, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

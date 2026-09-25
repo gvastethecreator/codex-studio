@@ -3,7 +3,7 @@ id: SP05-223
 packId: pack_05
 name: Armored Chrome Noir Elegance
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,37 +12,23 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Noir surface rendering with razor-clean contours, mirror-bright edge glints, deep black
-    value masses, and composed chrome-like reflections.
-  subject_treatment: >-
-    Keep the requested subject recognizable and unchanged in form. Give its existing silhouette
-    a few sharp reflective edges and broad, elegant shadow shapes.
-  color_and_tone: >-
-    Build a restrained range of black, pewter, silver, and smoke, punctuated by tiny magenta or
-    cyan reflections.
-  lighting_and_shadow: >-
-    Use hard cel shadows and precise specular accents; concentrate highlights along existing
-    edges instead of adding neon sources.
-  texture_and_material: >-
-    Respect the depicted material while suggesting a polished finish through narrow highlight
-    bands, clean reflections, and minimal scuffing.
-  camera_and_composition: >-
-    Keep the given framing. Balance dark masses with narrow reflective lines and leave negative
-    space around the main silhouette.
-  atmosphere_and_mood: >-
-    Create poised noir elegance through controlled contrast, stillness, and sparse color glints
-    rather than a city-at-night setting.
-  rendering_and_quality: >-
-    Use smooth value transitions, crisp boundaries, a few hard shadow planes, and clean
-    highlights; keep reflections graphic and legible.
-  key_features: >-
-    Mirror-like edge glints; deep noir shadows; pewter and smoke values; sparse neon
-    reflections.
-  creative_brief: >-
-    Retain the prompt’s subject, action, and setting. Use crisp reflective accents, pewter
-    values, and deep noir shadows; add no armor, city, or neon signage.
+  aesthetic: 'Airbrushed chrome noir illustration: mirror surfaces rendered as hard black-and-white bands with a reflected horizon line, deep black masses, and pinpoint star glints.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Black, pewter, silver and smoke, with tiny magenta or cyan reflections caught in the chrome.
+  lighting_and_shadow: Hard single key from above and behind; chrome reads through sharp reflected bands, a horizon line across curved surfaces, and starburst glints.
+  texture_and_material: Seamless airbrushed gradients and mirror polish with minimal scuffing, against a background that falls into velvet black.
+  camera_and_composition: Keep the requested view; isolate the subject against black with generous negative space and one elegant reflective contour.
+  atmosphere_and_mood: Poised, cool and seductive noir elegance, stillness with a knife edge.
+  rendering_and_quality: Masked-airbrush smoothness, crisp hard-edged reflection bands and starburst glints; no plastic 3D CG look.
+  key_features: airbrushed chrome banding; reflected horizon line; velvet black background; pinpoint starburst glints; tiny magenta and cyan reflections
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Armored Chrome Noir Elegance as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - rain-soaked neon street
   - realistic
   - 3d render
   - photo
@@ -65,14 +51,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-223.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI
-    panel, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, rain-soaked neon street, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -3,7 +3,7 @@ id: SP05-231
 packId: pack_05
 name: Coral Resonance Liturgy
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,36 +12,24 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Rhythmic luminous illustration with branching contour patterns, concentric halo-like curves,
-    and bioluminescent color accents over deep blue values.
-  subject_treatment: >-
-    Retain the subject’s identity and proportions. Echo its existing divisions with branching
-    lines and repeated arcs, without changing it into coral or machinery.
-  color_and_tone: >-
-    Anchor the palette in abyssal blue and teal, with coral pink, pale aqua, and soft pearl
-    highlights.
-  lighting_and_shadow: >-
-    Use layered cel shadows with smooth luminous edges and circular highlight rhythms; keep the
-    glow attached to existing forms.
-  texture_and_material: >-
-    Preserve the original surface while adding fine branching lines, soft stipple, and
-    controlled translucent accents.
-  camera_and_composition: >-
-    Honor the requested framing. Repeat arcs and branching marks to create rhythm without
-    imposing a halo or centered layout.
-  atmosphere_and_mood: >-
-    Suggest resonance and reverence through repeated curves, deep color, and measured glow, not
-    religious symbols or an underwater scene.
-  rendering_and_quality: >-
-    Combine precise fine lines with clean shadow bands and soft controlled bloom; maintain clear
-    separation between marks.
-  key_features: >-
-    Branching contours; concentric rhythms; abyssal blues; coral and aqua glow.
-  creative_brief: >-
-    Preserve the prompt’s subject and setting. Apply branching line rhythms, deep blue values,
-    and restrained coral-aqua glows; add no coral growth, ocean, or sacred symbols.
+  aesthetic: 'Bioluminescent fluorescent-paint anime: a dark abyssal base with luminous teal and coral lines painted like glowing ink, radiating stipple dots and concentric halos.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Abyssal navy and teal with glowing coral pink, pale aqua and pearl; glow colors appear only on lines and dots.
+  lighting_and_shadow: 'No external light: forms are lit from within by their glowing lines, with soft bloom and concentric ring highlights.'
+  texture_and_material: Fine radiating stipple, branching vein-like lines, and a soft translucent glow haze over dark cel shadow.
+  camera_and_composition: Keep the requested view; repeat concentric rings and branching lines outward from the focal form.
+  atmosphere_and_mood: Reverent, resonant and hushed, a slow pulse of light in deep dark.
+  rendering_and_quality: Crisp glowing linework over dark cel masses, controlled bloom and radiating dot patterns; never daylight.
+  key_features: self-luminous teal and coral lines; branching vein patterns; radiating stipple dots; concentric halo rings; abyssal navy base
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Coral Resonance Liturgy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - daylight
+  - flat even lighting
   - realistic
   - 3d render
   - photo
@@ -71,15 +59,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-231.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, cockpit UI, weapon, angel/robot copy,
-    cathedral corridor, readable glyphs, body-horror gore, plastic 3d robot render, cockpit
-    source-frame look, readable UI panel, fixed canon character, title scene replication, required
-    source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, daylight, flat even lighting, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, cockpit UI, weapon, angel/robot copy, cathedral corridor, readable glyphs, body-horror gore, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

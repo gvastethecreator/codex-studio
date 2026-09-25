@@ -3,7 +3,7 @@ id: SP05-234
 packId: pack_05
 name: Extinction Interface Command
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,37 +12,25 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Command-like graphic precision using modular divisions, sparse signal bars, rigid alignment,
-    and stark cel-shadow blocks; keep all data-like marks abstract.
-  subject_treatment: >-
-    Keep the subject’s identity and outline. Divide its existing forms with clean modular
-    contours and small signal accents, not interface panels or weapons.
-  color_and_tone: >-
-    Set black, cool gray, and deep blue against cyan or red signal accents; keep bright marks
-    few and highly legible.
-  lighting_and_shadow: >-
-    Use hard shadow blocks and thin localized highlights to create a severe, controlled read
-    without visible displays.
-  texture_and_material: >-
-    Preserve existing material qualities; add fine digital-looking breaks and edge marks
-    sparingly, with no labels or text.
-  camera_and_composition: >-
-    Respect the requested framing. Use measured grid alignment within existing forms and keep
-    the main silhouette dominant.
-  atmosphere_and_mood: >-
-    Create command tension through strict spacing, deliberate interruption, and quiet contrast
-    rather than an extinction event.
-  rendering_and_quality: >-
-    Favor precise line weights, flat value blocks, clean signal-color boundaries, and minimal
-    texture.
-  key_features: >-
-    Modular contour divisions; abstract signal marks; stark cel shadows; black, blue, and
-    cyan-red accents.
-  creative_brief: >-
-    Keep the specified subject, action, and setting intact. Apply modular line divisions,
-    abstract signal accents, and stark shadows; add no display, weapon, text, or catastrophe.
+  aesthetic: 'Vector-display anime: subjects drawn as glowing single-weight wireframe lines with hidden lines removed, on a black field with modular grid divisions.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Black ground with cyan vector lines, a deep blue grid and small red target accents; no filled color anywhere.
+  lighting_and_shadow: Lines are self-luminous with a thin phosphor glow; there is no shading, and depth is shown by line density and brightness falloff.
+  texture_and_material: Phosphor bloom along lines, faint persistence trails, and a soft curved-screen vignette at the corners.
+  camera_and_composition: Keep the requested view; lay a fine modular grid behind the subject and bracket its key points with small red target ticks.
+  atmosphere_and_mood: Cold command tension, the calm of watching disaster as geometry.
+  rendering_and_quality: Clean single-weight vector wireframe, phosphor glow and sparse red ticks; no letters, numerals or filled surfaces.
+  key_features: glowing single-weight wireframe; hidden-line removal; phosphor glow on black; modular blue grid; red target ticks without text
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Extinction Interface Command as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - filled painted surfaces
+  - numerals
+  - readable map labels
   - realistic
   - 3d render
   - photo
@@ -65,14 +53,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-234.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI
-    panel, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, filled painted surfaces, numerals, readable map labels, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

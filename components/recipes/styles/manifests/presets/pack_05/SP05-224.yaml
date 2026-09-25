@@ -3,7 +3,7 @@ id: SP05-224
 packId: pack_05
 name: Sterile Arcology Severity
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,36 +12,25 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    A severe, orderly style defined by precise orthogonal contours, pale architectural value
-    planes, and small signal accents; structure comes from linework, not added buildings.
-  subject_treatment: >-
-    Preserve the subject’s identity and proportions. Emphasize its existing straight edges and
-    divisions with clean, measured contours; do not reshape it into architecture.
-  color_and_tone: >-
-    Use white, cool gray, pale steel, and deep blue shadow, with a very small cyan or red
-    accent.
-  lighting_and_shadow: >-
-    Separate forms with crisp, cool cel shadows and broad even highlights; keep emissive accents
-    thin and localized.
-  texture_and_material: >-
-    Maintain the requested material with smooth, clean surfaces, subtle panel-like divisions,
-    and almost no incidental grain.
-  camera_and_composition: >-
-    Respect the requested camera and layout. Echo existing lines with parallel spacing and
-    deliberate negative space, without imposing a vertical city view.
-  atmosphere_and_mood: >-
-    Convey severity through exact alignment, cool restraint, and quiet emptiness rather than a
-    sterile urban setting.
-  rendering_and_quality: >-
-    Favor immaculate contour precision, flat shadow bands, clean whites, and restrained detail;
-    preserve silhouette clarity.
-  key_features: >-
-    Orthogonal line precision; cool-white planes; deep blue shadows; minimal signal accents.
-  creative_brief: >-
-    Keep the specified subject, scale, and setting. Apply clean orthogonal contours, cool-white
-    color separation, and precise shadows; add no buildings, corridors, or city.
+  aesthetic: 'Clean digital architectural anime: ruler-straight hairline contours traced from a 3D layout, near-white fills, and overexposed bloom on every bright plane.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: White, cool gray and pale steel dominate, with one deep ultramarine shadow tone and a single tiny red or cyan signal accent.
+  lighting_and_shadow: Flat shadowless daylight blown toward white with bloom spilling over edges; one crisp ultramarine shadow band where planes turn away.
+  texture_and_material: Seamless glossy surfaces with hairline panel seams and almost no grain; reflections drawn as flat pale-blue strips.
+  camera_and_composition: Keep the requested view; enforce perfectly vertical lines, parallel spacing and large empty white negative space around the subject.
+  atmosphere_and_mood: Severe, antiseptic and silent, order so complete that it becomes uneasy.
+  rendering_and_quality: Hairline vector precision, bloom-softened whites, one flat shadow band per form, and no hand-drawn wobble anywhere.
+  key_features: ruler-straight hairline contours; overexposed white bloom; single ultramarine shadow band; hairline panel seams; vast white negative space
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sterile Arcology Severity as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - dirty grunge
+  - warm cozy palette
+  - crowded city
   - realistic
   - 3d render
   - photo
@@ -64,14 +53,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-224.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI
-    panel, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, dirty grunge, warm cozy palette, crowded city, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

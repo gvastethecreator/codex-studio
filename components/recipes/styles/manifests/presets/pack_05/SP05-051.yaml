@@ -3,7 +3,7 @@ id: SP05-051
 packId: pack_05
 name: Neon Kinetic Alloy Sprint
 category: 2. Mecha & Cyberpunk
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,37 +12,24 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: >-
-    Fast, precise illustration built from segmented contours, tapered motion strokes, reflective
-    edge accents, and alloy-like panel rhythm; speed comes from the marks, not added machinery.
-  subject_treatment: >-
-    Keep the requested anatomy and object shape intact. Clarify its existing edges with clean
-    contour breaks and swept strokes; add no prostheses, armor, or mechanical limbs.
-  color_and_tone: >-
-    Set cyan and fuchsia against graphite and pearl, with a restrained warning-red accent.
-    Reserve the brightest color for existing focal edges and motion.
-  lighting_and_shadow: >-
-    Separate forms with crisp cel-shadow planes; trace selected edges with narrow cool
-    reflections and hot glints, without requiring a new light source.
-  texture_and_material: >-
-    Preserve each requested material. Suggest polished alloy through painted highlight bands and
-    fine scuffs rather than replacing the subject’s surface.
-  camera_and_composition: >-
-    Honor the requested view and crop. Use diagonal strokes, tapered repeats, and varied line
-    lengths to imply speed inside the existing composition.
-  atmosphere_and_mood: >-
-    Create urgency through forward line flow, compressed values, and bright accents while
-    leaving the prompt’s emotional direction intact.
-  rendering_and_quality: >-
-    Use sharp ink boundaries, a few decisive cel-shadow values, controlled glow, and clean
-    detail hierarchy; keep textures crisp rather than noisy.
-  key_features: >-
-    Segmented precision contours; cyan-fuchsia edge accents; reflective glints; diagonal speed
-    rhythm.
-  creative_brief: >-
-    Preserve the specified subject, action, and setting. Apply segmented contours, cyan-fuchsia
-    accents, and tapered motion marks to existing forms; add no prostheses, armor, or machinery.
+  aesthetic: 'High-speed digital anime compositing: horizontal background pan blur, RGB-split chromatic edges, and tapered afterimage smears trailing the moving forms.'
+  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
+  color_and_tone: Cyan and fuchsia split fringes over graphite and pearl, with one warning-red accent on the leading edge.
+  lighting_and_shadow: Crisp two-tone cel shadows on the subject, background lights stretched into horizontal streaks by the pan, and hot glints on leading edges.
+  texture_and_material: Polished alloy suggested by painted highlight bands, with the background dissolved into long streaked lines.
+  camera_and_composition: Keep the requested view; the subject stays sharp while everything behind it smears sideways in a tracking pan.
+  atmosphere_and_mood: Breathless velocity, cool metal and nerve at the edge of control.
+  rendering_and_quality: Sharp subject contours, chromatic RGB offset on edges, motion-smear afterimages and a streaked background; never a static still life.
+  key_features: horizontal tracking pan blur; RGB-split chromatic edges; tapered afterimage smears; cyan-fuchsia fringes; warning-red leading edge
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Kinetic Alloy Sprint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - named mecha or franchise robot likeness
+  - fixed canon pilot character
+  - turning a non-mechanical subject into a robot
+  - adding a hangar, cockpit or battle the prompt did not ask for
+  - readable HUD or interface text
+  - static pose
+  - mechanical limbs added to people
   - realistic
   - 3d render
   - photo
@@ -71,15 +58,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-051.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named cyborg heroine likeness, roller-blade weapon feet, gore,
-    police logo, readable UI, full body fan-art pose, plastic 3d robot render, cockpit source-frame
-    look, readable UI panel, fixed canon character, title scene replication, required source-frame
-    look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, static pose, mechanical limbs added to people, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named cyborg heroine likeness, roller-blade weapon feet, gore, police logo, readable UI, full body fan-art pose, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
