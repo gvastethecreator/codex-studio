@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-170
+packId: pack_15
+name: Cobpunk
+styleAnchors:
+  - Cobpunk
+  - earthen building punk
+  - curved clay walls
+displayName: Cobpunk
+category: 3. Eco, Repair & Climate Punks
+domain: earthen building punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - eco-repair-and-climate-punks
+  - cobpunk
+  - punk
+  - climate
+visualDna:
+  aesthetic: 'Cobpunk: sculpted earthen architecture of cob, adobe and rammed earth, with rounded walls, living roofs and hand-shaped homes.'
+  subject_treatment: Keep the prompt's subject and setting; shape its buildings and furniture from sculpted earth, straw and clay by hand.
+  color_and_tone: Warm ochre, terracotta and straw gold with living-roof greens.
+  lighting_and_shadow: Soft sunlight on curved walls and warm light glowing through round windows.
+  texture_and_material: Hand-smoothed clay, straw, rammed-earth layers, bottle windows and grass roofs.
+  camera_and_composition: Organic rounded buildings clustered together like a hillside village grown from the ground.
+  atmosphere_and_mood: Earthy and gentle, homes that feel grown rather than built.
+  rendering_and_quality: Warm tactile illustration with visible handprints in clay walls.
+  creative_brief: "Cobpunk: sculpted earthen architecture of cob, adobe and rammed earth, with rounded walls, living roofs and hand-shaped homes. Carry it through curved clay walls, bottle windows, living roofs, handprints. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: curved clay walls; bottle windows; living roofs; handprints
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - generic glass utopia
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: eco-repair-and-climate-punks
+  categoryName: 3. Eco, Repair & Climate Punks
+  tags:
+    - curation-v2
+    - eco-repair-and-climate-punks
+    - cobpunk
+    - punk
+    - climate
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: earthen building punk

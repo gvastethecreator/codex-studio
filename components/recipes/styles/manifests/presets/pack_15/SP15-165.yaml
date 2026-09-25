@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-165
+packId: pack_15
+name: Beepunk
+styleAnchors:
+  - Beepunk
+  - pollinator guardian punk
+  - hive towers
+displayName: Beepunk
+category: 3. Eco, Repair & Climate Punks
+domain: pollinator guardian punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - eco-repair-and-climate-punks
+  - beepunk
+  - punk
+  - climate
+visualDna:
+  aesthetic: 'Beepunk: a culture built around saving pollinators, with hive towers, flower corridors, beekeeper guilds and honey-gold architecture.'
+  subject_treatment: Keep the prompt's subject and setting; surround it with hives, bees, flower corridors and hexagonal honey-gold structures.
+  color_and_tone: Honey gold, pollen yellow and wildflower colors against warm wax amber and green.
+  lighting_and_shadow: Warm golden sunlight glowing through wax combs and translucent wings everywhere.
+  texture_and_material: Wax combs, woven skeps, veiled suits, pollen dust and wildflower meadows.
+  camera_and_composition: Close views among swarming bees and wide views of hive towers in meadows.
+  atmosphere_and_mood: Humming and generous, a whole civilization organized around keeping the flowers alive.
+  rendering_and_quality: Luminous detailed illustration with glowing combs and delicate bee wings.
+  creative_brief: "Beepunk: a culture built around saving pollinators, with hive towers, flower corridors, beekeeper guilds and honey-gold architecture. Carry it through hive towers, wax combs, flower corridors, veiled beekeepers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: hive towers; wax combs; flower corridors; veiled beekeepers
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - generic glass utopia
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: eco-repair-and-climate-punks
+  categoryName: 3. Eco, Repair & Climate Punks
+  tags:
+    - curation-v2
+    - eco-repair-and-climate-punks
+    - beepunk
+    - punk
+    - climate
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: pollinator guardian punk

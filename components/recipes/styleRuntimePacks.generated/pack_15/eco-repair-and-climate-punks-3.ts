@@ -93,4 +93,535 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP15-158',
+    name: 'Floodpunk',
+    displayName: 'Floodpunk',
+    styleAnchors: ['Floodpunk', 'sea-level-rise stilt city punk', 'stilts'],
+    category: '3. Eco, Repair & Climate Punks',
+    domain: 'sea-level-rise stilt city punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Floodpunk: drowned cities rebuilt above the waterline on stilts, rafts and rooftop bridges, with boats as streets and old towers as islands.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; raise water around it and rebuild life on stilts, rafts and rope bridges above the flood.",
+      color_and_tone:
+        'Murky green-blue water, weathered wood and rust with bright laundry and boat colors.',
+      lighting_and_shadow: 'Hazy humid daylight and rippling water reflections on everything.',
+      texture_and_material:
+        'Stilts, lashed timber, patched tarps, sagging rope bridges and algae-stained concrete below.',
+      camera_and_composition: 'Waterline views with drowned streets below and life stacked above.',
+      atmosphere_and_mood:
+        'Resilient and melancholic, a city that refused to leave when the sea came in.',
+      rendering_and_quality:
+        'Detailed illustration with convincing water reflections and layered structures.',
+      creative_brief:
+        "Floodpunk: drowned cities rebuilt above the waterline on stilts, rafts and rooftop bridges, with boats as streets and old towers as islands. Carry it through stilts, drowned streets, rooftop bridges, boats as streets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'stilts; drowned streets; rooftop bridges; boats as streets',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-159',
+    name: 'Hopepunk',
+    displayName: 'Hopepunk',
+    styleAnchors: ['Hopepunk', 'radical kindness punk', 'shared light'],
+    category: '3. Eco, Repair & Climate Punks',
+    domain: 'radical kindness punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hopepunk: defiant tenderness in hard times, with shared kitchens, mended flags, candle vigils and communities holding each other up in ruins.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; show people caring for each other and something small and warm surviving in a hard place.",
+      color_and_tone: 'Soft warm golds and roses against grey ruins and stormy blues.',
+      lighting_and_shadow:
+        'Small pools of candle, lantern and firelight held against cold, dark surroundings.',
+      texture_and_material:
+        'Mended fabrics, chipped mugs, patched tents and hand-painted banners without words.',
+      camera_and_composition: 'Groups huddled around small light sources in wide dark spaces.',
+      atmosphere_and_mood:
+        'Tender and stubborn, kindness as an act of rebellion when everything is falling apart.',
+      rendering_and_quality:
+        'Warm painterly illustration with soft light and careful human gestures.',
+      creative_brief:
+        "Hopepunk: defiant tenderness in hard times, with shared kitchens, mended flags, candle vigils and communities holding each other up in ruins. Carry it through shared light, mended things, huddled communities, warm against cold. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'shared light; mended things; huddled communities; warm against cold',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-160',
+    name: 'Seedpunk',
+    displayName: 'Seedpunk',
+    styleAnchors: ['Seedpunk', 'seed vault agriculture punk', 'seed vaults'],
+    category: '3. Eco, Repair & Climate Punks',
+    domain: 'seed vault agriculture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Seedpunk: guardians of seeds and soil, with seed vaults, pollination rigs, crop libraries and farmers as heroes of the future.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; fill it with seeds, drawers of samples, sprouting trays and hand-built farming tools.",
+      color_and_tone: 'Earthy browns and seed golds with fresh sprout green and vault steel.',
+      lighting_and_shadow: 'Warm lamps over seed drawers and sunlight falling on fields.',
+      texture_and_material:
+        'Seed packets without text, wooden drawers, clay pots, soil and jute sacks.',
+      camera_and_composition:
+        'Rows of seed drawers and sprouting trays, or tiny figures in giant fields.',
+      atmosphere_and_mood: 'Patient and precious, the future of the world held in tiny grains.',
+      rendering_and_quality:
+        'Detailed botanical illustration with rich natural textures in every seed and leaf.',
+      creative_brief:
+        "Seedpunk: guardians of seeds and soil, with seed vaults, pollination rigs, crop libraries and farmers as heroes of the future. Carry it through seed vaults, sprouting trays, drawers of samples, farmer guardians. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'seed vaults; sprouting trays; drawers of samples; farmer guardians',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-161',
+    name: 'Windpunk',
+    displayName: 'Windpunk',
+    styleAnchors: ['Windpunk', 'wind energy punk', 'turbine forests'],
+    category: '3. Eco, Repair & Climate Punks',
+    domain: 'wind energy punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Windpunk: a world powered by wind, with forests of turbines, kite generators, whistling towers and cities that move with the weather.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; add turbines, kites, sails and wind chimes, with everything leaning into the wind.",
+      color_and_tone: 'Sky blues and cloud whites with bright turbine whites and kite colors.',
+      lighting_and_shadow:
+        'Fast-moving cloud shadows racing across the land in bright, gusty daylight.',
+      texture_and_material:
+        'Turbine blades, kite fabric, tensioned cables, wind chimes and grass bent flat.',
+      camera_and_composition:
+        'Wide windy landscapes with turbines on ridges and figures braced against gusts.',
+      atmosphere_and_mood: 'Restless and joyful, a civilization that dances with every storm.',
+      rendering_and_quality: 'Airy dynamic illustration with strong sense of wind motion.',
+      creative_brief:
+        "Windpunk: a world powered by wind, with forests of turbines, kite generators, whistling towers and cities that move with the weather. Carry it through turbine forests, kite generators, leaning figures, cloud shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'turbine forests; kite generators; leaning figures; cloud shadows',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-162',
+    name: 'Bamboopunk',
+    displayName: 'Bamboopunk',
+    styleAnchors: ['Bamboopunk', 'bamboo construction punk', 'lashed bamboo towers'],
+    category: '3. Eco, Repair & Climate Punks',
+    domain: 'bamboo construction punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bamboopunk: a green high-tech world built from bamboo, lashed towers, flexible bridges, woven domes and fast-growing groves.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; build its structures and tools from bamboo poles, lashings and woven panels.",
+      color_and_tone: 'Fresh bamboo greens and golden cured cane with misty jade backgrounds.',
+      lighting_and_shadow: 'Soft light filtered through bamboo leaves and woven screens.',
+      texture_and_material: 'Bamboo poles, rattan lashings, woven panels and hanging lanterns.',
+      camera_and_composition:
+        'Tall vertical bamboo towers, arching flexible bridges and deep misty forest groves.',
+      atmosphere_and_mood:
+        'Graceful and resilient, structures that bend in storms instead of breaking.',
+      rendering_and_quality: 'Elegant detailed illustration with precise lashings and soft greens.',
+      creative_brief:
+        "Bamboopunk: a green high-tech world built from bamboo, lashed towers, flexible bridges, woven domes and fast-growing groves. Carry it through lashed bamboo towers, woven domes, flexible bridges, misty groves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'lashed bamboo towers; woven domes; flexible bridges; misty groves',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-163',
+    name: 'Rewildpunk',
+    displayName: 'Rewildpunk',
+    styleAnchors: ['Rewildpunk', 'rewilding punk', 'forests through highways'],
+    category: '3. Eco, Repair & Climate Punks',
+    domain: 'rewilding punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Rewildpunk: cities surrendered back to wild nature, with forests bursting through highways, animals in towers and people living lightly among them.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; let wild nature reclaim the built world around it, with animals sharing the space.",
+      color_and_tone:
+        'Deep greens and mossy browns over weathered concrete grey with flower colors.',
+      lighting_and_shadow: 'Dappled forest light falling through broken roofs and overpasses.',
+      texture_and_material: 'Moss, vines, cracked concrete, rusted steel and animal tracks.',
+      camera_and_composition: 'Wild landscapes framed by ruins of highways, malls and towers.',
+      atmosphere_and_mood: 'Lush and humbling, nature quietly taking back what was always hers.',
+      rendering_and_quality:
+        'Richly detailed illustration with dense vegetation and wildlife living among the ruins.',
+      creative_brief:
+        "Rewildpunk: cities surrendered back to wild nature, with forests bursting through highways, animals in towers and people living lightly among them. Carry it through forests through highways, animals in towers, moss on concrete, dappled light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'forests through highways; animals in towers; moss on concrete; dappled light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-164',
+    name: 'Monsoonpunk',
+    displayName: 'Monsoonpunk',
+    styleAnchors: ['Monsoonpunk', 'monsoon city punk', 'rain curtains'],
+    category: '3. Eco, Repair & Climate Punks',
+    domain: 'monsoon city punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Monsoonpunk: cities designed for torrential rain, with waterfall streets, umbrella roofs, rain-harvesting towers and life that goes on in the downpour.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; drench it in heavy monsoon rain with rain-harvesting structures and people carrying on.",
+      color_and_tone: 'Rain greys and deep greens with saturated umbrella colors and lamp amber.',
+      lighting_and_shadow:
+        'Diffuse rain light, glowing windows and reflections in flooded streets.',
+      texture_and_material:
+        'Sheets of rain, waterproof tarps, gutters, rain chains and soaked fabrics.',
+      camera_and_composition:
+        'Streets seen through curtains of rain with waterfalls pouring off roofs.',
+      atmosphere_and_mood:
+        'Drenched and lively, a city that treats the storm as part of the family.',
+      rendering_and_quality:
+        'Atmospheric illustration with convincing rain sheets and wet reflections.',
+      creative_brief:
+        "Monsoonpunk: cities designed for torrential rain, with waterfall streets, umbrella roofs, rain-harvesting towers and life that goes on in the downpour. Carry it through rain curtains, waterfall roofs, umbrella canopies, rain chains. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'rain curtains; waterfall roofs; umbrella canopies; rain chains',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-165',
+    name: 'Beepunk',
+    displayName: 'Beepunk',
+    styleAnchors: ['Beepunk', 'pollinator guardian punk', 'hive towers'],
+    category: '3. Eco, Repair & Climate Punks',
+    domain: 'pollinator guardian punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Beepunk: a culture built around saving pollinators, with hive towers, flower corridors, beekeeper guilds and honey-gold architecture.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; surround it with hives, bees, flower corridors and hexagonal honey-gold structures.",
+      color_and_tone:
+        'Honey gold, pollen yellow and wildflower colors against warm wax amber and green.',
+      lighting_and_shadow:
+        'Warm golden sunlight glowing through wax combs and translucent wings everywhere.',
+      texture_and_material:
+        'Wax combs, woven skeps, veiled suits, pollen dust and wildflower meadows.',
+      camera_and_composition:
+        'Close views among swarming bees and wide views of hive towers in meadows.',
+      atmosphere_and_mood:
+        'Humming and generous, a whole civilization organized around keeping the flowers alive.',
+      rendering_and_quality:
+        'Luminous detailed illustration with glowing combs and delicate bee wings.',
+      creative_brief:
+        "Beepunk: a culture built around saving pollinators, with hive towers, flower corridors, beekeeper guilds and honey-gold architecture. Carry it through hive towers, wax combs, flower corridors, veiled beekeepers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'hive towers; wax combs; flower corridors; veiled beekeepers',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-166',
+    name: 'Tidepunk',
+    displayName: 'Tidepunk',
+    styleAnchors: ['Tidepunk', 'tidal energy punk', 'tidal turbines'],
+    category: '3. Eco, Repair & Climate Punks',
+    domain: 'tidal energy punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Tidepunk: coastal cities powered by the rhythm of tides, with tidal turbines, sea gates, floating docks and streets that appear and vanish twice a day.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; place it on a tidal shore with sea gates, turbines and streets half covered by water.",
+      color_and_tone: 'Slate sea greys, sand beige and kelp green with rusted orange turbine hubs.',
+      lighting_and_shadow:
+        'Low coastal sun glinting on wet flats and water pouring through sea gates.',
+      texture_and_material:
+        'Barnacled concrete, turbine blades, wet sand ripples, chains and seaweed.',
+      camera_and_composition:
+        'Wide tidal flats with structures standing in shallow water at low or high tide.',
+      atmosphere_and_mood: 'Rhythmic and patient, life timed to the breathing of the sea.',
+      rendering_and_quality: 'Crisp coastal illustration with wet reflections and moving water.',
+      creative_brief:
+        "Tidepunk: coastal cities powered by the rhythm of tides, with tidal turbines, sea gates, floating docks and streets that appear and vanish twice a day. Carry it through tidal turbines, sea gates, vanishing streets, wet flats. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'tidal turbines; sea gates; vanishing streets; wet flats',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-167',
+    name: 'Urban Farmpunk',
+    displayName: 'Urban Farmpunk',
+    styleAnchors: ['Urban Farmpunk', 'city farming punk', 'rooftop fields'],
+    category: '3. Eco, Repair & Climate Punks',
+    domain: 'city farming punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Urban farmpunk: dense cities turned into farms, with rooftop fields, balcony rice terraces, subway mushroom caves and livestock in parking garages.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; farm every surface around it, from roofs and balconies to tunnels and staircases.",
+      color_and_tone:
+        'Crop greens and grain golds against concrete grey, with red tomatoes and flower accents.',
+      lighting_and_shadow: 'Sunlight on rooftop fields and grow-light pink in underground farms.',
+      texture_and_material: 'Soil beds, irrigation pipes, crates, concrete and climbing vines.',
+      camera_and_composition: 'Vertical cityscapes where every level is a different kind of farm.',
+      atmosphere_and_mood:
+        'Busy and nourishing, a city that learned to feed itself from its own walls.',
+      rendering_and_quality:
+        'Dense lively illustration with readable crops and city structures together.',
+      creative_brief:
+        "Urban farmpunk: dense cities turned into farms, with rooftop fields, balcony rice terraces, subway mushroom caves and livestock in parking garages. Carry it through rooftop fields, balcony terraces, grow-light caves, livestock in garages. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'rooftop fields; balcony terraces; grow-light caves; livestock in garages',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-168',
+    name: 'Heatwavepunk',
+    displayName: 'Heatwavepunk',
+    styleAnchors: ['Heatwavepunk', 'extreme heat adaptation punk', 'shade sails'],
+    category: '3. Eco, Repair & Climate Punks',
+    domain: 'extreme heat adaptation punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Heatwavepunk: life adapted to killing heat, with white reflective cities, shade sails, night markets, cooling towers and people living after dark.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; bake it in extreme heat with shade structures, reflective surfaces and life shifted to night.",
+      color_and_tone: 'Bleached white, burning orange sky and deep cool blues in the shade.',
+      lighting_and_shadow:
+        'Blinding sun with hard dark shade, or warm night markets under string lights.',
+      texture_and_material:
+        'Reflective white paint, shade sails, misting pipes, clay jars and sweat.',
+      camera_and_composition:
+        'Empty sun-bleached streets by day and crowded night scenes after sunset.',
+      atmosphere_and_mood:
+        'Oppressive and resourceful, people surviving the sun by inventing a nocturnal life.',
+      rendering_and_quality: 'High-contrast illustration with heat shimmer and deep cooling shade.',
+      creative_brief:
+        "Heatwavepunk: life adapted to killing heat, with white reflective cities, shade sails, night markets, cooling towers and people living after dark. Carry it through shade sails, reflective white city, heat shimmer, night markets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'shade sails; reflective white city; heat shimmer; night markets',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-169',
+    name: 'Mangrovepunk',
+    displayName: 'Mangrovepunk',
+    styleAnchors: ['Mangrovepunk', 'mangrove coast punk', 'arching roots'],
+    category: '3. Eco, Repair & Climate Punks',
+    domain: 'mangrove coast punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Mangrovepunk: coastal villages grown into mangrove forests, with root bridges, stilt houses, tidal channels and walls made by living trees.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; weave it into tangled mangrove roots, tidal channels and houses on stilts.",
+      color_and_tone: 'Murky tea-brown water, dense leaf greens and weathered silver wood.',
+      lighting_and_shadow: 'Dappled light through a dense canopy and glinting tidal water.',
+      texture_and_material: 'Arching roots, mud, oyster shells, stilt timber and woven palm roofs.',
+      camera_and_composition:
+        'Low boat-level views gliding through long tunnels of arching roots over dark water.',
+      atmosphere_and_mood:
+        'Tangled and protective, a forest that holds the sea back with its hands.',
+      rendering_and_quality: 'Richly textured illustration with complex root structures and water.',
+      creative_brief:
+        "Mangrovepunk: coastal villages grown into mangrove forests, with root bridges, stilt houses, tidal channels and walls made by living trees. Carry it through arching roots, stilt houses, tidal channels, living walls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'arching roots; stilt houses; tidal channels; living walls',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-170',
+    name: 'Cobpunk',
+    displayName: 'Cobpunk',
+    styleAnchors: ['Cobpunk', 'earthen building punk', 'curved clay walls'],
+    category: '3. Eco, Repair & Climate Punks',
+    domain: 'earthen building punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cobpunk: sculpted earthen architecture of cob, adobe and rammed earth, with rounded walls, living roofs and hand-shaped homes.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; shape its buildings and furniture from sculpted earth, straw and clay by hand.",
+      color_and_tone: 'Warm ochre, terracotta and straw gold with living-roof greens.',
+      lighting_and_shadow:
+        'Soft sunlight on curved walls and warm light glowing through round windows.',
+      texture_and_material:
+        'Hand-smoothed clay, straw, rammed-earth layers, bottle windows and grass roofs.',
+      camera_and_composition:
+        'Organic rounded buildings clustered together like a hillside village grown from the ground.',
+      atmosphere_and_mood: 'Earthy and gentle, homes that feel grown rather than built.',
+      rendering_and_quality: 'Warm tactile illustration with visible handprints in clay walls.',
+      creative_brief:
+        "Cobpunk: sculpted earthen architecture of cob, adobe and rammed earth, with rounded walls, living roofs and hand-shaped homes. Carry it through curved clay walls, bottle windows, living roofs, handprints. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'curved clay walls; bottle windows; living roofs; handprints',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-171',
+    name: 'Wildfirepunk',
+    displayName: 'Wildfirepunk',
+    styleAnchors: ['Wildfirepunk', 'wildfire resilience punk', 'smoke skies'],
+    category: '3. Eco, Repair & Climate Punks',
+    domain: 'wildfire resilience punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Wildfirepunk: communities living with fire, with firebreak towns, ember shelters, smoke masks, controlled burns and forests reborn from ash.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; bring fire and smoke close, with shelters, firefighters and new growth among the ashes.",
+      color_and_tone: 'Smoky orange skies, ember red and ash grey with sudden green new growth.',
+      lighting_and_shadow:
+        'Orange-filtered daylight through smoke and flickering ember glow at night.',
+      texture_and_material:
+        'Ash, charred bark, fire-resistant canvas, smoke masks and scorched earth.',
+      camera_and_composition:
+        'Towering smoke columns over small figures, and close views of ash and sprouts.',
+      atmosphere_and_mood: 'Dangerous and defiant, people who learned to live beside the flames.',
+      rendering_and_quality: 'Dramatic smoky illustration with glowing embers and ash texture.',
+      creative_brief:
+        "Wildfirepunk: communities living with fire, with firebreak towns, ember shelters, smoke masks, controlled burns and forests reborn from ash. Carry it through smoke skies, ember shelters, controlled burns, green sprouts in ash. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'smoke skies; ember shelters; controlled burns; green sprouts in ash',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-172',
+    name: 'Compostpunk',
+    displayName: 'Compostpunk',
+    styleAnchors: ['Compostpunk', 'soil and decomposition punk', 'compost heaps'],
+    category: '3. Eco, Repair & Climate Punks',
+    domain: 'soil and decomposition punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Compostpunk: a culture that worships decay and soil, with compost cathedrals, worm farms, fungal recyclers and gardens grown from waste.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; turn waste into soil around it with compost heaps, worms, fungi and new growth.",
+      color_and_tone: 'Rich soil browns, rot purples and mushroom creams with fresh sprout greens.',
+      lighting_and_shadow: 'Warm steam rising from heaps in cool morning light.',
+      texture_and_material: 'Dark soil, worms, fungi, rotting leaves, steam and wooden bins.',
+      camera_and_composition:
+        'Close ground-level views of soil life and wide views of compost structures.',
+      atmosphere_and_mood: 'Earthy and hopeful, decay treated as the beginning of everything.',
+      rendering_and_quality: 'Richly textured illustration with organic detail and warm steam.',
+      creative_brief:
+        "Compostpunk: a culture that worships decay and soil, with compost cathedrals, worm farms, fungal recyclers and gardens grown from waste. Carry it through compost heaps, worms and fungi, steaming soil, new growth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'compost heaps; worms and fungi; steaming soil; new growth',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-173',
+    name: 'Watershedpunk',
+    displayName: 'Watershedpunk',
+    styleAnchors: ['Watershedpunk', 'water harvesting punk', 'stepwells'],
+    category: '3. Eco, Repair & Climate Punks',
+    domain: 'water harvesting punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Watershedpunk: communities that harvest every drop, with fog nets, rain towers, stepwells, aqueducts and water shrines in dry lands.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; channel water through it with nets, stepwells, cisterns and aqueducts.",
+      color_and_tone: 'Dry ochre and terracotta with precious clear blues of collected water.',
+      lighting_and_shadow: 'Harsh sun on dry land and cool shade over glinting water pools.',
+      texture_and_material:
+        'Stone stepwells, fog nets, clay pipes, cisterns and wet moss in the shade.',
+      camera_and_composition:
+        'Deep stepwell perspectives and dry landscapes crossed by thin water channels.',
+      atmosphere_and_mood:
+        'Reverent and resourceful, water treated as the most sacred thing there is.',
+      rendering_and_quality:
+        'Precise illustration with geometric stone structures and glinting water.',
+      creative_brief:
+        "Watershedpunk: communities that harvest every drop, with fog nets, rain towers, stepwells, aqueducts and water shrines in dry lands. Carry it through stepwells, fog nets, aqueducts, water shrines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'stepwells; fog nets; aqueducts; water shrines',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-174',
+    name: 'Solar Nomadpunk',
+    displayName: 'Solar Nomadpunk',
+    styleAnchors: ['Solar Nomadpunk', 'solar caravan punk', 'solar sails'],
+    category: '3. Eco, Repair & Climate Punks',
+    domain: 'solar caravan punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Solar nomadpunk: caravans that follow the sun across deserts and plains, with solar sails, fold-out camps, battery camels and night-glowing tents.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; turn it into a traveling caravan powered by solar panels, sails and stored light.",
+      color_and_tone:
+        'Sand gold, dusk violet and panel blue with warm glowing tent light at night.',
+      lighting_and_shadow:
+        'Blazing day sun on panels and soft stored light glowing from tents at night.',
+      texture_and_material:
+        'Folding solar panels, canvas tents, woven blankets, cables and dusty wheels.',
+      camera_and_composition: 'Long caravans crossing horizons and glowing camps under stars.',
+      atmosphere_and_mood: 'Free and wandering, a home that moves wherever the sun leads.',
+      rendering_and_quality: 'Warm cinematic illustration with glowing camps and vast landscapes.',
+      creative_brief:
+        "Solar nomadpunk: caravans that follow the sun across deserts and plains, with solar sails, fold-out camps, battery camels and night-glowing tents. Carry it through solar sails, caravan trains, glowing tents, battery pack animals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'solar sails; caravan trains; glowing tents; battery pack animals',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

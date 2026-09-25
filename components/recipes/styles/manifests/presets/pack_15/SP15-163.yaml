@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-163
+packId: pack_15
+name: Rewildpunk
+styleAnchors:
+  - Rewildpunk
+  - rewilding punk
+  - forests through highways
+displayName: Rewildpunk
+category: 3. Eco, Repair & Climate Punks
+domain: rewilding punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - eco-repair-and-climate-punks
+  - rewildpunk
+  - punk
+  - climate
+visualDna:
+  aesthetic: 'Rewildpunk: cities surrendered back to wild nature, with forests bursting through highways, animals in towers and people living lightly among them.'
+  subject_treatment: Keep the prompt's subject and setting; let wild nature reclaim the built world around it, with animals sharing the space.
+  color_and_tone: Deep greens and mossy browns over weathered concrete grey with flower colors.
+  lighting_and_shadow: Dappled forest light falling through broken roofs and overpasses.
+  texture_and_material: Moss, vines, cracked concrete, rusted steel and animal tracks.
+  camera_and_composition: Wild landscapes framed by ruins of highways, malls and towers.
+  atmosphere_and_mood: Lush and humbling, nature quietly taking back what was always hers.
+  rendering_and_quality: Richly detailed illustration with dense vegetation and wildlife living among the ruins.
+  creative_brief: "Rewildpunk: cities surrendered back to wild nature, with forests bursting through highways, animals in towers and people living lightly among them. Carry it through forests through highways, animals in towers, moss on concrete, dappled light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: forests through highways; animals in towers; moss on concrete; dappled light
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - generic glass utopia
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: eco-repair-and-climate-punks
+  categoryName: 3. Eco, Repair & Climate Punks
+  tags:
+    - curation-v2
+    - eco-repair-and-climate-punks
+    - rewildpunk
+    - punk
+    - climate
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: rewilding punk

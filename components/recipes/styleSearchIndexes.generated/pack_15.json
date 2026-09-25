@@ -3,7 +3,7 @@
     {
       "id": "pack_15",
       "name": "Punk Spectrum Vault",
-      "presetCount": 70
+      "presetCount": 87
     }
   ],
   "presets": [
@@ -598,6 +598,260 @@
       "searchableText": "sp15-091 desertpunk 3. eco, repair & climate punks repair futures pack_15 punk spectrum vault eco-repair-and-climate-punks punk-spectrum-vault eco-repair-and-climate-punks"
     },
     {
+      "id": "SP15-158",
+      "name": "Floodpunk",
+      "styleAnchors": ["Floodpunk", "sea-level-rise stilt city punk", "stilts"],
+      "ref": "pack_15/SP15-158.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "eco-repair-and-climate-punks",
+      "categoryName": "3. Eco, Repair & Climate Punks",
+      "domain": "sea-level-rise stilt city punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "eco-repair-and-climate-punks",
+        "sea-level-rise-stilt-city-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-158 floodpunk sea-level-rise stilt city punk stilts 3. eco, repair & climate punks repair futures sea-level-rise stilt city punk pack_15 punk spectrum vault eco-repair-and-climate-punks punk-spectrum-vault eco-repair-and-climate-punks sea-level-rise-stilt-city-punk"
+    },
+    {
+      "id": "SP15-159",
+      "name": "Hopepunk",
+      "styleAnchors": ["Hopepunk", "radical kindness punk", "shared light"],
+      "ref": "pack_15/SP15-159.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "eco-repair-and-climate-punks",
+      "categoryName": "3. Eco, Repair & Climate Punks",
+      "domain": "radical kindness punk",
+      "tags": ["punk-spectrum-vault", "eco-repair-and-climate-punks", "radical-kindness-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-159 hopepunk radical kindness punk shared light 3. eco, repair & climate punks repair futures radical kindness punk pack_15 punk spectrum vault eco-repair-and-climate-punks punk-spectrum-vault eco-repair-and-climate-punks radical-kindness-punk"
+    },
+    {
+      "id": "SP15-160",
+      "name": "Seedpunk",
+      "styleAnchors": ["Seedpunk", "seed vault agriculture punk", "seed vaults"],
+      "ref": "pack_15/SP15-160.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "eco-repair-and-climate-punks",
+      "categoryName": "3. Eco, Repair & Climate Punks",
+      "domain": "seed vault agriculture punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "eco-repair-and-climate-punks",
+        "seed-vault-agriculture-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-160 seedpunk seed vault agriculture punk seed vaults 3. eco, repair & climate punks repair futures seed vault agriculture punk pack_15 punk spectrum vault eco-repair-and-climate-punks punk-spectrum-vault eco-repair-and-climate-punks seed-vault-agriculture-punk"
+    },
+    {
+      "id": "SP15-161",
+      "name": "Windpunk",
+      "styleAnchors": ["Windpunk", "wind energy punk", "turbine forests"],
+      "ref": "pack_15/SP15-161.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "eco-repair-and-climate-punks",
+      "categoryName": "3. Eco, Repair & Climate Punks",
+      "domain": "wind energy punk",
+      "tags": ["punk-spectrum-vault", "eco-repair-and-climate-punks", "wind-energy-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-161 windpunk wind energy punk turbine forests 3. eco, repair & climate punks repair futures wind energy punk pack_15 punk spectrum vault eco-repair-and-climate-punks punk-spectrum-vault eco-repair-and-climate-punks wind-energy-punk"
+    },
+    {
+      "id": "SP15-162",
+      "name": "Bamboopunk",
+      "styleAnchors": ["Bamboopunk", "bamboo construction punk", "lashed bamboo towers"],
+      "ref": "pack_15/SP15-162.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "eco-repair-and-climate-punks",
+      "categoryName": "3. Eco, Repair & Climate Punks",
+      "domain": "bamboo construction punk",
+      "tags": ["punk-spectrum-vault", "eco-repair-and-climate-punks", "bamboo-construction-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-162 bamboopunk bamboo construction punk lashed bamboo towers 3. eco, repair & climate punks repair futures bamboo construction punk pack_15 punk spectrum vault eco-repair-and-climate-punks punk-spectrum-vault eco-repair-and-climate-punks bamboo-construction-punk"
+    },
+    {
+      "id": "SP15-163",
+      "name": "Rewildpunk",
+      "styleAnchors": ["Rewildpunk", "rewilding punk", "forests through highways"],
+      "ref": "pack_15/SP15-163.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "eco-repair-and-climate-punks",
+      "categoryName": "3. Eco, Repair & Climate Punks",
+      "domain": "rewilding punk",
+      "tags": ["punk-spectrum-vault", "eco-repair-and-climate-punks", "rewilding-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-163 rewildpunk rewilding punk forests through highways 3. eco, repair & climate punks repair futures rewilding punk pack_15 punk spectrum vault eco-repair-and-climate-punks punk-spectrum-vault eco-repair-and-climate-punks rewilding-punk"
+    },
+    {
+      "id": "SP15-164",
+      "name": "Monsoonpunk",
+      "styleAnchors": ["Monsoonpunk", "monsoon city punk", "rain curtains"],
+      "ref": "pack_15/SP15-164.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "eco-repair-and-climate-punks",
+      "categoryName": "3. Eco, Repair & Climate Punks",
+      "domain": "monsoon city punk",
+      "tags": ["punk-spectrum-vault", "eco-repair-and-climate-punks", "monsoon-city-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-164 monsoonpunk monsoon city punk rain curtains 3. eco, repair & climate punks repair futures monsoon city punk pack_15 punk spectrum vault eco-repair-and-climate-punks punk-spectrum-vault eco-repair-and-climate-punks monsoon-city-punk"
+    },
+    {
+      "id": "SP15-165",
+      "name": "Beepunk",
+      "styleAnchors": ["Beepunk", "pollinator guardian punk", "hive towers"],
+      "ref": "pack_15/SP15-165.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "eco-repair-and-climate-punks",
+      "categoryName": "3. Eco, Repair & Climate Punks",
+      "domain": "pollinator guardian punk",
+      "tags": ["punk-spectrum-vault", "eco-repair-and-climate-punks", "pollinator-guardian-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-165 beepunk pollinator guardian punk hive towers 3. eco, repair & climate punks repair futures pollinator guardian punk pack_15 punk spectrum vault eco-repair-and-climate-punks punk-spectrum-vault eco-repair-and-climate-punks pollinator-guardian-punk"
+    },
+    {
+      "id": "SP15-166",
+      "name": "Tidepunk",
+      "styleAnchors": ["Tidepunk", "tidal energy punk", "tidal turbines"],
+      "ref": "pack_15/SP15-166.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "eco-repair-and-climate-punks",
+      "categoryName": "3. Eco, Repair & Climate Punks",
+      "domain": "tidal energy punk",
+      "tags": ["punk-spectrum-vault", "eco-repair-and-climate-punks", "tidal-energy-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-166 tidepunk tidal energy punk tidal turbines 3. eco, repair & climate punks repair futures tidal energy punk pack_15 punk spectrum vault eco-repair-and-climate-punks punk-spectrum-vault eco-repair-and-climate-punks tidal-energy-punk"
+    },
+    {
+      "id": "SP15-167",
+      "name": "Urban Farmpunk",
+      "styleAnchors": ["Urban Farmpunk", "city farming punk", "rooftop fields"],
+      "ref": "pack_15/SP15-167.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "eco-repair-and-climate-punks",
+      "categoryName": "3. Eco, Repair & Climate Punks",
+      "domain": "city farming punk",
+      "tags": ["punk-spectrum-vault", "eco-repair-and-climate-punks", "city-farming-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-167 urban farmpunk city farming punk rooftop fields 3. eco, repair & climate punks repair futures city farming punk pack_15 punk spectrum vault eco-repair-and-climate-punks punk-spectrum-vault eco-repair-and-climate-punks city-farming-punk"
+    },
+    {
+      "id": "SP15-168",
+      "name": "Heatwavepunk",
+      "styleAnchors": ["Heatwavepunk", "extreme heat adaptation punk", "shade sails"],
+      "ref": "pack_15/SP15-168.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "eco-repair-and-climate-punks",
+      "categoryName": "3. Eco, Repair & Climate Punks",
+      "domain": "extreme heat adaptation punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "eco-repair-and-climate-punks",
+        "extreme-heat-adaptation-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-168 heatwavepunk extreme heat adaptation punk shade sails 3. eco, repair & climate punks repair futures extreme heat adaptation punk pack_15 punk spectrum vault eco-repair-and-climate-punks punk-spectrum-vault eco-repair-and-climate-punks extreme-heat-adaptation-punk"
+    },
+    {
+      "id": "SP15-169",
+      "name": "Mangrovepunk",
+      "styleAnchors": ["Mangrovepunk", "mangrove coast punk", "arching roots"],
+      "ref": "pack_15/SP15-169.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "eco-repair-and-climate-punks",
+      "categoryName": "3. Eco, Repair & Climate Punks",
+      "domain": "mangrove coast punk",
+      "tags": ["punk-spectrum-vault", "eco-repair-and-climate-punks", "mangrove-coast-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-169 mangrovepunk mangrove coast punk arching roots 3. eco, repair & climate punks repair futures mangrove coast punk pack_15 punk spectrum vault eco-repair-and-climate-punks punk-spectrum-vault eco-repair-and-climate-punks mangrove-coast-punk"
+    },
+    {
+      "id": "SP15-170",
+      "name": "Cobpunk",
+      "styleAnchors": ["Cobpunk", "earthen building punk", "curved clay walls"],
+      "ref": "pack_15/SP15-170.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "eco-repair-and-climate-punks",
+      "categoryName": "3. Eco, Repair & Climate Punks",
+      "domain": "earthen building punk",
+      "tags": ["punk-spectrum-vault", "eco-repair-and-climate-punks", "earthen-building-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-170 cobpunk earthen building punk curved clay walls 3. eco, repair & climate punks repair futures earthen building punk pack_15 punk spectrum vault eco-repair-and-climate-punks punk-spectrum-vault eco-repair-and-climate-punks earthen-building-punk"
+    },
+    {
+      "id": "SP15-171",
+      "name": "Wildfirepunk",
+      "styleAnchors": ["Wildfirepunk", "wildfire resilience punk", "smoke skies"],
+      "ref": "pack_15/SP15-171.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "eco-repair-and-climate-punks",
+      "categoryName": "3. Eco, Repair & Climate Punks",
+      "domain": "wildfire resilience punk",
+      "tags": ["punk-spectrum-vault", "eco-repair-and-climate-punks", "wildfire-resilience-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-171 wildfirepunk wildfire resilience punk smoke skies 3. eco, repair & climate punks repair futures wildfire resilience punk pack_15 punk spectrum vault eco-repair-and-climate-punks punk-spectrum-vault eco-repair-and-climate-punks wildfire-resilience-punk"
+    },
+    {
+      "id": "SP15-172",
+      "name": "Compostpunk",
+      "styleAnchors": ["Compostpunk", "soil and decomposition punk", "compost heaps"],
+      "ref": "pack_15/SP15-172.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "eco-repair-and-climate-punks",
+      "categoryName": "3. Eco, Repair & Climate Punks",
+      "domain": "soil and decomposition punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "eco-repair-and-climate-punks",
+        "soil-and-decomposition-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-172 compostpunk soil and decomposition punk compost heaps 3. eco, repair & climate punks repair futures soil and decomposition punk pack_15 punk spectrum vault eco-repair-and-climate-punks punk-spectrum-vault eco-repair-and-climate-punks soil-and-decomposition-punk"
+    },
+    {
+      "id": "SP15-173",
+      "name": "Watershedpunk",
+      "styleAnchors": ["Watershedpunk", "water harvesting punk", "stepwells"],
+      "ref": "pack_15/SP15-173.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "eco-repair-and-climate-punks",
+      "categoryName": "3. Eco, Repair & Climate Punks",
+      "domain": "water harvesting punk",
+      "tags": ["punk-spectrum-vault", "eco-repair-and-climate-punks", "water-harvesting-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-173 watershedpunk water harvesting punk stepwells 3. eco, repair & climate punks repair futures water harvesting punk pack_15 punk spectrum vault eco-repair-and-climate-punks punk-spectrum-vault eco-repair-and-climate-punks water-harvesting-punk"
+    },
+    {
+      "id": "SP15-174",
+      "name": "Solar Nomadpunk",
+      "styleAnchors": ["Solar Nomadpunk", "solar caravan punk", "solar sails"],
+      "ref": "pack_15/SP15-174.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "eco-repair-and-climate-punks",
+      "categoryName": "3. Eco, Repair & Climate Punks",
+      "domain": "solar caravan punk",
+      "tags": ["punk-spectrum-vault", "eco-repair-and-climate-punks", "solar-caravan-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-174 solar nomadpunk solar caravan punk solar sails 3. eco, repair & climate punks repair futures solar caravan punk pack_15 punk spectrum vault eco-repair-and-climate-punks punk-spectrum-vault eco-repair-and-climate-punks solar-caravan-punk"
+    },
+    {
       "id": "SP15-094",
       "name": "Biopunk",
       "ref": "pack_15/SP15-094.yaml",
@@ -922,5 +1176,5 @@
       "searchableText": "sp15-122 low-tech punk 10. primitive, stone & salvage punks primitive & salvage futures pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks"
     }
   ],
-  "totalPresetCount": 70
+  "totalPresetCount": 87
 }

@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-171
+packId: pack_15
+name: Wildfirepunk
+styleAnchors:
+  - Wildfirepunk
+  - wildfire resilience punk
+  - smoke skies
+displayName: Wildfirepunk
+category: 3. Eco, Repair & Climate Punks
+domain: wildfire resilience punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - eco-repair-and-climate-punks
+  - wildfire
+  - punk
+  - climate
+visualDna:
+  aesthetic: 'Wildfirepunk: communities living with fire, with firebreak towns, ember shelters, smoke masks, controlled burns and forests reborn from ash.'
+  subject_treatment: Keep the prompt's subject and setting; bring fire and smoke close, with shelters, firefighters and new growth among the ashes.
+  color_and_tone: Smoky orange skies, ember red and ash grey with sudden green new growth.
+  lighting_and_shadow: Orange-filtered daylight through smoke and flickering ember glow at night.
+  texture_and_material: Ash, charred bark, fire-resistant canvas, smoke masks and scorched earth.
+  camera_and_composition: Towering smoke columns over small figures, and close views of ash and sprouts.
+  atmosphere_and_mood: Dangerous and defiant, people who learned to live beside the flames.
+  rendering_and_quality: Dramatic smoky illustration with glowing embers and ash texture.
+  creative_brief: "Wildfirepunk: communities living with fire, with firebreak towns, ember shelters, smoke masks, controlled burns and forests reborn from ash. Carry it through smoke skies, ember shelters, controlled burns, green sprouts in ash. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: smoke skies; ember shelters; controlled burns; green sprouts in ash
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - generic glass utopia
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: eco-repair-and-climate-punks
+  categoryName: 3. Eco, Repair & Climate Punks
+  tags:
+    - curation-v2
+    - eco-repair-and-climate-punks
+    - wildfire
+    - punk
+    - climate
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: wildfire resilience punk

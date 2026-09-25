@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-168
+packId: pack_15
+name: Heatwavepunk
+styleAnchors:
+  - Heatwavepunk
+  - extreme heat adaptation punk
+  - shade sails
+displayName: Heatwavepunk
+category: 3. Eco, Repair & Climate Punks
+domain: extreme heat adaptation punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - eco-repair-and-climate-punks
+  - heatwave
+  - punk
+  - climate
+visualDna:
+  aesthetic: 'Heatwavepunk: life adapted to killing heat, with white reflective cities, shade sails, night markets, cooling towers and people living after dark.'
+  subject_treatment: Keep the prompt's subject and setting; bake it in extreme heat with shade structures, reflective surfaces and life shifted to night.
+  color_and_tone: Bleached white, burning orange sky and deep cool blues in the shade.
+  lighting_and_shadow: Blinding sun with hard dark shade, or warm night markets under string lights.
+  texture_and_material: Reflective white paint, shade sails, misting pipes, clay jars and sweat.
+  camera_and_composition: Empty sun-bleached streets by day and crowded night scenes after sunset.
+  atmosphere_and_mood: Oppressive and resourceful, people surviving the sun by inventing a nocturnal life.
+  rendering_and_quality: High-contrast illustration with heat shimmer and deep cooling shade.
+  creative_brief: "Heatwavepunk: life adapted to killing heat, with white reflective cities, shade sails, night markets, cooling towers and people living after dark. Carry it through shade sails, reflective white city, heat shimmer, night markets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: shade sails; reflective white city; heat shimmer; night markets
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - generic glass utopia
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: eco-repair-and-climate-punks
+  categoryName: 3. Eco, Repair & Climate Punks
+  tags:
+    - curation-v2
+    - eco-repair-and-climate-punks
+    - heatwave
+    - punk
+    - climate
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: extreme heat adaptation punk

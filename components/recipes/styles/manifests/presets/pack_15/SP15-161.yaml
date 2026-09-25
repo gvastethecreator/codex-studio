@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-161
+packId: pack_15
+name: Windpunk
+styleAnchors:
+  - Windpunk
+  - wind energy punk
+  - turbine forests
+displayName: Windpunk
+category: 3. Eco, Repair & Climate Punks
+domain: wind energy punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - eco-repair-and-climate-punks
+  - windpunk
+  - punk
+  - climate
+visualDna:
+  aesthetic: 'Windpunk: a world powered by wind, with forests of turbines, kite generators, whistling towers and cities that move with the weather.'
+  subject_treatment: Keep the prompt's subject and setting; add turbines, kites, sails and wind chimes, with everything leaning into the wind.
+  color_and_tone: Sky blues and cloud whites with bright turbine whites and kite colors.
+  lighting_and_shadow: Fast-moving cloud shadows racing across the land in bright, gusty daylight.
+  texture_and_material: Turbine blades, kite fabric, tensioned cables, wind chimes and grass bent flat.
+  camera_and_composition: Wide windy landscapes with turbines on ridges and figures braced against gusts.
+  atmosphere_and_mood: Restless and joyful, a civilization that dances with every storm.
+  rendering_and_quality: Airy dynamic illustration with strong sense of wind motion.
+  creative_brief: "Windpunk: a world powered by wind, with forests of turbines, kite generators, whistling towers and cities that move with the weather. Carry it through turbine forests, kite generators, leaning figures, cloud shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: turbine forests; kite generators; leaning figures; cloud shadows
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - generic glass utopia
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: eco-repair-and-climate-punks
+  categoryName: 3. Eco, Repair & Climate Punks
+  tags:
+    - curation-v2
+    - eco-repair-and-climate-punks
+    - windpunk
+    - punk
+    - climate
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: wind energy punk

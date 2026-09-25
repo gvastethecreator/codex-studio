@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-173
+packId: pack_15
+name: Watershedpunk
+styleAnchors:
+  - Watershedpunk
+  - water harvesting punk
+  - stepwells
+displayName: Watershedpunk
+category: 3. Eco, Repair & Climate Punks
+domain: water harvesting punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - eco-repair-and-climate-punks
+  - watershed
+  - punk
+  - climate
+visualDna:
+  aesthetic: 'Watershedpunk: communities that harvest every drop, with fog nets, rain towers, stepwells, aqueducts and water shrines in dry lands.'
+  subject_treatment: Keep the prompt's subject and setting; channel water through it with nets, stepwells, cisterns and aqueducts.
+  color_and_tone: Dry ochre and terracotta with precious clear blues of collected water.
+  lighting_and_shadow: Harsh sun on dry land and cool shade over glinting water pools.
+  texture_and_material: Stone stepwells, fog nets, clay pipes, cisterns and wet moss in the shade.
+  camera_and_composition: Deep stepwell perspectives and dry landscapes crossed by thin water channels.
+  atmosphere_and_mood: Reverent and resourceful, water treated as the most sacred thing there is.
+  rendering_and_quality: Precise illustration with geometric stone structures and glinting water.
+  creative_brief: "Watershedpunk: communities that harvest every drop, with fog nets, rain towers, stepwells, aqueducts and water shrines in dry lands. Carry it through stepwells, fog nets, aqueducts, water shrines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stepwells; fog nets; aqueducts; water shrines
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - generic glass utopia
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: eco-repair-and-climate-punks
+  categoryName: 3. Eco, Repair & Climate Punks
+  tags:
+    - curation-v2
+    - eco-repair-and-climate-punks
+    - watershed
+    - punk
+    - climate
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: water harvesting punk

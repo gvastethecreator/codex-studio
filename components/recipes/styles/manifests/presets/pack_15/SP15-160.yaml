@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-160
+packId: pack_15
+name: Seedpunk
+styleAnchors:
+  - Seedpunk
+  - seed vault agriculture punk
+  - seed vaults
+displayName: Seedpunk
+category: 3. Eco, Repair & Climate Punks
+domain: seed vault agriculture punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - eco-repair-and-climate-punks
+  - seedpunk
+  - punk
+  - climate
+visualDna:
+  aesthetic: 'Seedpunk: guardians of seeds and soil, with seed vaults, pollination rigs, crop libraries and farmers as heroes of the future.'
+  subject_treatment: Keep the prompt's subject and setting; fill it with seeds, drawers of samples, sprouting trays and hand-built farming tools.
+  color_and_tone: Earthy browns and seed golds with fresh sprout green and vault steel.
+  lighting_and_shadow: Warm lamps over seed drawers and sunlight falling on fields.
+  texture_and_material: Seed packets without text, wooden drawers, clay pots, soil and jute sacks.
+  camera_and_composition: Rows of seed drawers and sprouting trays, or tiny figures in giant fields.
+  atmosphere_and_mood: Patient and precious, the future of the world held in tiny grains.
+  rendering_and_quality: Detailed botanical illustration with rich natural textures in every seed and leaf.
+  creative_brief: "Seedpunk: guardians of seeds and soil, with seed vaults, pollination rigs, crop libraries and farmers as heroes of the future. Carry it through seed vaults, sprouting trays, drawers of samples, farmer guardians. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: seed vaults; sprouting trays; drawers of samples; farmer guardians
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - generic glass utopia
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: eco-repair-and-climate-punks
+  categoryName: 3. Eco, Repair & Climate Punks
+  tags:
+    - curation-v2
+    - eco-repair-and-climate-punks
+    - seedpunk
+    - punk
+    - climate
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: seed vault agriculture punk

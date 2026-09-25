@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-158
+packId: pack_15
+name: Floodpunk
+styleAnchors:
+  - Floodpunk
+  - sea-level-rise stilt city punk
+  - stilts
+displayName: Floodpunk
+category: 3. Eco, Repair & Climate Punks
+domain: sea-level-rise stilt city punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - eco-repair-and-climate-punks
+  - floodpunk
+  - punk
+  - climate
+visualDna:
+  aesthetic: 'Floodpunk: drowned cities rebuilt above the waterline on stilts, rafts and rooftop bridges, with boats as streets and old towers as islands.'
+  subject_treatment: Keep the prompt's subject and setting; raise water around it and rebuild life on stilts, rafts and rope bridges above the flood.
+  color_and_tone: Murky green-blue water, weathered wood and rust with bright laundry and boat colors.
+  lighting_and_shadow: Hazy humid daylight and rippling water reflections on everything.
+  texture_and_material: Stilts, lashed timber, patched tarps, sagging rope bridges and algae-stained concrete below.
+  camera_and_composition: Waterline views with drowned streets below and life stacked above.
+  atmosphere_and_mood: Resilient and melancholic, a city that refused to leave when the sea came in.
+  rendering_and_quality: Detailed illustration with convincing water reflections and layered structures.
+  creative_brief: "Floodpunk: drowned cities rebuilt above the waterline on stilts, rafts and rooftop bridges, with boats as streets and old towers as islands. Carry it through stilts, drowned streets, rooftop bridges, boats as streets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stilts; drowned streets; rooftop bridges; boats as streets
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - generic glass utopia
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: eco-repair-and-climate-punks
+  categoryName: 3. Eco, Repair & Climate Punks
+  tags:
+    - curation-v2
+    - eco-repair-and-climate-punks
+    - floodpunk
+    - punk
+    - climate
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: sea-level-rise stilt city punk

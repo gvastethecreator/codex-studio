@@ -59,6 +59,23 @@ categories:
       - pack_15/SP15-087.yaml
       - pack_15/SP15-088.yaml
       - pack_15/SP15-091.yaml
+      - pack_15/SP15-158.yaml
+      - pack_15/SP15-159.yaml
+      - pack_15/SP15-160.yaml
+      - pack_15/SP15-161.yaml
+      - pack_15/SP15-162.yaml
+      - pack_15/SP15-163.yaml
+      - pack_15/SP15-164.yaml
+      - pack_15/SP15-165.yaml
+      - pack_15/SP15-166.yaml
+      - pack_15/SP15-167.yaml
+      - pack_15/SP15-168.yaml
+      - pack_15/SP15-169.yaml
+      - pack_15/SP15-170.yaml
+      - pack_15/SP15-171.yaml
+      - pack_15/SP15-172.yaml
+      - pack_15/SP15-173.yaml
+      - pack_15/SP15-174.yaml
   - id: bio-myco-and-body-punks
     name: 4. Bio, Myco & Body Punks
     presetRefs:
@@ -151,6 +168,23 @@ presetRefs:
   - pack_15/SP15-087.yaml
   - pack_15/SP15-088.yaml
   - pack_15/SP15-091.yaml
+  - pack_15/SP15-158.yaml
+  - pack_15/SP15-159.yaml
+  - pack_15/SP15-160.yaml
+  - pack_15/SP15-161.yaml
+  - pack_15/SP15-162.yaml
+  - pack_15/SP15-163.yaml
+  - pack_15/SP15-164.yaml
+  - pack_15/SP15-165.yaml
+  - pack_15/SP15-166.yaml
+  - pack_15/SP15-167.yaml
+  - pack_15/SP15-168.yaml
+  - pack_15/SP15-169.yaml
+  - pack_15/SP15-170.yaml
+  - pack_15/SP15-171.yaml
+  - pack_15/SP15-172.yaml
+  - pack_15/SP15-173.yaml
+  - pack_15/SP15-174.yaml
   - pack_15/SP15-094.yaml
   - pack_15/SP15-095.yaml
   - pack_15/SP15-096.yaml

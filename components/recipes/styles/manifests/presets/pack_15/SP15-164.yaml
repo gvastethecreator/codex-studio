@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-164
+packId: pack_15
+name: Monsoonpunk
+styleAnchors:
+  - Monsoonpunk
+  - monsoon city punk
+  - rain curtains
+displayName: Monsoonpunk
+category: 3. Eco, Repair & Climate Punks
+domain: monsoon city punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - eco-repair-and-climate-punks
+  - monsoonpunk
+  - punk
+  - climate
+visualDna:
+  aesthetic: 'Monsoonpunk: cities designed for torrential rain, with waterfall streets, umbrella roofs, rain-harvesting towers and life that goes on in the downpour.'
+  subject_treatment: Keep the prompt's subject and setting; drench it in heavy monsoon rain with rain-harvesting structures and people carrying on.
+  color_and_tone: Rain greys and deep greens with saturated umbrella colors and lamp amber.
+  lighting_and_shadow: Diffuse rain light, glowing windows and reflections in flooded streets.
+  texture_and_material: Sheets of rain, waterproof tarps, gutters, rain chains and soaked fabrics.
+  camera_and_composition: Streets seen through curtains of rain with waterfalls pouring off roofs.
+  atmosphere_and_mood: Drenched and lively, a city that treats the storm as part of the family.
+  rendering_and_quality: Atmospheric illustration with convincing rain sheets and wet reflections.
+  creative_brief: "Monsoonpunk: cities designed for torrential rain, with waterfall streets, umbrella roofs, rain-harvesting towers and life that goes on in the downpour. Carry it through rain curtains, waterfall roofs, umbrella canopies, rain chains. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: rain curtains; waterfall roofs; umbrella canopies; rain chains
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - generic glass utopia
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic glass utopia, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: eco-repair-and-climate-punks
+  categoryName: 3. Eco, Repair & Climate Punks
+  tags:
+    - curation-v2
+    - eco-repair-and-climate-punks
+    - monsoonpunk
+    - punk
+    - climate
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: monsoon city punk
