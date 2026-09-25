@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP10-129
+packId: pack_10
+name: Guilloché Engraving
+styleAnchors:
+  - Guilloché Engraving
+  - guilloche engine turning
+  - engine-turned grooves
+displayName: Guilloché Engraving
+category: 6. Material Surface Textures
+domain: guilloche engine turning
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - material-surface-textures
+  - guilloche
+  - engraving
+  - surface
+visualDna:
+  aesthetic: 'Guilloché: machine-engraved repeating wave and sunburst patterns under enamel.'
+  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: fine engine-turned wave and sunburst patterns cover the surfaces. The decorative surface pattern is the point: make its figure, veining or motif the first read."
+  color_and_tone: Silver or gold with translucent enamel, kept on the material while the rest of the scene keeps its own palette.
+  lighting_and_shadow: Light rippling in grooves, chosen to reveal how the material reflects, absorbs or transmits light.
+  texture_and_material: Engine-turned grooves, at a believable physical scale relative to the target.
+  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.
+  atmosphere_and_mood: Precise, luxurious, hypnotic and refined, carried by the material itself rather than by added props.
+  rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Guilloché Engraving as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: engine-turned grooves; sunburst; decorative surface pattern
+avoidRules:
+  - material applied to the background instead of the target
+  - unrequested sample object or habitat
+  - readable text
+  - logo
+  - muddy noisy texture
+  - plain untextured surface
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_10
+  packName: Abstract & Experimental
+  categoryId: material-surface-textures
+  categoryName: 6. Material Surface Textures
+  tags:
+    - abstract-and-experimental
+    - material-surface-textures
+    - guilloche
+    - engraving
+    - surface
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: guilloche engine turning

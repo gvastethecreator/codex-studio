@@ -136,6 +136,15 @@ categories:
       - pack_10/SP10-063.yaml
       - pack_10/SP10-064.yaml
       - pack_10/SP10-071.yaml
+      - pack_10/SP10-123.yaml
+      - pack_10/SP10-124.yaml
+      - pack_10/SP10-125.yaml
+      - pack_10/SP10-126.yaml
+      - pack_10/SP10-127.yaml
+      - pack_10/SP10-128.yaml
+      - pack_10/SP10-129.yaml
+      - pack_10/SP10-130.yaml
+      - pack_10/SP10-131.yaml
   - id: diagram-and-data-systems
     name: 7. Diagram And Data Systems
     presetRefs:
@@ -268,6 +277,15 @@ presetRefs:
   - pack_10/SP10-063.yaml
   - pack_10/SP10-064.yaml
   - pack_10/SP10-071.yaml
+  - pack_10/SP10-123.yaml
+  - pack_10/SP10-124.yaml
+  - pack_10/SP10-125.yaml
+  - pack_10/SP10-126.yaml
+  - pack_10/SP10-127.yaml
+  - pack_10/SP10-128.yaml
+  - pack_10/SP10-129.yaml
+  - pack_10/SP10-130.yaml
+  - pack_10/SP10-131.yaml
   - pack_10/SP10-067.yaml
   - pack_10/SP10-068.yaml
   - pack_10/SP10-069.yaml

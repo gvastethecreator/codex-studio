@@ -3,7 +3,7 @@
     {
       "id": "pack_10",
       "name": "Abstract & Experimental",
-      "presetCount": 122
+      "presetCount": 131
     }
   ],
   "presets": [
@@ -1516,6 +1516,148 @@
       "searchableText": "sp10-071 kintsugi 6. material surface textures surface transformations pack_10 abstract & experimental material-surface-textures abstract-and-experimental material-surface-textures"
     },
     {
+      "id": "SP10-123",
+      "name": "Raku Crackle Glaze",
+      "styleAnchors": ["Raku Crackle Glaze", "raku crackle glaze", "raku crackle"],
+      "ref": "pack_10/SP10-123.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "material-surface-textures",
+      "categoryName": "6. Material Surface Textures",
+      "domain": "raku crackle glaze",
+      "tags": ["abstract-and-experimental", "material-surface-textures", "raku-crackle-glaze"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-123 raku crackle glaze raku crackle glaze raku crackle 6. material surface textures surface transformations raku crackle glaze pack_10 abstract & experimental material-surface-textures abstract-and-experimental material-surface-textures raku-crackle-glaze"
+    },
+    {
+      "id": "SP10-124",
+      "name": "Damascus Steel",
+      "styleAnchors": ["Damascus Steel", "damascus pattern-welded steel", "Damascus wave pattern"],
+      "ref": "pack_10/SP10-124.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "material-surface-textures",
+      "categoryName": "6. Material Surface Textures",
+      "domain": "damascus pattern-welded steel",
+      "tags": [
+        "abstract-and-experimental",
+        "material-surface-textures",
+        "damascus-pattern-welded-steel"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-124 damascus steel damascus pattern-welded steel damascus wave pattern 6. material surface textures surface transformations damascus pattern-welded steel pack_10 abstract & experimental material-surface-textures abstract-and-experimental material-surface-textures damascus-pattern-welded-steel"
+    },
+    {
+      "id": "SP10-125",
+      "name": "Burl Wood Figure",
+      "styleAnchors": ["Burl Wood Figure", "burl wood figure", "swirling burl figure"],
+      "ref": "pack_10/SP10-125.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "material-surface-textures",
+      "categoryName": "6. Material Surface Textures",
+      "domain": "burl wood figure",
+      "tags": ["abstract-and-experimental", "material-surface-textures", "burl-wood-figure"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-125 burl wood figure burl wood figure swirling burl figure 6. material surface textures surface transformations burl wood figure pack_10 abstract & experimental material-surface-textures abstract-and-experimental material-surface-textures burl-wood-figure"
+    },
+    {
+      "id": "SP10-126",
+      "name": "Mokume-gane",
+      "styleAnchors": ["Mokume-gane", "mokume-gane layered metal", "layered metal grain"],
+      "ref": "pack_10/SP10-126.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "material-surface-textures",
+      "categoryName": "6. Material Surface Textures",
+      "domain": "mokume-gane layered metal",
+      "tags": [
+        "abstract-and-experimental",
+        "material-surface-textures",
+        "mokume-gane-layered-metal"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-126 mokume-gane mokume-gane layered metal layered metal grain 6. material surface textures surface transformations mokume-gane layered metal pack_10 abstract & experimental material-surface-textures abstract-and-experimental material-surface-textures mokume-gane-layered-metal"
+    },
+    {
+      "id": "SP10-127",
+      "name": "Tadelakt Plaster",
+      "styleAnchors": ["Tadelakt Plaster", "tadelakt polished plaster", "burnished plaster"],
+      "ref": "pack_10/SP10-127.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "material-surface-textures",
+      "categoryName": "6. Material Surface Textures",
+      "domain": "tadelakt polished plaster",
+      "tags": [
+        "abstract-and-experimental",
+        "material-surface-textures",
+        "tadelakt-polished-plaster"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-127 tadelakt plaster tadelakt polished plaster burnished plaster 6. material surface textures surface transformations tadelakt polished plaster pack_10 abstract & experimental material-surface-textures abstract-and-experimental material-surface-textures tadelakt-polished-plaster"
+    },
+    {
+      "id": "SP10-128",
+      "name": "Cloisonné Enamel",
+      "styleAnchors": ["Cloisonné Enamel", "cloisonne enamel", "enamel in gold wire cells"],
+      "ref": "pack_10/SP10-128.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "material-surface-textures",
+      "categoryName": "6. Material Surface Textures",
+      "domain": "cloisonne enamel",
+      "tags": ["abstract-and-experimental", "material-surface-textures", "cloisonne-enamel"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-128 cloisonné enamel cloisonne enamel enamel in gold wire cells 6. material surface textures surface transformations cloisonne enamel pack_10 abstract & experimental material-surface-textures abstract-and-experimental material-surface-textures cloisonne-enamel"
+    },
+    {
+      "id": "SP10-129",
+      "name": "Guilloché Engraving",
+      "styleAnchors": ["Guilloché Engraving", "guilloche engine turning", "engine-turned grooves"],
+      "ref": "pack_10/SP10-129.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "material-surface-textures",
+      "categoryName": "6. Material Surface Textures",
+      "domain": "guilloche engine turning",
+      "tags": [
+        "abstract-and-experimental",
+        "material-surface-textures",
+        "guilloche-engine-turning"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-129 guilloché engraving guilloche engine turning engine-turned grooves 6. material surface textures surface transformations guilloche engine turning pack_10 abstract & experimental material-surface-textures abstract-and-experimental material-surface-textures guilloche-engine-turning"
+    },
+    {
+      "id": "SP10-130",
+      "name": "Urushi Lacquer",
+      "styleAnchors": ["Urushi Lacquer", "urushi lacquer finish", "deep lacquer"],
+      "ref": "pack_10/SP10-130.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "material-surface-textures",
+      "categoryName": "6. Material Surface Textures",
+      "domain": "urushi lacquer finish",
+      "tags": ["abstract-and-experimental", "material-surface-textures", "urushi-lacquer-finish"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-130 urushi lacquer urushi lacquer finish deep lacquer 6. material surface textures surface transformations urushi lacquer finish pack_10 abstract & experimental material-surface-textures abstract-and-experimental material-surface-textures urushi-lacquer-finish"
+    },
+    {
+      "id": "SP10-131",
+      "name": "Hammered Metal",
+      "styleAnchors": ["Hammered Metal", "hammered metal texture", "hammered dimples"],
+      "ref": "pack_10/SP10-131.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "material-surface-textures",
+      "categoryName": "6. Material Surface Textures",
+      "domain": "hammered metal texture",
+      "tags": ["abstract-and-experimental", "material-surface-textures", "hammered-metal-texture"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-131 hammered metal hammered metal texture hammered dimples 6. material surface textures surface transformations hammered metal texture pack_10 abstract & experimental material-surface-textures abstract-and-experimental material-surface-textures hammered-metal-texture"
+    },
+    {
       "id": "SP10-067",
       "name": "Circuit Board",
       "ref": "pack_10/SP10-067.yaml",
@@ -1648,5 +1790,5 @@
       "searchableText": "sp10-080 letterpress 9. print and light finishes print & light finish pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes"
     }
   ],
-  "totalPresetCount": 122
+  "totalPresetCount": 131
 }

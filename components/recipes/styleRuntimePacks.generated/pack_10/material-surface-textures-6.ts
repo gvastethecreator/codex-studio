@@ -8,28 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Terrazzo',
     category: '6. Material Surface Textures',
     negativePrompt:
-      'wood, metal, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, wood, metal, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Terrazzo becomes a transferable material surface transformation system: start from Stone chips in cement and Random chips, then route prompt content through physical surface grain, reflectance, damage, joinery, pores, seams, and tactile structure without forcing one card scene.',
+        'Terrazzo: polished composite with scattered stone and glass chips in a cement matrix.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Random chips to coat, wrap, weather, polish, crack, scale, link, or embed forms while preserving the prompt composition; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the surface shows scattered colored chips set in a smooth matrix. The decorative surface pattern is the point: make its figure, veining or motif the first read.",
       color_and_tone:
-        'Build the palette from Speckled pastel; let color follow material depth, veins, patina, oxidation, fiber direction, shimmer, or manufactured finish, with enough value control that the subject remains readable after the style layer is applied.',
+        'Cream matrix with terracotta, green and black chips, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Flat drive the light response: show reflectance honestly through gloss, matte falloff, iridescence, metallic shear, or micro-shadow, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Soft even light on polished surface, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Polished stone as the tactile or mark-making basis; surface behavior needs coherent grain, chips, cracks, pores, links, flakes, scales, strands, or inclusions, scaled to figures, props, spaces, or close material studies.',
+        'Polished chips flush in matrix, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Random chips as reusable spatial grammar: support macro texture studies and full-scene use through directional grain, repeat, drape, fracture, or patch rhythm, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        'Use Modern, clean as the emotional register; derive mood from durability, luxury, decay, tactility, craft, armor, novelty, or contamination, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Playful, modern, crafted and bright, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Resolve as Interior design: finish with material clarity, controlled micro-detail, and no stock texture pasted over forms, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Stone chips in cement; Random chips; Speckled pastel; Flat; Polished stone; Random chips; Modern, clean; Interior design; Random chips',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'scattered chips; polished matrix; decorative surface pattern',
       creative_brief:
-        'Apply terrazzo material logic to the input: irregular marble chips, mineral flecks, polished binder fields, and orderly random scatter should turn surfaces or silhouettes into composite stone without requiring floors.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Terrazzo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +36,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Marble Texture',
     category: '6. Material Surface Textures',
     negativePrompt:
-      'wood, plastic, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, wood, plastic, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Marble Texture becomes a transferable material surface transformation system: start from Stone veins, then route prompt content through physical surface grain, reflectance, damage, joinery, pores, seams, and tactile structure without forcing one card scene.',
+      aesthetic: 'Marble veining texture: dramatic flowing veins across polished stone.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Random veins to coat, wrap, weather, polish, crack, scale, link, or embed forms while preserving the prompt composition; preserve anatomy, object identity, or scene intent beneath the abstraction.",
-      color_and_tone:
-        'Build the palette from White, Grey, Gold; let color follow material depth, veins, patina, oxidation, fiber direction, shimmer, or manufactured finish, with enough value control that the subject remains readable after the style layer is applied.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: bold flowing veins sweep across the target's surfaces. The decorative surface pattern is the point: make its figure, veining or motif the first read.",
+      color_and_tone: 'White, black or green marble with gold or grey veins.',
       lighting_and_shadow:
-        'Let Polished reflection drive the light response: show reflectance honestly through gloss, matte falloff, iridescence, metallic shear, or micro-shadow, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Polished reflections, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Stone as the tactile or mark-making basis; surface behavior needs coherent grain, chips, cracks, pores, links, flakes, scales, strands, or inclusions, scaled to figures, props, spaces, or close material studies.',
+        'Flowing veins and polish, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Veins as reusable spatial grammar: support macro texture studies and full-scene use through directional grain, repeat, drape, fracture, or patch rhythm, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        'Use Expensive, cold as the emotional register; derive mood from durability, luxury, decay, tactility, craft, armor, novelty, or contamination, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Luxurious, dramatic, cool and grand, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Resolve as Luxury, natural: finish with material clarity, controlled micro-detail, and no stock texture pasted over forms, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Stone veins; Random veins; White, Grey, Gold; Polished reflection; Stone; Veins; Expensive, cold; Luxury, natural; Veins',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'dramatic flowing veins; decorative surface pattern',
       creative_brief:
-        'Apply marble veining to the input: polished stone depth, branching mineral lines, cloudy translucency, and pressure-born elegance should harden forms into geological luxury without requiring sculpture or architecture.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Marble Texture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +62,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Wood Grain',
     category: '6. Material Surface Textures',
     negativePrompt:
-      'metal, stone, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, metal, stone, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Wood Grain becomes a transferable material surface transformation system: start from Tree rings, Directional grain, and Knots, then route prompt content through physical surface grain, reflectance, damage, joinery, pores, seams, and tactile structure without forcing one card scene.',
+      aesthetic: 'Wood grain texture: bold flowing grain lines and knots across the surface.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Flowing lines to coat, wrap, weather, polish, crack, scale, link, or embed forms while preserving the prompt composition; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: strong grain lines flow around knots over the surfaces. The decorative surface pattern is the point: make its figure, veining or motif the first read.",
       color_and_tone:
-        'Build the palette from Brown, Tan; let color follow material depth, veins, patina, oxidation, fiber direction, shimmer, or manufactured finish, with enough value control that the subject remains readable after the style layer is applied.',
+        'Warm wood tones with dark grain, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Varnish gloss drive the light response: show reflectance honestly through gloss, matte falloff, iridescence, metallic shear, or micro-shadow, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Warm side light, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Wood as the tactile or mark-making basis; surface behavior needs coherent grain, chips, cracks, pores, links, flakes, scales, strands, or inclusions, scaled to figures, props, spaces, or close material studies.',
+        'Flowing grain and knots, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Knots as reusable spatial grammar: support macro texture studies and full-scene use through directional grain, repeat, drape, fracture, or patch rhythm, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        'Use Rustic, solid as the emotional register; derive mood from durability, luxury, decay, tactility, craft, armor, novelty, or contamination, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Warm, organic, handcrafted and natural, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Resolve as Natural, warm: finish with material clarity, controlled micro-detail, and no stock texture pasted over forms, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Tree rings; Flowing lines; Brown, Tan; Varnish gloss; Wood; Knots; Rustic, solid; Natural, warm; Directional grain',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'flowing grain lines; knots; decorative surface pattern',
       creative_brief:
-        'Apply wood-grain structure to the input: growth rings, warm cellulose striations, knots, directional fibers, and varnished or raw grain shifts should make forms feel grown and carved without requiring trees.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wood Grain as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +89,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Carbon Fiber',
     category: '6. Material Surface Textures',
     negativePrompt:
-      'organic, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, organic, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Carbon Fiber becomes a transferable material surface transformation system: start from Woven tech material and Weave, then route prompt content through physical surface grain, reflectance, damage, joinery, pores, seams, and tactile structure without forcing one card scene.',
+      aesthetic: 'Carbon fiber weave: glossy twill pattern of black fibers.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Diagonal weave to coat, wrap, weather, polish, crack, scale, link, or embed forms while preserving the prompt composition; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: a glossy 2x2 twill carbon weave covers the surfaces. The decorative surface pattern is the point: make its figure, veining or motif the first read.",
       color_and_tone:
-        'Build the palette from Black, Grey; let color follow material depth, veins, patina, oxidation, fiber direction, shimmer, or manufactured finish, with enough value control that the subject remains readable after the style layer is applied.',
+        'Black and graphite with gloss, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Anisotropic drive the light response: show reflectance honestly through gloss, matte falloff, iridescence, metallic shear, or micro-shadow, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Strip light across the weave, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Synthetic as the tactile or mark-making basis; surface behavior needs coherent grain, chips, cracks, pores, links, flakes, scales, strands, or inclusions, scaled to figures, props, spaces, or close material studies.',
+        'Twill weave under clear coat, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Weave as reusable spatial grammar: support macro texture studies and full-scene use through directional grain, repeat, drape, fracture, or patch rhythm, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        'Use Sporty, modern as the emotional register; derive mood from durability, luxury, decay, tactility, craft, armor, novelty, or contamination, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'High-tech, sleek, sporty and modern, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Resolve as High tech, fast: finish with material clarity, controlled micro-detail, and no stock texture pasted over forms, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Woven tech material; Diagonal weave; Black, Grey; Anisotropic; Synthetic; Weave; Sporty, modern; High tech, fast; Weave',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'twill carbon weave; glossy; decorative surface pattern',
       creative_brief:
-        'Apply carbon-fiber performance texture to the input: diagonal woven filaments, subtle anisotropic sheen, dark composite depth, and precision surface discipline should make any subject feel lightweight and engineered.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carbon Fiber as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +116,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Leather Texture',
     category: '6. Material Surface Textures',
     negativePrompt:
-      'fabric, smooth, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, fabric, smooth, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Leather Texture becomes a transferable material surface transformation system: start from Leather grain, Pores, and Wrinkles, then route prompt content through physical surface grain, reflectance, damage, joinery, pores, seams, and tactile structure without forcing one card scene.',
+      aesthetic: 'Leather texture: pebbled or embossed leather grain with stitching.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Pores and creases to coat, wrap, weather, polish, crack, scale, link, or embed forms while preserving the prompt composition; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: embossed leather grain and saddle stitching cover the surfaces. The decorative surface pattern is the point: make its figure, veining or motif the first read.",
       color_and_tone:
-        'Build the palette from Brown, Black; let color follow material depth, veins, patina, oxidation, fiber direction, shimmer, or manufactured finish, with enough value control that the subject remains readable after the style layer is applied.',
+        'Cognac, black, oxblood, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Sheen drive the light response: show reflectance honestly through gloss, matte falloff, iridescence, metallic shear, or micro-shadow, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Soft side light, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Pores, creases, patina as the tactile or mark-making basis; surface behavior needs coherent grain, chips, cracks, pores, links, flakes, scales, strands, or inclusions, scaled to figures, props, spaces, or close material studies.',
+        'Grain, stitching and edge paint, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Wrinkles as reusable spatial grammar: support macro texture studies and full-scene use through directional grain, repeat, drape, fracture, or patch rhythm, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        'Use Classic, rich as the emotional register; derive mood from durability, luxury, decay, tactility, craft, armor, novelty, or contamination, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Crafted, warm, rugged and classic, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Resolve as Luxury, durable: finish with material clarity, controlled micro-detail, and no stock texture pasted over forms, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Leather grain; Pores and creases; Brown, Black; Sheen; Pores, creases, patina; Wrinkles; Classic, rich; Luxury, durable; Pores',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'leather grain; saddle stitching; decorative surface pattern',
       creative_brief:
-        'Route any subject through Leather Texture as a transferable material-surface visual system: preserve prompt intent while converting form, grain, reflectivity, wear, pores, seams, and tactile relief through this preset. Apply leather grain as durable patinated surface over the input with pores, creases, brown-black sheen, softened wear, and rich craft depth. If bag, jacket, armor, furniture, or object exists, leatherize it; otherwise use leather texture as abstract material finish without focusing on animal hide.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Leather Texture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +143,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Glitter Texture',
     category: '6. Material Surface Textures',
     negativePrompt:
-      'matte, dull, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, matte, dull, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Glitter Texture becomes a transferable material surface transformation system: start from Thousands of sparkles and Sparkle density, then route prompt content through physical surface grain, reflectance, damage, joinery, pores, seams, and tactile structure without forcing one card scene.',
+      aesthetic: 'Glitter texture: dense sparkling glitter coating.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Sparkle density to coat, wrap, weather, polish, crack, scale, link, or embed forms while preserving the prompt composition; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: dense multicolor glitter coats the surfaces. The decorative surface pattern is the point: make its figure, veining or motif the first read.",
       color_and_tone:
-        'Build the palette from Metallic, rainbow; let color follow material depth, veins, patina, oxidation, fiber direction, shimmer, or manufactured finish, with enough value control that the subject remains readable after the style layer is applied.',
+        'Gold, silver or rainbow glitter, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Sparkles drive the light response: show reflectance honestly through gloss, matte falloff, iridescence, metallic shear, or micro-shadow, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Point lights for sparkle, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Rough, shiny as the tactile or mark-making basis; surface behavior needs coherent grain, chips, cracks, pores, links, flakes, scales, strands, or inclusions, scaled to figures, props, spaces, or close material studies.',
+        'Glitter flakes, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Sparkle density as reusable spatial grammar: support macro texture studies and full-scene use through directional grain, repeat, drape, fracture, or patch rhythm, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        'Use Fun, cheap as the emotional register; derive mood from durability, luxury, decay, tactility, craft, armor, novelty, or contamination, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Festive, playful, sparkly and kitsch, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Resolve as Party, craft: finish with material clarity, controlled micro-detail, and no stock texture pasted over forms, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Thousands of sparkles; Sparkle density; Metallic, rainbow; Sparkles; Rough, shiny; Sparkle density; Fun, cheap; Party, craft; Sparkle density',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'dense glitter sparkle; decorative surface pattern',
       creative_brief:
-        'Apply glitter density to the input: micro-mirror flecks, refractive sparkle, dense specular scatter, and celebratory particulate geometry should make surfaces flare without requiring party props or product piles.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glitter Texture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +170,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rust Texture',
     category: '6. Material Surface Textures',
     negativePrompt:
-      'clean, new, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, clean, new, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Rust Texture becomes a transferable material surface transformation system: start from Oxidized metal, Random patches, and Corrosion, then route prompt content through physical surface grain, reflectance, damage, joinery, pores, seams, and tactile structure without forcing one card scene.',
+      aesthetic: 'Rust texture: decorative rust blooms and streaks as surface pattern.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Flakes to coat, wrap, weather, polish, crack, scale, link, or embed forms while preserving the prompt composition; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: orange rust blooms and streaks pattern the surface. The decorative surface pattern is the point: make its figure, veining or motif the first read.",
       color_and_tone:
-        'Build the palette from Orange, Brown; let color follow material depth, veins, patina, oxidation, fiber direction, shimmer, or manufactured finish, with enough value control that the subject remains readable after the style layer is applied.',
+        'Orange and brown on grey, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Matte drive the light response: show reflectance honestly through gloss, matte falloff, iridescence, metallic shear, or micro-shadow, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Warm light, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Rough, flaky as the tactile or mark-making basis; surface behavior needs coherent grain, chips, cracks, pores, links, flakes, scales, strands, or inclusions, scaled to figures, props, spaces, or close material studies.',
+        'Rust blooms and streaks, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Corrosion as reusable spatial grammar: support macro texture studies and full-scene use through directional grain, repeat, drape, fracture, or patch rhythm, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        'Use Abandoned, gritty as the emotional register; derive mood from durability, luxury, decay, tactility, craft, armor, novelty, or contamination, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Aged, industrial, raw and warm, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Resolve as Decay, old: finish with material clarity, controlled micro-detail, and no stock texture pasted over forms, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Oxidized metal; Flakes; Orange, Brown; Matte; Rough, flaky; Corrosion; Abandoned, gritty; Decay, old; Random patches',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'rust blooms and streaks; decorative surface pattern',
       creative_brief:
-        'Apply rust corrosion to the input: orange-brown blooms, flaking iron, pitted edges, oxidized stains, and slow entropy gradients should age any subject without requiring metal junkyards or abandoned settings.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rust Texture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +197,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Holographic Foil',
     category: '6. Material Surface Textures',
     negativePrompt:
-      'matte paper, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, matte paper, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Holographic Foil becomes a transferable material surface transformation system: start from Rainbow reflection, Rainbow gradient, and Color shift, then route prompt content through physical surface grain, reflectance, damage, joinery, pores, seams, and tactile structure without forcing one card scene.',
+      aesthetic: 'Holographic foil: rainbow diffraction foil that shifts color with angle.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Smooth to coat, wrap, weather, polish, crack, scale, link, or embed forms while preserving the prompt composition; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: holographic diffraction foil covers the surfaces with shifting rainbows. The decorative surface pattern is the point: make its figure, veining or motif the first read.",
       color_and_tone:
-        'Build the palette from Spectrum; let color follow material depth, veins, patina, oxidation, fiber direction, shimmer, or manufactured finish, with enough value control that the subject remains readable after the style layer is applied.',
+        'Rainbow diffraction over silver, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Iridescent drive the light response: show reflectance honestly through gloss, matte falloff, iridescence, metallic shear, or micro-shadow, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Point lights for diffraction, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Smooth plastic as the tactile or mark-making basis; surface behavior needs coherent grain, chips, cracks, pores, links, flakes, scales, strands, or inclusions, scaled to figures, props, spaces, or close material studies.',
+        'Foil with diffraction pattern, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Color shift as reusable spatial grammar: support macro texture studies and full-scene use through directional grain, repeat, drape, fracture, or patch rhythm, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        'Use Cool, collectible as the emotional register; derive mood from durability, luxury, decay, tactility, craft, armor, novelty, or contamination, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Futuristic, playful, shiny and pop, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Resolve as Sticker, card: finish with material clarity, controlled micro-detail, and no stock texture pasted over forms, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Rainbow reflection; Smooth; Spectrum; Iridescent; Smooth plastic; Color shift; Cool, collectible; Sticker, card; Rainbow gradient',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'holographic diffraction foil; decorative surface pattern',
       creative_brief:
-        'Route any subject through Holographic Foil as a transferable material-surface visual system: preserve prompt intent while converting form, grain, reflectivity, wear, pores, seams, and tactile relief through this preset. Apply holographic-foil optics to the input: silver base shine, spectral angle shifts, micro-ridge diffraction, and rainbow flashes should make forms change identity with light direction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Holographic Foil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +224,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Chainmail',
     category: '6. Material Surface Textures',
     negativePrompt:
-      'plate armor, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, plate armor, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Chainmail becomes a transferable material surface transformation system: start from Interlinked rings, Ring pattern, and Drape, then route prompt content through physical surface grain, reflectance, damage, joinery, pores, seams, and tactile structure without forcing one card scene.',
+      aesthetic: 'Chainmail texture: ring pattern as a decorative surface.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Rings to coat, wrap, weather, polish, crack, scale, link, or embed forms while preserving the prompt composition; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: fine interlocking ring pattern covers the surfaces. The decorative surface pattern is the point: make its figure, veining or motif the first read.",
       color_and_tone:
-        'Build the palette from Steel; let color follow material depth, veins, patina, oxidation, fiber direction, shimmer, or manufactured finish, with enough value control that the subject remains readable after the style layer is applied.',
+        'Steel, silver, bronze, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Metallic drive the light response: show reflectance honestly through gloss, matte falloff, iridescence, metallic shear, or micro-shadow, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Sparkling light on rings, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Metal links as the tactile or mark-making basis; surface behavior needs coherent grain, chips, cracks, pores, links, flakes, scales, strands, or inclusions, scaled to figures, props, spaces, or close material studies.',
+        'Interlocking rings, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Drape as reusable spatial grammar: support macro texture studies and full-scene use through directional grain, repeat, drape, fracture, or patch rhythm, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        'Use Strong, protective as the emotional register; derive mood from durability, luxury, decay, tactility, craft, armor, novelty, or contamination, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Armored, ancient, elegant and heavy, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Resolve as Medieval, armor: finish with material clarity, controlled micro-detail, and no stock texture pasted over forms, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Interlinked rings; Rings; Steel; Metallic; Metal links; Drape; Strong, protective; Medieval, armor; Ring pattern',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'interlocking ring pattern; decorative surface pattern',
       creative_brief:
-        'Route any subject through Chainmail as a transferable material-surface visual system: preserve prompt intent while converting form, grain, reflectivity, wear, pores, seams, and tactile relief through this preset. Apply chainmail structure to the input: interlocked metal rings, flexible armor flow, repeated circular links, and cool steel highlights should wrap or replace surfaces without forcing medieval characters.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chainmail as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -269,28 +251,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Snake Skin',
     category: '6. Material Surface Textures',
     negativePrompt:
-      'fur, smooth, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, fur, smooth, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Snake Skin becomes a transferable material surface transformation system: start from Scales and Scale grid, then route prompt content through physical surface grain, reflectance, damage, joinery, pores, seams, and tactile structure without forcing one card scene.',
+      aesthetic: 'Snake skin texture: scale pattern with bold markings as decorative surface.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Overlapping scales to coat, wrap, weather, polish, crack, scale, link, or embed forms while preserving the prompt composition; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: patterned snake scales cover the surfaces with bold markings. The decorative surface pattern is the point: make its figure, veining or motif the first read.",
       color_and_tone:
-        'Build the palette from Patterned; let color follow material depth, veins, patina, oxidation, fiber direction, shimmer, or manufactured finish, with enough value control that the subject remains readable after the style layer is applied.',
+        'Python browns or emerald, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Sheen drive the light response: show reflectance honestly through gloss, matte falloff, iridescence, metallic shear, or micro-shadow, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Soft sheen, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Scaly as the tactile or mark-making basis; surface behavior needs coherent grain, chips, cracks, pores, links, flakes, scales, strands, or inclusions, scaled to figures, props, spaces, or close material studies.',
+        'Overlapping scales and markings, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Scale grid as reusable spatial grammar: support macro texture studies and full-scene use through directional grain, repeat, drape, fracture, or patch rhythm, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        'Use Wild, luxury as the emotional register; derive mood from durability, luxury, decay, tactility, craft, armor, novelty, or contamination, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Exotic, sleek, dangerous and luxe, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Resolve as Exotic, dangerous: finish with material clarity, controlled micro-detail, and no stock texture pasted over forms, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Scales; Overlapping scales; Patterned; Sheen; Scaly; Scale grid; Wild, luxury; Exotic, dangerous; Scale grid',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'snake scale markings; decorative surface pattern',
       creative_brief:
-        'Apply snake-skin pattern as exotic scale geometry over the input with overlapping keratin shields, diamond facets, patterned sheen, and dangerous luxury. If creature, costume, object, or surface exists, wrap it in scale logic; otherwise use the scale grid as abstract texture without requiring a snake body.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Snake Skin as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -298,28 +278,325 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Kintsugi',
     category: '6. Material Surface Textures',
     negativePrompt:
-      'perfect, new, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, perfect, new, wrong material, generic stock texture, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Kintsugi: broken ceramic repaired with gold-filled seams.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the surfaces show cracks repaired with bright gold seams. The decorative surface pattern is the point: make its figure, veining or motif the first read.",
+      color_and_tone:
+        'Ceramic base with gold seams, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Soft light catching gold, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Gold-lacquer seams across cracks, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Resilient, poetic, precious and calm, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'gold-repaired cracks; decorative surface pattern',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kintsugi as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP10-123',
+    name: 'Raku Crackle Glaze',
+    displayName: 'Raku Crackle Glaze',
+    styleAnchors: ['Raku Crackle Glaze', 'raku crackle glaze', 'raku crackle'],
+    category: '6. Material Surface Textures',
+    domain: 'raku crackle glaze',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Kintsugi becomes a transferable material surface transformation system: start from Broken pottery repaired with gold, Gold veins, and Cracked, then route prompt content through physical surface grain, reflectance, damage, joinery, pores, seams, and tactile structure without forcing one card scene.',
+        'Raku glaze: crackled white glaze with smoky black craze lines and metallic flashes.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Gold cracks to coat, wrap, weather, polish, crack, scale, link, or embed forms while preserving the prompt composition; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: crackled glaze with smoky black lines and copper flashes covers the surfaces. The decorative surface pattern is the point: make its figure, veining or motif the first read.",
       color_and_tone:
-        'Build the palette from Ceramic + Gold; let color follow material depth, veins, patina, oxidation, fiber direction, shimmer, or manufactured finish, with enough value control that the subject remains readable after the style layer is applied.',
+        'White crackle with black lines and copper flashes, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Gold reflection drive the light response: show reflectance honestly through gloss, matte falloff, iridescence, metallic shear, or micro-shadow, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Soft light, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Ceramic as the tactile or mark-making basis; surface behavior needs coherent grain, chips, cracks, pores, links, flakes, scales, strands, or inclusions, scaled to figures, props, spaces, or close material studies.',
+        'Crazed glaze and smoky carbon, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Cracked as reusable spatial grammar: support macro texture studies and full-scene use through directional grain, repeat, drape, fracture, or patch rhythm, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        'Use Healing, beautiful as the emotional register; derive mood from durability, luxury, decay, tactility, craft, armor, novelty, or contamination, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Earthy, fiery, random and beautiful, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Resolve as Wabi-sabi, precious: finish with material clarity, controlled micro-detail, and no stock texture pasted over forms, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Broken pottery repaired with gold; Gold cracks; Ceramic + Gold; Gold reflection; Ceramic; Cracked; Healing, beautiful; Wabi-sabi, precious; Gold veins',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        'Apply kintsugi repair logic over the input with ceramic fracture fields, gold lacquer veins, precious reflection, wabi-sabi asymmetry, and visible damage transformed into structure. If pottery or object exists, repair it; otherwise treat cracks as luminous compositional lines without requiring a shattered landscape.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Raku Crackle Glaze as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'raku crackle; smoky lines; copper flash; decorative surface pattern',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-124',
+    name: 'Damascus Steel',
+    displayName: 'Damascus Steel',
+    styleAnchors: ['Damascus Steel', 'damascus pattern-welded steel', 'Damascus wave pattern'],
+    category: '6. Material Surface Textures',
+    domain: 'damascus pattern-welded steel',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Damascus steel: flowing layered wave patterns in etched steel.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: flowing etched Damascus layers pattern the metal surfaces. The decorative surface pattern is the point: make its figure, veining or motif the first read.",
+      color_and_tone:
+        'Dark and light grey steel waves, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Raking light, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Etched layered wave pattern, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Crafted, deadly, elegant and ancient, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Damascus Steel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'Damascus wave pattern; decorative surface pattern',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-125',
+    name: 'Burl Wood Figure',
+    displayName: 'Burl Wood Figure',
+    styleAnchors: ['Burl Wood Figure', 'burl wood figure', 'swirling burl figure'],
+    category: '6. Material Surface Textures',
+    domain: 'burl wood figure',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Burl wood: swirling chaotic grain with eyes and clusters.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: swirling burl figure with tiny eyes covers the surfaces. The decorative surface pattern is the point: make its figure, veining or motif the first read.",
+      color_and_tone:
+        'Amber, honey and dark swirls, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Warm glossy light, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Chaotic swirls and eyes, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Rich, organic, warm and rare, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Burl Wood Figure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'swirling burl figure; eyes; decorative surface pattern',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-126',
+    name: 'Mokume-gane',
+    displayName: 'Mokume-gane',
+    styleAnchors: ['Mokume-gane', 'mokume-gane layered metal', 'layered metal grain'],
+    category: '6. Material Surface Textures',
+    domain: 'mokume-gane layered metal',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Mokume-gane: layered mixed metals forming wood-grain-like patterns.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: wood-grain patterns of layered copper, silver and gold cover the surfaces. The decorative surface pattern is the point: make its figure, veining or motif the first read.",
+      color_and_tone:
+        'Copper, silver and gold bands, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Soft metallic light, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Layered metal grain, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Refined, crafted, precious and warm, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mokume-gane as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'layered metal grain; decorative surface pattern',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-127',
+    name: 'Tadelakt Plaster',
+    displayName: 'Tadelakt Plaster',
+    styleAnchors: ['Tadelakt Plaster', 'tadelakt polished plaster', 'burnished plaster'],
+    category: '6. Material Surface Textures',
+    domain: 'tadelakt polished plaster',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Tadelakt: burnished lime plaster with soft sheen and subtle cloudy variation.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: soft burnished plaster with cloudy tone variation covers the surfaces. The decorative surface pattern is the point: make its figure, veining or motif the first read.",
+      color_and_tone:
+        'Terracotta, sand, sage, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Soft warm light, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Burnished plaster sheen, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Calm, earthy, warm and soft, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tadelakt Plaster as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'burnished plaster; cloudy sheen; decorative surface pattern',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-128',
+    name: 'Cloisonné Enamel',
+    displayName: 'Cloisonné Enamel',
+    styleAnchors: ['Cloisonné Enamel', 'cloisonne enamel', 'enamel in gold wire cells'],
+    category: '6. Material Surface Textures',
+    domain: 'cloisonne enamel',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Cloisonné: glossy colored enamel fields separated by fine gold wire cells.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: glossy enamel fields in gold wire cells cover the surfaces. The decorative surface pattern is the point: make its figure, veining or motif the first read.",
+      color_and_tone:
+        'Turquoise, cobalt, coral, gold, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Glossy light, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Enamel and gold wire, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Ornate, precious, bright and refined, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cloisonné Enamel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'enamel in gold wire cells; decorative surface pattern',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-129',
+    name: 'Guilloché Engraving',
+    displayName: 'Guilloché Engraving',
+    styleAnchors: ['Guilloché Engraving', 'guilloche engine turning', 'engine-turned grooves'],
+    category: '6. Material Surface Textures',
+    domain: 'guilloche engine turning',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Guilloché: machine-engraved repeating wave and sunburst patterns under enamel.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: fine engine-turned wave and sunburst patterns cover the surfaces. The decorative surface pattern is the point: make its figure, veining or motif the first read.",
+      color_and_tone:
+        'Silver or gold with translucent enamel, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Light rippling in grooves, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Engine-turned grooves, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Precise, luxurious, hypnotic and refined, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Guilloché Engraving as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'engine-turned grooves; sunburst; decorative surface pattern',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-130',
+    name: 'Urushi Lacquer',
+    displayName: 'Urushi Lacquer',
+    styleAnchors: ['Urushi Lacquer', 'urushi lacquer finish', 'deep lacquer'],
+    category: '6. Material Surface Textures',
+    domain: 'urushi lacquer finish',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Urushi lacquer: deep glossy lacquer in black and vermilion with maki-e gold sprinkles.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: deep glossy lacquer with gold sprinkle motifs covers the surfaces. The decorative surface pattern is the point: make its figure, veining or motif the first read.",
+      color_and_tone:
+        'Black and vermilion with gold, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Deep glossy reflections, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Layered lacquer and gold dust, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Refined, deep, precious and calm, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Urushi Lacquer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'deep lacquer; maki-e gold; decorative surface pattern',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-131',
+    name: 'Hammered Metal',
+    displayName: 'Hammered Metal',
+    styleAnchors: ['Hammered Metal', 'hammered metal texture', 'hammered dimples'],
+    category: '6. Material Surface Textures',
+    domain: 'hammered metal texture',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plain untextured surface, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Hammered metal: dimpled facets from hand hammering catching light.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: hand-hammered dimples facet the metal surfaces. The decorative surface pattern is the point: make its figure, veining or motif the first read.",
+      color_and_tone:
+        'Copper, brass or pewter, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Point lights sparkling on dimples, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Hammered facets, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Handmade, warm, rustic and crafted, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hammered Metal as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'hammered dimples; decorative surface pattern',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];
