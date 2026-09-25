@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-045
+packId: pack_25
+name: Compressed Diorama Icons
+styleAnchors:
+  - Compressed Diorama Icons
+  - micro diorama app icon
+  - two or three planes
+displayName: Compressed Diorama Icons
+category: 3. App & Illustrative Icons
+domain: micro diorama app icon
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - app-and-illustrative-icons
+  - compressed-diorama
+  - applied-design
+  - app-icon
+  - r-app-05
+visualDna:
+  aesthetic: 'Compressed Diorama Icons: a tiny space of two or three planes condenses one action, seen through one consistent camera.'
+  subject_treatment: Condense the prompt's subject into a micro space of two or three planes that shows one action, dropping any scenery that does not explain it.
+  color_and_tone: Short palette with the background lower in contrast than the functional figure.
+  lighting_and_shadow: One common light from a single direction, gentle and clear.
+  texture_and_material: Clean surfaces and a uniform scale of detail across the small scene.
+  camera_and_composition: Consistent camera and compressed depth, the space kept inside the icon outline.
+  atmosphere_and_mood: A small habitable scene that is still instantly legible.
+  rendering_and_quality: The action reads at small size and keeps one single focus.
+  creative_brief: "Compressed Diorama Icons: a tiny space of two or three planes condenses one action, seen through one consistent camera. Carry it through two or three planes, one action, compressed depth, single focus. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: two or three planes; one action; compressed depth; single focus
+avoidRules:
+  - sprawling diorama
+  - tiny people
+  - scenery more important than function
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: sprawling diorama, tiny people, scenery more important than function, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: app-and-illustrative-icons
+  categoryName: 3. App & Illustrative Icons
+  domain: micro diorama app icon
+  tags:
+    - curation-v2
+    - app-and-illustrative-icons
+    - compressed-diorama
+    - applied-design
+    - app-icon
+    - r-app-05
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

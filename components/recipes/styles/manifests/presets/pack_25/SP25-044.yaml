@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-044
+packId: pack_25
+name: Suspended Core Icons
+styleAnchors:
+  - Suspended Core Icons
+  - suspended core app icon
+  - suspended core
+displayName: Suspended Core Icons
+category: 3. App & Illustrative Icons
+domain: suspended core app icon
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - app-and-illustrative-icons
+  - suspended-core
+  - applied-design
+  - app-icon
+  - r-app-04
+visualDna:
+  aesthetic: 'Suspended Core Icons: one recognizable core held by two or three visible bridges inside an open outer frame.'
+  subject_treatment: Suspend the prompt's subject as a core held by two or three visible bridges inside an open frame, the core recognizable even without the frame.
+  color_and_tone: Core in the dominant value, support in lower contrast, voids kept open.
+  lighting_and_shadow: Broad side light with contact shadows at each bridge and clear support.
+  texture_and_material: Solid matte materials with believable thickness and softly controlled edges.
+  camera_and_composition: Core slightly offset, frame open on one side like an unfinished ring.
+  atmosphere_and_mood: Balanced tension and protection, with air around the central element.
+  rendering_and_quality: Bridges readable when reduced and the core recognizable on its own.
+  creative_brief: "Suspended Core Icons: one recognizable core held by two or three visible bridges inside an open outer frame. Carry it through suspended core, visible bridges, open frame, balanced tension. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: suspended core; visible bridges; open frame; balanced tension
+avoidRules:
+  - arbitrary floating
+  - thin bridges
+  - cage that hides the core
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: arbitrary floating, thin bridges, cage that hides the core, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: app-and-illustrative-icons
+  categoryName: 3. App & Illustrative Icons
+  domain: suspended core app icon
+  tags:
+    - curation-v2
+    - app-and-illustrative-icons
+    - suspended-core
+    - applied-design
+    - app-icon
+    - r-app-04
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

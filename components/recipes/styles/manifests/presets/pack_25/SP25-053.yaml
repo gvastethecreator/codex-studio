@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-053
+packId: pack_25
+name: Interlocking Toy Volumes
+styleAnchors:
+  - Interlocking Toy Volumes
+  - interlocking block app icon
+  - original connectors
+displayName: Interlocking Toy Volumes
+category: 3. App & Illustrative Icons
+domain: interlocking block app icon
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - app-and-illustrative-icons
+  - interlocking-toy
+  - applied-design
+  - app-icon
+  - r-app-13
+visualDna:
+  aesthetic: 'Interlocking Toy Volumes: pieces with obvious original connectors lock together into one compact, recognizable metaphor.'
+  subject_treatment: Assemble the prompt's subject from a few pieces with an original, obvious connector system, every connection explaining the function.
+  color_and_tone: Colors assigned by piece function, one dominant mass and limited accents.
+  lighting_and_shadow: One broad common light with short contact shadows between the parts.
+  texture_and_material: Smooth matte materials, large joints and original connectors.
+  camera_and_composition: Compact build with visible connections and no loose meaningless parts.
+  atmosphere_and_mood: The pleasure of building and a clear assembly, playful and precise.
+  rendering_and_quality: The pieces can be mentally taken apart and the fit still makes sense.
+  creative_brief: "Interlocking Toy Volumes: pieces with obvious original connectors lock together into one compact, recognizable metaphor. Carry it through original connectors, locking pieces, functional colors, compact build. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: original connectors; locking pieces; functional colors; compact build
+avoidRules:
+  - copied toy-brand connectors
+  - floating parts
+  - too many parts for a simple metaphor
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: copied toy-brand connectors, floating parts, too many parts for a simple metaphor, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: app-and-illustrative-icons
+  categoryName: 3. App & Illustrative Icons
+  domain: interlocking block app icon
+  tags:
+    - curation-v2
+    - app-and-illustrative-icons
+    - interlocking-toy
+    - applied-design
+    - app-icon
+    - r-app-13
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

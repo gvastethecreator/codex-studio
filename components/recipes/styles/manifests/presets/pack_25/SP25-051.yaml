@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-051
+packId: pack_25
+name: Tensioned Membrane Tokens
+styleAnchors:
+  - Tensioned Membrane Tokens
+  - stretched membrane app icon
+  - stretched membrane
+displayName: Tensioned Membrane Tokens
+category: 3. App & Illustrative Icons
+domain: stretched membrane app icon
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - app-and-illustrative-icons
+  - tensioned-membrane
+  - applied-design
+  - app-icon
+  - r-app-11
+visualDna:
+  aesthetic: 'Tensioned Membrane Tokens: one smooth surface stretched between three or four fixed points forms an expressive, clearly built icon.'
+  subject_treatment: Stretch the prompt's subject as one membrane between three or four persistent points, letting its hollows and curves explain the metaphor.
+  color_and_tone: One main color in broad value bands, with the support points in a secondary contrast.
+  lighting_and_shadow: Diffuse light revealing curvature and tension with soft, even highlights.
+  texture_and_material: Smooth membrane of uniform apparent thickness, taut and wrinkle-free.
+  camera_and_composition: Asymmetric support points balanced around one dominant void.
+  atmosphere_and_mood: Stable tension and resilient lightness, held rather than inflated.
+  rendering_and_quality: The tension points stay identifiable even when the view shifts slightly.
+  creative_brief: "Tensioned Membrane Tokens: one smooth surface stretched between three or four fixed points forms an expressive, clearly built icon. Carry it through stretched membrane, three or four anchors, dominant void, taut curves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stretched membrane; three or four anchors; dominant void; taut curves
+avoidRules:
+  - random fabric
+  - floating supports
+  - material that erases the function
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: random fabric, floating supports, material that erases the function, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: app-and-illustrative-icons
+  categoryName: 3. App & Illustrative Icons
+  domain: stretched membrane app icon
+  tags:
+    - curation-v2
+    - app-and-illustrative-icons
+    - tensioned-membrane
+    - applied-design
+    - app-icon
+    - r-app-11
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

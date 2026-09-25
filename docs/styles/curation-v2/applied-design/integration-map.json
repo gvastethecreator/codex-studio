@@ -243,64 +243,124 @@
       "category": "2. Interface Icon Systems"
     },
     "R-APP-01": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-041",
+      "name": "Folded Silhouette Icons",
+      "category": "3. App & Illustrative Icons"
     },
     "R-APP-02": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-042",
+      "name": "Nested Object Tokens",
+      "category": "3. App & Illustrative Icons"
     },
     "R-APP-03": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-043",
+      "name": "Inlaid Plane Emblems",
+      "category": "3. App & Illustrative Icons"
     },
     "R-APP-04": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-044",
+      "name": "Suspended Core Icons",
+      "category": "3. App & Illustrative Icons"
     },
     "R-APP-05": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-045",
+      "name": "Compressed Diorama Icons",
+      "category": "3. App & Illustrative Icons"
     },
     "R-APP-06": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-046",
+      "name": "Carved Relief Pictograms",
+      "category": "3. App & Illustrative Icons"
     },
     "R-APP-07": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-047",
+      "name": "Inflated Junction Icons",
+      "category": "3. App & Illustrative Icons"
     },
     "R-APP-08": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-048",
+      "name": "Paper-Hinge Characters",
+      "category": "3. App & Illustrative Icons"
     },
     "R-APP-09": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-049",
+      "name": "Stepped Crystal Forms",
+      "category": "3. App & Illustrative Icons"
     },
     "R-APP-10": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-050",
+      "name": "Layer-Window Icons",
+      "category": "3. App & Illustrative Icons"
     },
     "R-APP-11": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-051",
+      "name": "Tensioned Membrane Tokens",
+      "category": "3. App & Illustrative Icons"
     },
     "R-APP-12": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-052",
+      "name": "Contour-Locked Miniatures",
+      "category": "3. App & Illustrative Icons"
     },
     "R-APP-13": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-053",
+      "name": "Interlocking Toy Volumes",
+      "category": "3. App & Illustrative Icons"
     },
     "R-APP-14": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-054",
+      "name": "Cut-Pixel Medallions",
+      "category": "3. App & Illustrative Icons"
     },
     "R-APP-15": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-055",
+      "name": "Stitched-Edge Symbols",
+      "category": "3. App & Illustrative Icons"
     },
     "R-APP-16": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-056",
+      "name": "Orbiting Part Icons",
+      "category": "3. App & Illustrative Icons"
     },
     "R-APP-17": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-057",
+      "name": "Soft Enamel Finish",
+      "category": "3. App & Illustrative Icons"
     },
     "R-APP-18": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-058",
+      "name": "Translucent Edge Finish",
+      "category": "3. App & Illustrative Icons"
     },
     "R-APP-19": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-059",
+      "name": "Platform Mask Preview",
+      "category": "3. App & Illustrative Icons"
     },
     "R-APP-20": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-060",
+      "name": "Icon Family Reduction",
+      "category": "3. App & Illustrative Icons"
     },
     "R-UI-01": {
       "status": "pending"

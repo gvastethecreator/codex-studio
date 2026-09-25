@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-046
+packId: pack_25
+name: Carved Relief Pictograms
+styleAnchors:
+  - Carved Relief Pictograms
+  - carved relief app icon
+  - broad relief
+displayName: Carved Relief Pictograms
+category: 3. App & Illustrative Icons
+domain: carved relief app icon
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - app-and-illustrative-icons
+  - carved-relief
+  - applied-design
+  - app-icon
+  - r-app-06
+visualDna:
+  aesthetic: 'Carved Relief Pictograms: broad reliefs and carved hollows with one or two levels of depth define the icon under a simple outer silhouette.'
+  subject_treatment: Carve the prompt's subject as a broad relief with one or two levels of hollowing, keeping a simple outer silhouette.
+  color_and_tone: Clear value relationships between raised surface and hollow, one optional accent.
+  lighting_and_shadow: Soft raking light revealing the carving with gentle, readable shade.
+  texture_and_material: Matte finish of minimal grain, with stone or metal only as options.
+  camera_and_composition: Relief concentrated in one region, with a smooth resting zone beside it.
+  atmosphere_and_mood: Serene solidity, with information discovered slowly through carved depth.
+  rendering_and_quality: Planes and hollows stay distinct even with every texture removed.
+  creative_brief: "Carved Relief Pictograms: broad reliefs and carved hollows with one or two levels of depth define the icon under a simple outer silhouette. Carry it through broad relief, two carving levels, raking light, smooth rest zone. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: broad relief; two carving levels; raking light; smooth rest zone
+avoidRules:
+  - microscopic relief
+  - stone as the only novelty
+  - engraving that needs zooming
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: microscopic relief, stone as the only novelty, engraving that needs zooming, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: app-and-illustrative-icons
+  categoryName: 3. App & Illustrative Icons
+  domain: carved relief app icon
+  tags:
+    - curation-v2
+    - app-and-illustrative-icons
+    - carved-relief
+    - applied-design
+    - app-icon
+    - r-app-06
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -3,7 +3,7 @@
     {
       "id": "pack_25",
       "name": "Applied Design",
-      "presetCount": 40
+      "presetCount": 60
     }
   ],
   "presets": [
@@ -642,7 +642,311 @@
       "tags": ["applied-design", "interface-icon-systems", "icon-badge-modifier-sheet"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp25-040 semantic modifier set icon badge modifier sheet fixed badge position 2. interface icon systems interface icons icon badge modifier sheet pack_25 applied design interface-icon-systems applied-design interface-icon-systems icon-badge-modifier-sheet"
+    },
+    {
+      "id": "SP25-041",
+      "name": "Folded Silhouette Icons",
+      "styleAnchors": ["Folded Silhouette Icons", "folded sheet app icon", "one folded sheet"],
+      "ref": "pack_25/SP25-041.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "app-and-illustrative-icons",
+      "categoryName": "3. App & Illustrative Icons",
+      "domain": "folded sheet app icon",
+      "tags": ["applied-design", "app-and-illustrative-icons", "folded-sheet-app-icon"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-041 folded silhouette icons folded sheet app icon one folded sheet 3. app & illustrative icons app & illustrative icons folded sheet app icon pack_25 applied design app-and-illustrative-icons applied-design app-and-illustrative-icons folded-sheet-app-icon"
+    },
+    {
+      "id": "SP25-042",
+      "name": "Nested Object Tokens",
+      "styleAnchors": ["Nested Object Tokens", "two-object fitted app icon", "two fitted objects"],
+      "ref": "pack_25/SP25-042.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "app-and-illustrative-icons",
+      "categoryName": "3. App & Illustrative Icons",
+      "domain": "two-object fitted app icon",
+      "tags": ["applied-design", "app-and-illustrative-icons", "two-object-fitted-app-icon"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-042 nested object tokens two-object fitted app icon two fitted objects 3. app & illustrative icons app & illustrative icons two-object fitted app icon pack_25 applied design app-and-illustrative-icons applied-design app-and-illustrative-icons two-object-fitted-app-icon"
+    },
+    {
+      "id": "SP25-043",
+      "name": "Inlaid Plane Emblems",
+      "styleAnchors": [
+        "Inlaid Plane Emblems",
+        "inlaid color plane app icon",
+        "flush inlaid planes"
+      ],
+      "ref": "pack_25/SP25-043.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "app-and-illustrative-icons",
+      "categoryName": "3. App & Illustrative Icons",
+      "domain": "inlaid color plane app icon",
+      "tags": ["applied-design", "app-and-illustrative-icons", "inlaid-color-plane-app-icon"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-043 inlaid plane emblems inlaid color plane app icon flush inlaid planes 3. app & illustrative icons app & illustrative icons inlaid color plane app icon pack_25 applied design app-and-illustrative-icons applied-design app-and-illustrative-icons inlaid-color-plane-app-icon"
+    },
+    {
+      "id": "SP25-044",
+      "name": "Suspended Core Icons",
+      "styleAnchors": ["Suspended Core Icons", "suspended core app icon", "suspended core"],
+      "ref": "pack_25/SP25-044.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "app-and-illustrative-icons",
+      "categoryName": "3. App & Illustrative Icons",
+      "domain": "suspended core app icon",
+      "tags": ["applied-design", "app-and-illustrative-icons", "suspended-core-app-icon"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-044 suspended core icons suspended core app icon suspended core 3. app & illustrative icons app & illustrative icons suspended core app icon pack_25 applied design app-and-illustrative-icons applied-design app-and-illustrative-icons suspended-core-app-icon"
+    },
+    {
+      "id": "SP25-045",
+      "name": "Compressed Diorama Icons",
+      "styleAnchors": ["Compressed Diorama Icons", "micro diorama app icon", "two or three planes"],
+      "ref": "pack_25/SP25-045.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "app-and-illustrative-icons",
+      "categoryName": "3. App & Illustrative Icons",
+      "domain": "micro diorama app icon",
+      "tags": ["applied-design", "app-and-illustrative-icons", "micro-diorama-app-icon"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-045 compressed diorama icons micro diorama app icon two or three planes 3. app & illustrative icons app & illustrative icons micro diorama app icon pack_25 applied design app-and-illustrative-icons applied-design app-and-illustrative-icons micro-diorama-app-icon"
+    },
+    {
+      "id": "SP25-046",
+      "name": "Carved Relief Pictograms",
+      "styleAnchors": ["Carved Relief Pictograms", "carved relief app icon", "broad relief"],
+      "ref": "pack_25/SP25-046.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "app-and-illustrative-icons",
+      "categoryName": "3. App & Illustrative Icons",
+      "domain": "carved relief app icon",
+      "tags": ["applied-design", "app-and-illustrative-icons", "carved-relief-app-icon"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-046 carved relief pictograms carved relief app icon broad relief 3. app & illustrative icons app & illustrative icons carved relief app icon pack_25 applied design app-and-illustrative-icons applied-design app-and-illustrative-icons carved-relief-app-icon"
+    },
+    {
+      "id": "SP25-047",
+      "name": "Inflated Junction Icons",
+      "styleAnchors": ["Inflated Junction Icons", "soft inflated joint app icon", "soft tubes"],
+      "ref": "pack_25/SP25-047.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "app-and-illustrative-icons",
+      "categoryName": "3. App & Illustrative Icons",
+      "domain": "soft inflated joint app icon",
+      "tags": ["applied-design", "app-and-illustrative-icons", "soft-inflated-joint-app-icon"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-047 inflated junction icons soft inflated joint app icon soft tubes 3. app & illustrative icons app & illustrative icons soft inflated joint app icon pack_25 applied design app-and-illustrative-icons applied-design app-and-illustrative-icons soft-inflated-joint-app-icon"
+    },
+    {
+      "id": "SP25-048",
+      "name": "Paper-Hinge Characters",
+      "styleAnchors": [
+        "Paper-Hinge Characters",
+        "jointed flat-piece app character",
+        "flat jointed pieces"
+      ],
+      "ref": "pack_25/SP25-048.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "app-and-illustrative-icons",
+      "categoryName": "3. App & Illustrative Icons",
+      "domain": "jointed flat-piece app character",
+      "tags": ["applied-design", "app-and-illustrative-icons", "jointed-flat-piece-app-character"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-048 paper-hinge characters jointed flat-piece app character flat jointed pieces 3. app & illustrative icons app & illustrative icons jointed flat-piece app character pack_25 applied design app-and-illustrative-icons applied-design app-and-illustrative-icons jointed-flat-piece-app-character"
+    },
+    {
+      "id": "SP25-049",
+      "name": "Stepped Crystal Forms",
+      "styleAnchors": ["Stepped Crystal Forms", "stepped faceted app icon", "stepped planes"],
+      "ref": "pack_25/SP25-049.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "app-and-illustrative-icons",
+      "categoryName": "3. App & Illustrative Icons",
+      "domain": "stepped faceted app icon",
+      "tags": ["applied-design", "app-and-illustrative-icons", "stepped-faceted-app-icon"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-049 stepped crystal forms stepped faceted app icon stepped planes 3. app & illustrative icons app & illustrative icons stepped faceted app icon pack_25 applied design app-and-illustrative-icons applied-design app-and-illustrative-icons stepped-faceted-app-icon"
+    },
+    {
+      "id": "SP25-050",
+      "name": "Layer-Window Icons",
+      "styleAnchors": ["Layer-Window Icons", "reveal-window app icon", "single window"],
+      "ref": "pack_25/SP25-050.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "app-and-illustrative-icons",
+      "categoryName": "3. App & Illustrative Icons",
+      "domain": "reveal-window app icon",
+      "tags": ["applied-design", "app-and-illustrative-icons", "reveal-window-app-icon"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-050 layer-window icons reveal-window app icon single window 3. app & illustrative icons app & illustrative icons reveal-window app icon pack_25 applied design app-and-illustrative-icons applied-design app-and-illustrative-icons reveal-window-app-icon"
+    },
+    {
+      "id": "SP25-051",
+      "name": "Tensioned Membrane Tokens",
+      "styleAnchors": [
+        "Tensioned Membrane Tokens",
+        "stretched membrane app icon",
+        "stretched membrane"
+      ],
+      "ref": "pack_25/SP25-051.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "app-and-illustrative-icons",
+      "categoryName": "3. App & Illustrative Icons",
+      "domain": "stretched membrane app icon",
+      "tags": ["applied-design", "app-and-illustrative-icons", "stretched-membrane-app-icon"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-051 tensioned membrane tokens stretched membrane app icon stretched membrane 3. app & illustrative icons app & illustrative icons stretched membrane app icon pack_25 applied design app-and-illustrative-icons applied-design app-and-illustrative-icons stretched-membrane-app-icon"
+    },
+    {
+      "id": "SP25-052",
+      "name": "Contour-Locked Miniatures",
+      "styleAnchors": [
+        "Contour-Locked Miniatures",
+        "focused-detail miniature app icon",
+        "simple outer mass"
+      ],
+      "ref": "pack_25/SP25-052.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "app-and-illustrative-icons",
+      "categoryName": "3. App & Illustrative Icons",
+      "domain": "focused-detail miniature app icon",
+      "tags": ["applied-design", "app-and-illustrative-icons", "focused-detail-miniature-app-icon"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-052 contour-locked miniatures focused-detail miniature app icon simple outer mass 3. app & illustrative icons app & illustrative icons focused-detail miniature app icon pack_25 applied design app-and-illustrative-icons applied-design app-and-illustrative-icons focused-detail-miniature-app-icon"
+    },
+    {
+      "id": "SP25-053",
+      "name": "Interlocking Toy Volumes",
+      "styleAnchors": [
+        "Interlocking Toy Volumes",
+        "interlocking block app icon",
+        "original connectors"
+      ],
+      "ref": "pack_25/SP25-053.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "app-and-illustrative-icons",
+      "categoryName": "3. App & Illustrative Icons",
+      "domain": "interlocking block app icon",
+      "tags": ["applied-design", "app-and-illustrative-icons", "interlocking-block-app-icon"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-053 interlocking toy volumes interlocking block app icon original connectors 3. app & illustrative icons app & illustrative icons interlocking block app icon pack_25 applied design app-and-illustrative-icons applied-design app-and-illustrative-icons interlocking-block-app-icon"
+    },
+    {
+      "id": "SP25-054",
+      "name": "Cut-Pixel Medallions",
+      "styleAnchors": ["Cut-Pixel Medallions", "pixel cluster emblem app icon", "stepped clusters"],
+      "ref": "pack_25/SP25-054.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "app-and-illustrative-icons",
+      "categoryName": "3. App & Illustrative Icons",
+      "domain": "pixel cluster emblem app icon",
+      "tags": ["applied-design", "app-and-illustrative-icons", "pixel-cluster-emblem-app-icon"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-054 cut-pixel medallions pixel cluster emblem app icon stepped clusters 3. app & illustrative icons app & illustrative icons pixel cluster emblem app icon pack_25 applied design app-and-illustrative-icons applied-design app-and-illustrative-icons pixel-cluster-emblem-app-icon"
+    },
+    {
+      "id": "SP25-055",
+      "name": "Stitched-Edge Symbols",
+      "styleAnchors": ["Stitched-Edge Symbols", "stitched patch app icon", "cut pieces"],
+      "ref": "pack_25/SP25-055.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "app-and-illustrative-icons",
+      "categoryName": "3. App & Illustrative Icons",
+      "domain": "stitched patch app icon",
+      "tags": ["applied-design", "app-and-illustrative-icons", "stitched-patch-app-icon"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-055 stitched-edge symbols stitched patch app icon cut pieces 3. app & illustrative icons app & illustrative icons stitched patch app icon pack_25 applied design app-and-illustrative-icons applied-design app-and-illustrative-icons stitched-patch-app-icon"
+    },
+    {
+      "id": "SP25-056",
+      "name": "Orbiting Part Icons",
+      "styleAnchors": ["Orbiting Part Icons", "orbit-linked app icon", "open arc"],
+      "ref": "pack_25/SP25-056.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "app-and-illustrative-icons",
+      "categoryName": "3. App & Illustrative Icons",
+      "domain": "orbit-linked app icon",
+      "tags": ["applied-design", "app-and-illustrative-icons", "orbit-linked-app-icon"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-056 orbiting part icons orbit-linked app icon open arc 3. app & illustrative icons app & illustrative icons orbit-linked app icon pack_25 applied design app-and-illustrative-icons applied-design app-and-illustrative-icons orbit-linked-app-icon"
+    },
+    {
+      "id": "SP25-057",
+      "name": "Soft Enamel Finish",
+      "styleAnchors": ["Soft Enamel Finish", "enamel pin finish modifier", "domed enamel"],
+      "ref": "pack_25/SP25-057.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "app-and-illustrative-icons",
+      "categoryName": "3. App & Illustrative Icons",
+      "domain": "enamel pin finish modifier",
+      "tags": ["applied-design", "app-and-illustrative-icons", "enamel-pin-finish-modifier"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-057 soft enamel finish enamel pin finish modifier domed enamel 3. app & illustrative icons app & illustrative icons enamel pin finish modifier pack_25 applied design app-and-illustrative-icons applied-design app-and-illustrative-icons enamel-pin-finish-modifier"
+    },
+    {
+      "id": "SP25-058",
+      "name": "Translucent Edge Finish",
+      "styleAnchors": [
+        "Translucent Edge Finish",
+        "translucent edge finish modifier",
+        "translucent body"
+      ],
+      "ref": "pack_25/SP25-058.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "app-and-illustrative-icons",
+      "categoryName": "3. App & Illustrative Icons",
+      "domain": "translucent edge finish modifier",
+      "tags": ["applied-design", "app-and-illustrative-icons", "translucent-edge-finish-modifier"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-058 translucent edge finish translucent edge finish modifier translucent body 3. app & illustrative icons app & illustrative icons translucent edge finish modifier pack_25 applied design app-and-illustrative-icons applied-design app-and-illustrative-icons translucent-edge-finish-modifier"
+    },
+    {
+      "id": "SP25-059",
+      "name": "Platform Mask Preview",
+      "styleAnchors": ["Platform Mask Preview", "app icon mask preview sheet", "mask row"],
+      "ref": "pack_25/SP25-059.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "app-and-illustrative-icons",
+      "categoryName": "3. App & Illustrative Icons",
+      "domain": "app icon mask preview sheet",
+      "tags": ["applied-design", "app-and-illustrative-icons", "app-icon-mask-preview-sheet"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-059 platform mask preview app icon mask preview sheet mask row 3. app & illustrative icons app & illustrative icons app icon mask preview sheet pack_25 applied design app-and-illustrative-icons applied-design app-and-illustrative-icons app-icon-mask-preview-sheet"
+    },
+    {
+      "id": "SP25-060",
+      "name": "Icon Family Reduction",
+      "styleAnchors": ["Icon Family Reduction", "app icon family size sheet", "shared rules"],
+      "ref": "pack_25/SP25-060.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "app-and-illustrative-icons",
+      "categoryName": "3. App & Illustrative Icons",
+      "domain": "app icon family size sheet",
+      "tags": ["applied-design", "app-and-illustrative-icons", "app-icon-family-size-sheet"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-060 icon family reduction app icon family size sheet shared rules 3. app & illustrative icons app & illustrative icons app icon family size sheet pack_25 applied design app-and-illustrative-icons applied-design app-and-illustrative-icons app-icon-family-size-sheet"
     }
   ],
-  "totalPresetCount": 40
+  "totalPresetCount": 60
 }

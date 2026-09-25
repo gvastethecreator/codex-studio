@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP25-058
+packId: pack_25
+name: Translucent Edge Finish
+styleAnchors:
+  - Translucent Edge Finish
+  - translucent edge finish modifier
+  - translucent body
+displayName: Translucent Edge Finish
+category: 3. App & Illustrative Icons
+domain: translucent edge finish modifier
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - app-and-illustrative-icons
+  - translucent-edge
+  - applied-design
+  - app-icon
+  - modifier
+  - r-app-18
+visualDna:
+  aesthetic: 'Translucent Edge Finish: a surface modifier that turns an existing icon into a solid translucent body with light gathering along its thickness and edges.'
+  subject_treatment: Change only the transmission and edge glow of the prompt's existing icon, keeping its silhouette locked and its front readable.
+  color_and_tone: Source palette kept, the transparency never fading the figure away.
+  lighting_and_shadow: Broad controlled edge light with a readable front face and a tight halo.
+  texture_and_material: Translucent material of moderate thickness, sober refraction and smooth surface.
+  camera_and_composition: Framing and orientation of the input kept, background only for contrast.
+  atmosphere_and_mood: Optical lightness with a recognizable body, luminous yet calm.
+  rendering_and_quality: Tested on light and dark grounds with an opaque version for control.
+  creative_brief: "Translucent Edge Finish: a surface modifier that turns an existing icon into a solid translucent body with light gathering along its thickness and edges. Carry it through translucent body, edge light, locked silhouette, readable front. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: translucent body; edge light; locked silhouette; readable front
+avoidRules:
+  - glass as a new style
+  - invisible silhouette
+  - refraction that warps letters
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: glass as a new style, invisible silhouette, refraction that warps letters, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: app-and-illustrative-icons
+  categoryName: 3. App & Illustrative Icons
+  domain: translucent edge finish modifier
+  tags:
+    - curation-v2
+    - app-and-illustrative-icons
+    - translucent-edge
+    - applied-design
+    - app-icon
+    - modifier
+    - r-app-18
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

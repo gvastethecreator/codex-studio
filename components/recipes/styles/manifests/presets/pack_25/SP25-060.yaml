@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP25-060
+packId: pack_25
+name: Icon Family Reduction
+styleAnchors:
+  - Icon Family Reduction
+  - app icon family size sheet
+  - shared rules
+displayName: Icon Family Reduction
+category: 3. App & Illustrative Icons
+domain: app icon family size sheet
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - app-and-illustrative-icons
+  - icon-family-reduction
+  - applied-design
+  - app-icon
+  - profile
+  - r-app-20
+visualDna:
+  aesthetic: 'Icon Family Reduction: a family of related app icons built from one shared rule, shown large and at small sizes on one sheet.'
+  subject_treatment: Present the prompt's subject as a family of related icons from shared rules, each shown large and reduced with only local simplifications.
+  color_and_tone: Shared color roles across the family, each icon also checked in greyscale.
+  lighting_and_shadow: One light direction and softness for every member of the family.
+  texture_and_material: Materials at one consistent scale, fine detail reduced before sharpening.
+  camera_and_composition: Rows of large and small versions with equal optical weight.
+  atmosphere_and_mood: Clear kinship across the set without making every object the same shape.
+  rendering_and_quality: Each small version keeps its own metaphor and the shared system traits.
+  creative_brief: "Icon Family Reduction: a family of related app icons built from one shared rule, shown large and at small sizes on one sheet. Carry it through shared rules, large and small rows, equal weight, kept metaphors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: shared rules; large and small rows; equal weight; kept metaphors
+avoidRules:
+  - family of clones
+  - lost meaning when reduced
+  - different materials for no reason
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: family of clones, lost meaning when reduced, different materials for no reason, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: app-and-illustrative-icons
+  categoryName: 3. App & Illustrative Icons
+  domain: app icon family size sheet
+  tags:
+    - curation-v2
+    - app-and-illustrative-icons
+    - icon-family-reduction
+    - applied-design
+    - app-icon
+    - profile
+    - r-app-20
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

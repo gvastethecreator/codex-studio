@@ -2398,5 +2398,20 @@
     "evidencePresetIds": ["SP25-021", "SP25-022", "SP25-023"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_25",
+    "category": "3. App & Illustrative Icons",
+    "displayCategory": "App & illustrative icons",
+    "kind": "mixed",
+    "expectedCount": 20,
+    "baselineHash": "0ea81fce37b4f5a9e33362fa7e64e147ee942f6634a3779a7d086eb318a7ef82",
+    "problem": "App icons need one illustrative construction that reads at home-screen size, without platform icon templates, text inside the icon or copied toy and brand parts.",
+    "preserve": "The app metaphor, its essential object and locked colors stay recognizable; each style keeps its construction (folded sheet, nested objects, inlaid planes, suspended core, micro diorama, carved relief, inflated joints, hinged pieces, stepped facets, reveal window, membrane, focused detail, interlocking blocks, pixel emblem, stitched pieces, orbit link).",
+    "proposedAction": "Applied-design import: 16 illustrative app-icon styles, enamel and translucent edge finish modifiers that keep the input icon's contour, the mask preview and family reduction sheets as profiles; English DNA as positive rules and three new app-concept briefs per preset.",
+    "validation": "Generate each card, then test transfer on a single app icon, a three-icon family, a mask row, a reduced 32 px version and a finish applied to an existing locked icon.",
+    "evidencePresetIds": ["SP25-041", "SP25-042", "SP25-043"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

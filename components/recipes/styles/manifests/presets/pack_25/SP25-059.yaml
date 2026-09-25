@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP25-059
+packId: pack_25
+name: Platform Mask Preview
+styleAnchors:
+  - Platform Mask Preview
+  - app icon mask preview sheet
+  - mask row
+displayName: Platform Mask Preview
+category: 3. App & Illustrative Icons
+domain: app icon mask preview sheet
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - app-and-illustrative-icons
+  - platform-mask
+  - applied-design
+  - app-icon
+  - profile
+  - r-app-19
+visualDna:
+  aesthetic: 'Platform Mask Preview: one app icon shown under several container masks and backgrounds side by side, the artwork itself unchanged.'
+  subject_treatment: Show the prompt's subject icon unchanged inside square, circle and rounded-square masks and on light and dark grounds, with the same scale.
+  color_and_tone: Artwork colors kept, alternative backgrounds only as control views.
+  lighting_and_shadow: The same lighting in every mask so the comparison only measures the crop.
+  texture_and_material: Original materials kept, the mask acting as a separate container.
+  camera_and_composition: Icons centered on a declared safe area in an even row of masks.
+  atmosphere_and_mood: Consistent identity across every context, tidy, calm and comparative.
+  rendering_and_quality: Mask, scale and safe area noted outside the artwork.
+  creative_brief: "Platform Mask Preview: one app icon shown under several container masks and backgrounds side by side, the artwork itself unchanged. Carry it through mask row, unchanged artwork, safe area, light and dark grounds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: mask row; unchanged artwork; safe area; light and dark grounds
+avoidRules:
+  - invented masks shown as official
+  - icon redesign
+  - inconsistent scales
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: invented masks shown as official, icon redesign, inconsistent scales, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: app-and-illustrative-icons
+  categoryName: 3. App & Illustrative Icons
+  domain: app icon mask preview sheet
+  tags:
+    - curation-v2
+    - app-and-illustrative-icons
+    - platform-mask
+    - applied-design
+    - app-icon
+    - profile
+    - r-app-19
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

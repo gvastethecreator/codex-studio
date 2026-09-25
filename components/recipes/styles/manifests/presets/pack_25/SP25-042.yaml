@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-042
+packId: pack_25
+name: Nested Object Tokens
+styleAnchors:
+  - Nested Object Tokens
+  - two-object fitted app icon
+  - two fitted objects
+displayName: Nested Object Tokens
+category: 3. App & Illustrative Icons
+domain: two-object fitted app icon
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - app-and-illustrative-icons
+  - nested-token
+  - applied-design
+  - app-icon
+  - r-app-02
+visualDna:
+  aesthetic: 'Nested Object Tokens: two simplified objects fit into each other so their relationship, not a pile of accessories, tells what the app does.'
+  subject_treatment: Fit the prompt's subject together with one related object so the fit explains the function, each keeping its one essential trait.
+  color_and_tone: Two color families for the two pieces, their values well apart in greyscale.
+  lighting_and_shadow: One soft shared light with visible contact where the pieces meet.
+  texture_and_material: Discreet tactile surfaces with one consistent finish for both pieces.
+  camera_and_composition: Primary piece holds most of the mass, the secondary filling a void without hiding it.
+  atmosphere_and_mood: Complicity and a satisfying fit, with nothing extra piled on top.
+  rendering_and_quality: The relationship reads at small size and stays clear without an outer container.
+  creative_brief: "Nested Object Tokens: two simplified objects fit into each other so their relationship, not a pile of accessories, tells what the app does. Carry it through two fitted objects, relationship metaphor, shared light, no clutter. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: two fitted objects; relationship metaphor; shared light; no clutter
+avoidRules:
+  - stacked unrelated objects
+  - mandatory rounded box
+  - microscopic details
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: stacked unrelated objects, mandatory rounded box, microscopic details, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: app-and-illustrative-icons
+  categoryName: 3. App & Illustrative Icons
+  domain: two-object fitted app icon
+  tags:
+    - curation-v2
+    - app-and-illustrative-icons
+    - nested-token
+    - applied-design
+    - app-icon
+    - r-app-02
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -55,6 +55,29 @@ categories:
       - pack_25/SP25-038.yaml
       - pack_25/SP25-039.yaml
       - pack_25/SP25-040.yaml
+  - id: app-and-illustrative-icons
+    name: 3. App & Illustrative Icons
+    presetRefs:
+      - pack_25/SP25-041.yaml
+      - pack_25/SP25-042.yaml
+      - pack_25/SP25-043.yaml
+      - pack_25/SP25-044.yaml
+      - pack_25/SP25-045.yaml
+      - pack_25/SP25-046.yaml
+      - pack_25/SP25-047.yaml
+      - pack_25/SP25-048.yaml
+      - pack_25/SP25-049.yaml
+      - pack_25/SP25-050.yaml
+      - pack_25/SP25-051.yaml
+      - pack_25/SP25-052.yaml
+      - pack_25/SP25-053.yaml
+      - pack_25/SP25-054.yaml
+      - pack_25/SP25-055.yaml
+      - pack_25/SP25-056.yaml
+      - pack_25/SP25-057.yaml
+      - pack_25/SP25-058.yaml
+      - pack_25/SP25-059.yaml
+      - pack_25/SP25-060.yaml
 presetRefs:
   - pack_25/SP25-001.yaml
   - pack_25/SP25-002.yaml
@@ -96,3 +119,23 @@ presetRefs:
   - pack_25/SP25-038.yaml
   - pack_25/SP25-039.yaml
   - pack_25/SP25-040.yaml
+  - pack_25/SP25-041.yaml
+  - pack_25/SP25-042.yaml
+  - pack_25/SP25-043.yaml
+  - pack_25/SP25-044.yaml
+  - pack_25/SP25-045.yaml
+  - pack_25/SP25-046.yaml
+  - pack_25/SP25-047.yaml
+  - pack_25/SP25-048.yaml
+  - pack_25/SP25-049.yaml
+  - pack_25/SP25-050.yaml
+  - pack_25/SP25-051.yaml
+  - pack_25/SP25-052.yaml
+  - pack_25/SP25-053.yaml
+  - pack_25/SP25-054.yaml
+  - pack_25/SP25-055.yaml
+  - pack_25/SP25-056.yaml
+  - pack_25/SP25-057.yaml
+  - pack_25/SP25-058.yaml
+  - pack_25/SP25-059.yaml
+  - pack_25/SP25-060.yaml

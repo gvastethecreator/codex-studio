@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-055
+packId: pack_25
+name: Stitched-Edge Symbols
+styleAnchors:
+  - Stitched-Edge Symbols
+  - stitched patch app icon
+  - cut pieces
+displayName: Stitched-Edge Symbols
+category: 3. App & Illustrative Icons
+domain: stitched patch app icon
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - app-and-illustrative-icons
+  - stitched-edge
+  - applied-design
+  - app-icon
+  - r-app-15
+visualDna:
+  aesthetic: 'Stitched-Edge Symbols: cut pieces of flat material joined by large controlled stitches that explain how the parts connect.'
+  subject_treatment: Join the prompt's subject from a few cut pieces with large visible stitches where they meet, keeping the silhouette clean.
+  color_and_tone: Limited colors per piece with controlled contrast for the thread.
+  lighting_and_shadow: Diffuse light with minimal raised relief along the thread line.
+  texture_and_material: Matte surfaces, stitches of consistent scale and clean cut edges.
+  camera_and_composition: A few large pieces with one focal seam, most edges left plain.
+  atmosphere_and_mood: Handmade closeness and a repairable build, warm and tidy.
+  rendering_and_quality: The figure reads without the stitches, which only add the relationship.
+  creative_brief: "Stitched-Edge Symbols: cut pieces of flat material joined by large controlled stitches that explain how the parts connect. Carry it through cut pieces, large stitches, one focal seam, repairable build. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: cut pieces; large stitches; one focal seam; repairable build
+avoidRules:
+  - embroidery as the only style
+  - microscopic stitches
+  - anatomy deformed by the pieces
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: embroidery as the only style, microscopic stitches, anatomy deformed by the pieces, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: app-and-illustrative-icons
+  categoryName: 3. App & Illustrative Icons
+  domain: stitched patch app icon
+  tags:
+    - curation-v2
+    - app-and-illustrative-icons
+    - stitched-edge
+    - applied-design
+    - app-icon
+    - r-app-15
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
