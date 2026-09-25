@@ -3,7 +3,7 @@ id: SP01-086
 packId: pack_01
 name: Cold Condensation Commercial
 category: 5. Commercial And Product
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,51 +12,22 @@ tags:
   - photography-and-realism
   - commercial-and-product
 visualDna:
-  aesthetic: >-
-    Cold Condensation Commercial acts as a transferable photographic style router: begin from
-    Refreshment advertising chill, Condensation sparkle, and commercial photographic system built
-    from sellable clarity, controlled studio craft, material desirability, and brand-neutral polish,
-    then apply the photographic behavior to prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Crisp hero shape with droplets; preserve prompt identity while
-    making silhouette, surface, freshness, scale, and product-like value immediately readable,
-    keeping the original subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with Cold cyan, clean whites, saturated accent color; use palette as campaign control:
-    clean whites, luxury neutrals, appetite warmth, cool tech accents, automotive reflections, or
-    interior harmony, with value separation and white balance choices that feel captured in-camera
-    rather than painted over.
-  lighting_and_shadow: >-
-    Use Backlit frost glow and hard rim sparkle; shape light with softboxes, reflectors, rim lines,
-    HDR fill, glossy kickers, window balance, or packshot sweep shadows, preserving believable
-    exposure, shadow density, highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Condensation beads, cold haze, slick surface; render metal, glass, fabric, food surface,
-    condensation, cosmetic gel, architecture finish, and clean contact shadows with precise detail,
-    avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Slight heroic low angle; compose for catalog clarity, top-down order, hero
-    compression, architectural verticals, lifestyle layout, or premium macro depth, with lens
-    distance, depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Fresh, cold, energetic; derive mood from appetite, trust, luxury, engineering,
-    cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes
-    interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Beverage-ad freshness; finish with professional photo polish, accurate material
-    response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution
-    photographic detail, and disciplined denoise without losing natural grain where the preset needs
-    it.
-  key_features: >-
-    Refreshment advertising chill; Condensation sparkle; Cold cyan, clean whites, saturated accent
-    color; Backlit frost glow and hard rim sparkle; Slight heroic low angle
-  creative_brief: >-
-    Apply Cold Condensation Commercial as a photographic preset over prompt X: preserve the user's
-    requested subject, then route Refreshment advertising chill, Cold cyan, clean whites, saturated
-    accent color, Backlit frost glow and hard rim sparkle, Condensation beads, cold haze, slick
-    surface, and Slight heroic low angle through optics, exposure, palette, surface response,
-    timing, and finish without requiring the card image's original subject.
+  aesthetic: 'Cold condensation commercial: refreshment advertising where frost, beads of water and backlit cold haze make a vessel look ice-cold.'
+  subject_treatment: Keep the prompt's object or subject exactly — shape, proportions, color, materials and any supplied design — and present it as the hero of a commercial photograph.
+  color_and_tone: Cold cyan and clean white, with one saturated accent color in the drink or object.
+  lighting_and_shadow: Strong backlight through the vessel for glow, hard rim sparkle on droplets, cool fill.
+  texture_and_material: Condensation beads and running drops, frost bloom, crushed ice, cold vapor.
+  camera_and_composition: Slight heroic low angle, 85–100 mm, vessel centered and tall in frame.
+  atmosphere_and_mood: Fresh and energetic, cold you can almost feel on your hand.
+  rendering_and_quality: Beverage-ad clarity with sharp droplets; no warm or dry surfaces.
+  key_features: condensation beads; frost bloom; backlit cold glow; rim-lit droplets; heroic low angle
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cold Condensation Commercial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - fake brand logo
+  - readable labels
+  - generic stock-photo face
+  - celebrity likeness
+  - changing the supplied object design
   - warm palette
   - dry surface
   - dull lighting
@@ -75,19 +46,19 @@ avoidRules:
   - readable text
   - signature
   - low resolution
-  - fake brand logo
   - messy clutter
   - dirty product surface
   - unreadable labels
   - cheap stock layout
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-086.webp
 attributes:
-  negativePrompt: >-
-    warm palette, dry surface, dull lighting, dirty, watermark, text, illustration, painting,
-    drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable text,
-    signature, low resolution, fake brand logo, messy clutter, dirty product surface, unreadable
-    labels, cheap stock layout
+  negativePrompt: fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, warm palette, dry surface, dull lighting, dirty, watermark, text, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable text, signature, low resolution, messy clutter, dirty product surface, unreadable labels, cheap stock layout, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

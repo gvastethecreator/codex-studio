@@ -3,7 +3,7 @@
     {
       "id": "pack_01",
       "name": "Photography & Realism",
-      "presetCount": 112
+      "presetCount": 118
     }
   ],
   "presets": [
@@ -1297,6 +1297,122 @@
       "searchableText": "sp01-087 e-commerce white sweep 5. commercial and product commercial imaging pack_01 photography & realism commercial-and-product photography-and-realism commercial-and-product"
     },
     {
+      "id": "SP01-113",
+      "name": "Dark Chiaroscuro Food",
+      "styleAnchors": [
+        "Dark Chiaroscuro Food",
+        "dark moody food photography",
+        "single side window"
+      ],
+      "ref": "pack_01/SP01-113.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "commercial-and-product",
+      "categoryName": "5. Commercial And Product",
+      "domain": "dark moody food photography",
+      "tags": ["photography-and-realism", "commercial-and-product", "dark-moody-food-photography"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-113 dark chiaroscuro food dark moody food photography single side window 5. commercial and product commercial imaging dark moody food photography pack_01 photography & realism commercial-and-product photography-and-realism commercial-and-product dark-moody-food-photography"
+    },
+    {
+      "id": "SP01-114",
+      "name": "Architectural Twilight Exterior",
+      "styleAnchors": [
+        "Architectural Twilight Exterior",
+        "twilight architectural exterior",
+        "blue-hour sky"
+      ],
+      "ref": "pack_01/SP01-114.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "commercial-and-product",
+      "categoryName": "5. Commercial And Product",
+      "domain": "twilight architectural exterior",
+      "tags": [
+        "photography-and-realism",
+        "commercial-and-product",
+        "twilight-architectural-exterior"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-114 architectural twilight exterior twilight architectural exterior blue-hour sky 5. commercial and product commercial imaging twilight architectural exterior pack_01 photography & realism commercial-and-product photography-and-realism commercial-and-product twilight-architectural-exterior"
+    },
+    {
+      "id": "SP01-115",
+      "name": "Hard-Light Glass Still Life",
+      "styleAnchors": [
+        "Hard-Light Glass Still Life",
+        "glass caustics still life",
+        "hard spot through glass"
+      ],
+      "ref": "pack_01/SP01-115.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "commercial-and-product",
+      "categoryName": "5. Commercial And Product",
+      "domain": "glass caustics still life",
+      "tags": ["photography-and-realism", "commercial-and-product", "glass-caustics-still-life"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-115 hard-light glass still life glass caustics still life hard spot through glass 5. commercial and product commercial imaging glass caustics still life pack_01 photography & realism commercial-and-product photography-and-realism commercial-and-product glass-caustics-still-life"
+    },
+    {
+      "id": "SP01-116",
+      "name": "Lifestyle In-Hand Product",
+      "styleAnchors": [
+        "Lifestyle In-Hand Product",
+        "lifestyle product in use",
+        "adult hands using the product"
+      ],
+      "ref": "pack_01/SP01-116.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "commercial-and-product",
+      "categoryName": "5. Commercial And Product",
+      "domain": "lifestyle product in use",
+      "tags": ["photography-and-realism", "commercial-and-product", "lifestyle-product-in-use"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-116 lifestyle in-hand product lifestyle product in use adult hands using the product 5. commercial and product commercial imaging lifestyle product in use pack_01 photography & realism commercial-and-product photography-and-realism commercial-and-product lifestyle-product-in-use"
+    },
+    {
+      "id": "SP01-117",
+      "name": "Color-Block Set Still Life",
+      "styleAnchors": [
+        "Color-Block Set Still Life",
+        "color paper set still life",
+        "flat colored paper planes"
+      ],
+      "ref": "pack_01/SP01-117.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "commercial-and-product",
+      "categoryName": "5. Commercial And Product",
+      "domain": "color paper set still life",
+      "tags": ["photography-and-realism", "commercial-and-product", "color-paper-set-still-life"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-117 color-block set still life color paper set still life flat colored paper planes 5. commercial and product commercial imaging color paper set still life pack_01 photography & realism commercial-and-product photography-and-realism commercial-and-product color-paper-set-still-life"
+    },
+    {
+      "id": "SP01-118",
+      "name": "Ghost Mannequin Apparel",
+      "styleAnchors": [
+        "Ghost Mannequin Apparel",
+        "invisible mannequin apparel photography",
+        "invisible body volume"
+      ],
+      "ref": "pack_01/SP01-118.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "commercial-and-product",
+      "categoryName": "5. Commercial And Product",
+      "domain": "invisible mannequin apparel photography",
+      "tags": [
+        "photography-and-realism",
+        "commercial-and-product",
+        "invisible-mannequin-apparel-photography"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-118 ghost mannequin apparel invisible mannequin apparel photography invisible body volume 5. commercial and product commercial imaging invisible mannequin apparel photography pack_01 photography & realism commercial-and-product photography-and-realism commercial-and-product invisible-mannequin-apparel-photography"
+    },
+    {
       "id": "SP01-047",
       "name": "Landscape (Ansel Adams)",
       "ref": "pack_01/SP01-047.yaml",
@@ -1513,5 +1629,5 @@
       "searchableText": "sp01-077 medical photography 7. technical and specialist imaging technical capture pack_01 photography & realism technical-and-specialist-imaging photography-and-realism technical-and-specialist-imaging"
     }
   ],
-  "totalPresetCount": 112
+  "totalPresetCount": 118
 }

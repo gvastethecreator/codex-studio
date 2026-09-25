@@ -3,7 +3,7 @@ id: SP01-083
 packId: pack_01
 name: Luxury Macro Gleam
 category: 5. Commercial And Product
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,55 +12,26 @@ tags:
   - photography-and-realism
   - commercial-and-product
 visualDna:
-  aesthetic: >-
-    Luxury Macro Gleam acts as a transferable photographic style router: begin from Luxury macro
-    advertising, Specular edge gleam, and commercial photographic system built from sellable
-    clarity, controlled studio craft, material desirability, and brand-neutral polish, then apply
-    the photographic behavior to prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Tight sculptural detail; preserve prompt identity while making
-    silhouette, surface, freshness, scale, and product-like value immediately readable, keeping the
-    original subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with Deep black, champagne highlights, jewel accents; use palette as campaign control:
-    clean whites, luxury neutrals, appetite warmth, cool tech accents, automotive reflections, or
-    interior harmony, with value separation and white balance choices that feel captured in-camera
-    rather than painted over.
-  lighting_and_shadow: >-
-    Use Razor strip lights and controlled sparkle; shape light with softboxes, reflectors, rim
-    lines, HDR fill, glossy kickers, window balance, or packshot sweep shadows, preserving
-    believable exposure, shadow density, highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Polished reflective microdetail; render metal, glass, fabric, food surface, condensation,
-    cosmetic gel, architecture finish, and clean contact shadows with precise detail, avoiding both
-    waxy smoothing and noisy texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Macro compression; compose for catalog clarity, top-down order, hero
-    compression, architectural verticals, lifestyle layout, or premium macro depth, with lens
-    distance, depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Precious, rare, quiet; derive mood from appetite, trust, luxury, engineering,
-    cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes
-    interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with High-end jewelry campaign; finish with professional photo polish, accurate material
-    response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution
-    photographic detail, and disciplined denoise without losing natural grain where the preset needs
-    it.
-  key_features: >-
-    Luxury macro advertising; Specular edge gleam; Deep black, champagne highlights, jewel accents;
-    Razor strip lights and controlled sparkle; Macro compression
-  creative_brief: >-
-    Apply Luxury Macro Gleam as a photographic preset over prompt X: preserve the user's requested
-    subject, then route Luxury macro advertising, Deep black, champagne highlights, jewel accents,
-    Razor strip lights and controlled sparkle, Polished reflective microdetail, and Macro
-    compression through optics, exposure, palette, surface response, timing, and finish without
-    requiring the card image's original subject.
+  aesthetic: 'Luxury macro gleam: extreme close-up jewelry-campaign photography where razor strip lights draw bright lines along polished edges against black.'
+  subject_treatment: Keep the prompt's object or subject exactly — shape, proportions, color, materials and any supplied design — and present it as the hero of a commercial photograph.
+  color_and_tone: Deep black ground, champagne and silver highlights, saturated jewel accents.
+  lighting_and_shadow: Narrow strip softboxes and small spot kickers placed to create controlled sparkle and specular edge lines.
+  texture_and_material: Polished metal, cut stones with internal fire, engraving and enamel resolved at macro scale.
+  camera_and_composition: 100 mm macro, very shallow focus on one facet or edge, sculptural crop that lets the object fill the frame.
+  atmosphere_and_mood: Precious and hushed, rarity shown in silence against the dark.
+  rendering_and_quality: High-end jewelry retouch; clean blacks, no dust, no plastic sparkle overlay.
+  key_features: black ground; razor strip-light edge lines; macro facet focus; jewel fire; controlled sparkle
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Luxury Macro Gleam as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - fake brand logo
+  - readable labels
+  - generic stock-photo face
+  - celebrity likeness
+  - changing the supplied object design
   - flat light
   - cheap plastic
-  - clutter
   - overexposed
+  - clutter
   - watermark
   - text
   - illustration
@@ -75,19 +46,19 @@ avoidRules:
   - readable text
   - signature
   - low resolution
-  - fake brand logo
   - messy clutter
   - dirty product surface
   - unreadable labels
   - cheap stock layout
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-083.webp
 attributes:
-  negativePrompt: >-
-    flat light, cheap plastic, clutter, overexposed, watermark, text, illustration, painting,
-    drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable text,
-    signature, low resolution, fake brand logo, messy clutter, dirty product surface, unreadable
-    labels, cheap stock layout
+  negativePrompt: fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, flat light, cheap plastic, overexposed, clutter, watermark, text, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable text, signature, low resolution, messy clutter, dirty product surface, unreadable labels, cheap stock layout, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

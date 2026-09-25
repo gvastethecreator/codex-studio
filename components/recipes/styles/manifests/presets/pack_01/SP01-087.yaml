@@ -3,7 +3,7 @@ id: SP01-087
 packId: pack_01
 name: E-Commerce White Sweep
 category: 5. Commercial And Product
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,51 +12,22 @@ tags:
   - photography-and-realism
   - commercial-and-product
 visualDna:
-  aesthetic: >-
-    E-Commerce White Sweep acts as a transferable photographic style router: begin from Marketplace
-    listing photo, White sweep with soft contact shadow, and commercial photographic system built
-    from sellable clarity, controlled studio craft, material desirability, and brand-neutral polish,
-    then apply the photographic behavior to prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Straight-on readable silhouette; preserve prompt identity while
-    making silhouette, surface, freshness, scale, and product-like value immediately readable,
-    keeping the original subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with Pure white, neutral shadow grey; use palette as campaign control: clean whites,
-    luxury neutrals, appetite warmth, cool tech accents, automotive reflections, or interior
-    harmony, with value separation and white balance choices that feel captured in-camera rather
-    than painted over.
-  lighting_and_shadow: >-
-    Use Even high-key studio box; shape light with softboxes, reflectors, rim lines, HDR fill,
-    glossy kickers, window balance, or packshot sweep shadows, preserving believable exposure,
-    shadow density, highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Accurate material, no styling noise; render metal, glass, fabric, food surface,
-    condensation, cosmetic gel, architecture finish, and clean contact shadows with precise detail,
-    avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Orthographic-like clarity; compose for catalog clarity, top-down order, hero
-    compression, architectural verticals, lifestyle layout, or premium macro depth, with lens
-    distance, depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Functional, trustworthy, searchable; derive mood from appetite, trust, luxury,
-    engineering, cleanliness, freshness, aspiration, or frictionless retail function, so the preset
-    changes interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Clean online retail image; finish with professional photo polish, accurate material
-    response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution
-    photographic detail, and disciplined denoise without losing natural grain where the preset needs
-    it.
-  key_features: >-
-    Marketplace listing photo; White sweep with soft contact shadow; Pure white, neutral shadow
-    grey; Even high-key studio box; Orthographic-like clarity
-  creative_brief: >-
-    Apply E-Commerce White Sweep as a photographic preset over prompt X: preserve the user's
-    requested subject, then route Marketplace listing photo, Pure white, neutral shadow grey, Even
-    high-key studio box, Accurate material, no styling noise, and Orthographic-like clarity through
-    optics, exposure, palette, surface response, timing, and finish without requiring the card
-    image's original subject.
+  aesthetic: 'E-commerce white sweep: a marketplace listing photo with the object on pure white, evenly lit, readable from edge to edge.'
+  subject_treatment: Keep the prompt's object exactly — shape, proportions, color and supplied design; this preset owns the pure white background and straight listing view.
+  color_and_tone: Pure white background, neutral grey contact shadow, accurate object color.
+  lighting_and_shadow: Even high-key light box from all sides; only a small soft shadow under the object.
+  texture_and_material: Accurate material, no styling props, no reflections of the studio.
+  camera_and_composition: Straight-on or catalog three-quarter view, object filling about 80 percent of the frame, centered.
+  atmosphere_and_mood: Functional and trustworthy, exactly what arrives in the box.
+  rendering_and_quality: Clean online-retail image; no lifestyle scene, dramatic light or colored backdrop.
+  key_features: pure white background; even light box; small soft contact shadow; object fills frame; straight listing view
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies E-Commerce White Sweep as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - fake brand logo
+  - readable labels
+  - generic stock-photo face
+  - celebrity likeness
+  - changing the supplied object design
   - lifestyle scene
   - dramatic lighting
   - colored backdrop
@@ -75,19 +46,19 @@ avoidRules:
   - readable text
   - signature
   - low resolution
-  - fake brand logo
   - messy clutter
   - dirty product surface
   - unreadable labels
   - cheap stock layout
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-087.webp
 attributes:
-  negativePrompt: >-
-    lifestyle scene, dramatic lighting, colored backdrop, clutter, watermark, text, illustration,
-    painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable
-    text, signature, low resolution, fake brand logo, messy clutter, dirty product surface,
-    unreadable labels, cheap stock layout
+  negativePrompt: fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, lifestyle scene, dramatic lighting, colored backdrop, clutter, watermark, text, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable text, signature, low resolution, messy clutter, dirty product surface, unreadable labels, cheap stock layout, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

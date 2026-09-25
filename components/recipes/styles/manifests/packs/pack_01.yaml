@@ -114,6 +114,12 @@ categories:
       - pack_01/SP01-085.yaml
       - pack_01/SP01-086.yaml
       - pack_01/SP01-087.yaml
+      - pack_01/SP01-113.yaml
+      - pack_01/SP01-114.yaml
+      - pack_01/SP01-115.yaml
+      - pack_01/SP01-116.yaml
+      - pack_01/SP01-117.yaml
+      - pack_01/SP01-118.yaml
   - id: nature-and-wildlife
     name: 6. Nature And Wildlife
     presetRefs:
@@ -233,6 +239,12 @@ presetRefs:
   - pack_01/SP01-085.yaml
   - pack_01/SP01-086.yaml
   - pack_01/SP01-087.yaml
+  - pack_01/SP01-113.yaml
+  - pack_01/SP01-114.yaml
+  - pack_01/SP01-115.yaml
+  - pack_01/SP01-116.yaml
+  - pack_01/SP01-117.yaml
+  - pack_01/SP01-118.yaml
   - pack_01/SP01-047.yaml
   - pack_01/SP01-048.yaml
   - pack_01/SP01-053.yaml

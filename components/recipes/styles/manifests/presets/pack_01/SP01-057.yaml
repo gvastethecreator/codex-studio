@@ -3,7 +3,7 @@ id: SP01-057
 packId: pack_01
 name: Interior Design
 category: 5. Commercial And Product
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,54 +12,24 @@ tags:
   - photography-and-realism
   - commercial-and-product
 visualDna:
-  aesthetic: >-
-    Interior Design acts as a transferable photographic style router: begin from Interior-design
-    editorial, Clean layout, and commercial photographic system built from sellable clarity,
-    controlled studio craft, material desirability, and brand-neutral polish, then apply the
-    photographic behavior to prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Wide angle; preserve prompt identity while making silhouette,
-    surface, freshness, scale, and product-like value immediately readable, keeping the original
-    subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with Balanced palette; use palette as campaign control: clean whites, luxury neutrals,
-    appetite warmth, cool tech accents, automotive reflections, or interior harmony, with value
-    separation and white balance choices that feel captured in-camera rather than painted over.
-  lighting_and_shadow: >-
-    Use Mixed window/interior; shape light with softboxes, reflectors, rim lines, HDR fill, glossy
-    kickers, window balance, or packshot sweep shadows, preserving believable exposure, shadow
-    density, highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Tactile decor materials; render metal, glass, fabric, food surface, condensation,
-    cosmetic gel, architecture finish, and clean contact shadows with precise detail, avoiding both
-    waxy smoothing and noisy texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Interior Design studio-commercial clarity, controlled material response, clean
-    selling silhouette, and polished photographic retouching; compose for catalog clarity, top-down
-    order, hero compression, architectural verticals, lifestyle layout, or premium macro depth, with
-    lens distance, depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Welcoming, expensive; derive mood from appetite, trust, luxury, engineering,
-    cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes
-    interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Design-magazine polish; finish with professional photo polish, accurate material
-    response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution
-    photographic detail, and disciplined denoise without losing natural grain where the preset needs
-    it.
-  key_features: >-
-    Interior-design editorial; Clean layout; Balanced palette; Mixed window/interior; Interior
-    Design studio-commercial clarity, controlled material response, clean selling silhouette, and
-    polished photographic retouching
-  creative_brief: >-
-    Apply Interior Design as a photographic preset over prompt X: preserve the user's requested
-    subject, then route Interior-design editorial, Balanced palette, Mixed window/interior, Tactile
-    decor materials, and Interior Design studio-commercial clarity, controlled material response,
-    clean selling silhouette, and polished photographic retouching through optics, exposure,
-    palette, surface response, timing, and finish without requiring the card image's original
-    subject.
+  aesthetic: 'Interior design editorial: a room styled and photographed for a design magazine, balanced window and lamp light, every material chosen and placed.'
+  subject_treatment: Keep the prompt subject and setting; present the space as a styled interior with considered furniture, materials and objects, uncluttered.
+  color_and_tone: Harmonious palette of two or three materials and one accent color; natural white balance.
+  lighting_and_shadow: Daylight from windows balanced with warm practical lamps; soft shadows, no flash look.
+  texture_and_material: Wood grain, linen, velvet, stone and brass rendered tactile and clean.
+  camera_and_composition: 24–35 mm at chest height, straight verticals, one-point or two-point view, a foreground object for depth.
+  atmosphere_and_mood: Welcoming and composed, a room that feels expensive yet lived in.
+  rendering_and_quality: Magazine-grade exposure blending; no fisheye stretch or HDR glow.
+  key_features: styled editorial room; window plus lamp balance; tactile materials; straight verticals; foreground depth object
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Interior Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - fake brand logo
+  - readable labels
+  - generic stock-photo face
+  - celebrity likeness
+  - changing the supplied object design
   - clutter
+  - fisheye stretch
   - dark
   - illustration
   - painting
@@ -74,18 +44,20 @@ avoidRules:
   - readable text
   - signature
   - low resolution
-  - fake brand logo
   - messy clutter
   - dirty product surface
   - unreadable labels
   - cheap stock layout
+  - text
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-057.webp
 attributes:
-  negativePrompt: >-
-    clutter, dark, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic
-    CGI, plastic render, watermark, readable text, signature, low resolution, fake brand logo, messy
-    clutter, dirty product surface, unreadable labels, cheap stock layout
+  negativePrompt: fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, clutter, fisheye stretch, dark, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, messy clutter, dirty product surface, unreadable labels, cheap stock layout, text, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

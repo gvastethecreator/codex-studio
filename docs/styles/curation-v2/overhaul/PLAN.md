@@ -53,6 +53,7 @@ Pack order, skipping pack_12 and pack_17: pack_01 → pack_24, then pack_12, pac
 | pack_01::2. Lighting Techniques     | done  | done | done   | 5 (SP01-090…094)  | pending (local)     | 3adb6717 + fix     |
 | pack_01::3. Film And Analog Process | done  | done | done   | 7 (SP01-095…101)  | pending (local)     | see git log        |
 | pack_01::4. Documentary And Street  | done  | done | done   | 11 (SP01-102…112) | pending (local)     | see git log        |
+| pack_01::5. Commercial And Product  | done  | done | done   | 6 (SP01-113…118)  | pending (local)     | see git log        |
 
 ## Open risks
 

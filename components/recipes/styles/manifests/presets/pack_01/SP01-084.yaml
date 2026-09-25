@@ -3,7 +3,7 @@ id: SP01-084
 packId: pack_01
 name: Cosmetic Gloss Still Life
 category: 5. Commercial And Product
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,54 +12,25 @@ tags:
   - photography-and-realism
   - commercial-and-product
 visualDna:
-  aesthetic: >-
-    Cosmetic Gloss Still Life acts as a transferable photographic style router: begin from
-    Beauty-product gloss ad, Gloss highlight ribbons, and commercial photographic system built from
-    sellable clarity, controlled studio craft, material desirability, and brand-neutral polish, then
-    apply the photographic behavior to prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Smooth curves and liquid highlights; preserve prompt identity
-    while making silhouette, surface, freshness, scale, and product-like value immediately readable,
-    keeping the original subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with Cream, blush, translucent color accents; use palette as campaign control: clean
-    whites, luxury neutrals, appetite warmth, cool tech accents, automotive reflections, or interior
-    harmony, with value separation and white balance choices that feel captured in-camera rather
-    than painted over.
-  lighting_and_shadow: >-
-    Use Large softbox glow with glossy kickers; shape light with softboxes, reflectors, rim lines,
-    HDR fill, glossy kickers, window balance, or packshot sweep shadows, preserving believable
-    exposure, shadow density, highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Creamy surface, gel sheen, glassy reflection; render metal, glass, fabric, food surface,
-    condensation, cosmetic gel, architecture finish, and clean contact shadows with precise detail,
-    avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Gentle macro depth; compose for catalog clarity, top-down order, hero
-    compression, architectural verticals, lifestyle layout, or premium macro depth, with lens
-    distance, depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Clean, sensorial, polished; derive mood from appetite, trust, luxury, engineering,
-    cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes
-    interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Premium beauty campaign; finish with professional photo polish, accurate material
-    response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution
-    photographic detail, and disciplined denoise without losing natural grain where the preset needs
-    it.
-  key_features: >-
-    Beauty-product gloss ad; Gloss highlight ribbons; Cream, blush, translucent color accents; Large
-    softbox glow with glossy kickers; Gentle macro depth
-  creative_brief: >-
-    Apply Cosmetic Gloss Still Life as a photographic preset over prompt X: preserve the user's
-    requested subject, then route Beauty-product gloss ad, Cream, blush, translucent color accents,
-    Large softbox glow with glossy kickers, Creamy surface, gel sheen, glassy reflection, and Gentle
-    macro depth through optics, exposure, palette, surface response, timing, and finish without
-    requiring the card image's original subject.
+  aesthetic: 'Cosmetic gloss still life: beauty-product advertising built on liquid highlights, creamy textures and translucent color.'
+  subject_treatment: Keep the prompt's object or subject exactly — shape, proportions, color, materials and any supplied design — and present it as the hero of a commercial photograph.
+  color_and_tone: Cream, blush, pearl and one translucent accent color; soft luminous whites.
+  lighting_and_shadow: Very large soft source for creamy gradients, glossy kicker cards making ribbon highlights on curved surfaces.
+  texture_and_material: Smears, swirls and drops of product with gel sheen, pearlescent shimmer or cream peaks; glassy packaging.
+  camera_and_composition: Gentle macro, product plus a texture swatch or drop, clean surface with a soft reflection.
+  atmosphere_and_mood: Sensorial and smooth, texture you want to touch presented with calm luxury.
+  rendering_and_quality: Premium beauty campaign polish; no grit, harsh contrast or clutter.
+  key_features: ribbon gloss highlights; product swirls and drops; pearl and blush palette; creamy gradients; soft reflection
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cosmetic Gloss Still Life as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
-  - dirty
+  - fake brand logo
+  - readable labels
+  - generic stock-photo face
+  - celebrity likeness
+  - changing the supplied object design
   - harsh contrast
   - gritty texture
+  - dirty
   - clutter
   - watermark
   - text
@@ -75,19 +46,19 @@ avoidRules:
   - readable text
   - signature
   - low resolution
-  - fake brand logo
   - messy clutter
   - dirty product surface
   - unreadable labels
   - cheap stock layout
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-084.webp
 attributes:
-  negativePrompt: >-
-    dirty, harsh contrast, gritty texture, clutter, watermark, text, illustration, painting,
-    drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable text,
-    signature, low resolution, fake brand logo, messy clutter, dirty product surface, unreadable
-    labels, cheap stock layout
+  negativePrompt: fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, harsh contrast, gritty texture, dirty, clutter, watermark, text, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable text, signature, low resolution, messy clutter, dirty product surface, unreadable labels, cheap stock layout, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

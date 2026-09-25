@@ -8,28 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Food Photography',
     category: '5. Commercial And Product',
     negativePrompt:
-      'unappetizing, dark, dirty, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake brand logo, messy clutter, dirty product surface, unreadable labels, cheap stock layout',
+      'fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, unappetizing, plastic food, dark, dirty, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, messy clutter, dirty product surface, unreadable labels, cheap stock layout, text, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Food Photography acts as a transferable photographic style router: begin from Appetizing food-styling light, Top down or 45 degree, and commercial photographic system built from sellable clarity, controlled studio craft, material desirability, and brand-neutral polish, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Bright food photography: food styled for appetite and lit from one soft window side, shot at 45 degrees or straight down, as in a cookbook.',
       subject_treatment:
-        'Treat any prompt subject through Soft focus depth field; preserve prompt identity while making silhouette, surface, freshness, scale, and product-like value immediately readable, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject; if it is food, style it fresh and at its best; if not, borrow food-styling light, surfaces and props around it without turning it into food.',
       color_and_tone:
-        'Grade with Warm, saturated, fresh; use palette as campaign control: clean whites, luxury neutrals, appetite warmth, cool tech accents, automotive reflections, or interior harmony, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Warm, fresh, saturated color; creamy whites, golden crusts, glossy greens; shadows soft and slightly warm.',
       lighting_and_shadow:
-        'Use Window light, reflector; shape light with softboxes, reflectors, rim lines, HDR fill, glossy kickers, window balance, or packshot sweep shadows, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Large diffused side window, white bounce card opposite, gentle backlight for steam and gloss.',
       texture_and_material:
-        'Render Steamlike glow, gloss, fresh surface; render metal, glass, fabric, food surface, condensation, cosmetic gel, architecture finish, and clean contact shadows with precise detail, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Crumb, crust, glaze, droplets and steam rendered crisp; linen, wood and stoneware props with real wear.',
       camera_and_composition:
-        'Compose through Food Photography studio-commercial clarity, controlled material response, clean selling silhouette, and polished photographic retouching; compose for catalog clarity, top-down order, hero compression, architectural verticals, lifestyle layout, or premium macro depth, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Warm, appetizing; derive mood from appetite, trust, luxury, engineering, cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes interpretation without demanding a specific story, location, or character.',
+        '45-degree or overhead angle, 50–100 mm, shallow focus falling off behind the hero bite, a few crumbs or herbs as scatter.',
+      atmosphere_and_mood: 'Warm and inviting, the plate just set down and still steaming.',
       rendering_and_quality:
-        'Finish with Cookbook-style appetite polish; finish with professional photo polish, accurate material response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Cookbook polish with real texture; no plastic-looking food or oversaturated grade.',
       key_features:
-        'Appetizing food-styling light; Top down or 45 degree; Warm, saturated, fresh; Window light, reflector; Food Photography studio-commercial clarity, controlled material response, clean selling silhouette, and polished photographic retouching',
+        'soft side window with bounce; 45-degree or overhead angle; steam and glaze highlights; linen and stoneware props; shallow focus',
       creative_brief:
-        "Apply Food Photography as a photographic preset over prompt X: preserve the user's requested subject, then route Appetizing food-styling light, Warm, saturated, fresh, Window light, reflector, Steamlike glow, gloss, fresh surface, and Food Photography studio-commercial clarity, controlled material response, clean selling silhouette, and polished photographic retouching through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Food Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +36,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Product Photography',
     category: '5. Commercial And Product',
     negativePrompt:
-      'dust, scratches, messy, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake brand logo, messy clutter, dirty product surface, unreadable labels, cheap stock layout',
+      'fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, dust, scratches, lifestyle clutter, messy, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, messy clutter, dirty product surface, unreadable labels, cheap stock layout, text, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Product Photography acts as a transferable photographic style router: begin from Clean commercial object, White/Grey depth field, and commercial photographic system built from sellable clarity, controlled studio craft, material desirability, and brand-neutral polish, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Studio product photography: one object isolated on a light grey sweep, lit with large softboxes to show its form, material and edges precisely.',
       subject_treatment:
-        'Treat any prompt subject through Sharp edges; preserve prompt identity while making silhouette, surface, freshness, scale, and product-like value immediately readable, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Accurate, clean; use palette as campaign control: clean whites, luxury neutrals, appetite warmth, cool tech accents, automotive reflections, or interior harmony, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        "Keep the prompt's object or subject exactly — shape, proportions, color, materials and any supplied design — and present it as the hero of a commercial photograph.",
+      color_and_tone: 'Accurate neutral color, clean light grey background, true material colors.',
       lighting_and_shadow:
-        'Use Studio softbox; shape light with softboxes, reflectors, rim lines, HDR fill, glossy kickers, window balance, or packshot sweep shadows, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Large overhead softbox plus two strip lights for edge definition; soft contact shadow under the object.',
       texture_and_material:
-        'Render Perfect surface; render metal, glass, fabric, food surface, condensation, cosmetic gel, architecture finish, and clean contact shadows with precise detail, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Surface finish shown truthfully — brushed, polished, grained or stitched — without dust or scratches.',
       camera_and_composition:
-        'Compose through Product Photography studio-commercial clarity, controlled material response, clean selling silhouette, and polished photographic retouching; compose for catalog clarity, top-down order, hero compression, architectural verticals, lifestyle layout, or premium macro depth, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+        '90–120 mm, slight three-quarter angle, object centered with generous space, full depth of field.',
       atmosphere_and_mood:
-        'Keep the mood Professional, desire; derive mood from appetite, trust, luxury, engineering, cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Precise and desirable, an object presented with calm, clinical respect.',
       rendering_and_quality:
-        'Finish with Apple ad, commercial; finish with professional photo polish, accurate material response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Commercial retouching with crisp edges and clean gradients; no CGI plastic look.',
       key_features:
-        'Clean commercial object; White/Grey depth field; Accurate, clean; Studio softbox; Product Photography studio-commercial clarity, controlled material response, clean selling silhouette, and polished photographic retouching',
+        'grey sweep isolation; overhead softbox and strip-light edges; soft contact shadow; three-quarter angle; truthful finish',
       creative_brief:
-        "Apply Product Photography as a photographic preset over prompt X: preserve the user's requested subject, then route Clean commercial object, Accurate, clean, Studio softbox, Perfect surface, and Product Photography studio-commercial clarity, controlled material response, clean selling silhouette, and polished photographic retouching through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Product Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +64,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Architecture (Modern)',
     category: '5. Commercial And Product',
     negativePrompt:
-      'messy, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake brand logo, messy clutter, dirty product surface, unreadable labels, cheap stock layout',
+      'fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, converging verticals, rustic cabin, HDR halos, messy, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, messy clutter, dirty product surface, unreadable labels, cheap stock layout, text, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Architecture (Modern) acts as a transferable photographic style router: begin from Modern architectural photography, Vertical lines, and commercial photographic system built from sellable clarity, controlled studio craft, material desirability, and brand-neutral polish, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Modern architectural photography: buildings of concrete, glass and steel photographed with corrected verticals and hard sun sculpting planes.',
       subject_treatment:
-        'Treat any prompt subject through Geometric lines; preserve prompt identity while making silhouette, surface, freshness, scale, and product-like value immediately readable, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject and setting; show built form as clean volumes and planes, with people only as small scale markers.',
       color_and_tone:
-        'Grade with Glass, Steel, Concrete; use palette as campaign control: clean whites, luxury neutrals, appetite warmth, cool tech accents, automotive reflections, or interior harmony, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Cool neutral concrete, deep sky blue, black glass reflections, crisp whites.',
       lighting_and_shadow:
-        'Use Sunlight and shadow; shape light with softboxes, reflectors, rim lines, HDR fill, glossy kickers, window balance, or packshot sweep shadows, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Hard direct sun raking across facades, shadow edges as graphic lines, reflections on glass.',
       texture_and_material:
-        'Render Glass, steel, concrete response; render metal, glass, fabric, food surface, condensation, cosmetic gel, architecture finish, and clean contact shadows with precise detail, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Board-formed concrete grain, steel joints and glass reflections resolved precisely.',
       camera_and_composition:
-        'Compose through Perspective correction; compose for catalog clarity, top-down order, hero compression, architectural verticals, lifestyle layout, or premium macro depth, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Imposing, structured; derive mood from appetite, trust, luxury, engineering, cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Shift-lens perspective correction, perfectly vertical lines, symmetrical or strong diagonal composition, lots of sky or negative space.',
+      atmosphere_and_mood: 'Imposing and calm, geometry and shadow doing all of the talking.',
       rendering_and_quality:
-        'Finish with ArchDaily, clean; finish with professional photo polish, accurate material response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Architectural-magazine clarity; distinct from cosy cabins and from HDR listing photos.',
       key_features:
-        'Modern architectural photography; Vertical lines; Glass, Steel, Concrete; Sunlight and shadow; Perspective correction',
+        'corrected verticals; hard sun on concrete planes; glass reflections; symmetrical geometry; tiny human scale',
       creative_brief:
-        "Apply Architecture (Modern) as a photographic preset over prompt X: preserve the user's requested subject, then route Modern architectural photography, Glass, Steel, Concrete, Sunlight and shadow, Glass, steel, concrete response, and Perspective correction through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Architecture (Modern) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +92,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Interior Design',
     category: '5. Commercial And Product',
     negativePrompt:
-      'clutter, dark, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake brand logo, messy clutter, dirty product surface, unreadable labels, cheap stock layout',
+      'fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, clutter, fisheye stretch, dark, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, messy clutter, dirty product surface, unreadable labels, cheap stock layout, text, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Interior Design acts as a transferable photographic style router: begin from Interior-design editorial, Clean layout, and commercial photographic system built from sellable clarity, controlled studio craft, material desirability, and brand-neutral polish, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Interior design editorial: a room styled and photographed for a design magazine, balanced window and lamp light, every material chosen and placed.',
       subject_treatment:
-        'Treat any prompt subject through Wide angle; preserve prompt identity while making silhouette, surface, freshness, scale, and product-like value immediately readable, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject and setting; present the space as a styled interior with considered furniture, materials and objects, uncluttered.',
       color_and_tone:
-        'Grade with Balanced palette; use palette as campaign control: clean whites, luxury neutrals, appetite warmth, cool tech accents, automotive reflections, or interior harmony, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Harmonious palette of two or three materials and one accent color; natural white balance.',
       lighting_and_shadow:
-        'Use Mixed window/interior; shape light with softboxes, reflectors, rim lines, HDR fill, glossy kickers, window balance, or packshot sweep shadows, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Daylight from windows balanced with warm practical lamps; soft shadows, no flash look.',
       texture_and_material:
-        'Render Tactile decor materials; render metal, glass, fabric, food surface, condensation, cosmetic gel, architecture finish, and clean contact shadows with precise detail, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Wood grain, linen, velvet, stone and brass rendered tactile and clean.',
       camera_and_composition:
-        'Compose through Interior Design studio-commercial clarity, controlled material response, clean selling silhouette, and polished photographic retouching; compose for catalog clarity, top-down order, hero compression, architectural verticals, lifestyle layout, or premium macro depth, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Welcoming, expensive; derive mood from appetite, trust, luxury, engineering, cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Design-magazine polish; finish with professional photo polish, accurate material response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        '24–35 mm at chest height, straight verticals, one-point or two-point view, a foreground object for depth.',
+      atmosphere_and_mood: 'Welcoming and composed, a room that feels expensive yet lived in.',
+      rendering_and_quality: 'Magazine-grade exposure blending; no fisheye stretch or HDR glow.',
       key_features:
-        'Interior-design editorial; Clean layout; Balanced palette; Mixed window/interior; Interior Design studio-commercial clarity, controlled material response, clean selling silhouette, and polished photographic retouching',
+        'styled editorial room; window plus lamp balance; tactile materials; straight verticals; foreground depth object',
       creative_brief:
-        "Apply Interior Design as a photographic preset over prompt X: preserve the user's requested subject, then route Interior-design editorial, Balanced palette, Mixed window/interior, Tactile decor materials, and Interior Design studio-commercial clarity, controlled material response, clean selling silhouette, and polished photographic retouching through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Interior Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +119,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Corporate Stock Photo',
     category: '5. Commercial And Product',
     negativePrompt:
-      'sad, dark, weird, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake brand logo, messy clutter, dirty product surface, unreadable labels, cheap stock layout',
+      'fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, sad, dark, readable screen UI, weird, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, messy clutter, dirty product surface, unreadable labels, cheap stock layout, text, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Corporate Stock Photo acts as a transferable photographic style router: begin from Generic corporate stock polish, Safe generic optimism, and commercial photographic system built from sellable clarity, controlled studio craft, material desirability, and brand-neutral polish, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Corporate stock photography: bright, safe, generic imagery with smiling people collaborating in clean spaces — the look, deliberately, of the stock library.',
       subject_treatment:
-        'Treat any prompt subject through Clean; preserve prompt identity while making silhouette, surface, freshness, scale, and product-like value immediately readable, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Bright, blue tint; use palette as campaign control: clean whites, luxury neutrals, appetite warmth, cool tech accents, automotive reflections, or interior harmony, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Keep the prompt subject and setting; stage people in friendly collaborative poses with broad smiles and tidy clothing, as stock photos do.',
+      color_and_tone: 'Bright high-key exposure, cool blue-white tint, clean whites, low contrast.',
       lighting_and_shadow:
-        'Use Bright institutional soft light; shape light with softboxes, reflectors, rim lines, HDR fill, glossy kickers, window balance, or packshot sweep shadows, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Even soft institutional light from big windows or panels; almost no shadow.',
       texture_and_material:
-        'Render Clean; render metal, glass, fabric, food surface, condensation, cosmetic gel, architecture finish, and clean contact shadows with precise detail, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Clean glass walls, white desks and potted plants; skin smoothed and clothes wrinkle-free.',
       camera_and_composition:
-        'Compose through Sanitized sameness; compose for catalog clarity, top-down order, hero compression, architectural verticals, lifestyle layout, or premium macro depth, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+        'Eye level, 35–50 mm, a group arranged around one object they all look at, shallow background blur.',
       atmosphere_and_mood:
-        'Keep the mood Professional, fake; derive mood from appetite, trust, luxury, engineering, cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Relentlessly positive and bland, optimism that is a little too perfect to believe.',
       rendering_and_quality:
-        'Finish with Generic, safe; finish with professional photo polish, accurate material response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Glossy generic stock finish; no screens with readable UI and no real brands.',
       key_features:
-        'Generic corporate stock polish; Safe generic optimism; Bright, blue tint; Bright institutional soft light; Sanitized sameness',
+        'bright blue-white high key; group around one object; broad smiles; glass office blur; sanitized sameness',
       creative_brief:
-        "Apply Corporate Stock Photo as a photographic preset over prompt X: preserve the user's requested subject, then route Generic corporate stock polish, Bright, blue tint, Bright institutional soft light, Clean, and Sanitized sameness through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Corporate Stock Photo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +147,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Real Estate (HDR)',
     category: '5. Commercial And Product',
     negativePrompt:
-      'shadows, dark corners, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake brand logo, messy clutter, dirty product surface, unreadable labels, cheap stock layout',
+      'fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, dark corners, moody shadows, shadows, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, messy clutter, dirty product surface, unreadable labels, cheap stock layout, text, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Real Estate (HDR) acts as a transferable photographic style router: begin from Real estate HDR brightness, Shadowless HDR visibility, and commercial photographic system built from sellable clarity, controlled studio craft, material desirability, and brand-neutral polish, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Real estate HDR listing photography: an ultra-wide room shot with bracketed exposures blended until every corner and the view outside are equally bright.',
       subject_treatment:
-        'Treat any prompt subject through Wide angle; preserve prompt identity while making silhouette, surface, freshness, scale, and product-like value immediately readable, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject and setting; present the space empty or tidied for sale, as large and bright as possible.',
       color_and_tone:
-        'Grade with Saturated, even; use palette as campaign control: clean whites, luxury neutrals, appetite warmth, cool tech accents, automotive reflections, or interior harmony, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Saturated even color, very bright whites, blue sky pulled into the windows, slight HDR haloing at window edges.',
       lighting_and_shadow:
-        'Use No shadows (HDR); shape light with softboxes, reflectors, rim lines, HDR fill, glossy kickers, window balance, or packshot sweep shadows, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Virtually no shadows; windows and interiors balanced to the same brightness, ceiling lights all on.',
       texture_and_material:
-        'Render Sharp; render metal, glass, fabric, food surface, condensation, cosmetic gel, architecture finish, and clean contact shadows with precise detail, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Crisp over-sharpened surfaces, mirror-glossy floors and flattened local contrast everywhere.',
       camera_and_composition:
-        'Compose through Unnatural dynamic range; compose for catalog clarity, top-down order, hero compression, architectural verticals, lifestyle layout, or premium macro depth, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+        '14–18 mm ultra-wide from a corner at chest height, vertical lines corrected, room exaggerated in size.',
       atmosphere_and_mood:
-        'Keep the mood Bright, selling; derive mood from appetite, trust, luxury, engineering, cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Bright and hard-selling, cheerful emptiness that feels slightly unreal.',
       rendering_and_quality:
-        'Finish with Listing-photo oversaturation; finish with professional photo polish, accurate material response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Listing-photo HDR look with its typical flat tonality; not architectural-magazine restraint.',
       key_features:
-        'Real estate HDR brightness; Shadowless HDR visibility; Saturated, even; No shadows (HDR); Unnatural dynamic range',
+        'ultra-wide corner view; shadowless HDR blend; bright windows with blue sky; saturated even color; over-sharpened',
       creative_brief:
-        "Apply Real Estate (HDR) as a photographic preset over prompt X: preserve the user's requested subject, then route Real estate HDR brightness, Saturated, even, No shadows (HDR), Sharp, and Unnatural dynamic range through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Real Estate (HDR) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +176,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Automotive Photography',
     category: '5. Commercial And Product',
     negativePrompt:
-      'dirty, dull, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake brand logo, messy clutter, dirty product surface, unreadable labels, cheap stock layout',
+      'fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, license plate, badge, dull paint, dirty, dull, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, messy clutter, dirty product surface, unreadable labels, cheap stock layout, text, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Automotive Photography acts as a transferable photographic style router: begin from Automotive commercial polish, Reflective speed isolation, and commercial photographic system built from sellable clarity, controlled studio craft, material desirability, and brand-neutral polish, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Automotive advertising photography: a vehicle sculpted by long strip reflections along its bodywork, or shown in a rolling shot with blurred wheels and background.',
       subject_treatment:
-        'Treat any prompt subject through Sleek curves; preserve prompt identity while making silhouette, surface, freshness, scale, and product-like value immediately readable, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Metallic paint; use palette as campaign control: clean whites, luxury neutrals, appetite warmth, cool tech accents, automotive reflections, or interior harmony, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        "Keep the prompt's object or subject exactly — shape, proportions, color, materials and any supplied design — and present it as the hero of a commercial photograph.",
+      color_and_tone: 'Deep glossy paint color, dark or dusk surroundings, clean specular whites.',
       lighting_and_shadow:
-        'Use Studio sweep or motion blur; shape light with softboxes, reflectors, rim lines, HDR fill, glossy kickers, window balance, or packshot sweep shadows, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Huge overhead scrim or light-painted strips creating continuous reflections along every panel; rim light on the silhouette.',
       texture_and_material:
-        'Render Reflection; render metal, glass, fabric, food surface, condensation, cosmetic gel, architecture finish, and clean contact shadows with precise detail, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Mirror-like paint, chrome, glass and leather; reflections shaped deliberately.',
       camera_and_composition:
-        'Compose through Motion blur wheels; compose for catalog clarity, top-down order, hero compression, architectural verticals, lifestyle layout, or premium macro depth, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Fast, powerful; derive mood from appetite, trust, luxury, engineering, cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Low three-quarter front angle, 35–85 mm; for motion, a panned rolling shot with streaked background and spinning wheels.',
+      atmosphere_and_mood: 'Powerful and sleek, weight and speed held in one glossy form.',
       rendering_and_quality:
-        'Finish with Top Gear, expensive; finish with professional photo polish, accurate material response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'High-end automotive retouch with controlled reflections; no badges, plates or readable text.',
       key_features:
-        'Automotive commercial polish; Reflective speed isolation; Metallic paint; Studio sweep or motion blur; Motion blur wheels',
+        'strip reflections along bodywork; low three-quarter angle; rolling shot with blurred wheels; mirror paint; rim-lit silhouette',
       creative_brief:
-        "Apply Automotive Photography as a photographic preset over prompt X: preserve the user's requested subject, then route Automotive commercial polish, Metallic paint, Studio sweep or motion blur, Reflection, and Motion blur wheels through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Automotive Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +203,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Flat Lay',
     category: '5. Commercial And Product',
     negativePrompt:
-      'perspective, messy, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake brand logo, messy clutter, dirty product surface, unreadable labels, cheap stock layout',
+      'fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, perspective, messy pile, messy, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, messy clutter, dirty product surface, unreadable labels, cheap stock layout, text, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Flat Lay acts as a transferable photographic style router: begin from Top-down arranged composition, 90 degree angle, and commercial photographic system built from sellable clarity, controlled studio craft, material desirability, and brand-neutral polish, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Flat lay: objects arranged on a surface and photographed straight down at exactly 90 degrees with measured spacing.',
       subject_treatment:
-        'Treat any prompt subject through Grid organization; preserve prompt identity while making silhouette, surface, freshness, scale, and product-like value immediately readable, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Coordinated palette; use palette as campaign control: clean whites, luxury neutrals, appetite warmth, cool tech accents, automotive reflections, or interior harmony, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        "Keep the prompt's object exactly — shape, proportions, color and supplied design; this preset owns the straight-down camera and the arranged layout.",
+      color_and_tone: 'Coordinated palette of three or four colors, matte surface background.',
       lighting_and_shadow:
-        'Use Top down soft; shape light with softboxes, reflectors, rim lines, HDR fill, glossy kickers, window balance, or packshot sweep shadows, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Soft overhead or window light with small, consistent soft shadows to one side.',
       texture_and_material:
-        'Render Clean surface texture; render metal, glass, fabric, food surface, condensation, cosmetic gel, architecture finish, and clean contact shadows with precise detail, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Background surface (linen, slate, wood, paper) visible and even; objects crisp.',
       camera_and_composition:
-        'Compose through Overhead orthographic flat-lay composition with measured spacing, clean object separation, and strong negative-space rhythm for Flat Lay; compose for catalog clarity, top-down order, hero compression, architectural verticals, lifestyle layout, or premium macro depth, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Satisfying, clean; derive mood from appetite, trust, luxury, engineering, cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Instagram, organized; finish with professional photo polish, accurate material response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Exactly top-down, no perspective, objects in a grid or radial arrangement with equal gaps and negative space.',
+      atmosphere_and_mood: 'Orderly and satisfying, everything placed with patient intent.',
+      rendering_and_quality: 'Crisp editorial flat lay; no tilted camera and no clutter pile.',
       key_features:
-        'Top-down arranged composition; 90 degree angle; Coordinated palette; Top down soft; Overhead orthographic flat-lay composition with measured spacing, clean object separation, and strong negative-space rhythm for Flat Lay',
+        'exact 90-degree overhead; measured spacing; coordinated palette; soft consistent shadows; negative space',
       creative_brief:
-        "Apply Flat Lay as a photographic preset over prompt X: preserve the user's requested subject, then route Top-down arranged composition, Coordinated palette, Top down soft, Clean surface texture, and Overhead orthographic flat-lay composition with measured spacing, clean object separation, and strong negative-space rhythm for Flat Lay through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Flat Lay as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +229,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Seamless Packshot',
     category: '5. Commercial And Product',
     negativePrompt:
-      'clutter, dramatic shadow, lifestyle scene, watermark, text, signature, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable text, low resolution, fake brand logo, messy clutter, dirty product surface, unreadable labels, cheap stock layout',
+      'fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, dramatic shadow, lifestyle scene, props, clutter, watermark, text, signature, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable text, low resolution, messy clutter, dirty product surface, unreadable labels, cheap stock layout, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Seamless Packshot acts as a transferable photographic style router: begin from Catalog packshot clarity, Seamless depth field, and commercial photographic system built from sellable clarity, controlled studio craft, material desirability, and brand-neutral polish, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Seamless catalog packshot: the object alone on a pure white or light grey infinity cove, lit for truth rather than drama.',
       subject_treatment:
-        'Treat any prompt subject through central object geometry; preserve prompt identity while making silhouette, surface, freshness, scale, and product-like value immediately readable, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Neutral whites and controlled greys; use palette as campaign control: clean whites, luxury neutrals, appetite warmth, cool tech accents, automotive reflections, or interior harmony, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        "Keep the prompt's object exactly — shape, proportions, color and supplied design; this preset owns the seamless backdrop and neutral catalog framing.",
+      color_and_tone: 'Neutral whites, controlled light greys, accurate object color.',
       lighting_and_shadow:
-        'Use Shadowless softbox sweep; shape light with softboxes, reflectors, rim lines, HDR fill, glossy kickers, window balance, or packshot sweep shadows, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
-      texture_and_material:
-        'Render Clean true surface; render metal, glass, fabric, food surface, condensation, cosmetic gel, architecture finish, and clean contact shadows with precise detail, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Shadowless softbox sweep from above and both sides, with only a faint contact shadow.',
+      texture_and_material: 'Clean, true surface detail; no dust and no styling props.',
       camera_and_composition:
-        'Compose through Corrected perspective; compose for catalog clarity, top-down order, hero compression, architectural verticals, lifestyle layout, or premium macro depth, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+        'Straight-on or slight three-quarter, object centered, corrected perspective.',
       atmosphere_and_mood:
-        'Keep the mood Objective, premium, frictionless; derive mood from appetite, trust, luxury, engineering, cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Retail catalog precision; finish with professional photo polish, accurate material response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Objective and frictionless, the object shown with nothing to distract from it.',
+      rendering_and_quality: 'Retail catalog precision with clean edges on a seamless background.',
       key_features:
-        'Catalog packshot clarity; Seamless depth field; Neutral whites and controlled greys; Shadowless softbox sweep; Corrected perspective',
+        'infinity cove background; shadowless softbox sweep; faint contact shadow; centered object; corrected perspective',
       creative_brief:
-        "Apply Seamless Packshot as a photographic preset over prompt X: preserve the user's requested subject, then route Catalog packshot clarity, Neutral whites and controlled greys, Shadowless softbox sweep, Clean true surface, and Corrected perspective through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Seamless Packshot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -269,28 +255,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Luxury Macro Gleam',
     category: '5. Commercial And Product',
     negativePrompt:
-      'flat light, cheap plastic, clutter, overexposed, watermark, text, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable text, signature, low resolution, fake brand logo, messy clutter, dirty product surface, unreadable labels, cheap stock layout',
+      'fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, flat light, cheap plastic, overexposed, clutter, watermark, text, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable text, signature, low resolution, messy clutter, dirty product surface, unreadable labels, cheap stock layout, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Luxury Macro Gleam acts as a transferable photographic style router: begin from Luxury macro advertising, Specular edge gleam, and commercial photographic system built from sellable clarity, controlled studio craft, material desirability, and brand-neutral polish, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Luxury macro gleam: extreme close-up jewelry-campaign photography where razor strip lights draw bright lines along polished edges against black.',
       subject_treatment:
-        'Treat any prompt subject through Tight sculptural detail; preserve prompt identity while making silhouette, surface, freshness, scale, and product-like value immediately readable, keeping the original subject, pose, species, object, or environment legible.',
+        "Keep the prompt's object or subject exactly — shape, proportions, color, materials and any supplied design — and present it as the hero of a commercial photograph.",
       color_and_tone:
-        'Grade with Deep black, champagne highlights, jewel accents; use palette as campaign control: clean whites, luxury neutrals, appetite warmth, cool tech accents, automotive reflections, or interior harmony, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Deep black ground, champagne and silver highlights, saturated jewel accents.',
       lighting_and_shadow:
-        'Use Razor strip lights and controlled sparkle; shape light with softboxes, reflectors, rim lines, HDR fill, glossy kickers, window balance, or packshot sweep shadows, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Narrow strip softboxes and small spot kickers placed to create controlled sparkle and specular edge lines.',
       texture_and_material:
-        'Render Polished reflective microdetail; render metal, glass, fabric, food surface, condensation, cosmetic gel, architecture finish, and clean contact shadows with precise detail, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Polished metal, cut stones with internal fire, engraving and enamel resolved at macro scale.',
       camera_and_composition:
-        'Compose through Macro compression; compose for catalog clarity, top-down order, hero compression, architectural verticals, lifestyle layout, or premium macro depth, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Precious, rare, quiet; derive mood from appetite, trust, luxury, engineering, cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes interpretation without demanding a specific story, location, or character.',
+        '100 mm macro, very shallow focus on one facet or edge, sculptural crop that lets the object fill the frame.',
+      atmosphere_and_mood: 'Precious and hushed, rarity shown in silence against the dark.',
       rendering_and_quality:
-        'Finish with High-end jewelry campaign; finish with professional photo polish, accurate material response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'High-end jewelry retouch; clean blacks, no dust, no plastic sparkle overlay.',
       key_features:
-        'Luxury macro advertising; Specular edge gleam; Deep black, champagne highlights, jewel accents; Razor strip lights and controlled sparkle; Macro compression',
+        'black ground; razor strip-light edge lines; macro facet focus; jewel fire; controlled sparkle',
       creative_brief:
-        "Apply Luxury Macro Gleam as a photographic preset over prompt X: preserve the user's requested subject, then route Luxury macro advertising, Deep black, champagne highlights, jewel accents, Razor strip lights and controlled sparkle, Polished reflective microdetail, and Macro compression through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Luxury Macro Gleam as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -298,28 +283,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cosmetic Gloss Still Life',
     category: '5. Commercial And Product',
     negativePrompt:
-      'dirty, harsh contrast, gritty texture, clutter, watermark, text, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable text, signature, low resolution, fake brand logo, messy clutter, dirty product surface, unreadable labels, cheap stock layout',
+      'fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, harsh contrast, gritty texture, dirty, clutter, watermark, text, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable text, signature, low resolution, messy clutter, dirty product surface, unreadable labels, cheap stock layout, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cosmetic Gloss Still Life acts as a transferable photographic style router: begin from Beauty-product gloss ad, Gloss highlight ribbons, and commercial photographic system built from sellable clarity, controlled studio craft, material desirability, and brand-neutral polish, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Cosmetic gloss still life: beauty-product advertising built on liquid highlights, creamy textures and translucent color.',
       subject_treatment:
-        'Treat any prompt subject through Smooth curves and liquid highlights; preserve prompt identity while making silhouette, surface, freshness, scale, and product-like value immediately readable, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Cream, blush, translucent color accents; use palette as campaign control: clean whites, luxury neutrals, appetite warmth, cool tech accents, automotive reflections, or interior harmony, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        "Keep the prompt's object or subject exactly — shape, proportions, color, materials and any supplied design — and present it as the hero of a commercial photograph.",
+      color_and_tone: 'Cream, blush, pearl and one translucent accent color; soft luminous whites.',
       lighting_and_shadow:
-        'Use Large softbox glow with glossy kickers; shape light with softboxes, reflectors, rim lines, HDR fill, glossy kickers, window balance, or packshot sweep shadows, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Very large soft source for creamy gradients, glossy kicker cards making ribbon highlights on curved surfaces.',
       texture_and_material:
-        'Render Creamy surface, gel sheen, glassy reflection; render metal, glass, fabric, food surface, condensation, cosmetic gel, architecture finish, and clean contact shadows with precise detail, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Smears, swirls and drops of product with gel sheen, pearlescent shimmer or cream peaks; glassy packaging.',
       camera_and_composition:
-        'Compose through Gentle macro depth; compose for catalog clarity, top-down order, hero compression, architectural verticals, lifestyle layout, or premium macro depth, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+        'Gentle macro, product plus a texture swatch or drop, clean surface with a soft reflection.',
       atmosphere_and_mood:
-        'Keep the mood Clean, sensorial, polished; derive mood from appetite, trust, luxury, engineering, cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Premium beauty campaign; finish with professional photo polish, accurate material response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Sensorial and smooth, texture you want to touch presented with calm luxury.',
+      rendering_and_quality: 'Premium beauty campaign polish; no grit, harsh contrast or clutter.',
       key_features:
-        'Beauty-product gloss ad; Gloss highlight ribbons; Cream, blush, translucent color accents; Large softbox glow with glossy kickers; Gentle macro depth',
+        'ribbon gloss highlights; product swirls and drops; pearl and blush palette; creamy gradients; soft reflection',
       creative_brief:
-        "Apply Cosmetic Gloss Still Life as a photographic preset over prompt X: preserve the user's requested subject, then route Beauty-product gloss ad, Cream, blush, translucent color accents, Large softbox glow with glossy kickers, Creamy surface, gel sheen, glassy reflection, and Gentle macro depth through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cosmetic Gloss Still Life as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -327,28 +310,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tech Hardware Hero',
     category: '5. Commercial And Product',
     negativePrompt:
-      'messy cables, dust, scratches, warm clutter, watermark, text, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable text, signature, low resolution, fake brand logo, messy clutter, dirty product surface, unreadable labels, cheap stock layout',
+      'fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, messy cables, dust, warm clutter, readable screen UI, scratches, watermark, text, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable text, signature, low resolution, messy clutter, dirty product surface, unreadable labels, cheap stock layout, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Tech Hardware Hero acts as a transferable photographic style router: begin from Premium tech launch image, Precision rim outline, and commercial photographic system built from sellable clarity, controlled studio craft, material desirability, and brand-neutral polish, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        "Tech hardware hero: a launch-keynote product image with a dark graphite sweep and precise rim lights tracing the object's outline.",
       subject_treatment:
-        'Treat any prompt subject through Minimal hero silhouette; preserve prompt identity while making silhouette, surface, freshness, scale, and product-like value immediately readable, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Graphite, cool white, electric accent; use palette as campaign control: clean whites, luxury neutrals, appetite warmth, cool tech accents, automotive reflections, or interior harmony, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        "Keep the prompt's object or subject exactly — shape, proportions, color, materials and any supplied design — and present it as the hero of a commercial photograph.",
+      color_and_tone: 'Graphite and black, cool white edge highlights, one small electric accent.',
       lighting_and_shadow:
-        'Use Dark sweep with precise rim lights; shape light with softboxes, reflectors, rim lines, HDR fill, glossy kickers, window balance, or packshot sweep shadows, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Dark ambient with two or three thin rim lights and a faint top light; edges glow, faces stay dark.',
       texture_and_material:
-        'Render Matte anodized surface, glass edge, clean bevel; render metal, glass, fabric, food surface, condensation, cosmetic gel, architecture finish, and clean contact shadows with precise detail, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Anodized, bead-blasted or machined surfaces, clean bevels and precise joints.',
       camera_and_composition:
-        'Compose through Long-lens product compression; compose for catalog clarity, top-down order, hero compression, architectural verticals, lifestyle layout, or premium macro depth, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Intelligent, minimal, engineered; derive mood from appetite, trust, luxury, engineering, cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Apple-style keynote polish; finish with professional photo polish, accurate material response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Long lens compression, object floating or resting low in frame with deep dark negative space.',
+      atmosphere_and_mood: 'Minimal and engineered, quiet confidence in precise machined form.',
+      rendering_and_quality: 'Keynote-grade retouch; no cables, dust or warm clutter.',
       key_features:
-        'Premium tech launch image; Precision rim outline; Graphite, cool white, electric accent; Dark sweep with precise rim lights; Long-lens product compression',
+        'dark graphite sweep; precise rim-light outline; machined surfaces; long-lens compression; deep negative space',
       creative_brief:
-        "Apply Tech Hardware Hero as a photographic preset over prompt X: preserve the user's requested subject, then route Premium tech launch image, Graphite, cool white, electric accent, Dark sweep with precise rim lights, Matte anodized surface, glass edge, clean bevel, and Long-lens product compression through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tech Hardware Hero as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -356,28 +336,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cold Condensation Commercial',
     category: '5. Commercial And Product',
     negativePrompt:
-      'warm palette, dry surface, dull lighting, dirty, watermark, text, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable text, signature, low resolution, fake brand logo, messy clutter, dirty product surface, unreadable labels, cheap stock layout',
+      'fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, warm palette, dry surface, dull lighting, dirty, watermark, text, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable text, signature, low resolution, messy clutter, dirty product surface, unreadable labels, cheap stock layout, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cold Condensation Commercial acts as a transferable photographic style router: begin from Refreshment advertising chill, Condensation sparkle, and commercial photographic system built from sellable clarity, controlled studio craft, material desirability, and brand-neutral polish, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Cold condensation commercial: refreshment advertising where frost, beads of water and backlit cold haze make a vessel look ice-cold.',
       subject_treatment:
-        'Treat any prompt subject through Crisp hero shape with droplets; preserve prompt identity while making silhouette, surface, freshness, scale, and product-like value immediately readable, keeping the original subject, pose, species, object, or environment legible.',
+        "Keep the prompt's object or subject exactly — shape, proportions, color, materials and any supplied design — and present it as the hero of a commercial photograph.",
       color_and_tone:
-        'Grade with Cold cyan, clean whites, saturated accent color; use palette as campaign control: clean whites, luxury neutrals, appetite warmth, cool tech accents, automotive reflections, or interior harmony, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Cold cyan and clean white, with one saturated accent color in the drink or object.',
       lighting_and_shadow:
-        'Use Backlit frost glow and hard rim sparkle; shape light with softboxes, reflectors, rim lines, HDR fill, glossy kickers, window balance, or packshot sweep shadows, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Strong backlight through the vessel for glow, hard rim sparkle on droplets, cool fill.',
       texture_and_material:
-        'Render Condensation beads, cold haze, slick surface; render metal, glass, fabric, food surface, condensation, cosmetic gel, architecture finish, and clean contact shadows with precise detail, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Condensation beads and running drops, frost bloom, crushed ice, cold vapor.',
       camera_and_composition:
-        'Compose through Slight heroic low angle; compose for catalog clarity, top-down order, hero compression, architectural verticals, lifestyle layout, or premium macro depth, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Fresh, cold, energetic; derive mood from appetite, trust, luxury, engineering, cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Beverage-ad freshness; finish with professional photo polish, accurate material response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Slight heroic low angle, 85–100 mm, vessel centered and tall in frame.',
+      atmosphere_and_mood: 'Fresh and energetic, cold you can almost feel on your hand.',
+      rendering_and_quality: 'Beverage-ad clarity with sharp droplets; no warm or dry surfaces.',
       key_features:
-        'Refreshment advertising chill; Condensation sparkle; Cold cyan, clean whites, saturated accent color; Backlit frost glow and hard rim sparkle; Slight heroic low angle',
+        'condensation beads; frost bloom; backlit cold glow; rim-lit droplets; heroic low angle',
       creative_brief:
-        "Apply Cold Condensation Commercial as a photographic preset over prompt X: preserve the user's requested subject, then route Refreshment advertising chill, Cold cyan, clean whites, saturated accent color, Backlit frost glow and hard rim sparkle, Condensation beads, cold haze, slick surface, and Slight heroic low angle through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cold Condensation Commercial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -385,28 +363,242 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'E-Commerce White Sweep',
     category: '5. Commercial And Product',
     negativePrompt:
-      'lifestyle scene, dramatic lighting, colored backdrop, clutter, watermark, text, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable text, signature, low resolution, fake brand logo, messy clutter, dirty product surface, unreadable labels, cheap stock layout',
+      'fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, lifestyle scene, dramatic lighting, colored backdrop, clutter, watermark, text, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable text, signature, low resolution, messy clutter, dirty product surface, unreadable labels, cheap stock layout, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'E-Commerce White Sweep acts as a transferable photographic style router: begin from Marketplace listing photo, White sweep with soft contact shadow, and commercial photographic system built from sellable clarity, controlled studio craft, material desirability, and brand-neutral polish, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'E-commerce white sweep: a marketplace listing photo with the object on pure white, evenly lit, readable from edge to edge.',
       subject_treatment:
-        'Treat any prompt subject through Straight-on readable silhouette; preserve prompt identity while making silhouette, surface, freshness, scale, and product-like value immediately readable, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Pure white, neutral shadow grey; use palette as campaign control: clean whites, luxury neutrals, appetite warmth, cool tech accents, automotive reflections, or interior harmony, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        "Keep the prompt's object exactly — shape, proportions, color and supplied design; this preset owns the pure white background and straight listing view.",
+      color_and_tone: 'Pure white background, neutral grey contact shadow, accurate object color.',
       lighting_and_shadow:
-        'Use Even high-key studio box; shape light with softboxes, reflectors, rim lines, HDR fill, glossy kickers, window balance, or packshot sweep shadows, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
-      texture_and_material:
-        'Render Accurate material, no styling noise; render metal, glass, fabric, food surface, condensation, cosmetic gel, architecture finish, and clean contact shadows with precise detail, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Even high-key light box from all sides; only a small soft shadow under the object.',
+      texture_and_material: 'Accurate material, no styling props, no reflections of the studio.',
       camera_and_composition:
-        'Compose through Orthographic-like clarity; compose for catalog clarity, top-down order, hero compression, architectural verticals, lifestyle layout, or premium macro depth, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Functional, trustworthy, searchable; derive mood from appetite, trust, luxury, engineering, cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Straight-on or catalog three-quarter view, object filling about 80 percent of the frame, centered.',
+      atmosphere_and_mood: 'Functional and trustworthy, exactly what arrives in the box.',
       rendering_and_quality:
-        'Finish with Clean online retail image; finish with professional photo polish, accurate material response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Clean online-retail image; no lifestyle scene, dramatic light or colored backdrop.',
       key_features:
-        'Marketplace listing photo; White sweep with soft contact shadow; Pure white, neutral shadow grey; Even high-key studio box; Orthographic-like clarity',
+        'pure white background; even light box; small soft contact shadow; object fills frame; straight listing view',
       creative_brief:
-        "Apply E-Commerce White Sweep as a photographic preset over prompt X: preserve the user's requested subject, then route Marketplace listing photo, Pure white, neutral shadow grey, Even high-key studio box, Accurate material, no styling noise, and Orthographic-like clarity through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies E-Commerce White Sweep as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP01-113',
+    name: 'Dark Chiaroscuro Food',
+    displayName: 'Dark Chiaroscuro Food',
+    styleAnchors: ['Dark Chiaroscuro Food', 'dark moody food photography', 'single side window'],
+    category: '5. Commercial And Product',
+    domain: 'dark moody food photography',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, bright high-key, fill light, watermark, text, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Dark chiaroscuro food photography: food on dark wood and pewter lit by one small window, falling off into deep shadow like an old-master still life.',
+      subject_treatment:
+        'Keep the prompt subject; if it is food, style it rich and slightly rustic; if not, place it in the same dark tabletop light without turning it into food.',
+      color_and_tone:
+        'Deep umber and charcoal shadows, warm ochre highlights, jewel-toned fruit and wine accents.',
+      lighting_and_shadow:
+        'Single small side window or flagged softbox, no fill, quick falloff so the back of the table is black.',
+      texture_and_material:
+        'Crackled crusts, glossy skins, pewter, dark oak and rumpled linen with strong texture in the highlights.',
+      camera_and_composition:
+        '45 degrees or eye level, low-key frame with the food in the one lit area, props receding into darkness.',
+      atmosphere_and_mood: 'Rich and brooding, a feast glimpsed in a candle-dark hall.',
+      rendering_and_quality:
+        'Low-key exposure with clean blacks and detailed highlights; not a bright cookbook look.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dark Chiaroscuro Food as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'single side window; black falloff; pewter and dark oak; old-master still-life mood; jewel accents',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-114',
+    name: 'Architectural Twilight Exterior',
+    displayName: 'Architectural Twilight Exterior',
+    styleAnchors: [
+      'Architectural Twilight Exterior',
+      'twilight architectural exterior',
+      'blue-hour sky',
+    ],
+    category: '5. Commercial And Product',
+    domain: 'twilight architectural exterior',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, daylight, HDR halos, watermark, text, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Twilight architectural exterior: a building photographed at blue hour with every window lit, balancing warm interiors against a deep blue sky.',
+      subject_treatment:
+        'Keep the prompt subject and setting; show the building whole, with its interior lights on and no added crowds.',
+      color_and_tone: 'Deep cobalt sky, warm amber windows, slate and stone in cool mid-tones.',
+      lighting_and_shadow:
+        'Ambient sky as a huge soft source, interior and facade lights as warm points; tripod long exposure.',
+      texture_and_material: 'Glassy windows, smooth long-exposure water and sky, crisp masonry.',
+      camera_and_composition:
+        'Tripod, corrected verticals, building centered or on a third, reflection in water or wet stone when present.',
+      atmosphere_and_mood: 'Inviting and serene, warmth glowing inside against the cooling dusk.',
+      rendering_and_quality: 'Clean long exposure with no noise; not an HDR listing look.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Architectural Twilight Exterior as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'blue-hour sky; every window lit amber; tripod long exposure; corrected verticals; smooth water reflections',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-115',
+    name: 'Hard-Light Glass Still Life',
+    displayName: 'Hard-Light Glass Still Life',
+    styleAnchors: [
+      'Hard-Light Glass Still Life',
+      'glass caustics still life',
+      'hard spot through glass',
+    ],
+    category: '5. Commercial And Product',
+    domain: 'glass caustics still life',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, soft flat light, watermark, text, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hard-light glass still life: a small hard spotlight shining through glass or liquid so the object throws bright caustic patterns and colored shadows onto a pale surface.',
+      subject_treatment:
+        "Keep the prompt's object or subject exactly — shape, proportions, color, materials and any supplied design — and present it as the hero of a commercial photograph.",
+      color_and_tone:
+        'Pale paper or stone ground; caustics in amber, green or ruby from the glass color.',
+      lighting_and_shadow:
+        'One hard low spot from behind or the side, long shadow and a bright focused caustic pool inside it.',
+      texture_and_material:
+        'Cut glass facets, liquid meniscus, bubbles and refraction lines crisp.',
+      camera_and_composition:
+        'Low angle so the object and its cast caustic shadow share the frame, generous empty surface.',
+      atmosphere_and_mood: 'Quiet and luminous, light itself becoming the ornament.',
+      rendering_and_quality: 'Real photographic caustics; not a CGI material render.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hard-Light Glass Still Life as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'hard spot through glass; caustic light pool; colored cast shadow; pale ground; low angle',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-116',
+    name: 'Lifestyle In-Hand Product',
+    displayName: 'Lifestyle In-Hand Product',
+    styleAnchors: [
+      'Lifestyle In-Hand Product',
+      'lifestyle product in use',
+      'adult hands using the product',
+    ],
+    category: '5. Commercial And Product',
+    domain: 'lifestyle product in use',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, studio sweep, posed stock smile, watermark, text, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Lifestyle in-hand product photography: the object shown in use, held by adult hands in a real environment under natural light.',
+      subject_treatment:
+        "Keep the prompt's object or subject exactly — shape, proportions, color, materials and any supplied design — and present it as the hero of a commercial photograph.",
+      color_and_tone: 'Natural warm color, product color accurate, background muted.',
+      lighting_and_shadow:
+        'Soft daylight or window light, gentle shadows, a bit of backlight for glow.',
+      texture_and_material:
+        "Real skin, worn surfaces and the product's material crisp where the hands touch it.",
+      camera_and_composition:
+        '50–85 mm, close crop on hands and product, face cropped out or out of focus, environment soft behind.',
+      atmosphere_and_mood:
+        "Authentic and tactile, the object already part of someone's ordinary day.",
+      rendering_and_quality: 'Natural lifestyle realism; product sharp, no studio sweep.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lifestyle In-Hand Product as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'adult hands using the product; real environment; soft daylight; shallow background; tactile contact',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-117',
+    name: 'Color-Block Set Still Life',
+    displayName: 'Color-Block Set Still Life',
+    styleAnchors: [
+      'Color-Block Set Still Life',
+      'color paper set still life',
+      'flat colored paper planes',
+    ],
+    category: '5. Commercial And Product',
+    domain: 'color paper set still life',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, gradient backdrop, soft light, watermark, text, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Color-block set still life: an object placed on a built set of flat colored paper planes and blocks, lit with hard light for crisp graphic shadows.',
+      subject_treatment:
+        "Keep the prompt's object or subject exactly — shape, proportions, color, materials and any supplied design — and present it as the hero of a commercial photograph.",
+      color_and_tone:
+        'Two or three bold flat colors (mustard, teal, coral, cobalt, pink) that contrast with the object.',
+      lighting_and_shadow:
+        'Single hard light at a steep angle creating long, clean-edged shadows across the planes.',
+      texture_and_material:
+        "Matte paper and painted board planes; the object's material crisp against them.",
+      camera_and_composition:
+        'Straight-on or slight elevation, geometric steps, arches or cylinders as plinths, strong negative space.',
+      atmosphere_and_mood:
+        'Playful and graphic, a small object turned into a bold sculpture by color and shadow.',
+      rendering_and_quality: 'Clean set photography; not CGI, no gradient backdrops.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Color-Block Set Still Life as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'flat colored paper planes; hard steep light; long clean shadows; geometric plinths; bold contrast',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-118',
+    name: 'Ghost Mannequin Apparel',
+    displayName: 'Ghost Mannequin Apparel',
+    styleAnchors: [
+      'Ghost Mannequin Apparel',
+      'invisible mannequin apparel photography',
+      'invisible body volume',
+    ],
+    category: '5. Commercial And Product',
+    domain: 'invisible mannequin apparel photography',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, visible mannequin, hanger, visible body, watermark, text, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ghost mannequin apparel photography: a garment shown as if worn by an invisible body, keeping its three-dimensional shape with the interior of the collar visible.',
+      subject_treatment:
+        "Keep the prompt's object exactly — shape, proportions, color and supplied design; this preset owns the invisible-body presentation of garments; non-garment subjects keep their own form.",
+      color_and_tone: 'Neutral white or light grey background, accurate fabric color.',
+      lighting_and_shadow:
+        'Even soft light from both sides and above, gentle shading showing fabric volume.',
+      texture_and_material:
+        'Weave, quilting, stitches, buttons and lining crisp; hollow neck and cuffs.',
+      camera_and_composition:
+        'Straight-on front view, garment centered and symmetrical, hollow opening at the neck.',
+      atmosphere_and_mood: 'Clean and informative, the garment seen exactly as it would be worn.',
+      rendering_and_quality: 'Seamless composite look with no mannequin, hanger or body visible.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ghost Mannequin Apparel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'invisible body volume; hollow collar interior; straight-on symmetry; even soft light; neutral background',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

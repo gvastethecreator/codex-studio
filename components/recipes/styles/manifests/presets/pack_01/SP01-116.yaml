@@ -1,0 +1,79 @@
+schemaVersion: 1
+id: SP01-116
+packId: pack_01
+name: Lifestyle In-Hand Product
+styleAnchors:
+  - Lifestyle In-Hand Product
+  - lifestyle product in use
+  - adult hands using the product
+displayName: Lifestyle In-Hand Product
+category: 5. Commercial And Product
+domain: lifestyle product in use
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - commercial-and-product
+  - lifestyle
+  - product
+  - in-use
+visualDna:
+  aesthetic: 'Lifestyle in-hand product photography: the object shown in use, held by adult hands in a real environment under natural light.'
+  subject_treatment: Keep the prompt's object or subject exactly — shape, proportions, color, materials and any supplied design — and present it as the hero of a commercial photograph.
+  color_and_tone: Natural warm color, product color accurate, background muted.
+  lighting_and_shadow: Soft daylight or window light, gentle shadows, a bit of backlight for glow.
+  texture_and_material: Real skin, worn surfaces and the product's material crisp where the hands touch it.
+  camera_and_composition: 50–85 mm, close crop on hands and product, face cropped out or out of focus, environment soft behind.
+  atmosphere_and_mood: Authentic and tactile, the object already part of someone's ordinary day.
+  rendering_and_quality: Natural lifestyle realism; product sharp, no studio sweep.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lifestyle In-Hand Product as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: adult hands using the product; real environment; soft daylight; shallow background; tactile contact
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - synthetic CGI
+  - plastic render
+  - fake brand logo
+  - readable labels
+  - generic stock-photo face
+  - celebrity likeness
+  - changing the supplied object design
+  - studio sweep
+  - posed stock smile
+  - watermark
+  - text
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, studio sweep, posed stock smile, watermark, text, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: commercial-and-product
+  categoryName: 5. Commercial And Product
+  tags:
+    - photography-and-realism
+    - commercial-and-product
+    - lifestyle
+    - product
+    - in-use
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: lifestyle product in use

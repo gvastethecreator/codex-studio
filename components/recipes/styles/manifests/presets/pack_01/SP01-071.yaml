@@ -3,7 +3,7 @@ id: SP01-071
 packId: pack_01
 name: Flat Lay
 category: 5. Commercial And Product
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,53 +12,24 @@ tags:
   - photography-and-realism
   - commercial-and-product
 visualDna:
-  aesthetic: >-
-    Flat Lay acts as a transferable photographic style router: begin from Top-down arranged
-    composition, 90 degree angle, and commercial photographic system built from sellable clarity,
-    controlled studio craft, material desirability, and brand-neutral polish, then apply the
-    photographic behavior to prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Grid organization; preserve prompt identity while making
-    silhouette, surface, freshness, scale, and product-like value immediately readable, keeping the
-    original subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with Coordinated palette; use palette as campaign control: clean whites, luxury neutrals,
-    appetite warmth, cool tech accents, automotive reflections, or interior harmony, with value
-    separation and white balance choices that feel captured in-camera rather than painted over.
-  lighting_and_shadow: >-
-    Use Top down soft; shape light with softboxes, reflectors, rim lines, HDR fill, glossy kickers,
-    window balance, or packshot sweep shadows, preserving believable exposure, shadow density,
-    highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Clean surface texture; render metal, glass, fabric, food surface, condensation, cosmetic
-    gel, architecture finish, and clean contact shadows with precise detail, avoiding both waxy
-    smoothing and noisy texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Overhead orthographic flat-lay composition with measured spacing, clean object
-    separation, and strong negative-space rhythm for Flat Lay; compose for catalog clarity, top-down
-    order, hero compression, architectural verticals, lifestyle layout, or premium macro depth, with
-    lens distance, depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Satisfying, clean; derive mood from appetite, trust, luxury, engineering,
-    cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes
-    interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Instagram, organized; finish with professional photo polish, accurate material
-    response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution
-    photographic detail, and disciplined denoise without losing natural grain where the preset needs
-    it.
-  key_features: >-
-    Top-down arranged composition; 90 degree angle; Coordinated palette; Top down soft; Overhead
-    orthographic flat-lay composition with measured spacing, clean object separation, and strong
-    negative-space rhythm for Flat Lay
-  creative_brief: >-
-    Apply Flat Lay as a photographic preset over prompt X: preserve the user's requested subject,
-    then route Top-down arranged composition, Coordinated palette, Top down soft, Clean surface
-    texture, and Overhead orthographic flat-lay composition with measured spacing, clean object
-    separation, and strong negative-space rhythm for Flat Lay through optics, exposure, palette,
-    surface response, timing, and finish without requiring the card image's original subject.
+  aesthetic: 'Flat lay: objects arranged on a surface and photographed straight down at exactly 90 degrees with measured spacing.'
+  subject_treatment: Keep the prompt's object exactly — shape, proportions, color and supplied design; this preset owns the straight-down camera and the arranged layout.
+  color_and_tone: Coordinated palette of three or four colors, matte surface background.
+  lighting_and_shadow: Soft overhead or window light with small, consistent soft shadows to one side.
+  texture_and_material: Background surface (linen, slate, wood, paper) visible and even; objects crisp.
+  camera_and_composition: Exactly top-down, no perspective, objects in a grid or radial arrangement with equal gaps and negative space.
+  atmosphere_and_mood: Orderly and satisfying, everything placed with patient intent.
+  rendering_and_quality: Crisp editorial flat lay; no tilted camera and no clutter pile.
+  key_features: exact 90-degree overhead; measured spacing; coordinated palette; soft consistent shadows; negative space
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Flat Lay as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - fake brand logo
+  - readable labels
+  - generic stock-photo face
+  - celebrity likeness
+  - changing the supplied object design
   - perspective
+  - messy pile
   - messy
   - illustration
   - painting
@@ -73,18 +44,20 @@ avoidRules:
   - readable text
   - signature
   - low resolution
-  - fake brand logo
   - messy clutter
   - dirty product surface
   - unreadable labels
   - cheap stock layout
+  - text
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-071.webp
 attributes:
-  negativePrompt: >-
-    perspective, messy, illustration, painting, drawing, 3d render, cartoon, anime, sketch,
-    synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake brand
-    logo, messy clutter, dirty product surface, unreadable labels, cheap stock layout
+  negativePrompt: fake brand logo, readable labels, generic stock-photo face, celebrity likeness, changing the supplied object design, perspective, messy pile, messy, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, messy clutter, dirty product surface, unreadable labels, cheap stock layout, text, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
