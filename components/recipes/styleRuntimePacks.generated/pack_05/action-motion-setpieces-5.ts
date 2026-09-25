@@ -189,9 +189,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'one stretched smear shape along the arc; rest of body sharp; flat smear color bands; no speed lines; full arc visible',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP13-037',
@@ -226,9 +223,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Negative Impact Frame Staging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'inverted black and white values; single accent at contact; rough shaky outlines; tight tilted framing; white ring around contact',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -265,9 +259,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'time frozen at the action peak; camera swung to an unexpected side; suspended scene elements; no motion blur; cool desaturated background',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP13-039',
@@ -302,9 +293,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Panning Background Streak Frame as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'sharp subject on streaked background; horizontal color bands; side-on profile view; lead room ahead; no radial speed lines',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -341,9 +329,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'camera straight beneath looking up; backlit dark silhouette; thin bright rim; converging edges to center; diagonal crossing',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP13-041',
@@ -379,9 +364,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'camera rolled 20-35 degrees; tilted horizon and verticals; subject pushing against the tilt; diagonal shadows; straight not warped lines',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP13-042',
@@ -413,9 +395,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Three-Beat Action Triptych as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'three equal panels; anticipation, peak, follow-through; same subject and light in each; thin textless gutters; closer middle panel',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -452,9 +431,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'subject sweeping past the lens; cropped by two frame edges; soft near-lens defocus; sharp background; bright edge on passing mass',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP13-044',
@@ -489,9 +465,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Top-Down Spiral Path Staging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'straight-down 90 degree view; spiral or circular path; subject at the leading end; long flat side-lit shadows; readable ground pattern',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -528,9 +501,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'hand reaching into an ultra-wide lens; hand as large as the head; barrel-curved edges; bright near hand; small readable face behind',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP13-046',
@@ -564,9 +534,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cloth-and-Hair Follow-Through Trails as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'lagging S-curves in hair and cloth; body already stopped or turned; tapering tips; light along each fold; trailing space',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -603,9 +570,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'tiny subject under one twentieth of frame height; one grand movement arc; vast layered space; high distant vantage; arc from existing material',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP13-048',
@@ -640,9 +604,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Coiled Anticipation Lead-Space Frame as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'coiled pre-motion pose; subject in outer fifth of frame; large empty lead space; no motion marks; low side light on the tension',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -679,9 +640,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'ankle-height camera ahead of subject; near ground stretched into streaks; horizon in lower third; shadow toward camera; looming low angle',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP13-050',
@@ -716,9 +674,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Contact-Point Extreme Close-Up as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'extreme close-up of the contact point; subject cropped away; raking hard key light; magnified surface detail; very shallow depth',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

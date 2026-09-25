@@ -1,18 +1,18 @@
 [
   {
     "presetId": "SP05-021",
-    "presetName": "Headband Ninja Journey",
+    "presetName": "Teal-Orange Sakuga Smear",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-021.webp",
-    "jobId": "82576f9f-a883-458a-b59f-82254ade959c",
+    "jobId": "148859dc-4569-45ff-a45f-b2f7336ebd6d",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-021.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:35:17.991Z"
+    "generatedAt": "2026-09-25T11:35:29.227Z"
   },
   {
     "presetId": "SP05-022",
@@ -21,28 +21,28 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-022.webp",
-    "jobId": "cd8dd5b6-51a2-42ee-ae93-e4d79e46bba9",
+    "jobId": "23b67894-7636-4854-b143-9643b25b3287",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-022.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:35:10.724Z"
+    "generatedAt": "2026-09-25T11:36:24.840Z"
   },
   {
     "presetId": "SP05-023",
-    "presetName": "Grand Pirate Adventure",
+    "presetName": "Elastic Big-Grin Adventure Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-023.webp",
-    "jobId": "feff486e-2707-4c39-809d-d3685f6a64bb",
+    "jobId": "8938cb17-4810-49c8-b4f2-339cbb9155b2",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-023.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:35:28.162Z"
+    "generatedAt": "2026-09-25T11:36:52.927Z"
   },
   {
     "presetId": "SP05-025",
@@ -51,13 +51,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-025.webp",
-    "jobId": "78a45cdb-bb3a-4705-bfa9-70013d37c96c",
+    "jobId": "b20486d8-c664-4069-a8f2-97b9bac9176e",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-025.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:34:45.218Z"
+    "generatedAt": "2026-09-25T11:34:54.809Z"
   },
   {
     "presetId": "SP05-028",
@@ -66,13 +66,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-028.webp",
-    "jobId": "e561a96d-90cb-4791-999e-2292aeabb840",
+    "jobId": "2fecb333-6bf9-4834-8961-5f3fb2027a65",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-028.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:35:59.494Z"
+    "generatedAt": "2026-09-25T11:37:32.950Z"
   },
   {
     "presetId": "SP05-029",
@@ -81,13 +81,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-029.webp",
-    "jobId": "d5ffd003-baed-4ab3-b8a2-65f4fbb1dc39",
+    "jobId": "b0054ab5-4731-49fe-83a5-724af5831628",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-029.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:36:27.209Z"
+    "generatedAt": "2026-09-25T11:37:53.616Z"
   },
   {
     "presetId": "SP05-031",
@@ -96,13 +96,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-031.webp",
-    "jobId": "11ee71c9-0558-423d-a86f-ec7a6cb7d398",
+    "jobId": "768bb944-35af-4739-911a-33a54990470a",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-031.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:34:06.637Z"
+    "generatedAt": "2026-09-25T11:32:57.456Z"
   },
   {
     "presetId": "SP05-032",
@@ -111,13 +111,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-032.webp",
-    "jobId": "b1f91d5b-ea2f-4233-99c1-f652d19af3bd",
+    "jobId": "e5c20906-1065-49b3-8bca-10c3d2a61028",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-032.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:29:30.979Z"
+    "generatedAt": "2026-09-25T11:20:07.105Z"
   },
   {
     "presetId": "SP05-033",
@@ -126,28 +126,28 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-033.webp",
-    "jobId": "b5d46f82-71a7-4d87-b19e-47a7a5a67ce1",
+    "jobId": "959ab664-6ade-4930-a19f-b7ce5b22740c",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-033.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:34:03.798Z"
+    "generatedAt": "2026-09-25T11:33:48.116Z"
   },
   {
     "presetId": "SP05-034",
-    "presetName": "Bright Hero Academy",
+    "presetName": "Crosshatched Primary Hero Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-034.webp",
-    "jobId": "9f4cf502-296c-440c-991d-3eb179dfef72",
+    "jobId": "18647b29-5d61-48d4-83a2-42475bd4736f",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-034.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:29:01.875Z"
+    "generatedAt": "2026-09-25T11:18:23.030Z"
   },
   {
     "presetId": "SP05-035",
@@ -156,13 +156,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-035.webp",
-    "jobId": "808f7f97-3659-488b-a832-fc51c5dcff26",
+    "jobId": "cf952d87-5e44-4bd2-bada-3579c12b803e",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-035.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:29:39.496Z"
+    "generatedAt": "2026-09-25T11:20:48.992Z"
   },
   {
     "presetId": "SP05-036",
@@ -171,13 +171,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-036.webp",
-    "jobId": "79b4ee78-8176-4d06-9ca8-7d9b9437af5c",
+    "jobId": "ee872d74-d31e-4587-8a8b-4bc1e8307f77",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-036.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:29:46.859Z"
+    "generatedAt": "2026-09-25T11:20:49.735Z"
   },
   {
     "presetId": "SP05-037",
@@ -186,13 +186,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-037.webp",
-    "jobId": "2505a7fb-68aa-4288-9bef-57b4a3e023a6",
+    "jobId": "b8a3db9e-c6ed-4900-88f0-773eebaea4b1",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-037.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:31:48.731Z"
+    "generatedAt": "2026-09-25T11:26:56.726Z"
   },
   {
     "presetId": "SP05-038",
@@ -201,13 +201,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-038.webp",
-    "jobId": "55514a33-9ff2-4f45-895d-f5444f995922",
+    "jobId": "8c50335f-e938-4b60-9140-bb06af8a2d85",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-038.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:33:24.246Z"
+    "generatedAt": "2026-09-25T11:31:18.401Z"
   },
   {
     "presetId": "SP05-039",
@@ -216,13 +216,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-039.webp",
-    "jobId": "0f29ad51-6933-470f-b9db-1a9c9a0742b8",
+    "jobId": "3d5de108-aada-40ff-855b-560937b832dc",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-039.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T17:38:53.465Z"
+    "generatedAt": "2026-09-25T11:21:36.338Z"
   },
   {
     "presetId": "SP05-040",
@@ -231,13 +231,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-040.webp",
-    "jobId": "3a7abbe1-0519-41a6-811e-88a8bbed887e",
+    "jobId": "62b76a0a-dc77-4655-83dc-1fdd5ad3a539",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-040.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:32:34.984Z"
+    "generatedAt": "2026-09-25T11:28:32.823Z"
   },
   {
     "presetId": "SP05-051",
@@ -246,13 +246,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-051.webp",
-    "jobId": "b1268ec3-f285-41e4-987d-07eeff3065be",
+    "jobId": "04413a97-797d-4471-b396-76bfb1650404",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-051.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:38:13.812Z"
+    "generatedAt": "2026-09-25T11:44:28.675Z"
   },
   {
     "presetId": "SP05-052",
@@ -261,13 +261,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-052.webp",
-    "jobId": "3e7a9cc2-b24c-49f8-8912-e370a6c72ab1",
+    "jobId": "187ab894-3769-4ce9-8b17-32e5d4e4eb1f",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-052.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:38:26.358Z"
+    "generatedAt": "2026-09-25T11:44:55.134Z"
   },
   {
     "presetId": "SP05-053",
@@ -276,13 +276,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-053.webp",
-    "jobId": "8de15ce1-fa0a-4324-bf2a-2ea0fb699f0c",
+    "jobId": "5380a8c6-13fc-403b-b38c-408af661ec8a",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-053.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:42:34.461Z"
+    "generatedAt": "2026-09-25T11:56:20.319Z"
   },
   {
     "presetId": "SP05-054",
@@ -291,13 +291,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-054.webp",
-    "jobId": "e888e54b-4415-4ed9-b1e8-da8b2995d214",
+    "jobId": "da157099-1540-4c16-ac14-d9dec602f6a8",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-054.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:38:39.138Z"
+    "generatedAt": "2026-09-25T11:45:09.708Z"
   },
   {
     "presetId": "SP05-055",
@@ -306,13 +306,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-055.webp",
-    "jobId": "075c95a2-2d4c-4041-8a2f-af2c61ea12b3",
+    "jobId": "70b78f7d-75d8-4dd0-bdef-5359a3535190",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-055.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:39:08.649Z"
+    "generatedAt": "2026-09-25T11:45:42.574Z"
   },
   {
     "presetId": "SP05-056",
@@ -321,13 +321,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-056.webp",
-    "jobId": "42a021af-b86d-4789-b3b3-9849f37bf14d",
+    "jobId": "fbab9694-7468-4244-a5ea-81d5c209d345",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-056.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:36:43.500Z"
+    "generatedAt": "2026-09-25T11:40:46.323Z"
   },
   {
     "presetId": "SP05-057",
@@ -336,13 +336,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-057.webp",
-    "jobId": "3ab5c7ba-7fef-4a6a-87b8-c1f6858d42e1",
+    "jobId": "4bd5b292-2106-4f7e-b5b4-081a248e1f73",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-057.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:39:06.171Z"
+    "generatedAt": "2026-09-25T11:46:25.143Z"
   },
   {
     "presetId": "SP05-058",
@@ -351,13 +351,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-058.webp",
-    "jobId": "db987469-f310-409b-88a1-c5c91f6dfa9f",
+    "jobId": "4f327d31-d659-42f3-a38f-11dc627d0d93",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-058.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:39:00.828Z"
+    "generatedAt": "2026-09-25T11:47:14.022Z"
   },
   {
     "presetId": "SP05-059",
@@ -366,13 +366,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-059.webp",
-    "jobId": "9a194f44-5967-4dab-a916-cdee181a5777",
+    "jobId": "3da673ea-3e30-4081-bdc9-306b0f79a853",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-059.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:39:27.899Z"
+    "generatedAt": "2026-09-25T11:47:07.756Z"
   },
   {
     "presetId": "SP05-060",
@@ -381,13 +381,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-060.webp",
-    "jobId": "2c36d582-bbca-49d7-8084-63a69b7ee786",
+    "jobId": "2f6c5518-fda7-4192-81c2-3cdd08ae6efa",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-060.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:39:45.371Z"
+    "generatedAt": "2026-09-25T11:47:50.387Z"
   },
   {
     "presetId": "SP05-061",
@@ -396,13 +396,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-061.webp",
-    "jobId": "bd05d2d6-c9a5-484e-b4aa-81eca8156d46",
+    "jobId": "d4769040-78e7-44bd-b529-8ae565161d70",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-061.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:51:26.718Z"
+    "generatedAt": "2026-09-25T12:27:41.704Z"
   },
   {
     "presetId": "SP05-062",
@@ -411,13 +411,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-062.webp",
-    "jobId": "e0ce6264-bd5a-45db-8ca8-e40e72123c47",
+    "jobId": "c66ae102-6ee4-45e0-9716-de82e355ecc7",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-062.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:52:00.824Z"
+    "generatedAt": "2026-09-25T12:28:14.090Z"
   },
   {
     "presetId": "SP05-063",
@@ -426,13 +426,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-063.webp",
-    "jobId": "9e5c5f8a-f130-4b0f-91f3-70144f3e25ab",
+    "jobId": "d49b4ff1-f1b2-437c-b020-67b9dc7cbda4",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-063.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:52:08.612Z"
+    "generatedAt": "2026-09-25T12:28:54.572Z"
   },
   {
     "presetId": "SP05-064",
@@ -441,13 +441,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-064.webp",
-    "jobId": "a74febd3-b250-4135-a97c-bbaf35c20289",
+    "jobId": "728cdabe-484c-4ffa-8414-ee55eaccef9f",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-064.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:52:08.734Z"
+    "generatedAt": "2026-09-25T12:29:10.881Z"
   },
   {
     "presetId": "SP05-065",
@@ -456,13 +456,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-065.webp",
-    "jobId": "3894e1ef-c167-4187-a602-880c1c23778b",
+    "jobId": "5f7161a9-85b6-4912-b5e7-5537f033260e",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-065.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:52:07.972Z"
+    "generatedAt": "2026-09-25T12:29:37.093Z"
   },
   {
     "presetId": "SP05-066",
@@ -471,13 +471,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-066.webp",
-    "jobId": "0aef3dcc-9044-4be5-8193-ee17b03ac746",
+    "jobId": "8175abd2-28fb-41ae-9064-19721197660b",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-066.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:51:26.704Z"
+    "generatedAt": "2026-09-25T12:26:34.880Z"
   },
   {
     "presetId": "SP05-067",
@@ -486,13 +486,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-067.webp",
-    "jobId": "9038e40e-59a6-4a4a-9246-f220f760601e",
+    "jobId": "877ca368-efe7-4dac-bc58-4ce4b77271e9",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-067.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:52:38.564Z"
+    "generatedAt": "2026-09-25T12:30:24.997Z"
   },
   {
     "presetId": "SP05-068",
@@ -501,13 +501,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-068.webp",
-    "jobId": "60d91da0-3be1-4a68-b76b-d943302798f2",
+    "jobId": "e3aebf77-446a-4bd3-8382-482fc89561d9",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-068.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:52:53.173Z"
+    "generatedAt": "2026-09-25T12:31:35.005Z"
   },
   {
     "presetId": "SP05-069",
@@ -516,538 +516,538 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-069.webp",
-    "jobId": "a84da24f-e132-48f8-bb2a-015800594a26",
+    "jobId": "a64fa197-23ab-4b6f-aa92-2f035b111902",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-069.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:51:26.930Z"
+    "generatedAt": "2026-09-25T12:26:53.783Z"
   },
   {
     "presetId": "SP05-070",
-    "presetName": "Devilman Crybaby – Neon Tragic Metamorphosis",
+    "presetName": "Neon Tragic Metamorphosis",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-070.webp",
-    "jobId": "5dfcbebc-0451-4bc3-ac98-931ffa511cf9",
+    "jobId": "0376ff6c-54f1-46de-b6d4-f0f79965ba89",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-070.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:52:44.665Z"
+    "generatedAt": "2026-09-25T12:31:12.767Z"
   },
   {
     "presetId": "SP05-091",
-    "presetName": "Sword Art Online – Glowing VR Adventure",
+    "presetName": "Cyan Crystal-Facet Glow Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-091.webp",
-    "jobId": "d3cf87d4-b0da-4ff8-93bd-8170f3c53334",
+    "jobId": "7094231b-5454-4cd5-8be8-ff7bda06f1fe",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-091.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:43:54.110Z"
+    "generatedAt": "2026-09-25T12:01:48.200Z"
   },
   {
     "presetId": "SP05-092",
-    "presetName": "Re:Zero – Reset-Loop Dark Fantasy",
+    "presetName": "Violet Echo-Line Gothic Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-092.webp",
-    "jobId": "491ae3fc-1fb9-42ba-b476-e517ea546757",
+    "jobId": "abd355f4-6a5a-4024-9bfb-6ca58354edcf",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-092.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:44:06.585Z"
+    "generatedAt": "2026-09-25T12:02:53.914Z"
   },
   {
     "presetId": "SP05-093",
-    "presetName": "Mushoku Tensei – Wandering Mage Chronicle",
+    "presetName": "Sepia Moss Dry-Brush Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-093.webp",
-    "jobId": "acf016b1-3033-4a57-a33c-b35d4736a96e",
+    "jobId": "43f71d3e-c91c-4da5-a490-fbb20b92fa2d",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-093.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:44:23.264Z"
+    "generatedAt": "2026-09-25T12:02:43.489Z"
   },
   {
     "presetId": "SP05-094",
-    "presetName": "Konosuba – Party-Quest Comedy",
+    "presetName": "Springy Comic-Timing Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-094.webp",
-    "jobId": "d6bd079b-7cf0-4024-919d-25216f9f15b7",
+    "jobId": "5cddece0-01f5-4003-9ea5-60a4359fc4e1",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-094.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:44:46.149Z"
+    "generatedAt": "2026-09-25T12:03:34.383Z"
   },
   {
     "presetId": "SP05-095",
-    "presetName": "Frieren – Afterquest Melancholy Fantasy",
+    "presetName": "Faded-Line Pale Wash Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-095.webp",
-    "jobId": "52dbfcd9-5d09-4208-8ce2-2253d66169aa",
+    "jobId": "1aaf2222-759c-471e-accb-6e8241c1b4f5",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-095.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:42:35.427Z"
+    "generatedAt": "2026-09-25T11:57:13.843Z"
   },
   {
     "presetId": "SP05-096",
-    "presetName": "No Game No Life – Hyper-Saturated Strategy Fantasy",
+    "presetName": "Hyper-Saturated Impossible Perspective Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-096.webp",
-    "jobId": "f90fce10-ac36-43c9-8a5d-d0715fa5b2d6",
+    "jobId": "75edd944-db36-4e7a-affd-bcce459c2183",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-096.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:46:51.848Z"
+    "generatedAt": "2026-09-25T12:12:16.266Z"
   },
   {
     "presetId": "SP05-097",
-    "presetName": "Overlord – Bone Throne Dark Dominion",
+    "presetName": "Ivory-Charcoal Baroque Symmetry Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-097.webp",
-    "jobId": "e40e4315-31a8-42bb-81ea-f5b8be4537b6",
+    "jobId": "16ba9659-5448-4335-bd2e-7cd3e3fc984a",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-097.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:47:34.395Z"
+    "generatedAt": "2026-09-25T12:13:03.600Z"
   },
   {
     "presetId": "SP05-098",
-    "presetName": "Slime Isekai – Monster-Nation Bright Fantasy",
+    "presetName": "Rounded Sky-Blue Friendly Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-098.webp",
-    "jobId": "ff45dd49-f078-4451-997d-009e57407b23",
+    "jobId": "e851f9dc-133a-4966-a61f-f4cb7924a683",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-098.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:44:34.228Z"
+    "generatedAt": "2026-09-25T12:04:17.982Z"
   },
   {
     "presetId": "SP05-099",
-    "presetName": "Shield Hero – Defensive Underdog Fantasy",
+    "presetName": "Worn Bronze Concentric-Line Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-099.webp",
-    "jobId": "3b4b9899-1028-47f4-bac3-13f865fc4541",
+    "jobId": "e9be4ecd-2fe9-4197-8928-50e89cbb7aba",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-099.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:42:41.030Z"
+    "generatedAt": "2026-09-25T11:57:22.189Z"
   },
   {
     "presetId": "SP05-100",
-    "presetName": "DanMachi – Dungeon Lantern Adventure",
+    "presetName": "Vertical Mineral Amber Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-100.webp",
-    "jobId": "9fb49e69-46f9-49cb-befb-6b0f97150316",
+    "jobId": "2fdf1ae3-00d5-47ed-bf85-980d13ae852c",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-100.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:44:46.131Z"
+    "generatedAt": "2026-09-25T12:05:06.812Z"
   },
   {
     "presetId": "SP05-121",
-    "presetName": "Demon Slayer - Lantern Bloodline Sword Ballet",
+    "presetName": "Printed-Wave Effect Trail Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-121.webp",
-    "jobId": "1cadebde-5a73-4159-9d85-6fed64800378",
+    "jobId": "2b96b89a-976a-425e-a252-97baed18b4f7",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-121.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:30:11.017Z"
+    "generatedAt": "2026-09-25T11:22:32.318Z"
   },
   {
     "presetId": "SP05-122",
-    "presetName": "Chainsaw Man - Filthy Devil-Hunter Frenzy",
+    "presetName": "Muted Cinematic Grime Frenzy",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-122.webp",
-    "jobId": "4d3d1c2d-3a98-48d2-975e-ccd748702e2d",
+    "jobId": "1baead36-08f0-4480-a2aa-42d0cfba638a",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-122.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:34:33.687Z"
+    "generatedAt": "2026-09-25T11:34:07.335Z"
   },
   {
     "presetId": "SP05-123",
-    "presetName": "Fire Force - Cathedral Inferno Brigade",
+    "presetName": "White-Core Flame Halo Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-123.webp",
-    "jobId": "6cf0266e-9706-4957-bd2a-a07670a5ab78",
+    "jobId": "2bbca05d-a117-4ab2-8271-efb375f1ecc8",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-123.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:32:38.795Z"
+    "generatedAt": "2026-09-25T11:29:11.530Z"
   },
   {
     "presetId": "SP05-124",
-    "presetName": "Blue Lock - Predator-Ego Sports Assault",
+    "presetName": "Ultramarine Glare Foreshortening",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-124.webp",
-    "jobId": "86d5aae4-2d5d-4174-8df6-c54fa1dd6c7e",
+    "jobId": "2445af73-a724-474f-a2e1-3e90e28e8557",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-124.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:30:16.676Z"
+    "generatedAt": "2026-09-25T11:23:08.537Z"
   },
   {
     "presetId": "SP05-125",
-    "presetName": "Kaiju No. 8 - Civic Monster Response Unit",
+    "presetName": "Hazard-Orange Monster Response Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-125.webp",
-    "jobId": "51e9e7fe-c0a9-468e-9b6e-2a2764684d1a",
+    "jobId": "d831e473-3db3-4f4b-9680-f1c26d776845",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-125.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:32:57.756Z"
+    "generatedAt": "2026-09-25T11:30:02.397Z"
   },
   {
     "presetId": "SP05-126",
-    "presetName": "Dandadan - Paranormal Turbo Romance Brawl",
+    "presetName": "Acid Occult Color-Burst Smear",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-126.webp",
-    "jobId": "dbb5f3d9-9ee4-4869-8824-9283bd2d0802",
+    "jobId": "16752a9b-4bfa-41ca-b390-362066bc839a",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-126.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:33:12.421Z"
+    "generatedAt": "2026-09-25T11:30:30.059Z"
   },
   {
     "presetId": "SP05-127",
-    "presetName": "Hell's Paradise - Poison Garden Executioner",
+    "presetName": "Toxic Flower Etched Ink",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-127.webp",
-    "jobId": "0ed59cee-e734-4f80-9b48-70fd651231d2",
+    "jobId": "a5eeacad-d606-413d-b8e2-c734e0ae6de3",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-127.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:33:23.796Z"
+    "generatedAt": "2026-09-25T11:30:44.434Z"
   },
   {
     "presetId": "SP05-128",
-    "presetName": "Bleach: Thousand-Year Blood War - Royal Black Blade Opera",
+    "presetName": "Inverted Negative Ink Opera",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-128.webp",
-    "jobId": "0cafdc7c-729e-4b12-a0ea-2d3ebb582f45",
+    "jobId": "d1613ec1-58f4-4360-9097-8de66ab7cec2",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-128.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:30:29.749Z"
+    "generatedAt": "2026-09-25T11:23:12.528Z"
   },
   {
     "presetId": "SP05-129",
-    "presetName": "One-Punch Man - Prestige Hero Impact Satire",
+    "presetName": "Dual-Detail Deadpan Satire",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-129.webp",
-    "jobId": "d29b6853-a0d1-49dd-80fe-1588542d720e",
+    "jobId": "2ebe13e1-c6c8-427e-a015-bff1c9e8b19e",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-129.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:32:10.078Z"
+    "generatedAt": "2026-09-25T11:27:36.312Z"
   },
   {
     "presetId": "SP05-130",
-    "presetName": "Mob Psycho 100 - Psychic Paint-Surge Meltdown",
+    "presetName": "Paint-on-Glass Surge Burst",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-130.webp",
-    "jobId": "3a9b2cb1-ee7f-4e25-bf52-8ad15d002523",
+    "jobId": "c98d97b0-4699-46cb-a9d4-ff1980148f6d",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-130.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:33:42.714Z"
+    "generatedAt": "2026-09-25T11:31:59.534Z"
   },
   {
     "presetId": "SP05-131",
-    "presetName": "Wind Breaker - Delinquent Street Protector Rush",
+    "presetName": "Sky-Blue Low-Angle Brawler Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-131.webp",
-    "jobId": "7b8dedf3-e275-4b43-b3c8-aeb3bae3bb01",
+    "jobId": "aea1073f-0b4e-4e22-bd31-e4b056a62657",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-131.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:31:23.226Z"
+    "generatedAt": "2026-09-25T11:23:46.683Z"
   },
   {
     "presetId": "SP05-132",
-    "presetName": "Solo Leveling - Shadow Monarch Raid Ascension",
+    "presetName": "Full-Color Manhwa Shadow Glow",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-132.webp",
-    "jobId": "2f345023-7d03-43a1-9606-cd945d59d133",
+    "jobId": "cf9b1f11-4ceb-4ed8-ab8f-2b2ab49b8bf5",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-132.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:32:28.341Z"
+    "generatedAt": "2026-09-25T11:28:13.923Z"
   },
   {
     "presetId": "SP05-133",
-    "presetName": "Mashle - Brickwall Comedy Spell-School Brawl",
+    "presetName": "Deadpan Filigree Brick Comedy",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-133.webp",
-    "jobId": "dc28e023-2aca-4244-890a-3e1aa341292e",
+    "jobId": "7de3d3fb-3fd3-4542-8d9f-a6a52acbce02",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-133.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:28:55.914Z"
+    "generatedAt": "2026-09-25T11:18:22.817Z"
   },
   {
     "presetId": "SP05-134",
-    "presetName": "Sakamoto Days - Convenience-Store Assassin Sprint",
+    "presetName": "Fluorescent Everyday Snap Action",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-134.webp",
-    "jobId": "c9eecc9c-5f36-4350-af65-849dd132178d",
+    "jobId": "963c428f-8c04-4ba3-9af5-b5592fa83a09",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-134.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:29:11.865Z"
+    "generatedAt": "2026-09-25T11:19:17.125Z"
   },
   {
     "presetId": "SP05-135",
-    "presetName": "Undead Unluck - Rule-Breaker Curse Impact",
+    "presetName": "Broken-Rule Halftone Shatter",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-135.webp",
-    "jobId": "72ffa780-5ef3-4c58-b167-771f008e6593",
+    "jobId": "1b8b47b1-6dae-41e9-b376-e05b8dc2ebcc",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-135.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:31:10.310Z"
+    "generatedAt": "2026-09-25T11:24:38.428Z"
   },
   {
     "presetId": "SP05-136",
-    "presetName": "Black Clover - Grimoire Thunder Squad",
+    "presetName": "Etched Branch-Lightning Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-136.webp",
-    "jobId": "de83d8e1-9d60-4516-bb17-9eacede08fc5",
+    "jobId": "2240cbda-fa6b-45dd-8938-e1a56c7d3b52",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-136.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:31:02.231Z"
+    "generatedAt": "2026-09-25T11:25:14.342Z"
   },
   {
     "presetId": "SP05-137",
-    "presetName": "Dr. Stone - Science Kingdom Action Blueprint",
+    "presetName": "Chalk-Schematic Inventor Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-137.webp",
-    "jobId": "f5b852fb-b345-4491-876e-42d69f5018bc",
+    "jobId": "bc1db539-b26a-4303-a22c-6213492b71ad",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-137.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:34:22.634Z"
+    "generatedAt": "2026-09-25T11:32:51.847Z"
   },
   {
     "presetId": "SP05-138",
-    "presetName": "Kagurabachi - Sword Oath Under Neon Rain",
+    "presetName": "Sumi-Black Neon Edge Stillness",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-138.webp",
-    "jobId": "508a131e-388a-4b8d-a649-ada657e38f7a",
+    "jobId": "2ef18be9-7ad0-4317-9ab4-b6192ebeb839",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-138.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:31:10.175Z"
+    "generatedAt": "2026-09-25T11:25:24.623Z"
   },
   {
     "presetId": "SP05-139",
-    "presetName": "Attack on Titan - Wall Rupture Desperation",
+    "presetName": "Crosshatched Giant-Scale Panic",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-139.webp",
-    "jobId": "47a4050c-c47a-43b9-89f5-4ee0fe3f9130",
+    "jobId": "48dcb63c-9888-4070-97b1-e8fcab546ca6",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-139.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:31:54.819Z"
+    "generatedAt": "2026-09-25T11:26:07.125Z"
   },
   {
     "presetId": "SP05-140",
-    "presetName": "Frieren Combat Flashback - Ancient Calm Spell Impact",
+    "presetName": "Pale Calm Spell Geometry",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-140.webp",
-    "jobId": "694f2b08-d9e8-4dfe-848f-3dcf36f843b9",
+    "jobId": "2299e734-3523-44cf-89b6-f23d1f95a45c",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-140.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:31:48.912Z"
+    "generatedAt": "2026-09-25T11:26:20.150Z"
   },
   {
     "presetId": "SP05-142",
-    "presetName": "Black Lagoon - South Seas Gun-Runner Grit",
+    "presetName": "Humid Tropic Grit Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-142.webp",
-    "jobId": "1df8ceac-e05c-4ccc-b62b-b666be259e2d",
+    "jobId": "89feb5a0-0147-4f12-88a4-00213dc7c5b7",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-142.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:36:04.909Z"
+    "generatedAt": "2026-09-25T11:38:44.339Z"
   },
   {
     "presetId": "SP05-143",
-    "presetName": "Darker than Black - Contract Killer Night Rain",
+    "presetName": "Cold Starfield Night Noir",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-143.webp",
-    "jobId": "4e5f8ea3-22e7-49c4-bc6f-01e0567d78d2",
+    "jobId": "86494fb4-35cf-47e8-9dcd-5b687e7dd213",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-143.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:36:13.079Z"
+    "generatedAt": "2026-09-25T11:39:13.908Z"
   },
   {
     "presetId": "SP05-144",
-    "presetName": "Samurai Champloo - Lo-Fi Edo Swagger",
+    "presetName": "Record-Scratch Stutter Swagger",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-144.webp",
-    "jobId": "f477085e-9daf-4a94-b2cd-f20158b3349c",
+    "jobId": "4ca2bff9-bbd6-4f41-af79-8f8d4f4aa94d",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-144.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:36:43.104Z"
+    "generatedAt": "2026-09-25T11:39:47.010Z"
   },
   {
     "presetId": "SP05-148",
-    "presetName": "Baccano! - Jazz Railcrime Ensemble",
+    "presetName": "Amber Jazz-Age Ensemble Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "1. Modern Shonen & Action",
     "file": "assets/recipes/styles/defaults/SP05-148.webp",
-    "jobId": "12b785b3-5e9e-4978-8cab-e76b72f6cff0",
+    "jobId": "d4a03c39-756b-43b4-b977-1597958ee251",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-148.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:35:10.996Z"
+    "generatedAt": "2026-09-25T11:35:37.721Z"
   },
   {
     "presetId": "SP05-221",
@@ -1056,13 +1056,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-221.webp",
-    "jobId": "a246cedb-6ae6-4a20-a50a-a3b5c607e820",
+    "jobId": "48e6d778-0278-412b-a2d7-60c39c44d8c6",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-221.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:39:57.614Z"
+    "generatedAt": "2026-09-25T11:48:37.891Z"
   },
   {
     "presetId": "SP05-222",
@@ -1071,13 +1071,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-222.webp",
-    "jobId": "00aee842-b938-4b4b-8b07-da29bdfe6093",
+    "jobId": "b4a7d4eb-8c87-481b-8e26-f2810bef29e6",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-222.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:37:03.280Z"
+    "generatedAt": "2026-09-25T11:40:58.661Z"
   },
   {
     "presetId": "SP05-223",
@@ -1086,13 +1086,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-223.webp",
-    "jobId": "25a30128-6645-4ef9-af09-5a7ee0dce926",
+    "jobId": "ca99361b-5f09-4985-90b7-36f51f729a2d",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-223.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:39:44.837Z"
+    "generatedAt": "2026-09-25T11:49:19.194Z"
   },
   {
     "presetId": "SP05-224",
@@ -1101,13 +1101,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-224.webp",
-    "jobId": "0902a292-649d-4c1a-9f79-728e9ef61459",
+    "jobId": "c6e63cf3-978e-478a-b810-74391b3056a2",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-224.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:37:31.440Z"
+    "generatedAt": "2026-09-25T11:41:21.625Z"
   },
   {
     "presetId": "SP05-225",
@@ -1116,13 +1116,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-225.webp",
-    "jobId": "f6c5ec4f-33bd-4660-bf85-454bb6ac7ef0",
+    "jobId": "1fd724ce-195a-4193-83c5-5d358e4c405d",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-225.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:40:13.464Z"
+    "generatedAt": "2026-09-25T11:49:30.413Z"
   },
   {
     "presetId": "SP05-226",
@@ -1131,13 +1131,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-226.webp",
-    "jobId": "0ea13409-a70f-4576-8e75-e23d078c24cf",
+    "jobId": "cc3766b7-acaf-49f2-a627-3d4d94d5391b",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-226.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:40:27.642Z"
+    "generatedAt": "2026-09-25T11:50:16.823Z"
   },
   {
     "presetId": "SP05-227",
@@ -1146,13 +1146,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-227.webp",
-    "jobId": "8955117c-d98c-4645-b692-9f7f3ac4bfe1",
+    "jobId": "faddfc65-144c-4c8a-8395-4b5c7bb2835b",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-227.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:42:02.924Z"
+    "generatedAt": "2026-09-25T11:55:58.514Z"
   },
   {
     "presetId": "SP05-228",
@@ -1161,13 +1161,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-228.webp",
-    "jobId": "c44cfce2-4b46-4fe5-b8c3-518015263c0d",
+    "jobId": "7fdd3008-3784-4eb9-ad3c-c6aeff06e25e",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-228.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:37:37.056Z"
+    "generatedAt": "2026-09-25T11:42:24.055Z"
   },
   {
     "presetId": "SP05-229",
@@ -1176,13 +1176,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-229.webp",
-    "jobId": "6a989baa-b103-4a56-980f-755ac26ac195",
+    "jobId": "1e1cb19d-9326-4793-9393-75d4b960f7a1",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-229.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:40:33.484Z"
+    "generatedAt": "2026-09-25T11:50:48.268Z"
   },
   {
     "presetId": "SP05-230",
@@ -1191,13 +1191,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-230.webp",
-    "jobId": "6b1e179b-fceb-4c99-b563-4042bdf372a8",
+    "jobId": "e0b246d9-6328-4122-a5c7-39e78cc005a7",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-230.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:40:36.665Z"
+    "generatedAt": "2026-09-25T11:51:21.145Z"
   },
   {
     "presetId": "SP05-231",
@@ -1206,13 +1206,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-231.webp",
-    "jobId": "e3592dfd-cfd0-4826-a32a-8ea81cb7d5d5",
+    "jobId": "d418720f-9f16-497d-a359-83cf9a0dcc13",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-231.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:41:03.989Z"
+    "generatedAt": "2026-09-25T11:51:47.280Z"
   },
   {
     "presetId": "SP05-232",
@@ -1221,13 +1221,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-232.webp",
-    "jobId": "85515a25-d9e2-4c3f-9942-a9cc6e688015",
+    "jobId": "c552554d-ca8d-4819-9e8f-8d52fe336855",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-232.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:41:17.056Z"
+    "generatedAt": "2026-09-25T11:52:04.402Z"
   },
   {
     "presetId": "SP05-233",
@@ -1236,13 +1236,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-233.webp",
-    "jobId": "b92abfe5-2785-4baa-bd99-05913b561f45",
+    "jobId": "709831cb-1dcf-4117-b68b-0ee4cfbf19f2",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-233.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:41:12.855Z"
+    "generatedAt": "2026-09-25T11:53:12.214Z"
   },
   {
     "presetId": "SP05-234",
@@ -1251,13 +1251,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-234.webp",
-    "jobId": "be020004-94f8-47a6-af86-40512f759bef",
+    "jobId": "7ea6278e-6f1f-4b6a-a9cf-c5dd78df3dde",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-234.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:41:21.208Z"
+    "generatedAt": "2026-09-25T11:53:33.962Z"
   },
   {
     "presetId": "SP05-235",
@@ -1266,13 +1266,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-235.webp",
-    "jobId": "739d583d-6450-44ea-8690-1d6002b8d40a",
+    "jobId": "b3e88433-5939-4fca-a2a1-e1a6ddf14817",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-235.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:41:55.923Z"
+    "generatedAt": "2026-09-25T11:54:14.872Z"
   },
   {
     "presetId": "SP05-236",
@@ -1281,13 +1281,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-236.webp",
-    "jobId": "636df8ae-e0c5-47f4-a1e9-663966506fee",
+    "jobId": "4f924e0e-43f8-429a-af7d-d6acf48076ad",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-236.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:37:32.304Z"
+    "generatedAt": "2026-09-25T11:42:35.401Z"
   },
   {
     "presetId": "SP05-237",
@@ -1296,13 +1296,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-237.webp",
-    "jobId": "0db6e20c-d932-4b9a-ab9f-aae8da409567",
+    "jobId": "c540b3c5-5b0a-41d0-ae01-6e5b67bcebbb",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-237.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:41:57.063Z"
+    "generatedAt": "2026-09-25T11:54:26.645Z"
   },
   {
     "presetId": "SP05-238",
@@ -1311,13 +1311,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-238.webp",
-    "jobId": "e9565d64-17de-4258-88cf-a99214f40362",
+    "jobId": "5a880acf-cf65-4e8e-b967-ecdf5e1e539f",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-238.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:37:50.491Z"
+    "generatedAt": "2026-09-25T11:43:03.641Z"
   },
   {
     "presetId": "SP05-239",
@@ -1326,13 +1326,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-239.webp",
-    "jobId": "19d19e22-b47f-475c-ad84-754f6c0a66ad",
+    "jobId": "94c3f21d-4e07-44b4-bfc9-fac85860291b",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-239.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:42:06.268Z"
+    "generatedAt": "2026-09-25T11:55:00.285Z"
   },
   {
     "presetId": "SP05-240",
@@ -1341,13 +1341,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "2. Mecha & Cyberpunk",
     "file": "assets/recipes/styles/defaults/SP05-240.webp",
-    "jobId": "a2e570f6-f2db-4f99-a036-3315376b4fd2",
+    "jobId": "f4be5acb-a63f-45b0-ad64-b4175cb07e90",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-240.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:38:21.122Z"
+    "generatedAt": "2026-09-25T11:43:41.003Z"
   },
   {
     "presetId": "SP05-241",
@@ -1356,13 +1356,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-241.webp",
-    "jobId": "03056fdd-25ce-48e8-8d9e-c1c42f43d542",
+    "jobId": "734d3ac6-8c21-4057-9897-c4bf8040d594",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-241.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:45:32.743Z"
+    "generatedAt": "2026-09-25T12:05:40.757Z"
   },
   {
     "presetId": "SP05-242",
@@ -1371,13 +1371,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-242.webp",
-    "jobId": "0e7f9e22-e81a-414e-96f3-3578099bf836",
+    "jobId": "2f0c80bf-74f3-44ad-b930-fba4c4deb3dc",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-242.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:45:17.028Z"
+    "generatedAt": "2026-09-25T12:06:14.129Z"
   },
   {
     "presetId": "SP05-243",
@@ -1386,268 +1386,268 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-243.webp",
-    "jobId": "439a6a5b-e637-43b1-a6f5-12b237f5d5d2",
+    "jobId": "f4dc5c34-35f3-45fd-9f47-11fda1f5cd27",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-243.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:45:31.719Z"
+    "generatedAt": "2026-09-25T12:06:40.863Z"
   },
   {
     "presetId": "SP05-244",
-    "presetName": "The Twelve Kingdoms - Imperial Destiny Chronicle",
+    "presetName": "Tall Textile-Rhythm Formal Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-244.webp",
-    "jobId": "e40cd308-b65e-432c-97f5-4f2ca6f0e57a",
+    "jobId": "e3fbbbc1-5b49-4253-892a-49966118599c",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-244.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:45:24.492Z"
+    "generatedAt": "2026-09-25T12:07:24.538Z"
   },
   {
     "presetId": "SP05-245",
-    "presetName": "The Vision of Escaflowne - Windblown Tarot Fantasy",
+    "presetName": "Carmine Angular Windswept Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-245.webp",
-    "jobId": "95cb68f1-d4ec-4caa-bb26-7586e68b982b",
+    "jobId": "01423a5c-e020-47a7-9657-7e712269bc73",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-245.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:46:10.851Z"
+    "generatedAt": "2026-09-25T12:08:11.070Z"
   },
   {
     "presetId": "SP05-246",
-    "presetName": "Magi - Labyrinth Jewel Caravan",
+    "presetName": "Jewel Arabesque Curve Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-246.webp",
-    "jobId": "fc3a6267-568b-43aa-b3a6-b7b71387f4cf",
+    "jobId": "1c10cee9-b374-4955-8929-ef3c6919eb5b",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-246.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:46:01.591Z"
+    "generatedAt": "2026-09-25T12:09:07.367Z"
   },
   {
     "presetId": "SP05-247",
-    "presetName": "The Ancient Magus' Bride - Thorn Cottage Enchantment",
+    "presetName": "Lilac Thorn-Line Chiaroscuro Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-247.webp",
-    "jobId": "4e8ec2b2-2b01-419b-8011-dac4e4a7cdf2",
+    "jobId": "69c0ce12-5ed1-4bc0-a454-3dd956b1e930",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-247.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:47:29.293Z"
+    "generatedAt": "2026-09-25T12:13:41.456Z"
   },
   {
     "presetId": "SP05-248",
-    "presetName": "Delicious in Dungeon - Stove-Top Monster Cuisine",
+    "presetName": "Naturalist Sketchbook Anime Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-248.webp",
-    "jobId": "8737852e-95e6-4f89-876c-a8ffe18ed7d1",
+    "jobId": "a62e841d-6a5f-4e4f-9c0b-fea2345db35f",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-248.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:42:56.320Z"
+    "generatedAt": "2026-09-25T11:58:28.715Z"
   },
   {
     "presetId": "SP05-249",
-    "presetName": "Ascendance of a Bookworm - Printing Press Devotion",
+    "presetName": "Indigo Block-Print Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-249.webp",
-    "jobId": "bc884b23-16ab-4280-ae80-e8e050024769",
+    "jobId": "7114cff2-75e2-4202-abad-1b34f1a016cb",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-249.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:46:18.885Z"
+    "generatedAt": "2026-09-25T12:09:08.096Z"
   },
   {
     "presetId": "SP05-250",
-    "presetName": "The Faraway Paladin - Quiet Temple Quest",
+    "presetName": "Grounded Matte Geometry Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-250.webp",
-    "jobId": "0b3c3f11-9312-4485-9490-5f49f85b3d82",
+    "jobId": "edfbfab1-5014-4cf0-b328-44598cd3a3c8",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-250.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:46:08.902Z"
+    "generatedAt": "2026-09-25T12:09:43.923Z"
   },
   {
     "presetId": "SP05-251",
-    "presetName": "Saga of Tanya the Evil - Aerial War Mage Doctrine",
+    "presetName": "Khaki Compressed-Diagonal Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-251.webp",
-    "jobId": "33ea0dbe-fa77-46f1-aa0a-75353c22b2d1",
+    "jobId": "6cb48bd4-df6d-4859-a344-61abd43d0b5a",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-251.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:47:28.516Z"
+    "generatedAt": "2026-09-25T12:12:30.272Z"
   },
   {
     "presetId": "SP05-252",
-    "presetName": "Campfire Cooking in Another World - Merchant Road Stew",
+    "presetName": "Amber Dusk Rounded Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-252.webp",
-    "jobId": "bc6ebe43-bcfa-4d8a-a334-b2251e306c30",
+    "jobId": "ec249df2-fa0c-4fd0-b56a-27b1aadead3f",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-252.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:43:20.181Z"
+    "generatedAt": "2026-09-25T11:58:48.922Z"
   },
   {
     "presetId": "SP05-253",
-    "presetName": "The Saint's Magic Power Is Omnipotent - Herbarium Court Glow",
+    "presetName": "Glass-Green High-Key Herbarium Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-253.webp",
-    "jobId": "2a04ee5f-6fc0-4f63-98a8-941411b6ac34",
+    "jobId": "21bec3ea-59f1-4c98-899f-f743d6d018b6",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-253.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T17:39:04.145Z"
+    "generatedAt": "2026-09-25T12:10:40.285Z"
   },
   {
     "presetId": "SP05-254",
-    "presetName": "Fushigi Yuugi - Celestial Maiden Portal Epic",
+    "presetName": "Lavender Halo-Arc Shoujo Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-254.webp",
-    "jobId": "de06208d-acf7-4f94-b537-e9222ded298d",
+    "jobId": "b399e311-007c-4c71-9c9a-ab63e176014c",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-254.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:46:50.882Z"
+    "generatedAt": "2026-09-25T12:11:20.546Z"
   },
   {
     "presetId": "SP05-255",
-    "presetName": "Magic Knight Rayearth - Gem-Engine Rescue Quest",
+    "presetName": "Gem-Facet Rising-Line Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-255.webp",
-    "jobId": "b1fc0222-bf67-45eb-9d63-d7a021e8ab7d",
+    "jobId": "6b30d44c-56f5-4554-9ef9-5bb1b34a74a9",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-255.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T17:39:00.826Z"
+    "generatedAt": "2026-09-25T12:11:27.030Z"
   },
   {
     "presetId": "SP05-256",
-    "presetName": "Inuyasha - Shrine-Well Sengoku Pursuit",
+    "presetName": "Vermilion Indigo Tapered-Ink Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-256.webp",
-    "jobId": "93cebdf8-91c9-48de-b309-19682a9a05b2",
+    "jobId": "3555bcff-4b7c-4a37-94bb-1815b7975292",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-256.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:47:37.980Z"
+    "generatedAt": "2026-09-25T12:14:03.364Z"
   },
   {
     "presetId": "SP05-257",
-    "presetName": "Tsukimichi - Moonlit Merchant Wanderer",
+    "presetName": "Slate Twilight Single-Violet Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-257.webp",
-    "jobId": "b4e99748-444a-494a-b118-4c073a9ac879",
+    "jobId": "849f33f4-0987-4fb0-9fb4-a2fb98a9f169",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-257.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:43:15.240Z"
+    "generatedAt": "2026-09-25T11:59:29.062Z"
   },
   {
     "presetId": "SP05-258",
-    "presetName": "Handyman Saitou in Another World - Toolbox Party Quest",
+    "presetName": "Fine-Line Brass Glint Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-258.webp",
-    "jobId": "a64f668a-92b2-4a37-a0d7-73d8d5fdc7c2",
+    "jobId": "2731721c-a9ec-4f67-9757-41eecd11efda",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-258.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:43:26.108Z"
+    "generatedAt": "2026-09-25T12:00:21.526Z"
   },
   {
     "presetId": "SP05-259",
-    "presetName": "Ranking of Kings - Storybook Crown Courage",
+    "presetName": "Picture-Book Crayon Line Anime",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-259.webp",
-    "jobId": "5e2ca0d8-d667-4bd2-bc23-508d1e939003",
+    "jobId": "64b729a3-b93b-4ea4-b1a9-70dfbd4d2ebd",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-259.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:43:39.095Z"
+    "generatedAt": "2026-09-25T12:00:27.748Z"
   },
   {
     "presetId": "SP05-260",
-    "presetName": "Princess Connect! Re:Dive - Banquet Quest Pastel",
+    "presetName": "Candy Pastel Bloom Cel",
     "packId": "pack_05",
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "3. Isekai & High Fantasy",
     "file": "assets/recipes/styles/defaults/SP05-260.webp",
-    "jobId": "2a3ea6cf-1806-4936-aec0-cbee1531ea23",
+    "jobId": "b877e50b-c390-485f-b8e8-d767b3b865a4",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-260.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:43:54.354Z"
+    "generatedAt": "2026-09-25T12:01:14.722Z"
   },
   {
     "presetId": "SP05-261",
@@ -1656,13 +1656,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-261.webp",
-    "jobId": "28f523b8-874b-45dc-8927-1a5fe712dd26",
+    "jobId": "202fd196-ea74-4979-a079-13c99c4bcad1",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-261.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:48:16.158Z"
+    "generatedAt": "2026-09-25T12:15:32.663Z"
   },
   {
     "presetId": "SP05-262",
@@ -1671,13 +1671,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-262.webp",
-    "jobId": "d012e371-78c7-4002-9f28-fd1b6bccb7fb",
+    "jobId": "786c8fda-25cc-44f6-95f9-0877483366cb",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-262.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:48:09.207Z"
+    "generatedAt": "2026-09-25T12:16:27.996Z"
   },
   {
     "presetId": "SP05-263",
@@ -1686,13 +1686,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-263.webp",
-    "jobId": "e2c0278c-e49e-44b8-a381-bdb2102cc5b6",
+    "jobId": "f5311471-2ac4-4939-83ef-c98a65317df4",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-263.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:48:09.964Z"
+    "generatedAt": "2026-09-25T12:16:46.716Z"
   },
   {
     "presetId": "SP05-264",
@@ -1701,13 +1701,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-264.webp",
-    "jobId": "fdcd21ba-4918-4457-96e4-0156b6be0988",
+    "jobId": "9da13dd6-9a16-4861-aa04-e26ffd3c76c7",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-264.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:48:44.052Z"
+    "generatedAt": "2026-09-25T12:17:34.137Z"
   },
   {
     "presetId": "SP05-265",
@@ -1716,13 +1716,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-265.webp",
-    "jobId": "ab99d1cc-259e-4765-88a0-1f75b52d10e0",
+    "jobId": "bf432a80-25ca-4223-bec3-704a4738efc9",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-265.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:48:50.293Z"
+    "generatedAt": "2026-09-25T12:18:04.158Z"
   },
   {
     "presetId": "SP05-266",
@@ -1731,13 +1731,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-266.webp",
-    "jobId": "fea8afb0-81b5-4692-89bf-03d2775d2145",
+    "jobId": "b2d288c3-9c83-469e-9750-217fad4079ec",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-266.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:48:50.432Z"
+    "generatedAt": "2026-09-25T12:18:37.751Z"
   },
   {
     "presetId": "SP05-267",
@@ -1746,13 +1746,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-267.webp",
-    "jobId": "19986046-cdfb-4d76-8103-0b8a02535d98",
+    "jobId": "ff778b1e-ec8d-46a8-83b5-fb0bc0d67510",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-267.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:48:55.764Z"
+    "generatedAt": "2026-09-25T12:18:49.719Z"
   },
   {
     "presetId": "SP05-268",
@@ -1761,13 +1761,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-268.webp",
-    "jobId": "ba279b29-b217-425a-b35d-206fe619621b",
+    "jobId": "3da907a7-bf4c-4ddb-8fab-ec671366fc03",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-268.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:49:24.662Z"
+    "generatedAt": "2026-09-25T12:19:25.732Z"
   },
   {
     "presetId": "SP05-269",
@@ -1776,13 +1776,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-269.webp",
-    "jobId": "c00def7c-19a5-4720-8eb5-4a0bd6b7b3d1",
+    "jobId": "25ba3e17-457d-4629-9ad4-f7a4d76e7c62",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-269.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:49:52.512Z"
+    "generatedAt": "2026-09-25T12:20:19.477Z"
   },
   {
     "presetId": "SP05-270",
@@ -1791,13 +1791,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-270.webp",
-    "jobId": "9f75f939-f7b8-4dc6-83dc-ab81c3ce3b0d",
+    "jobId": "6c8e2093-d512-4766-b54a-fd0c5b7bae65",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-270.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:49:24.411Z"
+    "generatedAt": "2026-09-25T12:21:06.644Z"
   },
   {
     "presetId": "SP05-271",
@@ -1806,13 +1806,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-271.webp",
-    "jobId": "0f7ec2d3-0bc9-40b1-878c-7c8e0aaaf21f",
+    "jobId": "7c9730ae-04c0-4d9a-a760-53b711f7d577",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-271.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:49:34.527Z"
+    "generatedAt": "2026-09-25T12:21:29.727Z"
   },
   {
     "presetId": "SP05-272",
@@ -1821,13 +1821,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-272.webp",
-    "jobId": "9c1afc5c-be70-415a-be33-84634051d73e",
+    "jobId": "ada0f28c-a4c7-4c05-bb34-2314abd71250",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-272.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:50:09.550Z"
+    "generatedAt": "2026-09-25T12:22:14.328Z"
   },
   {
     "presetId": "SP05-273",
@@ -1836,13 +1836,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-273.webp",
-    "jobId": "2f8021ce-ffdb-41f4-907e-e9cb889a0867",
+    "jobId": "0d08f593-0dd1-4580-8883-6d3a1a2ff14a",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-273.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:50:07.160Z"
+    "generatedAt": "2026-09-25T12:22:20.258Z"
   },
   {
     "presetId": "SP05-274",
@@ -1851,13 +1851,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-274.webp",
-    "jobId": "78731982-a19d-46ee-80bb-2b4122354551",
+    "jobId": "905ab50a-2e0f-4059-9f73-ec640be79ee5",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-274.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:50:10.158Z"
+    "generatedAt": "2026-09-25T12:23:12.828Z"
   },
   {
     "presetId": "SP05-275",
@@ -1866,13 +1866,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-275.webp",
-    "jobId": "5acb44f9-feca-4b10-91e7-ea674fa54c94",
+    "jobId": "ec3e3cd9-ea70-4c45-9de4-318b27c05fa3",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-275.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:51:19.012Z"
+    "generatedAt": "2026-09-25T12:26:03.204Z"
   },
   {
     "presetId": "SP05-276",
@@ -1881,13 +1881,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-276.webp",
-    "jobId": "bcf51663-aa8b-4dbc-907a-0580a09e76b5",
+    "jobId": "4c15767e-59d7-46e9-aa24-d29e899bd38d",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-276.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:50:41.900Z"
+    "generatedAt": "2026-09-25T12:23:33.625Z"
   },
   {
     "presetId": "SP05-277",
@@ -1896,13 +1896,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-277.webp",
-    "jobId": "22a30194-797f-4187-a552-a3e0e0fabdb2",
+    "jobId": "ab72bbcb-94c1-4175-9e53-b53bf8d10b44",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-277.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:50:48.685Z"
+    "generatedAt": "2026-09-25T12:24:14.669Z"
   },
   {
     "presetId": "SP05-278",
@@ -1911,13 +1911,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-278.webp",
-    "jobId": "73f53fec-3e9a-466f-aa54-15d859d03a3f",
+    "jobId": "e1c40507-0786-43b5-93af-97c9eaec28ea",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-278.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:48:03.826Z"
+    "generatedAt": "2026-09-25T12:15:23.488Z"
   },
   {
     "presetId": "SP05-279",
@@ -1926,13 +1926,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-279.webp",
-    "jobId": "9e9f766d-3cef-4d47-8b88-43df16aeebc6",
+    "jobId": "50ad15ee-6d07-4db7-a526-80ba3d6a8fc2",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-279.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:50:53.572Z"
+    "generatedAt": "2026-09-25T12:24:44.994Z"
   },
   {
     "presetId": "SP05-280",
@@ -1941,13 +1941,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "4. Dark Fantasy & Seinen",
     "file": "assets/recipes/styles/defaults/SP05-280.webp",
-    "jobId": "bb66f91f-aa0f-423f-982e-9cb16704cc17",
+    "jobId": "e8d18914-8923-4670-96aa-5a728aab7134",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-280.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:50:52.129Z"
+    "generatedAt": "2026-09-25T12:25:08.294Z"
   },
   {
     "presetId": "SP13-021",
@@ -1956,13 +1956,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "5. Action Motion Setpieces",
     "file": "assets/recipes/styles/defaults/SP13-021.webp",
-    "jobId": "6f24441b-8257-43c9-87da-5701e4de71b2",
+    "jobId": "85ddaef0-24a9-479f-b287-c6208f98f5db",
     "sourceAsset": "assets/recipes/styles/defaults/SP13-021.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:52:45.026Z"
+    "generatedAt": "2026-09-25T12:47:13.900Z"
   },
   {
     "presetId": "SP13-022",
@@ -1971,13 +1971,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "5. Action Motion Setpieces",
     "file": "assets/recipes/styles/defaults/SP13-022.webp",
-    "jobId": "2785ce26-9abd-4daf-81e6-9b2f3dc50ef9",
+    "jobId": "5fe608ba-df04-46e8-9a50-9bac7309e9d6",
     "sourceAsset": "assets/recipes/styles/defaults/SP13-022.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:53:16.777Z"
+    "generatedAt": "2026-09-25T12:47:24.767Z"
   },
   {
     "presetId": "SP13-023",
@@ -1986,13 +1986,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "5. Action Motion Setpieces",
     "file": "assets/recipes/styles/defaults/SP13-023.webp",
-    "jobId": "29a18b1c-1e51-4997-81f7-fa4cd65ee6ae",
+    "jobId": "049f5e81-2f1a-4c75-839e-bb06a1b806d9",
     "sourceAsset": "assets/recipes/styles/defaults/SP13-023.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:53:24.851Z"
+    "generatedAt": "2026-09-25T12:47:56.440Z"
   },
   {
     "presetId": "SP13-024",
@@ -2001,13 +2001,13 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "5. Action Motion Setpieces",
     "file": "assets/recipes/styles/defaults/SP13-024.webp",
-    "jobId": "927140ff-c03e-4451-94ff-d1488bbd01da",
+    "jobId": "c2b55caf-022e-411d-a3be-7f25bf8a349a",
     "sourceAsset": "assets/recipes/styles/defaults/SP13-024.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:53:28.533Z"
+    "generatedAt": "2026-09-25T12:48:38.095Z"
   },
   {
     "presetId": "SP13-025",
@@ -2016,12 +2016,237 @@
     "packName": "Anime 01 — Anime Battle & Worlds",
     "category": "5. Action Motion Setpieces",
     "file": "assets/recipes/styles/defaults/SP13-025.webp",
-    "jobId": "26f1cd13-99d5-47ba-bb1e-0793f760cf05",
+    "jobId": "b483e271-2d38-4fa3-8075-d60b18ff7519",
     "sourceAsset": "assets/recipes/styles/defaults/SP13-025.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T16:53:27.343Z"
+    "generatedAt": "2026-09-25T12:49:33.534Z"
+  },
+  {
+    "presetId": "SP13-036",
+    "presetName": "Smear-Frame Arc Staging",
+    "packId": "pack_05",
+    "packName": "Anime 01 — Anime Battle & Worlds",
+    "category": "5. Action Motion Setpieces",
+    "file": "assets/recipes/styles/defaults/SP13-036.webp",
+    "jobId": "f71c6ae9-9701-41f5-ab80-abe4afed81e0",
+    "sourceAsset": "assets/recipes/styles/defaults/SP13-036.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-25T12:50:07.865Z"
+  },
+  {
+    "presetId": "SP13-037",
+    "presetName": "Negative Impact Frame Staging",
+    "packId": "pack_05",
+    "packName": "Anime 01 — Anime Battle & Worlds",
+    "category": "5. Action Motion Setpieces",
+    "file": "assets/recipes/styles/defaults/SP13-037.webp",
+    "jobId": "beb4afbb-f710-462e-a659-5205a268ddd7",
+    "sourceAsset": "assets/recipes/styles/defaults/SP13-037.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-25T12:50:11.375Z"
+  },
+  {
+    "presetId": "SP13-038",
+    "presetName": "Bullet-Time Orbit Freeze",
+    "packId": "pack_05",
+    "packName": "Anime 01 — Anime Battle & Worlds",
+    "category": "5. Action Motion Setpieces",
+    "file": "assets/recipes/styles/defaults/SP13-038.webp",
+    "jobId": "5c8a80ff-05fe-4dde-a215-3f7ee7c0d881",
+    "sourceAsset": "assets/recipes/styles/defaults/SP13-038.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-25T12:50:52.620Z"
+  },
+  {
+    "presetId": "SP13-039",
+    "presetName": "Panning Background Streak Frame",
+    "packId": "pack_05",
+    "packName": "Anime 01 — Anime Battle & Worlds",
+    "category": "5. Action Motion Setpieces",
+    "file": "assets/recipes/styles/defaults/SP13-039.webp",
+    "jobId": "fe64f79d-4859-430f-84a2-54e4142f327b",
+    "sourceAsset": "assets/recipes/styles/defaults/SP13-039.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-25T12:51:32.638Z"
+  },
+  {
+    "presetId": "SP13-040",
+    "presetName": "Worm's-Eye Leap Silhouette",
+    "packId": "pack_05",
+    "packName": "Anime 01 — Anime Battle & Worlds",
+    "category": "5. Action Motion Setpieces",
+    "file": "assets/recipes/styles/defaults/SP13-040.webp",
+    "jobId": "45c3ae9b-80d4-4926-ba59-e75ea340c467",
+    "sourceAsset": "assets/recipes/styles/defaults/SP13-040.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-25T12:52:05.734Z"
+  },
+  {
+    "presetId": "SP13-041",
+    "presetName": "Dutch Tilt Momentum Frame",
+    "packId": "pack_05",
+    "packName": "Anime 01 — Anime Battle & Worlds",
+    "category": "5. Action Motion Setpieces",
+    "file": "assets/recipes/styles/defaults/SP13-041.webp",
+    "jobId": "c00fe245-2a1a-48d6-a221-809861ac7b15",
+    "sourceAsset": "assets/recipes/styles/defaults/SP13-041.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-25T12:52:53.505Z"
+  },
+  {
+    "presetId": "SP13-042",
+    "presetName": "Three-Beat Action Triptych",
+    "packId": "pack_05",
+    "packName": "Anime 01 — Anime Battle & Worlds",
+    "category": "5. Action Motion Setpieces",
+    "file": "assets/recipes/styles/defaults/SP13-042.webp",
+    "jobId": "33784dca-0b25-4f9b-80ce-e53ea3e56623",
+    "sourceAsset": "assets/recipes/styles/defaults/SP13-042.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-25T12:53:16.639Z"
+  },
+  {
+    "presetId": "SP13-043",
+    "presetName": "Near-Lens Pass-By Frame",
+    "packId": "pack_05",
+    "packName": "Anime 01 — Anime Battle & Worlds",
+    "category": "5. Action Motion Setpieces",
+    "file": "assets/recipes/styles/defaults/SP13-043.webp",
+    "jobId": "75d7de60-736c-4391-a1fb-55b88ec3b076",
+    "sourceAsset": "assets/recipes/styles/defaults/SP13-043.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-25T12:53:59.229Z"
+  },
+  {
+    "presetId": "SP13-044",
+    "presetName": "Top-Down Spiral Path Staging",
+    "packId": "pack_05",
+    "packName": "Anime 01 — Anime Battle & Worlds",
+    "category": "5. Action Motion Setpieces",
+    "file": "assets/recipes/styles/defaults/SP13-044.webp",
+    "jobId": "7a0f686c-e910-4ac8-ae98-fe67b94b53e0",
+    "sourceAsset": "assets/recipes/styles/defaults/SP13-044.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-25T12:54:42.627Z"
+  },
+  {
+    "presetId": "SP13-045",
+    "presetName": "Fisheye Foreshortened Reach",
+    "packId": "pack_05",
+    "packName": "Anime 01 — Anime Battle & Worlds",
+    "category": "5. Action Motion Setpieces",
+    "file": "assets/recipes/styles/defaults/SP13-045.webp",
+    "jobId": "cba2ea12-24de-4f53-8049-4ffc57bcc8b6",
+    "sourceAsset": "assets/recipes/styles/defaults/SP13-045.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-25T12:55:49.640Z"
+  },
+  {
+    "presetId": "SP13-046",
+    "presetName": "Cloth-and-Hair Follow-Through Trails",
+    "packId": "pack_05",
+    "packName": "Anime 01 — Anime Battle & Worlds",
+    "category": "5. Action Motion Setpieces",
+    "file": "assets/recipes/styles/defaults/SP13-046.webp",
+    "jobId": "5ed82a41-2565-446f-983d-c193579b5770",
+    "sourceAsset": "assets/recipes/styles/defaults/SP13-046.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-25T12:56:09.260Z"
+  },
+  {
+    "presetId": "SP13-047",
+    "presetName": "Tiny-Figure Grand Arc Wide",
+    "packId": "pack_05",
+    "packName": "Anime 01 — Anime Battle & Worlds",
+    "category": "5. Action Motion Setpieces",
+    "file": "assets/recipes/styles/defaults/SP13-047.webp",
+    "jobId": "ff0738a4-0b6b-444d-934b-10b67e29a76f",
+    "sourceAsset": "assets/recipes/styles/defaults/SP13-047.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-25T12:56:52.834Z"
+  },
+  {
+    "presetId": "SP13-048",
+    "presetName": "Coiled Anticipation Lead-Space Frame",
+    "packId": "pack_05",
+    "packName": "Anime 01 — Anime Battle & Worlds",
+    "category": "5. Action Motion Setpieces",
+    "file": "assets/recipes/styles/defaults/SP13-048.webp",
+    "jobId": "100ec01f-d6fe-4815-9686-ed6fef2cb9b0",
+    "sourceAsset": "assets/recipes/styles/defaults/SP13-048.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-25T12:57:27.035Z"
+  },
+  {
+    "presetId": "SP13-049",
+    "presetName": "Ground-Skim Low Tracking Shot",
+    "packId": "pack_05",
+    "packName": "Anime 01 — Anime Battle & Worlds",
+    "category": "5. Action Motion Setpieces",
+    "file": "assets/recipes/styles/defaults/SP13-049.webp",
+    "jobId": "c917aae0-dead-4832-92ed-17ce930e5dac",
+    "sourceAsset": "assets/recipes/styles/defaults/SP13-049.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-25T12:58:00.223Z"
+  },
+  {
+    "presetId": "SP13-050",
+    "presetName": "Contact-Point Extreme Close-Up",
+    "packId": "pack_05",
+    "packName": "Anime 01 — Anime Battle & Worlds",
+    "category": "5. Action Motion Setpieces",
+    "file": "assets/recipes/styles/defaults/SP13-050.webp",
+    "jobId": "b91bb5e1-5655-4d76-b643-23b60e95628d",
+    "sourceAsset": "assets/recipes/styles/defaults/SP13-050.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-25T12:58:11.022Z"
   }
 ]
