@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP04-067
 packId: pack_04
-name: Monotype
+name: Trace Monotype
 category: 5. Ink And Print
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,62 +12,24 @@ tags:
   - illustration-and-graphic-novel
   - ink-and-print
 visualDna:
-  aesthetic: >-
-    Monotype acts as a transferable illustration router: start from Monotype one-off print style
-    with painterly transfer unpredictability and unique impression-first identity, Ghost image,
-    ink-bleed edge, plate-memory residue and ink and printmaking system built from mark economy,
-    matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic
-    structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Smudged plate-transfer marks with pressure-variant edges,
-    ghost traces, and spontaneous ink movement; preserve the requested subject while rebuilding it
-    through carved lines, etched density, stipple fields, calligraphic pressure, stamp
-    incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested
-    identity, silhouette, pose, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Ink wash, single-pass tone, monoprint spontaneity; use color as ink behavior:
-    monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray
-    contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control,
-    and process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Unpredictable, plate-pressure variation, unique ghost-artifact; translate
-    light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling,
-    or flat spray contrast rather than photographic shading, so value structure supports the
-    illustration process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Plate texture, ink transfer, mark density, paper response, process artifacts, and
-    printmaking composition discipline; surface detail should show paper fiber, plate burr, block
-    grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or
-    aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Squashed ink, scale rhythm, edge hierarchy, spacing, and composition
-    rules specific to Monotype; compose through print registration, border discipline,
-    mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like
-    balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Expressive, unique, printmaking surprise, serendipitous beauty; derive mood from
-    craft pressure, underground immediacy, archival print authority, occult darkness, decorative
-    ceremony, street-poster urgency, or disciplined ink control, letting the style alter
-    interpretation without demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Painterly print, one-chance drama, artistic gamble; finish as a credible ink or
-    print artifact with exact mark logic, restrained artifacting, and no fake text, random distress
-    overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough
-    process evidence to make the style recognizable.
-  key_features: >-
-    Monotype one-off print style with painterly transfer unpredictability and unique
-    impression-first identity; Ghost image, ink-bleed edge, plate-memory residue; Ink wash,
-    single-pass tone, monoprint spontaneity; Plate texture, ink transfer, mark density, paper
-    response, process artifacts, and printmaking composition discipline; Squashed ink, scale rhythm,
-    edge hierarchy, spacing, and composition rules specific to Monotype
-  creative_brief: >-
-    Apply Monotype as an illustration preset over prompt X: preserve the user's requested subject,
-    then route mark-making, palette, surface, composition, mood, and final craft through Monotype
-    one-off print style with painterly transfer unpredictability and unique impression-first
-    identity, Ghost image, ink-bleed edge, plate-memory residue, Plate texture, ink transfer, mark
-    density, paper response, process artifacts, and printmaking composition discipline without
-    requiring the card image's original subject.
+  aesthetic: 'Trace monotype: lines drawn with a stylus on paper laid over an inked glass plate, printing soft fuzzy dark lines with ghost smudges from the resting hand.'
+  subject_treatment: Keep the prompt subject, action, setting and camera, and redraw them entirely with this process's own physical mark, so the same subject would read differently in any neighbouring ink or print technique.
+  color_and_tone: Black or dark umber ink on thin Japanese paper, with grey plate-tone smudges around the drawing.
+  lighting_and_shadow: 'Value comes from where the hand pressed: smudged grey halos around dark areas, little modeled light.'
+  texture_and_material: Soft furry-edged lines, accidental pressure blotches, a faint plate edge and a one-off impression.
+  camera_and_composition: Keep the requested view with a sparse, slightly off-balance arrangement on the sheet.
+  atmosphere_and_mood: Haunted, intimate and fragile, a drawing surfacing through fog.
+  rendering_and_quality: Single impression with its accidents intact, no crisp lines and no edition-perfect cleanliness.
+  key_features: fuzzy stylus-traced lines; hand-pressure ghost smudges; thin Japanese paper; faint plate edge; one-off impression
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Trace Monotype as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - brand logo
+  - franchise likeness
+  - printmaker holding a plate or print
+  - digital smooth gradient
+  - crisp vector line
+  - flat clean background
   - repeatable
   - clean
   - official card scene
@@ -82,13 +44,16 @@ avoidRules:
   - random distress overlay
   - smooth vector replacement
   - wrong print process
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-067.webp
 attributes:
-  negativePrompt: >-
-    repeatable, clean, official card scene, fixed thumbnail subject, prompt replaced by sample
-    image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake
-    text, random distress overlay, smooth vector replacement, wrong print process
+  negativePrompt: readable text, brand logo, franchise likeness, printmaker holding a plate or print, digital smooth gradient, crisp vector line, flat clean background, repeatable, clean, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
@@ -102,3 +67,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Trace Monotype
+styleAnchors:
+  - Trace Monotype
+  - Monotype

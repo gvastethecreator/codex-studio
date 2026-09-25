@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP04-071
 packId: pack_04
-name: Aquatint
+name: Spit-Bite Aquatint
 category: 5. Ink And Print
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,60 +12,22 @@ tags:
   - illustration-and-graphic-novel
   - ink-and-print
 visualDna:
-  aesthetic: >-
-    Aquatint acts as a transferable illustration router: start from Granular tonal etching with
-    wash-like shadow fields, Grain-anchored gradients, soft shadow pooling, reduced hard edge
-    contrast and ink and printmaking system built from mark economy, matrix process, ink transfer,
-    pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual
-    behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Light etched scaffolding under dominant tonal masses;
-    preserve the requested subject while rebuilding it through carved lines, etched density, stipple
-    fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash
-    simplification, keeping the requested identity, silhouette, pose, object function, or setting
-    legible.
-  color_and_tone: >-
-    Build color with Smoke black, sepia umber, aged paper cream, muted iron gray; use color as ink
-    behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors,
-    spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent
-    control, and process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Diffused tonal bloom with softly merged edge falloff; translate light into
-    hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat
-    spray contrast rather than photographic shading, so value structure supports the illustration
-    process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Rosin-grain stipple, acid-bitten porosity, powdery plate tone; surface detail should show
-    paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen
-    pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and
-    avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Stable print geometry; depth built by tone stacking; compose through
-    print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow,
-    ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual
-    hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Somber, introspective, gothic-romantic, haunted stillness; derive mood from craft
-    pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony,
-    street-poster urgency, or disciplined ink control, letting the style alter interpretation
-    without demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Atmospheric print depth with layered tonal veils and subtle edge dissolve; finish as
-    a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake
-    text, random distress overlay, or smooth vector replacement, clean denoised surfaces where
-    appropriate, and enough process evidence to make the style recognizable.
-  key_features: >-
-    Granular tonal etching with wash-like shadow fields; Grain-anchored gradients, soft shadow
-    pooling, reduced hard edge contrast; Smoke black, sepia umber, aged paper cream, muted iron
-    gray; Rosin-grain stipple, acid-bitten porosity, powdery plate tone; Stable print geometry;
-    depth built by tone stacking
-  creative_brief: >-
-    Apply Aquatint as an illustration preset over prompt X: preserve the user's requested subject,
-    then route mark-making, palette, surface, composition, mood, and final craft through Granular
-    tonal etching with wash-like shadow fields, Grain-anchored gradients, soft shadow pooling,
-    reduced hard edge contrast, Rosin-grain stipple, acid-bitten porosity, powdery plate tone
-    without requiring the card image's original subject.
+  aesthetic: 'Aquatint: rosin grain fused to a plate and bitten in stages, printing granular tonal washes, with brushed spit-bite acid giving soft pooled tones.'
+  subject_treatment: Keep the prompt subject, action, setting and camera, and redraw them entirely with this process's own physical mark, so the same subject would read differently in any neighbouring ink or print technique.
+  color_and_tone: Sepia umber, smoke black or one blue-grey ink on cream, tonal rather than linear.
+  lighting_and_shadow: Broad shadow masses in stepped bite tones and soft pooled gradients, only a few accents etched as line.
+  texture_and_material: Fine sugary grain in every tone, soft-edged spit-bite pools and a few etched lines for accents.
+  camera_and_composition: Keep the requested view with broad, landscape-like massing of tone.
+  atmosphere_and_mood: Misty, somber and melancholy, weather seen through grain.
+  rendering_and_quality: Granular tone fields with pooled edges; never a smooth digital gradient.
+  key_features: rosin grain tone; spit-bite pools; stepped bite values; few etched accents; sepia or blue-grey ink
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Spit-Bite Aquatint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - brand logo
+  - franchise likeness
+  - printmaker holding a plate or print
+  - digital smooth gradient
   - sharp lines
   - official card scene
   - fixed thumbnail subject
@@ -79,13 +41,16 @@ avoidRules:
   - random distress overlay
   - smooth vector replacement
   - wrong print process
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-071.webp
 attributes:
-  negativePrompt: >-
-    sharp lines, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text,
-    random distress overlay, smooth vector replacement, wrong print process
+  negativePrompt: readable text, brand logo, franchise likeness, printmaker holding a plate or print, digital smooth gradient, sharp lines, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
@@ -99,3 +64,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Spit-Bite Aquatint
+styleAnchors:
+  - Spit-Bite Aquatint
+  - Aquatint

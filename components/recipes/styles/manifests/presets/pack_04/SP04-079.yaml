@@ -3,7 +3,7 @@ id: SP04-079
 packId: pack_04
 name: Calligraphy (Blackletter)
 category: 5. Ink And Print
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,60 +12,24 @@ tags:
   - illustration-and-graphic-novel
   - ink-and-print
 visualDna:
-  aesthetic: >-
-    Calligraphy (Blackletter) acts as a transferable illustration router: start from Gothic
-    blackletter calligraphy with architectural stroke logic, Strong vertical columns, broken curves,
-    tight spacing cadence, serifed terminals and ink and printmaking system built from mark economy,
-    matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic
-    structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Broad-nib vertical stress, diamond joins, angular counters;
-    preserve the requested subject while rebuilding it through carved lines, etched density, stipple
-    fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash
-    simplification, keeping the requested identity, silhouette, pose, object function, or setting
-    legible.
-  color_and_tone: >-
-    Build color with Dense black ink, parchment beige, muted antique gold accents; use color as ink
-    behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors,
-    spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent
-    control, and process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Mostly flat manuscript illumination with subtle warm edge lift; translate
-    light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling,
-    or flat spray contrast rather than photographic shading, so value structure supports the
-    illustration process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Fibrous parchment grain with slight ink feather control; surface detail should show paper
-    fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling,
-    tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding
-    noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Structured ornament extension without breaking text rhythm; compose
-    through print registration, border discipline, mark-direction rhythm, negative-space carving,
-    tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and
-    visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Liturgical, solemn, archival, ceremonial stillness; derive mood from craft
-    pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony,
-    street-poster urgency, or disciplined ink control, letting the style alter interpretation
-    without demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Formal, weighty, high-discipline lettering with ornamental restraint; finish as a
-    credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text,
-    random distress overlay, or smooth vector replacement, clean denoised surfaces where
-    appropriate, and enough process evidence to make the style recognizable.
-  key_features: >-
-    Gothic blackletter calligraphy with architectural stroke logic; Strong vertical columns, broken
-    curves, tight spacing cadence, serifed terminals; Dense black ink, parchment beige, muted
-    antique gold accents; Fibrous parchment grain with slight ink feather control; Structured
-    ornament extension without breaking text rhythm
-  creative_brief: >-
-    Apply Calligraphy (Blackletter) as an illustration preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through Gothic blackletter calligraphy with architectural stroke logic, Strong vertical columns,
-    broken curves, tight spacing cadence, serifed terminals, Fibrous parchment grain with slight ink
-    feather control without requiring the card image's original subject.
+  aesthetic: 'Blackletter calligraphy: the subject drawn with a broad-edged nib in textura strokes, vertical columns, broken curves and diamond terminals, like a gothic illuminated initial.'
+  subject_treatment: Keep the prompt subject recognizable and build its form out of broad-nib blackletter strokes and flourishes; the strokes read as letter-like pattern, never as readable words.
+  color_and_tone: Dense black ink on parchment beige with antique gold leaf and a touch of vermilion.
+  lighting_and_shadow: No modeled light; contrast comes from thick-thin stroke weight and burnished gold catching light.
+  texture_and_material: Crisp broad-nib strokes with sharp corners, hairline flourishes, vellum grain and slightly raised gilding.
+  camera_and_composition: Keep the requested view with tight vertical rhythm and ornamental flourishes filling the space.
+  atmosphere_and_mood: Solemn, gothic and ceremonial, like a page from a chained book.
+  rendering_and_quality: Precise pen-built strokes with consistent nib angle; no readable text.
+  key_features: broad-nib textura strokes; diamond terminals; hairline flourishes; gold leaf; vellum grain
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Calligraphy (Blackletter) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - brand logo
+  - franchise likeness
+  - printmaker holding a plate or print
+  - digital smooth gradient
+  - readable words
+  - rounded modern lettering
   - round
   - modern
   - official card scene
@@ -80,13 +44,16 @@ avoidRules:
   - random distress overlay
   - smooth vector replacement
   - wrong print process
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-079.webp
 attributes:
-  negativePrompt: >-
-    round, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text,
-    random distress overlay, smooth vector replacement, wrong print process
+  negativePrompt: readable text, brand logo, franchise likeness, printmaker holding a plate or print, digital smooth gradient, readable words, rounded modern lettering, round, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

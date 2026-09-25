@@ -3,7 +3,7 @@ id: SP04-066
 packId: pack_04
 name: Screenprint (Serigraph)
 category: 5. Ink And Print
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,64 +12,24 @@ tags:
   - illustration-and-graphic-novel
   - ink-and-print
 visualDna:
-  aesthetic: >-
-    Screenprint (Serigraph) acts as a transferable illustration router: start from Pop-serigraph
-    style with repetition logic, flat-process color authority, and media-reproduction iconography,
-    Layer overlap, color misregistration, halftone rosette and ink and printmaking system built from
-    mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and
-    reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating
-    a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Layered flat-shape construction with screen-offset edges,
-    halftone contour cues, and repeat-grid compositional rhythm; preserve the requested subject
-    while rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure,
-    stamp incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the
-    requested identity, silhouette, pose, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Misaligned layers, pop-art separation, silkscreen offset; use color as ink
-    behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors,
-    spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent
-    control, and process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Halftone, mesh-screen texture, dot-pattern shadow; translate light into
-    hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat
-    spray contrast rather than photographic shading, so value structure supports the illustration
-    process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Mesh pattern, ink transfer, mark density, paper response, process artifacts, and
-    printmaking composition discipline; surface detail should show paper fiber, plate burr, block
-    grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or
-    aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Offset color, scale rhythm, edge hierarchy, spacing, and composition
-    rules specific to Screenprint (Serigraph); compose through print registration, border
-    discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or
-    edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style
-    work.
-  atmosphere_and_mood: >-
-    Keep the mood Bold, commercial, screenprint bazaar, poster-shop energy; derive mood from craft
-    pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony,
-    street-poster urgency, or disciplined ink control, letting the style alter interpretation
-    without demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Pop art, mass produced, factory repetition, consumer-culture critique; finish as a
-    credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text,
-    random distress overlay, or smooth vector replacement, clean denoised surfaces where
-    appropriate, and enough process evidence to make the style recognizable.
-  key_features: >-
-    Pop-serigraph style with repetition logic, flat-process color authority, and media-reproduction
-    iconography; Layer overlap, color misregistration, halftone rosette; Misaligned layers, pop-art
-    separation, silkscreen offset; Mesh pattern, ink transfer, mark density, paper response, process
-    artifacts, and printmaking composition discipline; Offset color, scale rhythm, edge hierarchy,
-    spacing, and composition rules specific to Screenprint (Serigraph)
-  creative_brief: >-
-    Apply Screenprint (Serigraph) as an illustration preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through Pop-serigraph style with repetition logic, flat-process color authority, and
-    media-reproduction iconography, Layer overlap, color misregistration, halftone rosette, Mesh
-    pattern, ink transfer, mark density, paper response, process artifacts, and printmaking
-    composition discipline without requiring the card image's original subject.
+  aesthetic: 'Screen print: flat opaque ink layers pushed through stencils, with slight misregistration, hard shape edges and occasional coarse halftone.'
+  subject_treatment: Keep the prompt subject, action, setting and camera, and redraw them entirely with this process's own physical mark, so the same subject would read differently in any neighbouring ink or print technique.
+  color_and_tone: Three to six flat spot colors in bold complementary pairs, overprints creating a third color where layers meet.
+  lighting_and_shadow: Light expressed as flat stepped color shapes, with coarse halftone as the only gradient.
+  texture_and_material: Thick flat ink with faint squeegee streaks, pinholes and misregistered edges showing slivers of paper.
+  camera_and_composition: Keep the requested view with poster-like graphic simplification of every form.
+  atmosphere_and_mood: Punchy, bright and loud, confident flat color.
+  rendering_and_quality: Clean stencil edges with deliberate misregistration, no brush texture and no photographic detail.
+  key_features: flat spot-color layers; misregistration gaps; overprint mixing; coarse halftone; squeegee streaks
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Screenprint (Serigraph) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - brand logo
+  - franchise likeness
+  - printmaker holding a plate or print
+  - digital smooth gradient
+  - soft painted gradients
+  - brush texture
   - gradient
   - painting
   - official card scene
@@ -84,13 +44,16 @@ avoidRules:
   - random distress overlay
   - smooth vector replacement
   - wrong print process
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-066.webp
 attributes:
-  negativePrompt: >-
-    gradient, painting, official card scene, fixed thumbnail subject, prompt replaced by sample
-    image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake
-    text, random distress overlay, smooth vector replacement, wrong print process
+  negativePrompt: readable text, brand logo, franchise likeness, printmaker holding a plate or print, digital smooth gradient, soft painted gradients, brush texture, gradient, painting, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

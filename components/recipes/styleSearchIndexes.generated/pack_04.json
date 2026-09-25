@@ -1262,7 +1262,8 @@
     },
     {
       "id": "SP04-063",
-      "name": "Hokusai Woodcut (Floating World)",
+      "name": "Floating World Woodblock",
+      "styleAnchors": ["Floating World Woodblock", "Hokusai Woodcut (Floating World)"],
       "ref": "pack_04/SP04-063.yaml",
       "packId": "pack_04",
       "packName": "Illustration & Graphic Novel",
@@ -1270,7 +1271,7 @@
       "categoryName": "5. Ink And Print",
       "tags": ["illustration-and-graphic-novel", "ink-and-print"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp04-063 hokusai woodcut (floating world) 5. ink and print ink & print pack_04 illustration & graphic novel ink-and-print illustration-and-graphic-novel ink-and-print"
+      "searchableText": "sp04-063 floating world woodblock hokusai woodcut (floating world) 5. ink and print ink & print pack_04 illustration & graphic novel ink-and-print illustration-and-graphic-novel ink-and-print"
     },
     {
       "id": "SP04-064",
@@ -1310,7 +1311,8 @@
     },
     {
       "id": "SP04-067",
-      "name": "Monotype",
+      "name": "Trace Monotype",
+      "styleAnchors": ["Trace Monotype", "Monotype"],
       "ref": "pack_04/SP04-067.yaml",
       "packId": "pack_04",
       "packName": "Illustration & Graphic Novel",
@@ -1318,7 +1320,7 @@
       "categoryName": "5. Ink And Print",
       "tags": ["illustration-and-graphic-novel", "ink-and-print"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp04-067 monotype 5. ink and print ink & print pack_04 illustration & graphic novel ink-and-print illustration-and-graphic-novel ink-and-print"
+      "searchableText": "sp04-067 trace monotype monotype 5. ink and print ink & print pack_04 illustration & graphic novel ink-and-print illustration-and-graphic-novel ink-and-print"
     },
     {
       "id": "SP04-068",
@@ -1334,7 +1336,8 @@
     },
     {
       "id": "SP04-069",
-      "name": "Rubber Stamp",
+      "name": "Carved Eraser Stamp",
+      "styleAnchors": ["Carved Eraser Stamp", "Rubber Stamp"],
       "ref": "pack_04/SP04-069.yaml",
       "packId": "pack_04",
       "packName": "Illustration & Graphic Novel",
@@ -1342,11 +1345,12 @@
       "categoryName": "5. Ink And Print",
       "tags": ["illustration-and-graphic-novel", "ink-and-print"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp04-069 rubber stamp 5. ink and print ink & print pack_04 illustration & graphic novel ink-and-print illustration-and-graphic-novel ink-and-print"
+      "searchableText": "sp04-069 carved eraser stamp rubber stamp 5. ink and print ink & print pack_04 illustration & graphic novel ink-and-print illustration-and-graphic-novel ink-and-print"
     },
     {
       "id": "SP04-070",
-      "name": "Mezzotint",
+      "name": "Rocked-Plate Mezzotint",
+      "styleAnchors": ["Rocked-Plate Mezzotint", "Mezzotint"],
       "ref": "pack_04/SP04-070.yaml",
       "packId": "pack_04",
       "packName": "Illustration & Graphic Novel",
@@ -1354,11 +1358,12 @@
       "categoryName": "5. Ink And Print",
       "tags": ["illustration-and-graphic-novel", "ink-and-print"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp04-070 mezzotint 5. ink and print ink & print pack_04 illustration & graphic novel ink-and-print illustration-and-graphic-novel ink-and-print"
+      "searchableText": "sp04-070 rocked-plate mezzotint mezzotint 5. ink and print ink & print pack_04 illustration & graphic novel ink-and-print illustration-and-graphic-novel ink-and-print"
     },
     {
       "id": "SP04-071",
-      "name": "Aquatint",
+      "name": "Spit-Bite Aquatint",
+      "styleAnchors": ["Spit-Bite Aquatint", "Aquatint"],
       "ref": "pack_04/SP04-071.yaml",
       "packId": "pack_04",
       "packName": "Illustration & Graphic Novel",
@@ -1366,7 +1371,7 @@
       "categoryName": "5. Ink And Print",
       "tags": ["illustration-and-graphic-novel", "ink-and-print"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp04-071 aquatint 5. ink and print ink & print pack_04 illustration & graphic novel ink-and-print illustration-and-graphic-novel ink-and-print"
+      "searchableText": "sp04-071 spit-bite aquatint aquatint 5. ink and print ink & print pack_04 illustration & graphic novel ink-and-print illustration-and-graphic-novel ink-and-print"
     },
     {
       "id": "SP04-072",

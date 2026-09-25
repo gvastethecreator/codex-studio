@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP04-063
 packId: pack_04
-name: Hokusai Woodcut (Floating World)
+name: Floating World Woodblock
 category: 5. Ink And Print
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,67 +12,26 @@ tags:
   - illustration-and-graphic-novel
   - ink-and-print
 visualDna:
-  aesthetic: >-
-    Hokusai Woodcut (Floating World) acts as a transferable illustration router: start from
-    Classical ukiyo-e woodblock seascape language with rhythmic wave massing, carved contour
-    elegance, and floating-world calm, Outline, gradient band, seal signature and ink and
-    printmaking system built from mark economy, matrix process, ink transfer, pressure artifacts,
-    paper absorption, and reproducible graphic structure, then apply the visual behavior to prompt X
-    instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Variable width, adapt the requested subject through ink
-    transfer, mark density, paper response, process artifacts, and printmaking composition
-    discipline while preserving identity; preserve the requested subject while rebuilding it through
-    carved lines, etched density, stipple fields, calligraphic pressure, stamp incompleteness,
-    graffiti stroke logic, or tattoo-flash simplification, keeping the requested identity,
-    silhouette, pose, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Flat gradients (Bokashi), Edo-period restraint, indigo-prussian depth; use
-    color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like
-    flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value
-    grouping, accent control, and process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Flat, no shadow, graphic elegance, woodblock tradition; translate light
-    into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or
-    flat spray contrast rather than photographic shading, so value structure supports the
-    illustration process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Wood grain, ink transfer, mark density, paper response, process artifacts, and
-    printmaking composition discipline; surface detail should show paper fiber, plate burr, block
-    grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or
-    aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Flattened perspective, scale rhythm, edge hierarchy, spacing, and
-    composition rules specific to Hokusai Woodcut (Floating World); compose through print
-    registration, border discipline, mark-direction rhythm, negative-space carving, tag flow,
-    ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual
-    hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Nature, calm, ukiyo-e transience, seasonal reverence; derive mood from craft
-    pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony,
-    street-poster urgency, or disciplined ink control, letting the style alter interpretation
-    without demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Traditional woodblock print fidelity emphasizing carved-line discipline, restrained
-    elegance, and repeatable impression clarity; finish as a credible ink or print artifact with
-    exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth
-    vector replacement, clean denoised surfaces where appropriate, and enough process evidence to
-    make the style recognizable.
-  key_features: >-
-    Classical ukiyo-e woodblock seascape language with rhythmic wave massing, carved contour
-    elegance, and floating-world calm; Outline, gradient band, seal signature; Flat gradients
-    (Bokashi), Edo-period restraint, indigo-prussian depth; Wood grain, ink transfer, mark density,
-    paper response, process artifacts, and printmaking composition discipline; Flattened
-    perspective, scale rhythm, edge hierarchy, spacing, and composition rules specific to Hokusai
-    Woodcut (Floating World)
-  creative_brief: >-
-    Apply Hokusai Woodcut (Floating World) as an illustration preset over prompt X: preserve the
-    user's requested subject, then route mark-making, palette, surface, composition, mood, and final
-    craft through Classical ukiyo-e woodblock seascape language with rhythmic wave massing, carved
-    contour elegance, and floating-world calm, Outline, gradient band, seal signature, Wood grain,
-    ink transfer, mark density, paper response, process artifacts, and printmaking composition
-    discipline without requiring the card image's original subject.
+  aesthetic: 'Japanese ukiyo-e color woodblock print: key-block outlines in sumi ink, flat colors from separate blocks and bokashi gradients wiped onto the block.'
+  subject_treatment: Keep the prompt subject, action, setting and camera, and redraw them entirely with this process's own physical mark, so the same subject would read differently in any neighbouring ink or print technique.
+  color_and_tone: Prussian blue, indigo, soft vermilion, ochre and pale pink on mellow cream paper, with bokashi gradients in skies and water.
+  lighting_and_shadow: No cast shadows; form carried by outline and flat color, time of day told by the gradient sky.
+  texture_and_material: Visible wood grain in flat areas, crisp carved key lines, slight registration shifts and baren-rubbed pigment mottling.
+  camera_and_composition: Keep the requested view with flattened layered depth, a high horizon or a bold cropped foreground.
+  atmosphere_and_mood: Calm, rhythmic and seasonal, a moment of passing weather.
+  rendering_and_quality: Flat printed color and carved line with no Western shading; any cartouche or seal area left blank.
+  key_features: sumi key-block outline; flat block colors; bokashi gradients; visible wood grain; Prussian blue and indigo
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Floating World Woodblock as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - brand logo
+  - franchise likeness
+  - printmaker holding a plate or print
+  - digital smooth gradient
+  - copy of a famous wave print
+  - readable kanji
+  - seal text
+  - 3d shading
   - western
   - 3d
   - official card scene
@@ -87,13 +46,16 @@ avoidRules:
   - random distress overlay
   - smooth vector replacement
   - wrong print process
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-063.webp
 attributes:
-  negativePrompt: >-
-    western, 3d, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text,
-    random distress overlay, smooth vector replacement, wrong print process
+  negativePrompt: readable text, brand logo, franchise likeness, printmaker holding a plate or print, digital smooth gradient, copy of a famous wave print, readable kanji, seal text, 3d shading, western, 3d, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
@@ -107,3 +69,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Floating World Woodblock
+styleAnchors:
+  - Floating World Woodblock
+  - Hokusai Woodcut (Floating World)

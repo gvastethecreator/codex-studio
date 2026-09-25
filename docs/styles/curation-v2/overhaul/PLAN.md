@@ -77,6 +77,7 @@ Pack order, skipping pack_12 and pack_17: pack_01 → pack_24, then pack_12, pac
 | pack_04::2. Children's Illustration          | done  | done | done   | 6 (SP04-107…112)  | pending (local)     | see git log        |
 | pack_04::3. Editorial And Poster             | done  | done | done   | 3 (SP04-113…115)  | pending (local)     | see git log        |
 | pack_04::4. Concept Art                      | done  | done | done   | 0 (already 29)    | pending (local)     | see git log        |
+| pack_04::5. Ink And Print                    | done  | done | done   | 0 (already 20)    | pending (local)     | see git log        |
 
 ## Open risks
 
