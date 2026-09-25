@@ -373,7 +373,7 @@ const spec: Spec = {
       },
       avoid: [...AVOID, 'explicit nudity'],
       briefs: [
-        'Tasteful boudoir portrait of a confident adult woman with silver-streaked hair reclining on a canopy bed draped in burgundy velvet, a silk robe off one shoulder, warm lamp light, deep shadows. No nudity, text or logo.',
+        "Tasteful boudoir-style portrait of a confident adult woman with silver-streaked hair, fully dressed in a long burgundy velvet dressing gown tied at the waist, seated sideways in a deep armchair by a tall curtained window at dusk; warm lamp light along her face and hands, deep wine-colored shadows, rumpled silk throw in the foreground. Intimate, elegant, no nudity, no text or logo.",
         'Tasteful boudoir portrait of an adult man in an open linen shirt sitting on the edge of a rumpled bed by a tall window at dusk, amber light along his shoulders, curtains in the foreground. No nudity, text or logo.',
         'Tasteful boudoir portrait of an adult woman in a black lace robe and long opera gloves standing at a candlelit vanity in a gothic bedroom, looking over her shoulder into the mirror. Warm dark tones. No nudity, text or logo.',
       ],

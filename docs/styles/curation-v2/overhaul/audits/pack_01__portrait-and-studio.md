@@ -37,6 +37,10 @@ Audited 2026-09-24 from the contact sheet of current cards (18 primaries + 3 var
 - 3 new briefs per preset with distinct, characterful adult subjects (falconer, bell-founder, ringmaster, jester booking photo, …); no subject repeated across presets.
 - New presets: SP01-088 Ring Flash Portrait, SP01-089 Painted Muslin Backdrop Portrait (category now 20).
 
-## Card review
+## Card review (2026-09-25, 60 cards, 3 per preset)
 
-Pending generation.
+Result: accepted. No model is repeated across presets, each technique reads at thumbnail size, and SP01-008 no longer shows a real person.
+
+- SP01-069 primary: first attempt blocked (stale lock from job 7d3e8ddc, `needs_review`, no asset); second attempt returned no image (job c24fbc80, likely moderation of "robe off one shoulder" / canopy bed). Brief rewritten as a fully dressed velvet dressing gown by a window; regenerated and accepted. Both locks moved to `.locks/*.reviewed.chatgpt.lock`.
+- Minor, accepted: SP01-080-02 (passport beekeeper) dropped the bees; SP01-003-01 taxidermist reads as a generic workshop.
+- Brief lesson for the cloud session: for boudoir or other sensual presets, describe fully dressed adults and let light and fabric carry the mood; ChatGPT HTTP silently refuses suggestive undress wording.

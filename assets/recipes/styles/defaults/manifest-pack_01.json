@@ -1026,13 +1026,13 @@
     "packName": "Photography & Realism",
     "category": "1. Portrait And Studio",
     "file": "assets/recipes/styles/defaults/SP01-069.webp",
-    "jobId": "b6d8bac0-a8ab-4637-b37f-cee1a58e7fc3",
+    "jobId": "9cf1b312-e683-42e9-9e26-8c726c1272e3",
     "sourceAsset": "assets/recipes/styles/defaults/SP01-069.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T09:29:26.337Z"
+    "generatedAt": "2026-09-25T02:06:16.469Z"
   },
   {
     "presetId": "SP01-070",
