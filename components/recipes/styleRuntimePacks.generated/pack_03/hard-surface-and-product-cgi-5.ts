@@ -351,9 +351,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'single section plane; flat colored cut caps; exposed wall thickness; cavities with occlusion; untouched exterior half',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-111',
@@ -389,9 +386,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'chips on convex edges; grime in cavities; paint-primer-steel layers; rub-polished grip points; runoff streaks',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-112',
@@ -423,9 +417,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'polished bridges and gears; ruby jewel bearings; blued screws; striped and grained plate finishing; macro shallow depth',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-113',
@@ -456,9 +447,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Milled Design Clay Buck as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'tan styling clay; silver foil half; black tape design lines; rake and slick marks; overhead light panels',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -495,9 +483,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'transparent tinted housing; visible circuit boards; molded screw bosses and ribs; colored wires; backlit shell edges',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-115',
@@ -533,9 +518,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'folded sheet with bend radii; rows of domed rivets; lap seams; oil-can dents; galvanized spangle',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-116',
@@ -566,9 +548,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies CNC Billet-Machined Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'solid billet aluminum; toolpath scallops; pocketed recesses; deburred chamfers; anodized accents',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -606,9 +585,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'teardrop rounded casing; baked pastel enamel; triple chrome speed lines; phenolic knobs; long curved highlights',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-118',
@@ -643,9 +619,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Generative-Design Lattice Part as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'bone-like load-path struts; gyroid infill; sintered titanium finish; layer lines; machined contact faces',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

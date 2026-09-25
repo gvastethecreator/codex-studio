@@ -45,12 +45,10 @@ avoidRules:
   - UI overlay
   - real person likeness
   - prompt literal card reuse
-assets: {}
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-128.webp
 attributes:
   negativePrompt: forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, painted metal armor, extra insect legs, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
-  previewStatus: pending
-  ui:
-    previewStatus: pending
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
@@ -66,5 +64,5 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true
   domain: insect chitin surfacing

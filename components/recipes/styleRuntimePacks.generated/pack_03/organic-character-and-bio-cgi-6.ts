@@ -236,9 +236,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'layered subsurface skin; strand hair and lashes; refractive wet eyes; pores and vellus hair; red light bleed in thin skin',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-120',
@@ -275,9 +272,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'painted-in highlights and shadows; chunky proportions; visible brush strokes in textures; diffuse-only shading; bright edge highlights',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-121',
@@ -309,9 +303,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Écorché Muscle Study as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'flayed muscle groups; fiber striations; ivory tendons; single high sculpture key; clean museum finish',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -348,9 +339,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'articulated bones; iron armature rods; ivory to tea-brown bone; rib shadows from gallery spots; brass joint pins',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-123',
@@ -385,9 +373,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Differential Growth Folds as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'crinkled ruffled edges; edge-outgrows-center folds; deep fold occlusion; subsurface on thin edges; single organic hue',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -424,9 +409,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'algorithmic branching vines; taper from root to tip; tendrils gripping edges; dappled leaf shadows; growth toward light',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-125',
@@ -461,9 +443,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soft-Body Squash Simulation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'volume-preserving squash; bulges between obstacles; flattened contact patches; frozen wobble ripples; stretched highlights',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -500,9 +479,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'joint bone chain through the body; colored control curves by side; semi-transparent skin; even light; requested pose kept',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-127',
@@ -537,9 +513,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Garment Fit Strain Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'blue-to-red strain heatmap; tension lines from stress points; grey fit form or wearer; visible seams; no legend',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -576,9 +549,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'overlapping chitin plates; structural iridescence; flexible amber membranes; setae bristles; macro depth',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-129',
@@ -610,9 +580,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Motion-Capture Marker Suit as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'black marker suit; reflective marker balls; grey capture volume; ring-light strobes; taped proxy props',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -649,9 +616,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'multi-scale hide displacement; wet creases and dusty ridges; scar tissue; glancing light; long-lens scale',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-131',
@@ -686,9 +650,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Animated-Film Food Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'plump simplified food shapes; exaggerated glossy sauce; jewel-bright colors; colored shadows; backlit steam wisp',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

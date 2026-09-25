@@ -302,9 +302,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Phong plastic highlights; no global illumination; faceted polygons; checkerboard floor; low-res textures',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-082',
@@ -336,9 +333,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Classic Raytracer Mirror Demo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'perfect mirrors and glass; hard point-light shadows; infinite checkerboard; recursive reflections; no bounce light',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -374,9 +368,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'strong color bleeding; diffuse bounce only; matte surfaces; soft darkened corners; blotchy light maps',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-084',
@@ -408,9 +399,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grey Clay Lighting Test as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'all-grey matte materials; full global illumination; ambient occlusion in crevices; no textures; final shot framing',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -445,9 +433,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'heavy sample noise; bright fireflies; grainy shadows; unconverged glossy reflections; correct underlying light',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-086',
@@ -476,9 +461,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gaussian Splat Capture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'soft ellipsoid splats; floaters in the air; photoreal core; fuzzy silhouettes; baked captured lighting',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -511,9 +493,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Baked Lightmap Mobile Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'baked soft shadows; low-poly shapes; vertex color warmth; glow cards; lightmap seams',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -549,9 +528,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'chrome ball and grey ball; color chart; neutral studio HDRI; centered asset; material approval framing',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-089',
@@ -586,9 +562,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'CG in a real photographed plate; matched grain and lens; contact shadows on real ground; plate HDRI lighting; interaction',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-090',
@@ -621,9 +594,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Film-Emulated CG Beauty Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'CG graded as 35 mm film; organic grain; highlight halation; gate weave; lens vignette',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

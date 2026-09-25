@@ -381,9 +381,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'angle-dependent hue shift; oil-slick rainbow bands; dark base; glossy coat; grazing-angle color flop',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-092',
@@ -412,9 +409,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Molten Glowing Metal as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'blackbody glow gradient; cracked cooling crust; heat haze; drips and sparks; light cast on surroundings',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -446,9 +440,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'play-of-color flashes; milky or black opal body; polished cabochon surface; harlequin patches; glossy highlights',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-094',
@@ -477,9 +468,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gummy Candy Material as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'translucent gelatin; sugar dusting; saturated candy colors; colored shadows; soft squishy edges',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -516,9 +504,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'candy color flop; metallic flake sparkle; deep clear coat reflections; glittering under point lights; custom finish',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-096',
@@ -548,9 +533,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'frozen blue-smoke solid; blurred edges; Rayleigh scattering blue; faint amber transmission; no gloss',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-097',
@@ -579,9 +561,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Amber Resin Inclusion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'golden amber glow; suspended inclusions; flow lines; tiny bubbles; backlit warm transmission',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

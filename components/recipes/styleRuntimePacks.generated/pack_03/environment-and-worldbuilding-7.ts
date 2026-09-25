@@ -290,9 +290,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'dendritic erosion gullies; sediment fans; slope-masked colors; raking relief light; strata ridges',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-133',
@@ -327,9 +324,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Modular Dungeon Kit Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'snap-grid stone kit pieces; repeating arches; torch pools with hard falloff; trim-sheet bevels; moss in seams',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -366,9 +360,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Voronoi fracture chunks; fresh interior fracture faces; debris arc; dust volume bursts; large-to-small chunk grading',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-135',
@@ -403,9 +394,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Simulated Open Ocean Swell as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'long swells with choppy detail; wind-aligned foam streaks; translucent turquoise crests; spray mist; fresnel reflections',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -442,9 +430,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'inverted rock islands; dangling roots; waterfalls falling into mist; cloud sea below; stacked depth scale',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-137',
@@ -479,9 +464,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Instanced Foliage Overgrowth as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'mask-driven scatter by slope and occlusion; ivy along edges; moss on upward faces; leaf instances; roots lifting joints',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -518,9 +500,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'giant faceted crystal columns; refracted caustic flecks; small warm sources only; still reflecting water; huge scale',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-139',
@@ -555,9 +534,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Particle Blizzard Simulation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'wind-driven particle sheets; motion-blurred near streaks; drifts on windward faces; haloed point lights; steep visibility falloff',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -594,9 +570,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'giant sky planet or twin suns; double colored shadows; non-Earth palette; regolith dust; atmospheric haze layers',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-141',
@@ -627,9 +600,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Level Blockout Greybox as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'grey primitive volumes; orange prototype grid floors; one-meter measure tiles; default directional light; no detail',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -665,9 +635,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hand-Painted Texture Environment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'painted diffuse textures; brush strokes in stone and wood; painted edge highlights; chunky leaning silhouettes; low specular',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

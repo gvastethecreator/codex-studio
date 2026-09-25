@@ -95,9 +95,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'millions of tiny points; height or intensity coloring; scan shadows behind objects; concentric ground rings; black void',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-144',
@@ -128,9 +125,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Z-Depth Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'distance as brightness; white near to black far; hard steps at overlapping edges; no texture; no lighting',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -163,9 +157,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'axis-to-RGB color mapping; pastel lilac and mint fields; hard color changes at creases; no lighting; carved detail as tiny shifts',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-146',
@@ -197,9 +188,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'colored checker grid; stretched cells on strained areas; visible UV seams; orientation arrows only; simple viewport light',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-147',
@@ -230,9 +218,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Curvature Cavity Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'mid-grey flats; white convex edge lines; dark concave grooves; no light direction; sharp engraved detail',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -268,9 +253,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'one flat random color per object; no shading; crisp object edges; patchwork of many parts; black background',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-149',
@@ -304,9 +286,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Motion Vector Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'red horizontal and green vertical velocity; dark static areas; brightest fastest parts; no blur; opposing motions split by color',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -343,9 +322,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'rising refraction columns; wavy warped background lines; strongest near source; no color tint; no smoke',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-151',
@@ -380,9 +356,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Voxel Cross-Section Cutaway as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'flat clipping plane; voxelized section cap; one color per interior material; beauty-lit outer half; no explosion',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -419,9 +392,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'stacked parallel contour slices; dark gaps between layers; amber or green self-lit lines; no scanlines; no projector beam',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-153',
@@ -452,9 +422,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Unlit Albedo Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'base color only; no shadows or highlights; flat merged shapes; full texture detail; matte gloss',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -491,9 +458,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'repeating distance rings; orange outside and blue inside; white zero-surface line; smooth-minimum blends; raymarched forms',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-155',
@@ -528,9 +492,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Overdraw Accumulation View as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'additive layer counting; navy to orange to white ramp; hidden back faces visible; hot particle stacks; no lighting',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -567,9 +528,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'fresnel-bright dome rim; hexagon cell tiling; impact ripple rings; single energy hue; subject clear behind the shell',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-157',
@@ -600,9 +558,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Noise Dissolve Edge Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'noise-driven holes; thin emissive edge band; ember particles off the edge; one-direction dissolve front; background through holes',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -639,9 +594,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'expanding ring of light; edge lines lit inside the band; dim desaturated scene; sharp leading edge; soft trailing fade',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-159',
@@ -677,9 +629,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'lines from depth and normal jumps; heavier silhouette lines; white fill; no shading; no mesh triangles',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-160',
@@ -714,9 +663,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tonal Art Map Hatching Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'stacked hatch texture layers; tone by stroke density; strokes follow surface UVs; one directional light; clean silhouettes',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

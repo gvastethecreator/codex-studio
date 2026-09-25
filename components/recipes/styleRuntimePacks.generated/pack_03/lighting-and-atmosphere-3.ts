@@ -250,9 +250,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'emissive shapes as only light; colored glossy reflections; soft long shadows; dark surfaces; bloom',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-099',
@@ -287,9 +284,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'scalloped light pools; repeating fixture rhythm; warm color temperature; grazing wall texture; crisp pool edges',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-100',
@@ -323,9 +317,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'sun-angle sky gradients; aerial perspective haze; directional sun with sky dome; colored long shadows; soft sun disk',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-101',
@@ -357,9 +348,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'silver-lined cloud edges; dark cores; cloud shadows on the ground; sun through gaps; billowing detail',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-102',
@@ -390,9 +378,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gobo Pattern Shadows as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'cut-out pattern shadows; spotlight cookie; pattern wrapping forms; theatrical dark ambient; focusable edges',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -426,9 +411,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'red, green and blue lights; cyan-magenta-yellow shadows; white neutral lit areas; fanned shadows; additive mixing',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-104',
@@ -455,9 +437,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'two or three light bands; saturated terminator line; hard transitions; single key; graphic 3D forms',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-105',
@@ -483,9 +462,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Overcast Dome Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'uniform white sky dome; no directional shadows; soft contact darkening; low contrast; even detail',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -517,9 +493,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hard Noon Sun as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'sun directly overhead; short black pooled shadows; bleached tops; deep blue sky; no fill',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -553,9 +526,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stadium Floodlight Multi-Shadow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'several crossed shadows per object; high corner lights; cool white glare; bright even ground; night sky',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -592,9 +562,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'green and violet aurora curtains; colored ambient on snow; nearly shadowless; stars; reflections on ice',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP03-109',
@@ -623,9 +590,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Eclipse Corona Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'black sun with white corona; indigo daytime sky; 360-degree horizon glow; dim flat light; eerie mood',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];
