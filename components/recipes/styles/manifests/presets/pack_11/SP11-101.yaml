@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP11-101
+packId: pack_11
+name: Retro Aspic Cookbook
+styleAnchors:
+  - Retro Aspic Cookbook
+  - vintage cookbook photography
+  - gelatin mold
+displayName: Retro Aspic Cookbook
+category: 4. Food And Drink
+domain: vintage cookbook photography
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - food-and-drink
+  - retro
+  - cookbook
+  - food
+visualDna:
+  aesthetic: 'Retro cookbook: overlit 1960s-70s food photos with gelatin molds, aspics and garish garnishes.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — set in a wobbly gelatin mold or aspic with suspended ingredients and garish garnishes."
+  color_and_tone: Oversaturated oranges, greens and pinks with yellowed print, used consistently across subject and background.
+  lighting_and_shadow: Flat flash light, expressed through the style rather than photographic lighting.
+  texture_and_material: Wobbly gelatin, printed grain and faded color, visible at card size as the signature of the style.
+  camera_and_composition: Tabletop framing with dated tablecloth, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Kitschy, strange, nostalgic and funny, driven by the construction, color and rhythm.
+  rendering_and_quality: Faded vintage print photograph, with clean, deliberate marks and no accidental noise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Retro Aspic Cookbook as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: gelatin mold; suspended items; flash; faded print
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - brand packaging
+  - restaurant logo
+  - unappetizing grey food
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_11
+  packName: Miscellaneous & Fun
+  categoryId: food-and-drink
+  categoryName: 4. Food And Drink
+  tags:
+    - miscellaneous-and-fun
+    - food-and-drink
+    - retro
+    - cookbook
+    - food
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: vintage cookbook photography

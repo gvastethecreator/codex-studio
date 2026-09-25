@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP11-047
 packId: pack_11
-name: Candy Land
+name: Confectionery Wonderland
 category: 4. Food And Drink
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,64 +12,25 @@ tags:
   - miscellaneous-and-fun
   - food-and-drink
 visualDna:
-  aesthetic: >-
-    Candy Land operates as a portable source-router layer: combine Confectionery material fantasy,
-    edible-color systems, sugar-gloss transformation, gumdrop whimsy with culinary presentation
-    logic with edible surface behavior, plating structure, gloss, freshness, and commercial appetite
-    cues, so the preset supplies visual behavior rather than a fixed card scene or literal sample.
-  subject_treatment: >-
-    Preserve the prompt's subject plus requested motion and context while letting forms plate,
-    glaze, slice, stack, melt, drizzle, arrange, chill, steam, or stylize through edible material
-    logic through Sugar coating, candy-cane stripes, lollipop-spiral, frosting-swirl, gumdrop-dome
-    profiles; identity stays readable through construction grammar, proportion, edge logic, and
-    detail scale as this preset is applied.
-  color_and_tone: >-
-    Map color through appetite-driven hues, ingredient contrast, caramelization, freshness accents,
-    creamy highlights, and controlled richness; keep hue roles intentional, value separation clear,
-    and palette behavior attached to the subject's forms instead of pasted decoration.
-  lighting_and_shadow: >-
-    Use Bright, sparkly, sugar-crystal glitter, fairy-light twinkle, gumdrop-glow backlight plus
-    editorial food lighting with glossy highlights, soft appetite shadows, condensation sparkle, and
-    texture reveal as the light-response contract, with readable hierarchy, controlled contact
-    detail, and no lighting choice that erases the user's requested content.
-  texture_and_material: >-
-    Render Sugar crystals, gummy, icing-smooth, fondant-mat, hard-candy gloss, chocolate-shell snap,
-    sprinkle-crunch plus sauce viscosity, crumb structure, gelatin shine, raw sheen, baked crust,
-    ice, foam, steam, and surface freshness; surface scale, residue, gloss, grain, fiber, pores,
-    edges, or signal artifacts must remain coherent across figures, objects, and environments.
-  camera_and_composition: >-
-    Compose with Edible material substitution, lollipop spiral geometry, gingerbread block
-    proportions, frosting drips, candy-cane striping plus plating geometry, negative space,
-    ingredient rhythm, commercial clarity, and edible detail scale as reusable framing grammar,
-    allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without
-    one required layout.
-  atmosphere_and_mood: >-
-    Carry mood through freshness, indulgence, premium service, comfort, celebration, appetite, and
-    sensory immediacy; the emotional tone should feel specific to Candy Land while still obeying the
-    prompt's subject and context.
-  rendering_and_quality: >-
-    Finish with appetizing material truth, precise gloss control, clean detail priority, and no
-    messy cafeteria drift; prioritize clean style recognition, prompt preservation, controlled
-    detail, and a finished image with no watermark, fake text, or accidental UI.
-  key_features: >-
-    Confectionery material fantasy, edible-color systems, sugar-gloss transformation, gumdrop
-    whimsy; Sugar coating, candy-cane stripes, lollipop-spiral, frosting-swirl, gumdrop-dome
-    profiles; Sugar crystals, gummy, icing-smooth, fondant-mat, hard-candy gloss, chocolate-shell
-    snap, sprinkle-crunch; Bright, sparkly, sugar-crystal glitter, fairy-light twinkle, gumdrop-glow
-    backlight; Edible material substitution, lollipop spiral geometry, gingerbread block
-    proportions, frosting drips, candy-cane striping
-  creative_brief: >-
-    Use Candy Land after prompt X as a transferable style layer: prompt X supplies subject, action,
-    and setting, while the preset supplies Confectionery material fantasy, edible-color systems,
-    sugar-gloss transformation, gumdrop whimsy, Sugar coating, candy-cane stripes, lollipop-spiral,
-    frosting-swirl, gumdrop-dome profiles, Sugar crystals, gummy, icing-smooth, fondant-mat,
-    hard-candy gloss, chocolate-shell snap, sprinkle-crunch, Bright, sparkly, sugar-crystal glitter,
-    fairy-light twinkle, gumdrop-glow backlight, Edible material substitution, lollipop spiral
-    geometry, gingerbread block proportions, frosting drips, candy-cane striping plus portion
-    geometry, garnish rhythm, sauce motion, melt behavior, crumb, steam, condensation, and service
-    polish, palette behavior, light response, material treatment, and finish discipline without
-    requiring one specimen, prop bundle, product still, or card composition.
+  aesthetic: 'Confectionery wonderland: everything made of candy, sugar glass, gumdrops, frosting and striped sugar sticks.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — built entirely from candy: gumdrops, lollipops, sugar glass, frosting, marshmallows and striped sugar sticks."
+  color_and_tone: Saturated candy colors with pastel and glossy highlights, used consistently across subject and background.
+  lighting_and_shadow: Bright sugary light with glossy sparkle, expressed through the style rather than photographic lighting.
+  texture_and_material: Sugar glass, sprinkles, frosting and gummy translucency, visible at card size as the signature of the style.
+  camera_and_composition: Wide whimsical view full of candy detail, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Sweet, whimsical, playful and a little uncanny, driven by the construction, color and rhythm.
+  rendering_and_quality: Glossy candy render or photo, with clean, deliberate marks and no accidental noise.
+  key_features: candy construction; sugar glass; frosting; gumdrops
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Confectionery Wonderland as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - brand packaging
+  - restaurant logo
+  - unappetizing grey food
   - healthy
   - savory
   - messy cafeteria
@@ -80,13 +41,16 @@ avoidRules:
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-047.webp
 attributes:
-  negativePrompt: >-
-    healthy, savory, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen,
-    literal card scene, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, healthy, savory, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
@@ -100,3 +64,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Confectionery Wonderland
+styleAnchors:
+  - Confectionery Wonderland

@@ -3,7 +3,7 @@ id: SP11-049
 packId: pack_11
 name: Fast Food Commercial
 category: 4. Food And Drink
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,64 +12,25 @@ tags:
   - miscellaneous-and-fun
   - food-and-drink
 visualDna:
-  aesthetic: >-
-    Fast Food Commercial operates as a portable source-router layer: combine Quick-service
-    commercial gloss, crave-engineering, food-styling trickery, high-impact appetizing polish with
-    culinary presentation logic with edible surface behavior, plating structure, gloss, freshness,
-    and commercial appetite cues, so the preset supplies visual behavior rather than a fixed card
-    scene or literal sample.
-  subject_treatment: >-
-    Preserve the prompt's subject plus requested motion and context while letting forms plate,
-    glaze, slice, stack, melt, drizzle, arrange, chill, steam, or stylize through edible material
-    logic through Perfect stack layers, rounded lead-form contours, ruffled edges, sear-like texture
-    rings, draped melt curves; identity stays readable through construction grammar, proportion,
-    edge logic, and detail scale as this preset is applied.
-  color_and_tone: >-
-    Map color through appetite-driven hues, ingredient contrast, caramelization, freshness accents,
-    creamy highlights, and controlled richness; keep hue roles intentional, value separation clear,
-    and palette behavior attached to the subject's forms instead of pasted decoration.
-  lighting_and_shadow: >-
-    Use High key studio, backlight-through-bun, rim-light on cheese, oil-sheen catch, steam-backlit
-    glow plus editorial food lighting with glossy highlights, soft appetite shadows, condensation
-    sparkle, and texture reveal as the light-response contract, with readable hierarchy, controlled
-    contact detail, and no lighting choice that erases the user's requested content.
-  texture_and_material: >-
-    Render Melting cheese, water drops, sesame-seed nub, grill-mark char, condensation-bead,
-    oil-slick gloss plus sauce viscosity, crumb structure, gelatin shine, raw sheen, baked crust,
-    ice, foam, steam, and surface freshness; surface scale, residue, gloss, grain, fiber, pores,
-    edges, or signal artifacts must remain coherent across figures, objects, and environments.
-  camera_and_composition: >-
-    Compose with Flying ingredients, levitation-burst, ingredient-explosion, suspended-motion,
-    mid-air assembly plus plating geometry, negative space, ingredient rhythm, commercial clarity,
-    and edible detail scale as reusable framing grammar, allowing cards, portraits, objects, scenes,
-    and abstract prompts to inherit the style without one required layout.
-  atmosphere_and_mood: >-
-    Carry mood through freshness, indulgence, premium service, comfort, celebration, appetite, and
-    sensory immediacy; the emotional tone should feel specific to Fast Food Commercial while still
-    obeying the prompt's subject and context.
-  rendering_and_quality: >-
-    Finish with appetizing material truth, precise gloss control, clean detail priority, and no
-    messy cafeteria drift; prioritize clean style recognition, prompt preservation, controlled
-    detail, and a finished image with no watermark, fake text, or accidental UI.
-  key_features: >-
-    Quick-service commercial gloss, crave-engineering, food-styling trickery, high-impact appetizing
-    polish; Perfect stack layers, rounded lead-form contours, ruffled edges, sear-like texture
-    rings, draped melt curves; Melting cheese, water drops, sesame-seed nub, grill-mark char,
-    condensation-bead, oil-slick gloss; High key studio, backlight-through-bun, rim-light on cheese,
-    oil-sheen catch, steam-backlit glow; Flying ingredients, levitation-burst, ingredient-explosion,
-    suspended-motion, mid-air assembly
-  creative_brief: >-
-    Use Fast Food Commercial after prompt X as a transferable style layer: prompt X supplies
-    subject, action, and setting, while the preset supplies Quick-service commercial gloss,
-    crave-engineering, food-styling trickery, high-impact appetizing polish, Perfect stack layers,
-    rounded lead-form contours, ruffled edges, sear-like texture rings, draped melt curves, Melting
-    cheese, water drops, sesame-seed nub, grill-mark char, condensation-bead, oil-slick gloss, High
-    key studio, backlight-through-bun, rim-light on cheese, oil-sheen catch, steam-backlit glow,
-    Flying ingredients, levitation-burst, ingredient-explosion, suspended-motion, mid-air assembly
-    plus portion geometry, garnish rhythm, sauce motion, melt behavior, crumb, steam, condensation,
-    and service polish, palette behavior, light response, material treatment, and finish discipline
-    without requiring one specimen, prop bundle, product still, or card composition.
+  aesthetic: 'Fast-food commercial: impossibly perfect burgers and fries with crave-engineered gloss and flying ingredients.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — styled like a fast-food ad: stacked layers, glossy sauces, sesame seeds, flying ingredients and perfect proportions."
+  color_and_tone: Warm reds, yellows and golden browns, used consistently across subject and background.
+  lighting_and_shadow: Hard commercial light with rim highlights, expressed through the style rather than photographic lighting.
+  texture_and_material: Glossy buns, melting cheese, crisp lettuce and fries, visible at card size as the signature of the style.
+  camera_and_composition: Heroic low angle against a clean colored backdrop, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Craving, loud, energetic and bold, driven by the construction, color and rhythm.
+  rendering_and_quality: Commercial food photography with styling tricks, with clean, deliberate marks and no accidental noise.
+  key_features: perfect stack; flying ingredients; gloss; hero angle
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fast Food Commercial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - brand packaging
+  - restaurant logo
+  - unappetizing grey food
   - real
   - soggy
   - messy cafeteria
@@ -80,13 +41,16 @@ avoidRules:
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-049.webp
 attributes:
-  negativePrompt: >-
-    real, soggy, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal
-    card scene, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, real, soggy, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

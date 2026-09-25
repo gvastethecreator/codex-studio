@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP11-099
+packId: pack_11
+name: Medieval Feast Banquet
+styleAnchors:
+  - Medieval Feast Banquet
+  - medieval banquet table
+  - roasts
+displayName: Medieval Feast Banquet
+category: 4. Food And Drink
+domain: medieval banquet table
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - food-and-drink
+  - feast
+  - medieval
+  - food
+visualDna:
+  aesthetic: 'Medieval feast: long candlelit tables heavy with roasts, bread, fruit, pies and goblets.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — served on a long banquet table: roasts, whole birds, bread, fruit, pies, cheeses, goblets and candles."
+  color_and_tone: Deep reds, golden browns, pewter and candle gold, used consistently across subject and background.
+  lighting_and_shadow: Candlelight and hearth firelight, expressed through the style rather than photographic lighting.
+  texture_and_material: Roast skin, crusty bread, pewter, wax and wood, visible at card size as the signature of the style.
+  camera_and_composition: Long table view down the feast, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Abundant, rich, rowdy and warm, driven by the construction, color and rhythm.
+  rendering_and_quality: Painterly or photoreal feast still life, with clean, deliberate marks and no accidental noise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Medieval Feast Banquet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: roasts; pewter goblets; candles; long table
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - brand packaging
+  - restaurant logo
+  - unappetizing grey food
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_11
+  packName: Miscellaneous & Fun
+  categoryId: food-and-drink
+  categoryName: 4. Food And Drink
+  tags:
+    - miscellaneous-and-fun
+    - food-and-drink
+    - feast
+    - medieval
+    - food
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: medieval banquet table

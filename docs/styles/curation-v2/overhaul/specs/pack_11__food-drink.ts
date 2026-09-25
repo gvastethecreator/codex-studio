@@ -1,0 +1,458 @@
+import type { Create, Spec } from '../tools/apply';
+import { STYLE_AVOID as AVOID, style } from './_style';
+
+// Food and drink: these recipes intentionally make food the subject. A prompt that names a dish is
+// shot with the preset's food treatment; a prompt that names a creature or object is built,
+// plated or served as food. Brand names (Michelin, Candy Land) are replaced by generic ones.
+const FOOD_AVOID = [...AVOID, 'brand packaging', 'restaurant logo', 'unappetizing grey food'];
+
+const food = (how: string) =>
+  `turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — ${how}`;
+
+const spec: Spec = {
+  pack: 'pack_11',
+  category: '4. Food And Drink',
+  updates: {
+    'SP11-032': {
+      dna: style(
+        'Latte art: a picture poured and etched into espresso microfoam, seen from above in a ceramic cup.',
+        food(
+          'poured and etched into microfoam on crema, with soft white lines, pour curves and etched details in a round cup.',
+        ),
+        'Creamy white foam on caramel-brown crema, cup color as accent.',
+        'Soft cafe window light with a gentle foam sheen.',
+        'Velvety microfoam, crema speckle and glazed ceramic.',
+        'Top-down view of the cup with saucer and a spoon at the edge.',
+        'Cozy, crafted, fleeting and warm.',
+        'Photoreal cafe photography.',
+        'microfoam drawing; crema; top-down cup; pour curves',
+      ),
+      avoid: FOOD_AVOID,
+      briefs: [
+        'Top-down photograph of latte art of a coiled dragon etched into microfoam in a black ceramic cup, crema-brown shading along its scales, a tiny foam flame, saucer and silver spoon on a dark wooden table. No text or logo.',
+        'Latte art of a howling wolf under a foam moon, poured and etched, in a speckled stoneware cup, rain-grey window light. No text or logo.',
+        'Latte art of a hooded reaper with a scythe, etched into foam in a white cup, a few crema bubbles breaking the robe, candle beside the saucer. No text or logo.',
+      ],
+    },
+    'SP11-046': {
+      name: 'Fine-Dining Plating Editorial',
+      dna: style(
+        'Fine-dining plating editorial: tiny precise compositions on large plates, negative space and tweezered garnish.',
+        food(
+          'plated as a small precise composition on a wide plate: sauce swooshes, dots, microgreens, edible flowers and one sculptural centerpiece.',
+        ),
+        'Restrained palette with one vivid accent on white or matte black ceramic.',
+        'Soft directional editorial light with gentle shadow.',
+        'Glossy sauce, crisp tuiles, microgreens and matte ceramic.',
+        'Overhead or low three-quarter view with lots of empty plate.',
+        'Refined, precise, calm and luxurious.',
+        'High-end editorial food photography.',
+        'negative space; tweezered garnish; sauce dots; wide plate',
+      ),
+      avoid: FOOD_AVOID,
+      briefs: [
+        'Fine-dining editorial photograph of a tiny dragon sculpted from beet and blackberry gel resting on a nest of crisp tuile flames, blood-red sauce dots and edible gold on a wide matte black plate, lots of negative space. No text or logo.',
+        'Fine-dining plate composed as a miniature castle ruin: charred leek towers, a parsnip gatehouse, a moat of smoked amber broth and microgreen moss, one edible violet as a banner, overhead editorial light on grey stoneware. No text or logo.',
+        'Fine-dining dessert of a black sesame mousse skull with a cracked isomalt crown, a single violet blackcurrant streak and tiny thyme flowers on a vast white porcelain plate, low three-quarter editorial view. No text or logo.',
+      ],
+    },
+    'SP11-047': {
+      name: 'Confectionery Wonderland',
+      dna: style(
+        'Confectionery wonderland: everything made of candy, sugar glass, gumdrops, frosting and striped sugar sticks.',
+        food(
+          'built entirely from candy: gumdrops, lollipops, sugar glass, frosting, marshmallows and striped sugar sticks.',
+        ),
+        'Saturated candy colors with pastel and glossy highlights.',
+        'Bright sugary light with glossy sparkle.',
+        'Sugar glass, sprinkles, frosting and gummy translucency.',
+        'Wide whimsical view full of candy detail.',
+        'Sweet, whimsical, playful and a little uncanny.',
+        'Glossy candy render or photo.',
+        'candy construction; sugar glass; frosting; gumdrops',
+      ),
+      avoid: FOOD_AVOID,
+      briefs: [
+        'Confectionery wonderland castle with gingerbread walls, sugar-glass windows glowing, frosting snow on the towers, a licorice drawbridge and a gummy dragon guarding the gate under a cotton-candy dusk sky. No text or logo.',
+        'Candy witch cottage in a dark forest of black lollipop trees, licorice-shingle roof, glowing red sugar-glass windows, a caramel cauldron bubbling by the door and a gummy black cat on the step, dusky violet sky. No text or logo.',
+        'Knight in translucent hard-candy armor riding a marshmallow horse through a frosting snowfield, a striped sugar-stick lance, gumdrop pines and sugar-glass icicles glinting in bright light. No text or logo.',
+      ],
+    },
+    'SP11-048': {
+      dna: style(
+        'Omakase sushi: precise slices of fish and rice arranged on dark wood or slate with restraint.',
+        food(
+          'built from precisely cut sashimi, nigiri, nori, roe and garnish, arranged with calm spacing.',
+        ),
+        'Pink, coral, white rice, nori black and green leaf accents.',
+        'Soft counter light with gentle gloss on the fish.',
+        'Glossy raw fish, rice grains, nori and wood grain.',
+        'Low three-quarter view along the counter.',
+        'Calm, precise, fresh and respectful.',
+        'Photoreal food photography.',
+        'precise slices; nigiri; nori; dark wood counter',
+      ),
+      avoid: FOOD_AVOID,
+      briefs: [
+        'Omakase sushi platter where a coiled sea dragon is composed from overlapping salmon and tuna slices, roe for its eyes, nori fins, on a long dark cedar board with shiso leaves, soft counter light. No text or logo.',
+        'Sushi arrangement composed as an ornate war helmet: layered tuna and yellowtail plates, nori crest, salmon-roe rivets and a rice brim, on black slate with wasabi and pickled ginger, soft counter light. No text or logo.',
+        'Row of seven nigiri on a cedar counter at night, each fish slice brushed with glossy sauce and topped with a tiny edible flower, the chef setting the last piece by hand, lantern light on the wood. No text or logo.',
+      ],
+    },
+    'SP11-049': {
+      dna: style(
+        'Fast-food commercial: impossibly perfect burgers and fries with crave-engineered gloss and flying ingredients.',
+        food(
+          'styled like a fast-food ad: stacked layers, glossy sauces, sesame seeds, flying ingredients and perfect proportions.',
+        ),
+        'Warm reds, yellows and golden browns.',
+        'Hard commercial light with rim highlights.',
+        'Glossy buns, melting cheese, crisp lettuce and fries.',
+        'Heroic low angle against a clean colored backdrop.',
+        'Craving, loud, energetic and bold.',
+        'Commercial food photography with styling tricks.',
+        'perfect stack; flying ingredients; gloss; hero angle',
+      ),
+      avoid: FOOD_AVOID,
+      briefs: [
+        'Fast-food commercial hero shot of a towering black-bun burger shaped like a dragon head, flame-grilled patties, cheese dripping like lava, sesame seeds and onion rings flying around it against a smoky red backdrop. No text or logo.',
+        'Fast-food commercial shot of a knight helmet built from crispy fried chicken with a plume of golden fries, exploding outward mid-air with sauce splashes and breadcrumbs on a bold yellow backdrop. No text or logo.',
+        'Fast-food commercial shot of a tall black cherry milkshake with a tiny whipped-cream ghost rising from the top, syrup dripping down the glass, sprinkles and a cherry flying, hard rim light on a red backdrop. No text or logo.',
+      ],
+    },
+    'SP11-050': {
+      dna: style(
+        'Cocktail macro: close refracting glass, ice, citrus and colored liquor with condensation.',
+        food(
+          'served as a cocktail in close-up: glassware, ice, garnish, smoke or foam, with the subject echoed in the drink.',
+        ),
+        'Jewel liquor colors against dark bar tones.',
+        'Backlight through the glass with rim glints.',
+        'Condensation, ice, citrus peel and glass refraction.',
+        'Macro framing at glass height.',
+        'Glamorous, nocturnal, cool and sensual.',
+        'Macro bar photography.',
+        'refracting glass; ice; garnish; condensation',
+      ),
+      avoid: FOOD_AVOID,
+      briefs: [
+        'Macro photograph of a smoking blood-red cocktail in a crystal coupe, a tiny sugar dragon perched on the rim, dry-ice mist rolling over a black marble bar, backlight glowing through the liquid. No text or logo.',
+        'Macro photograph of a black ice sphere carved like a skull floating in amber whisky in a heavy crystal tumbler, beads of condensation, an orange peel twist and a single candle behind the glass. No text or logo.',
+        'Violet potion-style cocktail in a round alchemy flask, shimmering liqueur swirling like a galaxy, a rosemary sprig smoking at the neck, backlit on a dark apothecary bar. No text or logo.',
+      ],
+    },
+    'SP11-051': {
+      dna: style(
+        'Bakery window: crusty loaves and laminated pastries in warm window light, flour dust and wooden trays.',
+        food('baked as bread or pastry: scored crust, laminated layers, glazes and flour dust.'),
+        'Golden browns, cream and warm wood.',
+        'Warm morning light through a shop window.',
+        'Crust cracks, crumb, flaky layers and flour.',
+        'Window display framing with trays and shelves.',
+        'Warm, homely, abundant and inviting.',
+        'Photoreal bakery photography.',
+        'scored crust; laminated pastry; flour dust; window light',
+      ),
+      avoid: FOOD_AVOID,
+      briefs: [
+        'Bakery window at dawn with a large braided bread shaped like a sleeping dragon, scored scales, egg-wash gloss and flour dust, surrounded by croissants and seeded loaves on wooden trays, warm morning light. No text or logo.',
+        'Bakery window for an autumn death festival: dark rye loaves scored as skulls, bone-shaped breadsticks, sugar-dusted crossbones and marigold petals on wooden trays, warm dusk light and flour dust. No text or logo.',
+        'Pastry case lined with golden crown-shaped brioches glazed in honey, pearl-sugar jewels on each point, flaky layers visible where one is torn open, warm morning light through the shop glass. No text or logo.',
+      ],
+    },
+    'SP11-052': {
+      dna: style(
+        'Fruit explosion: high-speed photo of fruit bursting with juice splashes and flying slices.',
+        food(
+          'made of or bursting with fruit: sliced halves, juice splashes and droplets frozen mid-air.',
+        ),
+        'Vivid fruit colors on a dark or clean backdrop.',
+        'High-speed strobe light freezing droplets.',
+        'Juice droplets, cut fruit flesh and seeds.',
+        'Centered burst with flying pieces.',
+        'Fresh, energetic, juicy and bright.',
+        'High-speed product photography.',
+        'juice splash; frozen droplets; sliced fruit',
+      ),
+      avoid: FOOD_AVOID,
+      briefs: [
+        'High-speed photograph of a pomegranate bursting into the shape of a dragon, red seeds and juice splashing as wings, frozen droplets against a black background, strobe light. No text or logo.',
+        'High-speed photograph of a blood orange exploding like a fireball, crimson juice and peel shards frozen mid-air, seeds scattered like sparks against a deep black background. No text or logo.',
+        'High-speed photograph of a watermelon carved into a grinning skull bursting open, pink juice and black seeds flying outward, green rind shards frozen in strobe light on a dark backdrop. No text or logo.',
+      ],
+    },
+    'SP11-053': {
+      dna: style(
+        'Chocolate flow: thick glossy molten chocolate pouring, ribbons and waves.',
+        food('formed or covered by molten chocolate: thick ribbons, pour waves and glossy drips.'),
+        'Dark, milk and white chocolate browns.',
+        'Soft studio light with glossy highlights.',
+        'Molten gloss, tempered sheen and cocoa dust.',
+        'Close product framing with flowing ribbons.',
+        'Indulgent, rich, sensual and slow.',
+        'Commercial food render or photo.',
+        'molten ribbons; glossy pour; cocoa dust',
+      ),
+      avoid: FOOD_AVOID,
+      briefs: [
+        'Molten dark chocolate pouring over a chocolate dragon sculpture, thick glossy ribbons running down its wings, cocoa dust in the air, soft studio highlights. No text or logo.',
+        'Molten chocolate river flowing through a cocoa-dusted canyon, a small dark chocolate boat riding the glossy waves and a white chocolate ghost rising from the pour, soft studio highlights. No text or logo.',
+        'Tempered dark chocolate skull wearing a crown of molten milk chocolate that drips slowly over its eye sockets, cocoa nibs scattered on a black slate, glossy highlights. No text or logo.',
+      ],
+    },
+    'SP11-054': {
+      dna: style(
+        'Bento box: compartmentalized lunch with cute character food made from rice, nori and vegetables.',
+        food(
+          'arranged in a bento box: rice shaped into characters, nori faces, vegetable details and neat compartments.',
+        ),
+        'Fresh greens, white rice, pink, yellow and nori black.',
+        'Bright soft daylight from above.',
+        'Rice grains, nori, egg, vegetables and lacquer box.',
+        'Top-down view of the box.',
+        'Cute, careful, cheerful and neat.',
+        'Photoreal food photography.',
+        'compartments; rice characters; nori faces',
+      ),
+      avoid: FOOD_AVOID,
+      briefs: [
+        'Top-down photograph of a character bento box: rice shaped into a little knight and a sleepy dragon, nori faces, carrot flames, broccoli trees and tamagoyaki castle blocks in neat compartments of a red lacquer box. No text or logo.',
+        'Top-down photograph of a harvest-night bento box: rice ghosts with nori faces, nori bats, a pumpkin croquette carved as a lantern, black sesame gravestones and cherry-tomato candles in neat compartments. No text or logo.',
+        'Top-down bento box featuring a black witch cat made of seaweed-tinted rice with a nori hat, riding a sausage broom across a tamagoyaki moon, broccoli forest and carrot stars. No text or logo.',
+      ],
+    },
+    'SP11-055': {
+      dna: style(
+        'Pizza melt: molten cheese pulls, charred crust and glistening toppings.',
+        food(
+          'made into or onto pizza: stretchy cheese pulls, charred crust, toppings and oil sheen.',
+        ),
+        'Warm reds, golden cheese, charred brown.',
+        'Warm oven glow.',
+        'Stretchy cheese, char and oil.',
+        'Close cheese-pull framing.',
+        'Craving, warm, casual and fun.',
+        'Commercial food photography.',
+        'cheese pull; charred crust; oil sheen',
+      ),
+      avoid: FOOD_AVOID,
+      briefs: [
+        'Close photograph of a slice lifted from a wood-fired pizza shaped like a dragon, long molten cheese pulls, pepperoni scales, charred crust, glowing oven behind. No text or logo.',
+        'Close photograph of a wood-fired pizza with a pepperoni jack-o-lantern face and black olive bats, one slice lifted with a long molten cheese pull, charred crust edge and oven glow. No text or logo.',
+        'Wood-fired pizza shaped like a castle seen from above, braided crust walls and towers, a moat of tomato sauce, basil trees and mozzarella snow melting under warm oven light. No text or logo.',
+      ],
+    },
+  },
+  creates: [
+    {
+      name: 'Medieval Feast Banquet',
+      domain: 'medieval banquet table',
+      tags: ['feast', 'medieval', 'food'],
+      dna: style(
+        'Medieval feast: long candlelit tables heavy with roasts, bread, fruit, pies and goblets.',
+        food(
+          'served on a long banquet table: roasts, whole birds, bread, fruit, pies, cheeses, goblets and candles.',
+        ),
+        'Deep reds, golden browns, pewter and candle gold.',
+        'Candlelight and hearth firelight.',
+        'Roast skin, crusty bread, pewter, wax and wood.',
+        'Long table view down the feast.',
+        'Abundant, rich, rowdy and warm.',
+        'Painterly or photoreal feast still life.',
+        'roasts; pewter goblets; candles; long table',
+      ),
+      avoid: FOOD_AVOID,
+      briefs: [
+        'Medieval feast banquet in a torchlit hall: a whole roast boar with an apple, pies, bread loaves, grapes, cheeses and pewter goblets along a long oak table, dripping candles and a dragon-shaped sugar centerpiece. No text or logo.',
+        'Close view of a medieval feast table after the guests have gone: knocked-over goblets spilling red wine, a half-carved roast, torn bread, a gnawed bone for a hound and candles guttering in a smoky hall. No text or logo.',
+        'Feast of a dark king in a black stone hall: a roast peacock with its tail fanned, black bread, blood-red wine in silver chalices, pomegranates and figs, lit by a wall of candles. No text or logo.',
+      ],
+    },
+    {
+      name: 'Night Market Street Food',
+      domain: 'street food at night',
+      tags: ['street-food', 'night-market', 'food'],
+      dna: style(
+        'Night market street food: steam, sizzling grills, paper lanterns and hands serving food.',
+        food(
+          'served from a night market stall: skewers, woks, steaming bowls, sizzling grills and paper containers.',
+        ),
+        'Warm lantern reds and oranges against dark night.',
+        'Lantern and grill glow with rising steam.',
+        'Char, steam, oil sheen and paper.',
+        'Close stall-level framing.',
+        'Lively, warm, crowded and delicious.',
+        'Photoreal street food photography.',
+        'steam; grill; lanterns; stall',
+      ),
+      avoid: FOOD_AVOID,
+      briefs: [
+        'Night market stall where a cook grills skewers shaped like tiny dragons over glowing charcoal, steam and smoke rising into red paper lanterns, oil glistening, hands passing a paper tray. No text or logo.',
+        'Steaming bamboo baskets of dumplings pleated into little skull shapes at a night market stall, chili oil glistening, steam rising into red lanterns, a vendor lifting the lid. No text or logo.',
+        'Night market cook tossing noodles in a wok with a huge burst of flame, noodles and vegetables flying mid-air, smoke glowing orange under lanterns, crowded stall shelves behind. No text or logo.',
+      ],
+    },
+    {
+      name: 'Retro Aspic Cookbook',
+      domain: 'vintage cookbook photography',
+      tags: ['retro', 'cookbook', 'food'],
+      dna: style(
+        'Retro cookbook: overlit 1960s-70s food photos with gelatin molds, aspics and garish garnishes.',
+        food(
+          'set in a wobbly gelatin mold or aspic with suspended ingredients and garish garnishes.',
+        ),
+        'Oversaturated oranges, greens and pinks with yellowed print.',
+        'Flat flash light.',
+        'Wobbly gelatin, printed grain and faded color.',
+        'Tabletop framing with dated tablecloth.',
+        'Kitschy, strange, nostalgic and funny.',
+        'Faded vintage print photograph.',
+        'gelatin mold; suspended items; flash; faded print',
+      ),
+      avoid: FOOD_AVOID,
+      briefs: [
+        'Retro cookbook photograph of a green gelatin mold shaped like a castle with a tiny dragon suspended inside among olives and eggs, garnished with parsley on an orange tablecloth, flat flash and faded print. No text or logo.',
+        'Retro cookbook photograph of a tomato aspic molded as a skull with peas, carrots and sliced eggs suspended inside, parsley ruff around it on a mustard tablecloth, flat flash and yellowed print. No text or logo.',
+        'Retro cookbook photograph of a lime gelatin ring mold with shrimps and olives suspended inside, a lit taper candle in the center, doilies and a turquoise tablecloth, flat flash and faded color. No text or logo.',
+      ],
+    },
+    {
+      name: 'Preserving Pantry Jars',
+      domain: 'backlit preserves',
+      tags: ['preserves', 'pantry', 'food'],
+      dna: style(
+        'Preserving pantry: shelves of backlit jars with pickles, jams and ferments glowing like stained glass.',
+        food(
+          'preserved in glass jars: pickled, fermented or candied, with liquid glowing when backlit.',
+        ),
+        'Amber, ruby, green and golden liquids.',
+        'Window backlight through jars.',
+        'Glass jars, brine, wax seals and wood shelves.',
+        'Shelf framing with rows of jars.',
+        'Homely, patient, abundant and mysterious.',
+        'Photoreal still life photography.',
+        'glowing jars; brine; wax seals; shelves',
+      ),
+      avoid: FOOD_AVOID,
+      briefs: [
+        'Photograph of a witch pantry shelf of backlit jars: pickled mushrooms, cherry preserves, amber honey with a comb and one jar holding a small curled dragon egg in brine, wax seals and twine, window light glowing through. No text or logo.',
+        'Fermenting jars of red cabbage, chili and garlic glowing ruby and amber on a stone cellar shelf, one lantern behind them, bubbles in the brine and cloth-covered lids tied with twine. No text or logo.',
+        'Row of jars of candied lemons, plums and cherries on a rainy windowsill, glowing like stained glass in grey backlight, wax seals and plain paper caps. No text or logo.',
+      ],
+    },
+    {
+      name: 'Charcuterie Grazing Board',
+      domain: 'overhead grazing board',
+      tags: ['charcuterie', 'board', 'food'],
+      dna: style(
+        'Charcuterie board: abundant overhead spread of cured meats, cheeses, fruit, nuts and bread.',
+        food(
+          'laid out on a grazing board: folded meats, cheese wedges, grapes, figs, nuts, crackers and honey.',
+        ),
+        'Warm reds, creams, purples and wood.',
+        'Soft natural light from the side.',
+        'Wood grain, cheese rind, cured meat marbling.',
+        'Overhead flat-lay.',
+        'Abundant, generous, social and warm.',
+        'Photoreal overhead food photography.',
+        'overhead spread; folded meats; cheese; fruit',
+      ),
+      avoid: FOOD_AVOID,
+      briefs: [
+        'Overhead photograph of a huge charcuterie board arranged as a dragon coiling around a wheel of brie, salami scales, grape eyes, fig and nut hoard, honeycomb and bread on dark wood. No text or logo.',
+        'Overhead grazing board arranged as a castle and its lands: cheese-block castle walls, prosciutto rivers, rosemary forests, cracker roads and grape villagers on a huge dark wood board. No text or logo.',
+        'Overhead charcuterie spread for a witch gathering: black grapes, blue cheese, dark salami roses, blackberries, charcoal crackers, fig halves and a small cauldron of honey on slate. No text or logo.',
+      ],
+    },
+    {
+      name: 'Molecular Gastronomy',
+      domain: 'modernist cuisine',
+      tags: ['molecular', 'modernist', 'food'],
+      dna: style(
+        'Molecular gastronomy: spheres, foams, gels and liquid nitrogen fog in lab-like plating.',
+        food('made with modernist techniques: spheres, foams, gels, powders and cold fog.'),
+        'Clean whites with jewel-bright spheres.',
+        'Cool clinical light with fog.',
+        'Glossy spheres, airy foams and powder dusting.',
+        'Close lab-like plating.',
+        'Curious, futuristic, precise and playful.',
+        'Editorial food photography.',
+        'spheres; foams; nitrogen fog; gels',
+      ),
+      avoid: FOOD_AVOID,
+      briefs: [
+        'Molecular gastronomy dish of a dragon egg made from a glossy black sphere on a nest of smoked foam, liquid nitrogen fog spilling across a white plate, tweezers placing a gold leaf flake. No text or logo.',
+        'Molecular dessert of violet potion spheres in a test-tube rack, each glossy sphere holding a swirl of edible glitter, nitrogen fog spilling over a white lab-like counter. No text or logo.',
+        'Molecular gastronomy dessert of a frozen white skull shattering as a spoon strikes it, nitrogen fog bursting out, shards and berry powder scattering on a black plate. No text or logo.',
+      ],
+    },
+    {
+      name: 'Open-Fire Hearth Cooking',
+      domain: 'rustic fire cooking',
+      tags: ['hearth', 'fire', 'food'],
+      dna: style(
+        'Open-fire cooking: cast iron, embers, smoke and meat on hooks over flames.',
+        food('cooked over open fire: cast-iron pots, spits, embers and smoke.'),
+        'Ember orange, soot black and charred brown.',
+        'Firelight from below.',
+        'Cast iron, ash, smoke and char.',
+        'Low fire-level framing.',
+        'Primal, rustic, warm and smoky.',
+        'Photoreal rustic food photography.',
+        'embers; cast iron; smoke; spit roast',
+      ),
+      avoid: FOOD_AVOID,
+      briefs: [
+        'Open-fire hearth in a stone tavern kitchen: a cast-iron cauldron of stew bubbling on chains over embers, a spit of roasting birds, smoke and sparks rising, firelight on soot-black walls. No text or logo.',
+        'Campfire in a dark forest clearing with twisted bread dough baking on sticks, a cast-iron kettle hanging over embers, sparks rising, muddy boots and a sword leaning on a log at the edge. No text or logo.',
+        'Cast-iron pan of sizzling eggs, sausages and wild mushrooms set straight on glowing embers, smoke and grease spitting, ash dusting the rim, low firelight. No text or logo.',
+      ],
+    },
+    {
+      name: 'Pulled-Sugar Showpiece',
+      domain: 'sugar sculpture',
+      tags: ['sugar', 'showpiece', 'food'],
+      dna: style(
+        'Pulled-sugar showpiece: competition pastry sculpture in glossy blown and pulled sugar.',
+        food('sculpted from pulled and blown sugar: glossy petals, ribbons and translucent forms.'),
+        'Glossy jewel colors in translucent sugar.',
+        'Spotlight on glossy sugar.',
+        'Glossy translucent sugar and satin ribbons.',
+        'Tall sculpture framing on a pedestal.',
+        'Spectacular, fragile, virtuosic and bright.',
+        'Photoreal competition pastry photography.',
+        'pulled sugar; blown sugar; translucent gloss',
+      ),
+      avoid: FOOD_AVOID,
+      briefs: [
+        'Pastry competition showpiece of a rearing dragon in glossy red pulled sugar, blown-sugar wings translucent in the spotlight, sugar flames and ribbons on a chocolate pedestal. No text or logo.',
+        'Pulled-sugar showpiece of an ornate knight helmet in glossy silver-blue sugar with a towering plume of translucent pulled-sugar feathers, sugar ribbons curling at the base under a spotlight. No text or logo.',
+        'Blown-sugar castle with translucent amber towers and ruby windows on a chocolate cliff, pulled-sugar banners and a tiny sugar dragon on the highest spire, spotlit on a competition pedestal. No text or logo.',
+      ],
+    },
+    {
+      name: 'Ramen Steam Close-Up',
+      domain: 'noodle bowl close-up',
+      tags: ['ramen', 'noodles', 'food'],
+      dna: style(
+        'Ramen close-up: steaming bowl, noodle lift, glossy broth and toppings.',
+        food('served in a ramen bowl: broth, noodles, egg, chashu, nori and scallions.'),
+        'Warm broth gold with green and pink accents.',
+        'Warm light with backlit steam.',
+        'Glossy broth, noodles and steam.',
+        'Close bowl framing with chopsticks.',
+        'Comforting, warm, rich and hungry.',
+        'Photoreal food photography.',
+        'steam; noodle lift; broth gloss',
+      ),
+      avoid: FOOD_AVOID,
+      briefs: [
+        'Close photograph of a ramen bowl where a noodle dragon rises out of rich golden broth on chopsticks, soft-boiled egg eyes, nori wings, chashu and scallions, steam backlit by a warm lantern. No text or logo.',
+        'Ramen bowl with dark tonkotsu broth swirled with black garlic oil, a skull-shaped fishcake, halved marinated egg, chashu and scallions, steam rising in moody backlight. No text or logo.',
+        'Steaming ramen bowl on a tiny counter at a rainy-night noodle stall, rain streaking past the curtain, chopsticks lifting noodles, lantern light glowing in the glossy broth. No text or logo.',
+      ],
+    },
+  ] satisfies Create[],
+};
+
+export default spec;

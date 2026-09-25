@@ -3,7 +3,7 @@
     {
       "id": "pack_11",
       "name": "Miscellaneous & Fun",
-      "presetCount": 98
+      "presetCount": 107
     }
   ],
   "presets": [
@@ -781,7 +781,8 @@
     },
     {
       "id": "SP11-046",
-      "name": "Michelin Fine-Dining Editorial",
+      "name": "Fine-Dining Plating Editorial",
+      "styleAnchors": ["Fine-Dining Plating Editorial"],
       "ref": "pack_11/SP11-046.yaml",
       "packId": "pack_11",
       "packName": "Miscellaneous & Fun",
@@ -789,11 +790,12 @@
       "categoryName": "4. Food And Drink",
       "tags": ["miscellaneous-and-fun", "food-and-drink"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp11-046 michelin fine-dining editorial 4. food and drink food imagery pack_11 miscellaneous & fun food-and-drink miscellaneous-and-fun food-and-drink"
+      "searchableText": "sp11-046 fine-dining plating editorial 4. food and drink food imagery pack_11 miscellaneous & fun food-and-drink miscellaneous-and-fun food-and-drink"
     },
     {
       "id": "SP11-047",
-      "name": "Candy Land",
+      "name": "Confectionery Wonderland",
+      "styleAnchors": ["Confectionery Wonderland"],
       "ref": "pack_11/SP11-047.yaml",
       "packId": "pack_11",
       "packName": "Miscellaneous & Fun",
@@ -801,7 +803,7 @@
       "categoryName": "4. Food And Drink",
       "tags": ["miscellaneous-and-fun", "food-and-drink"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp11-047 candy land 4. food and drink food imagery pack_11 miscellaneous & fun food-and-drink miscellaneous-and-fun food-and-drink"
+      "searchableText": "sp11-047 confectionery wonderland 4. food and drink food imagery pack_11 miscellaneous & fun food-and-drink miscellaneous-and-fun food-and-drink"
     },
     {
       "id": "SP11-048",
@@ -910,6 +912,132 @@
       "tags": ["miscellaneous-and-fun", "food-and-drink"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp11-032 latte art 4. food and drink food imagery pack_11 miscellaneous & fun food-and-drink miscellaneous-and-fun food-and-drink"
+    },
+    {
+      "id": "SP11-099",
+      "name": "Medieval Feast Banquet",
+      "styleAnchors": ["Medieval Feast Banquet", "medieval banquet table", "roasts"],
+      "ref": "pack_11/SP11-099.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "food-and-drink",
+      "categoryName": "4. Food And Drink",
+      "domain": "medieval banquet table",
+      "tags": ["miscellaneous-and-fun", "food-and-drink", "medieval-banquet-table"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-099 medieval feast banquet medieval banquet table roasts 4. food and drink food imagery medieval banquet table pack_11 miscellaneous & fun food-and-drink miscellaneous-and-fun food-and-drink medieval-banquet-table"
+    },
+    {
+      "id": "SP11-100",
+      "name": "Night Market Street Food",
+      "styleAnchors": ["Night Market Street Food", "street food at night", "steam"],
+      "ref": "pack_11/SP11-100.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "food-and-drink",
+      "categoryName": "4. Food And Drink",
+      "domain": "street food at night",
+      "tags": ["miscellaneous-and-fun", "food-and-drink", "street-food-at-night"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-100 night market street food street food at night steam 4. food and drink food imagery street food at night pack_11 miscellaneous & fun food-and-drink miscellaneous-and-fun food-and-drink street-food-at-night"
+    },
+    {
+      "id": "SP11-101",
+      "name": "Retro Aspic Cookbook",
+      "styleAnchors": ["Retro Aspic Cookbook", "vintage cookbook photography", "gelatin mold"],
+      "ref": "pack_11/SP11-101.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "food-and-drink",
+      "categoryName": "4. Food And Drink",
+      "domain": "vintage cookbook photography",
+      "tags": ["miscellaneous-and-fun", "food-and-drink", "vintage-cookbook-photography"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-101 retro aspic cookbook vintage cookbook photography gelatin mold 4. food and drink food imagery vintage cookbook photography pack_11 miscellaneous & fun food-and-drink miscellaneous-and-fun food-and-drink vintage-cookbook-photography"
+    },
+    {
+      "id": "SP11-102",
+      "name": "Preserving Pantry Jars",
+      "styleAnchors": ["Preserving Pantry Jars", "backlit preserves", "glowing jars"],
+      "ref": "pack_11/SP11-102.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "food-and-drink",
+      "categoryName": "4. Food And Drink",
+      "domain": "backlit preserves",
+      "tags": ["miscellaneous-and-fun", "food-and-drink", "backlit-preserves"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-102 preserving pantry jars backlit preserves glowing jars 4. food and drink food imagery backlit preserves pack_11 miscellaneous & fun food-and-drink miscellaneous-and-fun food-and-drink backlit-preserves"
+    },
+    {
+      "id": "SP11-103",
+      "name": "Charcuterie Grazing Board",
+      "styleAnchors": ["Charcuterie Grazing Board", "overhead grazing board", "overhead spread"],
+      "ref": "pack_11/SP11-103.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "food-and-drink",
+      "categoryName": "4. Food And Drink",
+      "domain": "overhead grazing board",
+      "tags": ["miscellaneous-and-fun", "food-and-drink", "overhead-grazing-board"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-103 charcuterie grazing board overhead grazing board overhead spread 4. food and drink food imagery overhead grazing board pack_11 miscellaneous & fun food-and-drink miscellaneous-and-fun food-and-drink overhead-grazing-board"
+    },
+    {
+      "id": "SP11-104",
+      "name": "Molecular Gastronomy",
+      "styleAnchors": ["Molecular Gastronomy", "modernist cuisine", "spheres"],
+      "ref": "pack_11/SP11-104.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "food-and-drink",
+      "categoryName": "4. Food And Drink",
+      "domain": "modernist cuisine",
+      "tags": ["miscellaneous-and-fun", "food-and-drink", "modernist-cuisine"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-104 molecular gastronomy modernist cuisine spheres 4. food and drink food imagery modernist cuisine pack_11 miscellaneous & fun food-and-drink miscellaneous-and-fun food-and-drink modernist-cuisine"
+    },
+    {
+      "id": "SP11-105",
+      "name": "Open-Fire Hearth Cooking",
+      "styleAnchors": ["Open-Fire Hearth Cooking", "rustic fire cooking", "embers"],
+      "ref": "pack_11/SP11-105.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "food-and-drink",
+      "categoryName": "4. Food And Drink",
+      "domain": "rustic fire cooking",
+      "tags": ["miscellaneous-and-fun", "food-and-drink", "rustic-fire-cooking"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-105 open-fire hearth cooking rustic fire cooking embers 4. food and drink food imagery rustic fire cooking pack_11 miscellaneous & fun food-and-drink miscellaneous-and-fun food-and-drink rustic-fire-cooking"
+    },
+    {
+      "id": "SP11-106",
+      "name": "Pulled-Sugar Showpiece",
+      "styleAnchors": ["Pulled-Sugar Showpiece", "sugar sculpture", "pulled sugar"],
+      "ref": "pack_11/SP11-106.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "food-and-drink",
+      "categoryName": "4. Food And Drink",
+      "domain": "sugar sculpture",
+      "tags": ["miscellaneous-and-fun", "food-and-drink", "sugar-sculpture"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-106 pulled-sugar showpiece sugar sculpture pulled sugar 4. food and drink food imagery sugar sculpture pack_11 miscellaneous & fun food-and-drink miscellaneous-and-fun food-and-drink sugar-sculpture"
+    },
+    {
+      "id": "SP11-107",
+      "name": "Ramen Steam Close-Up",
+      "styleAnchors": ["Ramen Steam Close-Up", "noodle bowl close-up", "steam"],
+      "ref": "pack_11/SP11-107.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "food-and-drink",
+      "categoryName": "4. Food And Drink",
+      "domain": "noodle bowl close-up",
+      "tags": ["miscellaneous-and-fun", "food-and-drink", "noodle-bowl-close-up"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-107 ramen steam close-up noodle bowl close-up steam 4. food and drink food imagery noodle bowl close-up pack_11 miscellaneous & fun food-and-drink miscellaneous-and-fun food-and-drink noodle-bowl-close-up"
     },
     {
       "id": "SP11-056",
@@ -1236,5 +1364,5 @@
       "searchableText": "sp11-033 blueprint 7. diagram and technical drawing blueprint drawing pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing"
     }
   ],
-  "totalPresetCount": 98
+  "totalPresetCount": 107
 }

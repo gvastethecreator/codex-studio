@@ -5,60 +5,60 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP11-046',
-    name: 'Michelin Fine-Dining Editorial',
+    name: 'Fine-Dining Plating Editorial',
+    displayName: 'Fine-Dining Plating Editorial',
+    styleAnchors: ['Fine-Dining Plating Editorial'],
     category: '4. Food And Drink',
     negativePrompt:
-      'messy, cafeteria, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, messy, cafeteria, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Michelin Fine-Dining Editorial operates as a portable source-router layer: combine disciplined plating geometry, negative space, controlled sauce gestures, premium editorial lighting, and restrained material contrast, portion geometry, garnish rhythm, sauce motion, melt behavior, crumb, steam, condensation, and service polish with culinary presentation logic with edible surface behavior, plating structure, gloss, freshness, and commercial appetite cues, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Fine-dining plating editorial: tiny precise compositions on large plates, negative space and tweezered garnish.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms plate, glaze, slice, stack, melt, drizzle, arrange, chill, steam, or stylize through edible material logic through portion geometry, garnish rhythm, sauce motion, melt behavior, crumb, steam, condensation, and service polish; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
-      color_and_tone:
-        "Map color through appetite-driven hues, ingredient contrast, caramelization, freshness accents, creamy highlights, and controlled richness; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — plated as a small precise composition on a wide plate: sauce swooshes, dots, microgreens, edible flowers and one sculptural centerpiece.",
+      color_and_tone: 'Restrained palette with one vivid accent on white or matte black ceramic.',
       lighting_and_shadow:
-        "Use editorial food lighting with glossy highlights, soft appetite shadows, condensation sparkle, and texture reveal as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Soft directional editorial light with gentle shadow, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render sauce viscosity, crumb structure, gelatin shine, raw sheen, baked crust, ice, foam, steam, and surface freshness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
-      camera_and_composition:
-        'Compose with plating geometry, negative space, ingredient rhythm, commercial clarity, and edible detail scale as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Glossy sauce, crisp tuiles, microgreens and matte ceramic, visible at card size as the signature of the style.',
+      camera_and_composition: 'Overhead or low three-quarter view with lots of empty plate.',
       atmosphere_and_mood:
-        "Carry mood through freshness, indulgence, premium service, comfort, celebration, appetite, and sensory immediacy; the emotional tone should feel specific to Michelin Fine-Dining Editorial while still obeying the prompt's subject and context.",
+        'Refined, precise, calm and luxurious, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with appetizing material truth, precise gloss control, clean detail priority, and no messy cafeteria drift; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'disciplined plating geometry, negative space, controlled sauce gestures, premium editorial lighting, and restrained material contrast, portion geometry, garnish rhythm, sauce motion, melt behavior, crumb, steam, condensation, and service polish; sauce viscosity, crumb structure, gelatin shine, raw sheen, baked crust, ice, foam, steam, and surface freshness; editorial food lighting with glossy highlights, soft appetite shadows, condensation sparkle, and texture reveal; plating geometry, negative space, ingredient rhythm, commercial clarity, and edible detail scale',
+        'High-end editorial food photography, with clean, deliberate marks and no accidental noise.',
+      key_features: 'negative space; tweezered garnish; sauce dots; wide plate',
       creative_brief:
-        'Use Michelin Fine-Dining Editorial after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies disciplined plating geometry, negative space, controlled sauce gestures, premium editorial lighting, and restrained material contrast, portion geometry, garnish rhythm, sauce motion, melt behavior, crumb, steam, condensation, and service polish, sauce viscosity, crumb structure, gelatin shine, raw sheen, baked crust, ice, foam, steam, and surface freshness, editorial food lighting with glossy highlights, soft appetite shadows, condensation sparkle, and texture reveal, plating geometry, negative space, ingredient rhythm, commercial clarity, and edible detail scale, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fine-Dining Plating Editorial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP11-047',
-    name: 'Candy Land',
+    name: 'Confectionery Wonderland',
+    displayName: 'Confectionery Wonderland',
+    styleAnchors: ['Confectionery Wonderland'],
     category: '4. Food And Drink',
     negativePrompt:
-      'healthy, savory, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, healthy, savory, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Candy Land operates as a portable source-router layer: combine Confectionery material fantasy, edible-color systems, sugar-gloss transformation, gumdrop whimsy with culinary presentation logic with edible surface behavior, plating structure, gloss, freshness, and commercial appetite cues, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Confectionery wonderland: everything made of candy, sugar glass, gumdrops, frosting and striped sugar sticks.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms plate, glaze, slice, stack, melt, drizzle, arrange, chill, steam, or stylize through edible material logic through Sugar coating, candy-cane stripes, lollipop-spiral, frosting-swirl, gumdrop-dome profiles; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — built entirely from candy: gumdrops, lollipops, sugar glass, frosting, marshmallows and striped sugar sticks.",
       color_and_tone:
-        "Map color through appetite-driven hues, ingredient contrast, caramelization, freshness accents, creamy highlights, and controlled richness; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        'Saturated candy colors with pastel and glossy highlights, used consistently across subject and background.',
       lighting_and_shadow:
-        "Use Bright, sparkly, sugar-crystal glitter, fairy-light twinkle, gumdrop-glow backlight plus editorial food lighting with glossy highlights, soft appetite shadows, condensation sparkle, and texture reveal as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Bright sugary light with glossy sparkle, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Sugar crystals, gummy, icing-smooth, fondant-mat, hard-candy gloss, chocolate-shell snap, sprinkle-crunch plus sauce viscosity, crumb structure, gelatin shine, raw sheen, baked crust, ice, foam, steam, and surface freshness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Sugar glass, sprinkles, frosting and gummy translucency, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose with Edible material substitution, lollipop spiral geometry, gingerbread block proportions, frosting drips, candy-cane striping plus plating geometry, negative space, ingredient rhythm, commercial clarity, and edible detail scale as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Wide whimsical view full of candy detail, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through freshness, indulgence, premium service, comfort, celebration, appetite, and sensory immediacy; the emotional tone should feel specific to Candy Land while still obeying the prompt's subject and context.",
+        'Sweet, whimsical, playful and a little uncanny, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with appetizing material truth, precise gloss control, clean detail priority, and no messy cafeteria drift; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Confectionery material fantasy, edible-color systems, sugar-gloss transformation, gumdrop whimsy; Sugar coating, candy-cane stripes, lollipop-spiral, frosting-swirl, gumdrop-dome profiles; Sugar crystals, gummy, icing-smooth, fondant-mat, hard-candy gloss, chocolate-shell snap, sprinkle-crunch; Bright, sparkly, sugar-crystal glitter, fairy-light twinkle, gumdrop-glow backlight; Edible material substitution, lollipop spiral geometry, gingerbread block proportions, frosting drips, candy-cane striping',
+        'Glossy candy render or photo, with clean, deliberate marks and no accidental noise.',
+      key_features: 'candy construction; sugar glass; frosting; gumdrops',
       creative_brief:
-        'Use Candy Land after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Confectionery material fantasy, edible-color systems, sugar-gloss transformation, gumdrop whimsy, Sugar coating, candy-cane stripes, lollipop-spiral, frosting-swirl, gumdrop-dome profiles, Sugar crystals, gummy, icing-smooth, fondant-mat, hard-candy gloss, chocolate-shell snap, sprinkle-crunch, Bright, sparkly, sugar-crystal glitter, fairy-light twinkle, gumdrop-glow backlight, Edible material substitution, lollipop spiral geometry, gingerbread block proportions, frosting drips, candy-cane striping plus portion geometry, garnish rhythm, sauce motion, melt behavior, crumb, steam, condensation, and service polish, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Confectionery Wonderland as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +66,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sushi Platter',
     category: '4. Food And Drink',
     negativePrompt:
-      'cooked, dry, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, cooked, dry, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Sushi Platter operates as a portable source-router layer: combine Omakase precision layout, sashimi-fresh surface logic, disciplined cut geometry, itamae restraint with culinary presentation logic with edible surface behavior, plating structure, gloss, freshness, and commercial appetite cues, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Omakase sushi: precise slices of fish and rice arranged on dark wood or slate with restraint.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms plate, glaze, slice, stack, melt, drizzle, arrange, chill, steam, or stylize through edible material logic through Knife cuts, single-stroke-slice, hira-zukuri rectangles, sogi-zukuri bevel, sashimi-fan arrangement; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
-      color_and_tone:
-        "Map color through appetite-driven hues, ingredient contrast, caramelization, freshness accents, creamy highlights, and controlled richness; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
-      lighting_and_shadow:
-        "Use Glossy oil highlights, clean counter-like spotlight, lacquer contrast, wasabi-grain texture light plus editorial food lighting with glossy highlights, soft appetite shadows, condensation sparkle, and texture reveal as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
-      texture_and_material:
-        'Render Raw fish, rice, flesh-marbling, shari-grain, nori-crisp, ikura-bead, torched-aburi char plus sauce viscosity, crumb structure, gelatin shine, raw sheen, baked crust, ice, foam, steam, and surface freshness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — built from precisely cut sashimi, nigiri, nori, roe and garnish, arranged with calm spacing.",
+      color_and_tone: 'Pink, coral, white rice, nori black and green leaf accents.',
+      lighting_and_shadow: 'Soft counter light with gentle gloss on the fish.',
+      texture_and_material: 'Glossy raw fish, rice grains, nori and wood grain.',
       camera_and_composition:
-        'Compose with Natural proportion, lacquer-board framing, sashimi-fan geometry, nigiri-oval balance, disciplined spacing plus plating geometry, negative space, ingredient rhythm, commercial clarity, and edible detail scale as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Low three-quarter view along the counter, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through freshness, indulgence, premium service, comfort, celebration, appetite, and sensory immediacy; the emotional tone should feel specific to Sushi Platter while still obeying the prompt's subject and context.",
+        'Calm, precise, fresh and respectful, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with appetizing material truth, precise gloss control, clean detail priority, and no messy cafeteria drift; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Omakase precision layout, sashimi-fresh surface logic, disciplined cut geometry, itamae restraint; Knife cuts, single-stroke-slice, hira-zukuri rectangles, sogi-zukuri bevel, sashimi-fan arrangement; Raw fish, rice, flesh-marbling, shari-grain, nori-crisp, ikura-bead, torched-aburi char; Glossy oil highlights, clean counter-like spotlight, lacquer contrast, wasabi-grain texture light; Natural proportion, lacquer-board framing, sashimi-fan geometry, nigiri-oval balance, disciplined spacing',
+        'Photoreal food photography, with clean, deliberate marks and no accidental noise.',
+      key_features: 'precise slices; nigiri; nori; dark wood counter',
       creative_brief:
-        'Use Sushi Platter after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Omakase precision layout, sashimi-fresh surface logic, disciplined cut geometry, itamae restraint, Knife cuts, single-stroke-slice, hira-zukuri rectangles, sogi-zukuri bevel, sashimi-fan arrangement, Raw fish, rice, flesh-marbling, shari-grain, nori-crisp, ikura-bead, torched-aburi char, Glossy oil highlights, clean counter-like spotlight, lacquer contrast, wasabi-grain texture light, Natural proportion, lacquer-board framing, sashimi-fan geometry, nigiri-oval balance, disciplined spacing plus portion geometry, garnish rhythm, sauce motion, melt behavior, crumb, steam, condensation, and service polish, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sushi Platter as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +91,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fast Food Commercial',
     category: '4. Food And Drink',
     negativePrompt:
-      'real, soggy, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, real, soggy, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Fast Food Commercial operates as a portable source-router layer: combine Quick-service commercial gloss, crave-engineering, food-styling trickery, high-impact appetizing polish with culinary presentation logic with edible surface behavior, plating structure, gloss, freshness, and commercial appetite cues, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Fast-food commercial: impossibly perfect burgers and fries with crave-engineered gloss and flying ingredients.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms plate, glaze, slice, stack, melt, drizzle, arrange, chill, steam, or stylize through edible material logic through Perfect stack layers, rounded lead-form contours, ruffled edges, sear-like texture rings, draped melt curves; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — styled like a fast-food ad: stacked layers, glossy sauces, sesame seeds, flying ingredients and perfect proportions.",
       color_and_tone:
-        "Map color through appetite-driven hues, ingredient contrast, caramelization, freshness accents, creamy highlights, and controlled richness; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        'Warm reds, yellows and golden browns, used consistently across subject and background.',
       lighting_and_shadow:
-        "Use High key studio, backlight-through-bun, rim-light on cheese, oil-sheen catch, steam-backlit glow plus editorial food lighting with glossy highlights, soft appetite shadows, condensation sparkle, and texture reveal as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Hard commercial light with rim highlights, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Melting cheese, water drops, sesame-seed nub, grill-mark char, condensation-bead, oil-slick gloss plus sauce viscosity, crumb structure, gelatin shine, raw sheen, baked crust, ice, foam, steam, and surface freshness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Glossy buns, melting cheese, crisp lettuce and fries, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose with Flying ingredients, levitation-burst, ingredient-explosion, suspended-motion, mid-air assembly plus plating geometry, negative space, ingredient rhythm, commercial clarity, and edible detail scale as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Heroic low angle against a clean colored backdrop, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through freshness, indulgence, premium service, comfort, celebration, appetite, and sensory immediacy; the emotional tone should feel specific to Fast Food Commercial while still obeying the prompt's subject and context.",
+        'Craving, loud, energetic and bold, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with appetizing material truth, precise gloss control, clean detail priority, and no messy cafeteria drift; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Quick-service commercial gloss, crave-engineering, food-styling trickery, high-impact appetizing polish; Perfect stack layers, rounded lead-form contours, ruffled edges, sear-like texture rings, draped melt curves; Melting cheese, water drops, sesame-seed nub, grill-mark char, condensation-bead, oil-slick gloss; High key studio, backlight-through-bun, rim-light on cheese, oil-sheen catch, steam-backlit glow; Flying ingredients, levitation-burst, ingredient-explosion, suspended-motion, mid-air assembly',
+        'Commercial food photography with styling tricks, with clean, deliberate marks and no accidental noise.',
+      key_features: 'perfect stack; flying ingredients; gloss; hero angle',
       creative_brief:
-        'Use Fast Food Commercial after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Quick-service commercial gloss, crave-engineering, food-styling trickery, high-impact appetizing polish, Perfect stack layers, rounded lead-form contours, ruffled edges, sear-like texture rings, draped melt curves, Melting cheese, water drops, sesame-seed nub, grill-mark char, condensation-bead, oil-slick gloss, High key studio, backlight-through-bun, rim-light on cheese, oil-sheen catch, steam-backlit glow, Flying ingredients, levitation-burst, ingredient-explosion, suspended-motion, mid-air assembly plus portion geometry, garnish rhythm, sauce motion, melt behavior, crumb, steam, condensation, and service polish, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fast Food Commercial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +119,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cocktail Macro',
     category: '4. Food And Drink',
     negativePrompt:
-      'opaque, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, opaque, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cocktail Macro operates as a portable source-router layer: combine Liquid refraction glamour, mixology material art, chilled glass optics, cocktail-macro polish with culinary presentation logic with edible surface behavior, plating structure, gloss, freshness, and commercial appetite cues, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Cocktail macro: close refracting glass, ice, citrus and colored liquor with condensation.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms plate, glaze, slice, stack, melt, drizzle, arrange, chill, steam, or stylize through edible material logic through Glass rim, coupe-bowl curve, highball-column, garnish-skewer line, citrus-peel spiral; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — served as a cocktail in close-up: glassware, ice, garnish, smoke or foam, with the subject echoed in the drink.",
       color_and_tone:
-        "Map color through appetite-driven hues, ingredient contrast, caramelization, freshness accents, creamy highlights, and controlled richness; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        'Jewel liquor colors against dark bar tones, used consistently across subject and background.',
       lighting_and_shadow:
-        "Use Backlit refraction, through-glass beam, ice-cube caustic, rim-light-on-condensation, bar-shelf amber plus editorial food lighting with glossy highlights, soft appetite shadows, condensation sparkle, and texture reveal as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Backlight through the glass with rim glints, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Condensation, ice, frosted-glass chill, sugar-rim crystal, mint-leaf vein, citrus-oil slick plus sauce viscosity, crumb structure, gelatin shine, raw sheen, baked crust, ice, foam, steam, and surface freshness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Condensation, ice, citrus peel and glass refraction, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose with Bubbles, carbonation-trail, ice-stack architecture, citrus-wheel plane, garnish-suspension plus plating geometry, negative space, ingredient rhythm, commercial clarity, and edible detail scale as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Macro framing at glass height, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through freshness, indulgence, premium service, comfort, celebration, appetite, and sensory immediacy; the emotional tone should feel specific to Cocktail Macro while still obeying the prompt's subject and context.",
+        'Glamorous, nocturnal, cool and sensual, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with appetizing material truth, precise gloss control, clean detail priority, and no messy cafeteria drift; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Liquid refraction glamour, mixology material art, chilled glass optics, cocktail-macro polish; Glass rim, coupe-bowl curve, highball-column, garnish-skewer line, citrus-peel spiral; Condensation, ice, frosted-glass chill, sugar-rim crystal, mint-leaf vein, citrus-oil slick; Backlit refraction, through-glass beam, ice-cube caustic, rim-light-on-condensation, bar-shelf amber; Bubbles, carbonation-trail, ice-stack architecture, citrus-wheel plane, garnish-suspension',
+        'Macro bar photography, with clean, deliberate marks and no accidental noise.',
+      key_features: 'refracting glass; ice; garnish; condensation',
       creative_brief:
-        'Use Cocktail Macro after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Liquid refraction glamour, mixology material art, chilled glass optics, cocktail-macro polish, Glass rim, coupe-bowl curve, highball-column, garnish-skewer line, citrus-peel spiral, Condensation, ice, frosted-glass chill, sugar-rim crystal, mint-leaf vein, citrus-oil slick, Backlit refraction, through-glass beam, ice-cube caustic, rim-light-on-condensation, bar-shelf amber, Bubbles, carbonation-trail, ice-stack architecture, citrus-wheel plane, garnish-suspension plus portion geometry, garnish rhythm, sauce motion, melt behavior, crumb, steam, condensation, and service polish, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cocktail Macro as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +147,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bakery Window',
     category: '4. Food And Drink',
     negativePrompt:
-      'burnt, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, burnt, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bakery Window operates as a portable source-router layer: combine Artisan bakehouse texture, crust-and-crumb warmth, pastry laminate detail, yeast-rise glow with culinary presentation logic with edible surface behavior, plating structure, gloss, freshness, and commercial appetite cues, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Bakery window: crusty loaves and laminated pastries in warm window light, flour dust and wooden trays.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms plate, glaze, slice, stack, melt, drizzle, arrange, chill, steam, or stylize through edible material logic through Crust cracks, ear-score lines, boule-dome contour, baguette-slash, croissant-laminate layers; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — baked as bread or pastry: scored crust, laminated layers, glazes and flour dust.",
       color_and_tone:
-        "Map color through appetite-driven hues, ingredient contrast, caramelization, freshness accents, creamy highlights, and controlled richness; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        'Golden browns, cream and warm wood, used consistently across subject and background.',
       lighting_and_shadow:
-        "Use Warm yellow, bakery-window morning, incandescent-gold, crust-sheen catch, steam-haze diffusion plus editorial food lighting with glossy highlights, soft appetite shadows, condensation sparkle, and texture reveal as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Warm morning light through a shop window, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Flour, flaky crust, dusting-flour, shatter-crust, air-pocket honeycomb, butter-laminate, steam-gelatinized starch plus sauce viscosity, crumb structure, gelatin shine, raw sheen, baked crust, ice, foam, steam, and surface freshness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Crust cracks, crumb, flaky layers and flour, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose with Rising dough, proofed-volume, oven-spring bloom, ear-and-gringe expansion, scoring-blade slash plus plating geometry, negative space, ingredient rhythm, commercial clarity, and edible detail scale as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Window display framing with trays and shelves, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through freshness, indulgence, premium service, comfort, celebration, appetite, and sensory immediacy; the emotional tone should feel specific to Bakery Window while still obeying the prompt's subject and context.",
+        'Warm, homely, abundant and inviting, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with appetizing material truth, precise gloss control, clean detail priority, and no messy cafeteria drift; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Artisan bakehouse texture, crust-and-crumb warmth, pastry laminate detail, yeast-rise glow; Crust cracks, ear-score lines, boule-dome contour, baguette-slash, croissant-laminate layers; Flour, flaky crust, dusting-flour, shatter-crust, air-pocket honeycomb, butter-laminate, steam-gelatinized starch; Warm yellow, bakery-window morning, incandescent-gold, crust-sheen catch, steam-haze diffusion; Rising dough, proofed-volume, oven-spring bloom, ear-and-gringe expansion, scoring-blade slash',
+        'Photoreal bakery photography, with clean, deliberate marks and no accidental noise.',
+      key_features: 'scored crust; laminated pastry; flour dust; window light',
       creative_brief:
-        'Use Bakery Window after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Artisan bakehouse texture, crust-and-crumb warmth, pastry laminate detail, yeast-rise glow, Crust cracks, ear-score lines, boule-dome contour, baguette-slash, croissant-laminate layers, Flour, flaky crust, dusting-flour, shatter-crust, air-pocket honeycomb, butter-laminate, steam-gelatinized starch, Warm yellow, bakery-window morning, incandescent-gold, crust-sheen catch, steam-haze diffusion, Rising dough, proofed-volume, oven-spring bloom, ear-and-gringe expansion, scoring-blade slash plus portion geometry, garnish rhythm, sauce motion, melt behavior, crumb, steam, condensation, and service polish, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bakery Window as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +175,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fruit Explosion',
     category: '4. Food And Drink',
     negativePrompt:
-      'rotten, still, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, rotten, still, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Fruit Explosion operates as a portable source-router layer: combine High-speed freshness burst, juice-splash photography, cut-surface color energy, orchard-dynamism with culinary presentation logic with edible surface behavior, plating structure, gloss, freshness, and commercial appetite cues, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Fruit explosion: high-speed photo of fruit bursting with juice splashes and flying slices.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms plate, glaze, slice, stack, melt, drizzle, arrange, chill, steam, or stylize through edible material logic through Splash lines, parabolic-arc droplets, knife-slice plane, fruit-half contour, peel-curl spiral; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
-      color_and_tone:
-        "Map color through appetite-driven hues, ingredient contrast, caramelization, freshness accents, creamy highlights, and controlled richness; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — made of or bursting with fruit: sliced halves, juice splashes and droplets frozen mid-air.",
+      color_and_tone: 'Vivid fruit colors on a dark or clean backdrop.',
       lighting_and_shadow:
-        "Use High speed flash, freeze-motion strobe, water-droplet sparkle, juice-mist backlight, shadow-free key plus editorial food lighting with glossy highlights, soft appetite shadows, condensation sparkle, and texture reveal as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'High-speed strobe light freezing droplets, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Juice, pulp, seed-speckle, rind-texture, flesh-grain, droplet-surface-tension plus sauce viscosity, crumb structure, gelatin shine, raw sheen, baked crust, ice, foam, steam, and surface freshness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Juice droplets, cut fruit flesh and seeds, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose with Exploding, radial-burst, centrifugal-juice, peel-unfurling, seed-launch trajectory plus plating geometry, negative space, ingredient rhythm, commercial clarity, and edible detail scale as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Centered burst with flying pieces, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through freshness, indulgence, premium service, comfort, celebration, appetite, and sensory immediacy; the emotional tone should feel specific to Fruit Explosion while still obeying the prompt's subject and context.",
+        'Fresh, energetic, juicy and bright, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with appetizing material truth, precise gloss control, clean detail priority, and no messy cafeteria drift; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'High-speed freshness burst, juice-splash photography, cut-surface color energy, orchard-dynamism; Splash lines, parabolic-arc droplets, knife-slice plane, fruit-half contour, peel-curl spiral; Juice, pulp, seed-speckle, rind-texture, flesh-grain, droplet-surface-tension; High speed flash, freeze-motion strobe, water-droplet sparkle, juice-mist backlight, shadow-free key; Exploding, radial-burst, centrifugal-juice, peel-unfurling, seed-launch trajectory',
+        'High-speed product photography, with clean, deliberate marks and no accidental noise.',
+      key_features: 'juice splash; frozen droplets; sliced fruit',
       creative_brief:
-        'Use Fruit Explosion after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies High-speed freshness burst, juice-splash photography, cut-surface color energy, orchard-dynamism, Splash lines, parabolic-arc droplets, knife-slice plane, fruit-half contour, peel-curl spiral, Juice, pulp, seed-speckle, rind-texture, flesh-grain, droplet-surface-tension, High speed flash, freeze-motion strobe, water-droplet sparkle, juice-mist backlight, shadow-free key, Exploding, radial-burst, centrifugal-juice, peel-unfurling, seed-launch trajectory plus portion geometry, garnish rhythm, sauce motion, melt behavior, crumb, steam, condensation, and service polish, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fruit Explosion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +202,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Chocolate Flow',
     category: '4. Food And Drink',
     negativePrompt:
-      'watery, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, watery, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Chocolate Flow operates as a portable source-router layer: combine Viscous cocoa flow, tempered dark gloss, molten confection surface, dense ribbon liquidity with culinary presentation logic with edible surface behavior, plating structure, gloss, freshness, and commercial appetite cues, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+      aesthetic: 'Chocolate flow: thick glossy molten chocolate pouring, ribbons and waves.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms plate, glaze, slice, stack, melt, drizzle, arrange, chill, steam, or stylize through edible material logic through Thick waves, viscous-ribbon contours, pour-cascade, drip-tongue edges, swirl-vortex; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — formed or covered by molten chocolate: thick ribbons, pour waves and glossy drips.",
       color_and_tone:
-        "Map color through appetite-driven hues, ingredient contrast, caramelization, freshness accents, creamy highlights, and controlled richness; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        'Dark, milk and white chocolate browns, used consistently across subject and background.',
       lighting_and_shadow:
-        "Use Satin gloss, ribbon-highlight catch, soft-box reflection, warm-overhead, tempered-surface mirror plus editorial food lighting with glossy highlights, soft appetite shadows, condensation sparkle, and texture reveal as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Soft studio light with glossy highlights, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Smooth liquid chocolate, tempered-crystal snap, ganache-velvet, cocoa-butter silk, molten-viscosity plus sauce viscosity, crumb structure, gelatin shine, raw sheen, baked crust, ice, foam, steam, and surface freshness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Molten gloss, tempered sheen and cocoa dust, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose with Flowing, pour-path meander, chocolate-cascade, drip-icicle descent, fold-and-ripple plus plating geometry, negative space, ingredient rhythm, commercial clarity, and edible detail scale as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Close product framing with flowing ribbons, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through freshness, indulgence, premium service, comfort, celebration, appetite, and sensory immediacy; the emotional tone should feel specific to Chocolate Flow while still obeying the prompt's subject and context.",
+        'Indulgent, rich, sensual and slow, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with appetizing material truth, precise gloss control, clean detail priority, and no messy cafeteria drift; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Viscous cocoa flow, tempered dark gloss, molten confection surface, dense ribbon liquidity; Thick waves, viscous-ribbon contours, pour-cascade, drip-tongue edges, swirl-vortex; Smooth liquid chocolate, tempered-crystal snap, ganache-velvet, cocoa-butter silk, molten-viscosity; Satin gloss, ribbon-highlight catch, soft-box reflection, warm-overhead, tempered-surface mirror; Flowing, pour-path meander, chocolate-cascade, drip-icicle descent, fold-and-ripple',
+        'Commercial food render or photo, with clean, deliberate marks and no accidental noise.',
+      key_features: 'molten ribbons; glossy pour; cocoa dust',
       creative_brief:
-        'Use Chocolate Flow after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Viscous cocoa flow, tempered dark gloss, molten confection surface, dense ribbon liquidity, Thick waves, viscous-ribbon contours, pour-cascade, drip-tongue edges, swirl-vortex, Smooth liquid chocolate, tempered-crystal snap, ganache-velvet, cocoa-butter silk, molten-viscosity, Satin gloss, ribbon-highlight catch, soft-box reflection, warm-overhead, tempered-surface mirror, Flowing, pour-path meander, chocolate-cascade, drip-icicle descent, fold-and-ripple plus portion geometry, garnish rhythm, sauce motion, melt behavior, crumb, steam, condensation, and service polish, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chocolate Flow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +229,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bento Box',
     category: '4. Food And Drink',
     negativePrompt:
-      'messy, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, messy, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bento Box operates as a portable source-router layer: combine Kyaraben organization, compartment-cute design, edible character abstraction, playful obento precision with culinary presentation logic with edible surface behavior, plating structure, gloss, freshness, and commercial appetite cues, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Bento box: compartmentalized lunch with cute character food made from rice, nori and vegetables.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms plate, glaze, slice, stack, melt, drizzle, arrange, chill, steam, or stylize through edible material logic through Compartments, divider-lines, nori-cutout silhouettes, rice-ball triangles, sausage-octopus contours; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
-      color_and_tone:
-        "Map color through appetite-driven hues, ingredient contrast, caramelization, freshness accents, creamy highlights, and controlled richness; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — arranged in a bento box: rice shaped into characters, nori faces, vegetable details and neat compartments.",
+      color_and_tone: 'Fresh greens, white rice, pink, yellow and nori black.',
       lighting_and_shadow:
-        "Use Flat lay, overhead-bento, lunch-box-open, natural-daylight, desk-lunch ambient plus editorial food lighting with glossy highlights, soft appetite shadows, condensation sparkle, and texture reveal as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Bright soft daylight from above, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Rice, seaweed, tamago-egg layers, sesame-sprinkle, cherry-tomato skin, broccoli-floret, sausage-gloss plus sauce viscosity, crumb structure, gelatin shine, raw sheen, baked crust, ice, foam, steam, and surface freshness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Rice grains, nori, egg, vegetables and lacquer box, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose with Compartment compression, edible character abstraction, rice-ball simplification, cutout-face geometry, carrot-flower ornament plus plating geometry, negative space, ingredient rhythm, commercial clarity, and edible detail scale as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Top-down view of the box, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through freshness, indulgence, premium service, comfort, celebration, appetite, and sensory immediacy; the emotional tone should feel specific to Bento Box while still obeying the prompt's subject and context.",
+        'Cute, careful, cheerful and neat, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with appetizing material truth, precise gloss control, clean detail priority, and no messy cafeteria drift; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Kyaraben organization, compartment-cute design, edible character abstraction, playful obento precision; Compartments, divider-lines, nori-cutout silhouettes, rice-ball triangles, sausage-octopus contours; Rice, seaweed, tamago-egg layers, sesame-sprinkle, cherry-tomato skin, broccoli-floret, sausage-gloss; Flat lay, overhead-bento, lunch-box-open, natural-daylight, desk-lunch ambient; Compartment compression, edible character abstraction, rice-ball simplification, cutout-face geometry, carrot-flower ornament',
+        'Photoreal food photography, with clean, deliberate marks and no accidental noise.',
+      key_features: 'compartments; rice characters; nori faces',
       creative_brief:
-        'Use Bento Box after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Kyaraben organization, compartment-cute design, edible character abstraction, playful obento precision, Compartments, divider-lines, nori-cutout silhouettes, rice-ball triangles, sausage-octopus contours, Rice, seaweed, tamago-egg layers, sesame-sprinkle, cherry-tomato skin, broccoli-floret, sausage-gloss, Flat lay, overhead-bento, lunch-box-open, natural-daylight, desk-lunch ambient, Compartment compression, edible character abstraction, rice-ball simplification, cutout-face geometry, carrot-flower ornament plus portion geometry, garnish rhythm, sauce motion, melt behavior, crumb, steam, condensation, and service polish, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bento Box as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -269,28 +256,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Pizza Melt',
     category: '4. Food And Drink',
     negativePrompt:
-      'cold, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, cold, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Pizza Melt operates as a portable source-router layer: combine Molten cheese-pull dynamics, pizzeria warmth, elastic melt gloss, commercial craving energy with culinary presentation logic with edible surface behavior, plating structure, gloss, freshness, and commercial appetite cues, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+      aesthetic: 'Pizza melt: molten cheese pulls, charred crust and glistening toppings.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms plate, glaze, slice, stack, melt, drizzle, arrange, chill, steam, or stylize through edible material logic through Stretchy cheese, mozzarella-strand curves, slice-triangle, crust-blister edge, pepperoni-curl cup; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — made into or onto pizza: stretchy cheese pulls, charred crust, toppings and oil sheen.",
       color_and_tone:
-        "Map color through appetite-driven hues, ingredient contrast, caramelization, freshness accents, creamy highlights, and controlled richness; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+        'Warm reds, golden cheese, charred brown, used consistently across subject and background.',
       lighting_and_shadow:
-        "Use Warm, pizzeria-glow, oven-door amber, cheese-oil sheen, crust-underlight, box-steam plus editorial food lighting with glossy highlights, soft appetite shadows, condensation sparkle, and texture reveal as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        'Warm oven glow, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Render Grease, cheese, oil-slick-pool, crust-blister, pepperoni-crisp-edge, melted-mozzarella-strand, semolina-dust plus sauce viscosity, crumb structure, gelatin shine, raw sheen, baked crust, ice, foam, steam, and surface freshness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+        'Stretchy cheese, char and oil, visible at card size as the signature of the style.',
       camera_and_composition:
-        'Compose with Stretching, cheese-strand elongation, slice-fold geometry, topping-drift, grease-separation pool plus plating geometry, negative space, ingredient rhythm, commercial clarity, and edible detail scale as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Close cheese-pull framing, arranged so the subject still reads at card size.',
       atmosphere_and_mood:
-        "Carry mood through freshness, indulgence, premium service, comfort, celebration, appetite, and sensory immediacy; the emotional tone should feel specific to Pizza Melt while still obeying the prompt's subject and context.",
+        'Craving, warm, casual and fun, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with appetizing material truth, precise gloss control, clean detail priority, and no messy cafeteria drift; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Molten cheese-pull dynamics, pizzeria warmth, elastic melt gloss, commercial craving energy; Stretchy cheese, mozzarella-strand curves, slice-triangle, crust-blister edge, pepperoni-curl cup; Grease, cheese, oil-slick-pool, crust-blister, pepperoni-crisp-edge, melted-mozzarella-strand, semolina-dust; Warm, pizzeria-glow, oven-door amber, cheese-oil sheen, crust-underlight, box-steam; Stretching, cheese-strand elongation, slice-fold geometry, topping-drift, grease-separation pool',
+        'Commercial food photography, with clean, deliberate marks and no accidental noise.',
+      key_features: 'cheese pull; charred crust; oil sheen',
       creative_brief:
-        'Use Pizza Melt after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Molten cheese-pull dynamics, pizzeria warmth, elastic melt gloss, commercial craving energy, Stretchy cheese, mozzarella-strand curves, slice-triangle, crust-blister edge, pepperoni-curl cup, Grease, cheese, oil-slick-pool, crust-blister, pepperoni-crisp-edge, melted-mozzarella-strand, semolina-dust, Warm, pizzeria-glow, oven-door amber, cheese-oil sheen, crust-underlight, box-steam, Stretching, cheese-strand elongation, slice-fold geometry, topping-drift, grease-separation pool plus portion geometry, garnish rhythm, sauce motion, melt behavior, crumb, steam, condensation, and service polish, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pizza Melt as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -298,28 +283,328 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Latte Art',
     category: '4. Food And Drink',
     negativePrompt:
-      'solid, paint, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, solid, paint, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Latte Art operates as a portable source-router layer: combine Microfoam surface drawing, espresso-crema contrast, barista flow geometry, sip-away temporary art with culinary presentation logic with edible surface behavior, plating structure, gloss, freshness, and commercial appetite cues, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+        'Latte art: a picture poured and etched into espresso microfoam, seen from above in a ceramic cup.',
       subject_treatment:
-        "Preserve the prompt's subject plus requested motion and context while letting forms plate, glaze, slice, stack, melt, drizzle, arrange, chill, steam, or stylize through edible material logic through Soft foam edges, pour-line curves, rosetta-leaf ripple, tulip-stack layers, heart-pour symmetry; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
-      color_and_tone:
-        "Map color through appetite-driven hues, ingredient contrast, caramelization, freshness accents, creamy highlights, and controlled richness; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
-      lighting_and_shadow:
-        "Use Overhead soft warmth, surface-spot highlights, crema-gloss catch, steamed-milk sheen plus editorial food lighting with glossy highlights, soft appetite shadows, condensation sparkle, and texture reveal as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — poured and etched into microfoam on crema, with soft white lines, pour curves and etched details in a round cup.",
+      color_and_tone: 'Creamy white foam on caramel-brown crema, cup color as accent.',
+      lighting_and_shadow: 'Soft cafe window light with a gentle foam sheen.',
       texture_and_material:
-        'Render Microfoam bubbles, velvet-milk surface, crema-oil slick, silky-pour viscosity, latte-art canvas plus sauce viscosity, crumb structure, gelatin shine, raw sheen, baked crust, ice, foam, steam, and surface freshness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
-      camera_and_composition:
-        'Compose with Liquid surface, pour-path flow, surface-tension boundary, optional cup-rim curvature plus plating geometry, negative space, ingredient rhythm, commercial clarity, and edible detail scale as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+        'Velvety microfoam, crema speckle and glazed ceramic, visible at card size as the signature of the style.',
+      camera_and_composition: 'Top-down view of the cup with saucer and a spoon at the edge.',
       atmosphere_and_mood:
-        "Carry mood through freshness, indulgence, premium service, comfort, celebration, appetite, and sensory immediacy; the emotional tone should feel specific to Latte Art while still obeying the prompt's subject and context.",
+        'Cozy, crafted, fleeting and warm, driven by the construction, color and rhythm.',
       rendering_and_quality:
-        'Finish with appetizing material truth, precise gloss control, clean detail priority, and no messy cafeteria drift; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
-      key_features:
-        'Microfoam surface drawing, espresso-crema contrast, barista flow geometry, sip-away temporary art; Soft foam edges, pour-line curves, rosetta-leaf ripple, tulip-stack layers, heart-pour symmetry; Microfoam bubbles, velvet-milk surface, crema-oil slick, silky-pour viscosity, latte-art canvas; Overhead soft warmth, surface-spot highlights, crema-gloss catch, steamed-milk sheen; Liquid surface, pour-path flow, surface-tension boundary, optional cup-rim curvature',
+        'Photoreal cafe photography, with clean, deliberate marks and no accidental noise.',
+      key_features: 'microfoam drawing; crema; top-down cup; pour curves',
       creative_brief:
-        'Use Latte Art after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Microfoam surface drawing, espresso-crema contrast, barista flow geometry, sip-away temporary art, Soft foam edges, pour-line curves, rosetta-leaf ripple, tulip-stack layers, heart-pour symmetry, Microfoam bubbles, velvet-milk surface, crema-oil slick, silky-pour viscosity, latte-art canvas, Overhead soft warmth, surface-spot highlights, crema-gloss catch, steamed-milk sheen, Liquid surface, pour-path flow, surface-tension boundary, optional cup-rim curvature plus portion geometry, garnish rhythm, sauce motion, melt behavior, crumb, steam, condensation, and service polish, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Latte Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP11-099',
+    name: 'Medieval Feast Banquet',
+    displayName: 'Medieval Feast Banquet',
+    styleAnchors: ['Medieval Feast Banquet', 'medieval banquet table', 'roasts'],
+    category: '4. Food And Drink',
+    domain: 'medieval banquet table',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Medieval feast: long candlelit tables heavy with roasts, bread, fruit, pies and goblets.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — served on a long banquet table: roasts, whole birds, bread, fruit, pies, cheeses, goblets and candles.",
+      color_and_tone:
+        'Deep reds, golden browns, pewter and candle gold, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Candlelight and hearth firelight, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Roast skin, crusty bread, pewter, wax and wood, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Long table view down the feast, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Abundant, rich, rowdy and warm, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Painterly or photoreal feast still life, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Medieval Feast Banquet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'roasts; pewter goblets; candles; long table',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-100',
+    name: 'Night Market Street Food',
+    displayName: 'Night Market Street Food',
+    styleAnchors: ['Night Market Street Food', 'street food at night', 'steam'],
+    category: '4. Food And Drink',
+    domain: 'street food at night',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Night market street food: steam, sizzling grills, paper lanterns and hands serving food.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — served from a night market stall: skewers, woks, steaming bowls, sizzling grills and paper containers.",
+      color_and_tone:
+        'Warm lantern reds and oranges against dark night, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Lantern and grill glow with rising steam, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Char, steam, oil sheen and paper, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Close stall-level framing, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Lively, warm, crowded and delicious, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Photoreal street food photography, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Night Market Street Food as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'steam; grill; lanterns; stall',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-101',
+    name: 'Retro Aspic Cookbook',
+    displayName: 'Retro Aspic Cookbook',
+    styleAnchors: ['Retro Aspic Cookbook', 'vintage cookbook photography', 'gelatin mold'],
+    category: '4. Food And Drink',
+    domain: 'vintage cookbook photography',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Retro cookbook: overlit 1960s-70s food photos with gelatin molds, aspics and garish garnishes.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — set in a wobbly gelatin mold or aspic with suspended ingredients and garish garnishes.",
+      color_and_tone:
+        'Oversaturated oranges, greens and pinks with yellowed print, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Flat flash light, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Wobbly gelatin, printed grain and faded color, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Tabletop framing with dated tablecloth, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Kitschy, strange, nostalgic and funny, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Faded vintage print photograph, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Retro Aspic Cookbook as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'gelatin mold; suspended items; flash; faded print',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-102',
+    name: 'Preserving Pantry Jars',
+    displayName: 'Preserving Pantry Jars',
+    styleAnchors: ['Preserving Pantry Jars', 'backlit preserves', 'glowing jars'],
+    category: '4. Food And Drink',
+    domain: 'backlit preserves',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Preserving pantry: shelves of backlit jars with pickles, jams and ferments glowing like stained glass.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — preserved in glass jars: pickled, fermented or candied, with liquid glowing when backlit.",
+      color_and_tone:
+        'Amber, ruby, green and golden liquids, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Window backlight through jars, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Glass jars, brine, wax seals and wood shelves, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Shelf framing with rows of jars, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Homely, patient, abundant and mysterious, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Photoreal still life photography, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Preserving Pantry Jars as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'glowing jars; brine; wax seals; shelves',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-103',
+    name: 'Charcuterie Grazing Board',
+    displayName: 'Charcuterie Grazing Board',
+    styleAnchors: ['Charcuterie Grazing Board', 'overhead grazing board', 'overhead spread'],
+    category: '4. Food And Drink',
+    domain: 'overhead grazing board',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Charcuterie board: abundant overhead spread of cured meats, cheeses, fruit, nuts and bread.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — laid out on a grazing board: folded meats, cheese wedges, grapes, figs, nuts, crackers and honey.",
+      color_and_tone:
+        'Warm reds, creams, purples and wood, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Soft natural light from the side, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Wood grain, cheese rind, cured meat marbling, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Overhead flat-lay, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Abundant, generous, social and warm, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Photoreal overhead food photography, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Charcuterie Grazing Board as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'overhead spread; folded meats; cheese; fruit',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-104',
+    name: 'Molecular Gastronomy',
+    displayName: 'Molecular Gastronomy',
+    styleAnchors: ['Molecular Gastronomy', 'modernist cuisine', 'spheres'],
+    category: '4. Food And Drink',
+    domain: 'modernist cuisine',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Molecular gastronomy: spheres, foams, gels and liquid nitrogen fog in lab-like plating.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — made with modernist techniques: spheres, foams, gels, powders and cold fog.",
+      color_and_tone:
+        'Clean whites with jewel-bright spheres, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Cool clinical light with fog, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Glossy spheres, airy foams and powder dusting, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Close lab-like plating, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Curious, futuristic, precise and playful, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Editorial food photography, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Molecular Gastronomy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'spheres; foams; nitrogen fog; gels',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-105',
+    name: 'Open-Fire Hearth Cooking',
+    displayName: 'Open-Fire Hearth Cooking',
+    styleAnchors: ['Open-Fire Hearth Cooking', 'rustic fire cooking', 'embers'],
+    category: '4. Food And Drink',
+    domain: 'rustic fire cooking',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Open-fire cooking: cast iron, embers, smoke and meat on hooks over flames.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — cooked over open fire: cast-iron pots, spits, embers and smoke.",
+      color_and_tone:
+        'Ember orange, soot black and charred brown, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Firelight from below, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Cast iron, ash, smoke and char, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Low fire-level framing, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Primal, rustic, warm and smoky, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Photoreal rustic food photography, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Open-Fire Hearth Cooking as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'embers; cast iron; smoke; spit roast',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-106',
+    name: 'Pulled-Sugar Showpiece',
+    displayName: 'Pulled-Sugar Showpiece',
+    styleAnchors: ['Pulled-Sugar Showpiece', 'sugar sculpture', 'pulled sugar'],
+    category: '4. Food And Drink',
+    domain: 'sugar sculpture',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pulled-sugar showpiece: competition pastry sculpture in glossy blown and pulled sugar.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — sculpted from pulled and blown sugar: glossy petals, ribbons and translucent forms.",
+      color_and_tone:
+        'Glossy jewel colors in translucent sugar, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Spotlight on glossy sugar, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Glossy translucent sugar and satin ribbons, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Tall sculpture framing on a pedestal, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Spectacular, fragile, virtuosic and bright, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Photoreal competition pastry photography, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pulled-Sugar Showpiece as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'pulled sugar; blown sugar; translucent gloss',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP11-107',
+    name: 'Ramen Steam Close-Up',
+    displayName: 'Ramen Steam Close-Up',
+    styleAnchors: ['Ramen Steam Close-Up', 'noodle bowl close-up', 'steam'],
+    category: '4. Food And Drink',
+    domain: 'noodle bowl close-up',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Ramen close-up: steaming bowl, noodle lift, glossy broth and toppings.',
+      subject_treatment:
+        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — served in a ramen bowl: broth, noodles, egg, chashu, nori and scallions.",
+      color_and_tone:
+        'Warm broth gold with green and pink accents, used consistently across subject and background.',
+      lighting_and_shadow:
+        'Warm light with backlit steam, expressed through the style rather than photographic lighting.',
+      texture_and_material:
+        'Glossy broth, noodles and steam, visible at card size as the signature of the style.',
+      camera_and_composition:
+        'Close bowl framing with chopsticks, arranged so the subject still reads at card size.',
+      atmosphere_and_mood:
+        'Comforting, warm, rich and hungry, driven by the construction, color and rhythm.',
+      rendering_and_quality:
+        'Photoreal food photography, with clean, deliberate marks and no accidental noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ramen Steam Close-Up as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'steam; noodle lift; broth gloss',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

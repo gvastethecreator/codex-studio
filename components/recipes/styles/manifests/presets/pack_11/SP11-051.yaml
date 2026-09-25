@@ -3,7 +3,7 @@ id: SP11-051
 packId: pack_11
 name: Bakery Window
 category: 4. Food And Drink
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,65 +12,25 @@ tags:
   - miscellaneous-and-fun
   - food-and-drink
 visualDna:
-  aesthetic: >-
-    Bakery Window operates as a portable source-router layer: combine Artisan bakehouse texture,
-    crust-and-crumb warmth, pastry laminate detail, yeast-rise glow with culinary presentation logic
-    with edible surface behavior, plating structure, gloss, freshness, and commercial appetite cues,
-    so the preset supplies visual behavior rather than a fixed card scene or literal sample.
-  subject_treatment: >-
-    Preserve the prompt's subject plus requested motion and context while letting forms plate,
-    glaze, slice, stack, melt, drizzle, arrange, chill, steam, or stylize through edible material
-    logic through Crust cracks, ear-score lines, boule-dome contour, baguette-slash,
-    croissant-laminate layers; identity stays readable through construction grammar, proportion,
-    edge logic, and detail scale as this preset is applied.
-  color_and_tone: >-
-    Map color through appetite-driven hues, ingredient contrast, caramelization, freshness accents,
-    creamy highlights, and controlled richness; keep hue roles intentional, value separation clear,
-    and palette behavior attached to the subject's forms instead of pasted decoration.
-  lighting_and_shadow: >-
-    Use Warm yellow, bakery-window morning, incandescent-gold, crust-sheen catch, steam-haze
-    diffusion plus editorial food lighting with glossy highlights, soft appetite shadows,
-    condensation sparkle, and texture reveal as the light-response contract, with readable
-    hierarchy, controlled contact detail, and no lighting choice that erases the user's requested
-    content.
-  texture_and_material: >-
-    Render Flour, flaky crust, dusting-flour, shatter-crust, air-pocket honeycomb, butter-laminate,
-    steam-gelatinized starch plus sauce viscosity, crumb structure, gelatin shine, raw sheen, baked
-    crust, ice, foam, steam, and surface freshness; surface scale, residue, gloss, grain, fiber,
-    pores, edges, or signal artifacts must remain coherent across figures, objects, and
-    environments.
-  camera_and_composition: >-
-    Compose with Rising dough, proofed-volume, oven-spring bloom, ear-and-gringe expansion,
-    scoring-blade slash plus plating geometry, negative space, ingredient rhythm, commercial
-    clarity, and edible detail scale as reusable framing grammar, allowing cards, portraits,
-    objects, scenes, and abstract prompts to inherit the style without one required layout.
-  atmosphere_and_mood: >-
-    Carry mood through freshness, indulgence, premium service, comfort, celebration, appetite, and
-    sensory immediacy; the emotional tone should feel specific to Bakery Window while still obeying
-    the prompt's subject and context.
-  rendering_and_quality: >-
-    Finish with appetizing material truth, precise gloss control, clean detail priority, and no
-    messy cafeteria drift; prioritize clean style recognition, prompt preservation, controlled
-    detail, and a finished image with no watermark, fake text, or accidental UI.
-  key_features: >-
-    Artisan bakehouse texture, crust-and-crumb warmth, pastry laminate detail, yeast-rise glow;
-    Crust cracks, ear-score lines, boule-dome contour, baguette-slash, croissant-laminate layers;
-    Flour, flaky crust, dusting-flour, shatter-crust, air-pocket honeycomb, butter-laminate,
-    steam-gelatinized starch; Warm yellow, bakery-window morning, incandescent-gold, crust-sheen
-    catch, steam-haze diffusion; Rising dough, proofed-volume, oven-spring bloom, ear-and-gringe
-    expansion, scoring-blade slash
-  creative_brief: >-
-    Use Bakery Window after prompt X as a transferable style layer: prompt X supplies subject,
-    action, and setting, while the preset supplies Artisan bakehouse texture, crust-and-crumb
-    warmth, pastry laminate detail, yeast-rise glow, Crust cracks, ear-score lines, boule-dome
-    contour, baguette-slash, croissant-laminate layers, Flour, flaky crust, dusting-flour,
-    shatter-crust, air-pocket honeycomb, butter-laminate, steam-gelatinized starch, Warm yellow,
-    bakery-window morning, incandescent-gold, crust-sheen catch, steam-haze diffusion, Rising dough,
-    proofed-volume, oven-spring bloom, ear-and-gringe expansion, scoring-blade slash plus portion
-    geometry, garnish rhythm, sauce motion, melt behavior, crumb, steam, condensation, and service
-    polish, palette behavior, light response, material treatment, and finish discipline without
-    requiring one specimen, prop bundle, product still, or card composition.
+  aesthetic: 'Bakery window: crusty loaves and laminated pastries in warm window light, flour dust and wooden trays.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — baked as bread or pastry: scored crust, laminated layers, glazes and flour dust."
+  color_and_tone: Golden browns, cream and warm wood, used consistently across subject and background.
+  lighting_and_shadow: Warm morning light through a shop window, expressed through the style rather than photographic lighting.
+  texture_and_material: Crust cracks, crumb, flaky layers and flour, visible at card size as the signature of the style.
+  camera_and_composition: Window display framing with trays and shelves, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Warm, homely, abundant and inviting, driven by the construction, color and rhythm.
+  rendering_and_quality: Photoreal bakery photography, with clean, deliberate marks and no accidental noise.
+  key_features: scored crust; laminated pastry; flour dust; window light
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bakery Window as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - brand packaging
+  - restaurant logo
+  - unappetizing grey food
   - burnt
   - messy cafeteria
   - fake food plastic
@@ -80,13 +40,16 @@ avoidRules:
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-051.webp
 attributes:
-  negativePrompt: >-
-    burnt, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card
-    scene, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, burnt, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

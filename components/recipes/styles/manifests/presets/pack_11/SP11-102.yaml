@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP11-102
+packId: pack_11
+name: Preserving Pantry Jars
+styleAnchors:
+  - Preserving Pantry Jars
+  - backlit preserves
+  - glowing jars
+displayName: Preserving Pantry Jars
+category: 4. Food And Drink
+domain: backlit preserves
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - food-and-drink
+  - preserves
+  - pantry
+  - food
+visualDna:
+  aesthetic: 'Preserving pantry: shelves of backlit jars with pickles, jams and ferments glowing like stained glass.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: turned into food: a named dish is shot this way, and any other subject is built, plated or served as food — preserved in glass jars: pickled, fermented or candied, with liquid glowing when backlit."
+  color_and_tone: Amber, ruby, green and golden liquids, used consistently across subject and background.
+  lighting_and_shadow: Window backlight through jars, expressed through the style rather than photographic lighting.
+  texture_and_material: Glass jars, brine, wax seals and wood shelves, visible at card size as the signature of the style.
+  camera_and_composition: Shelf framing with rows of jars, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Homely, patient, abundant and mysterious, driven by the construction, color and rhythm.
+  rendering_and_quality: Photoreal still life photography, with clean, deliberate marks and no accidental noise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Preserving Pantry Jars as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: glowing jars; brine; wax seals; shelves
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - brand packaging
+  - restaurant logo
+  - unappetizing grey food
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, brand packaging, restaurant logo, unappetizing grey food, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_11
+  packName: Miscellaneous & Fun
+  categoryId: food-and-drink
+  categoryName: 4. Food And Drink
+  tags:
+    - miscellaneous-and-fun
+    - food-and-drink
+    - preserves
+    - pantry
+    - food
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: backlit preserves
