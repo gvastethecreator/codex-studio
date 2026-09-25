@@ -3,7 +3,7 @@ id: SP10-076
 packId: pack_10
 name: Blueprint
 category: 7. Diagram And Data Systems
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,46 +12,25 @@ tags:
   - abstract-and-experimental
   - diagram-and-data-systems
 visualDna:
-  aesthetic: >-
-    Blueprint becomes a transferable diagram and information-graphic system: start from Technical
-    drawing and White on Blue, then route prompt content through schematic paths, encoded blocks,
-    contour logic, technical marks, and data-like organization without forcing one card scene.
-  subject_treatment: >-
-    Keep the user's subject recognizable while using White lines to map, route, blueprint, annotate,
-    contour, grid, or encode prompt subjects as information structure; preserve anatomy, object
-    identity, or scene intent beneath the abstraction.
-  color_and_tone: >-
-    Build the palette from Blue background; use palette as functional coding: substrate, traces,
-    line hierarchy, contrast fields, or chalk/paper logic, with enough value control that the
-    subject remains readable after the style layer is applied.
-  lighting_and_shadow: >-
-    Let Flat drive the light response: keep light diagrammatic, flat, backlit, chalky, or technical
-    so structure remains readable, avoiding generic glamour lighting unless the prompt explicitly
-    asks for it.
-  texture_and_material: >-
-    Render Paper as the tactile or mark-making basis; marks should feel like ink, chalk, copper,
-    pixels, contour lines, drafting strokes, or printed substrate, scaled to figures, props, spaces,
-    or close material studies.
-  camera_and_composition: >-
-    Compose around White on Blue as reusable spatial grammar: favor legible routes, modules, legends
-    without readable text, edge registration, grids, and information density, adapting cleanly to
-    portraits, objects, environments, and action scenes.
-  atmosphere_and_mood: >-
-    Use Planning, technical as the emotional register; derive mood from analysis, navigation,
-    computation, instruction, secrecy, or handmade classroom energy, without flattening strong,
-    strange, darker, or adult prompt intent when it is relevant.
-  rendering_and_quality: >-
-    Resolve as Architectural, plan: finish with clean information hierarchy, exact line weight, and
-    no random label soup, preserving prompt X as the base content and the preset as the style
-    router.
-  key_features: >-
-    Technical drawing; White lines; Blue background; Flat; Paper; White on Blue; Planning,
-    technical; Architectural, plan; White on Blue
-  creative_brief: >-
-    Apply blueprint drafting to the input: Prussian-blue field, white technical linework,
-    dimension-like marks without readable text, and construction schematics should make any subject
-    feel designed before built.
+  aesthetic: 'Blueprint: white technical line drawing on blue paper with dimension lines.'
+  subject_treatment: "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject is drawn in white orthographic lines with dimension arrows on blue."
+  color_and_tone: Prussian blue with white lines, following the conventions of this diagram language.
+  lighting_and_shadow: Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.
+  texture_and_material: Blueprint paper with grid, as the medium the diagram is drawn or printed on.
+  camera_and_composition: Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.
+  atmosphere_and_mood: Technical, engineered, precise and calm, coming from the diagram language.
+  rendering_and_quality: Clean, precise diagram rendering with consistent line weights and no random marks.
+  key_features: white lines on blue; dimension arrows; illustrative only
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blueprint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - readable labels or numbers
+  - scannable or functional code
+  - claims of accurate measurement
   - color
   - 3d
   - random text labels
@@ -60,12 +39,16 @@ avoidRules:
   - style-card boilerplate
   - muddy noise
   - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-076.webp
 attributes:
-  negativePrompt: >-
-    color, 3d, random text labels, unreadable diagram clutter, literal card scene, style-card
-    boilerplate, muddy noise, watermark
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, color, 3d, random text labels, unreadable diagram clutter, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

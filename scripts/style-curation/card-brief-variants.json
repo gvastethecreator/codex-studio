@@ -5407,5 +5407,85 @@
   "SP10-131": [
     "Hammered brass crown. No text or logo.",
     "Hammered pewter goblet with a knight's crest. No text or logo."
+  ],
+  "SP10-067": [
+    "Circuit-board knight on horseback. No readable text or logo.",
+    "Circuit-board castle. No readable text or logo."
+  ],
+  "SP10-068": [
+    "Topographic map of a crowned skull island. No readable text or logo.",
+    "Topographic map of a knight's helmet as terrain. No readable text or logo."
+  ],
+  "SP10-069": [
+    "QR-style module dragon. No text or logo.",
+    "QR-style module castle. No text or logo."
+  ],
+  "SP10-076": [
+    "Blueprint knight armor. No readable text or logo.",
+    "Blueprint castle gate. No readable text or logo."
+  ],
+  "SP10-077": [
+    "Chalkboard knight. No readable text or logo.",
+    "Chalkboard castle siege plan. No readable text or logo."
+  ],
+  "SP10-132": [
+    "Transit map dragon silhouette. No readable text or logo.",
+    "Transit map of a cathedral. No readable text or logo."
+  ],
+  "SP10-133": [
+    "Isotype castle chart. No readable text or logo.",
+    "Isotype sheep and wolves. No readable text or logo."
+  ],
+  "SP10-134": [
+    "Flowchart of a potion recipe. No readable text or logo.",
+    "Flowchart of a dragon's day. No readable text or logo."
+  ],
+  "SP10-135": [
+    "Star chart knight constellation. No readable text or logo.",
+    "Star chart crown. No readable text or logo."
+  ],
+  "SP10-136": [
+    "Isobar knight. No readable text or logo.",
+    "Isobar castle. No readable text or logo."
+  ],
+  "SP10-137": [
+    "Sankey knight. No readable text or logo.",
+    "Sankey tree. No readable text or logo."
+  ],
+  "SP10-138": [
+    "Knight family tree. No readable text or logo.",
+    "Witch coven lineage. No readable text or logo."
+  ],
+  "SP10-139": [
+    "Nautical chart knight. No readable text or logo.",
+    "Nautical chart kraken. No readable text or logo."
+  ],
+  "SP10-140": [
+    "Wizard mind map. No readable text or logo.",
+    "Castle mind map. No readable text or logo."
+  ],
+  "SP10-141": [
+    "Orbital knight helmet. No readable text or logo.",
+    "Orbital castle. No readable text or logo."
+  ],
+  "SP10-142": [
+    "Treasure map of a castle. No readable text or logo.",
+    "Treasure map dragon lair. No readable text or logo."
+  ],
+  "SP10-143": [
+    "Schematic knight. No readable text or logo.",
+    "Schematic castle. No readable text or logo."
+  ],
+  "SP10-144": [
+    "Heatmap knight. No readable text or logo.",
+    "Heatmap castle. No readable text or logo."
+  ],
+  "SP10-145": [
+    "Sunburst dragon eye. No readable text or logo.",
+    "Sunburst crown. No readable text or logo."
+  ],
+  "SP10-146": [
+    "Cutaway dragon anatomy. No readable text or logo.",
+    "Cutaway windmill. No readable text or logo."
   ]
 }

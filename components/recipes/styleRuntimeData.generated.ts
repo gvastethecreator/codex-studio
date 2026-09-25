@@ -117,7 +117,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       'A semantically grouped abstract library covering geometric systems, reactive material flows, glitch-native signal noise, dream-logic image spaces, and pattern- or texture-driven surfaces.',
     cardTitle: 'Abstract Lab',
     cardDescription: 'Glitch, geometry, surreal systems, visual experiments.',
-    presetCount: 131,
+    presetCount: 146,
   },
   {
     id: 'pack_11',

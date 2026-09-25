@@ -8,28 +8,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Circuit Board',
     category: '7. Diagram And Data Systems',
     negativePrompt:
-      'organic, random text labels, unreadable diagram clutter, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, organic, random text labels, unreadable diagram clutter, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Circuit Board becomes a transferable diagram and information-graphic system: start from PCB traces, then route prompt content through schematic paths, encoded blocks, contour logic, technical marks, and data-like organization without forcing one card scene.',
+        'Circuit board: the subject laid out as copper traces, pads and components on a PCB.',
       subject_treatment:
-        "Keep the user's subject recognizable while using 45 degree angles to map, route, blueprint, annotate, contour, grid, or encode prompt subjects as information structure; preserve anatomy, object identity, or scene intent beneath the abstraction.",
-      color_and_tone:
-        'Build the palette from Green, Gold, Copper; use palette as functional coding: substrate, traces, line hierarchy, contrast fields, or chalk/paper logic, with enough value control that the subject remains readable after the style layer is applied.',
+        "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject's silhouette is formed by copper traces, vias and chip pads on green solder mask.",
+      color_and_tone: 'Green solder mask, copper gold and white silkscreen marks.',
       lighting_and_shadow:
-        'Let Flat drive the light response: keep light diagrammatic, flat, backlit, chalky, or technical so structure remains readable, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.',
       texture_and_material:
-        'Render Fiberglass as the tactile or mark-making basis; marks should feel like ink, chalk, copper, pixels, contour lines, drafting strokes, or printed substrate, scaled to figures, props, spaces, or close material studies.',
+        'PCB substrate with traces and pads, as the medium the diagram is drawn or printed on.',
       camera_and_composition:
-        'Compose around Traces as reusable spatial grammar: favor legible routes, modules, legends without readable text, edge registration, grids, and information density, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.',
       atmosphere_and_mood:
-        'Use Smart, complex as the emotional register; derive mood from analysis, navigation, computation, instruction, secrecy, or handmade classroom energy, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Technical, intricate, electric and precise, coming from the diagram language.',
       rendering_and_quality:
-        'Resolve as Tech, electronic: finish with clean information hierarchy, exact line weight, and no random label soup, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'PCB traces; 45 degree angles; Green, Gold, Copper; Flat; Fiberglass; Traces; Smart, complex; Tech, electronic; Traces',
+        'Clean, precise diagram rendering with consistent line weights and no random marks.',
+      key_features: 'copper traces; vias; component pads; illustrative only',
       creative_brief:
-        'Route any subject through Circuit Board as a transferable diagram or data-graphic visual system: preserve prompt intent while converting structure, modules, paths, grids, marks, and information rhythm through this preset. Apply PCB-trace logic over the input with green fiberglass fields, copper-gold right-angle paths, dense electronic routing, solder-pad nodes, and engineered computation as surface pattern. If tech, machine, object, or interface exists, make circuitry functional; otherwise map circuit topology across forms without forcing a literal board.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Circuit Board as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +35,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Topographic Map',
     category: '7. Diagram And Data Systems',
     negativePrompt:
-      'straight lines, random text labels, unreadable diagram clutter, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, straight lines, random text labels, unreadable diagram clutter, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Topographic Map becomes a transferable diagram and information-graphic system: start from Elevation contour lines and Contours, then route prompt content through schematic paths, encoded blocks, contour logic, technical marks, and data-like organization without forcing one card scene.',
+      aesthetic: 'Topographic map: the subject described by contour lines and elevation tints.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Wavy parallel lines to map, route, blueprint, annotate, contour, grid, or encode prompt subjects as information structure; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject is drawn as nested contour lines with hypsometric tints.",
       color_and_tone:
-        'Build the palette from Line art; use palette as functional coding: substrate, traces, line hierarchy, contrast fields, or chalk/paper logic, with enough value control that the subject remains readable after the style layer is applied.',
+        'Contour browns with elevation greens and tans, following the conventions of this diagram language.',
       lighting_and_shadow:
-        'Let Flat drive the light response: keep light diagrammatic, flat, backlit, chalky, or technical so structure remains readable, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.',
       texture_and_material:
-        'Render Paper as the tactile or mark-making basis; marks should feel like ink, chalk, copper, pixels, contour lines, drafting strokes, or printed substrate, scaled to figures, props, spaces, or close material studies.',
+        'Paper map with contour lines, as the medium the diagram is drawn or printed on.',
       camera_and_composition:
-        'Compose around Contours as reusable spatial grammar: favor legible routes, modules, legends without readable text, edge registration, grids, and information density, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.',
       atmosphere_and_mood:
-        'Use Exploration as the emotional register; derive mood from analysis, navigation, computation, instruction, secrecy, or handmade classroom energy, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Exploratory, calm, precise and geographic, coming from the diagram language.',
       rendering_and_quality:
-        'Resolve as Contour-line abstraction: finish with clean information hierarchy, exact line weight, and no random label soup, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Elevation contour lines; Wavy parallel lines; Line art; Flat; Paper; Contours; Exploration; Contour-line abstraction; Contours',
+        'Clean, precise diagram rendering with consistent line weights and no random marks.',
+      key_features: 'nested contours; elevation tints; illustrative only',
       creative_brief:
-        "Apply topographic contour logic over the input with wavy parallel lines, nested elevation bands, paper-map flatness, and geographic rhythm that behaves like fingerprints. If terrain exists, describe it; otherwise contour the subject's planes and volumes without requiring mountains or a literal map.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Topographic Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +62,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'QR Code Style',
     category: '7. Diagram And Data Systems',
     negativePrompt:
-      'round, analog, random text labels, unreadable diagram clutter, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, round, analog, random text labels, unreadable diagram clutter, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'QR Code Style becomes a transferable diagram and information-graphic system: start from Data matrix, Corner markers, and Blocky, then route prompt content through schematic paths, encoded blocks, contour logic, technical marks, and data-like organization without forcing one card scene.',
+        'QR-style pattern: square module grid inspired by QR codes, decorative and non-scannable.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Square pixels to map, route, blueprint, annotate, contour, grid, or encode prompt subjects as information structure; preserve anatomy, object identity, or scene intent beneath the abstraction.",
-      color_and_tone:
-        'Build the palette from Black and White; use palette as functional coding: substrate, traces, line hierarchy, contrast fields, or chalk/paper logic, with enough value control that the subject remains readable after the style layer is applied.',
+        "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject is built from black square modules with finder-like corner squares, deliberately non-functional.",
+      color_and_tone: 'Black modules on white, following the conventions of this diagram language.',
       lighting_and_shadow:
-        'Let Flat drive the light response: keep light diagrammatic, flat, backlit, chalky, or technical so structure remains readable, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.',
       texture_and_material:
-        'Render Digital as the tactile or mark-making basis; marks should feel like ink, chalk, copper, pixels, contour lines, drafting strokes, or printed substrate, scaled to figures, props, spaces, or close material studies.',
+        'Square pixel modules, as the medium the diagram is drawn or printed on.',
       camera_and_composition:
-        'Compose around Blocky as reusable spatial grammar: favor legible routes, modules, legends without readable text, edge registration, grids, and information density, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.',
       atmosphere_and_mood:
-        'Use Digital, code as the emotional register; derive mood from analysis, navigation, computation, instruction, secrecy, or handmade classroom energy, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Digital, graphic, cryptic and modern, coming from the diagram language.',
       rendering_and_quality:
-        'Resolve as Machine readable: finish with clean information hierarchy, exact line weight, and no random label soup, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Data matrix; Square pixels; Black and White; Flat; Digital; Blocky; Digital, code; Machine readable; Corner markers',
+        'Clean, precise diagram rendering with consistent line weights and no random marks.',
+      key_features: 'square module grid; decorative finder squares; illustrative only',
       creative_brief:
-        'Route any subject through QR Code Style as a transferable diagram or data-graphic visual system: preserve prompt intent while converting structure, modules, paths, grids, marks, and information rhythm through this preset. Apply QR-code data grammar to the input: black-white square modules, finder-pattern logic, dense machine-readable clustering, and alien data blocks should abstract forms without creating readable codes.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies QR Code Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +89,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Blueprint',
     category: '7. Diagram And Data Systems',
     negativePrompt:
-      'color, 3d, random text labels, unreadable diagram clutter, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, color, 3d, random text labels, unreadable diagram clutter, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Blueprint becomes a transferable diagram and information-graphic system: start from Technical drawing and White on Blue, then route prompt content through schematic paths, encoded blocks, contour logic, technical marks, and data-like organization without forcing one card scene.',
+      aesthetic: 'Blueprint: white technical line drawing on blue paper with dimension lines.',
       subject_treatment:
-        "Keep the user's subject recognizable while using White lines to map, route, blueprint, annotate, contour, grid, or encode prompt subjects as information structure; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject is drawn in white orthographic lines with dimension arrows on blue.",
       color_and_tone:
-        'Build the palette from Blue background; use palette as functional coding: substrate, traces, line hierarchy, contrast fields, or chalk/paper logic, with enough value control that the subject remains readable after the style layer is applied.',
+        'Prussian blue with white lines, following the conventions of this diagram language.',
       lighting_and_shadow:
-        'Let Flat drive the light response: keep light diagrammatic, flat, backlit, chalky, or technical so structure remains readable, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.',
       texture_and_material:
-        'Render Paper as the tactile or mark-making basis; marks should feel like ink, chalk, copper, pixels, contour lines, drafting strokes, or printed substrate, scaled to figures, props, spaces, or close material studies.',
+        'Blueprint paper with grid, as the medium the diagram is drawn or printed on.',
       camera_and_composition:
-        'Compose around White on Blue as reusable spatial grammar: favor legible routes, modules, legends without readable text, edge registration, grids, and information density, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.',
       atmosphere_and_mood:
-        'Use Planning, technical as the emotional register; derive mood from analysis, navigation, computation, instruction, secrecy, or handmade classroom energy, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Technical, engineered, precise and calm, coming from the diagram language.',
       rendering_and_quality:
-        'Resolve as Architectural, plan: finish with clean information hierarchy, exact line weight, and no random label soup, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Technical drawing; White lines; Blue background; Flat; Paper; White on Blue; Planning, technical; Architectural, plan; White on Blue',
+        'Clean, precise diagram rendering with consistent line weights and no random marks.',
+      key_features: 'white lines on blue; dimension arrows; illustrative only',
       creative_brief:
-        'Apply blueprint drafting to the input: Prussian-blue field, white technical linework, dimension-like marks without readable text, and construction schematics should make any subject feel designed before built.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blueprint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +116,517 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Chalkboard Art',
     category: '7. Diagram And Data Systems',
     negativePrompt:
-      'pen, ink, random text labels, unreadable diagram clutter, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, pen, ink, random text labels, unreadable diagram clutter, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Chalkboard Art becomes a transferable diagram and information-graphic system: start from Chalk on blackboard, Black background, and Smudged, then route prompt content through schematic paths, encoded blocks, contour logic, technical marks, and data-like organization without forcing one card scene.',
+        'Chalkboard art: chalk drawing on a slate board with smudges and hand-drawn diagram marks.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Dusty, variable width to map, route, blueprint, annotate, contour, grid, or encode prompt subjects as information structure; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject is chalk-drawn with arrows, circles and underlines on slate.",
       color_and_tone:
-        'Build the palette from White, Pastel on Black; use palette as functional coding: substrate, traces, line hierarchy, contrast fields, or chalk/paper logic, with enough value control that the subject remains readable after the style layer is applied.',
+        'White and pastel chalk on dark slate, following the conventions of this diagram language.',
       lighting_and_shadow:
-        'Let Flat drive the light response: keep light diagrammatic, flat, backlit, chalky, or technical so structure remains readable, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.',
       texture_and_material:
-        'Render Chalk dust, slate as the tactile or mark-making basis; marks should feel like ink, chalk, copper, pixels, contour lines, drafting strokes, or printed substrate, scaled to figures, props, spaces, or close material studies.',
+        'Chalk strokes and smudges, as the medium the diagram is drawn or printed on.',
       camera_and_composition:
-        'Compose around Smudged as reusable spatial grammar: favor legible routes, modules, legends without readable text, edge registration, grids, and information density, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.',
       atmosphere_and_mood:
-        'Use Casual, hand drawn as the emotional register; derive mood from analysis, navigation, computation, instruction, secrecy, or handmade classroom energy, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Educational, handmade, charming and nostalgic, coming from the diagram language.',
       rendering_and_quality:
-        'Resolve as Temporary, hand-drawn: finish with clean information hierarchy, exact line weight, and no random label soup, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Chalk on blackboard; Dusty, variable width; White, Pastel on Black; Flat; Chalk dust, slate; Smudged; Casual, hand drawn; Temporary, hand-drawn; Black background',
+        'Clean, precise diagram rendering with consistent line weights and no random marks.',
+      key_features: 'chalk strokes; slate; smudges; illustrative only',
       creative_brief:
-        'Route any subject through Chalkboard Art as a transferable diagram or data-graphic visual system: preserve prompt intent while converting structure, modules, paths, grids, marks, and information rhythm through this preset. Apply chalkboard dust to the input: slate-dark grounds, soft powder strokes, smudged edges, erasable residue, and hand-drawn instructional marks without readable text should make forms feel temporary and tactile.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chalkboard Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP10-132',
+    name: 'Transit Map Diagram',
+    displayName: 'Transit Map Diagram',
+    styleAnchors: ['Transit Map Diagram', 'schematic transit map', '45-degree routes'],
+    category: '7. Diagram And Data Systems',
+    domain: 'schematic transit map',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Transit map: colored lines at 45° and 90° with station dots and interchange rings.',
+      subject_treatment:
+        "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject is abstracted into colored routes with station dots.",
+      color_and_tone:
+        'Bright route colors on white, following the conventions of this diagram language.',
+      lighting_and_shadow:
+        'Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.',
+      texture_and_material:
+        'Clean schematic lines, as the medium the diagram is drawn or printed on.',
+      camera_and_composition:
+        'Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.',
+      atmosphere_and_mood: 'Orderly, modern, clear and urban, coming from the diagram language.',
+      rendering_and_quality:
+        'Clean, precise diagram rendering with consistent line weights and no random marks.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Transit Map Diagram as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: '45-degree routes; station dots; illustrative only',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-133',
+    name: 'Isotype Pictograms',
+    displayName: 'Isotype Pictograms',
+    styleAnchors: ['Isotype Pictograms', 'isotype pictogram charts', 'repeated pictograms'],
+    category: '7. Diagram And Data Systems',
+    domain: 'isotype pictogram charts',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Isotype: rows of repeated flat pictograms showing quantities.',
+      subject_treatment:
+        "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject is shown as repeated flat pictogram units in rows.",
+      color_and_tone: 'Few flat colors, following the conventions of this diagram language.',
+      lighting_and_shadow:
+        'Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.',
+      texture_and_material:
+        'Flat printed pictograms, as the medium the diagram is drawn or printed on.',
+      camera_and_composition:
+        'Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.',
+      atmosphere_and_mood:
+        'Clear, didactic, modernist and friendly, coming from the diagram language.',
+      rendering_and_quality:
+        'Clean, precise diagram rendering with consistent line weights and no random marks.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Isotype Pictograms as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'repeated pictograms; rows; illustrative only',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-134',
+    name: 'Flowchart Nodes',
+    displayName: 'Flowchart Nodes',
+    styleAnchors: ['Flowchart Nodes', 'flowchart diagram', 'boxes'],
+    category: '7. Diagram And Data Systems',
+    domain: 'flowchart diagram',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Flowchart: boxes, diamonds and arrows connecting steps.',
+      subject_treatment:
+        "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject's parts become connected nodes and decision diamonds.",
+      color_and_tone:
+        'Pastel boxes with dark lines, following the conventions of this diagram language.',
+      lighting_and_shadow:
+        'Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.',
+      texture_and_material:
+        'Clean vector shapes, as the medium the diagram is drawn or printed on.',
+      camera_and_composition:
+        'Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.',
+      atmosphere_and_mood:
+        'Logical, playful, clear and structured, coming from the diagram language.',
+      rendering_and_quality:
+        'Clean, precise diagram rendering with consistent line weights and no random marks.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Flowchart Nodes as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'boxes; diamonds; arrows; illustrative only',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-135',
+    name: 'Star Chart',
+    displayName: 'Star Chart',
+    styleAnchors: ['Star Chart', 'celestial star chart', 'constellation lines'],
+    category: '7. Diagram And Data Systems',
+    domain: 'celestial star chart',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Star chart: constellation lines, star dots and coordinate grid on dark blue.',
+      subject_treatment:
+        "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject is drawn as a constellation over a celestial grid.",
+      color_and_tone:
+        'Dark blue with gold and white stars, following the conventions of this diagram language.',
+      lighting_and_shadow:
+        'Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.',
+      texture_and_material:
+        'Engraved celestial chart, as the medium the diagram is drawn or printed on.',
+      camera_and_composition:
+        'Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.',
+      atmosphere_and_mood:
+        'Mystical, navigational, calm and cosmic, coming from the diagram language.',
+      rendering_and_quality:
+        'Clean, precise diagram rendering with consistent line weights and no random marks.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Star Chart as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'constellation lines; coordinate grid; illustrative only',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-136',
+    name: 'Weather Isobar Map',
+    displayName: 'Weather Isobar Map',
+    styleAnchors: ['Weather Isobar Map', 'weather isobar chart', 'isobars'],
+    category: '7. Diagram And Data Systems',
+    domain: 'weather isobar chart',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Weather map: isobars, front symbols and pressure cells.',
+      subject_treatment:
+        "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject's shape is formed by isobars and front lines.",
+      color_and_tone:
+        'White lines, blue and red fronts, following the conventions of this diagram language.',
+      lighting_and_shadow:
+        'Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.',
+      texture_and_material:
+        'Map base with isobars, as the medium the diagram is drawn or printed on.',
+      camera_and_composition:
+        'Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.',
+      atmosphere_and_mood: 'Scientific, dynamic, clear and calm, coming from the diagram language.',
+      rendering_and_quality:
+        'Clean, precise diagram rendering with consistent line weights and no random marks.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Weather Isobar Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'isobars; front symbols; illustrative only',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-137',
+    name: 'Sankey Flow Diagram',
+    displayName: 'Sankey Flow Diagram',
+    styleAnchors: ['Sankey Flow Diagram', 'sankey flow diagram', 'flowing bands'],
+    category: '7. Diagram And Data Systems',
+    domain: 'sankey flow diagram',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Sankey: flowing bands of varying width splitting and merging.',
+      subject_treatment:
+        "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: flowing bands split and merge to form the subject.",
+      color_and_tone:
+        'Soft gradient band colors, following the conventions of this diagram language.',
+      lighting_and_shadow:
+        'Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.',
+      texture_and_material:
+        'Smooth vector bands, as the medium the diagram is drawn or printed on.',
+      camera_and_composition:
+        'Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.',
+      atmosphere_and_mood:
+        'Elegant, informative, flowing and calm, coming from the diagram language.',
+      rendering_and_quality:
+        'Clean, precise diagram rendering with consistent line weights and no random marks.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sankey Flow Diagram as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'flowing bands; splits and merges; illustrative only',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-138',
+    name: 'Genealogy Tree',
+    displayName: 'Genealogy Tree',
+    styleAnchors: ['Genealogy Tree', 'family tree diagram', 'branching lineage'],
+    category: '7. Diagram And Data Systems',
+    domain: 'family tree diagram',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Genealogy tree: branching lineage with portrait medallions.',
+      subject_treatment:
+        "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject becomes a branching family tree of medallions.",
+      color_and_tone:
+        'Parchment with sepia and gold, following the conventions of this diagram language.',
+      lighting_and_shadow:
+        'Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.',
+      texture_and_material:
+        'Engraved lines on parchment, as the medium the diagram is drawn or printed on.',
+      camera_and_composition:
+        'Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.',
+      atmosphere_and_mood:
+        'Heritage, royal, orderly and nostalgic, coming from the diagram language.',
+      rendering_and_quality:
+        'Clean, precise diagram rendering with consistent line weights and no random marks.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Genealogy Tree as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'branching lineage; medallions; illustrative only',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-139',
+    name: 'Nautical Chart',
+    displayName: 'Nautical Chart',
+    styleAnchors: ['Nautical Chart', 'nautical navigation chart', 'compass roses'],
+    category: '7. Diagram And Data Systems',
+    domain: 'nautical navigation chart',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Nautical chart: coastlines, depth soundings as dots, compass roses and rhumb lines.',
+      subject_treatment:
+        "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject becomes a coastline with rhumb lines and compass roses.",
+      color_and_tone:
+        'Pale blue sea, buff land, sepia lines, following the conventions of this diagram language.',
+      lighting_and_shadow:
+        'Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.',
+      texture_and_material:
+        'Engraved chart paper, as the medium the diagram is drawn or printed on.',
+      camera_and_composition:
+        'Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.',
+      atmosphere_and_mood:
+        'Adventurous, navigational, antique and calm, coming from the diagram language.',
+      rendering_and_quality:
+        'Clean, precise diagram rendering with consistent line weights and no random marks.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Nautical Chart as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'compass roses; rhumb lines; illustrative only',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-140',
+    name: 'Mind Map Web',
+    displayName: 'Mind Map Web',
+    styleAnchors: ['Mind Map Web', 'radial mind map', 'central node'],
+    category: '7. Diagram And Data Systems',
+    domain: 'radial mind map',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Mind map: a central node with radiating branches and doodle icons.',
+      subject_treatment:
+        "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject is at the center with radiating branches of related doodles.",
+      color_and_tone:
+        'Colorful branches on white, following the conventions of this diagram language.',
+      lighting_and_shadow:
+        'Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.',
+      texture_and_material:
+        'Hand-drawn marker lines, as the medium the diagram is drawn or printed on.',
+      camera_and_composition:
+        'Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.',
+      atmosphere_and_mood:
+        'Creative, energetic, playful and personal, coming from the diagram language.',
+      rendering_and_quality:
+        'Clean, precise diagram rendering with consistent line weights and no random marks.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mind Map Web as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'central node; radiating branches; illustrative only',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-141',
+    name: 'Orbital Diagram',
+    displayName: 'Orbital Diagram',
+    styleAnchors: ['Orbital Diagram', 'orbital mechanics diagram', 'concentric ellipses'],
+    category: '7. Diagram And Data Systems',
+    domain: 'orbital mechanics diagram',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Orbital diagram: concentric ellipses, bodies and trajectory arcs.',
+      subject_treatment:
+        "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject sits at the center of concentric orbits with small bodies.",
+      color_and_tone:
+        'Black lines on cream or white on navy, following the conventions of this diagram language.',
+      lighting_and_shadow:
+        'Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.',
+      texture_and_material: 'Precise ellipses, as the medium the diagram is drawn or printed on.',
+      camera_and_composition:
+        'Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.',
+      atmosphere_and_mood:
+        'Scientific, cosmic, orderly and calm, coming from the diagram language.',
+      rendering_and_quality:
+        'Clean, precise diagram rendering with consistent line weights and no random marks.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Orbital Diagram as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'concentric ellipses; trajectories; illustrative only',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-142',
+    name: 'Treasure Map',
+    displayName: 'Treasure Map',
+    styleAnchors: ['Treasure Map', 'hand-drawn treasure map', 'dotted path'],
+    category: '7. Diagram And Data Systems',
+    domain: 'hand-drawn treasure map',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Treasure map: hand-drawn parchment map with dotted paths, X marks and sea monsters.',
+      subject_treatment:
+        "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject is drawn as a landmark on a hand-drawn treasure map.",
+      color_and_tone:
+        'Sepia ink on aged parchment, following the conventions of this diagram language.',
+      lighting_and_shadow:
+        'Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.',
+      texture_and_material:
+        'Stained parchment, ink, as the medium the diagram is drawn or printed on.',
+      camera_and_composition:
+        'Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.',
+      atmosphere_and_mood:
+        'Adventurous, playful, antique and mysterious, coming from the diagram language.',
+      rendering_and_quality:
+        'Clean, precise diagram rendering with consistent line weights and no random marks.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Treasure Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'dotted path; X mark; aged parchment; illustrative only',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-143',
+    name: 'Wiring Schematic',
+    displayName: 'Wiring Schematic',
+    styleAnchors: ['Wiring Schematic', 'electrical schematic', 'schematic symbols'],
+    category: '7. Diagram And Data Systems',
+    domain: 'electrical schematic',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Wiring schematic: symbols for resistors, switches and nodes connected by right-angle lines.',
+      subject_treatment:
+        "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject is abstracted into schematic symbols and wires.",
+      color_and_tone: 'Black lines on white, following the conventions of this diagram language.',
+      lighting_and_shadow:
+        'Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.',
+      texture_and_material:
+        'Clean vector schematic, as the medium the diagram is drawn or printed on.',
+      camera_and_composition:
+        'Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.',
+      atmosphere_and_mood:
+        'Technical, precise, clever and clean, coming from the diagram language.',
+      rendering_and_quality:
+        'Clean, precise diagram rendering with consistent line weights and no random marks.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wiring Schematic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'schematic symbols; right-angle wires; illustrative only',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-144',
+    name: 'Heatmap Grid',
+    displayName: 'Heatmap Grid',
+    styleAnchors: ['Heatmap Grid', 'heatmap grid', 'cool-to-hot grid cells'],
+    category: '7. Diagram And Data Systems',
+    domain: 'heatmap grid',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Heatmap: grid cells colored from cool to hot values.',
+      subject_treatment:
+        "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject emerges from a grid of cool-to-hot colored cells.",
+      color_and_tone: 'Blue to yellow to red, following the conventions of this diagram language.',
+      lighting_and_shadow:
+        'Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.',
+      texture_and_material: 'Flat grid cells, as the medium the diagram is drawn or printed on.',
+      camera_and_composition:
+        'Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.',
+      atmosphere_and_mood: 'Analytical, bold, vivid and clear, coming from the diagram language.',
+      rendering_and_quality:
+        'Clean, precise diagram rendering with consistent line weights and no random marks.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Heatmap Grid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'cool-to-hot grid cells; illustrative only',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-145',
+    name: 'Radial Sunburst Chart',
+    displayName: 'Radial Sunburst Chart',
+    styleAnchors: ['Radial Sunburst Chart', 'sunburst chart', 'concentric segment rings'],
+    category: '7. Diagram And Data Systems',
+    domain: 'sunburst chart',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Sunburst chart: concentric rings of segments radiating from a center.',
+      subject_treatment:
+        "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject is abstracted into concentric segmented rings.",
+      color_and_tone:
+        'Harmonious segment colors, following the conventions of this diagram language.',
+      lighting_and_shadow:
+        'Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.',
+      texture_and_material: 'Flat vector rings, as the medium the diagram is drawn or printed on.',
+      camera_and_composition:
+        'Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.',
+      atmosphere_and_mood: 'Structured, radial, vivid and clean, coming from the diagram language.',
+      rendering_and_quality:
+        'Clean, precise diagram rendering with consistent line weights and no random marks.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Radial Sunburst Chart as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'concentric segment rings; illustrative only',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-146',
+    name: 'Cutaway Isometric Diagram',
+    displayName: 'Cutaway Isometric Diagram',
+    styleAnchors: ['Cutaway Isometric Diagram', 'isometric cutaway diagram', 'isometric cutaway'],
+    category: '7. Diagram And Data Systems',
+    domain: 'isometric cutaway diagram',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Isometric cutaway: the subject shown in isometric with sections removed to reveal inner parts and callout marks.',
+      subject_treatment:
+        "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject is shown isometric with cutaway sections and callout lines.",
+      color_and_tone:
+        'Clean flat colors with white, following the conventions of this diagram language.',
+      lighting_and_shadow:
+        'Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.',
+      texture_and_material:
+        'Vector isometric shading, as the medium the diagram is drawn or printed on.',
+      camera_and_composition:
+        'Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.',
+      atmosphere_and_mood:
+        'Explanatory, clever, detailed and clear, coming from the diagram language.',
+      rendering_and_quality:
+        'Clean, precise diagram rendering with consistent line weights and no random marks.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cutaway Isometric Diagram as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'isometric cutaway; callout lines; illustrative only',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

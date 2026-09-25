@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP10-133
+packId: pack_10
+name: Isotype Pictograms
+styleAnchors:
+  - Isotype Pictograms
+  - isotype pictogram charts
+  - repeated pictograms
+displayName: Isotype Pictograms
+category: 7. Diagram And Data Systems
+domain: isotype pictogram charts
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - diagram-and-data-systems
+  - isotype
+  - pictogram
+  - diagram
+visualDna:
+  aesthetic: 'Isotype: rows of repeated flat pictograms showing quantities.'
+  subject_treatment: "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject is shown as repeated flat pictogram units in rows."
+  color_and_tone: Few flat colors, following the conventions of this diagram language.
+  lighting_and_shadow: Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.
+  texture_and_material: Flat printed pictograms, as the medium the diagram is drawn or printed on.
+  camera_and_composition: Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.
+  atmosphere_and_mood: Clear, didactic, modernist and friendly, coming from the diagram language.
+  rendering_and_quality: Clean, precise diagram rendering with consistent line weights and no random marks.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Isotype Pictograms as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: repeated pictograms; rows; illustrative only
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - readable labels or numbers
+  - scannable or functional code
+  - claims of accurate measurement
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_10
+  packName: Abstract & Experimental
+  categoryId: diagram-and-data-systems
+  categoryName: 7. Diagram And Data Systems
+  tags:
+    - abstract-and-experimental
+    - diagram-and-data-systems
+    - isotype
+    - pictogram
+    - diagram
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: isotype pictogram charts

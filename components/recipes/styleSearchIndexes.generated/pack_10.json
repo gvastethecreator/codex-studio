@@ -3,7 +3,7 @@
     {
       "id": "pack_10",
       "name": "Abstract & Experimental",
-      "presetCount": 131
+      "presetCount": 146
     }
   ],
   "presets": [
@@ -1718,6 +1718,232 @@
       "searchableText": "sp10-077 chalkboard art 7. diagram and data systems diagram languages pack_10 abstract & experimental diagram-and-data-systems abstract-and-experimental diagram-and-data-systems"
     },
     {
+      "id": "SP10-132",
+      "name": "Transit Map Diagram",
+      "styleAnchors": ["Transit Map Diagram", "schematic transit map", "45-degree routes"],
+      "ref": "pack_10/SP10-132.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "diagram-and-data-systems",
+      "categoryName": "7. Diagram And Data Systems",
+      "domain": "schematic transit map",
+      "tags": ["abstract-and-experimental", "diagram-and-data-systems", "schematic-transit-map"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-132 transit map diagram schematic transit map 45-degree routes 7. diagram and data systems diagram languages schematic transit map pack_10 abstract & experimental diagram-and-data-systems abstract-and-experimental diagram-and-data-systems schematic-transit-map"
+    },
+    {
+      "id": "SP10-133",
+      "name": "Isotype Pictograms",
+      "styleAnchors": ["Isotype Pictograms", "isotype pictogram charts", "repeated pictograms"],
+      "ref": "pack_10/SP10-133.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "diagram-and-data-systems",
+      "categoryName": "7. Diagram And Data Systems",
+      "domain": "isotype pictogram charts",
+      "tags": ["abstract-and-experimental", "diagram-and-data-systems", "isotype-pictogram-charts"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-133 isotype pictograms isotype pictogram charts repeated pictograms 7. diagram and data systems diagram languages isotype pictogram charts pack_10 abstract & experimental diagram-and-data-systems abstract-and-experimental diagram-and-data-systems isotype-pictogram-charts"
+    },
+    {
+      "id": "SP10-134",
+      "name": "Flowchart Nodes",
+      "styleAnchors": ["Flowchart Nodes", "flowchart diagram", "boxes"],
+      "ref": "pack_10/SP10-134.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "diagram-and-data-systems",
+      "categoryName": "7. Diagram And Data Systems",
+      "domain": "flowchart diagram",
+      "tags": ["abstract-and-experimental", "diagram-and-data-systems", "flowchart-diagram"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-134 flowchart nodes flowchart diagram boxes 7. diagram and data systems diagram languages flowchart diagram pack_10 abstract & experimental diagram-and-data-systems abstract-and-experimental diagram-and-data-systems flowchart-diagram"
+    },
+    {
+      "id": "SP10-135",
+      "name": "Star Chart",
+      "styleAnchors": ["Star Chart", "celestial star chart", "constellation lines"],
+      "ref": "pack_10/SP10-135.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "diagram-and-data-systems",
+      "categoryName": "7. Diagram And Data Systems",
+      "domain": "celestial star chart",
+      "tags": ["abstract-and-experimental", "diagram-and-data-systems", "celestial-star-chart"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-135 star chart celestial star chart constellation lines 7. diagram and data systems diagram languages celestial star chart pack_10 abstract & experimental diagram-and-data-systems abstract-and-experimental diagram-and-data-systems celestial-star-chart"
+    },
+    {
+      "id": "SP10-136",
+      "name": "Weather Isobar Map",
+      "styleAnchors": ["Weather Isobar Map", "weather isobar chart", "isobars"],
+      "ref": "pack_10/SP10-136.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "diagram-and-data-systems",
+      "categoryName": "7. Diagram And Data Systems",
+      "domain": "weather isobar chart",
+      "tags": ["abstract-and-experimental", "diagram-and-data-systems", "weather-isobar-chart"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-136 weather isobar map weather isobar chart isobars 7. diagram and data systems diagram languages weather isobar chart pack_10 abstract & experimental diagram-and-data-systems abstract-and-experimental diagram-and-data-systems weather-isobar-chart"
+    },
+    {
+      "id": "SP10-137",
+      "name": "Sankey Flow Diagram",
+      "styleAnchors": ["Sankey Flow Diagram", "sankey flow diagram", "flowing bands"],
+      "ref": "pack_10/SP10-137.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "diagram-and-data-systems",
+      "categoryName": "7. Diagram And Data Systems",
+      "domain": "sankey flow diagram",
+      "tags": ["abstract-and-experimental", "diagram-and-data-systems", "sankey-flow-diagram"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-137 sankey flow diagram sankey flow diagram flowing bands 7. diagram and data systems diagram languages sankey flow diagram pack_10 abstract & experimental diagram-and-data-systems abstract-and-experimental diagram-and-data-systems sankey-flow-diagram"
+    },
+    {
+      "id": "SP10-138",
+      "name": "Genealogy Tree",
+      "styleAnchors": ["Genealogy Tree", "family tree diagram", "branching lineage"],
+      "ref": "pack_10/SP10-138.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "diagram-and-data-systems",
+      "categoryName": "7. Diagram And Data Systems",
+      "domain": "family tree diagram",
+      "tags": ["abstract-and-experimental", "diagram-and-data-systems", "family-tree-diagram"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-138 genealogy tree family tree diagram branching lineage 7. diagram and data systems diagram languages family tree diagram pack_10 abstract & experimental diagram-and-data-systems abstract-and-experimental diagram-and-data-systems family-tree-diagram"
+    },
+    {
+      "id": "SP10-139",
+      "name": "Nautical Chart",
+      "styleAnchors": ["Nautical Chart", "nautical navigation chart", "compass roses"],
+      "ref": "pack_10/SP10-139.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "diagram-and-data-systems",
+      "categoryName": "7. Diagram And Data Systems",
+      "domain": "nautical navigation chart",
+      "tags": [
+        "abstract-and-experimental",
+        "diagram-and-data-systems",
+        "nautical-navigation-chart"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-139 nautical chart nautical navigation chart compass roses 7. diagram and data systems diagram languages nautical navigation chart pack_10 abstract & experimental diagram-and-data-systems abstract-and-experimental diagram-and-data-systems nautical-navigation-chart"
+    },
+    {
+      "id": "SP10-140",
+      "name": "Mind Map Web",
+      "styleAnchors": ["Mind Map Web", "radial mind map", "central node"],
+      "ref": "pack_10/SP10-140.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "diagram-and-data-systems",
+      "categoryName": "7. Diagram And Data Systems",
+      "domain": "radial mind map",
+      "tags": ["abstract-and-experimental", "diagram-and-data-systems", "radial-mind-map"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-140 mind map web radial mind map central node 7. diagram and data systems diagram languages radial mind map pack_10 abstract & experimental diagram-and-data-systems abstract-and-experimental diagram-and-data-systems radial-mind-map"
+    },
+    {
+      "id": "SP10-141",
+      "name": "Orbital Diagram",
+      "styleAnchors": ["Orbital Diagram", "orbital mechanics diagram", "concentric ellipses"],
+      "ref": "pack_10/SP10-141.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "diagram-and-data-systems",
+      "categoryName": "7. Diagram And Data Systems",
+      "domain": "orbital mechanics diagram",
+      "tags": [
+        "abstract-and-experimental",
+        "diagram-and-data-systems",
+        "orbital-mechanics-diagram"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-141 orbital diagram orbital mechanics diagram concentric ellipses 7. diagram and data systems diagram languages orbital mechanics diagram pack_10 abstract & experimental diagram-and-data-systems abstract-and-experimental diagram-and-data-systems orbital-mechanics-diagram"
+    },
+    {
+      "id": "SP10-142",
+      "name": "Treasure Map",
+      "styleAnchors": ["Treasure Map", "hand-drawn treasure map", "dotted path"],
+      "ref": "pack_10/SP10-142.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "diagram-and-data-systems",
+      "categoryName": "7. Diagram And Data Systems",
+      "domain": "hand-drawn treasure map",
+      "tags": ["abstract-and-experimental", "diagram-and-data-systems", "hand-drawn-treasure-map"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-142 treasure map hand-drawn treasure map dotted path 7. diagram and data systems diagram languages hand-drawn treasure map pack_10 abstract & experimental diagram-and-data-systems abstract-and-experimental diagram-and-data-systems hand-drawn-treasure-map"
+    },
+    {
+      "id": "SP10-143",
+      "name": "Wiring Schematic",
+      "styleAnchors": ["Wiring Schematic", "electrical schematic", "schematic symbols"],
+      "ref": "pack_10/SP10-143.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "diagram-and-data-systems",
+      "categoryName": "7. Diagram And Data Systems",
+      "domain": "electrical schematic",
+      "tags": ["abstract-and-experimental", "diagram-and-data-systems", "electrical-schematic"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-143 wiring schematic electrical schematic schematic symbols 7. diagram and data systems diagram languages electrical schematic pack_10 abstract & experimental diagram-and-data-systems abstract-and-experimental diagram-and-data-systems electrical-schematic"
+    },
+    {
+      "id": "SP10-144",
+      "name": "Heatmap Grid",
+      "styleAnchors": ["Heatmap Grid", "heatmap grid", "cool-to-hot grid cells"],
+      "ref": "pack_10/SP10-144.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "diagram-and-data-systems",
+      "categoryName": "7. Diagram And Data Systems",
+      "domain": "heatmap grid",
+      "tags": ["abstract-and-experimental", "diagram-and-data-systems", "heatmap-grid"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-144 heatmap grid heatmap grid cool-to-hot grid cells 7. diagram and data systems diagram languages heatmap grid pack_10 abstract & experimental diagram-and-data-systems abstract-and-experimental diagram-and-data-systems heatmap-grid"
+    },
+    {
+      "id": "SP10-145",
+      "name": "Radial Sunburst Chart",
+      "styleAnchors": ["Radial Sunburst Chart", "sunburst chart", "concentric segment rings"],
+      "ref": "pack_10/SP10-145.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "diagram-and-data-systems",
+      "categoryName": "7. Diagram And Data Systems",
+      "domain": "sunburst chart",
+      "tags": ["abstract-and-experimental", "diagram-and-data-systems", "sunburst-chart"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-145 radial sunburst chart sunburst chart concentric segment rings 7. diagram and data systems diagram languages sunburst chart pack_10 abstract & experimental diagram-and-data-systems abstract-and-experimental diagram-and-data-systems sunburst-chart"
+    },
+    {
+      "id": "SP10-146",
+      "name": "Cutaway Isometric Diagram",
+      "styleAnchors": [
+        "Cutaway Isometric Diagram",
+        "isometric cutaway diagram",
+        "isometric cutaway"
+      ],
+      "ref": "pack_10/SP10-146.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "diagram-and-data-systems",
+      "categoryName": "7. Diagram And Data Systems",
+      "domain": "isometric cutaway diagram",
+      "tags": [
+        "abstract-and-experimental",
+        "diagram-and-data-systems",
+        "isometric-cutaway-diagram"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-146 cutaway isometric diagram isometric cutaway diagram isometric cutaway 7. diagram and data systems diagram languages isometric cutaway diagram pack_10 abstract & experimental diagram-and-data-systems abstract-and-experimental diagram-and-data-systems isometric-cutaway-diagram"
+    },
+    {
       "id": "SP10-072",
       "name": "Pointillism (Seurat)",
       "ref": "pack_10/SP10-072.yaml",
@@ -1790,5 +2016,5 @@
       "searchableText": "sp10-080 letterpress 9. print and light finishes print & light finish pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes"
     }
   ],
-  "totalPresetCount": 131
+  "totalPresetCount": 146
 }

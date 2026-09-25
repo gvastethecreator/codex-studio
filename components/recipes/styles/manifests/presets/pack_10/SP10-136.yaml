@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP10-136
+packId: pack_10
+name: Weather Isobar Map
+styleAnchors:
+  - Weather Isobar Map
+  - weather isobar chart
+  - isobars
+displayName: Weather Isobar Map
+category: 7. Diagram And Data Systems
+domain: weather isobar chart
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - diagram-and-data-systems
+  - isobar
+  - weather
+  - diagram
+visualDna:
+  aesthetic: 'Weather map: isobars, front symbols and pressure cells.'
+  subject_treatment: "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject's shape is formed by isobars and front lines."
+  color_and_tone: White lines, blue and red fronts, following the conventions of this diagram language.
+  lighting_and_shadow: Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.
+  texture_and_material: Map base with isobars, as the medium the diagram is drawn or printed on.
+  camera_and_composition: Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.
+  atmosphere_and_mood: Scientific, dynamic, clear and calm, coming from the diagram language.
+  rendering_and_quality: Clean, precise diagram rendering with consistent line weights and no random marks.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Weather Isobar Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: isobars; front symbols; illustrative only
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - readable labels or numbers
+  - scannable or functional code
+  - claims of accurate measurement
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_10
+  packName: Abstract & Experimental
+  categoryId: diagram-and-data-systems
+  categoryName: 7. Diagram And Data Systems
+  tags:
+    - abstract-and-experimental
+    - diagram-and-data-systems
+    - isobar
+    - weather
+    - diagram
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: weather isobar chart

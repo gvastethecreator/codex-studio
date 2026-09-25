@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP10-132
+packId: pack_10
+name: Transit Map Diagram
+styleAnchors:
+  - Transit Map Diagram
+  - schematic transit map
+  - 45-degree routes
+displayName: Transit Map Diagram
+category: 7. Diagram And Data Systems
+domain: schematic transit map
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - diagram-and-data-systems
+  - transit-map
+  - schematic
+  - diagram
+visualDna:
+  aesthetic: 'Transit map: colored lines at 45° and 90° with station dots and interchange rings.'
+  subject_treatment: "Present the prompt's subject as an illustrative diagram in this visual language, keeping it recognizable; labels are unreadable marks and nothing claims to be real data: the subject is abstracted into colored routes with station dots."
+  color_and_tone: Bright route colors on white, following the conventions of this diagram language.
+  lighting_and_shadow: Flat diagrammatic presentation with no dramatic lighting, unless the medium implies a surface such as paper or chalk.
+  texture_and_material: Clean schematic lines, as the medium the diagram is drawn or printed on.
+  camera_and_composition: Diagram layout with clear hierarchy, legend-like zones and the subject as the central readable figure.
+  atmosphere_and_mood: Orderly, modern, clear and urban, coming from the diagram language.
+  rendering_and_quality: Clean, precise diagram rendering with consistent line weights and no random marks.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Transit Map Diagram as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: 45-degree routes; station dots; illustrative only
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - readable labels or numbers
+  - scannable or functional code
+  - claims of accurate measurement
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable labels or numbers, scannable or functional code, claims of accurate measurement, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_10
+  packName: Abstract & Experimental
+  categoryId: diagram-and-data-systems
+  categoryName: 7. Diagram And Data Systems
+  tags:
+    - abstract-and-experimental
+    - diagram-and-data-systems
+    - transit-map
+    - schematic
+    - diagram
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: schematic transit map

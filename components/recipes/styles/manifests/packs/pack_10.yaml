@@ -153,6 +153,21 @@ categories:
       - pack_10/SP10-069.yaml
       - pack_10/SP10-076.yaml
       - pack_10/SP10-077.yaml
+      - pack_10/SP10-132.yaml
+      - pack_10/SP10-133.yaml
+      - pack_10/SP10-134.yaml
+      - pack_10/SP10-135.yaml
+      - pack_10/SP10-136.yaml
+      - pack_10/SP10-137.yaml
+      - pack_10/SP10-138.yaml
+      - pack_10/SP10-139.yaml
+      - pack_10/SP10-140.yaml
+      - pack_10/SP10-141.yaml
+      - pack_10/SP10-142.yaml
+      - pack_10/SP10-143.yaml
+      - pack_10/SP10-144.yaml
+      - pack_10/SP10-145.yaml
+      - pack_10/SP10-146.yaml
   - id: point-mosaic-and-glass-systems
     name: 8. Point, Mosaic And Glass Systems
     presetRefs:
@@ -291,6 +306,21 @@ presetRefs:
   - pack_10/SP10-069.yaml
   - pack_10/SP10-076.yaml
   - pack_10/SP10-077.yaml
+  - pack_10/SP10-132.yaml
+  - pack_10/SP10-133.yaml
+  - pack_10/SP10-134.yaml
+  - pack_10/SP10-135.yaml
+  - pack_10/SP10-136.yaml
+  - pack_10/SP10-137.yaml
+  - pack_10/SP10-138.yaml
+  - pack_10/SP10-139.yaml
+  - pack_10/SP10-140.yaml
+  - pack_10/SP10-141.yaml
+  - pack_10/SP10-142.yaml
+  - pack_10/SP10-143.yaml
+  - pack_10/SP10-144.yaml
+  - pack_10/SP10-145.yaml
+  - pack_10/SP10-146.yaml
   - pack_10/SP10-072.yaml
   - pack_10/SP10-073.yaml
   - pack_10/SP10-074.yaml
