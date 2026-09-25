@@ -115,6 +115,13 @@ categories:
       - pack_10/SP10-066.yaml
       - pack_10/SP10-070.yaml
       - pack_10/SP10-075.yaml
+      - pack_10/SP10-116.yaml
+      - pack_10/SP10-117.yaml
+      - pack_10/SP10-118.yaml
+      - pack_10/SP10-119.yaml
+      - pack_10/SP10-120.yaml
+      - pack_10/SP10-121.yaml
+      - pack_10/SP10-122.yaml
   - id: material-surface-textures
     name: 6. Material Surface Textures
     presetRefs:
@@ -243,6 +250,13 @@ presetRefs:
   - pack_10/SP10-066.yaml
   - pack_10/SP10-070.yaml
   - pack_10/SP10-075.yaml
+  - pack_10/SP10-116.yaml
+  - pack_10/SP10-117.yaml
+  - pack_10/SP10-118.yaml
+  - pack_10/SP10-119.yaml
+  - pack_10/SP10-120.yaml
+  - pack_10/SP10-121.yaml
+  - pack_10/SP10-122.yaml
   - pack_10/SP10-048.yaml
   - pack_10/SP10-054.yaml
   - pack_10/SP10-055.yaml

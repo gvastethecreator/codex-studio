@@ -8,28 +8,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Paisley Pattern',
     category: '5. Textile & Ornamental Patterns',
     negativePrompt:
-      'solid color, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, solid color, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Paisley Pattern becomes a transferable textile and ornamental pattern system: start from Teardrop shapes, Seamless, and Pattern repeat, then route prompt content through motifs, repeats, weave logic, decorative grids, stitched marks, and surface ornament without forcing one card scene.',
+      aesthetic: 'Paisley: curved teardrop botehs with intricate inner filling.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Intricate floral to wrap, embroider, tile, dye, weave, print, or camouflage forms while preserving the prompt subject underneath; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this motif printed or woven onto the surface of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: repeating teardrop botehs filled with florals and dots.",
       color_and_tone:
-        'Build the palette from Multi-colored; treat palette as dye, thread, ceramic pigment, woven banding, motif hierarchy, or cultural ornament logic, with enough value control that the subject remains readable after the style layer is applied.',
+        'Rust, indigo, gold and cream, on the patterned surface while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Flat drive the light response: use soft fabric light, glazed highlights, stitch shadows, woven occlusion, or flat printed illumination, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Natural light that follows the surface, so the pattern bends with folds and curves.',
       texture_and_material:
-        'Render Fabric as the tactile or mark-making basis; surface detail must follow yarn, fiber, glaze, dye bleed, thread crossings, repeat seams, or tile breaks, scaled to figures, props, spaces, or close material studies.',
+        'Printed or woven fabric with fine detail, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Compose around Pattern repeat as reusable spatial grammar: favor repeat rhythm, motif scale, borders, allover fields, woven diagonals, and pattern-to-subject adaptation, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
       atmosphere_and_mood:
-        'Use Boho, intricate as the emotional register; derive mood from craft, ritual, fashion, domestic texture, camouflage, ornament, or folk memory, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Bohemian, ornate, warm and flowing, carried by the pattern and its colors.',
       rendering_and_quality:
-        'Resolve as Textile design: finish with readable pattern scale, tactile detail, and no wallpaper pasted over the subject, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Teardrop shapes; Intricate floral; Multi-colored; Flat; Fabric; Pattern repeat; Boho, intricate; Textile design; Seamless',
+        'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
+      key_features: 'teardrop botehs; intricate filling',
       creative_brief:
-        'Route any subject through Paisley Pattern as a transferable ornamental or textile visual system: preserve prompt intent while converting surface, motif repetition, weave, symmetry, border rhythm, and decorative flow through this preset. Apply paisley as ornamental flow over the input with bent teardrop boteh forms, intricate floral curls, multicolor textile repetition, and labyrinthine curves that can wrap, mask, or replace surfaces. Keep cultural ornament as pattern logic, not as garden setting or literal paradise illustration.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paisley Pattern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +35,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Damask Pattern',
     category: '5. Textile & Ornamental Patterns',
     negativePrompt:
-      'modern, messy, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, modern, messy, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Damask Pattern becomes a transferable textile and ornamental pattern system: start from Damask ornamental repeat and Symmetry, then route prompt content through motifs, repeats, weave logic, decorative grids, stitched marks, and surface ornament without forcing one card scene.',
+      aesthetic: 'Damask: reversible woven floral motifs in tone-on-tone sheen.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Symmetrical floral to wrap, embroider, tile, dye, weave, print, or camouflage forms while preserving the prompt subject underneath; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this motif printed or woven onto the surface of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: large symmetrical floral damask motifs shown by matte and satin contrast.",
       color_and_tone:
-        'Build the palette from Two tone (e.g. Red/Gold); treat palette as dye, thread, ceramic pigment, woven banding, motif hierarchy, or cultural ornament logic, with enough value control that the subject remains readable after the style layer is applied.',
+        'Tone-on-tone crimson, ivory or black, on the patterned surface while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Flat drive the light response: use soft fabric light, glazed highlights, stitch shadows, woven occlusion, or flat printed illumination, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Natural light that follows the surface, so the pattern bends with folds and curves.',
       texture_and_material:
-        'Render Silk, velvet as the tactile or mark-making basis; surface detail must follow yarn, fiber, glaze, dye bleed, thread crossings, repeat seams, or tile breaks, scaled to figures, props, spaces, or close material studies.',
+        'Woven jacquard with satin sheen, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Compose around Repeat as reusable spatial grammar: favor repeat rhythm, motif scale, borders, allover fields, woven diagonals, and pattern-to-subject adaptation, adapting cleanly to portraits, objects, environments, and action scenes.',
-      atmosphere_and_mood:
-        'Use Expensive, old as the emotional register; derive mood from craft, ritual, fashion, domestic texture, camouflage, ornament, or folk memory, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+      atmosphere_and_mood: 'Regal, formal, rich and quiet, carried by the pattern and its colors.',
       rendering_and_quality:
-        'Resolve as Luxury, classic: finish with readable pattern scale, tactile detail, and no wallpaper pasted over the subject, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Damask ornamental repeat; Symmetrical floral; Two tone (e.g. Red/Gold); Flat; Silk, velvet; Repeat; Expensive, old; Luxury, classic; Symmetry',
+        'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
+      key_features: 'tone-on-tone damask; satin/matte contrast',
       creative_brief:
-        'Apply damask as luxurious repeat over the input with two-tone symmetry, acanthus and fleur-de-lis motifs, silk-velvet sheen, old-world restraint, and dense ornamental rhythm. If interiors or textiles exist, reinforce them; otherwise use damask as surface grammar without requiring wallpaper, drawing rooms, or candlelight.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Damask Pattern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +61,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Houndstooth',
     category: '5. Textile & Ornamental Patterns',
     negativePrompt:
-      'floral, organic, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, floral, organic, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Houndstooth becomes a transferable textile and ornamental pattern system: start from Broken check pattern, Grid, and Repeat, then route prompt content through motifs, repeats, weave logic, decorative grids, stitched marks, and surface ornament without forcing one card scene.',
+      aesthetic: 'Houndstooth: broken check of four-pointed jagged shapes.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Jagged checks to wrap, embroider, tile, dye, weave, print, or camouflage forms while preserving the prompt subject underneath; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this motif woven into the fabric of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: crisp houndstooth broken checks.",
       color_and_tone:
-        'Build the palette from Black and White; treat palette as dye, thread, ceramic pigment, woven banding, motif hierarchy, or cultural ornament logic, with enough value control that the subject remains readable after the style layer is applied.',
+        'Black and white or brown and cream, on the patterned surface while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Flat drive the light response: use soft fabric light, glazed highlights, stitch shadows, woven occlusion, or flat printed illumination, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
-      texture_and_material:
-        'Render Wool as the tactile or mark-making basis; surface detail must follow yarn, fiber, glaze, dye bleed, thread crossings, repeat seams, or tile breaks, scaled to figures, props, spaces, or close material studies.',
+        'Natural light that follows the surface, so the pattern bends with folds and curves.',
+      texture_and_material: 'Woven wool twill, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Compose around Repeat as reusable spatial grammar: favor repeat rhythm, motif scale, borders, allover fields, woven diagonals, and pattern-to-subject adaptation, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
       atmosphere_and_mood:
-        'Use Professional as the emotional register; derive mood from craft, ritual, fashion, domestic texture, camouflage, ornament, or folk memory, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Classic, sharp, tailored and graphic, carried by the pattern and its colors.',
       rendering_and_quality:
-        'Resolve as Fashion, classic: finish with readable pattern scale, tactile detail, and no wallpaper pasted over the subject, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Broken check pattern; Jagged checks; Black and White; Flat; Wool; Repeat; Professional; Fashion, classic; Grid',
+        'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
+      key_features: 'houndstooth broken check',
       creative_brief:
-        'Apply houndstooth as jagged woven authority over the input with broken black-white checks, sharp tooth-like repetition, flat fashion clarity, and controlled agitation. If clothing or fabric exists, use it directly; otherwise map the pattern onto forms without requiring boardroom or professional staging.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Houndstooth as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +87,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tartan (Plaid)',
     category: '5. Textile & Ornamental Patterns',
     negativePrompt:
-      'curved lines, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, curved lines, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Tartan (Plaid) becomes a transferable textile and ornamental pattern system: start from Criss-cross bands, Grid, and Weave, then route prompt content through motifs, repeats, weave logic, decorative grids, stitched marks, and surface ornament without forcing one card scene.',
+      aesthetic: 'Tartan: intersecting colored stripes forming a woven plaid sett.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Straight lines to wrap, embroider, tile, dye, weave, print, or camouflage forms while preserving the prompt subject underneath; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this motif woven into the fabric of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: a tartan sett of crossing stripes with twill diagonals.",
       color_and_tone:
-        'Build the palette from Red, Green, Blue; treat palette as dye, thread, ceramic pigment, woven banding, motif hierarchy, or cultural ornament logic, with enough value control that the subject remains readable after the style layer is applied.',
+        'Deep green, navy, red and yellow lines, on the patterned surface while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Flat drive the light response: use soft fabric light, glazed highlights, stitch shadows, woven occlusion, or flat printed illumination, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
-      texture_and_material:
-        'Render Flannel as the tactile or mark-making basis; surface detail must follow yarn, fiber, glaze, dye bleed, thread crossings, repeat seams, or tile breaks, scaled to figures, props, spaces, or close material studies.',
+        'Natural light that follows the surface, so the pattern bends with folds and curves.',
+      texture_and_material: 'Woven wool twill, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Compose around Weave as reusable spatial grammar: favor repeat rhythm, motif scale, borders, allover fields, woven diagonals, and pattern-to-subject adaptation, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
       atmosphere_and_mood:
-        'Use Classic, warm as the emotional register; derive mood from craft, ritual, fashion, domestic texture, camouflage, ornament, or folk memory, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Rugged, clan-proud, warm and bold, carried by the pattern and its colors.',
       rendering_and_quality:
-        'Resolve as Traditional, cozy: finish with readable pattern scale, tactile detail, and no wallpaper pasted over the subject, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Criss-cross bands; Straight lines; Red, Green, Blue; Flat; Flannel; Weave; Classic, warm; Traditional, cozy; Grid',
+        'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
+      key_features: 'tartan sett; twill diagonals',
       creative_brief:
-        'Route any subject through Tartan (Plaid) as a transferable ornamental or textile visual system: preserve prompt intent while converting surface, motif repetition, weave, symmetry, border rhythm, and decorative flow through this preset. Apply tartan as coded woven grid over the input with crossing red-green-blue bands, flannel softness, layered warp and weft, warm tradition, and color intersections that behave like inherited structure. Preserve subject shape while wrapping or segmenting it; do not require highlands, hearths, or costume context.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tartan (Plaid) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +113,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Polka Dot',
     category: '5. Textile & Ornamental Patterns',
     negativePrompt:
-      'square, line, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, square, line, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Polka Dot becomes a transferable textile and ornamental pattern system: start from Grid of circles and Dots, then route prompt content through motifs, repeats, weave logic, decorative grids, stitched marks, and surface ornament without forcing one card scene.',
+      aesthetic: 'Polka dot: evenly spaced round dots on a contrasting ground.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Circles to wrap, embroider, tile, dye, weave, print, or camouflage forms while preserving the prompt subject underneath; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this motif printed or woven onto the surface of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: evenly spaced round dots.",
       color_and_tone:
-        'Build the palette from Two tone; treat palette as dye, thread, ceramic pigment, woven banding, motif hierarchy, or cultural ornament logic, with enough value control that the subject remains readable after the style layer is applied.',
+        'White on red, black on white or navy, on the patterned surface while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Flat drive the light response: use soft fabric light, glazed highlights, stitch shadows, woven occlusion, or flat printed illumination, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Natural light that follows the surface, so the pattern bends with folds and curves.',
       texture_and_material:
-        'Render Print as the tactile or mark-making basis; surface detail must follow yarn, fiber, glaze, dye bleed, thread crossings, repeat seams, or tile breaks, scaled to figures, props, spaces, or close material studies.',
+        'Printed fabric or painted surface, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Compose around Dots as reusable spatial grammar: favor repeat rhythm, motif scale, borders, allover fields, woven diagonals, and pattern-to-subject adaptation, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
       atmosphere_and_mood:
-        'Use Fun, retro as the emotional register; derive mood from craft, ritual, fashion, domestic texture, camouflage, ornament, or folk memory, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Playful, retro, cheerful and bold, carried by the pattern and its colors.',
       rendering_and_quality:
-        'Resolve as Pop, simple: finish with readable pattern scale, tactile detail, and no wallpaper pasted over the subject, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Grid of circles; Circles; Two tone; Flat; Print; Dots; Fun, retro; Pop, simple; Dots',
+        'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
+      key_features: 'even round dots',
       creative_brief:
-        'Apply polka-dot rhythm to the input: repeated circular marks, playful scale variation, crisp figure-ground spacing, and bright graphic cadence should wrap or segment forms without requiring fabric or fashion staging.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Polka Dot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +140,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Camouflage',
     category: '5. Textile & Ornamental Patterns',
     negativePrompt:
-      'bright, neon, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, military insignia, bright, neon, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Camouflage becomes a transferable textile and ornamental pattern system: start from Military pattern and Random blobs, then route prompt content through motifs, repeats, weave logic, decorative grids, stitched marks, and surface ornament without forcing one card scene.',
+      aesthetic: 'Camouflage: disruptive organic blotch pattern for concealment.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Blobs to wrap, embroider, tile, dye, weave, print, or camouflage forms while preserving the prompt subject underneath; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this motif printed or woven onto the surface of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: organic camouflage blotches in 3-4 tones.",
       color_and_tone:
-        'Build the palette from Green, Brown, Tan; treat palette as dye, thread, ceramic pigment, woven banding, motif hierarchy, or cultural ornament logic, with enough value control that the subject remains readable after the style layer is applied.',
+        'Woodland greens, desert tans or urban greys, on the patterned surface while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Flat drive the light response: use soft fabric light, glazed highlights, stitch shadows, woven occlusion, or flat printed illumination, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Natural light that follows the surface, so the pattern bends with folds and curves.',
       texture_and_material:
-        'Render Canvas as the tactile or mark-making basis; surface detail must follow yarn, fiber, glaze, dye bleed, thread crossings, repeat seams, or tile breaks, scaled to figures, props, spaces, or close material studies.',
+        'Printed ripstop or paint, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Compose around Random blobs as reusable spatial grammar: favor repeat rhythm, motif scale, borders, allover fields, woven diagonals, and pattern-to-subject adaptation, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
       atmosphere_and_mood:
-        'Use Hidden, military as the emotional register; derive mood from craft, ritual, fashion, domestic texture, camouflage, ornament, or folk memory, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Military, rugged, hidden and practical, carried by the pattern and its colors.',
       rendering_and_quality:
-        'Resolve as Tactical: finish with readable pattern scale, tactile detail, and no wallpaper pasted over the subject, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Military pattern; Blobs; Green, Brown, Tan; Flat; Canvas; Random blobs; Hidden, military; Tactical; Random blobs',
+        'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
+      key_features: 'camouflage blotches',
       creative_brief:
-        'Apply camouflage disruption to the input: irregular concealment blobs, broken silhouette edges, tactical color fields, and visibility-denial logic should fracture form without requiring soldiers, forests, or vehicles.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Camouflage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +167,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tie Dye',
     category: '5. Textile & Ornamental Patterns',
     negativePrompt:
-      'sharp lines, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, sharp lines, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Tie Dye becomes a transferable textile and ornamental pattern system: start from Spiral dye pattern and Spiral center, then route prompt content through motifs, repeats, weave logic, decorative grids, stitched marks, and surface ornament without forcing one card scene.',
+      aesthetic: 'Tie-dye: radial or spiral dye bursts with soft bleeding edges.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Bleeding edges to wrap, embroider, tile, dye, weave, print, or camouflage forms while preserving the prompt subject underneath; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this motif dyed into the fabric of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: spiral or radial dye bursts with soft edges.",
       color_and_tone:
-        'Build the palette from Rainbow, vibrant; treat palette as dye, thread, ceramic pigment, woven banding, motif hierarchy, or cultural ornament logic, with enough value control that the subject remains readable after the style layer is applied.',
+        'Saturated rainbow or indigo, on the patterned surface while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Flat drive the light response: use soft fabric light, glazed highlights, stitch shadows, woven occlusion, or flat printed illumination, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Natural light that follows the surface, so the pattern bends with folds and curves.',
       texture_and_material:
-        'Render Cotton as the tactile or mark-making basis; surface detail must follow yarn, fiber, glaze, dye bleed, thread crossings, repeat seams, or tile breaks, scaled to figures, props, spaces, or close material studies.',
+        'Dyed cotton with bleed, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Compose around Spiral as reusable spatial grammar: favor repeat rhythm, motif scale, borders, allover fields, woven diagonals, and pattern-to-subject adaptation, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
       atmosphere_and_mood:
-        'Use Groovy, fun as the emotional register; derive mood from craft, ritual, fashion, domestic texture, camouflage, ornament, or folk memory, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Joyful, free, hippie and bright, carried by the pattern and its colors.',
       rendering_and_quality:
-        'Resolve as Hippie, handmade: finish with readable pattern scale, tactile detail, and no wallpaper pasted over the subject, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Spiral dye pattern; Bleeding edges; Rainbow, vibrant; Flat; Cotton; Spiral; Groovy, fun; Hippie, handmade; Spiral center',
+        'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
+      key_features: 'tie-dye spirals; bleeding edges',
       creative_brief:
-        'Apply tie-dye behavior to the input: radial folds, pigment blooms, spiral bleed, unpredictable color rings, and fabric-like saturation should make surfaces feel hand-dyed without requiring shirts or festival context.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tie Dye as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +194,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Knitted Texture',
     category: '5. Textile & Ornamental Patterns',
     negativePrompt:
-      'smooth, flat, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, smooth, flat, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Knitted Texture becomes a transferable textile and ornamental pattern system: start from Interlocking loops and Stitch pattern, then route prompt content through motifs, repeats, weave logic, decorative grids, stitched marks, and surface ornament without forcing one card scene.',
+      aesthetic: 'Knitted texture: visible knit stitches, cables and ribbing forming the surface.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Yarn strands to wrap, embroider, tile, dye, weave, print, or camouflage forms while preserving the prompt subject underneath; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this motif built from knit stitches on the surface of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: visible knit stitches and cables as a surface texture.",
       color_and_tone:
-        'Build the palette from Wool colors; treat palette as dye, thread, ceramic pigment, woven banding, motif hierarchy, or cultural ornament logic, with enough value control that the subject remains readable after the style layer is applied.',
+        'Wool colors, on the patterned surface while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Soft drive the light response: use soft fabric light, glazed highlights, stitch shadows, woven occlusion, or flat printed illumination, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Natural light that follows the surface, so the pattern bends with folds and curves.',
       texture_and_material:
-        'Render Fuzzy wool as the tactile or mark-making basis; surface detail must follow yarn, fiber, glaze, dye bleed, thread crossings, repeat seams, or tile breaks, scaled to figures, props, spaces, or close material studies.',
+        'Knit stitches with fuzz, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Compose around Stitch pattern as reusable spatial grammar: favor repeat rhythm, motif scale, borders, allover fields, woven diagonals, and pattern-to-subject adaptation, adapting cleanly to portraits, objects, environments, and action scenes.',
-      atmosphere_and_mood:
-        'Use Warm, soft as the emotional register; derive mood from craft, ritual, fashion, domestic texture, camouflage, ornament, or folk memory, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+      atmosphere_and_mood: 'Cozy, handmade, warm and soft, carried by the pattern and its colors.',
       rendering_and_quality:
-        'Resolve as Cozy, handmade: finish with readable pattern scale, tactile detail, and no wallpaper pasted over the subject, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Interlocking loops; Yarn strands; Wool colors; Soft; Fuzzy wool; Stitch pattern; Warm, soft; Cozy, handmade; Loops',
+        'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
+      key_features: 'knit stitches; cables',
       creative_brief:
-        'Apply knitted topology to the input: interlocking loops, ribbing, cable relief, wool halo, and tactile stitch rhythm should soften or wrap forms without requiring sweaters or domestic props.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Knitted Texture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +220,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Denim Texture',
     category: '5. Textile & Ornamental Patterns',
     negativePrompt:
-      'silk, smooth, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, silk, smooth, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Denim Texture becomes a transferable textile and ornamental pattern system: start from Blue jean fabric, Twill lines, and Fades, then route prompt content through motifs, repeats, weave logic, decorative grids, stitched marks, and surface ornament without forcing one card scene.',
+      aesthetic: 'Denim texture: indigo twill with diagonal weave and fading.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Diagonal twill to wrap, embroider, tile, dye, weave, print, or camouflage forms while preserving the prompt subject underneath; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this motif woven into the fabric of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: indigo twill with diagonal weave and whiskered fading.",
       color_and_tone:
-        'Build the palette from Indigo, White; treat palette as dye, thread, ceramic pigment, woven banding, motif hierarchy, or cultural ornament logic, with enough value control that the subject remains readable after the style layer is applied.',
+        'Indigo blues, on the patterned surface while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Flat drive the light response: use soft fabric light, glazed highlights, stitch shadows, woven occlusion, or flat printed illumination, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Natural light that follows the surface, so the pattern bends with folds and curves.',
       texture_and_material:
-        'Render Cotton twill as the tactile or mark-making basis; surface detail must follow yarn, fiber, glaze, dye bleed, thread crossings, repeat seams, or tile breaks, scaled to figures, props, spaces, or close material studies.',
+        'Twill weave with fading, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Compose around Fades as reusable spatial grammar: favor repeat rhythm, motif scale, borders, allover fields, woven diagonals, and pattern-to-subject adaptation, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
       atmosphere_and_mood:
-        'Use Casual, tough as the emotional register; derive mood from craft, ritual, fashion, domestic texture, camouflage, ornament, or folk memory, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Casual, rugged, American and worn, carried by the pattern and its colors.',
       rendering_and_quality:
-        'Resolve as Casual, durable: finish with readable pattern scale, tactile detail, and no wallpaper pasted over the subject, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Blue jean fabric; Diagonal twill; Indigo, White; Flat; Cotton twill; Fades; Casual, tough; Casual, durable; Twill lines',
+        'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
+      key_features: 'indigo twill; diagonal weave',
       creative_brief:
-        'Apply denim twill to the input: indigo warp, white weft flashes, diagonal weave, worn fades, seam-like stress marks, and casual durability should materialize surfaces without requiring jeans or clothing.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Denim Texture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -269,28 +247,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Basket Weave',
     category: '5. Textile & Ornamental Patterns',
     negativePrompt:
-      'solid, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, solid, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Basket Weave becomes a transferable textile and ornamental pattern system: start from Woven plant fiber and Weave pattern, then route prompt content through motifs, repeats, weave logic, decorative grids, stitched marks, and surface ornament without forcing one card scene.',
+      aesthetic: 'Basket weave: over-under interlaced strips like woven rattan.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Over/Under to wrap, embroider, tile, dye, weave, print, or camouflage forms while preserving the prompt subject underneath; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this motif woven as the surface of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: over-under interlaced strips.",
       color_and_tone:
-        'Build the palette from Straw, Tan; treat palette as dye, thread, ceramic pigment, woven banding, motif hierarchy, or cultural ornament logic, with enough value control that the subject remains readable after the style layer is applied.',
+        'Natural rattan, straw and tan, on the patterned surface while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Texture shadow drive the light response: use soft fabric light, glazed highlights, stitch shadows, woven occlusion, or flat printed illumination, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Natural light that follows the surface, so the pattern bends with folds and curves.',
       texture_and_material:
-        'Render Dry fiber as the tactile or mark-making basis; surface detail must follow yarn, fiber, glaze, dye bleed, thread crossings, repeat seams, or tile breaks, scaled to figures, props, spaces, or close material studies.',
+        'Woven strips with gaps, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Compose around Weave pattern as reusable spatial grammar: favor repeat rhythm, motif scale, borders, allover fields, woven diagonals, and pattern-to-subject adaptation, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
       atmosphere_and_mood:
-        'Use Rustic, simple as the emotional register; derive mood from craft, ritual, fashion, domestic texture, camouflage, ornament, or folk memory, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Handmade, natural, rustic and airy, carried by the pattern and its colors.',
       rendering_and_quality:
-        'Resolve as Craft, natural: finish with readable pattern scale, tactile detail, and no wallpaper pasted over the subject, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Woven plant fiber; Over/Under; Straw, Tan; Texture shadow; Dry fiber; Weave pattern; Rustic, simple; Craft, natural; Weave pattern',
+        'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
+      key_features: 'over-under interlaced strips',
       creative_brief:
-        'Apply basket-weave interlock to the input: over-under strips, reed-like rhythm, tactile crossing shadows, and simple containment geometry should organize surfaces without requiring baskets or craft setup.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Basket Weave as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -298,28 +274,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Honeycomb',
     category: '5. Textile & Ornamental Patterns',
     negativePrompt:
-      'square, circle, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, square, circle, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Honeycomb becomes a transferable textile and ornamental pattern system: start from Hexagonal grid and Hexagon grid, then route prompt content through motifs, repeats, weave logic, decorative grids, stitched marks, and surface ornament without forcing one card scene.',
+      aesthetic: 'Honeycomb pattern: tessellated hexagon cells as a surface motif.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Hexagons to wrap, embroider, tile, dye, weave, print, or camouflage forms while preserving the prompt subject underneath; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this motif printed or woven onto the surface of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: tessellated hexagon cells.",
       color_and_tone:
-        'Build the palette from Yellow, Amber; treat palette as dye, thread, ceramic pigment, woven banding, motif hierarchy, or cultural ornament logic, with enough value control that the subject remains readable after the style layer is applied.',
+        'Gold, amber or monochrome, on the patterned surface while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Translucent wax drive the light response: use soft fabric light, glazed highlights, stitch shadows, woven occlusion, or flat printed illumination, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Natural light that follows the surface, so the pattern bends with folds and curves.',
       texture_and_material:
-        'Render Wax as the tactile or mark-making basis; surface detail must follow yarn, fiber, glaze, dye bleed, thread crossings, repeat seams, or tile breaks, scaled to figures, props, spaces, or close material studies.',
+        'Hexagonal cells with raised edges, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Compose around Hexagon grid as reusable spatial grammar: favor repeat rhythm, motif scale, borders, allover fields, woven diagonals, and pattern-to-subject adaptation, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
       atmosphere_and_mood:
-        'Use Sweet, orderly as the emotional register; derive mood from craft, ritual, fashion, domestic texture, camouflage, ornament, or folk memory, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Orderly, organic, natural and precise, carried by the pattern and its colors.',
       rendering_and_quality:
-        'Resolve as Natural, geometric: finish with readable pattern scale, tactile detail, and no wallpaper pasted over the subject, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Hexagonal grid; Hexagons; Yellow, Amber; Translucent wax; Wax; Hexagon grid; Sweet, orderly; Natural, geometric; Hexagon grid',
+        'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
+      key_features: 'hexagon tessellation',
       creative_brief:
-        'Apply honeycomb tessellation to the input: hexagonal packing, waxy golden cells, efficient modular repetition, and shallow cavity shadows should turn forms into organic lattice without requiring bees or hives.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Honeycomb as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -327,28 +301,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Azulejo Tile',
     category: '5. Textile & Ornamental Patterns',
     negativePrompt:
-      'modern, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, modern, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Azulejo Tile becomes a transferable textile and ornamental pattern system: start from Portuguese ceramic tile and Square grid, then route prompt content through motifs, repeats, weave logic, decorative grids, stitched marks, and surface ornament without forcing one card scene.',
+      aesthetic: 'Azulejo: glazed blue-and-white painted tiles with ornate repeats.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Blue painting to wrap, embroider, tile, dye, weave, print, or camouflage forms while preserving the prompt subject underneath; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this motif as glazed tiles on the surface of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: blue-and-white glazed tile repeats with ornate borders.",
       color_and_tone:
-        'Build the palette from Blue on White; treat palette as dye, thread, ceramic pigment, woven banding, motif hierarchy, or cultural ornament logic, with enough value control that the subject remains readable after the style layer is applied.',
+        'Cobalt blue on white glaze, on the patterned surface while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Glossy glaze drive the light response: use soft fabric light, glazed highlights, stitch shadows, woven occlusion, or flat printed illumination, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Natural light that follows the surface, so the pattern bends with folds and curves.',
       texture_and_material:
-        'Render Ceramic as the tactile or mark-making basis; surface detail must follow yarn, fiber, glaze, dye bleed, thread crossings, repeat seams, or tile breaks, scaled to figures, props, spaces, or close material studies.',
+        'Glazed ceramic tiles with grout, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Compose around Square grid as reusable spatial grammar: favor repeat rhythm, motif scale, borders, allover fields, woven diagonals, and pattern-to-subject adaptation, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
       atmosphere_and_mood:
-        'Use Classic, bright as the emotional register; derive mood from craft, ritual, fashion, domestic texture, camouflage, ornament, or folk memory, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Mediterranean, fresh, ornate and bright, carried by the pattern and its colors.',
       rendering_and_quality:
-        'Resolve as Historic, decorative: finish with readable pattern scale, tactile detail, and no wallpaper pasted over the subject, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Portuguese ceramic tile; Blue painting; Blue on White; Glossy glaze; Ceramic; Square grid; Classic, bright; Historic, decorative; Square grid',
+        'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
+      key_features: 'blue-white glazed tiles; ornate repeats',
       creative_brief:
-        'Route any subject through Azulejo Tile as a transferable ornamental or textile visual system: preserve prompt intent while converting surface, motif repetition, weave, symmetry, border rhythm, and decorative flow through this preset. Apply azulejo ceramic language over the input with cobalt-blue painting on white glaze, square-grid segmentation, glossy ceramic imperfections, and historic decorative rhythm. If walls, tiles, architecture, or objects exist, glaze them; otherwise use blue-white tile geometry as pattern and surface without forcing Lisbon, palaces, or wall setting.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Azulejo Tile as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -356,28 +328,253 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cross Stitch',
     category: '5. Textile & Ornamental Patterns',
     negativePrompt:
-      'smooth, drawn, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, smooth, drawn, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Cross Stitch becomes a transferable textile and ornamental pattern system: start from Pixel art with thread, X pattern, and Low resolution, then route prompt content through motifs, repeats, weave logic, decorative grids, stitched marks, and surface ornament without forcing one card scene.',
+      aesthetic: 'Cross stitch: X-shaped stitches forming pixel-like motifs on even-weave fabric.',
       subject_treatment:
-        "Keep the user's subject recognizable while using X stitches to wrap, embroider, tile, dye, weave, print, or camouflage forms while preserving the prompt subject underneath; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Apply this motif built from cross stitches on the fabric of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: X-stitch motifs on an even-weave grid.",
       color_and_tone:
-        'Build the palette from Thread colors; treat palette as dye, thread, ceramic pigment, woven banding, motif hierarchy, or cultural ornament logic, with enough value control that the subject remains readable after the style layer is applied.',
+        'Embroidery floss colors, on the patterned surface while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Fabric texture drive the light response: use soft fabric light, glazed highlights, stitch shadows, woven occlusion, or flat printed illumination, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Natural light that follows the surface, so the pattern bends with folds and curves.',
       texture_and_material:
-        'Render Aida cloth as the tactile or mark-making basis; surface detail must follow yarn, fiber, glaze, dye bleed, thread crossings, repeat seams, or tile breaks, scaled to figures, props, spaces, or close material studies.',
+        'X stitches on aida cloth, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Compose around Low resolution as reusable spatial grammar: favor repeat rhythm, motif scale, borders, allover fields, woven diagonals, and pattern-to-subject adaptation, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
       atmosphere_and_mood:
-        'Use Traditional, cute as the emotional register; derive mood from craft, ritual, fashion, domestic texture, camouflage, ornament, or folk memory, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Homely, handmade, charming and patient, carried by the pattern and its colors.',
       rendering_and_quality:
-        'Resolve as Craft, homey: finish with readable pattern scale, tactile detail, and no wallpaper pasted over the subject, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Pixel art with thread; X stitches; Thread colors; Fabric texture; Aida cloth; Low resolution; Traditional, cute; Craft, homey; X pattern',
+        'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
+      key_features: 'X stitches; even-weave grid',
       creative_brief:
-        'Apply cross-stitch encoding to the input: X-shaped thread marks, linen grid, limited color cells, and analog pixel logic should embroider any subject without requiring samplers or readable text.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cross Stitch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP10-116',
+    name: 'Toile de Jouy',
+    displayName: 'Toile de Jouy',
+    styleAnchors: ['Toile de Jouy', 'toile scenic print', 'engraved vignettes'],
+    category: '5. Textile & Ornamental Patterns',
+    domain: 'toile scenic print',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Toile de Jouy: single-color engraved pastoral scenes repeated on cream cloth.',
+      subject_treatment:
+        "Apply this motif printed or woven onto the surface of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: repeated single-color engraved vignettes.",
+      color_and_tone:
+        'Red, blue or black on cream, on the patterned surface while the rest of the scene keeps its palette.',
+      lighting_and_shadow:
+        'Natural light that follows the surface, so the pattern bends with folds and curves.',
+      texture_and_material: 'Printed cotton, with the pattern scaled correctly to the target.',
+      camera_and_composition:
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+      atmosphere_and_mood:
+        'Romantic, antique, pastoral and refined, carried by the pattern and its colors.',
+      rendering_and_quality:
+        'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Toile de Jouy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'engraved vignettes; single color on cream',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-117',
+    name: 'Ikat Blur',
+    displayName: 'Ikat Blur',
+    styleAnchors: ['Ikat Blur', 'ikat resist-dyed weave', 'blurred-edge ikat motifs'],
+    category: '5. Textile & Ornamental Patterns',
+    domain: 'ikat resist-dyed weave',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Ikat: resist-dyed yarns woven into blurred-edge geometric motifs.',
+      subject_treatment:
+        "Apply this motif dyed into the yarn before weaving of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: blurred-edge diamond and hook motifs.",
+      color_and_tone:
+        'Indigo, madder red, ochre and cream, on the patterned surface while the rest of the scene keeps its palette.',
+      lighting_and_shadow:
+        'Natural light that follows the surface, so the pattern bends with folds and curves.',
+      texture_and_material:
+        'Woven threads with feathered edges, with the pattern scaled correctly to the target.',
+      camera_and_composition:
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+      atmosphere_and_mood:
+        'Handcrafted, rich, earthy and vibrant, carried by the pattern and its colors.',
+      rendering_and_quality:
+        'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ikat Blur as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'blurred-edge ikat motifs',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-118',
+    name: 'Batik Wax Resist',
+    displayName: 'Batik Wax Resist',
+    styleAnchors: ['Batik Wax Resist', 'batik wax resist dye', 'wax-resist motifs'],
+    category: '5. Textile & Ornamental Patterns',
+    domain: 'batik wax resist dye',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Batik: wax-resist dyed cloth with crackled lines and layered colors.',
+      subject_treatment:
+        "Apply this motif dyed into the cloth of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: wax-resist motifs with fine crackle lines.",
+      color_and_tone:
+        'Indigo, brown and cream, on the patterned surface while the rest of the scene keeps its palette.',
+      lighting_and_shadow:
+        'Natural light that follows the surface, so the pattern bends with folds and curves.',
+      texture_and_material:
+        'Dyed cotton with crackle, with the pattern scaled correctly to the target.',
+      camera_and_composition:
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+      atmosphere_and_mood:
+        'Earthy, handcrafted, intricate and warm, carried by the pattern and its colors.',
+      rendering_and_quality:
+        'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Batik Wax Resist as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'wax-resist motifs; crackle lines',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-119',
+    name: 'Shibori Indigo',
+    displayName: 'Shibori Indigo',
+    styleAnchors: ['Shibori Indigo', 'shibori indigo dye', 'indigo shibori resist'],
+    category: '5. Textile & Ornamental Patterns',
+    domain: 'shibori indigo dye',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Shibori: indigo shaped-resist dyeing with folded, bound and stitched patterns.',
+      subject_treatment:
+        "Apply this motif dyed into the cloth of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: soft indigo resist patterns from folding and binding.",
+      color_and_tone:
+        'Indigo and white, on the patterned surface while the rest of the scene keeps its palette.',
+      lighting_and_shadow:
+        'Natural light that follows the surface, so the pattern bends with folds and curves.',
+      texture_and_material: 'Dyed cotton or silk, with the pattern scaled correctly to the target.',
+      camera_and_composition:
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+      atmosphere_and_mood: 'Calm, handmade, fluid and deep, carried by the pattern and its colors.',
+      rendering_and_quality:
+        'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Shibori Indigo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'indigo shibori resist',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-120',
+    name: 'Argyle',
+    displayName: 'Argyle',
+    styleAnchors: ['Argyle', 'argyle diamond knit', 'argyle diamonds'],
+    category: '5. Textile & Ornamental Patterns',
+    domain: 'argyle diamond knit',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Argyle: overlapping diamonds with thin diagonal crossing lines.',
+      subject_treatment:
+        "Apply this motif knitted into the surface of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: diamonds with thin crossing diagonals.",
+      color_and_tone:
+        'Navy, burgundy, green and cream, on the patterned surface while the rest of the scene keeps its palette.',
+      lighting_and_shadow:
+        'Natural light that follows the surface, so the pattern bends with folds and curves.',
+      texture_and_material: 'Knit wool, with the pattern scaled correctly to the target.',
+      camera_and_composition:
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+      atmosphere_and_mood:
+        'Preppy, classic, cozy and playful, carried by the pattern and its colors.',
+      rendering_and_quality:
+        'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Argyle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'argyle diamonds; crossing lines',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-121',
+    name: 'Kilim Geometric',
+    displayName: 'Kilim Geometric',
+    styleAnchors: ['Kilim Geometric', 'kilim flatweave', 'kilim stepped diamonds'],
+    category: '5. Textile & Ornamental Patterns',
+    domain: 'kilim flatweave',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Kilim: flat-woven geometric diamonds, hooks and stepped motifs.',
+      subject_treatment:
+        "Apply this motif flat-woven as the surface of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: stepped diamonds and hook motifs.",
+      color_and_tone:
+        'Madder red, indigo, saffron, on the patterned surface while the rest of the scene keeps its palette.',
+      lighting_and_shadow:
+        'Natural light that follows the surface, so the pattern bends with folds and curves.',
+      texture_and_material:
+        'Flatweave wool with slits, with the pattern scaled correctly to the target.',
+      camera_and_composition:
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+      atmosphere_and_mood:
+        'Nomadic, bold, warm and ancient, carried by the pattern and its colors.',
+      rendering_and_quality:
+        'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kilim Geometric as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'kilim stepped diamonds; flatweave',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-122',
+    name: 'Celtic Knotwork',
+    displayName: 'Celtic Knotwork',
+    styleAnchors: ['Celtic Knotwork', 'celtic interlace knotwork', 'over-under interlace'],
+    category: '5. Textile & Ornamental Patterns',
+    domain: 'celtic interlace knotwork',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Celtic knotwork: continuous interlaced bands weaving over and under.',
+      subject_treatment:
+        "Apply this motif carved, embroidered or painted onto the surface of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: continuous over-under interlace bands.",
+      color_and_tone:
+        'Gold, green and deep red, on the patterned surface while the rest of the scene keeps its palette.',
+      lighting_and_shadow:
+        'Natural light that follows the surface, so the pattern bends with folds and curves.',
+      texture_and_material:
+        'Carved, embroidered or painted, with the pattern scaled correctly to the target.',
+      camera_and_composition:
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+      atmosphere_and_mood:
+        'Ancient, mystic, intricate and flowing, carried by the pattern and its colors.',
+      rendering_and_quality:
+        'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Celtic Knotwork as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'over-under interlace; continuous bands',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

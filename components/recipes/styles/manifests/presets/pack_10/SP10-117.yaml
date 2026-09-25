@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP10-117
+packId: pack_10
+name: Ikat Blur
+styleAnchors:
+  - Ikat Blur
+  - ikat resist-dyed weave
+  - blurred-edge ikat motifs
+displayName: Ikat Blur
+category: 5. Textile & Ornamental Patterns
+domain: ikat resist-dyed weave
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - textile-and-ornamental-patterns
+  - ikat
+  - weave
+  - pattern
+visualDna:
+  aesthetic: 'Ikat: resist-dyed yarns woven into blurred-edge geometric motifs.'
+  subject_treatment: "Apply this motif dyed into the yarn before weaving of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: blurred-edge diamond and hook motifs."
+  color_and_tone: Indigo, madder red, ochre and cream, on the patterned surface while the rest of the scene keeps its palette.
+  lighting_and_shadow: Natural light that follows the surface, so the pattern bends with folds and curves.
+  texture_and_material: Woven threads with feathered edges, with the pattern scaled correctly to the target.
+  camera_and_composition: Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.
+  atmosphere_and_mood: Handcrafted, rich, earthy and vibrant, carried by the pattern and its colors.
+  rendering_and_quality: Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ikat Blur as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: blurred-edge ikat motifs
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - pattern covering the whole scene instead of the target
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_10
+  packName: Abstract & Experimental
+  categoryId: textile-and-ornamental-patterns
+  categoryName: 5. Textile & Ornamental Patterns
+  tags:
+    - abstract-and-experimental
+    - textile-and-ornamental-patterns
+    - ikat
+    - weave
+    - pattern
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: ikat resist-dyed weave

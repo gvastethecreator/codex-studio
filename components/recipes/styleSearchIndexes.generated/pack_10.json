@@ -3,7 +3,7 @@
     {
       "id": "pack_10",
       "name": "Abstract & Experimental",
-      "presetCount": 115
+      "presetCount": 122
     }
   ],
   "presets": [
@@ -1262,6 +1262,128 @@
       "searchableText": "sp10-075 cross stitch 5. textile & ornamental patterns pattern systems pack_10 abstract & experimental textile-and-ornamental-patterns abstract-and-experimental textile-and-ornamental-patterns"
     },
     {
+      "id": "SP10-116",
+      "name": "Toile de Jouy",
+      "styleAnchors": ["Toile de Jouy", "toile scenic print", "engraved vignettes"],
+      "ref": "pack_10/SP10-116.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "textile-and-ornamental-patterns",
+      "categoryName": "5. Textile & Ornamental Patterns",
+      "domain": "toile scenic print",
+      "tags": [
+        "abstract-and-experimental",
+        "textile-and-ornamental-patterns",
+        "toile-scenic-print"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-116 toile de jouy toile scenic print engraved vignettes 5. textile & ornamental patterns pattern systems toile scenic print pack_10 abstract & experimental textile-and-ornamental-patterns abstract-and-experimental textile-and-ornamental-patterns toile-scenic-print"
+    },
+    {
+      "id": "SP10-117",
+      "name": "Ikat Blur",
+      "styleAnchors": ["Ikat Blur", "ikat resist-dyed weave", "blurred-edge ikat motifs"],
+      "ref": "pack_10/SP10-117.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "textile-and-ornamental-patterns",
+      "categoryName": "5. Textile & Ornamental Patterns",
+      "domain": "ikat resist-dyed weave",
+      "tags": [
+        "abstract-and-experimental",
+        "textile-and-ornamental-patterns",
+        "ikat-resist-dyed-weave"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-117 ikat blur ikat resist-dyed weave blurred-edge ikat motifs 5. textile & ornamental patterns pattern systems ikat resist-dyed weave pack_10 abstract & experimental textile-and-ornamental-patterns abstract-and-experimental textile-and-ornamental-patterns ikat-resist-dyed-weave"
+    },
+    {
+      "id": "SP10-118",
+      "name": "Batik Wax Resist",
+      "styleAnchors": ["Batik Wax Resist", "batik wax resist dye", "wax-resist motifs"],
+      "ref": "pack_10/SP10-118.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "textile-and-ornamental-patterns",
+      "categoryName": "5. Textile & Ornamental Patterns",
+      "domain": "batik wax resist dye",
+      "tags": [
+        "abstract-and-experimental",
+        "textile-and-ornamental-patterns",
+        "batik-wax-resist-dye"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-118 batik wax resist batik wax resist dye wax-resist motifs 5. textile & ornamental patterns pattern systems batik wax resist dye pack_10 abstract & experimental textile-and-ornamental-patterns abstract-and-experimental textile-and-ornamental-patterns batik-wax-resist-dye"
+    },
+    {
+      "id": "SP10-119",
+      "name": "Shibori Indigo",
+      "styleAnchors": ["Shibori Indigo", "shibori indigo dye", "indigo shibori resist"],
+      "ref": "pack_10/SP10-119.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "textile-and-ornamental-patterns",
+      "categoryName": "5. Textile & Ornamental Patterns",
+      "domain": "shibori indigo dye",
+      "tags": [
+        "abstract-and-experimental",
+        "textile-and-ornamental-patterns",
+        "shibori-indigo-dye"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-119 shibori indigo shibori indigo dye indigo shibori resist 5. textile & ornamental patterns pattern systems shibori indigo dye pack_10 abstract & experimental textile-and-ornamental-patterns abstract-and-experimental textile-and-ornamental-patterns shibori-indigo-dye"
+    },
+    {
+      "id": "SP10-120",
+      "name": "Argyle",
+      "styleAnchors": ["Argyle", "argyle diamond knit", "argyle diamonds"],
+      "ref": "pack_10/SP10-120.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "textile-and-ornamental-patterns",
+      "categoryName": "5. Textile & Ornamental Patterns",
+      "domain": "argyle diamond knit",
+      "tags": [
+        "abstract-and-experimental",
+        "textile-and-ornamental-patterns",
+        "argyle-diamond-knit"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-120 argyle argyle diamond knit argyle diamonds 5. textile & ornamental patterns pattern systems argyle diamond knit pack_10 abstract & experimental textile-and-ornamental-patterns abstract-and-experimental textile-and-ornamental-patterns argyle-diamond-knit"
+    },
+    {
+      "id": "SP10-121",
+      "name": "Kilim Geometric",
+      "styleAnchors": ["Kilim Geometric", "kilim flatweave", "kilim stepped diamonds"],
+      "ref": "pack_10/SP10-121.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "textile-and-ornamental-patterns",
+      "categoryName": "5. Textile & Ornamental Patterns",
+      "domain": "kilim flatweave",
+      "tags": ["abstract-and-experimental", "textile-and-ornamental-patterns", "kilim-flatweave"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-121 kilim geometric kilim flatweave kilim stepped diamonds 5. textile & ornamental patterns pattern systems kilim flatweave pack_10 abstract & experimental textile-and-ornamental-patterns abstract-and-experimental textile-and-ornamental-patterns kilim-flatweave"
+    },
+    {
+      "id": "SP10-122",
+      "name": "Celtic Knotwork",
+      "styleAnchors": ["Celtic Knotwork", "celtic interlace knotwork", "over-under interlace"],
+      "ref": "pack_10/SP10-122.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "textile-and-ornamental-patterns",
+      "categoryName": "5. Textile & Ornamental Patterns",
+      "domain": "celtic interlace knotwork",
+      "tags": [
+        "abstract-and-experimental",
+        "textile-and-ornamental-patterns",
+        "celtic-interlace-knotwork"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-122 celtic knotwork celtic interlace knotwork over-under interlace 5. textile & ornamental patterns pattern systems celtic interlace knotwork pack_10 abstract & experimental textile-and-ornamental-patterns abstract-and-experimental textile-and-ornamental-patterns celtic-interlace-knotwork"
+    },
+    {
       "id": "SP10-048",
       "name": "Terrazzo",
       "ref": "pack_10/SP10-048.yaml",
@@ -1526,5 +1648,5 @@
       "searchableText": "sp10-080 letterpress 9. print and light finishes print & light finish pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes"
     }
   ],
-  "totalPresetCount": 115
+  "totalPresetCount": 122
 }

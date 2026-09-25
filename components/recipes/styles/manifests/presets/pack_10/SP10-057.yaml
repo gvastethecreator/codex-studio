@@ -3,7 +3,7 @@ id: SP10-057
 packId: pack_10
 name: Knitted Texture
 category: 5. Textile & Ornamental Patterns
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,45 +12,23 @@ tags:
   - abstract-and-experimental
   - textile-and-ornamental-patterns
 visualDna:
-  aesthetic: >-
-    Knitted Texture becomes a transferable textile and ornamental pattern system: start from
-    Interlocking loops and Stitch pattern, then route prompt content through motifs, repeats, weave
-    logic, decorative grids, stitched marks, and surface ornament without forcing one card scene.
-  subject_treatment: >-
-    Keep the user's subject recognizable while using Yarn strands to wrap, embroider, tile, dye,
-    weave, print, or camouflage forms while preserving the prompt subject underneath; preserve
-    anatomy, object identity, or scene intent beneath the abstraction.
-  color_and_tone: >-
-    Build the palette from Wool colors; treat palette as dye, thread, ceramic pigment, woven
-    banding, motif hierarchy, or cultural ornament logic, with enough value control that the subject
-    remains readable after the style layer is applied.
-  lighting_and_shadow: >-
-    Let Soft drive the light response: use soft fabric light, glazed highlights, stitch shadows,
-    woven occlusion, or flat printed illumination, avoiding generic glamour lighting unless the
-    prompt explicitly asks for it.
-  texture_and_material: >-
-    Render Fuzzy wool as the tactile or mark-making basis; surface detail must follow yarn, fiber,
-    glaze, dye bleed, thread crossings, repeat seams, or tile breaks, scaled to figures, props,
-    spaces, or close material studies.
-  camera_and_composition: >-
-    Compose around Stitch pattern as reusable spatial grammar: favor repeat rhythm, motif scale,
-    borders, allover fields, woven diagonals, and pattern-to-subject adaptation, adapting cleanly to
-    portraits, objects, environments, and action scenes.
-  atmosphere_and_mood: >-
-    Use Warm, soft as the emotional register; derive mood from craft, ritual, fashion, domestic
-    texture, camouflage, ornament, or folk memory, without flattening strong, strange, darker, or
-    adult prompt intent when it is relevant.
-  rendering_and_quality: >-
-    Resolve as Cozy, handmade: finish with readable pattern scale, tactile detail, and no wallpaper
-    pasted over the subject, preserving prompt X as the base content and the preset as the style
-    router.
-  key_features: >-
-    Interlocking loops; Yarn strands; Wool colors; Soft; Fuzzy wool; Stitch pattern; Warm, soft;
-    Cozy, handmade; Loops
-  creative_brief: >-
-    Apply knitted topology to the input: interlocking loops, ribbing, cable relief, wool halo, and
-    tactile stitch rhythm should soften or wrap forms without requiring sweaters or domestic props.
+  aesthetic: 'Knitted texture: visible knit stitches, cables and ribbing forming the surface.'
+  subject_treatment: "Apply this motif built from knit stitches on the surface of the target named in the prompt (garment, object, upholstery, wall); if none is named, use it on the main subject's clothing or surface. Keep shape, pose and setting: visible knit stitches and cables as a surface texture."
+  color_and_tone: Wool colors, on the patterned surface while the rest of the scene keeps its palette.
+  lighting_and_shadow: Natural light that follows the surface, so the pattern bends with folds and curves.
+  texture_and_material: Knit stitches with fuzz, with the pattern scaled correctly to the target.
+  camera_and_composition: Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.
+  atmosphere_and_mood: Cozy, handmade, warm and soft, carried by the pattern and its colors.
+  rendering_and_quality: Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.
+  key_features: knit stitches; cables
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Knitted Texture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - pattern covering the whole scene instead of the target
   - smooth
   - flat
   - generic wallpaper overlay
@@ -59,12 +37,16 @@ avoidRules:
   - style-card boilerplate
   - muddy noise
   - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-057.webp
 attributes:
-  negativePrompt: >-
-    smooth, flat, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card
-    boilerplate, muddy noise, watermark
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, pattern covering the whole scene instead of the target, smooth, flat, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
