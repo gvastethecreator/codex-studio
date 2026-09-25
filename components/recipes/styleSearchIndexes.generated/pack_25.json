@@ -3,7 +3,7 @@
     {
       "id": "pack_25",
       "name": "Applied Design",
-      "presetCount": 20
+      "presetCount": 40
     }
   ],
   "presets": [
@@ -322,7 +322,327 @@
       "tags": ["applied-design", "logo-and-symbol-systems", "ambigram-lettering-study"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp25-020 optical ambigram study ambigram lettering study double reading 1. logo & symbol systems logo & symbol systems ambigram lettering study pack_25 applied design logo-and-symbol-systems applied-design logo-and-symbol-systems ambigram-lettering-study"
+    },
+    {
+      "id": "SP25-021",
+      "name": "Open-Joint Monoline",
+      "styleAnchors": ["Open-Joint Monoline", "open-joint line icon family", "open stroke joints"],
+      "ref": "pack_25/SP25-021.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "interface-icon-systems",
+      "categoryName": "2. Interface Icon Systems",
+      "domain": "open-joint line icon family",
+      "tags": ["applied-design", "interface-icon-systems", "open-joint-line-icon-family"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-021 open-joint monoline open-joint line icon family open stroke joints 2. interface icon systems interface icons open-joint line icon family pack_25 applied design interface-icon-systems applied-design interface-icon-systems open-joint-line-icon-family"
+    },
+    {
+      "id": "SP25-022",
+      "name": "Inset Stencil Solids",
+      "styleAnchors": ["Inset Stencil Solids", "bridged solid icon family", "solid masses"],
+      "ref": "pack_25/SP25-022.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "interface-icon-systems",
+      "categoryName": "2. Interface Icon Systems",
+      "domain": "bridged solid icon family",
+      "tags": ["applied-design", "interface-icon-systems", "bridged-solid-icon-family"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-022 inset stencil solids bridged solid icon family solid masses 2. interface icon systems interface icons bridged solid icon family pack_25 applied design interface-icon-systems applied-design interface-icon-systems bridged-solid-icon-family"
+    },
+    {
+      "id": "SP25-023",
+      "name": "Chamfered Grid Glyphs",
+      "styleAnchors": [
+        "Chamfered Grid Glyphs",
+        "chamfered orthogonal icon family",
+        "measured chamfers"
+      ],
+      "ref": "pack_25/SP25-023.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "interface-icon-systems",
+      "categoryName": "2. Interface Icon Systems",
+      "domain": "chamfered orthogonal icon family",
+      "tags": ["applied-design", "interface-icon-systems", "chamfered-orthogonal-icon-family"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-023 chamfered grid glyphs chamfered orthogonal icon family measured chamfers 2. interface icon systems interface icons chamfered orthogonal icon family pack_25 applied design interface-icon-systems applied-design interface-icon-systems chamfered-orthogonal-icon-family"
+    },
+    {
+      "id": "SP25-024",
+      "name": "Soft-Square Primitives",
+      "styleAnchors": [
+        "Soft-Square Primitives",
+        "squircle primitive icon family",
+        "softened squares"
+      ],
+      "ref": "pack_25/SP25-024.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "interface-icon-systems",
+      "categoryName": "2. Interface Icon Systems",
+      "domain": "squircle primitive icon family",
+      "tags": ["applied-design", "interface-icon-systems", "squircle-primitive-icon-family"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-024 soft-square primitives squircle primitive icon family softened squares 2. interface icon systems interface icons squircle primitive icon family pack_25 applied design interface-icon-systems applied-design interface-icon-systems squircle-primitive-icon-family"
+    },
+    {
+      "id": "SP25-025",
+      "name": "Single-Bend Actions",
+      "styleAnchors": [
+        "Single-Bend Actions",
+        "one-gesture action icon family",
+        "one dominant path"
+      ],
+      "ref": "pack_25/SP25-025.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "interface-icon-systems",
+      "categoryName": "2. Interface Icon Systems",
+      "domain": "one-gesture action icon family",
+      "tags": ["applied-design", "interface-icon-systems", "one-gesture-action-icon-family"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-025 single-bend actions one-gesture action icon family one dominant path 2. interface icon systems interface icons one-gesture action icon family pack_25 applied design interface-icon-systems applied-design interface-icon-systems one-gesture-action-icon-family"
+    },
+    {
+      "id": "SP25-026",
+      "name": "Nested Cutout Symbols",
+      "styleAnchors": ["Nested Cutout Symbols", "two-level cutout icon family", "main void"],
+      "ref": "pack_25/SP25-026.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "interface-icon-systems",
+      "categoryName": "2. Interface Icon Systems",
+      "domain": "two-level cutout icon family",
+      "tags": ["applied-design", "interface-icon-systems", "two-level-cutout-icon-family"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-026 nested cutout symbols two-level cutout icon family main void 2. interface icon systems interface icons two-level cutout icon family pack_25 applied design interface-icon-systems applied-design interface-icon-systems two-level-cutout-icon-family"
+    },
+    {
+      "id": "SP25-027",
+      "name": "Offset Backbone Icons",
+      "styleAnchors": ["Offset Backbone Icons", "off-axis spine icon family", "offset spine"],
+      "ref": "pack_25/SP25-027.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "interface-icon-systems",
+      "categoryName": "2. Interface Icon Systems",
+      "domain": "off-axis spine icon family",
+      "tags": ["applied-design", "interface-icon-systems", "off-axis-spine-icon-family"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-027 offset backbone icons off-axis spine icon family offset spine 2. interface icon systems interface icons off-axis spine icon family pack_25 applied design interface-icon-systems applied-design interface-icon-systems off-axis-spine-icon-family"
+    },
+    {
+      "id": "SP25-028",
+      "name": "Folded-Plane Pictograms",
+      "styleAnchors": ["Folded-Plane Pictograms", "two-plane shallow volume icon", "two planes"],
+      "ref": "pack_25/SP25-028.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "interface-icon-systems",
+      "categoryName": "2. Interface Icon Systems",
+      "domain": "two-plane shallow volume icon",
+      "tags": ["applied-design", "interface-icon-systems", "two-plane-shallow-volume-icon"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-028 folded-plane pictograms two-plane shallow volume icon two planes 2. interface icon systems interface icons two-plane shallow volume icon pack_25 applied design interface-icon-systems applied-design interface-icon-systems two-plane-shallow-volume-icon"
+    },
+    {
+      "id": "SP25-029",
+      "name": "Broad-Stroke Silhouettes",
+      "styleAnchors": ["Broad-Stroke Silhouettes", "heavy-weight icon family", "heavy masses"],
+      "ref": "pack_25/SP25-029.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "interface-icon-systems",
+      "categoryName": "2. Interface Icon Systems",
+      "domain": "heavy-weight icon family",
+      "tags": ["applied-design", "interface-icon-systems", "heavy-weight-icon-family"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-029 broad-stroke silhouettes heavy-weight icon family heavy masses 2. interface icon systems interface icons heavy-weight icon family pack_25 applied design interface-icon-systems applied-design interface-icon-systems heavy-weight-icon-family"
+    },
+    {
+      "id": "SP25-030",
+      "name": "Segmented Instrument Glyphs",
+      "styleAnchors": [
+        "Segmented Instrument Glyphs",
+        "segment-display icon family",
+        "shared straight segments"
+      ],
+      "ref": "pack_25/SP25-030.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "interface-icon-systems",
+      "categoryName": "2. Interface Icon Systems",
+      "domain": "segment-display icon family",
+      "tags": ["applied-design", "interface-icon-systems", "segment-display-icon-family"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-030 segmented instrument glyphs segment-display icon family shared straight segments 2. interface icon systems interface icons segment-display icon family pack_25 applied design interface-icon-systems applied-design interface-icon-systems segment-display-icon-family"
+    },
+    {
+      "id": "SP25-031",
+      "name": "Directional Notch Icons",
+      "styleAnchors": [
+        "Directional Notch Icons",
+        "notch-coded relation icon family",
+        "functional notches"
+      ],
+      "ref": "pack_25/SP25-031.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "interface-icon-systems",
+      "categoryName": "2. Interface Icon Systems",
+      "domain": "notch-coded relation icon family",
+      "tags": ["applied-design", "interface-icon-systems", "notch-coded-relation-icon-family"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-031 directional notch icons notch-coded relation icon family functional notches 2. interface icon systems interface icons notch-coded relation icon family pack_25 applied design interface-icon-systems applied-design interface-icon-systems notch-coded-relation-icon-family"
+    },
+    {
+      "id": "SP25-032",
+      "name": "Balanced Two-Plane Icons",
+      "styleAnchors": ["Balanced Two-Plane Icons", "two-region role icon family", "object plane"],
+      "ref": "pack_25/SP25-032.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "interface-icon-systems",
+      "categoryName": "2. Interface Icon Systems",
+      "domain": "two-region role icon family",
+      "tags": ["applied-design", "interface-icon-systems", "two-region-role-icon-family"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-032 balanced two-plane icons two-region role icon family object plane 2. interface icon systems interface icons two-region role icon family pack_25 applied design interface-icon-systems applied-design interface-icon-systems two-region-role-icon-family"
+    },
+    {
+      "id": "SP25-033",
+      "name": "Ribbon-Corner Symbols",
+      "styleAnchors": ["Ribbon-Corner Symbols", "folding band icon family", "folded ribbon paths"],
+      "ref": "pack_25/SP25-033.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "interface-icon-systems",
+      "categoryName": "2. Interface Icon Systems",
+      "domain": "folding band icon family",
+      "tags": ["applied-design", "interface-icon-systems", "folding-band-icon-family"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-033 ribbon-corner symbols folding band icon family folded ribbon paths 2. interface icon systems interface icons folding band icon family pack_25 applied design interface-icon-systems applied-design interface-icon-systems folding-band-icon-family"
+    },
+    {
+      "id": "SP25-034",
+      "name": "Carved Pixel Glyphs",
+      "styleAnchors": [
+        "Carved Pixel Glyphs",
+        "quantized pixel icon family",
+        "whole pixel clusters"
+      ],
+      "ref": "pack_25/SP25-034.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "interface-icon-systems",
+      "categoryName": "2. Interface Icon Systems",
+      "domain": "quantized pixel icon family",
+      "tags": ["applied-design", "interface-icon-systems", "quantized-pixel-icon-family"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-034 carved pixel glyphs quantized pixel icon family whole pixel clusters 2. interface icon systems interface icons quantized pixel icon family pack_25 applied design interface-icon-systems applied-design interface-icon-systems quantized-pixel-icon-family"
+    },
+    {
+      "id": "SP25-035",
+      "name": "Sparse Topology Icons",
+      "styleAnchors": ["Sparse Topology Icons", "node-and-link relation icon", "minimal nodes"],
+      "ref": "pack_25/SP25-035.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "interface-icon-systems",
+      "categoryName": "2. Interface Icon Systems",
+      "domain": "node-and-link relation icon",
+      "tags": ["applied-design", "interface-icon-systems", "node-and-link-relation-icon"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-035 sparse topology icons node-and-link relation icon minimal nodes 2. interface icon systems interface icons node-and-link relation icon pack_25 applied design interface-icon-systems applied-design interface-icon-systems node-and-link-relation-icon"
+    },
+    {
+      "id": "SP25-036",
+      "name": "Contour-and-Anchor Icons",
+      "styleAnchors": [
+        "Contour-and-Anchor Icons",
+        "outline with solid anchor icon",
+        "light contour"
+      ],
+      "ref": "pack_25/SP25-036.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "interface-icon-systems",
+      "categoryName": "2. Interface Icon Systems",
+      "domain": "outline with solid anchor icon",
+      "tags": ["applied-design", "interface-icon-systems", "outline-with-solid-anchor-icon"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-036 contour-and-anchor icons outline with solid anchor icon light contour 2. interface icon systems interface icons outline with solid anchor icon pack_25 applied design interface-icon-systems applied-design interface-icon-systems outline-with-solid-anchor-icon"
+    },
+    {
+      "id": "SP25-037",
+      "name": "Square-Counter Pictograms",
+      "styleAnchors": [
+        "Square-Counter Pictograms",
+        "square counter round shell icon",
+        "curved shells"
+      ],
+      "ref": "pack_25/SP25-037.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "interface-icon-systems",
+      "categoryName": "2. Interface Icon Systems",
+      "domain": "square counter round shell icon",
+      "tags": ["applied-design", "interface-icon-systems", "square-counter-round-shell-icon"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-037 square-counter pictograms square counter round shell icon curved shells 2. interface icon systems interface icons square counter round shell icon pack_25 applied design interface-icon-systems applied-design interface-icon-systems square-counter-round-shell-icon"
+    },
+    {
+      "id": "SP25-038",
+      "name": "Isometric Wire Icons",
+      "styleAnchors": [
+        "Isometric Wire Icons",
+        "isometric line icon family",
+        "strict isometric axes"
+      ],
+      "ref": "pack_25/SP25-038.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "interface-icon-systems",
+      "categoryName": "2. Interface Icon Systems",
+      "domain": "isometric line icon family",
+      "tags": ["applied-design", "interface-icon-systems", "isometric-line-icon-family"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-038 isometric wire icons isometric line icon family strict isometric axes 2. interface icon systems interface icons isometric line icon family pack_25 applied design interface-icon-systems applied-design interface-icon-systems isometric-line-icon-family"
+    },
+    {
+      "id": "SP25-039",
+      "name": "State-Pair Icon Grammar",
+      "styleAnchors": ["State-Pair Icon Grammar", "icon state sheet profile", "three states"],
+      "ref": "pack_25/SP25-039.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "interface-icon-systems",
+      "categoryName": "2. Interface Icon Systems",
+      "domain": "icon state sheet profile",
+      "tags": ["applied-design", "interface-icon-systems", "icon-state-sheet-profile"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-039 state-pair icon grammar icon state sheet profile three states 2. interface icon systems interface icons icon state sheet profile pack_25 applied design interface-icon-systems applied-design interface-icon-systems icon-state-sheet-profile"
+    },
+    {
+      "id": "SP25-040",
+      "name": "Semantic Modifier Set",
+      "styleAnchors": [
+        "Semantic Modifier Set",
+        "icon badge modifier sheet",
+        "fixed badge position"
+      ],
+      "ref": "pack_25/SP25-040.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "interface-icon-systems",
+      "categoryName": "2. Interface Icon Systems",
+      "domain": "icon badge modifier sheet",
+      "tags": ["applied-design", "interface-icon-systems", "icon-badge-modifier-sheet"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-040 semantic modifier set icon badge modifier sheet fixed badge position 2. interface icon systems interface icons icon badge modifier sheet pack_25 applied design interface-icon-systems applied-design interface-icon-systems icon-badge-modifier-sheet"
     }
   ],
-  "totalPresetCount": 20
+  "totalPresetCount": 40
 }

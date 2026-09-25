@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-031
+packId: pack_25
+name: Directional Notch Icons
+styleAnchors:
+  - Directional Notch Icons
+  - notch-coded relation icon family
+  - functional notches
+displayName: Directional Notch Icons
+category: 2. Interface Icon Systems
+domain: notch-coded relation icon family
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - interface-icon-systems
+  - directional-notch
+  - applied-design
+  - icon
+  - r-ico-11
+visualDna:
+  aesthetic: 'Directional Notch Icons: consistent notches cut into a stable silhouette encode relation, input or output instead of large arrows.'
+  subject_treatment: Give the prompt's subject or requested actions one stable body per object and one functional notch per relation, placed by a declared convention.
+  color_and_tone: One ink for body and notch, with any state color repeating the shape.
+  lighting_and_shadow: Flat shapes where every notch is a real geometric cut.
+  texture_and_material: Defined edges and notches wide enough to read as intentional design.
+  camera_and_composition: Input and output positioned by one convention applied to every member.
+  atmosphere_and_mood: Contained direction and relational precision, quietly logical and calm.
+  rendering_and_quality: A notch never switches sides just to balance the symbol visually.
+  creative_brief: "Directional Notch Icons: consistent notches cut into a stable silhouette encode relation, input or output instead of large arrows. Carry it through functional notches, stable bodies, declared convention, no big arrows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: functional notches; stable bodies; declared convention; no big arrows
+avoidRules:
+  - inconsistent notches
+  - cuts that look like damage
+  - left and right reversed
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: inconsistent notches, cuts that look like damage, left and right reversed, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: interface-icon-systems
+  categoryName: 2. Interface Icon Systems
+  domain: notch-coded relation icon family
+  tags:
+    - curation-v2
+    - interface-icon-systems
+    - directional-notch
+    - applied-design
+    - icon
+    - r-ico-11
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

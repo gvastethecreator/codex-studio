@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-021
+packId: pack_25
+name: Open-Joint Monoline
+styleAnchors:
+  - Open-Joint Monoline
+  - open-joint line icon family
+  - open stroke joints
+displayName: Open-Joint Monoline
+category: 2. Interface Icon Systems
+domain: open-joint line icon family
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - interface-icon-systems
+  - open-joint-monoline
+  - applied-design
+  - icon
+  - r-ico-01
+visualDna:
+  aesthetic: 'Open-Joint Monoline: uniform line icons that leave small deliberate gaps at every joint, separating parts while the silhouette still reads as one.'
+  subject_treatment: Draw the prompt's subject or requested actions as monoline icons whose stroke joints open with small optical gaps, keeping each metaphor distinct.
+  color_and_tone: One ink for the body, with any secondary accent repeating what the shape already says.
+  lighting_and_shadow: Pure flat line work, crisp and even, with every stroke standing on its own.
+  texture_and_material: Uniform stroke width with clean terminals and equal apparent weight on diagonals.
+  camera_and_composition: Icons aligned by optical weight on equal boxes, extra air around important gaps.
+  atmosphere_and_mood: Light precision and openness, calm and legible rather than fragile.
+  rendering_and_quality: Gaps survive at the smallest size and no crossing produces a darker spot.
+  creative_brief: "Open-Joint Monoline: uniform line icons that leave small deliberate gaps at every joint, separating parts while the silhouette still reads as one. Carry it through open stroke joints, uniform monoline, equal boxes, light precision. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: open stroke joints; uniform monoline; equal boxes; light precision
+avoidRules:
+  - invisible gaps
+  - accidental terminals
+  - opened joints that change meaning
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: invisible gaps, accidental terminals, opened joints that change meaning, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: interface-icon-systems
+  categoryName: 2. Interface Icon Systems
+  domain: open-joint line icon family
+  tags:
+    - curation-v2
+    - interface-icon-systems
+    - open-joint-monoline
+    - applied-design
+    - icon
+    - r-ico-01
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

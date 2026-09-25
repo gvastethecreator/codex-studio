@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-037
+packId: pack_25
+name: Square-Counter Pictograms
+styleAnchors:
+  - Square-Counter Pictograms
+  - square counter round shell icon
+  - curved shells
+displayName: Square-Counter Pictograms
+category: 2. Interface Icon Systems
+domain: square counter round shell icon
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - interface-icon-systems
+  - square-counter
+  - applied-design
+  - icon
+  - r-ico-17
+visualDna:
+  aesthetic: 'Square-Counter Pictograms: curved outer shells hold square inner counters, creating an internal contrast between soft outside and precise inside.'
+  subject_treatment: Draw the prompt's subject or requested objects with curved exteriors and square counters where a hole already exists, balancing weight between the two vocabularies.
+  color_and_tone: One solid ink with counters open to the background.
+  lighting_and_shadow: Flat shapes, the contrast living between curves and right angles.
+  texture_and_material: Tense outer curves and clean inner corners that stay sharp.
+  camera_and_composition: Counters centered by optical reading, applied only where a hole exists.
+  atmosphere_and_mood: Friendly outside with precise inside, one coherent voice.
+  rendering_and_quality: Square counters keep their corners when reduced without thinning the walls.
+  creative_brief: "Square-Counter Pictograms: curved outer shells hold square inner counters, creating an internal contrast between soft outside and precise inside. Carry it through curved shells, square counters, soft-precise contrast, one ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: curved shells; square counters; soft-precise contrast; one ink
+avoidRules:
+  - forced holes
+  - walls too thin
+  - squares that change the metaphor
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: forced holes, walls too thin, squares that change the metaphor, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: interface-icon-systems
+  categoryName: 2. Interface Icon Systems
+  domain: square counter round shell icon
+  tags:
+    - curation-v2
+    - interface-icon-systems
+    - square-counter
+    - applied-design
+    - icon
+    - r-ico-17
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

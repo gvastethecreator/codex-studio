@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-032
+packId: pack_25
+name: Balanced Two-Plane Icons
+styleAnchors:
+  - Balanced Two-Plane Icons
+  - two-region role icon family
+  - object plane
+displayName: Balanced Two-Plane Icons
+category: 2. Interface Icon Systems
+domain: two-region role icon family
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - interface-icon-systems
+  - two-plane-role
+  - applied-design
+  - icon
+  - r-ico-12
+visualDna:
+  aesthetic: 'Balanced Two-Plane Icons: every icon splits into a stable object plane and a smaller action plane, separated by shape and by a fixed tone role.'
+  subject_treatment: Split the prompt's subject or requested actions into one stable object region and one smaller action region, the same roles in every icon.
+  color_and_tone: Two contrasting tones with fixed roles, plus a monochrome version separated by gaps.
+  lighting_and_shadow: Flat regions whose values encode function across the whole set.
+  texture_and_material: Smooth flat planes with a clear border and stable openings.
+  camera_and_composition: The action plane smaller than the object and clear of its main trait.
+  atmosphere_and_mood: Functional order and layered reading, calm and systematic.
+  rendering_and_quality: Every icon assigns the two tones to exactly the same roles.
+  creative_brief: "Balanced Two-Plane Icons: every icon splits into a stable object plane and a smaller action plane, separated by shape and by a fixed tone role. Carry it through object plane, action plane, fixed tone roles, monochrome check. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: object plane; action plane; fixed tone roles; monochrome check
+avoidRules:
+  - recolor with no structure
+  - swapped tone roles
+  - action hidden behind the object
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: recolor with no structure, swapped tone roles, action hidden behind the object, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: interface-icon-systems
+  categoryName: 2. Interface Icon Systems
+  domain: two-region role icon family
+  tags:
+    - curation-v2
+    - interface-icon-systems
+    - two-plane-role
+    - applied-design
+    - icon
+    - r-ico-12
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

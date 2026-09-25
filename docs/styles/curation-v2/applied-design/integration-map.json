@@ -124,58 +124,112 @@
       "category": "1. Logo & Symbol Systems"
     },
     "R-ICO-01": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-021",
+      "name": "Open-Joint Monoline",
+      "category": "2. Interface Icon Systems"
     },
     "R-ICO-02": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-022",
+      "name": "Inset Stencil Solids",
+      "category": "2. Interface Icon Systems"
     },
     "R-ICO-03": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-023",
+      "name": "Chamfered Grid Glyphs",
+      "category": "2. Interface Icon Systems"
     },
     "R-ICO-04": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-024",
+      "name": "Soft-Square Primitives",
+      "category": "2. Interface Icon Systems"
     },
     "R-ICO-05": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-025",
+      "name": "Single-Bend Actions",
+      "category": "2. Interface Icon Systems"
     },
     "R-ICO-06": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-026",
+      "name": "Nested Cutout Symbols",
+      "category": "2. Interface Icon Systems"
     },
     "R-ICO-07": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-027",
+      "name": "Offset Backbone Icons",
+      "category": "2. Interface Icon Systems"
     },
     "R-ICO-08": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-028",
+      "name": "Folded-Plane Pictograms",
+      "category": "2. Interface Icon Systems"
     },
     "R-ICO-09": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-029",
+      "name": "Broad-Stroke Silhouettes",
+      "category": "2. Interface Icon Systems"
     },
     "R-ICO-10": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-030",
+      "name": "Segmented Instrument Glyphs",
+      "category": "2. Interface Icon Systems"
     },
     "R-ICO-11": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-031",
+      "name": "Directional Notch Icons",
+      "category": "2. Interface Icon Systems"
     },
     "R-ICO-12": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-032",
+      "name": "Balanced Two-Plane Icons",
+      "category": "2. Interface Icon Systems"
     },
     "R-ICO-13": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-033",
+      "name": "Ribbon-Corner Symbols",
+      "category": "2. Interface Icon Systems"
     },
     "R-ICO-14": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-034",
+      "name": "Carved Pixel Glyphs",
+      "category": "2. Interface Icon Systems"
     },
     "R-ICO-15": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-035",
+      "name": "Sparse Topology Icons",
+      "category": "2. Interface Icon Systems"
     },
     "R-ICO-16": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-036",
+      "name": "Contour-and-Anchor Icons",
+      "category": "2. Interface Icon Systems"
     },
     "R-ICO-17": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-037",
+      "name": "Square-Counter Pictograms",
+      "category": "2. Interface Icon Systems"
     },
     "R-ICO-18": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-039",
+      "name": "State-Pair Icon Grammar",
+      "category": "2. Interface Icon Systems"
     },
     "R-ICO-19": {
       "status": "qa-protocol",
@@ -183,7 +237,10 @@
       "doc": "QA-PROTOCOLS.md"
     },
     "R-ICO-20": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-040",
+      "name": "Semantic Modifier Set",
+      "category": "2. Interface Icon Systems"
     },
     "R-APP-01": {
       "status": "pending"

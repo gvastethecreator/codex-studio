@@ -32,6 +32,29 @@ categories:
       - pack_25/SP25-018.yaml
       - pack_25/SP25-019.yaml
       - pack_25/SP25-020.yaml
+  - id: interface-icon-systems
+    name: 2. Interface Icon Systems
+    presetRefs:
+      - pack_25/SP25-021.yaml
+      - pack_25/SP25-022.yaml
+      - pack_25/SP25-023.yaml
+      - pack_25/SP25-024.yaml
+      - pack_25/SP25-025.yaml
+      - pack_25/SP25-026.yaml
+      - pack_25/SP25-027.yaml
+      - pack_25/SP25-028.yaml
+      - pack_25/SP25-029.yaml
+      - pack_25/SP25-030.yaml
+      - pack_25/SP25-031.yaml
+      - pack_25/SP25-032.yaml
+      - pack_25/SP25-033.yaml
+      - pack_25/SP25-034.yaml
+      - pack_25/SP25-035.yaml
+      - pack_25/SP25-036.yaml
+      - pack_25/SP25-037.yaml
+      - pack_25/SP25-038.yaml
+      - pack_25/SP25-039.yaml
+      - pack_25/SP25-040.yaml
 presetRefs:
   - pack_25/SP25-001.yaml
   - pack_25/SP25-002.yaml
@@ -53,3 +76,23 @@ presetRefs:
   - pack_25/SP25-018.yaml
   - pack_25/SP25-019.yaml
   - pack_25/SP25-020.yaml
+  - pack_25/SP25-021.yaml
+  - pack_25/SP25-022.yaml
+  - pack_25/SP25-023.yaml
+  - pack_25/SP25-024.yaml
+  - pack_25/SP25-025.yaml
+  - pack_25/SP25-026.yaml
+  - pack_25/SP25-027.yaml
+  - pack_25/SP25-028.yaml
+  - pack_25/SP25-029.yaml
+  - pack_25/SP25-030.yaml
+  - pack_25/SP25-031.yaml
+  - pack_25/SP25-032.yaml
+  - pack_25/SP25-033.yaml
+  - pack_25/SP25-034.yaml
+  - pack_25/SP25-035.yaml
+  - pack_25/SP25-036.yaml
+  - pack_25/SP25-037.yaml
+  - pack_25/SP25-038.yaml
+  - pack_25/SP25-039.yaml
+  - pack_25/SP25-040.yaml

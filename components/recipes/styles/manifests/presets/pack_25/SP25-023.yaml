@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-023
+packId: pack_25
+name: Chamfered Grid Glyphs
+styleAnchors:
+  - Chamfered Grid Glyphs
+  - chamfered orthogonal icon family
+  - measured chamfers
+displayName: Chamfered Grid Glyphs
+category: 2. Interface Icon Systems
+domain: chamfered orthogonal icon family
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - interface-icon-systems
+  - chamfered-grid
+  - applied-design
+  - icon
+  - r-ico-03
+visualDna:
+  aesthetic: 'Chamfered Grid Glyphs: icons built from orthogonal lines and measured chamfers that replace every curve while keeping optical proportion.'
+  subject_treatment: Rebuild the prompt's subject or requested actions with straight lines and measured corner chamfers, tuning each diagonal to keep metaphor and weight.
+  color_and_tone: One ink with wide voids, the chamfers reading clearly in a single color.
+  lighting_and_shadow: Flat technical drawing with crisp geometric edges and even weight.
+  texture_and_material: Geometric cut corners, uniform surfaces and clean joins throughout.
+  camera_and_composition: One shared grid, with documented optical exceptions on short diagonals.
+  atmosphere_and_mood: Technical clarity and firmness, still friendly at small sizes.
+  rendering_and_quality: One chamfer angle system, used consistently wherever it carries meaning.
+  creative_brief: "Chamfered Grid Glyphs: icons built from orthogonal lines and measured chamfers that replace every curve while keeping optical proportion. Carry it through measured chamfers, orthogonal grid, no curves, technical clarity. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: measured chamfers; orthogonal grid; no curves; technical clarity
+avoidRules:
+  - chamfers as an ornamental filter
+  - random corners
+  - pictograms that get confused with each other
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: chamfers as an ornamental filter, random corners, pictograms that get confused with each other, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: interface-icon-systems
+  categoryName: 2. Interface Icon Systems
+  domain: chamfered orthogonal icon family
+  tags:
+    - curation-v2
+    - interface-icon-systems
+    - chamfered-grid
+    - applied-design
+    - icon
+    - r-ico-03
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

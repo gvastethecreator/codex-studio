@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-038
+packId: pack_25
+name: Isometric Wire Icons
+styleAnchors:
+  - Isometric Wire Icons
+  - isometric line icon family
+  - strict isometric axes
+displayName: Isometric Wire Icons
+category: 2. Interface Icon Systems
+domain: isometric line icon family
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - interface-icon-systems
+  - isometric-wire
+  - applied-design
+  - icon
+  - r-ico-19-new
+visualDna:
+  aesthetic: 'Isometric Wire Icons: thin line icons drawn in one strict isometric projection, so every object reads as a small precise volume made of wire.'
+  subject_treatment: Draw the prompt's subject or requested objects as thin line icons in one shared isometric projection, all edges on the same three axes.
+  color_and_tone: One ink line on a plain ground, with an optional single accent on the active face.
+  lighting_and_shadow: Line-only volumes, depth coming from the projection alone.
+  texture_and_material: Uniform thin wire lines with neat corners where three edges meet.
+  camera_and_composition: Same isometric angle and scale for every icon, aligned on a shared grid.
+  atmosphere_and_mood: Technical, tidy and quietly dimensional, like a tiny blueprint.
+  rendering_and_quality: Clean vector wireframes with no hidden-line mistakes or broken axes.
+  creative_brief: "Isometric Wire Icons: thin line icons drawn in one strict isometric projection, so every object reads as a small precise volume made of wire. Carry it through strict isometric axes, thin wire lines, shared grid, tiny volumes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: strict isometric axes; thin wire lines; shared grid; tiny volumes
+avoidRules:
+  - mixed projections
+  - hidden lines drawn through solids
+  - perspective distortion
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: mixed projections, hidden lines drawn through solids, perspective distortion, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: interface-icon-systems
+  categoryName: 2. Interface Icon Systems
+  domain: isometric line icon family
+  tags:
+    - curation-v2
+    - interface-icon-systems
+    - isometric-wire
+    - applied-design
+    - icon
+    - r-ico-19-new
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

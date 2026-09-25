@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-025
+packId: pack_25
+name: Single-Bend Actions
+styleAnchors:
+  - Single-Bend Actions
+  - one-gesture action icon family
+  - one dominant path
+displayName: Single-Bend Actions
+category: 2. Interface Icon Systems
+domain: one-gesture action icon family
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - interface-icon-systems
+  - single-bend
+  - applied-design
+  - icon
+  - r-ico-05
+visualDna:
+  aesthetic: 'Single-Bend Actions: each action icon is one dominant path with a single expressive change of direction, plus a small anchor when needed.'
+  subject_treatment: Reduce each requested action to one dominant path with one expressive bend, keeping a small anchor where the meaning needs it.
+  color_and_tone: High-contrast main stroke, with the anchor lighter in mass yet always present.
+  lighting_and_shadow: Flat line work so the path stays unmistakable at every size.
+  texture_and_material: Continuous stroke with terminals that distinguish origin from destination.
+  camera_and_composition: The main bend placed at the functional center of each icon.
+  atmosphere_and_mood: Direct gesture and economy, clear, calm and unhurried.
+  rendering_and_quality: Every necessary part kept, even when the one-bend rule is tight.
+  creative_brief: "Single-Bend Actions: each action icon is one dominant path with a single expressive change of direction, plus a small anchor when needed. Carry it through one dominant path, single bend, small anchor, clear terminals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: one dominant path; single bend; small anchor; clear terminals
+avoidRules:
+  - amputated metaphors
+  - the same arrow for everything
+  - paths that look like accidental letters
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: amputated metaphors, the same arrow for everything, paths that look like accidental letters, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: interface-icon-systems
+  categoryName: 2. Interface Icon Systems
+  domain: one-gesture action icon family
+  tags:
+    - curation-v2
+    - interface-icon-systems
+    - single-bend
+    - applied-design
+    - icon
+    - r-ico-05
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

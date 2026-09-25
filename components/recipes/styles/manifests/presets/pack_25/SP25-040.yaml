@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP25-040
+packId: pack_25
+name: Semantic Modifier Set
+styleAnchors:
+  - Semantic Modifier Set
+  - icon badge modifier sheet
+  - fixed badge position
+displayName: Semantic Modifier Set
+category: 2. Interface Icon Systems
+domain: icon badge modifier sheet
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - interface-icon-systems
+  - semantic-modifier
+  - applied-design
+  - icon
+  - profile
+  - r-ico-20
+visualDna:
+  aesthetic: 'Semantic Modifier Set: small status indicators added to base icons with one fixed position and meaning across the whole family.'
+  subject_treatment: Add requested status indicators to the prompt's base icons at one fixed position, each indicator distinct by shape while the base metaphor stays clear.
+  color_and_tone: States distinguished by shape first, with color as a repeat.
+  lighting_and_shadow: Flat indicators that stay secondary to the object.
+  texture_and_material: The same edge grammar for icon and indicator, with a clear cut between them.
+  camera_and_composition: A matrix of bases by indicators, badge position fixed in every cell.
+  atmosphere_and_mood: Discreet extra information with priority on the original object.
+  rendering_and_quality: Each indicator keeps its meaning on bases with very different silhouettes.
+  creative_brief: "Semantic Modifier Set: small status indicators added to base icons with one fixed position and meaning across the whole family. Carry it through fixed badge position, shape-coded states, base matrix, secondary indicators. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: fixed badge position; shape-coded states; base matrix; secondary indicators
+avoidRules:
+  - giant badges
+  - invented states
+  - random badge positions
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: giant badges, invented states, random badge positions, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: interface-icon-systems
+  categoryName: 2. Interface Icon Systems
+  domain: icon badge modifier sheet
+  tags:
+    - curation-v2
+    - interface-icon-systems
+    - semantic-modifier
+    - applied-design
+    - icon
+    - profile
+    - r-ico-20
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

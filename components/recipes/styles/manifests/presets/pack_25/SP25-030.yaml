@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-030
+packId: pack_25
+name: Segmented Instrument Glyphs
+styleAnchors:
+  - Segmented Instrument Glyphs
+  - segment-display icon family
+  - shared straight segments
+displayName: Segmented Instrument Glyphs
+category: 2. Interface Icon Systems
+domain: segment-display icon family
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - interface-icon-systems
+  - segmented-glyph
+  - applied-design
+  - icon
+  - r-ico-10
+visualDna:
+  aesthetic: 'Segmented Instrument Glyphs: icons built from a limited vocabulary of straight shared segments with constant joints, like discrete instrument displays.'
+  subject_treatment: Construct the prompt's subject or requested actions from a small set of straight segments with steady joints, building true metaphors rather than numbers.
+  color_and_tone: One solid ink on a continuous ground, with unlit segments shown only when states are asked for.
+  lighting_and_shadow: Flat segments whose segmented character lives entirely in the form.
+  texture_and_material: Consistent segment ends and visible joints even at small sizes.
+  camera_and_composition: Segments assigned by function rather than forced into one fixed matrix.
+  atmosphere_and_mood: Discrete technical rhythm with regular pauses that never block meaning.
+  rendering_and_quality: Each segment maps to a real part of the symbol.
+  creative_brief: "Segmented Instrument Glyphs: icons built from a limited vocabulary of straight shared segments with constant joints, like discrete instrument displays. Carry it through shared straight segments, steady joints, display vocabulary, true metaphors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: shared straight segments; steady joints; display vocabulary; true metaphors
+avoidRules:
+  - icons that look like digits
+  - arbitrary segments
+  - joints erased by glow
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: icons that look like digits, arbitrary segments, joints erased by glow, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: interface-icon-systems
+  categoryName: 2. Interface Icon Systems
+  domain: segment-display icon family
+  tags:
+    - curation-v2
+    - interface-icon-systems
+    - segmented-glyph
+    - applied-design
+    - icon
+    - r-ico-10
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

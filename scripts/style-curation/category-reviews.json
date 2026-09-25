@@ -2383,5 +2383,20 @@
     "evidencePresetIds": ["SP25-001", "SP25-002", "SP25-003"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_25",
+    "category": "2. Interface Icon Systems",
+    "displayCategory": "Interface icons",
+    "kind": "mixed",
+    "expectedCount": 20,
+    "baselineHash": "d02332242285caea7655764eedaf288d851204752027a70db817281adb6bac9f",
+    "problem": "Interface icon families need one construction rule shared by every member, readable at small sizes, without text inside the icons or copied platform icon sets.",
+    "preserve": "Requested actions, metaphors, directions and states stay distinct; each style keeps its construction (open joints, bridged solids, chamfers, soft squares, single bend, nested cutouts, offset spine, two folded planes, heavy masses, segments, notches, two-plane roles, ribbon corners, pixel clusters, topology, anchors, square counters, isometric wire).",
+    "proposedAction": "Applied-design import: 17 icon construction styles, the state grammar and badge-modifier matrix as sheet profiles, and Isometric Wire Icons as a new style replacing the small-size repair recipe (moved to QA-PROTOCOLS.md); English DNA as positive rules, three new briefs per preset.",
+    "validation": "Generate each card, then test transfer on a four-icon action set, a status pair, a toolbar at 16 and 24 px, a light and dark background and a set with one locked metaphor.",
+    "evidencePresetIds": ["SP25-021", "SP25-022", "SP25-023"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

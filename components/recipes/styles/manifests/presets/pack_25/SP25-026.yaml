@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-026
+packId: pack_25
+name: Nested Cutout Symbols
+styleAnchors:
+  - Nested Cutout Symbols
+  - two-level cutout icon family
+  - main void
+displayName: Nested Cutout Symbols
+category: 2. Interface Icon Systems
+domain: two-level cutout icon family
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - interface-icon-systems
+  - nested-cutout
+  - applied-design
+  - icon
+  - r-ico-06
+visualDna:
+  aesthetic: 'Nested Cutout Symbols: one main void inside each icon holds a second cutout large enough to clarify the function.'
+  subject_treatment: Give the prompt's subject or requested states a main void with one secondary cutout inside it only where it clarifies function, limiting nesting to two levels.
+  color_and_tone: Figure and ground clearly separated, each void a true opening.
+  lighting_and_shadow: Flat graphic shapes, with cavities read purely through outline.
+  texture_and_material: Continuous masses, clean inner edges and enough space between the two cutouts.
+  camera_and_composition: The largest opening reserved for the primary meaning, detail placed off-center.
+  atmosphere_and_mood: Functional discovery in two steps, clear and satisfying.
+  rendering_and_quality: The secondary cutout stays open when reduced and never changes the silhouette.
+  creative_brief: "Nested Cutout Symbols: one main void inside each icon holds a second cutout large enough to clarify the function. Carry it through main void, nested second cutout, two levels, clear function. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: main void; nested second cutout; two levels; clear function
+avoidRules:
+  - closed-up voids
+  - decorative nesting
+  - detail that overpowers the action
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: closed-up voids, decorative nesting, detail that overpowers the action, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: interface-icon-systems
+  categoryName: 2. Interface Icon Systems
+  domain: two-level cutout icon family
+  tags:
+    - curation-v2
+    - interface-icon-systems
+    - nested-cutout
+    - applied-design
+    - icon
+    - r-ico-06
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

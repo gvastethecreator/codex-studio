@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-028
+packId: pack_25
+name: Folded-Plane Pictograms
+styleAnchors:
+  - Folded-Plane Pictograms
+  - two-plane shallow volume icon
+  - two planes
+displayName: Folded-Plane Pictograms
+category: 2. Interface Icon Systems
+domain: two-plane shallow volume icon
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - interface-icon-systems
+  - folded-plane
+  - applied-design
+  - icon
+  - r-ico-08
+visualDna:
+  aesthetic: 'Folded-Plane Pictograms: two simplified planes describe volume with a shallow projection and no continuous shading.'
+  subject_treatment: Show the prompt's subject or requested objects with two broad planes meeting at one fold, in the same shallow projection for the whole set.
+  color_and_tone: Two functional values split by an edge, with a one-ink version that still reads.
+  lighting_and_shadow: Light summarized as one fixed light plane and one dark plane.
+  texture_and_material: Flat planes, smooth and matte, with crisp folds.
+  camera_and_composition: Shallow consistent projection across the set, with comparable widths.
+  atmosphere_and_mood: Sober tactility, enough volume to orient without showing off.
+  rendering_and_quality: The action stays legible when the secondary value is removed.
+  creative_brief: "Folded-Plane Pictograms: two simplified planes describe volume with a shallow projection and no continuous shading. Carry it through two planes, one fold, shallow projection, toolbar-ready volume. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: two planes; one fold; shallow projection; toolbar-ready volume
+avoidRules:
+  - mixed perspectives
+  - heavy shading
+  - product miniatures in a toolbar
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: mixed perspectives, heavy shading, product miniatures in a toolbar, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: interface-icon-systems
+  categoryName: 2. Interface Icon Systems
+  domain: two-plane shallow volume icon
+  tags:
+    - curation-v2
+    - interface-icon-systems
+    - folded-plane
+    - applied-design
+    - icon
+    - r-ico-08
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
