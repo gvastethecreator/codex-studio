@@ -3,7 +3,7 @@ id: SP09-011
 packId: pack_09
 name: Wolf Fur
 category: 1. Natural Materials
-version: 1
+version: 2
 supportedTasks:
   - texture_generate
   - image_generate
@@ -13,56 +13,38 @@ tags:
   - texture-and-materiality
   - natural-materials
 visualDna:
-  aesthetic: >-
-    Wolf Fur translates natural material behavior into form: start from Thick animal coat, Fluffy,
-    layered, and Flowing hair, then turn natural formation, growth, erosion, and geological or
-    biological irregularity into portable surface behavior rather than a literal material sample.
-  subject_treatment: >-
-    Transform any prompt subject through Hair strands: preserve identity and pose while letting
-    forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness,
-    contact marks, and detail scale.
-  color_and_tone: >-
-    Use Grey, White, Black tips as the material palette, with controlled value separation, local
-    color variation, and hue shifts that follow the subject's form rather than flattening it into a
-    pasted texture.
-  lighting_and_shadow: >-
-    Let Soft sheen define the light response: highlights, occlusion, translucency, specular scatter,
-    matte falloff, or rim behavior should reveal Wolf Fur without hiding the prompt subject.
-  texture_and_material: >-
-    Render Fluffy, layered through organic variation, non-repeating edge wear, local pores, growth
-    marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or
-    surface tension coherent across the whole image.
-  camera_and_composition: >-
-    Compose around Flowing hair as reusable material rhythm: macro-friendly for texture tasks, but
-    able to wrap objects, figures, environments, and props without forcing one sample view.
-  atmosphere_and_mood: >-
-    Keep the mood Wild, soft by using age, weather, habitat pressure, and sensory association; the
-    material should color the scene's feeling while preserving the user's requested subject and
-    setting.
-  rendering_and_quality: >-
-    Finish with Warm, directional material clarity: physically coherent reflectance, clean contact
-    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
-    overlay.
-  key_features: Thick animal coat; Hair strands; Fluffy, layered; Soft sheen; Flowing hair
-  creative_brief: >-
-    Route any subject through Wolf Fur as a transferable natural-material visual system while
-    preserving the prompt's subject, action, and setting. Apply wolf-fur architecture as directional
-    material: grey and white guard hairs floating over dense warm undercoat, strand flow following
-    form, soft sheen tracing contours, and wild softness with hidden strength. If the input includes
-    a creature or character, let the coat transform it; otherwise use fur as a tactile surface
-    treatment without requiring an animal reveal.
+  aesthetic: 'Wolf fur: dense grey-brown guard hairs over a soft underfur, with directional flow.'
+  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is covered in dense wolf-like fur with directional flow following its form.'
+  color_and_tone: Grey, silver, tan and black tipped fur, kept on the material while the rest of the scene keeps its own palette.
+  lighting_and_shadow: Backlight halo on the fur edges, chosen to reveal how the material reflects, absorbs or transmits light.
+  texture_and_material: Guard hairs and soft underfur with natural direction, at a believable physical scale relative to the target.
+  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.
+  atmosphere_and_mood: Wild, warm, primal and alert, carried by the material itself rather than by added props.
+  rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
+  key_features: dense grey fur; guard hairs; directional flow; backlit halo
+  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wolf Fur as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
 avoidRules:
+  - material applied to the background instead of the target
+  - unrequested sample object or habitat
+  - readable text
+  - logo
+  - muddy noisy texture
   - matted
   - wet
   - wrong material
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-011.webp
 attributes:
-  negativePrompt: matted, wet, wrong material, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, matted, wet, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

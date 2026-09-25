@@ -8,28 +8,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Oak Wood (Raw)',
     category: '1. Natural Materials',
     negativePrompt:
-      'varnish, plastic, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, varnish, plastic, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Oak Wood (Raw) translates natural material behavior into form: start from Unfinished oak plank, Rough wood grain, and Grain direction, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+        'Raw oak wood: unfinished quarter-sawn oak with open grain, ray flecks and dry, matte fibers.',
       subject_treatment:
-        'Transform any prompt subject through Grain lines: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
-      color_and_tone:
-        "Use Pale brown as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target becomes carved or built from raw oak, with grain following its form and tool marks at edges.",
+      color_and_tone: 'Pale honey to mid brown with darker grain lines.',
       lighting_and_shadow:
-        'Let Soft ambient define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Oak Wood (Raw) without hiding the prompt subject.',
-      texture_and_material:
-        'Render Rough wood grain through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Warm side light raking across the open grain, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material: 'Open-pore oak grain, medullary ray flecks, splits and adze marks.',
       camera_and_composition:
-        'Compose around Grain direction as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Rustic, solid by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Solid, honest, warm and old, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Lumber yard, natural material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features:
-        'Unfinished oak plank; Grain lines; Rough wood grain; Soft ambient; Grain direction',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'raw open oak grain; ray flecks; tool marks; matte dry fibers',
       creative_brief:
-        "Route any subject through Oak Wood (Raw) as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Tactile direction for raw oak: the grain tells a story of slow growth and sun-filled years. Capture the fibrous resistance beneath the fingertip, where every ridge and furrow is a line of natural poetry. Let the wood breathe with the dry warmth of a lumber yard at dawn, honest and unadorned. Use Oak Wood as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oak Wood (Raw) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +34,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mahogany (Polished)',
     category: '1. Natural Materials',
     negativePrompt:
-      'dusty, rough, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, dusty, rough, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Mahogany (Polished) translates natural material behavior into form: start from Expensive furniture wood, Smooth varnish, and Smooth surface, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+        'Polished mahogany: deep red-brown hardwood with a mirror-like French polish and flowing figure.',
       subject_treatment:
-        'Transform any prompt subject through Subtle grain: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is made of polished mahogany with a deep lacquered finish and figure that follows its curves.",
       color_and_tone:
-        "Use Deep reddish brown as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Deep red-brown to near-black with amber highlights, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let High gloss reflection define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Mahogany (Polished) without hiding the prompt subject.',
+        'Warm lamp light producing glossy reflections, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Smooth varnish through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'French-polished mahogany with ribbon figure, deep gloss and inlay lines.',
       camera_and_composition:
-        'Compose around Smooth surface as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Elegant, rich by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Rich, formal, warm and antique, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Luxury, antique material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features:
-        'Expensive furniture wood; Subtle grain; Smooth varnish; High gloss reflection; Smooth surface',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'polished mahogany gloss; ribbon figure; amber highlights; deep red-brown',
       creative_brief:
-        "Route any subject through Mahogany (Polished) as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Channel the depths of polished mahogany where light sinks into a sea of reddish amber and emerges transformed. The surface should feel like still water frozen in wood, deep, reflective, impossibly smooth. Elegance here is not applied but released from within, a slow exhale of centuries. Use Mahogany as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mahogany (Polished) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,27 +62,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Birch Bark',
     category: '1. Natural Materials',
     negativePrompt:
-      'plank, cut wood, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plank, cut wood, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Birch Bark translates natural material behavior into form: start from White tree bark, Papery, peeling, and Curved bark, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+        'Birch bark: papery white bark with dark horizontal lenticels, curling peels and chalky texture.',
       subject_treatment:
-        'Transform any prompt subject through Peeling layers: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
-      color_and_tone:
-        "Use White with Black lenticels as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is wrapped or built from birch bark sheets with peeling curls and dark lenticel dashes.",
+      color_and_tone: 'Chalk white, cream and charcoal marks with peach inner bark.',
       lighting_and_shadow:
-        'Let Outdoor define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Birch Bark without hiding the prompt subject.',
-      texture_and_material:
-        'Render Papery, peeling through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Soft cool daylight, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material: 'Papery peeling bark layers with black lenticels and curls.',
       camera_and_composition:
-        'Compose around Curved bark as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Natural, wild by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Northern, quiet, delicate and wild, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Natural, layered material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'White tree bark; Peeling layers; Papery, peeling; Outdoor; Curved bark',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'papery white bark; dark lenticels; curling peels; peach inner layer',
       creative_brief:
-        "Route any subject through Birch Bark as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Apply birch-bark logic as a white-and-charcoal surface system: paper-thin peeling layers, horizontal lenticel marks, curled edges, and protective skin beginning to shed. If the input already contains plant, trunk, or organic structure, reinforce that cue; otherwise wrap the subject in bark-like shedding strata without forcing a forest or tree scene.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Birch Bark as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -94,28 +88,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Granite (Polished)',
     category: '1. Natural Materials',
     negativePrompt:
-      'concrete, matte, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, concrete, matte, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Granite (Polished) translates natural material behavior into form: start from Kitchen countertop stone, Smooth stone, and Random speckles, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+        'Polished granite: speckled crystalline stone polished to a hard reflective surface.',
       subject_treatment:
-        "Transform any prompt subject through Treat subjects through Granite (Polished)'s signature cues: Random speckles: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.",
-      color_and_tone:
-        "Use Speckled Grey/Black/Pink as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is carved from granite and polished, with mineral speckles visible across its surfaces.",
+      color_and_tone: 'Grey, black and pink speckle or black granite with mica sparkle.',
       lighting_and_shadow:
-        'Let Sharp reflection define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Granite (Polished) without hiding the prompt subject.',
+        'Crisp light producing sharp reflections, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Smooth stone through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Polished granite with feldspar, quartz and mica grains, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Random speckles as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Solid, cold by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Hard, permanent, cold and monumental, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Durable, heavy material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features:
-        "Kitchen countertop stone; Treat subjects through Granite (Polished)'s signature cues: Random speckles; Smooth stone; Sharp reflection; Random speckles",
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'polished speckled granite; mica sparkle; hard reflections; crystalline grain',
       creative_brief:
-        "Route any subject through Granite (Polished) as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Summon the cold dignity of polished granite with its galaxy of crystalline speckles suspended in stone like a frozen night sky. Light should skim the surface like a blade, revealing depths that feel geological rather than superficial. The image must carry the weight of mountains in every square inch of speckled grey and pink. Use Granite as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Granite (Polished) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -123,27 +115,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sandstone (Rough)',
     category: '1. Natural Materials',
     negativePrompt:
-      'shiny, wet, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, shiny, wet, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Sandstone (Rough) translates natural material behavior into form: start from Desert rock, Gritty, porous, and Eroded, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Rough sandstone: layered sedimentary stone with granular surface and warm bands.',
       subject_treatment:
-        'Transform any prompt subject through Sediment layers: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is carved from rough sandstone with visible bedding layers and eroded edges.",
       color_and_tone:
-        "Use Red, Orange, Tan as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Ochre, rust, cream and red banding, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Harsh sun define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Sandstone (Rough) without hiding the prompt subject.',
+        'Low warm sun that emphasizes grain, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Gritty, porous through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Granular sandstone with bedding layers and wind erosion, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Eroded as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Warm, ancient by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Ancient, eroded, warm and desert-like, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Canyon, dry material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Desert rock; Sediment layers; Gritty, porous; Harsh sun; Eroded',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'rough granular sandstone; bedding bands; wind erosion; warm ochre',
       creative_brief:
-        "Route any subject through Sandstone (Rough) as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Evoke the breath of ancient deserts captured in strata of red, orange, and ochre, a surface that feels granular and thirsty under harsh sun. Each layer is a page in a stone diary carved by wind and time into a record of epochs. Render the quiet dignity of the elemental, rock that remembers being sand. Use Sandstone as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sandstone (Rough) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -151,28 +142,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Marble (Carrara)',
     category: '1. Natural Materials',
     negativePrompt:
-      'dirty, yellow, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, dirty, yellow, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Marble (Carrara) translates natural material behavior into form: start from White Italian marble, Smooth, cold, and Veining, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Carrara marble: white marble with soft grey veining, polished or finely carved.',
       subject_treatment:
-        'Transform any prompt subject through Grey veins: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is carved from white Carrara marble with grey veins following its form.",
       color_and_tone:
-        "Use White, Grey as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Warm white with soft grey veining, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Subsurface scattering define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Marble (Carrara) without hiding the prompt subject.',
+        'Soft diffused light showing subsurface glow, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Smooth, cold through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Fine crystalline marble with translucent edges and polished or chiselled finish.',
       camera_and_composition:
-        'Compose around Veining as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Classic, pure by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Classical, serene, pure and timeless, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Sculpture, premium material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features:
-        'White Italian marble; Grey veins; Smooth, cold; Subsurface scattering; Veining',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'white Carrara marble; grey veining; translucent glow; carved detail',
       creative_brief:
-        "Route any subject through Marble (Carrara) as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Apply Carrara marble as a luminous material transformation: translucent alabaster white, smoke-like grey veining, cold polished smoothness, and soft internal glow. Preserve the input's subject while giving its surfaces sculptural premium weight, as if stone were trying to become cloud without requiring classical architecture or a fixed sculpture.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Marble (Carrara) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -180,27 +169,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Slate (Split)',
     category: '1. Natural Materials',
     negativePrompt:
-      'smooth, polished, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, smooth, polished, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Slate (Split) translates natural material behavior into form: start from Roof tile stone, Layered, flaky, and Flat layers, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+        'Split slate: dark layered stone that cleaves into thin sheets with sharp, stepped edges.',
       subject_treatment:
-        'Transform any prompt subject through Jagged edges: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is built from split slate sheets or carved slate showing layered cleavage.",
       color_and_tone:
-        "Use Dark Grey, Blue as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Blue-grey, charcoal and green-grey with rust stains, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Matte define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Slate (Split) without hiding the prompt subject.',
-      texture_and_material:
-        'Render Layered, flaky through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Overcast light showing the stepped layers, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material: 'Cleaved slate sheets with sharp edges and rough riven faces.',
       camera_and_composition:
-        'Compose around Flat layers as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Cold, strong by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Austere, cold, rugged and old, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Natural, durable material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Roof tile stone; Jagged edges; Layered, flaky; Matte; Flat layers',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'split slate sheets; stepped cleavage; riven faces; blue-grey',
       creative_brief:
-        "Route any subject through Slate (Split) as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Capture the clean violence of split slate, where nature fractures into planar perfection along dark grey-blue planes with edges that carry the memory of the break. The face reveals the patient accumulation of sediment, layer upon layer of dark mineral patience. This is geology as geometry, raw and precise. Use Slate as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Slate (Split) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -208,28 +196,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mossy Rock',
     category: '1. Natural Materials',
     negativePrompt:
-      'dry, city, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, dry, city, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Mossy Rock translates natural material behavior into form: start from Stone covered in green, Velvet moss on hard stone, and Softened edges, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Mossy rock: weathered stone covered in cushions of green moss and lichen.',
       subject_treatment:
-        'Transform any prompt subject through Fuzzy outline: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target turns into weathered stone covered with thick moss cushions and lichen patches.",
       color_and_tone:
-        "Use Grey stone, Green moss as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Vivid moss green, lichen yellow and grey stone, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Soft dappled light define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Mossy Rock without hiding the prompt subject.',
+        'Soft, damp forest light, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Velvet moss on hard stone through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Velvety moss cushions, crusty lichen and damp stone, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Softened edges as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Ancient, quiet by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Ancient, quiet, overgrown and living, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Damp, ancient material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features:
-        'Stone covered in green; Fuzzy outline; Velvet moss on hard stone; Soft dappled light; Softened edges',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'moss cushions; lichen patches; damp weathered stone; forest green',
       creative_brief:
-        "Route any subject through Mossy Rock as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Apply moss-on-stone contrast to the input: velvet green growth softening grey mineral hardness, fuzzy ridges catching soft dappled light, damp edges, and softened silhouettes. If rock, ruin, plant, or terrain exists, intensify it; otherwise use moss colonization as surface behavior without forcing a woodland floor.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mossy Rock as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -237,27 +223,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'River Stones',
     category: '1. Natural Materials',
     negativePrompt:
-      'jagged, dry, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, jagged, dry, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'River Stones translates natural material behavior into form: start from Smooth pebbles, Smooth, wet, and Rounded, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'River stones: smooth, rounded pebbles fitted together like a mosaic.',
       subject_treatment:
-        'Transform any prompt subject through Rounded shapes: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is assembled from smooth rounded river stones fitted tightly together.",
       color_and_tone:
-        "Use Multi-colored grey/brown as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Grey, ochre, slate and white pebbles, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Wet gloss define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal River Stones without hiding the prompt subject.',
+        'Soft light, with some stones wet and glossy, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Smooth, wet through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Water-polished stones with rounded edges, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Rounded as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Calm, wet by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Calm, patient, natural and grounded, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Riverbed, zen material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Smooth pebbles; Rounded shapes; Smooth, wet; Wet gloss; Rounded',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'fitted rounded pebbles; water-polished; wet gloss; mosaic packing',
       creative_brief:
-        "Route any subject through River Stones as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Compose a meditation on smoothness earned through millennia of water's patient persuasion, each pebble a portrait of surrender whose edges dissolved into curves by the relentless kindness of current. Wet gloss should catch the light like a thin skin of memory, reflecting sky where stone once resisted. Render the quiet wisdom of the tumbled, the beauty of edges long since forgiven. Use River Stones as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies River Stones as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -265,28 +250,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Obsidian',
     category: '1. Natural Materials',
     negativePrompt:
-      'matte, rough, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, matte, rough, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Obsidian translates natural material behavior into form: start from Volcanic glass, Glassy, sharp, and Conchoidal fracture, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+        'Obsidian: black volcanic glass with conchoidal fractures, razor edges and glassy sheen.',
       subject_treatment:
-        'Transform any prompt subject through Sharp fractures: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is knapped from obsidian, with shell-like fracture scars and sharp edges.",
       color_and_tone:
-        "Use Deep Black as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Glossy black with smoky brown and rainbow sheen, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Glassy reflection define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Obsidian without hiding the prompt subject.',
+        'Hard rim light showing the glassy edges, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Glassy, sharp through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Volcanic glass with conchoidal ripples and translucent edges, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Conchoidal fracture as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Dark, dangerous by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Dangerous, sleek, dark and primordial, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Volcanic, sharp material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features:
-        'Volcanic glass; Sharp fractures; Glassy, sharp; Glassy reflection; Conchoidal fracture',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'black volcanic glass; conchoidal fractures; razor edges; rainbow sheen',
       creative_brief:
-        "Route any subject through Obsidian as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Conjure the frozen midnight of obsidian, volcanic glass that shatters into edges sharper than intention and darker than shadow. Conchoidal fractures should bloom across the surface like dark flowers, each curve a record of impact translated into mineral poetry. The material must feel simultaneously precious and predatory, beautiful and unforgiving. Use Obsidian as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Obsidian as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -294,27 +278,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Wolf Fur',
     category: '1. Natural Materials',
     negativePrompt:
-      'matted, wet, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, matted, wet, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Wolf Fur translates natural material behavior into form: start from Thick animal coat, Fluffy, layered, and Flowing hair, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+        'Wolf fur: dense grey-brown guard hairs over a soft underfur, with directional flow.',
       subject_treatment:
-        'Transform any prompt subject through Hair strands: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is covered in dense wolf-like fur with directional flow following its form.",
       color_and_tone:
-        "Use Grey, White, Black tips as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Grey, silver, tan and black tipped fur, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Soft sheen define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Wolf Fur without hiding the prompt subject.',
+        'Backlight halo on the fur edges, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Fluffy, layered through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Guard hairs and soft underfur with natural direction, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Flowing hair as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Wild, soft by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Wild, warm, primal and alert, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Warm, directional material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Thick animal coat; Hair strands; Fluffy, layered; Soft sheen; Flowing hair',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'dense grey fur; guard hairs; directional flow; backlit halo',
       creative_brief:
-        "Route any subject through Wolf Fur as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Apply wolf-fur architecture as directional material: grey and white guard hairs floating over dense warm undercoat, strand flow following form, soft sheen tracing contours, and wild softness with hidden strength. If the input includes a creature or character, let the coat transform it; otherwise use fur as a tactile surface treatment without requiring an animal reveal.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wolf Fur as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -322,28 +306,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Snake Scales',
     category: '1. Natural Materials',
     negativePrompt:
-      'fur, skin, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, fur, skin, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Snake Scales translates natural material behavior into form: start from Reptile scale tessellation, Smooth, dry, and Flexible armor, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+        'Snake scales: overlapping keeled or smooth scales with iridescent sheen and patterned bands.',
       subject_treatment:
-        'Transform any prompt subject through Overlapping scales: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is covered in overlapping snake scales with patterned bands following its form.",
       color_and_tone:
-        "Use Green/Black pattern as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Olive, emerald, black and gold banding with iridescence, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Iridescent sheen define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Snake Scales without hiding the prompt subject.',
+        'Raking light that shows each scale edge, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Smooth, dry through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Overlapping keeled scales with glossy iridescent sheen, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Flexible armor as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Cold, sleek by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Sleek, dangerous, hypnotic and exotic, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Exotic, detailed material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features:
-        'Reptile scale tessellation; Overlapping scales; Smooth, dry; Iridescent sheen; Flexible armor',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'overlapping snake scales; patterned bands; iridescent sheen; scale edges',
       creative_brief:
-        "Route any subject through Snake Scales as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Compose snake-scale tessellation as flexible armor over the input: overlapping green-black shields, dry keratin smoothness, precise scale grid, and iridescent edge flicker. If a reptile or creature is present, sharpen that identity; otherwise treat the subject as alien armored geometry without requiring literal skin or a snake body.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Snake Scales as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -351,27 +334,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bird Feathers',
     category: '1. Natural Materials',
     negativePrompt:
-      'fur, messy, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, fur, messy, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bird Feathers translates natural material behavior into form: start from Plumage, Soft but structured, and Layered, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+        'Bird feathers: overlapping contour feathers with barbs, shafts and iridescent sheen.',
       subject_treatment:
-        'Transform any prompt subject through Barbs and rachis: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is covered in overlapping feathers laid in rows like plumage.",
       color_and_tone:
-        "Use Iridescent Blue/Green as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Brown, cream, black and iridescent blue-green, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Sheen define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Bird Feathers without hiding the prompt subject.',
+        'Soft backlight showing feather barbs, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Soft but structured through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Overlapping feathers with visible barbs and shafts, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Layered as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Light, natural by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Light, graceful, alive and soft, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Bird wing, delicate material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Plumage; Barbs and rachis; Soft but structured; Sheen; Layered',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'overlapping feathers; barbs and shafts; plumage rows; iridescent sheen',
       creative_brief:
-        "Route any subject through Bird Feathers as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Capture the delicate engineering of plumage where individual barbs interlock into surfaces that catch and split light into spectral blues and greens, each feather a miracle of aerodynamics rendered as ornament. The overlapping structure should feel weightless yet precise, a cascade of color built on invisible order. The image must float between fragility and resilience. Use Bird Feathers as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bird Feathers as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -379,27 +362,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Coral Reef',
     category: '1. Natural Materials',
     negativePrompt:
-      'dead, bleached, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, dead, bleached, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Coral Reef translates natural material behavior into form: start from Marine structure, Rough, porous, and Branching, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+        'Coral reef: branching and brain corals growing over the target in bright calcareous forms.',
       subject_treatment:
-        'Transform any prompt subject through Pores and branches: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is overgrown or formed from living coral structures, branching and brain coral.",
       color_and_tone:
-        "Use Pink, Orange, Purple as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Coral pink, orange, purple, cream and turquoise, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Caustic light define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Coral Reef without hiding the prompt subject.',
+        'Underwater-like caustic light, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Rough, porous through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Calcareous coral with polyps, ridges and porous texture, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Branching as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Alive, colorful by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Vibrant, alive, oceanic and intricate, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Vibrant, porous material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Marine structure; Pores and branches; Rough, porous; Caustic light; Branching',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'branching and brain coral; polyps; porous calcareous texture; caustic light',
       creative_brief:
-        "Route any subject through Coral Reef as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Apply coral-reef materiality as living mineral architecture: porous calcium-carbonate texture, branching spires, honeycombed domes, pink-orange-purple vibrancy, and caustic light moving across the surface. If marine or organic content exists, reinforce it; otherwise use coral growth as abstract porous structure without forcing an underwater scene. Use Coral Reef as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Coral Reef as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -407,27 +390,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Honeycomb Wax',
     category: '1. Natural Materials',
     negativePrompt:
-      'plastic, dry, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plastic, dry, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Honeycomb Wax translates natural material behavior into form: start from Bee hive, Waxy, sticky, and Melting edge, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+        'Honeycomb wax: hexagonal beeswax comb with golden translucent cells and honey drips.',
       subject_treatment:
-        'Transform any prompt subject through Hexagons: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is built from hexagonal honeycomb with some cells filled and dripping.",
       color_and_tone:
-        "Use Golden Yellow as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Amber, gold and pale yellow wax, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Subsurface scattering define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Honeycomb Wax without hiding the prompt subject.',
+        'Backlight making wax cells glow, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Waxy, sticky through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Hexagonal wax cells, honey drips and waxy sheen, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Melting edge as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Warm, busy by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Warm, sweet, organic and industrious, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Organic, sweet material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Bee hive; Hexagons; Waxy, sticky; Subsurface scattering; Melting edge',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'hexagonal wax cells; honey drips; glowing amber; waxy sheen',
       creative_brief:
-        "Route any subject through Honeycomb Wax as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Capture the golden geometry of beeswax hexagons, where instinct engineers perfection in translucent amber walls that glow with subsurface warmth. Light should penetrate the wax like it penetrates memory, warm and diffused, revealing the sticky sweetness held within each cell. The surface must hum with the ghost of industry, geometry sweetened by purpose. Use Honeycomb Wax as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Honeycomb Wax as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -435,28 +418,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Glacier Ice',
     category: '1. Natural Materials',
     negativePrompt:
-      'clear, glass, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, clear, glass, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Glacier Ice translates natural material behavior into form: start from Compressed ancient ice, Smooth but cracked, and Massive, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+        'Glacier ice: dense blue ice with trapped bubbles, fracture planes and melt-smoothed surfaces.',
       subject_treatment:
-        'Transform any prompt subject through Cracks and bubbles: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is made of glacier ice with blue depths and trapped bubbles.",
       color_and_tone:
-        "Use Deep Cyan/Blue as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Deep cyan-blue with white frosted edges, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Internal glow define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Glacier Ice without hiding the prompt subject.',
+        'Backlight showing blue translucency, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Smooth but cracked through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Dense ice with bubbles, fractures and melt ridges, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Massive as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Freezing, ancient by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Cold, ancient, pure and silent, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Arctic, cold material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features:
-        'Compressed ancient ice; Cracks and bubbles; Smooth but cracked; Internal glow; Massive',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'deep blue glacier ice; trapped bubbles; fracture planes; translucent depth',
       creative_brief:
-        "Route any subject through Glacier Ice as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Summon the compressed time of glacial ice, where millennia of pressure have squeezed air into blue oblivion and internal cracks map the stress of slow, patient movement. An internal luminescence should glow from within, a cyan heart beating in frozen sleep that deepens toward the center. The material must feel ancient, patient, and terrifyingly fragile. Use Glacier Ice as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glacier Ice as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -464,27 +446,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sponge (Sea)',
     category: '1. Natural Materials',
     negativePrompt:
-      'kitchen sponge, square, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, kitchen sponge, square, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Sponge (Sea) translates natural material behavior into form: start from Natural bath sponge, Porous, dry, and Irregular holes, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Sea sponge: porous organic sponge with irregular holes and soft tan fibers.',
       subject_treatment:
-        'Transform any prompt subject through Holes: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is made of porous natural sea sponge with irregular holes.",
       color_and_tone:
-        "Use Tan, Yellow as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Tan, sand, ochre and pale yellow, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Soft define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Sponge (Sea) without hiding the prompt subject.',
+        'Soft side light showing pores, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Porous, dry through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Porous spongy fibers with irregular holes, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Irregular holes as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Clean, natural by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Soft, strange, organic and absorbent, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Natural, bath material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Natural bath sponge; Holes; Porous, dry; Soft; Irregular holes',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'porous sea sponge; irregular holes; soft tan fibers',
       creative_brief:
-        "Route any subject through Sponge (Sea) as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Capture the organic porosity of sea sponge where irregular holes and channels create a labyrinth of negative space in warm tan and yellow, each cavity a breathing chamber in a natural architecture of filtration. The surface should feel dry but ready to absorb, soft organic matter that once lived now preserved as texture. Render the beauty of the useful grown rather than made. Use Sponge as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sponge (Sea) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -492,27 +473,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Crystal/Gemstone',
     category: '1. Natural Materials',
     negativePrompt:
-      'glass, smooth, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, glass, smooth, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Crystal/Gemstone translates natural material behavior into form: start from Raw amethyst, Geometric growth, and Sharp points, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+        'Crystal and gemstone: faceted translucent crystal with internal refractions and color zones.',
       subject_treatment:
-        'Transform any prompt subject through Facets: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is carved from gem crystal with facets and inner refractions.",
       color_and_tone:
-        "Use Purple, White base as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Amethyst purple, emerald, sapphire or clear quartz, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Internal reflection define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Crystal/Gemstone without hiding the prompt subject.',
+        'Point lights producing refraction and fire, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Geometric growth through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Faceted crystal with inclusions and internal reflections, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Sharp points as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Mystical, valuable by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Precious, magical, cold and brilliant, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Precious, magic material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Raw amethyst; Facets; Geometric growth; Internal reflection; Sharp points',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'faceted gem crystal; internal refraction; inclusions; spectral fire',
       creative_brief:
-        "Route any subject through Crystal/Gemstone as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Apply raw amethyst growth as crystalline structure over the input: purple facets, white mineral base, pointed terminations, internal reflections, and lattice corridors of light. If gem, cave, magic, tech, or ornament exists, amplify it; otherwise let crystal clusters grow from edges and planes without requiring a literal gemstone display.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crystal/Gemstone as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -520,27 +501,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cobweb',
     category: '1. Natural Materials',
     negativePrompt:
-      'spider web (neat), wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, spider web (neat), wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Cobweb translates natural material behavior into form: start from Dusty old webs, Sticky, dusty, and Drape, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Cobweb: dense dusty spider silk draped in layers over the target.',
       subject_treatment:
-        'Transform any prompt subject through Fine strands: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is draped in thick layers of dusty cobweb strands and sheets.",
       color_and_tone:
-        "Use Grey, White as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Grey-white strands with dust and dark gaps, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Backlit define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Cobweb without hiding the prompt subject.',
+        'Backlight catching the strands, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Sticky, dusty through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Silk strands, sagging sheets and dust, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Drape as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Spooky, abandoned by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Abandoned, eerie, still and forgotten, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Aged, abandoned material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Dusty old webs; Fine strands; Sticky, dusty; Backlit; Drape',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'dusty cobweb layers; backlit strands; sagging sheets',
       creative_brief:
-        "Route any subject through Cobweb as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Render cobweb material as dusty filament architecture over the input: chaotic grey silk strands, messy draped veils, sticky intersections, backlit silver thread, and dust gathered where lines meet. If corner, object, ruin, or creature context exists, let webs cling to it; otherwise use cobwebs as aged overlay without forcing haunted-house staging. Use Cobweb as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cobweb as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -548,27 +528,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sand (Beach)',
     category: '1. Natural Materials',
     negativePrompt:
-      'desert dunes, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, desert dunes, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Sand (Beach) translates natural material behavior into form: start from Wet compacted sand, Grainy, and Compaction marks, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+        'Beach sand: fine packed sand sculpted into the target, with grain texture and crumbling edges.',
       subject_treatment:
-        'Transform any prompt subject through Ripples: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is sculpted from packed beach sand with crumbling edges and fine grain.",
       color_and_tone:
-        "Use Beige as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Warm beige, golden and wet darker sand, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Sunlight define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Sand (Beach) without hiding the prompt subject.',
-      texture_and_material:
-        'Render Grainy through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Low sun raking the grains, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material: 'Packed fine sand grains with crumbling edges and shell fragments.',
       camera_and_composition:
-        'Compose around Compaction marks as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Relaxing, warm by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Fleeting, playful, warm and fragile, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Wet, granular material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Wet compacted sand; Ripples; Grainy; Sunlight; Compaction marks',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'packed sand sculpture; crumbling edges; fine grains; wet and dry tones',
       creative_brief:
-        "Route any subject through Sand (Beach) as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Apply wet compacted sand as granular surface logic: beige ripples, dense water-darkened grain, tiny crystalline sparkle, shallow compaction marks, and sunlight caught in miniature ridges. If beach, shore, footprint, or terrain exists, reinforce it; otherwise transform planes and bases into damp sand texture without requiring vacation scenery.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sand (Beach) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -576,27 +555,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Lava Rock (Cooled)',
     category: '1. Natural Materials',
     negativePrompt:
-      'smooth stone, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, smooth stone, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Lava Rock (Cooled) translates natural material behavior into form: start from Basalt, Porous, sharp, and Flow lines, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+        'Cooled lava rock: porous black-red basalt scoria with vesicles and ropy flow texture.',
       subject_treatment:
-        'Transform any prompt subject through Sharp edges: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is made of cooled lava rock with vesicles and ropy flow texture.",
       color_and_tone:
-        "Use Black as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Charcoal black, rust red and ash grey, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Matte define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Lava Rock (Cooled) without hiding the prompt subject.',
+        'Hard side light revealing pores, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Porous, sharp through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Vesicular basalt, scoria and ropy pahoehoe flow, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Flow lines as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Desolate, hard by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Harsh, volcanic, primal and rough, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Volcanic, porous material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Basalt; Sharp edges; Porous, sharp; Matte; Flow lines',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'porous lava rock; vesicles; ropy flow; charcoal and rust',
       creative_brief:
-        "Route any subject through Lava Rock (Cooled) as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Render cooled basalt as volcanic surface treatment over the input: matte black porosity, sharp broken edges, frozen gas bubbles, flow lines, and lightweight hardness. If rock, terrain, weapon, armor, or object exists, give it lava-born scars; otherwise apply basaltic pores and cooled-flow geometry without forcing a barren landscape. Use Lava Rock as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lava Rock (Cooled) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -604,27 +583,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mother of Pearl',
     category: '1. Natural Materials',
     negativePrompt:
-      'plastic, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, plastic, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Mother of Pearl translates natural material behavior into form: start from Inside of shell, Smooth, organic, and Curved, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+        'Mother of pearl: iridescent nacre with shimmering color shifts and layered sheen.',
       subject_treatment:
-        'Transform any prompt subject through Layers: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is inlaid or carved from mother-of-pearl nacre with color-shifting sheen.",
       color_and_tone:
-        "Use Iridescent White/Pink as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Pearl white with pink, blue and green iridescence, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Pearlescent define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Mother of Pearl without hiding the prompt subject.',
+        'Soft light producing shifting iridescence, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Smooth, organic through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Layered nacre with shimmer and inlay seams, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Curved as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Delicate, ocean by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Precious, delicate, oceanic and luminous, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Precious, natural material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Inside of shell; Layers; Smooth, organic; Pearlescent; Curved',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'iridescent nacre; color-shifting sheen; inlay seams',
       creative_brief:
-        "Route any subject through Mother of Pearl as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Compose the luminous interior of nautilus shell where iridescent layers shift between white, pink, and pale green like a pastel aurora frozen in calcium, pearlescent light swimming across the curved surface without source or destination. The material should glow without emitting, reflecting a spectrum that seems to come from nowhere within the shell's architecture. Capture the ocean's quietest masterpiece, luster born of slow patience. Use Mother of Pearl as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mother of Pearl as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -632,27 +611,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Dragon Scale',
     category: '1. Natural Materials',
     negativePrompt:
-      'fish scale, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, fish scale, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Dragon Scale translates natural material behavior into form: start from Dragon-hide armor, Hard, armored, and Spiked, then turn natural formation, growth, erosion, and geological or biological irregularity into portable surface behavior rather than a literal material sample.',
+        'Dragon scale: large armored overlapping scales with ridges, metallic sheen and battle scratches.',
       subject_treatment:
-        'Transform any prompt subject through Thick scales: preserve identity and pose while letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is covered in large overlapping dragon scales with ridges and metallic sheen.",
       color_and_tone:
-        "Use Red/Gold/Black as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Bronze, crimson, emerald or obsidian with metallic highlights, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Metallic sheen define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Dragon Scale without hiding the prompt subject.',
-      texture_and_material:
-        'Render Hard, armored through organic variation, non-repeating edge wear, local pores, growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Hard raking light showing ridges, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material: 'Thick overlapping scales with ridges, scratches and metallic sheen.',
       camera_and_composition:
-        'Compose around Spiked as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Epic, dangerous by using age, weather, habitat pressure, and sensory association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Powerful, armored, mythic and fierce, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Fantasy, tough material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Dragon-hide armor; Thick scales; Hard, armored; Metallic sheen; Spiked',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'large overlapping dragon scales; ridges; metallic sheen; battle scratches',
       creative_brief:
-        "Route any subject through Dragon Scale as a transferable natural-material visual system while preserving the prompt's subject, action, and setting. Apply dragon-hide armor as legendary surface language: thick overlapping red-gold-obsidian scales, ridged crests with metallic sheen, dark shadow between plates, and ancient indestructible weight. If character, creature, armor, vehicle, or object exists, give it dragon-scale protection; otherwise use scale plating as fantasy material without requiring a dragon.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dragon Scale as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

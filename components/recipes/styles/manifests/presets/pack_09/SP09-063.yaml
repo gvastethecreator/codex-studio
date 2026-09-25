@@ -3,7 +3,7 @@ id: SP09-063
 packId: pack_09
 name: Cobweb
 category: 1. Natural Materials
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,58 +12,37 @@ tags:
   - texture-and-materiality
   - natural-materials
 visualDna:
-  aesthetic: >-
-    Cobweb translates natural material behavior into form: start from Dusty old webs, Sticky, dusty,
-    and Drape, then turn natural formation, growth, erosion, and geological or biological
-    irregularity into portable surface behavior rather than a literal material sample.
-  subject_treatment: >-
-    Transform any prompt subject through Fine strands: preserve identity and pose while letting
-    forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness,
-    contact marks, and detail scale.
-  color_and_tone: >-
-    Use Grey, White as the material palette, with controlled value separation, local color
-    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
-    texture.
-  lighting_and_shadow: >-
-    Let Backlit define the light response: highlights, occlusion, translucency, specular scatter,
-    matte falloff, or rim behavior should reveal Cobweb without hiding the prompt subject.
-  texture_and_material: >-
-    Render Sticky, dusty through organic variation, non-repeating edge wear, local pores, growth
-    marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or
-    surface tension coherent across the whole image.
-  camera_and_composition: >-
-    Compose around Drape as reusable material rhythm: macro-friendly for texture tasks, but able to
-    wrap objects, figures, environments, and props without forcing one sample view.
-  atmosphere_and_mood: >-
-    Keep the mood Spooky, abandoned by using age, weather, habitat pressure, and sensory
-    association; the material should color the scene's feeling while preserving the user's requested
-    subject and setting.
-  rendering_and_quality: >-
-    Finish with Aged, abandoned material clarity: physically coherent reflectance, clean contact
-    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
-    overlay.
-  key_features: Dusty old webs; Fine strands; Sticky, dusty; Backlit; Drape
-  creative_brief: >-
-    Route any subject through Cobweb as a transferable natural-material visual system while
-    preserving the prompt's subject, action, and setting. Render cobweb material as dusty filament
-    architecture over the input: chaotic grey silk strands, messy draped veils, sticky
-    intersections, backlit silver thread, and dust gathered where lines meet. If corner, object,
-    ruin, or creature context exists, let webs cling to it; otherwise use cobwebs as aged overlay
-    without forcing haunted-house staging. Use Cobweb as portable surface/render behavior over any
-    input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the
-    subject instead of requiring a literal material sample, macro tile, wall, landscape, source
-    object, or scene where the material naturally appears.
+  aesthetic: 'Cobweb: dense dusty spider silk draped in layers over the target.'
+  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is draped in thick layers of dusty cobweb strands and sheets.'
+  color_and_tone: Grey-white strands with dust and dark gaps, kept on the material while the rest of the scene keeps its own palette.
+  lighting_and_shadow: Backlight catching the strands, chosen to reveal how the material reflects, absorbs or transmits light.
+  texture_and_material: Silk strands, sagging sheets and dust, at a believable physical scale relative to the target.
+  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.
+  atmosphere_and_mood: Abandoned, eerie, still and forgotten, carried by the material itself rather than by added props.
+  rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
+  key_features: dusty cobweb layers; backlit strands; sagging sheets
+  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cobweb as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
 avoidRules:
+  - material applied to the background instead of the target
+  - unrequested sample object or habitat
+  - readable text
+  - logo
+  - muddy noisy texture
   - spider web (neat)
   - wrong material
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-063.webp
 attributes:
-  negativePrompt: spider web (neat), wrong material, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, spider web (neat), wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

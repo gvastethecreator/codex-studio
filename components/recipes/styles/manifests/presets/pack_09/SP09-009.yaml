@@ -3,7 +3,7 @@ id: SP09-009
 packId: pack_09
 name: River Stones
 category: 1. Natural Materials
-version: 1
+version: 2
 supportedTasks:
   - texture_generate
   - image_generate
@@ -13,59 +13,38 @@ tags:
   - texture-and-materiality
   - natural-materials
 visualDna:
-  aesthetic: >-
-    River Stones translates natural material behavior into form: start from Smooth pebbles, Smooth,
-    wet, and Rounded, then turn natural formation, growth, erosion, and geological or biological
-    irregularity into portable surface behavior rather than a literal material sample.
-  subject_treatment: >-
-    Transform any prompt subject through Rounded shapes: preserve identity and pose while letting
-    forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness,
-    contact marks, and detail scale.
-  color_and_tone: >-
-    Use Multi-colored grey/brown as the material palette, with controlled value separation, local
-    color variation, and hue shifts that follow the subject's form rather than flattening it into a
-    pasted texture.
-  lighting_and_shadow: >-
-    Let Wet gloss define the light response: highlights, occlusion, translucency, specular scatter,
-    matte falloff, or rim behavior should reveal River Stones without hiding the prompt subject.
-  texture_and_material: >-
-    Render Smooth, wet through organic variation, non-repeating edge wear, local pores, growth
-    marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or
-    surface tension coherent across the whole image.
-  camera_and_composition: >-
-    Compose around Rounded as reusable material rhythm: macro-friendly for texture tasks, but able
-    to wrap objects, figures, environments, and props without forcing one sample view.
-  atmosphere_and_mood: >-
-    Keep the mood Calm, wet by using age, weather, habitat pressure, and sensory association; the
-    material should color the scene's feeling while preserving the user's requested subject and
-    setting.
-  rendering_and_quality: >-
-    Finish with Riverbed, zen material clarity: physically coherent reflectance, clean contact
-    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
-    overlay.
-  key_features: Smooth pebbles; Rounded shapes; Smooth, wet; Wet gloss; Rounded
-  creative_brief: >-
-    Route any subject through River Stones as a transferable natural-material visual system while
-    preserving the prompt's subject, action, and setting. Compose a meditation on smoothness earned
-    through millennia of water's patient persuasion, each pebble a portrait of surrender whose edges
-    dissolved into curves by the relentless kindness of current. Wet gloss should catch the light
-    like a thin skin of memory, reflecting sky where stone once resisted. Render the quiet wisdom of
-    the tumbled, the beauty of edges long since forgiven. Use River Stones as portable
-    surface/render behavior over any input: map its texture, light response, edge wear, color
-    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample,
-    macro tile, wall, landscape, source object, or scene where the material naturally appears.
+  aesthetic: 'River stones: smooth, rounded pebbles fitted together like a mosaic.'
+  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is assembled from smooth rounded river stones fitted tightly together.'
+  color_and_tone: Grey, ochre, slate and white pebbles, kept on the material while the rest of the scene keeps its own palette.
+  lighting_and_shadow: Soft light, with some stones wet and glossy, chosen to reveal how the material reflects, absorbs or transmits light.
+  texture_and_material: Water-polished stones with rounded edges, at a believable physical scale relative to the target.
+  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.
+  atmosphere_and_mood: Calm, patient, natural and grounded, carried by the material itself rather than by added props.
+  rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
+  key_features: fitted rounded pebbles; water-polished; wet gloss; mosaic packing
+  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies River Stones as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
 avoidRules:
+  - material applied to the background instead of the target
+  - unrequested sample object or habitat
+  - readable text
+  - logo
+  - muddy noisy texture
   - jagged
   - dry
   - wrong material
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-009.webp
 attributes:
-  negativePrompt: jagged, dry, wrong material, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, jagged, dry, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
