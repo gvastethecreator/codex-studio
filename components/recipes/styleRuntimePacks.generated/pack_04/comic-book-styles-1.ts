@@ -8,28 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Golden Age Comic',
     category: '1. Comic Book Styles',
     negativePrompt:
-      'modern digital color, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render',
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, digital gradients, glossy airbrush shading, modern digital color, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Golden Age Comic acts as a transferable illustration router: start from 1940s flagship lead archetype comic, Superman style, golden-age boldness, truth-justice-energy, pulp optimism, 4-color process, halftone pattern, speech balloon and comic-illustration system built from ink hierarchy, panel-era color, contour exaggeration, print artifacts, and sequential-art readability, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        '1940s four-color newsprint comic: thick confident brush ink over flat process color, printed cheaply with Ben-Day dots and slightly drifting plates.',
       subject_treatment:
-        'Transform any prompt subject through Thick ink, thick confident ink, emblematic square-jawed simplification, and four-color action-read silhouette logic; preserve the requested subject while translating form into panel-ready silhouettes, expressive contour weight, stylized anatomy, speed emphasis, or graphic restraint only when the preset calls for it, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.',
       color_and_tone:
-        'Build color with CMYK dots (Ben-Day), primary lead archetype primaries, newsprint nostalgia; treat color as comic production language: four-color plates, limited spot color, manga monochrome, digital flats, noir contrast, webtoon gradients, or painted page atmosphere, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Four flat process inks only: primary red, yellow and blue plus Ben-Day tints for flesh and sky, no gradients at all.',
       lighting_and_shadow:
-        'Handle light through Flat, high-key fill, minimal shadows; make light read through ink spotting, cel-like value blocks, dramatic rim separation, flat print fill, or painted page modeling rather than generic studio illumination, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Flat high-key fill everywhere; form is shown by a few solid black ink shadows under jaws, arms and brims rather than modeled light.',
       texture_and_material:
-        'Render Cheap paper, ink hierarchy, panel readability, stylized contour, print-era surface, and comic color discipline; surface detail should reveal paper tooth, newsprint dots, screen tones, digital brush layers, ink pools, gutter discipline, or pixel cells at a scale that supports the drawing, keeping material scale coherent and avoiding noisy filler texture.',
+        'Yellowed pulp newsprint, coarse Ben-Day dot tints, ink slightly spread into the paper, color plates a hair out of register.',
       camera_and_composition:
-        'Structure the image through emblematic pose, cover-panel force, clean central read, diagonal energy, and space for balloon-like graphic shapes without real text; compose with panel logic, silhouette clarity, speech-shape space, page rhythm, close-up drama, or scroll pacing without requiring a fixed comic-page scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+        'Straight-on or gently low heroic view, the subject planted in the center with a strong diagonal action line and simple backgrounds.',
       atmosphere_and_mood:
-        'Keep the mood Action, classic, square-jawed heroism, serial cliffhanger; derive mood from era, genre pressure, satire, melodrama, horror obsession, pulp energy, or graphic-novel seriousness, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Earnest pulp optimism, bold and naive, everything resolved by strength and courage.',
       rendering_and_quality:
-        'Finish with Vintage, bold, four-color grit, golden-age optimism; finish with clear ink decisions, readable stylization, controlled artifacting, and no generic superhero costume or random comic text replacing the prompt, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Chunky uniform brush contours, blocky simplified anatomy and visible cheap-print flaws; never glossy digital shading.',
       key_features:
-        '1940s flagship lead archetype comic, Superman style, golden-age boldness, truth-justice-energy, pulp optimism; 4-color process, halftone pattern, speech balloon; CMYK dots (Ben-Day), primary lead archetype primaries, newsprint nostalgia; Cheap paper, ink hierarchy, panel readability, stylized contour, print-era surface, and comic color discipline; emblematic pose, cover-panel force, clean central read, diagonal energy, and space for balloon-like graphic shapes without real text',
+        'thick brush ink contours; four flat process colors; Ben-Day dot tints; yellowed newsprint; slight plate misregistration',
       creative_brief:
-        "Apply Golden Age Comic as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through 1940s flagship lead archetype comic, Superman style, golden-age boldness, truth-justice-energy, pulp optimism, 4-color process, halftone pattern, speech balloon, Cheap paper, ink hierarchy, panel readability, stylized contour, print-era surface, and comic color discipline without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Golden Age Comic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +37,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Silver Age Comic',
     category: '1. Comic Book Styles',
     negativePrompt:
-      'dark, gritty, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render',
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, photoreal space render, dark, gritty, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Silver Age Comic acts as a transferable illustration router: start from Silver-age cosmic comic dynamism with atom-era optimism, crackling energy fields, and mythic interstellar scale, Energy-dot crackle grammar, cosmic burst halos, dynamic foreshortening thrust, atom-age emblematic panel cadence and comic-illustration system built from ink hierarchy, panel-era color, contour exaggeration, print artifacts, and sequential-art readability, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        '1960s cosmic comic: blocky muscular ink drawing with extreme foreshortening, crackling black energy-dot fields and machine-like cosmic architecture.',
       subject_treatment:
-        'Transform any prompt subject through High-velocity foreshortened contouring, dense energy-dot fields, radiation burst linework, and impact-first panel rhythm; preserve the requested subject while translating form into panel-ready silhouettes, expressive contour weight, stylized anatomy, speed emphasis, or graphic restraint only when the preset calls for it, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.',
       color_and_tone:
-        'Build color with Bright primary, comic pop spectrum, magenta/cyan punch; treat color as comic production language: four-color plates, limited spot color, manga monochrome, digital flats, noir contrast, webtoon gradients, or painted page atmosphere, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Bright flat primaries pushed toward magenta, cyan and acid yellow, with black space backgrounds studded with colored dots.',
       lighting_and_shadow:
-        'Handle light through Dramatic, cosmic backlight, emblematic rim glow; make light read through ink spotting, cel-like value blocks, dramatic rim separation, flat print fill, or painted page modeling rather than generic studio illumination, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Radiant backlight bursts behind the subject, hard black shadow shapes, glowing rim lines around hands and machinery.',
       texture_and_material:
-        'Render Newsprint, ink hierarchy, panel readability, stylized contour, print-era surface, and comic color discipline; surface detail should reveal paper tooth, newsprint dots, screen tones, digital brush layers, ink pools, gutter discipline, or pixel cells at a scale that supports the drawing, keeping material scale coherent and avoiding noisy filler texture.',
+        'Energy crackle drawn as clusters of black and colored dots, square blocky knuckles, circuit-like panels on every machine.',
       camera_and_composition:
-        'Structure the image through Exaggerated perspective, scale rhythm, edge hierarchy, spacing, and composition rules specific to Silver Age Comic; compose with panel logic, silhouette clarity, speech-shape space, page rhythm, close-up drama, or scroll pacing without requiring a fixed comic-page scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Epic, sci-fi, super-powered wonder, interstellar drama; derive mood from era, genre pressure, satire, melodrama, horror obsession, pulp energy, or graphic-novel seriousness, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Forced perspective with fists or hands lunging at the lens, scale jumps from tiny figures to colossal forms, radial burst layout.',
+      atmosphere_and_mood: 'Loud cosmic wonder, everything enormous, charged and about to explode.',
       rendering_and_quality:
-        'Finish with Bold classic-comic rendering focused on energetic readability, cosmic spectacle, and iconic action silhouette clarity; finish with clear ink decisions, readable stylization, controlled artifacting, and no generic superhero costume or random comic text replacing the prompt, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Heavy square-cornered contours, flat print color and dot crackle; no painted gradients or realistic textures.',
       key_features:
-        'Silver-age cosmic comic dynamism with atom-era optimism, crackling energy fields, and mythic interstellar scale; Energy-dot crackle grammar, cosmic burst halos, dynamic foreshortening thrust, atom-age emblematic panel cadence; Bright primary, comic pop spectrum, magenta/cyan punch; Newsprint, ink hierarchy, panel readability, stylized contour, print-era surface, and comic color discipline; Exaggerated perspective, scale rhythm, edge hierarchy, spacing, and composition rules specific to Silver Age Comic',
+        'energy-dot crackle; extreme foreshortening; blocky square anatomy; cosmic machine architecture; magenta-cyan-yellow flats',
       creative_brief:
-        "Apply Silver Age Comic as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Silver-age cosmic comic dynamism with atom-era optimism, crackling energy fields, and mythic interstellar scale, Energy-dot crackle grammar, cosmic burst halos, dynamic foreshortening thrust, atom-age emblematic panel cadence, Newsprint, ink hierarchy, panel readability, stylized contour, print-era surface, and comic color discipline without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Silver Age Comic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +65,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Modern Superhero (Digital)',
     category: '1. Comic Book Styles',
     negativePrompt:
-      'flat, retro, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render',
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, flat retro print, Ben-Day dots, flat, retro, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Modern Superhero (Digital) acts as a transferable illustration router: start from Modern blockbuster-comic style with sleek mythic lead archetype energy, widescreen panel staging, and high-impact digital polish, Widescreen action composition, specular-driven suit rendering, flare-controlled highlights, decompressed-impact pacing and comic-illustration system built from ink hierarchy, panel-era color, contour exaggeration, print artifacts, and sequential-art readability, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Contemporary digital superhero comic: clean variable-weight digital inks under glossy rendered color with gradients, specular hits and composited FX glows.',
       subject_treatment:
-        'Transform any prompt subject through Clean high-confidence digital inking with controlled contour weights, sharp silhouette reads, and cinematic action line economy; preserve the requested subject while translating form into panel-ready silhouettes, expressive contour weight, stylized anatomy, speed emphasis, or graphic restraint only when the preset calls for it, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.',
       color_and_tone:
-        'Build color with Bold cool-warm contrast with luminous gradient ramps, reflective accent tones, and controlled flare-spectrum highlights; treat color as comic production language: four-color plates, limited spot color, manga monochrome, digital flats, noir contrast, webtoon gradients, or painted page atmosphere, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Teal-and-orange cool-warm contrast, luminous gradient ramps, saturated energy colors against dark desaturated skies.',
       lighting_and_shadow:
-        'Handle light through Dynamic key/rim orchestration with volumetric accent rays, specular hit placement, and dramatic separation for emblematic focus; make light read through ink spotting, cel-like value blocks, dramatic rim separation, flat print fill, or painted page modeling rather than generic studio illumination, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Strong rim lights from two sides, volumetric rays and lens flares, hard specular highlights on armor and wet surfaces.',
       texture_and_material:
-        'Render Smooth digitally polished surfaces with subtle composite grain and high-clarity FX glow layering; surface detail should reveal paper tooth, newsprint dots, screen tones, digital brush layers, ink pools, gutter discipline, or pixel cells at a scale that supports the drawing, keeping material scale coherent and avoiding noisy filler texture.',
+        'Smooth airbrushed gradients, reflective armor plates, fine digital grain and glowing particle overlays.',
       camera_and_composition:
-        'Structure the image through emblematic proportion push with muscular volume exaggeration, forced-perspective beats, and panoramic action framing; compose with panel logic, silhouette clarity, speech-shape space, page rhythm, close-up drama, or scroll pacing without requiring a fixed comic-page scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+        'Widescreen low angle, heroic muscular proportions, debris and particles pulling depth toward the lens.',
       atmosphere_and_mood:
-        'Keep the mood Intense, mythic, serious, kinetic, cinematic; derive mood from era, genre pressure, satire, melodrama, horror obsession, pulp energy, or graphic-novel seriousness, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Intense blockbuster seriousness, every moment framed as a cinematic climax.',
       rendering_and_quality:
-        'Finish with High-detail glossy comic finish emphasizing readability under motion, premium digital compositing, and refined surface response; finish with clear ink decisions, readable stylization, controlled artifacting, and no generic superhero costume or random comic text replacing the prompt, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Crisp digital line art with glossy full rendering and controlled bloom; original costume designs only, never a known hero.',
       key_features:
-        'Modern blockbuster-comic style with sleek mythic lead archetype energy, widescreen panel staging, and high-impact digital polish; Widescreen action composition, specular-driven suit rendering, flare-controlled highlights, decompressed-impact pacing; Bold cool-warm contrast with luminous gradient ramps, reflective accent tones, and controlled flare-spectrum highlights; Smooth digitally polished surfaces with subtle composite grain and high-clarity FX glow layering; emblematic proportion push with muscular volume exaggeration, forced-perspective beats, and panoramic action framing',
+        'glossy digital color; dual rim light; volumetric rays and flares; specular armor; widescreen low angle',
       creative_brief:
-        "Apply Modern Superhero (Digital) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Modern blockbuster-comic style with sleek mythic lead archetype energy, widescreen panel staging, and high-impact digital polish, Widescreen action composition, specular-driven suit rendering, flare-controlled highlights, decompressed-impact pacing, Smooth digitally polished surfaces with subtle composite grain and high-clarity FX glow layering without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Modern Superhero (Digital) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +94,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Manga (Shonen)',
     category: '1. Comic Book Styles',
     negativePrompt:
-      'color, american comic, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render',
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, full color, painted shading, color, american comic, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Manga (Shonen) acts as a transferable illustration router: start from High-energy action manga in monochrome print language, Speed vectors, panel impact framing, energy-emphasis effects and comic-illustration system built from ink hierarchy, panel-era color, contour exaggeration, print artifacts, and sequential-art readability, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Action manga page art: black G-pen ink with aggressive line-weight swings, radial speed lines and mechanical screentone gray.',
       subject_treatment:
-        'Transform any prompt subject through Aggressive contour weight shifts, speed-line fields, impact burst geometry; preserve the requested subject while translating form into panel-ready silhouettes, expressive contour weight, stylized anatomy, speed emphasis, or graphic restraint only when the preset calls for it, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.',
       color_and_tone:
-        'Build color with Black, white, and screentone grayscale hierarchy; treat color as comic production language: four-color plates, limited spot color, manga monochrome, digital flats, noir contrast, webtoon gradients, or painted page atmosphere, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Pure black ink, white paper and dot screentone grays only; the darkest blacks reserved for the impact point.',
       lighting_and_shadow:
-        'Handle light through Hard-contrast shadow cuts with directional momentum accents; make light read through ink spotting, cel-like value blocks, dramatic rim separation, flat print fill, or painted page modeling rather than generic studio illumination, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Hard shadow cuts laid in flat screentone, white rim flashes separating the subject from dark speed-line fields.',
       texture_and_material:
-        'Render Visible screentone raster and ink-solid blacks; surface detail should reveal paper tooth, newsprint dots, screen tones, digital brush layers, ink pools, gutter discipline, or pixel cells at a scale that supports the drawing, keeping material scale coherent and avoiding noisy filler texture.',
+        'Visible dot screentone patches, scratched-out tone for sparks, ink splatter and debris shards.',
       camera_and_composition:
-        'Structure the image through Exaggerated perspective and motion warping during impact moments; compose with panel logic, silhouette clarity, speech-shape space, page rhythm, close-up drama, or scroll pacing without requiring a fixed comic-page scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+        'Extreme perspective at the moment of impact, radial or parallel speed lines converging on the action, bodies warped by motion.',
       atmosphere_and_mood:
-        'Keep the mood Intense, competitive, escalation-driven, mood carried by Manga (Shonen) craft, material pressure, and visual restraint; derive mood from era, genre pressure, satire, melodrama, horror obsession, pulp energy, or graphic-novel seriousness, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Escalating competitive energy, the loudest moment of a fight frozen mid-strike.',
       rendering_and_quality:
-        'Finish with Dynamic editorial panel finish with sharp kinetic readability; finish with clear ink decisions, readable stylization, controlled artifacting, and no generic superhero costume or random comic text replacing the prompt, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Sharp tapered G-pen strokes, clean tone edges and readable silhouettes; never colored or painted.',
       key_features:
-        'High-energy action manga in monochrome print language; Speed vectors, panel impact framing, energy-emphasis effects; Black, white, and screentone grayscale hierarchy; Visible screentone raster and ink-solid blacks; Exaggerated perspective and motion warping during impact moments',
+        'G-pen line-weight swings; radial speed lines; dot screentone; impact burst; extreme foreshortening',
       creative_brief:
-        "Apply Manga (Shonen) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through High-energy action manga in monochrome print language, Speed vectors, panel impact framing, energy-emphasis effects, Visible screentone raster and ink-solid blacks without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Manga (Shonen) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +123,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Manga (Shojo)',
     category: '1. Comic Book Styles',
     negativePrompt:
-      'rough, ugly, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render',
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, heavy black shadows, gritty texture, rough, ugly, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Manga (Shojo) acts as a transferable illustration router: start from Romantic manga visual language with decorative emotional emphasis, Decorative overlays, ornamental borders, emotion-forward closeups and comic-illustration system built from ink hierarchy, panel-era color, contour exaggeration, print artifacts, and sequential-art readability, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Romance manga art: hair-fine pen lines, large glistening eyes, floral and sparkle screentones and decorative flower borders floating around the subject.',
       subject_treatment:
-        'Transform any prompt subject through Fine delicate linework, elegant curves, expressive facial detailing; preserve the requested subject while translating form into panel-ready silhouettes, expressive contour weight, stylized anatomy, speed emphasis, or graphic restraint only when the preset calls for it, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.',
       color_and_tone:
-        'Build color with Monochrome with soft gray tone bands and light ornamental accents; treat color as comic production language: four-color plates, limited spot color, manga monochrome, digital flats, noir contrast, webtoon gradients, or painted page atmosphere, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Monochrome with soft gray tones and gradient screentone; whites kept pure for sparkles and petals.',
       lighting_and_shadow:
-        'Handle light through Diffused glow, soft bloom highlights, low-contrast value transitions; make light read through ink spotting, cel-like value blocks, dramatic rim separation, flat print fill, or painted page modeling rather than generic studio illumination, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Soft backlight bloom, very light shadows, highlights drawn as star sparkles and white halos around hair.',
       texture_and_material:
-        'Render Floral/sparkle screentone motifs and airy texture overlays; surface detail should reveal paper tooth, newsprint dots, screen tones, digital brush layers, ink pools, gutter discipline, or pixel cells at a scale that supports the drawing, keeping material scale coherent and avoiding noisy filler texture.',
+        'Floral pattern screentone, bubble and sparkle overlays, flowing hair drawn in hundreds of fine strands.',
       camera_and_composition:
-        'Structure the image through Stylized facial proportion and lyrical panel-space treatment; compose with panel logic, silhouette clarity, speech-shape space, page rhythm, close-up drama, or scroll pacing without requiring a fixed comic-page scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Tender, dreamy, introspective, mood carried by Manga (Shojo) craft, material pressure, and visual restraint; derive mood from era, genre pressure, satire, melodrama, horror obsession, pulp energy, or graphic-novel seriousness, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Emotional close-up or elegant half figure, subject turned three-quarters, petals and sparkles framing the negative space.',
+      atmosphere_and_mood: 'Tender, dreamy and wistful, a heartbeat stretched into a moment.',
       rendering_and_quality:
-        'Finish with Polished emotional panel rendering with graceful line control; finish with clear ink decisions, readable stylization, controlled artifacting, and no generic superhero costume or random comic text replacing the prompt, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Delicate controlled line with elongated graceful proportions; never rough, heavy or muscular.',
       key_features:
-        'Romantic manga visual language with decorative emotional emphasis; Decorative overlays, ornamental borders, emotion-forward closeups; Monochrome with soft gray tone bands and light ornamental accents; Floral/sparkle screentone motifs and airy texture overlays; Stylized facial proportion and lyrical panel-space treatment',
+        'hair-fine pen lines; floral screentone; sparkle highlights; large glistening eyes; flower-framed negative space',
       creative_brief:
-        "Apply Manga (Shojo) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Romantic manga visual language with decorative emotional emphasis, Decorative overlays, ornamental borders, emotion-forward closeups, Floral/sparkle screentone motifs and airy texture overlays without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Manga (Shojo) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +151,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Webtoon Style',
     category: '1. Comic Book Styles',
     negativePrompt:
-      'black and white, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render',
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, print halftone, paper grain, black and white, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Webtoon Style acts as a transferable illustration router: start from Vertical-scroll webcomic language with mobile-first readability, Vertical pacing gaps, beat-driven panel stacking, gradient-backed emphasis moments and comic-illustration system built from ink hierarchy, panel-era color, contour exaggeration, print artifacts, and sequential-art readability, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Vertical-scroll webcomic art: clean digital line with soft cel shading over glowing full-color gradient backgrounds, drawn for a phone screen.',
       subject_treatment:
-        'Transform any prompt subject through Clean digital linework with controlled contour simplification; preserve the requested subject while translating form into panel-ready silhouettes, expressive contour weight, stylized anatomy, speed emphasis, or graphic restraint only when the preset calls for it, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.',
       color_and_tone:
-        'Build color with Saturated full-color palette with flat-to-soft-cel value staging; treat color as comic production language: four-color plates, limited spot color, manga monochrome, digital flats, noir contrast, webtoon gradients, or painted page atmosphere, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Saturated full color, pastel-to-neon gradient backdrops, two-tone cel shadows tinted violet or blue.',
       lighting_and_shadow:
-        'Handle light through Soft cel shading with selective rim accents for depth separation; make light read through ink spotting, cel-like value blocks, dramatic rim separation, flat print fill, or painted page modeling rather than generic studio illumination, so value structure supports the illustration process and does not overwrite the requested content.',
+        'One soft cel shadow step plus a colored rim light; glow layers set to add light around magic or screens.',
       texture_and_material:
-        'Render Crisp screen-native finish with minimal analog noise; surface detail should reveal paper tooth, newsprint dots, screen tones, digital brush layers, ink pools, gutter discipline, or pixel cells at a scale that supports the drawing, keeping material scale coherent and avoiding noisy filler texture.',
+        'Screen-native smooth fills, faint airbrush glows, no paper grain and no print dots.',
       camera_and_composition:
-        'Structure the image through Stylized proportions tuned for expressive designed subjects readability; compose with panel logic, silhouette clarity, speech-shape space, page rhythm, close-up drama, or scroll pacing without requiring a fixed comic-page scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Emotion-forward, dramatic, contemporary digital storytelling; derive mood from era, genre pressure, satire, melodrama, horror obsession, pulp energy, or graphic-novel seriousness, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Tall vertical framing with generous empty gradient space above or below the subject, expressive faces read at small size.',
+      atmosphere_and_mood: 'Emotional and contemporary, a cliffhanger beat in a serial story.',
       rendering_and_quality:
-        'Finish with Polished episodic panel rendering optimized for long-scroll consumption; finish with clear ink decisions, readable stylization, controlled artifacting, and no generic superhero costume or random comic text replacing the prompt, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Clean anti-aliased line, simple two-step shading and soft glow; polished but not painterly.',
       key_features:
-        'Vertical-scroll webcomic language with mobile-first readability; Vertical pacing gaps, beat-driven panel stacking, gradient-backed emphasis moments; Saturated full-color palette with flat-to-soft-cel value staging; Crisp screen-native finish with minimal analog noise; Stylized proportions tuned for expressive designed subjects readability',
+        'clean digital line; two-step cel shade; gradient backdrop; colored rim light; tall vertical framing',
       creative_brief:
-        "Apply Webtoon Style as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Vertical-scroll webcomic language with mobile-first readability, Vertical pacing gaps, beat-driven panel stacking, gradient-backed emphasis moments, Crisp screen-native finish with minimal analog noise without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Webtoon Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,57 +179,56 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Franco-Belgian (Ligne Claire)',
     category: '1. Comic Book Styles',
     negativePrompt:
-      'shading, gradient, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render',
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, crosshatching, painterly texture, shading, gradient, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Franco-Belgian (Ligne Claire) acts as a transferable illustration router: start from ligne claire Franco-Belgian album style with uniform clean ink contour, open readable shapes, precise backgrounds-as-design, and calm adventure-page clarity, uniform contour, flat album color, clean open shapes, minimal shadow, precise environment linework and comic-illustration system built from ink hierarchy, panel-era color, contour exaggeration, print artifacts, and sequential-art readability, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Franco-Belgian clear line: one uniform ink contour around every form, flat unshaded color and meticulously drawn backgrounds equal in clarity to the figures.',
       subject_treatment:
-        'Transform any prompt subject through Define Franco-Belgian (Ligne Claire) through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene; preserve the requested subject while translating form into panel-ready silhouettes, expressive contour weight, stylized anatomy, speed emphasis, or graphic restraint only when the preset calls for it, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.',
       color_and_tone:
-        'Build color with flat bright European album color, controlled local hues, soft natural accents, and low-noise value separation without painterly gradients; treat color as comic production language: four-color plates, limited spot color, manga monochrome, digital flats, noir contrast, webtoon gradients, or painted page atmosphere, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Flat bright album colors, clear sky blues, brick reds and ochres, local color with no modeling.',
       lighting_and_shadow:
-        'Handle light through minimal cast shadow, clean daylight-like value control, restrained tonal steps, and no heavy noir spotting or airbrushed drama; make light read through ink spotting, cel-like value blocks, dramatic rim separation, flat print fill, or painted page modeling rather than generic studio illumination, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Even daylight without hatching; at most a single flat darker tone for cast shadows under objects.',
       texture_and_material:
-        'Render smooth ink-on-paper finish, lightly printed album surface, crisp color fills, and almost invisible brush texture; surface detail should reveal paper tooth, newsprint dots, screen tones, digital brush layers, ink pools, gutter discipline, or pixel cells at a scale that supports the drawing, keeping material scale coherent and avoiding noisy filler texture.',
+        'Smooth printed album paper, clean color fills, no brush texture, no hatching, no screentone.',
       camera_and_composition:
-        'Structure the image through album-panel clarity, balanced negative space, readable object placement, calm perspective, and precise environmental line organization; compose with panel logic, silhouette clarity, speech-shape space, page rhythm, close-up drama, or scroll pacing without requiring a fixed comic-page scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood curious, intelligent, lucid, adventurous, and gently ironic without melodrama or noisy spectacle; derive mood from era, genre pressure, satire, melodrama, horror obsession, pulp energy, or graphic-novel seriousness, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Calm eye-level or slightly high view, every object readable, architecture and vehicles drawn with draftsman precision.',
+      atmosphere_and_mood: 'Lucid, curious adventure told with calm intelligence and gentle irony.',
       rendering_and_quality:
-        'Finish with immaculate clear-line finish with consistent contour weight, clean fills, exact edges, and high readability at small card scale; finish with clear ink decisions, readable stylization, controlled artifacting, and no generic superhero costume or random comic text replacing the prompt, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Constant contour width, closed shapes, exact edges; the clarity of the line is the whole style.',
       key_features:
-        'ligne claire Franco-Belgian album style with uniform clean ink contour, open readable shapes, precise backgrounds-as-design, and calm adventure-page clarity; uniform contour, flat album color, clean open shapes, minimal shadow, precise environment linework; flat bright European album color, controlled local hues, soft natural accents, and low-noise value separation without painterly gradients; smooth ink-on-paper finish, lightly printed album surface, crisp color fills, and almost invisible brush texture; album-panel clarity, balanced negative space, readable object placement, calm perspective, and precise environmental line organization',
+        'uniform clear-line contour; flat album color; no hatching; precise backgrounds; calm eye-level view',
       creative_brief:
-        "Apply Franco-Belgian (Ligne Claire) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through ligne claire Franco-Belgian album style with uniform clean ink contour, open readable shapes, precise backgrounds-as-design, and calm adventure-page clarity, uniform contour, flat album color, clean open shapes, minimal shadow, precise environment linework, smooth ink-on-paper finish, lightly printed album surface, crisp color fills, and almost invisible brush texture without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Franco-Belgian (Ligne Claire) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP04-008',
-    name: 'Sin City Noir Comic (High Contrast)',
+    name: 'Binary Ink Noir Comic',
+    displayName: 'Binary Ink Noir Comic',
+    styleAnchors: ['Binary Ink Noir Comic', 'Sin City Noir Comic (High Contrast)'],
     category: '1. Comic Book Styles',
     negativePrompt:
-      'grey, color, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render',
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, gray midtones, screentone, grey, color, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Sin urban fabric Noir Comic (High Contrast) acts as a transferable illustration router: start from Hard-boiled monochrome noir style built on brutal contrast logic and silhouette-dominant visual storytelling, No greyscale, silhouette framing, white-out rim and comic-illustration system built from ink hierarchy, panel-era color, contour exaggeration, print artifacts, and sequential-art readability, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Binary noir ink: the image carved from solid black and bare white with no gray at all, figures often reduced to white-outlined silhouettes.',
       subject_treatment:
-        'Transform any prompt subject through Negative-space carving with razor-edged contour breaks, stark shape blocking, and subtraction-first silhouette subjects construction; preserve the requested subject while translating form into panel-ready silhouettes, expressive contour weight, stylized anatomy, speed emphasis, or graphic restraint only when the preset calls for it, keeping the requested identity, silhouette, pose, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Black and White only, stark binary, zero greyscale; treat color as comic production language: four-color plates, limited spot color, manga monochrome, digital flats, noir contrast, webtoon gradients, or painted page atmosphere, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.',
+      color_and_tone: 'Strictly two values, black ink and paper white; no gray, no tone, no color.',
       lighting_and_shadow:
-        'Handle light through Harsh, single-source key, knife-edge cast shadows; make light read through ink spotting, cel-like value blocks, dramatic rim separation, flat print fill, or painted page modeling rather than generic studio illumination, so value structure supports the illustration process and does not overwrite the requested content.',
+        'One harsh source cutting knife-edge shapes; the unlit half of every form merges into the black background.',
       texture_and_material:
-        'Render Dry ink grain, splatter accents, rough print-like edges, and gritty black-fill density variation; surface detail should reveal paper tooth, newsprint dots, screen tones, digital brush layers, ink pools, gutter discipline, or pixel cells at a scale that supports the drawing, keeping material scale coherent and avoiding noisy filler texture.',
+        'Dry-brush drag at edges, ink splatter, rain and snow drawn as white slashes and dots scratched out of black.',
       camera_and_composition:
-        'Structure the image through Silhouette-forward composition with compressed midtone absence and hard cutout depth cues; compose with panel logic, silhouette clarity, speech-shape space, page rhythm, close-up drama, or scroll pacing without requiring a fixed comic-page scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Dark, menacing, tense, unforgiving, nocturnal; derive mood from era, genre pressure, satire, melodrama, horror obsession, pulp energy, or graphic-novel seriousness, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Silhouette-first staging, deep low or high angles, large black masses with small carved white shapes carrying the read.',
+      atmosphere_and_mood: 'Menacing and nocturnal, a world of hard choices and cold rain.',
       rendering_and_quality:
-        'Finish with Ultra-contrast noir rendering prioritizing shadow hierarchy, binary value discipline, and aggressive readability; finish with clear ink decisions, readable stylization, controlled artifacting, and no generic superhero costume or random comic text replacing the prompt, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Negative-space carving with razor edges; midtones are forbidden and white shapes must read alone.',
       key_features:
-        'Hard-boiled monochrome noir style built on brutal contrast logic and silhouette-dominant visual storytelling; No greyscale, silhouette framing, white-out rim; Black and White only, stark binary, zero greyscale; Dry ink grain, splatter accents, rough print-like edges, and gritty black-fill density variation; Silhouette-forward composition with compressed midtone absence and hard cutout depth cues',
+        'black and white only; negative-space carving; white-outlined silhouettes; knife-edge shadows; scratched-out rain',
       creative_brief:
-        "Apply Sin urban fabric Noir Comic (High Contrast) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Hard-boiled monochrome noir style built on brutal contrast logic and silhouette-dominant visual storytelling, No greyscale, silhouette framing, white-out rim, Dry ink grain, splatter accents, rough print-like edges, and gritty black-fill density variation without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Binary Ink Noir Comic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +236,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Underground Comix',
     category: '1. Comic Book Styles',
     negativePrompt:
-      'clean, mainstream, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render',
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, clean vector line, clean, mainstream, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Underground Comix acts as a transferable illustration router: start from Underground comix ink density (R. Crumb-inspired counterculture draftsmanship), Heavy hatch webs, warped panel borders, hyper-detailed clutter zones and comic-illustration system built from ink hierarchy, panel-era color, contour exaggeration, print artifacts, and sequential-art readability, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        '1960s underground comix: nervous dip-pen line with obsessive crosshatching, lumpy rubbery anatomy and every inch of the drawing crammed with detail.',
       subject_treatment:
-        'Transform any prompt subject through Nervous wobble contours with obsessive crosshatch layering; preserve the requested subject while translating form into panel-ready silhouettes, expressive contour weight, stylized anatomy, speed emphasis, or graphic restraint only when the preset calls for it, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.',
       color_and_tone:
-        'Build color with High-contrast black-and-white with dense hatch midtones; treat color as comic production language: four-color plates, limited spot color, manga monochrome, digital flats, noir contrast, webtoon gradients, or painted page atmosphere, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Black ink on white with dense crosshatch midtones; if color appears it is a cheap flat two-tone overlay.',
       lighting_and_shadow:
-        'Handle light through Shadow built by manual hatch fields and texture accumulation; make light read through ink spotting, cel-like value blocks, dramatic rim separation, flat print fill, or painted page modeling rather than generic studio illumination, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Shadow built only from layered hatch webs, deepest where the clutter piles up.',
       texture_and_material:
-        'Render Rough print-paper feel with visible hand-ink irregularity; surface detail should reveal paper tooth, newsprint dots, screen tones, digital brush layers, ink pools, gutter discipline, or pixel cells at a scale that supports the drawing, keeping material scale coherent and avoiding noisy filler texture.',
+        'Wobbly contour, sweat drops and stink lines, hatch fields on every surface, cheap paper tooth.',
       camera_and_composition:
-        'Structure the image through Grotesque exaggeration and elastic anatomy choices; compose with panel logic, silhouette clarity, speech-shape space, page rhythm, close-up drama, or scroll pacing without requiring a fixed comic-page scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Subversive, satirical, abrasive, id-driven, mood carried by Underground Comix craft, material pressure, and visual restraint; derive mood from era, genre pressure, satire, melodrama, horror obsession, pulp energy, or graphic-novel seriousness, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Slightly fisheye staging, oversized feet and hands in front, background clutter filling every gap.',
+      atmosphere_and_mood: 'Subversive, sweaty and gleefully rude, an anxious joke told loudly.',
       rendering_and_quality:
-        'Finish with Raw, hand-forged, anti-polish comic finish; finish with clear ink decisions, readable stylization, controlled artifacting, and no generic superhero costume or random comic text replacing the prompt, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Hand-forged anti-polish ink with visible wobble; never clean vector line or smooth color.',
       key_features:
-        'Underground comix ink density (R. Crumb-inspired counterculture draftsmanship); Heavy hatch webs, warped panel borders, hyper-detailed clutter zones; High-contrast black-and-white with dense hatch midtones; Rough print-paper feel with visible hand-ink irregularity; Grotesque exaggeration and elastic anatomy choices',
+        'obsessive crosshatching; nervous dip-pen wobble; rubbery lumpy anatomy; sweat and stink lines; crammed detail',
       creative_brief:
-        "Apply Underground Comix as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Underground comix ink density (R. Crumb-inspired counterculture draftsmanship), Heavy hatch webs, warped panel borders, hyper-detailed clutter zones, Rough print-paper feel with visible hand-ink irregularity without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Underground Comix as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -269,86 +264,87 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Graphic Novel (Painted)',
     category: '1. Comic Book Styles',
     negativePrompt:
-      'line art, cartoon, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render',
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, ink outlines, cel shading, line art, cartoon, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Graphic Novel (Painted) acts as a transferable illustration router: start from Painted realist comic illustration (Alex Ross influence with Norman Rockwell portrait sensibility), Outline-free form definition, portrait-grade facial modeling, painterly fabric rendering and comic-illustration system built from ink hierarchy, panel-era color, contour exaggeration, print artifacts, and sequential-art readability, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Painted graphic novel: every image fully painted in gouache and watercolor from observation, forms built by value and edge with almost no outline.',
       subject_treatment:
-        'Transform any prompt subject through Line-minimal painterly construction through value and edge control; preserve the requested subject while translating form into panel-ready silhouettes, expressive contour weight, stylized anatomy, speed emphasis, or graphic restraint only when the preset calls for it, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.',
       color_and_tone:
-        'Build color with Naturalistic gouache-like chroma with warm skin and muted secondary balance; treat color as comic production language: four-color plates, limited spot color, manga monochrome, digital flats, noir contrast, webtoon gradients, or painted page atmosphere, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Naturalistic chroma, warm skin against muted greens and grays, one saturated heraldic accent per image.',
       lighting_and_shadow:
-        'Handle light through Classical soft-key + focused emblematic spotlight modeling; make light read through ink spotting, cel-like value blocks, dramatic rim separation, flat print fill, or painted page modeling rather than generic studio illumination, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Classical soft key from high side, gentle fill and a warm spotlight isolating faces and hands.',
       texture_and_material:
-        'Render Visible brushwork and layered pigment transitions; surface detail should reveal paper tooth, newsprint dots, screen tones, digital brush layers, ink pools, gutter discipline, or pixel cells at a scale that supports the drawing, keeping material scale coherent and avoiding noisy filler texture.',
+        'Visible brushwork, dry gouache over wet washes, fabric and metal painted with observed folds and dents.',
       camera_and_composition:
-        'Structure the image through Realist proportion and volume, minimal stylization; compose with panel logic, silhouette clarity, speech-shape space, page rhythm, close-up drama, or scroll pacing without requiring a fixed comic-page scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Mythic, solemn, reverential, mood carried by Graphic Novel (Painted) craft, material pressure, and visual restraint; derive mood from era, genre pressure, satire, melodrama, horror obsession, pulp energy, or graphic-novel seriousness, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Realist proportions, grounded eye-level staging, painted portrait-weight close-ups within a single image.',
+      atmosphere_and_mood: 'Solemn and reverent, legends treated as living people.',
       rendering_and_quality:
-        'Finish with Fine-art comic finish with high anatomical and textile fidelity; finish with clear ink decisions, readable stylization, controlled artifacting, and no generic superhero costume or random comic text replacing the prompt, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Fine-art painted finish with anatomical and textile fidelity; no ink outlines and no digital gloss.',
       key_features:
-        'Painted realist comic illustration (Alex Ross influence with Norman Rockwell portrait sensibility); Outline-free form definition, portrait-grade facial modeling, painterly fabric rendering; Naturalistic gouache-like chroma with warm skin and muted secondary balance; Visible brushwork and layered pigment transitions; Realist proportion and volume, minimal stylization',
+        'fully painted gouache; outline-free forms; warm soft key; observed fabric and metal; realist proportions',
       creative_brief:
-        "Apply Graphic Novel (Painted) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Painted realist comic illustration (Alex Ross influence with Norman Rockwell portrait sensibility), Outline-free form definition, portrait-grade facial modeling, painterly fabric rendering, Visible brushwork and layered pigment transitions without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Graphic Novel (Painted) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP04-011',
-    name: 'Junji Ito Horror Manga (Obsessive Ink)',
+    name: 'Obsessive Fine-Line Horror Manga',
+    displayName: 'Obsessive Fine-Line Horror Manga',
+    styleAnchors: ['Obsessive Fine-Line Horror Manga', 'Junji Ito Horror Manga (Obsessive Ink)'],
     category: '1. Comic Book Styles',
     negativePrompt:
-      'cute, clean, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render',
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, color, splatter gore, cute, clean, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Junji Ito Horror Manga (Obsessive Ink) acts as a transferable illustration router: start from Obsessive body-horror manga language (Junji Ito signature tension), Compulsive ink density, motif recursion, skin-to-pattern collapse and comic-illustration system built from ink hierarchy, panel-era color, contour exaggeration, print artifacts, and sequential-art readability, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Horror manga drawn with obsessive fine lines: thousands of parallel pen strokes accumulate into dread, and ordinary surfaces slowly turn into spirals, holes or patterns.',
       subject_treatment:
-        'Transform any prompt subject through Fine high-density linework with relentless detail accretion; preserve the requested subject while translating form into panel-ready silhouettes, expressive contour weight, stylized anatomy, speed emphasis, or graphic restraint only when the preset calls for it, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.',
       color_and_tone:
-        'Build color with Monochrome black-and-white with suffocating dark field control; treat color as comic production language: four-color plates, limited spot color, manga monochrome, digital flats, noir contrast, webtoon gradients, or painted page atmosphere, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Black and white only, with suffocating fields of dense hatching and a few stark unhatched faces.',
       lighting_and_shadow:
-        'Handle light through Diffuse dread lighting driven by contrast pockets and void depth; make light read through ink spotting, cel-like value blocks, dramatic rim separation, flat print fill, or painted page modeling rather than generic studio illumination, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Flat, sourceless dread light; darkness is built by line density, and voids stay pitch black.',
       texture_and_material:
-        'Render Spiral and micro-line textures that invade organic surfaces; surface detail should reveal paper tooth, newsprint dots, screen tones, digital brush layers, ink pools, gutter discipline, or pixel cells at a scale that supports the drawing, keeping material scale coherent and avoiding noisy filler texture.',
+        'Micro-line hatching, spiral and concentric motifs creeping over skin, wood and cloth, clean white faces left untouched.',
       camera_and_composition:
-        'Structure the image through Recursive spiral, cavity, and anatomical warping motifs; compose with panel logic, silhouette clarity, speech-shape space, page rhythm, close-up drama, or scroll pacing without requiring a fixed comic-page scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Uncanny, claustrophobic, cosmic-anxious, mood carried by Junji Ito Horror Manga (Obsessive Ink) craft, material pressure, and visual restraint; derive mood from era, genre pressure, satire, melodrama, horror obsession, pulp energy, or graphic-novel seriousness, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Calm, symmetrical staging that makes the one wrong element unbearable; slow reveal of the anomaly in the center.',
+      atmosphere_and_mood: 'Claustrophobic, uncanny and quietly escalating toward horror.',
       rendering_and_quality:
-        'Finish with Precision horror draftsmanship with escalating visual discomfort; finish with clear ink decisions, readable stylization, controlled artifacting, and no generic superhero costume or random comic text replacing the prompt, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Precise fine-pen draftsmanship with realistic faces and relentless line density; no gore splash, no cute shapes.',
       key_features:
-        'Obsessive body-horror manga language (Junji Ito signature tension); Compulsive ink density, motif recursion, skin-to-pattern collapse; Monochrome black-and-white with suffocating dark field control; Spiral and micro-line textures that invade organic surfaces; Recursive spiral, cavity, and anatomical warping motifs',
+        'obsessive fine-line hatching; creeping spiral patterns; realistic unhatched faces; symmetrical calm staging; pitch-black voids',
       creative_brief:
-        "Apply Junji Ito Horror Manga (Obsessive Ink) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Obsessive body-horror manga language (Junji Ito signature tension), Compulsive ink density, motif recursion, skin-to-pattern collapse, Spiral and micro-line textures that invade organic surfaces without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Obsessive Fine-Line Horror Manga as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP04-012',
-    name: 'Moebius Retro Sci-Fi Comic (Dreamline)',
+    name: 'Dreamline Stipple Sci-Fi Comic',
+    displayName: 'Dreamline Stipple Sci-Fi Comic',
+    styleAnchors: ['Dreamline Stipple Sci-Fi Comic', 'Moebius Retro Sci-Fi Comic (Dreamline)'],
     category: '1. Comic Book Styles',
     negativePrompt:
-      'dark, heavy shadows, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render',
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, heavy black shadows, glossy chrome, dark, heavy shadows, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Moebius Retro Sci-Fi Comic (Dreamline) acts as a transferable illustration router: start from Dreamline retro sci-fi comics language (Moebius-inspired airy surrealism), Stipple gradients, expansive negative space, poetic architecture and comic-illustration system built from ink hierarchy, panel-era color, contour exaggeration, print artifacts, and sequential-art readability, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Dreamline European science-fiction comic: fine even contour with stipple dot shading and flat matte pastel color over vast airy alien landscapes.',
       subject_treatment:
-        'Transform any prompt subject through Fine controlled contour with stipple-assisted tonal modulation; preserve the requested subject while translating form into panel-ready silhouettes, expressive contour weight, stylized anatomy, speed emphasis, or graphic restraint only when the preset calls for it, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.',
       color_and_tone:
-        'Build color with Soft pastel atmospherics, dusty warms, and cool alien blues; treat color as comic production language: four-color plates, limited spot color, manga monochrome, digital flats, noir contrast, webtoon gradients, or painted page atmosphere, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Dusty pastel fields, peach, sand, lilac and pale turquoise, cool alien blues in the distance, low contrast.',
       lighting_and_shadow:
-        'Handle light through Even ambient illumination with low-contrast dream glow; make light read through ink spotting, cel-like value blocks, dramatic rim separation, flat print fill, or painted page modeling rather than generic studio illumination, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Even ambient desert light with small soft shadows; depth carried by paler color toward the horizon.',
       texture_and_material:
-        'Render Dot/stipple shading and clean matte color fields; surface detail should reveal paper tooth, newsprint dots, screen tones, digital brush layers, ink pools, gutter discipline, or pixel cells at a scale that supports the drawing, keeping material scale coherent and avoiding noisy filler texture.',
+        'Stipple dots for all shading, clean matte color fields, organic-futurist architecture with smooth curves.',
       camera_and_composition:
-        'Structure the image through Organic-futurist forms and elegant non-Euclidean silhouettes; compose with panel logic, silhouette clarity, speech-shape space, page rhythm, close-up drama, or scroll pacing without requiring a fixed comic-page scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Vast, meditative, enigmatic, serene, mood carried by Moebius Retro Sci-Fi Comic (Dreamline) craft, material pressure, and visual restraint; derive mood from era, genre pressure, satire, melodrama, horror obsession, pulp energy, or graphic-novel seriousness, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Wide calm views with tiny figures against huge negative space, flowing non-Euclidean silhouettes.',
+      atmosphere_and_mood: 'Vast, meditative and enigmatic, a silent dream of another world.',
       rendering_and_quality:
-        'Finish with Intricate yet breathable world-detailing with contemplative pacing; finish with clear ink decisions, readable stylization, controlled artifacting, and no generic superhero costume or random comic text replacing the prompt, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Intricate but breathable detail, fine line and stipple only; no heavy black shadows.',
       key_features:
-        'Dreamline retro sci-fi comics language (Moebius-inspired airy surrealism); Stipple gradients, expansive negative space, poetic architecture; Soft pastel atmospherics, dusty warms, and cool alien blues; Dot/stipple shading and clean matte color fields; Organic-futurist forms and elegant non-Euclidean silhouettes',
+        'fine even contour; stipple dot shading; dusty pastel matte color; organic-futurist forms; tiny figures in vast space',
       creative_brief:
-        "Apply Moebius Retro Sci-Fi Comic (Dreamline) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Dreamline retro sci-fi comics language (Moebius-inspired airy surrealism), Stipple gradients, expansive negative space, poetic architecture, Dot/stipple shading and clean matte color fields without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dreamline Stipple Sci-Fi Comic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -356,28 +352,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Pixel Art Comic',
     category: '1. Comic Book Styles',
     negativePrompt:
-      'vector, smooth, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render',
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, smooth gradients, anti-aliasing, high-resolution painting, vector, smooth, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Pixel Art Comic acts as a transferable illustration router: start from Retro pixel-comic language rooted in 16-bit sprite constraints, Palette discipline, cluster logic, hard-edge silhouettes, frame-efficient detail and comic-illustration system built from ink hierarchy, panel-era color, contour exaggeration, print artifacts, and sequential-art readability, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Pixel comic art: comic inking translated into pixels, one-pixel black outlines, ordered-dither halftone shading and a strict indexed palette on a visible grid.',
       subject_treatment:
-        'Transform any prompt subject through Pixel-stepped contours with strict tile/grid alignment; preserve the requested subject while translating form into panel-ready silhouettes, expressive contour weight, stylized anatomy, speed emphasis, or graphic restraint only when the preset calls for it, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.',
       color_and_tone:
-        'Build color with Limited indexed palette with controlled dithering ramps; treat color as comic production language: four-color plates, limited spot color, manga monochrome, digital flats, noir contrast, webtoon gradients, or painted page atmosphere, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Indexed palette of about 32 colors, dithered ramps between neighboring tones, deep navy used instead of pure black shadow.',
       lighting_and_shadow:
-        'Handle light through Baked sprite shading via cluster placement and dither gradients; make light read through ink spotting, cel-like value blocks, dramatic rim separation, flat print fill, or painted page modeling rather than generic studio illumination, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Baked sprite shading with hand-placed pixel clusters; a single light direction shown by bright edge pixels.',
       texture_and_material:
-        'Render Explicit pixel grid with intentional aliasing; surface detail should reveal paper tooth, newsprint dots, screen tones, digital brush layers, ink pools, gutter discipline, or pixel cells at a scale that supports the drawing, keeping material scale coherent and avoiding noisy filler texture.',
+        'Hard square pixels with intentional aliasing, checkerboard and Bayer dither patterns standing in for print halftone.',
       camera_and_composition:
-        'Structure the image through Chunked perspective and proportion adapted to sprite readability; compose with panel logic, silhouette clarity, speech-shape space, page rhythm, close-up drama, or scroll pacing without requiring a fixed comic-page scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Nostalgic, arcade-coded, playful, mood carried by Pixel Art Comic craft, material pressure, and visual restraint; derive mood from era, genre pressure, satire, melodrama, horror obsession, pulp energy, or graphic-novel seriousness, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Splash-page framing at low resolution, chunky readable silhouettes, perspective simplified to fit the grid.',
+      atmosphere_and_mood: 'Nostalgic and playful, a comic splash drawn on an old console.',
       rendering_and_quality:
-        'Finish with Crisp low-resolution sprite craft with compositional economy; finish with clear ink decisions, readable stylization, controlled artifacting, and no generic superhero costume or random comic text replacing the prompt, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Crisp nearest-neighbor pixels, no anti-aliasing, no smooth gradients and no blur.',
       key_features:
-        'Retro pixel-comic language rooted in 16-bit sprite constraints; Palette discipline, cluster logic, hard-edge silhouettes, frame-efficient detail; Limited indexed palette with controlled dithering ramps; Explicit pixel grid with intentional aliasing; Chunked perspective and proportion adapted to sprite readability',
+        'one-pixel black outlines; ordered-dither shading; indexed 32-color palette; visible pixel grid; chunky silhouettes',
       creative_brief:
-        "Apply Pixel Art Comic as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Retro pixel-comic language rooted in 16-bit sprite constraints, Palette discipline, cluster logic, hard-edge silhouettes, frame-efficient detail, Explicit pixel grid with intentional aliasing without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pixel Art Comic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -385,28 +380,256 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tech Noir Comic',
     category: '1. Comic Book Styles',
     negativePrompt:
-      'daylight, nature, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render',
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, daylight palette, warm sunlight, daylight, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Tech Noir Comic acts as a transferable illustration router: start from Graphic tech-noir comic style with stark contrast, synthetic chroma accents, and moody futurist editorial framing, Duotone neon contrast, heavy shadow architecture, reflective black planes, vapor diffusion bands, sharp graphic silhouettes and comic-illustration system built from ink hierarchy, panel-era color, contour exaggeration, print artifacts, and sequential-art readability, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Tech-noir comic: angular ink with heavy black shadow architecture, lit only by cyan and magenta duotone neon and reflected on glossy black planes.',
       subject_treatment:
-        'Transform any prompt subject through Knife-edged contour work, selective heavy blacks, angular panel-ready geometry, restrained crosshatch texture; preserve the requested subject while translating form into panel-ready silhouettes, expressive contour weight, stylized anatomy, speed emphasis, or graphic restraint only when the preset calls for it, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.',
       color_and_tone:
-        'Build color with Black-dominant base, cyan-magenta duotone energy, cool indigo shadows, sparse neon highlight punctuation; treat color as comic production language: four-color plates, limited spot color, manga monochrome, digital flats, noir contrast, webtoon gradients, or painted page atmosphere, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Black-dominant image, cyan and magenta as the only colors, indigo in the midtones, sparse white highlights.',
       lighting_and_shadow:
-        'Handle light through Chiaroscuro with luminous edge accents, vapor-soft diffusion pockets, hard silhouette separation; make light read through ink spotting, cel-like value blocks, dramatic rim separation, flat print fill, or painted page modeling rather than generic studio illumination, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Chiaroscuro from colored practical light, hard silhouette separation and thin glowing edge accents.',
       texture_and_material:
-        'Render Slick reflective surfaces, particulate haze, coarse urban grit abstraction, chromed edge glints; surface detail should reveal paper tooth, newsprint dots, screen tones, digital brush layers, ink pools, gutter discipline, or pixel cells at a scale that supports the drawing, keeping material scale coherent and avoiding noisy filler texture.',
+        'Glossy reflective black surfaces, chrome edge glints, haze and fine particulate caught in light.',
       camera_and_composition:
-        'Structure the image through Perspective compression tuned for dramatic panel composition and near field-depth field tension; compose with panel logic, silhouette clarity, speech-shape space, page rhythm, close-up drama, or scroll pacing without requiring a fixed comic-page scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Ominous, electric, tense, sophisticated, anti-utopian; derive mood from era, genre pressure, satire, melodrama, horror obsession, pulp energy, or graphic-novel seriousness, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Compressed long-lens perspective, tilted angles, large black shapes framing a small lit subject.',
+      atmosphere_and_mood: 'Ominous and electric, a future that has already gone wrong.',
       rendering_and_quality:
-        'Finish with High-impact noir-comic rendering with poster-grade readability and controlled cinematic bloom; finish with clear ink decisions, readable stylization, controlled artifacting, and no generic superhero costume or random comic text replacing the prompt, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Knife-edged ink contours with flat duotone color and controlled glow; no daylight palette.',
       key_features:
-        'Graphic tech-noir comic style with stark contrast, synthetic chroma accents, and moody futurist editorial framing; Duotone neon contrast, heavy shadow architecture, reflective black planes, vapor diffusion bands, sharp graphic silhouettes; Black-dominant base, cyan-magenta duotone energy, cool indigo shadows, sparse neon highlight punctuation; Slick reflective surfaces, particulate haze, coarse urban grit abstraction, chromed edge glints; Perspective compression tuned for dramatic panel composition and near field-depth field tension',
+        'heavy black shadow architecture; cyan-magenta duotone; glossy black reflections; knife-edged ink; tilted long-lens framing',
       creative_brief:
-        "Apply Tech Noir Comic as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Graphic tech-noir comic style with stark contrast, synthetic chroma accents, and moody futurist editorial framing, Duotone neon contrast, heavy shadow architecture, reflective black planes, vapor diffusion bands, sharp graphic silhouettes, Slick reflective surfaces, particulate haze, coarse urban grit abstraction, chromed edge glints without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tech Noir Comic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP04-101',
+    name: 'Gekiga Drybrush Realism',
+    displayName: 'Gekiga Drybrush Realism',
+    styleAnchors: [
+      'Gekiga Drybrush Realism',
+      'adult dramatic manga realism',
+      'split dry-brush strokes',
+    ],
+    category: '1. Comic Book Styles',
+    domain: 'adult dramatic manga realism',
+    negativePrompt:
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, big sparkling eyes, chibi proportions, clean vector line, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gekiga dramatic manga: realistic adult proportions drawn with a split, dry-loaded brush, gritty screentone and cinematic framing instead of cute stylization.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.',
+      color_and_tone:
+        'Black ink and white paper with coarse gray screentone; dirty midtones and heavy black masses.',
+      lighting_and_shadow:
+        'Low hard light with deep shadow pools, faces half lost in black, sweat and rain catching white highlights.',
+      texture_and_material:
+        'Dry-brush streaks with broken bristle edges, scraped highlights, weathered skin, cloth and wood.',
+      camera_and_composition:
+        'Film-like framing: long-lens close-ups, low angles and silent wide shots with small figures.',
+      atmosphere_and_mood: 'Bleak, adult and unsentimental, hardship shown without heroics.',
+      rendering_and_quality:
+        'Realistic faces and anatomy, rough brush energy, no big sparkling eyes and no chibi proportions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gekiga Drybrush Realism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'split dry-brush strokes; realistic adult proportions; coarse screentone grit; deep shadow pools; cinematic long-lens framing',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP04-102',
+    name: 'Greywash Horror Magazine',
+    displayName: 'Greywash Horror Magazine',
+    styleAnchors: [
+      'Greywash Horror Magazine',
+      'black-and-white horror magazine art',
+      'diluted ink gray washes',
+    ],
+    category: '1. Comic Book Styles',
+    domain: 'black-and-white horror magazine art',
+    negativePrompt:
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, color, dot screentone, cute monsters, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        '1970s black-and-white horror magazine art: detailed pen ink drawing modeled with diluted ink gray washes instead of color or screentone.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.',
+      color_and_tone:
+        'Gray scale built from three or four dilutions of black ink, pale fog grays to charcoal, pure black accents.',
+      lighting_and_shadow:
+        'Theatrical underlight and side light, wash pooling in the shadows, white paper left for moonlight and candle glow.',
+      texture_and_material:
+        'Soft wash blooms and tide lines on illustration board, crisp pen hatching over wet-in-wet fog, dripping textures.',
+      camera_and_composition:
+        'Splash-page drama: looming low angles, a monster or figure rising out of gloom, deep receding backgrounds.',
+      atmosphere_and_mood: 'Lurid, gothic and delicious dread, a campfire tale drawn seriously.',
+      rendering_and_quality:
+        'Rich tonal wash gradations with sharp pen detail on top; no color, no dot screentone.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Greywash Horror Magazine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'diluted ink gray washes; pen hatching over wash; wash tide lines; theatrical underlight; looming low angles',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP04-103',
+    name: 'Feathered-Brush Adventure Strip',
+    displayName: 'Feathered-Brush Adventure Strip',
+    styleAnchors: [
+      'Feathered-Brush Adventure Strip',
+      'classic newspaper adventure strip',
+      'sable-brush feathering',
+    ],
+    category: '1. Comic Book Styles',
+    domain: 'classic newspaper adventure strip',
+    negativePrompt:
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, screentone, digital gradients, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Classic newspaper adventure strip: realist figures inked with a sable brush, shadows built from tapering feathered strokes and slabs of spotted black.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.',
+      color_and_tone:
+        'Black ink on white, or the same line under a limited flat Sunday palette of muted reds, blues and ochre.',
+      lighting_and_shadow:
+        'Strong side light with shadow edges broken into feathered brush tapers, spotted blacks anchoring the design.',
+      texture_and_material:
+        'Swelling and tapering brush lines, drybrush for rock and bark, folds of cloth drawn as rhythmic feathering.',
+      camera_and_composition:
+        'Horizontal landscape framing, grounded realist staging with figures and wide scenery given equal weight.',
+      atmosphere_and_mood: 'Stoic adventure and romance, sturdy and handsome, told with craft.',
+      rendering_and_quality:
+        'Elegant brush economy and accurate anatomy; no screentone, no digital gradients.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Feathered-Brush Adventure Strip as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'sable-brush feathering; spotted blacks; realist anatomy; muted flat Sunday color; horizontal framing',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP04-104',
+    name: 'Airbrush Manhua Action',
+    displayName: 'Airbrush Manhua Action',
+    styleAnchors: [
+      'Airbrush Manhua Action',
+      'painted martial-arts comic',
+      'airbrush gradient color',
+    ],
+    category: '1. Comic Book Styles',
+    domain: 'painted martial-arts comic',
+    negativePrompt:
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, flat print color, screentone, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Painted martial-arts manhua: sharp ink figures fully colored with airbrush gradients, glowing energy auras and metallic gold highlights.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.',
+      color_and_tone:
+        'Rich jade, crimson and gold over deep indigo, airbrushed gradients and burning white cores in the energy trails.',
+      lighting_and_shadow:
+        'Glow from the energy itself lighting the figure, strong backlit rims, airbrushed soft shadows.',
+      texture_and_material:
+        'Silky flowing robes and hair, gold foil-like highlights on ornaments, mist and ink-splash effects.',
+      camera_and_composition:
+        'Soaring diagonal compositions, figures balanced on impossible points, long swirling trails of cloth and energy.',
+      atmosphere_and_mood: 'Grand heroic wuxia drama, elegant and explosive at once.',
+      rendering_and_quality:
+        'Crisp ink contour under smooth airbrush color and metallic sheen; no flat print color, no screentone.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Airbrush Manhua Action as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'airbrush gradient color; energy auras; metallic gold highlights; flowing silk trails; soaring diagonal composition',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP04-105',
+    name: 'Non-Photo Blue Pencils',
+    displayName: 'Non-Photo Blue Pencils',
+    styleAnchors: [
+      'Non-Photo Blue Pencils',
+      'uninked comic pencil art',
+      'non-photo-blue construction lines',
+    ],
+    category: '1. Comic Book Styles',
+    domain: 'uninked comic pencil art',
+    negativePrompt:
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, ink, full color, finished rendering, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Uninked comic pencil art: confident graphite line drawing laid over loose non-photo-blue construction sketching on bristol board, before any ink.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.',
+      color_and_tone:
+        'Graphite grays over light cyan blue lines on warm white board; no other color.',
+      lighting_and_shadow:
+        'Shadow indicated by quick graphite hatching and X marks for areas to be filled black later.',
+      texture_and_material:
+        'Bristol board tooth, smudged graphite, eraser ghosts, blue gesture curves, ellipses and perspective lines left visible.',
+      camera_and_composition:
+        'The requested view built on a visible blue perspective grid and mannequin forms, finished line on top.',
+      atmosphere_and_mood:
+        'Energetic and in-progress, the thinking of the artist left on the page.',
+      rendering_and_quality:
+        'Clean confident pencil over messy blue structure; the image stays unfinished and uninked on purpose.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Non-Photo Blue Pencils as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'non-photo-blue construction lines; graphite finished line; X marks for blacks; visible perspective grid; bristol tooth',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP04-106',
+    name: 'Direct-Color Album Watercolor',
+    displayName: 'Direct-Color Album Watercolor',
+    styleAnchors: [
+      'Direct-Color Album Watercolor',
+      'European painted album art',
+      'pen line under transparent watercolor',
+    ],
+    category: '1. Comic Book Styles',
+    domain: 'European painted album art',
+    negativePrompt:
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, flat digital fills, hard cel shading, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'European direct-color album art: a fine pen line painted directly in transparent watercolor, washes flowing over and softening the ink.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.',
+      color_and_tone:
+        'Luminous transparent washes, warm ochres and cool greens, whites left as bare paper, color bleeding past lines.',
+      lighting_and_shadow:
+        'Atmospheric natural light painted wet-in-wet, soft glazed shadows, colored reflected light.',
+      texture_and_material:
+        'Cold-press paper grain, blooms, granulating pigment and hard wash edges drying around fine pen detail.',
+      camera_and_composition:
+        'Spacious landscape-led views with figures in their environment, weather and season given room.',
+      atmosphere_and_mood: 'Warm, travelled and wistful, adventure felt through light and weather.',
+      rendering_and_quality:
+        'Fine pen line softened by genuine watercolor behavior; no flat fills and no digital gradients.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Direct-Color Album Watercolor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'pen line under transparent watercolor; wet-in-wet blooms; bare paper whites; granulating pigment; landscape-led view',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

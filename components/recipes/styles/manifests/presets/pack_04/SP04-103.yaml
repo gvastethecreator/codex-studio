@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP04-103
+packId: pack_04
+name: Feathered-Brush Adventure Strip
+styleAnchors:
+  - Feathered-Brush Adventure Strip
+  - classic newspaper adventure strip
+  - sable-brush feathering
+displayName: Feathered-Brush Adventure Strip
+category: 1. Comic Book Styles
+domain: classic newspaper adventure strip
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - comic-book-styles
+  - brush-feathering
+  - adventure-strip
+  - realist-ink
+visualDna:
+  aesthetic: 'Classic newspaper adventure strip: realist figures inked with a sable brush, shadows built from tapering feathered strokes and slabs of spotted black.'
+  subject_treatment: Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.
+  color_and_tone: Black ink on white, or the same line under a limited flat Sunday palette of muted reds, blues and ochre.
+  lighting_and_shadow: Strong side light with shadow edges broken into feathered brush tapers, spotted blacks anchoring the design.
+  texture_and_material: Swelling and tapering brush lines, drybrush for rock and bark, folds of cloth drawn as rhythmic feathering.
+  camera_and_composition: Horizontal landscape framing, grounded realist staging with figures and wide scenery given equal weight.
+  atmosphere_and_mood: Stoic adventure and romance, sturdy and handsome, told with craft.
+  rendering_and_quality: Elegant brush economy and accurate anatomy; no screentone, no digital gradients.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Feathered-Brush Adventure Strip as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: sable-brush feathering; spotted blacks; realist anatomy; muted flat Sunday color; horizontal framing
+avoidRules:
+  - added panels or gutters
+  - speech balloons
+  - sound-effect lettering
+  - franchise hero costume
+  - chest emblem of a known hero
+  - screentone
+  - digital gradients
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, screentone, digital gradients, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_04
+  packName: Illustration & Graphic Novel
+  categoryId: comic-book-styles
+  categoryName: 1. Comic Book Styles
+  tags:
+    - illustration-and-graphic-novel
+    - comic-book-styles
+    - brush-feathering
+    - adventure-strip
+    - realist-ink
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: classic newspaper adventure strip

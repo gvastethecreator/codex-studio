@@ -3,7 +3,7 @@ id: SP04-005
 packId: pack_04
 name: Manga (Shojo)
 category: 1. Comic Book Styles
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,60 +12,24 @@ tags:
   - illustration-and-graphic-novel
   - comic-book-styles
 visualDna:
-  aesthetic: >-
-    Manga (Shojo) acts as a transferable illustration router: start from Romantic manga visual
-    language with decorative emotional emphasis, Decorative overlays, ornamental borders,
-    emotion-forward closeups and comic-illustration system built from ink hierarchy, panel-era
-    color, contour exaggeration, print artifacts, and sequential-art readability, then apply the
-    visual behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Fine delicate linework, elegant curves, expressive facial
-    detailing; preserve the requested subject while translating form into panel-ready silhouettes,
-    expressive contour weight, stylized anatomy, speed emphasis, or graphic restraint only when the
-    preset calls for it, keeping the requested identity, silhouette, pose, object function, or
-    setting legible.
-  color_and_tone: >-
-    Build color with Monochrome with soft gray tone bands and light ornamental accents; treat color
-    as comic production language: four-color plates, limited spot color, manga monochrome, digital
-    flats, noir contrast, webtoon gradients, or painted page atmosphere, with deliberate value
-    grouping, accent control, and process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Diffused glow, soft bloom highlights, low-contrast value transitions; make
-    light read through ink spotting, cel-like value blocks, dramatic rim separation, flat print
-    fill, or painted page modeling rather than generic studio illumination, so value structure
-    supports the illustration process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Floral/sparkle screentone motifs and airy texture overlays; surface detail should reveal
-    paper tooth, newsprint dots, screen tones, digital brush layers, ink pools, gutter discipline,
-    or pixel cells at a scale that supports the drawing, keeping material scale coherent and
-    avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Stylized facial proportion and lyrical panel-space treatment;
-    compose with panel logic, silhouette clarity, speech-shape space, page rhythm, close-up drama,
-    or scroll pacing without requiring a fixed comic-page scene, with scale, spacing, edge rhythm,
-    and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Tender, dreamy, introspective, mood carried by Manga (Shojo) craft, material
-    pressure, and visual restraint; derive mood from era, genre pressure, satire, melodrama, horror
-    obsession, pulp energy, or graphic-novel seriousness, letting the style alter interpretation
-    without demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Polished emotional panel rendering with graceful line control; finish with clear ink
-    decisions, readable stylization, controlled artifacting, and no generic superhero costume or
-    random comic text replacing the prompt, clean denoised surfaces where appropriate, and enough
-    process evidence to make the style recognizable.
-  key_features: >-
-    Romantic manga visual language with decorative emotional emphasis; Decorative overlays,
-    ornamental borders, emotion-forward closeups; Monochrome with soft gray tone bands and light
-    ornamental accents; Floral/sparkle screentone motifs and airy texture overlays; Stylized facial
-    proportion and lyrical panel-space treatment
-  creative_brief: >-
-    Apply Manga (Shojo) as an illustration preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Romantic manga visual language with decorative emotional emphasis, Decorative overlays,
-    ornamental borders, emotion-forward closeups, Floral/sparkle screentone motifs and airy texture
-    overlays without requiring the card image's original subject.
+  aesthetic: 'Romance manga art: hair-fine pen lines, large glistening eyes, floral and sparkle screentones and decorative flower borders floating around the subject.'
+  subject_treatment: Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.
+  color_and_tone: Monochrome with soft gray tones and gradient screentone; whites kept pure for sparkles and petals.
+  lighting_and_shadow: Soft backlight bloom, very light shadows, highlights drawn as star sparkles and white halos around hair.
+  texture_and_material: Floral pattern screentone, bubble and sparkle overlays, flowing hair drawn in hundreds of fine strands.
+  camera_and_composition: Emotional close-up or elegant half figure, subject turned three-quarters, petals and sparkles framing the negative space.
+  atmosphere_and_mood: Tender, dreamy and wistful, a heartbeat stretched into a moment.
+  rendering_and_quality: Delicate controlled line with elongated graceful proportions; never rough, heavy or muscular.
+  key_features: hair-fine pen lines; floral screentone; sparkle highlights; large glistening eyes; flower-framed negative space
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Manga (Shojo) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - added panels or gutters
+  - speech balloons
+  - sound-effect lettering
+  - franchise hero costume
+  - chest emblem of a known hero
+  - heavy black shadows
+  - gritty texture
   - rough
   - ugly
   - official card scene
@@ -80,13 +44,17 @@ avoidRules:
   - random speech text
   - fake lettering
   - photo-real costume render
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-005.webp
 attributes:
-  negativePrompt: >-
-    rough, ugly, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic
-    superhero costume, random speech text, fake lettering, photo-real costume render
+  negativePrompt: added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, heavy black shadows, gritty texture, rough, ugly, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

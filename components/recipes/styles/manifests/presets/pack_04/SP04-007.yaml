@@ -3,7 +3,7 @@ id: SP04-007
 packId: pack_04
 name: Franco-Belgian (Ligne Claire)
 category: 1. Comic Book Styles
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,72 +12,24 @@ tags:
   - illustration-and-graphic-novel
   - comic-book-styles
 visualDna:
-  aesthetic: >-
-    Franco-Belgian (Ligne Claire) acts as a transferable illustration router: start from ligne
-    claire Franco-Belgian album style with uniform clean ink contour, open readable shapes, precise
-    backgrounds-as-design, and calm adventure-page clarity, uniform contour, flat album color, clean
-    open shapes, minimal shadow, precise environment linework and comic-illustration system built
-    from ink hierarchy, panel-era color, contour exaggeration, print artifacts, and sequential-art
-    readability, then apply the visual behavior to prompt X instead of recreating a fixed demo
-    image.
-  subject_treatment: >-
-    Transform any prompt subject through Define Franco-Belgian (Ligne Claire) through line, mass,
-    contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal
-    scene; preserve the requested subject while translating form into panel-ready silhouettes,
-    expressive contour weight, stylized anatomy, speed emphasis, or graphic restraint only when the
-    preset calls for it, keeping the requested identity, silhouette, pose, object function, or
-    setting legible.
-  color_and_tone: >-
-    Build color with flat bright European album color, controlled local hues, soft natural accents,
-    and low-noise value separation without painterly gradients; treat color as comic production
-    language: four-color plates, limited spot color, manga monochrome, digital flats, noir contrast,
-    webtoon gradients, or painted page atmosphere, with deliberate value grouping, accent control,
-    and process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through minimal cast shadow, clean daylight-like value control, restrained tonal
-    steps, and no heavy noir spotting or airbrushed drama; make light read through ink spotting,
-    cel-like value blocks, dramatic rim separation, flat print fill, or painted page modeling rather
-    than generic studio illumination, so value structure supports the illustration process and does
-    not overwrite the requested content.
-  texture_and_material: >-
-    Render smooth ink-on-paper finish, lightly printed album surface, crisp color fills, and almost
-    invisible brush texture; surface detail should reveal paper tooth, newsprint dots, screen tones,
-    digital brush layers, ink pools, gutter discipline, or pixel cells at a scale that supports the
-    drawing, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through album-panel clarity, balanced negative space, readable object
-    placement, calm perspective, and precise environmental line organization; compose with panel
-    logic, silhouette clarity, speech-shape space, page rhythm, close-up drama, or scroll pacing
-    without requiring a fixed comic-page scene, with scale, spacing, edge rhythm, and visual
-    hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood curious, intelligent, lucid, adventurous, and gently ironic without melodrama or
-    noisy spectacle; derive mood from era, genre pressure, satire, melodrama, horror obsession, pulp
-    energy, or graphic-novel seriousness, letting the style alter interpretation without demanding a
-    specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with immaculate clear-line finish with consistent contour weight, clean fills, exact
-    edges, and high readability at small card scale; finish with clear ink decisions, readable
-    stylization, controlled artifacting, and no generic superhero costume or random comic text
-    replacing the prompt, clean denoised surfaces where appropriate, and enough process evidence to
-    make the style recognizable.
-  key_features: >-
-    ligne claire Franco-Belgian album style with uniform clean ink contour, open readable shapes,
-    precise backgrounds-as-design, and calm adventure-page clarity; uniform contour, flat album
-    color, clean open shapes, minimal shadow, precise environment linework; flat bright European
-    album color, controlled local hues, soft natural accents, and low-noise value separation without
-    painterly gradients; smooth ink-on-paper finish, lightly printed album surface, crisp color
-    fills, and almost invisible brush texture; album-panel clarity, balanced negative space,
-    readable object placement, calm perspective, and precise environmental line organization
-  creative_brief: >-
-    Apply Franco-Belgian (Ligne Claire) as an illustration preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through ligne claire Franco-Belgian album style with uniform clean ink contour, open readable
-    shapes, precise backgrounds-as-design, and calm adventure-page clarity, uniform contour, flat
-    album color, clean open shapes, minimal shadow, precise environment linework, smooth
-    ink-on-paper finish, lightly printed album surface, crisp color fills, and almost invisible
-    brush texture without requiring the card image's original subject.
+  aesthetic: 'Franco-Belgian clear line: one uniform ink contour around every form, flat unshaded color and meticulously drawn backgrounds equal in clarity to the figures.'
+  subject_treatment: Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.
+  color_and_tone: Flat bright album colors, clear sky blues, brick reds and ochres, local color with no modeling.
+  lighting_and_shadow: Even daylight without hatching; at most a single flat darker tone for cast shadows under objects.
+  texture_and_material: Smooth printed album paper, clean color fills, no brush texture, no hatching, no screentone.
+  camera_and_composition: Calm eye-level or slightly high view, every object readable, architecture and vehicles drawn with draftsman precision.
+  atmosphere_and_mood: Lucid, curious adventure told with calm intelligence and gentle irony.
+  rendering_and_quality: Constant contour width, closed shapes, exact edges; the clarity of the line is the whole style.
+  key_features: uniform clear-line contour; flat album color; no hatching; precise backgrounds; calm eye-level view
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Franco-Belgian (Ligne Claire) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - added panels or gutters
+  - speech balloons
+  - sound-effect lettering
+  - franchise hero costume
+  - chest emblem of a known hero
+  - crosshatching
+  - painterly texture
   - shading
   - gradient
   - official card scene
@@ -92,13 +44,17 @@ avoidRules:
   - random speech text
   - fake lettering
   - photo-real costume render
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-007.webp
 attributes:
-  negativePrompt: >-
-    shading, gradient, official card scene, fixed thumbnail subject, prompt replaced by sample
-    image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop,
-    generic superhero costume, random speech text, fake lettering, photo-real costume render
+  negativePrompt: added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, crosshatching, painterly texture, shading, gradient, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

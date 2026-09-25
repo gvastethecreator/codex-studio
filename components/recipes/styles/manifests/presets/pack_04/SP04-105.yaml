@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP04-105
+packId: pack_04
+name: Non-Photo Blue Pencils
+styleAnchors:
+  - Non-Photo Blue Pencils
+  - uninked comic pencil art
+  - non-photo-blue construction lines
+displayName: Non-Photo Blue Pencils
+category: 1. Comic Book Styles
+domain: uninked comic pencil art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - comic-book-styles
+  - blueline
+  - comic-pencils
+  - construction-lines
+visualDna:
+  aesthetic: 'Uninked comic pencil art: confident graphite line drawing laid over loose non-photo-blue construction sketching on bristol board, before any ink.'
+  subject_treatment: Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.
+  color_and_tone: Graphite grays over light cyan blue lines on warm white board; no other color.
+  lighting_and_shadow: Shadow indicated by quick graphite hatching and X marks for areas to be filled black later.
+  texture_and_material: Bristol board tooth, smudged graphite, eraser ghosts, blue gesture curves, ellipses and perspective lines left visible.
+  camera_and_composition: The requested view built on a visible blue perspective grid and mannequin forms, finished line on top.
+  atmosphere_and_mood: Energetic and in-progress, the thinking of the artist left on the page.
+  rendering_and_quality: Clean confident pencil over messy blue structure; the image stays unfinished and uninked on purpose.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Non-Photo Blue Pencils as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: non-photo-blue construction lines; graphite finished line; X marks for blacks; visible perspective grid; bristol tooth
+avoidRules:
+  - added panels or gutters
+  - speech balloons
+  - sound-effect lettering
+  - franchise hero costume
+  - chest emblem of a known hero
+  - ink
+  - full color
+  - finished rendering
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, ink, full color, finished rendering, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_04
+  packName: Illustration & Graphic Novel
+  categoryId: comic-book-styles
+  categoryName: 1. Comic Book Styles
+  tags:
+    - illustration-and-graphic-novel
+    - comic-book-styles
+    - blueline
+    - comic-pencils
+    - construction-lines
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: uninked comic pencil art

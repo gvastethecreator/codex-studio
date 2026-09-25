@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP04-012
 packId: pack_04
-name: Moebius Retro Sci-Fi Comic (Dreamline)
+name: Dreamline Stipple Sci-Fi Comic
 category: 1. Comic Book Styles
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,61 +12,24 @@ tags:
   - illustration-and-graphic-novel
   - comic-book-styles
 visualDna:
-  aesthetic: >-
-    Moebius Retro Sci-Fi Comic (Dreamline) acts as a transferable illustration router: start from
-    Dreamline retro sci-fi comics language (Moebius-inspired airy surrealism), Stipple gradients,
-    expansive negative space, poetic architecture and comic-illustration system built from ink
-    hierarchy, panel-era color, contour exaggeration, print artifacts, and sequential-art
-    readability, then apply the visual behavior to prompt X instead of recreating a fixed demo
-    image.
-  subject_treatment: >-
-    Transform any prompt subject through Fine controlled contour with stipple-assisted tonal
-    modulation; preserve the requested subject while translating form into panel-ready silhouettes,
-    expressive contour weight, stylized anatomy, speed emphasis, or graphic restraint only when the
-    preset calls for it, keeping the requested identity, silhouette, pose, object function, or
-    setting legible.
-  color_and_tone: >-
-    Build color with Soft pastel atmospherics, dusty warms, and cool alien blues; treat color as
-    comic production language: four-color plates, limited spot color, manga monochrome, digital
-    flats, noir contrast, webtoon gradients, or painted page atmosphere, with deliberate value
-    grouping, accent control, and process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Even ambient illumination with low-contrast dream glow; make light read
-    through ink spotting, cel-like value blocks, dramatic rim separation, flat print fill, or
-    painted page modeling rather than generic studio illumination, so value structure supports the
-    illustration process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Dot/stipple shading and clean matte color fields; surface detail should reveal paper
-    tooth, newsprint dots, screen tones, digital brush layers, ink pools, gutter discipline, or
-    pixel cells at a scale that supports the drawing, keeping material scale coherent and avoiding
-    noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Organic-futurist forms and elegant non-Euclidean silhouettes;
-    compose with panel logic, silhouette clarity, speech-shape space, page rhythm, close-up drama,
-    or scroll pacing without requiring a fixed comic-page scene, with scale, spacing, edge rhythm,
-    and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Vast, meditative, enigmatic, serene, mood carried by Moebius Retro Sci-Fi Comic
-    (Dreamline) craft, material pressure, and visual restraint; derive mood from era, genre
-    pressure, satire, melodrama, horror obsession, pulp energy, or graphic-novel seriousness,
-    letting the style alter interpretation without demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Intricate yet breathable world-detailing with contemplative pacing; finish with
-    clear ink decisions, readable stylization, controlled artifacting, and no generic superhero
-    costume or random comic text replacing the prompt, clean denoised surfaces where appropriate,
-    and enough process evidence to make the style recognizable.
-  key_features: >-
-    Dreamline retro sci-fi comics language (Moebius-inspired airy surrealism); Stipple gradients,
-    expansive negative space, poetic architecture; Soft pastel atmospherics, dusty warms, and cool
-    alien blues; Dot/stipple shading and clean matte color fields; Organic-futurist forms and
-    elegant non-Euclidean silhouettes
-  creative_brief: >-
-    Apply Moebius Retro Sci-Fi Comic (Dreamline) as an illustration preset over prompt X: preserve
-    the user's requested subject, then route mark-making, palette, surface, composition, mood, and
-    final craft through Dreamline retro sci-fi comics language (Moebius-inspired airy surrealism),
-    Stipple gradients, expansive negative space, poetic architecture, Dot/stipple shading and clean
-    matte color fields without requiring the card image's original subject.
+  aesthetic: 'Dreamline European science-fiction comic: fine even contour with stipple dot shading and flat matte pastel color over vast airy alien landscapes.'
+  subject_treatment: Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.
+  color_and_tone: Dusty pastel fields, peach, sand, lilac and pale turquoise, cool alien blues in the distance, low contrast.
+  lighting_and_shadow: Even ambient desert light with small soft shadows; depth carried by paler color toward the horizon.
+  texture_and_material: Stipple dots for all shading, clean matte color fields, organic-futurist architecture with smooth curves.
+  camera_and_composition: Wide calm views with tiny figures against huge negative space, flowing non-Euclidean silhouettes.
+  atmosphere_and_mood: Vast, meditative and enigmatic, a silent dream of another world.
+  rendering_and_quality: Intricate but breathable detail, fine line and stipple only; no heavy black shadows.
+  key_features: fine even contour; stipple dot shading; dusty pastel matte color; organic-futurist forms; tiny figures in vast space
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dreamline Stipple Sci-Fi Comic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - added panels or gutters
+  - speech balloons
+  - sound-effect lettering
+  - franchise hero costume
+  - chest emblem of a known hero
+  - heavy black shadows
+  - glossy chrome
   - dark
   - heavy shadows
   - official card scene
@@ -81,13 +44,17 @@ avoidRules:
   - random speech text
   - fake lettering
   - photo-real costume render
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-012.webp
 attributes:
-  negativePrompt: >-
-    dark, heavy shadows, official card scene, fixed thumbnail subject, prompt replaced by sample
-    image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop,
-    generic superhero costume, random speech text, fake lettering, photo-real costume render
+  negativePrompt: added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, heavy black shadows, glossy chrome, dark, heavy shadows, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
@@ -101,3 +68,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Dreamline Stipple Sci-Fi Comic
+styleAnchors:
+  - Dreamline Stipple Sci-Fi Comic
+  - Moebius Retro Sci-Fi Comic (Dreamline)

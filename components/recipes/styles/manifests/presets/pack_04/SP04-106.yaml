@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP04-106
+packId: pack_04
+name: Direct-Color Album Watercolor
+styleAnchors:
+  - Direct-Color Album Watercolor
+  - European painted album art
+  - pen line under transparent watercolor
+displayName: Direct-Color Album Watercolor
+category: 1. Comic Book Styles
+domain: European painted album art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - comic-book-styles
+  - direct-color
+  - watercolor
+  - bande-dessinee
+visualDna:
+  aesthetic: 'European direct-color album art: a fine pen line painted directly in transparent watercolor, washes flowing over and softening the ink.'
+  subject_treatment: Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.
+  color_and_tone: Luminous transparent washes, warm ochres and cool greens, whites left as bare paper, color bleeding past lines.
+  lighting_and_shadow: Atmospheric natural light painted wet-in-wet, soft glazed shadows, colored reflected light.
+  texture_and_material: Cold-press paper grain, blooms, granulating pigment and hard wash edges drying around fine pen detail.
+  camera_and_composition: Spacious landscape-led views with figures in their environment, weather and season given room.
+  atmosphere_and_mood: Warm, travelled and wistful, adventure felt through light and weather.
+  rendering_and_quality: Fine pen line softened by genuine watercolor behavior; no flat fills and no digital gradients.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Direct-Color Album Watercolor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: pen line under transparent watercolor; wet-in-wet blooms; bare paper whites; granulating pigment; landscape-led view
+avoidRules:
+  - added panels or gutters
+  - speech balloons
+  - sound-effect lettering
+  - franchise hero costume
+  - chest emblem of a known hero
+  - flat digital fills
+  - hard cel shading
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, flat digital fills, hard cel shading, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_04
+  packName: Illustration & Graphic Novel
+  categoryId: comic-book-styles
+  categoryName: 1. Comic Book Styles
+  tags:
+    - illustration-and-graphic-novel
+    - comic-book-styles
+    - direct-color
+    - watercolor
+    - bande-dessinee
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: European painted album art

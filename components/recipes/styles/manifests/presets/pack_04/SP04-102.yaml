@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP04-102
+packId: pack_04
+name: Greywash Horror Magazine
+styleAnchors:
+  - Greywash Horror Magazine
+  - black-and-white horror magazine art
+  - diluted ink gray washes
+displayName: Greywash Horror Magazine
+category: 1. Comic Book Styles
+domain: black-and-white horror magazine art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - comic-book-styles
+  - ink-wash
+  - horror-magazine
+  - monochrome
+visualDna:
+  aesthetic: '1970s black-and-white horror magazine art: detailed pen ink drawing modeled with diluted ink gray washes instead of color or screentone.'
+  subject_treatment: Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.
+  color_and_tone: Gray scale built from three or four dilutions of black ink, pale fog grays to charcoal, pure black accents.
+  lighting_and_shadow: Theatrical underlight and side light, wash pooling in the shadows, white paper left for moonlight and candle glow.
+  texture_and_material: Soft wash blooms and tide lines on illustration board, crisp pen hatching over wet-in-wet fog, dripping textures.
+  camera_and_composition: 'Splash-page drama: looming low angles, a monster or figure rising out of gloom, deep receding backgrounds.'
+  atmosphere_and_mood: Lurid, gothic and delicious dread, a campfire tale drawn seriously.
+  rendering_and_quality: Rich tonal wash gradations with sharp pen detail on top; no color, no dot screentone.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Greywash Horror Magazine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: diluted ink gray washes; pen hatching over wash; wash tide lines; theatrical underlight; looming low angles
+avoidRules:
+  - added panels or gutters
+  - speech balloons
+  - sound-effect lettering
+  - franchise hero costume
+  - chest emblem of a known hero
+  - color
+  - dot screentone
+  - cute monsters
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, color, dot screentone, cute monsters, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_04
+  packName: Illustration & Graphic Novel
+  categoryId: comic-book-styles
+  categoryName: 1. Comic Book Styles
+  tags:
+    - illustration-and-graphic-novel
+    - comic-book-styles
+    - ink-wash
+    - horror-magazine
+    - monochrome
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: black-and-white horror magazine art

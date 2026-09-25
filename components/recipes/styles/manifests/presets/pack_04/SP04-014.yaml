@@ -3,7 +3,7 @@ id: SP04-014
 packId: pack_04
 name: Pixel Art Comic
 category: 1. Comic Book Styles
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,60 +12,25 @@ tags:
   - illustration-and-graphic-novel
   - comic-book-styles
 visualDna:
-  aesthetic: >-
-    Pixel Art Comic acts as a transferable illustration router: start from Retro pixel-comic
-    language rooted in 16-bit sprite constraints, Palette discipline, cluster logic, hard-edge
-    silhouettes, frame-efficient detail and comic-illustration system built from ink hierarchy,
-    panel-era color, contour exaggeration, print artifacts, and sequential-art readability, then
-    apply the visual behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Pixel-stepped contours with strict tile/grid alignment;
-    preserve the requested subject while translating form into panel-ready silhouettes, expressive
-    contour weight, stylized anatomy, speed emphasis, or graphic restraint only when the preset
-    calls for it, keeping the requested identity, silhouette, pose, object function, or setting
-    legible.
-  color_and_tone: >-
-    Build color with Limited indexed palette with controlled dithering ramps; treat color as comic
-    production language: four-color plates, limited spot color, manga monochrome, digital flats,
-    noir contrast, webtoon gradients, or painted page atmosphere, with deliberate value grouping,
-    accent control, and process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Baked sprite shading via cluster placement and dither gradients; make light
-    read through ink spotting, cel-like value blocks, dramatic rim separation, flat print fill, or
-    painted page modeling rather than generic studio illumination, so value structure supports the
-    illustration process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Explicit pixel grid with intentional aliasing; surface detail should reveal paper tooth,
-    newsprint dots, screen tones, digital brush layers, ink pools, gutter discipline, or pixel cells
-    at a scale that supports the drawing, keeping material scale coherent and avoiding noisy filler
-    texture.
-  camera_and_composition: >-
-    Structure the image through Chunked perspective and proportion adapted to sprite readability;
-    compose with panel logic, silhouette clarity, speech-shape space, page rhythm, close-up drama,
-    or scroll pacing without requiring a fixed comic-page scene, with scale, spacing, edge rhythm,
-    and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Nostalgic, arcade-coded, playful, mood carried by Pixel Art Comic craft, material
-    pressure, and visual restraint; derive mood from era, genre pressure, satire, melodrama, horror
-    obsession, pulp energy, or graphic-novel seriousness, letting the style alter interpretation
-    without demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Crisp low-resolution sprite craft with compositional economy; finish with clear ink
-    decisions, readable stylization, controlled artifacting, and no generic superhero costume or
-    random comic text replacing the prompt, clean denoised surfaces where appropriate, and enough
-    process evidence to make the style recognizable.
-  key_features: >-
-    Retro pixel-comic language rooted in 16-bit sprite constraints; Palette discipline, cluster
-    logic, hard-edge silhouettes, frame-efficient detail; Limited indexed palette with controlled
-    dithering ramps; Explicit pixel grid with intentional aliasing; Chunked perspective and
-    proportion adapted to sprite readability
-  creative_brief: >-
-    Apply Pixel Art Comic as an illustration preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Retro pixel-comic language rooted in 16-bit sprite constraints, Palette discipline, cluster
-    logic, hard-edge silhouettes, frame-efficient detail, Explicit pixel grid with intentional
-    aliasing without requiring the card image's original subject.
+  aesthetic: 'Pixel comic art: comic inking translated into pixels, one-pixel black outlines, ordered-dither halftone shading and a strict indexed palette on a visible grid.'
+  subject_treatment: Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.
+  color_and_tone: Indexed palette of about 32 colors, dithered ramps between neighboring tones, deep navy used instead of pure black shadow.
+  lighting_and_shadow: Baked sprite shading with hand-placed pixel clusters; a single light direction shown by bright edge pixels.
+  texture_and_material: Hard square pixels with intentional aliasing, checkerboard and Bayer dither patterns standing in for print halftone.
+  camera_and_composition: Splash-page framing at low resolution, chunky readable silhouettes, perspective simplified to fit the grid.
+  atmosphere_and_mood: Nostalgic and playful, a comic splash drawn on an old console.
+  rendering_and_quality: Crisp nearest-neighbor pixels, no anti-aliasing, no smooth gradients and no blur.
+  key_features: one-pixel black outlines; ordered-dither shading; indexed 32-color palette; visible pixel grid; chunky silhouettes
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pixel Art Comic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - added panels or gutters
+  - speech balloons
+  - sound-effect lettering
+  - franchise hero costume
+  - chest emblem of a known hero
+  - smooth gradients
+  - anti-aliasing
+  - high-resolution painting
   - vector
   - smooth
   - official card scene
@@ -80,13 +45,17 @@ avoidRules:
   - random speech text
   - fake lettering
   - photo-real costume render
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-014.webp
 attributes:
-  negativePrompt: >-
-    vector, smooth, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic
-    superhero costume, random speech text, fake lettering, photo-real costume render
+  negativePrompt: added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, smooth gradients, anti-aliasing, high-resolution painting, vector, smooth, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

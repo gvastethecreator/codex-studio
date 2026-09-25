@@ -22,6 +22,12 @@ categories:
       - pack_04/SP04-012.yaml
       - pack_04/SP04-014.yaml
       - pack_04/SP04-016.yaml
+      - pack_04/SP04-101.yaml
+      - pack_04/SP04-102.yaml
+      - pack_04/SP04-103.yaml
+      - pack_04/SP04-104.yaml
+      - pack_04/SP04-105.yaml
+      - pack_04/SP04-106.yaml
   - id: childrens-illustration
     name: 2. Children's Illustration
     presetRefs:
@@ -138,6 +144,12 @@ presetRefs:
   - pack_04/SP04-012.yaml
   - pack_04/SP04-014.yaml
   - pack_04/SP04-016.yaml
+  - pack_04/SP04-101.yaml
+  - pack_04/SP04-102.yaml
+  - pack_04/SP04-103.yaml
+  - pack_04/SP04-104.yaml
+  - pack_04/SP04-105.yaml
+  - pack_04/SP04-106.yaml
   - pack_04/SP04-013.yaml
   - pack_04/SP04-017.yaml
   - pack_04/SP04-018.yaml

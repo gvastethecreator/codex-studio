@@ -3,7 +3,7 @@
     {
       "id": "pack_04",
       "name": "Illustration & Graphic Novel",
-      "presetCount": 100
+      "presetCount": 106
     }
   ],
   "presets": [
@@ -93,7 +93,8 @@
     },
     {
       "id": "SP04-008",
-      "name": "Sin City Noir Comic (High Contrast)",
+      "name": "Binary Ink Noir Comic",
+      "styleAnchors": ["Binary Ink Noir Comic", "Sin City Noir Comic (High Contrast)"],
       "ref": "pack_04/SP04-008.yaml",
       "packId": "pack_04",
       "packName": "Illustration & Graphic Novel",
@@ -101,7 +102,7 @@
       "categoryName": "1. Comic Book Styles",
       "tags": ["illustration-and-graphic-novel", "comic-book-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp04-008 sin city noir comic (high contrast) 1. comic book styles comics pack_04 illustration & graphic novel comic-book-styles illustration-and-graphic-novel comic-book-styles"
+      "searchableText": "sp04-008 binary ink noir comic sin city noir comic (high contrast) 1. comic book styles comics pack_04 illustration & graphic novel comic-book-styles illustration-and-graphic-novel comic-book-styles"
     },
     {
       "id": "SP04-009",
@@ -129,7 +130,11 @@
     },
     {
       "id": "SP04-011",
-      "name": "Junji Ito Horror Manga (Obsessive Ink)",
+      "name": "Obsessive Fine-Line Horror Manga",
+      "styleAnchors": [
+        "Obsessive Fine-Line Horror Manga",
+        "Junji Ito Horror Manga (Obsessive Ink)"
+      ],
       "ref": "pack_04/SP04-011.yaml",
       "packId": "pack_04",
       "packName": "Illustration & Graphic Novel",
@@ -137,11 +142,12 @@
       "categoryName": "1. Comic Book Styles",
       "tags": ["illustration-and-graphic-novel", "comic-book-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp04-011 junji ito horror manga (obsessive ink) 1. comic book styles comics pack_04 illustration & graphic novel comic-book-styles illustration-and-graphic-novel comic-book-styles"
+      "searchableText": "sp04-011 obsessive fine-line horror manga junji ito horror manga (obsessive ink) 1. comic book styles comics pack_04 illustration & graphic novel comic-book-styles illustration-and-graphic-novel comic-book-styles"
     },
     {
       "id": "SP04-012",
-      "name": "Moebius Retro Sci-Fi Comic (Dreamline)",
+      "name": "Dreamline Stipple Sci-Fi Comic",
+      "styleAnchors": ["Dreamline Stipple Sci-Fi Comic", "Moebius Retro Sci-Fi Comic (Dreamline)"],
       "ref": "pack_04/SP04-012.yaml",
       "packId": "pack_04",
       "packName": "Illustration & Graphic Novel",
@@ -149,7 +155,7 @@
       "categoryName": "1. Comic Book Styles",
       "tags": ["illustration-and-graphic-novel", "comic-book-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp04-012 moebius retro sci-fi comic (dreamline) 1. comic book styles comics pack_04 illustration & graphic novel comic-book-styles illustration-and-graphic-novel comic-book-styles"
+      "searchableText": "sp04-012 dreamline stipple sci-fi comic moebius retro sci-fi comic (dreamline) 1. comic book styles comics pack_04 illustration & graphic novel comic-book-styles illustration-and-graphic-novel comic-book-styles"
     },
     {
       "id": "SP04-014",
@@ -174,6 +180,126 @@
       "tags": ["illustration-and-graphic-novel", "comic-book-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp04-016 tech noir comic 1. comic book styles comics pack_04 illustration & graphic novel comic-book-styles illustration-and-graphic-novel comic-book-styles"
+    },
+    {
+      "id": "SP04-101",
+      "name": "Gekiga Drybrush Realism",
+      "styleAnchors": [
+        "Gekiga Drybrush Realism",
+        "adult dramatic manga realism",
+        "split dry-brush strokes"
+      ],
+      "ref": "pack_04/SP04-101.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "comic-book-styles",
+      "categoryName": "1. Comic Book Styles",
+      "domain": "adult dramatic manga realism",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "comic-book-styles",
+        "adult-dramatic-manga-realism"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-101 gekiga drybrush realism adult dramatic manga realism split dry-brush strokes 1. comic book styles comics adult dramatic manga realism pack_04 illustration & graphic novel comic-book-styles illustration-and-graphic-novel comic-book-styles adult-dramatic-manga-realism"
+    },
+    {
+      "id": "SP04-102",
+      "name": "Greywash Horror Magazine",
+      "styleAnchors": [
+        "Greywash Horror Magazine",
+        "black-and-white horror magazine art",
+        "diluted ink gray washes"
+      ],
+      "ref": "pack_04/SP04-102.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "comic-book-styles",
+      "categoryName": "1. Comic Book Styles",
+      "domain": "black-and-white horror magazine art",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "comic-book-styles",
+        "black-and-white-horror-magazine-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-102 greywash horror magazine black-and-white horror magazine art diluted ink gray washes 1. comic book styles comics black-and-white horror magazine art pack_04 illustration & graphic novel comic-book-styles illustration-and-graphic-novel comic-book-styles black-and-white-horror-magazine-art"
+    },
+    {
+      "id": "SP04-103",
+      "name": "Feathered-Brush Adventure Strip",
+      "styleAnchors": [
+        "Feathered-Brush Adventure Strip",
+        "classic newspaper adventure strip",
+        "sable-brush feathering"
+      ],
+      "ref": "pack_04/SP04-103.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "comic-book-styles",
+      "categoryName": "1. Comic Book Styles",
+      "domain": "classic newspaper adventure strip",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "comic-book-styles",
+        "classic-newspaper-adventure-strip"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-103 feathered-brush adventure strip classic newspaper adventure strip sable-brush feathering 1. comic book styles comics classic newspaper adventure strip pack_04 illustration & graphic novel comic-book-styles illustration-and-graphic-novel comic-book-styles classic-newspaper-adventure-strip"
+    },
+    {
+      "id": "SP04-104",
+      "name": "Airbrush Manhua Action",
+      "styleAnchors": [
+        "Airbrush Manhua Action",
+        "painted martial-arts comic",
+        "airbrush gradient color"
+      ],
+      "ref": "pack_04/SP04-104.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "comic-book-styles",
+      "categoryName": "1. Comic Book Styles",
+      "domain": "painted martial-arts comic",
+      "tags": ["illustration-and-graphic-novel", "comic-book-styles", "painted-martial-arts-comic"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-104 airbrush manhua action painted martial-arts comic airbrush gradient color 1. comic book styles comics painted martial-arts comic pack_04 illustration & graphic novel comic-book-styles illustration-and-graphic-novel comic-book-styles painted-martial-arts-comic"
+    },
+    {
+      "id": "SP04-105",
+      "name": "Non-Photo Blue Pencils",
+      "styleAnchors": [
+        "Non-Photo Blue Pencils",
+        "uninked comic pencil art",
+        "non-photo-blue construction lines"
+      ],
+      "ref": "pack_04/SP04-105.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "comic-book-styles",
+      "categoryName": "1. Comic Book Styles",
+      "domain": "uninked comic pencil art",
+      "tags": ["illustration-and-graphic-novel", "comic-book-styles", "uninked-comic-pencil-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-105 non-photo blue pencils uninked comic pencil art non-photo-blue construction lines 1. comic book styles comics uninked comic pencil art pack_04 illustration & graphic novel comic-book-styles illustration-and-graphic-novel comic-book-styles uninked-comic-pencil-art"
+    },
+    {
+      "id": "SP04-106",
+      "name": "Direct-Color Album Watercolor",
+      "styleAnchors": [
+        "Direct-Color Album Watercolor",
+        "European painted album art",
+        "pen line under transparent watercolor"
+      ],
+      "ref": "pack_04/SP04-106.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "comic-book-styles",
+      "categoryName": "1. Comic Book Styles",
+      "domain": "European painted album art",
+      "tags": ["illustration-and-graphic-novel", "comic-book-styles", "european-painted-album-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-106 direct-color album watercolor european painted album art pen line under transparent watercolor 1. comic book styles comics european painted album art pack_04 illustration & graphic novel comic-book-styles illustration-and-graphic-novel comic-book-styles european-painted-album-art"
     },
     {
       "id": "SP04-013",
@@ -1208,5 +1334,5 @@
       "searchableText": "sp04-100 monster size comparison chart 6. technical and reference sheets reference layouts pack_04 illustration & graphic novel technical-and-reference-sheets illustration-and-graphic-novel technical-and-reference-sheets"
     }
   ],
-  "totalPresetCount": 100
+  "totalPresetCount": 106
 }

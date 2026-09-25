@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP04-008
 packId: pack_04
-name: Sin City Noir Comic (High Contrast)
+name: Binary Ink Noir Comic
 category: 1. Comic Book Styles
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,63 +12,24 @@ tags:
   - illustration-and-graphic-novel
   - comic-book-styles
 visualDna:
-  aesthetic: >-
-    Sin urban fabric Noir Comic (High Contrast) acts as a transferable illustration router: start
-    from Hard-boiled monochrome noir style built on brutal contrast logic and silhouette-dominant
-    visual storytelling, No greyscale, silhouette framing, white-out rim and comic-illustration
-    system built from ink hierarchy, panel-era color, contour exaggeration, print artifacts, and
-    sequential-art readability, then apply the visual behavior to prompt X instead of recreating a
-    fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Negative-space carving with razor-edged contour breaks,
-    stark shape blocking, and subtraction-first silhouette subjects construction; preserve the
-    requested subject while translating form into panel-ready silhouettes, expressive contour
-    weight, stylized anatomy, speed emphasis, or graphic restraint only when the preset calls for
-    it, keeping the requested identity, silhouette, pose, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Black and White only, stark binary, zero greyscale; treat color as comic
-    production language: four-color plates, limited spot color, manga monochrome, digital flats,
-    noir contrast, webtoon gradients, or painted page atmosphere, with deliberate value grouping,
-    accent control, and process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Harsh, single-source key, knife-edge cast shadows; make light read through
-    ink spotting, cel-like value blocks, dramatic rim separation, flat print fill, or painted page
-    modeling rather than generic studio illumination, so value structure supports the illustration
-    process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Dry ink grain, splatter accents, rough print-like edges, and gritty black-fill density
-    variation; surface detail should reveal paper tooth, newsprint dots, screen tones, digital brush
-    layers, ink pools, gutter discipline, or pixel cells at a scale that supports the drawing,
-    keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Silhouette-forward composition with compressed midtone absence and
-    hard cutout depth cues; compose with panel logic, silhouette clarity, speech-shape space, page
-    rhythm, close-up drama, or scroll pacing without requiring a fixed comic-page scene, with scale,
-    spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Dark, menacing, tense, unforgiving, nocturnal; derive mood from era, genre
-    pressure, satire, melodrama, horror obsession, pulp energy, or graphic-novel seriousness,
-    letting the style alter interpretation without demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Ultra-contrast noir rendering prioritizing shadow hierarchy, binary value
-    discipline, and aggressive readability; finish with clear ink decisions, readable stylization,
-    controlled artifacting, and no generic superhero costume or random comic text replacing the
-    prompt, clean denoised surfaces where appropriate, and enough process evidence to make the style
-    recognizable.
-  key_features: >-
-    Hard-boiled monochrome noir style built on brutal contrast logic and silhouette-dominant visual
-    storytelling; No greyscale, silhouette framing, white-out rim; Black and White only, stark
-    binary, zero greyscale; Dry ink grain, splatter accents, rough print-like edges, and gritty
-    black-fill density variation; Silhouette-forward composition with compressed midtone absence and
-    hard cutout depth cues
-  creative_brief: >-
-    Apply Sin urban fabric Noir Comic (High Contrast) as an illustration preset over prompt X:
-    preserve the user's requested subject, then route mark-making, palette, surface, composition,
-    mood, and final craft through Hard-boiled monochrome noir style built on brutal contrast logic
-    and silhouette-dominant visual storytelling, No greyscale, silhouette framing, white-out rim,
-    Dry ink grain, splatter accents, rough print-like edges, and gritty black-fill density variation
-    without requiring the card image's original subject.
+  aesthetic: 'Binary noir ink: the image carved from solid black and bare white with no gray at all, figures often reduced to white-outlined silhouettes.'
+  subject_treatment: Keep the prompt subject, action and setting and redraw them as one single comic image in this medium; never add panels, gutters, speech balloons, captions or sound-effect lettering the prompt did not ask for.
+  color_and_tone: Strictly two values, black ink and paper white; no gray, no tone, no color.
+  lighting_and_shadow: One harsh source cutting knife-edge shapes; the unlit half of every form merges into the black background.
+  texture_and_material: Dry-brush drag at edges, ink splatter, rain and snow drawn as white slashes and dots scratched out of black.
+  camera_and_composition: Silhouette-first staging, deep low or high angles, large black masses with small carved white shapes carrying the read.
+  atmosphere_and_mood: Menacing and nocturnal, a world of hard choices and cold rain.
+  rendering_and_quality: Negative-space carving with razor edges; midtones are forbidden and white shapes must read alone.
+  key_features: black and white only; negative-space carving; white-outlined silhouettes; knife-edge shadows; scratched-out rain
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Binary Ink Noir Comic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - added panels or gutters
+  - speech balloons
+  - sound-effect lettering
+  - franchise hero costume
+  - chest emblem of a known hero
+  - gray midtones
+  - screentone
   - grey
   - color
   - official card scene
@@ -83,13 +44,17 @@ avoidRules:
   - random speech text
   - fake lettering
   - photo-real costume render
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-008.webp
 attributes:
-  negativePrompt: >-
-    grey, color, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic
-    superhero costume, random speech text, fake lettering, photo-real costume render
+  negativePrompt: added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, gray midtones, screentone, grey, color, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
@@ -103,3 +68,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Binary Ink Noir Comic
+styleAnchors:
+  - Binary Ink Noir Comic
+  - Sin City Noir Comic (High Contrast)
