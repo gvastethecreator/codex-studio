@@ -923,7 +923,8 @@
     },
     {
       "id": "SP05-095",
-      "name": "Frieren – Afterquest Melancholy Fantasy",
+      "name": "Faded-Line Pale Wash Cel",
+      "styleAnchors": ["Faded-Line Pale Wash Cel", "Frieren – Afterquest Melancholy Fantasy"],
       "ref": "pack_05/SP05-095.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -931,11 +932,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-095 frieren – afterquest melancholy fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-095 faded-line pale wash cel frieren – afterquest melancholy fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-099",
-      "name": "Shield Hero – Defensive Underdog Fantasy",
+      "name": "Worn Bronze Concentric-Line Cel",
+      "styleAnchors": [
+        "Worn Bronze Concentric-Line Cel",
+        "Shield Hero – Defensive Underdog Fantasy"
+      ],
       "ref": "pack_05/SP05-099.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -943,13 +948,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-099 shield hero – defensive underdog fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-099 worn bronze concentric-line cel shield hero – defensive underdog fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-248",
-      "name": "Stove-Top Monster Cuisine",
-      "sourceName": "Delicious in Dungeon - Stove-Top Monster Cuisine",
-      "styleAnchors": ["Delicious in Dungeon - Stove-Top Monster Cuisine"],
+      "name": "Naturalist Sketchbook Anime Cel",
+      "styleAnchors": [
+        "Naturalist Sketchbook Anime Cel",
+        "Delicious in Dungeon - Stove-Top Monster Cuisine"
+      ],
       "ref": "pack_05/SP05-248.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -957,13 +964,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-248 stove-top monster cuisine delicious in dungeon - stove-top monster cuisine 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-248 naturalist sketchbook anime cel delicious in dungeon - stove-top monster cuisine 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-252",
-      "name": "Merchant Road Stew",
-      "sourceName": "Campfire Cooking in Another World - Merchant Road Stew",
-      "styleAnchors": ["Campfire Cooking in Another World - Merchant Road Stew"],
+      "name": "Amber Dusk Rounded Cel",
+      "styleAnchors": [
+        "Amber Dusk Rounded Cel",
+        "Campfire Cooking in Another World - Merchant Road Stew"
+      ],
       "ref": "pack_05/SP05-252.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -971,13 +980,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-252 merchant road stew campfire cooking in another world - merchant road stew 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-252 amber dusk rounded cel campfire cooking in another world - merchant road stew 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-257",
-      "name": "Moonlit Merchant Wanderer",
-      "sourceName": "Tsukimichi - Moonlit Merchant Wanderer",
-      "styleAnchors": ["Tsukimichi - Moonlit Merchant Wanderer"],
+      "name": "Slate Twilight Single-Violet Cel",
+      "styleAnchors": [
+        "Slate Twilight Single-Violet Cel",
+        "Tsukimichi - Moonlit Merchant Wanderer"
+      ],
       "ref": "pack_05/SP05-257.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -985,13 +996,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-257 moonlit merchant wanderer tsukimichi - moonlit merchant wanderer 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-257 slate twilight single-violet cel tsukimichi - moonlit merchant wanderer 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-258",
-      "name": "Toolbox Party Quest",
-      "sourceName": "Handyman Saitou in Another World - Toolbox Party Quest",
-      "styleAnchors": ["Handyman Saitou in Another World - Toolbox Party Quest"],
+      "name": "Fine-Line Brass Glint Cel",
+      "styleAnchors": [
+        "Fine-Line Brass Glint Cel",
+        "Handyman Saitou in Another World - Toolbox Party Quest"
+      ],
       "ref": "pack_05/SP05-258.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -999,13 +1012,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-258 toolbox party quest handyman saitou in another world - toolbox party quest 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-258 fine-line brass glint cel handyman saitou in another world - toolbox party quest 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-259",
-      "name": "Storybook Crown Courage",
-      "sourceName": "Ranking of Kings - Storybook Crown Courage",
-      "styleAnchors": ["Ranking of Kings - Storybook Crown Courage"],
+      "name": "Picture-Book Crayon Line Anime",
+      "styleAnchors": [
+        "Picture-Book Crayon Line Anime",
+        "Ranking of Kings - Storybook Crown Courage"
+      ],
       "ref": "pack_05/SP05-259.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1013,13 +1028,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-259 storybook crown courage ranking of kings - storybook crown courage 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-259 picture-book crayon line anime ranking of kings - storybook crown courage 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-260",
-      "name": "Banquet Quest Pastel",
-      "sourceName": "Princess Connect! Re:Dive - Banquet Quest Pastel",
-      "styleAnchors": ["Princess Connect! Re:Dive - Banquet Quest Pastel"],
+      "name": "Candy Pastel Bloom Cel",
+      "styleAnchors": [
+        "Candy Pastel Bloom Cel",
+        "Princess Connect! Re:Dive - Banquet Quest Pastel"
+      ],
       "ref": "pack_05/SP05-260.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1027,11 +1044,12 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-260 banquet quest pastel princess connect! re:dive - banquet quest pastel 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-260 candy pastel bloom cel princess connect! re:dive - banquet quest pastel 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-091",
-      "name": "Sword Art Online – Glowing VR Adventure",
+      "name": "Cyan Crystal-Facet Glow Cel",
+      "styleAnchors": ["Cyan Crystal-Facet Glow Cel", "Sword Art Online – Glowing VR Adventure"],
       "ref": "pack_05/SP05-091.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1039,11 +1057,12 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-091 sword art online – glowing vr adventure 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-091 cyan crystal-facet glow cel sword art online – glowing vr adventure 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-092",
-      "name": "Re:Zero – Reset-Loop Dark Fantasy",
+      "name": "Violet Echo-Line Gothic Cel",
+      "styleAnchors": ["Violet Echo-Line Gothic Cel", "Re:Zero – Reset-Loop Dark Fantasy"],
       "ref": "pack_05/SP05-092.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1051,11 +1070,12 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-092 re:zero – reset-loop dark fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-092 violet echo-line gothic cel re:zero – reset-loop dark fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-093",
-      "name": "Mushoku Tensei – Wandering Mage Chronicle",
+      "name": "Sepia Moss Dry-Brush Cel",
+      "styleAnchors": ["Sepia Moss Dry-Brush Cel", "Mushoku Tensei – Wandering Mage Chronicle"],
       "ref": "pack_05/SP05-093.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1063,11 +1083,12 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-093 mushoku tensei – wandering mage chronicle 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-093 sepia moss dry-brush cel mushoku tensei – wandering mage chronicle 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-094",
-      "name": "Konosuba – Party-Quest Comedy",
+      "name": "Springy Comic-Timing Cel",
+      "styleAnchors": ["Springy Comic-Timing Cel", "Konosuba – Party-Quest Comedy"],
       "ref": "pack_05/SP05-094.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1075,11 +1096,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-094 konosuba – party-quest comedy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-094 springy comic-timing cel konosuba – party-quest comedy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-098",
-      "name": "Slime Isekai – Monster-Nation Bright Fantasy",
+      "name": "Rounded Sky-Blue Friendly Cel",
+      "styleAnchors": [
+        "Rounded Sky-Blue Friendly Cel",
+        "Slime Isekai – Monster-Nation Bright Fantasy"
+      ],
       "ref": "pack_05/SP05-098.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1087,11 +1112,12 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-098 slime isekai – monster-nation bright fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-098 rounded sky-blue friendly cel slime isekai – monster-nation bright fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-100",
-      "name": "DanMachi – Dungeon Lantern Adventure",
+      "name": "Vertical Mineral Amber Cel",
+      "styleAnchors": ["Vertical Mineral Amber Cel", "DanMachi – Dungeon Lantern Adventure"],
       "ref": "pack_05/SP05-100.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1099,7 +1125,7 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-100 danmachi – dungeon lantern adventure 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-100 vertical mineral amber cel danmachi – dungeon lantern adventure 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-241",
@@ -1145,9 +1171,11 @@
     },
     {
       "id": "SP05-244",
-      "name": "Imperial Destiny Chronicle",
-      "sourceName": "The Twelve Kingdoms - Imperial Destiny Chronicle",
-      "styleAnchors": ["The Twelve Kingdoms - Imperial Destiny Chronicle"],
+      "name": "Tall Textile-Rhythm Formal Cel",
+      "styleAnchors": [
+        "Tall Textile-Rhythm Formal Cel",
+        "The Twelve Kingdoms - Imperial Destiny Chronicle"
+      ],
       "ref": "pack_05/SP05-244.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1155,13 +1183,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-244 imperial destiny chronicle the twelve kingdoms - imperial destiny chronicle 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-244 tall textile-rhythm formal cel the twelve kingdoms - imperial destiny chronicle 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-245",
-      "name": "Windblown Tarot Fantasy",
-      "sourceName": "The Vision of Escaflowne - Windblown Tarot Fantasy",
-      "styleAnchors": ["The Vision of Escaflowne - Windblown Tarot Fantasy"],
+      "name": "Carmine Angular Windswept Cel",
+      "styleAnchors": [
+        "Carmine Angular Windswept Cel",
+        "The Vision of Escaflowne - Windblown Tarot Fantasy"
+      ],
       "ref": "pack_05/SP05-245.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1169,13 +1199,12 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-245 windblown tarot fantasy the vision of escaflowne - windblown tarot fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-245 carmine angular windswept cel the vision of escaflowne - windblown tarot fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-246",
-      "name": "Labyrinth Jewel Caravan",
-      "sourceName": "Magi - Labyrinth Jewel Caravan",
-      "styleAnchors": ["Magi - Labyrinth Jewel Caravan"],
+      "name": "Jewel Arabesque Curve Cel",
+      "styleAnchors": ["Jewel Arabesque Curve Cel", "Magi - Labyrinth Jewel Caravan"],
       "ref": "pack_05/SP05-246.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1183,13 +1212,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-246 labyrinth jewel caravan magi - labyrinth jewel caravan 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-246 jewel arabesque curve cel magi - labyrinth jewel caravan 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-249",
-      "name": "Printing Press Devotion",
-      "sourceName": "Ascendance of a Bookworm - Printing Press Devotion",
-      "styleAnchors": ["Ascendance of a Bookworm - Printing Press Devotion"],
+      "name": "Indigo Block-Print Cel",
+      "styleAnchors": [
+        "Indigo Block-Print Cel",
+        "Ascendance of a Bookworm - Printing Press Devotion"
+      ],
       "ref": "pack_05/SP05-249.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1197,13 +1228,12 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-249 printing press devotion ascendance of a bookworm - printing press devotion 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-249 indigo block-print cel ascendance of a bookworm - printing press devotion 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-250",
-      "name": "Quiet Temple Quest",
-      "sourceName": "The Faraway Paladin - Quiet Temple Quest",
-      "styleAnchors": ["The Faraway Paladin - Quiet Temple Quest"],
+      "name": "Grounded Matte Geometry Cel",
+      "styleAnchors": ["Grounded Matte Geometry Cel", "The Faraway Paladin - Quiet Temple Quest"],
       "ref": "pack_05/SP05-250.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1211,13 +1241,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-250 quiet temple quest the faraway paladin - quiet temple quest 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-250 grounded matte geometry cel the faraway paladin - quiet temple quest 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-253",
-      "name": "Herbarium Court Glow",
-      "sourceName": "The Saint's Magic Power Is Omnipotent - Herbarium Court Glow",
-      "styleAnchors": ["The Saint's Magic Power Is Omnipotent - Herbarium Court Glow"],
+      "name": "Glass-Green High-Key Herbarium Cel",
+      "styleAnchors": [
+        "Glass-Green High-Key Herbarium Cel",
+        "The Saint's Magic Power Is Omnipotent - Herbarium Court Glow"
+      ],
       "ref": "pack_05/SP05-253.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1225,13 +1257,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-253 herbarium court glow the saint's magic power is omnipotent - herbarium court glow 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-253 glass-green high-key herbarium cel the saint's magic power is omnipotent - herbarium court glow 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-254",
-      "name": "Celestial Maiden Portal Epic",
-      "sourceName": "Fushigi Yuugi - Celestial Maiden Portal Epic",
-      "styleAnchors": ["Fushigi Yuugi - Celestial Maiden Portal Epic"],
+      "name": "Lavender Halo-Arc Shoujo Cel",
+      "styleAnchors": [
+        "Lavender Halo-Arc Shoujo Cel",
+        "Fushigi Yuugi - Celestial Maiden Portal Epic"
+      ],
       "ref": "pack_05/SP05-254.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1239,13 +1273,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-254 celestial maiden portal epic fushigi yuugi - celestial maiden portal epic 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-254 lavender halo-arc shoujo cel fushigi yuugi - celestial maiden portal epic 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-255",
-      "name": "Gem-Engine Rescue Quest",
-      "sourceName": "Magic Knight Rayearth - Gem-Engine Rescue Quest",
-      "styleAnchors": ["Magic Knight Rayearth - Gem-Engine Rescue Quest"],
+      "name": "Gem-Facet Rising-Line Cel",
+      "styleAnchors": [
+        "Gem-Facet Rising-Line Cel",
+        "Magic Knight Rayearth - Gem-Engine Rescue Quest"
+      ],
       "ref": "pack_05/SP05-255.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1253,11 +1289,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-255 gem-engine rescue quest magic knight rayearth - gem-engine rescue quest 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-255 gem-facet rising-line cel magic knight rayearth - gem-engine rescue quest 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-096",
-      "name": "No Game No Life – Hyper-Saturated Strategy Fantasy",
+      "name": "Hyper-Saturated Impossible Perspective Cel",
+      "styleAnchors": [
+        "Hyper-Saturated Impossible Perspective Cel",
+        "No Game No Life – Hyper-Saturated Strategy Fantasy"
+      ],
       "ref": "pack_05/SP05-096.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1265,13 +1305,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-096 no game no life – hyper-saturated strategy fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-096 hyper-saturated impossible perspective cel no game no life – hyper-saturated strategy fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-251",
-      "name": "Aerial War Mage Doctrine",
-      "sourceName": "Saga of Tanya the Evil - Aerial War Mage Doctrine",
-      "styleAnchors": ["Saga of Tanya the Evil - Aerial War Mage Doctrine"],
+      "name": "Khaki Compressed-Diagonal Cel",
+      "styleAnchors": [
+        "Khaki Compressed-Diagonal Cel",
+        "Saga of Tanya the Evil - Aerial War Mage Doctrine"
+      ],
       "ref": "pack_05/SP05-251.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1279,11 +1321,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-251 aerial war mage doctrine saga of tanya the evil - aerial war mage doctrine 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-251 khaki compressed-diagonal cel saga of tanya the evil - aerial war mage doctrine 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-097",
-      "name": "Overlord – Bone Throne Dark Dominion",
+      "name": "Ivory-Charcoal Baroque Symmetry Cel",
+      "styleAnchors": [
+        "Ivory-Charcoal Baroque Symmetry Cel",
+        "Overlord – Bone Throne Dark Dominion"
+      ],
       "ref": "pack_05/SP05-097.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1291,13 +1337,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-097 overlord – bone throne dark dominion 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-097 ivory-charcoal baroque symmetry cel overlord – bone throne dark dominion 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-247",
-      "name": "Thorn Cottage Enchantment",
-      "sourceName": "The Ancient Magus' Bride - Thorn Cottage Enchantment",
-      "styleAnchors": ["The Ancient Magus' Bride - Thorn Cottage Enchantment"],
+      "name": "Lilac Thorn-Line Chiaroscuro Cel",
+      "styleAnchors": [
+        "Lilac Thorn-Line Chiaroscuro Cel",
+        "The Ancient Magus' Bride - Thorn Cottage Enchantment"
+      ],
       "ref": "pack_05/SP05-247.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1305,13 +1353,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-247 thorn cottage enchantment the ancient magus' bride - thorn cottage enchantment 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-247 lilac thorn-line chiaroscuro cel the ancient magus' bride - thorn cottage enchantment 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-256",
-      "name": "Shrine-Well Sengoku Pursuit",
-      "sourceName": "Inuyasha - Shrine-Well Sengoku Pursuit",
-      "styleAnchors": ["Inuyasha - Shrine-Well Sengoku Pursuit"],
+      "name": "Vermilion Indigo Tapered-Ink Cel",
+      "styleAnchors": [
+        "Vermilion Indigo Tapered-Ink Cel",
+        "Inuyasha - Shrine-Well Sengoku Pursuit"
+      ],
       "ref": "pack_05/SP05-256.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1319,7 +1369,7 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-256 shrine-well sengoku pursuit inuyasha - shrine-well sengoku pursuit 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-256 vermilion indigo tapered-ink cel inuyasha - shrine-well sengoku pursuit 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-278",

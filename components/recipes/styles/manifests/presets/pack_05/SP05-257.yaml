@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-257
 packId: pack_05
-name: Tsukimichi - Moonlit Merchant Wanderer
+name: Slate Twilight Single-Violet Cel
 styleAnchors:
-  - 'Tsukimichi - Moonlit Merchant Wanderer'
-displayName: 'Moonlit Merchant Wanderer'
+  - Slate Twilight Single-Violet Cel
+  - Tsukimichi - Moonlit Merchant Wanderer
+displayName: Slate Twilight Single-Violet Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,34 +16,26 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Spare cel illustration with cool twilight contrast, one restrained violet accent, and economical
-    dry contours.
-  subject_treatment: >-
-    Retain the requested subject and gesture; use minimal lines and composed shape breaks without
-    adding a token or prop.
-  color_and_tone: >-
-    Cool slate, muted blue, and a single violet accent create quiet distinction; preserve specified
-    colors.
-  lighting_and_shadow: >-
-    Low, even light and one narrow highlight keep the image calm and sharply focused.
-  texture_and_material: >-
-    Dry line accents, smooth restrained fills, and subdued surface texture support a deliberate
-    finish.
-  camera_and_composition: >-
-    Keep the supplied composition; use balanced negative space and composed horizontal rhythm
-    without changing location.
-  atmosphere_and_mood: >-
-    Wry, poised, and quiet, with tone set by the subject.
-  rendering_and_quality: >-
-    Keep detail sparse, focal edges exact, and accents few enough to retain their weight.
-  key_features: >-
-    Restrained violet, dry precision, composed spacing, and cool shadow values define its
-    understated character.
-  creative_brief: >-
-    Use the economical line, cool values, and single accent on the requested scene without adding
-    trade, travel, or moon imagery.
+  aesthetic: 'Spare cool-toned anime cel: dry economical lineart, broad slate flats and exactly one violet accent that carries all the color in the frame.'
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Reduce internal detail to a few decisive lines; the violet accent lands on something already in the prompt, never on an added token or prop.
+  color_and_tone: Slate, cold blue-grey and ink navy desaturated to near monochrome, broken by a single saturated violet shape.
+  lighting_and_shadow: Low even moon-cool ambient light with one narrow white highlight on the focal edge; shadows are one flat darker slate.
+  texture_and_material: Smooth restrained flats and dry, slightly broken line ends, with no grain and no glow anywhere.
+  camera_and_composition: Keep the requested view; wide horizontal negative space with the focal subject off-center on a strong horizon line.
+  atmosphere_and_mood: Wry, poised and quiet, a composed calm with a hint of irony.
+  rendering_and_quality: Sparse detail, exact focal edges and one accent heavy enough to hold the whole frame.
+  key_features: near-monochrome slate palette; single violet accent; dry economical line; wide horizontal negative space; one narrow highlight
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Slate Twilight Single-Violet Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - multiple accent colors
+  - market stall
+  - glow effects
   - realistic
   - 3d render
   - photo
@@ -70,15 +63,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-257.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, market aisle, merchant stall clutter,
-    readable sign, map, RPG UI, readable magic text, generic isekai wallpaper, fixed canon
-    character, title scene replication, required source-frame look, cosplay, generic anime filter,
-    prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, multiple accent colors, market stall, glow effects, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, market aisle, merchant stall clutter, readable sign, map, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

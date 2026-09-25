@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-244
 packId: pack_05
-name: The Twelve Kingdoms - Imperial Destiny Chronicle
+name: Tall Textile-Rhythm Formal Cel
 styleAnchors:
-  - 'The Twelve Kingdoms - Imperial Destiny Chronicle'
-displayName: 'Imperial Destiny Chronicle'
+  - Tall Textile-Rhythm Formal Cel
+  - The Twelve Kingdoms - Imperial Destiny Chronicle
+displayName: Tall Textile-Rhythm Formal Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,34 +16,26 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Formal cel illustration shaped by tall visual rhythms, textile-inspired repeats, and carefully
-    balanced ornament.
-  subject_treatment: >-
-    Keep the requested subject and gesture; use measured outlines and repeating internal marks
-    without adding ceremonial dress.
-  color_and_tone: >-
-    Muted indigo, parchment, and restrained cinnabar or gold create composed contrast; honor
-    specified colors.
-  lighting_and_shadow: >-
-    Even, deliberate light reveals the main planes; small highlights keep ornamental details clear.
-  texture_and_material: >-
-    Fine repeated strokes and restrained fabric-like texture function as surface treatment, not as a
-    material change.
-  camera_and_composition: >-
-    Preserve the requested framing; use vertical spacing and visual symmetry without adding a court
-    or formal scene.
-  atmosphere_and_mood: >-
-    Solemn and poised, with no imposed ritual or destiny.
-  rendering_and_quality: >-
-    Keep ornament sparse, edge control clean, and detail scale consistent across the image.
-  key_features: >-
-    Tall rhythm, textile-like line repeats, measured symmetry, and composed color give the cel work
-    a formal calm.
-  creative_brief: >-
-    Give the requested content a tall, ornamental visual rhythm and controlled cel finish, without
-    court, costume, or ceremony.
+  aesthetic: Formal anime cel shaped by tall vertical rhythms and textile-like repeating line patterns, ornament balanced as carefully as woven cloth.
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Fine repeating line marks run inside existing clothing and surfaces; do not add ceremonial dress, a court or a throne.
+  color_and_tone: Muted indigo, parchment and restrained cinnabar with small gold notes, composed in a quiet mid key.
+  lighting_and_shadow: Even deliberate light with small precise highlights on ornament and shallow flat shadows.
+  texture_and_material: Fine repeated brocade-like strokes and restrained fabric texture used as surface treatment, not as a material change.
+  camera_and_composition: Keep the requested view; tall vertical spacing and near-symmetry, with tall narrow framing when the prompt leaves it open.
+  atmosphere_and_mood: Solemn and poised, destiny felt as stillness.
+  rendering_and_quality: Sparse, even-scale ornament, clean edges and a consistent detail scale across the image.
+  key_features: tall vertical rhythm; brocade-like repeating line pattern; indigo-parchment-cinnabar palette; near symmetry; precise ornament highlights
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tall Textile-Rhythm Formal Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - throne room
+  - photographed fabric
+  - product shot
   - realistic
   - 3d render
   - photo
@@ -70,15 +63,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-244.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, imperial costume copy, throne-room
-    lock, weapon, readable insignia, RPG UI, readable magic text, generic isekai wallpaper, fixed
-    canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, throne room, photographed fabric, product shot, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, imperial costume copy, throne-room lock, weapon, readable insignia, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

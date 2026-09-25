@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-251
 packId: pack_05
-name: Saga of Tanya the Evil - Aerial War Mage Doctrine
+name: Khaki Compressed-Diagonal Cel
 styleAnchors:
-  - 'Saga of Tanya the Evil - Aerial War Mage Doctrine'
-displayName: 'Aerial War Mage Doctrine'
+  - Khaki Compressed-Diagonal Cel
+  - Saga of Tanya the Evil - Aerial War Mage Doctrine
+displayName: Khaki Compressed-Diagonal Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,34 +16,26 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Compact, forceful anime cel drawing with swept diagonals, crisp silhouettes, and clipped
-    high-key contrast.
-  subject_treatment: >-
-    Preserve the requested pose and action; use compressed shapes and directional contours only
-    where motion is present.
-  color_and_tone: >-
-    Muted khaki, deep blue-gray, and clean pale highlights form a disciplined range; respect
-    supplied colors.
-  lighting_and_shadow: >-
-    Hard reflected light and short shadow breaks keep compact forms sharp and readable.
-  texture_and_material: >-
-    Crisp filled shapes, restrained metallic glints, and a trace of painted grain keep the finish
-    controlled.
-  camera_and_composition: >-
-    Hold the requested composition; use directional overlap and clear silhouette grouping without
-    adding aircraft or gear.
-  atmosphere_and_mood: >-
-    Tense and precise, with the emotional register set by the prompt.
-  rendering_and_quality: >-
-    Keep details economical, contours stable, and contrast strong without overloading the image.
-  key_features: >-
-    Swept direction, compact form, crisp separation, and pale high-key accents give this cel work
-    its taut energy.
-  creative_brief: >-
-    Restyle the requested content with compact silhouettes, fast diagonal drawing, and clipped
-    contrast; add no military, flight, or spell scene.
+  aesthetic: Compact, forceful military-fantasy anime cel with swept diagonals, crisp silhouettes and clipped high-key contrast, drawn like a newsreel still.
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Compress shapes where motion is present; add no aircraft, gear, flags or insignia.
+  color_and_tone: Muted khaki, field grey and deep blue-grey with clean pale highlights, a disciplined limited range.
+  lighting_and_shadow: Hard overcast-sky light with short shadow breaks and a bright sky behind dark compact silhouettes.
+  texture_and_material: Crisp filled shapes, restrained metallic glints and a trace of painted grain.
+  camera_and_composition: Keep the requested view; steep diagonal horizons and directional overlap group the silhouettes.
+  atmosphere_and_mood: Tense, disciplined and precise, a held breath before orders.
+  rendering_and_quality: Economical detail, stable contours and strong contrast without overloading the image.
+  key_features: swept diagonals; khaki and field grey; clipped high-key sky; compact silhouettes; newsreel-still stillness
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Khaki Compressed-Diagonal Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - military insignia
+  - flags
+  - aircraft
   - realistic
   - 3d render
   - photo
@@ -65,14 +58,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-251.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed
-    canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, military insignia, flags, aircraft, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-254
 packId: pack_05
-name: Fushigi Yuugi - Celestial Maiden Portal Epic
+name: Lavender Halo-Arc Shoujo Cel
 styleAnchors:
-  - 'Fushigi Yuugi - Celestial Maiden Portal Epic'
-displayName: 'Celestial Maiden Portal Epic'
+  - Lavender Halo-Arc Shoujo Cel
+  - Fushigi Yuugi - Celestial Maiden Portal Epic
+displayName: Lavender Halo-Arc Shoujo Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,33 +16,26 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Romantic cel illustration with ornamental arcs, halo-like value rings, and carefully spaced
-    decorative linework.
-  subject_treatment: >-
-    Keep the requested subject and action; let arc-shaped accents follow existing contours without
-    adding symbols or portals.
-  color_and_tone: >-
-    Lavender, deep blue, and selective warm red create clean melodramatic contrast; honor named
-    colors in the prompt.
-  lighting_and_shadow: >-
-    Soft rim light and luminous ringlike value accents remain graphic and restrained.
-  texture_and_material: >-
-    Smooth cel fills and fine constellar-style marks add polish without changing depicted materials.
-  camera_and_composition: >-
-    Preserve the requested layout; use curved spacing and focal emphasis without opening a threshold
-    or new scene.
-  atmosphere_and_mood: >-
-    Tender and dramatic, with its intensity guided by the prompt.
-  rendering_and_quality: >-
-    Maintain clear silhouettes, fine ornament, and controlled bloom around existing focal forms.
-  key_features: >-
-    Ornamental arcs, lavender light, clean melodramatic contrast, and restrained circular glow
-    create a distinct finish.
-  creative_brief: >-
-    Apply the romantic color and ornamental line language to the requested content; add no portal,
-    celestial setting, or new symbol.
+  aesthetic: 'Early-1990s shoujo fantasy cel: tall slender figures, large sparkling eyes, flowing hair and ornamental halo-like value rings arcing behind focal forms.'
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Arcs follow existing contours; add no portals, sigils or school uniforms.
+  color_and_tone: Lavender, deep blue and selective warm red in clean melodramatic contrast.
+  lighting_and_shadow: Soft rim light and luminous ring-shaped value accents that stay graphic rather than glowing.
+  texture_and_material: Smooth cel fills, star-shaped sparkle marks and fine flower-like screen accents.
+  camera_and_composition: Keep the requested view; curved spacing and arcs frame the focal emphasis.
+  atmosphere_and_mood: Tender and melodramatic, a heartbeat before a confession.
+  rendering_and_quality: Clear silhouettes, fine ornament and controlled bloom around the focal forms.
+  key_features: halo-like value rings; lavender and deep blue; large sparkling eyes; star sparkle marks; flowing hair arcs
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lavender Halo-Arc Shoujo Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - school uniform
+  - readable sigil
+  - shrine hallway
   - realistic
   - 3d render
   - photo
@@ -55,9 +49,6 @@ avoidRules:
   - signature
   - named franchise likeness
   - couple copy
-  - school uniform
-  - readable sigil
-  - shrine hallway
   - tarot/card prop
   - RPG UI
   - readable magic text
@@ -70,15 +61,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-254.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, couple copy, school uniform, readable
-    sigil, shrine hallway, tarot/card prop, RPG UI, readable magic text, generic isekai wallpaper,
-    fixed canon character, title scene replication, required source-frame look, cosplay, generic
-    anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, school uniform, readable sigil, shrine hallway, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, couple copy, tarot/card prop, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

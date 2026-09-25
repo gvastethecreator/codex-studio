@@ -3,10 +3,10 @@ id: SP05-241
 packId: pack_05
 name: Systemic Cooperation Grid Style
 styleAnchors:
-  - 'Systemic Cooperation Grid Style'
-displayName: 'Systemic Cooperation Grid'
+  - Systemic Cooperation Grid Style
+displayName: Systemic Cooperation Grid
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,34 +15,26 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Precision cel illustration with modular alignment, repeated intervals, and a clear hierarchy of
-    graphic accents.
-  subject_treatment: >-
-    Keep the requested subject and action; use measured internal spacing and grouped contour marks
-    rather than adding symbols.
-  color_and_tone: >-
-    Indigo, muted gold, and small cyan notes create crisp contrast, subject to the requested
-    palette.
-  lighting_and_shadow: >-
-    Bright accents sit cleanly against broader cool shadows, with no implied interface or light
-    source.
-  texture_and_material: >-
-    Smooth fills and exact line breaks create a precise finish; retain each depicted material.
-  camera_and_composition: >-
-    Preserve the requested composition; use alignment and spacing as drawing rhythm, never as a
-    literal map.
-  atmosphere_and_mood: >-
-    Orderly and collaborative in feeling, while the requested subject sets the actual story.
-  rendering_and_quality: >-
-    Keep graphic marks sparse and balanced, with stable forms and clear focal priority.
-  key_features: >-
-    Modular spacing, crisp groupings, measured line breaks, and restrained luminous accents give the
-    drawing systemic order.
-  creative_brief: >-
-    Use precise intervals and grouped visual emphasis to restyle the requested content; add no
-    board, map, route, or interface.
+  aesthetic: 'Precision anime cel organized on an invisible modular grid: forms repeat at measured intervals and align to shared horizontals and verticals.'
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Repeated elements already in the prompt line up at even intervals; never add a map, board, chart or symbols.
+  color_and_tone: Indigo, muted gold and small cyan notes over clean neutral greys, with crisp mid-key contrast.
+  lighting_and_shadow: Even top light producing identical short shadows under every repeated form, with no implied screen glow.
+  texture_and_material: Smooth flat fills and exact hard-edged line breaks, with no painterly texture anywhere.
+  camera_and_composition: Keep the requested view; frontal or high orthogonal angles are preferred where alignment and rhythm read clearly.
+  atmosphere_and_mood: Orderly and collaborative, many parts moving as one.
+  rendering_and_quality: Sparse balanced graphic marks, stable forms and a clear focal priority inside the repetition.
+  key_features: invisible modular grid; repeated forms at even intervals; identical short shadows; indigo-gold-cyan palette; hard-edged flats
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Systemic Cooperation Grid Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - map table
+  - board game
+  - group huddled over a table
   - realistic
   - 3d render
   - photo
@@ -65,14 +57,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-241.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed
-    canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, map table, board game, group huddled over a table, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

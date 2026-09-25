@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-098
 packId: pack_05
-name: Slime Isekai – Monster-Nation Bright Fantasy
+name: Rounded Sky-Blue Friendly Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,34 +12,26 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Bright cel illustration with rounded silhouettes, simplified volume, and a clean, cooperative
-    balance of warm and cool color.
-  subject_treatment: >-
-    Retain the requested forms and action; round transitions and group details into readable,
-    friendly shapes.
-  color_and_tone: >-
-    Clear blue accents pair with warm cream and softened earth tones; adapt the mix to specified
-    colors.
-  lighting_and_shadow: >-
-    Even diffuse light keeps forms open, with soft highlights that gently describe rounded volume.
-  texture_and_material: >-
-    Smooth cel shading and lightly satin highlights simplify surfaces while preserving their
-    original material identity.
-  camera_and_composition: >-
-    Respect the requested framing; use repeated rounded shapes and clear spacing to keep the focal
-    area uncluttered.
-  atmosphere_and_mood: >-
-    Optimistic and generous in tone, without requiring a group or civic scene.
-  rendering_and_quality: >-
-    Use stable silhouettes, soft shadow edges, and clean color blocking with little surface noise.
-  key_features: >-
-    Rounded form, clear blue accents, warm-cool harmony, and uncluttered cel shading give the image
-    an easy brightness.
-  creative_brief: >-
-    Keep the requested subject, action, and location; lend them rounded forms and cooperative color
-    balance without adding a fantasy community.
+  aesthetic: Bright friendly anime cel with rounded silhouettes, simplified volumes and clean sky-blue accents set against warm cream.
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Round off corners and group small details into friendly shapes; do not add a mascot creature, a crowd or banners.
+  color_and_tone: Clear sky blue, warm cream, soft grass green and sandy earth, saturated but gentle and evenly balanced.
+  lighting_and_shadow: Even diffuse daylight with soft round highlights describing volume and pale blue shadows.
+  texture_and_material: Smooth cel shading and satin highlights with almost no surface noise or grain.
+  camera_and_composition: Keep the requested view; uncluttered spacing with repeated rounded shapes leading to the focal point.
+  atmosphere_and_mood: Optimistic, generous and easygoing, a world where everyone gets along.
+  rendering_and_quality: Stable silhouettes, soft shadow edges and clean color blocking with every corner rounded.
+  key_features: rounded silhouettes; sky-blue accents on cream; soft round highlights; pale blue shadows; uncluttered color blocks
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rounded Sky-Blue Friendly Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - slime mascot
+  - kingdom crowd
+  - sharp angular shapes
   - realistic
   - 3d render
   - photo
@@ -53,7 +45,6 @@ avoidRules:
   - signature
   - required slime creature
   - banners with symbols
-  - kingdom crowd
   - named ruler likeness
   - franchise species cue
   - RPG UI
@@ -67,15 +58,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-098.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, required slime creature, banners with symbols, kingdom crowd,
-    named ruler likeness, franchise species cue, RPG UI, readable magic text, generic isekai
-    wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, slime mascot, kingdom crowd, sharp angular shapes, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, required slime creature, banners with symbols, named ruler likeness, franchise species cue, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -89,3 +81,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Rounded Sky-Blue Friendly Cel
+styleAnchors:
+  - Rounded Sky-Blue Friendly Cel
+  - Slime Isekai – Monster-Nation Bright Fantasy

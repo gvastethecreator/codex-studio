@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-096
 packId: pack_05
-name: No Game No Life – Hyper-Saturated Strategy Fantasy
+name: Hyper-Saturated Impossible Perspective Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,35 +12,27 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    High-saturation cel illustration built from candy-bright color planes, angular rhythms, and
-    deliberately unstable perspective.
-  subject_treatment: >-
-    Keep subjects recognizable; sharpen their edges into clear geometric masses without adding game
-    pieces or symbols.
-  color_and_tone: >-
-    Use confident magenta, cyan, and yellow against dark violet values, while preserving any
-    explicit palette request.
-  lighting_and_shadow: >-
-    Hard, clean highlights separate the color planes; emissive edges stay graphic and controlled.
-  texture_and_material: >-
-    Flat opaque color, polished accents, and crisp boundaries make the visual logic feel designed
-    rather than textured.
-  camera_and_composition: >-
-    Retain the requested framing while introducing selective perspective tension and angular
-    overlaps within the existing scene.
-  atmosphere_and_mood: >-
-    Bold, cerebral, and kinetic; let the requested subject determine the mood.
-  rendering_and_quality: >-
-    Maintain sharp silhouettes, clean color separation, and perspective that remains readable
-    despite distortion.
-  key_features: >-
-    Impossible angles, candy-neon contrast, and floating color relationships create a precise,
-    high-energy graphic finish.
-  creative_brief: >-
-    Apply the angular color logic and vivid cel finish to the requested content; do not turn it into
-    an arena, contest, or interface.
+  aesthetic: High-saturation digital anime with candy-neon color planes, chromatic aberration fringes and deliberately impossible, tilted perspective.
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Keep subjects recognizable and fold the perspective around them without adding cards, chess pieces or dice.
+  color_and_tone: Magenta, cyan and yellow on dark violet, oversaturated with rainbow-shifted edges.
+  lighting_and_shadow: Hard clean highlights, emissive graphic edges and colored rather than grey shadows.
+  texture_and_material: Flat opaque color, polished accents and thin chromatic fringing on contours.
+  camera_and_composition: 'Keep the framing but bend the perspective: several vanishing points, floating planes and upside-down elements.'
+  atmosphere_and_mood: Bold, cerebral and kinetic, a world that plays by other rules.
+  rendering_and_quality: Sharp silhouettes that stay readable despite the distortion, with clean color separation.
+  key_features: candy-neon planes; chromatic aberration fringes; multiple vanishing points; colored shadows; floating inverted elements
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hyper-Saturated Impossible Perspective Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - chess pieces
+  - playing cards
+  - dice
+  - game UI
   - realistic
   - 3d render
   - photo
@@ -53,11 +45,8 @@ avoidRules:
   - watermark
   - signature
   - cards
-  - chess pieces
-  - dice
   - numbers
   - readable symbols
-  - game UI
   - sibling character likeness
   - RPG UI
   - readable magic text
@@ -70,15 +59,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-096.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, cards, chess pieces, dice, numbers, readable symbols, game UI,
-    sibling character likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon
-    character, title scene replication, required source-frame look, cosplay, generic anime filter,
-    prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, chess pieces, playing cards, dice, game UI, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, cards, numbers, readable symbols, sibling character likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -92,3 +82,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Hyper-Saturated Impossible Perspective Cel
+styleAnchors:
+  - Hyper-Saturated Impossible Perspective Cel
+  - No Game No Life – Hyper-Saturated Strategy Fantasy

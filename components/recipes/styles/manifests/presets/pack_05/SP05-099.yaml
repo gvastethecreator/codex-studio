@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-099
 packId: pack_05
-name: Shield Hero – Defensive Underdog Fantasy
+name: Worn Bronze Concentric-Line Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,35 +12,25 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Resilient cel illustration organized by concentric contour rhythms, worn surfaces, and a
-    forward-weighted silhouette.
-  subject_treatment: >-
-    Keep the requested pose and action; use nested edge accents and firm contours without
-    introducing a shield or barrier.
-  color_and_tone: >-
-    Aged bronze, stone gray, and a small amber accent build worn contrast; accommodate the requested
-    palette.
-  lighting_and_shadow: >-
-    Directional highlights catch raised edges while deep shadow holds the larger forms together.
-  texture_and_material: >-
-    Scuffed pigment and subdued metallic glints suggest wear as a rendering cue, without changing
-    the depicted material.
-  camera_and_composition: >-
-    Preserve the requested camera; let nested curves and weighty diagonals guide attention within
-    its composition.
-  atmosphere_and_mood: >-
-    Steadfast and hard-earned, with the mood following the subject rather than adding conflict.
-  rendering_and_quality: >-
-    Balance firm edges, textured midtones, and one controlled highlight so each form remains
-    legible.
-  key_features: >-
-    Concentric line rhythm, weathered value contrast, bronze warmth, and restrained edge light carry
-    a sense of resolve.
-  creative_brief: >-
-    Apply the worn, resilient contour and value language to the requested content without adding
-    armor, defense, or combat.
+  aesthetic: 'Gritty TV-anime cel with heavy dark-brown lineart and nested contour echoes: two or three parallel strokes trace each major outline like growth rings.'
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Silhouettes are weighted forward and low with squared shoulders; do not add a shield, barrier, collar or weapon the prompt did not ask for.
+  color_and_tone: Aged bronze, stone grey and earth brown with one small amber accent; a mid-dark key with compressed, never clipped highlights.
+  lighting_and_shadow: Hard low side light catches raised edges in thin bronze rims, while a deep three-tone cel shadow holds the large forms together.
+  texture_and_material: Scuffed dry-brush over the cel fills, chipped-edge highlights and faint scratches read as rendering wear rather than a new material.
+  camera_and_composition: Keep the requested view; a slightly low angle and heavy diagonals push the weight of the subject toward the viewer.
+  atmosphere_and_mood: Steadfast and hard-won, a quiet refusal to fall.
+  rendering_and_quality: Firm outer contours, textured midtones and exactly one controlled specular highlight on each focal form.
+  key_features: nested concentric contour echoes; heavy dark-brown lineart; bronze edge rims; three-tone cel shadow; scuffed dry-brush wear
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Worn Bronze Concentric-Line Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - hero portrait pose
+  - shiny new armor
   - realistic
   - 3d render
   - photo
@@ -69,15 +59,15 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-099.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, required shield, hero portrait, weapon, slave/collar cue,
-    revenge scene, franchise likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed
-    canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, hero portrait pose, shiny new armor, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, required shield, hero portrait, weapon, slave/collar cue, revenge scene, franchise likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -91,3 +81,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Worn Bronze Concentric-Line Cel
+styleAnchors:
+  - Worn Bronze Concentric-Line Cel
+  - Shield Hero – Defensive Underdog Fantasy

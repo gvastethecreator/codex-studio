@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-091
 packId: pack_05
-name: Sword Art Online – Glowing VR Adventure
+name: Cyan Crystal-Facet Glow Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,35 +12,27 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Airy digital cel painting built from crisp crystalline edges, translucent color planes, and soft
-    cyan depth.
-  subject_treatment: >-
-    Keep the requested forms and action; define silhouettes with clean tapered contours, gentle edge
-    bloom, and selective facet highlights.
-  color_and_tone: >-
-    Favor cyan, ice blue, and pearl with a small blush accent, adapting saturation when the prompt
-    supplies a palette.
-  lighting_and_shadow: >-
-    Broad cool ambient light holds the planes together, with crisp refraction-like highlights and
-    restrained bloom.
-  texture_and_material: >-
-    Blend smooth digital gradients with pinpoint glossy marks while preserving the represented
-    material instead of turning it to glass.
-  camera_and_composition: >-
-    Retain the requested framing; suggest depth through clear overlapping planes, open spacing, and
-    calm perspective.
-  atmosphere_and_mood: >-
-    Luminous, tender, and spacious; follow the requested emotional tone.
-  rendering_and_quality: >-
-    Clean cel edges, soft transitions, sharp glints, and controlled glow keep forms legible.
-  key_features: >-
-    Crystalline edge breaks, cyan depth, pearl highlights, and gentle romantic spacing over polished
-    cel forms.
-  creative_brief: >-
-    Keep the requested subject, action, and place intact; restyle them with translucent planes,
-    crystalline highlights, cyan depth, and quiet romantic softness.
+  aesthetic: 'Airy digital anime cel with crystalline edge breaks: forms are rimmed by thin faceted highlights and layered with translucent cyan planes of light.'
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Surfaces keep their real material; the crystal logic lives only in edge highlights and planes of light, never turning objects into glass.
+  color_and_tone: Cyan, ice blue and pearl white with a small blush-pink accent; high-key, cool and clean throughout.
+  lighting_and_shadow: Broad cool ambient light, crisp refraction-like highlight shards along edges and a restrained cyan bloom.
+  texture_and_material: Smooth digital gradients, pinpoint prismatic glints and faint hexagonal sparkle particles floating in the air.
+  camera_and_composition: Keep the requested view; depth is built from overlapping translucent planes and an open, calm perspective.
+  atmosphere_and_mood: Luminous, tender and spacious, like cold clear morning air.
+  rendering_and_quality: Clean tapered cel edges, soft transitions, sharp glints and controlled glow, with no interface elements anywhere.
+  key_features: faceted crystal edge highlights; translucent cyan planes; pearl-white high key; prismatic pinpoint glints; restrained cyan bloom
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyan Crystal-Facet Glow Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - HUD elements
+  - game menu
+  - everything turned to glass
+  - glass pavilion
   - realistic
   - 3d render
   - photo
@@ -57,7 +49,6 @@ avoidRules:
   - UI panels
   - icons
   - swords
-  - game menu
   - logo
   - character costume copy
   - RPG UI
@@ -70,15 +61,16 @@ avoidRules:
   - generic anime filter
   - prompt-required card
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-091.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named VR franchise likeness, readable HUD, UI panels, icons,
-    swords, game menu, logo, character costume copy, RPG UI, readable magic text, generic isekai
-    wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, HUD elements, game menu, everything turned to glass, glass pavilion, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named VR franchise likeness, readable HUD, UI panels, icons, swords, logo, character costume copy, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -92,3 +84,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Cyan Crystal-Facet Glow Cel
+styleAnchors:
+  - Cyan Crystal-Facet Glow Cel
+  - Sword Art Online – Glowing VR Adventure

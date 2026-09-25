@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-092
 packId: pack_05
-name: Re:Zero – Reset-Loop Dark Fantasy
+name: Violet Echo-Line Gothic Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,36 +12,25 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Ornate dark cel illustration shaped by looping contours, repeated light echoes, and fragile
-    decorative accents.
-  subject_treatment: >-
-    Retain the requested subject and gesture; let fine curling lines echo around existing forms
-    without duplicating them.
-  color_and_tone: >-
-    Violet, slate, and silver organize deep values, with pale echoes kept delicate and any explicit
-    colors respected.
-  lighting_and_shadow: >-
-    Narrow silver rims and faint repeated glints lift shadowed planes without introducing a new
-    light source.
-  texture_and_material: >-
-    Ribbon-fine brush lines, subtle grain, and translucent washes give surfaces a fragile, carefully
-    layered finish.
-  camera_and_composition: >-
-    Hold the requested camera; nested curves and repeated spacing guide the eye without creating a
-    spiral scene.
-  atmosphere_and_mood: >-
-    Subdued and ornate, with unease only when the requested subject calls for it.
-  rendering_and_quality: >-
-    Keep focal contours crisp against softly lost edges, measured grain, and restrained highlight
-    repetition.
-  key_features: >-
-    Violet-silver echo, fine looping linework, ornate contours, and fragile transitions from light
-    into shadow.
-  creative_brief: >-
-    Apply the dark ornamental line and value language to the requested content while leaving its
-    scene, action, and objects unchanged.
+  aesthetic: Ornate dark anime cel in which each focal contour is echoed by fine silver after-image lines, as if the moment had been drawn several times over.
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Echo lines trail existing forms by a small offset and fade out; never duplicate the subject into a second figure.
+  color_and_tone: Deep violet, slate and ink black in a low cold key, with silver and pale lilac reserved for the echoes.
+  lighting_and_shadow: Narrow silver rim light and faint repeated glints along the echo lines while large planes sink into violet shadow.
+  texture_and_material: Ribbon-fine brush lines, translucent layered washes and subtle grain held inside the darks.
+  camera_and_composition: Keep the requested view; nested curves and repeated spacing lead the eye inward toward the focal form.
+  atmosphere_and_mood: Hushed, ornate and uneasy, a moment that feels already lived.
+  rendering_and_quality: Crisp focal contour, softly lost secondary edges and echo lines decreasing in opacity outward.
+  key_features: silver after-image echo lines; violet-slate low key; narrow silver rims; ribbon-fine brush line; fading repetition
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Violet Echo-Line Gothic Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - doubled character
+  - gore
   - realistic
   - 3d render
   - photo
@@ -56,7 +45,6 @@ avoidRules:
   - named character
   - mansion/market location
   - death scene
-  - gore
   - maid/cat-ear costume cue
   - franchise color pairing
   - RPG UI
@@ -70,15 +58,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-092.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named character, mansion/market location, death scene, gore,
-    maid/cat-ear costume cue, franchise color pairing, RPG UI, readable magic text, generic isekai
-    wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, doubled character, gore, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named character, mansion/market location, death scene, maid/cat-ear costume cue, franchise color pairing, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -92,3 +81,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Violet Echo-Line Gothic Cel
+styleAnchors:
+  - Violet Echo-Line Gothic Cel
+  - Re:Zero – Reset-Loop Dark Fantasy

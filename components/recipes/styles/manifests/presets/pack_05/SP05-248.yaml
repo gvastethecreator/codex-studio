@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-248
 packId: pack_05
-name: Delicious in Dungeon - Stove-Top Monster Cuisine
+name: Naturalist Sketchbook Anime Cel
 styleAnchors:
-  - 'Delicious in Dungeon - Stove-Top Monster Cuisine'
-displayName: 'Stove-Top Monster Cuisine'
+  - Naturalist Sketchbook Anime Cel
+  - Delicious in Dungeon - Stove-Top Monster Cuisine
+displayName: Naturalist Sketchbook Anime Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,34 +16,26 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Tactile hand-painted cel work where form reads through small process details, organic textures,
-    and practical clarity.
-  subject_treatment: >-
-    Preserve the requested subject and action; make functional shapes legible through deliberate
-    contour and selective detail.
-  color_and_tone: >-
-    Earthy green, ochre, and warm neutral accents create an organic range, adjusted to the requested
-    palette.
-  lighting_and_shadow: >-
-    Warm reflected light sits close to forms while cooler shadows retain clear separation.
-  texture_and_material: >-
-    Use layered, tactile pigment and carefully varied surface marks without changing what the
-    objects are made of.
-  camera_and_composition: >-
-    Keep the requested camera; organize detail around the focal task without adding a kitchen or
-    meal.
-  atmosphere_and_mood: >-
-    Grounded and companionable, with warmth that does not require company.
-  rendering_and_quality: >-
-    Balance small material detail against broad clean shapes; keep the main action easy to read.
-  key_features: >-
-    Organic texture, practical detail, warm reflected light, and careful process-like staging give
-    this cel work its grounded quality.
-  creative_brief: >-
-    Restyle the requested content with tactile surfaces and clear process-led detail, without
-    introducing ingredients, cooking, or food.
+  aesthetic: "Manga-derived cel painting with a naturalist's eye: fine brown pen lineart describing joints, scales, seams and grain over flat earthy fills with cutaway-diagram clarity."
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Functional structure is spelled out, how a hinge, shell or knot works, with selective detail on the focal object; never add a kitchen, meal or creature carcass.
+  color_and_tone: Earthy moss green, ochre, rust and warm paper neutrals in a mid key, lightly saturated, with small notes of lichen blue.
+  lighting_and_shadow: Even overcast light with a warm reflected bounce under forms and a single cool shadow tone; no dramatic sources.
+  texture_and_material: Pen hatching on shadowed planes, stippled organic surfaces and visible paper tooth under flat watercolor-like fills.
+  camera_and_composition: Keep the requested view; the focal object is centered like a specimen plate with a generous margin and clear overlaps.
+  atmosphere_and_mood: Curious, grounded and companionable, the pleasure of understanding how things work.
+  rendering_and_quality: Crisp pen detail on the focal form and simpler blocks beyond it; every mark explains structure rather than decorating.
+  key_features: fine brown pen lineart; specimen-plate clarity; earthy moss and ochre fills; stippled organic texture; warm reflected bounce
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Naturalist Sketchbook Anime Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - cooking scene
+  - food as default subject
+  - annotations or labels
   - realistic
   - 3d render
   - photo
@@ -72,15 +65,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-248.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, market stall, monster corpse, gore,
-    banquet spread lock, readable recipe, kitchen clutter, RPG UI, readable magic text, generic
-    isekai wallpaper, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, cooking scene, food as default subject, annotations or labels, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, market stall, monster corpse, gore, banquet spread lock, readable recipe, kitchen clutter, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

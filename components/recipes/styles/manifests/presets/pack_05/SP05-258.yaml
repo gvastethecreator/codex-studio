@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-258
 packId: pack_05
-name: Handyman Saitou in Another World - Toolbox Party Quest
+name: Fine-Line Brass Glint Cel
 styleAnchors:
-  - 'Handyman Saitou in Another World - Toolbox Party Quest'
-displayName: 'Toolbox Party Quest'
+  - Fine-Line Brass Glint Cel
+  - Handyman Saitou in Another World - Toolbox Party Quest
+displayName: Fine-Line Brass Glint Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,35 +16,26 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Practical cel drawing with precise small details, grounded proportions, warm metallic glints,
-    and modest scale.
-  subject_treatment: >-
-    Preserve the requested subject and task; use fine working lines to clarify existing structure
-    without adding tools or hands.
-  color_and_tone: >-
-    Warm brass notes and muted earth colors sit against clean neutral values; adapt to supplied
-    colors.
-  lighting_and_shadow: >-
-    Localized reflected highlights pick out small forms while broad shadows remain calm and
-    readable.
-  texture_and_material: >-
-    Fine contour detail, subtle material grain, and small metallic accents preserve the depicted
-    surfaces.
-  camera_and_composition: >-
-    Respect the requested framing; organize detail around its focal task without making the scene a
-    workshop.
-  atmosphere_and_mood: >-
-    Humble and capable, with no required helper or adventure narrative.
-  rendering_and_quality: >-
-    Keep the focal structure crisp and small details useful rather than decorative.
-  key_features: >-
-    Precise working lines, modest scale, warm metal accents, and clear structure convey practical
-    care.
-  creative_brief: >-
-    Give the requested content a careful, functional drawing finish without adding tools, workshops,
-    or a fantasy party.
+  aesthetic: Practical anime cel drawing with hairline mechanical lineart, grounded realistic proportions and small warm brass specular glints on every metal part.
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Screws, joints and seams of the existing object are drawn with care; do not add toolboxes, extra hands or a workshop.
+  color_and_tone: Warm brass, walnut brown and muted olive against clean neutral greys, saturation kept moderate and even.
+  lighting_and_shadow: Soft top light with small localized reflected glints on metal and a calm single-tone cel shadow beneath forms.
+  texture_and_material: Hairline detail on mechanisms, subtle wood grain and tiny brass sparkle points, with flat fills everywhere else.
+  camera_and_composition: Keep the requested view; a slightly elevated three-quarter angle makes the construction of objects easy to read.
+  atmosphere_and_mood: Humble, capable and attentive, the satisfaction of a job done properly.
+  rendering_and_quality: Crisp focal structure and useful rather than decorative detail, with no heavy effects or bloom.
+  key_features: hairline mechanical lineart; brass specular glints; grounded proportions; construction-readable three-quarter angle; calm single-tone shadow
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fine-Line Brass Glint Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - photorealistic hands
+  - product photograph
+  - toolbox pile
   - realistic
   - 3d render
   - photo
@@ -56,7 +48,6 @@ avoidRules:
   - watermark
   - signature
   - named franchise likeness
-  - toolbox pile
   - workshop table lock
   - weapon
   - readable label
@@ -71,15 +62,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-258.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, toolbox pile, workshop table lock,
-    weapon, readable label, RPG UI, readable magic text, generic isekai wallpaper, fixed canon
-    character, title scene replication, required source-frame look, cosplay, generic anime filter,
-    prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, photorealistic hands, product photograph, toolbox pile, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, workshop table lock, weapon, readable label, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

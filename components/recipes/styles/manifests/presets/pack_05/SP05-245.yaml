@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-245
 packId: pack_05
-name: The Vision of Escaflowne - Windblown Tarot Fantasy
+name: Carmine Angular Windswept Cel
 styleAnchors:
-  - 'The Vision of Escaflowne - Windblown Tarot Fantasy'
-displayName: 'Windblown Tarot Fantasy'
+  - Carmine Angular Windswept Cel
+  - The Vision of Escaflowne - Windblown Tarot Fantasy
+displayName: Carmine Angular Windswept Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,34 +16,26 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Dynamic painted cel language with sharp angular shapes, carmine accents, and fast directional
-    linework.
-  subject_treatment: >-
-    Preserve the requested action; let contours follow its existing motion, using sharp turns and
-    tapered strokes.
-  color_and_tone: >-
-    Carmine and warm red marks cut through cool blue-gray values; retain any explicit palette.
-  lighting_and_shadow: >-
-    Directional edge light and crisp shadow breaks strengthen existing movement without creating a
-    new event.
-  texture_and_material: >-
-    Smooth painted fills with narrow dry-brush accents give surfaces energy without changing their
-    material.
-  camera_and_composition: >-
-    Keep the requested camera; use angled overlaps and directional emphasis inside the existing
-    frame.
-  atmosphere_and_mood: >-
-    Emotionally forward and dramatic, with intensity tuned to the prompt.
-  rendering_and_quality: >-
-    Hold silhouettes clear through crisp edges, controlled contrast, and a few tapered marks.
-  key_features: >-
-    Carmine accents, angular contour, slanted spacing, and quick light shifts create a forceful
-    sense of motion.
-  creative_brief: >-
-    Restyle the requested scene through angular cel drawing and carmine motion accents; keep its
-    location and action as specified.
+  aesthetic: 1990s action-romance anime cel with sharp angular features, long tapered strokes and everything, hair, cloth and grass, caught in one hard wind.
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Pointed chins, narrow noses and hair and cloth swept in one direction; motion follows the prompt action and no battle is added.
+  color_and_tone: Carmine red accents slicing through cool blue-grey and slate in high contrast.
+  lighting_and_shadow: Hard directional edge light with crisp shadow breaks under one bright open sky.
+  texture_and_material: Smooth fills with dry-brush wind streaks and tapered hatching along cloth folds.
+  camera_and_composition: Keep the requested view; strong tilted diagonals and overlapping angled shapes carry the motion.
+  atmosphere_and_mood: Emotionally forward and dramatic, longing carried on the wind.
+  rendering_and_quality: Clear silhouettes, crisp edges and few but decisive tapered marks.
+  key_features: carmine accents; angular 1990s features; one-direction wind sweep; long tapered strokes; tilted diagonals
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carmine Angular Windswept Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - tarot card
+  - mecha copy
+  - weapon-first pose
   - realistic
   - 3d render
   - photo
@@ -55,9 +48,6 @@ avoidRules:
   - watermark
   - signature
   - named franchise likeness
-  - tarot card
-  - mecha copy
-  - weapon-first pose
   - readable symbol
   - RPG UI
   - readable magic text
@@ -70,15 +60,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-245.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, tarot card, mecha copy, weapon-first
-    pose, readable symbol, RPG UI, readable magic text, generic isekai wallpaper, fixed canon
-    character, title scene replication, required source-frame look, cosplay, generic anime filter,
-    prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, tarot card, mecha copy, weapon-first pose, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, readable symbol, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

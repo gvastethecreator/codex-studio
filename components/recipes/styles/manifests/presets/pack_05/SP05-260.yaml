@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-260
 packId: pack_05
-name: Princess Connect! Re:Dive - Banquet Quest Pastel
+name: Candy Pastel Bloom Cel
 styleAnchors:
-  - 'Princess Connect! Re:Dive - Banquet Quest Pastel'
-displayName: 'Banquet Quest Pastel'
+  - Candy Pastel Bloom Cel
+  - Princess Connect! Re:Dive - Banquet Quest Pastel
+displayName: Candy Pastel Bloom Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,33 +16,26 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Pastel cel illustration with candy-clean color, crisp soft-edged silhouettes, and smooth,
-    luminous highlights.
-  subject_treatment: >-
-    Preserve the requested forms and gesture; keep outlines clear while softening internal
-    transitions.
-  color_and_tone: >-
-    Mint, blush, lilac, and buttery cream create a bright pastel range, yielding to requested
-    colors.
-  lighting_and_shadow: >-
-    Broad, clean light and gentle bloom keep color vivid without adding a banquet or group scene.
-  texture_and_material: >-
-    Smooth cel fills, satin-like glints, and minimal grain maintain a polished, airy finish.
-  camera_and_composition: >-
-    Keep the requested framing; balance broad color areas with clear spacing and readable shape
-    groups.
-  atmosphere_and_mood: >-
-    Joyful and abundant in color, but responsive to the prompt's actual mood.
-  rendering_and_quality: >-
-    Maintain bright color separation, clean contours, and soft highlights without flattening form.
-  key_features: >-
-    Candy-clean pastels, polished light, simple contours, and soft color abundance give this finish
-    its distinct brightness.
-  creative_brief: >-
-    Apply the bright pastel cel finish to the requested content without adding companions, food, or
-    a celebratory scene.
+  aesthetic: 'Polished mobile-game splash-art cel in candy pastels: crisp soft colored lineart, glossy two-tone shading and a luminous bloom pass over highlights.'
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Figures get large bright eyes, glossy hair highlights and clean costume shapes; do not add a banquet, crowd or idol lineup.
+  color_and_tone: Mint, blush pink, lilac and buttery cream with white-hot highlights, bright and high-key, shadows tinted lavender instead of grey.
+  lighting_and_shadow: Broad frontal light with a soft bloom halo around highlights and small sparkles on glossy edges.
+  texture_and_material: Smooth cel fills, satin gloss bands on hair and fabric and floating petal-like light specks.
+  camera_and_composition: Keep the requested view; a centered subject with airy spacing and a soft pastel gradient behind it.
+  atmosphere_and_mood: Joyful, sweet and abundant, festive without needing a party.
+  rendering_and_quality: Colored lineart instead of black, clean color separation and a controlled bloom that never washes out form.
+  key_features: candy pastel palette; colored lineart; lavender-tinted shadows; satin gloss bands; soft bloom halo
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Candy Pastel Bloom Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - dark gritty palette
+  - black outlines
+  - banquet table
   - realistic
   - 3d render
   - photo
@@ -69,15 +63,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-260.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, banquet-table lock, food spread as
-    only subject, idol group pose, readable sign, RPG UI, readable magic text, generic isekai
-    wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, dark gritty palette, black outlines, banquet table, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, banquet-table lock, food spread as only subject, idol group pose, readable sign, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

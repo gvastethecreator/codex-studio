@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-259
 packId: pack_05
-name: Ranking of Kings - Storybook Crown Courage
+name: Picture-Book Crayon Line Anime
 styleAnchors:
-  - 'Ranking of Kings - Storybook Crown Courage'
-displayName: 'Storybook Crown Courage'
+  - Picture-Book Crayon Line Anime
+  - Ranking of Kings - Storybook Crown Courage
+displayName: Picture-Book Crayon Line Anime
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,34 +16,25 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Fable-like cel painting with simplified clear forms, warm emotional color, and soft, vulnerable
-    silhouettes.
-  subject_treatment: >-
-    Keep the requested subject and action; use rounded forms and spare contours without changing its
-    age or identity.
-  color_and_tone: >-
-    Warm ochre, soft coral, and gentle blue-green shadows create human warmth; respect specified
-    colors.
-  lighting_and_shadow: >-
-    Soft broad light and gentle shadow keep the forms open, with no heroic spotlight.
-  texture_and_material: >-
-    Use smooth painted fills, faint pigment texture, and clean value grouping for an approachable
-    finish.
-  camera_and_composition: >-
-    Keep the original composition; clarify focal scale and spacing through simple forms rather than
-    a storybook scene.
-  atmosphere_and_mood: >-
-    Tender and quietly brave, while the prompt determines what is happening.
-  rendering_and_quality: >-
-    Use simple silhouettes and restrained detail; keep the softness without losing structure.
-  key_features: >-
-    Clear fable shapes, soft scale, warm value grouping, and vulnerable contour create an earnest,
-    readable image.
-  creative_brief: >-
-    Restyle the requested subject through simple fable-like shapes and warm cel color without adding
-    a crown, royal setting, or quest.
+  aesthetic: 'Fable-like anime drawn as a picture book: wobbly colored-pencil lineart, flat crayon-textured fills and simplified rounded shapes with small dot eyes.'
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Figures simplify to soft rounded silhouettes with tiny dot features while keeping their age and identity; do not add crowns or castles.
+  color_and_tone: Warm ochre, soft coral, cream and gentle blue-green shadows at mid saturation, with paper white showing through the color.
+  lighting_and_shadow: 'Flat soft light and minimal shading: one pale shadow shape under each form instead of modeled volume.'
+  texture_and_material: Visible waxy crayon strokes following the form, colored-pencil hatching and cream paper tooth between strokes.
+  camera_and_composition: Keep the requested view; flattened picture-book staging with clear scale contrast and plenty of plain space.
+  atmosphere_and_mood: Tender and quietly brave, earnest as a bedtime story.
+  rendering_and_quality: Simple silhouettes, uneven hand-drawn line weight and deliberate gaps in the coloring, never polished digital gloss.
+  key_features: wobbly colored-pencil line; waxy crayon fills; dot eyes and rounded bodies; flat picture-book staging; paper tooth showing
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Picture-Book Crayon Line Anime as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - glossy digital shading
+  - detailed sparkling anime eyes
   - realistic
   - 3d render
   - photo
@@ -70,15 +62,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-259.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, child-copy design, castle hallway,
-    royal portrait, readable emblem, RPG UI, readable magic text, generic isekai wallpaper, fixed
-    canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, glossy digital shading, detailed sparkling anime eyes, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, child-copy design, castle hallway, royal portrait, readable emblem, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

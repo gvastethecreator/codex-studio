@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-252
 packId: pack_05
-name: Campfire Cooking in Another World - Merchant Road Stew
+name: Amber Dusk Rounded Cel
 styleAnchors:
-  - 'Campfire Cooking in Another World - Merchant Road Stew'
-displayName: 'Merchant Road Stew'
+  - Amber Dusk Rounded Cel
+  - Campfire Cooking in Another World - Merchant Road Stew
+displayName: Amber Dusk Rounded Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,35 +16,26 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Softly glowing cel painting with rounded contours, blended amber light, and a calm warm-to-cool
-    balance.
-  subject_treatment: >-
-    Keep the requested subject and gesture; soften transitions and use rounded shape rhythm without
-    adding companions or food.
-  color_and_tone: >-
-    Amber, pale cream, and twilight blue create welcoming contrast; adapt the palette when the
-    prompt specifies colors.
-  lighting_and_shadow: >-
-    Gentle warm highlights dissolve into cooler shadows, with atmospheric softness contained around
-    existing forms.
-  texture_and_material: >-
-    Smooth washes, faint grain, and diffused highlights give a cozy finish while preserving
-    represented materials.
-  camera_and_composition: >-
-    Respect the original viewpoint; use relaxed spacing and broad value flow without introducing an
-    outdoor scene.
-  atmosphere_and_mood: >-
-    Comforting and generous in tone, without requiring hospitality or a gathering.
-  rendering_and_quality: >-
-    Retain clear focal edges inside the soft light; keep gradients smooth and restrained.
-  key_features: >-
-    Amber glow, rounded contours, twilight blue, and soft transitions create a calm, welcoming cel
-    atmosphere.
-  creative_brief: >-
-    Use warm atmospheric light and gentle cel contours on the requested content without adding a
-    meal, camp, or travel scene.
+  aesthetic: Cozy TV-anime cel with soft rounded lineart, a blended amber glow and airbrushed twilight gradients, every corner of every shape softened.
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Faces and bodies get soft rounded proportions and gentle expressions; do not add food, companions or a campfire the prompt did not name.
+  color_and_tone: Amber, honey and cream in lit areas against twilight blue and dusty violet shadow, a warm-cool split of roughly sixty to forty.
+  lighting_and_shadow: A low warm key wraps around forms from one side and falls off in a soft airbrushed gradient into cool ambient shadow.
+  texture_and_material: Smooth airbrushed gradients, faint paper grain and a gentle diffusion glow laid over the highlights.
+  camera_and_composition: Keep the requested view; relaxed eye-level spacing with a soft vignette pulling attention toward the warm center.
+  atmosphere_and_mood: Comforting, generous and sleepy, the calm at the end of a long day.
+  rendering_and_quality: Rounded clean contours, gentle two-tone shading and a light diffusion filter, with focal edges still readable inside the glow.
+  key_features: rounded soft lineart; amber-to-twilight color split; airbrushed glow falloff; light diffusion filter; cream highlights
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Amber Dusk Rounded Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - campfire cooking pot
+  - banquet table
+  - hard black shadows
   - realistic
   - 3d render
   - photo
@@ -71,15 +63,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-252.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, market corridor, tavern clutter,
-    readable sign, banquet table lock, RPG UI, readable magic text, generic isekai wallpaper, fixed
-    canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, campfire cooking pot, banquet table, hard black shadows, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, market corridor, tavern clutter, readable sign, banquet table lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

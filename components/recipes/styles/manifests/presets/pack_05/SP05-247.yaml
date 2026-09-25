@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-247
 packId: pack_05
-name: The Ancient Magus' Bride - Thorn Cottage Enchantment
+name: Lilac Thorn-Line Chiaroscuro Cel
 styleAnchors:
-  - "The Ancient Magus' Bride - Thorn Cottage Enchantment"
-displayName: 'Thorn Cottage Enchantment'
+  - Lilac Thorn-Line Chiaroscuro Cel
+  - The Ancient Magus' Bride - Thorn Cottage Enchantment
+displayName: Lilac Thorn-Line Chiaroscuro Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,35 +16,25 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Luminous botanical cel language with intricate branching contours, lilac highlights, and
-    deep-to-soft value transitions.
-  subject_treatment: >-
-    Keep the requested subject and action; fine branching strokes may echo existing contours but
-    must not add plants.
-  color_and_tone: >-
-    Cool lilac and muted greens sit against warm cream and deep brown; adapt them to specified
-    colors.
-  lighting_and_shadow: >-
-    Small warm highlights emerge from cool shadow, keeping the light soft and the focal edges clear.
-  texture_and_material: >-
-    Fine line detail, delicate grain, and soft painted color build richness without changing
-    depicted materials.
-  camera_and_composition: >-
-    Respect the requested framing; use layered depth and edge contrast without adding a cottage or
-    garden.
-  atmosphere_and_mood: >-
-    Romantic and quietly uncanny, while the requested content determines the actual mood.
-  rendering_and_quality: >-
-    Contrast detailed contours with softly painted distance; maintain precise focal form and
-    restrained glow.
-  key_features: >-
-    Branching line rhythms, lilac glints, deep framing values, and gentle painted depth carry the
-    signature.
-  creative_brief: >-
-    Apply the detailed, luminous cel treatment to the requested subject and setting without adding a
-    cottage, spell, or botanical object.
+  aesthetic: 'Luminous botanical anime cel in chiaroscuro: intricate thorny branching contours, lilac highlights and deep brown darkness framing a lit center.'
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Fine branching strokes may echo existing contours but must not add plants, a cottage or a garden.
+  color_and_tone: Cool lilac and muted greens against warm cream and deep umber, most of the frame in shadow.
+  lighting_and_shadow: Small warm highlights emerging from cool deep shadow, a soft pool of light around the focal edges.
+  texture_and_material: Fine thorn-like line detail, delicate grain and soft painted color layered in the darks.
+  camera_and_composition: Keep the requested view; dark branching framing values close in around a lit center.
+  atmosphere_and_mood: Romantic and quietly uncanny, beauty with thorns.
+  rendering_and_quality: Detailed contours against softly painted distance, precise focal form and restrained glow.
+  key_features: thorny branching contours; lilac glints; umber chiaroscuro framing; lit center; delicate grain
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lilac Thorn-Line Chiaroscuro Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - cottage garden default
+  - flower wall
   - realistic
   - 3d render
   - photo
@@ -66,14 +57,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-247.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed
-    canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, cottage garden default, flower wall, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

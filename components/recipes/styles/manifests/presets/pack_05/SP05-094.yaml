@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-094
 packId: pack_05
-name: Konosuba – Party-Quest Comedy
+name: Springy Comic-Timing Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,34 +12,26 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Playful cel drawing with elastic contours, punchy shape breaks, and an anticlimactic
-    burst-and-pause rhythm.
-  subject_treatment: >-
-    Keep the requested action intact; use springy line accents and compressed-to-open shapes only
-    around motion already present.
-  color_and_tone: >-
-    Cheerful yellow, coral, and aqua accents pop against clear midtones, while yielding to any
-    specified palette.
-  lighting_and_shadow: >-
-    Use bright local highlights and quick value changes for lively emphasis, not a new burst or
-    event.
-  texture_and_material: >-
-    Favor smooth cel fills, brisk brush flicks, and crisp broken edges without turning surfaces into
-    props.
-  camera_and_composition: >-
-    Preserve framing; place visual emphasis in uneven intervals and offbeat diagonals around the
-    existing focal point.
-  atmosphere_and_mood: >-
-    Light, dry, and comic in timing, but let the prompt set the actual emotional register.
-  rendering_and_quality: >-
-    Keep forms simple and readable, with sharp accents, clean flats, and no excess effects.
-  key_features: >-
-    Springy contour, cheerful accents, clipped emphasis, and a quick pause after visual impact.
-  creative_brief: >-
-    Restyle the requested scene with lively cel contours and playful color timing; do not invent a
-    gag, action, character, or prop.
+  aesthetic: Comedy TV-anime cel with elastic lineart, exaggerated deadpan faces and punchy flat shapes caught on the beat just after the gag lands.
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Exaggerate faces and poses, blank stares, sweat drops and flailing limbs, only around action already in the prompt; do not add a party or tavern.
+  color_and_tone: Cheerful yellow, coral and aqua flats over clean mid-values; bright, simple and low in shadow density.
+  lighting_and_shadow: Flat bright light with one hard cel shadow tier and quick value pops placed for emphasis.
+  texture_and_material: Smooth flat fills, brisk brush flicks, speed marks and simple symbol effects drawn as shapes, never as text.
+  camera_and_composition: Keep the requested view; an off-center focal point and slightly tilted framing give comic imbalance.
+  atmosphere_and_mood: Light, dry and comic, a beat of awkward silence.
+  rendering_and_quality: Simple readable forms, sharp accents and springy line variation, with no excess effects.
+  key_features: elastic springy lineart; deadpan exaggerated faces; yellow-coral-aqua flats; sweat-drop symbol shapes; post-gag pause timing
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Springy Comic-Timing Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - lewd gag
+  - speech bubbles
+  - tavern
   - realistic
   - 3d render
   - photo
@@ -52,9 +44,7 @@ avoidRules:
   - watermark
   - signature
   - fixed group
-  - tavern
   - readable sign
-  - lewd gag
   - canon costume
   - franchise party likeness
   - RPG UI
@@ -68,15 +58,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-094.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, fixed group, tavern, readable sign, lewd gag, canon costume,
-    franchise party likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon
-    character, title scene replication, required source-frame look, cosplay, generic anime filter,
-    prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, lewd gag, speech bubbles, tavern, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, fixed group, readable sign, canon costume, franchise party likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -90,3 +81,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Springy Comic-Timing Cel
+styleAnchors:
+  - Springy Comic-Timing Cel
+  - Konosuba – Party-Quest Comedy

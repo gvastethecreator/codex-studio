@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-250
 packId: pack_05
-name: The Faraway Paladin - Quiet Temple Quest
+name: Grounded Matte Geometry Cel
 styleAnchors:
-  - 'The Faraway Paladin - Quiet Temple Quest'
-displayName: 'Quiet Temple Quest'
+  - Grounded Matte Geometry Cel
+  - The Faraway Paladin - Quiet Temple Quest
+displayName: Grounded Matte Geometry Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,34 +16,27 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Quiet, icon-like cel painting with grounded geometry, broad gentle light, and restrained contour
-    ornament.
-  subject_treatment: >-
-    Retain the requested subject and pose; simplify secondary detail while keeping its defining
-    structure.
-  color_and_tone: >-
-    Natural earth colors, pale gold, and muted blue-gray keep contrast grounded; defer to specified
-    colors.
-  lighting_and_shadow: >-
-    Broad soft light reveals form without dramatic rays, halos, or a new source.
-  texture_and_material: >-
-    Use matte painted planes, fine grain, and clean edge transitions; preserve the original material
-    cues.
-  camera_and_composition: >-
-    Keep the requested framing; let simple geometric balance steady the composition without adding
-    architecture.
-  atmosphere_and_mood: >-
-    Calm and ethical in tone, with no imposed religion or solemn event.
-  rendering_and_quality: >-
-    Hold clean silhouettes, gentle shadows, and a modest amount of detail.
-  key_features: >-
-    Grounded geometry, soft vow-like light, spare contours, and natural color make the image quietly
-    composed.
-  creative_brief: >-
-    Apply the understated cel light and grounded shapes to the requested content without adding a
-    temple, vow, or quest.
+  aesthetic: Quiet anime cel with matte painted planes organized by simple geometry, squares, triangles and verticals, under broad gentle light.
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Simplify secondary detail and let the subject settle into stable geometric shapes; add no religion, halos or temples.
+  color_and_tone: Natural earth tones, pale gold and muted blue-grey, matte and low in saturation.
+  lighting_and_shadow: Broad soft morning light with no rays or halos and a single soft shadow tier.
+  texture_and_material: Matte gouache-like planes, fine grain and clean transitions between edges.
+  camera_and_composition: Keep the requested view; centered symmetrical balance and steady horizontals.
+  atmosphere_and_mood: Calm, ethical and steady, a promise quietly kept.
+  rendering_and_quality: Clean silhouettes, gentle shadows and a modest amount of detail.
+  key_features: matte gouache planes; simple stable geometry; pale gold and blue-grey; no rays or halos; centered balance
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grounded Matte Geometry Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - god rays
+  - halo
+  - temple hallway
+  - stone bridge at sunset
   - realistic
   - 3d render
   - photo
@@ -57,7 +51,6 @@ avoidRules:
   - named franchise likeness
   - paladin armor copy
   - weapon
-  - temple hallway
   - readable scripture
   - throne pose
   - RPG UI
@@ -71,15 +64,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-250.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, paladin armor copy, weapon, temple
-    hallway, readable scripture, throne pose, RPG UI, readable magic text, generic isekai wallpaper,
-    fixed canon character, title scene replication, required source-frame look, cosplay, generic
-    anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, god rays, halo, temple hallway, stone bridge at sunset, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, paladin armor copy, weapon, readable scripture, throne pose, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

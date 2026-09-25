@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-095
 packId: pack_05
-name: Frieren – Afterquest Melancholy Fantasy
+name: Faded-Line Pale Wash Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,36 +12,26 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Soft painted cel work with fading contours, delicate speckled texture, and light that spreads
-    across broad planes.
-  subject_treatment: >-
-    Preserve the requested subject and gesture; soften secondary edges while keeping the focal
-    silhouette precise.
-  color_and_tone: >-
-    Muted sage, pale amber, and blue-gray carry gentle contrast; use the requested colors when
-    specified.
-  lighting_and_shadow: >-
-    Wide, soft-edged light and gradual shadow transitions create a quiet sense of distance without
-    adding a source.
-  texture_and_material: >-
-    Fine pigment grain and translucent layers soften surfaces without changing what they are made
-    of.
-  camera_and_composition: >-
-    Keep the requested viewpoint; distribute detail from clear focal forms to quieter, more open
-    surroundings.
-  atmosphere_and_mood: >-
-    Wistful and still, with no imposed grief or backstory.
-  rendering_and_quality: >-
-    Let contours recede selectively under smooth tonal fades; keep anatomy and object structure
-    stable.
-  key_features: >-
-    Soft horizon-like gradients, faded line edges, fine flecks, and restrained light preserve a
-    reflective calm.
-  creative_brief: >-
-    Give the requested content a time-softened cel finish through fading contours, quiet color, and
-    gentle light, without adding memory objects or a fantasy scene.
+  aesthetic: 'Modern TV anime cel over pale watercolor background boards: thin warm-grey lineart that fades to nothing at outer edges, two-tone cel shading and wide airy painted skies.'
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Figures get slender proportions, small calm faces and few internal lines; secondary contours dissolve into the wash while the focal silhouette stays precise.
+  color_and_tone: Desaturated sage, pale amber and blue-grey at low contrast; whites never pure, blacks lifted to soft slate, one warm accent at most.
+  lighting_and_shadow: High soft daylight from a broad sky, a single cel shadow tier only slightly darker than the base, no rim light and no bloom.
+  texture_and_material: Transparent watercolor granulation in skies and ground, tiny speckled light flecks drifting in the air, clean flat cel fills on figures.
+  camera_and_composition: Keep the requested view; favor small focal figures against large open space, a low horizon and detail thinning toward the frame edges.
+  atmosphere_and_mood: Wistful, unhurried and still, as if time passes slowly around the subject.
+  rendering_and_quality: Lines break and fade selectively, gradients stay smooth and forms stay anatomically stable; restraint instead of effects.
+  key_features: fading warm-grey lineart; pale watercolor background boards; lifted slate blacks; single soft shadow tier; drifting light flecks
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Faded-Line Pale Wash Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - saturated neon color
+  - heavy black outlines
+  - dramatic rim light
   - realistic
   - 3d render
   - photo
@@ -69,15 +59,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-095.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named elf mage likeness, party lineup, road scene, ritual
-    circle, franchise costume copy, RPG UI, readable magic text, generic isekai wallpaper, fixed
-    canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, saturated neon color, heavy black outlines, dramatic rim light, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named elf mage likeness, party lineup, road scene, ritual circle, franchise costume copy, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -91,3 +82,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Faded-Line Pale Wash Cel
+styleAnchors:
+  - Faded-Line Pale Wash Cel
+  - Frieren – Afterquest Melancholy Fantasy

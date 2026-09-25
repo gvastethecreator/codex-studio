@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-093
 packId: pack_05
-name: Mushoku Tensei – Wandering Mage Chronicle
+name: Sepia Moss Dry-Brush Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,35 +12,25 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Hand-painted cel work with dry contour accents, weathered pigment grain, and spacious
-    atmospheric washes.
-  subject_treatment: >-
-    Preserve the requested forms and action; use lightly worn outlines and spare contour lines to
-    clarify shape.
-  color_and_tone: >-
-    Earthy sepia, moss, and ink blue sit beneath open pale values; adapt them to explicit color
-    direction.
-  lighting_and_shadow: >-
-    Diffused light opens the image through broad value shifts while respecting the depicted
-    lighting.
-  texture_and_material: >-
-    Dry pigment breaks, paperlike grain, and transparent wash edges texture the rendering, not the
-    depicted objects.
-  camera_and_composition: >-
-    Keep the supplied composition; use airy depth and uncluttered value layers to give its forms
-    breathing room.
-  atmosphere_and_mood: >-
-    Curious, reflective, and quietly expansive, adjustable to the requested mood.
-  rendering_and_quality: >-
-    Soft painted planes and selective dry lines keep detail natural, tactile, and readable.
-  key_features: >-
-    Weathered contour, fine grain, earthy washes, and open value separation give the cel image a
-    traveled feel.
-  creative_brief: >-
-    Translate the requested content through dry ink contours, fine grain, earthy washes, and open
-    tonal depth, without adding travel or spell props.
+  aesthetic: 'Film-quality anime with painterly background art: dry-brush contour accents, detailed sepia and moss landscapes and pale open skies behind clean cel figures.'
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Figures stay cleanly cel-shaded while their surroundings get painterly depth; do not add a road, a staff or a traveling party.
+  color_and_tone: Earthy sepia, moss green, ink blue and parchment, with pale sky values keeping the whole image open.
+  lighting_and_shadow: Diffused daylight with long gentle value shifts and atmospheric perspective that fades distant forms toward blue.
+  texture_and_material: Dry pigment breaks, paper grain and transparent wash edges in the painted background, flat clean fills on figures.
+  camera_and_composition: Keep the requested view; generous depth with foreground, middle and far planes separated by air.
+  atmosphere_and_mood: Curious and quietly expansive, the sense of a big world just past the frame.
+  rendering_and_quality: Painterly background with tactile detail, crisp cel figures and dry-brush lines only where they clarify form.
+  key_features: painterly sepia-moss backgrounds; dry-brush contour accents; atmospheric blue fade; clean cel figures; parchment highlights
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sepia Moss Dry-Brush Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - map labels
+  - road party
   - realistic
   - 3d render
   - photo
@@ -56,7 +46,6 @@ avoidRules:
   - staff-wielding protagonist
   - school uniform
   - harem cue
-  - road party
   - RPG UI
   - readable magic text
   - generic isekai wallpaper
@@ -68,15 +57,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-093.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, readable map labels, staff-wielding protagonist, school
-    uniform, harem cue, road party, RPG UI, readable magic text, generic isekai wallpaper, fixed
-    canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, map labels, road party, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, readable map labels, staff-wielding protagonist, school uniform, harem cue, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -90,3 +80,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Sepia Moss Dry-Brush Cel
+styleAnchors:
+  - Sepia Moss Dry-Brush Cel
+  - Mushoku Tensei – Wandering Mage Chronicle

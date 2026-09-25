@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-255
 packId: pack_05
-name: Magic Knight Rayearth - Gem-Engine Rescue Quest
+name: Gem-Facet Rising-Line Cel
 styleAnchors:
-  - 'Magic Knight Rayearth - Gem-Engine Rescue Quest'
-displayName: 'Gem-Engine Rescue Quest'
+  - Gem-Facet Rising-Line Cel
+  - Magic Knight Rayearth - Gem-Engine Rescue Quest
+displayName: Gem-Facet Rising-Line Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,34 +16,26 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Bright kinetic cel illustration with upward-sweeping line accents, jewel color transitions, and
-    precise luminous edges.
-  subject_treatment: >-
-    Preserve the requested forms and action; let line accents follow existing motion instead of
-    inventing teamwork or rescue.
-  color_and_tone: >-
-    Clear jewel hues and bright warm-cool transitions create lift; follow any explicit palette
-    direction.
-  lighting_and_shadow: >-
-    Luminous edge highlights separate overlapping forms, with glow kept crisp and contained.
-  texture_and_material: >-
-    Smooth cel fills, fine facet breaks, and bright accents give surfaces a polished, energetic
-    treatment.
-  camera_and_composition: >-
-    Keep the requested camera; use rising diagonals within existing forms, not a new world or
-    mechanical object.
-  atmosphere_and_mood: >-
-    Optimistic and energetic, without assigning a quest or group narrative.
-  rendering_and_quality: >-
-    Maintain sharp contours and bright color separation; reserve glow for small focal accents.
-  key_features: >-
-    Upward line energy, chromatic shifts, faceted highlights, and crisp glow give this image a
-    buoyant rhythm.
-  creative_brief: >-
-    Bring vivid color and luminous line accents to the requested subject, without adding runes,
-    engines, or a rescue scene.
+  aesthetic: Bright 1990s magical-adventure cel with long upward-sweeping lines, clear gem-tone color shifts and faceted gem highlights.
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Upward line accents follow existing motion; add no team, rescue or vehicle.
+  color_and_tone: Ruby, sapphire and emerald hues with bright gold, clear and saturated, shifting warm to cool along the lines.
+  lighting_and_shadow: Luminous edge highlights and crisp contained glow, with faceted gem glints on focal points.
+  texture_and_material: Smooth cel fills, fine facet breaks and small sparkle accents.
+  camera_and_composition: Keep the requested view; rising diagonals and vertical lift carry the eye upward.
+  atmosphere_and_mood: Buoyant, optimistic and energetic, everything lifting toward the sky.
+  rendering_and_quality: Sharp contours and bright color separation, with glow reserved for small focal accents.
+  key_features: upward-sweeping lines; ruby-sapphire-emerald hues; faceted gem glints; crisp contained glow; rising diagonals
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gem-Facet Rising-Line Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - gem-studded vehicle
+  - group lineup
+  - readable glyphs
   - realistic
   - 3d render
   - photo
@@ -56,9 +49,7 @@ avoidRules:
   - signature
   - named franchise likeness
   - magic-knight costume copy
-  - group lineup
   - weapon near-plane
-  - readable glyphs
   - logo
   - RPG UI
   - readable magic text
@@ -70,15 +61,16 @@ avoidRules:
   - generic anime filter
   - prompt-required card
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-255.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, magic-knight costume copy, group
-    lineup, weapon near-plane, readable glyphs, logo, RPG UI, readable magic text, generic isekai
-    wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, gem-studded vehicle, group lineup, readable glyphs, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, magic-knight costume copy, weapon near-plane, logo, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

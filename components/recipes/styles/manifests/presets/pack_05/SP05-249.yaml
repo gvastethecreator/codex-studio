@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-249
 packId: pack_05
-name: Ascendance of a Bookworm - Printing Press Devotion
+name: Indigo Block-Print Cel
 styleAnchors:
-  - 'Ascendance of a Bookworm - Printing Press Devotion'
-displayName: 'Printing Press Devotion'
+  - Indigo Block-Print Cel
+  - Ascendance of a Bookworm - Printing Press Devotion
+displayName: Indigo Block-Print Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,35 +16,25 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Print-influenced cel painting with inky blue blocks, fine hatchwork, paper grain, and crisp edge
-    registration.
-  subject_treatment: >-
-    Keep the prompt's subject and action; simplify them into clear masses with selective etched line
-    detail.
-  color_and_tone: >-
-    Cream, deep indigo, and restrained amber create printlike contrast; preserve any explicit color
-    direction.
-  lighting_and_shadow: >-
-    Broad flat light and precise shadow shapes keep the image graphic, with small highlights used
-    sparingly.
-  texture_and_material: >-
-    Fine hatch marks and paperlike grain add a printed finish without turning the subject into
-    printed matter.
-  camera_and_composition: >-
-    Respect the supplied framing; balance flat graphic masses and small details without adding pages
-    or presses.
-  atmosphere_and_mood: >-
-    Quietly studious and composed, with mood set by the requested scene.
-  rendering_and_quality: >-
-    Use clean boundaries, controlled hatching, and subtle grain to keep the print influence legible.
-  key_features: >-
-    Inky value blocks, cream highlights, fine hatching, and crisp registration shape a distinctive
-    cel-print finish.
-  creative_brief: >-
-    Give the requested content a tactile printlike cel treatment while keeping its existing objects,
-    action, and location intact.
+  aesthetic: 'Anime cel painting crossed with relief printing: inky indigo blocks, fine hatchwork, cream paper grain and slightly off-register edges.'
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Simplify forms into clear masses with selective etched line detail; never turn the subject into printed pages or add a press.
+  color_and_tone: Cream, deep indigo and restrained amber, limited to two or three flat inks.
+  lighting_and_shadow: Flat broad light with graphic shadow shapes carved as solid indigo ink.
+  texture_and_material: Fine hatch marks, cream paper grain, ink squash at block edges and a small misregistration between colors.
+  camera_and_composition: Keep the requested view; bold flat masses are balanced against small detailed areas.
+  atmosphere_and_mood: Quietly studious and devoted, patient work by lamplight.
+  rendering_and_quality: Clean block boundaries, controlled hatching and visible print texture throughout.
+  key_features: inky indigo blocks; cream paper grain; fine hatchwork; slight off-register edges; amber accent ink
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Indigo Block-Print Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - readable pages
+  - printing press prop
   - realistic
   - 3d render
   - photo
@@ -66,14 +57,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-249.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed
-    canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, readable pages, printing press prop, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

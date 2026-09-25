@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-097
 packId: pack_05
-name: Overlord – Bone Throne Dark Dominion
+name: Ivory-Charcoal Baroque Symmetry Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,34 +12,27 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Monumental cel painting with baroque symmetry, heavy value planes, and a restrained, ornamental
-    silhouette language.
-  subject_treatment: >-
-    Preserve the requested subject; emphasize its major shapes with measured contour and balanced,
-    weighty detail.
-  color_and_tone: >-
-    Bone ivory, charcoal, and muted brass establish a cold, limited range; follow explicit color
-    direction when present.
-  lighting_and_shadow: >-
-    Cool, controlled light divides large planes and reserves narrow highlights for the focal forms.
-  texture_and_material: >-
-    Combine matte shadow masses, smooth enamel-like accents, and faint powdery grain without
-    changing depicted materials.
-  camera_and_composition: >-
-    Keep the requested layout; use formal balance and broad negative space rather than adding
-    architecture.
-  atmosphere_and_mood: >-
-    Severe and composed, with a sense of pressure that does not change the subject's story.
-  rendering_and_quality: >-
-    Hold detail within clean edges and deep values; let subtle grain soften the darkest areas.
-  key_features: >-
-    Baroque balance, ivory against charcoal, cold highlights, and monumental value grouping create a
-    composed weight.
-  creative_brief: >-
-    Restyle the requested subject through symmetry, deep values, and restrained ornament, without
-    adding a throne, monument, or fantasy setting.
+  aesthetic: Monumental anime cel painting with baroque bilateral symmetry, heavy value planes and a restrained ornamental silhouette language.
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Emphasize major shapes with measured contour and balanced weighty detail; add no throne, army, skulls or architecture.
+  color_and_tone: Bone ivory, charcoal and muted brass in a cold limited range with deep values.
+  lighting_and_shadow: Cool controlled light divides large planes and reserves narrow highlights for the focal forms.
+  texture_and_material: Matte shadow masses, smooth enamel-like accents and faint powdery grain in the darks.
+  camera_and_composition: Keep the requested view; formal mirror balance and broad negative space around a central axis.
+  atmosphere_and_mood: Severe and composed, a heavy pressure that never turns violent.
+  rendering_and_quality: Detail held within clean edges and deep values, with subtle grain softening the darkest areas.
+  key_features: baroque bilateral symmetry; ivory against charcoal; cold narrow highlights; monumental value planes; powdery grain
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ivory-Charcoal Baroque Symmetry Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - skeletal ruler
+  - skull pile
+  - cathedral interior default
+  - grey 3D render
   - realistic
   - 3d render
   - photo
@@ -51,10 +44,8 @@ avoidRules:
   - jpeg artifacts
   - watermark
   - signature
-  - skeletal ruler
   - required throne
   - army
-  - skull pile
   - cathedral copy
   - Nazi/fascist insignia
   - franchise likeness
@@ -69,15 +60,15 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-097.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, skeletal ruler, required throne, army, skull pile, cathedral
-    copy, Nazi/fascist insignia, franchise likeness, RPG UI, readable magic text, generic isekai
-    wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, skeletal ruler, skull pile, cathedral interior default, grey 3D render, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, required throne, army, cathedral copy, Nazi/fascist insignia, franchise likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -91,3 +82,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Ivory-Charcoal Baroque Symmetry Cel
+styleAnchors:
+  - Ivory-Charcoal Baroque Symmetry Cel
+  - Overlord – Bone Throne Dark Dominion

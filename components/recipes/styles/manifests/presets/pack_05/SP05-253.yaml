@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-253
 packId: pack_05
-name: The Saint's Magic Power Is Omnipotent - Herbarium Court Glow
+name: Glass-Green High-Key Herbarium Cel
 styleAnchors:
-  - "The Saint's Magic Power Is Omnipotent - Herbarium Court Glow"
-displayName: 'Herbarium Court Glow'
+  - Glass-Green High-Key Herbarium Cel
+  - The Saint's Magic Power Is Omnipotent - Herbarium Court Glow
+displayName: Glass-Green High-Key Herbarium Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,34 +16,26 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Refined cel painting with glass-green translucence, delicate branching linework, and formal,
-    clean color grouping.
-  subject_treatment: >-
-    Preserve the requested forms; use fine veinlike strokes only to echo existing contours, never to
-    add plants.
-  color_and_tone: >-
-    Glass green, pale cream, and muted gold form a clear palette, subject to explicit color
-    direction.
-  lighting_and_shadow: >-
-    Soft high-key illumination and clean reflected highlights reveal form without requiring a glow
-    source.
-  texture_and_material: >-
-    Layer translucent color, fine detail, and tidy painted surfaces while keeping every depicted
-    material intact.
-  camera_and_composition: >-
-    Keep the given framing; use orderly detail and calm spacing without adding a formal setting.
-  atmosphere_and_mood: >-
-    Serene and composed, with no imposed healing or ritual.
-  rendering_and_quality: >-
-    Keep thin contours crisp against transparent washes; avoid excess bloom and decorative clutter.
-  key_features: >-
-    Glass-green softness, fine branching detail, clean preparation of color, and formal calm define
-    this finish.
-  creative_brief: >-
-    Restyle the requested subject with translucent color and precise fine linework, without adding
-    herbs, healing, or a court.
+  aesthetic: Refined high-key anime cel with glass-green translucence and delicate veinlike linework, like a pressed-specimen plate under clear light.
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Veinlike strokes echo existing contours only; never add plants, a laboratory or bookshelves.
+  color_and_tone: Glass green, pale cream and muted gold in a high key where whites dominate.
+  lighting_and_shadow: Soft high-key daylight with clean reflected highlights and no visible glow source.
+  texture_and_material: Transparent layered washes, fine vein detail and tidy painted surfaces.
+  camera_and_composition: Keep the requested view; orderly spacing with plenty of pale ground around the subject.
+  atmosphere_and_mood: Serene, clean and composed, like cool air in the morning.
+  rendering_and_quality: Thin crisp contours over transparent washes with minimal bloom and no clutter.
+  key_features: glass-green translucence; veinlike linework; high-key cream ground; transparent washes; muted gold accents
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glass-Green High-Key Herbarium Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - laboratory room
+  - crowded table
+  - dark low key
   - realistic
   - 3d render
   - photo
@@ -58,7 +51,6 @@ avoidRules:
   - laboratory room lock
   - bookshelf
   - readable label
-  - crowded table
   - RPG UI
   - readable magic text
   - generic isekai wallpaper
@@ -70,15 +62,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-253.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, laboratory room lock, bookshelf,
-    readable label, crowded table, RPG UI, readable magic text, generic isekai wallpaper, fixed
-    canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, laboratory room, crowded table, dark low key, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, laboratory room lock, bookshelf, readable label, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

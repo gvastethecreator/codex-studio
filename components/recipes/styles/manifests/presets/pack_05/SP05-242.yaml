@@ -3,10 +3,10 @@ id: SP05-242
 packId: pack_05
 name: Smoke-Mud Vulnerability Style
 styleAnchors:
-  - 'Smoke-Mud Vulnerability Style'
-displayName: 'Smoke-Mud Vulnerability'
+  - Smoke-Mud Vulnerability Style
+displayName: Smoke-Mud Vulnerability
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,33 +15,26 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Atmospheric cel painting with softened edges, layered low contrast, and rough, earth-toned brush
-    texture.
-  subject_treatment: >-
-    Retain the requested forms and action; let secondary contours blur slightly while focal edges
-    stay clear.
-  color_and_tone: >-
-    Muted clay, olive, charcoal, and dusk blue create a subdued range; adapt to explicit palette
-    choices.
-  lighting_and_shadow: >-
-    Diffuse side light and broad shadows create gentle separation without inventing haze or a new
-    light source.
-  texture_and_material: >-
-    Smudged pigment, soft streaks, and uneven grain give the image a vulnerable, tactile finish.
-  camera_and_composition: >-
-    Honor the given viewpoint; use edge softness and tonal layering to separate existing planes.
-  atmosphere_and_mood: >-
-    Quiet and exposed, with vulnerability expressed through contrast rather than added narrative.
-  rendering_and_quality: >-
-    Keep the focal subject legible against loosely painted surroundings; avoid muddy detail.
-  key_features: >-
-    Earthy color, brushed softness, diffused contrast, and selectively lost edges create a gentle,
-    vulnerable mood.
-  creative_brief: >-
-    Carry the requested subject and place through muted, tactile color and softened brush edges
-    without adding smoke, mud, or a fantasy landscape.
+  aesthetic: Atmospheric painted anime with soft lost edges, layered low contrast and rough earth-toned brushwork, as if seen through settling smoke.
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Secondary contours blur into the brushwork while the face or focal gesture stays clear and exposed.
+  color_and_tone: Muted clay, olive, charcoal and dusk blue with compressed values and no pure white or black.
+  lighting_and_shadow: Diffuse side light with broad soft shadows, no rim light and no glow.
+  texture_and_material: Smudged pigment, dragged brush streaks, uneven grain and thumb-blended edges across the whole surface.
+  camera_and_composition: Keep the requested view; tight framing leaves little escape space around the subject.
+  atmosphere_and_mood: Quiet, exposed and fragile, tired rather than tragic.
+  rendering_and_quality: A legible focal subject against loosely painted surroundings; texture never turns to mud over the face.
+  key_features: lost smoky edges; clay-olive-charcoal range; smudged dragged brushwork; compressed values; clear exposed focal face
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Smoke-Mud Vulnerability Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - crisp clean cel
+  - bright saturated color
+  - heroic pose
   - realistic
   - 3d render
   - photo
@@ -64,14 +57,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-242.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed
-    canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, crisp clean cel, bright saturated color, heroic pose, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

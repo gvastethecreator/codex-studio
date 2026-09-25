@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-256
 packId: pack_05
-name: Inuyasha - Shrine-Well Sengoku Pursuit
+name: Vermilion Indigo Tapered-Ink Cel
 styleAnchors:
-  - 'Inuyasha - Shrine-Well Sengoku Pursuit'
-displayName: 'Shrine-Well Sengoku Pursuit'
+  - Vermilion Indigo Tapered-Ink Cel
+  - Inuyasha - Shrine-Well Sengoku Pursuit
+displayName: Vermilion Indigo Tapered-Ink Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,34 +16,26 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Folkloric painted cel language with tapered ink contours, warm red accents, and faded indigo
-    dusk values.
-  subject_treatment: >-
-    Keep the requested subject and action; use flowing tapered marks to describe existing movement,
-    not a pursuit.
-  color_and_tone: >-
-    Vermilion, cream, muted indigo, and charcoal create nostalgic contrast; defer to requested
-    colors.
-  lighting_and_shadow: >-
-    Soft dusk-like shadow and restrained edge light retain warmth without requiring night or a new
-    light source.
-  texture_and_material: >-
-    Faded color, tapering brush lines, and subtle grain give the cel finish a timeworn feel.
-  camera_and_composition: >-
-    Preserve the requested framing; use gentle horizontal rhythm and flowing contours without adding
-    a threshold.
-  atmosphere_and_mood: >-
-    Nostalgic and mythic in tone, with no imposed folklore or conflict.
-  rendering_and_quality: >-
-    Keep the focal silhouette sharp enough to read through soft color fade and low-contrast detail.
-  key_features: >-
-    Tapered ink, vermilion accents, indigo fade, and restrained luminous edges carry a wistful
-    motion.
-  creative_brief: >-
-    Apply the nostalgic cel palette and flowing ink contours to the requested content without adding
-    talismans, shrines, or a portal.
+  aesthetic: Folkloric 1990s anime cel with tapered brush-ink contours, warm vermilion accents and faded indigo dusk values, as if the cels were slightly sun-faded.
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Flowing tapered marks describe existing movement rather than a pursuit; add no shrine, well, sword or talisman.
+  color_and_tone: Vermilion, cream, muted indigo and charcoal in nostalgic, slightly faded contrast.
+  lighting_and_shadow: Soft dusk-like shadow and restrained warm edge light, without requiring night or a new source.
+  texture_and_material: Faded cel color, tapering brush lines that swell and thin, and subtle grain.
+  camera_and_composition: Keep the requested view; gentle horizontal rhythm with long flowing contours.
+  atmosphere_and_mood: Nostalgic and mythic, a story told at dusk.
+  rendering_and_quality: A focal silhouette sharp enough to read through the soft color fade and low-contrast detail.
+  key_features: tapered brush-ink contours; vermilion accents; faded indigo dusk; sun-faded cel color; horizontal flow
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vermilion Indigo Tapered-Ink Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - red-robed character copy
+  - shrine hallway
+  - readable talisman
   - realistic
   - 3d render
   - photo
@@ -55,8 +48,6 @@ avoidRules:
   - watermark
   - signature
   - named franchise likeness
-  - red-robed character copy
-  - shrine hallway
   - sword
   - demon attack
   - readable talisman text
@@ -72,15 +63,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-256.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, red-robed character copy, shrine
-    hallway, sword, demon attack, readable talisman text, well prop lock, RPG UI, readable magic
-    text, generic isekai wallpaper, fixed canon character, title scene replication, required
-    source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, red-robed character copy, shrine hallway, readable talisman, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, sword, demon attack, readable talisman text, well prop lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

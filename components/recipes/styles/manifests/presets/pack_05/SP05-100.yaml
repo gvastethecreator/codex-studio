@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-100
 packId: pack_05
-name: DanMachi – Dungeon Lantern Adventure
+name: Vertical Mineral Amber Cel
 category: 3. Isekai & High Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,33 +12,25 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: >-
-    Luminous cel painting built from vertical mineral-like planes, warm points of light, and layered
-    depth.
-  subject_treatment: >-
-    Preserve the requested subject and gesture; articulate form with tall facet-like value shifts
-    and small precise details.
-  color_and_tone: >-
-    Pair amber and pale gold with cool teal shadows; let a supplied palette take precedence.
-  lighting_and_shadow: >-
-    Warm localized highlights sit against cooler ambient values, with glow kept soft and contained.
-  texture_and_material: >-
-    Use crisp faceted accents, subtle grain, and smooth color transitions while keeping the depicted
-    materials intact.
-  camera_and_composition: >-
-    Keep the requested framing; build depth through stacked vertical shapes and shifts of scale
-    already present.
-  atmosphere_and_mood: >-
-    Hopeful and humble in mood, with no required adventure or setting.
-  rendering_and_quality: >-
-    Maintain clean cel edges, layered distance, and readable contrast without excessive bloom.
-  key_features: >-
-    Vertical depth, mineral facets, amber highlights, and cool shadow color make the composition
-    feel quietly luminous.
-  creative_brief: >-
-    Give the requested content a vertically layered, warmly lit cel finish; do not add a crystal
-    cavern or fixed fantasy scene.
+  aesthetic: 'Luminous anime cel built from tall mineral-like planes: vertical facets of value, warm amber point lights and cool teal depth.'
+  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Forms are articulated by tall facet-like value shifts; do not add a dungeon corridor, lantern or monster.
+  color_and_tone: Amber and pale gold points of light against cool teal and deep blue-green shadow.
+  lighting_and_shadow: Small warm point highlights with a soft contained glow against cool ambient light, like light caught inside quartz.
+  texture_and_material: Crisp faceted accents, subtle grain and smooth transitions between the vertical planes.
+  camera_and_composition: Keep the requested view; vertically stacked planes and shifts of scale emphasize height.
+  atmosphere_and_mood: Hopeful and humble, a small warmth inside something vast.
+  rendering_and_quality: Clean cel edges, layered depth and readable contrast without heavy bloom.
+  key_features: vertical mineral facets; amber point lights; cool teal depth; contained quartz-like glow; stacked vertical planes
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vertical Mineral Amber Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - hooded youth holding a glowing orb
+  - glowing portal archway
+  - generic cloaked adventurer
+  - household task turned into a quest or cooking scene
+  - photorealistic rendering
+  - franchise character design
+  - dungeon corridor
+  - hallway perspective
   - realistic
   - 3d render
   - photo
@@ -50,13 +42,11 @@ avoidRules:
   - jpeg artifacts
   - watermark
   - signature
-  - dungeon corridor
   - lantern-as-only-prop
   - generic corridor adventurer
   - goddess/canon costume
   - monster
   - weapon
-  - hallway perspective
   - RPG UI
   - readable magic text
   - generic isekai wallpaper
@@ -68,15 +58,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-100.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, dungeon corridor, lantern-as-only-prop, generic corridor
-    adventurer, goddess/canon costume, monster, weapon, hallway perspective, RPG UI, readable magic
-    text, generic isekai wallpaper, fixed canon character, title scene replication, required
-    source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, dungeon corridor, hallway perspective, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, lantern-as-only-prop, generic corridor adventurer, goddess/canon costume, monster, weapon, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -90,3 +81,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Vertical Mineral Amber Cel
+styleAnchors:
+  - Vertical Mineral Amber Cel
+  - DanMachi – Dungeon Lantern Adventure
