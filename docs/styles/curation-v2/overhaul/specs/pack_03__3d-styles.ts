@@ -484,4 +484,6 @@ const spec: Spec = {
   },
 };
 
+export const aliases = { 'SP03-077': 'Lego Brick-Built 3D' };
+
 export default spec;
