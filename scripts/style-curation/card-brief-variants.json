@@ -5565,50 +5565,83 @@
   ],
   "SP10-180": ["Pearlescent dragon. No text or logo.", "Pearlescent jellyfish. No text or logo."],
   "SP11-001": [
-    "Brick-built knight on horseback. No logos or text.",
-    "Brick-built pirate ship in a storm of blue bricks. No logos or text."
+    "Interlocking-brick diorama of a torchlit dungeon crypt: a skeleton knight rising from a brick sarcophagus, translucent green bricks for ghost light, loose spare bricks scattered at the edge of the baseplate. No logos or text.",
+    "Close macro photograph of a brick-built galleon listing in a sea of stacked blue and white bricks, torn sail made of flat tiles, a kraken tentacle built from curved slopes wrapping the mast. No logos or text."
   ],
   "SP11-002": [
-    "Big-head vinyl dragon knight. No logos or text.",
-    "Big-head vinyl witch with a cat. No logos or text."
+    "Big-head vinyl collectible of an original undead queen with a cracked crown, grey-green matte skin, blank black eyes and a tiny body in a torn violet gown, photographed beside a plain unprinted window box. No logos or text.",
+    "Row of three big-head vinyl collectibles on a desk: an original armored orc warlord, a hooded rogue and a horned demon cleric, all with oversized heads, tiny bodies and blank black eyes, factory seam lines visible. No logos or text."
   ],
   "SP11-003": [
-    "Modeling-dough knight. No logos or text.",
-    "Modeling-dough castle. No logos or text."
+    "Modeling-dough haunted graveyard on a kitchen table: lumpy grey tombstones, a green dough ghost with thumb-pressed eyes, a crooked orange pumpkin, crumbs and cutter tools around it. No logos or text.",
+    "Close photograph of a modeling-dough knight losing a duel to a dough snail, the knight's helmet squashed flat, colors partly smeared together where small hands mixed them. No logos or text."
   ],
-  "SP11-004": ["Papercraft knight. No text or logo.", "Papercraft castle. No text or logo."],
-  "SP11-005": ["Amigurumi knight. No text or logo.", "Amigurumi witch. No text or logo."],
+  "SP11-004": [
+    "Low-poly papercraft skull lantern made of black and bone-white faceted card, a tealight glowing through its hollow eye sockets, visible creases and slightly lifting glue tabs. No text or logo.",
+    "Low-poly papercraft stag with enormous faceted antlers standing in a forest of folded paper pine trees, soft window light raking across every facet. No text or logo."
+  ],
+  "SP11-005": [
+    "Amigurumi crocheted lich in black and bone-colored yarn with a tiny stitched crown and yellow safety eyes, holding a crocheted skull staff, yarn fuzz glowing in soft side light. No text or logo.",
+    "Family of crocheted amigurumi mushrooms with sleepy stitched faces around a crocheted toadstool house, visible spiral stitch rows and stuffing slightly showing at one seam. No text or logo."
+  ],
   "SP11-016": [
-    "Plush knight. No text or logo.",
-    "Plush grim reaper holding a felt scythe. No text or logo."
+    "Soft plush grim reaper toy with a hooded black minky robe, an embroidered friendly skull face and a felt scythe, sitting on a bookshelf next to an unlit candle. No text or logo.",
+    "Plush kraken in deep purple velboa with eight stuffed tentacles, embroidered curious eyes and satin suckers, sprawled over the edge of a bed. No text or logo."
   ],
   "SP11-017": [
-    "Action figure dragon rider. No logos or text.",
-    "Action figure skeleton king. No logos or text."
+    "90s-style action figure of an original skeleton king on a molded bone-throne playset, glow-in-the-dark green plastic eyes, visible hip and neck joints, slight paint rub on the crown. No logos or text.",
+    "Two 90s-style action figures mid-battle on a bedroom carpet: an original lizard-man warrior and a knight with a spring-loaded sword, joints visible, lit like an old toy catalog photo. No logos or text."
   ],
   "SP11-018": [
-    "Balloon-art knight on horse. No text or logo.",
-    "Balloon-art castle. No text or logo."
+    "Balloon-art knight riding a balloon horse, silver and black twisted balloons for armor, a long red balloon lance, one balloon slightly deflated and wrinkled. No text or logo.",
+    "Giant balloon-art spider in black and purple long balloons hanging over a haunted party doorway, legs made of bent twisted balloons, glossy highlights. No text or logo."
   ],
-  "SP11-020": ["Wooden knight toy. No text or logo.", "Wooden castle toy. No text or logo."],
-  "SP11-021": ["Sticker of a knight. No text or logo.", "Sticker of a witch cat. No text or logo."],
-  "SP11-022": ["Plasticine witch. No logos or text.", "Plasticine castle feast. No logos or text."],
-  "SP11-023": ["Tin toy knight. No text or logo.", "Tin toy castle carousel. No text or logo."],
-  "SP11-024": ["Diorama knight camp. No text or logo.", "Diorama witch cottage. No text or logo."],
+  "SP11-020": [
+    "Set of turned-wood peg figures: round-headed knights with painted helmets and tiny carved shields guarding a castle of stacked painted wooden blocks. No text or logo.",
+    "Hand-carved wooden wolf toy with visible knife facets, oiled beech grain and a single carved red tongue, beside wood shavings and a whittling knife. No text or logo."
+  ],
+  "SP11-021": [
+    "Sheet of glossy die-cut vinyl stickers of dark fantasy creatures: a skull moth, a cursed crown, a one-eyed bat and a cute lich, each with a thick white border, one sticker half peeled. No text or logo.",
+    "Weathered vinyl sticker of a howling wolf stuck on a battered metal lunchbox, white border scuffed, gloss cracking and a corner lifting. No text or logo."
+  ],
+  "SP11-022": [
+    "Plasticine witch with a huge toothy grin stirring a bubbling cauldron of green clay blobs in a cramped miniature cottage set, fingerprints and tool marks on everything. No logos or text.",
+    "Plasticine feast scene: a round-faced king with a startled grin as a plasticine roast pig sits up on the banquet table, clay candles, warm miniature-set light. No logos or text."
+  ],
+  "SP11-023": [
+    "Tin toy jousting knight on a wheeled tin horse, lithographed armor pattern, bent tab joints and a wind-up key, slightly dented from years of play. No text or logo.",
+    "Tin toy castle carousel with lithographed horses and knights circling under a striped tin roof, wind-up key underneath, soft reflections on the metal. No text or logo."
+  ],
+  "SP11-024": [
+    "Shadow-box diorama of a witch's cottage interior at night, layered card walls, miniature bottles and a tiny cauldron, warm light from a hidden bulb. No text or logo.",
+    "Deep shadow-box diorama of a sunken ship on the sea floor, layered cut-paper waves, miniature fish on wires and a skeleton captain at the wheel. No text or logo."
+  ],
   "SP11-025": [
-    "Button-eye knight doll. No text or logo.",
-    "Button-eye dragon doll. No text or logo."
+    "Button-eyed cloth doll knight with a felt helmet and a stitched cross on its tunic, one button eye hanging by a thread, lying in an old toy chest. No text or logo.",
+    "Stitched cloth doll of an original little ghost bride with pale linen skin, black button eyes and a torn lace veil, seated in a wicker chair in a dim attic. No text or logo."
   ],
   "SP11-027": [
-    "Mosaic-tiled knight statue. No text or logo.",
-    "Mosaic-tiled birdbath. No text or logo."
+    "Craft mosaic knight's helmet covered in broken china fragments with blue floral patterns and white grout, mounted on a garden wall. No text or logo.",
+    "Craft mosaic owl birdbath with small bright glazed tiles, uneven grout and a few missing tiles, water in the basin reflecting the sky. No text or logo."
   ],
-  "SP11-029": ["Embroidered knight. No text or logo.", "Embroidered moth. No text or logo."],
-  "SP11-030": ["Sand art knight. No text or logo.", "Sand art castle sunset. No text or logo."],
-  "SP11-031": ["Ice-carved knight. No text or logo.", "Ice-carved swan. No text or logo."],
+  "SP11-029": [
+    "Embroidered death's-head moth in muted gold and black threads on dark linen, satin-stitched wings, loose threads and a needle resting in the hoop. No text or logo.",
+    "Embroidery hoop of a knight kneeling in a thorny rose garden, long-and-short stitch shading on the roses, a few unfinished areas with pencil lines still showing. No text or logo."
+  ],
+  "SP11-030": [
+    "Sand-art bottle showing a dark castle at sunset in layers of red, orange, purple and black sand, a few grains spilled on the table. No text or logo.",
+    "Framed sand-art picture of a ship in a storm, layered blue and grey sand between glass panes, some layers shifted as if the frame was tilted. No text or logo."
+  ],
+  "SP11-031": [
+    "Ice-carved knight holding a sword, clear ice with trapped bubbles, melting drips at the base, lit by warm torchlight. No text or logo.",
+    "Ice-carved throne in a frozen hall, chisel marks on the armrests, frost on the seat, cold blue light passing through it. No text or logo."
+  ],
   "SP11-081": [
-    "Paper theater witch scene. No text or logo.",
-    "Paper theater ship. No text or logo."
+    "Toy paper theater scene of a witch in a moonlit forest, flat printed card trees in three layers, a cut-out owl on a wire, candle-like footlights. No text or logo.",
+    "Toy paper theater of a ship in a storm, cut-card waves on sliding strips, a flat printed sea serpent rising behind the hull, a hand holding a stick at the edge. No text or logo."
   ],
-  "SP11-082": ["Resin kit witch. No text or logo.", "Resin kit sea monster. No text or logo."]
+  "SP11-082": [
+    "Hand-painted resin garage kit of an original swamp witch on a mossy base, glazed green skin, tiny painted eyes, a hobby paint brush and palette beside it. No text or logo.",
+    "Unfinished resin garage kit of a sea monster: half primed grey, half painted in teal and bone, mold lines still visible on the tentacles, on a hobby desk. No text or logo."
+  ]
 }
