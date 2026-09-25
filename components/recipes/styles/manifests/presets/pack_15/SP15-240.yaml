@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP15-240
+packId: pack_15
+name: Alchemypunk
+styleAnchors:
+  - Alchemypunk
+  - alchemical laboratory punk
+  - bubbling alembics
+displayName: Alchemypunk
+category: 8. Occult, Myth & Gothic Punks
+domain: alchemical laboratory punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - occult-myth-and-gothic-punks
+  - alchemypunk
+  - punk
+  - occult
+visualDna:
+  aesthetic: 'Alchemypunk: renegade alchemists in cluttered laboratories, with bubbling alembics, glowing transmutation circles, gold dust, sulfur smoke and brass instruments.'
+  subject_treatment: Keep the prompt's subject and setting; fill it with glass alembics, glowing circles, powders and brass tools of an alchemy lab.
+  color_and_tone: Molten gold, sulfur yellow and mercury silver against dark wood and smoky umber.
+  lighting_and_shadow: Glowing liquids and furnace fire lighting smoky laboratory darkness.
+  texture_and_material: Glass alembics, copper stills, parchment, gold dust, smoke and old wood.
+  camera_and_composition: Cluttered workbench scenes with a glowing reaction at the center.
+  atmosphere_and_mood: Obsessive and electric, the dream of turning anything into gold.
+  rendering_and_quality: Rich glowing illustration with detailed glassware and smoky light.
+  creative_brief: "Alchemypunk: renegade alchemists in cluttered laboratories, with bubbling alembics, glowing transmutation circles, gold dust, sulfur smoke and brass instruments. Carry it through bubbling alembics, glowing circles, gold dust, sulfur smoke. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: bubbling alembics; glowing circles; gold dust; sulfur smoke
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - graphic wounds
+  - real religious leader likeness
+  - readable runes or scripture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: occult-myth-and-gothic-punks
+  categoryName: 8. Occult, Myth & Gothic Punks
+  tags:
+    - curation-v2
+    - occult-myth-and-gothic-punks
+    - alchemypunk
+    - punk
+    - occult
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: alchemical laboratory punk

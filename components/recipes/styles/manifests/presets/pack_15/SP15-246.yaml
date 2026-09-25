@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP15-246
+packId: pack_15
+name: Candlepunk
+styleAnchors:
+  - Candlepunk
+  - candle-lit world punk
+  - candle-only light
+displayName: Candlepunk
+category: 8. Occult, Myth & Gothic Punks
+domain: candle-lit world punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - occult-myth-and-gothic-punks
+  - candlepunk
+  - punk
+  - occult
+visualDna:
+  aesthetic: 'Candlepunk: a world lit only by candles, with dripping wax cities, chandelier forests, candle-maker guilds and faces glowing in warm flickering pools.'
+  subject_treatment: Keep the prompt's subject and setting; light it only by candles, with dripping wax and flickering warm pools of light.
+  color_and_tone: Warm candle gold and honey amber against deep brown-black shadow.
+  lighting_and_shadow: Many small flickering flames creating warm pools and deep soft shadows.
+  texture_and_material: Dripping wax, tallow, wicks, iron candelabras, soot and smoke.
+  camera_and_composition: Intimate close groupings and vast halls glittering with countless flames.
+  atmosphere_and_mood: Warm, fragile and hushed, a world that could go dark with one breath.
+  rendering_and_quality: Low-key warm illustration with soft flame glow and wax detail.
+  creative_brief: "Candlepunk: a world lit only by candles, with dripping wax cities, chandelier forests, candle-maker guilds and faces glowing in warm flickering pools. Carry it through candle-only light, dripping wax, chandelier halls, flickering pools. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: candle-only light; dripping wax; chandelier halls; flickering pools
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - graphic wounds
+  - real religious leader likeness
+  - readable runes or scripture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: occult-myth-and-gothic-punks
+  categoryName: 8. Occult, Myth & Gothic Punks
+  tags:
+    - curation-v2
+    - occult-myth-and-gothic-punks
+    - candlepunk
+    - punk
+    - occult
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: candle-lit world punk

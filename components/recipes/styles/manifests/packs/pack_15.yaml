@@ -177,6 +177,20 @@ categories:
       - pack_15/SP15-114.yaml
       - pack_15/SP15-115.yaml
       - pack_15/SP15-116.yaml
+      - pack_15/SP15-240.yaml
+      - pack_15/SP15-241.yaml
+      - pack_15/SP15-242.yaml
+      - pack_15/SP15-243.yaml
+      - pack_15/SP15-244.yaml
+      - pack_15/SP15-245.yaml
+      - pack_15/SP15-246.yaml
+      - pack_15/SP15-247.yaml
+      - pack_15/SP15-248.yaml
+      - pack_15/SP15-249.yaml
+      - pack_15/SP15-250.yaml
+      - pack_15/SP15-251.yaml
+      - pack_15/SP15-252.yaml
+      - pack_15/SP15-253.yaml
   - id: space-atomic-and-ray-punks
     name: 9. Space, Atomic & Ray Punks
     presetRefs:
@@ -336,6 +350,20 @@ presetRefs:
   - pack_15/SP15-114.yaml
   - pack_15/SP15-115.yaml
   - pack_15/SP15-116.yaml
+  - pack_15/SP15-240.yaml
+  - pack_15/SP15-241.yaml
+  - pack_15/SP15-242.yaml
+  - pack_15/SP15-243.yaml
+  - pack_15/SP15-244.yaml
+  - pack_15/SP15-245.yaml
+  - pack_15/SP15-246.yaml
+  - pack_15/SP15-247.yaml
+  - pack_15/SP15-248.yaml
+  - pack_15/SP15-249.yaml
+  - pack_15/SP15-250.yaml
+  - pack_15/SP15-251.yaml
+  - pack_15/SP15-252.yaml
+  - pack_15/SP15-253.yaml
   - pack_15/SP15-117.yaml
   - pack_15/SP15-118.yaml
   - pack_15/SP15-119.yaml

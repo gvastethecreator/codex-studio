@@ -183,4 +183,431 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP15-240',
+    name: 'Alchemypunk',
+    displayName: 'Alchemypunk',
+    styleAnchors: ['Alchemypunk', 'alchemical laboratory punk', 'bubbling alembics'],
+    category: '8. Occult, Myth & Gothic Punks',
+    domain: 'alchemical laboratory punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Alchemypunk: renegade alchemists in cluttered laboratories, with bubbling alembics, glowing transmutation circles, gold dust, sulfur smoke and brass instruments.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; fill it with glass alembics, glowing circles, powders and brass tools of an alchemy lab.",
+      color_and_tone:
+        'Molten gold, sulfur yellow and mercury silver against dark wood and smoky umber.',
+      lighting_and_shadow: 'Glowing liquids and furnace fire lighting smoky laboratory darkness.',
+      texture_and_material:
+        'Glass alembics, copper stills, parchment, gold dust, smoke and old wood.',
+      camera_and_composition: 'Cluttered workbench scenes with a glowing reaction at the center.',
+      atmosphere_and_mood: 'Obsessive and electric, the dream of turning anything into gold.',
+      rendering_and_quality: 'Rich glowing illustration with detailed glassware and smoky light.',
+      creative_brief:
+        "Alchemypunk: renegade alchemists in cluttered laboratories, with bubbling alembics, glowing transmutation circles, gold dust, sulfur smoke and brass instruments. Carry it through bubbling alembics, glowing circles, gold dust, sulfur smoke. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'bubbling alembics; glowing circles; gold dust; sulfur smoke',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-241',
+    name: 'Grimoirepunk',
+    displayName: 'Grimoirepunk',
+    styleAnchors: ['Grimoirepunk', 'living spellbook punk', 'living books'],
+    category: '8. Occult, Myth & Gothic Punks',
+    domain: 'living spellbook punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Grimoirepunk: living spellbooks that breathe, bite and fly, with chained libraries, glowing illuminated diagrams, leather covers with eyes and pages turning in the wind.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; surround it with living spellbooks, chained shelves and glowing unreadable diagrams.",
+      color_and_tone:
+        'Aged parchment, oxblood leather and iron black with glowing violet and gold diagrams.',
+      lighting_and_shadow: 'Light rising from glowing open pages into dark library spaces.',
+      texture_and_material: 'Cracked leather, iron chains, brittle parchment, wax seals and dust.',
+      camera_and_composition: 'Towering chained shelves and books in flight across library halls.',
+      atmosphere_and_mood: 'Forbidden and alive, knowledge that wants to escape.',
+      rendering_and_quality:
+        'Detailed atmospheric illustration with glowing page light and aged textures.',
+      creative_brief:
+        "Grimoirepunk: living spellbooks that breathe, bite and fly, with chained libraries, glowing illuminated diagrams, leather covers with eyes and pages turning in the wind. Carry it through living books, chained shelves, glowing diagrams, flying pages. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'living books; chained shelves; glowing diagrams; flying pages',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-242',
+    name: 'Cathedralpunk',
+    displayName: 'Cathedralpunk',
+    styleAnchors: ['Cathedralpunk', 'gothic cathedral builder punk', 'scrap buttresses'],
+    category: '8. Occult, Myth & Gothic Punks',
+    domain: 'gothic cathedral builder punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cathedralpunk: rebel builders raising impossible gothic cathedrals from scrap, with flying buttresses of girders, stained glass from bottles and gargantuan spires.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; set it inside or beside towering scrap-built gothic cathedrals with colored glass and ribbed vaults.",
+      color_and_tone:
+        'Deep stone greys and rust with jewel-colored stained glass light in red, blue and gold.',
+      lighting_and_shadow:
+        'Colored light pouring through stained glass into dusty soaring interiors.',
+      texture_and_material: 'Stone, riveted girders, bottle glass, scaffolding, ropes and dust.',
+      camera_and_composition: 'Soaring vertical views up spires and down enormous naves.',
+      atmosphere_and_mood: 'Awe-struck and defiant, beauty built from the ruins of the old world.',
+      rendering_and_quality:
+        'Luminous detailed illustration with colored light shafts and deep scale.',
+      creative_brief:
+        "Cathedralpunk: rebel builders raising impossible gothic cathedrals from scrap, with flying buttresses of girders, stained glass from bottles and gargantuan spires. Carry it through scrap buttresses, bottle-glass windows, soaring spires, colored light shafts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'scrap buttresses; bottle-glass windows; soaring spires; colored light shafts',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-243',
+    name: 'Seancepunk',
+    displayName: 'Seancepunk',
+    styleAnchors: ['Seancepunk', 'victorian seance punk', 'round seance tables'],
+    category: '8. Occult, Myth & Gothic Punks',
+    domain: 'victorian seance punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Seancepunk: underground seance parlors with spirit cabinets, floating ectoplasm, candlelit round tables, trembling hands and ghost-photography glow.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; turn it into a candlelit seance with a round table, joined hands and pale spirits appearing.",
+      color_and_tone:
+        'Deep velvet burgundy and black with pale ghostly blue-white and candle gold.',
+      lighting_and_shadow: 'Candlelight from below and cold glowing spirits casting no shadows.',
+      texture_and_material:
+        'Velvet drapes, lace tablecloths, candle wax, brass and wisps of ectoplasm.',
+      camera_and_composition: 'Circular table compositions with a spirit rising at the center.',
+      atmosphere_and_mood: 'Hushed, thrilling and uncanny, the dead invited to dinner.',
+      rendering_and_quality:
+        'Atmospheric low-key illustration with glowing translucent spirits and velvet shadow.',
+      creative_brief:
+        "Seancepunk: underground seance parlors with spirit cabinets, floating ectoplasm, candlelit round tables, trembling hands and ghost-photography glow. Carry it through round seance tables, ectoplasm, candlelight, joined hands. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'round seance tables; ectoplasm; candlelight; joined hands',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-244',
+    name: 'Plaguepunk',
+    displayName: 'Plaguepunk',
+    styleAnchors: ['Plaguepunk', 'plague doctor culture punk', 'beaked masks'],
+    category: '8. Occult, Myth & Gothic Punks',
+    domain: 'plague doctor culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Plaguepunk: beaked plague doctors turned into a secret order, with leather masks, herb-filled beaks, waxed coats, lanterns and foggy quarantined streets.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; bring in beaked masked doctors, waxed coats, lanterns and foggy quarantine streets, without disease gore.",
+      color_and_tone:
+        'Black waxed leather and fog grey with sickly green lantern light and dried herb browns.',
+      lighting_and_shadow: 'Lantern pools in thick fog, beaked silhouettes against dim light.',
+      texture_and_material:
+        'Waxed leather, glass eye lenses, dried herbs, wooden canes and wet cobbles.',
+      camera_and_composition:
+        'Foggy narrow streets with lone masked figures or silent processions.',
+      atmosphere_and_mood: 'Eerie, solemn and protective, strangers who walk toward the danger.',
+      rendering_and_quality: 'Moody fog-layered illustration with lantern glow and leather sheen.',
+      creative_brief:
+        "Plaguepunk: beaked plague doctors turned into a secret order, with leather masks, herb-filled beaks, waxed coats, lanterns and foggy quarantined streets. Carry it through beaked masks, waxed coats, lanterns in fog, herb-filled beaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'beaked masks; waxed coats; lanterns in fog; herb-filled beaks',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-245',
+    name: 'Relicpunk',
+    displayName: 'Relicpunk',
+    styleAnchors: ['Relicpunk', 'holy relic reliquary punk', 'jeweled reliquaries'],
+    category: '8. Occult, Myth & Gothic Punks',
+    domain: 'holy relic reliquary punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Relicpunk: relic hunters and reliquary makers, with jeweled glass caskets, gilded containers, pilgrim badges, tiny holy objects and crowds of devoted pilgrims.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; enshrine it in jeweled reliquaries, gilded caskets and pilgrim offerings.",
+      color_and_tone:
+        'Gilded gold, deep enamel reds and blues with candle amber and dark chapel stone.',
+      lighting_and_shadow: 'Candlelight glinting on gold and gems in dark chapel spaces.',
+      texture_and_material: 'Gilded metal, cabochon gems, crystal glass, enamel and worn velvet.',
+      camera_and_composition: 'Close views of precious reliquaries and crowded pilgrim scenes.',
+      atmosphere_and_mood: 'Devout and slightly absurd, faith poured into tiny precious boxes.',
+      rendering_and_quality: 'Rich jeweled illustration with precise metalwork and candle glints.',
+      creative_brief:
+        "Relicpunk: relic hunters and reliquary makers, with jeweled glass caskets, gilded containers, pilgrim badges, tiny holy objects and crowds of devoted pilgrims. Carry it through jeweled reliquaries, gilded caskets, pilgrim crowds, candle glints. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'jeweled reliquaries; gilded caskets; pilgrim crowds; candle glints',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-246',
+    name: 'Candlepunk',
+    displayName: 'Candlepunk',
+    styleAnchors: ['Candlepunk', 'candle-lit world punk', 'candle-only light'],
+    category: '8. Occult, Myth & Gothic Punks',
+    domain: 'candle-lit world punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Candlepunk: a world lit only by candles, with dripping wax cities, chandelier forests, candle-maker guilds and faces glowing in warm flickering pools.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; light it only by candles, with dripping wax and flickering warm pools of light.",
+      color_and_tone: 'Warm candle gold and honey amber against deep brown-black shadow.',
+      lighting_and_shadow:
+        'Many small flickering flames creating warm pools and deep soft shadows.',
+      texture_and_material: 'Dripping wax, tallow, wicks, iron candelabras, soot and smoke.',
+      camera_and_composition:
+        'Intimate close groupings and vast halls glittering with countless flames.',
+      atmosphere_and_mood: 'Warm, fragile and hushed, a world that could go dark with one breath.',
+      rendering_and_quality: 'Low-key warm illustration with soft flame glow and wax detail.',
+      creative_brief:
+        "Candlepunk: a world lit only by candles, with dripping wax cities, chandelier forests, candle-maker guilds and faces glowing in warm flickering pools. Carry it through candle-only light, dripping wax, chandelier halls, flickering pools. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'candle-only light; dripping wax; chandelier halls; flickering pools',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-247',
+    name: 'Oraclepunk',
+    displayName: 'Oraclepunk',
+    styleAnchors: ['Oraclepunk', 'prophecy machine oracle punk', 'veiled oracle'],
+    category: '8. Occult, Myth & Gothic Punks',
+    domain: 'prophecy machine oracle punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Oraclepunk: oracles who read the future through smoke, trance and strange machines, with vapor-filled temples, bronze tripods and seekers waiting in long lines.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; bring in a veiled oracle, rising vapors, bronze tripods and anxious seekers.",
+      color_and_tone:
+        'Pale marble and bronze with drifting violet-grey smoke and warm brazier orange.',
+      lighting_and_shadow: 'Brazier fire glowing through thick smoke, faces half hidden in haze.',
+      texture_and_material:
+        'Weathered marble, bronze tripods, laurel leaves, veils and curling vapor.',
+      camera_and_composition:
+        'Temple interiors with the oracle framed high in smoke above small seekers.',
+      atmosphere_and_mood: 'Mysterious and tense, every answer arriving as a riddle.',
+      rendering_and_quality: 'Hazy atmospheric illustration with layered smoke and warm fire glow.',
+      creative_brief:
+        "Oraclepunk: oracles who read the future through smoke, trance and strange machines, with vapor-filled temples, bronze tripods and seekers waiting in long lines. Carry it through veiled oracle, rising vapors, bronze tripods, waiting seekers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'veiled oracle; rising vapors; bronze tripods; waiting seekers',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-248',
+    name: 'Golempunk',
+    displayName: 'Golempunk',
+    styleAnchors: ['Golempunk', 'clay golem workshop punk', 'clay golems'],
+    category: '8. Occult, Myth & Gothic Punks',
+    domain: 'clay golem workshop punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Golempunk: workshops where clay golems are sculpted and awakened, with giant clay bodies, glowing sigil hearts, potter wheels and river-mud foundries.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; bring in massive handmade clay golems with glowing chest sigils and finger-marked surfaces.",
+      color_and_tone:
+        'Earthy terracotta, river-mud brown and ochre with a single glowing gold sigil light.',
+      lighting_and_shadow: 'Warm workshop light and the golden glow from each golem chest.',
+      texture_and_material: 'Wet clay, fingerprints, cracked dry mud, kiln brick and wooden tools.',
+      camera_and_composition:
+        'Towering golems beside small human makers for strong scale contrast.',
+      atmosphere_and_mood: 'Earthy, protective and heavy, strength made from the riverbank.',
+      rendering_and_quality:
+        'Tactile sculptural illustration with finger-marked clay and warm glow.',
+      creative_brief:
+        "Golempunk: workshops where clay golems are sculpted and awakened, with giant clay bodies, glowing sigil hearts, potter wheels and river-mud foundries. Carry it through clay golems, glowing chest sigils, fingerprints in clay, potter workshops. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'clay golems; glowing chest sigils; fingerprints in clay; potter workshops',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-249',
+    name: 'Gargoylepunk',
+    displayName: 'Gargoylepunk',
+    styleAnchors: ['Gargoylepunk', 'living gargoyle rooftop punk', 'living gargoyles'],
+    category: '8. Occult, Myth & Gothic Punks',
+    domain: 'living gargoyle rooftop punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gargoylepunk: stone gargoyles that wake at night and guard the city, with carved wings, rain-spout mouths, cathedral rooftops and moonlit patrols.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; set it on gothic rooftops at night, with living stone gargoyles guarding or moving through it.",
+      color_and_tone:
+        'Weathered stone greys and moss greens under deep blue moonlight with warm window glows.',
+      lighting_and_shadow: 'Cold moonlight and rain sheen on stone, warm city lights far below.',
+      texture_and_material:
+        'Weathered limestone, moss, lichen, rain-streaked stone and lead roofing.',
+      camera_and_composition: 'Rooftop ledges with gargoyles perched high over the glowing city.',
+      atmosphere_and_mood: 'Watchful, gruff and loyal, monsters that protect the sleeping.',
+      rendering_and_quality: 'Moody textured illustration with moonlit stone and rain detail.',
+      creative_brief:
+        "Gargoylepunk: stone gargoyles that wake at night and guard the city, with carved wings, rain-spout mouths, cathedral rooftops and moonlit patrols. Carry it through living gargoyles, cathedral rooftops, moonlit patrols, rain-streaked stone. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'living gargoyles; cathedral rooftops; moonlit patrols; rain-streaked stone',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-250',
+    name: 'Masquepunk',
+    displayName: 'Masquepunk',
+    styleAnchors: ['Masquepunk', 'occult masquerade punk', 'ornate masks'],
+    category: '8. Occult, Myth & Gothic Punks',
+    domain: 'occult masquerade punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Masquepunk: secret masquerades of hidden identities, with ornate masks, candlelit ballrooms, occult societies, feathers and glances behind porcelain faces.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; turn it into a masked ball where every figure hides behind ornate masks and costumes.",
+      color_and_tone:
+        'Deep velvet black and gold with porcelain white masks and rich jewel accents.',
+      lighting_and_shadow: 'Candelabra light glinting on masks and gilded mirrors in dark halls.',
+      texture_and_material:
+        'Porcelain, gold leaf, feathers, velvet, lace and polished marble floors.',
+      camera_and_composition:
+        'Crowded ballroom compositions with masked faces turned toward the viewer.',
+      atmosphere_and_mood: 'Seductive, secretive and dangerous, nobody is who they seem.',
+      rendering_and_quality: 'Opulent detailed illustration with glinting masks and candle glow.',
+      creative_brief:
+        "Masquepunk: secret masquerades of hidden identities, with ornate masks, candlelit ballrooms, occult societies, feathers and glances behind porcelain faces. Carry it through ornate masks, candlelit ballrooms, hidden identities, gold and feathers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'ornate masks; candlelit ballrooms; hidden identities; gold and feathers',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-251',
+    name: 'Mirrorpunk',
+    displayName: 'Mirrorpunk',
+    styleAnchors: ['Mirrorpunk', 'occult mirror world punk', 'haunted mirrors'],
+    category: '8. Occult, Myth & Gothic Punks',
+    domain: 'occult mirror world punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Mirrorpunk: a culture obsessed with haunted mirrors, with silvered halls, cracked reflections, reflections that move on their own and doors into mirror worlds.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; multiply and distort it through antique mirrors where reflections disagree with reality.",
+      color_and_tone:
+        'Tarnished silver, antique gold frames and cool grey-blue with deep black shadows.',
+      lighting_and_shadow: 'Candle and moonlight bouncing endlessly between facing mirrors.',
+      texture_and_material: 'Silvered glass, tarnish, cracks, gilded frames and dust sheets.',
+      camera_and_composition:
+        'Infinite mirror corridors and figures facing reflections that differ.',
+      atmosphere_and_mood: 'Uncanny and hypnotic, the fear that your reflection has its own plans.',
+      rendering_and_quality:
+        'Precise reflective illustration with layered mirror depth and tarnish.',
+      creative_brief:
+        "Mirrorpunk: a culture obsessed with haunted mirrors, with silvered halls, cracked reflections, reflections that move on their own and doors into mirror worlds. Carry it through haunted mirrors, disagreeing reflections, infinite corridors, tarnished silver. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'haunted mirrors; disagreeing reflections; infinite corridors; tarnished silver',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-252',
+    name: 'Astrolabepunk',
+    displayName: 'Astrolabepunk',
+    styleAnchors: ['Astrolabepunk', 'occult astronomy instrument punk', 'giant astrolabes'],
+    category: '8. Occult, Myth & Gothic Punks',
+    domain: 'occult astronomy instrument punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Astrolabepunk: star-reading guilds with giant brass astrolabes, orreries, domed observatories and zodiac machines turning above candlelit scholars.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; surround it with brass astrolabes, turning orreries and domed observatories under the stars.",
+      color_and_tone: 'Polished brass and gold with deep midnight blue and pale starlight.',
+      lighting_and_shadow: 'Starlight through open domes and candles glinting on brass rings.',
+      texture_and_material:
+        'Engraved brass rings, gears, glass lenses, star maps drawn as pictures only.',
+      camera_and_composition:
+        'Circular compositions with concentric rings and domes framing the sky.',
+      atmosphere_and_mood: 'Wondrous and precise, the universe measured by candlelight.',
+      rendering_and_quality: 'Crisp detailed illustration with fine engraved brass and starlight.',
+      creative_brief:
+        "Astrolabepunk: star-reading guilds with giant brass astrolabes, orreries, domed observatories and zodiac machines turning above candlelit scholars. Carry it through giant astrolabes, turning orreries, observatory domes, brass rings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'giant astrolabes; turning orreries; observatory domes; brass rings',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-253',
+    name: 'Djinnpunk',
+    displayName: 'Djinnpunk',
+    styleAnchors: ['Djinnpunk', 'smoke spirit bargain punk', 'brass lamps'],
+    category: '8. Occult, Myth & Gothic Punks',
+    domain: 'smoke spirit bargain punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Djinnpunk: spirits of smoke and fire bound in brass lamps and bottles, with desert markets of sealed vessels, swirling smoke giants and dangerous bargains.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; bring in a towering smoke spirit rising from a brass vessel, and the bargain it offers.",
+      color_and_tone:
+        'Brass gold and turquoise with swirling violet and ember-orange smoke over desert tones.',
+      lighting_and_shadow: 'Glowing ember light inside the smoke spirit lighting faces from above.',
+      texture_and_material:
+        'Hammered brass, glass bottles, silk rugs, desert sand and curling smoke.',
+      camera_and_composition: 'Low angles with a huge smoke figure towering over small humans.',
+      atmosphere_and_mood: 'Tempting and dangerous, every wish comes with a price.',
+      rendering_and_quality: 'Glowing illustration with flowing smoke forms and brass detail.',
+      creative_brief:
+        "Djinnpunk: spirits of smoke and fire bound in brass lamps and bottles, with desert markets of sealed vessels, swirling smoke giants and dangerous bargains. Carry it through brass lamps, smoke giants, sealed bottles, dangerous bargains. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'brass lamps; smoke giants; sealed bottles; dangerous bargains',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

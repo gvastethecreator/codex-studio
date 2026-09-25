@@ -3,7 +3,7 @@
     {
       "id": "pack_15",
       "name": "Punk Spectrum Vault",
-      "presetCount": 152
+      "presetCount": 166
     }
   ],
   "presets": [
@@ -2082,6 +2082,218 @@
       "searchableText": "sp15-116 folk horror punk 8. occult, myth & gothic punks occult futures pack_15 punk spectrum vault occult-myth-and-gothic-punks punk-spectrum-vault occult-myth-and-gothic-punks"
     },
     {
+      "id": "SP15-240",
+      "name": "Alchemypunk",
+      "styleAnchors": ["Alchemypunk", "alchemical laboratory punk", "bubbling alembics"],
+      "ref": "pack_15/SP15-240.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "occult-myth-and-gothic-punks",
+      "categoryName": "8. Occult, Myth & Gothic Punks",
+      "domain": "alchemical laboratory punk",
+      "tags": ["punk-spectrum-vault", "occult-myth-and-gothic-punks", "alchemical-laboratory-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-240 alchemypunk alchemical laboratory punk bubbling alembics 8. occult, myth & gothic punks occult futures alchemical laboratory punk pack_15 punk spectrum vault occult-myth-and-gothic-punks punk-spectrum-vault occult-myth-and-gothic-punks alchemical-laboratory-punk"
+    },
+    {
+      "id": "SP15-241",
+      "name": "Grimoirepunk",
+      "styleAnchors": ["Grimoirepunk", "living spellbook punk", "living books"],
+      "ref": "pack_15/SP15-241.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "occult-myth-and-gothic-punks",
+      "categoryName": "8. Occult, Myth & Gothic Punks",
+      "domain": "living spellbook punk",
+      "tags": ["punk-spectrum-vault", "occult-myth-and-gothic-punks", "living-spellbook-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-241 grimoirepunk living spellbook punk living books 8. occult, myth & gothic punks occult futures living spellbook punk pack_15 punk spectrum vault occult-myth-and-gothic-punks punk-spectrum-vault occult-myth-and-gothic-punks living-spellbook-punk"
+    },
+    {
+      "id": "SP15-242",
+      "name": "Cathedralpunk",
+      "styleAnchors": ["Cathedralpunk", "gothic cathedral builder punk", "scrap buttresses"],
+      "ref": "pack_15/SP15-242.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "occult-myth-and-gothic-punks",
+      "categoryName": "8. Occult, Myth & Gothic Punks",
+      "domain": "gothic cathedral builder punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "occult-myth-and-gothic-punks",
+        "gothic-cathedral-builder-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-242 cathedralpunk gothic cathedral builder punk scrap buttresses 8. occult, myth & gothic punks occult futures gothic cathedral builder punk pack_15 punk spectrum vault occult-myth-and-gothic-punks punk-spectrum-vault occult-myth-and-gothic-punks gothic-cathedral-builder-punk"
+    },
+    {
+      "id": "SP15-243",
+      "name": "Seancepunk",
+      "styleAnchors": ["Seancepunk", "victorian seance punk", "round seance tables"],
+      "ref": "pack_15/SP15-243.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "occult-myth-and-gothic-punks",
+      "categoryName": "8. Occult, Myth & Gothic Punks",
+      "domain": "victorian seance punk",
+      "tags": ["punk-spectrum-vault", "occult-myth-and-gothic-punks", "victorian-seance-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-243 seancepunk victorian seance punk round seance tables 8. occult, myth & gothic punks occult futures victorian seance punk pack_15 punk spectrum vault occult-myth-and-gothic-punks punk-spectrum-vault occult-myth-and-gothic-punks victorian-seance-punk"
+    },
+    {
+      "id": "SP15-244",
+      "name": "Plaguepunk",
+      "styleAnchors": ["Plaguepunk", "plague doctor culture punk", "beaked masks"],
+      "ref": "pack_15/SP15-244.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "occult-myth-and-gothic-punks",
+      "categoryName": "8. Occult, Myth & Gothic Punks",
+      "domain": "plague doctor culture punk",
+      "tags": ["punk-spectrum-vault", "occult-myth-and-gothic-punks", "plague-doctor-culture-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-244 plaguepunk plague doctor culture punk beaked masks 8. occult, myth & gothic punks occult futures plague doctor culture punk pack_15 punk spectrum vault occult-myth-and-gothic-punks punk-spectrum-vault occult-myth-and-gothic-punks plague-doctor-culture-punk"
+    },
+    {
+      "id": "SP15-245",
+      "name": "Relicpunk",
+      "styleAnchors": ["Relicpunk", "holy relic reliquary punk", "jeweled reliquaries"],
+      "ref": "pack_15/SP15-245.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "occult-myth-and-gothic-punks",
+      "categoryName": "8. Occult, Myth & Gothic Punks",
+      "domain": "holy relic reliquary punk",
+      "tags": ["punk-spectrum-vault", "occult-myth-and-gothic-punks", "holy-relic-reliquary-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-245 relicpunk holy relic reliquary punk jeweled reliquaries 8. occult, myth & gothic punks occult futures holy relic reliquary punk pack_15 punk spectrum vault occult-myth-and-gothic-punks punk-spectrum-vault occult-myth-and-gothic-punks holy-relic-reliquary-punk"
+    },
+    {
+      "id": "SP15-246",
+      "name": "Candlepunk",
+      "styleAnchors": ["Candlepunk", "candle-lit world punk", "candle-only light"],
+      "ref": "pack_15/SP15-246.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "occult-myth-and-gothic-punks",
+      "categoryName": "8. Occult, Myth & Gothic Punks",
+      "domain": "candle-lit world punk",
+      "tags": ["punk-spectrum-vault", "occult-myth-and-gothic-punks", "candle-lit-world-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-246 candlepunk candle-lit world punk candle-only light 8. occult, myth & gothic punks occult futures candle-lit world punk pack_15 punk spectrum vault occult-myth-and-gothic-punks punk-spectrum-vault occult-myth-and-gothic-punks candle-lit-world-punk"
+    },
+    {
+      "id": "SP15-247",
+      "name": "Oraclepunk",
+      "styleAnchors": ["Oraclepunk", "prophecy machine oracle punk", "veiled oracle"],
+      "ref": "pack_15/SP15-247.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "occult-myth-and-gothic-punks",
+      "categoryName": "8. Occult, Myth & Gothic Punks",
+      "domain": "prophecy machine oracle punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "occult-myth-and-gothic-punks",
+        "prophecy-machine-oracle-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-247 oraclepunk prophecy machine oracle punk veiled oracle 8. occult, myth & gothic punks occult futures prophecy machine oracle punk pack_15 punk spectrum vault occult-myth-and-gothic-punks punk-spectrum-vault occult-myth-and-gothic-punks prophecy-machine-oracle-punk"
+    },
+    {
+      "id": "SP15-248",
+      "name": "Golempunk",
+      "styleAnchors": ["Golempunk", "clay golem workshop punk", "clay golems"],
+      "ref": "pack_15/SP15-248.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "occult-myth-and-gothic-punks",
+      "categoryName": "8. Occult, Myth & Gothic Punks",
+      "domain": "clay golem workshop punk",
+      "tags": ["punk-spectrum-vault", "occult-myth-and-gothic-punks", "clay-golem-workshop-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-248 golempunk clay golem workshop punk clay golems 8. occult, myth & gothic punks occult futures clay golem workshop punk pack_15 punk spectrum vault occult-myth-and-gothic-punks punk-spectrum-vault occult-myth-and-gothic-punks clay-golem-workshop-punk"
+    },
+    {
+      "id": "SP15-249",
+      "name": "Gargoylepunk",
+      "styleAnchors": ["Gargoylepunk", "living gargoyle rooftop punk", "living gargoyles"],
+      "ref": "pack_15/SP15-249.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "occult-myth-and-gothic-punks",
+      "categoryName": "8. Occult, Myth & Gothic Punks",
+      "domain": "living gargoyle rooftop punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "occult-myth-and-gothic-punks",
+        "living-gargoyle-rooftop-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-249 gargoylepunk living gargoyle rooftop punk living gargoyles 8. occult, myth & gothic punks occult futures living gargoyle rooftop punk pack_15 punk spectrum vault occult-myth-and-gothic-punks punk-spectrum-vault occult-myth-and-gothic-punks living-gargoyle-rooftop-punk"
+    },
+    {
+      "id": "SP15-250",
+      "name": "Masquepunk",
+      "styleAnchors": ["Masquepunk", "occult masquerade punk", "ornate masks"],
+      "ref": "pack_15/SP15-250.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "occult-myth-and-gothic-punks",
+      "categoryName": "8. Occult, Myth & Gothic Punks",
+      "domain": "occult masquerade punk",
+      "tags": ["punk-spectrum-vault", "occult-myth-and-gothic-punks", "occult-masquerade-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-250 masquepunk occult masquerade punk ornate masks 8. occult, myth & gothic punks occult futures occult masquerade punk pack_15 punk spectrum vault occult-myth-and-gothic-punks punk-spectrum-vault occult-myth-and-gothic-punks occult-masquerade-punk"
+    },
+    {
+      "id": "SP15-251",
+      "name": "Mirrorpunk",
+      "styleAnchors": ["Mirrorpunk", "occult mirror world punk", "haunted mirrors"],
+      "ref": "pack_15/SP15-251.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "occult-myth-and-gothic-punks",
+      "categoryName": "8. Occult, Myth & Gothic Punks",
+      "domain": "occult mirror world punk",
+      "tags": ["punk-spectrum-vault", "occult-myth-and-gothic-punks", "occult-mirror-world-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-251 mirrorpunk occult mirror world punk haunted mirrors 8. occult, myth & gothic punks occult futures occult mirror world punk pack_15 punk spectrum vault occult-myth-and-gothic-punks punk-spectrum-vault occult-myth-and-gothic-punks occult-mirror-world-punk"
+    },
+    {
+      "id": "SP15-252",
+      "name": "Astrolabepunk",
+      "styleAnchors": ["Astrolabepunk", "occult astronomy instrument punk", "giant astrolabes"],
+      "ref": "pack_15/SP15-252.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "occult-myth-and-gothic-punks",
+      "categoryName": "8. Occult, Myth & Gothic Punks",
+      "domain": "occult astronomy instrument punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "occult-myth-and-gothic-punks",
+        "occult-astronomy-instrument-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-252 astrolabepunk occult astronomy instrument punk giant astrolabes 8. occult, myth & gothic punks occult futures occult astronomy instrument punk pack_15 punk spectrum vault occult-myth-and-gothic-punks punk-spectrum-vault occult-myth-and-gothic-punks occult-astronomy-instrument-punk"
+    },
+    {
+      "id": "SP15-253",
+      "name": "Djinnpunk",
+      "styleAnchors": ["Djinnpunk", "smoke spirit bargain punk", "brass lamps"],
+      "ref": "pack_15/SP15-253.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "occult-myth-and-gothic-punks",
+      "categoryName": "8. Occult, Myth & Gothic Punks",
+      "domain": "smoke spirit bargain punk",
+      "tags": ["punk-spectrum-vault", "occult-myth-and-gothic-punks", "smoke-spirit-bargain-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-253 djinnpunk smoke spirit bargain punk brass lamps 8. occult, myth & gothic punks occult futures smoke spirit bargain punk pack_15 punk spectrum vault occult-myth-and-gothic-punks punk-spectrum-vault occult-myth-and-gothic-punks smoke-spirit-bargain-punk"
+    },
+    {
       "id": "SP15-117",
       "name": "Atompunk",
       "ref": "pack_15/SP15-117.yaml",
@@ -2154,5 +2366,5 @@
       "searchableText": "sp15-122 low-tech punk 10. primitive, stone & salvage punks primitive & salvage futures pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks"
     }
   ],
-  "totalPresetCount": 152
+  "totalPresetCount": 166
 }

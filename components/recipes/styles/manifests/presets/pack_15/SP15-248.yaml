@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP15-248
+packId: pack_15
+name: Golempunk
+styleAnchors:
+  - Golempunk
+  - clay golem workshop punk
+  - clay golems
+displayName: Golempunk
+category: 8. Occult, Myth & Gothic Punks
+domain: clay golem workshop punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - occult-myth-and-gothic-punks
+  - golempunk
+  - punk
+  - occult
+visualDna:
+  aesthetic: 'Golempunk: workshops where clay golems are sculpted and awakened, with giant clay bodies, glowing sigil hearts, potter wheels and river-mud foundries.'
+  subject_treatment: Keep the prompt's subject and setting; bring in massive handmade clay golems with glowing chest sigils and finger-marked surfaces.
+  color_and_tone: Earthy terracotta, river-mud brown and ochre with a single glowing gold sigil light.
+  lighting_and_shadow: Warm workshop light and the golden glow from each golem chest.
+  texture_and_material: Wet clay, fingerprints, cracked dry mud, kiln brick and wooden tools.
+  camera_and_composition: Towering golems beside small human makers for strong scale contrast.
+  atmosphere_and_mood: Earthy, protective and heavy, strength made from the riverbank.
+  rendering_and_quality: Tactile sculptural illustration with finger-marked clay and warm glow.
+  creative_brief: "Golempunk: workshops where clay golems are sculpted and awakened, with giant clay bodies, glowing sigil hearts, potter wheels and river-mud foundries. Carry it through clay golems, glowing chest sigils, fingerprints in clay, potter workshops. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: clay golems; glowing chest sigils; fingerprints in clay; potter workshops
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - graphic wounds
+  - real religious leader likeness
+  - readable runes or scripture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: occult-myth-and-gothic-punks
+  categoryName: 8. Occult, Myth & Gothic Punks
+  tags:
+    - curation-v2
+    - occult-myth-and-gothic-punks
+    - golempunk
+    - punk
+    - occult
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: clay golem workshop punk
