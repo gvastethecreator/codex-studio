@@ -236,7 +236,8 @@ export const GENERATED_STYLE_PRESETS = [
         'Single matcap tone — red wax, grey clay or brown clay — with a baked highlight and dark cavities.',
       lighting_and_shadow:
         'Matcap shading only: a fixed studio highlight, no cast shadows, no global illumination.',
-      texture_and_material: 'Brush strokes, pinched edges, clay buildup, polygon-free smoothness.',
+      texture_and_material:
+        'Brush strokes, pinched edges, clay buildup, seamless organic smoothness.',
       camera_and_composition: 'Bust or full figure centered on a dark viewport background.',
       atmosphere_and_mood: "Raw and artistic, form discovered under the sculptor's hand.",
       rendering_and_quality: 'Viewport sculpt look; no textures, no scene lighting, no UI.',
@@ -328,7 +329,7 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Low camera over the endless floor, objects arranged like a demo scene.',
       atmosphere_and_mood: 'Crystalline and uncanny, a perfect world with no dust.',
-      rendering_and_quality: 'Aliased-free but unmistakably early raytraced look; no noise, no GI.',
+      rendering_and_quality: 'Clean-edged but unmistakably early raytraced look; no noise, no GI.',
       creative_brief:
         "Classic recursive raytracing: perfect mirrors and clear glass reflecting and refracting each other endlessly over an infinite floor, with razor-hard shadows. Carry it through perfect mirrors and glass, hard point-light shadows, infinite checkerboard, recursive reflections, no bounce light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:

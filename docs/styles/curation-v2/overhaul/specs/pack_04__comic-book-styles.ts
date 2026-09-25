@@ -269,7 +269,7 @@ const spec: Spec = {
         rendering_and_quality:
           'Fine-art painted finish with anatomical and textile fidelity; no ink outlines and no digital gloss.',
         key_features:
-          'fully painted gouache; outline-free forms; warm soft key; observed fabric and metal; realist proportions',
+          'fully painted gouache; forms without outlines; warm soft key; observed fabric and metal; realist proportions',
       }),
       avoid: [...AVOID, 'ink outlines', 'cel shading'],
       briefs: [

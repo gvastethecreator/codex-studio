@@ -66,7 +66,7 @@ export const GENERATED_STYLE_PRESETS = [
       'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, soft, nature, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Constructivism: dynamic diagonals, bold wedges and photomontage-free graphic propaganda energy.',
+        'Constructivism: dynamic diagonals, bold wedges and graphic propaganda energy without photomontage.',
       subject_treatment:
         "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is built from strong diagonal wedges, bars and circles pushing across the frame.",
       color_and_tone: 'Red, black and cream, used consistently across subject and background.',
@@ -82,7 +82,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Bold print-like finish, with clean, deliberate marks and no accidental noise.',
       key_features: 'dynamic diagonals; red wedges; black bars; cream ground',
       creative_brief:
-        "Constructivism: dynamic diagonals, bold wedges and photomontage-free graphic propaganda energy. Carry it through dynamic diagonals, red wedges, black bars, cream ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Constructivism: dynamic diagonals, bold wedges and graphic propaganda energy without photomontage. Carry it through dynamic diagonals, red wedges, black bars, cream ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {

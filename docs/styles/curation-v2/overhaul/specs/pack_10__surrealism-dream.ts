@@ -68,8 +68,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "Surreal painting of a knight's helmet and sword melting over the edge of a stone altar in a vast ochre desert, long crisp shadows. No text or logo.",
-        'Surreal painting of a castle tower drooping like wax over a cliff. No text or logo.',
-        "Surreal painting of a crown melting on a sleeping lion's head. No text or logo.",
+        'Surreal painting of a lighthouse drooping like soft wax over a sea cliff, its lamp still burning, beneath a precise dream sky of pale green fading to violet with one long shadow on the rocks. No text or logo.',
+        'Surreal painting of a grandfather clock melting over the branch of a dead olive tree in a flat ochre desert, the pendulum dripping, under an eerie cloudless sky. No text or logo.',
       ],
     },
     'SP10-032': {
@@ -86,8 +86,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Liminal photograph of an empty castle throne room at 3am lit by flat fluorescent tubes, nobody there. No text or logo.',
-        'Liminal photograph of a medieval market square completely empty under overcast light. No text or logo.',
-        'Liminal photograph of a monastery corridor with one flickering light. No text or logo.',
+        'Liminal photograph of a covered village market square completely empty at dawn under flat overcast light, stalls shuttered, puddles and one abandoned shopping cart. No text or logo.',
+        'Liminal photograph of a hotel corridor at 3 a.m. with one flickering ceiling light, patterned carpet stretching into darkness and every door slightly ajar. No text or logo.',
       ],
     },
     'SP10-033': {
@@ -103,9 +103,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Psychedelic painting of a wizard's face dissolving into swirling magenta and acid-green patterns. No text or logo.",
-        'Psychedelic painting of a dragon. No text or logo.',
-        'Psychedelic painting of a mushroom forest castle. No text or logo.',
+        "Psychedelic painting of a bearded sage's face dissolving into swirling magenta and acid-green patterns, his beard flowing into melting paisley and vibrating concentric rings. No text or logo.",
+        'Psychedelic painting of a tiger whose stripes melt into vibrating orange and violet waves, its eyes radiating concentric color rings. No text or logo.',
+        'Psychedelic painting of a mushroom forest where the caps drip into swirling saturated patterns, a small cottage glowing among them. No text or logo.',
       ],
     },
     'SP10-034': {
@@ -122,8 +122,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Dreamcore image of a small castle on a pastel cloud field under soft bloom, eerily still. No text or logo.',
-        'Dreamcore image of a carousel horse in a meadow. No text or logo.',
-        "Dreamcore image of a knight's bedroom. No text or logo.",
+        'Dreamcore image of a carousel horse standing alone in a pastel meadow at dusk, soft haze, a floating balloon and faint childhood eeriness. No text or logo.',
+        "Dreamcore image of a child's bedroom with clouds drifting through the window into the room, pastel walls and a nightlight glowing in daylight. No text or logo.",
       ],
     },
     'SP10-035': {
@@ -140,8 +140,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Magical realist painting of an old woman hanging laundry while one sheet floats away carrying a sleeping swan. No text or logo.',
-        'Magical realist painting of a blacksmith whose sparks become butterflies. No text or logo.',
-        'Magical realist painting of a knight fishing stars from a well. No text or logo.',
+        'Magical realist painting of a village blacksmith at work whose sparks calmly turn into orange butterflies drifting out of the forge door. No text or logo.',
+        'Magical realist painting of an old man sitting on a well in a quiet courtyard, drawing up a bucket full of stars while his neighbors hang laundry. No text or logo.',
       ],
     },
     'SP10-036': {
@@ -157,9 +157,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Double exposure of a knight's silhouette filled with a burning forest. No text or logo.",
-        'Double exposure of a wolf filled with a snowy castle. No text or logo.',
-        'Double exposure of a crowned head filled with stormy sea. No text or logo.',
+        "Double exposure of a firefighter's silhouette filled with a burning forest, flames rising through her helmet and shoulders against a pale sky. No text or logo.",
+        "Double exposure of a wolf's head filled with a snowy pine forest and a rising moon, the edges of the silhouette fading into white. No text or logo.",
+        "Double exposure of a woman's profile filled with a stormy sea and a lighthouse, waves crashing where her hair would be. No text or logo.",
       ],
     },
     'SP10-037': {
@@ -176,9 +176,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Impossible-perspective drawing of monks climbing endless staircases in a castle where every wall is also a floor. No text or logo.',
-        'Impossible-perspective waterfall mill. No text or logo.',
-        'Impossible-perspective library. No text or logo.',
+        'Impossible-perspective drawing of monks climbing endless staircases in a monastery where every wall is also a floor, stairs looping back on themselves. No text or logo.',
+        'Impossible-perspective drawing of a water mill where the stream flows downhill in a loop and returns to its own source, the wheel turning forever. No text or logo.',
+        'Impossible-perspective drawing of a library whose shelves connect in a Penrose-like loop, readers walking upside down on the balconies above. No text or logo.',
       ],
     },
     'SP10-038': {
@@ -195,8 +195,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "Vaporwave image of a knight's marble bust on a pink grid floor under a teal sunset. No text or logo.",
-        'Vaporwave dragon. No text or logo.',
-        'Vaporwave castle. No text or logo.',
+        'Vaporwave image of a marble bust of a Roman athlete on a pink grid floor with palm trees and a gradient sunset, pastel teal and pink haze and a floating dolphin. No text or logo.',
+        'Vaporwave image of an empty swimming pool at night with pastel neon, classical columns and a striped sunset reflected in the tiles. No text or logo.',
       ],
     },
     'SP10-039': {
@@ -213,9 +213,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'sexual imagery'],
       briefs: [
-        'Biomechanical surreal image of a throne fused with ribbed vertebrae and glossy tubes. No text or logo.',
-        'Biomechanical dragon skull. No text or logo.',
-        'Biomechanical knight. No text or logo.',
+        'Biomechanical surreal image of a throne fused with ribbed vertebrae and glossy black tubes, organic anatomy merging with machinery in dark monochrome. No text or logo.',
+        'Biomechanical surreal image of a grand piano whose keys become ribs and whose legs are glossy ribbed tubes, dark silver monochrome. No text or logo.',
+        "Biomechanical surreal image of a woman's profile fused with ribbed metal cables and vertebrae along her neck, glossy dark monochrome. No text or logo.",
       ],
     },
     'SP10-040': {
@@ -231,9 +231,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Collage surrealist image of a knight whose head is a cut-out vintage hot-air balloon. No text or logo.',
-        'Collage surreal dragon. No text or logo.',
-        'Collage surreal castle. No text or logo.',
+        'Collage surrealist image of a gentleman in a bowler hat whose head is a cut-out vintage hot-air balloon, pasted onto an old seaside postcard. No text or logo.',
+        'Collage surrealist image of an elephant with butterfly wings cut from a Victorian engraving, flying over a pasted city photo. No text or logo.',
+        'Collage surrealist image of a lighthouse growing from a teacup on a vintage tablecloth, cut edges and mismatched print textures. No text or logo.',
       ],
     },
     'SP10-041': {
@@ -249,9 +249,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Metaphysical painting of a knight's statue in an empty arcaded square with long shadows. No text or logo.",
-        'Metaphysical painting of a lone horse. No text or logo.',
-        'Metaphysical painting of a tower and train. No text or logo.',
+        'Metaphysical painting of a classical statue in an empty arcaded square with long raking shadows, a distant train and a green sky, enigmatic stillness. No text or logo.',
+        'Metaphysical painting of a lone horse standing in an empty arcaded piazza at late afternoon, stretched shadows and a red tower. No text or logo.',
+        'Metaphysical painting of a tower and a small steam train on the horizon behind an empty arcade, long shadows. No text or logo.',
       ],
     },
     'SP10-042': {
@@ -267,9 +267,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Pop surrealist painting of a big-eyed girl knight riding a candy-colored skull horse. No text or logo.',
-        'Pop surrealist dragon. No text or logo.',
-        'Pop surrealist witch. No text or logo.',
+        'Pop surrealist painting of a big-eyed girl riding a candy-colored skull horse through a lollipop forest, glossy cute-grotesque with dark undertones. No text or logo.',
+        'Pop surrealist painting of a pastel octopus wearing a tiara, glossy candy colors and one tear on its big eye. No text or logo.',
+        'Pop surrealist painting of a big-headed witch girl holding a bleeding cupcake, candy pink and mint with a dark background. No text or logo.',
       ],
     },
     'SP10-043': {
@@ -285,9 +285,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Dark fantasy painting of a lone knight facing a colossal skeletal dragon in a ruined cathedral. No text or logo.',
-        'Dark fantasy witch queen. No text or logo.',
-        'Dark fantasy city of bells. No text or logo.',
+        'Dark fantasy painting of a lone warrior facing a colossal skeletal beast in a ruined cathedral, fading light through broken windows. No text or logo.',
+        'Dark fantasy painting of a witch queen on a thorn throne in a drowned hall, pale light on black water. No text or logo.',
+        'Dark fantasy painting of a city of bells built into a cliff, fog and fading sunset, bells ringing without ringers. No text or logo.',
       ],
     },
     'SP10-044': {
@@ -303,9 +303,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Solarpunk image of a castle covered in gardens and solar sails with villagers harvesting. No text or logo.',
-        'Solarpunk knight. No text or logo.',
-        'Solarpunk dragon roost. No text or logo.',
+        'Solarpunk image of a hillside town covered in terraced gardens and solar sails, villagers harvesting fruit on rooftops. No text or logo.',
+        'Solarpunk image of a bicycle repair cooperative under a solar canopy, vines on the frames and children learning. No text or logo.',
+        'Solarpunk image of a floating greenhouse market on a wide river, glass domes and solar panels on barges, traders passing baskets of vegetables between boats at golden hour. No text or logo.',
       ],
     },
     'SP10-045': {
@@ -321,9 +321,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Weirdcore low-fi photo of a knight standing in a suburban kitchen, oddly framed, flash-lit. No text or logo.',
-        'Weirdcore dragon in a hallway. No text or logo.',
-        'Weirdcore castle in a field of eyes. No text or logo.',
+        'Weirdcore low-fi photo of a mascot costume standing in a suburban kitchen, oddly framed and harshly flash-lit. No text or logo.',
+        'Weirdcore low-fi photo of a beige hallway with far too many identical doors, a single red balloon floating at eye level and the flash reflecting off the glossy floor. No text or logo.',
+        'Weirdcore low-fi photo of a suburban lawn where eyes grow like flowers on thin stems, oddly cropped at a tilt, overexposed sky and a garden hose coiled nearby. No text or logo.',
       ],
     },
   },
@@ -344,9 +344,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Surreal photograph of a colossal snail carrying a castle across a wheat field, villagers tiny beside it. No text or logo.',
-        'Surreal image of a tiny knight fighting a housecat. No text or logo.',
-        'Surreal image of a giant teacup harbor. No text or logo.',
+        'Surreal photograph of a colossal snail carrying a whole village on its shell across a wheat field, farmers tiny beside it. No text or logo.',
+        'Surreal photograph of a tiny man with an umbrella standing under a giant dewdrop on a leaf. No text or logo.',
+        'Surreal photograph of a giant porcelain teacup lying on its side in a bay, forming a harbor with small fishing boats moored inside its rim and gulls on the handle. No text or logo.',
       ],
     },
     {
@@ -365,9 +365,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Symbolist painting of a pale queen with a sleeping panther under a violet twilight sky. No text or logo.',
-        'Symbolist painting of an angel in a swamp. No text or logo.',
-        'Symbolist painting of a sphinx and knight. No text or logo.',
+        'Symbolist painting of a pale queen with a sleeping panther under a violet twilight sky, jewel tones and hazy mystery. No text or logo.',
+        'Symbolist painting of an angel standing in a misty swamp holding a lily, hazy emerald and gold. No text or logo.',
+        'Symbolist painting of a sphinx and a young poet meeting at dusk, jewel tones and soft haze. No text or logo.',
       ],
     },
     {
@@ -386,9 +386,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Surreal photograph of a knight at a lake whose reflection is a skeleton king. No text or logo.',
-        'Mirror world image of an old woman whose mirror shows her young. No text or logo.',
-        'Mirror world castle puddle. No text or logo.',
+        'Surreal photograph of a fisherman at a still lake whose reflection is a skeleton wearing his hat, calm evening light. No text or logo.',
+        'Mirror world photograph of an old woman whose bathroom mirror shows her young, both touching the glass. No text or logo.',
+        'Mirror world photograph of a rainy city street where a puddle reflects a dense green jungle with parrots instead of the buildings above it, commuters stepping around. No text or logo.',
       ],
     },
     {
@@ -407,9 +407,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Fever-dream painting of a banquet where the roast pig stares back and candles sweat. No text or logo.',
-        'Fever dream knight. No text or logo.',
-        'Fever dream carnival. No text or logo.',
+        "Fever-dream painting of a banquet where the roast pig stares back, candles sweat wax and the guests' faces swell in the heat. No text or logo.",
+        'Fever-dream painting of a nurse in a hallway that stretches and bends, swollen doorframes and sweating walls. No text or logo.',
+        'Fever-dream painting of a carnival at night where the rides warp and melt in the heat, swollen balloons. No text or logo.',
       ],
     },
     {
@@ -428,9 +428,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Surreal photograph of a monk floating cross-legged above a monastery courtyard, books floating around. No text or logo.',
-        'Levitating knight and horse. No text or logo.',
-        'Levitating castle stones. No text or logo.',
+        'Surreal photograph of a monk floating cross-legged above a monastery courtyard, books floating calmly around him in morning light. No text or logo.',
+        'Surreal photograph of a family picnic where the blanket, plates and dog float calmly a meter above the grass. No text or logo.',
+        'Surreal photograph of stones of a ruined abbey floating calmly apart in the air, sheep grazing beneath. No text or logo.',
       ],
     },
   ] satisfies Create[],

@@ -723,9 +723,9 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean lacquer highlights and crisp seam lines with readable underlying form.',
       key_features:
-        'split translucent lacquer plates; membrane-thin overlaps; crimson seams; transmitted edge light; person-free subject',
+        'split translucent lacquer plates; membrane-thin overlaps; crimson seams; transmitted edge light; no person required',
       creative_brief:
-        "Lacquer anime illustration in which a nonhuman subject or object seems to shed its surface: split translucent lacquer plates, membrane-thin overlaps and fine crimson seams in clean ink. Carry it through split translucent lacquer plates, membrane-thin overlaps, crimson seams, transmitted edge light, person-free subject. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Lacquer anime illustration in which a nonhuman subject or object seems to shed its surface: split translucent lacquer plates, membrane-thin overlaps and fine crimson seams in clean ink. Carry it through split translucent lacquer plates, membrane-thin overlaps, crimson seams, transmitted edge light, no person required. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {

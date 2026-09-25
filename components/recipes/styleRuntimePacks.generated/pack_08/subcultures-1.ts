@@ -40,7 +40,7 @@ export const GENERATED_STYLE_PRESETS = [
       'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, sneaker brand marks, suit, formal, old, readable branding, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Streetwear hype styling: oversized drop-shoulder layers, heavyweight hoodies, graphic-free statement pieces and coveted sneakers stacked with attitude.',
+        'Streetwear hype styling: oversized drop-shoulder layers, heavyweight hoodies, statement pieces without printed graphics and coveted sneakers stacked with attitude.',
       subject_treatment:
         "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: oversized heavyweight hoodie or boxy jacket, baggy cargo or track pants, chunky statement sneakers, crossbody bag and a beanie or cap worn low.",
       color_and_tone:
@@ -58,7 +58,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'oversized drop-shoulder layers; chunky statement sneakers; crossbody bag; washed black with loud accent; low-angle framing',
       creative_brief:
-        "Streetwear hype styling: oversized drop-shoulder layers, heavyweight hoodies, graphic-free statement pieces and coveted sneakers stacked with attitude. Carry it through oversized drop-shoulder layers, chunky statement sneakers, crossbody bag, washed black with loud accent, low-angle framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Streetwear hype styling: oversized drop-shoulder layers, heavyweight hoodies, statement pieces without printed graphics and coveted sneakers stacked with attitude. Carry it through oversized drop-shoulder layers, chunky statement sneakers, crossbody bag, washed black with loud accent, low-angle framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -321,7 +321,7 @@ export const GENERATED_STYLE_PRESETS = [
       'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, band names, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        '2000s emo and scene style: skinny black jeans, band-free graphic tees, studded belts, checkered accessories and side-swept dyed fringe.',
+        '2000s emo and scene style: skinny black jeans, graphic tees with invented motifs, studded belts, checkered accessories and side-swept dyed fringe.',
       subject_treatment:
         "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: skinny black jeans, fitted dark tee or striped long sleeve, studded belt, checkered wristbands or scarf, worn canvas sneakers and side-swept black or dyed fringe with heavy eyeliner.",
       color_and_tone: 'Black with hot pink, electric blue or checkered black-and-white accents.',
@@ -335,7 +335,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Slightly grainy, flash-lit finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
-        "2000s emo and scene style: skinny black jeans, band-free graphic tees, studded belts, checkered accessories and side-swept dyed fringe. Carry it through skinny black jeans, studded belt, checkered accessories, side-swept dyed fringe, heavy eyeliner. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "2000s emo and scene style: skinny black jeans, graphic tees with invented motifs, studded belts, checkered accessories and side-swept dyed fringe. Carry it through skinny black jeans, studded belt, checkered accessories, side-swept dyed fringe, heavy eyeliner. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'skinny black jeans; studded belt; checkered accessories; side-swept dyed fringe; heavy eyeliner',
     },

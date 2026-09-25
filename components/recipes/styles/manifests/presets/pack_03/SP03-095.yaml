@@ -25,7 +25,7 @@ visualDna:
   subject_treatment: Change only the material of the prompt's main subject (or the object the prompt names) into this material; its shape, pose, surroundings, lighting setup and camera stay as requested.
   color_and_tone: Candy base color flopping to a second hue at grazing angles, sparkling flakes.
   lighting_and_shadow: Long mirror-like clear coat reflections, glittering flakes under point lights.
-  texture_and_material: Deep glossy lacquer, fine metal flake sparkle, smooth orange-peel-free finish.
+  texture_and_material: Deep glossy lacquer, fine metal flake sparkle, smooth finish with no orange peel.
   camera_and_composition: Keep the requested framing; studio or street lights to excite the flakes.
   atmosphere_and_mood: Flashy and custom, a hot-rod finish on anything.
   rendering_and_quality: Layered base, flake and clear-coat shading, never flat glossy plastic.

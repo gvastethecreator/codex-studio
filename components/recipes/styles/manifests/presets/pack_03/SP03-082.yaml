@@ -28,7 +28,7 @@ visualDna:
   texture_and_material: Flawless mirror and glass, checkerboard or tiled floor stretching to the horizon.
   camera_and_composition: Low camera over the endless floor, objects arranged like a demo scene.
   atmosphere_and_mood: Crystalline and uncanny, a perfect world with no dust.
-  rendering_and_quality: Aliased-free but unmistakably early raytraced look; no noise, no GI.
+  rendering_and_quality: Clean-edged but unmistakably early raytraced look; no noise, no GI.
   creative_brief: "Classic recursive raytracing: perfect mirrors and clear glass reflecting and refracting each other endlessly over an infinite floor, with razor-hard shadows. Carry it through perfect mirrors and glass, hard point-light shadows, infinite checkerboard, recursive reflections, no bounce light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: perfect mirrors and glass; hard point-light shadows; infinite checkerboard; recursive reflections; no bounce light
 avoidRules:

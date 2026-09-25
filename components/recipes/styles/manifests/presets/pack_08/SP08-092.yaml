@@ -21,7 +21,7 @@ tags:
   - scene
   - fashion
 visualDna:
-  aesthetic: '2000s emo and scene style: skinny black jeans, band-free graphic tees, studded belts, checkered accessories and side-swept dyed fringe.'
+  aesthetic: '2000s emo and scene style: skinny black jeans, graphic tees with invented motifs, studded belts, checkered accessories and side-swept dyed fringe.'
   subject_treatment: "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: skinny black jeans, fitted dark tee or striped long sleeve, studded belt, checkered wristbands or scarf, worn canvas sneakers and side-swept black or dyed fringe with heavy eyeliner."
   color_and_tone: Black with hot pink, electric blue or checkered black-and-white accents.
   lighting_and_shadow: Webcam-like flash or moody bedroom light, shaped to reveal garment cut, drape, texture and fit on the wearer.
@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close three-quarter framing, often from a high angle, keeping the full outfit silhouette and fit readable at card size.
   atmosphere_and_mood: Emotional, dramatic, self-conscious and nostalgic, carried by the wearer's posture, styling and attitude.
   rendering_and_quality: Slightly grainy, flash-lit finish, with believable fabric weight, seams and fit detail.
-  creative_brief: "2000s emo and scene style: skinny black jeans, band-free graphic tees, studded belts, checkered accessories and side-swept dyed fringe. Carry it through skinny black jeans, studded belt, checkered accessories, side-swept dyed fringe, heavy eyeliner. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: "2000s emo and scene style: skinny black jeans, graphic tees with invented motifs, studded belts, checkered accessories and side-swept dyed fringe. Carry it through skinny black jeans, studded belt, checkered accessories, side-swept dyed fringe, heavy eyeliner. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: skinny black jeans; studded belt; checkered accessories; side-swept dyed fringe; heavy eyeliner
 avoidRules:
   - brand logo

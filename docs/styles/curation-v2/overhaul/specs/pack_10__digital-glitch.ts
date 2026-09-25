@@ -54,8 +54,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Datamoshed video frame of a knight charging on horseback, his body smearing into the previous frame in dragged macroblocks. No text or logo.',
-        'Datamoshed frame of a dragon turning its head, scales smeared across the sky. No text or logo.',
-        'Datamoshed frame of a dancer spinning in a ballroom. No text or logo.',
+        'Datamoshed video frame of a skateboarder mid-kickflip in an empty pool, the concrete bowl smeared into her silhouette by dragged motion vectors, blocks of the previous frame bleeding across the sky. No text or logo.',
+        'Datamoshed video frame of a couple spinning in a ballroom, chandeliers and gowns melting into each other as pixels drag between frames, colored macroblocks trailing the turn. No text or logo.',
       ],
     },
     'SP10-022': {
@@ -71,8 +71,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Pixel-sorted image of a castle at sunset, the sky and towers dripping into vertical sorted streaks. No text or logo.',
-        'Pixel-sorted portrait of a crowned queen. No text or logo.',
-        'Pixel-sorted waterfall with a dragon. No text or logo.',
+        'Pixel-sorted portrait of an old fisherman in a yellow raincoat, bright columns of pixels streaming downward from his hood into long sorted streaks while his eyes stay intact. No text or logo.',
+        'Pixel-sorted image of a tall waterfall in a jungle, the falling water extended into long vertical streaks sorted from white to deep green, rocks untouched at the edges. No text or logo.',
       ],
     },
     'SP10-023': {
@@ -87,9 +87,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'VHS-glitched frame of a knight walking through a foggy graveyard, tracking bands rolling across. No text or logo.',
-        'VHS frame of a witch at a cauldron with color bleed. No text or logo.',
-        'VHS frame of a castle banquet. No text or logo.',
+        'VHS-glitched frame of a lone figure walking through a foggy graveyard at night, tracking bands rolling up the screen, chroma bleed around the lantern and wobbling horizontal lines. No text or logo.',
+        'VHS tape frame of a home birthday party in a wood-paneled living room, color bleeding from the candles, noise bands and a tracking wobble across the smiling faces. No text or logo.',
+        'VHS tape frame of a late-night cooking show, a chef flipping a pan of flames, chroma bleed, a rolling noise bar and soft tape blur. No text or logo.',
       ],
     },
     'SP10-024': {
@@ -104,9 +104,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Image of a dragon shown on a curved CRT with glowing scanlines and phosphor bloom. No text or logo.',
-        'CRT image of a knight portrait. No text or logo.',
-        'CRT image of a moonlit castle. No text or logo.',
+        'Image of a deep-sea anglerfish glowing on a curved CRT monitor in a dark room, phosphor scanlines, bloom around its lure and a visible RGB subpixel mask up close. No text or logo.',
+        "CRT monitor image of an astronaut's portrait, curved glass reflecting the room, glowing scanlines and phosphor bloom on the helmet visor. No text or logo.",
+        'CRT monitor image of a moonlit harbor with fishing boats, scanlines across the water, soft phosphor glow and the curved screen edge darkening. No text or logo.',
       ],
     },
     'SP10-025': {
@@ -122,8 +122,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'ASCII-style image of a dragon skull made from dense and sparse monospaced symbols in green on black, no readable words. No logo.',
-        'ASCII-style image of a knight on horseback in amber. No readable text or logo.',
-        'ASCII-style image of a castle in white glyphs. No readable text or logo.',
+        'ASCII art image of a galloping horse built entirely from amber monospaced characters on black, dense glyphs for the shadows and sparse dots for highlights, unreadable as words. No readable text or logo.',
+        'ASCII art image of a lighthouse on a cliff in white monospaced glyphs on dark green, the beam made of fading symbols, no readable words. No readable text or logo.',
       ],
     },
     'SP10-026': {
@@ -138,9 +138,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Over-compressed JPEG image of a heroic knight portrait, visible 8x8 blocks and edge ringing. No text or logo.',
-        'JPEG-crushed dragon. No text or logo.',
-        'JPEG-crushed sunset over a castle. No text or logo.',
+        'Over-compressed JPEG image of a stage singer under colored lights, visible 8x8 blocks in the shadows, ringing halos around the microphone and color blocking in the spotlight. No text or logo.',
+        'Over-compressed JPEG image of a parrot on a branch, its feathers collapsing into 8x8 color blocks, edge ringing around the beak and banding in the sky. No text or logo.',
+        'Over-compressed JPEG image of a sunset over a fishing pier, gradient crushed into blocks, ringing around the posts and mosquito noise on the water. No text or logo.',
       ],
     },
     'SP10-027': {
@@ -155,9 +155,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Image of a knight's helmet with strong red and cyan chromatic aberration fringes. No text or logo.",
-        'Image of a dragon eye with RGB split. No text or logo.',
-        'Image of a candlelit crypt with channel fringes. No text or logo.',
+        'Image of a glass perfume bottle on a mirror with strong red and cyan chromatic aberration fringes along every edge, the offset channels splitting its highlights. No text or logo.',
+        "Image of a cat's eye in extreme close-up with RGB channels split at the iris edge, red and blue fringes around the pupil and lashes. No text or logo.",
+        'Image of a candlelit crypt corridor with channel fringes along the arches, the flames split into red, green and blue ghosts at the edges of the frame. No text or logo.',
       ],
     },
     'SP10-028': {
@@ -172,9 +172,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Flatbed scan of a knight's gauntlet and dried roses pressed on glass, falling off into black. No text or logo.",
-        'Flatbed scan of a raven skull with scan stretch. No text or logo.',
-        'Flatbed scan of a crown and keys. No text or logo.',
+        'Flatbed scan of a vintage pocket watch, dried roses and a ribbon pressed on the glass, crushed-depth focus and everything falling off into black beyond the glass. No text or logo.',
+        'Flatbed scan of a bird skull and feathers on the glass, the skull dragged during the scan into a stretched streak, deep black background. No text or logo.',
+        'Flatbed scan of a tangle of old keys and a hand pressed flat on the glass, fingers blurred where they moved, black void around them. No text or logo.',
       ],
     },
     'SP10-029': {
@@ -189,9 +189,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Halftone image of a dragon rising over a castle, built entirely from red dots of varying size. No text or logo.',
-        'Halftone knight portrait in black dots. No text or logo.',
-        'CMYK halftone jester. No text or logo.',
+        'Halftone image of a rocket launching from a coastal pad, built entirely from red dots of varying size on cream paper, the exhaust plume dense and the sky sparse. No text or logo.',
+        'Halftone portrait of a boxer after a fight in black dots of varying size, a coarse regular screen visible across his bruised cheek. No text or logo.',
+        'CMYK halftone image of a court jester juggling, cyan, magenta, yellow and black dot screens overlapping at angles, slight misregistration. No text or logo.',
       ],
     },
     'SP10-030': {
@@ -206,9 +206,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        '1-bit dithered image of a lighthouse in a storm with a sea serpent. No text or logo.',
-        '1-bit dither knight portrait. No text or logo.',
-        '1-bit dither haunted mansion. No text or logo.',
+        '1-bit dithered image of a lighthouse in a storm with a sea serpent rising, pure black and white pixels in error-diffusion patterns forming the waves and clouds. No text or logo.',
+        '1-bit dithered portrait of an old woman in a headscarf, ordered dither patterns building every tone of her wrinkles in pure black and white pixels. No text or logo.',
+        '1-bit dithered image of a haunted mansion on a hill, error-diffusion dither in the night sky and ordered patterns on the walls. No text or logo.',
       ],
     },
   },
@@ -228,9 +228,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Bit-crushed image of a sunset over a castle collapsed into six flat color bands. No text or logo.',
-        'Bit-crushed dragon. No text or logo.',
-        'Bit-crushed knight. No text or logo.',
+        'Bit-crushed image of a sunset over a mountain lake collapsed into six flat color bands, hard contour steps where orange turns to violet and the reflection banded. No text or logo.',
+        'Bit-crushed image of a peacock displaying its tail, the feathers posterized into a few flat teal and gold bands with stepped edges. No text or logo.',
+        'Bit-crushed image of a crowd at a summer festival, faces and flags reduced to a few flat color bands with hard contour steps. No text or logo.',
       ],
     },
     {
@@ -248,9 +248,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Slit-scan image of a galloping horse and rider stretched into a warped ribbon. No text or logo.',
-        'Slit-scan dragon in flight. No text or logo.',
-        'Slit-scan waltzing couple. No text or logo.',
+        'Slit-scan image of a galloping horse and rider stretched into a warped ribbon, each column caught at a different moment, the legs bent into curves. No text or logo.',
+        'Slit-scan image of a passing train warped into a long sweeping curve, windows stretched and the platform lamps smeared into lines. No text or logo.',
+        'Slit-scan image of a waltzing couple, their spinning bodies stretched and twisted across the frame, the ballroom floor stable behind. No text or logo.',
       ],
     },
     {
@@ -268,9 +268,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Interlaced video frame of a sword fight with comb-tooth artifacts on the moving blades. No text or logo.',
-        'Interlaced frame of a dragon wing. No text or logo.',
-        'Interlaced frame of a galloping horse. No text or logo.',
+        'Interlaced video frame of a sword fight on a stage, comb-tooth artifacts on the moving blades and arms, the still background clean. No text or logo.',
+        'Interlaced video frame of a basketball player dunking, comb-tooth tearing on the arms and ball, the crowd behind static and clean. No text or logo.',
+        'Interlaced video frame of a galloping horse at a racetrack, alternate lines offset along its legs and mane. No text or logo.',
       ],
     },
     {
@@ -288,9 +288,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Teletext mosaic image of a knight on horseback in chunky block cells. No readable text or logo.',
-        'Teletext dragon. No readable text or logo.',
-        'Teletext castle. No readable text or logo.',
+        'Teletext mosaic image of a mounted rider in chunky 2x3 block cells, eight bright colors on black, the horse a red block silhouette. No readable text or logo.',
+        'Teletext mosaic image of a rocket and planet in chunky block cells, cyan, yellow and magenta on black. No readable text or logo.',
+        'Teletext mosaic image of a sailboat on waves in coarse block graphics, blue and white cells on black, a yellow block sun. No readable text or logo.',
       ],
     },
     {
@@ -308,9 +308,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Oscilloscope vector drawing of a dragon traced in glowing green lines on a scope grid. No text or logo.',
-        'Oscilloscope knight. No text or logo.',
-        'Oscilloscope castle. No text or logo.',
+        'Oscilloscope vector drawing of a sea turtle traced in glowing green phosphor lines on a dark scope grid, the lines slightly blooming. No text or logo.',
+        'Oscilloscope vector drawing of a spinning globe traced in green lines, meridians overlapping with phosphor persistence trails. No text or logo.',
+        'Oscilloscope vector drawing of a hissing cat arching its back, its whiskers and tail flickering with persistence trails on a round green-tinted screen, a fuzzy beam dot where the trace restarts. No text or logo.',
       ],
     },
     {
@@ -328,9 +328,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'E-ink display showing a knight portrait with a faint ghost of a dragon from the previous refresh. No text or logo.',
-        'E-ink castle. No text or logo.',
-        'E-ink crow. No text or logo.',
+        'E-ink display showing a portrait of an old sailor, with a faint ghost of a coastline landscape from the previous refresh lingering in grey. No text or logo.',
+        'E-ink display showing a snowy mountain village in grey tones, faint ghosting of a previous image of a sailing ship visible in the sky. No text or logo.',
+        'E-ink display showing a crow on a branch, its previous pose ghosting faintly beside it in pale grey. No text or logo.',
       ],
     },
     {
@@ -348,9 +348,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Corrupted video frame of a royal court where rectangular blocks froze in green and grey. No text or logo.',
-        'Frozen macroblock dragon. No text or logo.',
-        'Frozen macroblock knight. No text or logo.',
+        'Corrupted video frame of a royal court where rectangular blocks froze in wrong green and grey colors, some blocks stuck on stale content from an earlier shot. No text or logo.',
+        'Corrupted video frame of a football match where macroblocks froze mid-play, a player split across stale grey blocks and green smears. No text or logo.',
+        'Corrupted video frame of a mountain car chase where the road froze in blocky magenta and green while the car moved on. No text or logo.',
       ],
     },
     {
@@ -368,9 +368,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Broken game render of a castle whose stone walls repeat in obvious tiles and stretch into streaks at the edges. No text or logo.',
-        'Texture-bug knight. No text or logo.',
-        'Texture-bug dragon. No text or logo.',
+        'Broken game render of a medieval town square whose stone walls repeat in obvious tiles and stretch into streaks at the edges, a fountain with smeared textures. No text or logo.',
+        'Broken game render of a forest where one bark texture tiles across every tree, stretched UVs along the roots and a repeating leaf pattern in the sky. No text or logo.',
+        'Broken game render of a car with a stretched checkerboard missing-texture pattern on its hood and repeated tire textures on the road. No text or logo.',
       ],
     },
     {
@@ -388,9 +388,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'LED matrix display showing a dragon in glowing red and orange LEDs. No text or logo.',
-        'LED matrix knight. No text or logo.',
-        'LED matrix moon and castle. No text or logo.',
+        'LED matrix display showing a koi fish in glowing red and orange round LEDs on a dark panel grid, soft glow between the lights. No text or logo.',
+        'LED matrix display showing a running cheetah in glowing yellow LEDs, each dot visible on the dark panel grid. No text or logo.',
+        'LED matrix display showing a crescent moon over pine trees in blue and white LEDs, dark gaps between each dot. No text or logo.',
       ],
     },
     {
@@ -408,9 +408,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Thermal receipt printout of a knight portrait in faded dithered black, paper curling. No readable text or logo.',
-        'Thermal print dragon. No readable text or logo.',
-        'Thermal print castle. No readable text or logo.',
+        'Thermal receipt printout of a cat portrait in faded dithered black, the paper curling at the edges and slightly yellowed. No readable text or logo.',
+        'Thermal receipt printout of a bicycle in faded dithered black, the long paper curling off a cafe counter. No readable text or logo.',
+        'Thermal receipt printout of a mountain landscape in faded dither, a fold crease and thermal fading at one edge. No readable text or logo.',
       ],
     },
   ] satisfies Create[],

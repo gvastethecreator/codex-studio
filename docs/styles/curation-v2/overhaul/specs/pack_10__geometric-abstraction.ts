@@ -21,7 +21,7 @@ const spec: Spec = {
       briefs: [
         'Cubist painting of a knight and his warhorse seen from front, side and above at once, faceted into ochre and grey planes, a broken lance cutting across. No text or logo.',
         'Cubist painting of an old alchemist at his table, bottles and face fractured into overlapping planes. No text or logo.',
-        'Cubist painting of a dragon coiled around a tower, scales and stones merging into facets. No text or logo.',
+        'Cubist painting of a street musician playing an accordion in a cafe, the instrument, hands and chairs fractured into overlapping ochre and grey planes seen from several angles at once, a wine glass split into facets. No text or logo.',
       ],
     },
     'SP10-002': {
@@ -40,12 +40,12 @@ const spec: Spec = {
       briefs: [
         'Bauhaus composition of a knight on horseback reduced to circles, triangles and red, yellow and blue bars on off-white. No text or logo.',
         'Bauhaus composition of a castle and moon as squares and a yellow circle on a grid. No text or logo.',
-        'Bauhaus composition of a raven made of black triangles and a red circle eye. No text or logo.',
+        'Bauhaus composition of a raven built from black triangles with a single red circle eye, perched on a yellow bar across a strict grid on off-white paper, one blue square as the moon. No text or logo.',
       ],
     },
     'SP10-003': {
       dna: style(
-        'Constructivism: dynamic diagonals, bold wedges and photomontage-free graphic propaganda energy.',
+        'Constructivism: dynamic diagonals, bold wedges and graphic propaganda energy without photomontage.',
         'the subject is built from strong diagonal wedges, bars and circles pushing across the frame.',
         'Red, black and cream.',
         'Flat graphic contrast.',
@@ -58,8 +58,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Constructivist composition of a giant red wedge splitting a black castle, a tiny rider charging on a diagonal. No text or logo.',
-        "Constructivist composition of a blacksmith's hammer and anvil as bold diagonals. No text or logo.",
-        'Constructivist composition of a dragon as black bars and a red circle. No text or logo.',
+        "Constructivist composition of a blacksmith's hammer striking an anvil, both reduced to bold black and red diagonal wedges slicing across the frame, sparks as small red triangles and heavy dynamic tilt. No text or logo.",
+        'Constructivist composition of a lighthouse beam cutting the night, the tower a steep black wedge, the beam a long red diagonal bar and the waves stacked grey trapezoids. No text or logo.',
       ],
     },
     'SP10-004': {
@@ -77,8 +77,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "Op art composition where a knight's helmet appears only as a bulge in warped black-and-white stripes. No text or logo.",
-        'Op art composition of a spiral staircase formed by bending concentric stripes. No text or logo.',
-        'Op art composition of a snake made of vibrating checkerboard. No text or logo.',
+        'Op art composition of a spiral staircase seen from above formed by concentric black and white stripes that bend and tighten toward the center, the pattern seeming to rotate. No text or logo.',
+        'Op art composition of a coiled snake made from a warped checkerboard that swells and pinches along its body, vibrating black and white squares against a moiré background. No text or logo.',
       ],
     },
     'SP10-005': {
@@ -97,8 +97,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'De Stijl grid composition of a castle gate: black lines and a red block for the door, a yellow block for the torch. No text or logo.',
-        "De Stijl grid composition of a knight's shield and banner. No text or logo.",
-        'De Stijl grid composition of a stained-glass window made of primary rectangles. No text or logo.',
+        'De Stijl grid composition of a sailboat, black orthogonal lines dividing white fields, a red rectangle for the hull, a yellow square sail and a small blue block of sea. No text or logo.',
+        'De Stijl grid composition of a tall stained-glass window, black lead-like orthogonal lines dividing white panes with a few red, yellow and blue rectangles placed off-center. No text or logo.',
       ],
     },
     'SP10-006': {
@@ -116,8 +116,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Fractal image of a dragon whose wings split recursively into smaller dragons, spiraling inward in gold and violet. No text or logo.',
-        'Fractal image of a tree whose branches become castles repeating at every scale. No text or logo.',
-        'Fractal image of a nautilus spiral of crowns. No text or logo.',
+        'Fractal image of a tree whose branches split into smaller trees again and again, each fork repeating the whole, deep green at the trunk fading to glowing gold at the tips. No text or logo.',
+        'Fractal image of a nautilus shell spiral where each chamber contains a smaller nautilus, self-similar curves repeating inward in pearl and rust tones. No text or logo.',
       ],
     },
     'SP10-007': {
@@ -134,9 +134,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Low-poly faceted image of a wolf howling on a triangulated rock under a faceted moon. No text or logo.',
-        "Low-poly image of a knight's helmet in amber triangles. No text or logo.",
-        'Low-poly image of a volcano castle at sunset. No text or logo.',
+        'Low-poly faceted image of a wolf howling on a triangulated rock under a faceted pale moon, every surface a flat-shaded triangle in cold blues and greys, crisp visible facet edges. No text or logo.',
+        'Low-poly faceted image of a hummingbird hovering at a flower, amber, emerald and violet flat-shaded triangles, the wings a spray of sharp facets. No text or logo.',
+        'Low-poly faceted image of an erupting volcano at sunset, triangular lava facets in orange and red, a faceted smoke column and a flat-shaded sea. No text or logo.',
       ],
     },
     'SP10-008': {
@@ -153,9 +153,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Suprematist composition of a castle reduced to a few floating black rectangles and a red circle on white. No text or logo.',
-        'Suprematist composition of a falling knight as tilted bars. No text or logo.',
-        'Suprematist composition of a ship as floating crosses. No text or logo.',
+        'Suprematist composition of a lighthouse reduced to a few floating black rectangles and a red circle on a white void, the forms tilted and weightless as if drifting apart. No text or logo.',
+        'Suprematist composition of a falling acrobat as three tilted bars and a small black square, floating on a white void with one thin red line. No text or logo.',
+        'Suprematist composition of a sailing ship as floating crosses and trapezoids in black, red and ochre, drifting across a white void. No text or logo.',
       ],
     },
     'SP10-009': {
@@ -173,8 +173,8 @@ const spec: Spec = {
       avoid: [...AVOID, 'religious text'],
       briefs: [
         'Geometric pattern image of a falcon whose feathers are interlaced star tessellations in lapis and gold. No text or logo.',
-        'Geometric pattern image of a dome interior built from rosettes. No text or logo.',
-        'Geometric pattern image of a horse silhouette filled with turquoise star patterns. No text or logo.',
+        'Islamic geometric pattern of a dome interior seen from below, star-and-polygon rosettes radiating from a central twelve-point star, turquoise, cobalt and gold tessellation. No text or logo.',
+        'Islamic geometric pattern filling the silhouette of an Arabian horse, turquoise and white interlaced stars inside, the background a deep blue field of smaller polygons. No text or logo.',
       ],
     },
     'SP10-010': {
@@ -192,8 +192,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Voronoi image of a dragon skull built from irregular cells with thick borders along its contours. No text or logo.',
-        'Voronoi image of a castle cracked into cells. No text or logo.',
-        'Voronoi image of a turtle shell as cells. No text or logo.',
+        'Voronoi image of a desert landscape of cracked earth, irregular cells around seed points in terracotta and ochre, a lone figure walking across the pattern. No text or logo.',
+        'Voronoi image of a turtle shell where each scute is a cell around a seed point, deep green borders and amber cell interiors on dark sand. No text or logo.',
       ],
     },
   },
@@ -215,9 +215,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Orphist painting of a carousel with knights on horses dissolving into concentric color discs. No text or logo.',
-        'Orphist painting of a sun rising over a castle as color rings. No text or logo.',
-        'Orphist painting of a dancer made of arcs. No text or logo.',
+        'Orphist painting of a carousel with riders and horses dissolving into rhythmic concentric color discs, orange against blue and green against red pulsing with simultaneous contrast. No text or logo.',
+        'Orphist painting of a sun rising over a harbor rendered as overlapping color rings and arcs, simultaneous contrast making the orange and violet bands vibrate. No text or logo.',
+        'Orphist painting of a dancer spinning, her body built from interlocking arcs and color discs in yellow, magenta and cobalt, the rhythm echoing outward. No text or logo.',
       ],
     },
     {
@@ -237,9 +237,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Futurist painting of a charging knight on horseback repeated in overlapping positions with sharp force lines. No text or logo.',
-        'Futurist painting of a dragon diving. No text or logo.',
-        'Futurist painting of a sword swing. No text or logo.',
+        'Futurist painting of a galloping cavalry charge repeated in overlapping positions, sharp force lines radiating forward, horses and riders fused into a single wave of motion. No text or logo.',
+        'Futurist painting of a steam train bursting across a bridge, the locomotive repeated in overlapping positions, smoke and rails fractured by angular force lines. No text or logo.',
+        "Futurist painting of a fencer's lunge, arm and blade repeated in overlapping positions, force lines slicing the space into sharp planes of red and grey. No text or logo.",
       ],
     },
     {
@@ -259,9 +259,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Hard-edge painting of a knight's silhouette as one orange shape against a teal field and a white moon. No text or logo.",
-        'Hard-edge painting of a tower and sun. No text or logo.',
-        'Hard-edge painting of a crow on a branch. No text or logo.',
+        "Hard-edge painting of a lone rider's silhouette as one flat orange shape against a teal field and a white disc moon, razor-sharp edges and no gradients. No text or logo.",
+        'Hard-edge painting of a lighthouse tower and a setting sun as flat red, cream and navy areas meeting at razor-sharp edges, a single white band of sea. No text or logo.',
+        'Hard-edge painting of a crow on a bare branch, flat black shape against a pale mint field, a lemon-yellow sun, every edge razor sharp. No text or logo.',
       ],
     },
     {
@@ -281,9 +281,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Precisionist painting of a castle keep rendered as smooth geometric volumes with crisp shadows. No text or logo.',
-        'Precisionist painting of a windmill and silos. No text or logo.',
-        'Precisionist painting of a cathedral buttress. No text or logo.',
+        'Precisionist painting of a river mill and its water tower rendered as smooth geometric volumes with crisp shadows, clean planes of cream, rust and sky blue under hard light. No text or logo.',
+        'Precisionist painting of a windmill and grain silos rendered as smooth cylinders and cones, crisp cast shadows and a cloudless pale sky. No text or logo.',
+        'Precisionist painting of a cathedral flying buttress rendered as clean smooth planes with crisp shadows, grey stone reduced to geometric volumes. No text or logo.',
       ],
     },
     {
@@ -303,9 +303,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Vorticist painting of a battle of knights compressed into angular shards spiraling into a vortex. No text or logo.',
-        'Vorticist painting of a lighthouse beam. No text or logo.',
-        "Vorticist painting of a dragon's jaw. No text or logo.",
+        'Vorticist painting of a ship caught in a storm compressed into hard angular shards spiraling into a vortex center, machine-like forms in black, ochre and electric blue. No text or logo.',
+        'Vorticist painting of a lighthouse beam spiraling into angular shards around a vortex center, hard machine-like planes in black, white and acid yellow. No text or logo.',
+        'Vorticist painting of a crowd at a factory gate compressed into jagged spiraling planes, angular figures pulled toward the vortex. No text or logo.',
       ],
     },
     {
@@ -325,9 +325,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Truchet tile image where a serpent's body emerges from rotated quarter-circle tiles. No text or logo.",
-        'Truchet tile image of a castle outline. No text or logo.',
-        "Truchet tile image of a knight's face. No text or logo.",
+        "Truchet tile image where a serpent's body emerges from rotated quarter-circle tiles, the flowing maze of arcs in black and cream forming its coils, scales implied by tile rotation. No text or logo.",
+        'Truchet tile image of an owl whose outline appears from rotated quarter-circle tiles, black and gold arcs flowing into its eyes and wings. No text or logo.',
+        'Truchet tile image of an ocean wave built from diagonal and quarter-circle tiles, navy and white arcs flowing into a curling crest. No text or logo.',
       ],
     },
     {
@@ -347,9 +347,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Penrose tiling image of a star-shaped rose window. No text or logo.',
-        'Penrose tiling image of a dragon egg. No text or logo.',
-        "Penrose tiling image of a knight's shield. No text or logo.",
+        'Penrose tiling image of a star-shaped rose window, kite-and-dart tiles radiating with five-fold symmetry in ruby, amber and cobalt glass tones. No text or logo.',
+        'Penrose tiling image of an egg shape filled with aperiodic rhombus tiles in pale blue and gold, five-fold stars appearing across its curve. No text or logo.',
+        'Penrose tiling image of a courtyard floor seen from above with a fountain at its center, aperiodic kite-and-dart tiles in terracotta and cream. No text or logo.',
       ],
     },
     {
@@ -369,9 +369,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Swiss grid composition of a knight in cropped blocks — helmet, gauntlet and spur — on a strict red and white grid. No text or logo.',
-        'Swiss grid composition of a castle. No text or logo.',
-        'Swiss grid composition of a dragon eye. No text or logo.',
+        'Swiss grid composition of a cyclist in cropped image blocks — wheel, hand and shoe — arranged on a strict red and white modular grid with asymmetric layout. No text or logo.',
+        'Swiss grid composition of a mountain railway in cropped photographic blocks — tunnel, bridge and peak — on a strict black and white modular grid. No text or logo.',
+        'Swiss grid composition of a single human eye cropped into three blocks of different scales, strict grid, one red rectangle as the only color. No text or logo.',
       ],
     },
     {
@@ -391,9 +391,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'String art of a dragon made of gold threads stretched between pins on a black board. No text or logo.',
-        'String art of a castle. No text or logo.',
-        'String art of a moon and wolf. No text or logo.',
+        'String art of a coiled dragon made of gold threads stretched between brass pins on a black board, curves formed by straight thread envelopes. No text or logo.',
+        'String art of a sailing ship made of white threads between pins on a navy board, the sails formed by fanned straight lines. No text or logo.',
+        'String art of a howling wolf under a full circle, silver threads forming curves by envelope on a charcoal board. No text or logo.',
       ],
     },
     {
@@ -413,9 +413,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Neo-geo image of a castle reduced to grey cells connected by fluorescent orange conduits. No text or logo.',
-        'Neo-geo image of a sword. No text or logo.',
-        'Neo-geo image of a throne. No text or logo.',
+        'Neo-geo image of a city block reduced to grey cells connected by fluorescent orange conduits, slick industrial surfaces and cool geometric order. No text or logo.',
+        'Neo-geo image of a transit network of cells and conduits in grey and fluorescent pink, slick industrial surface. No text or logo.',
+        'Neo-geo image of a stack of cool grey boxes with fluorescent yellow edges like shipping containers, slick industrial finish. No text or logo.',
       ],
     },
   ] satisfies Create[],

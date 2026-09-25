@@ -282,9 +282,9 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Fine-art painted finish with anatomical and textile fidelity; no ink outlines and no digital gloss.',
       key_features:
-        'fully painted gouache; outline-free forms; warm soft key; observed fabric and metal; realist proportions',
+        'fully painted gouache; forms without outlines; warm soft key; observed fabric and metal; realist proportions',
       creative_brief:
-        "Painted graphic novel: every image fully painted in gouache and watercolor from observation, forms built by value and edge with almost no outline. Carry it through fully painted gouache, outline-free forms, warm soft key, observed fabric and metal, realist proportions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Painted graphic novel: every image fully painted in gouache and watercolor from observation, forms built by value and edge with almost no outline. Carry it through fully painted gouache, forms without outlines, warm soft key, observed fabric and metal, realist proportions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {

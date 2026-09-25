@@ -228,7 +228,7 @@ const spec: Spec = {
         lighting_and_shadow:
           'Matcap shading only: a fixed studio highlight, no cast shadows, no global illumination.',
         texture_and_material:
-          'Brush strokes, pinched edges, clay buildup, polygon-free smoothness.',
+          'Brush strokes, pinched edges, clay buildup, seamless organic smoothness.',
         camera_and_composition: 'Bust or full figure centered on a dark viewport background.',
         atmosphere_and_mood: "Raw and artistic, form discovered under the sculptor's hand.",
         rendering_and_quality: 'Viewport sculpt look; no textures, no scene lighting, no UI.',
@@ -310,7 +310,7 @@ const spec: Spec = {
           'Low camera over the endless floor, objects arranged like a demo scene.',
         atmosphere_and_mood: 'Crystalline and uncanny, a perfect world with no dust.',
         rendering_and_quality:
-          'Aliased-free but unmistakably early raytraced look; no noise, no GI.',
+          'Clean-edged but unmistakably early raytraced look; no noise, no GI.',
         key_features:
           'perfect mirrors and glass; hard point-light shadows; infinite checkerboard; recursive reflections; no bounce light',
       }),

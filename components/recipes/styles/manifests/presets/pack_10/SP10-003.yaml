@@ -12,7 +12,7 @@ tags:
   - abstract-and-experimental
   - geometric-abstraction
 visualDna:
-  aesthetic: 'Constructivism: dynamic diagonals, bold wedges and photomontage-free graphic propaganda energy.'
+  aesthetic: 'Constructivism: dynamic diagonals, bold wedges and graphic propaganda energy without photomontage.'
   subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is built from strong diagonal wedges, bars and circles pushing across the frame."
   color_and_tone: Red, black and cream, used consistently across subject and background.
   lighting_and_shadow: Flat graphic contrast, expressed through the style rather than photographic lighting.
@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Urgent, heroic, industrial and forceful, driven by the construction, color and rhythm.
   rendering_and_quality: Bold print-like finish, with clean, deliberate marks and no accidental noise.
   key_features: dynamic diagonals; red wedges; black bars; cream ground
-  creative_brief: "Constructivism: dynamic diagonals, bold wedges and photomontage-free graphic propaganda energy. Carry it through dynamic diagonals, red wedges, black bars, cream ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: "Constructivism: dynamic diagonals, bold wedges and graphic propaganda energy without photomontage. Carry it through dynamic diagonals, red wedges, black bars, cream ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

@@ -368,7 +368,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         "Render smooth vector-like fill, restrained sheen, clean highlights, and sterile surface finish as drawn or printed surface marks over the existing material; do not change the subject's actual substance or function.",
       camera_and_composition:
-        'Balance the requested subject with icon-like spacing and type-free surfaces; preserve its identity and requested function.',
+        'Balance the requested subject with icon-like spacing and surfaces with no lettering; preserve its identity and requested function.',
       atmosphere_and_mood:
         'Sterile, cheerful, and faintly wrong; maintain that contrast through form and surface.',
       rendering_and_quality:

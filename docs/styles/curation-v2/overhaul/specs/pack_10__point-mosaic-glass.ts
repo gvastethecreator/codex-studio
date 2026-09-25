@@ -52,9 +52,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Pointillist painting of knights resting by a river at sunset, built from pure color dots. No text or logo.',
-        'Pointillist dragon over a harbor. No text or logo.',
-        'Pointillist castle garden. No text or logo.',
+        'Pointillist painting of bathers resting by a river at a summer sunset, the water, grass and parasols built entirely from small dots of pure orange, blue and green that mix in the eye at a distance. No text or logo.',
+        'Pointillist painting of a fishing harbor at dawn, boats and gulls made of pure color dots, violet shadows and yellow light mixing optically on the calm water. No text or logo.',
+        'Pointillist painting of a formal garden with clipped hedges and a fountain in midday light, every leaf and path built from tiny dots of unmixed color. No text or logo.',
       ],
     },
     'SP10-073': {
@@ -69,9 +69,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Stone tile mosaic of a dragon coiled around a tower, tesserae following its curves. No text or logo.',
-        'Mosaic knight on horseback. No text or logo.',
-        'Mosaic sea serpent. No text or logo.',
+        'Stone tile mosaic of an octopus coiled around an amphora, cut stone and ceramic tesserae laid in flowing rows that follow each tentacle, grout lines visible in raking light. No text or logo.',
+        'Stone tile mosaic of a charioteer racing four horses, tesserae in ochre, rust and white laid in curving rows along the manes and wheels, set in a garden wall. No text or logo.',
+        'Stone tile mosaic of a sea serpent diving between waves, blue and green tesserae laid in flowing rows that suggest motion, a plain cream border. No text or logo.',
       ],
     },
     'SP10-074': {
@@ -86,9 +86,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Stained glass window of a knight slaying a serpent, glowing with transmitted light. No text or logo.',
-        'Stained glass dragon. No text or logo.',
-        'Stained glass owl. No text or logo.',
+        'Stained glass window of a saint slaying a serpent in a chapel, ruby and cobalt pieces joined by dark lead came, glowing with transmitted light onto the stone floor. No text or logo.',
+        'Stained glass window of a phoenix rising from flames, amber, scarlet and gold glass pieces in dark lead came, backlit by the setting sun in a stairwell. No text or logo.',
+        'Stained glass panel of an owl on a crescent branch, violet and pale green glass joined by lead came, hung in a cottage window at night with a candle behind. No text or logo.',
       ],
     },
   },
@@ -108,9 +108,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Divisionist painting of a knight in a sunflower field built from directional color dashes. No text or logo.',
-        'Divisionist castle. No text or logo.',
-        'Divisionist dragon. No text or logo.',
+        'Divisionist painting of a farm girl in a sunflower field built from short directional dashes of separated yellow, orange and blue, the strokes following the wind in the stems. No text or logo.',
+        'Divisionist painting of a mountain village at sunset in short directional dashes of separated rose, violet and gold, the roofs and snowy peaks vibrating with color. No text or logo.',
+        'Divisionist painting of a racing horse and jockey in short color dashes, separated greens and reds following the direction of motion across the track. No text or logo.',
       ],
     },
     {
@@ -128,9 +128,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Byzantine gold mosaic of a crowned knight saint on a shimmering gold ground. No text or logo.',
-        'Byzantine dragon. No text or logo.',
-        'Byzantine peacock. No text or logo.',
+        'Byzantine gold mosaic of a crowned empress holding a chalice on a shimmering gold ground, glass and gold-leaf tesserae set at slight angles so the apse glitters in candlelight. No text or logo.',
+        'Byzantine gold mosaic of a pair of peacocks drinking from a fountain, jewel-green and blue glass tesserae against a gold field shimmering at different angles. No text or logo.',
+        'Byzantine gold mosaic of a ship crossing a stylized sea under a gold sky, tesserae set at angles so the waves glint as the viewer moves. No text or logo.',
       ],
     },
     {
@@ -148,9 +148,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Roman floor mosaic of a gladiator fighting a dragon, framed by a guilloche border. No text or logo.',
-        'Roman mosaic sea creatures. No text or logo.',
-        'Roman mosaic hunting scene. No text or logo.',
+        'Roman floor mosaic of a gladiator fighting a lion in an arena, small limestone tesserae in earthy ochre, rust and grey, framed by a twisting guilloche border in a villa floor. No text or logo.',
+        'Roman floor mosaic of sea creatures, octopus, dolphins, eels and fish on a pale ground, small earthy tesserae and a black and white wave border. No text or logo.',
+        'Roman floor mosaic of a boar hunt with riders and dogs, earthy limestone tesserae and a guilloche border, partly damaged at one corner. No text or logo.',
       ],
     },
     {
@@ -168,9 +168,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Micro-mosaic brooch of a knight's portrait made of minute glass tesserae. No text or logo.",
-        'Micro-mosaic dragon. No text or logo.',
-        'Micro-mosaic castle landscape. No text or logo.',
+        'Micro-mosaic brooch of a portrait of a young woman in a bonnet made of minute glass tesserae, painterly shading visible only under a magnifying glass on velvet. No text or logo.',
+        'Micro-mosaic snuffbox lid showing a goldfinch on a thistle, minute glass rods cut into tiny tesserae with painterly soft color transitions. No text or logo.',
+        'Micro-mosaic panel of an Italian lake landscape with boats and cypresses, tiny glass tesserae giving painterly skies. No text or logo.',
       ],
     },
     {
@@ -188,9 +188,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Broken-china mosaic of a dragon made of blue-and-white shards. No text or logo.',
-        'Broken-china knight. No text or logo.',
-        'Broken-china owl. No text or logo.',
+        'Broken-china mosaic of a leaping koi fish on a garden wall, made of blue-and-white shards of plates and cups, fragments of old patterns visible inside its scales. No text or logo.',
+        'Broken-china mosaic of a garden bench covered in shards of floral teacups, handles and rims forming the armrests and colorful broken patterns across the seat. No text or logo.',
+        'Broken-china mosaic of an owl on a birdbath made of shards of old plates, pattern fragments forming feathers and a saucer rim as its eye. No text or logo.',
       ],
     },
     {
@@ -208,9 +208,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Pebble mosaic courtyard of a spiraling dragon in black and white pebbles. No text or logo.',
-        'Pebble mosaic knight. No text or logo.',
-        'Pebble mosaic sun. No text or logo.',
+        'Pebble mosaic courtyard of a spiraling sea serpent in black and white river pebbles set on edge, the pattern wet after rain and moss between the stones. No text or logo.',
+        'Pebble mosaic of a sailing ship on a harbor path, smooth grey and white pebbles set on edge forming waves and sails, footprints of passersby. No text or logo.',
+        'Pebble mosaic of a radiant sun on a garden terrace, rings of ochre and white pebbles set on edge, a cat asleep at its center. No text or logo.',
       ],
     },
     {
@@ -228,9 +228,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Sea glass mosaic window of a sea serpent glowing aqua and green. No text or logo.',
-        'Sea glass knight. No text or logo.',
-        'Sea glass lighthouse. No text or logo.',
+        'Sea glass mosaic window of a sea serpent glowing aqua and green, frosted rounded glass fragments set against the light in a beach cottage. No text or logo.',
+        'Sea glass mosaic of a mermaid combing her hair, frosted blue, white and amber fragments backlit on a seaside window. No text or logo.',
+        'Sea glass mosaic of a lighthouse on a cliff at sunset, frosted fragments glowing amber and teal, hung in a fishing shack window. No text or logo.',
       ],
     },
     {
@@ -248,9 +248,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Button mosaic of a knight on horseback made of hundreds of buttons. No text or logo.',
-        'Button mosaic dragon. No text or logo.',
-        'Button mosaic crown. No text or logo.',
+        'Button mosaic of a galloping horse made of hundreds of sewing buttons in browns and creams, different sizes and materials glued on a wooden board. No text or logo.',
+        'Button mosaic of a peacock with its tail spread made of hundreds of blue, green and gold buttons, shiny and matte ones mixed. No text or logo.',
+        'Button mosaic of a pocket watch face made of hundreds of silver and black buttons on velvet, larger buttons for the numbers. No text or logo.',
       ],
     },
     {
@@ -268,9 +268,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Fuse-bead pixel art of a dragon with visible melted bead holes. No text or logo.',
-        'Fuse-bead knight. No text or logo.',
-        'Fuse-bead castle. No text or logo.',
+        "Fuse-bead pixel art of a spaceship with visible melted bead holes on a white pegboard, a child's hands lifting it from the board. No text or logo.",
+        'Fuse-bead pixel art of a strawberry cake slice, bright pink and red beads melted slightly unevenly, lying on a kitchen table. No text or logo.',
+        'Fuse-bead pixel art of a frog on a lily pad in green and pink beads, melted holes visible, beside a tray of loose beads. No text or logo.',
       ],
     },
     {
@@ -288,9 +288,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Rhinestone mosaic of a skull wearing a crown, sparkling. No text or logo.',
-        'Rhinestone dragon. No text or logo.',
-        'Rhinestone moth. No text or logo.',
+        'Rhinestone mosaic of a skull wearing a crown, faceted crystals set edge to edge sparkling under a spotlight on black velvet. No text or logo.',
+        'Rhinestone mosaic of a flamingo on a stage backdrop, pink and gold faceted crystals set edge to edge scattering light. No text or logo.',
+        'Rhinestone mosaic of a moth on a clutch bag, faceted crystals in grey and amber set edge to edge, glittering in the dark. No text or logo.',
       ],
     },
     {
@@ -308,9 +308,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Opus sectile panel of a lion attacking a stag in cut colored marble. No text or logo.',
-        'Opus sectile knight. No text or logo.',
-        'Opus sectile dragon. No text or logo.',
+        'Opus sectile panel of a lion attacking a stag in cut colored marble, large shaped stone pieces fitted together without grout lines in a palace floor. No text or logo.',
+        'Opus sectile panel of a sailing boat on a stylized sea, large cut pieces of blue, white and grey marble fitted into a picture. No text or logo.',
+        'Opus sectile panel of a tiger among reeds, large cut stones in ochre and green fitted tightly. No text or logo.',
       ],
     },
     {
@@ -328,9 +328,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Pietra dura tabletop inlaid with a phoenix in lapis and coral on black marble. No text or logo.',
-        'Pietra dura knight shield. No text or logo.',
-        'Pietra dura flowers and dragonfly. No text or logo.',
+        'Pietra dura tabletop inlaid with a phoenix in lapis and coral on black marble, polished hardstones fitted seamlessly under soft light. No text or logo.',
+        'Pietra dura box lid inlaid with a parrot on a branch in malachite, carnelian and lapis on black marble. No text or logo.',
+        'Pietra dura panel of flowers and a dragonfly in polished hardstones inlaid seamlessly into black marble. No text or logo.',
       ],
     },
     {
@@ -348,9 +348,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Marquetry panel of a knight riding past a castle in contrasting wood veneers. No text or logo.',
-        'Marquetry dragon. No text or logo.',
-        'Marquetry owl. No text or logo.',
+        'Marquetry panel of a hunter riding past a forest lodge in contrasting wood veneers, maple, walnut and ebony cut and fitted into the picture. No text or logo.',
+        'Marquetry panel of a sailing ship in a storm made of fitted veneers, dark walnut sea and pale sycamore sails on a writing desk. No text or logo.',
+        'Marquetry panel of an owl on a branch in contrasting wood veneers, fine cut feathers and a burl moon. No text or logo.',
       ],
     },
     {
@@ -368,9 +368,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Tiffany-style lampshade glowing with a dragon wrapped around it in opalescent glass. No text or logo.',
-        'Tiffany-style knight panel. No text or logo.',
-        'Tiffany-style wisteria and moths. No text or logo.',
+        'Tiffany-style lampshade glowing with wisteria blossoms in opalescent glass, copper-foil seams and warm light in a dim study. No text or logo.',
+        'Tiffany-style window panel of a heron among irises in opalescent glass, copper-foil seams glowing in afternoon light. No text or logo.',
+        'Tiffany-style lampshade of moths and wisteria glowing warmly on a nightstand, copper-foil seams between opalescent pieces. No text or logo.',
       ],
     },
     {
@@ -388,9 +388,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Grisaille leaded window of a praying knight in silvery grey with yellow stain accents. No text or logo.',
-        'Grisaille dragon. No text or logo.',
-        'Grisaille vine window. No text or logo.',
+        'Grisaille leaded window of a praying monk in silvery grey painted glass with delicate shading and yellow stain accents, fine lead lines. No text or logo.',
+        'Grisaille garden-room window where a grape trellis climbs across clear panes painted in soft grey enamel, only the ripe clusters touched with silver-yellow stain, fine lead lines casting thin shadows on a tiled floor. No text or logo.',
+        'Grisaille window of a stag in a forest in silvery grey glass with fine lead lines, lit from behind. No text or logo.',
       ],
     },
     {
@@ -408,9 +408,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Fused glass panel of a phoenix with melted rounded seams and trapped bubbles, backlit. No text or logo.',
-        'Fused glass knight. No text or logo.',
-        'Fused glass jellyfish. No text or logo.',
+        'Fused glass panel of a phoenix with melted rounded seams and trapped bubbles, backlit in a window. No text or logo.',
+        'Fused glass bowl of a coral reef with melted rounded edges and trapped bubbles on a sunny table. No text or logo.',
+        'Fused glass panel of a jellyfish in blue with rounded seams and bubbles, glowing against light. No text or logo.',
       ],
     },
     {
@@ -428,9 +428,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Paper quilling of a dragon made of rolled paper coils glued edge-on. No text or logo.',
-        'Quilled knight. No text or logo.',
-        'Quilled castle. No text or logo.',
+        'Paper quilling of a phoenix made of rolled paper coils glued edge-on, red, orange and gold coils forming each feather. No text or logo.',
+        'Paper quilling of a peacock with a coiled tail in teal and gold rolled strips glued edge-on. No text or logo.',
+        'Paper quilling of a hot-air balloon drifting over rolling hills, the envelope built from tight striped coils in red and cream, loose teardrop coils for clouds, all glued edge-on to a pale blue card. No text or logo.',
       ],
     },
   ] satisfies Create[],

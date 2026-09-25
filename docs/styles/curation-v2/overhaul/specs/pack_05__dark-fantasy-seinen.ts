@@ -623,7 +623,7 @@ const spec: Spec = {
         rendering_and_quality:
           'Clean lacquer highlights and crisp seam lines with readable underlying form.',
         key_features:
-          'split translucent lacquer plates; membrane-thin overlaps; crimson seams; transmitted edge light; person-free subject',
+          'split translucent lacquer plates; membrane-thin overlaps; crimson seams; transmitted edge light; no person required',
       }),
       avoid: [...AVOID, 'mask', 'face'],
       briefs: [

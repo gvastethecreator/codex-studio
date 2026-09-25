@@ -8,7 +8,7 @@ const spec: Spec = {
   updates: {
     'SP08-002': {
       dna: wear(
-        'Streetwear hype styling: oversized drop-shoulder layers, heavyweight hoodies, graphic-free statement pieces and coveted sneakers stacked with attitude.',
+        'Streetwear hype styling: oversized drop-shoulder layers, heavyweight hoodies, statement pieces without printed graphics and coveted sneakers stacked with attitude.',
         'oversized heavyweight hoodie or boxy jacket, baggy cargo or track pants, chunky statement sneakers, crossbody bag and a beanie or cap worn low.',
         'Washed black, bone, olive and one loud accent such as safety orange or electric blue.',
         'Hard urban daylight or flash with strong contrast.',
@@ -298,7 +298,7 @@ const spec: Spec = {
       domain: '2000s emo scene wardrobe',
       tags: ['emo', 'scene', 'fashion'],
       dna: wear(
-        '2000s emo and scene style: skinny black jeans, band-free graphic tees, studded belts, checkered accessories and side-swept dyed fringe.',
+        '2000s emo and scene style: skinny black jeans, graphic tees with invented motifs, studded belts, checkered accessories and side-swept dyed fringe.',
         'skinny black jeans, fitted dark tee or striped long sleeve, studded belt, checkered wristbands or scarf, worn canvas sneakers and side-swept black or dyed fringe with heavy eyeliner.',
         'Black with hot pink, electric blue or checkered black-and-white accents.',
         'Webcam-like flash or moody bedroom light.',

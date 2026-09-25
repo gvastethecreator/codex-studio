@@ -214,7 +214,7 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult woman knight in a clear PVC tabard and cloak over her armor standing in pouring rain. No text or logo.',
+        'Photograph of an adult cyclist in a clear PVC rain cape and transparent trousers over bright clothes riding through a pouring city street, raindrops beading and streaking down the vinyl layers. No text or logo.',
         'Photograph of an elderly adult man in a yellow-tinted transparent raincoat walking through a flooded market. No text or logo.',
         'Photograph of an adult dancer in a frosted pink transparent plastic skirt and clear vinyl bodice leaping on a wet rooftop at night, city lights reflected in the PVC layers and rain streaking past. No text or logo.',
       ],
@@ -250,7 +250,7 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'nudity'],
       briefs: [
-        'Photograph of an adult knight whose surcoat is ivory guipure lace over dark chainmail, backlit in a chapel doorway. No text or logo.',
+        'Photograph of an adult bride in an ivory guipure lace gown over a dark slip standing backlit in a chapel doorway, light pouring through the floral openwork onto the stone floor. No text or logo.',
         'Photograph of an elderly adult woman in a black Chantilly lace mantilla and dress at a candlelit window. No text or logo.',
         'Photograph of an adult man in a dusty-rose crochet lace shirt with open floral motifs standing in a sunlit rose garden, light passing through the lace and dappling his skin and the gravel path. No text or logo.',
       ],
@@ -323,7 +323,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Photograph of an adult woman in a gown folded entirely from ivory washi with origami crane sleeves in a bamboo grove. No text or logo.',
-        'Photograph of an adult knight whose armor is folded from kraft paper facets standing in light rain. No text or logo.',
+        'Photograph of an adult street performer whose coat and hat are folded from kraft paper facets standing in light rain, sharp creases softening at the hem where the paper has started to darken. No text or logo.',
         'Photograph of an elderly adult man in a red coat folded entirely from crisp paper, sharp pleats and faceted shoulders, reading on a park bench as a paper crane unfolds from his pocket. No text or logo.',
       ],
     },
@@ -340,7 +340,7 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult knight wearing full armor made of bubble wrap standing stiffly in a castle courtyard. No text or logo.',
+        'Photograph of an adult deliveryman wearing a full suit tailored from bubble wrap standing stiffly on a doorstep with a parcel, rows of air cells catching the porch light. No text or logo.',
         'Photograph of an adult woman in a puffy bubble-wrap ball gown dancing alone in a white studio, rows of air cells catching the softbox light and a few popped bubbles on the floor. No text or logo.',
         'Photograph of an elderly adult man in a long bubble-wrap overcoat and hat waiting at a rainy bus stop, water beading on the air cells, commuters in ordinary coats beside him. No text or logo.',
       ],
@@ -377,7 +377,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Photograph of an adult woman in a gown of flowing water splashing around her ankles in a desert. No text or logo.',
-        'Photograph of an adult knight whose cloak is a cascade of water on a stone bridge. No text or logo.',
+        'Photograph of an adult violinist whose long coat is a cascade of flowing water on a stone bridge at dawn, splashes curling from the sleeves as she plays and caustic light rippling on the stones. No text or logo.',
         'Photograph of an elderly adult man in an armchair wearing a coat made of flowing clear water, splashes curling at the cuffs and caustic light rippling across the living room wallpaper. No text or logo.',
       ],
     },
@@ -413,7 +413,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Photograph of an adult woman transformed into a porcelain doll with a hairline crack across her cheek, seated in an abandoned nursery. No text or logo.',
-        'Photograph of an adult knight rendered as glazed porcelain with joint seams, standing in a garden. No text or logo.',
+        'Photograph of an adult ballerina rendered as glazed porcelain with ball-joint seams at her knees and elbows, standing on pointe in a garden gazebo, a hairline crack across one arm. No text or logo.',
         'Photograph of an elderly adult man transformed into a glazed bisque porcelain figure reading by a rainy window, painted eyebrows, fine hairline cracks and ball-joint seams at the wrists and knees. No text or logo.',
       ],
     },
@@ -450,7 +450,7 @@ const spec: Spec = {
       briefs: [
         "Photograph of an adult man whose shirt, tie and waistcoat are entirely trompe-l'oeil body paint, standing in a tailor shop. No text or logo.",
         'Photograph of an adult woman painted to blend into a starry night backdrop, only her face readable. No text or logo.',
-        "Photograph of an elderly adult man painted with a knight's armor illusion holding a real sword. No text or logo.",
+        "Photograph of an elderly adult man in an ordinary chair painted head to toe with a trompe-l'oeil suit and tie illusion, holding a real teacup, the painted fabric folds perfectly convincing. No text or logo.",
       ],
     },
     'SP08-074': {
@@ -503,7 +503,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Photograph of an adult woman in a dripping lime gel gown in a sterile white corridor. No text or logo.',
-        'Photograph of an adult knight whose tabard is thick glossy amber gel dripping onto the flagstones of a castle hall, bubbles trapped in the gel and long stretching strands at the hem. No text or logo.',
+        'Photograph of an adult chef whose apron and jacket are thick glossy amber gel dripping onto a restaurant kitchen floor, bubbles trapped inside and long strands stretching from the hem. No text or logo.',
         'Photograph of an elderly adult man in a magenta gel coat waiting at a bus stop, the glossy material slowly sagging and dripping onto the pavement, bubbles held inside. No text or logo.',
       ],
     },
@@ -521,7 +521,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Photograph of an adult woman turned into a weathered limestone statue with lichen, standing in a living marketplace. No text or logo.',
-        'Photograph of an adult knight turned into a moss-covered sandstone statue kneeling in a forest clearing, chisel marks on the armor, lichen on the shoulders and ferns growing at the base. No text or logo.',
+        'Photograph of an adult gardener turned into a moss-covered sandstone statue kneeling among vegetable beds, chisel marks on the coat, lichen on the shoulders and ferns growing at the knees. No text or logo.',
         'Photograph of an elderly adult man turned into a weathered marble statue sitting on a park bench, a folded stone book in his hands, rain streaks and a pigeon on his head. No text or logo.',
       ],
     },

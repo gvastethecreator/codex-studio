@@ -488,7 +488,7 @@ const spec: Spec = {
       tags: ['pipe-cleaner', 'pom-pom', 'fuzzy-craft'],
       dna: mini({
         aesthetic:
-          'Pipe-cleaner craft: the subject bent and twisted from fuzzy chenille stems, with pom-poms for round masses and wiggle-free bead eyes.',
+          'Pipe-cleaner craft: the subject bent and twisted from fuzzy chenille stems, with pom-poms for round masses and plain black bead eyes.',
         color_and_tone:
           'Candy-bright chenille colors, some tinsel metallic stems, pom-pom pastels; saturated against a plain backdrop.',
         lighting_and_shadow:

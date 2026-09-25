@@ -567,7 +567,7 @@ export const GENERATED_STYLE_PRESETS = [
       'brand logo on parts, readable text, turning a requested object into a house or building, full-scale real construction, playroom or party scene, googly eyes, kids craft table, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Pipe-cleaner craft: the subject bent and twisted from fuzzy chenille stems, with pom-poms for round masses and wiggle-free bead eyes.',
+        'Pipe-cleaner craft: the subject bent and twisted from fuzzy chenille stems, with pom-poms for round masses and plain black bead eyes.',
       subject_treatment:
         'Keep the requested subject, its identity, pose and camera, and rebuild it as a handmade tabletop miniature in this material; a requested object stays that object and never turns into a house or building.',
       color_and_tone:
@@ -582,7 +582,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Macro photograph of a real chenille build with fuzz resolved; no smooth wire or plastic.',
       creative_brief:
-        "Pipe-cleaner craft: the subject bent and twisted from fuzzy chenille stems, with pom-poms for round masses and wiggle-free bead eyes. Carry it through twisted fuzzy chenille stems, pom-pom masses, glowing fibre halos, exposed wire ends, plain seamless backdrop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Pipe-cleaner craft: the subject bent and twisted from fuzzy chenille stems, with pom-poms for round masses and plain black bead eyes. Carry it through twisted fuzzy chenille stems, pom-pom masses, glowing fibre halos, exposed wire ends, plain seamless backdrop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'twisted fuzzy chenille stems; pom-pom masses; glowing fibre halos; exposed wire ends; plain seamless backdrop',
     },

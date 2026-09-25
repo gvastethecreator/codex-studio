@@ -31,9 +31,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a knight statue finished in polished terrazzo with terracotta and green chips. No text or logo.',
-        'Photograph of a terrazzo dragon egg. No text or logo.',
-        'Photograph of a terrazzo throne. No text or logo.',
+        'Photograph of a café counter and bar stools finished in polished terrazzo, scattered terracotta, green and white stone chips in a cream cement matrix, espresso cups catching the morning light. No text or logo.',
+        'Photograph of a large terrazzo egg on a museum plinth, polished speckled surface with chips of marble, glass and brass scattered through grey cement, a soft spotlight reflection. No text or logo.',
+        'Photograph of a public drinking fountain cast in polished terrazzo in a park, blue and white glass chips in the matrix and water arcing into the basin. No text or logo.',
       ],
     },
     'SP10-054': {
@@ -48,9 +48,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a black marble dragon with dramatic gold veins sweeping along its body. No text or logo.',
-        'Photograph of a green marble knight. No text or logo.',
-        'Photograph of a veined marble crown. No text or logo.',
+        'Photograph of a black marble panther sculpture with dramatic gold veins sweeping along its body, polished to a mirror finish in a dark gallery. No text or logo.',
+        'Photograph of a green marble bathtub in an old spa with dramatic white veins flowing across its curves, steam rising and brass taps. No text or logo.',
+        'Photograph of a veined pink marble staircase curving through a grand hotel lobby, flowing grey veins running across every polished step. No text or logo.',
       ],
     },
     'SP10-055': {
@@ -65,9 +65,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a wooden owl whose grain lines flow around its eyes like feathers. No text or logo.',
-        'Photograph of a wood-grained knight. No text or logo.',
-        'Photograph of a wood-grained violin-shaped shield. No text or logo.',
+        'Photograph of a carved wooden owl whose bold grain lines flow around its eyes like feathers, a dark knot forming one pupil, oiled walnut glowing in window light. No text or logo.',
+        'Photograph of a wooden canoe paddle and hull with bold flowing grain lines and knots, freshly oiled on a lakeside dock at sunset. No text or logo.',
+        'Photograph of a wooden toy chest with bold swirling grain on its lid, knots like eyes and warm honey tones in a nursery. No text or logo.',
       ],
     },
     'SP10-056': {
@@ -82,9 +82,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a carbon-fiber twill knight's helmet under strip light. No text or logo.",
-        'Photograph of a carbon-fiber dragon. No text or logo.',
-        'Photograph of a carbon-fiber violin. No text or logo.',
+        'Photograph of a racing bicycle frame in glossy carbon-fiber twill under strip lights, the black woven pattern shifting as the tubes curve. No text or logo.',
+        'Photograph of a carbon-fiber twill briefcase on a marble desk, the glossy woven pattern catching a single desk lamp. No text or logo.',
+        'Photograph of a carbon-fiber twill cello standing in a dark studio, glossy black weave following its curves under soft light. No text or logo.',
       ],
     },
     'SP10-059': {
@@ -99,9 +99,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a leather-textured dragon egg with saddle stitching. No text or logo.',
-        'Photograph of a tooled leather knight. No text or logo.',
-        'Photograph of a leather-covered book-shaped chest. No text or logo.',
+        'Photograph of a vintage camera case in pebbled black leather with saddle stitching on a travel desk, embossed grain and worn corners. No text or logo.',
+        'Photograph of a tooled leather saddle on a fence rail, embossed floral patterns and stitching along the skirt, warm ranch light. No text or logo.',
+        'Photograph of a leather-covered traveling trunk with brass corners on a train platform, pebbled grain and neat stitching. No text or logo.',
       ],
     },
     'SP10-060': {
@@ -116,9 +116,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a gold-glitter-coated skull on velvet. No text or logo.',
-        'Photograph of a glitter dragon. No text or logo.',
-        'Photograph of a glitter knight. No text or logo.',
+        'Photograph of a skull coated in dense gold glitter on black velvet, every contour sparkling under a spotlight, loose glitter scattered on the cloth. No text or logo.',
+        'Photograph of a disco-roller skate coated in dense silver glitter on a rink floor, sparkles scattering under colored lights. No text or logo.',
+        'Photograph of a violet glitter-coated trumpet on a stage stool, dense sparkling coating catching the spotlight. No text or logo.',
       ],
     },
     'SP10-061': {
@@ -133,9 +133,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a rust-patterned dragon sculpture. No text or logo.',
-        'Photograph of a rust-patterned throne. No text or logo.',
-        'Photograph of a rust-patterned bell. No text or logo.',
+        'Photograph of a garden gate patterned with decorative rust blooms and orange streaks running down from each scroll, the pattern deliberate and even. No text or logo.',
+        'Photograph of a steel park bench patterned with decorative rust blooms and streaks, autumn leaves on the seat. No text or logo.',
+        'Photograph of a large bell with decorative rust blooms and streaks as a surface pattern hanging in a tower. No text or logo.',
       ],
     },
     'SP10-062': {
@@ -150,9 +150,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a holographic-foil knight's armor shifting rainbows. No text or logo.",
-        'Photograph of a holographic dragon. No text or logo.',
-        'Photograph of a holographic crown. No text or logo.',
+        'Photograph of a racing suit wrapped in holographic foil in a pit lane, rainbow diffraction shifting from magenta to green as the rider turns. No text or logo.',
+        'Photograph of a whale-shaped balloon covered in holographic foil floating over a festival, rainbow diffraction rippling across its skin. No text or logo.',
+        'Photograph of a holographic foil gift box on a white table, rainbow diffraction shifting across every face. No text or logo.',
       ],
     },
     'SP10-063': {
@@ -167,9 +167,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a chainmail-textured swan sculpture. No text or logo.',
-        'Photograph of a chainmail-textured teapot. No text or logo.',
-        'Photograph of a chainmail-textured mask. No text or logo.',
+        'Photograph of a swan sculpture with a chainmail ring-pattern surface on a lake shore, tiny interlocking rings shimmering like feathers. No text or logo.',
+        'Photograph of a teapot with a chainmail ring-pattern surface on a kitchen table, the rings catching window light, steam rising. No text or logo.',
+        'Photograph of a carnival mask with a chainmail ring-pattern surface on a velvet stand, fine rings forming the brows and nose. No text or logo.',
       ],
     },
     'SP10-064': {
@@ -184,9 +184,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a python-patterned knight's gauntlet. No text or logo.",
-        'Photograph of a snakeskin throne. No text or logo.',
-        'Photograph of a snakeskin violin. No text or logo.',
+        'Photograph of a pair of cowboy boots in python-patterned skin on a porch, bold scale markings and a soft sheen. No text or logo.',
+        'Photograph of a snakeskin-patterned armchair in a jazz lounge, bold diamond markings across the curved back. No text or logo.',
+        'Photograph of an electric guitar finished in snakeskin pattern leaning on an amplifier in a smoky club, bold black and gold diamond markings wrapping the body, scales catching the red stage light. No text or logo.',
       ],
     },
     'SP10-071': {
@@ -201,9 +201,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a knight's helmet repaired with kintsugi gold seams. No text or logo.",
-        'Photograph of a kintsugi dragon mask. No text or logo.',
-        'Photograph of a kintsugi skull. No text or logo.',
+        'Photograph of a broken tea bowl repaired with kintsugi gold seams on a tatami mat, the gold-filled cracks branching like rivers. No text or logo.',
+        'Photograph of a ceramic fox mask repaired with kintsugi gold seams, cracks running across its snout and eyes. No text or logo.',
+        'Photograph of a cracked porcelain skull repaired with branching gold kintsugi seams resting on dark wood beside a candle, the gold lines catching the flame across the brow and jaw. No text or logo.',
       ],
     },
   },
@@ -223,9 +223,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a raku-glazed dragon skull with smoky black crackle and copper flashes. No text or logo.',
-        'Raku knight helmet. No text or logo.',
-        'Raku owl. No text or logo.',
+        'Photograph of a raku-glazed vase with crackled white glaze, smoky black craze lines and copper metallic flashes, on a rough stone plinth. No text or logo.',
+        'Photograph of a horse head sculpture fired in raku on a gallery pedestal, the white glaze split by a dense web of smoky black crackle, iridescent copper blushes pooling in the nostrils and mane. No text or logo.',
+        'Photograph of a raku-fired owl perched on a moss-covered garden wall at dusk, heavy carbon smoke staining its lower half black, crackled pale glaze on the chest and a coppery sheen on the wings. No text or logo.',
       ],
     },
     {
@@ -243,9 +243,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a Damascus-steel crown with flowing etched waves. No text or logo.',
-        'Damascus steel gauntlet. No text or logo.',
-        'Damascus steel dragon. No text or logo.',
+        "Photograph of a Damascus-steel chef's knife on a cutting board, flowing etched wave patterns along the blade beside herbs. No text or logo.",
+        'Photograph of a Damascus-steel pocket watch case with flowing layered waves, open on a velvet cloth. No text or logo.',
+        'Photograph of a pair of Damascus-steel wedding rings resting on a mossy river stone, flowing etched layers swirling in grey and silver around each band, water droplets beading nearby. No text or logo.',
       ],
     },
     {
@@ -263,9 +263,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a burl-wood dragon egg with swirling figure. No text or logo.',
-        'Burl wood throne. No text or logo.',
-        'Burl wood violin. No text or logo.',
+        'Photograph of a bowl turned from burl wood with swirling chaotic grain, clusters of eyes and a glossy oil finish on a workbench. No text or logo.',
+        'Photograph of a burl-wood dashboard in a vintage car, swirling grain and eye clusters under glossy lacquer. No text or logo.',
+        'Photograph of a burl-wood guitar body with swirling figure and dark eye clusters under a glossy finish. No text or logo.',
       ],
     },
     {
@@ -283,9 +283,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a mokume-gane knight's helmet with copper-silver grain. No text or logo.",
-        'Mokume-gane ring on velvet. No text or logo.',
-        'Mokume-gane dragon. No text or logo.',
+        'Photograph of a mokume-gane pendant with copper, silver and gold layers forming wood-grain patterns, resting on slate. No text or logo.',
+        'Photograph of a mokume-gane ring on velvet, layered mixed metals swirling like wood grain in pink and grey. No text or logo.',
+        'Photograph of a mokume-gane sword guard with layered copper and silver grain patterns on dark cloth. No text or logo.',
       ],
     },
     {
@@ -303,9 +303,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a tadelakt-plastered knight statue in terracotta. No text or logo.',
-        'Tadelakt dragon. No text or logo.',
-        'Tadelakt throne. No text or logo.',
+        'Photograph of a bathroom with walls and a sunken tub in terracotta tadelakt plaster, burnished soft sheen and cloudy variation in warm light. No text or logo.',
+        'Photograph of a tadelakt plaster sink and niche in pale sand color, soft burnished sheen and subtle cloudy variation. No text or logo.',
+        'Photograph of a curved tadelakt bench in a courtyard, burnished lime plaster in ochre with soft cloudy variation. No text or logo.',
       ],
     },
     {
@@ -323,9 +323,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a cloisonné dragon with turquoise enamel cells. No text or logo.',
-        'Cloisonné helmet. No text or logo.',
-        'Cloisonné egg. No text or logo.',
+        'Photograph of a cloisonné koi fish vase with turquoise and coral enamel fields separated by fine gold wire cells, glossy under soft light. No text or logo.',
+        'Photograph of a cloisonné egg on a gold stand, glossy enamel fields in cobalt and white separated by gold wire. No text or logo.',
+        'Photograph of a cloisonné incense burner with glossy green and red enamel cells and fine gold wire outlines. No text or logo.',
       ],
     },
     {
@@ -343,9 +343,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a guilloché-engraved shield with sunburst grooves. No text or logo.',
-        'Guilloché crown. No text or logo.',
-        'Guilloché dragon egg. No text or logo.',
+        'Photograph of a pocket watch dial with guilloché sunburst grooves under translucent blue enamel, catching the light. No text or logo.',
+        'Photograph of a guilloché-engraved compact mirror with repeating wave patterns under pink enamel on a vanity. No text or logo.',
+        'Photograph of a fountain pen with a guilloché-engraved barrel lying on an old leather desk blotter, machine-cut waves glowing beneath translucent green enamel in lamp light. No text or logo.',
       ],
     },
     {
@@ -363,9 +363,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a black urushi-lacquered samurai helmet with gold maki-e cranes. No text or logo.',
-        'Urushi dragon box. No text or logo.',
-        'Urushi knight shield. No text or logo.',
+        'Photograph of a black urushi-lacquered samurai helmet with gold maki-e cranes, deep glossy surface reflecting a paper lantern. No text or logo.',
+        'Photograph of a vermilion urushi-lacquered writing box open on a low table, gold maki-e maple leaves drifting across the lid, the deep glossy surface reflecting a paper window. No text or logo.',
+        'Photograph of a black urushi-lacquered tiered food box on a tatami mat, fine gold sprinkles scattered like stars, glossy reflections of a garden in its surface. No text or logo.',
       ],
     },
     {
@@ -383,9 +383,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a hammered-copper dragon with dimpled facets glinting. No text or logo.',
-        'Hammered brass crown. No text or logo.',
-        "Hammered pewter goblet with a knight's crest. No text or logo.",
+        'Photograph of a hammered-copper kettle on an old iron stove, hundreds of dimpled facets glinting orange and pink in the flame light, steam curling from the spout into a dim kitchen. No text or logo.',
+        'Photograph of a hammered-brass farmhouse sink under a window of herbs, dimpled hand-hammered facets scattering the morning light, water droplets on the rim. No text or logo.',
+        'Photograph of a hammered-pewter goblet on a long oak tavern table, dimpled facets glowing softly in candlelight, a spilled drop of red wine beside the base. No text or logo.',
       ],
     },
   ] satisfies Create[],

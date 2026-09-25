@@ -452,7 +452,7 @@ const spec: Spec = {
         lighting_and_shadow:
           'Long mirror-like clear coat reflections, glittering flakes under point lights.',
         texture_and_material:
-          'Deep glossy lacquer, fine metal flake sparkle, smooth orange-peel-free finish.',
+          'Deep glossy lacquer, fine metal flake sparkle, smooth finish with no orange peel.',
         camera_and_composition:
           'Keep the requested framing; studio or street lights to excite the flakes.',
         atmosphere_and_mood: 'Flashy and custom, a hot-rod finish on anything.',
