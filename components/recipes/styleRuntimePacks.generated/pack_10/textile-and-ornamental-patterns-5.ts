@@ -20,7 +20,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Printed or woven fabric with fine detail, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.',
       atmosphere_and_mood:
         'Bohemian, ornate, warm and flowing, carried by the pattern and its colors.',
       rendering_and_quality:
@@ -47,7 +47,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Woven jacquard with satin sheen, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.',
       atmosphere_and_mood: 'Regal, formal, rich and quiet, carried by the pattern and its colors.',
       rendering_and_quality:
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
@@ -72,7 +72,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Natural light that follows the surface, so the pattern bends with folds and curves.',
       texture_and_material: 'Woven wool twill, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.',
       atmosphere_and_mood:
         'Classic, sharp, tailored and graphic, carried by the pattern and its colors.',
       rendering_and_quality:
@@ -98,7 +98,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Natural light that follows the surface, so the pattern bends with folds and curves.',
       texture_and_material: 'Woven wool twill, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.',
       atmosphere_and_mood:
         'Rugged, clan-proud, warm and bold, carried by the pattern and its colors.',
       rendering_and_quality:
@@ -125,7 +125,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Printed fabric or painted surface, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.',
       atmosphere_and_mood:
         'Playful, retro, cheerful and bold, carried by the pattern and its colors.',
       rendering_and_quality:
@@ -152,7 +152,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Printed ripstop or paint, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.',
       atmosphere_and_mood:
         'Military, rugged, hidden and practical, carried by the pattern and its colors.',
       rendering_and_quality:
@@ -179,7 +179,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Dyed cotton with bleed, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.',
       atmosphere_and_mood:
         'Joyful, free, hippie and bright, carried by the pattern and its colors.',
       rendering_and_quality:
@@ -206,7 +206,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Knit stitches with fuzz, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.',
       atmosphere_and_mood: 'Cozy, handmade, warm and soft, carried by the pattern and its colors.',
       rendering_and_quality:
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
@@ -232,7 +232,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Twill weave with fading, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.',
       atmosphere_and_mood:
         'Casual, rugged, American and worn, carried by the pattern and its colors.',
       rendering_and_quality:
@@ -259,7 +259,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Woven strips with gaps, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.',
       atmosphere_and_mood:
         'Handmade, natural, rustic and airy, carried by the pattern and its colors.',
       rendering_and_quality:
@@ -286,7 +286,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Hexagonal cells with raised edges, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.',
       atmosphere_and_mood:
         'Orderly, organic, natural and precise, carried by the pattern and its colors.',
       rendering_and_quality:
@@ -313,7 +313,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Glazed ceramic tiles with grout, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.',
       atmosphere_and_mood:
         'Mediterranean, fresh, ornate and bright, carried by the pattern and its colors.',
       rendering_and_quality:
@@ -340,7 +340,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'X stitches on aida cloth, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.',
       atmosphere_and_mood:
         'Homely, handmade, charming and patient, carried by the pattern and its colors.',
       rendering_and_quality:
@@ -369,7 +369,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Natural light that follows the surface, so the pattern bends with folds and curves.',
       texture_and_material: 'Printed cotton, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.',
       atmosphere_and_mood:
         'Romantic, antique, pastoral and refined, carried by the pattern and its colors.',
       rendering_and_quality:
@@ -402,7 +402,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Woven threads with feathered edges, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.',
       atmosphere_and_mood:
         'Handcrafted, rich, earthy and vibrant, carried by the pattern and its colors.',
       rendering_and_quality:
@@ -435,7 +435,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Dyed cotton with crackle, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.',
       atmosphere_and_mood:
         'Earthy, handcrafted, intricate and warm, carried by the pattern and its colors.',
       rendering_and_quality:
@@ -467,7 +467,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Natural light that follows the surface, so the pattern bends with folds and curves.',
       texture_and_material: 'Dyed cotton or silk, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.',
       atmosphere_and_mood: 'Calm, handmade, fluid and deep, carried by the pattern and its colors.',
       rendering_and_quality:
         'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',
@@ -498,7 +498,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Natural light that follows the surface, so the pattern bends with folds and curves.',
       texture_and_material: 'Knit wool, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.',
       atmosphere_and_mood:
         'Preppy, classic, cozy and playful, carried by the pattern and its colors.',
       rendering_and_quality:
@@ -531,7 +531,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Flatweave wool with slits, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.',
       atmosphere_and_mood:
         'Nomadic, bold, warm and ancient, carried by the pattern and its colors.',
       rendering_and_quality:
@@ -564,7 +564,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Carved, embroidered or painted, with the pattern scaled correctly to the target.',
       camera_and_composition:
-        'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+        'Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.',
       atmosphere_and_mood:
         'Ancient, mystic, intricate and flowing, carried by the pattern and its colors.',
       rendering_and_quality:

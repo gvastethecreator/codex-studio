@@ -48,7 +48,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Flashbulb-bright key with sparkling highlights and dark falloff, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Satin, silk velvet, sequins, crystal embroidery and patent leather.',
       camera_and_composition:
-        'Full-length framing with the train or cape spread, keeping the full outfit silhouette and fit readable at card size.',
+        'Full-length framing with the train or cape spread, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Glamorous, triumphant and theatrical, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -79,7 +79,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Double-faced cashmere, vicuña-like wool, silk and suede, rendered with correct weave, weight, sheen and stitching.',
       camera_and_composition:
-        'Relaxed, elegant framing with restrained composition, keeping the full outfit silhouette and fit readable at card size.',
+        'Relaxed, elegant framing with restrained composition, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Assured, discreet and effortless, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -117,7 +117,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Hard, low side light that carves the layers, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Boiled wool, washed cotton, felted knits and raw-edged linen.',
       camera_and_composition:
-        'Full-figure, stark framing against plain or brutal architecture, keeping the full outfit silhouette and fit readable at card size.',
+        'Full-figure, stark framing against plain or brutal architecture, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Intellectual, severe, melancholic and poetic, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -151,7 +151,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Ripstop nylon, polar fleece, Gore-style shells, webbing and rubber soles.',
       camera_and_composition:
-        'Full figure in or against rugged landscape, keeping the full outfit silhouette and fit readable at card size.',
+        'Full figure in or against rugged landscape, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Adventurous, playful and practical, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -186,7 +186,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Metallic vinyl, satin, rhinestones, mesh and glossy plastic accessories.',
       camera_and_composition:
-        'Playful, tilted framing with pop energy, keeping the full outfit silhouette and fit readable at card size.',
+        'Playful, tilted framing with pop energy, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Flirty, fun, shiny and nostalgic, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -224,7 +224,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Brocade, printed silk, jacquard, velvet and beaded accessories, rendered with correct weave, weight, sheen and stitching.',
       camera_and_composition:
-        'Full figure against a patterned or colorful background, keeping the full outfit silhouette and fit readable at card size.',
+        'Full figure against a patterned or colorful background, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Joyful, loud, eccentric and fearless, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -263,7 +263,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Crisp wool suiting, silk shirting and polished leather, rendered with correct weave, weight, sheen and stitching.',
       camera_and_composition:
-        'Powerful, low-angle or centered full figure, keeping the full outfit silhouette and fit readable at card size.',
+        'Powerful, low-angle or centered full figure, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Authoritative, bold and unflinching, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -298,7 +298,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Tulle, ribbed knit, satin ribbon and fine jersey, rendered with correct weave, weight, sheen and stitching.',
       camera_and_composition:
-        'Graceful full figure with elegant line, keeping the full outfit silhouette and fit readable at card size.',
+        'Graceful full figure with elegant line, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Delicate, disciplined, romantic and quiet, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -364,7 +364,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Soft, flattering daylight, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Crepe, chiffon, fine wool, silk jersey and satin trims.',
       camera_and_composition:
-        'Elegant full-length framing that shows the layered silhouette, keeping the full outfit silhouette and fit readable at card size.',
+        'Elegant full-length framing that shows the layered silhouette, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Graceful, dignified and serene, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -437,7 +437,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Suede fringe, chain-stitch embroidery, denim, tooled leather and silver hardware.',
       camera_and_composition:
-        'Wide, cinematic full figure in open landscape, keeping the full outfit silhouette and fit readable at card size.',
+        'Wide, cinematic full figure in open landscape, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Rugged, romantic and independent, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -521,7 +521,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean, cool light; soft product-launch glow, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Merino knit, technical cotton and matte synthetic sneaker uppers.',
       camera_and_composition:
-        'Centered, symmetrical, keynote-like framing with clean backgrounds, keeping the full outfit silhouette and fit readable at card size.',
+        'Centered, symmetrical, keynote-like framing with clean backgrounds, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Focused, controlled, austere and a little cultish, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -549,7 +549,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Colored stage washes, backlight and haze, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Satin lapels, metallic trims, patent leather and stretch suiting.',
       camera_and_composition:
-        'Group formation or dynamic single figure mid-move, keeping the full outfit silhouette and fit readable at card size.',
+        'Group formation or dynamic single figure mid-move, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Bold, synchronized, glamorous and energetic, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -606,7 +606,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Fleece, washed denim, cotton jersey and scuffed canvas, rendered with correct weave, weight, sheen and stitching.',
       camera_and_composition:
-        'Straightforward, centered, almost deadpan framing, keeping the full outfit silhouette and fit readable at card size.',
+        'Straightforward, centered, almost deadpan framing, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Ironic, unbothered and quietly cool, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -635,7 +635,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Oxford cotton, lambswool cable knit, tweed, corduroy and polished leather.',
       camera_and_composition:
-        'Relaxed three-quarter or full figure, lifestyle framing, keeping the full outfit silhouette and fit readable at card size.',
+        'Relaxed three-quarter or full figure, lifestyle framing, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Confident, bookish, relaxed and privileged, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:

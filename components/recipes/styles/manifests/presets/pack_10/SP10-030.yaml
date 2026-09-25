@@ -17,7 +17,7 @@ visualDna:
   color_and_tone: Pure black and white, as produced by the medium, not added as decoration.
   lighting_and_shadow: Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.
   texture_and_material: Ordered or diffusion dither pattern, at a consistent unit size across the frame.
-  camera_and_composition: Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.
+  camera_and_composition: Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.
   atmosphere_and_mood: Retro, crisp, lo-fi and graphic, coming from the medium itself.
   rendering_and_quality: Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.
   key_features: 1-bit pixels; dither patterns

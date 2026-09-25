@@ -20,7 +20,7 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Soft directional editorial light with gentle shadow, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Glossy sauce, crisp tuiles, microgreens and matte ceramic, visible at card size as the signature of the style.',
+        'Glossy sauce, crisp tuiles, microgreens and matte ceramic, visible at a glance as the signature of the style.',
       camera_and_composition: 'Overhead or low three-quarter view with lots of empty plate.',
       atmosphere_and_mood:
         'Refined, precise, calm and luxurious, driven by the construction, color and rhythm.',
@@ -49,9 +49,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Bright sugary light with glossy sparkle, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Sugar glass, sprinkles, frosting and gummy translucency, visible at card size as the signature of the style.',
+        'Sugar glass, sprinkles, frosting and gummy translucency, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Wide whimsical view full of candy detail, arranged so the subject still reads at card size.',
+        'Wide whimsical view full of candy detail, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Sweet, whimsical, playful and a little uncanny, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -76,7 +76,7 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow: 'Soft counter light with gentle gloss on the fish.',
       texture_and_material: 'Glossy raw fish, rice grains, nori and wood grain.',
       camera_and_composition:
-        'Low three-quarter view along the counter, arranged so the subject still reads at card size.',
+        'Low three-quarter view along the counter, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Calm, precise, fresh and respectful, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -102,9 +102,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Hard commercial light with rim highlights, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Glossy buns, melting cheese, crisp lettuce and fries, visible at card size as the signature of the style.',
+        'Glossy buns, melting cheese, crisp lettuce and fries, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Heroic low angle against a clean colored backdrop, arranged so the subject still reads at card size.',
+        'Heroic low angle against a clean colored backdrop, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Craving, loud, energetic and bold, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -130,9 +130,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Backlight through the glass with rim glints, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Condensation, ice, citrus peel and glass refraction, visible at card size as the signature of the style.',
+        'Condensation, ice, citrus peel and glass refraction, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Macro framing at glass height, arranged so the subject still reads at card size.',
+        'Macro framing at glass height, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Glamorous, nocturnal, cool and sensual, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -158,9 +158,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Warm morning light through a shop window, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Crust cracks, crumb, flaky layers and flour, visible at card size as the signature of the style.',
+        'Crust cracks, crumb, flaky layers and flour, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Window display framing with trays and shelves, arranged so the subject still reads at card size.',
+        'Window display framing with trays and shelves, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Warm, homely, abundant and inviting, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -185,9 +185,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'High-speed strobe light freezing droplets, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Juice droplets, cut fruit flesh and seeds, visible at card size as the signature of the style.',
+        'Juice droplets, cut fruit flesh and seeds, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Centered burst with flying pieces, arranged so the subject still reads at card size.',
+        'Centered burst with flying pieces, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Fresh, energetic, juicy and bright, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -212,9 +212,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Soft studio light with glossy highlights, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Molten gloss, tempered sheen and cocoa dust, visible at card size as the signature of the style.',
+        'Molten gloss, tempered sheen and cocoa dust, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Close product framing with flowing ribbons, arranged so the subject still reads at card size.',
+        'Close product framing with flowing ribbons, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Indulgent, rich, sensual and slow, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -239,9 +239,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Bright soft daylight from above, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Rice grains, nori, egg, vegetables and lacquer box, visible at card size as the signature of the style.',
+        'Rice grains, nori, egg, vegetables and lacquer box, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Top-down view of the box, arranged so the subject still reads at card size.',
+        'Top-down view of the box, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Cute, careful, cheerful and neat, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -266,9 +266,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Warm oven glow, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Stretchy cheese, char and oil, visible at card size as the signature of the style.',
+        'Stretchy cheese, char and oil, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Close cheese-pull framing, arranged so the subject still reads at card size.',
+        'Close cheese-pull framing, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Craving, warm, casual and fun, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -292,7 +292,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone: 'Creamy white foam on caramel-brown crema, cup color as accent.',
       lighting_and_shadow: 'Soft cafe window light with a gentle foam sheen.',
       texture_and_material:
-        'Velvety microfoam, crema speckle and glazed ceramic, visible at card size as the signature of the style.',
+        'Velvety microfoam, crema speckle and glazed ceramic, visible at a glance as the signature of the style.',
       camera_and_composition: 'Top-down view of the cup with saucer and a spoon at the edge.',
       atmosphere_and_mood:
         'Cozy, crafted, fleeting and warm, driven by the construction, color and rhythm.',
@@ -322,9 +322,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Candlelight and hearth firelight, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Roast skin, crusty bread, pewter, wax and wood, visible at card size as the signature of the style.',
+        'Roast skin, crusty bread, pewter, wax and wood, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Long table view down the feast, arranged so the subject still reads at card size.',
+        'Long table view down the feast, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Abundant, rich, rowdy and warm, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -356,9 +356,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Lantern and grill glow with rising steam, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Char, steam, oil sheen and paper, visible at card size as the signature of the style.',
+        'Char, steam, oil sheen and paper, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Close stall-level framing, arranged so the subject still reads at card size.',
+        'Close stall-level framing, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Lively, warm, crowded and delicious, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -390,9 +390,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Flat flash light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Wobbly gelatin, printed grain and faded color, visible at card size as the signature of the style.',
+        'Wobbly gelatin, printed grain and faded color, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Tabletop framing with dated tablecloth, arranged so the subject still reads at card size.',
+        'Tabletop framing with dated tablecloth, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Kitschy, strange, nostalgic and funny, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -424,9 +424,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Window backlight through jars, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Glass jars, brine, wax seals and wood shelves, visible at card size as the signature of the style.',
+        'Glass jars, brine, wax seals and wood shelves, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Shelf framing with rows of jars, arranged so the subject still reads at card size.',
+        'Shelf framing with rows of jars, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Homely, patient, abundant and mysterious, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -458,9 +458,8 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Soft natural light from the side, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Wood grain, cheese rind, cured meat marbling, visible at card size as the signature of the style.',
-      camera_and_composition:
-        'Overhead flat-lay, arranged so the subject still reads at card size.',
+        'Wood grain, cheese rind, cured meat marbling, visible at a glance as the signature of the style.',
+      camera_and_composition: 'Overhead flat-lay, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Abundant, generous, social and warm, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -492,9 +491,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Cool clinical light with fog, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Glossy spheres, airy foams and powder dusting, visible at card size as the signature of the style.',
+        'Glossy spheres, airy foams and powder dusting, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Close lab-like plating, arranged so the subject still reads at card size.',
+        'Close lab-like plating, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Curious, futuristic, precise and playful, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -525,9 +524,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Firelight from below, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cast iron, ash, smoke and char, visible at card size as the signature of the style.',
+        'Cast iron, ash, smoke and char, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Low fire-level framing, arranged so the subject still reads at card size.',
+        'Low fire-level framing, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Primal, rustic, warm and smoky, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -559,9 +558,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Spotlight on glossy sugar, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Glossy translucent sugar and satin ribbons, visible at card size as the signature of the style.',
+        'Glossy translucent sugar and satin ribbons, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Tall sculpture framing on a pedestal, arranged so the subject still reads at card size.',
+        'Tall sculpture framing on a pedestal, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Spectacular, fragile, virtuosic and bright, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -592,9 +591,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Warm light with backlit steam, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Glossy broth, noodles and steam, visible at card size as the signature of the style.',
+        'Glossy broth, noodles and steam, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Close bowl framing with chopsticks, arranged so the subject still reads at card size.',
+        'Close bowl framing with chopsticks, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Comforting, warm, rich and hungry, driven by the construction, color and rhythm.',
       rendering_and_quality:

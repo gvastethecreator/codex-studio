@@ -18,7 +18,7 @@ visualDna:
   color_and_tone: Cool grey concrete with darker water stains, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Flat overcast light that reads texture, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Cast concrete with board marks, tie holes and pits.
-  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.
+  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.
   atmosphere_and_mood: Brutal, heavy, austere and monumental, carried by the material itself rather than by added props.
   rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
   key_features: board-formed concrete; tie holes; air voids; cool grey

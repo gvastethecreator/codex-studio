@@ -127,7 +127,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Bold spray colors over grey concrete or brick, used consistently across subject and background.',
       lighting_and_shadow: 'Light is painted: bright fades and dark outline shadows.',
       texture_and_material:
-        'Spray grain, overspray halos, drips and wall texture, visible at card size as the signature of the style.',
+        'Spray grain, overspray halos, drips and wall texture, visible at a glance as the signature of the style.',
       camera_and_composition: 'Mural framing on a wall with the subject large.',
       atmosphere_and_mood:
         'Rebellious, energetic, loud and urban, driven by the construction, color and rhythm.',
@@ -156,7 +156,7 @@ export const GENERATED_STYLE_PRESETS = [
         'The tubes are the only light, with halo bloom and reflections on the wall.',
       texture_and_material: 'Glass tubes, clips, wires and a dark brick or panel wall.',
       camera_and_composition:
-        'Frontal sign framing with the glowing drawing centered, arranged so the subject still reads at card size.',
+        'Frontal sign framing with the glowing drawing centered, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Nocturnal, moody, electric and lonely, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -181,7 +181,7 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Harsh flash contrast reduced to black shapes, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Silkscreen ink, off-register edges and flat paper, visible at card size as the signature of the style.',
+        'Silkscreen ink, off-register edges and flat paper, visible at a glance as the signature of the style.',
       camera_and_composition: 'Single frontal panel or a grid of repeats in different colorways.',
       atmosphere_and_mood:
         'Bold, ironic, graphic and cool, driven by the construction, color and rhythm.',
@@ -210,9 +210,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Tone comes only from burn depth, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Wood grain, scorched lines and slight charring, visible at card size as the signature of the style.',
+        'Wood grain, scorched lines and slight charring, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Plaque or wood-slice framing with bark edge, arranged so the subject still reads at card size.',
+        'Plaque or wood-slice framing with bark edge, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Rustic, warm, patient and handmade, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -243,7 +243,7 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Polished surface sheen on a curved object, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Polished bone with scratched lines and age cracks, visible at card size as the signature of the style.',
+        'Polished bone with scratched lines and age cracks, visible at a glance as the signature of the style.',
       camera_and_composition: 'Object close-up following the curve of a tooth or tusk.',
       atmosphere_and_mood:
         'Nautical, lonely, patient and old, driven by the construction, color and rhythm.',
@@ -277,7 +277,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Tone comes from ink pressure; no lighting, expressed through the style rather than photographic lighting.',
       texture_and_material: 'Thin mulberry paper with ink texture and uneven pressure.',
       camera_and_composition:
-        'Flat side-view print with generous empty paper, arranged so the subject still reads at card size.',
+        'Flat side-view print with generous empty paper, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Quiet, natural, direct and eerie, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -307,9 +307,9 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone: 'One paper color, black or red, on a contrasting background.',
       lighting_and_shadow: 'Light passing through the cut holes with small shadows.',
       texture_and_material:
-        'Paper with crisp cut edges and fold line, visible at card size as the signature of the style.',
+        'Paper with crisp cut edges and fold line, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Symmetrical framing around a central fold, arranged so the subject still reads at card size.',
+        'Symmetrical framing around a central fold, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Delicate, folkloric, careful and intricate, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -340,7 +340,7 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Flat painted decoration; object surface sheen, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Oil paint strokes on painted wood with wear, visible at card size as the signature of the style.',
+        'Oil paint strokes on painted wood with wear, visible at a glance as the signature of the style.',
       camera_and_composition: 'Decoration framed by the shape of a chest, plate or bowl.',
       atmosphere_and_mood:
         'Homely, festive, rustic and warm, driven by the construction, color and rhythm.',
@@ -376,9 +376,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Glossy lacquer reflections; painted light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Mirror-smooth lacquer and fine gold lines, visible at card size as the signature of the style.',
+        'Mirror-smooth lacquer and fine gold lines, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Box lid composition with ornate gold border, arranged so the subject still reads at card size.',
+        'Box lid composition with ornate gold border, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Fairy-tale, precious, delicate and enchanted, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -409,9 +409,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'No lighting; flat ink, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Absorbent paper, pooled and feathered ink, fold line, visible at card size as the signature of the style.',
+        'Absorbent paper, pooled and feathered ink, fold line, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Symmetric framing around a vertical fold, arranged so the subject still reads at card size.',
+        'Symmetric framing around a vertical fold, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Uncanny, psychological, ambiguous and eerie, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -442,9 +442,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Soft flat light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Translucent dried petals and leaf veins on paper, visible at card size as the signature of the style.',
+        'Translucent dried petals and leaf veins on paper, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Frame or album page with the subject centered, arranged so the subject still reads at card size.',
+        'Frame or album page with the subject centered, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Nostalgic, delicate, quiet and melancholy, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -474,9 +474,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Soft light on wool loops, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Wool loops, burlap edges and uneven rows, visible at card size as the signature of the style.',
+        'Wool loops, burlap edges and uneven rows, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Rug-shaped framing with a border, arranged so the subject still reads at card size.',
+        'Rug-shaped framing with a border, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Cozy, folk, homely and warm, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -507,9 +507,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Light catching the engraved marks, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Clear glass with frosted scratches and stipple, visible at card size as the signature of the style.',
+        'Clear glass with frosted scratches and stipple, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Object framing: goblet, window pane or glass panel, arranged so the subject still reads at card size.',
+        'Object framing: goblet, window pane or glass panel, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Delicate, elegant, cold and refined, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -541,7 +541,7 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Candle inside casting dot patterns on walls, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Tin, punched holes and rust, visible at card size as the signature of the style.',
+        'Tin, punched holes and rust, visible at a glance as the signature of the style.',
       camera_and_composition: 'Lantern or panel framing with light patterns around it.',
       atmosphere_and_mood:
         'Folk, cozy, mysterious and warm, driven by the construction, color and rhythm.',
@@ -574,9 +574,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Gold catching light unevenly on raised relief, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Gold leaf, gesso relief, punch marks and craquelure, visible at card size as the signature of the style.',
+        'Gold leaf, gesso relief, punch marks and craquelure, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Panel or box framing with ornamental gilded border, arranged so the subject still reads at card size.',
+        'Panel or box framing with ornamental gilded border, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Sacred, precious, medieval and rich, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -607,9 +607,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Theatrical lighting with glowing highlights, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Smooth enamel-like paint, copper edge visible, visible at card size as the signature of the style.',
+        'Smooth enamel-like paint, copper edge visible, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Small cabinet-picture framing, arranged so the subject still reads at card size.',
+        'Small cabinet-picture framing, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Precious, intimate, dramatic and old, driven by the construction, color and rhythm.',
       rendering_and_quality:

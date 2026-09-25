@@ -18,7 +18,7 @@ visualDna:
   color_and_tone: Ochre, rust, cream and red banding, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Low warm sun that emphasizes grain, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Granular sandstone with bedding layers and wind erosion, at a believable physical scale relative to the target.
-  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.
+  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.
   atmosphere_and_mood: Ancient, eroded, warm and desert-like, carried by the material itself rather than by added props.
   rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
   key_features: rough granular sandstone; bedding bands; wind erosion; warm ochre

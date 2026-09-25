@@ -18,7 +18,7 @@ visualDna:
   color_and_tone: Grey-beige dust over the object color, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Shafts of light revealing floating motes, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Fine dust layer, finger swipes and motes, at a believable physical scale relative to the target.
-  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.
+  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.
   atmosphere_and_mood: Forgotten, quiet, still and timeless, carried by the material itself rather than by added props.
   rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
   key_features: settled dust layer; thicker on top faces; finger swipes; surface-level damage; structure intact

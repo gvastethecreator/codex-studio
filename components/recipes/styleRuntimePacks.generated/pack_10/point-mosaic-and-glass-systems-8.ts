@@ -14,7 +14,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Pointillism: the image built from small dots of pure color that mix optically.',
       subject_treatment:
-        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: small round dots of pure unmixed paint; joints: visible canvas between dots.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: small round dots of pure unmixed paint; joints: visible canvas between dots.",
       color_and_tone:
         'Complementary pure colors placed side by side, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow:
@@ -41,7 +41,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Stone tile mosaic: cut stone and ceramic tesserae laid in flowing rows.',
       subject_treatment:
-        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: square and cut stone or ceramic tesserae; joints: grey grout lines.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: square and cut stone or ceramic tesserae; joints: grey grout lines.",
       color_and_tone:
         'Earthy stone colors with bright accents, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow:
@@ -69,7 +69,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Stained glass: colored glass pieces joined by dark lead came, glowing with transmitted light.',
       subject_treatment:
-        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: colored glass pieces; joints: dark lead came lines.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: colored glass pieces; joints: dark lead came lines.",
       color_and_tone:
         'Jewel reds, blues, greens and gold, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow:
@@ -99,7 +99,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Divisionism: short directional dashes and dots of separated color.',
       subject_treatment:
-        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: short directional dashes of pure color; joints: small gaps.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: short directional dashes of pure color; joints: small gaps.",
       color_and_tone:
         'Sunlit complementary pairs, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow:
@@ -132,7 +132,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Byzantine mosaic: glass and gold-leaf tesserae set at angles to shimmer.',
       subject_treatment:
-        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: glass and gold-leaf tesserae set at slight angles; joints: dark mortar gaps.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: glass and gold-leaf tesserae set at slight angles; joints: dark mortar gaps.",
       color_and_tone:
         'Gold ground with deep blues and reds, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow:
@@ -166,7 +166,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Roman floor mosaic: small limestone tesserae in earthy tones with guilloche borders.',
       subject_treatment:
-        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: small limestone and marble tesserae; joints: worn grout.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: small limestone and marble tesserae; joints: worn grout.",
       color_and_tone:
         'Terracotta, ochre, black and white, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow: 'Matte worn stone, as the physical behavior of this unit.',
@@ -198,7 +198,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Micro-mosaic: tiny glass rods cut into minute tesserae, painterly and fine.',
       subject_treatment:
-        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: minute glass smalti cut from rods; joints: nearly invisible joints.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: minute glass smalti cut from rods; joints: nearly invisible joints.",
       color_and_tone:
         'Rich painterly colors, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow: 'Soft glassy sheen, as the physical behavior of this unit.',
@@ -230,7 +230,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Pique-assiette: broken china plates and cups reassembled into mosaic.',
       subject_treatment:
-        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: broken china shards with floral patterns; joints: white grout.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: broken china shards with floral patterns; joints: white grout.",
       color_and_tone:
         'Blue-and-white and floral china, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow: 'Glossy glaze highlights, as the physical behavior of this unit.',
@@ -262,7 +262,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Pebble mosaic: smooth river pebbles set on edge in patterns.',
       subject_treatment:
-        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: smooth river pebbles set on edge; joints: packed mortar.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: smooth river pebbles set on edge; joints: packed mortar.",
       color_and_tone:
         'Black, white, grey and ochre pebbles, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow: 'Wet sheen on pebbles, as the physical behavior of this unit.',
@@ -294,7 +294,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Sea glass: frosted rounded glass fragments assembled against light.',
       subject_treatment:
-        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: frosted, rounded sea-glass fragments; joints: clear resin.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: frosted, rounded sea-glass fragments; joints: clear resin.",
       color_and_tone:
         'Aqua, green, brown and white glass, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow: 'Soft backlit glow, as the physical behavior of this unit.',
@@ -326,7 +326,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Button mosaic: hundreds of sewing buttons forming the image.',
       subject_treatment:
-        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: assorted sewing buttons with holes; joints: fabric or board gaps.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: assorted sewing buttons with holes; joints: fabric or board gaps.",
       color_and_tone:
         'Assorted button colors, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow: 'Glossy button highlights, as the physical behavior of this unit.',
@@ -358,7 +358,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Fuse beads: melted plastic tube beads on a pegboard grid.',
       subject_treatment:
-        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: fused plastic tube beads with center holes; joints: grid adjacency.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: fused plastic tube beads with center holes; joints: grid adjacency.",
       color_and_tone:
         'Bright plastic colors, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow: 'Soft plastic sheen, as the physical behavior of this unit.',
@@ -390,7 +390,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Rhinestone mosaic: faceted crystals set edge to edge.',
       subject_treatment:
-        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: faceted crystal rhinestones; joints: tight glue setting.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: faceted crystal rhinestones; joints: tight glue setting.",
       color_and_tone:
         'Crystal colors, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow: 'Sparkling facet flashes, as the physical behavior of this unit.',
@@ -422,7 +422,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Opus sectile: large cut stone shapes fitted into a picture.',
       subject_treatment:
-        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: large cut marble and stone shapes; joints: hairline joints.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: large cut marble and stone shapes; joints: hairline joints.",
       color_and_tone:
         'Colored marbles and porphyry, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow: 'Polished stone reflections, as the physical behavior of this unit.',
@@ -454,7 +454,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Pietra dura: polished hardstones inlaid seamlessly into black marble.',
       subject_treatment:
-        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: polished semi-precious hardstones; joints: invisible seamless joints.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: polished semi-precious hardstones; joints: invisible seamless joints.",
       color_and_tone:
         'Lapis, malachite, coral on black marble, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow: 'High polish, as the physical behavior of this unit.',
@@ -486,7 +486,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Marquetry: veneers of different woods cut and fitted into pictures.',
       subject_treatment:
-        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: wood veneer pieces of different species; joints: tight fitted seams.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: wood veneer pieces of different species; joints: tight fitted seams.",
       color_and_tone:
         'Wood tones from pale maple to dark ebony, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow: 'Satin varnish sheen, as the physical behavior of this unit.',
@@ -519,7 +519,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Tiffany-style lamp glass: opalescent glass pieces with copper-foil seams glowing warmly.',
       subject_treatment:
-        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: opalescent streaky glass pieces; joints: copper-foil soldered seams.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: opalescent streaky glass pieces; joints: copper-foil soldered seams.",
       color_and_tone:
         'Amber, green and dragonfly blues, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow: 'Warm glow from within, as the physical behavior of this unit.',
@@ -552,7 +552,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Grisaille glass: clear and grey painted glass with fine lead lines and delicate shading.',
       subject_treatment:
-        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: clear glass panes painted in grey grisaille; joints: thin lead lines.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: clear glass panes painted in grey grisaille; joints: thin lead lines.",
       color_and_tone:
         'Silver-grey with pale yellow stain accents, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow: 'Soft silvery transmitted light, as the physical behavior of this unit.',
@@ -585,7 +585,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Fused glass: glass pieces kiln-fused into one slab with rounded edges and bubbles.',
       subject_treatment:
-        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: kiln-fused glass pieces; joints: melted, rounded seams.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: kiln-fused glass pieces; joints: melted, rounded seams.",
       color_and_tone:
         'Saturated glass colors, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow: 'Backlit glow with bubbles, as the physical behavior of this unit.',
@@ -617,7 +617,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Quilling: rolled paper strip coils shaped and glued edge-on.',
       subject_treatment:
-        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: rolled paper strip coils; joints: glued edge-on contact.",
+        "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: rolled paper strip coils; joints: glued edge-on contact.",
       color_and_tone:
         'Paper colors, with each unit holding one color so the image is built by juxtaposition.',
       lighting_and_shadow: 'Soft shadows between coils, as the physical behavior of this unit.',

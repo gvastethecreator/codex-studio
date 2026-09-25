@@ -20,7 +20,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Strip light producing stretched anisotropic highlights, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material: 'Satin aluminum with fine parallel brush lines and chamfered edges.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Precise, modern, cool and engineered, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -48,7 +48,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Gold leaf squares with seams, crackle and burnish, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Sacred, precious, opulent and still, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -74,7 +74,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Soft overcast light, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material: 'Copper sheet with oxidized verdigris crust and worn bright edges.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Aged, weathered, noble and calm, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -100,7 +100,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Hard studio light for clear-coat reflections, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material: 'Forged carbon composite with marbled chopped fibers and clear coat.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'High-tech, sleek, strong and aggressive, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -127,7 +127,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Flat overcast light that reads texture, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material: 'Cast concrete with board marks, tie holes and pits.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Brutal, heavy, austere and monumental, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -153,7 +153,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Warm late sun on the brick face, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material: 'Fired clay bricks with chipped edges, efflorescence and mortar.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Industrial, sturdy, historic and warm, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -180,7 +180,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Asphalt aggregate with wet sheen and puddle reflections, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Urban, moody, nocturnal and slick, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -207,7 +207,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Bright soft studio light, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material: 'Smooth molded plastic with parting lines and slight gloss.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Playful, toy-like, clean and artificial, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -234,7 +234,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Soft light showing matte texture, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material: 'Vulcanized rubber with molded ridges, scuffs and mold lines.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Industrial, tough, flexible and heavy, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -260,7 +260,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Backlight catching the cracks, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material: 'Glass with radial fractures, spiderweb cracks and chipped edges.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Fragile, tense, dramatic and dangerous, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -287,7 +287,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Glossy latex skin with stretch and tight reflections, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Sleek, provocative, strange and polished, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -315,7 +315,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Corrugated cardboard with flutes, creases and packing tape, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Handmade, playful, humble and improvised, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -342,7 +342,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Bubble wrap with air cells, creases and tape, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Playful, protective, absurd and light, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -370,7 +370,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Overlapping sequins with individual reflections, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Glamorous, festive, dazzling and loud, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -397,7 +397,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Granular cork with pinholes and compressed grains, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Warm, light, natural and homely, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -424,7 +424,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Soft raking light for micro-texture, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material: 'Nylon hooks and loops with fuzzy and bristly zones.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Tactile, odd, practical and playful, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -452,7 +452,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Liquid metal with ripples, beads and mirror reflection, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Uncanny, fluid, futuristic and cold, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -480,7 +480,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Expanded foam beads, hot-wire cut faces and crumbs, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Light, cheap, clean and temporary, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -507,7 +507,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Plywood with layered edges, grain faces and screws, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Constructive, modern, honest and handmade, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -534,7 +534,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Pressed wood strands with resin and rough edges, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Raw, industrial, rough and practical, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -561,7 +561,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Smooth linoleum with marbled flecks and seams, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Institutional, retro, clean and quiet, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -588,7 +588,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Woven galvanized wire in diamond mesh, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Urban, restrictive, industrial and hard, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -615,7 +615,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Twisted steel wire with barbs and rust, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Harsh, threatening, painful and stark, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -642,7 +642,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Photovoltaic cells, busbars and glass, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Technological, clean, efficient and modern, carried by the material itself rather than by added props.',
       rendering_and_quality:

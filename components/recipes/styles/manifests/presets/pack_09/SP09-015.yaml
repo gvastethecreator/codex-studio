@@ -18,7 +18,7 @@ visualDna:
   color_and_tone: Amber, gold and pale yellow wax, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Backlight making wax cells glow, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Hexagonal wax cells, honey drips and waxy sheen, at a believable physical scale relative to the target.
-  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.
+  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.
   atmosphere_and_mood: Warm, sweet, organic and industrious, carried by the material itself rather than by added props.
   rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
   key_features: hexagonal wax cells; honey drips; glowing amber; waxy sheen

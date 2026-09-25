@@ -27,7 +27,7 @@ visualDna:
   color_and_tone: Orange, chartreuse and grey-green lichen, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Soft overcast light, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Crusty lichen rosettes and powdery patches, at a believable physical scale relative to the target.
-  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.
+  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.
   atmosphere_and_mood: Ancient, slow, quiet and alive, carried by the material itself rather than by added props.
   rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
   creative_brief: "Lichen crust: flat crusty lichen rosettes in orange, yellow and grey growing over the target. Carry it through lichen rosettes, circular crust patches, orange and chartreuse, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."

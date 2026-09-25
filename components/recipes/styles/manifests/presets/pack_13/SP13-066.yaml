@@ -25,8 +25,8 @@ visualDna:
   subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: still tired poses, reflections layered over faces, streaked passing lights."
   color_and_tone: Deep blue night, fluorescent green-white and warm passing lights.
   lighting_and_shadow: Train interior light and passing streetlights, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with reflective glass layers, visible at card size as the signature of the style.
-  camera_and_composition: Seat-level frames through windows, arranged so the subject still reads at card size.
+  texture_and_material: Cel with reflective glass layers, visible at a glance as the signature of the style.
+  camera_and_composition: Seat-level frames through windows, arranged so the subject still reads at a glance.
   atmosphere_and_mood: Melancholic, tired, reflective and quiet, driven by the construction, color and rhythm.
   rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
   creative_brief: "Late train anime: night commuter frames with window reflections, passing lights and tired quiet passengers. Carry it through window reflections, streaked lights, tired passengers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."

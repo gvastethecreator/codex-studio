@@ -27,7 +27,7 @@ visualDna:
   color_and_tone: Monochrome grey ash over faint original colors, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Diffuse hazy light, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Fine powdery ash drifts and settled layers, at a believable physical scale relative to the target.
-  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.
+  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.
   atmosphere_and_mood: Silent, eerie, suspended and bleak, carried by the material itself rather than by added props.
   rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
   creative_brief: "Ash fall coating: fine grey volcanic ash settled over the target, softening edges. Carry it through grey ash drifts, softened edges, monochrome, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."

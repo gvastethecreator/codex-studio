@@ -23,7 +23,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Glossy ABS bricks with studs and seams, showing how the object was actually made.',
       camera_and_composition:
-        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.",
+        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at a glance.",
       atmosphere_and_mood:
         'Playful, constructive, nostalgic and bright, coming from the handmade or toy quality.',
       rendering_and_quality:
@@ -53,7 +53,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Matte vinyl with seam lines, showing how the object was actually made.',
       camera_and_composition:
-        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.",
+        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at a glance.",
       atmosphere_and_mood:
         'Cute, collectible, simple and playful, coming from the handmade or toy quality.',
       rendering_and_quality:
@@ -83,7 +83,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Soft dough with fingerprints and cracks, showing how the object was actually made.',
       camera_and_composition:
-        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.",
+        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at a glance.",
       atmosphere_and_mood:
         'Playful, childlike, soft and handmade, coming from the handmade or toy quality.',
       rendering_and_quality:
@@ -110,7 +110,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Paper facets, creases and tabs, showing how the object was actually made.',
       camera_and_composition:
-        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.",
+        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at a glance.",
       atmosphere_and_mood:
         'Crafted, geometric, charming and light, coming from the handmade or toy quality.',
       rendering_and_quality:
@@ -138,7 +138,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Crochet stitches and yarn fuzz, showing how the object was actually made.',
       camera_and_composition:
-        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.",
+        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at a glance.",
       atmosphere_and_mood:
         'Cute, cozy, handmade and gentle, coming from the handmade or toy quality.',
       rendering_and_quality:
@@ -166,7 +166,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Minky fleece, seams and embroidery, showing how the object was actually made.',
       camera_and_composition:
-        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.",
+        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at a glance.",
       atmosphere_and_mood:
         'Cuddly, comforting, sweet and soft, coming from the handmade or toy quality.',
       rendering_and_quality:
@@ -194,7 +194,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Molded plastic, joints and paint apps, showing how the object was actually made.',
       camera_and_composition:
-        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.",
+        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at a glance.",
       atmosphere_and_mood:
         'Heroic, nostalgic, toyetic and bold, coming from the handmade or toy quality.',
       rendering_and_quality:
@@ -220,7 +220,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Bright light with glossy highlights, like a tabletop product or studio photograph of the craft object.',
       texture_and_material: 'Latex balloons with twists, showing how the object was actually made.',
       camera_and_composition:
-        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.",
+        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at a glance.",
       atmosphere_and_mood:
         'Playful, festive, silly and bright, coming from the handmade or toy quality.',
       rendering_and_quality:
@@ -247,7 +247,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Wood grain, dowels and paint, showing how the object was actually made.',
       camera_and_composition:
-        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.",
+        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at a glance.",
       atmosphere_and_mood:
         'Wholesome, classic, warm and simple, coming from the handmade or toy quality.',
       rendering_and_quality:
@@ -274,7 +274,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Glossy vinyl and white border, showing how the object was actually made.',
       camera_and_composition:
-        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.",
+        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at a glance.",
       atmosphere_and_mood:
         'Playful, bold, graphic and collectible, coming from the handmade or toy quality.',
       rendering_and_quality:
@@ -302,7 +302,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Plasticine with fingerprints, showing how the object was actually made.',
       camera_and_composition:
-        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.",
+        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at a glance.",
       atmosphere_and_mood:
         'Comic, warm, silly and handmade, coming from the handmade or toy quality.',
       rendering_and_quality:
@@ -329,7 +329,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Tin plate, tabs and printed detail, showing how the object was actually made.',
       camera_and_composition:
-        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.",
+        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at a glance.",
       atmosphere_and_mood:
         'Vintage, charming, mechanical and nostalgic, coming from the handmade or toy quality.',
       rendering_and_quality:
@@ -356,7 +356,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Paper, wood and miniature props, showing how the object was actually made.',
       camera_and_composition:
-        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.",
+        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at a glance.",
       atmosphere_and_mood:
         'Intimate, charming, crafted and deep, coming from the handmade or toy quality.',
       rendering_and_quality:
@@ -383,7 +383,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Cloth, buttons and stitches, showing how the object was actually made.',
       camera_and_composition:
-        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.",
+        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at a glance.",
       atmosphere_and_mood:
         'Eerie, handmade, sweet and uncanny, coming from the handmade or toy quality.',
       rendering_and_quality:
@@ -409,7 +409,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Soft light, like a tabletop product or studio photograph of the craft object.',
       texture_and_material: 'Glazed tiles and grout, showing how the object was actually made.',
       camera_and_composition:
-        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.",
+        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at a glance.",
       atmosphere_and_mood:
         'Crafty, cheerful, handmade and bright, coming from the handmade or toy quality.',
       rendering_and_quality:
@@ -436,7 +436,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Satin stitches, knots and linen weave, showing how the object was actually made.',
       camera_and_composition:
-        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.",
+        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at a glance.",
       atmosphere_and_mood:
         'Delicate, handmade, patient and cozy, coming from the handmade or toy quality.',
       rendering_and_quality:
@@ -462,7 +462,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Backlit glass, like a tabletop product or studio photograph of the craft object.',
       texture_and_material: 'Sand grains and glass, showing how the object was actually made.',
       camera_and_composition:
-        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.",
+        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at a glance.",
       atmosphere_and_mood:
         'Patient, fragile, colorful and calm, coming from the handmade or toy quality.',
       rendering_and_quality:
@@ -489,7 +489,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Clear ice, chisel marks and frost, showing how the object was actually made.',
       camera_and_composition:
-        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.",
+        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at a glance.",
       atmosphere_and_mood:
         'Cold, elegant, fleeting and luminous, coming from the handmade or toy quality.',
       rendering_and_quality:
@@ -520,7 +520,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Printed card, cut edges and sticks, showing how the object was actually made.',
       camera_and_composition:
-        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.",
+        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at a glance.",
       atmosphere_and_mood:
         'Theatrical, nostalgic, charming and quaint, coming from the handmade or toy quality.',
       rendering_and_quality:
@@ -554,7 +554,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Resin with brushwork, washes and base, showing how the object was actually made.',
       camera_and_composition:
-        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.",
+        "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at a glance.",
       atmosphere_and_mood:
         'Crafted, detailed, collectible and dramatic, coming from the handmade or toy quality.',
       rendering_and_quality:

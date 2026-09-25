@@ -21,7 +21,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Macroblock smears and motion trails, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.',
       atmosphere_and_mood: 'Fluid, broken, hypnotic and digital, coming from the medium itself.',
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
@@ -47,7 +47,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Long sorted pixel streaks with sharp thresholds, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.',
       atmosphere_and_mood: 'Digital, flowing, eerie and precise, coming from the medium itself.',
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
@@ -74,7 +74,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Tracking bands, head-switching noise at the bottom and soft analog blur.',
       camera_and_composition:
-        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.',
       atmosphere_and_mood: 'Nostalgic, degraded, eerie and analog, coming from the medium itself.',
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
@@ -100,7 +100,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Scanlines, shadow mask dots and curved-glass vignette, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.',
       atmosphere_and_mood: 'Retro, glowing, nostalgic and warm, coming from the medium itself.',
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
@@ -126,7 +126,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
       texture_and_material: 'Monospaced glyph grid, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.',
       atmosphere_and_mood: 'Hacker, retro, cryptic and textual, coming from the medium itself.',
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
@@ -153,7 +153,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Blocky compression and edge ringing, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.',
       atmosphere_and_mood:
         'Degraded, internet-worn, crude and ironic, coming from the medium itself.',
       rendering_and_quality:
@@ -179,7 +179,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
       texture_and_material: 'Channel-split fringes, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.',
       atmosphere_and_mood: 'Unstable, cinematic, digital and tense, coming from the medium itself.',
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
@@ -206,7 +206,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Glass-contact detail, falloff and scan stretch, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.',
       atmosphere_and_mood:
         'Strange, intimate, clinical and surreal, coming from the medium itself.',
       rendering_and_quality:
@@ -232,7 +232,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
       texture_and_material: 'Regular dot screen, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.',
       atmosphere_and_mood: 'Graphic, printed, retro and bold, coming from the medium itself.',
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
@@ -258,7 +258,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Ordered or diffusion dither pattern, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.',
       atmosphere_and_mood: 'Retro, crisp, lo-fi and graphic, coming from the medium itself.',
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
@@ -287,7 +287,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
       texture_and_material: 'Stepped color bands, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.',
       atmosphere_and_mood: 'Crude, bold, retro and graphic, coming from the medium itself.',
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
@@ -319,7 +319,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
       texture_and_material: 'Stretched warped streaks, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.',
       atmosphere_and_mood: 'Temporal, uncanny, fluid and strange, coming from the medium itself.',
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
@@ -351,7 +351,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Comb teeth along motion edges, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.',
       atmosphere_and_mood:
         'Broadcast, twitchy, retro and technical, coming from the medium itself.',
       rendering_and_quality:
@@ -383,7 +383,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
       texture_and_material: 'Chunky 2x3 block cells, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.',
       atmosphere_and_mood: 'Retro, broadcast, charming and crude, coming from the medium itself.',
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
@@ -420,7 +420,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Glowing vector lines and grid, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.',
       atmosphere_and_mood: 'Technical, eerie, retro and precise, coming from the medium itself.',
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
@@ -452,7 +452,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Grainy e-paper with ghost layers, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.',
       atmosphere_and_mood: 'Quiet, haunted, low-power and subtle, coming from the medium itself.',
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
@@ -485,7 +485,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Rectangular corruption blocks, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.',
       atmosphere_and_mood: 'Broken, digital, jarring and tense, coming from the medium itself.',
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
@@ -518,7 +518,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Tiled repeats and stretched streaks, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.',
       atmosphere_and_mood: 'Uncanny, broken, gamey and absurd, coming from the medium itself.',
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
@@ -549,7 +549,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
       texture_and_material: 'Round LED dots with glow, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.',
       atmosphere_and_mood: 'Electronic, bold, nightlife and retro, coming from the medium itself.',
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
@@ -582,7 +582,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Dither, streaks and curled paper, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.',
       atmosphere_and_mood: 'Humble, ephemeral, odd and lo-fi, coming from the medium itself.',
       rendering_and_quality:
         'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',

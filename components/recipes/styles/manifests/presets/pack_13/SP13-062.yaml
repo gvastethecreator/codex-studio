@@ -25,8 +25,8 @@ visualDna:
   subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: elegant restrained lines, precise hands on instruments, formal clothing."
   color_and_tone: Deep wood browns, black, cream and gold, used consistently across subject and background.
   lighting_and_shadow: Soft spotlight in a dark hall, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with polished reflections, visible at card size as the signature of the style.
-  camera_and_composition: Stage framing, arranged so the subject still reads at card size.
+  texture_and_material: Cel with polished reflections, visible at a glance as the signature of the style.
+  camera_and_composition: Stage framing, arranged so the subject still reads at a glance.
   atmosphere_and_mood: Hushed, elegant, intense and emotional, driven by the construction, color and rhythm.
   rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
   creative_brief: "Classical recital anime: hushed concert-hall frames, polished instruments, soft spotlight and suspended breath. Carry it through polished instruments, spotlight, hush. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."

@@ -20,7 +20,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Pleated linen, faience beads, hammered gold and lapis, rendered with correct weave, weight, sheen and stitching.',
       camera_and_composition:
-        'Frontal, hieratic full figure framing, keeping the full outfit silhouette and fit readable at card size.',
+        'Frontal, hieratic full figure framing, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Divine, ceremonial, poised and timeless, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -47,7 +47,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Harsh prairie sun or low dusty sunset, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Duck canvas, wool, calico, cracked leather and brass buttons.',
       camera_and_composition:
-        'Wide full figure in open land, keeping the full outfit silhouette and fit readable at card size.',
+        'Wide full figure in open land, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Weathered, stubborn, lonely and hardworking, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -74,7 +74,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Soft overcast or low torchlight glinting on lacquer, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Lacquered plates, silk lacing, iron, leather and gilded crests.',
       camera_and_composition:
-        'Imposing full figure or three-quarter framing, keeping the full outfit silhouette and fit readable at card size.',
+        'Imposing full figure or three-quarter framing, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Stoic, fearsome, disciplined and ceremonial, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -102,7 +102,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Soft window light like a court portrait, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Silk brocade, velvet, lace ruffs, pearls and gold embroidery.',
       camera_and_composition:
-        'Formal portrait framing, three-quarter or full figure, keeping the full outfit silhouette and fit readable at card size.',
+        'Formal portrait framing, three-quarter or full figure, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Regal, rich, formal and self-assured, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -129,7 +129,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Cold grey window light or candlelight, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Silk crape, bombazine, lace veils, jet beads and black kid leather.',
       camera_and_composition:
-        'Formal, still, full-figure framing, keeping the full outfit silhouette and fit readable at card size.',
+        'Formal, still, full-figure framing, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Solemn, ritual, grief-stricken and severe, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -158,7 +158,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Cotton poplin, taffeta petticoats, wool twinsets, pearls and patent leather.',
       camera_and_composition:
-        'Posed full figure with the skirt silhouette visible, keeping the full outfit silhouette and fit readable at card size.',
+        'Posed full figure with the skirt silhouette visible, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Optimistic, polished, wholesome and slightly uncanny, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -214,7 +214,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Bright Mediterranean daylight with marble bounce, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Heavy wool drapery, bronze, leather straps and gilded laurel.',
       camera_and_composition:
-        'Statuesque full figure with drapery clearly readable, keeping the full outfit silhouette and fit readable at card size.',
+        'Statuesque full figure with drapery clearly readable, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Imperial, dignified, commanding and austere, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -242,7 +242,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Lamé, sequins, silk jersey, satin and patent platforms, rendered with correct weave, weight, sheen and stitching.',
       camera_and_composition:
-        'Dancing full figure with dynamic pose, keeping the full outfit silhouette and fit readable at card size.',
+        'Dancing full figure with dynamic pose, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Glamorous, euphoric, sensual and flashy, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -300,7 +300,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Warm mosaic-gold glow with soft shadows, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Heavy silk samite, gold thread, pearls, cabochon gems and enamel.',
       camera_and_composition:
-        'Frontal, iconic full figure, keeping the full outfit silhouette and fit readable at card size.',
+        'Frontal, iconic full figure, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Sacred, imperial, rigid and resplendent, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -334,7 +334,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Soft, diffused screen-filtered light, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Figured silk, gauze, lacquered fan and long straight hair.',
       camera_and_composition:
-        'Seated or kneeling figure with layers spread around, keeping the full outfit silhouette and fit readable at card size.',
+        'Seated or kneeling figure with layers spread around, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Refined, poetic, contemplative and aristocratic, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -367,7 +367,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Soft English daylight through tall windows, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Sheer muslin, wool broadcloth, silk ribbon and polished leather.',
       camera_and_composition:
-        'Graceful full-figure framing, keeping the full outfit silhouette and fit readable at card size.',
+        'Graceful full-figure framing, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Genteel, romantic, restrained and witty, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -402,7 +402,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Silk lampas, velvet, gold brocade and embroidered çintemani and tulip motifs.',
       camera_and_composition:
-        'Stately full figure showing the layered kaftans, keeping the full outfit silhouette and fit readable at card size.',
+        'Stately full figure showing the layered kaftans, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Majestic, ornate, dignified and worldly, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -439,7 +439,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Soft overcast or smoky hearth light, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Coarse wool, linen, patched seams, leather and wooden toggles.',
       camera_and_composition:
-        'Honest working full figure, keeping the full outfit silhouette and fit readable at card size.',
+        'Honest working full figure, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Humble, hardworking, earthy and resilient, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -477,7 +477,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Wool gabardine, rayon, cotton drill and hand-knitted wool, rendered with correct weave, weight, sheen and stitching.',
       camera_and_composition:
-        'Determined full figure, keeping the full outfit silhouette and fit readable at card size.',
+        'Determined full figure, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Resolute, practical, thrifty and brave, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -511,7 +511,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Soft, hazy summer daylight, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Lace, silk chiffon, ostrich plumes, tulle and kid leather.',
       camera_and_composition:
-        'Elegant full figure with the S-bend silhouette visible, keeping the full outfit silhouette and fit readable at card size.',
+        'Elegant full figure with the S-bend silhouette visible, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Elegant, leisurely, romantic and refined, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -545,7 +545,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Warm, glowing court light, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Silk gauze, damask, gold hairpins and painted flower motifs.',
       camera_and_composition:
-        'Flowing full figure with shawl in motion, keeping the full outfit silhouette and fit readable at card size.',
+        'Flowing full figure with shawl in motion, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Opulent, graceful, lively and cosmopolitan, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -579,7 +579,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Soft, golden palace light through jali screens, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Fine muslin, zari gold thread, pearls, emeralds and embroidered silk.',
       camera_and_composition:
-        'Elegant three-quarter or full figure, keeping the full outfit silhouette and fit readable at card size.',
+        'Elegant three-quarter or full figure, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Refined, regal, poetic and sumptuous, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
@@ -610,7 +610,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Coarse wool, fur, tablet-woven bands, bronze brooches and glass beads.',
       camera_and_composition:
-        'Weathered full figure in cold outdoor framing, keeping the full outfit silhouette and fit readable at card size.',
+        'Weathered full figure in cold outdoor framing, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Hardy, proud, seafaring and wind-beaten, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:

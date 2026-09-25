@@ -18,7 +18,7 @@ function units(
 ): Dna {
   return {
     aesthetic,
-    subject_treatment: `Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: ${unit}; joints: ${joint}.`,
+    subject_treatment: `Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: ${unit}; joints: ${joint}.`,
     color_and_tone: pad(
       color,
       9,

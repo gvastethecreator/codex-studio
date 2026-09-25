@@ -17,7 +17,7 @@ visualDna:
   color_and_tone: Grey, white or tinted smoke, concentrated around the target while the rest of the scene keeps its palette.
   lighting_and_shadow: Backlight and side light revealing smoke volumes, so the effect lights the target and casts believable local light.
   texture_and_material: Curling smoke wisps and soft volumes, with physically plausible motion, density and falloff.
-  camera_and_composition: Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.
+  camera_and_composition: Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.
   atmosphere_and_mood: Mysterious, soft, drifting and quiet, coming from the effect rather than added scenery.
   rendering_and_quality: Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.
   key_features: curling smoke wisps; soft volumes; contained around the target

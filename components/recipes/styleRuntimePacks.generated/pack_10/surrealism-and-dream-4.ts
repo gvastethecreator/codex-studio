@@ -23,7 +23,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Glossy precise painting with melting forms, rendered with enough realism that the impossible feels believable.',
       camera_and_composition:
-        'Keep the prompt framing; place the distortion or dream element where it reads instantly at card size.',
+        'Keep the prompt framing; place the distortion or dream element where it reads instantly at a glance.',
       atmosphere_and_mood:
         'Uncanny, still, dreamlike and precise, arising from the mechanism rather than added scenery.',
       rendering_and_quality:
@@ -51,7 +51,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Plain surfaces and faint wear, rendered with enough realism that the impossible feels believable.',
       camera_and_composition:
-        'Keep the prompt framing; place the distortion or dream element where it reads instantly at card size.',
+        'Keep the prompt framing; place the distortion or dream element where it reads instantly at a glance.',
       atmosphere_and_mood:
         'Unsettling, empty, nostalgic and quiet, arising from the mechanism rather than added scenery.',
       rendering_and_quality:
@@ -79,7 +79,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Swirling patterns and vibrating outlines, rendered with enough realism that the impossible feels believable.',
       camera_and_composition:
-        'Keep the prompt framing; place the distortion or dream element where it reads instantly at card size.',
+        'Keep the prompt framing; place the distortion or dream element where it reads instantly at a glance.',
       atmosphere_and_mood:
         'Euphoric, intense, trippy and alive, arising from the mechanism rather than added scenery.',
       rendering_and_quality:
@@ -107,7 +107,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Soft focus and faint grain, rendered with enough realism that the impossible feels believable.',
       camera_and_composition:
-        'Keep the prompt framing; place the distortion or dream element where it reads instantly at card size.',
+        'Keep the prompt framing; place the distortion or dream element where it reads instantly at a glance.',
       atmosphere_and_mood:
         'Nostalgic, comforting, eerie and unreal, arising from the mechanism rather than added scenery.',
       rendering_and_quality:
@@ -135,7 +135,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Realistic textures, rendered with enough realism that the impossible feels believable.',
       camera_and_composition:
-        'Keep the prompt framing; place the distortion or dream element where it reads instantly at card size.',
+        'Keep the prompt framing; place the distortion or dream element where it reads instantly at a glance.',
       atmosphere_and_mood:
         'Calm, poetic, quietly astonishing and tender, arising from the mechanism rather than added scenery.',
       rendering_and_quality:
@@ -162,7 +162,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Blended photographic layers, rendered with enough realism that the impossible feels believable.',
       camera_and_composition:
-        'Keep the prompt framing; place the distortion or dream element where it reads instantly at card size.',
+        'Keep the prompt framing; place the distortion or dream element where it reads instantly at a glance.',
       atmosphere_and_mood:
         'Reflective, symbolic, dreamy and poetic, arising from the mechanism rather than added scenery.',
       rendering_and_quality:
@@ -192,7 +192,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Precise line and stone, rendered with enough realism that the impossible feels believable.',
       camera_and_composition:
-        'Keep the prompt framing; place the distortion or dream element where it reads instantly at card size.',
+        'Keep the prompt framing; place the distortion or dream element where it reads instantly at a glance.',
       atmosphere_and_mood:
         'Puzzling, precise, infinite and uncanny, arising from the mechanism rather than added scenery.',
       rendering_and_quality:
@@ -219,7 +219,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Glossy digital surfaces, rendered with enough realism that the impossible feels believable.',
       camera_and_composition:
-        'Keep the prompt framing; place the distortion or dream element where it reads instantly at card size.',
+        'Keep the prompt framing; place the distortion or dream element where it reads instantly at a glance.',
       atmosphere_and_mood:
         'Nostalgic, ironic, dreamy and hazy, arising from the mechanism rather than added scenery.',
       rendering_and_quality:
@@ -249,7 +249,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Glossy ribbed biomech surfaces, rendered with enough realism that the impossible feels believable.',
       camera_and_composition:
-        'Keep the prompt framing; place the distortion or dream element where it reads instantly at card size.',
+        'Keep the prompt framing; place the distortion or dream element where it reads instantly at a glance.',
       atmosphere_and_mood:
         'Dark, unsettling, cold and alien, arising from the mechanism rather than added scenery.',
       rendering_and_quality:
@@ -277,7 +277,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Paper cut edges and print grain, rendered with enough realism that the impossible feels believable.',
       camera_and_composition:
-        'Keep the prompt framing; place the distortion or dream element where it reads instantly at card size.',
+        'Keep the prompt framing; place the distortion or dream element where it reads instantly at a glance.',
       atmosphere_and_mood:
         'Witty, strange, nostalgic and absurd, arising from the mechanism rather than added scenery.',
       rendering_and_quality:
@@ -304,7 +304,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Smooth painted surfaces, rendered with enough realism that the impossible feels believable.',
       camera_and_composition:
-        'Keep the prompt framing; place the distortion or dream element where it reads instantly at card size.',
+        'Keep the prompt framing; place the distortion or dream element where it reads instantly at a glance.',
       atmosphere_and_mood:
         'Enigmatic, melancholic, still and silent, arising from the mechanism rather than added scenery.',
       rendering_and_quality:
@@ -332,7 +332,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Smooth glossy paint, rendered with enough realism that the impossible feels believable.',
       camera_and_composition:
-        'Keep the prompt framing; place the distortion or dream element where it reads instantly at card size.',
+        'Keep the prompt framing; place the distortion or dream element where it reads instantly at a glance.',
       atmosphere_and_mood:
         'Cute, creepy, playful and dark, arising from the mechanism rather than added scenery.',
       rendering_and_quality:
@@ -360,7 +360,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Painterly rich textures, rendered with enough realism that the impossible feels believable.',
       camera_and_composition:
-        'Keep the prompt framing; place the distortion or dream element where it reads instantly at card size.',
+        'Keep the prompt framing; place the distortion or dream element where it reads instantly at a glance.',
       atmosphere_and_mood:
         'Grim, epic, ominous and mythic, arising from the mechanism rather than added scenery.',
       rendering_and_quality:
@@ -387,7 +387,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Plants, wood and glass, rendered with enough realism that the impossible feels believable.',
       camera_and_composition:
-        'Keep the prompt framing; place the distortion or dream element where it reads instantly at card size.',
+        'Keep the prompt framing; place the distortion or dream element where it reads instantly at a glance.',
       atmosphere_and_mood:
         'Hopeful, bright, communal and green, arising from the mechanism rather than added scenery.',
       rendering_and_quality:
@@ -415,7 +415,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Low-resolution grain, rendered with enough realism that the impossible feels believable.',
       camera_and_composition:
-        'Keep the prompt framing; place the distortion or dream element where it reads instantly at card size.',
+        'Keep the prompt framing; place the distortion or dream element where it reads instantly at a glance.',
       atmosphere_and_mood:
         'Disturbing, nostalgic, wrong and strange, arising from the mechanism rather than added scenery.',
       rendering_and_quality:
@@ -445,7 +445,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Realistic textures, rendered with enough realism that the impossible feels believable.',
       camera_and_composition:
-        'Keep the prompt framing; place the distortion or dream element where it reads instantly at card size.',
+        'Keep the prompt framing; place the distortion or dream element where it reads instantly at a glance.',
       atmosphere_and_mood:
         'Awe-filled, absurd, quiet and strange, arising from the mechanism rather than added scenery.',
       rendering_and_quality:
@@ -479,7 +479,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Painterly glazes, rendered with enough realism that the impossible feels believable.',
       camera_and_composition:
-        'Keep the prompt framing; place the distortion or dream element where it reads instantly at card size.',
+        'Keep the prompt framing; place the distortion or dream element where it reads instantly at a glance.',
       atmosphere_and_mood:
         'Mystical, melancholic, allegorical and lush, arising from the mechanism rather than added scenery.',
       rendering_and_quality:
@@ -515,7 +515,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Realistic reflections, rendered with enough realism that the impossible feels believable.',
       camera_and_composition:
-        'Keep the prompt framing; place the distortion or dream element where it reads instantly at card size.',
+        'Keep the prompt framing; place the distortion or dream element where it reads instantly at a glance.',
       atmosphere_and_mood:
         'Uncanny, poetic, mysterious and split, arising from the mechanism rather than added scenery.',
       rendering_and_quality:
@@ -548,7 +548,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Sweaty glossy surfaces, rendered with enough realism that the impossible feels believable.',
       camera_and_composition:
-        'Keep the prompt framing; place the distortion or dream element where it reads instantly at card size.',
+        'Keep the prompt framing; place the distortion or dream element where it reads instantly at a glance.',
       atmosphere_and_mood:
         'Feverish, uncomfortable, intense and strange, arising from the mechanism rather than added scenery.',
       rendering_and_quality:
@@ -581,7 +581,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Realistic textures, rendered with enough realism that the impossible feels believable.',
       camera_and_composition:
-        'Keep the prompt framing; place the distortion or dream element where it reads instantly at card size.',
+        'Keep the prompt framing; place the distortion or dream element where it reads instantly at a glance.',
       atmosphere_and_mood:
         'Weightless, calm, magical and quiet, arising from the mechanism rather than added scenery.',
       rendering_and_quality:

@@ -17,7 +17,7 @@ visualDna:
   color_and_tone: Coral pink, orange, purple, cream and turquoise, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Underwater-like caustic light, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Calcareous coral with polyps, ridges and porous texture, at a believable physical scale relative to the target.
-  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.
+  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.
   atmosphere_and_mood: Vibrant, alive, oceanic and intricate, carried by the material itself rather than by added props.
   rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
   key_features: branching and brain coral; polyps; porous calcareous texture; caustic light

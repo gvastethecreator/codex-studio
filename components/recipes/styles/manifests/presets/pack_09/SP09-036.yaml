@@ -18,7 +18,7 @@ visualDna:
   color_and_tone: Brown tide lines, grey bloom and darkened wet zones.
   lighting_and_shadow: Soft window light, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Warped swollen surfaces, tide lines and bloom, at a believable physical scale relative to the target.
-  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.
+  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.
   atmosphere_and_mood: Melancholic, neglected, damp and quiet, carried by the material itself rather than by added props.
   rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
   key_features: tide-line stains; swelling; mineral bloom; surface-level damage; structure intact

@@ -26,7 +26,7 @@ visualDna:
   color_and_tone: Black, indigo or crimson ink clouds, concentrated around the target while the rest of the scene keeps its palette.
   lighting_and_shadow: Backlit clear water, so the effect lights the target and casts believable local light.
   texture_and_material: Billowing ink plumes and filaments, with physically plausible motion, density and falloff.
-  camera_and_composition: Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.
+  camera_and_composition: Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.
   atmosphere_and_mood: Mysterious, slow, elegant and dark, coming from the effect rather than added scenery.
   rendering_and_quality: Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.
   creative_brief: "Ink in water: dark ink blooming into billowing clouds from the target underwater. Carry it through billowing ink plumes, clear water, contained around the target. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."

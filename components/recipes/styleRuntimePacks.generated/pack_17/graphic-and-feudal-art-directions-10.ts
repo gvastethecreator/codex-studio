@@ -17,7 +17,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Soot and weathered stone against blue-steel armor and dirty urban green; selective saturated crimson and amber focal accents. Large graphic color masses stay clear without a uniform orange-teal filter.',
       lighting_and_shadow:
-        'Use broad, hard-edged comic shadow shapes to carve the chest, shoulder masses and limbs; keep highlights selective and decisive on flesh, steel and stone. Make the major value divisions read at card size, with supernatural light concentrated around the point of impact.',
+        'Use broad, hard-edged comic shadow shapes to carve the chest, shoulder masses and limbs; keep highlights selective and decisive on flesh, steel and stone. Make the major value divisions read at a glance, with supernatural light concentrated around the point of impact.',
       texture_and_material:
         'Model living muscle as huge interlocking rounded and wedge-shaped masses: deltoids overlap broad pectorals, forearms taper sharply into enormous hands, and tendon breaks are clean rather than densely striated. Distinguish flesh from a few broad forged armor facets, thick leather and substantial cloth folds. Use restrained localized wear; neither rock facets nor realistic skin microdetail should replace the graphic anatomy.',
       camera_and_composition:

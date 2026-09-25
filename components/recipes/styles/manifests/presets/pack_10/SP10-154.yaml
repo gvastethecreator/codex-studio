@@ -22,7 +22,7 @@ tags:
   - unit-art
 visualDna:
   aesthetic: 'Button mosaic: hundreds of sewing buttons forming the image.'
-  subject_treatment: "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at card size — unit: assorted sewing buttons with holes; joints: fabric or board gaps."
+  subject_treatment: "Rebuild the prompt's subject and setting entirely from discrete units so it stays recognizable at a glance — unit: assorted sewing buttons with holes; joints: fabric or board gaps."
   color_and_tone: Assorted button colors, with each unit holding one color so the image is built by juxtaposition.
   lighting_and_shadow: Glossy button highlights, as the physical behavior of this unit.
   texture_and_material: assorted sewing buttons with holes, set with fabric or board gaps, at a unit size that keeps the subject readable.

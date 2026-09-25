@@ -20,7 +20,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Carved stone with weathering, lichen and chisel texture, with correct scale, weight and surface behavior at every fold and edge.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the figure.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the figure.',
       atmosphere_and_mood:
         'Timeless, solemn, eerie and still, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -48,7 +48,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Twill denim with slub texture, whiskering, selvedge edges and copper rivets.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the clothing.',
       atmosphere_and_mood:
         'Rugged, casual, confident and Americana, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -73,7 +73,7 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow: 'Hard strip lights that draw long highlights along each curve.',
       texture_and_material: 'Stretched latex, vinyl and patent polymer with mirror reflections.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the clothing.',
       atmosphere_and_mood:
         'Sleek, bold, provocative and futuristic, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -99,7 +99,7 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow: 'Soft backlight that halos every hair of the pile.',
       texture_and_material: 'Long-pile faux fur with visible fiber direction and soft volume.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the clothing.',
       atmosphere_and_mood:
         'Opulent, warm, dramatic and wintry, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -125,7 +125,7 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow: 'Soft single source that makes highlights slide along the folds.',
       texture_and_material: 'Heavy silk satin with fluid folds and smooth sheen.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the clothing.',
       atmosphere_and_mood:
         'Sensual, elegant, calm and luxurious, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -152,7 +152,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Clear PVC with welded seams, droplets and reflections, with correct scale, weight and surface behavior at every fold and edge.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the clothing.',
       atmosphere_and_mood:
         'Playful, modern, fresh and experimental, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -179,7 +179,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Even studio light to reveal paint detail, chosen to reveal how this material reflects, absorbs or transmits light.',
       texture_and_material: 'Matte and satin paint on skin with brush texture.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the figure.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the figure.',
       atmosphere_and_mood:
         'Artful, playful, surprising and bold, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -207,7 +207,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Rough wool tweed with herringbone, houndstooth and flecks, with correct scale, weight and surface behavior at every fold and edge.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the clothing.',
       atmosphere_and_mood:
         'Scholarly, rural, dignified and warm, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -234,7 +234,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Skin with healed ink, linework and shading, with correct scale, weight and surface behavior at every fold and edge.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the figure.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the figure.',
       atmosphere_and_mood:
         'Ceremonial, bold, personal and striking, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -260,7 +260,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Warm side light to reveal tooling and patina, chosen to reveal how this material reflects, absorbs or transmits light.',
       texture_and_material: 'Boiled and tooled leather with stitching, rivets and wear.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the clothing.',
       atmosphere_and_mood:
         'Rugged, stealthy, practical and adventurous, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -288,7 +288,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Aged linen strips with fraying, stains and layering, with correct scale, weight and surface behavior at every fold and edge.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the clothing.',
       atmosphere_and_mood:
         'Ancient, eerie, still and mysterious, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -315,7 +315,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Dim, dusty, natural light, chosen to reveal how this material reflects, absorbs or transmits light.',
       texture_and_material: 'Coarse burlap weave, frayed edges, rope ties and dirt.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the clothing.',
       atmosphere_and_mood:
         'Humble, desperate, eerie and earthy, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -341,7 +341,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Backlight that shows the openwork pattern, chosen to reveal how this material reflects, absorbs or transmits light.',
       texture_and_material: 'Fine lace with floral motifs, mesh ground and scalloped edges.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the clothing.',
       atmosphere_and_mood:
         'Delicate, romantic, heirloom and intricate, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -369,7 +369,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Riveted interlocking rings with weight, drape and ring pattern visible.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the clothing.',
       atmosphere_and_mood:
         'Protective, ancient, elegant and heavy, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -396,7 +396,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Soft warm window or firelight, chosen to reveal how this material reflects, absorbs or transmits light.',
       texture_and_material: 'Chunky wool yarn with visible stitches, fuzz and cable relief.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the clothing.',
       atmosphere_and_mood:
         'Cozy, handmade, warm and comforting, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -422,7 +422,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Low raking light to show the directional pile, chosen to reveal how this material reflects, absorbs or transmits light.',
       texture_and_material: 'Silk or cotton velvet with directional pile and soft crush.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the clothing.',
       atmosphere_and_mood:
         'Rich, sensual, regal and intimate, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -447,7 +447,7 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow: 'Clean side light that shows every crease and facet.',
       texture_and_material: 'Folded paper with sharp creases, faceted planes and fibers.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the clothing.',
       atmosphere_and_mood:
         'Delicate, precise, inventive and fragile, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -473,7 +473,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Backlight and side light to reveal smoke volumes, chosen to reveal how this material reflects, absorbs or transmits light.',
       texture_and_material: 'Soft volumetric smoke with curling wisps blending from fabric.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the clothing.',
       atmosphere_and_mood:
         'Ghostly, mysterious, fleeting and poetic, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -500,7 +500,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Soft studio light with glaze highlights, chosen to reveal how this material reflects, absorbs or transmits light.',
       texture_and_material: 'Glazed and bisque porcelain with crackle and painted detail.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the figure.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the figure.',
       atmosphere_and_mood:
         'Uncanny, fragile, eerie and beautiful, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -527,7 +527,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Backlight and rim light for translucency, chosen to reveal how this material reflects, absorbs or transmits light.',
       texture_and_material: 'Thick glossy gel with drips, bubbles and stretched strands.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the clothing.',
       atmosphere_and_mood:
         'Strange, sensual, playful and alien, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -554,7 +554,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Overlapping sequins and paillettes with individual reflections, with correct scale, weight and surface behavior at every fold and edge.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the clothing.',
       atmosphere_and_mood:
         'Glamorous, festive, dazzling and theatrical, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -581,7 +581,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Layered feathers with visible barbs, shafts and iridescence, with correct scale, weight and surface behavior at every fold and edge.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the clothing.',
       atmosphere_and_mood:
         'Extravagant, avian, graceful and wild, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -607,7 +607,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Bright light making each bubble glint, chosen to reveal how this material reflects, absorbs or transmits light.',
       texture_and_material: 'Bubble wrap with rows of air cells, creases and tape.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the clothing.',
       atmosphere_and_mood:
         'Playful, absurd, pop and inventive, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -635,7 +635,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Flame tongues, embers and heat shimmer, with correct scale, weight and surface behavior at every fold and edge.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the clothing.',
       atmosphere_and_mood:
         'Fierce, ceremonial, dangerous and magnificent, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -662,7 +662,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Gold leaf with crackle, edges and burnished sheen, with correct scale, weight and surface behavior at every fold and edge.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the figure.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the figure.',
       atmosphere_and_mood:
         'Sacred, precious, divine and still, carried by how the material moves and catches light.',
       rendering_and_quality:
@@ -690,7 +690,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Liquid water with splashes, droplets and refraction, with correct scale, weight and surface behavior at every fold and edge.',
       camera_and_composition:
-        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
+        'Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the clothing.',
       atmosphere_and_mood:
         'Fluid, elemental, fresh and surreal, carried by how the material moves and catches light.',
       rendering_and_quality:

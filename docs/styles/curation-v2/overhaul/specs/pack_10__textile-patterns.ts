@@ -30,7 +30,7 @@ function pattern(
       'Natural light that follows the surface, so the pattern bends with folds and curves.',
     texture_and_material: pad(texture, 9, 'with the pattern scaled correctly to the target.'),
     camera_and_composition:
-      'Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.',
+      'Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.',
     atmosphere_and_mood: pad(mood, 8, 'carried by the pattern and its colors.'),
     rendering_and_quality:
       'Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.',

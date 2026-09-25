@@ -25,8 +25,8 @@ visualDna:
   subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: dense background detail, chibi reactions, comedic sweat drops and exaggerated poses."
   color_and_tone: Busy colorful props with warm light, used consistently across subject and background.
   lighting_and_shadow: Flat warm light, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with dense line detail, visible at card size as the signature of the style.
-  camera_and_composition: Wide busy frames, arranged so the subject still reads at card size.
+  texture_and_material: Cel with dense line detail, visible at a glance as the signature of the style.
+  camera_and_composition: Wide busy frames, arranged so the subject still reads at a glance.
   atmosphere_and_mood: Chaotic, silly, cozy and lively, driven by the construction, color and rhythm.
   rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
   creative_brief: "Club room clutter comedy: dense, busy frames packed with props, posters and chaotic group reactions. Carry it through dense clutter, chibi reactions, group chaos. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."

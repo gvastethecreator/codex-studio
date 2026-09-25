@@ -19,7 +19,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Warm side light raking across the open grain, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material: 'Open-pore oak grain, medullary ray flecks, splits and adze marks.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Solid, honest, warm and old, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -47,7 +47,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'French-polished mahogany with ribbon figure, deep gloss and inlay lines.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Rich, formal, warm and antique, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -73,7 +73,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Soft cool daylight, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material: 'Papery peeling bark layers with black lenticels and curls.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Northern, quiet, delicate and wild, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -100,7 +100,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Polished granite with feldspar, quartz and mica grains, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Hard, permanent, cold and monumental, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -127,7 +127,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Granular sandstone with bedding layers and wind erosion, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Ancient, eroded, warm and desert-like, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -154,7 +154,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Fine crystalline marble with translucent edges and polished or chiselled finish.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Classical, serene, pure and timeless, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -181,7 +181,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Overcast light showing the stepped layers, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material: 'Cleaved slate sheets with sharp edges and rough riven faces.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Austere, cold, rugged and old, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -208,7 +208,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Velvety moss cushions, crusty lichen and damp stone, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Ancient, quiet, overgrown and living, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -235,7 +235,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Water-polished stones with rounded edges, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Calm, patient, natural and grounded, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -263,7 +263,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Volcanic glass with conchoidal ripples and translucent edges, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Dangerous, sleek, dark and primordial, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -291,7 +291,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Guard hairs and soft underfur with natural direction, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Wild, warm, primal and alert, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -319,7 +319,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Overlapping keeled scales with glossy iridescent sheen, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Sleek, dangerous, hypnotic and exotic, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -347,7 +347,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Overlapping feathers with visible barbs and shafts, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Light, graceful, alive and soft, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -375,7 +375,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Calcareous coral with polyps, ridges and porous texture, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Vibrant, alive, oceanic and intricate, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -403,7 +403,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Hexagonal wax cells, honey drips and waxy sheen, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Warm, sweet, organic and industrious, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -431,7 +431,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Dense ice with bubbles, fractures and melt ridges, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Cold, ancient, pure and silent, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -458,7 +458,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Porous spongy fibers with irregular holes, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Soft, strange, organic and absorbent, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -486,7 +486,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Faceted crystal with inclusions and internal reflections, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Precious, magical, cold and brilliant, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -513,7 +513,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Silk strands, sagging sheets and dust, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Abandoned, eerie, still and forgotten, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -540,7 +540,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Low sun raking the grains, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material: 'Packed fine sand grains with crumbling edges and shell fragments.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Fleeting, playful, warm and fragile, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -568,7 +568,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Vesicular basalt, scoria and ropy pahoehoe flow, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Harsh, volcanic, primal and rough, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -596,7 +596,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Layered nacre with shimmer and inlay seams, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Precious, delicate, oceanic and luminous, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -623,7 +623,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Hard raking light showing ridges, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material: 'Thick overlapping scales with ridges, scratches and metallic sheen.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Powerful, armored, mythic and fierce, carried by the material itself rather than by added props.',
       rendering_and_quality:

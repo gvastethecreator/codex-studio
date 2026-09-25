@@ -38,7 +38,7 @@ export function craft(
     ),
     texture_and_material: pad(texture, 9, 'showing how the object was actually made.'),
     camera_and_composition:
-      "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.",
+      "Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at a glance.",
     atmosphere_and_mood: pad(mood, 8, 'coming from the handmade or toy quality.'),
     rendering_and_quality:
       'Photoreal craft-object rendering with believable scale, material detail and construction evidence.',

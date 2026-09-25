@@ -41,7 +41,7 @@ function dream(
       'rendered with enough realism that the impossible feels believable.',
     ),
     camera_and_composition:
-      'Keep the prompt framing; place the distortion or dream element where it reads instantly at card size.',
+      'Keep the prompt framing; place the distortion or dream element where it reads instantly at a glance.',
     atmosphere_and_mood: pad(mood, 8, 'arising from the mechanism rather than added scenery.'),
     rendering_and_quality:
       'Painterly or photoreal finish chosen by the prompt, with clean edges and no muddy haze.',

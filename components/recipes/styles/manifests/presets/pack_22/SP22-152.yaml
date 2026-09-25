@@ -38,7 +38,7 @@ visualDna:
     imply an explosion, impact scene or extra background event.
   rendering_and_quality: >-
     Separate broad marker masses from fine ink accents; maintain clean focal features and controlled
-    overlaps so the layered process remains clear at card scale.
+    overlaps so the layered process remains clear at a glance.
 avoidRules:
   - unrequested explosive backgrounds or splashes over focal features
   - extra details that alter identity or function

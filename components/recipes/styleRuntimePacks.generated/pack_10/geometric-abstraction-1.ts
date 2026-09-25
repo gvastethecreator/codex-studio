@@ -18,9 +18,9 @@ export const GENERATED_STYLE_PRESETS = [
         'Muted ochre, grey, olive and brown with occasional collage-like color blocks.',
       lighting_and_shadow: 'Light is flattened into tonal facets rather than a single source.',
       texture_and_material:
-        'Faceted planes, overlapping outlines and paint-like brushwork, visible at card size as the signature of the style.',
+        'Faceted planes, overlapping outlines and paint-like brushwork, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Shallow, compressed picture plane with interlocking facets, arranged so the subject still reads at card size.',
+        'Shallow, compressed picture plane with interlocking facets, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Intellectual, restless, fragmented and dense, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -46,9 +46,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Flat, shadowless color, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Flat printed color with crisp geometric edges, visible at card size as the signature of the style.',
+        'Flat printed color with crisp geometric edges, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Balanced asymmetric grid composition, arranged so the subject still reads at card size.',
+        'Balanced asymmetric grid composition, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Rational, bold, modern and clear, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -73,9 +73,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Flat graphic contrast, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Flat printed shapes with crisp edges, visible at card size as the signature of the style.',
+        'Flat printed shapes with crisp edges, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Steep diagonals and radiating wedges, arranged so the subject still reads at card size.',
+        'Steep diagonals and radiating wedges, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Urgent, heroic, industrial and forceful, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -101,7 +101,7 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'No light; illusion comes from pattern density, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Precise stripes, checks and warped grids, visible at card size as the signature of the style.',
+        'Precise stripes, checks and warped grids, visible at a glance as the signature of the style.',
       camera_and_composition: 'Pattern fills the frame with the subject as distortion.',
       atmosphere_and_mood:
         'Dizzying, hypnotic, precise and kinetic, driven by the construction, color and rhythm.',
@@ -129,9 +129,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Flat, no shadows, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Flat paint with crisp lines, visible at card size as the signature of the style.',
+        'Flat paint with crisp lines, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Asymmetric orthogonal balance, arranged so the subject still reads at card size.',
+        'Asymmetric orthogonal balance, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Calm, pure, ordered and spiritual, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -155,9 +155,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Glowing edges on recursive forms, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Infinitely detailed recursive branching, visible at card size as the signature of the style.',
+        'Infinitely detailed recursive branching, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Central spiral or branching recursion, arranged so the subject still reads at card size.',
+        'Central spiral or branching recursion, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Infinite, mesmerizing, mathematical and cosmic, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -183,9 +183,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Facet shading from one soft light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Flat triangular facets with crisp edges, visible at card size as the signature of the style.',
+        'Flat triangular facets with crisp edges, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Clean centered subject on a simple faceted ground, arranged so the subject still reads at card size.',
+        'Clean centered subject on a simple faceted ground, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Modern, crystalline, clean and graphic, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -211,9 +211,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Flat, no light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Flat painted shapes, visible at card size as the signature of the style.',
+        'Flat painted shapes, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Shapes floating diagonally in empty space, arranged so the subject still reads at card size.',
+        'Shapes floating diagonally in empty space, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Spiritual, weightless, pure and radical, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -239,9 +239,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Flat or tile-glaze sheen, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Interlaced strapwork, stars and rosettes, visible at card size as the signature of the style.',
+        'Interlaced strapwork, stars and rosettes, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Radial symmetric tessellation, arranged so the subject still reads at card size.',
+        'Radial symmetric tessellation, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Harmonious, infinite, sacred and precise, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -267,9 +267,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Soft shading inside each cell, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Irregular cells with clean borders, visible at card size as the signature of the style.',
+        'Irregular cells with clean borders, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Cellular fill across subject and ground, arranged so the subject still reads at card size.',
+        'Cellular fill across subject and ground, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Organic, cellular, scientific and modern, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -302,9 +302,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Light is color contrast itself, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Painted concentric rings and arcs, visible at card size as the signature of the style.',
+        'Painted concentric rings and arcs, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Circular rhythms around the subject, arranged so the subject still reads at card size.',
+        'Circular rhythms around the subject, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Joyful, rhythmic, luminous and musical, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -336,9 +336,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Dynamic light fragments, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Repeated contours, force lines and fragmented planes, visible at card size as the signature of the style.',
+        'Repeated contours, force lines and fragmented planes, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Diagonal motion across the frame, arranged so the subject still reads at card size.',
+        'Diagonal motion across the frame, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Fast, violent, mechanical and exhilarating, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -369,9 +369,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'No shading, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Flat opaque paint with razor edges, visible at card size as the signature of the style.',
+        'Flat opaque paint with razor edges, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Large simple shapes filling the frame, arranged so the subject still reads at card size.',
+        'Large simple shapes filling the frame, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Bold, calm, confident and modern, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -402,9 +402,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Crisp directional sun with geometric shadows, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Smooth painted planes without texture, visible at card size as the signature of the style.',
+        'Smooth painted planes without texture, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Frontal or low-angle structural view, arranged so the subject still reads at card size.',
+        'Frontal or low-angle structural view, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Calm, orderly, monumental and quiet, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -435,9 +435,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Harsh contrast, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Sharp angular shards, visible at card size as the signature of the style.',
+        'Sharp angular shards, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Vortex converging to a point, arranged so the subject still reads at card size.',
+        'Vortex converging to a point, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Aggressive, mechanical, energetic and harsh, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -469,9 +469,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Flat, no shading, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Tiled quarter-circle arcs, visible at card size as the signature of the style.',
+        'Tiled quarter-circle arcs, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Grid of tiles filling the frame, arranged so the subject still reads at card size.',
+        'Grid of tiles filling the frame, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Playful, maze-like, rhythmic and clever, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -503,9 +503,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Flat or subtle tile sheen, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Rhombus tiles with fine grout lines, visible at card size as the signature of the style.',
+        'Rhombus tiles with fine grout lines, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Five-fold radial tiling, arranged so the subject still reads at card size.',
+        'Five-fold radial tiling, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Mathematical, mysterious, ordered and unusual, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -537,9 +537,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Flat or photographic within blocks, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Clean blocks with precise alignment, visible at card size as the signature of the style.',
+        'Clean blocks with precise alignment, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Asymmetric modular grid, arranged so the subject still reads at card size.',
+        'Asymmetric modular grid, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Rational, clean, confident and modern, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -570,9 +570,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Soft light on threads, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Taut threads, pins and board, visible at card size as the signature of the style.',
+        'Taut threads, pins and board, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Pinned outline with thread envelopes, arranged so the subject still reads at card size.',
+        'Pinned outline with thread envelopes, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Precise, handmade, delicate and mathematical, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -604,8 +604,8 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Clean flat light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Smooth industrial surfaces, visible at card size as the signature of the style.',
-      camera_and_composition: 'Grid-based cells, arranged so the subject still reads at card size.',
+        'Smooth industrial surfaces, visible at a glance as the signature of the style.',
+      camera_and_composition: 'Grid-based cells, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Cool, detached, slick and ironic, driven by the construction, color and rhythm.',
       rendering_and_quality: 'Clean finish, with clean, deliberate marks and no accidental noise.',

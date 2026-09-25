@@ -45,9 +45,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Overcast daylight or warm indoor lamps against rain, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Painted rain streaks, droplets and wet reflections, visible at card size as the signature of the style.',
+        'Painted rain streaks, droplets and wet reflections, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Framed through windows and doorways, arranged so the subject still reads at card size.',
+        'Framed through windows and doorways, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Calm, reflective, lonely and cozy, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -75,9 +75,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Mirror bulbs and stage light leaking through curtains, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with soft glow and dust in light, visible at card size as the signature of the style.',
+        'Cel with soft glow and dust in light, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Close framing among curtains, cables and mirrors, arranged so the subject still reads at card size.',
+        'Close framing among curtains, cables and mirrors, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Nervous, private, hopeful and tense, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -103,9 +103,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Warm cozy cafe light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Soft cel with glossy dessert highlights, visible at card size as the signature of the style.',
+        'Soft cel with glossy dessert highlights, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Table-level framing with desserts in the foreground, arranged so the subject still reads at card size.',
+        'Table-level framing with desserts in the foreground, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Sweet, silly, cozy and cheerful, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -131,9 +131,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Lantern and firework light on faces, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with bokeh lantern glows, visible at card size as the signature of the style.',
+        'Cel with bokeh lantern glows, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Crowd-level frames with lanterns receding, arranged so the subject still reads at card size.',
+        'Crowd-level frames with lanterns receding, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Nostalgic, warm, romantic and fleeting, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -161,7 +161,7 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Spotlights, backlight and lens flares, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with glow, haze and flare overlays, visible at card size as the signature of the style.',
+        'Cel with glow, haze and flare overlays, visible at a glance as the signature of the style.',
       camera_and_composition: 'Low angle from the crowd or wide from behind the band.',
       atmosphere_and_mood:
         'Euphoric, loud, sweaty and alive, driven by the construction, color and rhythm.',
@@ -194,9 +194,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Low sun through windows with bright shafts, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with painted light shafts and floating dust, visible at card size as the signature of the style.',
+        'Cel with painted light shafts and floating dust, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Wide still frames with strong window geometry, arranged so the subject still reads at card size.',
+        'Wide still frames with strong window geometry, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Nostalgic, bittersweet, quiet and warm, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -228,9 +228,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Soft overcast snow light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with painted snow and soft glow, visible at card size as the signature of the style.',
+        'Cel with painted snow and soft glow, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Quiet mid shots with snow falling, arranged so the subject still reads at card size.',
+        'Quiet mid shots with snow falling, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Hushed, tender, cold and cozy, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -262,9 +262,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Single desk lamp pool of light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with soft glow, visible at card size as the signature of the style.',
+        'Cel with soft glow, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Close desk framing, arranged so the subject still reads at card size.',
+        'Close desk framing, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Quiet, tired, focused and intimate, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -296,9 +296,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Soft film light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Film grain and cel paint, visible at card size as the signature of the style.',
+        'Film grain and cel paint, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Classic TV framing, arranged so the subject still reads at card size.',
+        'Classic TV framing, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Nostalgic, warm, simple and sincere, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -330,9 +330,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Bare bulb and amp glow, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Rough cel with grain, visible at card size as the signature of the style.',
+        'Rough cel with grain, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Cramped low angles, arranged so the subject still reads at card size.',
+        'Cramped low angles, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Raw, loud, messy and passionate, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -364,8 +364,8 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Soft spotlight in a dark hall, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with polished reflections, visible at card size as the signature of the style.',
-      camera_and_composition: 'Stage framing, arranged so the subject still reads at card size.',
+        'Cel with polished reflections, visible at a glance as the signature of the style.',
+      camera_and_composition: 'Stage framing, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Hushed, elegant, intense and emotional, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -395,9 +395,9 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone: 'Saturated cobalt sky, white clouds, sea teal and sun-bleached colors.',
       lighting_and_shadow: 'Harsh midday sun with heat haze and deep short shadows.',
       texture_and_material:
-        'Cel with painted clouds and shimmer, visible at card size as the signature of the style.',
+        'Cel with painted clouds and shimmer, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Wide horizon frames with big sky, arranged so the subject still reads at card size.',
+        'Wide horizon frames with big sky, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Free, lazy, nostalgic and bright, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -428,9 +428,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Pre-dawn blue light turning gold, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with soft mist layers, visible at card size as the signature of the style.',
+        'Cel with soft mist layers, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Wide lonely frames with small figures, arranged so the subject still reads at card size.',
+        'Wide lonely frames with small figures, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Determined, lonely, quiet and hopeful, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -461,9 +461,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Clear daylight with fast cloud shadows, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with painted streaking clouds, visible at card size as the signature of the style.',
+        'Cel with painted streaking clouds, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Low angles with most of the frame sky, arranged so the subject still reads at card size.',
+        'Low angles with most of the frame sky, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Free, restless, open and youthful, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -494,9 +494,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Train interior light and passing streetlights, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with reflective glass layers, visible at card size as the signature of the style.',
+        'Cel with reflective glass layers, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Seat-level frames through windows, arranged so the subject still reads at card size.',
+        'Seat-level frames through windows, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Melancholic, tired, reflective and quiet, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -528,9 +528,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Backlit glow with bokeh circles, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with blur and glow layers, visible at card size as the signature of the style.',
+        'Cel with blur and glow layers, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Very shallow depth close-ups, arranged so the subject still reads at card size.',
+        'Very shallow depth close-ups, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Tender, nostalgic, dreamy and intimate, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -562,8 +562,8 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Flat warm light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with dense line detail, visible at card size as the signature of the style.',
-      camera_and_composition: 'Wide busy frames, arranged so the subject still reads at card size.',
+        'Cel with dense line detail, visible at a glance as the signature of the style.',
+      camera_and_composition: 'Wide busy frames, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Chaotic, silly, cozy and lively, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -595,9 +595,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Shafts of sun through high windows, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with painted light shafts and dust, visible at card size as the signature of the style.',
+        'Cel with painted light shafts and dust, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Tall frames with shelves and beams, arranged so the subject still reads at card size.',
+        'Tall frames with shelves and beams, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Quiet, peaceful, studious and warm, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -628,8 +628,8 @@ export const GENERATED_STYLE_PRESETS = [
         'Warm cream and gold with soft blue, used consistently across subject and background.',
       lighting_and_shadow:
         'Soft glow from above, expressed through the style rather than photographic lighting.',
-      texture_and_material: 'Cel with glow, visible at card size as the signature of the style.',
-      camera_and_composition: 'Rows of singers, arranged so the subject still reads at card size.',
+      texture_and_material: 'Cel with glow, visible at a glance as the signature of the style.',
+      camera_and_composition: 'Rows of singers, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Uplifting, warm, together and moving, driven by the construction, color and rhythm.',
       rendering_and_quality:

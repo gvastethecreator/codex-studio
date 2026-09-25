@@ -31,7 +31,7 @@ function wear(
   );
   light = pad(light, 9, 'shaped to reveal garment cut, drape, texture and fit on the wearer.');
   texture = pad(texture, 9, 'rendered with correct weave, weight, sheen and stitching.');
-  camera = pad(camera, 9, 'keeping the full outfit silhouette and fit readable at card size.');
+  camera = pad(camera, 9, 'keeping the full outfit silhouette and fit readable at a glance.');
   mood = pad(mood, 8, "carried by the wearer's posture, styling and attitude.");
   render = pad(render, 9, 'with believable fabric weight, seams and fit detail.');
   return {

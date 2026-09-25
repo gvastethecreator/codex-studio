@@ -112,7 +112,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Preserve the requested environment and emotional tone. The hand-rendered marker surface does not imply an explosion, impact scene or extra background event.',
       rendering_and_quality:
-        'Separate broad marker masses from fine ink accents; maintain clean focal features and controlled overlaps so the layered process remains clear at card scale.',
+        'Separate broad marker masses from fine ink accents; maintain clean focal features and controlled overlaps so the layered process remains clear at a glance.',
     },
     ui: {
       kind: 'full_style',

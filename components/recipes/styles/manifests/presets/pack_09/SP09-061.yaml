@@ -17,7 +17,7 @@ visualDna:
   color_and_tone: Dense white fog with cool tint, concentrated around the target while the rest of the scene keeps its palette.
   lighting_and_shadow: Low side light on rolling fog, so the effect lights the target and casts believable local light.
   texture_and_material: Heavy rolling fog tendrils, with physically plausible motion, density and falloff.
-  camera_and_composition: Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.
+  camera_and_composition: Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.
   atmosphere_and_mood: Theatrical, eerie, cold and magical, coming from the effect rather than added scenery.
   rendering_and_quality: Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.
   key_features: pouring dry-ice fog; rolling tendrils; contained around the target

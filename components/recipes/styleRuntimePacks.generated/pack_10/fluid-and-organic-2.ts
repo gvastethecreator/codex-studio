@@ -19,9 +19,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Glowing translucency on white yupo, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Ink cells, dark edge rings and metallic veins, visible at card size as the signature of the style.',
+        'Ink cells, dark edge rings and metallic veins, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Flowing organic fields shaping the subject, arranged so the subject still reads at card size.',
+        'Flowing organic fields shaping the subject, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Vivid, fluid, spontaneous and luminous, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -47,9 +47,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Hard side backlight on smoke, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Thin curling smoke filaments, visible at card size as the signature of the style.',
+        'Thin curling smoke filaments, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Subject centered against black, arranged so the subject still reads at card size.',
+        'Subject centered against black, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Ethereal, delicate, mysterious and fleeting, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -74,9 +74,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Soft sheen with interference colors, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Thin-film swirls and marbling, visible at card size as the signature of the style.',
+        'Thin-film swirls and marbling, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Swirling field shaping the subject, arranged so the subject still reads at card size.',
+        'Swirling field shaping the subject, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Hypnotic, toxic, beautiful and fluid, driven by the construction, color and rhythm.',
       rendering_and_quality: 'Glossy finish, with clean, deliberate marks and no accidental noise.',
@@ -101,9 +101,8 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Soft backlight, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Thin-film surface with swirling interference, visible at card size as the signature of the style.',
-      camera_and_composition:
-        'Spherical framing, arranged so the subject still reads at card size.',
+        'Thin-film surface with swirling interference, visible at a glance as the signature of the style.',
+      camera_and_composition: 'Spherical framing, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Dreamy, fragile, cosmic and delicate, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -129,9 +128,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Soft glow at nodes, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Fine branching hyphae and nodes, visible at card size as the signature of the style.',
+        'Fine branching hyphae and nodes, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Network fill across the frame, arranged so the subject still reads at card size.',
+        'Network fill across the frame, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Organic, interconnected, eerie and alive, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -156,9 +155,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Hard studio light on spikes, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Liquid spikes with mirror gloss, visible at card size as the signature of the style.',
+        'Liquid spikes with mirror gloss, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Centered spiky form, arranged so the subject still reads at card size.',
+        'Centered spiky form, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Alien, tense, sleek and strange, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -183,9 +182,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Glossy flat light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cells, lacing and glossy pour, visible at card size as the signature of the style.',
+        'Cells, lacing and glossy pour, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Flowing pour across the frame, arranged so the subject still reads at card size.',
+        'Flowing pour across the frame, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Playful, vivid, organic and flowing, driven by the construction, color and rhythm.',
       rendering_and_quality: 'Glossy finish, with clean, deliberate marks and no accidental noise.',
@@ -208,9 +207,9 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone: 'Two-tone contrast, used consistently across subject and background.',
       lighting_and_shadow: 'Flat, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Maze-like stripes and spots, visible at card size as the signature of the style.',
+        'Maze-like stripes and spots, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Pattern fill following contours, arranged so the subject still reads at card size.',
+        'Pattern fill following contours, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Organic, mathematical, alien and precise, driven by the construction, color and rhythm.',
       rendering_and_quality: 'Crisp finish, with clean, deliberate marks and no accidental noise.',
@@ -235,9 +234,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Raking light on ridges, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Nodal sand lines and ripples, visible at card size as the signature of the style.',
+        'Nodal sand lines and ripples, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Radial symmetric pattern, arranged so the subject still reads at card size.',
+        'Radial symmetric pattern, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Mystical, harmonic, precise and resonant, driven by the construction, color and rhythm.',
       rendering_and_quality: 'Crisp finish, with clean, deliberate marks and no accidental noise.',
@@ -262,9 +261,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Self-luminous glow, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Gas filaments, dust and starfields, visible at card size as the signature of the style.',
+        'Gas filaments, dust and starfields, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Cosmic scale framing, arranged so the subject still reads at card size.',
+        'Cosmic scale framing, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Awe-filled, cosmic, silent and vast, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -293,9 +292,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Flat printed paper, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Combed swirls and feathered edges, visible at card size as the signature of the style.',
+        'Combed swirls and feathered edges, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Pattern flowing along the subject, arranged so the subject still reads at card size.',
+        'Pattern flowing along the subject, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Elegant, antique, fluid and intricate, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -326,9 +325,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Glossy reflective light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Glossy resin rings, crystals and gold leaf, visible at card size as the signature of the style.',
+        'Glossy resin rings, crystals and gold leaf, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Concentric rings following the subject, arranged so the subject still reads at card size.',
+        'Concentric rings following the subject, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Luxurious, glossy, mineral and vivid, driven by the construction, color and rhythm.',
       rendering_and_quality: 'Glossy finish, with clean, deliberate marks and no accidental noise.',
@@ -358,9 +357,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Backlit glow, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Soft wax blobs and warm liquid, visible at card size as the signature of the style.',
+        'Soft wax blobs and warm liquid, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Vertical flowing blobs, arranged so the subject still reads at card size.',
+        'Vertical flowing blobs, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Retro, dreamy, slow and warm, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -391,9 +390,9 @@ export const GENERATED_STYLE_PRESETS = [
         'Black or iron-brown dendrites on pale ground, used consistently across subject and background.',
       lighting_and_shadow: 'Flat, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Fine branching dendrites, visible at card size as the signature of the style.',
+        'Fine branching dendrites, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Branching outward from centers, arranged so the subject still reads at card size.',
+        'Branching outward from centers, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Organic, fractal, delicate and eerie, driven by the construction, color and rhythm.',
       rendering_and_quality: 'Fine finish, with clean, deliberate marks and no accidental noise.',
@@ -423,9 +422,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Soft paper light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Salt starbursts, blooms and granulation, visible at card size as the signature of the style.',
+        'Salt starbursts, blooms and granulation, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Loose wash composition, arranged so the subject still reads at card size.',
+        'Loose wash composition, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Magical, soft, starry and fluid, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -455,9 +454,8 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Soft paper light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Stain rings, blooms and drips, visible at card size as the signature of the style.',
-      camera_and_composition:
-        'Loose composition, arranged so the subject still reads at card size.',
+        'Stain rings, blooms and drips, visible at a glance as the signature of the style.',
+      camera_and_composition: 'Loose composition, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Warm, nostalgic, humble and intimate, driven by the construction, color and rhythm.',
       rendering_and_quality: 'Paper finish, with clean, deliberate marks and no accidental noise.',
@@ -486,8 +484,8 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Studio light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Swirled paint film, visible at card size as the signature of the style.',
-      camera_and_composition: 'Object-centered, arranged so the subject still reads at card size.',
+        'Swirled paint film, visible at a glance as the signature of the style.',
+      camera_and_composition: 'Object-centered, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Playful, vivid, crafty and bold, driven by the construction, color and rhythm.',
       rendering_and_quality: 'Glossy finish, with clean, deliberate marks and no accidental noise.',
@@ -515,9 +513,9 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Dark grey filings on white, used consistently across subject and background.',
       lighting_and_shadow: 'Flat, expressed through the style rather than photographic lighting.',
-      texture_and_material: 'Aligned filings, visible at card size as the signature of the style.',
+      texture_and_material: 'Aligned filings, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Field lines around forms, arranged so the subject still reads at card size.',
+        'Field lines around forms, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Scientific, invisible-made-visible and precise, driven by the construction, color and rhythm.',
       rendering_and_quality: 'Crisp finish, with clean, deliberate marks and no accidental noise.',
@@ -546,8 +544,8 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Backlight, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Feathery ice crystals, visible at card size as the signature of the style.',
-      camera_and_composition: 'Growth patterns, arranged so the subject still reads at card size.',
+        'Feathery ice crystals, visible at a glance as the signature of the style.',
+      camera_and_composition: 'Growth patterns, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Cold, delicate, magical and quiet, driven by the construction, color and rhythm.',
       rendering_and_quality: 'Crisp finish, with clean, deliberate marks and no accidental noise.',
@@ -577,10 +575,9 @@ export const GENERATED_STYLE_PRESETS = [
         'Saturated magenta, green, orange, used consistently across subject and background.',
       lighting_and_shadow:
         'Projected light, expressed through the style rather than photographic lighting.',
-      texture_and_material:
-        'Oil and dye blobs, visible at card size as the signature of the style.',
+      texture_and_material: 'Oil and dye blobs, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Full-frame projection, arranged so the subject still reads at card size.',
+        'Full-frame projection, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Psychedelic, pulsing, warm and hypnotic, driven by the construction, color and rhythm.',
       rendering_and_quality:

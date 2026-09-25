@@ -25,7 +25,7 @@ function emissive(
       'The emissive element is the key light source, casting colored light on nearby surfaces.',
     texture_and_material: pad(texture, 9, 'with a physically plausible light source.'),
     camera_and_composition:
-      'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at card size.',
+      'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at a glance.',
     atmosphere_and_mood: pad(mood, 8, 'coming from the light.'),
     rendering_and_quality:
       'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
@@ -48,7 +48,7 @@ function print(
     lighting_and_shadow: 'Raking light across the printed support to reveal relief, gloss or foil.',
     texture_and_material: pad(texture, 9, 'on quality paper or board stock.'),
     camera_and_composition:
-      'Close angled view of the printed piece so the finish and the subject both read at card size.',
+      'Close angled view of the printed piece so the finish and the subject both read at a glance.',
     atmosphere_and_mood: pad(mood, 8, 'carried by the tactile finish.'),
     rendering_and_quality:
       'Crisp product-photography finish with accurate paper and ink detail; no readable text.',

@@ -20,7 +20,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Bent glass tubes with gas glow and mounts, with a physically plausible light source.',
       camera_and_composition:
-        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at card size.',
+        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at a glance.',
       atmosphere_and_mood: 'Nocturnal, electric, bold and retro, coming from the light.',
       rendering_and_quality:
         'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
@@ -45,7 +45,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Metallic foil with crisp edges and slight deboss, on quality paper or board stock.',
       camera_and_composition:
-        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+        'Close angled view of the printed piece so the finish and the subject both read at a glance.',
       atmosphere_and_mood:
         'Luxurious, elegant, precious and formal, carried by the tactile finish.',
       rendering_and_quality:
@@ -73,7 +73,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Deep deboss, ink squeeze and paper fibers, on quality paper or board stock.',
       camera_and_composition:
-        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+        'Close angled view of the printed piece so the finish and the subject both read at a glance.',
       atmosphere_and_mood: 'Crafted, tactile, warm and classic, carried by the tactile finish.',
       rendering_and_quality:
         'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
@@ -103,7 +103,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Flexible wire with even glow, with a physically plausible light source.',
       camera_and_composition:
-        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at card size.',
+        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at a glance.',
       atmosphere_and_mood: 'Playful, nocturnal, futuristic and soft, coming from the light.',
       rendering_and_quality:
         'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
@@ -134,7 +134,7 @@ export const GENERATED_STYLE_PRESETS = [
         'The emissive element is the key light source, casting colored light on nearby surfaces.',
       texture_and_material: 'Beams visible in haze, with a physically plausible light source.',
       camera_and_composition:
-        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at card size.',
+        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at a glance.',
       atmosphere_and_mood: 'Energetic, clubby, dramatic and electric, coming from the light.',
       rendering_and_quality:
         'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
@@ -165,7 +165,7 @@ export const GENERATED_STYLE_PRESETS = [
         'The emissive element is the key light source, casting colored light on nearby surfaces.',
       texture_and_material: 'Fluorescent paint glow, with a physically plausible light source.',
       camera_and_composition:
-        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at card size.',
+        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at a glance.',
       atmosphere_and_mood: 'Psychedelic, nocturnal, eerie and vivid, coming from the light.',
       rendering_and_quality:
         'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
@@ -196,7 +196,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'LED strips with visible dots, with a physically plausible light source.',
       camera_and_composition:
-        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at card size.',
+        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at a glance.',
       atmosphere_and_mood: 'Modern, architectural, clean and electric, coming from the light.',
       rendering_and_quality:
         'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
@@ -229,7 +229,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Projected light following surfaces, with a physically plausible light source.',
       camera_and_composition:
-        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at card size.',
+        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at a glance.',
       atmosphere_and_mood: 'Spectacular, magical, nocturnal and vivid, coming from the light.',
       rendering_and_quality:
         'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
@@ -261,7 +261,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Fiber tips with pinpoint glow, with a physically plausible light source.',
       camera_and_composition:
-        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at card size.',
+        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at a glance.',
       atmosphere_and_mood: 'Magical, starry, soft and delicate, coming from the light.',
       rendering_and_quality:
         'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
@@ -292,7 +292,7 @@ export const GENERATED_STYLE_PRESETS = [
         'The emissive element is the key light source, casting colored light on nearby surfaces.',
       texture_and_material: 'Phosphorescent paint, with a physically plausible light source.',
       camera_and_composition:
-        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at card size.',
+        'Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at a glance.',
       atmosphere_and_mood: 'Eerie, playful, nocturnal and soft, coming from the light.',
       rendering_and_quality:
         'Clean glow with controlled bloom, no blown-out haze over the whole frame.',
@@ -322,7 +322,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Raking light across the printed support to reveal relief, gloss or foil.',
       texture_and_material: 'Raised paper relief, on quality paper or board stock.',
       camera_and_composition:
-        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+        'Close angled view of the printed piece so the finish and the subject both read at a glance.',
       atmosphere_and_mood: 'Subtle, elegant, tactile and quiet, carried by the tactile finish.',
       rendering_and_quality:
         'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
@@ -352,7 +352,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Raking light across the printed support to reveal relief, gloss or foil.',
       texture_and_material: 'Recessed impression in thick board, on quality paper or board stock.',
       camera_and_composition:
-        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+        'Close angled view of the printed piece so the finish and the subject both read at a glance.',
       atmosphere_and_mood: 'Solid, tactile, minimal and premium, carried by the tactile finish.',
       rendering_and_quality:
         'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
@@ -383,7 +383,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Raking light across the printed support to reveal relief, gloss or foil.',
       texture_and_material: 'Gloss vs matte contrast, on quality paper or board stock.',
       camera_and_composition:
-        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+        'Close angled view of the printed piece so the finish and the subject both read at a glance.',
       atmosphere_and_mood: 'Sleek, premium, subtle and modern, carried by the tactile finish.',
       rendering_and_quality:
         'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
@@ -413,7 +413,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Raking light across the printed support to reveal relief, gloss or foil.',
       texture_and_material: 'Cut paper edges and layered shadows, on quality paper or board stock.',
       camera_and_composition:
-        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+        'Close angled view of the printed piece so the finish and the subject both read at a glance.',
       atmosphere_and_mood: 'Delicate, deep, crafted and magical, carried by the tactile finish.',
       rendering_and_quality:
         'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
@@ -444,7 +444,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Raking light across the printed support to reveal relief, gloss or foil.',
       texture_and_material: 'Screenprint ink layers, on quality paper or board stock.',
       camera_and_composition:
-        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+        'Close angled view of the printed piece so the finish and the subject both read at a glance.',
       atmosphere_and_mood: 'Bold, crafted, poster-like and shiny, carried by the tactile finish.',
       rendering_and_quality:
         'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
@@ -475,7 +475,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Raking light across the printed support to reveal relief, gloss or foil.',
       texture_and_material: 'Puffy glossy raised ink, on quality paper or board stock.',
       camera_and_composition:
-        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+        'Close angled view of the printed piece so the finish and the subject both read at a glance.',
       atmosphere_and_mood: 'Tactile, formal, glossy and crisp, carried by the tactile finish.',
       rendering_and_quality:
         'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
@@ -507,7 +507,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Raised ink lines and plate impression, on quality paper or board stock.',
       camera_and_composition:
-        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+        'Close angled view of the printed piece so the finish and the subject both read at a glance.',
       atmosphere_and_mood:
         'Classical, precise, precious and formal, carried by the tactile finish.',
       rendering_and_quality:
@@ -539,7 +539,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Raking light across the printed support to reveal relief, gloss or foil.',
       texture_and_material: 'Glossy wax with crisp relief, on quality paper or board stock.',
       camera_and_composition:
-        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+        'Close angled view of the printed piece so the finish and the subject both read at a glance.',
       atmosphere_and_mood: 'Antique, secret, formal and romantic, carried by the tactile finish.',
       rendering_and_quality:
         'Crisp product-photography finish with accurate paper and ink detail; no readable text.',
@@ -570,7 +570,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Raking light across the printed support to reveal relief, gloss or foil.',
       texture_and_material: 'Gilt and painted paper edges, on quality paper or board stock.',
       camera_and_composition:
-        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+        'Close angled view of the printed piece so the finish and the subject both read at a glance.',
       atmosphere_and_mood:
         'Secret, precious, antique and delightful, carried by the tactile finish.',
       rendering_and_quality:
@@ -602,7 +602,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Raking light across the printed support to reveal relief, gloss or foil.',
       texture_and_material: 'Pearlescent ink sheen, on quality paper or board stock.',
       camera_and_composition:
-        'Close angled view of the printed piece so the finish and the subject both read at card size.',
+        'Close angled view of the printed piece so the finish and the subject both read at a glance.',
       atmosphere_and_mood: 'Delicate, dreamy, luxurious and soft, carried by the tactile finish.',
       rendering_and_quality:
         'Crisp product-photography finish with accurate paper and ink detail; no readable text.',

@@ -26,7 +26,7 @@ visualDna:
   color_and_tone: Original colors, as produced by the medium, not added as decoration.
   lighting_and_shadow: Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.
   texture_and_material: Comb teeth along motion edges, at a consistent unit size across the frame.
-  camera_and_composition: Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.
+  camera_and_composition: Keep the prompt framing; concentrate the effect so the main subject remains the clear read at a glance.
   atmosphere_and_mood: Broadcast, twitchy, retro and technical, coming from the medium itself.
   rendering_and_quality: Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.
   creative_brief: "Interlace combing: alternate horizontal lines from two fields offset on moving edges. Carry it through interlace comb teeth, motion edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."

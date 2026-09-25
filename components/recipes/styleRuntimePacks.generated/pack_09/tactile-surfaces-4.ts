@@ -19,7 +19,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Low raking light to show pile direction, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material: 'Dense short pile with brushed trails and crush marks.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Soft, rich, inviting and intimate, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -47,7 +47,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Feathery hoarfrost needles and rime crust, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Cold, crisp, silent and delicate, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -74,7 +74,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Soft diffuse light showing fuzz, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material: 'Matted wool fibers with fuzzy halo and needle pits.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Cozy, handmade, soft and gentle, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -101,7 +101,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Long synthetic fibers with glossy sheen and clumps, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Playful, plush, bold and cuddly, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -128,7 +128,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Powdery chalk with smudges, dust and fingerprints, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Fragile, dusty, soft and ephemeral, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -156,7 +156,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Loose glass-fiber batts with torn edges, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Industrial, odd, soft-looking and prickly, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -183,7 +183,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Long shag strands with deep pile, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Retro, cozy, kitsch and soft, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -210,7 +210,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Uniform plastic blades and rubber crumb infill, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Artificial, playful, suburban and odd, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -240,7 +240,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Uncut cotton loops, absorbent and plush, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Soft, domestic, fresh and comfortable, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -273,7 +273,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Napped suede with finger marks and matte softness, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Warm, soft, rich and tactile, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -306,7 +306,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Stitched quilting with puffy pockets, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Protective, cozy, plush and cushioned, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -339,7 +339,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Parallel velvet wales and grooves, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Retro, warm, scholarly and cozy, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -372,7 +372,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Open-cell foam with deep slow-rebound imprints, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Soft, quiet, strange and yielding, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -405,7 +405,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Dense crimped wool curls, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Warm, cozy, rustic and soft, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -439,7 +439,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Matte silicone with slight translucency and softness, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Soft, squishy, modern and friendly, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -472,7 +472,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Spongy neoprene with jersey faces and seams, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Sporty, protective, modern and snug, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -505,7 +505,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Frothy porous stone with rough texture, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Light, rough, abrasive and airy, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -539,7 +539,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Short uniform fibers, matte and velvety, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Soft, uniform, toy-like and plush, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -572,7 +572,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Malleable putty with folds, strands and prints, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Handmade, soft, malleable and odd, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -605,7 +605,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Raised pebble grain with soft sheen, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Luxurious, durable, tactile and classic, carried by the material itself rather than by added props.',
       rendering_and_quality:

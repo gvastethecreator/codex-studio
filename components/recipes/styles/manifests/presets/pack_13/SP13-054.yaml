@@ -25,8 +25,8 @@ visualDna:
   subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: sweeping poses, flowing manes and wings, riders in light armor, huge creature scale."
   color_and_tone: Sky blues, dragon scale colors and gold, used consistently across subject and background.
   lighting_and_shadow: Dramatic sunset or storm light, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with painted skies, visible at card size as the signature of the style.
-  camera_and_composition: Wide aerial and low heroic angles, arranged so the subject still reads at card size.
+  texture_and_material: Cel with painted skies, visible at a glance as the signature of the style.
+  camera_and_composition: Wide aerial and low heroic angles, arranged so the subject still reads at a glance.
   atmosphere_and_mood: Epic, free, fierce and noble, driven by the construction, color and rhythm.
   rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
   creative_brief: "Beast-rider anime: epic sky and battle frames of riders on dragons, griffins and giant wolves. Carry it through riders, wings, epic scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."

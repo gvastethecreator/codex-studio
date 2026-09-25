@@ -37,7 +37,7 @@ function fx(
     ),
     texture_and_material: pad(texture, 9, 'with physically plausible motion, density and falloff.'),
     camera_and_composition:
-      'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+      'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.',
     atmosphere_and_mood: pad(mood, 8, 'coming from the effect rather than added scenery.'),
     rendering_and_quality:
       'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',

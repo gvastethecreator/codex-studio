@@ -17,7 +17,7 @@ visualDna:
   color_and_tone: Orange, yellow and deep red with black crust, concentrated around the target while the rest of the scene keeps its palette.
   lighting_and_shadow: Self-illuminating glow casting warm light, so the effect lights the target and casts believable local light.
   texture_and_material: Molten cracks, crust, flames and embers, with physically plausible motion, density and falloff.
-  camera_and_composition: Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.
+  camera_and_composition: Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.
   atmosphere_and_mood: Fierce, dangerous, primal and hot, coming from the effect rather than added scenery.
   rendering_and_quality: Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.
   key_features: glowing magma cracks; licking flames; black crust; contained around the target

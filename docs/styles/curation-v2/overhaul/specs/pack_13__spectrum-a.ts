@@ -1,7 +1,7 @@
 import type { Spec } from '../tools/apply';
 
 // Anime style spectrum (part A): briefs only; each preset's DNA already describes one portable
-// rendering mechanic. Briefs pick subjects that make that mechanic obvious at card size.
+// rendering mechanic. Briefs pick subjects that make that mechanic obvious at a glance.
 const spec: Spec = {
   pack: 'pack_13',
   category: '5. Anime Style Spectrum',

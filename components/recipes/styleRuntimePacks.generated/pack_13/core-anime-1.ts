@@ -17,9 +17,9 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone: 'Warm gold, peach and orange against cool blue shadow.',
       lighting_and_shadow: 'Low sunrise backlight with a bright rim on hair and armor.',
       texture_and_material:
-        'Flat cel fills with softly painted sky gradients, visible at card size as the signature of the style.',
+        'Flat cel fills with softly painted sky gradients, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Low heroic angle with the sky behind, arranged so the subject still reads at card size.',
+        'Low heroic angle with the sky behind, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Brave, hopeful, determined and bright, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -45,7 +45,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Neon signs as key light with wet reflections, expressed through the style rather than photographic lighting.',
       texture_and_material: 'Flat cel with glossy painted reflections and rain streaks.',
       camera_and_composition:
-        'Street-level wide shots and tight lonely close-ups, arranged so the subject still reads at card size.',
+        'Street-level wide shots and tight lonely close-ups, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Lonely, cool, watchful and melancholic, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -71,7 +71,7 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Industrial floodlights, sparks and visor glow, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Crisp cel metal with sharp highlight blocks, visible at card size as the signature of the style.',
+        'Crisp cel metal with sharp highlight blocks, visible at a glance as the signature of the style.',
       camera_and_composition: 'Low angle up at the machine with tiny figures for scale.',
       atmosphere_and_mood:
         'Tense, powerful, mechanical and awe-struck, driven by the construction, color and rhythm.',
@@ -99,7 +99,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Twilight sky with lantern and spirit glow, expressed through the style rather than photographic lighting.',
       texture_and_material: 'Painted backgrounds with soft cel characters and glowing particles.',
       camera_and_composition:
-        'Calm wide frames with small figures, arranged so the subject still reads at card size.',
+        'Calm wide frames with small figures, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Mysterious, gentle, sacred and wistful, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -125,9 +125,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Arena lights and hard rim light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with speed-line overlays and motion smears, visible at card size as the signature of the style.',
+        'Cel with speed-line overlays and motion smears, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Extreme angles close to the action, arranged so the subject still reads at card size.',
+        'Extreme angles close to the action, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Intense, triumphant, sweaty and electric, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -153,9 +153,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Moonlight and candlelight with deep shadows, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with fine lace and velvet detail, visible at card size as the signature of the style.',
+        'Cel with fine lace and velvet detail, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Tall vertical frames and dramatic angles, arranged so the subject still reads at card size.',
+        'Tall vertical frames and dramatic angles, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Elegant, dangerous, romantic and cold, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -181,9 +181,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Radiant backlight and prism flares, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Glossy cel with sparkle overlays, visible at card size as the signature of the style.',
+        'Glossy cel with sparkle overlays, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Centered spinning pose on a starry background, arranged so the subject still reads at card size.',
+        'Centered spinning pose on a starry background, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Magical, joyful, radiant and brave, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -209,9 +209,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Sunny daylight through leaves, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Painted backgrounds with clean cel characters, visible at card size as the signature of the style.',
+        'Painted backgrounds with clean cel characters, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Wide travel frames, arranged so the subject still reads at card size.',
+        'Wide travel frames, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Adventurous, cozy, curious and bright, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -236,9 +236,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Torch and magic glow in darkness, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with glowing effect overlays, visible at card size as the signature of the style.',
+        'Cel with glowing effect overlays, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Corridor and chamber frames with depth, arranged so the subject still reads at card size.',
+        'Corridor and chamber frames with depth, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Tense, adventurous, eerie and exciting, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -264,9 +264,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Dramatic backlight and explosions, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'VHS grain, scanlines, cel and paint streaks, visible at card size as the signature of the style.',
+        'VHS grain, scanlines, cel and paint streaks, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Dynamic mecha shots and tight cockpit close-ups, arranged so the subject still reads at card size.',
+        'Dynamic mecha shots and tight cockpit close-ups, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Nostalgic, dramatic, gritty and bold, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -292,7 +292,7 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Moonlight or lantern light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with ink-wash backgrounds, visible at card size as the signature of the style.',
+        'Cel with ink-wash backgrounds, visible at a glance as the signature of the style.',
       camera_and_composition: 'Wide standoff frames and extreme close-ups of eyes and hilts.',
       atmosphere_and_mood:
         'Tense, still, lethal and poetic, driven by the construction, color and rhythm.',
@@ -319,9 +319,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Magic glow lighting faces from below, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with bright effect layers and debris, visible at card size as the signature of the style.',
+        'Cel with bright effect layers and debris, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Dynamic low and high angles, arranged so the subject still reads at card size.',
+        'Dynamic low and high angles, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Powerful, dramatic, electric and fierce, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -346,9 +346,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Hard single-source light through blinds or a streetlamp, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Ink fills with light screentone, visible at card size as the signature of the style.',
+        'Ink fills with light screentone, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Canted angles and deep shadow frames, arranged so the subject still reads at card size.',
+        'Canted angles and deep shadow frames, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Moody, suspicious, weary and cool, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -373,9 +373,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Clear summer daylight with cloud shadows, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Richly painted watercolor-like backgrounds with soft cel characters, visible at card size as the signature of the style.',
+        'Richly painted watercolor-like backgrounds with soft cel characters, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Wide sky-and-land frames, arranged so the subject still reads at card size.',
+        'Wide sky-and-land frames, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Gentle, free, hopeful and warm, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -401,9 +401,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Golden hour light and lens bloom, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Soft painted light and particles, visible at card size as the signature of the style.',
+        'Soft painted light and particles, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Wide farewells and intimate close-ups, arranged so the subject still reads at card size.',
+        'Wide farewells and intimate close-ups, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Tender, bittersweet, grateful and final, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -431,9 +431,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Bright sun above clouds, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with painted clouds, visible at card size as the signature of the style.',
+        'Cel with painted clouds, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Wide sky shots with ships and falling figures, arranged so the subject still reads at card size.',
+        'Wide sky shots with ships and falling figures, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Adventurous, free, cheeky and bright, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -465,9 +465,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Grim overcast or firelight, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with hatching and grit, visible at card size as the signature of the style.',
+        'Cel with hatching and grit, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Low menacing angles, arranged so the subject still reads at card size.',
+        'Low menacing angles, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Grim, desperate, brutal and defiant, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -502,9 +502,9 @@ export const GENERATED_STYLE_PRESETS = [
         'Bright primaries and fresh greens, used consistently across subject and background.',
       lighting_and_shadow:
         'Sunny daylight, expressed through the style rather than photographic lighting.',
-      texture_and_material: 'Clean cel, visible at card size as the signature of the style.',
+      texture_and_material: 'Clean cel, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Dynamic mid shots with creature and tamer, arranged so the subject still reads at card size.',
+        'Dynamic mid shots with creature and tamer, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Energetic, friendly, brave and fun, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -536,9 +536,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Dramatic sunset or storm light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with painted skies, visible at card size as the signature of the style.',
+        'Cel with painted skies, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Wide aerial and low heroic angles, arranged so the subject still reads at card size.',
+        'Wide aerial and low heroic angles, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Epic, free, fierce and noble, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -570,9 +570,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Headlights and streetlamps, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Cel with speed-line overlays, visible at card size as the signature of the style.',
+        'Cel with speed-line overlays, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Low angles on mountain roads, arranged so the subject still reads at card size.',
+        'Low angles on mountain roads, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Fast, tense, cool and electric, driven by the construction, color and rhythm.',
       rendering_and_quality:

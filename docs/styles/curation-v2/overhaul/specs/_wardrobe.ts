@@ -47,7 +47,7 @@ export function wear(
     camera_and_composition: pad(
       camera,
       9,
-      'keeping the full outfit silhouette and fit readable at card size.',
+      'keeping the full outfit silhouette and fit readable at a glance.',
     ),
     atmosphere_and_mood: pad(mood, 8, "carried by the wearer's posture, styling and attitude."),
     rendering_and_quality: pad(render, 9, 'with believable fabric weight, seams and fit detail.'),

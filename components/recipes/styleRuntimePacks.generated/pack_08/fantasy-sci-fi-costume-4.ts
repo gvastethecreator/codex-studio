@@ -288,7 +288,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Lacquered chitin shells, translucent membrane fabric, fine hairs and joint seams.',
       camera_and_composition:
-        'Full figure showing plate segmentation clearly, keeping the full outfit silhouette and fit readable at card size.',
+        'Full figure showing plate segmentation clearly, keeping the full outfit silhouette and fit readable at a glance.',
       atmosphere_and_mood:
         "Alien, elegant, unsettling and armored, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:

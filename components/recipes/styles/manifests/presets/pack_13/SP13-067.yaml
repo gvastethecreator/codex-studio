@@ -25,8 +25,8 @@ visualDna:
   subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: sharp focus on one small detail (hands, a letter, eyes) with everything else melting into bokeh."
   color_and_tone: Soft creams, rose and pale gold, used consistently across subject and background.
   lighting_and_shadow: Backlit glow with bokeh circles, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with blur and glow layers, visible at card size as the signature of the style.
-  camera_and_composition: Very shallow depth close-ups, arranged so the subject still reads at card size.
+  texture_and_material: Cel with blur and glow layers, visible at a glance as the signature of the style.
+  camera_and_composition: Very shallow depth close-ups, arranged so the subject still reads at a glance.
   atmosphere_and_mood: Tender, nostalgic, dreamy and intimate, driven by the construction, color and rhythm.
   rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
   creative_brief: "Soft focus anime: dreamy frames with shallow depth, glowing bokeh and gentle blur, like remembered moments. Carry it through bokeh, shallow focus, glowing backlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."

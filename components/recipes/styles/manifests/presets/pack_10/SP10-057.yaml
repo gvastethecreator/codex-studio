@@ -17,7 +17,7 @@ visualDna:
   color_and_tone: Wool colors, on the patterned surface while the rest of the scene keeps its palette.
   lighting_and_shadow: Natural light that follows the surface, so the pattern bends with folds and curves.
   texture_and_material: Knit stitches with fuzz, with the pattern scaled correctly to the target.
-  camera_and_composition: Keep the prompt framing; show enough of the patterned surface for the motif to read at card size.
+  camera_and_composition: Keep the prompt framing; show enough of the patterned surface for the motif to read at a glance.
   atmosphere_and_mood: Cozy, handmade, warm and soft, carried by the pattern and its colors.
   rendering_and_quality: Crisp, correctly repeating pattern that wraps believably around form, without smeared or random motifs.
   key_features: knit stitches; cables

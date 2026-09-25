@@ -17,7 +17,7 @@ visualDna:
   color_and_tone: Orange-gold streaks with white-hot centers, concentrated around the target while the rest of the scene keeps its palette.
   lighting_and_shadow: Sparks lighting the target in warm flashes, so the effect lights the target and casts believable local light.
   texture_and_material: Streaking sparks and glowing particles, with physically plausible motion, density and falloff.
-  camera_and_composition: Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.
+  camera_and_composition: Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.
   atmosphere_and_mood: Industrial, energetic, fiery and alive, coming from the effect rather than added scenery.
   rendering_and_quality: Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.
   key_features: spark spray streaks; white-hot centers; contained around the target

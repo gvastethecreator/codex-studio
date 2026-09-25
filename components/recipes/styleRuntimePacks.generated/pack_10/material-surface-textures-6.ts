@@ -21,7 +21,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Polished chips flush in matrix, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Playful, modern, crafted and bright, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -47,7 +47,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Flowing veins and polish, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Luxurious, dramatic, cool and grand, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -74,7 +74,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Flowing grain and knots, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Warm, organic, handcrafted and natural, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -101,7 +101,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Twill weave under clear coat, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'High-tech, sleek, sporty and modern, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -128,7 +128,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Grain, stitching and edge paint, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Crafted, warm, rugged and classic, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -155,7 +155,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Glitter flakes, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Festive, playful, sparkly and kitsch, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -182,7 +182,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Rust blooms and streaks, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Aged, industrial, raw and warm, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -209,7 +209,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Foil with diffraction pattern, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Futuristic, playful, shiny and pop, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -236,7 +236,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Interlocking rings, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Armored, ancient, elegant and heavy, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -263,7 +263,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Overlapping scales and markings, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Exotic, sleek, dangerous and luxe, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -290,7 +290,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Gold-lacquer seams across cracks, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Resilient, poetic, precious and calm, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -321,7 +321,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Crazed glaze and smoky carbon, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Earthy, fiery, random and beautiful, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -354,7 +354,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Etched layered wave pattern, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Crafted, deadly, elegant and ancient, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -387,7 +387,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Chaotic swirls and eyes, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Rich, organic, warm and rare, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -420,7 +420,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Layered metal grain, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Refined, crafted, precious and warm, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -453,7 +453,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Burnished plaster sheen, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Calm, earthy, warm and soft, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -486,7 +486,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Enamel and gold wire, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Ornate, precious, bright and refined, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -519,7 +519,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Engine-turned grooves, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Precise, luxurious, hypnotic and refined, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -553,7 +553,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Layered lacquer and gold dust, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Refined, deep, precious and calm, carried by the material itself rather than by added props.',
       rendering_and_quality:
@@ -586,7 +586,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Hammered facets, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
       atmosphere_and_mood:
         'Handmade, warm, rustic and crafted, carried by the material itself rather than by added props.',
       rendering_and_quality:

@@ -25,8 +25,8 @@ visualDna:
   subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: tired soft faces, messy hair, hands with pens, cluttered desks drawn in detail."
   color_and_tone: Warm lamp yellow in deep blue darkness, used consistently across subject and background.
   lighting_and_shadow: Single desk lamp pool of light, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with soft glow, visible at card size as the signature of the style.
-  camera_and_composition: Close desk framing, arranged so the subject still reads at card size.
+  texture_and_material: Cel with soft glow, visible at a glance as the signature of the style.
+  camera_and_composition: Close desk framing, arranged so the subject still reads at a glance.
   atmosphere_and_mood: Quiet, tired, focused and intimate, driven by the construction, color and rhythm.
   rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
   creative_brief: "Night study lamp anime: small pools of warm desk light in dark rooms, tired eyes and late-night focus. Carry it through lamp pool, darkness, tired focus. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."

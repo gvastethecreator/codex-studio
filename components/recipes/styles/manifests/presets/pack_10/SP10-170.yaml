@@ -26,7 +26,7 @@ visualDna:
   color_and_tone: Pale green phosphor glow, glowing against a darker surrounding so the light reads.
   lighting_and_shadow: The emissive element is the key light source, casting colored light on nearby surfaces.
   texture_and_material: Phosphorescent paint, with a physically plausible light source.
-  camera_and_composition: Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at card size.
+  camera_and_composition: Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at a glance.
   atmosphere_and_mood: Eerie, playful, nocturnal and soft, coming from the light.
   rendering_and_quality: Clean glow with controlled bloom, no blown-out haze over the whole frame.
   creative_brief: "Glow-in-the-dark: phosphorescent green glow on the subject in darkness. Carry it through phosphor green glow, emissive modifier. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."

@@ -39,7 +39,7 @@ export function material(
     ),
     texture_and_material: pad(texture, 9, 'at a believable physical scale relative to the target.'),
     camera_and_composition:
-      'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.',
     atmosphere_and_mood: pad(mood, 8, 'carried by the material itself rather than by added props.'),
     rendering_and_quality:
       'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',

@@ -26,7 +26,7 @@ visualDna:
   color_and_tone: Soft cyan, green, pink, glowing against a darker surrounding so the light reads.
   lighting_and_shadow: The emissive element is the key light source, casting colored light on nearby surfaces.
   texture_and_material: Flexible wire with even glow, with a physically plausible light source.
-  camera_and_composition: Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at card size.
+  camera_and_composition: Keep the prompt framing; the glowing lines or surfaces follow the subject so its shape reads at a glance.
   atmosphere_and_mood: Playful, nocturnal, futuristic and soft, coming from the light.
   rendering_and_quality: Clean glow with controlled bloom, no blown-out haze over the whole frame.
   creative_brief: "EL wire: thin flexible electroluminescent wire outlining the subject in soft even glow. Carry it through thin EL wire outlines, emissive modifier. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."

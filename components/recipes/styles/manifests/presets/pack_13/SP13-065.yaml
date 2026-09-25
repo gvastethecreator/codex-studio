@@ -25,8 +25,8 @@ visualDna:
   subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: dynamic windblown hair and cloth, open body poses, speed of clouds drawn with long strokes."
   color_and_tone: Bright sky blue and white with small warm accents.
   lighting_and_shadow: Clear daylight with fast cloud shadows, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with painted streaking clouds, visible at card size as the signature of the style.
-  camera_and_composition: Low angles with most of the frame sky, arranged so the subject still reads at card size.
+  texture_and_material: Cel with painted streaking clouds, visible at a glance as the signature of the style.
+  camera_and_composition: Low angles with most of the frame sky, arranged so the subject still reads at a glance.
   atmosphere_and_mood: Free, restless, open and youthful, driven by the construction, color and rhythm.
   rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
   creative_brief: "Rooftop wind anime: sky-dominated frames with strong wind, flapping clothes and hair, and sweeping clouds. Carry it through windblown cloth, big sky, streaking clouds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."

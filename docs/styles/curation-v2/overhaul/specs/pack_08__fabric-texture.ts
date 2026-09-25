@@ -45,7 +45,7 @@ function fabric(
       9,
       'with correct scale, weight and surface behavior at every fold and edge.',
     ),
-    camera_and_composition: `Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the ${kind === 'textile' ? 'clothing' : 'figure'}.`,
+    camera_and_composition: `Frame the full figure or the garment area large enough that the material reads at a glance; the material effect stays on the ${kind === 'textile' ? 'clothing' : 'figure'}.`,
     atmosphere_and_mood: pad(mood, 8, 'carried by how the material moves and catches light.'),
     rendering_and_quality:
       'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',

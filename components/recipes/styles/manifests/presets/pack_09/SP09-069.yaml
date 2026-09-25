@@ -18,7 +18,7 @@ visualDna:
   color_and_tone: Pink or yellow insulation with pale fibers, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Soft light showing fluffy fibers, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Loose glass-fiber batts with torn edges, at a believable physical scale relative to the target.
-  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.
+  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at a glance.
   atmosphere_and_mood: Industrial, odd, soft-looking and prickly, carried by the material itself rather than by added props.
   rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
   key_features: fluffy fiberglass batts; loose fibers; pink or yellow

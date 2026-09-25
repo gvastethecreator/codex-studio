@@ -17,7 +17,7 @@ visualDna:
   color_and_tone: Electric blue-white with violet fringes, concentrated around the target while the rest of the scene keeps its palette.
   lighting_and_shadow: Flickering bright arcs lighting the target, so the effect lights the target and casts believable local light.
   texture_and_material: Branching arcs, sparks and ionized glow, with physically plausible motion, density and falloff.
-  camera_and_composition: Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.
+  camera_and_composition: Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.
   atmosphere_and_mood: Charged, dangerous, energetic and sudden, coming from the effect rather than added scenery.
   rendering_and_quality: Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.
   key_features: branching lightning arcs; sparks; blue-white glow; contained around the target

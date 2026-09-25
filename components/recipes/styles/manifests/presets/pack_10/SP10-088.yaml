@@ -25,8 +25,8 @@ visualDna:
   subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is placed in a strict modular grid of image blocks and color fields."
   color_and_tone: Red, black, white and one accent, used consistently across subject and background.
   lighting_and_shadow: Flat or photographic within blocks, expressed through the style rather than photographic lighting.
-  texture_and_material: Clean blocks with precise alignment, visible at card size as the signature of the style.
-  camera_and_composition: Asymmetric modular grid, arranged so the subject still reads at card size.
+  texture_and_material: Clean blocks with precise alignment, visible at a glance as the signature of the style.
+  camera_and_composition: Asymmetric modular grid, arranged so the subject still reads at a glance.
   atmosphere_and_mood: Rational, clean, confident and modern, driven by the construction, color and rhythm.
   rendering_and_quality: Crisp print finish, with clean, deliberate marks and no accidental noise.
   creative_brief: "Swiss grid composition: strict modular grid, asymmetric layout, bold geometric image blocks without type. Carry it through modular grid, asymmetric blocks, no type. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."

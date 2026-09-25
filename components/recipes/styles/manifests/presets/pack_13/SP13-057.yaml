@@ -25,8 +25,8 @@ visualDna:
   subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: simple quiet poses, long cast shadows, window frames and silhouettes against the light."
   color_and_tone: Deep orange and amber with violet shadows, used consistently across subject and background.
   lighting_and_shadow: Low sun through windows with bright shafts, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with painted light shafts and floating dust, visible at card size as the signature of the style.
-  camera_and_composition: Wide still frames with strong window geometry, arranged so the subject still reads at card size.
+  texture_and_material: Cel with painted light shafts and floating dust, visible at a glance as the signature of the style.
+  camera_and_composition: Wide still frames with strong window geometry, arranged so the subject still reads at a glance.
   atmosphere_and_mood: Nostalgic, bittersweet, quiet and warm, driven by the construction, color and rhythm.
   rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
   creative_brief: "Afterschool golden hour anime: long orange light through windows, dust motes and long shadows at the end of the day. Carry it through orange shafts, long shadows, dust motes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."

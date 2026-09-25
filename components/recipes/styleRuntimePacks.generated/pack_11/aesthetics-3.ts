@@ -67,7 +67,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone: 'Magenta, cyan, violet and hot orange with deep indigo night.',
       lighting_and_shadow: 'Neon rim light, glowing grid lines and sunset backlight.',
       texture_and_material:
-        'Chrome reflections, scanline haze and airbrushed gradients, visible at card size as the signature of the style.',
+        'Chrome reflections, scanline haze and airbrushed gradients, visible at a glance as the signature of the style.',
       camera_and_composition: 'Low wide shot toward the horizon with the grid receding.',
       atmosphere_and_mood:
         'Nostalgic, cool, electric and dreamy, driven by the construction, color and rhythm.',
@@ -94,7 +94,7 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Bright warm daylight filtered through leaves and glass, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Living plants, bamboo, glass, copper and weathered wood, visible at card size as the signature of the style.',
+        'Living plants, bamboo, glass, copper and weathered wood, visible at a glance as the signature of the style.',
       camera_and_composition: 'Wide inhabited view with foreground gardens and deep city layers.',
       atmosphere_and_mood:
         'Hopeful, communal, fresh and calm, driven by the construction, color and rhythm.',
@@ -121,9 +121,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Searchlights and furnace glow through smoke, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Riveted steel, grease, soot and heavy canvas, visible at card size as the signature of the style.',
+        'Riveted steel, grease, soot and heavy canvas, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Low monumental angle with massive machines, arranged so the subject still reads at card size.',
+        'Low monumental angle with massive machines, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Oppressive, grim, mighty and industrial, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -149,9 +149,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Golden afternoon light through windows, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Linen, wicker, wood, flowers and bread crust, visible at card size as the signature of the style.',
+        'Linen, wicker, wood, flowers and bread crust, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Cozy interior or garden framing with foreground flowers, arranged so the subject still reads at card size.',
+        'Cozy interior or garden framing with foreground flowers, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Gentle, warm, nostalgic and peaceful, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -177,9 +177,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Candlelight and grey window light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Leather, tweed, parchment, marble and dark wood, visible at card size as the signature of the style.',
+        'Leather, tweed, parchment, marble and dark wood, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Intimate interior framing with deep shadows, arranged so the subject still reads at card size.',
+        'Intimate interior framing with deep shadows, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Melancholic, intellectual, secretive and romantic, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -207,9 +207,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Soft even fluorescent light with gradient skies, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Glossy tiles, marble, chrome and low-res image grain, visible at card size as the signature of the style.',
+        'Glossy tiles, marble, chrome and low-res image grain, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Symmetrical frontal framing with empty space, arranged so the subject still reads at card size.',
+        'Symmetrical frontal framing with empty space, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Dreamy, ironic, lonely and nostalgic, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -235,9 +235,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Warm gaslight and steam glow, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Polished brass, riveted copper, leather and steam, visible at card size as the signature of the style.',
+        'Polished brass, riveted copper, leather and steam, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Detailed mid shot with machinery around the subject, arranged so the subject still reads at card size.',
+        'Detailed mid shot with machinery around the subject, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Inventive, adventurous, ornate and romantic, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -262,9 +262,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Wet lab light and bioluminescent glow, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Wet skin, membrane, cartilage and glass vats, visible at card size as the signature of the style.',
+        'Wet skin, membrane, cartilage and glass vats, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Close, claustrophobic framing, arranged so the subject still reads at card size.',
+        'Close, claustrophobic framing, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Unsettling, visceral, strange and feverish, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -290,9 +290,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Candlelight and moonlight with deep shadow, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Stone, velvet, cobwebs and tarnished silver, visible at card size as the signature of the style.',
+        'Stone, velvet, cobwebs and tarnished silver, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Tall vertical framing with looming architecture, arranged so the subject still reads at card size.',
+        'Tall vertical framing with looming architecture, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Dread, romantic, decadent and haunted, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -318,9 +318,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Soft flat light with small sparkles, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Smooth flat color with soft outlines, visible at card size as the signature of the style.',
+        'Smooth flat color with soft outlines, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Centered mascot with sparkles and small props, arranged so the subject still reads at card size.',
+        'Centered mascot with sparkles and small props, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Adorable, sweet, cheerful and soft, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -345,9 +345,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Smoky battlefield light, fire and cold overcast, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Battered plate, torn cloth, bone, soot and stone, visible at card size as the signature of the style.',
+        'Battered plate, torn cloth, bone, soot and stone, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Monumental framing with tiny figures against huge structures, arranged so the subject still reads at card size.',
+        'Monumental framing with tiny figures against huge structures, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Bleak, grim, oppressive and fanatical, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -372,9 +372,9 @@ export const GENERATED_STYLE_PRESETS = [
         'Aqua blue, grass green, white and glossy silver, used consistently across subject and background.',
       lighting_and_shadow: 'Bright clean daylight with lens flares and glass shine.',
       texture_and_material:
-        'Glass, water droplets, bubbles and glossy plastic, visible at card size as the signature of the style.',
+        'Glass, water droplets, bubbles and glossy plastic, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Clean airy framing with lots of sky, arranged so the subject still reads at card size.',
+        'Clean airy framing with lots of sky, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Optimistic, fresh, clean and nostalgic, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -400,9 +400,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Flat light and hard shadows, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Flat patterned surfaces and laminate, visible at card size as the signature of the style.',
+        'Flat patterned surfaces and laminate, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Playful staged framing with objects on pedestals, arranged so the subject still reads at card size.',
+        'Playful staged framing with objects on pedestals, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Playful, loud, witty and irreverent, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -430,9 +430,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Glow comes from color vibration, not light, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Smooth flowing paint and concentric lines, visible at card size as the signature of the style.',
+        'Smooth flowing paint and concentric lines, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Centered, radiating composition, arranged so the subject still reads at card size.',
+        'Centered, radiating composition, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Trippy, hypnotic, ecstatic and strange, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -458,9 +458,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Bright point lights creating sparkle and flare, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Glitter flakes, holographic foil and gloss, visible at card size as the signature of the style.',
+        'Glitter flakes, holographic foil and gloss, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Close hero framing to show sparkle, arranged so the subject still reads at card size.',
+        'Close hero framing to show sparkle, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Festive, dazzling, glamorous and playful, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -489,7 +489,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Damp soft light under trees, expressed through the style rather than photographic lighting.',
       texture_and_material: 'Moss, mud, mushroom gills, snail shells and tarnished trinkets.',
       camera_and_composition:
-        'Low ground-level framing close to the forest floor, arranged so the subject still reads at card size.',
+        'Low ground-level framing close to the forest floor, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Earthy, cozy, strange and playful, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -525,7 +525,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Dim mist and moonlight, expressed through the style rather than photographic lighting.',
       texture_and_material: 'Old painting reproduced with copier grain and faded print.',
       camera_and_composition:
-        'Square-ish cover framing with a lonely distant subject, arranged so the subject still reads at card size.',
+        'Square-ish cover framing with a lonely distant subject, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Melancholic, mysterious, lonely and ancient, driven by the construction, color and rhythm.',
       rendering_and_quality:
@@ -557,9 +557,9 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Hazy humid light and dusk, expressed through the style rather than photographic lighting.',
       texture_and_material:
-        'Peeling paint, moss, rust and damp wood, visible at card size as the signature of the style.',
+        'Peeling paint, moss, rust and damp wood, visible at a glance as the signature of the style.',
       camera_and_composition:
-        'Still, wide framing with a lonely figure, arranged so the subject still reads at card size.',
+        'Still, wide framing with a lonely figure, arranged so the subject still reads at a glance.',
       atmosphere_and_mood:
         'Uneasy, humid, secretive and melancholy, driven by the construction, color and rhythm.',
       rendering_and_quality:

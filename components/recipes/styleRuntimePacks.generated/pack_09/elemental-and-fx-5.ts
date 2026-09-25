@@ -21,7 +21,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Viscous slime with strands, drips and bubbles, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.',
       atmosphere_and_mood:
         'Gross, playful, strange and sticky, coming from the effect rather than added scenery.',
       rendering_and_quality:
@@ -49,7 +49,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Molten cracks, crust, flames and embers, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.',
       atmosphere_and_mood:
         'Fierce, dangerous, primal and hot, coming from the effect rather than added scenery.',
       rendering_and_quality:
@@ -78,7 +78,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Branching arcs, sparks and ionized glow, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.',
       atmosphere_and_mood:
         'Charged, dangerous, energetic and sudden, coming from the effect rather than added scenery.',
       rendering_and_quality:
@@ -106,7 +106,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Curling smoke wisps and soft volumes, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.',
       atmosphere_and_mood:
         'Mysterious, soft, drifting and quiet, coming from the effect rather than added scenery.',
       rendering_and_quality:
@@ -133,7 +133,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Splash crowns, droplets and sheets, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.',
       atmosphere_and_mood:
         'Fresh, kinetic, sudden and bright, coming from the effect rather than added scenery.',
       rendering_and_quality:
@@ -161,7 +161,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Plasma filaments, glow and heat shimmer, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.',
       atmosphere_and_mood:
         'Powerful, magical, futuristic and intense, coming from the effect rather than added scenery.',
       rendering_and_quality:
@@ -188,7 +188,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Thin oil film with swirling interference colors, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.',
       atmosphere_and_mood:
         'Toxic, beautiful, eerie and slick, coming from the effect rather than added scenery.',
       rendering_and_quality:
@@ -215,7 +215,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Streaking sparks and glowing particles, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.',
       atmosphere_and_mood:
         'Industrial, energetic, fiery and alive, coming from the effect rather than added scenery.',
       rendering_and_quality:
@@ -242,7 +242,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Thin bubbles with swirling colors and reflections, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.',
       atmosphere_and_mood:
         'Playful, light, dreamy and delicate, coming from the effect rather than added scenery.',
       rendering_and_quality:
@@ -269,7 +269,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Heavy rolling fog tendrils, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.',
       atmosphere_and_mood:
         'Theatrical, eerie, cold and magical, coming from the effect rather than added scenery.',
       rendering_and_quality:
@@ -296,7 +296,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Paper confetti pieces with motion blur, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.',
       atmosphere_and_mood:
         'Festive, joyful, chaotic and celebratory, coming from the effect rather than added scenery.',
       rendering_and_quality:
@@ -323,7 +323,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Fine powder snow and flakes, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.',
       atmosphere_and_mood:
         'Quiet, cold, soft and serene, coming from the effect rather than added scenery.',
       rendering_and_quality:
@@ -353,7 +353,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Glowing ember particles with trails, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.',
       atmosphere_and_mood:
         'Melancholic, warm, fading and magical, coming from the effect rather than added scenery.',
       rendering_and_quality:
@@ -387,7 +387,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Billowing ink plumes and filaments, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.',
       atmosphere_and_mood:
         'Mysterious, slow, elegant and dark, coming from the effect rather than added scenery.',
       rendering_and_quality:
@@ -420,7 +420,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Translucent curtain-like light ribbons, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.',
       atmosphere_and_mood:
         'Magical, serene, cold and wondrous, coming from the effect rather than added scenery.',
       rendering_and_quality:
@@ -454,7 +454,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Sharp ice crystals and frost dust, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.',
       atmosphere_and_mood:
         'Violent, cold, crystalline and sharp, coming from the effect rather than added scenery.',
       rendering_and_quality:
@@ -488,7 +488,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Fine drifting particle clouds, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.',
       atmosphere_and_mood:
         'Organic, dreamy, alive and strange, coming from the effect rather than added scenery.',
       rendering_and_quality:
@@ -521,7 +521,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Smoky tendrils with soft edges, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.',
       atmosphere_and_mood:
         'Ominous, dark, supernatural and creeping, coming from the effect rather than added scenery.',
       rendering_and_quality:
@@ -554,7 +554,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Blowing sand grains in spiral motion, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.',
       atmosphere_and_mood:
         'Harsh, mysterious, arid and wild, coming from the effect rather than added scenery.',
       rendering_and_quality:
@@ -587,7 +587,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Floating petals with motion, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at a glance.',
       atmosphere_and_mood:
         'Romantic, graceful, fleeting and poetic, coming from the effect rather than added scenery.',
       rendering_and_quality:
