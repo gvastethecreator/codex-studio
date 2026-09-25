@@ -74,6 +74,13 @@ categories:
       - pack_09/SP09-041.yaml
       - pack_09/SP09-064.yaml
       - pack_09/SP09-065.yaml
+      - pack_09/SP09-081.yaml
+      - pack_09/SP09-082.yaml
+      - pack_09/SP09-083.yaml
+      - pack_09/SP09-084.yaml
+      - pack_09/SP09-085.yaml
+      - pack_09/SP09-086.yaml
+      - pack_09/SP09-087.yaml
   - id: tactile-surfaces
     name: 4. Tactile Surfaces
     presetRefs:
@@ -161,6 +168,13 @@ presetRefs:
   - pack_09/SP09-041.yaml
   - pack_09/SP09-064.yaml
   - pack_09/SP09-065.yaml
+  - pack_09/SP09-081.yaml
+  - pack_09/SP09-082.yaml
+  - pack_09/SP09-083.yaml
+  - pack_09/SP09-084.yaml
+  - pack_09/SP09-085.yaml
+  - pack_09/SP09-086.yaml
+  - pack_09/SP09-087.yaml
   - pack_09/SP09-029.yaml
   - pack_09/SP09-039.yaml
   - pack_09/SP09-045.yaml

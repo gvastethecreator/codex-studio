@@ -3,7 +3,7 @@
     {
       "id": "pack_09",
       "name": "Texture & Materiality",
-      "presetCount": 80
+      "presetCount": 87
     }
   ],
   "presets": [
@@ -728,6 +728,104 @@
       "searchableText": "sp09-065 tar 3. weathering and decay wear & weathering pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
     },
     {
+      "id": "SP09-081",
+      "name": "Salt Crust",
+      "styleAnchors": ["Salt Crust", "salt crust efflorescence", "white salt crystal crust"],
+      "ref": "pack_09/SP09-081.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "weathering-and-decay",
+      "categoryName": "3. Weathering And Decay",
+      "domain": "salt crust efflorescence",
+      "tags": ["texture-and-materiality", "weathering-and-decay", "salt-crust-efflorescence"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-081 salt crust salt crust efflorescence white salt crystal crust 3. weathering and decay wear & weathering salt crust efflorescence pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay salt-crust-efflorescence"
+    },
+    {
+      "id": "SP09-082",
+      "name": "Sun-Bleached Fade",
+      "styleAnchors": ["Sun-Bleached Fade", "sun-bleached fading", "sun-faded exposed faces"],
+      "ref": "pack_09/SP09-082.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "weathering-and-decay",
+      "categoryName": "3. Weathering And Decay",
+      "domain": "sun-bleached fading",
+      "tags": ["texture-and-materiality", "weathering-and-decay", "sun-bleached-fading"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-082 sun-bleached fade sun-bleached fading sun-faded exposed faces 3. weathering and decay wear & weathering sun-bleached fading pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay sun-bleached-fading"
+    },
+    {
+      "id": "SP09-083",
+      "name": "Soot Staining",
+      "styleAnchors": ["Soot Staining", "soot and smoke staining", "soot gradients from below"],
+      "ref": "pack_09/SP09-083.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "weathering-and-decay",
+      "categoryName": "3. Weathering And Decay",
+      "domain": "soot and smoke staining",
+      "tags": ["texture-and-materiality", "weathering-and-decay", "soot-and-smoke-staining"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-083 soot staining soot and smoke staining soot gradients from below 3. weathering and decay wear & weathering soot and smoke staining pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay soot-and-smoke-staining"
+    },
+    {
+      "id": "SP09-084",
+      "name": "Woodworm Rot",
+      "styleAnchors": ["Woodworm Rot", "woodworm and dry rot", "woodworm boreholes"],
+      "ref": "pack_09/SP09-084.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "weathering-and-decay",
+      "categoryName": "3. Weathering And Decay",
+      "domain": "woodworm and dry rot",
+      "tags": ["texture-and-materiality", "weathering-and-decay", "woodworm-and-dry-rot"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-084 woodworm rot woodworm and dry rot woodworm boreholes 3. weathering and decay wear & weathering woodworm and dry rot pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay woodworm-and-dry-rot"
+    },
+    {
+      "id": "SP09-085",
+      "name": "Acid Etching",
+      "styleAnchors": ["Acid Etching", "acid-etched surfaces", "acid pits"],
+      "ref": "pack_09/SP09-085.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "weathering-and-decay",
+      "categoryName": "3. Weathering And Decay",
+      "domain": "acid-etched surfaces",
+      "tags": ["texture-and-materiality", "weathering-and-decay", "acid-etched-surfaces"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-085 acid etching acid-etched surfaces acid pits 3. weathering and decay wear & weathering acid-etched surfaces pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay acid-etched-surfaces"
+    },
+    {
+      "id": "SP09-086",
+      "name": "Lichen Crust",
+      "styleAnchors": ["Lichen Crust", "lichen crust growth", "lichen rosettes"],
+      "ref": "pack_09/SP09-086.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "weathering-and-decay",
+      "categoryName": "3. Weathering And Decay",
+      "domain": "lichen crust growth",
+      "tags": ["texture-and-materiality", "weathering-and-decay", "lichen-crust-growth"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-086 lichen crust lichen crust growth lichen rosettes 3. weathering and decay wear & weathering lichen crust growth pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay lichen-crust-growth"
+    },
+    {
+      "id": "SP09-087",
+      "name": "Ash Fall Coating",
+      "styleAnchors": ["Ash Fall Coating", "volcanic ash coating", "grey ash drifts"],
+      "ref": "pack_09/SP09-087.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "weathering-and-decay",
+      "categoryName": "3. Weathering And Decay",
+      "domain": "volcanic ash coating",
+      "tags": ["texture-and-materiality", "weathering-and-decay", "volcanic-ash-coating"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-087 ash fall coating volcanic ash coating grey ash drifts 3. weathering and decay wear & weathering volcanic ash coating pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay volcanic-ash-coating"
+    },
+    {
       "id": "SP09-029",
       "name": "Velvet Fabric",
       "ref": "pack_09/SP09-029.yaml",
@@ -968,5 +1066,5 @@
       "searchableText": "sp09-067 snow (powder) 5. elemental and fx elemental effects pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
     }
   ],
-  "totalPresetCount": 80
+  "totalPresetCount": 87
 }

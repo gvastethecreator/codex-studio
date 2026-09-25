@@ -8,27 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rusty Iron',
     category: '3. Weathering And Decay',
     negativePrompt:
-      'new, shiny, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, new, shiny, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Rusty Iron turns material failure into the main visual language: start from Corroded metal, Rough, flaky, and Eaten away, then turn damage history, contamination, corrosion, staining, abrasion, and material breakdown into portable surface behavior rather than a literal material sample.',
+        'Rusty iron: iron or steel surfaces oxidized into orange-brown rust with flaking scale and streaks.',
       subject_treatment:
-        'Transform any prompt subject through Pitting: preserve identity and pose while letting forms age, stain, corrode, abrade, swell, chip, or collapse through edge profile, surface breakup, thickness, contact marks, and detail scale.',
-      color_and_tone:
-        "Use Orange, Brown, Black as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: rust blooms from edges, bolts and seams, with flaking scale and run-off streaks. Default intensity is moderate; follow the prompt if it asks for light or heavy wear.",
+      color_and_tone: 'Orange, umber and dark brown rust over grey steel.',
       lighting_and_shadow:
-        'Let Matte define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Rusty Iron without hiding the prompt subject.',
+        'Low warm light that shows flaking relief, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Rough, flaky through layer loss, residue buildup, chipped edges, stains, cracks, and uneven surface failure; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Oxide scale, pitting, flakes and streaks, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Eaten away as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Decay, heavy by using neglect, time, moisture, heat, friction, and environmental pressure; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Neglected, industrial, harsh and timeworn, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Old, abandoned material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Corroded metal; Pitting; Rough, flaky; Matte; Eaten away',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features:
+        'orange rust blooms; flaking scale; run-off streaks; pitting; surface-level damage; structure intact',
       creative_brief:
-        "Route any subject through Rusty Iron as a transferable weathering-and-decay visual system while preserving the prompt's subject, action, and setting. Capture the slow fire of oxidation consuming iron in blooms of orange, umber, and black, a surface that flakes and pits as time eats through what industry once forged. Each rust spot spreads like a bruise, mapping years of exposure into a topography of decay. Render the fierce beauty of abandonment, where time paints with corrosion what fire once shaped. Use Rusty Iron as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rusty Iron as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -36,27 +36,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Porcelain (Cracked)',
     category: '3. Weathering And Decay',
     negativePrompt:
-      'plastic, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, plastic, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Porcelain (Cracked) turns material failure into the main visual language: start from Old doll or vase, Smooth glaze, and Fine cracks, then turn damage history, contamination, corrosion, staining, abrasion, and material breakdown into portable surface behavior rather than a literal material sample.',
+        'Cracked porcelain: glazed ceramic surfaces crazed with hairline cracks and a few chips.',
       subject_treatment:
-        'Transform any prompt subject through Craquelure: preserve identity and pose while letting forms age, stain, corrode, abrade, swell, chip, or collapse through edge profile, surface breakup, thickness, contact marks, and detail scale.',
-      color_and_tone:
-        "Use Pale white/cream as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: fine crazing across the glaze with a few deeper cracks and chipped edges, the object still whole. Default intensity is moderate; follow the prompt if it asks for light or heavy wear.",
+      color_and_tone: 'Glazed white, celadon or blue-and-white with dark crack lines.',
       lighting_and_shadow:
-        'Let Glossy define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Porcelain (Cracked) without hiding the prompt subject.',
+        'Soft light with glaze highlights, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Smooth glaze through layer loss, residue buildup, chipped edges, stains, cracks, and uneven surface failure; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Crazed glaze network, chips and exposed bisque, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Fine cracks as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Creepy, old by using neglect, time, moisture, heat, friction, and environmental pressure; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Fragile, precious, aged and delicate, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Antique, fragile material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Old doll or vase; Craquelure; Smooth glaze; Glossy; Fine cracks',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features:
+        'crazed glaze network; hairline cracks; chipped edges; surface-level damage; structure intact',
       creative_brief:
-        "Route any subject through Porcelain (Cracked) as a transferable weathering-and-decay visual system while preserving the prompt's subject, action, and setting. Compose the delicate horror of crazed porcelain where a fine network of cracks maps the surface like a frozen lightning storm in cream and white, the glaze still gleaming smooth above fractures held in perpetual arrest. The crack network should spread organically like roots seeking water, each line a record of stress survived. Render the beauty of the almost-broken, fragility that has chosen to endure. Use Porcelain as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Porcelain (Cracked) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -64,27 +64,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Burlap Sack',
     category: '3. Weathering And Decay',
     negativePrompt:
-      'silk, smooth, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, silk, smooth, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Burlap Sack turns material failure into the main visual language: start from Potato sack, Rough fiber, and Loose weave, then turn damage history, contamination, corrosion, staining, abrasion, and material breakdown into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Burlap decay: coarse sackcloth surfaces frayed, stained and patched.',
       subject_treatment:
-        'Transform any prompt subject through Coarse weave: preserve identity and pose while letting forms age, stain, corrode, abrade, swell, chip, or collapse through edge profile, surface breakup, thickness, contact marks, and detail scale.',
-      color_and_tone:
-        "Use Tan, Brown as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target's fabric surfaces fray at seams and edges, with stains and rough patches. Default intensity is moderate; follow the prompt if it asks for light or heavy wear.",
+      color_and_tone: 'Sack brown with darker stains and pale frayed threads.',
       lighting_and_shadow:
-        'Let Matte define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Burlap Sack without hiding the prompt subject.',
+        'Dim natural light, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Rough fiber through layer loss, residue buildup, chipped edges, stains, cracks, and uneven surface failure; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Coarse weave, loose threads, stains and patches, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Loose weave as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Poor, rural by using neglect, time, moisture, heat, friction, and environmental pressure; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Poor, worn, rustic and humble, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Rustic, cheap material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Potato sack; Coarse weave; Rough fiber; Matte; Loose weave',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'frayed burlap; stains; patched weave; surface-level damage; structure intact',
       creative_brief:
-        "Route any subject through Burlap Sack as a transferable weathering-and-decay visual system while preserving the prompt's subject, action, and setting. Capture the rough honesty of burlap where coarse jute fibers interlace in a grid of tan and brown utility, each thread a visible record of plant turned to purpose. The surface must feel dry and scratchy to the eye, a loose weave that hints at the grain it once carried. Render the dignity of the cheap and functional, beauty found in necessity's simplest weave. Use Burlap Sack as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Burlap Sack as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -92,28 +90,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Peeling Paint',
     category: '3. Weathering And Decay',
     negativePrompt:
-      'fresh paint, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, fresh paint, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Peeling Paint turns material failure into the main visual language: start from Peeling painted surface, Flaky, and Curled edges, then turn damage history, contamination, corrosion, staining, abrasion, and material breakdown into portable surface behavior rather than a literal material sample.',
+        'Peeling paint: layered paint coats curling, cracking and flaking off to reveal older colors beneath.',
       subject_treatment:
-        'Transform any prompt subject through Cracked flakes: preserve identity and pose while letting forms age, stain, corrode, abrade, swell, chip, or collapse through edge profile, surface breakup, thickness, contact marks, and detail scale.',
-      color_and_tone:
-        "Use White paint, Grey wood under as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: paint layers curl and flake from the target, revealing older coats and bare material. Default intensity is moderate; follow the prompt if it asks for light or heavy wear.",
+      color_and_tone: 'Layered pastel and faded colors over bare wood or metal.',
       lighting_and_shadow:
-        'Let Shadows under flakes define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Peeling Paint without hiding the prompt subject.',
+        'Soft raking light on curling flakes, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Flaky through layer loss, residue buildup, chipped edges, stains, cracks, and uneven surface failure; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Curling paint flakes, cracked layers and exposed substrate, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Curled edges as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Neglected, textured by using neglect, time, moisture, heat, friction, and environmental pressure; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Nostalgic, faded, neglected and layered, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Abandoned, old material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features:
-        'Peeling painted surface; Cracked flakes; Flaky; Shadows under flakes; Curled edges',
+        'curling paint flakes; layered old colors; exposed substrate; surface-level damage; structure intact',
       creative_brief:
-        "Route any subject through Peeling Paint as a transferable weathering-and-decay visual system while preserving the prompt's subject, action, and setting. Apply peeling-paint aging to the input: curled flakes, cracked white layers, grey substrate glimpsed underneath, and small shadows pooling beneath lifting edges. If wall, wood, prop, sign, or architecture exists, age it directly; otherwise turn surfaces into layered paint releasing its grip without requiring a house wall.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Peeling Paint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -121,27 +118,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mold & Mildew',
     category: '3. Weathering And Decay',
     negativePrompt:
-      'clean, sterile, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, clean, sterile, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Mold & Mildew turns material failure into the main visual language: start from Damp corner, Fuzzy, dusty, and Stains, then turn damage history, contamination, corrosion, staining, abrasion, and material breakdown into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Mold and mildew: fuzzy spotted mold colonies spreading over damp surfaces.',
       subject_treatment:
-        'Transform any prompt subject through Fuzzy spots: preserve identity and pose while letting forms age, stain, corrode, abrade, swell, chip, or collapse through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: patchy mold colonies and mildew spots spread over the target's damp surfaces. Default intensity is moderate; follow the prompt if it asks for light or heavy wear.",
       color_and_tone:
-        "Use Black, Green, Grey as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Black, grey-green and white mold spots, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Matte define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Mold & Mildew without hiding the prompt subject.',
+        'Dim damp light, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Fuzzy, dusty through layer loss, residue buildup, chipped edges, stains, cracks, and uneven surface failure; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Fuzzy mold colonies, spots and damp stains, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Stains as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Rotting, damp by using neglect, time, moisture, heat, friction, and environmental pressure; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Unsettling, damp, neglected and organic, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Gross, unhealthy material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Damp corner; Fuzzy spots; Fuzzy, dusty; Matte; Stains',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features:
+        'fuzzy mold colonies; mildew spots; damp stains; surface-level damage; structure intact',
       creative_brief:
-        "Route any subject through Mold & Mildew as a transferable weathering-and-decay visual system while preserving the prompt's subject, action, and setting. Capture the organic creep of decay where fuzzy colonies of black, green, and grey spread across damp surfaces like a map of neglect drawn by spores. The texture should feel dusty and soft, a living carpet of dissolution eating its way through the man-made one millimeter at a time. Render the unsettling beauty of rot, nature reclaiming territory in the quiet language of mold. Use Mold & Mildew as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mold & Mildew as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -149,28 +146,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Burnt Wood (Shou Sugi Ban)',
     category: '3. Weathering And Decay',
     negativePrompt:
-      'ash, grey, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, ash, grey, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Burnt Wood (Shou Sugi Ban) turns material failure into the main visual language: start from Charred timber, Charcoal, and Cracked blocks, then turn damage history, contamination, corrosion, staining, abrasion, and material breakdown into portable surface behavior rather than a literal material sample.',
+        'Charred wood (shou sugi ban): wood surfaces deliberately charred into black alligator-skin char.',
       subject_treatment:
-        'Transform any prompt subject through Deep cracks (alligator skin): preserve identity and pose while letting forms age, stain, corrode, abrade, swell, chip, or collapse through edge profile, surface breakup, thickness, contact marks, and detail scale.',
-      color_and_tone:
-        "Use Deep Black as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the wooden surfaces are charred into black crackled alligator texture, brushed to reveal grain on edges. Default intensity is moderate; follow the prompt if it asks for light or heavy wear.",
+      color_and_tone: 'Deep charcoal black with silvery sheen and brown grain.',
       lighting_and_shadow:
-        'Let Matte/Satin define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Burnt Wood (Shou Sugi Ban) without hiding the prompt subject.',
+        'Low side light on the crackled char, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Charcoal through layer loss, residue buildup, chipped edges, stains, cracks, and uneven surface failure; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Crackled char, silvery sheen and exposed grain, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Cracked blocks as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Dark, fire by using neglect, time, moisture, heat, friction, and environmental pressure; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Dark, elegant, protective and primal, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Preserved, texture material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features:
-        'Charred timber; Deep cracks (alligator skin); Charcoal; Matte/Satin; Cracked blocks',
+        'alligator char crackle; silvery sheen; brushed grain; surface-level damage; structure intact',
       creative_brief:
-        "Route any subject through Burnt Wood (Shou Sugi Ban) as a transferable weathering-and-decay visual system while preserving the prompt's subject, action, and setting. Compose the dark armor of Shou Sugi Ban charred timber where fire has transformed the surface into a cracked landscape of alligator-skin carbon, rectangular fissures mapping the grain into blocks of preserved black. The char should feel deep enough to fall into, a matte darkness that protects the wood beneath by becoming its own shield. Capture the paradox of fire as preservative, destruction worn as durable beauty. Use Burnt Wood as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Burnt Wood (Shou Sugi Ban) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -178,27 +174,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Water Damage',
     category: '3. Weathering And Decay',
     negativePrompt:
-      'dry, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, dry, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Water Damage turns material failure into the main visual language: start from Ceiling stain, Swollen drywall, and Bubbling paint, then turn damage history, contamination, corrosion, staining, abrasion, and material breakdown into portable surface behavior rather than a literal material sample.',
+        'Water damage: tide lines, swelling, staining and bloom where water soaked the target.',
       subject_treatment:
-        'Transform any prompt subject through Ring edges: preserve identity and pose while letting forms age, stain, corrode, abrade, swell, chip, or collapse through edge profile, surface breakup, thickness, contact marks, and detail scale.',
-      color_and_tone:
-        "Use Yellow, Brown stain as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: tide-line stains, swelling, warping and mineral bloom where water soaked the surfaces. Default intensity is moderate; follow the prompt if it asks for light or heavy wear.",
+      color_and_tone: 'Brown tide lines, grey bloom and darkened wet zones.',
       lighting_and_shadow:
-        'Let Matte define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Water Damage without hiding the prompt subject.',
+        'Soft window light, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Swollen drywall through layer loss, residue buildup, chipped edges, stains, cracks, and uneven surface failure; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Warped swollen surfaces, tide lines and bloom, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Bubbling paint as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Gross, old by using neglect, time, moisture, heat, friction, and environmental pressure; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Melancholic, neglected, damp and quiet, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Ruined, leak material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Ceiling stain; Ring edges; Swollen drywall; Matte; Bubbling paint',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features:
+        'tide-line stains; swelling; mineral bloom; surface-level damage; structure intact',
       creative_brief:
-        "Route any subject through Water Damage as a transferable weathering-and-decay visual system while preserving the prompt's subject, action, and setting. Render the cartography of neglect where brown and yellow tide lines ring across ceilings like the growth rings of a sick tree, each band a record of water's patient invasion. The surface should feel swollen and soft, gypsum turned to paste beneath bubbling paint that maps the path of the leak above. Capture the strange watercolor of decay, a ceiling painting itself in stains. Use Water Damage as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Water Damage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -206,28 +202,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Scratched Metal',
     category: '3. Weathering And Decay',
     negativePrompt:
-      'mirror finish, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, mirror finish, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Scratched Metal turns material failure into the main visual language: start from Used machinery, Abrasive, and Random direction, then turn damage history, contamination, corrosion, staining, abrasion, and material breakdown into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Scratched metal: bright scratches and scuffs cutting through a metal finish.',
       subject_treatment:
-        'Transform any prompt subject through Random scratches: preserve identity and pose while letting forms age, stain, corrode, abrade, swell, chip, or collapse through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: bright scratches, scuffs and nicks cut through the metal surface along worn areas. Default intensity is moderate; follow the prompt if it asks for light or heavy wear.",
       color_and_tone:
-        "Use Steel as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Metal grey with bright silver scratch lines, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Caught in scratches define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Scratched Metal without hiding the prompt subject.',
+        'Hard light catching scratch lines, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Abrasive through layer loss, residue buildup, chipped edges, stains, cracks, and uneven surface failure; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Scratches, scuffs, nicks and dulled patches, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Random direction as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Industrial, hard by using neglect, time, moisture, heat, friction, and environmental pressure; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Used, battle-worn, tough and honest, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Worn, used material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features:
-        'Used machinery; Random scratches; Abrasive; Caught in scratches; Random direction',
+        'bright scratch lines; scuffs and nicks; dulled wear; surface-level damage; structure intact',
       creative_brief:
-        "Route any subject through Scratched Metal as a transferable weathering-and-decay visual system while preserving the prompt's subject, action, and setting. Capture the patina of use written in random scratches across steel, where each mark is a moment of contact frozen in silver on grey, light catching in the abrasive grooves like tiny rivers of reflection. The random direction of the scratches should tell the story of careless handling and honest work. Render the accumulating biography of a worked surface, wear as a form of record-keeping. Use Scratched Metal as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scratched Metal as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -235,27 +230,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Dusty Surface',
     category: '3. Weathering And Decay',
     negativePrompt:
-      'clean, polished, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, clean, polished, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Dusty Surface turns material failure into the main visual language: start from Attic find, Particulate, and Top surface only, then turn damage history, contamination, corrosion, staining, abrasion, and material breakdown into portable surface behavior rather than a literal material sample.',
+        'Dusty surface: a soft layer of settled dust dulling the target, thicker on top surfaces.',
       subject_treatment:
-        'Transform any prompt subject through Finger swipes: preserve identity and pose while letting forms age, stain, corrode, abrade, swell, chip, or collapse through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: a fine layer of settled dust dulls the target, thicker on upward faces, with finger swipes. Default intensity is moderate; follow the prompt if it asks for light or heavy wear.",
       color_and_tone:
-        "Use Grey layer as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Grey-beige dust over the object color, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Soft define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Dusty Surface without hiding the prompt subject.',
+        'Shafts of light revealing floating motes, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Particulate through layer loss, residue buildup, chipped edges, stains, cracks, and uneven surface failure; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Fine dust layer, finger swipes and motes, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Top surface only as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Quiet, time by using neglect, time, moisture, heat, friction, and environmental pressure; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Forgotten, quiet, still and timeless, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Old, forgotten material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Attic find; Finger swipes; Particulate; Soft; Top surface only',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features:
+        'settled dust layer; thicker on top faces; finger swipes; surface-level damage; structure intact',
       creative_brief:
-        "Route any subject through Dusty Surface as a transferable weathering-and-decay visual system while preserving the prompt's subject, action, and setting. Summon the quiet blanket of time where a fine grey particulate settles on forgotten surfaces like a slow snowfall of decay, disturbed only by the calligraphy of a passing finger that reveals the original surface beneath. The layer should feel soft and weightless, the visual equivalent of silence accumulating grain by grain. Capture the poetry of the undisturbed, time's slowest signature rendered in dust. Use Dusty Surface as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dusty Surface as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -263,27 +259,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Oil Stains',
     category: '3. Weathering And Decay',
     negativePrompt:
-      'clean concrete, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, clean concrete, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Oil Stains turns material failure into the main visual language: start from Garage floor, Wet spots, and Stained, then turn damage history, contamination, corrosion, staining, abrasion, and material breakdown into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Oil stains: dark glossy oil and grease stains soaking into the target.',
       subject_treatment:
-        'Transform any prompt subject through Puddles: preserve identity and pose while letting forms age, stain, corrode, abrade, swell, chip, or collapse through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: dark glossy oil and grease stains soak into the surfaces with iridescent edges. Default intensity is moderate; follow the prompt if it asks for light or heavy wear.",
       color_and_tone:
-        "Use Black, Rainbow sheen as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Black-brown stains with iridescent sheen, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Glossy spots define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Oil Stains without hiding the prompt subject.',
+        'Hard light for glossy spots, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Wet spots through layer loss, residue buildup, chipped edges, stains, cracks, and uneven surface failure; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Oil stains, grease smears and iridescent film, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Stained as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Industrial, dirty by using neglect, time, moisture, heat, friction, and environmental pressure; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Mechanical, gritty, working and dirty, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Dirty, mechanical material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Garage floor; Puddles; Wet spots; Glossy spots; Stained',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features:
+        'oil stains; grease smears; iridescent film; surface-level damage; structure intact',
       creative_brief:
-        "Route any subject through Oil Stains as a transferable weathering-and-decay visual system while preserving the prompt's subject, action, and setting. Render the accidental rainbows of oil spreading across concrete in dark puddles where thin-film interference paints iridescent maps in magenta, cyan, and gold across the garage floor. The surface should feel wet and heavy in the dark pools while the rainbow sheen floats like a ghost of color atop the grime. Capture the strange loveliness of the unwanted, the mechanics of spectrum blooming in neglect. Use Oil Stains as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oil Stains as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -291,28 +287,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sandpaper',
     category: '3. Weathering And Decay',
     negativePrompt:
-      'smooth, glossy, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, smooth, glossy, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Sandpaper turns material failure into the main visual language: start from Abrasive grit, Rough, sharp, and Uniform grit, then turn damage history, contamination, corrosion, staining, abrasion, and material breakdown into portable surface behavior rather than a literal material sample.',
+        'Sandpaper abrasion: surfaces covered in grit or scuffed by sanding into a matte scratched finish.',
       subject_treatment:
-        "Transform any prompt subject through Treat subjects through Sandpaper's signature cues: Uniform grit: preserve identity and pose while letting forms age, stain, corrode, abrade, swell, chip, or collapse through edge profile, surface breakup, thickness, contact marks, and detail scale.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the surface is gritty or sanded matte with swirl marks and exposed layers. Default intensity is moderate; follow the prompt if it asks for light or heavy wear.",
       color_and_tone:
-        "Use Red Oxide, Brown as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Muted, dusty tones with pale sanding marks, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Sparkle on grit define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Sandpaper without hiding the prompt subject.',
+        'Soft light showing matte grit, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Rough, sharp through layer loss, residue buildup, chipped edges, stains, cracks, and uneven surface failure; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Abrasive grit, sanding swirls and dust, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Uniform grit as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Rough, functional by using neglect, time, moisture, heat, friction, and environmental pressure; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Rough, workshop-worn and matte, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Industrial, dry material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       key_features:
-        "Abrasive grit; Treat subjects through Sandpaper's signature cues: Uniform grit; Rough, sharp; Sparkle on grit; Uniform grit",
+        'abrasive grit; sanding swirls; matte scuffed finish; surface-level damage; structure intact',
       creative_brief:
-        "Route any subject through Sandpaper as a transferable weathering-and-decay visual system while preserving the prompt's subject, action, and setting. Capture the uniform grit of sandpaper where sharp mineral particles bristle in ordered ranks across a red-brown field of abrasive purpose, each speck a microscopic tooth awaiting contact. The surface should feel hostile to the touch, a constellation of cutting edges that catches light as tiny sparks of silver on rust. Render the beauty of aggressive function, texture designed to erase other textures. Use Sandpaper as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sandpaper as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -320,27 +316,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mud (Cracked)',
     category: '3. Weathering And Decay',
     negativePrompt:
-      'wet mud, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, wet mud, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Mud (Cracked) turns material failure into the main visual language: start from Cracked dry mud, Dry clay, and Curled plates, then turn damage history, contamination, corrosion, staining, abrasion, and material breakdown into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Cracked mud: dried mud coating the target and splitting into polygon cracks.',
       subject_treatment:
-        'Transform any prompt subject through Puzzle cracks: preserve identity and pose while letting forms age, stain, corrode, abrade, swell, chip, or collapse through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: dried mud coats the target and splits into polygon cracks, curling at edges. Default intensity is moderate; follow the prompt if it asks for light or heavy wear.",
       color_and_tone:
-        "Use Tan, Brown as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Clay brown and ochre with dark crack lines, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Hard dry light define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Mud (Cracked) without hiding the prompt subject.',
+        'Harsh sun with crisp shadows in cracks, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Dry clay through layer loss, residue buildup, chipped edges, stains, cracks, and uneven surface failure; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Dried mud plates, polygon cracks and curls, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Curled plates as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Thirsty, hot by using neglect, time, moisture, heat, friction, and environmental pressure; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Parched, rough, earthy and harsh, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Arid, brittle material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Cracked dry mud; Puzzle cracks; Dry clay; Hard dry light; Curled plates',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features:
+        'dried mud polygon cracks; curled edges; parched clay; surface-level damage; structure intact',
       creative_brief:
-        "Route any subject through Mud (Cracked) as a transferable weathering-and-decay visual system while preserving the prompt's subject, action, and setting. Apply cracked-mud desiccation to the input: tan-brown puzzle plates, curled brittle edges, shrinking-clay gaps, and thin shadows under hard dry light. If ground, terrain, clay, skin-like surface, or object exists, fracture it directly; otherwise use drought geometry as surface pattern without forcing a desert landscape.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mud (Cracked) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -348,27 +344,271 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tar',
     category: '3. Weathering And Decay',
     negativePrompt:
-      'water, oil, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, water, oil, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Tar coating: thick black tar coating the target, glossy, dripping and sticky.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: thick black tar coats the target with glossy drips and stringy strands. Default intensity is moderate; follow the prompt if it asks for light or heavy wear.",
+      color_and_tone:
+        'Glossy black with brown translucency at thin edges, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Hard light for glossy highlights, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Viscous tar, drips, strands and bubbles, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Heavy, sticky, ominous and industrial, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features:
+        'glossy black tar; drips and strands; viscous coating; surface-level damage; structure intact',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tar as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP09-081',
+    name: 'Salt Crust',
+    displayName: 'Salt Crust',
+    styleAnchors: ['Salt Crust', 'salt crust efflorescence', 'white salt crystal crust'],
+    category: '3. Weathering And Decay',
+    domain: 'salt crust efflorescence',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Tar turns material failure into the main visual language: start from Sticky black goo, Viscous, and Slow flow, then turn damage history, contamination, corrosion, staining, abrasion, and material breakdown into portable surface behavior rather than a literal material sample.',
+        'Salt crust: white crystalline salt deposits crusting over the target, as if dried by sea spray.',
       subject_treatment:
-        'Transform any prompt subject through Thick drips: preserve identity and pose while letting forms age, stain, corrode, abrade, swell, chip, or collapse through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: white salt crystals crust on edges and recesses with efflorescence blooms. Default intensity is moderate; follow the prompt if it asks for light or heavy wear.",
       color_and_tone:
-        "Use Black as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'White salt over darker base colors, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Glossy define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Tar without hiding the prompt subject.',
+        'Bright coastal light sparkling on crystals, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Viscous through layer loss, residue buildup, chipped edges, stains, cracks, and uneven surface failure; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Crystalline salt crust, blooms and granules, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Slow flow as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Heavy, sticky by using neglect, time, moisture, heat, friction, and environmental pressure; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Coastal, dry, bleached and ancient, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Road work, trap material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Sticky black goo; Thick drips; Viscous; Glossy; Slow flow',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
       creative_brief:
-        "Route any subject through Tar as a transferable weathering-and-decay visual system while preserving the prompt's subject, action, and setting. Summon the slow gravity of thick tar oozing in glossy black drips of endless viscosity, a liquid that seems to forget it should flow but moves anyway, heavy with its own darkness. The surface should catch highlights like dark mirrors, depth without reflection, thick bodies catching light at their rounded crests. Capture the aesthetics of heaviness, the material that time forgot to finish. Use Tar as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Salt Crust as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'white salt crystal crust; efflorescence blooms; surface-level damage; structure intact',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-082',
+    name: 'Sun-Bleached Fade',
+    displayName: 'Sun-Bleached Fade',
+    styleAnchors: ['Sun-Bleached Fade', 'sun-bleached fading', 'sun-faded exposed faces'],
+    category: '3. Weathering And Decay',
+    domain: 'sun-bleached fading',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sun-bleached fade: colors washed out by years of sun, pale on exposed faces and richer in shadowed folds.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: exposed faces fade to pale washed tones while protected folds keep deeper color. Default intensity is moderate; follow the prompt if it asks for light or heavy wear.",
+      color_and_tone:
+        'Pastel-faded versions of the original colors, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Harsh overhead sun, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Chalky faded pigment and dried surfaces, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Nostalgic, dry, quiet and timeworn, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sun-Bleached Fade as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'sun-faded exposed faces; deeper colors in folds; chalky pigment; surface-level damage; structure intact',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-083',
+    name: 'Soot Staining',
+    displayName: 'Soot Staining',
+    styleAnchors: ['Soot Staining', 'soot and smoke staining', 'soot gradients from below'],
+    category: '3. Weathering And Decay',
+    domain: 'soot and smoke staining',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Soot staining: black smoke deposits blackening the target from below, as after a fire, without burning it away.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: black soot stains rise from lower edges and gather in crevices, surfaces intact. Default intensity is moderate; follow the prompt if it asks for light or heavy wear.",
+      color_and_tone:
+        'Black soot gradients over original colors, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Dim light with smoky warmth, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Soft soot deposits, smudges and fingerprints, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Ominous, grim, aftermath and heavy, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soot Staining as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'soot gradients from below; smudges; intact surfaces; surface-level damage; structure intact',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-084',
+    name: 'Woodworm Rot',
+    displayName: 'Woodworm Rot',
+    styleAnchors: ['Woodworm Rot', 'woodworm and dry rot', 'woodworm boreholes'],
+    category: '3. Weathering And Decay',
+    domain: 'woodworm and dry rot',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Woodworm rot: wood riddled with tiny boreholes and soft dry-rot cracking.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the wooden target is riddled with small boreholes and cubic dry-rot cracks. Default intensity is moderate; follow the prompt if it asks for light or heavy wear.",
+      color_and_tone:
+        'Grey-brown wood with dark holes and pale dust, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Soft side light showing holes, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Boreholes, frass dust and cubic rot cracks, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Decrepit, old, fragile and eerie, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Woodworm Rot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'woodworm boreholes; cubic dry rot; frass dust; surface-level damage; structure intact',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-085',
+    name: 'Acid Etching',
+    displayName: 'Acid Etching',
+    styleAnchors: ['Acid Etching', 'acid-etched surfaces', 'acid pits'],
+    category: '3. Weathering And Decay',
+    domain: 'acid-etched surfaces',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Acid etching: surfaces eaten by acid into pitted, frosted and bubbled zones with bright residue edges.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: acid pits, frosted zones and bubbled corrosion eat into the surfaces in splash patterns. Default intensity is moderate; follow the prompt if it asks for light or heavy wear.",
+      color_and_tone:
+        'Frosted pale zones and yellow-green residue, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Cold light on pitted surfaces, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Pitted, frosted and bubbled corrosion, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Toxic, alarming, chemical and harsh, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Acid Etching as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'acid pits; frosted zones; splash patterns; residue edges; surface-level damage; structure intact',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-086',
+    name: 'Lichen Crust',
+    displayName: 'Lichen Crust',
+    styleAnchors: ['Lichen Crust', 'lichen crust growth', 'lichen rosettes'],
+    category: '3. Weathering And Decay',
+    domain: 'lichen crust growth',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Lichen crust: flat crusty lichen rosettes in orange, yellow and grey growing over the target.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: flat lichen rosettes and crusts spread over exposed surfaces in circular patches. Default intensity is moderate; follow the prompt if it asks for light or heavy wear.",
+      color_and_tone:
+        'Orange, chartreuse and grey-green lichen, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Soft overcast light, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Crusty lichen rosettes and powdery patches, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Ancient, slow, quiet and alive, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lichen Crust as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'lichen rosettes; circular crust patches; orange and chartreuse; surface-level damage; structure intact',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-087',
+    name: 'Ash Fall Coating',
+    displayName: 'Ash Fall Coating',
+    styleAnchors: ['Ash Fall Coating', 'volcanic ash coating', 'grey ash drifts'],
+    category: '3. Weathering And Decay',
+    domain: 'volcanic ash coating',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ash fall coating: fine grey volcanic ash settled over the target, softening edges.',
+      subject_treatment:
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: fine grey ash settles on every upward face, softening edges and filling crevices. Default intensity is moderate; follow the prompt if it asks for light or heavy wear.",
+      color_and_tone:
+        'Monochrome grey ash over faint original colors, kept on the material while the rest of the scene keeps its own palette.',
+      lighting_and_shadow:
+        'Diffuse hazy light, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material:
+        'Fine powdery ash drifts and settled layers, at a believable physical scale relative to the target.',
+      camera_and_composition:
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
+      atmosphere_and_mood:
+        'Silent, eerie, suspended and bleak, carried by the material itself rather than by added props.',
+      rendering_and_quality:
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ash Fall Coating as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'grey ash drifts; softened edges; monochrome; surface-level damage; structure intact',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];
