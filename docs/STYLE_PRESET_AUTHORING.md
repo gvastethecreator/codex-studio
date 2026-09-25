@@ -79,6 +79,15 @@ reviewed batch, pass a JSON object mapping each preset ID to its latest complete
 job ID with `--reviewed-replacements-file=<path> --parallel=4`. A job in
 `needs_review` must be inspected before any new submission.
 
+A card set is three cards per preset, each from a different brief: the primary
+card uses `card-briefs.json`, and `variants/<id>-01` and `-02` use the two entries
+in `scripts/style-curation/card-brief-variants.json`. Generate a set with
+`--card-set` (ChatGPT only; not combinable with replacement, refresh, uncertain-job
+or variant-slot flags). Each slot keeps its own job history and lock. A slot is
+submitted again only when its composed prompt differs from the latest job for that
+slot, so rewriting a brief is the review step that allows a new card. The card it
+replaces is archived under `.tmp/style-default-card-archive/`.
+
 After a human reviews an uncertain ChatGPT result, a single re-request is allowed
 only when the latest ChatGPT card job is still `needs_review` and has no associated
 asset. Pass a JSON object mapping each reviewed preset ID to that exact job ID with

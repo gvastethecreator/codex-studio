@@ -26,6 +26,8 @@ categories:
       - pack_01/SP01-079.yaml
       - pack_01/SP01-080.yaml
       - pack_01/SP01-081.yaml
+      - pack_01/SP01-088.yaml
+      - pack_01/SP01-089.yaml
   - id: lighting-techniques
     name: 2. Lighting Techniques
     presetRefs:
@@ -132,6 +134,8 @@ presetRefs:
   - pack_01/SP01-079.yaml
   - pack_01/SP01-080.yaml
   - pack_01/SP01-081.yaml
+  - pack_01/SP01-088.yaml
+  - pack_01/SP01-089.yaml
   - pack_01/SP01-031.yaml
   - pack_01/SP01-032.yaml
   - pack_01/SP01-033.yaml

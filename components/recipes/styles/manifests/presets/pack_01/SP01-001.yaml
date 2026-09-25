@@ -3,7 +3,7 @@ id: SP01-001
 packId: pack_01
 name: Studio Headshot
 category: 1. Portrait And Studio
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,65 +12,20 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: >-
-    Studio Headshot acts as a transferable photographic style router: begin from High-end
-    professional studio headshot lighting grammar, clean corporate polish, controlled realism,
-    studio subject hierarchy, controlled portrait optics, believable retouching, and intentional
-    backdrop behavior, and portrait and studio photography system built from lens discipline,
-    subject hierarchy, controlled retouching, and believable surface detail, then apply the
-    photographic behavior to prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Tack-sharp focal plane on primary details, precise edge
-    definition, natural proportions; preserve prompt identity while using focal priority, flattering
-    or deliberately institutional distance, surface realism, and edge control without requiring a
-    human face, keeping the original subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with True-to-life neutral material tones, balanced color grading, subtle gradients, solid
-    seamless grey depth field; grade neutrals, skinlike or material tones, backdrop color, cosmetic
-    warmth, and controlled contrast as photographic capture decisions, with value separation and
-    white balance choices that feel captured in-camera rather than painted over.
-  lighting_and_shadow: >-
-    Use Studio strobe lighting, softbox illumination, classic butterfly-light pattern, controlled
-    specular highlights; make key, fill, rim, catchlight, background falloff, and shadow shape
-    visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and
-    source motivation.
-  texture_and_material: >-
-    Render Hyper-realistic surface texture, fine micro-detail, crisp fabric or material definition;
-    retain pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a
-    believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide
-    the prompt content.
-  camera_and_composition: >-
-    Compose through Shot on 85mm or 105mm portrait lens, flat field of view, undistorted
-    perspective, central composition; use portrait lens compression, central authority, intimate
-    framing distance, frontal ID geometry, or editorial negative space without forcing one sitter,
-    with lens distance, depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Professional, confident, approachable, clean, formal; derive mood from proximity,
-    pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the
-    preset changes interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with 8k resolution, commercial photography polish, flawless retouching, photorealistic;
-    finish as real photography with clean optics, plausible retouching, readable focal hierarchy,
-    and no painterly or CGI substitution, high-resolution photographic detail, and disciplined
-    denoise without losing natural grain where the preset needs it.
-  creative_brief: >-
-    Apply Studio Headshot as a photographic preset over prompt X: preserve the user's requested
-    subject, then route High-end professional studio headshot lighting grammar, clean corporate
-    polish, controlled realism, True-to-life neutral material tones, balanced color grading, subtle
-    gradients, solid seamless grey depth field, Studio strobe lighting, softbox illumination,
-    classic butterfly-light pattern, controlled specular highlights, Hyper-realistic surface
-    texture, fine micro-detail, crisp fabric or material definition, and Shot on 85mm or 105mm
-    portrait lens, flat field of view, undistorted perspective, central composition through optics,
-    exposure, palette, surface response, timing, and finish without requiring the card image's
-    original subject.
-  key_features: >-
-    High-end professional studio headshot lighting grammar, clean corporate polish, controlled
-    realism; studio subject hierarchy, controlled portrait optics, believable retouching, and
-    intentional backdrop behavior; True-to-life neutral material tones, balanced color grading,
-    subtle gradients, solid seamless grey depth field; Studio strobe lighting, softbox illumination,
-    classic butterfly-light pattern, controlled specular highlights; Shot on 85mm or 105mm portrait
-    lens, flat field of view, undistorted perspective, central composition
+  aesthetic: 'Premium studio headshot photography: one large softbox key, controlled fill, and a seamless backdrop that isolates the sitter with precise, trustworthy polish.'
+  subject_treatment: Crop any subject to head and shoulders with eyes on the upper third; posture is upright and composed, expression relaxed but deliberate, wardrobe and hair kept neat enough to read as intentional.
+  color_and_tone: Neutral mid-grey or charcoal seamless, accurate skin tones, restrained saturation, and a gentle vignette from backdrop falloff.
+  lighting_and_shadow: Large soft key at 30–45 degrees above eye level, fill 1–1.5 stops under, a thin hair light separating the head from the backdrop, and twin clean catchlights.
+  texture_and_material: Real skin pores and fine hair left intact, light blemish cleanup only, fabric weave crisp at the collar.
+  camera_and_composition: 85–105 mm portrait lens at f/5.6–8, eye-level camera, tight vertical crop with a little headroom and no environmental clutter.
+  atmosphere_and_mood: Confident, calm, credible, and quietly approachable.
+  rendering_and_quality: Tack-sharp eyes, smooth tonal gradations on the backdrop, and retouching that stays invisible at full size.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Studio Headshot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: large softbox key; hair-light separation; seamless grey backdrop; invisible retouching; eyes on the upper third
 avoidRules:
+  - generic stock-photo face
+  - celebrity likeness
+  - same model as other presets
   - illustration
   - painting
   - drawing
@@ -93,14 +48,16 @@ avoidRules:
   - over-smoothed plastic retouching
   - distorted anatomy
   - generic beauty filter
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-001.webp
 attributes:
-  negativePrompt: >-
-    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low
-    resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render,
-    readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic
-    beauty filter
+  negativePrompt: generic stock-photo face, celebrity likeness, same model as other presets, illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

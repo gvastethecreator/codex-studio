@@ -3,7 +3,7 @@ id: SP01-051
 packId: pack_01
 name: Fashion Editorial
 category: 1. Portrait And Studio
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,47 +12,20 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: >-
-    Fashion Editorial acts as a transferable photographic style router: begin from Magazine spread,
-    Styling-first focus, and portrait and studio photography system built from lens discipline,
-    subject hierarchy, controlled retouching, and believable surface detail, then apply the
-    photographic behavior to prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Dynamic editorial geometry; preserve prompt identity while
-    using focal priority, flattering or deliberately institutional distance, surface realism, and
-    edge control without requiring a human face, keeping the original subject, pose, species,
-    object, or environment legible.
-  color_and_tone: >-
-    Grade with Color graded, trendy; grade neutrals, skinlike or material tones, backdrop color,
-    cosmetic warmth, and controlled contrast as photographic capture decisions, with value
-    separation and white balance choices that feel captured in-camera rather than painted over.
-  lighting_and_shadow: >-
-    Use Creative studio; make key, fill, rim, catchlight, background falloff, and shadow shape
-    visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and
-    source motivation.
-  texture_and_material: >-
-    Render Fabriclike surface detail; retain pores, fabric, hair, props, paper, backdrop sweep, and
-    small surface imperfections at a believable photographic scale, avoiding both waxy smoothing and
-    noisy texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Elongated limbs; use portrait lens compression, central authority, intimate
-    framing distance, frontal ID geometry, or editorial negative space without forcing one sitter,
-    with lens distance, depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Cool, expensive; derive mood from proximity, pose pressure, institutional polish,
-    intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without
-    demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Vogue, high end; finish as real photography with clean optics, plausible retouching,
-    readable focal hierarchy, and no painterly or CGI substitution, high-resolution photographic
-    detail, and disciplined denoise without losing natural grain where the preset needs it.
-  key_features: Magazine spread; Styling-first focus; Color graded, trendy; Creative studio; Elongated limbs
-  creative_brief: >-
-    Apply Fashion Editorial as a photographic preset over prompt X: preserve the user's requested
-    subject, then route Magazine spread, Color graded, trendy, Creative studio, Fabriclike surface
-    detail, and Elongated limbs through optics, exposure, palette, surface response, timing, and
-    finish without requiring the card image's original subject.
+  aesthetic: 'Fashion editorial photography: styling-first images built as a magazine story, with graphic poses, bold silhouettes, and concept-driven sets.'
+  subject_treatment: Pose the subject for silhouette and garment — elongated lines, angular limbs, sculptural stances — letting clothing shape drive the image.
+  color_and_tone: 'Editorial grade chosen per story: tonal monochrome, a single bold color block, or muted desaturation with one accent.'
+  lighting_and_shadow: Crisp studio strobe or hard sun creating graphic shadows, sometimes a colored gel as a design element.
+  texture_and_material: Fabric drape, structured tailoring, leather, sheer layers, and statement accessories rendered with precision.
+  camera_and_composition: Full-length or three-quarter framing, graphic negative space, set pieces or color planes used as composition.
+  atmosphere_and_mood: Aloof, stylish, conceptual, and assertive.
+  rendering_and_quality: High-end editorial finish, crisp garment detail, controlled skin retouch.
+  key_features: silhouette-first posing; concept set; graphic hard light; color-block backdrop; garment precision
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fashion Editorial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - generic stock-photo face
+  - celebrity likeness
+  - same model as other presets
   - boring
   - plain
   - illustration
@@ -72,13 +45,17 @@ avoidRules:
   - over-smoothed plastic retouching
   - distorted anatomy
   - generic beauty filter
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-051.webp
 attributes:
-  negativePrompt: >-
-    boring, plain, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic
-    CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin,
-    over-smoothed plastic retouching, distorted anatomy, generic beauty filter
+  negativePrompt: generic stock-photo face, celebrity likeness, same model as other presets, boring, plain, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

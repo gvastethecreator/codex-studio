@@ -3,7 +3,7 @@ id: SP01-003
 packId: pack_01
 name: Environmental Portrait
 category: 1. Portrait And Studio
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,63 +12,20 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: >-
-    Environmental Portrait acts as a transferable photographic style router: begin from Editorial
-    environmental-portrait grammar, subject integrated with meaningful context, studio subject
-    hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior,
-    and portrait and studio photography system built from lens discipline, subject hierarchy,
-    controlled retouching, and believable surface detail, then apply the photographic behavior to
-    prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Primary subject integrated with surroundings, sharp details
-    across the frame, storytelling composition; preserve prompt identity while using focal priority,
-    flattering or deliberately institutional distance, surface realism, and edge control without
-    requiring a human face, keeping the original subject, pose, species, object, or environment
-    legible.
-  color_and_tone: >-
-    Grade with Natural and balanced color palette, rich environmental tones, true-to-life colors;
-    grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled
-    contrast as photographic capture decisions, with value separation and white balance choices that
-    feel captured in-camera rather than painted over.
-  lighting_and_shadow: >-
-    Use Mixed ambient lighting with subtle flash fill, balanced exposure between subject and depth
-    field; make key, fill, rim, catchlight, background falloff, and shadow shape visibly drive the
-    style, preserving believable exposure, shadow density, highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Sharp contextual detail, realistic textures, material clues that support narrative;
-    retain pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a
-    believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide
-    the prompt content.
-  camera_and_composition: >-
-    Compose through Wide-angle lens (24mm or 35mm), deep depth of field, contextual framing; use
-    portrait lens compression, central authority, intimate framing distance, frontal ID geometry, or
-    editorial negative space without forcing one sitter, with lens distance, depth, timing, and
-    focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Informative, personal, narrative-driven, authentic; derive mood from proximity,
-    pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the
-    preset changes interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Editorial magazine quality, high resolution, crisp details; finish as real
-    photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly
-    or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing
-    natural grain where the preset needs it.
-  creative_brief: >-
-    Apply Environmental Portrait as a photographic preset over prompt X: preserve the user's
-    requested subject, then route Editorial environmental-portrait grammar, subject integrated with
-    meaningful context, Natural and balanced color palette, rich environmental tones, true-to-life
-    colors, Mixed ambient lighting with subtle flash fill, balanced exposure between subject and
-    depth field, Sharp contextual detail, realistic textures, material clues that support narrative,
-    and Wide-angle lens (24mm or 35mm), deep depth of field, contextual framing through optics,
-    exposure, palette, surface response, timing, and finish without requiring the card image's
-    original subject.
-  key_features: >-
-    Editorial environmental-portrait grammar, subject integrated with meaningful context; studio
-    subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop
-    behavior; Natural and balanced color palette, rich environmental tones, true-to-life colors;
-    Mixed ambient lighting with subtle flash fill, balanced exposure between subject and depth
-    field; Wide-angle lens (24mm or 35mm), deep depth of field, contextual framing
+  aesthetic: 'Environmental portrait: the sitter placed inside the space that explains them, posed with intent, the room or landscape carrying half the story.'
+  subject_treatment: Subject faces or acknowledges the camera from within their working or living space, surrounded by tools, objects, or terrain that reveal who they are.
+  color_and_tone: Naturalistic palette taken from the location, gentle contrast, warm practical sources balanced with window or sky light.
+  lighting_and_shadow: Ambient location light shaped with one subtle added source on the face; the environment stays readable in the shadows.
+  texture_and_material: Rich tactile detail in the surroundings — worn wood, stone, metal, fabric, dust — rendered as real materials.
+  camera_and_composition: 24–35 mm, subject at one third, deep depth of field so the environment stays legible, strong leading lines toward the sitter.
+  atmosphere_and_mood: Grounded, dignified, and narrative.
+  rendering_and_quality: Editorial magazine finish with believable exposure across subject and space.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Environmental Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: sitter inside their world; deep depth of field; environment as narrative; subtle added face light; leading lines
 avoidRules:
+  - generic stock-photo face
+  - celebrity likeness
+  - same model as other presets
   - illustration
   - painting
   - drawing
@@ -91,14 +48,16 @@ avoidRules:
   - over-smoothed plastic retouching
   - distorted anatomy
   - generic beauty filter
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-003.webp
 attributes:
-  negativePrompt: >-
-    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low
-    resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render,
-    readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic
-    beauty filter
+  negativePrompt: generic stock-photo face, celebrity likeness, same model as other presets, illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

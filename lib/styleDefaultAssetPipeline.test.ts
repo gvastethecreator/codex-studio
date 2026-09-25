@@ -210,5 +210,18 @@ describe('styleDefaultAssetPipeline', () => {
         metadata: { assetRole: 'style-preset-default' },
       },
     });
+
+    const variant = createStyleDefaultJobRequest({
+      workspaceId: 'workspace-1',
+      prompt: 'portable visual style, second sample',
+      providerId: 'chatgpt',
+      presetId: 'SP22-001',
+      cardSlot: 2,
+    });
+    expect(variant.sourceSpec).toMatchObject({
+      id: 'style-preset-card-chatgpt-sp22-001-02',
+      stylePresetId: 'SP22-001',
+      metadata: { assetRole: 'style-preset-card-variant', styleCardSlot: 2 },
+    });
   });
 });

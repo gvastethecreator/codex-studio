@@ -3,7 +3,7 @@ id: SP01-006
 packId: pack_01
 name: Selfie Style
 category: 1. Portrait And Studio
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,61 +12,20 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: >-
-    Selfie Style acts as a transferable photographic style router: begin from Smartphone
-    front-facing camera selfie, social media aesthetic, casual and spontaneous, studio subject
-    hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior,
-    and portrait and studio photography system built from lens discipline, subject hierarchy,
-    controlled retouching, and believable surface detail, then apply the photographic behavior to
-    prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Wide-angle near-camera distortion, informal proximity, primary
-    forms slightly exaggerated by lens distance; preserve prompt identity while using focal
-    priority, flattering or deliberately institutional distance, surface realism, and edge control
-    without requiring a human face, keeping the original subject, pose, species, object, or
-    environment legible.
-  color_and_tone: >-
-    Grade with Smartphone image processing, vibrant colors, slightly over-sharpened; grade neutrals,
-    skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast as
-    photographic capture decisions, with value separation and white balance choices that feel
-    captured in-camera rather than painted over.
-  lighting_and_shadow: >-
-    Use Flat front-facing light, screen glow, or harsh direct sunlight; make key, fill, rim,
-    catchlight, background falloff, and shadow shape visibly drive the style, preserving believable
-    exposure, shadow density, highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Digital smoothing algorithms, slight digital noise in shadows; retain pores, fabric,
-    hair, props, paper, backdrop sweep, and small surface imperfections at a believable photographic
-    scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Extreme wide-angle perspective, high or low angle, casual framing; use portrait
-    lens compression, central authority, intimate framing distance, frontal ID geometry, or
-    editorial negative space without forcing one sitter, with lens distance, depth, timing, and
-    focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Fun, personal, candid, relatable, modern; derive mood from proximity, pose
-    pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the
-    preset changes interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Social media quality, realistic smartphone photo look; finish as real photography
-    with clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI
-    substitution, high-resolution photographic detail, and disciplined denoise without losing
-    natural grain where the preset needs it.
-  creative_brief: >-
-    Apply Selfie Style as a photographic preset over prompt X: preserve the user's requested
-    subject, then route Smartphone front-facing camera selfie, social media aesthetic, casual and
-    spontaneous, Smartphone image processing, vibrant colors, slightly over-sharpened, Flat
-    front-facing light, screen glow, or harsh direct sunlight, Digital smoothing algorithms, slight
-    digital noise in shadows, and Extreme wide-angle perspective, high or low angle, casual framing
-    through optics, exposure, palette, surface response, timing, and finish without requiring the
-    card image's original subject.
-  key_features: >-
-    Smartphone front-facing camera selfie, social media aesthetic, casual and spontaneous; studio
-    subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop
-    behavior; Smartphone image processing, vibrant colors, slightly over-sharpened; Flat
-    front-facing light, screen glow, or harsh direct sunlight; Extreme wide-angle perspective, high
-    or low angle, casual framing
+  aesthetic: 'Front-camera smartphone selfie: arm-length wide lens, casual social framing, computational processing, and the charm of an unplanned moment.'
+  subject_treatment: Subject holds the phone (arm or shoulder visible), face slightly distorted by the wide lens, expression playful, tired, or mid-reaction.
+  color_and_tone: 'Phone HDR look: lifted shadows, slightly punchy saturation, warm skin smoothing, bright sky retained.'
+  lighting_and_shadow: Whatever light is available — window, screen glow, flash-less night, harsh sun — with the flat evenness of HDR merging.
+  texture_and_material: Mild computational smoothing and sharpening halos, small noise in shadows, real everyday clothing.
+  camera_and_composition: Wide 24–26 mm equivalent from arm length, face large and off-center, background context partially cut, occasional tilt.
+  atmosphere_and_mood: Spontaneous, personal, and shareable.
+  rendering_and_quality: Convincing phone image, not a professional portrait; no studio polish.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Selfie Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: arm-length wide lens; phone HDR; computational smoothing; tilted casual framing; visible arm
 avoidRules:
+  - generic stock-photo face
+  - celebrity likeness
+  - same model as other presets
   - illustration
   - painting
   - drawing
@@ -89,14 +48,16 @@ avoidRules:
   - over-smoothed plastic retouching
   - distorted anatomy
   - generic beauty filter
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-006.webp
 attributes:
-  negativePrompt: >-
-    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low
-    resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render,
-    readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic
-    beauty filter
+  negativePrompt: generic stock-photo face, celebrity likeness, same model as other presets, illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

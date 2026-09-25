@@ -3,7 +3,7 @@ id: SP01-010
 packId: pack_01
 name: Low Key Portrait
 category: 1. Portrait And Studio
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,60 +12,20 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: >-
-    Low Key Portrait acts as a transferable photographic style router: begin from Low key moody
-    portraiture, dark and dramatic photography, studio subject hierarchy, controlled portrait
-    optics, believable retouching, and intentional backdrop behavior, and portrait and studio
-    photography system built from lens discipline, subject hierarchy, controlled retouching, and
-    believable surface detail, then apply the photographic behavior to prompt X instead of
-    recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Primary details partially hidden in deep shadow, strong
-    emphasis on form and shape; preserve prompt identity while using focal priority, flattering or
-    deliberately institutional distance, surface realism, and edge control without requiring a human
-    face, keeping the original subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with Deep blacks, rich dark tones, minimal color saturation, pure black depth field; grade
-    neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast
-    as photographic capture decisions, with value separation and white balance choices that feel
-    captured in-camera rather than painted over.
-  lighting_and_shadow: >-
-    Use Single source rim light or side light, harsh shadows, high contrast chiaroscuro; make key,
-    fill, rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving
-    believable exposure, shadow density, highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Shadow noise, highlighted textures on the lit edge of the subject; retain pores, fabric,
-    hair, props, paper, backdrop sweep, and small surface imperfections at a believable photographic
-    scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Obscured features, tight framing, focus on the interplay of light and dark; use
-    portrait lens compression, central authority, intimate framing distance, frontal ID geometry, or
-    editorial negative space without forcing one sitter, with lens distance, depth, timing, and
-    focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Mysterious, intense, serious, cinematic, brooding; derive mood from proximity,
-    pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the
-    preset changes interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Dramatic fine art photography, deep rich blacks, high resolution; finish as real
-    photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly
-    or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing
-    natural grain where the preset needs it.
-  creative_brief: >-
-    Apply Low Key Portrait as a photographic preset over prompt X: preserve the user's requested
-    subject, then route Low key moody portraiture, dark and dramatic photography, Deep blacks, rich
-    dark tones, minimal color saturation, pure black depth field, Single source rim light or side
-    light, harsh shadows, high contrast chiaroscuro, Shadow noise, highlighted textures on the lit
-    edge of the subject, and Obscured features, tight framing, focus on the interplay of light and
-    dark through optics, exposure, palette, surface response, timing, and finish without requiring
-    the card image's original subject.
-  key_features: >-
-    Low key moody portraiture, dark and dramatic photography; studio subject hierarchy, controlled
-    portrait optics, believable retouching, and intentional backdrop behavior; Deep blacks, rich
-    dark tones, minimal color saturation, pure black depth field; Single source rim light or side
-    light, harsh shadows, high contrast chiaroscuro; Obscured features, tight framing, focus on the
-    interplay of light and dark
+  aesthetic: 'Low-key portraiture: a figure carved out of darkness by one narrow source, most of the frame surrendered to deep shadow.'
+  subject_treatment: Reveal only the planes that matter — one side of the face, a hand, an edge of clothing — letting the rest fall into black.
+  color_and_tone: Deep blacks and rich dark tones, muted desaturated color, highlights restrained to a small area.
+  lighting_and_shadow: Single hard or gridded source from the side or above, no fill, sharp falloff into black background.
+  texture_and_material: Skin texture, stubble, wrinkles and fabric grain emphasized by raking light.
+  camera_and_composition: Tight crop, subject off-center, large black negative space, eye-level or slightly below.
+  atmosphere_and_mood: Brooding, secretive, grave, and intense.
+  rendering_and_quality: Clean noise-free blacks with detailed highlights; no muddy gray shadows.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Low Key Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: single gridded source; no fill; black negative space; raking texture; restrained highlights
 avoidRules:
+  - generic stock-photo face
+  - celebrity likeness
+  - same model as other presets
   - bright
   - white
   - day
@@ -86,13 +46,17 @@ avoidRules:
   - over-smoothed plastic retouching
   - distorted anatomy
   - generic beauty filter
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-010.webp
 attributes:
-  negativePrompt: >-
-    bright, white, day, illustration, painting, drawing, 3d render, cartoon, anime, sketch,
-    synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin
-    skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter
+  negativePrompt: generic stock-photo face, celebrity likeness, same model as other presets, bright, white, day, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

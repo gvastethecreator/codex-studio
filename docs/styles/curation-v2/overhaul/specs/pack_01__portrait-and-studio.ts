@@ -1,0 +1,546 @@
+import type { Spec } from '../tools/apply';
+
+const AVOID = ['generic stock-photo face', 'celebrity likeness', 'same model as other presets'];
+
+const spec: Spec = {
+  pack: 'pack_01',
+  category: '1. Portrait And Studio',
+  updates: {
+    'SP01-001': {
+      dna: {
+        aesthetic:
+          'Premium studio headshot photography: one large softbox key, controlled fill, and a seamless backdrop that isolates the sitter with precise, trustworthy polish.',
+        subject_treatment:
+          'Crop any subject to head and shoulders with eyes on the upper third; posture is upright and composed, expression relaxed but deliberate, wardrobe and hair kept neat enough to read as intentional.',
+        color_and_tone:
+          'Neutral mid-grey or charcoal seamless, accurate skin tones, restrained saturation, and a gentle vignette from backdrop falloff.',
+        lighting_and_shadow:
+          'Large soft key at 30–45 degrees above eye level, fill 1–1.5 stops under, a thin hair light separating the head from the backdrop, and twin clean catchlights.',
+        texture_and_material:
+          'Real skin pores and fine hair left intact, light blemish cleanup only, fabric weave crisp at the collar.',
+        camera_and_composition:
+          '85–105 mm portrait lens at f/5.6–8, eye-level camera, tight vertical crop with a little headroom and no environmental clutter.',
+        atmosphere_and_mood: 'Confident, calm, credible, and quietly approachable.',
+        rendering_and_quality:
+          'Tack-sharp eyes, smooth tonal gradations on the backdrop, and retouching that stays invisible at full size.',
+        key_features:
+          'large softbox key; hair-light separation; seamless grey backdrop; invisible retouching; eyes on the upper third',
+      },
+      avoid: AVOID,
+      briefs: [
+        'Photorealistic studio headshot of a silver-haired adult falconer in a waxed-canvas jacket, a hooded peregrine perched on the thick leather glove raised beside her face; both look directly at the lens. Charcoal seamless backdrop, large softbox key, thin hair light, tack-sharp eyes of woman and bird. No text or logo.',
+        'Photorealistic studio headshot of a broad-shouldered adult Samoan opera baritone in a tailored midnight tuxedo, chin slightly lifted, mid-breath before an aria. Neutral grey seamless, soft key from camera left, crisp bow tie texture, real skin detail. No text or logo.',
+        'Photorealistic studio headshot of an adult armorer with a shaved head and soot-dark forearms, wearing a clean linen smock over a quilted gambeson, holding a small polished helmet visor at shoulder height. Grey seamless, softbox key, hair-light rim on the scalp. No text or logo.',
+      ],
+    },
+    'SP01-002': {
+      dna: {
+        aesthetic:
+          'Candid street portraiture: a stranger caught in a genuine moment in public space, available light only, the city present as texture rather than backdrop.',
+        subject_treatment:
+          'Keep the subject unposed and mid-action — turning, laughing, pausing, reacting — with gaze either off-lens or a brief startled glance into it.',
+        color_and_tone:
+          'Natural urban color with slightly lifted shadows, mixed daylight and practical tints, true skin under real conditions.',
+        lighting_and_shadow:
+          'Whatever the street gives: hard sun, open shade, shop spill, or overcast; direction is honest and shadows fall where they fall.',
+        texture_and_material:
+          'Real clothing wear, weathered surfaces, light film-like grain, slight motion in background passersby.',
+        camera_and_composition:
+          '28–50 mm at chest height, off-center subject, foreground elements partially intruding, layered depth with other people or street furniture.',
+        atmosphere_and_mood: 'Immediate, human, unguarded, and a little stolen.',
+        rendering_and_quality:
+          'Documentary sharpness on the face with natural lens falloff; no studio polish or retouching.',
+        key_features:
+          'unposed mid-action moment; available light; foreground intrusion; layered street depth; honest skin',
+      },
+      avoid: AVOID,
+      briefs: [
+        "Candid street photograph of an elderly adult puppeteer on a rain-wet market street, laughing as her hand-carved raven marionette tangles in a stranger's umbrella; shoppers blur past in the foreground. Overcast light, 35 mm, chest-height framing. No text, signage or logo.",
+        'Candid street portrait of an adult delivery cyclist in a patched rain cape stopped at a crossing, glancing into the lens with surprise while balancing a stack of bakery boxes; hard low sun from a side street rakes across his face. 28 mm, off-center. No readable signage or logo.',
+        'Candid photograph of a tall adult street magician in a moth-eaten velvet coat mid-trick, a dove escaping his sleeve as children and commuters react around him under a train bridge. Mixed daylight and sodium spill, layered crowd depth. No text or logo.',
+      ],
+    },
+    'SP01-003': {
+      dna: {
+        aesthetic:
+          'Environmental portrait: the sitter placed inside the space that explains them, posed with intent, the room or landscape carrying half the story.',
+        subject_treatment:
+          'Subject faces or acknowledges the camera from within their working or living space, surrounded by tools, objects, or terrain that reveal who they are.',
+        color_and_tone:
+          'Naturalistic palette taken from the location, gentle contrast, warm practical sources balanced with window or sky light.',
+        lighting_and_shadow:
+          'Ambient location light shaped with one subtle added source on the face; the environment stays readable in the shadows.',
+        texture_and_material:
+          'Rich tactile detail in the surroundings — worn wood, stone, metal, fabric, dust — rendered as real materials.',
+        camera_and_composition:
+          '24–35 mm, subject at one third, deep depth of field so the environment stays legible, strong leading lines toward the sitter.',
+        atmosphere_and_mood: 'Grounded, dignified, and narrative.',
+        rendering_and_quality:
+          'Editorial magazine finish with believable exposure across subject and space.',
+        key_features:
+          'sitter inside their world; deep depth of field; environment as narrative; subtle added face light; leading lines',
+      },
+      avoid: AVOID,
+      briefs: [
+        'Environmental portrait of an adult bell-founder standing inside a cavernous foundry beside a freshly cast bronze bell taller than himself, leather apron scorched, sand molds and chain hoists receding into smoky daylight. 24 mm, deep focus, subject at left third. No text or logo.',
+        'Environmental portrait of an adult taxidermist in a cluttered attic workshop, seated among glass-eyed owls, a half-finished fox and drawers of feathers, looking calmly at the lens as dust hangs in a single window beam. No text or logo.',
+        'Environmental portrait of an adult Mongolian eagle hunter on a wind-scoured ridge at dawn, golden eagle on her arm, her horse and the vast frozen valley behind her. 28 mm, deep focus, strong horizon line. No text or logo.',
+      ],
+    },
+    'SP01-004': {
+      dna: {
+        aesthetic:
+          'Old-Hollywood-meets-magazine glamour: sculpted beauty light, luxurious styling, and a posed, idealized presence built for a cover.',
+        subject_treatment:
+          'Pose the subject with elongated neck, deliberate hands and a confident gaze; hair, makeup and wardrobe are styled and immaculate.',
+        color_and_tone:
+          'Rich jewel tones or deep monochrome backdrops, luminous skin, glossy highlights, deep saturated accents.',
+        lighting_and_shadow:
+          'Butterfly or loop key from a beauty dish, reflector fill under the chin, strong hair light and a glowing rim that separates the silhouette.',
+        texture_and_material:
+          'Velvet, satin, sequins, pearls and glossy lips rendered with sparkle; skin refined but still dimensional.',
+        camera_and_composition:
+          '85–135 mm, slightly low or eye-level, waist-up or three-quarter crop with space for the pose.',
+        atmosphere_and_mood: 'Seductive confidence, opulence, and star power.',
+        rendering_and_quality:
+          'High-gloss magazine finish with specular sparkle and controlled retouching.',
+        key_features:
+          'beauty-dish butterfly light; glowing rim; jewel-tone styling; sculpted pose; specular sparkle',
+      },
+      avoid: AVOID,
+      briefs: [
+        'Glamour portrait of an adult silver-bearded ringmaster in a crimson velvet tailcoat with gold frogging, top hat tilted, one gloved hand resting on a jeweled cane; deep emerald backdrop, beauty-dish key, glowing rim light. No text or logo.',
+        'Glamour cover portrait of an adult Nigerian jazz singer in a liquid gold sequin gown, hand at her collarbone, pearls in her braided updo, against a black velvet backdrop with a single warm rim. 105 mm, waist-up. No text or logo.',
+        'Glamour portrait of an adult vampire-countess character in a high-collared black satin gown and ruby choker, lips deep red, reclining against a carved velvet chaise; butterfly light, sapphire backdrop. Photographic, not illustrated. No text or logo.',
+      ],
+    },
+    'SP01-005': {
+      dna: {
+        aesthetic:
+          'Cinematic close-up still: a single frame lifted from a feature film, face filling the screen with motivated light, story implied off-frame.',
+        subject_treatment:
+          'Push in close on the face or a telling detail; expression mid-emotion as if reacting to something outside the frame.',
+        color_and_tone:
+          'Deliberate film grade — teal shadows against warm skin, or a single dominant hue — with rich blacks and soft highlight rolloff.',
+        lighting_and_shadow:
+          'Motivated practical sources (lamp, window, fire, screen), hard edge light and deep negative fill on the far side of the face.',
+        texture_and_material:
+          'Fine film grain, subtle halation around highlights, visible skin texture and sweat or tears when present.',
+        camera_and_composition:
+          'Anamorphic-feeling 2.39 energy inside a vertical frame: extreme close-up, shallow focus, eyes off-center, background bokeh ovals.',
+        atmosphere_and_mood: 'Tense, intimate, and narrative — a moment before something happens.',
+        rendering_and_quality:
+          'Cinema-camera look with filmic rolloff and no digital oversharpening.',
+        key_features:
+          'extreme close-up; motivated practical light; film grade; oval bokeh; off-frame story',
+      },
+      avoid: [...AVOID, 'abstract glass sculpture', 'faceless prism'],
+      briefs: [
+        "Cinematic extreme close-up of an adult knight's face inside an open bascinet, rain running down the steel, eyes locked on something off-frame; torchlight from the left, cold teal night behind, oval bokeh of distant fires. Film grain. No text or logo.",
+        'Cinematic close-up of an adult safecracker pressing her ear to a steel door, one bead of sweat on her temple, green desk-lamp light raking across her cheek, the rest of the frame in deep shadow. Shallow focus, film halation. No text or logo.',
+        'Cinematic close-up of an old adult lighthouse keeper lit only by the rotating lamp sweeping across his weathered face, storm spray on the glass between him and the lens. Deep blacks, warm beam, cold blue fill. No text or logo.',
+      ],
+    },
+    'SP01-006': {
+      dna: {
+        aesthetic:
+          'Front-camera smartphone selfie: arm-length wide lens, casual social framing, computational processing, and the charm of an unplanned moment.',
+        subject_treatment:
+          'Subject holds the phone (arm or shoulder visible), face slightly distorted by the wide lens, expression playful, tired, or mid-reaction.',
+        color_and_tone:
+          'Phone HDR look: lifted shadows, slightly punchy saturation, warm skin smoothing, bright sky retained.',
+        lighting_and_shadow:
+          'Whatever light is available — window, screen glow, flash-less night, harsh sun — with the flat evenness of HDR merging.',
+        texture_and_material:
+          'Mild computational smoothing and sharpening halos, small noise in shadows, real everyday clothing.',
+        camera_and_composition:
+          'Wide 24–26 mm equivalent from arm length, face large and off-center, background context partially cut, occasional tilt.',
+        atmosphere_and_mood: 'Spontaneous, personal, and shareable.',
+        rendering_and_quality:
+          'Convincing phone image, not a professional portrait; no studio polish.',
+        key_features:
+          'arm-length wide lens; phone HDR; computational smoothing; tilted casual framing; visible arm',
+      },
+      avoid: AVOID,
+      briefs: [
+        'Smartphone front-camera selfie of an adult blacksmith grinning with soot on his face, raising a freshly forged horseshoe next to his cheek, the glowing forge behind him blown slightly by phone HDR. Arm visible, slight tilt. No text, UI or logo.',
+        'Smartphone selfie of two adult cave divers in wetsuits and headlamps, faces squeezed into the frame at the mouth of a flooded cavern, droplets on the lens, cold blue water behind. Wide lens distortion, phone HDR. No text, UI or logo.',
+        'Smartphone selfie of an adult costumed plague-doctor reenactor lifting the beaked mask onto his forehead to grin at the camera during a medieval fair, crowd and banners behind. Harsh noon sun, phone processing. No readable text, UI or logo.',
+      ],
+    },
+    'SP01-007': {
+      dna: {
+        aesthetic:
+          'Silhouette portraiture: the subject reduced to a pure dark shape against an intensely bright field, identity carried entirely by profile and outline.',
+        subject_treatment:
+          'Turn the subject toward profile or a clear three-quarter outline so nose, hair, hands, props, or clothing edges read instantly as shape.',
+        color_and_tone:
+          'Near-black figure against a luminous background — sunset gradient, bright sky, glowing fog, or white window — with no detail inside the shape.',
+        lighting_and_shadow:
+          'All light comes from behind; exposure is set for the background so the subject falls to black, with a thin halo where light wraps edges.',
+        texture_and_material:
+          'Texture exists only in the background (clouds, haze, glow); the silhouette itself is smooth and graphic.',
+        camera_and_composition:
+          'Clean separation between shape and background, generous negative space, low or eye-level camera to lift the outline against the light.',
+        atmosphere_and_mood: 'Mysterious, poetic, and iconic.',
+        rendering_and_quality:
+          'Crisp outline edges, no muddy gray inside the figure, smooth luminous gradient behind.',
+        key_features:
+          'pure black shape; backlit exposure; readable profile outline; luminous background gradient; edge halo',
+      },
+      avoid: AVOID,
+      briefs: [
+        'Silhouette portrait of an adult archer drawing a longbow on a hilltop, profile and bowstring pure black against a blazing orange-to-violet sunset sky, a few crows crossing. Low camera, generous sky. No text or logo.',
+        'Silhouette portrait of an adult woman in a wide-brimmed witch hat and long cloak standing in a doorway, the room behind her flooded with brilliant white fog light; only her outline, the hat brim and a lantern read. No text or logo.',
+        'Silhouette of an adult saxophonist in profile on a rooftop, instrument raised, against a huge pale full moon and hazy city glow. Pure black figure, halo on the sax bell. No text or logo.',
+      ],
+    },
+    'SP01-008': {
+      dna: {
+        aesthetic:
+          'In-camera double exposure portrait: a clean profile silhouette filled with a second image — landscape, texture, or scene — blended through the bright areas of the first.',
+        subject_treatment:
+          'Use a strong profile or three-quarter head as the container; the secondary image fills the shape while the outline and a few facial features stay readable.',
+        color_and_tone:
+          'Soft, airy base with the secondary image in muted or monochrome tones; white or pale backgrounds let the blend breathe.',
+        lighting_and_shadow:
+          'Portrait lit high-key against white so dark areas accept the second image; secondary scene keeps its own natural light.',
+        texture_and_material:
+          'Organic overlaps — branches, mountains, water, crowds — dissolving into skin and hair with smooth transitions.',
+        camera_and_composition:
+          'Profile placed to one side, the second image aligned so its focal point sits inside the head, clean negative space around.',
+        atmosphere_and_mood: 'Dreamlike, reflective, and symbolic.',
+        rendering_and_quality:
+          'Seamless photographic blend without cut-out edges or collage seams.',
+        key_features:
+          'profile as container; second image inside the silhouette; white negative space; seamless blend; symbolic pairing',
+      },
+      avoid: [...AVOID, 'recognizable public figure', 'city landmark'],
+      briefs: [
+        'Double exposure photograph: the profile of an original adult woman with braided hair, filled with a misty pine forest where a lone wolf stands on a ridge; clean white background, forest dissolving into her hair. No real person, text or logo.',
+        "Double exposure portrait: an original adult sailor's bearded profile containing a storm-tossed sea and a small ship climbing a wave, the lighthouse beam crossing his eye. White background, monochrome secondary image. No text or logo.",
+        "Double exposure photograph: an original elderly adult's profile filled with a ruined abbey at dusk and a flock of starlings forming a spiral inside the head. Pale background, muted sepia secondary image. No text or logo.",
+      ],
+    },
+    'SP01-009': {
+      dna: {
+        aesthetic:
+          'High-key portraiture: a bright, nearly shadowless white world where the subject floats in clean light and soft pastel accents.',
+        subject_treatment:
+          'Subject in light-toned wardrobe or with pale props, open expression, full or half figure placed against endless white.',
+        color_and_tone:
+          'Whites, creams and soft pastels dominate; dark values limited to eyes, hair and small accents.',
+        lighting_and_shadow:
+          'Background blown 1–2 stops over the key, large wrap-around soft sources, minimal shadow under the chin only.',
+        texture_and_material: 'Airy fabrics, sheer layers, soft hair; skin luminous but real.',
+        camera_and_composition:
+          'Clean centered or rule-of-thirds placement, lots of white negative space, eye-level camera.',
+        atmosphere_and_mood: 'Fresh, weightless, optimistic, and serene.',
+        rendering_and_quality:
+          'Clean exposure without clipping skin, smooth white field, crisp eyes.',
+        key_features:
+          'blown white background; shadowless wrap light; pastel accents; floating subject; clean negative space',
+      },
+      avoid: AVOID,
+      briefs: [
+        'High-key studio portrait of an adult beekeeper in a white veiled hat and pale linen suit holding a honeycomb frame with a few golden bees, against a pure white seamless. Wrap-around soft light, cream and honey tones. No text or logo.',
+        'High-key portrait of an adult ballet dancer in a pale feathered swan costume mid-arabesque against endless white, a few loose white feathers drifting. Shadowless light, soft pastel blush. No text or logo.',
+        'High-key studio portrait of an elderly adult baker dusted with flour, holding a tall white wedding cake, everything cream and white around him. Soft even light, sparkling eyes. No text or logo.',
+      ],
+    },
+    'SP01-010': {
+      dna: {
+        aesthetic:
+          'Low-key portraiture: a figure carved out of darkness by one narrow source, most of the frame surrendered to deep shadow.',
+        subject_treatment:
+          'Reveal only the planes that matter — one side of the face, a hand, an edge of clothing — letting the rest fall into black.',
+        color_and_tone:
+          'Deep blacks and rich dark tones, muted desaturated color, highlights restrained to a small area.',
+        lighting_and_shadow:
+          'Single hard or gridded source from the side or above, no fill, sharp falloff into black background.',
+        texture_and_material:
+          'Skin texture, stubble, wrinkles and fabric grain emphasized by raking light.',
+        camera_and_composition:
+          'Tight crop, subject off-center, large black negative space, eye-level or slightly below.',
+        atmosphere_and_mood: 'Brooding, secretive, grave, and intense.',
+        rendering_and_quality:
+          'Clean noise-free blacks with detailed highlights; no muddy gray shadows.',
+        key_features:
+          'single gridded source; no fill; black negative space; raking texture; restrained highlights',
+      },
+      avoid: AVOID,
+      briefs: [
+        'Low-key portrait of an adult executioner removing a black hood, only the lower half of his scarred face and one gloved hand lit by a narrow side source, the rest swallowed in black. No text or logo.',
+        'Low-key portrait of an old adult alchemist leaning over a single candle, the flame lighting his deep wrinkles, spectacles and a glass vial from below; everything else black. No text or logo.',
+        'Low-key studio portrait of an adult boxer after a fight, towel over her shoulders, sweat and a cut eyebrow lit by one gridded light from above, black background. No text or logo.',
+      ],
+    },
+    'SP01-051': {
+      dna: {
+        aesthetic:
+          'Fashion editorial photography: styling-first images built as a magazine story, with graphic poses, bold silhouettes, and concept-driven sets.',
+        subject_treatment:
+          'Pose the subject for silhouette and garment — elongated lines, angular limbs, sculptural stances — letting clothing shape drive the image.',
+        color_and_tone:
+          'Editorial grade chosen per story: tonal monochrome, a single bold color block, or muted desaturation with one accent.',
+        lighting_and_shadow:
+          'Crisp studio strobe or hard sun creating graphic shadows, sometimes a colored gel as a design element.',
+        texture_and_material:
+          'Fabric drape, structured tailoring, leather, sheer layers, and statement accessories rendered with precision.',
+        camera_and_composition:
+          'Full-length or three-quarter framing, graphic negative space, set pieces or color planes used as composition.',
+        atmosphere_and_mood: 'Aloof, stylish, conceptual, and assertive.',
+        rendering_and_quality:
+          'High-end editorial finish, crisp garment detail, controlled skin retouch.',
+        key_features:
+          'silhouette-first posing; concept set; graphic hard light; color-block backdrop; garment precision',
+      },
+      avoid: AVOID,
+      briefs: [
+        'Fashion editorial photograph of an adult model in a sculptural chainmail gown and a tall black felt hat, striding across a set of oversized chess pieces on a red floor; hard strobe casting long graphic shadows. Full length. No text or logo.',
+        'Fashion editorial of an adult model in an exaggerated padded armor-inspired coat of cream quilted silk, arms angled, standing in a white box set with a single slanted beam of hard sunlight. Tonal monochrome. No text or logo.',
+        'Fashion editorial of two adult models in matching midnight-blue capes with enormous collars, back to back on a steep white staircase, one holding a falcon; cool gelled rim light. No text or logo.',
+      ],
+    },
+    'SP01-067': {
+      dna: {
+        aesthetic:
+          'Wedding photography: luminous, romantic documentary of a ceremony or couple, balancing candid emotion with editorial composition.',
+        subject_treatment:
+          'Adult couples or wedding participants in genuine interaction — vows, laughter, embraces — with dress, veil and details celebrated.',
+        color_and_tone:
+          'Airy whites, soft pastels and warm skin, lifted shadows, gentle golden highlights.',
+        lighting_and_shadow:
+          'Backlit sun or window glow creating a halo through veil and hair, soft reflector fill on faces.',
+        texture_and_material:
+          'Lace, tulle, flowers, candlelight and natural materials rendered delicately.',
+        camera_and_composition:
+          'Mix of intimate close framing and wider scene-setting views, shallow depth of field, layered foreground flowers or guests.',
+        atmosphere_and_mood: 'Tender, joyful, and timeless.',
+        rendering_and_quality: 'Fine-art wedding finish with soft glow and clean skin.',
+        key_features:
+          'backlit veil halo; candid emotion; airy pastel grade; layered foreground flowers; shallow depth',
+      },
+      avoid: AVOID,
+      briefs: [
+        "Wedding photograph of an adult couple exchanging vows inside a candlelit ruined chapel with no roof, ivy on the stone arches, late sun backlighting the bride's long veil; guests blurred in the foreground. No text or logo.",
+        'Wedding photograph of two adult grooms in dark wool suits laughing as a sudden wind lifts a shower of white petals around them on a sea cliff, golden backlight, shallow focus. No text or logo.',
+        'Wedding photograph of an adult bride in a medieval-inspired embroidered gown riding a white horse across a misty meadow at dawn, the groom walking beside holding the reins; soft backlight halo. No text or logo.',
+      ],
+    },
+    'SP01-068': {
+      dna: {
+        aesthetic:
+          'Newborn photography: gentle, protected studio portraits of a sleeping infant with soft wraps, warm neutrals, and handmade props.',
+        subject_treatment:
+          'Infant asleep and safely supported — swaddled, cradled, or curled — with tiny hands, feet and features as the focus; adult hands may appear for scale.',
+        color_and_tone: 'Cream, oatmeal, soft sage and blush, low contrast, warm skin.',
+        lighting_and_shadow:
+          'Large window or softbox from one side, feathered, with soft gentle shadow modeling.',
+        texture_and_material:
+          'Knitted wraps, fur, wool, woven baskets and muslin rendered tactile and soft.',
+        camera_and_composition:
+          'Overhead or low close framing, shallow focus, calm negative space.',
+        atmosphere_and_mood: 'Peaceful, tender, and hushed.',
+        rendering_and_quality:
+          'Delicate skin rendering and soft focus falloff; no harsh retouching.',
+        key_features:
+          'safely supported sleeping infant; knitted textures; feathered window light; warm neutrals; hushed calm',
+      },
+      avoid: [...AVOID, 'unsafe infant pose', 'nudity'],
+      briefs: [
+        'Newborn photograph of a sleeping swaddled infant nestled in a moss-lined wicker basket shaped like a bird nest, a tiny knitted dragon hat on its head; feathered window light, cream and sage palette. Safe pose. No text or logo.',
+        "Newborn photograph of a sleeping infant in a cream knit wrap cradled in a parent's large tattooed hands, overhead view, soft window light. Safe, tender. No text or logo.",
+        'Newborn photograph of a sleeping infant swaddled in a tiny felted knight tabard, lying on a sheepskin beside a small wooden toy horse. Low close framing, warm neutrals, soft light. Safe pose. No text or logo.',
+      ],
+    },
+    'SP01-069': {
+      dna: {
+        aesthetic:
+          'Boudoir photography: an intimate, respectful adult portrait in a private interior, sensual through light, fabric and mood rather than exposure.',
+        subject_treatment:
+          'Adult subject relaxed and in control, draped fabric, lingerie, robes or oversized shirts; pose emphasizes confidence and personal comfort.',
+        color_and_tone: 'Warm dark interiors, deep reds, wine and amber, soft skin glow.',
+        lighting_and_shadow:
+          'Soft window or single warm lamp from the side, deep gentle shadows, highlight along shoulders and hair.',
+        texture_and_material: 'Silk, lace, velvet, rumpled linen and warm skin rendered tactile.',
+        camera_and_composition:
+          'Close to medium framing, shallow depth, layered foreground fabric or curtains.',
+        atmosphere_and_mood: 'Intimate, confident, private, and warm.',
+        rendering_and_quality: 'Tasteful fine-art finish, no explicit nudity.',
+        key_features:
+          'warm side window light; draped fabric; deep wine tones; confident adult pose; tasteful intimacy',
+      },
+      avoid: [...AVOID, 'explicit nudity'],
+      briefs: [
+        'Tasteful boudoir portrait of a confident adult woman with silver-streaked hair reclining on a canopy bed draped in burgundy velvet, a silk robe off one shoulder, warm lamp light, deep shadows. No nudity, text or logo.',
+        'Tasteful boudoir portrait of an adult man in an open linen shirt sitting on the edge of a rumpled bed by a tall window at dusk, amber light along his shoulders, curtains in the foreground. No nudity, text or logo.',
+        'Tasteful boudoir portrait of an adult woman in a black lace robe and long opera gloves standing at a candlelit vanity in a gothic bedroom, looking over her shoulder into the mirror. Warm dark tones. No nudity, text or logo.',
+      ],
+    },
+    'SP01-078': {
+      dna: {
+        aesthetic:
+          'Institutional school portrait: flat studio flash, mottled laser backdrop, and the awkward charm of picture day.',
+        subject_treatment:
+          'Subject faces forward, shoulders square, posed smile or stiff expression, hair and clothes slightly imperfect.',
+        color_and_tone:
+          'Saturated backdrop — mottled blue, gray or rainbow laser — with slightly warm flash skin.',
+        lighting_and_shadow:
+          'On-axis umbrella flash, faint shadow behind the head, flat even face.',
+        texture_and_material: 'Everyday clothes, visible hair flyaways, slight print-lab softness.',
+        camera_and_composition:
+          'Centered head-and-shoulders, identical framing to a yearbook grid, eye-level.',
+        atmosphere_and_mood: 'Nostalgic, awkward, endearing, and a little absurd.',
+        rendering_and_quality: 'Lab-printed yearbook look with mild softness and vivid backdrop.',
+        key_features:
+          'mottled laser backdrop; flat on-axis flash; forced smile; centered yearbook crop; picture-day awkwardness',
+      },
+      avoid: [...AVOID],
+      briefs: [
+        'School picture-day portrait of a gap-toothed kid proudly wearing a homemade cardboard knight helmet pushed up on the forehead, mottled blue laser backdrop, flat umbrella flash, centered yearbook crop. No text or logo.',
+        'School portrait of an adult teacher dressed as a wizard for costume day, fake beard slipping, stiff smile, rainbow laser backdrop, flat flash. No text or logo.',
+        'School yearbook portrait of a serious teenager in a thrifted velvet blazer holding a pet ferret that refuses to face the camera, gray mottled backdrop, flat flash. No text or logo.',
+      ],
+    },
+    'SP01-079': {
+      dna: {
+        aesthetic:
+          'Booking photograph: deadpan frontal documentation with a height chart, flat light and bureaucratic indifference.',
+        subject_treatment:
+          'Subject faces straight into the lens, shoulders square, neutral or defiant expression; disheveled details tell the story.',
+        color_and_tone: 'Flat grays and institutional off-whites, slightly green fluorescent cast.',
+        lighting_and_shadow: 'Flat on-camera flash, hard shadow on the height chart behind.',
+        texture_and_material:
+          'Harsh skin detail, bruises, smeared makeup, torn collars — rendered plainly.',
+        camera_and_composition:
+          'Centered head-and-shoulders against horizontal height lines without readable numbers.',
+        atmosphere_and_mood: 'Deadpan, bleak, and darkly funny.',
+        rendering_and_quality: 'Documentary flatness, no flattering retouch.',
+        key_features:
+          'height-line backdrop; flat on-camera flash; deadpan frontal pose; institutional color cast; disheveled detail',
+      },
+      avoid: [...AVOID, 'readable numbers', 'real mugshot likeness'],
+      briefs: [
+        'Booking photograph of an adult court jester arrested after a feast, smeared face paint, one bell missing from his crooked hat, staring flatly into the lens against height lines without numbers. Flat flash. No readable text or logo.',
+        'Booking photograph of an adult knight in dented plate armor with a black eye and a bent visor held under his arm, deadpan frontal pose, height-line backdrop, green fluorescent cast. No readable text or logo.',
+        'Booking photograph of an elderly adult witch with wild gray hair and a smug half-smile, a small toad on her shoulder, flat flash, gray height lines. No readable text or logo.',
+      ],
+    },
+    'SP01-080': {
+      dna: {
+        aesthetic:
+          'Official ID photograph: strict frontal symmetry, white background, shadowless light, zero expression — the administrative portrait.',
+        subject_treatment:
+          'Subject square to the lens, neutral mouth, both ears and full face visible, head centered and level.',
+        color_and_tone:
+          'Pure white or pale gray background, neutral accurate skin, no creative grade.',
+        lighting_and_shadow:
+          'Even frontal light from two sides, no shadow on the background, minimal facial shadow.',
+        texture_and_material: 'Plain clothing, visible real skin, no accessories hiding the face.',
+        camera_and_composition:
+          'Tightly centered head with fixed proportions, eyes at the same height every time.',
+        atmosphere_and_mood: 'Neutral, clinical, and faintly absurd when the subject is unusual.',
+        rendering_and_quality: 'Sharp, flat, compliant image without artistic effects.',
+        key_features:
+          'strict frontal symmetry; white background; shadowless light; neutral expression; fixed centered crop',
+      },
+      avoid: AVOID,
+      briefs: [
+        'Official ID photograph of an adult orc-costumed actor in full prosthetic makeup and tusks, perfectly neutral expression, white background, shadowless light, strict centered crop. No text or logo.',
+        'Official passport photograph of a very old adult sea captain with a white beard and a tricorn hat he was clearly asked to remove but kept on, neutral stare, white background. No text or logo.',
+        'Official ID photograph of an adult beekeeper with three calm bees resting on her collar, perfectly frontal and neutral, pale gray background, even light. No text or logo.',
+      ],
+    },
+    'SP01-081': {
+      dna: {
+        aesthetic:
+          'Soft editorial window portrait: a single large north-facing window shaping the subject in quiet, painterly daylight.',
+        subject_treatment:
+          'Subject turned toward the window, contemplative, hands or props near the face, simple styling.',
+        color_and_tone:
+          'Subdued earth tones, cool daylight mixed with warm interior bounce, gentle contrast.',
+        lighting_and_shadow:
+          'Broad soft window light from one side falling off gradually across the face into soft shadow, no added fill.',
+        texture_and_material: 'Linen, wool, plaster walls and natural skin with soft detail.',
+        camera_and_composition:
+          'Three-quarter or profile framing, subject near the window edge, calm negative space of wall.',
+        atmosphere_and_mood: 'Quiet, introspective, and timeless, like a Dutch interior.',
+        rendering_and_quality:
+          'Natural, softly detailed daylight rendering with painterly falloff.',
+        key_features:
+          'single window source; gradual falloff; earth tones; contemplative profile; painterly quiet',
+      },
+      avoid: AVOID,
+      briefs: [
+        'Soft window-light portrait of an adult scribe at a slanted wooden desk, quill in hand, turning toward a tall leaded window; pale daylight falling across her face and the blank vellum. Earth tones, painterly falloff. No readable text or logo.',
+        'Soft window portrait of an adult violinist resting the instrument on his lap, looking out at the rain, cool light on his profile and warm bounce from a wooden floor. No text or logo.',
+        'Soft window portrait of an elderly adult herbalist sorting dried flowers at a stone sill, light catching her silver hair and the petals, plaster wall softly shaded behind. No text or logo.',
+      ],
+    },
+  },
+  creates: [
+    {
+      name: 'Ring Flash Portrait',
+      domain: 'ring flash fashion portrait',
+      tags: ['ring-flash', 'fashion', 'portrait-photography'],
+      dna: {
+        aesthetic:
+          'Ring-flash portrait photography: a circular light around the lens that flattens the face, rings the eyes with donut catchlights, and wraps the subject in a thin even shadow halo.',
+        subject_treatment:
+          'Subject faces the lens close up or waist-up, expression bold and direct; hair, makeup and wardrobe read as graphic shapes.',
+        color_and_tone:
+          'Punchy saturated color with glossy skin highlights; backgrounds bright or strongly colored.',
+        lighting_and_shadow:
+          'On-axis ring flash: nearly shadowless face, a thin dark outline shadow hugging the silhouette on the backdrop, specular sheen on cheekbones.',
+        texture_and_material:
+          'Glossy lips, vinyl, sequins, wet hair and shiny fabrics catching the ring reflection.',
+        camera_and_composition:
+          'Close frontal framing with the subject near the backdrop so the halo shadow is visible.',
+        atmosphere_and_mood: 'Loud, pop, confrontational, and fun.',
+        rendering_and_quality:
+          'Crisp commercial finish, circular catchlights clearly visible in both eyes.',
+        key_features:
+          'ring flash donut catchlights; thin halo shadow; flat on-axis face light; saturated pop color; glossy speculars',
+      },
+      avoid: [...AVOID, 'soft window light', 'dramatic side light'],
+      briefs: [
+        'Ring flash portrait of an adult punk alchemist with bleached spiked hair, green lipstick and goggles pushed up, holding a glowing flask at chin height against a bright yellow backdrop; donut catchlights, thin halo shadow. No text or logo.',
+        'Ring flash portrait of an adult drag performer dressed as a dragon queen, sequined scales, jeweled horns and glossy red lips, pressed close to a hot pink backdrop. Donut catchlights, halo shadow. No text or logo.',
+        'Ring flash portrait of an adult deep-sea diver holding a brass diving helmet under one arm, wet hair slicked back, droplets glinting, teal backdrop, flat on-axis flash. No text or logo.',
+      ],
+    },
+    {
+      name: 'Painted Muslin Backdrop Portrait',
+      domain: 'painted canvas backdrop portrait',
+      tags: ['painted-backdrop', 'fine-art-portrait', 'portrait-photography'],
+      dna: {
+        aesthetic:
+          'Fine-art studio portrait in front of a hand-painted muslin backdrop, with directional window-like light that echoes old-master painting while staying fully photographic.',
+        subject_treatment:
+          'Subject posed with painterly stillness — three-quarter turn, hands placed deliberately, costume or wardrobe with rich texture.',
+        color_and_tone:
+          'Muted mottled backdrop in olive, umber, slate or smoky blue; warm skin; deep but open shadows.',
+        lighting_and_shadow:
+          'Large soft key high to one side, slight Rembrandt triangle, subtle fill, backdrop lit unevenly to create a glowing patch behind the head.',
+        texture_and_material:
+          'Visible brushy mottling in the backdrop, velvet, wool, fur and metal in wardrobe rendered with depth.',
+        camera_and_composition:
+          'Half or three-quarter figure, centered with painterly balance, slight low angle.',
+        atmosphere_and_mood: 'Timeless, noble, and quietly theatrical.',
+        rendering_and_quality:
+          'Large-format photographic depth and tonality, rich midtones, no digital effects.',
+        key_features:
+          'hand-painted mottled muslin; glowing backdrop patch; Rembrandt-leaning soft key; painterly pose; rich midtones',
+      },
+      avoid: [...AVOID, 'painting', 'illustration', 'seamless paper backdrop'],
+      briefs: [
+        'Fine-art photograph of an adult armored knight holding her helmet against her hip in front of a hand-painted olive and umber muslin backdrop, soft high key light, glowing patch behind her head. Photographic, not painted. No text or logo.',
+        'Fine-art portrait photograph of an elderly adult fisherman in a heavy oilskin coat holding a large silver fish, slate-blue mottled canvas backdrop, Rembrandt-leaning light. No text or logo.',
+        'Fine-art studio photograph of an adult noblewoman character in a fur-trimmed velvet cloak with a small hawk on her glove, smoky painted backdrop, soft directional key, rich midtones. No text or logo.',
+      ],
+    },
+  ],
+};
+
+export default spec;

@@ -3,7 +3,7 @@ id: SP01-078
 packId: pack_01
 name: School Portrait
 category: 1. Portrait And Studio
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,50 +12,20 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: >-
-    School Portrait acts as a transferable photographic style router: begin from Awkward yearbook
-    studio, Laser depth field, and portrait and studio photography system built from lens
-    discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply
-    the photographic behavior to prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Stiff central composition; preserve prompt identity while using
-    focal priority, flattering or deliberately institutional distance, surface realism, and edge
-    control without requiring a human face, keeping the original subject, pose, species, object, or
-    environment legible.
-  color_and_tone: >-
-    Grade with Blue mottled depth field; grade neutrals, skinlike or material tones, backdrop color,
-    cosmetic warmth, and controlled contrast as photographic capture decisions, with value
-    separation and white balance choices that feel captured in-camera rather than painted over.
-  lighting_and_shadow: >-
-    Use Flat studio; make key, fill, rim, catchlight, background falloff, and shadow shape visibly
-    drive the style, preserving believable exposure, shadow density, highlight rolloff, and source
-    motivation.
-  texture_and_material: >-
-    Render Cheesy studio texture; retain pores, fabric, hair, props, paper, backdrop sweep, and
-    small surface imperfections at a believable photographic scale, avoiding both waxy smoothing and
-    noisy texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Forced frontal stiffness; use portrait lens compression, central authority,
-    intimate framing distance, frontal ID geometry, or editorial negative space without forcing one
-    sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Awkward, funny; derive mood from proximity, pose pressure, institutional polish,
-    intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without
-    demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Nostalgic, cheesy; finish as real photography with clean optics, plausible
-    retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution
-    photographic detail, and disciplined denoise without losing natural grain where the preset needs
-    it.
-  key_features: >-
-    Awkward yearbook studio; Laser depth field; Blue mottled depth field; Flat studio; Forced
-    frontal stiffness
-  creative_brief: >-
-    Apply School Portrait as a photographic preset over prompt X: preserve the user's requested
-    subject, then route Awkward yearbook studio, Blue mottled depth field, Flat studio, Cheesy
-    studio texture, and Forced frontal stiffness through optics, exposure, palette, surface
-    response, timing, and finish without requiring the card image's original subject.
+  aesthetic: 'Institutional school portrait: flat studio flash, mottled laser backdrop, and the awkward charm of picture day.'
+  subject_treatment: Subject faces forward, shoulders square, posed smile or stiff expression, hair and clothes slightly imperfect.
+  color_and_tone: Saturated backdrop — mottled blue, gray or rainbow laser — with slightly warm flash skin.
+  lighting_and_shadow: On-axis umbrella flash, faint shadow behind the head, flat even face.
+  texture_and_material: Everyday clothes, visible hair flyaways, slight print-lab softness.
+  camera_and_composition: Centered head-and-shoulders, identical framing to a yearbook grid, eye-level.
+  atmosphere_and_mood: Nostalgic, awkward, endearing, and a little absurd.
+  rendering_and_quality: Lab-printed yearbook look with mild softness and vivid backdrop.
+  key_features: mottled laser backdrop; flat on-axis flash; forced smile; centered yearbook crop; picture-day awkwardness
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies School Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - generic stock-photo face
+  - celebrity likeness
+  - same model as other presets
   - cool
   - candid
   - illustration
@@ -75,13 +45,17 @@ avoidRules:
   - over-smoothed plastic retouching
   - distorted anatomy
   - generic beauty filter
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-078.webp
 attributes:
-  negativePrompt: >-
-    cool, candid, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI,
-    plastic render, watermark, readable text, signature, low resolution, mannequin skin,
-    over-smoothed plastic retouching, distorted anatomy, generic beauty filter
+  negativePrompt: generic stock-photo face, celebrity likeness, same model as other presets, cool, candid, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

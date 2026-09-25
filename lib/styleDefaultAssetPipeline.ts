@@ -99,6 +99,7 @@ export interface StyleDefaultJobRequestInput {
   prompt: string;
   providerId?: 'codex' | 'chatgpt' | 'grok';
   presetId?: string;
+  cardSlot?: number;
 }
 
 function normalizeCategory(category?: string) {
@@ -307,13 +308,16 @@ export function createStyleDefaultJobRequest({
   prompt,
   providerId = 'codex',
   presetId,
+  cardSlot,
 }: StyleDefaultJobRequestInput): CreateJobRequest {
   if (providerId === 'grok' || providerId === 'chatgpt') {
     if (!presetId?.trim()) {
       throw new Error(`${providerId} style-card jobs require a presetId.`);
     }
     const sourceSpec = createGenerationTaskSpec({
-      id: `style-preset-card-${providerId}-${presetId.toLowerCase()}`,
+      id: `style-preset-card-${providerId}-${presetId.toLowerCase()}${
+        cardSlot ? `-${String(cardSlot).padStart(2, '0')}` : ''
+      }`,
       task: 'style_preset_card',
       providerId,
       prompt,
@@ -329,7 +333,9 @@ export function createStyleDefaultJobRequest({
       metadata:
         providerId === 'grok'
           ? { assetRole: 'style-preset-provider-variant', variantProviderId: providerId }
-          : { assetRole: 'style-preset-default' },
+          : cardSlot
+            ? { assetRole: 'style-preset-card-variant', styleCardSlot: cardSlot }
+            : { assetRole: 'style-preset-default' },
     });
 
     return {

@@ -9582,13 +9582,18 @@ function buildProviderStylePrompt(
   provider: StyleCardProvider,
 ) {
   if (provider === 'chatgpt') {
-    const cardBrief =
-      chatgptCardBriefs[preset.id]?.trim() ||
-      (refreshLegacy || (replaceReviewed && /^pack_(?:0[1-9]|1[0-7])$/.test(pack.id))
-        ? legacyCardBrief(pack, preset)
-        : '');
+    const cardBrief = variantSlot
+      ? chatgptCardVariantBriefs[preset.id]?.[variantSlot - 1]?.trim()
+      : chatgptCardBriefs[preset.id]?.trim() ||
+        (refreshLegacy || (replaceReviewed && /^pack_(?:0[1-9]|1[0-7])$/.test(pack.id))
+          ? legacyCardBrief(pack, preset)
+          : '');
     if (!cardBrief) {
-      throw new Error(`Missing representative card brief for ${preset.id} in card-briefs.json.`);
+      throw new Error(
+        variantSlot
+          ? `Missing variant ${variantSlot} card brief for ${preset.id} in card-brief-variants.json.`
+          : `Missing representative card brief for ${preset.id} in card-briefs.json.`,
+      );
     }
     const fields = [
       ['Aesthetic', preset.style.aesthetic],
@@ -9694,6 +9699,11 @@ function readJobStatusFromSqlite(jobId: string) {
   }
 }
 
+// A card set keeps one primary card and numbered variants; each slot has its own job history.
+function cardJobKey(presetId: string, slot?: number) {
+  return slot ? `${presetId}-${String(slot).padStart(2, '0')}` : presetId;
+}
+
 function readPriorChatgptCardJobs(workspaceId: string) {
   const db = new Database(studioDbPath, { readonly: true });
   try {
@@ -9706,12 +9716,20 @@ function readPriorChatgptCardJobs(workspaceId: string) {
           ORDER BY created_at ASC, id ASC`,
       )
       .all(workspaceId) as Array<{ id: string; status: string; sourceSpecJson: string | null }>;
-    const byPreset = new Map<string, { id: string; status: string }>();
+    const byPreset = new Map<string, { id: string; status: string; prompt: string }>();
     for (const row of rows) {
       try {
-        const spec = JSON.parse(row.sourceSpecJson ?? 'null') as { stylePresetId?: string } | null;
+        const spec = JSON.parse(row.sourceSpecJson ?? 'null') as {
+          stylePresetId?: string;
+          prompt?: string;
+          metadata?: { styleCardSlot?: number };
+        } | null;
         if (typeof spec?.stylePresetId === 'string') {
-          byPreset.set(spec.stylePresetId, { id: row.id, status: row.status });
+          byPreset.set(cardJobKey(spec.stylePresetId, spec.metadata?.styleCardSlot), {
+            id: row.id,
+            status: row.status,
+            prompt: spec.prompt ?? '',
+          });
         } else {
           throw new Error(`ChatGPT style-card job ${row.id} has no identifiable preset.`);
         }
@@ -10048,6 +10066,15 @@ const chatgptCardBriefs =
         await readFile(path.join(rootDir, 'scripts', 'style-curation', 'card-briefs.json'), 'utf8'),
       ) as Record<string, string>)
     : {};
+const chatgptCardVariantBriefs =
+  providerId === 'chatgpt'
+    ? (JSON.parse(
+        await readFile(
+          path.join(rootDir, 'scripts', 'style-curation', 'card-brief-variants.json'),
+          'utf8',
+        ),
+      ) as Record<string, string[]>)
+    : {};
 const writesProviderVariants = providerId === 'grok';
 const providerDefaultsDir = path.join(providerDefaultsRoot, providerId);
 const activeOutputDir = writesProviderVariants ? providerDefaultsDir : defaultsDir;
@@ -10148,9 +10175,25 @@ if (providerId === 'chatgpt' && !printPrompts && !argValue('workspace-id')) {
     'ChatGPT style cards require --workspace-id to keep results in the intended workspace.',
   );
 }
+// Card-set mode writes the primary card plus variants 01 and 02 from reviewed briefs. A slot is
+// resubmitted only when its composed prompt differs from the latest job for that slot.
+const cardSet = process.argv.includes('--card-set');
+const CARD_SET_VARIANT_SLOTS = [1, 2];
+if (
+  cardSet &&
+  (providerId !== 'chatgpt' ||
+    replaceReviewed ||
+    refreshLegacy ||
+    Boolean(reviewedUncertainJobsFile) ||
+    writesVariants)
+) {
+  throw new Error(
+    '--card-set requires ChatGPT and cannot be combined with replacement, refresh, uncertain-job or variant-slot flags.',
+  );
+}
 
 await mkdir(defaultsDir, { recursive: true });
-if (writesVariants) await mkdir(variantDefaultsDir, { recursive: true });
+if (writesVariants || cardSet) await mkdir(variantDefaultsDir, { recursive: true });
 if (writesProviderVariants) await mkdir(providerDefaultsDir, { recursive: true });
 if (!printPrompts) await mkdir(lockDir, { recursive: true });
 
@@ -10240,7 +10283,7 @@ for (const pack of packs) {
       );
     }
 
-    if (!writesVariants && !effectiveForce && destinationExists) {
+    if (!writesVariants && !cardSet && !effectiveForce && destinationExists) {
       existingDefaultFiles.add(destination);
       skipped += 1;
     }
@@ -10282,6 +10325,17 @@ if (reviewedUncertainJobsFile) {
 }
 
 for (const target of eligibleTargets) {
+  if (cardSet) {
+    targetPresets.push(
+      target,
+      ...CARD_SET_VARIANT_SLOTS.map((variantSlot) => ({
+        ...target,
+        destination: variantDestinationForPreset(target.preset.id, variantSlot),
+        variantSlot,
+      })),
+    );
+    continue;
+  }
   if (!writesVariants) {
     targetPresets.push(target);
     continue;
@@ -10422,10 +10476,11 @@ try {
     const manifestByPreset = manifestByPack.get(pack.id);
     if (!manifestByPreset) throw new Error(`Missing manifest map for pack ${pack.id}`);
 
+    const cardKey = cardJobKey(preset.id, variantSlot);
     const priorJob =
       replaceReviewed || reviewedUncertainJobsFile
         ? readPriorChatgptCardJobs(workspaceId).get(preset.id)
-        : priorChatgptCardJobs.get(preset.id);
+        : priorChatgptCardJobs.get(cardKey);
     const expectedReviewedJobId = reviewedReplacementsFile
       ? reviewedReplacementJobs.get(preset.id)
       : reviewedJobId;
@@ -10446,14 +10501,18 @@ try {
     ) {
       throw new Error(`${preset.id}: reviewed uncertain job changed after preflight.`);
     }
-    if (priorJob && !replaceReviewed && !reviewedUncertainJobsFile) {
+    const briefChanged =
+      cardSet &&
+      priorJob?.prompt !==
+        buildProviderStylePrompt(pack, preset, 1, sessionSuffix, variantSlot, providerId).trim();
+    if (priorJob && !replaceReviewed && !reviewedUncertainJobsFile && !briefChanged) {
       skipped += 1;
       console.warn(
-        `[txt2img-already-submitted] ${preset.id} job=${priorJob.id} status=${priorJob.status}; inspect it before another submission.`,
+        `[txt2img-already-submitted] ${cardKey} job=${priorJob.id} status=${priorJob.status}; inspect it before another submission.`,
       );
       return;
     }
-    const chatgptLockPath = path.join(lockDir, `${preset.id}.chatgpt.lock`);
+    const chatgptLockPath = path.join(lockDir, `${cardKey}.chatgpt.lock`);
     if (providerId === 'chatgpt') {
       if (reviewedUncertainJobId) {
         await preserveReviewedChatgptLock(
@@ -10501,6 +10560,7 @@ try {
             workspaceId,
             providerId,
             presetId: preset.id,
+            cardSlot: variantSlot,
             prompt: buildProviderStylePrompt(
               pack,
               preset,
@@ -10545,11 +10605,13 @@ try {
         await writeRepoWebpAsset(asset.filePath, destination, {
           archive:
             providerId === 'codex' ||
+            cardSet ||
             replaceReviewed ||
             refreshLegacy ||
             Boolean(reviewedUncertainJobsFile),
           exclusive:
             providerId === 'chatgpt' &&
+            !cardSet &&
             !replaceReviewed &&
             !refreshLegacy &&
             !reviewedUncertainJobsFile,

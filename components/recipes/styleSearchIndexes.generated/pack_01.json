@@ -3,7 +3,7 @@
     {
       "id": "pack_01",
       "name": "Photography & Realism",
-      "presetCount": 87
+      "presetCount": 89
     }
   ],
   "presets": [
@@ -222,6 +222,46 @@
       "tags": ["photography-and-realism", "portrait-and-studio"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp01-081 soft editorial window 1. portrait and studio portrait & studio pack_01 photography & realism portrait-and-studio photography-and-realism portrait-and-studio"
+    },
+    {
+      "id": "SP01-088",
+      "name": "Ring Flash Portrait",
+      "styleAnchors": [
+        "Ring Flash Portrait",
+        "ring flash fashion portrait",
+        "ring flash donut catchlights"
+      ],
+      "ref": "pack_01/SP01-088.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "portrait-and-studio",
+      "categoryName": "1. Portrait And Studio",
+      "domain": "ring flash fashion portrait",
+      "tags": ["photography-and-realism", "portrait-and-studio", "ring-flash-fashion-portrait"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-088 ring flash portrait ring flash fashion portrait ring flash donut catchlights 1. portrait and studio portrait & studio ring flash fashion portrait pack_01 photography & realism portrait-and-studio photography-and-realism portrait-and-studio ring-flash-fashion-portrait"
+    },
+    {
+      "id": "SP01-089",
+      "name": "Painted Muslin Backdrop Portrait",
+      "styleAnchors": [
+        "Painted Muslin Backdrop Portrait",
+        "painted canvas backdrop portrait",
+        "hand-painted mottled muslin"
+      ],
+      "ref": "pack_01/SP01-089.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "portrait-and-studio",
+      "categoryName": "1. Portrait And Studio",
+      "domain": "painted canvas backdrop portrait",
+      "tags": [
+        "photography-and-realism",
+        "portrait-and-studio",
+        "painted-canvas-backdrop-portrait"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-089 painted muslin backdrop portrait painted canvas backdrop portrait hand-painted mottled muslin 1. portrait and studio portrait & studio painted canvas backdrop portrait pack_01 photography & realism portrait-and-studio photography-and-realism portrait-and-studio painted-canvas-backdrop-portrait"
     },
     {
       "id": "SP01-031",
@@ -1052,5 +1092,5 @@
       "searchableText": "sp01-077 medical photography 7. technical and specialist imaging technical capture pack_01 photography & realism technical-and-specialist-imaging photography-and-realism technical-and-specialist-imaging"
     }
   ],
-  "totalPresetCount": 87
+  "totalPresetCount": 89
 }

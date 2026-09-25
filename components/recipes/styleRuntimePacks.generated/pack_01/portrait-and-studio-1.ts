@@ -8,28 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Studio Headshot',
     category: '1. Portrait And Studio',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter',
+      'generic stock-photo face, celebrity likeness, same model as other presets, illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Studio Headshot acts as a transferable photographic style router: begin from High-end professional studio headshot lighting grammar, clean corporate polish, controlled realism, studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior, and portrait and studio photography system built from lens discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Premium studio headshot photography: one large softbox key, controlled fill, and a seamless backdrop that isolates the sitter with precise, trustworthy polish.',
       subject_treatment:
-        'Treat any prompt subject through Tack-sharp focal plane on primary details, precise edge definition, natural proportions; preserve prompt identity while using focal priority, flattering or deliberately institutional distance, surface realism, and edge control without requiring a human face, keeping the original subject, pose, species, object, or environment legible.',
+        'Crop any subject to head and shoulders with eyes on the upper third; posture is upright and composed, expression relaxed but deliberate, wardrobe and hair kept neat enough to read as intentional.',
       color_and_tone:
-        'Grade with True-to-life neutral material tones, balanced color grading, subtle gradients, solid seamless grey depth field; grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast as photographic capture decisions, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Neutral mid-grey or charcoal seamless, accurate skin tones, restrained saturation, and a gentle vignette from backdrop falloff.',
       lighting_and_shadow:
-        'Use Studio strobe lighting, softbox illumination, classic butterfly-light pattern, controlled specular highlights; make key, fill, rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Large soft key at 30–45 degrees above eye level, fill 1–1.5 stops under, a thin hair light separating the head from the backdrop, and twin clean catchlights.',
       texture_and_material:
-        'Render Hyper-realistic surface texture, fine micro-detail, crisp fabric or material definition; retain pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Real skin pores and fine hair left intact, light blemish cleanup only, fabric weave crisp at the collar.',
       camera_and_composition:
-        'Compose through Shot on 85mm or 105mm portrait lens, flat field of view, undistorted perspective, central composition; use portrait lens compression, central authority, intimate framing distance, frontal ID geometry, or editorial negative space without forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Professional, confident, approachable, clean, formal; derive mood from proximity, pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without demanding a specific story, location, or character.',
+        '85–105 mm portrait lens at f/5.6–8, eye-level camera, tight vertical crop with a little headroom and no environmental clutter.',
+      atmosphere_and_mood: 'Confident, calm, credible, and quietly approachable.',
       rendering_and_quality:
-        'Finish with 8k resolution, commercial photography polish, flawless retouching, photorealistic; finish as real photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Tack-sharp eyes, smooth tonal gradations on the backdrop, and retouching that stays invisible at full size.',
       creative_brief:
-        "Apply Studio Headshot as a photographic preset over prompt X: preserve the user's requested subject, then route High-end professional studio headshot lighting grammar, clean corporate polish, controlled realism, True-to-life neutral material tones, balanced color grading, subtle gradients, solid seamless grey depth field, Studio strobe lighting, softbox illumination, classic butterfly-light pattern, controlled specular highlights, Hyper-realistic surface texture, fine micro-detail, crisp fabric or material definition, and Shot on 85mm or 105mm portrait lens, flat field of view, undistorted perspective, central composition through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Studio Headshot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
-        'High-end professional studio headshot lighting grammar, clean corporate polish, controlled realism; studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior; True-to-life neutral material tones, balanced color grading, subtle gradients, solid seamless grey depth field; Studio strobe lighting, softbox illumination, classic butterfly-light pattern, controlled specular highlights; Shot on 85mm or 105mm portrait lens, flat field of view, undistorted perspective, central composition',
+        'large softbox key; hair-light separation; seamless grey backdrop; invisible retouching; eyes on the upper third',
     },
   },
   {
@@ -37,28 +36,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Candid Street Portrait',
     category: '1. Portrait And Studio',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter',
+      'generic stock-photo face, celebrity likeness, same model as other presets, illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Candid Street Portrait acts as a transferable photographic style router: begin from Authentic candid documentary photography, unposed public-space-derived realism, studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior, and portrait and studio photography system built from lens discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Candid street portraiture: a stranger caught in a genuine moment in public space, available light only, the city present as texture rather than backdrop.',
       subject_treatment:
-        'Treat any prompt subject through Natural depth of field, primary subject isolated from busy context, spontaneous moment quality; preserve prompt identity while using focal priority, flattering or deliberately institutional distance, surface realism, and edge control without requiring a human face, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the subject unposed and mid-action — turning, laughing, pausing, reacting — with gaze either off-lens or a brief startled glance into it.',
       color_and_tone:
-        'Grade with Urban color palette, natural daylight tones, slightly desaturated, realistic contrast; grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast as photographic capture decisions, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Natural urban color with slightly lifted shadows, mixed daylight and practical tints, true skin under real conditions.',
       lighting_and_shadow:
-        'Use Available natural light, dynamic shadows, mixed lighting environments; make key, fill, rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Whatever the street gives: hard sun, open shade, shop spill, or overcast; direction is honest and shadows fall where they fall.',
       texture_and_material:
-        'Render Subtle digital noise or film grain, realistic surface textures, environmental grit; retain pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Real clothing wear, weathered surfaces, light film-like grain, slight motion in background passersby.',
       camera_and_composition:
-        'Compose through Shot on 35mm or 50mm lens, slight motion blur in depth field, dynamic framing; use portrait lens compression, central authority, intimate framing distance, frontal ID geometry, or editorial negative space without forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Real, fleeting, documentary, slice-of-life, energetic; derive mood from proximity, pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without demanding a specific story, location, or character.',
+        '28–50 mm at chest height, off-center subject, foreground elements partially intruding, layered depth with other people or street furniture.',
+      atmosphere_and_mood: 'Immediate, human, unguarded, and a little stolen.',
       rendering_and_quality:
-        'Finish with High quality documentary photography, authentic, unretouched look; finish as real photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Documentary sharpness on the face with natural lens falloff; no studio polish or retouching.',
       creative_brief:
-        "Apply Candid Street Portrait as a photographic preset over prompt X: preserve the user's requested subject, then route Authentic candid documentary photography, unposed public-space-derived realism, Urban color palette, natural daylight tones, slightly desaturated, realistic contrast, Available natural light, dynamic shadows, mixed lighting environments, Subtle digital noise or film grain, realistic surface textures, environmental grit, and Shot on 35mm or 50mm lens, slight motion blur in depth field, dynamic framing through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Candid Street Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
-        'Authentic candid documentary photography, unposed public-space-derived realism; studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior; Urban color palette, natural daylight tones, slightly desaturated, realistic contrast; Available natural light, dynamic shadows, mixed lighting environments; Shot on 35mm or 50mm lens, slight motion blur in depth field, dynamic framing',
+        'unposed mid-action moment; available light; foreground intrusion; layered street depth; honest skin',
     },
   },
   {
@@ -66,28 +64,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Environmental Portrait',
     category: '1. Portrait And Studio',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter',
+      'generic stock-photo face, celebrity likeness, same model as other presets, illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Environmental Portrait acts as a transferable photographic style router: begin from Editorial environmental-portrait grammar, subject integrated with meaningful context, studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior, and portrait and studio photography system built from lens discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Environmental portrait: the sitter placed inside the space that explains them, posed with intent, the room or landscape carrying half the story.',
       subject_treatment:
-        'Treat any prompt subject through Primary subject integrated with surroundings, sharp details across the frame, storytelling composition; preserve prompt identity while using focal priority, flattering or deliberately institutional distance, surface realism, and edge control without requiring a human face, keeping the original subject, pose, species, object, or environment legible.',
+        'Subject faces or acknowledges the camera from within their working or living space, surrounded by tools, objects, or terrain that reveal who they are.',
       color_and_tone:
-        'Grade with Natural and balanced color palette, rich environmental tones, true-to-life colors; grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast as photographic capture decisions, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Naturalistic palette taken from the location, gentle contrast, warm practical sources balanced with window or sky light.',
       lighting_and_shadow:
-        'Use Mixed ambient lighting with subtle flash fill, balanced exposure between subject and depth field; make key, fill, rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Ambient location light shaped with one subtle added source on the face; the environment stays readable in the shadows.',
       texture_and_material:
-        'Render Sharp contextual detail, realistic textures, material clues that support narrative; retain pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Rich tactile detail in the surroundings — worn wood, stone, metal, fabric, dust — rendered as real materials.',
       camera_and_composition:
-        'Compose through Wide-angle lens (24mm or 35mm), deep depth of field, contextual framing; use portrait lens compression, central authority, intimate framing distance, frontal ID geometry, or editorial negative space without forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Informative, personal, narrative-driven, authentic; derive mood from proximity, pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without demanding a specific story, location, or character.',
+        '24–35 mm, subject at one third, deep depth of field so the environment stays legible, strong leading lines toward the sitter.',
+      atmosphere_and_mood: 'Grounded, dignified, and narrative.',
       rendering_and_quality:
-        'Finish with Editorial magazine quality, high resolution, crisp details; finish as real photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Editorial magazine finish with believable exposure across subject and space.',
       creative_brief:
-        "Apply Environmental Portrait as a photographic preset over prompt X: preserve the user's requested subject, then route Editorial environmental-portrait grammar, subject integrated with meaningful context, Natural and balanced color palette, rich environmental tones, true-to-life colors, Mixed ambient lighting with subtle flash fill, balanced exposure between subject and depth field, Sharp contextual detail, realistic textures, material clues that support narrative, and Wide-angle lens (24mm or 35mm), deep depth of field, contextual framing through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Environmental Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
-        'Editorial environmental-portrait grammar, subject integrated with meaningful context; studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior; Natural and balanced color palette, rich environmental tones, true-to-life colors; Mixed ambient lighting with subtle flash fill, balanced exposure between subject and depth field; Wide-angle lens (24mm or 35mm), deep depth of field, contextual framing',
+        'sitter inside their world; deep depth of field; environment as narrative; subtle added face light; leading lines',
     },
   },
   {
@@ -95,28 +92,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Glamour Shot',
     category: '1. Portrait And Studio',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter',
+      'generic stock-photo face, celebrity likeness, same model as other presets, illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Glamour Shot acts as a transferable photographic style router: begin from High-fashion glamour photography, luxurious magazine-cover polish, studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior, and portrait and studio photography system built from lens discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Old-Hollywood-meets-magazine glamour: sculpted beauty light, luxurious styling, and a posed, idealized presence built for a cover.',
       subject_treatment:
-        'Treat any prompt subject through Idealized primary forms, soft cosmetic smoothing, selective tack-sharp accents; preserve prompt identity while using focal priority, flattering or deliberately institutional distance, surface realism, and edge control without requiring a human face, keeping the original subject, pose, species, object, or environment legible.',
+        'Pose the subject with elongated neck, deliberate hands and a confident gaze; hair, makeup and wardrobe are styled and immaculate.',
       color_and_tone:
-        'Grade with Vibrant accent colors, saturated rich tones, high-end color grading; grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast as photographic capture decisions, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Rich jewel tones or deep monochrome backdrops, luminous skin, glossy highlights, deep saturated accents.',
       lighting_and_shadow:
-        'Use Ring light or beauty dish illumination, even and flattering light, minimal harsh shadows; make key, fill, rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Butterfly or loop key from a beauty dish, reflector fill under the chin, strong hair light and a glowing rim that separates the silhouette.',
       texture_and_material:
-        'Render Flawless smoothing, glossy highlights, shimmering cosmetic surfaces, luxurious fabric or material textures; retain pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Velvet, satin, sequins, pearls and glossy lips rendered with sparkle; skin refined but still dimensional.',
       camera_and_composition:
-        'Compose through Close-up beauty crop, flattering angles, undistorted perspective; use portrait lens compression, central authority, intimate framing distance, frontal ID geometry, or editorial negative space without forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Beautiful, expensive, alluring, polished, high-end; derive mood from proximity, pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without demanding a specific story, location, or character.',
+        '85–135 mm, slightly low or eye-level, waist-up or three-quarter crop with space for the pose.',
+      atmosphere_and_mood: 'Seductive confidence, opulence, and star power.',
       rendering_and_quality:
-        'Finish with Magazine cover quality, heavily retouched, 8k resolution, hyper-realistic; finish as real photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'High-gloss magazine finish with specular sparkle and controlled retouching.',
       creative_brief:
-        "Apply Glamour Shot as a photographic preset over prompt X: preserve the user's requested subject, then route High-fashion glamour photography, luxurious magazine-cover polish, Vibrant accent colors, saturated rich tones, high-end color grading, Ring light or beauty dish illumination, even and flattering light, minimal harsh shadows, Flawless smoothing, glossy highlights, shimmering cosmetic surfaces, luxurious fabric or material textures, and Close-up beauty crop, flattering angles, undistorted perspective through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glamour Shot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
-        'High-fashion glamour photography, luxurious magazine-cover polish; studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior; Vibrant accent colors, saturated rich tones, high-end color grading; Ring light or beauty dish illumination, even and flattering light, minimal harsh shadows; Close-up beauty crop, flattering angles, undistorted perspective',
+        'beauty-dish butterfly light; glowing rim; jewel-tone styling; sculpted pose; specular sparkle',
     },
   },
   {
@@ -124,28 +120,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cinematic Close-up',
     category: '1. Portrait And Studio',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter',
+      'generic stock-photo face, celebrity likeness, same model as other presets, abstract glass sculpture, faceless prism, illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cinematic Close-up acts as a transferable photographic style router: begin from Cinematic movie still close-up, dramatic film photography, studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior, and portrait and studio photography system built from lens discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Cinematic close-up still: a single frame lifted from a feature film, face filling the screen with motivated light, story implied off-frame.',
       subject_treatment:
-        'Treat any prompt subject through Extremely shallow depth of field, sharp focus on the primary detail, soft out-of-focus depth field; preserve prompt identity while using focal priority, flattering or deliberately institutional distance, surface realism, and edge control without requiring a human face, keeping the original subject, pose, species, object, or environment legible.',
+        'Push in close on the face or a telling detail; expression mid-emotion as if reacting to something outside the frame.',
       color_and_tone:
-        'Grade with Cinematic color grading, teal and orange split toning, rich cinematic contrast; grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast as photographic capture decisions, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Deliberate film grade — teal shadows against warm skin, or a single dominant hue — with rich blacks and soft highlight rolloff.',
       lighting_and_shadow:
-        'Use Dramatic Rembrandt lighting, strong directional light, deep shadows; make key, fill, rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Motivated practical sources (lamp, window, fire, screen), hard edge light and deep negative fill on the far side of the face.',
       texture_and_material:
-        'Render Cinematic film grain, detailed surface texture, anamorphic lens flares; retain pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Fine film grain, subtle halation around highlights, visible skin texture and sweat or tears when present.',
       camera_and_composition:
-        'Compose through Shot on anamorphic lens, beautiful bokeh depth field, tight emotional framing; use portrait lens compression, central authority, intimate framing distance, frontal ID geometry, or editorial negative space without forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Emotional, dramatic, intense, narrative, moody; derive mood from proximity, pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Anamorphic-feeling 2.39 energy inside a vertical frame: extreme close-up, shallow focus, eyes off-center, background bokeh ovals.',
+      atmosphere_and_mood: 'Tense, intimate, and narrative — a moment before something happens.',
       rendering_and_quality:
-        'Finish with 4K cinematic render, filmic look, high production value; finish as real photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Cinema-camera look with filmic rolloff and no digital oversharpening.',
       creative_brief:
-        "Apply Cinematic Close-up as a photographic preset over prompt X: preserve the user's requested subject, then route Cinematic movie still close-up, dramatic film photography, Cinematic color grading, teal and orange split toning, rich cinematic contrast, Dramatic Rembrandt lighting, strong directional light, deep shadows, Cinematic film grain, detailed surface texture, anamorphic lens flares, and Shot on anamorphic lens, beautiful bokeh depth field, tight emotional framing through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cinematic Close-up as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
-        'Cinematic movie still close-up, dramatic film photography; studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior; Cinematic color grading, teal and orange split toning, rich cinematic contrast; Dramatic Rembrandt lighting, strong directional light, deep shadows; Shot on anamorphic lens, beautiful bokeh depth field, tight emotional framing',
+        'extreme close-up; motivated practical light; film grade; oval bokeh; off-frame story',
     },
   },
   {
@@ -153,28 +148,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Selfie Style',
     category: '1. Portrait And Studio',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter',
+      'generic stock-photo face, celebrity likeness, same model as other presets, illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Selfie Style acts as a transferable photographic style router: begin from Smartphone front-facing camera selfie, social media aesthetic, casual and spontaneous, studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior, and portrait and studio photography system built from lens discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Front-camera smartphone selfie: arm-length wide lens, casual social framing, computational processing, and the charm of an unplanned moment.',
       subject_treatment:
-        'Treat any prompt subject through Wide-angle near-camera distortion, informal proximity, primary forms slightly exaggerated by lens distance; preserve prompt identity while using focal priority, flattering or deliberately institutional distance, surface realism, and edge control without requiring a human face, keeping the original subject, pose, species, object, or environment legible.',
+        'Subject holds the phone (arm or shoulder visible), face slightly distorted by the wide lens, expression playful, tired, or mid-reaction.',
       color_and_tone:
-        'Grade with Smartphone image processing, vibrant colors, slightly over-sharpened; grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast as photographic capture decisions, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Phone HDR look: lifted shadows, slightly punchy saturation, warm skin smoothing, bright sky retained.',
       lighting_and_shadow:
-        'Use Flat front-facing light, screen glow, or harsh direct sunlight; make key, fill, rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Whatever light is available — window, screen glow, flash-less night, harsh sun — with the flat evenness of HDR merging.',
       texture_and_material:
-        'Render Digital smoothing algorithms, slight digital noise in shadows; retain pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Mild computational smoothing and sharpening halos, small noise in shadows, real everyday clothing.',
       camera_and_composition:
-        'Compose through Extreme wide-angle perspective, high or low angle, casual framing; use portrait lens compression, central authority, intimate framing distance, frontal ID geometry, or editorial negative space without forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Fun, personal, candid, relatable, modern; derive mood from proximity, pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Wide 24–26 mm equivalent from arm length, face large and off-center, background context partially cut, occasional tilt.',
+      atmosphere_and_mood: 'Spontaneous, personal, and shareable.',
       rendering_and_quality:
-        'Finish with Social media quality, realistic smartphone photo look; finish as real photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Convincing phone image, not a professional portrait; no studio polish.',
       creative_brief:
-        "Apply Selfie Style as a photographic preset over prompt X: preserve the user's requested subject, then route Smartphone front-facing camera selfie, social media aesthetic, casual and spontaneous, Smartphone image processing, vibrant colors, slightly over-sharpened, Flat front-facing light, screen glow, or harsh direct sunlight, Digital smoothing algorithms, slight digital noise in shadows, and Extreme wide-angle perspective, high or low angle, casual framing through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Selfie Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
-        'Smartphone front-facing camera selfie, social media aesthetic, casual and spontaneous; studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior; Smartphone image processing, vibrant colors, slightly over-sharpened; Flat front-facing light, screen glow, or harsh direct sunlight; Extreme wide-angle perspective, high or low angle, casual framing',
+        'arm-length wide lens; phone HDR; computational smoothing; tilted casual framing; visible arm',
     },
   },
   {
@@ -182,28 +176,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Silhouette Portrait',
     category: '1. Portrait And Studio',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter',
+      'generic stock-photo face, celebrity likeness, same model as other presets, illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Silhouette Portrait acts as a transferable photographic style router: begin from Dramatic silhouette photography, dark outline against a bright depth field, studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior, and portrait and studio photography system built from lens discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Silhouette portraiture: the subject reduced to a pure dark shape against an intensely bright field, identity carried entirely by profile and outline.',
       subject_treatment:
-        'Treat any prompt subject through Sharp contour edge, obscured internal detail, focus on shape and form; preserve prompt identity while using focal priority, flattering or deliberately institutional distance, surface realism, and edge control without requiring a human face, keeping the original subject, pose, species, object, or environment legible.',
+        'Turn the subject toward profile or a clear three-quarter outline so nose, hair, hands, props, or clothing edges read instantly as shape.',
       color_and_tone:
-        'Grade with Pure black primary form, vibrant or bright depth field colors, extreme high contrast; grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast as photographic capture decisions, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Near-black figure against a luminous background — sunset gradient, bright sky, glowing fog, or white window — with no detail inside the shape.',
       lighting_and_shadow:
-        'Use Strong backlighting, no front fill light, blown-out depth field highlights; make key, fill, rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'All light comes from behind; exposure is set for the background so the subject falls to black, with a thin halo where light wraps edges.',
       texture_and_material:
-        'Render No interior texture on the primary form, smooth depth field gradients; retain pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Texture exists only in the background (clouds, haze, glow); the silhouette itself is smooth and graphic.',
       camera_and_composition:
-        'Compose through Graphic composition, strong negative space, clear outline; use portrait lens compression, central authority, intimate framing distance, frontal ID geometry, or editorial negative space without forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Mysterious, dramatic, anonymous, artistic, epic; derive mood from proximity, pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Clean separation between shape and background, generous negative space, low or eye-level camera to lift the outline against the light.',
+      atmosphere_and_mood: 'Mysterious, poetic, and iconic.',
       rendering_and_quality:
-        'Finish with High quality artistic photography, crisp edges; finish as real photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Crisp outline edges, no muddy gray inside the figure, smooth luminous gradient behind.',
       creative_brief:
-        "Apply Silhouette Portrait as a photographic preset over prompt X: preserve the user's requested subject, then route Dramatic silhouette photography, dark outline against a bright depth field, Pure black primary form, vibrant or bright depth field colors, extreme high contrast, Strong backlighting, no front fill light, blown-out depth field highlights, No interior texture on the primary form, smooth depth field gradients, and Graphic composition, strong negative space, clear outline through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Silhouette Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
-        'Dramatic silhouette photography, dark outline against a bright depth field; studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior; Pure black primary form, vibrant or bright depth field colors, extreme high contrast; Strong backlighting, no front fill light, blown-out depth field highlights; Graphic composition, strong negative space, clear outline',
+        'pure black shape; backlit exposure; readable profile outline; luminous background gradient; edge halo',
     },
   },
   {
@@ -211,28 +204,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Double Exposure Portrait',
     category: '1. Portrait And Studio',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter',
+      'generic stock-photo face, celebrity likeness, same model as other presets, recognizable public figure, city landmark, illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Double Exposure Portrait acts as a transferable photographic style router: begin from Artistic double exposure photography, primary form blended seamlessly with secondary imagery, studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior, and portrait and studio photography system built from lens discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'In-camera double exposure portrait: a clean profile silhouette filled with a second image — landscape, texture, or scene — blended through the bright areas of the first.',
       subject_treatment:
-        'Treat any prompt subject through Ghostly overlay of forms, silhouette or shape filled with secondary exposure texture; preserve prompt identity while using focal priority, flattering or deliberately institutional distance, surface realism, and edge control without requiring a human face, keeping the original subject, pose, species, object, or environment legible.',
+        'Use a strong profile or three-quarter head as the container; the secondary image fills the shape while the outline and a few facial features stay readable.',
       color_and_tone:
-        'Grade with Dreamy and mixed color palette, ethereal tones, low contrast blending; grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast as photographic capture decisions, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Soft, airy base with the secondary image in muted or monochrome tones; white or pale backgrounds let the blend breathe.',
       lighting_and_shadow:
-        'Use High key lighting base, complex overlapping shadows and highlights; make key, fill, rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Portrait lit high-key against white so dark areas accept the second image; secondary scene keeps its own natural light.',
       texture_and_material:
-        'Render Multiple exposure textures, blended surface and environmental pattern layers; retain pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Organic overlaps — branches, mountains, water, crowds — dissolving into skin and hair with smooth transitions.',
       camera_and_composition:
-        'Compose through Surreal blending of two distinct perspectives, creative masking; use portrait lens compression, central authority, intimate framing distance, frontal ID geometry, or editorial negative space without forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Dreamy, conceptual, surreal, poetic, melancholic; derive mood from proximity, pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Fine art photography, seamless blending, highly detailed; finish as real photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Profile placed to one side, the second image aligned so its focal point sits inside the head, clean negative space around.',
+      atmosphere_and_mood: 'Dreamlike, reflective, and symbolic.',
+      rendering_and_quality: 'Seamless photographic blend without cut-out edges or collage seams.',
       creative_brief:
-        "Apply Double Exposure Portrait as a photographic preset over prompt X: preserve the user's requested subject, then route Artistic double exposure photography, primary form blended seamlessly with secondary imagery, Dreamy and mixed color palette, ethereal tones, low contrast blending, High key lighting base, complex overlapping shadows and highlights, Multiple exposure textures, blended surface and environmental pattern layers, and Surreal blending of two distinct perspectives, creative masking through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Double Exposure Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
-        'Artistic double exposure photography, primary form blended seamlessly with secondary imagery; studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior; Dreamy and mixed color palette, ethereal tones, low contrast blending; High key lighting base, complex overlapping shadows and highlights; Surreal blending of two distinct perspectives, creative masking',
+        'profile as container; second image inside the silhouette; white negative space; seamless blend; symbolic pairing',
     },
   },
   {
@@ -240,28 +231,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'High Key Portrait',
     category: '1. Portrait And Studio',
     negativePrompt:
-      'dark, shadows, black, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter',
+      'generic stock-photo face, celebrity likeness, same model as other presets, dark, shadows, black, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'High Key Portrait acts as a transferable photographic style router: begin from High key studio portraiture, bright and airy photography, studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior, and portrait and studio photography system built from lens discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'High-key portraiture: a bright, nearly shadowless white world where the subject floats in clean light and soft pastel accents.',
       subject_treatment:
-        'Treat any prompt subject through Low contrast edges, soft features, minimal shadow on primary forms; preserve prompt identity while using focal priority, flattering or deliberately institutional distance, surface realism, and edge control without requiring a human face, keeping the original subject, pose, species, object, or environment legible.',
+        'Subject in light-toned wardrobe or with pale props, open expression, full or half figure placed against endless white.',
       color_and_tone:
-        'Grade with Predominantly white and pastel tones, pale material tones, pure white depth field; grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast as photographic capture decisions, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Whites, creams and soft pastels dominate; dark values limited to eyes, hair and small accents.',
       lighting_and_shadow:
-        'Use Overexposed wrap-around lighting, multiple softboxes, shadowless environment; make key, fill, rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
-      texture_and_material:
-        'Render Soft airy textures, smooth surfaces, bright fabrics or pale materials; retain pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Background blown 1–2 stops over the key, large wrap-around soft sources, minimal shadow under the chin only.',
+      texture_and_material: 'Airy fabrics, sheer layers, soft hair; skin luminous but real.',
       camera_and_composition:
-        'Compose through Blown out highlights in the depth field, clean and minimal framing; use portrait lens compression, central authority, intimate framing distance, frontal ID geometry, or editorial negative space without forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Happy, pure, clean, optimistic, ethereal; derive mood from proximity, pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Clean centered or rule-of-thirds placement, lots of white negative space, eye-level camera.',
+      atmosphere_and_mood: 'Fresh, weightless, optimistic, and serene.',
       rendering_and_quality:
-        'Finish with Commercial beauty polish, crisp but soft, high resolution; finish as real photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Clean exposure without clipping skin, smooth white field, crisp eyes.',
       creative_brief:
-        "Apply High Key Portrait as a photographic preset over prompt X: preserve the user's requested subject, then route High key studio portraiture, bright and airy photography, Predominantly white and pastel tones, pale material tones, pure white depth field, Overexposed wrap-around lighting, multiple softboxes, shadowless environment, Soft airy textures, smooth surfaces, bright fabrics or pale materials, and Blown out highlights in the depth field, clean and minimal framing through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies High Key Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
-        'High key studio portraiture, bright and airy photography; studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior; Predominantly white and pastel tones, pale material tones, pure white depth field; Overexposed wrap-around lighting, multiple softboxes, shadowless environment; Blown out highlights in the depth field, clean and minimal framing',
+        'blown white background; shadowless wrap light; pastel accents; floating subject; clean negative space',
     },
   },
   {
@@ -269,28 +258,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Low Key Portrait',
     category: '1. Portrait And Studio',
     negativePrompt:
-      'bright, white, day, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter',
+      'generic stock-photo face, celebrity likeness, same model as other presets, bright, white, day, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Low Key Portrait acts as a transferable photographic style router: begin from Low key moody portraiture, dark and dramatic photography, studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior, and portrait and studio photography system built from lens discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Low-key portraiture: a figure carved out of darkness by one narrow source, most of the frame surrendered to deep shadow.',
       subject_treatment:
-        'Treat any prompt subject through Primary details partially hidden in deep shadow, strong emphasis on form and shape; preserve prompt identity while using focal priority, flattering or deliberately institutional distance, surface realism, and edge control without requiring a human face, keeping the original subject, pose, species, object, or environment legible.',
+        'Reveal only the planes that matter — one side of the face, a hand, an edge of clothing — letting the rest fall into black.',
       color_and_tone:
-        'Grade with Deep blacks, rich dark tones, minimal color saturation, pure black depth field; grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast as photographic capture decisions, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Deep blacks and rich dark tones, muted desaturated color, highlights restrained to a small area.',
       lighting_and_shadow:
-        'Use Single source rim light or side light, harsh shadows, high contrast chiaroscuro; make key, fill, rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Single hard or gridded source from the side or above, no fill, sharp falloff into black background.',
       texture_and_material:
-        'Render Shadow noise, highlighted textures on the lit edge of the subject; retain pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Skin texture, stubble, wrinkles and fabric grain emphasized by raking light.',
       camera_and_composition:
-        'Compose through Obscured features, tight framing, focus on the interplay of light and dark; use portrait lens compression, central authority, intimate framing distance, frontal ID geometry, or editorial negative space without forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Mysterious, intense, serious, cinematic, brooding; derive mood from proximity, pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Tight crop, subject off-center, large black negative space, eye-level or slightly below.',
+      atmosphere_and_mood: 'Brooding, secretive, grave, and intense.',
       rendering_and_quality:
-        'Finish with Dramatic fine art photography, deep rich blacks, high resolution; finish as real photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Clean noise-free blacks with detailed highlights; no muddy gray shadows.',
       creative_brief:
-        "Apply Low Key Portrait as a photographic preset over prompt X: preserve the user's requested subject, then route Low key moody portraiture, dark and dramatic photography, Deep blacks, rich dark tones, minimal color saturation, pure black depth field, Single source rim light or side light, harsh shadows, high contrast chiaroscuro, Shadow noise, highlighted textures on the lit edge of the subject, and Obscured features, tight framing, focus on the interplay of light and dark through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Low Key Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
-        'Low key moody portraiture, dark and dramatic photography; studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior; Deep blacks, rich dark tones, minimal color saturation, pure black depth field; Single source rim light or side light, harsh shadows, high contrast chiaroscuro; Obscured features, tight framing, focus on the interplay of light and dark',
+        'single gridded source; no fill; black negative space; raking texture; restrained highlights',
     },
   },
   {
@@ -298,28 +286,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fashion Editorial',
     category: '1. Portrait And Studio',
     negativePrompt:
-      'boring, plain, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter',
+      'generic stock-photo face, celebrity likeness, same model as other presets, boring, plain, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Fashion Editorial acts as a transferable photographic style router: begin from Magazine spread, Styling-first focus, and portrait and studio photography system built from lens discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Fashion editorial photography: styling-first images built as a magazine story, with graphic poses, bold silhouettes, and concept-driven sets.',
       subject_treatment:
-        'Treat any prompt subject through Dynamic editorial geometry; preserve prompt identity while using focal priority, flattering or deliberately institutional distance, surface realism, and edge control without requiring a human face, keeping the original subject, pose, species, object, or environment legible.',
+        'Pose the subject for silhouette and garment — elongated lines, angular limbs, sculptural stances — letting clothing shape drive the image.',
       color_and_tone:
-        'Grade with Color graded, trendy; grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast as photographic capture decisions, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Editorial grade chosen per story: tonal monochrome, a single bold color block, or muted desaturation with one accent.',
       lighting_and_shadow:
-        'Use Creative studio; make key, fill, rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Crisp studio strobe or hard sun creating graphic shadows, sometimes a colored gel as a design element.',
       texture_and_material:
-        'Render Fabriclike surface detail; retain pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Fabric drape, structured tailoring, leather, sheer layers, and statement accessories rendered with precision.',
       camera_and_composition:
-        'Compose through Elongated limbs; use portrait lens compression, central authority, intimate framing distance, frontal ID geometry, or editorial negative space without forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Cool, expensive; derive mood from proximity, pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Full-length or three-quarter framing, graphic negative space, set pieces or color planes used as composition.',
+      atmosphere_and_mood: 'Aloof, stylish, conceptual, and assertive.',
       rendering_and_quality:
-        'Finish with Vogue, high end; finish as real photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'High-end editorial finish, crisp garment detail, controlled skin retouch.',
       key_features:
-        'Magazine spread; Styling-first focus; Color graded, trendy; Creative studio; Elongated limbs',
+        'silhouette-first posing; concept set; graphic hard light; color-block backdrop; garment precision',
       creative_brief:
-        "Apply Fashion Editorial as a photographic preset over prompt X: preserve the user's requested subject, then route Magazine spread, Color graded, trendy, Creative studio, Fabriclike surface detail, and Elongated limbs through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fashion Editorial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -327,28 +314,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Wedding Photography',
     category: '1. Portrait And Studio',
     negativePrompt:
-      'sad, dark, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter',
+      'generic stock-photo face, celebrity likeness, same model as other presets, sad, dark, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Wedding Photography acts as a transferable photographic style router: begin from Airy ceremony editorial, Veil-like backlight, and portrait and studio photography system built from lens discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Wedding photography: luminous, romantic documentary of a ceremony or couple, balancing candid emotion with editorial composition.',
       subject_treatment:
-        'Treat any prompt subject through Soft romantic; preserve prompt identity while using focal priority, flattering or deliberately institutional distance, surface realism, and edge control without requiring a human face, keeping the original subject, pose, species, object, or environment legible.',
+        'Adult couples or wedding participants in genuine interaction — vows, laughter, embraces — with dress, veil and details celebrated.',
       color_and_tone:
-        'Grade with White, pastel, airy; grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast as photographic capture decisions, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Airy whites, soft pastels and warm skin, lifted shadows, gentle golden highlights.',
       lighting_and_shadow:
-        'Use Backlit sun; make key, fill, rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Backlit sun or window glow creating a halo through veil and hair, soft reflector fill on faces.',
       texture_and_material:
-        'Render Lace-like softness, floral color hints; retain pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Lace, tulle, flowers, candlelight and natural materials rendered delicately.',
       camera_and_composition:
-        'Compose through Wedding Photography studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior; use portrait lens compression, central authority, intimate framing distance, frontal ID geometry, or editorial negative space without forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Romantic, luminous; derive mood from proximity, pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Romantic, expensive; finish as real photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Mix of intimate close framing and wider scene-setting views, shallow depth of field, layered foreground flowers or guests.',
+      atmosphere_and_mood: 'Tender, joyful, and timeless.',
+      rendering_and_quality: 'Fine-art wedding finish with soft glow and clean skin.',
       key_features:
-        'Airy ceremony editorial; Veil-like backlight; White, pastel, airy; Backlit sun; Wedding Photography studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior',
+        'backlit veil halo; candid emotion; airy pastel grade; layered foreground flowers; shallow depth',
       creative_brief:
-        "Apply Wedding Photography as a photographic preset over prompt X: preserve the user's requested subject, then route Airy ceremony editorial, White, pastel, airy, Backlit sun, Lace-like softness, floral color hints, and Wedding Photography studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wedding Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -356,28 +341,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Newborn Photography',
     category: '1. Portrait And Studio',
     negativePrompt:
-      'harsh, chaotic, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter',
+      'generic stock-photo face, celebrity likeness, same model as other presets, unsafe infant pose, nudity, harsh, chaotic, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Newborn Photography acts as a transferable photographic style router: begin from Newborn studio softness, Resting tenderness, and portrait and studio photography system built from lens discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Newborn photography: gentle, protected studio portraits of a sleeping infant with soft wraps, warm neutrals, and handmade props.',
       subject_treatment:
-        'Treat any prompt subject through Curled gentle forms; preserve prompt identity while using focal priority, flattering or deliberately institutional distance, surface realism, and edge control without requiring a human face, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Cream, beige, soft; grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast as photographic capture decisions, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Infant asleep and safely supported — swaddled, cradled, or curled — with tiny hands, feet and features as the focus; adult hands may appear for scale.',
+      color_and_tone: 'Cream, oatmeal, soft sage and blush, low contrast, warm skin.',
       lighting_and_shadow:
-        'Use Window light; make key, fill, rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Large window or softbox from one side, feathered, with soft gentle shadow modeling.',
       texture_and_material:
-        'Render Knitted softness, delicate surface; retain pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
-      camera_and_composition:
-        'Compose through Newborn Photography studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior; use portrait lens compression, central authority, intimate framing distance, frontal ID geometry, or editorial negative space without forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Tiny, fragile; derive mood from proximity, pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Peaceful studio tenderness; finish as real photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Knitted wraps, fur, wool, woven baskets and muslin rendered tactile and soft.',
+      camera_and_composition: 'Overhead or low close framing, shallow focus, calm negative space.',
+      atmosphere_and_mood: 'Peaceful, tender, and hushed.',
+      rendering_and_quality: 'Delicate skin rendering and soft focus falloff; no harsh retouching.',
       key_features:
-        'Newborn studio softness; Resting tenderness; Cream, beige, soft; Window light; Newborn Photography studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior',
+        'safely supported sleeping infant; knitted textures; feathered window light; warm neutrals; hushed calm',
       creative_brief:
-        "Apply Newborn Photography as a photographic preset over prompt X: preserve the user's requested subject, then route Newborn studio softness, Cream, beige, soft, Window light, Knitted softness, delicate surface, and Newborn Photography studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Newborn Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -385,28 +366,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Boudoir Photography',
     category: '1. Portrait And Studio',
     negativePrompt:
-      'explicit, harsh, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter',
+      'generic stock-photo face, celebrity likeness, same model as other presets, explicit nudity, explicit, harsh, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Boudoir Photography acts as a transferable photographic style router: begin from Intimate portrait, Protected intimacy, and portrait and studio photography system built from lens discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Boudoir photography: an intimate, respectful adult portrait in a private interior, sensual through light, fabric and mood rather than exposure.',
       subject_treatment:
-        'Treat any prompt subject through Soft curve emphasis; preserve prompt identity while using focal priority, flattering or deliberately institutional distance, surface realism, and edge control without requiring a human face, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Warm, dark, red; grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast as photographic capture decisions, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Adult subject relaxed and in control, draped fabric, lingerie, robes or oversized shirts; pose emphasizes confidence and personal comfort.',
+      color_and_tone: 'Warm dark interiors, deep reds, wine and amber, soft skin glow.',
       lighting_and_shadow:
-        'Use Moody, window; make key, fill, rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
-      texture_and_material:
-        'Render Lace-like texture, soft fabric, warm surface; retain pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Soft window or single warm lamp from the side, deep gentle shadows, highlight along shoulders and hair.',
+      texture_and_material: 'Silk, lace, velvet, rumpled linen and warm skin rendered tactile.',
       camera_and_composition:
-        'Compose through Boudoir Photography studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior; use portrait lens compression, central authority, intimate framing distance, frontal ID geometry, or editorial negative space without forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Intimate, soft; derive mood from proximity, pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Sensual, private; finish as real photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Close to medium framing, shallow depth, layered foreground fabric or curtains.',
+      atmosphere_and_mood: 'Intimate, confident, private, and warm.',
+      rendering_and_quality: 'Tasteful fine-art finish, no explicit nudity.',
       key_features:
-        'Intimate portrait; Protected intimacy; Warm, dark, red; Moody, window; Boudoir Photography studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior',
+        'warm side window light; draped fabric; deep wine tones; confident adult pose; tasteful intimacy',
       creative_brief:
-        "Apply Boudoir Photography as a photographic preset over prompt X: preserve the user's requested subject, then route Intimate portrait, Warm, dark, red, Moody, window, Lace-like texture, soft fabric, warm surface, and Boudoir Photography studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Boudoir Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -414,28 +391,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'School Portrait',
     category: '1. Portrait And Studio',
     negativePrompt:
-      'cool, candid, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter',
+      'generic stock-photo face, celebrity likeness, same model as other presets, cool, candid, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'School Portrait acts as a transferable photographic style router: begin from Awkward yearbook studio, Laser depth field, and portrait and studio photography system built from lens discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Institutional school portrait: flat studio flash, mottled laser backdrop, and the awkward charm of picture day.',
       subject_treatment:
-        'Treat any prompt subject through Stiff central composition; preserve prompt identity while using focal priority, flattering or deliberately institutional distance, surface realism, and edge control without requiring a human face, keeping the original subject, pose, species, object, or environment legible.',
+        'Subject faces forward, shoulders square, posed smile or stiff expression, hair and clothes slightly imperfect.',
       color_and_tone:
-        'Grade with Blue mottled depth field; grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast as photographic capture decisions, with value separation and white balance choices that feel captured in-camera rather than painted over.',
-      lighting_and_shadow:
-        'Use Flat studio; make key, fill, rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
-      texture_and_material:
-        'Render Cheesy studio texture; retain pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Saturated backdrop — mottled blue, gray or rainbow laser — with slightly warm flash skin.',
+      lighting_and_shadow: 'On-axis umbrella flash, faint shadow behind the head, flat even face.',
+      texture_and_material: 'Everyday clothes, visible hair flyaways, slight print-lab softness.',
       camera_and_composition:
-        'Compose through Forced frontal stiffness; use portrait lens compression, central authority, intimate framing distance, frontal ID geometry, or editorial negative space without forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Awkward, funny; derive mood from proximity, pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Nostalgic, cheesy; finish as real photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Centered head-and-shoulders, identical framing to a yearbook grid, eye-level.',
+      atmosphere_and_mood: 'Nostalgic, awkward, endearing, and a little absurd.',
+      rendering_and_quality: 'Lab-printed yearbook look with mild softness and vivid backdrop.',
       key_features:
-        'Awkward yearbook studio; Laser depth field; Blue mottled depth field; Flat studio; Forced frontal stiffness',
+        'mottled laser backdrop; flat on-axis flash; forced smile; centered yearbook crop; picture-day awkwardness',
       creative_brief:
-        "Apply School Portrait as a photographic preset over prompt X: preserve the user's requested subject, then route Awkward yearbook studio, Blue mottled depth field, Flat studio, Cheesy studio texture, and Forced frontal stiffness through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies School Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -443,28 +416,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mugshot',
     category: '1. Portrait And Studio',
     negativePrompt:
-      'happy, posed, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter',
+      'generic stock-photo face, celebrity likeness, same model as other presets, readable numbers, real mugshot likeness, happy, posed, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Mugshot acts as a transferable photographic style router: begin from Booking-documentation photo, Height lines, and portrait and studio photography system built from lens discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Booking photograph: deadpan frontal documentation with a height chart, flat light and bureaucratic indifference.',
       subject_treatment:
-        'Treat any prompt subject through Height chart; preserve prompt identity while using focal priority, flattering or deliberately institutional distance, surface realism, and edge control without requiring a human face, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Grey, flat; grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast as photographic capture decisions, with value separation and white balance choices that feel captured in-camera rather than painted over.',
-      lighting_and_shadow:
-        'Use Flat; make key, fill, rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Subject faces straight into the lens, shoulders square, neutral or defiant expression; disheveled details tell the story.',
+      color_and_tone: 'Flat grays and institutional off-whites, slightly green fluorescent cast.',
+      lighting_and_shadow: 'Flat on-camera flash, hard shadow on the height chart behind.',
       texture_and_material:
-        'Render Rough factual surface; retain pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Harsh skin detail, bruises, smeared makeup, torn collars — rendered plainly.',
       camera_and_composition:
-        'Compose through Deadpan frontal flattening; use portrait lens compression, central authority, intimate framing distance, frontal ID geometry, or editorial negative space without forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Serious, trouble; derive mood from proximity, pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Raw institutional record; finish as real photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Centered head-and-shoulders against horizontal height lines without readable numbers.',
+      atmosphere_and_mood: 'Deadpan, bleak, and darkly funny.',
+      rendering_and_quality: 'Documentary flatness, no flattering retouch.',
       key_features:
-        'Booking-documentation photo; Height lines; Grey, flat; Flat; Deadpan frontal flattening',
+        'height-line backdrop; flat on-camera flash; deadpan frontal pose; institutional color cast; disheveled detail',
       creative_brief:
-        "Apply Mugshot as a photographic preset over prompt X: preserve the user's requested subject, then route Booking-documentation photo, Grey, flat, Flat, Rough factual surface, and Deadpan frontal flattening through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mugshot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -472,28 +441,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Passport Photo',
     category: '1. Portrait And Studio',
     negativePrompt:
-      'smiling, artistic, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter',
+      'generic stock-photo face, celebrity likeness, same model as other presets, smiling, artistic, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Passport Photo acts as a transferable photographic style router: begin from ID photo, White depth field, and portrait and studio photography system built from lens discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Official ID photograph: strict frontal symmetry, white background, shadowless light, zero expression — the administrative portrait.',
       subject_treatment:
-        'Treat any prompt subject through Front-facing central geometry; preserve prompt identity while using focal priority, flattering or deliberately institutional distance, surface realism, and edge control without requiring a human face, keeping the original subject, pose, species, object, or environment legible.',
+        'Subject square to the lens, neutral mouth, both ears and full face visible, head centered and level.',
       color_and_tone:
-        'Grade with White depth field; grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast as photographic capture decisions, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Pure white or pale gray background, neutral accurate skin, no creative grade.',
       lighting_and_shadow:
-        'Use Flat, shadowless; make key, fill, rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
-      texture_and_material:
-        'Render Clean photographic skin, plain backdrop paper, controlled retouch, official-document sharpness, and fabric detail kept subtle; retain pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Even frontal light from two sides, no shadow on the background, minimal facial shadow.',
+      texture_and_material: 'Plain clothing, visible real skin, no accessories hiding the face.',
       camera_and_composition:
-        'Compose through Neutral administrative flattening; use portrait lens compression, central authority, intimate framing distance, frontal ID geometry, or editorial negative space without forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Official, deadpan; derive mood from proximity, pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Bureaucratic, boring; finish as real photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Tightly centered head with fixed proportions, eyes at the same height every time.',
+      atmosphere_and_mood: 'Neutral, clinical, and faintly absurd when the subject is unusual.',
+      rendering_and_quality: 'Sharp, flat, compliant image without artistic effects.',
       key_features:
-        'ID photo; White depth field; White depth field; Flat, shadowless; Neutral administrative flattening',
+        'strict frontal symmetry; white background; shadowless light; neutral expression; fixed centered crop',
       creative_brief:
-        "Apply Passport Photo as a photographic preset over prompt X: preserve the user's requested subject, then route ID photo, White depth field, Flat, shadowless, Clean photographic skin, plain backdrop paper, controlled retouch, official-document sharpness, and fabric detail kept subtle, and Neutral administrative flattening through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Passport Photo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -501,28 +467,101 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Soft Editorial Window',
     category: '1. Portrait And Studio',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, watermark, text, signature, flash photography, studio strobe, harsh shadows, overexposed, sketch, synthetic CGI, plastic render, readable text, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter',
+      'generic stock-photo face, celebrity likeness, same model as other presets, illustration, painting, drawing, 3d render, cartoon, anime, watermark, text, signature, flash photography, studio strobe, harsh shadows, overexposed, sketch, synthetic CGI, plastic render, readable text, low resolution, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Soft Editorial Window acts as a transferable photographic style router: begin from Soft editorial window light, natural lifestyle feel, studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior, and portrait and studio photography system built from lens discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Soft editorial window portrait: a single large north-facing window shaping the subject in quiet, painterly daylight.',
       subject_treatment:
-        'Treat any prompt subject through Gentle focal priority, retained natural texture, relaxed surface rendering; preserve prompt identity while using focal priority, flattering or deliberately institutional distance, surface realism, and edge control without requiring a human face, keeping the original subject, pose, species, object, or environment legible.',
+        'Subject turned toward the window, contemplative, hands or props near the face, simple styling.',
       color_and_tone:
-        'Grade with Subdued earth tones, gentle color harmony, slight warm cast from window light; grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast as photographic capture decisions, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Subdued earth tones, cool daylight mixed with warm interior bounce, gentle contrast.',
       lighting_and_shadow:
-        'Use Soft side-lit window daylight, wrap-around ambient fill, minimal shadow depth; make key, fill, rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
-      texture_and_material:
-        'Render True fabric weave, subtle natural texture, environment bokeh; retain pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Broad soft window light from one side falling off gradually across the face into soft shadow, no added fill.',
+      texture_and_material: 'Linen, wool, plaster walls and natural skin with soft detail.',
       camera_and_composition:
-        'Compose through 85mm editorial lens, f/2.0, eye-level, off-center right, rule-of-thirds; use portrait lens compression, central authority, intimate framing distance, frontal ID geometry, or editorial negative space without forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Quiet confidence, editorial intimacy, relaxed morning light; derive mood from proximity, pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Photorealistic, 8k, fine lens optics, natural chromatic aberration; finish as real photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Three-quarter or profile framing, subject near the window edge, calm negative space of wall.',
+      atmosphere_and_mood: 'Quiet, introspective, and timeless, like a Dutch interior.',
+      rendering_and_quality: 'Natural, softly detailed daylight rendering with painterly falloff.',
       creative_brief:
-        "Apply Soft Editorial Window as a photographic preset over prompt X: preserve the user's requested subject, then route Soft editorial window light, natural lifestyle feel, Subdued earth tones, gentle color harmony, slight warm cast from window light, Soft side-lit window daylight, wrap-around ambient fill, minimal shadow depth, True fabric weave, subtle natural texture, environment bokeh, and 85mm editorial lens, f/2.0, eye-level, off-center right, rule-of-thirds through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soft Editorial Window as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
-        'Soft editorial window light, natural lifestyle feel; studio subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior; Subdued earth tones, gentle color harmony, slight warm cast from window light; Soft side-lit window daylight, wrap-around ambient fill, minimal shadow depth; 85mm editorial lens, f/2.0, eye-level, off-center right, rule-of-thirds',
+        'single window source; gradual falloff; earth tones; contemplative profile; painterly quiet',
+    },
+  },
+  {
+    id: 'SP01-088',
+    name: 'Ring Flash Portrait',
+    displayName: 'Ring Flash Portrait',
+    styleAnchors: [
+      'Ring Flash Portrait',
+      'ring flash fashion portrait',
+      'ring flash donut catchlights',
+    ],
+    category: '1. Portrait And Studio',
+    domain: 'ring flash fashion portrait',
+    negativePrompt:
+      'generic stock-photo face, celebrity likeness, same model as other presets, soft window light, dramatic side light, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ring-flash portrait photography: a circular light around the lens that flattens the face, rings the eyes with donut catchlights, and wraps the subject in a thin even shadow halo.',
+      subject_treatment:
+        'Subject faces the lens close up or waist-up, expression bold and direct; hair, makeup and wardrobe read as graphic shapes.',
+      color_and_tone:
+        'Punchy saturated color with glossy skin highlights; backgrounds bright or strongly colored.',
+      lighting_and_shadow:
+        'On-axis ring flash: nearly shadowless face, a thin dark outline shadow hugging the silhouette on the backdrop, specular sheen on cheekbones.',
+      texture_and_material:
+        'Glossy lips, vinyl, sequins, wet hair and shiny fabrics catching the ring reflection.',
+      camera_and_composition:
+        'Close frontal framing with the subject near the backdrop so the halo shadow is visible.',
+      atmosphere_and_mood: 'Loud, pop, confrontational, and fun.',
+      rendering_and_quality:
+        'Crisp commercial finish, circular catchlights clearly visible in both eyes.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ring Flash Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'ring flash donut catchlights; thin halo shadow; flat on-axis face light; saturated pop color; glossy speculars',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-089',
+    name: 'Painted Muslin Backdrop Portrait',
+    displayName: 'Painted Muslin Backdrop Portrait',
+    styleAnchors: [
+      'Painted Muslin Backdrop Portrait',
+      'painted canvas backdrop portrait',
+      'hand-painted mottled muslin',
+    ],
+    category: '1. Portrait And Studio',
+    domain: 'painted canvas backdrop portrait',
+    negativePrompt:
+      'generic stock-photo face, celebrity likeness, same model as other presets, painting, illustration, seamless paper backdrop, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Fine-art studio portrait in front of a hand-painted muslin backdrop, with directional window-like light that echoes old-master painting while staying fully photographic.',
+      subject_treatment:
+        'Subject posed with painterly stillness — three-quarter turn, hands placed deliberately, costume or wardrobe with rich texture.',
+      color_and_tone:
+        'Muted mottled backdrop in olive, umber, slate or smoky blue; warm skin; deep but open shadows.',
+      lighting_and_shadow:
+        'Large soft key high to one side, slight Rembrandt triangle, subtle fill, backdrop lit unevenly to create a glowing patch behind the head.',
+      texture_and_material:
+        'Visible brushy mottling in the backdrop, velvet, wool, fur and metal in wardrobe rendered with depth.',
+      camera_and_composition:
+        'Half or three-quarter figure, centered with painterly balance, slight low angle.',
+      atmosphere_and_mood: 'Timeless, noble, and quietly theatrical.',
+      rendering_and_quality:
+        'Large-format photographic depth and tonality, rich midtones, no digital effects.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Painted Muslin Backdrop Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'hand-painted mottled muslin; glowing backdrop patch; Rembrandt-leaning soft key; painterly pose; rich midtones',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];
