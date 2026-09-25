@@ -8,28 +8,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Datamosh',
     category: '3. Digital Glitch & Noise',
     negativePrompt:
-      'clean, perfect, clean photo realism, random AI smear, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, clean, perfect, clean photo realism, random AI smear, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Datamosh becomes a transferable digital signal artifact system: start from Video compression artifact, I-Frame destruction, and Pixel drag, then route prompt content through compression errors, scan hardware, pixel logic, channel shifts, and broken media encoding without forcing one card scene.',
+        'Datamosh: compressed video motion vectors dragging pixels of one frame into the next.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Motion vectors to corrupt, quantize, sort, smear, scan, posterize, or channel-split forms without losing silhouette intent; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Keep the prompt's image intact and pass it through this signal failure at a controlled strength so the subject stays readable: blocks of the image smear along motion paths while keyframe details bleed through.",
       color_and_tone:
-        'Build the palette from Bleeding pixels; bind color to device behavior: phosphor masks, CMYK dots, RGB offsets, tape bleed, or indexed palettes, with enough value control that the subject remains readable after the style layer is applied.',
+        'Original colors smeared into streaked blocks, as produced by the medium, not added as decoration.',
       lighting_and_shadow:
-        'Let Broken drive the light response: make light feel emitted, scanned, clipped, banded, or sampled rather than normally photographed, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
       texture_and_material:
-        'Render Macroblocks as the tactile or mark-making basis; texture should come from pixels, scanlines, blocks, dither matrices, data drag, or print dots, scaled to figures, props, spaces, or close material studies.',
+        'Macroblock smears and motion trails, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Compose around Pixel drag as reusable spatial grammar: use raster alignment, artifact seams, frame tears, grid pressure, and controlled signal breakdown, adapting cleanly to portraits, objects, environments, and action scenes.',
-      atmosphere_and_mood:
-        'Use Chaotic, digital as the emotional register; derive mood from damaged playback, obsolete interfaces, surveillance, latency, and media failure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+      atmosphere_and_mood: 'Fluid, broken, hypnotic and digital, coming from the medium itself.',
       rendering_and_quality:
-        'Resolve as Glitch art, broken: finish with intentional artifacts, sharp enough structure, and no random muddy AI noise, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Video compression artifact; Motion vectors; Bleeding pixels; Broken; Macroblocks; Pixel drag; Chaotic, digital; Glitch art, broken; I-Frame destruction',
+        'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
+      key_features: 'motion-vector smear; macroblock drag; bleeding keyframe',
       creative_brief:
-        'Route any subject through Datamosh as a transferable signal-distortion visual system: preserve prompt intent while converting form, motion, edge fidelity, pixel structure, compression behavior, and digital failure rhythm through this preset. Apply datamosh failure to the input: inter-frame smears, motion-block bleed, codec ghosts, and liquefied temporal edges should corrupt subject movement or contours while retaining enough identity to read the prompt.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Datamosh as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +35,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Pixel Sorting',
     category: '3. Digital Glitch & Noise',
     negativePrompt:
-      'horizontal lines, clean photo realism, random AI smear, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, horizontal lines, clean photo realism, random AI smear, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Pixel Sorting becomes a transferable digital signal artifact system: start from Pixels dragged vertically, Generative, code art, and Dystopian, aesthetic, then route prompt content through compression errors, scan hardware, pixel logic, channel shifts, and broken media encoding without forcing one card scene.',
+      aesthetic: 'Pixel sorting: rows or columns of pixels sorted by brightness into long streaks.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Vertical streaks to corrupt, quantize, sort, smear, scan, posterize, or channel-split forms without losing silhouette intent; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Keep the prompt's image intact and pass it through this signal failure at a controlled strength so the subject stays readable: bright or dark ranges of pixels are sorted into vertical or horizontal streaks from a threshold.",
       color_and_tone:
-        'Build the palette from Sorted gradients; bind color to device behavior: phosphor masks, CMYK dots, RGB offsets, tape bleed, or indexed palettes, with enough value control that the subject remains readable after the style layer is applied.',
+        'Original palette stretched into gradient streaks, as produced by the medium, not added as decoration.',
       lighting_and_shadow:
-        'Let Digital streaks drive the light response: make light feel emitted, scanned, clipped, banded, or sampled rather than normally photographed, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
       texture_and_material:
-        'Render Melting as the tactile or mark-making basis; texture should come from pixels, scanlines, blocks, dither matrices, data drag, or print dots, scaled to figures, props, spaces, or close material studies.',
+        'Long sorted pixel streaks with sharp thresholds, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Compose around Dystopian, aesthetic as reusable spatial grammar: use raster alignment, artifact seams, frame tears, grid pressure, and controlled signal breakdown, adapting cleanly to portraits, objects, environments, and action scenes.',
-      atmosphere_and_mood:
-        'Use Dystopian, aesthetic as the emotional register; derive mood from damaged playback, obsolete interfaces, surveillance, latency, and media failure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+      atmosphere_and_mood: 'Digital, flowing, eerie and precise, coming from the medium itself.',
       rendering_and_quality:
-        'Resolve as Generative, code art: finish with intentional artifacts, sharp enough structure, and no random muddy AI noise, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Pixels dragged vertically; Vertical streaks; Sorted gradients; Digital streaks; Melting; Dystopian, aesthetic; Dystopian, aesthetic; Generative, code art; Generative, code art',
+        'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
+      key_features: 'brightness-sorted streaks; threshold edges',
       creative_brief:
-        'Apply pixel-sorting entropy to the input: luminance-drag streaks, combed-out bright regions, directional digital smears, and broken raster order should pull any subject into controlled glitch abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pixel Sorting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +61,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'VHS Glitch',
     category: '3. Digital Glitch & Noise',
     negativePrompt:
-      'hd, 4k, clean photo realism, random AI smear, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, hd, 4k, clean photo realism, random AI smear, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'VHS Glitch becomes a transferable digital signal artifact system: start from Bad tracking tape, Tracking scars, and Tracking error, then route prompt content through compression errors, scan hardware, pixel logic, channel shifts, and broken media encoding without forcing one card scene.',
+        'VHS tape glitch: tracking errors, chroma bleed, tape noise bands and wobbling horizontal lines.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Warping at bottom to corrupt, quantize, sort, smear, scan, posterize, or channel-split forms without losing silhouette intent; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Keep the prompt's image intact and pass it through this signal failure at a controlled strength so the subject stays readable: the image wobbles with tracking lines, color bleed and a few tape-noise bands.",
       color_and_tone:
-        'Build the palette from Chroma noise, bleeding; bind color to device behavior: phosphor masks, CMYK dots, RGB offsets, tape bleed, or indexed palettes, with enough value control that the subject remains readable after the style layer is applied.',
+        'Washed-out colors with red and cyan bleed, as produced by the medium, not added as decoration.',
       lighting_and_shadow:
-        'Let Flicker drive the light response: make light feel emitted, scanned, clipped, banded, or sampled rather than normally photographed, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
       texture_and_material:
-        'Render Static, scanlines as the tactile or mark-making basis; texture should come from pixels, scanlines, blocks, dither matrices, data drag, or print dots, scaled to figures, props, spaces, or close material studies.',
+        'Tracking bands, head-switching noise at the bottom and soft analog blur.',
       camera_and_composition:
-        'Compose around Tracking error as reusable spatial grammar: use raster alignment, artifact seams, frame tears, grid pressure, and controlled signal breakdown, adapting cleanly to portraits, objects, environments, and action scenes.',
-      atmosphere_and_mood:
-        'Use Nostalgic, horror as the emotional register; derive mood from damaged playback, obsolete interfaces, surveillance, latency, and media failure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+      atmosphere_and_mood: 'Nostalgic, degraded, eerie and analog, coming from the medium itself.',
       rendering_and_quality:
-        'Resolve as Retro, lo-fi: finish with intentional artifacts, sharp enough structure, and no random muddy AI noise, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Bad tracking tape; Warping at bottom; Chroma noise, bleeding; Flicker; Static, scanlines; Tracking error; Nostalgic, horror; Retro, lo-fi; Tracking scars',
+        'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
+      key_features: 'tracking bands; chroma bleed; head-switching noise',
       creative_brief:
-        'Apply VHS decay as signal damage over the input with bad tracking bands, chroma bleed, scanline vibration, bottom-edge warping, magnetic dropout, and lo-fi analog horror nostalgia. If faces or figures exist, let scanlines tear through them; otherwise corrupt shapes, surfaces, and edges without requiring a portrait or timestamp.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies VHS Glitch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +88,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'CRT Monitor',
     category: '3. Digital Glitch & Noise',
     negativePrompt:
-      'lcd, sharp pixels, clean photo realism, random AI smear, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, lcd, sharp pixels, clean photo realism, random AI smear, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'CRT Monitor becomes a transferable digital signal artifact system: start from Close up screen, Scanlines, and Curved screen, then route prompt content through compression errors, scan hardware, pixel logic, channel shifts, and broken media encoding without forcing one card scene.',
+      aesthetic: 'CRT monitor: phosphor scanlines, curved glass, glow and RGB subpixel mask.',
       subject_treatment:
-        "Keep the user's subject recognizable while using RGB phosphor mask to corrupt, quantize, sort, smear, scan, posterize, or channel-split forms without losing silhouette intent; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Keep the prompt's image intact and pass it through this signal failure at a controlled strength so the subject stays readable: the image is shown on a curved CRT with visible scanlines and phosphor glow.",
       color_and_tone:
-        'Build the palette from Glowing phosphors; bind color to device behavior: phosphor masks, CMYK dots, RGB offsets, tape bleed, or indexed palettes, with enough value control that the subject remains readable after the style layer is applied.',
+        'Phosphor-bright colors with bloom, as produced by the medium, not added as decoration.',
       lighting_and_shadow:
-        'Let Screen glow drive the light response: make light feel emitted, scanned, clipped, banded, or sampled rather than normally photographed, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
       texture_and_material:
-        'Render Shadow mask grid as the tactile or mark-making basis; texture should come from pixels, scanlines, blocks, dither matrices, data drag, or print dots, scaled to figures, props, spaces, or close material studies.',
+        'Scanlines, shadow mask dots and curved-glass vignette, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Compose around Curved screen as reusable spatial grammar: use raster alignment, artifact seams, frame tears, grid pressure, and controlled signal breakdown, adapting cleanly to portraits, objects, environments, and action scenes.',
-      atmosphere_and_mood:
-        'Use Retro, tech as the emotional register; derive mood from damaged playback, obsolete interfaces, surveillance, latency, and media failure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+      atmosphere_and_mood: 'Retro, glowing, nostalgic and warm, coming from the medium itself.',
       rendering_and_quality:
-        'Resolve as Retro tech: finish with intentional artifacts, sharp enough structure, and no random muddy AI noise, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Close up screen; RGB phosphor mask; Glowing phosphors; Screen glow; Shadow mask grid; Curved screen; Retro, tech; Retro tech; Scanlines',
+        'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
+      key_features: 'CRT scanlines; phosphor glow; curved glass',
       creative_brief:
-        'Apply CRT phosphor display logic to the input: RGB triad texture, scanline hum, curved-glass bloom, warm electronic glow, and slight convergence errors should make any subject feel emitted by an old monitor.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies CRT Monitor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +114,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'ASCII Art',
     category: '3. Digital Glitch & Noise',
     negativePrompt:
-      'image, pixels, clean photo realism, random AI smear, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, image, pixels, clean photo realism, random AI smear, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'ASCII Art becomes a transferable digital signal artifact system: start from Text characters, Grid alignment, and Low resolution, then route prompt content through compression errors, scan hardware, pixel logic, channel shifts, and broken media encoding without forcing one card scene.',
+        'ASCII art: the image built entirely from monospaced characters used as density values, unreadable as words.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Typographic to corrupt, quantize, sort, smear, scan, posterize, or channel-split forms without losing silhouette intent; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Re-render the prompt's image entirely in this representation unit so the subject reads from the pattern of units: dense and sparse monospaced symbols build shapes and values without forming words.",
       color_and_tone:
-        'Build the palette from Green on Black; bind color to device behavior: phosphor masks, CMYK dots, RGB offsets, tape bleed, or indexed palettes, with enough value control that the subject remains readable after the style layer is applied.',
+        'Green, amber or white on black, as produced by the medium, not added as decoration.',
       lighting_and_shadow:
-        'Let Character density drive the light response: make light feel emitted, scanned, clipped, banded, or sampled rather than normally photographed, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
-      texture_and_material:
-        'Render Monospace font as the tactile or mark-making basis; texture should come from pixels, scanlines, blocks, dither matrices, data drag, or print dots, scaled to figures, props, spaces, or close material studies.',
+        'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
+      texture_and_material: 'Monospaced glyph grid, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Compose around Low resolution as reusable spatial grammar: use raster alignment, artifact seams, frame tears, grid pressure, and controlled signal breakdown, adapting cleanly to portraits, objects, environments, and action scenes.',
-      atmosphere_and_mood:
-        'Use Cyber, code as the emotional register; derive mood from damaged playback, obsolete interfaces, surveillance, latency, and media failure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+      atmosphere_and_mood: 'Hacker, retro, cryptic and textual, coming from the medium itself.',
       rendering_and_quality:
-        'Resolve as Hacker, terminal: finish with intentional artifacts, sharp enough structure, and no random muddy AI noise, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Text characters; Typographic; Green on Black; Character density; Monospace font; Low resolution; Cyber, code; Hacker, terminal; Grid alignment',
+        'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
+      key_features: 'glyph density grid; monospaced; no words',
       creative_brief:
-        'Apply ASCII-art conversion to the input: monospace symbol density, character-cell shading, terminal contrast, and typographic pixel logic should rebuild forms without requiring readable words or UI.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies ASCII Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +140,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'JPEG Artifacts',
     category: '3. Digital Glitch & Noise',
     negativePrompt:
-      'png, lossless, clean photo realism, random AI smear, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, png, lossless, clean photo realism, random AI smear, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'JPEG Artifacts becomes a transferable digital signal artifact system: start from Deep fried meme, 8x8 blocks, and Blocky edges, then route prompt content through compression errors, scan hardware, pixel logic, channel shifts, and broken media encoding without forcing one card scene.',
+        'JPEG artifacts: heavy 8×8 block compression, ringing around edges and color blocking.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Mosquito noise to corrupt, quantize, sort, smear, scan, posterize, or channel-split forms without losing silhouette intent; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Keep the prompt's image intact and pass it through this signal failure at a controlled strength so the subject stays readable: the image is heavily compressed into visible 8×8 blocks with ringing around edges.",
       color_and_tone:
-        'Build the palette from Banding; bind color to device behavior: phosphor masks, CMYK dots, RGB offsets, tape bleed, or indexed palettes, with enough value control that the subject remains readable after the style layer is applied.',
+        'Posterized colors with block banding, as produced by the medium, not added as decoration.',
       lighting_and_shadow:
-        'Let Flat drive the light response: make light feel emitted, scanned, clipped, banded, or sampled rather than normally photographed, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
       texture_and_material:
-        'Render Compression blocks as the tactile or mark-making basis; texture should come from pixels, scanlines, blocks, dither matrices, data drag, or print dots, scaled to figures, props, spaces, or close material studies.',
+        'Blocky compression and edge ringing, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Compose around Blocky edges as reusable spatial grammar: use raster alignment, artifact seams, frame tears, grid pressure, and controlled signal breakdown, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
       atmosphere_and_mood:
-        'Use Funny, trashy as the emotional register; derive mood from damaged playback, obsolete interfaces, surveillance, latency, and media failure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Degraded, internet-worn, crude and ironic, coming from the medium itself.',
       rendering_and_quality:
-        'Resolve as Low quality, internet: finish with intentional artifacts, sharp enough structure, and no random muddy AI noise, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Deep fried meme; Mosquito noise; Banding; Flat; Compression blocks; Blocky edges; Funny, trashy; Low quality, internet; 8x8 blocks',
+        'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
+      key_features: '8x8 blocks; edge ringing; color banding',
       creative_brief:
-        'Apply JPEG degradation to the input: block artifacts, ringing halos, chroma-subsampling mush, macroblock banding, and lossy edge damage should make any subject feel compressed until failure becomes style.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies JPEG Artifacts as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +168,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Chromatic Aberration',
     category: '3. Digital Glitch & Noise',
     negativePrompt:
-      'clean edges, clean photo realism, random AI smear, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, clean edges, clean photo realism, random AI smear, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Chromatic Aberration becomes a transferable digital signal artifact system: start from Lens error, Edge fringe, and Color shift, then route prompt content through compression errors, scan hardware, pixel logic, channel shifts, and broken media encoding without forcing one card scene.',
+      aesthetic: 'Chromatic aberration: RGB channels offset at edges, producing colored fringes.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Red/Cyan separation to corrupt, quantize, sort, smear, scan, posterize, or channel-split forms without losing silhouette intent; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Keep the prompt's image intact and pass it through this signal failure at a controlled strength so the subject stays readable: red, green and blue channels split slightly at edges, stronger toward the frame corners.",
       color_and_tone:
-        'Build the palette from Fringing; bind color to device behavior: phosphor masks, CMYK dots, RGB offsets, tape bleed, or indexed palettes, with enough value control that the subject remains readable after the style layer is applied.',
+        'Red and cyan fringes on edges, as produced by the medium, not added as decoration.',
       lighting_and_shadow:
-        'Let Normal drive the light response: make light feel emitted, scanned, clipped, banded, or sampled rather than normally photographed, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
-      texture_and_material:
-        'Render Blurry edges as the tactile or mark-making basis; texture should come from pixels, scanlines, blocks, dither matrices, data drag, or print dots, scaled to figures, props, spaces, or close material studies.',
+        'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
+      texture_and_material: 'Channel-split fringes, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Compose around Color shift as reusable spatial grammar: use raster alignment, artifact seams, frame tears, grid pressure, and controlled signal breakdown, adapting cleanly to portraits, objects, environments, and action scenes.',
-      atmosphere_and_mood:
-        'Use Dizzy, intense as the emotional register; derive mood from damaged playback, obsolete interfaces, surveillance, latency, and media failure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+      atmosphere_and_mood: 'Unstable, cinematic, digital and tense, coming from the medium itself.',
       rendering_and_quality:
-        'Resolve as Disoriented, 3D glasses: finish with intentional artifacts, sharp enough structure, and no random muddy AI noise, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Lens error; Red/Cyan separation; Fringing; Normal; Blurry edges; Color shift; Dizzy, intense; Disoriented, 3D glasses; Edge fringe',
+        'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
+      key_features: 'RGB channel split; colored fringes',
       creative_brief:
-        'Route any subject through Chromatic Aberration as a transferable signal-distortion visual system: preserve prompt intent while converting form, motion, edge fidelity, pixel structure, compression behavior, and digital failure rhythm through this preset. Apply chromatic-aberration optics to the input: red/cyan edge separation, lens-fringe vibration, slight focus mismatch, and prism-like contour drift should energize forms without turning the image into random blur.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chromatic Aberration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +193,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Scanography',
     category: '3. Digital Glitch & Noise',
     negativePrompt:
-      'camera photo, clean photo realism, random AI smear, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, camera photo, clean photo realism, random AI smear, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Scanography becomes a transferable digital signal artifact system: start from Flatbed scanner distortion, Black background, and Squashed, then route prompt content through compression errors, scan hardware, pixel logic, channel shifts, and broken media encoding without forcing one card scene.',
+        'Scanography: objects placed on a flatbed scanner — crushed-depth focus, stretched motion and black background.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Distorted motion to corrupt, quantize, sort, smear, scan, posterize, or channel-split forms without losing silhouette intent; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Re-render the prompt's image entirely in this representation unit so the subject reads from the pattern of units: the subject is scanned face-down on glass: sharp contact areas, falloff into black and stretched parts where it moved.",
       color_and_tone:
-        'Build the palette from High contrast, dark background; bind color to device behavior: phosphor masks, CMYK dots, RGB offsets, tape bleed, or indexed palettes, with enough value control that the subject remains readable after the style layer is applied.',
+        'Hyper-sharp colors against black, as produced by the medium, not added as decoration.',
       lighting_and_shadow:
-        'Let Moving light bar drive the light response: make light feel emitted, scanned, clipped, banded, or sampled rather than normally photographed, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
       texture_and_material:
-        'Render Dust on glass as the tactile or mark-making basis; texture should come from pixels, scanlines, blocks, dither matrices, data drag, or print dots, scaled to figures, props, spaces, or close material studies.',
+        'Glass-contact detail, falloff and scan stretch, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Compose around Squashed as reusable spatial grammar: use raster alignment, artifact seams, frame tears, grid pressure, and controlled signal breakdown, adapting cleanly to portraits, objects, environments, and action scenes.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
       atmosphere_and_mood:
-        'Use Eerie, surreal as the emotional register; derive mood from damaged playback, obsolete interfaces, surveillance, latency, and media failure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Strange, intimate, clinical and surreal, coming from the medium itself.',
       rendering_and_quality:
-        'Resolve as Distorted, shallow: finish with intentional artifacts, sharp enough structure, and no random muddy AI noise, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'Flatbed scanner distortion; Distorted motion; High contrast, dark background; Moving light bar; Dust on glass; Squashed; Eerie, surreal; Distorted, shallow; Black background',
+        'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
+      key_features: 'flatbed contact sharpness; black falloff; scan stretch',
       creative_brief:
-        'Apply scanography as a sensing method over the input with moving light-bar sweep, flattened depth, dust-on-glass texture, shallow black voids, and squashed motion distortion. If an object, plant, body, or artifact is present, press its forms into scanner glass; otherwise use scan light and compression as an eerie abstraction without requiring a specimen layout.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scanography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +221,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Halftone Pattern',
     category: '3. Digital Glitch & Noise',
     negativePrompt:
-      'smooth gradient, clean photo realism, random AI smear, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, smooth gradient, clean photo realism, random AI smear, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Halftone Pattern becomes a transferable digital signal artifact system: start from CMYK dots, Rosette pattern, and Moire pattern, then route prompt content through compression errors, scan hardware, pixel logic, channel shifts, and broken media encoding without forcing one card scene.',
+      aesthetic: 'Halftone: the image built from dots of varying size in a regular screen.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Dot grid to corrupt, quantize, sort, smear, scan, posterize, or channel-split forms without losing silhouette intent; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+        "Re-render the prompt's image entirely in this representation unit so the subject reads from the pattern of units: values are rebuilt as regular halftone dots at a fixed screen angle.",
       color_and_tone:
-        'Build the palette from Cyan, Magenta, Yellow, Black; bind color to device behavior: phosphor masks, CMYK dots, RGB offsets, tape bleed, or indexed palettes, with enough value control that the subject remains readable after the style layer is applied.',
+        'CMYK or single-ink dots, as produced by the medium, not added as decoration.',
       lighting_and_shadow:
-        'Let Flat drive the light response: make light feel emitted, scanned, clipped, banded, or sampled rather than normally photographed, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
-      texture_and_material:
-        'Render Paper print as the tactile or mark-making basis; texture should come from pixels, scanlines, blocks, dither matrices, data drag, or print dots, scaled to figures, props, spaces, or close material studies.',
+        'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
+      texture_and_material: 'Regular dot screen, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Compose around Moire pattern as reusable spatial grammar: use raster alignment, artifact seams, frame tears, grid pressure, and controlled signal breakdown, adapting cleanly to portraits, objects, environments, and action scenes.',
-      atmosphere_and_mood:
-        'Use Retro, graphic as the emotional register; derive mood from damaged playback, obsolete interfaces, surveillance, latency, and media failure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+      atmosphere_and_mood: 'Graphic, printed, retro and bold, coming from the medium itself.',
       rendering_and_quality:
-        'Resolve as Pop art, print: finish with intentional artifacts, sharp enough structure, and no random muddy AI noise, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'CMYK dots; Dot grid; Cyan, Magenta, Yellow, Black; Flat; Paper print; Moire pattern; Retro, graphic; Pop art, print; Rosette pattern',
+        'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
+      key_features: 'regular halftone dot screen; fixed angle',
       creative_brief:
-        'Route any subject through Halftone Pattern as a transferable signal-distortion visual system: preserve prompt intent while converting form, motion, edge fidelity, pixel structure, compression behavior, and digital failure rhythm through this preset. Apply halftone print logic to the input: angled dot screens, CMYK rosette texture, size-modulated circles, and press-like color separation should make forms resolve from printed particles.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Halftone Pattern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -269,28 +246,352 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Dithering (1-bit)',
     category: '3. Digital Glitch & Noise',
     negativePrompt:
-      'grey, smooth, clean photo realism, random AI smear, literal card scene, style-card boilerplate, muddy noise, watermark',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, grey, smooth, clean photo realism, random AI smear, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Dithering (1-bit) becomes a transferable digital signal artifact system: start from MacPaint style, Atkinson dither, and No greyscale, then route prompt content through compression errors, scan hardware, pixel logic, channel shifts, and broken media encoding without forcing one card scene.',
+        '1-bit dithering: pure black and white pixels arranged in ordered or error-diffusion dither patterns.',
       subject_treatment:
-        "Keep the user's subject recognizable while using Pixel patterns to corrupt, quantize, sort, smear, scan, posterize, or channel-split forms without losing silhouette intent; preserve anatomy, object identity, or scene intent beneath the abstraction.",
-      color_and_tone:
-        'Build the palette from Black and White only; bind color to device behavior: phosphor masks, CMYK dots, RGB offsets, tape bleed, or indexed palettes, with enough value control that the subject remains readable after the style layer is applied.',
+        "Re-render the prompt's image entirely in this representation unit so the subject reads from the pattern of units: the image is reduced to 1-bit black and white pixels with dither patterns for grey values.",
+      color_and_tone: 'Pure black and white, as produced by the medium, not added as decoration.',
       lighting_and_shadow:
-        'Let Pattern density drive the light response: make light feel emitted, scanned, clipped, banded, or sampled rather than normally photographed, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+        'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
       texture_and_material:
-        'Render Checkerboard, noise as the tactile or mark-making basis; texture should come from pixels, scanlines, blocks, dither matrices, data drag, or print dots, scaled to figures, props, spaces, or close material studies.',
+        'Ordered or diffusion dither pattern, at a consistent unit size across the frame.',
       camera_and_composition:
-        'Compose around No greyscale as reusable spatial grammar: use raster alignment, artifact seams, frame tears, grid pressure, and controlled signal breakdown, adapting cleanly to portraits, objects, environments, and action scenes.',
-      atmosphere_and_mood:
-        'Use Retro, binary as the emotional register; derive mood from damaged playback, obsolete interfaces, surveillance, latency, and media failure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+      atmosphere_and_mood: 'Retro, crisp, lo-fi and graphic, coming from the medium itself.',
       rendering_and_quality:
-        'Resolve as Retro computer: finish with intentional artifacts, sharp enough structure, and no random muddy AI noise, preserving prompt X as the base content and the preset as the style router.',
-      key_features:
-        'MacPaint style; Pixel patterns; Black and White only; Pattern density; Checkerboard, noise; No greyscale; Retro, binary; Retro computer; Atkinson dither',
+        'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
+      key_features: '1-bit pixels; dither patterns',
       creative_brief:
-        'Route any subject through Dithering (1-bit) as a transferable signal-distortion visual system: preserve prompt intent while converting form, motion, edge fidelity, pixel structure, compression behavior, and digital failure rhythm through this preset. Apply one-bit dithering to the input: black-white thresholds, ordered or error-diffused pixel patterns, harsh quantization, and optical gray made from binary marks should keep the subject readable at low fidelity.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dithering (1-bit) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP10-101',
+    name: 'Bit-Crush Posterize',
+    displayName: 'Bit-Crush Posterize',
+    styleAnchors: ['Bit-Crush Posterize', 'bit-depth posterization', 'reduced bit depth'],
+    category: '3. Digital Glitch & Noise',
+    domain: 'bit-depth posterization',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bit-crush posterize: color depth reduced to a few flat bands with hard contour steps.',
+      subject_treatment:
+        "Keep the prompt's image intact and pass it through this signal failure at a controlled strength so the subject stays readable: colors collapse into a handful of flat bands with stepped contours.",
+      color_and_tone:
+        'Few flat saturated bands, as produced by the medium, not added as decoration.',
+      lighting_and_shadow:
+        'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
+      texture_and_material: 'Stepped color bands, at a consistent unit size across the frame.',
+      camera_and_composition:
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+      atmosphere_and_mood: 'Crude, bold, retro and graphic, coming from the medium itself.',
+      rendering_and_quality:
+        'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bit-Crush Posterize as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'reduced bit depth; flat color bands',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-102',
+    name: 'Slit-Scan Stretch',
+    displayName: 'Slit-Scan Stretch',
+    styleAnchors: ['Slit-Scan Stretch', 'slit-scan time distortion', 'slit-scan stretch'],
+    category: '3. Digital Glitch & Noise',
+    domain: 'slit-scan time distortion',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Slit-scan: each column captured at a different moment, stretching and warping moving subjects.',
+      subject_treatment:
+        "Keep the prompt's image intact and pass it through this signal failure at a controlled strength so the subject stays readable: moving parts of the subject stretch and bend across columns while static parts stay sharp.",
+      color_and_tone:
+        'Original palette in stretched streaks, as produced by the medium, not added as decoration.',
+      lighting_and_shadow:
+        'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
+      texture_and_material: 'Stretched warped streaks, at a consistent unit size across the frame.',
+      camera_and_composition:
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+      atmosphere_and_mood: 'Temporal, uncanny, fluid and strange, coming from the medium itself.',
+      rendering_and_quality:
+        'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Slit-Scan Stretch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'slit-scan stretch; time-warped columns',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-103',
+    name: 'Interlace Comb Tear',
+    displayName: 'Interlace Comb Tear',
+    styleAnchors: ['Interlace Comb Tear', 'interlaced video combing', 'interlace comb teeth'],
+    category: '3. Digital Glitch & Noise',
+    domain: 'interlaced video combing',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Interlace combing: alternate horizontal lines from two fields offset on moving edges.',
+      subject_treatment:
+        "Keep the prompt's image intact and pass it through this signal failure at a controlled strength so the subject stays readable: moving edges show comb-like alternating line offsets.",
+      color_and_tone: 'Original colors, as produced by the medium, not added as decoration.',
+      lighting_and_shadow:
+        'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
+      texture_and_material:
+        'Comb teeth along motion edges, at a consistent unit size across the frame.',
+      camera_and_composition:
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+      atmosphere_and_mood:
+        'Broadcast, twitchy, retro and technical, coming from the medium itself.',
+      rendering_and_quality:
+        'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Interlace Comb Tear as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'interlace comb teeth; motion edges',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-104',
+    name: 'Teletext Mosaic',
+    displayName: 'Teletext Mosaic',
+    styleAnchors: ['Teletext Mosaic', 'teletext block graphics', 'teletext block cells'],
+    category: '3. Digital Glitch & Noise',
+    domain: 'teletext block graphics',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Teletext mosaic: coarse 2×3 block graphics in eight bright colors on black.',
+      subject_treatment:
+        "Re-render the prompt's image entirely in this representation unit so the subject reads from the pattern of units: the image is rebuilt from coarse teletext block cells in eight colors.",
+      color_and_tone:
+        'Eight saturated teletext colors on black, as produced by the medium, not added as decoration.',
+      lighting_and_shadow:
+        'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
+      texture_and_material: 'Chunky 2x3 block cells, at a consistent unit size across the frame.',
+      camera_and_composition:
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+      atmosphere_and_mood: 'Retro, broadcast, charming and crude, coming from the medium itself.',
+      rendering_and_quality:
+        'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Teletext Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'teletext block cells; eight colors',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-105',
+    name: 'Oscilloscope Vector Trace',
+    displayName: 'Oscilloscope Vector Trace',
+    styleAnchors: [
+      'Oscilloscope Vector Trace',
+      'oscilloscope vector drawing',
+      'phosphor vector lines',
+    ],
+    category: '3. Digital Glitch & Noise',
+    domain: 'oscilloscope vector drawing',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Oscilloscope vector art: the image drawn as glowing green phosphor lines on a dark scope screen.',
+      subject_treatment:
+        "Re-render the prompt's image entirely in this representation unit so the subject reads from the pattern of units: the subject is traced as continuous glowing vector lines with phosphor persistence.",
+      color_and_tone:
+        'Phosphor green on black, as produced by the medium, not added as decoration.',
+      lighting_and_shadow:
+        'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
+      texture_and_material:
+        'Glowing vector lines and grid, at a consistent unit size across the frame.',
+      camera_and_composition:
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+      atmosphere_and_mood: 'Technical, eerie, retro and precise, coming from the medium itself.',
+      rendering_and_quality:
+        'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oscilloscope Vector Trace as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'phosphor vector lines; scope grid',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-106',
+    name: 'E-Ink Ghosting',
+    displayName: 'E-Ink Ghosting',
+    styleAnchors: ['E-Ink Ghosting', 'e-ink display ghosting', 'e-paper greys'],
+    category: '3. Digital Glitch & Noise',
+    domain: 'e-ink display ghosting',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'E-ink ghosting: grey e-paper display with faint remnants of previous images.',
+      subject_treatment:
+        "Keep the prompt's image intact and pass it through this signal failure at a controlled strength so the subject stays readable: the image appears on grey e-paper with faint ghost remnants of a previous image.",
+      color_and_tone:
+        'Soft greys on paper-like white, as produced by the medium, not added as decoration.',
+      lighting_and_shadow:
+        'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
+      texture_and_material:
+        'Grainy e-paper with ghost layers, at a consistent unit size across the frame.',
+      camera_and_composition:
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+      atmosphere_and_mood: 'Quiet, haunted, low-power and subtle, coming from the medium itself.',
+      rendering_and_quality:
+        'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies E-Ink Ghosting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'e-paper greys; ghost remnants',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-107',
+    name: 'Macroblock Freeze',
+    displayName: 'Macroblock Freeze',
+    styleAnchors: ['Macroblock Freeze', 'frozen macroblock corruption', 'frozen macroblocks'],
+    category: '3. Digital Glitch & Noise',
+    domain: 'frozen macroblock corruption',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Macroblock freeze: stream corruption where some blocks freeze wrong colors or stale content.',
+      subject_treatment:
+        "Keep the prompt's image intact and pass it through this signal failure at a controlled strength so the subject stays readable: patches of the image are replaced by frozen stale blocks and green-grey corruption.",
+      color_and_tone:
+        'Original palette with green and grey corrupted blocks, as produced by the medium, not added as decoration.',
+      lighting_and_shadow:
+        'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
+      texture_and_material:
+        'Rectangular corruption blocks, at a consistent unit size across the frame.',
+      camera_and_composition:
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+      atmosphere_and_mood: 'Broken, digital, jarring and tense, coming from the medium itself.',
+      rendering_and_quality:
+        'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Macroblock Freeze as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'frozen macroblocks; corruption patches',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-108',
+    name: 'Texture Repeat Bug',
+    displayName: 'Texture Repeat Bug',
+    styleAnchors: ['Texture Repeat Bug', 'repeating texture bug', 'visible texture tiling'],
+    category: '3. Digital Glitch & Noise',
+    domain: 'repeating texture bug',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Texture repeat bug: surfaces showing obvious tiled repetition and stretched UVs like a broken game render.',
+      subject_treatment:
+        "Keep the prompt's image intact and pass it through this signal failure at a controlled strength so the subject stays readable: surfaces repeat in obvious tiles or stretch into streaks like broken UV mapping.",
+      color_and_tone:
+        'Original textures in tiled repeats, as produced by the medium, not added as decoration.',
+      lighting_and_shadow:
+        'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
+      texture_and_material:
+        'Tiled repeats and stretched streaks, at a consistent unit size across the frame.',
+      camera_and_composition:
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+      atmosphere_and_mood: 'Uncanny, broken, gamey and absurd, coming from the medium itself.',
+      rendering_and_quality:
+        'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Texture Repeat Bug as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'visible texture tiling; stretched UVs',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-109',
+    name: 'LED Matrix Display',
+    displayName: 'LED Matrix Display',
+    styleAnchors: ['LED Matrix Display', 'LED dot matrix display', 'round LED dots'],
+    category: '3. Digital Glitch & Noise',
+    domain: 'LED dot matrix display',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'LED matrix: the image rebuilt as glowing round LEDs on a dark panel grid.',
+      subject_treatment:
+        "Re-render the prompt's image entirely in this representation unit so the subject reads from the pattern of units: the subject is shown as lit round LEDs in a coarse grid.",
+      color_and_tone:
+        'Glowing LED colors on black, as produced by the medium, not added as decoration.',
+      lighting_and_shadow:
+        'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
+      texture_and_material: 'Round LED dots with glow, at a consistent unit size across the frame.',
+      camera_and_composition:
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+      atmosphere_and_mood: 'Electronic, bold, nightlife and retro, coming from the medium itself.',
+      rendering_and_quality:
+        'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies LED Matrix Display as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'round LED dots; coarse grid glow',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP10-110',
+    name: 'Thermal Printer Output',
+    displayName: 'Thermal Printer Output',
+    styleAnchors: ['Thermal Printer Output', 'thermal receipt print', 'thermal receipt print'],
+    category: '3. Digital Glitch & Noise',
+    domain: 'thermal receipt print',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Thermal printer: the image printed on curling receipt paper in faded dithered black.',
+      subject_treatment:
+        "Re-render the prompt's image entirely in this representation unit so the subject reads from the pattern of units: the image is printed as coarse dithered black on thermal receipt paper with fading and streaks.",
+      color_and_tone:
+        'Faded black on off-white, as produced by the medium, not added as decoration.',
+      lighting_and_shadow:
+        'Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.',
+      texture_and_material:
+        'Dither, streaks and curled paper, at a consistent unit size across the frame.',
+      camera_and_composition:
+        'Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.',
+      atmosphere_and_mood: 'Humble, ephemeral, odd and lo-fi, coming from the medium itself.',
+      rendering_and_quality:
+        'Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thermal Printer Output as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'thermal receipt print; dither; fading',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

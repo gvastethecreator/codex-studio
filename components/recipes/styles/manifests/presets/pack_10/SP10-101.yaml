@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP10-101
+packId: pack_10
+name: Bit-Crush Posterize
+styleAnchors:
+  - Bit-Crush Posterize
+  - bit-depth posterization
+  - reduced bit depth
+displayName: Bit-Crush Posterize
+category: 3. Digital Glitch & Noise
+domain: bit-depth posterization
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - digital-glitch-and-noise
+  - bit-crush
+  - posterize
+  - glitch
+visualDna:
+  aesthetic: 'Bit-crush posterize: color depth reduced to a few flat bands with hard contour steps.'
+  subject_treatment: "Keep the prompt's image intact and pass it through this signal failure at a controlled strength so the subject stays readable: colors collapse into a handful of flat bands with stepped contours."
+  color_and_tone: Few flat saturated bands, as produced by the medium, not added as decoration.
+  lighting_and_shadow: Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.
+  texture_and_material: Stepped color bands, at a consistent unit size across the frame.
+  camera_and_composition: Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.
+  atmosphere_and_mood: Crude, bold, retro and graphic, coming from the medium itself.
+  rendering_and_quality: Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bit-Crush Posterize as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: reduced bit depth; flat color bands
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - generic blanket noise
+  - readable characters or words
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_10
+  packName: Abstract & Experimental
+  categoryId: digital-glitch-and-noise
+  categoryName: 3. Digital Glitch & Noise
+  tags:
+    - abstract-and-experimental
+    - digital-glitch-and-noise
+    - bit-crush
+    - posterize
+    - glitch
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: bit-depth posterization

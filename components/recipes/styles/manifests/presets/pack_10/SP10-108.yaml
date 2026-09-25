@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP10-108
+packId: pack_10
+name: Texture Repeat Bug
+styleAnchors:
+  - Texture Repeat Bug
+  - repeating texture bug
+  - visible texture tiling
+displayName: Texture Repeat Bug
+category: 3. Digital Glitch & Noise
+domain: repeating texture bug
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - digital-glitch-and-noise
+  - texture-bug
+  - repeat
+  - glitch
+visualDna:
+  aesthetic: 'Texture repeat bug: surfaces showing obvious tiled repetition and stretched UVs like a broken game render.'
+  subject_treatment: "Keep the prompt's image intact and pass it through this signal failure at a controlled strength so the subject stays readable: surfaces repeat in obvious tiles or stretch into streaks like broken UV mapping."
+  color_and_tone: Original textures in tiled repeats, as produced by the medium, not added as decoration.
+  lighting_and_shadow: Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.
+  texture_and_material: Tiled repeats and stretched streaks, at a consistent unit size across the frame.
+  camera_and_composition: Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.
+  atmosphere_and_mood: Uncanny, broken, gamey and absurd, coming from the medium itself.
+  rendering_and_quality: Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Texture Repeat Bug as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: visible texture tiling; stretched UVs
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - generic blanket noise
+  - readable characters or words
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_10
+  packName: Abstract & Experimental
+  categoryId: digital-glitch-and-noise
+  categoryName: 3. Digital Glitch & Noise
+  tags:
+    - abstract-and-experimental
+    - digital-glitch-and-noise
+    - texture-bug
+    - repeat
+    - glitch
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: repeating texture bug

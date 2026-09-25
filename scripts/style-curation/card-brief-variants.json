@@ -5129,5 +5129,73 @@
   "SP10-100": [
     "Liquid light show dragon. No text or logo.",
     "Liquid light show castle. No text or logo."
+  ],
+  "SP10-021": [
+    "Datamoshed frame of a dragon turning its head, scales smeared across the sky. No text or logo.",
+    "Datamoshed frame of a dancer spinning in a ballroom. No text or logo."
+  ],
+  "SP10-022": [
+    "Pixel-sorted portrait of a crowned queen. No text or logo.",
+    "Pixel-sorted waterfall with a dragon. No text or logo."
+  ],
+  "SP10-023": [
+    "VHS frame of a witch at a cauldron with color bleed. No text or logo.",
+    "VHS frame of a castle banquet. No text or logo."
+  ],
+  "SP10-024": [
+    "CRT image of a knight portrait. No text or logo.",
+    "CRT image of a moonlit castle. No text or logo."
+  ],
+  "SP10-025": [
+    "ASCII-style image of a knight on horseback in amber. No readable text or logo.",
+    "ASCII-style image of a castle in white glyphs. No readable text or logo."
+  ],
+  "SP10-026": [
+    "JPEG-crushed dragon. No text or logo.",
+    "JPEG-crushed sunset over a castle. No text or logo."
+  ],
+  "SP10-027": [
+    "Image of a dragon eye with RGB split. No text or logo.",
+    "Image of a candlelit crypt with channel fringes. No text or logo."
+  ],
+  "SP10-028": [
+    "Flatbed scan of a raven skull with scan stretch. No text or logo.",
+    "Flatbed scan of a crown and keys. No text or logo."
+  ],
+  "SP10-029": [
+    "Halftone knight portrait in black dots. No text or logo.",
+    "CMYK halftone jester. No text or logo."
+  ],
+  "SP10-030": [
+    "1-bit dither knight portrait. No text or logo.",
+    "1-bit dither haunted mansion. No text or logo."
+  ],
+  "SP10-101": ["Bit-crushed dragon. No text or logo.", "Bit-crushed knight. No text or logo."],
+  "SP10-102": [
+    "Slit-scan dragon in flight. No text or logo.",
+    "Slit-scan waltzing couple. No text or logo."
+  ],
+  "SP10-103": [
+    "Interlaced frame of a dragon wing. No text or logo.",
+    "Interlaced frame of a galloping horse. No text or logo."
+  ],
+  "SP10-104": [
+    "Teletext dragon. No readable text or logo.",
+    "Teletext castle. No readable text or logo."
+  ],
+  "SP10-105": ["Oscilloscope knight. No text or logo.", "Oscilloscope castle. No text or logo."],
+  "SP10-106": ["E-ink castle. No text or logo.", "E-ink crow. No text or logo."],
+  "SP10-107": [
+    "Frozen macroblock dragon. No text or logo.",
+    "Frozen macroblock knight. No text or logo."
+  ],
+  "SP10-108": ["Texture-bug knight. No text or logo.", "Texture-bug dragon. No text or logo."],
+  "SP10-109": [
+    "LED matrix knight. No text or logo.",
+    "LED matrix moon and castle. No text or logo."
+  ],
+  "SP10-110": [
+    "Thermal print dragon. No readable text or logo.",
+    "Thermal print castle. No readable text or logo."
   ]
 }

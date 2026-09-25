@@ -66,6 +66,16 @@ categories:
       - pack_10/SP10-028.yaml
       - pack_10/SP10-029.yaml
       - pack_10/SP10-030.yaml
+      - pack_10/SP10-101.yaml
+      - pack_10/SP10-102.yaml
+      - pack_10/SP10-103.yaml
+      - pack_10/SP10-104.yaml
+      - pack_10/SP10-105.yaml
+      - pack_10/SP10-106.yaml
+      - pack_10/SP10-107.yaml
+      - pack_10/SP10-108.yaml
+      - pack_10/SP10-109.yaml
+      - pack_10/SP10-110.yaml
   - id: surrealism-and-dream
     name: 4. Surrealism & Dream
     presetRefs:
@@ -185,6 +195,16 @@ presetRefs:
   - pack_10/SP10-028.yaml
   - pack_10/SP10-029.yaml
   - pack_10/SP10-030.yaml
+  - pack_10/SP10-101.yaml
+  - pack_10/SP10-102.yaml
+  - pack_10/SP10-103.yaml
+  - pack_10/SP10-104.yaml
+  - pack_10/SP10-105.yaml
+  - pack_10/SP10-106.yaml
+  - pack_10/SP10-107.yaml
+  - pack_10/SP10-108.yaml
+  - pack_10/SP10-109.yaml
+  - pack_10/SP10-110.yaml
   - pack_10/SP10-031.yaml
   - pack_10/SP10-032.yaml
   - pack_10/SP10-033.yaml

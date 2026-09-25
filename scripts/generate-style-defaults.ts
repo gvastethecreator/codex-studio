@@ -10505,7 +10505,17 @@ try {
       cardSet &&
       priorJob?.prompt !==
         buildProviderStylePrompt(pack, preset, 1, sessionSuffix, variantSlot, providerId).trim();
-    if (priorJob && !replaceReviewed && !reviewedUncertainJobsFile && !briefChanged) {
+    // A failed card-set job ended without an asset (for example an exhausted usage limit), so the
+    // slot can be submitted again once its lock has been cleared.
+    const retryFailed =
+      cardSet && priorJob?.status === 'failed' && !hasAnyAssetForJobFromSqlite(priorJob.id);
+    if (
+      priorJob &&
+      !replaceReviewed &&
+      !reviewedUncertainJobsFile &&
+      !briefChanged &&
+      !retryFailed
+    ) {
       skipped += 1;
       console.warn(
         `[txt2img-already-submitted] ${cardKey} job=${priorJob.id} status=${priorJob.status}; inspect it before another submission.`,

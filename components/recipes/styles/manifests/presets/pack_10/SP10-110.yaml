@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP10-110
+packId: pack_10
+name: Thermal Printer Output
+styleAnchors:
+  - Thermal Printer Output
+  - thermal receipt print
+  - thermal receipt print
+displayName: Thermal Printer Output
+category: 3. Digital Glitch & Noise
+domain: thermal receipt print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - digital-glitch-and-noise
+  - thermal-print
+  - receipt
+  - glitch
+visualDna:
+  aesthetic: 'Thermal printer: the image printed on curling receipt paper in faded dithered black.'
+  subject_treatment: "Re-render the prompt's image entirely in this representation unit so the subject reads from the pattern of units: the image is printed as coarse dithered black on thermal receipt paper with fading and streaks."
+  color_and_tone: Faded black on off-white, as produced by the medium, not added as decoration.
+  lighting_and_shadow: Lighting comes from the source image; the artifact reshapes values and edges without inventing new light.
+  texture_and_material: Dither, streaks and curled paper, at a consistent unit size across the frame.
+  camera_and_composition: Keep the prompt framing; concentrate the effect so the main subject remains the clear read at card size.
+  atmosphere_and_mood: Humble, ephemeral, odd and lo-fi, coming from the medium itself.
+  rendering_and_quality: Clean, deliberate digital artifact with a consistent unit and no random speckle or smeared noise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thermal Printer Output as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: thermal receipt print; dither; fading
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - generic blanket noise
+  - readable characters or words
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic blanket noise, readable characters or words, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_10
+  packName: Abstract & Experimental
+  categoryId: digital-glitch-and-noise
+  categoryName: 3. Digital Glitch & Noise
+  tags:
+    - abstract-and-experimental
+    - digital-glitch-and-noise
+    - thermal-print
+    - receipt
+    - glitch
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: thermal receipt print

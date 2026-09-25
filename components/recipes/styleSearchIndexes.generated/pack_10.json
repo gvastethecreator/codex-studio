@@ -3,7 +3,7 @@
     {
       "id": "pack_10",
       "name": "Abstract & Experimental",
-      "presetCount": 100
+      "presetCount": 110
     }
   ],
   "presets": [
@@ -677,6 +677,162 @@
       "searchableText": "sp10-030 dithering (1-bit) 3. digital glitch & noise digital artifacts pack_10 abstract & experimental digital-glitch-and-noise abstract-and-experimental digital-glitch-and-noise"
     },
     {
+      "id": "SP10-101",
+      "name": "Bit-Crush Posterize",
+      "styleAnchors": ["Bit-Crush Posterize", "bit-depth posterization", "reduced bit depth"],
+      "ref": "pack_10/SP10-101.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "digital-glitch-and-noise",
+      "categoryName": "3. Digital Glitch & Noise",
+      "domain": "bit-depth posterization",
+      "tags": ["abstract-and-experimental", "digital-glitch-and-noise", "bit-depth-posterization"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-101 bit-crush posterize bit-depth posterization reduced bit depth 3. digital glitch & noise digital artifacts bit-depth posterization pack_10 abstract & experimental digital-glitch-and-noise abstract-and-experimental digital-glitch-and-noise bit-depth-posterization"
+    },
+    {
+      "id": "SP10-102",
+      "name": "Slit-Scan Stretch",
+      "styleAnchors": ["Slit-Scan Stretch", "slit-scan time distortion", "slit-scan stretch"],
+      "ref": "pack_10/SP10-102.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "digital-glitch-and-noise",
+      "categoryName": "3. Digital Glitch & Noise",
+      "domain": "slit-scan time distortion",
+      "tags": [
+        "abstract-and-experimental",
+        "digital-glitch-and-noise",
+        "slit-scan-time-distortion"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-102 slit-scan stretch slit-scan time distortion slit-scan stretch 3. digital glitch & noise digital artifacts slit-scan time distortion pack_10 abstract & experimental digital-glitch-and-noise abstract-and-experimental digital-glitch-and-noise slit-scan-time-distortion"
+    },
+    {
+      "id": "SP10-103",
+      "name": "Interlace Comb Tear",
+      "styleAnchors": ["Interlace Comb Tear", "interlaced video combing", "interlace comb teeth"],
+      "ref": "pack_10/SP10-103.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "digital-glitch-and-noise",
+      "categoryName": "3. Digital Glitch & Noise",
+      "domain": "interlaced video combing",
+      "tags": ["abstract-and-experimental", "digital-glitch-and-noise", "interlaced-video-combing"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-103 interlace comb tear interlaced video combing interlace comb teeth 3. digital glitch & noise digital artifacts interlaced video combing pack_10 abstract & experimental digital-glitch-and-noise abstract-and-experimental digital-glitch-and-noise interlaced-video-combing"
+    },
+    {
+      "id": "SP10-104",
+      "name": "Teletext Mosaic",
+      "styleAnchors": ["Teletext Mosaic", "teletext block graphics", "teletext block cells"],
+      "ref": "pack_10/SP10-104.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "digital-glitch-and-noise",
+      "categoryName": "3. Digital Glitch & Noise",
+      "domain": "teletext block graphics",
+      "tags": ["abstract-and-experimental", "digital-glitch-and-noise", "teletext-block-graphics"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-104 teletext mosaic teletext block graphics teletext block cells 3. digital glitch & noise digital artifacts teletext block graphics pack_10 abstract & experimental digital-glitch-and-noise abstract-and-experimental digital-glitch-and-noise teletext-block-graphics"
+    },
+    {
+      "id": "SP10-105",
+      "name": "Oscilloscope Vector Trace",
+      "styleAnchors": [
+        "Oscilloscope Vector Trace",
+        "oscilloscope vector drawing",
+        "phosphor vector lines"
+      ],
+      "ref": "pack_10/SP10-105.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "digital-glitch-and-noise",
+      "categoryName": "3. Digital Glitch & Noise",
+      "domain": "oscilloscope vector drawing",
+      "tags": [
+        "abstract-and-experimental",
+        "digital-glitch-and-noise",
+        "oscilloscope-vector-drawing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-105 oscilloscope vector trace oscilloscope vector drawing phosphor vector lines 3. digital glitch & noise digital artifacts oscilloscope vector drawing pack_10 abstract & experimental digital-glitch-and-noise abstract-and-experimental digital-glitch-and-noise oscilloscope-vector-drawing"
+    },
+    {
+      "id": "SP10-106",
+      "name": "E-Ink Ghosting",
+      "styleAnchors": ["E-Ink Ghosting", "e-ink display ghosting", "e-paper greys"],
+      "ref": "pack_10/SP10-106.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "digital-glitch-and-noise",
+      "categoryName": "3. Digital Glitch & Noise",
+      "domain": "e-ink display ghosting",
+      "tags": ["abstract-and-experimental", "digital-glitch-and-noise", "e-ink-display-ghosting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-106 e-ink ghosting e-ink display ghosting e-paper greys 3. digital glitch & noise digital artifacts e-ink display ghosting pack_10 abstract & experimental digital-glitch-and-noise abstract-and-experimental digital-glitch-and-noise e-ink-display-ghosting"
+    },
+    {
+      "id": "SP10-107",
+      "name": "Macroblock Freeze",
+      "styleAnchors": ["Macroblock Freeze", "frozen macroblock corruption", "frozen macroblocks"],
+      "ref": "pack_10/SP10-107.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "digital-glitch-and-noise",
+      "categoryName": "3. Digital Glitch & Noise",
+      "domain": "frozen macroblock corruption",
+      "tags": [
+        "abstract-and-experimental",
+        "digital-glitch-and-noise",
+        "frozen-macroblock-corruption"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-107 macroblock freeze frozen macroblock corruption frozen macroblocks 3. digital glitch & noise digital artifacts frozen macroblock corruption pack_10 abstract & experimental digital-glitch-and-noise abstract-and-experimental digital-glitch-and-noise frozen-macroblock-corruption"
+    },
+    {
+      "id": "SP10-108",
+      "name": "Texture Repeat Bug",
+      "styleAnchors": ["Texture Repeat Bug", "repeating texture bug", "visible texture tiling"],
+      "ref": "pack_10/SP10-108.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "digital-glitch-and-noise",
+      "categoryName": "3. Digital Glitch & Noise",
+      "domain": "repeating texture bug",
+      "tags": ["abstract-and-experimental", "digital-glitch-and-noise", "repeating-texture-bug"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-108 texture repeat bug repeating texture bug visible texture tiling 3. digital glitch & noise digital artifacts repeating texture bug pack_10 abstract & experimental digital-glitch-and-noise abstract-and-experimental digital-glitch-and-noise repeating-texture-bug"
+    },
+    {
+      "id": "SP10-109",
+      "name": "LED Matrix Display",
+      "styleAnchors": ["LED Matrix Display", "LED dot matrix display", "round LED dots"],
+      "ref": "pack_10/SP10-109.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "digital-glitch-and-noise",
+      "categoryName": "3. Digital Glitch & Noise",
+      "domain": "LED dot matrix display",
+      "tags": ["abstract-and-experimental", "digital-glitch-and-noise", "led-dot-matrix-display"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-109 led matrix display led dot matrix display round led dots 3. digital glitch & noise digital artifacts led dot matrix display pack_10 abstract & experimental digital-glitch-and-noise abstract-and-experimental digital-glitch-and-noise led-dot-matrix-display"
+    },
+    {
+      "id": "SP10-110",
+      "name": "Thermal Printer Output",
+      "styleAnchors": ["Thermal Printer Output", "thermal receipt print", "thermal receipt print"],
+      "ref": "pack_10/SP10-110.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "digital-glitch-and-noise",
+      "categoryName": "3. Digital Glitch & Noise",
+      "domain": "thermal receipt print",
+      "tags": ["abstract-and-experimental", "digital-glitch-and-noise", "thermal-receipt-print"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-110 thermal printer output thermal receipt print 3. digital glitch & noise digital artifacts thermal receipt print pack_10 abstract & experimental digital-glitch-and-noise abstract-and-experimental digital-glitch-and-noise thermal-receipt-print"
+    },
+    {
       "id": "SP10-031",
       "name": "Surrealism (Dali)",
       "ref": "pack_10/SP10-031.yaml",
@@ -1277,5 +1433,5 @@
       "searchableText": "sp10-080 letterpress 9. print and light finishes print & light finish pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes"
     }
   ],
-  "totalPresetCount": 100
+  "totalPresetCount": 110
 }
