@@ -8,28 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: '90s Sitcom',
     category: '2. TV And Broadcast',
     negativePrompt:
-      'cinematic, dark, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, cinematic, dark moody light, dark, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        '90s Sitcom acts as a transferable cinematic-media router: start from Cozy multi-camera sitcom warmth, laugh-track comfort, 90s broadcast vibe, Multi-camera wash, 3-wall-set clarity, sitcom warmth and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        '90s sitcom set look: a bright three-wall studio set lit by an even overhead wash, staged so every actor faces the audience side.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under 90s Sitcom: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting; render them as a frame of this broadcast format, without adding a presenter, host, audience or readable caption the prompt did not ask for.',
       color_and_tone:
-        'Build color with Bright flat warmth, beige, cream, soft accent color; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Warm beige, cream and wood tones with one or two cheerful accent colors; low contrast.',
       lighting_and_shadow:
-        'Handle light through Multi-camera lighting, broad even wash, audience-ready spill; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Flat overhead studio wash from many fixtures, soft multiple shadows, no dark corners anywhere on the set.',
       texture_and_material:
-        'Render Videotape, SD broadcast, soft analog edges; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Floral sofas, wood paneling, kitchen counters and knickknacks, all clean and new-looking.',
       camera_and_composition:
-        'Structure the image through Camera language native to 90s Sitcom: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+        'Wide proscenium framing from the missing fourth wall, actors spread in a shallow arc, doors and stairs visible.',
       atmosphere_and_mood:
-        'Keep the mood Comfort, funny, nostalgic security, mood carried by 90s Sitcom media process, signal pressure, and visual restraint; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Cozy and comic, a safe living room where every problem resolves by the end.',
       rendering_and_quality:
-        'Finish with Studio audience feel, live-tap energy, punch-line timing; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Clean broadcast color of the set itself; tape artifacts belong to Analog Sitcom Multicam, not here.',
       key_features:
-        'Cozy multi-camera sitcom warmth, laugh-track comfort, 90s broadcast vibe; Multi-camera wash, 3-wall-set clarity, sitcom warmth; Bright flat warmth, beige, cream, soft accent color; Videotape, SD broadcast, soft analog edges; Camera language native to 90s Sitcom: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
+        'three-wall studio set; flat overhead wash; actors staged toward the fourth wall; beige and cream palette; proscenium framing',
       creative_brief:
-        "Apply 90s Sitcom as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Cozy multi-camera sitcom warmth, laugh-track comfort, 90s broadcast vibe, Multi-camera wash, 3-wall-set clarity, sitcom warmth, Videotape, SD broadcast, soft analog edges without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 90s Sitcom as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +37,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'News Broadcast',
     category: '2. TV And Broadcast',
     negativePrompt:
-      'movie, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, movie grain, movie, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'News Broadcast acts as a transferable cinematic-media router: start from Broadcast-news urgency, live news-broadcast package with cool blue authority, red alert accents, lower-third geometry, ticker rhythm, and crisp HD studio signal, Lower-third bars, ticker rhythm, studio sharpness and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Network news studio look: the subject lit and framed as a headline segment in front of a cool blue LED video wall.',
       subject_treatment:
-        'Transform any prompt subject through Lower-third graphic bands, information-first framing, subject-as-current-event hierarchy, graphic bands, and authoritative flatness without requiring anchors or desks; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting; render them as a frame of this broadcast format, without adding a presenter, host, audience or readable caption the prompt did not ask for.',
       color_and_tone:
-        'Build color with Studio blue, navy, red accent, clean white; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Cool blue and white studio palette, glossy surfaces, a single red accent, crisp HD color.',
       lighting_and_shadow:
-        'Handle light through Flat studio, even key, hair light separation; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render HD Video, crisp digital, broadcast sharpness; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Soft frontal key with bright hair light and blue backlight from the LED wall; no dramatic shadow.',
+      texture_and_material: 'Glossy desk surfaces, glass, brushed metal, clean fabrics.',
       camera_and_composition:
-        'Structure the image through Ticker tape, scrolling crawl, side panel; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Serious, informational, authoritative urgency, mood carried by News Broadcast media process, signal pressure, and visual restraint; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Medium shot at desk height, subject centered or on a third, video wall softly out of focus behind.',
+      atmosphere_and_mood: 'Urgent and authoritative, every subject presented as breaking news.',
       rendering_and_quality:
-        'Finish with Live, urgent, breaking-news tension, satellite delay; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Crisp HD broadcast signal; no ticker, no readable graphics and no added anchor.',
       key_features:
-        'Broadcast-news urgency, live news-broadcast package with cool blue authority, red alert accents, lower-third geometry, ticker rhythm, and crisp HD studio signal; Lower-third bars, ticker rhythm, studio sharpness; Studio blue, navy, red accent, clean white; HD Video, crisp digital, broadcast sharpness; Ticker tape, scrolling crawl, side panel',
+        'blue LED video wall; glossy desk; soft key with hair light; desk-height medium shot; crisp HD',
       creative_brief:
-        "Apply News Broadcast as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Broadcast-news urgency, live news-broadcast package with cool blue authority, red alert accents, lower-third geometry, ticker rhythm, and crisp HD studio signal, Lower-third bars, ticker rhythm, studio sharpness, HD Video, crisp digital, broadcast sharpness without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies News Broadcast as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +64,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Soap Opera',
     category: '2. TV And Broadcast',
     negativePrompt:
-      'film look, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, film grain, gritty, film look, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Soap Opera acts as a transferable cinematic-media router: start from Daytime TV, Soap Opera broadcast signal texture, package graphics, safe-frame composition, video compression, and live-media hierarchy, Diffusion haze, melodramatic zoom, high-frame-rate gloss and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Daytime soap opera: high-gloss video with heavy diffusion, melodramatic close-ups and slow zooms onto shocked faces.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Soap Opera: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting; render them as a frame of this broadcast format, without adding a presenter, host, audience or readable caption the prompt did not ask for.',
       color_and_tone:
-        'Build color with Soft focus, pastel wash, peach glow, pearl sheen; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Warm glowing skin, creamy highlights, soft pastel interiors, bloom around every light.',
       lighting_and_shadow:
-        'Handle light through High key, backlit, halo separation, glamour diffusion; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Soft frontal key, strong backlight halo on hair, diffusion filter spreading highlights.',
       texture_and_material:
-        'Render 60fps video (Soap effect), hyper-smooth motion, interlaced; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Silk, satin, polished wood and chandeliers, all rendered with video smoothness.',
       camera_and_composition:
-        'Structure the image through Soft glow, diffusion filter haze, vaseline smear; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Dramatic, romantic, suspended melodrama, mood carried by Soap Opera media process, signal pressure, and visual restraint; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Dreamy, cheap, high-frame-rate unreality, studio artifice; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Tight close-ups and two-shots, slow push-ins, one face turned toward the lens.',
+      atmosphere_and_mood: 'Melodramatic and glossy, a secret about to be revealed.',
+      rendering_and_quality: 'High-frame-rate video gloss with diffusion bloom; no film grain.',
       key_features:
-        'Daytime TV, Soap Opera broadcast signal texture, package graphics, safe-frame composition, video compression, and live-media hierarchy; Diffusion haze, melodramatic zoom, high-frame-rate gloss; Soft focus, pastel wash, peach glow, pearl sheen; 60fps video (Soap effect), hyper-smooth motion, interlaced; Soft glow, diffusion filter haze, vaseline smear',
+        'diffusion bloom; hair backlight halo; melodramatic close-up; slow push-in; video gloss',
       creative_brief:
-        "Apply Soap Opera as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Daytime TV, Soap Opera broadcast signal texture, package graphics, safe-frame composition, video compression, and live-media hierarchy, Diffusion haze, melodramatic zoom, high-frame-rate gloss, 60fps video (Soap effect), hyper-smooth motion, interlaced without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soap Opera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,57 +91,53 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Reality TV Confessional',
     category: '2. TV And Broadcast',
     negativePrompt:
-      'scripted, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, scripted drama lighting, name caption, scripted, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Reality TV Confessional acts as a transferable cinematic-media router: start from Reality TV confessional interview, Reality TV Confessional broadcast signal texture, package graphics, safe-frame composition, video compression, and live-media hierarchy, Direct-to-camera framing, ring catchlight, composited backdrop and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Reality TV confessional: a contestant alone in a chair speaking straight into the lens against a colored backdrop.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Reality TV Confessional: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Saturated, pumped skin tones, jewel accent, matte shadow; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Keep the prompt subject, action and setting; render them as a frame of this broadcast format, without adding a presenter, host, audience or readable caption the prompt did not ask for.',
+      color_and_tone: 'Saturated backdrop color (purple, teal, orange), neutral skin, crisp video.',
       lighting_and_shadow:
-        'Handle light through Ring light, catchlight halo, soft frontal wrap; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render HD video, sharp digital, retouched surface; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'One soft key and a colored backlight on the backdrop; clean, flat, slightly harsh.',
+      texture_and_material: 'Sharp video texture, visible makeup, casual or costume clothing.',
       camera_and_composition:
-        'Structure the image through Green screen back, chroma-key spill, composited backdrop; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Manufactured drama, direct intimacy, mood carried by Reality TV Confessional media process, signal pressure, and visual restraint; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Centered chest-up framing, eyes into the lens, slight wide-angle closeness.',
+      atmosphere_and_mood: 'Confessional and gossipy, private feelings performed for everyone.',
       rendering_and_quality:
-        'Finish with Produced, fake, manufactured drama, confessional intimacy; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Crisp reality-TV video with no readable name captions or show graphics.',
       key_features:
-        'Reality TV confessional interview, Reality TV Confessional broadcast signal texture, package graphics, safe-frame composition, video compression, and live-media hierarchy; Direct-to-camera framing, ring catchlight, composited backdrop; Saturated, pumped skin tones, jewel accent, matte shadow; HD video, sharp digital, retouched surface; Green screen back, chroma-key spill, composited backdrop',
+        'direct-to-lens confession; colored backdrop; centered chest-up shot; soft key; crisp video',
       creative_brief:
-        "Apply Reality TV Confessional as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Reality TV confessional interview, Reality TV Confessional broadcast signal texture, package graphics, safe-frame composition, video compression, and live-media hierarchy, Direct-to-camera framing, ring catchlight, composited backdrop, HD video, sharp digital, retouched surface without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Reality TV Confessional as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-021',
-    name: 'Hype Williams Fisheye Glam Video',
+    name: 'Fisheye Glam Music Video',
+    displayName: 'Fisheye Glam Music Video',
+    styleAnchors: ['Fisheye Glam Music Video'],
     category: '2. TV And Broadcast',
     negativePrompt:
-      'boring, normal, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, boring framing, rectilinear lens, boring, normal, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Hype Williams Fisheye Glam Video acts as a transferable cinematic-media router: start from Late-90s luxury music-video fisheye, Hype Williams fishbowl, tunnel vision, opulent gloss, Fisheye warp, chrome gloss, slow-motion opulence and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Fisheye glam music video: late-90s luxury performance video shot through an extreme fisheye lens, with chrome, velvet and slow-motion opulence.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Hype Williams Fisheye Glam Video: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting; render them as a frame of this broadcast format, without adding a presenter, host, audience or readable caption the prompt did not ask for.',
       color_and_tone:
-        'Build color with Chrome, platinum, ice white, purple velvet; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Studio tunnel, keyed spot, dramatic back silhouette; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Chrome silver, ice white, deep purple velvet and gold; high gloss and saturation.',
+      lighting_and_shadow: 'Bright colored backlights, glossy specular highlights, glowing floor.',
       texture_and_material:
-        'Render Fisheye lens, curved glass, spherical distortion; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Chrome, patent leather, velvet, crystal and satin, all highly reflective.',
       camera_and_composition:
-        'Structure the image through Distorted wide angle, fishbowl warp, tunnel perspective; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Cool, flashy, hip-hop royalty, aspirational excess; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Glossy, expensive, music-video maximalism, diamond-studded; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Extreme fisheye close to the performer, bulging center, curved horizon, low wide angle.',
+      atmosphere_and_mood: 'Opulent and larger than life, a star leaning straight into the lens.',
+      rendering_and_quality: 'Glossy 35 mm music-video look; invented performers only.',
       key_features:
-        'Late-90s luxury music-video fisheye, Hype Williams fishbowl, tunnel vision, opulent gloss; Fisheye warp, chrome gloss, slow-motion opulence; Chrome, platinum, ice white, purple velvet; Fisheye lens, curved glass, spherical distortion; Distorted wide angle, fishbowl warp, tunnel perspective',
+        'extreme fisheye bulge; chrome and purple velvet; glossy specular light; performer close to lens; slow-motion opulence',
       creative_brief:
-        "Apply Hype Williams Fisheye Glam Video as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Late-90s luxury music-video fisheye, Hype Williams fishbowl, tunnel vision, opulent gloss, Fisheye warp, chrome gloss, slow-motion opulence, Fisheye lens, curved glass, spherical distortion without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fisheye Glam Music Video as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +145,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'CCTV/Security Cam',
     category: '2. TV And Broadcast',
     negativePrompt:
-      'color, hd, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, color hd, readable camera labels, color, hd, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'CCTV/Security Cam acts as a transferable cinematic-media router: start from Surveillance footage, CCTV/Security Cam broadcast signal texture, package graphics, safe-frame composition, video compression, and live-media hierarchy, Timestamp-like overlay, camera ID marks, motion-box geometry and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Security monitor wall: several CCTV feeds shown together in a quad split on a CRT monitor, so the scene is seen from four fixed cameras at once.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under CCTV/Security Cam: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject as the content of the graphic; this preset owns the on-screen layout, and every band, panel or symbol stays free of readable text.',
       color_and_tone:
-        'Build color with Black and White, crushed greys, no midtones, hot whites; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Grainy black and white or washed green feeds, glowing phosphor, dark monitor bezel.',
       lighting_and_shadow:
-        'Handle light through Low dynamic range, flat sensor, blown highlights; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Scanlines, noise, interlacing artifacts, pixel smear; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Each feed lit by its own location; monitor glow spilling onto the dark desk.',
+      texture_and_material: 'Low resolution, compression blocks, scanlines and CRT curvature.',
       camera_and_composition:
-        'Structure the image through Wide angle distortion, convex warp, overhead mount; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+        'Four panels in a two-by-two grid, each a high-corner view of a different part of the scene.',
       atmosphere_and_mood:
-        'Keep the mood Creepy, voyeur, institutional coldness, anonymous watching; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Watchful and uneasy, something appearing in one feed and not in the others.',
       rendering_and_quality:
-        'Finish with Low res, grainy, surveillance-grade, compressed blockiness; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Multi-feed monitor presentation; distinct from the single-camera CCTV profile in pack_01; no readable labels.',
       key_features:
-        'Surveillance footage, CCTV/Security Cam broadcast signal texture, package graphics, safe-frame composition, video compression, and live-media hierarchy; Timestamp-like overlay, camera ID marks, motion-box geometry; Black and White, crushed greys, no midtones, hot whites; Scanlines, noise, interlacing artifacts, pixel smear; Wide angle distortion, convex warp, overhead mount',
+        'two-by-two feed grid; CRT curvature and scanlines; high-corner views; grainy monochrome; one anomaly',
       creative_brief:
-        "Apply CCTV/Security Cam as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Surveillance footage, CCTV/Security Cam broadcast signal texture, package graphics, safe-frame composition, video compression, and live-media hierarchy, Timestamp-like overlay, camera ID marks, motion-box geometry, Scanlines, noise, interlacing artifacts, pixel smear without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies CCTV/Security Cam as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +173,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'VHS Home Video',
     category: '2. TV And Broadcast',
     negativePrompt:
-      'hd, digital, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, hd, readable date stamp, digital, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'VHS Home Video acts as a transferable cinematic-media router: start from 1990s camcorder, VHS Home Video broadcast signal texture, package graphics, safe-frame composition, video compression, and live-media hierarchy, Date stamp, REC indicator, zoom wobble and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'VHS home video: a family camcorder recording in the 1990s, played back from a worn tape.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under VHS Home Video: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting; render them as a frame of this broadcast format, without adding a presenter, host, audience or readable caption the prompt did not ask for.',
       color_and_tone:
-        'Build color with Color bleed, magenta shift, yellowed warmth, cyan fringe; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Oversaturated reds, bleeding color, blue-green shadows, warm tungsten indoors.',
       lighting_and_shadow:
-        'Handle light through On-camera flash, built-in spotlight, clipped highlights; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'On-camera light or harsh available light; blown windows and deep shadow falloff.',
       texture_and_material:
-        'Render Tracking lines, head-switching noise, tape dropout; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Tracking lines, head-switching noise at the bottom, soft focus, auto-focus hunting.',
       camera_and_composition:
-        'Structure the image through Glitch, tearing, horizontal displacement, time-base error; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Memory, raw, unguarded nostalgia, mood carried by VHS Home Video media process, signal pressure, and visual restraint; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Handheld, zoom wobble, family members crowding and waving at the lens.',
+      atmosphere_and_mood: 'Tender and chaotic, family memory in a warm fuzz.',
       rendering_and_quality:
-        'Finish with Nostalgic, bad, 240p mush, magnetic degradation; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Consumer VHS signal; a date stamp or REC mark only as unreadable shapes.',
       key_features:
-        '1990s camcorder, VHS Home Video broadcast signal texture, package graphics, safe-frame composition, video compression, and live-media hierarchy; Date stamp, REC indicator, zoom wobble; Color bleed, magenta shift, yellowed warmth, cyan fringe; Tracking lines, head-switching noise, tape dropout; Glitch, tearing, horizontal displacement, time-base error',
+        'camcorder handheld; tracking lines and head-switching noise; bleeding reds; zoom wobble; blown windows',
       creative_brief:
-        "Apply VHS Home Video as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through 1990s camcorder, VHS Home Video broadcast signal texture, package graphics, safe-frame composition, video compression, and live-media hierarchy, Date stamp, REC indicator, zoom wobble, Tracking lines, head-switching noise, tape dropout without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies VHS Home Video as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +201,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Public Access TV',
     category: '2. TV And Broadcast',
     negativePrompt:
-      'professional, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, professional polish, professional, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Public Access TV acts as a transferable cinematic-media router: start from Weird local TV, Public Access TV broadcast signal texture, package graphics, safe-frame composition, video compression, and live-media hierarchy, Bad keying, UHF noise, local-TV awkwardness and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Public access TV studio: a sincere amateur show taped in a tiny community studio with cheap sets and uneven lighting.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Public Access TV: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting; render them as a frame of this broadcast format, without adding a presenter, host, audience or readable caption the prompt did not ask for.',
       color_and_tone:
-        'Build color with Bad white balance, green cast, orange skin, sickly fluorescent; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Muddy colors, a bright blue curtain or glitter backdrop, blown faces, UHF color noise.',
       lighting_and_shadow:
-        'Handle light through Harsh shadows, single ceiling tube, unflattering overhead; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'One or two badly placed lights, hot spots, harsh shadows on the curtain.',
       texture_and_material:
-        'Render Analog noise, composite video, RF interference; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Chroma key fail, blue fringe, transparent hair halo; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Surreal, awkward, uncanny local, midnight broadcast; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        "Finish with Amateur, weird, Wayne's World cable-access, dead air; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.",
+        'Cheap props, tinsel, plywood desks, noisy UHF reception and bad keying.',
+      camera_and_composition: 'Static wide shot, framing slightly off, microphone cable visible.',
+      atmosphere_and_mood: 'Awkward and sincere, homemade passion on a zero budget.',
+      rendering_and_quality: 'Low-grade analog signal; any graphics blocky and textless.',
       key_features:
-        'Weird local TV, Public Access TV broadcast signal texture, package graphics, safe-frame composition, video compression, and live-media hierarchy; Bad keying, UHF noise, local-TV awkwardness; Bad white balance, green cast, orange skin, sickly fluorescent; Analog noise, composite video, RF interference; Chroma key fail, blue fringe, transparent hair halo',
+        'tiny community studio; blue curtain backdrop; badly placed lights; UHF noise; awkward static framing',
       creative_brief:
-        "Apply Public Access TV as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Weird local TV, Public Access TV broadcast signal texture, package graphics, safe-frame composition, video compression, and live-media hierarchy, Bad keying, UHF noise, local-TV awkwardness, Analog noise, composite video, RF interference without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Public Access TV as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +227,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Infomercial',
     category: '2. TV And Broadcast',
     negativePrompt:
-      'cinematic, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, readable price, phone number, cinematic, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Infomercial acts as a transferable cinematic-media router: start from Infomercial product-demo energy, late-night infomercial product-demo energy with cheap primaries, overlit video, split-screen comparison logic, and urgent sales rhythm, Split-screen comparison, price-tag rhythm, demo spotlight and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Infomercial before-and-after: a split screen contrasting a gray, clumsy "before" struggle with a bright, triumphant "after".',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Infomercial: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting; render them as a frame of this broadcast format, without adding a presenter, host, audience or readable caption the prompt did not ask for.',
       color_and_tone:
-        'Build color with Bright cheap primaries, sale red, primary yellow; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Left half desaturated or black and white; right half saturated primaries and bright whites.',
       lighting_and_shadow:
-        'Handle light through Flat, even wash, product spotlight, over-lit; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Video, SD sheen, low-budget smoothness; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Flat, gloomy light on the before side; overlit high-key light on the after side.',
+      texture_and_material: 'Exaggerated mess and frustration versus spotless gleaming results.',
       camera_and_composition:
-        'Structure the image through Before/After split, split-screen comparison, arrow overlay; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Enthusiastic, fake, limited-time urgency, mood carried by Infomercial media process, signal pressure, and visual restraint; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Sales, cheesy, excited-host energy, demonstration pace; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Vertical split with a hard dividing line, the same subject in both halves, exaggerated expressions.',
+      atmosphere_and_mood: 'Absurd and persuasive, frustration flipped into miracle.',
+      rendering_and_quality: 'Late-night video comparison look; no readable price or phone number.',
       key_features:
-        'Infomercial product-demo energy, late-night infomercial product-demo energy with cheap primaries, overlit video, split-screen comparison logic, and urgent sales rhythm; Split-screen comparison, price-tag rhythm, demo spotlight; Bright cheap primaries, sale red, primary yellow; Video, SD sheen, low-budget smoothness; Before/After split, split-screen comparison, arrow overlay',
+        'hard vertical split; gray before versus bright after; same subject twice; exaggerated struggle; overlit result',
       creative_brief:
-        "Apply Infomercial as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Infomercial product-demo energy, late-night infomercial product-demo energy with cheap primaries, overlit video, split-screen comparison logic, and urgent sales rhythm, Split-screen comparison, price-tag rhythm, demo spotlight, Video, SD sheen, low-budget smoothness without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Infomercial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -269,28 +253,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sports Broadcast',
     category: '2. TV And Broadcast',
     negativePrompt:
-      'movie, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, movie grade, readable scoreboard, movie, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Sports Broadcast acts as a transferable cinematic-media router: start from Live sports broadcast, live sports broadcast grammar with telephoto compression, scorebug-like composition, saturated field color, floodlights, and replay clarity, Scorebug feel, replay wipe, telestrator circle and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Live sports broadcast: an HD telephoto camera on the rail following the action under floodlights, with the flat, bright look of a live feed.',
       subject_treatment:
-        'Transform any prompt subject through Scorebug graphic structure, adapt the requested subject through broadcast signal texture, package graphics, safe-frame composition, video compression, and live-media hierarchy while preserving prompt identity; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting; render them as a frame of this broadcast format, without adding a presenter, host, audience or readable caption the prompt did not ask for.',
       color_and_tone:
-        'Build color with Saturated field green, team-color accents, sky blue; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Saturated field color, bright floodlit whites, clean neutral broadcast grading.',
       lighting_and_shadow:
-        'Handle light through Stadium lights, multi-source flood, uniform exposure; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render HD slow-motion crispness, droplet-perfect detail; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Stadium floodlights from several directions creating multiple soft shadows.',
+      texture_and_material: 'Sharp HD detail on athletes, slightly compressed crowd behind.',
       camera_and_composition:
-        'Structure the image through Camera language native to Sports Broadcast: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Exciting, live, roaring crowd, championship tension; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Long telephoto from the side, athletes compressed against a blurred crowd, action centered.',
+      atmosphere_and_mood: 'Electric and immediate, the moment happening live.',
       rendering_and_quality:
-        'Finish with Telephoto action, field-level compression, subject isolation; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Clean HD live feed; any scorebug reduced to a textless shape or omitted.',
       key_features:
-        'Live sports broadcast, live sports broadcast grammar with telephoto compression, scorebug-like composition, saturated field color, floodlights, and replay clarity; Scorebug feel, replay wipe, telestrator circle; Saturated field green, team-color accents, sky blue; HD slow-motion crispness, droplet-perfect detail; Camera language native to Sports Broadcast: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
+        'rail telephoto; floodlit multiple shadows; compressed crowd; saturated field color; live HD feed',
       creative_brief:
-        "Apply Sports Broadcast as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Live sports broadcast, live sports broadcast grammar with telephoto compression, scorebug-like composition, saturated field color, floodlights, and replay clarity, Scorebug feel, replay wipe, telestrator circle, HD slow-motion crispness, droplet-perfect detail without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sports Broadcast as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -298,57 +280,54 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Weather Channel',
     category: '2. TV And Broadcast',
     negativePrompt:
-      'plain studio, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, readable place names, readable numbers, plain studio, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Weather Channel acts as a transferable cinematic-media router: start from Weather forecast graphics, weather-channel forecast graphics with radar color bands, Doppler sweep rhythm, isobar-like linework, and composited information layers, Radar palette, isobar curves, forecast-grid rhythm and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Weather channel forecast graphic: a composited map with isobars, weather symbols and temperature gradients, rendered in broadcast graphic style.',
       subject_treatment:
-        'Transform any prompt subject through Isobars, map-like transformation, pressure-line overlays, readable hazard color zones, and forecast-package hierarchy without needing real map labels; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject as the content of the graphic; this preset owns the on-screen layout, and every band, panel or symbol stays free of readable text.',
       color_and_tone:
-        'Build color with Radar Green/Red, precipitation blue, severe-weather magenta; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Digital map, emissive screen, composited depth field; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Blue-to-red temperature gradients, green land, white isobars, bright yellow suns.',
+      lighting_and_shadow: 'Soft 3D map shading and glowing symbols; no scene lighting.',
       texture_and_material:
-        'Render Screen, broadcast graphics, crisp vector overlay; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Satellite-style terrain texture, translucent cloud layers and softly beveled weather symbols.',
       camera_and_composition:
-        'Structure the image through Camera language native to Weather Channel: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Informative, reassuring, storm-track urgency, weekend outlook; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Info, graphics, Doppler sweep, forecast animation; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Map view tilted slightly in 3D, symbols placed over regions, clean layered composition.',
+      atmosphere_and_mood: 'Helpful and orderly, the sky explained in shapes and colors.',
+      rendering_and_quality: 'Broadcast forecast graphics with no readable place names or numbers.',
       key_features:
-        'Weather forecast graphics, weather-channel forecast graphics with radar color bands, Doppler sweep rhythm, isobar-like linework, and composited information layers; Radar palette, isobar curves, forecast-grid rhythm; Radar Green/Red, precipitation blue, severe-weather magenta; Screen, broadcast graphics, crisp vector overlay; Camera language native to Weather Channel: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
+        'composited forecast map; isobar lines; weather symbols; temperature gradient; textless 3D map',
       creative_brief:
-        "Apply Weather Channel as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Weather forecast graphics, weather-channel forecast graphics with radar color bands, Doppler sweep rhythm, isobar-like linework, and composited information layers, Radar palette, isobar curves, forecast-grid rhythm, Screen, broadcast graphics, crisp vector overlay without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Weather Channel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-028',
-    name: 'MTV 90s Grunge Broadcast',
+    name: '90s Grunge Music Video',
+    displayName: '90s Grunge Music Video',
+    styleAnchors: ['90s Grunge Music Video'],
     category: '2. TV And Broadcast',
     negativePrompt:
-      'clean, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, clean polish, channel logo, clean, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'MTV 90s Grunge Broadcast acts as a transferable cinematic-media router: start from Alternative video, 1990s MTV grunge broadcast with distressed film, jump cuts, video feedback, scribble graphics, and anti-polish music-video aggression, Fast-cut feel, scribble overlays, feedback warp and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        '90s grunge music video: distressed film and video mixed with jump cuts, video feedback and anti-polish aggression.',
       subject_treatment:
-        'Transform any prompt subject through Scribbles, fragmented music-video treatment, jittered contours, scribble overlays, and rebellious cut rhythm without forcing a band performance; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting; render them as a frame of this broadcast format, without adding a presenter, host, audience or readable caption the prompt did not ask for.',
       color_and_tone:
-        'Build color with Desaturated + Neon, bleach bypass, acid green, safety orange; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Strobe, flicker, flash-frame, concert par-can; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Dirty greens, rust browns and washed yellows, crushed blacks, occasional feedback color burst.',
+      lighting_and_shadow: 'Single bulbs, work lights and strobes; harsh and uneven.',
       texture_and_material:
-        'Render Distressed film, scratched negative, hand-processed; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Scratched film, video feedback trails, flannel, sweat, hair in motion, peeling walls.',
       camera_and_composition:
-        'Structure the image through Morphing, image warp, video feedback, liquid dissolve; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Rebellious, cool, anti-establishment, mosh-pit energy; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Handheld and tilted, performer cut off by the frame, frames stuttering.',
+      atmosphere_and_mood: 'Angry and raw, loud feeling with no interest in looking pretty.',
       rendering_and_quality:
-        'Finish with Edgy, fast, rapid-fire montage, music-video relentlessness; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Distressed mixed-media music-video look; no clean studio polish or channel logo.',
       key_features:
-        'Alternative video, 1990s MTV grunge broadcast with distressed film, jump cuts, video feedback, scribble graphics, and anti-polish music-video aggression; Fast-cut feel, scribble overlays, feedback warp; Desaturated + Neon, bleach bypass, acid green, safety orange; Distressed film, scratched negative, hand-processed; Morphing, image warp, video feedback, liquid dissolve',
+        'distressed film and video; jump-cut stutter; single bulb light; video feedback; tilted handheld',
       creative_brief:
-        "Apply MTV 90s Grunge Broadcast as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Alternative video, 1990s MTV grunge broadcast with distressed film, jump cuts, video feedback, scribble graphics, and anti-polish music-video aggression, Fast-cut feel, scribble overlays, feedback warp, Distressed film, scratched negative, hand-processed without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 90s Grunge Music Video as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -356,28 +335,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cooking Show',
     category: '2. TV And Broadcast',
     negativePrompt:
-      'messy, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, messy, readable recipe card, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cooking Show acts as a transferable cinematic-media router: start from Cooking-show appetite lighting, Cooking Show broadcast signal texture, package graphics, safe-frame composition, video compression, and live-media hierarchy, Overhead demo angle, warm macro texture, steam halo and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Cooking show: a bright TV kitchen set with warm appetite lighting and overhead mirror shots of hands at work.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Cooking Show: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting; render them as a frame of this broadcast format, without adding a presenter, host, audience or readable caption the prompt did not ask for.',
       color_and_tone:
-        'Build color with Warm, appetizing, golden crust, fresh herb green, tomato red; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Warm whites, copper and wood, saturated fresh ingredients, clean stainless steel.',
       lighting_and_shadow:
-        'Handle light through Bright culinary setting, soft overhead, product-key, steam halo; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Soft bright key over the counter, warm practicals behind, glossy food highlights.',
       texture_and_material:
-        'Render Glistening surface, steam halo, crumb-like microdetail; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Sizzling pans, steam, flour dust, chopped herbs and glistening sauces.',
       camera_and_composition:
-        'Structure the image through Camera language native to Cooking Show: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Hungry, happy, cozy instruction, sizzle anticipation; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Clean, delicious, mouth-watering, magazine-ready, finished Cooking Show media craft with clear process evidence and controlled detail; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Alternating overhead demonstration angle and waist-up counter shot, ingredients arranged in bowls.',
+      atmosphere_and_mood: 'Warm and inviting, craft and appetite shared with the viewer.',
+      rendering_and_quality: 'Clean broadcast color; no readable recipe graphics or brand labels.',
       key_features:
-        'Cooking-show appetite lighting, Cooking Show broadcast signal texture, package graphics, safe-frame composition, video compression, and live-media hierarchy; Overhead demo angle, warm macro texture, steam halo; Warm, appetizing, golden crust, fresh herb green, tomato red; Glistening surface, steam halo, crumb-like microdetail; Camera language native to Cooking Show: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
+        'bright TV kitchen set; overhead demo angle; steam and sizzle; prepped ingredient bowls; warm appetite light',
       creative_brief:
-        "Apply Cooking Show as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Cooking-show appetite lighting, Cooking Show broadcast signal texture, package graphics, safe-frame composition, video compression, and live-media hierarchy, Overhead demo angle, warm macro texture, steam halo, Glistening surface, steam halo, crumb-like microdetail without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cooking Show as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -385,57 +362,53 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Nature Documentary',
     category: '2. TV And Broadcast',
     negativePrompt:
-      'cheap studio, artificial set, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, cheap studio, channel logo, artificial set, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Nature Documentary acts as a transferable cinematic-media router: start from Premium nature documentary, BBC Earth-style patience, global spectacle, Telephoto reverence, slow-motion clarity, natural spectacle and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Premium TV nature documentary: patient telephoto, slow motion and sweeping aerials, graded for spectacle and clarity.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Nature Documentary: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting; render them as a frame of this broadcast format, without adding a presenter, host, audience or readable caption the prompt did not ask for.',
       color_and_tone:
-        'Build color with Natural, vibrant, savannah gold, ocean teal, rainforest emerald; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Golden hour, magic-hour rim, dappled canopy, underwater shaft; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Ultra HD, 8K natural texture, fine surface detail; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Rich natural color, golden savannah light, deep ocean teal, lush greens, clean blacks.',
+      lighting_and_shadow: 'Low sun, backlight on fur and spray, soft overcast in forests.',
+      texture_and_material: 'Fur, feathers, water droplets and dust shown in slow-motion clarity.',
       camera_and_composition:
-        'Structure the image through Slow motion, motion freeze, droplet suspension; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Majestic, patient reverence, untamed spectacle; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Premium UHD documentary finish with natural texture clarity, patient telephoto detail, clean color, invisible-camera restraint, and no artificial set feel; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Long telephoto behavior shots, slow-motion peak moments, or wide aerial sweeps with tiny animals.',
+      atmosphere_and_mood: 'Awe-filled and patient, the drama of the natural world unfolding.',
+      rendering_and_quality: 'High-end documentary grade; no narrator, captions or channel logo.',
       key_features:
-        'Premium nature documentary, BBC Earth-style patience, global spectacle; Telephoto reverence, slow-motion clarity, natural spectacle; Natural, vibrant, savannah gold, ocean teal, rainforest emerald; Ultra HD, 8K natural texture, fine surface detail; Slow motion, motion freeze, droplet suspension',
+        'slow-motion peak moment; telephoto patience; sweeping aerials; rich natural grade; documentary clarity',
       creative_brief:
-        "Apply Nature Documentary as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Premium nature documentary, BBC Earth-style patience, global spectacle, Telephoto reverence, slow-motion clarity, natural spectacle, Ultra HD, 8K natural texture, fine surface detail without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Nature Documentary as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-115',
-    name: 'Home Movies - Marker-Edge Improvised Sitcom',
+    name: 'Marker-Edge Improvised Sitcom Cartoon',
+    displayName: 'Marker-Edge Improvised Sitcom Cartoon',
+    styleAnchors: ['Marker-Edge Improvised Sitcom Cartoon'],
     category: '2. TV And Broadcast',
     negativePrompt:
-      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, digital slick vector, 3d, realistic, digital, HD, smooth, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Home Movies - Marker-Edge Improvised Sitcom acts as a transferable cinematic-media router: start from Improvised marker-edge sitcom cartoon, dry marker linework, awkward anti-slick timing, homemade creativity, hand-drawn TV softness, Marker-like linework, simple staging, improvised poses, handmade TV charm, awkward pause spacing and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Marker-edge sitcom cartoon: a homemade-looking TV animation drawn with dry felt markers, wobbly outlines and deliberately awkward timing.',
       subject_treatment:
-        'Transform any prompt subject through Dry marker outlines, awkward hand wobble, simple blocking, improv-timing spacing; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting; redraw them as a hand-made marker cartoon with simple shapes, without adding characters from any existing show.',
       color_and_tone:
-        'Build color with Felt-tip muted primaries, school-paper beige, faded blue, dry red, washed green, marker black; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Flat marker fills with streaks, muted primaries, uncolored gaps at the edges.',
       lighting_and_shadow:
-        'Handle light through Flat TV lighting, no atmosphere, handmade sitcom readability; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'No rendered lighting; flat color only, occasional marker hatching for shadow.',
       texture_and_material:
-        'Render Marker bleed, paper softness, VHS-era TV blur, low-budget cel texture; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Dry marker streaks, uneven line weight, paper tooth and slight line boil.',
       camera_and_composition:
-        'Structure the image through Awkward blocking gaps, simple staged poses, marker-edge drift, low-budget composition; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Awkward, homemade, earnest, low-key funny; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Improvised hand-drawn TV softness, anti-slick sitcom cartooning, handmade charm; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Static sitcom staging, characters in a row, simple kitchen or living-room layouts.',
+      atmosphere_and_mood: 'Deadpan and awkward, humor in long pauses and shrugs.',
+      rendering_and_quality: 'Hand-drawn TV softness; not a slick vector cartoon or 3D.',
       key_features:
-        'Improvised marker-edge sitcom cartoon, dry marker linework, awkward anti-slick timing, homemade creativity, hand-drawn TV softness; Marker-like linework, simple staging, improvised poses, handmade TV charm, awkward pause spacing; Felt-tip muted primaries, school-paper beige, faded blue, dry red, washed green, marker black; Marker bleed, paper softness, VHS-era TV blur, low-budget cel texture; Awkward blocking gaps, simple staged poses, marker-edge drift, low-budget composition',
+        'dry marker linework; streaky flat fills; line boil; static sitcom staging; awkward deadpan timing',
       creative_brief:
-        "Apply Home Movies - Marker-Edge Improvised Sitcom as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Improvised marker-edge sitcom cartoon, dry marker linework, awkward anti-slick timing, homemade creativity, hand-drawn TV softness, Marker-like linework, simple staging, improvised poses, handmade TV charm, awkward pause spacing, Marker bleed, paper softness, VHS-era TV blur, low-budget cel texture without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Marker-Edge Improvised Sitcom Cartoon as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -443,28 +416,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Analog Sitcom Multicam',
     category: '2. TV And Broadcast',
     negativePrompt:
-      'cinematic noir, handheld realism, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, cinematic noir, HD sharpness, handheld realism, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Analog Sitcom Multicam acts as a transferable cinematic-media router: start from 90s multicam sitcom broadcast, flat studio blocking, laugh-track rhythm, tape-soft comedy timing, live audience warmth, Studio wash, tape softness, interlace, stage blocking, laugh-track pause spacing and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Analog sitcom multicam: a frame of a studio comedy recorded on broadcast videotape and dubbed a few generations, so the signal itself carries the look.',
       subject_treatment:
-        'Transform any prompt subject through Center-weighted staging, readable blocking, broad silhouette spacing, proscenium-like composition; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting; render them as a frame of this broadcast format, without adding a presenter, host, audience or readable caption the prompt did not ask for.',
       color_and_tone:
-        'Build color with Warm tungsten beige, set-paint teal, faded sofa red, carpet brown, broadcast-safe primaries; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Three-wall studio wash, even overhead fill, practical lamp accents, no noir contrast; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Slightly bleeding reds and oranges, lifted blacks, warm tape cast, soft highlight blooming.',
+      lighting_and_shadow: 'Even studio wash softened further by the tape; no deep shadows.',
       texture_and_material:
-        'Render BetaSP softness, mild chroma bleed, interlaced tape edge, set-fabric texture; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Interlace combing on movement, dot crawl on edges, chroma bleed, faint tracking ripple at the bottom.',
       camera_and_composition:
-        'Structure the image through Slight telephoto compression, stage-front perspective, camera-switch composition; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Cozy, artificial, rehearsed, broadly comic; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Multicam medium shots cutting between actors, framed a little loose.',
+      atmosphere_and_mood: 'Nostalgic and warm, a rerun remembered through worn tape.',
       rendering_and_quality:
-        'Finish with Soft TV comedy polish, multicam readability, low-depth broadcast clarity; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Standard-definition tape signal with generation loss; no film grain or HD sharpness.',
       key_features:
-        '90s multicam sitcom broadcast, flat studio blocking, laugh-track rhythm, tape-soft comedy timing, live audience warmth; Studio wash, tape softness, interlace, stage blocking, laugh-track pause spacing; Warm tungsten beige, set-paint teal, faded sofa red, carpet brown, broadcast-safe primaries; BetaSP softness, mild chroma bleed, interlaced tape edge, set-fabric texture; Slight telephoto compression, stage-front perspective, camera-switch composition',
+        'interlace combing; chroma bleed; dot crawl; tape generation softness; loose multicam medium shots',
       creative_brief:
-        "Apply Analog Sitcom Multicam as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through 90s multicam sitcom broadcast, flat studio blocking, laugh-track rhythm, tape-soft comedy timing, live audience warmth, Studio wash, tape softness, interlace, stage blocking, laugh-track pause spacing, BetaSP softness, mild chroma bleed, interlaced tape edge, set-fabric texture without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Analog Sitcom Multicam as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -472,28 +443,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Local News Chroma Key Package',
     category: '2. TV And Broadcast',
     negativePrompt:
-      'cinematic grain, handwritten text, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, seamless composite, cinematic grain, handwritten text, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Local News Chroma Key Package acts as a transferable cinematic-media router: start from Local news broadcast package, chroma-key compositing, urgent graphic polish, studio-blue authority, lower-third geometry without readable text, Chroma halo, lower-third bars, inset rectangles, glossy blue package, no readable text and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Local news chroma-key package: the subject keyed over a background plate on a budget, with telltale green halos and mismatched light.',
       subject_treatment:
-        'Transform any prompt subject through Rectangular broadcast frames, hard graphic boxes, safe-area composition, anchor-desk symmetry abstracted into layout; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting; render them as a frame of this broadcast format, without adding a presenter, host, audience or readable caption the prompt did not ask for.',
       color_and_tone:
-        'Build color with Broadcast blue, alert red, white headline blocks, chrome grey, saturated weather green; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Studio-blue foreground over an oversaturated background plate; faint green spill on edges.',
       lighting_and_shadow:
-        'Handle light through Clean studio key, glossy set reflections, green-screen spill edge, high-fill news clarity; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Foreground and background lit differently, so the subject never quite sits in the plate.',
       texture_and_material:
-        'Render Digital key edges, compressed overlay graphics, studio acrylic sheen, video sharpening halos; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Hard or fringed key edges, blocky compression around hair, a flat inset rectangle.',
       camera_and_composition:
-        'Structure the image through Layered compositing planes, keyed replacement depth, boxed inset framing, broadcast safe-area geometry; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Urgent, official, polished, slightly synthetic; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Subject standing in front of the plate, a small inset box in an upper corner.',
+      atmosphere_and_mood: 'Earnest and slightly clumsy, local television trying its best.',
       rendering_and_quality:
-        'Finish with Local TV clean, mildly dated, graphic-heavy, authority-by-template; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Standard-definition video with visible compositing flaws; no readable graphics.',
       key_features:
-        'Local news broadcast package, chroma-key compositing, urgent graphic polish, studio-blue authority, lower-third geometry without readable text; Chroma halo, lower-third bars, inset rectangles, glossy blue package, no readable text; Broadcast blue, alert red, white headline blocks, chrome grey, saturated weather green; Digital key edges, compressed overlay graphics, studio acrylic sheen, video sharpening halos; Layered compositing planes, keyed replacement depth, boxed inset framing, broadcast safe-area geometry',
+        'chroma-key halo; mismatched foreground and plate light; green spill; inset rectangle; SD compression',
       creative_brief:
-        "Apply Local News Chroma Key Package as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Local news broadcast package, chroma-key compositing, urgent graphic polish, studio-blue authority, lower-third geometry without readable text, Chroma halo, lower-third bars, inset rectangles, glossy blue package, no readable text, Digital key edges, compressed overlay graphics, studio acrylic sheen, video sharpening halos without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Local News Chroma Key Package as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -501,28 +471,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Public Access Cable Crawl',
     category: '2. TV And Broadcast',
     negativePrompt:
-      'high production value, crisp typography, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, crisp typography, high production value, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Public Access Cable Crawl acts as a transferable cinematic-media router: start from Public-access cable channel, cheap community bulletin graphics, VHS routing noise, amateur studio sincerity, crawl bands without readable text, Crawl bands, title-safe framing, VHS noise, aliasing, overscan, no readable text and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Public access cable crawl: a community-bulletin slide from a character generator, with gradient backgrounds, clip-art and scrolling bands, played over VHS noise.',
       subject_treatment:
-        'Transform any prompt subject through Boxy title-safe layout, simple central shapes, chunky crawl strips, misaligned overlay geometry; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject as the content of the graphic; this preset owns the on-screen layout, and every band, panel or symbol stays free of readable text.',
       color_and_tone:
-        'Build color with Cable blue, magenta key color, off-white crawl band, washed yellow, VHS black; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Fluorescent community-studio wash, underpowered practicals, hot camcorder highlights; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Royal blue to purple gradients, saturated yellow and magenta bands, VHS color bleed.',
+      lighting_and_shadow: 'Flat graphic light; no scene lighting beyond the inset photo.',
       texture_and_material:
-        'Render VHS tracking noise, designed subjects-generator aliasing, tape blur, analog snow, scanline shimmer; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Pixelated clip-art, drop-shadowed shapes, scanlines, chroma noise and an unsteady crawl band.',
       camera_and_composition:
-        'Structure the image through Title-safe margins, slightly skewed overlays, overscan cropping, analog edge warp; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+        'Title-safe slide layout: an inset still of the subject, empty title bars, a crawl band at the bottom.',
       atmosphere_and_mood:
-        'Keep the mood Homemade, local, earnest, oddly hypnotic; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Endless and oddly comforting, community notices looping through the night.',
       rendering_and_quality:
-        'Finish with Low-budget, sincere, awkward, community-TV artifact; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Analog cable character-generator look with all text replaced by blank bars.',
       key_features:
-        'Public-access cable channel, cheap community bulletin graphics, VHS routing noise, amateur studio sincerity, crawl bands without readable text; Crawl bands, title-safe framing, VHS noise, aliasing, overscan, no readable text; Cable blue, magenta key color, off-white crawl band, washed yellow, VHS black; VHS tracking noise, designed subjects-generator aliasing, tape blur, analog snow, scanline shimmer; Title-safe margins, slightly skewed overlays, overscan cropping, analog edge warp',
+        'gradient bulletin slide; pixel clip-art; blank crawl band; inset still photo; VHS noise',
       creative_brief:
-        "Apply Public Access Cable Crawl as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Public-access cable channel, cheap community bulletin graphics, VHS routing noise, amateur studio sincerity, crawl bands without readable text, Crawl bands, title-safe framing, VHS noise, aliasing, overscan, no readable text, VHS tracking noise, designed subjects-generator aliasing, tape blur, analog snow, scanline shimmer without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Public Access Cable Crawl as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -530,28 +499,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'VHS Sports Replay Broadcast',
     category: '2. TV And Broadcast',
     negativePrompt:
-      'filmic slow cinema, clean vector, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, filmic slow cinema, clean vector, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'VHS Sports Replay Broadcast acts as a transferable cinematic-media router: start from Analog sports replay package, telestrator energy, freeze-frame analysis, stadium-video compression as style anchor, urgent motion breakdown, Telestrator marks, replay inset, motion combing, VHS ghost, freeze-frame crop and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'VHS sports replay: an analog freeze-frame breakdown with hand-drawn telestrator circles and arrows and a stepped replay inset.',
       subject_treatment:
-        'Transform any prompt subject through Dynamic arrows, replay boxes, cropped action zones, diagonal analysis marks, no readable labels; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject as the content of the graphic; this preset owns the on-screen layout, and every band, panel or symbol stays free of readable text.',
       color_and_tone:
-        'Build color with Broadcast green, replay yellow, scoreboard red, cold white, VHS shadow blue; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Harsh contest geometry-style illumination, blown highlights, compressed shadow detail, replay exposure; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Faded tape color, yellow and white telestrator strokes, blue replay inset border.',
+      lighting_and_shadow: 'Frozen stadium light from the original footage; no new lighting.',
       texture_and_material:
-        'Render VHS smear, motion combing, field-line aliasing, overlay graphics, tape ghosting; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Freeze-frame jitter, motion combing, tape noise and chunky telestrator lines.',
       camera_and_composition:
-        'Structure the image through Freeze-frame doubling, slow-motion blur, inset replay crop, diagonal tracking artifacts; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Competitive, urgent, analytical, broadcast-tense, mood carried by VHS Sports Replay Broadcast media process, signal pressure, and visual restraint; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Main frozen frame with circles and arrows on the key action, plus a small inset of stepped positions.',
+      atmosphere_and_mood: 'Analytical and dramatic, one decisive moment dissected.',
       rendering_and_quality:
-        'Finish with Kinetic, analytical, noisy, analog replay clarity; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Analog replay package whose graphics stay entirely textless and hand-drawn.',
       key_features:
-        'Analog sports replay package, telestrator energy, freeze-frame analysis, stadium-video compression as style anchor, urgent motion breakdown; Telestrator marks, replay inset, motion combing, VHS ghost, freeze-frame crop; Broadcast green, replay yellow, scoreboard red, cold white, VHS shadow blue; VHS smear, motion combing, field-line aliasing, overlay graphics, tape ghosting; Freeze-frame doubling, slow-motion blur, inset replay crop, diagonal tracking artifacts',
+        'telestrator circles and arrows; freeze-frame jitter; stepped replay inset; tape noise; motion combing',
       creative_brief:
-        "Apply VHS Sports Replay Broadcast as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Analog sports replay package, telestrator energy, freeze-frame analysis, stadium-video compression as style anchor, urgent motion breakdown, Telestrator marks, replay inset, motion combing, VHS ghost, freeze-frame crop, VHS smear, motion combing, field-line aliasing, overlay graphics, tape ghosting without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies VHS Sports Replay Broadcast as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -559,28 +526,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Weather Radar Doppler Graphic',
     category: '2. TV And Broadcast',
     negativePrompt:
-      'photoreal weather, natural color, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, photoreal weather, readable labels, natural color, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Weather Radar Doppler Graphic acts as a transferable cinematic-media router: start from Doppler weather broadcast graphic, storm-cell color fields, radar sweep, meteorological overlay abstraction, emergency color mapping, Radar sweep, storm-cell blobs, contour bands, broadcast grid, no readable labels and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Doppler radar graphic: a radar sweep turning precipitation into green, yellow, orange and red cells over a dark map.',
       subject_treatment:
-        'Transform any prompt subject through Contour bands, radar arcs, gridded map-like fields, translucent overlay blocks, no readable labels; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject as the content of the graphic; this preset owns the on-screen layout, and every band, panel or symbol stays free of readable text.',
       color_and_tone:
-        'Build color with Radar green, storm yellow, alert red, violet core, map grey, broadcast blue; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Self-lit screen glow, studio monitor luminance, emissive overlay hierarchy; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Dark navy map with radar reflectivity colors from green through yellow to red and magenta.',
+      lighting_and_shadow: 'Glowing sweep line and cell colors; no physical light.',
       texture_and_material:
-        'Render Pixelated radar noise, compression blocks, translucent graphic layers, scanline shimmer; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Top-down map flattening, radar sweep curvature, overlay layer stacking; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Alert, analytical, atmospheric, system-driven, mood carried by Weather Radar Doppler Graphic media process, signal pressure, and visual restraint; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Blocky radar pixels, contour bands, a rotating sweep with a fading trail.',
+      camera_and_composition: 'Top-down radar view with the sweep origin at the center or edge.',
+      atmosphere_and_mood: 'Urgent and alarming, a storm read as color fields.',
       rendering_and_quality:
-        'Finish with Informational, synthetic, urgent, screen-native weather visual; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Abstract radar graphic, not a photograph of weather; no readable labels.',
       key_features:
-        'Doppler weather broadcast graphic, storm-cell color fields, radar sweep, meteorological overlay abstraction, emergency color mapping; Radar sweep, storm-cell blobs, contour bands, broadcast grid, no readable labels; Radar green, storm yellow, alert red, violet core, map grey, broadcast blue; Pixelated radar noise, compression blocks, translucent graphic layers, scanline shimmer; Top-down map flattening, radar sweep curvature, overlay layer stacking',
+        'radar sweep line; green-to-red reflectivity cells; dark map; blocky radar pixels; top-down view',
       creative_brief:
-        "Apply Weather Radar Doppler Graphic as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Doppler weather broadcast graphic, storm-cell color fields, radar sweep, meteorological overlay abstraction, emergency color mapping, Radar sweep, storm-cell blobs, contour bands, broadcast grid, no readable labels, Pixelated radar noise, compression blocks, translucent graphic layers, scanline shimmer without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Weather Radar Doppler Graphic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -588,28 +552,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Late Night Infomercial Gloss',
     category: '2. TV And Broadcast',
     negativePrompt:
-      'subtle lighting, tasteful minimalism, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, tasteful minimalism, readable price, subtle lighting, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Late Night Infomercial Gloss acts as a transferable cinematic-media router: start from Late-night infomercial broadcast, overlit demonstration gloss, cheap miracle-product persuasion, callout graphics without readable text, Split layout, callout shapes, hard gloss, overlit demo, no readable text and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Late-night infomercial gloss: an overlit demonstration set where a miracle product performs, surrounded by starbursts and arrows.',
       subject_treatment:
-        'Transform any prompt subject through Before-after split logic, pointing callout shapes, product-demo center framing, exaggerated benefit composition; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting; render them as a frame of this broadcast format, without adding a presenter, host, audience or readable caption the prompt did not ask for.',
       color_and_tone:
-        'Build color with Hotline red, bargain yellow, electric blue, clean white, plastic chrome, saturated orange; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Hot red, yellow and blue graphics over bright white; glossy saturated products.',
       lighting_and_shadow:
-        'Handle light through Overbright studio key, hard tabletop reflection, sparkle highlights, no subtle shadow; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Overlit high-key from every direction; hard specular gloss on the product.',
       texture_and_material:
-        'Render Plastic gloss, camcorder sharpness, compressed color, cheap acrylic set surface; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Chrome, plastic, bubbling liquids and spotless counters, with glossy sheen.',
       camera_and_composition:
-        'Structure the image through Split-screen comparison, zoom burst, callout bubble shapes, oversaturated close crop; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Urgent, salesy, artificial, enthusiastic, mood carried by Late Night Infomercial Gloss media process, signal pressure, and visual restraint; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Persuasive, loud, overproduced-on-a-budget, glossy TV sales clarity; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Product front and center, textless starburst and arrow callout shapes pointing at it.',
+      atmosphere_and_mood: 'Frantic and overexcited, every second a miracle demonstration.',
+      rendering_and_quality: 'Glossy late-night video with callout shapes that stay textless.',
       key_features:
-        'Late-night infomercial broadcast, overlit demonstration gloss, cheap miracle-product persuasion, callout graphics without readable text; Split layout, callout shapes, hard gloss, overlit demo, no readable text; Hotline red, bargain yellow, electric blue, clean white, plastic chrome, saturated orange; Plastic gloss, camcorder sharpness, compressed color, cheap acrylic set surface; Split-screen comparison, zoom burst, callout bubble shapes, oversaturated close crop',
+        'overlit demo set; textless starburst callouts; glossy product; hot primaries; frantic energy',
       creative_brief:
-        "Apply Late Night Infomercial Gloss as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Late-night infomercial broadcast, overlit demonstration gloss, cheap miracle-product persuasion, callout graphics without readable text, Split layout, callout shapes, hard gloss, overlit demo, no readable text, Plastic gloss, camcorder sharpness, compressed color, cheap acrylic set surface without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Late Night Infomercial Gloss as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -617,28 +579,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Interlaced Music Video Glow',
     category: '2. TV And Broadcast',
     negativePrompt:
-      'clean digital cinema, natural light, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, clean digital cinema, natural light, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Interlaced Music Video Glow acts as a transferable cinematic-media router: start from 90s cable music-video broadcast, interlaced glamour, blown color gels, soft-focus performance glow, analog video dream, Interlace, chroma smear, gel lights, motion echo, soft-focus bloom and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Interlaced music-video glow: 90s cable performance video with blown colored gels, soft-focus bloom and dreamy interlaced motion.',
       subject_treatment:
-        'Transform any prompt subject through Rhythmic crop, layered silhouettes, diagonal stage-like composition, motion smear trails; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting; render them as a frame of this broadcast format, without adding a presenter, host, audience or readable caption the prompt did not ask for.',
       color_and_tone:
-        'Build color with Magenta gel, cyan backlight, amber spotlight, black crush, violet bloom, video white; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Color-gel backlights, hazer bloom, hard spotlight flare, video-camera gain; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Interlaced scanlines, VHS chroma smear, tape dropout, soft diffusion, bloom halo; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Magenta, electric blue and amber gels, blooming highlights, soft glowing skin.',
+      lighting_and_shadow: 'Colored backlights through haze, soft frontal glow, lens diffusion.',
+      texture_and_material: 'Interlace lines on movement, chroma smear, motion echo trails.',
       camera_and_composition:
-        'Structure the image through Interlaced motion combing, frame echo, dutch crop, soft zoom smear; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Hypnotic, stylish, late-night, video-age cool; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Glossy, rhythmic, analog, glamorous but degraded; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Slow circling moves around a performer, silhouettes against colored haze.',
+      atmosphere_and_mood: 'Dreamy and romantic, a slow song made visible.',
+      rendering_and_quality: 'Analog video glow; distinct from fisheye glam and grunge distress.',
       key_features:
-        '90s cable music-video broadcast, interlaced glamour, blown color gels, soft-focus performance glow, analog video dream; Interlace, chroma smear, gel lights, motion echo, soft-focus bloom; Magenta gel, cyan backlight, amber spotlight, black crush, violet bloom, video white; Interlaced scanlines, VHS chroma smear, tape dropout, soft diffusion, bloom halo; Interlaced motion combing, frame echo, dutch crop, soft zoom smear',
+        'blown colored gels; soft-focus bloom; interlace motion echo; haze silhouettes; slow circling camera',
       creative_brief:
-        "Apply Interlaced Music Video Glow as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through 90s cable music-video broadcast, interlaced glamour, blown color gels, soft-focus performance glow, analog video dream, Interlace, chroma smear, gel lights, motion echo, soft-focus bloom, Interlaced scanlines, VHS chroma smear, tape dropout, soft diffusion, bloom halo without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Interlaced Music Video Glow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -646,28 +604,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Emergency Broadcast Signal Break',
     category: '2. TV And Broadcast',
     negativePrompt:
-      'soft film, friendly graphics, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package',
+      'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, soft film, friendly graphics, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Emergency Broadcast Signal Break acts as a transferable cinematic-media router: start from Emergency broadcast interruption, signal-break abstraction, color bars, warning geometry without readable text, hostile analog tone made visual, Color bars, scanline tear, signal snow, hard warning blocks, no readable text and broadcast-media system built from signal texture, studio or field capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Emergency broadcast signal break: an interrupted transmission where color bars, scanline tears and a warning shape cut through the picture.',
       subject_treatment:
-        'Transform any prompt subject through Horizontal bands, test-pattern blocks, central warning geometry, scanline fracture, hard rectangular cuts; preserve the requested subject while treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal, or live information object, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject as the content of the graphic; this preset owns the on-screen layout, and every band, panel or symbol stays free of readable text.',
       color_and_tone:
-        'Build color with SMPTE color bars, alert red, black void, phosphor white, dirty cyan, warning yellow; use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Self-emissive CRT glow, blown white bars, high contrast signal clipping; shape light through even studio key, practical video exposure, screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'SMPTE-like color bars, harsh red and black warning shapes, gray signal snow.',
+      lighting_and_shadow: 'Screen glow only; a CRT lighting a dark room when the screen is shown.',
       texture_and_material:
-        'Render CRT scanlines, analog snow, sync tear, tape dropout, phosphor bloom; surface detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Horizontal tearing, rolling bars, snow static, phosphor burn and flicker.',
       camera_and_composition:
-        'Structure the image through Horizontal roll, tracking tear, image displacement, broadcast interruption layering; compose through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Urgent, uncanny, official, hostile, mood carried by Emergency Broadcast Signal Break media process, signal pressure, and visual restraint; derive mood from live urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension, or music-video rebellion, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'The subject barely visible behind broken bands of signal, bars and a triangle warning symbol.',
+      atmosphere_and_mood: 'Hostile and alarming, a transmission that should not be happening.',
       rendering_and_quality:
-        'Finish with Harsh, alarming, graphic, signal-native, finished Emergency Broadcast Signal Break media craft with clear process evidence and controlled detail; finish as coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Analog signal failure look; the warning uses only symbols, no readable text.',
       key_features:
-        'Emergency broadcast interruption, signal-break abstraction, color bars, warning geometry without readable text, hostile analog tone made visual; Color bars, scanline tear, signal snow, hard warning blocks, no readable text; SMPTE color bars, alert red, black void, phosphor white, dirty cyan, warning yellow; CRT scanlines, analog snow, sync tear, tape dropout, phosphor bloom; Horizontal roll, tracking tear, image displacement, broadcast interruption layering',
+        'color bars; scanline tear; signal snow; warning triangle symbol; subject half lost behind noise',
       creative_brief:
-        "Apply Emergency Broadcast Signal Break as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Emergency broadcast interruption, signal-break abstraction, color bars, warning geometry without readable text, hostile analog tone made visual, Color bars, scanline tear, signal snow, hard warning blocks, no readable text, CRT scanlines, analog snow, sync tear, tape dropout, phosphor bloom without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Emergency Broadcast Signal Break as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

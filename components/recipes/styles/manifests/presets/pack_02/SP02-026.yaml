@@ -3,7 +3,7 @@ id: SP02-026
 packId: pack_02
 name: Sports Broadcast
 category: 2. TV And Broadcast
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,85 +12,47 @@ tags:
   - cinematic-and-media
   - tv-and-broadcast
 visualDna:
-  aesthetic: >-
-    Sports Broadcast acts as a transferable cinematic-media router: start from Live sports
-    broadcast, live sports broadcast grammar with telephoto compression, scorebug-like composition,
-    saturated field color, floodlights, and replay clarity, Scorebug feel, replay wipe, telestrator
-    circle and broadcast-media system built from signal texture, studio or field capture, graphic
-    package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media
-    behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Scorebug graphic structure, adapt the requested subject
-    through broadcast signal texture, package graphics, safe-frame composition, video compression,
-    and live-media hierarchy while preserving prompt identity; preserve the requested subject while
-    treating it as a broadcast capture, package segment, demo frame, replay, surveillance feed,
-    music-video signal, or live information object, keeping the requested identity, silhouette,
-    action, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Saturated field green, team-color accents, sky blue; use color through
-    signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar
-    overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and
-    process-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Stadium lights, multi-source flood, uniform exposure; shape light through
-    even studio key, practical video exposure, screen glow, floodlight, surveillance flatness,
-    confessional softness, or signal-break flicker, so exposure and shadow structure support the
-    media process without overwriting the requested content.
-  texture_and_material: >-
-    Render HD slow-motion crispness, droplet-perfect detail; surface detail should show video
-    sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks,
-    or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy
-    filler texture.
-  camera_and_composition: >-
-    Structure the image through Camera language native to Sports Broadcast: genre-aware framing,
-    lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose
-    through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl
-    lanes, multicam framing, or video-package layout without readable text dependency, with frame
-    rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Exciting, live, roaring crowd, championship tension; derive mood from live
-    urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching,
-    stadium tension, or music-video rebellion, letting the media style alter interpretation without
-    demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Telephoto action, field-level compression, subject isolation; finish as coherent
-    broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk,
-    logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate,
-    and enough process evidence to make the style recognizable.
-  key_features: >-
-    Live sports broadcast, live sports broadcast grammar with telephoto compression, scorebug-like
-    composition, saturated field color, floodlights, and replay clarity; Scorebug feel, replay wipe,
-    telestrator circle; Saturated field green, team-color accents, sky blue; HD slow-motion
-    crispness, droplet-perfect detail; Camera language native to Sports Broadcast: genre-aware
-    framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition
-  creative_brief: >-
-    Apply Sports Broadcast as a cinematic-media preset over prompt X: preserve the user's requested
-    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
-    and final media craft through Live sports broadcast, live sports broadcast grammar with
-    telephoto compression, scorebug-like composition, saturated field color, floodlights, and replay
-    clarity, Scorebug feel, replay wipe, telestrator circle, HD slow-motion crispness,
-    droplet-perfect detail without requiring the card image's original subject.
+  aesthetic: 'Live sports broadcast: an HD telephoto camera on the rail following the action under floodlights, with the flat, bright look of a live feed.'
+  subject_treatment: Keep the prompt subject, action and setting; render them as a frame of this broadcast format, without adding a presenter, host, audience or readable caption the prompt did not ask for.
+  color_and_tone: Saturated field color, bright floodlit whites, clean neutral broadcast grading.
+  lighting_and_shadow: Stadium floodlights from several directions creating multiple soft shadows.
+  texture_and_material: Sharp HD detail on athletes, slightly compressed crowd behind.
+  camera_and_composition: Long telephoto from the side, athletes compressed against a blurred crowd, action centered.
+  atmosphere_and_mood: Electric and immediate, the moment happening live.
+  rendering_and_quality: Clean HD live feed; any scorebug reduced to a textless shape or omitted.
+  key_features: rail telephoto; floodlit multiple shadows; compressed crowd; saturated field color; live HD feed
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sports Broadcast as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable fake text
+  - readable ticker
+  - logo clutter
+  - real presenter likeness
+  - celebrity likeness
+  - franchise likeness
+  - adding a presenter or host the prompt did not ask for
+  - movie grade
+  - readable scoreboard
   - movie
   - official card scene
   - fixed thumbnail subject
   - prompt replaced by sample image
-  - readable fake text
   - watermark
-  - logo clutter
   - generic stock footage
   - uncontrolled noise
   - anchor requirement
   - desk requirement
   - readable captions
   - logo package
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-026.webp
 attributes:
-  negativePrompt: >-
-    movie, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable
-    fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor
-    requirement, desk requirement, readable captions, logo package
+  negativePrompt: readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, movie grade, readable scoreboard, movie, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

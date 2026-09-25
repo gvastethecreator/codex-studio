@@ -315,7 +315,8 @@
     },
     {
       "id": "SP02-021",
-      "name": "Hype Williams Fisheye Glam Video",
+      "name": "Fisheye Glam Music Video",
+      "styleAnchors": ["Fisheye Glam Music Video"],
       "ref": "pack_02/SP02-021.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -323,7 +324,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-021 hype williams fisheye glam video 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-021 fisheye glam music video 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-022",
@@ -399,7 +400,8 @@
     },
     {
       "id": "SP02-028",
-      "name": "MTV 90s Grunge Broadcast",
+      "name": "90s Grunge Music Video",
+      "styleAnchors": ["90s Grunge Music Video"],
       "ref": "pack_02/SP02-028.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -407,7 +409,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-028 mtv 90s grunge broadcast 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-028 90s grunge music video 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-029",
@@ -435,7 +437,8 @@
     },
     {
       "id": "SP02-115",
-      "name": "Home Movies - Marker-Edge Improvised Sitcom",
+      "name": "Marker-Edge Improvised Sitcom Cartoon",
+      "styleAnchors": ["Marker-Edge Improvised Sitcom Cartoon"],
       "ref": "pack_02/SP02-115.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -443,7 +446,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-115 home movies - marker-edge improvised sitcom 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-115 marker-edge improvised sitcom cartoon 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-121",
