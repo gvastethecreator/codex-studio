@@ -233,7 +233,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Film still with a split key of an adult double agent staring into the lens, one half of his face lit hard from the side, the other half swallowed by black. No text or logo.',
-        'Split-key film still of an adult demon hunter with a scarred face, the grazing light revealing every scar on the lit half. No text or logo.',
+        "Split-key film still of an elderly adult woman demon hunter with cropped white hair and a ritual scar across her brow, holding a silver dagger beside her face, the grazing side light revealing every scar and blade nick on the lit half, the other half black. No text or logo.",
         'Split-key film still of an adult judge in a black robe behind a bench, a crisp line of light and dark down the center of the face. No text or logo.',
       ],
     },
@@ -474,7 +474,7 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'hard shadows'],
       briefs: [
-        'Softbox studio photograph of a tall crackle-glazed ceramic vase on a grey seamless, a big softbox wrapping soft light around its curves, soft contact shadow. No text or logo.',
+        "Softbox studio photograph of an ornate silver knight's helmet with a crest of long white feathers on a charcoal seamless, one big softbox wrapping smooth gradients along the polished steel and feathers, soft contact shadow. No text or logo.",
         'Softbox studio portrait of an adult model holding a carved crystal skull, wraparound light on skin and crystal, clean white seamless. No text or logo.',
         'Softbox studio photograph of a bouquet of dried thistles and roses on a pale seamless, soft even light and a gentle gradient. No text or logo.',
       ],

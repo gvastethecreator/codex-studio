@@ -23,9 +23,9 @@ const spec: Spec = {
     },
     'SP02-083': {
       briefs: [
-        'Uncanny valley caricature of an adult butler holding a silver tray, precise vector contours, a near-perfect smile with one corner a pixel too high, polished fill. No text or logo.',
-        'Uncanny valley caricature of an adult piano teacher seated at a piano, almost symmetrical face with tiny alignment errors, sterile polished shading. No text or logo.',
-        'Uncanny valley caricature of a houseplant in a pot whose leaves are almost but not quite mirror images, precise vector outline, subtle imbalance. No text or logo.',
+        "Uncanny valley caricature of an adult butler holding a silver tray: glossy vinyl-smooth skin, eyes set slightly too far apart and a fraction too large, a smile stretched one tooth too wide, a faint puppet seam along the jaw, rigid mirror symmetry, precise vector contours and polished fill. Clearly a drawn caricature, not a photograph. No text or logo.",
+        "Uncanny valley caricature of an adult piano teacher seated at a piano: hands with fingers a little too long and evenly spaced like piano keys, porcelain-smooth face with pupils not quite aligned, hair modeled as one hard plastic shell, sterile polished shading. Clearly a drawn caricature, not a photograph. No text or logo.",
+        "Uncanny valley caricature of a family cat sitting upright on a chair like a person, face almost human with too-regular whiskers and eyes looking in two very slightly different directions, smooth vector rendering with one visible seam around the muzzle. Clearly drawn, not a photograph. No text or logo.",
       ],
     },
     'SP02-084': {
@@ -189,7 +189,7 @@ const spec: Spec = {
       name: 'Dumb Couch Slouch Cartoon',
       briefs: [
         'Dumb couch-slouch cartoon of two adult trolls sinking into a sagging couch in front of a dark TV, slack contours, drooping geometry and muted TV colors. No text or logo.',
-        'Dumb couch-slouch cartoon of an adult goblin half asleep behind a counter, drooping arms and sparse features. No readable signs or logo.',
+        "Dumb couch-slouch cartoon of a lumpy grey stone troll with a tiny head and a huge sagging body half asleep behind a tavern counter, drooping arms, sparse dot eyes. Original design. No readable signs or logo.",
         'Dumb couch-slouch cartoon of an adult knight melted into an armchair with his helmet sliding off. No text or logo.',
       ],
     },

@@ -220,8 +220,8 @@ const spec: Spec = {
       avoid: [...AVOID, 'color hd', 'readable camera labels'],
       briefs: [
         "Security monitor quad split on a CRT showing four grainy black-and-white feeds of a castle's gate, stairwell, treasury and stable, a masked adult figure appearing only in the treasury feed. No labels, text or logo.",
-        'Security monitor quad split of a museum at night, four feeds of the same hall where a suit of armor stands in a different place in each feed, scanlines and CRT glow. No labels, text or logo.',
-        'Security monitor quad split of a farmyard at night, the henhouse feed showing a fox slipping through the door while the other three feeds stay still. No labels, text or logo.',
+        "Single full-frame CCTV feed from a high corner fisheye camera inside a tavern kitchen at night: an adult thief in a knight's surcoat freezes mid-step while lifting a roast from the spit, the whole room bent by the wide lens, grainy monochrome, blown hotspot from the hearth, scanlines. No timestamp, labels, text or logo.",
+        "Single full-frame night-vision CCTV feed of a cobbled castle courtyard where a huge winged dragon has just landed among parked hay carts, its eyes glowing white in infrared, green-grey monochrome, heavy compression blocks. No timestamp, labels, text or logo.",
       ],
     },
     'SP02-023': {

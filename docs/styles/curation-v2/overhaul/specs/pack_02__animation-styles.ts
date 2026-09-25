@@ -146,7 +146,7 @@ const spec: Spec = {
       briefs: [
         'Golden-age slapstick cartoon frame of a scrawny adult knight fleeing a bouncing cartoon dragon across a painted desert, his legs a smear of motion, dust clouds behind. No text or logo.',
         'Golden-age slapstick cartoon frame of a goblin sawing through the tree branch he is sitting on, a held take of dawning horror just before it snaps. No text or logo.',
-        'Golden-age slapstick cartoon frame of an adult wizard after his spell backfires, soot-black face, frizzled beard standing on end, one blinking eye. No text or logo.',
+        "Golden-age slapstick cartoon frame of a short, round-bellied human court wizard with a huge white beard and a tall crooked hat after his spell backfires: face soot-black, beard frizzled straight up, hat smoking, one eye blinking; original design, clearly human, not an animal character. No text or logo.",
       ],
     },
     'SP02-036': {
