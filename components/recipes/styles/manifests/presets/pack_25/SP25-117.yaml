@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-117
+packId: pack_25
+name: Stacked Ring Forms
+styleAnchors:
+  - Stacked Ring Forms
+  - stacked ring product construction
+  - stacked rings
+displayName: Stacked Ring Forms
+category: 6. Industrial & Product Design
+domain: stacked ring product construction
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - industrial-and-product-design
+  - stacked-ring
+  - applied-design
+  - product
+  - r-prd-19-new
+visualDna:
+  aesthetic: 'Stacked Ring Forms: products built from a column of stacked rings and discs, each ring a separate part with its own material and role.'
+  subject_treatment: Build the prompt's product as a stack of rings and discs, each ring one part with its own role, so function reads from bottom to top.
+  color_and_tone: Alternating ring materials in a tight palette with one accent ring.
+  lighting_and_shadow: Soft side light catching every ring edge and the small gaps between them.
+  texture_and_material: Machined, turned and cast rings in matte and satin finishes.
+  camera_and_composition: Upright stack seen at eye level, the rhythm of rings reading clearly.
+  atmosphere_and_mood: Sculptural and totemic, precise and satisfying like a finished lathe part.
+  rendering_and_quality: Clean concept render with crisp ring edges and consistent diameters.
+  creative_brief: "Stacked Ring Forms: products built from a column of stacked rings and discs, each ring a separate part with its own material and role. Carry it through stacked rings, one role per ring, accent ring, turned edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stacked rings; one role per ring; accent ring; turned edges
+avoidRules:
+  - random stack
+  - rings with no function
+  - impossible floating rings
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: random stack, rings with no function, impossible floating rings, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: industrial-and-product-design
+  categoryName: 6. Industrial & Product Design
+  domain: stacked ring product construction
+  tags:
+    - curation-v2
+    - industrial-and-product-design
+    - stacked-ring
+    - applied-design
+    - product
+    - r-prd-19-new
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-114
+packId: pack_25
+name: Color-Coded Function Modules
+styleAnchors:
+  - Color-Coded Function Modules
+  - color and shape coded modular product
+  - function modules
+displayName: Color-Coded Function Modules
+category: 6. Industrial & Product Design
+domain: color and shape coded modular product
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - industrial-and-product-design
+  - color-modules
+  - applied-design
+  - product
+  - r-prd-14
+visualDna:
+  aesthetic: 'Color-Coded Function Modules: modules told apart by shape and color make their function and swap-ability visible at a glance.'
+  subject_treatment: Split the prompt's product into modules by function, each recognizable by shape, joint and color together.
+  color_and_tone: A palette by role backed by structural contrast.
+  lighting_and_shadow: One neutral common light shared by every module.
+  texture_and_material: Coherent materials across pieces and connectors of visible scale.
+  camera_and_composition: Accessible modules, clear connections and one dominant main mass.
+  atmosphere_and_mood: System clarity and understandable modularity, grown-up and friendly.
+  rendering_and_quality: Clean concept render where every module still reads in monochrome.
+  creative_brief: "Color-Coded Function Modules: modules told apart by shape and color make their function and swap-ability visible at a glance. Carry it through function modules, shape and color coding, visible connectors, one main mass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: function modules; shape and color coding; visible connectors; one main mass
+avoidRules:
+  - color as the only function
+  - swappable modules with no connection
+  - extra pieces
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: color as the only function, swappable modules with no connection, extra pieces, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: industrial-and-product-design
+  categoryName: 6. Industrial & Product Design
+  domain: color and shape coded modular product
+  tags:
+    - curation-v2
+    - industrial-and-product-design
+    - color-modules
+    - applied-design
+    - product
+    - r-prd-14
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -602,58 +602,112 @@
       "doc": "QA-PROTOCOLS.md"
     },
     "R-PRD-01": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-101",
+      "name": "Folded-Sheet Instruments",
+      "category": "6. Industrial & Product Design"
     },
     "R-PRD-02": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-102",
+      "name": "Tensioned Frame Objects",
+      "category": "6. Industrial & Product Design"
     },
     "R-PRD-03": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-103",
+      "name": "Ceramic Control Objects",
+      "category": "6. Industrial & Product Design"
     },
     "R-PRD-04": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-104",
+      "name": "Exposed Service Seams",
+      "category": "6. Industrial & Product Design"
     },
     "R-PRD-05": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-105",
+      "name": "Offset Capsule Assemblies",
+      "category": "6. Industrial & Product Design"
     },
     "R-PRD-06": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-106",
+      "name": "Nested Shell Products",
+      "category": "6. Industrial & Product Design"
     },
     "R-PRD-07": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-107",
+      "name": "Ribbed Structural Surfaces",
+      "category": "6. Industrial & Product Design"
     },
     "R-PRD-08": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-108",
+      "name": "Soft-Edge Tool Forms",
+      "category": "6. Industrial & Product Design"
     },
     "R-PRD-09": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-109",
+      "name": "Planar Knuckle Hardware",
+      "category": "6. Industrial & Product Design"
     },
     "R-PRD-10": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-110",
+      "name": "Stacked Slab Devices",
+      "category": "6. Industrial & Product Design"
     },
     "R-PRD-11": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-111",
+      "name": "Open-Core Appliances",
+      "category": "6. Industrial & Product Design"
     },
     "R-PRD-12": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-112",
+      "name": "Continuous Handle Objects",
+      "category": "6. Industrial & Product Design"
     },
     "R-PRD-13": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-113",
+      "name": "Counterweighted Desk Tools",
+      "category": "6. Industrial & Product Design"
     },
     "R-PRD-14": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-114",
+      "name": "Color-Coded Function Modules",
+      "category": "6. Industrial & Product Design"
     },
     "R-PRD-15": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-115",
+      "name": "Inflated Surface Hardpoints",
+      "category": "6. Industrial & Product Design"
     },
     "R-PRD-16": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-116",
+      "name": "Perforation-Gradient Objects",
+      "category": "6. Industrial & Product Design"
     },
     "R-PRD-17": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-118",
+      "name": "Monolithic Material Finish",
+      "category": "6. Industrial & Product Design"
     },
     "R-PRD-18": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-119",
+      "name": "Exploded Assembly Board",
+      "category": "6. Industrial & Product Design"
     },
     "R-PRD-19": {
       "status": "qa-protocol",
@@ -661,7 +715,10 @@
       "doc": "QA-PROTOCOLS.md"
     },
     "R-PRD-20": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-120",
+      "name": "Repair-Access Concept",
+      "category": "6. Industrial & Product Design"
     },
     "R-PKG-01": {
       "status": "pending"

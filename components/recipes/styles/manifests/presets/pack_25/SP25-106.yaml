@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-106
+packId: pack_25
+name: Nested Shell Products
+styleAnchors:
+  - Nested Shell Products
+  - nested shell layer product
+  - nested shells
+displayName: Nested Shell Products
+category: 6. Industrial & Product Design
+domain: nested shell layer product
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - industrial-and-product-design
+  - nested-shell
+  - applied-design
+  - product
+  - r-prd-06
+visualDna:
+  aesthetic: 'Nested Shell Products: nested or concentric shells separate protection, core and zones of use with coherent visual clearances.'
+  subject_treatment: Separate the prompt's product into an outer protective shell, a core and a contact zone using nested housings with coherent gaps.
+  color_and_tone: Values per layer and one accent on the zone of use.
+  lighting_and_shadow: Diffuse light that reads the edges and the depth between shells.
+  texture_and_material: Smooth surfaces of consistent thickness and generous joints.
+  camera_and_composition: A view that shows the fit and the core without taking everything apart.
+  atmosphere_and_mood: Protection and precision, with layers that are easy to read.
+  rendering_and_quality: Clean concept render where every shell has a different job.
+  creative_brief: "Nested Shell Products: nested or concentric shells separate protection, core and zones of use with coherent visual clearances. Carry it through nested shells, protected core, visible clearances, zone of use. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: nested shells; protected core; visible clearances; zone of use
+avoidRules:
+  - ornamental layers
+  - impossible fits
+  - unreachable core
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: ornamental layers, impossible fits, unreachable core, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: industrial-and-product-design
+  categoryName: 6. Industrial & Product Design
+  domain: nested shell layer product
+  tags:
+    - curation-v2
+    - industrial-and-product-design
+    - nested-shell
+    - applied-design
+    - product
+    - r-prd-06
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

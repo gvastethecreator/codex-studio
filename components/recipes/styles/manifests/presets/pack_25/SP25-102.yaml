@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-102
+packId: pack_25
+name: Tensioned Frame Objects
+styleAnchors:
+  - Tensioned Frame Objects
+  - rigid frame and taut surface product
+  - rigid frame
+displayName: Tensioned Frame Objects
+category: 6. Industrial & Product Design
+domain: rigid frame and taut surface product
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - industrial-and-product-design
+  - tensioned-frame
+  - applied-design
+  - product
+  - r-prd-02
+visualDna:
+  aesthetic: 'Tensioned Frame Objects: a rigid frame and a taut stretched surface split the product into clear structure and contact.'
+  subject_treatment: Split the prompt's product into a load-bearing frame and a stretched contact surface, with visible anchor points and believable tension.
+  color_and_tone: Sober frame value and a moderately contrasting membrane, colored by function.
+  lighting_and_shadow: Diffuse light revealing curvature and anchor points with every fixing in view.
+  texture_and_material: Smooth rigid frame and a taut fine-weave surface with no random wrinkles.
+  camera_and_composition: A view that shows at least two anchors and how frame meets surface.
+  atmosphere_and_mood: Resilient lightness and a clear reading of the forces at play.
+  rendering_and_quality: Clean concept render where tension points match the surface deformation.
+  creative_brief: "Tensioned Frame Objects: a rigid frame and a taut stretched surface split the product into clear structure and contact. Carry it through rigid frame, taut surface, visible anchors, readable tension. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: rigid frame; taut surface; visible anchors; readable tension
+avoidRules:
+  - floating membrane
+  - wrinkles with no cause
+  - decorative frame
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: floating membrane, wrinkles with no cause, decorative frame, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: industrial-and-product-design
+  categoryName: 6. Industrial & Product Design
+  domain: rigid frame and taut surface product
+  tags:
+    - curation-v2
+    - industrial-and-product-design
+    - tensioned-frame
+    - applied-design
+    - product
+    - r-prd-02
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

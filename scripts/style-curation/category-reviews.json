@@ -2443,5 +2443,20 @@
     "evidencePresetIds": ["SP25-081", "SP25-082", "SP25-083"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_25",
+    "category": "6. Industrial & Product Design",
+    "displayCategory": "Industrial & product design",
+    "kind": "mixed",
+    "expectedCount": 20,
+    "baselineHash": "f15c6a8e6ef9523cdf66b38bfa191e7796c181a8f3acaa01a1c665e3e59c6ba8",
+    "problem": "Product design styles must show one construction logic for a product concept without claiming validated engineering, inventing internal parts or copying real branded products.",
+    "preserve": "The requested product, its function, controls, parts and locked dimensions stay recognizable; each style keeps its construction (folded sheet, tensioned frame, calm volume with controls, service seams, offset capsules, nested shells, functional ribs, soft tool forms, knuckle hinges, stacked slabs, open core, continuous handle, counterweight, color modules, soft volumes on rigid anchors, perforation gradient, stacked rings).",
+    "proposedAction": "Applied-design import: 16 construction styles, Stacked Ring Forms as a new style replacing the three-view consistency check (moved to QA-PROTOCOLS.md; pack_04 Three-View Recognition Chart covers the sheet), a monolithic finish modifier, and the assembly board (a design board distinct from the pack_03 Exploded View render) and repair-access sequence as profiles; three new product-concept briefs per preset.",
+    "validation": "Generate each card, then test transfer on a speaker, a lamp, a hand tool, a desk object and a locked-geometry product with the modifier; check that part counts and controls stay consistent.",
+    "evidencePresetIds": ["SP25-101", "SP25-102", "SP25-103"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

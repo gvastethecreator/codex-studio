@@ -124,6 +124,29 @@ categories:
       - pack_25/SP25-098.yaml
       - pack_25/SP25-099.yaml
       - pack_25/SP25-100.yaml
+  - id: industrial-and-product-design
+    name: 6. Industrial & Product Design
+    presetRefs:
+      - pack_25/SP25-101.yaml
+      - pack_25/SP25-102.yaml
+      - pack_25/SP25-103.yaml
+      - pack_25/SP25-104.yaml
+      - pack_25/SP25-105.yaml
+      - pack_25/SP25-106.yaml
+      - pack_25/SP25-107.yaml
+      - pack_25/SP25-108.yaml
+      - pack_25/SP25-109.yaml
+      - pack_25/SP25-110.yaml
+      - pack_25/SP25-111.yaml
+      - pack_25/SP25-112.yaml
+      - pack_25/SP25-113.yaml
+      - pack_25/SP25-114.yaml
+      - pack_25/SP25-115.yaml
+      - pack_25/SP25-116.yaml
+      - pack_25/SP25-117.yaml
+      - pack_25/SP25-118.yaml
+      - pack_25/SP25-119.yaml
+      - pack_25/SP25-120.yaml
 presetRefs:
   - pack_25/SP25-001.yaml
   - pack_25/SP25-002.yaml
@@ -225,3 +248,23 @@ presetRefs:
   - pack_25/SP25-098.yaml
   - pack_25/SP25-099.yaml
   - pack_25/SP25-100.yaml
+  - pack_25/SP25-101.yaml
+  - pack_25/SP25-102.yaml
+  - pack_25/SP25-103.yaml
+  - pack_25/SP25-104.yaml
+  - pack_25/SP25-105.yaml
+  - pack_25/SP25-106.yaml
+  - pack_25/SP25-107.yaml
+  - pack_25/SP25-108.yaml
+  - pack_25/SP25-109.yaml
+  - pack_25/SP25-110.yaml
+  - pack_25/SP25-111.yaml
+  - pack_25/SP25-112.yaml
+  - pack_25/SP25-113.yaml
+  - pack_25/SP25-114.yaml
+  - pack_25/SP25-115.yaml
+  - pack_25/SP25-116.yaml
+  - pack_25/SP25-117.yaml
+  - pack_25/SP25-118.yaml
+  - pack_25/SP25-119.yaml
+  - pack_25/SP25-120.yaml

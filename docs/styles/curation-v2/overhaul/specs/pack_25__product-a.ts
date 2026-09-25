@@ -18,156 +18,287 @@ const spec: Spec = {
   newCategory: { id: 'industrial-and-product-design' },
   updates: {},
   creates: [
-    P('R-PRD-01', 'Folded-Sheet Instruments', 'folded sheet product concept', 'folded-sheet-product', {
-      aesthetic: 'Folded-Sheet Instruments: one continuous sheet folded into housing, stand and openings, the folds explaining how the product stands and works.',
-      subject_treatment: "Derive the prompt's product housing, support and openings from one continuous folded sheet with visually coherent folds and thickness.",
-      color_and_tone: 'One sober main color with related edge values and an accent only on the interactive part.',
-      lighting_and_shadow: 'Broad side light revealing folds and contact points with soft clean highlights.',
-      texture_and_material: 'Semi-matte surface, uniform apparent thickness and explicit joins where the sheet ends.',
-      camera_and_composition: 'A three-quarter view that shows base, fold and opening together.',
-      atmosphere_and_mood: 'Constructive economy and precision, a single gesture of material.',
-      rendering_and_quality: 'Clean product-concept render where every fold gives support, access or function.',
-      key_features: 'one folded sheet; fold as function; uniform thickness; three-quarter view',
-    }, ['impossible folds', 'thickness that changes for no reason', 'decorative screws'], [
-      'A concept speaker for a lighthouse keeper who talks to passing whales: one graphite sheet folds into housing, stand and a wide sound mouth facing the sea window. No readable text or logo.',
-      'A reading lamp folded from a single terracotta sheet for a very small, very judgmental owl who insists on reading in bed, base, neck and shade from two folds. No readable text or logo.',
-      'A folded ink-blue sheet becomes a quiet bedside tray for one pair of glasses and a key, two supports of different height, calm studio light. No readable text or logo.',
-    ]),
-    P('R-PRD-02', 'Tensioned Frame Objects', 'rigid frame and taut surface product', 'tensioned-frame', {
-      aesthetic: 'Tensioned Frame Objects: a rigid frame and a taut stretched surface split the product into clear structure and contact.',
-      subject_treatment: "Split the prompt's product into a load-bearing frame and a stretched contact surface, with visible anchor points and believable tension.",
-      color_and_tone: 'Sober frame value and a moderately contrasting membrane, colored by function.',
-      lighting_and_shadow: 'Diffuse light revealing curvature and anchor points with every fixing in view.',
-      texture_and_material: 'Smooth rigid frame and a taut fine-weave surface with no random wrinkles.',
-      camera_and_composition: 'A view that shows at least two anchors and how frame meets surface.',
-      atmosphere_and_mood: 'Resilient lightness and a clear reading of the forces at play.',
-      rendering_and_quality: 'Clean concept render where tension points match the surface deformation.',
-      key_features: 'rigid frame; taut surface; visible anchors; readable tension',
-    }, ['floating membrane', 'wrinkles with no cause', 'decorative frame'], [
-      'A camp chair for a knight\'s squire on a long crusade: an asymmetric iron frame with one stretched canvas seat, anchors visible, dusty evening light. No readable text or logo.',
-      'A hammock-bed for a house cat who demands luxury, a tiny rigid frame and a taut mesh sling shaped exactly around a loaf-shaped cat. No readable text or logo.',
-      'A desk light made of a pale membrane stretched between three short arms over a rigid base, glowing softly in a dark room. No readable text or logo.',
-    ]),
-    P('R-PRD-03', 'Ceramic Control Objects', 'calm volume with precise controls', 'ceramic-control', {
-      aesthetic: 'Ceramic Control Objects: serene continuous volumes interrupted only by a few precise controls, joints and openings.',
-      subject_treatment: "Keep the prompt's product as one serene volume and add its controls, joints and openings as precise interventions grouped in one reachable area.",
-      color_and_tone: 'One calm body color with a contained accent on the interaction zone.',
-      lighting_and_shadow: 'Broad light and soft reflections that explain the volume and keep controls clear.',
-      texture_and_material: 'Matte ceramic-like surface with clear joints and protected edges.',
-      camera_and_composition: 'Dominant main volume with controls grouped in one accessible region.',
-      atmosphere_and_mood: 'Tactile calm and precision, quiet objects that invite a touch.',
-      rendering_and_quality: 'The design keeps its identity if the ceramic finish is swapped for another sober one.',
-      key_features: 'serene volume; precise controls; grouped interaction; calm body color',
-    }, ['ceramic as the only novelty', 'unreadable sunken controls', 'body with no access'], [
-      'A ceramic control stone for summoning a household spirit: a smooth warm-grey pebble with one large dial and two buttons in a single precise groove, one coral accent. No readable text or logo.',
-      'A ceramic kitchen timer shaped like a very bored egg, one joint that twists to set it and a single dark indicator, bone matte finish. No readable text or logo.',
-      'A slate-blue ceramic light diffuser with one emission slot and a side control, standing quietly on a bedside table. No readable text or logo.',
-    ]),
-    P('R-PRD-04', 'Exposed Service Seams', 'visible service seam product', 'service-seams', {
-      aesthetic: 'Exposed Service Seams: access covers and service joints become the formal hierarchy of the product, showing only what maintenance needs.',
-      subject_treatment: "Turn the prompt's product access covers and service joints into its main visual hierarchy, showing only what explains maintenance.",
-      color_and_tone: 'Neutral body with a controlled-contrast seam or tab marking the access.',
-      lighting_and_shadow: 'Soft side light revealing the gap between cover and housing.',
-      texture_and_material: 'Sober materials, coherent seam edges and fixings placed by function.',
-      camera_and_composition: 'Main view shows the opening path and how housing meets the removable part.',
-      atmosphere_and_mood: 'Robustness and constructive honesty, built to be opened.',
-      rendering_and_quality: 'Clean concept render where every visible seam has a function.',
-      key_features: 'service seams; access covers; opening path; honest construction',
-    }, ['fake covers', 'random screws', 'exposed core with no protection'], [
-      'A field recorder for storm chasers that gets opened in the rain: a rear service cover and pull tab form its whole identity, graphite with an orange accent, seam in view. No readable text or logo.',
-      'A robot vacuum designed for households with toddlers, every service seam oversized and obvious, one pull tab labeled only by a bright color, very forgiving. No readable text or logo.',
-      'A workshop lamp with one side access panel and clear fixings, pale grey matte with one continuous dark seam, shown closed and partly open. No readable text or logo.',
-    ]),
-    P('R-PRD-05', 'Offset Capsule Assemblies', 'offset capsule module product', 'offset-capsule', {
-      aesthetic: 'Offset Capsule Assemblies: offset capsules and modules form one composition with clear supports and connections.',
-      subject_treatment: "Compose the prompt's product from offset capsule modules with explicit supports and connections, never an arbitrary stack.",
-      color_and_tone: 'One color per module function in a reduced palette of compatible values.',
-      lighting_and_shadow: 'One soft common light with contact shadows that explain the assembly.',
-      texture_and_material: 'Smooth semi-matte shells and original connectors with restrained detail.',
-      camera_and_composition: 'Controlled offset that keeps an apparent center of support and access to controls.',
-      atmosphere_and_mood: 'Playful asymmetry with assembly precision, balanced and stable.',
-      rendering_and_quality: 'Clean concept render where each module keeps its function and connection.',
-      key_features: 'offset capsules; clear bridges; function colors; stable support',
-    }, ['floating capsules', 'modules with no connection', 'geometry that changes between views'], [
-      'A table radio for a deep-sea research base: a main speaker capsule and a smaller control capsule offset to the side on one bridge, blue and cream. No readable text or logo.',
-      'A charging station for a family that owns far too many gadgets, five offset capsules of wildly different sizes on one shared base, graphite and coral. No readable text or logo.',
-      'A desk organizer of three open capsules at different heights on one common base, terracotta, bone and charcoal, calm studio light. No readable text or logo.',
-    ]),
-    P('R-PRD-06', 'Nested Shell Products', 'nested shell layer product', 'nested-shell', {
-      aesthetic: 'Nested Shell Products: nested or concentric shells separate protection, core and zones of use with coherent visual clearances.',
-      subject_treatment: "Separate the prompt's product into an outer protective shell, a core and a contact zone using nested housings with coherent gaps.",
-      color_and_tone: 'Values per layer and one accent on the zone of use.',
-      lighting_and_shadow: 'Diffuse light that reads the edges and the depth between shells.',
-      texture_and_material: 'Smooth surfaces of consistent thickness and generous joints.',
-      camera_and_composition: 'A view that shows the fit and the core without taking everything apart.',
-      atmosphere_and_mood: 'Protection and precision, with layers that are easy to read.',
-      rendering_and_quality: 'Clean concept render where every shell has a different job.',
-      key_features: 'nested shells; protected core; visible clearances; zone of use',
-    }, ['ornamental layers', 'impossible fits', 'unreachable core'], [
-      'A portable lantern for miners trapped deep underground: an outer grip shell around a glowing nested core, terracotta and pale diffuser, one visible joint. No readable text or logo.',
-      'A lunchbox for a paranoid office worker, three nested shells protecting one sandwich, each shell a different color, very secure. No readable text or logo.',
-      'A compact speaker with an open outer shell protecting a simple sound core, graphite and bone, controls reachable at the top. No readable text or logo.',
-    ]),
-    P('R-PRD-07', 'Ribbed Structural Surfaces', 'functional ribbed surface product', 'ribbed-structure', {
-      aesthetic: 'Ribbed Structural Surfaces: ribs and channels follow stated functions such as support, grip, airflow or sound, organizing the whole volume.',
-      subject_treatment: "Align ribs and channels on the prompt's product with its support, grip, airflow or sound, leaving smooth zones for controls and contact.",
-      color_and_tone: 'One continuous color with value shifts that reveal the relief, accent only for function.',
-      lighting_and_shadow: 'Soft raking light showing rib direction with gentle, even shade.',
-      texture_and_material: 'Mid-scale relief, soft joins and a matte surface with little grain.',
-      camera_and_composition: 'Ribs concentrated where they work, smooth areas left for reading and touch.',
-      atmosphere_and_mood: 'Constructive rhythm and robustness, every ridge earning its place.',
-      rendering_and_quality: 'Clean concept render where relief direction matches use or construction.',
-      key_features: 'functional ribs; directional channels; smooth control zones; raking light',
-    }, ['decorative ribs', 'fake vents', 'awkward grips shown as validated'], [
-      'A handheld signal flare for mountain rescue teams: ribs spiral along the grip for gloved hands and stop cleanly at the smooth cap, bright orange and graphite. No readable text or logo.',
-      'A hair dryer designed for a very fluffy dog, ribs everywhere the air needs to go, a smooth handle and an expression of great confidence. No readable text or logo.',
-      'A desk lamp with structural channels running along its curved body and stopping before the diffuser, slate blue, lamp off for review. No readable text or logo.',
-    ]),
-    P('R-PRD-08', 'Soft-Edge Tool Forms', 'soft-transition hand tool', 'soft-edge-tool', {
-      aesthetic: 'Soft-Edge Tool Forms: generous transitions and expressive contact zones soften tools while their working ends stay precise.',
-      subject_treatment: "Soften the prompt's tool at its contact zones while keeping its orientation, working end and controls clearly defined.",
-      color_and_tone: 'Neutral body and an accent for interaction, with functional parts clearly different.',
-      lighting_and_shadow: 'Broad light revealing radii and supports with a restrained plastic sheen.',
-      texture_and_material: 'Semi-matte surfaces with discreetly differentiated grip zones where hands rest.',
-      camera_and_composition: 'A silhouette oriented to use, with unmistakable working ends.',
-      atmosphere_and_mood: 'Friendliness and visual confidence, approachable yet still a serious tool.',
-      rendering_and_quality: 'Clean concept render where curves keep every edge needed for use.',
-      key_features: 'soft transitions; precise working end; grip zones; use orientation',
-    }, ['amorphous tool', 'lost function', 'ergonomics claimed without testing'], [
-      'A hand roller for printing posters in an underground resistance press: a soft generous handle and a clear cylinder mount, warm grey and coral, three-quarter view. No readable text or logo.',
-      'A backscratcher redesigned by an industrial designer who took it far too seriously, soft transitions, one precise scratching end and a hidden sense of pride. No readable text or logo.',
-      'A paper-folding tool with a soft body, one precise creasing tip and a distinct resting zone, slate blue, side and top views. No readable text or logo.',
-    ]),
-    P('R-PRD-09', 'Planar Knuckle Hardware', 'hinged hard-plane product', 'planar-knuckle', {
-      aesthetic: 'Planar Knuckle Hardware: hard flat planes joined by clearly visible knuckle hinges, with curves reserved for contact and movement.',
-      subject_treatment: "Join the prompt's product from hard planes through obvious knuckle articulations, using curves only where parts touch or move.",
-      color_and_tone: 'Planes in related values and a discreet accent on the articulation.',
-      lighting_and_shadow: 'Broad side light defining each face and the hinge axis with soft reflections.',
-      texture_and_material: 'Matte surfaces, crisp joints and limited contact radii.',
-      camera_and_composition: 'The hinge axis in view and at least two compatible positions shown.',
-      atmosphere_and_mood: 'Mechanical precision and economy, deeply satisfying to fold and unfold.',
-      rendering_and_quality: 'Clean concept render where parts keep their geometry in every position.',
-      key_features: 'hard planes; knuckle hinges; two positions; clear axis',
-    }, ['fake articulation', 'intersecting planes', 'ornamental pistons'], [
-      'A folding shield-stand for a traveling map seller: two hard plates on one knuckle hinge, open and closed with the same parts, graphite and orange. No readable text or logo.',
-      'A folding stool so over-engineered it has three knuckle hinges for a seat the size of a plate, shown folded and unfolded, very proud of itself. No readable text or logo.',
-      'A portable reading stand of two plates opening on one clear axis and resting on a third plane, dark blue matte, three-quarter view. No readable text or logo.',
-    ]),
-    P('R-PRD-10', 'Stacked Slab Devices', 'layered slab device concept', 'stacked-slab', {
-      aesthetic: 'Stacked Slab Devices: flat slabs stacked by role, interface, protection and support, each with its own distinct edge.',
-      subject_treatment: "Build the prompt's device from stacked flat layers, each assigned to interface, protection or support with a distinct edge.",
-      color_and_tone: 'Sober palette with a different value per layer.',
-      lighting_and_shadow: 'Soft light revealing thickness and gaps between the slabs.',
-      texture_and_material: 'Flat semi-matte surfaces, precise edges and visible joins.',
-      camera_and_composition: 'Compact stack with one dominant layer and reachable controls.',
-      atmosphere_and_mood: 'Technical order and layered lightness, calm and exact.',
-      rendering_and_quality: 'Clean concept render where layer count and roles stay constant between views.',
-      key_features: 'stacked slabs; role per layer; distinct edges; compact stack',
-    }, ['layers with no function', 'impossible separation', 'buttons trapped between plates'], [
-      'A music sequencer for a band of robot monks: a top interface slab, a body slab and a protective base, charcoal, cream and one violet accent, elevated view. No readable text or logo.',
-      'A kitchen timer built like a tiny layered cake, top slab to twist, middle slab to read, base slab to stop it sliding off the counter, blue and bone. No readable text or logo.',
-      'A small desk hub of three slabs with clearly different edges, graphite matte on a neutral background. No readable text or logo.',
-    ]),
+    P(
+      'R-PRD-01',
+      'Folded-Sheet Instruments',
+      'folded sheet product concept',
+      'folded-sheet-product',
+      {
+        aesthetic:
+          'Folded-Sheet Instruments: one continuous sheet folded into housing, stand and openings, the folds explaining how the product stands and works.',
+        subject_treatment:
+          "Derive the prompt's product housing, support and openings from one continuous folded sheet with visually coherent folds and thickness.",
+        color_and_tone:
+          'One sober main color with related edge values and an accent only on the interactive part.',
+        lighting_and_shadow:
+          'Broad side light revealing folds and contact points with soft clean highlights.',
+        texture_and_material:
+          'Semi-matte surface, uniform apparent thickness and explicit joins where the sheet ends.',
+        camera_and_composition: 'A three-quarter view that shows base, fold and opening together.',
+        atmosphere_and_mood: 'Constructive economy and precision, a single gesture of material.',
+        rendering_and_quality:
+          'Clean product-concept render where every fold gives support, access or function.',
+        key_features: 'one folded sheet; fold as function; uniform thickness; three-quarter view',
+      },
+      ['impossible folds', 'thickness that changes for no reason', 'decorative screws'],
+      [
+        'A concept speaker for a lighthouse keeper who talks to passing whales: one graphite sheet folds into housing, stand and a wide sound mouth facing the sea window. No readable text or logo.',
+        'A reading lamp folded from a single terracotta sheet for a very small, very judgmental owl who insists on reading in bed, base, neck and shade from two folds. No readable text or logo.',
+        'A folded ink-blue sheet becomes a quiet bedside tray for one pair of glasses and a key, two supports of different height, calm studio light. No readable text or logo.',
+      ],
+    ),
+    P(
+      'R-PRD-02',
+      'Tensioned Frame Objects',
+      'rigid frame and taut surface product',
+      'tensioned-frame',
+      {
+        aesthetic:
+          'Tensioned Frame Objects: a rigid frame and a taut stretched surface split the product into clear structure and contact.',
+        subject_treatment:
+          "Split the prompt's product into a load-bearing frame and a stretched contact surface, with visible anchor points and believable tension.",
+        color_and_tone:
+          'Sober frame value and a moderately contrasting membrane, colored by function.',
+        lighting_and_shadow:
+          'Diffuse light revealing curvature and anchor points with every fixing in view.',
+        texture_and_material:
+          'Smooth rigid frame and a taut fine-weave surface with no random wrinkles.',
+        camera_and_composition:
+          'A view that shows at least two anchors and how frame meets surface.',
+        atmosphere_and_mood: 'Resilient lightness and a clear reading of the forces at play.',
+        rendering_and_quality:
+          'Clean concept render where tension points match the surface deformation.',
+        key_features: 'rigid frame; taut surface; visible anchors; readable tension',
+      },
+      ['floating membrane', 'wrinkles with no cause', 'decorative frame'],
+      [
+        "A camp chair for a knight's squire on a long crusade: an asymmetric iron frame with one stretched canvas seat, anchors visible, dusty evening light. No readable text or logo.",
+        'A hammock-bed for a house cat who demands luxury, a tiny rigid frame and a taut mesh sling shaped exactly around a loaf-shaped cat. No readable text or logo.',
+        'A desk light made of a pale membrane stretched between three short arms over a rigid base, glowing softly in a dark room. No readable text or logo.',
+      ],
+    ),
+    P(
+      'R-PRD-03',
+      'Ceramic Control Objects',
+      'calm volume with precise controls',
+      'ceramic-control',
+      {
+        aesthetic:
+          'Ceramic Control Objects: serene continuous volumes interrupted only by a few precise controls, joints and openings.',
+        subject_treatment:
+          "Keep the prompt's product as one serene volume and add its controls, joints and openings as precise interventions grouped in one reachable area.",
+        color_and_tone: 'One calm body color with a contained accent on the interaction zone.',
+        lighting_and_shadow:
+          'Broad light and soft reflections that explain the volume and keep controls clear.',
+        texture_and_material: 'Matte ceramic-like surface with clear joints and protected edges.',
+        camera_and_composition:
+          'Dominant main volume with controls grouped in one accessible region.',
+        atmosphere_and_mood: 'Tactile calm and precision, quiet objects that invite a touch.',
+        rendering_and_quality:
+          'The design keeps its identity if the ceramic finish is swapped for another sober one.',
+        key_features: 'serene volume; precise controls; grouped interaction; calm body color',
+      },
+      ['ceramic as the only novelty', 'unreadable sunken controls', 'body with no access'],
+      [
+        'A ceramic control stone for summoning a household spirit: a smooth warm-grey pebble with one large dial and two buttons in a single precise groove, one coral accent. No readable text or logo.',
+        'A ceramic kitchen timer shaped like a very bored egg, one joint that twists to set it and a single dark indicator, bone matte finish. No readable text or logo.',
+        'A slate-blue ceramic light diffuser with one emission slot and a side control, standing quietly on a bedside table. No readable text or logo.',
+      ],
+    ),
+    P(
+      'R-PRD-04',
+      'Exposed Service Seams',
+      'visible service seam product',
+      'service-seams',
+      {
+        aesthetic:
+          'Exposed Service Seams: access covers and service joints become the formal hierarchy of the product, showing only what maintenance needs.',
+        subject_treatment:
+          "Turn the prompt's product access covers and service joints into its main visual hierarchy, showing only what explains maintenance.",
+        color_and_tone: 'Neutral body with a controlled-contrast seam or tab marking the access.',
+        lighting_and_shadow: 'Soft side light revealing the gap between cover and housing.',
+        texture_and_material:
+          'Sober materials, coherent seam edges and fixings placed by function.',
+        camera_and_composition:
+          'Main view shows the opening path and how housing meets the removable part.',
+        atmosphere_and_mood: 'Robustness and constructive honesty, built to be opened.',
+        rendering_and_quality: 'Clean concept render where every visible seam has a function.',
+        key_features: 'service seams; access covers; opening path; honest construction',
+      },
+      ['fake covers', 'random screws', 'exposed core with no protection'],
+      [
+        'A field recorder for storm chasers that gets opened in the rain: a rear service cover and pull tab form its whole identity, graphite with an orange accent, seam in view. No readable text or logo.',
+        'A robot vacuum designed for households with toddlers, every service seam oversized and obvious, one pull tab labeled only by a bright color, very forgiving. No readable text or logo.',
+        'A workshop lamp with one side access panel and clear fixings, pale grey matte with one continuous dark seam, shown closed and partly open. No readable text or logo.',
+      ],
+    ),
+    P(
+      'R-PRD-05',
+      'Offset Capsule Assemblies',
+      'offset capsule module product',
+      'offset-capsule',
+      {
+        aesthetic:
+          'Offset Capsule Assemblies: offset capsules and modules form one composition with clear supports and connections.',
+        subject_treatment:
+          "Compose the prompt's product from offset capsule modules with explicit supports and connections, never an arbitrary stack.",
+        color_and_tone: 'One color per module function in a reduced palette of compatible values.',
+        lighting_and_shadow:
+          'One soft common light with contact shadows that explain the assembly.',
+        texture_and_material:
+          'Smooth semi-matte shells and original connectors with restrained detail.',
+        camera_and_composition:
+          'Controlled offset that keeps an apparent center of support and access to controls.',
+        atmosphere_and_mood: 'Playful asymmetry with assembly precision, balanced and stable.',
+        rendering_and_quality:
+          'Clean concept render where each module keeps its function and connection.',
+        key_features: 'offset capsules; clear bridges; function colors; stable support',
+      },
+      ['floating capsules', 'modules with no connection', 'geometry that changes between views'],
+      [
+        'A table radio for a deep-sea research base: a main speaker capsule and a smaller control capsule offset to the side on one bridge, blue and cream. No readable text or logo.',
+        'A charging station for a family that owns far too many gadgets, five offset capsules of wildly different sizes on one shared base, graphite and coral. No readable text or logo.',
+        'A desk organizer of three open capsules at different heights on one common base, terracotta, bone and charcoal, calm studio light. No readable text or logo.',
+      ],
+    ),
+    P(
+      'R-PRD-06',
+      'Nested Shell Products',
+      'nested shell layer product',
+      'nested-shell',
+      {
+        aesthetic:
+          'Nested Shell Products: nested or concentric shells separate protection, core and zones of use with coherent visual clearances.',
+        subject_treatment:
+          "Separate the prompt's product into an outer protective shell, a core and a contact zone using nested housings with coherent gaps.",
+        color_and_tone: 'Values per layer and one accent on the zone of use.',
+        lighting_and_shadow: 'Diffuse light that reads the edges and the depth between shells.',
+        texture_and_material: 'Smooth surfaces of consistent thickness and generous joints.',
+        camera_and_composition:
+          'A view that shows the fit and the core without taking everything apart.',
+        atmosphere_and_mood: 'Protection and precision, with layers that are easy to read.',
+        rendering_and_quality: 'Clean concept render where every shell has a different job.',
+        key_features: 'nested shells; protected core; visible clearances; zone of use',
+      },
+      ['ornamental layers', 'impossible fits', 'unreachable core'],
+      [
+        'A portable lantern for miners trapped deep underground: an outer grip shell around a glowing nested core, terracotta and pale diffuser, one visible joint. No readable text or logo.',
+        'A lunchbox for a paranoid office worker, three nested shells protecting one sandwich, each shell a different color, very secure. No readable text or logo.',
+        'A compact speaker with an open outer shell protecting a simple sound core, graphite and bone, controls reachable at the top. No readable text or logo.',
+      ],
+    ),
+    P(
+      'R-PRD-07',
+      'Ribbed Structural Surfaces',
+      'functional ribbed surface product',
+      'ribbed-structure',
+      {
+        aesthetic:
+          'Ribbed Structural Surfaces: ribs and channels follow stated functions such as support, grip, airflow or sound, organizing the whole volume.',
+        subject_treatment:
+          "Align ribs and channels on the prompt's product with its support, grip, airflow or sound, leaving smooth zones for controls and contact.",
+        color_and_tone:
+          'One continuous color with value shifts that reveal the relief, accent only for function.',
+        lighting_and_shadow: 'Soft raking light showing rib direction with gentle, even shade.',
+        texture_and_material: 'Mid-scale relief, soft joins and a matte surface with little grain.',
+        camera_and_composition:
+          'Ribs concentrated where they work, smooth areas left for reading and touch.',
+        atmosphere_and_mood: 'Constructive rhythm and robustness, every ridge earning its place.',
+        rendering_and_quality:
+          'Clean concept render where relief direction matches use or construction.',
+        key_features: 'functional ribs; directional channels; smooth control zones; raking light',
+      },
+      ['decorative ribs', 'fake vents', 'awkward grips shown as validated'],
+      [
+        'A handheld signal flare for mountain rescue teams: ribs spiral along the grip for gloved hands and stop cleanly at the smooth cap, bright orange and graphite. No readable text or logo.',
+        'A hair dryer designed for a very fluffy dog, ribs everywhere the air needs to go, a smooth handle and an expression of great confidence. No readable text or logo.',
+        'A desk lamp with structural channels running along its curved body and stopping before the diffuser, slate blue, lamp off for review. No readable text or logo.',
+      ],
+    ),
+    P(
+      'R-PRD-08',
+      'Soft-Edge Tool Forms',
+      'soft-transition hand tool',
+      'soft-edge-tool',
+      {
+        aesthetic:
+          'Soft-Edge Tool Forms: generous transitions and expressive contact zones soften tools while their working ends stay precise.',
+        subject_treatment:
+          "Soften the prompt's tool at its contact zones while keeping its orientation, working end and controls clearly defined.",
+        color_and_tone:
+          'Neutral body and an accent for interaction, with functional parts clearly different.',
+        lighting_and_shadow:
+          'Broad light revealing radii and supports with a restrained plastic sheen.',
+        texture_and_material:
+          'Semi-matte surfaces with discreetly differentiated grip zones where hands rest.',
+        camera_and_composition: 'A silhouette oriented to use, with unmistakable working ends.',
+        atmosphere_and_mood:
+          'Friendliness and visual confidence, approachable yet still a serious tool.',
+        rendering_and_quality: 'Clean concept render where curves keep every edge needed for use.',
+        key_features: 'soft transitions; precise working end; grip zones; use orientation',
+      },
+      ['amorphous tool', 'lost function', 'ergonomics claimed without testing'],
+      [
+        'A hand roller for printing posters in an underground resistance press: a soft generous handle and a clear cylinder mount, warm grey and coral, three-quarter view. No readable text or logo.',
+        'A backscratcher redesigned by an industrial designer who took it far too seriously, soft transitions, one precise scratching end and a hidden sense of pride. No readable text or logo.',
+        'A paper-folding tool with a soft body, one precise creasing tip and a distinct resting zone, slate blue, side and top views. No readable text or logo.',
+      ],
+    ),
+    P(
+      'R-PRD-09',
+      'Planar Knuckle Hardware',
+      'hinged hard-plane product',
+      'planar-knuckle',
+      {
+        aesthetic:
+          'Planar Knuckle Hardware: hard flat planes joined by clearly visible knuckle hinges, with curves reserved for contact and movement.',
+        subject_treatment:
+          "Join the prompt's product from hard planes through obvious knuckle articulations, using curves only where parts touch or move.",
+        color_and_tone: 'Planes in related values and a discreet accent on the articulation.',
+        lighting_and_shadow:
+          'Broad side light defining each face and the hinge axis with soft reflections.',
+        texture_and_material: 'Matte surfaces, crisp joints and limited contact radii.',
+        camera_and_composition:
+          'The hinge axis in view and at least two compatible positions shown.',
+        atmosphere_and_mood:
+          'Mechanical precision and economy, deeply satisfying to fold and unfold.',
+        rendering_and_quality:
+          'Clean concept render where parts keep their geometry in every position.',
+        key_features: 'hard planes; knuckle hinges; two positions; clear axis',
+      },
+      ['fake articulation', 'intersecting planes', 'ornamental pistons'],
+      [
+        'A folding shield-stand for a traveling map seller: two hard plates on one knuckle hinge, open and closed with the same parts, graphite and orange. No readable text or logo.',
+        'A folding stool so over-engineered it has three knuckle hinges for a seat the size of a plate, shown folded and unfolded, very proud of itself. No readable text or logo.',
+        'A portable reading stand of two plates opening on one clear axis and resting on a third plane, dark blue matte, three-quarter view. No readable text or logo.',
+      ],
+    ),
+    P(
+      'R-PRD-10',
+      'Stacked Slab Devices',
+      'layered slab device concept',
+      'stacked-slab',
+      {
+        aesthetic:
+          'Stacked Slab Devices: flat slabs stacked by role, interface, protection and support, each with its own distinct edge.',
+        subject_treatment:
+          "Build the prompt's device from stacked flat layers, each assigned to interface, protection or support with a distinct edge.",
+        color_and_tone: 'Sober palette with a different value per layer.',
+        lighting_and_shadow: 'Soft light revealing thickness and gaps between the slabs.',
+        texture_and_material: 'Flat semi-matte surfaces, precise edges and visible joins.',
+        camera_and_composition: 'Compact stack with one dominant layer and reachable controls.',
+        atmosphere_and_mood: 'Technical order and layered lightness, calm and exact.',
+        rendering_and_quality:
+          'Clean concept render where layer count and roles stay constant between views.',
+        key_features: 'stacked slabs; role per layer; distinct edges; compact stack',
+      },
+      ['layers with no function', 'impossible separation', 'buttons trapped between plates'],
+      [
+        'A music sequencer for a band of robot monks: a top interface slab, a body slab and a protective base, charcoal, cream and one violet accent, elevated view. No readable text or logo.',
+        'A kitchen timer built like a tiny layered cake, top slab to twist, middle slab to read, base slab to stop it sliding off the counter, blue and bone. No readable text or logo.',
+        'A small desk hub of three slabs with clearly different edges, graphite matte on a neutral background. No readable text or logo.',
+      ],
+    ),
   ],
 };
 

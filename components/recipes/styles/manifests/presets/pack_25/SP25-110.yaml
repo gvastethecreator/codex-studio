@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-110
+packId: pack_25
+name: Stacked Slab Devices
+styleAnchors:
+  - Stacked Slab Devices
+  - layered slab device concept
+  - stacked slabs
+displayName: Stacked Slab Devices
+category: 6. Industrial & Product Design
+domain: layered slab device concept
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - industrial-and-product-design
+  - stacked-slab
+  - applied-design
+  - product
+  - r-prd-10
+visualDna:
+  aesthetic: 'Stacked Slab Devices: flat slabs stacked by role, interface, protection and support, each with its own distinct edge.'
+  subject_treatment: Build the prompt's device from stacked flat layers, each assigned to interface, protection or support with a distinct edge.
+  color_and_tone: Sober palette with a different value per layer.
+  lighting_and_shadow: Soft light revealing thickness and gaps between the slabs.
+  texture_and_material: Flat semi-matte surfaces, precise edges and visible joins.
+  camera_and_composition: Compact stack with one dominant layer and reachable controls.
+  atmosphere_and_mood: Technical order and layered lightness, calm and exact.
+  rendering_and_quality: Clean concept render where layer count and roles stay constant between views.
+  creative_brief: "Stacked Slab Devices: flat slabs stacked by role, interface, protection and support, each with its own distinct edge. Carry it through stacked slabs, role per layer, distinct edges, compact stack. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stacked slabs; role per layer; distinct edges; compact stack
+avoidRules:
+  - layers with no function
+  - impossible separation
+  - buttons trapped between plates
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: layers with no function, impossible separation, buttons trapped between plates, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: industrial-and-product-design
+  categoryName: 6. Industrial & Product Design
+  domain: layered slab device concept
+  tags:
+    - curation-v2
+    - industrial-and-product-design
+    - stacked-slab
+    - applied-design
+    - product
+    - r-prd-10
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-111
+packId: pack_25
+name: Open-Core Appliances
+styleAnchors:
+  - Open-Core Appliances
+  - open housing revealing core product
+  - structural opening
+displayName: Open-Core Appliances
+category: 6. Industrial & Product Design
+domain: open housing revealing core product
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - industrial-and-product-design
+  - open-core
+  - applied-design
+  - product
+  - r-prd-11
+visualDna:
+  aesthetic: 'Open-Core Appliances: one structural opening in the housing reveals how the functional core sits inside the outer shell.'
+  subject_treatment: Open the prompt's product housing at one structural zone that reveals the relationship between its working core and its shell, with visible supports.
+  color_and_tone: Controlled contrast between core and housing, with every connection kept visible.
+  lighting_and_shadow: One common light that shows depth inside without turning it into a stage.
+  texture_and_material: Sober finishes on housing and core, with clear edges and supports.
+  camera_and_composition: The opening aimed at understanding the function, not at showing every part.
+  atmosphere_and_mood: Constructive transparency and contained curiosity, honest about how it works.
+  rendering_and_quality: Clean concept render where the opening never cuts a support or floats the core.
+  creative_brief: "Open-Core Appliances: one structural opening in the housing reveals how the functional core sits inside the outer shell. Carry it through structural opening, visible core, clear supports, honest construction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: structural opening; visible core; clear supports; honest construction
+avoidRules:
+  - decorative interior
+  - floating core
+  - opening that blocks the function
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: decorative interior, floating core, opening that blocks the function, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: industrial-and-product-design
+  categoryName: 6. Industrial & Product Design
+  domain: open housing revealing core product
+  tags:
+    - curation-v2
+    - industrial-and-product-design
+    - open-core
+    - applied-design
+    - product
+    - r-prd-11
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-112
+packId: pack_25
+name: Continuous Handle Objects
+styleAnchors:
+  - Continuous Handle Objects
+  - one-path handle and body product
+  - continuous handle path
+displayName: Continuous Handle Objects
+category: 6. Industrial & Product Design
+domain: one-path handle and body product
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - industrial-and-product-design
+  - continuous-handle
+  - applied-design
+  - product
+  - r-prd-12
+visualDna:
+  aesthetic: 'Continuous Handle Objects: handle and body grow from one continuous path of material, with readable transitions of thickness.'
+  subject_treatment: Grow the prompt's product handle and body from one continuous material path with a readable change of thickness and a generous grip gap.
+  color_and_tone: One main color with an optional contrasting interaction zone.
+  lighting_and_shadow: Broad light running along the continuity and revealing the handle gap.
+  texture_and_material: Sober material, seamless where continuity is proposed and jointed where it ends.
+  camera_and_composition: A wide grip gap, a balanced body and an obvious direction of use.
+  atmosphere_and_mood: Resilient fluidity and economy of parts, one confident gesture.
+  rendering_and_quality: Clean concept render where continuity holds from side and back views.
+  creative_brief: "Continuous Handle Objects: handle and body grow from one continuous path of material, with readable transitions of thickness. Carry it through continuous handle path, readable transition, wide grip gap, one material. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: continuous handle path; readable transition; wide grip gap; one material
+avoidRules:
+  - stuck-on handle
+  - grip gap too small
+  - impossible continuity
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: stuck-on handle, grip gap too small, impossible continuity, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: industrial-and-product-design
+  categoryName: 6. Industrial & Product Design
+  domain: one-path handle and body product
+  tags:
+    - curation-v2
+    - industrial-and-product-design
+    - continuous-handle
+    - applied-design
+    - product
+    - r-prd-12
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

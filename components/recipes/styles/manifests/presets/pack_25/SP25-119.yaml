@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP25-119
+packId: pack_25
+name: Exploded Assembly Board
+styleAnchors:
+  - Exploded Assembly Board
+  - product assembly design board profile
+  - design board layout
+displayName: Exploded Assembly Board
+category: 6. Industrial & Product Design
+domain: product assembly design board profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - industrial-and-product-design
+  - assembly-board
+  - applied-design
+  - product
+  - profile
+  - r-prd-18
+visualDna:
+  aesthetic: "Exploded Assembly Board: a design board that lays the product's real parts apart along assembly axes, beside a small assembled view for control."
+  subject_treatment: Lay the prompt's product parts apart along assembly axes on a clean board, keeping shape, orientation and correspondence, with a small assembled view.
+  color_and_tone: Colors per part or source material, with discreet thin axis lines.
+  lighting_and_shadow: One soft common light for every part, grounded on the board.
+  texture_and_material: Original materials and thickness kept, with only the supplied parts shown.
+  camera_and_composition: Compact ordered layout with readable axes and an assembled control view.
+  atmosphere_and_mood: Constructive understanding and sequence, calm like a designer's pin-up board.
+  rendering_and_quality: Part count and joining points match between assembled and exploded views.
+  creative_brief: "Exploded Assembly Board: a design board that lays the product's real parts apart along assembly axes, beside a small assembled view for control. Carry it through design board layout, assembly axes, assembled control view, exact part count. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: design board layout; assembly axes; assembled control view; exact part count
+avoidRules:
+  - invented parts
+  - changed orientation
+  - exploded view that could not be reassembled
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: invented parts, changed orientation, exploded view that could not be reassembled, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: industrial-and-product-design
+  categoryName: 6. Industrial & Product Design
+  domain: product assembly design board profile
+  tags:
+    - curation-v2
+    - industrial-and-product-design
+    - assembly-board
+    - applied-design
+    - product
+    - profile
+    - r-prd-18
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

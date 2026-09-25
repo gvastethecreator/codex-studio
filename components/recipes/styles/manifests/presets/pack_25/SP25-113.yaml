@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-113
+packId: pack_25
+name: Counterweighted Desk Tools
+styleAnchors:
+  - Counterweighted Desk Tools
+  - visible counterweight product
+  - visible counterweight
+displayName: Counterweighted Desk Tools
+category: 6. Industrial & Product Design
+domain: visible counterweight product
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - industrial-and-product-design
+  - counterweight
+  - applied-design
+  - product
+  - r-prd-13
+visualDna:
+  aesthetic: 'Counterweighted Desk Tools: one visible heavy mass balances a light working element and shows the direction of use.'
+  subject_treatment: Balance the prompt's light working element with one visible support mass that expresses direction and use, the load path making sense.
+  color_and_tone: Sober base mass and a moderately contrasting active element.
+  lighting_and_shadow: Soft side light with a clear contact shadow under the base.
+  texture_and_material: Materials of visibly different apparent density, heavy base and light arm.
+  camera_and_composition: A stable visual center of support with the light arm aimed at the task.
+  atmosphere_and_mood: Balanced tension and calm, an asymmetry you understand at once.
+  rendering_and_quality: Clean concept render where the support matches the load direction.
+  creative_brief: "Counterweighted Desk Tools: one visible heavy mass balances a light working element and shows the direction of use. Carry it through visible counterweight, light arm, clear load path, contact shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: visible counterweight; light arm; clear load path; contact shadow
+avoidRules:
+  - object that seems to be falling
+  - ornamental counterweight
+  - stability claimed without calculation
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: object that seems to be falling, ornamental counterweight, stability claimed without calculation, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: industrial-and-product-design
+  categoryName: 6. Industrial & Product Design
+  domain: visible counterweight product
+  tags:
+    - curation-v2
+    - industrial-and-product-design
+    - counterweight
+    - applied-design
+    - product
+    - r-prd-13
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

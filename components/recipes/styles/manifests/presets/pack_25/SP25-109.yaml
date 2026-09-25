@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-109
+packId: pack_25
+name: Planar Knuckle Hardware
+styleAnchors:
+  - Planar Knuckle Hardware
+  - hinged hard-plane product
+  - hard planes
+displayName: Planar Knuckle Hardware
+category: 6. Industrial & Product Design
+domain: hinged hard-plane product
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - industrial-and-product-design
+  - planar-knuckle
+  - applied-design
+  - product
+  - r-prd-09
+visualDna:
+  aesthetic: 'Planar Knuckle Hardware: hard flat planes joined by clearly visible knuckle hinges, with curves reserved for contact and movement.'
+  subject_treatment: Join the prompt's product from hard planes through obvious knuckle articulations, using curves only where parts touch or move.
+  color_and_tone: Planes in related values and a discreet accent on the articulation.
+  lighting_and_shadow: Broad side light defining each face and the hinge axis with soft reflections.
+  texture_and_material: Matte surfaces, crisp joints and limited contact radii.
+  camera_and_composition: The hinge axis in view and at least two compatible positions shown.
+  atmosphere_and_mood: Mechanical precision and economy, deeply satisfying to fold and unfold.
+  rendering_and_quality: Clean concept render where parts keep their geometry in every position.
+  creative_brief: "Planar Knuckle Hardware: hard flat planes joined by clearly visible knuckle hinges, with curves reserved for contact and movement. Carry it through hard planes, knuckle hinges, two positions, clear axis. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: hard planes; knuckle hinges; two positions; clear axis
+avoidRules:
+  - fake articulation
+  - intersecting planes
+  - ornamental pistons
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: fake articulation, intersecting planes, ornamental pistons, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: industrial-and-product-design
+  categoryName: 6. Industrial & Product Design
+  domain: hinged hard-plane product
+  tags:
+    - curation-v2
+    - industrial-and-product-design
+    - planar-knuckle
+    - applied-design
+    - product
+    - r-prd-09
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

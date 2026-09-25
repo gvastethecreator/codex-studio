@@ -3,7 +3,7 @@
     {
       "id": "pack_25",
       "name": "Applied Design",
-      "presetCount": 100
+      "presetCount": 120
     }
   ],
   "presets": [
@@ -1638,7 +1638,383 @@
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp25-100 tactical map stack layered tactical map screen profile map with layers 5. game ui, huds & screen graphics game ui & huds layered tactical map screen profile pack_25 applied design game-ui-huds-and-screen-graphics applied-design game-ui-huds-and-screen-graphics layered-tactical-map-screen-profile"
+    },
+    {
+      "id": "SP25-101",
+      "name": "Folded-Sheet Instruments",
+      "styleAnchors": [
+        "Folded-Sheet Instruments",
+        "folded sheet product concept",
+        "one folded sheet"
+      ],
+      "ref": "pack_25/SP25-101.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "industrial-and-product-design",
+      "categoryName": "6. Industrial & Product Design",
+      "domain": "folded sheet product concept",
+      "tags": ["applied-design", "industrial-and-product-design", "folded-sheet-product-concept"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-101 folded-sheet instruments folded sheet product concept one folded sheet 6. industrial & product design industrial & product design folded sheet product concept pack_25 applied design industrial-and-product-design applied-design industrial-and-product-design folded-sheet-product-concept"
+    },
+    {
+      "id": "SP25-102",
+      "name": "Tensioned Frame Objects",
+      "styleAnchors": [
+        "Tensioned Frame Objects",
+        "rigid frame and taut surface product",
+        "rigid frame"
+      ],
+      "ref": "pack_25/SP25-102.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "industrial-and-product-design",
+      "categoryName": "6. Industrial & Product Design",
+      "domain": "rigid frame and taut surface product",
+      "tags": [
+        "applied-design",
+        "industrial-and-product-design",
+        "rigid-frame-and-taut-surface-product"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-102 tensioned frame objects rigid frame and taut surface product rigid frame 6. industrial & product design industrial & product design rigid frame and taut surface product pack_25 applied design industrial-and-product-design applied-design industrial-and-product-design rigid-frame-and-taut-surface-product"
+    },
+    {
+      "id": "SP25-103",
+      "name": "Ceramic Control Objects",
+      "styleAnchors": [
+        "Ceramic Control Objects",
+        "calm volume with precise controls",
+        "serene volume"
+      ],
+      "ref": "pack_25/SP25-103.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "industrial-and-product-design",
+      "categoryName": "6. Industrial & Product Design",
+      "domain": "calm volume with precise controls",
+      "tags": [
+        "applied-design",
+        "industrial-and-product-design",
+        "calm-volume-with-precise-controls"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-103 ceramic control objects calm volume with precise controls serene volume 6. industrial & product design industrial & product design calm volume with precise controls pack_25 applied design industrial-and-product-design applied-design industrial-and-product-design calm-volume-with-precise-controls"
+    },
+    {
+      "id": "SP25-104",
+      "name": "Exposed Service Seams",
+      "styleAnchors": ["Exposed Service Seams", "visible service seam product", "service seams"],
+      "ref": "pack_25/SP25-104.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "industrial-and-product-design",
+      "categoryName": "6. Industrial & Product Design",
+      "domain": "visible service seam product",
+      "tags": ["applied-design", "industrial-and-product-design", "visible-service-seam-product"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-104 exposed service seams visible service seam product service seams 6. industrial & product design industrial & product design visible service seam product pack_25 applied design industrial-and-product-design applied-design industrial-and-product-design visible-service-seam-product"
+    },
+    {
+      "id": "SP25-105",
+      "name": "Offset Capsule Assemblies",
+      "styleAnchors": [
+        "Offset Capsule Assemblies",
+        "offset capsule module product",
+        "offset capsules"
+      ],
+      "ref": "pack_25/SP25-105.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "industrial-and-product-design",
+      "categoryName": "6. Industrial & Product Design",
+      "domain": "offset capsule module product",
+      "tags": ["applied-design", "industrial-and-product-design", "offset-capsule-module-product"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-105 offset capsule assemblies offset capsule module product offset capsules 6. industrial & product design industrial & product design offset capsule module product pack_25 applied design industrial-and-product-design applied-design industrial-and-product-design offset-capsule-module-product"
+    },
+    {
+      "id": "SP25-106",
+      "name": "Nested Shell Products",
+      "styleAnchors": ["Nested Shell Products", "nested shell layer product", "nested shells"],
+      "ref": "pack_25/SP25-106.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "industrial-and-product-design",
+      "categoryName": "6. Industrial & Product Design",
+      "domain": "nested shell layer product",
+      "tags": ["applied-design", "industrial-and-product-design", "nested-shell-layer-product"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-106 nested shell products nested shell layer product nested shells 6. industrial & product design industrial & product design nested shell layer product pack_25 applied design industrial-and-product-design applied-design industrial-and-product-design nested-shell-layer-product"
+    },
+    {
+      "id": "SP25-107",
+      "name": "Ribbed Structural Surfaces",
+      "styleAnchors": [
+        "Ribbed Structural Surfaces",
+        "functional ribbed surface product",
+        "functional ribs"
+      ],
+      "ref": "pack_25/SP25-107.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "industrial-and-product-design",
+      "categoryName": "6. Industrial & Product Design",
+      "domain": "functional ribbed surface product",
+      "tags": [
+        "applied-design",
+        "industrial-and-product-design",
+        "functional-ribbed-surface-product"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-107 ribbed structural surfaces functional ribbed surface product functional ribs 6. industrial & product design industrial & product design functional ribbed surface product pack_25 applied design industrial-and-product-design applied-design industrial-and-product-design functional-ribbed-surface-product"
+    },
+    {
+      "id": "SP25-108",
+      "name": "Soft-Edge Tool Forms",
+      "styleAnchors": ["Soft-Edge Tool Forms", "soft-transition hand tool", "soft transitions"],
+      "ref": "pack_25/SP25-108.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "industrial-and-product-design",
+      "categoryName": "6. Industrial & Product Design",
+      "domain": "soft-transition hand tool",
+      "tags": ["applied-design", "industrial-and-product-design", "soft-transition-hand-tool"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-108 soft-edge tool forms soft-transition hand tool soft transitions 6. industrial & product design industrial & product design soft-transition hand tool pack_25 applied design industrial-and-product-design applied-design industrial-and-product-design soft-transition-hand-tool"
+    },
+    {
+      "id": "SP25-109",
+      "name": "Planar Knuckle Hardware",
+      "styleAnchors": ["Planar Knuckle Hardware", "hinged hard-plane product", "hard planes"],
+      "ref": "pack_25/SP25-109.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "industrial-and-product-design",
+      "categoryName": "6. Industrial & Product Design",
+      "domain": "hinged hard-plane product",
+      "tags": ["applied-design", "industrial-and-product-design", "hinged-hard-plane-product"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-109 planar knuckle hardware hinged hard-plane product hard planes 6. industrial & product design industrial & product design hinged hard-plane product pack_25 applied design industrial-and-product-design applied-design industrial-and-product-design hinged-hard-plane-product"
+    },
+    {
+      "id": "SP25-110",
+      "name": "Stacked Slab Devices",
+      "styleAnchors": ["Stacked Slab Devices", "layered slab device concept", "stacked slabs"],
+      "ref": "pack_25/SP25-110.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "industrial-and-product-design",
+      "categoryName": "6. Industrial & Product Design",
+      "domain": "layered slab device concept",
+      "tags": ["applied-design", "industrial-and-product-design", "layered-slab-device-concept"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-110 stacked slab devices layered slab device concept stacked slabs 6. industrial & product design industrial & product design layered slab device concept pack_25 applied design industrial-and-product-design applied-design industrial-and-product-design layered-slab-device-concept"
+    },
+    {
+      "id": "SP25-111",
+      "name": "Open-Core Appliances",
+      "styleAnchors": [
+        "Open-Core Appliances",
+        "open housing revealing core product",
+        "structural opening"
+      ],
+      "ref": "pack_25/SP25-111.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "industrial-and-product-design",
+      "categoryName": "6. Industrial & Product Design",
+      "domain": "open housing revealing core product",
+      "tags": [
+        "applied-design",
+        "industrial-and-product-design",
+        "open-housing-revealing-core-product"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-111 open-core appliances open housing revealing core product structural opening 6. industrial & product design industrial & product design open housing revealing core product pack_25 applied design industrial-and-product-design applied-design industrial-and-product-design open-housing-revealing-core-product"
+    },
+    {
+      "id": "SP25-112",
+      "name": "Continuous Handle Objects",
+      "styleAnchors": [
+        "Continuous Handle Objects",
+        "one-path handle and body product",
+        "continuous handle path"
+      ],
+      "ref": "pack_25/SP25-112.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "industrial-and-product-design",
+      "categoryName": "6. Industrial & Product Design",
+      "domain": "one-path handle and body product",
+      "tags": [
+        "applied-design",
+        "industrial-and-product-design",
+        "one-path-handle-and-body-product"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-112 continuous handle objects one-path handle and body product continuous handle path 6. industrial & product design industrial & product design one-path handle and body product pack_25 applied design industrial-and-product-design applied-design industrial-and-product-design one-path-handle-and-body-product"
+    },
+    {
+      "id": "SP25-113",
+      "name": "Counterweighted Desk Tools",
+      "styleAnchors": [
+        "Counterweighted Desk Tools",
+        "visible counterweight product",
+        "visible counterweight"
+      ],
+      "ref": "pack_25/SP25-113.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "industrial-and-product-design",
+      "categoryName": "6. Industrial & Product Design",
+      "domain": "visible counterweight product",
+      "tags": ["applied-design", "industrial-and-product-design", "visible-counterweight-product"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-113 counterweighted desk tools visible counterweight product visible counterweight 6. industrial & product design industrial & product design visible counterweight product pack_25 applied design industrial-and-product-design applied-design industrial-and-product-design visible-counterweight-product"
+    },
+    {
+      "id": "SP25-114",
+      "name": "Color-Coded Function Modules",
+      "styleAnchors": [
+        "Color-Coded Function Modules",
+        "color and shape coded modular product",
+        "function modules"
+      ],
+      "ref": "pack_25/SP25-114.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "industrial-and-product-design",
+      "categoryName": "6. Industrial & Product Design",
+      "domain": "color and shape coded modular product",
+      "tags": [
+        "applied-design",
+        "industrial-and-product-design",
+        "color-and-shape-coded-modular-product"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-114 color-coded function modules color and shape coded modular product function modules 6. industrial & product design industrial & product design color and shape coded modular product pack_25 applied design industrial-and-product-design applied-design industrial-and-product-design color-and-shape-coded-modular-product"
+    },
+    {
+      "id": "SP25-115",
+      "name": "Inflated Surface Hardpoints",
+      "styleAnchors": [
+        "Inflated Surface Hardpoints",
+        "soft volume with rigid anchors",
+        "soft volume"
+      ],
+      "ref": "pack_25/SP25-115.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "industrial-and-product-design",
+      "categoryName": "6. Industrial & Product Design",
+      "domain": "soft volume with rigid anchors",
+      "tags": ["applied-design", "industrial-and-product-design", "soft-volume-with-rigid-anchors"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-115 inflated surface hardpoints soft volume with rigid anchors soft volume 6. industrial & product design industrial & product design soft volume with rigid anchors pack_25 applied design industrial-and-product-design applied-design industrial-and-product-design soft-volume-with-rigid-anchors"
+    },
+    {
+      "id": "SP25-116",
+      "name": "Perforation-Gradient Objects",
+      "styleAnchors": [
+        "Perforation-Gradient Objects",
+        "graded perforation surface product",
+        "perforation gradient"
+      ],
+      "ref": "pack_25/SP25-116.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "industrial-and-product-design",
+      "categoryName": "6. Industrial & Product Design",
+      "domain": "graded perforation surface product",
+      "tags": [
+        "applied-design",
+        "industrial-and-product-design",
+        "graded-perforation-surface-product"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-116 perforation-gradient objects graded perforation surface product perforation gradient 6. industrial & product design industrial & product design graded perforation surface product pack_25 applied design industrial-and-product-design applied-design industrial-and-product-design graded-perforation-surface-product"
+    },
+    {
+      "id": "SP25-117",
+      "name": "Stacked Ring Forms",
+      "styleAnchors": ["Stacked Ring Forms", "stacked ring product construction", "stacked rings"],
+      "ref": "pack_25/SP25-117.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "industrial-and-product-design",
+      "categoryName": "6. Industrial & Product Design",
+      "domain": "stacked ring product construction",
+      "tags": [
+        "applied-design",
+        "industrial-and-product-design",
+        "stacked-ring-product-construction"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-117 stacked ring forms stacked ring product construction stacked rings 6. industrial & product design industrial & product design stacked ring product construction pack_25 applied design industrial-and-product-design applied-design industrial-and-product-design stacked-ring-product-construction"
+    },
+    {
+      "id": "SP25-118",
+      "name": "Monolithic Material Finish",
+      "styleAnchors": [
+        "Monolithic Material Finish",
+        "monolithic material finish modifier",
+        "one continuous finish"
+      ],
+      "ref": "pack_25/SP25-118.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "industrial-and-product-design",
+      "categoryName": "6. Industrial & Product Design",
+      "domain": "monolithic material finish modifier",
+      "tags": [
+        "applied-design",
+        "industrial-and-product-design",
+        "monolithic-material-finish-modifier"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-118 monolithic material finish monolithic material finish modifier one continuous finish 6. industrial & product design industrial & product design monolithic material finish modifier pack_25 applied design industrial-and-product-design applied-design industrial-and-product-design monolithic-material-finish-modifier"
+    },
+    {
+      "id": "SP25-119",
+      "name": "Exploded Assembly Board",
+      "styleAnchors": [
+        "Exploded Assembly Board",
+        "product assembly design board profile",
+        "design board layout"
+      ],
+      "ref": "pack_25/SP25-119.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "industrial-and-product-design",
+      "categoryName": "6. Industrial & Product Design",
+      "domain": "product assembly design board profile",
+      "tags": [
+        "applied-design",
+        "industrial-and-product-design",
+        "product-assembly-design-board-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-119 exploded assembly board product assembly design board profile design board layout 6. industrial & product design industrial & product design product assembly design board profile pack_25 applied design industrial-and-product-design applied-design industrial-and-product-design product-assembly-design-board-profile"
+    },
+    {
+      "id": "SP25-120",
+      "name": "Repair-Access Concept",
+      "styleAnchors": [
+        "Repair-Access Concept",
+        "repair access sequence profile",
+        "three-step sequence"
+      ],
+      "ref": "pack_25/SP25-120.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "industrial-and-product-design",
+      "categoryName": "6. Industrial & Product Design",
+      "domain": "repair access sequence profile",
+      "tags": ["applied-design", "industrial-and-product-design", "repair-access-sequence-profile"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-120 repair-access concept repair access sequence profile three-step sequence 6. industrial & product design industrial & product design repair access sequence profile pack_25 applied design industrial-and-product-design applied-design industrial-and-product-design repair-access-sequence-profile"
     }
   ],
-  "totalPresetCount": 100
+  "totalPresetCount": 120
 }

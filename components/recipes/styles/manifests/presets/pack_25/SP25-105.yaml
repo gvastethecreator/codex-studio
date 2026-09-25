@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-105
+packId: pack_25
+name: Offset Capsule Assemblies
+styleAnchors:
+  - Offset Capsule Assemblies
+  - offset capsule module product
+  - offset capsules
+displayName: Offset Capsule Assemblies
+category: 6. Industrial & Product Design
+domain: offset capsule module product
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - industrial-and-product-design
+  - offset-capsule
+  - applied-design
+  - product
+  - r-prd-05
+visualDna:
+  aesthetic: 'Offset Capsule Assemblies: offset capsules and modules form one composition with clear supports and connections.'
+  subject_treatment: Compose the prompt's product from offset capsule modules with explicit supports and connections, never an arbitrary stack.
+  color_and_tone: One color per module function in a reduced palette of compatible values.
+  lighting_and_shadow: One soft common light with contact shadows that explain the assembly.
+  texture_and_material: Smooth semi-matte shells and original connectors with restrained detail.
+  camera_and_composition: Controlled offset that keeps an apparent center of support and access to controls.
+  atmosphere_and_mood: Playful asymmetry with assembly precision, balanced and stable.
+  rendering_and_quality: Clean concept render where each module keeps its function and connection.
+  creative_brief: "Offset Capsule Assemblies: offset capsules and modules form one composition with clear supports and connections. Carry it through offset capsules, clear bridges, function colors, stable support. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: offset capsules; clear bridges; function colors; stable support
+avoidRules:
+  - floating capsules
+  - modules with no connection
+  - geometry that changes between views
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: floating capsules, modules with no connection, geometry that changes between views, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: industrial-and-product-design
+  categoryName: 6. Industrial & Product Design
+  domain: offset capsule module product
+  tags:
+    - curation-v2
+    - industrial-and-product-design
+    - offset-capsule
+    - applied-design
+    - product
+    - r-prd-05
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
