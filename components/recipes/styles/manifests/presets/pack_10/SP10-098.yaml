@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP10-098
+packId: pack_10
+name: Magnetic Iron Filings
+styleAnchors:
+  - Magnetic Iron Filings
+  - iron filing field patterns
+  - aligned iron filings
+displayName: Magnetic Iron Filings
+category: 2. Fluid & Organic
+domain: iron filing field patterns
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - fluid-and-organic
+  - iron-filings
+  - magnetic
+  - fluid
+visualDna:
+  aesthetic: 'Iron filings: field lines of iron filings tracing the subject.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is traced by iron filings aligned in field lines."
+  color_and_tone: Dark grey filings on white, used consistently across subject and background.
+  lighting_and_shadow: Flat, expressed through the style rather than photographic lighting.
+  texture_and_material: Aligned filings, visible at card size as the signature of the style.
+  camera_and_composition: Field lines around forms, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Scientific, invisible-made-visible and precise, driven by the construction, color and rhythm.
+  rendering_and_quality: Crisp finish, with clean, deliberate marks and no accidental noise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Magnetic Iron Filings as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: aligned iron filings; field lines
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - adding literal liquid or smoke props to the scene
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, adding literal liquid or smoke props to the scene, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_10
+  packName: Abstract & Experimental
+  categoryId: fluid-and-organic
+  categoryName: 2. Fluid & Organic
+  tags:
+    - abstract-and-experimental
+    - fluid-and-organic
+    - iron-filings
+    - magnetic
+    - fluid
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: iron filing field patterns

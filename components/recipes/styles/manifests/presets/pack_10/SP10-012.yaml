@@ -3,7 +3,7 @@ id: SP10-012
 packId: pack_10
 name: Smoke Photography
 category: 2. Fluid & Organic
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,50 +12,22 @@ tags:
   - abstract-and-experimental
   - fluid-and-organic
 visualDna:
-  aesthetic: >-
-    Smoke Photography becomes a transferable fluid and organic behavior system: start from Wisps of
-    smoke, Black background, and Turbulence, then route prompt content through flow, branching,
-    cellular membranes, diffusion, turbulence, and living surface logic without forcing one card
-    scene.
-  subject_treatment: >-
-    Keep the user's subject recognizable while using Soft curves to bend, pool, branch, bloom,
-    spike, foam, or dissolve forms while preserving the prompt intent; preserve anatomy, object
-    identity, or scene intent beneath the abstraction.
-  color_and_tone: >-
-    Build the palette from White on Black or Colored; let hues follow fluid thickness, chemical
-    bloom, interference, biological growth, or vapor density, with enough value control that the
-    subject remains readable after the style layer is applied.
-  lighting_and_shadow: >-
-    Let Studio flash drive the light response: use reflection, translucency, subsurface scattering,
-    glow, or backlit edges to reveal fluid structure, avoiding generic glamour lighting unless the
-    prompt explicitly asks for it.
-  texture_and_material: >-
-    Render Gaseous as the tactile or mark-making basis; surfaces need coherent viscosity, membranes,
-    droplets, filaments, bubbles, grains, or particulate fields, scaled to figures, props, spaces,
-    or close material studies.
-  camera_and_composition: >-
-    Compose around Turbulence as reusable spatial grammar: favor flow direction, cellular
-    repetition, eddies, radial forces, tendrils, and macro-to-wide scalability, adapting cleanly to
-    portraits, objects, environments, and action scenes.
-  atmosphere_and_mood: >-
-    Use Mysterious, ephemeral as the emotional register; derive mood from instability, growth,
-    toxicity, delicacy, pressure, and organic motion, without flattening strong, strange, darker, or
-    adult prompt intent when it is relevant.
-  rendering_and_quality: >-
-    Resolve as High speed photo: finish with clean fluid physics, readable boundaries, and
-    restrained micro-noise, preserving prompt X as the base content and the preset as the style
-    router.
-  key_features: >-
-    Wisps of smoke; Soft curves; White on Black or Colored; Studio flash; Gaseous; Turbulence;
-    Mysterious, ephemeral; High speed photo; Black background
-  creative_brief: >-
-    Route any subject through Smoke Photography as a transferable fluid or organic process visual
-    system: preserve prompt intent while converting form, surface tension, flow, translucency, edge
-    softness, and material motion through this preset. Apply smoke-photography logic as a transform
-    over the input with soft tendrils, studio-flash rim light, turbulence trails, and
-    black-background contrast. Preserve subject legibility as vapor silhouette or contour when
-    useful; do not replace the prompt with empty smoke unless abstraction is requested.
+  aesthetic: 'Smoke photography style: the subject drawn as thin wisps of backlit smoke on black.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject's outline is traced by curling smoke filaments on black."
+  color_and_tone: White or tinted smoke on pure black, used consistently across subject and background.
+  lighting_and_shadow: Hard side backlight on smoke, expressed through the style rather than photographic lighting.
+  texture_and_material: Thin curling smoke filaments, visible at card size as the signature of the style.
+  camera_and_composition: Subject centered against black, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Ethereal, delicate, mysterious and fleeting, driven by the construction, color and rhythm.
+  rendering_and_quality: Crisp high-contrast finish, with clean, deliberate marks and no accidental noise.
+  key_features: smoke filaments tracing form; black ground
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Smoke Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
   - hard-edged clutter
   - stiff solids
   - muddy fluid mixing
@@ -63,12 +35,16 @@ avoidRules:
   - style-card boilerplate
   - muddy noise
   - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-012.webp
 attributes:
-  negativePrompt: >-
-    hard-edged clutter, stiff solids, muddy fluid mixing, literal card scene, style-card
-    boilerplate, muddy noise, watermark
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, hard-edged clutter, stiff solids, muddy fluid mixing, literal card scene, style-card boilerplate, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

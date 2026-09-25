@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP10-092
+packId: pack_10
+name: Resin Geode Pour
+styleAnchors:
+  - Resin Geode Pour
+  - resin geode art
+  - resin rings
+displayName: Resin Geode Pour
+category: 2. Fluid & Organic
+domain: resin geode art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - fluid-and-organic
+  - resin
+  - geode
+  - fluid
+visualDna:
+  aesthetic: 'Resin geode: poured resin rings with crystal centers and gold edges.'
+  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: the subject is built from concentric resin rings with crystal centers and gold veins."
+  color_and_tone: Deep blue, amethyst, white and gold, used consistently across subject and background.
+  lighting_and_shadow: Glossy reflective light, expressed through the style rather than photographic lighting.
+  texture_and_material: Glossy resin rings, crystals and gold leaf, visible at card size as the signature of the style.
+  camera_and_composition: Concentric rings following the subject, arranged so the subject still reads at card size.
+  atmosphere_and_mood: Luxurious, glossy, mineral and vivid, driven by the construction, color and rhythm.
+  rendering_and_quality: Glossy finish, with clean, deliberate marks and no accidental noise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Resin Geode Pour as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: resin rings; crystal centers; gold veins
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - adding literal liquid or smoke props to the scene
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, adding literal liquid or smoke props to the scene, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_10
+  packName: Abstract & Experimental
+  categoryId: fluid-and-organic
+  categoryName: 2. Fluid & Organic
+  tags:
+    - abstract-and-experimental
+    - fluid-and-organic
+    - resin
+    - geode
+    - fluid
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: resin geode art

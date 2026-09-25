@@ -43,6 +43,16 @@ categories:
       - pack_10/SP10-018.yaml
       - pack_10/SP10-019.yaml
       - pack_10/SP10-020.yaml
+      - pack_10/SP10-091.yaml
+      - pack_10/SP10-092.yaml
+      - pack_10/SP10-093.yaml
+      - pack_10/SP10-094.yaml
+      - pack_10/SP10-095.yaml
+      - pack_10/SP10-096.yaml
+      - pack_10/SP10-097.yaml
+      - pack_10/SP10-098.yaml
+      - pack_10/SP10-099.yaml
+      - pack_10/SP10-100.yaml
   - id: digital-glitch-and-noise
     name: 3. Digital Glitch & Noise
     presetRefs:
@@ -155,6 +165,16 @@ presetRefs:
   - pack_10/SP10-018.yaml
   - pack_10/SP10-019.yaml
   - pack_10/SP10-020.yaml
+  - pack_10/SP10-091.yaml
+  - pack_10/SP10-092.yaml
+  - pack_10/SP10-093.yaml
+  - pack_10/SP10-094.yaml
+  - pack_10/SP10-095.yaml
+  - pack_10/SP10-096.yaml
+  - pack_10/SP10-097.yaml
+  - pack_10/SP10-098.yaml
+  - pack_10/SP10-099.yaml
+  - pack_10/SP10-100.yaml
   - pack_10/SP10-021.yaml
   - pack_10/SP10-022.yaml
   - pack_10/SP10-023.yaml

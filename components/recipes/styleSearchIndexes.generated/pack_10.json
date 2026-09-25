@@ -3,7 +3,7 @@
     {
       "id": "pack_10",
       "name": "Abstract & Experimental",
-      "presetCount": 90
+      "presetCount": 100
     }
   ],
   "presets": [
@@ -411,6 +411,150 @@
       "tags": ["abstract-and-experimental", "fluid-and-organic"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp10-020 nebula cloud 2. fluid & organic fluid abstraction pack_10 abstract & experimental fluid-and-organic abstract-and-experimental fluid-and-organic"
+    },
+    {
+      "id": "SP10-091",
+      "name": "Paper Marbling",
+      "styleAnchors": ["Paper Marbling", "marbled paper pattern", "combed marbling"],
+      "ref": "pack_10/SP10-091.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "fluid-and-organic",
+      "categoryName": "2. Fluid & Organic",
+      "domain": "marbled paper pattern",
+      "tags": ["abstract-and-experimental", "fluid-and-organic", "marbled-paper-pattern"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-091 paper marbling marbled paper pattern combed marbling 2. fluid & organic fluid abstraction marbled paper pattern pack_10 abstract & experimental fluid-and-organic abstract-and-experimental fluid-and-organic marbled-paper-pattern"
+    },
+    {
+      "id": "SP10-092",
+      "name": "Resin Geode Pour",
+      "styleAnchors": ["Resin Geode Pour", "resin geode art", "resin rings"],
+      "ref": "pack_10/SP10-092.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "fluid-and-organic",
+      "categoryName": "2. Fluid & Organic",
+      "domain": "resin geode art",
+      "tags": ["abstract-and-experimental", "fluid-and-organic", "resin-geode-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-092 resin geode pour resin geode art resin rings 2. fluid & organic fluid abstraction resin geode art pack_10 abstract & experimental fluid-and-organic abstract-and-experimental fluid-and-organic resin-geode-art"
+    },
+    {
+      "id": "SP10-093",
+      "name": "Lava Lamp Blobs",
+      "styleAnchors": ["Lava Lamp Blobs", "lava lamp blobs", "glowing wax blobs"],
+      "ref": "pack_10/SP10-093.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "fluid-and-organic",
+      "categoryName": "2. Fluid & Organic",
+      "domain": "lava lamp blobs",
+      "tags": ["abstract-and-experimental", "fluid-and-organic", "lava-lamp-blobs"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-093 lava lamp blobs lava lamp blobs glowing wax blobs 2. fluid & organic fluid abstraction lava lamp blobs pack_10 abstract & experimental fluid-and-organic abstract-and-experimental fluid-and-organic lava-lamp-blobs"
+    },
+    {
+      "id": "SP10-094",
+      "name": "Dendritic Ink Growth",
+      "styleAnchors": ["Dendritic Ink Growth", "dendritic branching ink", "dendritic branching"],
+      "ref": "pack_10/SP10-094.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "fluid-and-organic",
+      "categoryName": "2. Fluid & Organic",
+      "domain": "dendritic branching ink",
+      "tags": ["abstract-and-experimental", "fluid-and-organic", "dendritic-branching-ink"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-094 dendritic ink growth dendritic branching ink dendritic branching 2. fluid & organic fluid abstraction dendritic branching ink pack_10 abstract & experimental fluid-and-organic abstract-and-experimental fluid-and-organic dendritic-branching-ink"
+    },
+    {
+      "id": "SP10-095",
+      "name": "Salt-Bloom Watercolor",
+      "styleAnchors": ["Salt-Bloom Watercolor", "salt-textured watercolor", "salt starbursts"],
+      "ref": "pack_10/SP10-095.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "fluid-and-organic",
+      "categoryName": "2. Fluid & Organic",
+      "domain": "salt-textured watercolor",
+      "tags": ["abstract-and-experimental", "fluid-and-organic", "salt-textured-watercolor"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-095 salt-bloom watercolor salt-textured watercolor salt starbursts 2. fluid & organic fluid abstraction salt-textured watercolor pack_10 abstract & experimental fluid-and-organic abstract-and-experimental fluid-and-organic salt-textured-watercolor"
+    },
+    {
+      "id": "SP10-096",
+      "name": "Coffee Stain Bloom",
+      "styleAnchors": ["Coffee Stain Bloom", "coffee and tea stain painting", "coffee washes"],
+      "ref": "pack_10/SP10-096.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "fluid-and-organic",
+      "categoryName": "2. Fluid & Organic",
+      "domain": "coffee and tea stain painting",
+      "tags": ["abstract-and-experimental", "fluid-and-organic", "coffee-and-tea-stain-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-096 coffee stain bloom coffee and tea stain painting coffee washes 2. fluid & organic fluid abstraction coffee and tea stain painting pack_10 abstract & experimental fluid-and-organic abstract-and-experimental fluid-and-organic coffee-and-tea-stain-painting"
+    },
+    {
+      "id": "SP10-097",
+      "name": "Hydro-Dip Swirl",
+      "styleAnchors": ["Hydro-Dip Swirl", "hydro-dip swirl pattern", "hydro-dip swirls"],
+      "ref": "pack_10/SP10-097.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "fluid-and-organic",
+      "categoryName": "2. Fluid & Organic",
+      "domain": "hydro-dip swirl pattern",
+      "tags": ["abstract-and-experimental", "fluid-and-organic", "hydro-dip-swirl-pattern"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-097 hydro-dip swirl hydro-dip swirl pattern hydro-dip swirls 2. fluid & organic fluid abstraction hydro-dip swirl pattern pack_10 abstract & experimental fluid-and-organic abstract-and-experimental fluid-and-organic hydro-dip-swirl-pattern"
+    },
+    {
+      "id": "SP10-098",
+      "name": "Magnetic Iron Filings",
+      "styleAnchors": [
+        "Magnetic Iron Filings",
+        "iron filing field patterns",
+        "aligned iron filings"
+      ],
+      "ref": "pack_10/SP10-098.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "fluid-and-organic",
+      "categoryName": "2. Fluid & Organic",
+      "domain": "iron filing field patterns",
+      "tags": ["abstract-and-experimental", "fluid-and-organic", "iron-filing-field-patterns"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-098 magnetic iron filings iron filing field patterns aligned iron filings 2. fluid & organic fluid abstraction iron filing field patterns pack_10 abstract & experimental fluid-and-organic abstract-and-experimental fluid-and-organic iron-filing-field-patterns"
+    },
+    {
+      "id": "SP10-099",
+      "name": "Frost Fern Crystals",
+      "styleAnchors": ["Frost Fern Crystals", "frost fern crystal growth", "frost fern crystals"],
+      "ref": "pack_10/SP10-099.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "fluid-and-organic",
+      "categoryName": "2. Fluid & Organic",
+      "domain": "frost fern crystal growth",
+      "tags": ["abstract-and-experimental", "fluid-and-organic", "frost-fern-crystal-growth"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-099 frost fern crystals frost fern crystal growth frost fern crystals 2. fluid & organic fluid abstraction frost fern crystal growth pack_10 abstract & experimental fluid-and-organic abstract-and-experimental fluid-and-organic frost-fern-crystal-growth"
+    },
+    {
+      "id": "SP10-100",
+      "name": "Liquid Light Show",
+      "styleAnchors": ["Liquid Light Show", "oil projection light show", "projected oil blobs"],
+      "ref": "pack_10/SP10-100.yaml",
+      "packId": "pack_10",
+      "packName": "Abstract & Experimental",
+      "categoryId": "fluid-and-organic",
+      "categoryName": "2. Fluid & Organic",
+      "domain": "oil projection light show",
+      "tags": ["abstract-and-experimental", "fluid-and-organic", "oil-projection-light-show"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp10-100 liquid light show oil projection light show projected oil blobs 2. fluid & organic fluid abstraction oil projection light show pack_10 abstract & experimental fluid-and-organic abstract-and-experimental fluid-and-organic oil-projection-light-show"
     },
     {
       "id": "SP10-021",
@@ -1133,5 +1277,5 @@
       "searchableText": "sp10-080 letterpress 9. print and light finishes print & light finish pack_10 abstract & experimental print-and-light-finishes abstract-and-experimental print-and-light-finishes"
     }
   ],
-  "totalPresetCount": 90
+  "totalPresetCount": 100
 }
