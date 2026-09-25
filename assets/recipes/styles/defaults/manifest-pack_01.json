@@ -6,13 +6,13 @@
     "packName": "Photography & Realism",
     "category": "1. Portrait And Studio",
     "file": "assets/recipes/styles/defaults/SP01-001.webp",
-    "jobId": "5bf09c2a-12b0-43c5-8f61-df47da36fe90",
+    "jobId": "49dc952c-4e9f-47ea-937a-884bc1788aed",
     "sourceAsset": "assets/recipes/styles/defaults/SP01-001.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T09:24:40.030Z"
+    "generatedAt": "2026-09-25T01:42:05.312Z"
   },
   {
     "presetId": "SP01-002",
@@ -21,13 +21,13 @@
     "packName": "Photography & Realism",
     "category": "1. Portrait And Studio",
     "file": "assets/recipes/styles/defaults/SP01-002.webp",
-    "jobId": "2ab0ef0f-77ee-4971-b8bb-91ee03937033",
+    "jobId": "1d14b52d-07c9-4f3d-9b8f-cf0eb2b94c75",
     "sourceAsset": "assets/recipes/styles/defaults/SP01-002.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T09:25:06.455Z"
+    "generatedAt": "2026-09-25T01:42:05.360Z"
   },
   {
     "presetId": "SP01-003",
@@ -36,13 +36,13 @@
     "packName": "Photography & Realism",
     "category": "1. Portrait And Studio",
     "file": "assets/recipes/styles/defaults/SP01-003.webp",
-    "jobId": "a3cff9e8-5c01-475c-bbca-e10eca06a6ba",
+    "jobId": "26150bc9-cffa-4af1-9be5-fcceb2bad51c",
     "sourceAsset": "assets/recipes/styles/defaults/SP01-003.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T09:25:04.152Z"
+    "generatedAt": "2026-09-25T01:43:01.030Z"
   },
   {
     "presetId": "SP01-004",
@@ -51,13 +51,13 @@
     "packName": "Photography & Realism",
     "category": "1. Portrait And Studio",
     "file": "assets/recipes/styles/defaults/SP01-004.webp",
-    "jobId": "1b7ba0d1-b1bb-4822-b75a-9188972bda74",
+    "jobId": "a9b50737-9975-48f7-aef8-1e8d7d77543c",
     "sourceAsset": "assets/recipes/styles/defaults/SP01-004.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T09:25:03.323Z"
+    "generatedAt": "2026-09-25T01:43:36.851Z"
   },
   {
     "presetId": "SP01-005",
@@ -66,13 +66,13 @@
     "packName": "Photography & Realism",
     "category": "1. Portrait And Studio",
     "file": "assets/recipes/styles/defaults/SP01-005.webp",
-    "jobId": "05bc2516-c6ed-4eef-89df-fb16af35ecd1",
+    "jobId": "cbe0f71d-1508-4ea3-9118-8d8e0d1f5de1",
     "sourceAsset": "assets/recipes/styles/defaults/SP01-005.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T09:28:01.926Z"
+    "generatedAt": "2026-09-25T01:44:18.684Z"
   },
   {
     "presetId": "SP01-006",
@@ -81,13 +81,13 @@
     "packName": "Photography & Realism",
     "category": "1. Portrait And Studio",
     "file": "assets/recipes/styles/defaults/SP01-006.webp",
-    "jobId": "a59aaf5e-cd9d-4e58-bbf5-caac7497c679",
+    "jobId": "88d5879b-8f22-41b5-8fc1-dd07b1f18138",
     "sourceAsset": "assets/recipes/styles/defaults/SP01-006.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T09:28:15.682Z"
+    "generatedAt": "2026-09-25T01:44:54.758Z"
   },
   {
     "presetId": "SP01-007",
@@ -96,13 +96,13 @@
     "packName": "Photography & Realism",
     "category": "1. Portrait And Studio",
     "file": "assets/recipes/styles/defaults/SP01-007.webp",
-    "jobId": "1563bc3b-1a34-40bc-abd0-352ba8ac769c",
+    "jobId": "f3b05064-64cc-4ce1-ab2f-0cf20038875c",
     "sourceAsset": "assets/recipes/styles/defaults/SP01-007.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T09:28:02.595Z"
+    "generatedAt": "2026-09-25T01:45:39.347Z"
   },
   {
     "presetId": "SP01-008",
@@ -111,13 +111,13 @@
     "packName": "Photography & Realism",
     "category": "1. Portrait And Studio",
     "file": "assets/recipes/styles/defaults/SP01-008.webp",
-    "jobId": "ae76e090-d3fe-47bf-9386-fe8e1cd5c8c2",
+    "jobId": "e3b7fa9c-04a2-42b8-a790-d31c5bfa691e",
     "sourceAsset": "assets/recipes/styles/defaults/SP01-008.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T09:28:09.315Z"
+    "generatedAt": "2026-09-25T01:46:22.834Z"
   },
   {
     "presetId": "SP01-009",
@@ -126,13 +126,13 @@
     "packName": "Photography & Realism",
     "category": "1. Portrait And Studio",
     "file": "assets/recipes/styles/defaults/SP01-009.webp",
-    "jobId": "f491e87b-a2fe-417b-9d29-b296ebebcd23",
+    "jobId": "fde990e4-2df6-47b1-9748-503b84101b64",
     "sourceAsset": "assets/recipes/styles/defaults/SP01-009.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T09:28:41.944Z"
+    "generatedAt": "2026-09-25T01:47:05.488Z"
   },
   {
     "presetId": "SP01-010",
@@ -141,13 +141,13 @@
     "packName": "Photography & Realism",
     "category": "1. Portrait And Studio",
     "file": "assets/recipes/styles/defaults/SP01-010.webp",
-    "jobId": "f6fc9b5f-22fb-4d93-a4df-dfbcb01c8f35",
+    "jobId": "6ef21088-36fe-4e45-817c-635393062c06",
     "sourceAsset": "assets/recipes/styles/defaults/SP01-010.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T09:28:41.890Z"
+    "generatedAt": "2026-09-25T01:47:10.326Z"
   },
   {
     "presetId": "SP01-011",
@@ -756,13 +756,13 @@
     "packName": "Photography & Realism",
     "category": "1. Portrait And Studio",
     "file": "assets/recipes/styles/defaults/SP01-051.webp",
-    "jobId": "85637249-47af-41d6-8226-1a9629fb1760",
+    "jobId": "b434660e-a1b0-4e00-83d6-cf8b21f402f6",
     "sourceAsset": "assets/recipes/styles/defaults/SP01-051.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T09:57:49.584Z"
+    "generatedAt": "2026-09-25T01:47:50.851Z"
   },
   {
     "presetId": "SP01-052",
@@ -996,13 +996,13 @@
     "packName": "Photography & Realism",
     "category": "1. Portrait And Studio",
     "file": "assets/recipes/styles/defaults/SP01-067.webp",
-    "jobId": "edbdbb3f-cfa4-4608-b4a2-2adecdfaa850",
+    "jobId": "6339ce90-d631-4774-9a7f-f903075b3256",
     "sourceAsset": "assets/recipes/styles/defaults/SP01-067.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T09:58:41.863Z"
+    "generatedAt": "2026-09-25T01:50:00.993Z"
   },
   {
     "presetId": "SP01-068",
@@ -1011,13 +1011,13 @@
     "packName": "Photography & Realism",
     "category": "1. Portrait And Studio",
     "file": "assets/recipes/styles/defaults/SP01-068.webp",
-    "jobId": "63d2b8c0-f9ab-4077-89f7-ab7e7eeb4ac9",
+    "jobId": "bcd36efb-cec4-46b7-b24e-88fce708884d",
     "sourceAsset": "assets/recipes/styles/defaults/SP01-068.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T09:57:54.106Z"
+    "generatedAt": "2026-09-25T01:48:52.326Z"
   },
   {
     "presetId": "SP01-069",
@@ -1161,13 +1161,13 @@
     "packName": "Photography & Realism",
     "category": "1. Portrait And Studio",
     "file": "assets/recipes/styles/defaults/SP01-078.webp",
-    "jobId": "a5093261-2d58-43bd-94c4-776c6d11c0b8",
+    "jobId": "2672941f-3c1d-4f72-a3f0-ea29951e20f1",
     "sourceAsset": "assets/recipes/styles/defaults/SP01-078.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T09:58:57.727Z"
+    "generatedAt": "2026-09-25T01:49:51.810Z"
   },
   {
     "presetId": "SP01-079",
@@ -1176,13 +1176,13 @@
     "packName": "Photography & Realism",
     "category": "1. Portrait And Studio",
     "file": "assets/recipes/styles/defaults/SP01-079.webp",
-    "jobId": "27bb3e20-6afb-49ee-82ab-f9ac027a8215",
+    "jobId": "a559ca27-7145-43a6-99e2-f519fe91288f",
     "sourceAsset": "assets/recipes/styles/defaults/SP01-079.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T09:58:49.554Z"
+    "generatedAt": "2026-09-25T01:51:29.636Z"
   },
   {
     "presetId": "SP01-080",
@@ -1191,13 +1191,13 @@
     "packName": "Photography & Realism",
     "category": "1. Portrait And Studio",
     "file": "assets/recipes/styles/defaults/SP01-080.webp",
-    "jobId": "82debae6-c01b-4b7a-869e-6e79705146bc",
+    "jobId": "53df21a6-1f84-4b87-a4cd-efc7967ecb01",
     "sourceAsset": "assets/recipes/styles/defaults/SP01-080.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T10:00:18.319Z"
+    "generatedAt": "2026-09-25T01:51:20.326Z"
   },
   {
     "presetId": "SP01-081",
@@ -1206,13 +1206,13 @@
     "packName": "Photography & Realism",
     "category": "1. Portrait And Studio",
     "file": "assets/recipes/styles/defaults/SP01-081.webp",
-    "jobId": "164ef1ea-eee2-4764-ac64-8327f7735e67",
+    "jobId": "1cb7f488-7e4a-42b6-8e2d-e7ac74bdb5ff",
     "sourceAsset": "assets/recipes/styles/defaults/SP01-081.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-23T09:30:12.805Z"
+    "generatedAt": "2026-09-25T01:52:14.444Z"
   },
   {
     "presetId": "SP01-082",
@@ -1303,5 +1303,35 @@
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
     "generatedAt": "2026-09-23T10:05:58.400Z"
+  },
+  {
+    "presetId": "SP01-088",
+    "presetName": "Ring Flash Portrait",
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
+    "category": "1. Portrait And Studio",
+    "file": "assets/recipes/styles/defaults/SP01-088.webp",
+    "jobId": "445b82ce-e454-4793-929d-57401fdd2100",
+    "sourceAsset": "assets/recipes/styles/defaults/SP01-088.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-25T01:53:58.757Z"
+  },
+  {
+    "presetId": "SP01-089",
+    "presetName": "Painted Muslin Backdrop Portrait",
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
+    "category": "1. Portrait And Studio",
+    "file": "assets/recipes/styles/defaults/SP01-089.webp",
+    "jobId": "6fa5e272-17f9-4a2f-9de5-008a9b49bb0d",
+    "sourceAsset": "assets/recipes/styles/defaults/SP01-089.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-25T01:53:50.969Z"
   }
 ]

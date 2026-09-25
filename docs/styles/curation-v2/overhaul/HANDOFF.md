@@ -6,11 +6,20 @@ Branch `codex/styles-consolidated`. Updated 2026-09-24. Read `AGENTS.md`, then t
 
 Make every category and preset more creative, more distinct, and less generic ("slop"). Audit every preset and its latest card. Rewrite weak DNA. Write **3 new card briefs per preset**, each fitted to the preset and its category. **Fill every category with fewer than 20 presets up to 20** (all 130 short categories, including profile/modifier ones). Old cards are cleaned only at the very end. Go slowly, one category per batch. **Skip pack_12 and pack_17** (another agent is working on them); do them last.
 
-## What the cloud agent can and cannot do
+## Process split: cloud now, local later
 
-- **Can:** audit manifests, rewrite DNA, write briefs and new presets as spec files, apply them, run `styles:*` checks and tests, commit.
-- **Cannot:** generate cards. Card generation needs the local Studio server, ChatGPT sign-in and the local SQLite library. Leave `previewStatus: pending` on new presets; the local session generates cards later.
-- **Cannot see cards as images** unless the contact sheets are committed or regenerated locally. Card defects already found are in `audits/`. Where no audit exists, audit from text and flag "visual review pending".
+**Cloud session (this handoff):** audit, edit and improve presets, write briefs. No image generation.
+
+1. Audit each category: read every manifest and look at its current cards. The card files are committed in `assets/recipes/styles/defaults/` and `defaults/variants/`; build a contact sheet with `bun docs/styles/curation-v2/overhaul/tools/sheet.ts "<pack>::<category>" /tmp/sheet.jpg` and read the image. Record every defect per preset in `audits/<pack>__<slug>.md`.
+2. Improve the presets: rewrite weak DNA, fix names that overlap, and add new presets up to 20 per category.
+3. Write **3 new briefs for every preset** (primary + variant 01 + variant 02), fitted to that preset and its category.
+4. Apply, run the checks, and commit and push one category per commit.
+
+- **Cannot:** generate cards. That needs the local Studio server, ChatGPT sign-in and the local SQLite library. New presets stay `previewStatus: pending`.
+
+**Local session (later):** `git pull`, then for each finished category run the `--card-set` generation (see "Local-only steps"), review the contact sheet, rewrite and regenerate failed briefs, remove `pending`, build thumbnails and commit. Old cards are cleaned only after the whole overhaul is done.
+
+The pilot `pack_01::1. Portrait And Studio` already has its new 3-card sets generated (committed, not yet visually reviewed). Its review belongs to the local session.
 
 ## Workflow per category (text side)
 

@@ -522,9 +522,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'ring flash donut catchlights; thin halo shadow; flat on-axis face light; saturated pop color; glossy speculars',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP01-089',
@@ -559,9 +556,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Painted Muslin Backdrop Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'hand-painted mottled muslin; glowing backdrop patch; Rembrandt-leaning soft key; painterly pose; rich midtones',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

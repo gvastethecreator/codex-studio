@@ -36,7 +36,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'photography_camera',
     kind: 'collection',
-    presetCount: 47,
+    presetCount: 49,
     imageKeys: [
       'pack_01__portrait_and_studio',
       'pack_01__documentary_and_street',
@@ -289,7 +289,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'pack_01',
     kind: 'source',
-    presetCount: 87,
+    presetCount: 89,
     imageKeys: [
       'pack_01__portrait_and_studio',
       'pack_01__lighting_techniques',
