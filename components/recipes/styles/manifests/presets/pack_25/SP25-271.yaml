@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-271
+packId: pack_25
+name: Deconstructed Uniform Lines
+styleAnchors:
+  - Deconstructed Uniform Lines
+  - open uniform-line graphic print
+  - shifted uniform lines
+displayName: Deconstructed Uniform Lines
+category: 14. Apparel & Merchandise Graphics
+domain: open uniform-line graphic print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - apparel-and-merchandise-graphics
+  - deconstructed-uniform
+  - applied-design
+  - apparel
+  - r-mer-11
+  - requested-text
+visualDna:
+  aesthetic: "Deconstructed Uniform Lines: organizing lines borrowed from uniforms, shifted, opened and recombined around the garment's existing features."
+  subject_treatment: Print open organizing lines that shift around the prompt's garment features like pockets, shoulders and hem, never becoming new seams or real insignia.
+  color_and_tone: Neutral base and one localized accent, with no rank or safety color codes.
+  lighting_and_shadow: Flat or evenly lit, shadows never faking pockets or flaps.
+  texture_and_material: Line graphics and small blocks clearly distinct from the garment build.
+  camera_and_composition: Aligned with existing shoulders, pocket and hem, with deliberate breaks.
+  atmosphere_and_mood: A deliberately incomplete order that feels sober, calm and functional.
+  rendering_and_quality: Clean print with legible lines and the cut left intact.
+  creative_brief: "Deconstructed Uniform Lines: organizing lines borrowed from uniforms, shifted, opened and recombined around the garment's existing features. Carry it through shifted uniform lines, deliberate breaks, existing features, sober accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: shifted uniform lines; deliberate breaks; existing features; sober accent
+avoidRules:
+  - real ranks
+  - invented pockets
+  - look of certified protective gear
+  - changed garment cut or seams
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: real ranks, invented pockets, look of certified protective gear, changed garment cut or seams, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: apparel-and-merchandise-graphics
+  categoryName: 14. Apparel & Merchandise Graphics
+  domain: open uniform-line graphic print
+  tags:
+    - curation-v2
+    - apparel-and-merchandise-graphics
+    - deconstructed-uniform
+    - applied-design
+    - apparel
+    - r-mer-11
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

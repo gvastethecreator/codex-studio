@@ -3,7 +3,7 @@
     {
       "id": "pack_25",
       "name": "Applied Design",
-      "presetCount": 260
+      "presetCount": 280
     }
   ],
   "presets": [
@@ -4682,7 +4682,403 @@
       "tags": ["applied-design", "surface-and-textile-design", "pattern-colorway-family-profile"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp25-260 colorway family study pattern colorway family profile equal colorway panels 13. surface & textile design surface & textile design pattern colorway family profile pack_25 applied design surface-and-textile-design applied-design surface-and-textile-design pattern-colorway-family-profile"
+    },
+    {
+      "id": "SP25-261",
+      "name": "Seam-Aware Topography",
+      "styleAnchors": [
+        "Seam-Aware Topography",
+        "seam-following band print",
+        "seam-following bands"
+      ],
+      "ref": "pack_25/SP25-261.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "apparel-and-merchandise-graphics",
+      "categoryName": "14. Apparel & Merchandise Graphics",
+      "domain": "seam-following band print",
+      "tags": ["applied-design", "apparel-and-merchandise-graphics", "seam-following-band-print"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-261 seam-aware topography seam-following band print seam-following bands 14. apparel & merchandise graphics apparel & merch graphics seam-following band print pack_25 applied design apparel-and-merchandise-graphics applied-design apparel-and-merchandise-graphics seam-following-band-print"
+    },
+    {
+      "id": "SP25-262",
+      "name": "Data-Encoded Textile Marks",
+      "styleAnchors": [
+        "Data-Encoded Textile Marks",
+        "data-count garment print",
+        "one mark per unit"
+      ],
+      "ref": "pack_25/SP25-262.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "apparel-and-merchandise-graphics",
+      "categoryName": "14. Apparel & Merchandise Graphics",
+      "domain": "data-count garment print",
+      "tags": ["applied-design", "apparel-and-merchandise-graphics", "data-count-garment-print"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-262 data-encoded textile marks data-count garment print one mark per unit 14. apparel & merchandise graphics apparel & merch graphics data-count garment print pack_25 applied design apparel-and-merchandise-graphics applied-design apparel-and-merchandise-graphics data-count-garment-print"
+    },
+    {
+      "id": "SP25-263",
+      "name": "Overscale Placement Graphics",
+      "styleAnchors": [
+        "Overscale Placement Graphics",
+        "oversized placement print",
+        "oversized motif"
+      ],
+      "ref": "pack_25/SP25-263.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "apparel-and-merchandise-graphics",
+      "categoryName": "14. Apparel & Merchandise Graphics",
+      "domain": "oversized placement print",
+      "tags": ["applied-design", "apparel-and-merchandise-graphics", "oversized-placement-print"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-263 overscale placement graphics oversized placement print oversized motif 14. apparel & merchandise graphics apparel & merch graphics oversized placement print pack_25 applied design apparel-and-merchandise-graphics applied-design apparel-and-merchandise-graphics oversized-placement-print"
+    },
+    {
+      "id": "SP25-264",
+      "name": "Patch-Cluster Systems",
+      "styleAnchors": ["Patch-Cluster Systems", "modular patch set", "patch family"],
+      "ref": "pack_25/SP25-264.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "apparel-and-merchandise-graphics",
+      "categoryName": "14. Apparel & Merchandise Graphics",
+      "domain": "modular patch set",
+      "tags": ["applied-design", "apparel-and-merchandise-graphics", "modular-patch-set"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-264 patch-cluster systems modular patch set patch family 14. apparel & merchandise graphics apparel & merch graphics modular patch set pack_25 applied design apparel-and-merchandise-graphics applied-design apparel-and-merchandise-graphics modular-patch-set"
+    },
+    {
+      "id": "SP25-265",
+      "name": "Stitch-Direction Lettering",
+      "styleAnchors": [
+        "Stitch-Direction Lettering",
+        "embroidered lettering by stitch flow",
+        "stitch-flow lettering"
+      ],
+      "ref": "pack_25/SP25-265.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "apparel-and-merchandise-graphics",
+      "categoryName": "14. Apparel & Merchandise Graphics",
+      "domain": "embroidered lettering by stitch flow",
+      "tags": [
+        "applied-design",
+        "apparel-and-merchandise-graphics",
+        "embroidered-lettering-by-stitch-flow"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-265 stitch-direction lettering embroidered lettering by stitch flow stitch-flow lettering 14. apparel & merchandise graphics apparel & merch graphics embroidered lettering by stitch flow pack_25 applied design apparel-and-merchandise-graphics applied-design apparel-and-merchandise-graphics embroidered-lettering-by-stitch-flow"
+    },
+    {
+      "id": "SP25-266",
+      "name": "Split-Panel Team Graphics",
+      "styleAnchors": [
+        "Split-Panel Team Graphics",
+        "panel-based team kit graphic",
+        "panel-led bands"
+      ],
+      "ref": "pack_25/SP25-266.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "apparel-and-merchandise-graphics",
+      "categoryName": "14. Apparel & Merchandise Graphics",
+      "domain": "panel-based team kit graphic",
+      "tags": [
+        "applied-design",
+        "apparel-and-merchandise-graphics",
+        "panel-based-team-kit-graphic"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-266 split-panel team graphics panel-based team kit graphic panel-led bands 14. apparel & merchandise graphics apparel & merch graphics panel-based team kit graphic pack_25 applied design apparel-and-merchandise-graphics applied-design apparel-and-merchandise-graphics panel-based-team-kit-graphic"
+    },
+    {
+      "id": "SP25-267",
+      "name": "Negative-Space Garment Prints",
+      "styleAnchors": [
+        "Negative-Space Garment Prints",
+        "unprinted-fabric figure print",
+        "fabric as figure"
+      ],
+      "ref": "pack_25/SP25-267.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "apparel-and-merchandise-graphics",
+      "categoryName": "14. Apparel & Merchandise Graphics",
+      "domain": "unprinted-fabric figure print",
+      "tags": [
+        "applied-design",
+        "apparel-and-merchandise-graphics",
+        "unprinted-fabric-figure-print"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-267 negative-space garment prints unprinted-fabric figure print fabric as figure 14. apparel & merchandise graphics apparel & merch graphics unprinted-fabric figure print pack_25 applied design apparel-and-merchandise-graphics applied-design apparel-and-merchandise-graphics unprinted-fabric-figure-print"
+    },
+    {
+      "id": "SP25-268",
+      "name": "Serial Label Street Graphics",
+      "styleAnchors": [
+        "Serial Label Street Graphics",
+        "serial label typographic print",
+        "label layout"
+      ],
+      "ref": "pack_25/SP25-268.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "apparel-and-merchandise-graphics",
+      "categoryName": "14. Apparel & Merchandise Graphics",
+      "domain": "serial label typographic print",
+      "tags": [
+        "applied-design",
+        "apparel-and-merchandise-graphics",
+        "serial-label-typographic-print"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-268 serial label street graphics serial label typographic print label layout 14. apparel & merchandise graphics apparel & merch graphics serial label typographic print pack_25 applied design apparel-and-merchandise-graphics applied-design apparel-and-merchandise-graphics serial-label-typographic-print"
+    },
+    {
+      "id": "SP25-269",
+      "name": "Sleeve-to-Body Continuity",
+      "styleAnchors": [
+        "Sleeve-to-Body Continuity",
+        "sleeve to torso continuous print",
+        "sleeve-to-body path"
+      ],
+      "ref": "pack_25/SP25-269.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "apparel-and-merchandise-graphics",
+      "categoryName": "14. Apparel & Merchandise Graphics",
+      "domain": "sleeve to torso continuous print",
+      "tags": [
+        "applied-design",
+        "apparel-and-merchandise-graphics",
+        "sleeve-to-torso-continuous-print"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-269 sleeve-to-body continuity sleeve to torso continuous print sleeve-to-body path 14. apparel & merchandise graphics apparel & merch graphics sleeve to torso continuous print pack_25 applied design apparel-and-merchandise-graphics applied-design apparel-and-merchandise-graphics sleeve-to-torso-continuous-print"
+    },
+    {
+      "id": "SP25-270",
+      "name": "Woven Badge Silhouettes",
+      "styleAnchors": ["Woven Badge Silhouettes", "woven badge emblem design", "woven badge"],
+      "ref": "pack_25/SP25-270.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "apparel-and-merchandise-graphics",
+      "categoryName": "14. Apparel & Merchandise Graphics",
+      "domain": "woven badge emblem design",
+      "tags": ["applied-design", "apparel-and-merchandise-graphics", "woven-badge-emblem-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-270 woven badge silhouettes woven badge emblem design woven badge 14. apparel & merchandise graphics apparel & merch graphics woven badge emblem design pack_25 applied design apparel-and-merchandise-graphics applied-design apparel-and-merchandise-graphics woven-badge-emblem-design"
+    },
+    {
+      "id": "SP25-271",
+      "name": "Deconstructed Uniform Lines",
+      "styleAnchors": [
+        "Deconstructed Uniform Lines",
+        "open uniform-line graphic print",
+        "shifted uniform lines"
+      ],
+      "ref": "pack_25/SP25-271.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "apparel-and-merchandise-graphics",
+      "categoryName": "14. Apparel & Merchandise Graphics",
+      "domain": "open uniform-line graphic print",
+      "tags": [
+        "applied-design",
+        "apparel-and-merchandise-graphics",
+        "open-uniform-line-graphic-print"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-271 deconstructed uniform lines open uniform-line graphic print shifted uniform lines 14. apparel & merchandise graphics apparel & merch graphics open uniform-line graphic print pack_25 applied design apparel-and-merchandise-graphics applied-design apparel-and-merchandise-graphics open-uniform-line-graphic-print"
+    },
+    {
+      "id": "SP25-272",
+      "name": "Pocket-Frame Compositions",
+      "styleAnchors": [
+        "Pocket-Frame Compositions",
+        "pocket-anchored print composition",
+        "pocket as frame"
+      ],
+      "ref": "pack_25/SP25-272.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "apparel-and-merchandise-graphics",
+      "categoryName": "14. Apparel & Merchandise Graphics",
+      "domain": "pocket-anchored print composition",
+      "tags": [
+        "applied-design",
+        "apparel-and-merchandise-graphics",
+        "pocket-anchored-print-composition"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-272 pocket-frame compositions pocket-anchored print composition pocket as frame 14. apparel & merchandise graphics apparel & merch graphics pocket-anchored print composition pack_25 applied design apparel-and-merchandise-graphics applied-design apparel-and-merchandise-graphics pocket-anchored-print-composition"
+    },
+    {
+      "id": "SP25-273",
+      "name": "Hand-Drawn Metric Patterns",
+      "styleAnchors": [
+        "Hand-Drawn Metric Patterns",
+        "hand-drawn count mark pattern",
+        "hand-drawn units"
+      ],
+      "ref": "pack_25/SP25-273.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "apparel-and-merchandise-graphics",
+      "categoryName": "14. Apparel & Merchandise Graphics",
+      "domain": "hand-drawn count mark pattern",
+      "tags": [
+        "applied-design",
+        "apparel-and-merchandise-graphics",
+        "hand-drawn-count-mark-pattern"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-273 hand-drawn metric patterns hand-drawn count mark pattern hand-drawn units 14. apparel & merchandise graphics apparel & merch graphics hand-drawn count mark pattern pack_25 applied design apparel-and-merchandise-graphics applied-design apparel-and-merchandise-graphics hand-drawn-count-mark-pattern"
+    },
+    {
+      "id": "SP25-274",
+      "name": "Modular Merch Families",
+      "styleAnchors": ["Modular Merch Families", "modular merch system", "shared pieces"],
+      "ref": "pack_25/SP25-274.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "apparel-and-merchandise-graphics",
+      "categoryName": "14. Apparel & Merchandise Graphics",
+      "domain": "modular merch system",
+      "tags": ["applied-design", "apparel-and-merchandise-graphics", "modular-merch-system"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-274 modular merch families modular merch system shared pieces 14. apparel & merchandise graphics apparel & merch graphics modular merch system pack_25 applied design apparel-and-merchandise-graphics applied-design apparel-and-merchandise-graphics modular-merch-system"
+    },
+    {
+      "id": "SP25-275",
+      "name": "Contour-Wrap Lettering",
+      "styleAnchors": [
+        "Contour-Wrap Lettering",
+        "surface-following merch lettering",
+        "curve-following word"
+      ],
+      "ref": "pack_25/SP25-275.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "apparel-and-merchandise-graphics",
+      "categoryName": "14. Apparel & Merchandise Graphics",
+      "domain": "surface-following merch lettering",
+      "tags": [
+        "applied-design",
+        "apparel-and-merchandise-graphics",
+        "surface-following-merch-lettering"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-275 contour-wrap lettering surface-following merch lettering curve-following word 14. apparel & merchandise graphics apparel & merch graphics surface-following merch lettering pack_25 applied design apparel-and-merchandise-graphics applied-design apparel-and-merchandise-graphics surface-following-merch-lettering"
+    },
+    {
+      "id": "SP25-276",
+      "name": "Faded Ink Finish",
+      "styleAnchors": ["Faded Ink Finish", "worn print finish modifier", "controlled ink loss"],
+      "ref": "pack_25/SP25-276.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "apparel-and-merchandise-graphics",
+      "categoryName": "14. Apparel & Merchandise Graphics",
+      "domain": "worn print finish modifier",
+      "tags": ["applied-design", "apparel-and-merchandise-graphics", "worn-print-finish-modifier"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-276 faded ink finish worn print finish modifier controlled ink loss 14. apparel & merchandise graphics apparel & merch graphics worn print finish modifier pack_25 applied design apparel-and-merchandise-graphics applied-design apparel-and-merchandise-graphics worn-print-finish-modifier"
+    },
+    {
+      "id": "SP25-277",
+      "name": "Embroidery Relief Finish",
+      "styleAnchors": [
+        "Embroidery Relief Finish",
+        "embroidery relief finish modifier",
+        "raised thread"
+      ],
+      "ref": "pack_25/SP25-277.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "apparel-and-merchandise-graphics",
+      "categoryName": "14. Apparel & Merchandise Graphics",
+      "domain": "embroidery relief finish modifier",
+      "tags": [
+        "applied-design",
+        "apparel-and-merchandise-graphics",
+        "embroidery-relief-finish-modifier"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-277 embroidery relief finish embroidery relief finish modifier raised thread 14. apparel & merchandise graphics apparel & merch graphics embroidery relief finish modifier pack_25 applied design apparel-and-merchandise-graphics applied-design apparel-and-merchandise-graphics embroidery-relief-finish-modifier"
+    },
+    {
+      "id": "SP25-278",
+      "name": "Front-Back Placement Layout",
+      "styleAnchors": [
+        "Front-Back Placement Layout",
+        "front and back placement profile",
+        "front and back"
+      ],
+      "ref": "pack_25/SP25-278.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "apparel-and-merchandise-graphics",
+      "categoryName": "14. Apparel & Merchandise Graphics",
+      "domain": "front and back placement profile",
+      "tags": [
+        "applied-design",
+        "apparel-and-merchandise-graphics",
+        "front-and-back-placement-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-278 front-back placement layout front and back placement profile front and back 14. apparel & merchandise graphics apparel & merch graphics front and back placement profile pack_25 applied design apparel-and-merchandise-graphics applied-design apparel-and-merchandise-graphics front-and-back-placement-profile"
+    },
+    {
+      "id": "SP25-279",
+      "name": "Size-Range Placement Trial",
+      "styleAnchors": [
+        "Size-Range Placement Trial",
+        "print across size range profile",
+        "three sizes"
+      ],
+      "ref": "pack_25/SP25-279.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "apparel-and-merchandise-graphics",
+      "categoryName": "14. Apparel & Merchandise Graphics",
+      "domain": "print across size range profile",
+      "tags": [
+        "applied-design",
+        "apparel-and-merchandise-graphics",
+        "print-across-size-range-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-279 size-range placement trial print across size range profile three sizes 14. apparel & merchandise graphics apparel & merch graphics print across size range profile pack_25 applied design apparel-and-merchandise-graphics applied-design apparel-and-merchandise-graphics print-across-size-range-profile"
+    },
+    {
+      "id": "SP25-280",
+      "name": "Flat-Art and Mockup Pair",
+      "styleAnchors": [
+        "Flat-Art and Mockup Pair",
+        "flat art and applied mockup pair profile",
+        "flat master"
+      ],
+      "ref": "pack_25/SP25-280.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "apparel-and-merchandise-graphics",
+      "categoryName": "14. Apparel & Merchandise Graphics",
+      "domain": "flat art and applied mockup pair profile",
+      "tags": [
+        "applied-design",
+        "apparel-and-merchandise-graphics",
+        "flat-art-and-applied-mockup-pair-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-280 flat-art and mockup pair flat art and applied mockup pair profile flat master 14. apparel & merchandise graphics apparel & merch graphics flat art and applied mockup pair profile pack_25 applied design apparel-and-merchandise-graphics applied-design apparel-and-merchandise-graphics flat-art-and-applied-mockup-pair-profile"
     }
   ],
-  "totalPresetCount": 260
+  "totalPresetCount": 280
 }

@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-274
+packId: pack_25
+name: Modular Merch Families
+styleAnchors:
+  - Modular Merch Families
+  - modular merch system
+  - shared pieces
+displayName: Modular Merch Families
+category: 14. Apparel & Merchandise Graphics
+domain: modular merch system
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - apparel-and-merchandise-graphics
+  - modular-merch
+  - applied-design
+  - apparel
+  - r-mer-14
+  - requested-text
+visualDna:
+  aesthetic: 'Modular Merch Families: one vocabulary of shared pieces adapted to tees, totes and small objects with common weights and hierarchy.'
+  subject_treatment: Build the prompt's merch range from one small set of shared pieces, rearranged per product with the same proportions, and every word exact.
+  color_and_tone: A common palette with stable roles across every product.
+  lighting_and_shadow: Comparable, even presentation light on every product in the range.
+  texture_and_material: Base art independent of material with finishes noted as application.
+  camera_and_composition: Main and secondary pieces rearranged per product without stretching.
+  atmosphere_and_mood: A recognizable yet flexible family, varied by arrangement.
+  rendering_and_quality: Clean set with constant proportions and traceable pieces.
+  creative_brief: "Modular Merch Families: one vocabulary of shared pieces adapted to tees, totes and small objects with common weights and hierarchy. Carry it through shared pieces, rearranged per product, common palette, exact words. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: shared pieces; rearranged per product; common palette; exact words
+avoidRules:
+  - each product counted as a new style
+  - redrawn symbols
+  - logos distorted to fit
+  - changed garment cut or seams
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: each product counted as a new style, redrawn symbols, logos distorted to fit, changed garment cut or seams, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: apparel-and-merchandise-graphics
+  categoryName: 14. Apparel & Merchandise Graphics
+  domain: modular merch system
+  tags:
+    - curation-v2
+    - apparel-and-merchandise-graphics
+    - modular-merch
+    - applied-design
+    - apparel
+    - r-mer-14
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

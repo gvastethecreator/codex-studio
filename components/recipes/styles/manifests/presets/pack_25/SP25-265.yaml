@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-265
+packId: pack_25
+name: Stitch-Direction Lettering
+styleAnchors:
+  - Stitch-Direction Lettering
+  - embroidered lettering by stitch flow
+  - stitch-flow lettering
+displayName: Stitch-Direction Lettering
+category: 14. Apparel & Merchandise Graphics
+domain: embroidered lettering by stitch flow
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - apparel-and-merchandise-graphics
+  - stitch-lettering
+  - applied-design
+  - apparel
+  - r-mer-05
+  - requested-text
+visualDna:
+  aesthetic: 'Stitch-Direction Lettering: apparent stitch direction follows every stem and curve of the exact word, changing flow at joins and keeping counters open.'
+  subject_treatment: Render the requested word as apparent embroidery whose stitch direction follows each stem and curve, counters open and every character exact.
+  color_and_tone: One or two thread tones on a background that keeps the counters readable.
+  lighting_and_shadow: Soft raking light showing relief without closing thin stems.
+  texture_and_material: Visual stitches aligned to each stem with contained edges.
+  camera_and_composition: The full word with optical spacing and a safe area around it.
+  atmosphere_and_mood: Disciplined tactility, the thread following the letter faithfully.
+  rendering_and_quality: Clean lettering with open counters and smooth stitch transitions.
+  creative_brief: "Stitch-Direction Lettering: apparent stitch direction follows every stem and curve of the exact word, changing flow at joins and keeping counters open. Carry it through stitch-flow lettering, open counters, raised thread, exact word. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stitch-flow lettering; open counters; raised thread; exact word
+avoidRules:
+  - swapped text
+  - random crossing stitches
+  - claims of a machine-ready file
+  - changed garment cut or seams
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: swapped text, random crossing stitches, claims of a machine-ready file, changed garment cut or seams, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: apparel-and-merchandise-graphics
+  categoryName: 14. Apparel & Merchandise Graphics
+  domain: embroidered lettering by stitch flow
+  tags:
+    - curation-v2
+    - apparel-and-merchandise-graphics
+    - stitch-lettering
+    - applied-design
+    - apparel
+    - r-mer-05
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

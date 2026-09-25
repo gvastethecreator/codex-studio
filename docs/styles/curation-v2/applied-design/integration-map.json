@@ -1553,64 +1553,124 @@
       "category": "13. Surface & Textile Design"
     },
     "R-MER-01": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-261",
+      "name": "Seam-Aware Topography",
+      "category": "14. Apparel & Merchandise Graphics"
     },
     "R-MER-02": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-262",
+      "name": "Data-Encoded Textile Marks",
+      "category": "14. Apparel & Merchandise Graphics"
     },
     "R-MER-03": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-263",
+      "name": "Overscale Placement Graphics",
+      "category": "14. Apparel & Merchandise Graphics"
     },
     "R-MER-04": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-264",
+      "name": "Patch-Cluster Systems",
+      "category": "14. Apparel & Merchandise Graphics"
     },
     "R-MER-05": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-265",
+      "name": "Stitch-Direction Lettering",
+      "category": "14. Apparel & Merchandise Graphics"
     },
     "R-MER-06": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-266",
+      "name": "Split-Panel Team Graphics",
+      "category": "14. Apparel & Merchandise Graphics"
     },
     "R-MER-07": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-267",
+      "name": "Negative-Space Garment Prints",
+      "category": "14. Apparel & Merchandise Graphics"
     },
     "R-MER-08": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-268",
+      "name": "Serial Label Street Graphics",
+      "category": "14. Apparel & Merchandise Graphics"
     },
     "R-MER-09": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-269",
+      "name": "Sleeve-to-Body Continuity",
+      "category": "14. Apparel & Merchandise Graphics"
     },
     "R-MER-10": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-270",
+      "name": "Woven Badge Silhouettes",
+      "category": "14. Apparel & Merchandise Graphics"
     },
     "R-MER-11": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-271",
+      "name": "Deconstructed Uniform Lines",
+      "category": "14. Apparel & Merchandise Graphics"
     },
     "R-MER-12": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-272",
+      "name": "Pocket-Frame Compositions",
+      "category": "14. Apparel & Merchandise Graphics"
     },
     "R-MER-13": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-273",
+      "name": "Hand-Drawn Metric Patterns",
+      "category": "14. Apparel & Merchandise Graphics"
     },
     "R-MER-14": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-274",
+      "name": "Modular Merch Families",
+      "category": "14. Apparel & Merchandise Graphics"
     },
     "R-MER-15": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-275",
+      "name": "Contour-Wrap Lettering",
+      "category": "14. Apparel & Merchandise Graphics"
     },
     "R-MER-16": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-276",
+      "name": "Faded Ink Finish",
+      "category": "14. Apparel & Merchandise Graphics"
     },
     "R-MER-17": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-277",
+      "name": "Embroidery Relief Finish",
+      "category": "14. Apparel & Merchandise Graphics"
     },
     "R-MER-18": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-278",
+      "name": "Front-Back Placement Layout",
+      "category": "14. Apparel & Merchandise Graphics"
     },
     "R-MER-19": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-279",
+      "name": "Size-Range Placement Trial",
+      "category": "14. Apparel & Merchandise Graphics"
     },
     "R-MER-20": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-280",
+      "name": "Flat-Art and Mockup Pair",
+      "category": "14. Apparel & Merchandise Graphics"
     },
     "R-ENV-01": {
       "status": "pending"

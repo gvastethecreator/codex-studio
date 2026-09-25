@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-264
+packId: pack_25
+name: Patch-Cluster Systems
+styleAnchors:
+  - Patch-Cluster Systems
+  - modular patch set
+  - patch family
+displayName: Patch-Cluster Systems
+category: 14. Apparel & Merchandise Graphics
+domain: modular patch set
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - apparel-and-merchandise-graphics
+  - patch-cluster
+  - applied-design
+  - apparel
+  - r-mer-04
+  - requested-text
+visualDna:
+  aesthetic: 'Patch-Cluster Systems: independent patches sharing proportions, edge treatment and spacing rules, assembled into one modular set.'
+  subject_treatment: Design the prompt's patches as a modular family with shared proportions and edges, clustered by hierarchy on the garment, every word exact.
+  color_and_tone: Two main colors and one accent by function across all patches.
+  lighting_and_shadow: Flat art for the layout with optional raised patch relief.
+  texture_and_material: Wide borders and simplified original symbols with subordinate stitching.
+  camera_and_composition: Clear hierarchy of main, secondary and index patch within placement zones.
+  atmosphere_and_mood: A coherent collection, deliberately gathered and worn like small trophies.
+  rendering_and_quality: Clean patch set with legible contours and constant margins.
+  creative_brief: "Patch-Cluster Systems: independent patches sharing proportions, edge treatment and spacing rules, assembled into one modular set. Carry it through patch family, shared borders, clustered hierarchy, exact words. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: patch family; shared borders; clustered hierarchy; exact words
+avoidRules:
+  - institutional insignia as filler
+  - other brands
+  - cloned shields
+  - changed garment cut or seams
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: institutional insignia as filler, other brands, cloned shields, changed garment cut or seams, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: apparel-and-merchandise-graphics
+  categoryName: 14. Apparel & Merchandise Graphics
+  domain: modular patch set
+  tags:
+    - curation-v2
+    - apparel-and-merchandise-graphics
+    - patch-cluster
+    - applied-design
+    - apparel
+    - r-mer-04
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

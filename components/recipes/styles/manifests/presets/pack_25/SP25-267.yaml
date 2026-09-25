@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-267
+packId: pack_25
+name: Negative-Space Garment Prints
+styleAnchors:
+  - Negative-Space Garment Prints
+  - unprinted-fabric figure print
+  - fabric as figure
+displayName: Negative-Space Garment Prints
+category: 14. Apparel & Merchandise Graphics
+domain: unprinted-fabric figure print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - apparel-and-merchandise-graphics
+  - negative-garment
+  - applied-design
+  - apparel
+  - r-mer-07
+  - requested-text
+visualDna:
+  aesthetic: 'Negative-Space Garment Prints: unprinted fabric becomes part of the motif, forming a second figure against the ink.'
+  subject_treatment: Print the prompt's garment so the unprinted fabric forms a second figure between ink masses, the reserves showing the true fabric color.
+  color_and_tone: Strong ink-to-fabric contrast, the reserve exactly the garment color.
+  lighting_and_shadow: Flat art first, with even mockup light so shadows never read as gaps.
+  texture_and_material: Solid controlled ink and clean voids showing the real weave.
+  camera_and_composition: Off-center motif with openings protected from seams and folds.
+  atmosphere_and_mood: Print economy and a clear, satisfying double reading of the motif.
+  rendering_and_quality: Clean print with an explicit ink mask and true transparency.
+  creative_brief: "Negative-Space Garment Prints: unprinted fabric becomes part of the motif, forming a second figure against the ink. Carry it through fabric as figure, ink masses, double reading, true reserves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: fabric as figure; ink masses; double reading; true reserves
+avoidRules:
+  - painted background faking a reserve
+  - gaps closed when applied
+  - changed garment cut or seams
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: painted background faking a reserve, gaps closed when applied, changed garment cut or seams, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: apparel-and-merchandise-graphics
+  categoryName: 14. Apparel & Merchandise Graphics
+  domain: unprinted-fabric figure print
+  tags:
+    - curation-v2
+    - apparel-and-merchandise-graphics
+    - negative-garment
+    - applied-design
+    - apparel
+    - r-mer-07
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-268
+packId: pack_25
+name: Serial Label Street Graphics
+styleAnchors:
+  - Serial Label Street Graphics
+  - serial label typographic print
+  - label layout
+displayName: Serial Label Street Graphics
+category: 14. Apparel & Merchandise Graphics
+domain: serial label typographic print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - apparel-and-merchandise-graphics
+  - serial-label
+  - applied-design
+  - apparel
+  - r-mer-08
+  - requested-text
+visualDna:
+  aesthetic: 'Serial Label Street Graphics: typographic blocks, indexes and rules arranged like a series label, with a clear reading hierarchy.'
+  subject_treatment: Arrange the prompt's exact words, series numbers and rules into a label-like typographic print, with no invented legal, barcode or authenticity text.
+  color_and_tone: A restricted print palette with one accent marking the series.
+  lighting_and_shadow: Flat typography with a sober mockup keeping the text exact.
+  texture_and_material: Flat ink, clear printed rules and numerals that are easy to tell apart.
+  camera_and_composition: Dominant title, a vertical index and legible secondary lines.
+  atmosphere_and_mood: A contemporary documentary character with calm pauses between the blocks.
+  rendering_and_quality: Clean typographic print with aligned blocks and checked copy.
+  creative_brief: "Serial Label Street Graphics: typographic blocks, indexes and rules arranged like a series label, with a clear reading hierarchy. Carry it through label layout, series index, ruled blocks, exact copy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: label layout; series index; ruled blocks; exact copy
+avoidRules:
+  - invented legal labels
+  - fake security codes
+  - illegible decorative micro text
+  - changed garment cut or seams
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: invented legal labels, fake security codes, illegible decorative micro text, changed garment cut or seams, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: apparel-and-merchandise-graphics
+  categoryName: 14. Apparel & Merchandise Graphics
+  domain: serial label typographic print
+  tags:
+    - curation-v2
+    - apparel-and-merchandise-graphics
+    - serial-label
+    - applied-design
+    - apparel
+    - r-mer-08
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

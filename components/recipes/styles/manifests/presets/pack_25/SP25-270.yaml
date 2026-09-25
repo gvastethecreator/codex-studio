@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-270
+packId: pack_25
+name: Woven Badge Silhouettes
+styleAnchors:
+  - Woven Badge Silhouettes
+  - woven badge emblem design
+  - woven badge
+displayName: Woven Badge Silhouettes
+category: 14. Apparel & Merchandise Graphics
+domain: woven badge emblem design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - apparel-and-merchandise-graphics
+  - woven-badge
+  - applied-design
+  - apparel
+  - r-mer-10
+  - requested-text
+visualDna:
+  aesthetic: 'Woven Badge Silhouettes: compact original emblems with broad containing borders and an apparent woven texture.'
+  subject_treatment: Design the prompt's emblem as a compact silhouette with a wide border and few planes, shown as a woven badge, any requested text exact.
+  color_and_tone: Two or three thread colors with clear value separation.
+  lighting_and_shadow: Moderate side light across the weave with a readable front.
+  texture_and_material: Woven texture in a coherent direction with the contour set by the shape.
+  camera_and_composition: Dominant figure, inner reserve and a stable border shape.
+  atmosphere_and_mood: Robust presence that still reads clearly at a small badge size.
+  rendering_and_quality: Clean badge with intact borders and open gaps.
+  creative_brief: "Woven Badge Silhouettes: compact original emblems with broad containing borders and an apparent woven texture. Carry it through woven badge, compact silhouette, wide border, few planes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: woven badge; compact silhouette; wide border; few planes
+avoidRules:
+  - generic badge with new material
+  - borrowed insignia
+  - claims of production-ready weaving
+  - changed garment cut or seams
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: generic badge with new material, borrowed insignia, claims of production-ready weaving, changed garment cut or seams, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: apparel-and-merchandise-graphics
+  categoryName: 14. Apparel & Merchandise Graphics
+  domain: woven badge emblem design
+  tags:
+    - curation-v2
+    - apparel-and-merchandise-graphics
+    - woven-badge
+    - applied-design
+    - apparel
+    - r-mer-10
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

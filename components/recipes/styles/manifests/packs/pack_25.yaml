@@ -308,6 +308,29 @@ categories:
       - pack_25/SP25-258.yaml
       - pack_25/SP25-259.yaml
       - pack_25/SP25-260.yaml
+  - id: apparel-and-merchandise-graphics
+    name: 14. Apparel & Merchandise Graphics
+    presetRefs:
+      - pack_25/SP25-261.yaml
+      - pack_25/SP25-262.yaml
+      - pack_25/SP25-263.yaml
+      - pack_25/SP25-264.yaml
+      - pack_25/SP25-265.yaml
+      - pack_25/SP25-266.yaml
+      - pack_25/SP25-267.yaml
+      - pack_25/SP25-268.yaml
+      - pack_25/SP25-269.yaml
+      - pack_25/SP25-270.yaml
+      - pack_25/SP25-271.yaml
+      - pack_25/SP25-272.yaml
+      - pack_25/SP25-273.yaml
+      - pack_25/SP25-274.yaml
+      - pack_25/SP25-275.yaml
+      - pack_25/SP25-276.yaml
+      - pack_25/SP25-277.yaml
+      - pack_25/SP25-278.yaml
+      - pack_25/SP25-279.yaml
+      - pack_25/SP25-280.yaml
 presetRefs:
   - pack_25/SP25-001.yaml
   - pack_25/SP25-002.yaml
@@ -569,3 +592,23 @@ presetRefs:
   - pack_25/SP25-258.yaml
   - pack_25/SP25-259.yaml
   - pack_25/SP25-260.yaml
+  - pack_25/SP25-261.yaml
+  - pack_25/SP25-262.yaml
+  - pack_25/SP25-263.yaml
+  - pack_25/SP25-264.yaml
+  - pack_25/SP25-265.yaml
+  - pack_25/SP25-266.yaml
+  - pack_25/SP25-267.yaml
+  - pack_25/SP25-268.yaml
+  - pack_25/SP25-269.yaml
+  - pack_25/SP25-270.yaml
+  - pack_25/SP25-271.yaml
+  - pack_25/SP25-272.yaml
+  - pack_25/SP25-273.yaml
+  - pack_25/SP25-274.yaml
+  - pack_25/SP25-275.yaml
+  - pack_25/SP25-276.yaml
+  - pack_25/SP25-277.yaml
+  - pack_25/SP25-278.yaml
+  - pack_25/SP25-279.yaml
+  - pack_25/SP25-280.yaml

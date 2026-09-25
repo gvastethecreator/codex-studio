@@ -2563,5 +2563,20 @@
     "evidencePresetIds": ["SP25-241", "SP25-242", "SP25-243"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_25",
+    "category": "14. Apparel & Merchandise Graphics",
+    "displayCategory": "Apparel & merch graphics",
+    "kind": "mixed",
+    "expectedCount": 20,
+    "baselineHash": "9c3da976433b386faefb5257753e0f67465e0db86125f941fc42534cb38d50f8",
+    "problem": "Apparel graphics must place and build prints around a real garment without changing its cut or seams, without banning requested text, and without copying teams, insignia, brands or legal labels.",
+    "preserve": "Garment cut, seams, pockets, requested words, numbers and counts stay exact; each style keeps its placement or print logic (seam-following bands, data marks, oversized placement, patch families, stitch-flow lettering, panel team kit, fabric reserves, serial labels, sleeve-to-body path, woven badges, shifted uniform lines, pocket frames, hand-drawn counts, modular merch, contour lettering).",
+    "proposedAction": "Applied-design import: 15 apparel print styles, faded ink and embroidery relief modifiers that keep the input artwork, the front-back placement profile, and the size-range and flat-art pair recipes as sheet profiles; requested-text policy and three new fictional band, club and team briefs per preset.",
+    "validation": "Generate each card, then compare the flat art with the applied garment, check every letter and number and that seams, pockets and cut are unchanged; test a tee, a hoodie, a tote and a cap.",
+    "evidencePresetIds": ["SP25-261", "SP25-262", "SP25-263"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

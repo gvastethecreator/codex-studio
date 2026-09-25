@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-275
+packId: pack_25
+name: Contour-Wrap Lettering
+styleAnchors:
+  - Contour-Wrap Lettering
+  - surface-following merch lettering
+  - curve-following word
+displayName: Contour-Wrap Lettering
+category: 14. Apparel & Merchandise Graphics
+domain: surface-following merch lettering
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - apparel-and-merchandise-graphics
+  - contour-wrap
+  - applied-design
+  - apparel
+  - r-mer-15
+  - requested-text
+visualDna:
+  aesthetic: 'Contour-Wrap Lettering: exact lettering distributed along a real contour of the product, letters and spaces adjusted rather than stretched.'
+  subject_treatment: Run the requested words along an authorized curve of the prompt's product, adjusting spacing instead of stretching letters, every character and accent exact.
+  color_and_tone: Constant contrast between letters and base along the whole path.
+  lighting_and_shadow: Flat lettering art kept separate from the lit mockup.
+  texture_and_material: Crisp letter edges and an even finish, the source art unchanged.
+  camera_and_composition: A declared start, direction and end, with no key letter hidden.
+  atmosphere_and_mood: A wrapping reading with pauses at each change of plane.
+  rendering_and_quality: Clean lettering with the whole word intact in flat and applied views.
+  creative_brief: "Contour-Wrap Lettering: exact lettering distributed along a real contour of the product, letters and spaces adjusted rather than stretched. Carry it through curve-following word, adjusted spacing, flat art, exact characters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: curve-following word; adjusted spacing; flat art; exact characters
+avoidRules:
+  - inverted text
+  - stretched letters
+  - final art taken from a distorted photo
+  - changed garment cut or seams
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: inverted text, stretched letters, final art taken from a distorted photo, changed garment cut or seams, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: apparel-and-merchandise-graphics
+  categoryName: 14. Apparel & Merchandise Graphics
+  domain: surface-following merch lettering
+  tags:
+    - curation-v2
+    - apparel-and-merchandise-graphics
+    - contour-wrap
+    - applied-design
+    - apparel
+    - r-mer-15
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
