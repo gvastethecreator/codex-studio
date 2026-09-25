@@ -3,7 +3,7 @@ id: SP08-002
 packId: pack_08
 name: Streetwear Hypebeast
 category: 2. Subcultures
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,66 +12,23 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: >-
-    Streetwear Hypebeast operates as a portable fashion-costume router: combine Streetwear hype
-    grammar, capsule-drop exclusivity, sneaker culture pressure with subcultural dress-code logic
-    with identity signals, music or scene memory, attitude, and symbolic styling pressure, so the
-    preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal
-    garment sample.
-  subject_treatment: >-
-    Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize,
-    cuff, patch, distress, polish, exaggerate, or accessorize through Oversized silhouette, boxy
-    hoodie cut, dropped shoulders, wide-leg cargo; identity stays readable as silhouette, fit,
-    layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.
-  color_and_tone: >-
-    Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals,
-    high-contrast trims, and era-coded saturation; keep textile values separated, accents
-    intentional, material color believable, and palette behavior attached to the subject instead of
-    pasted wardrobe decoration.
-  lighting_and_shadow: >-
-    Use Harsh direct flash, nighttime bounce, billboard-color glow, social-feed contrast plus club,
-    daylight, editorial, neon, chrome, or DIY light cues that reveal texture and attitude without
-    forcing a venue as the styling light contract, revealing cut, drape, surface response, trim,
-    transparency, or armor structure without erasing prompt readability.
-  texture_and_material: >-
-    Render Heavyweight cotton, ripstop nylon, pebbled leather, retroreflective tape, mesh paneling
-    plus denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery,
-    print, and worn textile history; keep fabric scale, seams, fibers, shine, opacity, folds,
-    hardware, elemental edges, or body-surface treatment coherent across the whole prompt.
-  camera_and_composition: >-
-    Compose with Oversized drop-culture massing, sneaker-scale emphasis and flash-compressed
-    streetwear silhouette plus attitude-led silhouette, accessory grouping, dress-code readability,
-    body-line rhythm, and reusable styling emphasis as reusable fashion framing grammar, allowing
-    portraits, objects, creatures, environments, action, and abstract prompts to inherit styling
-    without one required pose.
-  atmosphere_and_mood: >-
-    Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade
-    culture, or academic/intellectual taste; the tone should feel specific to Streetwear Hypebeast
-    while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
-    supplied.
-  rendering_and_quality: >-
-    Finish with authentic subculture styling, material age, clear identity cues, and no
-    costume-party caricature unless requested; prioritize clean style recognition, believable
-    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
-    accidental UI.
-  key_features: >-
-    Streetwear hype grammar, capsule-drop exclusivity, sneaker culture pressure; Oversized
-    silhouette, boxy hoodie cut, dropped shoulders, wide-leg cargo; Heavyweight cotton, ripstop
-    nylon, pebbled leather, retroreflective tape, mesh paneling; Harsh direct flash, nighttime
-    bounce, billboard-color glow, social-feed contrast; Oversized drop-culture massing,
-    sneaker-scale emphasis and flash-compressed streetwear silhouette
-  creative_brief: >-
-    Use Streetwear Hypebeast after prompt X as a transferable fashion/costume layer: prompt X
-    supplies subject, motion, setting, tone, and intensity, while the preset supplies Streetwear
-    hype grammar, capsule-drop exclusivity, sneaker culture pressure, Oversized silhouette, boxy
-    hoodie cut, dropped shoulders, wide-leg cargo, Heavyweight cotton, ripstop nylon, pebbled
-    leather, retroreflective tape, mesh paneling, Harsh direct flash, nighttime bounce,
-    billboard-color glow, social-feed contrast, Oversized drop-culture massing, sneaker-scale
-    emphasis and flash-compressed streetwear silhouette plus signature layers, footwear cues, hair
-    volume, accessory codes, patches, hardware, textile wear, and stance-driven silhouette, palette
-    behavior, light response, material treatment, silhouette grammar, and finish discipline without
-    requiring one body type, fixed outfit, venue, prop bundle, or card composition.
+  aesthetic: 'Streetwear hype styling: oversized drop-shoulder layers, heavyweight hoodies, graphic-free statement pieces and coveted sneakers stacked with attitude.'
+  subject_treatment: 'Redress the prompt''s wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: oversized heavyweight hoodie or boxy jacket, baggy cargo or track pants, chunky statement sneakers, crossbody bag and a beanie or cap worn low.'
+  color_and_tone: Washed black, bone, olive and one loud accent such as safety orange or electric blue.
+  lighting_and_shadow: Hard urban daylight or flash with strong contrast, shaped to reveal garment cut, drape, texture and fit on the wearer.
+  texture_and_material: Heavyweight fleece, nylon shells, ripstop cargo and suede-and-mesh sneakers.
+  camera_and_composition: Low-angle full figure emphasizing sneakers and oversized silhouette, keeping the full outfit silhouette and fit readable at card size.
+  atmosphere_and_mood: Confident, cool, collectible and street-proud, carried by the wearer's posture, styling and attitude.
+  rendering_and_quality: Crisp, high-contrast street editorial finish, with believable fabric weight, seams and fit detail.
+  key_features: oversized drop-shoulder layers; chunky statement sneakers; crossbody bag; washed black with loud accent; low-angle framing
+  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Streetwear Hypebeast as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
 avoidRules:
+  - brand logo
+  - readable label text
+  - real designer or celebrity likeness
+  - generic catalog outfit
+  - bad garment fit
+  - sneaker brand marks
   - suit
   - formal
   - old
@@ -86,13 +43,17 @@ avoidRules:
   - muddy fabric noise
   - watermark
   - readable text
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-002.webp
 attributes:
-  negativePrompt: >-
-    suit, formal, old, readable branding, costume-party parody, random trend mix, brand-logo
-    collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy
-    fabric noise, watermark, readable text
+  negativePrompt: brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, sneaker brand marks, suit, formal, old, readable branding, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

@@ -3,7 +3,7 @@ id: SP08-008
 packId: pack_08
 name: Punk Rock
 category: 2. Subcultures
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,61 +12,23 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: >-
-    Punk Rock operates as a portable fashion-costume router: combine 1970s punk insurrection, DIY
-    anarchy boutique, anti-polish refusal with subcultural dress-code logic with identity signals,
-    music or scene memory, attitude, and symbolic styling pressure, so the preset supplies styling
-    behavior rather than a fixed outfit card, required wearer, or literal garment sample.
-  subject_treatment: >-
-    Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize,
-    cuff, patch, distress, polish, exaggerate, or accessorize through Ripped, torn, pinned, shredded
-    asymmetry, bondage-strap tension, drainpipe jeans; identity stays readable as silhouette, fit,
-    layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.
-  color_and_tone: >-
-    Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals,
-    high-contrast trims, and era-coded saturation; keep textile values separated, accents
-    intentional, material color believable, and palette behavior attached to the subject instead of
-    pasted wardrobe decoration.
-  lighting_and_shadow: >-
-    Use Flash bulb, harsh paparazzi pop, sweat-sheen glare, basement-gig strobe plus club, daylight,
-    editorial, neon, chrome, or DIY light cues that reveal texture and attitude without forcing a
-    venue as the styling light contract, revealing cut, drape, surface response, trim, transparency,
-    or armor structure without erasing prompt readability.
-  texture_and_material: >-
-    Render Destroyed denim, cone studs, safety pins, painted leather, gaffer tape, abstract tartan
-    patches plus denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware,
-    embroidery, print, and worn textile history; keep fabric scale, seams, fibers, shine, opacity,
-    folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.
-  camera_and_composition: >-
-    Compose with Jagged punk silhouette distortion plus attitude-led silhouette, accessory grouping,
-    dress-code readability, body-line rhythm, and reusable styling emphasis as reusable fashion
-    framing grammar, allowing portraits, objects, creatures, environments, action, and abstract
-    prompts to inherit styling without one required pose.
-  atmosphere_and_mood: >-
-    Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade
-    culture, or academic/intellectual taste; the tone should feel specific to Punk Rock while still
-    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
-  rendering_and_quality: >-
-    Finish with authentic subculture styling, material age, clear identity cues, and no
-    costume-party caricature unless requested; prioritize clean style recognition, believable
-    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
-    accidental UI.
-  key_features: >-
-    1970s punk insurrection, DIY anarchy boutique, anti-polish refusal; Ripped, torn, pinned,
-    shredded asymmetry, bondage-strap tension, drainpipe jeans; Destroyed denim, cone studs, safety
-    pins, painted leather, gaffer tape, abstract tartan patches; Flash bulb, harsh paparazzi pop,
-    sweat-sheen glare, basement-gig strobe; Jagged punk silhouette distortion
-  creative_brief: >-
-    Use Punk Rock after prompt X as a transferable fashion/costume layer: prompt X supplies subject,
-    motion, setting, tone, and intensity, while the preset supplies 1970s punk insurrection, DIY
-    anarchy boutique, anti-polish refusal, Ripped, torn, pinned, shredded asymmetry, bondage-strap
-    tension, drainpipe jeans, Destroyed denim, cone studs, safety pins, painted leather, gaffer
-    tape, abstract tartan patches, Flash bulb, harsh paparazzi pop, sweat-sheen glare, basement-gig
-    strobe, Jagged punk silhouette distortion plus signature layers, footwear cues, hair volume,
-    accessory codes, patches, hardware, textile wear, and stance-driven silhouette, palette
-    behavior, light response, material treatment, silhouette grammar, and finish discipline without
-    requiring one body type, fixed outfit, venue, prop bundle, or card composition.
+  aesthetic: '1970s punk: DIY insurrection clothing — ripped and safety-pinned tees, studded leather, tartan bondage trousers and spiked hair.'
+  subject_treatment: 'Redress the prompt''s wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a ripped or hand-painted shirt held with safety pins, studded leather jacket, tartan or bondage trousers, heavy boots, chains and spiked or dyed hair.'
+  color_and_tone: Black, red tartan, bleach white and one shock color in the hair.
+  lighting_and_shadow: Harsh flash or grimy club light, shaped to reveal garment cut, drape, texture and fit on the wearer.
+  texture_and_material: Worn leather, studs, safety pins, ripped cotton, tartan wool and metal chains.
+  camera_and_composition: Aggressive, close or full figure with energy, keeping the full outfit silhouette and fit readable at card size.
+  atmosphere_and_mood: Rebellious, raw, loud and anti-establishment, carried by the wearer's posture, styling and attitude.
+  rendering_and_quality: Gritty, contrasty finish, with believable fabric weight, seams and fit detail.
+  key_features: safety pins and rips; studded leather; tartan bondage trousers; spiked dyed hair; harsh flash
+  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Punk Rock as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
 avoidRules:
+  - brand logo
+  - readable label text
+  - real designer or celebrity likeness
+  - generic catalog outfit
+  - bad garment fit
+  - readable slogans
   - clean
   - expensive
   - nice
@@ -80,13 +42,17 @@ avoidRules:
   - muddy fabric noise
   - watermark
   - readable text
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-008.webp
 attributes:
-  negativePrompt: >-
-    clean, expensive, nice, costume-party parody, random trend mix, brand-logo collage, fixed
-    outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise,
-    watermark, readable text
+  negativePrompt: brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, readable slogans, clean, expensive, nice, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

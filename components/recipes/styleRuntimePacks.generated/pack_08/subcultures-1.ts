@@ -8,28 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Boho Festival',
     category: '2. Subcultures',
     negativePrompt:
-      'suit, strict, dark, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, suit, strict, dark, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Boho Festival operates as a portable fashion-costume router: combine Sunlit bohemian layering, handcrafted wanderer romance, fringe-and-lace reverie with subcultural dress-code logic with identity signals, music or scene memory, attitude, and symbolic styling pressure, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Boho festival style: sun-faded layers of flowing prints, fringe, crochet and handmade jewelry worn loose for dancing outdoors.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize, cuff, patch, distress, polish, exaggerate, or accessorize through Flowing layers, fringe cascades, tiered drape, bell-sleeve billow, relaxed artisan ease; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: flowing printed maxi dress or wide trousers, crochet or fringed layer, suede boots or sandals, stacked beaded and silver jewelry, and a flower or feather accent.",
       color_and_tone:
-        'Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals, high-contrast trims, and era-coded saturation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Sun-bleached terracotta, mustard, sage, cream and turquoise, applied to garments and accessories while skin, setting and props keep their natural color.',
       lighting_and_shadow:
-        'Use Golden hour sun, lens flare warmth, backlit halo, dust-mote glow plus club, daylight, editorial, neon, chrome, or DIY light cues that reveal texture and attitude without forcing a venue as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Low golden-hour backlight with dust and lens glow, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material:
-        'Render Lace, crochet, denim, eyelet cotton, macrame knots, worn-in suede, cheesecloth gauze plus denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery, print, and worn textile history; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Crochet, suede fringe, cotton voile, embroidery, beads and hammered silver.',
       camera_and_composition:
-        'Compose with Compose for Boho Festival using its key spatial cues: Accessories (hats, jewelry), layered necklaces, wide-brim felt hat, turquoise rings plus attitude-led silhouette, accessory grouping, dress-code readability, body-line rhythm, and reusable styling emphasis as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Loose, joyful full figure in open air, keeping the full outfit silhouette and fit readable at card size.',
       atmosphere_and_mood:
-        "Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade culture, or academic/intellectual taste; the tone should feel specific to Boho Festival while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Free, sunny, romantic and wandering, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with authentic subculture styling, material age, clear identity cues, and no costume-party caricature unless requested; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Warm, hazy, film-like finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        'Sunlit bohemian layering, handcrafted wanderer romance, fringe-and-lace reverie; Flowing layers, fringe cascades, tiered drape, bell-sleeve billow, relaxed artisan ease; Lace, crochet, denim, eyelet cotton, macrame knots, worn-in suede, cheesecloth gauze; Golden hour sun, lens flare warmth, backlit halo, dust-mote glow; Compose for Boho Festival using its key spatial cues: Accessories (hats, jewelry), layered necklaces, wide-brim felt hat, turquoise rings',
+        'flowing printed layers; fringe and crochet; stacked beaded jewelry; sun-bleached palette; golden backlight',
       creative_brief:
-        'Use Boho Festival after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Sunlit bohemian layering, handcrafted wanderer romance, fringe-and-lace reverie, Flowing layers, fringe cascades, tiered drape, bell-sleeve billow, relaxed artisan ease, Lace, crochet, denim, eyelet cotton, macrame knots, worn-in suede, cheesecloth gauze, Golden hour sun, lens flare warmth, backlit halo, dust-mote glow, Compose for Boho Festival using its key spatial cues: Accessories (hats, jewelry), layered necklaces, wide-brim felt hat, turquoise rings plus signature layers, footwear cues, hair volume, accessory codes, patches, hardware, textile wear, and stance-driven silhouette, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Boho Festival as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +37,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Streetwear Hypebeast',
     category: '2. Subcultures',
     negativePrompt:
-      'suit, formal, old, readable branding, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, sneaker brand marks, suit, formal, old, readable branding, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Streetwear Hypebeast operates as a portable fashion-costume router: combine Streetwear hype grammar, capsule-drop exclusivity, sneaker culture pressure with subcultural dress-code logic with identity signals, music or scene memory, attitude, and symbolic styling pressure, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Streetwear hype styling: oversized drop-shoulder layers, heavyweight hoodies, graphic-free statement pieces and coveted sneakers stacked with attitude.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize, cuff, patch, distress, polish, exaggerate, or accessorize through Oversized silhouette, boxy hoodie cut, dropped shoulders, wide-leg cargo; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: oversized heavyweight hoodie or boxy jacket, baggy cargo or track pants, chunky statement sneakers, crossbody bag and a beanie or cap worn low.",
       color_and_tone:
-        'Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals, high-contrast trims, and era-coded saturation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Washed black, bone, olive and one loud accent such as safety orange or electric blue.',
       lighting_and_shadow:
-        'Use Harsh direct flash, nighttime bounce, billboard-color glow, social-feed contrast plus club, daylight, editorial, neon, chrome, or DIY light cues that reveal texture and attitude without forcing a venue as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Hard urban daylight or flash with strong contrast, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material:
-        'Render Heavyweight cotton, ripstop nylon, pebbled leather, retroreflective tape, mesh paneling plus denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery, print, and worn textile history; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Heavyweight fleece, nylon shells, ripstop cargo and suede-and-mesh sneakers.',
       camera_and_composition:
-        'Compose with Oversized drop-culture massing, sneaker-scale emphasis and flash-compressed streetwear silhouette plus attitude-led silhouette, accessory grouping, dress-code readability, body-line rhythm, and reusable styling emphasis as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Low-angle full figure emphasizing sneakers and oversized silhouette, keeping the full outfit silhouette and fit readable at card size.',
       atmosphere_and_mood:
-        "Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade culture, or academic/intellectual taste; the tone should feel specific to Streetwear Hypebeast while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Confident, cool, collectible and street-proud, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with authentic subculture styling, material age, clear identity cues, and no costume-party caricature unless requested; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Crisp, high-contrast street editorial finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        'Streetwear hype grammar, capsule-drop exclusivity, sneaker culture pressure; Oversized silhouette, boxy hoodie cut, dropped shoulders, wide-leg cargo; Heavyweight cotton, ripstop nylon, pebbled leather, retroreflective tape, mesh paneling; Harsh direct flash, nighttime bounce, billboard-color glow, social-feed contrast; Oversized drop-culture massing, sneaker-scale emphasis and flash-compressed streetwear silhouette',
+        'oversized drop-shoulder layers; chunky statement sneakers; crossbody bag; washed black with loud accent; low-angle framing',
       creative_brief:
-        'Use Streetwear Hypebeast after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Streetwear hype grammar, capsule-drop exclusivity, sneaker culture pressure, Oversized silhouette, boxy hoodie cut, dropped shoulders, wide-leg cargo, Heavyweight cotton, ripstop nylon, pebbled leather, retroreflective tape, mesh paneling, Harsh direct flash, nighttime bounce, billboard-color glow, social-feed contrast, Oversized drop-culture massing, sneaker-scale emphasis and flash-compressed streetwear silhouette plus signature layers, footwear cues, hair volume, accessory codes, patches, hardware, textile wear, and stance-driven silhouette, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Streetwear Hypebeast as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +66,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Field Utility Textile',
     category: '2. Subcultures',
     negativePrompt:
-      'bright, delicate, clean, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, military insignia, bright, delicate, clean, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Field Utility Textile operates as a portable fashion-costume router: combine Field utility textile styling, expedition-readiness logic, rugged utility silhouette with subcultural dress-code logic with identity signals, music or scene memory, attitude, and symbolic styling pressure, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Field utility textile styling: workwear and military-surplus pieces worn as fashion — multi-pocket jackets, canvas, webbing belts and sturdy boots.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize, cuff, patch, distress, polish, exaggerate, or accessorize through Boxy utility blocks, pocket density, modular grid, carrier-like bulk, bloused taper; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals, high-contrast trims, and era-coded saturation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a multi-pocket field or chore jacket, canvas or ripstop trousers, webbing belt, sturdy lace-up boots and a utility pouch or canvas bag.",
+      color_and_tone: 'Olive drab, khaki, brown duck canvas, faded navy and rust.',
       lighting_and_shadow:
-        'Use Harsh outdoor, high-noon sun, dust-haze diffusion, overcast tactical grey plus club, daylight, editorial, neon, chrome, or DIY light cues that reveal texture and attitude without forcing a venue as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Heavy canvas, abrasion-resistant nylon, dirt, parkerized metal, coated technical fabric plus denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery, print, and worn textile history; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Overcast field daylight with honest shadow, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material: 'Waxed cotton, duck canvas, ripstop, webbing, brass snaps and leather.',
       camera_and_composition:
-        'Compose with attitude-led silhouette, accessory grouping, dress-code readability, body-line rhythm, and reusable styling emphasis as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Practical full figure in working or outdoor settings, keeping the full outfit silhouette and fit readable at card size.',
       atmosphere_and_mood:
-        "Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade culture, or academic/intellectual taste; the tone should feel specific to Field Utility Textile while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Capable, rugged, practical and quietly stylish, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with authentic subculture styling, material age, clear identity cues, and no costume-party caricature unless requested; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Matte, textured finish with visible wear, with believable fabric weight, seams and fit detail.',
       key_features:
-        'Field utility textile styling, expedition-readiness logic, rugged utility silhouette; Boxy utility blocks, pocket density, modular grid, carrier-like bulk, bloused taper; Heavy canvas, abrasion-resistant nylon, dirt, parkerized metal, coated technical fabric; Harsh outdoor, high-noon sun, dust-haze diffusion, overcast tactical grey; attitude-led silhouette, accessory grouping, dress-code readability, body-line rhythm, and reusable styling emphasis',
+        'multi-pocket field jacket; duck canvas; webbing belt; lace-up boots; olive and khaki palette',
       creative_brief:
-        'Use Field Utility Textile after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Field utility textile styling, expedition-readiness logic, rugged utility silhouette, Boxy utility blocks, pocket density, modular grid, carrier-like bulk, bloused taper, Heavy canvas, abrasion-resistant nylon, dirt, parkerized metal, coated technical fabric, Harsh outdoor, high-noon sun, dust-haze diffusion, overcast tactical grey, attitude-led silhouette, accessory grouping, dress-code readability, body-line rhythm, and reusable styling emphasis plus signature layers, footwear cues, hair volume, accessory codes, patches, hardware, textile wear, and stance-driven silhouette, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Field Utility Textile as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +93,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cottagecore',
     category: '2. Subcultures',
     negativePrompt:
-      'urban, modern, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, urban, modern, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cottagecore operates as a portable fashion-costume router: combine Cottagecore pastoral styling, rural-romance daydream, handmade softness with subcultural dress-code logic with identity signals, music or scene memory, attitude, and symbolic styling pressure, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Cottagecore: romantic rural wardrobe — puff-sleeve prairie dresses, aprons, knitted cardigans, straw hats and embroidered florals.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize, cuff, patch, distress, polish, exaggerate, or accessorize through Soft rural dress logic, empire-waist rise, puff-sleeve volume, midi hem drift, apron-tie cinch; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals, high-contrast trims, and era-coded saturation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a puff-sleeve prairie or smocked dress, linen apron or knitted cardigan, straw hat or headscarf, and simple leather boots or clogs.",
+      color_and_tone: 'Cream, sage, faded rose, butter yellow and small calico florals.',
       lighting_and_shadow:
-        'Use Golden hour warmth, dappled shade, morning-dew sparkle, soft backlight plus club, daylight, editorial, neon, chrome, or DIY light cues that reveal texture and attitude without forcing a venue as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Soft morning sunlight through leaves, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material:
-        'Render Linen, cotton muslin, eyelet, soft gauze, knit shawl, woven straw, raw silk plus denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery, print, and worn textile history; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Linen, cotton calico, hand-knit wool, straw and embroidery, rendered with correct weave, weight, sheen and stitching.',
       camera_and_composition:
-        'Compose with Compose for Cottagecore using its key spatial cues: Apron-tie logic, woven-straw texture, straw-hat brim cue, lace-up bodice, ribbon ties plus attitude-led silhouette, accessory grouping, dress-code readability, body-line rhythm, and reusable styling emphasis as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Gentle full figure in garden, meadow or kitchen, keeping the full outfit silhouette and fit readable at card size.',
       atmosphere_and_mood:
-        "Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade culture, or academic/intellectual taste; the tone should feel specific to Cottagecore while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Tender, nostalgic, pastoral and calm, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with authentic subculture styling, material age, clear identity cues, and no costume-party caricature unless requested; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Soft, dreamy, warm finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        'Cottagecore pastoral styling, rural-romance daydream, handmade softness; Soft rural dress logic, empire-waist rise, puff-sleeve volume, midi hem drift, apron-tie cinch; Linen, cotton muslin, eyelet, soft gauze, knit shawl, woven straw, raw silk; Golden hour warmth, dappled shade, morning-dew sparkle, soft backlight; Compose for Cottagecore using its key spatial cues: Apron-tie logic, woven-straw texture, straw-hat brim cue, lace-up bodice, ribbon ties',
+        'puff-sleeve prairie dress; linen apron; straw hat; calico florals; soft morning light',
       creative_brief:
-        'Use Cottagecore after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Cottagecore pastoral styling, rural-romance daydream, handmade softness, Soft rural dress logic, empire-waist rise, puff-sleeve volume, midi hem drift, apron-tie cinch, Linen, cotton muslin, eyelet, soft gauze, knit shawl, woven straw, raw silk, Golden hour warmth, dappled shade, morning-dew sparkle, soft backlight, Compose for Cottagecore using its key spatial cues: Apron-tie logic, woven-straw texture, straw-hat brim cue, lace-up bodice, ribbon ties plus signature layers, footwear cues, hair volume, accessory codes, patches, hardware, textile wear, and stance-driven silhouette, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cottagecore as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +121,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rockabilly',
     category: '2. Subcultures',
     negativePrompt:
-      'modern, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, car brand marks, modern, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Rockabilly operates as a portable fashion-costume router: combine 50s rockabilly Americana, hot-rod romance, rebel polish with subcultural dress-code logic with identity signals, music or scene memory, attitude, and symbolic styling pressure, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        '1950s rockabilly: hot-rod Americana wardrobe — cuffed selvedge jeans, bowling shirts, swing dresses, leather jackets and pompadours or victory rolls.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize, cuff, patch, distress, polish, exaggerate, or accessorize through Cuffed jeans, leather, motorcycle-jacket taper, pencil-skirt curve, victory-roll volume; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: cuffed dark jeans with a rolled tee or bowling shirt and leather jacket, or a polka-dot swing dress with petticoat; pompadour or victory-roll hair and saddle shoes or creepers.",
       color_and_tone:
-        'Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals, high-contrast trims, and era-coded saturation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Cherry red, black, cream, turquoise and polka-dot white, applied to garments and accessories while skin, setting and props keep their natural color.',
       lighting_and_shadow:
-        'Use Sunny chrome-gleam reflections, warm neon accent, afternoon-sun flare plus club, daylight, editorial, neon, chrome, or DIY light cues that reveal texture and attitude without forcing a venue as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Warm diner neon or sunny chrome glare, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material:
-        'Render Horsehide leather, raw selvedge denim, cotton bandana, pomade shine, swallow-embroidered satin plus denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery, print, and worn textile history; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Selvedge denim, leather, rayon, polka-dot cotton and chrome, rendered with correct weave, weight, sheen and stitching.',
       camera_and_composition:
-        'Compose with horsehide leather, cuffed denim, pomade gloss, victory-roll volume, swallow embroidery, sailor-ink cues and chrome-red contrast plus attitude-led silhouette, accessory grouping, dress-code readability, body-line rhythm, and reusable styling emphasis as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Confident full figure, often leaning or mid-dance, keeping the full outfit silhouette and fit readable at card size.',
       atmosphere_and_mood:
-        "Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade culture, or academic/intellectual taste; the tone should feel specific to Rockabilly while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Swaggering, flirtatious, retro and fun, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with authentic subculture styling, material age, clear identity cues, and no costume-party caricature unless requested; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Saturated, glossy retro finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        '50s rockabilly Americana, hot-rod romance, rebel polish; Cuffed jeans, leather, motorcycle-jacket taper, pencil-skirt curve, victory-roll volume; Horsehide leather, raw selvedge denim, cotton bandana, pomade shine, swallow-embroidered satin; Sunny chrome-gleam reflections, warm neon accent, afternoon-sun flare; horsehide leather, cuffed denim, pomade gloss, victory-roll volume, swallow embroidery, sailor-ink cues and chrome-red contrast',
+        'cuffed jeans and leather jacket; polka-dot swing dress; pompadour and victory rolls; cherry red and turquoise',
       creative_brief:
-        'Use Rockabilly after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies 50s rockabilly Americana, hot-rod romance, rebel polish, Cuffed jeans, leather, motorcycle-jacket taper, pencil-skirt curve, victory-roll volume, Horsehide leather, raw selvedge denim, cotton bandana, pomade shine, swallow-embroidered satin, Sunny chrome-gleam reflections, warm neon accent, afternoon-sun flare, horsehide leather, cuffed denim, pomade gloss, victory-roll volume, swallow embroidery, sailor-ink cues and chrome-red contrast plus signature layers, footwear cues, hair volume, accessory codes, patches, hardware, textile wear, and stance-driven silhouette, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rockabilly as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +150,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Pastel Goth',
     category: '2. Subcultures',
     negativePrompt:
-      'flat monochrome goth with no pastel contrast, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, flat monochrome goth with no pastel contrast, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Pastel Goth operates as a portable fashion-costume router: combine Creepy cute, kawaii-goth hybrid, sweet-nightmare aesthetic with subcultural dress-code logic with identity signals, music or scene memory, attitude, and symbolic styling pressure, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Pastel goth: creepy-cute fusion of goth silhouettes in candy pastels — platform shoes, spiked chokers, bat and skull motifs in lilac and mint.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize, cuff, patch, distress, polish, exaggerate, or accessorize through Spikes + Bows, A-line skirt, choker tightness, platform-sole elevation, puffed sleeve; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals, high-contrast trims, and era-coded saturation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: pastel-colored goth pieces — babydoll or pleated dress, pastel faux-fur or cardigan, platform creepers, spiked choker, bat or skull accessories and pastel hair.",
+      color_and_tone: 'Lilac, mint, baby pink and baby blue with black accents.',
       lighting_and_shadow:
-        'Use Soft diffused daylight, candy-colored gels, Halloween fairy-light sparkle plus club, daylight, editorial, neon, chrome, or DIY light cues that reveal texture and attitude without forcing a venue as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Patent leather, black lace overlay, pastel tulle, holographic PVC, spiderweb fishnet plus denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery, print, and worn textile history; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Soft, bright, slightly dreamy light, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material: 'Faux fur, vinyl, lace, spikes, plastic charms and glitter.',
       camera_and_composition:
-        'Compose with Compose for Pastel Goth using its key spatial cues: Pastel-goth contrast, optional bat-wing cues, bow accents, occult jewelry, platform mass plus attitude-led silhouette, accessory grouping, dress-code readability, body-line rhythm, and reusable styling emphasis as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Playful full figure with cute-creepy props, keeping the full outfit silhouette and fit readable at card size.',
       atmosphere_and_mood:
-        "Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade culture, or academic/intellectual taste; the tone should feel specific to Pastel Goth while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Cute, spooky, ironic and whimsical, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with authentic subculture styling, material age, clear identity cues, and no costume-party caricature unless requested; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Soft, clean, pastel finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        'Creepy cute, kawaii-goth hybrid, sweet-nightmare aesthetic; Spikes + Bows, A-line skirt, choker tightness, platform-sole elevation, puffed sleeve; Patent leather, black lace overlay, pastel tulle, holographic PVC, spiderweb fishnet; Soft diffused daylight, candy-colored gels, Halloween fairy-light sparkle; Compose for Pastel Goth using its key spatial cues: Pastel-goth contrast, optional bat-wing cues, bow accents, occult jewelry, platform mass',
+        'goth silhouettes in pastels; platform creepers; spiked choker; bat and skull charms; pastel hair',
       creative_brief:
-        'Use Pastel Goth after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Creepy cute, kawaii-goth hybrid, sweet-nightmare aesthetic, Spikes + Bows, A-line skirt, choker tightness, platform-sole elevation, puffed sleeve, Patent leather, black lace overlay, pastel tulle, holographic PVC, spiderweb fishnet, Soft diffused daylight, candy-colored gels, Halloween fairy-light sparkle, Compose for Pastel Goth using its key spatial cues: Pastel-goth contrast, optional bat-wing cues, bow accents, occult jewelry, platform mass plus signature layers, footwear cues, hair volume, accessory codes, patches, hardware, textile wear, and stance-driven silhouette, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pastel Goth as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +177,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Punk Rock',
     category: '2. Subcultures',
     negativePrompt:
-      'clean, expensive, nice, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, readable slogans, clean, expensive, nice, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Punk Rock operates as a portable fashion-costume router: combine 1970s punk insurrection, DIY anarchy boutique, anti-polish refusal with subcultural dress-code logic with identity signals, music or scene memory, attitude, and symbolic styling pressure, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        '1970s punk: DIY insurrection clothing — ripped and safety-pinned tees, studded leather, tartan bondage trousers and spiked hair.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize, cuff, patch, distress, polish, exaggerate, or accessorize through Ripped, torn, pinned, shredded asymmetry, bondage-strap tension, drainpipe jeans; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals, high-contrast trims, and era-coded saturation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a ripped or hand-painted shirt held with safety pins, studded leather jacket, tartan or bondage trousers, heavy boots, chains and spiked or dyed hair.",
+      color_and_tone: 'Black, red tartan, bleach white and one shock color in the hair.',
       lighting_and_shadow:
-        'Use Flash bulb, harsh paparazzi pop, sweat-sheen glare, basement-gig strobe plus club, daylight, editorial, neon, chrome, or DIY light cues that reveal texture and attitude without forcing a venue as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Harsh flash or grimy club light, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material:
-        'Render Destroyed denim, cone studs, safety pins, painted leather, gaffer tape, abstract tartan patches plus denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery, print, and worn textile history; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Worn leather, studs, safety pins, ripped cotton, tartan wool and metal chains.',
       camera_and_composition:
-        'Compose with Jagged punk silhouette distortion plus attitude-led silhouette, accessory grouping, dress-code readability, body-line rhythm, and reusable styling emphasis as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Aggressive, close or full figure with energy, keeping the full outfit silhouette and fit readable at card size.',
       atmosphere_and_mood:
-        "Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade culture, or academic/intellectual taste; the tone should feel specific to Punk Rock while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Rebellious, raw, loud and anti-establishment, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with authentic subculture styling, material age, clear identity cues, and no costume-party caricature unless requested; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Gritty, contrasty finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        '1970s punk insurrection, DIY anarchy boutique, anti-polish refusal; Ripped, torn, pinned, shredded asymmetry, bondage-strap tension, drainpipe jeans; Destroyed denim, cone studs, safety pins, painted leather, gaffer tape, abstract tartan patches; Flash bulb, harsh paparazzi pop, sweat-sheen glare, basement-gig strobe; Jagged punk silhouette distortion',
+        'safety pins and rips; studded leather; tartan bondage trousers; spiked dyed hair; harsh flash',
       creative_brief:
-        'Use Punk Rock after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies 1970s punk insurrection, DIY anarchy boutique, anti-polish refusal, Ripped, torn, pinned, shredded asymmetry, bondage-strap tension, drainpipe jeans, Destroyed denim, cone studs, safety pins, painted leather, gaffer tape, abstract tartan patches, Flash bulb, harsh paparazzi pop, sweat-sheen glare, basement-gig strobe, Jagged punk silhouette distortion plus signature layers, footwear cues, hair volume, accessory codes, patches, hardware, textile wear, and stance-driven silhouette, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Punk Rock as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +205,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Dark Academia',
     category: '2. Subcultures',
     negativePrompt:
-      'bright, sport, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, bright, sport, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Dark Academia operates as a portable fashion-costume router: combine Dark academia tailoring, archival material nostalgia, candlelit-scholar romance with subcultural dress-code logic with identity signals, music or scene memory, attitude, and symbolic styling pressure, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Dark academia: scholarly tailoring in autumnal darks — tweed blazers, turtlenecks, pleated trousers, long wool coats, oxfords and wire glasses.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize, cuff, patch, distress, polish, exaggerate, or accessorize through Tailored layers, tweed-jacket drape, pleated-trouser line, cable-knit volume, scarf-wrap; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a tweed blazer or long wool coat, turtleneck or collared shirt with sweater vest, pleated trousers or skirt, oxford shoes and round wire glasses.",
       color_and_tone:
-        'Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals, high-contrast trims, and era-coded saturation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Chocolate brown, charcoal, burgundy, forest green and ivory, applied to garments and accessories while skin, setting and props keep their natural color.',
       lighting_and_shadow:
-        'Use Low amber tailoring glow, stained-glass amber, fireplace warmth, overcast grey plus club, daylight, editorial, neon, chrome, or DIY light cues that reveal texture and attitude without forcing a venue as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Dim library lamplight or grey autumn light, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material:
-        'Render Harris tweed, merino wool, corduroy, brushed flannel, leather elbow patches, horn buttons plus denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery, print, and worn textile history; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Tweed, wool, corduroy, leather and aged paper tones, rendered with correct weave, weight, sheen and stitching.',
       camera_and_composition:
-        'Compose with Compose for Dark Academia using its key spatial cues: Wire-rim geometry, paper-cream contrast, worn-leather accents, archival tailoring mood plus attitude-led silhouette, accessory grouping, dress-code readability, body-line rhythm, and reusable styling emphasis as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Contemplative three-quarter or full figure among books or old architecture.',
       atmosphere_and_mood:
-        "Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade culture, or academic/intellectual taste; the tone should feel specific to Dark Academia while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Brooding, intellectual, melancholic and romantic, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with authentic subculture styling, material age, clear identity cues, and no costume-party caricature unless requested; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Moody, warm-shadowed finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        'Dark academia tailoring, archival material nostalgia, candlelit-scholar romance; Tailored layers, tweed-jacket drape, pleated-trouser line, cable-knit volume, scarf-wrap; Harris tweed, merino wool, corduroy, brushed flannel, leather elbow patches, horn buttons; Low amber tailoring glow, stained-glass amber, fireplace warmth, overcast grey; Compose for Dark Academia using its key spatial cues: Wire-rim geometry, paper-cream contrast, worn-leather accents, archival tailoring mood',
+        'tweed blazer and turtleneck; long wool coat; oxfords; wire glasses; autumnal dark palette',
       creative_brief:
-        'Use Dark Academia after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Dark academia tailoring, archival material nostalgia, candlelit-scholar romance, Tailored layers, tweed-jacket drape, pleated-trouser line, cable-knit volume, scarf-wrap, Harris tweed, merino wool, corduroy, brushed flannel, leather elbow patches, horn buttons, Low amber tailoring glow, stained-glass amber, fireplace warmth, overcast grey, Compose for Dark Academia using its key spatial cues: Wire-rim geometry, paper-cream contrast, worn-leather accents, archival tailoring mood plus signature layers, footwear cues, hair volume, accessory codes, patches, hardware, textile wear, and stance-driven silhouette, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dark Academia as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +234,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Road-Worn Biker Leather',
     category: '2. Subcultures',
     negativePrompt:
-      'soft, readable insignia, gang identity, intimidation, road-club scene, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, club patches with text, soft, readable insignia, gang identity, intimidation, road-club scene, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Road-Worn Biker Leather operates as a portable fashion-costume router: combine Road-worn leather utility, chrome hardware and patch-like texture without gang identity with subcultural dress-code logic with identity signals, music or scene memory, attitude, and symbolic styling pressure, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Road-worn biker leather: heavy motorcycle leathers with patina — thick jackets, vests, chaps, engineer boots and chains, dusty from the road.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize, cuff, patch, distress, polish, exaggerate, or accessorize through Heavy leather mass, cut-off vest geometry, engineer-boot structure and bandana-like line; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals, high-contrast trims, and era-coded saturation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a heavy leather motorcycle jacket or vest, denim or leather chaps, engineer boots, a wallet chain and fingerless gloves, all visibly worn.",
+      color_and_tone: 'Aged black and brown leather, faded denim and chrome.',
       lighting_and_shadow:
-        'Use Harsh chrome-reflection highlights, restrained neon hints and sun-glare heat plus club, daylight, editorial, neon, chrome, or DIY light cues that reveal texture and attitude without forcing a venue as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Hard sun or low sunset light with dust, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material:
-        'Render Heavyweight cowhide, worn embroidery, metal studs, chain, dirty denim and brass zippers plus denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery, print, and worn textile history; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
-      camera_and_composition:
-        'Compose with Compose for Road-Worn Biker Leather using its key spatial cues: Leather vest panels, engineer boots, chain hardware, grease-black wear and patch-like geometry without readable insignia plus attitude-led silhouette, accessory grouping, dress-code readability, body-line rhythm, and reusable styling emphasis as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Heavy cowhide with creases and scuffs, chrome buckles, denim and road dust.',
+      camera_and_composition: 'Low, heroic full figure on an open road or roadside.',
       atmosphere_and_mood:
-        "Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade culture, or academic/intellectual taste; the tone should feel specific to Road-Worn Biker Leather while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Tough, weathered, free and loyal, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with authentic subculture styling, material age, clear identity cues, and no costume-party caricature unless requested; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Gritty, warm finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        'Road-worn leather utility, chrome hardware and patch-like texture without gang identity; Heavy leather mass, cut-off vest geometry, engineer-boot structure and bandana-like line; Heavyweight cowhide, worn embroidery, metal studs, chain, dirty denim and brass zippers; Harsh chrome-reflection highlights, restrained neon hints and sun-glare heat; Compose for Road-Worn Biker Leather using its key spatial cues: Leather vest panels, engineer boots, chain hardware, grease-black wear and patch-like geometry without readable insignia',
+        'heavy worn leather; chaps and engineer boots; chrome chains; road dust; low heroic framing',
       creative_brief:
-        'Use Road-Worn Biker Leather after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Road-worn leather utility, chrome hardware and patch-like texture without gang identity, Heavy leather mass, cut-off vest geometry, engineer-boot structure and bandana-like line, Heavyweight cowhide, worn embroidery, metal studs, chain, dirty denim and brass zippers, Harsh chrome-reflection highlights, restrained neon hints and sun-glare heat, Compose for Road-Worn Biker Leather using its key spatial cues: Leather vest panels, engineer boots, chain hardware, grease-black wear and patch-like geometry without readable insignia plus signature layers, footwear cues, hair volume, accessory codes, patches, hardware, textile wear, and stance-driven silhouette, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Road-Worn Biker Leather as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -269,28 +261,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Skater Style',
     category: '2. Subcultures',
     negativePrompt:
-      'tight clothes, logos, fisheye lens, skatepark lock, parking lot lock, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, skate brand graphics, tight clothes, logos, fisheye lens, skatepark lock, parking lot lock, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Skater Style operates as a portable fashion-costume router: combine Skate-zine style, deck-grip authenticity, casual session culture with subcultural dress-code logic with identity signals, music or scene memory, attitude, and symbolic styling pressure, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Skater style: loose, durable clothes built around the board — baggy jeans or cords, oversized tees, hoodies, flannel, beanies and scuffed vulcanized shoes.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize, cuff, patch, distress, polish, exaggerate, or accessorize through Baggy relaxed-denim silhouette, oversized tee, hoodie-stack and beanie-slouch; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals, high-contrast trims, and era-coded saturation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: baggy jeans or corduroys, oversized tee or hoodie, open flannel, beanie or cap, and scuffed flat vulcanized skate shoes.",
+      color_and_tone: 'Faded black, grey, mustard, forest green and washed denim.',
       lighting_and_shadow:
-        'Use Hard pavement bounce, golden-hour edge light and raw zine contrast without fisheye camera lock plus club, daylight, editorial, neon, chrome, or DIY light cues that reveal texture and attitude without forcing a venue as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Bright afternoon sun or golden-hour glare, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material:
-        'Render Heavyweight cotton, canvas, suede, grip-tape grit, worn-in denim, corduroy plus denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery, print, and worn textile history; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
-      camera_and_composition:
-        'Compose with Compose for Skater Style using its key spatial cues: Ollie-worn suede texture, grip-tape grit, five-panel cap geometry, oversized tee mass and scuffed sole edges plus attitude-led silhouette, accessory grouping, dress-code readability, body-line rhythm, and reusable styling emphasis as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Heavy cotton, corduroy, canvas, suede and grip-worn rubber, rendered with correct weave, weight, sheen and stitching.',
+      camera_and_composition: 'Low fisheye or wide full figure mid-trick or sitting on a board.',
       atmosphere_and_mood:
-        "Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade culture, or academic/intellectual taste; the tone should feel specific to Skater Style while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Laid-back, playful, rebellious and free, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with authentic subculture styling, material age, clear identity cues, and no costume-party caricature unless requested; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Candid, zine-like finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        'Skate-zine style, deck-grip authenticity, casual session culture; Baggy relaxed-denim silhouette, oversized tee, hoodie-stack and beanie-slouch; Heavyweight cotton, canvas, suede, grip-tape grit, worn-in denim, corduroy; Hard pavement bounce, golden-hour edge light and raw zine contrast without fisheye camera lock; Compose for Skater Style using its key spatial cues: Ollie-worn suede texture, grip-tape grit, five-panel cap geometry, oversized tee mass and scuffed sole edges',
+        'baggy jeans and oversized tee; vulcanized skate shoes; beanie; low wide angle; candid energy',
       creative_brief:
-        'Use Skater Style after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Skate-zine style, deck-grip authenticity, casual session culture, Baggy relaxed-denim silhouette, oversized tee, hoodie-stack and beanie-slouch, Heavyweight cotton, canvas, suede, grip-tape grit, worn-in denim, corduroy, Hard pavement bounce, golden-hour edge light and raw zine contrast without fisheye camera lock, Compose for Skater Style using its key spatial cues: Ollie-worn suede texture, grip-tape grit, five-panel cap geometry, oversized tee mass and scuffed sole edges plus signature layers, footwear cues, hair volume, accessory codes, patches, hardware, textile wear, and stance-driven silhouette, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Skater Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -298,28 +288,197 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Raver (90s)',
     category: '2. Subcultures',
     negativePrompt:
-      'boring, grey, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, boring, grey, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Raver (90s) operates as a portable fashion-costume router: combine 90s ravewear exuberance, PLUR-coded color pressure, after-hours synthetic uplift with subcultural dress-code logic with identity signals, music or scene memory, attitude, and symbolic styling pressure, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        '90s raver: club-kid ravewear — fluorescent colors, oversized cargos, crop tops, fuzzy accessories, visors, kandi bracelets and platform sneakers.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize, cuff, patch, distress, polish, exaggerate, or accessorize through Overscaled volume, phat-pant flare, modular strap punctuation, bucket-hat arc, platform-sole stomp rhythm; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals, high-contrast trims, and era-coded saturation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
-      lighting_and_shadow:
-        'Use Blacklight, UV-reactive glow, strobe-pulse fragmentation, fog-machine haze, colored-laser grid plus club, daylight, editorial, neon, chrome, or DIY light cues that reveal texture and attitude without forcing a venue as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: oversized fluorescent cargo pants or phat pants, crop top or mesh tee, fuzzy leg warmers or backpack, kandi bracelets, visor or bucket hat and platform sneakers.",
+      color_and_tone: 'Fluorescent pink, lime, cyan and orange under black light.',
+      lighting_and_shadow: 'UV black light, strobes and laser beams in haze.',
       texture_and_material:
-        'Render PVC plastic, faux fur, mesh, retroreflective tape, nylon parachute, fuzzy knit plus denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery, print, and worn textile history; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Nylon, mesh, faux fur, PVC and plastic beads, rendered with correct weave, weight, sheen and stitching.',
       camera_and_composition:
-        'Compose with Compose for Raver (90s) using its key spatial cues: Kandi-bead logic, bucket-hat arc, phat-pant volume, reflective trim, neon-extension accents plus attitude-led silhouette, accessory grouping, dress-code readability, body-line rhythm, and reusable styling emphasis as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Dancing full figure with motion blur and lasers, keeping the full outfit silhouette and fit readable at card size.',
       atmosphere_and_mood:
-        "Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade culture, or academic/intellectual taste; the tone should feel specific to Raver (90s) while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Euphoric, colorful, communal and wild, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with authentic subculture styling, material age, clear identity cues, and no costume-party caricature unless requested; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Glowing, UV-saturated finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        '90s ravewear exuberance, PLUR-coded color pressure, after-hours synthetic uplift; Overscaled volume, phat-pant flare, modular strap punctuation, bucket-hat arc, platform-sole stomp rhythm; PVC plastic, faux fur, mesh, retroreflective tape, nylon parachute, fuzzy knit; Blacklight, UV-reactive glow, strobe-pulse fragmentation, fog-machine haze, colored-laser grid; Compose for Raver (90s) using its key spatial cues: Kandi-bead logic, bucket-hat arc, phat-pant volume, reflective trim, neon-extension accents',
+        'fluorescent phat pants; kandi bracelets; fuzzy accessories; platform sneakers; UV and lasers',
       creative_brief:
-        'Use Raver (90s) after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies 90s ravewear exuberance, PLUR-coded color pressure, after-hours synthetic uplift, Overscaled volume, phat-pant flare, modular strap punctuation, bucket-hat arc, platform-sole stomp rhythm, PVC plastic, faux fur, mesh, retroreflective tape, nylon parachute, fuzzy knit, Blacklight, UV-reactive glow, strobe-pulse fragmentation, fog-machine haze, colored-laser grid, Compose for Raver (90s) using its key spatial cues: Kandi-bead logic, bucket-hat arc, phat-pant volume, reflective trim, neon-extension accents plus signature layers, footwear cues, hair volume, accessory codes, patches, hardware, textile wear, and stance-driven silhouette, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Raver (90s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP08-092',
+    name: 'Emo Scene',
+    displayName: 'Emo Scene',
+    styleAnchors: ['Emo Scene', '2000s emo scene wardrobe', 'skinny black jeans'],
+    category: '2. Subcultures',
+    domain: '2000s emo scene wardrobe',
+    negativePrompt:
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, band names, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        '2000s emo and scene style: skinny black jeans, band-free graphic tees, studded belts, checkered accessories and side-swept dyed fringe.',
+      subject_treatment:
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: skinny black jeans, fitted dark tee or striped long sleeve, studded belt, checkered wristbands or scarf, worn canvas sneakers and side-swept black or dyed fringe with heavy eyeliner.",
+      color_and_tone: 'Black with hot pink, electric blue or checkered black-and-white accents.',
+      lighting_and_shadow:
+        'Webcam-like flash or moody bedroom light, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material: 'Stretch denim, cotton jersey, studs, canvas and plastic jewelry.',
+      camera_and_composition:
+        'Close three-quarter framing, often from a high angle, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Emotional, dramatic, self-conscious and nostalgic, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Slightly grainy, flash-lit finish, with believable fabric weight, seams and fit detail.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Emo Scene as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'skinny black jeans; studded belt; checkered accessories; side-swept dyed fringe; heavy eyeliner',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP08-093',
+    name: 'Visual Kei',
+    displayName: 'Visual Kei',
+    styleAnchors: ['Visual Kei', 'visual kei stage fashion', 'ornate layered costume'],
+    category: '2. Subcultures',
+    domain: 'visual kei stage fashion',
+    negativePrompt:
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, real musician likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Visual kei: theatrical rock fashion with dramatic hair, heavy makeup and ornate layered costumes mixing gothic, aristocratic and punk elements.',
+      subject_treatment:
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: an ornate layered costume — brocade or leather coat, lace, buckles, chains, asymmetric cuts — with sculpted teased hair and bold stage makeup.",
+      color_and_tone: 'Black, deep purple, blood red, silver and white with metallic accents.',
+      lighting_and_shadow:
+        'Dramatic stage lighting with colored rim light, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material:
+        'Brocade, leather, PVC, lace, feathers and metal hardware, rendered with correct weave, weight, sheen and stitching.',
+      camera_and_composition:
+        'Dramatic three-quarter or full figure pose, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Theatrical, androgynous, dark and glamorous, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Glossy, high-contrast stage finish, with believable fabric weight, seams and fit detail.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Visual Kei as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'ornate layered costume; teased sculpted hair; heavy stage makeup; brocade and buckles; colored rim light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP08-094',
+    name: 'Sixties Mod',
+    displayName: 'Sixties Mod',
+    styleAnchors: ['Sixties Mod', '1960s mod wardrobe', 'slim two-button suit'],
+    category: '2. Subcultures',
+    domain: '1960s mod wardrobe',
+    negativePrompt:
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, target logos with text, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        '1960s mod style: sharp slim tailoring and graphic geometric dresses — two-button suits, fishtail parkas, shift dresses, go-go boots and bold op-art patterns.',
+      subject_treatment:
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a slim two-button suit with narrow tie and Chelsea boots or a fishtail parka, or a geometric shift dress with go-go boots and a bob haircut.",
+      color_and_tone: 'Black and white op-art, primary red, mustard and target-motif blues.',
+      lighting_and_shadow:
+        'Crisp, bright studio or city daylight, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material:
+        'Mohair suiting, PVC, wool crepe and patent leather, rendered with correct weave, weight, sheen and stitching.',
+      camera_and_composition:
+        'Graphic, centered full figure with clean background, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Sharp, cool, youthful and optimistic, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Crisp, graphic finish, with believable fabric weight, seams and fit detail.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sixties Mod as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'slim two-button suit; geometric shift dress; go-go boots; op-art patterns; bob haircut',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP08-095',
+    name: 'Decora Harajuku',
+    displayName: 'Decora Harajuku',
+    styleAnchors: ['Decora Harajuku', 'decora street fashion', 'dozens of hair clips'],
+    category: '2. Subcultures',
+    domain: 'decora street fashion',
+    negativePrompt:
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, licensed character toys, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Decora street fashion: layered, hyper-accessorized kawaii style — dozens of hair clips, bright layered clothes, stickers, toys and bags worn all at once.',
+      subject_treatment:
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: bright layered tutus, tees and hoodies, leggings and socks in different colors, dozens of plastic hair clips, bracelets, toy charms, face stickers and a character backpack.",
+      color_and_tone: 'Every bright candy color at once: pink, yellow, sky blue, mint and purple.',
+      lighting_and_shadow:
+        'Bright, flat, playful daylight, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material: 'Plastic clips, tulle, fleece, vinyl stickers and plush toys.',
+      camera_and_composition:
+        'Full figure packed with accessories, playful pose, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Joyful, excessive, childlike and fearless, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Crisp, saturated, detailed finish, with believable fabric weight, seams and fit detail.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Decora Harajuku as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'dozens of hair clips; layered candy colors; toy charms; face stickers; hyper-accessorized',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP08-096',
+    name: 'Metalhead Battle Vest',
+    displayName: 'Metalhead Battle Vest',
+    styleAnchors: [
+      'Metalhead Battle Vest',
+      'heavy metal fan wardrobe',
+      'patch-covered battle vest',
+    ],
+    category: '2. Subcultures',
+    domain: 'heavy metal fan wardrobe',
+    negativePrompt:
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, band names, readable patch text, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Heavy metal fan style: denim or leather battle vest covered in sewn patches and studs, black tees, bullet belts, long hair and high-top sneakers or boots.',
+      subject_treatment:
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a sleeveless denim or leather battle vest covered in wordless patches, pins and studs, a black tee, bullet or studded belt, tight jeans and high-tops or boots, with long hair.",
+      color_and_tone: 'Black, faded denim, silver studs and colorful patch artwork.',
+      lighting_and_shadow:
+        'Concert stage light, fire glow or harsh flash, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material: 'Faded denim, leather, embroidered patches, studs and metal spikes.',
+      camera_and_composition:
+        'Headbanging or powerful full figure framing, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Loud, loyal, fierce and exuberant, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Gritty, high-contrast finish, with believable fabric weight, seams and fit detail.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Metalhead Battle Vest as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'patch-covered battle vest; studded bullet belt; black tee; long hair; concert glow',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
   {
@@ -327,28 +486,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Lolita Fashion',
     category: '2. Subcultures',
     negativePrompt:
-      'plain contemporary casualwear, trouser-dominant outfit, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, plain contemporary casualwear, trouser-dominant outfit, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Lolita Fashion operates as a portable fashion-costume router: combine Lolita couture, storybook Victorian sweetness, porcelain-pastel refinement with subcultural dress-code logic with identity signals, music or scene memory, attitude, and symbolic styling pressure, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Lolita fashion: doll-like Victorian-Rococo silhouettes — bell-shaped petticoated skirts, lace, bows, blouses with high collars and bonnets.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize, cuff, patch, distress, polish, exaggerate, or accessorize through Ruffles, bell architecture, tiered volume, mutton-leg sleeve, high-neck lace collar; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals, high-contrast trims, and era-coded saturation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a bell-shaped knee-length dress over petticoats, high-collared lace blouse, bonnet or bow headdress, frilled socks and round-toe strap shoes.",
+      color_and_tone: 'Sweet pastels, classic burgundy and navy, or gothic black and white.',
       lighting_and_shadow:
-        'Use Soft diffused light, petal-pink bounce, porcelain-bright warmth plus club, daylight, editorial, neon, chrome, or DIY light cues that reveal texture and attitude without forcing a venue as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Cotton lace, satin ribbons, pintucked voile, broderie anglaise, tulle underlayers, faux-pearl buttons plus denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery, print, and worn textile history; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Soft, even, romantic light, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material: 'Cotton lace, chiffon ruffles, satin ribbons, jacquard and pearls.',
       camera_and_composition:
-        'Compose with Compose for Lolita Fashion using its key spatial cues: Bell-volume silhouette, lace tiers, ribbon structure, porcelain palette, pintuck rhythm plus attitude-led silhouette, accessory grouping, dress-code readability, body-line rhythm, and reusable styling emphasis as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Full figure with the bell silhouette clearly visible, keeping the full outfit silhouette and fit readable at card size.',
       atmosphere_and_mood:
-        "Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade culture, or academic/intellectual taste; the tone should feel specific to Lolita Fashion while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Elegant, doll-like, whimsical and composed, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with authentic subculture styling, material age, clear identity cues, and no costume-party caricature unless requested; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Delicate, detailed finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        'Lolita couture, storybook Victorian sweetness, porcelain-pastel refinement; Ruffles, bell architecture, tiered volume, mutton-leg sleeve, high-neck lace collar; Cotton lace, satin ribbons, pintucked voile, broderie anglaise, tulle underlayers, faux-pearl buttons; Soft diffused light, petal-pink bounce, porcelain-bright warmth; Compose for Lolita Fashion using its key spatial cues: Bell-volume silhouette, lace tiers, ribbon structure, porcelain palette, pintuck rhythm',
+        'bell-shaped petticoat skirt; lace and bows; bonnet; frilled socks; doll-like elegance',
       creative_brief:
-        'Use Lolita Fashion after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Lolita couture, storybook Victorian sweetness, porcelain-pastel refinement, Ruffles, bell architecture, tiered volume, mutton-leg sleeve, high-neck lace collar, Cotton lace, satin ribbons, pintucked voile, broderie anglaise, tulle underlayers, faux-pearl buttons, Soft diffused light, petal-pink bounce, porcelain-bright warmth, Compose for Lolita Fashion using its key spatial cues: Bell-volume silhouette, lace tiers, ribbon structure, porcelain palette, pintuck rhythm plus signature layers, footwear cues, hair volume, accessory codes, patches, hardware, textile wear, and stance-driven silhouette, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lolita Fashion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -356,28 +513,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Hippie (60s)',
     category: '2. Subcultures',
     negativePrompt:
-      'suit, military, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, suit, military, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Hippie (60s) operates as a portable fashion-costume router: combine Summer-of-love styling, flower-power idealism, counterculture ease with subcultural dress-code logic with identity signals, music or scene memory, attitude, and symbolic styling pressure, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        '1960s hippie: flower-power clothing — bell-bottoms, peasant blouses, tie-dye, fringe, headbands and handmade beads.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize, cuff, patch, distress, polish, exaggerate, or accessorize through Flowing, loose, bell-bottom flare, peasant-blouse blouson, kaftan drape, headband circumference; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals, high-contrast trims, and era-coded saturation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: bell-bottom jeans or a flowing peasant dress, tie-dye or embroidered top, fringed vest, headband with flowers and handmade bead necklaces.",
+      color_and_tone: 'Psychedelic tie-dye swirls, earthy browns, sunflower yellow and sky blue.',
       lighting_and_shadow:
-        'Use Sun flare, Kodachrome warmth, psychedelic poster saturation, warm haze plus club, daylight, editorial, neon, chrome, or DIY light cues that reveal texture and attitude without forcing a venue as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Warm summer daylight with flare, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material:
-        'Render Cotton cheesecloth, suede fringe, crochet, distressed denim, leather cord, seed-bead embroidery plus denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery, print, and worn textile history; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Tie-dyed cotton, suede fringe, embroidery, beads and crochet, rendered with correct weave, weight, sheen and stitching.',
       camera_and_composition:
-        'Compose with Compose for Hippie (60s) using its key spatial cues: Flower crown, round sunglasses, peace-sign pendant, fringed vest plus attitude-led silhouette, accessory grouping, dress-code readability, body-line rhythm, and reusable styling emphasis as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Relaxed, happy full figure outdoors, keeping the full outfit silhouette and fit readable at card size.',
       atmosphere_and_mood:
-        "Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade culture, or academic/intellectual taste; the tone should feel specific to Hippie (60s) while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Peaceful, joyful, idealistic and free, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with authentic subculture styling, material age, clear identity cues, and no costume-party caricature unless requested; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Summer-of-love styling, flower-power idealism, counterculture ease; Flowing, loose, bell-bottom flare, peasant-blouse blouson, kaftan drape, headband circumference; Cotton cheesecloth, suede fringe, crochet, distressed denim, leather cord, seed-bead embroidery; Sun flare, Kodachrome warmth, psychedelic poster saturation, warm haze; Compose for Hippie (60s) using its key spatial cues: Flower crown, round sunglasses, peace-sign pendant, fringed vest',
+        'Warm, saturated vintage film finish, with believable fabric weight, seams and fit detail.',
+      key_features: 'bell-bottoms; tie-dye; flower headband; fringed vest; handmade beads',
       creative_brief:
-        'Use Hippie (60s) after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Summer-of-love styling, flower-power idealism, counterculture ease, Flowing, loose, bell-bottom flare, peasant-blouse blouson, kaftan drape, headband circumference, Cotton cheesecloth, suede fringe, crochet, distressed denim, leather cord, seed-bead embroidery, Sun flare, Kodachrome warmth, psychedelic poster saturation, warm haze, Compose for Hippie (60s) using its key spatial cues: Flower crown, round sunglasses, peace-sign pendant, fringed vest plus signature layers, footwear cues, hair volume, accessory codes, patches, hardware, textile wear, and stance-driven silhouette, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hippie (60s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -385,28 +540,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Goth Darkwave',
     category: '2. Subcultures',
     negativePrompt:
-      'cheerful pastel daylight, sunny cute palette, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, cheerful pastel daylight, sunny cute palette, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Goth Darkwave operates as a portable fashion-costume router: combine Traditional goth style, mourning revival, darkwave elegance with subcultural dress-code logic with identity signals, music or scene memory, attitude, and symbolic styling pressure, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Traditional goth darkwave: black-on-black romantic layers — lace, velvet, fishnet and silver — with pale skin and dramatic dark makeup.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize, cuff, patch, distress, polish, exaggerate, or accessorize through Sharp edges, spikes, fishtail hem, coffin-cut shoulders, cinched seam logic and elongated dark silhouette; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals, high-contrast trims, and era-coded saturation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
-      lighting_and_shadow:
-        'Use Moonlit silver rim light, candle-flicker ambiance, low-key velvet shadow plus club, daylight, editorial, neon, chrome, or DIY light cues that reveal texture and attitude without forcing a venue as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Velvet devore, Chantilly lace, patent leather, polished silver, pewter hardware, fishnet plus denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery, print, and worn textile history; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: layered black lace and velvet, a long coat or corseted top, fishnet or striped hosiery, heavy boots, silver crosses or moons and dark lipstick and eyeliner.",
+      color_and_tone: 'Black on black with pale skin, blood red and cold silver accents.',
+      lighting_and_shadow: 'Low cold light, candles or moonlight with deep shadow.',
+      texture_and_material: 'Crushed velvet, lace, fishnet, patent leather and oxidized silver.',
       camera_and_composition:
-        'Compose with Cinched seam logic and nocturnal silhouette compression plus attitude-led silhouette, accessory grouping, dress-code readability, body-line rhythm, and reusable styling emphasis as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Moody full or three-quarter figure in dim settings, keeping the full outfit silhouette and fit readable at card size.',
       atmosphere_and_mood:
-        "Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade culture, or academic/intellectual taste; the tone should feel specific to Goth Darkwave while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Melancholic, romantic, nocturnal and dramatic, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with authentic subculture styling, material age, clear identity cues, and no costume-party caricature unless requested; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Rich, low-key finish with deep blacks, with believable fabric weight, seams and fit detail.',
       key_features:
-        'Traditional goth style, mourning revival, darkwave elegance; Sharp edges, spikes, fishtail hem, coffin-cut shoulders, cinched seam logic and elongated dark silhouette; Velvet devore, Chantilly lace, patent leather, polished silver, pewter hardware, fishnet; Moonlit silver rim light, candle-flicker ambiance, low-key velvet shadow; Cinched seam logic and nocturnal silhouette compression',
+        'black lace and velvet layers; silver moons and crosses; dark lipstick; heavy boots; candlelit low key',
       creative_brief:
-        'Use Goth Darkwave after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Traditional goth style, mourning revival, darkwave elegance, Sharp edges, spikes, fishtail hem, coffin-cut shoulders, cinched seam logic and elongated dark silhouette, Velvet devore, Chantilly lace, patent leather, polished silver, pewter hardware, fishnet, Moonlit silver rim light, candle-flicker ambiance, low-key velvet shadow, Cinched seam logic and nocturnal silhouette compression plus signature layers, footwear cues, hair volume, accessory codes, patches, hardware, textile wear, and stance-driven silhouette, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Goth Darkwave as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -414,28 +566,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Grunge (90s)',
     category: '2. Subcultures',
     negativePrompt:
-      'clean, ironed, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, band names, clean, ironed, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Grunge (90s) operates as a portable fashion-costume router: combine 90s slouch-grunge, flannel melancholy, lo-fi dishevelment with subcultural dress-code logic with identity signals, music or scene memory, attitude, and symbolic styling pressure, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        '90s grunge: slouchy thrift-store layers — oversized flannel, ripped jeans, faded band-less tees, knit beanies and scuffed boots — worn uncared-for.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize, cuff, patch, distress, polish, exaggerate, or accessorize through Loose, layered, cardigan-over-tee drape, ripped-knee baggy, beanie-slouch silhouette; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals, high-contrast trims, and era-coded saturation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: an oversized flannel shirt over a faded tee or thermal, ripped loose jeans or a slip dress, knit beanie and scuffed combat boots or worn sneakers.",
+      color_and_tone: 'Faded plaid reds and greens, washed black, olive and denim blue.',
       lighting_and_shadow:
-        'Use Dim overcast grey, basement-amber warmth, rainy-flat low contrast plus club, daylight, editorial, neon, chrome, or DIY light cues that reveal texture and attitude without forcing a venue as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Brushed flannel, distressed knit, stonewashed denim, thermal waffle, worn canvas sneaker texture plus denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery, print, and worn textile history; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Dim, grainy available light or overcast day, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material: 'Brushed flannel, thermal waffle knit, worn denim and scuffed leather.',
       camera_and_composition:
-        'Compose with Compose for Grunge (90s) using its key spatial cues: Flannel shirt, ripped jeans, cardigan, beanie, unbranded canvas low-top sneakers plus attitude-led silhouette, accessory grouping, dress-code readability, body-line rhythm, and reusable styling emphasis as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Slouching, candid full or three-quarter figure, keeping the full outfit silhouette and fit readable at card size.',
       atmosphere_and_mood:
-        "Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade culture, or academic/intellectual taste; the tone should feel specific to Grunge (90s) while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Apathetic, melancholic, raw and lo-fi, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with authentic subculture styling, material age, clear identity cues, and no costume-party caricature unless requested; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Grainy, washed-out film finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        '90s slouch-grunge, flannel melancholy, lo-fi dishevelment; Loose, layered, cardigan-over-tee drape, ripped-knee baggy, beanie-slouch silhouette; Brushed flannel, distressed knit, stonewashed denim, thermal waffle, worn canvas sneaker texture; Dim overcast grey, basement-amber warmth, rainy-flat low contrast; Compose for Grunge (90s) using its key spatial cues: Flannel shirt, ripped jeans, cardigan, beanie, unbranded canvas low-top sneakers',
+        'oversized flannel; ripped jeans; knit beanie; scuffed boots; faded plaid palette',
       creative_brief:
-        'Use Grunge (90s) after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies 90s slouch-grunge, flannel melancholy, lo-fi dishevelment, Loose, layered, cardigan-over-tee drape, ripped-knee baggy, beanie-slouch silhouette, Brushed flannel, distressed knit, stonewashed denim, thermal waffle, worn canvas sneaker texture, Dim overcast grey, basement-amber warmth, rainy-flat low contrast, Compose for Grunge (90s) using its key spatial cues: Flannel shirt, ripped jeans, cardigan, beanie, unbranded canvas low-top sneakers plus signature layers, footwear cues, hair volume, accessory codes, patches, hardware, textile wear, and stance-driven silhouette, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grunge (90s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -3,7 +3,7 @@
     {
       "id": "pack_08",
       "name": "Fashion & Costume",
-      "presetCount": 91
+      "presetCount": 96
     }
   ],
   "presets": [
@@ -594,6 +594,80 @@
       "searchableText": "sp08-030 raver (90s) 2. subcultures subcultural clothing pack_08 fashion & costume subcultures fashion-and-costume subcultures"
     },
     {
+      "id": "SP08-092",
+      "name": "Emo Scene",
+      "styleAnchors": ["Emo Scene", "2000s emo scene wardrobe", "skinny black jeans"],
+      "ref": "pack_08/SP08-092.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "subcultures",
+      "categoryName": "2. Subcultures",
+      "domain": "2000s emo scene wardrobe",
+      "tags": ["fashion-and-costume", "subcultures", "2000s-emo-scene-wardrobe"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-092 emo scene 2000s emo scene wardrobe skinny black jeans 2. subcultures subcultural clothing 2000s emo scene wardrobe pack_08 fashion & costume subcultures fashion-and-costume subcultures 2000s-emo-scene-wardrobe"
+    },
+    {
+      "id": "SP08-093",
+      "name": "Visual Kei",
+      "styleAnchors": ["Visual Kei", "visual kei stage fashion", "ornate layered costume"],
+      "ref": "pack_08/SP08-093.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "subcultures",
+      "categoryName": "2. Subcultures",
+      "domain": "visual kei stage fashion",
+      "tags": ["fashion-and-costume", "subcultures", "visual-kei-stage-fashion"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-093 visual kei visual kei stage fashion ornate layered costume 2. subcultures subcultural clothing visual kei stage fashion pack_08 fashion & costume subcultures fashion-and-costume subcultures visual-kei-stage-fashion"
+    },
+    {
+      "id": "SP08-094",
+      "name": "Sixties Mod",
+      "styleAnchors": ["Sixties Mod", "1960s mod wardrobe", "slim two-button suit"],
+      "ref": "pack_08/SP08-094.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "subcultures",
+      "categoryName": "2. Subcultures",
+      "domain": "1960s mod wardrobe",
+      "tags": ["fashion-and-costume", "subcultures", "1960s-mod-wardrobe"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-094 sixties mod 1960s mod wardrobe slim two-button suit 2. subcultures subcultural clothing 1960s mod wardrobe pack_08 fashion & costume subcultures fashion-and-costume subcultures 1960s-mod-wardrobe"
+    },
+    {
+      "id": "SP08-095",
+      "name": "Decora Harajuku",
+      "styleAnchors": ["Decora Harajuku", "decora street fashion", "dozens of hair clips"],
+      "ref": "pack_08/SP08-095.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "subcultures",
+      "categoryName": "2. Subcultures",
+      "domain": "decora street fashion",
+      "tags": ["fashion-and-costume", "subcultures", "decora-street-fashion"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-095 decora harajuku decora street fashion dozens of hair clips 2. subcultures subcultural clothing decora street fashion pack_08 fashion & costume subcultures fashion-and-costume subcultures decora-street-fashion"
+    },
+    {
+      "id": "SP08-096",
+      "name": "Metalhead Battle Vest",
+      "styleAnchors": [
+        "Metalhead Battle Vest",
+        "heavy metal fan wardrobe",
+        "patch-covered battle vest"
+      ],
+      "ref": "pack_08/SP08-096.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "subcultures",
+      "categoryName": "2. Subcultures",
+      "domain": "heavy metal fan wardrobe",
+      "tags": ["fashion-and-costume", "subcultures", "heavy-metal-fan-wardrobe"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-096 metalhead battle vest heavy metal fan wardrobe patch-covered battle vest 2. subcultures subcultural clothing heavy metal fan wardrobe pack_08 fashion & costume subcultures fashion-and-costume subcultures heavy-metal-fan-wardrobe"
+    },
+    {
       "id": "SP08-009",
       "name": "Steampunk Engineering Attire",
       "ref": "pack_08/SP08-009.yaml",
@@ -1146,5 +1220,5 @@
       "searchableText": "sp08-049 pelagic tail couture 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     }
   ],
-  "totalPresetCount": 91
+  "totalPresetCount": 96
 }

@@ -46,6 +46,11 @@ categories:
       - pack_08/SP08-028.yaml
       - pack_08/SP08-029.yaml
       - pack_08/SP08-030.yaml
+      - pack_08/SP08-092.yaml
+      - pack_08/SP08-093.yaml
+      - pack_08/SP08-094.yaml
+      - pack_08/SP08-095.yaml
+      - pack_08/SP08-096.yaml
   - id: historical-and-fantasy
     name: 3. Historical & Fantasy
     presetRefs:
@@ -157,6 +162,11 @@ presetRefs:
   - pack_08/SP08-026.yaml
   - pack_08/SP08-027.yaml
   - pack_08/SP08-030.yaml
+  - pack_08/SP08-092.yaml
+  - pack_08/SP08-093.yaml
+  - pack_08/SP08-094.yaml
+  - pack_08/SP08-095.yaml
+  - pack_08/SP08-096.yaml
   - pack_08/SP08-009.yaml
   - pack_08/SP08-023.yaml
   - pack_08/SP08-025.yaml

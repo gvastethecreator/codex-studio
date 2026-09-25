@@ -22,7 +22,8 @@ export const GENERATED_STYLE_PRESETS = [
         'Silk duchesse, gazar, organza, hand-beading, feathers and visible couture stitching at hems and seams.',
       camera_and_composition:
         'Full-figure or three-quarter framing so the whole silhouette reads, with space around the volume.',
-      atmosphere_and_mood: 'Rare, ceremonial, theatrical and imperious.',
+      atmosphere_and_mood:
+        "Rare, ceremonial, theatrical and imperious, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
         'Crisp garment edges, believable weight and stiffness of fabric, runway-level finish.',
       key_features:
@@ -43,11 +44,15 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a floor-length gown with train, cape or dramatic neckline, or a sharply tailored tuxedo, plus one statement piece of jewelry.",
       color_and_tone: 'Jewel tones — emerald, ruby, sapphire — or metallic gold and black.',
-      lighting_and_shadow: 'Flashbulb-bright key with sparkling highlights and dark falloff.',
+      lighting_and_shadow:
+        'Flashbulb-bright key with sparkling highlights and dark falloff, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Satin, silk velvet, sequins, crystal embroidery and patent leather.',
-      camera_and_composition: 'Full-length framing with the train or cape spread.',
-      atmosphere_and_mood: 'Glamorous, triumphant and theatrical.',
-      rendering_and_quality: 'High-shine gala finish with crisp detail.',
+      camera_and_composition:
+        'Full-length framing with the train or cape spread, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Glamorous, triumphant and theatrical, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'High-shine gala finish with crisp detail, with believable fabric weight, seams and fit detail.',
       key_features:
         'floor-length gown with train; black-tie tailoring; jewel tones; flashbulb sparkle; statement jewelry',
       creative_brief:
@@ -69,11 +74,16 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a double-faced cashmere coat, fine-gauge knit and perfectly tailored trousers in tonal neutrals, with no visible logos or hardware.",
       color_and_tone: 'Cream, camel, taupe, navy and soft grey; tonal and low-contrast.',
-      lighting_and_shadow: 'Soft, warm natural light.',
-      texture_and_material: 'Double-faced cashmere, vicuña-like wool, silk and suede.',
-      camera_and_composition: 'Relaxed, elegant framing with restrained composition.',
-      atmosphere_and_mood: 'Assured, discreet and effortless.',
-      rendering_and_quality: 'Refined, soft-contrast finish.',
+      lighting_and_shadow:
+        'Soft, warm natural light, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material:
+        'Double-faced cashmere, vicuña-like wool, silk and suede, rendered with correct weave, weight, sheen and stitching.',
+      camera_and_composition:
+        'Relaxed, elegant framing with restrained composition, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Assured, discreet and effortless, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Refined, soft-contrast finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Quiet Luxury Cashmere as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
@@ -101,12 +111,17 @@ export const GENERATED_STYLE_PRESETS = [
         'Deconstructed avant-garde fashion: garments that look taken apart and reassembled — raw hems, exposed seams, asymmetric layers and voluminous black.',
       subject_treatment:
         "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: asymmetric layered black and off-black garments with raw edges, inside-out seams, displaced collars and unexpected volumes.",
-      color_and_tone: 'Black, ink, charcoal and unbleached cotton; almost monochrome.',
-      lighting_and_shadow: 'Hard, low side light that carves the layers.',
+      color_and_tone:
+        'Black, ink, charcoal and unbleached cotton; almost monochrome, applied to garments and accessories while skin, setting and props keep their natural color.',
+      lighting_and_shadow:
+        'Hard, low side light that carves the layers, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Boiled wool, washed cotton, felted knits and raw-edged linen.',
-      camera_and_composition: 'Full-figure, stark framing against plain or brutal architecture.',
-      atmosphere_and_mood: 'Intellectual, severe, melancholic and poetic.',
-      rendering_and_quality: 'Matte, textured finish with deep blacks.',
+      camera_and_composition:
+        'Full-figure, stark framing against plain or brutal architecture, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Intellectual, severe, melancholic and poetic, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Matte, textured finish with deep blacks, with believable fabric weight, seams and fit detail.',
       creative_brief:
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Deconstructed Avant-Garde as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
@@ -131,12 +146,16 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a color-blocked shell jacket or fleece, cargo or trail trousers, chunky trail shoes and a small technical accessory such as a carabiner, sling bag or bucket hat.",
       color_and_tone: 'Earth tones mixed with bold accents — burnt orange, teal, lilac, lime.',
-      lighting_and_shadow: 'Crisp mountain daylight.',
+      lighting_and_shadow:
+        'Crisp mountain daylight, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material:
         'Ripstop nylon, polar fleece, Gore-style shells, webbing and rubber soles.',
-      camera_and_composition: 'Full figure in or against rugged landscape.',
-      atmosphere_and_mood: 'Adventurous, playful and practical.',
-      rendering_and_quality: 'Sharp outdoor-editorial finish.',
+      camera_and_composition:
+        'Full figure in or against rugged landscape, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Adventurous, playful and practical, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Sharp outdoor-editorial finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gorpcore Trail as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
@@ -160,13 +179,18 @@ export const GENERATED_STYLE_PRESETS = [
         'Y2K pop glam: turn-of-the-millennium fashion — low-rise, metallics, baby tees, butterfly clips, tinted sunglasses and shiny synthetic fabrics.',
       subject_treatment:
         "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: low-rise trousers or mini skirt, a cropped baby tee or metallic halter, tinted small sunglasses, butterfly clips and chunky platform shoes.",
-      color_and_tone: 'Baby pink, powder blue, chrome silver and lilac.',
-      lighting_and_shadow: 'Bright flash or glossy pop studio light.',
+      color_and_tone:
+        'Baby pink, powder blue, chrome silver and lilac, applied to garments and accessories while skin, setting and props keep their natural color.',
+      lighting_and_shadow:
+        'Bright flash or glossy pop studio light, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material:
         'Metallic vinyl, satin, rhinestones, mesh and glossy plastic accessories.',
-      camera_and_composition: 'Playful, tilted framing with pop energy.',
-      atmosphere_and_mood: 'Flirty, fun, shiny and nostalgic.',
-      rendering_and_quality: 'Glossy, slightly oversaturated finish.',
+      camera_and_composition:
+        'Playful, tilted framing with pop energy, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Flirty, fun, shiny and nostalgic, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Glossy, slightly oversaturated finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Y2K Pop Glam as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
@@ -195,11 +219,16 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: at least three clashing printed garments and accessories — patterned coat, printed shirt, contrasting trousers, headscarf and bold jewelry — layered with intent.",
       color_and_tone: 'Saturated, clashing color: tomato, cobalt, chartreuse, fuchsia and gold.',
-      lighting_and_shadow: 'Bright, even light that shows every pattern.',
-      texture_and_material: 'Brocade, printed silk, jacquard, velvet and beaded accessories.',
-      camera_and_composition: 'Full figure against a patterned or colorful background.',
-      atmosphere_and_mood: 'Joyful, loud, eccentric and fearless.',
-      rendering_and_quality: 'Crisp pattern detail with rich saturation.',
+      lighting_and_shadow:
+        'Bright, even light that shows every pattern, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material:
+        'Brocade, printed silk, jacquard, velvet and beaded accessories, rendered with correct weave, weight, sheen and stitching.',
+      camera_and_composition:
+        'Full figure against a patterned or colorful background, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Joyful, loud, eccentric and fearless, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Crisp pattern detail with rich saturation, with believable fabric weight, seams and fit detail.',
       creative_brief:
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Maximalist Print Clash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
@@ -229,11 +258,16 @@ export const GENERATED_STYLE_PRESETS = [
         "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a sharply tailored suit with strong shoulders in one saturated color, matching shirt or top and matching shoes.",
       color_and_tone:
         'A single saturated color — scarlet, cobalt, emerald or white — worn head to toe.',
-      lighting_and_shadow: 'Strong, clean studio or architectural light.',
-      texture_and_material: 'Crisp wool suiting, silk shirting and polished leather.',
-      camera_and_composition: 'Powerful, low-angle or centered full figure.',
-      atmosphere_and_mood: 'Authoritative, bold and unflinching.',
-      rendering_and_quality: 'Sharp, graphic, high-contrast finish.',
+      lighting_and_shadow:
+        'Strong, clean studio or architectural light, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material:
+        'Crisp wool suiting, silk shirting and polished leather, rendered with correct weave, weight, sheen and stitching.',
+      camera_and_composition:
+        'Powerful, low-angle or centered full figure, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Authoritative, bold and unflinching, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Sharp, graphic, high-contrast finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Monochrome Power Suit as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
@@ -257,12 +291,18 @@ export const GENERATED_STYLE_PRESETS = [
         'Balletcore: dancewear as fashion — wrap cardigans, leotards, tulle skirts, leg warmers and ribbon-tied flats in soft blush tones.',
       subject_treatment:
         "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a wrap cardigan or leotard, a soft tulle or jersey skirt, leg warmers and satin ribbon-tied flats, with hair in a neat bun.",
-      color_and_tone: 'Blush pink, ballet white, dove grey and black.',
-      lighting_and_shadow: 'Soft, diffuse rehearsal-studio light.',
-      texture_and_material: 'Tulle, ribbed knit, satin ribbon and fine jersey.',
-      camera_and_composition: 'Graceful full figure with elegant line.',
-      atmosphere_and_mood: 'Delicate, disciplined, romantic and quiet.',
-      rendering_and_quality: 'Soft, airy finish.',
+      color_and_tone:
+        'Blush pink, ballet white, dove grey and black, applied to garments and accessories while skin, setting and props keep their natural color.',
+      lighting_and_shadow:
+        'Soft, diffuse rehearsal-studio light, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material:
+        'Tulle, ribbed knit, satin ribbon and fine jersey, rendered with correct weave, weight, sheen and stitching.',
+      camera_and_composition:
+        'Graceful full figure with elegant line, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Delicate, disciplined, romantic and quiet, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Soft, airy finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Balletcore as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
@@ -286,13 +326,16 @@ export const GENERATED_STYLE_PRESETS = [
         'Resort linen: breezy vacation dressing in wrinkled linen, open collars, wide trousers and woven accessories under strong sun.',
       subject_treatment:
         "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: loose linen shirt or dress, wide linen trousers, woven straw hat or bag and leather sandals.",
-      color_and_tone: 'Sun-washed white, sand, terracotta, olive and sea blue.',
+      color_and_tone:
+        'Sun-washed white, sand, terracotta, olive and sea blue, applied to garments and accessories while skin, setting and props keep their natural color.',
       lighting_and_shadow: 'Strong midday sun with crisp shadows and warm bounce.',
       texture_and_material: 'Wrinkled linen, cotton gauze, straw, raffia and tan leather.',
       camera_and_composition:
         'Airy full or three-quarter figure in a bright coastal or garden setting.',
-      atmosphere_and_mood: 'Relaxed, sun-drenched and carefree.',
-      rendering_and_quality: 'Bright, warm, natural finish.',
+      atmosphere_and_mood:
+        "Relaxed, sun-drenched and carefree, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Bright, warm, natural finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Resort Linen as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
@@ -317,11 +360,15 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: long-line layered pieces — maxi coat or abaya-like overlayer, long tunic, wide trousers or maxi skirt and a softly draped headscarf.",
       color_and_tone: 'Tonal layering in sage, dusty rose, sand, navy and cream.',
-      lighting_and_shadow: 'Soft, flattering daylight.',
+      lighting_and_shadow:
+        'Soft, flattering daylight, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Crepe, chiffon, fine wool, silk jersey and satin trims.',
-      camera_and_composition: 'Elegant full-length framing that shows the layered silhouette.',
-      atmosphere_and_mood: 'Graceful, dignified and serene.',
-      rendering_and_quality: 'Refined, soft editorial finish.',
+      camera_and_composition:
+        'Elegant full-length framing that shows the layered silhouette, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Graceful, dignified and serene, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Refined, soft editorial finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Modest Layered Tailoring as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
@@ -349,12 +396,17 @@ export const GENERATED_STYLE_PRESETS = [
         'Equestrian heritage: riding-inspired dressing — tailored hacking jackets, jodhpurs, tall leather boots, quilted vests and silk scarves.',
       subject_treatment:
         "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a tailored hacking jacket or quilted vest, jodhpurs or slim trousers, tall polished riding boots and a silk scarf or leather gloves.",
-      color_and_tone: 'Chestnut, olive, cream, navy and oxblood.',
-      lighting_and_shadow: 'Soft countryside morning light.',
-      texture_and_material: 'Tweed, moleskin, quilted cotton, silk and polished leather.',
+      color_and_tone:
+        'Chestnut, olive, cream, navy and oxblood, applied to garments and accessories while skin, setting and props keep their natural color.',
+      lighting_and_shadow:
+        'Soft countryside morning light, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material:
+        'Tweed, moleskin, quilted cotton, silk and polished leather, rendered with correct weave, weight, sheen and stitching.',
       camera_and_composition: 'Full figure in a stable, field or estate setting.',
-      atmosphere_and_mood: 'Poised, heritage-proud and outdoorsy.',
-      rendering_and_quality: 'Rich, warm editorial finish.',
+      atmosphere_and_mood:
+        "Poised, heritage-proud and outdoorsy, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Rich, warm editorial finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Equestrian Heritage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
@@ -378,13 +430,18 @@ export const GENERATED_STYLE_PRESETS = [
         'Neo-western fashion: cowboy codes reworked for today — embroidered yokes, fringe, denim, bolo ties and pointed boots, worn with modern cuts.',
       subject_treatment:
         "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a western shirt with embroidered yoke or fringed suede jacket, dark denim or tailored trousers, pointed leather boots and a wide-brim hat or bolo tie.",
-      color_and_tone: 'Rust, sand, turquoise, black and faded indigo.',
-      lighting_and_shadow: 'Low golden desert light with long shadows.',
+      color_and_tone:
+        'Rust, sand, turquoise, black and faded indigo, applied to garments and accessories while skin, setting and props keep their natural color.',
+      lighting_and_shadow:
+        'Low golden desert light with long shadows, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material:
         'Suede fringe, chain-stitch embroidery, denim, tooled leather and silver hardware.',
-      camera_and_composition: 'Wide, cinematic full figure in open landscape.',
-      atmosphere_and_mood: 'Rugged, romantic and independent.',
-      rendering_and_quality: 'Warm, film-like finish.',
+      camera_and_composition:
+        'Wide, cinematic full figure in open landscape, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Rugged, romantic and independent, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Warm, film-like finish, with believable fabric weight, seams and fit detail.',
       creative_brief:
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neo-Western as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
@@ -405,12 +462,17 @@ export const GENERATED_STYLE_PRESETS = [
         'Business casual: polished but relaxed workwear — unstructured blazer, knit or open collar, tailored trousers — made for long days.',
       subject_treatment:
         "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: an unstructured blazer or cardigan, open-collar shirt or fine knit, tailored trousers or midi skirt and simple leather shoes.",
-      color_and_tone: 'Navy, grey, camel, white and soft blue.',
-      lighting_and_shadow: 'Even, soft daylight.',
-      texture_and_material: 'Wool-blend suiting, cotton poplin, fine knits and leather.',
+      color_and_tone:
+        'Navy, grey, camel, white and soft blue, applied to garments and accessories while skin, setting and props keep their natural color.',
+      lighting_and_shadow:
+        'Even, soft daylight, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material:
+        'Wool-blend suiting, cotton poplin, fine knits and leather, rendered with correct weave, weight, sheen and stitching.',
       camera_and_composition: 'Natural three-quarter framing in a workplace or transit setting.',
-      atmosphere_and_mood: 'Competent, approachable and composed.',
-      rendering_and_quality: 'Clean, natural editorial finish.',
+      atmosphere_and_mood:
+        "Competent, approachable and composed, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Clean, natural editorial finish, with believable fabric weight, seams and fit detail.',
       key_features:
         'unstructured blazer; open collar; tailored trousers; soft neutral palette; composed ease',
       creative_brief:
@@ -434,7 +496,8 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Brushed jersey, ripstop, mesh ventilation panels, bonded seams and reflective trims.',
       camera_and_composition: 'Dynamic three-quarter or full figure with a sense of movement.',
-      atmosphere_and_mood: 'Energetic, fresh, capable and modern.',
+      atmosphere_and_mood:
+        "Energetic, fresh, capable and modern, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality: 'Sharp commercial finish with believable stretch and fabric sheen.',
       key_features:
         'tonal performance sets; bonded seams and mesh panels; reflective accent; mid-stride energy; clean daylight',
@@ -454,11 +517,15 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a fine black knit or plain tee, slim dark trousers or jeans and matte minimalist sneakers, worn identically and without decoration.",
       color_and_tone: 'Black, charcoal and one cool grey; high tonal discipline.',
-      lighting_and_shadow: 'Clean, cool light; soft product-launch glow.',
+      lighting_and_shadow:
+        'Clean, cool light; soft product-launch glow, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Merino knit, technical cotton and matte synthetic sneaker uppers.',
-      camera_and_composition: 'Centered, symmetrical, keynote-like framing with clean backgrounds.',
-      atmosphere_and_mood: 'Focused, controlled, austere and a little cultish.',
-      rendering_and_quality: 'Sleek, low-noise finish.',
+      camera_and_composition:
+        'Centered, symmetrical, keynote-like framing with clean backgrounds, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Focused, controlled, austere and a little cultish, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Sleek, low-noise finish, with believable fabric weight, seams and fit detail.',
       key_features:
         'black merino knit; slim dark trousers; minimalist sneakers; tonal discipline; keynote framing',
       creative_brief:
@@ -478,11 +545,15 @@ export const GENERATED_STYLE_PRESETS = [
         "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: coordinated sharp tailoring — cropped jacket, harness or sash detail, flared or tapered trousers — in matching group colorways, built to move.",
       color_and_tone:
         'Saturated stage colors: electric blue, white and silver, or crimson and black, per group.',
-      lighting_and_shadow: 'Colored stage washes, backlight and haze.',
+      lighting_and_shadow:
+        'Colored stage washes, backlight and haze, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material: 'Satin lapels, metallic trims, patent leather and stretch suiting.',
-      camera_and_composition: 'Group formation or dynamic single figure mid-move.',
-      atmosphere_and_mood: 'Bold, synchronized, glamorous and energetic.',
-      rendering_and_quality: 'High-gloss performance finish.',
+      camera_and_composition:
+        'Group formation or dynamic single figure mid-move, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Bold, synchronized, glamorous and energetic, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'High-gloss performance finish, with believable fabric weight, seams and fit detail.',
       key_features:
         'coordinated stage tailoring; cropped jackets; matching colorways; stage haze; choreographed pose',
       creative_brief:
@@ -507,8 +578,10 @@ export const GENERATED_STYLE_PRESETS = [
         'Boiled wool, heavy cotton, cashmere and matte leather with visible weave.',
       camera_and_composition:
         'Calm, spacious composition with plenty of negative space around the figure.',
-      atmosphere_and_mood: 'Serene, precise, confident and understated.',
-      rendering_and_quality: 'Clean, soft-contrast editorial finish.',
+      atmosphere_and_mood:
+        "Serene, precise, confident and understated, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Clean, soft-contrast editorial finish, with believable fabric weight, seams and fit detail.',
       key_features:
         'few perfect pieces; bone and camel palette; no prints or hardware; soft window light; generous negative space',
       creative_brief:
@@ -526,12 +599,18 @@ export const GENERATED_STYLE_PRESETS = [
         'Normcore: deliberately plain everyday clothes worn with intent — the fashion is in the anonymity.',
       subject_treatment:
         "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: plain fleece or crewneck, straight jeans or khakis, white sneakers or basic sandals, nothing branded or decorative.",
-      color_and_tone: 'Muted washed blues, grey, beige and white.',
-      lighting_and_shadow: 'Flat, honest daylight or fluorescent light.',
-      texture_and_material: 'Fleece, washed denim, cotton jersey and scuffed canvas.',
-      camera_and_composition: 'Straightforward, centered, almost deadpan framing.',
-      atmosphere_and_mood: 'Ironic, unbothered and quietly cool.',
-      rendering_and_quality: 'Documentary-plain finish without glamour retouching.',
+      color_and_tone:
+        'Muted washed blues, grey, beige and white, applied to garments and accessories while skin, setting and props keep their natural color.',
+      lighting_and_shadow:
+        'Flat, honest daylight or fluorescent light, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material:
+        'Fleece, washed denim, cotton jersey and scuffed canvas, rendered with correct weave, weight, sheen and stitching.',
+      camera_and_composition:
+        'Straightforward, centered, almost deadpan framing, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Ironic, unbothered and quietly cool, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Documentary-plain finish without glamour retouching, with believable fabric weight, seams and fit detail.',
       key_features:
         'plain fleece and straight jeans; white sneakers; no branding; deadpan framing; flat daylight',
       creative_brief:
@@ -551,12 +630,16 @@ export const GENERATED_STYLE_PRESETS = [
         "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: navy blazer or cable-knit sweater over an oxford shirt, chinos or pleated skirt, loafers and one heritage accessory such as a scarf or leather satchel.",
       color_and_tone:
         'Navy, cream, forest green, burgundy and khaki with small stripe or tartan accents.',
-      lighting_and_shadow: 'Warm autumn daylight with soft shadows.',
+      lighting_and_shadow:
+        'Warm autumn daylight with soft shadows, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material:
         'Oxford cotton, lambswool cable knit, tweed, corduroy and polished leather.',
-      camera_and_composition: 'Relaxed three-quarter or full figure, lifestyle framing.',
-      atmosphere_and_mood: 'Confident, bookish, relaxed and privileged.',
-      rendering_and_quality: 'Warm, polished editorial finish.',
+      camera_and_composition:
+        'Relaxed three-quarter or full figure, lifestyle framing, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Confident, bookish, relaxed and privileged, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Warm, polished editorial finish, with believable fabric weight, seams and fit detail.',
       key_features:
         'navy blazer and cable knit; oxford cloth; loafers; autumn palette; relaxed polish',
       creative_brief:

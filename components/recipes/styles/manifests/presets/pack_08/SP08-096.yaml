@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP08-096
+packId: pack_08
+name: Metalhead Battle Vest
+styleAnchors:
+  - Metalhead Battle Vest
+  - heavy metal fan wardrobe
+  - patch-covered battle vest
+displayName: Metalhead Battle Vest
+category: 2. Subcultures
+domain: heavy metal fan wardrobe
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - subcultures
+  - metal
+  - battle-vest
+  - fashion
+visualDna:
+  aesthetic: 'Heavy metal fan style: denim or leather battle vest covered in sewn patches and studs, black tees, bullet belts, long hair and high-top sneakers or boots.'
+  subject_treatment: "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: a sleeveless denim or leather battle vest covered in wordless patches, pins and studs, a black tee, bullet or studded belt, tight jeans and high-tops or boots, with long hair."
+  color_and_tone: Black, faded denim, silver studs and colorful patch artwork.
+  lighting_and_shadow: Concert stage light, fire glow or harsh flash, shaped to reveal garment cut, drape, texture and fit on the wearer.
+  texture_and_material: Faded denim, leather, embroidered patches, studs and metal spikes.
+  camera_and_composition: Headbanging or powerful full figure framing, keeping the full outfit silhouette and fit readable at card size.
+  atmosphere_and_mood: Loud, loyal, fierce and exuberant, carried by the wearer's posture, styling and attitude.
+  rendering_and_quality: Gritty, high-contrast finish, with believable fabric weight, seams and fit detail.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Metalhead Battle Vest as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: patch-covered battle vest; studded bullet belt; black tee; long hair; concert glow
+avoidRules:
+  - brand logo
+  - readable label text
+  - real designer or celebrity likeness
+  - generic catalog outfit
+  - bad garment fit
+  - band names
+  - readable patch text
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, band names, readable patch text, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_08
+  packName: Fashion & Costume
+  categoryId: subcultures
+  categoryName: 2. Subcultures
+  tags:
+    - fashion-and-costume
+    - subcultures
+    - metal
+    - battle-vest
+    - fashion
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: heavy metal fan wardrobe

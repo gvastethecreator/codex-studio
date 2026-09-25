@@ -99,7 +99,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       'A fashion and costume library spanning contemporary editorial looks, subcultural dress codes, historical silhouettes, character-costume fantasy, and material-forward transformation concepts.',
     cardTitle: 'Fashion Costume',
     cardDescription: 'Fashion, costume, fabric, subculture silhouettes.',
-    presetCount: 91,
+    presetCount: 96,
   },
   {
     id: 'pack_09',
