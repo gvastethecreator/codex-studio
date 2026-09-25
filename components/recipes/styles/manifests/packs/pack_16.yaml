@@ -183,6 +183,21 @@ categories:
       - pack_16/SP13-033.yaml
       - pack_16/SP13-034.yaml
       - pack_16/SP13-035.yaml
+      - pack_16/SP13-086.yaml
+      - pack_16/SP13-087.yaml
+      - pack_16/SP13-088.yaml
+      - pack_16/SP13-089.yaml
+      - pack_16/SP13-090.yaml
+      - pack_16/SP13-091.yaml
+      - pack_16/SP13-092.yaml
+      - pack_16/SP13-093.yaml
+      - pack_16/SP13-094.yaml
+      - pack_16/SP13-095.yaml
+      - pack_16/SP13-096.yaml
+      - pack_16/SP13-097.yaml
+      - pack_16/SP13-098.yaml
+      - pack_16/SP13-099.yaml
+      - pack_16/SP13-100.yaml
 presetRefs:
   - pack_16/SP05-001.yaml
   - pack_16/SP16-001.yaml
@@ -340,3 +355,18 @@ presetRefs:
   - pack_16/SP13-033.yaml
   - pack_16/SP13-034.yaml
   - pack_16/SP13-035.yaml
+  - pack_16/SP13-086.yaml
+  - pack_16/SP13-087.yaml
+  - pack_16/SP13-088.yaml
+  - pack_16/SP13-089.yaml
+  - pack_16/SP13-090.yaml
+  - pack_16/SP13-091.yaml
+  - pack_16/SP13-092.yaml
+  - pack_16/SP13-093.yaml
+  - pack_16/SP13-094.yaml
+  - pack_16/SP13-095.yaml
+  - pack_16/SP13-096.yaml
+  - pack_16/SP13-097.yaml
+  - pack_16/SP13-098.yaml
+  - pack_16/SP13-099.yaml
+  - pack_16/SP13-100.yaml

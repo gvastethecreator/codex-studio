@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP13-094
+packId: pack_16
+name: Rot Garden Fungal Horror Anime
+styleAnchors:
+  - Rot Garden Fungal Horror Anime
+  - fungal horror anime
+  - creeping fungus
+displayName: Rot Garden Fungal Horror Anime
+category: 7. Horror
+domain: fungal horror anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - horror
+  - fungal
+  - horror
+  - anime
+visualDna:
+  aesthetic: 'Botanical horror anime of gardens and houses slowly taken over by fungus: soft growths, spores and beautiful decay.'
+  subject_treatment: Keep the prompt's subject and setting; let fungal growth creep over surfaces around it, never hiding the subject itself.
+  color_and_tone: Damp greens, bruised purple and pale cream fungus with glowing spore gold.
+  lighting_and_shadow: Soft grey daylight or dim greenhouse light with glowing spores drifting through it.
+  texture_and_material: Gills, mold fuzz, wet leaves and cracked plaster drawn in fine organic detail.
+  camera_and_composition: Close botanical framing and wide shots of overgrown rooms and gardens.
+  atmosphere_and_mood: Lush and suffocating, decay that is quietly beautiful and patiently spreading.
+  rendering_and_quality: Richly detailed prestige anime with organic textures and soft glowing particles.
+  creative_brief: "Botanical horror anime of gardens and houses slowly taken over by fungus: soft growths, spores and beautiful decay. Carry it through creeping fungus, drifting spores, overgrown rooms, soft decay. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: creeping fungus; drifting spores; overgrown rooms; soft decay
+avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - gore
+  - graphic wounds
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: horror
+  categoryName: 7. Horror
+  tags:
+    - anime-classics-and-prestige
+    - horror
+    - fungal
+    - horror
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: fungal horror anime

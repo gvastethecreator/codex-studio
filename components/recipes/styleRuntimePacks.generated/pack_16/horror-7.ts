@@ -5,157 +5,658 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-031',
-    name: 'Institutional Liminal Dread Style',
-    displayName: 'Institutional Liminal Dread',
-    styleAnchors: ['Institutional Liminal Dread Style'],
+    name: 'Institutional Liminal Dread Anime',
+    displayName: 'Institutional Liminal Dread Anime',
+    styleAnchors: ['Institutional Liminal Dread Anime'],
     category: '7. Horror',
     negativePrompt:
-      'photoreal, comedy, bright-pastel, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, comedy, bright-pastel, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Institutional Liminal Dread Style acts as a transferable anime-prestige router: institutional dread and rule-bound visual order, alongside threshold unease and suspended transition; fuse it with prestige anime horror with negative space, body unease, ritual geometry, liminal dread, and controlled visual silence; it routes era, genre, line economy, cel or digital finish, and performance tone without locking prompt content to the source title or sample image.',
+        'Horror anime of empty institutions after hours: corridors, fluorescent hum, repeated doors and a feeling that the building is watching.',
       subject_treatment:
-        'Preserve the prompt subject, action, and context while restyling forms through contours paced by institutional tension, readable pose energy, and silhouette discipline, alongside contours paced by liminal tension, readable pose energy, and silhouette discipline; identity should remain readable through anime contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of a required canon character or title scene.',
+        "Keep the prompt's subject and setting; place it in a too-clean, too-empty space where something is slightly wrong.",
       color_and_tone:
-        'Map color through a institutional accent system held inside disciplined cel values, alongside a liminal accent system held inside disciplined cel values; anchor it in peat black, cold indigo, mineral gray, crimson omen accents, sickly cyan reflections, and desaturated skin tones; keep value separation clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested content.',
+        'Sickly fluorescent green-white, beige walls and dim blue shadows with no warm color at all.',
       lighting_and_shadow:
-        'Use a institutional light logic using cel rim, glow behavior, and blocked shadow, alongside a liminal light logic using cel rim, glow behavior, and blocked shadow; combine it with weak nocturnal top-light, spotlight isolation, occult rim, red omen glow, and deep occlusion around visual absences; shadows should read as anime light design, rims should clarify form, and glow or effects should support the prompt rather than replacing it.',
+        'Flat overhead fluorescent light, one flickering tube and dark doorways that swallow the light.',
       texture_and_material:
-        'Render cel paint and ink grain tuned to institutional material contrast, alongside cel paint and ink grain tuned to liminal material contrast; anchor surfaces in water-dark stone, frayed fiber, damp paper, mask lacquer, dust, mist, and minimal noise-controlled texture; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments, action, and abstractions.',
+        'Linoleum floors, painted cinder block and glass partitions drawn with clean, cold line.',
       camera_and_composition:
-        'Frame around corridor-like repetition converted into abstract spacing, alongside in-between spacing, empty pauses, and transition lines, then extend it with void-first framing, institutional emptiness, spotlight traps, ritual geometry, and suppressed horizon cues; the style should support portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed card layout.',
+        'Long one-point perspective corridors with the subject small, or a single door filling the frame.',
       atmosphere_and_mood:
-        'Carry mood through authority, emptiness, and liminal anxiety, alongside not-yet-arrived tension and quiet dread; braid it with listening-state tension, dread, shame, taboo ceremony, unseen presence, and quiet psychological collapse; the preset can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.',
+        'Quietly wrong and uneasy, like an empty school or hospital that should not be empty.',
       rendering_and_quality:
-        'Finish with clean anime finishing that keeps institutional identity readable without noisy denoise, alongside clean anime finishing that keeps liminal identity readable without noisy denoise; enforce minimal high-control horror anime finish with shape economy, denoised darks, and no gore-as-shortcut dependency; prioritize clean denoise, stable anatomy or object structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or 3D-render drift.',
-      key_features:
-        'institutional dread and rule-bound visual order, alongside threshold unease and suspended transition; contours paced by institutional tension, readable pose energy, and silhouette discipline, alongside contours paced by liminal tension, readable pose energy, and silhouette discipline; cel paint and ink grain tuned to institutional material contrast, alongside cel paint and ink grain tuned to liminal material contrast; a institutional light logic using cel rim, glow behavior, and blocked shadow, alongside a liminal light logic using cel rim, glow behavior, and blocked shadow; corridor-like repetition converted into abstract spacing, alongside in-between spacing, empty pauses, and transition lines',
+        'Clean, restrained horror anime with precise perspective and minimal effects.',
+      key_features: 'one-point corridors; fluorescent hum; repeated doors; emptiness',
       creative_brief:
-        'Apply Institutional Liminal Dread Style after prompt X as a transferable anime-prestige layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies institutional dread and rule-bound visual order, alongside threshold unease and suspended transition, alongside contours paced by institutional tension, readable pose energy, and silhouette discipline, alongside contours paced by liminal tension, readable pose energy, and silhouette discipline; a institutional accent system held inside disciplined cel values, alongside a liminal accent system held inside disciplined cel values; a institutional light logic using cel rim, glow behavior, and blocked shadow, alongside a liminal light logic using cel rim, glow behavior, and blocked shadow; cel paint and ink grain tuned to institutional material contrast, alongside cel paint and ink grain tuned to liminal material contrast and corridor-like repetition converted into abstract spacing, alongside in-between spacing, empty pauses, and transition lines, finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.',
+        "Horror anime of empty institutions after hours: corridors, fluorescent hum, repeated doors and a feeling that the building is watching. Carry it through one-point corridors, fluorescent hum, repeated doors, emptiness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-032',
-    name: 'Crimson Celestial Omen Style',
-    displayName: 'Crimson Celestial Omen',
-    styleAnchors: ['Crimson Celestial Omen Style'],
+    name: 'Crimson Celestial Omen Anime',
+    displayName: 'Crimson Celestial Omen Anime',
+    styleAnchors: ['Crimson Celestial Omen Anime'],
     category: '7. Horror',
     negativePrompt:
-      'photoreal, cute-style, vivid-rainbow, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, cute-style, vivid-rainbow, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Crimson Celestial Omen Style acts as a transferable anime-prestige router: a crimson anime direction shaped by era-aware line economy and genre tone, alongside a celestial anime direction shaped by era-aware line economy and genre tone; fuse it with prestige anime horror with negative space, body unease, ritual geometry, liminal dread, and controlled visual silence; it routes era, genre, line economy, cel or digital finish, and performance tone without locking prompt content to the source title or sample image.',
+        'Apocalyptic omen anime under a wrong sky: red celestial bodies, eclipses and vast silent phenomena looming over small people.',
       subject_treatment:
-        'Preserve the prompt subject, action, and context while restyling forms through contours paced by crimson tension, readable pose energy, and silhouette discipline, alongside contours paced by celestial tension, readable pose energy, and silhouette discipline; identity should remain readable through anime contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of a required canon character or title scene.',
-      color_and_tone:
-        'Map color through crimson accents over black, bone, and smoky violet, alongside star whites, ink blues, and cosmic violet accents and crimson omen accents, cold black, and desaturated pale values; anchor it in peat black, cold indigo, mineral gray, crimson omen accents, sickly cyan reflections, and desaturated skin tones; keep value separation clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested content.',
+        "Keep the prompt's subject and setting; place an ominous sky event above it, the people below small and still.",
+      color_and_tone: 'Blood crimson sky, black silhouettes and a sickly pale glow on faces.',
       lighting_and_shadow:
-        'Use red omen glow and ember rim cuts, alongside distant astral glints and soft heavenly bloom and small warning glow and hard supernatural rim cuts; combine it with weak nocturnal top-light, spotlight isolation, occult rim, red omen glow, and deep occlusion around visual absences; shadows should read as anime light design, rims should clarify form, and glow or effects should support the prompt rather than replacing it.',
-      texture_and_material:
-        'Render cel paint and ink grain tuned to crimson material contrast, alongside cel paint and ink grain tuned to celestial material contrast; anchor surfaces in water-dark stone, frayed fiber, damp paper, mask lacquer, dust, mist, and minimal noise-controlled texture; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments, action, and abstractions.',
-      camera_and_composition:
-        'Frame around constellation spacing and upward poetic scale, alongside crimson converted into reusable framing rhythm and anime timing, then extend it with void-first framing, institutional emptiness, spotlight traps, ritual geometry, and suppressed horizon cues; the style should support portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed card layout.',
+        'Red light from above, long shadows in odd directions and no normal sunlight.',
+      texture_and_material: 'Smooth painted skies, clean cel figures and faint grain.',
+      camera_and_composition: 'Low horizons with huge skies taking most of the frame.',
       atmosphere_and_mood:
-        'Carry mood through prophetic dread and symbolic threat, alongside crimson emotional pressure and genre-specific tone; braid it with listening-state tension, dread, shame, taboo ceremony, unseen presence, and quiet psychological collapse; the preset can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.',
-      rendering_and_quality:
-        'Finish with clean anime finishing that keeps crimson identity readable without noisy denoise, alongside clean anime finishing that keeps celestial identity readable without noisy denoise; enforce minimal high-control horror anime finish with shape economy, denoised darks, and no gore-as-shortcut dependency; prioritize clean denoise, stable anatomy or object structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or 3D-render drift.',
-      key_features:
-        'a crimson anime direction shaped by era-aware line economy and genre tone, alongside a celestial anime direction shaped by era-aware line economy and genre tone; contours paced by crimson tension, readable pose energy, and silhouette discipline, alongside contours paced by celestial tension, readable pose energy, and silhouette discipline; cel paint and ink grain tuned to crimson material contrast, alongside cel paint and ink grain tuned to celestial material contrast; red omen glow and ember rim cuts, alongside distant astral glints and soft heavenly bloom and small warning glow and hard supernatural rim cuts; constellation spacing and upward poetic scale, alongside crimson converted into reusable framing rhythm and anime timing',
+        'Ominous and silent, the whole world holding its breath beneath a warning sign.',
+      rendering_and_quality: 'Painterly prestige anime skies with crisp small silhouettes below.',
+      key_features: 'red sky omen; huge celestial body; tiny silhouettes; low horizon',
       creative_brief:
-        'Apply Crimson Celestial Omen Style after prompt X as a transferable anime-prestige layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a crimson anime direction shaped by era-aware line economy and genre tone, alongside a celestial anime direction shaped by era-aware line economy and genre tone, alongside contours paced by crimson tension, readable pose energy, and silhouette discipline, alongside contours paced by celestial tension, readable pose energy, and silhouette discipline; crimson accents over black, bone, and smoky violet, alongside star whites, ink blues, and cosmic violet accents and crimson omen accents, cold black, and desaturated pale values; red omen glow and ember rim cuts, alongside distant astral glints and soft heavenly bloom and small warning glow and hard supernatural rim cuts; cel paint and ink grain tuned to crimson material contrast, alongside cel paint and ink grain tuned to celestial material contrast and constellation spacing and upward poetic scale, alongside crimson converted into reusable framing rhythm and anime timing, finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.',
+        "Apocalyptic omen anime under a wrong sky: red celestial bodies, eclipses and vast silent phenomena looming over small people. Carry it through red sky omen, huge celestial body, tiny silhouettes, low horizon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-033',
-    name: 'Grotesque Marionette Spotlight Style',
-    displayName: 'Grotesque Marionette Spotlight',
-    styleAnchors: ['Grotesque Marionette Spotlight Style'],
+    name: 'Grotesque Marionette Spotlight Anime',
+    displayName: 'Grotesque Marionette Spotlight Anime',
+    styleAnchors: ['Grotesque Marionette Spotlight Anime'],
     category: '7. Horror',
     negativePrompt:
-      'photoreal, slapstick, cheerful-colors, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, slapstick, cheerful-colors, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Grotesque Marionette Spotlight Style acts as a transferable anime-prestige router: grotesque body unease with prestige anime restraint, alongside a marionette anime direction shaped by era-aware line economy and genre tone; fuse it with prestige anime horror with negative space, body unease, ritual geometry, liminal dread, and controlled visual silence; it routes era, genre, line economy, cel or digital finish, and performance tone without locking prompt content to the source title or sample image.',
+        'Theatrical horror anime of puppets and stages: jointed bodies, strings, painted faces and a single hard spotlight.',
       subject_treatment:
-        'Preserve the prompt subject, action, and context while restyling forms through distorted contour, puppet tension, and controlled anatomical wrongness, alongside jointed unease and puppet-like contour tension; identity should remain readable through anime contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of a required canon character or title scene.',
+        "Keep the prompt's subject and setting; stage it as if performed, with strings, stage edges or puppet-like joints where fitting.",
       color_and_tone:
-        'Map color through a grotesque accent system held inside disciplined cel values, alongside a marionette accent system held inside disciplined cel values; anchor it in peat black, cold indigo, mineral gray, crimson omen accents, sickly cyan reflections, and desaturated skin tones; keep value separation clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested content.',
+        'Black stage with a single warm white spotlight, faded red velvet and chipped paint colors.',
       lighting_and_shadow:
-        'Use spotlight isolation and theatrical shadow falloff, alongside a grotesque light logic using cel rim, glow behavior, and blocked shadow; combine it with weak nocturnal top-light, spotlight isolation, occult rim, red omen glow, and deep occlusion around visual absences; shadows should read as anime light design, rims should clarify form, and glow or effects should support the prompt rather than replacing it.',
+        'One hard spotlight from above, everything outside it in black, long shadows on the boards.',
       texture_and_material:
-        'Render waxy skin, frayed fabric, lacquer, and low-noise shadow texture, alongside cel paint and ink grain tuned to marionette material contrast; anchor surfaces in water-dark stone, frayed fiber, damp paper, mask lacquer, dust, mist, and minimal noise-controlled texture; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments, action, and abstractions.',
+        'Chipped lacquer, wooden joints, strings, velvet curtains and stage dust.',
       camera_and_composition:
-        'Frame around string-like lines and spotlight isolation, alongside stage trap framing and confrontation focus, then extend it with void-first framing, institutional emptiness, spotlight traps, ritual geometry, and suppressed horizon cues; the style should support portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed card layout.',
+        'Proscenium framing from the audience or low angles from the stage floor.',
       atmosphere_and_mood:
-        'Carry mood through abjection without splatter dependency, alongside uncanny performance and body horror restraint; braid it with listening-state tension, dread, shame, taboo ceremony, unseen presence, and quiet psychological collapse; the preset can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.',
+        'Uncanny and theatrical, an audience of empty seats watching something performed.',
       rendering_and_quality:
-        'Finish with clean anime finishing that keeps grotesque identity readable without noisy denoise, alongside clean anime finishing that keeps marionette identity readable without noisy denoise; enforce minimal high-control horror anime finish with shape economy, denoised darks, and no gore-as-shortcut dependency; prioritize clean denoise, stable anatomy or object structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or 3D-render drift.',
-      key_features:
-        'grotesque body unease with prestige anime restraint, alongside a marionette anime direction shaped by era-aware line economy and genre tone; distorted contour, puppet tension, and controlled anatomical wrongness, alongside jointed unease and puppet-like contour tension; waxy skin, frayed fabric, lacquer, and low-noise shadow texture, alongside cel paint and ink grain tuned to marionette material contrast; spotlight isolation and theatrical shadow falloff, alongside a grotesque light logic using cel rim, glow behavior, and blocked shadow; string-like lines and spotlight isolation, alongside stage trap framing and confrontation focus',
+        'Stylized prestige anime with stark contrast and fine material detail.',
+      key_features: 'single spotlight; strings and joints; chipped paint; empty seats',
       creative_brief:
-        'Apply Grotesque Marionette Spotlight Style after prompt X as a transferable anime-prestige layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies grotesque body unease with prestige anime restraint, alongside a marionette anime direction shaped by era-aware line economy and genre tone, alongside distorted contour, puppet tension, and controlled anatomical wrongness, alongside jointed unease and puppet-like contour tension; a grotesque accent system held inside disciplined cel values, alongside a marionette accent system held inside disciplined cel values; spotlight isolation and theatrical shadow falloff, alongside a grotesque light logic using cel rim, glow behavior, and blocked shadow; waxy skin, frayed fabric, lacquer, and low-noise shadow texture, alongside cel paint and ink grain tuned to marionette material contrast and string-like lines and spotlight isolation, alongside stage trap framing and confrontation focus, finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.',
+        "Theatrical horror anime of puppets and stages: jointed bodies, strings, painted faces and a single hard spotlight. Carry it through single spotlight, strings and joints, chipped paint, empty seats. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-034',
-    name: 'Deep Void Whisper Style',
-    displayName: 'Deep Void Whisper',
-    styleAnchors: ['Deep Void Whisper Style'],
+    name: 'Deep Void Whisper Anime',
+    displayName: 'Deep Void Whisper Anime',
+    styleAnchors: ['Deep Void Whisper Anime'],
     category: '7. Horror',
     negativePrompt:
-      'photoreal, daylight-bright, action-shonen, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, daylight-bright, action-shonen, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Deep Void Whisper Style acts as a transferable anime-prestige router: submerged depth, lowered detail, and pressure-dark anime silence, alongside void-balanced anime horror and central absence as style law and almost-heard menace and quiet psychological pressure; fuse it with prestige anime horror with negative space, body unease, ritual geometry, liminal dread, and controlled visual silence; it routes era, genre, line economy, cel or digital finish, and performance tone without locking prompt content to the source title or sample image.',
+        'Minimal horror anime of darkness and depth: tiny figures above black water, wells and voids that seem to breathe.',
       subject_treatment:
-        'Preserve the prompt subject, action, and context while restyling forms through forms simplified by depth pressure and heavy negative space, alongside silhouettes organized around absence and suppressed detail and softened edges, partial detail, and breath-close contour restraint; identity should remain readable through anime contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of a required canon character or title scene.',
-      color_and_tone:
-        'Map color through void black, cold indigo, and minimal cyan reflection, alongside a deep accent system held inside disciplined cel values; anchor it in peat black, cold indigo, mineral gray, crimson omen accents, sickly cyan reflections, and desaturated skin tones; keep value separation clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested content.',
+        "Keep the prompt's subject and setting; surround it with vast darkness or depth so it feels small and exposed.",
+      color_and_tone: 'Near-black blues and greens with a pale, weak light on the subject only.',
       lighting_and_shadow:
-        'Use weak peripheral glow and occluded center-weighted shadow, alongside weak rim glow and soft darkness; combine it with weak nocturnal top-light, spotlight isolation, occult rim, red omen glow, and deep occlusion around visual absences; shadows should read as anime light design, rims should clarify form, and glow or effects should support the prompt rather than replacing it.',
+        'One weak light source fading quickly into total darkness, no fill at all.',
       texture_and_material:
-        'Render wet dark grain, mineral haze, and compressed shadow texture, alongside damp black stone, mist, frayed fiber, and soft occlusion grain and mist, paper fiber, damp air, and low-contrast ink grain; anchor surfaces in water-dark stone, frayed fiber, damp paper, mask lacquer, dust, mist, and minimal noise-controlled texture; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments, action, and abstractions.',
+        'Still black water, damp stone and faint particles drifting in the dark.',
       camera_and_composition:
-        'Frame around central absence, negative space, and gravitational framing, alongside near-silent spacing and attention pulled toward absence, then extend it with void-first framing, institutional emptiness, spotlight traps, ritual geometry, and suppressed horizon cues; the style should support portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed card layout.',
+        'Top-down views into depths or wide frames that are mostly black with a small lit subject.',
       atmosphere_and_mood:
-        'Carry mood through oppressive quiet and unseen presence, alongside quiet dread and almost-heard presence; braid it with listening-state tension, dread, shame, taboo ceremony, unseen presence, and quiet psychological collapse; the preset can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.',
+        'Silent and vertiginous, as if something far below is listening very carefully.',
       rendering_and_quality:
-        'Finish with deep-value control with no noisy black crush, alongside minimal void-first finish with denoised dark value control; enforce minimal high-control horror anime finish with shape economy, denoised darks, and no gore-as-shortcut dependency; prioritize clean denoise, stable anatomy or object structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or 3D-render drift.',
-      key_features:
-        'submerged depth, lowered detail, and pressure-dark anime silence, alongside void-balanced anime horror and central absence as style law and almost-heard menace and quiet psychological pressure; forms simplified by depth pressure and heavy negative space, alongside silhouettes organized around absence and suppressed detail and softened edges, partial detail, and breath-close contour restraint; wet dark grain, mineral haze, and compressed shadow texture, alongside damp black stone, mist, frayed fiber, and soft occlusion grain and mist, paper fiber, damp air, and low-contrast ink grain; weak peripheral glow and occluded center-weighted shadow, alongside weak rim glow and soft darkness; central absence, negative space, and gravitational framing, alongside near-silent spacing and attention pulled toward absence',
+        'Low-key prestige anime with subtle gradients and very restrained detail.',
+      key_features: 'vast darkness; tiny lit subject; still black water; depth',
       creative_brief:
-        'Apply Deep Void Whisper Style after prompt X as a transferable anime-prestige layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies submerged depth, lowered detail, and pressure-dark anime silence, alongside void-balanced anime horror and central absence as style law and almost-heard menace and quiet psychological pressure, alongside forms simplified by depth pressure and heavy negative space, alongside silhouettes organized around absence and suppressed detail and softened edges, partial detail, and breath-close contour restraint; void black, cold indigo, and minimal cyan reflection, alongside a deep accent system held inside disciplined cel values; weak peripheral glow and occluded center-weighted shadow, alongside weak rim glow and soft darkness; wet dark grain, mineral haze, and compressed shadow texture, alongside damp black stone, mist, frayed fiber, and soft occlusion grain and mist, paper fiber, damp air, and low-contrast ink grain and central absence, negative space, and gravitational framing, alongside near-silent spacing and attention pulled toward absence, finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.',
+        "Minimal horror anime of darkness and depth: tiny figures above black water, wells and voids that seem to breathe. Carry it through vast darkness, tiny lit subject, still black water, depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-035',
-    name: 'Demonic Ritual Mask Geometry Style',
-    displayName: 'Demonic Ritual Mask Geometry',
-    styleAnchors: ['Demonic Ritual Mask Geometry Style'],
+    name: 'Ritual Mask Geometry Anime',
+    displayName: 'Ritual Mask Geometry Anime',
+    styleAnchors: ['Ritual Mask Geometry Anime'],
     category: '7. Horror',
     negativePrompt:
-      'photoreal, cute-style, bright-daylight, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, cute-style, bright-daylight, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Demonic Ritual Mask Geometry Style acts as a transferable anime-prestige router: occult anime menace and mask-like supernatural pressure, alongside formal rite pressure and ceremonial anime severity and symbolic geometry and rule-bound visual pressure; fuse it with prestige anime horror with negative space, body unease, ritual geometry, liminal dread, and controlled visual silence; it routes era, genre, line economy, cel or digital finish, and performance tone without locking prompt content to the source title or sample image.',
+        'Occult horror anime of rituals and masks: symmetrical processions, geometric mask designs and firelit ceremony.',
       subject_treatment:
-        'Preserve the prompt subject, action, and context while restyling forms through covered identity, flattened face planes, and ceremonial profile pressure, alongside contours paced by demonic tension, readable pose energy, and silhouette discipline; identity should remain readable through anime contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of a required canon character or title scene.',
-      color_and_tone:
-        'Map color through crimson black, sickly violet, and hot ritual orange, alongside a ritual accent system held inside disciplined cel values; anchor it in peat black, cold indigo, mineral gray, crimson omen accents, sickly cyan reflections, and desaturated skin tones; keep value separation clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested content.',
+        "Keep the prompt's subject and setting; frame it inside a symmetrical ceremony, with masks and geometric patterns where fitting.",
+      color_and_tone: 'Black, bone white and deep red with firelight gold on mask edges.',
       lighting_and_shadow:
-        'Use a demonic light logic using cel rim, glow behavior, and blocked shadow, alongside a ritual light logic using cel rim, glow behavior, and blocked shadow; combine it with weak nocturnal top-light, spotlight isolation, occult rim, red omen glow, and deep occlusion around visual absences; shadows should read as anime light design, rims should clarify form, and glow or effects should support the prompt rather than replacing it.',
-      texture_and_material:
-        'Render wax, cloth, ash, lacquer, paper, and restrained blood-red marks, alongside lacquer, fabric, rubbed paint, and hard shadow edges and inked lines, paper texture, lacquer edges, and graphic cuts; anchor surfaces in water-dark stone, frayed fiber, damp paper, mask lacquer, dust, mist, and minimal noise-controlled texture; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments, action, and abstractions.',
+        'Torch and bonfire light from below, flickering hard shadows across masked faces.',
+      texture_and_material: 'Carved wooden masks, painted geometric patterns, rough robes and ash.',
       camera_and_composition:
-        'Frame around rite intervals, axial pauses, and symbolic repetition, alongside frontal mask geometry and trapped gaze spacing and hard axes, repeated shapes, and measured ritual spacing, then extend it with void-first framing, institutional emptiness, spotlight traps, ritual geometry, and suppressed horizon cues; the style should support portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed card layout.',
+        'Strict symmetry with a central axis, processions leading to a vanishing point.',
       atmosphere_and_mood:
-        'Carry mood through taboo horror and ecstatic danger, alongside taboo formality and controlled spiritual pressure; braid it with listening-state tension, dread, shame, taboo ceremony, unseen presence, and quiet psychological collapse; the preset can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.',
+        'Ceremonial and menacing, something ancient being honored in the wrong way.',
       rendering_and_quality:
-        'Finish with clean anime finishing that keeps demonic identity readable without noisy denoise, alongside clean anime finishing that keeps ritual identity readable without noisy denoise; enforce minimal high-control horror anime finish with shape economy, denoised darks, and no gore-as-shortcut dependency; prioritize clean denoise, stable anatomy or object structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or 3D-render drift.',
-      key_features:
-        'occult anime menace and mask-like supernatural pressure, alongside formal rite pressure and ceremonial anime severity and symbolic geometry and rule-bound visual pressure; covered identity, flattened face planes, and ceremonial profile pressure, alongside contours paced by demonic tension, readable pose energy, and silhouette discipline; wax, cloth, ash, lacquer, paper, and restrained blood-red marks, alongside lacquer, fabric, rubbed paint, and hard shadow edges and inked lines, paper texture, lacquer edges, and graphic cuts; a demonic light logic using cel rim, glow behavior, and blocked shadow, alongside a ritual light logic using cel rim, glow behavior, and blocked shadow; rite intervals, axial pauses, and symbolic repetition, alongside frontal mask geometry and trapped gaze spacing and hard axes, repeated shapes, and measured ritual spacing',
+        'Graphic prestige anime with sharp pattern detail and strong symmetry.',
+      key_features: 'geometric masks; strict symmetry; firelight from below; procession',
       creative_brief:
-        'Apply Demonic Ritual Mask Geometry Style after prompt X as a transferable anime-prestige layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies occult anime menace and mask-like supernatural pressure, alongside formal rite pressure and ceremonial anime severity and symbolic geometry and rule-bound visual pressure, alongside covered identity, flattened face planes, and ceremonial profile pressure, alongside contours paced by demonic tension, readable pose energy, and silhouette discipline; crimson black, sickly violet, and hot ritual orange, alongside a ritual accent system held inside disciplined cel values; a demonic light logic using cel rim, glow behavior, and blocked shadow, alongside a ritual light logic using cel rim, glow behavior, and blocked shadow; wax, cloth, ash, lacquer, paper, and restrained blood-red marks, alongside lacquer, fabric, rubbed paint, and hard shadow edges and inked lines, paper texture, lacquer edges, and graphic cuts and rite intervals, axial pauses, and symbolic repetition, alongside frontal mask geometry and trapped gaze spacing and hard axes, repeated shapes, and measured ritual spacing, finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.',
+        "Occult horror anime of rituals and masks: symmetrical processions, geometric mask designs and firelit ceremony. Carry it through geometric masks, strict symmetry, firelight from below, procession. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+    },
+  },
+  {
+    id: 'SP13-086',
+    name: 'Cursed Videotape Horror Anime',
+    displayName: 'Cursed Videotape Horror Anime',
+    styleAnchors: ['Cursed Videotape Horror Anime', 'analog tape horror anime', 'tracking noise'],
+    category: '7. Horror',
+    domain: 'analog tape horror anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Analog horror anime seen through a worn videotape: tracking noise, color bleed and single frames that should not be there.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; show it as recorded footage, with tape damage getting worse near the frightening detail.",
+      color_and_tone:
+        'Faded washed-out color with magenta and green chroma bleed and crushed blacks.',
+      lighting_and_shadow:
+        'Harsh on-camera light or dim household lamps, blown highlights and murky shadows.',
+      texture_and_material:
+        'VHS tracking lines, dropouts, noise bands and soft tape blur over clean anime line.',
+      camera_and_composition:
+        'Handheld home-video framing, slightly tilted, with the unsettling detail small and off-center.',
+      atmosphere_and_mood:
+        'Creeping and wrong, the feeling of watching a tape that someone left for you.',
+      rendering_and_quality:
+        'Clean anime footage degraded by convincing analog tape artifacts that never hide the subject.',
+      creative_brief:
+        "Analog horror anime seen through a worn videotape: tracking noise, color bleed and single frames that should not be there. Carry it through tracking noise, chroma bleed, handheld tilt, small wrong detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'tracking noise; chroma bleed; handheld tilt; small wrong detail',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-087',
+    name: 'Slow Metamorphosis Dread Anime',
+    displayName: 'Slow Metamorphosis Dread Anime',
+    styleAnchors: [
+      'Slow Metamorphosis Dread Anime',
+      'transformation horror anime',
+      'ordinary scene',
+    ],
+    category: '7. Horror',
+    domain: 'transformation horror anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Quiet body-horror anime without gore: slow, wrong changes in ordinary people, shown through posture, shadow and small details.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; show one subtle wrong change in the figure (an extra joint of shadow, a stretched limb, a face that stays too still).",
+      color_and_tone:
+        'Pale domestic colors going slightly sickly, cream walls, grey skin tones and a faint green cast.',
+      lighting_and_shadow:
+        'Soft window light with one shadow that does not match the figure casting it.',
+      texture_and_material:
+        'Clean everyday surfaces, fabric and skin drawn simply so the one wrong detail stands out.',
+      camera_and_composition:
+        'Still, ordinary framing that lingers too long, the change placed near the edge.',
+      atmosphere_and_mood:
+        'Unsettling and slow, a familiar person becoming a little less familiar each day.',
+      rendering_and_quality:
+        'Restrained prestige anime where horror lives in small precise details.',
+      creative_brief:
+        "Quiet body-horror anime without gore: slow, wrong changes in ordinary people, shown through posture, shadow and small details. Carry it through ordinary scene, one wrong detail, mismatched shadow, lingering frame. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'ordinary scene; one wrong detail; mismatched shadow; lingering frame',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-088',
+    name: 'Folk Village Festival Horror Anime',
+    displayName: 'Folk Village Festival Horror Anime',
+    styleAnchors: [
+      'Folk Village Festival Horror Anime',
+      'rural festival horror anime',
+      'bright daylight',
+    ],
+    category: '7. Horror',
+    domain: 'rural festival horror anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Folk horror anime of bright rural festivals hiding something: flower crowns, straw figures, smiling villagers and midsummer light.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; surround it with cheerful rural festivity that feels rehearsed and slightly menacing.",
+      color_and_tone:
+        'Bright meadow green, flower yellow and white linen under a pale endless summer sky.',
+      lighting_and_shadow: 'Relentless bright daylight with almost no shadow anywhere to hide in.',
+      texture_and_material:
+        'Woven straw, linen, flower garlands and carved wood drawn with soft clean cel.',
+      camera_and_composition:
+        'Wide symmetrical festival scenes with villagers all facing the same way.',
+      atmosphere_and_mood: 'Sunny and smiling, and the smiles never stop even when they should.',
+      rendering_and_quality:
+        'High-key prestige anime with pastoral detail and unsettling uniformity.',
+      creative_brief:
+        "Folk horror anime of bright rural festivals hiding something: flower crowns, straw figures, smiling villagers and midsummer light. Carry it through bright daylight, flower crowns, straw figures, synchronized villagers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'bright daylight; flower crowns; straw figures; synchronized villagers',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-089',
+    name: 'School Ghost Story Anime',
+    displayName: 'School Ghost Story Anime',
+    styleAnchors: ['School Ghost Story Anime', 'kaidan school anime', 'empty classrooms'],
+    category: '7. Horror',
+    domain: 'kaidan school anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'School ghost-story anime told after sunset: empty classrooms, restroom mirrors, stairwells and whispered rumors made real.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; place it in a school after dark where one rumor is quietly coming true.",
+      color_and_tone:
+        'Dusky orange fading into blue-grey, with cold white from a single light source.',
+      lighting_and_shadow:
+        'Last sunset light through windows, then flashlight beams and deep classroom shadows.',
+      texture_and_material:
+        'Wooden desks, chalk dust, tiled restrooms and cloth uniforms in clean cel.',
+      camera_and_composition:
+        'Low angles in stairwells, mirror compositions and long empty classrooms.',
+      atmosphere_and_mood: 'Nervous and whispery, a dare among friends that goes a little too far.',
+      rendering_and_quality:
+        'Clean prestige anime with careful light transitions from dusk to dark.',
+      creative_brief:
+        "School ghost-story anime told after sunset: empty classrooms, restroom mirrors, stairwells and whispered rumors made real. Carry it through empty classrooms, mirrors, flashlight beams, rumors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'empty classrooms; mirrors; flashlight beams; rumors',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-090',
+    name: 'Deep Sea Leviathan Horror Anime',
+    displayName: 'Deep Sea Leviathan Horror Anime',
+    styleAnchors: ['Deep Sea Leviathan Horror Anime', 'oceanic horror anime', 'huge shadow below'],
+    category: '7. Horror',
+    domain: 'oceanic horror anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Oceanic horror anime of scale and depth: small boats and divers above unimaginably large shapes moving in dark water.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; make it tiny against something enormous and barely visible in the water.",
+      color_and_tone: 'Deep teal and black water, pale boat lights and bioluminescent blue specks.',
+      lighting_and_shadow:
+        'Weak surface light fading quickly, with bioluminescence and small lamps in darkness.',
+      texture_and_material:
+        'Rippled water, rope, wet wood and particles drifting in the deep, drawn cleanly.',
+      camera_and_composition:
+        'Split surface views or top-down frames where a huge shadow fills the water.',
+      atmosphere_and_mood:
+        'Vast and helpless, the ocean suddenly remembering how small people are.',
+      rendering_and_quality:
+        'Painterly prestige anime water with subtle gradients and huge scale contrast.',
+      creative_brief:
+        "Oceanic horror anime of scale and depth: small boats and divers above unimaginably large shapes moving in dark water. Carry it through huge shadow below, tiny boat, bioluminescence, split surface view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'huge shadow below; tiny boat; bioluminescence; split surface view',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-091',
+    name: 'Haunted Dollhouse Horror Anime',
+    displayName: 'Haunted Dollhouse Horror Anime',
+    styleAnchors: [
+      'Haunted Dollhouse Horror Anime',
+      'miniature horror anime',
+      'open dollhouse rooms',
+    ],
+    category: '7. Horror',
+    domain: 'miniature horror anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Miniature horror anime of dollhouses and tiny rooms: small furniture, porcelain faces and scenes that change when no one looks.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; show it at dollhouse scale or observed through tiny windows and open miniature rooms.",
+      color_and_tone:
+        'Faded pastel wallpaper colors, porcelain white and dusty rose with deep shadow in the rooms.',
+      lighting_and_shadow:
+        'Soft lamp light from outside the dollhouse, tiny rooms lit unevenly from above.',
+      texture_and_material:
+        'Miniature wallpaper, porcelain, lace and painted wood drawn with delicate line.',
+      camera_and_composition:
+        'Cutaway views into open miniature rooms or eye-level shots through tiny windows.',
+      atmosphere_and_mood:
+        'Delicate and creepy, a perfect little world that seems to be rehearsing something.',
+      rendering_and_quality:
+        'Fine-detailed prestige anime with miniature scale cues and soft light.',
+      creative_brief:
+        "Miniature horror anime of dollhouses and tiny rooms: small furniture, porcelain faces and scenes that change when no one looks. Carry it through open dollhouse rooms, porcelain faces, tiny furniture, changed scenes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'open dollhouse rooms; porcelain faces; tiny furniture; changed scenes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-092',
+    name: 'Night-Vision Found Footage Anime',
+    displayName: 'Night-Vision Found Footage Anime',
+    styleAnchors: ['Night-Vision Found Footage Anime', 'found footage anime', 'green night-vision'],
+    category: '7. Horror',
+    domain: 'found footage anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Found-footage anime seen through night-vision: green monochrome, glowing eyes, grain and a shaking handheld camera.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; record it through night-vision, the frightening detail only just visible.",
+      color_and_tone:
+        'Phosphor green monochrome with bright white highlights and near-black corners.',
+      lighting_and_shadow:
+        'Infrared illumination falling off quickly, eyes and reflective surfaces glowing.',
+      texture_and_material:
+        'Heavy sensor grain, vignette and slight motion blur over simplified anime shapes.',
+      camera_and_composition: 'Handheld, low and tilted, subjects caught at the edge of the beam.',
+      atmosphere_and_mood:
+        'Panicked and claustrophobic, breathing loudly in the dark with nowhere to go.',
+      rendering_and_quality:
+        'Convincing night-vision footage texture laid over clean, readable anime line work.',
+      creative_brief:
+        "Found-footage anime seen through night-vision: green monochrome, glowing eyes, grain and a shaking handheld camera. Carry it through green night-vision, glowing eyes, grain, handheld tilt. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'green night-vision; glowing eyes; grain; handheld tilt',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-093',
+    name: 'Cosmic Sky Eldritch Anime',
+    displayName: 'Cosmic Sky Eldritch Anime',
+    styleAnchors: ['Cosmic Sky Eldritch Anime', 'cosmic horror anime', 'impossible sky'],
+    category: '7. Horror',
+    domain: 'cosmic horror anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cosmic horror anime where the sky itself is wrong: impossible geometries, too many stars and vast shapes behind the clouds.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; open the sky above it onto something vast and incomprehensible.",
+      color_and_tone:
+        'Violet, sickly teal and black sky over an ordinary warm-colored world below.',
+      lighting_and_shadow:
+        'Cold light from the sky with no clear source, casting pale, directionless shadows.',
+      texture_and_material:
+        'Swirling painted skies, geometric star patterns and clean cel landscapes.',
+      camera_and_composition:
+        'Worm-eye views up at the sky or wide frames with a thin strip of land.',
+      atmosphere_and_mood:
+        'Awe and dread together, a mind straining to understand something far too big.',
+      rendering_and_quality:
+        'Painterly prestige anime skies with precise small-scale ground detail.',
+      creative_brief:
+        "Cosmic horror anime where the sky itself is wrong: impossible geometries, too many stars and vast shapes behind the clouds. Carry it through impossible sky, vast shapes, directionless light, thin horizon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'impossible sky; vast shapes; directionless light; thin horizon',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-094',
+    name: 'Rot Garden Fungal Horror Anime',
+    displayName: 'Rot Garden Fungal Horror Anime',
+    styleAnchors: ['Rot Garden Fungal Horror Anime', 'fungal horror anime', 'creeping fungus'],
+    category: '7. Horror',
+    domain: 'fungal horror anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Botanical horror anime of gardens and houses slowly taken over by fungus: soft growths, spores and beautiful decay.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; let fungal growth creep over surfaces around it, never hiding the subject itself.",
+      color_and_tone: 'Damp greens, bruised purple and pale cream fungus with glowing spore gold.',
+      lighting_and_shadow:
+        'Soft grey daylight or dim greenhouse light with glowing spores drifting through it.',
+      texture_and_material:
+        'Gills, mold fuzz, wet leaves and cracked plaster drawn in fine organic detail.',
+      camera_and_composition:
+        'Close botanical framing and wide shots of overgrown rooms and gardens.',
+      atmosphere_and_mood:
+        'Lush and suffocating, decay that is quietly beautiful and patiently spreading.',
+      rendering_and_quality:
+        'Richly detailed prestige anime with organic textures and soft glowing particles.',
+      creative_brief:
+        "Botanical horror anime of gardens and houses slowly taken over by fungus: soft growths, spores and beautiful decay. Carry it through creeping fungus, drifting spores, overgrown rooms, soft decay. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'creeping fungus; drifting spores; overgrown rooms; soft decay',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-095',
+    name: 'Night Shift Hospital Horror Anime',
+    displayName: 'Night Shift Hospital Horror Anime',
+    styleAnchors: ['Night Shift Hospital Horror Anime', 'hospital horror anime', 'curtained beds'],
+    category: '7. Horror',
+    domain: 'hospital horror anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hospital horror anime of the night shift: humming machines, curtained beds, monitors and nurses walking long quiet wards.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; place it within a hospital at night where equipment and curtains hide something.",
+      color_and_tone:
+        'Cold blue-green night lighting with monitor glows and one warm nurses-station lamp.',
+      lighting_and_shadow:
+        'Dim night-mode ceiling lights, monitor glow on faces and silhouettes behind curtains.',
+      texture_and_material:
+        'Curtain fabric, steel bed frames, IV stands and polished floors in clean cel.',
+      camera_and_composition: 'Long ward perspectives and silhouettes seen through thin curtains.',
+      atmosphere_and_mood:
+        'Exhausted and uneasy, a long night shift where the quiet feels deliberate.',
+      rendering_and_quality:
+        'Clean prestige anime with careful low-light gradients and restrained effects.',
+      creative_brief:
+        "Hospital horror anime of the night shift: humming machines, curtained beds, monitors and nurses walking long quiet wards. Carry it through curtained beds, monitor glow, long wards, silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'curtained beds; monitor glow; long wards; silhouettes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-096',
+    name: 'Shadow Play Horror Anime',
+    displayName: 'Shadow Play Horror Anime',
+    styleAnchors: ['Shadow Play Horror Anime', 'silhouette horror anime', 'cast shadows'],
+    category: '7. Horror',
+    domain: 'silhouette horror anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Silhouette horror anime told in cast shadows: shapes on walls and paper screens that do not match the things casting them.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; tell the fear through its shadow or silhouette on a wall, screen or curtain.",
+      color_and_tone: 'Warm lamp amber on walls and screens with pure black silhouettes.',
+      lighting_and_shadow:
+        'One strong low lamp throwing huge sharp shadows on walls, paper screens or curtains.',
+      texture_and_material:
+        'Paper screens, plaster walls and fabric curtains catching crisp shadow shapes.',
+      camera_and_composition:
+        'Frames dominated by a lit wall or screen with the real subject small or off-frame.',
+      atmosphere_and_mood:
+        'Suggestive and chilling, the imagination filling in whatever the shadow is doing.',
+      rendering_and_quality:
+        'Graphic prestige anime with razor-sharp silhouettes and simple warm backgrounds.',
+      creative_brief:
+        "Silhouette horror anime told in cast shadows: shapes on walls and paper screens that do not match the things casting them. Carry it through cast shadows, lit paper screen, mismatched silhouette, single lamp. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'cast shadows; lit paper screen; mismatched silhouette; single lamp',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-097',
+    name: 'Mirror Double Horror Anime',
+    displayName: 'Mirror Double Horror Anime',
+    styleAnchors: ['Mirror Double Horror Anime', 'doppelganger horror anime', 'lagging reflection'],
+    category: '7. Horror',
+    domain: 'doppelganger horror anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Doppelganger horror anime of mirrors and reflections that stop copying: doubles, lagging reflections and wrong expressions.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; include one reflection or double of it that behaves slightly differently.",
+      color_and_tone:
+        'Muted domestic colors with a colder, bluer version of the scene inside the reflection.',
+      lighting_and_shadow:
+        'Soft interior light with a slightly different light direction inside the mirror.',
+      texture_and_material:
+        'Mirror glass, polished surfaces, windows at night and water reflections drawn cleanly.',
+      camera_and_composition:
+        'Compositions split between subject and reflection, symmetrical but not quite matching.',
+      atmosphere_and_mood: 'Uncanny and personal, the fear of meeting a self that is not you.',
+      rendering_and_quality:
+        'Precise prestige anime with carefully mismatched mirrored details and clean glass reflections.',
+      creative_brief:
+        "Doppelganger horror anime of mirrors and reflections that stop copying: doubles, lagging reflections and wrong expressions. Carry it through lagging reflection, cold mirror world, split symmetry, wrong expression. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'lagging reflection; cold mirror world; split symmetry; wrong expression',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-098',
+    name: 'Fog Town Siren Horror Anime',
+    displayName: 'Fog Town Siren Horror Anime',
+    styleAnchors: ['Fog Town Siren Horror Anime', 'fog town horror anime', 'thick fog'],
+    category: '7. Horror',
+    domain: 'fog town horror anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Fog-bound town horror anime: rusted streets, endless grey fog, distant sirens and shapes that appear only at the edge of sight.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; bury the surroundings in thick fog so only nearby details remain readable.",
+      color_and_tone: 'Grey-white fog, rust orange and dull teal with almost no saturation.',
+      lighting_and_shadow:
+        'Flat fog light with no shadows, occasional flashlight cones and dim street lamps.',
+      texture_and_material:
+        'Rust, peeling paint, wet asphalt and drifting ash drawn with grainy detail.',
+      camera_and_composition:
+        'Street-level frames where everything beyond a few meters dissolves into fog.',
+      atmosphere_and_mood:
+        'Lost and haunted, a town that should be familiar but is not letting anyone leave.',
+      rendering_and_quality: 'Grainy prestige anime with soft fog gradients and rusted detail.',
+      creative_brief:
+        "Fog-bound town horror anime: rusted streets, endless grey fog, distant sirens and shapes that appear only at the edge of sight. Carry it through thick fog, rust, ash, figures at the edge of sight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'thick fog; rust; ash; figures at the edge of sight',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-099',
+    name: 'Night Parade Yokai Anime',
+    displayName: 'Night Parade Yokai Anime',
+    styleAnchors: ['Night Parade Yokai Anime', 'yokai procession anime', 'night procession'],
+    category: '7. Horror',
+    domain: 'yokai procession anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Folklore horror anime of night processions of spirits: lanterns, strange creatures, household objects come alive and mist-filled streets.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; let a procession of strange folklore creatures pass through or near it at night.",
+      color_and_tone:
+        'Night indigo, lantern orange and pale spirit greens with ink-black silhouettes.',
+      lighting_and_shadow:
+        'Lantern light carried by the procession and cold moonlight on the street.',
+      texture_and_material:
+        'Paper lanterns, old wood, straw and cloth creatures drawn with lively ink line.',
+      camera_and_composition:
+        'Long horizontal processions across the frame, witnesses hidden behind doors.',
+      atmosphere_and_mood:
+        'Eerie and playful, a strange celebration that humans are not meant to watch.',
+      rendering_and_quality:
+        'Lively prestige anime with inventive creature designs and warm lantern glows.',
+      creative_brief:
+        "Folklore horror anime of night processions of spirits: lanterns, strange creatures, household objects come alive and mist-filled streets. Carry it through night procession, lanterns, object spirits, hidden witnesses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'night procession; lanterns; object spirits; hidden witnesses',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-100',
+    name: 'Expressionist Shadow Horror Anime',
+    displayName: 'Expressionist Shadow Horror Anime',
+    styleAnchors: [
+      'Expressionist Shadow Horror Anime',
+      'expressionist horror anime',
+      'slanted sets',
+    ],
+    category: '7. Horror',
+    domain: 'expressionist horror anime',
+    negativePrompt:
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Silent-film expressionist horror anime: slanted walls, painted shadows, crooked streets and stark black-and-white contrast.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; distort the architecture around it into slanted, angular shapes with painted shadows.",
+      color_and_tone: 'High-contrast black, white and grey with a faint sepia or green tint.',
+      lighting_and_shadow:
+        'Painted hard-edged shadows and light shapes that do not follow real light direction.',
+      texture_and_material:
+        'Flat painted sets, angular doors and streets, and grainy film texture.',
+      camera_and_composition:
+        'Tilted, theatrical frames with sharp diagonals and exaggerated perspective.',
+      atmosphere_and_mood:
+        'Feverish and theatrical, a nightmare built from crooked painted scenery.',
+      rendering_and_quality: 'Graphic prestige anime with bold angular design and film grain.',
+      creative_brief:
+        "Silent-film expressionist horror anime: slanted walls, painted shadows, crooked streets and stark black-and-white contrast. Carry it through slanted sets, painted shadows, stark contrast, film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'slanted sets; painted shadows; stark contrast; film grain',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

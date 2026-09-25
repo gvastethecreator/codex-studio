@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP13-095
+packId: pack_16
+name: Night Shift Hospital Horror Anime
+styleAnchors:
+  - Night Shift Hospital Horror Anime
+  - hospital horror anime
+  - curtained beds
+displayName: Night Shift Hospital Horror Anime
+category: 7. Horror
+domain: hospital horror anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - horror
+  - hospital
+  - horror
+  - anime
+visualDna:
+  aesthetic: 'Hospital horror anime of the night shift: humming machines, curtained beds, monitors and nurses walking long quiet wards.'
+  subject_treatment: Keep the prompt's subject and setting; place it within a hospital at night where equipment and curtains hide something.
+  color_and_tone: Cold blue-green night lighting with monitor glows and one warm nurses-station lamp.
+  lighting_and_shadow: Dim night-mode ceiling lights, monitor glow on faces and silhouettes behind curtains.
+  texture_and_material: Curtain fabric, steel bed frames, IV stands and polished floors in clean cel.
+  camera_and_composition: Long ward perspectives and silhouettes seen through thin curtains.
+  atmosphere_and_mood: Exhausted and uneasy, a long night shift where the quiet feels deliberate.
+  rendering_and_quality: Clean prestige anime with careful low-light gradients and restrained effects.
+  creative_brief: "Hospital horror anime of the night shift: humming machines, curtained beds, monitors and nurses walking long quiet wards. Carry it through curtained beds, monitor glow, long wards, silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: curtained beds; monitor glow; long wards; silhouettes
+avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - gore
+  - graphic wounds
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: horror
+  categoryName: 7. Horror
+  tags:
+    - anime-classics-and-prestige
+    - horror
+    - hospital
+    - horror
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: hospital horror anime

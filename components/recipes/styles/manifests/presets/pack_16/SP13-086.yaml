@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP13-086
+packId: pack_16
+name: Cursed Videotape Horror Anime
+styleAnchors:
+  - Cursed Videotape Horror Anime
+  - analog tape horror anime
+  - tracking noise
+displayName: Cursed Videotape Horror Anime
+category: 7. Horror
+domain: analog tape horror anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - horror
+  - vhs
+  - analog-horror
+  - anime
+visualDna:
+  aesthetic: 'Analog horror anime seen through a worn videotape: tracking noise, color bleed and single frames that should not be there.'
+  subject_treatment: Keep the prompt's subject and setting; show it as recorded footage, with tape damage getting worse near the frightening detail.
+  color_and_tone: Faded washed-out color with magenta and green chroma bleed and crushed blacks.
+  lighting_and_shadow: Harsh on-camera light or dim household lamps, blown highlights and murky shadows.
+  texture_and_material: VHS tracking lines, dropouts, noise bands and soft tape blur over clean anime line.
+  camera_and_composition: Handheld home-video framing, slightly tilted, with the unsettling detail small and off-center.
+  atmosphere_and_mood: Creeping and wrong, the feeling of watching a tape that someone left for you.
+  rendering_and_quality: Clean anime footage degraded by convincing analog tape artifacts that never hide the subject.
+  creative_brief: "Analog horror anime seen through a worn videotape: tracking noise, color bleed and single frames that should not be there. Carry it through tracking noise, chroma bleed, handheld tilt, small wrong detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: tracking noise; chroma bleed; handheld tilt; small wrong detail
+avoidRules:
+  - existing anime character likeness
+  - studio or franchise logo
+  - readable text
+  - muddy off-model anatomy
+  - generic AI anime gloss
+  - gore
+  - graphic wounds
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: horror
+  categoryName: 7. Horror
+  tags:
+    - anime-classics-and-prestige
+    - horror
+    - vhs
+    - analog-horror
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: analog tape horror anime

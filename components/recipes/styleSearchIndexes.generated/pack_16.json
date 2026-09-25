@@ -3,7 +3,7 @@
     {
       "id": "pack_16",
       "name": "Anime 03 — Anime Classics & Prestige",
-      "presetCount": 156
+      "presetCount": 171
     }
   ],
   "presets": [
@@ -2176,9 +2176,8 @@
     },
     {
       "id": "SP13-031",
-      "name": "Institutional Liminal Dread",
-      "sourceName": "Institutional Liminal Dread Style",
-      "styleAnchors": ["Institutional Liminal Dread Style"],
+      "name": "Institutional Liminal Dread Anime",
+      "styleAnchors": ["Institutional Liminal Dread Anime"],
       "ref": "pack_16/SP13-031.yaml",
       "packId": "pack_16",
       "packName": "Anime 03 — Anime Classics & Prestige",
@@ -2186,13 +2185,12 @@
       "categoryName": "7. Horror",
       "tags": ["anime-03-anime-classics-and-prestige", "horror"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-031 institutional liminal dread institutional liminal dread style 7. horror horror animation pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror"
+      "searchableText": "sp13-031 institutional liminal dread anime 7. horror horror animation pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror"
     },
     {
       "id": "SP13-032",
-      "name": "Crimson Celestial Omen",
-      "sourceName": "Crimson Celestial Omen Style",
-      "styleAnchors": ["Crimson Celestial Omen Style"],
+      "name": "Crimson Celestial Omen Anime",
+      "styleAnchors": ["Crimson Celestial Omen Anime"],
       "ref": "pack_16/SP13-032.yaml",
       "packId": "pack_16",
       "packName": "Anime 03 — Anime Classics & Prestige",
@@ -2200,13 +2198,12 @@
       "categoryName": "7. Horror",
       "tags": ["anime-03-anime-classics-and-prestige", "horror"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-032 crimson celestial omen crimson celestial omen style 7. horror horror animation pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror"
+      "searchableText": "sp13-032 crimson celestial omen anime 7. horror horror animation pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror"
     },
     {
       "id": "SP13-033",
-      "name": "Grotesque Marionette Spotlight",
-      "sourceName": "Grotesque Marionette Spotlight Style",
-      "styleAnchors": ["Grotesque Marionette Spotlight Style"],
+      "name": "Grotesque Marionette Spotlight Anime",
+      "styleAnchors": ["Grotesque Marionette Spotlight Anime"],
       "ref": "pack_16/SP13-033.yaml",
       "packId": "pack_16",
       "packName": "Anime 03 — Anime Classics & Prestige",
@@ -2214,13 +2211,12 @@
       "categoryName": "7. Horror",
       "tags": ["anime-03-anime-classics-and-prestige", "horror"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-033 grotesque marionette spotlight grotesque marionette spotlight style 7. horror horror animation pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror"
+      "searchableText": "sp13-033 grotesque marionette spotlight anime 7. horror horror animation pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror"
     },
     {
       "id": "SP13-034",
-      "name": "Deep Void Whisper",
-      "sourceName": "Deep Void Whisper Style",
-      "styleAnchors": ["Deep Void Whisper Style"],
+      "name": "Deep Void Whisper Anime",
+      "styleAnchors": ["Deep Void Whisper Anime"],
       "ref": "pack_16/SP13-034.yaml",
       "packId": "pack_16",
       "packName": "Anime 03 — Anime Classics & Prestige",
@@ -2228,13 +2224,12 @@
       "categoryName": "7. Horror",
       "tags": ["anime-03-anime-classics-and-prestige", "horror"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-034 deep void whisper deep void whisper style 7. horror horror animation pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror"
+      "searchableText": "sp13-034 deep void whisper anime 7. horror horror animation pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror"
     },
     {
       "id": "SP13-035",
-      "name": "Demonic Ritual Mask Geometry",
-      "sourceName": "Demonic Ritual Mask Geometry Style",
-      "styleAnchors": ["Demonic Ritual Mask Geometry Style"],
+      "name": "Ritual Mask Geometry Anime",
+      "styleAnchors": ["Ritual Mask Geometry Anime"],
       "ref": "pack_16/SP13-035.yaml",
       "packId": "pack_16",
       "packName": "Anime 03 — Anime Classics & Prestige",
@@ -2242,8 +2237,254 @@
       "categoryName": "7. Horror",
       "tags": ["anime-03-anime-classics-and-prestige", "horror"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-035 demonic ritual mask geometry demonic ritual mask geometry style 7. horror horror animation pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror"
+      "searchableText": "sp13-035 ritual mask geometry anime 7. horror horror animation pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror"
+    },
+    {
+      "id": "SP13-086",
+      "name": "Cursed Videotape Horror Anime",
+      "styleAnchors": [
+        "Cursed Videotape Horror Anime",
+        "analog tape horror anime",
+        "tracking noise"
+      ],
+      "ref": "pack_16/SP13-086.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "horror",
+      "categoryName": "7. Horror",
+      "domain": "analog tape horror anime",
+      "tags": ["anime-03-anime-classics-and-prestige", "horror", "analog-tape-horror-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-086 cursed videotape horror anime analog tape horror anime tracking noise 7. horror horror animation analog tape horror anime pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror analog-tape-horror-anime"
+    },
+    {
+      "id": "SP13-087",
+      "name": "Slow Metamorphosis Dread Anime",
+      "styleAnchors": [
+        "Slow Metamorphosis Dread Anime",
+        "transformation horror anime",
+        "ordinary scene"
+      ],
+      "ref": "pack_16/SP13-087.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "horror",
+      "categoryName": "7. Horror",
+      "domain": "transformation horror anime",
+      "tags": ["anime-03-anime-classics-and-prestige", "horror", "transformation-horror-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-087 slow metamorphosis dread anime transformation horror anime ordinary scene 7. horror horror animation transformation horror anime pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror transformation-horror-anime"
+    },
+    {
+      "id": "SP13-088",
+      "name": "Folk Village Festival Horror Anime",
+      "styleAnchors": [
+        "Folk Village Festival Horror Anime",
+        "rural festival horror anime",
+        "bright daylight"
+      ],
+      "ref": "pack_16/SP13-088.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "horror",
+      "categoryName": "7. Horror",
+      "domain": "rural festival horror anime",
+      "tags": ["anime-03-anime-classics-and-prestige", "horror", "rural-festival-horror-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-088 folk village festival horror anime rural festival horror anime bright daylight 7. horror horror animation rural festival horror anime pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror rural-festival-horror-anime"
+    },
+    {
+      "id": "SP13-089",
+      "name": "School Ghost Story Anime",
+      "styleAnchors": ["School Ghost Story Anime", "kaidan school anime", "empty classrooms"],
+      "ref": "pack_16/SP13-089.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "horror",
+      "categoryName": "7. Horror",
+      "domain": "kaidan school anime",
+      "tags": ["anime-03-anime-classics-and-prestige", "horror", "kaidan-school-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-089 school ghost story anime kaidan school anime empty classrooms 7. horror horror animation kaidan school anime pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror kaidan-school-anime"
+    },
+    {
+      "id": "SP13-090",
+      "name": "Deep Sea Leviathan Horror Anime",
+      "styleAnchors": [
+        "Deep Sea Leviathan Horror Anime",
+        "oceanic horror anime",
+        "huge shadow below"
+      ],
+      "ref": "pack_16/SP13-090.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "horror",
+      "categoryName": "7. Horror",
+      "domain": "oceanic horror anime",
+      "tags": ["anime-03-anime-classics-and-prestige", "horror", "oceanic-horror-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-090 deep sea leviathan horror anime oceanic horror anime huge shadow below 7. horror horror animation oceanic horror anime pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror oceanic-horror-anime"
+    },
+    {
+      "id": "SP13-091",
+      "name": "Haunted Dollhouse Horror Anime",
+      "styleAnchors": [
+        "Haunted Dollhouse Horror Anime",
+        "miniature horror anime",
+        "open dollhouse rooms"
+      ],
+      "ref": "pack_16/SP13-091.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "horror",
+      "categoryName": "7. Horror",
+      "domain": "miniature horror anime",
+      "tags": ["anime-03-anime-classics-and-prestige", "horror", "miniature-horror-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-091 haunted dollhouse horror anime miniature horror anime open dollhouse rooms 7. horror horror animation miniature horror anime pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror miniature-horror-anime"
+    },
+    {
+      "id": "SP13-092",
+      "name": "Night-Vision Found Footage Anime",
+      "styleAnchors": [
+        "Night-Vision Found Footage Anime",
+        "found footage anime",
+        "green night-vision"
+      ],
+      "ref": "pack_16/SP13-092.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "horror",
+      "categoryName": "7. Horror",
+      "domain": "found footage anime",
+      "tags": ["anime-03-anime-classics-and-prestige", "horror", "found-footage-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-092 night-vision found footage anime found footage anime green night-vision 7. horror horror animation found footage anime pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror found-footage-anime"
+    },
+    {
+      "id": "SP13-093",
+      "name": "Cosmic Sky Eldritch Anime",
+      "styleAnchors": ["Cosmic Sky Eldritch Anime", "cosmic horror anime", "impossible sky"],
+      "ref": "pack_16/SP13-093.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "horror",
+      "categoryName": "7. Horror",
+      "domain": "cosmic horror anime",
+      "tags": ["anime-03-anime-classics-and-prestige", "horror", "cosmic-horror-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-093 cosmic sky eldritch anime cosmic horror anime impossible sky 7. horror horror animation cosmic horror anime pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror cosmic-horror-anime"
+    },
+    {
+      "id": "SP13-094",
+      "name": "Rot Garden Fungal Horror Anime",
+      "styleAnchors": ["Rot Garden Fungal Horror Anime", "fungal horror anime", "creeping fungus"],
+      "ref": "pack_16/SP13-094.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "horror",
+      "categoryName": "7. Horror",
+      "domain": "fungal horror anime",
+      "tags": ["anime-03-anime-classics-and-prestige", "horror", "fungal-horror-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-094 rot garden fungal horror anime fungal horror anime creeping fungus 7. horror horror animation fungal horror anime pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror fungal-horror-anime"
+    },
+    {
+      "id": "SP13-095",
+      "name": "Night Shift Hospital Horror Anime",
+      "styleAnchors": [
+        "Night Shift Hospital Horror Anime",
+        "hospital horror anime",
+        "curtained beds"
+      ],
+      "ref": "pack_16/SP13-095.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "horror",
+      "categoryName": "7. Horror",
+      "domain": "hospital horror anime",
+      "tags": ["anime-03-anime-classics-and-prestige", "horror", "hospital-horror-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-095 night shift hospital horror anime hospital horror anime curtained beds 7. horror horror animation hospital horror anime pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror hospital-horror-anime"
+    },
+    {
+      "id": "SP13-096",
+      "name": "Shadow Play Horror Anime",
+      "styleAnchors": ["Shadow Play Horror Anime", "silhouette horror anime", "cast shadows"],
+      "ref": "pack_16/SP13-096.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "horror",
+      "categoryName": "7. Horror",
+      "domain": "silhouette horror anime",
+      "tags": ["anime-03-anime-classics-and-prestige", "horror", "silhouette-horror-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-096 shadow play horror anime silhouette horror anime cast shadows 7. horror horror animation silhouette horror anime pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror silhouette-horror-anime"
+    },
+    {
+      "id": "SP13-097",
+      "name": "Mirror Double Horror Anime",
+      "styleAnchors": [
+        "Mirror Double Horror Anime",
+        "doppelganger horror anime",
+        "lagging reflection"
+      ],
+      "ref": "pack_16/SP13-097.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "horror",
+      "categoryName": "7. Horror",
+      "domain": "doppelganger horror anime",
+      "tags": ["anime-03-anime-classics-and-prestige", "horror", "doppelganger-horror-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-097 mirror double horror anime doppelganger horror anime lagging reflection 7. horror horror animation doppelganger horror anime pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror doppelganger-horror-anime"
+    },
+    {
+      "id": "SP13-098",
+      "name": "Fog Town Siren Horror Anime",
+      "styleAnchors": ["Fog Town Siren Horror Anime", "fog town horror anime", "thick fog"],
+      "ref": "pack_16/SP13-098.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "horror",
+      "categoryName": "7. Horror",
+      "domain": "fog town horror anime",
+      "tags": ["anime-03-anime-classics-and-prestige", "horror", "fog-town-horror-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-098 fog town siren horror anime fog town horror anime thick fog 7. horror horror animation fog town horror anime pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror fog-town-horror-anime"
+    },
+    {
+      "id": "SP13-099",
+      "name": "Night Parade Yokai Anime",
+      "styleAnchors": ["Night Parade Yokai Anime", "yokai procession anime", "night procession"],
+      "ref": "pack_16/SP13-099.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "horror",
+      "categoryName": "7. Horror",
+      "domain": "yokai procession anime",
+      "tags": ["anime-03-anime-classics-and-prestige", "horror", "yokai-procession-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-099 night parade yokai anime yokai procession anime night procession 7. horror horror animation yokai procession anime pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror yokai-procession-anime"
+    },
+    {
+      "id": "SP13-100",
+      "name": "Expressionist Shadow Horror Anime",
+      "styleAnchors": [
+        "Expressionist Shadow Horror Anime",
+        "expressionist horror anime",
+        "slanted sets"
+      ],
+      "ref": "pack_16/SP13-100.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "horror",
+      "categoryName": "7. Horror",
+      "domain": "expressionist horror anime",
+      "tags": ["anime-03-anime-classics-and-prestige", "horror", "expressionist-horror-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-100 expressionist shadow horror anime expressionist horror anime slanted sets 7. horror horror animation expressionist horror anime pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror expressionist-horror-anime"
     }
   ],
-  "totalPresetCount": 156
+  "totalPresetCount": 171
 }
