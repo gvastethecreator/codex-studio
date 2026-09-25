@@ -334,9 +334,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Ring-light photograph of an adult makeup artist painting intricate silver scale patterns on her own face for a mermaid costume, ring reflection clear in her eyes, shadowless light. No text or logo.',
-        "Ring-light close-up photograph of an adult tattoo artist examining a fresh dragon tattoo on a client's forearm, even frontal light, ring catchlight. No text or logo.",
-        'Ring-light photograph of an adult watchmaker with a loupe in one eye, the ring light reflected in both lens and eye, tiny gears on the bench. No text or logo.',
+        'Ring-light close-up photograph of an elderly bald theatre makeup artist with a white goatee gluing prosthetic goblin ears onto his own head in front of a mirror, ring reflection clear in his eyes, shadowless frontal light. No text or logo.',
+        "Ring-light close-up photograph of a heavily tattooed bearded adult man inspecting a fresh dragon tattoo on his client's forearm, even frontal light, ring catchlight in his eyes. No text or logo.",
+        'Ring-light product-style photograph of an antique brass pocket watch opened on a black velvet cloth, its crystal and gears reflecting a perfect ring of light, no person in frame. No text or logo.',
       ],
     },
     'SP01-044': {

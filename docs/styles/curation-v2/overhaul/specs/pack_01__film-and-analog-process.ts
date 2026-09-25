@@ -63,9 +63,9 @@ const spec: Spec = {
       avoid: [...AVOID, 'crushed blacks', 'neon saturation'],
       dropAvoid: GRAIN_DROP,
       briefs: [
-        'Photograph shot on Kodak Portra 400, overexposed one stop: an adult shepherdess resting against a drystone wall with an orphaned lamb asleep in her lap on an overcast afternoon. Creamy pastel sky, peach skin, soft sage grass, fine even film grain, gentle low contrast. No text, logo or film border.',
-        'Photograph on Kodak Portra 400: two adult sisters in undyed linen dresses braiding a crown of wildflowers at a farmhouse window before a midsummer bonfire. Soft window light, apricot skin, highlights rolling off without clipping, fine grain in the plaster wall. No text, logo or film border.',
-        'Photograph on Kodak Portra 400 of an adult potter with clay-grey forearms trimming a bowl on a kick wheel beside a tall north window. Warm neutral whites, lifted shadows, fine grain across the wet clay and apron. No text, logo or film border.',
+        "Photograph shot on Kodak Portra 400, overexposed one stop: a weathered old shepherd with a white beard and a flat wool cap resting against a drystone wall with an orphaned lamb asleep in his lap on an overcast afternoon. Creamy pastel sky, ruddy skin, soft sage grass, fine even film grain, gentle low contrast. No text, logo or film border.",
+        "Photograph on Kodak Portra 400 of an elderly grey-haired couple, husband and wife, dancing slowly in a farmhouse kitchen before a midsummer bonfire glowing through the window. Soft window light, apricot skin, highlights rolling off without clipping, fine grain in the plaster wall. No text, logo or film border.",
+        "Photograph on Kodak Portra 400 of a broad bearded adult man potter with clay-grey forearms trimming a bowl on a kick wheel beside a tall north window. Warm neutral whites, lifted shadows, fine grain across the wet clay and apron. No text, logo or film border.",
       ],
     },
     'SP01-012': {
@@ -470,7 +470,7 @@ const spec: Spec = {
       briefs: [
         'Black-and-white photograph on Kodak Tri-X pushed to 3200: an adult bare-knuckle fighter slumped on a stool between rounds in a smoky cellar pit, one bare bulb overhead, sweat shining chalk-white, the crowd behind dissolved into solid black, clumped coarse grain. No text, logo or film border.',
         'Black-and-white photograph on pushed Tri-X of adult miners emerging from a shaft head at dusk, faces blackened, lamp beams burning white, shadows blocked, gritty grain. No text, logo or film border.',
-        'Black-and-white photograph on pushed Tri-X of an adult fire-eater exhaling a plume of flame at a night fair, the flame chalk-white, the audience a black mass, grain coarse and clumped. No text, logo or film border.',
+        "Black-and-white photograph on pushed Tri-X of an adult blacksmith plunging a glowing blade into a quench barrel at night, the burst of steam chalk-white, the forge a black mass, grain coarse and clumped. No text, logo or film border.",
       ],
     },
     {

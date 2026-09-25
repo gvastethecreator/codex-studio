@@ -219,7 +219,7 @@ const spec: Spec = {
       avoid: [...AVOID, 'license plate', 'badge', 'dull paint'],
       briefs: [
         'Automotive-style advertising photograph of a black lacquered royal carriage with gilded trim in a dark studio, long overhead strip lights reflecting in unbroken lines along its curved panels, low three-quarter angle, rim light on the wheels. No crest, text or logo.',
-        'Automotive rolling-shot photograph of a matte black vintage roadster without badges crossing a salt flat at dusk, wheels blurred, background streaked, crisp body. No plates, text or logo.',
+        "Automotive rolling-shot photograph of an original hand-built steam carriage of invented design, riveted copper boiler, tall spoked wheels and a black lacquered body, racing across a salt flat at dusk, wheels blurred, background streaked, crisp body. Not a real car model; no badges, plates, text or logo.",
         'Automotive-style rolling shot of a two-horse racing chariot at full speed, the bronze chariot body pin-sharp with strip-light reflections, spoked wheels and the dusty track streaked by the pan. No text or logo.',
       ],
     },
