@@ -171,6 +171,24 @@ categories:
     presetRefs:
       - pack_03/SP03-043.yaml
       - pack_03/SP03-044.yaml
+      - pack_03/SP03-143.yaml
+      - pack_03/SP03-144.yaml
+      - pack_03/SP03-145.yaml
+      - pack_03/SP03-146.yaml
+      - pack_03/SP03-147.yaml
+      - pack_03/SP03-148.yaml
+      - pack_03/SP03-149.yaml
+      - pack_03/SP03-150.yaml
+      - pack_03/SP03-151.yaml
+      - pack_03/SP03-152.yaml
+      - pack_03/SP03-153.yaml
+      - pack_03/SP03-154.yaml
+      - pack_03/SP03-155.yaml
+      - pack_03/SP03-156.yaml
+      - pack_03/SP03-157.yaml
+      - pack_03/SP03-158.yaml
+      - pack_03/SP03-159.yaml
+      - pack_03/SP03-160.yaml
 presetRefs:
   - pack_03/SP03-001.yaml
   - pack_03/SP03-002.yaml
@@ -314,3 +332,21 @@ presetRefs:
   - pack_03/SP03-142.yaml
   - pack_03/SP03-043.yaml
   - pack_03/SP03-044.yaml
+  - pack_03/SP03-143.yaml
+  - pack_03/SP03-144.yaml
+  - pack_03/SP03-145.yaml
+  - pack_03/SP03-146.yaml
+  - pack_03/SP03-147.yaml
+  - pack_03/SP03-148.yaml
+  - pack_03/SP03-149.yaml
+  - pack_03/SP03-150.yaml
+  - pack_03/SP03-151.yaml
+  - pack_03/SP03-152.yaml
+  - pack_03/SP03-153.yaml
+  - pack_03/SP03-154.yaml
+  - pack_03/SP03-155.yaml
+  - pack_03/SP03-156.yaml
+  - pack_03/SP03-157.yaml
+  - pack_03/SP03-158.yaml
+  - pack_03/SP03-159.yaml
+  - pack_03/SP03-160.yaml

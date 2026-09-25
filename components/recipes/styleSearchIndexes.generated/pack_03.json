@@ -3,7 +3,7 @@
     {
       "id": "pack_03",
       "name": "3D & CGI Rendering",
-      "presetCount": 142
+      "presetCount": 160
     }
   ],
   "presets": [
@@ -2146,7 +2146,8 @@
     },
     {
       "id": "SP03-044",
-      "name": "Thermal Vision",
+      "name": "Thermal Heatmap Shader",
+      "styleAnchors": ["Thermal Heatmap Shader", "Thermal Vision"],
       "ref": "pack_03/SP03-044.yaml",
       "packId": "pack_03",
       "packName": "3D & CGI Rendering",
@@ -2154,8 +2155,332 @@
       "categoryName": "8. Sensor And Technical Shaders",
       "tags": ["3d-and-cgi-rendering", "sensor-and-technical-shaders"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-044 thermal vision 8. sensor and technical shaders technical shaders pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders"
+      "searchableText": "sp03-044 thermal heatmap shader thermal vision 8. sensor and technical shaders technical shaders pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders"
+    },
+    {
+      "id": "SP03-143",
+      "name": "Lidar Point Cloud Render",
+      "styleAnchors": [
+        "Lidar Point Cloud Render",
+        "lidar point cloud visualization",
+        "millions of tiny points"
+      ],
+      "ref": "pack_03/SP03-143.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "sensor-and-technical-shaders",
+      "categoryName": "8. Sensor And Technical Shaders",
+      "domain": "lidar point cloud visualization",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "sensor-and-technical-shaders",
+        "lidar-point-cloud-visualization"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-143 lidar point cloud render lidar point cloud visualization millions of tiny points 8. sensor and technical shaders technical shaders lidar point cloud visualization pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders lidar-point-cloud-visualization"
+    },
+    {
+      "id": "SP03-144",
+      "name": "Z-Depth Pass",
+      "styleAnchors": ["Z-Depth Pass", "render depth buffer", "distance as brightness"],
+      "ref": "pack_03/SP03-144.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "sensor-and-technical-shaders",
+      "categoryName": "8. Sensor And Technical Shaders",
+      "domain": "render depth buffer",
+      "tags": ["3d-and-cgi-rendering", "sensor-and-technical-shaders", "render-depth-buffer"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-144 z-depth pass render depth buffer distance as brightness 8. sensor and technical shaders technical shaders render depth buffer pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders render-depth-buffer"
+    },
+    {
+      "id": "SP03-145",
+      "name": "World-Space Normal Pass",
+      "styleAnchors": [
+        "World-Space Normal Pass",
+        "render normal buffer",
+        "axis-to-RGB color mapping"
+      ],
+      "ref": "pack_03/SP03-145.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "sensor-and-technical-shaders",
+      "categoryName": "8. Sensor And Technical Shaders",
+      "domain": "render normal buffer",
+      "tags": ["3d-and-cgi-rendering", "sensor-and-technical-shaders", "render-normal-buffer"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-145 world-space normal pass render normal buffer axis-to-rgb color mapping 8. sensor and technical shaders technical shaders render normal buffer pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders render-normal-buffer"
+    },
+    {
+      "id": "SP03-146",
+      "name": "UV Checker Grid Shader",
+      "styleAnchors": ["UV Checker Grid Shader", "texture mapping test", "colored checker grid"],
+      "ref": "pack_03/SP03-146.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "sensor-and-technical-shaders",
+      "categoryName": "8. Sensor And Technical Shaders",
+      "domain": "texture mapping test",
+      "tags": ["3d-and-cgi-rendering", "sensor-and-technical-shaders", "texture-mapping-test"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-146 uv checker grid shader texture mapping test colored checker grid 8. sensor and technical shaders technical shaders texture mapping test pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders texture-mapping-test"
+    },
+    {
+      "id": "SP03-147",
+      "name": "Curvature Cavity Map",
+      "styleAnchors": ["Curvature Cavity Map", "baked curvature texture", "mid-grey flats"],
+      "ref": "pack_03/SP03-147.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "sensor-and-technical-shaders",
+      "categoryName": "8. Sensor And Technical Shaders",
+      "domain": "baked curvature texture",
+      "tags": ["3d-and-cgi-rendering", "sensor-and-technical-shaders", "baked-curvature-texture"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-147 curvature cavity map baked curvature texture mid-grey flats 8. sensor and technical shaders technical shaders baked curvature texture pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders baked-curvature-texture"
+    },
+    {
+      "id": "SP03-148",
+      "name": "Object ID Matte Pass",
+      "styleAnchors": [
+        "Object ID Matte Pass",
+        "compositing ID matte",
+        "one flat random color per object"
+      ],
+      "ref": "pack_03/SP03-148.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "sensor-and-technical-shaders",
+      "categoryName": "8. Sensor And Technical Shaders",
+      "domain": "compositing ID matte",
+      "tags": ["3d-and-cgi-rendering", "sensor-and-technical-shaders", "compositing-id-matte"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-148 object id matte pass compositing id matte one flat random color per object 8. sensor and technical shaders technical shaders compositing id matte pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders compositing-id-matte"
+    },
+    {
+      "id": "SP03-149",
+      "name": "Motion Vector Pass",
+      "styleAnchors": [
+        "Motion Vector Pass",
+        "render velocity buffer",
+        "red horizontal and green vertical velocity"
+      ],
+      "ref": "pack_03/SP03-149.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "sensor-and-technical-shaders",
+      "categoryName": "8. Sensor And Technical Shaders",
+      "domain": "render velocity buffer",
+      "tags": ["3d-and-cgi-rendering", "sensor-and-technical-shaders", "render-velocity-buffer"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-149 motion vector pass render velocity buffer red horizontal and green vertical velocity 8. sensor and technical shaders technical shaders render velocity buffer pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders render-velocity-buffer"
+    },
+    {
+      "id": "SP03-150",
+      "name": "Heat-Distortion Shimmer Shader",
+      "styleAnchors": [
+        "Heat-Distortion Shimmer Shader",
+        "refraction distortion shader",
+        "rising refraction columns"
+      ],
+      "ref": "pack_03/SP03-150.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "sensor-and-technical-shaders",
+      "categoryName": "8. Sensor And Technical Shaders",
+      "domain": "refraction distortion shader",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "sensor-and-technical-shaders",
+        "refraction-distortion-shader"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-150 heat-distortion shimmer shader refraction distortion shader rising refraction columns 8. sensor and technical shaders technical shaders refraction distortion shader pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders refraction-distortion-shader"
+    },
+    {
+      "id": "SP03-151",
+      "name": "Voxel Cross-Section Cutaway",
+      "styleAnchors": [
+        "Voxel Cross-Section Cutaway",
+        "clipping-plane section shader",
+        "flat clipping plane"
+      ],
+      "ref": "pack_03/SP03-151.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "sensor-and-technical-shaders",
+      "categoryName": "8. Sensor And Technical Shaders",
+      "domain": "clipping-plane section shader",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "sensor-and-technical-shaders",
+        "clipping-plane-section-shader"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-151 voxel cross-section cutaway clipping-plane section shader flat clipping plane 8. sensor and technical shaders technical shaders clipping-plane section shader pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders clipping-plane-section-shader"
+    },
+    {
+      "id": "SP03-152",
+      "name": "Depth-Sliced Hologram Shader",
+      "styleAnchors": [
+        "Depth-Sliced Hologram Shader",
+        "volumetric display shader",
+        "stacked parallel contour slices"
+      ],
+      "ref": "pack_03/SP03-152.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "sensor-and-technical-shaders",
+      "categoryName": "8. Sensor And Technical Shaders",
+      "domain": "volumetric display shader",
+      "tags": ["3d-and-cgi-rendering", "sensor-and-technical-shaders", "volumetric-display-shader"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-152 depth-sliced hologram shader volumetric display shader stacked parallel contour slices 8. sensor and technical shaders technical shaders volumetric display shader pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders volumetric-display-shader"
+    },
+    {
+      "id": "SP03-153",
+      "name": "Unlit Albedo Pass",
+      "styleAnchors": ["Unlit Albedo Pass", "base color render pass", "base color only"],
+      "ref": "pack_03/SP03-153.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "sensor-and-technical-shaders",
+      "categoryName": "8. Sensor And Technical Shaders",
+      "domain": "base color render pass",
+      "tags": ["3d-and-cgi-rendering", "sensor-and-technical-shaders", "base-color-render-pass"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-153 unlit albedo pass base color render pass base color only 8. sensor and technical shaders technical shaders base color render pass pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders base-color-render-pass"
+    },
+    {
+      "id": "SP03-154",
+      "name": "SDF Contour Band Shader",
+      "styleAnchors": [
+        "SDF Contour Band Shader",
+        "signed distance field debug",
+        "repeating distance rings"
+      ],
+      "ref": "pack_03/SP03-154.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "sensor-and-technical-shaders",
+      "categoryName": "8. Sensor And Technical Shaders",
+      "domain": "signed distance field debug",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "sensor-and-technical-shaders",
+        "signed-distance-field-debug"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-154 sdf contour band shader signed distance field debug repeating distance rings 8. sensor and technical shaders technical shaders signed distance field debug pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders signed-distance-field-debug"
+    },
+    {
+      "id": "SP03-155",
+      "name": "Overdraw Accumulation View",
+      "styleAnchors": [
+        "Overdraw Accumulation View",
+        "render cost debug view",
+        "additive layer counting"
+      ],
+      "ref": "pack_03/SP03-155.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "sensor-and-technical-shaders",
+      "categoryName": "8. Sensor And Technical Shaders",
+      "domain": "render cost debug view",
+      "tags": ["3d-and-cgi-rendering", "sensor-and-technical-shaders", "render-cost-debug-view"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-155 overdraw accumulation view render cost debug view additive layer counting 8. sensor and technical shaders technical shaders render cost debug view pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders render-cost-debug-view"
+    },
+    {
+      "id": "SP03-156",
+      "name": "Hex Force-Field Shield Shader",
+      "styleAnchors": [
+        "Hex Force-Field Shield Shader",
+        "game VFX shield shader",
+        "fresnel-bright dome rim"
+      ],
+      "ref": "pack_03/SP03-156.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "sensor-and-technical-shaders",
+      "categoryName": "8. Sensor And Technical Shaders",
+      "domain": "game VFX shield shader",
+      "tags": ["3d-and-cgi-rendering", "sensor-and-technical-shaders", "game-vfx-shield-shader"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-156 hex force-field shield shader game vfx shield shader fresnel-bright dome rim 8. sensor and technical shaders technical shaders game vfx shield shader pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders game-vfx-shield-shader"
+    },
+    {
+      "id": "SP03-157",
+      "name": "Noise Dissolve Edge Shader",
+      "styleAnchors": [
+        "Noise Dissolve Edge Shader",
+        "game VFX dissolve shader",
+        "noise-driven holes"
+      ],
+      "ref": "pack_03/SP03-157.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "sensor-and-technical-shaders",
+      "categoryName": "8. Sensor And Technical Shaders",
+      "domain": "game VFX dissolve shader",
+      "tags": ["3d-and-cgi-rendering", "sensor-and-technical-shaders", "game-vfx-dissolve-shader"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-157 noise dissolve edge shader game vfx dissolve shader noise-driven holes 8. sensor and technical shaders technical shaders game vfx dissolve shader pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders game-vfx-dissolve-shader"
+    },
+    {
+      "id": "SP03-158",
+      "name": "Radial Scanner Pulse Shader",
+      "styleAnchors": [
+        "Radial Scanner Pulse Shader",
+        "game VFX scan shader",
+        "expanding ring of light"
+      ],
+      "ref": "pack_03/SP03-158.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "sensor-and-technical-shaders",
+      "categoryName": "8. Sensor And Technical Shaders",
+      "domain": "game VFX scan shader",
+      "tags": ["3d-and-cgi-rendering", "sensor-and-technical-shaders", "game-vfx-scan-shader"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-158 radial scanner pulse shader game vfx scan shader expanding ring of light 8. sensor and technical shaders technical shaders game vfx scan shader pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders game-vfx-scan-shader"
+    },
+    {
+      "id": "SP03-159",
+      "name": "Edge Detection Line Pass",
+      "styleAnchors": [
+        "Edge Detection Line Pass",
+        "post-process line pass",
+        "lines from depth and normal jumps"
+      ],
+      "ref": "pack_03/SP03-159.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "sensor-and-technical-shaders",
+      "categoryName": "8. Sensor And Technical Shaders",
+      "domain": "post-process line pass",
+      "tags": ["3d-and-cgi-rendering", "sensor-and-technical-shaders", "post-process-line-pass"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-159 edge detection line pass post-process line pass lines from depth and normal jumps 8. sensor and technical shaders technical shaders post-process line pass pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders post-process-line-pass"
+    },
+    {
+      "id": "SP03-160",
+      "name": "Tonal Art Map Hatching Shader",
+      "styleAnchors": [
+        "Tonal Art Map Hatching Shader",
+        "real-time hatching shader",
+        "stacked hatch texture layers"
+      ],
+      "ref": "pack_03/SP03-160.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "sensor-and-technical-shaders",
+      "categoryName": "8. Sensor And Technical Shaders",
+      "domain": "real-time hatching shader",
+      "tags": ["3d-and-cgi-rendering", "sensor-and-technical-shaders", "real-time-hatching-shader"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-160 tonal art map hatching shader real-time hatching shader stacked hatch texture layers 8. sensor and technical shaders technical shaders real-time hatching shader pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders real-time-hatching-shader"
     }
   ],
-  "totalPresetCount": 142
+  "totalPresetCount": 160
 }

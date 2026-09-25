@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP03-158
+packId: pack_03
+name: Radial Scanner Pulse Shader
+styleAnchors:
+  - Radial Scanner Pulse Shader
+  - game VFX scan shader
+  - expanding ring of light
+displayName: Radial Scanner Pulse Shader
+category: 8. Sensor And Technical Shaders
+domain: game VFX scan shader
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - sensor-and-technical-shaders
+  - scan-pulse
+  - vfx-shader
+  - edge-reveal
+visualDna:
+  aesthetic: 'Radial scanner pulse shader: an expanding ring of light sweeping across the scene from one point, briefly outlining every edge it crosses in glowing lines.'
+  subject_treatment: Keep the prompt subject, setting, camera and normal CGI beauty render; this shader adds only its one named effect on the stated geometry, computed in the renderer rather than photographed.
+  color_and_tone: Dim, desaturated beauty render; a bright cyan or amber ring and edge highlights inside the pulse band.
+  lighting_and_shadow: Scene stays dark and low-key; the pulse band is emissive and fades behind the ring.
+  texture_and_material: Thin glowing edge lines on geometry within the band, faint grid projected on floors, sharp leading edge and soft trailing fade.
+  camera_and_composition: Keep the requested camera; the ring expands from the foreground or center so its curvature reads.
+  atmosphere_and_mood: Searching and suspenseful, the dark revealed one ring at a time.
+  rendering_and_quality: Screen-space depth-based pulse with crisp edges; no lidar points and no UI markers.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Radial Scanner Pulse Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: expanding ring of light; edge lines lit inside the band; dim desaturated scene; sharp leading edge; soft trailing fade
+avoidRules:
+  - sensor noise
+  - camera lens optics
+  - readable text
+  - color legend or scale bar
+  - software UI or viewport gizmos
+  - franchise likeness
+  - HUD markers
+  - point cloud dots
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, HUD markers, point cloud dots, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: sensor-and-technical-shaders
+  categoryName: 8. Sensor And Technical Shaders
+  tags:
+    - 3d-and-cgi-rendering
+    - sensor-and-technical-shaders
+    - scan-pulse
+    - vfx-shader
+    - edge-reveal
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: game VFX scan shader

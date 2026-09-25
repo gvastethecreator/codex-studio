@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP03-150
+packId: pack_03
+name: Heat-Distortion Shimmer Shader
+styleAnchors:
+  - Heat-Distortion Shimmer Shader
+  - refraction distortion shader
+  - rising refraction columns
+displayName: Heat-Distortion Shimmer Shader
+category: 8. Sensor And Technical Shaders
+domain: refraction distortion shader
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - sensor-and-technical-shaders
+  - heat-haze-shader
+  - refraction
+  - vfx-shader
+visualDna:
+  aesthetic: 'Heat-distortion shader: rising columns of screen-space refraction above hot sources, warping and rippling whatever lies behind them.'
+  subject_treatment: Keep the prompt subject, setting, camera and normal CGI beauty render; this shader adds only its one named effect on the stated geometry, computed in the renderer rather than photographed.
+  color_and_tone: Scene colors unchanged, only displaced; a faint brightening where the refraction compresses light.
+  lighting_and_shadow: Normal scene lighting; distorted zones bend highlights and edges into wavy ribbons.
+  texture_and_material: Noise-driven ripples stretched upward, strongest near the source and fading with height, shown against straight lines that bend.
+  camera_and_composition: Keep the requested camera; straight background lines pass through the haze column so the warp reads.
+  atmosphere_and_mood: Oppressive and airless, heat you can see.
+  rendering_and_quality: Clean real-time refraction; no schlieren shadowgraph look, no smoke and no color tint.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Heat-Distortion Shimmer Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: rising refraction columns; wavy warped background lines; strongest near source; no color tint; no smoke
+avoidRules:
+  - sensor noise
+  - camera lens optics
+  - readable text
+  - color legend or scale bar
+  - software UI or viewport gizmos
+  - franchise likeness
+  - schlieren shadowgraph
+  - smoke plume
+  - colored glow
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, schlieren shadowgraph, smoke plume, colored glow, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: sensor-and-technical-shaders
+  categoryName: 8. Sensor And Technical Shaders
+  tags:
+    - 3d-and-cgi-rendering
+    - sensor-and-technical-shaders
+    - heat-haze-shader
+    - refraction
+    - vfx-shader
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: refraction distortion shader

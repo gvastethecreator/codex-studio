@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP03-160
+packId: pack_03
+name: Tonal Art Map Hatching Shader
+styleAnchors:
+  - Tonal Art Map Hatching Shader
+  - real-time hatching shader
+  - stacked hatch texture layers
+displayName: Tonal Art Map Hatching Shader
+category: 8. Sensor And Technical Shaders
+domain: real-time hatching shader
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - sensor-and-technical-shaders
+  - hatching-shader
+  - npr-render
+  - tonal-art-map
+visualDna:
+  aesthetic: 'Real-time hatching shader: lit 3D geometry shaded with stacked hatch textures, one layer of strokes per tone, so darker areas gain cross-hatching automatically.'
+  subject_treatment: Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.
+  color_and_tone: Dark ink strokes on warm paper white, or one ink color; tone comes only from stroke density.
+  lighting_and_shadow: A single directional light; each shading step swaps in a denser hatch layer, shadows fully cross-hatched.
+  texture_and_material: Strokes mapped onto the surface in UV space, following the geometry, at constant screen density with slight texture swimming.
+  camera_and_composition: Keep the requested camera; strong single-light modeling shows all hatch levels.
+  atmosphere_and_mood: Bookish and moody, an engraving that turns in 3D.
+  rendering_and_quality: Non-photorealistic render with even stroke density and clean silhouettes; distinct from hand-drawn ink and from cel shading.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tonal Art Map Hatching Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: stacked hatch texture layers; tone by stroke density; strokes follow surface UVs; one directional light; clean silhouettes
+avoidRules:
+  - sensor noise
+  - camera lens optics
+  - readable text
+  - color legend or scale bar
+  - software UI or viewport gizmos
+  - franchise likeness
+  - toon cel bands
+  - hand-drawn sketch wobble
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, toon cel bands, hand-drawn sketch wobble, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: sensor-and-technical-shaders
+  categoryName: 8. Sensor And Technical Shaders
+  tags:
+    - 3d-and-cgi-rendering
+    - sensor-and-technical-shaders
+    - hatching-shader
+    - npr-render
+    - tonal-art-map
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: real-time hatching shader

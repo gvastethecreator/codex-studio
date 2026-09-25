@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP03-145
+packId: pack_03
+name: World-Space Normal Pass
+styleAnchors:
+  - World-Space Normal Pass
+  - render normal buffer
+  - axis-to-RGB color mapping
+displayName: World-Space Normal Pass
+category: 8. Sensor And Technical Shaders
+domain: render normal buffer
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - sensor-and-technical-shaders
+  - normal-pass
+  - render-pass
+  - surface-normals
+visualDna:
+  aesthetic: 'World-space normal pass: each surface colored by the direction it faces, so the X, Y and Z axes map to red, green and blue.'
+  subject_treatment: Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.
+  color_and_tone: Pastel lilac, mint, salmon and sky-blue fields; up-facing surfaces green-tinted, side faces red or blue; no texture color.
+  lighting_and_shadow: No lights or shadows; the color itself encodes orientation, so curved forms become smooth rainbow sweeps.
+  texture_and_material: Bump and carved detail read as tiny color shifts; flat planes are single flat colors with hard changes at creases.
+  camera_and_composition: Keep the requested camera; the colors stay tied to world axes, so the same wall keeps its color from any view.
+  atmosphere_and_mood: Technical yet candy-sweet, geometry turned into color.
+  rendering_and_quality: Clean anti-aliased buffer with no shading, no grain and smooth interpolation across curves.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies World-Space Normal Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: axis-to-RGB color mapping; pastel lilac and mint fields; hard color changes at creases; no lighting; carved detail as tiny shifts
+avoidRules:
+  - sensor noise
+  - camera lens optics
+  - readable text
+  - color legend or scale bar
+  - software UI or viewport gizmos
+  - franchise likeness
+  - tangent-space blue normal map texture
+  - lit shading
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, tangent-space blue normal map texture, lit shading, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: sensor-and-technical-shaders
+  categoryName: 8. Sensor And Technical Shaders
+  tags:
+    - 3d-and-cgi-rendering
+    - sensor-and-technical-shaders
+    - normal-pass
+    - render-pass
+    - surface-normals
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: render normal buffer

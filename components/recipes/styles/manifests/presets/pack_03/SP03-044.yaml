@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP03-044
 packId: pack_03
-name: Thermal Vision
+name: Thermal Heatmap Shader
 category: 8. Sensor And Technical Shaders
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,74 +12,48 @@ tags:
   - 3d-and-cgi-rendering
   - sensor-and-technical-shaders
 visualDna:
-  aesthetic: >-
-    Thermal Vision acts as a transferable CGI-style router: start from Heat map 3D, Heat map, cold
-    to hot spectrum and technical shader system built from sensor mapping, diagnostic palette,
-    transparency rules, internal structure, and device-like signal clarity, then apply the 3D/render
-    behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Heat gradients; preserve the prompt subject while remapping
-    it through x-ray visibility, thermal signal, internal layering, or technical diagnostic
-    abstraction, keeping the requested identity, silhouette, pose, object function, or environment
-    legible.
-  color_and_tone: >-
-    Build color with Rainbow (Blue cold, Red hot), thermal gradient; use color as sensor output:
-    monochrome x-ray values, heat gradients, cold-to-hot ramps, density contrast, and
-    instrument-coded intensity, with deliberate value grouping, exposure control, and
-    medium-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Emissive temperature, heat source mapping; make illumination behave like
-    measurement: emissive heat, transparency, density falloff, internal glow, or diagnostic exposure
-    instead of beauty lighting, so value structure supports the renderer and does not overwrite the
-    requested content.
-  texture_and_material: >-
-    Render Temperature emissive surface read with no material grain; surface detail should show
-    internal structure, transparent layers, signal noise, heat zones, bone-like density, or
-    scanner-like edge clarity, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Lookdev camera for Thermal Vision: close three quarter or macro
-    material framing, strong highlight planes, readable surface curvature, and controlled depth;
-    compose through diagnostic readability, silhouette transparency, cross-section clarity, and
-    instrument-like framing without fake UI dependence, with scale, spacing, edge rhythm, and visual
-    hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Tactical, alien, sensor data intensity; derive mood from scientific distance,
-    surveillance unease, medical precision, or hidden-structure revelation, letting the renderer
-    alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Thermal false color sensor overlay; finish with exact sensor logic, controlled
-    artifacts, readable signal, and no cinematic beauty render overwrite, clean denoised surfaces
-    where appropriate, and enough shader evidence to make the CGI mode recognizable.
-  key_features: >-
-    Heat map 3D; Heat map, cold to hot spectrum; Rainbow (Blue cold, Red hot), thermal gradient;
-    Temperature emissive surface read with no material grain; Lookdev camera for Thermal Vision:
-    close three quarter or macro material framing, strong highlight planes, readable surface
-    curvature, and controlled depth
-  creative_brief: >-
-    Apply Thermal Vision as a CGI/render preset over prompt X: preserve the user's requested
-    subject, then route modeling, shader response, lighting, material scale, composition, mood, and
-    final render craft through Heat map 3D, Heat map, cold to hot spectrum, Temperature emissive
-    surface read with no material grain without requiring the card image's original subject.
+  aesthetic: 'Thermal heatmap shader: a simulated temperature attribute diffused through clean 3D geometry and shown through a smooth false-color ramp, crisp as a CG render, with no infrared camera behind it.'
+  subject_treatment: Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.
+  color_and_tone: Jet-style ramp from deep blue through cyan, green and yellow to red on the model; the background a flat neutral dark grey.
+  lighting_and_shadow: Faint diffuse shading kept under the ramp so forms still read; hot zones never bloom or bleed past the mesh edge.
+  texture_and_material: Smooth interpolated gradients across polygons, sharp model silhouettes, hot spots centered on the named heat sources.
+  camera_and_composition: Keep the requested camera; the ramp follows the geometry, so the same model could be swapped back to its beauty render.
+  atmosphere_and_mood: Diagnostic and vivid, energy mapped as color over a model.
+  rendering_and_quality: 'Simulation-output finish: no sensor noise, no soft focus and no ironbow or white-hot camera palette.'
+  key_features: simulated temperature attribute; jet blue-to-red ramp; crisp mesh edges; faint diffuse shading; no sensor bloom
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thermal Heatmap Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - sensor noise
+  - camera lens optics
+  - readable text
+  - color legend or scale bar
+  - software UI or viewport gizmos
+  - franchise likeness
+  - ironbow palette
+  - white-hot greyscale
+  - heat bloom halo
+  - predator vision
   - realistic color
   - wrong medium
   - flat 2d paintover
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - beauty lighting
   - wrong sensor palette
   - fake UI text
   - cinematic overpaint
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-044.webp
 attributes:
-  negativePrompt: >-
-    realistic color, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, beauty lighting, wrong sensor palette, fake UI text,
-    cinematic overpaint
+  negativePrompt: sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, ironbow palette, white-hot greyscale, heat bloom halo, predator vision, realistic color, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, beauty lighting, wrong sensor palette, fake UI text, cinematic overpaint, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
@@ -93,3 +67,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Thermal Heatmap Shader
+styleAnchors:
+  - Thermal Heatmap Shader
+  - Thermal Vision

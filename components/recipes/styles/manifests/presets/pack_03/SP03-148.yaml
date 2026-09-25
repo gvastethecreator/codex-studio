@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP03-148
+packId: pack_03
+name: Object ID Matte Pass
+styleAnchors:
+  - Object ID Matte Pass
+  - compositing ID matte
+  - one flat random color per object
+displayName: Object ID Matte Pass
+category: 8. Sensor And Technical Shaders
+domain: compositing ID matte
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - sensor-and-technical-shaders
+  - id-matte
+  - render-pass
+  - compositing
+visualDna:
+  aesthetic: 'Object ID matte pass: every separate object filled with one flat random color, so the whole scene becomes a patchwork map of its parts.'
+  subject_treatment: Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.
+  color_and_tone: Dozens of flat saturated and pastel ID colors, chosen at random so neighbours rarely match; black empty background.
+  lighting_and_shadow: No shading or shadows at all; each object is a single uniform fill.
+  texture_and_material: Clean anti-aliased edges between color fills, small objects as tiny distinct patches, no texture inside any shape.
+  camera_and_composition: Keep the requested camera; cluttered scenes with many parts make the patchwork strongest.
+  atmosphere_and_mood: Cheerfully clinical, a scene sorted into pieces.
+  rendering_and_quality: Compositing-buffer finish with exact object boundaries and no gradients.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Object ID Matte Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: one flat random color per object; no shading; crisp object edges; patchwork of many parts; black background
+avoidRules:
+  - sensor noise
+  - camera lens optics
+  - readable text
+  - color legend or scale bar
+  - software UI or viewport gizmos
+  - franchise likeness
+  - shading gradients
+  - cel shading outlines
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, shading gradients, cel shading outlines, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: sensor-and-technical-shaders
+  categoryName: 8. Sensor And Technical Shaders
+  tags:
+    - 3d-and-cgi-rendering
+    - sensor-and-technical-shaders
+    - id-matte
+    - render-pass
+    - compositing
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: compositing ID matte

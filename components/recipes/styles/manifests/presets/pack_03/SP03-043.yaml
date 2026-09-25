@@ -3,7 +3,7 @@ id: SP03-043
 packId: pack_03
 name: X-Ray Shader
 category: 8. Sensor And Technical Shaders
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,55 +12,26 @@ tags:
   - 3d-and-cgi-rendering
   - sensor-and-technical-shaders
 visualDna:
-  aesthetic: >-
-    X-Ray Shader acts as a transferable CGI-style router: start from X ray transparency render,
-    Internal view, see through silhouette and technical shader system built from sensor mapping,
-    diagnostic palette, transparency rules, internal structure, and device-like signal clarity, then
-    apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Internal structure; preserve the prompt subject while
-    remapping it through x-ray visibility, thermal signal, internal layering, or technical
-    diagnostic abstraction, keeping the requested identity, silhouette, pose, object function, or
-    environment legible.
-  color_and_tone: >-
-    Build color with Blue/White inverted, clinical spectrum; use color as sensor output: monochrome
-    x-ray values, heat gradients, cold-to-hot ramps, density contrast, and instrument-coded
-    intensity, with deliberate value grouping, exposure control, and medium-specific limits rather
-    than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Internal glow, self illuminated core; make illumination behave like
-    measurement: emissive heat, transparency, density falloff, internal glow, or diagnostic exposure
-    instead of beauty lighting, so value structure supports the renderer and does not overwrite the
-    requested content.
-  texture_and_material: >-
-    Render Density based internal layers; surface detail should show internal structure, transparent
-    layers, signal noise, heat zones, bone-like density, or scanner-like edge clarity, keeping
-    material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Lookdev camera for X Ray Shader: close three quarter or macro
-    material framing, strong highlight planes, readable surface curvature, and controlled depth;
-    compose through diagnostic readability, silhouette transparency, cross-section clarity, and
-    instrument-like framing without fake UI dependence, with scale, spacing, edge rhythm, and visual
-    hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Analytical, cold, forensic insight; derive mood from scientific distance,
-    surveillance unease, medical precision, or hidden-structure revelation, letting the renderer
-    alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Medical, sci fi, diagnostic scan; finish with exact sensor logic, controlled
-    artifacts, readable signal, and no cinematic beauty render overwrite, clean denoised surfaces
-    where appropriate, and enough shader evidence to make the CGI mode recognizable.
-  key_features: >-
-    X ray transparency render; Internal view, see through silhouette; Blue/White inverted, clinical
-    spectrum; Density based internal layers; Lookdev camera for X Ray Shader: close three quarter or
-    macro material framing, strong highlight planes, readable surface curvature, and controlled
-    depth
-  creative_brief: >-
-    Apply X-Ray Shader as a CGI/render preset over prompt X: preserve the user's requested subject,
-    then route modeling, shader response, lighting, material scale, composition, mood, and final
-    render craft through X ray transparency render, Internal view, see through silhouette, Density
-    based internal layers without requiring the card image's original subject.
+  aesthetic: 'Fresnel x-ray shader: every surface drawn as additive glowing shells whose brightness follows the facing ratio, bright at grazing silhouettes and nearly clear where faces look at the camera.'
+  subject_treatment: Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.
+  color_and_tone: One cold hue, usually ice-blue or cyan, on pure black; overlapping shells add up toward white, with no density or bone logic.
+  lighting_and_shadow: No lights and no shadows; brightness comes only from the view angle, so every modeled inner part shows through at its own edges.
+  texture_and_material: Smooth untextured shells, crisp rim lines on every modeled layer, interior geometry visible as nested glowing contours.
+  camera_and_composition: Keep the requested camera and perspective; the full 3D depth stays readable through the layered rims.
+  atmosphere_and_mood: Cool, weightless and analytical, an object seen as nested outlines.
+  rendering_and_quality: Clean additive shader render with perfectly sharp rims and no film grain, scatter haze or radiograph plate look.
+  key_features: facing-ratio fresnel rims; additive stacking toward white; modeled interior shown as nested contours; perspective 3D depth; no lights
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies X-Ray Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - sensor noise
+  - camera lens optics
+  - readable text
+  - color legend or scale bar
+  - software UI or viewport gizmos
+  - franchise likeness
+  - radiograph film base
+  - bone density contrast
+  - medical diagnosis look
   - opaque
   - skin
   - wrong medium
@@ -68,19 +39,21 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - beauty lighting
   - wrong sensor palette
   - fake UI text
   - cinematic overpaint
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-043.webp
 attributes:
-  negativePrompt: >-
-    opaque, skin, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, beauty lighting, wrong sensor palette, fake UI text,
-    cinematic overpaint
+  negativePrompt: sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, radiograph film base, bone density contrast, medical diagnosis look, opaque, skin, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, beauty lighting, wrong sensor palette, fake UI text, cinematic overpaint, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

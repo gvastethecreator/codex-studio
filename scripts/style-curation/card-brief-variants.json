@@ -1942,5 +1942,85 @@
   "SP03-142": [
     "Hand-painted texture environment render of a watermill over a stream, chunky tapered stone walls and a painted wooden wheel. No text or logo.",
     "Hand-painted texture environment render of a mushroom-cap village square seen from a hilltop path, cartoon-proportioned roofs painted warm-to-cool. No text or logo."
+  ],
+  "SP03-043": [
+    "Fresnel x-ray shader render of a clockwork owl automaton, gears and springs inside its body glowing through the cyan rim shell of its feathers. No text or logo.",
+    "Fresnel x-ray shader render of a sailing ship inside a glass bottle, bottle, hull and rigging stacking their rims toward white. No text or logo."
+  ],
+  "SP03-044": [
+    "Thermal heatmap shader render of a blacksmith anvil beside a quenching trough, a fresh blade red-hot on the anvil and the water cooling to blue. No text or logo.",
+    "Thermal heatmap shader render of a modern espresso machine, still clearly modern, its boiler red and portafilter handle cyan. No text or logo."
+  ],
+  "SP03-143": [
+    "Lidar point cloud render of a pine forest canopy over a winding river, trunks sparse, crowns dense, colored by height. No text or logo.",
+    "Lidar point cloud render of terraced hillside vineyards seen from above, grey intensity points tracing every row. No text or logo."
+  ],
+  "SP03-144": [
+    "Z-depth render pass of a long great hall hung with plain cloth banners, each banner a slightly darker grey step. No text or logo.",
+    "Z-depth render pass of a pack of hounds running straight at the camera, the lead hound white and the rest greying away. No text or logo."
+  ],
+  "SP03-145": [
+    "World-space normal pass of a fossil ammonite on a rock slab, its spiral ribs sweeping through the rainbow of orientations. No text or logo.",
+    "World-space normal pass of a wicker basket of pinecones, each scale a distinct tiny pastel facet. No text or logo."
+  ],
+  "SP03-146": [
+    "UV checker test shader render of a coiled sea serpent, checker cells pinching at the tail tip and staying square on the body. No text or logo.",
+    "UV checker test shader render of a patched hot-air balloon envelope, each gore panel a separate seam-broken grid. No text or logo."
+  ],
+  "SP03-147": [
+    "Curvature cavity map of a gnarled tree root clutching a boulder, bark ridges white, cracks dark. No text or logo.",
+    "Curvature cavity map of a crocodile skull, tooth edges and sutures traced white and dark on flat grey. No text or logo."
+  ],
+  "SP03-148": [
+    "Object ID matte pass of a banquet table after a feast, every goblet, bone and bread loaf its own flat color patch. No text or logo.",
+    "Object ID matte pass of a flock of crows perched on a dead oak, each bird and branch a separate flat color. No text or logo."
+  ],
+  "SP03-149": [
+    "Motion vector pass of a street juggler tossing five torches, each torch a different color by its arc direction. No text or logo.",
+    "Motion vector pass of a gust whirling autumn leaves around an old stone well, the fastest leaves brightest. No text or logo."
+  ],
+  "SP03-150": [
+    "Heat-distortion shader render of a camel caravan road at noon, the far dunes and palms rippling in low shimmering bands. No text or logo.",
+    "Heat-distortion shader render behind a parked jet airliner engine, the hangar door lines warping in its exhaust. No text or logo."
+  ],
+  "SP03-151": [
+    "Clipping-plane voxel section of a wild beehive in a hollow log, comb, honey and brood in flat section colors. No text or logo.",
+    "Clipping-plane voxel section of a volcanic island, the magma chamber and vent stepped in orange voxels below grey rock. No text or logo."
+  ],
+  "SP03-152": [
+    "Depth-sliced hologram shader of a three-masted galleon, hull and sails as soft green stacked slices. No text or logo.",
+    "Depth-sliced hologram shader of an anatomical heart, chambers traced by the changing slice outlines. No text or logo."
+  ],
+  "SP03-153": [
+    "Unlit albedo pass of a heap of dyed wool skeins in a market basket, each color flat and even. No text or logo.",
+    "Unlit albedo pass of a painted wooden carousel horse, its gilded saddle and painted flowers shown with no light or shadow. No text or logo."
+  ],
+  "SP03-154": [
+    "SDF debug shader of three merged soap-smooth blobs orbiting a ring, the contour bands pinching where they join. No text or logo.",
+    "SDF debug shader slicing a gothic tracery rose window, rings rounding every lobe and pinching at each cusp. No text or logo."
+  ],
+  "SP03-155": [
+    "Overdraw debug view of a particle waterfall pouring into a gorge, the spray cloud burning white at the base. No text or logo.",
+    "Overdraw debug view of an apothecary wall of glass bottles, stacked glass layers glowing orange where they overlap. No text or logo."
+  ],
+  "SP03-156": [
+    "Hexagonal force-field shader shell wrapping a caravan wagon camp at dusk, gold hex cells shimmering along the rim. No text or logo.",
+    "Hexagonal force-field shader around a modern research rover on a frozen plain, violet ripples where hail strikes. No text or logo."
+  ],
+  "SP03-157": [
+    "Noise dissolve shader on a red rose, petals erasing through cold cyan edge bands. No text or logo.",
+    "Noise dissolve shader on a rowing boat at the waterline, the hull vanishing bow first into drifting ash. No text or logo."
+  ],
+  "SP03-158": [
+    "Radial scanner pulse shader rippling across a foggy moor with a circle of standing stones, each stone edge flaring cyan. No text or logo.",
+    "Radial scanner pulse shader sweeping a derelict warehouse, crates and girders outlined as the ring passes. No text or logo."
+  ],
+  "SP03-159": [
+    "Edge detection line pass of a nautilus shell cut open, chamber walls as fine even lines. No text or logo.",
+    "Edge detection line pass of a grand piano with its lid raised, strings and hammers a dense web of lines. No text or logo."
+  ],
+  "SP03-160": [
+    "Real-time hatching shader render of a raven perched on a tilted gravestone, feathers shaded by hatch density. No text or logo.",
+    "Real-time hatching shader render of a copper kettle steaming on a hearth hook, curved hatch lines wrapping its belly. No text or logo."
   ]
 }

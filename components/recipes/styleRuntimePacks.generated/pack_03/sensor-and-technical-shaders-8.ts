@@ -8,57 +8,715 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'X-Ray Shader',
     category: '8. Sensor And Technical Shaders',
     negativePrompt:
-      'opaque, skin, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, beauty lighting, wrong sensor palette, fake UI text, cinematic overpaint',
+      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, radiograph film base, bone density contrast, medical diagnosis look, opaque, skin, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, beauty lighting, wrong sensor palette, fake UI text, cinematic overpaint, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'X-Ray Shader acts as a transferable CGI-style router: start from X ray transparency render, Internal view, see through silhouette and technical shader system built from sensor mapping, diagnostic palette, transparency rules, internal structure, and device-like signal clarity, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Fresnel x-ray shader: every surface drawn as additive glowing shells whose brightness follows the facing ratio, bright at grazing silhouettes and nearly clear where faces look at the camera.',
       subject_treatment:
-        'Transform any prompt subject through Internal structure; preserve the prompt subject while remapping it through x-ray visibility, thermal signal, internal layering, or technical diagnostic abstraction, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.",
       color_and_tone:
-        'Build color with Blue/White inverted, clinical spectrum; use color as sensor output: monochrome x-ray values, heat gradients, cold-to-hot ramps, density contrast, and instrument-coded intensity, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'One cold hue, usually ice-blue or cyan, on pure black; overlapping shells add up toward white, with no density or bone logic.',
       lighting_and_shadow:
-        'Handle light through Internal glow, self illuminated core; make illumination behave like measurement: emissive heat, transparency, density falloff, internal glow, or diagnostic exposure instead of beauty lighting, so value structure supports the renderer and does not overwrite the requested content.',
+        'No lights and no shadows; brightness comes only from the view angle, so every modeled inner part shows through at its own edges.',
       texture_and_material:
-        'Render Density based internal layers; surface detail should show internal structure, transparent layers, signal noise, heat zones, bone-like density, or scanner-like edge clarity, keeping material scale coherent and avoiding noisy filler texture.',
+        'Smooth untextured shells, crisp rim lines on every modeled layer, interior geometry visible as nested glowing contours.',
       camera_and_composition:
-        'Structure the image through Lookdev camera for X Ray Shader: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth; compose through diagnostic readability, silhouette transparency, cross-section clarity, and instrument-like framing without fake UI dependence, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Analytical, cold, forensic insight; derive mood from scientific distance, surveillance unease, medical precision, or hidden-structure revelation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested camera and perspective; the full 3D depth stays readable through the layered rims.',
+      atmosphere_and_mood: 'Cool, weightless and analytical, an object seen as nested outlines.',
       rendering_and_quality:
-        'Finish with Medical, sci fi, diagnostic scan; finish with exact sensor logic, controlled artifacts, readable signal, and no cinematic beauty render overwrite, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Clean additive shader render with perfectly sharp rims and no film grain, scatter haze or radiograph plate look.',
       key_features:
-        'X ray transparency render; Internal view, see through silhouette; Blue/White inverted, clinical spectrum; Density based internal layers; Lookdev camera for X Ray Shader: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth',
+        'facing-ratio fresnel rims; additive stacking toward white; modeled interior shown as nested contours; perspective 3D depth; no lights',
       creative_brief:
-        "Apply X-Ray Shader as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through X ray transparency render, Internal view, see through silhouette, Density based internal layers without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies X-Ray Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP03-044',
-    name: 'Thermal Vision',
+    name: 'Thermal Heatmap Shader',
+    displayName: 'Thermal Heatmap Shader',
+    styleAnchors: ['Thermal Heatmap Shader', 'Thermal Vision'],
     category: '8. Sensor And Technical Shaders',
     negativePrompt:
-      'realistic color, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, beauty lighting, wrong sensor palette, fake UI text, cinematic overpaint',
+      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, ironbow palette, white-hot greyscale, heat bloom halo, predator vision, realistic color, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, beauty lighting, wrong sensor palette, fake UI text, cinematic overpaint, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Thermal Vision acts as a transferable CGI-style router: start from Heat map 3D, Heat map, cold to hot spectrum and technical shader system built from sensor mapping, diagnostic palette, transparency rules, internal structure, and device-like signal clarity, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Thermal heatmap shader: a simulated temperature attribute diffused through clean 3D geometry and shown through a smooth false-color ramp, crisp as a CG render, with no infrared camera behind it.',
       subject_treatment:
-        'Transform any prompt subject through Heat gradients; preserve the prompt subject while remapping it through x-ray visibility, thermal signal, internal layering, or technical diagnostic abstraction, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.",
       color_and_tone:
-        'Build color with Rainbow (Blue cold, Red hot), thermal gradient; use color as sensor output: monochrome x-ray values, heat gradients, cold-to-hot ramps, density contrast, and instrument-coded intensity, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Jet-style ramp from deep blue through cyan, green and yellow to red on the model; the background a flat neutral dark grey.',
       lighting_and_shadow:
-        'Handle light through Emissive temperature, heat source mapping; make illumination behave like measurement: emissive heat, transparency, density falloff, internal glow, or diagnostic exposure instead of beauty lighting, so value structure supports the renderer and does not overwrite the requested content.',
+        'Faint diffuse shading kept under the ramp so forms still read; hot zones never bloom or bleed past the mesh edge.',
       texture_and_material:
-        'Render Temperature emissive surface read with no material grain; surface detail should show internal structure, transparent layers, signal noise, heat zones, bone-like density, or scanner-like edge clarity, keeping material scale coherent and avoiding noisy filler texture.',
+        'Smooth interpolated gradients across polygons, sharp model silhouettes, hot spots centered on the named heat sources.',
       camera_and_composition:
-        'Structure the image through Lookdev camera for Thermal Vision: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth; compose through diagnostic readability, silhouette transparency, cross-section clarity, and instrument-like framing without fake UI dependence, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Tactical, alien, sensor data intensity; derive mood from scientific distance, surveillance unease, medical precision, or hidden-structure revelation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested camera; the ramp follows the geometry, so the same model could be swapped back to its beauty render.',
+      atmosphere_and_mood: 'Diagnostic and vivid, energy mapped as color over a model.',
       rendering_and_quality:
-        'Finish with Thermal false color sensor overlay; finish with exact sensor logic, controlled artifacts, readable signal, and no cinematic beauty render overwrite, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Simulation-output finish: no sensor noise, no soft focus and no ironbow or white-hot camera palette.',
       key_features:
-        'Heat map 3D; Heat map, cold to hot spectrum; Rainbow (Blue cold, Red hot), thermal gradient; Temperature emissive surface read with no material grain; Lookdev camera for Thermal Vision: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth',
+        'simulated temperature attribute; jet blue-to-red ramp; crisp mesh edges; faint diffuse shading; no sensor bloom',
       creative_brief:
-        "Apply Thermal Vision as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Heat map 3D, Heat map, cold to hot spectrum, Temperature emissive surface read with no material grain without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thermal Heatmap Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP03-143',
+    name: 'Lidar Point Cloud Render',
+    displayName: 'Lidar Point Cloud Render',
+    styleAnchors: [
+      'Lidar Point Cloud Render',
+      'lidar point cloud visualization',
+      'millions of tiny points',
+    ],
+    category: '8. Sensor And Technical Shaders',
+    domain: 'lidar point cloud visualization',
+    negativePrompt:
+      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, solid surfaces, gaussian splat blobs, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Lidar point cloud render: the scene shown only as millions of tiny points sampled on surfaces, with no meshes, so gaps and scan shadows reveal how it was measured.',
+      subject_treatment:
+        "Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.",
+      color_and_tone:
+        'Points colored by height or return intensity (blue low to red high, or grey intensity) on a pure black void.',
+      lighting_and_shadow:
+        'No shading at all; density of points carries form, and occluded areas behind objects stay empty as scan shadows.',
+      texture_and_material:
+        'Concentric scan rings on the ground around scanner positions, denser points near the scanner, sparse speckle on far or dark surfaces.',
+      camera_and_composition:
+        'Keep the requested camera; far points thin out and the cloud ends in a ragged edge.',
+      atmosphere_and_mood: 'Ghostly and precise, a place reduced to measured dust.',
+      rendering_and_quality:
+        'Screen-space point sprites of uniform size, no surface reconstruction and no soft splat blending.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lidar Point Cloud Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'millions of tiny points; height or intensity coloring; scan shadows behind objects; concentric ground rings; black void',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-144',
+    name: 'Z-Depth Pass',
+    displayName: 'Z-Depth Pass',
+    styleAnchors: ['Z-Depth Pass', 'render depth buffer', 'distance as brightness'],
+    category: '8. Sensor And Technical Shaders',
+    domain: 'render depth buffer',
+    negativePrompt:
+      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, fog effect with color, lit shading, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Z-depth render pass: each pixel shows only its distance from the camera, near surfaces white fading smoothly to black at the far clip.',
+      subject_treatment:
+        "Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.",
+      color_and_tone:
+        'Pure greyscale: white foreground, mid grey middle distance, black background; no hue and no texture color.',
+      lighting_and_shadow:
+        'No lighting or shadows; value changes only with distance, so flat walls become smooth gradients.',
+      texture_and_material:
+        'Materials disappear; only silhouettes and depth steps remain, with hard value jumps where a near edge overlaps a far one.',
+      camera_and_composition:
+        'Keep the requested camera; compositions with strong recession show the gradient best.',
+      atmosphere_and_mood: 'Quiet, foggy and abstract, space turned into a single gradient.',
+      rendering_and_quality:
+        'Clean anti-aliased depth buffer normalized between near and far, with no banding and no noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Z-Depth Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'distance as brightness; white near to black far; hard steps at overlapping edges; no texture; no lighting',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-145',
+    name: 'World-Space Normal Pass',
+    displayName: 'World-Space Normal Pass',
+    styleAnchors: ['World-Space Normal Pass', 'render normal buffer', 'axis-to-RGB color mapping'],
+    category: '8. Sensor And Technical Shaders',
+    domain: 'render normal buffer',
+    negativePrompt:
+      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, tangent-space blue normal map texture, lit shading, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'World-space normal pass: each surface colored by the direction it faces, so the X, Y and Z axes map to red, green and blue.',
+      subject_treatment:
+        "Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.",
+      color_and_tone:
+        'Pastel lilac, mint, salmon and sky-blue fields; up-facing surfaces green-tinted, side faces red or blue; no texture color.',
+      lighting_and_shadow:
+        'No lights or shadows; the color itself encodes orientation, so curved forms become smooth rainbow sweeps.',
+      texture_and_material:
+        'Bump and carved detail read as tiny color shifts; flat planes are single flat colors with hard changes at creases.',
+      camera_and_composition:
+        'Keep the requested camera; the colors stay tied to world axes, so the same wall keeps its color from any view.',
+      atmosphere_and_mood: 'Technical yet candy-sweet, geometry turned into color.',
+      rendering_and_quality:
+        'Clean anti-aliased buffer with no shading, no grain and smooth interpolation across curves.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies World-Space Normal Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'axis-to-RGB color mapping; pastel lilac and mint fields; hard color changes at creases; no lighting; carved detail as tiny shifts',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-146',
+    name: 'UV Checker Grid Shader',
+    displayName: 'UV Checker Grid Shader',
+    styleAnchors: ['UV Checker Grid Shader', 'texture mapping test', 'colored checker grid'],
+    category: '8. Sensor And Technical Shaders',
+    domain: 'texture mapping test',
+    negativePrompt:
+      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, numbered cells, letters in cells, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'UV checker test shader: the model wrapped in a colored checker grid that exposes its texture mapping, with stretching, pinching and seams visible.',
+      subject_treatment:
+        "Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.",
+      color_and_tone:
+        'Alternating light and dark squares in a rainbow of cell colors, with small orientation arrows instead of any numbers or letters.',
+      lighting_and_shadow:
+        'Simple viewport key and fill light with soft shading, so the grid stays readable on every face.',
+      texture_and_material:
+        'Squares stay square on good areas, stretch into rectangles on strained areas and jump at UV seams.',
+      camera_and_composition:
+        'Keep the requested camera; curved and folded areas of the model face the viewer to show distortion.',
+      atmosphere_and_mood: 'Playful and diagnostic, a test pattern wrapped around form.',
+      rendering_and_quality:
+        'Clean viewport-style render with a sharp grid and no other material; seams and stretches left visible.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies UV Checker Grid Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'colored checker grid; stretched cells on strained areas; visible UV seams; orientation arrows only; simple viewport light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-147',
+    name: 'Curvature Cavity Map',
+    displayName: 'Curvature Cavity Map',
+    styleAnchors: ['Curvature Cavity Map', 'baked curvature texture', 'mid-grey flats'],
+    category: '8. Sensor And Technical Shaders',
+    domain: 'baked curvature texture',
+    negativePrompt:
+      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, soft ambient occlusion gradients, directional shading, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Curvature and cavity bake: the model shown as mid grey where flat, white on convex edges and dark in concave creases, the map texture artists use for wear.',
+      subject_treatment:
+        "Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.",
+      color_and_tone:
+        'Neutral 50% grey base, crisp white edge lines on ridges, dark charcoal in grooves; no hue.',
+      lighting_and_shadow:
+        'No light direction at all; values come only from local surface bending, unlike soft ambient occlusion.',
+      texture_and_material:
+        'Thin bright ridges on every bevel and chip, fine dark lines in engravings, broad flats evenly grey.',
+      camera_and_composition:
+        'Keep the requested camera; close views show hard-surface and carved detail best.',
+      atmosphere_and_mood: 'Precise and tactile, every worn edge traced like a map.',
+      rendering_and_quality:
+        'Crisp baked-texture look with pixel-sharp edge lines, no ambient-occlusion blur and no cast shadows.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Curvature Cavity Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'mid-grey flats; white convex edge lines; dark concave grooves; no light direction; sharp engraved detail',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-148',
+    name: 'Object ID Matte Pass',
+    displayName: 'Object ID Matte Pass',
+    styleAnchors: [
+      'Object ID Matte Pass',
+      'compositing ID matte',
+      'one flat random color per object',
+    ],
+    category: '8. Sensor And Technical Shaders',
+    domain: 'compositing ID matte',
+    negativePrompt:
+      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, shading gradients, cel shading outlines, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Object ID matte pass: every separate object filled with one flat random color, so the whole scene becomes a patchwork map of its parts.',
+      subject_treatment:
+        "Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.",
+      color_and_tone:
+        'Dozens of flat saturated and pastel ID colors, chosen at random so neighbours rarely match; black empty background.',
+      lighting_and_shadow: 'No shading or shadows at all; each object is a single uniform fill.',
+      texture_and_material:
+        'Clean anti-aliased edges between color fills, small objects as tiny distinct patches, no texture inside any shape.',
+      camera_and_composition:
+        'Keep the requested camera; cluttered scenes with many parts make the patchwork strongest.',
+      atmosphere_and_mood: 'Cheerfully clinical, a scene sorted into pieces.',
+      rendering_and_quality:
+        'Compositing-buffer finish with exact object boundaries and no gradients.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Object ID Matte Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'one flat random color per object; no shading; crisp object edges; patchwork of many parts; black background',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-149',
+    name: 'Motion Vector Pass',
+    displayName: 'Motion Vector Pass',
+    styleAnchors: [
+      'Motion Vector Pass',
+      'render velocity buffer',
+      'red horizontal and green vertical velocity',
+    ],
+    category: '8. Sensor And Technical Shaders',
+    domain: 'render velocity buffer',
+    negativePrompt:
+      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, motion blur streaks, lit shading, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Motion vector pass: each pixel colored by its screen-space velocity, red for horizontal and green for vertical movement, so moving parts glow and still parts go dark.',
+      subject_treatment:
+        "Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.",
+      color_and_tone:
+        'Dark olive-black for static areas, reds, greens and yellow mixes for moving limbs, brightest where motion is fastest.',
+      lighting_and_shadow:
+        'No lighting; brightness equals speed, so a spinning edge outshines its slow hub.',
+      texture_and_material:
+        'Smooth velocity gradients along swinging limbs, hard color changes where parts move in opposite directions.',
+      camera_and_composition:
+        'Keep the requested camera; the frozen action shows several directions of motion at once.',
+      atmosphere_and_mood: 'Kinetic and strange, movement made visible without blur.',
+      rendering_and_quality: 'Clean velocity buffer with no motion blur applied and no shading.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Motion Vector Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'red horizontal and green vertical velocity; dark static areas; brightest fastest parts; no blur; opposing motions split by color',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-150',
+    name: 'Heat-Distortion Shimmer Shader',
+    displayName: 'Heat-Distortion Shimmer Shader',
+    styleAnchors: [
+      'Heat-Distortion Shimmer Shader',
+      'refraction distortion shader',
+      'rising refraction columns',
+    ],
+    category: '8. Sensor And Technical Shaders',
+    domain: 'refraction distortion shader',
+    negativePrompt:
+      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, schlieren shadowgraph, smoke plume, colored glow, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Heat-distortion shader: rising columns of screen-space refraction above hot sources, warping and rippling whatever lies behind them.',
+      subject_treatment:
+        'Keep the prompt subject, setting, camera and normal CGI beauty render; this shader adds only its one named effect on the stated geometry, computed in the renderer rather than photographed.',
+      color_and_tone:
+        'Scene colors unchanged, only displaced; a faint brightening where the refraction compresses light.',
+      lighting_and_shadow:
+        'Normal scene lighting; distorted zones bend highlights and edges into wavy ribbons.',
+      texture_and_material:
+        'Noise-driven ripples stretched upward, strongest near the source and fading with height, shown against straight lines that bend.',
+      camera_and_composition:
+        'Keep the requested camera; straight background lines pass through the haze column so the warp reads.',
+      atmosphere_and_mood: 'Oppressive and airless, heat you can see.',
+      rendering_and_quality:
+        'Clean real-time refraction; no schlieren shadowgraph look, no smoke and no color tint.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Heat-Distortion Shimmer Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'rising refraction columns; wavy warped background lines; strongest near source; no color tint; no smoke',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-151',
+    name: 'Voxel Cross-Section Cutaway',
+    displayName: 'Voxel Cross-Section Cutaway',
+    styleAnchors: [
+      'Voxel Cross-Section Cutaway',
+      'clipping-plane section shader',
+      'flat clipping plane',
+    ],
+    category: '8. Sensor And Technical Shaders',
+    domain: 'clipping-plane section shader',
+    negativePrompt:
+      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, exploded view parts, hand-drawn cutaway illustration, labels, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Clipping-plane section shader: the model sliced cleanly by a flat plane, the cut face capped with a grid of solid voxels colored by the material inside.',
+      subject_treatment:
+        "Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.",
+      color_and_tone:
+        'Beauty-rendered outer half in its own colors; the cut face in flat saturated section colors per interior material.',
+      lighting_and_shadow:
+        'Normal three-point light on the model; the section cap lit flat so the voxel grid reads evenly.',
+      texture_and_material:
+        'Stepped voxel blocks along the cut, one color per inner material, straight clean plane edge where the model ends.',
+      camera_and_composition:
+        'Keep the requested camera; turn the cut plane toward the viewer so the section fills a large part of the frame.',
+      atmosphere_and_mood: 'Curious and revealing, like opening a book of the object.',
+      rendering_and_quality:
+        'Crisp CG section with no torn or broken edges; the removed half is simply absent, never exploded.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Voxel Cross-Section Cutaway as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'flat clipping plane; voxelized section cap; one color per interior material; beauty-lit outer half; no explosion',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-152',
+    name: 'Depth-Sliced Hologram Shader',
+    displayName: 'Depth-Sliced Hologram Shader',
+    styleAnchors: [
+      'Depth-Sliced Hologram Shader',
+      'volumetric display shader',
+      'stacked parallel contour slices',
+    ],
+    category: '8. Sensor And Technical Shaders',
+    domain: 'volumetric display shader',
+    negativePrompt:
+      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, cyan scanline hologram, projector beam, flicker glitch, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Depth-sliced hologram shader: the subject rebuilt as dozens of parallel glowing contour slices stacked in depth, like a volumetric display, with dark gaps between layers.',
+      subject_treatment:
+        "Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.",
+      color_and_tone:
+        'Warm amber or soft green glowing lines on deep black, brighter where slices bunch at steep surfaces.',
+      lighting_and_shadow:
+        'Self-lit contour lines only; no shading, no projector beam and no scanline overlay.',
+      texture_and_material:
+        'Evenly spaced horizontal slice outlines, thin filled bands on each slice, the form read by how slice shapes change.',
+      camera_and_composition:
+        'Keep the requested camera; a three-quarter angle shows the stacked slice spacing best.',
+      atmosphere_and_mood: 'Quiet and archival, a memory kept as layers of light.',
+      rendering_and_quality:
+        'Additive line render with crisp slice edges; distinct from translucent scanlined hologram material.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Depth-Sliced Hologram Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'stacked parallel contour slices; dark gaps between layers; amber or green self-lit lines; no scanlines; no projector beam',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-153',
+    name: 'Unlit Albedo Pass',
+    displayName: 'Unlit Albedo Pass',
+    styleAnchors: ['Unlit Albedo Pass', 'base color render pass', 'base color only'],
+    category: '8. Sensor And Technical Shaders',
+    domain: 'base color render pass',
+    negativePrompt:
+      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, shading, specular highlights, cast shadows, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Unlit albedo pass: the scene shown only in its surface base colors and painted textures, with every trace of light, shadow and reflection removed.',
+      subject_treatment:
+        "Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.",
+      color_and_tone:
+        'Flat true material colors at even brightness; dark objects stay dark by pigment, never by shadow.',
+      lighting_and_shadow:
+        'None: no key, no ambient occlusion, no speculars; form reads only from color and texture changes.',
+      texture_and_material:
+        'Printed patterns, painted markings and wood grain fully visible, glossy surfaces as matte as paper.',
+      camera_and_composition:
+        'Keep the requested camera; overlapping forms of similar color merge into flat shapes.',
+      atmosphere_and_mood: 'Flat, bright and uncanny, a world without light.',
+      rendering_and_quality:
+        'Clean diffuse-color buffer with crisp texture detail and no shading of any kind.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Unlit Albedo Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'base color only; no shadows or highlights; flat merged shapes; full texture detail; matte gloss',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-154',
+    name: 'SDF Contour Band Shader',
+    displayName: 'SDF Contour Band Shader',
+    styleAnchors: [
+      'SDF Contour Band Shader',
+      'signed distance field debug',
+      'repeating distance rings',
+    ],
+    category: '8. Sensor And Technical Shaders',
+    domain: 'signed distance field debug',
+    negativePrompt:
+      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, polygon facets, topographic map terrain, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Signed distance field debug shader: a slicing plane through smoothly blended SDF shapes, painted with repeating distance rings, warm outside and cool inside.',
+      subject_treatment:
+        "Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.",
+      color_and_tone:
+        'Warm orange bands outside surfaces, cool blue bands inside, a thin white zero line on the exact surface, darker stripes every unit of distance.',
+      lighting_and_shadow:
+        'Unlit debug plane; the smooth-blended 3D shapes behind it lightly lit so their merged forms read.',
+      texture_and_material:
+        'Concentric contour stripes that round off at convex corners and pinch at concave blends, smooth-minimum joins between shapes.',
+      camera_and_composition:
+        'Keep the requested camera; the slice plane crosses the shapes at a clear readable angle.',
+      atmosphere_and_mood: 'Mathematical and hypnotic, space measured in rings.',
+      rendering_and_quality:
+        'Raymarched finish with perfectly smooth blends and even stripe spacing; no polygons visible.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies SDF Contour Band Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'repeating distance rings; orange outside and blue inside; white zero-surface line; smooth-minimum blends; raymarched forms',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-155',
+    name: 'Overdraw Accumulation View',
+    displayName: 'Overdraw Accumulation View',
+    styleAnchors: [
+      'Overdraw Accumulation View',
+      'render cost debug view',
+      'additive layer counting',
+    ],
+    category: '8. Sensor And Technical Shaders',
+    domain: 'render cost debug view',
+    negativePrompt:
+      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, thermal camera look, lit shading, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Overdraw debug view: every rendered layer adds a little brightness, so transparent and stacked surfaces glow in proportion to how many times each pixel was drawn.',
+      subject_treatment:
+        "Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.",
+      color_and_tone:
+        'Deep navy for one layer, through violet and hot orange, to white where dozens of layers stack.',
+      lighting_and_shadow:
+        'No lighting; brightness equals layer count, revealing hidden back faces and particle stacks.',
+      texture_and_material:
+        'All surfaces translucent and additive; particle clouds and foliage cards bloom brightest.',
+      camera_and_composition:
+        'Keep the requested camera; dense transparent effects in the frame produce the hot zones.',
+      atmosphere_and_mood: 'Eerie and revealing, the hidden cost of a scene made visible.',
+      rendering_and_quality:
+        'Additive accumulation buffer with no shading, clean edges and smooth count gradients.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Overdraw Accumulation View as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'additive layer counting; navy to orange to white ramp; hidden back faces visible; hot particle stacks; no lighting',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-156',
+    name: 'Hex Force-Field Shield Shader',
+    displayName: 'Hex Force-Field Shield Shader',
+    styleAnchors: [
+      'Hex Force-Field Shield Shader',
+      'game VFX shield shader',
+      'fresnel-bright dome rim',
+    ],
+    category: '8. Sensor And Technical Shaders',
+    domain: 'game VFX shield shader',
+    negativePrompt:
+      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, game franchise shield likeness, solid glass dome, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hexagonal force-field shader: a transparent energy dome or shell around the named subject, fresnel-bright at its rim, tiled with faint hexagon cells that flare at impact points.',
+      subject_treatment:
+        'Keep the prompt subject, setting, camera and normal CGI beauty render; this shader adds only its one named effect on the stated geometry, computed in the renderer rather than photographed.',
+      color_and_tone:
+        'One energy hue (teal, gold or violet) over the unchanged scene, bright white-hot rings at impacts.',
+      lighting_and_shadow:
+        'The shield adds soft light on nearby surfaces; impacts throw brief bright pulses, the scene light otherwise unchanged.',
+      texture_and_material:
+        'Hex cell grid visible mostly near the rim and around impacts, expanding ripple rings, scrolling noise inside cells.',
+      camera_and_composition:
+        'Keep the requested camera; the dome edge crosses the frame so the fresnel rim reads.',
+      atmosphere_and_mood: 'Tense and protective, a barrier holding under strain.',
+      rendering_and_quality:
+        'Real-time VFX shader finish with clean additive glow; the subject stays sharp behind the shell.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hex Force-Field Shield Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'fresnel-bright dome rim; hexagon cell tiling; impact ripple rings; single energy hue; subject clear behind the shell',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-157',
+    name: 'Noise Dissolve Edge Shader',
+    displayName: 'Noise Dissolve Edge Shader',
+    styleAnchors: ['Noise Dissolve Edge Shader', 'game VFX dissolve shader', 'noise-driven holes'],
+    category: '8. Sensor And Technical Shaders',
+    domain: 'game VFX dissolve shader',
+    negativePrompt:
+      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, real burning paper, gore, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Noise dissolve shader: the named subject disappearing along a threshold driven by procedural noise, leaving ragged holes with a thin glowing burn edge.',
+      subject_treatment:
+        'Keep the prompt subject, setting, camera and normal CGI beauty render; this shader adds only its one named effect on the stated geometry, computed in the renderer rather than photographed.',
+      color_and_tone:
+        'Subject in its own colors, a hot orange-to-white or cold cyan edge band, the background showing through the holes.',
+      lighting_and_shadow:
+        'Normal scene light; the glowing edge casts faint light onto nearby surfaces.',
+      texture_and_material:
+        'Cloudy noise-shaped holes, a crisp emissive rim of fixed width, small ember or ash particles drifting off the edge.',
+      camera_and_composition:
+        'Keep the requested camera; the dissolve front sweeps across the subject in one direction.',
+      atmosphere_and_mood: 'Eerie and final, something being erased from the world.',
+      rendering_and_quality:
+        'Clean alpha-clip shader with a sharp emissive edge; no paper burn texture and no painted smoke.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Noise Dissolve Edge Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'noise-driven holes; thin emissive edge band; ember particles off the edge; one-direction dissolve front; background through holes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-158',
+    name: 'Radial Scanner Pulse Shader',
+    displayName: 'Radial Scanner Pulse Shader',
+    styleAnchors: [
+      'Radial Scanner Pulse Shader',
+      'game VFX scan shader',
+      'expanding ring of light',
+    ],
+    category: '8. Sensor And Technical Shaders',
+    domain: 'game VFX scan shader',
+    negativePrompt:
+      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, HUD markers, point cloud dots, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Radial scanner pulse shader: an expanding ring of light sweeping across the scene from one point, briefly outlining every edge it crosses in glowing lines.',
+      subject_treatment:
+        'Keep the prompt subject, setting, camera and normal CGI beauty render; this shader adds only its one named effect on the stated geometry, computed in the renderer rather than photographed.',
+      color_and_tone:
+        'Dim, desaturated beauty render; a bright cyan or amber ring and edge highlights inside the pulse band.',
+      lighting_and_shadow:
+        'Scene stays dark and low-key; the pulse band is emissive and fades behind the ring.',
+      texture_and_material:
+        'Thin glowing edge lines on geometry within the band, faint grid projected on floors, sharp leading edge and soft trailing fade.',
+      camera_and_composition:
+        'Keep the requested camera; the ring expands from the foreground or center so its curvature reads.',
+      atmosphere_and_mood: 'Searching and suspenseful, the dark revealed one ring at a time.',
+      rendering_and_quality:
+        'Screen-space depth-based pulse with crisp edges; no lidar points and no UI markers.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Radial Scanner Pulse Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'expanding ring of light; edge lines lit inside the band; dim desaturated scene; sharp leading edge; soft trailing fade',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-159',
+    name: 'Edge Detection Line Pass',
+    displayName: 'Edge Detection Line Pass',
+    styleAnchors: [
+      'Edge Detection Line Pass',
+      'post-process line pass',
+      'lines from depth and normal jumps',
+    ],
+    category: '8. Sensor And Technical Shaders',
+    domain: 'post-process line pass',
+    negativePrompt:
+      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, mesh wireframe triangles, hand-drawn wobble, cel shading, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Edge detection line pass: a post-process that draws black lines wherever depth or surface direction jumps, on plain white, with no shading and no triangle wires.',
+      subject_treatment:
+        "Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.",
+      color_and_tone:
+        'Black lines on white only; line weight heavier at silhouettes and lighter at inner creases.',
+      lighting_and_shadow:
+        'No lighting at all; lines come from depth and normal discontinuities, never from shadows.',
+      texture_and_material:
+        'Uniform computed strokes without taper, occasional doubled or broken lines at thin geometry, no hatching.',
+      camera_and_composition:
+        'Keep the requested camera and perspective; dense mechanical detail yields the richest line work.',
+      atmosphere_and_mood: 'Clean and schematic, a scene reduced to its edges.',
+      rendering_and_quality:
+        'Screen-space Sobel filter look with pixel-even lines; no hand-drawn wobble, no mesh wireframe.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Edge Detection Line Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'lines from depth and normal jumps; heavier silhouette lines; white fill; no shading; no mesh triangles',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-160',
+    name: 'Tonal Art Map Hatching Shader',
+    displayName: 'Tonal Art Map Hatching Shader',
+    styleAnchors: [
+      'Tonal Art Map Hatching Shader',
+      'real-time hatching shader',
+      'stacked hatch texture layers',
+    ],
+    category: '8. Sensor And Technical Shaders',
+    domain: 'real-time hatching shader',
+    negativePrompt:
+      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, toon cel bands, hand-drawn sketch wobble, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Real-time hatching shader: lit 3D geometry shaded with stacked hatch textures, one layer of strokes per tone, so darker areas gain cross-hatching automatically.',
+      subject_treatment:
+        "Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.",
+      color_and_tone:
+        'Dark ink strokes on warm paper white, or one ink color; tone comes only from stroke density.',
+      lighting_and_shadow:
+        'A single directional light; each shading step swaps in a denser hatch layer, shadows fully cross-hatched.',
+      texture_and_material:
+        'Strokes mapped onto the surface in UV space, following the geometry, at constant screen density with slight texture swimming.',
+      camera_and_composition:
+        'Keep the requested camera; strong single-light modeling shows all hatch levels.',
+      atmosphere_and_mood: 'Bookish and moody, an engraving that turns in 3D.',
+      rendering_and_quality:
+        'Non-photorealistic render with even stroke density and clean silhouettes; distinct from hand-drawn ink and from cel shading.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tonal Art Map Hatching Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'stacked hatch texture layers; tone by stroke density; strokes follow surface UVs; one directional light; clean silhouettes',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

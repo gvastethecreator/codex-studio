@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP03-144
+packId: pack_03
+name: Z-Depth Pass
+styleAnchors:
+  - Z-Depth Pass
+  - render depth buffer
+  - distance as brightness
+displayName: Z-Depth Pass
+category: 8. Sensor And Technical Shaders
+domain: render depth buffer
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - sensor-and-technical-shaders
+  - depth-pass
+  - render-pass
+  - z-buffer
+visualDna:
+  aesthetic: 'Z-depth render pass: each pixel shows only its distance from the camera, near surfaces white fading smoothly to black at the far clip.'
+  subject_treatment: Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.
+  color_and_tone: 'Pure greyscale: white foreground, mid grey middle distance, black background; no hue and no texture color.'
+  lighting_and_shadow: No lighting or shadows; value changes only with distance, so flat walls become smooth gradients.
+  texture_and_material: Materials disappear; only silhouettes and depth steps remain, with hard value jumps where a near edge overlaps a far one.
+  camera_and_composition: Keep the requested camera; compositions with strong recession show the gradient best.
+  atmosphere_and_mood: Quiet, foggy and abstract, space turned into a single gradient.
+  rendering_and_quality: Clean anti-aliased depth buffer normalized between near and far, with no banding and no noise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Z-Depth Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: distance as brightness; white near to black far; hard steps at overlapping edges; no texture; no lighting
+avoidRules:
+  - sensor noise
+  - camera lens optics
+  - readable text
+  - color legend or scale bar
+  - software UI or viewport gizmos
+  - franchise likeness
+  - fog effect with color
+  - lit shading
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, fog effect with color, lit shading, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: sensor-and-technical-shaders
+  categoryName: 8. Sensor And Technical Shaders
+  tags:
+    - 3d-and-cgi-rendering
+    - sensor-and-technical-shaders
+    - depth-pass
+    - render-pass
+    - z-buffer
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: render depth buffer

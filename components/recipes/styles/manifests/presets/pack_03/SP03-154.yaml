@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP03-154
+packId: pack_03
+name: SDF Contour Band Shader
+styleAnchors:
+  - SDF Contour Band Shader
+  - signed distance field debug
+  - repeating distance rings
+displayName: SDF Contour Band Shader
+category: 8. Sensor And Technical Shaders
+domain: signed distance field debug
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - sensor-and-technical-shaders
+  - signed-distance-field
+  - debug-shader
+  - contour-bands
+visualDna:
+  aesthetic: 'Signed distance field debug shader: a slicing plane through smoothly blended SDF shapes, painted with repeating distance rings, warm outside and cool inside.'
+  subject_treatment: Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.
+  color_and_tone: Warm orange bands outside surfaces, cool blue bands inside, a thin white zero line on the exact surface, darker stripes every unit of distance.
+  lighting_and_shadow: Unlit debug plane; the smooth-blended 3D shapes behind it lightly lit so their merged forms read.
+  texture_and_material: Concentric contour stripes that round off at convex corners and pinch at concave blends, smooth-minimum joins between shapes.
+  camera_and_composition: Keep the requested camera; the slice plane crosses the shapes at a clear readable angle.
+  atmosphere_and_mood: Mathematical and hypnotic, space measured in rings.
+  rendering_and_quality: Raymarched finish with perfectly smooth blends and even stripe spacing; no polygons visible.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies SDF Contour Band Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: repeating distance rings; orange outside and blue inside; white zero-surface line; smooth-minimum blends; raymarched forms
+avoidRules:
+  - sensor noise
+  - camera lens optics
+  - readable text
+  - color legend or scale bar
+  - software UI or viewport gizmos
+  - franchise likeness
+  - polygon facets
+  - topographic map terrain
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, polygon facets, topographic map terrain, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: sensor-and-technical-shaders
+  categoryName: 8. Sensor And Technical Shaders
+  tags:
+    - 3d-and-cgi-rendering
+    - sensor-and-technical-shaders
+    - signed-distance-field
+    - debug-shader
+    - contour-bands
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: signed distance field debug

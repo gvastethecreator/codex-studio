@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP03-155
+packId: pack_03
+name: Overdraw Accumulation View
+styleAnchors:
+  - Overdraw Accumulation View
+  - render cost debug view
+  - additive layer counting
+displayName: Overdraw Accumulation View
+category: 8. Sensor And Technical Shaders
+domain: render cost debug view
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - sensor-and-technical-shaders
+  - overdraw-view
+  - debug-render
+  - transparency-layers
+visualDna:
+  aesthetic: 'Overdraw debug view: every rendered layer adds a little brightness, so transparent and stacked surfaces glow in proportion to how many times each pixel was drawn.'
+  subject_treatment: Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.
+  color_and_tone: Deep navy for one layer, through violet and hot orange, to white where dozens of layers stack.
+  lighting_and_shadow: No lighting; brightness equals layer count, revealing hidden back faces and particle stacks.
+  texture_and_material: All surfaces translucent and additive; particle clouds and foliage cards bloom brightest.
+  camera_and_composition: Keep the requested camera; dense transparent effects in the frame produce the hot zones.
+  atmosphere_and_mood: Eerie and revealing, the hidden cost of a scene made visible.
+  rendering_and_quality: Additive accumulation buffer with no shading, clean edges and smooth count gradients.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Overdraw Accumulation View as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: additive layer counting; navy to orange to white ramp; hidden back faces visible; hot particle stacks; no lighting
+avoidRules:
+  - sensor noise
+  - camera lens optics
+  - readable text
+  - color legend or scale bar
+  - software UI or viewport gizmos
+  - franchise likeness
+  - thermal camera look
+  - lit shading
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, thermal camera look, lit shading, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: sensor-and-technical-shaders
+  categoryName: 8. Sensor And Technical Shaders
+  tags:
+    - 3d-and-cgi-rendering
+    - sensor-and-technical-shaders
+    - overdraw-view
+    - debug-render
+    - transparency-layers
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: render cost debug view

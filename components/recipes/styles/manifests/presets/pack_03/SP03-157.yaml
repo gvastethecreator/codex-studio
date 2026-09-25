@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP03-157
+packId: pack_03
+name: Noise Dissolve Edge Shader
+styleAnchors:
+  - Noise Dissolve Edge Shader
+  - game VFX dissolve shader
+  - noise-driven holes
+displayName: Noise Dissolve Edge Shader
+category: 8. Sensor And Technical Shaders
+domain: game VFX dissolve shader
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - sensor-and-technical-shaders
+  - dissolve-shader
+  - vfx-shader
+  - burn-edge
+visualDna:
+  aesthetic: 'Noise dissolve shader: the named subject disappearing along a threshold driven by procedural noise, leaving ragged holes with a thin glowing burn edge.'
+  subject_treatment: Keep the prompt subject, setting, camera and normal CGI beauty render; this shader adds only its one named effect on the stated geometry, computed in the renderer rather than photographed.
+  color_and_tone: Subject in its own colors, a hot orange-to-white or cold cyan edge band, the background showing through the holes.
+  lighting_and_shadow: Normal scene light; the glowing edge casts faint light onto nearby surfaces.
+  texture_and_material: Cloudy noise-shaped holes, a crisp emissive rim of fixed width, small ember or ash particles drifting off the edge.
+  camera_and_composition: Keep the requested camera; the dissolve front sweeps across the subject in one direction.
+  atmosphere_and_mood: Eerie and final, something being erased from the world.
+  rendering_and_quality: Clean alpha-clip shader with a sharp emissive edge; no paper burn texture and no painted smoke.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Noise Dissolve Edge Shader as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: noise-driven holes; thin emissive edge band; ember particles off the edge; one-direction dissolve front; background through holes
+avoidRules:
+  - sensor noise
+  - camera lens optics
+  - readable text
+  - color legend or scale bar
+  - software UI or viewport gizmos
+  - franchise likeness
+  - real burning paper
+  - gore
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, real burning paper, gore, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: sensor-and-technical-shaders
+  categoryName: 8. Sensor And Technical Shaders
+  tags:
+    - 3d-and-cgi-rendering
+    - sensor-and-technical-shaders
+    - dissolve-shader
+    - vfx-shader
+    - burn-edge
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: game VFX dissolve shader

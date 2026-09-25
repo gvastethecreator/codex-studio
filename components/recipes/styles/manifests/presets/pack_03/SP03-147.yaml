@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP03-147
+packId: pack_03
+name: Curvature Cavity Map
+styleAnchors:
+  - Curvature Cavity Map
+  - baked curvature texture
+  - mid-grey flats
+displayName: Curvature Cavity Map
+category: 8. Sensor And Technical Shaders
+domain: baked curvature texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - sensor-and-technical-shaders
+  - curvature-map
+  - texture-baking
+  - cavity-map
+visualDna:
+  aesthetic: 'Curvature and cavity bake: the model shown as mid grey where flat, white on convex edges and dark in concave creases, the map texture artists use for wear.'
+  subject_treatment: Keep the prompt subject's geometry, pose, setting and camera exactly; this preset replaces only the beauty render with the named shader or render-pass output computed from that 3D geometry, never a sensor capture.
+  color_and_tone: Neutral 50% grey base, crisp white edge lines on ridges, dark charcoal in grooves; no hue.
+  lighting_and_shadow: No light direction at all; values come only from local surface bending, unlike soft ambient occlusion.
+  texture_and_material: Thin bright ridges on every bevel and chip, fine dark lines in engravings, broad flats evenly grey.
+  camera_and_composition: Keep the requested camera; close views show hard-surface and carved detail best.
+  atmosphere_and_mood: Precise and tactile, every worn edge traced like a map.
+  rendering_and_quality: Crisp baked-texture look with pixel-sharp edge lines, no ambient-occlusion blur and no cast shadows.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Curvature Cavity Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: mid-grey flats; white convex edge lines; dark concave grooves; no light direction; sharp engraved detail
+avoidRules:
+  - sensor noise
+  - camera lens optics
+  - readable text
+  - color legend or scale bar
+  - software UI or viewport gizmos
+  - franchise likeness
+  - soft ambient occlusion gradients
+  - directional shading
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, soft ambient occlusion gradients, directional shading, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: sensor-and-technical-shaders
+  categoryName: 8. Sensor And Technical Shaders
+  tags:
+    - 3d-and-cgi-rendering
+    - sensor-and-technical-shaders
+    - curvature-map
+    - texture-baking
+    - cavity-map
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: baked curvature texture
